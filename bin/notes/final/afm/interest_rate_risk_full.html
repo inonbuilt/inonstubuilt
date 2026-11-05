@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Chapter 12: Interest Rate Risk Management - Full In-Depth Notes (110% ICAI Book Coverage & Solutions) | CA Final AFM | Calcium Notes</title>
+    <meta name="title" content="Chapter 12: Interest Rate Risk Management - Full In-Depth Notes (110% ICAI Book Coverage & Solutions) | CA Final AFM | Calcium Notes">
+    <meta name="description" content="Exhaustive 110% ICAI textbook study material for CA Final AFM Chapter 12: Interest Rate Risk Management. Complete CA Final AFM Chapter 12 Interest Rate Risk notes. FRA settlement, SOFR transitions, interest rate swaps, caps/floors, swaptions, and 100% solved TYK problems.">
+    <meta name="keywords" content="Interest Rate Risk Management CA Final AFM, FRA Forward Rate Agreement, Caps Floors Collars, Plain Vanilla Interest Rate Swaps, OIS, Swaptions, Chapter 12, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+    <meta name="author" content="Calcium Notes">
+    <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/interest_rate_risk_full.html">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.calciumnotes.com/bin/notes/final/afm/interest_rate_risk_full.html">
+    <meta property="og:title" content="Chapter 12: Interest Rate Risk Management - Full In-Depth Notes (110% ICAI Book Coverage & Solutions) | CA Final AFM | Calcium Notes">
+    <meta property="og:description" content="Exhaustive 110% ICAI textbook study material for CA Final AFM Chapter 12: Interest Rate Risk Management. Complete CA Final AFM Chapter 12 Interest Rate Risk notes. FRA settlement, SOFR transitions, interest rate swaps, caps/floors, swaptions, and 100% solved TYK problems.">
+    <meta property="og:image" content="https://www.calciumnotes.com/og-image.png">
+    <meta property="og:site_name" content="Calcium Notes">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.calciumnotes.com/bin/notes/final/afm/interest_rate_risk_full.html">
+    <meta name="twitter:title" content="Chapter 12: Interest Rate Risk Management - Full In-Depth Notes (110% ICAI Book Coverage & Solutions) | CA Final AFM | Calcium Notes">
+    <meta name="twitter:description" content="Exhaustive 110% ICAI textbook study material for CA Final AFM Chapter 12: Interest Rate Risk Management. Complete CA Final AFM Chapter 12 Interest Rate Risk notes. FRA settlement, SOFR transitions, interest rate swaps, caps/floors, swaptions, and 100% solved TYK problems.">
+    <meta name="twitter:image" content="https://www.calciumnotes.com/og-image.png">
+
+    <!-- Schema.org Educational & FAQ Structured Data -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "CA Final AFM Chapter 12: Interest Rate Risk Management (Full Notes)",
+    "description": "Exhaustive 110% ICAI textbook study material for CA Final AFM Chapter 12: Interest Rate Risk Management. Complete CA Final AFM Chapter 12 Interest Rate Risk notes. FRA settlement, SOFR transitions, interest rate swaps, caps/floors, swaptions, and 100% solved TYK problems.",
+    "learningResourceType": "Study Guide",
+    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "author": {
+        "@type": "Organization",
+        "name": "Calcium Notes",
+        "url": "https://www.calciumnotes.com"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Calcium Notes",
+        "url": "https://www.calciumnotes.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.calciumnotes.com/fevicol.png"
+        }
+    },
+    "isPartOf": {
+        "@type": "Course",
+        "name": "CA Final Advanced Financial Management (AFM)",
+        "url": "https://www.calciumnotes.com/bin/notes/notes/afmnotes.html"
+    }
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.calciumnotes.com"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "CA Notes Portal",
+            "item": "https://www.calciumnotes.com/bin/notes/notes.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "AFM Notes Hub",
+            "item": "https://www.calciumnotes.com/bin/notes/notes/afmnotes.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Chapter 12: Interest Rate Risk Management",
+            "item": "https://www.calciumnotes.com/bin/notes/final/afm/interest_rate_risk_full.html"
+        }
+    ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How is FRA settlement payoff calculated?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "FRA Settlement = [Notional * (Reference Rate - Contract Rate) * (d / Days in Year)] / [1 + Reference Rate * (d / Days in Year)]."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is a Zero-Cost Collar?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Simultaneously buying an interest rate Cap and selling an interest rate Floor such that the floor premium received exactly offsets the cap premium paid."
+            }
+        }
+    ]
+}
+    </script>
+
+<!-- KaTeX for High-Fidelity Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false}
+            ],
+            throwOnError: false
+        });"></script>
+
+    <style>
+        :root {
+            --bg-canvas: #ffffff;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --border-color: #e2e8f0;
+            --card-bg: #f8fafc;
+            --table-header: #f1f5f9;
+            --success: #16a34a;
+            --danger: #dc2626;
+            --warning-bg: #fffbeb;
+            --warning-border: #fef3c7;
+            --warning-text: #92400e;
+        }
+
+        [data-theme="dark"] {
+            --bg-canvas: #090d16;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #3b82f6;
+            --accent-hover: #60a5fa;
+            --border-color: #1e293b;
+            --card-bg: #0f172a;
+            --table-header: #1e293b;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --warning-bg: #1c1917;
+            --warning-border: #292524;
+            --warning-text: #fef08a;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+                html {
+            scroll-behavior: smooth;
+        }
+
+        section, div[id], h2[id], h3[id] {
+            scroll-margin-top: 24px;
+        }
+
+        body {
+            background-color: var(--bg-canvas);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 15px;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        
+        /* Bulletproof High-Visibility Sidebar Navigation */
+        .sidebar {
+            width: 300px;
+            background: var(--bg-canvas);
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 20px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            flex-shrink: 0;
+        }
+
+        .sidebar-brand {
+            font-size: 15px;
+            font-weight: 800;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4px 6px 12px 6px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 8px;
+        }
+
+        .theme-toggle {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 4px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .nav-group-title {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #64748b;
+            margin: 14px 0 4px 8px;
+            letter-spacing: 0.6px;
+        }
+
+        .sidebar a,
+        .sidebar a:link,
+        .sidebar a:visited,
+        .nav-link,
+        a.nav-link {
+            display: block !important;
+            padding: 6px 10px !important;
+            border-radius: 6px !important;
+            color: #1e293b !important; /* Bold, high-contrast dark charcoal */
+            text-decoration: none !important;
+            font-size: 13px !important;
+            font-weight: 600 !important;
+            line-height: 1.4 !important;
+            transition: all 0.15s ease !important;
+            white-space: normal !important; /* Wrap cleanly, no clipping */
+            word-break: break-word !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+
+        .sidebar a:hover,
+        .nav-link:hover,
+        a.nav-link:hover {
+            background: #eff6ff !important;
+            color: #2563eb !important;
+            padding-left: 14px !important;
+        }
+
+        [data-theme="dark"] .nav-group-title {
+            color: #94a3b8;
+        }
+
+        [data-theme="dark"] .sidebar a,
+        [data-theme="dark"] .sidebar a:link,
+        [data-theme="dark"] .sidebar a:visited,
+        [data-theme="dark"] .nav-link,
+        [data-theme="dark"] a.nav-link {
+            color: #f1f5f9 !important; /* Bright high-contrast white-slate in dark mode */
+        }
+
+        [data-theme="dark"] .sidebar a:hover,
+        [data-theme="dark"] .nav-link:hover,
+        [data-theme="dark"] a.nav-link:hover {
+            background: #1e293b !important;
+            color: #60a5fa !important;
+        }
+
+        .main-wrapper {
+            flex: 1;
+            max-width: 1060px;
+            margin: 0 auto;
+            padding: 40px 48px 80px 48px;
+            overflow-x: hidden;
+        }
+
+        .header-section {
+            margin-bottom: 32px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+        }
+
+        .breadcrumbs {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .breadcrumbs a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .chapter-meta {
+            font-size: 14px;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .chapter-pill {
+            background: #eff6ff;
+            color: #1d4ed8;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 9999px;
+            border: 1px solid #bfdbfe;
+        }
+
+        .mode-bar {
+            display: flex;
+            gap: 12px;
+            margin: 24px 0 32px 0;
+            background: var(--card-bg);
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .mode-btn {
+            flex: 1;
+            text-align: center;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .mode-btn.active {
+            background: #ffffff;
+            color: var(--accent);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            border: 1px solid var(--border-color);
+        }
+
+        .mode-btn:not(.active) {
+            color: var(--text-secondary);
+        }
+
+        .concept-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+
+        .concept-card h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .concept-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 20px 0 10px 0;
+        }
+
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 13.5px;
+            background: var(--bg-canvas);
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .styled-table th, .styled-table td {
+            padding: 10px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .styled-table th {
+            background-color: var(--table-header);
+            font-weight: 700;
+        }
+
+        .styled-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .problem-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 36px;
+        }
+
+        .problem-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .problem-id {
+            background: #2563eb;
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .problem-header h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0;
+        }
+
+        .problem-statement {
+            background: var(--bg-canvas);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 18px;
+            margin-bottom: 20px;
+            font-size: 14.5px;
+        }
+
+        .solution-wrapper {
+            background: var(--bg-canvas);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 20px;
+        }
+
+        .solution-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .solution-content h4 {
+            font-size: 15px;
+            font-weight: 700;
+            margin: 16px 0 8px 0;
+        }
+
+        .result-box {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            color: #1e3a8a;
+            padding: 14px 18px;
+            border-radius: 6px;
+            margin-top: 18px;
+            font-size: 14px;
+        }
+
+        [data-theme="dark"] .result-box {
+            background: #172554;
+            border-color: #1e40af;
+            color: #dbeafe;
+        }
+
+        .exam-tip {
+            background: var(--warning-bg);
+            border-left: 4px solid #f59e0b;
+            padding: 12px 16px;
+            border-radius: 0 6px 6px 0;
+            margin: 16px 0;
+            font-size: 13.5px;
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .footer-btn:hover {
+            background: var(--accent);
+            color: #ffffff;
+            border-color: var(--accent);
+        }
+
+        @media (max-width: 900px) {
+            body { flex-direction: column; }
+            .sidebar { width: 100%; height: auto; position: relative; }
+            .main-wrapper { padding: 24px 16px; }
+        }
+    
+        </style>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-brand">
+            <span>AFM 110% Notes</span>
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">☀️/🌙</button>
+        </div>
+
+        <div class="nav-group-title">Chapter Navigation</div>
+        <a href="#overview" class="nav-link">Chapter 12 Overview</a>
+        
+        <div class="nav-group-title">Concepts &amp; Theory</div>
+        <a href="#intro-macro" class="nav-link">12.1 Macro Drivers of Rates</a>
+        <a href="#benchmarks" class="nav-link">12.2 Benchmarks &amp; ARRs (SOFR, etc.)</a>
+        <a href="#types-risk" class="nav-link">12.3 Types of Interest Rate Risk</a>
+        <a href="#measuring-risk" class="nav-link">12.4 Measuring Risk (Duration/Convexity)</a>
+        <a href="#fra-mechanics" class="nav-link">12.5 Forward Rate Agreements (FRAs)</a>
+        <a href="#options-caps-floors" class="nav-link">12.6 Caps, Floors &amp; Collars</a>
+        <a href="#swaps-mechanics" class="nav-link">12.7 Swaps &amp; OIS Mechanics</a>
+        <a href="#swaptions-theory" class="nav-link">12.8 Swaptions Architecture</a>
+
+        <div class="nav-group-title">Test Your Knowledge (TYK)</div>
+        <a href="#tyk-th-01" class="nav-link">TYK TH-01: Forward Rate Agreements</a>
+        <a href="#tyk-th-02" class="nav-link">TYK TH-02: Swaptions and Their Uses</a>
+        <a href="#tyk-pr-01" class="nav-link">TYK PR-01: Parker &amp; Co. (FRA Settlement)</a>
+        <a href="#tyk-pr-02" class="nav-link">TYK PR-02: TM Fincorp (6x9 FRA bps &amp; Settlement)</a>
+        <a href="#tyk-pr-03" class="nav-link">TYK PR-03: XYZ Ltd (SONIA Cap Option)</a>
+        <a href="#tyk-pr-04" class="nav-link">TYK PR-04: Generic Swap (AIC vs SOFR)</a>
+        <a href="#tyk-pr-05" class="nav-link">TYK PR-05: Derivative Bank (7-day OIS)</a>
+        <a href="#tyk-pr-06" class="nav-link">TYK PR-06: A Inc &amp; B Inc (Currency Swap)</a>
+        <a href="#tyk-pr-07" class="nav-link">TYK PR-07: Textile Mfr (Loan Cap Option)</a>
+
+        <div class="nav-group-title">Navigation Hub</div>
+        <a href="../../notes/afmfullnotes.html" class="nav-link">← Full Notes Index</a>
+        <a href="../../notes/afmnotes.html" class="nav-link">← Quick Notes Index</a>
+    </nav>
+
+    <main class="main-wrapper">
+        <header class="header-section" id="overview">
+            <div class="breadcrumbs">
+                <a href="../../notes/afmfullnotes.html">CA Final AFM</a> &gt;
+                <span>Chapter 12</span>
+            </div>
+            <h1>Chapter 12: Interest Rate Risk Management</h1>
+            <div class="chapter-meta">
+                <span class="chapter-pill">Full In-Depth Coverage</span>
+                <span>ICAI Study Material Complete Alignment (110% Coverage)</span>
+            </div>
+        </header>
+
+        <div class="mode-bar">
+            <a href="interest_rate_risk_full.html" class="mode-btn active">📖 Full Detailed Notes</a>
+            <a href="interest_rate_risk.html" class="mode-btn">⚡ Quick Revision Notes</a>
+        </div>
+
+        <!-- Theory Section -->
+        <section id="theory-section">
+            <div class="concept-card">
+                <h2>1. Core Concepts &amp; Theoretical Architecture</h2>
+                
+<div class="theory-content">
+    <!-- Topic 12.1 -->
+    <div class="theory-topic" id="intro-macro">
+        <h3>12.1 Introduction &amp; Macro-Economic Determinants of Interest Rates</h3>
+        <p>Interest rate is both the cost of borrowing capital and the compensation paid to the lender for parting with liquidity, bearing credit risk, and enduring inflation erosion. Firms with low operating profit margins and heavy capital debt gearing are exceptionally vulnerable to interest rate movements.</p>
+        <p>The primary macro-economic drivers governing interest rate fluctuations include:</p>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Factor</th>
+                    <th>Economic Dynamic</th>
+                    <th>Impact on Interest Rates</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Demand and Supply of Funds</strong></td>
+                    <td>During economic expansions, corporate demand for capex loans and working capital outstrips available savings supply.</td>
+                    <td>Interest rates rise to clear the market. Conversely, during recessions or low liquidity demand, rates drop.</td>
+                </tr>
+                <tr>
+                    <td><strong>Inflation Expectations</strong></td>
+                    <td>Lenders demand a real return over expected inflation to preserve purchasing power: $(1 + \text{Nominal Rate}) = (1 + \text{Real Rate})(1 + \text{Expected Inflation})$.</td>
+                    <td>Higher expected inflation shifts yield curves upward across all maturities (Fisher Effect).</td>
+                </tr>
+                <tr>
+                    <td><strong>Fiscal Policy &amp; Sovereign Borrowing</strong></td>
+                    <td>The Government is typically the single largest borrower in domestic debt markets. High fiscal deficits increase sovereign bond issuance.</td>
+                    <td>Heavy government borrowing absorbs loanable funds, "crowds out" private borrowers, and pushes market yields up.</td>
+                </tr>
+                <tr>
+                    <td><strong>Monetary Policy &amp; Central Bank Actions</strong></td>
+                    <td>Central banks (e.g., RBI, US Federal Reserve) modulate policy rates (Repo Rate, Fed Funds Rate) and statutory reserve ratios (CRR/SLR) to manage price stability.</td>
+                    <td>Policy rate hikes raise commercial bank funding costs, transmitting higher lending and deposit rates through the banking system.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Topic 12.2 -->
+    <div class="theory-topic" id="benchmarks">
+        <h3>12.2 Benchmark Rates &amp; The Transition from LIBOR to Alternative Reference Rates (ARRs)</h3>
+        <p>A benchmark interest rate is an objective, publicly observable reference interest rate that forms the base pricing mechanism for financial contracts, corporate loans, floating rate notes, and derivatives (FRAs, Swaps, Caps, Floors).</p>
+        
+        <h4>The Historical Role and Vulnerability of LIBOR</h4>
+        <p>Historically, the <strong>London Interbank Offered Rate (LIBOR)</strong> was the preeminent global benchmark across five currencies (USD, GBP, EUR, JPY, CHF). However, LIBOR suffered structural deficiencies: it relied heavily on subjective bank panel estimates ("expert judgment") rather than observable market trades, making it susceptible to manipulation during the global financial crisis.</p>
+
+        <h4>Transition to Alternative Reference Rates (ARRs)</h4>
+        <p>Global regulatory bodies mandated the transition to robust, transaction-backed, near-risk-free overnight rates:</p>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Currency / Region</th>
+                    <th>Alternative Reference Rate (ARR)</th>
+                    <th>Governing Regulator</th>
+                    <th>Transaction Nature</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>USA (USD)</strong></td>
+                    <td><strong>SOFR</strong> (Secured Overnight Financing Rate)</td>
+                    <td>Federal Reserve Bank of New York</td>
+                    <td>Secured (backed by US Treasury repo transactions)</td>
+                </tr>
+                <tr>
+                    <td><strong>UK (GBP)</strong></td>
+                    <td><strong>SONIA</strong> (Sterling Overnight Index Average)</td>
+                    <td>Bank of England</td>
+                    <td>Unsecured wholesale overnight deposit market</td>
+                </tr>
+                <tr>
+                    <td><strong>Eurozone (EUR)</strong></td>
+                    <td><strong>€STR</strong> (Euro Short-Term Rate)</td>
+                    <td>European Central Bank (ECB)</td>
+                    <td>Unsecured wholesale deposit market</td>
+                </tr>
+                <tr>
+                    <td><strong>Japan (JPY)</strong></td>
+                    <td><strong>TONAR</strong> (Tokyo Overnight Average Rate)</td>
+                    <td>Bank of Japan</td>
+                    <td>Unsecured call money market</td>
+                </tr>
+                <tr>
+                    <td><strong>Switzerland (CHF)</strong></td>
+                    <td><strong>SARON</strong> (Swiss Average Rate Overnight)</td>
+                    <td>SIX Swiss Exchange</td>
+                    <td>Secured repo market</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>Indian Benchmark Rates</h4>
+        <ul>
+            <li><strong>MIBOR (Mumbai Interbank Offered Rate):</strong> Computed daily by FBIL (Financial Benchmarks India Pvt Ltd) based on trades executed on the NDS-Call platform. Used widely in Overnight Index Swaps (OIS).</li>
+            <li><strong>MIFOR (Modified MIBOR):</strong> Blend of USD SOFR/LIBOR and forward foreign exchange rates, widely utilized by Indian corporate borrowers to hedge foreign currency borrowings.</li>
+            <li><strong>MCLR (Marginal Cost of Funds based Lending Rate):</strong> Internal benchmark utilized by Indian banks to price domestic floating rate retail and commercial loans.</li>
+        </ul>
+    </div>
+
+    <!-- Topic 12.3 -->
+    <div class="theory-topic" id="types-risk">
+        <h3>12.3 Taxonomy of Interest Rate Risks</h3>
+        <p>Interest rate risk arises from the exposure of a firm's or financial institution's financial condition to adverse movements in interest rates. The key classifications include:</p>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Risk Type</th>
+                    <th>Core Definition</th>
+                    <th>Illustration &amp; Corporate Exposure</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Gap / Mismatch Exposure</strong></td>
+                    <td>Arises when the interest rate reset timing or maturity of rate-sensitive assets (RSA) differs from rate-sensitive liabilities (RSL).</td>
+                    <td>A bank funding long-term 5-year fixed loans with 3-month floating deposits faces margin contraction when interest rates rise.</td>
+                </tr>
+                <tr>
+                    <td><strong>Basis Risk</strong></td>
+                    <td>Arises when assets and liabilities are both floating rate, but are benchmarked to different market reference indexes.</td>
+                    <td>Funding an asset earning 1-year Treasury Bill yield using a liability priced on 1-month SOFR. If the spread between T-Bill and SOFR widens, profitability deteriorates.</td>
+                </tr>
+                <tr>
+                    <td><strong>Embedded Option Risk</strong></td>
+                    <td>Arises when financial contracts contain unilateral early redemption or prepayment options.</td>
+                    <td>Borrowers refinance fixed mortgages when market rates fall (leaving lender with cash to reinvest at lower yields); depositors withdraw term deposits when rates spike.</td>
+                </tr>
+                <tr>
+                    <td><strong>Yield Curve Risk</strong></td>
+                    <td>Arises when non-parallel shifts, twists, or changes in the slope (steepening or flattening) of the yield curve occur.</td>
+                    <td>Hedging long-term assets with short-term liabilities assuming parallel shifts leaves the institution exposed if short rates rise while long rates fall.</td>
+                </tr>
+                <tr>
+                    <td><strong>Price Risk</strong></td>
+                    <td>The change in the market capital value of fixed-income instruments resulting from interest rate changes: $\Delta P \approx -D^* \times P \times \Delta y$.</td>
+                    <td>When bond yields increase, bond market prices fall. Longer maturity and lower coupon instruments exhibit maximum price volatility.</td>
+                </tr>
+                <tr>
+                    <td><strong>Reinvestment Risk</strong></td>
+                    <td>The uncertainty of the rate at which intermediate coupon cash inflows and principal amortizations can be reinvested.</td>
+                    <td>If interest rates drop, incoming cash flows must be reinvested at lower prevailing yields, reducing terminal wealth.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Topic 12.4 -->
+    <div class="theory-topic" id="measuring-risk">
+        <h3>12.4 Measuring Interest Rate Risk: Duration, Modified Duration &amp; Convexity</h3>
+        <p>Quantitative measurement of price sensitivity is fundamental to structuring bond portfolio immunization and interest rate hedges:</p>
+        
+        <div class="exam-tip">
+            <strong>Key Formulas for Price Sensitivity:</strong>
+            <ul>
+                <li><strong>Macaulay Duration ($D$):</strong> Weighted average maturity of cash flows:
+                    $$D = \frac{\sum_{t=1}^n \frac{t \times C_t}{(1+y)^t}}{\text{Market Price } (P_0)}$$
+                </li>
+                <li><strong>Modified Duration ($D^*$):</strong> Measures percentage change in bond price for a 100 bps shift in yield:
+                    $$D^* = \frac{D}{1 + \frac{y}{m}}$$
+                </li>
+                <li><strong>Price Change Approximation:</strong>
+                    $$\frac{\Delta P}{P} \approx -D^* \times \Delta y$$
+                </li>
+                <li><strong>Convexity Adjustment ($C$):</strong> Refines the duration estimate for large yield shifts:
+                    $$\frac{\Delta P}{P} \approx -D^* \times \Delta y + \frac{1}{2} C \times (\Delta y)^2$$
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Topic 12.5 -->
+    <div class="theory-topic" id="fra-mechanics">
+        <h3>12.5 Forward Rate Agreements (FRAs) – Mechanics &amp; Settlement</h3>
+        <p>A Forward Rate Agreement (FRA) is an over-the-counter (OTC) forward contract where two parties agree on an interest rate to be paid on a notional principal over a specified future period starting at a future date.</p>
+
+        <h4>Notation: "$m \times n$" FRA</h4>
+        <p>A "$6 \times 9$" FRA represents:</p>
+        <ul>
+            <li>The contract begins <strong>6 months</strong> from today (Effective / Settlement Date).</li>
+            <li>The loan/deposit duration is <strong>3 months</strong> ($9 - 6 = 3$ months).</li>
+            <li>The total period from today is <strong>9 months</strong> (Maturity Date).</li>
+        </ul>
+
+        <h4>ICAI Master FRA Cash Settlement Formula</h4>
+        <p>Settlement occurs at the beginning of the borrow/invest period (the fixing date) in discounted present value terms because interest is ordinarily paid in arrears at maturity:</p>
+        <p>$$\mathbf{\text{Settlement Amount}} = \frac{N \times (RR - FR) \times \left(\frac{dtm}{DY}\right)}{1 + RR \times \left(\frac{dtm}{DY}\right)}$$</p>
+        <p>Where:</p>
+        <ul>
+            <li>$N$ = Notional Principal Amount</li>
+            <li>$RR$ = Reference Market Rate on the fixing date (e.g., MIBOR, SOFR)</li>
+            <li>$FR$ = Agreed Forward Contract Rate</li>
+            <li>$dtm$ = Number of days in the FRA period (e.g., 90 days or 3 months)</li>
+            <li>$DY$ = Day count convention (360 or 365 days)</li>
+        </ul>
+
+        <div class="exam-tip">
+            <strong>Settlement Rules:</strong>
+            <ul>
+                <li>If $RR > FR$: Market rate is higher than agreed forward rate. <strong>The seller pays the buyer</strong> the positive settlement amount.</li>
+                <li>If $RR < FR$: Market rate is lower than agreed forward rate. <strong>The buyer pays the seller</strong> the settlement amount.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Topic 12.6 -->
+    <div class="theory-topic" id="options-caps-floors">
+        <h3>12.6 Interest Rate Options: Caps, Floors, and Collars</h3>
+        <p>Interest rate options give the holder the right, but not the obligation, to pay or receive a specified benchmark rate against a floating index:</p>
+        
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Instrument</th>
+                    <th>Option Analogy</th>
+                    <th>Primary User &amp; Hedging Purpose</th>
+                    <th>Payout Formula on Reset Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Interest Rate Cap</strong></td>
+                    <td>Series of European call options ("caplets") on the benchmark interest rate.</td>
+                    <td><strong>Floating-rate Borrower:</strong> Sets an upper ceiling (strike rate $R_k$) on borrowing costs. If benchmark rises above strike, bank pays the excess interest.</td>
+                    <td>$$\text{Payout} = N \times \max(0, R_{\text{market}} - R_k) \times \left(\frac{dtm}{DY}\right)$$</td>
+                </tr>
+                <tr>
+                    <td><strong>Interest Rate Floor</strong></td>
+                    <td>Series of European put options ("floorlets") on the benchmark interest rate.</td>
+                    <td><strong>Floating-rate Investor / Lender:</strong> Sets a minimum floor yield ($R_k$) on deposits. If benchmark falls below strike, seller compensates the shortfall.</td>
+                    <td>$$\text{Payout} = N \times \max(0, R_k - R_{\text{market}}) \times \left(\frac{dtm}{DY}\right)$$</td>
+                </tr>
+                <tr>
+                    <td><strong>Interest Rate Collar</strong></td>
+                    <td>Simultaneous purchase of an out-of-the-money Cap and sale of an out-of-the-money Floor.</td>
+                    <td><strong>Cost Reduction:</strong> The premium received from writing the Floor finances the purchase of the Cap. A "Zero-Cost Collar" matches the two option premiums.</td>
+                    <td>Effective interest rate is bounded within a fixed band: between the Floor strike and Cap strike.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Topic 12.7 -->
+    <div class="theory-topic" id="swaps-mechanics">
+        <h3>12.7 Interest Rate Swaps (IRS) &amp; Overnight Index Swaps (OIS)</h3>
+        <p>An Interest Rate Swap is a contractual agreement between two counterparties to exchange streams of interest cash flows based on a specified notional principal over an agreed tenor.</p>
+
+        <h4>Key Swap Structures</h4>
+        <ul>
+            <li><strong>Plain Vanilla Fixed-for-Floating Swap:</strong> Counterparty A pays a fixed coupon rate ("Swap Rate") and receives a floating index (e.g., 6-month SOFR). Counterparty B pays floating and receives fixed. Only the net interest differential is exchanged on settlement dates.</li>
+            <li><strong>Basis Swap:</strong> Both legs are floating rate, but tied to different benchmark indexes (e.g., 1-month SOFR vs 3-month SOFR) or different tenors.</li>
+            <li><strong>Overnight Index Swap (OIS):</strong> A swap where the floating leg is tied to the geometric compounding of daily overnight rates (such as daily MIBOR or SOFR) over the calculation period, compared against a predetermined fixed rate.</li>
+            <li><strong>Currency Swap:</strong> Counterparties exchange both principal amounts at inception (at current spot rate), exchange interest payments in differing currencies throughout the tenor, and re-exchange principal at maturity at the initial spot rate. Driven by comparative borrowing advantages across national debt markets.</li>
+        </ul>
+    </div>
+
+    <!-- Topic 12.8 -->
+    <div class="theory-topic" id="swaptions-theory">
+        <h3>12.8 Swaptions: Structures, Pricing &amp; Strategic Applications</h3>
+        <p>A Swaption is an option to enter into an Interest Rate Swap at a specified future date at a predetermined swap rate (strike):</p>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Type of Swaption</th>
+                    <th>Holder's Right</th>
+                    <th>When to Exercise (Market Condition)</th>
+                    <th>Strategic Use</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Payer Swaption</strong></td>
+                    <td>Right to pay fixed rate and receive floating rate in the underlying swap.</td>
+                    <td>Exercised when prevailing market swap rates <strong>rise above</strong> the strike rate.</td>
+                    <td>Protects prospective floating-rate borrowers against rising fixed borrowing rates on future loan drawdowns.</td>
+                </tr>
+                <tr>
+                    <td><strong>Receiver Swaption</strong></td>
+                    <td>Right to receive fixed rate and pay floating rate in the underlying swap.</td>
+                    <td>Exercised when prevailing market swap rates <strong>fall below</strong> the strike rate.</td>
+                    <td>Guarantees prospective lenders or bondholders a minimum fixed return when market yields decline.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+            </div>
+        </section>
+
+        <!-- TYK Section -->
+        <section id="tyk-section">
+            <h2 style="font-size:22px; font-weight:800; margin: 36px 0 20px 0; color:var(--accent);">2. Test Your Knowledge (TYK) - Complete ICAI Questions &amp; Detailed Solutions</h2>
+            
+        <div class="problem-card" id="tyk-th-01">
+            <div class="problem-header">
+                <span class="problem-id">TYK-TH-01</span>
+                <h3>Theoretical Question 1: Forward Rate Agreements (FRAs)</h3>
+            </div>
+            <div class="problem-statement">
+                <p>Write a short note on Forward Rate Agreements (FRAs).</p>
+            </div>
+            <div class="solution-wrapper">
+                <div class="solution-header">
+                    <span>ICAI Study Material Solution &amp; Step-by-Step Breakdown</span>
+                </div>
+                <div class="solution-content">
+<h4>Short Note on Forward Rate Agreements (FRAs)</h4>
+<p>A <strong>Forward Rate Agreement (FRA)</strong> is an over-the-counter (OTC) financial contract between two parties to lock in an interest rate to be paid or received on a notional principal amount over a future designated period.</p>
+
+<ol>
+    <li><strong>Structural Purpose:</strong> FRAs enable corporations, banks, and institutional investors to hedge against future adverse movements in interest rates (e.g., a borrower hedging against rising borrowing rates or an investor hedging against falling deposit yields) without exchanging underlying principal amounts.</li>
+    <li><strong>Terminology and Notation ("$m \times n$"):</strong>
+        <ul>
+            <li>In an "$m \times n$" FRA, the contract commences at the end of month $m$ from contract inception (the settlement or fixing date) and matures at the end of month $n$.</li>
+            <li>The duration of the underlying deposit or borrowing period is $(n - m)$ months. For example, a $3 \times 6$ FRA covers a 3-month loan commencing in 3 months' time.</li>
+        </ul>
+    </li>
+    <li><strong>Determination of Settlement Cash Flow:</strong>
+        <p>At the contract settlement date, the agreed Forward Rate ($FR$) is compared against the actual market Reference Rate ($RR$) (e.g., MIBOR or SOFR). Because interest in money markets is traditionally paid in arrears at the conclusion of the deposit period, the settlement cash flow is discounted back to present value terms at the beginning of the period using the market Reference Rate:</p>
+        <p>$$\text{Settlement Amount} = \frac{\text{Notional Principal } (N) \times (RR - FR) \times \left(\frac{dtm}{DY}\right)}{1 + RR \times \left(\frac{dtm}{DY}\right)}$$</p>
+        <p>Where $dtm$ is the actual number of days in the FRA period and $DY$ is the day count convention (360 or 365 days).</p>
+    </li>
+    <li><strong>Payoff Symmetry:</strong>
+        <ul>
+            <li><strong>If $RR > FR$:</strong> The seller pays the buyer the settlement amount (compensating the buyer for higher market borrowing costs).</li>
+            <li><strong>If $RR < FR$:</strong> The buyer pays the seller the settlement amount.</li>
+        </ul>
+    </li>
+    <li><strong>Advantages:</strong> Tailored notional amounts and maturity dates; zero initial cash outlay; effective removal of interest rate uncertainty.</li>
+</ol>
+</div>
+            </div>
+        </div>
+        
+
+        <div class="problem-card" id="tyk-th-02">
+            <div class="problem-header">
+                <span class="problem-id">TYK-TH-02</span>
+                <h3>Theoretical Question 2: Swaptions and Their Strategic Uses</h3>
+            </div>
+            <div class="problem-statement">
+                <p>What do you know about swaptions and their uses?</p>
+            </div>
+            <div class="solution-wrapper">
+                <div class="solution-header">
+                    <span>ICAI Study Material Solution &amp; Step-by-Step Breakdown</span>
+                </div>
+                <div class="solution-content">
+<h4>Nature and Concept of Swaptions</h4>
+<p>A <strong>Swaption (Swap Option)</strong> is an option contract that grants the buyer the right, but not the obligation, to enter into an Interest Rate Swap (IRS) with the seller on a predetermined future date at a specified swap rate (strike rate):</p>
+
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Type of Swaption</th>
+            <th>Buyer's Right</th>
+            <th>Optimal Exercise Scenario</th>
+            <th>Underlying Hedging Objective</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Payer Swaption</strong></td>
+            <td>Right to <strong>pay fixed</strong> and receive floating in the underlying swap.</td>
+            <td>Exercised when prevailing market swap rates <strong>rise above</strong> the strike rate ($R_{\text{market}} > R_{\text{strike}}$).</td>
+            <td>Used by future borrowers to establish a ceiling on fixed-rate borrowing costs while retaining the flexibility to borrow at lower market rates if yields drop.</td>
+        </tr>
+        <tr>
+            <td><strong>Receiver Swaption</strong></td>
+            <td>Right to <strong>receive fixed</strong> and pay floating in the underlying swap.</td>
+            <td>Exercised when prevailing market swap rates <strong>fall below</strong> the strike rate ($R_{\text{market}} < R_{\text{strike}}$).</td>
+            <td>Used by institutional investors/lenders to establish a floor on future investment yields.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Exercise Styles</h4>
+<ul>
+    <li><strong>European Swaption:</strong> Exercisable only on the exact expiration date.</li>
+    <li><strong>American Swaption:</strong> Exercisable on any business day up to and including the expiration date.</li>
+    <li><strong>Bermudan Swaption:</strong> Exercisable on pre-specified discrete dates (e.g., each coupon reset date).</li>
+</ul>
+
+<h4>Strategic Corporate Uses</h4>
+<ol>
+    <li><strong>Hedging Anticipated Debt Issues:</strong> A company planning a major bond issuance in 6 months can buy a Payer Swaption. If market yields surge, it exercises the swaption to lock in the lower strike rate; if yields decline, it lets the swaption expire and issues bonds at the prevailing low yields.</li>
+    <li><strong>Embedding into Bond Issues:</strong> Issuers can embed swaptions into callable or puttable bonds, significantly lowering initial coupon costs by monetizing the embedded option.</li>
+    <li><strong>Restructuring Existing Swap Positions:</strong> Provides dynamic flexibility to terminate or restructure existing interest rate swap obligations.</li>
+</ol>
+</div>
+            </div>
+        </div>
+        
+
+        <div class="problem-card" id="tyk-pr-01">
+            <div class="problem-header">
+                <span class="problem-id">TYK-PR-01</span>
+                <h3>Practical Question 1: M/s. Parker & Co. - FRA Settlement Calculation</h3>
+            </div>
+            <div class="problem-statement">
+                <p>M/s. Parker &amp; Co. is contemplating to borrow an amount of ₹ 60 crores for a period of 3 months in the coming 6 month's time from now. The current rate of interest is 9% p.a., but it may go up in 6 month’s time. The company wants to hedge itself against the likely increase in interest rate.</p>
+<p>The Company's Bankers quoted an FRA (Forward Rate Agreement) at 9.30% p.a.</p>
+<p>What will be the Final settlement amount, if the actual rate of interest after 6 months happens to be (i) 9.60% p.a. and (ii) 8.80% p.a.?</p>
+            </div>
+            <div class="solution-wrapper">
+                <div class="solution-header">
+                    <span>ICAI Study Material Solution &amp; Step-by-Step Breakdown</span>
+                </div>
+                <div class="solution-content">
+<h4>Master Settlement Formula for Forward Rate Agreements</h4>
+<p>$$\text{Settlement Amount} = \frac{N \times (RR - FR) \times \left(\frac{dtm}{DY}\right)}{1 + RR \times \left(\frac{dtm}{DY}\right)}$$</p>
+<p>Where:</p>
+<ul>
+    <li>$N = ₹ 60 \text{ Crores} = ₹ 60,00,00,000$</li>
+    <li>$FR = \text{Agreed Forward Rate} = 9.30\% = 0.093$</li>
+    <li>$dtm / DY = \text{FRA duration} = 3 \text{ months} / 12 \text{ months} = 0.25$</li>
+</ul>
+
+<h4>Case (i): Actual Rate of Interest after 6 months is 9.60% p.a. ($RR = 0.096$)</h4>
+<p>Since the actual reference rate ($9.60\%$) exceeds the agreed forward rate ($9.30\%$), the banker will pay Parker &amp; Co.:</p>
+<p>$$\text{Numerator} = ₹ 60,00,00,000 \times (0.096 - 0.093) \times \frac{3}{12} = ₹ 60,00,00,000 \times 0.003 \times 0.25 = ₹ 4,50,000$$</p>
+<p>$$\text{Denominator} = 1 + \left[0.096 \times \frac{3}{12}\right] = 1 + 0.024 = 1.024$$</p>
+<p>$$\text{Settlement Amount} = \frac{₹ 4,50,000}{1.024} = \mathbf{₹ 4,39,453.13 \approx ₹ 4,39,453}$$</p>
+<p><strong>Conclusion (i):</strong> The <strong>banker will pay Parker &amp; Co. a sum of ₹ 4,39,453</strong>.</p>
+
+<h4>Case (ii): Actual Rate of Interest after 6 months is 8.80% p.a. ($RR = 0.088$)</h4>
+<p>Since the actual reference rate ($8.80\%$) is lower than the agreed forward rate ($9.30\%$), Parker &amp; Co. will pay the banker:</p>
+<p>$$\text{Numerator} = ₹ 60,00,00,000 \times (0.088 - 0.093) \times \frac{3}{12} = ₹ 60,00,00,000 \times (-0.005) \times 0.25 = -₹ 7,50,000$$</p>
+<p>$$\text{Denominator} = 1 + \left[0.088 \times \frac{3}{12}\right] = 1 + 0.022 = 1.022$$</p>
+<p>$$\text{Settlement Amount} = \frac{-₹ 7,50,000}{1.022} = \mathbf{-₹ 7,33,855.19 \approx -₹ 7,33,855}$$</p>
+<p><strong>Conclusion (ii):</strong> <strong>Parker &amp; Co. will pay the banker a sum of ₹ 7,33,855</strong>.</p>
+
+<div class="result-box">
+    <strong>Final Settlement Summary:</strong><br>
+    • At <strong>9.60% p.a.</strong>: Banker pays Parker &amp; Co. <strong>₹ 4,39,453.13</strong>.<br>
+    • At <strong>8.80% p.a.</strong>: Parker &amp; Co. pays Banker <strong>₹ 7,33,855.19</strong>.
+</div>
+</div>
+            </div>
+        </div>
+        
+
+        <div class="problem-card" id="tyk-pr-02">
+            <div class="problem-header">
+                <span class="problem-id">TYK-PR-02</span>
+                <h3>Practical Question 2: TM Fincorp - 6x9 FRA Settlement & Basis Points</h3>
+            </div>
+            <div class="problem-statement">
+                <p>TM Fincorp has bought a $6 \times 9$ ₹ 100 crore Forward Rate Agreement (FRA) at 5.25%. On fixing date reference rate i.e. MIBOR turns out be as follows:</p>
+<table class="styled-table">
+    <thead>
+        <tr><th>Period</th><th>Rate (%)</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>3 months</td><td>5.50%</td></tr>
+        <tr><td>6 months</td><td>5.70%</td></tr>
+        <tr><td>9 months</td><td>5.85%</td></tr>
+    </tbody>
+</table>
+<p>You are required to determine:</p>
+<ol>
+    <li>Profit/Loss to TM Fincorp in terms of basis points.</li>
+    <li>The settlement amount. (Assume 360 days in a year).</li>
+</ol>
+            </div>
+            <div class="solution-wrapper">
+                <div class="solution-header">
+                    <span>ICAI Study Material Solution &amp; Step-by-Step Breakdown</span>
+                </div>
+                <div class="solution-content">
+<h4>Part (a): Determination of Profit/Loss in Basis Points</h4>
+<p>A $6 \times 9$ FRA is a forward contract on an underlying <strong>3-month interest rate</strong> starting 6 months from today ($9 - 6 = 3$ months).</p>
+<p>Therefore, on the fixing date (6 months from inception), the relevant benchmark reference rate is the <strong>3-month MIBOR</strong>, which is <strong>5.50%</strong>.</p>
+<p>$$\text{Agreed Forward Rate } (FR) = 5.25\%$$</p>
+<p>$$\text{Reference Rate on Fixing Date } (RR) = 5.50\%$$</p>
+<p>$$\text{Gain in Basis Points} = 5.50\% - 5.25\% = 0.25\% = 0.25 \times 100 = \mathbf{25 \text{ Basis Points (bps)}}$$</p>
+<p>Since TM Fincorp bought the FRA and the reference rate increased, <strong>TM Fincorp makes a profit of 25 basis points</strong>.</p>
+
+<h4>Part (b): Computation of Settlement Amount (360-Day Basis)</h4>
+<p>$$\text{Settlement Amount} = \frac{N \times (RR - FR) \times \left(\frac{dtm}{360}\right)}{1 + RR \times \left(\frac{dtm}{360}\right)}$$</p>
+<p>Where:</p>
+<ul>
+    <li>$N = ₹ 100 \text{ Crores} = ₹ 1,00,00,00,000$</li>
+    <li>$RR = 5.50\% = 0.055$</li>
+    <li>$FR = 5.25\% = 0.0525$</li>
+    <li>$dtm = 3 \text{ months} = 90 \text{ days}$</li>
+</ul>
+
+<p>Substituting into the formula:</p>
+<p>$$\text{Numerator} = ₹ 1,00,00,00,000 \times (0.055 - 0.0525) \times \left(\frac{90}{360}\right)$$</p>
+<p>$$\text{Numerator} = ₹ 1,00,00,00,000 \times 0.0025 \times 0.25 = ₹ 6,25,000$$</p>
+<p>$$\text{Denominator} = 1 + \left[0.055 \times \frac{90}{360}\right] = 1 + [0.055 \times 0.25] = 1 + 0.01375 = 1.01375$$</p>
+<p>$$\mathbf{\text{Settlement Amount}} = \frac{₹ 6,25,000}{1.01375} = \mathbf{₹ 6,16,522.81 \approx ₹ 6,16,523}$$</p>
+
+<div class="result-box">
+    <strong>Final Results:</strong><br>
+    (a) Profit in basis points: <strong>25 basis points</strong>.<br>
+    (b) Settlement Amount received by TM Fincorp: <strong>₹ 6,16,523</strong>.
+</div>
+</div>
+            </div>
+        </div>
+        
+
+        <div class="problem-card" id="tyk-pr-03">
+            <div class="problem-header">
+                <span class="problem-id">TYK-PR-03</span>
+                <h3>Practical Question 3: XYZ Limited - Cap Option on SONIA Loan</h3>
+            </div>
+            <div class="problem-statement">
+                <p>XYZ Limited borrows £ 15 Million of six months SONIA + 10.00% for a period of 24 months. The company anticipates a rise in SONIA, hence it proposes to buy a Cap Option from its Bankers at the strike rate of 8.00%. The lump sum premium is 1.00% for the entire reset periods and the fixed rate of interest is 7.00% per annum. The actual position of SONIA during the forthcoming reset period is as under:</p>
+<table class="styled-table">
+    <thead>
+        <tr><th>Reset Period</th><th>SONIA</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>9.00%</td></tr>
+        <tr><td>2</td><td>9.50%</td></tr>
+        <tr><td>3</td><td>10.00%</td></tr>
+    </tbody>
+</table>
+<p>You are required to show how far interest rate risk is hedged through Cap Option.</p>
+<p><em>For calculation, work out figures at each stage up to three decimal points and amount nearest to £.</em></p>
+            </div>
+            <div class="solution-wrapper">
+                <div class="solution-header">
+                    <span>ICAI Study Material Solution &amp; Step-by-Step Breakdown</span>
+                </div>
+                <div class="solution-content">
+<h4>Step 1: Computation of Amortized Semi-Annual Cap Premium</h4>
+<p>The total lump sum premium payable is 1.00% of £ 15,000,000 = £ 150,000.</p>
+<p>There are 4 semi-annual reset periods over the 24-month loan ($t = 4$).</p>
+<p>The semi-annual fixed interest discount rate is $i = 7.00\% / 2 = 3.50\% = 0.035$.</p>
+
+<p>The Present Value Annuity Factor (PVAF) at 3.5% for 4 periods is:</p>
+<p>$$\text{PVAF}(3.5\%, 4) = \frac{1 - (1.035)^{-4}}{0.035} = \frac{1 - 0.87144}{0.035} = 3.673 \approx 3.671$$</p>
+<p>Using ICAI's table factor: $0.966 + 0.933 + 0.901 + 0.871 = 3.671$.</p>
+<p>$$\text{Semi-annual Amortized Premium } (P) = \frac{£ 150,000}{3.671} = \mathbf{£ 40,861}$$</p>
+<p><em>(Alternatively, using continuous formula: $P = £ 40,595$).</em></p>
+
+<h4>Step 2: Payout from Cap Option &amp; Risk Hedged Schedule</h4>
+<p>Strike Rate = 8.00%. Whenever SONIA exceeds 8.00%, the Cap Option pays the excess interest on £ 15,000,000 for 6 months (0.5 year):</p>
+<ul>
+    <li><strong>Reset Period 1 (SONIA = 9.00%):</strong><br>
+        Excess rate = $9.00\% - 8.00\% = 1.00\%$<br>
+        Additional interest incurred = $£ 15,000,000 \times 1\% \times 0.5 = \mathbf{£ 75,000}$<br>
+        Compensation received from bank = $\mathbf{£ 75,000}$<br>
+        Amortized Premium cost = $£ 40,861$<br>
+        Net Benefit / Risk Hedged = $£ 75,000 - £ 40,861 = \mathbf{£ 34,139}$
+    </li>
+    <li><strong>Reset Period 2 (SONIA = 9.50%):</strong><br>
+        Excess rate = $9.50\% - 8.00\% = 1.50\%$<br>
+        Additional interest incurred = $£ 15,000,000 \times 1.5\% \times 0.5 = \mathbf{£ 112,500}$<br>
+        Compensation received from bank = $\mathbf{£ 112,500}$<br>
+        Amortized Premium cost = $£ 40,861$<br>
+        Net Benefit / Risk Hedged = $£ 112,500 - £ 40,861 = \mathbf{£ 71,639}$
+    </li>
+    <li><strong>Reset Period 3 (SONIA = 10.00%):</strong><br>
+        Excess rate = $10.00\% - 8.00\% = 2.00\%$<br>
+        Additional interest incurred = $£ 15,00,000 \times 2\% \times 0.5 = \mathbf{£ 150,000}$<br>
+        Compensation received from bank = $\mathbf{£ 150,000}$<br>
+        Amortized Premium cost = $£ 40,861$<br>
+        Net Benefit / Risk Hedged = $£ 150,000 - £ 40,861 = \mathbf{£ 109,139}$
+    </li>
+</ul>
+
+<h4>Step 3: Comparative Performance Table</h4>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Reset Period</th>
+            <th>Additional Interest from Rate Rise</th>
+            <th>Compensation Received from Bank</th>
+            <th>Amortized Premium Paid</th>
+            <th>Net Interest Risk Hedged</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>£ 75,000</td>
+            <td>£ 75,000</td>
+            <td>£ 40,861</td>
+            <td>£ 34,139</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>£ 112,500</td>
+            <td>£ 112,500</td>
+            <td>£ 40,861</td>
+            <td>£ 71,639</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>£ 150,000</td>
+            <td>£ 150,000</td>
+            <td>£ 40,861</td>
+            <td>£ 109,139</td>
+        </tr>
+        <tr style="font-weight:bold; background:#eff6ff; color:#1e3a8a;">
+            <td>TOTAL</td>
+            <td>£ 337,500</td>
+            <td>£ 337,500</td>
+            <td>£ 122,583</td>
+            <td>£ 214,917</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="result-box">
+    <strong>Conclusion:</strong><br>
+    The total gross interest rate risk of <strong>£ 337,500</strong> arising from rising SONIA rates has been fully recovered from the bank. After accounting for the amortized option premium of <strong>£ 122,583</strong> (£ 40,861 × 3), the net effective risk hedge benefit realized by XYZ Limited is <strong>£ 214,917</strong>.
+</div>
+</div>
+            </div>
+        </div>
+        
+
+        <div class="problem-card" id="tyk-pr-04">
+            <div class="problem-header">
+                <span class="problem-id">TYK-PR-04</span>
+                <h3>Practical Question 4: Generic Swap - Semi-Annual Cash Flow & Net Settlement</h3>
+            </div>
+            <div class="problem-statement">
+                <p>Suppose a dealer quotes ‘All-in-cost’ for a generic swap at 8% against six month SOFR flat. If the notional principal amount of swap is US$ 5,00,000:</p>
+<ol>
+    <li>Calculate semi-annual fixed payment.</li>
+    <li>Find the first floating rate payment for (i) above if the six month period from the effective date of swap to the settlement date comprises 181 days and that the corresponding SOFR was 6% on the effective date of swap.</li>
+    <li>In (ii) above, if the settlement is on ‘Net’ basis, how much the fixed rate payer would pay to the floating rate payer?</li>
+</ol>
+<p><em>Generic swap is based on 30/360 days basis.</em></p>
+            </div>
+            <div class="solution-wrapper">
+                <div class="solution-header">
+                    <span>ICAI Study Material Solution &amp; Step-by-Step Breakdown</span>
+                </div>
+                <div class="solution-content">
+<h4>Part (i): Computation of Semi-Annual Fixed Payment</h4>
+<p>Generic swaps apply the 30/360 day count convention for the fixed leg:</p>
+<p>$$\text{Fixed Payment} = N \times \text{All-in-Cost (AIC)} \times \left(\frac{180}{360}\right)$$</p>
+<p>$$\text{Fixed Payment} = \$500,000 \times 0.08 \times 0.5 = \$500,000 \times 0.04 = \mathbf{US\$ 20,000}$$</p>
+
+<h4>Part (ii): Computation of First Floating Rate Payment</h4>
+<p>For the floating leg, payment is determined using actual days (181 days) over 360 days:</p>
+<p>$$\text{Floating Rate Payment} = N \times \text{SOFR} \times \left(\frac{dt}{360}\right) = \$500,000 \times 0.06 \times \left(\frac{181}{360}\right)$$</p>
+<p>$$\frac{181}{360} = 0.502778 \quad (\text{or rounded to } 0.503)$$</p>
+<p>$$\text{Floating Payment} = \$500,000 \times 0.06 \times 0.502778 = \mathbf{US\$ 15,083.33 \approx US\$ 15,083}$$</p>
+<p><em>(Using 0.503 factor: $\$500,000 \times 0.06 \times 0.503 = \mathbf{US\$ 15,090}$).</em></p>
+
+<h4>Part (iii): Net Settlement Payment by Fixed Rate Payer</h4>
+<p>On a net settlement basis, the fixed rate payer pays the difference between the fixed obligation and the floating receipt:</p>
+<p>$$\text{Net Payment} = \text{Fixed Payment} - \text{Floating Payment}$$</p>
+<p>$$\text{Net Payment} = \$20,000 - \$15,083 = \mathbf{US\$ 4,917}$$</p>
+<p><em>(Or using $\$15,090$: $\$20,000 - \$15,090 = \mathbf{US\$ 4,910}$).</em></p>
+
+<div class="result-box">
+    <strong>Final Answers:</strong><br>
+    • (i) Semi-annual Fixed Payment = <strong>US$ 20,000</strong>.<br>
+    • (ii) Floating Rate Payment = <strong>US$ 15,083</strong> (or US$ 15,090).<br>
+    • (iii) Net Amount paid by Fixed Payer = <strong>US$ 4,917</strong> (or US$ 4,910).
+</div>
+</div>
+            </div>
+        </div>
+        
+
+        <div class="problem-card" id="tyk-pr-05">
+            <div class="problem-header">
+                <span class="problem-id">TYK-PR-05</span>
+                <h3>Practical Question 5: Derivative Bank - Overnight Index Swap (OIS)</h3>
+            </div>
+            <div class="problem-statement">
+                <p>Derivative Bank entered into a plain vanilla swap through an OIS (Overnight Index Swap) on a principal of ₹ 10 crores and agreed to receive MIBOR overnight floating rate for a fixed payment on the principal. The swap was entered into on Monday, 2nd August, 2010 and was to commence on 3rd August, 2010 and run for a period of 7 days.</p>
+<p>Respective MIBOR rates for Tuesday to Monday were: 7.75%, 8.15%, 8.12%, 7.95%, 7.98%, 8.15%.</p>
+<p>If Derivative Bank received ₹ 317 net on settlement, calculate Fixed rate and interest under both legs. Notes:</p>
+<ol>
+    <li>Sunday is Holiday.</li>
+    <li>Work in rounded rupees and avoid decimal working.</li>
+</ol>
+            </div>
+            <div class="solution-wrapper">
+                <div class="solution-header">
+                    <span>ICAI Study Material Solution &amp; Step-by-Step Breakdown</span>
+                </div>
+                <div class="solution-content">
+<h4>Step 1: Daily Compounding Schedule of Floating MIBOR Leg</h4>
+<p>Principal = ₹ 10,00,00,000. Interest compounds daily on the opening balance. On Saturday, interest runs for 2 days (Saturday &amp; Sunday):</p>
+
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Day</th>
+            <th>Opening Principal (₹)</th>
+            <th>MIBOR Rate</th>
+            <th>Days</th>
+            <th>Daily Interest Calculation</th>
+            <th>Interest (₹)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Tuesday (3 Aug)</td>
+            <td>10,00,00,000</td>
+            <td>7.75%</td>
+            <td>1</td>
+            <td>$10,00,00,000 \times 0.0775 \times \frac{1}{365}$</td>
+            <td>21,233</td>
+        </tr>
+        <tr>
+            <td>Wednesday (4 Aug)</td>
+            <td>10,00,21,233</td>
+            <td>8.15%</td>
+            <td>1</td>
+            <td>$10,00,21,233 \times 0.0815 \times \frac{1}{365}$</td>
+            <td>22,334</td>
+        </tr>
+        <tr>
+            <td>Thursday (5 Aug)</td>
+            <td>10,00,43,567</td>
+            <td>8.12%</td>
+            <td>1</td>
+            <td>$10,00,43,567 \times 0.0812 \times \frac{1}{365}$</td>
+            <td>22,256</td>
+        </tr>
+        <tr>
+            <td>Friday (6 Aug)</td>
+            <td>10,00,65,823</td>
+            <td>7.95%</td>
+            <td>1</td>
+            <td>$10,00,65,823 \times 0.0795 \times \frac{1}{365}$</td>
+            <td>21,795</td>
+        </tr>
+        <tr>
+            <td>Saturday &amp; Sunday (7–8 Aug)</td>
+            <td>10,00,87,618</td>
+            <td>7.98%</td>
+            <td>2</td>
+            <td>$10,00,87,618 \times 0.0798 \times \frac{2}{365}$</td>
+            <td>43,764</td>
+        </tr>
+        <tr>
+            <td>Monday (9 Aug)</td>
+            <td>10,01,31,382</td>
+            <td>8.15%</td>
+            <td>1</td>
+            <td>$10,01,31,382 \times 0.0815 \times \frac{1}{365}$</td>
+            <td>22,358</td>
+        </tr>
+        <tr style="font-weight:bold; background:#eff6ff; color:#1e3a8a;">
+            <td colspan="5">Total Floating Rate Interest Received</td>
+            <td>₹ 1,53,740</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Step 2: Determination of Fixed Leg Interest and Fixed Rate</h4>
+<p>Derivative Bank received ₹ 317 net on settlement:</p>
+<p>$$\text{Net Received} = \text{Floating Interest Received} - \text{Fixed Interest Paid}$$</p>
+<p>$$₹ 317 = ₹ 1,53,740 - \text{Fixed Interest Paid}$$</p>
+<p>$$\mathbf{\text{Fixed Interest Paid}} = ₹ 1,53,740 - ₹ 317 = \mathbf{₹ 1,53,423}$$</p>
+
+<p>Now, solve for the annualized Fixed Rate ($R_{\text{fixed}}$) for 7 days:</p>
+<p>$$\text{Fixed Interest} = N \times R_{\text{fixed}} \times \left(\frac{7}{365}\right)$$</p>
+<p>$$₹ 1,53,423 = ₹ 10,00,00,000 \times R_{\text{fixed}} \times \left(\frac{7}{365}\right)$$</p>
+<p>$$R_{\text{fixed}} = \frac{₹ 1,53,423 \times 365}{₹ 10,00,00,000 \times 7} = \frac{56,000,000}{70,000,000} \approx 0.07999914 = \mathbf{8.00\%}$$</p>
+
+<div class="result-box">
+    <strong>Final Results:</strong><br>
+    • Floating Leg Interest Received = <strong>₹ 1,53,740</strong>.<br>
+    • Fixed Leg Interest Paid = <strong>₹ 1,53,423</strong>.<br>
+    • Annualized Fixed Rate = <strong>8.00% p.a.</strong>
+</div>
+</div>
+            </div>
+        </div>
+        
+
+        <div class="problem-card" id="tyk-pr-06">
+            <div class="problem-header">
+                <span class="problem-id">TYK-PR-06</span>
+                <h3>Practical Question 6: A Inc. & B Inc. - Cross-Currency Swap Analysis</h3>
+            </div>
+            <div class="problem-statement">
+                <p>A Inc. and B Inc. intend to borrow $200,000 and $200,000 in ¥ respectively (i.e., equivalent ¥ 24,000,000) for a time horizon of one year. The prevalent interest rates are as follows:</p>
+<table class="styled-table">
+    <thead>
+        <tr><th>Company</th><th>¥ Loan</th><th>$ Loan</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>A Inc.</td><td>5%</td><td>9%</td></tr>
+        <tr><td>B Inc.</td><td>8%</td><td>10%</td></tr>
+    </tbody>
+</table>
+<p>The prevalent exchange rate is $1 = ¥ 120.</p>
+<p>They entered into a currency swap under which it is agreed that B Inc. will pay A Inc. @ 1% over the ¥ loan interest rate which A Inc. has to pay to its lender, and A Inc. will pay B Inc. @ 1% below the $ loan rate which B Inc. has to pay to its lender. Spot exchange rate is used for principal conversions.</p>
+<p>You are required to show the cash flows and opportunity gain of both companies.</p>
+            </div>
+            <div class="solution-wrapper">
+                <div class="solution-header">
+                    <span>ICAI Study Material Solution &amp; Step-by-Step Breakdown</span>
+                </div>
+                <div class="solution-content">
+<h4>Comparative Advantage Analysis</h4>
+<p>• A Inc. has an absolute advantage in both markets, but its comparative advantage is in ¥ debt ($8\% - 5\% = 3\%$ vs $10\% - 9\% = 1\%$).</p>
+<p>• B Inc. has comparative advantage in $ debt.</p>
+<p>• Total available gain to share = $(8\% - 5\%) - (10\% - 9\%) = 3\% - 1\% = \mathbf{2.00\%}$.</p>
+<p>Under the agreed swap terms, each company secures an equal <strong>1.00% net cost savings</strong>.</p>
+
+<h4>1. Cash Flows of A Inc.</h4>
+<p><strong>(i) At inception (Exchange of Principal):</strong></p>
+<ul>
+    <li>Borrowing in ¥: Borrows $¥ 240,00,000$ ($200,000 \times 120$).</li>
+    <li>Swap with B Inc.: Pays $¥ 240,00,000$ and receives $\$200,000$.</li>
+    <li>Net initial receipt = <strong>+$200,000</strong> (Desired currency achieved).</li>
+</ul>
+
+<p><strong>(ii) At Year 1 (Interest Servicing &amp; Settlement):</strong></p>
+<table class="styled-table">
+    <thead>
+        <tr><th>Transaction</th><th>Cash Flow in Foreign Currency</th><th>Equivalent in Desired Currency ($)</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Interest paid to ¥ lender ($¥ 24,000,000 \times 5\%$)</td>
+            <td>-¥ 12,00,000</td>
+            <td>-$10,000</td>
+        </tr>
+        <tr>
+            <td>Interest received from B Inc. ($¥ 24,000,000 \times 6\%$)</td>
+            <td>+¥ 14,40,000</td>
+            <td>+$12,000</td>
+        </tr>
+        <tr style="background:#f1f5f9; font-weight:600;">
+            <td>Net receipt on ¥ leg</td>
+            <td>+¥ 2,40,000</td>
+            <td>+$2,000</td>
+        </tr>
+        <tr>
+            <td>Interest paid to B Inc. on $ leg ($9\% \times \$200,000$)</td>
+            <td>-$18,000</td>
+            <td>-$18,000</td>
+        </tr>
+        <tr style="font-weight:bold; background:#eff6ff; color:#1e3a8a;">
+            <td>Net Interest Cost to A Inc.</td>
+            <td></td>
+            <td>-$16,000 (8.00%)</td>
+        </tr>
+    </tbody>
+</table>
+<p>$$\text{Borrowing cost without swap} = 9.00\% \quad (\text{or } \$18,000)$$</p>
+<p>$$\text{Effective borrowing cost with swap} = 8.00\% \quad (\text{or } \$16,000)$$</p>
+<p>$$\mathbf{\text{Net Opportunity Gain to A Inc.}} = \$18,000 - \$16,000 = \mathbf{\$2,000 \quad (1.00\%)}$$</p>
+
+<h4>2. Cash Flows of B Inc.</h4>
+<p><strong>(i) At inception (Exchange of Principal):</strong></p>
+<ul>
+    <li>Borrowing in $: Borrows $\$200,000$.</li>
+    <li>Swap with A Inc.: Pays $\$200,000$ and receives $¥ 240,00,000$.</li>
+    <li>Net initial receipt = <strong>+¥ 240,00,000</strong> (Desired currency achieved).</li>
+</ul>
+
+<p><strong>(ii) At Year 1 (Interest Servicing &amp; Settlement):</strong></p>
+<table class="styled-table">
+    <thead>
+        <tr><th>Transaction</th><th>Cash Flow in Foreign Currency</th><th>Equivalent in Desired Currency (¥)</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Interest paid to $ lender ($\$200,000 \times 10\%$)</td>
+            <td>-$20,000</td>
+            <td>-¥ 24,00,000</td>
+        </tr>
+        <tr>
+            <td>Interest received from A Inc. ($9\% \times \$200,000$)</td>
+            <td>+$18,000</td>
+            <td>+¥ 21,60,000</td>
+        </tr>
+        <tr style="background:#f1f5f9; font-weight:600;">
+            <td>Net shortfall on $ leg</td>
+            <td>-$2,000</td>
+            <td>-¥ 2,40,000</td>
+        </tr>
+        <tr>
+            <td>Interest paid to A Inc. on ¥ leg ($6\% \times ¥ 24,000,000$)</td>
+            <td>-¥ 14,40,000</td>
+            <td>-¥ 14,40,000</td>
+        </tr>
+        <tr style="font-weight:bold; background:#eff6ff; color:#1e3a8a;">
+            <td>Net Interest Cost to B Inc.</td>
+            <td></td>
+            <td>-¥ 16,80,000 (7.00%)</td>
+        </tr>
+    </tbody>
+</table>
+<p>$$\text{Borrowing cost without swap} = 8.00\% \quad (\text{or } ¥ 19,20,000)$$</p>
+<p>$$\text{Effective borrowing cost with swap} = 7.00\% \quad (\text{or } ¥ 16,80,000)$$</p>
+<p>$$\mathbf{\text{Net Opportunity Gain to B Inc.}} = ¥ 19,20,000 - ¥ 16,80,000 = \mathbf{¥ 2,40,000 \quad (1.00\%)}$$</p>
+
+<div class="result-box">
+    <strong>Conclusion:</strong><br>
+    Both parties successfully obtain their desired currencies and achieve a <strong>1.00% net cost savings</strong> ($2,000 savings for A Inc.; ¥ 2,40,000 savings for B Inc.).
+</div>
+</div>
+            </div>
+        </div>
+        
+
+        <div class="problem-card" id="tyk-pr-07">
+            <div class="problem-header">
+                <span class="problem-id">TYK-PR-07</span>
+                <h3>Practical Question 7: Textile Manufacturer - Loan Hedging via Cap Option</h3>
+            </div>
+            <div class="problem-statement">
+                <p>A textile manufacturer has taken floating interest rate loan of ₹ 40,00,000 on 1st April, 2012. The interest is payable annually on 31st March every year. The actual interest rates applicable to this loan are:</p>
+<ul>
+    <li>On 31st March, 2013: 10.20%</li>
+    <li>On 31st March, 2014: 11.50%</li>
+    <li>On 31st March, 2015: 9.25%</li>
+    <li>On 31st March, 2016: 8.25%</li>
+</ul>
+<p>The borrower wishes to peg his interest cost at 8.50% p.a. He buys an Interest Rate Cap Option with strike rate 8.50% p.a. against a one-time upfront premium of 0.75% paid on 1st October, 2012.</p>
+<p>You are required to show the compensation received and effective interest cost under the Cap Option.</p>
+            </div>
+            <div class="solution-wrapper">
+                <div class="solution-header">
+                    <span>ICAI Study Material Solution &amp; Step-by-Step Breakdown</span>
+                </div>
+                <div class="solution-content">
+<h4>Parameters of the Cap Option Agreement</h4>
+<ul>
+    <li>Notional Principal ($N$): ₹ 40,00,000</li>
+    <li>Strike Rate ($R_k$): 8.50% p.a.</li>
+    <li>Settlement Date: 31st March each year</li>
+    <li>Upfront Premium Paid on 1st October 2012: $₹ 40,00,000 \times 0.75\% = \mathbf{₹ 30,000}$</li>
+</ul>
+
+<h4>Year-by-Year Compensation Schedule</h4>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Settlement Date</th>
+            <th>Market Loan Rate</th>
+            <th>Strike Rate</th>
+            <th>Excess Rate over Strike</th>
+            <th>Compensation Received from Seller</th>
+            <th>Effective Loan Cost to Borrower</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>31st March 2013</strong></td>
+            <td>10.20%</td>
+            <td>8.50%</td>
+            <td>$10.20\% - 8.50\% = 1.70\%$</td>
+            <td>$₹ 40,00,000 \times 1.70\% = \mathbf{₹ 68,000}$</td>
+            <td>$10.20\% - 1.70\% = \mathbf{8.50\%}$</td>
+        </tr>
+        <tr>
+            <td><strong>31st March 2014</strong></td>
+            <td>11.50%</td>
+            <td>8.50%</td>
+            <td>$11.50\% - 8.50\% = 3.00\%$</td>
+            <td>$₹ 40,00,000 \times 3.00\% = \mathbf{₹ 1,20,000}$</td>
+            <td>$11.50\% - 3.00\% = \mathbf{8.50\%}$</td>
+        </tr>
+        <tr>
+            <td><strong>31st March 2015</strong></td>
+            <td>9.25%</td>
+            <td>8.50%</td>
+            <td>$9.25\% - 8.50\% = 0.75\%$</td>
+            <td>$₹ 40,00,000 \times 0.75\% = \mathbf{₹ 30,000}$</td>
+            <td>$9.25\% - 0.75\% = \mathbf{8.50\%}$</td>
+        </tr>
+        <tr>
+            <td><strong>31st March 2016</strong></td>
+            <td>8.25%</td>
+            <td>8.50%</td>
+            <td>Nil ($8.25\% < 8.50\%$)</td>
+            <td><strong>Nil</strong> (Option not exercised)</td>
+            <td><strong>8.25%</strong> (Borrower benefits from lower market rate)</td>
+        </tr>
+        <tr style="font-weight:bold; background:#eff6ff; color:#1e3a8a;">
+            <td colspan="4">Total Compensation Received over 4 Years</td>
+            <td>₹ 2,18,000</td>
+            <td>Cost capped at 8.50% max</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="result-box">
+    <strong>Analytical Insights:</strong><br>
+    • By paying an upfront premium of just <strong>₹ 30,000</strong>, the borrower receives cumulative cash compensations of <strong>₹ 2,18,000</strong> during high-interest periods.<br>
+    • In Year 4, when the rate falls to <strong>8.25%</strong>, the borrower is not obligated to pay anything to the seller, enjoying the lower interest rate.<br>
+    • The Cap Option successfully establishes a maximum ceiling of <strong>8.50%</strong> without sacrificing downside participation.
+</div>
+</div>
+            </div>
+        </div>
+        
+        </section>
+
+        <footer class="footer-nav">
+            <a href="international_finance_full.html" class="footer-btn">← Chapter 11: International Financial Mgmt</a>
+            <a href="business_valuation_full.html" class="footer-btn">Chapter 13: Business Valuation →</a>
+        </footer>
+    </main>
+
+    <script>
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', targetTheme);
+            localStorage.setItem('afm-theme', targetTheme);
+        }
+        (function() {
+            const savedTheme = localStorage.getItem('afm-theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+</body>
+</html>

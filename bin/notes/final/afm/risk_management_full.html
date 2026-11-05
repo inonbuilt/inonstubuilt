@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Chapter 2: Risk Management - Full In-Depth Notes (110% ICAI Book Coverage & Solutions) | CA Final AFM | Calcium Notes</title>
+    <meta name="title" content="Chapter 2: Risk Management - Full In-Depth Notes (110% ICAI Book Coverage & Solutions) | CA Final AFM | Calcium Notes">
+    <meta name="description" content="Exhaustive 110% ICAI textbook study material for CA Final AFM Chapter 2: Risk Management. Master CA Final AFM Chapter 2 Risk Management with complete formulas for Value at Risk (VAR), risk identification matrices, and ICAI exam solutions.">
+    <meta name="keywords" content="Risk Management CA Final AFM, Value at Risk VAR formula, Risk Identification, Z score, Risk Mitigation strategies, ICAI AFM Chapter 2, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+    <meta name="author" content="Calcium Notes">
+    <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/risk_management_full.html">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.calciumnotes.com/bin/notes/final/afm/risk_management_full.html">
+    <meta property="og:title" content="Chapter 2: Risk Management - Full In-Depth Notes (110% ICAI Book Coverage & Solutions) | CA Final AFM | Calcium Notes">
+    <meta property="og:description" content="Exhaustive 110% ICAI textbook study material for CA Final AFM Chapter 2: Risk Management. Master CA Final AFM Chapter 2 Risk Management with complete formulas for Value at Risk (VAR), risk identification matrices, and ICAI exam solutions.">
+    <meta property="og:image" content="https://www.calciumnotes.com/og-image.png">
+    <meta property="og:site_name" content="Calcium Notes">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.calciumnotes.com/bin/notes/final/afm/risk_management_full.html">
+    <meta name="twitter:title" content="Chapter 2: Risk Management - Full In-Depth Notes (110% ICAI Book Coverage & Solutions) | CA Final AFM | Calcium Notes">
+    <meta name="twitter:description" content="Exhaustive 110% ICAI textbook study material for CA Final AFM Chapter 2: Risk Management. Master CA Final AFM Chapter 2 Risk Management with complete formulas for Value at Risk (VAR), risk identification matrices, and ICAI exam solutions.">
+    <meta name="twitter:image" content="https://www.calciumnotes.com/og-image.png">
+
+    <!-- Schema.org Educational & FAQ Structured Data -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "CA Final AFM Chapter 2: Risk Management (Full Notes)",
+    "description": "Exhaustive 110% ICAI textbook study material for CA Final AFM Chapter 2: Risk Management. Master CA Final AFM Chapter 2 Risk Management with complete formulas for Value at Risk (VAR), risk identification matrices, and ICAI exam solutions.",
+    "learningResourceType": "Study Guide",
+    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "author": {
+        "@type": "Organization",
+        "name": "Calcium Notes",
+        "url": "https://www.calciumnotes.com"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Calcium Notes",
+        "url": "https://www.calciumnotes.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.calciumnotes.com/fevicol.png"
+        }
+    },
+    "isPartOf": {
+        "@type": "Course",
+        "name": "CA Final Advanced Financial Management (AFM)",
+        "url": "https://www.calciumnotes.com/bin/notes/notes/afmnotes.html"
+    }
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.calciumnotes.com"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "CA Notes Portal",
+            "item": "https://www.calciumnotes.com/bin/notes/notes.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "AFM Notes Hub",
+            "item": "https://www.calciumnotes.com/bin/notes/notes/afmnotes.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Chapter 2: Risk Management",
+            "item": "https://www.calciumnotes.com/bin/notes/final/afm/risk_management_full.html"
+        }
+    ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What is Value at Risk (VAR)?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Value at Risk (VAR) measures the maximum potential financial loss over a given time horizon at a specified statistical confidence level (e.g. 95% or 99%)."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How does time horizon scaling apply to VAR?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "VAR for T days = 1-Day VAR * sqrt(T), assuming returns are normally distributed and independent."
+            }
+        }
+    ]
+}
+    </script>
+
+<link rel="icon" href="../../../../fevicol.png" type="image/png">
+    <link rel="stylesheet" href="../../assets/template.css">
+
+    <!-- KaTeX for Mathematical Formula Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '\\(', right: '\\)', display: false}, {left: '\\[', right: '\\]', display: true}]});"></script>
+
+    <!-- Typography: Outfit for Headings, Plus Jakarta Sans for Body Reading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Variables - Clean Light Theme (Default) */
+        :root {
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --bg-card-secondary: #f1f5f9;
+            --bg-table-header: #f1f5f9;
+            --bg-table-zebra: #f8fafc;
+            
+            --border-main: #e2e8f0;
+            --border-focus: #cbd5e1;
+            --border-accent: #2563eb;
+
+            --text-heading: #0f172a;
+            --text-body: #1e293b;
+            --text-muted: #64748b;
+            --text-subtle: #475569;
+
+            --primary: #2563eb;
+            --primary-light: #eff6ff;
+            --primary-border: #bfdbfe;
+
+            --formula-bg: #f8fafc;
+            --formula-border: #e2e8f0;
+
+            --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+            --shadow-card: 0 4px 12px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
+        }
+
+        /* Dark Mode Variables (Activated via class or toggle) */
+        body.dark-theme {
+            --bg-page: #090d16;
+            --bg-card: #111827;
+            --bg-card-secondary: #1f2937;
+            --bg-table-header: #1f2937;
+            --bg-table-zebra: #162032;
+
+            --border-main: #1f2937;
+            --border-focus: #374151;
+            --border-accent: #3b82f6;
+
+            --text-heading: #f8fafc;
+            --text-body: #e2e8f0;
+            --text-muted: #94a3b8;
+            --text-subtle: #cbd5e1;
+
+            --primary: #3b82f6;
+            --primary-light: rgba(59, 130, 246, 0.15);
+            --primary-border: rgba(59, 130, 246, 0.3);
+
+            --formula-bg: #111827;
+            --formula-border: #1f2937;
+
+            --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.3);
+            --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-page);
+            color: var(--text-body);
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.75;
+            padding-bottom: 90px;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.15s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Top Sticky Navigation Bar */
+        .top-nav {
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border-main);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-subtle);
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+            gap: 16px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 8px;
+            background: var(--bg-card-secondary);
+            border: 1px solid var(--border-main);
+            transition: all 0.15s ease;
+        }
+
+        .back-link:hover {
+            color: var(--text-heading);
+            border-color: var(--border-focus);
+            text-decoration: none;
+        }
+
+        .nav-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Mode Switcher (Quick vs Full) */
+        .mode-toggle {
+            display: flex;
+            background: var(--bg-card-secondary);
+            border: 1px solid var(--border-main);
+            border-radius: 8px;
+            padding: 3px;
+            gap: 3px;
+        }
+
+        .mode-btn {
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: all 0.15s ease;
+        }
+
+        .mode-btn:hover {
+            color: var(--text-heading);
+            text-decoration: none;
+        }
+
+        .mode-btn.active {
+            background: var(--bg-card);
+            color: var(--text-heading);
+            box-shadow: var(--shadow-subtle);
+        }
+
+        /* Theme Toggle Button (Light/Dark) */
+        .theme-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            background: var(--bg-card-secondary);
+            border: 1px solid var(--border-main);
+            color: var(--text-heading);
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.15s ease;
+        }
+
+        .theme-btn:hover {
+            border-color: var(--border-focus);
+            background: var(--border-main);
+        }
+
+        /* Hero / Header Section */
+        .hero {
+            padding: 44px 0 28px 0;
+            border-bottom: 1px solid var(--border-main);
+            margin-bottom: 36px;
+        }
+
+        .hero-meta-badges {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 14px;
+        }
+
+        .meta-pill {
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            background: var(--bg-card-secondary);
+            color: var(--text-subtle);
+            border: 1px solid var(--border-main);
+        }
+
+        .meta-pill.highlight {
+            background: var(--primary-light);
+            color: var(--primary);
+            border-color: var(--primary-border);
+        }
+
+        .hero h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(2rem, 3.6vw, 2.7rem);
+            font-weight: 800;
+            color: var(--text-heading);
+            line-height: 1.25;
+            margin-bottom: 14px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-lead {
+            font-size: 1.05rem;
+            color: var(--text-subtle);
+            line-height: 1.8;
+            max-width: 860px;
+        }
+
+        /* Clean Table of Contents */
+        .toc-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-main);
+            border-radius: 12px;
+            padding: 22px 24px;
+            margin-bottom: 44px;
+            box-shadow: var(--shadow-card);
+        }
+
+        .toc-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-heading);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 8px 16px;
+        }
+
+        .toc-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 7px 10px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: var(--text-subtle);
+            font-weight: 500;
+            transition: all 0.12s ease;
+        }
+
+        .toc-item:hover {
+            background: var(--bg-card-secondary);
+            color: var(--text-heading);
+            text-decoration: none;
+            transform: translateX(3px);
+        }
+
+        .toc-num {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            border-radius: 4px;
+            background: var(--bg-card-secondary);
+            border: 1px solid var(--border-main);
+            color: var(--text-heading);
+            font-size: 0.75rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        /* Topic Wrapper */
+        .topic-wrapper {
+            margin-bottom: 56px;
+            scroll-margin-top: 84px;
+        }
+
+        .topic-header {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 22px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--border-main);
+        }
+
+        .topic-index {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+
+        .topic-title-group h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.55rem;
+            font-weight: 700;
+            color: var(--text-heading);
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+        }
+
+        .topic-subtitle {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-top: 3px;
+        }
+
+        /* Book-like Architectural Blocks */
+        .block-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-main);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-card);
+            overflow: hidden;
+            transition: border-color 0.15s ease;
+        }
+
+        .block-card:hover {
+            border-color: var(--border-focus);
+        }
+
+        .block-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 20px;
+            background: var(--bg-card-secondary);
+            border-bottom: 1px solid var(--border-main);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: var(--text-heading);
+            letter-spacing: 0.02em;
+        }
+
+        .block-tag {
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-main);
+            color: var(--text-subtle);
+        }
+
+        .block-body {
+            padding: 22px;
+            font-size: 0.97rem;
+            color: var(--text-body);
+            line-height: 1.8;
+        }
+
+        .block-body p {
+            margin-bottom: 14px;
+        }
+
+        .block-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        .block-body ul, .block-body ol {
+            margin-left: 22px;
+            margin-bottom: 14px;
+        }
+
+        .block-body li {
+            margin-bottom: 8px;
+        }
+
+        /* Clean Tables */
+        .clean-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 18px 0;
+            font-size: 0.91rem;
+            border: 1px solid var(--border-main);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .clean-table th {
+            background: var(--bg-table-header);
+            color: var(--text-heading);
+            padding: 10px 14px;
+            font-weight: 700;
+            text-align: left;
+            border-bottom: 1px solid var(--border-main);
+        }
+
+        .clean-table td {
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--border-main);
+            color: var(--text-body);
+        }
+
+        .clean-table tr:nth-child(even) td {
+            background: var(--bg-table-zebra);
+        }
+
+        .clean-table tr:hover td {
+            background: var(--bg-card-secondary);
+        }
+
+        /* Clean Mathematical Callouts */
+        .formula-box {
+            background: var(--formula-bg);
+            border: 1px solid var(--formula-border);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 16px 0;
+            text-align: center;
+        }
+
+        /* Clean Highlight Note Boxes */
+        .note-box {
+            padding: 14px 18px;
+            border-radius: 8px;
+            margin: 16px 0;
+            background: var(--bg-card-secondary);
+            border-left: 4px solid var(--primary);
+            font-size: 0.92rem;
+            color: var(--text-body);
+        }
+
+        .keyword-chip {
+            display: inline-block;
+            background: var(--bg-card-secondary);
+            color: var(--text-heading);
+            border: 1px solid var(--border-main);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin: 2px 4px 2px 0;
+        }
+
+        /* Footer Navigation */
+        .footer-nav {
+            margin-top: 50px;
+            padding: 24px;
+            border-radius: 10px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-main);
+            box-shadow: var(--shadow-card);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .nav-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.92rem;
+            transition: all 0.15s ease;
+        }
+
+        .nav-button.prev {
+            background: var(--bg-card-secondary);
+            color: var(--text-heading);
+            border: 1px solid var(--border-main);
+        }
+
+        .nav-button.next {
+            background: var(--primary);
+            color: #ffffff;
+        }
+
+        .nav-button.next:hover {
+            text-decoration: none;
+            opacity: 0.92;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.85rem; }
+            .toc-grid { grid-template-columns: 1fr; }
+            .block-body { padding: 16px; }
+            .footer-nav { flex-direction: column; align-items: stretch; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Top Navigation -->
+    <header class="top-nav">
+        <div class="container nav-inner">
+            <a href="../../notes/afmfullnotes.html" class="back-link">
+                ← AFM Full Notes Hub
+            </a>
+            
+            <div class="nav-controls">
+                <div class="mode-toggle">
+                    <a href="risk_management.html" class="mode-btn">
+                        ⚡ Quick Notes
+                    </a>
+                    <a href="risk_management_full.html" class="mode-btn active">
+                        📖 Full Notes
+                    </a>
+                </div>
+
+                <!-- 1-Click Theme Switcher (☀️ Light / 🌙 Dark) -->
+                <button id="themeToggleBtn" class="theme-btn" title="Toggle Light / Dark Mode" aria-label="Toggle Theme">
+                    🌙
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Header -->
+        <section class="hero">
+            <div class="hero-meta-badges">
+                <span class="meta-pill highlight">CA Final Paper 2 • AFM</span>
+                <span class="meta-pill">Chapter 2 Full Notes</span>
+                <span class="meta-pill">May 2026 Examination Relevant</span>
+            </div>
+            <h1>Risk Management</h1>
+            <p class="hero-lead">
+                Comprehensive, book-style study notes based on the official ICAI Study Material. Structured topic-by-topic with authentic ICAI text, clear conceptual explanations, examiner scoring keywords, single-asset and two-asset portfolio Value at Risk (VaR) illustrations, and complete Test Your Knowledge answers.
+            </p>
+        </section>
+
+        <!-- Table of Contents -->
+        <nav class="toc-card">
+            <div class="toc-title">
+                📑 Chapter Index &amp; Quick Navigation
+            </div>
+            <div class="toc-grid">
+                <a href="#topic1" class="toc-item">
+                    <span class="toc-num">1</span>
+                    <span>Identification of Types of Risk Faced by an Organization</span>
+                </a>
+                <a href="#topic2" class="toc-item">
+                    <span class="toc-num">2</span>
+                    <span>Evaluation of Financial Risk from Different Perspectives</span>
+                </a>
+                <a href="#topic3" class="toc-item">
+                    <span class="toc-num">3</span>
+                    <span>Value-at-Risk (VAR) — Concept, Features &amp; Applications</span>
+                </a>
+                <a href="#topic4" class="toc-item">
+                    <span class="toc-num">4</span>
+                    <span>All Illustrations Given in Book (VaR Calculations)</span>
+                </a>
+                <a href="#topic5" class="toc-item">
+                    <span class="toc-num">5</span>
+                    <span>Methods for Identification &amp; Management of Financial Risk</span>
+                </a>
+                <a href="#topic6" class="toc-item">
+                    <span class="toc-num">6</span>
+                    <span>Test Your Knowledge (TYK) Questions &amp; Full Answers</span>
+                </a>
+            </div>
+        </nav>
+
+        <!-- TOPIC 1 -->
+        <section id="topic1" class="topic-wrapper">
+            <div class="topic-header">
+                <span class="topic-index">1.</span>
+                <div class="topic-title-group">
+                    <h2>Identification of Types of Risk Faced by an Organization</h2>
+                    <div class="topic-subtitle">ICAI Para 1.0 • Strategic, Compliance, Operational &amp; Financial Risk taxonomies</div>
+                </div>
+            </div>
+
+            <!-- 1. Content in ICAI Book -->
+            <div class="block-card">
+                <div class="block-header">
+                    <span>📖 Content in ICAI Book</span>
+                    <span class="block-tag">Study Material Text</span>
+                </div>
+                <div class="block-body">
+                    <p>A business organization faces many types of risks. Important among them are discussed as below:</p>
+                    
+                    <p><strong>1.1 Strategic Risk:</strong> A successful business always needs a comprehensive and detailed business plan. Everyone knows that a successful business needs to keep pace with the latest trends. This is what is called as strategic risk. So, strategic risk is a risk in which a company’s strategy becomes less effective and it struggles to achieve its goal. It could be due to technological changes, a new competitor entering the market, shifts in customer demand, spikes in the costs of raw materials, or any other large-scale changes.</p>
+                    <p><em>Real Corporate Case:</em> We can take the example of <strong>Kodak</strong> which was able to develop a digital camera by 1975 but considers it a threat to its core business of film photography and fails to develop it. As a result, its competitors such as Sony, Canon, Nikon took the lead and Kodak was forced to declare bankruptcy in 2012. However, a positive example can be given in the case of <strong>Xerox</strong> which invented photocopy machine. When laser printing was introduced, Xerox had the foresight to invest in it and successfully defend its market position.</p>
+
+                    <p><strong>1.2 Compliance Risk:</strong> Every business needs to comply with rules and regulations. For example with the advent of Companies Act, 2013 and GST, businesses have to comply with many rules and regulations. However, when a company ventures into a new business line or a new geographical area, the real problem then occurs. For instance, in California, consumer privacy laws (CCPA) are stricter than in other states.</p>
+
+                    <p><strong>1.3 Operational Risk:</strong> This type of risk relates to internal risk. It also relates to failure on the part of the company to cope with day to day operational problems. This is a people as well as a process risk. An organization can employ another person to check the work of that person who has mistakenly paid ₹ 1,00,000 or it can install an electronic system that can flag off an unusual payment.</p>
+
+                    <p><strong>1.4 Financial Risk:</strong> Financial Risk is referred as unexpected changes in financial conditions such as prices, exchange rates, interest rates, credit rating etc. Broadly, Financial Risk can be divided into following categories:</p>
+                    <ul>
+                        <li><strong>1.4.1 Counterparty Risk:</strong> Occurs due to non-honoring of obligations by the counterparty, which can be failure to deliver goods after taking payment, or failure to make payment on receipt of goods.</li>
+                        <li><strong>1.4.2 Political Risk:</strong> Faced by overseas investors when adverse action by the host government causes loss:
+                            <ul>
+                                <li>Confiscation or destruction of overseas properties.</li>
+                                <li>Rationing of remittance to home country.</li>
+                                <li>Restriction on conversion of local currency into foreign currency.</li>
+                                <li>Restriction as to borrowings.</li>
+                                <li>Invalidation of Patents.</li>
+                                <li>Price control of products.</li>
+                            </ul>
+                        </li>
+                        <li><strong>1.4.3 Interest Rate Risk:</strong> Occurs due to change in interest rates resulting in change in assets and liabilities values. Affects organizations with fixed vs. floating rate mismatches.</li>
+                        <li><strong>1.4.4 Currency Risk:</strong> Affects organizations dealing in foreign exchange as cash flows change with exchange rate movements. If rupee depreciates vis-à-vis US$, exporters with receivables gain, whereas importers with payables suffer.</li>
+                        <li><strong>1.4.5 Liquidity Risk:</strong> Inability of organization to meet liabilities whenever they become due. Arises when organization cannot generate adequate cash or due to maturity mismatches between assets and liabilities (prominent in banking Asset-Liability Management - ALM).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2. Clear Explanation -->
+            <div class="block-card">
+                <div class="block-header">
+                    <span>💡 Clear Conceptual Explanation</span>
+                    <span class="block-tag">Analysis</span>
+                </div>
+                <div class="block-body">
+                    <p><strong>Risk Taxonomy &amp; Management Interface:</strong></p>
+                    <table class="clean-table">
+                        <thead>
+                            <tr>
+                                <th>Risk Class</th>
+                                <th>Primary Root Cause</th>
+                                <th>Mitigation Technique</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Strategic Risk</strong></td>
+                                <td>Macro shifts, disruptive technologies, changing consumer preferences.</td>
+                                <td>Environmental scanning, agile product roadmap, R&amp;D investments.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Compliance Risk</strong></td>
+                                <td>Regulatory changes, cross-border legal divergence, penalty exposure.</td>
+                                <td>Compliance audits, specialized legal counsel, automated tax tracking.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Operational Risk</strong></td>
+                                <td>Internal process breakdown, human error, fraud, system crash.</td>
+                                <td>Segregation of duties, dual authorization, internal controls, IT failovers.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Financial Risk</strong></td>
+                                <td>Market volatility (interest rates, FX, commodity prices), counterparty default.</td>
+                                <td>Derivatives hedging (swaps, futures, options), credit limits, VaR limits.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 3. Exam Relevance & Focus -->
+            <div class="block-card">
+                <div class="block-header">
+                    <span>🎯 Exam Relevance &amp; Examiner Focus</span>
+                    <span class="block-tag">4 Marks</span>
+                </div>
+                <div class="block-body">
+                    <p><strong>Frequently Asked Questions:</strong> <em>"Explain the various types of financial risks faced by a multinational enterprise"</em> or <em>"Distinguish between Strategic Risk and Operational Risk with corporate examples."</em></p>
+                    <div class="note-box">
+                        <strong>Mandatory Scoring Keywords:</strong><br>
+                        <span class="keyword-chip">Strategic Risk (Kodak vs Xerox)</span>
+                        <span class="keyword-chip">Compliance Risk (New geographies)</span>
+                        <span class="keyword-chip">Operational Risk (People &amp; Process)</span>
+                        <span class="keyword-chip">Counterparty Default</span>
+                        <span class="keyword-chip">Political Risk (Expropriation, Remittance rationing)</span>
+                        <span class="keyword-chip">Liquidity Risk (Maturity mismatch / ALM)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOPIC 2 -->
+        <section id="topic2" class="topic-wrapper">
+            <div class="topic-header">
+                <span class="topic-index">2.</span>
+                <div class="topic-title-group">
+                    <h2>Evaluation of Financial Risk from Different Perspectives</h2>
+                    <div class="topic-subtitle">ICAI Para 2.0 • Tripartite viewpoint: Stakeholders, Corporate Entity &amp; Sovereign Government</div>
+                </div>
+            </div>
+
+            <!-- 1. Content in ICAI Book -->
+            <div class="block-card">
+                <div class="block-header">
+                    <span>📖 Content in ICAI Book</span>
+                    <span class="block-tag">Study Material Text</span>
+                </div>
+                <div class="block-body">
+                    <p>The financial risk can be evaluated from different point of views as follows:</p>
+                    
+                    <p><strong>(a) From Stakeholder’s Point of View:</strong> Major stakeholders of a business are equity shareholders and they view financial risk as <em>gearing or leverage</em>. Higher the gearing, higher is the risk of variability of their earnings and dividend. Even for a lender, existing gearing is also a risk since a company having high gearing faces more risk of default in payment of interest and principal.</p>
+
+                    <p><strong>(b) From Company’s Point of View:</strong> From the company’s point of view, if a company borrows excessively or lends recklessly, it faces financial risk. If it borrows too much, fixed financing obligations increase bankruptcy probability. If it borrows too little, it fails to trade on equity and cannot optimize its weighted average cost of capital ($$WACC$$).</p>
+
+                    <p><strong>(c) From Government’s Point of View:</strong> From the Government’s point of view, financial risk can be viewed as failure of any major business unit having a domino effect on the entire economy. It leads to loss of employment, tax revenue loss, and wilful defaulters creating Non-Performing Assets (NPAs) in the banking sector. This can also extend to sovereign debt crisis.</p>
+                </div>
+            </div>
+
+            <!-- 2. Clear Explanation -->
+            <div class="block-card">
+                <div class="block-header">
+                    <span>💡 Clear Conceptual Explanation</span>
+                    <span class="block-tag">Analysis</span>
+                </div>
+                <div class="block-body">
+                    <p><strong>1. Stakeholder Asymmetry:</strong> Equity shareholders carry residual risk; high financial leverage amplifies EPS volatility ($$DOL \times DFL = DCL$$). Debt providers, on the other hand, do not share in upside gains but face direct default loss when operating earnings drop below interest commitments.</p>
+                    <p><strong>2. Corporate Balance:</strong> Optimal capital structure balances tax shields against financial distress costs (Trade-Off Theory). Excessive debt creates under-investment problems and bankruptcy risk.</p>
+                    <p><strong>3. Sovereign &amp; Systemic Risk:</strong> Large corporations (e.g. IL&amp;FS, Lehman Brothers, Silicon Valley Bank) are <em>"Too Big to Fail"</em>. Their collapse chokes credit markets, forces government bailouts, and risks sovereign credit rating downgrades.</p>
+                </div>
+            </div>
+
+            <!-- 3. Exam Relevance & Focus -->
+            <div class="block-card">
+                <div class="block-header">
+                    <span>🎯 Exam Relevance &amp; Examiner Focus</span>
+                    <span class="block-tag">3–4 Marks (TYK 2)</span>
+                </div>
+                <div class="block-body">
+                    <p><strong>ICAI Question:</strong> <em>"The Financial Risk can be viewed from different perspectives. Explain."</em> (TYK Theoretical Question 2)</p>
+                    <div class="note-box">
+                        <strong>Scoring Keywords:</strong><br>
+                        <span class="keyword-chip">Stakeholders (Gearing &amp; Earnings Variability)</span>
+                        <span class="keyword-chip">Lenders (Default Risk)</span>
+                        <span class="keyword-chip">Company (Excessive vs Inadequate Borrowing)</span>
+                        <span class="keyword-chip">Government (Systemic Collapse, Banking NPAs, Sovereign Crisis)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOPIC 3 -->
+        <section id="topic3" class="topic-wrapper">
+            <div class="topic-header">
+                <span class="topic-index">3.</span>
+                <div class="topic-title-group">
+                    <h2>Value-at-Risk (VAR) — Concept, Features &amp; Applications</h2>
+                    <div class="topic-subtitle">ICAI Para 3.0 • The gold standard of risk measurement: Components, Z-scores &amp; applications</div>
+                </div>
+            </div>
+
+            <!-- 1. Content in ICAI Book -->
+            <div class="block-card">
+                <div class="block-header">
+                    <span>📖 Content in ICAI Book</span>
+                    <span class="block-tag">Study Material Text</span>
+                </div>
+                <div class="block-body">
+                    <p><strong>Value at Risk (VAR)</strong> is a measure of risk of investment. Given normal market conditions in a set period (say 1 day, 10 days, 1 month) and a specified confidence level (say 95% or 99%), VAR answers <strong>two fundamental questions</strong>:</p>
+                    <ol>
+                        <li><strong>What is the worst-case scenario?</strong></li>
+                        <li><strong>What will be the loss?</strong></li>
+                    </ol>
+                    <p>It was first applied in 1922 in the New York Stock Exchange, entered the financial world in the 1990s, and became the world’s most widely used measure of financial risk.</p>
+
+                    <p><strong>3.1 Features of VAR:</strong></p>
+                    <ol>
+                        <li><strong>Components of Calculations:</strong> VAR calculation is based on three components:
+                            <ul>
+                                <li>(a) Time Period (Time Horizon)</li>
+                                <li>(b) Confidence Level – Generally 95% and 99%</li>
+                                <li>(c) Loss in percentage or in amount</li>
+                            </ul>
+                        </li>
+                        <li><strong>Statistical Method:</strong> It is a statistical tool based on <strong>Standard Deviation ($\sigma$)</strong>.</li>
+                        <li><strong>Time Horizon:</strong> VAR can be applied for different time horizons say 1 day, 1 week, 1 month, etc.</li>
+                        <li><strong>Probability:</strong> Assuming asset returns are normally distributed, probability of maximum loss can be predicted.</li>
+                        <li><strong>Risk Control:</strong> Risk can be controlled by setting limits for maximum loss.</li>
+                        <li><strong>Z Score:</strong> Z score indicates how many standard deviations an observation lies away from the Mean of a normal distribution:
+                            <ul>
+                                <li>For <strong>95% Confidence Level (5% tail)</strong>: $$Z = 1.645 \approx 1.65$$</li>
+                                <li>For <strong>99% Confidence Level (1% tail)</strong>: $$Z = 2.33$$</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <p><strong>3.2 Applications of VAR:</strong></p>
+                    <ul>
+                        <li>(a) To measure maximum possible loss on any portfolio or trading position.</li>
+                        <li>(b) As a benchmark for performance measurement of any operation or trading (e.g. RAROC).</li>
+                        <li>(c) To fix limits for individuals dealing in the front office of a treasury department.</li>
+                        <li>(d) To enable management to decide trading strategies.</li>
+                        <li>(e) As a tool for Asset and Liability Management (ALM) especially in banks.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2. Clear Explanation -->
+            <div class="block-card">
+                <div class="block-header">
+                    <span>💡 Clear Conceptual Explanation</span>
+                    <span class="block-tag">Analysis</span>
+                </div>
+                <div class="block-body">
+                    <p><strong>1. Understanding the VaR Statement:</strong></p>
+                    <p>If a bank states that its <em>"1-day 99% VaR is ₹10 Crores"</em>, it means:</p>
+                    <div class="note-box">
+                        <em>"Over the next trading day, under normal market conditions, there is a 99% probability that the portfolio loss will NOT exceed ₹10 Crores. Conversely, there is a 1% probability (once every 100 trading days) that the loss will equal or exceed ₹10 Crores."</em>
+                    </div>
+
+                    <p><strong>2. The Time-Scaling Rule (Square Root of Time Rule):</strong></p>
+                    <p>Assuming daily returns are independently and identically distributed (i.i.d.), the volatility scales with the square root of time:</p>
+                    <div class="formula-box">
+                        $$\mathbf{\sigma_T = \sigma_1 \times \sqrt{T}} \quad \implies \quad \mathbf{\text{VaR}_T = \text{VaR}_1 \times \sqrt{T}}$$
+                        $$\text{Where: } T = \text{Holding period in days (e.g., } T = 10 \text{ under Basel Committee requirements)}$$
+                    </div>
+
+                    <p><strong>3. Standard Normal Critical Z-Values:</strong></p>
+                    <table class="clean-table">
+                        <thead>
+                            <tr>
+                                <th>Confidence Level</th>
+                                <th>Significance Level ($\alpha$)</th>
+                                <th>One-Tailed Critical Value ($Z$)</th>
+                                <th>Exact Normal Table Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>90%</strong></td>
+                                <td>10%</td>
+                                <td>1.282</td>
+                                <td>1.28</td>
+                            </tr>
+                            <tr>
+                                <td><strong>95%</strong></td>
+                                <td>5%</td>
+                                <td>1.645</td>
+                                <td>1.65</td>
+                            </tr>
+                            <tr>
+                                <td><strong>97.5%</strong></td>
+                                <td>2.5%</td>
+                                <td>1.960</td>
+                                <td>1.96</td>
+                            </tr>
+                            <tr>
+                                <td><strong>99%</strong></td>
+                                <td>1%</td>
+                                <td><strong>2.326</strong></td>
+                                <td><strong>2.33 (ICAI Standard)</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 3. Exam Relevance & Focus -->
+            <div class="block-card">
+                <div class="block-header">
+                    <span>🎯 Exam Relevance &amp; Examiner Focus</span>
+                    <span class="block-tag">4 Marks (TYK 1)</span>
+                </div>
+                <div class="block-body">
+                    <p><strong>ICAI Question:</strong> <em>"Explain the significance and main applications of VAR."</em> (TYK Theoretical Question 1)</p>
+                    <div class="note-box">
+                        <strong>Scoring Keywords:</strong><br>
+                        <span class="keyword-chip">Worst-case loss in normal markets</span>
+                        <span class="keyword-chip">Three Components (Time, Confidence, Loss)</span>
+                        <span class="keyword-chip">Z-Score (1.645 for 95%, 2.33 for 99%)</span>
+                        <span class="keyword-chip">Square Root of Time ($\sqrt{T}$)</span>
+                        <span class="keyword-chip">Front-Office Dealer Limits</span>
+                        <span class="keyword-chip">Bank ALM Capital Adequacy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOPIC 4 -->
+        <section id="topic4" class="topic-wrapper">
+            <div class="topic-header">
+                <span class="topic-index">4.</span>
+                <div class="topic-title-group">
+                    <h2>All Illustrations Given in Book (VaR Calculations)</h2>
+                    <div class="topic-subtitle">ICAI Para 3.3 • Single Asset 1-Day &amp; 10-Day VaR working with complete step-by-step arithmetic</div>
+                </div>
+            </div>
+
+            <!-- 1. Content in ICAI Book -->
+            <div class="block-card">
+                <div class="block-header">
+                    <span>📖 Content in ICAI Book</span>
+                    <span class="block-tag">Study Material Text</span>
+                </div>
+                <div class="block-body">
+                    <p><strong>Example (Para 3.3):</strong></p>
+                    <p>Suppose you hold worth <strong>₹ 2 crore</strong> shares of X Ltd. whose market price standard deviation is <strong>2% per day</strong>. Assuming 252 trading days a year, determine the maximum possible loss for <strong>1 day</strong> and for <strong>10 trading days</strong> at <strong>99% confidence level</strong>.</p>
+                    
+                    <hr style="border: 0; border-top: 1px solid var(--border-main); margin: 16px 0;">
+
+                    <p><strong>Answer (Official ICAI Solution):</strong></p>
+                    <p>Assuming share prices are normally distributed, for a confidence level of 99%, the equivalent Z score from the Normal table of Cumulative Probabilities is <strong>2.33</strong>.</p>
+                    <p>Volatility in terms of rupees shall be:</p>
+                    <div class="formula-box">
+                        $$\text{Daily Volatility in ₹} = 2\% \text{ of ₹ 2 Crore} = \mathbf{₹\ 4\ \text{lakh}}$$
+                    </div>
+                    <p>The maximum loss for 1 day at 99% Confidence Level shall be:</p>
+                    <div class="formula-box">
+                        $$\text{1-Day 99% VaR} = ₹\ 4\ \text{lakh} \times 2.33 = \mathbf{₹\ 9.32\ \text{lakh}}$$
+                    </div>
+                    <p>And expected maximum loss for 10 trading days shall be:</p>
+                    <div class="formula-box">
+                        $$\text{10-Day 99% VaR} = \sqrt{10} \times ₹\ 9.32\ \text{lakh} = 3.162277 \times ₹\ 9.32\ \text{lakh} = \mathbf{₹\ 29.47\ \text{lakhs}}$$
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Clear Explanation & General Formula -->
+            <div class="block-card">
+                <div class="block-header">
+                    <span>💡 Clear Explanation of Computational Steps</span>
+                    <span class="block-tag">Step-by-Step</span>
+                </div>
+                <div class="block-body">
+                    <p><strong>The Generalized VaR Formula:</strong></p>
+                    <div class="formula-box">
+                        $$\mathbf{\text{VaR}_{(T,\ 1-\alpha)} = V_0 \times \sigma_{\text{daily}} \times Z_{\alpha} \times \sqrt{T}}$$
+                        $$\text{Where: } V_0 = \text{Portfolio value (₹ 2,00,00,000)},\quad \sigma_{\text{daily}} = 0.02,\quad Z_{0.01} = 2.33,\quad T = 10$$
+                    </div>
+                    <table class="clean-table">
+                        <thead>
+                            <tr>
+                                <th>Step</th>
+                                <th>Particulars</th>
+                                <th>Mathematical Formula</th>
+                                <th>Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Step 1</strong></td>
+                                <td>Determine Position Value</td>
+                                <td>$$V_0$$</td>
+                                <td>₹ 2,00,00,000 (₹ 200 Lakhs)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Step 2</strong></td>
+                                <td>Compute Daily Volatility</td>
+                                <td>$$V_0 \times \sigma_{\text{daily}}$$</td>
+                                <td>₹ 4,00,000 (₹ 4 Lakhs)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Step 3</strong></td>
+                                <td>Apply 99% Z-Value</td>
+                                <td>$$₹ 4\text{L} \times 2.33$$</td>
+                                <td><strong>₹ 9.32 Lakhs (1-Day VaR)</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Step 4</strong></td>
+                                <td>Scale to 10 Trading Days</td>
+                                <td>$$\text{1-Day VaR} \times \sqrt{10}$$</td>
+                                <td>$$9.32 \times 3.16228 = \mathbf{₹\ 29.47\ \text{Lakhs}}$$</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 3. Exam Relevance & Focus -->
+            <div class="block-card">
+                <div class="block-header">
+                    <span>🎯 Exam Relevance &amp; Examiner Focus</span>
+                    <span class="block-tag">Numerical Alert</span>
+                </div>
+                <div class="block-body">
+                    <p><strong>Exam Nuance:</strong> If the question specifies a <strong>95% Confidence Level</strong>, replace $$Z = 2.33$$ with $$Z = 1.645$$:</p>
+                    <div class="formula-box">
+                        $$\text{1-Day 95% VaR} = ₹\ 4\ \text{lakh} \times 1.645 = \mathbf{₹\ 6.58\ \text{lakhs}}$$
+                        $$\text{10-Day 95% VaR} = \sqrt{10} \times ₹\ 6.58\ \text{lakhs} = \mathbf{₹\ 20.81\ \text{lakhs}}$$
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOPIC 5 -->
+        <section id="topic5" class="topic-wrapper">
+            <div class="topic-header">
+                <span class="topic-index">5.</span>
+                <div class="topic-title-group">
+                    <h2>Methods for Identification &amp; Management of Financial Risk</h2>
+                    <div class="topic-subtitle">ICAI Para 4.0 • Identification signals &amp; mitigation techniques for Counterparty, Political, Interest Rate &amp; Currency Risks</div>
+                </div>
+            </div>
+
+            <!-- 1. Content in ICAI Book -->
+            <div class="block-card">
+                <div class="block-header">
+                    <span>📖 Content in ICAI Book</span>
+                    <span class="block-tag">Study Material Text</span>
+                </div>
+                <div class="block-body">
+                    <p><strong>4.1 Counterparty Risk:</strong></p>
+                    <p><em>Hints providing identification of counterparty risk:</em></p>
+                    <ol type="a">
+                        <li>Failure to obtain necessary resources to complete the project or transaction undertaken.</li>
+                        <li>Any regulatory restrictions from the Government.</li>
+                        <li>Hostile action of foreign government.</li>
+                        <li>Let down by third party.</li>
+                        <li>Have become insolvent.</li>
+                    </ol>
+                    <p><em>Techniques to manage counterparty risk:</em></p>
+                    <ol>
+                        <li>Carrying out <strong>Due Diligence</strong> before dealing with any third party.</li>
+                        <li>Do not over commit to a single entity or group or connected entities.</li>
+                        <li>Know your exposure limits.</li>
+                        <li>Review the limits and procedure for credit approval regularly.</li>
+                        <li>Rapid action in the event of any likelihood of defaults.</li>
+                        <li>Use of performance guarantee, insurance or other instruments.</li>
+                    </ol>
+
+                    <p><strong>4.2 Political Risk:</strong></p>
+                    <p><em>Identification actions by host country government:</em></p>
+                    <ol>
+                        <li>Insistence on resident investors or labour.</li>
+                        <li>Restriction on conversion of currency.</li>
+                        <li>Expropriation of foreign assets by the local government.</li>
+                        <li>Price fixation of the products.</li>
+                    </ol>
+                    <p><em>Assessment of country risk:</em></p>
+                    <ul>
+                        <li>(1) By referring political ranking published by business magazines.</li>
+                        <li>(2) By evaluating country’s macro-economic conditions.</li>
+                        <li>(3) By analysing the popularity of current government and assessing their stability.</li>
+                        <li>(4) By taking advice from the embassies of home country in host countries.</li>
+                    </ul>
+                    <p><em>Techniques to mitigate political risk:</em></p>
+                    <ul>
+                        <li>(i) Local sourcing of raw materials and labour.</li>
+                        <li>(ii) Entering into joint ventures with local partners.</li>
+                        <li>(iii) Local financing (raising debt in host currency).</li>
+                        <li>(iv) Prior negotiations (concession agreements).</li>
+                    </ul>
+
+                    <p><strong>4.3 Interest Rate Risk:</strong></p>
+                    <p><em>Identification signals:</em> Monetary Policy of Government/Central Bank, government moves (e.g. demonetization), Economic Growth rates, Industrial Data releases (IIP/CPI), FII capital inflows, Stock market movements.</p>
+
+                    <p><strong>4.4 Currency Risk:</strong></p>
+                    <p><em>Identification factors:</em></p>
+                    <ol>
+                        <li>Government Action (e.g., UK Brexit referendum impact on GBP).</li>
+                        <li>Nominal Interest Rates (Interest Rate Parity - IRP).</li>
+                        <li>Inflation Rates (Purchasing Power Parity - PPP).</li>
+                        <li>Natural Calamities.</li>
+                        <li>War, Coup, Rebellion.</li>
+                        <li>Change of Government and attitude towards foreign investment.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- 2. Clear Explanation -->
+            <div class="block-card">
+                <div class="block-header">
+                    <span>💡 Clear Conceptual Explanation</span>
+                    <span class="block-tag">Analysis</span>
+                </div>
+                <div class="block-body">
+                    <p><strong>Strategic Mechanics of Political Risk Mitigation:</strong></p>
+                    <ul>
+                        <li><strong>Local Sourcing:</strong> By hiring local staff and purchasing from local vendors, any expropriation by the host government causes severe local unemployment and domestic supplier backlash, disincentivizing government seizure.</li>
+                        <li><strong>Local Financing:</strong> If a firm finances its overseas plant via loans from host-country domestic banks, the host government cannot nationalize the plant without causing massive loan defaults to its own local banking system.</li>
+                        <li><strong>Joint Ventures:</strong> Partnering with politically influential domestic entities creates a powerful domestic lobby against adverse regulatory actions.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 3. Exam Relevance & Focus -->
+            <div class="block-card">
+                <div class="block-header">
+                    <span>🎯 Exam Relevance &amp; Examiner Focus</span>
+                    <span class="block-tag">4–6 Marks</span>
+                </div>
+                <div class="block-body">
+                    <p><strong>Frequently Tested Theory:</strong> <em>"Discuss the techniques an MNC can adopt to manage Political Risk"</em> or <em>"Explain the techniques for mitigating Counterparty Risk."</em></p>
+                    <div class="note-box">
+                        <strong>Scoring Keywords:</strong><br>
+                        <span class="keyword-chip">Counterparty Due Diligence</span>
+                        <span class="keyword-chip">Single-Entity Exposure Limits</span>
+                        <span class="keyword-chip">Performance Guarantees / Credit Insurance</span>
+                        <span class="keyword-chip">Host Government Expropriation</span>
+                        <span class="keyword-chip">Local Sourcing &amp; Local Financing</span>
+                        <span class="keyword-chip">Joint Ventures &amp; Prior Negotiations</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOPIC 6 -->
+        <section id="topic6" class="topic-wrapper">
+            <div class="topic-header">
+                <span class="topic-index">6.</span>
+                <div class="topic-title-group">
+                    <h2>Test Your Knowledge (TYK) Questions &amp; Full Answers</h2>
+                    <div class="topic-subtitle">ICAI End-of-Chapter Theoretical &amp; Practical Problems with 100% Comprehensive Step-by-Step Solutions</div>
+                </div>
+            </div>
+
+            <!-- Theoretical Q1 -->
+            <div class="block-card">
+                <div class="block-header">
+                    <span>❓ ICAI TYK Theoretical Question 1</span>
+                    <span class="block-tag">Theory</span>
+                </div>
+                <div class="block-body">
+                    <p><strong>Question:</strong> Explain the significance of VAR.</p>
+                    <hr style="border: 0; border-top: 1px solid var(--border-main); margin: 14px 0;">
+                    <p><strong>Answer:</strong></p>
+                    <p><strong>Value at Risk (VAR)</strong> is the world’s most widely used statistical measure for quantifying market risk. It indicates the maximum expected loss of a portfolio over a specified time horizon at a given confidence level under normal market conditions.</p>
+                    <p>The significance and primary applications of VAR are:</p>
+                    <ol>
+                        <li><strong>Portfolio Risk Quantification:</strong> Provides senior management with a single, intuitive, consolidated monetary figure representing portfolio risk across diverse asset classes (equities, bonds, currencies, derivatives).</li>
+                        <li><strong>Trading Limits (Front-Office Control):</strong> Used by corporate treasuries and investment banks to set daily stop-loss and maximum allowable exposure limits for individual traders and desks.</li>
+                        <li><strong>Performance Measurement (Risk-Adjusted Performance):</strong> Serves as a benchmark for evaluating trading performance on a risk-adjusted basis (e.g. RAROC — Risk-Adjusted Return on Capital).</li>
+                        <li><strong>Formulating Trading Strategies:</strong> Guides portfolio managers on rebalancing, diversification, and hedging strategies.</li>
+                        <li><strong>Asset and Liability Management (ALM) &amp; Capital Adequacy:</strong> Central banks and Basel regulatory frameworks require commercial banks to maintain regulatory capital based on 10-day 99% VaR.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Theoretical Q2 -->
+            <div class="block-card">
+                <div class="block-header">
+                    <span>❓ ICAI TYK Theoretical Question 2</span>
+                    <span class="block-tag">Theory</span>
+                </div>
+                <div class="block-body">
+                    <p><strong>Question:</strong> The Financial Risk can be viewed from different perspective. Explain.</p>
+                    <hr style="border: 0; border-top: 1px solid var(--border-main); margin: 14px 0;">
+                    <p><strong>Answer:</strong></p>
+                    <p>Financial risk is not perceived identically across economic agents. It is evaluated from three distinct viewpoints:</p>
+                    <ol>
+                        <li><strong>From Stakeholder’s Point of View:</strong>
+                            <ul>
+                                <li><em>Equity Shareholders:</em> View financial risk as <strong>gearing or financial leverage</strong> ($$DFL$$). Higher debt increases fixed interest charges, creating high variability in earnings per share (EPS) and dividend stability.</li>
+                                <li><em>Lenders (Debt Providers):</em> View high gearing as elevated credit risk and probability of default in timely servicing of interest and principal.</li>
+                            </ul>
+                        </li>
+                        <li><strong>From Company’s Point of View:</strong>
+                            <ul>
+                                <li>Excessive borrowing threatens corporate solvency and increases bankruptcy probability.</li>
+                                <li>Under-borrowing deprives equity shareholders of the benefits of trading on equity, raising the firm's overall weighted average cost of capital ($$WACC$$).</li>
+                            </ul>
+                        </li>
+                        <li><strong>From Government’s Point of View:</strong>
+                            <ul>
+                                <li>Large corporate insolvencies produce contagion effects across supply chains, causing job losses and tax revenue depletion.</li>
+                                <li>Wilful defaulters generate Non-Performing Assets (NPAs), choking bank credit flow and potentially precipitating a systemic sovereign financial crisis.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Practical Question 1 (ICAI Master Portfolio VaR) -->
+            <div class="block-card">
+                <div class="block-header">
+                    <span>🧮 ICAI TYK Practical Question 1 (Master Portfolio VaR Problem)</span>
+                    <span class="block-tag">Full Solution</span>
+                </div>
+                <div class="block-body">
+                    <p><strong>Question:</strong> Consider a portfolio consisting of a <strong>₹ 200,00,000 (₹ 2 Crore)</strong> investment in share XYZ and a <strong>₹ 200,00,000 (₹ 2 Crore)</strong> investment in share ABC. The daily standard deviation of both shares is <strong>1%</strong> and the coefficient of correlation between them is <strong>0.30</strong>.</p>
+                    <p>Determine the <strong>10-day 99% Value at Risk (VaR)</strong> for the portfolio.</p>
+                    
+                    <hr style="border: 0; border-top: 1px solid var(--border-main); margin: 16px 0;">
+
+                    <h3 style="margin-bottom: 12px; color: var(--text-heading);">Solution:</h3>
+                    
+                    <p><strong>Given Parameters:</strong></p>
+                    <ul>
+                        <li>Investment in Share XYZ ($$X_1$$) = ₹ 200 Lakhs</li>
+                        <li>Investment in Share ABC ($$X_2$$) = ₹ 200 Lakhs</li>
+                        <li>Total Portfolio Value ($$V_0$$) = ₹ 400 Lakhs</li>
+                        <li>Portfolio Weights: $$w_1 = \frac{200}{400} = 0.50$$,\quad $$w_2 = \frac{200}{400} = 0.50$$</li>
+                        <li>Daily Standard Deviation of XYZ ($$\sigma_1$$) = 1%</li>
+                        <li>Daily Standard Deviation of ABC ($$\sigma_2$$) = 1%</li>
+                        <li>Correlation Coefficient ($$r_{12}$$) = 0.30</li>
+                        <li>Holding Period ($$T$$) = 10 Days</li>
+                        <li>Confidence Level = 99% ($$Z = 2.33$$)</li>
+                    </ul>
+
+                    <p><strong>Method 1: Direct Monetary Variance Approach (ICAI Primary Method)</strong></p>
+                    <p>The standard deviation of daily change in each asset in amount is:</p>
+                    <div class="formula-box">
+                        $$\sigma_1 (\text{in ₹}) = 1\% \times ₹\ 200\ \text{lakhs} = \mathbf{₹\ 2\ \text{lakhs}}$$
+                        $$\sigma_2 (\text{in ₹}) = 1\% \times ₹\ 200\ \text{lakhs} = \mathbf{₹\ 2\ \text{lakhs}}$$
+                    </div>
+                    <p>The variance of daily change in portfolio value ($$V$$) is:</p>
+                    <div class="formula-box">
+                        $$V = \sigma_1^2 + \sigma_2^2 + 2 \cdot r \cdot \sigma_1 \cdot \sigma_2$$
+                        $$V = (2)^2 + (2)^2 + [2 \times 0.30 \times 2 \times 2] = 4 + 4 + 2.40 = \mathbf{10.40}$$
+                        $$\mathbf{\sigma_{\text{daily}} (\text{in ₹})} = \sqrt{10.40} = \mathbf{₹\ 3.2249\ \text{lakhs}} \approx \mathbf{₹\ 3.22\ \text{lakhs}}$$
+                    </div>
+
+                    <p><strong>Method 2: Percentage Variance Approach (ICAI Alternative Method)</strong></p>
+                    <div class="formula-box">
+                        $$\sigma_P\%^2 = w_1^2 \sigma_1^2 + w_2^2 \sigma_2^2 + 2 w_1 w_2 r \sigma_1 \sigma_2$$
+                        $$\sigma_P\%^2 = (0.50)^2(1)^2 + (0.50)^2(1)^2 + 2(0.50)(0.50)(0.30)(1)(1) = 0.25 + 0.25 + 0.15 = \mathbf{0.65\%}$$
+                        $$\sigma_P\% = \sqrt{0.65\%} = \mathbf{0.8062257\%}$$
+                        $$\mathbf{\sigma_{\text{daily}} (\text{in ₹})} = ₹\ 400\ \text{lakhs} \times 0.8062257\% = \mathbf{₹\ 3.2249\ \text{lakhs}} \approx \mathbf{₹\ 3.22\ \text{lakhs}}$$
+                    </div>
+
+                    <p><strong>Step 2: Scale Volatility to 10 Days ($$\sqrt{T}$$ Rule)</strong></p>
+                    <div class="formula-box">
+                        $$\sigma_{10} = \sigma_{\text{daily}} \times \sqrt{10} = ₹\ 3.2249\ \text{lakhs} \times 3.1622777 = \mathbf{₹\ 10.198\ \text{lakhs}} \approx \mathbf{₹\ 10.18\ \text{lakhs}}$$
+                    </div>
+
+                    <p><strong>Step 3: Compute 10-Day 99% Value at Risk (VaR)</strong></p>
+                    <p>From the Normal Table, for 99% confidence level (1% lower tail), $$Z = 2.33$$:</p>
+                    <div class="formula-box">
+                        $$\mathbf{\text{10-Day 99% VaR}} = Z \times \sigma_{10} = 2.33 \times ₹\ 10.18\ \text{lakhs} = \mathbf{₹\ 23.72\ \text{lakhs}}$$
+                        $$\text{(Using exact 3.2249: } 2.33 \times 10.198 = \mathbf{₹\ 23.76\ \text{lakhs}}\text{; using } Z = 2.326: \mathbf{₹\ 23.68\ \text{lakhs}})$$
+                    </div>
+                    <div class="note-box">
+                        <strong>Final Conclusion:</strong> There is a 99% probability that the maximum portfolio loss over a 10-day holding period will not exceed <strong>₹ 23.72 Lakhs</strong> (under normal market conditions).
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Navigation -->
+        <div class="footer-nav">
+            <a href="financial_policy_full.html" class="nav-button prev">
+                ← Previous: Chapter 1 Full Notes
+            </a>
+            <a href="capital_budgeting_full.html" class="nav-button next">
+                Next: Chapter 3 Full Notes (Capital Budgeting) →
+            </a>
+        </div>
+    </main>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        const themeBtn = document.getElementById('themeToggleBtn');
+        const currentTheme = localStorage.getItem('calcium_theme');
+
+        // Apply saved theme if dark
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-theme');
+            themeBtn.textContent = '☀️';
+        } else {
+            themeBtn.textContent = '🌙';
+        }
+
+        themeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            const isDark = document.body.classList.contains('dark-theme');
+            themeBtn.textContent = isDark ? '☀️' : '🌙';
+            localStorage.setItem('calcium_theme', isDark ? 'dark' : 'light');
+        });
+    </script>
+</body>
+</html>

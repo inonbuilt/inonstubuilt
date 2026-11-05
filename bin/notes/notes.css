@@ -192,13 +192,20 @@ body {
 }
 
 /* Button Configuration Blocks */
+.note-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
 .note-btn {
     border: none;
     outline: none;
     padding: 8px 18px;
     border-radius: 999px;
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     text-decoration: none;
     display: inline-flex;
@@ -217,6 +224,30 @@ body {
     background: #020617;
     transform: translateY(-1px);
     box-shadow: 0 6px 16px rgba(2, 6, 23, 0.25);
+}
+
+.note-btn.note-btn-quick {
+    background: #0f172a;
+    color: #ffffff;
+    border: 1px solid #1e293b;
+}
+
+.note-btn.note-btn-quick:hover {
+    background: #1e293b;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.25);
+}
+
+.note-btn.note-btn-full {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
+}
+
+.note-btn.note-btn-full:hover {
+    background: linear-gradient(135deg, #1d4ed8, #1e40af);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
 }
 
 /* SEO Feature Section Blocks */
@@ -306,6 +337,18 @@ body {
         text-align: center;
     }
     
+    .note-actions {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .note-actions .note-btn {
+        flex: 1;
+        text-align: center;
+    }
+
     .note-btn {
         width: 100%;
     }

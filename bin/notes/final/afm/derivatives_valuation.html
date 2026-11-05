@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Chapter 9: Derivatives Analysis and Valuation - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes</title>
+    <meta name="title" content="Chapter 9: Derivatives Analysis and Valuation - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
+    <meta name="description" content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 9: Derivatives Analysis and Valuation. 110% CA Final AFM Chapter 9 Derivatives Analysis notes. Futures pricing, index beta hedging, Black-Scholes, Binomial trees, Greeks, and all 17 Illus + 38 TYK questions.">
+    <meta name="keywords" content="Derivatives Valuation CA Final AFM, Futures pricing Cost of Carry, Black Scholes formula, Binomial option pricing, Option Greeks, CDS, Chapter 9, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+    <meta name="author" content="Calcium Notes">
+    <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/derivatives_valuation.html">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.calciumnotes.com/bin/notes/final/afm/derivatives_valuation.html">
+    <meta property="og:title" content="Chapter 9: Derivatives Analysis and Valuation - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
+    <meta property="og:description" content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 9: Derivatives Analysis and Valuation. 110% CA Final AFM Chapter 9 Derivatives Analysis notes. Futures pricing, index beta hedging, Black-Scholes, Binomial trees, Greeks, and all 17 Illus + 38 TYK questions.">
+    <meta property="og:image" content="https://www.calciumnotes.com/og-image.png">
+    <meta property="og:site_name" content="Calcium Notes">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.calciumnotes.com/bin/notes/final/afm/derivatives_valuation.html">
+    <meta name="twitter:title" content="Chapter 9: Derivatives Analysis and Valuation - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
+    <meta name="twitter:description" content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 9: Derivatives Analysis and Valuation. 110% CA Final AFM Chapter 9 Derivatives Analysis notes. Futures pricing, index beta hedging, Black-Scholes, Binomial trees, Greeks, and all 17 Illus + 38 TYK questions.">
+    <meta name="twitter:image" content="https://www.calciumnotes.com/og-image.png">
+
+    <!-- Schema.org Educational & FAQ Structured Data -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "CA Final AFM Chapter 9: Derivatives Analysis and Valuation (Quick Revision)",
+    "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 9: Derivatives Analysis and Valuation. 110% CA Final AFM Chapter 9 Derivatives Analysis notes. Futures pricing, index beta hedging, Black-Scholes, Binomial trees, Greeks, and all 17 Illus + 38 TYK questions.",
+    "learningResourceType": "Revision Cheat Sheet",
+    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "author": {
+        "@type": "Organization",
+        "name": "Calcium Notes",
+        "url": "https://www.calciumnotes.com"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Calcium Notes",
+        "url": "https://www.calciumnotes.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.calciumnotes.com/fevicol.png"
+        }
+    },
+    "isPartOf": {
+        "@type": "Course",
+        "name": "CA Final Advanced Financial Management (AFM)",
+        "url": "https://www.calciumnotes.com/bin/notes/notes/afmnotes.html"
+    }
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.calciumnotes.com"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "CA Notes Portal",
+            "item": "https://www.calciumnotes.com/bin/notes/notes.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "AFM Notes Hub",
+            "item": "https://www.calciumnotes.com/bin/notes/notes/afmnotes.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Chapter 9: Derivatives Analysis and Valuation",
+            "item": "https://www.calciumnotes.com/bin/notes/final/afm/derivatives_valuation.html"
+        }
+    ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What is the Cost of Carry model for futures pricing?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Futures Price = Spot Price * e^((r - q) * T), where r is the risk-free interest rate and q is the continuous dividend yield."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do you calculate number of contracts for complete Beta Hedging?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Number of Contracts = [Target Beta - Current Beta] * Portfolio Value / (Futures Price * Contract Multiplier)."
+            }
+        }
+    ]
+}
+    </script>
+
+<!-- KaTeX for High-Fidelity Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false}
+            ],
+            throwOnError: false
+        });"></script>
+
+    <style>
+        :root {
+            --bg-canvas: #ffffff;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --border-color: #e2e8f0;
+            --card-bg: #f8fafc;
+            --table-header: #f1f5f9;
+            --success: #16a34a;
+            --danger: #dc2626;
+            --warning-bg: #fffbeb;
+        }
+
+        [data-theme="dark"] {
+            --bg-canvas: #090d16;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #3b82f6;
+            --accent-hover: #60a5fa;
+            --border-color: #1e293b;
+            --card-bg: #0f172a;
+            --table-header: #1e293b;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --warning-bg: #1c1917;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-canvas);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 15px;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        
+        /* Bulletproof High-Visibility Sidebar Navigation */
+        .sidebar {
+            width: 300px;
+            background: var(--bg-canvas);
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 20px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            flex-shrink: 0;
+        }
+
+        .sidebar-brand {
+            font-size: 15px;
+            font-weight: 800;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4px 6px 12px 6px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 8px;
+        }
+
+        .theme-toggle {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 4px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .nav-group-title {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #64748b;
+            margin: 14px 0 4px 8px;
+            letter-spacing: 0.6px;
+        }
+
+        .sidebar a,
+        .sidebar a:link,
+        .sidebar a:visited,
+        .nav-link,
+        a.nav-link {
+            display: block !important;
+            padding: 6px 10px !important;
+            border-radius: 6px !important;
+            color: #1e293b !important; /* Bold, high-contrast dark charcoal */
+            text-decoration: none !important;
+            font-size: 13px !important;
+            font-weight: 600 !important;
+            line-height: 1.4 !important;
+            transition: all 0.15s ease !important;
+            white-space: normal !important; /* Wrap cleanly, no clipping */
+            word-break: break-word !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+
+        .sidebar a:hover,
+        .nav-link:hover,
+        a.nav-link:hover {
+            background: #eff6ff !important;
+            color: #2563eb !important;
+            padding-left: 14px !important;
+        }
+
+        [data-theme="dark"] .nav-group-title {
+            color: #94a3b8;
+        }
+
+        [data-theme="dark"] .sidebar a,
+        [data-theme="dark"] .sidebar a:link,
+        [data-theme="dark"] .sidebar a:visited,
+        [data-theme="dark"] .nav-link,
+        [data-theme="dark"] a.nav-link {
+            color: #f1f5f9 !important; /* Bright high-contrast white-slate in dark mode */
+        }
+
+        [data-theme="dark"] .sidebar a:hover,
+        [data-theme="dark"] .nav-link:hover,
+        [data-theme="dark"] a.nav-link:hover {
+            background: #1e293b !important;
+            color: #60a5fa !important;
+        }
+
+        .main-wrapper {
+            flex: 1;
+            max-width: 1060px;
+            margin: 0 auto;
+            padding: 40px 48px 80px 48px;
+            overflow-x: hidden;
+        }
+
+        .header-section {
+            margin-bottom: 32px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+        }
+
+        .breadcrumbs {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .breadcrumbs a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .chapter-meta {
+            font-size: 14px;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .chapter-pill {
+            background: #eff6ff;
+            color: #1d4ed8;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 9999px;
+            border: 1px solid #bfdbfe;
+        }
+
+        .mode-bar {
+            display: flex;
+            gap: 12px;
+            margin: 24px 0 32px 0;
+            background: var(--card-bg);
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .mode-btn {
+            flex: 1;
+            text-align: center;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13.5px;
+            transition: all 0.2s ease;
+        }
+
+        .mode-btn.active {
+            background: var(--accent);
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(37, 99, 235, 0.2);
+        }
+
+        .mode-btn:not(.active) {
+            color: var(--text-secondary);
+            background: transparent;
+        }
+
+        .mode-btn:not(.active):hover {
+            background: var(--bg-canvas);
+            color: var(--text-primary);
+        }
+
+        .card {
+            background: var(--bg-canvas);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 28px;
+            margin-bottom: 32px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+        }
+
+        .card-header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 14px;
+            margin-bottom: 18px;
+        }
+
+        .card-header h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 16px 0;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13.5px;
+            text-align: left;
+        }
+
+        .styled-table th {
+            background: var(--table-header);
+            color: var(--text-primary);
+            font-weight: 700;
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .styled-table td {
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        .styled-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .callout {
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 16px 0;
+            border-left: 4px solid var(--accent);
+            background: var(--card-bg);
+        }
+
+        .callout-title {
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 4px;
+            color: var(--accent);
+        }
+
+        .formula-box {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 12px 0;
+            font-size: 15px;
+            color: #1e3a8a;
+        }
+
+        @media (max-width: 900px) {
+            body {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+            }
+            .main-wrapper {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <span>AFM • Ch 9 Quick</span>
+            <button class="theme-toggle" onclick="toggleTheme()">☀️ / 🌙</button>
+        </div>
+
+        <div class="nav-group-title">Revision Sections</div>
+        <a href="#formulas" class="nav-link">1. Master Formula Sheet</a>
+        <a href="#futures-hedging" class="nav-link">2. Index Futures Hedging</a>
+        <a href="#options-matrix" class="nav-link">3. Option Payoff Matrix</a>
+        <a href="#valuation-models" class="nav-link">4. Binomial &amp; Black-Scholes</a>
+        <a href="#greeks-table" class="nav-link">5. The Greeks Summary</a>
+        <a href="#credit-real" class="nav-link">6. Credit &amp; Real Options</a>
+        <a href="#exam-traps" class="nav-link">7. Common Exam Traps</a>
+    </aside>
+
+    <main class="main-wrapper">
+        <header class="header-section">
+            <div class="breadcrumbs">
+                <a href="../../notes/afmnotes.html">← Quick Notes Hub</a>
+                <span>/</span>
+                <span>Chapter 9</span>
+            </div>
+            <h1>Derivatives Analysis and Valuation (Quick Revision)</h1>
+            <div class="chapter-meta">
+                <span class="chapter-pill">High-Yield Revision</span>
+                <span>Formulas • Decision Rules • Strategy Matrices • Exam Pitfalls</span>
+            </div>
+        </header>
+
+        <!-- Mode Toggle Switcher -->
+        <div class="mode-bar">
+            <a href="./derivatives_valuation.html" class="mode-btn active">⚡ Quick Revision Notes &amp; Formula Sheet</a>
+            <a href="./derivatives_valuation_full.html" class="mode-btn">📖 Full Comprehensive Notes (Topic-Wise + Worked TYK)</a>
+        </div>
+
+        <!-- Section 1: Master Formula Sheet -->
+        <section id="formulas" class="card">
+            <div class="card-header">
+                <h2>1. Master Formula Sheet</h2>
+            </div>
+            
+            <h3>A. Forward and Futures Pricing (Cost of Carry Model)</h3>
+            <div class="formula-box">
+                <p><strong>1. Non-Income Paying Asset (Simple Compounding):</strong></p>
+                $$F_0 = S_0 \cdot \left(1 + r \cdot \frac{t}{12}\right)$$
+                <p><strong>2. Continuous Compounding:</strong></p>
+                $$F_0 = S_0 \cdot e^{rt}$$
+                <p><strong>3. Asset with Known Cash Dividend ($D$):</strong></p>
+                $$F_0 = (S_0 - D \cdot e^{-rt_d}) \cdot e^{rt} \quad \text{or} \quad F_0 = S_0 \cdot (1 + rt) - D$$
+                <p><strong>4. Asset with Continuous Dividend Yield ($y$):</strong></p>
+                $$F_0 = S_0 \cdot e^{(r - y)t}$$
+                <p><strong>5. Commodity with Storage ($u$) &amp; Convenience Yield ($c$):</strong></p>
+                $$F_0 = S_0 \cdot e^{(r + u - c)t}$$
+            </div>
+
+            <div class="table-container">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Arbitrage Condition</th>
+                            <th>Market Status</th>
+                            <th>Arbitrage Strategy Execution</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>$F_{\text{actual}} > F_{\text{fair}}$</td>
+                            <td>Futures Overvalued</td>
+                            <td><strong>Cash-and-Carry:</strong> Borrow money, buy stock in spot, sell (short) futures contract.</td>
+                        </tr>
+                        <tr>
+                            <td>$F_{\text{actual}} < F_{\text{fair}}$</td>
+                            <td>Futures Undervalued</td>
+                            <td><strong>Reverse Cash-and-Carry:</strong> Short stock in spot, invest proceeds at risk-free rate, buy (long) futures.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 2: Index Futures Hedging -->
+        <section id="futures-hedging" class="card">
+            <div class="card-header">
+                <h2>2. Stock Index Futures &amp; Beta Hedging</h2>
+            </div>
+            <div class="formula-box">
+                <p><strong>Number of Contracts to Trade ($N$):</strong></p>
+                $$N = \frac{V_p \cdot (\beta^* - \beta_p)}{V_f}$$
+                <p>Where $V_f = \text{Futures Price} \times \text{Lot Size / Multiplier}$.</p>
+            </div>
+            <ul>
+                <li>To <strong>reduce beta</strong> ($\beta^* < \beta_p$): Result is negative $\implies$ <strong>Sell (Short) $N$ Contracts</strong>.</li>
+                <li>To <strong>increase beta</strong> ($\beta^* > \beta_p$): Result is positive $\implies$ <strong>Buy (Long) $N$ Contracts</strong>.</li>
+                <li>For <strong>complete hedge</strong> ($\beta^* = 0$): $N = \frac{V_p \cdot \beta_p}{V_f}$ (Sell).</li>
+            </ul>
+            <div class="callout">
+                <div class="callout-title">Daily Marking-to-Market (MTM) Margin Rules</div>
+                <p>$$\text{Initial Margin} = \mu + 3\sigma$$</p>
+                <p>$$\text{Maintenance Margin} = 75\% \text{ of Initial Margin (or specified %)}$$</p>
+                <p>If account drops below maintenance margin $\implies$ <strong>Margin Call</strong> for full deficit back to <strong>Initial Margin</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Section 3: Option Payoff Matrix -->
+        <section id="options-matrix" class="card">
+            <div class="card-header">
+                <h2>3. Option Strategies &amp; Payoff Matrix</h2>
+            </div>
+            <div class="table-container">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Strategy</th>
+                            <th>Constituent Legs</th>
+                            <th>Market Outlook</th>
+                            <th>Max Profit</th>
+                            <th>Max Loss</th>
+                            <th>Break-Even Point(s)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Long Call</strong></td>
+                            <td>Buy Call ($X$)</td>
+                            <td>Strongly Bullish</td>
+                            <td>Unlimited</td>
+                            <td>Premium Paid ($c$)</td>
+                            <td>$X + c$</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Long Put</strong></td>
+                            <td>Buy Put ($X$)</td>
+                            <td>Strongly Bearish</td>
+                            <td>$X - p$</td>
+                            <td>Premium Paid ($p$)</td>
+                            <td>$X - p$</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Long Straddle</strong></td>
+                            <td>Buy Call ($X$) + Buy Put ($X$)</td>
+                            <td>High Volatility (Direction Neutral)</td>
+                            <td>Unlimited</td>
+                            <td>$c + p$ (at $S_T = X$)</td>
+                            <td>$X - (c+p)$ and $X + (c+p)$</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Long Strangle</strong></td>
+                            <td>Buy OTM Put ($X_1$) + Buy OTM Call ($X_2$)</td>
+                            <td>Extreme Volatility</td>
+                            <td>Unlimited</td>
+                            <td>$c + p$ (between $X_1$ and $X_2$)</td>
+                            <td>$X_1 - (c+p)$ and $X_2 + (c+p)$</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bull Call Spread</strong></td>
+                            <td>Buy Call ($X_1$) + Sell Call ($X_2$) ($X_2 > X_1$)</td>
+                            <td>Moderately Bullish</td>
+                            <td>$(X_2 - X_1) - \text{Net Debit}$</td>
+                            <td>Net Debit ($c_1 - c_2$)</td>
+                            <td>$X_1 + \text{Net Debit}$</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bear Put Spread</strong></td>
+                            <td>Buy Put ($X_2$) + Sell Put ($X_1$) ($X_2 > X_1$)</td>
+                            <td>Moderately Bearish</td>
+                            <td>$(X_2 - X_1) - \text{Net Debit}$</td>
+                            <td>Net Debit ($p_2 - p_1$)</td>
+                            <td>$X_2 - \text{Net Debit}$</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Collar Strategy</strong></td>
+                            <td>Long Stock + Buy OTM Put ($X_1$) + Sell OTM Call ($X_2$)</td>
+                            <td>Downside Protected with Capped Upside</td>
+                            <td>$X_2 - S_0 - \text{Net Premium}$</td>
+                            <td>$S_0 - X_1 + \text{Net Premium}$</td>
+                            <td>$S_0 + \text{Net Premium}$</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 4: Valuation Models -->
+        <section id="valuation-models" class="card">
+            <div class="card-header">
+                <h2>4. Binomial Model &amp; Black-Scholes-Merton Formula</h2>
+            </div>
+            
+            <h3>A. Binomial Model &amp; Risk-Neutral Pricing</h3>
+            <div class="formula-box">
+                <p><strong>1. Hedge Ratio (Delta $\Delta$):</strong></p>
+                $$\Delta = \frac{C_u - C_d}{S_u - S_d}$$
+                <p><strong>2. Risk-Neutral Probability ($p$):</strong></p>
+                $$p = \frac{R - d}{u - d} \quad \text{where } R = 1 + r \cdot t \text{ (or } e^{rt}\text{)}$$
+                <p><strong>3. Single-Period Call Value:</strong></p>
+                $$C_0 = \frac{p \cdot C_u + (1-p) \cdot C_d}{R}$$
+            </div>
+
+            <h3>B. Black-Scholes-Merton Model</h3>
+            <div class="formula-box">
+                $$C_0 = S_0 \cdot N(d_1) - X \cdot e^{-rt} \cdot N(d_2)$$
+                $$d_1 = \frac{\ln(S_0 / X) + \left(r + \frac{\sigma^2}{2}\right)t}{\sigma \sqrt{t}}; \quad d_2 = d_1 - \sigma \sqrt{t}$$
+            </div>
+
+            <h3>C. Put-Call Parity Theorem</h3>
+            <div class="formula-box">
+                $$C_0 + X \cdot e^{-rt} = P_0 + S_0 \implies P_0 = C_0 + X \cdot e^{-rt} - S_0$$
+            </div>
+        </section>
+
+        <!-- Section 5: The Greeks Summary -->
+        <section id="greeks-table" class="card">
+            <div class="card-header">
+                <h2>5. The Option Greeks at a Glance</h2>
+            </div>
+            <div class="table-container">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Greek</th>
+                            <th>Formula / Definition</th>
+                            <th>Call Value</th>
+                            <th>Put Value</th>
+                            <th>Peak Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Delta ($\Delta$)</strong></td><td>$\frac{\partial C}{\partial S}$</td><td>$0 < \Delta < 1$ ($N(d_1)$)</td><td>$-1 < \Delta < 0$ ($N(d_1)-1$)</td><td>Deep ITM ($\to 1$)</td></tr>
+                        <tr><td><strong>Gamma ($\Gamma$)</strong></td><td>$\frac{\partial^2 C}{\partial S^2} = \frac{\partial \Delta}{\partial S}$</td><td>Always $> 0$</td><td>Always $> 0$</td><td>At-The-Money (ATM)</td></tr>
+                        <tr><td><strong>Theta ($\Theta$)</strong></td><td>$\frac{\partial C}{\partial t}$</td><td>Typically $< 0$ (Decay)</td><td>Typically $< 0$ (Decay)</td><td>ATM near Expiration</td></tr>
+                        <tr><td><strong>Vega ($\nu$)</strong></td><td>$\frac{\partial C}{\partial \sigma}$</td><td>Always $> 0$</td><td>Always $> 0$</td><td>At-The-Money (ATM)</td></tr>
+                        <tr><td><strong>Rho ($\rho$)</strong></td><td>$\frac{\partial C}{\partial r}$</td><td>Always $> 0$</td><td>Always $< 0$</td><td>Deep ITM Call</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 6: Credit & Real Options -->
+        <section id="credit-real" class="card">
+            <div class="card-header">
+                <h2>6. Credit Derivatives &amp; Real Options Mapping</h2>
+            </div>
+            <div class="table-container">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Real Option Type</th>
+                            <th>Option Equivalent</th>
+                            <th>Underlying Asset ($S$)</th>
+                            <th>Strike Price ($X$)</th>
+                            <th>Strategic Value Added</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Growth / Expansion</strong></td>
+                            <td>Call Option</td>
+                            <td>PV of Future Cash Inflows</td>
+                            <td>Follow-on Capex Required</td>
+                            <td>Captures upside if initial market test succeeds.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Abandonment</strong></td>
+                            <td>Put Option</td>
+                            <td>Project Continuation Value</td>
+                            <td>Salvage / Liquidation Value</td>
+                            <td>Floors project downside if conditions turn sluggish.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Timing / Deferral</strong></td>
+                            <td>Call Option</td>
+                            <td>PV of Future Project Inflows</td>
+                            <td>Initial Investment Outlay</td>
+                            <td>Value of waiting to resolve tariff/market uncertainty.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 7: Common Exam Traps -->
+        <section id="exam-traps" class="card">
+            <div class="card-header">
+                <h2>7. High-Frequency Exam Traps &amp; Shortcuts</h2>
+            </div>
+            <ul>
+                <li><strong>Continuous vs Simple Discounting:</strong> If exponential values ($e^{rt}$) are provided in question footnotes, use continuous compounding ($S e^{rt}$). Otherwise, use simple interest $S(1+rt)$.</li>
+                <li><strong>Portfolio Beta with Cash:</strong> Cash always has a beta of zero ($\beta_{\text{cash}} = 0$). Remember to include cash in total portfolio value $V_p$ when weighting!</li>
+                <li><strong>Sensex Multiplier vs Nifty Lot:</strong> Sensex multiplier is typically 50. Nifty lots in past exams are 25, 50, 100, or 200. Always multiply index price by lot size to obtain $V_f$!</li>
+                <li><strong>Margin Call Top-up:</strong> The amount of money to deposit on margin call brings the balance back to <strong>Initial Margin</strong>, NOT just to the maintenance margin.</li>
+                <li><strong>Option Payoff Tables:</strong> When constructing payoff tables for combinations (Straddle, Collar), always tabulate columns: $S_T$, Call Payoff, Put Payoff, Total Gross Payoff, Total Premium Paid, Net Profit/(Loss).</li>
+            </ul>
+        </section>
+
+        <footer style="margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-secondary); font-size: 13px;">
+            CA Final Advanced Financial Management (AFM) • Chapter 9 Quick Revision Summary
+        </footer>
+    </main>
+
+    <script>
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', targetTheme);
+            localStorage.setItem('theme', targetTheme);
+        }
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</body>
+</html>

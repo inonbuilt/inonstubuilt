@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Chapter 12: Interest Rate Risk Management - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes</title>
+    <meta name="title" content="Chapter 12: Interest Rate Risk Management - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
+    <meta name="description" content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 12: Interest Rate Risk Management. Complete CA Final AFM Chapter 12 Interest Rate Risk notes. FRA settlement, SOFR transitions, interest rate swaps, caps/floors, swaptions, and 100% solved TYK problems.">
+    <meta name="keywords" content="Interest Rate Risk Management CA Final AFM, FRA Forward Rate Agreement, Caps Floors Collars, Plain Vanilla Interest Rate Swaps, OIS, Swaptions, Chapter 12, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+    <meta name="author" content="Calcium Notes">
+    <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/interest_rate_risk.html">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.calciumnotes.com/bin/notes/final/afm/interest_rate_risk.html">
+    <meta property="og:title" content="Chapter 12: Interest Rate Risk Management - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
+    <meta property="og:description" content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 12: Interest Rate Risk Management. Complete CA Final AFM Chapter 12 Interest Rate Risk notes. FRA settlement, SOFR transitions, interest rate swaps, caps/floors, swaptions, and 100% solved TYK problems.">
+    <meta property="og:image" content="https://www.calciumnotes.com/og-image.png">
+    <meta property="og:site_name" content="Calcium Notes">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.calciumnotes.com/bin/notes/final/afm/interest_rate_risk.html">
+    <meta name="twitter:title" content="Chapter 12: Interest Rate Risk Management - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
+    <meta name="twitter:description" content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 12: Interest Rate Risk Management. Complete CA Final AFM Chapter 12 Interest Rate Risk notes. FRA settlement, SOFR transitions, interest rate swaps, caps/floors, swaptions, and 100% solved TYK problems.">
+    <meta name="twitter:image" content="https://www.calciumnotes.com/og-image.png">
+
+    <!-- Schema.org Educational & FAQ Structured Data -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "CA Final AFM Chapter 12: Interest Rate Risk Management (Quick Revision)",
+    "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 12: Interest Rate Risk Management. Complete CA Final AFM Chapter 12 Interest Rate Risk notes. FRA settlement, SOFR transitions, interest rate swaps, caps/floors, swaptions, and 100% solved TYK problems.",
+    "learningResourceType": "Revision Cheat Sheet",
+    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "author": {
+        "@type": "Organization",
+        "name": "Calcium Notes",
+        "url": "https://www.calciumnotes.com"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Calcium Notes",
+        "url": "https://www.calciumnotes.com",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.calciumnotes.com/fevicol.png"
+        }
+    },
+    "isPartOf": {
+        "@type": "Course",
+        "name": "CA Final Advanced Financial Management (AFM)",
+        "url": "https://www.calciumnotes.com/bin/notes/notes/afmnotes.html"
+    }
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.calciumnotes.com"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "CA Notes Portal",
+            "item": "https://www.calciumnotes.com/bin/notes/notes.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "AFM Notes Hub",
+            "item": "https://www.calciumnotes.com/bin/notes/notes/afmnotes.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Chapter 12: Interest Rate Risk Management",
+            "item": "https://www.calciumnotes.com/bin/notes/final/afm/interest_rate_risk.html"
+        }
+    ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How is FRA settlement payoff calculated?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "FRA Settlement = [Notional * (Reference Rate - Contract Rate) * (d / Days in Year)] / [1 + Reference Rate * (d / Days in Year)]."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is a Zero-Cost Collar?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Simultaneously buying an interest rate Cap and selling an interest rate Floor such that the floor premium received exactly offsets the cap premium paid."
+            }
+        }
+    ]
+}
+    </script>
+
+<!-- KaTeX for High-Fidelity Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false}
+            ],
+            throwOnError: false
+        });"></script>
+
+    <style>
+        :root {
+            --bg-canvas: #ffffff;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --border-color: #e2e8f0;
+            --card-bg: #f8fafc;
+            --table-header: #f1f5f9;
+            --success: #16a34a;
+            --danger: #dc2626;
+            --warning-bg: #fffbeb;
+            --warning-border: #fef3c7;
+            --warning-text: #92400e;
+        }
+
+        [data-theme="dark"] {
+            --bg-canvas: #090d16;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #3b82f6;
+            --accent-hover: #60a5fa;
+            --border-color: #1e293b;
+            --card-bg: #0f172a;
+            --table-header: #1e293b;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --warning-bg: #1c1917;
+            --warning-border: #292524;
+            --warning-text: #fef08a;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+        section, div[id], h2[id], h3[id] { scroll-margin-top: 24px; }
+        body {
+            background-color: var(--bg-canvas);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 15px;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        
+        /* Bulletproof High-Visibility Sidebar Navigation */
+        .sidebar {
+            width: 300px;
+            background: var(--bg-canvas);
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 20px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            flex-shrink: 0;
+        }
+
+        .sidebar-brand {
+            font-size: 15px;
+            font-weight: 800;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4px 6px 12px 6px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 8px;
+        }
+
+        .theme-toggle {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 4px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .nav-group-title {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #64748b;
+            margin: 14px 0 4px 8px;
+            letter-spacing: 0.6px;
+        }
+
+        .sidebar a,
+        .sidebar a:link,
+        .sidebar a:visited,
+        .nav-link,
+        a.nav-link {
+            display: block !important;
+            padding: 6px 10px !important;
+            border-radius: 6px !important;
+            color: #1e293b !important; /* Bold, high-contrast dark charcoal */
+            text-decoration: none !important;
+            font-size: 13px !important;
+            font-weight: 600 !important;
+            line-height: 1.4 !important;
+            transition: all 0.15s ease !important;
+            white-space: normal !important; /* Wrap cleanly, no clipping */
+            word-break: break-word !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+
+        .sidebar a:hover,
+        .nav-link:hover,
+        a.nav-link:hover {
+            background: #eff6ff !important;
+            color: #2563eb !important;
+            padding-left: 14px !important;
+        }
+
+        [data-theme="dark"] .nav-group-title {
+            color: #94a3b8;
+        }
+
+        [data-theme="dark"] .sidebar a,
+        [data-theme="dark"] .sidebar a:link,
+        [data-theme="dark"] .sidebar a:visited,
+        [data-theme="dark"] .nav-link,
+        [data-theme="dark"] a.nav-link {
+            color: #f1f5f9 !important; /* Bright high-contrast white-slate in dark mode */
+        }
+
+        [data-theme="dark"] .sidebar a:hover,
+        [data-theme="dark"] .nav-link:hover,
+        [data-theme="dark"] a.nav-link:hover {
+            background: #1e293b !important;
+            color: #60a5fa !important;
+        }
+
+        .main-wrapper {
+            flex: 1;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 48px 80px 48px;
+            overflow-x: hidden;
+        }
+
+        .header-section {
+            margin-bottom: 32px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+        }
+
+        .breadcrumbs {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .breadcrumbs a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .chapter-meta {
+            font-size: 14px;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .chapter-pill {
+            background: #eff6ff;
+            color: #1d4ed8;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 9999px;
+            border: 1px solid #bfdbfe;
+        }
+
+        .mode-bar {
+            display: flex;
+            gap: 12px;
+            margin: 24px 0 32px 0;
+            background: var(--card-bg);
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .mode-btn {
+            flex: 1;
+            text-align: center;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .mode-btn.active {
+            background: #ffffff;
+            color: var(--accent);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            border: 1px solid var(--border-color);
+        }
+
+        .mode-btn:not(.active) {
+            color: var(--text-secondary);
+        }
+
+        .quick-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+
+        .quick-card h2 {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 16px;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 8px;
+        }
+
+        .quick-card h3 {
+            font-size: 15.5px;
+            font-weight: 700;
+            margin: 18px 0 10px 0;
+        }
+
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 13.5px;
+            background: var(--bg-canvas);
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .styled-table th, .styled-table td {
+            padding: 10px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .styled-table th {
+            background-color: var(--table-header);
+            font-weight: 700;
+        }
+
+        .styled-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .formula-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            color: #14532d;
+            padding: 14px 18px;
+            border-radius: 6px;
+            margin: 14px 0;
+            font-size: 14px;
+        }
+
+        [data-theme="dark"] .formula-box {
+            background: #052e16;
+            border-color: #15803d;
+            color: #bbf7d0;
+        }
+
+        .exam-trap {
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 12px 16px;
+            margin: 14px 0;
+            font-size: 13.5px;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .footer-btn:hover {
+            background: var(--accent);
+            color: #ffffff;
+            border-color: var(--accent);
+        }
+
+        @media (max-width: 900px) {
+            html { scroll-behavior: smooth; }
+        section, div[id], h2[id], h3[id] { scroll-margin-top: 24px; }
+        body { flex-direction: column; }
+            .sidebar { width: 100%; height: auto; position: relative; }
+            .main-wrapper { padding: 24px 16px; }
+        }
+    
+        </style>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-brand">
+            <span>AFM Quick Notes</span>
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">☀️/🌙</button>
+        </div>
+
+        <div class="nav-group-title">Quick Navigation</div>
+        <a href="#formula-bank" class="nav-link">1. Master Formula Bank</a>
+        <a href="#fra-cheat" class="nav-link">2. FRA Notation &amp; Mechanics</a>
+        <a href="#arr-matrix" class="nav-link">3. Global ARRs (SOFR, etc.)</a>
+        <a href="#options-matrix" class="nav-link">4. Caps, Floors &amp; Collars</a>
+        <a href="#swaps-matrix" class="nav-link">5. Swaps &amp; OIS Architecture</a>
+        <a href="#swaptions-matrix" class="nav-link">6. Swaptions Quick Guide</a>
+        <a href="#exam-pitfalls" class="nav-link">7. ICAI Exam Traps &amp; Checklist</a>
+
+        <div class="nav-group-title">Hub Portals</div>
+        <a href="../../notes/afmnotes.html" class="nav-link">← Quick Notes Index</a>
+        <a href="../../notes/afmfullnotes.html" class="nav-link">← Full Notes Index</a>
+    </nav>
+
+    <main class="main-wrapper">
+        <header class="header-section">
+            <div class="breadcrumbs">
+                <a href="../../notes/afmnotes.html">CA Final AFM</a> &gt;
+                <span>Chapter 12 Quick Notes</span>
+            </div>
+            <h1>Chapter 12: Interest Rate Risk Management</h1>
+            <div class="chapter-meta">
+                <span class="chapter-pill">⚡ High-Yield Revision Guide</span>
+                <span>Formulas • Payoff Matrices • Step-by-Step Problem Templates</span>
+            </div>
+        </header>
+
+        <div class="mode-bar">
+            <a href="interest_rate_risk_full.html" class="mode-btn">📖 Full Detailed Notes</a>
+            <a href="interest_rate_risk.html" class="mode-btn active">⚡ Quick Revision Notes</a>
+        </div>
+
+        <!-- 1. Formula Bank -->
+        <section class="quick-card" id="formula-bank">
+            <h2>1. Master Formula Bank</h2>
+
+            <div class="formula-box">
+                <strong>1. Forward Rate Agreement (FRA) Discounted Cash Settlement Formula:</strong><br>
+                $$\text{Settlement Amount} = \frac{N \times (RR - FR) \times \left(\frac{dtm}{DY}\right)}{1 + RR \times \left(\frac{dtm}{DY}\right)}$$
+                <em>Where $N$ = Notional, $RR$ = Reference Rate, $FR$ = Forward Rate, $dtm$ = FRA days, $DY$ = Day-count (360 or 365).</em>
+            </div>
+
+            <div class="formula-box">
+                <strong>2. Bond Price Sensitivity &amp; Duration:</strong><br>
+                $$D^* = \frac{D_{\text{Macaulay}}}{1 + \frac{y}{m}} \quad \implies \quad \frac{\Delta P}{P} \approx -D^* \times \Delta y + \frac{1}{2} C \times (\Delta y)^2$$
+            </div>
+
+            <div class="formula-box">
+                <strong>3. Generic Swap Net Settlement:</strong><br>
+                $$\text{Fixed Leg} = N \times \text{AIC} \times \left(\frac{180}{360}\right)$$
+                $$\text{Floating Leg} = N \times \text{SOFR} \times \left(\frac{\text{Actual Days}}{360}\right)$$
+                $$\text{Net Amount Paid by Fixed Payer} = \text{Fixed Leg} - \text{Floating Leg}$$
+            </div>
+
+            <div class="formula-box">
+                <strong>4. Amortized Cap Option Premium (PVAF Method):</strong><br>
+                $$\text{Periodic Amortized Premium} = \frac{\text{Total Lump Sum Premium Paid}}{\text{PVAF}(i, t)}$$
+                <em>Where $i$ = Periodic interest discount rate and $t$ = Number of reset periods.</em>
+            </div>
+
+            <div class="formula-box">
+                <strong>5. Overnight Index Swap (OIS) Floating Interest:</strong><br>
+                $$\text{Compounded Amount} = N \times \prod_{k=1}^n \left( 1 + \text{MIBOR}_k \times \frac{d_k}{365} \right) - N$$
+                <em>Where $d_k$ = days spanned (1 day on weekdays, 2 days on Saturday covering Sunday).</em>
+            </div>
+        </section>
+
+        <!-- 2. FRA Notation -->
+        <section class="quick-card" id="fra-cheat">
+            <h2>2. FRA Notation &amp; Settlement Guide</h2>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Notation ($m \times n$)</th>
+                        <th>Fixing Date (Settlement)</th>
+                        <th>Underlying Loan Tenor</th>
+                        <th>Relevant Reference Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>$3 \times 6$ FRA</strong></td>
+                        <td>3 months from today</td>
+                        <td>$6 - 3 = 3$ months</td>
+                        <td>3-month benchmark rate on fixing date</td>
+                    </tr>
+                    <tr>
+                        <td><strong>$6 \times 9$ FRA</strong></td>
+                        <td>6 months from today</td>
+                        <td>$9 - 6 = 3$ months</td>
+                        <td>3-month benchmark rate on fixing date</td>
+                    </tr>
+                    <tr>
+                        <td><strong>$6 \times 12$ FRA</strong></td>
+                        <td>6 months from today</td>
+                        <td>$12 - 6 = 6$ months</td>
+                        <td>6-month benchmark rate on fixing date</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="exam-trap">
+                <strong>Settlement Direction Rule:</strong><br>
+                • If $RR > FR$: Bank pays Buyer (Borrower hedged successfully against rate hike).<br>
+                • If $RR < FR$: Buyer pays Bank (Borrower pays cost of insurance when market rates fall).
+            </div>
+        </section>
+
+        <!-- 3. Global ARRs -->
+        <section class="quick-card" id="arr-matrix">
+            <h2>3. Global Alternative Reference Rates (ARRs) Quick Matrix</h2>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Rate Name</th>
+                        <th>Administrator</th>
+                        <th>Secured vs Unsecured</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>USD</strong></td>
+                        <td><strong>SOFR</strong> (Secured Overnight Financing Rate)</td>
+                        <td>Federal Reserve Bank of NY</td>
+                        <td>Secured (US Treasury Repos)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GBP</strong></td>
+                        <td><strong>SONIA</strong> (Sterling Overnight Index Average)</td>
+                        <td>Bank of England</td>
+                        <td>Unsecured</td>
+                    </tr>
+                    <tr>
+                        <td><strong>EUR</strong></td>
+                        <td><strong>€STR</strong> (Euro Short-Term Rate)</td>
+                        <td>European Central Bank</td>
+                        <td>Unsecured</td>
+                    </tr>
+                    <tr>
+                        <td><strong>JPY</strong></td>
+                        <td><strong>TONAR</strong> (Tokyo Overnight Average Rate)</td>
+                        <td>Bank of Japan</td>
+                        <td>Unsecured</td>
+                    </tr>
+                    <tr>
+                        <td><strong>INR</strong></td>
+                        <td><strong>MIBOR</strong> (Mumbai Interbank Offered Rate)</td>
+                        <td>FBIL</td>
+                        <td>Unsecured Call Money</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 4. Caps, Floors, Collars -->
+        <section class="quick-card" id="options-matrix">
+            <h2>4. Interest Rate Options Comparison Matrix</h2>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Instrument</th>
+                        <th>Option Type</th>
+                        <th>Hedging User</th>
+                        <th>Strike Condition for Exercise</th>
+                        <th>Net Cost Position</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cap</strong></td>
+                        <td>Call Option on Interest Rate</td>
+                        <td>Floating Rate Borrower</td>
+                        <td>$R_{\text{market}} > R_{\text{strike}}$</td>
+                        <td>Pays upfront premium; cost capped at strike.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Floor</strong></td>
+                        <td>Put Option on Interest Rate</td>
+                        <td>Floating Rate Investor/Lender</td>
+                        <td>$R_{\text{market}} < R_{\text{strike}}$</td>
+                        <td>Pays upfront premium; return floored at strike.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Collar</strong></td>
+                        <td>Long Cap + Short Floor</td>
+                        <td>Borrower seeking lower hedging cost</td>
+                        <td>Band between Floor and Cap</td>
+                        <td>Net premium reduced or zero ("Zero-Cost Collar").</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+                <!-- 5. Swaps & OIS Architecture -->
+        <section class="quick-card" id="swaps-matrix">
+            <h2>5. Interest Rate Swaps (IRS) &amp; Overnight Indexed Swaps (OIS)</h2>
+            <p><strong>Core Concept:</strong> Contract between two counterparties to exchange interest rate cash flows based on a specified notional principal without exchanging the underlying principal.</p>
+            
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Swap Parameter</th>
+                        <th>Fixed Rate Payer (Borrower Hedge)</th>
+                        <th>Floating Rate Payer (Asset Hedge)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cash Flow Obligation</strong></td>
+                        <td>Pays fixed coupon rate ($R_{\text{swap}}$); receives floating (e.g. MIBOR / SOFR).</td>
+                        <td>Pays floating benchmark rate; receives fixed coupon rate.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Market Expectation</strong></td>
+                        <td>Anticipates <strong>rising interest rates</strong>; locks in fixed borrowing cost.</td>
+                        <td>Anticipates <strong>declining interest rates</strong>; benefits from falling floating costs.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Net Settlement Flow</strong></td>
+                        <td>$\text{Net Cash Flow} = (R_{\text{floating}} - R_{\text{fixed}}) \times N \times \frac{d}{360\text{ or }365}$</td>
+                        <td>$\text{Net Cash Flow} = (R_{\text{fixed}} - R_{\text{floating}}) \times N \times \frac{d}{360\text{ or }365}$</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OIS Structure</strong></td>
+                        <td colspan="2">Floating leg is the <strong>geometric compound daily average</strong> of overnight rate (e.g. daily overnight MIBOR) settled against fixed rate at maturity.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 6. Swaptions -->
+        <section class="quick-card" id="swaptions-matrix" data-alias="swaps-matrix">
+            <h2>6. Swaptions Architecture &amp; Decision Rules</h2>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Swaption Type</th>
+                        <th>Holder Has Right To</th>
+                        <th>Exercise Rule</th>
+                        <th>Core Motivation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Payer Swaption</strong></td>
+                        <td>Pay Fixed &amp; Receive Floating</td>
+                        <td>Market Swap Rate $>$ Strike Rate</td>
+                        <td>Hedge against rising fixed borrowing costs on anticipated future debt.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Receiver Swaption</strong></td>
+                        <td>Receive Fixed &amp; Pay Floating</td>
+                        <td>Market Swap Rate $<$ Strike Rate</td>
+                        <td>Hedge against declining fixed yields on future portfolio investments.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 6. Exam Pitfalls -->
+        <section class="quick-card" id="exam-pitfalls">
+            <h2>6. ICAI Exam Pitfalls &amp; Traps</h2>
+            <div class="exam-trap">
+                <strong>⚠️ Pitfall 1: Forgetting to Discount FRA Settlement</strong><br>
+                Never just calculate $N \times (RR - FR) \times \frac{dtm}{DY}$. That is the interest at maturity! Settlement happens at fixing date (start of loan period), so you <strong>must divide by $[1 + RR \times \frac{dtm}{DY}]$</strong>.
+            </div>
+            <div class="exam-trap">
+                <strong>⚠️ Pitfall 2: Day-Count Bases in Swaps</strong><br>
+                Generic fixed swap legs use <strong>30/360</strong> ($\frac{180}{360} = 0.50$). Floating legs use <strong>actual days / 360</strong> (e.g., $\frac{181}{360} = 0.502778$). Always watch for the differing denominators!
+            </div>
+            <div class="exam-trap">
+                <strong>⚠️ Pitfall 3: Weekend Handling in OIS Calculations</strong><br>
+                When compiling daily MIBOR tables, Saturday's rate applies for <strong>2 days</strong> (Saturday + Sunday) because Sunday is a banking holiday. Multiply by $\frac{2}{365}$.
+            </div>
+        </section>
+
+        <footer class="footer-nav">
+            <a href="international_finance.html" class="footer-btn">← Ch 11 Quick Notes</a>
+            <a href="business_valuation.html" class="footer-btn">Ch 13 Quick Notes →</a>
+        </footer>
+    </main>
+
+    <script>
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', targetTheme);
+            localStorage.setItem('afm-theme', targetTheme);
+        }
+        (function() {
+            const savedTheme = localStorage.getItem('afm-theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+</body>
+</html>
