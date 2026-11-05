@@ -5739,44 +5739,9 @@
         container.appendChild(tile);
       }
 
-      // Dedicated remote audio output element (Essential for iPad, iOS Safari & Android mobile WebKit)
-      let audioEl = document.getElementById(`audio-feed-${remotePeerId}`);
-      if (!audioEl) {
-        audioEl = document.createElement("audio");
-        audioEl.id = `audio-feed-${remotePeerId}`;
-        audioEl.autoplay = true;
-        audioEl.playsInline = true;
-        audioEl.setAttribute("playsinline", "");
-        audioEl.setAttribute("webkit-playsinline", "");
-        audioEl.style.display = "none";
-        document.body.appendChild(audioEl);
-      }
-      if (audioEl.srcObject !== remoteStream) {
-        audioEl.srcObject = remoteStream;
-      }
-      const playAudio = () => {
-        const p = audioEl.play();
-        if (p && typeof p.catch === "function") {
-          p.catch(err => {
-            console.warn("Audio autoplay waiting for user interaction on iPad:", err);
-            const resumeOnTouch = () => {
-              audioEl.play().catch(() => {});
-              document.removeEventListener("touchstart", resumeOnTouch);
-              document.removeEventListener("click", resumeOnTouch);
-            };
-            document.addEventListener("touchstart", resumeOnTouch, { once: true });
-            document.addEventListener("click", resumeOnTouch, { once: true });
-          });
-        }
-      };
-      playAudio();
-
       const videoEl = document.getElementById(`video-feed-${remotePeerId}`);
       if (videoEl) {
         videoEl.className = `v-filter-${filterId}`;
-        videoEl.playsInline = true;
-        videoEl.setAttribute("playsinline", "");
-        videoEl.setAttribute("webkit-playsinline", "");
         if (videoEl.srcObject !== remoteStream) {
           videoEl.srcObject = remoteStream;
           videoEl.play().catch(e => console.log("Remote play err:", e));
@@ -5797,11 +5762,6 @@
 
     function removeRemoteVideoTile(remotePeerId) {
       stopAudioMonitoring(remotePeerId);
-      const audioEl = document.getElementById(`audio-feed-${remotePeerId}`);
-      if (audioEl) {
-        try { audioEl.srcObject = null; audioEl.pause(); } catch(e){}
-        audioEl.remove();
-      }
       if (activeMediaCalls[remotePeerId]) {
         try { activeMediaCalls[remotePeerId].close(); } catch (e) { }
       }
@@ -5871,10 +5831,6 @@
           const lbl = getFilterLabel(filterId);
           filterTag.textContent = lbl;
           filterTag.style.display = (lbl && payload.isVideoOn) ? "inline-block" : "none";
-        }
-        const audioEl = document.getElementById(`audio-feed-${payload.peerId}`);
-        if (audioEl) {
-          audioEl.muted = !payload.isAudioOn;
         }
         const audioInd = document.getElementById(`audio-ind-${payload.peerId}`);
         if (audioInd) {
@@ -6760,36 +6716,11 @@
       if ((typeof activeRoomCode !== "undefined" && activeRoomCode) || 
           (typeof localStream !== "undefined" && localStream) || 
           (typeof authenticatedPeers !== "undefined" && authenticatedPeers && authenticatedPeers.size > 0)) {
-        try {
-          if ("speechSynthesis" in window) {
-            window.speechSynthesis.cancel();
-            const u = new SpeechSynthesisUtterance("Warning: You are in an active Study Squad call. If you close this tab, your call will end.");
-            u.rate = 1.05;
-            window.speechSynthesis.speak(u);
-          }
-        } catch (err) { }
         e.preventDefault();
-        e.returnValue = "You are currently in an active Study Squad call. If you close this tab, your call will end.";
+        e.returnValue = "You are currently in an active Study Squad call. Are you sure you want to leave?";
         return e.returnValue;
       }
     });
-
-    // Global Touch/Tap Audio Unblocker for iPad & Mobile WebKit
-    function unblockAllAudioForMobile() {
-      try {
-        if (window._sharedAudioCtx && window._sharedAudioCtx.state === "suspended") {
-          window._sharedAudioCtx.resume().catch(() => {});
-        }
-        document.querySelectorAll("audio[id^='audio-feed-']").forEach(a => {
-          if (a.paused && a.srcObject) a.play().catch(() => {});
-        });
-        document.querySelectorAll("video[id^='video-feed-']").forEach(v => {
-          if (v.paused && v.srcObject) v.play().catch(() => {});
-        });
-      } catch (e) { }
-    }
-    document.addEventListener("touchstart", unblockAllAudioForMobile, { passive: true });
-    document.addEventListener("click", unblockAllAudioForMobile, { passive: true });
 
   </script>
 </body>

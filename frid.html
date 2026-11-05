@@ -4147,22 +4147,9 @@
       notifyParentBadgeCount();
     };
 
-    window.addEventListener("beforeunload", (e) => {
+    window.addEventListener("beforeunload", () => {
       if (myVisibilityMode === "public") {
         publishMyPublicLeave();
-      }
-      if (selectedFriendUid || (typeof currentInspectorTab !== "undefined" && currentInspectorTab === "chat")) {
-        try {
-          if ("speechSynthesis" in window) {
-            window.speechSynthesis.cancel();
-            const u = new SpeechSynthesisUtterance("Warning: You have an active friend chat. If you close this tab, your chat will end.");
-            u.rate = 1.05;
-            window.speechSynthesis.speak(u);
-          }
-        } catch (err) { }
-        e.preventDefault();
-        e.returnValue = "You have an active friend chat open. If you close this tab, your chat will end.";
-        return e.returnValue;
       }
     });
 
