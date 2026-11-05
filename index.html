@@ -1063,10 +1063,10 @@
     </div>
 
     <div class="button">
-      <a href="./semag/semag.html">GAMES</a>
-      <a href="./bin/exam/examcover.html">EXAM</a>
-      <a href="./bin/notes/notes.html">NOTES</a>
-      <a href="./bin/Resources/resources.html">RESOURCES</a>
+      <a href="./semag/semag.html" target="_blank" rel="noopener noreferrer">GAMES</a>
+      <a href="./bin/exam/examcover.html" target="_blank" rel="noopener noreferrer">EXAM</a>
+      <a href="./bin/notes/notes.html" target="_blank" rel="noopener noreferrer">NOTES</a>
+      <a href="./bin/Resources/resources.html" target="_blank" rel="noopener noreferrer">RESOURCES</a>
     </div>
 
     <div class="motivation-box">
@@ -1084,7 +1084,7 @@
         </span>
       </div>
       <div class="update-actions">
-        <a href="#noticeSection" id="updateLink" class="update-link">View Update</a>
+        <a href="#noticeSection" id="updateLink" class="update-link" target="_blank" rel="noopener noreferrer">View Update</a>
         <span class="update-close" onclick="closeUpdate()">✕</span>
       </div>
     </div>
@@ -1164,7 +1164,7 @@
         Specialized lab for CA Final students under the New Scheme.
         Bridging the gap between ICAI material and exam precision.
       </p>
-      <a href="./aboutca.html" style="
+      <a href="./aboutca.html" target="_blank" rel="noopener noreferrer" style="
             color: #3b82f6;
             font-weight: 700;
             text-decoration: none;
@@ -1178,7 +1178,7 @@
   </div>
 
   <footer>
-    <a href="./contract.html">Contact Us</a> <br />
+    <a href="./contract.html" target="_blank" rel="noopener noreferrer">Contact Us</a> <br />
     EMAIL: <a href="mailto:calciumnotes@gmail.com">calciumnotes@gmail.com</a>
     <div class="social-container" style="
           text-align: center;
@@ -1188,16 +1188,16 @@
           display: flex;
           gap: 15px;
         ">
-      <a href="https://www.instagram.com/calciumnotes" class="btn instagram" target="_blank">
+      <a href="https://www.instagram.com/calciumnotes" class="btn instagram" target="_blank" rel="noopener noreferrer">
         Instagram
       </a>
-      <a href="https://www.twitter.com/@Calciumnotes" class="btn twitter" target="_blank">
+      <a href="https://www.twitter.com/@Calciumnotes" class="btn twitter" target="_blank" rel="noopener noreferrer">
         X
       </a>
     </div>
     <div>
-      <a href="./about-us.html">About US</a>
-      <a href="./privacy-policy.html">Privacy Policy</a>
+      <a href="./about-us.html" target="_blank" rel="noopener noreferrer">About US</a>
+      <a href="./privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
     </div>
   </footer>
 
@@ -1376,6 +1376,8 @@
       setTimeout(() => {
         message.textContent = cur.text;
         link.href = cur.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
         message.style.opacity = "1";
       }, 160);
       currentIndex = (currentIndex + 1) % updates.length;
@@ -1724,6 +1726,138 @@
       } catch (e) { }
       return false;
     };
+
+    /* ==========================================================
+       CALL / CHAT LEAVE CONFIRMATION PROTECTION (beforeunload)
+       Keeps live study call / video / audio / chats on air
+       ========================================================== */
+    window.isCallOrChatActive = function () {
+      // 1. Check in-memory or persisted active room code (Study Squad / WebRTC room)
+      if (typeof window.isUserAlreadyInRoom === "function" && window.isUserAlreadyInRoom()) {
+        return true;
+      }
+      if (window._calciumCurrentRoomCode && String(window._calciumCurrentRoomCode).trim()) {
+        return true;
+      }
+      try {
+        const storedRoom = localStorage.getItem("calcium_active_room");
+        if (storedRoom && storedRoom.trim() && storedRoom.trim().startsWith("CA-")) {
+          return true;
+        }
+      } catch (e) { }
+
+      // 2. Check Sturm (WebRTC live room / video / audio) iframe
+      try {
+        const stIframe = document.getElementById("sturmIframe");
+        if (stIframe && stIframe.contentWindow) {
+          const sw = stIframe.contentWindow;
+          if (sw.activeRoomCode || sw.localStream || (sw.authenticatedPeers && sw.authenticatedPeers.size > 0)) {
+            return true;
+          }
+        }
+      } catch (e) { }
+
+      // 3. Check Friends & Unique ID Hub (frid.html) for active friend chat / P2P connection
+      try {
+        const frIframe = document.getElementById("friendsModeIframe");
+        if (frIframe && frIframe.contentWindow) {
+          const fw = frIframe.contentWindow;
+          if (fw.selectedFriendUid || (fw.peerConnections && Object.keys(fw.peerConnections).length > 0)) {
+            return true;
+          }
+        }
+        const friendsOverlay = document.getElementById("friendsModeOverlay");
+        if (friendsOverlay && (friendsOverlay.classList.contains("rm-active") || friendsOverlay.classList.contains("rm-visible"))) {
+          return true;
+        }
+      } catch (e) { }
+
+      return false;
+    };
+
+    /* ==========================================================
+       VOICE AUDIO ALERT (Speaks out loud when user tries to close)
+       ========================================================== */
+    window.playVoiceExitWarning = function () {
+      try {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (AudioCtx) {
+          const ctx = new AudioCtx();
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = "sine";
+          osc.frequency.setValueAtTime(800, ctx.currentTime);
+          osc.frequency.exponentialRampToValueAtTime(400, ctx.currentTime + 0.25);
+          gain.gain.setValueAtTime(0.35, ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.25);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start();
+          osc.stop(ctx.currentTime + 0.25);
+        }
+      } catch (e) { }
+
+      try {
+        if ("speechSynthesis" in window) {
+          window.speechSynthesis.cancel();
+          const utterance = new SpeechSynthesisUtterance("Warning: You are in a video or audio call. If you close this tab, your call will end.");
+          utterance.rate = 1.05;
+          utterance.pitch = 1.0;
+          utterance.volume = 1.0;
+          window.speechSynthesis.speak(utterance);
+        }
+      } catch (e) { }
+    };
+
+    window.addEventListener("beforeunload", function (event) {
+      if (typeof window.isCallOrChatActive === "function" && window.isCallOrChatActive()) {
+        window.playVoiceExitWarning();
+        event.preventDefault();
+        event.returnValue = "You have an active study call or chat session open. If you close this tab, your call will end.";
+        return event.returnValue;
+      }
+    });
+
+    /* ==========================================================
+       TAB TITLE CALL ALERT (NON-INTRUSIVE BROWSER TAB WARNING)
+       ========================================================== */
+    const ORIGINAL_PAGE_TITLE = document.title;
+    let titleFlashTimer = null;
+    let isTitleFlashing = false;
+
+    function startTabCallAlertTitle() {
+      if (isTitleFlashing) return;
+      isTitleFlashing = true;
+      let toggle = false;
+      titleFlashTimer = setInterval(() => {
+        if (!window.isCallOrChatActive()) {
+          stopTabCallAlertTitle();
+          return;
+        }
+        document.title = toggle
+          ? "🔴 CALL IN PROGRESS - DO NOT CLOSE!"
+          : "⚠️ CALL WILL END IF TAB CLOSES | Calcium Notes";
+        toggle = !toggle;
+      }, 1400);
+    }
+
+    function stopTabCallAlertTitle() {
+      if (titleFlashTimer) {
+        clearInterval(titleFlashTimer);
+        titleFlashTimer = null;
+      }
+      isTitleFlashing = false;
+      document.title = ORIGINAL_PAGE_TITLE;
+    }
+
+    // Monitor room/call/chat state changes to update browser tab title
+    setInterval(() => {
+      if (typeof window.isCallOrChatActive === "function" && window.isCallOrChatActive()) {
+        startTabCallAlertTitle();
+      } else if (isTitleFlashing) {
+        stopTabCallAlertTitle();
+      }
+    }, 2000);
 
     window.joinStudyRoomWithFriend = function (roomCode) {
       if (!roomCode) return;

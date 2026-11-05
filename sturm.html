@@ -3261,7 +3261,7 @@
             <span class="vault-icon">💾</span>
             <div>
               <div class="vault-title">Universal Data Vault &amp; Cross-PC Sync (.JSON)</div>
-              <div class="vault-desc">Export or import your complete Calcium Notes workspace (Plans, Tasks, Notes, Alarms)</div>
+              <div class="vault-desc">Export or import your complete Calcium Notes workspace (SPOM CBT Exam Results, Plans, Tasks, Notes, Alarms &amp; All Storage)</div>
             </div>
           </div>
           <span id="profDataStatsBadge" class="vault-stats-pill">All Plans + Read Mode Ready</span>
@@ -4679,7 +4679,7 @@
       }
 
       const toast = document.getElementById("profileBackupToast");
-      if (toast) toast.textContent = "✅ Profile saved & synced across Read Mode and Planning Mode. Full backup JSON downloaded.";
+      if (toast) toast.textContent = "✅ Profile saved & synced! Complete backup with SPOM CBT Exam Results & All Storage downloaded.";
       setTimeout(() => {
         window.closeProfileModal();
       }, 300);
@@ -4894,11 +4894,14 @@
       let plans = {};
       let tasks = [];
       let alarms = [];
+      let spom = [];
       try { plans = JSON.parse(localStorage.getItem("calcium_ca_data_v5") || "{}"); } catch (e) { }
       try { tasks = JSON.parse(localStorage.getItem("cn_tasks") || "[]"); } catch (e) { }
       try { alarms = JSON.parse(localStorage.getItem("cn_alarms") || "[]"); } catch (e) { }
+      try { spom = JSON.parse(localStorage.getItem("calcium_spom_results") || "[]"); } catch (e) { }
       const dayCount = Object.keys(plans).length;
-      badge.textContent = `📊 ${dayCount} Planned Day${dayCount === 1 ? "" : "s"} • ${tasks.length} Tasks • ${alarms.length} Alarms`;
+      const spomCount = Array.isArray(spom) ? spom.length : 0;
+      badge.textContent = `📊 ${spomCount} SPOM Exams • ${dayCount} Planned Days • ${tasks.length} Tasks`;
     }
 
     window.selectProfileCaLevel = function (level) {
@@ -4978,21 +4981,80 @@
     window.exportAllCalciumDataJson = function () {
       window.saveProfileFormLive();
       const profile = getSavedUserProfile();
+
+      // 1. Gather all SPOM CBT dashboard data
+      let spomResults = [];
+      try {
+        spomResults = JSON.parse(localStorage.getItem("calcium_spom_results") || "[]");
+        if (!Array.isArray(spomResults)) spomResults = [];
+      } catch (e) {
+        spomResults = [];
+      }
+      const spomChartType = localStorage.getItem("calcium_spom_chart_type") || "bar";
+      const spomVisible = profile.examStatsVisibleToFriends !== false;
+
+      // Aggregated SPOM stats
+      const totalExams = spomResults.length;
+      const passedCount = spomResults.filter(r => (Number(r.percentage) || 0) >= 50).length;
+      const passRate = totalExams > 0 ? Math.round((passedCount / totalExams) * 100) : 0;
+      const avgScore = totalExams > 0 ? Math.round(spomResults.reduce((acc, r) => acc + (Number(r.percentage) || 0), 0) / totalExams) : 0;
+      const bestScore = totalExams > 0 ? Math.max(...spomResults.map(r => Number(r.percentage) || 0)) : 0;
+
+      // 2. Full sweep of ALL localStorage keys
+      const allLocalStorage = {};
+      try {
+        for (let i = 0; i < localStorage.length; i++) {
+          const k = localStorage.key(i);
+          if (k) {
+            try {
+              allLocalStorage[k] = localStorage.getItem(k);
+            } catch (err) { }
+          }
+        }
+      } catch (e) { }
+
+      // 3. Build comprehensive structured payload
+      const storageObj = {
+        // Core Calcium Notes storage keys
+        calcium_user_profile_v1: localStorage.getItem("calcium_user_profile_v1") || JSON.stringify(profile),
+        calcium_user_name: localStorage.getItem("calcium_user_name") || profile.name,
+        calcium_ca_level: localStorage.getItem("calcium_ca_level") || profile.level,
+        calcium_ca_data_v5: localStorage.getItem("calcium_ca_data_v5") || "{}",
+        calcium_default_timetable: localStorage.getItem("calcium_default_timetable") || "null",
+        calcium_spom_results: localStorage.getItem("calcium_spom_results") || JSON.stringify(spomResults),
+        calcium_spom_chart_type: spomChartType,
+        calcium_exam_stats_visible_to_friends: localStorage.getItem("calcium_exam_stats_visible_to_friends") || (spomVisible ? "true" : "false"),
+        cn_alarms: localStorage.getItem("cn_alarms") || "[]",
+        cn_tasks: localStorage.getItem("cn_tasks") || "[]",
+        cn_notes: localStorage.getItem("cn_notes") || "",
+        cn_spotify_active_preset: localStorage.getItem("cn_spotify_active_preset") || "",
+        cn_spotify_custom_embed: localStorage.getItem("cn_spotify_custom_embed") || "",
+        cn_spotify_user_input: localStorage.getItem("cn_spotify_user_input") || "",
+        calcium_squad_roster: localStorage.getItem("calcium_squad_roster") || "[]",
+        calcium_active_room: localStorage.getItem("calcium_active_room") || "",
+        calcium_public_rooms_v1: localStorage.getItem("calcium_public_rooms_v1") || "{}",
+        caSpaceRushBest: localStorage.getItem("caSpaceRushBest") || "0",
+        // Spread all other keys from entire localStorage
+        ...allLocalStorage
+      };
+
       const exportPayload = {
         app: "Calcium Notes Study Reactor",
-        version: "2.0",
+        version: "2.1",
         exportedAt: new Date().toISOString(),
         profile: profile,
-        storage: {
-          calcium_user_profile_v1: localStorage.getItem("calcium_user_profile_v1") || JSON.stringify(profile),
-          calcium_user_name: localStorage.getItem("calcium_user_name") || profile.name,
-          calcium_ca_level: localStorage.getItem("calcium_ca_level") || profile.level,
-          calcium_ca_data_v5: localStorage.getItem("calcium_ca_data_v5") || "{}",
-          calcium_default_timetable: localStorage.getItem("calcium_default_timetable") || "null",
-          cn_alarms: localStorage.getItem("cn_alarms") || "[]",
-          cn_tasks: localStorage.getItem("cn_tasks") || "[]",
-          cn_notes: localStorage.getItem("cn_notes") || ""
-        }
+        spomDashboard: {
+          resultsCount: totalExams,
+          passedCount: passedCount,
+          passPercentage: passRate,
+          averageScore: avgScore,
+          bestScore: bestScore,
+          chartPreference: spomChartType,
+          visibleToFriends: spomVisible,
+          results: spomResults
+        },
+        storage: storageObj,
+        allLocalStorage: allLocalStorage
       };
 
       const blob = new Blob([JSON.stringify(exportPayload, null, 2)], { type: "application/json" });
@@ -5009,7 +5071,7 @@
       const toast = document.getElementById("profileBackupToast");
       if (toast) {
         toast.style.color = "#4ade80";
-        toast.textContent = "✅ Full backup JSON downloaded! Copy this file to your other PC to import.";
+        toast.textContent = `✅ Full Workspace Exported! Includes ${totalExams} SPOM CBT Exam Results, Profile, Plans, Tasks & All LocalStorage.`;
       }
     };
 
@@ -5022,40 +5084,101 @@
       reader.onload = function (e) {
         try {
           const parsed = JSON.parse(e.target.result);
-          if (!parsed || (!parsed.storage && !parsed.profile && !parsed.calcium_ca_data_v5)) {
+          if (!parsed || (!parsed.storage && !parsed.allLocalStorage && !parsed.profile && !parsed.calcium_ca_data_v5 && !parsed.spomDashboard)) {
             throw new Error("Invalid Calcium Notes backup file format.");
           }
 
-          const store = parsed.storage || parsed;
-          const keysToRestore = [
+          // 1. Merge storage from all available sections
+          const store = Object.assign({}, parsed.allLocalStorage || {}, parsed.storage || {});
+
+          // 2. If spomDashboard is present as a structured object
+          if (parsed.spomDashboard && typeof parsed.spomDashboard === "object") {
+            if (Array.isArray(parsed.spomDashboard.results)) {
+              store["calcium_spom_results"] = JSON.stringify(parsed.spomDashboard.results);
+            }
+            if (parsed.spomDashboard.chartPreference) {
+              store["calcium_spom_chart_type"] = parsed.spomDashboard.chartPreference;
+            }
+            if (parsed.spomDashboard.visibleToFriends !== undefined) {
+              store["calcium_exam_stats_visible_to_friends"] = parsed.spomDashboard.visibleToFriends ? "true" : "false";
+            }
+          }
+
+          // 3. Fallback for legacy or flat root fields
+          [
             "calcium_user_profile_v1",
             "calcium_user_name",
             "calcium_ca_level",
             "calcium_ca_data_v5",
             "calcium_default_timetable",
+            "calcium_spom_results",
+            "calcium_spom_chart_type",
+            "calcium_exam_stats_visible_to_friends",
             "cn_alarms",
             "cn_tasks",
-            "cn_notes"
-          ];
-
-          keysToRestore.forEach(k => {
-            if (store[k] !== undefined && store[k] !== null) {
-              const val = typeof store[k] === "string" ? store[k] : JSON.stringify(store[k]);
-              localStorage.setItem(k, val);
+            "cn_notes",
+            "cn_spotify_active_preset",
+            "cn_spotify_custom_embed",
+            "cn_spotify_user_input",
+            "calcium_squad_roster",
+            "calcium_active_room",
+            "calcium_public_rooms_v1",
+            "caSpaceRushBest"
+          ].forEach(k => {
+            if (parsed[k] !== undefined && store[k] === undefined) {
+              store[k] = typeof parsed[k] === "string" ? parsed[k] : JSON.stringify(parsed[k]);
             }
           });
 
+          // 4. Restore everything into localStorage
+          let restoredCount = 0;
+          Object.keys(store).forEach(k => {
+            const val = store[k];
+            if (val !== undefined && val !== null) {
+              const strVal = typeof val === "string" ? val : JSON.stringify(val);
+              try {
+                localStorage.setItem(k, strVal);
+                restoredCount++;
+              } catch (err) {
+                console.warn("Storage restore error for key:", k, err);
+              }
+            }
+          });
+
+          // 5. Restore user profile
           if (parsed.profile && typeof parsed.profile === "object") {
             persistUserProfile(parsed.profile);
+          } else if (store["calcium_user_profile_v1"]) {
+            try {
+              const p = JSON.parse(store["calcium_user_profile_v1"]);
+              persistUserProfile(p);
+            } catch (err) { }
           }
 
+          // 6. Refresh modal UI components immediately
           populateProfileModalUI();
+          if (typeof window.renderSpomProfileStats === "function") {
+            window.renderSpomProfileStats();
+          }
+          if (typeof updateProfileDataStatsBadge === "function") {
+            updateProfileDataStatsBadge();
+          }
+
+          // 7. Dispatch storage event for other tabs/listeners
           window.dispatchEvent(new Event("storage"));
+
+          // 8. Inform parent iframe to reload read/plan modes and update top bar badge
           callParent("refreshAllIframesAfterImport", store);
+
+          let spomCount = 0;
+          try {
+            const spomList = JSON.parse(localStorage.getItem("calcium_spom_results") || "[]");
+            spomCount = Array.isArray(spomList) ? spomList.length : 0;
+          } catch (e) { }
 
           if (toast) {
             toast.style.color = "#4ade80";
-            toast.textContent = "✅ All Profile, Planning Mode & Read Mode data restored successfully!";
+            toast.textContent = `✅ Full Workspace Restored! Loaded ${spomCount} SPOM exam records, Profile, Plans, Tasks & Notes.`;
           }
         } catch (err) {
           if (toast) {
@@ -6587,6 +6710,24 @@
         }
         updateMeetRoomLabel();
       }, 1000);
+    });
+
+    window.addEventListener("beforeunload", function (e) {
+      if ((typeof activeRoomCode !== "undefined" && activeRoomCode) || 
+          (typeof localStream !== "undefined" && localStream) || 
+          (typeof authenticatedPeers !== "undefined" && authenticatedPeers && authenticatedPeers.size > 0)) {
+        try {
+          if ("speechSynthesis" in window) {
+            window.speechSynthesis.cancel();
+            const u = new SpeechSynthesisUtterance("Warning: You are in an active Study Squad call. If you close this tab, your call will end.");
+            u.rate = 1.05;
+            window.speechSynthesis.speak(u);
+          }
+        } catch (err) { }
+        e.preventDefault();
+        e.returnValue = "You are currently in an active Study Squad call. If you close this tab, your call will end.";
+        return e.returnValue;
+      }
     });
 
   </script>
