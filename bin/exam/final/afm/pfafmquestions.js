@@ -9052,6 +9052,1180 @@ const descriptiveQuestions = [
     </ol>
   `
 },
+// may 25 II
+  {
+    question_id: "AFM_MTPAPR25_II_Q1A",
+    source: "ICAI Mock Test Paper - Series II, April 2025",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    placement: 1,
+    marks: 8,
+    question_html: `
+      <p>Zaz plc, a UK Company is in the process of negotiating an order amounting €2.8 million with a large German retailer on 6 month’s credit. If successful, this will be first time for Zaz has exported goods into the highly competitive German Market. The Zaz is considering following 3 alternatives for managing the transaction risk before the order is finalized.</p>
+      <ol type="i">
+        <li>Mr. Peter the Marketing head has suggested that in order to remove transaction risk completely Zaz should invoice the German firm in Sterling using the current €/£ average spot rate to calculate the invoice amount.</li>
+        <li>Mr. Wilson, CE is doubtful about Mr. Peter’s proposal and suggested an alternative of invoicing the German firm in € and using a Forward Contract to hedge the transaction risk.</li>
+        <li>Ms. Karen, CFO is agreed with the proposal of Mr. Wilson to invoice the German first in €, but she is of opinion that Zaz should use sufficient 6-month Sterling Future contracts (to the nearest whole number) to hedge the transaction risk.</li>
+      </ol>
+      <p>Following data is available:</p>
+      <table>
+        <tbody>
+          <tr>
+            <td>Spot Rate</td>
+            <td>€ 1.1960 - € 1.1970/£</td>
+          </tr>
+          <tr>
+            <td>6-months forward points</td>
+            <td>0.60 – 0.55 Euro Cents</td>
+          </tr>
+          <tr>
+            <td>6-month Future contract is currently trading at</td>
+            <td>€ 1.1943/£</td>
+          </tr>
+          <tr>
+            <td>6-month Future contract size is</td>
+            <td>£62,500</td>
+          </tr>
+          <tr>
+            <td>After 6-month Spot rate and Futures rate</td>
+            <td>€ 1.1873/£</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>You are required to:</p>
+      <p>(A) Calculate (to the nearest £) the £ receipt for Zaz plc, under each of 3 above proposals.<br/>
+      (B) In your opinion which alternative you consider to be most appropriate.</p>
+    `,
+    solution_html: `
+      <p><strong>(A) Receipt under three proposals</strong></p>
+      
+      <p><strong>(i) Proposal of Mr. Peter</strong></p>
+      <p>Average Spot Rate = (1.1960 + 1.1970) / 2 = € 1.1965/£</p>
+      <p>Invoicing in £ will produce = € 2.8 million / 1.1965 = <strong>£ 2.340 million</strong> (or £ 2,340,159)</p>
 
+      <p><strong>(ii) Proposal of Mr. Wilson</strong></p>
+      <p>Since forward points are in descending order (0.60 – 0.55), the forward rate is at a discount:</p>
+      <p>Forward Rate = € 1.1970 - 0.0055 = € 1.1915/£</p>
+      <p>Using Forward Market hedge Sterling receipt would be = € 2.8 million / 1.1915 = <strong>£ 2.350 million</strong> (or £ 2,350,000)</p>
+
+      <p><strong>(iii) Proposal of Ms. Karen</strong></p>
+      <p>The equivalent sterling of the order placed based on future price (€ 1.1943):</p>
+      <p>= € 2.8 million / 1.1943 = £ 2,344,470 (rounded off)</p>
+      <p>Number of Contracts = £ 2,344,470 / £ 62,500 = 37.51 ≈ <strong>37 Contracts</strong> (to the nearest whole number)</p>
+      <p>Thus, € amount hedged by future contract will be = 37 × £ 62,500 = £ 23,12,500</p>
+      <table>
+        <tbody>
+          <tr>
+            <td>Buy Future at</td>
+            <td>€ 1.1943</td>
+          </tr>
+          <tr>
+            <td>Sell Future at</td>
+            <td>€ 1.1873</td>
+          </tr>
+          <tr>
+            <td><strong>Loss on Future</strong></td>
+            <td><strong>€ 0.0070</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Total loss on Future Contracts = 37 × £ 62,500 × € 0.0070 = € 16,188</p>
+      <p><strong>After 6 months:</strong></p>
+      <table>
+        <tbody>
+          <tr>
+            <td>Amount Received</td>
+            <td>€ 28,00,000</td>
+          </tr>
+          <tr>
+            <td>Less: Loss on Future Contracts</td>
+            <td>€ 16,188</td>
+          </tr>
+          <tr>
+            <td><strong>Net Euro Proceeds</strong></td>
+            <td><strong>€ 27,83,812</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Sterling Receipts on sale of € at spot = € 27,83,812 / 1.1873 = <strong>£ 2.3446 million</strong> (or £ 2,344,657)</p>
+
+      <p><strong>(B) Recommendation</strong></p>
+      <p>Proposal of option (ii) is preferable because option (i) &amp; (iii) produce lower receipts. Further, in case of proposal (i), there must be a doubt as to whether this would be acceptable to the German firm, as it is described as a competitive market and Zaz is moving into it for the first time.</p>
+    `
+  },
+  {
+    question_id: "AFM_MTPAPR25_II_Q1B",
+    source: "ICAI Mock Test Paper - Series II, April 2025",
+    chapter_name: "Security Valuation",
+    placement: 1,
+    marks: 4,
+    question_html: `
+      <p>Calculate the value of share from the following information:</p>
+      <table>
+        <tbody>
+          <tr>
+            <td>Profit after tax of the company</td>
+            <td>₹ 290 crores</td>
+          </tr>
+          <tr>
+            <td>Equity capital of company</td>
+            <td>₹ 1,300 crores</td>
+          </tr>
+          <tr>
+            <td>Par value of share</td>
+            <td>₹ 40 each</td>
+          </tr>
+          <tr>
+            <td>Debt ratio of company (Debt / Debt + Equity)</td>
+            <td>27%</td>
+          </tr>
+          <tr>
+            <td>Long run growth rate of the company</td>
+            <td>8%</td>
+          </tr>
+          <tr>
+            <td>Beta</td>
+            <td>0.1</td>
+          </tr>
+          <tr>
+            <td>Risk free interest rate</td>
+            <td>8.7%</td>
+          </tr>
+          <tr>
+            <td>Market returns</td>
+            <td>10.3%</td>
+          </tr>
+          <tr>
+            <td>Capital expenditure per share</td>
+            <td>₹ 47</td>
+          </tr>
+          <tr>
+            <td>Depreciation per share</td>
+            <td>₹ 39</td>
+          </tr>
+          <tr>
+            <td>Change in Working capital</td>
+            <td>₹ 3.45 per share</td>
+          </tr>
+        </tbody>
+      </table>
+    `,
+    solution_html: `
+      <p><strong>1. Number of Equity Shares:</strong></p>
+      <p>No. of Shares = ₹ 1,300 crores / ₹ 40 = <strong>32.5 Crores</strong></p>
+
+      <p><strong>2. Earnings Per Share (EPS):</strong></p>
+      <p>EPS = PAT / No. of shares = ₹ 290 crores / 32.5 crores = <strong>₹ 8.923</strong></p>
+
+      <p><strong>3. Free Cash Flow to Equity (FCFE) per share:</strong></p>
+      <p>FCFE = Net Income – [(1 - b) × (CapEx – Depreciation) + (1 - b) × (ΔWC)]</p>
+      <p>Where Debt Ratio (b) = 27% = 0.27</p>
+      <p>FCFE = 8.923 – [(1 - 0.27) × (47 - 39) + (1 - 0.27) × (3.45)]</p>
+      <p>FCFE = 8.923 – [0.73 × 8 + 0.73 × 3.45]</p>
+      <p>FCFE = 8.923 – [5.84 + 2.5185] = <strong>₹ 0.5645 per share</strong></p>
+
+      <p><strong>4. Cost of Equity (K<sub>e</sub>) using CAPM:</strong></p>
+      <p>K<sub>e</sub> = R<sub>f</sub> + β × (R<sub>m</sub> – R<sub>f</sub>)</p>
+      <p>K<sub>e</sub> = 8.7% + 0.1 × (10.3% – 8.7%) = 8.7% + 0.16% = <strong>8.86%</strong></p>
+
+      <p><strong>5. Value per Share (P<sub>0</sub>):</strong></p>
+      <p>P<sub>0</sub> = [FCFE × (1 + g)] / (K<sub>e</sub> – g)</p>
+      <p>P<sub>0</sub> = [0.5645 × (1 + 0.08)] / (0.0886 – 0.08)</p>
+      <p>P<sub>0</sub> = 0.60966 / 0.0086 = <strong>₹ 70.89</strong></p>
+    `
+  },
+  {
+    question_id: "AFM_MTPAPR25_II_Q1C",
+    source: "ICAI Mock Test Paper - Series II, April 2025",
+    chapter_name: "Securitization",
+    placement: 1,
+    marks: 2,
+    question_html: `
+      <p>Explain briefly the role of a Special Purpose Vehicle (SPV) in securitization?</p>
+    `,
+    solution_html: `
+      <p>An SPV is created for the purpose of executing the securitization deal. Since the issuer/originator transfers all rights in assets to the SPV, it holds the legal title to these assets. It is created especially for the purpose of securitization only and normally could be in the form of a company, a firm, a society, or a trust.</p>
+      <p>The primary objectives and roles of creating an SPV include:</p>
+      <ul>
+        <li><strong>Ring-fencing:</strong> To remove and ring-fence the assets from the balance sheet of the originator, shielding investors from the credit risk/bankruptcy of the originator.</li>
+        <li><strong>Consideration:</strong> It makes an upfront payment to the originator, holding a key position in the overall securitization transaction.</li>
+        <li><strong>Issuance of Securities:</strong> It issues tradeable securities [known as Asset Backed Securities (ABS) or Mortgage Backed Securities (MBS)] to the investors.</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_MTPAPR25_II_Q2A",
+    source: "ICAI Mock Test Paper - Series II, April 2025",
+    chapter_name: "Security Valuation",
+    placement: 2,
+    marks: 6,
+    question_html: `
+      <p>Following information is related to the 7.50% Convertible bond of S Ltd. which is currently priced at ₹ 5,300 per bond:</p>
+      <ul>
+        <li>Conversion Parity Price = ₹ 265</li>
+        <li>Conversion Premium (Based on Market Price) = 10.41667%</li>
+        <li>Percentage of Downside Risk based on Straight Value of Bond = 12.766%</li>
+      </ul>
+      <p><strong>Required:</strong></p>
+      <ol type="i">
+        <li>Calculate No. of shares on Conversion.</li>
+        <li>Analyse Current Market Price Per Share of S Ltd.</li>
+        <li>Assess the Straight Value of Bond.</li>
+        <li>Based on straight value of bond computed above, determine the approximate required rate of return by an investor on similar category of bonds.</li>
+      </ol>
+      <p><strong>Note:</strong> Use following Present Value Factors (PVFs) for various calculations:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PVF @ 8%</td>
+            <td>0.9259</td>
+            <td>0.8573</td>
+            <td>0.7938</td>
+            <td>0.7350</td>
+            <td>0.6806</td>
+          </tr>
+          <tr>
+            <td>PVF @ 10%</td>
+            <td>0.9091</td>
+            <td>0.8264</td>
+            <td>0.7513</td>
+            <td>0.6830</td>
+            <td>0.6209</td>
+          </tr>
+        </tbody>
+      </table>
+    `,
+    solution_html: `
+      <p><strong>(i) Calculation of Number of Shares on Conversion:</strong></p>
+      <p>Conversion Parity Price = Bond Price / No. of Shares on Conversion</p>
+      <p>₹ 265 = ₹ 5,300 / No. of Shares on Conversion</p>
+      <p><strong>No. of Shares on Conversion = 20 Shares</strong></p>
+
+      <p><strong>(ii) Analysis of Current Market Price Per Share:</strong></p>
+      <p>Conversion Premium = [(Conversion Parity Price – Market Price) / Market Price] × 100</p>
+      <p>10.41667% = [(265 – Market Price) / Market Price] × 100</p>
+      <p>0.1041667 × Market Price = 265 – Market Price</p>
+      <p>1.1041667 × Market Price = 265</p>
+      <p><strong>Market Price = ₹ 240</strong></p>
+
+      <p><strong>(iii) Assessment of Straight Value of Bond:</strong></p>
+      <p>Percentage of Downside Risk = [(Market Price of Bond – Straight Value of Bond) / Straight Value of Bond] × 100</p>
+      <p>12.766% = [(5,300 – SV) / SV] × 100</p>
+      <p>0.12766 × SV = 5,300 – SV</p>
+      <p>1.12766 × SV = 5,300</p>
+      <p><strong>Straight Value of Bond (SV) = ₹ 4,700</strong></p>
+
+      <p><strong>(iv) Determination of Required Rate of Return using IRR:</strong></p>
+      <p>Annual Coupon = 7.50% of ₹ 5,000 = ₹ 375; Redemption Value at Year 5 = ₹ 5,000</p>
+
+      <p><strong>Present Value @ 8%:</strong></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Cash Flow (₹)</th>
+            <th>PVF @ 8%</th>
+            <th>Present Value (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>-4,700</td>
+            <td>1.0000</td>
+            <td>-4,700.00</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>375</td>
+            <td>0.9259</td>
+            <td>347.21</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>375</td>
+            <td>0.8573</td>
+            <td>321.49</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>375</td>
+            <td>0.7938</td>
+            <td>297.68</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>375</td>
+            <td>0.7350</td>
+            <td>275.63</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>5,375</td>
+            <td>0.6806</td>
+            <td>3,658.23</td>
+          </tr>
+          <tr>
+            <td colspan="3"><strong>NPV @ 8%</strong></td>
+            <td><strong>200.23</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>Present Value @ 10%:</strong></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Cash Flow (₹)</th>
+            <th>PVF @ 10%</th>
+            <th>Present Value (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>-4,700</td>
+            <td>1.0000</td>
+            <td>-4,700.00</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>375</td>
+            <td>0.9091</td>
+            <td>340.91</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>375</td>
+            <td>0.8264</td>
+            <td>309.90</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>375</td>
+            <td>0.7513</td>
+            <td>281.74</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>375</td>
+            <td>0.6830</td>
+            <td>256.13</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>5,375</td>
+            <td>0.6209</td>
+            <td>3,337.34</td>
+          </tr>
+          <tr>
+            <td colspan="3"><strong>NPV @ 10%</strong></td>
+            <td><strong>-173.99</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>Required Return (IRR):</strong></p>
+      <p>IRR = L + [NPV<sub>L</sub> / (NPV<sub>L</sub> – NPV<sub>H</sub>)] × (H – L)</p>
+      <p>= 8% + [200.23 / (200.23 + 173.99)] × (10% – 8%)</p>
+      <p>= 8% + [200.23 / 374.22] × 2% = 8% + 1.07% = <strong>9.07%</strong></p>
+    `
+  },
+  {
+    question_id: "AFM_MTPAPR25_II_Q2B",
+    source: "ICAI Mock Test Paper - Series II, April 2025",
+    chapter_name: "Business Valuation",
+    placement: 2,
+    marks: 4,
+    question_html: `
+      <p>Constant Engineering Ltd. has developed a high tech product which has reduced the Carbon emission from the burning of the fossil fuel. The product is in high demand. The product has been patented and has a market value of ₹ 100 Crore, which is not recorded in the books. The Net Worth (NW) of Constant Engineering Ltd. is ₹ 200 Crore. Long term debt is ₹ 400 Crore. The product generates a Net Operating Profit after Tax of ₹ 84 Crore. The rate on 365 days Government bond is 10 percent per annum. Market portfolio generates a return of 12 percent per annum. The stock of the company moves in tandem with the market.</p>
+      <p>Calculate Economic Value Added (EVA) of the company.</p>
+    `,
+    solution_html: `
+      <p><strong>1. Invested Capital:</strong></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Amount (₹ Crore)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Net Worth</td>
+            <td>200.00</td>
+          </tr>
+          <tr>
+            <td>Long Term Debts</td>
+            <td>400.00</td>
+          </tr>
+          <tr>
+            <td>Patent Rights (Unrecorded Intangible Asset)</td>
+            <td>100.00</td>
+          </tr>
+          <tr>
+            <td><strong>Total Invested Capital</strong></td>
+            <td><strong>700.00</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>2. Cost of Equity (K<sub>e</sub>) and Cost of Debt (K<sub>d</sub>):</strong></p>
+      <p>Since the stock moves in tandem with the market, Beta (β) = 1.0.</p>
+      <p>K<sub>e</sub> = R<sub>f</sub> + β × (R<sub>m</sub> – R<sub>f</sub>) = 10% + 1.0 × (12% – 10%) = <strong>12%</strong></p>
+      <p>Cost of Debt (K<sub>d</sub>) = Rate on Government Bond = <strong>10%</strong></p>
+
+      <p><strong>3. Weighted Average Cost of Capital (WACC):</strong></p>
+      <p>Effective Equity base = Net Worth + Patent Rights = 200 + 100 = ₹ 300 Crore</p>
+      <p>WACC (K<sub>o</sub>) = [K<sub>e</sub> × (E / Total Capital)] + [K<sub>d</sub> × (D / Total Capital)]</p>
+      <p>WACC = [12% × (300 / 700)] + [10% × (400 / 700)]</p>
+      <p>WACC = 5.14% + 5.71% = <strong>10.85%</strong></p>
+
+      <p><strong>4. Economic Value Added (EVA):</strong></p>
+      <p>EVA = Profit Earned (NOPAT) – (WACC × Invested Capital)</p>
+      <p>EVA = ₹ 84 Crore – (10.85% × ₹ 700 Crore)</p>
+      <p>EVA = ₹ 84 Crore – ₹ 75.95 Crore = <strong>₹ 8.05 Crore</strong></p>
+    `
+  },
+  {
+    question_id: "AFM_MTPAPR25_II_Q2C",
+    source: "ICAI Mock Test Paper - Series II, April 2025",
+    chapter_name: "Risk Management",
+    placement: 2,
+    marks: 4,
+    question_html: `
+      <p>How can a company identify and manage counterparty risk effectively?</p>
+    `,
+    solution_html: `
+      <p>A company can identify and manage counterparty risk effectively by recognizing potential warning signs and implementing risk mitigation techniques.</p>
+      
+      <p><strong>Potential Warning Signs / Hints of Counterparty Risk:</strong></p>
+      <ol type="a">
+        <li>Failure to obtain necessary resources to complete the project or transaction undertaken.</li>
+        <li>Any regulatory restrictions imposed by the Government.</li>
+        <li>Hostile action of a foreign government.</li>
+        <li>Let down by a third party.</li>
+        <li>Signs or events indicating that the entity has become insolvent.</li>
+      </ol>
+
+      <p><strong>Techniques to Manage Counterparty Risk:</strong></p>
+      <ol>
+        <li><strong>Carrying out Due Diligence:</strong> Conduct thorough financial and operational due diligence before entering into contracts with third parties.</li>
+        <li><strong>Avoid Over-commitment:</strong> Do not over-commit or concentrate exposure to a single entity, business group, or connected entities.</li>
+        <li><strong>Exposure Limits:</strong> Clearly establish and respect defined counterparty exposure limits.</li>
+        <li><strong>Periodic Reviews:</strong> Regularly review existing limits and credit approval procedures.</li>
+        <li><strong>Rapid Action:</strong> Initiate swift contingency and recovery actions upon early signs of potential defaults.</li>
+        <li><strong>Credit Enhancements:</strong> Utilize risk-mitigating instruments such as performance guarantees, letters of credit, collateral, and credit insurance.</li>
+      </ol>
+    `
+  },
+  {
+    question_id: "AFM_MTPAPR25_II_Q3A",
+    source: "ICAI Mock Test Paper - Series II, April 2025",
+    chapter_name: "Derivatives Analysis and Valuation",
+    placement: 3,
+    marks: 4,
+    question_html: `
+      <p>A Mutual Fund is holding the following assets in ₹ Crores:</p>
+      <table>
+        <tbody>
+          <tr>
+            <td>Investments in diversified equity shares</td>
+            <td>90.00</td>
+          </tr>
+          <tr>
+            <td>Cash and Bank Balances</td>
+            <td>10.00</td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>100.00</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>The Beta of the equity shares portfolio is 1.1. The index future is selling at 4,300 level. The Fund Manager apprehends that the index will fall at the most by 10%.</p>
+      <p>How many index futures should he short for perfect hedging? One index future consists of 50 units.</p>
+      <p>Substantiate your answer assuming the Fund Manager's apprehension will materialize.</p>
+    `,
+    solution_html: `
+      <p><strong>1. Number of Index Futures to be Sold for Perfect Hedging:</strong></p>
+      <p>Number of contracts = [Portfolio Value × Beta] / [Index Future Price × Lot Size]</p>
+      <p>Number of contracts = [1.1 × ₹ 90,00,00,000] / [4,300 × 50] = ₹ 99,00,00,000 / 2,15,000 = <strong>4,605 contracts</strong></p>
+      <p><em>(Note: Cash is not a part of the equity portfolio subject to market risk, hence only ₹ 90 Crore is considered).</em></p>
+
+      <p><strong>2. Justification / Substantiation of the Answer:</strong></p>
+      <p>Assuming the index falls by 10%:</p>
+      <ul>
+        <li>
+          <strong>Loss in the value of the portfolio:</strong><br/>
+          Expected drop in portfolio = Portfolio Beta × Index Fall = 1.1 × 10% = 11%<br/>
+          Loss = 11% × ₹ 90 Crore = <strong>₹ 9.90 Crore</strong>
+        </li>
+        <li>
+          <strong>Gain from short covering of index futures:</strong><br/>
+          Gain per unit = 10% of 4,300 = 430<br/>
+          Total gain = 4,605 contracts × 50 units × 430 = ₹ 9,89,97,500 ≈ <strong>₹ 9.90 Crore</strong>
+        </li>
+      </ul>
+      <p>Since the loss in portfolio value is completely offset by the gain on the futures position, the answer is fully justified.</p>
+    `
+  },
+  {
+    question_id: "AFM_MTPAPR25_II_Q3B",
+    source: "ICAI Mock Test Paper - Series II, April 2025",
+    chapter_name: "Interest Rate Risk Management",
+    placement: 3,
+    marks: 6,
+    question_html: `
+      <p>Derivative Bank entered into a plain vanilla swap through an OIS (Overnight Index Swap) on a principal of ₹ 15 crores and agreed to receive MIBOR overnight floating rate for a fixed payment on the principal. The swap was entered into on Monday, 31st July 2023 and was to commence on 1st August 2023 and run for a period of 7 days.</p>
+      <p>Respective MIBOR rates for Tuesday to Monday were:</p>
+      <p><strong>8.12%, 7.75%, 7.95%, 8.10%, 8.12%, 8.15%</strong></p>
+      <p>If Derivative Bank received ₹ 1,420 net on settlement, calculate Fixed rate and interest under both legs.</p>
+      <p><strong>Notes:</strong></p>
+      <ol type="i">
+        <li>Sunday is Holiday.</li>
+        <li>Work in rounded rupees and avoid decimal working.</li>
+        <li>Consider 365 days a year.</li>
+      </ol>
+    `,
+    solution_html: `
+      <p><strong>1. Calculation of Floating Leg Interest (MIBOR):</strong></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Principal (₹)</th>
+            <th>MIBOR (%)</th>
+            <th>Interest (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tuesday</td>
+            <td>15,00,00,000</td>
+            <td>8.12%</td>
+            <td>33,370</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>15,00,33,370</td>
+            <td>7.75%</td>
+            <td>31,856</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>15,00,65,226</td>
+            <td>7.95%</td>
+            <td>32,685</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>15,00,97,912</td>
+            <td>8.10%</td>
+            <td>33,309</td>
+          </tr>
+          <tr>
+            <td>Saturday &amp; Sunday (*)</td>
+            <td>15,01,31,221</td>
+            <td>8.12%</td>
+            <td>66,798</td>
+          </tr>
+          <tr>
+            <td>Monday</td>
+            <td>15,01,98,019</td>
+            <td>8.15%</td>
+            <td>33,537</td>
+          </tr>
+          <tr>
+            <td colspan="3"><strong>Total Floating Rate Interest Received</strong></td>
+            <td><strong>₹ 2,31,555</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <p><small>(*) Interest for two days (Saturday and Sunday) calculated at Saturday's rate of 8.12%.</small></p>
+
+      <p><strong>2. Calculation of Fixed Leg Interest and Fixed Rate:</strong></p>
+      <table>
+        <tbody>
+          <tr>
+            <td>Total Interest @ Floating (Received)</td>
+            <td>₹ 2,31,555</td>
+          </tr>
+          <tr>
+            <td>Less: Net Settlement Received</td>
+            <td>₹ 1,420</td>
+          </tr>
+          <tr>
+            <td><strong>Interest @ Fixed (Paid)</strong></td>
+            <td><strong>₹ 2,30,135</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>Fixed Rate of Interest:</strong></p>
+      <p>Fixed Interest = Principal × Rate × (7 / 365)</p>
+      <p>₹ 2,30,135 = ₹ 15,00,00,000 × Fixed Rate × (7 / 365)</p>
+      <p>Fixed Rate = (₹ 2,30,135 × 365) / (₹ 15,00,00,000 × 7) = 83,999,275 / 1,050,000,000 ≈ 0.08 = <strong>8% p.a.</strong></p>
+    `
+  },
+  {
+    question_id: "AFM_MTPAPR25_II_Q3C",
+    source: "ICAI Mock Test Paper - Series II, April 2025",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    placement: 3,
+    marks: 4,
+    question_html: `
+      <p>Explain various strategy options available for foreign exchange exposure management.</p>
+      <p><strong>OR</strong></p>
+      <p>What are the key factors that influence corporate-level strategy decisions?</p>
+    `,
+    solution_html: `
+      <p><strong>Strategy Options Available for Foreign Exchange Exposure Management:</strong></p>
+      <p>Four separate strategy options are feasible for foreign exchange exposure management:</p>
+      <ol type="a">
+        <li><strong>Low Risk: Low Reward –</strong> This option involves automatic hedging of exposures in the forward market as soon as they arise, irrespective of the attractiveness or otherwise of the forward rate.</li>
+        <li><strong>Low Risk: Reasonable Reward –</strong> This strategy requires selective hedging of exposures whenever forward rates are attractive, but keeping exposures open whenever they are not.</li>
+        <li><strong>High Risk: Low Reward –</strong> Perhaps the worst strategy is to leave all exposures unhedged, leaving the business fully vulnerable to adverse market movements.</li>
+        <li><strong>High Risk: High Reward –</strong> This strategy involves active trading in the currency market through continuous cancellations and re-bookings of forward contracts. With exchange controls relaxed in India in recent times, a few larger corporations are adopting this strategy.</li>
+      </ol>
+
+      <p><strong>OR</strong></p>
+
+      <p><strong>Key Factors that Influence Corporate-Level Strategy Decisions:</strong></p>
+      <p>Corporate-level strategy fundamentally is concerned with the selection of businesses in which a company should compete and with the development and coordination of that portfolio of businesses.</p>
+      <p>The three key factors influencing corporate-level strategy decisions are:</p>
+      <ol type="i">
+        <li><strong>Suitability:</strong> Evaluates whether the strategy addresses the strategic position of the company and whether it will accomplish the company's common objectives.</li>
+        <li><strong>Feasibility:</strong> Determines whether the company possesses or can acquire the necessary financial, technical, and human resources required to formulate and implement the strategy successfully.</li>
+        <li><strong>Acceptability:</strong> Concerns the performance outcomes expected from the strategy in relation to stakeholder expectations (both financial returns and non-financial satisfaction).</li>
+      </ol>
+    `
+  },
+  {
+    question_id: "AFM_MTPAPR25_II_Q4A",
+    source: "ICAI Mock Test Paper - Series II, April 2025",
+    chapter_name: "Portfolio Management",
+    placement: 4,
+    marks: 8,
+    question_html: `
+      <p>Suppose that economy A is growing rapidly and you are managing a global equity fund and so far you have invested only in developed-country stocks only. Now you have decided to add stocks of economy A to your portfolio. The table below shows the expected rates of return, standard deviations, and correlation coefficients (all estimates are for aggregate stock market of developed countries and stock market of Economy A).</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Developed Country Stocks</th>
+            <th>Stocks of Economy A</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Expected rate of return (annualized percentage)</td>
+            <td>10</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Risk [Annualized Standard Deviation (%)]</td>
+            <td>16</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Correlation Coefficient (&rho;)</td>
+            <td colspan="2" style="text-align: center;">0.30</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Assuming the risk-free interest rate to be 3%, you are required to determine:</p>
+      <ol type="i">
+        <li>What percentage of your portfolio should you allocate to stocks of Economy A if you want to increase the expected rate of return on your portfolio by 0.5%?</li>
+        <li>What will be the standard deviation of your portfolio assuming that stocks of Economy A are included in the portfolio as calculated above?</li>
+        <li>Also show how well the Fund will be compensated for the risk undertaken due to inclusion of stocks of Economy A in the portfolio comparing with investment in developed country’s stocks only.</li>
+      </ol>
+    `,
+    solution_html: `
+      <p><strong>(i) Allocation to Stocks of Economy A:</strong></p>
+      <p>Target Expected Return = Existing Return + 0.5% = 10.0% + 0.5% = <strong>10.5%</strong></p>
+      <p>Let the weight of stocks of Economy A be <em>w</em>, then the weight of developed-country stocks is (1 – <em>w</em>):</p>
+      <p>(1 – <em>w</em>) × 10.0 + <em>w</em> × 15.0 = 10.5</p>
+      <p>10.0 – 10.0<em>w</em> + 15.0<em>w</em> = 10.5</p>
+      <p>5.0<em>w</em> = 0.5 &rArr; <em>w</em> = 0.10 or <strong>10%</strong></p>
+      <p>Therefore, <strong>10%</strong> of the portfolio should be allocated to stocks of Economy A, and <strong>90%</strong> to developed country stocks.</p>
+
+      <p><strong>(ii) Standard Deviation of the Portfolio:</strong></p>
+      <p>Portfolio Variance (&sigma;<sub>p</sub><sup>2</sup>) = w<sub>1</sub><sup>2</sup>&sigma;<sub>1</sub><sup>2</sup> + w<sub>2</sub><sup>2</sup>&sigma;<sub>2</sub><sup>2</sup> + 2w<sub>1</sub>w<sub>2</sub>&sigma;<sub>1</sub>&sigma;<sub>2</sub>&rho;<sub>12</sub></p>
+      <p>&sigma;<sub>p</sub><sup>2</sup> = (0.90)<sup>2</sup>(0.16)<sup>2</sup> + (0.10)<sup>2</sup>(0.30)<sup>2</sup> + 2(0.90)(0.10)(0.16)(0.30)(0.30)</p>
+      <p>&sigma;<sub>p</sub><sup>2</sup> = (0.81 × 0.0256) + (0.01 × 0.09) + 2(0.90)(0.10)(0.16)(0.30)(0.30)</p>
+      <p>&sigma;<sub>p</sub><sup>2</sup> = 0.020736 + 0.0009 + 0.002592 = <strong>0.024228 &asymp; 0.02423</strong></p>
+      <p>Standard Deviation (&sigma;<sub>p</sub>) = &radic;0.02423 = 0.15565 or <strong>15.6%</strong></p>
+
+      <p><strong>(iii) Compensation for Risk (Sharpe Ratio Comparison):</strong></p>
+      <p>Sharpe Ratio = (Expected Return – Risk-Free Rate) / Standard Deviation</p>
+      <ul>
+        <li>
+          <strong>Investment only in Developed Countries:</strong><br/>
+          Sharpe Ratio = (10 – 3) / 16 = 7 / 16 = <strong>0.437</strong>
+        </li>
+        <li>
+          <strong>With inclusion of stocks of Economy A:</strong><br/>
+          Sharpe Ratio = (10.5 – 3) / 15.6 = 7.5 / 15.6 = <strong>0.481</strong>
+        </li>
+      </ul>
+      <p><strong>Conclusion:</strong> The Sharpe ratio improves by approximately <strong>0.044</strong> (from 0.437 to 0.481), indicating that the portfolio generates a higher risk-adjusted return when stocks of Economy A are included, even with diversification lowering the total portfolio risk below that of developed stocks alone.</p>
+    `
+  },
+  {
+    question_id: "AFM_MTPAPR25_II_Q4B",
+    source: "ICAI Mock Test Paper - Series II, April 2025",
+    chapter_name: "Mutual Funds",
+    placement: 4,
+    marks: 6,
+    question_html: `
+      <p>On 1st April 2024, an open-ended scheme of mutual fund had 600 lakh units outstanding with Net Assets Value (NAV) of ₹ 37.50. At the end of April, it issued 12 lakh units at opening NAV plus 2% load, adjusted for dividend equalization. At the end of May, 6 Lakh units were repurchased at opening NAV less 2% exit load adjusted for dividend equalization. At the end of June, 70% of its available income was distributed.</p>
+      <p>In respect of April-June quarter of 2024, the following additional information is available:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>₹ in lakh</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Portfolio value appreciation</td>
+            <td>1701.88</td>
+          </tr>
+          <tr>
+            <td>Income of April 2024</td>
+            <td>91.800</td>
+          </tr>
+          <tr>
+            <td>Income for May 2024</td>
+            <td>137.700</td>
+          </tr>
+          <tr>
+            <td>Income for June 2024</td>
+            <td>181.800</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>You are required to calculate:</p>
+      <ol type="i">
+        <li>Income available for distribution;</li>
+        <li>Issue price at the end of April;</li>
+        <li>Repurchase price at the end of May; and</li>
+        <li>Net Asset Value (NAV) as on 30th June 2024.</li>
+      </ol>
+      <p><em>Note: Wherever required round off calculations up to 4 decimal points.</em></p>
+    `,
+    solution_html: `
+      <p><strong>(i) Calculation of Income Available for Distribution:</strong></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Units (Lakh)</th>
+            <th>Per Unit (₹)</th>
+            <th>Total (₹ in Lakh)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Income from April (₹ 91.80 / 600)</td>
+            <td>600</td>
+            <td>0.1530</td>
+            <td>91.8000</td>
+          </tr>
+          <tr>
+            <td>Add: Dividend equalization collected on fresh issue (12 × 0.1530)</td>
+            <td>12</td>
+            <td>0.1530</td>
+            <td>1.8360</td>
+          </tr>
+          <tr>
+            <td><strong>Total available at end of April</strong></td>
+            <td><strong>612</strong></td>
+            <td><strong>0.1530</strong></td>
+            <td><strong>93.6360</strong></td>
+          </tr>
+          <tr>
+            <td>Add: Income from May (₹ 137.70 / 612 = ₹ 0.2250)</td>
+            <td>—</td>
+            <td>0.2250</td>
+            <td>137.7000</td>
+          </tr>
+          <tr>
+            <td><strong>Total before repurchase</strong></td>
+            <td><strong>612</strong></td>
+            <td><strong>0.3780</strong></td>
+            <td><strong>231.3360</strong></td>
+          </tr>
+          <tr>
+            <td>Less: Dividend equalization paid on repurchase (6 × 0.3780)</td>
+            <td>(6)</td>
+            <td>0.3780</td>
+            <td>(2.2680)</td>
+          </tr>
+          <tr>
+            <td><strong>Balance at end of May</strong></td>
+            <td><strong>606</strong></td>
+            <td><strong>0.3780</strong></td>
+            <td><strong>229.0680</strong></td>
+          </tr>
+          <tr>
+            <td>Add: Income from June (₹ 181.80 / 606 = ₹ 0.3000)</td>
+            <td>—</td>
+            <td>0.3000</td>
+            <td>181.8000</td>
+          </tr>
+          <tr>
+            <td><strong>Total Income Available for Distribution</strong></td>
+            <td><strong>606</strong></td>
+            <td><strong>0.6780</strong></td>
+            <td><strong>410.8680</strong></td>
+          </tr>
+          <tr>
+            <td>Less: Dividend Paid (70% of ₹ 410.8680 lakh)</td>
+            <td>606</td>
+            <td>0.4746</td>
+            <td>(287.6076)</td>
+          </tr>
+          <tr>
+            <td><strong>Retained / Undistributed Income</strong></td>
+            <td><strong>606</strong></td>
+            <td><strong>0.2034</strong></td>
+            <td><strong>123.2604</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>(ii) Calculation of Issue Price at the end of April 2024:</strong></p>
+      <table>
+        <tbody>
+          <tr>
+            <td>Opening NAV</td>
+            <td>₹ 37.5000</td>
+          </tr>
+          <tr>
+            <td>Add: Entry Load (2% of ₹ 37.5000)</td>
+            <td>₹ 0.7500</td>
+          </tr>
+          <tr>
+            <td>Subtotal</td>
+            <td>₹ 38.2500</td>
+          </tr>
+          <tr>
+            <td>Add: Dividend Equalization paid on Issue Price</td>
+            <td>₹ 0.1530</td>
+          </tr>
+          <tr>
+            <td><strong>Issue Price at the end of April</strong></td>
+            <td><strong>₹ 38.4030</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>(iii) Calculation of Repurchase Price at the end of May 2024:</strong></p>
+      <table>
+        <tbody>
+          <tr>
+            <td>Opening NAV</td>
+            <td>₹ 37.5000</td>
+          </tr>
+          <tr>
+            <td>Less: Exit Load (2% of ₹ 37.5000)</td>
+            <td>(₹ 0.7500)</td>
+          </tr>
+          <tr>
+            <td>Subtotal</td>
+            <td>₹ 36.7500</td>
+          </tr>
+          <tr>
+            <td>Add: Dividend Equalization paid on Repurchase</td>
+            <td>₹ 0.3780</td>
+          </tr>
+          <tr>
+            <td><strong>Repurchase Price at the end of May</strong></td>
+            <td><strong>₹ 37.1280</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>(iv) Net Asset Value (NAV) as on 30th June 2024:</strong></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Amount (₹ in Lakh)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Opening Net Asset Value (₹ 37.50 × 600 lakh units)</td>
+            <td>22,500.0000</td>
+          </tr>
+          <tr>
+            <td>Add: Portfolio Value Appreciation</td>
+            <td>1,701.8800</td>
+          </tr>
+          <tr>
+            <td>Add: Issue of Fresh Units (12 lakh × ₹ 38.4030)</td>
+            <td>460.8360</td>
+          </tr>
+          <tr>
+            <td>Add: Total Income Received (₹ 91.80 + ₹ 137.70 + ₹ 181.80)</td>
+            <td>411.3000</td>
+          </tr>
+          <tr>
+            <td><strong>Total Gross Assets</strong></td>
+            <td><strong>25,074.0160</strong></td>
+          </tr>
+          <tr>
+            <td>Less: Units Repurchased (6 lakh × ₹ 37.1280)</td>
+            <td>(222.7680)</td>
+          </tr>
+          <tr>
+            <td>Less: Income Distributed</td>
+            <td>(287.6076)</td>
+          </tr>
+          <tr>
+            <td><strong>Closing Net Asset Value</strong></td>
+            <td><strong>24,563.6404</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Closing Units = 600 + 12 – 6 = <strong>606 lakh units</strong></p>
+      <p>Closing NAV per unit = ₹ 24,563.6404 lakh / 606 lakh = <strong>₹ 40.5341</strong></p>
+    `
+  },
+  {
+    question_id: "AFM_MTPAPR25_II_Q6A",
+    source: "ICAI Mock Test Paper - Series II, April 2025",
+    chapter_name: "International Financial Management",
+    placement: 6,
+    marks: 6,
+    question_html: `
+      <p>XY Limited is engaged in large retail business in India. It is contemplating for expansion into a country of Africa by acquiring a group of stores having the same line of operation as that of India.</p>
+      <p>The exchange rate for the currency of the proposed African country is extremely volatile. Rate of inflation is presently 40% a year. Inflation in India is currently 10% a year. Management of XY Limited expects these rates likely to continue for the foreseeable future.</p>
+      <p>Estimated projected cash flows, in nominal terms, in India as well as African country for the first three years of the project are as follows:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Year – 0</th>
+            <th>Year – 1</th>
+            <th>Year – 2</th>
+            <th>Year – 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cash flows in Indian ₹ ('000)</td>
+            <td>-2,00,000</td>
+            <td>-6,600</td>
+            <td>-10,000</td>
+            <td>-13,000</td>
+          </tr>
+          <tr>
+            <td>Cash flows in African Rands ('000)</td>
+            <td>-8,00,000</td>
+            <td>+2,80,000</td>
+            <td>+5,50,000</td>
+            <td>+10,00,000</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>XY Ltd. assumes the year 3 nominal cash flows will continue to be earned each year indefinitely. It evaluates all investments using nominal cash flows and a nominal discounting rate. The present exchange rate is African Rand 6 to ₹ 1.</p>
+      <p>You are required to calculate the net present value of the proposed investment considering the fact that the company uses discounting rate of 10.80% to evaluate any project but to reflect high risk of this project it is considering to adjust a risk premium of 8.30%.</p>
+      <p><strong>Note:</strong></p>
+      <ol>
+        <li>Use PV Factors up to 3 decimal points.</li>
+        <li>Use Exchange Rates up to 4 decimal points.</li>
+        <li>Compute final calculation in multiple of ₹ '000 and round off them up to zero.</li>
+        <li>Ignore taxation.</li>
+      </ol>
+    `,
+    solution_html: `
+      <p><strong>1. Computation of Project Discount Rate:</strong></p>
+      <p>(1 + Risk Premium) × (1 + Normal Discounting Rate) = (1 + Required Rate)</p>
+      <p>(1 + 0.083) × (1 + 0.108) = 1.083 × 1.108 = 1.199964 &approx; 1.20</p>
+      <p><strong>Required Rate = 20%</strong></p>
+
+      <p><strong>2. Expected Exchange Rates (African Rand / ₹) using Inflation Differential:</strong></p>
+      <ul>
+        <li>Year 0: African Rand 6.0000 / ₹ 1</li>
+        <li>Year 1: 6.0000 × (1.40 / 1.10) = <strong>7.6364</strong></li>
+        <li>Year 2: 6.0000 × (1.40 / 1.10)<sup>2</sup> = 6.0000 × (1.96 / 1.21) = <strong>9.7190</strong></li>
+        <li>Year 3: 6.0000 × (1.40 / 1.10)<sup>3</sup> = 6.0000 × (2.744 / 1.331) = <strong>12.3696</strong></li>
+      </ul>
+
+      <p><strong>3. Calculation of Net Present Value (NPV):</strong></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Particulars</th>
+            <th>Year 0</th>
+            <th>Year 1</th>
+            <th>Year 2</th>
+            <th>Year 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Inflation factor in India</td>
+            <td>1.00</td>
+            <td>1.10</td>
+            <td>1.21</td>
+            <td>1.331</td>
+          </tr>
+          <tr>
+            <td>Inflation factor in Africa</td>
+            <td>1.00</td>
+            <td>1.40</td>
+            <td>1.96</td>
+            <td>2.744</td>
+          </tr>
+          <tr>
+            <td>Exchange Rate (Rand / ₹)</td>
+            <td>6.0000</td>
+            <td>7.6364</td>
+            <td>9.7190</td>
+            <td>12.3696</td>
+          </tr>
+          <tr>
+            <td>Cash Flows in ₹ '000 Nominal (1)</td>
+            <td>-2,00,000</td>
+            <td>-6,600</td>
+            <td>-10,000</td>
+            <td>-13,000</td>
+          </tr>
+          <tr>
+            <td>Cash Flows in African Rand '000 Nominal</td>
+            <td>-8,00,000</td>
+            <td>2,80,000</td>
+            <td>5,50,000</td>
+            <td>10,00,000</td>
+          </tr>
+          <tr>
+            <td>Rand CF converted into ₹ '000 (2)</td>
+            <td>-1,33,333</td>
+            <td>36,666</td>
+            <td>56,590</td>
+            <td>80,843</td>
+          </tr>
+          <tr>
+            <td><strong>Net Cash Flow in ₹ '000 (1) + (2)</strong></td>
+            <td><strong>-3,33,333</strong></td>
+            <td><strong>30,066</strong></td>
+            <td><strong>46,590</strong></td>
+            <td><strong>67,843</strong></td>
+          </tr>
+          <tr>
+            <td>PVF @ 20%</td>
+            <td>1.000</td>
+            <td>0.833</td>
+            <td>0.694</td>
+            <td>0.579</td>
+          </tr>
+          <tr>
+            <td><strong>Present Value (₹ '000)</strong></td>
+            <td><strong>-3,33,333</strong></td>
+            <td><strong>25,045</strong></td>
+            <td><strong>32,333</strong></td>
+            <td><strong>39,281</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>4. NPV Summary:</strong></p>
+      <p>NPV of Cash Flows for Years 0 to 3 = -3,33,333 + 25,045 + 32,333 + 39,281 = <strong>- ₹ 2,36,674 ('000)</strong></p>
+      <p>PV of Terminal Value at Year 3 = (₹ 67,843 / 0.20) × 0.579 = <strong>₹ 1,96,405 ('000)</strong></p>
+      <p><strong>Total NPV of the Project = -2,36,674 + 1,96,405 = - ₹ 40,269 ('000)</strong></p>
+      <p><em>Conclusion: Since the Net Present Value is negative (-₹ 4,02,69,000), the expansion project should not be undertaken.</em></p>
+    `
+  },
+  {
+    question_id: "AFM_MTPAPR25_II_Q6B",
+    source: "ICAI Mock Test Paper - Series II, April 2025",
+    chapter_name: "Advanced Capital Budgeting Decisions",
+    placement: 6,
+    marks: 4,
+    question_html: `
+      <p>A company is considering Projects X and Y with following information:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Expected NPV (₹)</th>
+            <th>Standard Deviation (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Project X</td>
+            <td>1,22,000</td>
+            <td>90,000</td>
+          </tr>
+          <tr>
+            <td>Project Y</td>
+            <td>2,25,000</td>
+            <td>1,20,000</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Required:</strong></p>
+      <ol type="i">
+        <li>Which project will you recommend based on the above data?</li>
+        <li>Explain whether your opinion will change, if you use coefficient of variation as a measure of risk.</li>
+        <li>Which measure is more appropriate in this situation and why?</li>
+      </ol>
+    `,
+    solution_html: `
+      <p><strong>(i) Recommendation based on Standard Deviation:</strong></p>
+      <p>Standard deviation measures the absolute dispersion/risk of cash flows. On the basis of standard deviation alone, <strong>Project X</strong> will be chosen because it has a lower standard deviation (₹ 90,000) compared to Project Y (₹ 1,20,000), indicating lower total risk.</p>
+
+      <p><strong>(ii) Evaluation using Coefficient of Variation (C.V.):</strong></p>
+      <p>Coefficient of Variation (C.V.) = Standard Deviation / Expected NPV</p>
+      <ul>
+        <li><strong>CV<sub>X</sub>:</strong> ₹ 90,000 / ₹ 1,22,000 = <strong>0.738</strong></li>
+        <li><strong>CV<sub>Y</sub>:</strong> ₹ 1,20,000 / ₹ 2,25,000 = <strong>0.533</strong></li>
+      </ul>
+      <p><strong>Conclusion:</strong> Yes, the opinion will change. Project X has higher risk per unit of return (0.738) compared to Project Y (0.533). Therefore, on the basis of relative risk (Coefficient of Variation), <strong>Project Y should be accepted</strong>.</p>
+
+      <p><strong>(iii) Most Appropriate Measure:</strong></p>
+      <p>In such conflicting situations, the <strong>NPV method</strong> is the most appropriate criterion because it is directly compatible with the core corporate objective of <strong>shareholder wealth maximization</strong> and fully accounts for the time value of money. Project Y delivers substantially higher net value addition (₹ 2,25,000 vs. ₹ 1,22,000) with a lower relative risk per rupee of return.</p>
+    `
+  },
+  {
+    question_id: "AFM_MTPAPR25_II_Q6C",
+    source: "ICAI Mock Test Paper - Series II, April 2025",
+    chapter_name: "Startup Finance",
+    placement: 6,
+    marks: 4,
+    question_html: `
+      <p>What are the advantages of bringing Venture Capital in the company?</p>
+    `,
+    solution_html: `
+      <p>A <strong>Venture Capital Fund</strong> is an investment vehicle that manages the pooled capital of investors seeking to invest in startup firms and early-stage businesses with exceptional growth potential. Venture capital is equity or quasi-equity provided by professional investors who, alongside company management, actively nurture high-growth enterprises.</p>
+      
+      <p><strong>Key Advantages of Bringing Venture Capital into a Company:</strong></p>
+      <ul>
+        <li><strong>Long-term Equity Finance:</strong> It injects patient, long-term equity capital without immediate debt servicing burdens, providing a solid capital base to fund future growth.</li>
+        <li><strong>Risk and Reward Sharing:</strong> The venture capitalist acts as an active business partner, sharing both business risks and rewards, aligning their returns directly with business success and capital appreciation.</li>
+        <li><strong>Management &amp; Strategic Assistance:</strong> Venture capitalists offer strategic direction, practical operational guidance, and governance support based on extensive experience across portfolio companies in similar growth phases.</li>
+        <li><strong>Extensive Business Network:</strong> VCs provide access to a valuable network of industry contacts, potential clients, suppliers, talent pools, and strategic partners.</li>
+        <li><strong>Follow-on Funding Capabilities:</strong> Established VC firms can participate in subsequent financing rounds (Series A, B, C, etc.) to sustain capital requirements as the venture scales.</li>
+        <li><strong>Facilitation of Exit / IPO:</strong> Venture capitalists possess deep expertise in restructuring and preparing companies for Initial Public Offerings (IPOs) on domestic or international exchanges (e.g., NASDAQ), or facilitating lucrative trade sales/M&amp;A exits.</li>
+      </ul>
+    `
+  },
 
 ];
