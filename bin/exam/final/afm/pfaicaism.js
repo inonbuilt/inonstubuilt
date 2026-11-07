@@ -1,6 +1,7 @@
 const icaibookData = [
   {
     question_id: "AFM_ICAIBOOK_CH01_ILLUS_01",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Financial Policy and Corporate Strategy",
     placement: 1,
@@ -181,6 +182,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_TYK_01",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Financial Policy and Corporate Strategy",
     placement: 2,
@@ -230,6 +232,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_TYK_02",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Financial Policy and Corporate Strategy",
     placement: 3,
@@ -279,6 +282,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH02_EG_01",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Risk Management",
     placement: 1,
@@ -302,6 +306,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH02_TYK_TH_01",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Risk Management",
     placement: 2,
@@ -329,6 +334,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH02_TYK_TH_02",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Risk Management",
     placement: 3,
@@ -360,6 +366,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH02_TYK_PR_01",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Risk Management",
     placement: 4,
@@ -404,6 +411,7 @@ const icaibookData = [
 //   CHapter3
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_TH_01",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 1,
@@ -425,6 +433,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_TH_02",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 2,
@@ -449,6 +458,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_TH_03",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 3,
@@ -475,6 +485,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_TH_04",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 4,
@@ -497,6 +508,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_01",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 5,
@@ -562,6 +574,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_02",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 6,
@@ -615,6 +628,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_03",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 7,
@@ -657,6 +671,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_04",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 8,
@@ -716,6 +731,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_05",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 9,
@@ -785,6 +801,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_06",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 10,
@@ -853,6 +870,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_07",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 11,
@@ -928,6 +946,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_08",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 12,
@@ -984,6 +1003,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_09",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 13,
@@ -1040,6 +1060,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_10",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 14,
@@ -1079,6 +1100,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_11",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 15,
@@ -1131,6 +1153,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_12",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 16,
@@ -1180,6 +1203,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_13",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 17,
@@ -1222,6 +1246,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_14",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 18,
@@ -1280,6 +1305,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_15",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 19,
@@ -1354,6 +1380,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_16",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 20,
@@ -1414,6 +1441,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_17",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 21,
@@ -1457,6 +1485,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_18",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 22,
@@ -1507,6 +1536,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_19",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 23,
@@ -1569,6 +1599,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_20",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 24,
@@ -1632,6 +1663,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_21",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 25,
@@ -1667,6 +1699,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_22",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 26,
@@ -1721,6 +1754,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_23",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 27,
@@ -1796,6 +1830,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_24",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 28,
@@ -1825,6 +1860,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_25",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 29,
@@ -1852,6 +1888,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_26",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 30,
@@ -1903,6 +1940,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_TYK_PR_27",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 31,
@@ -1984,6 +2022,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_ILLUS_01",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 1,
@@ -2043,6 +2082,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_ILLUS_02",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 2,
@@ -2153,6 +2193,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_ILLUS_03",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 3,
@@ -2209,6 +2250,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_ILLUS_04",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 4,
@@ -2260,6 +2302,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_ILLUS_05",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 5,
@@ -2311,6 +2354,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_ILLUS_06",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 6,
@@ -2372,6 +2416,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_ILLUS_07",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 7,
@@ -2468,6 +2513,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_ILLUS_08",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 8,
@@ -2504,6 +2550,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_ILLUS_09",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 9,
@@ -2570,6 +2617,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_ILLUS_10",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 10,
@@ -2639,6 +2687,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_ILLUS_11",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 11,
@@ -2685,6 +2734,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_ILLUS_12",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 12,
@@ -2723,6 +2773,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH03_ILLUS_13",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 13,
@@ -2788,6 +2839,7 @@ const icaibookData = [
 //   chapter4
   {
     question_id: "AFM_ICAIBOOK_CH04_TYK_TH_01",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Security Analysis",
     placement: 1,
@@ -2816,6 +2868,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH04_TYK_TH_02",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Security Analysis",
     placement: 2,
@@ -2851,6 +2904,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH04_TYK_TH_03",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Security Analysis",
     placement: 3,
@@ -2886,6 +2940,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH04_TYK_TH_04",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Security Analysis",
     placement: 4,
@@ -2923,6 +2978,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH04_TYK_PR_01",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Analysis",
     placement: 5,
@@ -3048,6 +3104,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH04_TYK_PR_02",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Analysis",
     placement: 6,
@@ -3156,6 +3213,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_TH_01",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 1,
@@ -3172,6 +3230,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_TH_02",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 2,
@@ -3191,6 +3250,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_01",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 3,
@@ -3218,6 +3278,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_02",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 4,
@@ -3269,6 +3330,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_03",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 5,
@@ -3297,6 +3359,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_04",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 6,
@@ -3332,6 +3395,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_05",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 7,
@@ -3365,6 +3429,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_06",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 8,
@@ -3403,6 +3468,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_07",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 9,
@@ -3452,6 +3518,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_08",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 10,
@@ -3469,6 +3536,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_09",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 11,
@@ -3490,6 +3558,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_10",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 12,
@@ -3520,6 +3589,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_11",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 13,
@@ -3556,6 +3626,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_12",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 14,
@@ -3594,6 +3665,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_13",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 15,
@@ -3611,6 +3683,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_14",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 16,
@@ -3664,6 +3737,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_15",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 17,
@@ -3703,6 +3777,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_16",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 18,
@@ -3738,6 +3813,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_17",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 19,
@@ -3768,6 +3844,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_18",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 20,
@@ -3803,6 +3880,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_19",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 21,
@@ -3836,6 +3914,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_20",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 22,
@@ -3860,6 +3939,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_21",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 23,
@@ -3891,6 +3971,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_22",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 24,
@@ -3908,6 +3989,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_23",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 25,
@@ -3930,6 +4012,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_24",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 26,
@@ -3962,6 +4045,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_25",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 27,
@@ -3996,6 +4080,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_26",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 28,
@@ -4047,6 +4132,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_27",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 29,
@@ -4083,6 +4169,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_28",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 30,
@@ -4099,6 +4186,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_29",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 31,
@@ -4123,6 +4211,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_30",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 32,
@@ -4138,6 +4227,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH05_TYK_PR_31",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Security Valuation",
     placement: 33,
@@ -4170,6 +4260,7 @@ const icaibookData = [
   // chapter6
   {
     question_id: "AFM_ICAIBOOK_CH06_ILLUS_01",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 1,
@@ -4229,6 +4320,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_ILLUS_02",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 2,
@@ -4251,6 +4343,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_ILLUS_03",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 3,
@@ -4282,6 +4375,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_ILLUS_04",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 4,
@@ -4348,6 +4442,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_ILLUS_05",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 5,
@@ -4369,6 +4464,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_ILLUS_06",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 6,
@@ -4452,6 +4548,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_ILLUS_07",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 7,
@@ -4482,6 +4579,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_ILLUS_08",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 8,
@@ -4538,6 +4636,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_ILLUS_09",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 9,
@@ -4571,6 +4670,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_TH_01",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 10,
@@ -4590,6 +4690,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_TH_02",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 11,
@@ -4612,6 +4713,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_TH_03",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 12,
@@ -4639,6 +4741,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_01",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 13,
@@ -4711,6 +4814,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_02",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 14,
@@ -4779,6 +4883,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_03",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 15,
@@ -4858,6 +4963,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_04",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 16,
@@ -4912,6 +5018,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_05",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 17,
@@ -4963,6 +5070,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_06",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 18,
@@ -5045,6 +5153,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_07",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 19,
@@ -5097,6 +5206,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_08",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 20,
@@ -5199,6 +5309,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_09",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 21,
@@ -5286,6 +5397,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_10",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 22,
@@ -5331,6 +5443,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_11",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 23,
@@ -5386,6 +5499,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_12",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 24,
@@ -5434,6 +5548,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_13",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 25,
@@ -5497,6 +5612,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_14",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 26,
@@ -5561,6 +5677,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_15",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 27,
@@ -5621,6 +5738,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_16",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 28,
@@ -5658,6 +5776,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_17",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 29,
@@ -5756,6 +5875,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_18",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 30,
@@ -5774,6 +5894,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_19",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 31,
@@ -5805,6 +5926,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_20",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 32,
@@ -5843,6 +5965,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_21",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 33,
@@ -5878,6 +6001,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_22",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 34,
@@ -5954,6 +6078,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_23",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 35,
@@ -5985,6 +6110,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_24",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 36,
@@ -6022,6 +6148,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_25",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 37,
@@ -6064,6 +6191,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_26",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 38,
@@ -6146,6 +6274,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_27",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 39,
@@ -6200,6 +6329,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_28",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 40,
@@ -6253,6 +6383,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_29",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 41,
@@ -6298,6 +6429,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_30",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 42,
@@ -6339,6 +6471,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_31",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 43,
@@ -6393,6 +6526,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_32",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 44,
@@ -6465,6 +6599,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_33",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 45,
@@ -6527,6 +6662,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_34",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 46,
@@ -6585,6 +6721,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_35",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 47,
@@ -6677,6 +6814,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_36",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 48,
@@ -6730,6 +6868,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_37",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 49,
@@ -6771,6 +6910,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_38",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 50,
@@ -6830,6 +6970,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_39",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 51,
@@ -6861,6 +7002,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_40",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 52,
@@ -6922,6 +7064,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_41",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 53,
@@ -6980,6 +7123,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH06_TYK_PR_42",
+    question_type: "practical",
     source: "ICAI Study Material",
     chapter_name: "Portfolio Management",
     placement: 54,
@@ -7090,6 +7234,7 @@ const icaibookData = [
   // chapter7
   {
     question_id: "AFM_ICAIBOOK_CH07_TYK_TH_01",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Securitization",
     // placement: 1,
@@ -7137,6 +7282,7 @@ const icaibookData = [
   },
   {
     question_id: "AFM_ICAIBOOK_CH07_TYK_TH_02",
+    question_type: "theory",
     source: "ICAI Study Material",
     chapter_name: "Securitization",
     // placement: 2,
@@ -7183,7 +7329,11868 @@ const icaibookData = [
         <li>These prolonged enforcement timeframes make mortgage-backed securitization (MBS) less attractive to risk-averse institutional lenders[cite: 5].</li>
       </ul>
     `
-  }
+  },
+  // chapter8
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_TH_01",
+    question_type: "theory",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 1,
+    marks: 6,
+    question_html: `
+      <p>Explain how to establish a Mutual Fund.</p>
+    `,
+    solution_html: `
+      <p>In India, a Mutual Fund must be registered with the <strong>Securities and Exchange Board of India (SEBI)</strong> under the <em>SEBI (Mutual Funds) Regulations, 1996</em> before collecting funds from the public. The institutional framework consists of the following structure:</p>
+
+      <h4>1. Sponsor</h4>
+      <ul>
+        <li>The sponsor initiates the mutual fund, akin to a company promoter, and provides the initial seed capital.</li>
+        <li>Must be a body corporate carrying on business in financial services for a minimum of <strong>5 years</strong>, possess a track record of financial soundness, and be a &ldquo;fit and proper&rdquo; person under SEBI guidelines.</li>
+        <li>Must contribute at least <strong>40%</strong> to the net worth of the Asset Management Company (AMC).</li>
+      </ul>
+
+      <h4>2. Trust and Board of Trustees</h4>
+      <ul>
+        <li>The mutual fund is constituted as a Trust under the <em>Indian Trusts Act, 1882</em> through a registered Trust Deed executed by the sponsor in favor of the trustees.</li>
+        <li>The Trustees hold the assets of the fund in trust for the exclusive benefit of the unit holders.</li>
+        <li>At least <strong>two-thirds (66.67%)</strong> of the directors of the Trustee Company or Board of Trustees must be independent (unassociated with the sponsor)[cite: 6].</li>
+      </ul>
+
+      <h4>3. Asset Management Company (AMC)</h4>
+      <ul>
+        <li>An approved AMC is appointed by the Trustees to manage the fund's corpus and float/operate schemes[cite: 6].</li>
+        <li>The AMC must be registered as a public limited company with a minimum net worth of <strong>₹ 100 crores</strong> (previously ₹ 50 crores)[cite: 6].</li>
+        <li>At least <strong>50%</strong> of the board of directors of the AMC must be independent directors[cite: 6].</li>
+        <li>The AMC charges investment management and advisory fees within the statutory ceilings prescribed under SEBI regulations[cite: 6].</li>
+      </ul>
+
+      <h4>4. Custodian</h4>
+      <ul>
+        <li>A SEBI-registered independent custodian is appointed to maintain safe custody of the physical and dematerialized securities held across schemes[cite: 6].</li>
+        <li>The custodian must be entirely independent of both the sponsor and the AMC[cite: 6].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_TH_02",
+    question_type: "theory",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 2,
+    marks: 6,
+    question_html: `
+      <p>What are the advantages of investing in Mutual Funds?[cite: 6]</p>
+    `,
+    solution_html: `
+      <p>Investing in mutual funds provides retail and institutional investors with several distinct benefits[cite: 6]:</p>
+      <ul>
+        <li><strong>Professional Management:</strong> Investments are researched, monitored, and executed by full-time, experienced fund managers supported by qualified analysts[cite: 6].</li>
+        <li><strong>Diversification:</strong> Mutual funds pool capital to purchase a broad basket of securities across diverse sectors, eliminating unsystematic risk even with small investible sums (e.g., ₹ 500 via SIP)[cite: 6].</li>
+        <li><strong>Low Cost &amp; Economies of Scale:</strong> Pooled buying lowers transaction charges and brokerage costs[cite: 6]. SEBI mandates strict expense ratio caps (e.g., maximum 2.50% for equity funds), protecting investors from excessive fees[cite: 6].</li>
+        <li><strong>Liquidity:</strong> Open-ended funds offer direct purchase and redemption at daily NAV-based prices, while closed-end units trade on stock exchanges[cite: 6].</li>
+        <li><strong>Tax Efficiency:</strong> Mutual funds do not pay internal capital gains tax upon portfolio churning[cite: 6]. Specific schemes like ELSS offer deductions under Section 80C of the Income-tax Act[cite: 6].</li>
+        <li><strong>Transparency &amp; Strong Regulation:</strong> Funds must publish daily NAVs, disclose full portfolio holdings periodically, and operate under stringent SEBI oversight[cite: 6].</li>
+        <li><strong>Operational Convenience &amp; Flexibility:</strong> Features like Systematic Investment Plans (SIP), Systematic Withdrawal Plans (SWP), and Systematic Transfer Plans (STP) allow tailored cash flow management[cite: 6].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_01",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 3,
+    marks: 4,
+    question_html: `
+      <p>Mr. A can earn a return of 16 per cent by investing in equity shares on his own[cite: 6]. Now he is considering a recently announced equity-based mutual fund scheme in which initial expenses are 5.5 per cent and annual recurring expenses are 1.5 per cent[cite: 6]. How much should the mutual fund earn to provide Mr. A a return of 16 per cent?[cite: 6]</p>
+    `,
+    solution_html: `
+      <h4>Formula</h4>
+      <p>$$R_2 = \frac{1}{1 - \text{Initial Expenses}} \times R_1 + \text{Annual Recurring Expenses}$$[cite: 6]</p>
+      <p>Where:</p>
+      <ul>
+        <li>$R_1$ = Personal return required by investor = $16\%$[cite: 6]</li>
+        <li>Initial issue expenses = $5.5\% = 0.055$[cite: 6]</li>
+        <li>Annual recurring expenses = $1.5\%$[cite: 6]</li>
+      </ul>
+
+      <h4>Computation</h4>
+      <p>$$R_2 = \left(\frac{1}{1 - 0.055} \times 16\%\right) + 1.5\% = \left(\frac{1}{0.945} \times 16\%\right) + 1.5\%$$[cite: 6]</p>
+      <p>$$R_2 = 16.9312\% + 1.50\% = \mathbf{18.43\%}$$[cite: 6]</p>
+      <p>The Mutual Fund must earn a gross return of <strong>18.43%</strong> to deliver a net return of 16% to Mr. A[cite: 6].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_02",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 4,
+    marks: 4,
+    question_html: `
+      <p>The unit price of Equity Linked Savings Scheme (ELSS) of a mutual fund is ₹ 10/-[cite: 6]. The public offer price (POP) of the unit is ₹ 10.204 and the redemption price is ₹ 9.80[cite: 6].</p>
+      <p>Calculate[cite: 6]:</p>
+      <ol type="i">
+        <li>Front-end Load[cite: 6]</li>
+        <li>Back-end Load[cite: 6]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>Method 1: Based on Formula Defined in ICAI Text</h4>
+      <ul>
+        <li><strong>(i) Front-End Load ($F$):</strong>
+          $$\text{Public Offer Price} = \frac{\text{NAV}}{1 - F} \implies 10.204 = \frac{10}{1 - F}$$[cite: 6]
+          $$1 - F = \frac{10}{10.204} = 0.9800 \implies F = 1 - 0.9800 = \mathbf{0.0200 \text{ (2.00\%)}}$$[cite: 6]
+        </li>
+        <li><strong>(ii) Back-End Load ($B$):</strong>
+          $$\text{Redemption Price} = \frac{\text{NAV}}{1 + B} \implies 9.80 = \frac{10}{1 + B}$$[cite: 6]
+          $$1 + B = \frac{10}{9.80} = 1.0204 \implies B = \mathbf{0.0204 \text{ (2.04\%)}}$$[cite: 6]
+        </li>
+      </ul>
+
+      <hr style="margin: 12px 0; border: none; border-top: 1px dashed #ccc;" />
+
+      <h4>Alternative Method (Load Calculated as % of Base NAV)</h4>
+      <ul>
+        <li><strong>Front-End Load:</strong>
+          $$\frac{\text{Public Offer Price} - \text{NAV}}{\text{NAV}} \times 100 = \frac{10.204 - 10.00}{10.00} \times 100 = \mathbf{2.04\%}$$[cite: 6]
+        </li>
+        <li><strong>Back-End Load (Exit Load):</strong>
+          $$\frac{\text{NAV} - \text{Redemption Price}}{\text{NAV}} \times 100 = \frac{10.00 - 9.80}{10.00} \times 100 = \mathbf{2.00\%}$$[cite: 6]
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_03",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 5,
+    marks: 4,
+    question_html: `
+      <p>A mutual fund that had a net asset value of ₹ 20 at the beginning of the month made income and capital gain distributions of ₹ 0.0375 and ₹ 0.03 per share respectively during the month, and ended the month with a net asset value of ₹ 20.06[cite: 6]. Calculate the monthly return and annualized return[cite: 6].</p>
+    `,
+    solution_html: `
+      <h4>Formula</h4>
+      <p>$$r = \frac{(\text{NAV}_t - \text{NAV}_{t-1}) + I_t + G_t}{\text{NAV}_{t-1}}$$[cite: 6]</p>
+
+      <h4>Computation</h4>
+      <ul>
+        <li>Capital Appreciation $(\text{NAV}_t - \text{NAV}_{t-1}) = ₹ 20.06 - ₹ 20.00 = ₹ 0.06$[cite: 6]</li>
+        <li>Income Distribution ($I_t$) = ₹ 0.0375[cite: 6]</li>
+        <li>Capital Gain Distribution ($G_t$) = ₹ 0.0300[cite: 6]</li>
+        <li>$$\text{Total Return for Month} = 0.06 + 0.0375 + 0.0300 = ₹ 0.1275$$[cite: 6]</li>
+      </ul>
+      <p>$$\text{Monthly Return } (r) = \frac{₹ 0.1275}{₹ 20.00} \times 100 = \mathbf{0.6375\% \text{ p.m.}}$$[cite: 6]</p>
+      <p>$$\text{Annualized Return} = 0.6375\% \times 12 = \mathbf{7.65\% \text{ p.a.}}$$[cite: 6]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_04",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 6,
+    marks: 6,
+    question_html: `
+      <p>An investor purchased 300 units of a Mutual Fund at ₹ 12.25 per unit on 31st December 2009[cite: 6]. As on 31st December 2010, he received ₹ 1.25 as dividend and ₹ 1.00 as capital gains distribution per unit[cite: 6].</p>
+      <p><strong>Required:</strong></p>
+      <ol type="i">
+        <li>The return on the investment if the NAV as on 31st December 2010 is ₹ 13.00[cite: 6].</li>
+        <li>The return on the investment as on 31st December 2010 if all dividends and capital gains distributions are reinvested into additional units of the fund at ₹ 12.50 per unit[cite: 6].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Return Without Reinvestment</h4>
+      <ul>
+        <li>Capital Appreciation per unit $= ₹ 13.00 - ₹ 12.25 = ₹ 0.75$[cite: 6]</li>
+        <li>Dividend per unit = ₹ 1.25; Capital Gain Distribution per unit = ₹ 1.00[cite: 6]</li>
+        <li>Total Reward per unit $= 0.75 + 1.25 + 1.00 = ₹ 3.00$[cite: 6]</li>
+        <li>$$\text{Return on Investment} = \frac{₹ 3.00}{₹ 12.25} \times 100 = \mathbf{24.49\%}$$[cite: 6]</li>
+      </ul>
+
+      <h4>(ii) Return With Distribution Reinvestment @ ₹ 12.50 per unit</h4>
+      <ul>
+        <li>Total distributions received $= (₹ 1.25 + ₹ 1.00) \times 300 \text{ units} = ₹ 2.25 \times 300 = ₹ 675$[cite: 6]</li>
+        <li>Additional units acquired $= \frac{₹ 675}{₹ 12.50} = \mathbf{54 \text{ units}}$[cite: 6]</li>
+        <li>Total unit balance at year-end $= 300 + 54 = \mathbf{354 \text{ units}}$[cite: 6]</li>
+        <li>Total value of holding on 31.12.2010 $= 354 \text{ units} \times ₹ 13.00 = \mathbf{₹ 4,602}$[cite: 6]</li>
+        <li>Initial purchase cost $= 300 \text{ units} \times ₹ 12.25 = \mathbf{₹ 3,675}$[cite: 6]</li>
+        <li>$$\text{Net Return} = \frac{₹ 4,602 - ₹ 3,675}{₹ 3,675} \times 100 = \frac{₹ 927}{₹ 3,675} \times 100 = \mathbf{25.22\%}$$[cite: 6]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_05",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 7,
+    marks: 6,
+    question_html: `
+      <p>SBI Mutual Fund has a NAV of ₹ 8.50 at the beginning of the year[cite: 6]. At the end of the year, NAV increases to ₹ 9.10[cite: 6]. Meanwhile, the fund distributes ₹ 0.90 as dividend and ₹ 0.75 as capital gains[cite: 6].</p>
+      <ol type="i">
+        <li>What is the fund's return during the year?[cite: 6]</li>
+        <li>Had these distributions been reinvested at an average NAV of ₹ 8.75 assuming 200 units were purchased originally, what is the return?[cite: 6]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Return Without Reinvestment</h4>
+      <ul>
+        <li>Capital gain in NAV $= ₹ 9.10 - ₹ 8.50 = ₹ 0.60$[cite: 6]</li>
+        <li>Cash distributions $= ₹ 0.90 (\text{Dividend}) + ₹ 0.75 (\text{Capital Gain}) = ₹ 1.65$[cite: 6]</li>
+        <li>Total Return per unit $= 0.60 + 1.65 = ₹ 2.25$[cite: 6]</li>
+        <li>$$\text{Return on Investment} = \frac{₹ 2.25}{₹ 8.50} \times 100 = \mathbf{26.47\%}$$[cite: 6]</li>
+      </ul>
+
+      <h4>(ii) Return With Distributions Reinvested @ ₹ 8.75 per unit</h4>
+      <ul>
+        <li>Total cash distributions received $= 200 \text{ units} \times ₹ 1.65 = ₹ 330$[cite: 6]</li>
+        <li>Additional units acquired $= \frac{₹ 330}{₹ 8.75} = \mathbf{37.714 \text{ units}}$[cite: 6]</li>
+        <li>Total units at year-end $= 200 + 37.714 = \mathbf{237.714 \text{ units}}$[cite: 6]</li>
+        <li>Closing value of holding $= 237.714 \text{ units} \times ₹ 9.10 = \mathbf{₹ 2,163.20}$[cite: 6]</li>
+        <li>Initial cost of 200 units $= 200 \times ₹ 8.50 = \mathbf{₹ 1,700}$[cite: 6]</li>
+        <li>$$\text{Return} = \frac{₹ 2,163.20 - ₹ 1,700}{₹ 1,700} \times 100 = \frac{₹ 463.20}{₹ 1,700} \times 100 = \mathbf{27.25\% \text{ (or } 27.24\%)}[cite: 6]$$</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_06",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 8,
+    marks: 4,
+    question_html: `
+      <p>The following information is extracted from Steady Mutual Fund's Scheme[cite: 6]:</p>
+      <ul>
+        <li>Asset Value at the beginning of the month: ₹ 65.78[cite: 6]</li>
+        <li>Annualized return: 15%[cite: 6]</li>
+        <li>Distributions made: Income = ₹ 0.50 per unit; Capital gain = ₹ 0.32 per unit[cite: 6]</li>
+      </ul>
+      <p><strong>Required:</strong></p>
+      <ol type="i">
+        <li>Calculate the month-end net asset value (NAV) of the mutual fund scheme (rounded to two decimals)[cite: 6].</li>
+        <li>Provide a brief comment on the month-end NAV[cite: 6].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Month-End NAV Computation</h4>
+      <p>$$\text{Monthly Return } (r) = \frac{15\%}{12} = 1.25\% = 0.0125$$[cite: 6]</p>
+      <p>$$r = \frac{(\text{NAV}_t - \text{NAV}_{t-1}) + I_t + G_t}{\text{NAV}_{t-1}}$$[cite: 6]</p>
+      <p>$$0.0125 = \frac{(\text{NAV}_t - 65.78) + 0.50 + 0.32}{65.78}$$[cite: 6]</p>
+      <p>$$0.0125 \times 65.78 = \text{NAV}_t - 65.78 + 0.82 \implies 0.82225 = \text{NAV}_t - 64.96$$[cite: 6]</p>
+      <p>$$\text{NAV}_t = 64.96 + 0.82225 = \mathbf{₹ 65.78}$$[cite: 6]</p>
+
+      <h4>(ii) Comment</h4>
+      <p>The month-end NAV remains unchanged at <strong>₹ 65.78</strong>[cite: 6]. The total monthly earnings generated by the underlying portfolio were entirely paid out in the form of income and capital gain distributions (₹ 0.82), leaving the capital base intact[cite: 6].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_07",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 9,
+    marks: 6,
+    question_html: `
+      <p>Cinderella Mutual Fund has the following assets in Scheme Rudolf at the close of business on 31st March 2014[cite: 6]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Company</th>
+              <th style="padding:6px; border:1px solid #ddd;">No. of Shares</th>
+              <th style="padding:6px; border:1px solid #ddd;">Market Price Per Share (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Nairobi Ltd.</td><td>25,000</td><td>20</td></tr>
+            <tr><td>Dakar Ltd.</td><td>35,000</td><td>300</td></tr>
+            <tr><td>Senegal Ltd.</td><td>29,000</td><td>380</td></tr>
+            <tr><td>Cairo Ltd.</td><td>40,000</td><td>500</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The total number of units of Scheme Rudolf are 10 lakhs[cite: 6]. The scheme has accrued expenses of ₹ 2,50,000 and other liabilities of ₹ 2,00,000[cite: 6]. Calculate the NAV per unit[cite: 6].</p>
+    `,
+    solution_html: `
+      <h4>1. Market Value of Portfolio Investments</h4>
+      <ul>
+        <li>Nairobi Ltd.: $25,000 \times ₹ 20 = ₹ 5,00,000$[cite: 6]</li>
+        <li>Dakar Ltd.: $35,000 \times ₹ 300 = ₹ 1,05,00,000$[cite: 6]</li>
+        <li>Senegal Ltd.: $29,000 \times ₹ 380 = ₹ 1,10,20,000$[cite: 6]</li>
+        <li>Cairo Ltd.: $40,000 \times ₹ 500 = ₹ 2,00,00,000$[cite: 6]</li>
+        <li><strong>Total Portfolio Value: ₹ 4,20,20,000</strong>[cite: 6]</li>
+      </ul>
+
+      <h4>2. Net Assets of the Scheme</h4>
+      <p>$$\text{Gross Assets} = ₹ 4,20,20,000$$[cite: 6]</p>
+      <p>$$\text{Less: Accrued Expenses} = (₹ 2,50,000)$$[cite: 6]</p>
+      <p>$$\text{Less: Other Liabilities} = (₹ 2,00,000)$$[cite: 6]</p>
+      <p>$$\text{Net Assets} = ₹ 4,20,20,000 - ₹ 4,50,000 = \mathbf{₹ 4,15,70,000}$$[cite: 6]</p>
+
+      <h4>3. NAV per Unit</h4>
+      <p>$$\text{NAV per Unit} = \frac{\text{Net Assets}}{\text{Outstanding Units}} = \frac{₹ 4,15,70,000}{10,00,000} = \mathbf{₹ 41.57}$$[cite: 6]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_08",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 10,
+    marks: 8,
+    question_html: `
+      <p>A Mutual Fund Co. has the following assets under it (Total units: 6,00,000)[cite: 6]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Company</th>
+              <th style="padding:6px; border:1px solid #ddd;">No. of Shares</th>
+              <th style="padding:6px; border:1px solid #ddd;">Price on 1st Feb 2012 (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Price on 2nd Feb 2012 (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>L Ltd.</td><td>20,000</td><td>20.00</td><td>20.50</td></tr>
+            <tr><td>M Ltd.</td><td>30,000</td><td>312.40</td><td>360.00</td></tr>
+            <tr><td>N Ltd.</td><td>20,000</td><td>361.20</td><td>383.10</td></tr>
+            <tr><td>P Ltd.</td><td>60,000</td><td>505.10</td><td>503.90</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ol type="i">
+        <li>Calculate the NAV of the Fund as on 1st February 2012[cite: 6].</li>
+        <li>Mr. A submits a cheque of ₹ 30,00,000, and the Fund manager purchases 8,000 shares of M Ltd., holding the balance in the bank. What is the revised position of the Fund?[cite: 6]</li>
+        <li>Find the new NAV of the Fund as on 2nd February 2012[cite: 6].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) NAV as on 1st February 2012</h4>
+      <ul>
+        <li>L Ltd.: $20,000 \times 20.00 = ₹ 4,00,000$[cite: 6]</li>
+        <li>M Ltd.: $30,000 \times 312.40 = ₹ 93,72,000$[cite: 6]</li>
+        <li>N Ltd.: $20,000 \times 361.20 = ₹ 72,24,000$[cite: 6]</li>
+        <li>P Ltd.: $60,000 \times 505.10 = ₹ 3,03,06,000$[cite: 6]</li>
+        <li><strong>Total Portfolio Value: ₹ 4,73,02,000</strong>[cite: 6]</li>
+      </ul>
+      <p>$$\text{NAV}_1 = \frac{₹ 4,73,02,000}{6,00,000} = \mathbf{₹ 78.8366 \approx ₹ 78.84}$$[cite: 6]</p>
+
+      <h4>(ii) Fund Position After ₹ 30 Lakh Inflow and Purchase of M Ltd.</h4>
+      <ul>
+        <li>Cost of 8,000 shares of M Ltd. @ ₹ 312.40 $= 8,000 \times 312.40 = ₹ 24,99,200$[cite: 6]</li>
+        <li>Balance Cash held in Bank $= ₹ 30,00,000 - ₹ 24,99,200 = \mathbf{₹ 5,00,800}$[cite: 6]</li>
+        <li>New units issued to Mr. A $= \frac{₹ 30,00,000}{78.8366} = \mathbf{38,053 \text{ units}}$[cite: 6]</li>
+        <li>Total outstanding units $= 6,00,000 + 38,053 = \mathbf{6,38,053 \text{ units}}$[cite: 6]</li>
+        <li>Holding in M Ltd. becomes: $30,000 + 8,000 = \mathbf{38,000 \text{ shares}}$[cite: 6]</li>
+      </ul>
+
+      <h4>(iii) New NAV as on 2nd February 2012</h4>
+      <ul>
+        <li>L Ltd.: $20,000 \times 20.50 = ₹ 4,10,000$[cite: 6]</li>
+        <li>M Ltd.: $38,000 \times 360.00 = ₹ 1,36,80,000$[cite: 6]</li>
+        <li>N Ltd.: $20,000 \times 383.10 = ₹ 76,62,000$[cite: 6]</li>
+        <li>P Ltd.: $60,000 \times 503.90 = ₹ 3,02,34,000$[cite: 6]</li>
+        <li>Bank Balance $= ₹ 5,00,800$[cite: 6]</li>
+        <li><strong>Total Value on 2nd Feb: ₹ 5,24,86,800</strong>[cite: 6]</li>
+      </ul>
+      <p>$$\text{NAV}_2 = \frac{₹ 5,24,86,800}{6,38,053} = \mathbf{₹ 82.26 \text{ per unit}}$$[cite: 6]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_09",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 11,
+    marks: 8,
+    question_html: `
+      <p>On 1st April 2009, Fair Return Mutual Fund has 8,00,000 units outstanding and the following portfolio at 4:00 p.m.[cite: 6]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Shares</th>
+              <th style="padding:6px; border:1px solid #ddd;">No. of Shares</th>
+              <th style="padding:6px; border:1px solid #ddd;">Price on 01.04.2009 (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Price on 02.04.2009 (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>A Ltd.</td><td>10,000</td><td>19.70</td><td>20.30</td></tr>
+            <tr><td>B Ltd.</td><td>50,000</td><td>482.60</td><td>513.70</td></tr>
+            <tr><td>C Ltd.</td><td>10,000</td><td>264.40</td><td>290.80</td></tr>
+            <tr><td>D Ltd.</td><td>1,00,000</td><td>674.90</td><td>671.90</td></tr>
+            <tr><td>E Ltd.</td><td>30,000</td><td>25.90</td><td>44.20</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Required:</strong></p>
+      <ol type="a">
+        <li>Calculate NAV of the Fund on 1st April 2009[cite: 6].</li>
+        <li>Mr. X (HNI) invests ₹ 50,00,000 on 1st April; 18,000 shares of C Ltd. are bought and the balance held in bank. What is the revised position?[cite: 6]</li>
+        <li>What will be the new NAV on 2nd April 2009 at 4:00 p.m.?[cite: 6]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(a) NAV on 1st April 2009</h4>
+      <ul>
+        <li>A Ltd.: $10,000 \times 19.70 = ₹ 1,97,000$[cite: 6]</li>
+        <li>B Ltd.: $50,000 \times 482.60 = ₹ 2,41,30,000$[cite: 6]</li>
+        <li>C Ltd.: $10,000 \times 264.40 = ₹ 26,44,000$[cite: 6]</li>
+        <li>D Ltd.: $1,00,000 \times 674.90 = ₹ 6,74,90,000$[cite: 6]</li>
+        <li>E Ltd.: $30,000 \times 25.90 = ₹ 7,77,000$[cite: 6]</li>
+        <li><strong>Total Portfolio Value: ₹ 9,52,38,000</strong>[cite: 6]</li>
+      </ul>
+      <p>$$\text{NAV} = \frac{₹ 9,52,38,000}{8,00,000} = \mathbf{₹ 119.0475 \approx ₹ 119.05}$$[cite: 6]</p>
+
+      <h4>(b) Revised Fund Position After ₹ 50 Lakh Inflow</h4>
+      <ul>
+        <li>Purchase cost of 18,000 shares of C Ltd. @ ₹ 264.40 $= 18,000 \times 264.40 = ₹ 47,59,200$[cite: 6]</li>
+        <li>Cash Balance in Bank $= ₹ 50,00,000 - ₹ 47,59,200 = \mathbf{₹ 2,40,800}$[cite: 6]</li>
+        <li>New units issued to Mr. X $= \frac{₹ 50,00,000}{119.0475} = \mathbf{42,000 \text{ units}}$[cite: 6]</li>
+        <li>Total units outstanding $= 8,00,000 + 42,000 = \mathbf{8,42,000 \text{ units}}$[cite: 6]</li>
+        <li>Shares of C Ltd. holding $= 10,000 + 18,000 = \mathbf{28,000 \text{ shares}}$[cite: 6]</li>
+      </ul>
+
+      <h4>(c) New NAV on 2nd April 2009</h4>
+      <ul>
+        <li>A Ltd.: $10,000 \times 20.30 = ₹ 2,03,000$[cite: 6]</li>
+        <li>B Ltd.: $50,000 \times 513.70 = ₹ 2,56,85,000$[cite: 6]</li>
+        <li>C Ltd.: $28,000 \times 290.80 = ₹ 81,42,400$[cite: 6]</li>
+        <li>D Ltd.: $1,00,000 \times 671.90 = ₹ 6,71,90,000$[cite: 6]</li>
+        <li>E Ltd.: $30,000 \times 44.20 = ₹ 13,26,000$[cite: 6]</li>
+        <li>Cash in Bank $= ₹ 2,40,800$[cite: 6]</li>
+        <li><strong>Total Net Assets: ₹ 10,27,87,200</strong>[cite: 6]</li>
+      </ul>
+      <p>$$\text{NAV as on 02.04.2009} = \frac{₹ 10,27,87,200}{8,42,000} = \mathbf{₹ 122.075 \text{ per unit}}$$[cite: 4, 6]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_10",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 12,
+    marks: 8,
+    question_html: `
+      <p>Mr. Sinha has invested in three Mutual Fund schemes as per the details below[cite: 6]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Scheme X</th>
+              <th style="padding:6px; border:1px solid #ddd;">Scheme Y</th>
+              <th style="padding:6px; border:1px solid #ddd;">Scheme Z</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Date of Investment</td><td>01.12.2008</td><td>01.01.2009</td><td>01.03.2009</td></tr>
+            <tr><td>Amount of Investment (₹)</td><td>5,00,000</td><td>1,00,000</td><td>50,000</td></tr>
+            <tr><td>Entry NAV (₹)</td><td>10.50</td><td>10.00</td><td>10.00</td></tr>
+            <tr><td>Dividend received upto 31.03.2009 (₹)</td><td>9,500</td><td>1,500</td><td>Nil</td></tr>
+            <tr><td>NAV as at 31.03.2009 (₹)</td><td>10.40</td><td>10.10</td><td>9.80</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Calculate the effective yield on a per annum basis in respect of each scheme to Mr. Sinha up to 31.03.2009[cite: 6].</p>
+    `,
+    solution_html: `
+      <h4>Yield Computation Schedule (up to 31.03.2009)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Scheme X</th>
+              <th style="padding:6px; border:1px solid #ddd;">Scheme Y</th>
+              <th style="padding:6px; border:1px solid #ddd;">Scheme Z</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>(a) Investment (₹)</td><td>5,00,000</td><td>1,00,000</td><td>50,000</td></tr>
+            <tr><td>(b) Entry NAV (₹)</td><td>10.50</td><td>10.00</td><td>10.00</td></tr>
+            <tr><td>(c) Units Allotted (a/b)</td><td>47,619.05</td><td>10,000.00</td><td>5,000.00</td></tr>
+            <tr><td>(d) Closing NAV on 31.03.2009 (₹)</td><td>10.40</td><td>10.10</td><td>9.80</td></tr>
+            <tr><td>(e) Closing Value (c &times; d) (₹)</td><td>4,95,238.12</td><td>1,01,000.00</td><td>49,000.00</td></tr>
+            <tr><td>(f) Capital Gain / (Loss) (e - a) (₹)</td><td>(4,761.88)</td><td>+1,000.00</td><td>(1,000.00)</td></tr>
+            <tr><td>(g) Dividend Received (₹)</td><td>9,500.00</td><td>1,500.00</td><td>0.00</td></tr>
+            <tr><td>(h) Total Yield (f + g) (₹)</td><td>+4,738.12</td><td>+2,500.00</td><td>(1,000.00)</td></tr>
+            <tr><td>(i) Holding Period (Days)</td><td>121 days</td><td>90 days</td><td>31 days</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td>(j) Effective Yield p.a.</td>
+              <td><strong>+2.859%</strong></td>
+              <td><strong>+10.139%</strong></td>
+              <td><strong>-23.548%</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>$$\text{Formula: Effective Yield p.a.} = \frac{\text{Total Yield (h)}}{\text{Investment (a)}} \times \frac{365}{\text{Days (i)}} \times 100$$[cite: 6]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_11",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 13,
+    marks: 8,
+    question_html: `
+      <p>Mr. Y invested in three mutual funds as per the following details (Assume 1 Year = 365 days)[cite: 6]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">MF &lsquo;X&rsquo;</th>
+              <th style="padding:6px; border:1px solid #ddd;">MF &lsquo;Y&rsquo;</th>
+              <th style="padding:6px; border:1px solid #ddd;">MF &lsquo;Z&rsquo;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Amount of Investment (₹)</td><td>2,00,000</td><td>4,00,000</td><td>2,00,000</td></tr>
+            <tr><td>NAV at time of purchase (₹)</td><td>10.30</td><td>10.10</td><td>10.00</td></tr>
+            <tr><td>Dividend Received up to 31.03.2018 (₹)</td><td>6,000</td><td>0</td><td>5,000</td></tr>
+            <tr><td>NAV as on 31.03.2018 (₹)</td><td>10.25</td><td>10.00</td><td>10.20</td></tr>
+            <tr><td>Effective Yield p.a. (%)</td><td>9.66%</td><td>-11.66%</td><td>24.15%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Help him find the date of his original investment after ascertaining[cite: 6]:</p>
+      <ol type="i">
+        <li>Number of units in each scheme[cite: 6];</li>
+        <li>Total NAV as on 31.03.2018[cite: 6];</li>
+        <li>Total Yield[cite: 6]; and</li>
+        <li>Number of days investment held and date of original investment[cite: 6].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Number of Units in Each Scheme</h4>
+      <ul>
+        <li>MF X: $\frac{₹ 2,00,000}{10.30} = \mathbf{19,417.48 \text{ units}}$[cite: 6]</li>
+        <li>MF Y: $\frac{₹ 4,00,000}{10.10} = \mathbf{39,603.96 \text{ units}}$[cite: 6]</li>
+        <li>MF Z: $\frac{₹ 2,00,000}{10.00} = \mathbf{20,000.00 \text{ units}}$[cite: 6]</li>
+      </ul>
+
+      <h4>(ii) Total Closing NAV as on 31.03.2018</h4>
+      <ul>
+        <li>MF X: $19,417.48 \times ₹ 10.25 = ₹ 1,99,029.17$[cite: 6]</li>
+        <li>MF Y: $39,603.96 \times ₹ 10.00 = ₹ 3,96,039.60$[cite: 6]</li>
+        <li>MF Z: $20,000.00 \times ₹ 10.20 = ₹ 2,04,000.00$[cite: 6]</li>
+        <li><strong>Total Portfolio Value: ₹ 7,99,068.77</strong>[cite: 6]</li>
+      </ul>
+
+      <h4>(iii) Total Yield</h4>
+      <ul>
+        <li>MF X: $(1,99,029.17 - 2,00,000) + 6,000 = -970.83 + 6,000 = \mathbf{₹ 5,029.17}$[cite: 6]</li>
+        <li>MF Y: $(3,96,039.60 - 4,00,000) + 0 = \mathbf{-₹ 3,960.40}$[cite: 6]</li>
+        <li>MF Z: $(2,04,000.00 - 2,00,000) + 5,000 = 4,000 + 5,000 = \mathbf{₹ 9,000.00}$[cite: 6]</li>
+        <li>$$\text{Total Yield} = ₹ 5,029.17 - ₹ 3,960.40 + ₹ 9,000.00 = \mathbf{₹ 10,068.77 \text{ (or } 1.2586\%)}[cite: 6]$$</li>
+      </ul>
+
+      <h4>(iv) Holding Period and Investment Dates</h4>
+      <p>$$\text{Holding Period (Days)} = \frac{\text{Yield Amount}}{\text{Cost}} \times \frac{365}{\text{Yield p.a. \%}}$$[cite: 6]</p>
+      <ul>
+        <li><strong>MF X:</strong> $\frac{₹ 5,029.17}{₹ 2,00,000} \times \frac{365}{0.0966} = 0.025146 \times 3,778.47 \approx \mathbf{95 \text{ days}}$[cite: 6]
+          <br /><em>Date of Investment:</em> Count back 95 days from 31.03.2018 $\rightarrow$ <strong>27.12.2017</strong> (or 26.12.2017)[cite: 6]
+        </li>
+        <li><strong>MF Y:</strong> $\frac{-₹ 3,960.40}{₹ 4,00,000} \times \frac{365}{-0.1166} = -0.009901 \times (-3,130.36) \approx \mathbf{31 \text{ days}}$[cite: 6]
+          <br /><em>Date of Investment:</em> Count back 31 days from 31.03.2018 $\rightarrow$ <strong>01.03.2018</strong> (or 28.02.2018)[cite: 6]
+        </li>
+        <li><strong>MF Z:</strong> $\frac{₹ 9,000.00}{₹ 2,00,000} \times \frac{365}{0.2415} = 0.045000 \times 1,511.39 \approx \mathbf{68 \text{ days}}$[cite: 6]
+          <br /><em>Date of Investment:</em> Count back 68 days from 31.03.2018 $\rightarrow$ <strong>23.01.2018</strong> (or 22.01.2018)[cite: 6]
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_12",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 14,
+    marks: 8,
+    question_html: `
+      <p>Mr. X on 01.07.2007 invested in 10,000 units (face value ₹ 10) of a Mutual Fund at par[cite: 6]. On 31.03.2008, the dividend paid was 10% and his annualized yield was 153.33%[cite: 6]. On 31.03.2009, 20% dividend was declared[cite: 6].</p>
+      <p>On 31.03.2010, Mr. X redeemed all his accumulated balance of 11,296.11 units when his annualized yield was 73.52%[cite: 6]. What are the NAVs as on 31.03.2008, 31.03.2009, and 31.03.2010?[cite: 6]</p>
+    `,
+    solution_html: `
+      <h4>1. NAV as on 31.03.2008 (Holding period = 9 months)</h4>
+      <ul>
+        <li>9-Month Yield $= 153.33\% \times \frac{9}{12} = \mathbf{115\%}$[cite: 6]</li>
+        <li>Cum-dividend value of investment $= ₹ 1,00,000 \times (1 + 1.15) = \mathbf{₹ 2,15,000}$[cite: 6]</li>
+        <li>Dividend declared $= 10,000 \times 10 \times 10\% = ₹ 10,000$[cite: 6]</li>
+        <li>Ex-Dividend NAV as on 31.03.2008 $= \frac{₹ 2,15,000 - ₹ 10,000}{10,000} = \frac{₹ 2,05,000}{10,000} = \mathbf{₹ 20.50}$[cite: 6]</li>
+        <li>Additional units acquired through reinvestment $= \frac{₹ 10,00,000 \times 10^{-2}}{20.50} = \frac{10,000}{20.50} = \mathbf{487.80 \text{ units}}$[cite: 6]</li>
+        <li>Total units as on 31.03.2008 $= 10,000 + 487.80 = \mathbf{10,487.80 \text{ units}}$[cite: 6]</li>
+      </ul>
+
+      <h4>2. NAV as on 31.03.2009</h4>
+      <ul>
+        <li>Dividend on 31.03.2009 $= 10,487.80 \text{ units} \times ₹ 10 \times 20\% = \mathbf{₹ 20,975.60}$[cite: 6]</li>
+        <li>Additional units acquired on 31.03.2009 $= 11,296.11 - 10,487.80 = \mathbf{808.31 \text{ units}}$[cite: 6]</li>
+        <li>$$\text{NAV as on 31.03.2009} = \frac{₹ 20,975.60}{808.31} = \mathbf{₹ 25.95}$$[cite: 6]</li>
+      </ul>
+
+      <h4>3. NAV as on 31.03.2010 (Total holding period = 33 months)</h4>
+      <ul>
+        <li>Total Cumulative Return $= 73.52\% \times \frac{33}{12} = \mathbf{202.18\%}$[cite: 6]</li>
+        <li>Total Redemption Value $= ₹ 1,00,000 \times (1 + 2.0218) = \mathbf{₹ 3,02,180}$[cite: 6]</li>
+        <li>$$\text{NAV as on 31.03.2010} = \frac{₹ 3,02,180}{11,296.11} = \mathbf{₹ 26.75}$$[cite: 6]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_13",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 15,
+    marks: 8,
+    question_html: `
+      <p>Mr. X on 01.07.2012, during the initial public offer of a Mutual Fund (MF), invested ₹ 1,00,000 at a Face Value of ₹ 10[cite: 6]. On 31.03.2013, the MF declared a dividend of 10% when Mr. X calculated that his holding period return was 115%[cite: 6]. On 31.03.2014, the MF again declared a dividend of 20%[cite: 6]. On 31.03.2015, Mr. X redeemed all his investment which had accumulated to 11,296.11 units when his holding period return was 202.17%[cite: 6].</p>
+      <p>Calculate the NAVs as on 31.03.2013, 31.03.2014, and 31.03.2015[cite: 6].</p>
+    `,
+    solution_html: `
+      <h4>1. NAV as on 31.03.2013</h4>
+      <ul>
+        <li>Initial Investment $= ₹ 1,00,000$ at Face Value of ₹ 10 $\implies \text{Initial Units} = 10,000 \text{ units}$[cite: 6].</li>
+        <li>Holding Period Return (9 months) $= 115\%$[cite: 6].</li>
+        <li>Total value of investment on 31.03.2013 before dividend distribution:
+          <br />$$₹ 1,00,000 \times (1 + 1.15) = ₹ 2,15,000$$[cite: 6]
+        </li>
+        <li>Dividend declared on 31.03.2013:
+          <br />$$10,000 \text{ units} \times ₹ 10 \times 10\% = ₹ 10,000$$[cite: 6]
+        </li>
+        <li>Ex-Dividend NAV as on 31.03.2013:
+          <br />$$\text{NAV}_{31.03.2013} = \frac{₹ 2,15,000 - ₹ 10,000}{10,000 \text{ units}} = \frac{₹ 2,05,000}{10,000} = \mathbf{₹ 20.50}$$[cite: 6]
+        </li>
+        <li>Additional units acquired by reinvesting dividend:
+          <br />$$\frac{₹ 10,000}{₹ 20.50} = 487.80 \text{ units}$$[cite: 6]
+        </li>
+        <li>Total units as on 31.03.2013:
+          <br />$$10,000 + 487.80 = \mathbf{10,487.80 \text{ units}}$$[cite: 6]
+        </li>
+      </ul>
+
+      <h4>2. NAV as on 31.03.2014</h4>
+      <ul>
+        <li>Dividend declared on 31.03.2014:
+          <br />$$10,487.80 \text{ units} \times ₹ 10 \times 20\% = ₹ 20,975.60$$[cite: 6]
+        </li>
+        <li>Additional units acquired from dividend reinvestment on 31.03.2014:
+          <br />$$11,296.11 - 10,487.80 = 808.31 \text{ units}$$[cite: 6]
+        </li>
+        <li>NAV as on 31.03.2014:
+          <br />$$\text{NAV}_{31.03.2014} = \frac{₹ 20,975.60}{808.31 \text{ units}} = \mathbf{₹ 25.95}$$[cite: 6]
+        </li>
+      </ul>
+
+      <h4>3. NAV as on 31.03.2015</h4>
+      <ul>
+        <li>Holding Period Return on redemption $= 202.17\%$[cite: 6].</li>
+        <li>Total Redemption Proceeds:
+          <br />$$₹ 1,00,000 \times (1 + 2.0217) = ₹ 3,02,170$$[cite: 6]
+        </li>
+        <li>Total units redeemed $= 11,296.11 \text{ units}$[cite: 6].</li>
+        <li>NAV as on 31.03.2015:
+          <br />$$\text{NAV}_{31.03.2015} = \frac{₹ 3,02,170}{11,296.11 \text{ units}} = \mathbf{₹ 26.75}$$[cite: 6]
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_14",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 16,
+    marks: 6,
+    question_html: `
+      <p>A Mutual Fund holding 300 units has an opening NAV of ₹ 8.75 and a closing NAV of ₹ 9.45 at the end of the year[cite: 6]. The Mutual Fund offers two options[cite: 6]:</p>
+      <ol type="i">
+        <li>Pay ₹ 0.75 per unit as dividend and ₹ 0.60 per unit as capital gains distribution, or[cite: 6]</li>
+        <li>Reinvest these distributions at an average NAV of ₹ 8.65 per unit[cite: 6].</li>
+      </ol>
+      <p>What difference would it make in terms of return available and which option is preferable?[cite: 6]</p>
+    `,
+    solution_html: `
+      <h4>Option (i): Distributions Received in Cash</h4>
+      <ul>
+        <li>Capital Appreciation per unit $= ₹ 9.45 - ₹ 8.75 = ₹ 0.70$[cite: 6]</li>
+        <li>Dividends received per unit $= ₹ 0.75$[cite: 6]</li>
+        <li>Capital gains distribution per unit $= ₹ 0.60$[cite: 6]</li>
+        <li>Total Reward per unit $= ₹ 0.70 + ₹ 0.75 + ₹ 0.60 = ₹ 2.05$[cite: 6]</li>
+        <li>$$\text{Holding Period Return} = \frac{₹ 2.05}{₹ 8.75} \times 100 = \mathbf{23.43\%}$$[cite: 6]</li>
+      </ul>
+
+      <h4>Option (ii): Distributions Reinvested @ ₹ 8.65 per Unit</h4>
+      <ul>
+        <li>Total distributions per unit $= ₹ 0.75 + ₹ 0.60 = ₹ 1.35$[cite: 6]</li>
+        <li>Total distribution proceeds on 300 units $= 300 \times ₹ 1.35 = ₹ 405.00$[cite: 6]</li>
+        <li>Additional units acquired $= \frac{₹ 405.00}{₹ 8.65} = 46.82 \text{ units}$[cite: 6]</li>
+        <li>Total units at year-end $= 300 + 46.82 = 346.82 \text{ units}$[cite: 6]</li>
+        <li>Closing value of holding $= 346.82 \text{ units} \times ₹ 9.45 = ₹ 3,277.45$[cite: 6]</li>
+        <li>Initial investment cost $= 300 \text{ units} \times ₹ 8.75 = ₹ 2,625.00$[cite: 6]</li>
+        <li>Total gain $= ₹ 3,277.45 - ₹ 2,625.00 = ₹ 652.45$[cite: 6]</li>
+        <li>$$\text{Holding Period Return} = \frac{₹ 652.45}{₹ 2,625.00} \times 100 = \mathbf{24.85\%}$$[cite: 6]</li>
+      </ul>
+
+      <h4>Conclusion</h4>
+      <p>Option (ii) yields a higher rate of return (<strong>24.85%</strong> vs. <strong>23.43%</strong>) due to the compounding effect of acquiring additional units below the closing NAV[cite: 6]. Therefore, <strong>Option (ii) is preferable</strong>[cite: 6].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_15",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 17,
+    marks: 8,
+    question_html: `
+      <p>On 01.04.2012, ABC Mutual Fund issued 20 lakh units at ₹ 10 per unit[cite: 6]. Relevant initial issue expenses were ₹ 12 lakhs[cite: 6]. It invested the funds raised in capital market instruments to build a portfolio of ₹ 185 lakhs[cite: 6].</p>
+      <p>During April 2012, it sold instruments costing ₹ 60 lakhs for ₹ 63 lakhs and purchased fresh securities for ₹ 56 lakhs[cite: 6]. Fund management expenses for April 2012 were ₹ 8 lakhs, of which 10% was in arrears[cite: 6]. Dividends earned amounted to ₹ 2 lakhs, and the fund distributed 80% of its realized earnings[cite: 6]. On 30.04.2012, the market value of the portfolio was ₹ 198 lakhs[cite: 6].</p>
+      <p>Mr. Akash subscribed to 100 units on 01.04.2012 and redeemed them at the closing NAV on 30.04.2012[cite: 6]. What was his annual rate of earning?[cite: 6]</p>
+    `,
+    solution_html: `
+      <h4>1. Monthly Cash and Bank Account</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">₹ in lakhs</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Opening Cash Balance: ₹ (200 - 185 - 12)</td>
+              <td style="text-align:right;">3.00</td>
+            </tr>
+            <tr>
+              <td>Add: Proceeds from sale of securities</td>
+              <td style="text-align:right;">63.00</td>
+            </tr>
+            <tr>
+              <td>Add: Dividend received</td>
+              <td style="text-align:right;">2.00</td>
+            </tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td>Total Receipts</td>
+              <td style="text-align:right;">68.00</td>
+            </tr>
+            <tr>
+              <td>Less: Cost of securities purchased</td>
+              <td style="text-align:right;">(56.00)</td>
+            </tr>
+            <tr>
+              <td>Less: Management expenses paid (90% of ₹ 8 lakhs)</td>
+              <td style="text-align:right;">(7.20)</td>
+            </tr>
+            <tr>
+              <td>Less: Capital gains distributed: 80% of (₹ 63 - ₹ 60 lakhs)</td>
+              <td style="text-align:right;">(2.40)</td>
+            </tr>
+            <tr>
+              <td>Less: Dividend distributed: 80% of ₹ 2.00 lakhs</td>
+              <td style="text-align:right;">(1.60)</td>
+            </tr>
+            <tr style="font-weight:bold; background-color:#f9f9f9;">
+              <td>Closing Cash / Bank Balance</td>
+              <td style="text-align:right;">0.80</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>2. Closing NAV as on 30.04.2012</h4>
+      <ul>
+        <li>Closing Market Value of Portfolio $= ₹ 198.00 \text{ lakhs}$[cite: 6]</li>
+        <li>Add: Closing Cash / Bank Balance $= ₹ 0.80 \text{ lakhs}$[cite: 6]</li>
+        <li>Less: Arrears of Management Expenses (10% of ₹ 8 lakhs) $= (₹ 0.80 \text{ lakhs})$[cite: 6]</li>
+        <li>Closing Net Assets $= ₹ 198.00 + 0.80 - 0.80 = \mathbf{₹ 198.00 \text{ lakhs}}$[cite: 6]</li>
+        <li>$$\text{Closing NAV per unit} = \frac{₹ 198.00 \text{ lakhs}}{20 \text{ lakh units}} = \mathbf{₹ 9.90}$$[cite: 6]</li>
+      </ul>
+
+      <h4>3. Rate of Earning for Mr. Akash</h4>
+      <ul>
+        <li>Cash Distribution received per unit:
+          <br />$$\frac{₹ 2.40 \text{ lakhs} + ₹ 1.60 \text{ lakhs}}{20 \text{ lakh units}} = \frac{₹ 4.00 \text{ lakhs}}{20 \text{ lakh units}} = ₹ 0.20$$[cite: 6]
+        </li>
+        <li>Capital Loss on redemption per unit $= ₹ 9.90 - ₹ 10.00 = -₹ 0.10$[cite: 6]</li>
+        <li>Net Earnings for the month per unit $= ₹ 0.20 - ₹ 0.10 = \mathbf{₹ 0.10}$[cite: 6]</li>
+        <li>$$\text{Monthly Rate of Earning} = \frac{₹ 0.10}{₹ 10.00} \times 100 = \mathbf{1\% \text{ per month}}$$[cite: 6]</li>
+        <li>$$\text{Annual Rate of Earning} = 1\% \times 12 = \mathbf{12\% \text{ p.a.}}$$[cite: 6]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_16",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 18,
+    marks: 10,
+    question_html: `
+      <p>Sun Moon Mutual Fund launched the open-ended equity scheme &ldquo;Chanakya Opportunity Fund&rdquo; with three plans: Plan A (Dividend Re-investment), Plan B (Bonus), and Plan C (Growth)[cite: 6]. On 01.04.1999, Mr. Anand, Mr. Bacchan, and Mrs. Charu invested ₹ 1,00,000 each in Plan B, Plan C, and Plan A respectively at par (NAV ₹ 10)[cite: 6].</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th rowspan="2" style="padding:6px; border:1px solid #ddd;">Date</th>
+              <th rowspan="2" style="padding:6px; border:1px solid #ddd;">Dividend %</th>
+              <th rowspan="2" style="padding:6px; border:1px solid #ddd;">Bonus Ratio</th>
+              <th colspan="3" style="padding:6px; border:1px solid #ddd;">NAV per Unit (₹)</th>
+            </tr>
+            <tr style="background-color:#fafafa;">
+              <th style="padding:6px; border:1px solid #ddd;">Plan A</th>
+              <th style="padding:6px; border:1px solid #ddd;">Plan B</th>
+              <th style="padding:6px; border:1px solid #ddd;">Plan C</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>28.07.2003</td><td>20</td><td>—</td><td>30.70</td><td>31.40</td><td>33.42</td></tr>
+            <tr><td>31.03.2004</td><td>70</td><td>5 : 4</td><td>58.42</td><td>31.05</td><td>70.05</td></tr>
+            <tr><td>31.10.2007</td><td>40</td><td>—</td><td>42.18</td><td>25.02</td><td>56.15</td></tr>
+            <tr><td>15.03.2008</td><td>25</td><td>—</td><td>46.45</td><td>29.10</td><td>64.28</td></tr>
+            <tr><td>31.03.2008</td><td>—</td><td>1 : 3</td><td>42.18</td><td>20.05</td><td>60.12</td></tr>
+            <tr><td>24.03.2009</td><td>40</td><td>1 : 4</td><td>48.10</td><td>19.95</td><td>72.40</td></tr>
+            <tr><td>31.07.2009</td><td colspan="2">Redemption</td><td>53.75</td><td>22.98</td><td>82.07</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>On 31.07.2009, all three investors redeemed their entire holdings[cite: 6]. Calculate the annual rate of return for each investor, considering[cite: 6]:</p>
+      <ul>
+        <li>LTCG is exempt from tax[cite: 6].</li>
+        <li>STCG is taxable @ 10%[cite: 6].</li>
+        <li>Securities Transaction Tax (STT) is 0.2% on redemption proceeds[cite: 6].</li>
+      </ul>
+    `,
+    solution_html: `
+      <p>Holding period: 01.04.1999 to 31.07.2009 = <strong>124 months</strong>[cite: 6].</p>
+
+      <h4>1. Mrs. Charu: Plan A (Dividend Reinvestment)</h4>
+      <ul>
+        <li>01.04.1999: Subscribed 10,000 units @ ₹ 10[cite: 6].</li>
+        <li>28.07.2003: Dividend 20% on ₹ 1,00,000 $= ₹ 20,000 / 30.70 = 651.47 \text{ units} \implies 10,651.47 \text{ units}$[cite: 6].</li>
+        <li>31.03.2004: Dividend 70% $= ₹ 74,560.29 / 58.42 = 1,276.28 \text{ units} \implies 11,927.75 \text{ units}$[cite: 6].</li>
+        <li>31.10.2007: Dividend 40% $= ₹ 47,711.00 / 42.18 = 1,131.13 \text{ units} \implies 13,058.88 \text{ units}$[cite: 6].</li>
+        <li>15.03.2008: Dividend 25% $= ₹ 32,647.20 / 46.45 = 702.85 \text{ units} \implies 13,761.73 \text{ units}$[cite: 6].</li>
+        <li>24.03.2009: Dividend 40% $= ₹ 55,046.92 / 48.10 = 1,144.43 \text{ units} \implies \mathbf{14,906.16 \text{ units}}$[cite: 6].</li>
+        <li>Redemption Proceeds: $14,906.16 \times ₹ 53.75 = ₹ 8,01,206.10$[cite: 6]</li>
+        <li>Less: STT @ 0.2% $= (₹ 1,602.41) \implies \text{Net} = ₹ 7,99,603.69$[cite: 6]</li>
+        <li>Less: STCG Tax on units acquired on 24.03.2009 (held &lt; 1 yr):
+          <br />$$1,144.43 \times [₹ 53.64 - ₹ 48.10] \times 10\% = ₹ 634.00$$[cite: 6]
+        </li>
+        <li>Net Realization $= ₹ 7,99,603.69 - ₹ 634.00 = ₹ 7,98,969.69$[cite: 6]</li>
+        <li>$$\text{Annual Rate of Return} = \frac{₹ 7,98,969.69 - ₹ 1,00,000}{₹ 1,00,000} \times \frac{12}{124} \times 100 = \mathbf{67.64\%}$$[cite: 6]</li>
+      </ul>
+
+      <h4>2. Mr. Anand: Plan B (Bonus Plan)</h4>
+      <ul>
+        <li>01.04.1999: 10,000 units @ ₹ 10[cite: 6].</li>
+        <li>31.03.2004: Bonus 5:4 $\implies 10,000 \times \frac{5}{4} = 12,500 \text{ units} \implies 22,500 \text{ units}$[cite: 6].</li>
+        <li>31.03.2008: Bonus 1:3 $\implies 22,500 \times \frac{1}{3} = 7,500 \text{ units} \implies 30,000 \text{ units}$[cite: 6].</li>
+        <li>24.03.2009: Bonus 1:4 $\implies 30,000 \times \frac{1}{4} = 7,500 \text{ units} \implies \mathbf{37,500 \text{ units}}$[cite: 6].</li>
+        <li>Redemption Proceeds: $37,500 \times ₹ 22.98 = ₹ 8,61,750.00$[cite: 6]</li>
+        <li>Less: STT @ 0.2% $= (₹ 1,723.50) \implies \text{Net} = ₹ 8,60,026.50$[cite: 6]</li>
+        <li>Less: STCG Tax on 7,500 units issued on 24.03.2009:
+          <br />$$7,500 \times (₹ 22.93 - ₹ 19.95) \times 10\% = ₹ 2,235.00$$[cite: 6]
+        </li>
+        <li>Net Realization $= ₹ 8,60,026.50 - ₹ 2,235.00 = ₹ 8,57,791.50$[cite: 6]</li>
+        <li>$$\text{Annual Rate of Return} = \frac{₹ 8,57,791.50 - ₹ 1,00,000}{₹ 1,00,000} \times \frac{12}{124} \times 100 = \mathbf{73.33\%}$$[cite: 6]</li>
+      </ul>
+
+      <h4>3. Mr. Bacchan: Plan C (Growth Plan)</h4>
+      <ul>
+        <li>Holding: 10,000 units throughout[cite: 6].</li>
+        <li>Redemption Proceeds: $10,000 \times ₹ 82.07 = ₹ 8,20,700.00$[cite: 6]</li>
+        <li>Less: STT @ 0.2% $= (₹ 1,641.40) \implies \text{Net} = ₹ 8,19,058.60$[cite: 6]</li>
+        <li>LTCG Tax $= \text{Nil}$ (Exempt)[cite: 6].</li>
+        <li>$$\text{Annual Rate of Return} = \frac{₹ 8,19,058.60 - ₹ 1,00,000}{₹ 1,00,000} \times \frac{12}{124} \times 100 = \mathbf{69.59\%}$$[cite: 6]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_17",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 19,
+    marks: 8,
+    question_html: `
+      <p>Mr. K invested ₹ 2,00,000 each in Plan-D (Dividend Reinvestment) and Plan-B (Bonus Plan) of a mutual fund on 01.04.2005 at NAVs of ₹ 38.20 and ₹ 35.60 respectively (Face value ₹ 10)[cite: 6]. Both plans matured on 31.03.2010[cite: 6]. Corporate action history is as follows[cite: 6]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th rowspan="2" style="padding:6px; border:1px solid #ddd;">Date</th>
+              <th rowspan="2" style="padding:6px; border:1px solid #ddd;">Dividend %</th>
+              <th rowspan="2" style="padding:6px; border:1px solid #ddd;">Bonus Ratio</th>
+              <th colspan="2" style="padding:6px; border:1px solid #ddd;">NAV (₹)</th>
+            </tr>
+            <tr style="background-color:#fafafa;">
+              <th style="padding:6px; border:1px solid #ddd;">Plan D</th>
+              <th style="padding:6px; border:1px solid #ddd;">Plan B</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>30.09.2005</td><td>10</td><td>—</td><td>39.10</td><td>35.60</td></tr>
+            <tr><td>30.06.2006</td><td>—</td><td>1 : 5</td><td>41.15</td><td>36.25</td></tr>
+            <tr><td>31.03.2007</td><td>15</td><td>—</td><td>44.20</td><td>33.10</td></tr>
+            <tr><td>15.09.2008</td><td>13</td><td>—</td><td>45.05</td><td>37.25</td></tr>
+            <tr><td>30.10.2008</td><td>—</td><td>1 : 8</td><td>42.70</td><td>38.30</td></tr>
+            <tr><td>27.03.2009</td><td>16</td><td>—</td><td>44.80</td><td>39.10</td></tr>
+            <tr><td>11.04.2009</td><td>—</td><td>1 : 10</td><td>40.25</td><td>38.90</td></tr>
+            <tr><td>31.03.2010</td><td>—</td><td>—</td><td>40.40</td><td>39.70</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>What is the effective yield per annum in respect of the above two plans?[cite: 6]</p>
+    `,
+    solution_html: `
+      <h4>1. Plan D (Dividend Reinvestment Plan)</h4>
+      <ul>
+        <li>Initial Units acquired on 01.04.2005 $= \frac{₹ 2,00,000}{38.20} = \mathbf{5,235.60 \text{ units}}$[cite: 6]</li>
+        <li>30.09.2005: Dividend $10\% \times 10 \times 5,235.60 = ₹ 5,235.60 \implies \frac{5,235.60}{39.10} = 133.90 \text{ units} \implies 5,369.50 \text{ units}$[cite: 6]</li>
+        <li>31.03.2007: Dividend $15\% \times 10 \times 5,369.50 = ₹ 8,054.25 \implies \frac{8,054.25}{44.20} = 182.22 \text{ units} \implies 5,551.72 \text{ units}$[cite: 6]</li>
+        <li>15.09.2008: Dividend $13\% \times 10 \times 5,551.72 = ₹ 7,217.24 \implies \frac{7,217.24}{45.05} = 160.20 \text{ units} \implies 5,711.92 \text{ units}$[cite: 6]</li>
+        <li>27.03.2009: Dividend $16\% \times 10 \times 5,711.92 = ₹ 9,139.07 \implies \frac{9,139.07}{44.80} = 204.00 \text{ units} \implies \mathbf{5,915.92 \text{ units}}$[cite: 6]</li>
+        <li>Maturity Value on 31.03.2010: $5,915.92 \times ₹ 40.40 = \mathbf{₹ 2,39,003.17}$[cite: 6]</li>
+        <li>Total Gain $= ₹ 2,39,003.17 - ₹ 2,00,000.00 = ₹ 39,003.17$[cite: 6]</li>
+        <li>$$\text{Effective Yield (Simple)} = \frac{₹ 39,003.17}{₹ 2,00,000} \times \frac{1}{5} \times 100 = \mathbf{3.90\% \text{ p.a.}}$$[cite: 6]</li>
+        <li><small><em>(By IRR method: $\mathbf{3.645\% \text{ p.a.}}$)</em></small>[cite: 6]</li>
+      </ul>
+
+      <h4>2. Plan B (Bonus Plan)</h4>
+      <ul>
+        <li>Initial Units acquired on 01.04.2005 $= \frac{₹ 2,00,000}{35.60} = \mathbf{5,617.98 \text{ units}}$[cite: 6]</li>
+        <li>30.06.2006: Bonus 1:5 $\implies \frac{5,617.98}{5} = 1,123.60 \text{ units} \implies 6,741.58 \text{ units}$[cite: 6]</li>
+        <li>30.10.2008: Bonus 1:8 $\implies \frac{6,741.58}{8} = 842.70 \text{ units} \implies 7,584.28 \text{ units}$[cite: 6]</li>
+        <li>11.04.2009: Bonus 1:10 $\implies \frac{7,584.28}{10} = 758.43 \text{ units} \implies \mathbf{8,342.71 \text{ units}}$[cite: 6]</li>
+        <li>Maturity Value on 31.03.2010: $8,342.71 \times ₹ 39.70 = \mathbf{₹ 3,31,205.59}$[cite: 6]</li>
+        <li>Total Gain $= ₹ 3,31,205.59 - ₹ 2,00,000.00 = ₹ 1,31,205.59$[cite: 6]</li>
+        <li>$$\text{Effective Yield (Simple)} = \frac{₹ 1,31,205.59}{₹ 2,00,000} \times \frac{1}{5} \times 100 = \mathbf{13.12\% \text{ p.a.}}$$[cite: 6]</li>
+        <li><small><em>(By IRR method: $\mathbf{10.78\% \text{ p.a.}}$)</em></small>[cite: 6]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_18",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 20,
+    marks: 6,
+    question_html: `
+      <p>A mutual fund made an issue of 10,00,000 units of ₹ 10 each on January 01, 2008 with no entry load[cite: 6]. It made the following investments[cite: 6]:</p>
+      <ul>
+        <li>50,000 Equity shares of ₹ 100 each @ ₹ 160: ₹ 80,00,000[cite: 6]</li>
+        <li>7% Government Securities: ₹ 8,00,000[cite: 6]</li>
+        <li>9% Debentures (Unlisted): ₹ 5,00,000[cite: 6]</li>
+        <li>10% Debentures (Listed): ₹ 5,00,000[cite: 6]</li>
+      </ul>
+      <p>During the year, dividends of ₹ 12,00,000 were received on equity shares[cite: 6]. Interest on all debt securities was received as and when due[cite: 6]. At the end of the year, equity shares and 10% debentures are quoted at 175% and 90% of face value respectively; other investments are valued at par[cite: 6]. Operating expenses paid amounted to ₹ 5,00,000[cite: 6].</p>
+      <p>Find out the NAV per unit[cite: 6]. Also find the NAV if the fund distributed a dividend of ₹ 0.80 per unit during the year[cite: 6].</p>
+    `,
+    solution_html: `
+      <h4>1. Closing Cash Balance</h4>
+      <ul>
+        <li>Opening Cash Balance $= ₹ 1,00,00,000 - ₹ 98,00,000 = ₹ 2,00,000$[cite: 6]</li>
+        <li>Dividend received on Equity Shares $= ₹ 12,00,000$[cite: 6]</li>
+        <li>Interest on 7% Govt. Securities $= 7\% \times ₹ 8,00,000 = ₹ 56,000$[cite: 6]</li>
+        <li>Interest on 9% Debentures $= 9\% \times ₹ 5,00,000 = ₹ 45,000$[cite: 6]</li>
+        <li>Interest on 10% Debentures $= 10\% \times ₹ 5,00,000 = ₹ 50,000$[cite: 6]</li>
+        <li>Total Cash Inflows $= ₹ 2,00,000 + ₹ 12,00,000 + ₹ 1,51,000 = ₹ 15,51,000$[cite: 6]</li>
+        <li>Less: Operating Expenses paid $= (₹ 5,00,000)$[cite: 6]</li>
+        <li>Closing Cash Balance $= \mathbf{₹ 10,51,000}$[cite: 6]</li>
+      </ul>
+
+      <h4>2. Closing Portfolio Valuation and NAV</h4>
+      <ul>
+        <li>Equity Shares: $50,000 \times ₹ 100 \times 175\% = ₹ 87,50,000$[cite: 6]</li>
+        <li>7% Government Securities (at par) $= ₹ 8,00,000$[cite: 6]</li>
+        <li>9% Unlisted Debentures (at cost) $= ₹ 5,00,000$[cite: 6]</li>
+        <li>10% Listed Debentures: $₹ 5,00,000 \times 90\% = ₹ 4,50,000$[cite: 6]</li>
+        <li>Cash Balance $= ₹ 10,51,000$[cite: 6]</li>
+        <li>Total Net Assets $= \mathbf{₹ 1,15,51,000}$[cite: 6]</li>
+        <li>$$\text{NAV per Unit (No Dividend)} = \frac{₹ 1,15,51,000}{10,00,000 \text{ units}} = \mathbf{₹ 11.55}$$[cite: 6]</li>
+      </ul>
+
+      <h4>3. NAV If Dividend of ₹ 0.80 per Unit is Distributed</h4>
+      <p>$$\text{Total Dividend Distributed} = 10,00,000 \times ₹ 0.80 = ₹ 8,00,000$$[cite: 6]</p>
+      <p>$$\text{Revised Net Assets} = ₹ 1,15,51,000 - ₹ 8,00,000 = ₹ 1,07,51,000$$[cite: 6]</p>
+      <p>$$\text{NAV per Unit} = \frac{₹ 1,07,51,000}{10,00,000} = \mathbf{₹ 10.75}$$[cite: 6]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_19",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 21,
+    marks: 6,
+    question_html: `
+      <p>Determine the NAV of a regular income scheme per unit (20 lakh units of ₹ 10 face value) based on the following data[cite: 6]:</p>
+      <ul>
+        <li>Listed shares at cost: ₹ 20 crores (Purchased when Index was 1,000; present index is 2,300)[cite: 6]</li>
+        <li>Cash in hand: ₹ 1.23 crores[cite: 6]</li>
+        <li>Bonds and debentures at cost: ₹ 4.30 crores (of which unlisted ₹ 1.00 crore with a 20% diminution; listed bonds valued at ₹ 8.00 crores on NAV date)[cite: 6]</li>
+        <li>Other fixed interest securities at cost: ₹ 4.50 crores[cite: 6]</li>
+        <li>Dividend accrued: ₹ 0.80 crores[cite: 6]</li>
+        <li>Amount payable on shares: ₹ 6.32 crores; Expenditure accrued: ₹ 0.75 crores[cite: 6]</li>
+      </ul>
+    `,
+    solution_html: `
+      <h4>1. Valuation of Assets</h4>
+      <ul>
+        <li>Listed Shares (adjusted for index movement):
+          <br />$$₹ 20.00 \text{ crores} \times \frac{2,300}{1,000} = \mathbf{₹ 46.00 \text{ crores}}$$[cite: 6]
+        </li>
+        <li>Cash in Hand $= \mathbf{₹ 1.23 \text{ crores}}$[cite: 6]</li>
+        <li>Listed Bonds and Debentures (at market value) $= \mathbf{₹ 8.00 \text{ crores}}$[cite: 6]</li>
+        <li>Unlisted Bonds and Debentures:
+          <br />$$₹ 1.00 \text{ crore} \times (1 - 0.20) = \mathbf{₹ 0.80 \text{ crores}}$$[cite: 6]
+        </li>
+        <li>Other Fixed Interest Securities (at cost) $= \mathbf{₹ 4.50 \text{ crores}}$[cite: 6]</li>
+        <li>Dividend Accrued $= \mathbf{₹ 0.80 \text{ crores}}$[cite: 6]</li>
+        <li><strong>Total Assets (A): ₹ 61.33 crores</strong>[cite: 6]</li>
+      </ul>
+
+      <h4>2. Liabilities</h4>
+      <ul>
+        <li>Amount payable on shares $= ₹ 6.32 \text{ crores}$[cite: 6]</li>
+        <li>Expenditure accrued $= ₹ 0.75 \text{ crores}$[cite: 6]</li>
+        <li><strong>Total Liabilities (B): ₹ 7.07 crores</strong>[cite: 6]</li>
+      </ul>
+
+      <h4>3. Net Asset Value (NAV) per Unit</h4>
+      <p>$$\text{Net Assets} = \text{Assets (A)} - \text{Liabilities (B)} = ₹ 61.33 - ₹ 7.07 = \mathbf{₹ 54.26 \text{ crores}}$$[cite: 6]</p>
+      <p>$$\text{NAV per Unit} = \frac{₹ 54.26 \text{ crores}}{20,00,000 \text{ units}} = \frac{₹ 54,26,00,000}{20,00,000} = \mathbf{₹ 271.30}$$[cite: 6]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_20",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 22,
+    marks: 10,
+    question_html: `
+      <p>On 1st April, an open-ended mutual fund scheme had 300 lakh units outstanding with an opening NAV of ₹ 18.75[cite: 6]. At the end of April, it issued 6 lakh units at opening NAV plus 2% load, adjusted for dividend equalization[cite: 6]. At the end of May, 3 lakh units were repurchased at opening NAV less 2% exit load, adjusted for dividend equalization[cite: 6]. At the end of June, 70% of available income was distributed[cite: 6].</p>
+      <p>Quarterly financials (₹ in lakhs): Portfolio appreciation = 425.47; April income = 22.95; May income = 34.425; June income = 45.45[cite: 6]. Calculate:</p>
+      <ol type="i">
+        <li>Income available after distribution of dividend[cite: 6];</li>
+        <li>Issue price at the end of April[cite: 6];</li>
+        <li>Repurchase price at the end of May[cite: 6]; and</li>
+        <li>Net Asset Value (NAV) as on 30th June[cite: 6].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Calculation of Available Income</h4>
+      <ul>
+        <li>April Income on 300 lakh units $= ₹ 22.95 \text{ lakhs} \implies \frac{₹ 22.95}{300} = ₹ 0.0765 \text{ per unit}$[cite: 6]</li>
+        <li>Dividend equalization collected on April issue $(6 \times 0.0765) = ₹ 0.4590 \text{ lakhs}$[cite: 6]
+          <br />$$\text{Income pool at April end} = 22.95 + 0.459 = ₹ 23.4090 \text{ lakhs on 306 lakh units}$$[cite: 6]
+        </li>
+        <li>May Income on 306 lakh units $= ₹ 34.425 \text{ lakhs} \implies \frac{₹ 34.425}{306} = ₹ 0.1125 \text{ per unit}$[cite: 6]
+          <br />Cumulative income per unit by May end $= 0.0765 + 0.1125 = ₹ 0.1890$[cite: 6]
+        </li>
+        <li>Less: Dividend equalization paid on 3 lakh repurchased units $(3 \times 0.1890) = (₹ 0.5670 \text{ lakhs})$[cite: 6]
+          <br />$$\text{Income pool at May end} = 23.4090 + 34.4250 - 0.5670 = ₹ 57.2670 \text{ lakhs on 303 lakh units}$$[cite: 6]
+        </li>
+        <li>June Income on 303 lakh units $= ₹ 45.45 \text{ lakhs} \implies \frac{₹ 45.45}{303} = ₹ 0.1500 \text{ per unit}$[cite: 6]</li>
+        <li>Total Cumulative Available Income $= 57.2670 + 45.4500 = \mathbf{₹ 102.7170 \text{ lakhs}}$ (₹ 0.3390 per unit)[cite: 6]</li>
+        <li>Dividend distributed @ 70% $= 70\% \times ₹ 102.7170 = \mathbf{₹ 71.9019 \text{ lakhs}}$[cite: 6]</li>
+        <li><strong>Income Available After Distribution:</strong> $₹ 102.7170 - ₹ 71.9019 = \mathbf{₹ 30.8151 \text{ lakhs}}$[cite: 6]</li>
+      </ul>
+
+      <h4>(ii) Issue Price at the End of April</h4>
+      <p>$$\text{Issue Price} = \text{Opening NAV} + \text{Entry Load (2%)} + \text{Dividend Equalization}$$[cite: 6]</p>
+      <p>$$\text{Issue Price} = 18.75 + (2\% \times 18.75) + 0.0765 = 18.75 + 0.375 + 0.0765 = \mathbf{₹ 19.2015}$$[cite: 6]</p>
+
+      <h4>(iii) Repurchase Price at the End of May</h4>
+      <p>$$\text{Repurchase Price} = \text{Opening NAV} - \text{Exit Load (2%)} + \text{Cumulative Dividend Equalization}$$[cite: 6]</p>
+      <p>$$\text{Repurchase Price} = 18.75 - (2\% \times 18.75) + 0.1890 = 18.75 - 0.375 + 0.1890 = \mathbf{₹ 18.5640}$$[cite: 6]</p>
+
+      <h4>(iv) Closing NAV as on 30th June</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <tbody>
+            <tr><td>Opening Net Assets ($300 \times ₹ 18.75$)</td><td style="text-align:right;">₹ 5,625.0000 lakhs[cite: 6]</td></tr>
+            <tr><td>Add: Portfolio Value Appreciation</td><td style="text-align:right;">₹ 425.4700 lakhs[cite: 6]</td></tr>
+            <tr><td>Add: Proceeds from issue of 6 lakh units ($6 \times ₹ 19.2015$)</td><td style="text-align:right;">₹ 115.2090 lakhs[cite: 6]</td></tr>
+            <tr><td>Add: Total Operating Income ($22.95 + 34.425 + 45.45$)</td><td style="text-align:right;">₹ 102.8250 lakhs[cite: 6]</td></tr>
+            <tr><td>Less: Outflow on repurchase of 3 lakh units ($3 \times ₹ 18.564$)</td><td style="text-align:right;">(₹ 55.6920 lakhs)[cite: 6]</td></tr>
+            <tr><td>Less: Dividend Distributed</td><td style="text-align:right;">(₹ 71.9019 lakhs)[cite: 6]</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td>Closing Net Assets as on 30th June</td>
+              <td style="text-align:right;">₹ 6,140.9101 lakhs[cite: 6]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Closing units outstanding $= 300 + 6 - 3 = 303 \text{ lakh units}$[cite: 6].</p>
+      <p>$$\text{Closing NAV as on 30th June} = \frac{₹ 6,140.9101 \text{ lakhs}}{303 \text{ lakh units}} = \mathbf{₹ 20.2670}$$[cite: 6]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_21",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 23,
+    marks: 8,
+    question_html: `
+      <p>NAV as on 31.12.2014 of close-ended equity schemes of D Mutual Fund Ltd. is ₹ 70.71 (99% equity, 1% cash) and K Mutual Fund Ltd. is ₹ 62.50 (96% equity, 4% cash)[cite: 6]. Other parameters[cite: 6]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">D Mutual Fund Ltd.</th>
+              <th style="padding:6px; border:1px solid #ddd;">K Mutual Fund Ltd.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Sharpe Ratio</td><td>2.0</td><td>3.3</td></tr>
+            <tr><td>Treynor Ratio</td><td>15.0</td><td>15.0</td></tr>
+            <tr><td>Standard Deviation (%)</td><td>11.25</td><td>5.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Annual average operational cost is ₹ 3 per unit for both funds[cite: 6]. If the share market drops by 5% over the next month, calculate the expected NAV after one month for both schemes[cite: 6].</p>
+    `,
+    solution_html: `
+      <h4>1. Determination of Betas ($\beta$)</h4>
+      <ul>
+        <li><strong>D Mutual Fund:</strong>
+          <br />$$\text{Sharpe Ratio} = \frac{R_D - R_f}{\sigma_D} \implies 2 = \frac{R_D - R_f}{11.25} \implies R_D - R_f = 22.50\%$$[cite: 6]
+          <br />$$\text{Treynor Ratio} = \frac{R_D - R_f}{\beta_D} \implies 15 = \frac{22.50}{\beta_D} \implies \beta_D = \frac{22.50}{15} = \mathbf{1.50}$$[cite: 6]
+        </li>
+        <li><strong>K Mutual Fund:</strong>
+          <br />$$\text{Sharpe Ratio} = \frac{R_K - R_f}{\sigma_K} \implies 3.3 = \frac{R_K - R_f}{5.00} \implies R_K - R_f = 16.50\%$$[cite: 6]
+          <br />$$\text{Treynor Ratio} = \frac{R_K - R_f}{\beta_K} \implies 15 = \frac{16.50}{\beta_K} \implies \beta_K = \frac{16.50}{15} = \mathbf{1.10}$$[cite: 6]
+        </li>
+      </ul>
+
+      <h4>2. Expected NAV for D Mutual Fund</h4>
+      <ul>
+        <li>Equity component $= 99\% \times ₹ 70.71 = ₹ 70.0029$; Cash component $= 1\% \times ₹ 70.71 = ₹ 0.7071$[cite: 6]</li>
+        <li>Decline in equity value $= 5\% \times \beta_D = 5\% \times 1.50 = 7.50\%$[cite: 6]</li>
+        <li>Revised Equity Value $= ₹ 70.0029 \times (1 - 0.075) = ₹ 64.7527$[cite: 6]</li>
+        <li>Total Value before expenses $= 64.7527 + 0.7071 = ₹ 65.4598$[cite: 6]</li>
+        <li>Less: Monthly Management Expenses $= \frac{₹ 3}{12} = ₹ 0.25$[cite: 6]</li>
+        <li>$$\text{Expected NAV (D Mutual Fund)} = ₹ 65.4598 - ₹ 0.25 = \mathbf{₹ 65.21}$$[cite: 6]</li>
+      </ul>
+
+      <h4>3. Expected NAV for K Mutual Fund</h4>
+      <ul>
+        <li>Equity component $= 96\% \times ₹ 62.50 = ₹ 60.0000$; Cash component $= 4\% \times ₹ 62.50 = ₹ 2.5000$[cite: 6]</li>
+        <li>Decline in equity value $= 5\% \times \beta_K = 5\% \times 1.10 = 5.50\%$[cite: 6]</li>
+        <li>Revised Equity Value $= ₹ 60.0000 \times (1 - 0.055) = ₹ 56.7000$[cite: 6]</li>
+        <li>Total Value before expenses $= 56.7000 + 2.5000 = ₹ 59.2000$[cite: 6]</li>
+        <li>Less: Monthly Management Expenses $= \frac{₹ 3}{12} = ₹ 0.25$[cite: 6]</li>
+        <li>$$\text{Expected NAV (K Mutual Fund)} = ₹ 59.2000 - ₹ 0.25 = \mathbf{₹ 58.95}$$[cite: 6]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_22",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 24,
+    marks: 6,
+    question_html: `
+      <p>ANP Plan, a hedge fund, currently has assets of ₹ 20 crores[cite: 6]. CA. X charges a fixed management fee of 0.10% of portfolio assets and an incentive fee of 2% on returns in excess of the portfolio's historical high-water mark[cite: 6]. The maximum historical value since inception was ₹ 21 crores[cite: 6].</p>
+      <p>Compute the fee payable to CA. X if the return on the fund this year is[cite: 6]:</p>
+      <ol type="a">
+        <li>29%[cite: 6]</li>
+        <li>4.5%[cite: 6]</li>
+        <li>-1.8%[cite: 6]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>General Fee Structure</h4>
+      <ul>
+        <li>$$\text{Fixed Management Fee} = 0.10\% \times ₹ 20 \text{ crores} = \mathbf{₹ 2,00,000}$$[cite: 6]</li>
+        <li>High-Water Mark benchmark $= \mathbf{₹ 21.00 \text{ crores}}$[cite: 6]</li>
+      </ul>
+
+      <h4>Fee Payable Under Scenarios</h4>
+      <ul>
+        <li><strong>(a) Return = 29%:</strong>
+          <br />Year-end Portfolio Value $= ₹ 20 \text{ crores} \times (1 + 0.29) = ₹ 25.80 \text{ crores}$[cite: 6]
+          <br />Excess value over high-water mark $= ₹ 25.80 - ₹ 21.00 = ₹ 4.80 \text{ crores}$[cite: 6]
+          <br />Incentive Fee $= 2\% \times ₹ 4.80 \text{ crores} = ₹ 9,60,000$[cite: 6]
+          <br />$$\text{Total Fee Payable} = ₹ 2,00,000 + ₹ 9,60,000 = \mathbf{₹ 11,60,000}$$[cite: 6]
+        </li>
+        <li><strong>(b) Return = 4.5%:</strong>
+          <br />Year-end Portfolio Value $= ₹ 20 \text{ crores} \times (1 + 0.045) = ₹ 20.90 \text{ crores}$[cite: 6]
+          <br />Since ₹ 20.90 crores is less than the high-water mark of ₹ 21.00 crores, Incentive Fee $= \mathbf{Nil}$[cite: 6].
+          <br />$$\text{Total Fee Payable} = \text{Fixed Fee only} = \mathbf{₹ 2,00,000}$$[cite: 6]
+        </li>
+        <li><strong>(c) Return = -1.8%:</strong>
+          <br />Year-end Portfolio Value $= ₹ 20 \text{ crores} \times (1 - 0.018) = ₹ 19.64 \text{ crores}$[cite: 6]
+          <br />Since value is below the benchmark, Incentive Fee $= \mathbf{Nil}$[cite: 6].
+          <br />$$\text{Total Fee Payable} = \text{Fixed Fee only} = \mathbf{₹ 2,00,000}$$[cite: 6]
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH08_TYK_PR_23",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mutual Funds",
+    // placement: 25,
+    marks: 10,
+    question_html: `
+      <p>Ms. Sunidhi invested ₹ 2,00,000 equally into an equity fund (NAV ₹ 40.00) and a conservative bond portfolio in early December 2008[cite: 6]. The portfolio is rebalanced using a <strong>Constant Ratio Plan (50:50)</strong> each time the NAV of the fund increases or decreases by 15%[cite: 6].</p>
+      <p>Month-end NAVs[cite: 6]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Month</th>
+              <th style="padding:6px; border:1px solid #ddd;">NAV (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Month</th>
+              <th style="padding:6px; border:1px solid #ddd;">NAV (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Dec 2008</td><td>40.00</td><td>May 2009</td><td>37.00</td></tr>
+            <tr><td>Jan 2009</td><td>25.00</td><td>Jun 2009</td><td>42.00</td></tr>
+            <tr><td>Feb 2009</td><td>36.00</td><td>Jul 2009</td><td>43.00</td></tr>
+            <tr><td>Mar 2009</td><td>32.00</td><td>Aug 2009</td><td>50.00</td></tr>
+            <tr><td>Apr 2009</td><td>38.00</td><td>Sep 2009</td><td>52.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Determine the value of the portfolio for each level of NAV following the Constant Ratio Plan[cite: 6].</p>
+    `,
+    solution_html: `
+      <h4>Constant Ratio Rebalancing Schedule (Target Ratio = 1 : 1)</h4>
+      <p>Trigger threshold: Any change of &ge; 15% from the last rebalancing NAV[cite: 6]. Initial holding: 2,500 units @ ₹ 40.00 = ₹ 1,00,000 Equity + ₹ 1,00,000 Debt[cite: 6].</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Month</th>
+              <th style="padding:6px; border:1px solid #ddd;">NAV (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">% Change</th>
+              <th style="padding:6px; border:1px solid #ddd;">Units Held</th>
+              <th style="padding:6px; border:1px solid #ddd;">Equity Value (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Debt Value (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Total Value (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Action / Rebalance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dec 2008</td>
+              <td>40.00</td>
+              <td>—</td>
+              <td>2,500.00</td>
+              <td>1,00,000</td>
+              <td>1,00,000</td>
+              <td>2,00,000</td>
+              <td>Initial Setup</td>
+            </tr>
+            <tr>
+              <td>Jan 2009</td>
+              <td>25.00</td>
+              <td>-37.50%</td>
+              <td>3,250.00</td>
+              <td>81,250</td>
+              <td>81,250</td>
+              <td>1,62,500</td>
+              <td>Transfer ₹ 18,750 from Debt to Equity (Buy 750 units @ 25)</td>
+            </tr>
+            <tr>
+              <td>Feb 2009</td>
+              <td>36.00</td>
+              <td>+44.00%</td>
+              <td>2,753.47</td>
+              <td>99,125</td>
+              <td>99,125</td>
+              <td>1,98,250</td>
+              <td>Equity = ₹ 1,17,000; Sell 496.53 units; Transfer ₹ 17,875 to Debt</td>
+            </tr>
+            <tr>
+              <td>Mar 2009</td>
+              <td>32.00</td>
+              <td>-11.11%</td>
+              <td>2,753.47</td>
+              <td>88,111</td>
+              <td>99,125</td>
+              <td>1,87,236</td>
+              <td>No Action (&lt; 15%)</td>
+            </tr>
+            <tr>
+              <td>Apr 2009</td>
+              <td>38.00</td>
+              <td>+5.56%</td>
+              <td>2,753.47</td>
+              <td>1,04,632</td>
+              <td>99,125</td>
+              <td>2,03,757</td>
+              <td>No Action (&lt; 15%)</td>
+            </tr>
+            <tr>
+              <td>May 2009</td>
+              <td>37.00</td>
+              <td>+2.78%</td>
+              <td>2,753.47</td>
+              <td>1,01,878</td>
+              <td>99,125</td>
+              <td>2,01,003</td>
+              <td>No Action (&lt; 15%)</td>
+            </tr>
+            <tr>
+              <td>Jun 2009</td>
+              <td>42.00</td>
+              <td>+16.67%</td>
+              <td>2,559.85</td>
+              <td>1,07,514</td>
+              <td>1,07,514</td>
+              <td>2,15,028</td>
+              <td>Equity = ₹ 1,15,646; Sell 193.62 units; Transfer ₹ 8,389 to Debt</td>
+            </tr>
+            <tr>
+              <td>Jul 2009</td>
+              <td>43.00</td>
+              <td>+2.38%</td>
+              <td>2,559.85</td>
+              <td>1,10,074</td>
+              <td>1,07,514</td>
+              <td>2,17,588</td>
+              <td>No Action (&lt; 15%)</td>
+            </tr>
+            <tr>
+              <td>Aug 2009</td>
+              <td>50.00</td>
+              <td>+19.05%</td>
+              <td>2,355.06</td>
+              <td>1,17,753</td>
+              <td>1,17,753</td>
+              <td>2,35,506</td>
+              <td>Equity = ₹ 1,27,993; Sell 204.79 units; Transfer ₹ 10,239 to Debt</td>
+            </tr>
+            <tr>
+              <td>Sep 2009</td>
+              <td>52.00</td>
+              <td>+4.00%</td>
+              <td>2,355.06</td>
+              <td>1,22,463</td>
+              <td>1,17,753</td>
+              <td>2,40,216</td>
+              <td>No Action (&lt; 15%)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  },
+  // chapter9
+  {
+    question_id: "AFM_ICAIBOOK_CH09_ILLUS_01",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 1,
+    marks: 8,
+    question_html: `
+      <p>Following is a two sub-periods tree of 6-months each for the share of CAB Ltd.:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Now ($t=0$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">$S_1$ ($t=6\\text{m}$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">One Period ($t=12\\text{m}$)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="4" style="vertical-align:middle; font-weight:bold;">30.00</td>
+              <td rowspan="2" style="vertical-align:middle;">33.00</td>
+              <td>36.30</td>
+            </tr>
+            <tr><td>29.70</td></tr>
+            <tr>
+              <td rowspan="2" style="vertical-align:middle;">27.00</td>
+              <td>29.70</td>
+            </tr>
+            <tr><td>24.30</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Using the binomial model, calculate the current fair value of a regular call option on CAB Stock with exercise price $X = ₹ 28$ and Risk-Free Rate = 5% p.a. Indicate the composition of the implied riskless hedge portfolio at the valuation date.</p>
+    `,
+    solution_html: `
+      <h4>1. Parameters and Probabilities</h4>
+      <ul>
+        <li>Upward step factor: $u = \\frac{33.00}{30.00} = \\frac{36.30}{33.00} = 1.10$</li>
+        <li>Downward step factor: $d = \\frac{27.00}{30.00} = \\frac{24.30}{27.00} = 0.90$</li>
+        <li>Periodic risk-free compounding factor (6 months): $r = (1 + 0.05)^{0.5} \\approx 1.0247$</li>
+        <li>$$\\text{Risk-neutral probability } (p) = \\frac{r - d}{u - d} = \\frac{1.0247 - 0.90}{1.10 - 0.90} = \\frac{0.1247}{0.20} = \\mathbf{0.6235}$$</li>
+        <li>$$1 - p = 1 - 0.6235 = \\mathbf{0.3765}$$</li>
+      </ul>
+
+      <h4>2. Payoffs at Expiration ($t = 12\\text{ months}$, Strike $X = ₹ 28$)</h4>
+      <ul>
+        <li>Node $uu$: $C_{uu} = \\max(0, 36.30 - 28) = \\mathbf{₹ 8.30}$</li>
+        <li>Node $ud$: $C_{ud} = \\max(0, 29.70 - 28) = \\mathbf{₹ 1.70}$</li>
+        <li>Node $dd$: $C_{dd} = \\max(0, 24.30 - 28) = \\mathbf{₹ 0.00}$</li>
+      </ul>
+
+      <h4>3. Intermediate Node Option Values ($t = 6\\text{ months}$)</h4>
+      <ul>
+        <li>$$C_u = \\frac{p \\cdot C_{uu} + (1 - p) \\cdot C_{ud}}{r} = \\frac{(0.6235 \\times 8.30) + (0.3765 \\times 1.70)}{1.0247} = \\frac{5.1751 + 0.6401}{1.0247} = \\mathbf{₹ 5.673}$$</li>
+        <li>$$C_d = \\frac{p \\cdot C_{ud} + (1 - p) \\cdot C_{dd}}{r} = \\frac{(0.6235 \\times 1.70) + (0.3765 \\times 0)}{1.0247} = \\frac{1.0600}{1.0247} = \\mathbf{₹ 1.0341}$$</li>
+      </ul>
+
+      <h4>4. Current Fair Value of Call Option ($C_0$)</h4>
+      <p>$$C_0 = \\frac{p \\cdot C_u + (1 - p) \\cdot C_d}{r} = \\frac{(0.6235 \\times 5.673) + (0.3765 \\times 1.0341)}{1.0247} = \\frac{3.5371 + 0.3893}{1.0247} = \\mathbf{₹ 3.83}$$</p>
+
+      <h4>5. Hedge Ratio ($\Delta$) at Valuation Date</h4>
+      <p>$$\\Delta = \\frac{C_u - C_d}{S_u - S_d} = \\frac{5.673 - 1.0341}{33 - 27} = \\frac{4.6389}{6} = \\mathbf{0.7731 \\text{ shares per call}}$$</p>
+      <p><small><em>(Note: ICAI study material simplifies $\\Delta = \\frac{5 - 0}{33 - 27} = \\frac{5}{6}$ shares held for every 1 call option written)</em></small>.</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_ILLUS_02",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 2,
+    marks: 4,
+    question_html: `
+      <p>The current market price of an equity share of Penchant Ltd. is ₹ 420. Within 3 months, the maximum and minimum prices are expected to be ₹ 500 and ₹ 400 respectively. If the risk-free rate of interest is 8% p.a., what should be the value of a 3-month Call option under the &ldquo;Risk Neutral&rdquo; method at a strike price of ₹ 450? (Given: $e^{0.02} = 1.0202$)</p>
+    `,
+    solution_html: `
+      <h4>1. Risk-Neutral Probability Formulation</h4>
+      <p>Let $p$ be the probability of the stock price increasing to ₹ 500:</p>
+      <p>$$(500 - 420)p + (400 - 420)(1 - p) = 420 \\times (e^{0.08 \\times 0.25} - 1)$$</p>
+      <p>$$80p - 20(1 - p) = 420 \\times (1.0202 - 1)$$</p>
+      <p>$$100p - 20 = 420 \\times 0.0202 = 8.484 \\implies 100p = 28.484 \\implies p = \\mathbf{0.2848}$$</p>
+
+      <h4>2. Call Option Payoffs</h4>
+      <ul>
+        <li>If price rises to ₹ 500: $\\text{Payoff} = \\max(0, 500 - 450) = ₹ 50$</li>
+        <li>If price drops to ₹ 400: $\\text{Payoff} = \\max(0, 400 - 450) = ₹ 0$</li>
+      </ul>
+
+      <h4>3. Value of Call Option</h4>
+      <p>$$C_0 = \\frac{p \\times 50 + (1 - p) \\times 0}{e^{0.02}} = \\frac{0.2848 \\times 50}{1.0202} = \\frac{14.24}{1.0202} = \\mathbf{₹ 13.96}$$</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_ILLUS_03",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 3,
+    marks: 10,
+    question_html: `
+      <p>The shares of TIC Ltd. are currently priced at ₹ 415 and a call option exercisable in 3 months has an exercise price of ₹ 400. Risk-free interest rate is 5% p.a. and standard deviation (volatility) of share price is 22%. TIC Ltd. will not declare any dividend over the next 3 months.</p>
+      <ol type="i">
+        <li>Is the call option worth buying for ₹ 25?</li>
+        <li>Calculate the value of the call option if the current price is considered as ₹ 380.</li>
+        <li>What would be the worth of a put option if the current price is ₹ 380?</li>
+        <li>If TIC Ltd.'s share price is ₹ 408 and a dividend of ₹ 10 is expected in 2 months, calculate the value of the call option.</li>
+      </ol>
+      <p><em>Given: $\\ln(1.0375) = 0.03681; \\ln(0.95) = -0.05129; \\ln(0.9952) = -0.00481; e^{0.0125} = 1.012578; e^{0.008333} = 1.0084$</em></p>
+    `,
+    solution_html: `
+      <h4>(i) Call Valuation at $S = ₹ 415$</h4>
+      <p>$$d_1 = \\frac{\\ln(415/400) + [0.05 + 0.5(0.22)^2](0.25)}{0.22\\sqrt{0.25}} = \\frac{0.03681 + 0.01855}{0.11} = \\mathbf{0.5033}$$</p>
+      <p>$$d_2 = d_1 - 0.11 = 0.5033 - 0.11 = \\mathbf{0.3933}$$</p>
+      <p>From Normal Distribution Tables: $N(d_1) = 0.6928, \\quad N(d_2) = 0.6529$.</p>
+      <p>$$C = 415(0.6928) - \\frac{400}{1.012578}(0.6529) = 287.512 - 257.916 = \\mathbf{₹ 29.60}$$</p>
+      <p><strong>Conclusion:</strong> The market premium of ₹ 25 is lower than the fair value of ₹ 29.60; the option is underpriced and <strong>worth buying</strong>.</p>
+
+      <h4>(ii) Call Valuation at $S = ₹ 380$</h4>
+      <p>$$d_1 = \\frac{\\ln(380/400) + 0.01855}{0.11} = \\frac{-0.05129 + 0.01855}{0.11} = \\mathbf{-0.2976}$$</p>
+      <p>$$d_2 = -0.2976 - 0.11 = \\mathbf{-0.4076}$$</p>
+      <p>$$N(d_1) = N(-0.2976) = 0.3830, \\quad N(d_2) = N(-0.4076) = 0.3418$$</p>
+      <p>$$C = 380(0.3830) - \\frac{400}{1.012578}(0.3418) = 145.54 - 135.02 = \\mathbf{₹ 10.52}$$</p>
+
+      <h4>(iii) Put Valuation at $S = ₹ 380$ (Put-Call Parity)</h4>
+      <p>$$V_p = -S + C + \\frac{X}{e^{rt}} = -380 + 10.52 + \\frac{400}{1.012578} = -380 + 10.52 + 395.03 = \\mathbf{₹ 25.55}$$</p>
+
+      <h4>(iv) Call Valuation with Dividend ($S = ₹ 408, \\text{Div} = ₹ 10 \\text{ in } 2\\text{ months}$)</h4>
+      <p>$$\\text{PV of Dividend} = 10 \\times e^{-0.05 \\times (2/12)} = \\frac{10}{e^{0.008333}} = \\frac{10}{1.0084} = ₹ 9.917$$</p>
+      <p>$$\\text{Adjusted Stock Price } (S^*) = 408 - 9.917 = \\mathbf{₹ 398.083}$$</p>
+      <p>$$d_1 = \\frac{\\ln(398.083/400) + 0.01855}{0.11} = \\frac{-0.00481 + 0.01855}{0.11} = \\mathbf{0.1249 \\approx 0.125}$$</p>
+      <p>$$d_2 = 0.125 - 0.11 = \\mathbf{0.015}$$</p>
+      <p>$$N(d_1) = 0.5498, \\quad N(d_2) = 0.5060$$</p>
+      <p>$$C = 398.083(0.5498) - \\frac{400}{1.012578}(0.5060) = 218.866 - 199.886 = \\mathbf{₹ 18.98}$$</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_ILLUS_04",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 4,
+    marks: 8,
+    question_html: `
+      <p>ABC Ltd. is a pharmaceutical company possessing a patent for a drug called &lsquo;Aidrex&rsquo; with a patent life of 15 years. Development and marketing costs are estimated at $ 12.5 million. The expected present value of cash flows from sales over 15 years is $ 16.7 million. Cash flows exhibit a variance of 26.8% ($\sigma^2 = 0.268$). The current yield on 15-year Treasury Bonds is 7.8%. Determine the value of the patent using the Black-Scholes Real Options model.</p>
+      <p><em>Given: $\\ln(1.336) = 0.2897; e^{-1.0005} = 0.3677; e^{-1.1700} = 0.3104; N(1.2315) = 0.8910; N(-0.7735) = 0.2196$</em></p>
+    `,
+    solution_html: `
+      <h4>1. Parameter Mapping</h4>
+      <ul>
+        <li>Current Asset Value ($S$) = $ 16.7 million</li>
+        <li>Exercise Cost ($E$) = $ 12.5 million</li>
+        <li>Time to Expiration ($t$) = 15 years</li>
+        <li>Variance ($\sigma^2$) = 0.268 $\implies \sigma = \sqrt{0.268} = 0.5177$</li>
+        <li>Risk-free rate ($R$) = 7.8% = 0.078</li>
+        <li>Cost of delay ($D$) $= \frac{1}{15} = 0.0667$</li>
+      </ul>
+
+      <h4>2. Black-Scholes Intermediate Calculations</h4>
+      <p>$$d_1 = \\frac{\\ln(16.7/12.5) + [0.078 - 0.0667 + 0.5(0.268)](15)}{0.5177\\sqrt{15}} = \\frac{0.2897 + (0.1453 \\times 15)}{0.5177 \\times 3.8730} = \\frac{2.4692}{2.005} = \\mathbf{1.2315}$$</p>
+      <p>$$d_2 = d_1 - \\sigma\\sqrt{t} = 1.2315 - 2.005 = \\mathbf{-0.7735}$$</p>
+
+      <h4>3. Patent Valuation</h4>
+      <p>$$C = S \\cdot e^{-Dt} N(d_1) - E \\cdot e^{-Rt} N(d_2)$$</p>
+      <p>$$C = [16.7 \\times e^{-1.0005} \\times 0.8910] - [12.5 \\times e^{-1.1700} \\times 0.2196]$$</p>
+      <p>$$C = [16.7 \\times 0.3677 \\times 0.8910] - [12.5 \\times 0.3104 \\times 0.2196] = 5.471 - 0.852 = \\mathbf{\\$ 4.619 \\text{ million}}$$</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_ILLUS_05",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 5,
+    marks: 6,
+    question_html: `
+      <p>IPL is considering building a new plant to produce pesticides. The PV of the proposal is ₹ 100 crore without an abandonment option. Under favorable market conditions, the PV increases by 30%; under sluggish conditions, it drops by 40%. The project can be abandoned at Year 1 for ₹ 80 crore. If the risk-free rate is 8%, find the value of the abandonment option.</p>
+    `,
+    solution_html: `
+      <h4>1. Payoffs at Year 1</h4>
+      <ul>
+        <li>Favorable conditions ($S_u = ₹ 130 \\text{ crore}$): Continue project $\implies \\text{Abandonment Payoff} = \\max(0, 80 - 130) = \\mathbf{₹ 0}$</li>
+        <li>Sluggish conditions ($S_d = ₹ 60 \\text{ crore}$): Abandon project $\implies \\text{Abandonment Payoff} = 80 - 60 = \\mathbf{₹ 20 \\text{ crore}}$</li>
+      </ul>
+
+      <h4>2. Risk-Neutral Probability ($p$)</h4>
+      <p>$$8\\% = 0.30p - 0.40(1 - p) \\implies 0.08 = 0.70p - 0.40 \\implies 0.70p = 0.48 \\implies p = \\mathbf{0.6857 \\approx 0.686}$$</p>
+      <p>$$1 - p = 1 - 0.686 = \\mathbf{0.314}$$</p>
+
+      <h4>3. Value of Abandonment Option (Put Option)</h4>
+      <p>$$\\text{Expected Payoff at Year 1} = (0.686 \\times 0) + (0.314 \\times 20) = \\mathbf{₹ 6.28 \\text{ crore}}$$</p>
+      <p>$$\\text{Present Value of Option} = \\frac{₹ 6.28 \\text{ crore}}{1.08} = \\mathbf{₹ 5.81 \\text{ crore}}$$</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_ILLUS_06",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 6,
+    marks: 8,
+    question_html: `
+      <p>MIS Ltd. is considering a solar power plant costing ₹ 2.50 crore, yielding savings in electricity of ₹ 21 lakh per year forever at current tariffs. Next year, due to potential tariff reforms, annual perpetual savings may shift to either ₹ 12 lakh or ₹ 35 lakh. WACC is 10% and the risk-free rate is 8%. Decide whether MIS Ltd. should invest immediately or wait and see.</p>
+    `,
+    solution_html: `
+      <h4>1. Evaluation as on Today</h4>
+      <p>$$\\text{PV of Perpetual Savings} = \\frac{₹ 21 \\text{ lakh}}{0.10} = ₹ 2.10 \\text{ crore}$$</p>
+      <p>$$\\text{NPV Today} = ₹ 2.10 \\text{ crore} - ₹ 2.50 \\text{ crore} = \\mathbf{-₹ 0.40 \\text{ crore}}$$</p>
+      <p>Immediate acceptance is financially unviable.</p>
+
+      <h4>2. Evaluation After One Year</h4>
+      <ul>
+        <li><strong>Tariff Increases:</strong> $\\text{PV} = \\frac{₹ 35 \\text{ lakh}}{0.10} = ₹ 3.50 \\text{ crore} \\implies \\text{NPV} = ₹ 3.50 - ₹ 2.50 = +₹ 1.00 \\text{ crore}$
+          <br />Return $= \\frac{3.50}{2.50} - 1 = +40\\%$
+        </li>
+        <li><strong>Tariff Decreases:</strong> $\\text{PV} = \\frac{₹ 12 \\text{ lakh}}{0.10} = ₹ 1.20 \\text{ crore} \\implies \\text{NPV} = ₹ 1.20 - ₹ 2.50 = -₹ 1.30 \\text{ crore}$
+          <br />Return $= \\frac{1.20}{2.50} - 1 = -52\\%$
+        </li>
+      </ul>
+
+      <h4>3. Risk-Neutral Valuation of Waiting Option</h4>
+      <p>$$p(0.40) + (1 - p)(-0.52) = 0.08 \\implies 0.92p = 0.60 \\implies p = \\mathbf{0.652}$$</p>
+      <p>$$\\text{Expected Payoff at Year 1} = [0.652 \\times ₹ 1.00 \\text{ crore}] + [0.348 \\times (-₹ 1.30 \\text{ crore})] = ₹ 0.1996 \\text{ crore (₹ 19.96 lakh)}$$</p>
+      <p>$$\\text{PV of Payoff} = \\frac{₹ 19.96 \\text{ lakh}}{1.08} = \\mathbf{₹ 18.48 \\text{ lakh}} \\quad \\left(\\text{or } \\frac{19.96}{1.10} = \\mathbf{₹ 18.15 \\text{ lakh}}\\right)$$</p>
+      <p><strong>Recommendation:</strong> MIS Ltd. should <strong>wait and see</strong>, as waiting avoids downside loss and creates a positive option value.</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_TH_01",
+    question_type: "theory",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 7,
+    marks: 6,
+    question_html: `
+      <p>What are the reasons for stock index futures becoming more popular financial derivatives over the stock futures segment in India?</p>
+    `,
+    solution_html: `
+      <p>Stock index futures are widely preferred over single stock futures by institutional and retail investors for the following reasons:</p>
+      <ul>
+        <li><strong>Portfolio Hedging Flexibility:</strong> Index futures provide macro-level hedging against systematic market risk for entire equity portfolios, which single-stock futures cannot accomplish efficiently.</li>
+        <li><strong>Higher Cost Efficiency:</strong> Hedging a diversified basket of stocks via a single index contract entails significantly lower brokerage, exchange turnover fees, and STT than trading multiple individual stock futures.</li>
+        <li><strong>Immunity from Price Manipulation:</strong> Because a broad index represents a diversified basket of large-cap stocks, it is virtually impossible for operators to corner or manipulate, unlike individual single-stock counters.</li>
+        <li><strong>Lower Volatility and Margin Requirements:</strong> Being an average representation of the broader market, index volatility is lower than individual stock volatility, resulting in lower statutory capital adequacy and margin requirements.</li>
+        <li><strong>Cash Settlement:</strong> Index futures contracts are settled in cash against the official closing index value, avoiding the logistical challenges of mandatory physical share delivery.</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_TH_02",
+    question_type: "theory",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 8,
+    marks: 4,
+    question_html: `
+      <p>Write a short note on Marking to Market.</p>
+    `,
+    solution_html: `
+      <p><strong>Marking to Market (MTM)</strong> is the daily settlement process executed by clearing houses of derivative exchanges whereby outstanding futures contracts are repriced at the day's official settlement price.</p>
+      <ul>
+        <li><strong>Daily Settlement of P&amp;L:</strong> Profits and losses resulting from intraday price movements are credited or debited to the margin accounts of the long and short participants at the close of every trading session.</li>
+        <li><strong>Contract Reset:</strong> At the close of business, the prevailing futures contract is effectively closed out and replaced with a new contract positioned at the latest settlement price.</li>
+        <li><strong>Counterparty Default Mitigation:</strong> By requiring participants falling below maintenance margin thresholds to deposit additional variation margin before the next trading day, MTM prevents the accumulation of losses and eliminates systemic credit risk.</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_TH_03",
+    question_type: "theory",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 9,
+    marks: 4,
+    question_html: `
+      <p>State any four assumptions of the Black-Scholes Model.</p>
+    `,
+    solution_html: `
+      <p>The <strong>Black-Scholes Option Pricing Model</strong> relies on the following key assumptions:</p>
+      <ol>
+        <li><strong>European-Style Exercise:</strong> The options are European and can only be exercised on the final expiration date.</li>
+        <li><strong>Absence of Friction:</strong> There are no transaction costs, brokerage charges, or taxes, and all securities are infinitely divisible.</li>
+        <li><strong>Constant Risk-Free Rate:</strong> The short-term risk-free interest rate is known, constant, and continuously compounded over the life of the option.</li>
+        <li><strong>No Interim Cash Flows:</strong> The underlying stock does not pay dividends during the tenure of the contract.</li>
+        <li><strong>Lognormal Distribution of Prices:</strong> Stock prices follow a geometric Brownian motion (random walk), meaning continuous returns are normally distributed with constant volatility ($\sigma$).</li>
+      </ol>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_TH_04",
+    question_type: "theory",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 10,
+    marks: 6,
+    question_html: `
+      <p>Define the term &ldquo;Greeks&rdquo; with respect to options.</p>
+    `,
+    solution_html: `
+      <p><strong>Option Greeks</strong> are sensitivity measures derived from option pricing models that quantify how an option's premium responds to shifts in underlying parameters:</p>
+      <ul>
+        <li><strong>Delta ($\Delta$):</strong> Measures the change in option price for a unit change in the underlying stock price ($\\frac{\\partial C}{\\partial S}$). It also defines the hedge ratio for delta-neutral portfolios.</li>
+        <li><strong>Gamma ($\Gamma$):</strong> Measures the rate of change of Delta for a unit movement in the underlying price ($\\frac{\\partial^2 C}{\\partial S^2}$).</li>
+        <li><strong>Theta ($\Theta$):</strong> Measures the sensitivity of the option's value to the passage of time (time decay, $\\frac{\\partial C}{\\partial t}$).</li>
+        <li><strong>Vega ($\nu$):</strong> Measures the change in option premium for a 1% change in the volatility of the underlying asset ($\\frac{\\partial C}{\\partial \\sigma}$).</li>
+        <li><strong>Rho ($\rho$):</strong> Measures the responsiveness of the option's theoretical value to a 1% change in the risk-free interest rate ($\\frac{\\partial C}{\\partial r}$).</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_01",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 11,
+    marks: 4,
+    question_html: `
+      <p>The 6-months forward price of a security is ₹ 208.18. The borrowing rate is 8% per annum payable with monthly rests. What should be the spot price?</p>
+    `,
+    solution_html: `
+      <h4>Formula</h4>
+      <p>$$F = S_0 \\left(1 + \\frac{r}{n}\\right)^{nt}$$</p>
+      <p>Where $F = ₹ 208.18$, $r = 0.08$, $n = 12$, and $t = 0.5$ ($nt = 6$ months).</p>
+
+      <h4>Computation</h4>
+      <p>$$208.18 = S_0 \\left(1 + \\frac{0.08}{12}\\right)^6 = S_0 (1.006667)^6$$</p>
+      <p>$$208.18 = S_0 (1.040707) \\implies S_0 = \\frac{208.18}{1.040707} \\approx \\mathbf{₹ 200.00}$$</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_02",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 12,
+    marks: 6,
+    question_html: `
+      <p>The following data relate to Anand Ltd.'s share price:</p>
+      <ul>
+        <li>Current price per share: ₹ 1,800</li>
+        <li>6-months futures price per share: ₹ 1,950</li>
+        <li>Borrowing rate: 12% p.a.</li>
+      </ul>
+      <ol type="i">
+        <li>Calculate the theoretical minimum price of a 6-month forward contract.</li>
+        <li>Explain the arbitrage opportunity.</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Theoretical Minimum Forward Price</h4>
+      <p>$$F_0 = S_0 (1 + r \\cdot t) = ₹ 1,800 \\left(1 + 0.12 \\times \\frac{6}{12}\\right) = ₹ 1,800 \\times 1.06 = \\mathbf{₹ 1,908.00}$$</p>
+
+      <h4>(ii) Arbitrage Strategy</h4>
+      <p>The actual market futures price (₹ 1,950) is higher than the theoretical fair price (₹ 1,908). The futures contract is <strong>overvalued</strong>.</p>
+      <ul>
+        <li><strong>Borrow</strong> ₹ 1,800 at 12% p.a. for 6 months.</li>
+        <li><strong>Buy</strong> one share of Anand Ltd. in the cash market at ₹ 1,800.</li>
+        <li><strong>Sell</strong> one 6-month futures contract at ₹ 1,950.</li>
+        <li><strong>At Month 6:</strong> Deliver the share against the futures contract for ₹ 1,950 and repay the bank loan with interest of $₹ 1,800 \\times 1.06 = ₹ 1,908$.</li>
+        <li>$$\\text{Riskless Arbitrage Profit} = ₹ 1,950 - ₹ 1,908 = \\mathbf{₹ 42.00 \\text{ per share}}$$</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_03",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 13,
+    marks: 6,
+    question_html: `
+      <p>On 31.08.2011, the value of a stock index was ₹ 2,200. The risk-free rate is 8% p.a. The annualized dividend yields are: September = 3%, October = 3%, November = 4%, December = 3%.</p>
+      <p>Assuming interest is continuously compounded daily, find out the futures price deliverable on 31.12.2011. (Given: $e^{0.01583} = 1.01593$)</p>
+    `,
+    solution_html: `
+      <h4>1. Average Dividend Yield over the 4-Month Contract</h4>
+      <p>$$y = \\frac{3\\% + 3\\% + 4\\% + 3\\%}{4} = \\mathbf{3.25\\% \\text{ p.a.}}$$</p>
+
+      <h4>2. Theoretical Futures Price (Cost of Carry Model)</h4>
+      <p>$$t = \\frac{4}{12} = 0.3333 \\text{ years}$$</p>
+      <p>$$F = S_0 \\cdot e^{(r - y)t} = 2,200 \\cdot e^{(0.08 - 0.0325) \\times (4/12)} = 2,200 \\cdot e^{0.0475 \\times 0.3333} = 2,200 \\cdot e^{0.01583}$$</p>
+      <p>$$F = 2,200 \\times 1.01593 = \\mathbf{₹ 2,235.05}$$</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_04",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 14,
+    marks: 6,
+    question_html: `
+      <p>Calculate the theoretical price of 3-month PQR futures, if PQR (Face Value ₹ 10) quotes at ₹ 220 on NSE, the actual 3-month futures quotes at ₹ 230, the borrowing rate is 15% p.a., and an annual dividend of 25% is payable before expiry. Examine arbitrage opportunities.</p>
+    `,
+    solution_html: `
+      <h4>1. Theoretical Futures Price</h4>
+      <ul>
+        <li>Dividend receivable before expiry: $25\\% \\times ₹ 10 = ₹ 2.50$</li>
+        <li>Borrowing cost for 3 months: $₹ 220 \\times 15\\% \\times \\frac{3}{12} = ₹ 8.25$</li>
+      </ul>
+      <p>$$F_0 = S_0 + \\text{Carrying Cost} - \\text{Dividend} = 220 + 8.25 - 2.50 = \\mathbf{₹ 225.75}$$</p>
+
+      <h4>2. Arbitrage Execution</h4>
+      <p>Since the market futures price (₹ 230) exceeds the theoretical fair price (₹ 225.75), futures are <strong>overvalued</strong>.</p>
+      <ul>
+        <li>Borrow ₹ 220 at 15% p.a. for 3 months and buy PQR in cash market.</li>
+        <li>Sell 3-month futures at ₹ 230.</li>
+        <li>Collect dividend of ₹ 2.50 prior to maturity.</li>
+        <li>At maturity, deliver the stock for ₹ 230 and settle the loan of ₹ 228.25 ($₹ 220 + ₹ 8.25$).</li>
+        <li>$$\\text{Arbitrage Profit} = (₹ 230.00 + ₹ 2.50) - ₹ 228.25 = \\mathbf{₹ 4.25 \\text{ per share}}$$</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_05",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 15,
+    marks: 8,
+    question_html: `
+      <p>BSE Sensex is currently at 5,000. A portfolio is valued at ₹ 10,10,000 with a Beta of 1.5. Risk-free rate is 9% p.a. and dividend yield on the index is 6% p.a. A 4-month futures contract on BSE index (lot size 50) is used to hedge the portfolio over the next 3 months.</p>
+      <ol type="i">
+        <li>Calculate the price of the 4-month futures contract.</li>
+        <li>Calculate the gain/loss on the short futures position if the index turns out to be 4,500 in 3 months.</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Price of 4-Month Futures Contract</h4>
+      <p>$$F_0 = S_0 + S_0(r - y)t = 5,000 + 5,000(0.09 - 0.06) \\times \\frac{4}{12} = 5,000 + 50 = \\mathbf{5,050 \\text{ points}}$$</p>
+      <p>$$\\text{Contract Value} = 5,050 \\times 50 = \\mathbf{₹ 2,52,500}$$</p>
+
+      <h4>(ii) Gain on Short Futures Position After 3 Months</h4>
+      <p>$$\\text{Number of Contracts to Short} = \\frac{\\text{Portfolio Value} \\times \\beta}{\\text{Contract Value}} = \\frac{₹ 10,10,000 \\times 1.5}{₹ 2,52,500} = \\mathbf{6 \\text{ contracts}}$$</p>
+      <p>At Month 3, the index is 4,500 and the futures contract has 1 month remaining to expiry:</p>
+      <p>$$F_3 = 4,500 + 4,500(0.09 - 0.06) \\times \\frac{1}{12} = 4,500 + 11.25 = \\mathbf{4,511.25 \\text{ points}}$$</p>
+      <p>$$\\text{Gain on Short Futures} = 6 \\times (5,050 - 4,511.25) \\times 50 = 6 \\times 538.75 \\times 50 = \\mathbf{₹ 1,61,625}$$</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_06",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 16,
+    marks: 6,
+    question_html: `
+      <p>The share of X Ltd. is currently selling for ₹ 300. Risk-free interest rate is 0.8% per month. A 3-month futures contract is selling for ₹ 312. Develop an arbitrage strategy and show what your riskless profit will be 3 months hence assuming no dividends.</p>
+    `,
+    solution_html: `
+      <h4>1. Theoretical 3-Month Futures Price</h4>
+      <p>$$F_0 = S_0 (1 + r)^3 = ₹ 300 \\times (1.008)^3 = ₹ 300 \\times 1.02419 = \\mathbf{₹ 307.26}$$</p>
+      <p>Since the market futures price (₹ 312) exceeds ₹ 307.26, futures are <strong>overvalued</strong>.</p>
+
+      <h4>2. Arbitrage Cash Flow Schedule</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Action</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">Cash Flow Today ($t=0$)</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">Cash Flow at Month 3 ($t=3$)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Borrow ₹ 300 at 0.8% per month for 3 months</td>
+              <td style="text-align:right;">+₹ 300.00</td>
+              <td style="text-align:right;">$-300 \\times (1.008)^3 = -₹ 307.26$</td>
+            </tr>
+            <tr>
+              <td>Buy 1 share in cash market</td>
+              <td style="text-align:right;">-₹ 300.00</td>
+              <td style="text-align:right;">$+S_T$</td>
+            </tr>
+            <tr>
+              <td>Sell 1 futures contract at ₹ 312</td>
+              <td style="text-align:right;">₹ 0.00</td>
+              <td style="text-align:right;">$₹ 312.00 - S_T$</td>
+            </tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td>Net Cash Flow</td>
+              <td style="text-align:right;">₹ 0.00</td>
+              <td style="text-align:right;"><strong>+₹ 4.74</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The arbitrageur locks in a riskless profit of <strong>₹ 4.74 per share</strong>.</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_07",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 17,
+    marks: 6,
+    question_html: `
+      <p>A Mutual Fund holds ₹ 90 crores in diversified equities (Beta = 1.1) and ₹ 10 crores in Cash and Bank Balances. The index futures is trading at 4,300 (lot size 50). The Fund Manager anticipates a 10% fall in the index. How many index futures contracts should be shorted for a perfect hedge? Substantiate your answer.</p>
+    `,
+    solution_html: `
+      <h4>1. Determination of Number of Contracts</h4>
+      <p>Cash carries a beta of 0 and does not require hedging.</p>
+      <p>$$\\text{Number of Contracts} = \\frac{\\text{Equity Portfolio Value} \\times \\beta}{\\text{Index Level} \\times \\text{Lot Size}} = \\frac{₹ 90,00,00,000 \\times 1.1}{4,300 \\times 50} = \\frac{₹ 99,00,00,000}{₹ 2,15,000} = \\mathbf{4,605 \\text{ contracts}}$$</p>
+
+      <h4>2. Proof of Hedge Effectiveness (10% Index Fall)</h4>
+      <ul>
+        <li>Loss in equity portfolio: $₹ 90 \\text{ crore} \\times (10\\% \\times 1.1) = \\mathbf{-₹ 9.90 \\text{ crore}}$</li>
+        <li>Gain from short futures position:
+          <br />$$4,605 \\times (4,300 \\times 10\\%) \\times 50 = 4,605 \\times 430 \\times 50 = \\mathbf{+₹ 9.90 \\text{ crore}}$$
+        </li>
+      </ul>
+      <p>The gain on the futures position completely offsets the portfolio loss, validating the hedge.</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_08",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 18,
+    marks: 8,
+    question_html: `
+      <p>A trader holds shares worth ₹ 85 lakhs (Beta = 1.6) and cash of ₹ 15 lakhs. After 3 months, the price of shares drops by 3.2%. Determine:</p>
+      <ol type="i">
+        <li>Current portfolio beta.</li>
+        <li>Portfolio beta after 3 months if the trader goes long on ₹ 100 lakhs of Nifty futures today.</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Current Portfolio Beta</h4>
+      <p>$$\\beta_p = \\left(\\frac{85}{100} \\times 1.6\\right) + \\left(\\frac{15}{100} \\times 0\\right) = \\mathbf{1.36}$$</p>
+
+      <h4>(ii) Portfolio Beta After 3 Months with Long Futures</h4>
+      <ul>
+        <li>Implied Index Movement:
+          $$\\text{Market Drop} = \\frac{\\text{Drop in Equity Portfolio}}{\\beta_{\\text{equity}}} = \\frac{3.2\\%}{1.6} = \\mathbf{2.00\\%}$$
+        </li>
+        <li>Loss on Long Futures: $2\\% \\times ₹ 100 \\text{ lakhs} = ₹ 2.00 \\text{ lakhs}$ (Mark-to-Market Margin outflow)</li>
+        <li>Remaining Cash Balance: $₹ 15.00 - ₹ 2.00 = ₹ 13.00 \\text{ lakhs}$</li>
+        <li>Value of Stock Portfolio: $₹ 85.00 \\times (1 - 0.032) = ₹ 82.28 \\text{ lakhs}$</li>
+        <li>Total Portfolio Value: $₹ 82.28 + ₹ 13.00 = \\mathbf{₹ 95.28 \\text{ lakhs}}$</li>
+        <li>Percentage Change in Total Portfolio:
+          $$\\frac{₹ 100 - ₹ 95.28}{₹ 100} \\times 100 = \\mathbf{4.72\\%}$$
+        </li>
+        <li>$$\\text{Revised Portfolio Beta} = \\frac{\\Delta \\text{Portfolio}}{\\Delta \\text{Market}} = \\frac{4.72\\%}{2.00\\%} = \\mathbf{2.36}$$</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_09",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 19,
+    marks: 6,
+    question_html: `
+      <p>Determine the position on the index future required to obtain a complete hedge against the following portfolio:</p>
+      <ul>
+        <li>Long cash position of ₹ 50 lakhs in Right Limited ($\beta = 1.25$)</li>
+        <li>Short cash position of ₹ 25 lakhs in Wrong Limited ($\beta = 0.90$)</li>
+        <li>Short cash position of ₹ 20 lakhs in Fair Limited ($\beta = 0.75$)</li>
+      </ul>
+    `,
+    solution_html: `
+      <h4>Hedge Position Formulation</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Company</th>
+              <th style="padding:6px; border:1px solid #ddd;">Cash Position</th>
+              <th style="padding:6px; border:1px solid #ddd;">Amount (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Beta</th>
+              <th style="padding:6px; border:1px solid #ddd;">Weighted Exposure (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Required Index Position</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Right Ltd.</td>
+              <td>Long</td>
+              <td>50,00,000</td>
+              <td>1.25</td>
+              <td>+62,50,000</td>
+              <td>Short 62,50,000</td>
+            </tr>
+            <tr>
+              <td>Wrong Ltd.</td>
+              <td>Short</td>
+              <td>25,00,000</td>
+              <td>0.90</td>
+              <td>-22,50,000</td>
+              <td>Long 22,50,000</td>
+            </tr>
+            <tr>
+              <td>Fair Ltd.</td>
+              <td>Short</td>
+              <td>20,00,000</td>
+              <td>0.75</td>
+              <td>-15,00,000</td>
+              <td>Long 15,00,000</td>
+            </tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td colspan="4">Net Exposure</td>
+              <td>+25,00,000</td>
+              <td><strong>Short Index Futures of ₹ 25,00,000</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The speculator should take a <strong>Short position in Index Futures worth ₹ 25 lakhs</strong> to achieve a complete hedge.</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_10",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 20,
+    marks: 8,
+    question_html: `
+      <p>Ram buys 10,000 shares of X Ltd. at ₹ 22 ($\beta = 1.5$) and sells short 5,000 shares of A Ltd. at ₹ 40 ($\beta = 2.0$). He obtains a complete hedge using Nifty futures at ₹ 1,000 each. The next day, share X drops by 2%, share A appreciates by 3%, and Nifty futures drops by 1.5%. He closes all positions. What is the overall profit or loss?</p>
+    `,
+    solution_html: `
+      <h4>1. Determination of Futures Hedge Position</h4>
+      <ul>
+        <li>Exposure in X Ltd. $= 10,000 \\times ₹ 22 \\times 1.5 = +₹ 3,30,000$</li>
+        <li>Exposure in A Ltd. $= -5,000 \\times ₹ 40 \\times 2.0 = -₹ 4,00,000$</li>
+        <li>Net Beta-weighted Exposure $= ₹ 3,30,000 - ₹ 4,00,000 = -₹ 70,000$</li>
+      </ul>
+      <p>To hedge this net short exposure, Ram must go <strong>Long on 70 Nifty futures contracts</strong> ($\\frac{₹ 70,000}{₹ 1,000}$).</p>
+
+      <h4>2. Payoff at Close Out Next Day</h4>
+      <ul>
+        <li>Loss on Long position in X Ltd. (2% fall):
+          <br />$$10,000 \\times ₹ 22 \\times (-0.02) = \\mathbf{-₹ 4,400}$$
+        </li>
+        <li>Loss on Short position in A Ltd. (3% rise):
+          <br />$$-5,000 \\times ₹ 40 \\times (+0.03) = \\mathbf{-₹ 6,000}$$
+        </li>
+        <li>Loss on Long Nifty Futures (1.5% drop):
+          <br />$$70 \\times ₹ 1,000 \\times (-0.015) = \\mathbf{-₹ 1,050}$$
+        </li>
+      </ul>
+      <p>$$\\text{Overall Net Loss} = -4,400 - 6,000 - 1,050 = \\mathbf{-₹ 11,450}$$</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_11",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 21,
+    marks: 8,
+    question_html: `
+      <p>On January 1, 2013, an investor has a portfolio of 5 shares as given below[cite: 7]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Security</th>
+              <th style="padding:6px; border:1px solid #ddd;">Price (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">No. of Shares</th>
+              <th style="padding:6px; border:1px solid #ddd;">Beta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>A</td><td>349.30</td><td>5,000</td><td>1.15</td></tr>
+            <tr><td>B</td><td>480.50</td><td>7,000</td><td>0.40</td></tr>
+            <tr><td>C</td><td>593.52</td><td>8,000</td><td>0.90</td></tr>
+            <tr><td>D</td><td>734.70</td><td>10,000</td><td>0.95</td></tr>
+            <tr><td>E</td><td>824.85</td><td>2,000</td><td>0.85</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The cost of capital to the investor is 10.5% p.a. (assume 365 days in a year)[cite: 7]. You are required to calculate:</p>
+      <ol type="i">
+        <li>The beta of his portfolio[cite: 7].</li>
+        <li>The theoretical value of the NIFTY futures for February 2013 (maturity: 58 days)[cite: 7].</li>
+        <li>The number of contracts of NIFTY the investor needs to sell to get a full hedge until February for his portfolio if the current value of NIFTY is 5,900 and NIFTY futures have a lot size of 200 units[cite: 7].</li>
+        <li>The number of futures contracts the investor should trade if he desires to reduce the beta of his portfolio to 0.6[cite: 7].</li>
+      </ol>
+      <p><em>Given: $\ln(1.105) = 0.0998$ and $e^{0.015858} = 1.01598$</em>[cite: 7]</p>
+    `,
+    solution_html: `
+      <h4>(i) Portfolio Beta Calculation</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Security</th>
+              <th style="padding:6px; border:1px solid #ddd;">Price (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Shares</th>
+              <th style="padding:6px; border:1px solid #ddd;">Market Value (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Weight ($w_i$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Beta ($\beta_i$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">$w_i \cdot \beta_i$</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>A</td><td>349.30</td><td>5,000</td><td>17,46,500</td><td>0.0926</td><td>1.15</td><td>0.1065</td></tr>
+            <tr><td>B</td><td>480.50</td><td>7,000</td><td>33,63,500</td><td>0.1784</td><td>0.40</td><td>0.0714</td></tr>
+            <tr><td>C</td><td>593.52</td><td>8,000</td><td>47,48,160</td><td>0.2518</td><td>0.90</td><td>0.2266</td></tr>
+            <tr><td>D</td><td>734.70</td><td>10,000</td><td>73,47,000</td><td>0.3897</td><td>0.95</td><td>0.3702</td></tr>
+            <tr><td>E</td><td>824.85</td><td>2,000</td><td>16,49,700</td><td>0.0875</td><td>0.85</td><td>0.0744</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td colspan="3">Total Portfolio Value ($V_P$)</td>
+              <td>1,88,54,860</td>
+              <td>1.0000</td>
+              <td>—</td>
+              <td><strong>0.849</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>$$\text{Portfolio Beta } (\beta_P) = \mathbf{0.849}$$[cite: 7]</p>
+
+      <h4>(ii) Theoretical Value of February 2013 NIFTY Futures</h4>
+      <p>Continuous compounding rate: $r = \ln(1.105) = 0.0998$[cite: 7].</p>
+      <p>Time period: $t = \frac{58}{365} = 0.1589 \text{ years}$[cite: 7].</p>
+      <p>$$F = S_0 \cdot e^{rt} = 5,900 \cdot e^{0.0998 \times 0.1589} = 5,900 \cdot e^{0.015858}$$[cite: 7]</p>
+      <p>$$F = 5,900 \times 1.01598 = \mathbf{₹ 5,994.28}$$[cite: 7]</p>
+      <p><small><em>(Alternatively, using simple continuous exponent: $5,900 \times e^{0.105 \times (58/365)} = ₹ 5,999.24$)</em></small>[cite: 7]</p>
+
+      <h4>(iii) Number of Contracts to Sell for Full Hedge</h4>
+      <p>$$\text{Contract Value} = 5,994.28 \times 200 = ₹ 11,98,856$$[cite: 7]</p>
+      <p>$$\text{Number of Contracts} = \frac{V_P \times \beta_P}{\text{Futures Contract Value}} = \frac{₹ 1,88,54,860 \times 0.849}{₹ 11,98,856} = 13.35 \approx \mathbf{13 \text{ contracts (or 14 contracts)}}$$[cite: 7]</p>
+
+      <h4>(iv) Number of Contracts to Reduce Portfolio Beta to 0.60</h4>
+      <p>$$\text{Number of Contracts} = \frac{V_P \times (\beta_P - \beta_P^*)}{\text{Futures Contract Value}} = \frac{₹ 1,88,54,860 \times (0.849 - 0.600)}{5,994.28 \times 200}$$[cite: 7]</p>
+      <p>$$\text{Number of Contracts} = \frac{₹ 1,88,54,860 \times 0.249}{₹ 11,98,856} = 3.92 \approx \mathbf{4 \text{ contracts to sell}}$$[cite: 7]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_12",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 22,
+    marks: 8,
+    question_html: `
+      <p>Details about a portfolio of shares of an investor are as below[cite: 7]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Shares</th>
+              <th style="padding:6px; border:1px solid #ddd;">No. of Shares (lakhs)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Price per Share (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Beta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>A Ltd.</td><td>3.00</td><td>500</td><td>1.40</td></tr>
+            <tr><td>B Ltd.</td><td>4.00</td><td>750</td><td>1.20</td></tr>
+            <tr><td>C Ltd.</td><td>2.00</td><td>250</td><td>1.60</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The investor wants to reduce the portfolio beta to 0.91 under two alternative strategies[cite: 7]:</p>
+      <ol type="i">
+        <li>Dispose of a part of his existing portfolio to acquire risk-free securities, or[cite: 7]</li>
+        <li>Take an appropriate position on Nifty Futures currently trading at 8,125 (lot multiplier: 200)[cite: 7].</li>
+      </ol>
+      <p>Determine: (1) Portfolio beta, (2) Value of risk-free securities to be acquired, (3) Number of shares of each company to be disposed of, (4) Number of Nifty contracts to be traded, and (5) The portfolio beta verification for a 2% rise in Nifty[cite: 7].</p>
+    `,
+    solution_html: `
+      <h4>1. Portfolio Valuation and Current Beta</h4>
+      <ul>
+        <li>A Ltd.: $3.00 \text{ lakh} \times ₹ 500 = ₹ 1,500 \text{ lakhs}$ (Weight $= 0.30$; $\beta = 1.40$)[cite: 7]</li>
+        <li>B Ltd.: $4.00 \text{ lakh} \times ₹ 750 = ₹ 3,000 \text{ lakhs}$ (Weight $= 0.60$; $\beta = 1.20$)[cite: 7]</li>
+        <li>C Ltd.: $2.00 \text{ lakh} \times ₹ 250 = ₹ 500 \text{ lakhs}$ (Weight $= 0.10$; $\beta = 1.60$)[cite: 7]</li>
+        <li>Total Portfolio Value $= \mathbf{₹ 5,000 \text{ lakhs}}$[cite: 7]</li>
+      </ul>
+      <p>$$\beta_P = (0.30 \times 1.40) + (0.60 \times 1.20) + (0.10 \times 1.60) = 0.42 + 0.72 + 0.16 = \mathbf{1.30}$$[cite: 7]</p>
+
+      <h4>2. Value of Risk-Free Securities to be Acquired</h4>
+      <p>Let $p$ be the proportion allocated to risk-free assets ($\beta = 0$)[cite: 7]:</p>
+      <p>$$0.91 = (0 \times p) + 1.30(1 - p) \implies 1.30p = 1.30 - 0.91 = 0.39 \implies p = \mathbf{0.30 \text{ (30\%)}}$$[cite: 7]</p>
+      <p>$$\text{Value of Risk-Free Securities} = 30\% \times ₹ 5,000 \text{ lakhs} = \mathbf{₹ 1,500 \text{ lakhs}}$$[cite: 7]</p>
+
+      <h4>3. Number of Shares to be Disposed Of Proportionately</h4>
+      <ul>
+        <li>A Ltd.: $\frac{30\% \times ₹ 1,500 \text{ lakhs}}{₹ 500} = \frac{₹ 450 \text{ lakhs}}{₹ 500} = \mathbf{0.90 \text{ lakh shares}}$[cite: 7]</li>
+        <li>B Ltd.: $\frac{60\% \times ₹ 1,500 \text{ lakhs}}{₹ 750} = \frac{₹ 900 \text{ lakhs}}{₹ 750} = \mathbf{1.20 \text{ lakh shares}}$[cite: 7]</li>
+        <li>C Ltd.: $\frac{10\% \times ₹ 1,500 \text{ lakhs}}{₹ 250} = \frac{₹ 150 \text{ lakhs}}{₹ 250} = \mathbf{0.60 \text{ lakh shares}}$[cite: 7]</li>
+      </ul>
+
+      <h4>4. Number of Nifty Contracts to be Sold</h4>
+      <p>$$\text{Number of Contracts} = \frac{(\beta_P - \beta_P^*) \times V_P}{\text{Nifty Value} \times \text{Multiplier}} = \frac{(1.30 - 0.91) \times ₹ 50,00,00,000}{8,125 \times 200}$$[cite: 7]</p>
+      <p>$$\text{Number of Contracts} = \frac{0.39 \times ₹ 50,00,00,000}{₹ 16,25,000} = \mathbf{120 \text{ contracts to sell}}$$[cite: 7]</p>
+
+      <h4>5. Verification of Portfolio Beta for 2% Rise in Nifty</h4>
+      <ul>
+        <li>Increase in equity portfolio value: $2\% \times 1.30 = 2.6\% \implies ₹ 5,000 \times 1.026 = ₹ 5,130 \text{ lakhs}$[cite: 7]</li>
+        <li>Mark-to-Market loss on short futures:
+          <br />$$120 \times (8,125 \times 2\%) \times 200 = 120 \times 162.50 \times 200 = ₹ 39 \text{ lakhs}$$[cite: 7]
+        </li>
+        <li>Net Value of Hedged Position $= ₹ 5,130 - ₹ 39 = \mathbf{₹ 5,091 \text{ lakhs}}$[cite: 7]</li>
+        <li>$$\text{Net Change in Portfolio} = \frac{₹ 5,091 - ₹ 5,000}{₹ 5,000} \times 100 = 1.82\%$$[cite: 7]</li>
+        <li>$$\text{Effective Beta} = \frac{1.82\%}{2.00\%} = \mathbf{0.91}$$[cite: 7]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_13",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 23,
+    marks: 8,
+    question_html: `
+      <p>On April 1, 2015, an investor has a portfolio of 8 securities with continuously compounded cost of capital of 20% p.a.[cite: 7]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Security</th>
+              <th style="padding:6px; border:1px solid #ddd;">Price (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Shares</th>
+              <th style="padding:6px; border:1px solid #ddd;">Beta</th>
+              <th style="padding:6px; border:1px solid #ddd;">Security</th>
+              <th style="padding:6px; border:1px solid #ddd;">Price (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Shares</th>
+              <th style="padding:6px; border:1px solid #ddd;">Beta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>A</td><td>29.40</td><td>400</td><td>0.59</td><td>E</td><td>281.90</td><td>400</td><td>1.16</td></tr>
+            <tr><td>B</td><td>318.70</td><td>800</td><td>1.32</td><td>F</td><td>275.40</td><td>750</td><td>1.24</td></tr>
+            <tr><td>C</td><td>660.20</td><td>150</td><td>0.87</td><td>G</td><td>514.60</td><td>300</td><td>1.05</td></tr>
+            <tr><td>D</td><td>5.20</td><td>300</td><td>0.35</td><td>H</td><td>170.50</td><td>900</td><td>0.76</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Current NIFTY is 8,500 (lot size: 25)[cite: 7]. May futures quote at 8,700 and June futures at 8,850[cite: 7]. Calculate:</p>
+      <ol type="i">
+        <li>The beta of the portfolio[cite: 7].</li>
+        <li>The theoretical value of the futures contract expiring in May and June (Given: $e^{0.03} = 1.03045, e^{0.04} = 1.04081, e^{0.05} = 1.05127$)[cite: 7].</li>
+        <li>Number of NIFTY contracts to sell to hedge until June for: (A) Total portfolio, (B) 50% of portfolio, and (C) 120% of portfolio[cite: 7].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Portfolio Valuation and Beta</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Security</th>
+              <th style="padding:6px; border:1px solid #ddd;">Market Value (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Beta ($\beta$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Value &times; $\beta$ (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>A</td><td>11,760</td><td>0.59</td><td>6,938.40</td></tr>
+            <tr><td>B</td><td>2,54,960</td><td>1.32</td><td>3,36,547.20</td></tr>
+            <tr><td>C</td><td>99,030</td><td>0.87</td><td>86,156.10</td></tr>
+            <tr><td>D</td><td>1,560</td><td>0.35</td><td>546.00</td></tr>
+            <tr><td>E</td><td>1,12,760</td><td>1.16</td><td>1,30,801.60</td></tr>
+            <tr><td>F</td><td>2,06,550</td><td>1.24</td><td>2,56,122.00</td></tr>
+            <tr><td>G</td><td>1,54,380</td><td>1.05</td><td>1,62,099.00</td></tr>
+            <tr><td>H</td><td>1,53,450</td><td>0.76</td><td>1,16,622.00</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td>Total</td>
+              <td>9,94,450</td>
+              <td>—</td>
+              <td>10,95,832.30</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>$$\beta_P = \frac{₹ 10,95,832.30}{₹ 9,94,450} = \mathbf{1.102}$$[cite: 7]</p>
+
+      <h4>(ii) Theoretical Futures Prices</h4>
+      <ul>
+        <li><strong>May Futures ($t = 2/12 = 0.1667$):</strong>
+          <br />$$F_{\text{May}} = 8,500 \cdot e^{0.20 \times (2/12)} = 8,500 \cdot e^{0.0333}$$[cite: 7]
+          <br />By linear interpolation: $e^{0.0333} = 1.03045 + \frac{0.0033}{0.01}(1.04081 - 1.03045) = 1.03045 + 0.00342 = 1.03387$[cite: 7]
+          <br />$$F_{\text{May}} = 8,500 \times 1.03387 = \mathbf{₹ 8,787.90 \approx ₹ 8,788}$$[cite: 7]
+        </li>
+        <li><strong>June Futures ($t = 3/12 = 0.25$):</strong>
+          <br />$$F_{\text{June}} = 8,500 \cdot e^{0.20 \times 0.25} = 8,500 \cdot e^{0.05} = 8,500 \times 1.05127 = \mathbf{₹ 8,935.80}$$[cite: 7]
+        </li>
+      </ul>
+
+      <h4>(iii) Number of June Futures Contracts to Sell (Quoted Price: 8,850; Lot: 25)</h4>
+      <p>$$\text{Formula} = \frac{\text{Hedged Value} \times \beta_P}{\text{Futures Price} \times \text{Lot Size}} = \frac{\text{Hedged Value} \times 1.102}{8,850 \times 25} = \frac{\text{Hedged Value} \times 1.102}{2,21,250}$$[cite: 7]</p>
+      <ul>
+        <li><strong>(A) Total Portfolio:</strong> $\frac{₹ 9,94,450 \times 1.102}{2,21,250} = 4.953 \approx \mathbf{5 \text{ contracts}}$[cite: 7]</li>
+        <li><strong>(B) 50% of Portfolio:</strong> $\frac{(0.50 \times ₹ 9,94,450) \times 1.102}{2,21,250} = 2.476 \approx \mathbf{2 \text{ contracts}}$[cite: 7]</li>
+        <li><strong>(C) 120% of Portfolio:</strong> $\frac{(1.20 \times ₹ 9,94,450) \times 1.102}{2,21,250} = 5.943 \approx \mathbf{6 \text{ contracts}}$[cite: 7]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_14",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 24,
+    marks: 8,
+    question_html: `
+      <p>Sensex futures are traded with a multiplier of 50[cite: 7]. Daily closing prices during February 2009 are as follows[cite: 7]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Date</th>
+              <th style="padding:6px; border:1px solid #ddd;">Closing Price</th>
+              <th style="padding:6px; border:1px solid #ddd;">Date</th>
+              <th style="padding:6px; border:1px solid #ddd;">Closing Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>04.02.2009</td><td>3,296.50</td><td>11.02.2009</td><td>3,263.80</td></tr>
+            <tr><td>05.02.2009</td><td>3,294.40</td><td>12.02.2009</td><td>3,292.00</td></tr>
+            <tr><td>06.02.2009</td><td>3,230.40</td><td>14.02.2009</td><td>3,309.30</td></tr>
+            <tr><td>07.02.2009</td><td>3,212.30</td><td>17.02.2009</td><td>3,257.80</td></tr>
+            <tr><td>10.02.2009</td><td>3,267.50</td><td>18.02.2009</td><td>3,102.60</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Abhishek bought one Sensex futures contract on 04.02.2009[cite: 7]. Daily absolute change average is ₹ 10,000 and standard deviation is ₹ 2,000[cite: 7]. Maintenance margin is 75% of initial margin[cite: 7]. Determine the daily balances in the margin account and variation margin calls[cite: 7].</p>
+    `,
+    solution_html: `
+      <h4>1. Margin Requirements</h4>
+      <ul>
+        <li>$$\text{Initial Margin} = \mu + 3\sigma = ₹ 10,000 + 3(₹ 2,000) = \mathbf{₹ 16,000}$$[cite: 7]</li>
+        <li>$$\text{Maintenance Margin} = 75\% \times ₹ 16,000 = \mathbf{₹ 12,000}$$[cite: 7]</li>
+      </ul>
+
+      <h4>2. Daily Marking to Market (MTM) Schedule</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Date</th>
+              <th style="padding:6px; border:1px solid #ddd;">Closing Price</th>
+              <th style="padding:6px; border:1px solid #ddd;">Daily Gain / (Loss) (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Margin A/c Before Call (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Margin Call (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Closing Balance (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>04.02</td><td>3,296.50</td><td>—</td><td>—</td><td>—</td><td>16,000</td></tr>
+            <tr><td>05.02</td><td>3,294.40</td><td>$50(3,294.40 - 3,296.50) = -105$</td><td>15,895</td><td>—</td><td>15,895</td></tr>
+            <tr><td>06.02</td><td>3,230.40</td><td>$50(3,230.40 - 3,294.40) = -3,200$</td><td>12,695</td><td>—</td><td>12,695</td></tr>
+            <tr><td>07.02</td><td>3,212.30</td><td>$50(3,212.30 - 3,230.40) = -905$</td><td>11,790</td><td><strong>4,210</strong></td><td>16,000</td></tr>
+            <tr><td>10.02</td><td>3,267.50</td><td>$50(3,267.50 - 3,212.30) = +2,760$</td><td>18,760</td><td>—</td><td>18,760</td></tr>
+            <tr><td>11.02</td><td>3,263.80</td><td>$50(3,263.80 - 3,267.50) = -185$</td><td>18,575</td><td>—</td><td>18,575</td></tr>
+            <tr><td>12.02</td><td>3,292.00</td><td>$50(3,292.00 - 3,263.80) = +1,410$</td><td>19,985</td><td>—</td><td>19,985</td></tr>
+            <tr><td>14.02</td><td>3,309.30</td><td>$50(3,309.30 - 3,292.00) = +865$</td><td>20,850</td><td>—</td><td>20,850</td></tr>
+            <tr><td>17.02</td><td>3,257.80</td><td>$50(3,257.80 - 3,309.30) = -2,575$</td><td>18,275</td><td>—</td><td>18,275</td></tr>
+            <tr><td>18.02</td><td>3,102.60</td><td>$50(3,102.60 - 3,257.80) = -7,760$</td><td>10,515</td><td><strong>5,485</strong></td><td>16,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><em>Note: Whenever the margin account balance dips below the maintenance threshold of ₹ 12,000, a variation margin call is issued to restore the account to the initial level of ₹ 16,000[cite: 7].</em></p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_15",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 25,
+    marks: 4,
+    question_html: `
+      <p>Mr. A purchased a 3-month Call option for 100 shares in XYZ Ltd. at a premium of ₹ 30 per share with strike ₹ 550[cite: 7]. He also purchased a 3-month Put option for 100 shares at a premium of ₹ 5 per share with strike ₹ 450[cite: 7]. The spot price is ₹ 500[cite: 7].</p>
+      <p>Calculate the profit or loss that Mr. A would make assuming the market price falls to ₹ 350 at the end of 3 months[cite: 7].</p>
+    `,
+    solution_html: `
+      <h4>Payoff Analysis at Expiry ($S_T = ₹ 350$)</h4>
+      <ul>
+        <li><strong>Call Option ($X = ₹ 550$):</strong> Since $S_T (₹ 350) < X (₹ 550)$, the call expires out-of-the-money and is <strong>not exercised</strong> (Payoff = ₹ 0)[cite: 7].</li>
+        <li><strong>Put Option ($X = ₹ 450$):</strong> Since $S_T (₹ 350) < X (₹ 450)$, the put is exercised[cite: 7]:
+          <br />$$\text{Gross Gain} = (₹ 450 - ₹ 350) \times 100 = ₹ 100 \times 100 = \mathbf{₹ 10,000}$$[cite: 7]
+        </li>
+        <li><strong>Total Premium Paid:</strong>
+          <br />$$(₹ 30 + ₹ 5) \times 100 = ₹ 35 \times 100 = \mathbf{₹ 3,500}$$[cite: 7]
+        </li>
+      </ul>
+      <p>$$\text{Net Profit} = \text{Gross Gain} - \text{Total Premium} = ₹ 10,000 - ₹ 3,500 = \mathbf{+₹ 6,500}$$[cite: 7]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_16",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 26,
+    marks: 4,
+    question_html: `
+      <p>An investor holds a straddle/combination to trade a corporate takeover rumour: purchased one 3-month Call with strike ₹ 42 at ₹ 2 premium, and one 3-month Put with strike ₹ 40 at ₹ 1 premium (contract size: 100 shares)[cite: 7].</p>
+      <ol type="i">
+        <li>Determine the net payoff if the share price rises to ₹ 43 in 3 months[cite: 7].</li>
+        <li>Determine the net payoff if the share price falls to ₹ 36 in 3 months[cite: 7].</li>
+      </ol>
+    `,
+    solution_html: `
+      <p>$$\text{Total Premium Paid} = (₹ 2 + ₹ 1) \times 100 = \mathbf{₹ 300}$$[cite: 7]</p>
+
+      <h4>(i) Share Price Rises to ₹ 43</h4>
+      <ul>
+        <li>Call Option ($X = ₹ 42$): Exercised $\implies \text{Gain} = (43 - 42) \times 100 = \mathbf{₹ 100}$[cite: 7]</li>
+        <li>Put Option ($X = ₹ 40$): Not exercised (₹ 0)[cite: 7]</li>
+        <li>$$\text{Net Payoff} = ₹ 100 - ₹ 300 = \mathbf{-₹ 200 \text{ (Net Loss)}}$$[cite: 7]</li>
+      </ul>
+
+      <h4>(ii) Share Price Falls to ₹ 36</h4>
+      <ul>
+        <li>Call Option ($X = ₹ 42$): Not exercised (₹ 0)[cite: 7]</li>
+        <li>Put Option ($X = ₹ 40$): Exercised $\implies \text{Gain} = (40 - 36) \times 100 = \mathbf{₹ 400}$[cite: 7]</li>
+        <li>$$\text{Net Payoff} = ₹ 400 - ₹ 300 = \mathbf{+₹ 100 \text{ (Net Profit)}}$$[cite: 7]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_17",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 27,
+    marks: 4,
+    question_html: `
+      <p>Equity shares of PQR Ltd. quote at ₹ 320[cite: 7]. Expected market prices after 6 months are[cite: 7]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Market Price (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">180</th>
+              <th style="padding:6px; border:1px solid #ddd;">260</th>
+              <th style="padding:6px; border:1px solid #ddd;">280</th>
+              <th style="padding:6px; border:1px solid #ddd;">320</th>
+              <th style="padding:6px; border:1px solid #ddd;">400</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Probability</td><td>0.10</td><td>0.20</td><td>0.50</td><td>0.10</td><td>0.10</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>A put option with a strike price of ₹ 300 can be written[cite: 7]. Find the expected value of the option at maturity[cite: 7].</p>
+    `,
+    solution_html: `
+      <h4>Expected Payoff Calculation (Put Strike $X = ₹ 300$)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Future Price ($S_T$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Probability ($p$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Put Payoff $\max(0, 300 - S_T)$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Expected Value ($p \cdot \text{Payoff}$)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>180</td><td>0.10</td><td>$300 - 180 = 120$</td><td>12.00</td></tr>
+            <tr><td>260</td><td>0.20</td><td>$300 - 260 = 40$</td><td>8.00</td></tr>
+            <tr><td>280</td><td>0.50</td><td>$300 - 280 = 20$</td><td>10.00</td></tr>
+            <tr><td>320</td><td>0.10</td><td>0 (Out of the money)</td><td>0.00</td></tr>
+            <tr><td>400</td><td>0.10</td><td>0 (Out of the money)</td><td>0.00</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td colspan="3">Total Expected Value at Maturity</td>
+              <td><strong>₹ 30.00</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_18",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 28,
+    marks: 6,
+    question_html: `
+      <p>An investor purchased a 4-month call option on X Ltd. (CMP ₹ 132, Strike ₹ 150)[cite: 7]. Probability distribution of future prices[cite: 7]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Expected Price (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">120</th>
+              <th style="padding:6px; border:1px solid #ddd;">140</th>
+              <th style="padding:6px; border:1px solid #ddd;">160</th>
+              <th style="padding:6px; border:1px solid #ddd;">180</th>
+              <th style="padding:6px; border:1px solid #ddd;">190</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Probability</td><td>0.05</td><td>0.20</td><td>0.50</td><td>0.10</td><td>0.15</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ol type="i">
+        <li>Expected share price at the end of 4 months[cite: 7].</li>
+        <li>Value of call option if the exercise price prevails at maturity[cite: 7].</li>
+        <li>Expected value of the call option held to maturity[cite: 7].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Expected Share Price at the End of 4 Months</h4>
+      <p>$$E(S_T) = (120 \times 0.05) + (140 \times 0.20) + (160 \times 0.50) + (180 \times 0.10) + (190 \times 0.15)$$[cite: 7]</p>
+      <p>$$E(S_T) = 6.00 + 28.00 + 80.00 + 18.00 + 28.50 = \mathbf{₹ 160.50}$$[cite: 7]</p>
+
+      <h4>(ii) Value of Call Option if Exercise Price ($S_T = ₹ 150$) Prevails</h4>
+      <p>$$\text{Intrinsic Value} = \max(0, 150 - 150) = \mathbf{Nil}$$[cite: 7]</p>
+
+      <h4>(iii) Expected Value of Call Option Held to Maturity</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Price ($S_T$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Prob. ($p$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Payoff $\max(0, S_T - 150)$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Expected Payoff ($p \cdot \text{Payoff}$)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>120</td><td>0.05</td><td>0</td><td>0.00</td></tr>
+            <tr><td>140</td><td>0.20</td><td>0</td><td>0.00</td></tr>
+            <tr><td>160</td><td>0.50</td><td>10</td><td>5.00</td></tr>
+            <tr><td>180</td><td>0.10</td><td>30</td><td>3.00</td></tr>
+            <tr><td>190</td><td>0.15</td><td>40</td><td>6.00</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td colspan="3">Total Expected Value of Call Option</td>
+              <td><strong>₹ 14.00</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_19",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 29,
+    marks: 6,
+    question_html: `
+      <p>Mr. X establishes the following strategy on Delta Corporation's stock (CMP = ₹ 500; Lot = 100 shares)[cite: 7]:</p>
+      <ul>
+        <li>Buy 3-month Call (Strike ₹ 550, Premium ₹ 30)[cite: 7]</li>
+        <li>Buy 3-month Put (Strike ₹ 450, Premium ₹ 5)[cite: 7]</li>
+      </ul>
+      <p>Determine profit or loss if the price after 3 months[cite: 7]:</p>
+      <ol type="i">
+        <li>Remains at ₹ 500[cite: 7];</li>
+        <li>Falls to ₹ 350[cite: 7];</li>
+        <li>Rises to ₹ 600[cite: 7].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>Initial Cost</h4>
+      <p>$$\text{Total Premium Paid} = (₹ 30 + ₹ 5) \times 100 = \mathbf{₹ 3,500}$$[cite: 7]</p>
+
+      <h4>(i) Price Remains at ₹ 500</h4>
+      <ul>
+        <li>Call ($X=550$): Out of money (Payoff = ₹ 0)[cite: 7]</li>
+        <li>Put ($X=450$): Out of money (Payoff = ₹ 0)[cite: 7]</li>
+        <li>$$\text{Net Result} = 0 - ₹ 3,500 = \mathbf{-₹ 3,500 \text{ (Net Loss)}}$$[cite: 7]</li>
+      </ul>
+
+      <h4>(ii) Price Falls to ₹ 350</h4>
+      <ul>
+        <li>Call ($X=550$): Out of money (₹ 0)[cite: 7]</li>
+        <li>Put ($X=450$): Exercised $\implies (450 - 350) \times 100 = +₹ 10,000$[cite: 7]</li>
+        <li>$$\text{Net Result} = ₹ 10,000 - ₹ 3,500 = \mathbf{+₹ 6,500 \text{ (Net Profit)}}$$[cite: 7]</li>
+      </ul>
+
+      <h4>(iii) Price Rises to ₹ 600</h4>
+      <ul>
+        <li>Call ($X=550$): Exercised $\implies (600 - 550) \times 100 = +₹ 5,000$[cite: 7]</li>
+        <li>Put ($X=450$): Out of money (₹ 0)[cite: 7]</li>
+        <li>$$\text{Net Result} = ₹ 5,000 - ₹ 3,500 = \mathbf{+₹ 1,500 \text{ (Net Profit)}}$$[cite: 7]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_20",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 30,
+    marks: 6,
+    question_html: `
+      <p>The equity share of VCC Ltd. is quoted at ₹ 210[cite: 7]. A 3-month Call option is available at a premium of ₹ 6 and a 3-month Put option at ₹ 5 (both strike ₹ 220)[cite: 7].</p>
+      <p>Ascertain the net payoffs to the holder of a call option and put option separately if the share price on exercise day is ₹ 200, 210, 220, 230, and 240[cite: 7]. Indicate the price range for gainful exercise[cite: 7].</p>
+    `,
+    solution_html: `
+      <h4>Net Payoff Schedules (Strike $X = ₹ 220$)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Spot Price ($S_T$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Call Gross Payoff $\max(0, S_T - 220)$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Call Net Payoff $(\text{Gross} - 6)$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Put Gross Payoff $\max(0, 220 - S_T)$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Put Net Payoff $(\text{Gross} - 5)$</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>200</td><td>0</td><td>-6</td><td>20</td><td><strong>+15</strong></td></tr>
+            <tr><td>210</td><td>0</td><td>-6</td><td>10</td><td><strong>+5</strong></td></tr>
+            <tr><td>220</td><td>0</td><td>-6</td><td>0</td><td><strong>-5</strong></td></tr>
+            <tr><td>230</td><td>10</td><td><strong>+4</strong></td><td>0</td><td>-5</td></tr>
+            <tr><td>240</td><td>20</td><td><strong>+14</strong></td><td>0</td><td>-5</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>Gainful Exercise Range</h4>
+      <ul>
+        <li><strong>Call Option:</strong> Exercised whenever $S_T > ₹ 220$, and breaks even at $₹ 220 + ₹ 6 = \mathbf{₹ 226}$[cite: 7]. It yields a positive net profit at any price <strong>above ₹ 226</strong>[cite: 7].</li>
+        <li><strong>Put Option:</strong> Exercised whenever $S_T < ₹ 220$, and breaks even at $₹ 220 - ₹ 5 = \mathbf{₹ 215}$[cite: 7]. It yields a positive net profit at any price <strong>below ₹ 215</strong>[cite: 7].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_21",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 31,
+    marks: 4,
+    question_html: `
+      <p>Sumana wanted to buy shares of EIL which have an expected range of ₹ 411 to ₹ 592 a month later (CMP ₹ 421)[cite: 7]. Her broker suggests that the price could rise to ₹ 522 and advises buying a 1-month Call option with strike ₹ 522[cite: 7].</p>
+      <p>Find the risk-neutral probability of the share price rising to ₹ 592[cite: 7]. (Take risk-free rate as 3.60% for one month, $e^{0.036} = 1.037$)[cite: 7].</p>
+    `,
+    solution_html: `
+      <h4>1. Parameter Identification</h4>
+      <ul>
+        <li>Current Stock Price ($S$) = ₹ 421[cite: 7]</li>
+        <li>Upper Price ($S_u$) = ₹ 592 $\implies u = \frac{592}{421} = 1.406$[cite: 7]</li>
+        <li>Lower Price ($S_d$) = ₹ 411 $\implies d = \frac{411}{421} = 0.976$[cite: 7]</li>
+        <li>Compounding factor: $e^{rt} = e^{0.036} = 1.037$[cite: 7]</li>
+      </ul>
+
+      <h4>2. Risk-Neutral Probability ($p$)</h4>
+      <p>$$p = \frac{e^{rt} - d}{u - d} = \frac{1.037 - 0.976}{1.406 - 0.976} = \frac{0.061}{0.430} = \mathbf{0.1418}$$[cite: 7]</p>
+      <p>The probability of the share price rising to ₹ 592 is only <strong>14.18%</strong>, indicating that the call option carries a high degree of speculative risk[cite: 7].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_22",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 32,
+    marks: 6,
+    question_html: `
+      <p>ABC Ltd. shares sell at ₹ 600[cite: 7]. In 3 months, price may go up to ₹ 780 (prob 60%) or down to ₹ 480 (prob 40%)[cite: 7]. A call option has strike ₹ 630 at 3 months[cite: 7]. Risk-free rate is 10% p.a.[cite: 7]</p>
+      <ol type="i">
+        <li>What combination of shares and options provides a perfect hedge?[cite: 7]</li>
+        <li>What should be the value of the option today?[cite: 7]</li>
+        <li>What is the expected rate of return on the option?[cite: 7]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Hedge Ratio ($\Delta$)</h4>
+      <ul>
+        <li>At $S_u = ₹ 780$: Call Payoff $C_u = 780 - 630 = ₹ 150$[cite: 7]</li>
+        <li>At $S_d = ₹ 480$: Call Payoff $C_d = \max(0, 480 - 630) = ₹ 0$[cite: 7]</li>
+      </ul>
+      <p>$$\Delta = \frac{C_u - C_d}{S_u - S_d} = \frac{150 - 0}{780 - 480} = \frac{150}{300} = \mathbf{0.50 \text{ shares per option}}$$[cite: 7]</p>
+      <p>Mr. Dayal should <strong>buy 0.50 shares for every 1 call option written</strong> (or buy 1 share against 2 calls written)[cite: 7].</p>
+
+      <h4>(ii) Current Value of Call Option</h4>
+      <p>Portfolio cash inflow at Month 3 under either state[cite: 7]:</p>
+      <p>$$(0.50 \times 780) - 150 = 390 - 150 = ₹ 240 \quad \text{or} \quad (0.50 \times 480) - 0 = ₹ 240$$[cite: 7]</p>
+      <p>Periodic risk-free rate (3 months): $1 + \left(0.10 \times \frac{3}{12}\right) = 1.025$[cite: 7].</p>
+      <p>$$(0.50 \times 600 - C_0) \times 1.025 = 240 \implies (300 - C_0) \times 1.025 = 240$$[cite: 7]</p>
+      <p>$$300 - C_0 = \frac{240}{1.025} = 234.146 \implies C_0 = 300 - 234.146 = \mathbf{₹ 65.85}$$[cite: 7]</p>
+
+      <h4>(iii) Expected Rate of Return on Call Option</h4>
+      <p>$$\text{Expected Expiration Value} = (150 \times 0.60) + (0 \times 0.40) = ₹ 90.00$$[cite: 7]</p>
+      <p>$$\text{Expected Rate of Return} = \frac{₹ 90.00 - ₹ 65.85}{₹ 65.85} \times 100 = \frac{₹ 24.15}{₹ 65.85} \times 100 = \mathbf{36.67\%}$$[cite: 7]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_23",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 33,
+    marks: 8,
+    question_html: `
+      <p>Consider a 2-year call option with strike ₹ 50 on a stock with current price ₹ 50[cite: 7]. There are two 1-year time steps, where price moves up or down by 20% each year ($u = 1.20, d = 0.80$)[cite: 7]. Risk-free interest rate is 6% p.a.[cite: 7]</p>
+      <p>Using the binomial model, calculate the risk-neutral probabilities, show a two-step binomial tree of prices and payoffs, and determine the option value at Node A[cite: 7].</p>
+    `,
+    solution_html: `
+      <h4>1. Risk-Neutral Probabilities</h4>
+      <p>$$p = \frac{(1 + r) - d}{u - d} = \frac{1.06 - 0.80}{1.20 - 0.80} = \frac{0.26}{0.40} = \mathbf{0.65}$$[cite: 7]</p>
+      <p>$$1 - p = 1 - 0.65 = \mathbf{0.35}$$[cite: 7]</p>
+
+      <h4>2. Two-Step Binomial Price &amp; Payoff Tree</h4>
+      <ul>
+        <li><strong>Node A ($t=0$):</strong> $S_0 = ₹ 50.00$</li>
+        <li><strong>Node B ($t=1$, Up):</strong> $S_u = 50 \times 1.20 = ₹ 60.00$</li>
+        <li><strong>Node C ($t=1$, Down):</strong> $S_d = 50 \times 0.80 = ₹ 40.00$</li>
+        <li><strong>Node D ($t=2$, Up-Up):</strong> $S_{uu} = 60 \times 1.20 = ₹ 72.00 \implies C_{uu} = \max(0, 72 - 50) = \mathbf{₹ 22.00}$[cite: 7]</li>
+        <li><strong>Node E ($t=2$, Up-Down):</strong> $S_{ud} = 60 \times 0.80 = ₹ 48.00 \implies C_{ud} = \max(0, 48 - 50) = \mathbf{₹ 0.00}$[cite: 7]</li>
+        <li><strong>Node F ($t=2$, Down-Down):</strong> $S_{dd} = 40 \times 0.80 = ₹ 32.00 \implies C_{dd} = \max(0, 32 - 50) = \mathbf{₹ 0.00}$[cite: 7]</li>
+      </ul>
+
+      <h4>3. Backward Induction for Option Values</h4>
+      <ul>
+        <li><strong>Value at Node B:</strong>
+          <br />$$C_B = \frac{(0.65 \times 22) + (0.35 \times 0)}{1.06} = \frac{14.30}{1.06} = \mathbf{₹ 13.49}$$[cite: 7]
+        </li>
+        <li><strong>Value at Node C:</strong>
+          <br />$$C_C = \frac{(0.65 \times 0) + (0.35 \times 0)}{1.06} = \mathbf{₹ 0.00}$$[cite: 7]
+        </li>
+        <li><strong>Value at Initial Node A ($C_0$):</strong>
+          <br />$$C_A = \frac{(0.65 \times 13.49) + (0.35 \times 0)}{1.06} = \frac{8.7685}{1.06} = \mathbf{₹ 8.272}$$[cite: 7]
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_24",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 34,
+    marks: 4,
+    question_html: `
+      <p>The current market price of an equity share of Penchant Ltd. is ₹ 420[cite: 7]. Within 3 months, maximum and minimum prices are ₹ 500 and ₹ 400 respectively[cite: 7]. If the risk-free rate of interest is 8% p.a., what should be the value of a 3-month Call option under the &ldquo;Risk Neutral&rdquo; method at a strike price of ₹ 450? (Given: $e^{0.02} = 1.0202$)[cite: 7]</p>
+    `,
+    solution_html: `
+      <h4>1. Risk-Neutral Probability Calculation</h4>
+      <p>$$(500 - 420)p + (400 - 420)(1 - p) = 420(e^{0.02} - 1)$$[cite: 7]</p>
+      <p>$$80p - 20(1 - p) = 420(1.0202 - 1) = 420 \times 0.0202 = 8.484$$[cite: 7]</p>
+      <p>$$100p - 20 = 8.484 \implies 100p = 28.484 \implies p = \mathbf{0.2848}$$[cite: 7]</p>
+      <p>$$1 - p = 1 - 0.2848 = \mathbf{0.7152}$$[cite: 7]</p>
+
+      <h4>2. Expected Call Option Value</h4>
+      <p>$$\text{Payoff at ₹ 500} = 500 - 450 = ₹ 50; \quad \text{Payoff at ₹ 400} = ₹ 0$$[cite: 7]</p>
+      <p>$$C_0 = \frac{(0.2848 \times 50) + (0.7152 \times 0)}{1.0202} = \frac{14.24}{1.0202} = \mathbf{₹ 13.96}$$[cite: 7]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH09_TYK_PR_25",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Derivatives Analysis and Valuation",
+    // placement: 35,
+    marks: 8,
+    question_html: `
+      <p>From the following data, find the value of a call option using the Black-Scholes formula[cite: 7]:</p>
+      <ul>
+        <li>Current Stock Price ($S$) = ₹ 80[cite: 7]</li>
+        <li>Exercise Price ($K$) = ₹ 75[cite: 7]</li>
+        <li>Standard Deviation ($\sigma$) = 0.40[cite: 7]</li>
+        <li>Maturity period ($t$) = 6 months (0.5 years)[cite: 7]</li>
+        <li>Annual interest rate ($r$) = 12%[cite: 7]</li>
+      </ul>
+      <p><em>Given: $e^{0.12 \times 0.5} = 1.062; \ln(1.0667) = 0.0646$</em>[cite: 7]</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">$z$</th>
+              <th style="padding:6px; border:1px solid #ddd;">0.25</th>
+              <th style="padding:6px; border:1px solid #ddd;">0.30</th>
+              <th style="padding:6px; border:1px solid #ddd;">0.55</th>
+              <th style="padding:6px; border:1px solid #ddd;">0.60</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>One-tail Area</td><td>0.4013</td><td>0.3821</td><td>0.2912</td><td>0.2743</td></tr>
+            <tr><td>Cumulative Area</td><td>0.5987</td><td>0.6179</td><td>0.7088</td><td>0.7257</td></tr>
+          </tbody>
+        </table>
+      </div>
+    `,
+    solution_html: `
+      <h4>1. Calculation of $d_1$ and $d_2$</h4>
+      <p>$$d_1 = \frac{\ln(S/K) + (r + \sigma^2/2)t}{\sigma\sqrt{t}} = \frac{\ln(80/75) + [0.12 + 0.5(0.40)^2](0.5)}{0.40\sqrt{0.5}}$$[cite: 7]</p>
+      <p>$$d_1 = \frac{0.0646 + [0.12 + 0.08](0.5)}{0.40 \times 0.7071} = \frac{0.0646 + 0.10}{0.2828} = \frac{0.1646}{0.2828} = \mathbf{0.5820}$$[cite: 7]</p>
+      <p>$$d_2 = d_1 - \sigma\sqrt{t} = 0.5820 - 0.2828 = \mathbf{0.2992}$$[cite: 7]</p>
+
+      <h4>2. Linear Interpolation for $N(d_1)$ and $N(d_2)$</h4>
+      <ul>
+        <li><strong>For $N(d_1) = N(0.5820)$ between $z = 0.55$ and $z = 0.60$:</strong>
+          <br />$$\text{Base } N(0.55) = 0.7088$$[cite: 7]
+          <br />$$\text{Difference} = 0.7257 - 0.7088 = 0.0169$$[cite: 7]
+          <br />$$N(0.5820) = 0.7088 + \left(\frac{0.0320}{0.05} \times 0.0169\right) = 0.7088 + 0.0108 = \mathbf{0.7196 \approx 0.7197}$$[cite: 7]
+        </li>
+        <li><strong>For $N(d_2) = N(0.2992)$ between $z = 0.25$ and $z = 0.30$:</strong>
+          <br />$$\text{Base } N(0.25) = 0.5987$$[cite: 7]
+          <br />$$\text{Difference} = 0.6179 - 0.5987 = 0.0192$$[cite: 7]
+          <br />$$N(0.2992) = 0.5987 + \left(\frac{0.0492}{0.05} \times 0.0192\right) = 0.5987 + 0.0189 = \mathbf{0.6176}$$[cite: 7]
+        </li>
+      </ul>
+
+      <h4>3. Call Option Value</h4>
+      <p>$$C = S \cdot N(d_1) - K \cdot e^{-rt} N(d_2) = [80 \times 0.7197] - \left[\frac{75}{1.062} \times 0.6176\right]$$[cite: 7]</p>
+      <p>$$C = 57.576 - [70.621 \times 0.6176] = 57.576 - 43.616 = \mathbf{₹ 13.96}$$[cite: 7]</p>
+    `
+  },
+  // chapter10
+  {
+    question_id: "AFM_ICAIBOOK_CH10_ILLUS_01",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 1,
+    marks: 4,
+    question_html: `
+      <p>If the Indian rupee is the home currency and the foreign currency is the US Dollar, then what is the exchange rate between the rupee and the US dollar?</p>
+    `,
+    solution_html: `
+      <p>An exchange rate quotation expresses the price of one currency in terms of another:</p>
+      <ul>
+        <li><strong>Indirect Quote (from Indian perspective):</strong> One can buy <strong>0.0217 US dollars</strong> for one Indian rupee ($\$ 0.0217 / ₹$).</li>
+        <li><strong>Direct Quote (from Indian perspective):</strong> <strong>₹ 46.08 Indian rupees</strong> are needed to buy one US dollar ($₹ 46.08 / \$$).</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_ILLUS_02",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 2,
+    marks: 8,
+    question_html: `
+      <p>Suppose you are a dealer of ABC Bank and on 20.10.2014 you find that the balance in your Nostro account with XYZ Bank in London is £ 65,000 credit and you have an overbought position of £ 35,000. During the day, the following transactions take place:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Transaction Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">Amount (£)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Demand Draft (DD) purchased</td><td style="text-align:right;">12,500</td></tr>
+            <tr><td>Purchased a Bill on London</td><td style="text-align:right;">40,000</td></tr>
+            <tr><td>Sold forward Telegraphic Transfer (TT)</td><td style="text-align:right;">30,000</td></tr>
+            <tr><td>Forward purchase contract cancelled</td><td style="text-align:right;">15,000</td></tr>
+            <tr><td>Remitted by TT</td><td style="text-align:right;">37,500</td></tr>
+            <tr><td>Draft on London cancelled</td><td style="text-align:right;">15,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>What steps would you take if you are required to maintain a credit balance of £ 7,500 in the Nostro A/c and retain an overbought position of £ 7,500?[cite: 8]</p>
+    `,
+    solution_html: `
+      <h4>1. Determination of Exchange Position</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">Purchase (£)</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">Sale (£)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Opening Balance (Overbought)</td><td style="text-align:right;">35,000</td><td style="text-align:right;">—</td></tr>
+            <tr><td>DD Purchased</td><td style="text-align:right;">12,500</td><td style="text-align:right;">—</td></tr>
+            <tr><td>Purchased a Bill on London</td><td style="text-align:right;">40,000</td><td style="text-align:right;">—</td></tr>
+            <tr><td>Sold Forward TT</td><td style="text-align:right;">—</td><td style="text-align:right;">30,000</td></tr>
+            <tr><td>Forward Purchase Contract Cancelled</td><td style="text-align:right;">—</td><td style="text-align:right;">15,000</td></tr>
+            <tr><td>TT Remittance</td><td style="text-align:right;">—</td><td style="text-align:right;">37,500</td></tr>
+            <tr><td>Draft on London Cancelled</td><td style="text-align:right;">15,000</td><td style="text-align:right;">—</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td>Sub-total</td>
+              <td style="text-align:right;">1,02,500</td>
+              <td style="text-align:right;">82,500</td>
+            </tr>
+            <tr style="font-weight:bold; background-color:#f9f9f9;">
+              <td>Closing Balance (Overbought)</td>
+              <td style="text-align:right;">—</td>
+              <td style="text-align:right;"><strong>20,000</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>2. Determination of Cash Position (Nostro Account)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">Credit (£)</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">Debit (£)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Opening Balance (Credit)</td><td style="text-align:right;">65,000</td><td style="text-align:right;">—</td></tr>
+            <tr><td>TT Remittance</td><td style="text-align:right;">—</td><td style="text-align:right;">37,500</td></tr>
+            <tr style="font-weight:bold; background-color:#f9f9f9;">
+              <td>Closing Balance (Credit)</td>
+              <td style="text-align:right;">—</td>
+              <td style="text-align:right;"><strong>27,500</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>3. Corrective Steps to be Taken by Dealer</h4>
+      <ul>
+        <li><strong>Step 1 (Cash Position Adjustment):</strong> The Nostro account currently shows a credit balance of £ 27,500, whereas the required credit balance is £ 7,500[cite: 8]. Therefore, the bank must <strong>sell £ 20,000 in the Spot market</strong> ($£ 27,500 - £ 7,500$)[cite: 8].</li>
+        <li><strong>Step 2 (Exchange Position Adjustment):</strong> Selling £ 20,000 spot reduces the closing overbought exchange position of £ 20,000 to Nil[cite: 8]. Since the bank is required to maintain an overbought position of £ 7,500, it must <strong>buy £ 7,500 in the Forward market</strong>[cite: 8].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_ILLUS_03",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 3,
+    marks: 4,
+    question_html: `
+      <p>On 1st June 2015, the bank enters into a forward contract for 2 months for selling US$ 1,00,000 at ₹ 65.5000[cite: 8]. On 31st July 2015, the spot rate is ₹ 65.7500 / 65.2500[cite: 8]. Calculate the amount to be debited to the customer's account[cite: 8].</p>
+    `,
+    solution_html: `
+      <p>Because delivery takes place on the contractual due date (31st July 2015), the bank executes the transaction at the originally agreed forward contract rate irrespective of prevailing spot market rate movements[cite: 8].</p>
+      <p>$$\text{Amount Debited} = \text{US\$ } 1,00,000 \times ₹ 65.5000 = \mathbf{₹ 65,50,000}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_ILLUS_04",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 4,
+    marks: 8,
+    question_html: `
+      <p>On 1 October 2015, Mr. X, an exporter, enters into a forward contract with BNP Bank to sell US$ 1,00,000 on 31 December 2015 at ₹ 65.40/$[cite: 8]. Due to an early remittance, Mr. X requests the bank to take delivery on 30 November 2015 (before the due date)[cite: 8].</p>
+      <p>Interbank rates on 28 November 2015 are[cite: 8]:</p>
+      <ul>
+        <li>Spot: ₹ 65.22 / 65.27[cite: 8]</li>
+        <li>1-Month Forward Premium: 10 / 15 paise[cite: 8]</li>
+      </ul>
+      <p>If the bank agrees to early delivery, what will be the net inflow to Mr. X assuming the prevailing prime lending rate (PLR) is 18%?[cite: 8]</p>
+    `,
+    solution_html: `
+      <h4>1. Swap Difference (Swap Loss to Bank)</h4>
+      <p>To take early delivery on 30th November, the bank buys US$ from the customer and sells spot in the interbank market, simultaneously buying 1-month forward to cover its original commitment for 31st December[cite: 8]:</p>
+      <ul>
+        <li>Bank sells Spot @ Market Buying Rate $= ₹ 65.2200$[cite: 8]</li>
+        <li>Bank buys 1-Month Forward (31 Dec) @ Market Selling Rate ($₹ 65.27 + ₹ 0.15$) $= ₹ 65.4200$[cite: 8]</li>
+        <li>Swap Loss per US$ $= ₹ 65.4200 - ₹ 65.2200 = \mathbf{₹ 0.2000}$[cite: 8]</li>
+        <li>$$\text{Total Swap Loss on US\$ } 1,00,000 = 1,00,000 \times ₹ 0.20 = \mathbf{₹ 20,000.00}$$[cite: 8]</li>
+      </ul>
+
+      <h4>2. Interest on Outlay of Funds</h4>
+      <ul>
+        <li>Bank pays customer at contracted purchase rate on 30 Nov $= ₹ 65.4000$[cite: 8]</li>
+        <li>Bank receives from market spot sale $= ₹ 65.2200$[cite: 8]</li>
+        <li>Outlay of Funds per US$ $= ₹ 65.4000 - ₹ 65.2200 = \mathbf{₹ 0.1800}$[cite: 8]</li>
+        <li>Outlay period: 30 November to 31 December = <strong>31 days</strong>[cite: 8]</li>
+        <li>$$\text{Interest on Outlay} = 1,00,000 \times ₹ 0.18 \times \frac{31}{365} \times 18\% = \mathbf{₹ 275.18 \approx ₹ 275.00}$$[cite: 8]</li>
+      </ul>
+
+      <h4>3. Net Inflow to Mr. X</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <tbody>
+            <tr><td>Gross Proceeds at Contracted Rate ($1,00,000 \times ₹ 65.40$)</td><td style="text-align:right;">₹ 65,40,000.00[cite: 8]</td></tr>
+            <tr><td>Less: Swap Loss</td><td style="text-align:right;">(₹ 20,000.00)[cite: 8]</td></tr>
+            <tr><td>Less: Interest on Outlay of Funds</td><td style="text-align:right;">(₹ 275.00)[cite: 8]</td></tr>
+            <tr style="font-weight:bold; background-color:#f9f9f9;">
+              <td>Net Inflow to Exporter</td>
+              <td style="text-align:right;"><strong>₹ 65,19,725.00</strong>[cite: 8]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_ILLUS_05",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 5,
+    marks: 6,
+    question_html: `
+      <p>On 15th January 2015, a banker booked a forward sale contract for US$ 2,50,000 for an import customer deliverable on 15th March 2015 at ₹ 65.3450[cite: 8]. On the due date, the customer requests cancellation of the contract[cite: 8]. Quotes in the interbank market are[cite: 8]:</p>
+      <ul>
+        <li>Spot: ₹ 65.2900 / 65.2975 per US$[cite: 8]</li>
+        <li>Spot / April: 3000 / 3100[cite: 8]</li>
+        <li>Spot / May: 6000 / 6100[cite: 8]</li>
+      </ul>
+      <p>Flat cancellation charge is ₹ 100 and exchange margin is 0.10%[cite: 8]. Determine the cancellation charges payable by the customer[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Cancellation Rate (Spot Buying Rate)</h4>
+      <p>A forward sale contract is cancelled on the due date by purchasing spot at the bank's buying rate[cite: 8]:</p>
+      <p>$$\text{Market Spot Buying Rate} = ₹ 65.2900$$[cite: 8]</p>
+      <p>$$\text{Less: Exchange Margin @ 0.10\%} = 0.10\% \times ₹ 65.2900 = ₹ 0.0653$$[cite: 8]</p>
+      <p>$$\text{Cancellation Rate} = ₹ 65.2900 - ₹ 0.0653 = ₹ 65.2247 \rightarrow \mathbf{₹ 65.2250}$$[cite: 8]</p>
+
+      <h4>2. Cancellation Charges Payable</h4>
+      <ul>
+        <li>Contracted Selling Rate to Customer $= ₹ 65.3450$[cite: 8]</li>
+        <li>Cancellation Buying Rate from Customer $= ₹ 65.2250$[cite: 8]</li>
+        <li>Difference payable by customer per US$ $= ₹ 65.3450 - ₹ 65.2250 = \mathbf{₹ 0.1200}$[cite: 8]</li>
+      </ul>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <tbody>
+            <tr><td>Exchange Difference: $2,50,000 \times ₹ 0.1200$</td><td style="text-align:right;">₹ 30,000.00[cite: 8]</td></tr>
+            <tr><td>Add: Flat Cancellation Charges</td><td style="text-align:right;">₹ 100.00[cite: 8]</td></tr>
+            <tr style="font-weight:bold; background-color:#f9f9f9;">
+              <td>Total Cancellation Charges Payable by Customer</td>
+              <td style="text-align:right;"><strong>₹ 30,100.00</strong>[cite: 8]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_ILLUS_06",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 6,
+    marks: 4,
+    question_html: `
+      <p>A banker entered into a 3-month forward purchase contract with a customer for AUD 1,00,000 at ₹ 47.2500[cite: 8]. After 2 months, the customer requests cancellation of the contract[cite: 8]. Quotations in the market are[cite: 8]:</p>
+      <ul>
+        <li>Spot: ₹ 47.3000 / 47.3500 per AUD[cite: 8]</li>
+        <li>1-Month Forward: ₹ 47.4500 / 47.5200 per AUD[cite: 8]</li>
+      </ul>
+      <p>Determine the cancellation charges payable by the customer[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>Cancellation of Forward Purchase Contract Before Due Date</h4>
+      <p>The contract has 1 month remaining to its original maturity[cite: 8]. The bank cancels the forward purchase contract by selling AUD 1 month forward at the market offer rate[cite: 8]:</p>
+      <ul>
+        <li>1-Month Forward Selling Rate $= \mathbf{₹ 47.5200}$[cite: 8]</li>
+        <li>Contracted Purchase Rate from Customer $= \mathbf{₹ 47.2500}$[cite: 8]</li>
+        <li>Exchange Difference payable by customer per AUD $= ₹ 47.5200 - ₹ 47.2500 = \mathbf{₹ 0.2700}$[cite: 8]</li>
+      </ul>
+      <p>$$\text{Total Cancellation Charges Payable} = 1,00,000 \times ₹ 0.2700 = \mathbf{₹ 27,000.00}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_ILLUS_07",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 7,
+    marks: 8,
+    question_html: `
+      <p>An export customer booked a US$ 1,00,000 forward sale contract for 2 months at ₹ 62.5200 (cover rate ₹ 62.5900)[cite: 8]. On the due date, the customer requests cancellation and extension of the contract by 1 month[cite: 8]. Market quotes are[cite: 8]:</p>
+      <ul>
+        <li>Spot: ₹ 62.6800 / 62.7200[cite: 8]</li>
+        <li>1-Month Forward: ₹ 62.6400 / 62.7400[cite: 8]</li>
+      </ul>
+      <p>Determine the extension charges payable by the customer and the rate for rebooking assuming an exchange margin of 0.10% on buying and selling[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Cancellation of Original Contract on Due Date</h4>
+      <p>The bank cancels the purchase contract by selling spot at the market offer rate plus margin[cite: 8]:</p>
+      <p>$$\text{Market Spot Selling Rate} = ₹ 62.7200$$[cite: 8]</p>
+      <p>$$\text{Add: Margin @ 0.10\%} = 0.10\% \times ₹ 62.7200 = ₹ 0.06272$$[cite: 8]</p>
+      <p>$$\text{Cancellation Selling Rate} = ₹ 62.7200 + ₹ 0.06272 = ₹ 62.78272 \rightarrow \mathbf{₹ 62.7825}$$[cite: 8]</p>
+      <p>$$\text{Difference payable by customer} = ₹ 62.7825 - ₹ 62.5200 = \mathbf{₹ 0.2625 \text{ per US\$}}$$[cite: 8]</p>
+      <p>$$\text{Cancellation Charges Payable} = 1,00,000 \times ₹ 0.2625 = \mathbf{₹ 26,250.00}$$[cite: 8]</p>
+
+      <h4>2. Rate for Rebooking 1-Month Forward Purchase Contract</h4>
+      <p>$$\text{Market 1-Month Forward Buying Rate} = ₹ 62.6400$$[cite: 8]</p>
+      <p>$$\text{Less: Margin @ 0.10\%} = 0.10\% \times ₹ 62.6400 = ₹ 0.06264$$[cite: 8]</p>
+      <p>$$\text{New Contract Buying Rate} = ₹ 62.6400 - ₹ 0.06264 = ₹ 62.57736 \rightarrow \mathbf{₹ 62.5775}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_ILLUS_08",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 8,
+    marks: 8,
+    question_html: `
+      <p>A bank entered into a forward purchase contract for US$ 50,000 on 5th March with an export customer for 3 months at ₹ 59.6000 (covered at ₹ 60.6025)[cite: 8]. On 5th May, the customer requests extension of the contract to 5th July[cite: 8]. Market quotes on 5th May are[cite: 8]:</p>
+      <ul>
+        <li>Spot: ₹ 59.1300 / 59.1400[cite: 8]</li>
+        <li>Spot / 5th June: ₹ 59.2300 / 59.2425[cite: 8]</li>
+        <li>Spot / 5th July: ₹ 59.6300 / 59.6425[cite: 8]</li>
+      </ul>
+      <p>Assuming a margin of 0.10% on buying and selling, determine the extension charges payable/receivable by the customer and the new forward rate (round off rates to 4 decimals in multiples of 0.0025)[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Cancellation of Original Contract (Delivery 5th June)</h4>
+      <p>On 5th May, 1 month remains until 5th June maturity[cite: 8]. The bank cancels by selling 1 month forward[cite: 8]:</p>
+      <p>$$\text{Interbank Forward Selling Rate (5th June)} = ₹ 59.2425$$[cite: 8]</p>
+      <p>$$\text{Add: Margin @ 0.10\%} = 0.10\% \times ₹ 59.2425 = ₹ 0.05924$$[cite: 8]</p>
+      <p>$$\text{Cancellation Rate} = ₹ 59.2425 + ₹ 0.05924 = ₹ 59.30174 \rightarrow \mathbf{₹ 59.3025}$$[cite: 8]</p>
+      <ul>
+        <li>Contracted Purchase Rate from Customer $= ₹ 59.6000$[cite: 8]</li>
+        <li>Cancellation Selling Rate to Customer $= ₹ 59.3025$[cite: 8]</li>
+        <li>Difference in favor of customer $= ₹ 59.6000 - ₹ 59.3025 = \mathbf{₹ 0.2975 \text{ per US\$}}$[cite: 8]</li>
+      </ul>
+      <p>$$\text{Net Exchange Difference Payable to Customer} = 50,000 \times ₹ 0.2975 = \mathbf{₹ 14,875.00}$$[cite: 8]</p>
+
+      <h4>2. Rate for Rebooking New Contract (Delivery 5th July)</h4>
+      <p>$$\text{Interbank Forward Buying Rate (5th July)} = ₹ 59.6300$$[cite: 8]</p>
+      <p>$$\text{Less: Margin @ 0.10\%} = 0.10\% \times ₹ 59.6300 = ₹ 0.05963$$[cite: 8]</p>
+      <p>$$\text{New Rate} = ₹ 59.6300 - ₹ 0.05963 = ₹ 59.57037 \rightarrow \mathbf{₹ 59.5700}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_ILLUS_09",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 9,
+    marks: 10,
+    question_html: `
+      <p>An importer booked a forward purchase contract on 10th April for USD 2,00,000 due 10th June @ ₹ 64.4000 (covered @ ₹ 64.2800)[cite: 8]. Exchange rates in the interbank market are[cite: 8]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Tenor</th>
+              <th style="padding:6px; border:1px solid #ddd;">10th June</th>
+              <th style="padding:6px; border:1px solid #ddd;">13th June</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Spot USD 1</td><td>₹ 63.8000 / 63.8200</td><td>₹ 63.6800 / 63.7200</td></tr>
+            <tr><td>Spot / June</td><td>₹ 63.9200 / 63.9500</td><td>₹ 63.8000 / 63.8500</td></tr>
+            <tr><td>Spot / July</td><td>₹ 64.0500 / 64.0900</td><td>₹ 63.9300 / 63.9900</td></tr>
+            <tr><td>Spot / August</td><td>₹ 64.3000 / 64.3500</td><td>₹ 64.1800 / 64.2500</td></tr>
+            <tr><td>Spot / September</td><td>₹ 64.6000 / 64.6600</td><td>₹ 64.4800 / 64.5600</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Exchange margin is 0.10% and interest on outlay of funds is 12% p.a.[cite: 8] On 10th June, the bank swaps by selling spot and buying 1-month forward[cite: 8]. The importer requests extension on 14th June to 10th August[cite: 8]. Calculate: (i) Cancellation rate, (ii) Amount payable on cancellation, (iii) Swap loss, (iv) Interest on outlay, (v) New contract rate, and (vi) Total cost[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>(i) Cancellation Rate (Automatic Cancellation on 13th June - 3rd Working Day)</h4>
+      <p>Contract cancelled at Spot TT Buying rate on 13th June[cite: 8]:</p>
+      <p>$$\text{Market Spot Buying Rate} = ₹ 63.6800$$[cite: 8]</p>
+      <p>$$\text{Less: Margin @ 0.10\%} = 0.10\% \times ₹ 63.6800 = ₹ 0.06368$$[cite: 8]</p>
+      <p>$$\text{Cancellation Rate} = ₹ 63.6800 - ₹ 0.06368 = ₹ 63.61632 \rightarrow \mathbf{₹ 63.6175}$$[cite: 8]</p>
+
+      <h4>(ii) Amount Payable on Cancellation</h4>
+      <ul>
+        <li>Contracted Sale Rate $= ₹ 64.4000 \implies 2,00,000 \times 64.4000 = ₹ 1,28,80,000$[cite: 8]</li>
+        <li>Cancellation Purchase Rate $= ₹ 63.6175 \implies 2,00,000 \times 63.6175 = ₹ 1,27,23,500$[cite: 8]</li>
+        <li>$$\text{Exchange Difference Payable by Customer} = ₹ 1,28,80,000 - ₹ 1,27,23,500 = \mathbf{₹ 1,56,500.00}$$[cite: 8]</li>
+      </ul>
+
+      <h4>(iii) Swap Loss (Executed on 10th June)</h4>
+      <p>Bank sells spot @ 63.8000 and buys 1-month forward (June) @ 63.9500[cite: 8]:</p>
+      <p>$$\text{Swap Loss per US\$} = ₹ 63.9500 - ₹ 63.8000 = ₹ 0.1500$$[cite: 8]</p>
+      <p>$$\text{Total Swap Loss} = 2,00,000 \times ₹ 0.1500 = \mathbf{₹ 30,000.00}$$[cite: 8]</p>
+
+      <h4>(iv) Interest on Outlay of Funds</h4>
+      <p>On 10th June, bank pays cover rate ₹ 64.2800 and receives spot sale ₹ 63.8000[cite: 8]:</p>
+      <p>$$\text{Outlay per US\$} = ₹ 64.2800 - ₹ 63.8000 = ₹ 0.4800 \implies \text{Total Outlay} = 2,00,000 \times 0.48 = ₹ 96,000$$[cite: 8]</p>
+      <p>Outlay duration: 10th June to 13th June = 3 days[cite: 8].</p>
+      <p>$$\text{Interest} = ₹ 96,000 \times 12\% \times \frac{3}{365} = \mathbf{₹ 94.68 \approx ₹ 96.00}$$[cite: 8]</p>
+
+      <h4>(v) New Contract Rate (Delivery 10th August)</h4>
+      <p>$$\text{August Forward Selling Rate (13th June)} = ₹ 64.2500$$[cite: 8]</p>
+      <p>$$\text{Add: Margin @ 0.10\%} = 0.10\% \times ₹ 64.2500 = ₹ 0.06425$$[cite: 8]</p>
+      <p>$$\text{New Rate} = ₹ 64.2500 + ₹ 0.06425 = ₹ 64.31425 \rightarrow \mathbf{₹ 64.3150}$$[cite: 8]</p>
+
+      <h4>(vi) Total Cost Payable by Customer</h4>
+      <p>$$\text{Total Cost} = ₹ 1,56,500 (\text{Cancellation}) + ₹ 30,000 (\text{Swap Loss}) + ₹ 96 (\text{Interest}) = \mathbf{₹ 1,86,596.00}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_TH_01",
+    question_type: "theory",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 10,
+    marks: 6,
+    question_html: `
+      <p>&ldquo;Operations in foreign exchange are exposed to a number of risks.&rdquo; Discuss.[cite: 8]</p>
+    `,
+    solution_html: `
+      <p>Participants operating in international finance and foreign exchange face diverse categories of risk[cite: 8]:</p>
+      <ul>
+        <li><strong>Transaction Exposure:</strong> Arises from existing contractual monetary obligations denominated in foreign currencies that must be settled in the future[cite: 8]. Currency fluctuations between contracting and settlement directly alter realized cash flows[cite: 8].</li>
+        <li><strong>Translation (Accounting) Exposure:</strong> Arises from the necessity to convert the financial statements of foreign branches/subsidiaries into the reporting currency of the parent entity for consolidation, impacting reported book value and reserves[cite: 8].</li>
+        <li><strong>Economic (Operating) Exposure:</strong> Measures the extent to which unexpected exchange rate changes alter a company's competitive cost-price structure, future cash inflows, and enterprise valuation over the long term[cite: 8].</li>
+        <li><strong>Country / Political Risk:</strong> Covers interventionist host-government policies, such as currency inconvertibility, expropriation, exchange control restrictions, or moratoriums on outward remittances[cite: 8].</li>
+        <li><strong>Settlement / Counterparty Risk:</strong> Arises when one counterparty fails to fulfill its contractual currency delivery obligations on settlement day, exposing the other party to replacement costs[cite: 8].</li>
+        <li><strong>Interest Rate Risk:</strong> Mismatches in the maturity and duration profiles of foreign currency assets and liabilities triggered by shifts in international benchmark rates (e.g., SOFR)[cite: 8].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_TH_02",
+    question_type: "theory",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 11,
+    marks: 4,
+    question_html: `
+      <p>What do you mean by Nostro, Vostro and Loro Accounts?[cite: 8]</p>
+    `,
+    solution_html: `
+      <p>To facilitate international fund settlement across borders, commercial banks maintain correspondent banking accounts categorized as[cite: 8]:</p>
+      <ul>
+        <li><strong>Nostro Account (&ldquo;Our Account with You&rdquo;):</strong> A foreign currency current account maintained by a domestic bank with a correspondent bank in a foreign country in that country's home currency[cite: 8].
+          <br /><em>Example:</em> State Bank of India maintaining a USD current account with Citibank New York[cite: 8].
+        </li>
+        <li><strong>Vostro Account (&ldquo;Your Account with Us&rdquo;):</strong> A local currency account maintained by a foreign bank with a domestic bank in the domestic bank's country[cite: 8].
+          <br /><em>Example:</em> Bank of America maintaining an Indian Rupee account with HDFC Bank in Mumbai[cite: 8].
+        </li>
+        <li><strong>Loro Account (&ldquo;Their Account&rdquo;):</strong> Refers to an account operated through a third-party bank's correspondent relationship[cite: 8]. When a domestic bank without a direct correspondent presence in a foreign center settles payments through another domestic bank's existing Nostro account, it is referred to as a Loro account[cite: 8].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_01",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 12,
+    marks: 4,
+    question_html: `
+      <p>The price of a bond just before a year of maturity is $ 5,000[cite: 8]. Its redemption value is $ 5,250 at the end of the year[cite: 8]. Interest is $ 350 p.a.[cite: 8] The Dollar appreciates by 2% during the period[cite: 8]. Calculate the rate of return[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Return in US Dollar Terms</h4>
+      <p>$$\text{Dollar Return } (R_$) = \frac{(\text{Redemption Price} - \text{Purchase Price}) + \text{Interest}}{\text{Purchase Price}}$$[cite: 8]</p>
+      <p>$$R_$ = \frac{(5,250 - 5,000) + 350}{5,000} = \frac{250 + 350}{5,000} = \frac{600}{5,000} = \mathbf{12.00\%}$$[cite: 8]</p>
+
+      <h4>2. Rate of Return Across Investor Types</h4>
+      <ul>
+        <li><strong>(i) For a US-based Investor:</strong>
+          <br />Because domestic investments carry no currency translation effect, the return is <strong>12.00%</strong>[cite: 8].
+        </li>
+        <li><strong>(ii) For a Non-US (Foreign/Indian) Investor:</strong>
+          <br />The investor benefits both from the bond yield and the 2% appreciation of the US dollar[cite: 8]:
+          <br />$$\text{Total Return} = (1 + R_$)(1 + \text{Currency Appreciation}) - 1$$[cite: 8]
+          <br />$$\text{Total Return} = (1 + 0.12)(1 + 0.02) - 1 = (1.12 \times 1.02) - 1 = 1.1424 - 1 = \mathbf{14.24\%}$$[cite: 8]
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_02",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 13,
+    marks: 4,
+    question_html: `
+      <p>ABN-Amro Bank, Amsterdam, wants to purchase ₹ 15 million against US$ for funding their Nostro account with Canara Bank, New Delhi[cite: 8]. Assuming the interbank quote for US$ is ₹ 51.3625 / 51.3700, what rate would Canara Bank quote to ABN-Amro Bank?[cite: 8] Further, if the deal is struck, what would be the equivalent US$ amount?[cite: 8]</p>
+    `,
+    solution_html: `
+      <h4>1. Applicable Exchange Rate</h4>
+      <p>ABN-Amro Bank wishes to purchase INR (which means selling USD to Canara Bank)[cite: 8]. Canara Bank will buy US$ at the market bid rate and sell INR[cite: 8]:</p>
+      <p>$$\text{Quoted Rate} = \mathbf{₹ 51.3625 \text{ per US\$}} \quad \left(\text{or } \$ 0.019469/\text{₹}\right)$$[cite: 8]</p>
+
+      <h4>2. Equivalent US$ Amount</h4>
+      <p>$$\text{USD Amount} = \frac{₹ 1,50,00,000}{51.3625} = \mathbf{US\$ 2,92,041.86}$$[cite: 8]</p>
+      <p><small><em>(Alternatively, at $\$ 0.01947/₹$: $15,000,000 \times 0.01947 = \mathbf{US\$ 2,92,050.00}$)</em></small>[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_03",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 14,
+    marks: 6,
+    question_html: `
+      <p>XYZ LTD Bank, Amsterdam, wants to purchase ₹ 25 million against £ for funding their Nostro account, and they have credited a LORO account with Bank of London[cite: 8].</p>
+      <p>Calculate the amount of £ credited[cite: 8]. Ongoing interbank rates are:</p>
+      <ul>
+        <li>₹ / $: 61.3625 / 61.3700[cite: 8]</li>
+        <li>$ / £: 1.5260 / 1.5270[cite: 8]</li>
+      </ul>
+    `,
+    solution_html: `
+      <h4>1. Chain Rule for (£ / ₹) Ask Rate</h4>
+      <p>To acquire INR against GBP, the bank must sell GBP to purchase USD (at the bid rate for GBP), and subsequently sell USD to purchase INR (at the bid rate for USD)[cite: 8]:</p>
+      <p>$$\left(\frac{£}{₹}\right)_{\text{ask}} = \frac{1}{\left(\frac{\$}{£}\right)_{\text{bid}} \times \left(\frac{₹}{\$}\right)_{\text{bid}}} = \frac{1}{1.5260 \times 61.3625} = \frac{1}{93.639175} = \mathbf{£ 0.0106793 \approx £ 0.0107}$$[cite: 8]</p>
+
+      <h4>2. Calculation of GBP Credited</h4>
+      <p>$$\text{Amount of } £ = ₹ 25,000,000 \times 0.0107 = \mathbf{£ 2,67,500}$$[cite: 8]</p>
+      <p>$$\left(\text{Exact computation: } \frac{₹ 25,000,000}{93.639175} = \mathbf{£ 2,66,982.42}\right)$$</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_04",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 15,
+    marks: 8,
+    question_html: `
+      <p>ABC Ltd. of UK has exported goods worth Can $ 5,00,000 receivable in 6 months[cite: 8]. The exporter wants to hedge the receipt in the forward market[cite: 8]. Data:</p>
+      <ul>
+        <li>Spot Exchange Rate: Can $ 2.50 / £[cite: 8]</li>
+        <li>Interest Rate in UK: 12% p.a.[cite: 8]</li>
+        <li>Interest Rate in Canada: 15% p.a.[cite: 8]</li>
+      </ul>
+      <p>Assuming forward rates reflect interest rate parity, find the gain/loss to the UK exporter if the spot rate in 6 months: (i) declines by 2%, (ii) gains by 4%, or (iii) remains unchanged[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Theoretical 6-Month Forward Rate (Interest Rate Parity)</h4>
+      <p>$$F = S_0 \times \frac{1 + r_{\text{Canada}} \times (6/12)}{1 + r_{\text{UK}} \times (6/12)} = 2.50 \times \frac{1 + 0.075}{1 + 0.060} = 2.50 \times \frac{1.075}{1.060} = \mathbf{\text{Can } \$ 2.53538 \approx \text{Can } \$ 2.535 \text{ per } £}$$[cite: 8]</p>
+      <p>$$\text{Forward Sterling Receipt} = \frac{\text{Can } \$ 5,00,000}{2.535} = \mathbf{£ 1,97,239}$$[cite: 8]</p>
+
+      <h4>2. Gain or Loss Under Spot Scenarios</h4>
+      <ul>
+        <li><strong>(i) Can $ Declines by 2% (Spot becomes $2.50 \times 1.02 = \text{Can } \$ 2.55/£$):</strong>
+          <br />$$\text{Spot Receipt} = \frac{5,00,000}{2.55} = £ 1,96,078$$[cite: 8]
+          <br />$$\text{Gain due to Forward Contract} = £ 1,97,239 - £ 1,96,078 = \mathbf{+£ 1,161}$$[cite: 8]
+        </li>
+        <li><strong>(ii) Can $ Gains by 4% (Spot becomes $2.50 \times 0.96 = \text{Can } \$ 2.40/£$):</strong>
+          <br />$$\text{Spot Receipt} = \frac{5,00,000}{2.40} = £ 2,08,333$$[cite: 8]
+          <br />$$\text{Loss due to Forward Contract} = £ 1,97,239 - £ 2,08,333 = \mathbf{-£ 11,094}$$[cite: 8]
+        </li>
+        <li><strong>(iii) Spot Remains Unchanged (Spot = Can $ 2.50/£):</strong>
+          <br />$$\text{Spot Receipt} = \frac{5,00,000}{2.50} = £ 2,00,000$$[cite: 8]
+          <br />$$\text{Loss due to Forward Contract} = £ 1,97,239 - £ 2,00,000 = \mathbf{-£ 2,761}$$[cite: 8]
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_05",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 16,
+    marks: 8,
+    question_html: `
+      <p>On April 3, 2016, a Bank quotes the following (Spot date: April 5, 2016; 1 swap point = 0.0001)[cite: 8]:</p>
+      <ul>
+        <li>Spot exchange rate (US $ 1): INR 66.2525 / 67.5945[cite: 8]</li>
+        <li>2 months' swap points: 70 / 90[cite: 8]</li>
+        <li>3 months' swap points: 160 / 186[cite: 8]</li>
+      </ul>
+      <p>You are required to[cite: 8]:</p>
+      <ol type="i">
+        <li>Ascertain swap points for 2 months and 15 days (June 20, 2016)[cite: 8].</li>
+        <li>Determine foreign exchange rate for June 20, 2016[cite: 8].</li>
+        <li>Compute the annual rate of premium/discount of US$ on INR on an average rate basis[cite: 8].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Swap Points for 2 Months and 15 Days</h4>
+      <ul>
+        <li>Swap points for 2 months: 70 / 90[cite: 8]</li>
+        <li>Swap points for 3 months: 160 / 186[cite: 8]</li>
+        <li>Difference for 1 month (30 days): $160 - 70 = 90$ (Bid) and $186 - 90 = 96$ (Ask)[cite: 8]</li>
+        <li>Swap points for 15 days: $\frac{90}{2} = 45$ (Bid) and $\frac{96}{2} = 48$ (Ask)[cite: 8]</li>
+        <li>Total swap points for 2 months 15 days: $70 + 45 = \mathbf{115}$ (Bid) and $90 + 48 = \mathbf{138}$ (Ask)[cite: 8]</li>
+      </ul>
+
+      <h4>(ii) Foreign Exchange Rates for June 20, 2016</h4>
+      <p>Since swap points are ascending (115/138), USD is at a premium and points are added to the spot rate[cite: 8]:</p>
+      <p>$$\text{Bid Rate} = 66.2525 + 0.0115 = \mathbf{66.2640}$$[cite: 8]</p>
+      <p>$$\text{Ask Rate} = 67.5945 + 0.0138 = \mathbf{67.6083}$$[cite: 8]</p>
+
+      <h4>(iii) Annualized Rate of Premium (Average Basis)</h4>
+      <p>$$\text{Average Spot Rate} = \frac{66.2525 + 67.5945}{2} = 66.9235$$[cite: 8]</p>
+      <p>$$\text{Average Forward Rate (June 20)} = \frac{66.2640 + 67.6083}{2} = 66.93615$$[cite: 8]</p>
+      <p>$$\text{Average Premium} = 66.93615 - 66.9235 = 0.01265$$[cite: 8]</p>
+      <p>$$\text{Annual Rate of Premium} = \frac{0.01265}{66.9235} \times \frac{12}{2.5} \times 100 = \mathbf{0.0908\% \text{ p.a.}}$$</p>
+      <p><small><em>(Alternatively, Bid: $\frac{0.0115}{66.2583} \times \frac{12}{2.5} \times 100 = \mathbf{0.0833\%}$; Ask: $\frac{0.0138}{67.6014} \times \frac{12}{2.5} \times 100 = \mathbf{0.0980\%}$)</em></small>[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_06",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 17,
+    marks: 8,
+    question_html: `
+      <p>JKL Ltd., an Indian company, has an export exposure of JPY 10,000,000 receivable on August 31, 2014[cite: 8]. Current spot rates: INR/US $ = ₹ 62.22; JPY/US $ = JPY 102.34[cite: 8]. JPY is estimated to depreciate to 124/USD and INR to ₹ 65/USD[cite: 8]. Forward rates for August 2014 are: INR/US $ = ₹ 66.50; JPY/US $ = JPY 110.35[cite: 8].</p>
+      <ol type="i">
+        <li>Calculate the expected loss if hedging is not done, and how the position changes under forward cover[cite: 8].</li>
+        <li>If actual spot rates on August 31, 2014 turn out to be INR/US $ = ₹ 66.25 and JPY/US $ = JPY 110.85, is the forward cover decision justified?[cite: 8]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>1. Spot and Forward Cross Rates (INR per JPY)</h4>
+      <ul>
+        <li>Current Spot Rate $= \frac{₹ 62.22}{102.34} = \mathbf{₹ 0.6080 \text{ per JPY}}$[cite: 8]</li>
+        <li>Expected Spot Rate for August $= \frac{₹ 65.00}{124.00} = \mathbf{₹ 0.5242 \text{ per JPY}}$[cite: 8]</li>
+        <li>August Forward Rate $= \frac{₹ 66.50}{110.35} = \mathbf{₹ 0.6026 \text{ per JPY}}$[cite: 8]</li>
+      </ul>
+
+      <h4>2. (i) Expected Loss Comparison</h4>
+      <ul>
+        <li>Initial invoice value at current spot $= 1,00,00,000 \times ₹ 0.6080 = ₹ 60,80,000$[cite: 8]</li>
+        <li>Estimated receipt without hedge $= 1,00,00,000 \times ₹ 0.5242 = ₹ 52,42,000$[cite: 8]</li>
+        <li><strong>Expected Loss without Hedging:</strong> $₹ 60,80,000 - ₹ 52,42,000 = \mathbf{₹ 8,38,000}$[cite: 8]</li>
+        <li>Receipt with Forward Cover $= 1,00,00,000 \times ₹ 0.6026 = ₹ 60,26,000$[cite: 8]</li>
+        <li><strong>Loss under Forward Cover:</strong> $₹ 60,80,000 - ₹ 60,26,000 = \mathbf{₹ 54,000}$[cite: 8]</li>
+      </ul>
+      <p>Taking a forward cover protects the firm and minimizes expected loss by <strong>₹ 7,84,000</strong> ($8,38,000 - 54,000$)[cite: 8].</p>
+
+      <h4>3. (ii) Justification Against Actual Spot on 31 August 2014</h4>
+      <ul>
+        <li>Actual Spot Rate on 31 August $= \frac{₹ 66.25}{110.85} = \mathbf{₹ 0.5977 \text{ per JPY}}$[cite: 8]</li>
+        <li>Actual unhedged realization $= 1,00,00,000 \times ₹ 0.5977 = ₹ 59,77,000$[cite: 8]</li>
+        <li>Realization under forward contract $= \mathbf{₹ 60,26,000}$[cite: 8]</li>
+      </ul>
+      <p>Because the forward contract delivered <strong>₹ 49,000 more</strong> ($₹ 60,26,000 - ₹ 59,77,000$) than the unhedged spot market, the decision to take forward cover was <strong>fully justified</strong>[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_07",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 18,
+    marks: 6,
+    question_html: `
+      <p>You sold Hong Kong Dollar (HKD) 1,00,00,000 value spot to a customer at ₹ 5.70 and covered yourself in the London market on the same day when rates were[cite: 8]:</p>
+      <ul>
+        <li>US$ 1 = H.K.$ 7.5880 / 7.5920[cite: 8]</li>
+        <li>Local interbank spot US$ 1 = ₹ 42.70 / 42.85[cite: 8]</li>
+      </ul>
+      <p>Calculate the cover rate and ascertain the profit or loss on the transaction (ignore brokerage)[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Cover Rate Calculation</h4>
+      <p>To cover the sale of HKD, the bank must buy HKD against USD in London and buy USD against INR in the local market[cite: 8]:</p>
+      <ul>
+        <li>Bank buys USD locally at market selling rate $= ₹ 42.85$[cite: 8]</li>
+        <li>Bank sells USD to buy HKD in London at market buying rate $= \text{HKD } 7.5880$[cite: 8]</li>
+      </ul>
+      <p>$$\text{Rupee - HKD Cover Rate} = \frac{₹ 42.85}{7.5880} = \mathbf{₹ 5.6471 \text{ per HKD}}$$[cite: 8]</p>
+
+      <h4>2. Profit or Loss Determination</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <tbody>
+            <tr><td>Amount received from customer ($1,00,00,000 \times ₹ 5.70$)</td><td style="text-align:right;">₹ 5,70,00,000.00[cite: 8]</td></tr>
+            <tr><td>Less: Cost of cover purchase ($1,00,00,000 \times ₹ 5.6471$)</td><td style="text-align:right;">(₹ 5,64,71,000.00)[cite: 8]</td></tr>
+            <tr style="font-weight:bold; background-color:#f9f9f9;">
+              <td>Net Profit to Bank</td>
+              <td style="text-align:right;"><strong>₹ 5,29,000.00</strong>[cite: 8]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_08",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 19,
+    marks: 8,
+    question_html: `
+      <p>Your bank sold a T.T. on Copenhagen for Danish Kroner (DKK) 10,00,000 at DKK 1 = ₹ 6.5150[cite: 8]. Rates in the market are[cite: 8]:</p>
+      <ul>
+        <li>Mumbai-London: ₹ 74.3000 / 74.3200 per GBP[cite: 8]</li>
+        <li>Mumbai-New York: ₹ 49.2500 / 49.2625 per USD[cite: 8]</li>
+        <li>London-Copenhagen: DKK 11.4200 / 11.4350 per GBP[cite: 8]</li>
+        <li>New York-Copenhagen: DKK 7.5670 / 7.5840 per USD[cite: 8]</li>
+      </ul>
+      <p>In which market will you cover the transaction (London or New York), and what will be the exchange profit or loss? (Ignore brokerage)[cite: 8]</p>
+    `,
+    solution_html: `
+      <p>$$\text{Amount Realized from Customer} = 10,00,000 \times ₹ 6.5150 = \mathbf{₹ 65,15,000}$$[cite: 8]</p>
+
+      <h4>1. Cover at London</h4>
+      <ul>
+        <li>DKK bought in London at market ask rate: $1 \text{ GBP} = \text{DKK } 11.4200$[cite: 8]</li>
+        <li>GBP required $= \frac{\text{DKK } 10,00,000}{11.4200} = \mathbf{\text{GBP } 87,565.67}$[cite: 8]</li>
+        <li>GBP bought in Mumbai at market ask rate $= ₹ 74.3200$[cite: 8]</li>
+        <li>$$\text{Total Rupee Cost (London)} = 87,565.67 \times ₹ 74.3200 = \mathbf{₹ 65,07,881}$$[cite: 8]</li>
+        <li>$$\text{Profit at London} = ₹ 65,15,000 - ₹ 65,07,881 = \mathbf{+₹ 7,119}$$[cite: 8]</li>
+      </ul>
+
+      <h4>2. Cover at New York</h4>
+      <ul>
+        <li>DKK bought in New York at market ask rate: $1 \text{ USD} = \text{DKK } 7.5670$[cite: 8]</li>
+        <li>USD required $= \frac{\text{DKK } 10,00,000}{7.5670} = \mathbf{\text{USD } 1,32,152.77}$[cite: 8]</li>
+        <li>USD bought in Mumbai at market ask rate $= ₹ 49.2625$[cite: 8]</li>
+        <li>$$\text{Total Rupee Cost (New York)} = 1,32,152.77 \times ₹ 49.2625 = \mathbf{₹ 65,10,176}$$[cite: 8]</li>
+        <li>$$\text{Profit at New York} = ₹ 65,15,000 - ₹ 65,10,176 = \mathbf{+₹ 4,824}$$[cite: 8]</li>
+      </ul>
+
+      <h4>Conclusion</h4>
+      <p>The transaction should be covered in <strong>London</strong>, as it results in a lower cost by ₹ 2,295 ($65,10,176 - 65,07,881$) and yields a higher profit of <strong>₹ 7,119</strong>[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_09",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 20,
+    marks: 8,
+    question_html: `
+      <p>On January 28, 2013, an importer requested a bank to remit SGD 2,500,000 under an LC[cite: 8]. Due to delays, the bank effected remittance on February 4, 2013[cite: 8]. Interbank market quotes were[cite: 8]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Currency Pair</th>
+              <th style="padding:6px; border:1px solid #ddd;">January 28, 2013</th>
+              <th style="padding:6px; border:1px solid #ddd;">February 4, 2013</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>US$ 1</td><td>₹ 45.85 / 45.90</td><td>₹ 45.91 / 45.97</td></tr>
+            <tr><td>GBP £ 1</td><td>US$ 1.7840 / 1.7850</td><td>US$ 1.7765 / 1.7775</td></tr>
+            <tr><td>GBP £ 1</td><td>SGD 3.1575 / 3.1590</td><td>SGD 3.1380 / 3.1390</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Bank exchange margin is 0.125%[cite: 8]. How much does the customer stand to gain or lose due to the delay? (Calculate rates to 4 decimals)[cite: 8]</p>
+    `,
+    solution_html: `
+      <h4>1. Selling Rate for SGD on January 28, 2013</h4>
+      <p>$$\text{Cross Rate (INR/SGD)} = \frac{\text{Ask(INR/USD)} \times \text{Ask(USD/GBP)}}{\text{Bid(SGD/GBP)}} = \frac{₹ 45.90 \times 1.7850}{3.1575} = ₹ 25.9482$$[cite: 8]</p>
+      <p>$$\text{Add: Exchange Margin @ 0.125\%} = 0.125\% \times 25.9482 = ₹ 0.0324$$[cite: 8]</p>
+      <p>$$\text{Applicable Rate (Jan 28)} = 25.9482 + 0.0324 = \mathbf{₹ 25.9806 \text{ per SGD}}$$[cite: 8]</p>
+
+      <h4>2. Selling Rate for SGD on February 4, 2013</h4>
+      <p>$$\text{Cross Rate (INR/SGD)} = \frac{₹ 45.97 \times 1.7775}{3.1380} = ₹ 26.0394$$[cite: 8]</p>
+      <p>$$\text{Add: Exchange Margin @ 0.125\%} = 0.125\% \times 26.0394 = ₹ 0.0325$$[cite: 8]</p>
+      <p>$$\text{Applicable Rate (Feb 4)} = 26.0394 + 0.0325 = \mathbf{₹ 26.0719 \text{ per SGD}}$$[cite: 8]</p>
+
+      <h4>3. Financial Impact on Customer</h4>
+      <p>$$\text{Difference per SGD} = ₹ 26.0719 - ₹ 25.9806 = \mathbf{₹ 0.0913 \text{ per SGD (Adverse)}}[cite: 8]$$</p>
+      <p>$$\text{Total Loss to Importer} = 25,00,000 \times ₹ 0.0913 = \mathbf{₹ 2,28,250.00}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_10",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 21,
+    marks: 6,
+    question_html: `
+      <p>Details of foreign currency cash flows of MNP Co. (an Indian export firm) are as follows[cite: 8]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Currency</th>
+              <th style="padding:6px; border:1px solid #ddd;">Inflow</th>
+              <th style="padding:6px; border:1px solid #ddd;">Outflow</th>
+              <th style="padding:6px; border:1px solid #ddd;">Spot Rate (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Forward Rate (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>US $</td><td>4,00,00,000</td><td>2,00,00,000</td><td>48.01</td><td>48.82</td></tr>
+            <tr><td>French Franc (FFr)</td><td>2,00,00,000</td><td>80,00,000</td><td>7.45</td><td>8.12</td></tr>
+            <tr><td>U.K. £</td><td>3,00,00,000</td><td>2,00,00,000</td><td>75.57</td><td>75.98</td></tr>
+            <tr><td>Japanese Yen (JPY)</td><td>1,50,00,000</td><td>2,50,00,000</td><td>3.20</td><td>2.40</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ol type="i">
+        <li>Determine the net exposure of each foreign currency in terms of Rupees[cite: 8].</li>
+        <li>Are any of the exposure positions offsetting to some extent?[cite: 8]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Net Foreign Currency Exposure Schedule</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Currency</th>
+              <th style="padding:6px; border:1px solid #ddd;">Inflow (M)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Outflow (M)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Net Flow (M)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Forward Premium / (Discount) (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Net Rupee Impact (₹ Million)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>US $</td>
+              <td>40.0</td>
+              <td>20.0</td>
+              <td>+20.0 (Net Inflow)</td>
+              <td>$48.82 - 48.01 = +0.81$</td>
+              <td><strong>+16.20</strong></td>
+            </tr>
+            <tr>
+              <td>FFr</td>
+              <td>20.0</td>
+              <td>8.0</td>
+              <td>+12.0 (Net Inflow)</td>
+              <td>$8.12 - 7.45 = +0.67$</td>
+              <td><strong>+8.04</strong></td>
+            </tr>
+            <tr>
+              <td>U.K. £</td>
+              <td>30.0</td>
+              <td>20.0</td>
+              <td>+10.0 (Net Inflow)</td>
+              <td>$75.98 - 75.57 = +0.41$</td>
+              <td><strong>+4.10</strong></td>
+            </tr>
+            <tr>
+              <td>Japanese Yen</td>
+              <td>15.0</td>
+              <td>25.0</td>
+              <td>-10.0 (Net Outflow)</td>
+              <td>$2.40 - 3.20 = -0.80$</td>
+              <td><strong>+8.00</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>(ii) Offsetting Character of Exposures</h4>
+      <p>Yes, natural hedge offsets occur in the portfolio[cite: 8]:</p>
+      <ul>
+        <li>For <strong>Japanese Yen</strong>, the net exposure is a net payable (-10 million JPY) and the currency is trading at a forward discount (-₹ 0.80), which reduces the expected outflow in rupee terms[cite: 8].</li>
+        <li>For <strong>US $, FFr, and UK £</strong>, net exposures are receivables (inflows) and all three currencies trade at a forward premium, increasing the rupee proceeds upon realization[cite: 8].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_11",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 22,
+    marks: 6,
+    question_html: `
+      <p>The following 2-way quotes appear in the foreign exchange market[cite: 8]:</p>
+      <ul>
+        <li>Spot: ₹ / US $ = ₹ 46.00 / ₹ 46.25[cite: 8]</li>
+        <li>2-months forward: ₹ / US $ = ₹ 47.00 / ₹ 47.50[cite: 8]</li>
+      </ul>
+      <p><strong>Required:</strong></p>
+      <ol type="i">
+        <li>How many US dollars should a firm sell to get ₹ 25 lakhs after 2 months?[cite: 8]</li>
+        <li>How many Rupees is the firm required to pay to obtain US $ 2,00,000 in the spot market?[cite: 8]</li>
+        <li>Assume the firm has US $ 69,000 in a current account earning no interest[cite: 8]. ROI on Rupee investment is 10% p.a.[cite: 8] Should the firm encash the US $ now or 2 months later?[cite: 8]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) US Dollars to Sell to Realize ₹ 25 Lakhs After 2 Months</h4>
+      <p>The firm will sell USD 2 months forward, and the bank will buy at the forward bid rate of <strong>₹ 47.00</strong>[cite: 8]:</p>
+      <p>$$\text{US Dollars Required} = \frac{₹ 25,00,000}{₹ 47.00} = \mathbf{US\$ 53,191.49}$$[cite: 8]</p>
+
+      <h4>(ii) Rupees Required to Purchase US $ 2,00,000 Spot</h4>
+      <p>The firm will buy USD spot from the bank at the spot ask rate of <strong>₹ 46.25</strong>[cite: 8]:</p>
+      <p>$$\text{Rupees Payable} = \text{US\$ } 2,00,000 \times ₹ 46.25 = \mathbf{₹ 92,50,000}$$[cite: 8]</p>
+
+      <h4>(iii) Evaluation: Encash US $ 69,000 Now vs. 2 Months Later</h4>
+      <ul>
+        <li><strong>Option 1: Encash Now in Spot Market:</strong>
+          <br />Spot proceeds @ ₹ 46.00 (bank bid) $= 69,000 \times ₹ 46.00 = ₹ 31,74,000$[cite: 8]
+          <br />Add: Interest on Rupee investment @ 10% p.a. for 2 months:
+          <br />$$₹ 31,74,000 \times 10\% \times \frac{2}{12} = ₹ 52,900$$[cite: 8]
+          <br />$$\text{Total Realization after 2 months} = ₹ 31,74,000 + ₹ 52,900 = \mathbf{₹ 32,26,900}$$[cite: 8]
+        </li>
+        <li><strong>Option 2: Encash 2 Months Later Using Forward Contract:</strong>
+          <br />$$\text{Forward Proceeds} = 69,000 \times ₹ 47.00 = \mathbf{₹ 32,43,000}$$[cite: 8]
+        </li>
+      </ul>
+      <p><strong>Advice:</strong> The firm should <strong>encash the US $ 2 months later</strong>, as it yields an additional gain of <strong>₹ 16,100</strong> ($₹ 32,43,000 - ₹ 32,26,900$)[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_12",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 23,
+    marks: 6,
+    question_html: `
+      <p>Z Ltd. is importing goods worth USD 2 million, requiring 90 days to make the payment[cite: 8]. The overseas supplier has offered 60 days of interest-free credit and an additional 30 days of credit at an interest rate of 8% p.a.[cite: 8]</p>
+      <p>The bankers of Z Ltd. offer a 30-day loan at 10% p.a., and their foreign exchange quotes are[cite: 8]:</p>
+      <ul>
+        <li>Spot 1 USD: ₹ 56.50[cite: 8]</li>
+        <li>60 days forward 1 USD: ₹ 57.10[cite: 8]</li>
+        <li>90 days forward 1 USD: ₹ 57.50[cite: 8]</li>
+      </ul>
+      <p>Evaluate whether Z Ltd. should: (i) Pay the supplier in 60 days, or (ii) Avail the supplier's offer of 90 days credit[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>Option (i): Pay the Supplier on Day 60 Using Bank Borrowing</h4>
+      <ul>
+        <li>Amount payable to supplier on Day 60 $= \text{USD } 20,00,000$[cite: 8]</li>
+        <li>Rupee outflow on Day 60 @ ₹ 57.10 $= 20,00,000 \times ₹ 57.10 = ₹ 11,42,00,000$[cite: 8]</li>
+        <li>Interest on Rupee loan for 30 days @ 10% p.a.:
+          <br />$$₹ 11,42,00,000 \times 10\% \times \frac{30}{360} = \mathbf{₹ 9,51,667}$$[cite: 8]
+        </li>
+        <li>$$\text{Total Rupee Outflow on Day 90} = ₹ 11,42,00,000 + ₹ 9,51,667 = \mathbf{₹ 11,51,51,667}$$[cite: 8]</li>
+      </ul>
+
+      <h4>Option (ii): Avail Supplier's 90-Day Credit</h4>
+      <ul>
+        <li>Principal Invoice Amount $= \text{USD } 20,00,000$[cite: 8]</li>
+        <li>Add: Supplier interest for 30 days @ 8% p.a.:
+          <br />$$\text{USD } 20,00,000 \times 8\% \times \frac{30}{360} = \text{USD } 13,333.33$$[cite: 8]
+        </li>
+        <li>Total USD payable on Day 90 $= \text{USD } 20,13,333.33$[cite: 8]</li>
+        <li>Applicable 90-day forward rate $= ₹ 57.50$[cite: 8]</li>
+        <li>$$\text{Total Rupee Outflow on Day 90} = 20,13,333.33 \times ₹ 57.50 = \mathbf{₹ 11,57,66,667 \approx ₹ 11,57,66,648}$$[cite: 8]</li>
+      </ul>
+
+      <h4>Conclusion</h4>
+      <p><strong>Option (i) is preferable</strong>, as it results in a lower cash outflow by <strong>₹ 6,14,981</strong> ($₹ 11,57,66,648 - ₹ 11,51,51,667$)[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_13",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 24,
+    marks: 6,
+    question_html: `
+      <p>Following are the spot exchange rates quoted across three different forex markets[cite: 8]:</p>
+      <ul>
+        <li>USD / INR = 48.30 in Mumbai[cite: 8]</li>
+        <li>GBP / INR = 77.52 in London[cite: 8]</li>
+        <li>GBP / USD = 1.6231 in New York[cite: 8]</li>
+      </ul>
+      <p>An arbitrageur has USD 1,00,00,000[cite: 8]. Assuming zero transaction costs, explain whether any triangular arbitrage gain is possible[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Execution of Triangular Arbitrage Operations</h4>
+      <ol>
+        <li><strong>Step 1 (Mumbai):</strong> Sell USD 1,00,00,000 to purchase INR @ 48.30:
+          <br />$$\text{Proceeds} = 1,00,00,000 \times ₹ 48.30 = \mathbf{₹ 48,30,00,000}$$[cite: 8]
+        </li>
+        <li><strong>Step 2 (London):</strong> Convert INR into GBP @ ₹ 77.52 per GBP:
+          <br />$$\text{GBP Received} = \frac{₹ 48,30,00,000}{77.52} = \mathbf{GBP 6,230,650.155}$$[cite: 8]
+        </li>
+        <li><strong>Step 3 (New York):</strong> Convert GBP into USD @ $ 1.6231 per GBP:
+          <br />$$\text{USD Received} = 6,230,650.155 \times 1.6231 = \mathbf{USD 10,112,968.27}$$[cite: 8]
+        </li>
+      </ol>
+
+      <h4>2. Net Arbitrage Gain</h4>
+      <p>$$\text{Net Gain} = \text{USD } 10,112,968.27 - \text{USD } 10,000,000.00 = \mathbf{USD 112,968.27}$$[cite: 8]</p>
+      <p>A riskless triangular arbitrage gain of <strong>USD 1,12,968.27</strong> is achieved[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_14",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 25,
+    marks: 6,
+    question_html: `
+      <p>The US dollar is selling in India at ₹ 55.50[cite: 8]. The interest rate for 6 months borrowing in India is 10% p.a. and in the USA is 4% p.a.[cite: 8]</p>
+      <ol type="i">
+        <li>Do you expect that the US dollar will be at a premium or at a discount in the Indian Forex Market?[cite: 8]</li>
+        <li>What will be the expected 6-month forward rate for the US dollar in India?[cite: 8]</li>
+        <li>What will be the rate of forward premium or discount?[cite: 8]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Premium / Discount Expectation</h4>
+      <p>Under Interest Rate Parity, the currency of the country with the lower interest rate (USA @ 4%) trades at a <strong>forward premium</strong> against the currency of the country with the higher interest rate (India @ 10%)[cite: 8]. Therefore, the US dollar is expected to quote at a <strong>premium</strong>[cite: 8].</p>
+
+      <h4>(ii) Expected 6-Month Forward Rate</h4>
+      <p>$$F_1 = S_0 \times \frac{1 + r_{\text{home}} \times (6/12)}{1 + r_{\text{foreign}} \times (6/12)} = 55.50 \times \frac{1 + 0.05}{1 + 0.02} = 55.50 \times \frac{1.05}{1.02}$$[cite: 8]</p>
+      <p>$$F_1 = \frac{58.275}{1.02} = \mathbf{₹ 57.132 \approx ₹ 57.13}$$[cite: 8]</p>
+
+      <h4>(iii) Annualized Rate of Forward Premium</h4>
+      <p>$$\text{Forward Premium \%} = \frac{F_1 - S_0}{S_0} \times \frac{12}{6} \times 100 = \frac{57.13 - 55.50}{55.50} \times 2 \times 100 = \frac{1.63}{55.50} \times 200 = \mathbf{5.87\% \text{ p.a.}}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_15",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 26,
+    marks: 4,
+    question_html: `
+      <p>In March 2009, Multinational Industries assesses the probability distribution of dollar rates per British pound to prevail on 01.09.2009 as follows[cite: 8]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">$ / £ Rate</th>
+              <th style="padding:6px; border:1px solid #ddd;">1.60</th>
+              <th style="padding:6px; border:1px solid #ddd;">1.70</th>
+              <th style="padding:6px; border:1px solid #ddd;">1.80</th>
+              <th style="padding:6px; border:1px solid #ddd;">1.90</th>
+              <th style="padding:6px; border:1px solid #ddd;">2.00</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Probability</td><td>0.15</td><td>0.20</td><td>0.25</td><td>0.20</td><td>0.20</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ol type="i">
+        <li>What is the expected spot rate for 01.09.2009?[cite: 8]</li>
+        <li>If the 6-month forward rate in March 2009 is $ 1.80, should the firm sell forward its pound receivables due in September 2009?[cite: 8]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Expected Spot Rate for September 2009</h4>
+      <p>$$E(S) = (1.60 \times 0.15) + (1.70 \times 0.20) + (1.80 \times 0.25) + (1.90 \times 0.20) + (2.00 \times 0.20)$$[cite: 8]</p>
+      <p>$$E(S) = 0.24 + 0.34 + 0.45 + 0.38 + 0.40 = \mathbf{\$ 1.81 \text{ per } £}$$[cite: 8]</p>
+
+      <h4>(ii) Forward Hedging Decision</h4>
+      <p>The forward rate ($ 1.80) is lower than the expected future spot rate ($ 1.81)[cite: 8]. If the firm sells forward, it locks in $ 1.80 per pound, whereas keeping the exposure unhedged promises an expected return of $ 1.81 per pound[cite: 8]. Therefore, if the firm seeks to maximize expected dollar receipts, it should <strong>retain its pound receivables unhedged</strong> (or hedge only if it is strictly risk-averse)[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_16",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 27,
+    marks: 8,
+    question_html: `
+      <p>An importer customer wishes to book a forward contract on 3rd September for the purchase of SGD 5,00,000 deliverable on 30th October[cite: 8]. Spot rates on 3rd September are[cite: 8]:</p>
+      <ul>
+        <li>USD / INR: 49.3700 / 49.3800[cite: 8]</li>
+        <li>USD / SGD: 1.7058 / 1.7068[cite: 8]</li>
+      </ul>
+      <p>Swap points[cite: 8]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Tenor</th>
+              <th style="padding:6px; border:1px solid #ddd;">USD / INR</th>
+              <th style="padding:6px; border:1px solid #ddd;">USD / SGD</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Spot / September (1st month)</td><td>0300 / 0400</td><td>48 / 49</td></tr>
+            <tr><td>Spot / October (2nd month)</td><td>1100 / 1300</td><td>96 / 97</td></tr>
+            <tr><td>Spot / November (3rd month)</td><td>1900 / 2200</td><td>138 / 140</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Calculate the rate quoted to the importer assuming an exchange margin of 5 paise (₹ 0.05)[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Forward Rates for October (2 Months Forward)</h4>
+      <p>The bank sells SGD to the importer, which requires buying USD against INR and selling USD against SGD[cite: 8]:</p>
+      <ul>
+        <li><strong>USD / INR Selling (Ask) Rate:</strong>
+          <br />$$\text{Spot Ask} = 49.3800; \quad \text{October Premium} = 0.1300 \implies \mathbf{₹ 49.5100}$$[cite: 8]
+        </li>
+        <li><strong>USD / SGD Buying (Bid) Rate:</strong>
+          <br />$$\text{Spot Bid} = 1.7058; \quad \text{2nd Month Premium} = 0.0096 \implies \mathbf{\text{SGD } 1.7154}$$[cite: 8]
+        </li>
+      </ul>
+
+      <h4>2. Cross Currency Calculation (INR per SGD)</h4>
+      <p>$$\text{Cross Ask Rate (INR / SGD)} = \frac{\text{Ask(USD/INR)}}{\text{Bid(USD/SGD)}} = \frac{₹ 49.5100}{1.7154} = \mathbf{₹ 28.8621}$$[cite: 8]</p>
+      <p>$$\text{Add: Exchange Margin} = \mathbf{₹ 0.0500}$$[cite: 8]</p>
+      <p>$$\text{Merchant Selling Rate Quoted to Importer} = 28.8621 + 0.0500 = \mathbf{₹ 28.9121 \text{ per SGD}}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_17",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 28,
+    marks: 6,
+    question_html: `
+      <p>A Japanese exporter bills an Indian company for 108 lakhs Yen due in 3 months[cite: 8]. Current spot rate: ₹ 30 lakhs for 108 lakhs Yen (3.60 Yen / ₹)[cite: 8]. The exchange rate (Yen/₹) is expected to decline by 10% over 3 months[cite: 8]. The 3-month forward rate is quoted at 3.30 Yen per Rupee[cite: 8].</p>
+      <p>Calculate the expected loss if unhedged and show how it can be hedged by a forward contract[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Expected Unhedged Position</h4>
+      <ul>
+        <li>Current Spot Rate $= \frac{\text{¥ } 108 \text{ lakhs}}{₹ 30 \text{ lakhs}} = \text{¥ } 3.60 \text{ per Rupee}$[cite: 8]</li>
+        <li>Expected Spot Rate after 10% fall in Yen/₹:
+          <br />$$\text{¥ } 3.60 \times (1 - 0.10) = \mathbf{\text{¥ } 3.24 \text{ per Rupee}}$$[cite: 8]
+        </li>
+        <li>Expected Rupee Outflow $= \frac{\text{¥ } 108 \text{ lakhs}}{3.24} = \mathbf{₹ 33.33 \text{ lakhs}}$[cite: 8]</li>
+        <li>$$\text{Expected Exchange Loss} = ₹ 33.33 \text{ lakhs} - ₹ 30.00 \text{ lakhs} = \mathbf{₹ 3.33 \text{ lakhs}}$$[cite: 8]</li>
+      </ul>
+
+      <h4>2. Hedged Position Using Forward Contract</h4>
+      <ul>
+        <li>3-Month Forward Rate $= \text{¥ } 3.30 \text{ per Rupee}$[cite: 8]</li>
+        <li>Rupee Outflow under Forward Cover $= \frac{\text{¥ } 108 \text{ lakhs}}{3.30} = \mathbf{₹ 32.73 \text{ lakhs}}$[cite: 8]</li>
+        <li>$$\text{Hedging Loss} = ₹ 32.73 \text{ lakhs} - ₹ 30.00 \text{ lakhs} = \mathbf{₹ 2.73 \text{ lakhs}}$$[cite: 8]</li>
+      </ul>
+
+      <h4>Conclusion</h4>
+      <p>Hedging via forward contract limits the expected loss to <strong>₹ 2.73 lakhs</strong>, saving <strong>₹ 0.60 lakhs</strong> compared to leaving the position unhedged[cite: 8]. Taking forward cover is recommended[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_18",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 29,
+    marks: 6,
+    question_html: `
+      <p>ABC Co. has a 6-month loan of US Dollars 2 million from a foreign collaborator[cite: 8]. Interest payable on maturity is at SOFR + 1.0% (Current 6-month SOFR is 2%)[cite: 8]. Market quotes:</p>
+      <ul>
+        <li>Spot USD 1 = ₹ 48.5275[cite: 8]</li>
+        <li>6 months forward = ₹ 48.4575[cite: 8]</li>
+      </ul>
+      <ol type="i">
+        <li>What would be their total commitment in Rupees if they enter into a forward contract?[cite: 8]</li>
+        <li>Will you advise them to do so? Explain giving reasons[cite: 8].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Total Rupee Commitment Under Forward Contract</h4>
+      <ul>
+        <li>Interest Rate $= 2\% (\text{SOFR}) + 1\% = \mathbf{3.00\% \text{ p.a.}}$[cite: 8]</li>
+        <li>$$\text{Interest Amount for 6 Months} = \text{US\$ } 20,00,000 \times 3\% \times \frac{6}{12} = \mathbf{\text{US\$ } 30,00,000 \times 10^{-2} = \text{US\$ } 30,000}$$[cite: 8]</li>
+        <li>Total USD Due at Maturity $= \text{US\$ } 20,00,000 + \text{US\$ } 30,000 = \mathbf{\text{US\$ } 20,30,000}$[cite: 8]</li>
+        <li>Applicable 6-Month Forward Rate $= \mathbf{₹ 48.4575}$[cite: 8]</li>
+        <li>$$\text{Total Rupee Commitment} = 20,30,000 \times ₹ 48.4575 = \mathbf{₹ 9,83,68,725}$$[cite: 8]</li>
+      </ul>
+
+      <h4>(ii) Advice and Managerial Reasoning</h4>
+      <p>The forward market quotes USD at a forward discount of ₹ 0.0700 ($₹ 48.5275 - ₹ 48.4575$)[cite: 8].</p>
+      <ul>
+        <li>If the firm has no specific forecast of dollar depreciation beyond ₹ 48.4575, entering into a forward contract freezes the total liability and insulates against upside volatility[cite: 8].</li>
+        <li>Given structural inflation differentials between India and the US, the Rupee historically depreciates against the Dollar over time; therefore, relying on unhedged dollar depreciation is risky[cite: 8]. <strong>Booking forward cover is advised</strong>[cite: 8].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_19",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 30,
+    marks: 4,
+    question_html: `
+      <p>Excel Exporters holds an export bill for USD 1,00,000 due in 60 days[cite: 8]. Spot rate is ₹ 45.60 per USD; the export consignment was budgeted at ₹ 45.50 per USD[cite: 8]. The bank quotes a 60-day forward rate of ₹ 45.20[cite: 8]. Calculate:</p>
+      <ol type="i">
+        <li>Rate of discount quoted by the bank (annualized)[cite: 8].</li>
+        <li>Probable loss of operating profit if forward sale is agreed to[cite: 8].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Annualized Rate of Forward Discount</h4>
+      <p>$$\text{Discount Rate} = \frac{\text{Spot Rate} - \text{Forward Rate}}{\text{Spot Rate}} \times \frac{365}{\text{Days}} \times 100$$[cite: 8]</p>
+      <p>$$\text{Discount Rate} = \frac{₹ 45.60 - ₹ 45.20}{₹ 45.60} \times \frac{365}{60} \times 100 = \frac{0.40}{45.60} \times 6.0833 \times 100 = \mathbf{5.34\% \text{ (or } 5.33\%)}[cite: 8]$$</p>
+
+      <h4>(ii) Loss of Budgeted Operating Profit</h4>
+      <p>$$\text{Loss per USD} = \text{Budgeted Rate} - \text{Forward Rate} = ₹ 45.50 - ₹ 45.20 = \mathbf{₹ 0.30}$$[cite: 8]</p>
+      <p>$$\text{Total Loss of Operating Profit} = 1,00,000 \times ₹ 0.30 = \mathbf{₹ 30,000}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_20",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 31,
+    marks: 4,
+    question_html: `
+      <p>In the International Monetary Market, an international forward bid for December 15 on pound sterling is $ 1.2816, while the price of IMM sterling futures for delivery on December 15 is $ 1.2806 (contract size: £ 62,500)[cite: 8]. How could a dealer profit from arbitrage, and how much profit is earned?[cite: 8]</p>
+    `,
+    solution_html: `
+      <h4>Arbitrage Strategy</h4>
+      <p>Because identical delivery commitments trade at different prices across markets, an arbitrageur exploits the spread by buying cheap in the futures market and selling expensive in the forward market[cite: 8]:</p>
+      <ul>
+        <li><strong>Buy</strong> 1 IMM Sterling Futures contract at $ 1.2806 per £[cite: 8].</li>
+        <li><strong>Sell</strong> £ 62,500 in the forward market at $ 1.2816 per £[cite: 8].</li>
+        <li>Take delivery under futures contract on December 15 paying:
+          <br />$$£ 62,500 \times 1.2806 = \$ 80,037.50$$[cite: 8]
+        </li>
+        <li>Deliver pounds into forward contract on December 15 receiving:
+          <br />$$£ 62,500 \times 1.2816 = \$ 80,100.00$$[cite: 8]
+        </li>
+      </ul>
+      <p>$$\text{Net Riskless Arbitrage Profit} = \$ 80,100.00 - \$ 80,037.50 = \mathbf{\$ 62.50}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_21",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 32,
+    marks: 6,
+    question_html: `
+      <p>An Indian importer has to settle an import bill of $ 1,30,000 under two options[cite: 8]:</p>
+      <ol type="i">
+        <li>Pay immediately without interest charges[cite: 8].</li>
+        <li>Pay after 3 months with interest @ 5% p.a.[cite: 8]</li>
+      </ol>
+      <p>Bank overdraft rate is 15% p.a. Market quotes[cite: 8]:</p>
+      <ul>
+        <li>Spot rate (₹ / $): 48.35 / 48.36[cite: 8]</li>
+        <li>3-Months forward rate (₹ / $): 48.81 / 48.83[cite: 8]</li>
+      </ul>
+      <p>Advise the importer on which option to choose[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>Option (i): Pay Immediately Using Bank Overdraft</h4>
+      <ul>
+        <li>Rupee cost to buy USD spot @ ₹ 48.36 $= 1,30,000 \times ₹ 48.36 = ₹ 62,86,800$[cite: 8]</li>
+        <li>Add: Overdraft interest for 3 months @ 15% p.a.:
+          <br />$$₹ 62,86,800 \times 15\% \times \frac{3}{12} = ₹ 2,35,755$$[cite: 8]
+        </li>
+        <li>$$\text{Total Rupee Outflow after 3 Months} = ₹ 62,86,800 + ₹ 2,35,755 = \mathbf{₹ 65,22,555}$$[cite: 8]</li>
+      </ul>
+
+      <h4>Option (ii): Settle After 3 Months with Supplier Credit and Forward Cover</h4>
+      <ul>
+        <li>Interest charged by supplier for 3 months @ 5% p.a.:
+          <br />$$\text{US\$ } 1,30,000 \times 5\% \times \frac{3}{12} = \text{US\$ } 1,625$$[cite: 8]
+        </li>
+        <li>Total USD payable on maturity $= \text{US\$ } 1,30,000 + 1,625 = \text{US\$ } 1,31,625$[cite: 8]</li>
+        <li>Rupee outflow @ 3-month forward ask rate ₹ 48.83:
+          <br />$$1,31,625 \times ₹ 48.83 = \mathbf{₹ 64,27,249}$$[cite: 8]
+        </li>
+      </ul>
+
+      <h4>Recommendation</h4>
+      <p><strong>Option (ii) is preferable</strong>, as the total cash outflow is lower by <strong>₹ 95,306</strong> ($₹ 65,22,555 - ₹ 64,27,249$)[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_22",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 33,
+    marks: 6,
+    question_html: `
+      <p>DEF Ltd. imported goods worth US$ 1 crore[cite: 8]. Payment terms offer 60 days interest-free credit, with additional 30-day credit charged at 7.75% p.a.[cite: 8] DEF Ltd.'s banker offers a 30-day loan at 9.50% p.a.[cite: 8] Foreign exchange quotes[cite: 8]:</p>
+      <ul>
+        <li>Spot INR/US$: 62.50[cite: 8]</li>
+        <li>60 days forward INR/US$: 63.15[cite: 8]</li>
+        <li>90 days forward INR/US$: 63.45[cite: 8]</li>
+      </ul>
+      <p>Which option is better: (i) Pay supplier on Day 60 and borrow from bank for 30 days, or (ii) Avail supplier's 90-day credit?[cite: 8]</p>
+    `,
+    solution_html: `
+      <h4>Option (i): Pay on Day 60 Using Bank Loan</h4>
+      <ul>
+        <li>Rupee cost on Day 60 @ ₹ 63.15 $= 1,00,00,000 \times ₹ 63.15 = ₹ 63.15 \text{ crores}$[cite: 8]</li>
+        <li>Interest on bank loan for 30 days @ 9.50% p.a.:
+          <br />$$₹ 63.15 \text{ crores} \times 9.5\% \times \frac{30}{360} = \mathbf{₹ 0.4999 \approx ₹ 0.50 \text{ crore}}$$[cite: 8]
+        </li>
+        <li>$$\text{Total Outflow at Day 90} = ₹ 63.15 + ₹ 0.50 = \mathbf{₹ 63.65 \text{ crores}}$$[cite: 8]</li>
+      </ul>
+
+      <h4>Option (ii): Avail Supplier's 90-Day Credit</h4>
+      <ul>
+        <li>Supplier interest for 30 days @ 7.75% p.a.:
+          <br />$$\text{US\$ } 1,00,00,000 \times 7.75\% \times \frac{30}{360} = \text{US\$ } 64,583.33 \approx \text{US\$ } 0.00646 \text{ crore}$$[cite: 8]
+        </li>
+        <li>Total USD payable on Day 90 $= \text{US\$ } 1.00646 \text{ crore}$[cite: 8]</li>
+        <li>Rupee cost on Day 90 @ ₹ 63.45 $= 1.00646 \times ₹ 63.45 = \mathbf{₹ 63.86 \text{ crores}}$[cite: 8]</li>
+      </ul>
+
+      <h4>Conclusion</h4>
+      <p><strong>Option (i) is better</strong>, as it saves <strong>₹ 0.21 crore (₹ 21 lakhs)</strong> compared to Option (ii)[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_23",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 34,
+    marks: 8,
+    question_html: `
+      <p>A company purchased goods on 01.07.2016 for US$ 60,000 payable on 31.12.2016[cite: 8]. Spot rate: 1 US$ = ₹ 65[cite: 8]. It can book a forward contract at ₹ 64, subject to an upfront premium of 2% of the forward value[cite: 8]. Cost of funds is 12% p.a.[cite: 8]</p>
+      <p>Compute the profit/loss from hedging if the spot exchange rate on 31.12.2016 is: (i) ₹ 68, (ii) ₹ 62, (iii) ₹ 70, and (iv) ₹ 65[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Total Cost of Hedging</h4>
+      <ul>
+        <li>Upfront forward fee paid on 1st July:
+          <br />$$60,000 \times ₹ 64 \times 2\% = ₹ 38,40,000 \times 2\% = ₹ 76,800$$[cite: 8]
+        </li>
+        <li>Interest on upfront fee for 6 months @ 12% p.a.:
+          <br />$$₹ 76,800 \times 12\% \times \frac{6}{12} = ₹ 4,608$$[cite: 8]
+        </li>
+        <li>$$\text{Total Hedging Cost} = ₹ 76,800 + ₹ 4,608 = \mathbf{₹ 81,408}$$[cite: 8]</li>
+      </ul>
+
+      <h4>2. Gain or Loss Under Spot Rate Scenarios on 31.12.2016</h4>
+      <ul>
+        <li><strong>(i) Spot Rate = ₹ 68:</strong>
+          <br />$$\text{Gross Gain on Forward} = 60,000 \times (₹ 68 - ₹ 64) = ₹ 2,40,000$$[cite: 8]
+          <br />$$\text{Net Gain} = ₹ 2,40,000 - ₹ 81,408 = \mathbf{+₹ 1,58,592}$$[cite: 8]
+        </li>
+        <li><strong>(ii) Spot Rate = ₹ 62:</strong>
+          <br />$$\text{Gross Loss on Forward} = 60,000 \times (₹ 64 - ₹ 62) = -₹ 1,20,000$$[cite: 8]
+          <br />$$\text{Total Loss} = -₹ 1,20,000 - ₹ 81,408 = \mathbf{-₹ 2,01,408}$$[cite: 8]
+        </li>
+        <li><strong>(iii) Spot Rate = ₹ 70:</strong>
+          <br />$$\text{Gross Gain on Forward} = 60,000 \times (₹ 70 - ₹ 64) = ₹ 3,60,000$$[cite: 8]
+          <br />$$\text{Net Gain} = ₹ 3,60,000 - ₹ 81,408 = \mathbf{+₹ 2,78,592}$$[cite: 8]
+        </li>
+        <li><strong>(iv) Spot Rate = ₹ 65:</strong>
+          <br />$$\text{Gross Gain on Forward} = 60,000 \times (₹ 65 - ₹ 64) = ₹ 60,000$$[cite: 8]
+          <br />$$\text{Net Loss} = ₹ 60,000 - ₹ 81,408 = \mathbf{-₹ 21,408}$$[cite: 8]
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_24",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 35,
+    marks: 10,
+    question_html: `
+      <p>AKC Ltd. exports electronic components to Japan, USA, and Europe on 90-day credit terms[cite: 8]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Japan</th>
+              <th style="padding:6px; border:1px solid #ddd;">USA</th>
+              <th style="padding:6px; border:1px solid #ddd;">Europe</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Variable Cost per Unit (₹)</td><td>225</td><td>395</td><td>510</td></tr>
+            <tr><td>Export Sale Price per Unit</td><td>Yen 650</td><td>US$ 10.23</td><td>Euro 11.99</td></tr>
+            <tr><td>Receipts Due in 90 Days</td><td>Yen 78,00,000</td><td>US$ 1,02,300</td><td>Euro 95,920</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Indirect foreign exchange rates (foreign currency per ₹)[cite: 8]:</p>
+      <ul>
+        <li>Spot: Yen 2.417&ndash;2.437; US$ 0.0214&ndash;0.0217; Euro 0.0177&ndash;0.0180[cite: 8]</li>
+        <li>3-Months Forward: Yen 2.397&ndash;2.427; US$ 0.0213&ndash;0.0216; Euro 0.0176&ndash;0.0178[cite: 8]</li>
+        <li>3-Months Spot: Yen 2.423&ndash;2.459; US$ 0.02144&ndash;0.02156; Euro 0.0177&ndash;0.0179[cite: 8]</li>
+      </ul>
+      <p>Advise AKC Ltd. by calculating the average contribution-to-sales ratio whether it should hedge its foreign currency risk[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Units Sold and Total Variable Costs</h4>
+      <ul>
+        <li>Japan: $\frac{\text{Yen } 78,00,000}{650} = 12,000 \text{ units} \implies 12,000 \times ₹ 225 = ₹ 27,00,000$[cite: 8]</li>
+        <li>USA: $\frac{\text{US\$ } 1,02,300}{10.23} = 10,000 \text{ units} \implies 10,000 \times ₹ 395 = ₹ 39,50,000$[cite: 8]</li>
+        <li>Europe: $\frac{\text{Euro } 95,920}{11.99} = 8,000 \text{ units} \implies 8,000 \times ₹ 510 = ₹ 40,80,000$[cite: 8]</li>
+        <li>$$\text{Total Variable Cost} = ₹ 27,00,000 + ₹ 39,50,000 + ₹ 40,80,000 = \mathbf{₹ 1,07,30,000}$$[cite: 8]</li>
+      </ul>
+
+      <h4>2. Scenario A: If Foreign Exchange Risk is Hedged (3-Month Forward Bid Rates)</h4>
+      <ul>
+        <li>Japan: $\frac{\text{Yen } 78,00,000}{2.427} = ₹ 32,13,844$[cite: 8]</li>
+        <li>USA: $\frac{\text{US\$ } 1,02,300}{0.0216} = ₹ 47,36,111$[cite: 8]</li>
+        <li>Europe: $\frac{\text{Euro } 95,920}{0.0178} = ₹ 53,88,764$[cite: 8]</li>
+        <li>$$\text{Total Hedged Sales} = ₹ 1,33,38,719$$[cite: 8]</li>
+        <li>$$\text{Contribution} = ₹ 1,33,38,719 - ₹ 1,07,30,000 = \mathbf{₹ 26,08,719}$$[cite: 8]</li>
+        <li>$$\text{Contribution to Sales Ratio} = \frac{₹ 26,08,719}{₹ 1,33,38,719} \times 100 = \mathbf{19.56\%}$$[cite: 8]</li>
+      </ul>
+
+      <h4>3. Scenario B: If Foreign Exchange Risk is Not Hedged (3-Month Spot Bid Rates)</h4>
+      <ul>
+        <li>Japan: $\frac{\text{Yen } 78,00,000}{2.459} = ₹ 31,72,021$[cite: 8]</li>
+        <li>USA: $\frac{\text{US\$ } 1,02,300}{0.02156} = ₹ 47,44,898$[cite: 8]</li>
+        <li>Europe: $\frac{\text{Euro } 95,920}{0.0179} = ₹ 53,58,659$[cite: 8]</li>
+        <li>$$\text{Total Unhedged Sales} = ₹ 1,32,75,578$$[cite: 8]</li>
+        <li>$$\text{Contribution} = ₹ 1,32,75,578 - ₹ 1,07,30,000 = \mathbf{₹ 25,45,578}$$[cite: 8]</li>
+        <li>$$\text{Contribution to Sales Ratio} = \frac{₹ 25,45,578}{₹ 1,32,75,578} \times 100 = \mathbf{19.17\%}$$[cite: 8]</li>
+      </ul>
+
+      <h4>Conclusion</h4>
+      <p>Hedging delivers higher total contribution (<strong>₹ 26,08,719</strong> vs. <strong>₹ 25,45,578</strong>) and a superior contribution-to-sales ratio (<strong>19.56%</strong> vs. <strong>19.17%</strong>)[cite: 8]. AKC Ltd. is <strong>advised to hedge its foreign currency risk</strong>[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_25",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 36,
+    marks: 10,
+    question_html: `
+      <p>EFD Ltd. is an Indian exporter with a receivable of US$ 10,000,000 due on April 1, 2015[cite: 8]. Market quotes on January 1, 2015 are[cite: 8]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Tenor</th>
+              <th style="padding:6px; border:1px solid #ddd;">Exchange Rates (US$ / INR)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Currency Futures (US$ / INR)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Initial Margin</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Spot</td><td>0.016667</td><td>Contract Size: ₹ 24,816,975</td><td>—</td></tr>
+            <tr><td>1-Month</td><td>0.016529</td><td>0.016519</td><td>₹ 17,500</td></tr>
+            <tr><td>3-Months</td><td>0.016129</td><td>0.016118</td><td>₹ 22,500</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Interest rate in India is 7% p.a.[cite: 8] On April 1, 2015, the spot rate is 0.016136 and the currency futures rate is 0.016134[cite: 8]. Evaluate which method is most advantageous: (i) Forward Contract, (ii) Currency Futures, or (iii) No Hedge[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Alternative I: Forward Contract</h4>
+      <p>$$\text{Rupee Receipts} = \frac{\text{US\$ } 10,000,000}{0.016129} = \mathbf{₹ 62,00,01,240}$$[cite: 8]</p>
+
+      <h4>2. Alternative II: Currency Futures</h4>
+      <ul>
+        <li>Contract size in USD $= ₹ 24,816,975 \times 0.016118 = \text{US\$ } 4,00,000$[cite: 8]</li>
+        <li>$$\text{Number of Contracts to Short} = \frac{\text{US\$ } 10,000,000}{\text{US\$ } 4,00,000} = \mathbf{25 \text{ contracts}}$$[cite: 8]</li>
+        <li>Initial Margin deposited $= 25 \times ₹ 22,500 = ₹ 5,62,500$[cite: 8]</li>
+        <li>Financing cost on margin for 3 months @ 7%:
+          <br />$$₹ 5,62,500 \times 7\% \times \frac{3}{12} = ₹ 9,844$$[cite: 8]
+        </li>
+        <li>Receipt on selling USD 10,000,000 in spot market on April 1:
+          <br />$$\frac{\text{US\$ } 10,00,000 \times 10}{0.016136} = ₹ 61,97,32,276$$[cite: 8]
+        </li>
+        <li>Variation Margin Gain on Futures Position:
+          <br />$$\frac{(0.016134 - 0.016118) \times 25 \times 24,816,975}{0.016136} = \frac{9,926.79}{0.016136} = ₹ 6,15,195$$[cite: 8]
+        </li>
+        <li>$$\text{Net Realization} = ₹ 61,97,32,276 + ₹ 6,15,195 - ₹ 9,844 = \mathbf{₹ 62,03,37,627}$$[cite: 8]</li>
+      </ul>
+
+      <h4>3. Alternative III: No Hedge (Spot Realization on April 1)</h4>
+      <p>$$\text{Receipts} = \frac{\text{US\$ } 10,000,000}{0.016136} = \mathbf{₹ 61,97,32,276}$$[cite: 8]</p>
+
+      <h4>Summary Evaluation</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Strategy</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">Net Rupee Receipts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Forward Contract</td><td style="text-align:right;">₹ 62,00,01,240[cite: 8]</td></tr>
+            <tr style="background-color:#e6ffe6; font-weight:bold;"><td>Currency Futures</td><td style="text-align:right;">₹ 62,03,37,627[cite: 8]</td></tr>
+            <tr><td>No Hedge</td><td style="text-align:right;">₹ 61,97,32,276[cite: 8]</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Conclusion:</strong> Hedging with <strong>Currency Futures</strong> is the most advantageous method, delivering the maximum net realization[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_26",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 37,
+    marks: 8,
+    question_html: `
+      <p>Given the following data:</p>
+      <ul>
+        <li>Spot rate: 1 US $ = ₹ 48.0123</li>
+        <li>180 days Forward rate for 1 US $ = ₹ 48.8190</li>
+        <li>Annualized interest rate for 6 months &ndash; Rupee = 12%</li>
+        <li>Annualized interest rate for 6 months &ndash; US $ = 8%</li>
+      </ul>
+      <p>Is there any arbitrage opportunity? If yes, how can an arbitrageur take advantage of the situation if he is willing to borrow ₹ 40,00,000 or US $ 83,312?</p>
+    `,
+    solution_html: `
+      <h4>1. Evaluation of Arbitrage Opportunity</h4>
+      <ul>
+        <li>$$\text{Spot Rate} = \frac{₹ 40,00,000}{\text{US\$ } 83,312} = ₹ 48.0123 \text{ per USD}$$</li>
+        <li>$$\text{Forward Premium on USD} = \frac{48.8190 - 48.0123}{48.0123} \times \frac{12}{6} \times 100 = \frac{0.8067}{48.0123} \times 200 = \mathbf{3.36\% \text{ p.a.}}$$</li>
+        <li>$$\text{Interest Rate Differential } (r_{\text{INR}} - r_{\text{USD}}) = 12\% - 8\% = \mathbf{4.00\% \text{ p.a.}}$$[cite: 8]</li>
+      </ul>
+      <p>Because the interest rate differential ($4.00\%$) is higher than the forward premium on the dollar ($3.36\%$), covered interest arbitrage inflow into India is profitable[cite: 8].</p>
+
+      <h4>2. Arbitrage Execution Steps</h4>
+      <ol>
+        <li><strong>Borrow</strong> US$ 83,312 for 6 months at 8% p.a.[cite: 8]
+          <br />$$\text{Repayment Obligation at Month 6} = \text{US\$ } 83,312 \times \left(1 + 0.08 \times \frac{6}{12}\right) = \text{US\$ } 83,312 \times 1.04 = \mathbf{\text{US\$ } 86,644.48}$$[cite: 8]
+        </li>
+        <li><strong>Convert</strong> US$ 83,312 into Rupees at the spot rate of ₹ 48.0123:
+          <br />$$\text{Rupee Principal Realized} = \text{US\$ } 83,312 \times ₹ 48.0123 = \mathbf{₹ 40,00,000}$$[cite: 8]
+        </li>
+        <li><strong>Invest</strong> ₹ 40,00,000 in India for 6 months at 12% p.a.[cite: 8]:
+          <br />$$\text{Interest Earned} = ₹ 40,00,000 \times 12\% \times \frac{6}{12} = ₹ 2,40,000$$[cite: 8]
+          <br />$$\text{Total Proceeds at Month 6} = ₹ 40,00,000 + ₹ 2,40,000 = \mathbf{₹ 42,40,000}$$[cite: 8]
+        </li>
+        <li><strong>Cover</strong> forward by selling INR proceeds at the forward rate of ₹ 48.8190:
+          <br />$$\text{USD Converted} = \frac{₹ 42,40,000}{₹ 48.8190} = \mathbf{\text{US\$ } 86,851.43}$$[cite: 8]
+        </li>
+      </ol>
+
+      <h4>3. Net Arbitrage Profit</h4>
+      <p>$$\text{Profit in USD} = \text{US\$ } 86,851.43 - \text{US\$ } 86,644.48 = \mathbf{\text{US\$ } 206.95}$$[cite: 8]</p>
+      <p>$$\text{Profit in INR} = \text{US\$ } 206.95 \times ₹ 48.8190 = \mathbf{₹ 10,103}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_27",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 38,
+    marks: 8,
+    question_html: `
+      <p>Given the following information[cite: 8]:</p>
+      <ul>
+        <li>Exchange rate: Canadian dollar 0.665 per DM (spot)[cite: 8]</li>
+        <li>Canadian dollar 0.670 per DM (3 months forward)[cite: 8]</li>
+        <li>Interest rates: DM = 7% p.a.; Canadian Dollar = 9% p.a.[cite: 8]</li>
+      </ul>
+      <p>What operations would be carried out to take possible arbitrage gains?[cite: 8]</p>
+    `,
+    solution_html: `
+      <h4>1. Evaluation of Forward Premium and Interest Differential</h4>
+      <p>$$\text{Forward Premium on DM} = \frac{0.670 - 0.665}{0.665} \times \frac{12}{3} \times 100 = \frac{0.005}{0.665} \times 400 = \mathbf{3.01\% \text{ p.a.}}$$[cite: 8]</p>
+      <p>$$\text{Interest Rate Differential } (r_{\text{Can\$}} - r_{\text{DM}}) = 9\% - 7\% = \mathbf{2.00\% \text{ p.a.}}$$[cite: 8]</p>
+      <p>Because the forward premium on the Deutschmark (3.01%) exceeds the interest rate differential (2.00%), it is profitable to borrow Canadian Dollars and invest in the currency with the lower interest rate (DM)[cite: 8].</p>
+
+      <h4>2. Arbitrage Operations (Assuming a base borrowing of Can$ 1,000)</h4>
+      <ol>
+        <li><strong>Borrow</strong> Can$ 1,000 for 3 months at 9% p.a.[cite: 8]
+          <br />$$\text{Repayment Obligation} = \text{Can\$ } 1,000 \times \left(1 + 0.09 \times \frac{3}{12}\right) = \text{Can\$ } 1,000 \times 1.0225 = \mathbf{\text{Can\$ } 1,022.50}$$[cite: 8]
+        </li>
+        <li><strong>Convert</strong> Can$ 1,000 into DM at the spot rate of 0.665:
+          <br />$$\text{DM Purchased} = \frac{\text{Can\$ } 1,000}{0.665} = \mathbf{\text{DM } 1,503.76}$$[cite: 8]
+        </li>
+        <li><strong>Invest</strong> DM 1,503.76 for 3 months at 7% p.a.[cite: 8]:
+          <br />$$\text{Interest Earned} = \text{DM } 1,503.76 \times 0.07 \times \frac{3}{12} = \text{DM } 26.32$$[cite: 8]
+          <br />$$\text{Total Maturity Value} = \text{DM } 1,503.76 + \text{DM } 26.32 = \mathbf{\text{DM } 1,530.08}$$[cite: 8]
+        </li>
+        <li><strong>Sell</strong> DM 1,530.08 forward for 3 months at the forward rate of Can$ 0.670 per DM:
+          <br />$$\text{Can\$ Proceeds} = \text{DM } 1,530.08 \times 0.670 = \mathbf{\text{Can\$ } 1,025.15}$$[cite: 8]
+        </li>
+      </ol>
+
+      <h4>3. Net Arbitrage Profit</h4>
+      <p>$$\text{Net Gain} = \text{Can\$ } 1,025.15 - \text{Can\$ } 1,022.50 = \mathbf{\text{Can\$ } 2.65 \text{ per Can\$ 1,000 borrowed}}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_28",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 39,
+    marks: 6,
+    question_html: `
+      <p>An Indian exporting firm, Rohit and Bros., wishes to cover itself against a likely depreciation of pound sterling with the following data[cite: 8]:</p>
+      <ul>
+        <li>Receivables: £ 500,000 due in 3 months[cite: 8]</li>
+        <li>Spot rate: ₹ 56.00 / £[cite: 8]</li>
+        <li>3-month interest rates: India = 12% p.a.; UK = 5% p.a.[cite: 8]</li>
+      </ul>
+      <p>Show how a money market hedge can be put in place and determine the net gain[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Money Market Hedge Execution Steps</h4>
+      <ol>
+        <li><strong>Borrow in Sterling (£):</strong> Borrow an amount of £ $x$ such that the principal plus 3 months' interest @ 5% p.a. equals the receivable of £ 500,000[cite: 8]:
+          <br />$$x \left(1 + 0.05 \times \frac{3}{12}\right) = 500,000 \implies x(1.0125) = 500,000$$[cite: 8]
+          <br />$$x = \frac{500,000}{1.0125} = \mathbf{£ 493,827.16 \approx £ 493,827}$$[cite: 8]
+        </li>
+        <li><strong>Convert at Spot:</strong> Sell borrowed sterling in the spot market @ ₹ 56.00 / £[cite: 8]:
+          <br />$$\text{Rupee Proceeds} = £ 493,827 \times ₹ 56.00 = \mathbf{₹ 2,76,54,312}$$[cite: 8]
+        </li>
+        <li><strong>Invest in India:</strong> Deposit ₹ 2,76,54,312 in the Indian money market for 3 months @ 12% p.a.[cite: 8]:
+          <br />$$\text{Total Rupee Maturity Proceeds} = ₹ 2,76,54,312 \times \left(1 + 0.12 \times \frac{3}{12}\right) = ₹ 2,76,54,312 \times 1.03 = \mathbf{₹ 2,84,83,941}$$[cite: 8]
+        </li>
+        <li><strong>Settle:</strong> Use the £ 500,000 export proceeds received at Month 3 to repay the UK bank borrowing completely[cite: 8].</li>
+      </ol>
+
+      <h4>2. Net Gain Evaluation</h4>
+      <p>$$\text{Value of Export at Current Spot} = £ 500,000 \times ₹ 56.00 = ₹ 2,80,00,000$$[cite: 8]</p>
+      <p>$$\text{Net Gain from Money Market Operation} = ₹ 2,84,83,941 - ₹ 2,80,00,000 = \mathbf{₹ 4,83,941}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_29",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 40,
+    marks: 8,
+    question_html: `
+      <p>A UK-based exporter has an invoice amount of $ 3,50,000 with a credit period of 3 months[cite: 8]. Market rates in London are[cite: 8]:</p>
+      <ul>
+        <li>Spot Rate ($ / £): 1.5865 &ndash; 1.5905[cite: 8]</li>
+        <li>3-Month Forward Rate ($ / £): 1.6100 &ndash; 1.6140[cite: 8]</li>
+        <li>US $ Interest Rates: Deposit = 7% p.a.; Loan = 9% p.a.[cite: 8]</li>
+        <li>UK £ Interest Rates: Deposit = 5% p.a.; Loan = 8% p.a.[cite: 8]</li>
+      </ul>
+      <p>Compute and show how a money market hedge can be put in place, and compare the outcome with a forward contract[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Money Market Hedge Strategy</h4>
+      <ul>
+        <li><strong>Step 1 (Borrow USD):</strong> Borrow an amount in USD such that principal plus 3 months' interest @ 9% p.a. (2.25% per quarter) equals $ 3,50,000[cite: 8]:
+          <br />$$\text{USD Borrowed} = \frac{\$ 3,50,000}{1 + \left(0.09 \times \frac{3}{12}\right)} = \frac{\$ 3,50,00,000 \times 10^{-2}}{1.0225} = \mathbf{\$ 3,42,298.29}$$[cite: 8]
+        </li>
+        <li><strong>Step 2 (Convert to GBP Spot):</strong> Sell USD and buy GBP at the spot ask rate of 1.5905 $/£[cite: 8]:
+          <br />$$\text{GBP Received} = \frac{\$ 3,42,298.29}{1.5905} = \mathbf{£ 2,15,214.27}$$[cite: 8]
+        </li>
+        <li><strong>Step 3 (Deposit in GBP):</strong> Place £ 2,15,214.27 on deposit for 3 months @ 5% p.a. (1.25% per quarter)[cite: 8]:
+          <br />$$\text{Maturity Value in GBP} = £ 2,15,214.27 \times \left(1 + 0.05 \times \frac{3}{12}\right) = £ 2,15,214.27 \times 1.0125 = \mathbf{£ 2,17,904.45}$$[cite: 8]
+        </li>
+        <li><strong>Step 4 (Settlement):</strong> The incoming customer remittance of $ 3,50,000 settles the dollar borrowing completely[cite: 8].</li>
+      </ul>
+
+      <h4>2. Forward Contract Hedge</h4>
+      <p>Sell $ 3,50,000 at the 3-month forward ask rate of 1.6140 $/£[cite: 8]:</p>
+      <p>$$\text{GBP Proceeds Under Forward Cover} = \frac{\$ 3,50,000}{1.6140} = \mathbf{£ 2,16,852.54}$$[cite: 8]</p>
+
+      <h4>3. Comparison and Conclusion</h4>
+      <p>$$\text{Gain from Money Market Hedge over Forward Cover} = £ 2,17,904.45 - £ 2,16,852.54 = \mathbf{£ 1,051.91}$$[cite: 8]</p>
+      <p>The <strong>Money Market Hedge is more beneficial</strong> for the exporter[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_30",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 41,
+    marks: 6,
+    question_html: `
+      <p>The rate of inflation in India is 8% per annum and in the USA it is 4%[cite: 8]. The current spot rate for USD in India is ₹ 46[cite: 8]. What will be the expected rate after 1 year and after 4 years applying the Purchasing Power Parity (PPP) Theory?[cite: 8]</p>
+    `,
+    solution_html: `
+      <h4>1. Formula under Relative Purchasing Power Parity</h4>
+      <p>$$E(S_t) = S_0 \times \left[\frac{1 + I_{\text{domestic}}}{1 + I_{\text{foreign}}}\right]^t$$[cite: 8]</p>
+      <p>Where $S_0 = ₹ 46.00$, $I_{\text{domestic}} = 0.08$, and $I_{\text{foreign}} = 0.04$[cite: 8].</p>
+
+      <h4>2. Year-by-Year Forecasts</h4>
+      <ul>
+        <li><strong>After Year 1:</strong>
+          <br />$$E(S_1) = ₹ 46.00 \times \frac{1.08}{1.04} = ₹ 46.00 \times 1.03846 = \mathbf{₹ 47.77 \text{ per USD}}$$[cite: 8]
+        </li>
+        <li><strong>After Year 2:</strong>
+          <br />$$E(S_2) = ₹ 47.77 \times \frac{1.08}{1.04} = \mathbf{₹ 49.61 \text{ per USD}}$$[cite: 8]
+        </li>
+        <li><strong>After Year 3:</strong>
+          <br />$$E(S_3) = ₹ 49.61 \times \frac{1.08}{1.04} = \mathbf{₹ 51.52 \text{ per USD}}$$[cite: 8]
+        </li>
+        <li><strong>After Year 4:</strong>
+          <br />$$E(S_4) = ₹ 51.52 \times \frac{1.08}{1.04} = \mathbf{₹ 53.50 \text{ per USD}}$$[cite: 8]
+          <br /><small><em>(Directly: $46.00 \times (1.0384615)^4 = 46.00 \times 1.16301 = \mathbf{₹ 53.50}$)</em></small>[cite: 8]
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_31",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 42,
+    marks: 4,
+    question_html: `
+      <p>On April 1, 3-month interest rates in UK (£) and US ($) are 7.5% and 3.5% p.a. respectively[cite: 8]. The UK £ / US $ spot rate is 0.7570[cite: 8]. What would be the forward rate for US $ for delivery on 30th June?[cite: 8]</p>
+    `,
+    solution_html: `
+      <h4>Formula (Interest Rate Parity)</h4>
+      <p>$$F = S_0 \times \frac{1 + r_£ \times (3/12)}{1 + r_{\$} \times (3/12)}$$[cite: 8]</p>
+
+      <h4>Computation</h4>
+      <ul>
+        <li>3-Month UK Rate: $7.5\% \times \frac{3}{12} = 1.875\%$[cite: 8]</li>
+        <li>3-Month US Rate: $3.5\% \times \frac{3}{12} = 0.875\%$[cite: 8]</li>
+      </ul>
+      <p>$$F = 0.7570 \times \frac{1 + 0.01875}{1 + 0.00875} = 0.7570 \times \frac{1.01875}{1.00875}$$[cite: 8]</p>
+      <p>$$F = 0.7570 \times 1.009913 = \mathbf{£ 0.7645 \text{ per US\$}}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_32",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 43,
+    marks: 6,
+    question_html: `
+      <p>An importer requests his bank to extend a forward contract for US$ 20,000 due for maturity on 30th October 2010 for a further period of 3 months[cite: 8]. Contracted Rate: US$ 1 = ₹ 42.32[cite: 8].</p>
+      <p>Market quotes on 30.10.2010[cite: 8]:</p>
+      <ul>
+        <li>Spot: ₹ 41.5000 / 41.5200[cite: 8]</li>
+        <li>3 months' Premium: 0.87% / 0.93%[cite: 8]</li>
+        <li>Margin money: Buying = 0.075%; Selling = 0.20%[cite: 8]</li>
+      </ul>
+      <p>Compute: (i) The cost to the importer in respect of extension, and (ii) The rate of the new forward contract[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>(i) Cost of Extension to the Importer</h4>
+      <p>The original forward sale contract is cancelled on the due date by purchasing spot from the customer at the spot buying rate less margin[cite: 8]:</p>
+      <ul>
+        <li>Spot Buying Rate $= ₹ 41.5000$[cite: 8]</li>
+        <li>Less: Margin @ 0.075% $= 0.075\% \times ₹ 41.5000 = ₹ 0.031125$[cite: 8]</li>
+        <li>Cancellation Buying Rate $= ₹ 41.5000 - ₹ 0.0311 = ₹ 41.4689 \rightarrow \mathbf{₹ 41.4700}$[cite: 8]</li>
+      </ul>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <tbody>
+            <tr><td>Payable by customer at contracted rate ($20,000 \times ₹ 42.32$)</td><td style="text-align:right;">₹ 8,46,400.00[cite: 8]</td></tr>
+            <tr><td>Less: Credited to customer at cancellation rate ($20,000 \times ₹ 41.47$)</td><td style="text-align:right;">(₹ 8,29,400.00)[cite: 8]</td></tr>
+            <tr style="font-weight:bold; background-color:#f9f9f9;">
+              <td>Net Cost to Importer on Extension</td>
+              <td style="text-align:right;"><strong>₹ 17,000.00</strong>[cite: 8]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>(ii) Rate of New 3-Month Forward Contract</h4>
+      <p>The contract is rebooked at the 3-month forward selling rate plus selling margin[cite: 8]:</p>
+      <ul>
+        <li>Spot Selling Rate $= ₹ 41.5200$[cite: 8]</li>
+        <li>Add: 3 Months' Premium @ 0.93% $= 0.93\% \times ₹ 41.5200 = ₹ 0.3861$[cite: 8]</li>
+        <li>Forward Base Rate $= ₹ 41.5200 + ₹ 0.3861 = ₹ 41.9061$[cite: 8]</li>
+        <li>Add: Selling Margin @ 0.20% $= 0.20\% \times ₹ 41.9061 = ₹ 0.0838$[cite: 8]</li>
+        <li>$$\text{New Forward Rate} = ₹ 41.9061 + ₹ 0.0838 = ₹ 41.9899 \rightarrow \mathbf{₹ 41.9900 \text{ per US\$}}$$[cite: 8]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_33",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 44,
+    marks: 6,
+    question_html: `
+      <p>XYZ Ltd., an Indian firm, will need to pay Japanese Yen (JY) 5,00,000 on 30th June[cite: 8]. Market quotes on 1st April are[cite: 8]:</p>
+      <ul>
+        <li>Spot (JY / INR): 1.9516 / 1.9711[cite: 8]</li>
+        <li>3 months forward (JY / INR): 1.9726 / 1.9923[cite: 8]</li>
+        <li>Strike Price: JY 2.125 / INR[cite: 8]</li>
+        <li>Call Option (June): JY 0.047; Put Option (June): JY 0.098[cite: 8]</li>
+      </ul>
+      <p>Recommend the cheaper hedging alternative for XYZ Ltd.[cite: 8]</p>
+    `,
+    solution_html: `
+      <h4>1. Alternative I: Forward Market Cover</h4>
+      <p>To acquire Yen against INR, the bank buys INR and sells JY at the forward bid rate of 1.9726 JY/INR[cite: 8]:</p>
+      <p>$$\text{Rupee Cost per JY} = \frac{1}{1.9726} = ₹ 0.506945 \approx ₹ 0.5070$$[cite: 8]</p>
+      <p>$$\text{Total Outflow in INR} = \frac{\text{JY } 5,00,000}{1.9726} = \mathbf{₹ 2,53,473 \approx ₹ 2,53,500}$$[cite: 8]</p>
+
+      <h4>2. Alternative II: Currency Option Cover</h4>
+      <p>To hedge a Yen payable, the firm purchases a <strong>Put Option on INR</strong> (giving the right to sell INR and buy Yen) at the strike of JY 2.125 / INR[cite: 8]:</p>
+      <ul>
+        <li>Principal INR required at strike:
+          <br />$$\frac{\text{JY } 5,00,000}{2.125} = \mathbf{₹ 2,35,294.12}$$[cite: 8]
+        </li>
+        <li>Put Option Premium payable today @ JY 0.098 per INR:
+          <br />$$\text{Total Premium in JY} = ₹ 2,35,294.12 \times \text{JY } 0.098 = \text{JY } 23,058.82$$[cite: 8]
+          <br />$$\text{Premium Cost in INR (at spot bid 1.9516)} = \frac{\text{JY } 23,058.82}{1.9516} = \mathbf{₹ 11,815.34}$$[cite: 8]
+        </li>
+        <li>$$\text{Total Rupee Outflow under Option Cover} = ₹ 2,35,294.12 + ₹ 11,815.34 = \mathbf{₹ 2,47,109.46 \approx ₹ 2,47,109}$$[cite: 8]</li>
+      </ul>
+
+      <h4>Recommendation</h4>
+      <p>The <strong>Currency Option Cover is cheaper</strong> by <strong>₹ 6,391</strong> ($₹ 2,53,500 - ₹ 2,47,109$) and retains the upside potential if the Rupee strengthens beyond JY 2.125[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_34",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 45,
+    marks: 6,
+    question_html: `
+      <p>ABC Technologic is expecting to receive US$ 4,00,000 after 3 months and hedges using futures contracts (standard lot: $ 1,000)[cite: 8]. Current spot and 3-month futures quote at ₹ 44.00 and ₹ 45.00 respectively[cite: 8].</p>
+      <p>After 3 months, the company closes its position when both futures and spot quote at ₹ 44.50[cite: 8]. Calculate the effective realization per dollar and the hedging benefit[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Futures Hedging Strategy</h4>
+      <ul>
+        <li>$$\text{Number of Contracts to Sell} = \frac{\text{US\$ } 4,00,000}{\$ 1,000} = \mathbf{400 \text{ contracts}}$$[cite: 8]</li>
+        <li>Gain on Futures Position:
+          <br />$$400 \times \$ 1,000 \times (₹ 45.00 - ₹ 44.50) = 4,00,000 \times ₹ 0.50 = \mathbf{₹ 2,00,000}$$[cite: 8]
+        </li>
+      </ul>
+
+      <h4>2. Total Realization and Effective Rate</h4>
+      <ul>
+        <li>Spot realization from export remittance ($4,00,000 \times ₹ 44.50$) $= ₹ 1,78,00,000$[cite: 8]</li>
+        <li>Add: Profit from futures hedge $= ₹ 2,00,000$[cite: 8]</li>
+        <li>$$\text{Total Net Inflow} = ₹ 1,78,00,000 + ₹ 2,00,000 = \mathbf{₹ 1,80,00,000}$$[cite: 8]</li>
+        <li>$$\text{Effective Realization per US\$} = \frac{₹ 1,80,00,000}{\text{US\$ } 4,00,000} = \mathbf{₹ 45.00 \text{ per US\$}}$$[cite: 8]</li>
+      </ul>
+
+      <h4>3. Benefit of Hedging</h4>
+      <p>$$\text{Benefit} = \text{Futures Profit} = \mathbf{₹ 2,00,000}$$[cite: 8]</p>
+      <p>Without the hedge, the firm would have received only ₹ 44.50 per dollar; hedging locked in the original futures price of ₹ 45.00[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_35",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 46,
+    marks: 6,
+    question_html: `
+      <p>Gibraltar Limited imported 5,000 bottles of shampoo at a landed cost of US $ 20 each[cite: 8]. The company can pay immediately or in 3 months' time[cite: 8]. It has a clean overdraft facility at 14% p.a.[cite: 8] Market quotes[cite: 8]:</p>
+      <ul>
+        <li>Mumbai ₹ / $ spot: 60.25 &ndash; 60.55[cite: 8]</li>
+        <li>3 months swap points: 35 / 25[cite: 8]</li>
+      </ul>
+      <p>Calculate which method is cheaper[cite: 8]:</p>
+      <ol type="i">
+        <li>Pay in 3 months with interest @ 10% p.a. and cover risk forward[cite: 8].</li>
+        <li>Settle now at the spot rate and pay overdraft interest for 3 months[cite: 8].</li>
+      </ol>
+    `,
+    solution_html: `
+      <p>$$\text{Principal Payable} = 5,000 \text{ bottles} \times \$ 20 = \mathbf{\$ 1,00,000}$$[cite: 8]</p>
+
+      <h4>Option (i): Pay in 3 Months with Supplier Interest and Forward Cover</h4>
+      <ul>
+        <li>Interest for 3 months @ 10% p.a.:
+          <br />$$\$ 1,00,000 \times 10\% \times \frac{3}{12} = \$ 2,500$$[cite: 8]
+        </li>
+        <li>Total USD payable at Month 3 $= \$ 1,02,500$[cite: 8]</li>
+        <li>Swap points are descending (35/25), indicating the dollar is at a <strong>discount</strong>[cite: 8]:
+          <br />$$\text{3-Month Forward Ask Rate} = 60.55 - 0.25 = \mathbf{₹ 60.30}$$[cite: 8]
+        </li>
+        <li>$$\text{Total Rupee Outflow} = \$ 1,02,500 \times ₹ 60.30 = \mathbf{₹ 61,80,750}$$[cite: 8]</li>
+      </ul>
+
+      <h4>Option (ii): Settle Immediately Using Bank Overdraft</h4>
+      <ul>
+        <li>Spot purchase cost @ ₹ 60.55 $= \$ 1,00,000 \times ₹ 60.55 = ₹ 60,55,000$[cite: 8]</li>
+        <li>Overdraft interest for 3 months @ 14% p.a.:
+          <br />$$₹ 60,55,000 \times 14\% \times \frac{3}{12} = ₹ 2,11,925$$[cite: 8]
+        </li>
+        <li>$$\text{Total Rupee Outflow} = ₹ 60,55,000 + ₹ 2,11,925 = \mathbf{₹ 62,66,925}$$[cite: 8]</li>
+      </ul>
+
+      <h4>Conclusion</h4>
+      <p><strong>Option (i) is cheaper</strong> by <strong>₹ 86,175</strong> ($₹ 62,66,925 - ₹ 61,80,750$) and should be preferred[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_36",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 47,
+    marks: 8,
+    question_html: `
+      <p>An American firm is under obligation to pay interest of Can$ 1,010,000 on 31st July and Can$ 705,000 on 30th September (current date: June 30)[cite: 8]. The firm is risk-averse and evaluates forward contracts vs. options[cite: 8].</p>
+      <p>Quotes (US$ per Can$)[cite: 8]:</p>
+      <ul>
+        <li>Spot: 0.9284 &ndash; 0.9288; 1-Month Forward: 0.9501; 3-Months Forward: 0.9556[cite: 8]</li>
+        <li>Call Option Strike 0.94 (July expiry): 1.02 cents; Call Option Strike 0.95 (Sept expiry): 1.64 cents[cite: 8]</li>
+        <li>Contract size: Can$ 50,000; uncovered portion covered at forward rate[cite: 8].</li>
+      </ul>
+      <p>Recommend which hedging method is appropriate for the American firm[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Method I: Forward Market Cover</h4>
+      <ul>
+        <li>July 31 Payment: $\text{Can\$ } 1,010,000 \times 0.9501 = \mathbf{\text{US\$ } 9,59,601}$[cite: 8]</li>
+        <li>September 30 Payment: $\text{Can\$ } 705,000 \times 0.9556 = \mathbf{\text{US\$ } 6,73,698}$[cite: 8]</li>
+        <li>$$\text{Total Outflow under Forward Cover} = \$ 9,59,601 + \$ 6,73,698 = \mathbf{\text{US\$ } 1,633,299}$$</li>
+      </ul>
+
+      <h4>2. Method II: Currency Option Contracts</h4>
+      <ul>
+        <li><strong>July Commitment (Can$ 1,010,000):</strong>
+          <br />Number of full contracts: $\frac{1,010,000}{50,000} = 20.20 \implies \mathbf{20 \text{ contracts}}$ ($20 \times 50,000 = \text{Can\$ } 1,000,000$)[cite: 8]
+          <br />Cost under exercised option ($1,000,000 \times \$ 0.94$) $= \$ 9,40,000$[cite: 8]
+          <br />Remainder Can$ 10,000 covered at forward rate ($10,000 \times 0.9501$) $= \$ 9,501$[cite: 8]
+          <br />Upfront Premium paid ($1,000,000 \times \$ 0.0102$) $= \$ 10,200$[cite: 8]
+          <br />$$\text{Total July Outflow} = 9,40,000 + 9,501 + 10,200 = \mathbf{\text{US\$ } 9,59,701}$$[cite: 8]
+        </li>
+        <li><strong>September Commitment (Can$ 705,000):</strong>
+          <br />Number of full contracts: $\frac{705,000}{50,000} = 14.10 \implies \mathbf{14 \text{ contracts}}$ ($14 \times 50,000 = \text{Can\$ } 700,000$)[cite: 8]
+          <br />Cost under exercised option ($700,000 \times \$ 0.95$) $= \$ 6,65,000$[cite: 8]
+          <br />Remainder Can$ 5,000 covered at forward rate ($5,000 \times 0.9556$) $= \$ 4,778$[cite: 8]
+          <br />Upfront Premium paid ($700,000 \times \$ 0.0164$) $= \$ 11,480$[cite: 8]
+          <br />$$\text{Total September Outflow} = 6,65,000 + 4,778 + 11,480 = \mathbf{\text{US\$ } 6,81,258}$$[cite: 8]
+        </li>
+        <li>$$\text{Total Outflow under Option Cover} = \$ 9,59,701 + \$ 6,81,258 = \mathbf{\text{US\$ } 1,640,959}$$</li>
+      </ul>
+
+      <h4>Recommendation</h4>
+      <p>Because the cash outflows are completely certain and the firm is risk-averse, the <strong>Forward Contract Cover is recommended</strong>, as it is cheaper in both periods (saving $ 100 in July and $ 7,560 in September)[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_37",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 48,
+    marks: 10,
+    question_html: `
+      <p>Zaz plc, a UK company, is negotiating an order for € 2.8 million on 6-month credit with a German retailer[cite: 8]. Market quotes[cite: 8]:</p>
+      <ul>
+        <li>Spot: € 1.1960 &ndash; € 1.1970 / £[cite: 8]</li>
+        <li>6-month forward discount: 0.60 &ndash; 0.55 Euro cents[cite: 8]</li>
+        <li>6-month futures contract: € 1.1943 / £ (size: £ 62,500)[cite: 8]</li>
+        <li>Spot and futures rate after 6 months: € 1.1873 / £[cite: 8]</li>
+      </ul>
+      <p>Calculate £ receipts under: (a) Invoicing in Sterling at current average spot, (b) Forward cover, and (c) Futures hedge[cite: 8]. State which alternative is most appropriate[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Alternative (a): Invoicing in Sterling at Current Spot Mid-Rate</h4>
+      <p>$$\text{Average Spot Rate} = \frac{1.1960 + 1.1970}{2} = € 1.1965 / £$$[cite: 8]</p>
+      <p>$$\text{Sterling Invoiced Amount} = \frac{€ 28,00,000}{1.1965} = \mathbf{£ 2,340,159 \approx £ 2.340 \text{ million}}$$[cite: 8]</p>
+
+      <h4>2. Alternative (b): Invoicing in Euro with Forward Cover</h4>
+      <p>The forward discount on £ means Euro is at a premium, or £ is at a discount; bank buys € and sells £[cite: 8]:</p>
+      <p>$$\text{6-Month Forward Bid Rate} = 1.1970 - 0.0055 = \mathbf{€ 1.1915 / £}$$[cite: 8]</p>
+      <p>$$\text{Sterling Receipts} = \frac{€ 28,00,000}{1.1915} = \mathbf{£ 2,350,000 \approx £ 2.350 \text{ million}}$$[cite: 8]</p>
+
+      <h4>3. Alternative (c): Invoicing in Euro with Sterling Futures Hedge</h4>
+      <ul>
+        <li>Pounds required to hedge based on futures quote:
+          <br />$$\frac{€ 28,00,000}{1.1943} = £ 2,344,470$$[cite: 8]
+        </li>
+        <li>$$\text{Number of Contracts} = \frac{£ 2,344,470}{£ 62,500} = 37.51 \approx \mathbf{37 \text{ contracts}}$$[cite: 8]</li>
+        <li>Sterling amount hedged $= 37 \times £ 62,500 = £ 2,312,500$[cite: 8]</li>
+        <li>Buy futures @ € 1.1943 and close out @ € 1.1873:
+          <br />$$\text{Loss per } £ = 1.1943 - 1.1873 = € 0.0070$$[cite: 8]
+          <br />$$\text{Total Loss on Futures} = 37 \times £ 62,500 \times € 0.0070 = \mathbf{€ 16,188}$$[cite: 8]
+        </li>
+        <li>Net Euro proceeds $= € 28,00,000 - € 16,188 = € 27,83,812$[cite: 8]</li>
+        <li>$$\text{Sterling Realized at Spot 1.1873} = \frac{€ 27,83,812}{1.1873} = \mathbf{£ 2,344,657 \approx £ 2.3446 \text{ million}}$$[cite: 8]</li>
+      </ul>
+
+      <h4>Conclusion</h4>
+      <p><strong>Alternative (b) (Forward Contract) is most appropriate</strong> because it maximizes sterling proceeds at <strong>£ 2,350,000</strong>[cite: 8]. Invoicing in Sterling (Alternative a) would risk rejection by the German buyer in a competitive market[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_38",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 49,
+    marks: 10,
+    question_html: `
+      <p>Columbus Surgicals Inc., based in the US, has imported surgical raw materials from the UK invoiced for £ 480,000 payable in 3 months[cite: 8]. It has also exported goods to India invoiced for £ 138,000 payable in 3 months, and to France invoiced for € 590,000 payable in 4 months[cite: 8].</p>
+      <p>Market quotations are as follows[cite: 8]:</p>
+      <ul>
+        <li>Spot £ / US$: 0.9830 &ndash; 0.9850; 3-Month Forward: 0.9520 &ndash; 0.9545[cite: 8]</li>
+        <li>Spot US$ / €: 1.8890 &ndash; 1.8920; 4-Month Forward: 1.9510 &ndash; 1.9540[cite: 8]</li>
+        <li>Interest rates (p.a.): UK: 10.0% &ndash; 12.0%; France: 14.0% &ndash; 16.0%; USA: 11.5% &ndash; 13.0%[cite: 8]</li>
+      </ul>
+      <p>Show how the company can hedge its foreign exchange exposure using Forward and Money Market hedges, and suggest the best technique[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Hedging of £ Exposure (Net Payable in 3 Months)</h4>
+      <p>$$\text{Net £ Payable} = £ 480,000 - £ 138,000 = \mathbf{£ 342,000}$$[cite: 8]</p>
+      <ul>
+        <li><strong>Forward Market Hedge:</strong>
+          <br />The bank buys USD and sells GBP @ forward bid 0.9520 £/US$[cite: 8]:
+          <br />$$\text{Dollar Cost} = \frac{£ 342,000}{0.9520} = \mathbf{\text{US\$ } 359,243.70 \approx \text{US\$ } 359,244}$$[cite: 8]
+        </li>
+        <li><strong>Money Market Hedge:</strong>
+          <br />Deposit £ in the UK @ 10% p.a. (2.5% for 3 months) to accumulate to £ 342,000[cite: 8]:
+          <br />$$\text{Amount to Deposit Today} = \frac{£ 342,000}{1 + 0.025} = \frac{£ 342,000}{1.025} = \mathbf{£ 333,658.54}$$[cite: 8]
+          <br />Buy £ spot @ 0.9830 £/US$:
+          <br />$$\text{US\$ Loan Needed} = \frac{£ 333,658.54}{0.9830} = \mathbf{\text{US\$ } 339,428.83}$$[cite: 8]
+          <br />Repay US$ loan after 3 months @ 13% borrowing rate (3.25% for 3 months):
+          <br />$$\text{Total US\$ Outflow} = \text{US\$ } 339,428.83 \times (1 + 0.0325) = \mathbf{\text{US\$ } 350,460.27 \approx \text{US\$ } 350,460}$$[cite: 8]
+        </li>
+      </ul>
+      <p><em>Conclusion for £ Exposure:</em> The <strong>Money Market Hedge is cheaper</strong> (saving $ 8,784)[cite: 8].</p>
+
+      <h4>2. Hedging of € Exposure (Receivable of € 590,000 in 4 Months)</h4>
+      <ul>
+        <li><strong>Forward Market Hedge:</strong>
+          <br />Sell € 4 months forward @ 1.9510 US$/€ (bid rate)[cite: 8]:
+          <br />$$\text{Dollar Receipts} = € 590,000 \times 1.9510 = \mathbf{\text{US\$ } 1,151,090}$$[cite: 8]
+        </li>
+        <li><strong>Money Market Hedge:</strong>
+          <br />Borrow in France @ 16% p.a. ($16\% \times \frac{4}{12} = 5.333\%$ for 4 months)[cite: 8]:
+          <br />$$\text{Amount to Borrow Today} = \frac{€ 590,000}{1 + 0.05333} = \frac{€ 590,000}{1.05333} = \mathbf{€ 560,128.36 \approx € 560,144}$$[cite: 8]
+          <br />Convert € to US$ spot @ 1.8890 US$/€:
+          <br />$$\text{US\$ Deposit Today} = € 560,144 \times 1.8890 = \mathbf{\text{US\$ } 1,058,112.02}$$[cite: 8]
+          <br />Invest in US money market for 4 months @ 11.5% deposit rate ($11.5\% \times \frac{4}{12} = 3.833\%$)[cite: 8]:
+          <br />$$\text{Total US\$ Maturity Proceeds} = \text{US\$ } 1,058,112.02 \times (1 + 0.03833) = \mathbf{\text{US\$ } 1,098,639}$$[cite: 8]
+        </li>
+      </ul>
+      <p><em>Conclusion for € Exposure:</em> The <strong>Forward Market Hedge is superior</strong> (yielding $ 52,451 more)[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_39",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 50,
+    marks: 10,
+    question_html: `
+      <p>XYZ Ltd., a US firm, will need £ 3,00,000 in 180 days[cite: 8]. Available market data:</p>
+      <ul>
+        <li>Spot rate: 1 £ = $ 2.00; 180-day forward rate: $ 1.96[cite: 8]</li>
+        <li>180-day interest rates: UK Deposit = 4.5%, Borrowing = 5.0%; US Deposit = 5.0%, Borrowing = 5.5%[cite: 8]</li>
+        <li>Call option (180-day expiry): Strike price = $ 1.97, Premium = $ 0.04 per £[cite: 8]</li>
+        <li>Forecasted spot rates in 180 days: $ 1.91 (25%), $ 1.95 (60%), $ 2.05 (15%)[cite: 8]</li>
+      </ul>
+      <p>Evaluate which strategy is most preferable: (a) Forward Contract, (b) Money Market Hedge, (c) Option Contract, or (d) No Hedging[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>(a) Forward Contract</h4>
+      <p>$$\text{Dollar Outflow} = £ 3,00,000 \times \$ 1.96 = \mathbf{\text{US\$ } 5,88,000}$$[cite: 8]</p>
+
+      <h4>(b) Money Market Hedge</h4>
+      <ul>
+        <li>Deposit £ in UK @ 4.5% for 180 days:
+          <br />$$\text{Amount to Deposit Today} = \frac{£ 3,00,000}{1 + 0.045} = \mathbf{£ 2,87,081.34}$$[cite: 8]
+        </li>
+        <li>Convert to USD at spot rate of $ 2.00:
+          <br />$$\text{USD to Borrow Today} = £ 2,87,081.34 \times \$ 2.00 = \mathbf{\text{US\$ } 5,74,162.68}$$[cite: 8]
+        </li>
+        <li>Repay USD loan after 180 days @ 5.5% borrowing rate:
+          <br />$$\text{Total Dollar Outflow} = \text{US\$ } 5,74,162.68 \times (1 + 0.055) = \mathbf{\text{US\$ } 6,05,741.63 \approx \text{US\$ } 6,05,741}$$[cite: 8]
+        </li>
+      </ul>
+
+      <h4>(c) Currency Call Option Contract ($X = \$ 1.97$, Premium $= \$ 0.04$)</h4>
+      <p>$$\text{Premium Paid Today} = £ 3,00,000 \times \$ 0.04 = \$ 12,000$$[cite: 8]</p>
+      <p>$$\text{Opportunity Cost of Premium at 5.5\%} = \$ 12,000 \times 1.055 = \mathbf{\$ 12,660}$$[cite: 8]</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Spot Rate</th>
+              <th style="padding:6px; border:1px solid #ddd;">Action</th>
+              <th style="padding:6px; border:1px solid #ddd;">Exercise Cost ($)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Probability</th>
+              <th style="padding:6px; border:1px solid #ddd;">Weighted Cost ($)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$ 1.91</td><td>Lapse (Buy Spot)</td><td>$3,00,000 \times 1.91 = 5,73,000$</td><td>0.25</td><td>1,43,250</td></tr>
+            <tr><td>$ 1.95</td><td>Lapse (Buy Spot)</td><td>$3,00,000 \times 1.95 = 5,85,000$</td><td>0.60</td><td>3,51,000</td></tr>
+            <tr><td>$ 2.05</td><td>Exercise @ 1.97</td><td>$3,00,000 \times 1.97 = 5,91,000$</td><td>0.15</td><td>88,650</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td colspan="4">Expected Purchase Outflow</td>
+              <td>5,82,900</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>$$\text{Total Expected Cost under Option} = \$ 5,82,900 + \$ 12,660 (\text{Premium + Interest}) = \mathbf{\text{US\$ } 5,95,560}$$[cite: 8]</p>
+
+      <h4>(d) No Hedging Strategy</h4>
+      <p>$$\text{Expected Spot Rate} = (1.91 \times 0.25) + (1.95 \times 0.60) + (2.05 \times 0.15) = 0.4775 + 1.1700 + 0.3075 = \mathbf{\$ 1.955}$$[cite: 8]</p>
+      <p>$$\text{Expected Dollar Outflow} = £ 3,00,000 \times \$ 1.955 = \mathbf{\text{US\$ } 5,86,500}$$[cite: 8]</p>
+
+      <h4>Summary Decision</h4>
+      <p>The <strong>No Hedging strategy</strong> yields the lowest expected cost of <strong>$ 5,86,500</strong>[cite: 8]. However, if the firm seeks risk aversion to eliminate currency fluctuations, the <strong>Forward Contract</strong> at a fixed cost of <strong>$ 5,88,000</strong> is preferred[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_40",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 51,
+    marks: 10,
+    question_html: `
+      <p>A Ltd. of the UK imported chemicals worth USD 3,64,897 payable in 6 months[cite: 8]. Quotes:</p>
+      <ul>
+        <li>Spot rate: USD 1.5617 &ndash; 1.5673 / GBP[cite: 8]</li>
+        <li>6-month forward rate: USD 1.5455 &ndash; 1.5609 / GBP[cite: 8]</li>
+        <li>Borrowing rates (p.a.): UK = 7%, US = 6%; Deposit rates: UK = 5.5%, US = 4.5%[cite: 8]</li>
+        <li>Currency Options: Lot size = GBP 12,500; Strike = USD 1.70 / GBP; Premium: Call = USD 0.037, Put = USD 0.096[cite: 8]</li>
+      </ul>
+      <p>Evaluate: (i) Forward cover, (ii) Money market cover, and (iii) Currency option[cite: 8]. Which alternative is preferable?[cite: 8]</p>
+    `,
+    solution_html: `
+      <h4>1. Direct Quotes Formulation (GBP per USD)</h4>
+      <ul>
+        <li>Spot Rate: $\frac{1}{1.5673} \text{ to } \frac{1}{1.5617} = \mathbf{\text{GBP } 0.63804 - 0.64033 \text{ per USD}}$[cite: 8]</li>
+        <li>6-Month Forward Rate: $\frac{1}{1.5609} \text{ to } \frac{1}{1.5455} = \mathbf{\text{GBP } 0.64066 - 0.64704 \text{ per USD}}$[cite: 8]</li>
+      </ul>
+
+      <h4>2. Alternative (i): Forward Cover</h4>
+      <p>$$\text{GBP Outflow} = \text{USD } 3,64,897 \times 0.64704 = \mathbf{\text{GBP } 2,36,103}$$[cite: 8]</p>
+
+      <h4>3. Alternative (ii): Money Market Cover</h4>
+      <ul>
+        <li>Deposit USD in US @ 4.5% p.a. (2.25% for 6 months)[cite: 8]:
+          <br />$$\text{USD to Deposit Today} = \frac{\text{USD } 3,64,897}{1 + 0.0225} = \mathbf{\text{USD } 3,56,867.48}$$[cite: 8]
+        </li>
+        <li>Buy USD spot @ 0.64033 GBP/USD:
+          <br />$$\text{GBP Borrowed Today} = \text{USD } 3,56,867.48 \times 0.64033 = \mathbf{\text{GBP } 2,28,512.95}$$[cite: 8]
+        </li>
+        <li>Repay UK borrowing after 6 months @ 7% p.a. (3.5% for 6 months):
+          <br />$$\text{Total GBP Outflow} = \text{GBP } 2,28,512.95 \times (1 + 0.035) = \mathbf{\text{GBP } 2,36,510.90 \approx \text{GBP } 2,36,510}$$[cite: 8]
+        </li>
+      </ul>
+
+      <h4>4. Alternative (iii): Currency Option Cover</h4>
+      <p>To hedge a USD payable, the UK firm buys a <strong>Put Option on GBP</strong> (giving the right to sell GBP and acquire USD) at strike USD 1.70 / GBP[cite: 8]:</p>
+      <ul>
+        <li>USD proceeds per contract: $12,500 \times 1.70 = \text{USD } 21,250$[cite: 8]</li>
+        <li>$$\text{Number of Contracts} = \frac{\text{USD } 3,64,897}{\text{USD } 21,250} = 17.17 \implies \mathbf{17 \text{ contracts}}$$[cite: 8]</li>
+        <li>USD covered by options: $17 \times 21,250 = \text{USD } 3,61,250$[cite: 8]</li>
+        <li>Remainder covered by forward: $\text{USD } 3,64,897 - 3,61,250 = \text{USD } 3,647$[cite: 8]</li>
+        <li>Pounds payable under option exercise: $17 \times £ 12,500 = \mathbf{£ 2,12,500}$[cite: 8]</li>
+        <li>Forward cost of uncovered balance: $3,647 \times 0.64704 = \mathbf{£ 2,360}$[cite: 8]</li>
+        <li>Option Premium paid: $17 \times 12,500 \times \$ 0.096 = \$ 20,400 \implies \frac{\$ 20,400}{1.5617} = \mathbf{£ 13,063}$[cite: 8]</li>
+        <li>$$\text{Total Outflow under Option} = £ 2,12,500 + £ 13,063 + £ 2,360 = \mathbf{\text{GBP } 2,27,923}$$[cite: 8]</li>
+      </ul>
+
+      <h4>Conclusion</h4>
+      <p>The <strong>Currency Option Cover</strong> is the most advantageous alternative, requiring the lowest commitment of <strong>GBP 2,27,923</strong>[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_41",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 52,
+    marks: 10,
+    question_html: `
+      <p>Nitrogen Ltd., a UK company, is negotiating an order for € 4 million with a German retailer on 6 months credit[cite: 8]. Market quotes:</p>
+      <ul>
+        <li>Spot Rate: € 1.1750 &ndash; € 1.1770 / £[cite: 8]</li>
+        <li>6 months forward premium: 0.55 &ndash; 0.60 Euro cents[cite: 8]</li>
+        <li>6 months futures: € 1.1760 / £ (contract size: £ 62,500)[cite: 8]</li>
+        <li>Spot rate and 6-month futures rate at maturity: € 1.1785 / £[cite: 8]</li>
+      </ul>
+      <p>Calculate £ receipts under: (a) Invoicing in Sterling at spot, (b) Forward hedge, and (c) Futures contract[cite: 8]. State which alternative is most appropriate[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>(a) Proposal 1: Invoicing in Sterling at Current Spot Ask Rate (€ 1.1770)</h4>
+      <p>$$\text{Sterling Invoiced Amount} = \frac{€ 40,00,000}{1.1770} = \mathbf{£ 33,98,471}$$[cite: 8]</p>
+
+      <h4>(b) Proposal 2: Invoicing in Euro with Forward Cover</h4>
+      <p>$$\text{6-Month Forward Bid Rate} = 1.1770 + 0.0060 = \mathbf{€ 1.1830 / £}$$[cite: 8]</p>
+      <p>$$\text{Sterling Receipts} = \frac{€ 40,00,000}{1.1830} = \mathbf{£ 33,81,234}$$[cite: 8]</p>
+
+      <h4>(c) Proposal 3: Invoicing in Euro with Futures Hedge</h4>
+      <ul>
+        <li>Pounds required to hedge based on futures price:
+          <br />$$\frac{€ 40,00,000}{1.1760} = £ 34,01,360.54$$[cite: 8]
+        </li>
+        <li>$$\text{Number of Contracts} = \frac{£ 34,01,360.54}{£ 62,500} = 54.42 \implies \mathbf{54 \text{ contracts}}$$[cite: 8]</li>
+        <li>Euro amount hedged: $54 \times £ 62,500 \times 1.1760 = € 39,69,000$[cite: 8]</li>
+        <li>Profit on Futures Contracts:
+          <br />$$54 \times £ 62,500 \times (1.1785 - 1.1760) = 54 \times 62,500 \times € 0.0025 = \mathbf{€ 8,438}$$[cite: 8]
+        </li>
+        <li>Total Euro Realization at Month 6:
+          <br />$$€ 40,00,000 + € 8,438 = \mathbf{€ 40,08,438}$$[cite: 8]
+        </li>
+        <li>Convert into Sterling at Spot 1.1785:
+          <br />$$\text{Sterling Proceeds} = \frac{€ 40,08,438}{1.1785} = \mathbf{£ 34,01,305}$$[cite: 8]
+        </li>
+      </ul>
+
+      <h4>Conclusion</h4>
+      <p><strong>Proposal (c) (Currency Futures) is the most appropriate alternative</strong>, delivering the highest realization of <strong>£ 34,01,305</strong> while accommodating the German buyer's currency preference[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_42",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 53,
+    marks: 8,
+    question_html: `
+      <p>Sun Ltd. plans to import equipment from Japan costing 3,400 lakh yen[cite: 8]. Options:</p>
+      <ul>
+        <li><strong>Option I:</strong> Finance via Rupee loan @ 18% p.a. with quarterly rests[cite: 8].</li>
+        <li><strong>Option II:</strong> Accept offer from Osaka branch extending credit of 180 days @ 2% p.a. against an irrevocable Letter of Credit (LC commission: 2% p.a.)[cite: 8].</li>
+      </ul>
+      <p>Exchange rates: Spot: ₹ 100 = 340 yen; 180-day forward: ₹ 100 = 345 yen[cite: 8]. Advise which offer to accept[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>Option I: Domestic Rupee Loan @ 18% p.a. (Quarterly Rests)</h4>
+      <ul>
+        <li>Spot Cost of Equipment: $\frac{\text{¥ } 3,400 \text{ lakhs}}{340} \times 100 = \mathbf{₹ 1,000.00 \text{ lakhs}}$[cite: 8]</li>
+        <li>Quarterly interest rate: $\frac{18\%}{4} = 4.5\%$ per quarter[cite: 8]</li>
+        <li>Compound Amount after 2 quarters (180 days):
+          <br />$$₹ 1,000.00 \times (1 + 0.045)^2 = ₹ 1,000.00 \times 1.092025 = \mathbf{₹ 1,092.03 \text{ lakhs}}$$[cite: 8]
+        </li>
+      </ul>
+
+      <h4>Option II: Japanese Credit Facility with Forward Cover</h4>
+      <ul>
+        <li>Letter of Credit (LC) Commission for 180 days ($2\% \times \frac{180}{360} = 1\%$):
+          <br />$$1\% \times ₹ 1,000.00 \text{ lakhs} = ₹ 10.00 \text{ lakhs}$$[cite: 8]
+        </li>
+        <li>Financing cost of LC commission for 2 quarters @ 4.5%:
+          <br />$$₹ 10.00 \times (1.045)^2 = \mathbf{₹ 10.92 \text{ lakhs \approx ₹ 10.90 lakhs}}$$[cite: 8]
+        </li>
+        <li>Yen Interest on supplier credit @ 2% p.a. for 180 days:
+          <br />$$\text{¥ } 3,400 \text{ lakhs} \times 2\% \times \frac{180}{365} = \mathbf{\text{¥ } 33.53 \text{ lakhs}}$$[cite: 8]
+        </li>
+        <li>Total Yen Payable on Day 180 $= 3,400 + 33.53 = \mathbf{\text{¥ } 3,433.53 \text{ lakhs}}$[cite: 8]</li>
+        <li>Rupee cost under 180-day forward contract (345 yen = ₹ 100):
+          <br />$$\frac{\text{¥ } 3,433.53 \text{ lakhs}}{345} \times 100 = \mathbf{₹ 995.23 \text{ lakhs}}$$[cite: 8]
+        </li>
+        <li>$$\text{Total Cost under Option II} = ₹ 995.23 \text{ lakhs} + ₹ 10.90 \text{ lakhs} = \mathbf{₹ 1,006.13 \text{ lakhs}}$$[cite: 8]</li>
+      </ul>
+
+      <h4>Advice</h4>
+      <p><strong>Option II should be accepted</strong>, as it results in a substantial cost saving of <strong>₹ 85.90 lakhs</strong> ($₹ 1,092.03 - ₹ 1,006.13$)[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_43",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 54,
+    marks: 8,
+    question_html: `
+      <p>NP and Co. has an import payable of US $ 7,00,000 due in 3 months and an export receivable of US $ 4,50,000 due in 2 months (forward contract already booked at ₹ 48.90)[cite: 8]. Market quotes: Spot ₹ 48.50/70; 2 months points 25/30; 3 months points 40/45[cite: 8]. Cost of Rupee funds is 12% p.a.[cite: 8]</p>
+      <p>Evaluate: (A) Cover payable in forward market, vs. (B) Lag receivables by 1 month, cancel existing forward, and cover net amount[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>Option (A): Cover Payable at Month 3 and Retain Export Forward at Month 2</h4>
+      <ul>
+        <li>Import Payable at Month 3 @ forward ask ₹ 48.45 (or 48.50 + 0.45):
+          <br />$$\text{Outflow (A)} = \$ 7,00,000 \times ₹ 48.45 = ₹ 3,39,15,000$$[cite: 8]
+        </li>
+        <li>Export Receivable at Month 2 @ contracted rate ₹ 48.90:
+          <br />$$\text{Inflow (B)} = \$ 4,50,000 \times ₹ 48.90 = ₹ 2,20,05,000$$[cite: 8]
+        </li>
+        <li>Interest earned by investing export proceeds for 1 month @ 12% p.a.:
+          <br />$$\text{Interest (C)} = ₹ 2,20,05,000 \times 12\% \times \frac{1}{12} = ₹ 2,20,050$$[cite: 8]
+        </li>
+        <li>$$\text{Net Rupee Outflow} = ₹ 3,39,15,000 - ₹ 2,20,05,000 - ₹ 2,20,050 = \mathbf{₹ 1,16,89,950}$$[cite: 8]</li>
+      </ul>
+
+      <h4>Option (B): Lag Receivables by 1 Month and Net Outflows</h4>
+      <ul>
+        <li>Net USD payable at Month 3: $\$ 7,00,000 - \$ 4,50,000 = \mathbf{\$ 2,50,000}$[cite: 8]</li>
+        <li>Rupee outflow for net amount @ ₹ 48.45:
+          <br />$$\text{Outflow} = \$ 2,50,000 \times ₹ 48.45 = ₹ 1,21,12,500$$[cite: 8]
+        </li>
+        <li>Profit on cancellation of 2-month forward contract ($₹ 48.90 - ₹ 48.30$ spot):
+          <br />$$\text{Cancellation Gain} = \$ 4,50,000 \times (₹ 48.90 - ₹ 48.30) = ₹ 2,70,000$$[cite: 8]
+        </li>
+        <li>$$\text{Net Rupee Outflow} = ₹ 1,21,12,500 - ₹ 2,70,000 = \mathbf{₹ 1,18,42,500}$$[cite: 8]</li>
+      </ul>
+
+      <h4>Recommendation</h4>
+      <p><strong>Option (A) is preferable</strong>, as the net cash outflow is lower by <strong>₹ 1,52,550</strong> ($₹ 1,18,42,500 - ₹ 1,16,89,950$)[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_44",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 55,
+    marks: 4,
+    question_html: `
+      <p>A customer booked a 3-month forward purchase contract for Swiss Francs (CHF) 10,000 at ₹ 27.25 and requests cancellation after 2 months[cite: 8]. Market quotes are[cite: 8]:</p>
+      <ul>
+        <li>Spot: CHF 1 = ₹ 27.30 / 27.35[cite: 8]</li>
+        <li>1-Month Forward: CHF 1 = ₹ 27.45 / 27.52[cite: 8]</li>
+      </ul>
+      <p>What is the loss or gain to the customer on cancellation?[cite: 8]</p>
+    `,
+    solution_html: `
+      <h4>Cancellation of Forward Purchase Contract Before Due Date</h4>
+      <p>The contract has 1 month remaining to original maturity[cite: 8]. The bank cancels the forward purchase contract by selling CHF 1 month forward to the customer at the market ask rate[cite: 8]:</p>
+      <ul>
+        <li>Bank sells to customer @ 1-month forward ask rate: <strong>₹ 27.52</strong>[cite: 8]</li>
+        <li>Bank bought from customer under original contract: <strong>₹ 27.25</strong>[cite: 8]</li>
+        <li>$$\text{Exchange Difference Payable by Customer} = ₹ 27.52 - ₹ 27.25 = \mathbf{₹ 0.27 \text{ per CHF}}$$[cite: 8]</li>
+      </ul>
+      <p>$$\text{Total Loss to Customer} = 10,000 \times ₹ 0.27 = \mathbf{₹ 2,700.00}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_45",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 56,
+    marks: 8,
+    question_html: `
+      <p>A bank entered into a forward purchase TT for CHF 1,00,000 at ₹ 32.4000 due 25th April (covered @ ₹ 32.4200)[cite: 8]. On 25th March, the exporter cancels the contract[cite: 8]. Quotes on 25th March:</p>
+      <ul>
+        <li>Singapore USD / CHF: Spot 1.5076/1.5120; 1m forward 1.5150/1.5160[cite: 8]</li>
+        <li>Interbank USD / INR: Spot 49.4302/4455; Spot/April 4100/4200[cite: 8]</li>
+      </ul>
+      <p>Calculate cancellation charges payable by the customer if the bank requires an exchange margin of 0.10% on buying and selling[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>1. Cancellation Rate (1-Month Forward Selling Rate for CHF)</h4>
+      <p>To cancel the purchase contract, the bank sells CHF 1-month forward for April delivery[cite: 8]:</p>
+      <ul>
+        <li>Interbank USD / INR Forward Selling Rate for April:
+          <br />$$49.4455 + 0.4200 = ₹ 49.8655$$[cite: 8]
+        </li>
+        <li>Add: Exchange Margin @ 0.10%:
+          <br />$$0.10\% \times ₹ 49.8655 = ₹ 0.04987 \implies ₹ 49.91537 \approx \mathbf{₹ 49.9154}$$[cite: 8]
+        </li>
+        <li>USD / CHF 1-Month Forward Buying Rate in Singapore $= \mathbf{\text{CHF } 1.5150}$[cite: 8]</li>
+        <li>$$\text{Cross Selling Rate for CHF} = \frac{₹ 49.91537}{1.5150} = ₹ 32.9474 \rightarrow \mathbf{₹ 32.9475}$$[cite: 8]</li>
+      </ul>
+
+      <h4>2. Cancellation Charges Payable by Customer</h4>
+      <ul>
+        <li>Bank sells CHF on cancellation @ ₹ 32.9475[cite: 8]</li>
+        <li>Bank bought CHF under original contract @ ₹ 32.4000[cite: 8]</li>
+        <li>$$\text{Difference Payable per CHF} = ₹ 32.9475 - ₹ 32.4000 = \mathbf{₹ 0.5475}$$[cite: 8]</li>
+      </ul>
+      <p>$$\text{Total Cancellation Charges} = 1,00,000 \times ₹ 0.5475 = \mathbf{₹ 54,750.00}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_46",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 57,
+    marks: 6,
+    question_html: `
+      <p>A forex dealer entered into a cross-currency deal and sold US $ 10,00,000 against EURO at US $ 1 = EURO 1.4400 spot[cite: 8]. Due to market volatility, the dealer squares up the position later in the day when quotes are[cite: 8]:</p>
+      <ul>
+        <li>Spot US $ 1 = INR 31.4300 / 31.4500[cite: 8]</li>
+        <li>Spot US $ 1 = EURO 1.4400 / 1.4450[cite: 8]</li>
+      </ul>
+      <p>What is the gain or loss on the transaction in Indian Rupees?[cite: 8]</p>
+    `,
+    solution_html: `
+      <h4>1. Determination of Euro Cash Flow</h4>
+      <ul>
+        <li>Initial Deal (Sold USD 10,00,000 @ 1.4400):
+          <br />$$\text{Euro Received} = 10,00,000 \times 1.4400 = \mathbf{\text{EURO } 14,40,000}$$[cite: 8]
+        </li>
+        <li>Square-Up Deal (Bought USD 10,00,000 @ market ask 1.4450):
+          <br />$$\text{Euro Paid} = 10,00,000 \times 1.4450 = \mathbf{\text{EURO } 14,45,000}$$[cite: 8]
+        </li>
+        <li>$$\text{Net Loss in Euro} = \text{EURO } 14,40,000 - \text{EURO } 14,45,000 = \mathbf{\text{EURO } 5,000}$$[cite: 8]</li>
+      </ul>
+
+      <h4>2. Conversion of Loss to Indian Rupees</h4>
+      <p>To purchase EURO 5,000 from the market, the bank sells INR to buy USD @ ₹ 31.4500 and sells USD to buy Euro @ 1.4400[cite: 8]:</p>
+      <p>$$\text{Cross Rate (INR / EUR)} = \frac{₹ 31.4500}{1.4400} = \mathbf{₹ 21.8403 \text{ per Euro}}$$[cite: 8]</p>
+      <p>$$\text{Total Loss in Rupees} = \text{EURO } 5,000 \times ₹ 21.8403 = \mathbf{₹ 1,09,201.50}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_47",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 58,
+    marks: 8,
+    question_html: `
+      <p>You have the following quotes from Bank A and Bank B[cite: 8]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Tenor</th>
+              <th style="padding:6px; border:1px solid #ddd;">Bank A</th>
+              <th style="padding:6px; border:1px solid #ddd;">Bank B</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>SPOT USD / CHF</td><td>1.4650 / 1.4655</td><td>1.4653 / 1.4660</td></tr>
+            <tr><td>3 months swap points</td><td>5 / 10</td><td>—</td></tr>
+            <tr><td>SPOT GBP / USD</td><td>1.7645 / 1.7660</td><td>1.7640 / 1.7650</td></tr>
+            <tr><td>3 months swap points</td><td>25 / 20</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ol type="i">
+        <li>How much minimum CHF amount do you have to pay for 1 Million GBP spot?[cite: 8]</li>
+        <li>Considering quotes from Bank A only, what are the implied swap points for GBP / CHF spot over 3 months?[cite: 8]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Minimum CHF Amount to Pay for 1 Million GBP Spot</h4>
+      <p>To buy GBP against CHF at the lowest cost, select the lowest ask quotes across banks[cite: 8]:</p>
+      <ul>
+        <li>Buy USD against CHF from <strong>Bank A</strong> @ ask rate: <strong>CHF 1.4655 per USD</strong>[cite: 8]</li>
+        <li>Buy GBP against USD from <strong>Bank B</strong> @ ask rate: <strong>USD 1.7650 per GBP</strong>[cite: 8]</li>
+      </ul>
+      <p>$$\text{Cross Ask Rate (GBP / CHF)} = 1.7650 \times 1.4655 = \mathbf{\text{CHF } 2.5866 \text{ per GBP}}$$[cite: 8]</p>
+      <p>$$\text{Amount Payable} = 10,00,000 \times \text{CHF } 2.5866 = \mathbf{\text{CHF } 25,86,600}$$[cite: 8]</p>
+
+      <h4>(ii) Implied 3-Month Swap Points for GBP / CHF (Bank A Only)</h4>
+      <ul>
+        <li><strong>Spot GBP / CHF:</strong>
+          <br />$$\text{Bid} = 1.7645 \times 1.4650 = \mathbf{2.5850}; \quad \text{Ask} = 1.7660 \times 1.4655 = \mathbf{2.5881}$$[cite: 8]
+        </li>
+        <li><strong>3-Month Outright Rates:</strong>
+          <br />GBP / USD swap points (25/20) are descending $\implies$ discount:
+          <br />$$\text{Outright GBP / USD} = (1.7645 - 0.0025) / (1.7660 - 0.0020) = 1.7620 / 1.7640$$[cite: 8]
+          <br />USD / CHF swap points (5/10) are ascending $\implies$ premium:
+          <br />$$\text{Outright USD / CHF} = (1.4650 + 0.0005) / (1.4655 + 0.0010) = 1.4655 / 1.4665$$[cite: 8]
+        </li>
+        <li><strong>3-Month Outright GBP / CHF:</strong>
+          <br />$$\text{Bid} = 1.7620 \times 1.4655 = \mathbf{2.5822}; \quad \text{Ask} = 1.7640 \times 1.4665 = \mathbf{2.5869}$$[cite: 8]
+        </li>
+      </ul>
+      <p>$$\text{Swap Points (Bid)} = 2.5850 - 2.5822 = \mathbf{0.0028 \text{ (28 points discount)}}$$[cite: 8]</p>
+      <p>$$\text{Swap Points (Ask)} = 2.5881 - 2.5869 = \mathbf{0.0012 \text{ (12 points discount)}}$$[cite: 8]</p>
+      <p>$$\text{Implied Swap Points: } \mathbf{28 / 12 \text{ at a discount}}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_48",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 59,
+    marks: 10,
+    question_html: `
+      <p>M/s Omega Electronics Ltd. exports 2,400 ACs to Germany at Euro 500 each and imports components from Singapore at S$ 800 each (FC = ₹ 1,000, VC = ₹ 1,500)[cite: 8]. Quotes:</p>
+      <ul>
+        <li>Current Spot: ₹/Euro = 51.50/55; ₹/S$ = 27.20/25[cite: 8]</li>
+        <li>6-Month Spot: ₹/Euro = 52.00/05; ₹/S$ = 27.70/75[cite: 8]</li>
+      </ul>
+      <p>Calculate: (A) Loss/gain due to transaction exposure[cite: 8]. (B) Loss/gain due to transaction and operating exposure if contracted price is ₹ 25,000, price elasticity is 1.5, and new spot rates become ₹/Euro = 51.75/80 and ₹/S$ = 27.10/15[cite: 8].</p>
+    `,
+    solution_html: `
+      <h4>(A) Loss / Gain Due to Transaction Exposure</h4>
+      <ul>
+        <li>Initial Expected Profit at Current Rates:
+          <br />$$2,400 \times [500 \times ₹ 51.50 - (800 \times ₹ 27.25 + ₹ 1,000 + ₹ 1,500)]$$[cite: 8]
+          <br />$$2,400 \times [₹ 25,750 - ₹ 24,300] = 2,400 \times ₹ 1,450 = \mathbf{₹ 34,80,000}$$[cite: 8]
+        </li>
+        <li>Actual Profit at 6-Month Realized Rates:
+          <br />$$2,400 \times [500 \times ₹ 52.00 - (800 \times ₹ 27.75 + ₹ 1,000 + ₹ 1,500)]$$[cite: 8]
+          <br />$$2,400 \times [₹ 26,000 - ₹ 24,700] = 2,400 \times ₹ 1,300 = \mathbf{₹ 31,20,000}$$[cite: 8]
+        </li>
+      </ul>
+      <p>$$\text{Loss Due to Transaction Exposure} = ₹ 34,80,000 - ₹ 31,20,000 = \mathbf{₹ 3,60,000}$$[cite: 8]</p>
+
+      <h4>(B) Transaction &amp; Operating Exposure with Price Elasticity</h4>
+      <ul>
+        <li>Contracted Unit Price in INR $= ₹ 25,000$[cite: 8]</li>
+        <li>Initial Base Profit:
+          <br />$$2,400 \times [₹ 25,000 - (800 \times ₹ 27.15 + ₹ 1,000 + ₹ 1,500)] = 2,400 \times [25,000 - 24,220] = \mathbf{₹ 18,72,000}$$[cite: 8]
+        </li>
+        <li>Actual Profit After 6 Months (Exchange Rate ₹/S$ = 27.75):
+          <br />$$2,400 \times [₹ 25,000 - (800 \times ₹ 27.75 + ₹ 2,500)] = 2,400 \times [25,000 - 24,700] = \mathbf{₹ 7,20,000}$$[cite: 8]
+        </li>
+        <li>$$\text{Decline in Profit (Transaction Exposure)} = ₹ 18,72,000 - ₹ 7,20,000 = \mathbf{₹ 11,52,000}$$[cite: 8]</li>
+        <li>Operating Volume Adjustment:
+          <br />Price in Euro at ₹ 51.50 $= \frac{₹ 25,000}{51.50} = € 485.44$[cite: 8]
+          <br />Price in Euro at ₹ 51.75 $= \frac{₹ 25,000}{51.75} = € 483.09$[cite: 8]
+          <br />Percentage fall in price $= \frac{485.44 - 483.09}{485.44} \times 100 = 0.484\%$[cite: 8]
+          <br />Increase in demand ($e = 1.5$): $0.484\% \times 1.5 = 0.726\% \approx 0.72\%$[cite: 8]
+          <br />New Sales Volume $= 2,400 \times 1.0072 = \mathbf{2,417 \text{ units}}$[cite: 8]
+          <br />$$\text{Revised Profit} = 2,417 \times (₹ 25,000 - ₹ 24,700) = 2,417 \times ₹ 300 = \mathbf{₹ 7,25,100}$$[cite: 8]
+        </li>
+      </ul>
+      <p>$$\text{Decrease in Profit Due to Operating Exposure} = ₹ 18,72,000 - ₹ 7,25,100 = \mathbf{₹ 11,46,900}$$[cite: 8]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_49",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 60,
+    marks: 10,
+    question_html: `
+      <p>A bank's London office has surplus funds of USD 5,00,000 for 3 months (cost of funds: 4% p.a.)[cite: 8]. 3-month interest rates: London = 5% p.a.; New York = 8% p.a.; Frankfurt = 3% p.a.[cite: 8] Market quotes in London:</p>
+      <ul>
+        <li>London on New York: Spot 1.5350/90; 3m swap 80/85[cite: 8]</li>
+        <li>London on Frankfurt: Spot 1.8260/90; 3m swap 145/140[cite: 8]</li>
+      </ul>
+      <p>At which center should the investment be made and what will be the net gain in pounds?[cite: 8]</p>
+    `,
+    solution_html: `
+      <h4>1. Option 1: Invest in London (£ Money Market @ 5% p.a.)</h4>
+      <ul>
+        <li>Convert USD 5,00,000 to GBP spot @ ask rate 1.5390:
+          <br />$$\text{GBP Principal} = \frac{\$ 5,00,000}{1.5390} = \mathbf{£ 3,24,886.29}$$[cite: 8]
+        </li>
+        <li>Interest earned for 3 months @ 5% p.a.:
+          <br />$$£ 3,24,886.29 \times 5\% \times \frac{3}{12} = £ 4,061.08 \implies \text{Total GBP} = \mathbf{£ 3,28,947.37}$$[cite: 8]
+        </li>
+        <li>USD Funding Cost to Repay: $\$ 5,00,000 \times (1 + 0.04 \times 0.25) = \$ 5,05,000$[cite: 8]</li>
+        <li>Pounds needed to buy back $ 5,05,000 @ forward rate 1.5430 ($1.5350 + 0.0080$):
+          <br />$$\frac{\$ 5,05,000}{1.5430} = \mathbf{£ 3,27,284.51}$$[cite: 8]
+        </li>
+        <li>$$\text{Net Gain (London)} = £ 3,28,947.37 - £ 3,27,284.51 = \mathbf{£ 1,662.86 \approx £ 1,662}$$[cite: 8]</li>
+      </ul>
+
+      <h4>2. Option 2: Invest in New York ($ Money Market @ 8% p.a.)</h4>
+      <ul>
+        <li>Net Interest Margin in USD: $8\% - 4\% = 4\%$ p.a.[cite: 8]</li>
+        <li>$$\text{Gain in USD} = \$ 5,00,000 \times 4\% \times \frac{3}{12} = \mathbf{\text{US\$ } 5,000}$$[cite: 8]</li>
+        <li>Convert USD gain to GBP @ 3-month forward ask rate 1.5475 ($1.5390 + 0.0085$):
+          <br />$$\text{Net Gain (New York)} = \frac{\$ 5,000}{1.5475} = \mathbf{£ 3,231.02 \approx £ 3,231}$$[cite: 8]
+        </li>
+      </ul>
+
+      <h4>3. Option 3: Invest in Frankfurt (€ Money Market @ 3% p.a.)</h4>
+      <ul>
+        <li>Convert USD to Euro spot via cross rate $\frac{1.8260}{1.5390} = 1.18648 €/\$$:
+          <br />$$\text{Euro Principal} = \$ 5,00,000 \times 1.18648 = \mathbf{€ 5,93,242.37 \approx € 5,93,250}$$[cite: 8]
+        </li>
+        <li>Interest earned for 3 months @ 3% p.a.:
+          <br />$$€ 5,93,250 \times 3\% \times \frac{3}{12} = € 4,449.38 \implies \text{Total Euro} = \mathbf{€ 5,97,699.38}$$[cite: 8]
+        </li>
+        <li>Sell Euro forward for GBP @ $\frac{1}{1.8290 - 0.0140} = \frac{1}{1.8150} = £ 0.55096$:
+          <br />$$\text{GBP Proceeds} = € 5,97,699.38 \times 0.55096 = \mathbf{£ 3,29,310 \approx £ 3,29,332}$$[cite: 8]
+        </li>
+        <li>$$\text{Net Gain (Frankfurt)} = £ 3,29,332 - £ 3,27,285 = \mathbf{£ 2,047}$$[cite: 8]</li>
+      </ul>
+
+      <h4>Conclusion</h4>
+      <p>The bank should <strong>invest the surplus funds in New York</strong>, yielding the highest net return of <strong>£ 3,231</strong>[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_50",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 61,
+    marks: 8,
+    question_html: `
+      <p>Drilldip Inc., a US-based firm, won an oil drilling contract in India requiring an initial investment of ₹ 500 crore[cite: 8]. The project will be sold to the Indian Government for ₹ 740 crore in 1 year[cite: 8]. Expected spot rate after 1 year: 1 US$ = ₹ 54[cite: 8]. Current spot rate: 1 US$ = ₹ 50[cite: 8]. Drilldip can borrow USD @ 8% p.a.[cite: 8]</p>
+      <ol type="a">
+        <li>Construct a currency swap to reduce exchange rate risk[cite: 8].</li>
+        <li>Evaluate whether Drilldip should accept a swap offered by the Indian Government at the current spot rate of ₹ 50/$ or do nothing[cite: 8].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(a) Currency Swap Construction</h4>
+      <ul>
+        <li><strong>Year 0 (Initiation):</strong> Drilldip borrows US$ 100 million in the US @ 8% and swaps it for ₹ 500 crore spot (@ ₹ 50/$) to fund the drilling investment[cite: 8].</li>
+        <li><strong>Year 1 (Termination):</strong> Drilldip swaps back ₹ 500 crore at the contractual swap rate of ₹ 50/$ to receive US$ 100 million, leaving only the profit of ₹ 240 crore ($₹ 740 - ₹ 500$) exposed to market spot rates[cite: 8].</li>
+      </ul>
+
+      <h4>(b) Financial Evaluation: Swap vs. No Swap</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">With Swap (US$ M)</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">Without Swap (US$ M)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Initial Outflow (Year 0): $\frac{₹ 500 \text{ cr}}{50}$</td><td style="text-align:right;">(100.00)</td><td style="text-align:right;">(100.00)</td></tr>
+            <tr><td>Swap Principal Recovery (Year 1): $\frac{₹ 500 \text{ cr}}{50}$</td><td style="text-align:right;">100.00</td><td style="text-align:right;">—</td></tr>
+            <tr><td>Spot Conversion of Surplus: $\frac{₹ 240 \text{ cr}}{54}$ vs. $\frac{₹ 740 \text{ cr}}{54}$</td><td style="text-align:right;">44.44</td><td style="text-align:right;">137.04</td></tr>
+            <tr><td>Less: US$ Loan Interest @ 8% on $ 100M</td><td style="text-align:right;">(8.00)</td><td style="text-align:right;">(8.00)</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td>Net Receipt at Year 1</td>
+              <td style="text-align:right;"><strong>US$ 36.44 Million</strong>[cite: 8]</td>
+              <td style="text-align:right;"><strong>US$ 29.04 Million</strong>[cite: 8]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Decision:</strong> Drilldip should <strong>opt for the swap</strong>, as it yields an additional <strong>US$ 7.40 million</strong> ($36.44 - 29.04$) while significantly reducing downside currency exposure[cite: 8].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH10_TYK_PR_51",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    // placement: 62,
+    marks: 6,
+    question_html: `
+      <p>You have the following position in Swiss Francs (CHF) on 31st October 2009[cite: 8]:</p>
+      <ul>
+        <li>Balance in Nostro A/c (Credit): CHF 1,00,000[cite: 8]</li>
+        <li>Opening Position Overbought: CHF 50,000[cite: 8]</li>
+        <li>Purchased a bill on Zurich: CHF 80,000[cite: 8]</li>
+        <li>Sold forward TT: CHF 60,000[cite: 8]</li>
+        <li>Forward purchase contract cancelled: CHF 30,000[cite: 8]</li>
+        <li>Remitted by TT: CHF 75,000[cite: 8]</li>
+        <li>Draft on Zurich cancelled: CHF 30,000[cite: 8]</li>
+      </ul>
+      <p>What steps would you take if you are required to maintain a credit balance of CHF 30,000 in the Nostro A/c and keep an overbought position of CHF 10,000?[cite: 8]</p>
+    `,
+    solution_html: `
+      <h4>1. Determination of Exchange Position</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">Purchase (CHF)</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">Sale (CHF)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Opening Balance Overbought</td><td style="text-align:right;">50,000</td><td style="text-align:right;">—</td></tr>
+            <tr><td>Bill on Zurich purchased</td><td style="text-align:right;">80,000</td><td style="text-align:right;">—</td></tr>
+            <tr><td>Sold Forward TT</td><td style="text-align:right;">—</td><td style="text-align:right;">60,000</td></tr>
+            <tr><td>Forward Purchase Contract Cancelled</td><td style="text-align:right;">—</td><td style="text-align:right;">30,000</td></tr>
+            <tr><td>TT Sales / Remittance</td><td style="text-align:right;">—</td><td style="text-align:right;">75,000</td></tr>
+            <tr><td>Draft on Zurich Cancelled</td><td style="text-align:right;">30,000</td><td style="text-align:right;">—</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td>Sub-total</td>
+              <td style="text-align:right;">1,60,000</td>
+              <td style="text-align:right;">1,65,000</td>
+            </tr>
+            <tr style="font-weight:bold; background-color:#f9f9f9;">
+              <td>Closing Balance (Oversold)</td>
+              <td style="text-align:right;"><strong>5,000</strong></td>
+              <td style="text-align:right;">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>2. Determination of Cash Position (Nostro Account)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">Credit (CHF)</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">Debit (CHF)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Opening Balance (Credit)</td><td style="text-align:right;">1,00,000</td><td style="text-align:right;">—</td></tr>
+            <tr><td>TT Sales / Remittance</td><td style="text-align:right;">—</td><td style="text-align:right;">75,000</td></tr>
+            <tr style="font-weight:bold; background-color:#f9f9f9;">
+              <td>Closing Balance (Credit)</td>
+              <td style="text-align:right;">—</td>
+              <td style="text-align:right;"><strong>25,000</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>3. Corrective Steps to be Taken by Dealer</h4>
+      <ul>
+        <li><strong>Step 1 (Cash Position Adjustment):</strong> The Nostro account currently has a credit balance of CHF 25,000, whereas the required target is CHF 30,000[cite: 8]. Therefore, the bank must <strong>buy CHF 5,000 in the Spot market</strong>[cite: 8].</li>
+        <li><strong>Step 2 (Exchange Position Adjustment):</strong> Buying CHF 5,000 spot brings the oversold exchange position of CHF 5,000 to Nil[cite: 8]. Because the bank requires a net overbought position of CHF 10,000, it must <strong>buy CHF 10,000 in the Forward market</strong>[cite: 8].</li>
+      </ul>
+    `
+  },
+  // chapter11
+  {
+    question_id: "AFM_ICAIBOOK_CH11_ILLUS_01",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "International Financial Management",
+    // placement: 1,
+    marks: 10,
+    question_html: `
+      <p>Perfect Inc., a U.S. based Pharmaceutical Company, has received an offer from Aidscure Ltd. to set up a manufacturing unit in Baddi (H.P.), India in a joint venture to manufacture drugs to cure Dengue[cite: 9].</p>
+      <p>Terms and projections[cite: 9]:</p>
+      <ul>
+        <li>Perfect Inc. will receive 55% share of revenues plus a royalty of US $ 0.01 per bottle[cite: 9].</li>
+        <li>Initial investment: ₹ 200 crores for machinery and factory (useful life: 5 years, scrap value: ₹ 5 crores, SLM depreciation on value net of salvage value)[cite: 9].</li>
+        <li>Working capital: Initial ₹ 50 crores, and thereafter an additional ₹ 5 crores each year[cite: 9].</li>
+        <li>Annual production: 24 crore bottles[cite: 9]. Initial price per bottle: ₹ 7.50, increasing by ₹ 1.00 each year in addition to inflation[cite: 9]. Production costs are 40% of revenues[cite: 9].</li>
+        <li>Tax rates: India = 30%, US = 35% (DTAA applies; tax credit available in the US for Indian taxes paid)[cite: 9]. Taxes are paid in the year following the year of realization/remittance[cite: 9].</li>
+        <li>Spot rate: ₹ 57 / $[cite: 9]. Inflation: US = 5% p.a.; India = 6% in Year 1, decreasing by 0.50% every year[cite: 9].</li>
+        <li>Remittance policy: Only 50% of the share can be remitted in the year realized and the remaining 50% in the following year[cite: 9].</li>
+        <li>Required rate of return: 15% (due to project risk)[cite: 9].</li>
+      </ul>
+      <p>Determine whether Perfect Inc. should invest in the project from the subsidiary's point of view[cite: 9].</p>
+    `,
+    solution_html: `
+      <h4>1. Projected Exchange Rates (Purchasing Power Parity)</h4>
+      <p>$$E(S_t) = S_{t-1} \times \frac{1 + I_{\text{India}}}{1 + I_{\text{US}}}$$[cite: 9]</p>
+      <ul>
+        <li>Year 1: $57.00 \times \frac{1.060}{1.050} = \mathbf{₹ 57.54 / \$}$[cite: 9]</li>
+        <li>Year 2: $57.54 \times \frac{1.055}{1.050} = \mathbf{₹ 57.82 / \$}$[cite: 9]</li>
+        <li>Year 3: $57.82 \times \frac{1.050}{1.050} = \mathbf{₹ 57.82 / \$}$[cite: 9]</li>
+        <li>Year 4: $57.82 \times \frac{1.045}{1.050} = \mathbf{₹ 57.54 / \$}$[cite: 9]</li>
+        <li>Year 5: $57.54 \times \frac{1.040}{1.050} = \mathbf{₹ 56.99 / \$}$[cite: 9]</li>
+        <li>Year 6: $56.99 \times \frac{1.035}{1.050} = \mathbf{₹ 56.18 / \$}$[cite: 9]</li>
+      </ul>
+
+      <h4>2. Revenue and Royalty Schedule (₹ in crores)</h4>
+      <ul>
+        <li>Depreciation p.a. $= \frac{₹ 200 - ₹ 5}{5} = \mathbf{₹ 39.00 \text{ crores}}$[cite: 9]</li>
+        <li>Royalty p.a. $= 24 \text{ cr bottles} \times \$ 0.01 = \mathbf{\$ 0.24 \text{ crore}}$[cite: 9]</li>
+      </ul>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Year</th>
+              <th style="padding:6px; border:1px solid #ddd;">Base Price (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Inflated Price (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Gross Sales (₹ Cr)</th>
+              <th style="padding:6px; border:1px solid #ddd;">55% Share (₹ Cr)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Royalty (₹ Cr)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>7.50</td><td>$7.50 \times 1.060 = 7.95$</td><td>190.80</td><td>104.94</td><td>$0.24 \times 57.54 = 13.81$</td></tr>
+            <tr><td>2</td><td>8.50</td><td>$8.50 \times 1.055 = 8.97$</td><td>215.28</td><td>118.40</td><td>$0.24 \times 57.82 = 13.88$</td></tr>
+            <tr><td>3</td><td>9.50</td><td>$9.50 \times 1.050 = 9.98$</td><td>239.52</td><td>131.74</td><td>$0.24 \times 57.82 = 13.88$</td></tr>
+            <tr><td>4</td><td>10.50</td><td>$10.50 \times 1.045 = 10.97$</td><td>263.28</td><td>144.80</td><td>$0.24 \times 57.54 = 13.81$</td></tr>
+            <tr><td>5</td><td>11.50</td><td>$11.50 \times 1.040 = 11.96$</td><td>287.04</td><td>157.87</td><td>$0.24 \times 56.99 = 13.68$</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>3. Profit After Tax in India (₹ in crores)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Year</th>
+              <th style="padding:6px; border:1px solid #ddd;">Total Inflow (₹ Cr)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Production Cost (40%)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Depreciation (₹ Cr)</th>
+              <th style="padding:6px; border:1px solid #ddd;">PBT (₹ Cr)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Tax @ 30% (₹ Cr)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>$104.94 + 13.81 = 118.75$</td><td>41.98</td><td>39.00</td><td>37.77</td><td>11.33</td></tr>
+            <tr><td>2</td><td>$118.40 + 13.88 = 132.28$</td><td>47.36</td><td>39.00</td><td>45.92</td><td>13.78</td></tr>
+            <tr><td>3</td><td>$131.74 + 13.88 = 145.62$</td><td>52.69</td><td>39.00</td><td>53.93</td><td>16.18</td></tr>
+            <tr><td>4</td><td>$144.80 + 13.81 = 158.61$</td><td>57.92</td><td>39.00</td><td>61.69</td><td>18.51</td></tr>
+            <tr><td>5</td><td>$157.87 + 13.68 = 171.55$</td><td>63.15</td><td>39.00</td><td>69.40</td><td>20.82</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>4. Free Cash Flows and Remittances to US Parent</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars (₹ Cr)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Y0</th>
+              <th style="padding:6px; border:1px solid #ddd;">Y1</th>
+              <th style="padding:6px; border:1px solid #ddd;">Y2</th>
+              <th style="padding:6px; border:1px solid #ddd;">Y3</th>
+              <th style="padding:6px; border:1px solid #ddd;">Y4</th>
+              <th style="padding:6px; border:1px solid #ddd;">Y5</th>
+              <th style="padding:6px; border:1px solid #ddd;">Y6</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Initial Outlay &amp; WC</td><td>(250.00)</td><td>(5.00)</td><td>(5.00)</td><td>(5.00)</td><td>(5.00)</td><td>75.00*</td><td>—</td></tr>
+            <tr><td>Operating Cash Inflow</td><td>—</td><td>76.77</td><td>71.04</td><td>79.05</td><td>86.88</td><td>94.72</td><td>—</td></tr>
+            <tr><td>Tax Paid (Lagged 1 yr)</td><td>—</td><td>—</td><td>(11.33)</td><td>(13.78)</td><td>(16.18)</td><td>(18.51)</td><td>(20.82)</td></tr>
+            <tr style="font-weight:bold;"><td>Free Cash Flow</td><td>(250.00)</td><td>71.77</td><td>68.59</td><td>74.15</td><td>79.51</td><td>164.89</td><td>(20.82)</td></tr>
+            <tr style="background-color:#f9f9f9; font-weight:bold;"><td>Total Remittance (₹ Cr)</td><td>(250.00)</td><td>35.88</td><td>70.17</td><td>71.37</td><td>76.84</td><td>122.20</td><td>61.62</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><small>*Includes recovery of total working capital (₹ 70 crores) and salvage value (₹ 5 crores)[cite: 9].</small></p>
+
+      <h4>5. NPV from Parent Perspective ($ in Millions)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Year</th>
+              <th style="padding:6px; border:1px solid #ddd;">Remittance (₹ Cr)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Rate (₹/$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Remittance ($ M)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Net US Tax ($ M)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Net Cash Flow ($ M)</th>
+              <th style="padding:6px; border:1px solid #ddd;">PVF @ 15%</th>
+              <th style="padding:6px; border:1px solid #ddd;">PV ($ M)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>0</td><td>(250.00)</td><td>57.00</td><td>(43.86)</td><td>—</td><td>(43.86)</td><td>1.000</td><td>(43.86)</td></tr>
+            <tr><td>1</td><td>35.88</td><td>57.54</td><td>6.24</td><td>—</td><td>6.24</td><td>0.870</td><td>5.43</td></tr>
+            <tr><td>2</td><td>70.17</td><td>57.82</td><td>12.14</td><td>(0.22)</td><td>11.92</td><td>0.756</td><td>9.01</td></tr>
+            <tr><td>3</td><td>71.37</td><td>57.82</td><td>12.34</td><td>(1.87)</td><td>10.47</td><td>0.658</td><td>6.89</td></tr>
+            <tr><td>4</td><td>76.84</td><td>57.54</td><td>13.35</td><td>(1.51)</td><td>11.84</td><td>0.572</td><td>6.77</td></tr>
+            <tr><td>5</td><td>122.20</td><td>56.99</td><td>21.44</td><td>(1.42)</td><td>20.02</td><td>0.497</td><td>9.95</td></tr>
+            <tr><td>6</td><td>61.62</td><td>56.18</td><td>10.97</td><td>(3.79)</td><td>7.18</td><td>0.432</td><td>3.10</td></tr>
+            <tr><td>7</td><td>—</td><td>—</td><td>—</td><td>(3.84)</td><td>(3.84)</td><td>0.376</td><td>(1.44)</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td colspan="7">Net Present Value (NPV)</td>
+              <td><strong>- $ 4.15 Million</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Decision:</strong> Because the Net Present Value is negative (<strong>-$ 4.15 million</strong>), Perfect Inc. <strong>should not invest in the project</strong>[cite: 9].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH11_ILLUS_02",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "International Financial Management",
+    // placement: 2,
+    marks: 10,
+    question_html: `
+      <p>Its Entertainment Ltd., an Indian company, plans to establish a Grand Water Park in Nepal[cite: 9]. Data:</p>
+      <ul>
+        <li>Construction cost: NPR 450 crores (payable 50% now and 50% at Year 1 end)[cite: 9].</li>
+        <li>Working capital from Year 1: NPR 65 crores (rising by 5% p.a., released at project end)[cite: 9].</li>
+        <li>Terminal asset realizable value after 4 operating years: NPR 250 crores (after-tax)[cite: 9].</li>
+        <li>Tax depreciation: 20% p.a. on WDV on maximum capital base of NPR 200 crores[cite: 9].</li>
+        <li>Debt cost in Nepal = 9% p.a. (Target capital structure: 55% Equity, 45% Debt)[cite: 9].</li>
+        <li>Capacity: 20,000 visitors/day @ 70% occupancy for 360 days/year[cite: 9].</li>
+        <li>Revenues per visitor (at $t=0$): Ticket = NPR 220; F&amp;B = NPR 150 (margin 20%); Gifts = NPR 50 (margin 50%)[cite: 9].</li>
+        <li>Operating costs (at $t=0$): Staffing = NPR 65 crores; Insurance = NPR 5 crores; Maintenance = NPR 25 crores in Year 1 (+NPR 4 crores each year)[cite: 9]. Allocated overheads = NPR 5 crores (ignore)[cite: 9].</li>
+        <li>Annual inflation rate = 5% p.a. on all revenues and general costs[cite: 9].</li>
+        <li>Taxes: Nepal = 20%, India = 30%[cite: 9]. Risk-free rate = 8%, Market return = 11%[cite: 9].</li>
+        <li>Nepalese Competitor data: Equity MV = NPR 1,850 crores, Debt MV = NPR 510 crores, Equity Beta = 1.35[cite: 9].</li>
+      </ul>
+      <p>State whether Its Entertainment Ltd. should undertake the project[cite: 9].</p>
+    `,
+    solution_html: `
+      <h4>1. Cost of Capital / Project Discount Rate</h4>
+      <ul>
+        <li>Un-gearing Competitor's Beta (Asset Beta in Nepal):
+          <br />$$\beta_{\text{asset}} = \beta_E \times \frac{E}{E + D(1 - t)} = 1.35 \times \frac{1,850}{1,850 + 510(1 - 0.20)} = 1.35 \times \frac{1,850}{2,258} = \mathbf{1.106}$$[cite: 9]
+        </li>
+        <li>Re-gearing for Water Park Project ($E = 55\%, D = 45\%$):
+          <br />$$1.106 = \beta_E \times \frac{55}{55 + 45(1 - 0.20)} = \beta_E \times \frac{55}{91} \implies \beta_E = \mathbf{1.83}$$[cite: 9]
+        </li>
+        <li>Cost of Equity ($K_e$ via CAPM):
+          <br />$$K_e = 8\% + 1.83(11\% - 8\%) = 8\% + 5.49\% = \mathbf{13.49\%}$$[cite: 9]
+        </li>
+        <li>WACC in Nepal:
+          <br />$$\text{WACC} = (13.49\% \times 0.55) + [9\%(1 - 0.20) \times 0.45] = 7.42\% + 3.24\% = \mathbf{10.66\%}$$[cite: 9]
+        </li>
+      </ul>
+
+      <h4>2. Annual Operating Numbers (NPR in crores)</h4>
+      <ul>
+        <li>Annual Visitors: $20,000 \times 70\% \times 360 = \mathbf{50,40,000 \text{ visitors}}$[cite: 9]</li>
+        <li>Year 0 Base Revenue per visitor: $220 + (150 \times 20\%) + (50 \times 50\%) = 220 + 30 + 25 = \mathbf{\text{NPR } 275}$[cite: 9]
+          <br />At Year 2 ($t=2$): $275 \times (1.05)^2 = \text{NPR } 303.19$ per visitor $\implies \mathbf{\text{NPR } 152.81 \text{ crores}}$[cite: 9]
+        </li>
+      </ul>
+
+      <h4>3. Discounted Cash Flows and Project NPV (NPR in crores)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Year</th>
+              <th style="padding:6px; border:1px solid #ddd;">Y0</th>
+              <th style="padding:6px; border:1px solid #ddd;">Y1</th>
+              <th style="padding:6px; border:1px solid #ddd;">Y2</th>
+              <th style="padding:6px; border:1px solid #ddd;">Y3</th>
+              <th style="padding:6px; border:1px solid #ddd;">Y4</th>
+              <th style="padding:6px; border:1px solid #ddd;">Y5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Construction Cost</td><td>(225.00)</td><td>(225.00)</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>Working Capital</td><td>—</td><td>(65.00)</td><td>(3.25)</td><td>(3.41)</td><td>(3.58)</td><td>75.24</td></tr>
+            <tr><td>Operating CFAT</td><td>—</td><td>—</td><td>48.51</td><td>46.73</td><td>45.42</td><td>44.55</td></tr>
+            <tr><td>Terminal Salvage</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>250.00</td></tr>
+            <tr style="font-weight:bold;"><td>Net Cash Flow (NPR Cr)</td><td>(225.00)</td><td>(290.00)</td><td>45.26</td><td>43.32</td><td>41.84</td><td>369.79</td></tr>
+            <tr><td>PVF @ 10.66%</td><td>1.000</td><td>0.904</td><td>0.817</td><td>0.738</td><td>0.667</td><td>0.603</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td>Present Value (NPR Cr)</td>
+              <td>(225.00)</td>
+              <td>(262.16)</td>
+              <td>36.98</td>
+              <td>31.97</td>
+              <td>27.91</td>
+              <td>222.98</td>
+            </tr>
+            <tr style="font-weight:bold; background-color:#f9f9f9;">
+              <td colspan="6">Net Present Value (NPV)</td>
+              <td><strong>- NPR 167.32 Crores</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Decision:</strong> Because the project NPV is negative (<strong>- NPR 167.32 crores</strong>), Its Entertainment Ltd. <strong>should not undertake the Water Park project</strong>[cite: 9].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH11_ILLUS_03",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "International Financial Management",
+    // placement: 3,
+    marks: 10,
+    question_html: `
+      <p>Opus Technologies Ltd., an Indian IT company, plans to invest in a 2-year software project in China through a subsidiary[cite: 9]. Project parameters:</p>
+      <ul>
+        <li>Initial investment: Land = CN¥ 30,00,000 (sold at Year 2 end for CN¥ 35,00,000); Office Complex = CN¥ 15,00,000 (SLM depreciation over 2 years to zero; scrap realization = CN¥ 5,00,000)[cite: 9].</li>
+        <li>Financed via GDR issue in Mauritius: 5 shares per GDR (Current share price = ₹ 200, Face Value = ₹ 10, Dividend = 25% growing @ 10% p.a., issue floatation cost = 1%)[cite: 9].</li>
+        <li>Annual production: 10,000 units @ CN¥ 500/unit (rising with Chinese inflation @ 8% p.a.)[cite: 9]. Variable costs: 40% of sales; Fixed costs: CN¥ 22,00,000 p.a. (rising @ 8% p.a.)[cite: 9].</li>
+        <li>Tax in China: 25% (no further tax in India)[cite: 9]. Current spot rate: CN¥ 1 = ₹ 9.50[cite: 9]. 1-year nominal interest rates: India = 12%, China = 10%[cite: 9].</li>
+      </ul>
+      <p>Determine: (a) NPV in CN¥, and (b) Whether Opus Technologies should accept the project from the parent perspective[cite: 9].</p>
+    `,
+    solution_html: `
+      <h4>1. Cost of Capital via GDR Issue</h4>
+      <p>$$D_1 = ₹ 10 \times 25\% \times 1.10 = ₹ 2.75$$[cite: 9]</p>
+      <p>$$\text{Net Proceeds per share} = ₹ 200 \times (1 - 0.01) = ₹ 198$$[cite: 9]</p>
+      <p>$$K_e = \frac{D_1}{P_0} + g = \frac{₹ 2.75}{₹ 198} + 0.10 = 0.01389 + 0.10 = \mathbf{11.39\%}$$[cite: 9]</p>
+
+      <h4>2. Projected Exchange Rates (Interest Rate Parity)</h4>
+      <ul>
+        <li>Year 1: $9.50 \times \frac{1 + 0.12}{1 + 0.10} = \mathbf{₹ 9.67 \text{ per CN¥}}$[cite: 9]</li>
+        <li>Year 2: $9.50 \times \frac{(1.12)^2}{(1.10)^2} = \mathbf{₹ 9.85 \text{ per CN¥}}$[cite: 9]</li>
+      </ul>
+
+      <h4>3. Terminal Asset Recoveries Net of 25% Tax (CN¥)</h4>
+      <ul>
+        <li>Land: Cost = 30,00,000; Sale = 35,00,000 $\implies \text{Tax} = 25\%(5,00,000) = 1,25,000 \implies \text{Net} = \mathbf{\text{CN¥ } 33,75,000}$[cite: 9]</li>
+        <li>Complex: WDV = 0; Sale = 5,00,000 $\implies \text{Tax} = 25\%(5,00,000) = 1,25,000 \implies \text{Net} = \mathbf{\text{CN¥ } 3,75,000}$[cite: 9]</li>
+      </ul>
+
+      <h4>4. (a) Project NPV in Chinese Yuan (CN¥)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Year</th>
+              <th style="padding:6px; border:1px solid #ddd;">Operating CFAT (CN¥)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Terminal Salvage (CN¥)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Total CF (CN¥)</th>
+              <th style="padding:6px; border:1px solid #ddd;">PVF @ 11.39%</th>
+              <th style="padding:6px; border:1px solid #ddd;">PV (CN¥)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>0</td><td>—</td><td>—</td><td>(45,00,000)</td><td>1.000</td><td>(45,00,000)</td></tr>
+            <tr><td>1</td><td>8,35,500</td><td>—</td><td>8,35,500</td><td>0.898</td><td>7,50,279</td></tr>
+            <tr><td>2</td><td>8,87,340</td><td>37,50,000</td><td>46,37,340</td><td>0.806</td><td>37,37,696</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td colspan="5">Net Present Value (NPV in CN¥)</td>
+              <td><strong>- CN¥ 12,025</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>5. (b) Parent Perspective NPV in Indian Rupees (₹)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Year</th>
+              <th style="padding:6px; border:1px solid #ddd;">Cash Flow (CN¥)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Rate (₹/CN¥)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Cash Flow (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">PVF @ 12%</th>
+              <th style="padding:6px; border:1px solid #ddd;">PV (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>0</td><td>(45,00,000)</td><td>9.50</td><td>(4,27,50,000)</td><td>1.000</td><td>(4,27,50,000)</td></tr>
+            <tr><td>1</td><td>8,35,500</td><td>9.67</td><td>80,79,285</td><td>0.893</td><td>72,14,802</td></tr>
+            <tr><td>2</td><td>46,37,340</td><td>9.85</td><td>4,56,77,799</td><td>0.797</td><td>3,64,05,206</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td colspan="5">Net Present Value (NPV in INR)</td>
+              <td><strong>+ ₹ 8,70,008</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Decision:</strong> Even though the project NPV is marginally negative in CN¥ (-12,025), it generates a positive NPV of <strong>+₹ 8,70,008</strong> in home currency due to the appreciation of the Yuan[cite: 9]. Therefore, Opus Technologies <strong>can accept the project</strong>[cite: 9].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH11_ILLUS_04",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "International Financial Management",
+    // placement: 4,
+    marks: 6,
+    question_html: `
+      <p>X Ltd. requires $ 10 million (net of 2% floatation cost) to install a manufacturing plant in the US, financed via a GDR issue[cite: 9]. Additional information:</p>
+      <ul>
+        <li>Current market price per share = ₹ 250 (Face Value ₹ 100)[cite: 9].</li>
+        <li>Each GDR represents 2 underlying shares, priced at a 10% discount to market price[cite: 9].</li>
+        <li>Exchange rate = ₹ 60 / $[cite: 9].</li>
+        <li>Expected dividend = 20% with a growth rate of 12% p.a.[cite: 9]</li>
+      </ul>
+      <p>Compute: (i) Number of GDRs to be issued, and (ii) Cost of GDR capital to X Ltd.[cite: 9]</p>
+    `,
+    solution_html: `
+      <h4>1. Issue Price and Number of GDRs</h4>
+      <ul>
+        <li>$$\text{Gross Funds Required} = \frac{\$ 10,000,000}{1 - 0.02} = \mathbf{\$ 10.204 \text{ million}}$$[cite: 9]</li>
+        <li>Issue Price per GDR in INR:
+          <br />$$2 \text{ shares} \times ₹ 250 \times (1 - 0.10) = 2 \times ₹ 225 = \mathbf{₹ 450.00}$$[cite: 9]
+        </li>
+        <li>$$\text{Issue Price per GDR in USD} = \frac{₹ 450}{₹ 60} = \mathbf{\$ 7.50}$$[cite: 9]</li>
+        <li>$$\text{Number of GDRs to be Issued} = \frac{\$ 10.204 \text{ million}}{\$ 7.50} = \mathbf{1.3605 \text{ million GDRs}}$$[cite: 9]</li>
+      </ul>
+
+      <h4>2. Cost of Capital of GDR ($K_e$)</h4>
+      <ul>
+        <li>Dividend per GDR ($D_1$): $2 \text{ shares} \times (₹ 100 \times 20\%) = \mathbf{₹ 40.00}$[cite: 9]</li>
+        <li>$$\text{Net Proceeds per GDR} = ₹ 450 \times (1 - 0.02) = \mathbf{₹ 441.00}$$[cite: 9]</li>
+        <li>$$K_e = \frac{D_1}{\text{Net Proceeds}} + g = \frac{₹ 40.00}{₹ 441.00} + 0.12 = 0.0907 + 0.12 = \mathbf{21.07\%}$$[cite: 9]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH11_TYK_TH_01",
+    question_type: "theory",
+    source: "ICAI Study Material",
+    chapter_name: "International Financial Management",
+    // placement: 5,
+    marks: 6,
+    question_html: `
+      <p>Write a short note on Instruments of International Finance.[cite: 9]</p>
+    `,
+    solution_html: `
+      <p>Multinational corporations access international capital markets to raise foreign currency debt and equity through specialized instruments[cite: 9]:</p>
+      <ul>
+        <li><strong>Foreign Currency Convertible Bonds (FCCBs):</strong> Foreign currency-denominated debt instruments that carry regular fixed coupon payments and provide the holder with an option to convert the bond into equity shares at a predetermined strike price[cite: 9].</li>
+        <li><strong>American Depository Receipts (ADRs):</strong> Negotiable dollar-denominated certificates issued by a US depository bank representing shares of a foreign company, traded on US stock exchanges under SEC regulations[cite: 9].</li>
+        <li><strong>Global Depository Receipts (GDRs):</strong> Dollar- or Euro-denominated depository receipts issued outside the US (commonly listed on the Luxembourg or London exchanges) representing underlying domestic shares, allowing global capital raising without domestic equity dilution[cite: 9].</li>
+        <li><strong>Euro-Convertible Bonds (ECBs):</strong> Convertible debt securities issued in international capital markets denominated in a foreign currency, often featuring embedded call and put options[cite: 9].</li>
+        <li><strong>Euro-Bonds:</strong> Debt instruments issued outside the country of the currency in which they are denominated (e.g., a US Dollar bond issued in London)[cite: 9].</li>
+        <li><strong>Euro Commercial Paper (ECP):</strong> Short-term, unsecured promissory notes issued in international money markets with maturities typically under one year[cite: 9].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH11_TYK_TH_02",
+    question_type: "theory",
+    source: "ICAI Study Material",
+    chapter_name: "International Financial Management",
+    // placement: 6,
+    marks: 4,
+    question_html: `
+      <p>What is the impact of GDRs on the Indian Capital Market?[cite: 9]</p>
+    `,
+    solution_html: `
+      <p>The introduction of Global Depository Receipts (GDRs) transformed the Indian corporate financing environment[cite: 9]:</p>
+      <ul>
+        <li><strong>Global Integration:</strong> Linked the Indian domestic stock market with international capital markets, exposing Indian companies to worldwide valuation and governance standards[cite: 9].</li>
+        <li><strong>Shift in Trading Volume:</strong> Significant trading activity shifted from Mumbai to European financial centers such as Luxembourg and London[cite: 9].</li>
+        <li><strong>Arbitrage Opportunities:</strong> Price differentials between domestic underlying shares and offshore GDRs created continuous cross-border arbitrage trading[cite: 9].</li>
+        <li><strong>Marginalization of Retail Arbitrage:</strong> Competitive international institutional pricing replaced heavily discounted domestic rights/public issues, limiting retail windfall gains[cite: 9].</li>
+        <li><strong>Substantial Foreign Capital Inflows:</strong> Enabled Indian blue-chip companies to raise large volumes of foreign currency equity to fund domestic and overseas expansions[cite: 9].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH11_TYK_PR_01",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "International Financial Management",
+    // placement: 7,
+    marks: 6,
+    question_html: `
+      <p>ABC Ltd. is considering a project in the US involving an initial investment of US $ 1,10,00,000 (life: 5 years)[cite: 9]. Current spot exchange rate is ₹ 48 / $[cite: 9]. Risk-free rates: US = 8%, India = 12%[cite: 9]. Required rate of return on the project in India is 14%[cite: 9]. Cash inflows are[cite: 9]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Year</th>
+              <th style="padding:6px; border:1px solid #ddd;">1</th>
+              <th style="padding:6px; border:1px solid #ddd;">2</th>
+              <th style="padding:6px; border:1px solid #ddd;">3</th>
+              <th style="padding:6px; border:1px solid #ddd;">4</th>
+              <th style="padding:6px; border:1px solid #ddd;">5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Cash Inflow (US $)</td><td>20,00,000</td><td>25,00,000</td><td>30,00,000</td><td>40,00,000</td><td>50,00,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Calculate the NPV of the project using the foreign currency approach[cite: 9].</p>
+    `,
+    solution_html: `
+      <h4>1. Risk-Adjusted Dollar Discount Rate</h4>
+      <p>$$(1 + r_{f,\text{India}})(1 + \text{Risk Premium}) = (1 + k_{\text{India}})$$[cite: 9]</p>
+      <p>$$(1 + 0.12)(1 + \text{Risk Premium}) = (1 + 0.14) \implies 1 + \text{Risk Premium} = \frac{1.14}{1.12} = \mathbf{1.017857}$$[cite: 9]</p>
+      <p>$$\text{Risk-Adjusted US\$ Rate} = (1 + \text{Risk Premium}) \times (1 + r_{f,\text{US}}) - 1$$[cite: 9]</p>
+      <p>$$\text{Rate} = (1.017857 \times 1.08) - 1 = 1.099286 - 1 = \mathbf{9.93\% \approx 9.90\%}$$[cite: 9]</p>
+
+      <h4>2. Discounted Cash Flows in Foreign Currency ($)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Year</th>
+              <th style="padding:6px; border:1px solid #ddd;">Cash Inflow ($ M)</th>
+              <th style="padding:6px; border:1px solid #ddd;">PVF @ 9.9%</th>
+              <th style="padding:6px; border:1px solid #ddd;">PV ($ M)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>2.00</td><td>0.910</td><td>1.820</td></tr>
+            <tr><td>2</td><td>2.50</td><td>0.828</td><td>2.070</td></tr>
+            <tr><td>3</td><td>3.00</td><td>0.753</td><td>2.259</td></tr>
+            <tr><td>4</td><td>4.00</td><td>0.686</td><td>2.744</td></tr>
+            <tr><td>5</td><td>5.00</td><td>0.624</td><td>3.120</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td colspan="3">Total Present Value of Inflows</td>
+              <td>12.013</td>
+            </tr>
+            <tr>
+              <td colspan="3">Less: Initial Outlay</td>
+              <td>(11.000)</td>
+            </tr>
+            <tr style="font-weight:bold; background-color:#f9f9f9;">
+              <td colspan="3">Net Present Value in US$</td>
+              <td><strong>$ 1.013 Million</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>$$\text{Rupee NPV} = \$ 1.013 \text{ million} \times ₹ 48 = \mathbf{₹ 48.624 \text{ Million}}$$[cite: 9]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH11_TYK_PR_02",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "International Financial Management",
+    // placement: 8,
+    marks: 8,
+    question_html: `
+      <p>A US-based company plans to set up a software development unit in India for 1 year[cite: 9]. The software developed will be bought back by the US parent at a transfer price of US $ 10 million and sold in the US market for US $ 12.0 million[cite: 9].</p>
+      <p>Taxation and costs (Spot: ₹ 48 / $; assume 365 days a year)[cite: 9]:</p>
+      <ul>
+        <li>Indian corporate tax = 30%, withholding tax = 10% (no US tax credit available)[cite: 9].</li>
+        <li>Rent in India = ₹ 15,00,000[cite: 9].</li>
+        <li>Manpower: 80 software professionals working 10 hours/day for 365 days @ ₹ 400 per man hour[cite: 9].</li>
+        <li>Administrative and other costs = ₹ 12,00,000[cite: 9].</li>
+      </ul>
+      <p>Advise the US company on the financial viability of developing the software in India[cite: 9].</p>
+    `,
+    solution_html: `
+      <h4>1. Operating Financials of Indian Unit</h4>
+      <ul>
+        <li>Revenue from Parent: $\text{US\$ } 10 \text{ million} \times ₹ 48 = \mathbf{₹ 48,00,00,000}$[cite: 9]</li>
+        <li>Less Operating Costs:
+          <ul>
+            <li>Rent $= ₹ 15,00,000$[cite: 9]</li>
+            <li>Manpower: $80 \times 10 \times 365 \times ₹ 400 = \mathbf{₹ 11,68,00,000}$[cite: 9]</li>
+            <li>Administrative Costs $= ₹ 12,00,000$[cite: 9]</li>
+            <li>Total Operating Expenses $= \mathbf{₹ 11,95,00,000}$[cite: 9]</li>
+          </ul>
+        </li>
+        <li>$$\text{Earnings Before Tax (EBT)} = ₹ 48,00,00,000 - ₹ 11,95,00,000 = \mathbf{₹ 36,05,00,000}$$[cite: 9]</li>
+        <li>Less: Indian Corporate Tax @ 30% $= 30\% \times ₹ 36,05,00,000 = \mathbf{₹ 10,81,50,000}$[cite: 9]</li>
+        <li>$$\text{Earnings After Tax (EAT)} = ₹ 36,05,00,000 - ₹ 10,81,50,000 = \mathbf{₹ 25,23,50,000}$$[cite: 9]</li>
+        <li>Less: Withholding Tax (TDS) @ 10% $= 10\% \times ₹ 25,23,50,000 = \mathbf{₹ 2,52,35,000}$[cite: 9]</li>
+        <li>$$\text{Net Repatriation to Parent} = ₹ 25,23,50,000 - ₹ 2,52,35,000 = \mathbf{₹ 22,71,15,000}$$[cite: 9]</li>
+      </ul>
+
+      <h4>2. Cost to US Parent and Viability Assessment</h4>
+      <p>$$\text{Net Inflow Repatriated in USD} = \frac{₹ 22,71,15,000}{₹ 48} = \mathbf{\text{US\$ } 4.7315 \text{ Million}}$$[cite: 9]</p>
+      <p>$$\text{Net Cost of Development to Parent} = \text{Transfer Price} - \text{Repatriated Inflow} = \$ 10.00\text{m} - \$ 4.7315\text{m} = \mathbf{\text{US\$ } 5.2685 \text{ Million}}$$[cite: 9]</p>
+      <p>$$\text{Net Profit on US Market Sale} = \$ 12.00\text{m} - \$ 5.2685\text{m} = \mathbf{+\text{US\$ } 6.7315 \text{ Million}}$$[cite: 9]</p>
+      <p><strong>Advice:</strong> Developing the software in India is <strong>financially highly viable</strong>, generating a substantial net surplus over US market realization[cite: 9].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH11_TYK_PR_03",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "International Financial Management",
+    // placement: 9,
+    marks: 8,
+    question_html: `
+      <p>XY Limited plans to acquire retail stores in Africa[cite: 9]. Inflation: Africa = 40% p.a.; India = 10% p.a.[cite: 9] Current spot exchange rate is African Rand 6 to ₹ 1[cite: 9]. Projected real cash flows (in thousands):</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars ('000)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Year 0</th>
+              <th style="padding:6px; border:1px solid #ddd;">Year 1</th>
+              <th style="padding:6px; border:1px solid #ddd;">Year 2</th>
+              <th style="padding:6px; border:1px solid #ddd;">Year 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Indian ₹ Cash Flows</td><td>-50,000</td><td>-1,500</td><td>-2,000</td><td>-2,500</td></tr>
+            <tr><td>African Rand Cash Flows</td><td>-2,00,000</td><td>+50,000</td><td>+70,000</td><td>+90,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Year 3 nominal cash flows continue indefinitely[cite: 9]. Discount rate = 20% (PVIF @ 20%: Y1 = 0.833, Y2 = 0.694, Y3 = 0.579)[cite: 9]. Calculate the project NPV[cite: 9].</p>
+    `,
+    solution_html: `
+      <h4>1. Projected Exchange Rates (Interest Rate Parity / PPP)</h4>
+      <p>$$S_t = S_{t-1} \times \frac{1 + 0.40}{1 + 0.10} = S_{t-1} \times 1.2727$$[cite: 9]</p>
+      <ul>
+        <li>Year 0 = 6.0000; Year 1 = 7.6364; Year 2 = 9.7190; Year 3 = 12.3696 Rand / ₹[cite: 9]</li>
+      </ul>
+
+      <h4>2. Nominal Cash Flows and Rupee Conversion (₹ in '000)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Year</th>
+              <th style="padding:6px; border:1px solid #ddd;">Y0</th>
+              <th style="padding:6px; border:1px solid #ddd;">Y1</th>
+              <th style="padding:6px; border:1px solid #ddd;">Y2</th>
+              <th style="padding:6px; border:1px solid #ddd;">Y3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Nominal Indian CF (₹)</td><td>(50,000)</td><td>$-1,500 \times 1.10 = -1,650$</td><td>$-2,000 \times 1.21 = -2,420$</td><td>$-2,500 \times 1.331 = -3,327.5$</td></tr>
+            <tr><td>Nominal African CF (Rand)</td><td>(2,00,000)</td><td>$50,000 \times 1.40 = 70,000$</td><td>$70,000 \times 1.96 = 1,37,200$</td><td>$90,000 \times 2.744 = 2,46,960$</td></tr>
+            <tr><td>African CF in INR (₹)</td><td>(33,333)</td><td>$\frac{70,000}{7.6364} = 9,167$</td><td>$\frac{1,37,200}{9.7190} = 14,117$</td><td>$\frac{2,46,960}{12.3696} = 19,965$</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td>Net Cash Flow (₹ '000)</td>
+              <td>(83,333)</td>
+              <td>7,517</td>
+              <td>11,697</td>
+              <td>16,637.5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>3. Discounted Cash Flows and Project NPV</h4>
+      <ul>
+        <li>PV of Inflows (Years 1 to 3):
+          <br />$$(7,517 \times 0.833) + (11,697 \times 0.694) + (16,637 \times 0.579) = 6,262 + 8,118 + 9,633 = ₹ 24,013 \text{ ('000)}$$[cite: 9]
+        </li>
+        <li>Capitalized Terminal Value of Year 3 Perpetuity:
+          <br />$$\text{PV} = \frac{16,637.5}{0.20} \times 0.579 = 83,187.5 \times 0.579 = \mathbf{₹ 48,164 \text{ ('000)}}$$[cite: 9]
+        </li>
+        <li>$$\text{Total PV of Operating Inflows} = 24,013 + 48,164 = \mathbf{₹ 72,177 \text{ ('000)}}$$</li>
+      </ul>
+      <p>$$\text{Project NPV} = ₹ 72,177 - ₹ 83,333 = \mathbf{-₹ 11,156 \text{ ('000)}}$$[cite: 9]</p>
+      <p><strong>Decision:</strong> The project generates a negative NPV of <strong>-₹ 11.156 million</strong>; therefore, it <strong>should not be undertaken</strong>[cite: 9].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH11_TYK_PR_04",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "International Financial Management",
+    // placement: 10,
+    marks: 10,
+    question_html: `
+      <p>An MNC plans to establish a manufacturing subsidiary in India instead of exporting[cite: 9]:</p>
+      <ul>
+        <li>Initial cost: Plant and Machinery = US$ 500 million (5-year life, SLM depreciation to zero)[cite: 9]; Net working capital = US$ 50 million (released at Year 5)[cite: 9]. Existing working capital released from stopping exports = US$ 15 million[cite: 9].</li>
+        <li>Capacity: 5 million units @ US$ 80 selling price, variable operating cost = US$ 20/unit, additional cash fixed cost = US$ 30 million p.a. (allocated fixed cost of $ 3 million ignored)[cite: 9].</li>
+        <li>Cannibalized Exports: Currently exports 2 million units (would decline to 1.5 million units if subsidiary is not set up) @ US$ 80, variable cost = US$ 40/unit[cite: 9].</li>
+        <li>Tax rate = 35%; Required rate of return = 12% ($PVAF_{12\%, 5} = 3.6048; PVF_{12\%, 5} = 0.5674$)[cite: 9].</li>
+      </ul>
+      <p>Estimate the Net Present Value (NPV) of the proposed project in India[cite: 9].</p>
+    `,
+    solution_html: `
+      <h4>1. Initial Incremental Cash Outflow ($ Millions)</h4>
+      <ul>
+        <li>Plant and Machinery $= \$ 500.00\text{m}$[cite: 9]</li>
+        <li>Working Capital required $= \$ 50.00\text{m}$[cite: 9]</li>
+        <li>Less: Working Capital released from existing export operations $= (\$ 15.00\text{m})$[cite: 9]</li>
+        <li>$$\text{Net Initial Outlay} = \$ 500 + \$ 50 - \$ 15 = \mathbf{\text{US\$ } 535.00 \text{ Million}}$$[cite: 9]</li>
+      </ul>
+
+      <h4>2. Annual Operating CFAT from Indian Subsidiary ($ Millions)</h4>
+      <ul>
+        <li>Sales Revenue ($5\text{m units} \times \$ 80$) $= \$ 400.00\text{m}$[cite: 9]</li>
+        <li>Less: Variable Cost ($5\text{m units} \times \$ 20$) $= (\$ 100.00\text{m})$[cite: 9]</li>
+        <li>Less: Cash Fixed Costs $= (\$ 30.00\text{m})$[cite: 9]</li>
+        <li>Less: Depreciation ($\$ 500\text{m} / 5$) $= (\$ 100.00\text{m})$[cite: 9]</li>
+        <li>$$\text{EBIT} = \$ 400 - \$ 100 - \$ 30 - \$ 100 = \mathbf{\$ 170.00 \text{ Million}}$$[cite: 9]</li>
+        <li>Less: Tax @ 35% $= 35\% \times \$ 170 = (\$ 59.50\text{m}) \implies \text{EAT} = \$ 110.50\text{m}$[cite: 9]</li>
+        <li>$$\text{CFAT (Subsidiary)} = \text{EAT} + \text{Depreciation} = \$ 110.50 + \$ 100.00 = \mathbf{\$ 210.50 \text{ Million p.a.}}$$[cite: 9]</li>
+      </ul>
+
+      <h4>3. Opportunity Cost of Cannibalized Exports ($ Millions)</h4>
+      <ul>
+        <li>Lost Export Volume $= 1.50 \text{ million units}$[cite: 9]</li>
+        <li>Contribution per unit $= \$ 80 - \$ 40 = \$ 40$[cite: 9]</li>
+        <li>$$\text{Lost Pre-tax Contribution} = 1.50\text{m} \times \$ 40 = \$ 60.00\text{m}$$[cite: 9]</li>
+        <li>$$\text{Lost After-tax CFAT} = \$ 60.00\text{m} \times (1 - 0.35) = \mathbf{\$ 39.00 \text{ Million p.a.}}$$[cite: 9]</li>
+      </ul>
+
+      <h4>4. Net Incremental Cash Inflows and NPV</h4>
+      <ul>
+        <li>$$\text{Net Annual Incremental CFAT} = \$ 210.50\text{m} - \$ 39.00\text{m} = \mathbf{\$ 171.50 \text{ Million p.a.}}$$[cite: 9]</li>
+        <li>Terminal Recovery of Working Capital at Year 5: $\$ 50\text{m} - \$ 15\text{m} = \mathbf{\$ 35.00 \text{ Million}}$[cite: 9]</li>
+        <li>$$\text{PV of Annual Operating CFAT} = \$ 171.50\text{m} \times 3.6048 = \$ 618.2232\text{m}$$[cite: 9]</li>
+        <li>$$\text{PV of Terminal Working Capital} = \$ 35.00\text{m} \times 0.5674 = \$ 19.8590\text{m}$$[cite: 9]</li>
+        <li>$$\text{Total Present Value of Inflows} = \$ 618.2232\text{m} + \$ 19.8590\text{m} = \mathbf{\$ 638.0822 \text{ Million}}$$[cite: 9]</li>
+      </ul>
+      <p>$$\text{Project NPV} = \$ 638.0822\text{m} - \$ 535.0000\text{m} = \mathbf{+\text{US\$ } 103.0822 \text{ Million}}$$[cite: 9]</p>
+      <p><strong>Decision:</strong> Because the Net Present Value is positive, the project to set up a manufacturing subsidiary in India <strong>should be accepted</strong>[cite: 9].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH11_TYK_PR_05",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "International Financial Management",
+    // placement: 11,
+    marks: 8,
+    question_html: `
+      <p>XYZ Ltd., based in India, considers bulk wood imports from Nepal with nominal cash flows (in millions)[cite: 9]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Currency</th>
+              <th style="padding:6px; border:1px solid #ddd;">Year 0</th>
+              <th style="padding:6px; border:1px solid #ddd;">Year 1</th>
+              <th style="padding:6px; border:1px solid #ddd;">Year 2</th>
+              <th style="padding:6px; border:1px solid #ddd;">Year 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Nepalese Currency (NC)</td><td>-25.000</td><td>+2.600</td><td>+3.800</td><td>+4.100</td></tr>
+            <tr><td>Indian Rupee (₹)</td><td>0</td><td>+2.869</td><td>+4.200</td><td>+4.600</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Inflation: Nepal = 9% p.a., India = 8% p.a.[cite: 9] Current spot rate: ₹ 1 = NC 1.60[cite: 9]. Discount rate = 9% p.a.[cite: 9] Discount factors @ 9%: PV: Y1 = 0.917, Y2 = 0.842, Y3 = 0.772; FV: Y1 = 1.188, Y2 = 1.090, Y3 = 1.000[cite: 9].</p>
+      <p>Calculate: (i) Net Present Value (NPV), and (ii) Modified Internal Rate of Return (MIRR)[cite: 9].</p>
+    `,
+    solution_html: `
+      <h4>1. Forward Exchange Rates (NC per ₹)</h4>
+      <ul>
+        <li>Year 1: $1.60 \times \frac{1 + 0.09}{1 + 0.08} = \mathbf{1.615}$[cite: 9]</li>
+        <li>Year 2: $1.615 \times \frac{1.09}{1.08} = \mathbf{1.630}$[cite: 9]</li>
+        <li>Year 3: $1.630 \times \frac{1.09}{1.08} = \mathbf{1.645}$[cite: 9]</li>
+      </ul>
+
+      <h4>2. Conversion of NC Cash Flows to Indian Rupees (₹ Millions)</h4>
+      <ul>
+        <li>Year 0 Outflow: $\frac{\text{NC } 25.000}{1.600} = \mathbf{₹ 15.625 \text{ Million}}$[cite: 9]</li>
+        <li>Year 1 Inflow: $\frac{\text{NC } 2.600}{1.615} = \mathbf{₹ 1.610 \text{ Million}}$[cite: 9]</li>
+        <li>Year 2 Inflow: $\frac{\text{NC } 3.800}{1.630} = \mathbf{₹ 2.331 \text{ Million}}$[cite: 9]</li>
+        <li>Year 3 Inflow: $\frac{\text{NC } 4.100}{1.645} = \mathbf{₹ 2.492 \text{ Million}}$[cite: 9]</li>
+      </ul>
+
+      <h4>3. Total Combined Rupee Cash Flows and NPV (₹ Millions)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Year</th>
+              <th style="padding:6px; border:1px solid #ddd;">Domestic (₹ M)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Converted NC (₹ M)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Total CF (₹ M)</th>
+              <th style="padding:6px; border:1px solid #ddd;">PVF @ 9%</th>
+              <th style="padding:6px; border:1px solid #ddd;">PV (₹ M)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>0</td><td>—</td><td>(15.625)</td><td>(15.625)</td><td>1.000</td><td>(15.625)</td></tr>
+            <tr><td>1</td><td>2.869</td><td>1.610</td><td>4.479</td><td>0.917</td><td>4.107</td></tr>
+            <tr><td>2</td><td>4.200</td><td>2.331</td><td>6.531</td><td>0.842</td><td>5.499</td></tr>
+            <tr><td>3</td><td>4.600</td><td>2.492</td><td>7.092</td><td>0.772</td><td>5.475</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td colspan="5">Net Present Value (NPV)</td>
+              <td><strong>- ₹ 0.544 Million \approx - ₹ 0.547 Million</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>4. Modified Internal Rate of Return (MIRR)</h4>
+      <p>Terminal compounding of intermediate inflows to Year 3 @ 9%[cite: 9]:</p>
+      <ul>
+        <li>Year 1 Inflow: $₹ 4.479 \times 1.188 = ₹ 5.321 \text{ Million}$[cite: 9]</li>
+        <li>Year 2 Inflow: $₹ 6.531 \times 1.090 = ₹ 7.119 \text{ Million}$[cite: 9]</li>
+        <li>Year 3 Inflow: $₹ 7.092 \times 1.000 = ₹ 7.092 \text{ Million}$[cite: 9]</li>
+        <li>$$\text{Total Terminal Cash Flow} = 5.321 + 7.119 + 7.092 = \mathbf{₹ 19.532 \text{ Million}}$$[cite: 9]</li>
+      </ul>
+      <p>$$\text{MIRR} = \left(\frac{\text{Terminal Value}}{\text{Initial Outlay}}\right)^{1/n} - 1 = \left(\frac{19.532}{15.625}\right)^{1/3} - 1$$[cite: 9]</p>
+      <p>$$\text{MIRR} = (1.25005)^{0.3333} - 1 = 1.0772 - 1 = \mathbf{7.72\%}$$[cite: 9]</p>
+    `
+  },
+  // chapter12
+  {
+    question_id: "AFM_ICAIBOOK_CH12_TYK_TH_01",
+    question_type: "theory",
+    source: "ICAI Study Material",
+    chapter_name: "Interest Rate Risk Management",
+    // placement: 1,
+    marks: 6,
+    question_html: `
+      <p>Write a short note on Forward Rate Agreements (FRAs).[cite: 10]</p>
+    `,
+    solution_html: `
+      <p>A <strong>Forward Rate Agreement (FRA)</strong> is an over-the-counter (OTC) contract between two parties where a borrower or lender fixes the interest rate for a future borrowing or lending period, hedging against adverse interest rate movements[cite: 10].</p>
+      
+      <h4>Key Features of FRAs</h4>
+      <ul>
+        <li><strong>Hedging Tool:</strong> Commonly used by corporations and banks to lock in financing costs on future floating-rate debt or protect returns on future deposits indexed to reference rates (such as SOFR, SONIA, or MIBOR)[cite: 10].</li>
+        <li><strong>Off-Balance Sheet Instrument:</strong> FRAs do not involve the exchange of principal amounts; the underlying principal is purely &ldquo;notional&rdquo; and serves only as the base for computing interest differentials[cite: 10].</li>
+        <li><strong>Cash Settlement at Inception:</strong> Unlike ordinary loan interest settled in arrears at the end of the borrowing period, FRA settlement occurs at the <em>beginning</em> of the contract period (the settlement/fixing date)[cite: 10]. Consequently, the interest differential is discounted back to present value using the actual spot reference rate prevailing on that date[cite: 10].</li>
+        <li><strong>Settlement Formula:</strong>
+          $$\text{Settlement Amount} = \frac{N \times (RR - FR) \times \left(\frac{dtm}{DY}\right)}{1 + RR \times \left(\frac{dtm}{DY}\right)}$$[cite: 10]
+          <p>Where:</p>
+          <ul>
+            <li>$N$ = Notional principal amount[cite: 10]</li>
+            <li>$RR$ = Reference rate on the fixing date[cite: 10]</li>
+            <li>$FR$ = Contracted forward rate[cite: 10]</li>
+            <li>$dtm$ = Tenure of the forward period in days[cite: 10]</li>
+            <li>$DY$ = Day-count convention (360 or 365 days)[cite: 10]</li>
+          </ul>
+        </li>
+        <li><strong>Payment Direction:</strong> If the Reference Rate ($RR$) exceeds the Forward Rate ($FR$), the seller pays the buyer the settlement amount; if $RR < FR$, the buyer pays the seller[cite: 10].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH12_TYK_TH_02",
+    question_type: "theory",
+    source: "ICAI Study Material",
+    chapter_name: "Interest Rate Risk Management",
+    // placement: 2,
+    marks: 6,
+    question_html: `
+      <p>What do you know about swaptions and their uses?[cite: 10]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept and Mechanism of Swaptions</h4>
+      <p>An <strong>Interest Rate Swaption</strong> is an option to enter into an Interest Rate Swap (IRS)[cite: 10]. It confers upon the buyer the right, but not the obligation, to enter into an interest rate swap agreement with the seller on a specified future date at a predetermined fixed rate and tenure[cite: 10].</p>
+      
+      <p>There are two primary types of swaptions[cite: 10]:</p>
+      <ul>
+        <li><strong>Payer Swaption (Call Swaption):</strong> Gives the buyer the right to pay a fixed interest rate and receive a floating rate[cite: 10]. Used by potential borrowers to cap maximum borrowing costs against rising interest rates[cite: 10].</li>
+        <li><strong>Receiver Swaption (Put Swaption):</strong> Gives the buyer the right to receive a fixed rate and pay a floating rate[cite: 10]. Used by investors and lenders to establish a floor on future lending yields against falling interest rates[cite: 10].</li>
+      </ul>
+
+      <h4>2. Uses of Swaptions</h4>
+      <ul>
+        <li><strong>Hedging Future Floating Debt:</strong> Allows corporate treasurers planning future capital expenditure or debt issuances to lock in a maximum fixed borrowing cost while retaining the ability to let the option lapse if rates decline[cite: 10].</li>
+        <li><strong>Tendering for Contracts:</strong> Useful for companies bidding on large capital projects who need guaranteed financing costs during the bidding window without entering into a binding swap if the bid is unsuccessful[cite: 10].</li>
+        <li><strong>Managing Embedded Option Risk in Callable Bonds:</strong> Issuers of callable bonds can sell receiver swaptions to monetize call flexibility and offset debt service costs[cite: 10].</li>
+        <li><strong>Portfolio &amp; Asset-Liability Management:</strong> Enables financial institutions and swap dealers to manage non-linear gamma/vega risks in their swap books and hedge structured products[cite: 10].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH12_TYK_PR_01",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Interest Rate Risk Management",
+    // placement: 3,
+    marks: 6,
+    question_html: `
+      <p>M/s. Parker &amp; Co. is contemplating borrowing an amount of ₹ 60 crores for a period of 3 months in 6 months' time from now[cite: 10]. The current rate of interest is 9% p.a., but it may go up in 6 months' time[cite: 10]. The company's bankers quoted an FRA at 9.30% p.a.[cite: 10]</p>
+      <p>What will be the final settlement amount if the actual rate of interest after 6 months happens to be (i) 9.60% p.a. and (ii) 8.80% p.a.?[cite: 10]</p>
+    `,
+    solution_html: `
+      <h4>Formula</h4>
+      <p>$$\text{Settlement Amount} = \frac{N \times (RR - FR) \times (dtm / DY)}{1 + RR \times (dtm / DY)}$$[cite: 10]</p>
+      <p>Where:</p>
+      <ul>
+        <li>Notional Principal ($N$) = ₹ 60 crores = ₹ 60,00,00,000[cite: 10]</li>
+        <li>Agreed Forward Rate ($FR$) = 9.30% = 0.093[cite: 10]</li>
+        <li>FRA period ($dtm / DY$) = $3 / 12 = 0.25$[cite: 10]</li>
+      </ul>
+
+      <h4>(i) Actual Rate of Interest ($RR$) = 9.60% p.a.</h4>
+      <p>$$\text{Settlement Amount} = \frac{₹ 60,00,00,000 \times (0.096 - 0.093) \times 0.25}{1 + 0.096 \times 0.25}$$[cite: 10]</p>
+      <p>$$\text{Settlement Amount} = \frac{₹ 60,00,00,000 \times 0.003 \times 0.25}{1 + 0.024} = \frac{₹ 4,50,000}{1.024} = \mathbf{₹ 4,39,453.13}$$[cite: 10]</p>
+      <p>Since the market rate exceeds the forward rate ($9.60\% > 9.30\%$), the <strong>banker will pay Parker &amp; Co. ₹ 4,39,453.13</strong>[cite: 10].</p>
+
+      <h4>(ii) Actual Rate of Interest ($RR$) = 8.80% p.a.</h4>
+      <p>$$\text{Settlement Amount} = \frac{₹ 60,00,00,000 \times (0.088 - 0.093) \times 0.25}{1 + 0.088 \times 0.25}$$[cite: 10]</p>
+      <p>$$\text{Settlement Amount} = \frac{₹ 60,00,00,000 \times (-0.005) \times 0.25}{1 + 0.022} = \frac{-₹ 7,50,000}{1.022} = \mathbf{-₹ 7,33,855.19}$$[cite: 10]</p>
+      <p>Since the market rate is below the forward rate ($8.80\% < 9.30\%$), <strong>Parker &amp; Co. will pay the banker ₹ 7,33,855.19</strong>[cite: 10].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH12_TYK_PR_02",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Interest Rate Risk Management",
+    // placement: 4,
+    marks: 6,
+    question_html: `
+      <p>TM Fincorp has bought a $6 \times 9$ ₹ 100 crore Forward Rate Agreement (FRA) at 5.25%[cite: 10]. On the fixing date, the reference rate (MIBOR) turns out to be[cite: 10]:</p>
+      <ul>
+        <li>3 months: 5.50%[cite: 10]</li>
+        <li>6 months: 5.70%[cite: 10]</li>
+        <li>9 months: 5.85%[cite: 10]</li>
+      </ul>
+      <p>You are required to determine (assume 360 days in a year)[cite: 10]:</p>
+      <ol type="a">
+        <li>Profit/Loss to TM Fincorp in terms of basis points[cite: 10].</li>
+        <li>The settlement amount[cite: 10].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(a) Profit / Loss in Terms of Basis Points</h4>
+      <p>A $6 \times 9$ FRA is a contract on the 3-month interest rate beginning 6 months from today and maturing in 9 months[cite: 10]. Therefore, the applicable benchmark is the <strong>3-month MIBOR = 5.50%</strong>[cite: 10].</p>
+      <p>$$\text{Profit in Basis Points} = 5.50\% - 5.25\% = 0.25\% = \mathbf{25 \text{ basis points}}$$[cite: 10]</p>
+
+      <h4>(b) Settlement Amount Calculation</h4>
+      <p>$$\text{Settlement Amount} = \frac{N \times (RR - FR) \times (dtm / 360)}{1 + RR \times (dtm / 360)}$$[cite: 10]</p>
+      <ul>
+        <li>Notional Principal ($N$) = ₹ 100 crores = ₹ 1,00,00,00,000[cite: 10]</li>
+        <li>Reference Rate ($RR$) = 5.50% = 0.055[cite: 10]</li>
+        <li>Forward Rate ($FR$) = 5.25% = 0.0525[cite: 10]</li>
+        <li>$dtm / 360 = 90 / 360 = 0.25$[cite: 10]</li>
+      </ul>
+      <p>$$\text{Settlement Amount} = \frac{₹ 1,00,00,00,000 \times (0.055 - 0.0525) \times 0.25}{1 + 0.055 \times 0.25}$$[cite: 10]</p>
+      <p>$$\text{Settlement Amount} = \frac{₹ 1,00,00,00,000 \times 0.0025 \times 0.25}{1 + 0.01375} = \frac{₹ 6,25,000}{1.01375} = \mathbf{₹ 6,16,522.81 \approx ₹ 6,16,523}$$[cite: 10]</p>
+      <p>TM Fincorp earns a net profit settlement of <strong>₹ 6,16,523</strong> from the FRA seller[cite: 10].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH12_TYK_PR_03",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Interest Rate Risk Management",
+    // placement: 5,
+    marks: 8,
+    question_html: `
+      <p>XYZ Limited borrows £ 15 Million at 6-month SONIA + 10.00% for a period of 24 months[cite: 10]. The company buys a Cap Option from its bankers at a strike rate of 8.00%[cite: 10]. The lump-sum premium is 1.00% for the entire reset periods, and the fixed rate of interest is 7.00% p.a.[cite: 10] The actual position of SONIA during the reset periods is[cite: 10]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Reset Period</th>
+              <th style="padding:6px; border:1px solid #ddd;">SONIA Rate (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>9.00%</td></tr>
+            <tr><td>2</td><td>9.50%</td></tr>
+            <tr><td>3</td><td>10.00%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Show how far interest rate risk is hedged through the Cap Option (work amounts to nearest £)[cite: 10].</p>
+    `,
+    solution_html: `
+      <h4>1. Calculation of Periodic Amortized Cap Premium</h4>
+      <p>Loan tenure is 24 months with 6-month rests, implying 4 reset periods[cite: 10]. The semi-annual fixed rate is $i = \frac{7.00\%}{2} = 3.50\% = 0.035$[cite: 10].</p>
+      <p>$$\text{Total Upfront Premium} = 1.00\% \times £ 15,00,00,00 \times 10^{-1} = 1.00\% \times £ 15,000,000 = \mathbf{£ 150,000}$$[cite: 10]</p>
+      <p>$$\text{PVAF}(3.5\%, 4) = \frac{1}{1.035} + \frac{1}{(1.035)^2} + \frac{1}{(1.035)^3} + \frac{1}{(1.035)^4} = 0.9662 + 0.9335 + 0.9019 + 0.8714 = \mathbf{3.673 \approx 3.671}$$[cite: 10]</p>
+      <p>$$\text{Amortized Semi-Annual Premium} = \frac{£ 150,000}{3.671} = \mathbf{£ 40,861 \text{ per period}}$$[cite: 10]</p>
+      <p><small><em>(Alternatively, using exact formula: $£ 40,595$)</em></small>[cite: 10]</p>
+
+      <h4>2. Cap Payoff and Hedging Schedule</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Reset Period</th>
+              <th style="padding:6px; border:1px solid #ddd;">Actual SONIA (%)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Additional Interest $\text{Max}(0, \text{SONIA} - 8\%) \times £ 15\text{M} \times \frac{6}{12}$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Gross Receipt from Bank (£)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Amortized Premium (£)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Net Inflow / Risk Hedged (£)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>9.00%</td>
+              <td>$(9\% - 8\%) \times £ 15\text{M} \times 0.5 = \mathbf{£ 75,000}$</td>
+              <td>75,000</td>
+              <td>40,861</td>
+              <td><strong>34,139</strong></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>9.50%</td>
+              <td>$(9.5\% - 8\%) \times £ 15\text{M} \times 0.5 = \mathbf{£ 112,500}$</td>
+              <td>1,12,500</td>
+              <td>40,861</td>
+              <td><strong>71,639</strong></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>10.00%</td>
+              <td>$(10\% - 8\%) \times £ 15\text{M} \times 0.5 = \mathbf{£ 150,000}$</td>
+              <td>1,50,000</td>
+              <td>40,861</td>
+              <td><strong>1,09,139</strong></td>
+            </tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td colspan="2">Total</td>
+              <td>£ 337,500</td>
+              <td>£ 337,500</td>
+              <td>£ 122,583</td>
+              <td><strong>£ 214,917</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Through the Cap Option, gross interest rate risk of <strong>£ 337,500</strong> is mitigated, delivering a net cash relief of <strong>£ 214,917</strong> after accounting for option premium[cite: 10].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH12_TYK_PR_04",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Interest Rate Risk Management",
+    // placement: 6,
+    marks: 6,
+    question_html: `
+      <p>A dealer quotes &lsquo;All-in-cost&rsquo; (AIC) for a generic swap at 8% against 6-month SOFR flat for a notional principal of US$ 5,00,000[cite: 10].</p>
+      <ol type="i">
+        <li>Calculate the semi-annual fixed payment (30/360 basis)[cite: 10].</li>
+        <li>Find the first floating rate payment if the period comprises 181 days and corresponding SOFR was 6% on the effective date (actual/360 basis)[cite: 10].</li>
+        <li>On a &lsquo;Net&rsquo; settlement basis, how much would the fixed rate payer pay to the floating rate payer?[cite: 10]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Semi-Annual Fixed Payment (30/360 Day Count)</h4>
+      <p>$$\text{Fixed Payment} = N \times \text{AIC} \times \left(\frac{180}{360}\right) = \$ 5,00,000 \times 0.08 \times 0.50 = \mathbf{\text{US\$ } 20,000}$$[cite: 10]</p>
+
+      <h4>(ii) Floating Rate Payment (Actual/360 Day Count)</h4>
+      <p>$$\text{Floating Payment} = N \times \text{SOFR} \times \left(\frac{dt}{360}\right) = \$ 5,00,000 \times 0.06 \times \left(\frac{181}{360}\right)$$[cite: 10]</p>
+      <p>$$\text{Floating Payment} = \$ 30,000 \times 0.502778 = \mathbf{\text{US\$ } 15,083.33 \approx \text{US\$ } 15,083}$$[cite: 10]</p>
+      <p><small><em>(Note: Using rounded factor $0.503$, payment $= \mathbf{\text{US\$ } 15,090}$)</em></small>[cite: 10]</p>
+
+      <h4>(iii) Net Settlement Payment</h4>
+      <p>$$\text{Net Amount Payable by Fixed Payer} = \text{Fixed Payment} - \text{Floating Receipt}$$[cite: 10]</p>
+      <p>$$\text{Net Payment} = \$ 20,000 - \$ 15,083 = \mathbf{\text{US\$ } 4,917} \quad (\text{or } \$ 20,000 - \$ 15,090 = \mathbf{\text{US\$ } 4,910})[cite: 10]$$</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH12_TYK_PR_05",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Interest Rate Risk Management",
+    // placement: 7,
+    marks: 8,
+    question_html: `
+      <p>Derivative Bank entered into a plain vanilla Overnight Index Swap (OIS) on a principal of ₹ 10 crores, agreeing to receive MIBOR overnight floating rate against a fixed payment for 7 days commencing Tuesday, 3rd August 2010[cite: 10].</p>
+      <p>Daily MIBOR rates (Tuesday to Monday): 7.75%, 8.15%, 8.12%, 7.95%, 7.98% (Sat &amp; Sun &ndash; 2 days), 8.15% (Sunday is a holiday; 365-day basis)[cite: 10].</p>
+      <p>If Derivative Bank received ₹ 317 net on settlement, calculate the fixed rate of interest and interest under both legs (avoid decimals)[cite: 10].</p>
+    `,
+    solution_html: `
+      <h4>1. Daily Compounded Floating Interest Computation (365-day basis)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Day</th>
+              <th style="padding:6px; border:1px solid #ddd;">Opening Principal (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">MIBOR (%)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Days</th>
+              <th style="padding:6px; border:1px solid #ddd;">Daily Interest (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Closing Balance (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Tuesday</td><td>10,00,00,000</td><td>7.75%</td><td>1</td><td>$10\text{Cr} \times 0.0775 \times \frac{1}{365} = 21,233$</td><td>10,00,21,233</td></tr>
+            <tr><td>Wednesday</td><td>10,00,21,233</td><td>8.15%</td><td>1</td><td>$10,00,21,233 \times 0.0815 \times \frac{1}{365} = 22,334$</td><td>10,00,43,567</td></tr>
+            <tr><td>Thursday</td><td>10,00,43,567</td><td>8.12%</td><td>1</td><td>$10,00,43,567 \times 0.0812 \times \frac{1}{365} = 22,256$</td><td>10,00,65,823</td></tr>
+            <tr><td>Friday</td><td>10,00,65,823</td><td>7.95%</td><td>1</td><td>$10,00,65,823 \times 0.0795 \times \frac{1}{365} = 21,795$</td><td>10,00,87,618</td></tr>
+            <tr><td>Sat &amp; Sun</td><td>10,00,87,618</td><td>7.98%</td><td>2</td><td>$10,00,87,618 \times 0.0798 \times \frac{2}{365} = 43,764$</td><td>10,01,31,382</td></tr>
+            <tr><td>Monday</td><td>10,01,31,382</td><td>8.15%</td><td>1</td><td>$10,01,31,382 \times 0.0815 \times \frac{1}{365} = 22,358$</td><td>10,01,53,740</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td colspan="4">Total Floating Interest Received</td>
+              <td><strong>₹ 1,53,740</strong></td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>2. Fixed Leg Interest and Fixed Rate</h4>
+      <p>$$\text{Net Settlement Received} = \text{Floating Interest} - \text{Fixed Interest} = ₹ 317$$[cite: 10]</p>
+      <p>$$\text{Fixed Interest Paid} = ₹ 1,53,740 - ₹ 317 = \mathbf{₹ 1,53,423}$$[cite: 10]</p>
+      <p>$$\text{Fixed Rate } (r_{\text{fixed}}) = \frac{\text{Fixed Interest} \times 365}{\text{Principal} \times 7} \times 100$$[cite: 10]</p>
+      <p>$$r_{\text{fixed}} = \frac{₹ 1,53,423 \times 365}{₹ 10,00,00,000 \times 7} \times 100 = \frac{5,60,00,395}{70,00,00,000} \times 100 = \mathbf{7.9999\% \approx 8.00\%}$$[cite: 10]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH12_TYK_PR_06",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Interest Rate Risk Management",
+    // placement: 8,
+    marks: 8,
+    question_html: `
+      <p>A Inc. and B Inc. intend to borrow $ 200,000 and equivalent in Yen ($ 200,000 \times 120 = \text{¥ } 24,000,000$) respectively for 1 year[cite: 10]. Prevalent interest rates[cite: 10]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Company</th>
+              <th style="padding:6px; border:1px solid #ddd;">¥ Loan</th>
+              <th style="padding:6px; border:1px solid #ddd;">$ Loan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>A Inc.</td><td>5%</td><td>9%</td></tr>
+            <tr><td>B Inc.</td><td>8%</td><td>10%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Spot rate: $ 1 = ¥ 120[cite: 10]. Under a currency swap, B Inc. will pay A Inc. @ 1% over the ¥ Loan interest rate (i.e., 5% + 1% = 6%), and A Inc. will reimburse B Inc. interest to the extent of 9%[cite: 10]. Keeping exchange rates invariant, quantify the opportunity gain/loss resulting from the swap[cite: 10].</p>
+    `,
+    solution_html: `
+      <h4>1. Financial Evaluation for A Inc. (Desires $ 200,000 Loan)</h4>
+      <ul>
+        <li>A Inc. raises ¥ 24,000,000 loan locally @ 5%:
+          <br />$$\text{Interest to Japanese Lender} = \text{¥ } 24,000,000 \times 5\% = \text{¥ } 12,00,000 \text{ (or \$ 10,000)}$$[cite: 10]
+        </li>
+        <li>Reimburses B Inc. in USD @ 9%:
+          <br />$$\$ 200,000 \times 9\% = \$ 18,000 \text{ (or ¥ 21,60,000)}$$[cite: 10]
+        </li>
+        <li>Receives interest from B Inc. in Yen @ 6%:
+          <br />$$\text{¥ } 24,00,000 \times 6\% = \text{¥ } 14,40,000 \text{ (or \$ 12,000)}$$[cite: 10]
+        </li>
+        <li>$$\text{Net Interest Cost to A Inc.} = \$ 10,000 + \$ 18,000 - \$ 12,000 = \mathbf{\$ 16,000 \text{ (Effective Rate: 8\%)}}$$[cite: 10]</li>
+        <li>Cost without Swap (Direct $ Borrowing @ 9%) $= \$ 18,000$[cite: 10]</li>
+        <li>$$\text{Opportunity Gain to A Inc.} = \$ 18,000 - \$ 16,000 = \mathbf{\$ 2,000 \text{ (1.00\% of principal)}}$$[cite: 10]</li>
+      </ul>
+
+      <h4>2. Financial Evaluation for B Inc. (Desires ¥ 24,000,000 Loan)</h4>
+      <ul>
+        <li>B Inc. raises $ 200,000 loan locally @ 10%:
+          <br />$$\text{Interest to US Lender} = \$ 200,000 \times 10\% = \$ 20,000 \text{ (or ¥ 24,00,000)}$$[cite: 10]
+        </li>
+        <li>Pays A Inc. in Yen @ 6%:
+          <br />$$\text{¥ } 24,000,000 \times 6\% = \text{¥ } 14,40,000 \text{ (or \$ 12,000)}$$[cite: 10]
+        </li>
+        <li>Receives interest from A Inc. in USD @ 9%:
+          <br />$$\$ 200,000 \times 9\% = \$ 18,000 \text{ (or ¥ 21,60,000)}$$[cite: 10]
+        </li>
+        <li>$$\text{Net Interest Cost to B Inc.} = \text{¥ } 24,00,000 + \text{¥ } 14,40,000 - \text{¥ } 21,60,000 = \mathbf{\text{¥ } 16,80,000 \text{ (Effective Rate: 7\%)}}$$[cite: 10]</li>
+        <li>Cost without Swap (Direct ¥ Borrowing @ 8%) $= \text{¥ } 19,20,000$[cite: 10]</li>
+        <li>$$\text{Opportunity Gain to B Inc.} = \text{¥ } 19,20,000 - \text{¥ } 16,80,000 = \mathbf{\text{¥ } 2,40,000 \text{ (or \$ 2,000 / 1.00\% of principal)}}$$[cite: 10]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH12_TYK_PR_07",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Interest Rate Risk Management",
+    // placement: 9,
+    marks: 8,
+    question_html: `
+      <p>A textile manufacturer took a floating-rate loan of ₹ 40,00,000 on 01.04.2012 (inception rate: 8.5% p.a., interest payable annually on 31st March)[cite: 10]. In October 2012, projected interest rates are: 31.03.2013 = 8.75%; 31.03.2014 = 10.00%; 31.03.2015 = 10.50%; 31.03.2016 = 7.75%[cite: 10].</p>
+      <ol type="i">
+        <li>Show how the borrower can hedge risk using an Option Cap pegged at 8.50% p.a.[cite: 10]</li>
+        <li>Assume an upfront premium of 0.75% is paid on 01.10.2012, and actual interest rates on due dates turn out to be: 31.03.2013 = 10.20%; 31.03.2014 = 11.50%; 31.03.2015 = 9.25%; 31.03.2016 = 8.25%[cite: 10]. Show the execution and settlement schedule[cite: 10].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Structure of the Option Cap Hedge</h4>
+      <p>To ensure interest cost does not exceed 8.50% p.a., the borrower purchases an Interest Rate Cap with the following terms[cite: 10]:</p>
+      <ul>
+        <li>Notional Principal: ₹ 40,00,000[cite: 10]</li>
+        <li>Cap Strike Rate ($r_c$): 8.50% p.a.[cite: 10]</li>
+        <li>Reference Rate: Floating rate applicable to the loan[cite: 10]</li>
+        <li>Settlement Frequency: Annually on 31st March through 31.03.2016[cite: 10]</li>
+        <li>Upfront Premium Paid on 01.10.2012:
+          <br />$$₹ 40,00,000 \times 0.75\% = \mathbf{₹ 30,000}$$[cite: 10]
+        </li>
+      </ul>
+
+      <h4>(ii) Settlement on Respective Interest Due Dates</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Settlement Date</th>
+              <th style="padding:6px; border:1px solid #ddd;">Actual Interest Rate</th>
+              <th style="padding:6px; border:1px solid #ddd;">Cap Strike Rate</th>
+              <th style="padding:6px; border:1px solid #ddd;">Rate Differential $\text{Max}(0, r - r_c)$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Compensation Received by Borrower (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>31.03.2013</td>
+              <td>10.20%</td>
+              <td>8.50%</td>
+              <td>$10.20\% - 8.50\% = 1.70\%$</td>
+              <td>$₹ 40,00,000 \times 1.70\% = \mathbf{₹ 68,000}$[cite: 10]</td>
+            </tr>
+            <tr>
+              <td>31.03.2014</td>
+              <td>11.50%</td>
+              <td>8.50%</td>
+              <td>$11.50\% - 8.50\% = 3.00\%$</td>
+              <td>$₹ 40,00,000 \times 3.00\% = \mathbf{₹ 1,20,000}$[cite: 10]</td>
+            </tr>
+            <tr>
+              <td>31.03.2015</td>
+              <td>9.25%</td>
+              <td>8.50%</td>
+              <td>$9.25\% - 8.50\% = 0.75\%$</td>
+              <td>$₹ 40,00,000 \times 0.75\% = \mathbf{₹ 30,000}$[cite: 10]</td>
+            </tr>
+            <tr>
+              <td>31.03.2016</td>
+              <td>8.25%</td>
+              <td>8.50%</td>
+              <td>$8.25\% < 8.50\% \implies 0.00\%$</td>
+              <td><strong>Nil (Cap Lapses)</strong>[cite: 10]</td>
+            </tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td colspan="4">Total Compensation Received</td>
+              <td><strong>₹ 2,18,000</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>By paying the upfront premium of ₹ 30,000 once, the borrower secures <strong>₹ 2,18,000</strong> in cash compensation, effectively capping borrowing costs at 8.50% while enjoying lower interest costs in Year 4 when rates fall[cite: 10].</p>
+    `
+  },
+  // chapter13
+  {
+    question_id: "AFM_ICAIBOOK_CH13_TYK_PR_07",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Business Valuation",
+    // placement: 14,
+    marks: 10,
+    question_html: `
+      <p>Following information is available in respect of XYZ Ltd., which is expected to grow at a higher rate for 4 years, after which the growth rate will stabilize at a lower level[cite: 11]:</p>
+      <p><strong>Base Year Information:</strong></p>
+      <ul>
+        <li>Revenue: ₹ 2,000 crores[cite: 11]</li>
+        <li>EBIT: ₹ 300 crores[cite: 11]</li>
+        <li>Capital Expenditure: ₹ 280 crores[cite: 11]</li>
+        <li>Depreciation: ₹ 200 crores[cite: 11]</li>
+      </ul>
+      <p><strong>Parameters for High Growth and Stable Growth Periods:</strong></p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">High Growth (Years 1&ndash;4)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Stable Growth (Perpetuity)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Growth in Revenue &amp; EBIT</td><td>20%</td><td>10%</td></tr>
+            <tr><td>Growth in Capex &amp; Depreciation</td><td>20%</td><td>Capex offset by Depreciation</td></tr>
+            <tr><td>Risk-free Rate ($R_f$)</td><td>10%</td><td>9%</td></tr>
+            <tr><td>Equity Beta (&beta;)</td><td>1.15</td><td>1.00</td></tr>
+            <tr><td>Market Risk Premium</td><td>6%</td><td>5%</td></tr>
+            <tr><td>Pre-tax Cost of Debt</td><td>13%</td><td>12.86%</td></tr>
+            <tr><td>Debt-to-Equity Ratio</td><td>1 : 1</td><td>2 : 3</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Working capital is 25% of revenue for all time periods, and the corporate tax rate is 30%[cite: 11]. What is the value of the firm?[cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Cost of Capital (WACC) Computations</h4>
+      <ul>
+        <li><strong>High Growth Phase (Years 1 to 4):</strong>
+          <br />$$K_e = 10\% + 1.15(6\%) = 10\% + 6.90\% = \mathbf{16.90\%}$$[cite: 11]
+          <br />$$\text{Post-tax } K_d = 13\% \times (1 - 0.30) = \mathbf{9.10\%}$$[cite: 11]
+          <br />$$\text{Debt-to-Equity Ratio} = 1:1 \implies \text{Weights} = 0.50 \text{ Equity}, 0.50 \text{ Debt}$$[cite: 11]
+          <br />$$\text{WACC}_{\text{High}} = (16.90\% \times 0.50) + (9.10\% \times 0.50) = 8.45\% + 4.55\% = \mathbf{13.00\%}$$[cite: 11]
+        </li>
+        <li><strong>Stable Growth Phase (Year 5 onwards):</strong>
+          <br />$$K_e = 9\% + 1.00(5\%) = \mathbf{14.00\%}$$[cite: 11]
+          <br />$$\text{Post-tax } K_d = 12.86\% \times (1 - 0.30) = \mathbf{9.00\%}$$[cite: 11]
+          <br />$$\text{Debt-to-Equity Ratio} = 2:3 \implies \text{Weights} = 0.60 \text{ Equity}, 0.40 \text{ Debt}$$[cite: 11]
+          <br />$$\text{WACC}_{\text{Stable}} = (14.00\% \times 0.60) + (9.00\% \times 0.40) = 8.40\% + 3.60\% = \mathbf{12.00\%}$$[cite: 11]
+        </li>
+      </ul>
+
+      <h4>2. Forecasted Free Cash Flows to Firm (FCFF) (₹ in crores)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Year 1</th>
+              <th style="padding:6px; border:1px solid #ddd;">Year 2</th>
+              <th style="padding:6px; border:1px solid #ddd;">Year 3</th>
+              <th style="padding:6px; border:1px solid #ddd;">Year 4</th>
+              <th style="padding:6px; border:1px solid #ddd;">Terminal Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Revenue</td><td>2,400.00</td><td>2,880.00</td><td>3,456.00</td><td>4,147.20</td><td>4,561.92</td></tr>
+            <tr><td>EBIT</td><td>360.00</td><td>432.00</td><td>518.40</td><td>622.08</td><td>684.29</td></tr>
+            <tr><td>EAT / NOPAT (70%)</td><td>252.00</td><td>302.40</td><td>362.88</td><td>435.46</td><td>479.00</td></tr>
+            <tr><td>Capex less Depreciation</td><td>96.00</td><td>115.20</td><td>138.24</td><td>165.89</td><td>0.00</td></tr>
+            <tr><td>Change in Working Capital (25% &Delta;Rev)</td><td>100.00</td><td>120.00</td><td>144.00</td><td>172.80</td><td>103.68</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td>Free Cash Flow (FCFF)</td>
+              <td>56.00</td>
+              <td>67.20</td>
+              <td>80.64</td>
+              <td>96.77</td>
+              <td>375.32</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>3. Valuation of the Firm</h4>
+      <ul>
+        <li>$$\text{PV of Explicit FCFFs @ 13%} = (56 \times 0.885) + (67.20 \times 0.783) + (80.64 \times 0.693) + (96.77 \times 0.613)$$[cite: 11]
+          <br />$$\text{PV} = 49.56 + 52.62 + 55.88 + 59.32 = \mathbf{₹ 217.38 \text{ Crores}}$$[cite: 11]
+        </li>
+        <li>$$\text{Terminal Value at Year 4} = \frac{\text{Terminal FCFF}}{\text{WACC}_{\text{Stable}} - g_{\text{Stable}}} = \frac{₹ 375.32 \text{ crores}}{0.12 - 0.10} = \mathbf{₹ 18,766.00 \text{ Crores}}$$[cite: 11]</li>
+        <li>$$\text{PV of Terminal Value} = \frac{₹ 18,766.00 \text{ crores}}{(1.13)^4} = ₹ 18,766.00 \times 0.613 = \mathbf{₹ 11,503.56 \text{ Crores}}$$[cite: 11]</li>
+      </ul>
+      <p>$$\text{Total Value of the Firm} = ₹ 217.38 \text{ crores} + ₹ 11,503.56 \text{ crores} = \mathbf{₹ 11,720.94 \text{ Crores}}$$[cite: 11]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH13_TYK_PR_08",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Business Valuation",
+    // placement: 15,
+    marks: 10,
+    question_html: `
+      <p>Following information is given in respect of WXY Ltd., which is expected to grow at a rate of 20% p.a. for the next 3 years, after which the growth rate will stabilize at 8% p.a. in perpetuity[cite: 11]:</p>
+      <p><strong>Base Year (FY 2013&ndash;14) Figures:</strong></p>
+      <ul>
+        <li>Revenues: ₹ 7,500 Crores[cite: 11]</li>
+        <li>Cost of Goods Sold (COGS): ₹ 3,000 Crores[cite: 11]</li>
+        <li>Operating Expenses (including Depreciation): ₹ 2,250 Crores[cite: 11]</li>
+        <li>Capital Expenditure: ₹ 750 Crores[cite: 11]</li>
+        <li>Depreciation: ₹ 600 Crores[cite: 11]</li>
+      </ul>
+      <p>During the high-growth period, revenues and EBIT will grow at 20% p.a., and capital expenditure net of depreciation will grow at 15% p.a.[cite: 11] From Year 4 onwards, revenues and EBIT grow at 8% p.a. and incremental capex is offset by depreciation[cite: 11]. Working capital requirement is 25% of revenues[cite: 11].</p>
+      <p>WACC is 15% and corporate income tax rate is 30%[cite: 11]. Estimate the value of WXY Ltd. using the FCFF &amp; WACC methodology[cite: 11].</p>
+      <p><em>(PVIF @ 15%: Y1 = 0.8696, Y2 = 0.7561, Y3 = 0.6575)</em>[cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Base Year Analysis (₹ in Crores)</h4>
+      <ul>
+        <li>$$\text{Base EBIT} = ₹ 7,500 - ₹ 3,000 - ₹ 2,250 = \mathbf{₹ 2,250 \text{ Crores}}$$[cite: 11]</li>
+        <li>$$\text{Base Net Capex (Capex - Dep.)} = ₹ 750 - ₹ 600 = \mathbf{₹ 150 \text{ Crores}}$$[cite: 11]</li>
+      </ul>
+
+      <h4>2. Forecasted Free Cash Flows to Firm (FCFF) (₹ in Crores)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Year 1</th>
+              <th style="padding:6px; border:1px solid #ddd;">Year 2</th>
+              <th style="padding:6px; border:1px solid #ddd;">Year 3</th>
+              <th style="padding:6px; border:1px solid #ddd;">Terminal Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Revenues (+20% / +8%)</td><td>9,000.00</td><td>10,800.00</td><td>12,960.00</td><td>13,996.80</td></tr>
+            <tr><td>EBIT (+20% / +8%)</td><td>2,700.00</td><td>3,240.00</td><td>3,888.00</td><td>4,199.04</td></tr>
+            <tr><td>EAT / NOPAT (70%)</td><td>1,890.00</td><td>2,268.00</td><td>2,721.60</td><td>2,939.33</td></tr>
+            <tr><td>Less: Capex &ndash; Depreciation (+15% / 0)</td><td>(172.50)</td><td>(198.38)</td><td>(228.13)</td><td>0.00</td></tr>
+            <tr><td>Less: &Delta;Working Capital (25% &Delta;Rev)</td><td>(375.00)</td><td>(450.00)</td><td>(540.00)</td><td>(259.20)</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td>Free Cash Flow to Firm (FCFF)</td>
+              <td>1,342.50</td>
+              <td>1,619.62</td>
+              <td>1,953.47</td>
+              <td>2,680.13</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>3. Valuation of WXY Ltd.</h4>
+      <ul>
+        <li>$$\text{PV of Explicit FCFFs @ 15%} = (1,342.50 \times 0.8696) + (1,619.62 \times 0.7561) + (1,953.47 \times 0.6575)$$[cite: 11]
+          <br />$$\text{PV} = 1,167.44 + 1,224.59 + 1,284.41 = \mathbf{₹ 3,676.44 \text{ Crores}}$$[cite: 11]
+        </li>
+        <li>$$\text{Terminal Value at Year 3} = \frac{\text{Terminal FCFF}}{\text{WACC} - g_n} = \frac{₹ 2,680.13 \text{ crores}}{0.15 - 0.08} = \frac{₹ 2,680.13}{0.07} = \mathbf{₹ 38,287.57 \text{ Crores}}$$[cite: 11]</li>
+        <li>$$\text{PV of Terminal Value} = \frac{₹ 38,287.57 \text{ crores}}{(1.15)^3} = ₹ 38,287.57 \times 0.6575 = \mathbf{₹ 25,174.08 \text{ Crores}}$$[cite: 11]</li>
+      </ul>
+      <p>$$\text{Total Value of WXY Ltd.} = ₹ 3,676.44 \text{ crores} + ₹ 25,174.08 \text{ crores} = \mathbf{₹ 28,850.52 \text{ Crores}}$$[cite: 11]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH13_TYK_PR_09",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Business Valuation",
+    // placement: 16,
+    marks: 6,
+    question_html: `
+      <p>With the help of the following information of Jatayu Limited, compute the Economic Value Added (EVA)[cite: 11]:</p>
+      <ul>
+        <li>Capital Structure: Equity Capital = ₹ 160 Lakhs, Reserves &amp; Surplus = ₹ 140 Lakhs, 10% Debentures = ₹ 400 Lakhs[cite: 11]</li>
+        <li>Cost of Equity = 14%[cite: 11]</li>
+        <li>Financial Leverage = 1.5 times[cite: 11]</li>
+        <li>Income Tax Rate = 30%[cite: 11]</li>
+      </ul>
+    `,
+    solution_html: `
+      <h4>1. Operating Profit (PBIT) Determination</h4>
+      <ul>
+        <li>$$\text{Interest on 10% Debentures} = ₹ 400 \text{ lakhs} \times 10\% = \mathbf{₹ 40 \text{ lakhs}}$$[cite: 11]</li>
+        <li>$$\text{Financial Leverage} = \frac{\text{PBIT}}{\text{PBT}} = \frac{\text{PBIT}}{\text{PBIT} - \text{Interest}} = 1.5$$[cite: 11]</li>
+        <li>$$1.5(\text{PBIT} - 40) = \text{PBIT} \implies 1.5\text{PBIT} - 60 = \text{PBIT} \implies 0.5\text{PBIT} = 60$$[cite: 11]</li>
+        <li>$$\text{PBIT} = \frac{60}{0.5} = \mathbf{₹ 120 \text{ lakhs}}$$[cite: 11]</li>
+        <li>$$\text{NOPAT} = \text{PBIT} \times (1 - T) = ₹ 120 \text{ lakhs} \times (1 - 0.30) = \mathbf{₹ 84 \text{ lakhs}}$$[cite: 11]</li>
+      </ul>
+
+      <h4>2. Weighted Average Cost of Capital (WACC)</h4>
+      <p>Total Capital Employed $= ₹ 160 + ₹ 140 + ₹ 400 = \mathbf{₹ 700 \text{ lakhs}}$ (Equity Funds = ₹ 300 lakhs, Debt = ₹ 400 lakhs)[cite: 11].</p>
+      <p>$$\text{WACC} = \left(14\% \times \frac{300}{700}\right) + \left[10\%(1 - 0.30) \times \frac{400}{700}\right] = 6.00\% + 4.00\% = \mathbf{10.00\%}$$[cite: 11]</p>
+
+      <h4>3. Economic Value Added (EVA)</h4>
+      <p>$$\text{Capital Charge} = \text{Total Capital} \times \text{WACC} = ₹ 700 \text{ lakhs} \times 10\% = \mathbf{₹ 70 \text{ lakhs}}$$[cite: 11]</p>
+      <p>$$\text{EVA} = \text{NOPAT} - \text{Capital Charge} = ₹ 84 \text{ lakhs} - ₹ 70 \text{ lakhs} = \mathbf{₹ 14 \text{ lakhs}}$$[cite: 11]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH13_TYK_PR_10",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Business Valuation",
+    // placement: 17,
+    marks: 6,
+    question_html: `
+      <p>RST Ltd.'s current financial year's income statement reported its net income after tax as ₹ 25,00,000 (tax rate: 30%)[cite: 11]. Capital structure[cite: 11]:</p>
+      <ul>
+        <li>11% Debt: ₹ 40 lakhs[cite: 11]</li>
+        <li>Equity (Share Capital + Reserves): ₹ 125 lakhs[cite: 11]</li>
+        <li>Invested Capital: ₹ 165 lakhs[cite: 11]</li>
+        <li>Equity Beta: 1.36; Risk-free rate: 8.5%; Market Risk Premium: 9%[cite: 11]</li>
+      </ul>
+      <p>Estimate: (i) WACC of RST Ltd., and (ii) Economic Value Added (EVA)[cite: 11].</p>
+    `,
+    solution_html: `
+      <h4>(i) Estimation of WACC</h4>
+      <ul>
+        <li>$$K_e = R_f + \beta(R_m - R_f) = 8.5\% + 1.36(9\%) = 8.5\% + 12.24\% = \mathbf{20.74\%}$$[cite: 11]</li>
+        <li>$$\text{Post-tax } K_d = 11\% \times (1 - 0.30) = \mathbf{7.70\%}$$[cite: 11]</li>
+        <li>$$\text{WACC} = \left(20.74\% \times \frac{125}{165}\right) + \left(7.70\% \times \frac{40}{165}\right) = 15.712\% + 1.867\% = \mathbf{17.58\%}$$[cite: 11]</li>
+      </ul>
+
+      <h4>(ii) Estimation of Economic Value Added (EVA)</h4>
+      <ul>
+        <li>$$\text{Taxable Income (EBT)} = \frac{₹ 25,00,000}{1 - 0.30} = \mathbf{₹ 35,71,429}$$[cite: 11]</li>
+        <li>$$\text{Interest on Debt} = ₹ 40,00,000 \times 11\% = ₹ 4,40,000$$[cite: 11]</li>
+        <li>$$\text{EBIT} = ₹ 35,71,429 + ₹ 4,40,000 = \mathbf{₹ 40,11,429}$$[cite: 11]</li>
+        <li>$$\text{NOPAT} = \text{EBIT} \times (1 - T) = ₹ 40,11,429 \times 0.70 = \mathbf{₹ 28,08,000}$$[cite: 11]</li>
+        <li>$$\text{Capital Charge} = \text{Invested Capital} \times \text{WACC} = ₹ 1,65,00,000 \times 17.58\% = \mathbf{₹ 29,00,700}$$[cite: 11]</li>
+      </ul>
+      <p>$$\text{EVA} = \text{NOPAT} - \text{Capital Charge} = ₹ 28,08,000 - ₹ 29,00,700 = \mathbf{- ₹ 92,700}$$[cite: 11]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH13_TYK_PR_11",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Business Valuation",
+    // placement: 18,
+    marks: 6,
+    question_html: `
+      <p>Tender Ltd. has earned a net profit of ₹ 15 lakhs after tax at 30%[cite: 11]. Interest cost charged was ₹ 10 lakhs[cite: 11]. Invested capital is ₹ 95 lakhs (55% debt)[cite: 11]. Target WACC is 13%[cite: 11]. Required:</p>
+      <ol type="a">
+        <li>Compute the operating income (EBIT)[cite: 11].</li>
+        <li>Compute the Economic Value Added (EVA)[cite: 11].</li>
+        <li>If Tender Ltd. has 6 lakh equity shares outstanding, how much dividend can it pay per share before enterprise value begins declining?[cite: 11]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(a) Operating Income (EBIT)</h4>
+      <ul>
+        <li>$$\text{EBT} = \frac{₹ 15,00,000}{1 - 0.30} = \mathbf{₹ 21,42,857}$$[cite: 11]</li>
+        <li>$$\text{EBIT} = \text{EBT} + \text{Interest} = ₹ 21,42,857 + ₹ 10,00,000 = \mathbf{₹ 31,42,857 \text{ (₹ 31.43 lakhs)}}$$[cite: 11]</li>
+      </ul>
+
+      <h4>(b) Economic Value Added (EVA)</h4>
+      <ul>
+        <li>$$\text{NOPAT} = \text{EBIT} \times (1 - T) = ₹ 31,42,857 \times 0.70 = \mathbf{₹ 22,00,000}$$[cite: 11]</li>
+        <li>$$\text{Capital Charge} = \text{Invested Capital} \times \text{WACC} = ₹ 95,00,000 \times 13\% = \mathbf{₹ 12,35,000}$$[cite: 11]</li>
+        <li>$$\text{EVA} = ₹ 22,00,000 - ₹ 12,35,000 = \mathbf{₹ 9,65,000}$$[cite: 11]</li>
+      </ul>
+
+      <h4>(c) Maximum Dividend Payable Per Share</h4>
+      <p>$$\text{Maximum Dividend Payable without Destroying Value} = \frac{\text{EVA}}{\text{Number of Equity Shares}} = \frac{₹ 9,65,000}{6,00,000 \text{ shares}} = \mathbf{₹ 1.6083 \text{ per share}}$$[cite: 11]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH13_TYK_PR_12",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Business Valuation",
+    // placement: 19,
+    marks: 8,
+    question_html: `
+      <p>The following information is given for three companies with identical invested capital of ₹ 1,00,000 and EBIT of ₹ 25,000 (tax rate: 35%)[cite: 11]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Orange</th>
+              <th style="padding:6px; border:1px solid #ddd;">Grape</th>
+              <th style="padding:6px; border:1px solid #ddd;">Apple</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Debt / Assets Ratio</td><td>0.80</td><td>0.50</td><td>0.20</td></tr>
+            <tr><td>Shares Outstanding</td><td>6,100</td><td>8,300</td><td>10,000</td></tr>
+            <tr><td>Pre-tax Cost of Debt</td><td>16%</td><td>13%</td><td>15%</td></tr>
+            <tr><td>Cost of Equity</td><td>26%</td><td>22%</td><td>20%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Calculate: (i) WACC, (ii) EVA, (iii) Best investment selection, (iv) Estimated share price if industry PE is 11x, and (v) Estimated market capitalization[cite: 11].</p>
+    `,
+    solution_html: `
+      <h4>(i) Weighted Average Cost of Capital (WACC)</h4>
+      <ul>
+        <li><strong>Orange:</strong> $\text{Post-tax } K_d = 16\%(1 - 0.35) = 10.40\% \implies \text{WACC} = (10.4\% \times 0.8) + (26\% \times 0.2) = \mathbf{13.52\%}$[cite: 11]</li>
+        <li><strong>Grape:</strong> $\text{Post-tax } K_d = 13\%(1 - 0.35) = 8.45\% \implies \text{WACC} = (8.45\% \times 0.5) + (22\% \times 0.5) = \mathbf{15.225\%}$[cite: 11]</li>
+        <li><strong>Apple:</strong> $\text{Post-tax } K_d = 15\%(1 - 0.35) = 9.75\% \implies \text{WACC} = (9.75\% \times 0.2) + (20\% \times 0.8) = \mathbf{17.95\%}$[cite: 11]</li>
+      </ul>
+
+      <h4>(ii) Economic Value Added (EVA)</h4>
+      <p>$$\text{NOPAT} = \text{EBIT} \times (1 - T) = ₹ 25,000 \times (1 - 0.35) = \mathbf{₹ 16,250}$$[cite: 11]</p>
+      <ul>
+        <li><strong>Orange:</strong> $₹ 16,250 - (13.52\% \times ₹ 1,00,000) = ₹ 16,250 - ₹ 13,520 = \mathbf{+₹ 2,730}$[cite: 11]</li>
+        <li><strong>Grape:</strong> $₹ 16,250 - (15.225\% \times ₹ 1,00,000) = ₹ 16,250 - ₹ 15,225 = \mathbf{+₹ 1,025}$[cite: 11]</li>
+        <li><strong>Apple:</strong> $₹ 16,250 - (17.95\% \times ₹ 1,00,000) = ₹ 16,250 - ₹ 17,950 = \mathbf{-₹ 1,700}$[cite: 11]</li>
+      </ul>
+
+      <h4>(iii) Investment Recommendation</h4>
+      <p><strong>Orange</strong> is the best investment alternative because it generates the highest EVA (₹ 2,730) and operates with the lowest WACC (13.52%)[cite: 11].</p>
+
+      <h4>(iv) &amp; (v) Estimated Share Price and Market Capitalization (PE = 11x)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Orange</th>
+              <th style="padding:6px; border:1px solid #ddd;">Grape</th>
+              <th style="padding:6px; border:1px solid #ddd;">Apple</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>EBIT (₹)</td><td>25,000</td><td>25,000</td><td>25,000</td></tr>
+            <tr><td>Interest (₹)</td><td>12,800</td><td>6,500</td><td>3,000</td></tr>
+            <tr><td>EBT (₹)</td><td>12,200</td><td>18,500</td><td>22,000</td></tr>
+            <tr><td>Tax @ 35% (₹)</td><td>4,270</td><td>6,475</td><td>7,700</td></tr>
+            <tr><td>Net Income / PAT (₹)</td><td>7,930</td><td>12,025</td><td>14,300</td></tr>
+            <tr><td>Shares Outstanding</td><td>6,100</td><td>8,300</td><td>10,000</td></tr>
+            <tr style="font-weight:bold;"><td>EPS (₹)</td><td>1.30</td><td>1.45</td><td>1.43</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;"><td>Estimated Stock Price (₹) [EPS &times; 11]</td><td><strong>14.30</strong></td><td><strong>15.95</strong></td><td><strong>15.73</strong></td></tr>
+            <tr style="font-weight:bold; background-color:#f9f9f9;"><td>Estimated Market Cap (₹)</td><td><strong>87,230</strong></td><td><strong>1,32,385</strong></td><td><strong>1,57,300</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH13_TYK_PR_13",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Business Valuation",
+    // placement: 20,
+    marks: 6,
+    question_html: `
+      <p>Delta Ltd. reports net income after tax of ₹ 15,00,000 (tax rate: 40%)[cite: 11]. Interest expense was ₹ 15,00,000[cite: 11]. Invested capital is ₹ 1,00,00,000 (60% debt) and target WACC is 12.6%[cite: 11].</p>
+      <ol type="i">
+        <li>Compute operating income (EBIT)[cite: 11].</li>
+        <li>What is Delta Ltd.'s Economic Value Added (EVA)?[cite: 11]</li>
+        <li>If there are 2,50,000 equity shares, how much can Delta pay in dividend per share before enterprise value decreases?[cite: 11] What happens if no dividend is paid?[cite: 11]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Operating Income (EBIT)</h4>
+      <ul>
+        <li>$$\text{Taxable Income (EBT)} = \frac{₹ 15,00,000}{1 - 0.40} = \mathbf{₹ 25,00,000}$$[cite: 11]</li>
+        <li>$$\text{EBIT} = \text{EBT} + \text{Interest} = ₹ 25,00,000 + ₹ 15,00,000 = \mathbf{₹ 40,00,000}$$[cite: 11]</li>
+      </ul>
+
+      <h4>(ii) Economic Value Added (EVA)</h4>
+      <ul>
+        <li>$$\text{NOPAT} = \text{EBIT} \times (1 - T) = ₹ 40,00,000 \times 0.60 = \mathbf{₹ 24,00,000}$$[cite: 11]</li>
+        <li>$$\text{Capital Charge} = \text{Invested Capital} \times \text{WACC} = ₹ 1,00,00,000 \times 12.6\% = \mathbf{₹ 12,60,000}$$[cite: 11]</li>
+        <li>$$\text{EVA} = ₹ 24,00,000 - ₹ 12,60,000 = \mathbf{₹ 11,40,000}$$[cite: 11]</li>
+      </ul>
+
+      <h4>(iii) Maximum Dividend and Retention Effect</h4>
+      <p>$$\text{Permissible Dividend per Share} = \frac{₹ 11,40,000}{2,50,000 \text{ shares}} = \mathbf{₹ 4.56 \text{ per share}}$$[cite: 11]</p>
+      <p>If Delta Ltd. does not pay dividends, the retained earnings will compound within the firm at returns above its cost of capital, accelerating business growth and expanding the total value of the company[cite: 11].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH13_TYK_PR_14",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Business Valuation",
+    // placement: 21,
+    marks: 6,
+    question_html: `
+      <p>XYZ Inc. is engaged in software consultancy business as on 31 December 2010 ($ in Millions)[cite: 11]:</p>
+      <ul>
+        <li>Income Statement: EBIT = 180.00, Interest = 18.00, EBT = 162.00, Tax @ 35% = 56.70, Net Income = 105.30[cite: 11]</li>
+        <li>Balance Sheet: Equity Stock (10 million shares @ $ 10 par) = 100, Reserves &amp; Surplus = 325, Loans = 180, Current Liabilities = 180, Total = 785[cite: 11]</li>
+        <li>Assets: Land &amp; Building = 200, Computers &amp; Software = 295, Current Assets (Debtors 150 + Bank 100 + Cash 40) = 290, Total = 785[cite: 11]</li>
+        <li>WACC = 12%; Market price per share = $ 50[cite: 11]</li>
+      </ul>
+      <p>Compute: (a) Economic Value Added (EVA), and (b) Market Value Added (MVA)[cite: 11].</p>
+    `,
+    solution_html: `
+      <h4>(a) Determination of Economic Value Added (EVA)</h4>
+      <ul>
+        <li>$$\text{NOPAT} = \text{EBIT} \times (1 - T) = \$ 180.00\text{m} \times (1 - 0.35) = \mathbf{\$ 117.00 \text{ Million}}$$[cite: 11]</li>
+        <li>$$\text{Invested Capital} = \text{Total Assets} - \text{Current Liabilities} = \$ 785\text{m} - \$ 180\text{m} = \mathbf{\$ 605.00 \text{ Million}}$$ (or Equity $100 + 325$ + Debt $180 = \$ 605\text{m}$)[cite: 11]</li>
+        <li>$$\text{Capital Charge} = \$ 605.00\text{m} \times 12\% = \mathbf{\$ 72.60 \text{ Million}}$$[cite: 11]</li>
+        <li>$$\text{Economic Value Added (EVA)} = \$ 117.00\text{m} - \$ 72.60\text{m} = \mathbf{\$ 44.40 \text{ Million}}$$[cite: 11]</li>
+      </ul>
+
+      <h4>(b) Determination of Market Value Added (MVA)</h4>
+      <ul>
+        <li>$$\text{Market Value of Equity} = 10 \text{ million shares} \times \$ 50 = \mathbf{\$ 500.00 \text{ Million}}$$[cite: 11]</li>
+        <li>$$\text{Book Value of Equity (Shareholders' Funds)} = \$ 100\text{m} + \$ 325\text{m} = \mathbf{\$ 425.00 \text{ Million}}$$[cite: 11]</li>
+        <li>$$\text{Market Value Added (MVA)} = \$ 500.00\text{m} - \$ 425.00\text{m} = \mathbf{\$ 75.00 \text{ Million}}$$[cite: 11]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH13_TYK_PR_15",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Business Valuation",
+    // placement: 22,
+    marks: 4,
+    question_html: `
+      <p>Herbal Gyan's earnings have averaged around ₹ 12 lakhs after tax, largely on the strength of its patented beauty cream[cite: 11]. The patent has 8 years to run, and Herbal has been offered ₹ 40 lakhs for the patent rights (unrecorded in books)[cite: 11]. Assets in books include ₹ 20 lakhs working capital and ₹ 80 lakhs PPE[cite: 11]. Cost of capital is 15%[cite: 11]. What is its Economic Value Added (EVA)?[cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Total Capital Employed (Including Unrecorded Patent)</h4>
+      <ul>
+        <li>Working Capital $= ₹ 20 \text{ lakhs}$[cite: 11]</li>
+        <li>Property, Plant, and Equipment $= ₹ 80 \text{ lakhs}$[cite: 11]</li>
+        <li>Market Value of Patent Rights $= ₹ 40 \text{ lakhs}$[cite: 11]</li>
+        <li>$$\text{Total Invested Capital} = ₹ 20 + ₹ 80 + ₹ 40 = \mathbf{₹ 140 \text{ lakhs}}$$[cite: 11]</li>
+      </ul>
+
+      <h4>2. Economic Value Added (EVA)</h4>
+      <p>$$\text{Capital Charge} = \text{Total Capital} \times \text{WACC} = ₹ 140 \text{ lakhs} \times 15\% = \mathbf{₹ 21 \text{ lakhs}}$$[cite: 11]</p>
+      <p>$$\text{EVA} = \text{After-tax Earnings} - \text{Capital Charge} = ₹ 12 \text{ lakhs} - ₹ 21 \text{ lakhs} = \mathbf{-₹ 9 \text{ lakhs}}$$[cite: 11]</p>
+      <p>Herbal Gyan has a negative EVA of <strong>-₹ 9 lakhs</strong>[cite: 11].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH13_TYK_PR_16",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Business Valuation",
+    // placement: 23,
+    marks: 6,
+    question_html: `
+      <p>Constant Engineering Ltd. has patented a green product with an unrecorded market value of ₹ 100 Crore[cite: 11]. Book Net Worth is ₹ 200 Crore and Long-term Debt is ₹ 400 Crore[cite: 11]. The product generates a Net Operating Profit After Tax (NOPAT) of ₹ 84 Crore[cite: 11]. 365-day Government bond yield is 10% and market portfolio return is 12%[cite: 11]. The stock moves in tandem with the market[cite: 11]. Calculate the Economic Value Added (EVA)[cite: 11].</p>
+    `,
+    solution_html: `
+      <h4>1. Cost of Equity and WACC</h4>
+      <ul>
+        <li>Because the stock moves in tandem with the market, Beta $\beta = 1.00$[cite: 11].</li>
+        <li>$$\text{Cost of Equity } (K_e) = R_f + \beta(R_m - R_f) = 10\% + 1.00(12\% - 10\%) = \mathbf{12.00\%}$$[cite: 11]</li>
+        <li>Cost of Debt ($K_d$) $= \mathbf{10.00\%}$[cite: 11]</li>
+        <li>Total Equity (including patent value) $= ₹ 200 \text{ cr (Net Worth)} + ₹ 100 \text{ cr (Patent)} = \mathbf{₹ 300 \text{ Crores}}$[cite: 11]</li>
+        <li>Debt $= \mathbf{₹ 400 \text{ Crores}}$[cite: 11]</li>
+        <li>$$\text{Total Invested Capital} = ₹ 300 + ₹ 400 = \mathbf{₹ 700 \text{ Crores}}$$[cite: 11]</li>
+        <li>$$\text{WACC} = \left(12\% \times \frac{300}{700}\right) + \left(10\% \times \frac{400}{700}\right) = 5.143\% + 5.714\% = \mathbf{10.857\% \approx 10.85\%}$$[cite: 11]</li>
+      </ul>
+
+      <h4>2. Economic Value Added (EVA)</h4>
+      <p>$$\text{Capital Charge} = ₹ 700 \text{ crores} \times 10.85\% = \mathbf{₹ 75.95 \text{ Crores}}$$ (or ₹ 76.00 crores @ 10.857%)[cite: 11]</p>
+      <p>$$\text{EVA} = \text{NOPAT} - \text{Capital Charge} = ₹ 84.00 \text{ crores} - ₹ 75.95 \text{ crores} = \mathbf{₹ 8.05 \text{ Crores}}$$[cite: 11]</p>
+    `
+  },
+  // chapter14
+  {
+    question_id: "AFM_ICAIBOOK_CH14_ILLUS_01",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 1,
+    marks: 10,
+    question_html: `
+      <p>The following is the Balance Sheet of XYZ Ltd. as on March 31st, 2013 (₹ in lakhs)[cite: 12]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Liabilities</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">Amount (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Assets</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">Amount (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>6 lakh Equity Shares of ₹ 100 each</td><td style="text-align:right;">600</td><td>Land &amp; Building</td><td style="text-align:right;">200</td></tr>
+            <tr><td>2 lakh 14% Preference Shares of ₹ 100 each</td><td style="text-align:right;">200</td><td>Plant &amp; Machinery</td><td style="text-align:right;">300</td></tr>
+            <tr><td>13% Debentures</td><td style="text-align:right;">200</td><td>Furniture &amp; Fixtures</td><td style="text-align:right;">50</td></tr>
+            <tr><td>Debenture Interest Accrued and Payable</td><td style="text-align:right;">26</td><td>Inventory</td><td style="text-align:right;">150</td></tr>
+            <tr><td>Loan from Bank</td><td style="text-align:right;">74</td><td>Sundry Debtors</td><td style="text-align:right;">70</td></tr>
+            <tr><td>Trade Creditors</td><td style="text-align:right;">300</td><td>Cash at Bank</td><td style="text-align:right;">130</td></tr>
+            <tr><td></td><td></td><td>Preliminary Expenses</td><td style="text-align:right;">10</td></tr>
+            <tr><td></td><td></td><td>Cost of Issue of Debentures</td><td style="text-align:right;">5</td></tr>
+            <tr><td></td><td></td><td>Profit &amp; Loss A/c (Loss)</td><td style="text-align:right;">485</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td>Total</td><td style="text-align:right;">1,400</td><td>Total</td><td style="text-align:right;">1,400</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The company has suffered sizable losses and the following reconstruction scheme is devised[cite: 12]:</p>
+      <ol type="i">
+        <li>Equity shares are reduced to ₹ 25 per share fully paid up[cite: 12].</li>
+        <li>Preference shares are reduced to equal number of 10% Preference shares of ₹ 50 each fully paid up[cite: 12].</li>
+        <li>Debenture holders agree to forego accrued interest and accept new 9% debentures for the principal[cite: 12].</li>
+        <li>Trade creditors agree to forego 25% of their claim and convert the balance into equity shares of ₹ 25 each[cite: 12].</li>
+        <li>To repay the bank loan and augment working capital, 6 lakh equity shares of ₹ 25 each are issued for cash, fully subscribed by existing shareholders[cite: 12].</li>
+        <li>Land &amp; Building is revalued at ₹ 250 lakhs, Plant &amp; Machinery is written down to ₹ 104 lakhs, and a provision of ₹ 5 lakhs is made for bad and doubtful debts[cite: 12].</li>
+      </ol>
+      <p>Show the impact of financial restructuring and prepare the post-reconstruction Balance Sheet[cite: 12].</p>
+    `,
+    solution_html: `
+      <h4>1. Total Reconstruction Surplus Generated (₹ in lakhs)</h4>
+      <ul>
+        <li>Reduction in Equity Share Capital: $6 \text{ lakhs} \times (₹ 100 - ₹ 25) = \mathbf{₹ 450 \text{ lakhs}}$[cite: 12]</li>
+        <li>Reduction in Preference Share Capital: $2 \text{ lakhs} \times (₹ 100 - ₹ 50) = \mathbf{₹ 100 \text{ lakhs}}$[cite: 12]</li>
+        <li>Waiver of Accrued Debenture Interest $= \mathbf{₹ 26 \text{ lakhs}}$[cite: 12]</li>
+        <li>Waiver by Trade Creditors ($25\% \times ₹ 300 \text{ lakhs}$) $= \mathbf{₹ 75 \text{ lakhs}}$[cite: 12]</li>
+        <li>Appreciation on revaluation of Land &amp; Building ($₹ 250 - ₹ 200$) $= \mathbf{₹ 50 \text{ lakhs}}$[cite: 12]</li>
+        <li><strong>Total Capital Reduction Reserve Created: ₹ 701 lakhs</strong>[cite: 12]</li>
+      </ul>
+
+      <h4>2. Utilization of Reconstruction Surplus (₹ in lakhs)</h4>
+      <ul>
+        <li>Writing off Profit &amp; Loss Debit Balance $= ₹ 485 \text{ lakhs}$[cite: 12]</li>
+        <li>Writing off Preliminary Expenses $= ₹ 10 \text{ lakhs}$[cite: 12]</li>
+        <li>Writing off Cost of Issue of Debentures $= ₹ 5 \text{ lakhs}$[cite: 12]</li>
+        <li>Provision for Bad and Doubtful Debts $= ₹ 5 \text{ lakhs}$[cite: 12]</li>
+        <li>Write-down of Plant &amp; Machinery ($₹ 300 - ₹ 104$) $= ₹ 196 \text{ lakhs}$[cite: 12]</li>
+        <li><strong>Total Amount Utilized: ₹ 701 lakhs</strong>[cite: 12]</li>
+      </ul>
+
+      <h4>3. Working Notes for New Capital and Cash</h4>
+      <ul>
+        <li>Shares issued to Trade Creditors ($75\% \times ₹ 300 \text{ lakhs} = ₹ 225 \text{ lakhs} / ₹ 25$) $= \mathbf{9 \text{ lakh shares}}$[cite: 12].</li>
+        <li>Total Post-Reconstruction Equity Shares:
+          <br />$$6 \text{ lakhs (existing)} + 9 \text{ lakhs (creditors)} + 6 \text{ lakhs (rights cash)} = \mathbf{21 \text{ lakh shares of ₹ 25 each}} = \mathbf{₹ 525 \text{ lakhs}}$$[cite: 12]
+        </li>
+        <li>Closing Bank Balance:
+          <br />$$₹ 130 \text{ lakhs (opening)} + ₹ 150 \text{ lakhs (issue of 6L shares @ 25)} - ₹ 74 \text{ lakhs (bank loan repaid)} = \mathbf{₹ 206 \text{ lakhs}}$$[cite: 12]
+        </li>
+      </ul>
+
+      <h4>4. Balance Sheet of XYZ Ltd. (Post-Reconstruction)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Liabilities</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">₹ in lakhs</th>
+              <th style="padding:6px; border:1px solid #ddd;">Assets</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">₹ in lakhs</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>21 lakh Equity Shares of ₹ 25 each</td><td style="text-align:right;">525</td><td>Land &amp; Building</td><td style="text-align:right;">250</td></tr>
+            <tr><td>2 lakh 10% Preference Shares of ₹ 50 each</td><td style="text-align:right;">100</td><td>Plant &amp; Machinery</td><td style="text-align:right;">104</td></tr>
+            <tr><td>9% Debentures</td><td style="text-align:right;">200</td><td>Furniture &amp; Fixtures</td><td style="text-align:right;">50</td></tr>
+            <tr><td></td><td></td><td>Inventory</td><td style="text-align:right;">150</td></tr>
+            <tr><td></td><td></td><td>Sundry Debtors (₹ 70 - ₹ 5)</td><td style="text-align:right;">65</td></tr>
+            <tr><td></td><td></td><td>Cash at Bank</td><td style="text-align:right;">206</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td>Total</td><td style="text-align:right;">825</td><td>Total</td><td style="text-align:right;">825</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_ILLUS_02",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 2,
+    marks: 6,
+    question_html: `
+      <p>Company X is contemplating the purchase of Company Y[cite: 12]. Company X has 3,00,000 shares selling at ₹ 30 per share (EPS ₹ 4.00)[cite: 12]. Company Y has 2,00,000 shares selling at ₹ 20 per share (EPS ₹ 2.25)[cite: 12]. Two alternative share exchange proposals are under consideration[cite: 12]:</p>
+      <ol type="i">
+        <li>In proportion to relative earnings per share of the two companies[cite: 12].</li>
+        <li>0.5 share of Company X for one share of Company Y (0.5 : 1)[cite: 12].</li>
+      </ol>
+      <p>Calculate: (i) Post-merger EPS under both alternatives, and (ii) The impact on EPS for shareholders of both companies[cite: 12].</p>
+    `,
+    solution_html: `
+      <h4>1. Total Combined Earnings</h4>
+      <ul>
+        <li>Company X: $3,00,000 \times ₹ 4.00 = ₹ 12,00,000$[cite: 12]</li>
+        <li>Company Y: $2,00,000 \times ₹ 2.25 = ₹ 4,50,000$[cite: 12]</li>
+        <li>Total Combined Earnings $= ₹ 12,00,000 + ₹ 4,50,000 = \mathbf{₹ 16,50,000}$[cite: 12]</li>
+      </ul>
+
+      <h4>2. Alternative (i): Exchange Ratio in Proportion to Relative EPS ($2.25 : 4$)</h4>
+      <ul>
+        <li>New shares issued to Company Y: $2,00,000 \times \frac{2.25}{4} = \mathbf{1,12,500 \text{ shares}}$[cite: 12]</li>
+        <li>Total shares post-merger $= 3,00,000 + 1,12,500 = \mathbf{4,12,500 \text{ shares}}$[cite: 12]</li>
+        <li>$$\text{Post-Merger EPS} = \frac{₹ 16,50,000}{4,12,500} = \mathbf{₹ 4.00}$$[cite: 12]</li>
+        <li>Equivalent EPS for Company Y shareholders: $₹ 4.00 \times \frac{2.25}{4} = \mathbf{₹ 2.25}$[cite: 12]</li>
+        <li><strong>Impact:</strong> Nil change in EPS for shareholders of both companies[cite: 12].</li>
+      </ul>
+
+      <h4>3. Alternative (ii): Exchange Ratio of 0.5 : 1</h4>
+      <ul>
+        <li>New shares issued to Company Y: $2,00,000 \times 0.5 = \mathbf{1,00,000 \text{ shares}}$[cite: 12]</li>
+        <li>Total shares post-merger $= 3,00,000 + 1,00,000 = \mathbf{4,00,000 \text{ shares}}$[cite: 12]</li>
+        <li>$$\text{Post-Merger EPS} = \frac{₹ 16,50,000}{4,00,000} = \mathbf{₹ 4.125}$$[cite: 12]</li>
+      </ul>
+
+      <h4>4. Impact on EPS Under Alternative (ii)</h4>
+      <ul>
+        <li><strong>Company X Shareholders:</strong>
+          <br />Post-merger EPS $= ₹ 4.125$; Pre-merger EPS $= ₹ 4.000$
+          <br />$$\text{EPS Accretion (Increase)} = ₹ 4.125 - ₹ 4.000 = \mathbf{+₹ 0.125}$$[cite: 12]
+        </li>
+        <li><strong>Company Y Shareholders:</strong>
+          <br />Equivalent Post-merger EPS $= ₹ 4.125 \times 0.5 = ₹ 2.0625$; Pre-merger EPS $= ₹ 2.250$
+          <br />$$\text{EPS Dilution (Decrease)} = ₹ 2.0625 - ₹ 2.2500 = \mathbf{-₹ 0.1875}$$[cite: 12]
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_ILLUS_03",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 3,
+    marks: 6,
+    question_html: `
+      <p>A Ltd. is studying the acquisition of B Ltd. by merger[cite: 12]. Financial data:</p>
+      <ul>
+        <li>A Ltd.: After-tax earnings = ₹ 10,00,000; Equity shares = 2,00,000; Market price per share = ₹ 75[cite: 12]</li>
+        <li>B Ltd.: After-tax earnings = ₹ 3,00,000; Equity shares = 50,000; Market price per share = ₹ 60[cite: 12]</li>
+      </ul>
+      <ol type="i">
+        <li>If the exchange ratio is set according to current market prices, what is the new EPS for A Ltd.?[cite: 12]</li>
+        <li>B Ltd. wants to ensure its EPS is not diminished by the merger. What exchange ratio is required to achieve this objective?[cite: 12]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) New EPS Based on Market Price Exchange Ratio</h4>
+      <ul>
+        <li>$$\text{Exchange Ratio} = \frac{\text{MPS}_B}{\text{MPS}_A} = \frac{₹ 60}{₹ 75} = \mathbf{0.80 \text{ (4 shares of A Ltd. for 5 shares of B Ltd.)}}$$[cite: 12]</li>
+        <li>New shares issued to B Ltd.: $50,00,000 \times 10^{-2} \times 0.80 = 50,000 \times 0.80 = \mathbf{40,000 \text{ shares}}$[cite: 12]</li>
+        <li>Total shares in A Ltd. post-merger $= 2,00,000 + 40,000 = \mathbf{2,40,000 \text{ shares}}$[cite: 12]</li>
+        <li>Total Combined Earnings $= ₹ 10,00,000 + ₹ 3,00,000 = ₹ 13,00,000$[cite: 12]</li>
+        <li>$$\text{New EPS of A Ltd.} = \frac{₹ 13,00,000}{2,40,000} = \mathbf{₹ 5.42 \text{ per share}}$$ (an increase from ₹ 5.00)[cite: 12]</li>
+      </ul>
+
+      <h4>(ii) Exchange Ratio to Protect B Ltd.'s EPS</h4>
+      <ul>
+        <li>$\text{Pre-merger EPS of A Ltd.} = \frac{₹ 10,00,000}{2,00,000} = \mathbf{₹ 5.00}$[cite: 12]</li>
+        <li>$\text{Pre-merger EPS of B Ltd.} = \frac{₹ 3,00,000}{50,000} = \mathbf{₹ 6.00}$[cite: 12]</li>
+        <li>$$\text{Exchange Ratio Based on Relative EPS} = \frac{\text{EPS}_B}{\text{EPS}_A} = \frac{₹ 6.00}{₹ 5.00} = \mathbf{1.20 \text{ (6 shares of A Ltd. for 5 shares of B Ltd.)}}$$[cite: 12]</li>
+        <li>Shares issued to B Ltd.: $50,000 \times 1.20 = \mathbf{60,000 \text{ shares}}$[cite: 12]</li>
+        <li>$$\text{Post-merger EPS of A Ltd.} = \frac{₹ 13,00,000}{2,00,000 + 60,000} = \frac{₹ 13,00,000}{2,60,000} = \mathbf{₹ 5.00}$$[cite: 12]</li>
+        <li>Equivalent EPS to B Ltd. shareholders: $₹ 5.00 \times 1.20 = \mathbf{₹ 6.00}$ (remains exactly unaffected)[cite: 12].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_ILLUS_04",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 4,
+    marks: 6,
+    question_html: `
+      <p>Simpson Ltd. is considering a merger with Wilson Ltd.[cite: 12] Financial parameters:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Simpson Ltd.</th>
+              <th style="padding:6px; border:1px solid #ddd;">Wilson Ltd.</th>
+              <th style="padding:6px; border:1px solid #ddd;">Combined Firm</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Current Earnings per year (₹)</td><td>2,00,000</td><td>1,00,000</td><td>3,50,000</td></tr>
+            <tr><td>Shares Outstanding</td><td>50,000</td><td>10,000</td><td>?</td></tr>
+            <tr><td>Earnings per share (₹)</td><td>4</td><td>10</td><td>?</td></tr>
+            <tr><td>Price per share (₹)</td><td>40</td><td>100</td><td>?</td></tr>
+            <tr><td>P/E Ratio</td><td>10</td><td>10</td><td>10</td></tr>
+            <tr><td>Value of Firm (₹)</td><td>20,00,000</td><td>10,00,000</td><td>35,00,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Both boards are considering three share exchange schemes: 20,000, 25,000, and 30,000 shares of Simpson Ltd. issued to Wilson Ltd. Construct a table demonstrating the potential impact of each scheme on each set of shareholders[cite: 12].</p>
+    `,
+    solution_html: `
+      <h4>Comparative Share Exchange Impact Schedule (Combined Value = ₹ 35,00,000)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Shares Issued to Wilson</th>
+              <th style="padding:6px; border:1px solid #ddd;">Exchange Ratio (per share)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Total Shares Post-Merger</th>
+              <th style="padding:6px; border:1px solid #ddd;">Fraction Owned by Wilson</th>
+              <th style="padding:6px; border:1px solid #ddd;">Value Owned by Wilson (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Fraction Owned by Simpson</th>
+              <th style="padding:6px; border:1px solid #ddd;">Value Owned by Simpson (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>20,000</td>
+              <td>2.0</td>
+              <td>70,000</td>
+              <td>2/7 (28.57%)</td>
+              <td><strong>10,00,000</strong></td>
+              <td>5/7 (71.43%)</td>
+              <td><strong>25,00,000</strong></td>
+            </tr>
+            <tr>
+              <td>25,000</td>
+              <td>2.5</td>
+              <td>75,000</td>
+              <td>1/3 (33.33%)</td>
+              <td><strong>11,66,667</strong></td>
+              <td>2/3 (66.67%)</td>
+              <td><strong>23,33,333</strong></td>
+            </tr>
+            <tr>
+              <td>30,000</td>
+              <td>3.0</td>
+              <td>80,00,000 &times; 10<sup>-2</sup></td>
+              <td>3/8 (37.50%)</td>
+              <td><strong>13,12,500</strong></td>
+              <td>5/8 (62.50%)</td>
+              <td><strong>21,87,500</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p><em>Pre-merger Standalone Values:</em> Wilson Ltd. = ₹ 10,00,000; Simpson Ltd. = ₹ 20,00,000[cite: 12]. Under all three schemes, the total synergy gain of ₹ 5,00,000 is apportioned differently between the two sets of shareholders without either group being worse off[cite: 12].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_TH_01",
+    question_type: "theory",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 5,
+    marks: 4,
+    question_html: `
+      <p>Explain synergy in the context of Mergers and Acquisitions.[cite: 12]</p>
+    `,
+    solution_html: `
+      <p>In mergers and acquisitions, <strong>synergy</strong> refers to the economic phenomenon where the performance and market value of the combined entity exceed the sum of the individual values of the two independent firms operating separately (&ldquo;$2 + 2 = 5$&rdquo;)[cite: 12]:</p>
+      <p>$$V(AB) > V(A) + V(B)$$[cite: 12]</p>
+      <h4>Sources of Synergy</h4>
+      <ul>
+        <li><strong>Operating Economies:</strong> Realized through economies of scale (lower per-unit fixed overheads) and economies of scope (sharing central services such as corporate finance, IT, legal, logistics, and marketing)[cite: 12].</li>
+        <li><strong>Complementary Resources:</strong> Generated when one firm's strengths (e.g., advanced R&amp;D or manufacturing prowess) complement another firm's capabilities (e.g., extensive pan-India retail distribution networks)[cite: 12].</li>
+        <li><strong>Financial Synergies:</strong> Achieved through an enlarged borrowing capacity, reduced weighted average cost of capital (WACC), and tax savings through set-off and carry-forward of unabsorbed business losses and depreciation[cite: 12].</li>
+        <li><strong>Enhanced Market Power:</strong> Eliminates duplicate competition, consolidates industry capacity, and enhances pricing power in the product market[cite: 12].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_TH_02",
+    question_type: "theory",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 6,
+    marks: 6,
+    question_html: `
+      <p>What is a takeover by reverse bid or Reverse Merger?[cite: 12]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept of Reverse Merger</h4>
+      <p>In a conventional acquisition, a larger and profitable company takes over a smaller target[cite: 12]. In contrast, a <strong>Reverse Merger</strong> (or takeover by reverse bid) occurs when a smaller company (or an unlisted healthy company) gains control over a larger company, or when a financially sound, profit-making company merges itself into a loss-making or &ldquo;sick&rdquo; corporate shell entity[cite: 12].</p>
+
+      <h4>2. Three Qualifying Tests for Reverse Takeover</h4>
+      <ol>
+        <li>The physical and operating assets of the transferor company are substantially greater than those of the transferee company[cite: 12].</li>
+        <li>The fresh equity capital issued by the transferee company to the shareholders of the transferor company exceeds its own original issued capital[cite: 12].</li>
+        <li>Effective management control of the combined corporate structure passes over to the shareholders/promoters of the transferor company[cite: 12].</li>
+      </ol>
+
+      <h4>3. Key Benefits</h4>
+      <ul>
+        <li><strong>Back-Door Listing:</strong> An unlisted private company obtains public listing status quickly without undergoing the prolonged, cumbersome, and expensive IPO process[cite: 12].</li>
+        <li><strong>Tax Shield:</strong> Enables the profitable business to set off its earnings against the accumulated business losses and unabsorbed depreciation of the loss-making shell company under Section 72A of the Income-tax Act[cite: 12].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_TH_03",
+    question_type: "theory",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 7,
+    marks: 6,
+    question_html: `
+      <p>What is an equity carve-out? How does it differ from a spin-off?[cite: 12]</p>
+    `,
+    solution_html: `
+      <h4>1. Meaning of Equity Carve-Out</h4>
+      <p>An <strong>Equity Carve-Out</strong> (also known as a split-off IPO) is a corporate restructuring method where a parent company separates a division or subsidiary and floats a percentage of its equity shares to the public through an Initial Public Offering (IPO), creating a newly listed public company while retaining controlling ownership[cite: 12].</p>
+
+      <h4>2. Differences Between Equity Carve-Out and Spin-Off</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd; width:25%;">Basis</th>
+              <th style="padding:6px; border:1px solid #ddd; width:38%;">Equity Carve-Out</th>
+              <th style="padding:6px; border:1px solid #ddd; width:37%;">Spin-Off</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">Cash Inflow</td>
+              <td style="padding:6px; border:1px solid #ddd;">Generates substantial cash inflow for the parent company from public subscription[cite: 12].</td>
+              <td style="padding:6px; border:1px solid #ddd;">Does not generate any cash inflow; shares are distributed to existing shareholders as a dividend-in-specie[cite: 12].</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">Shareholder Base</td>
+              <td style="padding:6px; border:1px solid #ddd;">Introduces a new set of outside public shareholders alongside the parent entity[cite: 12].</td>
+              <td style="padding:6px; border:1px solid #ddd;">Shares are allotted strictly to existing shareholders of the parent on a pro-rata basis; ownership remains identical[cite: 12].</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">Management Control</td>
+              <td style="padding:6px; border:1px solid #ddd;">The parent company retains majority equity control and board dominance over the subsidiary[cite: 12].</td>
+              <td style="padding:6px; border:1px solid #ddd;">The spun-off entity becomes an entirely independent company with its own autonomous management[cite: 12].</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_TH_04",
+    question_type: "theory",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 8,
+    marks: 4,
+    question_html: `
+      <p>Write a short note on Horizontal Merger and Vertical Merger.[cite: 12]</p>
+    `,
+    solution_html: `
+      <h4>1. Horizontal Merger</h4>
+      <ul>
+        <li>A merger between two commercial business entities operating in the <strong>same line of business and industry</strong> at the same stage of the production/distribution cycle[cite: 12].</li>
+        <li><em>Objective:</em> Achieves economies of scale, consolidates industrial production capacity, eliminates overlapping fixed overheads, and expands market share while neutralizing competition[cite: 12].</li>
+        <li><em>Example:</em> Merger between Vodafone India and Idea Cellular, or Airtel acquiring Loop Mobile[cite: 12].</li>
+      </ul>
+
+      <h4>2. Vertical Merger</h4>
+      <ul>
+        <li>A merger between two firms that operate in <strong>different stages of the same industrial supply chain</strong>, having an actual or potential buyer-seller relationship[cite: 12].</li>
+        <li><strong>Backward Integration:</strong> Merging with an upstream raw material or component supplier (e.g., an automobile manufacturer acquiring a tyre or auto-ancillary unit).</li>
+        <li><strong>Forward Integration:</strong> Merging with a downstream marketing, warehousing, or retail distribution channel (e.g., an oil refinery acquiring a network of retail petrol filling stations).</li>
+        <li><em>Objective:</em> Guarantees supply/offtake security, reduces inventory stock-out risks, and eliminates middleman margins and transaction friction[cite: 12].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_01",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 9,
+    marks: 6,
+    question_html: `
+      <p>B Ltd. is a successful company expanding by acquisitions[cite: 12]. Its PE ratio is 17 and it has 5,00,000 shares in issue priced at ₹ 12[cite: 12]. C Ltd. is suggested as a takeover target, which has a PE ratio of 10 and 1,00,000 shares in issue priced at ₹ 15[cite: 12].</p>
+      <p>Calculate the change in earnings per share (EPS) of B Ltd. if it acquires C Ltd. by issuing shares at its market price of ₹ 12 (assuming B Ltd.'s share price remains constant)[cite: 12].</p>
+    `,
+    solution_html: `
+      <h4>1. Pre-Merger Earnings and Valuations</h4>
+      <ul>
+        <li><strong>Target Company (C Ltd.):</strong>
+          <br />$$\text{Total Market Value} = 1,00,000 \times ₹ 15 = ₹ 15,00,000$$[cite: 12]
+          <br />$$\text{Total Earnings (EAT)} = \frac{\text{Market Value}}{\text{PE Ratio}} = \frac{₹ 15,00,000}{10} = \mathbf{₹ 1,50,000}$$[cite: 12]
+        </li>
+        <li><strong>Acquiring Company (B Ltd.):</strong>
+          <br />$$\text{Total Market Value} = 5,00,000 \times ₹ 12 = ₹ 60,00,000$$[cite: 12]
+          <br />$$\text{Total Earnings (EAT)} = \frac{₹ 60,00,000}{17} = \mathbf{₹ 3,52,941}$$[cite: 12]
+          <br />$$\text{Pre-Merger EPS of B Ltd.} = \frac{₹ 3,52,941}{5,00,000} = \mathbf{₹ 0.706 \approx ₹ 0.71}$$[cite: 12]
+        </li>
+      </ul>
+
+      <h4>2. Shares Issued and Post-Merger EPS</h4>
+      <ul>
+        <li>Purchase Consideration $= \text{Total Market Value of C Ltd.} = ₹ 15,00,000$[cite: 12]</li>
+        <li>$$\text{New Shares Issued by B Ltd.} = \frac{₹ 15,00,000}{₹ 12} = \mathbf{1,25,000 \text{ shares}}$$[cite: 12]</li>
+        <li>Total shares in B Ltd. post-merger $= 5,00,000 + 1,25,000 = \mathbf{6,25,000 \text{ shares}}$[cite: 12]</li>
+        <li>Total combined earnings $= ₹ 3,52,941 + ₹ 1,50,000 = \mathbf{₹ 5,02,941}$[cite: 12]</li>
+        <li>$$\text{Post-Merger EPS of B Ltd.} = \frac{₹ 5,02,941}{6,25,000} = \mathbf{₹ 0.8047 \approx ₹ 0.80}$$[cite: 12]</li>
+      </ul>
+
+      <h4>3. Change in EPS</h4>
+      <p>$$\text{Increase in EPS} = ₹ 0.80 - ₹ 0.71 = \mathbf{+₹ 0.09 \text{ per share}}$$ (EPS increases due to the acquisition of a lower P/E firm)[cite: 12].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_02",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 10,
+    marks: 6,
+    question_html: `
+      <p>Elrond Limited plans to acquire Doom Limited[cite: 12]. Pre-merger details:</p>
+      <ul>
+        <li>Elrond Limited: Market price per share = ₹ 50; Outstanding shares = 20 lakhs[cite: 12]</li>
+        <li>Doom Limited: Market price per share = ₹ 25; Outstanding shares = 10 lakhs[cite: 12]</li>
+      </ul>
+      <p>The merger is expected to generate synergy gains with a present value of ₹ 200 lakhs[cite: 12]. The exchange ratio agreed to is 0.5 shares of Elrond for each share of Doom[cite: 12]. What is the true cost of the merger from the point of view of Elrond Limited?[cite: 12]</p>
+    `,
+    solution_html: `
+      <h4>1. Valuation of the Merged Entity</h4>
+      <ul>
+        <li>Standalone Value of Elrond Ltd. ($20 \text{ lakhs} \times ₹ 50$) $= ₹ 1,000 \text{ lakhs}$[cite: 12]</li>
+        <li>Standalone Value of Doom Ltd. ($10 \text{ lakhs} \times ₹ 25$) $= ₹ 250 \text{ lakhs}$[cite: 12]</li>
+        <li>Synergy Gains $= ₹ 200 \text{ lakhs}$[cite: 12]</li>
+        <li>$$\text{Total Post-Merger Value of Combined Firm } (V_{AB}) = 1,000 + 250 + 200 = \mathbf{₹ 1,450 \text{ lakhs}}$$[cite: 12]</li>
+      </ul>
+
+      <h4>2. Shareholding Ownership of Doom Ltd.</h4>
+      <ul>
+        <li>New shares issued to Doom Ltd. $= 10 \text{ lakhs} \times 0.5 = \mathbf{5 \text{ lakh shares}}$[cite: 12]</li>
+        <li>Total shares in merged firm $= 20 \text{ lakhs} + 5 \text{ lakhs} = \mathbf{25 \text{ lakh shares}}$[cite: 12]</li>
+        <li>$$\text{Proportion Owned by Doom Ltd. Shareholders} = \frac{5}{25} = \mathbf{20.00\%}$$[cite: 12]</li>
+        <li>$$\text{Market Value of Shares Received by Doom Ltd.} = 20\% \times ₹ 1,450 \text{ lakhs} = \mathbf{₹ 290 \text{ lakhs}}$$[cite: 12]</li>
+      </ul>
+
+      <h4>3. True Cost of Merger to Elrond Limited</h4>
+      <p>$$\text{True Cost} = \text{Value Received by Target Shareholders} - \text{Standalone Value of Target}$$[cite: 12]</p>
+      <p>$$\text{True Cost} = ₹ 290 \text{ lakhs} - ₹ 250 \text{ lakhs} = \mathbf{₹ 40 \text{ lakhs}}$$ (the economic premium surrendered)[cite: 12].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_03",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 11,
+    marks: 6,
+    question_html: `
+      <p>MK Ltd. is considering acquiring NN Ltd. with the following information (no synergy gains)[cite: 12]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Company</th>
+              <th style="padding:6px; border:1px solid #ddd;">EAT (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Equity Shares (Nos.)</th>
+              <th style="padding:6px; border:1px solid #ddd;">MPS (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>MK Ltd.</td><td>60,00,000</td><td>12,00,000</td><td>200.00</td></tr>
+            <tr><td>NN Ltd.</td><td>18,00,000</td><td>3,00,000</td><td>160.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ol type="i">
+        <li>Find the EPS of MK Ltd. after merger if shares are exchanged based on current market prices[cite: 12].</li>
+        <li>Find the exchange ratio so that shareholders of NN Ltd. would not be at a loss[cite: 12].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Post-Merger EPS Based on Market Price Ratio</h4>
+      <ul>
+        <li>$$\text{Exchange Ratio} = \frac{\text{MPS}_{NN}}{\text{MPS}_{MK}} = \frac{₹ 160}{₹ 200} = \mathbf{0.80 \text{ (4 shares of MK for 5 of NN)}}$$[cite: 12]</li>
+        <li>New shares issued to NN Ltd.: $3,00,000 \times 0.80 = \mathbf{2,40,000 \text{ shares}}$[cite: 12]</li>
+        <li>Total shares in MK Ltd. post-merger $= 12,00,000 + 2,40,000 = \mathbf{14,40,000 \text{ shares}}$[cite: 12]</li>
+        <li>Total combined earnings $= ₹ 60,00,000 + ₹ 18,00,000 = \mathbf{₹ 78,00,000}$[cite: 12]</li>
+        <li>$$\text{Post-Merger EPS} = \frac{₹ 78,00,000}{14,40,000} = \mathbf{₹ 5.42 \text{ per share}}$$ (Pre-merger EPS of MK was ₹ 5.00)[cite: 12]</li>
+      </ul>
+
+      <h4>(ii) Exchange Ratio to Ensure No Loss of Earnings to NN Ltd. Shareholders</h4>
+      <ul>
+        <li>Pre-merger EPS of MK Ltd. $= \frac{₹ 60,00,000}{12,00,000} = \mathbf{₹ 5.00}$[cite: 12]</li>
+        <li>Pre-merger EPS of NN Ltd. $= \frac{₹ 18,00,000}{3,00,000} = \mathbf{₹ 6.00}$[cite: 12]</li>
+        <li>$$\text{Exchange Ratio Based on Relative EPS} = \frac{\text{EPS}_{NN}}{\text{EPS}_{MK}} = \frac{₹ 6.00}{₹ 5.00} = \mathbf{1.20 \text{ (6 shares of MK for 5 of NN)}}$$[cite: 12]</li>
+        <li>New shares issued $= 3,00,000 \times 1.20 = \mathbf{3,60,000 \text{ shares}}$[cite: 12]</li>
+        <li>Total combined shares $= 12,00,000 + 3,60,000 = 15,60,000 \text{ shares}$[cite: 12]</li>
+        <li>$$\text{Post-Merger EPS of MK Ltd.} = \frac{₹ 78,00,000}{15,60,000} = \mathbf{₹ 5.00}$$[cite: 12]</li>
+        <li>Earnings to NN Ltd. shareholders: $3,60,000 \times ₹ 5.00 = \mathbf{₹ 18,00,000}$ (identical to pre-merger earnings)[cite: 12].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_04",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 12,
+    marks: 6,
+    question_html: `
+      <p>ABC Ltd. is intending to acquire XYZ Ltd. by merger[cite: 12]. Financial data:</p>
+      <ul>
+        <li>ABC Ltd.: Equity shares = 10,00,000; EAT = ₹ 50,00,000; MPS = ₹ 42[cite: 12]</li>
+        <li>XYZ Ltd.: Equity shares = 6,00,000; EAT = ₹ 18,00,000; MPS = ₹ 28[cite: 12]</li>
+      </ul>
+      <ol type="i">
+        <li>What is the present EPS of both companies?[cite: 12]</li>
+        <li>What would be the new EPS for ABC Ltd. if the exchange ratio is based on current market price?[cite: 12]</li>
+        <li>What should be the exchange ratio if XYZ Ltd. wants to ensure its shareholders' earnings remain unchanged?[cite: 12]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Pre-Merger EPS</h4>
+      <ul>
+        <li>$$\text{EPS}_{\text{ABC}} = \frac{₹ 50,00,000}{10,00,000} = \mathbf{₹ 5.00}$$[cite: 12]</li>
+        <li>$$\text{EPS}_{\text{XYZ}} = \frac{₹ 18,00,000}{6,00,000} = \mathbf{₹ 3.00}$$[cite: 12]</li>
+      </ul>
+
+      <h4>(ii) Post-Merger EPS Based on Market Price Exchange Ratio</h4>
+      <ul>
+        <li>$$\text{Exchange Ratio} = \frac{\text{MPS}_{\text{XYZ}}}{\text{MPS}_{\text{ABC}}} = \frac{₹ 28}{₹ 42} = \mathbf{\frac{2}{3} \approx 0.6667}$$[cite: 12]</li>
+        <li>Shares issued to XYZ Ltd.: $6,00,000 \times \frac{28}{42} = \mathbf{4,00,000 \text{ shares}}$[cite: 12]</li>
+        <li>Total shares in ABC Ltd. post-merger $= 10,00,000 + 4,00,000 = \mathbf{14,00,000 \text{ shares}}$[cite: 12]</li>
+        <li>$$\text{Post-Merger EPS} = \frac{₹ 50,00,000 + ₹ 18,00,000}{14,00,000} = \frac{₹ 68,00,000}{14,00,000} = \mathbf{₹ 4.86}$$[cite: 12]</li>
+      </ul>
+
+      <h4>(iii) Exchange Ratio to Maintain XYZ Ltd.'s Earnings</h4>
+      <ul>
+        <li>$$\text{Exchange Ratio on EPS Basis} = \frac{\text{EPS}_{\text{XYZ}}}{\text{EPS}_{\text{ABC}}} = \frac{₹ 3.00}{₹ 5.00} = \mathbf{0.60 \text{ (3 shares of ABC for 5 of XYZ)}}$$[cite: 12]</li>
+        <li>Shares issued: $6,00,000 \times 0.60 = \mathbf{3,60,000 \text{ shares}}$[cite: 12]</li>
+        <li>Total shares post-merger $= 10,00,000 + 3,60,000 = \mathbf{13,60,000 \text{ shares}}$[cite: 12]</li>
+        <li>$$\text{Post-Merger EPS} = \frac{₹ 68,00,000}{13,60,000} = \mathbf{₹ 5.00}$$[cite: 12]</li>
+        <li>Earnings to XYZ Ltd. shareholders: $3,60,000 \times ₹ 5.00 = \mathbf{₹ 18,00,000}$ (unchanged)[cite: 12].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_05",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 13,
+    marks: 8,
+    question_html: `
+      <p>The CEO of an acquiring company seeks to maintain the company's current EPS[cite: 12]. Current Net Profits of acquirer = ₹ 80.00 lakhs (PE = 10.5, MPS = ₹ 42)[cite: 12]. Target company has current income of ₹ 15.75 lakhs (PE = 10, MPS = ₹ 105)[cite: 12].</p>
+      <ol type="i">
+        <li>What is the maximum exchange ratio the CEO should offer to keep EPS at the current level?[cite: 12]</li>
+        <li>If the CEO borrows funds at 15% p.a. to buy out the target company in cash, how much cash can he offer to maintain the EPS? (Tax rate = 30%)[cite: 12].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>1. Pre-Merger Status</h4>
+      <ul>
+        <li>Acquirer Shares $= \frac{\text{Market Cap}}{\text{MPS}} = \frac{₹ 80 \text{ lakhs} \times 10.5}{₹ 42} = \frac{₹ 840 \text{ lakhs}}{₹ 42} = \mathbf{20 \text{ lakh shares}}$[cite: 12]</li>
+        <li>Acquirer Pre-Merger EPS $= \frac{₹ 80 \text{ lakhs}}{20 \text{ lakhs}} = \mathbf{₹ 4.00}$[cite: 12]</li>
+        <li>Target Shares $= \frac{₹ 15.75 \text{ lakhs} \times 10}{₹ 105} = \frac{₹ 157.50 \text{ lakhs}}{₹ 105} = \mathbf{1.50 \text{ lakh shares}}$[cite: 12]</li>
+        <li>Target Pre-Merger EPS $= \frac{₹ 15.75 \text{ lakhs}}{1.50 \text{ lakhs}} = \mathbf{₹ 10.50}$[cite: 12]</li>
+      </ul>
+
+      <h4>(i) Maximum Share Exchange Ratio to Maintain EPS</h4>
+      <p>$$\text{Maximum Exchange Ratio} = \frac{\text{Target EPS}}{\text{Acquirer EPS}} = \frac{₹ 10.50}{₹ 4.00} = \mathbf{2.625 \text{ shares of Acquirer for 1 Target share}}$$[cite: 12]</p>
+
+      <h4>(ii) Cash Buyout Financed by 15% Borrowings</h4>
+      <p>Let $x$ (₹ in lakhs) be the cash offered to the target company[cite: 12]:</p>
+      <p>$$\text{Post-tax Borrowing Cost} = 15\% \times (1 - 0.30) = 10.5\% = 0.105$$[cite: 12]</p>
+      <p>$$\text{Target Post-Merger EPS} = \frac{(₹ 80.00 + ₹ 15.75) - 0.105x}{20 \text{ lakh shares}} = ₹ 4.00$$[cite: 12]</p>
+      <p>$$95.75 - 0.105x = 80.00 \implies 0.105x = 15.75$$[cite: 12]</p>
+      <p>$$x = \frac{15.75}{0.105} = \mathbf{₹ 150.00 \text{ lakhs}}$$ (or ₹ 1.50 crores)[cite: 12].</p>
+      <p>The CEO can offer a maximum of <strong>₹ 150 lakhs in cash</strong> to maintain the current EPS of ₹ 4.00[cite: 12].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_06",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 14,
+    marks: 8,
+    question_html: `
+      <p>A Ltd. wants to acquire T Ltd. with a swap ratio of 1 : 2 (0.5 shares of A for 1 share of T)[cite: 12]. Data:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">A Ltd.</th>
+              <th style="padding:6px; border:1px solid #ddd;">T Ltd.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Profit after tax (₹)</td><td>18,00,000</td><td>3,60,000</td></tr>
+            <tr><td>Equity shares outstanding</td><td>6,00,000</td><td>1,80,000</td></tr>
+            <tr><td>EPS (₹)</td><td>3</td><td>2</td></tr>
+            <tr><td>PE Ratio</td><td>10 times</td><td>7 times</td></tr>
+            <tr><td>Market price per share (₹)</td><td>30</td><td>14</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Calculate: (i) Shares issued by A Ltd., (ii) Post-merger EPS of A Ltd., (iii) Equivalent EPS of T Ltd., (iv) Expected market price per share of A Ltd. (PE unchanged), and (v) Market value of the merged firm[cite: 12].</p>
+    `,
+    solution_html: `
+      <h4>(i) Number of Equity Shares Issued by A Ltd.</h4>
+      <p>$$\text{New Shares} = 1,80,000 \times 0.5 = \mathbf{90,000 \text{ shares}}$$</p>
+
+      <h4>(ii) EPS of A Ltd. After Acquisition</h4>
+      <p>$$\text{Total Earnings} = ₹ 18,00,000 + ₹ 3,60,000 = ₹ 21,60,000$$</p>
+      <p>$$\text{Total Shares} = 6,00,000 + 90,000 = 6,90,000 \text{ shares}$$</p>
+      <p>$$\text{Post-Merger EPS} = \frac{₹ 21,60,000}{6,90,000} = \mathbf{₹ 3.13 \text{ per share}}$$</p>
+
+      <h4>(iii) Equivalent EPS of T Ltd.</h4>
+      <p>$$\text{Equivalent EPS} = \text{Post-Merger EPS} \times \text{Swap Ratio} = ₹ 3.13 \times 0.5 = \mathbf{₹ 1.565 \approx ₹ 1.57}$$</p>
+
+      <h4>(iv) Expected Market Price per Share of A Ltd. (PE = 10 times)</h4>
+      <p>$$\text{Expected Market Price} = \text{Post-Merger EPS} \times \text{PE} = ₹ 3.13 \times 10 = \mathbf{₹ 31.30}$$</p>
+
+      <h4>(v) Market Value of the Merged Firm</h4>
+      <p>$$\text{Market Value} = 6,90,000 \text{ shares} \times ₹ 31.30 = \mathbf{₹ 2,15,97,000}$$</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_07",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 15,
+    marks: 8,
+    question_html: `
+      <p>The following information is provided for acquiring Firm Mark Limited and target Firm Mask Limited[cite: 12]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Firm Mark Limited</th>
+              <th style="padding:6px; border:1px solid #ddd;">Firm Mask Limited</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Earning after tax (₹)</td><td>2,000 lakhs</td><td>400 lakhs</td></tr>
+            <tr><td>Number of shares outstanding</td><td>200 lakhs</td><td>100 lakhs</td></tr>
+            <tr><td>P/E ratio</td><td>10 times</td><td>5 times</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Calculate: (i) Swap ratio based on current market prices, (ii) EPS of Mark Limited after acquisition, (iii) Expected market price (PE unchanged), (iv) Market value of the merged firm, and (v) Gain/loss for shareholders of both companies[cite: 12].</p>
+    `,
+    solution_html: `
+      <h4>1. Pre-Merger Status</h4>
+      <ul>
+        <li>$$\text{EPS}_{\text{Mark}} = \frac{₹ 2,000 \text{ lakhs}}{200 \text{ lakhs}} = ₹ 10; \quad \text{MPS}_{\text{Mark}} = ₹ 10 \times 10 = \mathbf{₹ 100}$$[cite: 12]</li>
+        <li>$$\text{EPS}_{\text{Mask}} = \frac{₹ 400 \text{ lakhs}}{100 \text{ lakhs}} = ₹ 4; \quad \text{MPS}_{\text{Mask}} = ₹ 4 \times 5 = \mathbf{₹ 20}$$[cite: 12]</li>
+      </ul>
+
+      <h4>(i) Swap Ratio Based on Market Prices</h4>
+      <p>$$\text{Swap Ratio} = \frac{\text{MPS}_{\text{Mask}}}{\text{MPS}_{\text{Mark}}} = \frac{₹ 20}{₹ 100} = \mathbf{0.20 \text{ (1 share of Mark for 5 of Mask)}}$$[cite: 12]</p>
+      <p>$$\text{New Shares Issued} = 100 \text{ lakhs} \times 0.20 = \mathbf{20 \text{ lakh shares}}$$[cite: 12]</p>
+
+      <h4>(ii) Post-Merger EPS of Mark Limited</h4>
+      <p>$$\text{Post-Merger EPS} = \frac{₹ 2,000 + ₹ 400}{200 + 20} = \frac{₹ 2,400 \text{ lakhs}}{220 \text{ lakhs}} = \mathbf{₹ 10.91 \text{ per share}}$$[cite: 12]</p>
+
+      <h4>(iii) Expected Market Price per Share (PE = 10 times)</h4>
+      <p>$$\text{Market Price} = ₹ 10.91 \times 10 = \mathbf{₹ 109.10}$$[cite: 12]</p>
+
+      <h4>(iv) Total Market Value of the Merged Firm</h4>
+      <p>$$\text{Market Value} = 220 \text{ lakh shares} \times ₹ 109.10 = \mathbf{₹ 24,002 \text{ lakhs \approx ₹ 240.02 Crores}}$$[cite: 12]</p>
+
+      <h4>(v) Gain / Loss for Shareholders</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Mark Limited</th>
+              <th style="padding:6px; border:1px solid #ddd;">Mask Limited</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Post-Merger Value (₹ Crores)</td><td>$200 \times 109.10 = \mathbf{218.20}$</td><td>$20 \times 109.10 = \mathbf{21.82}$</td></tr>
+            <tr><td>Pre-Merger Value (₹ Crores)</td><td>$200 \times 100.00 = 200.00$</td><td>$100 \times 20.00 = 20.00$</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td>Gain to Shareholders (₹ Crores)</td>
+              <td><strong>+ 18.20 Crores</strong></td>
+              <td><strong>+ 1.82 Crores</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_08",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 16,
+    marks: 8,
+    question_html: `
+      <p>XYZ Ltd. wants to acquire ABC Ltd. by exchanging 0.70 of its shares for each share of ABC Ltd.[cite: 12] Data:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">XYZ Ltd.</th>
+              <th style="padding:6px; border:1px solid #ddd;">ABC Ltd.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Equity shares outstanding</td><td>10,00,000</td><td>4,00,000</td></tr>
+            <tr><td>EPS (₹)</td><td>40</td><td>28</td></tr>
+            <tr><td>Market price per share (₹)</td><td>250</td><td>160</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ol type="i">
+        <li>Illustrate the impact of merger on EPS of both companies[cite: 12].</li>
+        <li>If ABC Ltd. management demands a 1:1 ratio, what is the gain from merger for ABC Ltd. (assuming XYZ Ltd.'s PE remains unchanged)?[cite: 12]</li>
+        <li>What will be the gain/loss to shareholders of XYZ Ltd. under a 1:1 ratio?[cite: 12]</li>
+        <li>Determine the maximum exchange ratio acceptable to shareholders of XYZ Ltd.[cite: 12]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>1. Pre-Merger Base Data</h4>
+      <ul>
+        <li>Total Earnings: XYZ Ltd. $= 10,00,000 \times ₹ 40 = ₹ 400 \text{ lakhs}$; ABC Ltd. $= 4,00,000 \times ₹ 28 = ₹ 112 \text{ lakhs}$[cite: 12]</li>
+        <li>$$\text{P/E Ratio of XYZ Ltd.} = \frac{₹ 250}{₹ 40} = \mathbf{6.25 \text{ times}}$$[cite: 12]</li>
+      </ul>
+
+      <h4>(i) Impact on EPS Under 0.70 : 1 Exchange Ratio</h4>
+      <ul>
+        <li>New shares issued to ABC Ltd. $= 4,00,000 \times 0.70 = 2,80,000 \text{ shares}$[cite: 12]</li>
+        <li>Total post-merger shares $= 10,00,000 + 2,80,000 = 12,80,000 \text{ shares}$[cite: 12]</li>
+        <li>$$\text{Post-Merger EPS} = \frac{₹ 400 \text{ lakhs} + ₹ 112 \text{ lakhs}}{12,80,000} = \frac{₹ 512 \text{ lakhs}}{12,80,000} = \mathbf{₹ 40.00}$$[cite: 12]</li>
+        <li>Equivalent EPS to ABC Ltd.: $₹ 40.00 \times 0.70 = \mathbf{₹ 28.00}$[cite: 12]</li>
+        <li><strong>Impact:</strong> <strong>Nil change</strong> for both sets of shareholders[cite: 12].</li>
+      </ul>
+
+      <h4>(ii) &amp; (iii) Impact Under 1 : 1 Exchange Ratio</h4>
+      <ul>
+        <li>Total shares $= 10,00,000 + 4,00,000 = 14,00,000 \text{ shares}$[cite: 12]</li>
+        <li>$$\text{Post-Merger EPS} = \frac{₹ 512 \text{ lakhs}}{14,00,000} = \mathbf{₹ 36.5714}$$[cite: 12]</li>
+        <li>$$\text{Post-Merger Market Price} = ₹ 36.5714 \times 6.25 = \mathbf{₹ 228.57}$$[cite: 12]</li>
+        <li><strong>Gain to ABC Ltd. Shareholders:</strong> $₹ 228.57 - ₹ 160.00 = \mathbf{+₹ 68.57 \text{ per share}}$[cite: 12]</li>
+        <li><strong>Loss to XYZ Ltd. Shareholders:</strong> $₹ 228.57 - ₹ 250.00 = \mathbf{-₹ 21.43 \text{ per share}}$[cite: 12]</li>
+      </ul>
+
+      <h4>(iv) Maximum Exchange Ratio Acceptable to XYZ Ltd.</h4>
+      <p>XYZ Ltd. shareholders will not accept dilution below their current aggregate market value of ₹ 2,500 lakhs ($10\text{L} \times ₹ 250$)[cite: 12]:</p>
+      <p>$$\text{Total Post-Merger Firm Value} = ₹ 512 \text{ lakhs} \times 6.25 = ₹ 3,200 \text{ lakhs}$$[cite: 12]</p>
+      <p>$$\text{Value Available to ABC Ltd. Shareholders} = ₹ 3,200 - ₹ 2,500 = ₹ 700 \text{ lakhs}$$[cite: 12]</p>
+      <p>$$\text{Max Shares to Issue} = \frac{₹ 700 \text{ lakhs}}{₹ 250} = \mathbf{2,80,000 \text{ shares}}$$[cite: 12]</p>
+      <p>$$\text{Maximum Acceptable Exchange Ratio} = \frac{2,80,000}{4,00,000} = \mathbf{0.70 \text{ shares of XYZ for 1 share of ABC}}$$[cite: 12]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_09",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 17,
+    marks: 6,
+    question_html: `
+      <p>XYZ Ltd. has 2,50,000 shares trading at ₹ 20 with EAT of ₹ 5,00,000[cite: 12]. ABC Ltd. has 1,25,000 shares trading at ₹ 10 with EAT of ₹ 1,25,000[cite: 12].</p>
+      <ol type="i">
+        <li>What are the pre-merger EPS and P/E ratios of both companies?[cite: 12]</li>
+        <li>If ABC Ltd.'s P/E ratio is 6.4, what is its current market price, the exchange ratio, and XYZ Ltd.'s post-merger EPS?[cite: 12]</li>
+        <li>What should be the exchange ratio if XYZ Ltd.'s pre-merger and post-merger EPS are to remain identical?[cite: 12]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Pre-Merger EPS and P/E Ratios</h4>
+      <ul>
+        <li>$$\text{EPS}_{\text{XYZ}} = \frac{₹ 5,00,000}{2,50,000} = \mathbf{₹ 2.00}; \quad \text{PE}_{\text{XYZ}} = \frac{₹ 20}{₹ 2} = \mathbf{10 \text{ times}}$$[cite: 12]</li>
+        <li>$$\text{EPS}_{\text{ABC}} = \frac{₹ 1,25,000}{1,25,000} = \mathbf{₹ 1.00}; \quad \text{PE}_{\text{ABC}} = \frac{₹ 10}{₹ 1} = \mathbf{10 \text{ times}}$$[cite: 12]</li>
+      </ul>
+
+      <h4>(ii) Scenario with ABC Ltd.'s P/E Ratio = 6.4</h4>
+      <ul>
+        <li>$$\text{Market Price of ABC Ltd.} = \text{EPS} \times \text{PE} = ₹ 1.00 \times 6.4 = \mathbf{₹ 6.40}$$[cite: 12]</li>
+        <li>$$\text{Exchange Ratio} = \frac{₹ 6.40}{₹ 20.00} = \mathbf{0.32 \text{ (or 1 share of XYZ for 3.125 shares of ABC)}}$$[cite: 12]</li>
+        <li>New shares issued to ABC Ltd. $= 1,25,000 \times 0.32 = 40,000 \text{ shares}$[cite: 12]</li>
+        <li>Total post-merger shares $= 2,50,000 + 40,00,000 \times 10^{-2} = \mathbf{2,90,000 \text{ shares}}$[cite: 12]</li>
+        <li>$$\text{Post-Merger EPS of XYZ Ltd.} = \frac{₹ 5,00,000 + ₹ 1,25,000}{2,90,000} = \frac{₹ 6,25,000}{2,90,000} = \mathbf{₹ 2.155 \approx ₹ 2.16}$$[cite: 12]</li>
+      </ul>
+
+      <h4>(iii) Exchange Ratio to Maintain XYZ Ltd.'s EPS @ ₹ 2.00</h4>
+      <ul>
+        <li>$$\text{Permissible Total Post-Merger Shares} = \frac{\text{Combined Earnings}}{\text{Target EPS}} = \frac{₹ 6,25,000}{₹ 2.00} = \mathbf{3,12,500 \text{ shares}}$$[cite: 12]</li>
+        <li>New shares to be issued $= 3,12,500 - 2,50,000 = \mathbf{62,500 \text{ shares}}$[cite: 12]</li>
+        <li>$$\text{Exchange Ratio} = \frac{62,500}{1,25,000} = \mathbf{0.50 \text{ (1 share of XYZ for 2 shares of ABC)}}$$[cite: 12]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_10",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 18,
+    marks: 8,
+    question_html: `
+      <p>Financial parameters for acquiring company Mani Ltd. and target company Ratnam Ltd.[cite: 12]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Mani Ltd.</th>
+              <th style="padding:6px; border:1px solid #ddd;">Ratnam Ltd.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Earnings after tax (₹ lakhs)</td><td>2,000</td><td>4,000</td></tr>
+            <tr><td>No. of shares outstanding (lakhs)</td><td>200</td><td>1,000</td></tr>
+            <tr><td>P/E ratio (times)</td><td>10</td><td>5</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Calculate: (i) Swap ratio based on current market prices, (ii) EPS of Mani Ltd. after acquisition, (iii) Expected market price per share if post-merger P/E drops by 10%, (iv) Market value of merged company, and (v) Gain/loss for shareholders of both entities[cite: 12].</p>
+    `,
+    solution_html: `
+      <h4>1. Pre-Merger Base Metrics</h4>
+      <ul>
+        <li>Mani Ltd.: $\text{EPS} = \frac{₹ 2,000}{200} = ₹ 10; \quad \text{MPS} = ₹ 10 \times 10 = \mathbf{₹ 100}$[cite: 12]</li>
+        <li>Ratnam Ltd.: $\text{EPS} = \frac{₹ 4,000}{1,000} = ₹ 4; \quad \text{MPS} = ₹ 4 \times 5 = \mathbf{₹ 20}$[cite: 12]</li>
+      </ul>
+
+      <h4>(i) Swap Ratio Based on Market Prices</h4>
+      <p>$$\text{Swap Ratio} = \frac{₹ 20}{₹ 100} = \mathbf{0.20 \text{ (1 share of Mani for 5 of Ratnam)}}$$[cite: 12]</p>
+      <p>$$\text{Shares Issued to Ratnam Ltd.} = 1,000 \text{ lakhs} \times 0.20 = \mathbf{200 \text{ lakh shares}}$$[cite: 12]</p>
+
+      <h4>(ii) Post-Merger EPS of Mani Ltd.</h4>
+      <p>$$\text{Post-Merger EPS} = \frac{₹ 2,000 \text{ lakhs} + ₹ 4,000 \text{ lakhs}}{200 \text{ lakhs} + 200 \text{ lakhs}} = \frac{₹ 6,000 \text{ lakhs}}{400 \text{ lakhs}} = \mathbf{₹ 15.00}$$[cite: 12]</p>
+
+      <h4>(iii) Expected Market Price After Acquisition (PE Drops 10%)</h4>
+      <p>$$\text{New PE Ratio} = 10 \times (1 - 0.10) = \mathbf{9 \text{ times}}$$[cite: 12]</p>
+      <p>$$\text{Expected Market Price} = \text{EPS} \times \text{PE} = ₹ 15.00 \times 9 = \mathbf{₹ 135.00}$$[cite: 12]</p>
+
+      <h4>(iv) Market Value of Merged Company</h4>
+      <p>$$\text{Market Value} = 400 \text{ lakh shares} \times ₹ 135 = \mathbf{₹ 54,000 \text{ lakhs \approx ₹ 540.00 Crores}}$$[cite: 12]</p>
+
+      <h4>(v) Gain / Loss for Shareholders</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Mani Ltd.</th>
+              <th style="padding:6px; border:1px solid #ddd;">Ratnam Ltd.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Post-Merger Value (₹ Crores)</td><td>$200 \text{L} \times ₹ 135 = \mathbf{270.00}$</td><td>$200 \text{L} \times ₹ 135 = \mathbf{270.00}$</td></tr>
+            <tr><td>Pre-Merger Value (₹ Crores)</td><td>$200 \text{L} \times ₹ 100 = 200.00$</td><td>$1,000 \text{L} \times ₹ 20 = 200.00$</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td>Total Gain (₹ Crores)</td>
+              <td><strong>+ 70.00 Crores</strong></td>
+              <td><strong>+ 70.00 Crores</strong></td>
+            </tr>
+            <tr style="font-weight:bold;">
+              <td>Gain per Pre-Merger Share (₹)</td>
+              <td><strong>+ ₹ 35.00</strong></td>
+              <td><strong>+ ₹ 7.00</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_11",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 21,
+    marks: 8,
+    question_html: `
+      <p>Financial data of two companies are provided below:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Krishna Ltd.</th>
+              <th style="padding:6px; border:1px solid #ddd;">Rama Ltd.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Earnings after taxes (₹)</td><td>7,00,000</td><td>10,00,000</td></tr>
+            <tr><td>No. of Equity shares outstanding</td><td>2,00,000</td><td>4,00,000</td></tr>
+            <tr><td>EPS (₹)</td><td>3.50</td><td>2.50</td></tr>
+            <tr><td>P/E ratio</td><td>10 times</td><td>14 times</td></tr>
+            <tr><td>Market price per share (₹)</td><td>35</td><td>35</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Company Rama Ltd. is acquiring Krishna Ltd., exchanging shares on a 1 : 1 basis based on market prices. Required:</p>
+      <ol type="i">
+        <li>What will be the EPS subsequent to merger?</li>
+        <li>What is the change in EPS for the shareholders of Rama Ltd. and Krishna Ltd.?</li>
+        <li>Determine the market value of the post-merger firm (P/E ratio remains unchanged at 14 times).</li>
+        <li>Ascertain the profits/gains accruing to shareholders of both companies.</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Post-Merger EPS of Rama Ltd.</h4>
+      <ul>
+        <li>Exchange Ratio based on Market Prices ($₹ 35 / ₹ 35$) $= \mathbf{1 : 1}$</li>
+        <li>New shares issued to Krishna Ltd. $= 2,00,000 \times 1 = \mathbf{2,00,000 \text{ shares}}$</li>
+        <li>Total shares in Rama Ltd. post-merger $= 4,00,000 + 2,00,000 = \mathbf{6,00,000 \text{ shares}}$</li>
+        <li>Total combined earnings $= ₹ 10,00,000 + ₹ 7,00,000 = \mathbf{₹ 17,00,000}$[cite: 12]</li>
+        <li>$$\text{Post-Merger EPS} = \frac{₹ 17,00,000}{6,00,000 \text{ shares}} = \mathbf{₹ 2.8333 \approx ₹ 2.83 \text{ per share}}$$</li>
+      </ul>
+
+      <h4>(ii) Change in EPS for Both Sets of Shareholders</h4>
+      <ul>
+        <li><strong>Rama Ltd. Shareholders:</strong>
+          <br />Post-merger EPS $= ₹ 2.83$; Pre-merger EPS $= ₹ 2.50$
+          <br />$$\text{EPS Accretion (Increase)} = ₹ 2.83 - ₹ 2.50 = \mathbf{+₹ 0.33 \text{ per share}}$$
+        </li>
+        <li><strong>Krishna Ltd. Shareholders:</strong>
+          <br />Equivalent Post-merger EPS ($₹ 2.83 \times 1$) $= ₹ 2.83$; Pre-merger EPS $= ₹ 3.50$
+          <br />$$\text{EPS Dilution (Decrease)} = ₹ 2.83 - ₹ 3.50 = \mathbf{-₹ 0.67 \text{ per share}}$$
+        </li>
+      </ul>
+
+      <h4>(iii) Market Value of Post-Merger Firm (P/E = 14 times)</h4>
+      <ul>
+        <li>$$\text{New Market Price per Share} = \text{New EPS} \times \text{P/E} = ₹ 2.8333 \times 14 = \mathbf{₹ 39.667 \approx ₹ 39.62}$$</li>
+        <li>$$\text{Total Post-Merger Market Capitalization} = 6,00,000 \text{ shares} \times ₹ 39.62 = \mathbf{₹ 2,37,72,000}$$</li>
+      </ul>
+
+      <h4>(iv) Total Synergy Gains Apportioned Between Shareholders</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Rama Ltd. (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Krishna Ltd. (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Total Combined (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Post-Merger Value ($N \times ₹ 39.62$)</td>
+              <td>$4,00,000 \times 39.62 = \mathbf{1,58,48,000}$</td>
+              <td>$2,00,000 \times 39.62 = \mathbf{79,24,000}$</td>
+              <td><strong>2,37,72,000</strong></td>
+            </tr>
+            <tr>
+              <td>Pre-Merger Market Value ($N \times ₹ 35$)</td>
+              <td>$4,00,000 \times 35 = 1,40,00,000$</td>
+              <td>$2,00,000 \times 35 = 70,00,000$</td>
+              <td>2,10,00,000</td>
+            </tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td>Net Gain to Shareholders</td>
+              <td><strong>+ 18,48,000</strong></td>
+              <td><strong>+ 9,24,000</strong></td>
+              <td><strong>+ 27,72,000</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The total market value gain of <strong>₹ 27,72,000</strong> is divided in the ratio of $2 : 1$ between Rama Ltd. (₹ 18,48,000) and Krishna Ltd. (₹ 9,24,000).</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_12",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 22,
+    marks: 6,
+    question_html: `
+      <p>M Co. Ltd. is studying the possible acquisition of N Co. Ltd. by way of merger[cite: 12]. Financial data:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">M Co. Ltd.</th>
+              <th style="padding:6px; border:1px solid #ddd;">N Co. Ltd.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Earnings after tax (₹)</td><td>80,00,000</td><td>24,00,000</td></tr>
+            <tr><td>No. of equity shares</td><td>16,00,000</td><td>4,00,000</td></tr>
+            <tr><td>Market value per share (₹)</td><td>200</td><td>160</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ol type="i">
+        <li>If the exchange ratio is based on current market prices, what is the new EPS for M Co. Ltd.?[cite: 12]</li>
+        <li>N Co. Ltd. wants to be sure that the earnings available to its shareholders will not be diminished by the merger[cite: 12]. What should be the exchange ratio in that case?[cite: 12]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) New EPS Based on Market Price Exchange Ratio</h4>
+      <ul>
+        <li>$$\text{Exchange Ratio} = \frac{\text{MPS}_N}{\text{MPS}_M} = \frac{₹ 160}{₹ 200} = \mathbf{0.80 \text{ (4 shares of M for 5 of N)}}$$[cite: 12]</li>
+        <li>New shares issued to N Co. Ltd.: $4,00,000 \times 0.80 = \mathbf{3,20,000 \text{ shares}}$[cite: 12]</li>
+        <li>Total shares in M Co. Ltd. post-merger $= 16,00,000 + 3,20,000 = \mathbf{19,20,000 \text{ shares}}$[cite: 12]</li>
+        <li>Total combined earnings $= ₹ 80,00,000 + ₹ 24,00,000 = \mathbf{₹ 1,04,00,000}$[cite: 12]</li>
+        <li>$$\text{New EPS of M Co. Ltd.} = \frac{₹ 1,04,00,000}{19,20,000 \text{ shares}} = \mathbf{₹ 5.42 \text{ per share}}$$ (an accretion from ₹ 5.00)[cite: 12]</li>
+      </ul>
+
+      <h4>(ii) Exchange Ratio to Protect N Co. Ltd.'s Earnings</h4>
+      <ul>
+        <li>$$\text{Pre-Merger EPS of M Co. Ltd.} = \frac{₹ 80,00,000}{16,00,000} = \mathbf{₹ 5.00}$$[cite: 12]</li>
+        <li>$$\text{Pre-Merger EPS of N Co. Ltd.} = \frac{₹ 24,00,000}{4,00,000} = \mathbf{₹ 6.00}$$[cite: 12]</li>
+        <li>$$\text{Exchange Ratio on EPS Basis} = \frac{\text{EPS}_N}{\text{EPS}_M} = \frac{₹ 6.00}{₹ 5.00} = \mathbf{1.20 \text{ (6 shares of M for 5 of N)}}$$[cite: 12]</li>
+        <li>Shares issued: $4,00,000 \times 1.20 = \mathbf{4,80,000 \text{ shares}}$[cite: 12]</li>
+        <li>Total post-merger shares $= 16,00,000 + 4,80,000 = \mathbf{20,80,000 \text{ shares}}$[cite: 12]</li>
+        <li>$$\text{Post-Merger EPS of M Co. Ltd.} = \frac{₹ 1,04,00,000}{20,80,000} = \mathbf{₹ 5.00}$$[cite: 12]</li>
+        <li>Total earnings available to N Co. Ltd. shareholders: $4,80,000 \times ₹ 5.00 = \mathbf{₹ 24,00,000}$ (identical to pre-merger earnings)[cite: 12].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_13",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 23,
+    marks: 8,
+    question_html: `
+      <p>Longitude Limited is in the process of acquiring Latitude Limited on a share exchange basis (ignore synergy)[cite: 12]. Data:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Longitude Limited</th>
+              <th style="padding:6px; border:1px solid #ddd;">Latitude Limited</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Profit after Tax (PAT) (₹ in Lakhs)</td><td>120</td><td>80</td></tr>
+            <tr><td>Number of Shares (Lakhs)</td><td>15</td><td>16</td></tr>
+            <tr><td>Earnings per Share (EPS) (₹)</td><td>8</td><td>5</td></tr>
+            <tr><td>Price Earnings Ratio (P/E Ratio)</td><td>15</td><td>10</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Determine: (i) Pre-merger Market Value per Share, and (ii) Maximum exchange ratio Longitude Limited can offer without dilution of (1) EPS, and (2) Market Value per Share (calculate ratios up to 4 decimal places)[cite: 12].</p>
+    `,
+    solution_html: `
+      <h4>(i) Pre-Merger Market Value per Share ($\text{MPS} = \text{EPS} \times \text{P/E}$)</h4>
+      <ul>
+        <li><strong>Longitude Limited:</strong> $₹ 8.00 \times 15 = \mathbf{₹ 120.00}$[cite: 12]</li>
+        <li><strong>Latitude Limited:</strong> $₹ 5.00 \times 10 = \mathbf{₹ 50.00}$[cite: 12]</li>
+      </ul>
+
+      <h4>(ii) Maximum Exchange Ratio to Avoid Dilution</h4>
+      <p><strong>1. Without Dilution of EPS (Maintain EPS @ ₹ 8.00):</strong></p>
+      <ul>
+        <li>Combined Earnings $= ₹ 120 \text{ lakhs} + ₹ 80 \text{ lakhs} = ₹ 200 \text{ lakhs}$[cite: 12]</li>
+        <li>$$\text{Maximum Post-Merger Shares Permissible} = \frac{₹ 200 \text{ lakhs}}{₹ 8.00} = \mathbf{25.00 \text{ lakh shares}}$$[cite: 12]</li>
+        <li>Maximum new shares issued to Latitude Ltd. $= 25.00 - 15.00 = \mathbf{10.00 \text{ lakh shares}}$[cite: 12]</li>
+        <li>$$\text{Maximum Exchange Ratio} = \frac{10.00 \text{ lakhs}}{16.00 \text{ lakhs}} = \mathbf{0.6250 : 1 \text{ (or 5 : 8)}}$$[cite: 12]</li>
+      </ul>
+
+      <p><strong>2. Without Dilution of Market Value per Share (Maintain MPS @ ₹ 120.00):</strong></p>
+      <ul>
+        <li>Pre-merger Market Cap of Longitude Ltd. ($15\text{L} \times ₹ 120$) $= ₹ 1,800 \text{ lakhs}$[cite: 12]</li>
+        <li>Pre-merger Market Cap of Latitude Ltd. ($16\text{L} \times ₹ 50$) $= ₹ 800 \text{ lakhs}$[cite: 12]</li>
+        <li>$$\text{Combined Market Value} = ₹ 1,800 + ₹ 800 = \mathbf{₹ 2,600 \text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\text{Maximum Post-Merger Shares Permissible} = \frac{₹ 2,600 \text{ lakhs}}{₹ 120} = \mathbf{21.67 \text{ lakh shares}}$$[cite: 12]</li>
+        <li>Maximum new shares issued to Latitude Ltd. $= 21.67 - 15.00 = \mathbf{6.67 \text{ lakh shares}}$[cite: 12]</li>
+        <li>$$\text{Maximum Exchange Ratio} = \frac{6.67 \text{ lakhs}}{16.00 \text{ lakhs}} = \mathbf{0.4169 : 1}$$[cite: 12]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_14",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 24,
+    marks: 8,
+    question_html: `
+      <p>P Ltd. is considering a takeover of R Ltd. by exchanging four new shares in P Ltd. for every five shares in R Ltd.[cite: 12] Pre-merger financials (Corporate tax rate = 30%)[cite: 12]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">P Ltd.</th>
+              <th style="padding:6px; border:1px solid #ddd;">R Ltd.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Profit before Tax (₹ Crore)</td><td>15.00</td><td>13.50</td></tr>
+            <tr><td>No. of Shares (Crore)</td><td>25.00</td><td>15.00</td></tr>
+            <tr><td>P/E Ratio</td><td>12</td><td>9</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Determine: (i) Pre-merger market value of both companies, (ii) Post-merger value owned by original shareholders, (iii) Price per share after merger, and (iv) Effect on share price if P Ltd.'s pre-merger P/E applies to combined earnings[cite: 12].</p>
+    `,
+    solution_html: `
+      <h4>1. Pre-Merger Base Data</h4>
+      <ul>
+        <li><strong>P Ltd.:</strong> $\text{PAT} = ₹ 15.00(1 - 0.30) = ₹ 10.50 \text{ cr} \implies \text{EPS} = \frac{10.50}{25} = ₹ 0.42 \implies \text{MPS} = 0.42 \times 12 = \mathbf{₹ 5.04}$[cite: 12]</li>
+        <li><strong>R Ltd.:</strong> $\text{PAT} = ₹ 13.50(1 - 0.30) = ₹ 9.45 \text{ cr} \implies \text{EPS} = \frac{9.45}{15} = ₹ 0.63 \implies \text{MPS} = 0.63 \times 9 = \mathbf{₹ 5.67}$[cite: 12]</li>
+      </ul>
+
+      <h4>(i) Market Value of Both Companies (Pre-Merger)</h4>
+      <ul>
+        <li>Market Value of P Ltd. ($25 \text{ cr} \times ₹ 5.04$) $= \mathbf{₹ 126.00 \text{ Crores}}$[cite: 12]</li>
+        <li>Market Value of R Ltd. ($15 \text{ cr} \times ₹ 5.67$) $= \mathbf{₹ 85.05 \text{ Crores}}$[cite: 12]</li>
+        <li>$$\text{Combined Pre-Merger Value} = ₹ 126.00 + ₹ 85.05 = \mathbf{₹ 211.05 \text{ Crores}}$$[cite: 12]</li>
+      </ul>
+
+      <h4>(ii) Value of Original Shareholders in the Merged Firm (No Synergy Assumption)</h4>
+      <ul>
+        <li>New shares issued to R Ltd. $= 15 \text{ cr} \times \frac{4}{5} = \mathbf{12.00 \text{ crore shares}}$[cite: 12]</li>
+        <li>Total post-merger shares $= 25 + 12 = \mathbf{37.00 \text{ crore shares}}$[cite: 12]</li>
+        <li>$$\text{Value Owned by P Ltd. Shareholders} = ₹ 211.05 \text{ cr} \times \frac{25}{37} = \mathbf{₹ 142.61 \text{ Crores}}$$ (Gain of ₹ 16.61 cr)[cite: 12]</li>
+        <li>$$\text{Value Owned by R Ltd. Shareholders} = ₹ 211.05 \text{ cr} \times \frac{12}{37} = \mathbf{₹ 68.44 \text{ Crores}}$$ (Loss of ₹ 16.61 cr)[cite: 12]</li>
+      </ul>
+
+      <h4>(iii) &amp; (iv) Post-Merger Share Price with P Ltd.'s Pre-Merger P/E Ratio (12 times)</h4>
+      <ul>
+        <li>Total Combined Earnings $= ₹ 10.50 \text{ cr} + ₹ 9.45 \text{ cr} = \mathbf{₹ 19.95 \text{ Crores}}$[cite: 12]</li>
+        <li>$$\text{Post-Merger EPS} = \frac{₹ 19.95 \text{ cr}}{37 \text{ cr shares}} = \mathbf{₹ 0.5392 \text{ per share}}$$[cite: 12]</li>
+        <li>$$\text{Post-Merger Share Price} = ₹ 0.5392 \times 12 = \mathbf{₹ 6.47}$$ (Total Market Cap $= 37 \times 6.47 = \mathbf{₹ 239.39 \text{ Crores}}$)[cite: 12]</li>
+      </ul>
+      <p><strong>Effect on Share Prices:</strong></p>
+      <ul>
+        <li><strong>P Ltd. Shareholders:</strong> Price rises from ₹ 5.04 to ₹ 6.47, an increase of <strong>+₹ 1.43 (+28.4%)</strong>[cite: 12].</li>
+        <li><strong>R Ltd. Shareholders:</strong> Equivalent price per share $= ₹ 6.47 \times 0.80 = \mathbf{₹ 5.18}$[cite: 12]. Price decreases from ₹ 5.67 to ₹ 5.18, a drop of <strong>-₹ 0.49 (-8.64%)</strong>[cite: 12].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_15",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 25,
+    marks: 6,
+    question_html: `
+      <p>Simple Ltd. and Dimple Ltd. are planning to merge[cite: 12]. Total business values under fluctuating states (₹ in lakhs):</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Business Condition</th>
+              <th style="padding:6px; border:1px solid #ddd;">Probability</th>
+              <th style="padding:6px; border:1px solid #ddd;">Simple Ltd. (₹ Lakhs)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Dimple Ltd. (₹ Lakhs)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>High Growth</td><td>0.20</td><td>820</td><td>1,050</td></tr>
+            <tr><td>Medium Growth</td><td>0.60</td><td>550</td><td>825</td></tr>
+            <tr><td>Slow Growth</td><td>0.20</td><td>410</td><td>590</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Current debt: Simple Ltd. = ₹ 460 lakhs; Dimple Ltd. = ₹ 65 lakhs[cite: 12]. Calculate the expected value of debt and equity separately for the merged entity[cite: 12].</p>
+    `,
+    solution_html: `
+      <h4>1. Valuation of Debt and Equity for Standalone Entities (₹ in lakhs)</h4>
+      <p>Under limited liability, equity cannot fall below zero; if total value is less than debt, debt receives the entire firm value and equity becomes zero[cite: 12]:</p>
+      <ul>
+        <li><strong>Simple Ltd. (Debt = ₹ 460 lakhs):</strong>
+          <ul>
+            <li>High Growth (820): Debt = 460; Equity = $820 - 460 = 360$[cite: 12]</li>
+            <li>Medium Growth (550): Debt = 460; Equity = $550 - 460 = 90$[cite: 12]</li>
+            <li>Slow Growth (410): Firm value &lt; Debt $\implies$ Debt = 410; Equity = $\mathbf{0}$[cite: 12]</li>
+            <li>$$\text{Expected Debt} = (460 \times 0.2) + (460 \times 0.6) + (410 \times 0.2) = 92 + 276 + 82 = \mathbf{₹ 450 \text{ lakhs}}$$[cite: 12]</li>
+            <li>$$\text{Expected Equity} = (360 \times 0.2) + (90 \times 0.6) + (0 \times 0.2) = 72 + 54 + 0 = \mathbf{₹ 126 \text{ lakhs}}$$[cite: 12]</li>
+          </ul>
+        </li>
+        <li><strong>Dimple Ltd. (Debt = ₹ 65 lakhs):</strong>
+          <ul>
+            <li>High Growth (1,050): Debt = 65; Equity = $1,050 - 65 = 985$[cite: 12]</li>
+            <li>Medium Growth (825): Debt = 65; Equity = $825 - 65 = 760$[cite: 12]</li>
+            <li>Slow Growth (590): Debt = 65; Equity = $590 - 65 = 525$[cite: 12]</li>
+            <li>$$\text{Expected Debt} = \mathbf{₹ 65 \text{ lakhs}}$$ (solvent in all states)[cite: 12]</li>
+            <li>$$\text{Expected Equity} = (985 \times 0.2) + (760 \times 0.6) + (525 \times 0.2) = 197 + 456 + 105 = \mathbf{₹ 758 \text{ lakhs}}$$[cite: 12]</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>2. Expected Value of Debt and Equity for Merged Entity</h4>
+      <ul>
+        <li>$$\text{Expected Debt of Merged Entity} = ₹ 450 \text{ lakhs} + ₹ 65 \text{ lakhs} = \mathbf{₹ 515 \text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\text{Expected Equity of Merged Entity} = ₹ 126 \text{ lakhs} + ₹ 758 \text{ lakhs} = \mathbf{₹ 884 \text{ lakhs}}$$[cite: 12]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_16",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 26,
+    marks: 10,
+    question_html: `
+      <p>Yes Ltd. wants to acquire No Ltd.[cite: 12] Projected cash flows (₹ in lakhs):</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Year</th>
+              <th style="padding:6px; border:1px solid #ddd;">1</th>
+              <th style="padding:6px; border:1px solid #ddd;">2</th>
+              <th style="padding:6px; border:1px solid #ddd;">3</th>
+              <th style="padding:6px; border:1px solid #ddd;">4</th>
+              <th style="padding:6px; border:1px solid #ddd;">5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Yes Ltd. (₹ Lakhs)</td><td>175</td><td>200</td><td>320</td><td>340</td><td>350</td></tr>
+            <tr><td>Merged Entity (₹ Lakhs)</td><td>400</td><td>450</td><td>525</td><td>590</td><td>620</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Terminal growth after Year 5: 5% without merger, 6% with merger[cite: 12]. Cost of capital = 15%[cite: 12]. Both companies have equal shares pre-merger, and the agreed swap ratio is 0.5 shares of Yes Ltd. for each share of No Ltd.[cite: 12] (PVIF @ 15%: 0.870, 0.756, 0.658, 0.572, 0.497)[cite: 12].</p>
+      <p>Compute: (i) Value of Yes Ltd. before and after merger, (ii) Value of acquisition, and (iii) Gain to shareholders of Yes Ltd.[cite: 12]</p>
+    `,
+    solution_html: `
+      <h4>1. Valuation of Yes Ltd. Before Merger</h4>
+      <ul>
+        <li>$$\text{PV of Explicit FCFs (Years 1 to 5)} = (175 \times 0.870) + (200 \times 0.756) + (320 \times 0.658) + (340 \times 0.572) + (350 \times 0.497) = \mathbf{₹ 882.44 \text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\text{Terminal Value at Year 5 } (TV_5) = \frac{350 \times (1 + 0.05)}{0.15 - 0.05} = \frac{367.50}{0.10} = ₹ 3,675.00 \text{ lakhs}$$[cite: 12]</li>
+        <li>$$\text{PV of Terminal Value} = ₹ 3,675.00 \times 0.497 = \mathbf{₹ 1,826.475 \text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\text{Total Standalone Value of Yes Ltd.} = ₹ 882.44 + ₹ 1,826.475 = \mathbf{₹ 2,708.915 \text{ lakhs}}$$[cite: 12]</li>
+      </ul>
+
+      <h4>2. Valuation of Merged Entity After Merger</h4>
+      <ul>
+        <li>$$\text{PV of Combined Explicit FCFs} = (400 \times 0.870) + (450 \times 0.756) + (525 \times 0.658) + (590 \times 0.572) + (620 \times 0.497) = \mathbf{₹ 1,679.27 \text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\text{Combined Terminal Value at Year 5 } (TV_5) = \frac{620 \times (1 + 0.06)}{0.15 - 0.06} = \frac{657.20}{0.09} = ₹ 7,302.22 \text{ lakhs}$$[cite: 12]</li>
+        <li>$$\text{PV of Combined Terminal Value} = ₹ 7,302.22 \times 0.497 = \mathbf{₹ 3,629.20 \text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\text{Total Value of Merged Entity } (V_{AB}) = ₹ 1,679.27 + ₹ 3,629.20 = \mathbf{₹ 5,308.47 \text{ lakhs}}$$[cite: 12]</li>
+      </ul>
+
+      <h4>3. (ii) Value of Acquisition</h4>
+      <p>$$\text{Value of Acquisition} = V_{AB} - V_A = ₹ 5,308.47 \text{ lakhs} - ₹ 2,708.915 \text{ lakhs} = \mathbf{₹ 2,599.555 \text{ lakhs}}$$[cite: 12]</p>
+
+      <h4>4. (iii) Gain to Shareholders of Yes Ltd.</h4>
+      <p>Under a 0.5 : 1 swap ratio with equal initial shares, Yes Ltd. shareholders own $\frac{1}{1 + 0.5} = \frac{1}{1.5} = \frac{2}{3}$ of the combined entity[cite: 12]:</p>
+      <p>$$\text{Share of Yes Ltd. in Merged Firm} = ₹ 5,308.47 \text{ lakhs} \times \frac{1}{1.5} = \mathbf{₹ 3,538.98 \text{ lakhs}}$$[cite: 12]</p>
+      <p>$$\text{Gain to Yes Ltd. Shareholders} = ₹ 3,538.98 \text{ lakhs} - ₹ 2,708.915 \text{ lakhs} = \mathbf{₹ 830.065 \text{ lakhs}}$$[cite: 12]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_17",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 27,
+    marks: 10,
+    question_html: `
+      <p>Financial details of acquiring company Efficient Ltd. and target company Healthy Ltd.[cite: 12]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Efficient Ltd.</th>
+              <th style="padding:6px; border:1px solid #ddd;">Healthy Ltd.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>No. of shares (FV ₹ 10 each)</td><td>10.00 lakhs</td><td>7.50 lakhs</td></tr>
+            <tr><td>Market Capitalization (₹ lakhs)</td><td>500.00</td><td>750.00</td></tr>
+            <tr><td>P/E ratio (times)</td><td>10.00</td><td>5.00</td></tr>
+            <tr><td>Reserves and Surplus (₹ lakhs)</td><td>300.00</td><td>165.00</td></tr>
+            <tr><td>Promoter's Holding (Shares)</td><td>4.75 lakhs</td><td>5.00 lakhs</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Swap ratio weights: Earnings = 40%, Book Value = 25%, Market Price = 35%[cite: 12]. Calculate: (i) Swap ratio &amp; promoter's holding % post-merger, (ii) Post-merger EPS, (iii) Expected market price &amp; market cap (PE unchanged), and (iv) Free float market capitalization[cite: 12].</p>
+    `,
+    solution_html: `
+      <h4>1. Determination of Valuation Parameters</h4>
+      <ul>
+        <li><strong>Efficient Ltd.:</strong>
+          <br />$$\text{MPS} = \frac{₹ 500 \text{L}}{10\text{L}} = ₹ 50; \quad \text{EPS} = \frac{₹ 50}{10} = ₹ 5.00; \quad \text{Total PAT} = ₹ 50.00 \text{ lakhs}$$[cite: 12]
+          <br />$$\text{Book Value per share} = \frac{₹ 100 \text{L (Capital)} + ₹ 300 \text{L (Reserves)}}{10 \text{ lakh shares}} = \mathbf{₹ 40.00}$$[cite: 12]
+        </li>
+        <li><strong>Healthy Ltd.:</strong>
+          <br />$$\text{MPS} = \frac{₹ 750 \text{L}}{7.5\text{L}} = ₹ 100; \quad \text{EPS} = \frac{₹ 100}{5} = ₹ 20.00; \quad \text{Total PAT} = ₹ 150.00 \text{ lakhs}$$[cite: 12]
+          <br />$$\text{Book Value per share} = \frac{₹ 75 \text{L (Capital)} + ₹ 165 \text{L (Reserves)}}{7.5 \text{ lakh shares}} = \mathbf{₹ 32.00}$$[cite: 12]
+        </li>
+      </ul>
+
+      <h4>2. (i) Weighted Swap Ratio and Promoter Holding</h4>
+      <ul>
+        <li>EPS Ratio: $\frac{20}{5} = 4.0 \times 40\% = \mathbf{1.60}$[cite: 12]</li>
+        <li>Book Value Ratio: $\frac{32}{40} = 0.8 \times 25\% = \mathbf{0.20}$[cite: 12]</li>
+        <li>Market Price Ratio: $\frac{100}{50} = 2.0 \times 35\% = \mathbf{0.70}$[cite: 12]</li>
+        <li>$$\text{Weighted Swap Ratio} = 1.60 + 0.20 + 0.70 = \mathbf{2.50 \text{ shares of Efficient for 1 of Healthy}}$$[cite: 12]</li>
+        <li>New shares issued to Healthy Ltd. $= 7.50 \text{ lakhs} \times 2.50 = \mathbf{18.75 \text{ lakh shares}}$[cite: 12]</li>
+        <li>Total post-merger shares $= 10.00 + 18.75 = \mathbf{28.75 \text{ lakh shares}}$[cite: 12]</li>
+        <li>$$\text{Promoters' Holding Post-Merger} = 4.75 \text{L} + (5.00 \text{L} \times 2.50) = 4.75 + 12.50 = \mathbf{17.25 \text{ lakh shares}}$$[cite: 12]</li>
+        <li>$$\text{Promoters' Holding \%} = \frac{17.25 \text{ lakhs}}{28.75 \text{ lakhs}} \times 100 = \mathbf{60.00\%}$$[cite: 12]</li>
+      </ul>
+
+      <h4>3. (ii) Post-Merger EPS of Efficient Ltd.</h4>
+      <p>$$\text{Combined PAT} = ₹ 50.00 \text{ lakhs} + ₹ 150.00 \text{ lakhs} = ₹ 200.00 \text{ lakhs}$$[cite: 12]</p>
+      <p>$$\text{Post-Merger EPS} = \frac{₹ 200.00 \text{ lakhs}}{28.75 \text{ lakh shares}} = \mathbf{₹ 6.956 \text{ per share}}$$ (or ₹ 6.96)[cite: 12]</p>
+
+      <h4>4. (iii) Expected Market Price and Market Capitalization (PE = 10 times)</h4>
+      <ul>
+        <li>$$\text{Expected Market Price} = ₹ 6.956 \times 10 = \mathbf{₹ 69.56 \text{ per share}}$$[cite: 12]</li>
+        <li>$$\text{Total Market Capitalization} = 28.75 \text{ lakh shares} \times ₹ 69.56 = \mathbf{₹ 1,999.85 \text{ lakhs \approx ₹ 2,000 lakhs}}$$[cite: 12]</li>
+      </ul>
+
+      <h4>5. (iv) Free Float Market Capitalization</h4>
+      <p>Non-promoter (public) holding $= 100\% - 60\% = 40\%$[cite: 12].</p>
+      <p>$$\text{Free Float Market Cap} = 40\% \times ₹ 1,999.85 \text{ lakhs} = \mathbf{₹ 799.94 \text{ lakhs}}$$[cite: 12]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_18",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 28,
+    marks: 8,
+    question_html: `
+      <p>Abhiman Ltd. is acquiring Swabhiman Ltd. (both subsidiaries of Janam Ltd.)[cite: 12]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Abhiman Ltd.</th>
+              <th style="padding:6px; border:1px solid #ddd;">Swabhiman Ltd.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Promoter's Shareholding (%)</td><td>50%</td><td>60%</td></tr>
+            <tr><td>Share Capital (₹ lakhs)</td><td>200</td><td>100</td></tr>
+            <tr><td>Free Reserves &amp; Surplus (₹ lakhs)</td><td>900</td><td>600</td></tr>
+            <tr><td>Paid-up Value per share (₹)</td><td>100</td><td>10</td></tr>
+            <tr><td>Free Float Market Capitalization (₹ lakhs)</td><td>500</td><td>156</td></tr>
+            <tr><td>P/E Ratio (times)</td><td>10</td><td>4</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Weights for swap ratio: Book Value = 25%, EPS = 50%, Market Price = 25%[cite: 12]. Compute: (i) Swap ratio, (ii) Book Value, EPS, and expected Market Price of merged entity[cite: 12].</p>
+    `,
+    solution_html: `
+      <h4>1. Per-Share Financials of Both Companies</h4>
+      <ul>
+        <li><strong>Abhiman Ltd.:</strong>
+          <br />Shares $= \frac{₹ 200\text{L}}{100} = 2 \text{ lakh shares}$[cite: 12]
+          <br />$$\text{Book Value per share} = \frac{₹ 200\text{L} + ₹ 900\text{L}}{2\text{L}} = \mathbf{₹ 550.00}$$[cite: 12]
+          <br />$$\text{Total Market Cap} = \frac{₹ 500\text{L}}{50\%} = ₹ 1,000 \text{ lakhs} \implies \text{MPS} = \frac{₹ 1,000\text{L}}{2\text{L}} = \mathbf{₹ 500.00}$$[cite: 12]
+          <br />$$\text{EPS} = \frac{₹ 500}{10} = \mathbf{₹ 50.00} \implies \text{PAT} = 2\text{L} \times ₹ 50 = ₹ 100 \text{ lakhs}$$[cite: 12]
+        </li>
+        <li><strong>Swabhiman Ltd.:</strong>
+          <br />Shares $= \frac{₹ 100\text{L}}{10} = 10 \text{ lakh shares}$[cite: 12]
+          <br />$$\text{Book Value per share} = \frac{₹ 100\text{L} + ₹ 600\text{L}}{10\text{L}} = \mathbf{₹ 70.00}$$[cite: 12]
+          <br />$$\text{Total Market Cap} = \frac{₹ 156\text{L}}{40\%} = ₹ 390 \text{ lakhs} \implies \text{MPS} = \frac{₹ 390\text{L}}{10\text{L}} = \mathbf{₹ 39.00}$$[cite: 12]
+          <br />$$\text{EPS} = \frac{₹ 39}{4} = \mathbf{₹ 9.75} \implies \text{PAT} = 10\text{L} \times ₹ 9.75 = ₹ 97.50 \text{ lakhs}$$[cite: 12]
+        </li>
+      </ul>
+
+      <h4>2. (i) Weighted Swap Ratio</h4>
+      <ul>
+        <li>Book Value Ratio: $\frac{70}{550} = 0.12727 \times 25\% = \mathbf{0.03182}$[cite: 12]</li>
+        <li>EPS Ratio: $\frac{9.75}{50} = 0.19500 \times 50\% = \mathbf{0.09750}$[cite: 12]</li>
+        <li>Market Price Ratio: $\frac{39}{500} = 0.07800 \times 25\% = \mathbf{0.01950}$[cite: 12]</li>
+        <li>$$\text{Weighted Swap Ratio} = 0.03182 + 0.09750 + 0.01950 = \mathbf{0.148825 \text{ shares of Abhiman for 1 of Swabhiman}}$$[cite: 12]</li>
+        <li>New shares issued $= 10,00,000 \times 0.148825 = \mathbf{1,48,825 \text{ shares}}$[cite: 12]</li>
+      </ul>
+
+      <h4>3. (ii) Post-Merger Book Value, EPS, and Market Price</h4>
+      <ul>
+        <li>Total shares in merged entity $= 2,00,000 + 1,48,825 = \mathbf{3,48,825 \text{ shares}}$[cite: 12]</li>
+        <li>$$\text{Post-Merger Book Value} = \frac{₹ 1,100 \text{ lakhs} + ₹ 700 \text{ lakhs}}{3,48,825 \text{ shares}} = \frac{₹ 1,800 \text{ lakhs}}{3.48825 \text{ lakhs}} = \mathbf{₹ 516.02 \text{ per share}}$$[cite: 12]</li>
+        <li>$$\text{Post-Merger EPS} = \frac{₹ 100 \text{ lakhs} + ₹ 97.50 \text{ lakhs}}{3,48,825 \text{ shares}} = \frac{₹ 197.50 \text{ lakhs}}{3.48825 \text{ lakhs}} = \mathbf{₹ 56.62 \text{ per share}}$$[cite: 12]</li>
+        <li>$$\text{Expected Market Price (P/E = 10)} = ₹ 56.62 \times 10 = \mathbf{₹ 566.20 \text{ per share}}$$[cite: 12]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_19",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 29,
+    marks: 10,
+    question_html: `
+      <p>The following information is provided relating to acquiring company E Ltd. and target company H Ltd.[cite: 12]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">E Ltd.</th>
+              <th style="padding:6px; border:1px solid #ddd;">H Ltd.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Number of shares (Face value ₹ 10 each)</td><td>20 Lakhs</td><td>15 Lakhs</td></tr>
+            <tr><td>Market Capitalization (₹ lakhs)</td><td>1,000</td><td>1,500</td></tr>
+            <tr><td>P/E Ratio (times)</td><td>10.00</td><td>5.00</td></tr>
+            <tr><td>Reserves &amp; Surplus (₹ lakhs)</td><td>600.00</td><td>330.00</td></tr>
+            <tr><td>Promoter's Holding (Shares)</td><td>9.50 Lakhs</td><td>10.00 Lakhs</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Weights for swap ratio: EPS = 40%, Book Value = 25%, Market Price = 35%[cite: 12]. Calculate: (i) MPS, EPS, and Book Value per share; (ii) Swap ratio; (iii) Promoter's holding % post-merger; (iv) Post-merger EPS; (v) Expected market price and market cap (P/E unchanged); and (vi) Free float market cap[cite: 12].</p>
+    `,
+    solution_html: `
+      <h4>(i) Per-Share Financial Metrics</h4>
+      <ul>
+        <li><strong>E Ltd.:</strong>
+          <br />$$\text{MPS} = \frac{₹ 1,000 \text{L}}{20\text{L}} = \mathbf{₹ 50.00}; \quad \text{EPS} = \frac{₹ 50}{10} = \mathbf{₹ 5.00}; \quad \text{Total PAT} = \mathbf{₹ 100 \text{ lakhs}}$$[cite: 12]
+          <br />$$\text{Book Value per share} = \frac{₹ 200\text{L (Capital)} + ₹ 600\text{L (Reserves)}}{20 \text{ lakh shares}} = \mathbf{₹ 40.00}$$[cite: 12]
+        </li>
+        <li><strong>H Ltd.:</strong>
+          <br />$$\text{MPS} = \frac{₹ 1,500 \text{L}}{15\text{L}} = \mathbf{₹ 100.00}; \quad \text{EPS} = \frac{₹ 100}{5} = \mathbf{₹ 20.00}; \quad \text{Total PAT} = \mathbf{₹ 300 \text{ lakhs}}$$[cite: 12]
+          <br />$$\text{Book Value per share} = \frac{₹ 150\text{L (Capital)} + ₹ 330\text{L (Reserves)}}{15 \text{ lakh shares}} = \mathbf{₹ 32.00}$$[cite: 12]
+        </li>
+      </ul>
+
+      <h4>(ii) Weighted Swap Ratio</h4>
+      <ul>
+        <li>EPS Ratio: $\frac{20}{5} = 4.0 \times 40\% = \mathbf{1.60}$[cite: 12]</li>
+        <li>Book Value Ratio: $\frac{32}{40} = 0.8 \times 25\% = \mathbf{0.20}$[cite: 12]</li>
+        <li>Market Price Ratio: $\frac{100}{50} = 2.0 \times 35\% = \mathbf{0.70}$[cite: 12]</li>
+        <li>$$\text{Weighted Swap Ratio} = 1.60 + 0.20 + 0.70 = \mathbf{2.50 \text{ shares of E Ltd. for 1 share of H Ltd.}}$$[cite: 12]</li>
+        <li>New shares issued to H Ltd. $= 15 \text{ lakhs} \times 2.50 = \mathbf{37.50 \text{ lakh shares}}$[cite: 12]</li>
+        <li>Total post-merger shares $= 20.00 + 37.50 = \mathbf{57.50 \text{ lakh shares}}$[cite: 12]</li>
+      </ul>
+
+      <h4>(iii) Promoter's Holding Percentage Post-Merger</h4>
+      <ul>
+        <li>$$\text{Total Promoters' Shares} = 9.50 \text{L} + (10.00 \text{L} \times 2.50) = 9.50 + 25.00 = \mathbf{34.50 \text{ lakh shares}}$$[cite: 12]</li>
+        <li>$$\text{Promoters' Holding \%} = \frac{34.50 \text{ lakhs}}{57.50 \text{ lakhs}} \times 100 = \mathbf{60.00\%}$$[cite: 12]</li>
+      </ul>
+
+      <h4>(iv) Post-Merger EPS of E Ltd.</h4>
+      <p>$$\text{Post-Merger EPS} = \frac{₹ 100 \text{ lakhs} + ₹ 300 \text{ lakhs}}{57.50 \text{ lakh shares}} = \frac{₹ 400 \text{ lakhs}}{57.50 \text{ lakhs}} = \mathbf{₹ 6.956 \text{ per share}}$$ (or ₹ 6.96)[cite: 12]</p>
+
+      <h4>(v) Expected Market Price and Market Capitalization (PE = 10 times)</h4>
+      <ul>
+        <li>$$\text{Expected Market Price} = ₹ 6.956 \times 10 = \mathbf{₹ 69.56}$$[cite: 12]</li>
+        <li>$$\text{Total Market Capitalization} = 57.50 \text{ lakh shares} \times ₹ 69.56 = \mathbf{₹ 3,999.70 \text{ lakhs \approx ₹ 4,000 lakhs}}$$[cite: 12]</li>
+      </ul>
+
+      <h4>(vi) Free Float Market Capitalization</h4>
+      <p>$$\text{Free Float Market Cap} = 40\% \times ₹ 3,999.70 \text{ lakhs} = \mathbf{₹ 1,599.88 \text{ lakhs}}$$[cite: 12]</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_20",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 30,
+    marks: 10,
+    question_html: `
+      <p>Abhiman Ltd. and Abhishek Ltd. are both promoted by Trident Ltd. (promoter holding: 50% and 60% respectively)[cite: 12]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Abhiman Ltd.</th>
+              <th style="padding:6px; border:1px solid #ddd;">Abhishek Ltd.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Share Capital (₹ lakhs)</td><td>200</td><td>100</td></tr>
+            <tr><td>Free Reserves &amp; Surplus (₹ lakhs)</td><td>800</td><td>500</td></tr>
+            <tr><td>Paid-up Value per share (₹)</td><td>100</td><td>10</td></tr>
+            <tr><td>Free Float Market Capitalization (₹ lakhs)</td><td>400</td><td>128</td></tr>
+            <tr><td>P/E Ratio (times)</td><td>10</td><td>4</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Weights: Book Value = 25%, EPS = 50%, Market Price = 25%[cite: 12].</p>
+      <ol type="a">
+        <li>Calculate the swap ratio[cite: 12].</li>
+        <li>Calculate Book Value, EPS, and expected Market Price post-merger (P/E unchanged)[cite: 12].</li>
+        <li>Calculate: (i) Promoter's revised holding %, (ii) Free float market cap, and (iii) No. of shares, EPS, and Book Value if Abhiman Ltd. subsequently issues 1:2 bonus shares and splits shares into ₹ 5 face value[cite: 12].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>1. Pre-Merger Financial Indicators</h4>
+      <ul>
+        <li><strong>Abhiman Ltd.:</strong>
+          <br />Shares $= \frac{₹ 200\text{L}}{100} = 2 \text{ lakh shares}$; $\text{BVPS} = \frac{₹ 1,000\text{L}}{2\text{L}} = \mathbf{₹ 500}$[cite: 12]
+          <br />$$\text{Total Market Cap} = \frac{₹ 400\text{L}}{50\%} = ₹ 800 \text{ lakhs} \implies \text{MPS} = \frac{₹ 800\text{L}}{2\text{L}} = \mathbf{₹ 400}$$[cite: 12]
+          <br />$$\text{EPS} = \frac{₹ 400}{10} = \mathbf{₹ 40} \implies \text{PAT} = 2\text{L} \times ₹ 40 = ₹ 80 \text{ lakhs}$$[cite: 12]
+        </li>
+        <li><strong>Abhishek Ltd.:</strong>
+          <br />Shares $= \frac{₹ 100\text{L}}{10} = 10 \text{ lakh shares}$; $\text{BVPS} = \frac{₹ 600\text{L}}{10\text{L}} = \mathbf{₹ 60}$[cite: 12]
+          <br />$$\text{Total Market Cap} = \frac{₹ 128\text{L}}{40\%} = ₹ 320 \text{ lakhs} \implies \text{MPS} = \frac{₹ 320\text{L}}{10\text{L}} = \mathbf{₹ 32}$$[cite: 12]
+          <br />$$\text{EPS} = \frac{₹ 32}{4} = \mathbf{₹ 8} \implies \text{PAT} = 10\text{L} \times ₹ 8 = ₹ 80 \text{ lakhs}$$[cite: 12]
+        </li>
+      </ul>
+
+      <h4>(a) Calculation of Swap Ratio</h4>
+      <ul>
+        <li>Book Value Ratio: $\frac{60}{500} = 0.12 \times 25\% = \mathbf{0.03}$[cite: 12]</li>
+        <li>EPS Ratio: $\frac{8}{40} = 0.20 \times 50\% = \mathbf{0.10}$[cite: 12]</li>
+        <li>Market Price Ratio: $\frac{32}{400} = 0.08 \times 25\% = \mathbf{0.02}$[cite: 12]</li>
+        <li>$$\text{Weighted Swap Ratio} = 0.03 + 0.10 + 0.02 = \mathbf{0.15 \text{ shares of Abhiman for 1 of Abhishek}}$$[cite: 12]</li>
+        <li>New shares issued to Abhishek Ltd. $= 10 \text{ lakhs} \times 0.15 = \mathbf{1.50 \text{ lakh shares}}$[cite: 12]</li>
+        <li>Total post-merger shares $= 2.00 + 1.50 = \mathbf{3.50 \text{ lakh shares}}$[cite: 12]</li>
+      </ul>
+
+      <h4>(b) Post-Merger Book Value, EPS, and Market Price</h4>
+      <ul>
+        <li>$$\text{Book Value per share} = \frac{₹ 1,000 \text{ lakhs} + ₹ 600 \text{ lakhs}}{3.50 \text{ lakh shares}} = \frac{₹ 1,600 \text{ lakhs}}{3.50 \text{ lakhs}} = \mathbf{₹ 457.14}$$[cite: 12]</li>
+        <li>$$\text{Post-Merger EPS} = \frac{₹ 80 \text{ lakhs} + ₹ 80 \text{ lakhs}}{3.50 \text{ lakh shares}} = \frac{₹ 160 \text{ lakhs}}{3.50 \text{ lakhs}} = \mathbf{₹ 45.71 \text{ per share}}$$[cite: 12]</li>
+        <li>$$\text{Expected Market Price (P/E = 10)} = ₹ 45.71 \times 10 = \mathbf{₹ 457.10}$$[cite: 12]</li>
+      </ul>
+
+      <h4>(c) Ownership, Free Float, and Capital Restructuring</h4>
+      <ul>
+        <li><strong>(i) Promoters' Revised Holding:</strong>
+          <br />$$\text{Promoters' Shares} = (50\% \times 2\text{L}) + (60\% \times 10\text{L} \times 0.15) = 1.00 + 0.90 = \mathbf{1.90 \text{ lakh shares}}$$[cite: 12]
+          <br />$$\text{Promoter's Holding \%} = \frac{1.90 \text{ lakhs}}{3.50 \text{ lakhs}} \times 100 = \mathbf{54.29\%}$$[cite: 12]
+        </li>
+        <li><strong>(ii) Free Float Market Capitalization:</strong>
+          <br />$$\text{Free Float Shares} = 3.50 - 1.90 = \mathbf{1.60 \text{ lakh shares}}$$[cite: 12]
+          <br />$$\text{Free Float Market Cap} = 1.60 \text{ lakh shares} \times ₹ 457.10 = \mathbf{₹ 731.36 \text{ lakhs}}$$[cite: 12]
+        </li>
+        <li><strong>(iii) Impact of 1 : 2 Bonus Issue Followed by Stock Split to ₹ 5:</strong>
+          <br />After 1 : 2 Bonus issue: Shares $= 3.50 \times 1.5 = \mathbf{5.25 \text{ lakh shares of ₹ 100 each}}$[cite: 12]
+          <br />After stock split to ₹ 5 par: Shares $= 5.25 \text{ lakhs} \times \frac{₹ 100}{₹ 5} = \mathbf{105.00 \text{ lakh shares}}$[cite: 12]
+          <br />$$\text{New EPS} = \frac{₹ 160 \text{ lakhs}}{105 \text{ lakh shares}} = \mathbf{₹ 1.524 \approx ₹ 1.523}$$[cite: 12]
+          <br />$$\text{New Book Value per share} = \frac{₹ 1,600 \text{ lakhs}}{105 \text{ lakh shares}} = \mathbf{₹ 15.238}$$[cite: 12]
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_21",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 31,
+    marks: 10,
+    question_html: `
+      <p>T Ltd. and E Ltd. are in the same industry. The former is in negotiation for the acquisition of the latter[cite: 12]. Financial data (tax rate = 30%)[cite: 12]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">T Ltd.</th>
+              <th style="padding:6px; border:1px solid #ddd;">E Ltd.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Equity shares of ₹ 10 each outstanding</td><td>12 Lakhs</td><td>6 Lakhs</td></tr>
+            <tr><td>10% Debentures (₹ Lakhs)</td><td>580.00</td><td>—</td></tr>
+            <tr><td>12.5% Institutional Loan (₹ Lakhs)</td><td>—</td><td>240.00</td></tr>
+            <tr><td>EBIDAT (₹ Lakhs)</td><td>400.86</td><td>115.71</td></tr>
+            <tr><td>Market Price per share (₹)</td><td>220.00</td><td>110.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Proposals under consideration[cite: 12]:</p>
+      <ul>
+        <li><strong>T Ltd.'s Offer:</strong> Purchase price for E Ltd. as a whole is 7 times EBIDAT reduced by outstanding debt, discharged by own shares at market price[cite: 12].</li>
+        <li><strong>E Ltd.'s Plan:</strong> Exchange ratio of 1 share in T Ltd. for every 2 shares in E Ltd. based on market prices[cite: 12].</li>
+      </ul>
+      <p>Calculate for both alternatives: (i) Net consideration payable, (ii) No. of shares to be issued by T Ltd., (iii) EPS of T Ltd. after acquisition, (iv) Expected market price per share, and (v) State briefly the advantages to T Ltd.[cite: 12]</p>
+    `,
+    solution_html: `
+      <h4>1. Pre-Acquisition Standalone Data of T Ltd.</h4>
+      <ul>
+        <li>$$\text{Pre-Acquisition Interest} = 10\% \times ₹ 580 \text{ lakhs} = ₹ 58.00 \text{ lakhs}$$[cite: 12]</li>
+        <li>$$\text{PBT} = ₹ 400.86 - ₹ 58.00 = ₹ 342.86 \text{ lakhs}$$[cite: 12]</li>
+        <li>$$\text{PAT} = ₹ 342.86 \times (1 - 0.30) = ₹ 240.00 \text{ lakhs}$$[cite: 12]</li>
+        <li>$$\text{Pre-Acquisition EPS} = \frac{₹ 240.00 \text{ lakhs}}{12.00 \text{ lakh shares}} = \mathbf{₹ 20.00}$$[cite: 12]</li>
+        <li>$$\text{Pre-Acquisition P/E Ratio} = \frac{₹ 220.00}{₹ 20.00} = \mathbf{11 \text{ times}}$$[cite: 12]</li>
+      </ul>
+
+      <h4>2. Combined Post-Acquisition Operating Earnings (PAT)</h4>
+      <ul>
+        <li>Combined EBIDAT $= ₹ 400.86 + ₹ 115.71 = ₹ 516.57 \text{ lakhs}$[cite: 12]</li>
+        <li>Less: Total Interest $[₹ 58.00\text{L} + (12.5\% \times ₹ 240\text{L} = ₹ 30.00\text{L})] = (₹ 88.00 \text{ lakhs})$[cite: 12]</li>
+        <li>Combined PBT $= ₹ 516.57 - ₹ 88.00 = ₹ 428.57 \text{ lakhs}$[cite: 12]</li>
+        <li>Less: Tax @ 30% $= (₹ 128.57 \text{ lakhs})$[cite: 12]</li>
+        <li>$$\text{Combined Net Profit After Tax (NPAT)} = \mathbf{₹ 300.00 \text{ lakhs}}$$[cite: 12]</li>
+      </ul>
+
+      <h4>3. Comparative Evaluation of Proposals</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">T Ltd.'s Offer</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">E Ltd.'s Plan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>(i) Net Consideration Payable</td>
+              <td style="text-align:right;">$(7 \times 115.71) - 240 = \mathbf{₹ 569.97 \text{ lakhs}}$[cite: 12]</td>
+              <td style="text-align:right;">$6\text{L shares} \times ₹ 110 = \mathbf{₹ 660.00 \text{ lakhs}}$[cite: 12]</td>
+            </tr>
+            <tr>
+              <td>(ii) Shares Issued by T Ltd. (@ ₹ 220)</td>
+              <td style="text-align:right;">$\frac{₹ 569.97\text{L}}{₹ 220} = \mathbf{2,59,000 \text{ shares}}$[cite: 12]</td>
+              <td style="text-align:right;">$\frac{₹ 660.00\text{L}}{₹ 220} = \mathbf{3,00,000 \text{ shares}}$[cite: 12]</td>
+            </tr>
+            <tr>
+              <td>Total Shares Post-Merger</td>
+              <td style="text-align:right;">$12.00\text{L} + 2.59\text{L} = \mathbf{14.59 \text{ lakh shares}}$[cite: 12]</td>
+              <td style="text-align:right;">$12.00\text{L} + 3.00\text{L} = \mathbf{15.00 \text{ lakh shares}}$[cite: 12]</td>
+            </tr>
+            <tr>
+              <td>(iii) Post-Merger EPS of T Ltd.</td>
+              <td style="text-align:right;">$\frac{₹ 300\text{L}}{14.59\text{L}} = \mathbf{₹ 20.56}$[cite: 12]</td>
+              <td style="text-align:right;">$\frac{₹ 300\text{L}}{15.00\text{L}} = \mathbf{₹ 20.00}$[cite: 12]</td>
+            </tr>
+            <tr>
+              <td>(iv) Expected Market Price (P/E = 11)</td>
+              <td style="text-align:right;">$₹ 20.56 \times 11 = \mathbf{₹ 226.16}$[cite: 12]</td>
+              <td style="text-align:right;">$₹ 20.00 \times 11 = \mathbf{₹ 220.00}$[cite: 12]</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>(v) Advantages of Acquisition to T Ltd.</h4>
+      <ul>
+        <li>Operating synergies, cost rationalization, and enhanced production efficiency[cite: 12].</li>
+        <li>Substantial expansion of market share and neutralization of industry competition[cite: 12].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_22",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 32,
+    marks: 8,
+    question_html: `
+      <p>Fortune India Ltd. has 3,000 lakh equity shares of Re. 1 each and de-merges its Pharma Division into Fortune Pharma Ltd. w.e.f. 01.04.2009[cite: 12]. Balance sheet data as of 01.04.2009[cite: 12]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars (₹ in Lakhs)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Fortune India Ltd. (Total)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Fortune Pharma Ltd.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Total Outside Liabilities</td><td>25,000</td><td>4,100</td></tr>
+            <tr><td>Total Assets</td><td>70,000</td><td>25,100</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Additional projections for 2009&ndash;10[cite: 12]:</p>
+      <ul>
+        <li>Estimated Profit: Fortune India Ltd. (FMCG) = ₹ 11,400 lakhs; Fortune Pharma Ltd. = ₹ 1,470 lakhs[cite: 12].</li>
+        <li>Estimated Market Price of Fortune Pharma Ltd. = ₹ 24.50 per share[cite: 12].</li>
+        <li>Industry P/E: FMCG = 42 times; Pharma = 25 times[cite: 12].</li>
+      </ul>
+      <p>Calculate: (1) Share entitlement ratio of Fortune Pharma Ltd., (2) Expected market price of Fortune India (FMCG) Ltd., and (3) Post-demerger Book Value per share of both companies[cite: 12].</p>
+    `,
+    solution_html: `
+      <h4>1. Share Entitlement Ratio of Fortune Pharma Ltd.</h4>
+      <ul>
+        <li>$$\text{Estimated EPS of Fortune Pharma Ltd.} = \frac{\text{Market Price}}{\text{P/E Ratio}} = \frac{₹ 24.50}{25} = \mathbf{₹ 0.98}$$[cite: 12]</li>
+        <li>$$\text{Number of Shares to be Issued} = \frac{\text{Estimated Profit}}{\text{EPS}} = \frac{₹ 1,470 \text{ lakhs}}{₹ 0.98} = \mathbf{1,500 \text{ lakh shares}}$$[cite: 12]</li>
+        <li>$$\text{Share Entitlement Ratio} = \frac{1,500 \text{ lakh shares of Fortune Pharma}}{3,000 \text{ lakh shares of Fortune India}} = \mathbf{0.50 : 1}$$[cite: 12]</li>
+      </ul>
+      <p>Fortune India shareholders receive <strong>1 share of Fortune Pharma Ltd. for every 2 shares held</strong> (or 0.50 share per 1 share)[cite: 12].</p>
+
+      <h4>2. Expected Market Price of Fortune India (FMCG) Ltd.</h4>
+      <ul>
+        <li>$$\text{Estimated EPS of FMCG Business} = \frac{₹ 11,400 \text{ lakhs}}{3,000 \text{ lakh shares}} = \mathbf{₹ 3.80}$$[cite: 12]</li>
+        <li>$$\text{Expected Market Price} = \text{EPS} \times \text{P/E} = ₹ 3.80 \times 42 = \mathbf{₹ 159.60 \text{ per share}}$$[cite: 12]</li>
+      </ul>
+
+      <h4>3. Book Value Per Share Post-Demerger</h4>
+      <ul>
+        <li><strong>Fortune Pharma Ltd.:</strong>
+          <br />$$\text{Net Worth} = \text{Assets} - \text{Outside Liabilities} = ₹ 25,100 - ₹ 4,100 = \mathbf{₹ 21,000 \text{ lakhs}}$$[cite: 12]
+          <br />$$\text{Book Value per Share} = \frac{₹ 21,000 \text{ lakhs}}{1,500 \text{ lakh shares}} = \mathbf{₹ 14.00}$$[cite: 12]
+        </li>
+        <li><strong>Fortune India (FMCG) Ltd.:</strong>
+          <br />$$\text{Net Worth} = (₹ 70,000 - ₹ 25,100) - (₹ 25,000 - ₹ 4,100) = ₹ 44,900 - ₹ 20,900 = \mathbf{₹ 24,000 \text{ lakhs}}$$[cite: 12]
+          <br />$$\text{Book Value per Share} = \frac{₹ 24,000 \text{ lakhs}}{3,000 \text{ lakh shares}} = \mathbf{₹ 8.00}$$[cite: 12]
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_23",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 33,
+    marks: 8,
+    question_html: `
+      <p>H Ltd. agrees to buy over the business of B Ltd. effective 1st April 2012[cite: 12]. Summarized Balance Sheets as at 31st March 2012 (₹ in Crores)[cite: 12]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">H Ltd.</th>
+              <th style="padding:6px; border:1px solid #ddd;">B Ltd.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Equity Capital (H: ₹ 100 par; B: ₹ 10 par)</td><td>350.00</td><td>6.50</td></tr>
+            <tr><td>Reserve &amp; Surplus</td><td>950.00</td><td>25.00</td></tr>
+            <tr><td>Net Fixed Assets</td><td>220.00</td><td>0.50</td></tr>
+            <tr><td>Net Current Assets</td><td>1,020.00</td><td>29.00</td></tr>
+            <tr><td>Deferred Tax Assets</td><td>60.00</td><td>2.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Maintainable post-tax profits: H Ltd. = ₹ 300 crores; B Ltd. = ₹ 10 crores[cite: 12]. Capitalization rate = 8%[cite: 12]. H Ltd. has a contingent liability of ₹ 300 crores[cite: 12]. Fair value weights: Net Assets = 1, Earnings Capitalization = 3[cite: 12]. Calculate: (i) NAV per share, (ii) Earnings capitalization per share, and (iii) Exchange ratio on Fair Value basis[cite: 12].</p>
+    `,
+    solution_html: `
+      <h4>(i) Net Asset Value per Share</h4>
+      <ul>
+        <li><strong>H Ltd. (3.50 crore shares):</strong>
+          $$\text{Net Assets} = \frac{₹ 1,300 \text{ cr} - ₹ 300 \text{ cr (Contingent Liability)}}{3.50 \text{ crore shares}} = \frac{₹ 1,000 \text{ cr}}{3.50} = \mathbf{₹ 285.71}$$[cite: 12]
+        </li>
+        <li><strong>B Ltd. (0.65 crore shares):</strong>
+          $$\text{Net Assets} = \frac{₹ 31.50 \text{ cr}}{0.65 \text{ crore shares}} = \mathbf{₹ 48.46}$$[cite: 12]
+        </li>
+      </ul>
+
+      <h4>(ii) Earnings Capitalization Value per Share (@ 8%)</h4>
+      <ul>
+        <li><strong>H Ltd.:</strong> $\frac{₹ 300 \text{ cr} / 0.08}{3.50 \text{ cr shares}} = \frac{₹ 3,750 \text{ cr}}{3.50} = \mathbf{₹ 1,071.43}$[cite: 12]</li>
+        <li><strong>B Ltd.:</strong> $\frac{₹ 10 \text{ cr} / 0.08}{0.65 \text{ cr shares}} = \frac{₹ 125 \text{ cr}}{0.65} = \mathbf{₹ 192.31}$[cite: 12]</li>
+      </ul>
+
+      <h4>(iii) Fair Value per Share and Exchange Ratio</h4>
+      <ul>
+        <li>$$\text{Fair Value of H Ltd.} = \frac{(₹ 285.71 \times 1) + (₹ 1,071.43 \times 3)}{4} = \mathbf{₹ 875.00}$$[cite: 12]</li>
+        <li>$$\text{Fair Value of B Ltd.} = \frac{(₹ 48.46 \times 1) + (₹ 192.31 \times 3)}{4} = \mathbf{₹ 156.3475}$$[cite: 12]</li>
+        <li>$$\text{Exchange Ratio} = \frac{₹ 156.3475}{₹ 875.00} = \mathbf{0.1787 \text{ shares of H Ltd. for 1 share of B Ltd.}}$$[cite: 12]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_24",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 34,
+    marks: 8,
+    question_html: `
+      <p>Reliable Industries Ltd. (RIL) is considering a takeover of Sunflower Industries Ltd. (SIL)[cite: 12]:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Reliable Industries Ltd. (RIL)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Sunflower Industries Ltd. (SIL)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Earnings After Tax (EAT) (₹)</td><td>20,00,000</td><td>10,00,000</td></tr>
+            <tr><td>Equity shares outstanding (Nos.)</td><td>10,00,000</td><td>10,00,000</td></tr>
+            <tr><td>EPS (₹)</td><td>2.00</td><td>1.00</td></tr>
+            <tr><td>PE Ratio (Times)</td><td>10</td><td>5</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ol type="i">
+        <li>What is the pre-merger market value of each company?[cite: 12]</li>
+        <li>If RIL offers 1 share for 4 shares of SIL with no synergies, what is post-merger market value, share price, and are RIL shareholders better or worse off?[cite: 12]</li>
+        <li>If earnings increase by 20% due to synergy, what are the new post-merger EPS and share price? Are shareholders better or worse off?[cite: 12]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Pre-Merger Market Value of Each Company</h4>
+      <ul>
+        <li>$$\text{RIL: } \text{MPS} = ₹ 2.00 \times 10 = ₹ 20 \implies \text{Market Value} = 10,00,000 \times ₹ 20 = \mathbf{₹ 2,00,00,000}$$[cite: 12]</li>
+        <li>$$\text{SIL: } \text{MPS} = ₹ 1.00 \times 5 = ₹ 5 \implies \text{Market Value} = 10,00,000 \times ₹ 5 = \mathbf{₹ 50,00,000}$$[cite: 12]</li>
+      </ul>
+
+      <h4>(ii) Post-Merger Position Without Synergy (1 : 4 Ratio)</h4>
+      <ul>
+        <li>Shares issued to SIL: $\frac{10,00,000}{4} = \mathbf{2,50,000 \text{ shares}}$[cite: 12]</li>
+        <li>Total post-merger shares $= 10,00,000 + 2,50,000 = \mathbf{12,50,000 \text{ shares}}$[cite: 12]</li>
+        <li>$$\text{Combined Earnings} = ₹ 20,00,000 + ₹ 10,00,000 = ₹ 30,00,000 \implies \text{EPS} = \frac{₹ 30,00,000}{12,50,000} = \mathbf{₹ 2.40}$$[cite: 12]</li>
+        <li>$$\text{Post-Merger Share Price (P/E = 10)} = ₹ 2.40 \times 10 = \mathbf{₹ 24.00}$$[cite: 12]</li>
+        <li>$$\text{Total Post-Merger Market Value} = 12,50,000 \times ₹ 24.00 = \mathbf{₹ 3,00,00,000}$$[cite: 12]</li>
+        <li><strong>Apportionment of Wealth:</strong>
+          <ul>
+            <li>RIL Shareholders: $10,00,000 \times ₹ 24 = ₹ 2,40,00,000$ (Gain of <strong>+₹ 40,00,000</strong>)[cite: 12]</li>
+            <li>SIL Shareholders: $2,50,000 \times ₹ 24 = ₹ 60,00,000$ (Gain of <strong>+₹ 10,00,000</strong>)[cite: 12]</li>
+          </ul>
+        </li>
+      </ul>
+      <p>Shareholders of both companies are <strong>better off</strong> due to P/E bootstrapping[cite: 12].</p>
+
+      <h4>(iii) Post-Merger Position With 20% Synergy Gains</h4>
+      <ul>
+        <li>$$\text{Synergistic Earnings} = ₹ 30,00,000 \times 1.20 = \mathbf{₹ 36,00,000}$$[cite: 12]</li>
+        <li>$$\text{New Post-Merger EPS} = \frac{₹ 36,00,000}{12,50,000} = \mathbf{₹ 2.88}$$[cite: 12]</li>
+        <li>$$\text{New Post-Merger Share Price} = ₹ 2.88 \times 10 = \mathbf{₹ 28.80}$$[cite: 12]</li>
+      </ul>
+      <p>Shareholders are <strong>significantly better off</strong> (RIL price reaches ₹ 28.80 vs. ₹ 20.00 pre-merger)[cite: 12].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_25",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 35,
+    marks: 8,
+    question_html: `
+      <p>AFC Ltd. wishes to acquire BCD Ltd. (shares issued: 10,00,000 and 5,00,000 respectively)[cite: 12]:</p>
+      <ol type="i">
+        <li>Calculate the increase in value of BCD Ltd. if its growth rate increases from 7% to 8% under AFC control ($D_1 = ₹ 0.60$, Current MPS: AFC = ₹ 100, BCD = ₹ 20)[cite: 12].</li>
+        <li>Calculate gain/loss if AFC Ltd. offers 1 share for every 4 shares of BCD Ltd.[cite: 12]</li>
+        <li>Calculate gain to shareholders if AFC Ltd. pays ₹ 22 cash per share of BCD Ltd. (P/E of AFC unchanged; EPS: AFC = ₹ 8, BCD = ₹ 2.50; cash deployment return = 10%)[cite: 12].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Increase in Total Value of BCD Ltd.</h4>
+      <ul>
+        <li>$$K_e \text{ of BCD Ltd.} = \frac{D_1}{P_0} + g = \frac{₹ 0.60}{₹ 20} + 0.07 = 0.03 + 0.07 = \mathbf{10.00\%}$$[cite: 12]</li>
+        <li>$$\text{New Value per Share with } g = 8\% = \frac{₹ 0.60}{0.10 - 0.08} = \frac{₹ 0.60}{0.02} = \mathbf{₹ 30.00}$$[cite: 12]</li>
+        <li>$$\text{Increase in Total Value} = 5,00,000 \text{ shares} \times (₹ 30 - ₹ 20) = \mathbf{₹ 50,00,000}$$[cite: 12]</li>
+      </ul>
+
+      <h4>(ii) Gain / Loss Under 1 : 4 Share Exchange Ratio</h4>
+      <ul>
+        <li>New shares issued by AFC Ltd. $= \frac{5,00,000}{4} = \mathbf{1,25,000 \text{ shares}}$ ($1.25 \text{ lakhs}$)[cite: 12]</li>
+        <li>Total shares in combined entity $= 10.00 + 1.25 = \mathbf{11.25 \text{ lakh shares}}$[cite: 12]</li>
+        <li>$$\text{Combined Entity Value} = (10\text{L} \times ₹ 100) + (5\text{L} \times ₹ 30) = ₹ 1,000\text{L} + ₹ 150\text{L} = \mathbf{₹ 1,150 \text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\text{New Price per Share} = \frac{₹ 1,150 \text{ lakhs}}{11.25 \text{ lakh shares}} = \mathbf{₹ 102.22}$$[cite: 12]</li>
+        <li><strong>Gain to BCD Ltd. Shareholders:</strong> $₹ 102.22 - (4 \times ₹ 20) = \mathbf{+₹ 22.22 \text{ per 4 shares}}$ (or ₹ 5.56 per share)[cite: 12]</li>
+        <li><strong>Gain to AFC Ltd. Shareholders:</strong> $₹ 102.22 - ₹ 100.00 = \mathbf{+₹ 2.22 \text{ per share}}$[cite: 12]</li>
+      </ul>
+
+      <h4>(iii) Gain Under ₹ 22 Cash Buyout per Share</h4>
+      <ul>
+        <li>Earnings acquired from BCD Ltd. ($5,00,000 \times ₹ 2.50$) $= ₹ 12,50,000$[cite: 12]</li>
+        <li>Less: Opportunity cost of cash paid ($5,00,000 \times ₹ 22 \times 10\%$) $= (₹ 11,00,000)$[cite: 12]</li>
+        <li>Net incremental earnings to AFC Ltd. $= ₹ 1,50,000$[cite: 12]</li>
+        <li>$$\text{Increase in EPS of AFC Ltd.} = \frac{₹ 1,50,00,000 \times 10^{-2}}{10,00,000} = \mathbf{₹ 0.15}$$[cite: 12]</li>
+        <li>$$\text{P/E Ratio of AFC Ltd.} = \frac{₹ 100}{₹ 8} = \mathbf{12.50 \text{ times}}$$[cite: 12]</li>
+        <li><strong>Gain per Share to AFC Ltd. Shareholders:</strong> $₹ 0.15 \times 12.50 = \mathbf{+₹ 1.88 \text{ per share}}$[cite: 12]</li>
+        <li><strong>Gain per Share to BCD Ltd. Shareholders:</strong> $₹ 22.00 - ₹ 20.00 = \mathbf{+₹ 2.00 \text{ per share}}$[cite: 12]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_26",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 36,
+    marks: 8,
+    question_html: `
+      <p>AB Ltd. plans to absorb XY Ltd. on the recommendation of merchant bankers (exchange price of AB Ltd. = average of 6-month high and low: ₹ 570 and ₹ 430)[cite: 12]. XY Ltd. has 20 lakh fully paid shares of ₹ 10 and 10 lakh partly paid shares of ₹ 10 (₹ 5 paid), Net Assets = ₹ 250 lakhs[cite: 12].</p>
+      <p>Projected equity earnings of XY Ltd. (₹ lakhs): Y1 = 105, Y2 = 120, Y3 = 125, Y4 = 120, Y5 = 100, Terminal Value = 200 (PVIF @ 8%: 0.93, 0.86, 0.79, 0.74, 0.68)[cite: 12]. Valuation is the average of DCF and NAV[cite: 12]. Calculate: (a) Total business value of XY Ltd., (b) Number of shares issued, and (c) Basis of allocation[cite: 12].</p>
+    `,
+    solution_html: `
+      <h4>(a) Total Business Value of XY Ltd.</h4>
+      <ul>
+        <li>Issue Price of AB Ltd. $= \frac{₹ 570 + ₹ 430}{2} = \mathbf{₹ 500}$[cite: 12]</li>
+        <li>Net Asset Value (NAV) of XY Ltd. $= \mathbf{₹ 250.00 \text{ lakhs}}$[cite: 12]</li>
+        <li>$$\text{DCF Value} = (105 \times 0.93) + (120 \times 0.86) + (125 \times 0.79) + (120 \times 0.74) + (300 \times 0.68) = \mathbf{₹ 592.40 \text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\text{Average Value of Business} = \frac{₹ 592.40 + ₹ 250.00}{2} = \mathbf{₹ 421.20 \text{ lakhs}}$$ (₹ 4,21,20,000)[cite: 12]</li>
+      </ul>
+
+      <h4>(b) Number of Shares Issued by AB Ltd.</h4>
+      <p>$$\text{Shares to Issue} = \frac{₹ 4,21,20,000}{₹ 500} = \mathbf{84,240 \text{ shares}}$$[cite: 12]</p>
+
+      <h4>(c) Allocation to Shareholders</h4>
+      <ul>
+        <li>Equivalent fully paid shares in XY Ltd. $= 20 \text{L} + (10\text{L} \times 0.5) = \mathbf{25 \text{ lakh shares}}$[cite: 12]</li>
+        <li>$$\text{Fully Paid Group} = 84,240 \times \frac{20}{25} = \mathbf{67,392 \text{ shares}}$$[cite: 12]</li>
+        <li>$$\text{Partly Paid Group} = 84,240 \times \frac{5}{25} = \mathbf{16,848 \text{ shares}}$$[cite: 12]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_27",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 37,
+    marks: 10,
+    question_html: `
+      <p>R Ltd. and S Ltd. operate in the same industry[cite: 12]. Financial statements:</p>
+      <ul>
+        <li>Equity Capital (₹ 10 par): R Ltd. = ₹ 20,00,000; S Ltd. = ₹ 16,00,000[cite: 12]</li>
+        <li>Retained Earnings: R Ltd. = ₹ 4,00,000; S Ltd. = Nil[cite: 12]</li>
+        <li>16% Long-term Debt: R Ltd. = ₹ 10,00,000; S Ltd. = ₹ 6,00,000[cite: 12]</li>
+        <li>Earnings After Tax (EAT): R Ltd. = ₹ 5,33,000; S Ltd. = ₹ 2,49,600[cite: 12]</li>
+        <li>Dividend Payout Ratio: R Ltd. = 20%; S Ltd. = 30%[cite: 12]</li>
+        <li>Market Price per Share: R Ltd. = ₹ 50; S Ltd. = ₹ 20[cite: 12]</li>
+      </ul>
+      <ol type="i">
+        <li>Decompose share price into EPS and P/E, and segregate EPS into ROE and BVPS[cite: 12].</li>
+        <li>Estimate future EPS growth rates[cite: 12].</li>
+        <li>Develop a range of justifiable equity share exchange ratios if intrinsic value of S Ltd. is ₹ 25 on acquisition[cite: 12]. State whether negotiated terms will be closer to the upper or lower limit[cite: 12].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Decomposition of Share Price and EPS</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">R Ltd.</th>
+              <th style="padding:6px; border:1px solid #ddd;">S Ltd.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Shares Outstanding ($N$)</td><td>2,00,000</td><td>1,60,000</td></tr>
+            <tr><td>Earnings After Tax (₹)</td><td>5,33,000</td><td>2,49,600</td></tr>
+            <tr><td>EPS (EAT / $N$) (₹)</td><td><strong>2.665</strong></td><td><strong>1.560</strong></td></tr>
+            <tr><td>Market Price per share (₹)</td><td>50.00</td><td>20.00</td></tr>
+            <tr><td>P/E Ratio (MPS / EPS)</td><td><strong>18.76 times</strong></td><td><strong>12.82 times</strong></td></tr>
+            <tr><td>Equity Funds / Net Worth (₹)</td><td>24,00,000</td><td>16,00,000</td></tr>
+            <tr><td>Book Value per share (BVPS) (₹)</td><td><strong>12.00</strong></td><td><strong>10.00</strong></td></tr>
+            <tr><td>Return on Equity (ROE = EAT / Equity Funds)</td><td><strong>22.21%</strong></td><td><strong>15.60%</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>$$\text{Verification: } \text{EPS} = \text{ROE} \times \text{BVPS} \implies R: 22.21\% \times 12 = ₹ 2.665; \quad S: 15.60\% \times 10 = ₹ 1.560$$[cite: 12]</p>
+
+      <h4>(ii) Future EPS Growth Rates ($g = \text{ROE} \times b$)</h4>
+      <ul>
+        <li><strong>R Ltd.:</strong> Retention Ratio $b = 1 - 0.20 = 0.80 \implies g = 22.21\% \times 0.80 = \mathbf{17.77\% \text{ p.a.}}$[cite: 12]</li>
+        <li><strong>S Ltd.:</strong> Retention Ratio $b = 1 - 0.30 = 0.70 \implies g = 15.60\% \times 0.70 = \mathbf{10.92\% \text{ p.a.}}$[cite: 12]</li>
+      </ul>
+
+      <h4>(iii) Range of Exchange Ratios and Expected Settlement</h4>
+      <ul>
+        <li>$$\text{Lower Limit (Current Market Price Ratio)} = \frac{\text{MPS}_S}{\text{MPS}_R} = \frac{₹ 20}{₹ 50} = \mathbf{0.40 : 1}$$[cite: 12]</li>
+        <li>$$\text{Upper Limit (Intrinsic Synergy Value Ratio)} = \frac{\text{Intrinsic Value}_S}{\text{MPS}_R} = \frac{₹ 25}{₹ 50} = \mathbf{0.50 : 1}$$[cite: 12]</li>
+      </ul>
+      <p><strong>Observation:</strong> R Ltd. possesses superior EPS, higher ROE (22.21% vs. 15.60%), a stronger growth trajectory (17.77% vs. 10.92%), and a premium P/E multiple[cite: 12]. Consequently, R Ltd. holds superior bargaining leverage, and negotiated terms are expected to be <strong>closer to the lower limit (0.40 : 1)</strong>[cite: 12].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_28",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 38,
+    marks: 10,
+    question_html: `
+      <p>BA Ltd. and DA Ltd. operate in the same industry[cite: 12]. Financial statements:</p>
+      <ul>
+        <li>Shares: BA Ltd. = 1,00,000 (₹ 10 par); DA Ltd. = 80,000 (₹ 10 par)[cite: 12]</li>
+        <li>Net Worth: BA Ltd. = ₹ 12,00,000; DA Ltd. = ₹ 8,00,000[cite: 12]</li>
+        <li>EAT: BA Ltd. = ₹ 2,10,000; DA Ltd. = ₹ 99,00,000 &times; 10<sup>-2</sup> = ₹ 99,000[cite: 12]</li>
+        <li>Dividend Payout: BA Ltd. = 40%; DA Ltd. = 60%[cite: 12]</li>
+        <li>Market Price per share: BA Ltd. = ₹ 40; DA Ltd. = ₹ 15[cite: 12]</li>
+      </ul>
+      <p>Acquisition synergy intrinsic value of DA Ltd. = ₹ 20 per share[cite: 12]. Calculate:</p>
+      <ol type="i">
+        <li>EPS, P/E, ROE, and BVPS[cite: 12].</li>
+        <li>Future EPS growth rates[cite: 12].</li>
+        <li>Range of justifiable exchange ratios[cite: 12].</li>
+        <li>Post-merger EPS and accretion/dilution at 0.4 : 1 exchange ratio[cite: 12].</li>
+        <li>Post-merger market price (BA Ltd. P/E continuing) and market price accretion/dilution[cite: 12].</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Financial Parameters Decomposition</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">BA Ltd.</th>
+              <th style="padding:6px; border:1px solid #ddd;">DA Ltd.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>EPS (EAT / $N$) (₹)</td><td><strong>2.100</strong></td><td><strong>1.2375</strong></td></tr>
+            <tr><td>P/E Ratio (MPS / EPS)</td><td><strong>19.05 times</strong></td><td><strong>12.12 times</strong></td></tr>
+            <tr><td>Book Value per share (BVPS) (₹)</td><td><strong>12.00</strong></td><td><strong>10.00</strong></td></tr>
+            <tr><td>Return on Equity (ROE)</td><td><strong>17.50%</strong></td><td><strong>12.375%</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>(ii) Growth Rate in EPS ($g = \text{ROE} \times b$)</h4>
+      <ul>
+        <li><strong>BA Ltd.:</strong> $17.50\% \times (1 - 0.40) = \mathbf{10.50\% \text{ p.a.}}$[cite: 12]</li>
+        <li><strong>DA Ltd.:</strong> $12.375\% \times (1 - 0.60) = \mathbf{4.95\% \text{ p.a.}}$[cite: 12]</li>
+      </ul>
+
+      <h4>(iii) Range of Exchange Ratios</h4>
+      <ul>
+        <li>$$\text{Lower Limit (Market Price)} = \frac{\text{MPS}_{DA}}{\text{MPS}_{BA}} = \frac{₹ 15}{₹ 40} = \mathbf{0.375 : 1}$$[cite: 12]</li>
+        <li>$$\text{Upper Limit (Intrinsic Value)} = \frac{₹ 20}{₹ 40} = \mathbf{0.500 : 1}$$[cite: 12]</li>
+      </ul>
+      <p>Because BA Ltd. holds higher growth and profitability, the settlement will be <strong>closer to 0.375 : 1</strong>[cite: 12].</p>
+
+      <h4>(iv) Post-Merger EPS and Accretion / Dilution (at 0.40 : 1 Ratio)</h4>
+      <ul>
+        <li>Shares issued: $80,000 \times 0.40 = 32,000 \text{ shares} \implies \text{Total Shares} = \mathbf{1,32,000}$[cite: 12]</li>
+        <li>$$\text{Post-Merger EPS} = \frac{₹ 2,10,000 + ₹ 99,000}{1,32,000} = \frac{₹ 3,09,000}{1,32,000} = \mathbf{₹ 2.341}$$[cite: 12]</li>
+        <li><strong>BA Ltd. Shareholders:</strong> $₹ 2.341 - ₹ 2.100 = \mathbf{+₹ 0.241 \text{ (Accretion)}}$[cite: 12]</li>
+        <li><strong>DA Ltd. Shareholders:</strong> $(₹ 2.341 \times 0.40) - ₹ 1.2375 = ₹ 0.9364 - ₹ 1.2375 = \mathbf{-₹ 0.301 \text{ (Dilution)}}$[cite: 12]</li>
+      </ul>
+
+      <h4>(v) Post-Merger Market Price (P/E = 19.05 times)</h4>
+      <ul>
+        <li>$$\text{New Market Price} = ₹ 2.341 \times 19.05 = \mathbf{₹ 44.60}$$[cite: 12]</li>
+        <li><strong>BA Ltd. Shareholders:</strong> $₹ 44.60 - ₹ 40.00 = \mathbf{+₹ 4.60 \text{ Accretion}}$[cite: 12]</li>
+        <li><strong>DA Ltd. Shareholders:</strong> $(₹ 44.60 \times 0.40) - ₹ 15.00 = ₹ 17.84 - ₹ 15.00 = \mathbf{+₹ 2.84 \text{ Accretion}}$[cite: 12]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_29",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 39,
+    marks: 10,
+    question_html: `
+      <p>Weak Bank (W) merges with Strong Bank (S)[cite: 12]. Assigned weights: Gross NPA = 30%, Capital Adequacy Ratio (CAR) = 28%, Market Price = 32%, Book Value = 10%[cite: 12]. Data:</p>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Particulars</th>
+              <th style="padding:6px; border:1px solid #ddd;">Weak Bank (W)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Strong Bank (S)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Gross NPA (%)</td><td>40%</td><td>5%</td></tr>
+            <tr><td>CAR (%)</td><td>5%</td><td>16%</td></tr>
+            <tr><td>Market Price per Share (₹)</td><td>12</td><td>96</td></tr>
+            <tr><td>Paid-up Share Capital (₹ 10 par) (₹ Lakhs)</td><td>150</td><td>500</td></tr>
+            <tr><td>Reserves &amp; Surplus (₹ Lakhs)</td><td>80</td><td>5,500</td></tr>
+            <tr><td>Preliminary Expenses (₹ Lakhs)</td><td>50</td><td>—</td></tr>
+            <tr><td>Gross Advances (₹ Lakhs)</td><td>3,500</td><td>27,000</td></tr>
+            <tr><td>Total Deposits (₹ Lakhs)</td><td>4,000</td><td>44,000</td></tr>
+            <tr><td>Other Liabilities (₹ Lakhs)</td><td>890</td><td>2,500</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Calculate: (a) Swap ratio, (b) Shares to be issued, (c) Post-merger Balance Sheet, and (d) Post-merger CAR and Gross NPA %[cite: 12].</p>
+    `,
+    solution_html: `
+      <h4>1. Book Values per Share</h4>
+      <ul>
+        <li>Weak Bank: $\text{Net Worth} = 150 + 80 - 50 = ₹ 180 \text{ lakhs} \implies \text{BVPS} = \frac{₹ 180\text{L}}{15\text{L}} = \mathbf{₹ 12.00}$[cite: 12]</li>
+        <li>Strong Bank: $\text{Net Worth} = 500 + 5,500 = ₹ 6,000 \text{ lakhs} \implies \text{BVPS} = \frac{₹ 6,000\text{L}}{50\text{L}} = \mathbf{₹ 120.00}$[cite: 12]</li>
+      </ul>
+
+      <h4>(a) Calculation of Weighted Swap Ratio</h4>
+      <ul>
+        <li>Gross NPA Ratio: $\frac{5}{40} \times 30\% = \mathbf{0.0375}$[cite: 12]</li>
+        <li>CAR Ratio: $\frac{5}{16} \times 28\% = \mathbf{0.0875}$[cite: 12]</li>
+        <li>Market Price Ratio: $\frac{12}{96} \times 32\% = \mathbf{0.0400}$[cite: 12]</li>
+        <li>Book Value Ratio: $\frac{12}{120} \times 10\% = \mathbf{0.0100}$[cite: 12]</li>
+        <li>$$\text{Weighted Swap Ratio} = 0.0375 + 0.0875 + 0.0400 + 0.0100 = \mathbf{0.1750}$$[cite: 12]</li>
+      </ul>
+
+      <h4>(b) Shares to be Issued to Weak Bank</h4>
+      <p>$$\text{Shares Issued} = 15 \text{ lakh shares} \times 0.1750 = \mathbf{2.625 \text{ lakh shares (Nominal: ₹ 26.25 lakhs)}}$$[cite: 12]</p>
+      <p>$$\text{Capital Reserve Created} = \text{Net Worth Acquired} - \text{Nominal Share Capital} = ₹ 180.00\text{L} - ₹ 26.25\text{L} = \mathbf{₹ 153.75 \text{ lakhs}}$$[cite: 12]</p>
+
+      <h4>(c) Balance Sheet of Strong Bank Post-Merger (₹ in Lakhs)</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Liabilities</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">₹ in Lakhs</th>
+              <th style="padding:6px; border:1px solid #ddd;">Assets</th>
+              <th style="padding:6px; border:1px solid #ddd; text-align:right;">₹ in Lakhs</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Share Capital ($500 + 26.25$)</td><td style="text-align:right;">526.25</td><td>Cash &amp; Balances with RBI ($400 + 2,500$)</td><td style="text-align:right;">2,900.00</td></tr>
+            <tr><td>Reserves &amp; Surplus</td><td style="text-align:right;">5,500.00</td><td>Balances with Other Banks</td><td style="text-align:right;">2,000.00</td></tr>
+            <tr><td>Capital Reserve</td><td style="text-align:right;">153.75</td><td>Investments ($1,100 + 19,000$)</td><td style="text-align:right;">20,100.00</td></tr>
+            <tr><td>Deposits ($4,000 + 44,000$)</td><td style="text-align:right;">48,000.00</td><td>Advances ($3,500 + 27,000$)</td><td style="text-align:right;">30,500.00</td></tr>
+            <tr><td>Other Liabilities ($890 + 2,500$)</td><td style="text-align:right;">3,390.00</td><td>Other Assets ($70 + 2,000$)</td><td style="text-align:right;">2,070.00</td></tr>
+            <tr style="font-weight:bold; background-color:#fafafa;">
+              <td>Total</td><td style="text-align:right;">57,570.00</td><td>Total</td><td style="text-align:right;">57,570.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>(d) Post-Merger Prudential Ratios</h4>
+      <ul>
+        <li><strong>Risk-Weighted Assets:</strong>
+          <br />Weak Bank: $\frac{₹ 180\text{L}}{0.05} = ₹ 3,600 \text{ lakhs}$; Strong Bank: $\frac{₹ 6,000\text{L}}{0.16} = ₹ 37,500 \text{ lakhs}$[cite: 12]
+          <br />$$\text{Combined RWA} = ₹ 3,600 + ₹ 37,500 = \mathbf{₹ 41,100 \text{ lakhs}}$$[cite: 12]
+          <br />$$\text{Post-Merger CAR} = \frac{₹ 6,180 \text{ lakhs}}{₹ 41,100 \text{ lakhs}} \times 100 = \mathbf{15.04\%}$$[cite: 12]
+        </li>
+        <li><strong>Gross NPA:</strong>
+          <br />Weak Bank: $40\% \times ₹ 3,500\text{L} = ₹ 1,400 \text{ lakhs}$; Strong Bank: $5\% \times ₹ 27,000\text{L} = ₹ 1,350 \text{ lakhs}$[cite: 12]
+          <br />$$\text{Combined GNPA} = ₹ 1,400 + ₹ 1,350 = \mathbf{₹ 2,750 \text{ lakhs}}$$[cite: 12]
+          <br />$$\text{Post-Merger Gross NPA \%} = \frac{₹ 2,750 \text{ lakhs}}{₹ 30,500 \text{ lakhs}} \times 100 = \mathbf{9.02\%}$$[cite: 12]
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_30",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 40,
+    marks: 8,
+    question_html: `
+      <p>Tiger Ltd. plans to acquire Leopard Ltd. (Balance Sheet: Equity = 70,000 shares of ₹ 10; Reserves = ₹ 3,00,000; 12% Debentures = ₹ 3,00,000; Creditors = ₹ 3,20,000)[cite: 12]. Terms:</p>
+      <ul>
+        <li>1 share in Tiger Ltd. (quoted @ ₹ 15) for every 2 shares in Leopard Ltd.[cite: 12]</li>
+        <li>External liabilities settled at ₹ 5,00,000; Debentures replaced with 13% convertible debentures in Tiger Ltd. for ₹ 3,00,000[cite: 12]. Debtors &amp; inventory realize ₹ 2,00,000; Cash is ₹ 50,000[cite: 12].</li>
+        <li>Annual operating CFAT of division = ₹ 5,00,000 for 6 years, demerged/disposed of for ₹ 2,00,000 at Year 6 end[cite: 12].</li>
+        <li>Cost of capital = 16% (PVAF = 3.684, PVF<sub>6</sub> = 0.410)[cite: 12].</li>
+      </ul>
+      <p>Advise the Board regarding the financial feasibility of the acquisition[cite: 12].</p>
+    `,
+    solution_html: `
+      <h4>1. Net Purchase Consideration (Initial Cash Outlay)</h4>
+      <ul>
+        <li>Equity shares issued: $\frac{70,000}{2} = 35,000 \text{ shares} \times ₹ 15 = ₹ 5,25,000$[cite: 12]</li>
+        <li>Settlement of external liabilities $= ₹ 5,00,000$[cite: 12]</li>
+        <li>Issue of 13% convertible debentures $= ₹ 3,00,000$[cite: 12]</li>
+        <li>Total Gross Consideration $= \mathbf{₹ 13,25,000}$[cite: 12]</li>
+        <li>Less: Current liquid assets realized ($₹ 2,00,000 + ₹ 50,000$) $= (₹ 2,50,000)$[cite: 12]</li>
+        <li>$$\text{Net Acquisition Outflow} = ₹ 13,25,000 - ₹ 2,50,000 = \mathbf{₹ 10,75,000}$$[cite: 12]</li>
+      </ul>
+
+      <h4>2. Discounted Cash Inflows and Project NPV</h4>
+      <ul>
+        <li>$$\text{PV of 6-Year Operating Cash Inflows} = ₹ 5,00,000 \times 3.684 = \mathbf{₹ 18,42,000}$$[cite: 12]</li>
+        <li>$$\text{PV of Terminal Demerger Realization} = ₹ 2,00,000 \times 0.410 = \mathbf{₹ 82,000}$$[cite: 12]</li>
+        <li>$$\text{Total Present Value of Benefits} = ₹ 18,42,000 + ₹ 82,000 = \mathbf{₹ 19,24,000}$$[cite: 12]</li>
+      </ul>
+      <p>$$\text{Net Present Value (NPV)} = ₹ 19,24,000 - ₹ 10,75,000 = \mathbf{+₹ 8,49,000}$$[cite: 12]</p>
+      <p><strong>Advice:</strong> Because the acquisition generates a positive NPV of <strong>₹ 8,49,000</strong>, the takeover of Leopard Ltd. is <strong>financially feasible and recommended</strong>[cite: 12].</p>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH14_TYK_PR_31",
+    question_type: "practical",
+    source: "ICAI Study Material",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    // placement: 41,
+    marks: 6,
+    question_html: `
+      <p>XYZ Ltd.'s shares trade at ₹ 24 (10,00,000 shares outstanding; promoters hold 40%)[cite: 12]. PQR Ltd. wishes to acquire XYZ Ltd. with estimated synergy gains of ₹ 80,00,000[cite: 12]. Eliminating top management excessive perks/salaries will yield savings of ₹ 4,00,000 p.a. (PV = ₹ 30,00,000)[cite: 12]. PQR Ltd. has EPS of ₹ 4 and trades at ₹ 40 (15,00,000 shares)[cite: 12].</p>
+      <ol type="i">
+        <li>What is the maximum price per equity share that PQR Ltd. can offer for XYZ Ltd.?[cite: 12]</li>
+        <li>What is the minimum price per share at which XYZ Ltd.'s promoters will sell their controlling interest?[cite: 12]</li>
+      </ol>
+    `,
+    solution_html: `
+      <h4>(i) Maximum Price Per Share Payable by PQR Ltd.</h4>
+      <ul>
+        <li>Current Standalone Market Value of XYZ Ltd. ($10,00,000 \times ₹ 24$) $= ₹ 2,40,00,000$[cite: 12]</li>
+        <li>Add: Present Value of Operating Synergies $= ₹ 80,00,000$[cite: 12]</li>
+        <li>Add: Present Value of Executive Salary &amp; Perk Savings $= ₹ 30,00,000$[cite: 12]</li>
+        <li>$$\text{Total Maximum Value of Target Entity} = \mathbf{₹ 3,50,00,000}$$[cite: 12]</li>
+      </ul>
+      <p>$$\text{Maximum Price per Share} = \frac{₹ 3,50,00,000}{10,00,000 \text{ shares}} = \mathbf{₹ 35.00 \text{ per share}}$$[cite: 12]</p>
+
+      <h4>(ii) Minimum Price Per Share Acceptable to Controlling Promoters</h4>
+      <ul>
+        <li>Promoters' Holding in XYZ Ltd. $= 40\% \times 10,00,000 = \mathbf{4,00,000 \text{ shares}}$[cite: 12]</li>
+        <li>Standalone Value of Promoters' Stake ($4,00,000 \times ₹ 24$) $= ₹ 96,00,000$[cite: 12]</li>
+        <li>Add: PV of Personal Remuneration and Perks Forgone upon Exit $= ₹ 30,00,000$[cite: 12]</li>
+        <li>$$\text{Total Minimum Consideration Required by Promoters} = ₹ 96,00,000 + ₹ 30,00,000 = \mathbf{₹ 1,26,00,000}$$[cite: 12]</li>
+      </ul>
+      <p>$$\text{Minimum Acceptable Price per Share} = \frac{₹ 1,26,00,000}{4,00,000 \text{ shares}} = \mathbf{₹ 31.50 \text{ per share}}$$[cite: 12]</p>
+    `
+  },
+  // chapter15
+  {
+    question_id: "AFM_ICAIBOOK_CH15_TYK_TH_01",
+    question_type: "theory",
+    source: "ICAI Study Material",
+    chapter_name: "Startup Finance",
+    // placement: 1,
+    marks: 8,
+    question_html: `
+      <p>Explain some of the innovative sources for funding a start-up.[cite: 13]</p>
+    `,
+    solution_html: `
+      <p>Because traditional conservative lenders like commercial banks are reluctant to finance unproven, asset-light startup ventures, entrepreneurs rely on non-bank innovative financing avenues[cite: 13]:</p>
+
+      <h4>1. Personal Financing (Self-Funding)</h4>
+      <ul>
+        <li>Investing personal savings into the business demonstrates the founder's commitment and skin-in-the-game[cite: 13].</li>
+        <li>External institutional investors rarely commit capital unless the founder has injected significant personal funds[cite: 13].</li>
+      </ul>
+
+      <h4>2. Personal Credit Lines</h4>
+      <ul>
+        <li>Credit lines, such as commercial or personal credit cards, provide immediate, flexible working capital[cite: 13].</li>
+        <li>Availability is governed by the entrepreneur's personal credit score, and banks extend this facility when the startup generates reliable cash flows to service credit card debt[cite: 13].</li>
+      </ul>
+
+      <h4>3. Family and Friends</h4>
+      <ul>
+        <li>Early-stage capital provided by relatives and acquaintances who believe in the founder's integrity, even before the business concept is validated[cite: 13].</li>
+        <li>These loans should be formalized through written promissory notes or agreements to preserve personal relationships and establish clarity[cite: 13].</li>
+      </ul>
+
+      <h4>4. Peer-to-Peer (P2P) Lending</h4>
+      <ul>
+        <li>Online platforms and organized communities where individuals pool capital to lend directly to each other without conventional banking intermediaries[cite: 13].</li>
+        <li>Ethnic, trade, and professional associations often provide mutual financial backing to support member ventures[cite: 13].</li>
+      </ul>
+
+      <h4>5. Crowdfunding</h4>
+      <ul>
+        <li>The process of raising small amounts of capital from a large number of individuals through internet platforms and social media networks[cite: 13].</li>
+        <li>It provides market validation, early brand exposure, and pre-orders directly from prospective consumers[cite: 13].</li>
+      </ul>
+
+      <h4>6. Microloans</h4>
+      <ul>
+        <li>Small-denomination loans extended by microfinance institutions, non-profits, or aggregated individual lenders at affordable interest rates to launch early-stage operations[cite: 13].</li>
+      </ul>
+
+      <h4>7. Vendor Financing</h4>
+      <ul>
+        <li>A financing arrangement where equipment manufacturers or raw material distributors lend funds or extend credit terms (e.g., expanding credit periods from 30 to 60 or 90 days), allowing the startup to sell products before paying suppliers[cite: 13].</li>
+      </ul>
+
+      <h4>8. Purchase Order (PO) Financing</h4>
+      <ul>
+        <li>When a startup receives a large customer order but lacks working capital to fulfill it, PO financing companies advance funds directly to the startup's suppliers to produce and deliver the goods[cite: 13].</li>
+        <li>The financing agency collects payment from the end customer and disburses the net profit margin to the startup[cite: 13].</li>
+      </ul>
+
+      <h4>9. Factoring Accounts Receivables</h4>
+      <ul>
+        <li>The startup sells its credit invoices to a commercial factoring house, receiving 80% to 90% of the invoice value upfront in cash[cite: 13].</li>
+        <li>The factor assumes collection and ledger management, releasing the balance upon customer collection after deducting a discount fee[cite: 13].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ICAIBOOK_CH15_TYK_TH_02",
+    question_type: "theory",
+    source: "ICAI Study Material",
+    chapter_name: "Startup Finance",
+    // placement: 2,
+    marks: 8,
+    question_html: `
+      <p>What do you mean by Pitch Presentation in context of Start-up Business?[cite: 13]</p>
+    `,
+    solution_html: `
+      <p>A <strong>Pitch Presentation</strong> (or Pitch Deck) is a brief presentation (typically under 20 minutes) delivered using visual slide decks to potential angel investors, venture capitalists, corporate partners, and co-founders[cite: 13]. Its objective is to provide a concise overview of the startup's business plan, value proposition, and growth potential to secure capital investment[cite: 13].</p>
+
+      <h4>Core Components of an Effective Pitch Deck</h4>
+      <ol>
+        <li><strong>Introduction:</strong> A brief opening outlining the company's identity, founding vision, and notable traction milestones[cite: 13].</li>
+        <li><strong>Team:</strong> An overview of the core founding members, highlighting their educational credentials (e.g., IIT/IIM alumni), technical expertise, industry track records, and complementary skill sets[cite: 13].</li>
+        <li><strong>Problem:</strong> A clear articulation of the market pain point or inefficiency the startup intends to solve[cite: 13].</li>
+        <li><strong>Solution:</strong> A demonstration of the startup's product or service offering and how it solves the identified problem (e.g., Flipkart introducing Cash on Delivery and proprietary logistics to overcome early e-commerce barriers in India)[cite: 13].</li>
+        <li><strong>Marketing &amp; Sales Strategy:</strong> Analysis of the Total Addressable Market (TAM), customer acquisition strategy, pricing structure, and distribution channels[cite: 13].</li>
+        <li><strong>Financial Projections &amp; Milestones:</strong> Multi-year financial estimates covering:
+          <ul>
+            <li><em>Income Statement:</em> Projected revenues, gross margins, operating overheads, and break-even timelines[cite: 13].</li>
+            <li><em>Cash Flow Statement:</em> Monthly cash burn rates, operational runway, and net working capital needs[cite: 13].</li>
+            <li><em>Balance Sheet:</em> Capital structure, assets employed, and debt obligations[cite: 13].</li>
+          </ul>
+        </li>
+        <li><strong>Competition:</strong> A competitive landscape matrix illustrating market rivals, existing barriers to entry, and the startup's unique selling proposition (USP)[cite: 13].</li>
+        <li><strong>Business Model:</strong> Details on revenue generation streams, unit economics, gross margins, Customer Lifetime Value (LTV), and Customer Acquisition Cost (CAC)[cite: 13].</li>
+        <li><strong>Financing Requirement:</strong> Clarification of previous capital raised, current funding requirements, and planned allocation of funds (e.g., product R&amp;D, hiring, customer acquisition)[cite: 13].</li>
+      </ol>
+    `
+  },
+  // Theory -DJ
+  // =========================================================================
+  // CHAPTER 1: FINANCIAL POLICY AND CORPORATE STRATEGY
+  // =========================================================================
+  {
+    question_id: "AFM_ED4_CH01_TH_01",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Financial Policy and Corporate Strategy",
+    // placement: 1,
+    marks: 6,
+    question_html: `
+      <p>Explain the advanced role of the Chief Financial Officer (CFO) in various matters, including value creation and corporate decision-making in the current scenario of globalization and technological expansion.</p>
+    `,
+    solution_html: `
+      <p>The traditional role of the CFO focused primarily on shareholder wealth maximization, financial reporting, and compliance. Driven by globalization, rapid developments in information and communications technology, and supply chain disruptions, the role has expanded to strategic leadership and business partnership:</p>
+      <ul>
+        <li><strong>Risk Management:</strong> CFOs oversee the organization's enterprise risk management (ERM) framework, proactively identifying, quantifying, and hedging operational, market, and geopolitical risks[cite: 15].</li>
+        <li><strong>Supply Chain Viability:</strong> Post-pandemic disruptions highlight supply chain fragility[cite: 15]. CFOs evaluate the financial viability, sustainability, and capital allocation of supplier networks to support resilient growth[cite: 15].</li>
+        <li><strong>Mergers, Acquisitions &amp; Corporate Restructuring:</strong> Inorganic expansion carries high downside risk[cite: 15]. CFOs lead target valuation, financial due diligence, deal structuring, and post-merger integration to prevent value destruction[cite: 15].</li>
+        <li><strong>ESG (Environmental, Social, and Governance) Financing:</strong> With the rise of ESG mandates, CFOs steer capital raising from conventional debts toward sustainable finance instruments like Green Bonds, Sustainability-Linked Loans, and Social Bonds[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH01_TH_02",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Financial Policy and Corporate Strategy",
+    // placement: 2,
+    marks: 4,
+    question_html: `
+      <p>What are the three essential fundamental elements of any business enterprise?[cite: 15]</p>
+    `,
+    solution_html: `
+      <p>Every commercial enterprise requires three core pillars to achieve viability and scale[cite: 15]:</p>
+      <ul>
+        <li><strong>A Clear and Realistic Strategy:</strong> A well-defined market direction and competitive scope aligned with customer needs and market opportunities[cite: 15].</li>
+        <li><strong>Financial Resources, Controls, and Systems:</strong> The capital adequacy, cash flow runway, and internal governance frameworks required to execute plans[cite: 15].</li>
+        <li><strong>The Right Management Team and Processes:</strong> A skilled leadership group and operational processes to execute the strategy[cite: 15].</li>
+      </ul>
+      <p style="text-align:center; font-weight:bold; margin-top:10px;">$$\text{Strategy} + \text{Finance} + \text{Management} = \text{Fundamentals of Business}$$[cite: 15]</p>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH01_TH_03",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Financial Policy and Corporate Strategy",
+    // placement: 3,
+    marks: 4,
+    question_html: `
+      <p>Write a short note on Strategy.[cite: 15]</p>
+    `,
+    solution_html: `
+      <p><strong>Strategy</strong> is the long-term direction and scope of an organization to achieve competitive advantage through the configuration of resources within a changing market environment, with the goal of fulfilling stakeholder aspirations and expectations[cite: 15]. It defines which markets to enter, which products to offer, and how to allocate scarce financial and operational resources to generate sustainable returns[cite: 15].</p>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH01_TH_04",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Financial Policy and Corporate Strategy",
+    // placement: 4,
+    marks: 6,
+    question_html: `
+      <p>What are the functions of Strategic Financial Management?[cite: 15]</p>
+    `,
+    solution_html: `
+      <p><strong>Strategic Financial Management (SFM)</strong> applies financial techniques to strategic decision-making to achieve corporate objectives[cite: 15]. It operates across three organizational tiers: senior management determines strategy, middle management decides tactical plans, and operational management executes daily functions[cite: 15].</p>
+      <h4>Core Functions</h4>
+      <ul>
+        <li><strong>Continual Search for Investment Opportunities:</strong> Identifying value-accretive capital projects, product expansions, and market entry points[cite: 15].</li>
+        <li><strong>Selection of the Best Profitable Opportunities:</strong> Screening projects using financial appraisal techniques like NPV, IRR, and risk-adjusted metrics[cite: 15].</li>
+        <li><strong>Determination of Optimal Mix of Funds:</strong> Designing a balanced capital structure between equity and debt to minimize WACC while managing financial risk[cite: 15].</li>
+        <li><strong>Establishment of Systems for Internal Controls:</strong> Implementing governance, budgetary oversight, and cash management systems[cite: 15].</li>
+        <li><strong>Analysis of Financial Results:</strong> Conducting variance analysis and performance reviews to inform corporate planning[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH01_TH_05",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Financial Policy and Corporate Strategy",
+    // placement: 5,
+    marks: 6,
+    question_html: `
+      <p>What are the key decisions falling within the scope of financial strategy?[cite: 15]</p>
+    `,
+    solution_html: `
+      <p>The scope of financial strategy encompasses four primary decision areas[cite: 15]:</p>
+      <ul>
+        <li><strong>Financing Decisions:</strong> Focuses on funding sources and finding the optimal mix of equity capital, debt capital, and hybrid instruments to optimize leverage and the cost of capital[cite: 15].</li>
+        <li><strong>Investment Decisions:</strong> Involves deploying corporate funds into long-term capital projects[cite: 15]. Because future cash flows carry uncertainty, investments are assessed by balancing risk against expected returns[cite: 15].</li>
+        <li><strong>Dividend Decisions:</strong> Determines the distribution of net profit after tax between dividend payouts to shareholders and internal earnings retention for business growth[cite: 15].</li>
+        <li><strong>Portfolio Decisions:</strong> Evaluates individual assets and business units based on their contribution to the company's overall risk-return profile rather than in isolation[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH01_TH_06",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Financial Policy and Corporate Strategy",
+    // placement: 6,
+    marks: 6,
+    question_html: `
+      <p>Explain the three different levels of strategy within an organization.[cite: 15]</p>
+    `,
+    solution_html: `
+      <p>Organizational strategies operate across three distinct operational tiers[cite: 15]:</p>
+      <ul>
+        <li><strong>Corporate Level Strategy:</strong> Defines the industries and markets in which the overall enterprise chooses to compete[cite: 15]. It directs capital allocation across business units and addresses three fundamental criteria: <em>suitability</em>, <em>feasibility</em>, and <em>acceptability</em>[cite: 15].</li>
+        <li><strong>Business Unit Level Strategy:</strong> Formulated for autonomous Strategic Business Units (SBUs) or independent profit centers[cite: 15]. It focuses on building competitive advantage for specific products or services within targeted market segments[cite: 15].</li>
+        <li><strong>Functional Level Strategy:</strong> Operates within specific departments (e.g., Finance, Marketing, Operations, R&amp;D, Human Resources)[cite: 15]. It establishes process-level plans to translate business unit strategies into day-to-day operations[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH01_TH_07",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Financial Policy and Corporate Strategy",
+    // placement: 7,
+    marks: 4,
+    question_html: `
+      <p>Describe the main function of Corporate Level Strategy and state the three basic questions it must answer.[cite: 15]</p>
+    `,
+    solution_html: `
+      <p>The primary function of <strong>Corporate Level Strategy</strong> is selecting the businesses in which the enterprise should compete, as well as coordinating and developing that business portfolio[cite: 15]. It addresses three fundamental questions[cite: 15]:</p>
+      <ul>
+        <li><strong>Suitability:</strong> Does the strategy align with and advance the core objectives of the company?[cite: 15]</li>
+        <li><strong>Feasibility:</strong> Does the organization possess the financial, operational, and managerial resources required to implement the strategy successfully?[cite: 15]</li>
+        <li><strong>Acceptability:</strong> Does the strategy satisfy the financial (e.g., ROI, EVA) and non-financial expectations of internal and external stakeholders?[cite: 15]</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH01_TH_08",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Financial Policy and Corporate Strategy",
+    // placement: 8,
+    marks: 4,
+    question_html: `
+      <p>What is Financial Planning, and what are its three major components?[cite: 15]</p>
+    `,
+    solution_html: `
+      <p><strong>Financial Planning</strong> establishes the operating scope for all corporate activities and serves as the foundation for strategic business planning[cite: 15]. It is a structured process that helps a firm use its available financial resources through analytical tools to meet its financial goals[cite: 15].</p>
+      <h4>Three Major Components</h4>
+      <ul>
+        <li><strong>Financial Resources (FR):</strong> The internal funds, debt borrowing capacity, and equity capital available to the firm[cite: 15].</li>
+        <li><strong>Financial Tools (FT):</strong> Analytical instruments like cash flow forecasting, ratio analysis, sensitivity modeling, and capital budgeting methods[cite: 15].</li>
+        <li><strong>Financial Goals (FG):</strong> Quantified financial targets, such as return on equity, profit margins, and revenue growth[cite: 15].</li>
+      </ul>
+      <p style="text-align:center; font-weight:bold; margin-top:8px;">$$\text{Financial Planning: } \text{FR} + \text{FT} = \text{FG}$$[cite: 15]</p>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH01_TH_09",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Financial Policy and Corporate Strategy",
+    // placement: 9,
+    marks: 4,
+    question_html: `
+      <p>Explain the key outcomes of Financial Planning.[cite: 15]</p>
+    `,
+    solution_html: `
+      <p>Financial planning generates three primary outcomes that guide corporate performance[cite: 15]:</p>
+      <ul>
+        <li><strong>Financial Objectives:</strong> Targets defined at the outset to ensure all financial operations align with the firm's broader corporate mission[cite: 15].</li>
+        <li><strong>Financial Decision-Making:</strong> Frameworks for analyzing capital requirements and evaluating funding choices to address corporate challenges[cite: 15].</li>
+        <li><strong>Financial Performance Measures:</strong> Quantitative standards (e.g., ratio analysis, cash flow benchmarking, variance analysis) used to assess corporate results against targets[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH01_TH_10",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Financial Policy and Corporate Strategy",
+    // placement: 10,
+    marks: 6,
+    question_html: `
+      <p>Explain the interface between financial policy and strategic management.[cite: 15]</p>
+    `,
+    solution_html: `
+      <p>A business begins with capital and ends with financial returns[cite: 15]. Financial policy intersects with strategic management across several core areas[cite: 15]:</p>
+      <ul>
+        <li><strong>Sources of Finance and Capital Structure:</strong> Raising capital to support expansion is essential[cite: 15]. Strategists establish leverage guidelines (Debt-to-Equity ratios) to support growth while managing borrowing risk[cite: 15].</li>
+        <li><strong>Investment and Fund Allocation Decisions:</strong> Policies establish criteria for allocating capital to fixed assets, R&amp;D, and working capital needs[cite: 15].</li>
+        <li><strong>Dividend Policy:</strong> Sets dividend payouts to reward shareholders while retaining enough earnings to fund strategic initiatives[cite: 15].</li>
+        <li><strong>Cross-Functional Integration:</strong> Financial policy connects with marketing, operations, and HR, providing the resources needed for enterprise growth[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH01_TH_11",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Financial Policy and Corporate Strategy",
+    // placement: 11,
+    marks: 6,
+    question_html: `
+      <p>How can financial goals be balanced vis-à-vis sustainable growth?[cite: 15]</p>
+    `,
+    solution_html: `
+      <p>Sustainable growth principles encourage managers to set sales targets that align with the company's financial and operating capabilities[cite: 15]:</p>
+      <ul>
+        <li><strong>Resolving Growth Conflicts:</strong> Conflicts occur when sales targets exceed the firm's financial capacity, requiring excessive debt that increases insolvency risk[cite: 15].</li>
+        <li><strong>Balancing Stakeholder Needs:</strong> In industries with finite resources (e.g., oil and gas), firms must balance near-term extraction against long-term resource availability[cite: 15]. The &ldquo;Save Fuel&rdquo; campaign is an example of an industry adopting conservation to ensure long-term viability[cite: 15].</li>
+        <li><strong>Growth Strategies:</strong> Organizations manage pacing through various approaches:
+          <ul>
+            <li><em>Stable Growth Strategy:</em> Moderate expansion in line with available resources[cite: 15].</li>
+            <li><em>Incremental Growth Strategy:</em> Expanding gradually step-by-step[cite: 15].</li>
+            <li><em>Profit Strategy:</em> Prioritizing margins and cash flows over volume growth[cite: 15].</li>
+            <li><em>Pause Strategy:</em> Consolidating operations before pursuing further expansion[cite: 15].</li>
+          </ul>
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH01_TH_12",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Financial Policy and Corporate Strategy",
+    // placement: 12,
+    marks: 4,
+    question_html: `
+      <p>What factors make an organization financially sustainable?[cite: 15]</p>
+    `,
+    solution_html: `
+      <p>To achieve long-term financial sustainability, an organization should maintain[cite: 15]:</p>
+      <ul>
+        <li>Multiple sources of revenue to prevent over-reliance on a single stream[cite: 15].</li>
+        <li>Multiple methods for generating income from core competencies[cite: 15].</li>
+        <li>Regular strategic, operational, and financial planning practices[cite: 15].</li>
+        <li>Internal financial systems and accounting controls[cite: 15].</li>
+        <li>A positive reputation among investors, lenders, and customers[cite: 15].</li>
+        <li>Clear organizational values and defined corporate ethics[cite: 15].</li>
+        <li>Financial autonomy to make decisions without undue creditor interference[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH01_TH_13",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Financial Policy and Corporate Strategy",
+    // placement: 13,
+    marks: 6,
+    question_html: `
+      <p>Write a short note on Sustainable Growth Rate (SGR) and state the core assumptions of the sustainable growth model.[cite: 15]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept and Formula</h4>
+      <p>The <strong>Sustainable Growth Rate (SGR)</strong>, developed by Robert C. Higgins, is the maximum annual percentage increase in sales a firm can achieve without issuing new equity or changing its financial leverage[cite: 15]:</p>
+      <p>$$\text{SGR} = \text{ROE} \times (1 - \text{Dividend Payout Ratio}) = \text{ROE} \times b$$[cite: 15]</p>
+      <p>It represents the growth limit supported by internally generated profits and proportional borrowing, after which the firm must alter its financial structure or raise external equity[cite: 15].</p>
+
+      <h4>2. Key Model Assumptions</h4>
+      <ul>
+        <li>The company maintains a target capital structure without issuing new equity shares[cite: 15].</li>
+        <li>The company maintains a constant dividend payout ratio[cite: 15].</li>
+        <li>The company aims to grow sales as quickly as market conditions allow within its financial policies[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH01_TH_14",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Financial Policy and Corporate Strategy",
+    // placement: 14,
+    marks: 4,
+    question_html: `
+      <p>Are the Sustainable Growth Rate and the Internal Growth Rate identical concepts? Explain.[cite: 15]</p>
+    `,
+    solution_html: `
+      <p>While both metrics define non-dilutive growth ceilings, they differ in how they treat debt capacity[cite: 15]:</p>
+      <ul>
+        <li><strong>Internal Growth Rate (IGR):</strong> The maximum growth a firm can achieve relying <em>exclusively</em> on internal retained earnings, without raising any external funds—neither debt nor equity[cite: 15].</li>
+        <li><strong>Sustainable Growth Rate (SGR):</strong> The maximum growth in sales achievable while maintaining a target debt-to-equity ratio and dividend policy, without issuing new equity[cite: 15]. As retained earnings increase equity, the firm takes on proportionate debt to maintain its target leverage, allowing a higher growth ceiling than IGR[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH01_TH_15",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Financial Policy and Corporate Strategy",
+    // placement: 15,
+    marks: 4,
+    question_html: `
+      <p>&ldquo;Often, a conflict can arise if growth objectives are not consistent with the value of the organization's sustainable growth.&rdquo; Explain.[cite: 15]</p>
+    `,
+    solution_html: `
+      <p>Growth targets that outpace an organization's sustainable rate can lead to cash flow deficits and excessive borrowing, increasing default risk[cite: 15]. When growth objectives conflict with resource capacity, firms must align plans with long-term viability[cite: 15]:</p>
+      <ul>
+        <li>In capital- or resource-intensive industries, aggressive near-term targets can exhaust reserves and compromise long-term sustainability[cite: 15].</li>
+        <li>For example, oil companies run conservation and &ldquo;save fuel&rdquo; initiatives to moderate consumption and manage finite reserves across generations[cite: 15].</li>
+        <li>Balancing financial policy with operational limits ensures the company's growth rate aligns with its sustainable capacity[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH01_TH_16",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Financial Policy and Corporate Strategy",
+    // placement: 16,
+    marks: 4,
+    question_html: `
+      <p>What factors make an organization sustainable from an operational and strategic standpoint?[cite: 15]</p>
+    `,
+    solution_html: `
+      <p>Beyond financial metrics, broader organizational sustainability requires[cite: 15]:</p>
+      <ul>
+        <li>A defined strategic direction and long-term vision[cite: 15].</li>
+        <li>The capacity to scan the external environment to identify commercial opportunities[cite: 15].</li>
+        <li>Systems to attract, manage, and retain skilled employees[cite: 15].</li>
+        <li>Administrative and financial infrastructure to support operations[cite: 15].</li>
+        <li>Demonstrated operational performance and clear business impact[cite: 15].</li>
+        <li>Support and positive engagement from the community and key stakeholders[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH01_PR_17",
+    question_type: "practical",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Financial Policy and Corporate Strategy",
+    // placement: 17,
+    marks: 6,
+    question_html: `
+      <p>Mr. X provides the following financial figures (₹ in lakhs)[cite: 15]:</p>
+      <ul>
+        <li>Total Assets: ₹ 250 lakhs[cite: 15]</li>
+        <li>Total Liabilities: ₹ 220 lakhs[cite: 15]</li>
+        <li>Net Income: ₹ 12 lakhs[cite: 15]</li>
+        <li>Dividends Paid: ₹ 4.50 lakhs[cite: 15]</li>
+        <li>Sales: ₹ 100 lakhs[cite: 15]</li>
+      </ul>
+      <p>By applying the Sustainable Growth Rate (SGR) concept, determine the maximum sales increase achievable without requiring additional debt borrowings[cite: 15].</p>
+    `,
+    solution_html: `
+      <h4>1. Determination of Equity and ROE</h4>
+      <ul>
+        <li>$$\text{Shareholders' Equity} = \text{Total Assets} - \text{Total Liabilities} = ₹ 250 - ₹ 220 = \mathbf{₹ 30 \text{ lakhs}}$$[cite: 15]</li>
+        <li>$$\text{Return on Equity (ROE)} = \frac{\text{Net Income}}{\text{Equity}} \times 100 = \frac{₹ 12}{₹ 30} \times 100 = \mathbf{40.00\%}$$[cite: 15]</li>
+      </ul>
+
+      <h4>2. Retention Ratio ($b$)</h4>
+      <p>$$\text{Retention Ratio } (b) = \frac{\text{Net Income} - \text{Dividends}}{\text{Net Income}} \times 100 = \frac{₹ 12 - ₹ 4.50}{₹ 12} \times 100 = \frac{₹ 7.50}{₹ 12} \times 100 = \mathbf{62.50\%}$$[cite: 15]</p>
+
+      <h4>3. Sustainable Growth Rate (SGR) and Sales Capacity</h4>
+      <p>$$\text{SGR} = \text{ROE} \times b = 40.00\% \times 62.50\% = \mathbf{25.00\%}$$[cite: 15]</p>
+      <p>$$\text{Maximum Sales without Additional Borrowings} = ₹ 100 \text{ lakhs} \times (1 + 0.25) = \mathbf{₹ 125.00 \text{ lakhs}}$$ (an increase of ₹ 25 lakhs)[cite: 15].</p>
+    `
+  },
+
+  // =========================================================================
+  // CHAPTER 2: RISK MANAGEMENT
+  // =========================================================================
+  {
+    question_id: "AFM_ED4_CH02_TH_01",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Risk Management",
+    // placement: 18,
+    marks: 6,
+    question_html: `
+      <p>What are the different types of risks faced by a business organization?[cite: 15]</p>
+    `,
+    solution_html: `
+      <p>Enterprises navigate four primary categories of risk[cite: 15]:</p>
+      <ul>
+        <li><strong>Strategic Risk:</strong> The risk of corporate strategies becoming ineffective due to shifts in technology, competitor actions, changes in consumer demand, or rising input costs[cite: 15].</li>
+        <li><strong>Compliance Risk:</strong> The threat of legal penalties, financial fines, and operational disruption resulting from non-compliance with statutory regulations, environmental rules, or industry standards[cite: 15].</li>
+        <li><strong>Operational Risk:</strong> The risk of loss resulting from internal failures across people and processes, including human error, fraud, hardware breakdowns, and system outages[cite: 15].</li>
+        <li><strong>Financial Risk:</strong> Potential losses arising from fluctuations in market conditions, such as interest rate shifts, foreign exchange volatility, asset price changes, and credit rating revisions[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH02_TH_02",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Risk Management",
+    // placement: 19,
+    marks: 6,
+    question_html: `
+      <p>What are the various types of Financial Risk?[cite: 15]</p>
+    `,
+    solution_html: `
+      <p>Financial risk encompasses several specific exposures[cite: 15]:</p>
+      <ul>
+        <li><strong>Counterparty Risk:</strong> The risk that a counterparty fails to fulfill its contractual commitments, such as defaulting on loan repayments or failing to deliver contracted goods[cite: 15].</li>
+        <li><strong>Political Risk:</strong> The risk faced by cross-border investors where host-government actions—such as asset expropriation, exchange controls, or remittance restrictions—lead to losses[cite: 15].</li>
+        <li><strong>Interest Rate Risk:</strong> The risk of adverse interest rate movements altering asset and liability values, which is particularly relevant for financial institutions with rate-sensitive balance sheets[cite: 15].</li>
+        <li><strong>Currency (Forex) Risk:</strong> The volatility in transaction cash flows, profitability, and balance sheet values resulting from exchange rate fluctuations[cite: 15].</li>
+        <li><strong>Liquidity Risk:</strong> The inability of an organization to meet its maturing financial obligations as they fall due[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH02_TH_03",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Risk Management",
+    // placement: 20,
+    marks: 6,
+    question_html: `
+      <p>What is Financial Risk? Explain how financial risk is viewed from the perspectives of Stakeholders, the Company, and the Government.[cite: 15]</p>
+    `,
+    solution_html: `
+      <p><strong>Financial Risk</strong> refers to unexpected changes in financial conditions—including asset prices, foreign exchange rates, interest rates, and credit ratings—that result in financial losses[cite: 15].</p>
+      <h4>Different Perspectives</h4>
+      <ul>
+        <li><strong>From the Stakeholders' Point of View:</strong>
+          <ul>
+            <li><em>Equity Shareholders:</em> Because equity claims are subordinated in liquidation, shareholders view high debt leverage as a risk to their residual capital[cite: 15].</li>
+            <li><em>Lenders:</em> Existing debt burdens signal default risk, as high interest obligations reduce a firm's capacity to service additional debt[cite: 15].</li>
+          </ul>
+        </li>
+        <li><strong>From the Company's Point of View:</strong> Over-borrowing or significant defaults by major customers can lead to liquidity crises that force an otherwise viable firm into insolvency[cite: 15].</li>
+        <li><strong>From the Government's Point of View:</strong> Evaluates systemic risk where defaults by large financial institutions or state entities undermine broader economic confidence, expand NPAs, or create sovereign debt crises[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH02_TH_04",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Risk Management",
+    // placement: 21,
+    marks: 6,
+    question_html: `
+      <p>What is Value-at-Risk (VAR)? Explain its core features and practical applications.[cite: 15]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept</h4>
+      <p><strong>Value-at-Risk (VAR)</strong> is a risk-measurement tool that quantifies potential downside exposure by answering: (i) What is the worst-case loss scenario? and (ii) What is the expected monetary loss over a specified time horizon at a given confidence level?[cite: 15]</p>
+
+      <h4>2. Key Features</h4>
+      <ul>
+        <li><strong>Components:</strong> Defined by a time horizon, a confidence level (typically 95% or 99%), and a maximum loss figure[cite: 15].</li>
+        <li><strong>Statistical Basis:</strong> Calculates potential losses using the standard deviation ($\sigma$) of returns and normal distribution Z-scores: $\text{VAR} = Z \times \sigma \times \text{Portfolio Value}$[cite: 15].</li>
+        <li><strong>Time Horizon Scaling:</strong> Scaled across different holding periods using the square-root-of-time rule ($\text{VAR}_T = \text{VAR}_1 \times \sqrt{T}$)[cite: 15].</li>
+      </ul>
+
+      <h4>3. Practical Applications</h4>
+      <ul>
+        <li>Measures maximum expected losses on trading desks or asset portfolios[cite: 15].</li>
+        <li>Sets trading exposure and stop-loss limits for treasury personnel[cite: 15].</li>
+        <li>Serves as a benchmark for evaluating risk-adjusted operational performance[cite: 15].</li>
+        <li>Supports Asset-Liability Management (ALM) in commercial banks and financial institutions[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH02_TH_05",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Risk Management",
+    // placement: 22,
+    marks: 6,
+    question_html: `
+      <p>What are the indicators of Counterparty Risk, and what techniques can be used to manage it?[cite: 15]</p>
+    `,
+    solution_html: `
+      <h4>1. Indicators of Counterparty Risk</h4>
+      <ul>
+        <li>Inability to secure the resources or financing needed to complete obligations[cite: 15].</li>
+        <li>New regulatory interventions, credit rating downgrades, or legal constraints[cite: 15].</li>
+        <li>Disruptions caused by dependencies on third-party suppliers or partners[cite: 15].</li>
+        <li>Reports of insolvency, liquidity shortages, or payment delays[cite: 15].</li>
+      </ul>
+
+      <h4>2. Risk Management Techniques</h4>
+      <ul>
+        <li>Performing comprehensive financial and legal due diligence before entering contracts[cite: 15].</li>
+        <li>Establishing counterparty exposure limits to prevent concentration in a single corporate group[cite: 15].</li>
+        <li>Reviewing credit approval frameworks and monitoring counterparty financials regularly[cite: 15].</li>
+        <li>Taking prompt action to mitigate exposure when early signs of payment trouble appear[cite: 15].</li>
+        <li>Requiring credit enhancements, such as letters of credit, bank guarantees, performance bonds, or credit insurance[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH02_TH_06",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Risk Management",
+    // placement: 23,
+    marks: 6,
+    question_html: `
+      <p>How can an organization assess Political Risk (Country Risk) when investing abroad, and what techniques can mitigate it?[cite: 15]</p>
+    `,
+    solution_html: `
+      <h4>1. Identifying and Assessing Political Risk</h4>
+      <ul>
+        <li>Reviewing political rankings and country risk indices published in international business reports[cite: 15].</li>
+        <li>Analyzing the host country's macroeconomic fundamentals, inflation trends, and external balance of payments[cite: 15].</li>
+        <li>Evaluating the stability of the governing administration and tracking potential policy shifts[cite: 15].</li>
+        <li>Consulting diplomatic missions and embassy commercial desks in the host jurisdiction[cite: 15].</li>
+        <li>Monitoring government mandates regarding domestic labor requirements, currency restrictions, price controls, or asset nationalization[cite: 15].</li>
+      </ul>
+
+      <h4>2. Mitigation Techniques</h4>
+      <ul>
+        <li>Sourcing raw materials, production components, and labor locally to integrate operations with the domestic economy[cite: 15].</li>
+        <li>Entering into joint ventures with established domestic partners to align interests[cite: 15].</li>
+        <li>Financing projects using local debt within the host country to create a natural hedge against expropriation[cite: 15].</li>
+        <li>Negotiating bilateral investment terms and securing political risk insurance coverage (e.g., MIGA or ECGC)[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH02_TH_07",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Risk Management",
+    // placement: 24,
+    marks: 4,
+    question_html: `
+      <p>How can an enterprise identify and anticipate Interest Rate Risk?[cite: 15]</p>
+    `,
+    solution_html: `
+      <p>Interest rate risk can be monitored and anticipated by tracking several macroeconomic indicators[cite: 15]:</p>
+      <ul>
+        <li>Central bank monetary policy announcements and updates to policy repo rates[cite: 15].</li>
+        <li>Government liquidity policies, open market operations, and changes to statutory reserve ratios (CRR, SLR)[cite: 15].</li>
+        <li>National economic growth rates and GDP data releases[cite: 15].</li>
+        <li>Releases of industrial production numbers (IIP) and inflation reports (CPI/WPI)[cite: 15].</li>
+        <li>Capital inflows and outflows from foreign institutional investors (FIIs/FPIs)[cite: 15].</li>
+        <li>Bond market yield curve shifts and trends in benchmark stock indices[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH02_TH_08",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Risk Management",
+    // placement: 25,
+    marks: 4,
+    question_html: `
+      <p>Describe the various parameters used to identify and evaluate Currency (Foreign Exchange) Risk.[cite: 15]</p>
+    `,
+    solution_html: `
+      <p>Currency risk arises from several economic and geopolitical factors[cite: 15]:</p>
+      <ul>
+        <li><strong>Government and Central Bank Action:</strong> Interventions in foreign exchange markets, changes to capital controls, or currency devaluations[cite: 15].</li>
+        <li><strong>Nominal Interest Rate Differentials:</strong> Under Interest Rate Parity (IRP), interest rate spreads drive forward premiums and discounts between currencies[cite: 15].</li>
+        <li><strong>Inflation Rate Differentials:</strong> Under Purchasing Power Parity (PPP), persistent inflation differentials erode the real purchasing power and exchange rate of a currency[cite: 15].</li>
+        <li><strong>Natural Calamities and Crises:</strong> Severe disruptions that damage productive capacity, reduce exports, and weaken the domestic currency[cite: 15].</li>
+        <li><strong>War, Geopolitical Conflict, and Civil Unrest:</strong> Political instability that triggers capital flight to safe-haven assets[cite: 15].</li>
+        <li><strong>Political Transitions:</strong> Changes in government and shifts in policy regarding foreign direct investment and trade agreements[cite: 15].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH02_TH_09",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Risk Management",
+    // placement: 26,
+    marks: 6,
+    question_html: `
+      <p>TRC Cables Ltd., an Indian company, manufactures electrical and fiber-optic cables, operating production facilities in African nations to access local copper and aluminum, while also importing metals and exporting finished products globally. It uses commercial paper, bank credit, and term loans for funding, invests surplus cash in interest-bearing paper, has relaxed credit terms for receivables, and uses OTC derivatives for hedging. Evaluate the major risk exposures of TRC Cables Ltd.[cite: 15]</p>
+    `,
+    solution_html: `
+      <h4>1. Financial Risks</h4>
+      <ul>
+        <li><strong>Currency (Forex) Risk:</strong> Operational cash flows, metal imports, and export sales are denominated in foreign currencies, leaving margins exposed to exchange rate volatility[cite: 15].</li>
+        <li><strong>Commodity Price Risk:</strong> Copper and aluminum are traded globally; fluctuations in metal market prices directly impact raw material costs[cite: 15].</li>
+        <li><strong>Interest Rate Risk:</strong> Managing floating bank credit, commercial paper borrowing, and debt securities exposes the firm to rate variations[cite: 15].</li>
+        <li><strong>Credit and Counterparty Risk:</strong> Relaxed credit terms expand accounts receivable, increasing the probability of customer defaults[cite: 15].</li>
+        <li><strong>Liquidity Risk:</strong> Using short-term commercial paper to support operating needs creates refinancing risk during market liquidity crunches[cite: 15].</li>
+        <li><strong>Political and Country Risk:</strong> Maintaining plants in African nations exposes capital to local regulatory changes, capital controls, or currency conversion restrictions[cite: 15].</li>
+      </ul>
+
+      <h4>2. Settlement Risk</h4>
+      <p>Using over-the-counter (OTC) derivative contracts creates settlement risk, as private counterparties may fail to fulfill their obligations on maturity[cite: 15].</p>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH02_TH_10",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Risk Management",
+    // placement: 27,
+    marks: 4,
+    question_html: `
+      <p>Mr. PK imports raw materials from China, processes them in India, and manufactures finished goods sold in the American market. What types of risk does Mr. PK face in these transactions?[cite: 15]</p>
+    `,
+    solution_html: `
+      <p>Mr. PK's global operating model involves several distinct risks[cite: 15]:</p>
+      <ul>
+        <li><strong>Currency (Exchange Rate) Risk:</strong> Triple-currency exposure (Chinese Yuan, Indian Rupee, and US Dollar)[cite: 15]. Depreciation of the USD against the INR or appreciation of the CNY against the INR will squeeze operating profits[cite: 15].</li>
+        <li><strong>Political and Trade Policy Risk:</strong> Tariffs, import duties, cross-border trade restrictions, or diplomatic friction involving China, India, and the United States[cite: 15].</li>
+        <li><strong>Market and Demand Risk:</strong> Shifting consumer tastes, macroeconomic slowdowns, or rising competitive pressure in the US market that dampens product sales[cite: 15].</li>
+        <li><strong>Regulatory and Compliance Risk:</strong> Maintaining compliance across multiple jurisdictions, including customs tariffs, Indian manufacturing rules, and US FDA/FTC standards[cite: 15].</li>
+      </ul>
+    `
+  },
+  // =========================================================================
+  // CHAPTER 4: SECURITY ANALYSIS
+  // =========================================================================
+  {
+    question_id: "AFM_ED4_CH04_TH_01",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 28,
+    marks: 4,
+    question_html: `
+      <p>What is Security Analysis and what are the two primary approaches in vogue for carrying it out?</p>
+    `,
+    solution_html: `
+      <p><strong>Security Analysis</strong> involves a systematic evaluation of the risk-return profiles of various financial securities to enable rational investors to estimate the fair or intrinsic value of a company using all publicly available price-sensitive information. It allows investors to identify situations where the market under-prices securities, creating opportunities to buy at an attractive price and earn a reasonable rate of return[cite: 11].</p>
+      <p>Two primary approaches are in vogue for carrying out security analysis[cite: 11]:</p>
+      <ul>
+        <li><strong>Fundamental Analysis:</strong> Focuses on underlying economic, industry, and company-specific fundamentals to determine the true intrinsic value of a security[cite: 11].</li>
+        <li><strong>Technical Analysis:</strong> Analyzes historical price charts and volume patterns to forecast the direction and timing of future price trends[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_02",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 29,
+    marks: 4,
+    question_html: `
+      <p>Explain the concept of Fundamental Analysis and the core decision rule based on intrinsic value.[cite: 11]</p>
+    `,
+    solution_html: `
+      <p><strong>Fundamental Analysis</strong> is based on the risk-return characteristics of individual securities and rests on the premise that share prices depend primarily on the future cash flows (dividends and earnings) expected by shareholders[cite: 11]:</p>
+      <ul>
+        <li><strong>Intrinsic Value:</strong> The present value of future expected cash flows discounted at an appropriate risk-adjusted rate of return is defined as the &ldquo;intrinsic value&rdquo; of the share[cite: 11].</li>
+        <li><strong>Decision Rules:</strong>
+          <ul>
+            <li>If <em>Current Market Price &lt; Intrinsic Value</em>: The share is <strong>undervalued</strong> and represents a <strong>Buy</strong> opportunity[cite: 11].</li>
+            <li>If <em>Current Market Price &gt; Intrinsic Value</em>: The share is <strong>overvalued</strong> and represents a <strong>Sell</strong> opportunity[cite: 11].</li>
+          </ul>
+        </li>
+        <li><strong>EIC Framework:</strong> To assess intrinsic value, an investor must evaluate three levels of factors: Economy-wide factors, Industry-wide factors, and Company-specific factors (commonly known as <strong>EIC Analysis</strong>)[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_03",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 30,
+    marks: 6,
+    question_html: `
+      <p>What is Economic Analysis and what are the major macroeconomic factors affecting it? [May 2020 RTP, Nov 2019 MTP, SM][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept of Economic Analysis</h4>
+      <p><strong>Economic Analysis</strong> forecasts national income along with its key macroeconomic components that impact the industry and the target firm[cite: 11]. It examines past performance, current trends, and future growth prospects across major sectors of the economy[cite: 11]. Trends in disposable income and aggregate consumption expenditures directly influence corporate profitability, dividend payouts, and equity market valuations[cite: 11].</p>
+
+      <h4>2. Key Macroeconomic Factors</h4>
+      <ul>
+        <li><strong>Growth Rates of National Income:</strong> The projected growth rate of GDP provides an overall indicator of industrial demand, setting the broad baseline for investment returns from equity shares[cite: 11].</li>
+        <li><strong>Growth Rates of the Industrial Sector:</strong> Evaluates demand drivers across individual industrial segments to determine whether specific sub-sectors are expanding, maturing, or stagnating[cite: 11].</li>
+        <li><strong>Inflation:</strong> Measured through the Wholesale Price Index (WPI) or Consumer Price Index (CPI)[cite: 11]. Rising inflation increases input costs and affects consumer purchasing power, with consumer goods industries being particularly sensitive to price shifts[cite: 11].</li>
+        <li><strong>Monsoon:</strong> In India, the agricultural sector has significant forward linkages (supplying raw materials to agro-industries) and backward linkages (driving rural demand for FMCG, tractors, fertilizers, and consumer durables)[cite: 11]. Consequently, the performance of the monsoon has a major bearing on overall stock market sentiment[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_04",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 31,
+    marks: 6,
+    question_html: `
+      <p>What are the key techniques used for conducting Economic Analysis? [Nov 2019 MTP, May 2019 MTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <p>Forecasting the future direction of the economy relies on three primary analytical techniques[cite: 11]:</p>
+      <ul>
+        <li><strong>Anticipatory Surveys:</strong> Gathers expert sentiment on planned construction activity, plant and machinery capital expenditure, and business inventory levels[cite: 11]. While helpful for gauging corporate intent, surveys have limitations: surveyed intentions may not fully materialize, and survey outputs represent consensus opinions rather than precise statistical forecasts[cite: 11].</li>
+        <li><strong>Barometer / Indicator Approach:</strong> Analyzes time-series economic indicators to determine the direction of aggregate economic momentum[cite: 11]:
+          <ul>
+            <li><em>Leading Indicators:</em> Reach cyclical highs and lows ahead of the broader economy (e.g., stock market indices, money supply)[cite: 11].</li>
+            <li><em>Roughly Coincidental Indicators:</em> Peak and trough in tandem with overall economic activity (e.g., GDP, industrial production)[cite: 11].</li>
+            <li><em>Lagging Indicators:</em> Shift only after the aggregate economy has turned (e.g., unemployment rates, commercial lending rates)[cite: 11].</li>
+          </ul>
+        </li>
+        <li><strong>Economic Model Building Approach:</strong> Formulates mathematical and statistical relationships between dependent and independent macroeconomic variables[cite: 11]. It constructs GNP models by forecasting individual demand components (consumer spending, gross private domestic investment, government purchases, net exports), summing them up, and verifying internal consistency across sectors[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_05",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 32,
+    marks: 6,
+    question_html: `
+      <p>What is Industry Analysis and what are the major factors affecting the prospects of an industry? [May 2019 RTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept of Industry Analysis</h4>
+      <p><strong>Industry Analysis</strong> assesses the competitive position and operational prospects of the specific industry segment to which a target firm belongs[cite: 11]. Because a firm's profitability is linked to the performance of its broader industry, analysts evaluate product demand dynamics, cost structures, and regulatory constraints impacting that sector[cite: 11].</p>
+
+      <h4>2. Key Factors Affecting Industry Analysis</h4>
+      <ul>
+        <li><strong>Product Life-Cycle (PLC):</strong> An industry typically moves through four stages: high growth and profitability in early pioneering stages, steady but moderate margins in the maturity phase, and declining returns in the final phase[cite: 11].</li>
+        <li><strong>Demand-Supply Gap:</strong> Excess capacity depresses product realization prices and margins, whereas supply deficits improve industry profitability through higher unit prices[cite: 11].</li>
+        <li><strong>Barriers to Entry:</strong> High capital intensity, proprietary technologies, or patents prevent new competitors from entering and eroding industry margins[cite: 11].</li>
+        <li><strong>Government Attitude:</strong> Favorable subsidies, tax holidays, and import protections enhance prospects, whereas price controls or heavy customs duties constrain performance[cite: 11].</li>
+        <li><strong>State of Competition:</strong> Considers industry rivalry, product differentiation (homogeneous vs. branded), market concentration, and whether the industry is cyclical or defensive[cite: 11].</li>
+        <li><strong>Cost Conditions and Profitability:</strong> Scrutinizes cost breakdowns between raw materials, labor, and overheads, along with the firm's ability to pass cost increases to customers[cite: 11].</li>
+        <li><strong>Technology and Research:</strong> Evaluates the pace of technological obsolescence, R&amp;D investment requirements, and their impact on long-term market share[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_06",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 33,
+    marks: 4,
+    question_html: `
+      <p>Explain the techniques commonly used in conducting Industry Analysis. [Sep 2025 MTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <p>Two primary quantitative techniques are used to assess industry performance[cite: 11]:</p>
+      <ul>
+        <li><strong>Regression Analysis:</strong> Used in product demand forecasting to identify statistical correlations between industry output and key economic drivers (such as GDP, personal disposable income, price indices, and price elasticity)[cite: 11]. It quantifies how changes in broader economic variables translate into industry sales growth[cite: 11].</li>
+        <li><strong>Input-Output Analysis:</strong> Examines the flow of intermediate goods and services across industries as they move from raw material inputs to final consumer goods[cite: 11]. It highlights inter-industry dependencies and identifies structural shifts that indicate expansion or decline in specific sectors[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_07",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 34,
+    marks: 8,
+    question_html: `
+      <p>Detail the critical factors evaluated during Company Analysis in fundamental security analysis.[cite: 11]</p>
+    `,
+    solution_html: `
+      <p>Company analysis evaluates the micro-level operating, financial, and strategic position of a firm using the following factors[cite: 11]:</p>
+      <ul>
+        <li><strong>Net Worth and Book Value:</strong> The ratio of equity funds to outstanding shares provides the book value per share[cite: 11]. While useful, book value relies on historical costs and may not reflect current replacement value or future earnings potential[cite: 11].</li>
+        <li><strong>Sources and Uses of Funds:</strong> A funds flow review helps identify whether short-term financing is being used to fund long-term capital investments, which can create liquidity mismatches[cite: 11].</li>
+        <li><strong>Cross-Sectional and Time-Series Analysis:</strong> Uses common-size financial statements and ratio analysis to compare the firm against peers and track its historical trajectory over time[cite: 11].</li>
+        <li><strong>Size and Ranking:</strong> Assesses capital employed, revenue scale, and market position within the industry to determine operational scale and resilience[cite: 11].</li>
+        <li><strong>Growth Record:</strong> Examines historic growth rates across revenues, operating margins, EPS, and net assets[cite: 11].</li>
+        <li><strong>Financial Health &amp; Solvency:</strong> Reviews debt-to-equity leverage, interest coverage ratios, current ratios, and operational cash flows to evaluate solvency[cite: 11].</li>
+        <li><strong>Competitive Advantage (Moat):</strong> Analyzes strong brand equity, proprietary assets, or cost advantages that protect the business from competitive encroachment[cite: 11].</li>
+        <li><strong>Quality of Management:</strong> An intangible factor evaluating executive competence, past track record, integrity, transparency, and shareholder treatment[cite: 11].</li>
+        <li><strong>Corporate Governance:</strong> Examines adherence to statutory norms (e.g., SEBI LODR, Clause 49), board independence, and disclosure timeliness[cite: 11].</li>
+        <li><strong>Regulatory Environment:</strong> Reviews compliance with the Companies Act, SEBI regulations, and industry-specific licensing mandates[cite: 11].</li>
+        <li><strong>Location &amp; Labor Relations:</strong> Evaluates logistical proximity to raw materials and markets, alongside historic labor stability[cite: 11].</li>
+        <li><strong>Shareholding Pattern &amp; Marketability:</strong> Assesses promoter holdings, institutional ownership (DII/FII), public free float, and trading liquidity on stock exchanges[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_08",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 35,
+    marks: 4,
+    question_html: `
+      <p>Explain the quantitative techniques utilized in Company Analysis.[cite: 11]</p>
+    `,
+    solution_html: `
+      <p>Analysts use several statistical and quantitative methods to evaluate company performance[cite: 11]:</p>
+      <ul>
+        <li><strong>Correlation and Regression Analysis:</strong> Examines relationships between company revenues/profits and external factors (e.g., industry growth, interest rates)[cite: 11]. Simple linear regression evaluates two variables, while multiple regression handles multiple economic and operational variables, providing forecasted values along with measures of statistical reliability[cite: 11].</li>
+        <li><strong>Trend Analysis:</strong> Evaluates time-series data using regression models to isolate seasonal and cyclical fluctuations and project baseline financial metrics into future periods[cite: 11].</li>
+        <li><strong>Decision Tree Analysis:</strong> Maps sequential business decisions and outcomes by assigning probability distributions to cash flow branches[cite: 11]. Calculating expected values across paths helps managers evaluate investment risks and make informed capital decisions[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_09",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 36,
+    marks: 6,
+    question_html: `
+      <p>What is Technical Analysis? Explain its fundamental assumptions and core principles. [Dec 2021][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept</h4>
+      <p><strong>Technical Analysis</strong> studies historical market data—primarily price charts and trading volumes—to forecast future price movements and trends[cite: 11]. It focuses on two core questions: (i) Is there a discernible price trend? and (ii) Are there signs that the current trend is reversing?[cite: 11]</p>
+
+      <h4>2. Underlying Assumptions</h4>
+      <ul>
+        <li>Market prices are determined by the interaction of supply and demand[cite: 11].</li>
+        <li>Supply and demand are influenced by both rational and irrational factors, including investor psychology[cite: 11].</li>
+        <li>Stock prices move in persistent trends that remain intact for measurable periods[cite: 11].</li>
+        <li>Chart patterns reflect recurring behavior and provide insight into future price direction[cite: 11].</li>
+      </ul>
+
+      <h4>3. Core Principles</h4>
+      <ul>
+        <li><strong>The Market Discounts Everything:</strong> All publicly and privately known information (earnings, news, macroeconomic variables) is already factored into market prices[cite: 11].</li>
+        <li><strong>Prices Move in Trends:</strong> Prices follow directional paths (upward, downward, or sideways) that are more likely to continue than to reverse abruptly[cite: 11].</li>
+        <li><strong>History Tends to Repeat Itself:</strong> Market participants respond to recurring psychological triggers in similar ways, creating chart patterns that repeat over time[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_10",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 37,
+    marks: 6,
+    question_html: `
+      <p>Explain the principles and market movements defined under the Dow Theory. [May 2018 MTP, Nov 2018 MTP, Nov 2022 MTP, May 2025 MTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Benchmark Indices</h4>
+      <p>Formulated by Charles Dow, the theory evaluates the broader market through two complementary benchmark indices: the <strong>Dow Jones Industrial Average (DJIA)</strong> and the <strong>Dow Jones Transportation Average (DJTA)</strong>[cite: 11]. Trends are validated only when both averages confirm each other's directional movements[cite: 11].</p>
+
+      <h4>2. Three Concurrent Market Movements</h4>
+      <ul>
+        <li><strong>Primary Trend:</strong> The dominant, long-term market movement lasting from one to three years (or longer), defining broad bull or bear markets[cite: 11].</li>
+        <li><strong>Secondary Reaction:</strong> Intermediate corrective movements running opposite to the primary trend, typically lasting from three weeks to three months and retracing one-third to two-thirds of the prior primary move[cite: 11].</li>
+        <li><strong>Daily Fluctuations:</strong> Short-term day-to-day noise that has limited significance on its own, but collectively forms the larger secondary and primary trends[cite: 11].</li>
+      </ul>
+
+      <h4>3. Three Phases of a Primary Bull Market</h4>
+      <ol>
+        <li><strong>Accumulation Phase:</strong> Informed, farsighted institutional investors begin buying from distressed sellers when economic sentiment is negative and valuations are depressed[cite: 11].</li>
+        <li><strong>Public Participation Phase:</strong> Corporate earnings improve, economic data turns positive, and the broader investing public participates in the advance[cite: 11].</li>
+        <li><strong>Distribution / Speculation Phase:</strong> Market participation surges on widespread optimism and heavy speculative activity[cite: 11]. Astute investors begin selling their holdings to late-entering participants, setting the stage for a primary bear market[cite: 11].</li>
+      </ol>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_11",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 38,
+    marks: 6,
+    question_html: `
+      <p>Explain the structure of market cycles under the Elliott Wave Theory. [SM][cite: 11]</p>
+    `,
+    solution_html: `
+      <p>Developed by Ralph Nelson Elliott, the <strong>Elliott Wave Theory</strong> posits that financial markets move in recurring, wave-like patterns driven by underlying investor psychology and shifts in supply and demand[cite: 11].</p>
+
+      <h4>1. The Complete 8-Wave Cycle</h4>
+      <p>A full market cycle consists of two distinct phases totaling 8 waves[cite: 11]:</p>
+      <ul>
+        <li><strong>Impulsive Phase (5 Waves):</strong> Moves in the direction of the primary trend, labeled numerically as <strong>Waves 1, 2, 3, 4, and 5</strong>[cite: 11]:
+          <ul>
+            <li><em>Waves 1, 3, and 5:</em> Directional impulse waves driving the trend forward[cite: 11]. Wave 3 is typically the longest and most powerful wave in the sequence.</li>
+            <li><em>Waves 2 and 4:</em> Corrective pullbacks within the primary trend[cite: 11]. Wave 4 cannot overlap the price peak of Wave 1.</li>
+          </ul>
+        </li>
+        <li><strong>Corrective Phase (3 Waves):</strong> Runs counter to the primary trend to retrace the initial 5-wave advance, labeled alphabetically as <strong>Waves A, B, and C</strong>[cite: 11]:
+          <ul>
+            <li><em>Waves A and C:</em> Impulses moving in the corrective direction[cite: 11].</li>
+            <li><em>Wave B:</em> A partial counter-trend retracement within the correction[cite: 11].</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>2. Fractality and Fibonacci Linkage</h4>
+      <p>Elliott waves are fractal—each wave can be subdivided into smaller sub-waves of the same pattern[cite: 11]. Wave price targets and retracement depths frequently align with Fibonacci ratios (e.g., 38.2%, 50%, 61.8%).</p>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_12",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 39,
+    marks: 4,
+    question_html: `
+      <p>Explain the Random Walk Theory of share price behavior. [May 2018 MTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <p>The <strong>Random Walk Theory</strong> states that stock price movements are statistically independent, random, and unpredictable, meaning historical price data cannot predict future price paths[cite: 11]:</p>
+      <ul>
+        <li><strong>Statistical Independence:</strong> Successive price changes are independent events, analogous to spins of a roulette wheel (as noted by statistician M.G. Kendall)[cite: 11]. Peaks and troughs on charts are random occurrences rather than predictable cycles[cite: 11].</li>
+        <li><strong>Information Response:</strong> In an efficient market, prices adjust quickly to new information[cite: 11]. Because unexpected news arrives randomly, price adjustments occur randomly as well[cite: 11].</li>
+        <li><strong>Implication:</strong> Technical trading rules and visual chart patterns cannot consistently generate abnormal returns over a simple buy-and-hold strategy[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_13",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 40,
+    marks: 6,
+    question_html: `
+      <p>Explain the primary charting techniques used in Technical Analysis.[cite: 11]</p>
+    `,
+    solution_html: `
+      <ul>
+        <li><strong>Line Chart:</strong> Connects successive closing prices over time with a continuous line[cite: 11]. It provides a clean, simplified view of the primary price trend while filtering out intraday noise[cite: 11].</li>
+        <li><strong>Bar Chart:</strong> Uses vertical lines to display open, high, low, and close (OHLC) data for each period[cite: 11]. The top of the bar marks the high, the bottom marks the low, a left horizontal tick indicates the opening price, and a right horizontal tick marks the closing price[cite: 11].</li>
+        <li><strong>Japanese Candlestick Chart:</strong> Uses vertical bars with a rectangular &ldquo;real body&rdquo; representing the range between open and close[cite: 11]:
+          <ul>
+            <li>A white (or green) body indicates a bullish close above the open[cite: 11].</li>
+            <li>A black (or red) body indicates a bearish close below the open[cite: 11].</li>
+            <li>Thin upper and lower &ldquo;shadows&rdquo; reflect the session's high and low prices[cite: 11].</li>
+            <li>A <em>Doji</em> occurs when the open and close are virtually equal, reflecting market equilibrium and indecision[cite: 11].</li>
+          </ul>
+        </li>
+        <li><strong>Point and Figure Chart:</strong> Records only price movements and reversals, disregarding time and trading volume[cite: 11]. Alternating columns of &lsquo;X&rsquo;s (rising prices) and &lsquo;O&rsquo;s (falling prices) are plotted based on predefined box sizes and reversal thresholds, filtering out minor price fluctuations to highlight major trend changes[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_14",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 41,
+    marks: 6,
+    question_html: `
+      <p>Write short notes on various market technical indicators: Breadth Index, Volume, Confidence Index, Relative Strength, and Odd-Lot Theory. [Nov 2020 RTP, Nov 2020 MTP, Sep 2025 RTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <ul>
+        <li><strong>Breadth Index:</strong> Measures broad market participation by dividing net advancing (or declining) issues by the total number of traded stocks[cite: 11]. If an index advance is supported by positive market breadth, it indicates underlying technical strength; an advance on narrow breadth signals technical divergence and potential weakness[cite: 11].</li>
+        <li><strong>Volume of Transactions:</strong> Reflects market conviction[cite: 11]. Rising prices accompanied by expanding volume signal strong demand and trend continuation; rising prices on declining volume suggest a weakening move[cite: 11]. Similarly, falling prices on heavy volume indicate institutional liquidation[cite: 11].</li>
+        <li><strong>Confidence Index:</strong> The ratio of high-grade corporate bond yields to lower-grade bond yields[cite: 11]. A rising ratio indicates that investors are willing to take credit risk, which often precedes a bull market in equities[cite: 11].</li>
+        <li><strong>Relative Strength Analysis:</strong> Compares the performance of a specific stock or sector against a broader benchmark index[cite: 11]. Securities exhibiting consistent relative outperformance are favored, as strong relative momentum tends to persist over time[cite: 11].</li>
+        <li><strong>Odd-Lot Theory:</strong> A contrarian indicator based on transactions of small retail traders (orders under 100 shares)[cite: 11]. The theory assumes retail investors tend to be wrong at major market turning points—buying heavily at market tops and selling at market bottoms[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_15",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 42,
+    marks: 4,
+    question_html: `
+      <p>Explain the concepts of Support Level and Resistance Level in Technical Analysis.[cite: 11]</p>
+    `,
+    solution_html: `
+      <ul>
+        <li><strong>Resistance Level:</strong> A price ceiling formed when an advancing stock reaches a peak and pulls back[cite: 11]. At this price zone, selling pressure from investors looking to exit or take profits outweighs buying interest, halting further upward progress[cite: 11].</li>
+        <li><strong>Support Level:</strong> A price floor formed when a declining stock reaches a trough and rebounds[cite: 11]. At this level, buying demand from investors who missed earlier entry points exceeds selling supply, preventing prices from falling further[cite: 11].</li>
+      </ul>
+      <p>When price breaks decisively through a resistance level, that level often becomes a new support level during subsequent market pullbacks (role reversal)[cite: 11].</p>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_16",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 43,
+    marks: 6,
+    question_html: `
+      <p>Describe the primary price patterns used to interpret trend continuation and trend reversal in Technical Analysis.[cite: 11]</p>
+    `,
+    solution_html: `
+      <ul>
+        <li><strong>Channels:</strong> Parallel trend lines connecting successive higher tops and higher bottoms (upward channel, bullish) or lower tops and lower bottoms (downward channel, bearish)[cite: 11].</li>
+        <li><strong>Wedges:</strong> Formed when support and resistance boundary lines converge toward each other at different slopes, indicating slowing momentum before a potential reversal[cite: 11].</li>
+        <li><strong>Head and Shoulders (Top):</strong> A major reversal pattern featuring a high peak (head) flanked by two lower peaks (shoulders)[cite: 11]. Connecting the reaction lows forms the &ldquo;neckline&rdquo;[cite: 11]. A downward break through the neckline signals a major bearish reversal[cite: 11].</li>
+        <li><strong>Double Tops and Double Bottoms:</strong> An &lsquo;M&rsquo;-shaped Double Top indicates resistance after two failed attempts to push higher (bearish)[cite: 11]; a &lsquo;W&rsquo;-shaped Double Bottom marks a bullish reversal off a support floor[cite: 11].</li>
+        <li><strong>Triangles and Coils:</strong> Symmetrical, ascending, or descending converging patterns that indicate market consolidation ahead of an eventual breakout[cite: 11].</li>
+        <li><strong>Flags and Pennants:</strong> Short-term consolidation patterns that typically resolve in the direction of the preceding price trend[cite: 11].</li>
+        <li><strong>Gaps:</strong> Areas on a chart where no trading occurred between the closing price of one session and the opening price of the next[cite: 11]. Breakaway gaps signal trend initiation, runaway gaps confirm momentum, and exhaustion gaps mark trend culmination[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_17",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 44,
+    marks: 4,
+    question_html: `
+      <p>How are Buy and Sell signals identified using Moving Average analysis? [Sep 2025 RTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Buy Signals</h4>
+      <ul>
+        <li>The stock price crosses above the moving average line from below while the moving average is flattening out or beginning to turn upward[cite: 11].</li>
+        <li>The stock price dips below an upward-sloping moving average line and quickly recovers above it[cite: 11].</li>
+        <li>A stock price pulling back toward a rising moving average line bounces upward before touching it[cite: 11].</li>
+      </ul>
+
+      <h4>2. Sell Signals</h4>
+      <ul>
+        <li>The stock price crosses below the moving average line from above while the moving average is flattening out or beginning to decline[cite: 11].</li>
+        <li>The stock price rallies temporarily above a downward-sloping moving average line but quickly falls back below it[cite: 11].</li>
+        <li>A stock price rising toward a declining moving average line stalls and begins falling before reaching it[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_18",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 45,
+    marks: 6,
+    question_html: `
+      <p>Discuss the arguments in favor of and against Technical Analysis. [May 2019 MTP, Nov 2020, Nov 2023, Nov 2024 MTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Arguments in Favor (Supporters)</h4>
+      <ul>
+        <li><strong>Behavioral Persistence:</strong> Investor psychology and market sentiment often move in trends that persist over time, which technical tools can identify early[cite: 11].</li>
+        <li><strong>Gradual Information Diffusion:</strong> Shifts in institutional demand and supply unfold gradually rather than instantaneously; technical analysis helps detect these shifts as they develop[cite: 11].</li>
+        <li><strong>Delayed Market Absorption:</strong> Because the broader market assimilates corporate developments over time, price trends often continue in a consistent direction until information is fully priced in[cite: 11].</li>
+      </ul>
+
+      <h4>2. Arguments Against (Detractors)</h4>
+      <ul>
+        <li><strong>Theoretical Foundations:</strong> Many technical patterns and indicators lack rigorous mathematical or economic explanations[cite: 11].</li>
+        <li><strong>Contradicted by Random Walk:</strong> Empirical tests of weak-form market efficiency show that successive price changes are largely independent, challenging the predictive value of historical patterns[cite: 11].</li>
+        <li><strong>Lagging Signals:</strong> By the time a chart pattern or moving average crossover confirms a trend, a significant portion of the price move has often already occurred[cite: 11].</li>
+        <li><strong>Self-Defeating Nature:</strong> As more market participants adopt the same technical signals, trade execution crowds together, neutralizing the edge and accelerating reversals[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_19",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 46,
+    marks: 4,
+    question_html: `
+      <p>Differentiate between Fundamental Analysis and Technical Analysis.[cite: 11]</p>
+    `,
+    solution_html: `
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd; width:20%;">Basis</th>
+              <th style="padding:6px; border:1px solid #ddd; width:40%;">Fundamental Analysis</th>
+              <th style="padding:6px; border:1px solid #ddd; width:40%;">Technical Analysis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">Methodology</td>
+              <td style="padding:6px; border:1px solid #ddd;">Evaluates economic factors (GDP, inflation, interest rates), industry variables, and company financials (P&amp;L, balance sheet, cash flows)[cite: 11].</td>
+              <td style="padding:6px; border:1px solid #ddd;">Analyzes historical market trading data, primarily price series, trading volume, and open interest[cite: 11].</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">Guiding Premise</td>
+              <td style="padding:6px; border:1px solid #ddd;">Share prices revolve around intrinsic economic value; prices eventually adjust toward fundamentals[cite: 11].</td>
+              <td style="padding:6px; border:1px solid #ddd;">The market discounts everything; price movements reflect all underlying information and trends repeat[cite: 11].</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">Application</td>
+              <td style="padding:6px; border:1px solid #ddd;">Suited for medium- to long-term investing and capital allocation[cite: 11].</td>
+              <td style="padding:6px; border:1px solid #ddd;">Suited for short-term trading, market timing, and swing positions[cite: 11].</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_20",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 47,
+    marks: 6,
+    question_html: `
+      <p>Explain the Efficient Market Hypothesis (EMH), its three levels of efficiency, and common misconceptions about it. [SM][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Core Concept</h4>
+      <p>The <strong>Efficient Market Hypothesis (EMH)</strong> states that security prices fully and rapidly reflect all available price-sensitive information[cite: 11]. Because information spreads quickly and market participants compete actively, current prices serve as an unbiased estimate of intrinsic value, making it impossible to consistently earn abnormal risk-adjusted returns[cite: 11].</p>
+
+      <h4>2. Levels of Market Efficiency</h4>
+      <ul>
+        <li><strong>Weak Form:</strong> Prices fully reflect all historical price and volume data; technical analysis cannot generate superior returns[cite: 11].</li>
+        <li><strong>Semi-Strong Form:</strong> Prices incorporate all historical data plus all publicly available information (financial statements, news announcements); fundamental analysis cannot generate abnormal returns[cite: 11].</li>
+        <li><strong>Strong Form:</strong> Prices reflect all information, public and private (insider data); no participant can consistently beat the market[cite: 11].</li>
+      </ul>
+
+      <h4>3. Common Misconceptions</h4>
+      <ul>
+        <li><em>Misconception 1:</em> EMH means investors cannot earn positive returns[cite: 11]. In reality, investors earn a fair, risk-adjusted rate of return commensurate with the risk assumed; they simply cannot earn <em>abnormal</em> returns systematically[cite: 11].</li>
+        <li><em>Misconception 2:</em> Price volatility means markets are inefficient[cite: 11]. In reality, new information arrives unexpectedly, and prices fluctuate to reflect those surprises[cite: 11].</li>
+        <li><em>Misconception 3:</em> Random price movements indicate irrational market behavior[cite: 11]. In reality, price changes are random precisely because rational participants quickly incorporate unexpected news[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_21",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 48,
+    marks: 6,
+    question_html: `
+      <p>Explain the empirical tests used to test the weak form of market efficiency. [Nov 2024 RTP, May 2025][cite: 11]</p>
+    `,
+    solution_html: `
+      <p>Three primary empirical tests evaluate the independence of historical prices under weak-form efficiency[cite: 11]:</p>
+      <ul>
+        <li><strong>Serial Correlation Test:</strong> Computes correlation coefficients between price changes across successive time lags (e.g., $t$ and $t-1$)[cite: 11]. A correlation coefficient near zero indicates that past price changes do not predict future returns, supporting the random walk hypothesis[cite: 11].</li>
+        <li><strong>Runs Test:</strong> A non-parametric test that ignores the magnitude of price changes and tracks only directional signs: positive ($+$), negative ($-$), or zero ($0$)[cite: 11]. A sequence of consecutive price changes in the same direction forms a &ldquo;run&rdquo;[cite: 11]. The actual number of observed runs is compared against the expected number of runs in a random sequence; if the difference is statistically insignificant, the market exhibits weak-form efficiency[cite: 11].</li>
+        <li><strong>Filter Rules Test:</strong> Evaluates mechanical trading rules (e.g., &ldquo;buy if price rises by $N\%$, hold until price declines by $N\%$ from its subsequent high, then sell&rdquo;)[cite: 11]. If markets are weak-form efficient, trading based on filter rules will not outperform a simple buy-and-hold strategy, particularly after accounting for brokerage and transaction costs[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_22",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 49,
+    marks: 6,
+    question_html: `
+      <p>What are the key challenges and behavioral criticisms raised against the Efficient Market Theory? [Nov 2018 RTP, May 2020 MTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <p>Several market anomalies and behavioral factors challenge the assumptions of EMH[cite: 11]:</p>
+      <ul>
+        <li><strong>Limited Information Processing Capacity:</strong> Human cognitive capacity is bounded[cite: 11]. Under uncertainty and high information volumes, investors often rely on behavioral heuristics rather than optimizing models, leading to market mispricings (as noted by David Dreman)[cite: 11].</li>
+        <li><strong>Irrational Investor Behavior:</strong> Rational investor expectations do not always drive market pricing[cite: 11]. As John Maynard Keynes observed, herd behavior, market speculation, and emotional overreactions often influence prices more than fundamental earnings power[cite: 11].</li>
+        <li><strong>Monopolistic and Institutional Influence:</strong> Pure competition assumes no single player can influence prices[cite: 11]. In practice, large institutional funds, high-frequency algorithmic traders, and dominant operators can move prices and create short-term market distortions[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_23",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 50,
+    marks: 4,
+    question_html: `
+      <p>What is Equity Research, and what analytical software platforms are commonly used by professionals for research?[cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept of Equity Research</h4>
+      <p><strong>Equity Research</strong> is the specialized field within investment banking and asset management that analyzes financial statements, industry conditions, and corporate strategy to produce investment recommendations (Buy, Hold, or Sell)[cite: 11].</p>
+
+      <h4>2. Common Analytical Software Platforms</h4>
+      <ul>
+        <li>Bloomberg Terminal[cite: 11]</li>
+        <li>Refinitiv EIKON[cite: 11]</li>
+        <li>Koyfin[cite: 11]</li>
+        <li>Finbox.io[cite: 11]</li>
+        <li>GuruFocus[cite: 11]</li>
+        <li>MarketXLS[cite: 11]</li>
+        <li>Stockopedia[cite: 11]</li>
+        <li>Benzinga Pro[cite: 11]</li>
+        <li>Business Quant[cite: 11]</li>
+        <li>YCharts[cite: 11]</li>
+      </ul>
+    `
+  },
+  // =========================================================================
+  // CHAPTER 4: SECURITY ANALYSIS
+  // =========================================================================
+  {
+    question_id: "AFM_ED4_CH04_TH_01",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 28,
+    marks: 4,
+    question_html: `
+      <p>What is security Analysis?</p>
+    `,
+    solution_html: `
+      <p><strong>Security Analysis</strong> involves a systematic analysis of the risk-return profiles of various securities to help a rational investor estimate a value for a company from all price-sensitive information and data[cite: 11]. This enables the investor to make purchases when the market under-prices securities and earn a reasonable rate of return[cite: 11].</p>
+      <p>Two primary approaches are in vogue for carrying out Security Analysis[cite: 11]:</p>
+      <ul>
+        <li><strong>Fundamental Analysis:</strong> Focuses on economic, industry, and company-specific fundamentals to determine the true intrinsic value of a share[cite: 11].</li>
+        <li><strong>Technical Analysis:</strong> Analyzes historical price charts and volume data to forecast future price movements and identify trends[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_02",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 29,
+    marks: 4,
+    question_html: `
+      <p>What is fundamental Analysis?[cite: 11]</p>
+    `,
+    solution_html: `
+      <p><strong>Fundamental Analysis</strong> is based on the risk-return characteristics of securities and the assumption that share prices depend upon the future dividends expected by shareholders[cite: 11]:</p>
+      <ul>
+        <li><strong>Intrinsic Value:</strong> The present value of future dividends can be calculated by discounting cash flows at an appropriate discount rate, which represents the &ldquo;intrinsic value&rdquo; of the share[cite: 11].</li>
+        <li><strong>Decision Criteria:</strong>
+          <ul>
+            <li>A share priced <em>below</em> intrinsic value is <strong>undervalued</strong> and must be <strong>bought</strong>[cite: 11].</li>
+            <li>A share priced <em>above</em> intrinsic value is <strong>overvalued</strong> and must be <strong>sold</strong>[cite: 11].</li>
+          </ul>
+        </li>
+        <li><strong>EIC Framework:</strong> To perform fundamental analysis, an investor monitors economy-wide factors, industry-wide factors, and company-specific factors (Economy-Industry-Company Analysis)[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_03",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 30,
+    marks: 6,
+    question_html: `
+      <p>What is Economic Analysis and what are the factors affecting the same? [May 2020 RTP, Nov 2019 MTP, SM][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept of Economic Analysis</h4>
+      <p><strong>Economic Analysis</strong> is used to forecast national income with its various components that have a bearing on the concerned industry and company[cite: 11]. Macroeconomic factors—such as historical economic performance, sector growth trends, and signs of stagnation—are assessed[cite: 11]. Trends in public income and expenditure reflect future demand, corporate profits, dividends, and market share prices[cite: 11].</p>
+
+      <h4>2. Factors Affecting Economic Analysis</h4>
+      <ul>
+        <li><strong>Growth Rates of National Income and Related Measures:</strong> The estimated growth rate of the economy serves as an indicator of prospects for the industrial sector and expected returns from share investments[cite: 11].</li>
+        <li><strong>Growth Rates of Industrial Sector:</strong> Broken down into specific industry growth rates based on estimated product demand[cite: 11].</li>
+        <li><strong>Inflation:</strong> Measured through the Wholesale Price Index (WPI) or Consumer Price Index (CPI)[cite: 11]. Demand in consumer products industries is significantly influenced by the prevailing inflation rate[cite: 11].</li>
+        <li><strong>Monsoon:</strong> Because of strong forward and backward linkages with agriculture, the monsoon is a key indicator for Indian stock market investors[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_04",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 31,
+    marks: 6,
+    question_html: `
+      <p>What are the techniques used for economic analysis? [Nov 2019 MTP, May 2019 MTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <p>The primary techniques used for economic analysis include[cite: 11]:</p>
+      <ul>
+        <li><strong>Anticipatory Surveys:</strong> Gathers expert opinions on construction activities, plant and machinery expenditures, and inventory levels to form an opinion on future economic conditions[cite: 11]. <em>Limitations:</em> Survey intentions may not fully materialize, and they represent consensus opinions rather than definitive forecasts[cite: 11].</li>
+        <li><strong>Barometer / Indicator Approach:</strong> Uses statistical time-series indicators to gauge economic direction[cite: 11]:
+          <ul>
+            <li><em>Leading Indicators:</em> Reach cyclical highs and lows in advance of aggregate economic activity[cite: 11].</li>
+            <li><em>Roughly Coincidental Indicators:</em> Reach peaks and troughs at approximately the same time as the economy[cite: 11].</li>
+            <li><em>Lagging Indicators:</em> Reach turning points after the aggregate economy has already turned[cite: 11].</li>
+          </ul>
+          <em>Note:</em> Indicators suggest the direction of change, but not its exact magnitude[cite: 11].</li>
+        <li><strong>Economic Model Building Approach:</strong> Establishes statistical relationships between dependent and independent macroeconomic variables[cite: 11]. It forecasts GNP by estimating individual components (consumption expenditure, gross private domestic investment, government purchases, net exports), aggregates them, and verifies consistency with independent agency projections[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_05",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 32,
+    marks: 6,
+    question_html: `
+      <p>What is Industry Analysis and what are the factors affecting the same? [May 2019 RTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept of Industry Analysis</h4>
+      <p><strong>Industry Analysis</strong> assesses the expected performance and prospects of the specific industry to which a company belongs[cite: 11]. It evaluates product demand conditions, cost structures, and government regulations that determine overall industry profitability[cite: 11].</p>
+
+      <h4>2. Factors Affecting Industry Analysis</h4>
+      <ul>
+        <li><strong>Product Life-Cycle:</strong> Industries exhibit high profitability in initial growth stages, steady profitability at maturity, and declining returns in the final phase[cite: 11].</li>
+        <li><strong>Demand-Supply Gap:</strong> Excess supply lowers unit price realization and profitability, while supply deficits improve realizations and margins[cite: 11].</li>
+        <li><strong>Barriers to Entry:</strong> High profitability attracts capital; barriers to entry may be innate (technology, capital scale) or created by existing players[cite: 11].</li>
+        <li><strong>Government Attitude:</strong> Subsidies, customs tariffs, tax holidays, and regulatory approvals shape long-term industry prospects[cite: 11].</li>
+        <li><strong>State of Competition:</strong> Evaluates market leaders, domestic/foreign rivalry, product homogeneity vs. differentiation, and whether the industry is cyclical, defensive, or growth-oriented[cite: 11].</li>
+        <li><strong>Cost Conditions and Profitability:</strong> Analyzes raw material, labor, and overhead cost shares, capacity utilization (installed, operating, idle), and capital expenditure needed for efficiency[cite: 11].</li>
+        <li><strong>Technology and Research:</strong> Evaluates technological turnover, R&amp;D investments, and their impact on future sales growth[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_06",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 33,
+    marks: 4,
+    question_html: `
+      <p>What are the techniques used in industry analysis? [Sep 2025 MTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <ul>
+        <li><strong>Regression Analysis:</strong> Used to diagnose factors determining product demand[cite: 11]. It examines correlations between industry demand and drivers like GNP, disposable income, per capita consumption, and price elasticity using regression techniques[cite: 11].</li>
+        <li><strong>Input-Output Analysis:</strong> Traces the flow of goods and services across the economy, examining intermediate production stages from raw materials to final consumption[cite: 11]. It helps detect structural trends and shifting demand patterns indicating industry growth or decline[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_07",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 34,
+    marks: 8,
+    question_html: `
+      <p>What are the factors to be analysed for company analysis?[cite: 11]</p>
+    `,
+    solution_html: `
+      <p>Company analysis evaluates the financial condition and operational capabilities of an enterprise across key parameters[cite: 11]:</p>
+      <ul>
+        <li><strong>Net Worth and Book Value:</strong> Net worth is equity capital plus preference capital plus free reserves less intangible assets and accumulated losses[cite: 11]. Book value per share is net worth divided by outstanding shares[cite: 11]. Book value is based on historical costs and may not reflect future earnings or asset replacement values[cite: 11].</li>
+        <li><strong>Sources and Uses of Funds:</strong> Funds flow analysis detects whether short-term funds are financing long-term investments, which introduces liquidity risks[cite: 11].</li>
+        <li><strong>Cross-Sectional and Time Series Analysis:</strong> Uses common-size statements and financial ratios to compare the firm with industry peers and track its historical trajectory[cite: 11].</li>
+        <li><strong>Size and Ranking:</strong> Evaluates net capital employed, sales volume, and market position within the industry to assess operating resilience[cite: 11].</li>
+        <li><strong>Growth Record:</strong> Examines past trends in sales, net income, EPS, P/E multiples, and capital additions[cite: 11].</li>
+        <li><strong>Financial Analysis:</strong> Evaluates solvency, liquidity, asset turnover, profit margins, and operating/financial leverage[cite: 11].</li>
+        <li><strong>Competitive Advantage:</strong> Reviews moats (such as strong brand recall or technological leadership) that protect the company from competitors[cite: 11].</li>
+        <li><strong>Quality of Management:</strong> An intangible factor evaluating executive experience, skill, integrity, shareholder relations, and dividend payout history[cite: 11].</li>
+        <li><strong>Corporate Governance:</strong> Assesses compliance with Clause 49/SEBI LODR, quality of independent directors, and timely financial disclosures[cite: 11].</li>
+        <li><strong>Regulation:</strong> Evaluates statutory compliance with the Companies Act, SCRA, and SEBI regulations[cite: 11].</li>
+        <li><strong>Location and Labor Relations:</strong> Proximity to markets and inputs, plus past industrial labor relations[cite: 11].</li>
+        <li><strong>Pattern of Stock Holding &amp; Marketability:</strong> Analyzes promoter shareholding, institutional holdings, public free float, and secondary market trading volume[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_08",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 35,
+    marks: 4,
+    question_html: `
+      <p>What are the techniques used in company analysis?[cite: 11]</p>
+    `,
+    solution_html: `
+      <ul>
+        <li><strong>Correlation and Regression Analysis:</strong> Examines relationships between macroeconomic, industry, and company variables[cite: 11]. Simple regression handles two variables, while multiple regression evaluates multiple factors to forecast values and measure statistical reliability[cite: 11].</li>
+        <li><strong>Trend Analysis:</strong> Analyzes historical behavior of financial variables over time using regression techniques to project future baseline performance[cite: 11].</li>
+        <li><strong>Decision Tree Analysis:</strong> Evaluates sequential investment decisions under uncertainty by mapping branches with assigned probabilities and multiplying outcomes to calculate expected values[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_09",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 36,
+    marks: 6,
+    question_html: `
+      <p>What is technical analysis and what are its assumptions and principles? [Dec 2021][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Meaning of Technical Analysis</h4>
+      <p><strong>Technical Analysis</strong> studies historical price and volume charts on the premise that share price trends are repetitive because investor psychology follows predictable patterns[cite: 11]. It addresses two core questions: (i) Is there a discernible trend in prices? and (ii) Are there indications of a trend reversal?[cite: 11]</p>
+
+      <h4>2. Underlying Assumptions</h4>
+      <ul>
+        <li>The market value of a stock depends on supply and demand interactions[cite: 11].</li>
+        <li>Supply and demand are governed by numerous rational and irrational factors[cite: 11].</li>
+        <li>Stock prices move in persistent trends that remain intact for measurable periods[cite: 11].</li>
+        <li>Chart patterns reflect recurring trends, making chart study more relevant for timing than financial statement metrics[cite: 11].</li>
+      </ul>
+
+      <h4>3. Core Principles</h4>
+      <ul>
+        <li><strong>The Market Discounts Everything:</strong> Share prices reflect all fundamental, economic, and psychological information, consistent with the Efficient Market Hypothesis[cite: 11].</li>
+        <li><strong>Price Moves in Trends:</strong> A stock price is more likely to continue an established trend than reverse abruptly[cite: 11].</li>
+        <li><strong>History Tends to Repeat Itself:</strong> Market participants react similarly to recurring psychological triggers, causing chart patterns to repeat[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_10",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 37,
+    marks: 6,
+    question_html: `
+      <p>Explain Dow Theory? [May 2018 MTP, Nov 2018 MTP, Nov 2022 MTP, May 2025 MTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Core Framework of Dow Theory</h4>
+      <p>Formulated by Charles Dow, this theory tracks two benchmark averages: the <strong>Dow Jones Industrial Average (DJIA)</strong> and the <strong>Dow Jones Transportation Average (DJTA)</strong>[cite: 11]. Market movements must be confirmed by both averages to validate a trend[cite: 11].</p>
+
+      <h4>2. Three Concurrent Market Movements</h4>
+      <ul>
+        <li><strong>Primary Movement:</strong> The broad, overarching trend lasting from 1 to 3 years (or longer), defining bull or bear markets[cite: 11].</li>
+        <li><strong>Secondary Movement:</strong> Corrective counter-trend swings lasting from two weeks to a month or more, running opposite to the primary direction[cite: 11].</li>
+        <li><strong>Daily Fluctuations:</strong> Short-term day-to-day noise that makes up the broader secondary and primary waves[cite: 11].</li>
+      </ul>
+
+      <h4>3. Trend Interpretation and Bull/Bear Phases</h4>
+      <p>When successive peaks and troughs are higher, the primary market is in an uptrend (Bullish); when successive peaks and troughs are lower, the market is in a downtrend (Bearish)[cite: 11].</p>
+      <ul>
+        <li><strong>Three Phases of a Bull Market:</strong>
+          <ol>
+            <li><em>Accumulation:</em> Farsighted investors accumulate shares from distressed sellers when sentiment is depressed[cite: 11].</li>
+            <li><em>Earnings Growth:</em> Early reports of rising corporate earnings draw broader participation[cite: 11].</li>
+            <li><em>Speculation:</em> Widespread optimism and rampant speculation occur, during which early investors begin distributing shares to the public[cite: 11].</li>
+          </ol>
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_11",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 38,
+    marks: 6,
+    question_html: `
+      <p>Explain Elliott Wave Theory? [SM][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Underlying Premise</h4>
+      <p>Developed by Ralph Nelson Elliott, the theory states that stock markets exhibit recurring wave patterns resulting from buying and selling impulses driven by investor psychology[cite: 11].</p>
+
+      <h4>2. Wave Structure (8-Wave Cycle)</h4>
+      <p>A complete market cycle consists of two distinct phases totaling 8 waves[cite: 11]:</p>
+      <ul>
+        <li><strong>Impulsive Patterns (Basic Waves):</strong> A sequence of <strong>5 waves</strong> moving in the direction of the primary trend, labeled <strong>1, 2, 3, 4, and 5</strong>[cite: 11]. Waves 1, 3, and 5 drive the trend forward, while Waves 2 and 4 represent corrective pullbacks[cite: 11].</li>
+        <li><strong>Corrective Patterns (Reaction Waves):</strong> A sequence of <strong>3 waves</strong> moving counter to the primary trend, labeled <strong>A, B, and C</strong>[cite: 11]. Waves A and C move in the corrective direction, while Wave B represents a counter-trend bounce[cite: 11].</li>
+      </ul>
+      <p>Upon completing the full 8-wave cycle (5 impulsive + 3 corrective), a new wave cycle begins in the same pattern[cite: 11].</p>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_12",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 39,
+    marks: 4,
+    question_html: `
+      <p>Explain Random Walk Theory? [May 2018 MTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <p>The <strong>Random Walk Theory</strong> states that stock market prices cannot be predicted because price changes are statistically independent and behave like random fluctuations[cite: 11]:</p>
+      <ul>
+        <li>British statistician M.G. Kendall observed that security price changes behave as if generated by a roulette wheel, where each outcome is independent of past history[cite: 11].</li>
+        <li>Peaks and troughs in stock indices are random occurrences rather than predictable cycles[cite: 11].</li>
+        <li>Because new information arrives unpredictably, share price adjustments are random, meaning past price trends cannot predict future price paths[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_13",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 40,
+    marks: 6,
+    question_html: `
+      <p>Explain the various charting techniques used in technical analysis.[cite: 11]</p>
+    `,
+    solution_html: `
+      <ul>
+        <li><strong>Line Chart:</strong> Connects successive closing prices with a continuous line, providing a clean overview of price trends over days, weeks, or months[cite: 11].</li>
+        <li><strong>Bar Chart:</strong> Uses vertical bars where the top indicates the high price, the bottom indicates the low price, and short horizontal ticks show opening (left) and closing (right) prices[cite: 11].</li>
+        <li><strong>Japanese Candlestick Chart:</strong> Displays OHLC data using a rectangular &ldquo;body&rdquo;[cite: 11]:
+          <ul>
+            <li>A <em>white candlestick</em> indicates a higher closing price (bullish)[cite: 11].</li>
+            <li>A <em>black candlestick</em> indicates a lower closing price (bearish)[cite: 11].</li>
+            <li>A <em>Doji candlestick</em> indicates little to no change between open and close, signaling market indecision[cite: 11].</li>
+          </ul>
+        </li>
+        <li><strong>Point and Figure Chart:</strong> Focuses exclusively on price movements, ignoring time and volume[cite: 11]. It plots columns of &lsquo;X&rsquo;s (price advances) and &lsquo;O&rsquo;s (price declines) based on predefined box sizes and reversal thresholds to detect trend changes[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_14",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 41,
+    marks: 6,
+    question_html: `
+      <p>Write short note about various market indicators? [Nov 2020 RTP, Nov 2020 MTP, Sep 2025 RTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <ul>
+        <li><strong>Breadth Index:</strong> Divides net advances (or declines) by total issues traded[cite: 11]. If market breadth supports movements in benchmark indices (like the DJIA), it indicates technical strength; if it diverges, it indicates technical weakness[cite: 11].</li>
+        <li><strong>Volume of Transactions:</strong> Rising prices on increasing volume signal buying conviction; falling prices on increasing volume indicate a bearish trend with further downside potential[cite: 11].</li>
+        <li><strong>Confidence Index:</strong> The ratio of high-grade bond yields to low-grade bond yields[cite: 11]. A rising index indicates willingness to take credit risk, which typically precedes a rising stock market; a falling index signals caution and often precedes a market decline[cite: 11].</li>
+        <li><strong>Relative Strength Analysis:</strong> Compares the price performance of a security against other securities or indices[cite: 11]. Securities that rise faster in bull markets or decline more slowly in bear markets exhibit relative strength, which tends to persist over time[cite: 11].</li>
+        <li><strong>Odd-Lot Theory:</strong> A contrarian indicator based on small retail trades (orders under 100 shares)[cite: 11]. It assumes retail traders are typically wrong at major market turning points, making contrary strategies profitable[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_15",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 42,
+    marks: 4,
+    question_html: `
+      <p>What is support and resistance level?[cite: 11]</p>
+    `,
+    solution_html: `
+      <ul>
+        <li><strong>Resistance Level:</strong> A price ceiling formed when an advancing stock reaches a peak and pulls back[cite: 11]. When prices approach this level, selling pressure increases as investors who missed selling at the peak look to liquidate holdings[cite: 11].</li>
+        <li><strong>Support Level:</strong> A price floor formed when a declining stock reaches a trough and rebounds[cite: 11]. When prices approach this level, buying pressure emerges from investors who missed buying at lower prices[cite: 11].</li>
+      </ul>
+      <p>Prices generally trade between support and resistance until an eventual breakout occurs[cite: 11].</p>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_16",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 43,
+    marks: 6,
+    question_html: `
+      <p>What are the tools to interpret price patterns?[cite: 11]</p>
+    `,
+    solution_html: `
+      <ul>
+        <li><strong>Channel:</strong> Formed by drawing parallel lines connecting changing tops and bottoms[cite: 11]. An upward-sloping channel indicates rising prices, while a downward-sloping channel indicates declining prices[cite: 11].</li>
+        <li><strong>Wedge:</strong> Formed when resistance (tops) and support (bottoms) lines converge in opposite directions or at differing slopes, signaling a potential breakout[cite: 11].</li>
+        <li><strong>Head and Shoulders:</strong> A reversal pattern featuring a large central peak (head) flanked by two smaller peaks (shoulders)[cite: 11]. Breaking below the &ldquo;neckline&rdquo; signals a trend reversal with downside potential roughly equal to the distance from the head to the neckline[cite: 11].</li>
+        <li><strong>Triangular or Coil Formation:</strong> Converging price patterns representing consolidation and uncertainty ahead of an eventual breakout[cite: 11].</li>
+        <li><strong>Flags and Pennants:</strong> Short-term consolidation pauses that typically resolve in the direction of the prior trend[cite: 11].</li>
+        <li><strong>Double Top and Double Bottom:</strong> A Double Top (&lsquo;M&rsquo; shape) signals a bearish reversal; a Double Bottom (&lsquo;W&rsquo; shape) signals a bullish reversal[cite: 11].</li>
+        <li><strong>Gap:</strong> The price difference between the opening price and the prior day's close[cite: 11]. Wide gaps indicate strong momentum or selling pressure[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_17",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 44,
+    marks: 4,
+    question_html: `
+      <p>How to identify buy and sell signals provided by moving average analysis? [Sep 2025 RTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd; width:50%;">Buy Signal</th>
+              <th style="padding:6px; border:1px solid #ddd; width:50%;">Sell Signal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd;">Stock price line rises through the moving average line when the moving average line is flattening out[cite: 11].</td>
+              <td style="padding:6px; border:1px solid #ddd;">Stock price line falls through the moving average line when the moving average line is flattening out[cite: 11].</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd;">Stock price line falls below a moving average line that is rising[cite: 11].</td>
+              <td style="padding:6px; border:1px solid #ddd;">Stock price line rises above a moving average line that is falling[cite: 11].</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd;">Stock price line above a rising moving average line pulls back but begins rising again before touching the moving average[cite: 11].</td>
+              <td style="padding:6px; border:1px solid #ddd;">Stock price line below a falling moving average line rallies but begins falling again before reaching the moving average[cite: 11].</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_18",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 45,
+    marks: 6,
+    question_html: `
+      <p>What are the arguments in favour and against technical analysis? [May 2019 MTP, Nov 2020, Nov 2023, Nov 2024 MTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Arguments in Favor (Supporters)</h4>
+      <ul>
+        <li>Crowd psychology causes trends to persist over time; technical analysis helps identify these trends early for decision-making[cite: 11].</li>
+        <li>Shifts in market demand and supply occur gradually rather than instantaneously; technical tools help detect these shifts as they develop[cite: 11].</li>
+        <li>Fundamental news is absorbed by the market over time, meaning price moves tend to continue in the same direction until fully priced in[cite: 11].</li>
+      </ul>
+
+      <h4>2. Arguments Against (Detractors)</h4>
+      <ul>
+        <li>Many technical analysts struggle to provide clear economic or mathematical foundations for their chart interpretations[cite: 11].</li>
+        <li>Empirical evidence supporting the random walk hypothesis challenges the predictive value of technical analysis[cite: 11].</li>
+        <li>By the time an uptrend or downtrend is confirmed by technical tools, a large part of the move has often already occurred[cite: 11].</li>
+        <li>Technical analysis can be self-defeating: as more market participants act on the same patterns, the edge diminishes[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_19",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 46,
+    marks: 4,
+    question_html: `
+      <p>Differentiate between Fundamental Analysis and Technical Analysis?[cite: 11]</p>
+    `,
+    solution_html: `
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd; width:20%;">Basis</th>
+              <th style="padding:6px; border:1px solid #ddd; width:40%;">Fundamental Analysis</th>
+              <th style="padding:6px; border:1px solid #ddd; width:40%;">Technical Analysis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">Method</td>
+              <td style="padding:6px; border:1px solid #ddd;">Evaluates macroeconomic factors (GDP, inflation, interest rates) and microeconomic fundamentals (sales, profitability, balance sheet health)[cite: 11].</td>
+              <td style="padding:6px; border:1px solid #ddd;">Forecasts future prices and direction using historical market data, price movements, trading volume, and open interest[cite: 11].</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">Rule</td>
+              <td style="padding:6px; border:1px solid #ddd;">Share prices reflect underlying cash flow fundamentals and adjust toward intrinsic value[cite: 11].</td>
+              <td style="padding:6px; border:1px solid #ddd;">Price discounts everything; chart patterns reflect all available information[cite: 11].</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">Usefulness</td>
+              <td style="padding:6px; border:1px solid #ddd;">Best suited for medium- to long-term investing[cite: 11].</td>
+              <td style="padding:6px; border:1px solid #ddd;">Best suited for short-term trading and market timing[cite: 11].</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_20",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 47,
+    marks: 6,
+    question_html: `
+      <p>Explain the efficient market theory and what are the major misconceptions about this theory? [SM][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Core Conclusion and Mechanism</h4>
+      <p>The <strong>Efficient Market Theory</strong> states that at any given time, all available price-sensitive information is fully reflected in security prices[cite: 11]. Therefore, no investor can systematically outperform the market over the long run, as securities trade at their fair values[cite: 11].</p>
+      <ul>
+        <li>Information is freely and instantaneously available to market participants[cite: 11].</li>
+        <li>Active competition among participants ensures that prices reflect intrinsic values[cite: 11].</li>
+        <li>Prices change only in response to new information, which arrives unpredictably[cite: 11].</li>
+      </ul>
+
+      <h4>2. Major Misconceptions</h4>
+      <ul>
+        <li><em>Misconception 1:</em> Investors cannot earn returns in an efficient market[cite: 11]. In reality, investors earn a fair, risk-adjusted return commensurate with the risk assumed; they simply cannot earn <em>abnormal</em> returns systematically[cite: 11].</li>
+        <li><em>Misconception 2:</em> Price volatility means markets are irrational[cite: 11]. In reality, new information arrives unexpectedly, and prices fluctuate to reflect those surprises[cite: 11].</li>
+        <li><em>Misconception 3:</em> Random price movements indicate irrational market behavior[cite: 11]. In reality, price changes are random precisely because rational participants quickly incorporate unexpected news[cite: 11].</li>
+      </ul>
+
+      <h4>3. Levels of Market Efficiency</h4>
+      <ul>
+        <li><strong>Weak Form:</strong> Prices reflect all information in past prices and trading volumes[cite: 11].</li>
+        <li><strong>Semi-Strong Form:</strong> Prices reflect all historical data plus all publicly available information[cite: 11].</li>
+        <li><strong>Strong Form:</strong> Prices reflect all information, public and private (insider data)[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_21",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 48,
+    marks: 6,
+    question_html: `
+      <p>What are the tests which can be done to test the market efficiency? [Nov 2024 RTP, May 2025][cite: 11]</p>
+    `,
+    solution_html: `
+      <p>Three primary empirical tests evaluate the weak form of market efficiency[cite: 11]:</p>
+      <ul>
+        <li><strong>Serial Correlation Test:</strong> Tests for randomness in price changes by measuring correlation across successive time periods[cite: 11]. Studies examining different stocks and time lags generally find no significant correlation, supporting the view that prices follow short-term random trends[cite: 11].</li>
+        <li><strong>Runs Test:</strong> Tests for statistical independence by comparing the observed number of directional runs ($+$, $-$, or $0$) in a price series against the expected number of runs in a purely random sequence[cite: 11]. Findings generally support the Random Walk Model[cite: 11].</li>
+        <li><strong>Filter Rules Test:</strong> Evaluates mechanical trading rules (e.g., buy if price rises by $N\%$, hold until it falls by $N\%$ from its peak, then sell)[cite: 11]. If markets are weak-form efficient, filter rules will not outperform a simple buy-and-hold strategy, particularly after accounting for brokerage and transaction costs[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_22",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 49,
+    marks: 6,
+    question_html: `
+      <p>What are the challenges to the efficient market theory? [Nov 2018 RTP, May 2020 MTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <p>Several behavioral and market factors challenge the assumptions of market efficiency[cite: 11]:</p>
+      <ul>
+        <li><strong>Limited Information Processing Capabilities:</strong> Human cognitive capacity is bounded[cite: 11]. Under uncertainty and high information volumes, investors often rely on behavioral heuristics rather than optimizing models, leading to market mispricings (as noted by David Dreman)[cite: 11].</li>
+        <li><strong>Irrational Investor Behavior:</strong> Rational investor expectations do not always drive market pricing[cite: 11]. As John Maynard Keynes observed, herd behavior, market speculation, and emotional overreactions often influence prices more than fundamental earnings power[cite: 11].</li>
+        <li><strong>Monopolistic and Institutional Influence:</strong> Pure competition assumes no single player can influence prices[cite: 11]. In practice, large institutional funds, high-frequency algorithmic traders, and dominant operators can move prices and create short-term market distortions[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH04_TH_23",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Security Analysis",
+    // placement: 50,
+    marks: 4,
+    question_html: `
+      <p>What are the tools available for equity research?[cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept of Equity Research</h4>
+      <p><strong>Equity Research</strong> is the specialized field within investment banking and asset management that analyzes financial statements, industry conditions, and corporate strategy to produce investment recommendations (Buy, Hold, or Sell)[cite: 11].</p>
+
+      <h4>2. Common Analytical Software Platforms</h4>
+      <ul>
+        <li>Bloomberg Terminal[cite: 11]</li>
+        <li>Refinitiv EIKON[cite: 11]</li>
+        <li>Koyfin[cite: 11]</li>
+        <li>Finbox.io[cite: 11]</li>
+        <li>GuruFocus[cite: 11]</li>
+        <li>MarketXLS[cite: 11]</li>
+        <li>Stockopedia[cite: 11]</li>
+        <li>Benzinga Pro[cite: 11]</li>
+        <li>Business Quant[cite: 11]</li>
+        <li>YCharts[cite: 11]</li>
+      </ul>
+    `
+  },
+
+  // =========================================================================
+  // CHAPTER 7: SECURITIZATION
+  // =========================================================================
+  {
+    question_id: "AFM_ED4_CH07_TH_01",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Securitization",
+    // placement: 51,
+    marks: 6,
+    question_html: `
+      <p>Explain the concept and features of Securitization? [Nov 2018 MTP, Jan 2021, May 2021 RTP, Nov 2022, May 2023 RTP, May 2019 MTP, Nov 2023 MTP, May 2022 MTP, Nov 2022 MTP, May 2023 MTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept of Securitization</h4>
+      <p><strong>Securitization</strong> is the process of creating a pool of assets from illiquid financial assets (such as loans or receivables) and repackaging them into marketable securities backed by collateral cash flows[cite: 11]. These underlying assets include auto loans, credit card receivables, residential mortgages, or future receivables[cite: 11].</p>
+
+      <h4>2. Features of Securitization</h4>
+      <ul>
+        <li><strong>Creation of Financial Instruments:</strong> Transforms illiquid assets into tradeable financial securities backed by collateral[cite: 11].</li>
+        <li><strong>Bundling and Unbundling:</strong> Bundling combines individual assets into a single portfolio; unbundling breaks the pool into instruments of fixed denominations for investors[cite: 11].</li>
+        <li><strong>Tool of Risk Management:</strong> When assets are securitized on a non-recourse basis, credit default risk shifts from the originator to investors[cite: 11].</li>
+        <li><strong>Structured Finance:</strong> Tailors financial instruments to match the risk-return preferences of different investor groups[cite: 11].</li>
+        <li><strong>Tranching:</strong> Splits the loan portfolio into several parts (tranches) carrying distinct risk-return profiles[cite: 11].</li>
+        <li><strong>Homogeneity:</strong> Securities within each tranche are homogeneous and can be offered in accessible denominations for retail and institutional investors[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH07_TH_02",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Securitization",
+    // placement: 52,
+    marks: 6,
+    question_html: `
+      <p>Explain Securitization in India? [Nov 2018 MTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <p>The development of securitization in the Indian financial market is characterized by several milestones[cite: 11]:</p>
+      <ul>
+        <li><strong>Pioneering Phase:</strong> Citibank pioneered securitization in India by bundling auto loans into securitized papers[cite: 11]. Later, institutions expanded securitization to sales tax deferrals, aircraft receivables, and mortgage loans[cite: 11].</li>
+        <li><strong>Legislative Support (SARFAESI Act, 2002):</strong> The Government enacted the <em>SARFAESI Act, 2002</em> to tackle Non-Performing Assets (NPAs) without requiring prolonged court interventions, providing legal support for securitization and asset reconstruction[cite: 11].</li>
+        <li><strong>Key Market Beneficiaries:</strong> Securitization has become an important funding source for microfinance institutions and Non-Banking Financial Companies (NBFCs), alongside the emergence of Commercial Mortgage-Backed Securities (CMBS)[cite: 11].</li>
+        <li><strong>Market Concentration:</strong> The Indian securitization landscape is dominated by a few large players, such as ICICI Bank, HDFC Bank, and the National Housing Bank (NHB)[cite: 11].</li>
+        <li><strong>Market Scale:</strong> According to CRISIL, securitization volumes reached roughly ₹ 1.9 trillion in FY 2019 and FY 2020[cite: 11].</li>
+        <li><strong>Regulatory Broadening:</strong> SEBI permits Foreign Portfolio Investors (FPIs) to invest in securitized debt issued by unlisted entities up to prescribed limits, expanding the institutional investor base[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH07_TH_03",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Securitization",
+    // placement: 53,
+    marks: 6,
+    question_html: `
+      <p>What are the benefits of Securitization from the perspective of both the Originator and the Investor? [Nov 2019 RTP, May 2018, Nov 2019, May 2023 MTP, May 2022][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Benefits from the Angle of the Originator</h4>
+      <ul>
+        <li><strong>Off-Balance Sheet Financing:</strong> Securitizing loans releases capital tied up in assets, improving liquidity to fund business expansion[cite: 11].</li>
+        <li><strong>Focus on Core Business:</strong> Transferring loan servicing to the SPV allows the originator to concentrate on its core operations[cite: 11]. In non-recourse arrangements, the burden of default is also removed[cite: 11].</li>
+        <li><strong>Improved Financial Ratios:</strong> In banks and financial institutions, off-loading risk-weighted assets improves the Capital-to-Risk-Weighted Assets Ratio (CRAR)[cite: 11].</li>
+        <li><strong>Reduced Borrowing Costs:</strong> Because securitized papers carry credit ratings and credit enhancement, they can be issued at lower interest rates, earning the originator a spread that reduces its overall cost of debt[cite: 11].</li>
+      </ul>
+
+      <h4>2. Benefits from the Angle of the Investor</h4>
+      <ul>
+        <li><strong>Diversification of Risk:</strong> Investing in securities backed by a diversified asset pool reduces portfolio risk[cite: 11].</li>
+        <li><strong>Regulatory Requirement Compliance:</strong> Acquiring asset-backed papers from priority sectors (e.g., micro-industries) helps commercial banks meet statutory Priority Sector Lending (PSL) quotas[cite: 11].</li>
+        <li><strong>Protection Against Default:</strong> Recourse arrangements require the originator to make good default losses, and credit insurance arrangements can provide additional protection[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH07_TH_04",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Securitization",
+    // placement: 54,
+    marks: 8,
+    question_html: `
+      <p>Who are the participants in Securitization? Distinguish between Primary Participants and Secondary Participants. [May 2018 RTP, Nov 2018, Nov 2018 MTP, Jan 2021, May 2021 MTP, May 2021 RTP, Nov 2023 MTP, May 2022 MTP, May 2023 MTP, Nov 2024 MTP, Sep 2025 RTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Primary Participants</h4>
+      <ul>
+        <li><strong>Originator:</strong> The initiator/securitizer who sells book assets to the SPV and receives upfront funds, transferring both legal and beneficial interest[cite: 11].</li>
+        <li><strong>Special Purpose Vehicle (SPV):</strong> A special legal entity (company, firm, society, or trust) created to hold legal title to the assets, isolate them from the originator's balance sheet, and issue asset-backed securities (ABS/MBS) to investors[cite: 11].</li>
+        <li><strong>Investors:</strong> Buyers of the securitized papers (individuals, mutual funds, provident funds, insurance companies, financial institutions) who receive principal and interest cash flows[cite: 11].</li>
+      </ul>
+
+      <h4>2. Secondary Participants</h4>
+      <ul>
+        <li><strong>Obligors:</strong> The underlying borrowers who owe money on the loans[cite: 11]. Their repayments are transferred to the SPV, making their credit standing central to the transaction[cite: 11].</li>
+        <li><strong>Rating Agency:</strong> Assesses pool credit quality, cash flow strength, and credit support to assign formal ratings to issued papers[cite: 11].</li>
+        <li><strong>Receiving and Paying Agent (RPA / Servicer):</strong> Collects loan installments from obligors, remits collections to the SPV, and manages recovery actions on defaults[cite: 11].</li>
+        <li><strong>Agent or Trustee:</strong> Oversees compliance with transaction agreements and safeguards the beneficial interests of the security holders[cite: 11].</li>
+        <li><strong>Credit Enhancer:</strong> Provides credit support internally (originator over-collateralization or cash reserves) or externally (bank letters of credit or surety bonds)[cite: 11].</li>
+        <li><strong>Structurer / Arranger:</strong> An investment banker who structures the deal to align originator and investor needs while ensuring legal, tax, and regulatory compliance[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH07_TH_05",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Securitization",
+    // placement: 55,
+    marks: 6,
+    question_html: `
+      <p>Explain the mechanism of Securitization. [May 2020 RTP, May 2018, May 2019, May 2019 MTP, May 2025 MTP, Sep 2025 MTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <p>The securitization process follows seven primary steps[cite: 11]:</p>
+      <ol>
+        <li><strong>Creation of Pool of Assets:</strong> The originator segregates loans with similar interest rates, risk ratings, and maturities into a homogeneous pool[cite: 11].</li>
+        <li><strong>Transfer to SPV:</strong> The pooled assets are transferred to an independent Special Purpose Vehicle (SPV) via a true sale[cite: 11].</li>
+        <li><strong>Sale of Securitized Papers:</strong> The SPV designs and issues instruments (Pass Through Certificates or Pay Through Securities) based on risk, tenure, and cash flow structures[cite: 11].</li>
+        <li><strong>Administration of Assets:</strong> Asset servicing is subcontracted back to the originator (acting as servicer), which collects principal and interest for an agreed fee[cite: 11].</li>
+        <li><strong>Recourse to Originator:</strong> Unless specified otherwise, credit performance depends on the underlying assets; under recourse arrangements, defaulted receivables revert to the originator[cite: 11].</li>
+        <li><strong>Repayment of Funds:</strong> The SPV distributes collected interest and principal repayments to investors as per scheduled terms[cite: 11].</li>
+        <li><strong>Credit Rating of Instruments:</strong> External agencies rate the instruments before public or private placement to evaluate issuer and credit risk[cite: 11].</li>
+      </ol>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH07_TH_06",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Securitization",
+    // placement: 56,
+    marks: 6,
+    question_html: `
+      <p>Explain the problems and challenges faced in the growth of Securitization, especially in the Indian context. [Nov 2020 RTP, Nov 2019, May 2018 MTP, May 2020 MTP, Nov 2019 MTP, Nov 2020 MTP, July 2021, Nov 2023 MTP, Nov 2021 MTP, Nov 2023][cite: 11]</p>
+    `,
+    solution_html: `
+      <p>Key impediments to the growth of securitization in India include[cite: 11]:</p>
+      <ul>
+        <li><strong>Stamp Duty Discrepancies:</strong> Under the Transfer of Property Act, 1882, mortgage debt assignments attract stamp duties as high as 12% in some states[cite: 11]. Although PTCs are generally exempt and several states have reduced duties, interstate variations hinder growth[cite: 11].</li>
+        <li><strong>Taxation Ambiguity:</strong> Conflicting opinions persist regarding whether the SPV should be taxed in a representative capacity or whether tax should apply on a pass-through basis at the investor level[cite: 11]. Capital gains implications on cash distributions also require statutory clarity[cite: 11].</li>
+        <li><strong>Accounting Treatment:</strong> Removing securitized assets from the originator's balance sheet is complex, particularly when credit enhancements or recourse arrangements are involved[cite: 11].</li>
+        <li><strong>Lack of Standardization:</strong> Varied documentation, loan administration formats, and underwriting standards across originators complicate asset evaluation[cite: 11].</li>
+        <li><strong>Inadequate Secondary Debt Market:</strong> The lack of a deep, liquid secondary corporate debt market limits trading liquidity for securitized instruments[cite: 11].</li>
+        <li><strong>Ineffective Foreclosure Laws:</strong> Despite the SARFAESI Act, legal enforcement and property transfers on defaulted mortgage-backed securities remain subject to procedural delays[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH07_TH_07",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Securitization",
+    // placement: 57,
+    marks: 6,
+    question_html: `
+      <p>What are the various securitization instruments? Differentiate between Pass Through Certificates (PTCs), Pay Through Securities (PTS), and Stripped Securities. [May 2018 MTP, May 2019 MTP, Nov 2018 MTP, Nov 2020, May 2023, May 2021 MTP, Nov 2022 MTP, May 2025 RTP, SM][cite: 11]</p>
+    `,
+    solution_html: `
+      <ul>
+        <li><strong>Pass Through Certificates (PTCs):</strong>
+          <br />The originator transfers cash receipts (interest and principal) directly to investors via the SPV[cite: 11]. Investors hold a direct undivided beneficial interest in the underlying pool[cite: 11]. Prepayments are distributed proportionately among holders, and all securities terminate simultaneously upon final pool liquidation[cite: 11]. Early prepayments can cause cash flow skewness[cite: 11].
+        </li>
+        <li><strong>Pay Through Securities (PTS):</strong>
+          <br />The SPV issues debt securities collateralized by the asset pool, allowing it to restructure cash flows into multiple tranches with differing maturities[cite: 11]. This desynchronizes debt service payments from pool collections and permits the SPV to reinvest early prepayments in short-term avenues to earn yield before servicing scheduled tranches[cite: 11].
+        </li>
+        <li><strong>Stripped Securities:</strong>
+          <br />Formed by dividing pool cash flows into two distinct classes:
+          <ul>
+            <li><em>Interest-Only (IO) Securities:</em> Holders receive only interest cash flows; prices fall when interest rates decline due to accelerated prepayments[cite: 11].</li>
+            <li><em>Principal-Only (PO) Securities:</em> Holders receive only principal repayments; prices rise when interest rates fall as prepayments accelerate[cite: 11].</li>
+          </ul>
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH07_TH_08",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Securitization",
+    // placement: 58,
+    marks: 4,
+    question_html: `
+      <p>How is the pricing of securitized instruments determined from the angles of the Originator and the Investor? [May 2019 MTP, Dec 2021, Nov 2023 RTP, Nov 2021 MTP, May 2025 MTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <p>Pricing must satisfy both counterparties to complete a transaction[cite: 11]:</p>
+      <ul>
+        <li><strong>From the Originator's Angle:</strong> Priced at a rate where the required outflow can be amortized over time by investing the funds raised through securitization, generating a positive net spread for the originator[cite: 11].</li>
+        <li><strong>From the Investor's Angle:</strong> Priced by discounting estimated future cash flows at the Yield-to-Maturity (YTM) of comparable market securities with similar credit ratings and average lives[cite: 11]. The yield is derived from the government yield curve adjusted for spread points that reflect the credit quality of the pool[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH07_TH_09",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Securitization",
+    // placement: 59,
+    marks: 6,
+    question_html: `
+      <p>What are the various risks involved in the Securitization process?[cite: 11]</p>
+    `,
+    solution_html: `
+      <ul>
+        <li><strong>Credit Risk / Counterparty Risk:</strong> The risk of obligor default, servicer non-performance, or servicer insolvency that disrupts cash flows[cite: 11].</li>
+        <li><strong>Legal Risk:</strong> In evolving legal environments like India, disputes over asset ownership or true sale status can create uncertainty for investor payouts[cite: 11].</li>
+        <li><strong>Market Risks:</strong> External macroeconomic and interest rate variables that impact pool performance[cite: 11]:
+          <ul>
+            <li><em>Macroeconomic Risk:</em> Industry downturns (e.g., lower freight rates hurting commercial vehicle operators) that increase loan defaults[cite: 11].</li>
+            <li><em>Prepayment Risk:</em> Falling interest rates cause borrowers to prepay loans early, forcing investors to reinvest capital at lower yields[cite: 11].</li>
+            <li><em>Interest Rate Risk:</em> Mismatches between floating-rate loan collections and fixed-rate investor payouts (or vice versa), which can leave cash flows insufficient to cover obligations[cite: 11].</li>
+          </ul>
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH07_TH_10",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Securitization",
+    // placement: 60,
+    marks: 6,
+    question_html: `
+      <p>What is blockchain technology, how does it work, and what are its applications across various industries? [Nov 2024 MTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept and Mechanism</h4>
+      <p><strong>Blockchain</strong> is a shared, peer-to-peer, decentralized open ledger where transactions are recorded permanently in append-only, tamper-resistant blocks using cryptography without trusted third parties[cite: 11].</p>
+      <ul>
+        <li><em>Analogy:</em> Like a shared Google Doc, data is distributed rather than copied, giving all participants simultaneous access to transparent, real-time updates[cite: 11].</li>
+        <li><em>Transaction Flow:</em> A transaction is initiated $\rightarrow$ broadcast to the network $\rightarrow$ validated through consensus cryptography $\rightarrow$ bundled into a block $\rightarrow$ added to the immutable chain $\rightarrow$ completed[cite: 11].</li>
+      </ul>
+
+      <h4>2. Industry Applications</h4>
+      <ul>
+        <li><strong>Financial Services:</strong> Automates trade lifecycles, cross-border settlements, and asset transfers (both physical and digital)[cite: 11].</li>
+        <li><strong>Healthcare:</strong> Enables secure sharing of patient records, enhancing data privacy and interoperability while reducing administrative overhead[cite: 11].</li>
+        <li><strong>Government:</strong> Powers transparent, auditable public registries for land titles, vehicle registrations, and secure e-voting systems[cite: 11].</li>
+        <li><strong>Travel &amp; Hospitality:</strong> Facilitates secure passenger identification, digital passport storage, loyalty rewards, and automated travel insurance settlements[cite: 11].</li>
+        <li><strong>Economic Forecasting:</strong> Supports decentralized prediction markets, trading platforms, and economic modeling[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH07_TH_11",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Securitization",
+    // placement: 61,
+    marks: 4,
+    question_html: `
+      <p>What are the risks associated with Blockchain Technology? [May 2024 MTP, Sep 2025 MTP][cite: 11]</p>
+    `,
+    solution_html: `
+      <p>Key risks associated with deploying blockchain systems include[cite: 11]:</p>
+      <ul>
+        <li><strong>Governance and Accountability:</strong> Participants may have conflicting risk tolerances, creating disagreement when designing controls; the absence of a central authority makes it difficult to assign responsibility when issues arise[cite: 11].</li>
+        <li><strong>Consensus Mechanism Tampering:</strong> Reliability depends on protocol security; if the underlying consensus mechanism is compromised, recorded financial data can become inaccurate and unreliable[cite: 11].</li>
+        <li><strong>Lack of Centralized Administration:</strong> Developing and maintaining IT controls is difficult without a central administrator, complicating regulatory compliance audits on public blockchains[cite: 11].</li>
+        <li><strong>Information Overload &amp; Talent Scarcity:</strong> High transaction volumes complicate monitoring, while finding professionals skilled in blockchain audit and security design remains difficult[cite: 11].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH07_TH_12",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Securitization",
+    // placement: 62,
+    marks: 4,
+    question_html: `
+      <p>What is Tokenization and compare the same with securitization? [May 2024 MTP, May 2024, May 2025][cite: 11]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept of Tokenization</h4>
+      <p><strong>Tokenization</strong> is the process of converting ownership rights in tangible or intangible assets (such as real estate, fine art, or intellectual property) into digital blockchain tokens[cite: 11].</p>
+
+      <h4>2. Similarities Between Tokenization and Securitization</h4>
+      <ul>
+        <li><strong>Liquidity Injection:</strong> Both mechanisms transform illiquid assets into liquid, tradeable instruments[cite: 11].</li>
+        <li><strong>Diversification:</strong> Both allow investors to purchase fractional interests to diversify portfolios and optimize returns[cite: 11].</li>
+        <li><strong>Secondary Market Trading:</strong> Both create tradeable instruments (tokens on digital exchanges vs. ABS/PTCs on debt markets)[cite: 11].</li>
+        <li><strong>Fee Opportunities:</strong> Both generate fee income for intermediaries, structurers, custodians, and platforms[cite: 11].</li>
+      </ul>
+    `
+  },
+  // =========================================================================
+  // CHAPTER 15: STARTUP FINANCE
+  // =========================================================================
+  {
+    question_id: "AFM_ED4_CH15_TH_01",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Startup Finance",
+    // placement: 63,
+    marks: 6,
+    question_html: `
+      <p>Explain the basics of Startup Financing and why traditional lenders like commercial banks are reluctant to fund startup enterprises.[cite: 9]</p>
+    `,
+    solution_html: `
+      <h4>1. Meaning of Startup Financing</h4>
+      <p><strong>Startup Financing</strong> refers to the initial capital infusion required to turn an innovative business idea into a functioning commercial reality[cite: 9]. It funds initial product development, prototype design, key personnel hiring, and early market testing[cite: 9].</p>
+
+      <h4>2. Why Traditional Lenders (Banks) Avoid Startups</h4>
+      <p>Traditional lenders like commercial banks are generally the least likely source of funding for early-stage startups due to several structural reasons[cite: 9]:</p>
+      <ul>
+        <li><strong>Absence of Tangible Collateral:</strong> Startups operate primarily with intangible assets, code, and intellectual property, lacking the physical fixed assets that conservative lenders require as loan security[cite: 9].</li>
+        <li><strong>Unpredictable Cash Flows:</strong> Startups do not possess established operational histories or predictable cash inflows, making it impossible for lenders to forecast debt-servicing capacity with certainty[cite: 9].</li>
+        <li><strong>High Mortality Rate:</strong> Given the unproven nature of new business concepts, the statistical probability of startup failure is elevated, which conflicts with a commercial bank's fiduciary duty to protect depositor funds[cite: 9].</li>
+      </ul>
+
+      <h4>3. Alternative Routes and Founder Commitments</h4>
+      <p>Because bank debt is unavailable, founders must initially rely on personal savings, borrowing against personal assets, or securing informal loans from family and friends[cite: 9]. To attract outside professional capital later, entrepreneurs must accelerate operations quickly to achieve measurable proof-of-concept and demonstrate personal financial commitment[cite: 9].</p>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH15_TH_02",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Startup Finance",
+    // placement: 64,
+    marks: 8,
+    question_html: `
+      <p>Discuss the innovative non-bank sources of financing available to a startup enterprise.[cite: 9]</p>
+    `,
+    solution_html: `
+      <p>Because traditional bank loans are rarely accessible during early stages, startups rely on innovative non-bank funding avenues[cite: 9]:</p>
+      <ul>
+        <li><strong>Personal Financing (Self-Funding):</strong> Investing personal savings into the business[cite: 9]. Outside investors typically require founders to contribute their own funds first to demonstrate commitment before investing external capital[cite: 9].</li>
+        <li><strong>Personal Credit Lines:</strong> Utilizing personal credit facilities or commercial credit cards to meet immediate, short-term operational cash requirements based on the founder's credit score[cite: 9].</li>
+        <li><strong>Family and Friends:</strong> Raising seed money from relatives and close acquaintances who believe in the founder[cite: 9]. These arrangements should be formalized in writing via promissory notes to avoid strained relationships[cite: 9].</li>
+        <li><strong>Peer-to-Peer (P2P) Lending:</strong> Online platforms and organized communities that allow individuals to lend directly to each other without conventional banking intermediaries[cite: 9].</li>
+        <li><strong>Crowdfunding:</strong> Raising small amounts of capital from a large pool of individual contributors over internet platforms and social media, which also serves to validate product demand[cite: 9].</li>
+        <li><strong>Microloans:</strong> Small-denomination loans offered by microfinance institutions or community non-profits at manageable interest rates to support early operations[cite: 9].</li>
+        <li><strong>Vendor Financing:</strong> Suppliers or equipment manufacturers extend credit terms (e.g., stretching payment windows from 30 days to 60 or 90 days), allowing the startup to sell products before paying for raw materials[cite: 9].</li>
+        <li><strong>Purchase Order (PO) Financing:</strong> When a startup secures a large customer order but lacks working capital to fulfill it, PO financing companies advance funds directly to the supplier to manufacture and ship the order, collecting payment from the end customer and remitting the net margin to the startup[cite: 9].</li>
+        <li><strong>Factoring Accounts Receivable:</strong> Selling credit invoices to a commercial factor to receive 80% to 90% of the invoice value upfront in cash, freeing capital tied up in receivables to cover daily operating expenses[cite: 9].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH15_TH_03",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Startup Finance",
+    // placement: 65,
+    marks: 8,
+    question_html: `
+      <p>What is a Pitch Presentation? What critical points should be incorporated while preparing a pitch deck for potential investors?[cite: 9]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept of Pitch Presentation</h4>
+      <p>A <strong>Pitch Presentation</strong> (or Pitch Deck) is a concise slide presentation (typically under 20 minutes) designed to provide potential angel investors, venture capitalists, and strategic partners with a quick, compelling overview of a startup's business plan to secure capital investment[cite: 9].</p>
+
+      <h4>2. Critical Components of an Effective Pitch Deck</h4>
+      <ol>
+        <li><strong>Introduction:</strong> A brief opening identifying the company, its core vision, and notable operating milestones achieved to capture investor interest[cite: 9].</li>
+        <li><strong>Team:</strong> Highlights the core founders and key personnel, detailing their academic credentials, technical expertise, complementary skills, and prior startup or operational experience[cite: 9].</li>
+        <li><strong>Problem:</strong> Clearly articulates the specific customer pain point, market gap, or structural inefficiency the startup addresses (e.g., Facebook addressing user privacy limitations found in earlier platforms like Orkut)[cite: 9].</li>
+        <li><strong>Solution:</strong> Explains how the startup's product or service solves the identified problem (e.g., Flipkart introducing Cash on Delivery and proprietary logistics to solve early Indian e-commerce challenges)[cite: 9].</li>
+        <li><strong>Marketing &amp; Sales:</strong> Defines the Total Addressable Market (TAM), target customer personas, customer acquisition channels, and pricing strategies[cite: 9].</li>
+        <li><strong>Projections &amp; Milestones:</strong> Multi-year financial statements including monthly income statements for Year 1, quarterly for Year 2, and annual cash flow projections showing the cash burn rate, operational runway, and projected path to profitability[cite: 9].</li>
+        <li><strong>Competition:</strong> A competitive landscape matrix showing market rivals, existing barriers to entry, and the startup's unique selling proposition (USP)[cite: 9].</li>
+        <li><strong>Business Model:</strong> Details on revenue generation streams, unit economics, gross margins, Customer Lifetime Value (LTV), and Customer Acquisition Cost (CAC) (e.g., online movie streaming models offering 60% gross margins compared to 20% for physical rental businesses due to lower distribution costs)[cite: 9].</li>
+        <li><strong>Financing:</strong> Discloses prior capital raised, the current round's target amount, and planned fund deployment across R&amp;D, marketing, and working capital[cite: 9].</li>
+      </ol>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH15_TH_04",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Startup Finance",
+    // placement: 66,
+    marks: 6,
+    question_html: `
+      <p>Explain the concept of a &ldquo;Unicorn&rdquo; in the context of startup businesses. What are its core features, and what is a &ldquo;Decacorn&rdquo;?[cite: 9]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept and Origin</h4>
+      <p>A <strong>Unicorn</strong> is a privately held startup company that achieves a post-money valuation of <strong>US$ 1 billion or more</strong>[cite: 9]. The term was coined in 2013 by venture capitalist Aileen Lee, referencing the mythical animal to symbolize the statistical rarity of building such high-value ventures[cite: 9].</p>
+
+      <h4>2. Core Characteristics of a Unicorn</h4>
+      <ul>
+        <li><strong>Privately Held:</strong> Must be unlisted; once a unicorn completes an IPO on a public stock exchange, it transitions to a publicly traded corporation[cite: 9].</li>
+        <li><strong>Billion-Dollar Valuation:</strong> The valuation must equal or exceed US$ 1 billion based on recognized funding rounds[cite: 9]. If its valuation subsequently slips below US$ 1 billion in down-rounds, it loses its unicorn status[cite: 9].</li>
+        <li><strong>Disruptive Innovation &amp; Tech Focus:</strong> Typically driven by software, digital platforms, network effects, and consumer-centric technology that disrupt traditional industries[cite: 9].</li>
+      </ul>
+
+      <h4>3. Indian Startup Ecosystem Context</h4>
+      <ul>
+        <li>In September 2011, mobile ad-tech company <strong>InMobi</strong> became India's first unicorn following a US$ 200 million investment from SoftBank[cite: 9].</li>
+        <li>In 2018, B2B marketplace <strong>Udaan</strong> became the fastest Indian startup to achieve unicorn status, taking just over two years from incorporation[cite: 9].</li>
+        <li>India represents the third-largest startup ecosystem globally (after the US and China), hosting over 111 unicorns with combined valuations exceeding US$ 349 billion[cite: 9].</li>
+      </ul>
+
+      <h4>4. Concept of Decacorn</h4>
+      <p>A <strong>Decacorn</strong> is an elite startup company that has achieved a valuation exceeding <strong>US$ 10 billion</strong> (representing a 10x progression over a standard unicorn)[cite: 9].</p>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH15_TH_05",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Startup Finance",
+    // placement: 67,
+    marks: 6,
+    question_html: `
+      <p>What is Bootstrapping? Explain the primary methods through which an entrepreneur can bootstrap a startup enterprise.[cite: 9]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept of Bootstrapping</h4>
+      <p><strong>Bootstrapping</strong> refers to starting and scaling a business using only the founder's personal savings and reinvested internal operating cash flows, without relying on outside venture capital or institutional bank loans[cite: 9]. It encourages cost discipline, prevents premature equity dilution, and ensures the founding team retains complete operational control[cite: 9].</p>
+
+      <h4>2. Core Methods of Bootstrapping</h4>
+      <ul>
+        <li><strong>Trade Credit:</strong>
+          <br />Negotiating favorable payment terms with raw material suppliers and manufacturers (e.g., obtaining 30 to 60 days credit) by presenting a clear business plan[cite: 9]. The operational goal is to receive goods on credit, manufacture finished products, and collect customer cash before the supplier invoice falls due, minimizing external working capital needs[cite: 9].
+        </li>
+        <li><strong>Factoring Accounts Receivable:</strong>
+          <br />Selling outstanding credit sales invoices to a commercial factoring institution on a non-notification basis[cite: 9]. The factor advances 80% to 90% of the invoice value upfront, assuming collection responsibilities and releasing cash that would otherwise remain locked in receivables[cite: 9].
+        </li>
+        <li><strong>Leasing Operational Assets:</strong>
+          <br />Leasing physical assets—such as computers, machinery, and vehicles—instead of purchasing them outright[cite: 9]. Paying monthly lease rentals (e.g., ₹ 5,000/month for a photocopier rather than spending ₹ 1,00,000 upfront) conserves liquidity, provides flexibility to upgrade equipment, and offers tax deductions on lease payments[cite: 9].
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH15_TH_06",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Startup Finance",
+    // placement: 68,
+    marks: 6,
+    question_html: `
+      <p>Who are Angel Investors? Explain their characteristics and how their investment approach differs from that of Venture Capitalists.[cite: 9]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept and Profile</h4>
+      <p><strong>Angel Investors</strong> (also known as business angels, seed investors, or informal investors) are affluent high-net-worth individuals (HNIs) who invest their own personal capital into early-stage, seed-level startups in exchange for equity ownership or convertible debt[cite: 9].</p>
+
+      <h4>2. Key Characteristics of Angel Investors</h4>
+      <ul>
+        <li><strong>Personal Capital Deployment:</strong> They invest their own personal money, unlike venture capitalists who manage pooled institutional capital[cite: 9].</li>
+        <li><strong>Support for Early Stages:</strong> They typically provide one-time seed investments or ongoing capital to carry a nascent firm through its early product-development phase[cite: 9].</li>
+        <li><strong>Belief in the Entrepreneur:</strong> They offer more favorable, patient terms than institutional funds, often investing in the founder's drive and vision rather than demanding proven commercial viability[cite: 9].</li>
+        <li><strong>Syndication &amp; Networks:</strong> Often invest through angel networks, angel syndicates, or online equity platforms to pool expertise and diversify risk[cite: 9].</li>
+      </ul>
+
+      <h4>3. Key Distinctions from Venture Capitalists</h4>
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd; width:20%;">Parameter</th>
+              <th style="padding:6px; border:1px solid #ddd; width:40%;">Angel Investors</th>
+              <th style="padding:6px; border:1px solid #ddd; width:40%;">Venture Capitalists</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">Source of Funds</td>
+              <td style="padding:6px; border:1px solid #ddd;">Personal wealth of the individual investor[cite: 9].</td>
+              <td style="padding:6px; border:1px solid #ddd;">Pooled institutional capital (pension funds, insurance companies, sovereign wealth funds)[cite: 9].</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">Investment Stage</td>
+              <td style="padding:6px; border:1px solid #ddd;">Seed, concept, and early prototype stage[cite: 9].</td>
+              <td style="padding:6px; border:1px solid #ddd;">Growth, scaling, Series A, B, and expansion stages[cite: 9].</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">Governance Control</td>
+              <td style="padding:6px; border:1px solid #ddd;">Informal advisory role; rarely demand board control[cite: 9].</td>
+              <td style="padding:6px; border:1px solid #ddd;">Demand formal board seats, veto rights, and stringent covenants[cite: 9].</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH15_TH_07",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Startup Finance",
+    // placement: 69,
+    marks: 6,
+    question_html: `
+      <p>What is a Venture Capital Fund? Explain the key characteristics and advantages of venture capital financing for a startup.[cite: 9]</p>
+    `,
+    solution_html: `
+      <h4>1. Concept of Venture Capital</h4>
+      <p>A <strong>Venture Capital Fund (VCF)</strong> is an investment vehicle managed by professional investment managers that pools capital from institutional investors to finance young, rapidly growing private companies with high growth potential[cite: 9].</p>
+
+      <h4>2. Key Characteristics of Venture Capital Financing</h4>
+      <ul>
+        <li><strong>Long Time Horizon:</strong> Investments are made with patient capital, typically requiring holding horizons of 3 to 10 years before exit[cite: 9].</li>
+        <li><strong>Lack of Liquidity:</strong> VCF investments in private unlisted shares are illiquid; an illiquidity risk premium is factored into their required return[cite: 9].</li>
+        <li><strong>High Risk &amp; High Return:</strong> VCFs operate on a high-risk, high-return model, accepting high portfolio mortality in pursuit of substantial returns from breakout successes[cite: 9].</li>
+        <li><strong>Equity Participation &amp; Active Management:</strong> Capital is provided primarily via equity or convertible instruments (CCPS), accompanied by active board representation to guide company strategy[cite: 9].</li>
+      </ul>
+
+      <h4>3. Advantages of Bringing a VC into a Company</h4>
+      <ul>
+        <li>Provides long-term equity capital that builds a solid balance sheet without debt-servicing burdens[cite: 9].</li>
+        <li>The venture capitalist acts as a business partner, sharing operational risks and rewards[cite: 9].</li>
+        <li>Offers strategic guidance, governance discipline, and practical experience from managing other portfolio companies[cite: 9].</li>
+        <li>Provides access to broad industry networks, potential corporate customers, and senior executive talent[cite: 9].</li>
+        <li>Possesses the financial capacity to provide follow-on funding rounds as the company scales[cite: 9].</li>
+        <li>Helps position the company for an eventual Initial Public Offering (IPO) or strategic acquisition[cite: 9].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH15_TH_08",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Startup Finance",
+    // placement: 70,
+    marks: 6,
+    question_html: `
+      <p>Explain the various stages of Venture Capital funding along with the risk perception and operational activities financed at each stage.[cite: 9]</p>
+    `,
+    solution_html: `
+      <div style="overflow-x:auto;">
+        <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
+          <thead>
+            <tr style="background-color:#f2f2f2;">
+              <th style="padding:6px; border:1px solid #ddd;">Funding Stage</th>
+              <th style="padding:6px; border:1px solid #ddd;">Holding Period</th>
+              <th style="padding:6px; border:1px solid #ddd;">Risk Level</th>
+              <th style="padding:6px; border:1px solid #ddd;">Operational Activity Financed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">1. Seed Money</td>
+              <td style="padding:6px; border:1px solid #ddd;">7 &ndash; 10 years</td>
+              <td style="padding:6px; border:1px solid #ddd;">Extreme</td>
+              <td style="padding:6px; border:1px solid #ddd;">Low-level funding to support an initial concept, idea validation, and early R&amp;D[cite: 9].</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">2. Start-Up</td>
+              <td style="padding:6px; border:1px solid #ddd;">5 &ndash; 9 years</td>
+              <td style="padding:6px; border:1px solid #ddd;">Very High</td>
+              <td style="padding:6px; border:1px solid #ddd;">Developing prototypes, initiating operations, product testing, and initial marketing[cite: 9].</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">3. First Stage</td>
+              <td style="padding:6px; border:1px solid #ddd;">3 &ndash; 7 years</td>
+              <td style="padding:6px; border:1px solid #ddd;">High</td>
+              <td style="padding:6px; border:1px solid #ddd;">Launching commercial manufacturing and scaling sales operations[cite: 9].</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">4. Second Stage</td>
+              <td style="padding:6px; border:1px solid #ddd;">3 &ndash; 5 years</td>
+              <td style="padding:6px; border:1px solid #ddd;">Sufficiently High</td>
+              <td style="padding:6px; border:1px solid #ddd;">Working capital financing for expanding companies that are generating revenue but not yet profitable[cite: 9].</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">5. Third Stage (Mezzanine)</td>
+              <td style="padding:6px; border:1px solid #ddd;">1 &ndash; 3 years</td>
+              <td style="padding:6px; border:1px solid #ddd;">Medium</td>
+              <td style="padding:6px; border:1px solid #ddd;">Major plant capacity expansion, acquisitions, and new product lines for newly profitable firms[cite: 9].</td>
+            </tr>
+            <tr>
+              <td style="padding:6px; border:1px solid #ddd; font-weight:bold;">6. Fourth Stage (Bridge)</td>
+              <td style="padding:6px; border:1px solid #ddd;">1 &ndash; 3 years</td>
+              <td style="padding:6px; border:1px solid #ddd;">Low</td>
+              <td style="padding:6px; border:1px solid #ddd;">Short-term bridge funding to prepare the company to go public through an IPO[cite: 9].</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH15_TH_09",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Startup Finance",
+    // placement: 71,
+    marks: 6,
+    question_html: `
+      <p>Describe the step-by-step process of Venture Capital Investment.[cite: 9]</p>
+    `,
+    solution_html: `
+      <p>The venture capital investment process follows six structured stages[cite: 9]:</p>
+      <ol>
+        <li><strong>Deal Origination:</strong> Sourcing potential deals directly or through intermediaries (such as practicing Chartered Accountants)[cite: 9]. The VC establishes specific criteria covering industry sector, operational stage, turnover, and founder profile[cite: 9]. The startup submits an Investment Memorandum (IM) detailing its business plan, financial model, and exit strategy[cite: 9].</li>
+        <li><strong>Screening:</strong> An internal screening committee reviews the initial submission to assess whether the business model, market size, and growth narrative fit the fund's mandate[cite: 9].</li>
+        <li><strong>Due Diligence:</strong> External professional consultants conduct detailed verification of accounting records, tax filings, legal titles, intellectual property, and founder backgrounds[cite: 9].</li>
+        <li><strong>Deal Structuring:</strong> Structuring the investment agreement, typically using Compulsorily Convertible Preference Shares (CCPS), and defining valuation, liquidation preferences, veto rights, and tag-along clauses[cite: 9].</li>
+        <li><strong>Post-Investment Activity:</strong> Appointing a nominee director to the board, tracking financial MIS, monitoring milestone progress, and supporting professional management development[cite: 9].</li>
+        <li><strong>Exit Plan:</strong> Realizing investment returns through predefined liquidity events, such as an Initial Public Offering (IPO), strategic sale to a corporate buyer, secondary sale to another fund, or a contractual promoter buyback (typically targeting an 18% to 25% IRR)[cite: 9].</li>
+      </ol>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH15_TH_10",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Startup Finance",
+    // placement: 72,
+    marks: 6,
+    question_html: `
+      <p>Explain the structural framework of Venture Capital Funds in India, differentiating between Domestic and Offshore fund structures.[cite: 9]</p>
+    `,
+    solution_html: `
+      <h4>1. Evolution of Venture Capital in India</h4>
+      <p>Venture capital emerged in India during the 1970s and gained institutional footing in 1988 under Controller of Capital Issues (CCI) guidelines[cite: 9]. Following the abolition of the CCI and subsequent economic reforms, SEBI established the regulatory framework for Alternative Investment Funds (AIFs)[cite: 9].</p>
+
+      <h4>2. Structural Models of Venture Capital Funds</h4>
+      <ul>
+        <li><strong>Domestic Funds:</strong>
+          <br />Structured under Indian law using two distinct entities: (i) a pooling vehicle established as a <strong>Contributory Trust</strong> under the <em>Indian Trusts Act, 1882</em> (chosen for its operational and tax flexibility), and (ii) an Asset Management Company (AMC) acting as an independent investment manager[cite: 9].
+        </li>
+        <li><strong>Offshore Funds:</strong>
+          <ul>
+            <li><em>Offshore Structure:</em> An investment vehicle (such as an LLC or LP incorporated in a tax-efficient foreign jurisdiction) invests directly into Indian portfolio companies, managed by an offshore manager with advice from an Indian advisory team[cite: 9].</li>
+            <li><em>Unified Structure:</em> Used when both domestic and foreign investors participate in the same fund[cite: 9]. Offshore investors pool assets in an offshore vehicle that invests into a domestic Indian trust, while domestic investors invest directly in the trust, which then executes the portfolio investments[cite: 9].</li>
+          </ul>
+        </li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH15_TH_11",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Startup Finance",
+    // placement: 73,
+    marks: 6,
+    question_html: `
+      <p>Explain the Startup India Initiative, detailing the eligibility criteria to be recognized as a &ldquo;Startup&rdquo; under DPIIT norms and the features of the Startup India Seed Fund Scheme (SISFS).[cite: 9]</p>
+    `,
+    solution_html: `
+      <h4>1. Eligibility Criteria for Recognition as a Startup (DPIIT GSR 127(E))</h4>
+      <p>An entity is recognized as a Startup upon satisfying the following conditions[cite: 9]:</p>
+      <ul>
+        <li><strong>Period:</strong> Up to a period of <strong>10 years</strong> from its date of incorporation or registration[cite: 9].</li>
+        <li><strong>Entity Type:</strong> Incorporated as a Private Limited Company, a Registered Partnership Firm, or a Limited Liability Partnership (LLP) in India[cite: 9].</li>
+        <li><strong>Turnover Limit:</strong> Turnover for any financial year since incorporation has not exceeded <strong>₹ 100 crores</strong>[cite: 9].</li>
+        <li><strong>No Reconstruction:</strong> The entity must not have been formed by splitting up or reconstructing an existing business[cite: 9].</li>
+        <li><strong>Innovation Focus:</strong> Working towards innovation, development, or improvement of products, processes, or services, or operating a scalable business model with high potential for employment generation or wealth creation[cite: 9].</li>
+      </ul>
+
+      <h4>2. Startup India Seed Fund Scheme (SISFS)</h4>
+      <ul>
+        <li>Created by DPIIT with an outlay of <strong>₹ 945 Crores</strong> to provide financial assistance to early-stage startups through incubators[cite: 9].</li>
+        <li>Provides financial support for proof-of-concept, prototype development, product trials, and market-entry commercialization[cite: 9].</li>
+        <li>Startups incorporated not more than 2 years prior to application can secure seed funding up to <strong>₹ 50 Lakhs</strong>[cite: 9].</li>
+        <li>Priority sectors include social impact, waste management, healthcare, education, agriculture, mobility, energy, and defense[cite: 9].</li>
+      </ul>
+    `
+  },
+  {
+    question_id: "AFM_ED4_CH15_TH_12",
+    question_type: "theory",
+    source: "CA Dinesh Jain - AFM Edition 4",
+    chapter_name: "Startup Finance",
+    // placement: 74,
+    marks: 6,
+    question_html: `
+      <p>What is Succession Planning in business? Explain the need for it, the four-step succession strategy, and the specific challenges faced by startups.[cite: 9]</p>
+    `,
+    solution_html: `
+      <h4>1. Meaning of Succession Planning</h4>
+      <p><strong>Succession Planning</strong> is the systematic process of identifying critical leadership positions within an organization and developing structured action plans and talent pipelines to transition individuals into those roles smoothly[cite: 9].</p>
+
+      <h4>2. Need for Succession Planning</h4>
+      <ul>
+        <li><strong>Risk Mitigation:</strong> If a key leader departs unexpectedly, external searches can take 6 to 9 months, creating leadership vacuums, operational disruption, and strategic uncertainty[cite: 9].</li>
+        <li><strong>Cause Removal:</strong> Prepares the organization to replace executives promptly in cases of misconduct, gross negligence, or regulatory disqualification[cite: 9].</li>
+        <li><strong>Talent Pipeline &amp; Retention:</strong> Provides career development clarity for rising employees, helping retain institutional knowledge[cite: 9].</li>
+        <li><strong>Conflict Resolution:</strong> Establishes transparent succession guidelines that reduce internal conflict in family-owned businesses[cite: 9].</li>
+      </ul>
+
+      <h4>3. Four-Step Business Succession Strategy</h4>
+      <ol>
+        <li><strong>Evaluate Key Leadership Positions:</strong> Identify critical roles that drive strategy and operational performance[cite: 9].</li>
+        <li><strong>Map Required Competencies:</strong> Define the technical, strategic, and behavioral competencies required for each key role[cite: 9].</li>
+        <li><strong>Identify Workforce Competencies:</strong> Assess internal candidates, plan training and development programs, and determine when outside hiring is needed[cite: 9].</li>
+        <li><strong>Appoint Bridge Leaders:</strong> Appoint experienced outside executives to manage operations while mentoring next-generation leaders[cite: 9].</li>
+      </ol>
+
+      <h4>4. Specific Challenges in Startups</h4>
+      <ul>
+        <li><strong>Founder vs. Corporate Mindset:</strong> Founders operate with informal, agile decision-making styles that can clash with traditional management practices[cite: 9].</li>
+        <li><strong>Premature Implementation:</strong> Early-stage startups need operational agility; introducing formal succession processes too early can slow execution[cite: 9].</li>
+        <li><strong>Founder as the Brand:</strong> Founders often embody the identity and customer appeal of the startup, making succession planning difficult without their direct involvement[cite: 9].</li>
+      </ul>
+    `
+  },
+
+
 
 
 
