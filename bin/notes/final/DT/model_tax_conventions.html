@@ -1,0 +1,2665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 27: Overview of Model Tax Conventions (OECD, UN &amp; US Models) | CA Final DT Notes | Calcium Notes</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Master CA Final Direct Tax Chapter 27: Overview of Model Tax Conventions. In-depth comparative analysis of OECD Model (32 Articles), UN Model (31 Articles, 2025 Update), and US Model. Covers Articles 1 to 32, Subject-to-Tax Rule (STTR Art 1(3)), Dual Residence Tie-Breaker (Art 4), Permanent Establishment (Art 5), Force of Attraction (Art 7), Software Royalties (Art 12), Fees for Services (Art 12AA), Automated Digital Services (Art 12B), Insurance Premiums (Art 12C), Elimination Methods (Art 23A/23B), MAP &amp; GATS (Art 25), Exchange of Information (Art 26), and all 5 ICAI TYK Questions solved.">
+    <meta name="keywords" content="Model Tax Conventions, OECD Model, UN Model 2025, US Model, Article 5 PE, Service PE, Force of Attraction Rule, Article 12 Royalties Software, Article 12AA Fees for Services, Article 12B Automated Digital Services, Article 12C Insurance Premiums, Tie-Breaker Rule, Article 25 MAP Arbitration GATS, Article 26 Exchange of Information, CA Final DT Notes AY 2025-26, AY 2026-27">
+    <meta name="author" content="Calcium Notes">
+    <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/DT/model_tax_conventions.html">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- KaTeX for High Quality Math Formulas -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '\\(', right: '\\)', display: false}, {left: '$', right: '$', display: false}]});"></script>
+
+    <style>
+        :root {
+            --primary: #1e3a8a;          /* Deep classic navy */
+            --primary-light: #3b82f6;    /* Vibrant sapphire blue */
+            --primary-accent: #eff6ff;   /* Soft slate-blue tint */
+            --secondary: #0f766e;        /* Deep teal */
+            --secondary-light: #14b8a6;  /* Aqua teal */
+            --dark: #0f172a;             /* Obsidian slate */
+            --text-dark: #1e293b;        /* Charcoal body text */
+            --text-muted: #64748b;       /* Cool slate secondary */
+            --bg-light: #f8fafc;         /* Pure crisp canvas */
+            --surface: #ffffff;          /* Card surface white */
+            --border-color: #e2e8f0;     /* Refined borderline */
+            --accent-gold: #b45309;      /* Statutory bronze */
+            --accent-gold-light: #fef3c7;/* Golden badge background */
+            --success: #15803d;          /* Forest green */
+            --success-light: #dcfce7;    /* Pastel green */
+            --warning: #b45309;          /* Amber warning */
+            --warning-light: #fffbeb;    /* Pastel amber */
+            --danger: #b91c1c;           /* Crimson danger */
+            --danger-light: #fee2e2;     /* Pastel red */
+            --purple: #6d28d9;           /* Royal purple */
+            --purple-light: #f3e8ff;     /* Pastel purple */
+            --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-heading: 'Playfair Display', Georgia, serif;
+            --font-code: 'Fira Code', monospace;
+            --sidebar-width: 320px;
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 16px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+            --shadow-lg: 0 10px 25px -5px rgba(0,0,0,0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.65;
+            font-size: 15px;
+            overflow-x: hidden;
+        }
+
+        /* Top Reading Progress Bar */
+        #reading-progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            z-index: 1000;
+        }
+
+        #reading-progress {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, var(--primary), var(--secondary-light));
+            transition: width 0.1s ease;
+        }
+
+        /* Layout Container */
+        .app-container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: var(--sidebar-width);
+            background: var(--surface);
+            border-right: 1px solid var(--border-color);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            overflow-y: auto;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 2px 0 8px rgba(0,0,0,0.03);
+        }
+
+        .sidebar-header {
+            padding: 24px 20px 16px;
+            border-bottom: 1px solid var(--border-color);
+            background: #fff;
+        }
+
+        .sidebar-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 8px;
+        }
+
+        .sidebar-brand i {
+            font-size: 18px;
+            color: var(--secondary);
+        }
+
+        .sidebar-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--dark);
+            line-height: 1.3;
+        }
+
+        .sidebar-subtitle {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 4px;
+            font-weight: 500;
+        }
+
+        /* Sidebar Search Box */
+        .sidebar-search-box {
+            padding: 12px 18px;
+            background: var(--bg-light);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sidebar-search-input-wrapper {
+            position: relative;
+        }
+
+        .sidebar-search-input-wrapper i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        .sidebar-search-input {
+            width: 100%;
+            padding: 8px 10px 8px 30px;
+            font-size: 13px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            background: #fff;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .sidebar-search-input:focus {
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 2px var(--primary-accent);
+        }
+
+        /* Sidebar Navigation Menu */
+        .sidebar-nav {
+            list-style: none;
+            padding: 12px 10px;
+            flex: 1;
+        }
+
+        .nav-category {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.75px;
+            padding: 14px 12px 6px;
+        }
+
+        .sidebar-item {
+            margin-bottom: 2px;
+        }
+
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 12px;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            border-radius: var(--radius-sm);
+            transition: all 0.15s ease;
+        }
+
+        .sidebar-link:hover {
+            background-color: var(--primary-accent);
+            color: var(--primary);
+            transform: translateX(3px);
+        }
+
+        .sidebar-link.active {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .sidebar-badge {
+            font-size: 10px;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 10px;
+            background: #e2e8f0;
+            color: #475569;
+        }
+
+        .sidebar-link.active .sidebar-badge {
+            background: rgba(255, 255, 255, 0.25);
+            color: #ffffff;
+        }
+
+        .sidebar-footer {
+            padding: 14px 18px;
+            border-top: 1px solid var(--border-color);
+            font-size: 11px;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+        }
+
+        .sidebar-footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Main Content Container */
+        .main-content {
+            margin-left: var(--sidebar-width);
+            flex: 1;
+            padding: 40px 50px 80px;
+            max-width: 1200px;
+        }
+
+        /* Header Hero Banner */
+        .chapter-header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            color: #ffffff;
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            margin-bottom: 40px;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+            border-bottom: 4px solid var(--secondary-light);
+        }
+
+        .chapter-header::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(20, 184, 166, 0.25) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .chapter-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(4px);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+            color: #93c5fd;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .chapter-title {
+            font-family: var(--font-heading);
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.25;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+
+        .chapter-desc {
+            font-size: 15px;
+            color: #cbd5e1;
+            max-width: 900px;
+            line-height: 1.6;
+        }
+
+        .chapter-meta-bar {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+
+        .meta-pill {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .meta-pill i {
+            color: var(--secondary-light);
+        }
+
+        /* Section Cards & Layout */
+        .content-section {
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 32px 36px;
+            margin-bottom: 35px;
+            box-shadow: var(--shadow-sm);
+            scroll-margin-top: 30px;
+        }
+
+        .section-header {
+            margin-bottom: 24px;
+            border-bottom: 2px solid var(--primary-accent);
+            padding-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            color: var(--primary);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title i {
+            color: var(--secondary);
+            font-size: 20px;
+        }
+
+        .section-subtitle {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 4px;
+            font-family: var(--font-main);
+            font-weight: 400;
+        }
+
+        /* Callout / Theory Boxes */
+        .callout {
+            padding: 18px 22px;
+            border-radius: var(--radius-md);
+            margin: 20px 0;
+            border-left: 4px solid var(--primary);
+            background: var(--primary-accent);
+            font-size: 14.5px;
+        }
+
+        .callout-header {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 15px;
+        }
+
+        .callout-success {
+            background: var(--success-light);
+            border-left-color: var(--success);
+            color: #14532d;
+        }
+        .callout-success .callout-header { color: var(--success); }
+
+        .callout-warning {
+            background: var(--warning-light);
+            border-left-color: var(--warning);
+            color: #78350f;
+        }
+        .callout-warning .callout-header { color: var(--warning); }
+
+        .callout-danger {
+            background: var(--danger-light);
+            border-left-color: var(--danger);
+            color: #7f1d1d;
+        }
+        .callout-danger .callout-header { color: var(--danger); }
+
+        .callout-purple {
+            background: var(--purple-light);
+            border-left-color: var(--purple);
+            color: #4c1d95;
+        }
+        .callout-purple .callout-header { color: var(--purple); }
+
+        /* Tables & Matrices */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 24px 0;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .tax-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13.5px;
+            background: #fff;
+        }
+
+        .tax-table th {
+            background: #f1f5f9;
+            color: #334155;
+            font-weight: 700;
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 2px solid var(--border-color);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tax-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: top;
+            line-height: 1.55;
+        }
+
+        .tax-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .tax-table tr:hover td {
+            background-color: #f8fafc;
+        }
+
+        .badge-tag {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .tag-oecd { background: #dbeafe; color: #1e40af; border: 1px solid #bfdbfe; }
+        .tag-un { background: #ccfbf1; color: #0f766e; border: 1px solid #99f6e4; }
+        .tag-us { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+        .tag-2025 { background: #fae8ff; color: #86198f; border: 1px solid #f5d0fe; font-weight: 800; }
+        .tag-primary { background: #e0e7ff; color: #3730a3; }
+        .tag-success { background: var(--success-light); color: var(--success); }
+        .tag-danger { background: var(--danger-light); color: var(--danger); }
+        .tag-warning { background: var(--warning-light); color: var(--warning); }
+
+        /* Theory Cards & Split Grids */
+        .theory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            margin: 22px 0;
+        }
+
+        .theory-card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 22px;
+            transition: all 0.2s ease;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .theory-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+            border-color: var(--primary-light);
+        }
+
+        .theory-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Numbered Step & Process Flows */
+        .step-container {
+            margin: 22px 0;
+            position: relative;
+            padding-left: 36px;
+        }
+
+        .step-container::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 5px;
+            bottom: 5px;
+            width: 2px;
+            background: #cbd5e1;
+        }
+
+        .step-item {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .step-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-num {
+            position: absolute;
+            left: -36px;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 12px;
+            box-shadow: 0 0 0 4px #fff, 0 0 0 5px var(--border-color);
+        }
+
+        .step-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 4px;
+        }
+
+        /* Bullet & Styled Lists */
+        .styled-list {
+            list-style: none;
+            margin: 14px 0;
+            padding-left: 0;
+        }
+
+        .styled-list li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            font-size: 14.5px;
+        }
+
+        .styled-list li::before {
+            content: "\f058";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--secondary);
+            font-size: 14px;
+        }
+
+        .styled-list-warn li::before {
+            content: "\f06a";
+            color: var(--accent-gold);
+        }
+
+        /* Example / Problem Box */
+        .example-box {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--secondary);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            margin: 25px 0;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .example-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-solution {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            padding: 9px 18px;
+            font-size: 13.5px;
+            font-weight: 600;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 12px;
+        }
+
+        .btn-solution:hover {
+            background: var(--primary-light);
+            transform: translateY(-1px);
+        }
+
+        .solution-card {
+            display: none;
+            margin-top: 16px;
+            padding: 20px;
+            background: var(--bg-light);
+            border: 1px dashed #cbd5e1;
+            border-radius: var(--radius-sm);
+            font-size: 14px;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Bottom Nav */
+        .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .nav-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--text-dark);
+            padding: 10px 18px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .nav-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            background: var(--primary-accent);
+        }
+
+        .nav-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+        }
+
+        .nav-title {
+            font-size: 13.5px;
+        }
+
+        /* Responsive Media Queries */
+        @media (max-width: 1024px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            .sidebar.open {
+                transform: translateX(0);
+            }
+            .main-content {
+                margin-left: 0;
+                padding: 25px 20px 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Reading Progress Indicator -->
+    <div id="reading-progress-container">
+        <div id="reading-progress"></div>
+    </div>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-brand">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>CA Final Direct Tax</span>
+                </div>
+                <div class="sidebar-title">Chapter 27: Model Tax Conventions</div>
+                <div class="sidebar-subtitle">OECD &bull; UN (2025 Update) &bull; US Model</div>
+            </div>
+
+            <div class="sidebar-search-box">
+                <div class="sidebar-search-input-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="sidebar-search-input" class="sidebar-search-input" placeholder="Search Chapter 27...">
+                </div>
+            </div>
+
+            <ul class="sidebar-nav">
+                <li class="nav-category">Framework &amp; Structure</li>
+                <li class="sidebar-item">
+                    <a href="#sec-intro" class="sidebar-link">
+                        <span>Need &amp; Background</span>
+                        <span class="sidebar-badge">27.1</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-three-models" class="sidebar-link">
+                        <span>The Three Model Conventions</span>
+                        <span class="sidebar-badge">OECD / UN / US</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-articles-master-table" class="sidebar-link">
+                        <span>Master Article Comparison</span>
+                        <span class="sidebar-badge">32 vs 31 Arts</span>
+                    </a>
+                </li>
+
+                <li class="nav-category">Comparative Article Analysis</li>
+                <li class="sidebar-item">
+                    <a href="#sec-title-preamble" class="sidebar-link">
+                        <span>Title &amp; Preamble</span>
+                        <span class="sidebar-badge">Anti-Shopping</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-art1-persons" class="sidebar-link">
+                        <span>Art 1: Persons, Entities &amp; STTR</span>
+                        <span class="sidebar-badge tag-2025">2025 STTR</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-art2-taxes" class="sidebar-link">
+                        <span>Art 2: Taxes Covered</span>
+                        <span class="sidebar-badge">Income &amp; Capital</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-art4-resident" class="sidebar-link">
+                        <span>Art 4: Dual Residence Tie-Breaker</span>
+                        <span class="sidebar-badge">5 Tests / MAP</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-art5-pe" class="sidebar-link">
+                        <span>Art 5: Permanent Establishment</span>
+                        <span class="sidebar-badge">Service PE / Stock</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-art7-business-profits" class="sidebar-link">
+                        <span>Art 7: Business Profits &amp; FOA</span>
+                        <span class="sidebar-badge">Force of Attraction</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-art11-12-interest-royalties" class="sidebar-link">
+                        <span>Arts 11 &amp; 12: Interest &amp; Royalties</span>
+                        <span class="sidebar-badge tag-2025">Software 2025</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-art12aa-services" class="sidebar-link">
+                        <span>Art 12AA: Fees for Services</span>
+                        <span class="sidebar-badge tag-2025">New 2025 Overhaul</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-art12b-ads" class="sidebar-link">
+                        <span>Art 12B: Automated Digital Services</span>
+                        <span class="sidebar-badge">9 Categories</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-art12c-insurance" class="sidebar-link">
+                        <span>Art 12C: Insurance Premiums</span>
+                        <span class="sidebar-badge tag-2025">New 2025</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-art13-capital-gains" class="sidebar-link">
+                        <span>Art 13: Capital Gains</span>
+                        <span class="sidebar-badge">&gt;50% Immovable</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-art21-23-other-elimination" class="sidebar-link">
+                        <span>Arts 21 &amp; 23: Other Income &amp; Relief</span>
+                        <span class="sidebar-badge">Exemption / Credit</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-art25-map" class="sidebar-link">
+                        <span>Art 25: MAP &amp; GATS Interaction</span>
+                        <span class="sidebar-badge">Arbitration Rules</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-art26-eoi" class="sidebar-link">
+                        <span>Art 26: Exchange of Information</span>
+                        <span class="sidebar-badge">Bank Secrecy Void</span>
+                    </a>
+                </li>
+
+                <li class="nav-category">Practice Questions</li>
+                <li class="sidebar-item">
+                    <a href="#sec-tyk" class="sidebar-link">
+                        <span>Test Your Knowledge (TYK 1-5)</span>
+                        <span class="sidebar-badge">5 Questions</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-1" class="sidebar-link" style="padding-left: 22px;">
+                        <span>TYK 1: UN vs OECD Differences</span>
+                        <span class="sidebar-badge">Comparative</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-2" class="sidebar-link" style="padding-left: 22px;">
+                        <span>TYK 2: Individual Tie-Breaker</span>
+                        <span class="sidebar-badge">Waterfall</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-3" class="sidebar-link" style="padding-left: 22px;">
+                        <span>TYK 3: Interest &amp; Royalty Scope</span>
+                        <span class="sidebar-badge">UN Art 11 &amp; 12</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-4" class="sidebar-link" style="padding-left: 22px;">
+                        <span>TYK 4: Automated Digital Services</span>
+                        <span class="sidebar-badge">UN Art 12B</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-5" class="sidebar-link" style="padding-left: 22px;">
+                        <span>TYK 5: Article 12 Royalties Analysis</span>
+                        <span class="sidebar-badge">OECD vs UN</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <span>AY 2025-26 &amp; AY 2026-27</span>
+                <a href="../../notes/dtnotes.html"><i class="fa-solid fa-list-check"></i> Index</a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header Hero Banner -->
+            <div class="chapter-header">
+                <div class="chapter-tag">
+                    <i class="fa-solid fa-scale-balanced"></i> CA Final Direct Tax Laws &bull; Module 4: International Taxation &amp; Model Conventions
+                </div>
+                <h1 class="chapter-title">Chapter 27: Overview of Model Tax Conventions</h1>
+                <p class="chapter-desc">
+                    Comprehensive study notes on the structural architecture, distributive rules, and comparative provisions of the <strong>OECD Model Convention (32 Articles)</strong>, <strong>UN Model Convention (31 Articles, September 2025 Update)</strong>, and <strong>US Model Convention</strong>. Includes detailed coverage of Residence vs. Source taxation balance, fiscally transparent entities, the 2025 Subject-to-Tax Rule (STTR Art. 1(3)), dual residence tie-breaker tests (Art. 4), Permanent Establishment standards (Art. 5), the Force of Attraction rule (Art. 7), expanded software royalties (Art. 12), the new Fees for Services regime (Art. 12AA replacing Arts. 12A &amp; 14), Automated Digital Services (Art. 12B), standalone Insurance Premiums (Art. 12C), indirect transfer capital gains (Art. 13), MAP arbitration and GATS interaction (Art. 25), and Exchange of Information (Art. 26).
+                </p>
+                <div class="chapter-meta-bar">
+                    <div class="meta-pill"><i class="fa-solid fa-book-atlas"></i> OECD (32 Arts) vs UN (31 Arts)</div>
+                    <div class="meta-pill"><i class="fa-solid fa-clock-rotate-left"></i> Incorporating UN 2025 &amp; OECD 2025 Updates</div>
+                    <div class="meta-pill"><i class="fa-solid fa-laptop-code"></i> Arts 12(c), 12AA, 12B &amp; 12C Exhaustive Analysis</div>
+                    <div class="meta-pill"><i class="fa-solid fa-graduation-cap"></i> 5 ICAI TYK Questions Fully Solved</div>
+                </div>
+            </div>
+
+<!-- ========================================================================= -->
+<!-- MODULE 1: INTRODUCTION, NEED FOR MODEL CONVENTIONS & MASTER ARTICLES TABLE -->
+<!-- ========================================================================= -->
+
+<!-- 27.1 INTRODUCTION & NEED FOR MODEL CONVENTIONS -->
+<section class="content-section" id="sec-intro">
+    <div class="section-header">
+        <div>
+            <h2 class="section-title"><i class="fa-solid fa-earth-americas"></i> 27.1 Introduction &amp; The Need for Model Tax Conventions</h2>
+            <div class="section-subtitle">Historical Evolution, Standardization, and the Three Leading Model Tax Conventions</div>
+        </div>
+        <span class="badge-tag tag-primary">Foundations</span>
+    </div>
+
+    <p>
+        In an increasingly interconnected global economy, cross-border commercial transactions, multinational investments, and digital service deliveries inevitably trigger concurrent tax claims by multiple sovereign jurisdictions. In order to enable sovereign nations to enter into bilateral Double Taxation Avoidance Agreements (DTAAs) that are uniform, predictable, and standardized, international bodies have developed <strong>Model Tax Conventions</strong>.
+    </p>
+
+    <div class="callout callout-success">
+        <div class="callout-header"><i class="fa-solid fa-bullseye"></i> Why Do Countries Need Model Tax Conventions?</div>
+        <p>
+            Negotiating bilateral tax treaties entirely from scratch between two independent sovereign states would be an extraordinarily complex, protracted, and legally fragmented process. Model Tax Conventions fulfill critical international functions:
+        </p>
+        <ul class="styled-list">
+            <li><strong>Harmonized Starting Template:</strong> They provide a structured, internationally recognized baseline text and uniform standard legal phraseology for bilateral negotiations.</li>
+            <li><strong>Standardized Distributive Rules:</strong> They establish common allocation rules determining which state (Residence or Source) possesses the primary or exclusive right to tax specific categories of cross-border income (e.g., business profits, dividends, interest, royalties, capital gains).</li>
+            <li><strong>Consistent Legal Interpretation:</strong> Accompanying official Commentaries (by the OECD and UN) provide authoritative guidance, reducing cross-border interpretive conflicts and treaty disputes.</li>
+            <li><strong>Mitigation of Economic &amp; Juridical Double Taxation:</strong> They formulate standardized relief mechanisms (Exemption and Foreign Tax Credit methods) to ensure enterprise income is not subjected to confiscatory double taxation.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- THE THREE MODEL CONVENTIONS: OECD, UN, US -->
+<section class="content-section" id="sec-three-models">
+    <div class="section-header">
+        <div>
+            <h2 class="section-title"><i class="fa-solid fa-layer-group"></i> The Three Significant Model Tax Conventions</h2>
+            <div class="section-subtitle">OECD Model Convention &bull; UN Model Convention (2025 Update) &bull; US Model Convention</div>
+        </div>
+        <span class="badge-tag tag-un">Comparative Overview</span>
+    </div>
+
+    <p>
+        International treaty practice is overwhelmingly dominated by three model conventions. While they share common architectural roots dating back to the League of Nations, they reflect distinct economic philosophies and sovereign priorities:
+    </p>
+
+    <div class="theory-grid">
+        <!-- OECD MODEL -->
+        <div class="theory-card" style="border-top: 4px solid var(--primary-light);">
+            <div class="theory-title">
+                <i class="fa-solid fa-landmark-dome" style="color: var(--primary-light);"></i>
+                <span>1. OECD Model Convention</span>
+            </div>
+            <div style="margin-bottom: 8px;">
+                <span class="badge-tag tag-oecd">OECD MC (2025)</span>
+                <span class="badge-tag tag-primary">32 Articles &bull; VII Chapters</span>
+            </div>
+            <ul class="styled-list">
+                <li><strong>Historical Lineage:</strong> Commenced under the League of Nations in 1921. The first model bilateral convention was drafted in 1928, refined under the OEEC (1956–1961), formalized as the OECD Model in 1963/1977, and updated continuously (latest comprehensive update in 2025).</li>
+                <li><strong>Core Philosophy:</strong> Developed primarily in the context of capital-exporting, industrialized OECD member states.</li>
+                <li><strong>Taxing Rights Bias:</strong> Places relatively greater emphasis on <strong>Residence-State taxation</strong>, seeking to minimize or eliminate withholding taxes at source on passive income (e.g., zero source taxation on royalties under Article 12) and restricting Source-State taxing rights over business profits strictly to fixed physical PEs.</li>
+            </ul>
+        </div>
+
+        <!-- UN MODEL -->
+        <div class="theory-card" style="border-top: 4px solid var(--secondary);">
+            <div class="theory-title">
+                <i class="fa-solid fa-globe" style="color: var(--secondary);"></i>
+                <span>2. UN Model Convention</span>
+            </div>
+            <div style="margin-bottom: 8px;">
+                <span class="badge-tag tag-un">UN MC (Sept 2025)</span>
+                <span class="badge-tag tag-success">31 Articles &bull; VII Chapters</span>
+            </div>
+            <ul class="styled-list">
+                <li><strong>Historical Lineage:</strong> Initiated in 1968 by an Ad Hoc Group of Experts appointed by the UN ECOSOC. First published in 1980, with major updates in 2001, 2011, 2017, 2021, and the landmark <strong>March 2025 session (published September 2025)</strong>.</li>
+                <li><strong>Milestone 2025 Title Amendment:</strong> The words <em>“between Developed and Developing Countries”</em> were formally deleted from its title in 2025, cementing its status as a universally applicable global convention.</li>
+                <li><strong>Core Philosophy:</strong> Generally favors the retention of <strong>greater Source-State taxing rights</strong> to safeguard the tax base of capital-importing developing nations.</li>
+                <li><strong>Balanced Approach (The 3 Corollaries):</strong>
+                    <ol style="margin-top: 6px; padding-left: 18px; font-size: 13.5px; line-height: 1.5;">
+                        <li>Foreign capital taxation must factor in allocable expenses incurred in earning the income;</li>
+                        <li>Tax rates must not be so excessively high as to discourage inbound foreign investment; and</li>
+                        <li>Revenue must be appropriately shared between source and capital-providing states.</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+
+        <!-- US MODEL -->
+        <div class="theory-card" style="border-top: 4px solid var(--accent-gold);">
+            <div class="theory-title">
+                <i class="fa-solid fa-flag-usa" style="color: var(--accent-gold);"></i>
+                <span>3. US Model Convention</span>
+            </div>
+            <div style="margin-bottom: 8px;">
+                <span class="badge-tag tag-us">US MC</span>
+                <span class="badge-tag tag-warning">US Bilateral Practice</span>
+            </div>
+            <ul class="styled-list">
+                <li><strong>Origin &amp; Scope:</strong> Drafted and published periodically by the United States Department of the Treasury. Serves as the official baseline text whenever the United States negotiates bilateral income tax treaties with foreign nations.</li>
+                <li><strong>Citizenship-Based Taxation:</strong> Uniquely accommodates the United States' domestic system of taxing its citizens on their worldwide income regardless of their foreign residence, enforced through robust <strong>Saving Clauses</strong>.</li>
+                <li><strong>Limitation on Benefits (LOB):</strong> Features an exceptionally comprehensive, objective, multi-pronged anti-treaty shopping article (Article 22 LOB) designed to deny treaty perks to third-country conduit entities.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- MASTER COMPARISON TABLE: OECD 32 ARTICLES VS UN 31 ARTICLES -->
+<section class="content-section" id="sec-articles-master-table">
+    <div class="section-header">
+        <div>
+            <h2 class="section-title"><i class="fa-solid fa-table-list"></i> Master Article-by-Article Comparison: OECD (2025) vs. UN (2025)</h2>
+            <div class="section-subtitle">Exhaustive Structural Mapping Across All VII Chapters</div>
+        </div>
+        <span class="badge-tag tag-2025">2025 Updates Incorporated</span>
+    </div>
+
+    <p>
+        The <strong>OECD Model Convention (2025)</strong> contains <strong>VII Chapters comprising 32 Articles</strong>. The <strong>UN Model Convention (2025)</strong> also contains <strong>VII Chapters comprising 31 Articles</strong>. The statutory comparative inventory across all 32/31 articles is set out below:
+    </p>
+
+    <div class="table-responsive">
+        <table class="tax-table">
+            <thead>
+                <tr>
+                    <th style="width: 10%;">Article #</th>
+                    <th style="width: 28%;">OECD Model Convention (2025)</th>
+                    <th style="width: 32%;">UN Model Convention (2025)</th>
+                    <th style="width: 30%;">Key Divergence &amp; 2025 Structural Amendments</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- CHAPTER I -->
+                <tr style="background: #f8fafc; font-weight: 700;">
+                    <td colspan="4" style="color: var(--primary);"><i class="fa-solid fa-folder-open"></i> CHAPTER I: SCOPE OF THE CONVENTION</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 1</strong></td>
+                    <td>Persons covered</td>
+                    <td>Persons covered</td>
+                    <td>UN Model 2025 inserted a new <strong>Article 1(3) Subject-to-Tax Rule (STTR)</strong> addressing low-taxed income. Saving clause renumbered to Art. 1(4).</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 2</strong></td>
+                    <td>Taxes covered</td>
+                    <td>Taxes covered</td>
+                    <td>Substantially identical. Covers taxes on income and capital imposed on behalf of a Contracting State or its political subdivisions/local authorities.</td>
+                </tr>
+
+                <!-- CHAPTER II -->
+                <tr style="background: #f8fafc; font-weight: 700;">
+                    <td colspan="4" style="color: var(--primary);"><i class="fa-solid fa-folder-open"></i> CHAPTER II: DEFINITIONS</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 3</strong></td>
+                    <td>General definitions</td>
+                    <td>General definitions</td>
+                    <td>Defines "person", "company", "enterprise", "international traffic", and "competent authority". Identical ambulatory interpretation rule under Art. 3(2).</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 4</strong></td>
+                    <td>Resident</td>
+                    <td>Resident</td>
+                    <td>UN Model explicitly includes <strong>"place of incorporation"</strong> in paragraph 1. Dual-resident individuals resolved via 5-tier tie-breaker; non-individuals via MAP.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 5</strong></td>
+                    <td>Permanent establishment</td>
+                    <td>Permanent establishment</td>
+                    <td>UN Model has shorter building site threshold (<strong>6 months</strong> vs OECD 12 months), explicit <strong>Service PE</strong> (Art. 5(3)(b)), and delivery agent PE. Former Insurance PE (Art. 5(6)) deleted in UN 2025.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 5A</strong></td>
+                    <td><span style="color: var(--text-muted); font-style: italic;">[No corresponding Article]</span></td>
+                    <td><strong>Income from exploration for, or exploitation of, natural resources</strong></td>
+                    <td>Specific UN Model provision allowing Source State to tax income derived from offshore natural resource extraction and related activities.</td>
+                </tr>
+
+                <!-- CHAPTER III -->
+                <tr style="background: #f8fafc; font-weight: 700;">
+                    <td colspan="4" style="color: var(--primary);"><i class="fa-solid fa-folder-open"></i> CHAPTER III: TAXATION OF INCOME</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 6</strong></td>
+                    <td>Income from immovable property</td>
+                    <td>Income from immovable property</td>
+                    <td>Identical. Full, unrestricted right of taxation given to the State where the immovable property is situated (situs state).</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 7</strong></td>
+                    <td>Business profits</td>
+                    <td>Business profits</td>
+                    <td>OECD permits taxation <strong>only</strong> of profits directly attributable to the PE. UN Model applies the <strong>Force of Attraction (FOA) Rule</strong>, taxing direct sales of similar goods or similar business activities.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 8</strong></td>
+                    <td>International shipping and air transport</td>
+                    <td>International shipping and air transport <em>(Alternatives A &amp; B)</em></td>
+                    <td>OECD grants exclusive taxing right to the Residence State. UN Model provides Alternative A (residence exclusive) and Alternative B (source state taxes regular shipping if more than casual).</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 9</strong></td>
+                    <td>Associated enterprises</td>
+                    <td>Associated enterprises</td>
+                    <td>Identical arm's length transfer pricing adjustment and corresponding relief mechanisms.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 10</strong></td>
+                    <td>Dividends</td>
+                    <td>Dividends</td>
+                    <td>Shared taxing rights with source withholding ceiling. UN Model provides lower withholding thresholds for direct corporate shareholdings (e.g. 10% or 25%).</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 11</strong></td>
+                    <td>Interest</td>
+                    <td>Interest</td>
+                    <td>Shared taxing rights with source withholding ceiling. Broad definition of debt-claims. Late payment penalty charges excluded in both models.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 12</strong></td>
+                    <td>Royalties</td>
+                    <td>Royalties</td>
+                    <td><strong>Major divergence:</strong> OECD grants <strong>exclusive</strong> taxing rights to Residence State. UN provides <strong>shared taxing rights</strong> with source withholding. UN 2025 added <strong>sub-paragraph (c) for software</strong>!</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 12A</strong></td>
+                    <td><span style="color: var(--text-muted); font-style: italic;">[No corresponding Article]</span></td>
+                    <td>Fees for Technical Services <span class="badge-tag tag-danger">Deleted 2025</span></td>
+                    <td>Formerly introduced in 2017 UN Model. <strong>Deleted in 2025</strong> upon being superseded by the broader Article 12AA regime!</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 12AA</strong></td>
+                    <td><span style="color: var(--text-muted); font-style: italic;">[No corresponding Article]</span></td>
+                    <td><strong>Fees for services</strong> <span class="badge-tag tag-2025">New 2025</span></td>
+                    <td>Comprehensive new UN Article providing source taxation on <strong>all cross-border service fees</strong> (not restricted to technical/managerial/consultancy). Replaces deleted Arts. 12A &amp; 14.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 12B</strong></td>
+                    <td><span style="color: var(--text-muted); font-style: italic;">[No corresponding Article]</span></td>
+                    <td><strong>Income from automated digital services (ADS)</strong></td>
+                    <td>Preserves Source-State taxing rights over digital business models (9 enumerated categories) without requiring physical presence. Gross or net election.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 12C</strong></td>
+                    <td><span style="color: var(--text-muted); font-style: italic;">[No corresponding Article]</span></td>
+                    <td><strong>Insurance premiums</strong> <span class="badge-tag tag-2025">New 2025</span></td>
+                    <td>Standalone article inserted in UN 2025 replacing former Article 5(6) Insurance PE. Source State may tax cross-border insurance premiums paid to foreign insurers.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 13</strong></td>
+                    <td>Capital gains</td>
+                    <td>Capital gains</td>
+                    <td>Both models allow source taxation of shares deriving &gt;50% value from immovable property (Art. 13(4)). UN 2025 added paragraph 5 for natural resource rights alienation.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 14</strong></td>
+                    <td><span style="color: var(--text-muted); font-style: italic;">[Deleted in 2000]</span></td>
+                    <td>Independent personal services <span class="badge-tag tag-danger">Deleted 2025</span></td>
+                    <td>OECD deleted Art. 14 in 2000 (subsuming into Art. 7). UN Model <strong>deleted Art. 14 in 2025</strong> (subsuming professional income into the new Article 12AA Fees for Services).</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 15</strong></td>
+                    <td>Income from employment</td>
+                    <td>Dependent personal services</td>
+                    <td>Substantially identical 183-day rule and employer residence conditions for cross-border employment income.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 16</strong></td>
+                    <td>Directors’ fees</td>
+                    <td>Directors’ fees and remuneration of top-level managerial officials</td>
+                    <td>UN Model expands source taxing rights beyond formal board directors to include top-level managerial executives of resident companies.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 17</strong></td>
+                    <td>Entertainers and sportspersons</td>
+                    <td>Artistes and sportspersons</td>
+                    <td>Source State taxes performance income directly or where income accrues to another person (star-company structures).</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 18</strong></td>
+                    <td>Pensions</td>
+                    <td>Pensions and social security payments <em>(Alternatives A &amp; B)</em></td>
+                    <td>OECD grants exclusive taxing right to Residence State. UN Alternative B grants Source State the right to tax pensions paid under public schemes/social security.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 19</strong></td>
+                    <td>Government service</td>
+                    <td>Government service</td>
+                    <td>Salaries and pensions paid by a Contracting State/subdivision for governmental functions taxed exclusively by the paying State.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 20</strong></td>
+                    <td>Students</td>
+                    <td>Students</td>
+                    <td>Payments received from abroad for education or training are tax-exempt in the host State. UN Model includes trainees and business apprentices.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 21</strong></td>
+                    <td>Other income</td>
+                    <td>Other income</td>
+                    <td><strong>Major divergence:</strong> OECD gives <strong>exclusive</strong> right to Residence State. UN Model (Art. 21(3)) provides <strong>shared taxing rights</strong> to Source State!</td>
+                </tr>
+
+                <!-- CHAPTER IV -->
+                <tr style="background: #f8fafc; font-weight: 700;">
+                    <td colspan="4" style="color: var(--primary);"><i class="fa-solid fa-folder-open"></i> CHAPTER IV: TAXATION OF CAPITAL</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 22</strong></td>
+                    <td>Capital</td>
+                    <td>Capital</td>
+                    <td>Allocates taxing rights over elements of capital (real estate, PE business capital, ships/aircraft).</td>
+                </tr>
+
+                <!-- CHAPTER V -->
+                <tr style="background: #f8fafc; font-weight: 700;">
+                    <td colspan="4" style="color: var(--primary);"><i class="fa-solid fa-folder-open"></i> CHAPTER V: METHODS FOR ELIMINATION OF DOUBLE TAXATION</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 23A</strong></td>
+                    <td>Exemption method</td>
+                    <td>Exemption method</td>
+                    <td>Full exemption or exemption with progression in the Residence State.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 23B</strong></td>
+                    <td>Credit method</td>
+                    <td>Credit method</td>
+                    <td>Ordinary credit (deduction of tax paid in source state up to domestic tax limit) or full credit.</td>
+                </tr>
+
+                <!-- CHAPTER VI -->
+                <tr style="background: #f8fafc; font-weight: 700;">
+                    <td colspan="4" style="color: var(--primary);"><i class="fa-solid fa-folder-open"></i> CHAPTER VI: SPECIAL PROVISIONS</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 24</strong></td>
+                    <td>Non-discrimination</td>
+                    <td>Non-discrimination</td>
+                    <td>Protects nationals and enterprises of a Contracting State from more burdensome taxation than domestic nationals under identical circumstances.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 25</strong></td>
+                    <td>Mutual agreement procedure (MAP)</td>
+                    <td>Mutual agreement procedure <em>(Alternatives A &amp; B)</em></td>
+                    <td>OECD has mandatory binding arbitration (2 years). UN Alternative B allows arbitration after <strong>3 years</strong> only if requested by a <strong>competent authority</strong>. 2025 updates clarify non-recourse to GATS.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 26</strong></td>
+                    <td>Exchange of information</td>
+                    <td>Exchange of information</td>
+                    <td>Standard of "foreseeably relevant" information. Bank secrecy cannot justify non-cooperation. 2025 OECD Commentary update allows third-party tax use.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 27</strong></td>
+                    <td>Assistance in collection of taxes</td>
+                    <td>Assistance in collection of taxes</td>
+                    <td>Mutual assistance in collecting final revenue claims and adopting conservancy measures.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 28</strong></td>
+                    <td>Members of diplomatic missions and consular posts</td>
+                    <td>Members of diplomatic missions and consular posts</td>
+                    <td>Preserves fiscal privileges granted under customary international law or Vienna Conventions.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 29</strong></td>
+                    <td>Entitlement to benefits</td>
+                    <td>Entitlement to benefits</td>
+                    <td>Anti-abuse provisions codifying the Principal Purpose Test (PPT) and optional detailed LOB rules (post-BEPS Action 6).</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 30</strong></td>
+                    <td>Territorial extension</td>
+                    <td><span style="color: var(--text-muted); font-style: italic;">[No corresponding Article]</span></td>
+                    <td>OECD-only article permitting extension of the convention to overseas territories.</td>
+                </tr>
+
+                <!-- CHAPTER VII -->
+                <tr style="background: #f8fafc; font-weight: 700;">
+                    <td colspan="4" style="color: var(--primary);"><i class="fa-solid fa-folder-open"></i> CHAPTER VII: FINAL PROVISIONS</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 31 / 30</strong></td>
+                    <td>Entry into force (Art. 31)</td>
+                    <td>Entry into force (Art. 30)</td>
+                    <td>Ratification procedures and date of practical legal effect.</td>
+                </tr>
+                <tr>
+                    <td><strong>Article 32 / 31</strong></td>
+                    <td>Termination (Art. 32)</td>
+                    <td>Termination (Art. 31)</td>
+                    <td>Formal bilateral diplomatic notification procedures for denouncing the treaty.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- MODULE 2: SCOPE, RESIDENT, PERMANENT ESTABLISHMENT & BUSINESS PROFITS     -->
+<!-- ========================================================================= -->
+
+<!-- TITLE & PREAMBLE -->
+<section class="content-section" id="sec-title-preamble">
+    <div class="section-header">
+        <div>
+            <h2 class="section-title"><i class="fa-solid fa-scroll"></i> Title and Preamble to the Model Conventions</h2>
+            <div class="section-subtitle">Convergence on Anti-Treaty Shopping and BEPS Action 6 Minimum Standards</div>
+        </div>
+        <span class="badge-tag tag-primary">Preamble Architecture</span>
+    </div>
+
+    <p>
+        Under public international law and Article 31 of the Vienna Convention on the Law of Treaties (VCLT), the Title and Preamble form an integral part of the context for interpreting treaty provisions. In recent years, both the OECD and UN Model Conventions have undergone convergence to firmly close the door on abusive treaty-shopping arrangements.
+    </p>
+
+    <div class="theory-grid">
+        <div class="theory-card">
+            <div class="theory-title">
+                <i class="fa-solid fa-file-contract" style="color: var(--secondary);"></i>
+                <span>UN Model Convention Title &amp; Preamble</span>
+            </div>
+            <p><strong>Official Title:</strong></p>
+            <blockquote style="font-style: italic; color: var(--text-dark); background: var(--bg-light); padding: 10px 14px; border-left: 3px solid var(--secondary); margin-bottom: 12px; font-size: 13.5px;">
+                “Convention between (State A) and (State B) for the elimination of double taxation with respect to taxes on income and capital and the <strong>prevention of tax avoidance and evasion</strong>”
+            </blockquote>
+            <p><strong>Official Preamble:</strong></p>
+            <blockquote style="font-style: italic; color: var(--text-dark); background: var(--bg-light); padding: 10px 14px; border-left: 3px solid var(--secondary); font-size: 13.5px;">
+                “(State A) and (State B), Desiring to further develop their economic relationship and to enhance their cooperation in tax matters, Intending to conclude a Convention for the elimination of double taxation with respect to taxes on income and on capital <strong>without creating opportunities for non-taxation or reduced taxation through tax avoidance or evasion (including through treaty-shopping arrangements aimed at obtaining reliefs provided in this Convention for the indirect benefit of residents of third States)</strong>...”
+            </blockquote>
+        </div>
+
+        <div class="theory-card">
+            <div class="theory-title">
+                <i class="fa-solid fa-scale-balanced" style="color: var(--primary);"></i>
+                <span>OECD Model Comparison &amp; Legal Effect</span>
+            </div>
+            <ul class="styled-list">
+                <li><strong>Identical Substance:</strong> The Title and Preamble of the OECD Model Convention is virtually identical to that of the UN Model. The only minor stylistic variance is the sequence of words: the OECD refers to <em>“tax evasion and avoidance”</em>, whereas the UN refers to <em>“tax avoidance and evasion”</em>.</li>
+                <li><strong>Strict Teleological Effect:</strong> The Preamble explicitly declares that the treaty is not intended to generate double non-taxation or reduced taxation through treaty abuse.</li>
+                <li><strong>Interpretive Significance:</strong> Under VCLT Article 31, domestic courts and tax authorities are legally mandated to interpret the substantive articles of the convention in light of this anti-abuse purpose, effectively disallowing colorable conduit routing and treaty-shopping schemes.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ARTICLE 1: PERSONS COVERED -->
+<section class="content-section" id="sec-art1-persons">
+    <div class="section-header">
+        <div>
+            <h2 class="section-title"><i class="fa-solid fa-users"></i> Article 1: Persons Covered &amp; Fiscally Transparent Entities</h2>
+            <div class="section-subtitle">Scope of Application, Hybrid Entities, Saving Clause &amp; the New 2025 UN Subject-to-Tax Rule (STTR)</div>
+        </div>
+        <span class="badge-tag tag-2025">2025 STTR Update</span>
+    </div>
+
+    <p>
+        Article 1 delineates the personal scope of the convention. Under Article 1(1), both the OECD and UN Model Conventions apply to <strong>persons who are residents of one or both of the Contracting States</strong>.
+    </p>
+
+    <!-- Transparent Entities -->
+    <div class="theory-card" style="margin: 20px 0;">
+        <div class="theory-title">
+            <i class="fa-solid fa-shuffle" style="color: var(--primary);"></i>
+            <span>1. Fiscally Transparent Entities &amp; Arrangements (Article 1(2))</span>
+        </div>
+        <p>
+            Under Article 1(2), income derived by or through an entity or arrangement that is treated as wholly or partly fiscally transparent under the tax law of either Contracting State is considered to be income of a resident of a Contracting State, but <strong>only to the extent that the income is treated, for the purposes of taxation by that State, as the income of a resident of that State</strong>.
+        </p>
+
+        <!-- ICAI Textbook UN Commentary Example -->
+        <div class="example-box" style="margin-top: 14px;">
+            <div class="example-title">
+                <i class="fa-solid fa-lightbulb"></i> ICAI UN Commentary Example: Partnership with Mixed Resident/Non-Resident Partners
+            </div>
+            <p>
+                State A and State B have concluded a bilateral treaty identical to the Model Tax Convention. An entity established in State B receives interest income from a debtor resident in State A:
+            </p>
+            <ul class="styled-list">
+                <li><strong>State A's Domestic Law:</strong> Treats the entity as an opaque <strong>company</strong> and seeks to tax it as the recipient.</li>
+                <li><strong>State B's Domestic Law:</strong> Treats the entity as a <strong>fiscally transparent partnership</strong>. Under State B law, the entity itself pays no tax; instead, its two 50% members are each taxed directly on half of the interest income.</li>
+                <li><strong>Status of Members:</strong> Member 1 is a resident of State B. Member 2 is a resident of a third country with which neither State A nor State B has a tax treaty.</li>
+            </ul>
+            <div class="callout callout-success" style="margin-bottom: 0;">
+                <strong>Statutory Treaty Result under Article 1(2):</strong>
+                <br>Because State B treats only <strong>half</strong> of the interest as income of a resident of State B (Member 1), <strong>only that half</strong> shall be considered, for the purposes of Article 11 (Interest), to be the income of a resident of State B entitled to the concessional withholding tax rates under the State A–State B treaty! The remaining 50% attributable to Member 2 (third-country resident) is ineligible for treaty benefits.
+            </div>
+        </div>
+    </div>
+
+    <div class="theory-grid">
+        <!-- Saving Clause -->
+        <div class="theory-card">
+            <div class="theory-title">
+                <i class="fa-solid fa-shield-halved" style="color: var(--warning);"></i>
+                <span>2. The Saving Clause (Article 1(4))</span>
+            </div>
+            <p>
+                With the exception of specified articles (such as corresponding adjustments under Art. 9(2), relief from double taxation under Arts. 23A/23B, non-discrimination under Art. 24, MAP under Art. 25, and diplomatic privileges under Art. 28), the Convention <strong>does not affect the taxation by a Contracting State of its own residents</strong>.
+            </p>
+        </div>
+
+        <!-- UN 2025 STTR -->
+        <div class="theory-card">
+            <div class="theory-title">
+                <i class="fa-solid fa-gavel" style="color: var(--secondary);"></i>
+                <span>3. UN 2025 Subject-to-Tax Rule (STTR - Article 1(3))</span>
+            </div>
+            <p>
+                The 2025 UN Model inserted a landmark <strong>Subject-to-Tax Rule in Article 1(3)</strong>. Under this rule, the Convention does not restrict a Contracting State from taxing income arising in its territory derived by a resident of the other State where that income is <strong>subject to a low level of taxation</strong> in that other State.
+            </p>
+            <p style="font-size: 13.5px; margin-top: 6px;">
+                <em>Low level of taxation exists if:</em>
+                <br>&bull; Subject to a statutory rate at or below a bilaterally negotiated percentage; OR
+                <br>&bull; Benefiting from an exemption, exclusion, or special tax regime.
+            </p>
+        </div>
+    </div>
+
+    <!-- Collective Investment Vehicles -->
+    <div class="callout callout-purple">
+        <div class="callout-header"><i class="fa-solid fa-building-columns"></i> Application to Collective Investment Vehicles (CIVs)</div>
+        <p>
+            Collective Investment Vehicles (CIVs) pool funds from numerous retail or institutional investors and adopt diverse legal forms (companies, trusts, partnerships, contractual funds). Where a widely held CIV is treated as a resident entity liable to tax under domestic law, it may claim treaty benefits on behalf of its investors, avoiding complex look-through compliance while preventing abusive routing.
+        </p>
+    </div>
+</section>
+
+<!-- ARTICLE 2: TAXES COVERED -->
+<section class="content-section" id="sec-art2-taxes">
+    <div class="section-header">
+        <div>
+            <h2 class="section-title"><i class="fa-solid fa-coins"></i> Article 2: Taxes Covered</h2>
+            <div class="section-subtitle">Substantive Scope: Taxes on Income and Capital &amp; Future Substantially Similar Taxes</div>
+        </div>
+        <span class="badge-tag tag-primary">Art. 2</span>
+    </div>
+
+    <p>
+        Article 2 defines the material scope of the treaty, specifying the exact sovereign levies to which the convention applies. The provisions in the OECD and UN Model Conventions are substantially identical:
+    </p>
+
+    <div class="step-container">
+        <div class="step-item">
+            <div class="step-num">1</div>
+            <div class="step-title">Article 2(1): Sovereign Scope</div>
+            <p>Applies to taxes on income and on capital imposed on behalf of a Contracting State or of its political subdivisions or local authorities, irrespective of the manner in which they are levied.</p>
+        </div>
+
+        <div class="step-item">
+            <div class="step-num">2</div>
+            <div class="step-title">Article 2(2): Broad Concept of Taxes on Income &amp; Capital</div>
+            <p>Covers all taxes imposed on total income, on total capital, or on elements of income or of capital, including taxes on gains from the alienation of movable or immovable property, taxes on the total amounts of wages or salaries paid by enterprises, as well as taxes on capital appreciation.</p>
+        </div>
+
+        <div class="step-item">
+            <div class="step-num">3</div>
+            <div class="step-title">Article 2(3): Specified Existing Taxes</div>
+            <p>Explicitly enumerates the existing domestic tax enactments of each Contracting State (e.g., in the Indian context: <em>“the income-tax, including any surcharge thereon”</em>).</p>
+        </div>
+
+        <div class="step-item">
+            <div class="step-num">4</div>
+            <div class="step-title">Article 2(4): Substantially Similar Future Taxes</div>
+            <p>Extends automatically to any identical or substantially similar taxes that are imposed after the date of signature of the Convention in addition to, or in place of, the existing taxes. Competent authorities must notify each other of significant tax law changes.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ARTICLE 4: RESIDENT & DUAL RESIDENCE TIE-BREAKER -->
+<section class="content-section" id="sec-art4-resident">
+    <div class="section-header">
+        <div>
+            <h2 class="section-title"><i class="fa-solid fa-passport"></i> Article 4: Resident &amp; Dual Residence Tie-Breakers</h2>
+            <div class="section-subtitle">Liability to Tax, Inclusion of Place of Incorporation &amp; The 5-Tier Individual Tie-Breaker Waterfall</div>
+        </div>
+        <span class="badge-tag tag-warning">Core Exam Concept</span>
+    </div>
+
+    <p>
+        Because treaty entitlement under Article 1 is restricted to "residents", Article 4 determines whether a person is a resident of a Contracting State and resolves cases where domestic tax laws cause an assessee to be a <strong>dual resident</strong>.
+    </p>
+
+    <div class="callout callout-warning">
+        <div class="callout-header"><i class="fa-solid fa-triangle-exclamation"></i> Significance of the Concept of Resident</div>
+        <ul class="styled-list">
+            <li>Determines the convention’s personal scope of application;</li>
+            <li>Solves dual-residence conflicts where both states claim taxing rights on worldwide income; and</li>
+            <li>Solves source-residence conflicts where income arises in one state to a resident of the other.</li>
+        </ul>
+    </div>
+
+    <div class="theory-card" style="margin: 20px 0;">
+        <div class="theory-title">
+            <i class="fa-solid fa-id-card" style="color: var(--primary);"></i>
+            <span>Meaning of Resident &amp; UN vs. OECD Textual Distinction (Article 4(1))</span>
+        </div>
+        <p>
+            Under Article 4(1), "resident of a Contracting State" means any person who, under the laws of that State, is liable to tax therein by reason of his domicile, residence, place of management, <strong>place of incorporation (UN Model only)</strong>, or any other criterion of a similar nature.
+        </p>
+        <p style="font-size: 13.5px; color: var(--text-muted); margin-top: 6px;">
+            <em>Key Divergence:</em> The UN Model explicitly includes <strong>“place of incorporation”</strong> in Article 4(1), whereas the OECD Model omits it, relying instead on "place of management" or domestic connection criteria. Neither model treats a person as a resident if they are liable to tax only on income from sources within that State.
+        </p>
+    </div>
+
+    <!-- DUAL RESIDENCE TIE-BREAKER FOR INDIVIDUALS: 5-TIER WATERFALL -->
+    <div class="theory-card" style="border-left: 4px solid var(--secondary);">
+        <div class="theory-title">
+            <i class="fa-solid fa-water" style="color: var(--secondary);"></i>
+            <span>Dual Residence Tie-Breaker for Individuals (Article 4(2) 5-Tier Waterfall)</span>
+        </div>
+        <p>
+            Where an individual is found to be a tax resident of both Contracting States under their respective domestic tax laws, dual residence is conclusively broken using the sequential 5-tier waterfall test under Article 4(2):
+        </p>
+
+        <div class="step-container" style="margin-top: 18px;">
+            <div class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-title">Test 1: Permanent Home Available</div>
+                <p>The individual is deemed to be a resident only of the State in which he has a <strong>permanent home available to him</strong>. A permanent home requires a dwelling (house, apartment, rented flat) arranged and retained for continuous, permanent use, rather than for a temporary stay.</p>
+            </div>
+
+            <div class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-title">Test 2: Centre of Vital Interests (Personal &amp; Economic Relations)</div>
+                <p>If the individual has a permanent home available in <strong>both States</strong>, or in <strong>neither State</strong>, he is deemed to be a resident only of the State with which his <strong>personal and economic relations are closer</strong> (family, social ties, occupations, political, cultural, or other activities, and place of business).</p>
+            </div>
+
+            <div class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-title">Test 3: Habitual Abode</div>
+                <p>If the State of vital interests cannot be determined, or if he has no permanent home in either State, preference is given to the Contracting State in which he has an <strong>habitual abode</strong> (determined by frequency, duration, and regularity of physical stays over a reasonable period).</p>
+            </div>
+
+            <div class="step-item">
+                <div class="step-num">4</div>
+                <div class="step-title">Test 4: Nationality / Citizenship</div>
+                <p>If the individual has an habitual abode in <strong>both States</strong> or in <strong>neither of them</strong>, he is deemed to be a resident only of the State of which he is a <strong>national</strong>.</p>
+            </div>
+
+            <div class="step-item">
+                <div class="step-num">5</div>
+                <div class="step-title">Test 5: Mutual Agreement Procedure (MAP)</div>
+                <p>If the individual is a national of <strong>both States</strong> or of <strong>neither of them</strong>, the competent authorities of the Contracting States shall settle the question by <strong>mutual agreement</strong> under Article 25.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DUAL RESIDENCE FOR NON-INDIVIDUALS (ARTICLE 4(3)) -->
+    <div class="callout callout-danger" style="margin-top: 25px;">
+        <div class="callout-header"><i class="fa-solid fa-building"></i> Dual Residence for Non-Individuals (Article 4(3) - Post-BEPS MAP Approach)</div>
+        <p>
+            Historically, both models resolved corporate dual residence using the "Place of Effective Management" (POEM) tie-breaker. Following <strong>BEPS Action 6</strong>, both the OECD and UN Model Conventions revised Article 4(3) to eliminate the automatic POEM rule:
+        </p>
+        <ul class="styled-list">
+            <li>Where a non-individual is resident in both States, the competent authorities shall endeavor to determine residence by <strong>mutual agreement</strong>, having regard to its place of effective management, place of incorporation, and any other relevant factors.</li>
+            <li><strong>Severe Treaty Sanction:</strong> In the absence of such mutual agreement, the entity <strong>shall not be entitled to any relief or exemption from tax</strong> provided by the Convention, except to the extent agreed upon by the competent authorities!</li>
+        </ul>
+    </div>
+</section>
+
+<!-- ARTICLE 5: PERMANENT ESTABLISHMENT -->
+<section class="content-section" id="sec-art5-pe">
+    <div class="section-header">
+        <div>
+            <h2 class="section-title"><i class="fa-solid fa-industry"></i> Article 5: Permanent Establishment (PE)</h2>
+            <div class="section-subtitle">Basic Rule PE (6 Criteria), Building Site PE, Service PE, Agency PE &amp; 2025 Updates</div>
+        </div>
+        <span class="badge-tag tag-primary">Art. 5 Threshold</span>
+    </div>
+
+    <p>
+        The concept of <strong>Permanent Establishment (PE)</strong> is the foundational nexus rule in international taxation. It serves as the legal threshold granting the Source State the sovereign right to tax business profits under Article 7. Its broadly comparable domestic-law concept in India is a <strong>“business connection”</strong> under Section 9 of the Income-tax Act, 2025.
+    </p>
+
+    <!-- Basic Rule PE -->
+    <div class="theory-card" style="margin: 20px 0;">
+        <div class="theory-title">
+            <i class="fa-solid fa-cubes-stacked" style="color: var(--primary);"></i>
+            <span>1. Basic Rule PE (Article 5(1) - 6 Cumulative Conditions)</span>
+        </div>
+        <p>
+            Under Article 5(1), a Permanent Establishment means a <em>“fixed place of business through which the business of an enterprise is wholly or partly carried on.”</em> A Basic Rule PE exists <strong>only if all 6 conditions are satisfied cumulatively</strong>:
+        </p>
+        <ol style="margin: 12px 0 12px 24px; font-size: 14.5px; line-height: 1.7;">
+            <li>There must be an <strong>enterprise</strong>;</li>
+            <li>The enterprise must be carrying on a <strong>business</strong>;</li>
+            <li>There must be a <strong>place of business</strong> (premises, facilities, installations, tangible assets);</li>
+            <li>The place of business must be <strong>at the disposal</strong> of the enterprise (right to use / effective control);</li>
+            <li>The place of business must be <strong>fixed</strong> (established at a distinct geographical point with a certain degree of permanence); and</li>
+            <li>The business of the enterprise is <strong>carried on wholly or partially through</strong> this fixed place.</li>
+        </ol>
+        <p style="font-size: 13.5px; color: var(--danger); font-weight: 600;">
+            If any single condition is missing (e.g., place is purely transient or not at disposal), a basic rule PE does not exist!
+        </p>
+    </div>
+
+    <!-- PE Inclusions -->
+    <div class="callout callout-success">
+        <div class="callout-header"><i class="fa-solid fa-list-check"></i> Article 5(2): Specific Examples Especially Included</div>
+        <p>
+            The term "permanent establishment" includes especially: (a) a place of management; (b) a branch; (c) an office; (d) a factory; (e) a workshop; and (f) a mine, an oil or gas well, a quarry, or any other place of extraction of natural resources.
+        </p>
+    </div>
+
+    <!-- Construction, Service, Agency PE Comparison -->
+    <div class="table-responsive">
+        <table class="tax-table">
+            <thead>
+                <tr>
+                    <th style="width: 22%;">PE Type</th>
+                    <th style="width: 38%;">OECD Model Convention (2025)</th>
+                    <th style="width: 40%;">UN Model Convention (2025)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Construction / Building Site PE<br>(Art. 5(3))</strong></td>
+                    <td>A building site or construction or installation project constitutes a PE only if it lasts <strong>more than 12 months</strong>.</td>
+                    <td>A building site, construction, assembly or installation project, or connected supervisory activities constitute a PE if lasting <strong>more than 6 months</strong>.</td>
+                </tr>
+                <tr>
+                    <td><strong>Service PE<br>(Art. 5(3)(b))</strong></td>
+                    <td><span class="badge-tag tag-danger">No Service PE Clause</span><br>OECD Model has no explicit Service PE provision. Service taxation requires a fixed place under Art. 5(1).</td>
+                    <td><span class="badge-tag tag-success">Explicit Service PE</span><br>Furnishing of services through employees or personnel for the same/connected project aggregating <strong>more than 183 days</strong> in any 12-month period constitutes a PE. <em>(Words “including consultancy services” deleted in 2025 due to new Art. 12AA)</em>.</td>
+                </tr>
+                <tr>
+                    <td><strong>Agency PE<br>(Art. 5(5) &amp; 5(6))</strong></td>
+                    <td>Dependent agent habitually concludes contracts or habitually plays the principal role leading to contract conclusion in the name of the enterprise.</td>
+                    <td>Includes the OECD contract-conclusion rule, <strong>PLUS</strong> a dependent agent who habitually maintains a <strong>stock of goods or merchandise from which he regularly delivers goods</strong> on behalf of the enterprise!</td>
+                </tr>
+                <tr>
+                    <td><strong>Insurance PE</strong></td>
+                    <td>No Insurance PE provision. Standard Agency PE rules apply.</td>
+                    <td><strong>Deleted in UN 2025:</strong> Former Article 5(6) Insurance PE was removed and replaced by standalone <strong>Article 12C (Insurance Premiums)</strong>!</td>
+                </tr>
+                <tr>
+                    <td><strong>2025 OECD Commentary Update</strong></td>
+                    <td><strong>Home Office &amp; Teleworking:</strong> Guidance clarifying when cross-border telework / home office of an employee creates a PE (requires factual disposal and employer insistence).</td>
+                    <td>Similar teleworking considerations evaluated in light of physical presence and service duration.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ARTICLE 7: BUSINESS PROFITS -->
+<section class="content-section" id="sec-art7-business-profits">
+    <div class="section-header">
+        <div>
+            <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Article 7: Business Profits &amp; The Force of Attraction Rule</h2>
+            <div class="section-subtitle">Taxing Rights Allocation, Attribution of Profits &amp; UN Force of Attraction (FOA)</div>
+        </div>
+        <span class="badge-tag tag-primary">Art. 7</span>
+    </div>
+
+    <p>
+        Article 7 governs the taxation of business profits earned by an enterprise of a Contracting State. The universal baseline principle is that business profits of an enterprise can <strong>only be taxed by the Residence State</strong>, unless the enterprise carries on business in the Source State through a <strong>Permanent Establishment</strong> situated therein.
+    </p>
+
+    <div class="theory-grid">
+        <!-- OECD DIRECT ATTRIBUTION -->
+        <div class="theory-card">
+            <div class="theory-title">
+                <i class="fa-solid fa-arrows-to-dot" style="color: var(--primary);"></i>
+                <span>1. OECD Approach: Direct Attribution Only</span>
+            </div>
+            <p>
+                Under the OECD Model Convention, if an enterprise carries on business through a PE in the Source State, the Source State is permitted to tax <strong>only such profits as are directly attributable to that specific PE</strong>.
+            </p>
+            <p style="font-size: 13.5px; color: var(--text-muted); margin-top: 6px;">
+                Profits derived from direct sales or transactions executed by the foreign head office independently into the Source State cannot be taxed by the Source State, even if they involve identical products.
+            </p>
+        </div>
+
+        <!-- UN FORCE OF ATTRACTION -->
+        <div class="theory-card" style="border-left: 4px solid var(--secondary);">
+            <div class="theory-title">
+                <i class="fa-solid fa-magnet" style="color: var(--secondary);"></i>
+                <span>2. UN Approach: Force of Attraction (FOA) Rule</span>
+            </div>
+            <p>
+                Under Article 7(1) of the UN Model Convention, once a foreign enterprise sets up a PE in the Source State, it brings the enterprise within the fiscal jurisdiction of that State. The Source State can tax:
+            </p>
+            <ul class="styled-list">
+                <li>(a) Profits directly attributable to <strong>that PE</strong>;</li>
+                <li>(b) Profits from <strong>sales in the Source State of goods or merchandise of the same or similar kind</strong> as those sold through that PE; and</li>
+                <li>(c) Profits from <strong>other business activities carried on in the Source State of the same or similar kind</strong> as those effected through that PE.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="callout callout-warning">
+        <div class="callout-header"><i class="fa-solid fa-circle-exclamation"></i> Commercial &amp; Tax Impact of the Force of Attraction Rule</div>
+        <p>
+            The Force of Attraction rule prevents multinational enterprises from bypassing their local branch/PE. If an enterprise establishes a PE in the Source State to distribute specialized industrial machinery, and the foreign head office simultaneously sells the exact same line of machinery directly to local buyers via direct shipments from abroad, <strong>the UN Model "attracts" the profits from those direct head-office sales into the Source State's tax net</strong>!
+        </p>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- MODULE 3: PASSIVE INCOME, SERVICES, DIGITAL ECONOMY & CAPITAL GAINS       -->
+<!-- ========================================================================= -->
+
+<!-- ARTICLE 11: INTEREST -->
+<section class="content-section" id="sec-art11-12-interest-royalties">
+    <div class="section-header">
+        <div>
+            <h2 class="section-title"><i class="fa-solid fa-percent"></i> Articles 11 &amp; 12: Interest &amp; Royalties (2025 Software Scope)</h2>
+            <div class="section-subtitle">Taxing Rights Allocation, Scope of Debt-Claims &amp; The 2025 UN Software Royalties Revolution</div>
+        </div>
+        <span class="badge-tag tag-2025">2025 Software Amendment</span>
+    </div>
+
+    <!-- Article 11 Interest -->
+    <div class="theory-card" style="margin-bottom: 25px;">
+        <div class="theory-title">
+            <i class="fa-solid fa-hand-holding-dollar" style="color: var(--primary);"></i>
+            <span>1. Article 11: Interest &mdash; Scope &amp; Allocation</span>
+        </div>
+        <p>
+            Article 11 governs cross-border interest flows. Paragraph 1 grants the Residence State the right to tax interest. Paragraph 2 establishes a <strong>shared taxing right</strong>, allowing the Source State to also tax interest, but capping the withholding tax rate at a bilaterally agreed ceiling if the recipient is the beneficial owner.
+        </p>
+        <div class="table-responsive" style="margin-top: 12px;">
+            <table class="tax-table">
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">Feature</th>
+                        <th style="width: 75%;">Statutory Rule under OECD &amp; UN Models</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Definition of Interest</strong></td>
+                        <td>Income from <strong>debt-claims of every kind</strong>, whether or not secured by mortgage and whether or not carrying a right to participate in the debtor's profits, and in particular, income from government securities, bonds, or debentures, including premiums and prizes attaching to such securities.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Statutory Exclusion</strong></td>
+                        <td><strong>Penalty charges for late payment</strong> are expressly excluded from the definition of interest in both models.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PE Override (Art. 11(4))</strong></td>
+                        <td>If the beneficial owner carries on business through a PE in the Source State and the debt-claim is effectively connected with that PE, Article 7 (Business Profits) applies instead of Article 11.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Article 12 Royalties -->
+    <div class="theory-card" style="border-left: 4px solid var(--secondary);">
+        <div class="theory-title">
+            <i class="fa-solid fa-compact-disc" style="color: var(--secondary);"></i>
+            <span>2. Article 12: Royalties &mdash; Fundamental Divergence &amp; UN 2025 Software Update</span>
+        </div>
+        <p>
+            Article 12 exhibits one of the sharpest ideological divides between the OECD and UN Model Conventions:
+        </p>
+
+        <div class="theory-grid" style="margin-top: 14px;">
+            <div class="theory-card">
+                <div class="theory-title" style="font-size: 14.5px; color: var(--primary);">
+                    <i class="fa-solid fa-house-flag"></i> OECD Model: Exclusive Residence Taxation
+                </div>
+                <p>
+                    Under the OECD Model, royalties arising in the Source State and beneficially owned by a resident of the other State are <strong>taxable ONLY in the Residence State</strong>. The Source State is stripped of all taxing rights at source!
+                </p>
+                <p style="font-size: 13px; color: var(--text-muted); margin-top: 6px;">
+                    <em>Exclusions:</em> OECD excludes equipment leasing (ICS equipment), excludes radio/TV broadcasting tapes/films, and refuses to treat payments for software distribution or standard software copies as royalties.
+                </p>
+            </div>
+
+            <div class="theory-card">
+                <div class="theory-title" style="font-size: 14.5px; color: var(--secondary);">
+                    <i class="fa-solid fa-building-flag"></i> UN Model: Shared Source &amp; Residence Taxation
+                </div>
+                <p>
+                    Under the UN Model, royalties are subject to <strong>shared taxing rights</strong> &mdash; taxable in the Residence State and also taxable in the Source State at a negotiated withholding rate ceiling.
+                </p>
+                <p style="font-size: 13px; color: var(--text-muted); margin-top: 6px;">
+                    <em>Broad Scope:</em> Includes copyright of literary/artistic/scientific works (including films/tapes for radio/TV), patents, trademarks, designs, plans, secret formulas, <strong>industrial, commercial or scientific (ICS) equipment</strong>, and ICS know-how.
+                </p>
+            </div>
+        </div>
+
+        <!-- 2025 UN SOFTWARE EXPANSION -->
+        <div class="callout callout-success" style="margin-top: 16px;">
+            <div class="callout-header"><i class="fa-solid fa-code"></i> The Landmark 2025 UN Model Expansion: Software Payments (Sub-paragraph (c))</div>
+            <p>
+                In the <strong>September 2025 UN Model Update</strong>, the definition of “royalties” under Article 12 was decisively expanded by inserting <strong>sub-paragraph (c)</strong>:
+            </p>
+            <blockquote style="font-style: italic; background: #fff; padding: 10px 14px; border-left: 3px solid var(--success); margin: 8px 0; font-size: 13.5px;">
+                “payments of any kind received as a consideration for the <strong>use of, or the right to use, any software, or paid as a consideration for the acquisition of any software</strong>...”
+            </blockquote>
+            <p>
+                <strong>Critical Legal Rule:</strong> Under the 2025 UN Model, <strong>a transfer of copyright in the software is NOT required</strong> for such payments to fall within the definition of royalties! Payments for off-the-shelf software, software licenses, SaaS subscriptions, and digital acquisition now qualify squarely as royalties under the UN Model, aligning with developing country litigation positions.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ARTICLE 12AA: FEES FOR SERVICES -->
+<section class="content-section" id="sec-art12aa-services">
+    <div class="section-header">
+        <div>
+            <h2 class="section-title"><i class="fa-solid fa-user-gear"></i> Article 12AA: Fees for Services (The 2025 UN Overhaul)</h2>
+            <div class="section-subtitle">Deletion of Article 12A (FTS) &amp; Article 14 (Independent Services) &bull; Universal Service Scope</div>
+        </div>
+        <span class="badge-tag tag-2025">2025 Overhaul</span>
+    </div>
+
+    <p>
+        The 2025 UN Model Convention introduced a monumental structural transformation in cross-border services taxation:
+    </p>
+
+    <div class="step-container">
+        <div class="step-item">
+            <div class="step-num">1</div>
+            <div class="step-title">Historical Evolution: From Art. 12A FTS to Art. 12AA</div>
+            <p>
+                In 2017, the UN Model inserted Article 12A on Fees for Technical Services (FTS), allowing source taxation on managerial, technical, or consultancy services. India has had domestic FTS provisions since 1976 under Section 9(1)(vii).
+            </p>
+        </div>
+
+        <div class="step-item">
+            <div class="step-num">2</div>
+            <div class="step-title">The 2025 Deletion of Article 12A and Article 14</div>
+            <p>
+                In the 2025 UN Model, <strong>Article 12A (Fees for Technical Services) and Article 14 (Independent Personal Services) were both formally DELETED</strong>! They were completely superseded by the new, comprehensive <strong>Article 12AA (Fees for services)</strong>.
+            </p>
+        </div>
+
+        <div class="step-item">
+            <div class="step-num">3</div>
+            <div class="step-title">Universal Scope: "Any Payment in Consideration for Any Service"</div>
+            <p>
+                Under Article 12AA(3), “fees for services” means <strong>any payment in consideration for any service</strong>. The qualifying adjectives <em>“managerial, technical, or consultancy”</em> have been discarded! Any service fee arising in a Contracting State paid to a resident of the other State may be taxed in the Source State at a negotiated ceiling.
+            </p>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="tax-table">
+            <thead>
+                <tr>
+                    <th style="width: 25%;">Provision</th>
+                    <th style="width: 75%;">Mechanics &amp; Rules under Article 12AA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Specific Exclusions</strong></td>
+                    <td>
+                        To prevent overlap, Article 12AA does not apply to payments governed by specific articles:
+                        <br>&bull; International transport (Art. 8); &bull; Automated digital services (Art. 12B); &bull; Insurance premiums (Art. 12C); &bull; Employment (Art. 15); &bull; Directors’ fees &amp; top managers (Art. 16); &bull; Artistes &amp; sportspersons (Art. 17); &bull; Pensions (Art. 18); &bull; Government service (Art. 19).
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>PE Override (Art. 12AA(4))</strong></td>
+                    <td>Where the beneficial owner carries on business through a PE in the Source State and the fees are effectively connected with that PE, Article 7 (Business Profits) applies.</td>
+                </tr>
+                <tr>
+                    <td><strong>Sourcing Rule (Art. 12AA(6))</strong></td>
+                    <td>Fees for services are deemed to arise in a Contracting State if paid by a resident of that State, or if paid by a non-resident who has a PE in that State and the fees are borne by that PE.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ARTICLE 12B: AUTOMATED DIGITAL SERVICES (ADS) -->
+<section class="content-section" id="sec-art12b-ads">
+    <div class="section-header">
+        <div>
+            <h2 class="section-title"><i class="fa-solid fa-cloud-arrow-up"></i> Article 12B: Income from Automated Digital Services (ADS)</h2>
+            <div class="section-subtitle">UN Model Taxation of the Digital Economy Without Physical Nexus &bull; The 9 Enumerated Categories</div>
+        </div>
+        <span class="badge-tag tag-un">UN Art. 12B</span>
+    </div>
+
+    <p>
+        With the exponential expansion of telecommunications and digital commerce, multinational tech conglomerates generate massive revenues from user markets without maintaining any physical footprint or Permanent Establishment. <strong>Article 12B</strong> was added to the UN Model Convention (introduced in 2021, refined in 2025) to preserve the sovereign domestic taxing rights of source countries. <strong>There is no corresponding article in the OECD Model Convention!</strong>
+    </p>
+
+    <div class="theory-grid">
+        <div class="theory-card">
+            <div class="theory-title">
+                <i class="fa-solid fa-server" style="color: var(--secondary);"></i>
+                <span>1. Definition &amp; Core Mechanics of ADS (Art. 12B(5))</span>
+            </div>
+            <blockquote style="font-style: italic; background: var(--bg-light); padding: 10px 14px; border-left: 3px solid var(--secondary); font-size: 13.5px;">
+                “‘Automated digital services’ means <strong>any service provided on the Internet or an electronic network requiring minimal human involvement from the service provider</strong>.”
+            </blockquote>
+            <p style="font-size: 13.5px; margin-top: 8px;">
+                <strong>Key Benchmark &mdash; Scalability:</strong> The defining test of an automated digital service is its capacity to scale up and provide identical automated services to millions of global users with negligible additional human intervention.
+            </p>
+        </div>
+
+        <div class="theory-card">
+            <div class="theory-title">
+                <i class="fa-solid fa-calculator" style="color: var(--primary);"></i>
+                <span>2. Dual Taxing Mechanism: Gross vs. Net Election</span>
+            </div>
+            <ul class="styled-list">
+                <li><strong>Gross Withholding Tax (Art. 12B(2)):</strong> Source State may tax gross ADS payments at a bilaterally negotiated withholding rate (e.g., 3%, 4%, or 5%).</li>
+                <li><strong>Net Basis Election (Art. 12B(3)):</strong> The non-resident taxpayer has the unilateral legal right to elect to be taxed on a <strong>net profit basis</strong>, computed by applying the qualified profitability ratio of the enterprise's digital business segment to its Source-State revenues.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- THE 9 SPECIFIC CATEGORIES -->
+    <div class="callout callout-purple" style="margin-top: 20px;">
+        <div class="callout-header"><i class="fa-solid fa-list-ol"></i> Article 12B(6): The 9 Specific Inclusions of Automated Digital Services</div>
+        <p>Under Article 12B(6), Automated Digital Services specially include the following 9 categories:</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; margin-top: 10px;">
+            <div style="background: #fff; padding: 10px 14px; border-radius: 6px; border: 1px solid #e2e8f0; font-size: 13.5px;"><strong>(a) Online advertising services</strong></div>
+            <div style="background: #fff; padding: 10px 14px; border-radius: 6px; border: 1px solid #e2e8f0; font-size: 13.5px;"><strong>(b) Supply of user data</strong></div>
+            <div style="background: #fff; padding: 10px 14px; border-radius: 6px; border: 1px solid #e2e8f0; font-size: 13.5px;"><strong>(c) Online search engines</strong></div>
+            <div style="background: #fff; padding: 10px 14px; border-radius: 6px; border: 1px solid #e2e8f0; font-size: 13.5px;"><strong>(d) Online intermediation platforms</strong></div>
+            <div style="background: #fff; padding: 10px 14px; border-radius: 6px; border: 1px solid #e2e8f0; font-size: 13.5px;"><strong>(e) Social media platforms</strong></div>
+            <div style="background: #fff; padding: 10px 14px; border-radius: 6px; border: 1px solid #e2e8f0; font-size: 13.5px;"><strong>(f) Digital content services</strong></div>
+            <div style="background: #fff; padding: 10px 14px; border-radius: 6px; border: 1px solid #e2e8f0; font-size: 13.5px;"><strong>(g) Online gaming</strong></div>
+            <div style="background: #fff; padding: 10px 14px; border-radius: 6px; border: 1px solid #e2e8f0; font-size: 13.5px;"><strong>(h) Cloud computing services</strong></div>
+            <div style="background: #fff; padding: 10px 14px; border-radius: 6px; border: 1px solid #e2e8f0; font-size: 13.5px;"><strong>(i) Standardized online teaching</strong></div>
+        </div>
+        <p style="font-size: 12.5px; color: #4c1d95; margin-top: 10px;">
+            <em>Non-Exclusivity:</em> These categories are not mutually exclusive (e.g., digital content platforms funded by advertising). If payments qualify as royalties under Art. 12 or insurance under Art. 12C, those specific articles prevail.
+        </p>
+    </div>
+</section>
+
+<!-- ARTICLE 12C: INSURANCE PREMIUMS -->
+<section class="content-section" id="sec-art12c-insurance">
+    <div class="section-header">
+        <div>
+            <h2 class="section-title"><i class="fa-solid fa-file-shield"></i> Article 12C: Insurance Premiums (New 2025 UN Model)</h2>
+            <div class="section-subtitle">Transition from Former Article 5(6) Insurance PE to Standalone Withholding Regime</div>
+        </div>
+        <span class="badge-tag tag-2025">New 2025 Article</span>
+    </div>
+
+    <p>
+        Under <strong>Article 12C</strong> of the 2025 UN Model, insurance premiums arising in a Contracting State and paid to an insurer resident in the other Contracting State may be taxed in the Source State at a negotiated withholding rate ceiling.
+    </p>
+
+    <div class="theory-grid">
+        <div class="theory-card">
+            <div class="theory-title">
+                <i class="fa-solid fa-arrows-split-up-and-left" style="color: var(--primary);"></i>
+                <span>Structural Shift from Former Article 5(6)</span>
+            </div>
+            <p>
+                Article 12C represents a fundamental modernizing shift. Formerly, insurance was governed by Article 5(6), which deemed an Insurance PE to exist if a foreign enterprise collected premiums or insured risks in the Source State through an agent. Article 12C discards the cumbersome PE fiction and establishes a direct gross withholding mechanism on cross-border premiums.
+            </p>
+        </div>
+
+        <div class="theory-card">
+            <div class="theory-title">
+                <i class="fa-solid fa-file-signature" style="color: var(--secondary);"></i>
+                <span>Definitions &amp; PE Override</span>
+            </div>
+            <ul class="styled-list">
+                <li><strong>Insurance Premiums:</strong> Amounts paid to an insurer pursuant to a contract in which the insurer undertakes, in return for a premium, to indemnify the insured against loss, damage, or liability.</li>
+                <li><strong>Insurer:</strong> A person or arrangement the majority of whose income consists of insurance premiums and investment returns.</li>
+                <li><strong>PE Override:</strong> Where the insurer carries on business through a local PE and the insurance policy is effectively connected with that PE, Article 7 applies.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ARTICLE 13: CAPITAL GAINS -->
+<section class="content-section" id="sec-art13-capital-gains">
+    <div class="section-header">
+        <div>
+            <h2 class="section-title"><i class="fa-solid fa-chart-line"></i> Article 13: Capital Gains</h2>
+            <div class="section-subtitle">Real Property Situs, Indirect Immovable Property Transfers (&gt;50% Rule) &amp; Natural Resource Rights</div>
+        </div>
+        <span class="badge-tag tag-primary">Art. 13</span>
+    </div>
+
+    <p>
+        Article 13 allocates taxing rights over capital gains arising from the alienation of property. Computation and cost indexation mechanics are left to domestic tax legislation.
+    </p>
+
+    <div class="table-responsive">
+        <table class="tax-table">
+            <thead>
+                <tr>
+                    <th style="width: 25%;">Category of Asset Alienated</th>
+                    <th style="width: 35%;">Taxing Right Allocation</th>
+                    <th style="width: 40%;">Statutory Rules &amp; UN 2025 Additions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Immovable Property (Art. 13(1))</strong></td>
+                    <td>Taxable in the <strong>Situs State</strong> (where real estate is located).</td>
+                    <td>Both models grant full taxing rights to the State in which the real property is situated.</td>
+                </tr>
+                <tr>
+                    <td><strong>Movable Property of a PE (Art. 13(2))</strong></td>
+                    <td>Taxable in the <strong>Source State</strong> where the PE is situated.</td>
+                    <td>Includes gains from the alienation of the PE itself (alone or with the whole enterprise).</td>
+                </tr>
+                <tr>
+                    <td><strong>Ships &amp; Aircraft in International Traffic (Art. 13(3))</strong></td>
+                    <td>Taxable <strong>only in the Residence State</strong> of the enterprise.</td>
+                    <td>Exclusive taxing right to the enterprise's state of effective management/residence.</td>
+                </tr>
+                <tr>
+                    <td><strong>Shares Deriving Value from Immovable Property (Art. 13(4))</strong></td>
+                    <td>Taxable in the <strong>State where the Immovable Property is situated</strong>.</td>
+                    <td>Applies to gains from shares or comparable interests (e.g. partnership, trust) deriving <strong>more than 50% of their value directly or indirectly from immovable property</strong> situated in that State.</td>
+                </tr>
+                <tr>
+                    <td><strong>Natural Resource Exploration Rights (Art. 13(5) - UN 2025)</strong></td>
+                    <td>Taxable in the <strong>Situs State of Natural Resources</strong>.</td>
+                    <td><span class="badge-tag tag-2025">New UN 2025</span> Allows a State to tax gains from alienation of rights granted under its law to explore for or exploit natural resources located in that State.</td>
+                </tr>
+                <tr>
+                    <td><strong>Residual Alienation Gains (Art. 13(6) / 13(5) OECD)</strong></td>
+                    <td>Taxable <strong>only in the Residence State</strong> of the alienator.</td>
+                    <td>Exclusive right to Residence State for general portfolio shares, bonds, or intellectual property.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- MODULE 4: ELIMINATION OF DOUBLE TAXATION, SPECIAL PROVISIONS & TYK        -->
+<!-- ========================================================================= -->
+
+<!-- ARTICLE 21: OTHER INCOME -->
+<section class="content-section" id="sec-art21-23-other-elimination">
+    <div class="section-header">
+        <div>
+            <h2 class="section-title"><i class="fa-solid fa-scale-unbalanced"></i> Article 21 &amp; Chapter V: Other Income &amp; Double Tax Elimination</h2>
+            <div class="section-subtitle">Residual Income Allocation &bull; Exemption Method (Art. 23A) vs. Credit Method (Art. 23B)</div>
+        </div>
+        <span class="badge-tag tag-primary">Arts. 21, 23A &amp; 23B</span>
+    </div>
+
+    <!-- Article 21 Other Income -->
+    <div class="theory-card" style="margin-bottom: 25px;">
+        <div class="theory-title">
+            <i class="fa-solid fa-coins" style="color: var(--primary);"></i>
+            <span>1. Article 21: Other Income &mdash; Fundamental OECD vs. UN Divergence</span>
+        </div>
+        <p>
+            Article 21 serves as the sweep-up article, governing items of income not specifically dealt with in the preceding distributive articles of the Convention (e.g., lottery winnings, gambling proceeds, awards, punitive damages, and financial derivatives).
+        </p>
+        <div class="theory-grid" style="margin-top: 14px;">
+            <div class="theory-card">
+                <div class="theory-title" style="font-size: 14px; color: var(--primary);">
+                    <i class="fa-solid fa-house"></i> OECD Approach: Exclusive Residence Taxation
+                </div>
+                <p>
+                    Under Article 21(1) of the OECD Model, items of income of a resident of a Contracting State, wherever arising, not dealt with in the foregoing Articles <strong>shall be taxable ONLY in the Residence State</strong>. The Source State has zero right to tax.
+                </p>
+            </div>
+
+            <div class="theory-card" style="border-left: 3px solid var(--secondary);">
+                <div class="theory-title" style="font-size: 14px; color: var(--secondary);">
+                    <i class="fa-solid fa-globe"></i> UN Approach: Shared Source &amp; Residence Taxation (Art. 21(3))
+                </div>
+                <p>
+                    Under Article 21(3) of the UN Model, items of income of a resident of a Contracting State not dealt with in the foregoing Articles and <strong>arising in the other Contracting State may ALSO be taxed in that other State</strong> (Source State)!
+                </p>
+            </div>
+        </div>
+        <p style="font-size: 13.5px; color: var(--text-muted); margin-top: 10px;">
+            <em>PE Override (Art. 21(2)):</em> In both models, if the recipient carries on business through a PE in the Source State and the right/property in respect of which income is paid is effectively connected with that PE, Article 7 applies.
+        </p>
+    </div>
+
+    <!-- Chapter V Elimination of Double Taxation -->
+    <div class="theory-card" style="border-left: 4px solid var(--secondary);">
+        <div class="theory-title">
+            <i class="fa-solid fa-shield-halved" style="color: var(--secondary);"></i>
+            <span>2. Chapter V: Methods for the Elimination of Double Taxation (Articles 23A &amp; 23B)</span>
+        </div>
+        <p>
+            The provisions of Chapter V address <strong>juridical double taxation</strong> &mdash; where the same taxpayer is subjected to tax in two sovereign jurisdictions in respect of the same economic income or capital. They do not automatically eliminate economic double taxation (where two distinct taxpayers are taxed on the same income).
+        </p>
+
+        <div class="table-responsive" style="margin-top: 14px;">
+            <table class="tax-table">
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">Method</th>
+                        <th style="width: 35%;">Sub-Types</th>
+                        <th style="width: 40%;">Mechanics &amp; Statutory Operation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Article 23A:<br>Exemption Method</strong></td>
+                        <td>
+                            &bull; Full Exemption<br>
+                            &bull; Exemption with Progression
+                        </td>
+                        <td>
+                            The Residence State does not tax foreign-source income. Under <strong>exemption with progression</strong>, while the foreign income is exempt, the Residence State takes that income into account for determining the graduated progressive tax rate to be applied to the taxpayer’s remaining domestic income.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Article 23B:<br>Credit Method</strong></td>
+                        <td>
+                            &bull; Ordinary Credit<br>
+                            &bull; Full Credit
+                        </td>
+                        <td>
+                            The Residence State taxes worldwide income but grants a foreign tax credit (FTC) for taxes paid in the Source State. Under the <strong>ordinary credit</strong> (standard practice in India under Section 160 / old Sec. 91), the credit is capped at the domestic income tax attributable to that foreign income.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ARTICLE 25: MUTUAL AGREEMENT PROCEDURE & GATS -->
+<section class="content-section" id="sec-art25-map">
+    <div class="section-header">
+        <div>
+            <h2 class="section-title"><i class="fa-solid fa-handshake"></i> Article 25: Mutual Agreement Procedure (MAP) &amp; GATS</h2>
+            <div class="section-subtitle">Dispute Resolution, Mandatory Arbitration Rules &amp; The 2025 Non-Recourse to GATS Safeguard</div>
+        </div>
+        <span class="badge-tag tag-primary">Art. 25 MAP</span>
+    </div>
+
+    <p>
+        Article 25 provides a bilateral dispute-resolution mechanism where a taxpayer considers that actions of one or both Contracting States result or will result in taxation not in accordance with the Convention.
+    </p>
+
+    <!-- MAP Comparison Table -->
+    <div class="table-responsive">
+        <table class="tax-table">
+            <thead>
+                <tr>
+                    <th style="width: 25%;">Feature</th>
+                    <th style="width: 37%;">OECD Model Convention (Article 25)</th>
+                    <th style="width: 38%;">UN Model Convention (Article 25B)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Alternatives Provided</strong></td>
+                    <td>Single standard provision containing mandatory arbitration under Art. 25(5).</td>
+                    <td>Provides two options: <strong>Alternative A</strong> (no arbitration) and <strong>Alternative B</strong> (arbitration).</td>
+                </tr>
+                <tr>
+                    <td><strong>Arbitration Timeline Threshold</strong></td>
+                    <td>Arbitration may be initiated if competent authorities fail to reach agreement within <strong>2 years</strong>.</td>
+                    <td>Arbitration may be initiated only if competent authorities fail to resolve the case within <strong>3 years</strong>.</td>
+                </tr>
+                <tr>
+                    <td><strong>Who Can Request Arbitration?</strong></td>
+                    <td>Arbitration is triggered on request of the <strong>taxpayer</strong>.</td>
+                    <td>Arbitration must be requested in writing by the <strong>competent authority of a Contracting State</strong> (taxpayer cannot directly compel it).</td>
+                </tr>
+                <tr>
+                    <td><strong>Authority to Depart from Award</strong></td>
+                    <td>Arbitration decision is final and binding on both States.</td>
+                    <td>Competent authorities are empowered to <strong>depart from the arbitration decision</strong> if they agree on a different bilateral solution within <strong>6 months</strong>!</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 2025 GATS & OTHER TREATIES SAFEGUARDS -->
+    <div class="callout callout-warning">
+        <div class="callout-header"><i class="fa-solid fa-shield"></i> The 2025 OECD &amp; UN Updates on GATS Article XXII(3) &amp; Investment Treaties</div>
+        <p>
+            Both the <strong>2025 OECD Update (new Art. 25(6))</strong> and the <strong>2025 UN Model</strong> incorporated groundbreaking provisions governing the interaction between tax treaties and other international agreements:
+        </p>
+        <ul class="styled-list">
+            <li><strong>Exclusive Tax Forum:</strong> A dispute as to whether a taxation measure falls within the scope of the tax Convention can be brought before the WTO Council for Trade in Services under <strong>GATS Article XXII(3) ONLY with the consent of both Contracting States</strong>!</li>
+            <li><strong>MAP Primacy:</strong> In the absence of mutual consent, any such dispute must be settled exclusively under the Mutual Agreement Procedure of the tax convention.</li>
+            <li><strong>Protection Against Investment Treaty Claims:</strong> A taxation measure taken by a Contracting State in accordance with the DTAA <strong>shall not be regarded as breaching any other international treaty or investment pact</strong>. Recourse to external investor-state dispute settlement (ISDS) tribunals is barred.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- ARTICLE 26: EXCHANGE OF INFORMATION -->
+<section class="content-section" id="sec-art26-eoi">
+    <div class="section-header">
+        <div>
+            <h2 class="section-title"><i class="fa-solid fa-arrow-right-arrow-left"></i> Article 26: Exchange of Information</h2>
+            <div class="section-subtitle">Administrative Assistance, Bank Secrecy Override &amp; 2025 OECD Commentary on Third-Party Use</div>
+        </div>
+        <span class="badge-tag tag-primary">Art. 26</span>
+    </div>
+
+    <p>
+        Article 26 is the primary international legal mechanism for cross-border tax transparency. It facilitates the effective exchange of information to enforce domestic tax laws, prevent cross-border tax evasion and aggressive tax avoidance, and curtail illicit capital flight.
+    </p>
+
+    <div class="theory-grid">
+        <div class="theory-card">
+            <div class="theory-title">
+                <i class="fa-solid fa-lock-open" style="color: var(--danger);"></i>
+                <span>1. Mandatory Obligations &amp; Bank Secrecy</span>
+            </div>
+            <ul class="styled-list">
+                <li><strong>Foreseeable Relevance:</strong> Information must be exchanged if it is "foreseeably relevant" for carrying out the convention or administering domestic tax laws.</li>
+                <li><strong>No Bank Secrecy Defense:</strong> A Contracting State <strong>cannot decline</strong> to supply information solely because it is held by a bank, other financial institution, nominee, or person acting in an agency or fiduciary capacity.</li>
+                <li><strong>No Domestic Interest Defense:</strong> A State cannot refuse to collect information solely because it has no domestic tax interest in that specific taxpayer or transaction.</li>
+            </ul>
+        </div>
+
+        <div class="theory-card">
+            <div class="theory-title">
+                <i class="fa-solid fa-user-shield" style="color: var(--secondary);"></i>
+                <span>2. Legitimate Grounds of Refusal &amp; 2025 Update</span>
+            </div>
+            <ul class="styled-list">
+                <li><strong>Attorney-Client Privilege:</strong> A State is not required to disclose confidential communications between an attorney and client protected under domestic law.</li>
+                <li><strong>Trade Secrets &amp; Public Policy:</strong> A State may decline to supply information that would disclose any trade, business, industrial, or professional secret, or information contrary to public policy (<em>ordre public</em>).</li>
+                <li><strong>2025 OECD Commentary Clarification:</strong> Information exchanged under Article 26 may, subject to applicable domestic conditions, be utilized for tax matters concerning <strong>persons other than the person in respect of whom the information was initially exchanged</strong>!</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- TEST YOUR KNOWLEDGE (TYK QUESTIONS 1 TO 5)                               -->
+<!-- ========================================================================= -->
+<section class="content-section" id="sec-tyk">
+    <div class="section-header">
+        <div>
+            <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Test Your Knowledge (TYK) Questions &amp; Solutions</h2>
+            <div class="section-subtitle">Exhaustive Solutions to All 5 ICAI Module Questions with Toggle Cards</div>
+        </div>
+        <span class="badge-tag tag-success">5 ICAI TYKs Solved</span>
+    </div>
+
+    <!-- TYK QUESTION 1 -->
+    <div class="example-box" id="tyk-1">
+        <div class="example-title">
+            <i class="fa-solid fa-circle-question"></i> TYK Question 1: Significant Differences Between UN and OECD Model Tax Conventions
+        </div>
+        <p>
+            <strong>Question:</strong> Explain briefly the significant differences between the UN and OECD Model Tax Conventions.
+        </p>
+        <button class="btn-solution" onclick="toggleSolution('sol-tyk-1')">
+            <i class="fa-solid fa-eye"></i> View Comprehensive Solution
+        </button>
+        <div id="sol-tyk-1" class="solution-card">
+            <h4 style="color: var(--primary); margin-bottom: 8px;">Comprehensive Comparative Analysis: UN vs. OECD Model Tax Conventions:</h4>
+            <p>
+                While the OECD and UN Model Conventions share substantial textual convergence post-BEPS, they embody fundamentally distinct economic philosophies regarding the allocation of taxing rights between Residence and Source States:
+            </p>
+            <div class="table-responsive" style="margin-top: 10px;">
+                <table class="tax-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Area / Article</th>
+                            <th style="width: 37%;">OECD Model Convention (2025)</th>
+                            <th style="width: 38%;">UN Model Convention (2025)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Primary Economic Orientation</strong></td>
+                            <td>Favors <strong>Residence-State taxation</strong>, reflecting the interests of capital-exporting developed economies. Seeks to minimize source withholding taxes.</td>
+                            <td>Favors <strong>Source-State taxation</strong>, safeguarding the tax base of capital-importing developing nations while preserving investment incentives.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Subject-to-Tax Rule<br>(Art. 1(3))</strong></td>
+                            <td>No STTR in Article 1.</td>
+                            <td><strong>Inserted in 2025:</strong> Article 1(3) STTR preserves source taxation where income is subject to a low level of taxation in the residence State.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Definition of Resident<br>(Art. 4(1))</strong></td>
+                            <td>Does not include "place of incorporation".</td>
+                            <td>Explicitly includes <strong>"place of incorporation"</strong> as a criterion of residence.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Building Site PE<br>(Art. 5(3))</strong></td>
+                            <td>Threshold of <strong>more than 12 months</strong>.</td>
+                            <td>Threshold of <strong>more than 6 months</strong>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Service PE<br>(Art. 5(3)(b))</strong></td>
+                            <td>No explicit Service PE provision in Article 5.</td>
+                            <td>Explicit Service PE clause where service duration exceeds <strong>183 days</strong> in any 12-month period.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Agency PE &amp; Stock of Goods<br>(Art. 5(5))</strong></td>
+                            <td>Restricted to dependent agents concluding contracts or playing the principal role.</td>
+                            <td>Includes agents who maintain a <strong>stock of goods</strong> from which they regularly make deliveries.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Business Profits Attribution<br>(Art. 7)</strong></td>
+                            <td><strong>Direct attribution only:</strong> Taxes only profits directly attributable to the PE.</td>
+                            <td><strong>Force of Attraction (FOA) Rule:</strong> Taxes PE profits PLUS direct sales of similar goods or similar business activities in that State.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Royalties<br>(Art. 12)</strong></td>
+                            <td>Taxable <strong>exclusively in Residence State</strong> (0% source tax). Excludes ICS equipment and software acquisition.</td>
+                            <td><strong>Shared taxing rights:</strong> Source State may levy withholding tax. In 2025, <strong>sub-paragraph (c) added software payments</strong> without requiring copyright transfer!</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fees for Services<br>(Art. 12AA)</strong></td>
+                            <td>No article on fees for services (deleted Art. 14 in 2000).</td>
+                            <td><strong>New 2025 Article 12AA:</strong> Replaces deleted Arts. 12A &amp; 14, granting source taxation over <strong>all cross-border service fees</strong>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Automated Digital Services<br>(Art. 12B)</strong></td>
+                            <td>No corresponding article.</td>
+                            <td><strong>Article 12B:</strong> Grants Source State gross or net taxing rights over 9 categories of Automated Digital Services without physical nexus.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Insurance Premiums<br>(Art. 12C)</strong></td>
+                            <td>No corresponding article.</td>
+                            <td><strong>New 2025 Article 12C:</strong> Standalone gross withholding tax on cross-border insurance premiums paid to foreign insurers.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Other Income<br>(Art. 21)</strong></td>
+                            <td>Taxable <strong>exclusively in Residence State</strong>.</td>
+                            <td><strong>Shared taxing rights:</strong> Article 21(3) allows Source State to also tax items of other income arising in its territory.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>MAP Arbitration<br>(Art. 25)</strong></td>
+                            <td>Mandatory binding arbitration triggered by taxpayer after <strong>2 years</strong>.</td>
+                            <td>Alternative B allows arbitration only after <strong>3 years</strong>, requested only by a <strong>competent authority</strong>, with 6-month departure power.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- TYK QUESTION 2 -->
+    <div class="example-box" id="tyk-2">
+        <div class="example-title">
+            <i class="fa-solid fa-circle-question"></i> TYK Question 2: Dual Residence Tie-Breaker Rule Application
+        </div>
+        <p>
+            <strong>Question:</strong> When does it become necessary to apply the tie-breaker rule? Discuss the manner of application of the tie-breaker rule.
+        </p>
+        <button class="btn-solution" onclick="toggleSolution('sol-tyk-2')">
+            <i class="fa-solid fa-eye"></i> View Comprehensive Solution
+        </button>
+        <div id="sol-tyk-2" class="solution-card">
+            <h4 style="color: var(--primary); margin-bottom: 8px;">1. Necessity of the Tie-Breaker Rule:</h4>
+            <p>
+                Every sovereign jurisdiction prescribes its own criteria in domestic tax law to determine residential status (e.g., physical stay of 182 days in India, domicile/citizenship in other countries). Because domestic rules operate autonomously, an individual may satisfy the residence criteria of <strong>both Contracting States simultaneously</strong>, becoming a "dual resident".
+            </p>
+            <p>
+                Since Article 1 restricts treaty benefits to residents and distributive articles allocate taxing rights based on which State is the "Residence State", dual residence creates total paralysis and double worldwide taxation. It therefore becomes indispensable to apply the <strong>tie-breaker rule under Article 4(2)</strong> to assign the individual a single fiscal residence for treaty purposes.
+            </p>
+
+            <h4 style="color: var(--primary); margin-top: 14px; margin-bottom: 8px;">2. Sequential Manner of Application of Article 4(2) Waterfall:</h4>
+            <ol class="styled-list">
+                <li>
+                    <strong>First Test &mdash; Permanent Home Available:</strong>
+                    <br>The individual is deemed a resident only of the State in which he has a permanent home available to him. A permanent home is a dwelling (house, flat, apartment) arranged and retained for continuous, permanent use, rather than for a stay of temporary duration.
+                </li>
+                <li>
+                    <strong>Second Test &mdash; Centre of Vital Interests:</strong>
+                    <br>If the individual has a permanent home available in <strong>both States</strong>, or in <strong>neither State</strong>, preference is given to the State with which his personal and economic relations are closer (centre of vital interests). Regard is had to family and social ties, occupations, political, cultural, and business activities.
+                </li>
+                <li>
+                    <strong>Third Test &mdash; Habitual Abode:</strong>
+                    <br>If the State of vital interests cannot be determined, or if he has no permanent home in either State, he is deemed a resident only of the State in which he has an <strong>habitual abode</strong> (evaluated by the frequency, duration, and regularity of stays of the individual in each State over a reasonable period).
+                </li>
+                <li>
+                    <strong>Fourth Test &mdash; Nationality / Citizenship:</strong>
+                    <br>If he has an habitual abode in <strong>both States</strong> or in <strong>neither of them</strong>, he shall be deemed to be a resident only of the State of which he is a <strong>national</strong>.
+                </li>
+                <li>
+                    <strong>Fifth Test &mdash; Mutual Agreement Procedure (MAP):</strong>
+                    <br>If he is a national of <strong>both States</strong> or of <strong>neither of them</strong>, the competent authorities of the Contracting States shall settle the question by <strong>mutual agreement under Article 25</strong>.
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- TYK QUESTION 3 -->
+    <div class="example-box" id="tyk-3">
+        <div class="example-title">
+            <i class="fa-solid fa-circle-question"></i> TYK Question 3: Meaning of "Interest" and "Royalty" under the UN Model Convention
+        </div>
+        <p>
+            <strong>Question:</strong> Explain the meaning of “interest” and “royalty” under the UN Model Convention.
+        </p>
+        <button class="btn-solution" onclick="toggleSolution('sol-tyk-3')">
+            <i class="fa-solid fa-eye"></i> View Comprehensive Solution
+        </button>
+        <div id="sol-tyk-3" class="solution-card">
+            <h4 style="color: var(--primary); margin-bottom: 8px;">1. Meaning of "Interest" under Article 11 of the UN Model Convention:</h4>
+            <p>
+                As per Article 11(3) of the UN Model Convention, the term “interest” essentially means income from <strong>debt-claims of every kind</strong>, whether or not secured by mortgage and whether or not carrying a right to participate in the debtor's profits. In particular, it covers:
+            </p>
+            <ul class="styled-list">
+                <li>Income from government securities;</li>
+                <li>Income from bonds or debentures, including premiums and prizes attaching to such securities, bonds, or debentures;</li>
+                <li><strong>Statutory Exclusion:</strong> Penalty charges for late payment are <strong>NOT</strong> regarded as interest for the purposes of this Article.</li>
+            </ul>
+
+            <h4 style="color: var(--primary); margin-top: 14px; margin-bottom: 8px;">2. Meaning of "Royalties" under Article 12 of the UN Model Convention (Incorporating 2025 Update):</h4>
+            <p>
+                As per Article 12(3) of the UN Model Convention, the term “royalties” means payments of any kind received as a consideration for:
+            </p>
+            <ol class="styled-list">
+                <li>
+                    <strong>Use of, or right to use, Intellectual Property:</strong>
+                    <br>Any copyright of literary, artistic, or scientific work (including cinematograph films, or films or tapes used for radio or television broadcasting);
+                </li>
+                <li>
+                    <strong>Industrial &amp; Commercial IP:</strong>
+                    <br>Any patent, trademark, design or model, plan, secret formula or process;
+                </li>
+                <li>
+                    <strong>Equipment Rentals:</strong>
+                    <br>The use of, or the right to use, <strong>industrial, commercial, or scientific (ICS) equipment</strong>;
+                </li>
+                <li>
+                    <strong>Commercial Know-How:</strong>
+                    <br>Information concerning industrial, commercial, or scientific experience; or
+                </li>
+                <li>
+                    <strong>Software Payments (2025 Sub-paragraph (c) Addition):</strong>
+                    <br>The <strong>use of, or the right to use, any software, or paid as a consideration for the acquisition of any software</strong>. A transfer of copyright in the software is <strong>not required</strong> for such payments to constitute royalties!
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- TYK QUESTION 4 -->
+    <div class="example-box" id="tyk-4">
+        <div class="example-title">
+            <i class="fa-solid fa-circle-question"></i> TYK Question 4: Meaning of Automated Digital Services (ADS)
+        </div>
+        <p>
+            <strong>Question:</strong> What is the meaning of Automated Digital Services? Elucidate.
+        </p>
+        <button class="btn-solution" onclick="toggleSolution('sol-tyk-4')">
+            <i class="fa-solid fa-eye"></i> View Comprehensive Solution
+        </button>
+        <div id="sol-tyk-4" class="solution-card">
+            <h4 style="color: var(--primary); margin-bottom: 8px;">1. Statutory Definition under Article 12B of the UN Model Convention:</h4>
+            <p>
+                As per <strong>Article 12B(5)</strong> of the UN Model Convention, <strong>“Automated digital services” (ADS)</strong> means:
+            </p>
+            <blockquote style="font-style: italic; background: #fff; padding: 10px 14px; border-left: 3px solid var(--secondary); margin: 8px 0; font-size: 13.5px;">
+                “any service provided on the Internet or an electronic network requiring <strong>minimal human involvement from the service provider</strong>.”
+            </blockquote>
+            <p>
+                <strong>The Benchmark of Scalability:</strong> The quintessential characteristic of an automated digital service is whether the enterprise can scale up and deliver the service to an expanding customer base with minimal additional marginal human labor.
+            </p>
+
+            <h4 style="color: var(--primary); margin-top: 14px; margin-bottom: 8px;">2. The 9 Enumerated Categories under Article 12B(6):</h4>
+            <p>Under Article 12B(6), Automated Digital Services specially include:</p>
+            <ol class="styled-list">
+                <li><strong>Online advertising services:</strong> Programmatic display ads, sponsored links, pay-per-click ads.</li>
+                <li><strong>Supply of user data:</strong> Monetization and transfer of behavioral, demographic, or search data collected from platform users.</li>
+                <li><strong>Online search engines:</strong> Search retrieval services monetized via user traffic.</li>
+                <li><strong>Online intermediation platform services:</strong> Digital marketplaces connecting third-party buyers and sellers (e.g., e-commerce, ride-sharing, food delivery).</li>
+                <li><strong>Social media platforms:</strong> Digital networks facilitating user networking, messaging, and content sharing.</li>
+                <li><strong>Digital content services:</strong> Streaming or downloading of digital music, videos, films, podcasts, or electronic publications.</li>
+                <li><strong>Online gaming:</strong> Interactive multi-player gaming services provided over the Internet.</li>
+                <li><strong>Cloud computing services:</strong> Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS).</li>
+                <li><strong>Standardized online teaching services:</strong> Automated or pre-recorded online instructional courses where human grading or live tutoring is negligible.</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- TYK QUESTION 5 -->
+    <div class="example-box" id="tyk-5">
+        <div class="example-title">
+            <i class="fa-solid fa-circle-question"></i> TYK Question 5: Taxation of Royalties under Article 12 (OECD vs. UN Model)
+        </div>
+        <p>
+            <strong>Question:</strong> Explain the provisions relating to taxation of royalties under Article 12 of the OECD Model Convention and the UN Model Convention.
+        </p>
+        <button class="btn-solution" onclick="toggleSolution('sol-tyk-5')">
+            <i class="fa-solid fa-eye"></i> View Comprehensive Solution
+        </button>
+        <div id="sol-tyk-5" class="solution-card">
+            <h4 style="color: var(--primary); margin-bottom: 8px;">Comprehensive Analysis of Article 12 (Royalties):</h4>
+            <p>
+                Article 12 allocates taxing rights over royalty income between the Residence and Source States. The two model conventions diverge fundamentally on both taxing rights and definition:
+            </p>
+
+            <div class="table-responsive" style="margin-top: 10px;">
+                <table class="tax-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Feature</th>
+                            <th style="width: 37%;">OECD Model Convention (Article 12)</th>
+                            <th style="width: 38%;">UN Model Convention (Article 12)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Allocation of Taxing Rights</strong></td>
+                            <td>Royalties arising in a Contracting State and beneficially owned by a resident of the other State are <strong>taxable ONLY in the Residence State</strong>. The Source State has no right to tax.</td>
+                            <td><strong>Shared taxing rights:</strong> Taxable in the Residence State and <strong>also taxable in the Source State</strong> at a negotiated withholding rate ceiling.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Industrial, Commercial or Scientific (ICS) Equipment</strong></td>
+                            <td><strong>Excluded:</strong> Rental of industrial, commercial, or scientific equipment is excluded from Article 12 (governed by Article 7 as business profits).</td>
+                            <td><strong>Included:</strong> Payments for the use of, or right to use, ICS equipment are expressly included in the definition of royalties.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Radio &amp; Television Broadcasting Media</strong></td>
+                            <td><strong>Excluded:</strong> Films or tapes used for radio or television broadcasting are not treated as royalties.</td>
+                            <td><strong>Included:</strong> Explicitly includes cinematograph films or films/tapes used for radio or television broadcasting.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Software Payments (2025 Update)</strong></td>
+                            <td><strong>Narrow approach:</strong> Payments for standard software licenses or software distribution are treated as business profits (Art. 7) rather than royalties, unless copyright itself is transferred.</td>
+                            <td><strong>Expanded in 2025:</strong> Sub-paragraph (c) expressly includes payments for the <strong>use of, or right to use, any software, or consideration for acquisition of software</strong>. Transfer of copyright is <strong>not required</strong>!</td>
+                        </tr>
+                        <tr>
+                            <td><strong>PE Override Rule</strong></td>
+                            <td>If the beneficial owner carries on business through a PE in the Source State and the right/property is effectively connected with that PE, Article 7 applies.</td>
+                            <td>Identical PE override rule: Article 7 applies if effectively connected with a PE in the Source State.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- Bottom Navigation Bar -->
+            <nav class="bottom-nav">
+                <a href="tax_treaties_interpretation.html" class="nav-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <div>
+                        <div class="nav-label">Previous Chapter</div>
+                        <div class="nav-title">Chapter 26: Tax Treaties &amp; MLI</div>
+                    </div>
+                </a>
+
+                <a href="../../notes/dtnotes.html" class="nav-btn" style="text-align: center;">
+                    <i class="fa-solid fa-list-check"></i>
+                    <div>
+                        <div class="nav-label">Master Index</div>
+                        <div class="nav-title">All Chapters</div>
+                    </div>
+                </a>
+
+                <a href="latest_developments_international_tax.html" class="nav-btn" style="text-align: right;">
+                    <div>
+                        <div class="nav-label">Next Chapter</div>
+                        <div class="nav-title">Chapter 28: Latest Developments &rarr;</div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </nav>
+        </main>
+    </div>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Reading Progress Bar
+        window.addEventListener('scroll', function() {
+            const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            const progressBar = document.getElementById('reading-progress');
+            if (progressBar) {
+                progressBar.style.width = scrolled + '%';
+            }
+        });
+
+        // Toggle Solution Cards
+        function toggleSolution(id) {
+            const card = document.getElementById(id);
+            if (!card) return;
+            const btn = card.previousElementSibling;
+            if (card.style.display === 'block') {
+                card.style.display = 'none';
+                if (btn && btn.classList.contains('btn-solution')) {
+                    btn.innerHTML = '<i class="fa-solid fa-eye"></i> View Comprehensive Solution';
+                }
+            } else {
+                card.style.display = 'block';
+                if (btn && btn.classList.contains('btn-solution')) {
+                    btn.innerHTML = '<i class="fa-solid fa-eye-slash"></i> Hide Solution';
+                }
+            }
+        }
+
+        // Sidebar Search / Quick Find
+        const searchInput = document.getElementById('sidebar-search-input');
+        if (searchInput) {
+            searchInput.addEventListener('input', function(e) {
+                const term = e.target.value.toLowerCase().trim();
+                const items = document.querySelectorAll('.sidebar-nav .sidebar-item');
+                items.forEach(function(item) {
+                    const text = item.textContent.toLowerCase();
+                    if (text.includes(term)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        }
+
+        // Scrollspy to Highlight Active Sidebar Link
+        window.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section[id], div[id^="tyk-"]');
+            const navLinks = document.querySelectorAll('.sidebar-link');
+
+            window.addEventListener('scroll', function() {
+                let current = '';
+                const scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+
+                sections.forEach(function(section) {
+                    const sectionTop = section.offsetTop - 120;
+                    const sectionHeight = section.offsetHeight;
+                    if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                if (current) {
+                    navLinks.forEach(function(link) {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + current) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

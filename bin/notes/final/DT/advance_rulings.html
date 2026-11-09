@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 23: Board for Advance Rulings (BAR) | CA Final DT Notes | Calcium Notes</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Master CA Final Direct Tax Chapter 23: Board for Advance Rulings (BAR) under Sections 380 to 389 of Income-tax Act, 2025. Covers constitution of BAR, eligible applicants, fees, grounds of rejection, fraud/misrepresentation, powers under CPC, and appeals to High Court.">
+    <meta name="keywords" content="Board for Advance Rulings, BAR, Advance Ruling, Section 380, Section 381, Section 383, Section 384, Section 386, Section 389, High Court Appeal, AY 2025-26, AY 2026-27">
+    <meta name="author" content="Calcium Notes">
+    <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/DT/advance_rulings.html">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- MathJax for KaTeX math formatting -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
+            --primary-dark: #0f172a;
+            --accent: #d97706;
+            --accent-light: #fef3c7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --info: #0284c7;
+            --info-light: #e0f2fe;
+            --warning: #ca8a04;
+            --warning-light: #fef9c3;
+            --slate-50: #f8fafc;
+            --slate-100: #f1f5f9;
+            --slate-200: #e2e8f0;
+            --slate-300: #cbd5e1;
+            --slate-400: #94a3b8;
+            --slate-500: #64748b;
+            --slate-600: #475569;
+            --slate-700: #334155;
+            --slate-800: #1e293b;
+            --slate-900: #0f172a;
+            --border-color: #e2e8f0;
+            --card-bg: #ffffff;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --font-heading: 'Outfit', var(--font-sans);
+            --font-mono: 'Fira Code', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--slate-50);
+            color: var(--slate-800);
+            line-height: 1.65;
+            font-size: 15px;
+            overflow-x: hidden;
+        }
+
+        /* Reading Progress Bar */
+        #reading-progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            z-index: 1000;
+        }
+
+        #reading-progress {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #3b82f6, #0284c7, #16a34a);
+            transition: width 0.1s ease-out;
+        }
+
+        /* Layout Structure */
+        .page-wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 310px;
+            background-color: #ffffff;
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            z-index: 50;
+        }
+
+        .sidebar-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--border-color);
+            background: linear-gradient(180deg, #ffffff 0%, var(--slate-50) 100%);
+        }
+
+        .sidebar-brand {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .sidebar-brand span {
+            color: var(--accent);
+        }
+
+        .sidebar-search {
+            padding: 12px 20px;
+            border-bottom: 1px solid var(--border-color);
+            background-color: var(--slate-50);
+        }
+
+        .sidebar-search-box {
+            position: relative;
+        }
+
+        .sidebar-search-box input {
+            width: 100%;
+            padding: 8px 12px 8px 34px;
+            border: 1px solid var(--slate-200);
+            border-radius: 6px;
+            font-size: 13px;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            background: #fff;
+        }
+
+        .sidebar-search-box input:focus {
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+        }
+
+        .sidebar-search-box i {
+            position: absolute;
+            left: 11px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--slate-400);
+            font-size: 13px;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+            padding: 12px 0;
+            flex-grow: 1;
+        }
+
+        .sidebar-section-title {
+            padding: 12px 20px 6px 20px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--slate-400);
+        }
+
+        .sidebar-item {
+            margin-bottom: 2px;
+        }
+
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 20px;
+            color: var(--slate-600);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.15s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .sidebar-link:hover {
+            color: var(--primary);
+            background-color: var(--slate-50);
+        }
+
+        .sidebar-link.active {
+            color: var(--primary);
+            background-color: #eff6ff;
+            border-left-color: var(--primary);
+            font-weight: 600;
+        }
+
+        .sidebar-badge {
+            font-size: 10.5px;
+            padding: 2px 7px;
+            border-radius: 10px;
+            background-color: var(--slate-100);
+            color: var(--slate-500);
+            font-weight: 600;
+        }
+
+        .sidebar-link.active .sidebar-badge {
+            background-color: #dbeafe;
+            color: var(--primary);
+        }
+
+        .sidebar-footer {
+            padding: 16px 20px;
+            border-top: 1px solid var(--border-color);
+            background-color: var(--slate-50);
+            font-size: 12px;
+            color: var(--slate-500);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sidebar-footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            flex-grow: 1;
+            padding: 40px;
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        /* Hero Banner */
+        .chapter-header {
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .chapter-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            background-color: #eff6ff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+
+        .chapter-title {
+            font-family: var(--font-heading);
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: var(--slate-900);
+            line-height: 1.25;
+            margin-bottom: 12px;
+        }
+
+        .chapter-desc {
+            font-size: 16px;
+            color: var(--slate-600);
+            max-width: 860px;
+            line-height: 1.6;
+        }
+
+        .chapter-meta-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 18px;
+            padding-top: 16px;
+            border-top: 1px dashed var(--slate-200);
+            font-size: 13px;
+            color: var(--slate-500);
+        }
+
+        .meta-pill {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: #fff;
+            padding: 4px 10px;
+            border-radius: 6px;
+            border: 1px solid var(--slate-200);
+        }
+
+        .meta-pill i {
+            color: var(--primary-light);
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin-bottom: 50px;
+            scroll-margin-top: 30px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--slate-200);
+        }
+
+        .section-title-wrap {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-badge {
+            font-family: var(--font-mono);
+            font-size: 13px;
+            font-weight: 600;
+            background-color: var(--primary);
+            color: #ffffff;
+            padding: 4px 10px;
+            border-radius: 6px;
+            letter-spacing: 0.02em;
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--slate-900);
+        }
+
+        .section-nav-pills {
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav-pill {
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            background: var(--slate-100);
+            color: var(--slate-600);
+            font-weight: 500;
+        }
+
+        .nav-pill.active {
+            background: var(--primary-light);
+            color: #fff;
+        }
+
+        /* Statutory & Theory Cards */
+        .statutory-box {
+            background-color: #ffffff;
+            border: 1px solid #bfdbfe;
+            border-left: 5px solid var(--primary-light);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+
+        .statutory-box-header {
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .statutory-box-body p {
+            color: var(--slate-700);
+            margin-bottom: 10px;
+        }
+
+        .statutory-box-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        .theory-card {
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+        }
+
+        .theory-title {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--slate-900);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .theory-title i {
+            color: var(--primary-light);
+        }
+
+        /* Callouts */
+        .callout {
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 18px 0;
+            font-size: 14.5px;
+            line-height: 1.6;
+        }
+
+        .callout-header {
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .callout-info {
+            background-color: var(--info-light);
+            border-left: 4px solid var(--info);
+            color: #0369a1;
+        }
+
+        .callout-warning {
+            background-color: var(--warning-light);
+            border-left: 4px solid var(--warning);
+            color: #854d0e;
+        }
+
+        .callout-danger {
+            background-color: var(--danger-light);
+            border-left: 4px solid var(--danger);
+            color: #991b1b;
+        }
+
+        .callout-success {
+            background-color: var(--success-light);
+            border-left: 4px solid var(--success);
+            color: #166534;
+        }
+
+        /* Tables */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 18px 0;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background: #fff;
+        }
+
+        .tax-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13.5px;
+            text-align: left;
+        }
+
+        .tax-table th {
+            background-color: var(--slate-100);
+            color: var(--slate-700);
+            font-weight: 600;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .tax-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--slate-100);
+            color: var(--slate-700);
+            vertical-align: top;
+        }
+
+        .tax-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .tax-table tbody tr:hover {
+            background-color: var(--slate-50);
+        }
+
+        .badge-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .tag-success { background: var(--success-light); color: var(--success); }
+        .tag-danger { background: var(--danger-light); color: var(--danger); }
+        .tag-warning { background: var(--warning-light); color: var(--warning); }
+        .tag-info { background: var(--info-light); color: var(--info); }
+
+        /* Formula Box */
+        .formula-box {
+            background-color: var(--slate-900);
+            color: #ffffff;
+            border-radius: 8px;
+            padding: 18px 24px;
+            margin: 18px 0;
+        }
+
+        .formula-title {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--slate-400);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .formula-content {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            color: #38bdf8;
+            text-align: center;
+        }
+
+        /* Examples & Solutions */
+        .example-box {
+            background-color: #ffffff;
+            border: 1px solid #e0e7ff;
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .example-title {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #3730a3;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-solution {
+            background-color: #eff6ff;
+            color: var(--primary);
+            border: 1px solid #bfdbfe;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin: 14px 0 6px 0;
+            transition: all 0.2s ease;
+        }
+
+        .btn-solution:hover {
+            background-color: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+        }
+
+        .solution-card {
+            display: none;
+            background-color: var(--slate-50);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 14px;
+        }
+
+        /* Lists */
+        .styled-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 10px 0;
+        }
+
+        .styled-list li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 8px;
+            color: var(--slate-700);
+        }
+
+        .styled-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: 700;
+        }
+
+        /* Grids */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 18px;
+            margin: 16px 0;
+        }
+
+        /* Bottom Nav */
+        .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .nav-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--slate-700);
+            padding: 10px 18px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .nav-btn:hover {
+            background-color: var(--slate-50);
+            border-color: var(--primary-light);
+            color: var(--primary);
+        }
+
+        .nav-label {
+            font-size: 11px;
+            color: var(--slate-400);
+            text-transform: uppercase;
+        }
+
+        .nav-title {
+            font-size: 14px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div id="reading-progress-container">
+        <div id="reading-progress"></div>
+    </div>
+
+    <div class="page-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="../../notes/dtnotes.html" class="sidebar-brand">
+                    <i class="fa-solid fa-scale-unbalanced-flip"></i>
+                    <div>Calcium <span>DT Notes</span></div>
+                </a>
+            </div>
+
+            <div class="sidebar-search">
+                <div class="sidebar-search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="sidebar-search-input" placeholder="Quick find section/topic...">
+                </div>
+            </div>
+
+            <ul class="sidebar-nav">
+                <li class="sidebar-section-title">1. Constitution &amp; Application</li>
+                <li class="sidebar-item">
+                    <a href="#sec-380" class="sidebar-link">
+                        <span>Definitions &amp; Scope</span>
+                        <span class="sidebar-badge">Sec 380</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-381" class="sidebar-link">
+                        <span>Constitution of BAR</span>
+                        <span class="sidebar-badge">Sec 381</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-382" class="sidebar-link">
+                        <span>Vacancies Not to Invalidate</span>
+                        <span class="sidebar-badge">Sec 382</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-383" class="sidebar-link">
+                        <span>Application, Forms &amp; Fees</span>
+                        <span class="sidebar-badge">Sec 383</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-section-title">2. Procedure, Powers &amp; Appeals</li>
+                <li class="sidebar-item">
+                    <a href="#sec-384" class="sidebar-link">
+                        <span>Procedure &amp; Rejection Grounds</span>
+                        <span class="sidebar-badge">Sec 384</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-385" class="sidebar-link">
+                        <span>Bar on Appellate Authority</span>
+                        <span class="sidebar-badge">Sec 385</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-386" class="sidebar-link">
+                        <span>Ruling Void for Fraud</span>
+                        <span class="sidebar-badge">Sec 386</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-387" class="sidebar-link">
+                        <span>Powers of Civil Court (CPC)</span>
+                        <span class="sidebar-badge">Sec 387</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-388" class="sidebar-link">
+                        <span>Procedure &amp; Rectification</span>
+                        <span class="sidebar-badge">Sec 388</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-389" class="sidebar-link">
+                        <span>Appeal to High Court</span>
+                        <span class="sidebar-badge">Sec 389</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-section-title">3. Practical Application (TYK)</li>
+                <li class="sidebar-item">
+                    <a href="#sec-tyk" class="sidebar-link">
+                        <span>ICAI TYK (Q1 to Q6)</span>
+                        <span class="sidebar-badge">TYK 1-6</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-1" class="sidebar-link">
+                        <span>TYK 1: Withdrawal of Application</span>
+                        <span class="sidebar-badge">Sec 383(3)</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-2" class="sidebar-link">
+                        <span>TYK 2: Void Ab Initio for Fraud</span>
+                        <span class="sidebar-badge">Sec 386</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-3" class="sidebar-link">
+                        <span>TYK 3: Compelling Books Production</span>
+                        <span class="sidebar-badge">Sec 387</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-4" class="sidebar-link">
+                        <span>TYK 4: Scope of Advance Ruling</span>
+                        <span class="sidebar-badge">Sec 380</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-5" class="sidebar-link">
+                        <span>TYK 5: High Court Appeal</span>
+                        <span class="sidebar-badge">Sec 389</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-6" class="sidebar-link">
+                        <span>TYK 6: Rectification of Mistake</span>
+                        <span class="sidebar-badge">Rule 15</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <span>AY 2025-26 &amp; AY 2026-27</span>
+                <a href="../../notes/dtnotes.html"><i class="fa-solid fa-list-check"></i> Index</a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header Hero Banner -->
+            <div class="chapter-header">
+                <div class="chapter-tag">
+                    <i class="fa-solid fa-scale-balanced"></i> CA Final Direct Tax Laws &bull; Module 4: International Taxation &amp; Dispute Resolution
+                </div>
+                <h1 class="chapter-title">Chapter 23: Board for Advance Rulings (BAR) Proceedings &amp; Orders</h1>
+                <p class="chapter-desc">
+                    Exhaustive study notes on the Board for Advance Rulings (BAR) under Chapter XVIII of the Income-tax Act, 2025 (Sections 380 to 389) and the e-Advance Rulings Scheme, 2022. Covers definition and scope of advance rulings, eligible categories of non-resident and resident applicants, prescribed forms and sliding fee structure, statutory grounds of rejection, fraud and misrepresentation consequences, Civil Court powers under CPC, mistake rectification, and the statutory appellate mechanism before the High Court.
+                </p>
+                <div class="chapter-meta-bar">
+                    <div class="meta-pill"><i class="fa-solid fa-book-bookmark"></i> All 6 Statutory Sections (Sec 381 to 389) Mapped</div>
+                    <div class="meta-pill"><i class="fa-solid fa-calendar-days"></i> Applicable for AY 2025-26 &amp; AY 2026-27</div>
+                    <div class="meta-pill"><i class="fa-solid fa-landmark"></i> BNSS, 2023 &amp; BNS, 2023 Cross-References</div>
+                    <div class="meta-pill"><i class="fa-solid fa-graduation-cap"></i> All 6 ICAI TYK Questions with Complete Solutions</div>
+                </div>
+            </div>
+
+
+            <!-- ========================================== -->
+            <!-- SECTION 1: DEFINITIONS & SCOPE [SECTION 380] -->
+            <!-- ========================================== -->
+            <section id="sec-380" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Section 380</span>
+                        <h2 class="section-title">Definitions &amp; Scope of Advance Ruling</h2>
+                    </div>
+                    <div class="section-nav-pills">
+                        <span class="nav-pill active"><i class="fa-solid fa-gavel"></i> Statutory Scope</span>
+                        <span class="nav-pill"><i class="fa-solid fa-user-check"></i> Eligible Applicants</span>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title">
+                        <i class="fa-solid fa-compass"></i> Objective of the Advance Rulings Mechanism
+                    </div>
+                    <p>The advance rulings system under the Income-tax Act, 2025 provides tax certainty to taxpayers in advance of entering into commercial transactions, prevents costly and protracted litigation, and attracts foreign direct investment by clarifying tax consequences determinatively.</p>
+                </div>
+
+                <div class="statutory-box">
+                    <div class="statutory-box-header">
+                        <i class="fa-solid fa-scale-balanced"></i> Statutory Definition of "Advance Ruling" &bull; Section 380(a) [Sec 245N(a) of 1961 Act]
+                    </div>
+                    <div class="statutory-box-body">
+                        <p><strong>&ldquo;Advance Ruling&rdquo;</strong> means a determination or decision by the Board for Advance Rulings (BAR) in respect of:</p>
+                        <div class="table-responsive">
+                            <table class="tax-table">
+                                <thead>
+                                    <tr>
+                                        <th>Statutory Clause</th>
+                                        <th>Subject Matter of Advance Ruling</th>
+                                        <th>Applicant Category</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Section 380(a)(i)</strong></td>
+                                        <td>Determination in relation to a transaction which has been undertaken or is proposed to be undertaken.</td>
+                                        <td><strong>Non-Resident Applicant</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Section 380(a)(ii)</strong></td>
+                                        <td>Determination in relation to the <strong>tax liability of a non-resident</strong> arising out of a transaction undertaken or proposed to be undertaken with a non-resident.</td>
+                                        <td><strong>Resident Applicant</strong> dealing with a non-resident</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Section 380(a)(iii)</strong></td>
+                                        <td>Determination in relation to the <strong>tax liability of a resident applicant</strong> arising out of an undertaken or proposed transaction, including any question of law or fact.</td>
+                                        <td><strong>Resident Applicant</strong> (falling within notified high-value threshold &ge; ₹100 Cr)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Section 380(a)(iv)</strong></td>
+                                        <td>Determination or decision in respect of an issue relating to <strong>computation of total income</strong> which is pending before any Income-tax Authority or Appellate Tribunal (ITAT).</td>
+                                        <td><strong>Resident Applicant</strong> (Transaction value &ge; ₹100 Crores)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Section 380(a)(v)</strong></td>
+                                        <td>Determination whether an arrangement, which is proposed to be undertaken, is an <strong>Impermissible Avoidance Arrangement (IAA)</strong> under Chapter XI (GAAR) or not.</td>
+                                        <td><strong>Any Person</strong> (Resident or Non-Resident)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title">
+                        <i class="fa-solid fa-users"></i> Definition of "Applicant" &bull; Section 380(b)
+                    </div>
+                    <p>An <strong>&ldquo;Applicant&rdquo;</strong> eligible to apply to the Board for Advance Rulings includes:</p>
+                    <ul class="styled-list">
+                        <li><strong>A Non-Resident</strong> entering into transactions in India;</li>
+                        <li><strong>A Resident</strong> entering into transactions with a non-resident;</li>
+                        <li><strong>A Resident</strong> who has undertaken or proposes to undertake high-value transactions where the value of the transaction or aggregate value is <strong>₹100 Crores or more</strong>;</li>
+                        <li><strong>A Resident</strong> who has an issue pending relating to computation of total income before an AO or ITAT where the value is <strong>₹100 Crores or more</strong>;</li>
+                        <li><strong>Any Person (Resident or Non-Resident)</strong> proposing an arrangement under Chapter XI (GAAR); and</li>
+                        <li><strong>A Public Sector Company</strong> (as defined in Section 2(36A) / notified by Central Government).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 2: CONSTITUTION OF BAR [SECTION 381] -->
+            <!-- ========================================== -->
+            <section id="sec-381" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Section 381</span>
+                        <h2 class="section-title">Constitution of Board for Advance Rulings (BAR)</h2>
+                    </div>
+                </div>
+
+                <div class="statutory-box">
+                    <div class="statutory-box-header">
+                        <i class="fa-solid fa-scale-balanced"></i> Statutory Mandate &bull; Section 381 of the Income-tax Act, 2025 [Sec 245-OB of 1961 Act]
+                    </div>
+                    <div class="statutory-box-body">
+                        <p>The Central Government shall constitute one or more <strong>Boards for Advance Rulings (BAR)</strong>, as may be necessary, for giving advance rulings under Chapter XVIII of the Income-tax Act, 2025.</p>
+                        <div class="grid-2" style="margin-top:12px;">
+                            <div class="callout callout-info" style="margin:0;">
+                                <div class="callout-header"><i class="fa-solid fa-landmark"></i> Composition of Each Board</div>
+                                <p>Every Board for Advance Rulings shall consist of <strong>two members</strong>, each being an officer <strong>not below the rank of Chief Commissioner of Income-tax (CCIT)</strong>, as may be nominated by the CBDT.</p>
+                            </div>
+                            <div class="callout callout-success" style="margin:0;">
+                                <div class="callout-header"><i class="fa-solid fa-map-location-dot"></i> Notified Boards (Notification No. 96/2021)</div>
+                                <p>The Central Government has constituted three Boards:<br>
+                                • <strong>BAR – I</strong>: Headquarters in Delhi<br>
+                                • <strong>BAR – II</strong>: Headquarters in Delhi<br>
+                                • <strong>BAR – III</strong>: Headquarters in Mumbai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="callout callout-warning">
+                    <div class="callout-header"><i class="fa-solid fa-code-compare"></i> Paradigm Shift: AAR vs BAR</div>
+                    <p>Under the pre-2021 law, the <em>Authority for Advance Rulings (AAR)</em> was a quasi-judicial body headed by a retired Supreme Court Judge or Chief Justice of a High Court, and its rulings were binding. Due to vacancies and non-availability of judicial members, the <strong>Board for Advance Rulings (BAR)</strong> was introduced. The BAR is manned by senior revenue officials (CCIT rank), and its rulings are <strong>appealable before the High Court</strong> under Section 389.</p>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 3: VACANCIES NOT TO INVALIDATE [SECTION 382] -->
+            <!-- ========================================== -->
+            <section id="sec-382" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Section 382</span>
+                        <h2 class="section-title">Vacancies Not to Invalidate Proceedings</h2>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title"><i class="fa-solid fa-shield-virus"></i> Statutory Immunity for Proceedings [Sec 245P]</div>
+                    <p>Under <strong>Section 382</strong>, no proceeding before the Board for Advance Rulings or ruling pronounced by the Board shall be questioned or shall be invalid merely on the ground of the <strong>existence of any vacancy or defect in the constitution of the Board</strong>.</p>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 4: APPLICATION, FORMS & FEES [SECTION 383] -->
+            <!-- ========================================== -->
+            <section id="sec-383" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Section 383</span>
+                        <h2 class="section-title">Application for Advance Ruling, Forms &amp; Fee Schedule</h2>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title"><i class="fa-solid fa-file-signature"></i> Application Mechanics &amp; Prescribed Forms</div>
+                    <p>An applicant desirous of obtaining an advance ruling must make an application in <strong>quadruplicate</strong> in the prescribed form, verified in the prescribed manner:</p>
+
+                    <div class="table-responsive">
+                        <table class="tax-table">
+                            <thead>
+                                <tr>
+                                    <th>Form No.</th>
+                                    <th>Applicant Category &amp; Nature of Application</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Form No. 34C</strong></td>
+                                    <td>Application by a <strong>Non-Resident applicant</strong> in respect of transactions undertaken or proposed to be undertaken by him.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Form No. 34D</strong></td>
+                                    <td>Application by a <strong>Resident applicant</strong> in relation to a transaction with a non-resident.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Form No. 34DA</strong></td>
+                                    <td>Application by a <strong>Resident applicant</strong> having transactions of ₹100 Crores or more, or computation pending before AO/ITAT.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Form No. 34E</strong></td>
+                                    <td>Application by a notified <strong>Public Sector Company</strong>.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Form No. 34EA</strong></td>
+                                    <td>Application by a <strong>Resident or Non-Resident</strong> for determination whether an arrangement is an <strong>Impermissible Avoidance Arrangement (GAAR)</strong>.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Fee Schedule -->
+                <div class="theory-card">
+                    <div class="theory-title"><i class="fa-solid fa-money-bill-wave"></i> Sliding Scale Fee Structure</div>
+                    <div class="table-responsive">
+                        <table class="tax-table">
+                            <thead>
+                                <tr>
+                                    <th>Category / Value of Transaction</th>
+                                    <th>Prescribed Application Fee</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Value of transaction <strong>up to ₹100 Crores</strong></td>
+                                    <td><span class="badge-tag tag-info" style="font-size:0.95rem;">₹2,00,000</span> (₹2 Lakhs)</td>
+                                </tr>
+                                <tr>
+                                    <td>Value of transaction <strong>exceeding ₹100 Crores but up to ₹300 Crores</strong></td>
+                                    <td><span class="badge-tag tag-warning" style="font-size:0.95rem;">₹5,00,000</span> (₹5 Lakhs)</td>
+                                </tr>
+                                <tr>
+                                    <td>Value of transaction <strong>exceeding ₹300 Crores</strong></td>
+                                    <td><span class="badge-tag tag-danger" style="font-size:0.95rem;">₹10,00,000</span> (₹10 Lakhs)</td>
+                                </tr>
+                                <tr>
+                                    <td>Notified <strong>Public Sector Companies</strong> (irrespective of value)</td>
+                                    <td><span class="badge-tag tag-success" style="font-size:0.95rem;">₹10,000</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Withdrawal Section 383(3) -->
+                <div class="theory-card">
+                    <div class="theory-title">
+                        <span class="section-badge" style="font-size:0.75rem; vertical-align:middle; margin-right:8px;">Section 383(3)</span>
+                        Withdrawal of Application &amp; Discretion of the Board
+                    </div>
+                    <div class="formula-box">
+                        <div class="formula-title"><i class="fa-solid fa-clock"></i> Statutory Time Limit for Withdrawal</div>
+                        <div class="formula-content">
+                            $$\mathbf{Statutory\ Window\ for\ Withdrawal} = \mathbf{Within\ 30\ Days}\ \text{from the date of application}$$
+                        </div>
+                    </div>
+                    <p>Under <strong>Section 383(3)</strong>, an applicant may withdraw an application within <strong>30 days</strong> from the date of the application.</p>
+                    <div class="callout callout-info">
+                        <div class="callout-header"><i class="fa-solid fa-gavel"></i> Discretionary Power Beyond 30 Days</div>
+                        <p>The Supreme Court and High Courts have held that the 30-day period is a matter of statutory right. However, <strong>the Board for Advance Rulings has the inherent discretion to permit withdrawal even after 30 days</strong>, provided the applicant demonstrates bona fide and sufficient reasons, and the request is made before the ruling is pronounced.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ========================================== -->
+            <!-- SECTION 5: PROCEDURE & REJECTION GROUNDS [SECTION 384] -->
+            <!-- ========================================== -->
+            <section id="sec-384" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Section 384</span>
+                        <h2 class="section-title">Procedure on Receipt of Application &amp; Rejection Grounds</h2>
+                    </div>
+                </div>
+
+                <div class="statutory-box">
+                    <div class="statutory-box-header">
+                        <i class="fa-solid fa-scale-balanced"></i> Statutory Mandate &bull; Section 384 of the Income-tax Act, 2025 [Sec 245R of 1961 Act]
+                    </div>
+                    <div class="statutory-box-body">
+                        <p>Upon receipt of an application under Section 383, the Board for Advance Rulings shall forward a copy to the Principal Commissioner or Commissioner and, if considered necessary, call upon him to furnish relevant records. After examining the application and records, the Board may either <strong>ALLOW</strong> or <strong>REJECT</strong> the application.</p>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title">
+                        <i class="fa-solid fa-ban"></i> The Three Statutory Grounds of Rejection [Section 384(2)]
+                    </div>
+                    <p>The Board for Advance Rulings <strong>SHALL NOT ALLOW</strong> the application where the question raised in the application:</p>
+
+                    <div class="table-responsive">
+                        <table class="tax-table">
+                            <thead>
+                                <tr>
+                                    <th>Ground No.</th>
+                                    <th>Statutory Ground of Rejection</th>
+                                    <th>Statutory Exceptions (Where NOT Rejected)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Ground [A]</strong></td>
+                                    <td>The question is <strong>ALREADY PENDING</strong> before any Income-tax Authority, Appellate Tribunal (ITAT), or any Court.</td>
+                                    <td>
+                                        <strong>Will NOT be rejected if:</strong><br>
+                                        1. The applicant is a notified <strong>Public Sector Company</strong>;<br>
+                                        2. The applicant is a resident with pending computation of total income &ge; ₹100 Crores u/s 380(a)(iv); or<br>
+                                        3. The question relates to a proposed GAAR arrangement u/s 380(a)(v).
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Ground [B]</strong></td>
+                                    <td>The question involves the <strong>DETERMINATION OF FAIR MARKET VALUE</strong> of any property.</td>
+                                    <td>No exception. Valuation disputes are excluded from advance rulings.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Ground [C]</strong></td>
+                                    <td>The question relates to a transaction which is <strong>DESIGNED PRIMA FACIE FOR AVOIDANCE OF INCOME-TAX</strong>.</td>
+                                    <td>
+                                        <strong>Will NOT be rejected if:</strong><br>
+                                        1. The applicant is a notified <strong>Public Sector Company</strong>; or<br>
+                                        2. The application is made specifically to determine whether an arrangement is an Impermissible Avoidance Arrangement (GAAR) under Section 380(a)(v).
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="grid-2" style="margin-top:1rem;">
+                        <div class="callout callout-warning" style="margin:0;">
+                            <div class="callout-header"><i class="fa-solid fa-ear-listen"></i> Mandatory Opportunity of Being Heard</div>
+                            <p>No application shall be rejected under Section 384(2) unless an opportunity of being heard has been given to the applicant. The rejection order must be passed in writing stating the specific reasons for rejection.</p>
+                        </div>
+                        <div class="callout callout-success" style="margin:0;">
+                            <div class="callout-header"><i class="fa-solid fa-stopwatch"></i> 6 Months Pronouncement Window</div>
+                            <p>Under <strong>Section 384(6)</strong>, where an application is allowed, the Board for Advance Rulings shall pronounce its advance ruling in writing <strong>within 6 months</strong> from the date of receipt of the application.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 6: BAR ON APPELLATE PROCEEDINGS [SECTION 385] -->
+            <!-- ========================================== -->
+            <section id="sec-385" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Section 385</span>
+                        <h2 class="section-title">Bar on Appellate Authority Proceedings</h2>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title"><i class="fa-solid fa-hand"></i> Stay of Parallel Proceedings [Sec 245RR]</div>
+                    <p>Under <strong>Section 385</strong>, no Income-tax Authority or Appellate Tribunal (ITAT) shall proceed to decide any issue with respect to which an application has been made to the Board for Advance Rulings by an eligible applicant.</p>
+                    <div class="callout callout-info">
+                        <p>This statutory bar ensures exclusivity of jurisdiction and prevents conflicting parallel adjudications on the same transaction.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 7: RULING VOID FOR FRAUD [SECTION 386] -->
+            <!-- ========================================== -->
+            <section id="sec-386" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Section 386</span>
+                        <h2 class="section-title">Advance Ruling Void Ab Initio for Fraud or Misrepresentation</h2>
+                    </div>
+                </div>
+
+                <div class="statutory-box">
+                    <div class="statutory-box-header">
+                        <i class="fa-solid fa-scale-balanced"></i> Statutory Mandate &bull; Section 386 of the Income-tax Act, 2025 [Sec 245T of 1961 Act]
+                    </div>
+                    <div class="statutory-box-body">
+                        <p>Where the Board for Advance Rulings finds, on a representation made to it by the Principal Commissioner/Commissioner or otherwise, that an advance ruling has been obtained by the applicant by <strong>fraud or misrepresentation of facts</strong>, the Board may, by order, declare such ruling to be <strong>VOID AB INITIO</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title"><i class="fa-solid fa-burst"></i> Legal Repercussions of Void Order</div>
+                    <ul class="styled-list">
+                        <li><strong>Complete Nullity:</strong> All the provisions of the Income-tax Act, 2025 shall apply to the applicant as if such advance ruling had never been made!</li>
+                        <li><strong>Exclusion of Period for Limitation:</strong> The entire period beginning with the date of the advance ruling and ending with the date of the order declaring it void shall be <strong>EXCLUDED</strong> in computing any period of limitation for assessment, reassessment, penalty, or recovery.</li>
+                        <li><strong>Copy of Order:</strong> A copy of the void order must be sent to the applicant and the jurisdictional Principal Commissioner or Commissioner.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 8: POWERS OF THE BOARD [SECTION 387] -->
+            <!-- ========================================== -->
+            <section id="sec-387" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Section 387</span>
+                        <h2 class="section-title">Powers of Civil Court under Code of Civil Procedure, 1908</h2>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title">
+                        <i class="fa-solid fa-scale-balanced"></i> Civil Court Powers Vested in the Board [Sec 245U]
+                    </div>
+                    <p>Under <strong>Section 387</strong>, the Board for Advance Rulings shall have all the powers of a <strong>Civil Court under the Code of Civil Procedure, 1908 (CPC)</strong> when trying a suit in respect of the following matters:</p>
+
+                    <div class="grid-2">
+                        <div class="callout callout-info" style="margin:0;">
+                            <div class="callout-header"><i class="fa-solid fa-eye"></i> 1. Discovery &amp; Inspection</div>
+                            <p>Power to order discovery, production, and inspection of documents from any party or government authority.</p>
+                        </div>
+                        <div class="callout callout-info" style="margin:0;">
+                            <div class="callout-header"><i class="fa-solid fa-user-tie"></i> 2. Enforcing Attendance on Oath</div>
+                            <p>Enforcing the attendance of any person, including any officer of a banking company, and examining him on oath.</p>
+                        </div>
+                        <div class="callout callout-info" style="margin:0;">
+                            <div class="callout-header"><i class="fa-solid fa-book-open"></i> 3. Compelling Production of Books</div>
+                            <p>Compelling the production of books of accounts and other documents as provided under Section 246 of the Act.</p>
+                        </div>
+                        <div class="callout callout-info" style="margin:0;">
+                            <div class="callout-header"><i class="fa-solid fa-file-signature"></i> 4. Issuing Commissions</div>
+                            <p>Power to issue commissions for the examination of witnesses or documents.</p>
+                        </div>
+                    </div>
+
+                    <div class="callout callout-warning" style="margin-top:1.25rem;">
+                        <div class="callout-header"><i class="fa-solid fa-book-skull"></i> Criminal Procedure &amp; Penal Code Alignments (BNSS &amp; BNS, 2023)</div>
+                        <ul class="styled-list" style="margin-bottom:0;">
+                            <li>The Board shall be deemed to be a Civil Court for the purposes of <strong>Section 215 of the Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS, 2023)</strong> [Section 195 CrPC].</li>
+                            <li>Every proceeding before the Board shall be deemed to be a <strong>judicial proceeding</strong> within the meaning of <strong>Sections 229, 267 and 233 of the Bharatiya Nyaya Sanhita, 2023 (BNS, 2023)</strong> [Sections 193, 228 IPC].</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 9: PROCEDURE & RECTIFICATION [SECTION 388] -->
+            <!-- ========================================== -->
+            <section id="sec-388" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Section 388</span>
+                        <h2 class="section-title">Procedure of the Board &amp; Rectification of Mistakes</h2>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title"><i class="fa-solid fa-wrench"></i> Inherent Procedural Powers &amp; Rectification [Rule 15 of e-Advance Rulings Scheme, 2022]</div>
+                    <p>Under <strong>Section 388</strong>, the Board for Advance Rulings has the power to regulate its own procedure in all matters arising out of the exercise of its powers under the Act.</p>
+
+                    <div class="statutory-box" style="margin-top:1rem;">
+                        <div class="statutory-box-header">
+                            <i class="fa-solid fa-pen-to-square"></i> Rectification of Mistake Apparent from the Record
+                        </div>
+                        <div class="statutory-box-body">
+                            <p>As per <strong>Rule 15 of the e-Advance Rulings Scheme, 2022</strong>:</p>
+                            <ul class="styled-list">
+                                <li>The Board for Advance Rulings may, with a view to rectifying any <strong>mistake apparent from the record</strong>, amend any order passed by it.</li>
+                                <li><strong>Timing of Rectification:</strong> The amendment must be made <strong>before the ruling pronounced by the Board has been given effect to by the Assessing Officer</strong>.</li>
+                                <li><strong>Mode of Initiation:</strong> Rectification may be made <em>suo motu</em> by the Board or when the mistake is brought to its notice by the applicant or the Principal Commissioner / Commissioner.</li>
+                                <li><strong>Audi Alteram Partem:</strong> An amendment which has the effect of enhancing the tax liability or reducing the refund shall not be made without granting a reasonable opportunity of being heard.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 10: APPEAL TO HIGH COURT [SECTION 389] -->
+            <!-- ========================================== -->
+            <section id="sec-389" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Section 389</span>
+                        <h2 class="section-title">Appeal against Ruling of BAR to the High Court</h2>
+                    </div>
+                </div>
+
+                <div class="statutory-box">
+                    <div class="statutory-box-header">
+                        <i class="fa-solid fa-scale-balanced"></i> Statutory Appellate Gateway &bull; Section 389 of the Income-tax Act, 2025 [Sec 245W of 1961 Act]
+                    </div>
+                    <div class="statutory-box-body">
+                        <p>Under Section 389, an appeal against any ruling pronounced or order passed by the Board for Advance Rulings lies directly before the <strong>High Court</strong>:</p>
+                        <div class="formula-box" style="margin:12px 0;">
+                            <div class="formula-title"><i class="fa-solid fa-calendar-days"></i> Statutory Time Limits for Filing Appeal u/s 389</div>
+                            <div class="formula-content" style="font-size:1rem; text-align:left;">
+                                $$\mathbf{Normal\ Limitation\ Period} = \mathbf{Within\ 60\ Days}\ \text{from date of communication of ruling or order}$$
+                                <div style="text-align:center; font-weight:700; margin:6px 0; color:var(--accent);">+</div>
+                                $$\mathbf{Condonation\ Window\ (Sufficient\ Cause)} = \mathbf{Further\ period\ up\ to\ 30\ Days}\ \text{(Total 90 Days)}$$
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title"><i class="fa-solid fa-file-lines"></i> Who Can Appeal &amp; Applicable Procedure</div>
+                    <div class="grid-2">
+                        <div class="callout callout-info" style="margin:0;">
+                            <div class="callout-header"><i class="fa-solid fa-user"></i> 1. The Applicant</div>
+                            <p>The applicant who is aggrieved by any ruling or order passed by the Board for Advance Rulings may file an appeal before the High Court.</p>
+                        </div>
+                        <div class="callout callout-warning" style="margin:0;">
+                            <div class="callout-header"><i class="fa-solid fa-user-shield"></i> 2. The Income-tax Department</div>
+                            <p>The <strong>Assessing Officer</strong>, on the directions of the Principal Commissioner or Commissioner, may also appeal to the High Court against such ruling or order.</p>
+                        </div>
+                    </div>
+                    <div class="callout callout-success" style="margin-top:1rem;">
+                        <div class="callout-header"><i class="fa-solid fa-scale-balanced"></i> Rule 202 Procedure</div>
+                        <p>Under <strong>Rule 202</strong> of the Income-tax Rules, 2026, the form and manner of filing an appeal to the High Court under Section 389 shall be the same as provided in the applicable rules laid down by the jurisdictional High Court.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ========================================== -->
+            <!-- SECTION 11: TEST YOUR KNOWLEDGE (TYK 1 TO 6) -->
+            <!-- ========================================== -->
+            <section id="sec-tyk" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Practical Application</span>
+                        <h2 class="section-title">ICAI Test Your Knowledge (TYK Questions 1 to 6)</h2>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title"><i class="fa-solid fa-graduation-cap"></i> Examination Focus &amp; Practical Problem Solving</div>
+                    <p>The following 6 problems from the ICAI CA Final Study Material test precise understanding of procedural timelines, withdrawal discretion, civil court powers under CPC, expanded scope of advance rulings, High Court appeals, and rectification mechanisms under the e-Advance Rulings Scheme, 2022.</p>
+                </div>
+
+                <!-- TYK QUESTION 1 -->
+                <div id="tyk-1" class="example-box">
+                    <div class="example-title">
+                        <i class="fa-solid fa-circle-question"></i> TYK QUESTION 1 &bull; Q Non-Resident &bull; Withdrawal of Application Beyond 30 Days
+                    </div>
+                    <p><strong>Facts:</strong> Q, a non-resident, made an application to the Board for Advance Rulings on <strong>3rd April, 2026</strong>. He seeks to withdraw the application on <strong>12th May, 2026</strong>. Can he do so? Examine with reference to statutory provisions whether:</p>
+                    <ol class="styled-list">
+                        <li>He can withdraw the application as a matter of statutory right; and</li>
+                        <li>The Board for Advance Rulings has the power to permit withdrawal on 12th May, 2026.</li>
+                    </ol>
+
+                    <button class="btn-solution" onclick="toggleSolution('sol-tyk-1')">View Solution &amp; Statutory Analysis</button>
+                    <div id="sol-tyk-1" class="solution-card">
+                        <p><strong>Statutory Analysis under Section 383(3):</strong></p>
+                        <ol class="styled-list">
+                            <li><strong>Statutory Right within 30 Days:</strong> Section 383(3) of the Income-tax Act, 2025 provides that an applicant who has sought an advance ruling may withdraw the application <strong>within 30 days from the date of the application</strong>.</li>
+                            <li><strong>Evaluation of Time Window:</strong> Q made the application on 03.04.2026. The 30-day period expired on <strong>3rd May, 2026</strong>. Therefore, on 12th May, 2026 (after 39 days), Q <strong>cannot withdraw the application as a matter of right</strong>.</li>
+                            <li><strong>Discretionary Power of the Board:</strong> However, judicial precedents have settled that the 30-day limitation does not fetter the inherent powers of the Board for Advance Rulings. The Board has the <strong>discretion to permit withdrawal even after the expiry of 30 days</strong>, provided:
+                                <ul>
+                                    <li>The applicant shows good, valid, and sufficient reasons for such withdrawal; and</li>
+                                    <li>The application for withdrawal is made before the advance ruling is pronounced.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        <p><strong>Conclusion:</strong> Q cannot withdraw as of right, but the Board for Advance Rulings may permit the withdrawal in its discretion upon sufficient cause shown.</p>
+                    </div>
+                </div>
+
+                <!-- TYK QUESTION 2 -->
+                <div id="tyk-2" class="example-box">
+                    <div class="example-title">
+                        <i class="fa-solid fa-circle-question"></i> TYK QUESTION 2 &bull; Advance Ruling Declared Void Ab Initio
+                    </div>
+                    <p><strong>Problem:</strong> Examine when can an advance ruling pronounced by the Board for Advance Rulings be declared void, and discuss the legal consequences that follow such an order.</p>
+
+                    <button class="btn-solution" onclick="toggleSolution('sol-tyk-2')">View Solution &amp; Statutory Analysis</button>
+                    <div id="sol-tyk-2" class="solution-card">
+                        <p><strong>1. Circumstances for Declaring Ruling Void under Section 386:</strong></p>
+                        <p>Under <strong>Section 386</strong> of the Income-tax Act, 2025 [Section 245T of 1961 Act], where the Board for Advance Rulings finds, on a representation made to it by the Principal Commissioner / Commissioner of Income-tax or otherwise, that an advance ruling pronounced under Section 384(6) has been obtained by the applicant by <strong>fraud or misrepresentation of facts</strong>, the Board may, by order, declare such ruling to be <strong>VOID AB INITIO</strong>.</p>
+                        
+                        <p style="margin-top:1rem;"><strong>2. Statutory Repercussions:</strong></p>
+                        <ul class="styled-list">
+                            <li>All the provisions of the Income-tax Act, 2025 shall apply to the applicant <strong>as if such advance ruling had never been made</strong>.</li>
+                            <li><strong>Limitation Exclusion:</strong> The entire period beginning with the date of such advance ruling and ending with the date of the order declaring it void shall be <strong>excluded</strong> in computing any period of limitation for making an assessment, reassessment, penalty order, or recovery.</li>
+                            <li>A certified copy of the order declaring the ruling void must be sent to the applicant and the jurisdictional Principal Commissioner or Commissioner.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- TYK QUESTION 3 -->
+                <div id="tyk-3" class="example-box">
+                    <div class="example-title">
+                        <i class="fa-solid fa-circle-question"></i> TYK QUESTION 3 &bull; Power of BAR to Compel Production of Books of Account
+                    </div>
+                    <p><strong>Problem:</strong> <em>&ldquo;The Board for Advance Rulings has the powers of compelling the production of books of account and other documents.&rdquo;</em> Examine the correctness of this statement.</p>
+
+                    <button class="btn-solution" onclick="toggleSolution('sol-tyk-3')">View Solution &amp; CPC Powers</button>
+                    <div id="sol-tyk-3" class="solution-card">
+                        <p>The statement is <strong>CORRECT</strong>.</p>
+                        <p><strong>Statutory Powers under Section 387:</strong></p>
+                        <p>Under <strong>Section 387</strong> of the Income-tax Act, 2025 [Section 245U of 1961 Act], the Board for Advance Rulings is vested with all the powers of a <strong>Civil Court under the Code of Civil Procedure, 1908 (CPC)</strong> when trying a suit in respect of:</p>
+                        <ol class="styled-list">
+                            <li><strong>Discovery and inspection</strong>;</li>
+                            <li><strong>Enforcing the attendance of any person</strong>, including any officer of a banking company, and examining him on oath;</li>
+                            <li><strong>Compelling the production of books of account and other documents</strong> as provided under Section 246 of the Act; and</li>
+                            <li><strong>Issuing commissions</strong> for the examination of witnesses.</li>
+                        </ol>
+                        <p>Therefore, the Board for Advance Rulings has full statutory authority to compel the production of books of account and relevant records from any person or institution.</p>
+                    </div>
+                </div>
+
+                <!-- TYK QUESTION 4 -->
+                <div id="tyk-4" class="example-box">
+                    <div class="example-title">
+                        <i class="fa-solid fa-circle-question"></i> TYK QUESTION 4 &bull; Scope of "Advance Ruling" under Section 380
+                    </div>
+                    <p><strong>Problem:</strong> <em>&ldquo;The term &lsquo;Advance Ruling&rsquo; includes within its scope, a determination by the Board for Advance Rulings only in relation to a transaction which has been undertaken or is proposed to be undertaken by a non-resident.&rdquo;</em> Discuss the correctness of the statement.</p>
+
+                    <button class="btn-solution" onclick="toggleSolution('sol-tyk-4')">View Solution &amp; Complete Scope</button>
+                    <div id="sol-tyk-4" class="solution-card">
+                        <p>The statement is <strong>NOT CORRECT</strong>. The definition of &ldquo;Advance Ruling&rdquo; under Section 380(a) is comprehensive and extends far beyond non-resident transactions.</p>
+                        <p><strong>Exhaustive Five-Pronged Scope under Section 380(a):</strong></p>
+                        <div class="table-responsive">
+                            <table class="tax-table">
+                                <thead><tr><th>Category</th><th>Scope of Determination</th></tr></thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>1. Non-Resident Transaction</strong></td>
+                                        <td>Determination in relation to a transaction undertaken or proposed to be undertaken by a <strong>non-resident applicant</strong> [Section 380(a)(i)].</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>2. Resident with Non-Resident</strong></td>
+                                        <td>Determination in relation to the <strong>tax liability of a non-resident</strong> arising out of a transaction with a resident applicant [Section 380(a)(ii)].</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>3. Resident High-Value Transaction</strong></td>
+                                        <td>Determination in relation to the <strong>tax liability of a resident applicant</strong> arising out of an undertaken or proposed transaction (&ge; ₹100 Crores), including any question of law or fact [Section 380(a)(iii)].</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>4. Pending Computation of Income</strong></td>
+                                        <td>Determination or decision in respect of an issue relating to <strong>computation of total income pending before an AO or ITAT</strong> (resident applicant category &ge; ₹100 Crores) [Section 380(a)(iv)].</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>5. GAAR Determination</strong></td>
+                                        <td>Determination whether an arrangement proposed to be undertaken by <strong>any person (resident or non-resident)</strong> is an <strong>Impermissible Avoidance Arrangement (IAA)</strong> under Chapter XI [Section 380(a)(v)].</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYK QUESTION 5 -->
+                <div id="tyk-5" class="example-box">
+                    <div class="example-title">
+                        <i class="fa-solid fa-circle-question"></i> TYK QUESTION 5 &bull; Remedy Available to Aggrieved Applicant &bull; High Court Appeal
+                    </div>
+                    <p><strong>Problem:</strong> What is the remedy available to an applicant who is aggrieved by the ruling of the Board for Advance Rulings? Explain the appellate mechanism and time limits.</p>
+
+                    <button class="btn-solution" onclick="toggleSolution('sol-tyk-5')">View Solution &amp; Appellate Provisions</button>
+                    <div id="sol-tyk-5" class="solution-card">
+                        <p><strong>Appellate Remedy under Section 389:</strong></p>
+                        <ol class="styled-list">
+                            <li><strong>Appeal to the High Court:</strong> An applicant aggrieved by any ruling pronounced or order passed by the Board for Advance Rulings (or the Assessing Officer on the directions of the Principal Commissioner / Commissioner) may file an <strong>appeal directly before the High Court</strong>.</li>
+                            <li><strong>Limitation Period:</strong> The appeal must be presented <strong>within 60 days</strong> from the date of the communication of that ruling or order [Section 389(1)].</li>
+                            <li><strong>Condonation of Delay:</strong> Under Section 389(2), where the High Court is satisfied, on an application made by the appellant, that the appellant was prevented by <strong>sufficient cause</strong> from presenting the appeal within 60 days, it may grant a <strong>further period of 30 days</strong> for filing such appeal (total permissible time = 90 days).</li>
+                            <li><strong>Procedure under Rule 202:</strong> The appeal shall be filed in the form and manner laid down by the jurisdictional High Court.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- TYK QUESTION 6 -->
+                <div id="tyk-6" class="example-box">
+                    <div class="example-title">
+                        <i class="fa-solid fa-circle-question"></i> TYK QUESTION 6 &bull; Power of BAR to Rectify Its Own Rulings
+                    </div>
+                    <p><strong>Problem:</strong> Whether the Board for Advance Rulings has the power to rectify its own ruling? Explain the statutory conditions and procedural requirements.</p>
+
+                    <button class="btn-solution" onclick="toggleSolution('sol-tyk-6')">View Solution &amp; Rectification Rules</button>
+                    <div id="sol-tyk-6" class="solution-card">
+                        <p><strong>Rectification under Rule 15 of e-Advance Rulings Scheme, 2022:</strong></p>
+                        <p><strong>YES</strong>, the Board for Advance Rulings has the statutory power to rectify its own rulings subject to the following rules:</p>
+                        <ul class="styled-list">
+                            <li><strong>Ground of Rectification:</strong> The Board may amend any order passed by it with a view to rectifying any <strong>mistake apparent from the record</strong>.</li>
+                            <li><strong>Outer Time Limit:</strong> Such amendment can be made <strong>before the ruling pronounced by the Board has been given effect to by the Assessing Officer</strong>. (Once given effect to in assessment, rectification is barred).</li>
+                            <li><strong>Initiation:</strong> The amendment may be made <strong>suo motu</strong> by the Board or when the mistake is brought to its notice by the applicant or the Principal Commissioner / Commissioner.</li>
+                            <li><strong>Opportunity of Being Heard:</strong> An amendment which has the effect of enhancing the tax liability or reducing the refund shall be made only after allowing the applicant and the Principal Commissioner / Commissioner a reasonable opportunity of being heard.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ========================================== -->
+            <!-- CHAPTER BOTTOM NAVIGATION -->
+            <!-- ========================================== -->
+            <div class="bottom-nav">
+                <a href="double_taxation_relief.html" class="nav-btn prev-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <div>
+                        <div class="nav-label">Previous Chapter</div>
+                        <div class="nav-title">Chapter 22: Double Taxation Relief (DTAA)</div>
+                    </div>
+                </a>
+                <a href="../../notes/dtnotes.html" class="nav-btn index-btn">
+                    <i class="fa-solid fa-list"></i>
+                    <div>
+                        <div class="nav-label">Master Index</div>
+                        <div class="nav-title">All DT Chapters</div>
+                    </div>
+                </a>
+                <a href="transfer_pricing.html" class="nav-btn next-btn">
+                    <div>
+                        <div class="nav-label">Next Chapter</div>
+                        <div class="nav-title">Chapter 24: Transfer Pricing &amp; Base Erosion</div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Back to Top Floating Button -->
+    <button id="back-to-top" title="Go to top" style="display:none; position:fixed; bottom:30px; right:30px; width:45px; height:45px; border-radius:50%; background:var(--primary); color:#fff; border:none; cursor:pointer; box-shadow:0 4px 10px rgba(0,0,0,0.2); z-index:999; align-items:center; justify-content:center; font-size:1.1rem;">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        // Reading Progress Bar
+        window.addEventListener('scroll', function() {
+            const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            const progressBar = document.getElementById('reading-progress');
+            if (progressBar) {
+                progressBar.style.width = scrolled + '%';
+            }
+
+            // Back to top visibility
+            const backToTop = document.getElementById('back-to-top');
+            if (backToTop) {
+                if (winScroll > 300) {
+                    backToTop.style.display = 'flex';
+                } else {
+                    backToTop.style.display = 'none';
+                }
+            }
+        });
+
+        // Back to top click
+        document.getElementById('back-to-top')?.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Solution Toggle Function
+        function toggleSolution(id) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            const btn = el.previousElementSibling;
+            if (el.style.display === 'block') {
+                el.style.display = 'none';
+                if (btn && btn.classList.contains('btn-solution')) {
+                    btn.innerHTML = btn.innerHTML.replace('Hide', 'View');
+                }
+            } else {
+                el.style.display = 'block';
+                if (btn && btn.classList.contains('btn-solution')) {
+                    btn.innerHTML = btn.innerHTML.replace('View', 'Hide');
+                }
+            }
+        }
+
+        // Live Sidebar Search Filter
+        const searchInput = document.getElementById('sidebar-search-input');
+        if (searchInput) {
+            searchInput.addEventListener('input', function() {
+                const term = this.value.toLowerCase().trim();
+                const items = document.querySelectorAll('.sidebar-nav .sidebar-item');
+                items.forEach(item => {
+                    const text = item.textContent.toLowerCase();
+                    if (text.includes(term)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        }
+
+        // Scrollspy for active link
+        window.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        document.querySelectorAll('.sidebar-link').forEach(link => {
+                            if (link.getAttribute('href') === '#' + id) {
+                                link.classList.add('active');
+                            } else {
+                                link.classList.remove('active');
+                            }
+                        });
+                    }
+                });
+            }, { rootMargin: '-20% 0px -70% 0px' });
+
+            document.querySelectorAll('section[id], div[id^="sec-"]').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
+

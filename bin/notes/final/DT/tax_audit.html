@@ -1,0 +1,2816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 20: Tax Audit &amp; Ethical Compliances | CA Final DT Notes | Calcium Notes</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Comprehensive CA Final Direct Tax notes on Chapter 20: Tax Audit under Section 63, Form No. 26 clause-by-clause reporting, MSME payments, mandatory administrative fees u/s 428(c), and ethical compliances under the Chartered Accountants Act, 1949.">
+    <meta name="keywords" content="Tax Audit, Section 63, Form 26, Form 3CD, Section 44AB, Clause 33 MSME, CA Ethics, Second Schedule CA Act, Section 428(c), AY 2025-26, AY 2026-27">
+    <meta name="author" content="Calcium Notes">
+    <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/DT/tax_audit.html">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- MathJax for KaTeX math formatting -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
+            --primary-dark: #0f172a;
+            --accent: #d97706;
+            --accent-light: #fef3c7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --info: #0284c7;
+            --info-light: #e0f2fe;
+            --warning: #ca8a04;
+            --warning-light: #fef9c3;
+            --slate-50: #f8fafc;
+            --slate-100: #f1f5f9;
+            --slate-200: #e2e8f0;
+            --slate-300: #cbd5e1;
+            --slate-400: #94a3b8;
+            --slate-500: #64748b;
+            --slate-600: #475569;
+            --slate-700: #334155;
+            --slate-800: #1e293b;
+            --slate-900: #0f172a;
+            --border-color: #e2e8f0;
+            --card-bg: #ffffff;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --font-heading: 'Outfit', var(--font-sans);
+            --font-mono: 'Fira Code', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--slate-50);
+            color: var(--slate-800);
+            line-height: 1.65;
+            font-size: 15px;
+            overflow-x: hidden;
+        }
+
+        /* Reading Progress Bar */
+        #reading-progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            z-index: 1000;
+        }
+
+        #reading-progress {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #3b82f6, #d97706, #16a34a);
+            transition: width 0.1s ease-out;
+        }
+
+        /* Layout Structure */
+        .page-wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 320px;
+            background-color: #ffffff;
+            border-right: 1px solid var(--slate-200);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            z-index: 100;
+            box-shadow: 2px 0 8px rgba(0,0,0,0.02);
+        }
+
+        .sidebar-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--slate-200);
+            background: #ffffff;
+        }
+
+        .sidebar-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+
+        .sidebar-logo {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .sidebar-title-box h3 {
+            font-family: var(--font-heading);
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin: 0;
+        }
+
+        .sidebar-title-box p {
+            font-size: 12px;
+            color: var(--slate-500);
+            margin: 0;
+        }
+
+        .sidebar-search {
+            position: relative;
+        }
+
+        .sidebar-search input {
+            width: 100%;
+            padding: 8px 12px 8px 34px;
+            border-radius: 6px;
+            border: 1px solid var(--slate-300);
+            font-size: 13px;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .sidebar-search input:focus {
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+        }
+
+        .sidebar-search i {
+            position: absolute;
+            left: 11px;
+            top: 10px;
+            color: var(--slate-400);
+            font-size: 13px;
+        }
+
+        .sidebar-nav {
+            padding: 15px 12px;
+            list-style: none;
+            flex-grow: 1;
+        }
+
+        .sidebar-section-title {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--slate-400);
+            padding: 10px 10px 4px 10px;
+        }
+
+        .sidebar-item {
+            margin-bottom: 2px;
+        }
+
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 12px;
+            border-radius: 6px;
+            color: var(--slate-700);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.15s ease;
+        }
+
+        .sidebar-link:hover {
+            background-color: var(--slate-100);
+            color: var(--primary);
+        }
+
+        .sidebar-link.active {
+            background-color: #eff6ff;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .sidebar-badge {
+            font-size: 10px;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: var(--slate-200);
+            color: var(--slate-700);
+        }
+
+        .sidebar-link.active .sidebar-badge {
+            background: #bfdbfe;
+            color: #1e40af;
+        }
+
+        .sidebar-footer {
+            padding: 16px;
+            border-top: 1px solid var(--slate-200);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
+            color: var(--slate-500);
+        }
+
+        .sidebar-footer a {
+            color: var(--primary-light);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Main Content Container */
+        .main-content {
+            flex-grow: 1;
+            padding: 40px 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Chapter Header Banner */
+        .chapter-header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #1d4ed8 100%);
+            border-radius: 16px;
+            padding: 40px;
+            color: #ffffff;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chapter-header::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(217, 119, 6, 0.2) 0%, transparent 70%);
+        }
+
+        .chapter-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            background: rgba(255, 255, 255, 0.12);
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+            color: #93c5fd;
+            backdrop-filter: blur(4px);
+        }
+
+        .chapter-title {
+            font-family: var(--font-heading);
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+
+        .chapter-desc {
+            font-size: 15px;
+            color: #cbd5e1;
+            max-width: 850px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .chapter-meta-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            font-size: 13px;
+        }
+
+        .meta-pill {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #e2e8f0;
+        }
+
+        .meta-pill i {
+            color: #fbbf24;
+        }
+
+        /* Typography & Content Sections */
+        .content-section {
+            margin-bottom: 50px;
+            scroll-margin-top: 30px;
+        }
+
+        .section-header {
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--slate-200);
+        }
+
+        .section-tag {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--primary-light);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .section-header h2 {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--slate-900);
+        }
+
+        .lead-text {
+            font-size: 16px;
+            color: var(--slate-600);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        /* Cards & Containers */
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            margin-bottom: 24px;
+            overflow: hidden;
+        }
+
+        .card-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border-color);
+            background: var(--slate-50);
+            font-family: var(--font-heading);
+            font-weight: 600;
+        }
+
+        .card-body {
+            padding: 24px;
+        }
+
+        .border-primary { border-color: #bfdbfe !important; }
+        .border-warning { border-color: #fde68a !important; }
+        .border-danger { border-color: #fecaca !important; }
+        .border-success { border-color: #bbf7d0 !important; }
+        .border-info { border-color: #bae6fd !important; }
+
+        .bg-primary { background-color: var(--primary) !important; color: white !important; }
+        .bg-dark { background-color: var(--slate-900) !important; color: white !important; }
+        .bg-info { background-color: var(--info) !important; color: white !important; }
+        .bg-warning { background-color: #fef3c7 !important; color: #92400e !important; }
+        .bg-danger { background-color: var(--danger) !important; color: white !important; }
+        .bg-success { background-color: var(--success) !important; color: white !important; }
+        .bg-light { background-color: var(--slate-50) !important; }
+
+        /* Callout Boxes */
+        .callout {
+            padding: 18px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid var(--primary-light);
+            background: #eff6ff;
+            font-size: 14.5px;
+        }
+
+        .callout-info {
+            background-color: #f0f9ff;
+            border-left-color: #0284c7;
+            color: #0369a1;
+        }
+
+        .callout-warning {
+            background-color: #fefce8;
+            border-left-color: #ca8a04;
+            color: #854d0e;
+        }
+
+        .callout-danger {
+            background-color: #fef2f2;
+            border-left-color: #dc2626;
+            color: #991b1b;
+        }
+
+        .callout-success {
+            background-color: #f0fdf4;
+            border-left-color: #16a34a;
+            color: #166534;
+        }
+
+        /* Judicial & Case Law Boxes */
+        .judicial-box {
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            border-left: 4px solid #475569;
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 18px 0;
+        }
+
+        .judicial-title {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--slate-900);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .judicial-text {
+            font-size: 14px;
+            color: var(--slate-700);
+            line-height: 1.6;
+        }
+
+        /* Formulas & Ratios */
+        .formula-box {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            padding: 18px;
+            border-radius: 10px;
+            margin: 16px 0;
+            text-align: center;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        /* Tables */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid var(--slate-200);
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            background: white;
+            text-align: left;
+        }
+
+        .table th, .table td {
+            padding: 12px 14px;
+            border: 1px solid var(--slate-200);
+            vertical-align: top;
+        }
+
+        .table thead th {
+            background-color: var(--slate-800);
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 13px;
+            letter-spacing: 0.02em;
+        }
+
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: #f8fafc;
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: #f1f5f9;
+        }
+
+        /* Badges */
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            font-size: 11px;
+            font-weight: 600;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .badge-primary { background: #dbeafe; color: #1e40af; }
+        .badge-danger { background: #fee2e2; color: #b91c1c; }
+        .badge-warning { background: #fef3c7; color: #92400e; }
+        .badge-success { background: #dcfce7; color: #15803d; }
+        .badge-info { background: #e0f2fe; color: #0369a1; }
+        .badge-secondary { background: #f1f5f9; color: #475569; }
+
+        /* Lists */
+        .styled-list {
+            padding-left: 20px;
+            margin: 12px 0;
+        }
+
+        .styled-list li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .styled-ol {
+            padding-left: 20px;
+            margin: 12px 0;
+        }
+
+        .styled-ol li {
+            margin-bottom: 8px;
+        }
+
+        /* Buttons & Solutions */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            border: none;
+        }
+
+        .btn-outline-primary {
+            background: transparent;
+            color: var(--primary-light);
+            border: 1px solid var(--primary-light);
+        }
+
+        .btn-outline-primary:hover {
+            background: var(--primary-light);
+            color: #ffffff;
+        }
+
+        .solution-box {
+            transition: all 0.3s ease;
+        }
+
+        /* Grid */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -12px;
+        }
+
+        .col-md-4, .col-md-6, .col-md-12, .col-lg-4, .col-lg-6 {
+            padding: 0 12px;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .col-md-4 { width: 33.333333%; }
+            .col-md-6 { width: 50%; }
+            .col-md-12 { width: 100%; }
+        }
+
+        @media (min-width: 992px) {
+            .col-lg-4 { width: 33.333333%; }
+            .col-lg-6 { width: 50%; }
+        }
+
+        /* Utilities */
+        .mb-0 { margin-bottom: 0 !important; }
+        .mb-1 { margin-bottom: 4px !important; }
+        .mb-2 { margin-bottom: 8px !important; }
+        .mb-3 { margin-bottom: 12px !important; }
+        .mb-4 { margin-bottom: 20px !important; }
+        .mt-2 { margin-top: 8px !important; }
+        .mt-3 { margin-top: 12px !important; }
+        .mt-4 { margin-top: 20px !important; }
+        .p-2 { padding: 8px !important; }
+        .p-3 { padding: 16px !important; }
+        .text-right { text-align: right !important; }
+        .text-center { text-align: center !important; }
+        .text-danger { color: var(--danger) !important; }
+        .text-success { color: var(--success) !important; }
+        .text-primary { color: var(--primary-light) !important; }
+        .text-dark { color: var(--slate-900) !important; }
+        .text-muted { color: var(--slate-500) !important; }
+        .font-weight-bold { font-weight: 700 !important; }
+        .small { font-size: 13px !important; }
+
+        /* Bottom Nav */
+        .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            margin-top: 50px;
+            border-top: 2px solid var(--slate-200);
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .nav-btn.prev {
+            background-color: var(--slate-200);
+            color: var(--slate-800);
+        }
+
+        .nav-btn.prev:hover {
+            background-color: var(--slate-300);
+            transform: translateX(-3px);
+        }
+
+        .nav-btn.next {
+            background-color: #1e3a8a;
+            color: #ffffff;
+        }
+
+        .nav-btn.next:hover {
+            background-color: #1e40af;
+            transform: translateX(3px);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .page-wrapper {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .main-content {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="reading-progress-container">
+        <div id="reading-progress"></div>
+    </div>
+
+    <div class="page-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="../../notes/dtnotes.html" class="sidebar-brand">
+                    <div class="sidebar-logo">CN</div>
+                    <div class="sidebar-title-box">
+                        <h3>Calcium Notes</h3>
+                        <p>CA Final Direct Tax Laws</p>
+                    </div>
+                </a>
+                <div class="sidebar-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="sidebar-search-input" placeholder="Search Chapter 20 (Ctrl+K)...">
+                </div>
+            </div>
+
+            <ul class="sidebar-nav">
+                <li class="sidebar-section-title">1. Statutory Framework &amp; Audits</li>
+                <li class="sidebar-item">
+                    <a href="#sec-overview" class="sidebar-link active">
+                        <span>Overview &amp; Audit Reports</span>
+                        <span class="sidebar-badge">Sec 63, 348</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-tax-audit-63" class="sidebar-link">
+                        <span>Tax Audit u/s 63 &amp; Thresholds</span>
+                        <span class="sidebar-badge">₹1 Cr / ₹50L</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-cash-threshold" class="sidebar-link">
+                        <span>Safe Harbour (&le; 5% Cash)</span>
+                        <span class="sidebar-badge">₹10 Crore</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-section-title">2. Form No. 26 Architecture</li>
+                <li class="sidebar-item">
+                    <a href="#sec-form26-structure" class="sidebar-link">
+                        <span>Parts A, B &amp; C (Auditor Opinions)</span>
+                        <span class="sidebar-badge">Form 26</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-form26-part-d1" class="sidebar-link">
+                        <span>Part D: Clauses 9 to 25</span>
+                        <span class="sidebar-badge">Cl 9-25</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-form26-part-d2" class="sidebar-link">
+                        <span>Part D: Clauses 26 to 40</span>
+                        <span class="sidebar-badge">Cl 26-40</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-msme-reporting" class="sidebar-link">
+                        <span>MSME Delayed Payments [Cl 33]</span>
+                        <span class="sidebar-badge">Sec 43B(h)</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-form26-part-d3" class="sidebar-link">
+                        <span>Part D: Clauses 41 to 53</span>
+                        <span class="sidebar-badge">Cl 41-53</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-section-title">3. Penalties &amp; Ethical Code</li>
+                <li class="sidebar-item">
+                    <a href="#sec-fees-audit" class="sidebar-link">
+                        <span>Late Filing Fee [Sec 428(c)]</span>
+                        <span class="sidebar-badge">₹75k / ₹1.5L</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-ca-ethics" class="sidebar-link">
+                        <span>Ethical Compliances &amp; CA Misconduct</span>
+                        <span class="sidebar-badge">2nd Schedule</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-section-title">4. Practical Application</li>
+                <li class="sidebar-item">
+                    <a href="#sec-tyk" class="sidebar-link">
+                        <span>ICAI Test Your Knowledge (Q1 to Q7)</span>
+                        <span class="sidebar-badge">TYK 1-7</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <span>AY 2025-26 &amp; AY 2026-27</span>
+                <a href="../../notes/dtnotes.html"><i class="fa-solid fa-list-check"></i> Index</a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header Hero Banner -->
+            <div class="chapter-header">
+                <div class="chapter-tag">
+                    <i class="fa-solid fa-file-signature"></i> CA Final Direct Tax Laws &bull; Paper 4 / 7
+                </div>
+                <h1 class="chapter-title">Chapter 20: Tax Audit &amp; Ethical Compliances</h1>
+                <p class="chapter-desc">
+                    Exhaustive study notes covering mandatory tax audit under Section 63 of the Income-tax Act, 2025 (formerly Section 44AB), the ₹10 Crore safe harbour scheme for non-cash businesses, complete clause-by-clause reporting requirements in Form No. 26 (Parts A, B, C &amp; D, Clauses 1 to 53), MSME delayed payment disallowance under Section 43B(h) / Clause 33, mandatory administrative late fees under Section 428(c), and ethical responsibilities and disciplinary liabilities of Chartered Accountants under the Chartered Accountants Act, 1949.
+                </p>
+                <div class="chapter-meta-bar">
+                    <div class="meta-pill"><i class="fa-solid fa-book-bookmark"></i> Section 63 &amp; Form 26 Fully Mapped</div>
+                    <div class="meta-pill"><i class="fa-solid fa-calendar-days"></i> Applicable for AY 2025-26 &amp; AY 2026-27</div>
+                    <div class="meta-pill"><i class="fa-solid fa-handshake-angle"></i> CA Code of Ethics &amp; 2nd Schedule Misconduct</div>
+                    <div class="meta-pill"><i class="fa-solid fa-graduation-cap"></i> 7 ICAI TYK Questions + Disciplinary Case Studies</div>
+                </div>
+            </div>
+
+
+<!-- ========================================== -->
+<!-- SECTION 1: OVERVIEW & OTHER AUDIT REPORTS -->
+<!-- ========================================== -->
+<section id="sec-overview" class="content-section">
+    <div class="section-header">
+        <span class="section-tag">Statutory Foundation &amp; Audit Landscape</span>
+        <h2>1. Overview, Legislative Objectives &amp; Other Audit Reports under the 2025 Act</h2>
+    </div>
+
+    <p class="lead-text">
+        Tax Audit was originally introduced into Indian tax jurisprudence with effect from 1st April, 1985 (under Section 44AB of the 1961 Act) to assist revenue authorities in computing taxable income from books maintained in the ordinary course of business. Under the <strong>Income-tax Act, 2025</strong>, the statutory framework of tax audit is codified under <strong>Section 63</strong> read with <strong>Rule 47</strong> and the newly unified <strong>Form No. 26</strong>.
+    </p>
+
+    <div class="row mb-4">
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 border-primary">
+                <div class="card-header bg-primary text-white font-weight-bold">
+                    Core Legislative Objectives of Tax Audit
+                </div>
+                <div class="card-body">
+                    <ul class="styled-list small mb-0">
+                        <li><strong>Proper Bookkeeping:</strong> Ensures that books of account and other statutory records are properly maintained, audited, and faithfully reflect taxable income.</li>
+                        <li><strong>Verification of Deductions &amp; Claims:</strong> Enables systematic verification of claims for allowances, deductions, and tax exemptions, curbing artificial inflation of expenditure.</li>
+                        <li><strong>Checking Tax Evasion:</strong> Deters fraudulent transactions, cash manipulations, unrecorded sales, and sham loans/deposits.</li>
+                        <li><strong>Facilitating Administration:</strong> Minimizes routine routine inquiry and verification during assessment, saving administrative time and preventing repetitive inquiries.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 border-dark">
+                <div class="card-header bg-dark text-white font-weight-bold">
+                    Judicial Faith in Chartered Accountants
+                </div>
+                <div class="card-body">
+                    <p class="small text-muted mb-2">
+                        Indian courts have consistently recognized the paramount sanctity of tax audit reports issued by Chartered Accountants:
+                    </p>
+                    <div class="judicial-box py-2 px-3 my-1">
+                        <div class="judicial-title small font-weight-bold text-dark">
+                            <strong>G.M.E. Association v. CIT (1994) 205 ITR 356 (Bom.)</strong>
+                        </div>
+                        <p class="judicial-text small mb-0">
+                            The Bombay High Court held that it is quite competent for the income-tax authorities not only to accept the tax auditor’s report, but also to place immense reliance upon it for framing assessments.
+                        </p>
+                    </div>
+                    <div class="judicial-box py-2 px-3 my-1">
+                        <div class="judicial-title small font-weight-bold text-dark">
+                            <strong>Swadeshi Cotton Mills &amp; Goodyear India Ltd.</strong>
+                        </div>
+                        <p class="judicial-text small mb-0">
+                            Where the original books of account were destroyed in a fire, the Court held that assessment framed on the basis of the auditor’s report was completely valid in law.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comparative Table of Other Statutory Audits under 2025 Act -->
+    <div class="card mb-4 border-info">
+        <div class="card-header bg-info text-white font-weight-bold">
+            Comprehensive Matrix of Statutory Audits &amp; Accountant Reports under the Income-tax Act, 2025
+        </div>
+        <div class="card-body">
+            <p class="small text-muted mb-3">
+                In addition to Section 63, the Income-tax Act, 2025 incorporates multiple specific provisions requiring mandatory audits, certificates, or reports by a Chartered Accountant:
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover mb-0">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th style="width: 15%;">Section</th>
+                            <th style="width: 35%;">Nature of Audit / Statutory Requirement</th>
+                            <th style="width: 25%;">Prescribed Form / Report</th>
+                            <th style="width: 25%;">Statutory Purpose &amp; Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong class="text-primary">Section 63</strong></td>
+                            <td>Mandatory Tax Audit of Business or Profession exceeding prescribed turnover limits.</td>
+                            <td><span class="badge badge-primary font-weight-bold">Form No. 26</span> (Parts A/B/C/D)</td>
+                            <td>General compliance, verification of allowances, disallowances, and cash transactions.</td>
+                        </tr>
+                        <tr>
+                            <td><strong class="text-primary">Section 348</strong></td>
+                            <td>Mandatory Audit of Registered Non-Profit Organisations (NPOs / Charitable Trusts).</td>
+                            <td><span class="badge badge-secondary">Form No. 10B / 10BB</span></td>
+                            <td>Condition precedent for claiming tax exemption under Sections 337 to 347.</td>
+                        </tr>
+                        <tr>
+                            <td><strong class="text-primary">Section 46</strong></td>
+                            <td>Audit of Capital Expenditure incurred for Specified Businesses under Section 45 (Cold chain, warehousing, pipelines, etc.).</td>
+                            <td><span class="badge badge-secondary">Accountant's Report</span></td>
+                            <td>Mandatory requirement to substantiate 100% deduction of capital expenditure.</td>
+                        </tr>
+                        <tr>
+                            <td><strong class="text-primary">Section 200 / 206</strong></td>
+                            <td>Minimum Alternate Tax (MAT) for Companies and Alternate Minimum Tax (AMT) for non-corporate entities.</td>
+                            <td><span class="badge badge-secondary">Form No. 29B / 29C</span></td>
+                            <td>Certifying book profits and adjusted total income computation.</td>
+                        </tr>
+                        <tr>
+                            <td><strong class="text-primary">Section 77</strong></td>
+                            <td>Slump Sale Capital Gains computation.</td>
+                            <td><span class="badge badge-secondary">Form No. 28</span></td>
+                            <td>Certifying computation of net worth of the undertaking or division transferred.</td>
+                        </tr>
+                        <tr>
+                            <td><strong class="text-primary">Section 172</strong></td>
+                            <td>International Transactions and Specified Domestic Transactions (Transfer Pricing).</td>
+                            <td><span class="badge badge-secondary">Form No. 3CEB</span></td>
+                            <td>Certifying maintenance of arm’s length documentation u/s 171.</td>
+                        </tr>
+                        <tr>
+                            <td><strong class="text-primary">Section 146</strong></td>
+                            <td>Deduction in respect of employment of new employees (30% additional employee cost).</td>
+                            <td><span class="badge badge-secondary">Form No. 25</span></td>
+                            <td>Certifying additional employee cost and qualification of new employees.</td>
+                        </tr>
+                        <tr>
+                            <td><strong class="text-primary">Section 393(1)</strong></td>
+                            <td>Payee certificate for non-deduction of TDS (First Proviso to Section 201(1)).</td>
+                            <td><span class="badge badge-secondary">Form No. 146</span></td>
+                            <td>Certifies payee furnished return, paid tax, and took payment into account.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 2: TAX AUDIT UNDER SECTION 63 -->
+<!-- ========================================== -->
+<section id="sec-tax-audit-63" class="content-section">
+    <span id="sec-63"></span>
+    <span id="sec-tax-audit"></span>
+    <div class="section-header">
+        <span class="section-tag">Statutory Mandate &amp; Applicability</span>
+        <h2>2. Tax Audit under Section 63 &amp; Statutory Threshold Limits</h2>
+    </div>
+
+    <p class="lead-text">
+        Under <strong>Section 63(1)</strong> of the Income-tax Act, 2025, every person carrying on business or profession is mandatorily required to get his accounts of the tax year audited by an accountant (Chartered Accountant in practice) and furnish by the specified date the report of such audit in the prescribed form:
+    </p>
+
+    <!-- Table of Section 63 Triggers -->
+    <div class="table-responsive mb-4">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th style="width: 25%;">Category of Assessee</th>
+                    <th style="width: 35%;">Statutory Threshold Limit / Trigger Event</th>
+                    <th style="width: 40%;">Key Statutory Conditions &amp; Explanations</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Business -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Business Assessee [Section 63(1)(a)]</strong></td>
+                    <td>
+                        Total sales, turnover, or gross receipts in business exceed:
+                        <div class="text-danger font-weight-bold my-1" style="font-size: 16px;">₹ 1,00,00,000 (₹ 1 Crore)</div>
+                        <span class="badge badge-success">Elevated to ₹ 10 Crores</span> if cash receipts and cash payments are &le; 5% each!
+                    </td>
+                    <td class="small">
+                        General threshold is ₹ 1 Crore. However, where non-cash transactions prevail (cash receipts &le; 5% AND cash payments &le; 5%), the threshold is elevated tenfold to <strong>₹ 10 Crores</strong> under the safe harbour proviso.
+                    </td>
+                </tr>
+
+                <!-- Profession -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Professional Assessee [Section 63(1)(b)]</strong></td>
+                    <td>
+                        Gross receipts in profession exceed:
+                        <div class="text-danger font-weight-bold my-1" style="font-size: 16px;">₹ 50,00,000 (₹ 50 Lakhs)</div>
+                        <span class="badge badge-success">Elevated to ₹ 75 Lakhs</span> if cash receipts are &le; 5%!
+                    </td>
+                    <td class="small">
+                        Applies to notified professions under Section 62(1) (Legal, medical, engineering, architectural, accountancy, technical consultancy, interior decoration, film artists, authorised representatives).
+                    </td>
+                </tr>
+
+                <!-- Presumptive 44AD lock-in -->
+                <tr class="table-warning">
+                    <td><strong class="text-dark font-weight-bold">Presumptive Business Opt-Out [Section 63(1)(c)]</strong></td>
+                    <td>
+                        Breach of 5-Year Lock-in under Section 57(4) (Old Sec 44AD(4)), where profits declared are lower than 8% / 6% AND total income exceeds basic exemption limit.
+                    </td>
+                    <td class="small">
+                        If an eligible assessee opts out of presumptive taxation under Section 57 during the 5-year lock-in period, he cannot opt back into Section 57 for the subsequent 5 tax years, and must mandatorily get accounts audited under Section 63!
+                    </td>
+                </tr>
+
+                <!-- Presumptive 44ADA -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Presumptive Profession Lower Profits [Section 63(1)(d)]</strong></td>
+                    <td>
+                        Resident professional claiming profits lower than the deemed 50% under Section 58(1) (Old Sec 44ADA) AND total income exceeds basic exemption limit.
+                    </td>
+                    <td class="small">
+                        If a professional’s gross receipts are &le; ₹ 50L (or ₹ 75L), but he declares profits less than 50% of gross receipts and his total income exceeds the basic exemption limit, tax audit is mandatory!
+                    </td>
+                </tr>
+
+                <!-- Presumptive 44AE -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Goods Carriage Operators [Section 63(1)(e)]</strong></td>
+                    <td>
+                        Assessee engaged in plying, hiring, or leasing goods carriages claiming profits lower than the presumptive rates under Section 59(1) (Old Sec 44AE).
+                    </td>
+                    <td class="small">
+                        Presumptive profit is ₹ 1,000 per ton of gross vehicle weight per month for heavy goods vehicles (> 12 MT), and ₹ 7,500 per month for other vehicles. Declaring lower profits triggers mandatory Section 63 audit.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Principles for Computing Turnover / Gross Receipts -->
+    <div class="card mb-4 border-secondary">
+        <div class="card-header bg-secondary text-white font-weight-bold">
+            Guidance on Computing "Total Sales, Turnover, or Gross Receipts"
+        </div>
+        <div class="card-body">
+            <p class="small text-muted mb-2">
+                The terms "turnover" and "gross receipts" are commercial terms. The ICAI Guidance Note on Tax Audit lays down precise rules for their determination:
+            </p>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="p-3 bg-light rounded border h-100">
+                        <h6 class="font-weight-bold text-success mb-2"><i class="fa-solid fa-plus-circle"></i> Inclusions in Turnover / Receipts:</h6>
+                        <ul class="styled-list small mb-0">
+                            <li>Gross sales value of goods and professional service billings;</li>
+                            <li>Sale of scrap, by-products, and manufacturing residues;</li>
+                            <li>Export incentives, duty drawbacks, and cash assistance;</li>
+                            <li>Excise duty, sales tax, or GST if the assessee follows the <strong>inclusive method of accounting</strong>;</li>
+                            <li>Advance received and forfeited in the course of business;</li>
+                            <li><strong>Speculative Transactions:</strong> Aggregate of all positive and negative differences arising from speculative transactions represents speculative turnover!</li>
+                            <li><strong>Derivatives / Futures &amp; Options (F&amp;O):</strong> Total of favorable and unfavorable differences, plus premium received on sale of options!</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <div class="p-3 bg-light rounded border h-100">
+                        <h6 class="font-weight-bold text-danger mb-2"><i class="fa-solid fa-minus-circle"></i> Exclusions from Turnover / Receipts:</h6>
+                        <ul class="styled-list small mb-0">
+                            <li><strong>Trade Discounts &amp; Turnover Discounts:</strong> Deducted in sales invoice or credited through credit notes;</li>
+                            <li><strong>Sales Returns:</strong> Return of goods outward/inward;</li>
+                            <li>Sale proceeds of <strong>fixed capital assets</strong> (plant, machinery, cars, land);</li>
+                            <li>Sale proceeds of investments (shares, securities, mutual funds) unless held as stock-in-trade;</li>
+                            <li>Rental income, interest income, or dividends (chargeable under other heads);</li>
+                            <li>Goods sent on consignment (until actually sold by the consignee);</li>
+                            <li>Reimbursement of out-of-pocket expenses incurred on behalf of clients.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="callout callout-info mt-3 mb-0">
+                <strong>Specified Date for Furnishing Tax Audit Report:</strong><br>
+                Under Section 63, the tax audit report must be furnished electronically on or before the <strong>"specified date"</strong>, which is defined as <strong>one month prior to the due date of furnishing the return of income under Section 263(1)</strong>.<br>
+                <em>Example:</em> For corporate assessees and business assessees whose return due date is 31st October, the specified date for furnishing the tax audit report is <strong>30th September of the assessment year</strong>.
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 3: SAFE HARBOUR SCHEME (<= 5% CASH) -->
+<!-- ========================================== -->
+<section id="sec-cash-threshold" class="content-section">
+    <div class="section-header">
+        <span class="section-tag">Cashless Economy Incentive</span>
+        <h2>3. The ₹ 10 Crore Safe Harbour Scheme for Non-Cash Businesses [&le; 5% Cash]</h2>
+    </div>
+
+    <p class="lead-text">
+        To promote digital payments and reduce compliance burden on digital businesses, the Proviso to Section 63(1)(a) elevates the tax audit turnover threshold tenfold from <strong>₹ 1 Crore to ₹ 10 Crores</strong>, provided the assessee satisfies the <strong>Twin 5% Non-Cash Conditions</strong>.
+    </p>
+
+    <!-- Twin 5% Rules -->
+    <div class="card mb-4 border-success">
+        <div class="card-header bg-success text-white font-weight-bold">
+            The Twin Cumulative 5% Conditions for ₹ 10 Crore Threshold
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="p-3 bg-light rounded border h-100">
+                        <h5 class="h6 font-weight-bold text-primary">Condition 1: Aggregate Cash Receipts &le; 5%</h5>
+                        <div class="formula-box my-2">
+                            $$rac{	ext{Aggregate of All Receipts in Cash}}{	ext{Aggregate of All Receipts (Cash + Non-Cash)}} \le 5\%$$
+                        </div>
+                        <p class="small text-muted mb-0">
+                            <strong>Crucial Scope:</strong> "Aggregate of all receipts" is NOT restricted to turnover! It encompasses <strong>every single rupee received</strong> during the tax year—including sales turnover, debtors' realizations, loans taken, advances, capital introduction, sale of fixed assets, interest, and gifts!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <div class="p-3 bg-light rounded border h-100">
+                        <h5 class="h6 font-weight-bold text-primary">Condition 2: Aggregate Cash Payments &le; 5%</h5>
+                        <div class="formula-box my-2">
+                            $$rac{	ext{Aggregate of All Payments in Cash}}{	ext{Aggregate of All Payments (Cash + Non-Cash)}} \le 5\%$$
+                        </div>
+                        <p class="small text-muted mb-0">
+                            <strong>Crucial Scope:</strong> "Aggregate of all payments" encompasses <strong>every single rupee paid</strong> during the tax year—including trade purchases, creditors' payments, operating expenses, asset purchases, loan repayments, capital drawings, and taxes!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Warning Callout on Bearer Cheques -->
+            <div class="callout callout-danger mt-3 mb-0">
+                <div class="d-flex align-items-center mb-1">
+                    <i class="fa-solid fa-triangle-exclamation mr-2" style="font-size: 18px;"></i>
+                    <strong style="font-size: 15px;">CRITICAL TRAP — Bearer Cheques &amp; Crossed Cheques are Treated as CASH!</strong>
+                </div>
+                <p class="small mb-1">
+                    Under the Explanation to Section 63, the payment or receipt by a <strong>cheque drawn on a bank or by a bank draft which is NOT an account payee cheque or account payee bank draft SHALL BE DEEMED TO BE A PAYMENT OR RECEIPT IN CASH</strong>!
+                </p>
+                <ul class="small mb-0 pl-3">
+                    <li><strong>Account Payee Cheque / Draft, ECS, UPI, NEFT, RTGS, IMPS, BHIM:</strong> Treated as non-cash (electronic banking modes).</li>
+                    <li><strong>Bearer Cheques &amp; Crossed Cheques:</strong> Treated as <strong class="text-danger">CASH</strong> for computing both the numerator and denominator!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ========================================== -->
+<!-- SECTION 4: FORM NO. 26 STRUCTURE & OPINIONS -->
+<!-- ========================================== -->
+<section id="sec-form26-structure" class="content-section">
+    <div class="section-header">
+        <span class="section-tag">Audit Reporting Framework</span>
+        <h2>4. Form No. 26 Structure: Part A, Part B &amp; Part C [Auditor Opinions]</h2>
+    </div>
+
+    <p class="lead-text">
+        Under the Income-tax Act, 2025, the reporting architecture for tax audits has been streamlined into a single, unified document: <strong>Form No. 26</strong>. It replaces the erstwhile tripartite structure of Forms 3CA, 3CB, and 3CD, providing a standardized reporting interface for both corporate and non-corporate assessees.
+    </p>
+
+    <!-- Part A vs Part B Table -->
+    <div class="table-responsive mb-4">
+        <table class="table table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th style="width: 25%;">Feature</th>
+                    <th style="width: 37.5%;">Part A of Form No. 26 (Old Form 3CA)</th>
+                    <th style="width: 37.5%;">Part B of Form No. 26 (Old Form 3CB)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Applicability</strong></td>
+                    <td>
+                        In a case where the accounts of the business or profession of a person <strong>have been audited under any other law</strong> prior to the tax audit.
+                    </td>
+                    <td>
+                        In a case where the accounts of the business or profession of a person <strong>have NOT been audited under any other law</strong>.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Target Assessees</strong></td>
+                    <td>
+                        Companies governed by the Companies Act, 2013; Banking Companies; Insurance Companies; Electricity Companies; Co-operative Societies.
+                    </td>
+                    <td>
+                        Sole Proprietorships; Partnership Firms; LLPs (not subject to statutory audit under LLP Act); Hindu Undivided Families (HUFs); Trusts.
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Scope of Auditor's Opinion</strong></td>
+                    <td>
+                        The auditor <strong>does not audit the financial statements anew</strong>. He certifies that the statutory audit has been conducted under the relevant Act, and expresses an opinion solely on whether the particulars in Part D are <strong class="text-primary">"True and Correct"</strong>.
+                    </td>
+                    <td>
+                        The auditor conducts a <strong>full-scope financial audit</strong>. He expresses a dual opinion:
+                        <ol class="mb-0 pl-3 small">
+                            <li>Financial statements exhibit a <strong class="text-success">"True and Fair View"</strong>; and</li>
+                            <li>The particulars given in Part D are <strong class="text-primary">"True and Correct"</strong>.</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Annexures Attached</strong></td>
+                    <td>
+                        Copy of the statutory audit report along with audited Balance Sheet, Profit &amp; Loss Account, and Notes to Accounts.
+                    </td>
+                    <td>
+                        Audited Balance Sheet, Profit &amp; Loss Account, and Notes prepared and certified directly by the tax auditor.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Legal Distinction: True & Fair vs True & Correct -->
+    <div class="row mb-4">
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 border-success">
+                <div class="card-header bg-success text-white font-weight-bold">
+                    "True and Fair View" (Financial Statements)
+                </div>
+                <div class="card-body small">
+                    <p>
+                        "True and Fair View" is an accounting concept governed by Standards on Auditing (SAs) and Accounting Standards. It implies that:
+                    </p>
+                    <ul class="styled-list mb-0">
+                        <li>The financial statements are free from <strong>material misstatement</strong>;</li>
+                        <li>Accounting policies are consistently applied;</li>
+                        <li>Transactions are recorded on accrual, going concern, and prudence principles;</li>
+                        <li>It permits reasonable estimation and materiality judgements.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <div class="card h-100 border-primary">
+                <div class="card-header bg-primary text-white font-weight-bold">
+                    "True and Correct" (Part D Particulars)
+                </div>
+                <div class="card-body small">
+                    <p>
+                        "True and Correct" implies <strong>factual precision and exact mathematical and legal accuracy</strong>. There is no leeway for materiality or subjective discretion:
+                    </p>
+                    <ul class="styled-list mb-0">
+                        <li>The amounts reported (e.g., disallowances u/s 40(a), cash payments > ₹ 10,000, hundi loans) must be exact;</li>
+                        <li>Dates of statutory deposits (PF/ESI) must match bank challans exactly;</li>
+                        <li>Any divergence or approximation without qualification is an audit failure!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Paragraph 5 Qualifications and Observations -->
+    <div class="card mb-4 border-warning">
+        <div class="card-header bg-warning text-dark font-weight-bold">
+            Paragraph 5 of Part A &amp; Part B: Auditor Qualifications, Reservations &amp; Disclaimers
+        </div>
+        <div class="card-body">
+            <p class="small text-muted mb-2">
+                Paragraph 5 of Part A and Part B provides the primary statutory channel for the tax auditor to state his <strong>observations, qualifications, comments, or disclaimers</strong>:
+            </p>
+            <div class="p-3 bg-light rounded border small">
+                <ul class="styled-list mb-0">
+                    <li>Where the tax auditor is unable to obtain sufficient appropriate audit evidence (e.g., cash vouchers unverified, stock records missing);</li>
+                    <li>Where the tax auditor disagrees with the treatment or interpretation adopted by the management regarding tax disallowances;</li>
+                    <li>Where conflicting legal interpretations exist (e.g., thin capitalization reporting or MSME disallowances), the auditor must report both viewpoints;</li>
+                    <li><strong>Crucial Disciplinary Rule:</strong> Marking "No" or leaving a clause blank based solely on a Management Representation Letter (without independent verification or qualification in Paragraph 5) constitutes <strong>gross negligence and professional misconduct</strong> under the Chartered Accountants Act, 1949!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Part C General Information -->
+    <div class="card mb-4 border-secondary">
+        <div class="card-header bg-secondary text-white font-weight-bold">
+            Part C of Form No. 26: General Information [Clauses 1 to 8]
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-sm mb-0">
+                    <thead class="thead-light">
+                        <tr>
+                            <th style="width: 15%;">Clause No.</th>
+                            <th style="width: 35%;">Field Description</th>
+                            <th style="width: 50%;">Reporting Requirements &amp; Guidance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Clause 1</strong></td>
+                            <td>Name of the Assessee</td>
+                            <td class="small">Name as per PAN database. Full name for individuals (no abbreviations). Trade names and branch names to be stated. Name changes during the tax year must be disclosed.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Clause 2</strong></td>
+                            <td>Address</td>
+                            <td class="small">Address of registered office or principal place of business.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Clause 3</strong></td>
+                            <td>Permanent Account Number (PAN)</td>
+                            <td class="small">10-character alphanumeric PAN of the assessee.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Clause 4</strong></td>
+                            <td>Status</td>
+                            <td class="small">Individual, HUF, Firm, Company, AOP, BOI, Local Authority, Artificial Juridical Person.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Clause 5</strong></td>
+                            <td>Residential Status</td>
+                            <td class="small">Resident, Resident but not ordinarily resident (RNOR), or Non-resident.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Clause 6 &amp; 7</strong></td>
+                            <td>Email ID &amp; Contact Number</td>
+                            <td class="small">Official electronic communication credentials.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Clause 8</strong></td>
+                            <td>Tax Year</td>
+                            <td class="small">The relevant tax year (e.g., Tax Year 2026-27).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 5: FORM 26 PART D: CLAUSES 9 TO 25 -->
+<!-- ========================================== -->
+<section id="sec-form26-part-d1" class="content-section">
+    <div class="section-header">
+        <span class="section-tag">Statement of Particulars</span>
+        <h2>5. Form 26 Part D: Detailed Reporting Requirements [Clauses 9 to 25]</h2>
+    </div>
+
+    <p class="lead-text">
+        Part D of Form No. 26 contains the detailed, clause-by-clause statutory particulars required to be furnished under Section 63. Below is the comprehensive analysis of <strong>Clauses 9 to 25</strong>:
+    </p>
+
+    <div class="table-responsive mb-4">
+        <table class="table table-bordered table-striped table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th style="width: 12%;">Clause</th>
+                    <th style="width: 38%;">Nature of Reporting Field</th>
+                    <th style="width: 50%;">Detailed Reporting Guidelines &amp; Audit Procedures</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Clause 9 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 9</strong></td>
+                    <td>
+                        <strong>Relevant Provision under which Audit is Conducted:</strong><br>
+                        Specify Section 63(1)(a) to (e).
+                    </td>
+                    <td class="small">
+                        The auditor must select the specific clause of Section 63 under which the audit is conducted (e.g., Sec 63(1)(a) for business > ₹ 1 Cr / ₹ 10 Cr; Sec 63(1)(b) for profession > ₹ 50L / ₹ 75L; Sec 63(1)(c) for presumptive lock-in breach).
+                    </td>
+                </tr>
+
+                <!-- Clause 10 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 10</strong></td>
+                    <td>
+                        <strong>Special Concessional Tax Regimes:</strong><br>
+                        Whether opted for taxation u/s 199 or 200.
+                    </td>
+                    <td class="small">
+                        Report whether the assessee has exercised option for concessional tax rates under Section 199 (new default regime u/s 115BAC for individuals/HUFs) or Section 200 (115BAA/115BAB for domestic companies, 115BAD/115BAE for co-operative societies), and verify Form 10-IEA/10-IC/10-ID filing.
+                    </td>
+                </tr>
+
+                <!-- Clause 11 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 11</strong></td>
+                    <td>
+                        <strong>Partnership Firm / AOP Particulars:</strong><br>
+                        Names of partners, profit-sharing ratios, and changes.
+                    </td>
+                    <td class="small">
+                        State names of all partners/members, their respective profit sharing ratios (including loss sharing ratios) as per the partnership deed. Any change in constitution or profit-sharing ratio during the tax year must be explicitly detailed.
+                    </td>
+                </tr>
+
+                <!-- Clause 12 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 12</strong></td>
+                    <td>
+                        <strong>Nature of Business or Profession:</strong><br>
+                        Principal lines of business and sector codes.
+                    </td>
+                    <td class="small">
+                        Disclose the nature of all businesses or professions carried on during the tax year along with prescribed sub-sector codes. Any new line of business started or any existing line discontinued must be stated.
+                    </td>
+                </tr>
+
+                <!-- Clauses 13 & 14 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clauses 13 &amp; 14</strong></td>
+                    <td>
+                        <strong>Books of Account &amp; Storage Locations:</strong><br>
+                        List of books maintained, software/cloud details, and address where kept.
+                    </td>
+                    <td class="small">
+                        <ul class="mb-0 pl-3">
+                            <li>List all statutory books of account maintained (cash book, journal, ledgers, inventory records);</li>
+                            <li>Disclose accounting software used, whether maintained on cloud/remote servers, and backup logs;</li>
+                            <li>State addresses of all locations/branches where books of account are maintained and kept.</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <!-- Clause 15 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 15</strong></td>
+                    <td>
+                        <strong>Method of Accounting:</strong><br>
+                        Mercantile or Cash System.
+                    </td>
+                    <td class="small">
+                        Report whether Mercantile or Cash method is employed. Hybrid systems are legally prohibited under Section 145. Any change in accounting method compared to preceding year, and its financial impact on profit/loss, must be quantified.
+                    </td>
+                </tr>
+
+                <!-- Clause 16 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 16</strong></td>
+                    <td>
+                        <strong>Method of Valuation of Closing Stock:</strong><br>
+                        Compliance with Section 38 (Old Sec 145A).
+                    </td>
+                    <td class="small">
+                        Disclose method of valuation (Cost, NRV, or lower). Section 38 mandates the <strong>inclusive method of valuation</strong> (incorporating taxes, duties, and cess, including GST). Reconciliation between exclusive and inclusive methods must be reported.
+                    </td>
+                </tr>
+
+                <!-- Clauses 17 & 18 -->
+                <tr class="table-info">
+                    <td><strong class="text-primary font-weight-bold">Clauses 17 &amp; 18</strong></td>
+                    <td>
+                        <strong>Income Computation and Disclosure Standards (ICDS):</strong><br>
+                        Adjustments &amp; Disclosures (ICDS I to X).
+                    </td>
+                    <td class="small">
+                        <ul class="mb-0 pl-3">
+                            <li><strong>Clause 17:</strong> Report standard-wise net increase/decrease in profit arising from compliance with ICDS I to X (e.g. retention money under ICDS III, export incentives under ICDS IV, mark-to-market forex under ICDS VI).</li>
+                            <li><strong>Clause 18:</strong> Complete statutory disclosures required under each specific standard.</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <!-- Clause 19 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 19</strong></td>
+                    <td>
+                        <strong>Amounts Not Credited to Profit &amp; Loss Account:</strong><br>
+                        Items covered under Section 28 and capital receipts.
+                    </td>
+                    <td class="small">
+                        Report all business receipts not credited to P&L, including export cash assistance, duty drawbacks, compensation for termination of agency/management, value of perks/benefits arising from business, escalation claims, and capital receipts.
+                    </td>
+                </tr>
+
+                <!-- Clause 20 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 20</strong></td>
+                    <td>
+                        <strong>Income Chargeable under "Other Sources":</strong><br>
+                        Items covered under Section 56.
+                    </td>
+                    <td class="small">
+                        Report amounts credited to P&L that are chargeable under "Income from Other Sources" (interest on fixed deposits, dividends, family pension, rental income from non-business property).
+                    </td>
+                </tr>
+
+                <!-- Clause 21 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 21</strong></td>
+                    <td>
+                        <strong>Deemed Profits under Section 41:</strong><br>
+                        Balancing charge, bad debt recovery, remission of liability.
+                    </td>
+                    <td class="small">
+                        Report taxable recoveries under Section 41(1) (remission of trading liability), Section 41(2) (balancing charge), Section 41(4) (bad debt recovered), and Section 41(5) (business loss adjustment after closure).
+                    </td>
+                </tr>
+
+                <!-- Clause 22 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 22</strong></td>
+                    <td>
+                        <strong>Conversion of Capital Asset into Stock-in-Trade:</strong><br>
+                        Compliance with Section 70 (Old Sec 45(2)).
+                    </td>
+                    <td class="small">
+                        Disclose description of capital asset, date of acquisition, cost of acquisition, and the fair market value of the asset on the date of its conversion into stock-in-trade.
+                    </td>
+                </tr>
+
+                <!-- Clause 23 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 23</strong></td>
+                    <td>
+                        <strong>Transfer of Land / Building Below Stamp Duty Value:</strong><br>
+                        Compliance with Section 71 (Old Sec 43CA).
+                    </td>
+                    <td class="small">
+                        Where land/building held as stock-in-trade is sold for consideration less than stamp value: Report property details, consideration received, stamp value, and whether difference exceeds 10% safe harbour.
+                    </td>
+                </tr>
+
+                <!-- Clauses 24 & 25 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clauses 24 &amp; 25</strong></td>
+                    <td>
+                        <strong>Hundi Borrowings &amp; Repayments:</strong><br>
+                        Compliance with Section 69D.
+                    </td>
+                    <td class="small">
+                        Report any amount borrowed on hundi or repaid (including interest) otherwise than through an account payee cheque drawn on a bank.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+<!-- ========================================== -->
+<!-- SECTION 6: FORM 26 PART D: CLAUSES 26 TO 40 -->
+<!-- ========================================== -->
+<section id="sec-form26-part-d2" class="content-section">
+    <div class="section-header">
+        <span class="section-tag">Statutory Disallowances &amp; Deductions</span>
+        <h2>6. Form 26 Part D: Detailed Reporting Requirements [Clauses 26 to 40]</h2>
+    </div>
+
+    <p class="lead-text">
+        Clauses 26 to 40 of Form No. 26 encompass the critical statutory battleground of income tax audits—disallowances for non-deduction of TDS, personal and illegal expenses, cash payments under Section 40A(3), statutory dues under Section 43B, and depreciation block computations.
+    </p>
+
+    <div class="table-responsive mb-4">
+        <table class="table table-bordered table-striped table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th style="width: 12%;">Clause</th>
+                    <th style="width: 38%;">Statutory Subject Matter</th>
+                    <th style="width: 50%;">Detailed Reporting Obligations &amp; Audit Verification</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Clause 26 -->
+                <tr class="table-warning">
+                    <td><strong class="text-danger font-weight-bold">Clause 26</strong></td>
+                    <td>
+                        <strong>Inadmissible Deductions under Section 40(a):</strong><br>
+                        TDS Defaults, Equalisation Levy, Tax/Cess.
+                    </td>
+                    <td class="small">
+                        Report section-wise amounts inadmissible under Section 40(a):
+                        <ul class="mb-0 pl-3">
+                            <li><strong>40(a)(i):</strong> 30% disallowance for payments to non-residents where TDS is not deducted or not deposited on or before the due date u/s 263(1);</li>
+                            <li><strong>40(a)(ia):</strong> 30% disallowance for payments to residents where TDS is not deducted or not deposited on or before the return filing due date;</li>
+                            <li><strong>40(a)(ib):</strong> Disallowance for failure to deduct/pay Equalisation Levy;</li>
+                            <li><strong>40(a)(ii):</strong> Complete disallowance of Income-tax, Surcharge, Health &amp; Education Cess;</li>
+                            <li><strong>40(a)(iib):</strong> Disallowance of State Government royalties/fees levied exclusively on State PSUs.</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <!-- Clause 27 -->
+                <tr class="table-danger">
+                    <td><strong class="text-danger font-weight-bold">Clause 27</strong></td>
+                    <td>
+                        <strong>Disallowable Debits to Profit &amp; Loss Account:</strong><br>
+                        Capital, Personal, and Illegal Expenses.
+                    </td>
+                    <td class="small">
+                        <ul class="mb-0 pl-3">
+                            <li><strong>Capital Expenditure:</strong> Any capital expenditure erroneously debited to P&amp;L;</li>
+                            <li><strong>Personal Expenditure:</strong> Expenses of personal nature incurred by directors, partners, or proprietor;</li>
+                            <li><strong>Political Souvenirs [Sec 37(2B)]:</strong> Advertisement in magazines/souvenirs published by political parties;</li>
+                            <li><strong>Offences &amp; Prohibitions [Sec 37(1) Expln 1]:</strong>
+                                <ul>
+                                    <li>Bribes, protection money, extortion, speed money, hafta;</li>
+                                    <li>Compounding fees, fines and penalties for violation of any law;</li>
+                                    <li><strong>Doctor Freebies:</strong> Freebies, travel, hospitality, gifts provided to healthcare professionals in violation of National Medical Commission (NMC) regulations;</li>
+                                    <li>Expenditure incurred to settle proceedings for offences committed in or outside India.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <!-- Clause 28 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 28</strong></td>
+                    <td>
+                        <strong>Penalties Levied under Any Law:</strong><br>
+                        In India or abroad.
+                    </td>
+                    <td class="small">
+                        State all penalties levied during the tax year under any domestic or foreign law (e.g. GST penalties, customs penalties, environmental fines, municipal fines).
+                    </td>
+                </tr>
+
+                <!-- Clause 29 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 29</strong></td>
+                    <td>
+                        <strong>Payments to Specified Persons u/s 40A(2)(b):</strong><br>
+                        Excessive or unreasonable payments.
+                    </td>
+                    <td class="small">
+                        List all payments made or to be made to relatives of directors/proprietor, key persons, or entities having substantial interest (&ge; 20% voting power). Details must include recipient name, PAN, relationship, nature of payment, amount, and auditor's assessment of fair market value.
+                    </td>
+                </tr>
+
+                <!-- Clause 30 -->
+                <tr class="table-warning">
+                    <td><strong class="text-danger font-weight-bold">Clause 30</strong></td>
+                    <td>
+                        <strong>Disallowance of Cash Payments u/s 36(4) / 40A(3):</strong><br>
+                        Payments exceeding ₹ 10,000 / ₹ 35,000.
+                    </td>
+                    <td class="small">
+                        <p class="mb-1">
+                            Disallowance under Section 40A(3) for expenditure where payment exceeding <strong>₹ 10,000</strong> is made to a person in a day otherwise than by account payee cheque/draft, ECS, or prescribed electronic mode (limit is <strong>₹ 35,000</strong> for goods carriage hire).
+                        </p>
+                        <p class="mb-0 text-danger font-weight-bold">
+                            ICAI Guidance Note &amp; Disciplinary Precedent: The auditor cannot escape liability by obtaining a management representation without verifying cash book records, bearer cheque counterfoils, and ledger vouchers!
+                        </p>
+                    </td>
+                </tr>
+
+                <!-- Clause 31 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 31</strong></td>
+                    <td>
+                        <strong>Deemed Income for Cash Payments u/s 40A(3A):</strong><br>
+                        Unpaid liabilities allowed in earlier years.
+                    </td>
+                    <td class="small">
+                        Where an allowance has been made in any earlier year for an expenditure, and during the current tax year the assessee settles the liability in cash exceeding ₹ 10,000 (₹ 35,000 for transport): The entire amount is deemed as taxable income u/s 40A(3A).
+                    </td>
+                </tr>
+
+                <!-- Clause 32 -->
+                <tr class="table-info">
+                    <td><strong class="text-primary font-weight-bold">Clause 32</strong></td>
+                    <td>
+                        <strong>Statutory Liabilities under Section 44 / 43B:</strong><br>
+                        Taxes, duties, PF, bonuses, bank interest.
+                    </td>
+                    <td class="small">
+                        Report amounts covered by Section 43B:
+                        <ul class="mb-0 pl-3">
+                            <li>Tax, duty, cess, fee payable under any law (GST, excise, customs);</li>
+                            <li>Employer contributions to PF, superannuation, ESI;</li>
+                            <li>Bonus or commission to employees;</li>
+                            <li>Interest on loans/advances from banks, FIs, NBFCs;</li>
+                            <li>Leave encashment provision;</li>
+                            <li>Railway payments.</li>
+                        </ul>
+                        <div class="mt-1 font-weight-bold text-dark">
+                            Allowed on payment basis if paid on or before the return filing due date u/s 263(1). Pre-existing liabilities paid during the year must be reconciled.
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- Clause 34 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 34</strong></td>
+                    <td>
+                        <strong>Special Deductions under Sections 35, 35D, etc.:</strong><br>
+                        Scientific research, preliminary expenses.
+                    </td>
+                    <td class="small">
+                        Report amounts allowable under Section 35 (Scientific research expenditure), Section 35ABB (telecom license), Section 35D (amortisation of preliminary expenses), and Section 35E (prospecting minerals).
+                    </td>
+                </tr>
+
+                <!-- Clause 35 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 35</strong></td>
+                    <td>
+                        <strong>Prior Period Income / Expenditure:</strong><br>
+                        Credited or debited to P&amp;L.
+                    </td>
+                    <td class="small">
+                        Disclose all prior period items credited or debited to the profit and loss account, specifying the prior tax year to which each item pertains and the date of recognition.
+                    </td>
+                </tr>
+
+                <!-- Clause 36 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 36</strong></td>
+                    <td>
+                        <strong>Depreciation Allowable under Section 32:</strong><br>
+                        Block of assets, additions, deletions, adjustments.
+                    </td>
+                    <td class="small">
+                        Detailed schedule for each block of assets: Opening WDV, additions during the year (split into used for &ge; 180 days and &lt; 180 days), deductions/realizations during the year, allowable depreciation, additional depreciation u/s 32(1)(iia), and closing WDV.
+                    </td>
+                </tr>
+
+                <!-- Clause 37 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 37</strong></td>
+                    <td>
+                        <strong>Brought Forward Losses &amp; Unabsorbed Depreciation:</strong><br>
+                        Year-wise schedule and lapse status.
+                    </td>
+                    <td class="small">
+                        Year-wise details of business loss, speculation loss, loss from specified business u/s 35AD, capital loss, and unabsorbed depreciation. Dates of assessment orders, return filing dates, and whether losses have lapsed must be reported.
+                    </td>
+                </tr>
+
+                <!-- Clause 38 -->
+                <tr class="table-warning">
+                    <td><strong class="text-primary font-weight-bold">Clause 38</strong></td>
+                    <td>
+                        <strong>Deductions Admissible under Chapter VIII (Chapter VI-A):</strong><br>
+                        Deductions under Sections 145 to 150 (Old 80-IA to 80JJAA).
+                    </td>
+                    <td class="small">
+                        Section-wise quantification of admissible deductions under Chapter VIII (e.g. <strong>Section 146 / 80JJAA</strong> for new employee employment). Auditor must verify fulfillment of conditions (e.g. employee emoluments &le; ₹ 25,000 p.m., minimum 240 days employment, electronic payment).
+                    </td>
+                </tr>
+
+                <!-- Clause 39 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 39</strong></td>
+                    <td>
+                        <strong>Utilisation of MAT / AMT Credit:</strong><br>
+                        Under Section 200 / 206.
+                    </td>
+                    <td class="small">
+                        Report opening balance of tax credit, credit utilized during the tax year against regular tax liability, and closing balance carried forward.
+                    </td>
+                </tr>
+
+                <!-- Clause 40 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 40</strong></td>
+                    <td>
+                        <strong>Primary Transfer Pricing Adjustments:</strong><br>
+                        Compliance with Section 166 (Old Sec 92CE).
+                    </td>
+                    <td class="small">
+                        Report primary adjustments made in transfer pricing (suo motu, by AO, or APA) exceeding ₹ 1 Crore, and whether secondary adjustment was made or repatriated within 90 days.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 7: MSME DELAYED PAYMENTS [CLAUSE 33] -->
+<!-- ========================================== -->
+<section id="sec-msme-reporting" class="content-section">
+    <div class="section-header">
+        <span class="section-tag">High-Yield Statutory Compliance</span>
+        <h2>7. Deep-Dive on MSME Delayed Payments Reporting [Clause 33 &amp; Section 43B(h)]</h2>
+    </div>
+
+    <p class="lead-text">
+        The insertion of <strong>Clause 33 in Form No. 26</strong> and <strong>Section 44(h) / Section 43B(h)</strong> of the Income-tax Act has revolutionized commercial settlements in India. To protect Micro and Small Enterprises from crippling liquidity crunches, the Legislature has mandated strict tax disallowance for delayed payments.
+    </p>
+
+    <!-- Sub-section 7.1: Statutory Framework of Clause 33 -->
+    <div class="card mb-4 border-danger">
+        <div class="card-header bg-danger text-white font-weight-bold">
+            7.1 Statutory Mandate of Clause 33(a) &amp; Clause 33(b)
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="p-3 bg-light rounded border h-100">
+                        <h5 class="h6 font-weight-bold text-danger">Clause 33(a): Inadmissible Interest u/s 23 of MSMED Act</h5>
+                        <p class="small text-muted mb-2">
+                            Under Section 16 of the MSMED Act, 2006, where a buyer fails to pay a supplier within the statutory period, he is liable to pay compound interest with monthly rests at <strong>three times the Bank Rate</strong> notified by RBI.
+                        </p>
+                        <div class="callout callout-danger py-2 px-3 my-1 small">
+                            <strong>Absolute Disallowance:</strong> Section 23 of the MSMED Act explicitly provides that interest paid or payable to MSMEs <strong>SHALL NOT BE ALLOWED as a deduction</strong> in computing taxable income under the Income-tax Act!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <div class="p-3 bg-light rounded border h-100">
+                        <h5 class="h6 font-weight-bold text-danger">Clause 33(b): Principal Disallowance u/s 43B(h) / Section 44(h)</h5>
+                        <p class="small text-muted mb-2">
+                            Under Section 43B(h), any sum payable by the assessee to a <strong>Micro or Small Enterprise</strong> beyond the time limit specified in Section 15 of the MSMED Act, 2006:
+                        </p>
+                        <div class="callout callout-danger py-2 px-3 my-1 small">
+                            <strong>Mandatory Add-Back:</strong> Shall be allowed as a deduction <strong>ONLY in the previous year in which such sum is actually paid</strong>, notwithstanding that the liability was incurred during the tax year!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sub-section 7.2: Statutory Time Limits under MSMED Act -->
+    <div class="card mb-4 border-primary">
+        <div class="card-header bg-primary text-white font-weight-bold">
+            7.2 Statutory Time Limits under Section 15 of the MSMED Act, 2006
+        </div>
+        <div class="card-body">
+            <p class="small text-muted mb-3">
+                Section 15 of the MSMED Act prescribes strict, non-negotiable payment deadlines from the "appointed day" (date of acceptance or deemed acceptance of goods/services):
+            </p>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th style="width: 30%;">Contractual Scenario</th>
+                            <th style="width: 35%;">Statutory Payment Time Limit</th>
+                            <th style="width: 35%;">Tax Consequences of Default</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Case 1: No Written Agreement</strong></td>
+                            <td>Payment must be made within <strong class="text-danger">15 DAYS</strong> from the date of delivery/acceptance.</td>
+                            <td class="small">If unpaid on the 16th day and outstanding as on 31st March: Disallowed in current tax year.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Case 2: Written Agreement with Term &le; 45 Days</strong></td>
+                            <td>Payment must be made within the <strong>agreed period</strong> (e.g., 30 days).</td>
+                            <td class="small">If unpaid beyond the agreed days and outstanding on 31st March: Disallowed in current tax year.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Case 3: Written Agreement with Term &gt; 45 Days</strong></td>
+                            <td>Statutory ceiling of <strong class="text-danger">45 DAYS</strong> strictly applies! (Any clause exceeding 45 days is void ab initio).</td>
+                            <td class="small">Payment made beyond 45 days is legally delayed. If outstanding on 31st March, it is disallowed.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Crucial Distinction on Return Filing Date -->
+            <div class="callout callout-warning mt-3 mb-0">
+                <div class="d-flex align-items-center mb-1">
+                    <i class="fa-solid fa-triangle-exclamation mr-2 font-weight-bold text-danger"></i>
+                    <strong class="text-danger font-weight-bold">CRITICAL TAX DISTINCTION — Proviso to Section 43B Does NOT Apply to Section 43B(h)!</strong>
+                </div>
+                <p class="small mb-0">
+                    For all other statutory liabilities under Section 43B (taxes, PF, bonus, bank interest), deduction is allowed if payment is made <strong>on or before the due date of furnishing the return of income</strong> under Section 263(1).<br>
+                    <strong>HOWEVER, Section 43B(h) is deliberately excluded from the Proviso!</strong> Paying an MSME after the 15/45-day statutory window (even if paid before the return filing due date) will NOT save the deduction in the year of accrual! It is disallowed in the current year and allowed only in the next tax year when actually paid.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sub-section 7.3: Scope & Applicability Rules -->
+    <div class="card mb-4 border-info">
+        <div class="card-header bg-info text-white font-weight-bold">
+            7.3 Enterprise Classification &amp; Auditor Verification Checklists
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h6 class="font-weight-bold text-primary mb-2">Who Qualifies as an MSME Supplier?</h6>
+                    <ul class="styled-list small mb-0">
+                        <li><strong>Micro Enterprise:</strong> Investment in Plant &amp; Machinery &le; ₹ 1 Crore AND Turnover &le; ₹ 5 Crores;</li>
+                        <li><strong>Small Enterprise:</strong> Investment &le; ₹ 10 Crores AND Turnover &le; ₹ 50 Crores;</li>
+                        <li><strong>Medium Enterprises are EXCLUDED:</strong> Section 43B(h) does NOT apply to sums payable to Medium enterprises (> ₹ 50 Cr turnover);</li>
+                        <li><strong>Mandatory Udyam Registration:</strong> The supplier must possess a valid Udyam Registration Certificate on the date of supply.</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <h6 class="font-weight-bold text-primary mb-2">Exclusion of Wholesale &amp; Retail Traders</h6>
+                    <p class="small text-muted mb-2">
+                        As per Office Memorandum issued by the Ministry of MSME, wholesale and retail traders are eligible for Udyam registration solely for Priority Sector Lending (PSL) benefits.
+                    </p>
+                    <div class="p-2 bg-light rounded border small">
+                        <strong>Legal Position:</strong> The benefits of Section 15 of the MSMED Act do not extend to traders. Consequently, <strong>Section 43B(h) disallowance does NOT apply to outstanding dues payable to traders</strong>! It applies strictly to suppliers engaged in manufacturing or provision of services.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ========================================== -->
+<!-- SECTION 8: FORM 26 PART D: CLAUSES 41 TO 53 -->
+<!-- ========================================== -->
+<section id="sec-form26-part-d3" class="content-section">
+    <div class="section-header">
+        <span class="section-tag">Special Tax Compliances</span>
+        <h2>8. Form 26 Part D: Detailed Reporting Requirements [Clauses 41 to 53]</h2>
+    </div>
+
+    <p class="lead-text">
+        The concluding segment of Part D (Clauses 41 to 53) addresses specialized corporate and international tax compliances—including Corporate Social Responsibility (CSR), interest limitation under thin capitalization, cash loan restrictions, quantitative inventory reconciliations, and comprehensive TDS/TCS audits.
+    </p>
+
+    <div class="table-responsive mb-4">
+        <table class="table table-bordered table-striped table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th style="width: 12%;">Clause</th>
+                    <th style="width: 38%;">Reporting Domain &amp; Statutory Subject</th>
+                    <th style="width: 50%;">Detailed Reporting Obligations &amp; Audit Verification</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Clause 41 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 41</strong></td>
+                    <td>
+                        <strong>Corporate Social Responsibility (CSR) Expenditure:</strong><br>
+                        Disallowance under Section 37(1) Explanation 2.
+                    </td>
+                    <td class="small">
+                        Report all expenditure incurred by the company towards CSR activities under Section 135 of the Companies Act, 2013 debited to P&amp;L. By virtue of Explanation 2 to Section 37(1), CSR expenditure is statutorily deemed as NOT incurred for business purposes, and is fully disallowable.
+                    </td>
+                </tr>
+
+                <!-- Clause 42 -->
+                <tr class="table-warning">
+                    <td><strong class="text-primary font-weight-bold">Clause 42</strong></td>
+                    <td>
+                        <strong>Thin Capitalization / Interest Limitation u/s 177 / 94B:</strong><br>
+                        Excess interest paid to Associated Enterprises (AEs).
+                    </td>
+                    <td class="small">
+                        <ul class="mb-0 pl-3">
+                            <li>Applies to Indian companies and permanent establishments paying interest on debt to non-resident AEs exceeding <strong>₹ 1 Crore</strong>;</li>
+                            <li>Deduction of interest is capped at <strong>30% of EBITDA</strong>;</li>
+                            <li><strong>Deemed AE Debt [Sec 177(2)]:</strong> Where debt is issued by an unrelated lender (e.g. Indian branch of foreign bank) but guaranteed by a non-resident AE, or where AE deposits matching funds, the debt is deemed to be issued by an AE! (Tested in TYK 3).</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <!-- Clause 43 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 43</strong></td>
+                    <td>
+                        <strong>Foreign Remittances (Form 145 / 15CA / 15CB):</strong><br>
+                        Remittances to non-residents.
+                    </td>
+                    <td class="small">
+                        Disclose all foreign remittances made during the tax year reported in Part D of Form 145 / Form 15CA, and verify whether CA certificates in Form 15CB were obtained.
+                    </td>
+                </tr>
+
+                <!-- Clause 44 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 44</strong></td>
+                    <td>
+                        <strong>Amounts Not Includible in Total Income:</strong><br>
+                        Exempt income and DTAA relief.
+                    </td>
+                    <td class="small">
+                        List all receipts/incomes credited to the P&amp;L account which are claimed as exempt from income-tax under Chapter III (Sections 10 to 13) or pursuant to Double Taxation Avoidance Agreements (DTAAs).
+                    </td>
+                </tr>
+
+                <!-- Clause 45 -->
+                <tr class="table-danger">
+                    <td><strong class="text-danger font-weight-bold">Clause 45</strong></td>
+                    <td>
+                        <strong>Cash Loans, Deposits &amp; Repayments:</strong><br>
+                        Sections 493, 494 &amp; 495 (Old 269SS, 269T &amp; 269ST).
+                    </td>
+                    <td class="small">
+                        Comprehensive verification of cash restrictions:
+                        <ul class="mb-0 pl-3">
+                            <li><strong>45(a):</strong> Taking or accepting loan, deposit, or specified sum &ge; ₹ 20,000 in contravention of Section 493;</li>
+                            <li><strong>45(b):</strong> Repaying loan, deposit, or specified advance &ge; ₹ 20,000 in contravention of Section 494;</li>
+                            <li><strong>45(c):</strong> Receiving cash &ge; ₹ 2,00,000 in contravention of Section 495 (single day, single transaction, or relating to one event).</li>
+                            <li>Auditor must report name, PAN, address of person, amount, and mode of transaction.</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <!-- Clause 46 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 46</strong></td>
+                    <td>
+                        <strong>Statement of Financial Transactions (SFT):</strong><br>
+                        Compliance with Section 507 (Form 95 / 61A).
+                    </td>
+                    <td class="small">
+                        Report whether the assessee was required to furnish SFT in Form 95 / Form 61A, whether furnished within due date, and details of transactions reported.
+                    </td>
+                </tr>
+
+                <!-- Clause 47 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 47</strong></td>
+                    <td>
+                        <strong>Shares Issued at Premium (Angel Tax):</strong><br>
+                        Compliance with Section 56(2)(viib).
+                    </td>
+                    <td class="small">
+                        Where an unquoted company issues shares to any person at a premium: Report consideration received, face value, and fair market value (FMV) determined as per Rule 11UA.
+                    </td>
+                </tr>
+
+                <!-- Clause 48 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 48</strong></td>
+                    <td>
+                        <strong>Deemed Dividend under Section 2(22)(e) / Section 87:</strong><br>
+                        Loans or advances to substantial shareholders.
+                    </td>
+                    <td class="small">
+                        Report any payment by a closely held company by way of advance or loan to a shareholder holding &ge; 10% voting power or to an entity where such shareholder has a substantial interest (&ge; 20%), to the extent of accumulated profits.
+                    </td>
+                </tr>
+
+                <!-- Clause 49 & 50 -->
+                <tr class="table-info">
+                    <td><strong class="text-primary font-weight-bold">Clauses 49 &amp; 50</strong></td>
+                    <td>
+                        <strong>Comprehensive TDS &amp; TCS Compliance:</strong><br>
+                        Chapter XIX-B audit verification.
+                    </td>
+                    <td class="small">
+                        <ul class="mb-0 pl-3">
+                            <li><strong>Clause 49:</strong> Furnish all Tax Deduction and Collection Account Numbers (TAN);</li>
+                            <li><strong>Clause 50(a):</strong> Whether assessee is required to deduct/collect tax;</li>
+                            <li><strong>Clause 50(b):</strong> Detailed schedule for each section: TAN, Section, nature of payment, total amount of payment, amount liable to tax, amount on which tax was deducted, amount of tax deposited, challan numbers, and interest payable u/s 201(1A)/206C(7). (Tested in TYK 4).</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <!-- Clause 51 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 51</strong></td>
+                    <td>
+                        <strong>Disallowance for TDS Statement Defaults:</strong><br>
+                        Compliance with Section 397(3) / 200(3).
+                    </td>
+                    <td class="small">
+                        Report amounts inadmissible under Section 35(b)(i) / 40(a) where the deductor failed to deliver quarterly TDS/TCS statements within the prescribed time limit.
+                    </td>
+                </tr>
+
+                <!-- Clause 52 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 52</strong></td>
+                    <td>
+                        <strong>Indirect Tax Liabilities &amp; Reconciliations:</strong><br>
+                        GST, Customs, and Central Excise.
+                    </td>
+                    <td class="small">
+                        Report indirect tax registration numbers, total turnover as per books vs total turnover reported in GST returns (GSTR-9 / GSTR-9C), and reconcile any differences.
+                    </td>
+                </tr>
+
+                <!-- Clause 53 -->
+                <tr>
+                    <td><strong class="text-primary font-weight-bold">Clause 53</strong></td>
+                    <td>
+                        <strong>Quantitative Inventory Details:</strong><br>
+                        Trading and manufacturing units.
+                    </td>
+                    <td class="small">
+                        Schedule of physical quantities for trading goods, raw materials, and finished goods: Opening stock, purchases/production, sales/consumption, closing stock, shortages/wastages, and percentage of yield/loss.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 9: MANDATORY FEES [SECTION 428(c)] -->
+<!-- ========================================== -->
+<section id="sec-fees-audit" class="content-section">
+    <div class="section-header">
+        <span class="section-tag">Decriminalized Administrative Charges</span>
+        <h2>9. Mandatory Administrative Fees for Tax Audit Failure [Section 428(c)]</h2>
+    </div>
+
+    <p class="lead-text">
+        Under modern tax administration, routine delays in filing the tax audit report have been decoupled from subjective, litigious penalty proceedings (erstwhile Section 271B) and converted into <strong>automatic, mandatory administrative late fees under Section 428(c)</strong>.
+    </p>
+
+    <div class="card mb-4 border-danger">
+        <div class="card-header bg-danger text-white font-weight-bold">
+            Statutory Fee Schedule under Section 428(c)
+        </div>
+        <div class="card-body">
+            <p>
+                As per <strong>Section 428(c)</strong> of the Income-tax Act, 2025, if any person fails to get his accounts audited in respect of any tax year or fails to furnish the tax audit report by the specified date under Section 63, he shall be liable to pay the following mandatory administrative fee:
+            </p>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped text-center">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th style="width: 50%;">Period of Delay in Furnishing Tax Audit Report</th>
+                            <th style="width: 50%;">Mandatory Administrative Fee Payable</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Delay up to ONE MONTH</strong> from the specified date</td>
+                            <td><strong class="text-danger" style="font-size: 18px;">₹ 75,000</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Delay BEYOND ONE MONTH</strong></td>
+                            <td><strong class="text-danger" style="font-size: 18px;">₹ 1,50,000</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-warning mt-3 mb-0">
+                <strong>Statutory Turnover Cap:</strong><br>
+                The fee leviable under Section 428(c) is subject to an overall ceiling of <strong>0.75% of total sales, turnover, or gross receipts</strong>, or ₹ 1,50,000, whichever is lower! Furthermore, because Section 428(c) is an administrative fee, the defense of "reasonable cause" under Section 470 cannot be invoked to waive it.
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 10: ETHICAL COMPLIANCES & CA MISCONDUCT -->
+<!-- ========================================== -->
+<section id="sec-ca-ethics" class="content-section">
+    <div class="section-header">
+        <span class="section-tag">Professional Standards &amp; Disciplinary Code</span>
+        <h2>10. Ethical Compliances &amp; Professional Misconduct of Chartered Accountants</h2>
+    </div>
+
+    <p class="lead-text">
+        A tax audit is a public-trust statutory engagement. The Chartered Accountant acts not merely as an agent of the assessee, but as an independent quasi-judicial certifying officer assisting the Sovereign Republic in revenue determination. Failure to discharge professional duties with integrity, independence, and due diligence invites severe disciplinary proceedings under the <strong>Chartered Accountants Act, 1949</strong>.
+    </p>
+
+    <!-- Sub-section 10.1: Council Guidelines on Audit Limits -->
+    <div class="card mb-4 border-primary">
+        <div class="card-header bg-primary text-white font-weight-bold">
+            10.1 Maximum Ceiling on Tax Audit Assignments [Council Guidelines No. 1-CA(7)/02/2008]
+        </div>
+        <div class="card-body">
+            <p class="small text-muted mb-2">
+                To maintain audit quality and prevent commercial over-solicitation, the Council of ICAI has prescribed strict quantitative ceilings:
+            </p>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="p-3 bg-light rounded border h-100">
+                        <h6 class="font-weight-bold text-primary mb-2">Individual Member &amp; Partner Limit:</h6>
+                        <ul class="styled-list small mb-0">
+                            <li>A Chartered Accountant in practice, whether in individual capacity or as a partner of a firm, cannot accept <strong>more than 60 tax audit assignments</strong> under Section 63 in a financial year.</li>
+                            <li>In a partnership firm, the limit applies at <strong>60 audits per partner</strong> (e.g. a firm with 4 partners can accept a maximum of 240 tax audits).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <div class="p-3 bg-light rounded border h-100">
+                        <h6 class="font-weight-bold text-success mb-2">Statutory Exclusions from Ceiling:</h6>
+                        <ul class="styled-list small mb-0">
+                            <li>Audits conducted under presumptive taxation schemes (Section 57 / 44AD, Section 58 / 44ADA, Section 59 / 44AE) are <strong>excluded</strong> from the 60-audit ceiling;</li>
+                            <li>Audits conducted for branches do not count towards the parent entity ceiling.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sub-section 10.2: Second Schedule Professional Misconduct -->
+    <div class="card mb-4 border-danger">
+        <div class="card-header bg-danger text-white font-weight-bold">
+            10.2 Professional Misconduct Provisions under the Second Schedule to the CA Act, 1949
+        </div>
+        <div class="card-body">
+            <p class="small text-muted mb-3">
+                The Disciplinary Directorate of ICAI actively prosecutes tax auditors under the following fundamental clauses of the <strong>Second Schedule to the Chartered Accountants Act, 1949</strong>:
+            </p>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th style="width: 25%;">Disciplinary Provision</th>
+                            <th style="width: 35%;">Nature of Professional Default</th>
+                            <th style="width: 40%;">Practical Tax Audit Application &amp; Precedents</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Clause 7 of Part I of Second Schedule -->
+                        <tr class="table-danger">
+                            <td>
+                                <strong class="text-danger font-weight-bold">Clause (7) of Part I, Second Schedule</strong>
+                            </td>
+                            <td>
+                                <strong>Failure to Exercise Due Diligence or Gross Negligence:</strong><br>
+                                A CA in practice is guilty of misconduct if he "fails to exercise due diligence, or is grossly negligent in the conduct of his professional duties".
+                            </td>
+                            <td class="small">
+                                <ul class="mb-0 pl-3">
+                                    <li>Marking "No" for cash payments > ₹ 10,000 u/s 40A(3) relying solely on management representation without verifying cash books (TYK 5);</li>
+                                    <li>Certifying Section 146 (80JJAA) deduction for employees whose salary exceeds ₹ 25,000 p.m. without checking payroll registers (TYK 6);</li>
+                                    <li>Failure to report non-deduction of TDS on transport charges in Clause 50 (TYK 4).</li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <!-- Clause 8 of Part I of Second Schedule -->
+                        <tr class="table-warning">
+                            <td>
+                                <strong class="text-danger font-weight-bold">Clause (8) of Part I, Second Schedule</strong>
+                            </td>
+                            <td>
+                                <strong>Failure to Obtain Sufficient Information:</strong><br>
+                                A CA in practice is guilty of misconduct if he "fails to obtain sufficient information which is necessary for expression of an opinion or its exceptions are sufficiently material to negate the expression of an opinion".
+                            </td>
+                            <td class="small">
+                                <ul class="mb-0 pl-3">
+                                    <li>Issuing Form 146 payee certificate without inspecting books of account or verified tax returns (TYK 7);</li>
+                                    <li>Signing Form 26 without examining bank statements or loan agreements;</li>
+                                    <li>Blindly accepting client summaries without independent corroboration.</li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <!-- Clause 1 of Part II of Second Schedule -->
+                        <tr>
+                            <td>
+                                <strong class="text-primary font-weight-bold">Clause (1) of Part II, Second Schedule</strong>
+                            </td>
+                            <td>
+                                <strong>Contravention of Act, Regulations, or Guidelines:</strong><br>
+                                Contravenes any of the provisions of this Act, regulations made thereunder, or any guideline issued by the Council.
+                            </td>
+                            <td class="small">
+                                Accepting more than 60 tax audit assignments in violation of Council Guidelines No. 1-CA(7)/02/2008.
+                            </td>
+                        </tr>
+
+                        <!-- Clause 8 of Part I of First Schedule -->
+                        <tr>
+                            <td>
+                                <strong class="text-primary font-weight-bold">Clause (8) of Part I, First Schedule</strong>
+                            </td>
+                            <td>
+                                <strong>Non-Communication with Previous Auditor:</strong><br>
+                                Accepts a position as auditor previously held by another chartered accountant without first communicating with him in writing.
+                            </td>
+                            <td class="small">
+                                Tax auditor must send written communication via Registered Post with Acknowledgement Due (RPAD) or traceable official email to the previous tax auditor prior to accepting appointment.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-info mt-3 mb-0">
+                <strong>Disciplinary Sanctions:</strong><br>
+                Under Section 21B of the Chartered Accountants Act, 1949, where the Disciplinary Committee finds a member guilty of misconduct under the Second Schedule, it may: (i) <strong>Reprimand</strong> the member; (ii) <strong>Remove the member’s name from the Register permanently or for a specified period</strong>; and/or (iii) Impose a fine which may extend up to <strong>₹ 5,00,000</strong>!
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ========================================== -->
+<!-- SECTION 11: TEST YOUR KNOWLEDGE (TYK 1 TO 7) -->
+<!-- ========================================== -->
+<section id="sec-tyk" class="content-section">
+    <div class="section-header">
+        <span class="section-tag">ICAI Test Your Knowledge</span>
+        <h2>11. ICAI Test Your Knowledge (TYK Questions 1 to 7)</h2>
+    </div>
+
+    <p class="lead-text">
+        Below are all 7 comprehensive Test Your Knowledge (TYK) questions from the official ICAI Study Material, complete with rigorous statutory analysis, mathematical calculations, and professional ethics disciplinary evaluations.
+    </p>
+
+    <!-- TYK 1 -->
+    <div class="card mb-4 border-primary" id="tyk-1">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <span class="font-weight-bold">Question 1: Business Tax Audit &amp; 5% Cash Threshold (Sunlight &amp; Co.)</span>
+            <span class="badge badge-light text-primary">TYK 1</span>
+        </div>
+        <div class="card-body">
+            <p class="card-text font-weight-bold">
+                Sunlight &amp; Co., a partnership firm engaged in trading of electronic goods, has a turnover of ₹ 2,65,00,000 for the T.Y. 2026-27. Its financial particulars are as under:
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-sm">
+                    <thead class="thead-light">
+                        <tr>
+                            <th style="width: 70%;">Particulars</th>
+                            <th style="width: 30%;" class="text-right">Amount (₹)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>(i) Total turnover of T.Y. 2026-27</td>
+                            <td class="text-right">2,65,00,000</td>
+                        </tr>
+                        <tr>
+                            <td>(ii) Aggregate of all receipts during the year (including turnover)</td>
+                            <td class="text-right">2,90,00,000</td>
+                        </tr>
+                        <tr>
+                            <td>(iii) Cash receipts out of (i) above</td>
+                            <td class="text-right">14,00,000</td>
+                        </tr>
+                        <tr>
+                            <td>(iv) Cash receipts out of (ii) above (inclusive of figure in (iii))</td>
+                            <td class="text-right">16,00,000</td>
+                        </tr>
+                        <tr>
+                            <td>(v) Aggregate of all payments during the year</td>
+                            <td class="text-right">1,35,00,000</td>
+                        </tr>
+                        <tr>
+                            <td>(vi) Cash payments out of (v) above</td>
+                            <td class="text-right">6,95,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="font-weight-bold">
+                (a) Is Sunlight &amp; Co. required to get its accounts audited under section 63?<br>
+                (b) Would your answer change if the cash receipts indicated in (iii) is ₹ 13 Lakh instead of ₹ 14 Lakh?
+            </p>
+
+            <button class="btn btn-outline-primary btn-sm mb-3" onclick="toggleSolution('sol-1')">
+                <i class="fa-solid fa-eye"></i> Show / Hide Solution
+            </button>
+
+            <div id="sol-1" class="solution-box p-3 bg-light rounded border" style="display: none;">
+                <h5 class="h6 font-weight-bold text-success">Statutory Analysis &amp; Step-by-Step Solution:</h5>
+                <div class="mb-3">
+                    <h6 class="font-weight-bold text-dark">1. Applicable Legal Provisions [Section 63(1)(a)]:</h6>
+                    <ul class="small mb-2">
+                        <li>Under Section 63(1)(a), every person carrying on business is required to get his accounts audited if his total sales, turnover or gross receipts exceed <strong>₹ 1 Crore</strong>.</li>
+                        <li>However, the threshold is elevated to <strong>₹ 10 Crores</strong> if:
+                            <ol class="pl-3">
+                                <li>Aggregate cash receipts in the tax year &le; 5% of aggregate receipts; <span class="badge badge-secondary">AND</span></li>
+                                <li>Aggregate cash payments in the tax year &le; 5% of aggregate payments.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="table-responsive mb-3">
+                    <table class="table table-bordered table-sm text-center">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Test</th>
+                                <th>Numerator (Cash)</th>
+                                <th>Denominator (Total)</th>
+                                <th>Percentage</th>
+                                <th>Threshold Limit</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Receipts Test</strong></td>
+                                <td>₹ 16,00,000</td>
+                                <td>₹ 2,90,00,000</td>
+                                <td class="font-weight-bold text-danger">5.52%</td>
+                                <td>&le; 5%</td>
+                                <td><span class="badge badge-danger">FAILED (> 5%)</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Payments Test</strong></td>
+                                <td>₹ 6,95,000</td>
+                                <td>₹ 1,35,00,000</td>
+                                <td class="font-weight-bold text-danger">5.15%</td>
+                                <td>&le; 5%</td>
+                                <td><span class="badge badge-danger">FAILED (> 5%)</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="p-2 bg-white rounded border small mb-3">
+                    <p class="mb-1">
+                        <strong>Conclusion for Part (a):</strong> Since both cash receipts (5.52%) and cash payments (5.15%) exceed 5%, Sunlight &amp; Co. is NOT eligible for the ₹ 10 Crore safe harbour. Since its turnover of ₹ 2.65 Crore exceeds ₹ 1 Crore, <strong>the firm is MANDATORILY REQUIRED to get its accounts audited under Section 63</strong>.
+                    </p>
+                    <p class="mb-0 text-muted">
+                        <em>Presumptive Taxation Note:</em> Sunlight &amp; Co. cannot declare profits under Section 57 (Old 44AD) because its turnover exceeds ₹ 2 Crores and its cash receipts exceed 5% of turnover (₹ 14L / ₹ 265L = 5.28% > 5%).
+                    </p>
+                </div>
+
+                <div class="p-2 bg-white rounded border small">
+                    <h6 class="font-weight-bold text-primary mb-1">Part (b): If Cash Receipts from Turnover are ₹ 13 Lakh instead of ₹ 14 Lakh:</h6>
+                    <ul class="mb-0 pl-3">
+                        <li>Cash receipts out of turnover as a percentage of turnover = ₹ 13,00,000 / ₹ 2,65,00,000 = <strong class="text-success">4.91%</strong> (&le; 5%).</li>
+                        <li>Under Section 57(1), the turnover limit for presumptive taxation is elevated from <strong>₹ 2 Crores to ₹ 3 Crores</strong> if cash receipts from turnover do not exceed 5%!</li>
+                        <li>Since turnover is ₹ 2.65 Crores (within ₹ 3 Crores), Sunlight &amp; Co. <strong>can opt for presumptive taxation under Section 57</strong> and declare profits &ge; 8% / 6%.</li>
+                        <li>If the firm declares profits as per Section 57, <strong>it will NOT be required to get its accounts audited under Section 63!</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TYK 2 -->
+    <div class="card mb-4 border-primary" id="tyk-2">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <span class="font-weight-bold">Question 2: Bearer Cheques &amp; Safe Harbour Disqualification (Mr. Abhinav Ahuja)</span>
+            <span class="badge badge-light text-primary">TYK 2</span>
+        </div>
+        <div class="card-body">
+            <p class="card-text font-weight-bold">
+                Mr. Abhinav Ahuja runs a travel agency business since 2010. His total turnover for T.Y. 2026-27 is ₹ 2,90,57,400. Receipts and payments details:
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-sm small">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Transaction &amp; Date</th>
+                            <th class="text-right">Amount (₹)</th>
+                            <th>Mode of Receipt / Payment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Receipts via UPI, NEFT &amp; A/c Payee Cheques (15.4.26 to 17.3.27)</td>
+                            <td class="text-right">1,29,58,400</td>
+                            <td>BHIM UPI, NEFT, A/c payee cheques</td>
+                        </tr>
+                        <tr class="table-danger">
+                            <td>Receipt on 07.05.2026</td>
+                            <td class="text-right font-weight-bold">13,35,000</td>
+                            <td><strong class="text-danger">Bearer Cheque</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Other aggregate receipts (&le; ₹ 2,000 per person)</td>
+                            <td class="text-right">1,44,21,600</td>
+                            <td>A/c payee cheques, NEFT, UPI (Except ₹ 52,500 in cash)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total Receipts</strong></td>
+                            <td class="text-right font-weight-bold">2,87,15,000</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Aggregate of all payments made during T.Y. 2026-27</td>
+                            <td class="text-right font-weight-bold">2,58,00,000</td>
+                            <td>Electronic &amp; banking modes</td>
+                        </tr>
+                        <tr class="table-danger">
+                            <td>Cash payments incurred for expenditure (&le; ₹ 10,000 per person)</td>
+                            <td class="text-right font-weight-bold text-danger">20,58,000</td>
+                            <td>Cash</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="font-weight-bold">
+                Mr. Abhinav contended that he is not required to get his accounts audited since his turnover is less than ₹ 10 Crores and cash receipts are less than 5%. Examine his contention.
+            </p>
+
+            <button class="btn btn-outline-primary btn-sm mb-3" onclick="toggleSolution('sol-2')">
+                <i class="fa-solid fa-eye"></i> Show / Hide Solution
+            </button>
+
+            <div id="sol-2" class="solution-box p-3 bg-light rounded border" style="display: none;">
+                <h5 class="h6 font-weight-bold text-success">Statutory Analysis &amp; Cash Calculation:</h5>
+                <div class="mb-2 small">
+                    <h6 class="font-weight-bold text-dark">1. Legal Rule on Bearer Cheques:</h6>
+                    <p class="mb-1">
+                        Under the Explanation to Section 63, receipt or payment by a cheque which is NOT an account payee cheque <strong>SHALL BE DEEMED TO BE A RECEIPT OR PAYMENT IN CASH</strong>. Therefore, the bearer cheque of ₹ 13,35,000 must be treated as CASH!
+                    </p>
+                    <ul>
+                        <li>Total Cash Receipts = Bearer cheque (₹ 13,35,000) + Cash (₹ 52,500) = <strong class="text-primary">₹ 13,87,500</strong>.</li>
+                        <li>Total Receipts = ₹ 2,87,15,000.</li>
+                        <li>Percentage of Cash Receipts = ₹ 13,87,500 / ₹ 2,87,15,000 = <strong class="text-success">4.83%</strong> (&le; 5%). <em>(Receipts test is satisfied).</em></li>
+                    </ul>
+                </div>
+
+                <div class="mb-2 small">
+                    <h6 class="font-weight-bold text-dark">2. Verification of Cash Payments:</h6>
+                    <ul>
+                        <li>Total Cash Payments = <strong class="text-danger">₹ 20,58,000</strong>.</li>
+                        <li>Total Payments = ₹ 2,58,00,000.</li>
+                        <li>Percentage of Cash Payments = ₹ 20,58,000 / ₹ 2,58,00,000 = <strong class="text-danger font-weight-bold">7.98%</strong> (> 5%!).</li>
+                        <li><strong>Payments Test FAILED!</strong> The cash payments exceed the 5% statutory limit.</li>
+                    </ul>
+                </div>
+
+                <div class="p-2 bg-white rounded border small">
+                    <h6 class="font-weight-bold text-dark mb-1">3. Ineligibility for Presumptive Taxation &amp; Conclusion:</h6>
+                    <ul class="mb-0 pl-3">
+                        <li>Under Section 57(6) (Old 44AD(6)), a person carrying on an <strong>agency business</strong> is explicitly excluded from the presumptive taxation scheme. Since Mr. Abhinav runs a travel agency, he cannot opt for Section 57.</li>
+                        <li>Because cash payments exceed 5%, the ₹ 10 Crore safe harbour is NOT available.</li>
+                        <li>Since his turnover of ₹ 2.90 Crore exceeds the general threshold of ₹ 1 Crore, <strong>Mr. Abhinav Ahuja is MANDATORILY REQUIRED to get his accounts audited under Section 63</strong>!</li>
+                        <li><strong>His contention is therefore INCORRECT.</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TYK 3 -->
+    <div class="card mb-4 border-primary" id="tyk-3">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <span class="font-weight-bold">Question 3: Thin Capitalization Reporting &amp; Deemed AE Debt (X Ltd.)</span>
+            <span class="badge badge-light text-primary">TYK 3</span>
+        </div>
+        <div class="card-body">
+            <p class="card-text font-weight-bold">
+                X Ltd., an Indian company, paid interest of ₹ 95 Lakhs to X Inc., a non-resident associated enterprise (AE). X Ltd. also took a loan of ₹ 5 Crores from Y Inc. (Indian branch of a foreign bank, an unrelated lender) and paid interest of ₹ 50 Lakhs. X Inc. had provided a guarantee to Y Inc. and deposited matching funds of ₹ 3 Crores.
+            </p>
+            <p class="card-text font-weight-bold">
+                The tax auditor is of the view that interest paid to Y Inc. is also subject to thin capitalization reporting under Section 177 / Clause 42. The management contends that since Y Inc. is an unrelated bank, its interest is not covered. Discuss the auditor's reporting responsibility.
+            </p>
+
+            <button class="btn btn-outline-primary btn-sm mb-3" onclick="toggleSolution('sol-3')">
+                <i class="fa-solid fa-eye"></i> Show / Hide Solution
+            </button>
+
+            <div id="sol-3" class="solution-box p-3 bg-light rounded border" style="display: none;">
+                <h5 class="h6 font-weight-bold text-success">Statutory Analysis &amp; Guidance Note Reporting:</h5>
+                <div class="small">
+                    <h6 class="font-weight-bold text-dark mb-1">1. Relevant Statutory Law [Section 177(2) / Old Sec 94B(2)]:</h6>
+                    <p class="mb-2">
+                        Under Section 177(2), where debt is issued by a lender which is not an associated enterprise, the debt shall be <strong>deemed to have been issued by an associated enterprise</strong> if:
+                        (a) an associated enterprise provides an implicit or explicit guarantee to such lender; or
+                        (b) deposits a corresponding and matching amount of funds with the lender.
+                    </p>
+                    <h6 class="font-weight-bold text-dark mb-1">2. Scope of Deemed AE Debt:</h6>
+                    <p class="mb-2">
+                        In this case, since X Inc. (AE) provided a guarantee and deposited matching funds of ₹ 3 Crores against the ₹ 5 Crore loan from Y Inc., the debt issued by Y Inc. is deemed to be issued by an AE. However, a debate arises whether the entire loan of ₹ 5 Crores is deemed to be from an AE, or only the guaranteed/deposited portion of ₹ 3 Crores.
+                    </p>
+                    <h6 class="font-weight-bold text-dark mb-1">3. Reporting Obligation under Clause 42 / 41(a) of Form 26:</h6>
+                    <ul class="mb-0 pl-3">
+                        <li>As per <strong>Para 18.6 of the ICAI Guidance Note on Tax Audit</strong>, where there is a difference of opinion between the management and the tax auditor regarding the interpretation of a legal provision, the tax auditor must NOT simply accept management's contention without qualification.</li>
+                        <li>The tax auditor must state <strong>both viewpoints</strong> in Clause 42 of Part D of Form 26;</li>
+                        <li>Furthermore, the auditor must record the difference of opinion as an <strong>observation in Paragraph 5 of Part A / Part B of Form 26</strong>, quantifying the financial impact on interest disallowance!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TYK 4 -->
+    <div class="card mb-4 border-primary" id="tyk-4">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <span class="font-weight-bold">Question 4: Transport Contractor TDS Reporting &amp; CA Ethics (ABC Ltd.)</span>
+            <span class="badge badge-light text-primary">TYK 4</span>
+        </div>
+        <div class="card-body">
+            <p class="card-text font-weight-bold">
+                ABC Ltd. is engaged in transportation of building materials. It paid truck hiring charges of ₹ 45 Lakhs to individual truck owners (holding less than 10 goods carriages) without deducting TDS, as they furnished PAN declarations under section 393(4) / 194C(6).
+            </p>
+            <p class="card-text font-weight-bold">
+                The tax auditor is of the view that since no tax was deductible, these transactions need not be reported in Form 26. What is the reporting responsibility of the tax auditor and the consequent ethical implications?
+            </p>
+
+            <button class="btn btn-outline-primary btn-sm mb-3" onclick="toggleSolution('sol-4')">
+                <i class="fa-solid fa-eye"></i> Show / Hide Solution
+            </button>
+
+            <div id="sol-4" class="solution-box p-3 bg-light rounded border" style="display: none;">
+                <h5 class="h6 font-weight-bold text-success">Reporting Responsibility &amp; Disciplinary Code:</h5>
+                <div class="small">
+                    <h6 class="font-weight-bold text-dark mb-1">1. Reporting Mandate under Clause 50(a) of Form 26:</h6>
+                    <p class="mb-2">
+                        Under <strong>Clause 50(a) of Form 26</strong>, the tax auditor is required to report whether the assessee is required to deduct or collect tax as per the provisions of Chapter XIX-B. Payments made to transport contractors under Section 194C are squarely liable to TDS, unless exempted by furnishing PAN under Section 194C(6).<br>
+                        <strong>The tax auditor is legally required to report these payments in Clause 50(a)</strong>, showing the gross amount paid, the fact that PAN was obtained, and that tax was deducted at NIL rate!
+                    </p>
+                    <h6 class="font-weight-bold text-dark mb-1">2. Ethical Implications under the Chartered Accountants Act, 1949:</h6>
+                    <ul class="mb-0 pl-3">
+                        <li><strong>Clause (7) of Part I of Second Schedule:</strong> If the tax auditor omits to report these transactions under Clause 50(a), he <strong>fails to exercise due diligence</strong> and is grossly negligent in the conduct of his professional duties.</li>
+                        <li><strong>Clause (8) of Part I of Second Schedule:</strong> If the auditor failed to obtain and verify the declarations and PANs of the truck operators, he is guilty of <strong>failing to obtain sufficient information</strong> necessary for expression of an opinion.</li>
+                        <li>Consequently, the tax auditor is liable to disciplinary action under Section 21B of the Chartered Accountants Act, 1949!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TYK 5 -->
+    <div class="card mb-4 border-primary" id="tyk-5">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <span class="font-weight-bold">Question 5: Management Representation vs Due Diligence in Cash Payments (LMN Ltd.)</span>
+            <span class="badge badge-light text-primary">TYK 5</span>
+        </div>
+        <div class="card-body">
+            <p class="card-text font-weight-bold">
+                A search under section 247 on LMN Ltd. (engaged in jewellery business) revealed that the company made unrecorded cash payments exceeding ₹ 10,000 each to customers. In Form 26, the tax auditor had marked "No" in response to Clause 30 (cash payments u/s 40A(3)), stating that he relied on a Management Representation Letter that no cash payments exceeded ₹ 10,000. Examine the ethical implications.
+            </p>
+
+            <button class="btn btn-outline-primary btn-sm mb-3" onclick="toggleSolution('sol-5')">
+                <i class="fa-solid fa-eye"></i> Show / Hide Solution
+            </button>
+
+            <div id="sol-5" class="solution-box p-3 bg-light rounded border" style="display: none;">
+                <h5 class="h6 font-weight-bold text-success">Professional Misconduct Evaluation:</h5>
+                <div class="small">
+                    <h6 class="font-weight-bold text-dark mb-1">1. Duty of Tax Auditor under Clause 30 &amp; ICAI Guidance Note:</h6>
+                    <p class="mb-2">
+                        Under Clause 30 of Form 26, the tax auditor must report cash payments exceeding ₹ 10,000 disallowable under Section 40A(3). The ICAI Guidance Note on Tax Audit clarifies that while practical difficulties exist in verifying cash transactions, the tax auditor must examine primary cash vouchers, cash book records, bank statements, and bearer cheque leaves.
+                    </p>
+                    <h6 class="font-weight-bold text-dark mb-1">2. Nature of Business &amp; Reliance on Management Representation:</h6>
+                    <p class="mb-2">
+                        Considering the high-risk, cash-intensive nature of the <strong>jewellery trade</strong>, the tax auditor was legally bound to conduct test checks and independent verification. A Management Representation Letter is corroborative evidence; it <strong>cannot substitute for primary audit procedures</strong>! If the auditor was unable to verify cash payments due to inadequate records, he was required to qualify his report in <strong>Paragraph 5 of Part A / Part B</strong>, which he failed to do.
+                    </p>
+                    <h6 class="font-weight-bold text-dark mb-1">3. Disciplinary Finding:</h6>
+                    <div class="callout callout-danger py-2 px-3 my-1">
+                        The tax auditor failed to exercise due diligence. He is deemed guilty of professional misconduct under <strong>Clause (7) of Part I of the Second Schedule to the Chartered Accountants Act, 1949</strong> (gross negligence / failure to exercise due diligence) and <strong>Clause (8)</strong> (failure to obtain sufficient information).
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TYK 6 -->
+    <div class="card mb-4 border-primary" id="tyk-6">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <span class="font-weight-bold">Question 6: Employee Emoluments Ceiling u/s 146 &amp; Clause 38 Reporting (XYZ &amp; Co.)</span>
+            <span class="badge badge-light text-primary">TYK 6</span>
+        </div>
+        <div class="card-body">
+            <p class="card-text font-weight-bold">
+                XYZ &amp; Co., an interior decoration firm, employed 20 new employees on 01.04.2026 at a monthly salary of ₹ 28,000 (Basic Salary ₹ 24,000 + Transport &amp; Special Allowance ₹ 4,000). The firm claimed deduction under section 146 (Old 80JJAA) of ₹ 18 Lakhs (30% of ₹ 60 Lakhs).
+            </p>
+            <p class="card-text font-weight-bold">
+                The Chartered Accountant certified Form 25 and reported the deduction in Clause 38 of Form 26, contending that basic salary was less than ₹ 25,000 p.m. Is his contention correct? Examine the ethical implications.
+            </p>
+
+            <button class="btn btn-outline-primary btn-sm mb-3" onclick="toggleSolution('sol-6')">
+                <i class="fa-solid fa-eye"></i> Show / Hide Solution
+            </button>
+
+            <div id="sol-6" class="solution-box p-3 bg-light rounded border" style="display: none;">
+                <h5 class="h6 font-weight-bold text-success">Statutory Analysis &amp; Disciplinary Code:</h5>
+                <div class="small">
+                    <h6 class="font-weight-bold text-dark mb-1">1. Statutory Ceiling under Section 146 / Section 80JJAA:</h6>
+                    <p class="mb-1">
+                        Under the Explanation to Section 146, an "additional employee" does <strong>NOT include an employee whose total emoluments exceed ₹ 25,000 per month</strong>!
+                    </p>
+                    <p class="mb-2">
+                        "Emoluments" means any sum paid or payable to an employee in lieu of his employment by whatever name called (including allowances). Since total emoluments are <strong>₹ 28,000 per month</strong>, the 20 new employees do NOT qualify as additional employees. Hence, XYZ &amp; Co. is <strong>NOT eligible for deduction under Section 146</strong>! The contention of the CA is completely INCORRECT.
+                    </p>
+                    <h6 class="font-weight-bold text-dark mb-1">2. Ethical Implications under CA Act, 1949:</h6>
+                    <ul class="mb-0 pl-3">
+                        <li>The Chartered Accountant certified an inadmissible claim in Form 25 and wrongly confirmed it in Clause 38 of Form 26;</li>
+                        <li>This failure to apply clear statutory definitions constitutes <strong>gross negligence in the conduct of professional duties</strong>;</li>
+                        <li>The CA is guilty of professional misconduct under <strong>Clause (7) of Part I of the Second Schedule to the Chartered Accountants Act, 1949</strong>!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TYK 7 -->
+    <div class="card mb-4 border-primary" id="tyk-7">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <span class="font-weight-bold">Question 7: False Certification in Form 146 &amp; Second Schedule Misconduct</span>
+            <span class="badge badge-light text-primary">TYK 7</span>
+        </div>
+        <div class="card-body">
+            <p class="card-text font-weight-bold">
+                The Income-tax Department collected documents from ABC Bank revealing that a Chartered Accountant had issued Form 146 certificates (payee certificate for non-deduction of TDS u/s 393(1)) for multiple housing loan borrowers. During inquiry, the CA admitted that he issued the certificates based merely on invoices produced by borrowers, without examining their books of account or verified tax returns, and collected fees partly in cash. Examine the ethical implications.
+            </p>
+
+            <button class="btn btn-outline-primary btn-sm mb-3" onclick="toggleSolution('sol-7')">
+                <i class="fa-solid fa-eye"></i> Show / Hide Solution
+            </button>
+
+            <div id="sol-7" class="solution-box p-3 bg-light rounded border" style="display: none;">
+                <h5 class="h6 font-weight-bold text-success">Professional Misconduct Analysis:</h5>
+                <div class="small">
+                    <h6 class="font-weight-bold text-dark mb-1">1. Statutory Significance of Form 146:</h6>
+                    <p class="mb-2">
+                        Form 146 is a statutory certificate wherein an accountant certifies that he has examined the books of account and documents of the payee, verified that the payee furnished return of income u/s 263, took into account such sum for computing taxable income, and paid the tax due thereon.
+                    </p>
+                    <h6 class="font-weight-bold text-dark mb-1">2. Disciplinary Findings under CA Act, 1949:</h6>
+                    <ul class="mb-0 pl-3">
+                        <li><strong>Clause (7) of Part I, Second Schedule:</strong> Issuing statutory certificates without examining books of account or tax returns constitutes <strong>gross negligence and absolute failure to exercise due diligence</strong>.</li>
+                        <li><strong>Clause (8) of Part I, Second Schedule:</strong> Certifying compliance without obtaining sufficient audit evidence and verified returns attracts misconduct for <strong>failure to obtain sufficient information</strong> necessary for expression of an opinion.</li>
+                        <li>The Chartered Accountant is liable for disciplinary inquiry before the Disciplinary Committee, leading to reprimand, cancellation of certificate of practice, and removal of name from the Register of Members.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+            <!-- Bottom Navigation Bar -->
+            <div class="bottom-nav">
+                <a href="unethical_tax_practices.html" class="nav-btn prev">
+                    <i class="fa-solid fa-arrow-left"></i> Previous Chapter: Unethical Tax Practices &amp; Black Money (Ch 19)
+                </a>
+                <a href="../../notes/dtnotes.html" class="nav-btn" style="background-color: var(--slate-100); color: var(--slate-700); border: 1px solid var(--slate-300);">
+                    <i class="fa-solid fa-table-cells"></i> DT Notes Hub
+                </a>
+                <a href="non_resident_taxation.html" class="nav-btn next">
+                    Next Chapter: Non-Resident Taxation &amp; Special Regimes (Ch 21) <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </main>
+    </div> <!-- end .page-wrapper -->
+
+    <!-- Interactive Scripts -->
+    <script>
+        (function() {
+            // 1. Reading Progress Bar
+            const progressBar = document.getElementById('reading-progress');
+            window.addEventListener('scroll', () => {
+                const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+                if (totalHeight > 0) {
+                    const progress = (window.scrollY / totalHeight) * 100;
+                    progressBar.style.width = Math.min(100, Math.max(0, progress)) + '%';
+                }
+            });
+
+            // 2. Sidebar Search & Filter
+            const searchInput = document.getElementById('sidebar-search-input');
+            const menuLinks = document.querySelectorAll('.sidebar-link');
+            const sectionTitles = document.querySelectorAll('.sidebar-section-title');
+
+            if (searchInput) {
+                searchInput.addEventListener('input', (e) => {
+                    const query = e.target.value.toLowerCase().trim();
+                    menuLinks.forEach(link => {
+                        const text = link.textContent.toLowerCase();
+                        const parent = link.closest('.sidebar-item');
+                        if (text.includes(query)) {
+                            parent.style.display = 'block';
+                        } else {
+                            parent.style.display = 'none';
+                        }
+                    });
+
+                    // Show section title if any child link is visible
+                    sectionTitles.forEach(title => {
+                        let nextEl = title.nextElementSibling;
+                        let hasVisible = false;
+                        while (nextEl && nextEl.classList.contains('sidebar-item')) {
+                            if (nextEl.style.display !== 'none') {
+                                hasVisible = true;
+                                break;
+                            }
+                            nextEl = nextEl.nextElementSibling;
+                        }
+                        title.style.display = (!query || hasVisible) ? 'block' : 'none';
+                    });
+                });
+            }
+
+            // Keyboard shortcut Ctrl+K to search
+            window.addEventListener('keydown', (e) => {
+                if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                    e.preventDefault();
+                    if (searchInput) {
+                        searchInput.focus();
+                        searchInput.select();
+                    }
+                }
+            });
+
+            // 3. Active Link Highlighting on Scroll (Scrollspy)
+            const sections = document.querySelectorAll('.content-section, [id^="sec-"]');
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 130;
+                    if (window.scrollY >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                menuLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (current && link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        })();
+
+        // 4. Toggle TYK Solution Function
+        function toggleSolution(id) {
+            const sol = document.getElementById(id);
+            if (!sol) return;
+            const btn = sol.previousElementSibling;
+            if (sol.style.display === 'none' || sol.style.display === '') {
+                sol.style.display = 'block';
+                if (btn) {
+                    btn.innerHTML = '<i class="fa-solid fa-eye-slash"></i> Hide Solution';
+                }
+            } else {
+                sol.style.display = 'none';
+                if (btn) {
+                    btn.innerHTML = '<i class="fa-solid fa-eye"></i> Show / Hide Solution';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

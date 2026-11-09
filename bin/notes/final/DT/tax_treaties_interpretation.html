@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 26: Application and Interpretation of Tax Treaties &amp; MLI | CA Final DT Notes | Calcium Notes</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Master CA Final Direct Tax Chapter 26: Application and Interpretation of Tax Treaties &amp; MLI. Exhaustive coverage of VCLT Articles 26, 27, 31, 32, 33, Connecting Factors (Residence vs Source), Constitutional Powers (Articles 51(c) &amp; 253), Canons of Treaty Interpretation (Golden Rule, Purposive, Effectiveness, Contemporanea Expositio), MFN Clause &amp; Supreme Court Nestle Ruling, Ambulatory vs Static Approach, and Synthesised Texts.">
+    <meta name="keywords" content="Tax Treaties, Interpretation of DTAA, VCLT, Vienna Convention on Law of Treaties, Article 31 VCLT, Article 32 VCLT, Connecting Factors, Juridical Double Taxation, Economic Double Taxation, MFN Clause, Supreme Court Nestle Ruling, Ambulatory Approach, Static Approach, Section 90, Section 159, CA Final DT Notes AY 2025-26, AY 2026-27">
+    <meta name="author" content="Calcium Notes">
+    <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/DT/tax_treaties_interpretation.html">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- MathJax for KaTeX math formatting -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
+            --primary-dark: #0f172a;
+            --accent: #d97706;
+            --accent-light: #fef3c7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --info: #0284c7;
+            --info-light: #e0f2fe;
+            --warning: #ca8a04;
+            --warning-light: #fef9c3;
+            --slate-50: #f8fafc;
+            --slate-100: #f1f5f9;
+            --slate-200: #e2e8f0;
+            --slate-300: #cbd5e1;
+            --slate-400: #94a3b8;
+            --slate-500: #64748b;
+            --slate-600: #475569;
+            --slate-700: #334155;
+            --slate-800: #1e293b;
+            --slate-900: #0f172a;
+            --border-color: #e2e8f0;
+            --card-bg: #ffffff;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --font-heading: 'Outfit', var(--font-sans);
+            --font-mono: 'Fira Code', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--slate-50);
+            color: var(--slate-800);
+            line-height: 1.65;
+            font-size: 15px;
+            overflow-x: hidden;
+        }
+
+        /* Reading Progress Bar */
+        #reading-progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            z-index: 1000;
+        }
+
+        #reading-progress {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #3b82f6, #0284c7, #16a34a);
+            transition: width 0.1s ease-out;
+        }
+
+        /* Layout Structure */
+        .page-wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 320px;
+            background-color: #ffffff;
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            z-index: 100;
+        }
+
+        .sidebar-header {
+            padding: 24px 20px 16px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sidebar-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .sidebar-brand i {
+            font-size: 1.4rem;
+            color: var(--primary-light);
+        }
+
+        .sidebar-brand span {
+            color: var(--accent);
+        }
+
+        .sidebar-search {
+            padding: 14px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sidebar-search-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: var(--slate-100);
+            padding: 8px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--slate-200);
+        }
+
+        .sidebar-search-box i {
+            color: var(--slate-400);
+            font-size: 13px;
+        }
+
+        .sidebar-search-box input {
+            border: none;
+            background: transparent;
+            font-size: 13px;
+            width: 100%;
+            color: var(--slate-700);
+            outline: none;
+            font-family: var(--font-sans);
+        }
+
+        .sidebar-nav {
+            list-style: none;
+            padding: 14px 12px;
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+
+        .sidebar-section-title {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--slate-400);
+            padding: 12px 10px 6px 10px;
+        }
+
+        .sidebar-item {
+            margin-bottom: 3px;
+        }
+
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 12px;
+            border-radius: 6px;
+            color: var(--slate-600);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .sidebar-link:hover {
+            background-color: var(--slate-100);
+            color: var(--primary);
+        }
+
+        .sidebar-link.active {
+            background-color: #eff6ff;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .sidebar-badge {
+            font-size: 10.5px;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background-color: var(--slate-200);
+            color: var(--slate-600);
+            font-family: var(--font-mono);
+        }
+
+        .sidebar-link.active .sidebar-badge {
+            background-color: var(--primary);
+            color: #ffffff;
+        }
+
+        .sidebar-footer {
+            padding: 14px 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 12px;
+            color: var(--slate-400);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sidebar-footer a {
+            color: var(--primary-light);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex-grow: 1;
+            padding: 40px 48px 80px 48px;
+            max-width: 1120px;
+        }
+
+        @media (max-width: 1024px) {
+            .page-wrapper { flex-direction: column; }
+            .sidebar { width: 100%; height: auto; position: relative; }
+            .main-content { padding: 24px 20px; }
+        }
+
+        /* Chapter Header Banner */
+        .chapter-header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            border-radius: 14px;
+            padding: 36px 40px;
+            color: #ffffff;
+            margin-bottom: 36px;
+            box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chapter-header::after {
+            content: "";
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.25) 0%, rgba(255, 255, 255, 0) 70%);
+            border-radius: 50%;
+        }
+
+        .chapter-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(8px);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #93c5fd;
+            margin-bottom: 14px;
+        }
+
+        .chapter-title {
+            font-family: var(--font-heading);
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 14px;
+            letter-spacing: -0.02em;
+        }
+
+        .chapter-desc {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #cbd5e1;
+            max-width: 900px;
+            margin-bottom: 22px;
+        }
+
+        .chapter-meta-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            padding-top: 18px;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+
+        .meta-pill {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #e2e8f0;
+        }
+
+        .meta-pill i {
+            color: #38bdf8;
+        }
+
+        /* Section Cards */
+        .section-card {
+            margin-bottom: 40px;
+            scroll-margin-top: 30px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--slate-200);
+        }
+
+        .section-number {
+            font-family: var(--font-mono);
+            font-size: 14px;
+            font-weight: 700;
+            color: #ffffff;
+            background: var(--primary);
+            padding: 4px 10px;
+            border-radius: 6px;
+            white-space: nowrap;
+        }
+
+        .section-title-wrap {
+            flex-grow: 1;
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--slate-900);
+            line-height: 1.3;
+        }
+
+        .section-subtitle {
+            font-size: 13.5px;
+            color: var(--slate-500);
+            margin-top: 4px;
+        }
+
+        /* Statutory Boxes */
+        .statutory-box {
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            border-left: 5px solid var(--primary);
+            border-radius: 10px;
+            padding: 22px;
+            margin-bottom: 22px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+        }
+
+        .statutory-box-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--primary);
+            margin-bottom: 12px;
+            border-bottom: 1px dashed var(--slate-200);
+            padding-bottom: 8px;
+        }
+
+        .statutory-box-body {
+            font-size: 14.5px;
+            line-height: 1.65;
+            color: var(--slate-700);
+        }
+
+        .statutory-box-body p {
+            margin-bottom: 10px;
+        }
+
+        .statutory-box-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        .theory-card {
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+        }
+
+        .theory-title {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--slate-900);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .theory-title i {
+            color: var(--primary-light);
+        }
+
+        /* Callouts */
+        .callout {
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 18px 0;
+            font-size: 14.5px;
+            line-height: 1.6;
+        }
+
+        .callout-header {
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .callout-info {
+            background-color: var(--info-light);
+            border-left: 4px solid var(--info);
+            color: #0369a1;
+        }
+
+        .callout-warning {
+            background-color: var(--warning-light);
+            border-left: 4px solid var(--warning);
+            color: #854d0e;
+        }
+
+        .callout-danger {
+            background-color: var(--danger-light);
+            border-left: 4px solid var(--danger);
+            color: #991b1b;
+        }
+
+        .callout-success {
+            background-color: var(--success-light);
+            border-left: 4px solid var(--success);
+            color: #166534;
+        }
+
+        /* Tables */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 18px 0;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background: #fff;
+        }
+
+        .tax-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13.5px;
+            text-align: left;
+        }
+
+        .tax-table th {
+            background-color: var(--slate-100);
+            color: var(--slate-700);
+            font-weight: 600;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .tax-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--slate-100);
+            color: var(--slate-700);
+            vertical-align: top;
+        }
+
+        .tax-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .tax-table tbody tr:hover {
+            background-color: var(--slate-50);
+        }
+
+        .badge-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .tag-success { background: var(--success-light); color: var(--success); }
+        .tag-danger { background: var(--danger-light); color: var(--danger); }
+        .tag-warning { background: var(--warning-light); color: var(--warning); }
+        .tag-info { background: var(--info-light); color: var(--info); }
+        .tag-primary { background: #dbeafe; color: var(--primary); }
+
+        /* Examples & Solutions */
+        .example-box {
+            background-color: #ffffff;
+            border: 1px solid #e0e7ff;
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            scroll-margin-top: 30px;
+        }
+
+        .example-title {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #3730a3;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-solution {
+            background-color: #eff6ff;
+            color: var(--primary);
+            border: 1px solid #bfdbfe;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin: 14px 0 6px 0;
+            transition: all 0.2s ease;
+        }
+
+        .btn-solution:hover {
+            background-color: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+        }
+
+        .solution-card {
+            display: none;
+            background-color: var(--slate-50);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 14px;
+        }
+
+        /* Lists */
+        .styled-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 10px 0;
+        }
+
+        .styled-list li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 8px;
+            color: var(--slate-700);
+        }
+
+        .styled-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: 700;
+        }
+
+        /* Grids */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 18px;
+            margin: 16px 0;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 16px 0;
+        }
+
+        /* Bottom Nav */
+        .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .nav-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--slate-700);
+            padding: 10px 18px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .nav-btn:hover {
+            background-color: var(--slate-50);
+            border-color: var(--primary-light);
+            color: var(--primary);
+        }
+
+        .nav-label {
+            font-size: 11px;
+            color: var(--slate-400);
+            text-transform: uppercase;
+        }
+
+        .nav-title {
+            font-size: 14px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div id="reading-progress-container">
+        <div id="reading-progress"></div>
+    </div>
+
+    <div class="page-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="../../notes/dtnotes.html" class="sidebar-brand">
+                    <i class="fa-solid fa-scale-unbalanced-flip"></i>
+                    <div>Calcium <span>DT Notes</span></div>
+                </a>
+            </div>
+
+            <div class="sidebar-search">
+                <div class="sidebar-search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="sidebar-search-input" placeholder="Quick find topic/principle...">
+                </div>
+            </div>
+
+            <ul class="sidebar-nav">
+                <li class="sidebar-section-title">1. Foundations of Tax Treaties</li>
+                <li class="sidebar-item">
+                    <a href="#sec-intro" class="sidebar-link">
+                        <span>Sources of Int'l Law</span>
+                        <span class="sidebar-badge">26.1</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-double-taxation" class="sidebar-link">
+                        <span>Connecting Factors</span>
+                        <span class="sidebar-badge">26.2</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-treaties-overview" class="sidebar-link">
+                        <span>Treaty Powers &amp; Types</span>
+                        <span class="sidebar-badge">26.3</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-section-title">2. VCLT &amp; Canons of Interpretation</li>
+                <li class="sidebar-item">
+                    <a href="#sec-vclt-rules" class="sidebar-link">
+                        <span>VCLT Arts 26, 27, 31-33</span>
+                        <span class="sidebar-badge">26.4</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-interpretation-canons" class="sidebar-link">
+                        <span>Canons of Interpretation</span>
+                        <span class="sidebar-badge">Golden &bull; Purposive</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-section-title">3. Extrinsic Aids, MFN &amp; Approaches</li>
+                <li class="sidebar-item">
+                    <a href="#sec-extrinsic-aids" class="sidebar-link">
+                        <span>Extrinsic Aids &amp; OECD</span>
+                        <span class="sidebar-badge">Commentaries</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-mfn-nestle" class="sidebar-link">
+                        <span>MFN &amp; Nestle SC Ruling</span>
+                        <span class="sidebar-badge">Cir 3/2022</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-ambulatory-static" class="sidebar-link">
+                        <span>Ambulatory vs Static</span>
+                        <span class="sidebar-badge">Art 3(2) &bull; MLI</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-section-title">4. Practical Application (TYK)</li>
+                <li class="sidebar-item">
+                    <a href="#sec-tyk" class="sidebar-link">
+                        <span>ICAI TYK (Q1 to Q5)</span>
+                        <span class="sidebar-badge">TYK 1-5</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-1" class="sidebar-link">
+                        <span>TYK 1: Connecting Factors</span>
+                        <span class="sidebar-badge">Residence/Source</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-2" class="sidebar-link">
+                        <span>TYK 2: Treaty Objectives</span>
+                        <span class="sidebar-badge">Allocation</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-3" class="sidebar-link">
+                        <span>TYK 3: Article 31 VCLT</span>
+                        <span class="sidebar-badge">General Rule</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-4" class="sidebar-link">
+                        <span>TYK 4: Extrinsic Aids</span>
+                        <span class="sidebar-badge">Travaux</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-5" class="sidebar-link">
+                        <span>TYK 5: Matrix Inc MFN Case</span>
+                        <span class="sidebar-badge">Nestle Ruling</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <span>AY 2025-26 &amp; AY 2026-27</span>
+                <a href="../../notes/dtnotes.html"><i class="fa-solid fa-list-check"></i> Index</a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header Hero Banner -->
+            <div class="chapter-header">
+                <div class="chapter-tag">
+                    <i class="fa-solid fa-scale-balanced"></i> CA Final Direct Tax Laws &bull; Module 4: International Taxation &amp; Tax Treaties
+                </div>
+                <h1 class="chapter-title">Chapter 26: Application and Interpretation of Tax Treaties &amp; MLI</h1>
+                <p class="chapter-desc">
+                    Exhaustive study notes on the legal architecture, constitutional foundations, and judicial interpretation of Double Taxation Avoidance Agreements (DTAAs) under public international law. Covers the Vienna Convention on the Law of Treaties (VCLT Articles 26, 27, 31, 32, 33), Connecting Factors (Residence vs Source links), Constitutional Treaty Powers (Articles 51(c) &amp; 253 of the Constitution of India), Canons of Customary International Law (Golden Rule, Purposive/Teleological Approach, Principle of Effectiveness, Liberal Construction), Extrinsic Aids (OECD/UN Commentaries, Travaux Préparatoires), the landmark Supreme Court ruling in <em>Nestle SA</em> on the Most Favoured Nation (MFN) clause, Ambulatory vs Static Approaches under Article 3(2), and Synthesised Texts under the Multilateral Instrument (MLI).
+                </p>
+                <div class="chapter-meta-bar">
+                    <div class="meta-pill"><i class="fa-solid fa-book-bookmark"></i> VCLT Articles 26, 27, 31, 32, 33</div>
+                    <div class="meta-pill"><i class="fa-solid fa-landmark"></i> Indian Constitution Articles 51(c) &amp; 253</div>
+                    <div class="meta-pill"><i class="fa-solid fa-gavel"></i> SC Landmark Ruling in Nestle SA (2023)</div>
+                    <div class="meta-pill"><i class="fa-solid fa-graduation-cap"></i> 5 ICAI TYK Questions Fully Solved</div>
+                </div>
+            </div>
+
+<!-- ========================================================================= -->
+<!-- MODULE 1: SOURCES OF INT'L LAW, CONNECTING FACTORS & TREATIES OVERVIEW    -->
+<!-- ========================================================================= -->
+
+<!-- 26.1 INTRODUCTION & SOURCES OF INTERNATIONAL LAW -->
+<section id="sec-intro" class="section-card">
+    <div class="section-header">
+        <div class="section-number">26.1</div>
+        <div class="section-title-wrap">
+            <h2 class="section-title">Introduction &amp; Sources of Public International Law</h2>
+            <div class="section-subtitle">Article 38(1) of the International Court of Justice (ICJ) &amp; The Philosophy of Treaties</div>
+        </div>
+        <span class="badge-tag tag-primary">International Jurisprudence</span>
+    </div>
+
+    <div class="theory-card">
+        <div class="theory-title"><i class="fa-solid fa-scale-balanced"></i> 1. Sources of International Law [Article 38(1) of the ICJ Statute]</div>
+        <p>
+            The success of any law depends upon the manner in which it is interpreted and administered. Tax treaties are international agreements governed by public international law. Under <strong>Article 38(1) of the Statute of the International Court of Justice (ICJ)</strong>, the recognized sources of international law applied in resolving international disputes are:
+        </p>
+
+        <div class="grid-2">
+            <div style="background: var(--slate-100); padding: 16px; border-radius: 8px; border-left: 4px solid var(--primary);">
+                <h4 style="color: var(--primary); margin-bottom: 6px;">(a) International Conventions (Treaties)</h4>
+                <p style="font-size: 13.5px; color: var(--slate-700);">
+                    International conventions, whether general or particular, establishing rules expressly recognized by the contesting states (e.g. bilateral DTAAs, VCLT, Multilateral Instrument).
+                </p>
+            </div>
+            <div style="background: var(--slate-100); padding: 16px; border-radius: 8px; border-left: 4px solid var(--success);">
+                <h4 style="color: var(--success); margin-bottom: 6px;">(b) International Custom</h4>
+                <p style="font-size: 13.5px; color: var(--slate-700);">
+                    International custom, as evidence of a general, uniform practice accepted as law (*opinio juris sive necessitatis*).
+                </p>
+            </div>
+            <div style="background: var(--slate-100); padding: 16px; border-radius: 8px; border-left: 4px solid var(--warning);">
+                <h4 style="color: var(--warning); margin-bottom: 6px;">(c) General Principles of Law</h4>
+                <p style="font-size: 13.5px; color: var(--slate-700);">
+                    The general principles of law recognized by civilized nations (e.g. *pacta sunt servanda*, good faith, equity, estoppel, non-discrimination).
+                </p>
+            </div>
+            <div style="background: var(--slate-100); padding: 16px; border-radius: 8px; border-left: 4px solid var(--info);">
+                <h4 style="color: var(--info); margin-bottom: 6px;">(d) Judicial Decisions &amp; Scholarly Teachings</h4>
+                <p style="font-size: 13.5px; color: var(--slate-700);">
+                    Judicial decisions of international and national courts, and the teachings of the most highly qualified publicists of various nations, as subsidiary means for determining rules of law.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 26.2 DOUBLE TAXATION & CONNECTING FACTORS -->
+<section id="sec-double-taxation" class="section-card">
+    <div class="section-header">
+        <div class="section-number">26.2</div>
+        <div class="section-title-wrap">
+            <h2 class="section-title">Double Taxation &amp; The Two Connecting Factors</h2>
+            <div class="section-subtitle">Juridical vs. Economic Double Taxation, Residence Link, Source Link &amp; Conflicts [TYK Q1]</div>
+        </div>
+        <span class="badge-tag tag-warning">Foundational Tax Concepts</span>
+    </div>
+
+    <div class="theory-card">
+        <div class="theory-title"><i class="fa-solid fa-arrows-split-up-and-left"></i> 1. Juridical Double Taxation vs. Economic Double Taxation</div>
+        <div class="table-responsive">
+            <table class="tax-table">
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">Dimension</th>
+                        <th style="width: 38%;">Juridical Double Taxation</th>
+                        <th style="width: 37%;">Economic Double Taxation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Definition</strong></td>
+                        <td>Imposition of comparable income taxes in two (or more) sovereign states on the <strong>same taxpayer</strong> in respect of the <strong>same subject matter</strong> and for <strong>identical tax periods</strong>.</td>
+                        <td>Imposition of income taxes in two (or more) sovereign states on <strong>different taxpayers</strong> in respect of the <strong>same economic income or transaction</strong>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Classic Example</strong></td>
+                        <td>An Indian resident company earns technical fees in Singapore; Singapore taxes it at source, and India taxes it on a worldwide residence basis.</td>
+                        <td>Transfer pricing upward adjustment to an Indian subsidiary's income without any corresponding downward adjustment in the foreign parent's books.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Treaty Mechanism</strong></td>
+                        <td>Eliminated bilaterally via <strong>Article 23A (Exemption)</strong> or <strong>Article 23B (Credit Method)</strong> of DTAAs.</td>
+                        <td>Addressed through <strong>Article 9(2) (Corresponding Adjustment)</strong> and <strong>Article 25 (MAP)</strong>.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="theory-card">
+        <div class="theory-title"><i class="fa-solid fa-link"></i> 2. The Two Connecting Factors: Doing Business "WITH" vs. "IN" a Country</div>
+        <p>
+            Sovereign tax jurisdiction is predicated upon an entity's degree of connection with the territory. Internationally, these are known as <strong>Connecting Factors</strong>:
+        </p>
+
+        <div class="grid-2">
+            <div style="background: var(--slate-100); padding: 18px; border-radius: 8px;">
+                <h4 style="color: var(--primary); margin-bottom: 8px;"><i class="fa-solid fa-house-chimney-user"></i> 1. The Residence Link (Personal Attachment)</h4>
+                <p style="font-size: 13.5px; color: var(--slate-700);">
+                    Based on personal attachment to a sovereign state. A country taxes its residents on their <strong>worldwide / global income</strong>, irrespective of where the income originates.
+                    <br>&bull; <em>Individuals:</em> Physical presence, domicile, citizenship, habitual abode.
+                    <br>&bull; <em>Corporates:</em> Place of incorporation, Place of Effective Management (POEM).
+                </p>
+            </div>
+            <div style="background: var(--slate-100); padding: 18px; border-radius: 8px;">
+                <h4 style="color: var(--warning); margin-bottom: 8px;"><i class="fa-solid fa-building-flag"></i> 2. The Source Link (Economic Attachment)</h4>
+                <p style="font-size: 13.5px; color: var(--slate-700);">
+                    Based on economic allegiance. A country taxes income that originates within its geographic borders because the entity utilizes its economic infrastructure, markets, and legal protection.
+                    <br>&bull; <em>Doing Business WITH a Country:</em> Merely exporting goods from abroad &rarr; <strong>No Source Taxation</strong>.
+                    <br>&bull; <em>Doing Business IN a Country:</em> Establishing a branch, office, factory (Permanent Establishment), or Significant Economic Presence &rarr; <strong>Source Country has Taxing Rights</strong>!
+                </p>
+            </div>
+        </div>
+
+        <h4 style="font-family: var(--font-heading); margin-top: 18px; margin-bottom: 8px; color: var(--slate-900);">
+            The Three Types of Cross-Border Tax Conflicts:
+        </h4>
+        <ul class="styled-list">
+            <li><strong>Residence-Source Conflict:</strong> The most frequent conflict. State R taxes worldwide income on residence link, while State S taxes the same income on source link. Resolved by DTAA Articles 6 to 22 (allocation) and Article 23 (credit/exemption).</li>
+            <li><strong>Residence-Residence Conflict:</strong> An entity is deemed resident in two sovereign states simultaneously under their respective domestic laws (dual residency). Resolved by <strong>Tie-Breaker Rules</strong> in Article 4(2) (individuals: permanent home &rarr; center of vital interests &rarr; habitual abode &rarr; nationality &rarr; MAP) and Article 4(3) / MLI Article 4 (entities: mutual agreement between Competent Authorities based on POEM).</li>
+            <li><strong>Source-Source Conflict:</strong> Two states both claim to be the source state due to divergent domestic sourcing rules (e.g., one state sources services where performed, while the other sources where utilized/paid). Resolved through DTAA definition harmonization or MAP.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- 26.3 TAX TREATIES: AN OVERVIEW & CONSTITUTIONAL POWERS -->
+<section id="sec-treaties-overview" class="section-card">
+    <div class="section-header">
+        <div class="section-number">26.3</div>
+        <div class="section-title-wrap">
+            <h2 class="section-title">Tax Treaties: Overview, Nature &amp; Indian Constitutional Powers</h2>
+            <div class="section-subtitle">VCLT Definition, Distributive Rules, Articles 51(c) &amp; 253 of the Constitution &amp; Section 159</div>
+        </div>
+        <span class="badge-tag tag-primary">Constitutional Architecture</span>
+    </div>
+
+    <div class="statutory-box">
+        <div class="statutory-box-header">
+            <span><i class="fa-solid fa-file-contract"></i> Definition of "Treaty" &mdash; Article 2(1)(a) of the VCLT (1969)</span>
+            <span class="badge-tag tag-primary">VCLT Code</span>
+        </div>
+        <div class="statutory-box-body">
+            <p>
+                <strong>"Treaty"</strong> means an <em>international agreement concluded between States in written form and governed by international law</em>, whether embodied in a single instrument or in two or more related instruments and whatever its particular designation.
+            </p>
+        </div>
+    </div>
+
+    <div class="theory-card">
+        <div class="theory-title"><i class="fa-solid fa-handshake"></i> 1. The Fundamental Nature of Tax Treaties: Allocation, Not Imposition!</div>
+        <p>
+            A fundamental tenet of international tax law is that <strong>a tax treaty does not impose tax</strong>. A DTAA is a bargain between sovereign states designed to divide tax sources and limit domestic taxing rights:
+        </p>
+        <ul class="styled-list">
+            <li><strong>Classification and Assignment Rule:</strong> English jurists describe tax treaties as "Classification and Assignment Rules", while German scholars designate them as <em>Distributionsnormen</em> (Distributive Rules).</li>
+            <li><strong>Taxing Rights Allocation:</strong>
+                <br>&bull; <em>Exclusive Residence Taxation:</em> Source state renounces all taxing rights (e.g. business profits without PE under Article 7; shipping/air transport under Article 8; residual other income under Article 21).
+                <br>&bull; <em>Shared / Limited Taxation:</em> Source state taxes up to a specified negotiated cap (e.g. 5%, 10%, or 15% on Dividends, Interest, Royalties, FTS under Articles 10 to 12A); Residence state relieves double taxation under Article 23.
+            </li>
+            <li><strong>Domestic Law Supremacy:</strong> Once the treaty assigns jurisdiction to a state, that state's <strong>domestic tax law determines the computation, deductions, tax rates, and procedural enforcement</strong>. If domestic law does not tax an item, the treaty cannot create a new tax liability!</li>
+        </ul>
+    </div>
+
+    <!-- CONSTITUTIONAL POWERS IN INDIA -->
+    <div class="statutory-box">
+        <div class="statutory-box-header">
+            <span><i class="fa-solid fa-landmark"></i> Constitutional Authority for Treaty-Making in India</span>
+            <span class="badge-tag tag-success">Union Authority</span>
+        </div>
+        <div class="statutory-box-body">
+            <p>In the Indian constitutional structure, international treaty-making powers are distributed as follows:</p>
+            <div class="table-responsive" style="margin: 10px 0;">
+                <table class="tax-table">
+                    <thead>
+                        <tr>
+                            <th>Constitutional / Statutory Provision</th>
+                            <th>Conferment of Legal Power</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Article 51(c) of the Constitution</strong><br>(Directive Principles)</td>
+                            <td>Mandates that the State shall endeavor to <strong>"foster respect for international law and treaty obligations in the dealings of organized peoples with one another."</strong> Cited by the Supreme Court as a foundational canon of treaty observance.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Article 253 of the Constitution</strong><br>(Legislation for Treaties)</td>
+                            <td>Empowers Parliament to make any law for the whole or any part of the territory of India for <strong>implementing any treaty, agreement, or convention with any other country</strong> or international body, overriding State List entries.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Entries 10 &amp; 14 of Union List</strong><br>(Seventh Schedule, List I)</td>
+                            <td>Confers exclusive legislative competence upon Parliament with respect to <em>Foreign affairs</em> (Entry 10) and <em>Entering into treaties and agreements with foreign countries and implementing treaties</em> (Entry 14).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Section 159 of Income-tax Act, 2025</strong><br>(Sec 90 of 1961 Act)</td>
+                            <td>Statutory delegation conferring authority on the <strong>Central Government</strong> to enter into an agreement with the Government of any country outside India and notify it in the Official Gazette for avoidance of double taxation, exchange of information, or recovery of tax.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><em>Statutory Contrast:</em> While <strong>Section 159</strong> is the enabling provision for entering into bilateral tax treaties, <strong>Section 160</strong> (Sec 91) provides unilateral relief for non-treaty countries and does not constitute treaty-making authority.</p>
+        </div>
+    </div>
+
+    <div class="theory-card">
+        <div class="theory-title"><i class="fa-solid fa-bullseye"></i> 2. Objectives of Entering into Tax Treaties Beyond Double Taxation Relief [TYK Q2]</div>
+        <p>
+            Entering into DTAAs serves multiple vital economic and sovereign purposes beyond merely eliminating double taxation:
+        </p>
+        <div class="grid-3">
+            <div style="background: var(--slate-100); padding: 14px; border-radius: 6px;">
+                <strong>1. Tax Certainty &amp; Stability:</strong> Provides investors and MNEs with a stable, predictable legal framework, insulating them from unpredictable domestic law shifts.
+            </div>
+            <div style="background: var(--slate-100); padding: 14px; border-radius: 6px;">
+                <strong>2. Non-Discrimination [Art 24]:</strong> Guarantees that nationals and enterprises of one state will not be subjected to more burdensome taxation in the other state than local nationals.
+            </div>
+            <div style="background: var(--slate-100); padding: 14px; border-radius: 6px;">
+                <strong>3. Prevention of Fiscal Evasion:</strong> Facilitates administrative cooperation to combat aggressive tax avoidance and fraudulent offshore profit shifting.
+            </div>
+            <div style="background: var(--slate-100); padding: 14px; border-radius: 6px;">
+                <strong>4. Exchange of Information [Art 26]:</strong> Enables exchange of bank and financial data, beneficial ownership information, and spontaneous risk reports.
+            </div>
+            <div style="background: var(--slate-100); padding: 14px; border-radius: 6px;">
+                <strong>5. Assistance in Collection [Art 27]:</strong> Allows revenue authorities to request foreign counterparts to collect revenue claims against defaulters abroad.
+            </div>
+            <div style="background: var(--slate-100); padding: 14px; border-radius: 6px;">
+                <strong>6. Dispute Resolution [Art 25]:</strong> Establishes the Mutual Agreement Procedure (MAP) for Competent Authorities to resolve cross-border conflicts amicably.
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- MODULE 2: VCLT ARTICLES 26, 27, 31-33 & CANONS OF INTERPRETATION          -->
+<!-- ========================================================================= -->
+
+<!-- 26.4 VCLT ARTICLES 26, 27, 31, 32 & 33 -->
+<section id="sec-vclt-rules" class="section-card">
+    <div class="section-header">
+        <div class="section-number">26.4 (VCLT)</div>
+        <div class="section-title-wrap">
+            <h2 class="section-title">The Vienna Convention on the Law of Treaties (VCLT)</h2>
+            <div class="section-subtitle">Articles 26, 27, 31 (General Rule), 32 (Supplementary Means) &amp; 33 (Multilingual Treaties)</div>
+        </div>
+        <span class="badge-tag tag-primary">Global Treaty Code</span>
+    </div>
+
+    <div class="theory-card">
+        <div class="theory-title"><i class="fa-solid fa-scroll"></i> 1. The Vienna Convention as Customary International Law</div>
+        <p>
+            The <strong>Vienna Convention on the Law of Treaties (VCLT, 1969)</strong> is recognized as the "Treaty on Treaties". It codifies centuries of customary international law. Even countries that have not formally ratified the VCLT (including India) recognize its substantive provisions on treaty interpretation (Articles 31 to 33) as binding customary international law.
+        </p>
+        <p>
+            In landmark decisions including <em>Union of India v. Azadi Bachao Andolan</em>, the Supreme Court of India observed that under <strong>Article 51(c) of the Constitution</strong>, Indian courts must interpret international treaties in harmony with the rules codified in the Vienna Convention.
+        </p>
+    </div>
+
+    <!-- VCLT ARTICLES MASTER TABLE -->
+    <div class="theory-card">
+        <div class="theory-title"><i class="fa-solid fa-gavel"></i> 2. Master Table of Critical VCLT Articles in Tax Treaty Jurisprudence</div>
+        <div class="table-responsive">
+            <table class="tax-table">
+                <thead>
+                    <tr>
+                        <th style="width: 18%;">VCLT Article</th>
+                        <th style="width: 27%;">Core Title &amp; Principle</th>
+                        <th style="width: 55%;">Statutory Text &amp; Practical Application in Tax Treaties</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Article 26</strong></td>
+                        <td><strong>Pacta Sunt Servanda<br>(Good Faith Observance)</strong></td>
+                        <td><em>"Every treaty in force is binding upon the parties to it and must be performed by them in good faith."</em><br>Contracting States cannot arbitrarily refuse to grant treaty benefits (such as lower withholding rates or foreign tax credits) that they agreed to in the treaty.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Article 27</strong></td>
+                        <td><strong>Internal Law &amp; Observance of Treaties</strong></td>
+                        <td><em>"A party may not invoke the provisions of its internal law as justification for its failure to perform a treaty."</em><br>A sovereign country cannot unilaterally amend its domestic Income-tax Act to evade or breach international treaty obligations (subject to constitutional treaty override doctrines).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Article 31<br>[TYK Q3]</strong></td>
+                        <td><strong>General Rule of Interpretation<br>(Contextual &amp; Purposive)</strong></td>
+                        <td>
+                            <strong>Paragraph 1 (The Golden Standard):</strong> A treaty shall be interpreted in <strong>good faith</strong> in accordance with the <strong>ordinary meaning</strong> to be given to the terms of the treaty in their <strong>context</strong> and in the light of its <strong>object and purpose</strong>.
+                            <br><strong>Paragraph 2 (Definition of Context):</strong> Context comprises:
+                            <br>&bull; The complete text, including its <strong>preamble and annexes</strong>;
+                            <br>&bull; Any agreement relating to the treaty made between all the parties in connection with the conclusion of the treaty;
+                            <br>&bull; Any instrument made by one or more parties and accepted by the other parties.
+                            <br><strong>Paragraph 3 (Extrinsic Elements with Context):</strong> There shall be taken into account, together with the context:
+                            <br>&bull; Any <em>subsequent agreement</em> between the parties regarding interpretation or application;
+                            <br>&bull; Any <em>subsequent practice</em> in the application of the treaty establishing the agreement of the parties;
+                            <br>&bull; Any <em>relevant rules of international law</em> applicable in relations between the parties.
+                            <br><strong>Paragraph 4:</strong> A special meaning shall be given to a term if it is established that the parties so intended.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Article 32</strong></td>
+                        <td><strong>Supplementary Means of Interpretation</strong></td>
+                        <td>
+                            Recourse may be had to supplementary means of interpretation, including the <strong>preparatory work of the treaty (<em>travaux préparatoires</em>)</strong> and the <strong>circumstances of its conclusion</strong>, in order to:
+                            <br><strong>(a)</strong> Confirm the meaning resulting from the application of Article 31; OR
+                            <br><strong>(b)</strong> Determine the meaning when interpretation under Article 31:
+                            <br>&bull; leaves the meaning <em>ambiguous or obscure</em>; or
+                            <br>&bull; leads to a result which is <em>manifestly absurd or unreasonable</em>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Article 33</strong></td>
+                        <td><strong>Multilingual Treaties</strong></td>
+                        <td>
+                            When a treaty has been authenticated in two or more languages (e.g. English and Hindi, or English and French), the text is <strong>equally authoritative in each language</strong>. Terms are presumed to have the same meaning in each authentic text. If discrepancies arise that Articles 31 and 32 cannot remove, the meaning which best reconciles the texts, having regard to the object and purpose, is adopted.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- CANONS OF CUSTOMARY INTERNATIONAL LAW IN INTERPRETATION -->
+<section id="sec-interpretation-canons" class="section-card">
+    <div class="section-header">
+        <div class="section-number">Canons</div>
+        <div class="section-title-wrap">
+            <h2 class="section-title">Canons of Customary International Law for Interpreting Treaties</h2>
+            <div class="section-subtitle">Golden Rule, Purposive Approach, Principle of Effectiveness, Contemporanea Expositio &amp; Liberal Construction</div>
+        </div>
+        <span class="badge-tag tag-warning">Judicial Precedents</span>
+    </div>
+
+    <div class="theory-card">
+        <div class="theory-title"><i class="fa-solid fa-book-open-reader"></i> The 6 Core Judicial Canons of Treaty Construction</div>
+        <p>
+            Because tax treaties are international compacts between sovereign nations, domestic rules of statutory construction cannot be applied with rigid literalism. Courts and tribunals apply specialized canons of customary international law:
+        </p>
+
+        <div class="grid-2">
+            <!-- 1. GOLDEN RULE -->
+            <div style="background: var(--slate-100); padding: 18px; border-radius: 8px;">
+                <h4 style="color: var(--primary); margin-bottom: 8px;"><i class="fa-solid fa-magnifying-glass"></i> 1. Golden Rule &mdash; Objective Interpretation</h4>
+                <p style="font-size: 13.5px; color: var(--slate-700);">
+                    Terms and phrases are in the first instance to be construed according to their <strong>plain, natural, and ordinary grammatical meaning</strong> in their textual context.
+                    <br><em>Exception:</em> If the plain grammatical interpretation results in an absurdity, inconsistency, or defeats the clear shared intention of the contracting states, literalism must give way!
+                </p>
+            </div>
+
+            <!-- 2. SUBJECTIVE INTERPRETATION -->
+            <div style="background: var(--slate-100); padding: 18px; border-radius: 8px;">
+                <h4 style="color: var(--primary); margin-bottom: 8px;"><i class="fa-solid fa-user-pen"></i> 2. Subjective Interpretation (Parties' Intention)</h4>
+                <p style="font-size: 13.5px; color: var(--slate-700);">
+                    Terms are interpreted according to the <strong>common intention of the contracting parties</strong> at the time the treaty was executed.
+                    <br><em>Case Law:</em> In <strong>Abdul Razak A. Meman [2005] 276 ITR 306 (AAR)</strong>, the Authority for Advance Rulings relied extensively on the official speeches of the Finance Ministers of India and the UAE to discern the true bilateral intention behind the India-UAE DTAA.
+                </p>
+            </div>
+
+            <!-- 3. PURPOSIVE / TELEOLOGICAL INTERPRETATION -->
+            <div style="background: var(--slate-100); padding: 18px; border-radius: 8px;">
+                <h4 style="color: var(--success); margin-bottom: 8px;"><i class="fa-solid fa-bullseye"></i> 3. Teleological / Purposive Interpretation</h4>
+                <p style="font-size: 13.5px; color: var(--slate-700);">
+                    Also known as the <em>"object and purpose"</em> approach. The treaty is construed so as to promote and facilitate the attainment of its underlying economic and diplomatic goals.
+                    <br><em>Landmark Case:</em> In <strong>Union of India v. Azadi Bachao Andolan [2003] 263 ITR 706</strong>, the Supreme Court of India held that tax treaties are entered into at a political level with diverse bilateral considerations. The Court referred to the treaty preamble to uphold the validity of Mauritian tax residency certificates.
+                </p>
+            </div>
+
+            <!-- 4. PRINCIPLE OF EFFECTIVENESS -->
+            <div style="background: var(--slate-100); padding: 18px; border-radius: 8px;">
+                <h4 style="color: var(--success); margin-bottom: 8px;"><i class="fa-solid fa-shield-halved"></i> 4. Principle of Effectiveness (*Ut Res Magis Valeat*)</h4>
+                <p style="font-size: 13.5px; color: var(--slate-700);">
+                    <em>Ut res magis valeat quam pereat</em> &mdash; an interpretation that gives meaning and operational effect to a treaty provision must be preferred over one that renders it redundant, meaningless, or nugatory. A treaty clause must not be interpreted so as to defeat its very purpose.
+                </p>
+            </div>
+
+            <!-- 5. CONTEMPORANEA EXPOSITIO -->
+            <div style="background: var(--slate-100); padding: 18px; border-radius: 8px;">
+                <h4 style="color: var(--warning); margin-bottom: 8px;"><i class="fa-solid fa-clock-rotate-left"></i> 5. Principle of Contemporanea Expositio</h4>
+                <p style="font-size: 13.5px; color: var(--slate-700);">
+                    Treaty terms must be interpreted in the sense they bore at the time when the treaty was drafted and concluded, having regard to the historical circumstances, contemporary legal understanding, and commercial practice existing at that date.
+                </p>
+            </div>
+
+            <!-- 6. LIBERAL & BROAD CONSTRUCTION -->
+            <div style="background: var(--slate-100); padding: 18px; border-radius: 8px;">
+                <h4 style="color: var(--warning); margin-bottom: 8px;"><i class="fa-solid fa-hands-holding"></i> 6. Liberal &amp; Broad Construction</h4>
+                <p style="font-size: 13.5px; color: var(--slate-700);">
+                    Tax treaties are negotiated by diplomats, statesmen, and non-legal negotiators. They are compromises written in broad, inclusive language. Courts must avoid narrow, pedantic, literal domestic strictness and adopt a liberal commercial interpretation (*Sanofi Pasteur Holding SA*).
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- MODULE 3: EXTRINSIC AIDS, MFN CLAUSE, NESTLE RULING & AMBULATORY APPROACH -->
+<!-- ========================================================================= -->
+
+<!-- EXTRINSIC AIDS TO TREATY INTERPRETATION -->
+<section id="sec-extrinsic-aids" class="section-card">
+    <div class="section-header">
+        <div class="section-number">Extrinsic Aids</div>
+        <div class="section-title-wrap">
+            <h2 class="section-title">Extrinsic Aids to Interpretation of Tax Treaties</h2>
+            <div class="section-subtitle">OECD &amp; UN Model Commentaries, Travaux Préparatoires, Protocols &amp; Foreign Court Decisions [TYK Q4]</div>
+        </div>
+        <span class="badge-tag tag-primary">Supplementary Sources</span>
+    </div>
+
+    <div class="theory-card">
+        <div class="theory-title"><i class="fa-solid fa-toolbox"></i> 1. The Scope of Extrinsic Materials Permissible under Article 32 VCLT</div>
+        <p>
+            Under public international law, courts are not confined to the four corners of the treaty document. A wide spectrum of extrinsic materials is recognized as supplementary means of interpretation under <strong>Article 32 of the VCLT</strong>:
+        </p>
+
+        <div class="table-responsive">
+            <table class="tax-table">
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">Extrinsic Aid</th>
+                        <th style="width: 45%;">Legal Nature &amp; Jurisprudential Role</th>
+                        <th style="width: 30%;">Evidentiary Status in India</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. OECD &amp; UN Model Commentaries</strong></td>
+                        <td>Detailed explanatory commentaries updated periodically by international tax experts. Explain the rationale, history, and intended scope of each Model Convention Article.</td>
+                        <td><strong>High Persuasive Authority.</strong> While not binding law, Indian courts (including the Supreme Court) regularly rely on them to interpret ambiguous treaty concepts.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Preparatory Work<br>(<em>Travaux Préparatoires</em>)</strong></td>
+                        <td>Draft versions, committee reports, records of bilateral negotiations, exchange of diplomatic notes, and official negotiating records.</td>
+                        <td>Admissible under Article 32 to confirm ordinary meaning or resolve ambiguity/absurdity.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Protocols &amp; Memoranda of Understanding (MoU)</strong></td>
+                        <td>Instruments executed concurrently or subsequently by the treaty partners to clarify, restrict, or modify specific articles.</td>
+                        <td><strong>Integral Part of the Treaty!</strong> A Protocol has the same binding legal force as the main DTAA itself.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. Technical Explanations</strong></td>
+                        <td>Official technical explanations released by sovereign governments (e.g. US Treasury Department Technical Explanations) detailing their interpretation of treaty clauses.</td>
+                        <td>Persuasive evidence of one party's intent, especially if accepted by the other state without protest.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5. Foreign Court Decisions</strong></td>
+                        <td>Judicial rulings from foreign jurisdictions (UK, US, Canada, Australia, Netherlands) interpreting identical wording of Model Tax Conventions.</td>
+                        <td><strong>Persuasive Precedent.</strong> Promotes international harmonization in applying standardized treaty language.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="callout callout-info">
+            <div class="callout-header"><i class="fa-solid fa-circle-info"></i> Legal Status of India's Observations on the OECD Commentary</div>
+            <p>
+                India is not an OECD member, but participates as an active non-member associate. India has recorded formal <strong>"Observations" and "Reservations"</strong> on several OECD Model Commentary paragraphs (e.g., rejecting the OECD's narrow interpretation of software royalties, server PEs, and physical presence tests). In Indian tax litigation, where India has officially placed an observation on record, the OECD Commentary's persuasive weight is diminished in favor of the Indian Government's stated interpretation.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- THE MOST FAVOURED NATION (MFN) CLAUSE & NESTLE RULING -->
+<section id="sec-mfn-nestle" class="section-card">
+    <div class="section-header">
+        <div class="section-number">MFN &amp; Nestle</div>
+        <div class="section-title-wrap">
+            <h2 class="section-title">The Most Favoured Nation (MFN) Clause &amp; The Supreme Court Nestle Ruling</h2>
+            <div class="section-subtitle">Supreme Court Judgment in AO v. M/s Nestle SA (2023), CBDT Circular 3/2022 &amp; Notification Rule [TYK Q5]</div>
+        </div>
+        <span class="badge-tag tag-danger">Landmark Supreme Court Precedent</span>
+    </div>
+
+    <div class="theory-card">
+        <div class="theory-title"><i class="fa-solid fa-handshake-simple"></i> 1. Concept of the Most Favoured Nation (MFN) Clause</div>
+        <p>
+            An <strong>MFN clause</strong> is typically incorporated in the Protocol to a tax treaty. Under this clause, State A (e.g. India) agrees with State B (e.g. Netherlands, France, Switzerland) that if State A subsequently signs a tax treaty with a third State C (which is an OECD member) providing a <strong>lower rate of withholding tax or a narrower scope</strong> for dividends, interest, royalties, or Fees for Technical Services (FTS), State A will extend the same beneficial treatment to State B.
+        </p>
+    </div>
+
+    <!-- LANDMARK SUPREME COURT RULING IN NESTLE SA -->
+    <div class="statutory-box">
+        <div class="statutory-box-header">
+            <span><i class="fa-solid fa-gavel"></i> Landmark Judgment: Supreme Court in Assessing Officer v. M/s Nestle SA (2023)</span>
+            <span class="badge-tag tag-danger">Civil Appeal No. 1420 of 2023</span>
+        </div>
+        <div class="statutory-box-body">
+            <p>
+                In a monumental ruling delivered on <strong>19th October 2023</strong>, the Supreme Court of India settled protracted international tax litigation regarding MFN clauses in Indian tax treaties, laying down <strong>three binding legal principles</strong>:
+            </p>
+            <div class="table-responsive" style="margin: 12px 0;">
+                <table class="tax-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 30%;">Principle Laid Down by Supreme Court</th>
+                            <th style="width: 70%;">Statutory Rationale &amp; Operational Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Mandatory Notification under Section 90(1) / Section 159</strong></td>
+                            <td>
+                                <strong>Automatic importation is illegal.</strong> An MFN clause in a Protocol cannot take domestic legal effect automatically. The Central Government <strong>must issue a formal executive notification under Section 90(1) (now Section 159)</strong> in the Official Gazette amending the treaty or notifying the concessional rate. Without such a domestic gazette notification, taxpayers cannot claim, and courts cannot grant, third-country beneficial rates!
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. OECD Membership Status at Treaty Entry into Force</strong></td>
+                            <td>
+                                The third country (e.g. Slovenia, Lithuania, Colombia) <strong>must have been an OECD member on the date when its tax treaty with India entered into force</strong>! If the third country was not an OECD member at the time of treaty execution/entry into force, but became an OECD member at a subsequent date, the MFN clause cannot be triggered retrospectively.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Affirmation of CBDT Circular No. 3/2022</strong></td>
+                            <td>
+                                The Supreme Court upheld the validity of <strong>CBDT Circular No. 3/2022 dated 03.02.2022</strong>, affirming that MFN benefits require bilateral consensus, reciprocity, and a specific domestic notification under Section 159.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AMBULATORY VS STATIC APPROACH & MLI SYNTHESISED TEXTS -->
+<section id="sec-ambulatory-static" class="section-card">
+    <div class="section-header">
+        <div class="section-number">Approaches &amp; MLI</div>
+        <div class="section-title-wrap">
+            <h2 class="section-title">Ambulatory vs. Static Approach &amp; MLI Synthesised Texts</h2>
+            <div class="section-subtitle">Article 3(2) of the Model Conventions, Dynamic Domestic Amendments &amp; The MLI Working Tool</div>
+        </div>
+        <span class="badge-tag tag-primary">Treaty Mechanics</span>
+    </div>
+
+    <div class="theory-card">
+        <div class="theory-title"><i class="fa-solid fa-arrows-spin"></i> 1. Static Approach vs. Ambulatory Approach</div>
+        <p>
+            When a term used in a tax treaty is not defined within the treaty itself, should it be interpreted according to domestic tax law as it existed when the treaty was signed, or according to domestic law as it exists when the treaty is being applied?
+        </p>
+
+        <div class="table-responsive">
+            <table class="tax-table">
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">Approach</th>
+                        <th style="width: 40%;">Core Doctrine</th>
+                        <th style="width: 35%;">International Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Static Approach<br>(Historical View)</strong></td>
+                        <td>Treaty terms are fixed in time. Undefined terms must bear the meaning that they had under the domestic law of the Contracting State at the <strong>date when the treaty was originally signed</strong>. Avoids unilateral amendments by one country.</td>
+                        <td>Historically favored by some civil law jurists, but largely abandoned in modern tax treaty practice due to rigidity.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ambulatory Approach<br>(Dynamic View)</strong></td>
+                        <td>Treaty terms are living and dynamic. Undefined terms bear the meaning they have under the domestic tax law of the Contracting State <strong>at the time when the tax treaty is being applied (current tax year)</strong>.</td>
+                        <td><strong>Universally Endorsed!</strong> Explicitly codified in <strong>Article 3(2)</strong> of both the OECD and UN Model Conventions.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="statutory-box" style="margin-top: 14px;">
+            <div class="statutory-box-header">
+                <span><i class="fa-solid fa-quote-left"></i> Article 3(2) of the OECD &amp; UN Model Tax Conventions</span>
+                <span class="badge-tag tag-primary">Statutory Rule</span>
+            </div>
+            <div class="statutory-box-body">
+                <p>
+                    <em>"As regards the application of the Convention at any time by a Contracting State, any term not defined therein shall, unless the context otherwise requires, have the meaning that it has <strong>at that time</strong> under the law of that State for the purposes of the taxes to which the Convention applies, any meaning under the applicable tax laws of that State prevailing over a meaning given to the term under other laws of that State."</em>
+                </p>
+                <p style="margin-top: 6px;">
+                    The explicit phrase <strong>"at that time"</strong> conclusively establishes the <strong>Ambulatory Approach</strong> in modern tax treaty jurisprudence.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="theory-card">
+        <div class="theory-title"><i class="fa-solid fa-file-lines"></i> 2. What is a "Synthesised Text" under the Multilateral Instrument (MLI)?</div>
+        <p>
+            The <strong>Multilateral Instrument (MLI / Action 15)</strong> modifies hundreds of bilateral tax treaties without rewriting them. To help taxpayers, revenue authorities, and courts navigate these complex modifications, tax administrations prepare <strong>Synthesised Texts</strong>:
+        </p>
+        <ul class="styled-list">
+            <li><strong>Purpose:</strong> A single, unified working document that illustrates the modifications made by the MLI to the underlying bilateral DTAA, displaying modified text in distinct callout boxes alongside original treaty articles.</li>
+            <li><strong>Legal Status:</strong> A Synthesised Text is <strong>solely a practical aid</strong> and does <em>not</em> constitute a formal source of law! In the event of any conflict, the authentic legal sources remain the original bilateral DTAA and the respective instruments of ratification deposited by both countries with the OECD depositary.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- MODULE 4: ICAI TEST YOUR KNOWLEDGE (TYK QUESTIONS 1 TO 5)                 -->
+<!-- ========================================================================= -->
+
+<section id="sec-tyk" class="section-card">
+    <div class="section-header">
+        <div class="section-number">TYK 1 - 5</div>
+        <div class="section-title-wrap">
+            <h2 class="section-title">ICAI Test Your Knowledge (TYK) &mdash; Fully Solved Board Questions</h2>
+            <div class="section-subtitle">Comprehensive Solutions with International Law Principles &amp; Supreme Court Jurisprudence</div>
+        </div>
+        <span class="badge-tag tag-primary">Exam Practice</span>
+    </div>
+
+    <!-- TYK QUESTION 1 -->
+    <div class="example-box" id="tyk-1">
+        <div class="example-title">
+            <i class="fa-solid fa-circle-question"></i> TYK Question 1: Double Taxation &amp; Connecting Factors
+        </div>
+        <p>
+            <strong>Question:</strong> What do you mean by double taxation? Discuss the connecting factors which lead to double taxation.
+        </p>
+        <button class="btn-solution" onclick="toggleSolution('sol-tyk-1')">
+            <i class="fa-solid fa-eye"></i> View Comprehensive Solution
+        </button>
+        <div id="sol-tyk-1" class="solution-card">
+            <h4 style="color: var(--primary); margin-bottom: 8px;">1. Meaning of Double Taxation:</h4>
+            <p>
+                Double taxation arises when sovereign tax jurisdictions overlap. It takes two distinct international forms:
+            </p>
+            <ul class="styled-list">
+                <li><strong>Juridical Double Taxation:</strong> Where the <em>same taxpayer</em> is subjected to comparable income taxes in two or more countries on the <em>same income</em> for the <em>same tax period</em> (e.g., an Indian resident earning interest in the UK being taxed in the UK at source and in India on worldwide residence).</li>
+                <li><strong>Economic Double Taxation:</strong> Where <em>two different taxpayers</em> are taxed on the <em>same economic transaction or income</em> in two different jurisdictions (e.g., primary transfer pricing adjustment to an Indian subsidiary without corresponding downward adjustment in the foreign parent's country).</li>
+            </ul>
+
+            <h4 style="color: var(--primary); margin-top: 14px; margin-bottom: 8px;">2. The Two Connecting Factors:</h4>
+            <p>
+                The taxability of an enterprise in any sovereign jurisdiction depends upon whether it is doing business <strong>"with"</strong> that country or <strong>"in"</strong> that country. The connecting factors establish the legal nexus for taxation:
+            </p>
+            <div class="table-responsive">
+                <table class="tax-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Connecting Factor</th>
+                            <th style="width: 45%;">Nature of Attachment</th>
+                            <th style="width: 30%;">Taxing Rights Scope</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Residence Link</strong><br>(Personal Attachment)</td>
+                            <td>Based on personal connection with a sovereign state: domicile, physical presence, nationality for individuals; place of incorporation or Place of Effective Management (POEM) for companies.</td>
+                            <td>Taxes the resident on its <strong>global / worldwide income</strong>, regardless of where the income originates.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Source Link</strong><br>(Economic Attachment)</td>
+                            <td>Based on economic allegiance: conducting business <em>in</em> the territory through a branch, office, factory (Permanent Establishment), or Significant Economic Presence (SEP).</td>
+                            <td>Taxes the non-resident on income having a <strong>territorial source nexus</strong> originating within its borders.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><em>Interaction:</em> Double taxation is the direct consequence of the simultaneous application of the <strong>Residence Link</strong> (by the home state) and the <strong>Source Link</strong> (by the host state) on the same cross-border income flow.</p>
+        </div>
+    </div>
+
+    <!-- TYK QUESTION 2 -->
+    <div class="example-box" id="tyk-2">
+        <div class="example-title">
+            <i class="fa-solid fa-circle-question"></i> TYK Question 2: Objectives of Tax Treaties Beyond Double Tax Relief
+        </div>
+        <p>
+            <strong>Question:</strong> “In addition to allocating taxing rights and elimination of double taxation, there are various other important considerations while entering into tax treaties”. Elucidate.
+        </p>
+        <button class="btn-solution" onclick="toggleSolution('sol-tyk-2')">
+            <i class="fa-solid fa-eye"></i> View Comprehensive Solution
+        </button>
+        <div id="sol-tyk-2" class="solution-card">
+            <h4 style="color: var(--primary); margin-bottom: 8px;">Key Objectives of Entering into Tax Treaties:</h4>
+            <p>While assigning taxing jurisdiction and eliminating double taxation are primary, bilateral tax treaties fulfill several other crucial international objectives:</p>
+            <ol class="styled-list">
+                <li><strong>Ensuring Non-Discrimination [Article 24]:</strong> Guarantees that nationals, permanent establishments, and foreign-owned enterprises of one contracting state are not subjected in the other state to any taxation or connected requirement which is more burdensome than that imposed on domestic nationals under similar circumstances.</li>
+                <li><strong>Fostering International Investment &amp; Trade:</strong> By eliminating fiscal barriers, providing certainty on tax rates (e.g. capped withholding taxes on dividends, interest, royalties, and FTS), and preventing double taxation, treaties create an attractive environment for Foreign Direct Investment (FDI).</li>
+                <li><strong>Prevention of Fiscal Evasion &amp; Tax Avoidance:</strong> Treaties establish clear anti-abuse frameworks (such as the Principal Purpose Test under BEPS Action 6) to prevent treaty shopping and aggressive tax planning.</li>
+                <li><strong>Exchange of Information [Article 26]:</strong> Empowers tax authorities to exchange vital financial records, bank information, and ownership data, both on request and automatically, to detect tax evasion and illicit offshore money laundering.</li>
+                <li><strong>Assistance in Collection of Revenue Claims [Article 27]:</strong> Enables one contracting state to request the other state to collect tax claims from defaulters who have relocated assets across national borders.</li>
+                <li><strong>Mutual Agreement Procedure (MAP) [Article 25]:</strong> Provides a dedicated dispute resolution forum for Competent Authorities of both nations to resolve treaty interpretation conflicts amicably, avoiding prolonged domestic litigation.</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- TYK QUESTION 3 -->
+    <div class="example-box" id="tyk-3">
+        <div class="example-title">
+            <i class="fa-solid fa-circle-question"></i> TYK Question 3: General Rule of Interpretation under Article 31 VCLT
+        </div>
+        <p>
+            <strong>Question:</strong> What is the General Rule of Interpretation under the Vienna Convention on the Law of Treaties (VCLT)?
+        </p>
+        <button class="btn-solution" onclick="toggleSolution('sol-tyk-3')">
+            <i class="fa-solid fa-eye"></i> View Comprehensive Solution
+        </button>
+        <div id="sol-tyk-3" class="solution-card">
+            <h4 style="color: var(--primary); margin-bottom: 8px;">Article 31 of the VCLT &mdash; General Rule of Interpretation:</h4>
+            <div class="table-responsive">
+                <table class="tax-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Paragraph</th>
+                            <th style="width: 75%;">Statutory Principle &amp; Legal Interpretation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Paragraph 1<br>(Core Rule)</strong></td>
+                            <td>A treaty shall be interpreted in <strong>good faith</strong> in accordance with the <strong>ordinary meaning</strong> to be given to the terms of the treaty in their <strong>context</strong> and in the light of its <strong>object and purpose</strong>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Paragraph 2<br>(Context Defined)</strong></td>
+                            <td>The "context" for the purpose of treaty interpretation comprises, in addition to the text (including its <strong>preamble and annexes</strong>):<br>
+                                (a) Any agreement relating to the treaty made between all the parties in connection with the conclusion of the treaty;<br>
+                                (b) Any instrument made by one or more parties in connection with the conclusion of the treaty and accepted by the other parties as an instrument related to the treaty.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Paragraph 3<br>(Extrinsic Elements)</strong></td>
+                            <td>There shall be taken into account, together with the context:<br>
+                                (a) Any <strong>subsequent agreement</strong> between the parties regarding the interpretation of the treaty or the application of its provisions;<br>
+                                (b) Any <strong>subsequent practice</strong> in the application of the treaty which establishes the agreement of the parties regarding its interpretation;<br>
+                                (c) Any <strong>relevant rules of international law</strong> applicable in the relations between the parties.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Paragraph 4<br>(Special Meaning)</strong></td>
+                            <td>A <strong>special meaning</strong> shall be given to a term if it is established that the parties so intended.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- TYK QUESTION 4 -->
+    <div class="example-box" id="tyk-4">
+        <div class="example-title">
+            <i class="fa-solid fa-circle-question"></i> TYK Question 4: Extrinsic Aids to Interpretation of a Tax Treaty
+        </div>
+        <p>
+            <strong>Question:</strong> What are the Extrinsic Aids to interpretation of a tax treaty?
+        </p>
+        <button class="btn-solution" onclick="toggleSolution('sol-tyk-4')">
+            <i class="fa-solid fa-eye"></i> View Comprehensive Solution
+        </button>
+        <div id="sol-tyk-4" class="solution-card">
+            <h4 style="color: var(--primary); margin-bottom: 8px;">Extrinsic Materials Permissible in Treaty Interpretation:</h4>
+            <p>Under Article 32 of the Vienna Convention on the Law of Treaties, courts and tribunals may take recourse to supplementary extrinsic aids:</p>
+            <ol class="styled-list">
+                <li>
+                    <strong>OECD and UN Model Commentaries:</strong> The official commentaries explain the historical evolution, policy rationale, and practical scope of each Model Convention article. Although soft law, they possess <strong>high persuasive value</strong> in interpreting bilateral DTAAs patterned after these models.
+                </li>
+                <li>
+                    <strong>Preparatory Work (<em>Travaux Préparatoires</em>):</strong> Official negotiating records, draft versions, minutes of diplomatic conferences, and exchange of diplomatic notes leading to the execution of the treaty.
+                </li>
+                <li>
+                    <strong>Protocols and Memoranda of Understanding (MoU):</strong> Protocols signed concurrently or subsequently by the contracting states form an <strong>integral part of the treaty</strong> and possess equal binding legal force. MoUs signed by Competent Authorities clarify mutual administrative intent.
+                </li>
+                <li>
+                    <strong>Decisions of Foreign Courts:</strong> Rulings of appellate courts in other jurisdictions (such as the UK, US, Canada, Australia, and the Netherlands) interpreting identical wording of Model Tax Conventions offer valuable persuasive precedent to promote international consistency.
+                </li>
+                <li>
+                    <strong>Technical Explanations:</strong> Official departmental explanatory memoranda (e.g. US Treasury Department Technical Explanations) published at the time of treaty conclusion.
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- TYK QUESTION 5 -->
+    <div class="example-box" id="tyk-5">
+        <div class="example-title">
+            <i class="fa-solid fa-circle-question"></i> TYK Question 5: Matrix Inc. &mdash; MFN Clause, Supreme Court Nestle Ruling &amp; Circular 3/2022
+        </div>
+        <p>
+            <strong>Question:</strong> Matrix Inc., incorporated in Country X, holds 26% controlling interest in Pilu Ltd., an Indian company. Pilu Ltd. declared a dividend of <strong>₹50,00,000</strong> during T.Y. 2026-27.
+            <br>The DTAA between India and Country X, which came into force on <strong>01.01.2018</strong>, provides for taxation of dividend <strong>@ 15%</strong>.
+            <br>Thereafter, India entered into a DTAA with Country Y, which came into force from <strong>15.05.2018</strong>. The India-Country Y DTAA provides for a concessional tax rate of <strong>10%</strong> in respect of dividends.
+            <br>Country X has been an OECD member since 2015, and Country Y has been an OECD member since 2017.
+            <br>Mr. Jack, CFO of Matrix Inc., seeks your opinion on whether the concessional 10% tax rate can be claimed by Matrix Inc. by invoking the <strong>Most Favoured Nation (MFN) clause</strong> in the India-Country X DTAA.
+        </p>
+        <button class="btn-solution" onclick="toggleSolution('sol-tyk-5')">
+            <i class="fa-solid fa-eye"></i> View Comprehensive Solution
+        </button>
+        <div id="sol-tyk-5" class="solution-card">
+            <h4 style="color: var(--primary); margin-bottom: 8px;">Analysis in Light of Supreme Court Ruling in Nestle SA &amp; CBDT Circular 3/2022:</h4>
+            <p>
+                In <strong>Assessing Officer v. M/s Nestle SA (Civil Appeal No. 1420 of 2023, decided on 19.10.2023)</strong>, the Supreme Court of India laid down mandatory conditions for invoking the MFN clause:
+            </p>
+
+            <div class="table-responsive">
+                <table class="tax-table">
+                    <thead>
+                        <tr>
+                            <th>Statutory Requirement</th>
+                            <th>Factual Analysis in Matrix Inc.'s Case</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. OECD Membership Status at Treaty Entry into Force</strong></td>
+                            <td>The third country (Country Y) must have been an OECD member on the date when its DTAA with India came into force. Here, Country Y became an OECD member in 2017, and the India-Country Y DTAA entered into force on 15.05.2018.</td>
+                            <td><span class="badge-tag tag-success">Satisfied</span><br>Country Y was already an OECD member at entry into force!</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Mandatory Domestic Notification under Section 159</strong></td>
+                            <td>The Supreme Court held that the benefit of an MFN clause cannot be automatically claimed by a taxpayer or applied by courts. The Central Government <strong>must issue a formal executive notification under Section 90(1) (now Section 159)</strong> in the Official Gazette amending the treaty or notifying the concessional rate.</td>
+                            <td><span class="badge-tag tag-danger">Critical Hurdle</span><br>Requires a domestic gazette notification under Section 159.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout callout-warning">
+                <strong>Definitive Legal Opinion for Mr. Jack:</strong>
+                <ul class="styled-list">
+                    <li>Although Country Y satisfied the condition of being an OECD member on 15.05.2018, <strong>in the absence of a specific notification issued by the Central Government under Section 159 of the Income-tax Act, 2025</strong> notifying the lower rate of 10% for the India-Country X DTAA, Matrix Inc. <strong>cannot claim the 10% rate</strong>!</li>
+                    <li>The Supreme Court in <em>Nestle SA</em> firmly affirmed CBDT Circular No. 3/2022, holding that without domestic gazette notification, third-country rates cannot be imported into an existing treaty.</li>
+                    <li>Therefore, Pilu Ltd. must deduct tax at source (TDS) on the dividend of ₹50,00,000 at the treaty rate of <strong>15%</strong> under the India-Country X DTAA:
+                    $$\text{Tax Liability} = \text{₹}50,00,000 \times 15\% = \mathbf{\text{₹}7,50,000}$$</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- Bottom Navigation Bar -->
+            <nav class="bottom-nav">
+                <a href="beps.html" class="nav-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <div>
+                        <div class="nav-label">Previous Chapter</div>
+                        <div class="nav-title">Chapter 25: BEPS &amp; MLI</div>
+                    </div>
+                </a>
+
+                <a href="../../notes/dtnotes.html" class="nav-btn" style="text-align: center;">
+                    <i class="fa-solid fa-list-check"></i>
+                    <div>
+                        <div class="nav-label">Master Index</div>
+                        <div class="nav-title">All Chapters</div>
+                    </div>
+                </a>
+
+                <a href="model_tax_conventions.html" class="nav-btn" style="text-align: right;">
+                    <div>
+                        <div class="nav-label">Next Chapter</div>
+                        <div class="nav-title">Chapter 27: Model Conventions &rarr;</div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </nav>
+        </main>
+    </div>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Reading Progress Bar
+        window.addEventListener('scroll', function() {
+            const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            const progressBar = document.getElementById('reading-progress');
+            if (progressBar) {
+                progressBar.style.width = scrolled + '%';
+            }
+        });
+
+        // Toggle Solution Cards
+        function toggleSolution(id) {
+            const card = document.getElementById(id);
+            if (!card) return;
+            const btn = card.previousElementSibling;
+            if (card.style.display === 'block') {
+                card.style.display = 'none';
+                if (btn && btn.classList.contains('btn-solution')) {
+                    btn.innerHTML = '<i class="fa-solid fa-eye"></i> View Comprehensive Solution';
+                }
+            } else {
+                card.style.display = 'block';
+                if (btn && btn.classList.contains('btn-solution')) {
+                    btn.innerHTML = '<i class="fa-solid fa-eye-slash"></i> Hide Solution';
+                }
+            }
+        }
+
+        // Sidebar Search / Quick Find
+        const searchInput = document.getElementById('sidebar-search-input');
+        if (searchInput) {
+            searchInput.addEventListener('input', function(e) {
+                const term = e.target.value.toLowerCase().trim();
+                const items = document.querySelectorAll('.sidebar-nav .sidebar-item');
+                items.forEach(function(item) {
+                    const text = item.textContent.toLowerCase();
+                    if (text.includes(term)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        }
+
+        // Scrollspy to Highlight Active Sidebar Link
+        window.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section[id], div[id^="tyk-"]');
+            const navLinks = document.querySelectorAll('.sidebar-link');
+
+            window.addEventListener('scroll', function() {
+                let current = '';
+                const scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+
+                sections.forEach(function(section) {
+                    const sectionTop = section.offsetTop - 120;
+                    const sectionHeight = section.offsetHeight;
+                    if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                if (current) {
+                    navLinks.forEach(function(link) {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + current) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

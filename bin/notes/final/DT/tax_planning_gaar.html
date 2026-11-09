@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 11: Tax Planning, Tax Avoidance, Tax Evasion & GAAR | CA Final Direct Tax Laws | AY 2025-26 & AY 2026-27</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #eff6ff;
+            --secondary: #0d9488;
+            --secondary-light: #f0fdfa;
+            --slate-50: #f8fafc;
+            --slate-100: #f1f5f9;
+            --slate-200: #e2e8f0;
+            --slate-300: #cbd5e1;
+            --slate-400: #94a3b8;
+            --slate-500: #64748b;
+            --slate-600: #475569;
+            --slate-700: #334155;
+            --slate-800: #1e293b;
+            --slate-900: #0f172a;
+            --emerald-600: #059669;
+            --emerald-50: #ecfdf5;
+            --rose-600: #e11d48;
+            --rose-50: #fff1f2;
+            --amber-600: #d97706;
+            --amber-50: #fffbeb;
+            --indigo-600: #4f46e5;
+            --indigo-50: #eef2ff;
+            --purple-600: #9333ea;
+            --purple-50: #faf5ff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: var(--slate-800);
+            background-color: var(--slate-50);
+            line-height: 1.6;
+        }
+
+        /* Top Progress Bar */
+        #reading-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #2563eb, #0d9488, #9333ea);
+            width: 0%;
+            z-index: 1000;
+            transition: width 0.1s ease-out;
+        }
+
+        /* Layout Container */
+        .page-wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sticky Sidebar */
+        .sidebar {
+            width: 320px;
+            flex-shrink: 0;
+            background: #ffffff;
+            border-right: 1px solid var(--slate-200);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            z-index: 100;
+        }
+
+        .sidebar-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--slate-200);
+            background: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .sidebar-brand {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sidebar-title {
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--slate-900);
+            line-height: 1.3;
+        }
+
+        .sidebar-search-container {
+            padding: 12px 24px;
+            background: var(--slate-50);
+            border-bottom: 1px solid var(--slate-200);
+        }
+
+        .sidebar-search {
+            width: 100%;
+            padding: 8px 12px 8px 32px;
+            font-size: 13px;
+            border: 1px solid var(--slate-300);
+            border-radius: 6px;
+            outline: none;
+            background: #ffffff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%2394a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>') no-repeat 10px center;
+            transition: border-color 0.15s ease;
+        }
+
+        .sidebar-search:focus {
+            border-color: var(--primary);
+        }
+
+        .sidebar-nav {
+            padding: 16px 12px 40px 12px;
+            flex-grow: 1;
+        }
+
+        .sidebar-section-title {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--slate-400);
+            padding: 12px 12px 6px 12px;
+        }
+
+        .sidebar-menu {
+            list-style: none;
+            margin-bottom: 8px;
+        }
+
+        .sidebar-item {
+            margin-bottom: 2px;
+        }
+
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            padding: 7px 12px;
+            font-size: 13px;
+            color: var(--slate-600);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.15s ease;
+            line-height: 1.4;
+        }
+
+        .sidebar-link:hover {
+            color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        .sidebar-link.active {
+            color: var(--primary);
+            background: var(--primary-light);
+            font-weight: 700;
+        }
+
+        .sidebar-link i {
+            width: 18px;
+            margin-right: 8px;
+            font-size: 13px;
+            color: var(--slate-400);
+            text-align: center;
+        }
+
+        .sidebar-link.active i {
+            color: var(--primary);
+        }
+
+        /* Main Content Container */
+        .content-area {
+            flex-grow: 1;
+            max-width: calc(100% - 320px);
+            padding: 32px 48px 80px 48px;
+        }
+
+        .reading-container {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        /* Breadcrumbs and Top Navigation */
+        .breadcrumb-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            font-size: 13px;
+        }
+
+        .breadcrumbs {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--slate-500);
+        }
+
+        .breadcrumbs a {
+            color: var(--slate-600);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .breadcrumbs a:hover {
+            color: var(--primary);
+        }
+
+        /* Chapter Banner */
+        .chapter-header {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: 12px;
+            padding: 32px 36px;
+            margin-bottom: 36px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chapter-header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+
+        .chapter-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .chapter-badge {
+            background: var(--primary-light);
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .law-badge {
+            background: var(--secondary-light);
+            color: var(--secondary);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        .chapter-title {
+            font-size: 28px;
+            font-weight: 900;
+            color: var(--slate-900);
+            line-height: 1.25;
+            margin-bottom: 12px;
+        }
+
+        .chapter-subtitle {
+            font-size: 15px;
+            color: var(--slate-600);
+            line-height: 1.5;
+        }
+
+        /* Section Headings */
+        .section-heading {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--slate-900);
+            margin: 48px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--slate-200);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            scroll-margin-top: 24px;
+        }
+
+        .heading-num {
+            background: var(--primary);
+            color: #ffffff;
+            width: 32px;
+            height: 32px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .sub-heading {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--slate-800);
+            margin: 28px 0 14px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Statutory Provision Boxes */
+        .provision-box {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: 10px;
+            padding: 22px 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+        }
+
+        .provision-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 14px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--slate-100);
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .provision-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .statute-badge {
+            background: var(--slate-100);
+            color: var(--slate-700);
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            border: 1px solid var(--slate-200);
+        }
+
+        /* Callouts */
+        .callout {
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 18px 0;
+            display: flex;
+            gap: 14px;
+            font-size: 14px;
+            line-height: 1.55;
+        }
+
+        .callout-icon {
+            font-size: 18px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .callout-info {
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            color: #1e40af;
+        }
+
+        .callout-success {
+            background: var(--emerald-50);
+            border-left: 4px solid var(--emerald-600);
+            color: #065f46;
+        }
+
+        .callout-warning {
+            background: var(--amber-50);
+            border-left: 4px solid var(--amber-600);
+            color: #92400e;
+        }
+
+        .callout-danger {
+            background: var(--rose-50);
+            border-left: 4px solid var(--rose-600);
+            color: #9f1239;
+        }
+
+        .callout-purple {
+            background: var(--purple-50);
+            border-left: 4px solid var(--purple-600);
+            color: #6b21a8;
+        }
+
+        /* Comparative & Statutory Tables */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid var(--slate-200);
+            background: #ffffff;
+        }
+
+        .statutory-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13.5px;
+            text-align: left;
+        }
+
+        .statutory-table th {
+            background: var(--slate-100);
+            color: var(--slate-800);
+            font-weight: 700;
+            padding: 12px 14px;
+            border-bottom: 2px solid var(--slate-200);
+            white-space: nowrap;
+        }
+
+        .statutory-table td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--slate-200);
+            vertical-align: top;
+            color: var(--slate-700);
+        }
+
+        .statutory-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .statutory-table tr:hover td {
+            background: var(--slate-50);
+        }
+
+        /* Illustration and Example Cards */
+        .example-box {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: 10px;
+            padding: 22px 24px;
+            margin: 24px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+            scroll-margin-top: 24px;
+        }
+
+        .example-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--slate-100);
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .example-title {
+            font-size: 15.5px;
+            font-weight: 700;
+            color: var(--indigo-600);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .solution-box {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            border-radius: 8px;
+            padding: 18px 20px;
+            margin-top: 14px;
+        }
+
+        .solution-header {
+            font-weight: 700;
+            color: var(--emerald-600);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+        }
+
+        /* Step Process Cards */
+        .process-flow {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .process-card {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: 8px;
+            padding: 18px;
+            position: relative;
+        }
+
+        .step-num-badge {
+            position: absolute;
+            top: -10px;
+            right: 14px;
+            background: var(--primary);
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar {
+                display: none;
+            }
+            .content-area {
+                max-width: 100%;
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="reading-progress"></div>
+
+    <div class="page-wrapper">
+        <!-- STICKY SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-brand">
+                    <i class="fa-solid fa-scale-balanced"></i> Direct Tax Portal
+                </div>
+                <div class="sidebar-title">CA Final Direct Tax Notes</div>
+            </div>
+
+            <div class="sidebar-search-container">
+                <input type="text" id="sidebar-search" class="sidebar-search" placeholder="Search Chapter 11..." autocomplete="off">
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="sidebar-section-title">Foundations</div>
+                <ul class="sidebar-menu">
+                    <li class="sidebar-item"><a href="#sec-overview" class="sidebar-link"><i class="fa-solid fa-compass"></i> Chapter Overview</a></li>
+                    <li class="sidebar-item"><a href="#sec-tax-planning-concepts" class="sidebar-link"><i class="fa-solid fa-lightbulb"></i> Planning vs Avoidance vs Evasion</a></li>
+                    <li class="sidebar-item"><a href="#sec-form-vs-substance" class="sidebar-link"><i class="fa-solid fa-gem"></i> Doctrine of Form vs Substance</a></li>
+                    <li class="sidebar-item"><a href="#sec-tiger-global-ruling" class="sidebar-link"><i class="fa-solid fa-gavel"></i> Tiger Global [2026] SC Ruling</a></li>
+                    <li class="sidebar-item"><a href="#sec-doctrine-precedence" class="sidebar-link"><i class="fa-solid fa-sitemap"></i> Doctrine of Precedence</a></li>
+                </ul>
+
+                <div class="sidebar-section-title">Anti-Avoidance Rules</div>
+                <ul class="sidebar-menu">
+                    <li class="sidebar-item"><a href="#sec-saar-overview" class="sidebar-link"><i class="fa-solid fa-shield-virus"></i> Specific Anti-Avoidance (SAAR)</a></li>
+                    <li class="sidebar-item"><a href="#sec-sec175-securities-stripping" class="sidebar-link"><i class="fa-solid fa-money-bill-transfer"></i> Sec 175: Dividend/Bonus Stripping</a></li>
+                    <li class="sidebar-item"><a href="#sec-sec178-gaar-applicability" class="sidebar-link"><i class="fa-solid fa-shield-halved"></i> Sec 178: GAAR Applicability</a></li>
+                    <li class="sidebar-item"><a href="#sec-sec179-iaa-tainted-tests" class="sidebar-link"><i class="fa-solid fa-triangle-exclamation"></i> Sec 179: IAA & Tainted Tests</a></li>
+                    <li class="sidebar-item"><a href="#sec-sec180-commercial-substance" class="sidebar-link"><i class="fa-solid fa-cubes"></i> Sec 180: Commercial Substance</a></li>
+                    <li class="sidebar-item"><a href="#sec-sec181-consequences-iaa" class="sidebar-link"><i class="fa-solid fa-arrows-split-up-and-left"></i> Sec 181: Consequences of IAA</a></li>
+                    <li class="sidebar-item"><a href="#sec-sec182-connected-accommodating" class="sidebar-link"><i class="fa-solid fa-users-gear"></i> Sec 182: Accommodating Parties</a></li>
+                    <li class="sidebar-item"><a href="#sec-sec183-safe-harbours" class="sidebar-link"><i class="fa-solid fa-anchor"></i> Sec 183: Safe Harbours (₹3 Cr)</a></li>
+                    <li class="sidebar-item"><a href="#sec-sec274-gaar-procedure" class="sidebar-link"><i class="fa-solid fa-landmark"></i> Sec 274: Approving Panel Procedure</a></li>
+                </ul>
+
+                <div class="sidebar-section-title">Practical Guidance</div>
+                <ul class="sidebar-menu">
+                    <li class="sidebar-item"><a href="#sec-cbdt-circular-7-2017" class="sidebar-link"><i class="fa-solid fa-file-invoice"></i> CBDT Circular No. 7/2017 (15 Q&As)</a></li>
+                    <li class="sidebar-item"><a href="#sec-practical-case-scenarios" class="sidebar-link"><i class="fa-solid fa-diagram-project"></i> ICAI Landmark Case Scenarios</a></li>
+                    <li class="sidebar-item"><a href="#sec-tyk" class="sidebar-link"><i class="fa-solid fa-graduation-cap"></i> Test Your Knowledge (Q1 to Q6)</a></li>
+                </ul>
+
+                <div class="sidebar-section-title">Navigation</div>
+                <ul class="sidebar-menu">
+                    <li class="sidebar-item"><a href="../notes/dtnotes.html" class="sidebar-link"><i class="fa-solid fa-book-open"></i> All Chapters Index</a></li>
+                    <li class="sidebar-item"><a href="../notes/dtsections.html" class="sidebar-link"><i class="fa-solid fa-list-ol"></i> Master Section Index</a></li>
+                    <li class="sidebar-item"><a href="trusts_special_entities.html" class="sidebar-link"><i class="fa-solid fa-arrow-left"></i> Previous: Chapter 10</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- MAIN CONTENT AREA -->
+        <main class="content-area">
+            <div class="reading-container">
+
+                <!-- Breadcrumb Bar -->
+                <div class="breadcrumb-bar">
+                    <div class="breadcrumbs">
+                        <a href="../notes/dtnotes.html"><i class="fa-solid fa-house"></i> DT Hub</a>
+                        <span>/</span>
+                        <a href="../notes/dtnotes.html">Module 2</a>
+                        <span>/</span>
+                        <span style="color: var(--slate-900); font-weight: 700;">Chapter 11: GAAR</span>
+                    </div>
+                    <div style="font-size: 12px; font-weight: 700; color: var(--slate-500);">
+                        Updated for Finance Act, 2026 & ITA 2025
+                    </div>
+                </div>
+
+                <!-- Chapter Banner -->
+                <header class="chapter-header">
+                    <div class="chapter-meta">
+                        <span class="chapter-badge">Chapter 11</span>
+                        <span class="law-badge"><i class="fa-solid fa-scale-balanced"></i> Income-tax Act, 2025</span>
+                        <span class="law-badge"><i class="fa-solid fa-landmark"></i> Chapter X-A / Sections 178 to 184</span>
+                        <span class="law-badge" style="background: var(--purple-50); color: var(--purple-600);"><i class="fa-solid fa-certificate"></i> FA 2026 Updated</span>
+                    </div>
+                    <h1 class="chapter-title">Tax Planning, Tax Avoidance, Tax Evasion & General Anti-Avoidance Rules (GAAR)</h1>
+                    <p class="chapter-subtitle">
+                        A rigorous CA Final compendium mastering the conceptual boundaries of tax minimization, the judicial evolution of Form vs. Substance (*Westminster*, *McDowell*, *Azadi Bachao*, *Vodafone*, and the landmark *Tiger Global* [2026] SC ruling), Specific Anti-Avoidance Rules (Section 175 dividend & bonus stripping), Impermissible Avoidance Arrangements (IAA), and the complete statutory architecture of GAAR under Sections 178 to 184 read with Approving Panel procedure u/s 274 and CBDT Circular No. 7/2017.
+                    </p>
+                </header>
+
+                <!-- SECTION 1: CHAPTER OVERVIEW & ARCHITECTURE -->
+                <section id="sec-overview">
+                    <h2 class="section-heading">
+                        <span class="heading-num">1</span>
+                        Statutory Architecture of Tax Planning & Anti-Avoidance
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-compass"></i> Statutory Scheme under Income-tax Act, 2025</span>
+                            <span class="statute-badge">Chapter X-A &bull; Sections 175 &amp; 178&ndash;184</span>
+                        </div>
+                        <p>Under modern direct tax jurisprudence, taxpayers possess the legitimate right to arrange their financial and commercial affairs within the four corners of the law to optimize their tax liability. However, where legal forms and corporate vehicles are engineered primarily to obtain unintended fiscal advantages devoid of commercial substance, the statutory machinery intervenes through two robust mechanisms:</p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 14px;">
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); padding: 14px; border-radius: 8px;">
+                                <strong style="color: var(--primary); display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-bullseye"></i> Specific Anti-Avoidance Rules (SAAR)</strong>
+                                <div style="font-size: 13px; color: var(--slate-600); margin-top: 4px;">Targeted statutory provisions addressing predefined avoidance schemes: Section 175 (dividend &amp; bonus stripping in securities), Section 176 (notified jurisdictional areas), Section 36(2) (unreasonable related party payments), and Transfer Pricing (Chapter VIII).</div>
+                            </div>
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); padding: 14px; border-radius: 8px;">
+                                <strong style="color: var(--purple-600); display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-shield-halved"></i> General Anti-Avoidance Rules (GAAR)</strong>
+                                <div style="font-size: 13px; color: var(--slate-600); margin-top: 4px;">Pervasive legislative framework (Sections 178 to 184 / legacy Chapter X-A) codifying the <strong>doctrine of substance over form</strong>. Empowers the Revenue to disregard, recharacterize, and deny tax benefits to any &lsquo;Impermissible Avoidance Arrangement&rsquo; (IAA) lacking commercial substance.</div>
+                            </div>
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); padding: 14px; border-radius: 8px;">
+                                <strong style="color: var(--emerald-600); display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-building-columns"></i> Statutory Procedural Safeguards</strong>
+                                <div style="font-size: 13px; color: var(--slate-600); margin-top: 4px;">High-level two-tier vetting: AO reference to PCIT/CIT and mandatory adjudication by an independent 3-member <strong>Approving Panel</strong> headed by a sitting or retired High Court Judge under Section 274.</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 2: TAX PLANNING VS AVOIDANCE VS EVASION -->
+                <section id="sec-tax-planning-concepts">
+                    <h2 class="section-heading">
+                        <span class="heading-num">2</span>
+                        Conceptual Boundaries: Tax Planning, Tax Management, Tax Avoidance &amp; Tax Evasion
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-scale-balanced"></i> Definitions &amp; Comparative Jurisprudence</span>
+                            <span class="statute-badge">ICAI Framework</span>
+                        </div>
+                        <p>Direct tax jurisprudence classifies taxpayers' fiscal actions into four distinct categories ranging from fully compliant statutory planning to illegal criminal evasion:</p>
+
+                        <div class="table-responsive">
+                            <table class="statutory-table">
+                                <thead>
+                                    <tr>
+                                        <th>Evaluation Parameter</th>
+                                        <th>Tax Planning</th>
+                                        <th>Tax Management</th>
+                                        <th>Tax Avoidance</th>
+                                        <th>Tax Evasion</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Core Definition</strong></td>
+                                        <td>Arranging financial affairs in conformity with statutory intent to take full advantage of exemptions, deductions, rebates, and reliefs.</td>
+                                        <td>Procedural and compliance-oriented execution of statutory obligations to prevent penalties, interest, and prosecution.</td>
+                                        <td>Structuring transactions to exploit legislative ambiguities and drafting loopholes to reduce tax liability without outright law-breaking.</td>
+                                        <td>Illegal reduction of tax liability through fraud, deliberate suppression of facts, misrepresentation, or fabricated accounts.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Legal Status</strong></td>
+                                        <td><span style="color: var(--emerald-600); font-weight: 700;"><i class="fa-solid fa-check"></i> 100% Lawful &amp; Encouraged</span></td>
+                                        <td><span style="color: var(--emerald-600); font-weight: 700;"><i class="fa-solid fa-check"></i> Essential Statutory Duty</span></td>
+                                        <td><span style="color: var(--amber-600); font-weight: 700;"><i class="fa-solid fa-triangle-exclamation"></i> Legal in Form, Illegitimate in Spirit</span></td>
+                                        <td><span style="color: var(--rose-600); font-weight: 700;"><i class="fa-solid fa-xmark"></i> Strictly Criminal &amp; Unlawful</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Method Employed</strong></td>
+                                        <td>Honest and intelligent application of statutory provisions and incentives within the framework of law.</td>
+                                        <td>Maintenance of records, registers, filing returns, obtaining declarations, and timely tax payments.</td>
+                                        <td>Artificial, colorable, or contrived devices; circular routing; treaty shopping; round-trip financing.</td>
+                                        <td>Suppression of receipts, falsification of books, claiming fictitious expenses, unrecorded transactions.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Motive / Purpose</strong></td>
+                                        <td>Minimizing tax burden by fulfilling the socio-economic objectives envisioned by the Parliament.</td>
+                                        <td>Compliance with procedural deadlines to avoid defaults, interest (Sec 284/285), and late fees.</td>
+                                        <td>Obtaining an unintended tax benefit while defeating the legislative object of the taxing statute.</td>
+                                        <td>Cheating the public exchequer through deceit, concealment, and intentional fraud.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Consequences &amp; Penalties</strong></td>
+                                        <td>None. Yields permanent tax savings and maximizes investible capital surplus.</td>
+                                        <td>Zero interest, zero late filing fees, and mitigation of statutory penalties.</td>
+                                        <td>Subject to GAAR / SAAR disregard, recharacterization, loss of deductions, and addition to income.</td>
+                                        <td>Heavy penal additions, mandatory penalty for misreporting, and criminal prosecution with rigorous imprisonment.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Temporal Horizon</strong></td>
+                                        <td>Both short-term and long-term strategic commercial planning.</td>
+                                        <td>Periodic, ongoing, and deadline-driven (monthly TDS, quarterly returns, annual returns).</td>
+                                        <td>Ad-hoc, aggressive transaction-specific structuring.</td>
+                                        <td>Post-transaction manipulation or ongoing clandestine operations.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Practical Illustrations Grid -->
+                        <div class="sub-heading"><i class="fa-solid fa-list-check"></i> Practical Identification of Everyday Actions</div>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin-top: 10px;">
+                            <div style="background: var(--emerald-50); border: 1px solid #a7f3d0; border-radius: 8px; padding: 14px;">
+                                <strong style="color: var(--emerald-600); display: block; margin-bottom: 6px;"><i class="fa-solid fa-circle-check"></i> Typical Tax Planning Actions</strong>
+                                <ul style="margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.6; color: var(--slate-700);">
+                                    <li>Depositing funds into Public Provident Fund (PPF) to claim Section 123 deduction.</li>
+                                    <li>Subscribing to a 5-year Tax Saver Fixed Deposit in a scheduled commercial bank.</li>
+                                    <li>Choosing between concessional corporate tax rates u/s 200 (22%) vs. Section 201 (15%).</li>
+                                    <li>Acquiring eligible commercial assets under financial lease vs. outright purchase to optimize deduction of lease rentals.</li>
+                                </ul>
+                            </div>
+
+                            <div style="background: var(--primary-light); border: 1px solid #bfdbfe; border-radius: 8px; padding: 14px;">
+                                <strong style="color: var(--primary); display: block; margin-bottom: 6px;"><i class="fa-solid fa-clipboard-check"></i> Typical Tax Management Actions</strong>
+                                <ul style="margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.6; color: var(--slate-700);">
+                                    <li>Maintaining an electronic TDS register to track and remit deducted taxes on or before 7th of the next month.</li>
+                                    <li>Obtaining Form No. 121 declarations (Form 15G/15H equivalent) from depositors and filing on the portal.</li>
+                                    <li>Remitting employee and employer PF contributions on or before the due date under the PF Act to preserve deductibility.</li>
+                                    <li>Getting accounts audited and uploading Tax Audit Report under Section 287 on or before 30th September.</li>
+                                </ul>
+                            </div>
+
+                            <div style="background: var(--rose-50); border: 1px solid #fecdd3; border-radius: 8px; padding: 14px;">
+                                <strong style="color: var(--rose-600); display: block; margin-bottom: 6px;"><i class="fa-solid fa-ban"></i> Typical Tax Evasion Actions (Fraud)</strong>
+                                <ul style="margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.6; color: var(--slate-700);">
+                                    <li>Installing an air-conditioner at the private residence of a director and debiting as company factory repair expenses.</li>
+                                    <li>Issuing fictitious credit notes for brokerage/commission to relatives (e.g. MD's son) who pay no tax due to Section 156 rebate.</li>
+                                    <li>Suppression of sales proceeds through unrecorded cash memos or bogus purchase invoices from shell entities.</li>
+                                    <li>Deliberate suppression of value of closing stock in the inventory registers to artificially deflate gross profit.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 3: DOCTRINE OF FORM VS SUBSTANCE -->
+                <section id="sec-form-vs-substance">
+                    <h2 class="section-heading">
+                        <span class="heading-num">3</span>
+                        The Doctrine of Form vs. Substance &amp; Judicial Evolution
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-gem"></i> Judicial Evolution from Westminster to Vodafone &amp; Tiger Global</span>
+                            <span class="statute-badge">Landmark Jurisprudence</span>
+                        </div>
+                        <p>The core tension in international and domestic tax law revolves around whether the taxing authorities must strictly respect the <strong>legal form</strong> chosen by the taxpayer or whether they possess the statutory right to disregard the form and tax the economic <strong>substance</strong> of the transaction:</p>
+
+                        <!-- Historical Trajectory Carousel / Cards -->
+                        <div style="display: flex; flex-direction: column; gap: 14px; margin: 18px 0;">
+                            <div style="background: var(--slate-50); border-left: 4px solid var(--slate-400); padding: 14px 18px; border-radius: 0 8px 8px 0;">
+                                <strong style="color: var(--slate-800); font-size: 14px;">1. The Traditional English Doctrine: IRC v. Duke of Westminster (1936) AC 1 (HL)</strong>
+                                <p style="font-size: 13px; color: var(--slate-600); margin-top: 4px;">
+                                    Lord Tomlin laid down the classic dictum: <em>&ldquo;Every man is entitled if he can to order his affairs so as that the tax attaching under the appropriate Acts is less than it otherwise would be.&rdquo;</em> Held that where a transaction is genuine and enacted in legal form, the court cannot look at the supposed &lsquo;substance&rsquo; to impose a tax liability not warranted by the form.
+                                </p>
+                            </div>
+
+                            <div style="background: var(--slate-50); border-left: 4px solid #0284c7; padding: 14px 18px; border-radius: 0 8px 8px 0;">
+                                <strong style="color: #0284c7; font-size: 14px;">2. The Circular Transaction Test: WT Ramsay Ltd. v. IRC (1981) 2 WLR 449 (HL)</strong>
+                                <p style="font-size: 13px; color: var(--slate-600); margin-top: 4px;">
+                                    The House of Lords introduced a pioneering judicial technique: where a taxpayer enters into a pre-ordained series of circular transactions containing self-cancelling steps designed solely to manufacture an artificial tax loss with no commercial impact, the courts are entitled to view the composite transaction as a single integrated whole and tax its net result.
+                                </p>
+                            </div>
+
+                            <div style="background: var(--slate-50); border-left: 4px solid var(--rose-600); padding: 14px 18px; border-radius: 0 8px 8px 0;">
+                                <strong style="color: var(--rose-600); font-size: 14px;">3. The Indian Watershed Ruling: McDowell &amp; Co. Ltd. v. CTO (1985) 154 ITR 148 (SC)</strong>
+                                <p style="font-size: 13px; color: var(--slate-600); margin-top: 4px;">
+                                    A 5-judge Constitution Bench departed from the mechanical application of the Westminster principle in India. Justice Chinnappa Reddy famously observed: <em>&ldquo;Tax planning may be legitimate provided it is within the framework of law. Colourable devices cannot be part of tax planning and it is wrong to encourage or entertain the belief that it is honourable to avoid payment of tax by resorting to dubious methods... It is the obligation of every citizen to pay taxes honestly without resorting to subterfuges.&rdquo;</em>
+                                </p>
+                            </div>
+
+                            <div style="background: var(--slate-50); border-left: 4px solid var(--amber-600); padding: 14px 18px; border-radius: 0 8px 8px 0;">
+                                <strong style="color: var(--amber-600); font-size: 14px;">4. Piercing Corporate Subterfuge: Associated Rubber Industries Ltd. (1986) 157 ITR 77 (SC)</strong>
+                                <p style="font-size: 13px; color: var(--slate-600); margin-top: 4px;">
+                                    A principal company created a wholly owned subsidiary with no assets other than shares transferred by the parent, earning only dividend income. The Supreme Court pierced the corporate veil, holding the subsidiary was a device created solely to siphon off dividend income and artificially reduce the company's gross profits under the Payment of Bonus Act.
+                                </p>
+                            </div>
+
+                            <div style="background: var(--slate-50); border-left: 4px solid var(--indigo-600); padding: 14px 18px; border-radius: 0 8px 8px 0;">
+                                <strong style="color: var(--indigo-600); font-size: 14px;">5. Legitimate Tax Structuring Re-Affirmed: Union of India v. Azadi Bachao Andolan (2003) 263 ITR 706 (SC)</strong>
+                                <p style="font-size: 13px; color: var(--slate-600); margin-top: 4px;">
+                                    The Supreme Court clarified that McDowell did not intend to outlaw all legitimate tax planning or treaty shopping. Where a foreign investor incorporates an entity in Mauritius and possesses a valid Tax Residency Certificate (TRC), treaty benefits under DTAA cannot be denied merely on the allegation of tax minimization unless established to be a fraudulent sham.
+                                </p>
+                            </div>
+
+                            <div style="background: var(--slate-50); border-left: 4px solid var(--emerald-600); padding: 14px 18px; border-radius: 0 8px 8px 0;">
+                                <strong style="color: var(--emerald-600); font-size: 14px;">6. The Modern Standard: Vodafone International Holdings B.V. v. Union of India (2012) 341 ITR 1 (SC)</strong>
+                                <p style="font-size: 13px; color: var(--slate-600); margin-top: 4px;">
+                                    The Supreme Court enunciated the governing principle: the Revenue must <strong>&lsquo;LOOK AT&rsquo;</strong> the transaction as a whole in its commercial context, and not <strong>&lsquo;LOOK THROUGH&rsquo;</strong> by dissecting every intermediate step. Dissecting the structure is permissible only if the entity is proven to be a pure &lsquo;conduit&rsquo; or &lsquo;sham&rsquo; created without commercial substance or economic presence.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Five Golden Rules Box -->
+                        <div class="callout callout-info">
+                            <div class="callout-icon"><i class="fa-solid fa-gavel"></i></div>
+                            <div>
+                                <strong>The Five Core Principles of Form vs. Substance in Indian Tax Law:</strong>
+                                <ol style="margin-top: 6px; padding-left: 20px; line-height: 1.6;">
+                                    <li><strong>Form Governs Genuine Transactions:</strong> If a transaction is arranged in a valid legal form and is legally genuine, tax consequences must follow that legal form (*CIT v. B.M. Kharwar*).</li>
+                                    <li><strong>No Protection for Colourable Devices:</strong> The rule of form does not apply where the transaction is an artificial device or subterfuge engineered to evade tax (*McDowell*).</li>
+                                    <li><strong>Right to Pierce the Corporate Veil:</strong> Tax authorities possess statutory and judicial power to lift the corporate veil to unearth true ownership and legal relationships.</li>
+                                    <li><strong>Substance Overrides Mere Nomenclature:</strong> The true character of a receipt or expenditure (capital vs. revenue) is determined by its commercial substance, not by the labels given in agreements.</li>
+                                    <li><strong>Holistic Document Construction:</strong> Contracts must be construed as a coherent commercial whole, looking at real intent and operative clauses rather than isolated formal recitals.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 4: TIGER GLOBAL [2026] LANDMARK SC RULING -->
+                <section id="sec-tiger-global-ruling">
+                    <h2 class="section-heading">
+                        <span class="heading-num">4</span>
+                        Landmark 2026 Ruling: AAR v. Tiger Global International II Holdings
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-scale-unbalanced-flip"></i> Supreme Court Decision &bull; (2026) 485 ITR 214 (SC)</span>
+                            <span class="statute-badge">SC 2026 &bull; DTAA &bull; JAAR / GAAR</span>
+                        </div>
+                        <p>In a watershed judgment delivered in 2026, the Supreme Court adjudicated on the critical interplay between <strong>Tax Residency Certificates (TRC)</strong>, the <strong>Judicial Anti-Avoidance Rule (JAAR)</strong>, domestic <strong>GAAR</strong>, and treaty eligibility under the India-Mauritius DTAA:</p>
+
+                        <div class="table-responsive">
+                            <table class="statutory-table">
+                                <thead>
+                                    <tr>
+                                        <th>Key Facet</th>
+                                        <th>Judicial Finding &amp; Statutory Analysis of the Supreme Court</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Factual Matrix</strong></td>
+                                        <td>
+                                            Tiger Global International II, III, and IV Holdings (Mauritius companies) acquired equity shares in Flipkart Private Limited (a Singapore company deriving substantial value from underlying assets in India) between 2011 and 2015 (pre-1 April 2017). In 2018 (post-1 April 2017), the shares were sold to Walmart. The assessees sought an advance ruling claiming capital gains exemption under Article 13(4) of the India-Mauritius DTAA.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Indirect Transfer Chargeability</strong></td>
+                                        <td>
+                                            The Court confirmed that the transfer of shares of Flipkart Singapore represented an <strong>indirect transfer of Indian assets</strong> under Section 9(1)(i) [read with Section 66/70 of ITA 2025] because the foreign company derived substantial value (&gt; 50%) from assets located in India.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>TRC Evidentiary Value</strong></td>
+                                        <td>
+                                            <strong style="color: var(--rose-600);">TRC is NOT Conclusive Proof of Exemption:</strong> While a Tax Residency Certificate (TRC) is a mandatory eligibility document, it is not an impregnable shield. Where facts establish that the Mauritius entities were mere conduit holding vehicles with zero commercial substance and decision-making was exercised in the USA by Tiger Global Management LLC, tax authorities can deny treaty benefits.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Judicial Anti-Avoidance (JAAR)</strong></td>
+                                        <td>
+                                            The Supreme Court ruled that even prior to statutory GAAR, the Indian judiciary possessed the inherent power under JAAR (*McDowell* doctrine) to pierce the veil and strike down sham entities created purely for treaty shopping.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Pre-2017 Grandfathering Rejected</strong></td>
+                                        <td>
+                                            <strong style="color: var(--rose-600);">Rule 10U / Rule 128 Grandfathering Inapplicable:</strong> The assessees argued that because investments were made before 1 April 2017, they were protected by the grandfathering provisions of Rule 10U. The Supreme Court held that grandfathering cannot be claimed where the entire corporate structure is a colourable device lacking commercial substance and the tax benefit is obtained post-1 April 2017.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>CBDT Notification No. 54/2026</strong></td>
+                                        <td>
+                                            Subsequent to this ruling, the CBDT issued <strong>Notification No. 54/2026 dated 31.03.2026</strong>, amending Rule 10U(2) [Rule 128(2) of the new rules] to explicitly clarify that GAAR applies to any arrangement irrespective of the date on which it was entered into, where a tax benefit is obtained on or after 1 April 2017.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 5: DOCTRINE OF PRECEDENCE -->
+                <section id="sec-doctrine-precedence">
+                    <h2 class="section-heading">
+                        <span class="heading-num">5</span>
+                        The Doctrine of Precedence in Direct Tax Jurisprudence
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-sitemap"></i> Hierarchy &amp; Binding Nature of Judicial Rulings</span>
+                            <span class="statute-badge">Constitutional Framework &bull; Art. 141</span>
+                        </div>
+                        <p>Under Indian constitutional law, the doctrine of binding precedent (*stare decisis*) governs the administration and adjudication of direct tax disputes. The hierarchy of judicial precedence operates as follows:</p>
+
+                        <div class="table-responsive">
+                            <table class="statutory-table">
+                                <thead>
+                                    <tr>
+                                        <th>Judicial Forum / Authority</th>
+                                        <th>Rulings that Precede / Overrule</th>
+                                        <th>Binding Applicability &amp; Scope</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Supreme Court of India</strong></td>
+                                        <td>
+                                            &bull; Larger Bench precedes Smaller Bench.<br>
+                                            &bull; Later Bench precedes Earlier Bench of equal strength.
+                                        </td>
+                                        <td>
+                                            Under Article 141 of the Constitution, Supreme Court judgments are <strong>absolutely binding on all courts, tribunals, and tax authorities</strong> in India. Both <em>ratio decidendi</em> (legal reason) and <em>obiter dicta</em> (observations by the way) are binding.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Jurisdictional High Court</strong></td>
+                                        <td>
+                                            &bull; Full Bench (3+ Judges) overrules Division Bench (2 Judges).<br>
+                                            &bull; Division Bench overrules Single Judge.
+                                        </td>
+                                        <td>
+                                            Binding on all subordinate courts, ITAT Benches, CIT(Appeals), and Assessing Officers functioning <strong>within its territorial jurisdiction</strong>.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Non-Jurisdictional High Court</strong></td>
+                                        <td>
+                                            Preceded by Jurisdictional High Court.
+                                        </td>
+                                        <td>
+                                            Has <strong>persuasive value</strong>. If there is no contrary decision of the jurisdictional High Court or Supreme Court, the Assessing Officer and appellate authorities must follow the view of another High Court to maintain all-India uniformity of federal tax law.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Income Tax Appellate Tribunal (ITAT)</strong></td>
+                                        <td>
+                                            &bull; Special / Full Bench overrules Ordinary / Division Bench.
+                                        </td>
+                                        <td>
+                                            Binding on all Assessing Officers, Commissioners, and CIT(Appeals) falling within the territorial jurisdiction of the Bench. Division Benches must refer conflicts to a Special Bench.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Assessing Officer &amp; Commissioner</strong></td>
+                                        <td>
+                                            Bound by all higher judicial forums.
+                                        </td>
+                                        <td>
+                                            Under Section 377 (rectification) and regular assessment, tax officers <strong>cannot refuse to follow</strong> binding rulings of the jurisdictional High Court or Supreme Court. Refusal constitutes contempt of court.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="callout callout-warning">
+                            <div class="callout-icon"><i class="fa-solid fa-circle-exclamation"></i></div>
+                            <div>
+                                <strong>Per Incuriam Exception:</strong> A judicial decision is <em>per incuriam</em> when it is rendered in ignorance or forgetfulness of an express statutory provision or a binding judgment of a superior court. While lower authorities cannot declare a Supreme Court ruling <em>per incuriam</em>, a larger bench of the Supreme Court may overrule such earlier defective rulings.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 6: SPECIFIC ANTI-AVOIDANCE RULES (SAAR) -->
+                <section id="sec-saar-overview">
+                    <h2 class="section-heading">
+                        <span class="heading-num">6</span>
+                        Specific Anti-Avoidance Rules (SAAR) in Income-tax Act, 2025
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-shield-virus"></i> Statutory Matrix of Specific Anti-Avoidance Provisions</span>
+                            <span class="statute-badge">SAAR Architecture</span>
+                        </div>
+                        <p>Specific Anti-Avoidance Rules (SAAR) represent targeted statutory provisions designed to address pre-identified, specific transactions and arrangements vulnerable to tax abuse. In the Income-tax Act, 2025, the principal SAAR provisions include:</p>
+
+                        <div class="table-responsive">
+                            <table class="statutory-table">
+                                <thead>
+                                    <tr>
+                                        <th>Statutory Provision (ITA 2025)</th>
+                                        <th>Legacy Provision (1961 Act)</th>
+                                        <th>Specific Avoidance Mechanism Targeted</th>
+                                        <th>Statutory Remedy / Adjustment</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Section 175</strong></td>
+                                        <td>Section 94</td>
+                                        <td>Transactions in securities designed to avoid tax: Bond washing, <strong>Dividend Stripping</strong> [175(8)], and <strong>Bonus Stripping</strong> [175(9)].</td>
+                                        <td>Disallowance of artificial loss; addition of interest to true owner; loss capitalized as cost of bonus units.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Section 176</strong></td>
+                                        <td>Section 94A</td>
+                                        <td>Transactions with persons located in a <strong>Notified Jurisdictional Area (NJA)</strong> lacking effective exchange of information.</td>
+                                        <td>All transactions deemed to be international transactions; transfer pricing applies; 30% minimum TDS; no deduction without documentation.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Section 36(2)</strong></td>
+                                        <td>Section 40A(2)</td>
+                                        <td>Excessive or unreasonable payments for goods, services, or facilities to <strong>related persons</strong>.</td>
+                                        <td>Disallowance of the expenditure to the extent it exceeds Fair Market Value (FMV).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Section 138</strong></td>
+                                        <td>Section 80-IA(8)</td>
+                                        <td>Inter-unit transfers between tax-holiday undertakings and other taxable businesses at non-market prices.</td>
+                                        <td>Profits recalculated by taking the market value of goods/services as on the date of transfer.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Section 80</strong></td>
+                                        <td>Section 56(2)(viib)</td>
+                                        <td>Closely held company issuing unlisted shares to any person at a premium exceeding Fair Market Value.</td>
+                                        <td>Excess consideration received over FMV taxed as Income from Other Sources (&lsquo;Angel Tax&rsquo; regime).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Sections 96 to 100</strong></td>
+                                        <td>Sections 60 to 65</td>
+                                        <td>Transfer of income without transfer of asset; revocable transfers; income accruing to spouse, minor child, or son's wife.</td>
+                                        <td>Mandatory inclusion (clubbing) of income in the hands of the transferor / parent.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Sections 158 to 174</strong></td>
+                                        <td>Sections 92 to 92F</td>
+                                        <td>Cross-border and specified domestic transactions between Associated Enterprises (AEs) at non-arm's length terms.</td>
+                                        <td>Primary and secondary transfer pricing adjustments based on the Arm's Length Price (ALP).</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 7: SECTION 175 SECURITIES TRANSACTIONS -->
+                <section id="sec-sec175-securities-stripping">
+                    <span id="sec-175"></span>
+                    <h2 class="section-heading">
+                        <span class="heading-num">7</span>
+                        Section 175: Avoidance of Tax by Transactions in Securities
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-money-bill-transfer"></i> Bond Washing, Dividend Stripping &amp; Bonus Stripping [Section 175]</span>
+                            <span class="statute-badge">Section 175 &bull; Legacy Sec 94</span>
+                        </div>
+                        <p>Section 175 targets abusive practices in the capital markets where investors artificially manufacture capital losses or deflect taxable interest income immediately around record dates:</p>
+
+                        <!-- Subsection 1 & 2: Bond Washing -->
+                        <div class="sub-heading"><i class="fa-solid fa-soap"></i> 1. Bond Washing Transactions [Section 175(1) &amp; 175(2)]</div>
+                        <p style="font-size: 13.5px;">
+                            A bond washing transaction involves an owner of fixed-income securities transferring them just prior to the interest due date to a person in a lower tax bracket (or having accumulated losses) under an agreement to repurchase the securities after the interest has been collected.
+                            <br><strong>Statutory Treatment:</strong> Under Section 175(1), where any person has had at any time during the tax year any beneficial interest in securities and the result of transactions is that interest is received by another person, such interest is <strong>deemed to be the income of the original owner</strong> and not the recipient.
+                        </p>
+
+                        <!-- Subsection 8: Dividend Stripping -->
+                        <div class="sub-heading" style="margin-top: 22px;"><i class="fa-solid fa-scissors"></i> 2. Dividend Stripping [Section 175(8) / Legacy Section 94(7)]</div>
+                        <div class="process-flow">
+                            <div class="process-card">
+                                <span class="step-num-badge">Step 1</span>
+                                <strong style="color: var(--primary);">Acquisition Prior to Record Date</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    The assessee buys or acquires any securities or units within a period of <strong>3 months prior to the record date</strong>.
+                                </p>
+                            </div>
+                            <div class="process-card">
+                                <span class="step-num-badge">Step 2</span>
+                                <strong style="color: var(--emerald-600);">Receipt of Exempt Income</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    The assessee receives or becomes entitled to receive any dividend or income which is <strong>exempt from tax</strong> under the Act.
+                                </p>
+                            </div>
+                            <div class="process-card">
+                                <span class="step-num-badge">Step 3</span>
+                                <strong style="color: var(--rose-600);">Sale at a Loss Post-Record Date</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    The assessee sells or transfers such securities within <strong>3 months</strong> (or units within <strong>9 months</strong>) after the record date.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="callout callout-danger" style="margin-top: 14px;">
+                            <div class="callout-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                            <div>
+                                <strong>Disallowance of Dividend Stripping Loss:</strong>
+                                <br>The capital loss arising to the assessee on the sale of such securities or units is <strong>strictly disallowed</strong> to the extent of the exempt dividend or income received. Any loss over and above the exempt dividend is allowed as normal capital loss.
+                                <br><em>Note:</em> Since dividends on equity shares and mutual fund units are now taxable in the hands of unitholders, Section 175(8) applies today where income distributions continue to enjoy statutory exemption (e.g., dividend components received from Business Trusts under Section 223 where the SPV did not opt for Section 200).
+                            </div>
+                        </div>
+
+                        <!-- Subsection 9: Bonus Stripping -->
+                        <div class="sub-heading" style="margin-top: 24px;"><i class="fa-solid fa-gift"></i> 3. Bonus Stripping [Section 175(9) / Legacy Section 94(8)]</div>
+                        <p style="font-size: 13.5px; color: var(--slate-700);">
+                            The scope of bonus stripping extends to <strong>both securities (shares) and units</strong>. It addresses the abusive tax maneuver where an investor purchases cum-bonus units/shares, receives tax-free bonus shares, sells the original shares at an ex-bonus deflated price to book an artificial capital loss, while continuing to hold the bonus shares with zero cost of acquisition:
+                        </p>
+
+                        <div style="background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: 8px; padding: 16px; margin: 12px 0;">
+                            <strong style="color: var(--purple-600); display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-layer-group"></i> Statutory Conditions for Invoking Bonus Stripping u/s 175(9):</strong>
+                            <ol style="margin: 8px 0 0 0; padding-left: 20px; font-size: 13px; line-height: 1.65; color: var(--slate-700);">
+                                <li>The assessee acquires any securities or units within <strong>3 months prior to the record date</strong>.</li>
+                                <li>The assessee is allotted additional securities or units (bonus shares/units) without any payment on the basis of such holding.</li>
+                                <li>The assessee sells or transfers all or any of the <strong>original securities or units within 9 months after the record date</strong>.</li>
+                                <li>The assessee continues to hold all or any of the <strong>additional bonus securities or units</strong> on the date of such transfer.</li>
+                            </ol>
+                        </div>
+
+                        <div class="callout callout-purple">
+                            <div class="callout-icon"><i class="fa-solid fa-calculator"></i></div>
+                            <div>
+                                <strong>Statutory Consequence &amp; Capitalization of Disallowed Loss:</strong>
+                                <br>1. The capital loss arising on the sale of all or any of the original securities/units is <strong>completely ignored and disallowed</strong>.
+                                <br>2. The amount of loss so disallowed is <strong>deemed to be the cost of acquisition</strong> of the additional bonus securities/units held by the assessee on the date of such transfer!
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 8: GAAR APPLICABILITY & CORE PROVISIONS -->
+                <section id="sec-sec178-gaar-applicability">
+                    <span id="sec-178"></span>
+                    <h2 class="section-heading">
+                        <span class="heading-num">8</span>
+                        Section 178: Applicability &amp; Statutory Scope of GAAR
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-shield-halved"></i> Statutory Declaration of Impermissible Avoidance Arrangement</span>
+                            <span class="statute-badge">Section 178 &bull; Legacy Sec 95</span>
+                        </div>
+                        <p>Under Section 178, an arrangement entered into by an assessee may be declared to be an <strong>Impermissible Avoidance Arrangement (IAA)</strong> and the consequences in relation to tax arising therefrom may be determined subject to the provisions of Chapter X-A:</p>
+
+                        <div class="callout callout-info">
+                            <div class="callout-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                            <div>
+                                <strong>Key Statutory Definitions [Section 184]:</strong>
+                                <br>&bull; <strong>Arrangement [Section 184(2)]:</strong> Means any step in, or a part or whole of, any transaction, operation, scheme, agreement or understanding, whether enforceable or not, and includes the alienation of any property.
+                                <br>&bull; <strong>Step [Section 184(10)]:</strong> Includes a measure or an action, particularly one of a series taken in order to deal with a problem or achieve a result.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 9: IMPERMISSIBLE AVOIDANCE ARRANGEMENT (IAA) -->
+                <section id="sec-sec179-iaa-tainted-tests">
+                    <span id="sec-179"></span>
+                    <h2 class="section-heading">
+                        <span class="heading-num">9</span>
+                        Section 179: Meaning of IAA &amp; The Dual Statutory Tests
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-triangle-exclamation"></i> The Dual Mandatory Test for Invoking GAAR</span>
+                            <span class="statute-badge">Section 179 &bull; Legacy Sec 96</span>
+                        </div>
+                        <p>Under Section 179, an arrangement is declared to be an <strong>Impermissible Avoidance Arrangement (IAA)</strong> only if it satisfies both the <strong>Main Purpose Test</strong> AND at least one of the four <strong>Tainted Element Tests</strong>:</p>
+
+                        <div class="process-flow">
+                            <div class="process-card" style="border-top: 4px solid var(--primary);">
+                                <strong style="color: var(--primary); font-size: 15px;"><i class="fa-solid fa-filter"></i> Test 1: The Main Purpose Test</strong>
+                                <p style="font-size: 13px; margin-top: 8px; color: var(--slate-600);">
+                                    The <strong>main purpose, or one of the main purposes</strong>, of the arrangement is to obtain a <strong>Tax Benefit</strong> as defined under Section 184(11).
+                                </p>
+                            </div>
+
+                            <div class="process-card" style="border-top: 4px solid var(--rose-600);">
+                                <strong style="color: var(--rose-600); font-size: 15px;"><i class="fa-solid fa-radiation"></i> Test 2: The Tainted Element Test</strong>
+                                <p style="font-size: 13px; margin-top: 8px; color: var(--slate-600);">
+                                    The arrangement exhibits at least <strong>ONE</strong> of the four tainted characteristics: Non-arm's length, misuse/abuse, lack of commercial substance, or non-bona fide manner.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Subsection: Definition of Tax Benefit -->
+                        <div class="sub-heading"><i class="fa-solid fa-coins"></i> Meaning of &lsquo;Tax Benefit&rsquo; [Section 184(11)]</div>
+                        <p style="font-size: 13.5px;">&lsquo;Tax benefit&rsquo; is broadly defined to encompass six fiscal advantages:</p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin: 12px 0;">
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); padding: 10px 12px; border-radius: 6px; font-size: 13px;">
+                                <strong>(a)</strong> A reduction or avoidance or deferral of tax payable under the Act.
+                            </div>
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); padding: 10px 12px; border-radius: 6px; font-size: 13px;">
+                                <strong>(b)</strong> An increase in a refund of tax or other amount under the Act.
+                            </div>
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); padding: 10px 12px; border-radius: 6px; font-size: 13px;">
+                                <strong>(c)</strong> A reduction, avoidance, or deferral of tax as a result of a <strong>tax treaty</strong>.
+                            </div>
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); padding: 10px 12px; border-radius: 6px; font-size: 13px;">
+                                <strong>(d)</strong> An increase in a refund of tax as a result of a <strong>tax treaty</strong>.
+                            </div>
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); padding: 10px 12px; border-radius: 6px; font-size: 13px;">
+                                <strong>(e)</strong> A reduction in total income in the tax year or any other tax year.
+                            </div>
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); padding: 10px 12px; border-radius: 6px; font-size: 13px;">
+                                <strong>(f)</strong> An increase in loss in the tax year or any other tax year.
+                            </div>
+                        </div>
+
+                        <!-- Subsection: The Four Tainted Elements -->
+                        <div class="sub-heading" style="margin-top: 20px;"><i class="fa-solid fa-biohazard"></i> The Four Tainted Elements [Section 179(1)(a) to (d)]</div>
+                        <div class="table-responsive">
+                            <table class="statutory-table">
+                                <thead>
+                                    <tr>
+                                        <th>Tainted Element</th>
+                                        <th>Statutory Condition</th>
+                                        <th>Practical Illustration</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>1. Non-Arm's Length Dealings<br>[Section 179(1)(a)]</strong></td>
+                                        <td>The arrangement creates rights, or obligations, which would <strong>not ordinarily be created</strong> between persons dealing at arm's length.</td>
+                                        <td>An unlisted company sells prime commercial property to an entity controlled by a major shareholder at nominal book value without consideration.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>2. Misuse or Abuse of Law<br>[Section 179(1)(b)]</strong></td>
+                                        <td>The arrangement results, directly or indirectly, in the <strong>misuse, or abuse</strong>, of the provisions of the Income-tax Act.</td>
+                                        <td>Splitting shareholdings across two shell subsidiaries (9.178% each = 18.356%) in a treaty jurisdiction solely to evade a 10% treaty threshold.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>3. Lack of Commercial Substance<br>[Section 179(1)(c)]</strong></td>
+                                        <td>The arrangement lacks commercial substance or is <strong>deemed to lack commercial substance</strong> under Section 180, in whole or in part.</td>
+                                        <td>Round-trip financing, accommodating parties, or setting up a zero-employee shell subsidiary in a Low Tax Jurisdiction to route investments.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>4. Non-Bona Fide Manner<br>[Section 179(1)(d)]</strong></td>
+                                        <td>The arrangement is entered into, or carried out, by means, or in a manner, which are <strong>not ordinarily employed for bona fide purposes</strong>.</td>
+                                        <td>Creating complex multi-layered trusts with opaque beneficial ownership structures exclusively to obscure true capital flows.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 10: ARRANGEMENTS LACKING COMMERCIAL SUBSTANCE -->
+                <section id="sec-sec180-commercial-substance">
+                    <span id="sec-180"></span>
+                    <h2 class="section-heading">
+                        <span class="heading-num">10</span>
+                        Section 180: Arrangements Deemed to Lack Commercial Substance
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-cubes"></i> Deemed Lack of Commercial Substance Criteria</span>
+                            <span class="statute-badge">Section 180 &bull; Legacy Sec 97</span>
+                        </div>
+                        <p>Under Section 180, an arrangement is statutorily deemed to lack commercial substance if any of the following circumstances exist:</p>
+
+                        <div style="display: flex; flex-direction: column; gap: 12px; margin: 16px 0;">
+                            <div style="background: var(--slate-50); border-left: 4px solid var(--primary); padding: 12px 16px; border-radius: 0 6px 6px 0; font-size: 13.5px;">
+                                <strong>1. Substance vs. Form Discrepancy [Sec 180(1)(a)]:</strong> The substance or effect of the arrangement as a whole is inconsistent with, or differs significantly from, the form of its individual steps. This statutorily codifies the doctrine of substance over form.
+                            </div>
+
+                            <div style="background: var(--slate-50); border-left: 4px solid #0d9488; padding: 12px 16px; border-radius: 0 6px 6px 0; font-size: 13.5px;">
+                                <strong>2. Round Trip Financing [Sec 180(1)(b)(i) &amp; Sec 184(9)]:</strong> Transactions where funds are transferred among parties, and the transactions do not have any substantial commercial purpose other than obtaining the tax benefit, without regard to whether funds can be traced, the sequence of transfers, or the manner/mode of routing.
+                            </div>
+
+                            <div style="background: var(--slate-50); border-left: 4px solid var(--purple-600); padding: 12px 16px; border-radius: 0 6px 6px 0; font-size: 13.5px;">
+                                <strong>3. Accommodating Party [Sec 180(1)(b)(ii) &amp; Sec 184(1)]:</strong> An arrangement that includes an accommodating party. A party is an accommodating party if its direct or indirect main purpose for inclusion is to obtain a tax benefit for the assessee, whether or not the party is connected.
+                            </div>
+
+                            <div style="background: var(--slate-50); border-left: 4px solid var(--amber-600); padding: 12px 16px; border-radius: 0 6px 6px 0; font-size: 13.5px;">
+                                <strong>4. Elements Offsetting Each Other [Sec 180(1)(b)(iii)]:</strong> Transactions structured with elements that have the effect of mutual offsetting, cancelling, or neutralizing each other in financial terms.
+                            </div>
+
+                            <div style="background: var(--slate-50); border-left: 4px solid var(--rose-600); padding: 12px 16px; border-radius: 0 6px 6px 0; font-size: 13.5px;">
+                                <strong>5. Disguising Value, Location, or Control [Sec 180(1)(b)(iv)]:</strong> Transactions conducted through one or more persons that disguise the true economic value, geographic location, source, ownership, or control of funds.
+                            </div>
+
+                            <div style="background: var(--slate-50); border-left: 4px solid #0284c7; padding: 12px 16px; border-radius: 0 6px 6px 0; font-size: 13.5px;">
+                                <strong>6. Location Without Commercial Purpose [Sec 180(1)(c)]:</strong> Involves the location of an asset or transaction or residence of any party without substantial commercial justification.
+                            </div>
+
+                            <div style="background: var(--slate-50); border-left: 4px solid var(--indigo-600); padding: 12px 16px; border-radius: 0 6px 6px 0; font-size: 13.5px;">
+                                <strong>7. Zero Effect on Business Risks / Cash Flows [Sec 180(1)(d)]:</strong> The arrangement does not have a significant effect upon the real business risks or net cash flows of any party to the arrangement, apart from any tax benefit created.
+                            </div>
+                        </div>
+
+                        <!-- Non-Sufficient Factors -->
+                        <div class="callout callout-warning">
+                            <div class="callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                            <div>
+                                <strong>Factors Relevant but NOT Sufficient to Prove Commercial Substance [Section 180(3)]:</strong>
+                                <br>Under Section 180(3), a taxpayer cannot defeat GAAR merely by demonstrating any of the following factors:
+                                <ul style="margin-top: 6px; padding-left: 20px;">
+                                    <li><strong>Time Duration:</strong> The period or time duration for which the arrangement (including operations therein) has existed.</li>
+                                    <li><strong>Payment of Taxes:</strong> The fact of payment of taxes, directly or indirectly, under the arrangement.</li>
+                                    <li><strong>Exit Route:</strong> The fact that an exit route (e.g. winding up or share buyback option) is available or provided in the agreement.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 11: CONSEQUENCES OF IAA -->
+                <section id="sec-sec181-consequences-iaa">
+                    <span id="sec-181"></span>
+                    <h2 class="section-heading">
+                        <span class="heading-num">11</span>
+                        Section 181: Consequences &amp; Tax Adjustments of an IAA
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-arrows-split-up-and-left"></i> Statutory Powers to Disregard &amp; Recharacterize</span>
+                            <span class="statute-badge">Section 181 &bull; Legacy Sec 98</span>
+                        </div>
+                        <p>Where an arrangement is declared to be an Impermissible Avoidance Arrangement (IAA), the tax authorities possess vast powers under Section 181 to neutralize the tax benefit:</p>
+
+                        <div class="process-flow">
+                            <div class="process-card">
+                                <span class="step-num-badge">Power 1</span>
+                                <strong style="color: var(--primary);">Disregarding or Combining Steps</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    Disregarding, combining, or recharacterizing any step in the arrangement or the entire arrangement as a whole.
+                                </p>
+                            </div>
+
+                            <div class="process-card">
+                                <span class="step-num-badge">Power 2</span>
+                                <strong style="color: var(--rose-600);">Treating as Non-Existent</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    Treating the impermissible avoidance arrangement as if it had never been entered into or carried out.
+                                </p>
+                            </div>
+
+                            <div class="process-card">
+                                <span class="step-num-badge">Power 3</span>
+                                <strong style="color: var(--purple-600);">Disregarding Accommodating Parties</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    Disregarding any accommodating party, or treating an accommodating party and any other party as one and the same person.
+                                </p>
+                            </div>
+
+                            <div class="process-card">
+                                <span class="step-num-badge">Power 4</span>
+                                <strong style="color: #0284c7;">Treating Connected Persons as One</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    Deeming persons who are connected persons in relation to each other to be one and the same person for tax purposes.
+                                </p>
+                            </div>
+
+                            <div class="process-card">
+                                <span class="step-num-badge">Power 5</span>
+                                <strong style="color: var(--amber-600);">Reallocating Incomes &amp; Deductions</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    Reallocating any accrual, receipt, expenditure, deduction, relief, or rebate among the parties to the arrangement.
+                                </p>
+                            </div>
+
+                            <div class="process-card">
+                                <span class="step-num-badge">Power 6</span>
+                                <strong style="color: var(--emerald-600);">Relocating Situs &amp; Residence</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    Treating the place of residence of any party or situs of an asset or transaction at a place other than where it is stated to be.
+                                </p>
+                            </div>
+
+                            <div class="process-card" style="grid-column: 1 / -1;">
+                                <span class="step-num-badge">Power 7</span>
+                                <strong style="color: var(--indigo-600);">Recharacterizing Debt into Equity &amp; Capital into Revenue</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    Recharacterizing any equity into debt or debt into equity; recharacterizing any capital receipt into revenue or revenue into capital; and completely denying treaty benefits under DTAA.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 12: CONNECTED PERSONS & ACCOMMODATING PARTIES -->
+                <section id="sec-sec182-connected-accommodating">
+                    <span id="sec-182"></span>
+                    <h2 class="section-heading">
+                        <span class="heading-num">12</span>
+                        Section 182: Treatment of Connected Persons &amp; Accommodating Parties
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-users-gear"></i> Statutory Scope of Connected Persons under GAAR</span>
+                            <span class="statute-badge">Section 182 &bull; Legacy Sec 99</span>
+                        </div>
+                        <p>Under Section 182, in determining whether a tax benefit exists, any connected person may be treated as one and the same person as another party. The statutory definitions of connected persons span across entities:</p>
+
+                        <div class="table-responsive">
+                            <table class="statutory-table">
+                                <thead>
+                                    <tr>
+                                        <th>Entity Type</th>
+                                        <th>Statutory Connected Persons under Section 184 / Section 182</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Individual</strong></td>
+                                        <td>Any relative of the individual; any company, firm, or AOP where the individual or relative has substantial interest (&ge; 20% voting power or profit share).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Company</strong></td>
+                                        <td>Any director of the company or any relative of such director; any person holding substantial interest in the company; another company under same management or control.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Partnership Firm / LLP</strong></td>
+                                        <td>Any partner or any relative of such partner; any enterprise where such partner or relative holds substantial interest.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Hindu Undivided Family (HUF)</strong></td>
+                                        <td>Any member of the HUF or any relative of such member.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 13: SAFE HARBOURS & RULE 10U / RULE 128 -->
+                <section id="sec-sec183-safe-harbours">
+                    <span id="sec-183"></span>
+                    <h2 class="section-heading">
+                        <span class="heading-num">13</span>
+                        Section 183 &amp; Safe Harbours: The ₹3 Crore Monetary Threshold
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-anchor"></i> Safe Harbour Guidelines &bull; Rule 10U [Rule 128 of New Rules]</span>
+                            <span class="statute-badge">Section 183 &bull; Safe Harbours</span>
+                        </div>
+                        <p>Section 183 read with Rule 10U of the Income-tax Rules [Rule 128 of the new rules] lays down four critical safe harbour exceptions where GAAR provisions <strong>shall NOT apply</strong>:</p>
+
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin: 16px 0;">
+                            <div style="background: var(--emerald-50); border: 2px solid var(--emerald-600); border-radius: 8px; padding: 16px;">
+                                <strong style="color: var(--emerald-600); font-size: 15px; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-shield"></i> 1. The ₹3 Crore Monetary Threshold</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-700); line-height: 1.6;">
+                                    GAAR shall not apply to an arrangement where the <strong>tax benefit arising in the relevant tax year</strong> in the aggregate to all parties to the arrangement does <strong>NOT exceed ₹3 Crore</strong> (INR 30,000,000). Small and medium arrangements are completely protected.
+                                </p>
+                            </div>
+
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: 8px; padding: 16px;">
+                                <strong style="color: var(--primary); font-size: 15px; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-globe"></i> 2. Foreign Institutional Investors (FIIs)</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-700); line-height: 1.6;">
+                                    FIIs / Foreign Portfolio Investors (FPIs) who do not take advantage of any DTAA benefit and are registered under SEBI regulations are exempt from GAAR.
+                                </p>
+                            </div>
+
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: 8px; padding: 16px;">
+                                <strong style="color: var(--purple-600); font-size: 15px; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-file-contract"></i> 3. Offshore Derivative Instruments (P-Notes)</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-700); line-height: 1.6;">
+                                    Non-resident investors investing indirectly in FIIs through Offshore Derivative Instruments (Participatory Notes / P-Notes) are exempt.
+                                </p>
+                            </div>
+
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: 8px; padding: 16px;">
+                                <strong style="color: var(--amber-600); font-size: 15px; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-calendar-check"></i> 4. Pre-1 April 2017 Grandfathering</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-700); line-height: 1.6;">
+                                    Investments made before 1 April 2017 are grandfathered in respect of instruments held. <em>Caveat:</em> Under *Tiger Global* [2026] SC ruling and Notification 54/2026, grandfathering does not protect conduit shell entities realizing post-2017 tax benefits lacking commercial substance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 14: PROCEDURE FOR DECLARING GAAR & APPROVING PANEL -->
+                <section id="sec-sec274-gaar-procedure">
+                    <span id="sec-274"></span>
+                    <h2 class="section-heading">
+                        <span class="heading-num">14</span>
+                        Section 274: Approving Panel Procedure for Invoking GAAR
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-landmark"></i> Two-Tier Procedural Filter &amp; The Approving Panel</span>
+                            <span class="statute-badge">Section 274 &bull; Legacy Sec 144BA</span>
+                        </div>
+                        <p>To eliminate arbitrary assessments and prevent harassment of taxpayers, the statute establishes a rigorous, multi-tiered institutional mechanism before GAAR can be invoked:</p>
+
+                        <div class="process-flow">
+                            <div class="process-card">
+                                <span class="step-num-badge">Tier 1</span>
+                                <strong style="color: var(--primary);">AO Reference to PCIT/CIT</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    If the Assessing Officer (AO), during assessment proceedings, considers that an arrangement is an IAA, he cannot invoke GAAR himself. He must prepare a draft reference and submit it to the <strong>Principal Commissioner or Commissioner (PCIT/CIT)</strong>.
+                                </p>
+                            </div>
+
+                            <div class="process-card">
+                                <span class="step-num-badge">Tier 2</span>
+                                <strong style="color: var(--amber-600);">PCIT/CIT Notice to Assessee</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    If the PCIT/CIT is satisfied, he issues a statutory notice to the assessee setting out grounds and granting an opportunity of being heard (maximum 60 days). If the assessee does not furnish objections or PCIT finds objections invalid, he refers the matter to the <strong>Approving Panel</strong>.
+                                </p>
+                            </div>
+
+                            <div class="process-card">
+                                <span class="step-num-badge">Tier 3</span>
+                                <strong style="color: var(--emerald-600);">The Statutory Approving Panel</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    An independent 3-member judicial/executive body:
+                                    <br>&bull; <strong>Chairperson:</strong> Sitting or retired High Court Judge.
+                                    <br>&bull; <strong>Member 1:</strong> Principal Chief Commissioner of Income-tax (PCCIT).
+                                    <br>&bull; <strong>Member 2:</strong> Eminent academician / expert in direct tax.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="callout callout-success" style="margin-top: 14px;">
+                            <div class="callout-icon"><i class="fa-solid fa-check-double"></i></div>
+                            <div>
+                                <strong>Adjudication &amp; Time Limit for Approving Panel Directions:</strong>
+                                <br>&bull; The Approving Panel issues directions declaring whether the arrangement is an IAA or not within a strict period of <strong>6 months</strong> from the end of the month of receipt of reference.
+                                <br>&bull; The directions issued by the Approving Panel are <strong>binding</strong> on the assessee, the Assessing Officer, and the Principal Commissioner.
+                                <br>&bull; <strong>Zero departmental appeal:</strong> The Income-tax Department has no right of appeal against directions of the Approving Panel!
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 15: CBDT CIRCULAR NO. 7/2017 (ALL 15 Q&As) -->
+                <section id="sec-cbdt-circular-7-2017">
+                    <h2 class="section-heading">
+                        <span class="heading-num">15</span>
+                        CBDT Clarifications on GAAR: Circular No. 7/2017
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-file-invoice"></i> The 15 Landmark Questions &amp; Departmental Answers</span>
+                            <span class="statute-badge">Circular No. 7/2017 &bull; 27-01-2017</span>
+                        </div>
+                        <p>To provide commercial certainty and address industry representations on GAAR implementation, the Central Board of Direct Taxes (CBDT) issued 15 comprehensive clarifications:</p>
+
+                        <div class="table-responsive">
+                            <table class="statutory-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 80px;">Q. No.</th>
+                                        <th style="width: 320px;">Issue / Industry Query</th>
+                                        <th>CBDT Statutory Clarification &amp; Governing Rule</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Q1</strong></td>
+                                        <td><strong>Will GAAR be invoked if SAAR applies?</strong></td>
+                                        <td>
+                                            <strong>Yes:</strong> It is internationally accepted that Specific Anti-Avoidance Rules (SAAR) may not address all situations of abuse. GAAR can be invoked in addition to or alongside SAAR where there is an abuse of provisions beyond what SAAR specifically cures.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Q2</strong></td>
+                                        <td><strong>Will GAAR apply to deny treaty eligibility if there is compliance with LOB test?</strong></td>
+                                        <td>
+                                            <strong>Yes:</strong> Adoption of Limitation of Benefits (LOB) clauses in tax treaties may not be sufficient to curb all avoidance strategies. GAAR can be applied to deny treaty benefits if the arrangement is an IAA.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Q3</strong></td>
+                                        <td><strong>Will GAAR interplay with taxpayer's right to choose transaction methods?</strong></td>
+                                        <td>
+                                            <strong style="color: var(--emerald-600);">No Interplay:</strong> GAAR will NOT interfere with the right of the taxpayer to select or choose the method of implementing a genuine transaction (e.g. choosing between financial lease vs. outright purchase, or merger vs. demerger).
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Q4</strong></td>
+                                        <td><strong>Will GAAR apply where jurisdiction is chosen on commercial grounds?</strong></td>
+                                        <td>
+                                            <strong>No:</strong> If the choice of jurisdiction or entity location is dictated by bona fide non-tax commercial considerations and possesses economic substance, GAAR will not apply.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Q5</strong></td>
+                                        <td><strong>Grandfathering of bonus shares and converted CCDs post-01.04.2017?</strong></td>
+                                        <td>
+                                            <strong>Fully Grandfathered:</strong> Grandfathering under Rule 10U / Rule 128 is available to bonus issuances and equity shares issued post-31 March 2017 upon conversion of CCDs/convertibles, provided the original securities were acquired prior to 1 April 2017.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Q6</strong></td>
+                                        <td><strong>Scope of 'investments' covered by grandfathering?</strong></td>
+                                        <td>
+                                            <strong>All Forms of Instruments:</strong> Grandfathering covers all investments made prior to 1 April 2017, whether in shares, debentures, units, or other instruments.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Q7</strong></td>
+                                        <td><strong>Will GAAR apply if arrangement is sanctioned by Court or NCLT?</strong></td>
+                                        <td>
+                                            <strong>No:</strong> Where the High Court or NCLT has explicitly and adequately considered the tax implications while sanctioning the scheme of arrangement, GAAR will not be invoked by the Department.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Q8</strong></td>
+                                        <td><strong>Fund claiming DTAA in one year and domestic Act in another year?</strong></td>
+                                        <td>
+                                            <strong>Permissible:</strong> A taxpayer has the legal right to claim whichever provision is more beneficial under Section 90(2). Merely switching between treaty and domestic law does not attract GAAR unless the underlying arrangement is an IAA.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Q9</strong></td>
+                                        <td><strong>How to ensure GAAR is invoked only in rare aggressive cases?</strong></td>
+                                        <td>
+                                            <strong>Robust Safeguards:</strong> GAAR proposal must be vetted sequentially by the Assessing Officer, Principal Commissioner, and approved by the High Court Judge-headed <strong>Approving Panel</strong>.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Q10</strong></td>
+                                        <td><strong>Can GAAR assess notional income or disallow real expenditure?</strong></td>
+                                        <td>
+                                            <strong>True Liability Determined:</strong> If an arrangement is covered under Section 179, it will be disregarded. Corresponding adjustments will be made in the hands of connected parties to avoid economic double taxation.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Q11</strong></td>
+                                        <td><strong>Can a 5 to 10-year holding period guarantee immunity from GAAR?</strong></td>
+                                        <td>
+                                            <strong>Relevant, but NOT Sufficient:</strong> Under Section 180(3), time duration is only one relevant factor. Mere passage of time cannot protect an arrangement if it lacks commercial substance.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Q12</strong></td>
+                                        <td><strong>Safeguards ensuring uniform and fair application?</strong></td>
+                                        <td>
+                                            The independent statutory Approving Panel provides an objective, binding institutional check against arbitrary assessments.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Q13</strong></td>
+                                        <td><strong>How is the ₹3 Crore monetary threshold calculated?</strong></td>
+                                        <td>
+                                            Calculated in respect of the <strong>aggregate tax benefit enjoyed in India</strong> across all parties to the arrangement in the relevant tax year.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Q14</strong></td>
+                                        <td><strong>Will a contrary view be taken in subsequent years?</strong></td>
+                                        <td>
+                                            <strong>Consistency:</strong> If the PCIT or Approving Panel has held an arrangement permissible in one year, that determination will be maintained in subsequent years provided facts and circumstances remain identical.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Q15</strong></td>
+                                        <td><strong>Automatic initiation of penalty proceedings?</strong></td>
+                                        <td>
+                                            <strong>Not Automatic:</strong> Penalty is levied based on the specific facts of each case (misreporting vs. under-reporting) and is not automatically triggered merely because an addition was made under GAAR.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 16: ICAI LANDMARK PRACTICAL CASE SCENARIOS -->
+                <section id="sec-practical-case-scenarios">
+                    <h2 class="section-heading">
+                        <span class="heading-num">16</span>
+                        ICAI Landmark Case Scenarios on GAAR in Action
+                    </h2>
+
+                    <!-- CASE SCENARIO 1: TREATY THRESHOLD AVOIDANCE -->
+                    <div class="example-box">
+                        <div class="example-header">
+                            <span class="example-title"><i class="fa-solid fa-diagram-project"></i> Case Scenario 1: Treaty Threshold Avoidance through Split Subsidiaries</span>
+                            <span class="statute-badge">Sec 179(1)(b) &bull; Abuse of DTAA</span>
+                        </div>
+                        <p><strong>Factual Matrix:</strong> Under the India-Country F4 tax treaty, capital gains from sale of shares of an Indian company (Ind Co) are taxable only in Country F4 if the transferor holds &le; 10% equity in Ind Co. A Ltd., resident in F4, desires to acquire an 18.356% stake in Ind Co. To avoid Indian tax upon exit, A Ltd. incorporates two wholly owned subsidiaries in Country F4 &mdash; K Ltd. and L Ltd. &mdash; and each acquires <strong>9.178%</strong> equity in Ind Co (total = 18.356%). Upon selling their stakes, K Ltd. and L Ltd. claim exemption under the treaty as each holds less than 10%. Can GAAR be invoked?</p>
+
+                        <div class="solution-box">
+                            <div class="solution-header"><i class="fa-solid fa-scale-balanced"></i> Statutory Analysis &amp; Decision</div>
+                            <div style="font-size: 13.5px; line-height: 1.6;">
+                                1. <strong>Main Purpose Test [Sec 179(1)]:</strong> The splitting of the investment into two identical subsidiaries was orchestrated primarily to obtain a tax benefit under the India-F4 tax treaty (zero Indian tax upon exit).
+                                <br>2. <strong>Tainted Element Test [Sec 179(1)(b) &amp; (c)]:</strong> The arrangement reveals an abuse of treaty provisions and lacks commercial substance under Section 180 because creating two subsidiaries did not change the economic condition, business risks, or cash flows of the investor A Ltd.
+                                <br>3. <strong>Consequence under Section 181:</strong> The arrangement is declared an <strong>Impermissible Avoidance Arrangement (IAA)</strong>. The tax authorities are entitled under Section 181 to disregard the two subsidiaries K Ltd. and L Ltd., treat them as one single entity holding 18.356%, deny treaty exemption, and levy capital gains tax in India!
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CASE SCENARIO 2: THIN CAPITALIZATION / CONDUIT SUBCO -->
+                    <div class="example-box">
+                        <div class="example-header">
+                            <span class="example-title"><i class="fa-solid fa-money-bill-transfer"></i> Case Scenario 2: Thin Capitalization &amp; Round-Trip Financing</span>
+                            <span class="statute-badge">Sec 180(1)(b)(i) &bull; Round Trip Financing</span>
+                        </div>
+                        <p><strong>Factual Matrix:</strong> Indco (an Indian operating company) incorporates a subsidiary Subco in a Low Tax Jurisdiction (LTJ) with equity capital of US $100. Subco immediately gives a loan of US $100 to Indco at an interest rate of 10% per annum. Indco claims a full deduction for the interest payable to Subco against its Indian business profits. Subco has zero other business activity or commercial presence. Can GAAR be invoked?</p>
+
+                        <div class="solution-box">
+                            <div class="solution-header"><i class="fa-solid fa-scale-balanced"></i> Statutory Analysis &amp; Decision</div>
+                            <div style="font-size: 13.5px; line-height: 1.6;">
+                                1. <strong>Deemed Lack of Commercial Substance:</strong> Under Section 180(1)(b)(i) read with Section 184(9), this structure represents classic <strong>round-trip financing</strong> &mdash; funds were transferred by Indco as equity and immediately returned as an interest-bearing loan with zero commercial rationale other than manufacturing an artificial interest deduction in India.
+                                <br>2. <strong>Accommodating Party:</strong> Subco serves exclusively as an accommodating party under Section 184(1) with no independent business activity or economic function.
+                                <br>3. <strong>GAAR Consequences:</strong> The loan is recharacterized as an equity contribution under Section 181(g). The interest deduction claimed by Indco is completely disallowed, and interest remittances are taxed accordingly.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CASE SCENARIO 3: JOINT VENTURE CONDUIT (PERMITTED TRANSFEREE) -->
+                    <div class="example-box">
+                        <div class="example-header">
+                            <span class="example-title"><i class="fa-solid fa-handshake"></i> Case Scenario 3: Permitted Transferee Conduit Structure</span>
+                            <span class="statute-badge">Sec 180(1)(b)(iv) &bull; Disguising True Ownership</span>
+                        </div>
+                        <p><strong>Factual Matrix:</strong> Y Ltd. (resident in Country C1, where DTAA provides no capital gains exemption in India) intends to enter a 49:51 joint venture with Indian resident Z Ltd. Instead of investing directly, Y Ltd. incorporates a 100% shell subsidiary A Ltd. in Country F1 (where DTAA exempts capital gains in the source country). A Ltd. and Z Ltd. form JV company X Ltd. in India. A Ltd. is designated as a &lsquo;permitted transferee&rsquo; of Y Ltd., meaning all voting rights, board appointments, and dividend decisions of X Ltd. are directly exercised by Y Ltd. Thereafter, A Ltd. sells its 49% stake in X Ltd. to a connected group entity of Z Ltd. and claims treaty exemption. Can GAAR be applied?</p>
+
+                        <div class="solution-box">
+                            <div class="solution-header"><i class="fa-solid fa-scale-balanced"></i> Statutory Analysis &amp; Decision</div>
+                            <div style="font-size: 13.5px; line-height: 1.6;">
+                                1. <strong>Lack of Commercial Substance:</strong> A Ltd. has no economic presence, no independent management, and bears zero business risks. The reservation of all shareholder rights by Y Ltd. demonstrates that A Ltd. is an artificial conduit and accommodating party.
+                                <br>2. <strong>Disguising True Ownership:</strong> The structure disguises the true beneficial ownership and control of the investment under Section 180(1)(b)(iv).
+                                <br>3. <strong>GAAR Consequences:</strong> A Ltd. is disregarded under Section 181. Capital gains arising on the sale of X Ltd. shares are deemed to arise directly to Y Ltd. (resident in Country C1), completely denying the Country F1 treaty exemption!
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 17: TEST YOUR KNOWLEDGE PRACTICAL QUESTIONS -->
+                <section id="sec-tyk">
+                    <h2 class="section-heading">
+                        <span class="heading-num">17</span>
+                        Test Your Knowledge (TYK) &bull; Practical Examination Bank
+                    </h2>
+
+                    <!-- TYK QUESTION 1 -->
+                    <div class="example-box" id="tyk-q1">
+                        <div class="example-header">
+                            <span class="example-title"><i class="fa-solid fa-graduation-cap"></i> TYK Question 1: Distinguish between Tax Planning and Tax Evasion</span>
+                            <span class="statute-badge">ICAI TYK 1 &bull; Conceptual</span>
+                        </div>
+                        <p><strong>Problem Statement:</strong> Distinguish clearly between Tax Planning and Tax Evasion, highlighting their legal validity, underlying methods, and moral standing under direct tax laws.</p>
+
+                        <div class="solution-box">
+                            <div class="solution-header"><i class="fa-solid fa-check"></i> Statutory Analysis &amp; Solution</div>
+                            <div style="font-size: 13.5px; line-height: 1.65;">
+                                1. <strong>Tax Planning:</strong>
+                                <ul style="margin: 4px 0 8px 18px;">
+                                    <li>Tax planning is carried out strictly <strong>within the framework of law</strong> by availing the deductions, exemptions, rebates, allowances, and reliefs permitted under the statute.</li>
+                                    <li>It is honest, intelligent, and conforms fully to the legislative intent of the Parliament (e.g., claiming Section 123 deductions, setting up manufacturing companies under Section 201).</li>
+                                    <li>It generates permanent tax savings, optimizes capital formation, and is entirely lawful and socially encouraged.</li>
+                                </ul>
+                                2. <strong>Tax Evasion:</strong>
+                                <ul style="margin: 4px 0 8px 18px;">
+                                    <li>Tax evasion is an attempt to reduce tax liability by <strong>dubious, artificial, or fraudulent methods</strong> involving deceit, misrepresentation, suppression of facts, or falsification of accounts.</li>
+                                    <li>It is strictly illegal, unethical, and results in heavy monetary penalties, prosecution, and rigorous imprisonment.</li>
+                                    <li>As held by the Supreme Court in *McDowell &amp; Co. Ltd.*, colorable devices and subterfuges cannot be part of tax planning; it is the civic duty of every citizen to pay tax honestly without resorting to deceit.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TYK QUESTION 2 -->
+                    <div class="example-box" id="tyk-q2">
+                        <div class="example-header">
+                            <span class="example-title"><i class="fa-solid fa-list-ol"></i> TYK Question 2: Categorization of Practical Everyday Actions</span>
+                            <span class="statute-badge">ICAI TYK 2 &bull; 7 Practical Scenarios</span>
+                        </div>
+                        <p><strong>Problem Statement:</strong> Specify with reason whether the following acts can be considered as (i) Tax planning; or (ii) Tax management; or (iii) Tax evasion:</p>
+
+                        <div class="solution-box">
+                            <div class="solution-header"><i class="fa-solid fa-check"></i> Statutory Categorization Matrix</div>
+                            <div class="table-responsive" style="margin: 6px 0 0 0;">
+                                <table class="statutory-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Act / Scenario</th>
+                                            <th>Classification</th>
+                                            <th>Statutory Rationale</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>(i) Mr. P deposits ₹1,00,000 in PPF account to reduce total income from ₹5,90,000 to ₹4,90,000.</td>
+                                            <td><strong style="color: var(--emerald-600);">Tax Planning</strong></td>
+                                            <td>Depositing money in Public Provident Fund (PPF) and claiming deduction under Section 123 is fully in accordance with the statutory provisions and legislative intent.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(ii) SQL Ltd. maintains a register of tax deduction at source effected by it to enable timely compliance.</td>
+                                            <td><strong style="color: var(--primary);">Tax Management</strong></td>
+                                            <td>Maintaining a register of payments subject to TDS helps in complying with statutory obligations under Chapter XVII-B, avoiding interest, late fees, and penalties.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(iii) An individual taxpayer making a tax saver deposit of ₹1,00,000 in a nationalized bank.</td>
+                                            <td><strong style="color: var(--emerald-600);">Tax Planning</strong></td>
+                                            <td>Making a 5-year tax saver fixed deposit for claiming deduction under Section 123 is within the statutory framework of permitted tax reliefs.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(iv) A partnership firm obtaining declaration from lenders/depositors in Form No. 121 (for nil TDS) and forwarding it to the Department.</td>
+                                            <td><strong style="color: var(--primary);">Tax Management</strong></td>
+                                            <td>Obtaining Form No. 121 declarations (Form 15G/15H equivalent) and forwarding them to the tax authority is a procedural step enabling statutory compliance.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(v) A company installed an air-conditioner costing ₹75,000 at the residence of a director as per terms of appointment, but treated it as factory machinery repairs.</td>
+                                            <td><strong style="color: var(--rose-600);">Tax Evasion</strong></td>
+                                            <td>Falsely booking capital expenditure as revenue repairs and misrepresenting private perquisites as factory repairs is a deliberate attempt to evade tax by recording fictitious, fabricated transactions.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(vi) RR Ltd. issued a credit note for ₹80,000 as brokerage payable to Mr. Ramana (MD's son); Ramana's income increases to ₹12,00,000 (eligible for full rebate u/s 156), reducing company profit.</td>
+                                            <td><strong style="color: var(--rose-600);">Tax Evasion</strong></td>
+                                            <td>Recording a fictitious brokerage transaction to siphon off company profits (taxable @ 22%/25%/30%) into the hands of a relative paying zero tax due to Section 156 tax rebate is outright fraud and tax evasion.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(vii) A company remitted provident fund contribution of both its own and employees' on monthly basis before the due date under the PF Act.</td>
+                                            <td><strong style="color: var(--primary);">Tax Management</strong></td>
+                                            <td>Timely remittance of PF contributions ensures deduction under Section 37/125 and avoids disallowance under Section 36(1)(va) / Section 43B.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TYK QUESTION 3 -->
+                    <div class="example-box" id="tyk-q3">
+                        <div class="example-header">
+                            <span class="example-title"><i class="fa-solid fa-scale-balanced"></i> TYK Question 3: Doctrine of Form and Substance in Tax Planning</span>
+                            <span class="statute-badge">ICAI TYK 3 &bull; Judicial Doctrine</span>
+                        </div>
+                        <p><strong>Problem Statement:</strong> Examine the doctrine of form and substance in the context of tax planning with reference to key principles enunciated by the Supreme Court of India.</p>
+
+                        <div class="solution-box">
+                            <div class="solution-header"><i class="fa-solid fa-check"></i> Statutory Analysis &amp; Solution</div>
+                            <div style="font-size: 13.5px; line-height: 1.65;">
+                                The Supreme Court has laid down fundamental principles governing the inquiry into form and substance:
+                                <br>1. <strong>Form Governs Genuine Transactions:</strong> When a transaction is arranged in a valid legal form known to law, it attracts tax consequences as per that legal form (*CIT v. B.M. Kharwar*).
+                                <br>2. <strong>True Legal Relation Governs:</strong> Where a transaction is colourable, artificial, or sham, tax authorities are entitled to <strong>pierce the corporate veil</strong> to uncover the true economic relationship (*Associated Rubber Industries*).
+                                <br>3. <strong>Statutory Codification under GAAR:</strong> Under Section 180, an arrangement is statutorily deemed to lack commercial substance if the substance or effect of the arrangement as a whole is inconsistent with or differs significantly from the form of its individual steps.
+                                <br>4. <strong>Examples Where Substance Overrides Form:</strong>
+                                <ul style="margin: 4px 0 0 18px;">
+                                    <li><em>Expenditure:</em> The mere fact that payment is made under a formal written agreement does not preclude the Department from inquiring whether the expense was incurred wholly and exclusively for business (*Swadeshi Cotton Mills*).</li>
+                                    <li><em>Revenue vs. Capital:</em> In determining whether an expenditure is revenue or capital, the substance and real economic effect govern, not the accounting entries or formal nomenclature (*Empire Jute Co. Ltd.*).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TYK QUESTION 4 -->
+                    <div class="example-box" id="tyk-q4">
+                        <div class="example-header">
+                            <span class="example-title"><i class="fa-solid fa-code-merge"></i> TYK Question 4: Merger of Loss-Making Company &bull; SAAR vs. GAAR</span>
+                            <span class="statute-badge">ICAI TYK 4 &bull; SAAR &bull; Sec 116</span>
+                        </div>
+                        <p><strong>Problem Statement:</strong> The merger of a loss-making company with a profit-making one results in losses setting off profits, resulting in a lower net tax liability and capital gains set-off. Can GAAR be invoked to deny the amalgamation loss set-off?</p>
+
+                        <div class="solution-box">
+                            <div class="solution-header"><i class="fa-solid fa-check"></i> Statutory Analysis &amp; Solution</div>
+                            <div style="font-size: 13.5px; line-height: 1.65;">
+                                1. <strong>SAAR Provisions Govern Amalgamation Losses:</strong>
+                                Under Section 116 of the Income-tax Act, 2025 [legacy Section 72A], the carry forward and set-off of accumulated business losses and unabsorbed depreciation in a scheme of amalgamation is governed by an exhaustive code of <strong>Specific Anti-Avoidance Rules (SAAR)</strong>.
+                                <br>2. <strong>Statutory Safeguards under Section 116:</strong>
+                                Section 116 already mandates:
+                                <ul style="margin: 4px 0 4px 18px;">
+                                    <li>The amalgamating company must have been engaged in the business for &ge; 3 years.</li>
+                                    <li>The amalgamated company must hold &ge; 75% book value of fixed assets for &ge; 5 years.</li>
+                                    <li>The amalgamated company must continue the business for &ge; 5 years and achieve &ge; 50% production capacity.</li>
+                                </ul>
+                                3. <strong>Non-Applicability of GAAR:</strong>
+                                As clarified by CBDT Circular No. 7/2017 (Question 7 &amp; Question 1), where the scheme of amalgamation satisfies all explicit statutory conditions under Section 116 and has been sanctioned by the NCLT after considering tax aspects, <strong>GAAR cannot be invoked</strong> merely because the merger resulted in a tax benefit of loss set-off.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TYK QUESTION 5 -->
+                    <div class="example-box" id="tyk-q5">
+                        <div class="example-header">
+                            <span class="example-title"><i class="fa-solid fa-file-contract"></i> TYK Question 5: Lease vs. Outright Purchase &bull; Taxpayer's Commercial Choice</span>
+                            <span class="statute-badge">ICAI TYK 5 &bull; Circular 7/2017</span>
+                        </div>
+                        <p><strong>Problem Statement:</strong> A choice is made by a company to acquire a commercial asset on lease over an outright purchase. The company claims deduction for lease rentals rather than depreciation. Can the Assessing Officer invoke GAAR on the ground that leasing was adopted to reduce tax liability?</p>
+
+                        <div class="solution-box">
+                            <div class="solution-header"><i class="fa-solid fa-check"></i> Statutory Analysis &amp; Solution</div>
+                            <div style="font-size: 13.5px; line-height: 1.65;">
+                                1. <strong>Taxpayer's Right to Choose Commercial Method:</strong>
+                                Under CBDT Circular No. 7/2017 (Question 3), <strong>GAAR will NOT interplay with the right of the taxpayer to select or choose the method of implementing a genuine commercial transaction</strong>.
+                                <br>2. <strong>Legitimate Alternative:</strong>
+                                Both outright purchase (with depreciation claim u/s 33) and leasing (with rental deduction u/s 28/32) are legally recognized commercial alternatives available in law. Choosing a lease structure based on liquidity, cash flows, or business considerations does not make the transaction an Impermissible Avoidance Arrangement.
+                                <br>3. <strong>Conclusion:</strong>
+                                GAAR provisions <strong>cannot be invoked</strong> in this case. The company is fully entitled to claim deduction for the lease rentals.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TYK QUESTION 6 -->
+                    <div class="example-box" id="tyk-q6">
+                        <div class="example-header">
+                            <span class="example-title"><i class="fa-solid fa-building-flag"></i> TYK Question 6: M/s Global Architects Inc. &bull; Partnership Firm Conduit</span>
+                            <span class="statute-badge">ICAI TYK 6 &bull; DTAA &bull; Conduit Firm</span>
+                        </div>
+                        <p><strong>Problem Statement:</strong> M/s Global Architects Inc. (incorporated in Country F1) provides architectural services. The India-F1 tax treaty provides that architectural services are technical services taxable in India @ 10% on gross basis. Instead of executing directly, M/s Global Architects Inc. forms a partnership firm in India with a director having a nominal 1% share. The firm executes the project in India utilizing the company's seconded trained technical staff. Under the treaty, profits of a partnership firm are exempt in India unless it has a Permanent Establishment (PE). The firm claims treaty benefits and pays zero tax in India. Can GAAR be invoked?</p>
+
+                        <div class="solution-box">
+                            <div class="solution-header"><i class="fa-solid fa-check"></i> Statutory Analysis &amp; Decision</div>
+                            <div style="font-size: 13.5px; line-height: 1.65;">
+                                1. <strong>Main Purpose Test [Section 179(1)]:</strong>
+                                M/s Global Architects Inc. would have been directly taxable in India @ 10% on gross technical service fees. The incorporation of a partnership firm with a nominal partner and routing the contract through it was orchestrated with the main purpose of obtaining a tax benefit under the India-F1 DTAA (complete non-taxation).
+                                <br>2. <strong>Lack of Commercial Substance [Section 180]:</strong>
+                                The firm has no independent capital, no separate technical infrastructure, and simply utilizes the seconded trained manpower of the foreign company. There is zero commercial necessity to create a separate partnership firm other than avoiding Indian taxation.
+                                <br>3. <strong>Consequences under Section 181:</strong>
+                                The arrangement is declared an <strong>Impermissible Avoidance Arrangement (IAA)</strong>. The tax authorities are empowered under Section 181 to:
+                                <ul style="margin: 4px 0 0 18px;">
+                                    <li>Disregard the partnership firm as an accommodating party / conduit.</li>
+                                    <li>Treat the contract as executed directly by M/s Global Architects Inc.</li>
+                                    <li>Tax the entire consideration in India as Fees for Technical Services (FTS) @ 10% under the treaty!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CHAPTER FOOTER & NAVIGATION -->
+                <footer style="margin-top: 64px; padding-top: 32px; border-top: 2px solid var(--slate-100);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+                        <div>
+                            <a href="trusts_special_entities.html" style="display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; font-size: 14px;">
+                                <i class="fa-solid fa-arrow-left"></i> Previous: Chapter 10 - RNPOs, Political Parties &amp; Special Entities
+                            </a>
+                        </div>
+                        <div>
+                            <a href="../notes/dtnotes.html" style="display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; font-size: 14px;">
+                                Chapter Index: Direct Tax Master Portal <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 40px; color: var(--slate-400); font-size: 13px;">
+                        <p>&copy; 2026 Calcium Notes &bull; CA Final Direct Tax Master Portal &bull; Updated for Finance Act, 2026 &amp; Income-tax Act, 2025.</p>
+                        <p style="font-size: 11.5px; margin-top: 4px;">Strictly for educational review and exam preparation based on the ICAI Study Material.</p>
+                    </div>
+                </footer>
+
+            </div> <!-- End reading-container -->
+        </main>
+    </div> <!-- End page-wrapper -->
+
+    <!-- Interactive JavaScript -->
+    <script>
+        (function() {
+            // 1. Reading Progress Bar
+            const progressBar = document.getElementById('reading-progress');
+            window.addEventListener('scroll', () => {
+                const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = totalHeight > 0 ? (window.scrollY / totalHeight) * 100 : 0;
+                progressBar.style.width = progress + '%';
+            });
+
+            // 2. Sidebar Search Filter
+            const searchInput = document.getElementById('sidebar-search');
+            const menuLinks = document.querySelectorAll('.sidebar-link');
+            const sectionTitles = document.querySelectorAll('.sidebar-section-title');
+
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    const query = this.value.toLowerCase().trim();
+                    menuLinks.forEach(link => {
+                        const text = link.textContent.toLowerCase();
+                        const href = link.getAttribute('href').toLowerCase();
+                        const match = text.includes(query) || href.includes(query);
+                        link.parentElement.style.display = match ? 'block' : 'none';
+                    });
+
+                    sectionTitles.forEach(title => {
+                        let next = title.nextElementSibling;
+                        let anyVisible = false;
+                        while (next && !next.classList.contains('sidebar-section-title')) {
+                            if (next.style.display !== 'none') {
+                                anyVisible = true;
+                                break;
+                            }
+                            next = next.nextElementSibling;
+                        }
+                        title.style.display = anyVisible || query === '' ? 'block' : 'none';
+                    });
+                });
+            }
+
+            // 3. Active Link Highlighting on Scroll
+            const sections = document.querySelectorAll('section[id], div[id^="tyk-"]');
+            const observerOptions = {
+                root: null,
+                rootMargin: '-80px 0px -70% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        menuLinks.forEach(link => {
+                            if (link.getAttribute('href') === '#' + id) {
+                                menuLinks.forEach(l => l.classList.remove('active'));
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(sec => observer.observe(sec));
+
+            // 4. Keyboard Shortcuts
+            document.addEventListener('keydown', (e) => {
+                if (e.key === '/' && document.activeElement !== searchInput) {
+                    e.preventDefault();
+                    if (searchInput) {
+                        searchInput.focus();
+                    }
+                } else if (e.key === 'Escape' && document.activeElement === searchInput) {
+                    searchInput.value = '';
+                    searchInput.dispatchEvent(new Event('input'));
+                    searchInput.blur();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

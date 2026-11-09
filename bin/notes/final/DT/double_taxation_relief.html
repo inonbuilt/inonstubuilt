@@ -1,0 +1,2131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 22: Double Taxation Relief &amp; Foreign Tax Credit | CA Final DT Notes | Calcium Notes</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Master CA Final Direct Tax Chapter 22: Double Taxation Relief under Section 159 (DTAA / Bilateral Relief), Section 160 (Unilateral Relief), Foreign Tax Credit under Rule 76, Tax Residency Certificate (TRC), and Permanent Establishment concepts.">
+    <meta name="keywords" content="Double Taxation Relief, DTAA, Section 159, Section 160, Rule 76, Rule 128, FTC, Foreign Tax Credit, Permanent Establishment, PE, Section 90, Section 91, AY 2025-26, AY 2026-27">
+    <meta name="author" content="Calcium Notes">
+    <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/DT/double_taxation_relief.html">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- MathJax for KaTeX math formatting -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
+            --primary-dark: #0f172a;
+            --accent: #d97706;
+            --accent-light: #fef3c7;
+            --danger: #dc2626;
+            --danger-light: #fee2e2;
+            --success: #16a34a;
+            --success-light: #dcfce7;
+            --info: #0284c7;
+            --info-light: #e0f2fe;
+            --warning: #ca8a04;
+            --warning-light: #fef9c3;
+            --slate-50: #f8fafc;
+            --slate-100: #f1f5f9;
+            --slate-200: #e2e8f0;
+            --slate-300: #cbd5e1;
+            --slate-400: #94a3b8;
+            --slate-500: #64748b;
+            --slate-600: #475569;
+            --slate-700: #334155;
+            --slate-800: #1e293b;
+            --slate-900: #0f172a;
+            --border-color: #e2e8f0;
+            --card-bg: #ffffff;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --font-heading: 'Outfit', var(--font-sans);
+            --font-mono: 'Fira Code', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--slate-50);
+            color: var(--slate-800);
+            line-height: 1.65;
+            font-size: 15px;
+            overflow-x: hidden;
+        }
+
+        /* Reading Progress Bar */
+        #reading-progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            z-index: 1000;
+        }
+
+        #reading-progress {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #3b82f6, #0284c7, #16a34a);
+            transition: width 0.1s ease-out;
+        }
+
+        /* Layout Structure */
+        .page-wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 310px;
+            background-color: #ffffff;
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            z-index: 50;
+        }
+
+        .sidebar-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--border-color);
+            background: linear-gradient(180deg, #ffffff 0%, var(--slate-50) 100%);
+        }
+
+        .sidebar-brand {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .sidebar-brand span {
+            color: var(--accent);
+        }
+
+        .sidebar-search {
+            padding: 12px 20px;
+            border-bottom: 1px solid var(--border-color);
+            background-color: var(--slate-50);
+        }
+
+        .sidebar-search-box {
+            position: relative;
+        }
+
+        .sidebar-search-box input {
+            width: 100%;
+            padding: 8px 12px 8px 34px;
+            border: 1px solid var(--slate-200);
+            border-radius: 6px;
+            font-size: 13px;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            background: #fff;
+        }
+
+        .sidebar-search-box input:focus {
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+        }
+
+        .sidebar-search-box i {
+            position: absolute;
+            left: 11px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--slate-400);
+            font-size: 13px;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+            padding: 12px 0;
+            flex-grow: 1;
+        }
+
+        .sidebar-section-title {
+            padding: 12px 20px 6px 20px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--slate-400);
+        }
+
+        .sidebar-item {
+            margin-bottom: 2px;
+        }
+
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 20px;
+            color: var(--slate-600);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.15s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .sidebar-link:hover {
+            color: var(--primary);
+            background-color: var(--slate-50);
+        }
+
+        .sidebar-link.active {
+            color: var(--primary);
+            background-color: #eff6ff;
+            border-left-color: var(--primary);
+            font-weight: 600;
+        }
+
+        .sidebar-badge {
+            font-size: 10.5px;
+            padding: 2px 7px;
+            border-radius: 10px;
+            background-color: var(--slate-100);
+            color: var(--slate-500);
+            font-weight: 600;
+        }
+
+        .sidebar-link.active .sidebar-badge {
+            background-color: #dbeafe;
+            color: var(--primary);
+        }
+
+        .sidebar-footer {
+            padding: 16px 20px;
+            border-top: 1px solid var(--border-color);
+            background-color: var(--slate-50);
+            font-size: 12px;
+            color: var(--slate-500);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sidebar-footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            flex-grow: 1;
+            padding: 40px;
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        /* Hero Banner */
+        .chapter-header {
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .chapter-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            background-color: #eff6ff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+
+        .chapter-title {
+            font-family: var(--font-heading);
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: var(--slate-900);
+            line-height: 1.25;
+            margin-bottom: 12px;
+        }
+
+        .chapter-desc {
+            font-size: 16px;
+            color: var(--slate-600);
+            max-width: 860px;
+            line-height: 1.6;
+        }
+
+        .chapter-meta-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 18px;
+            padding-top: 16px;
+            border-top: 1px dashed var(--slate-200);
+            font-size: 13px;
+            color: var(--slate-500);
+        }
+
+        .meta-pill {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: #fff;
+            padding: 4px 10px;
+            border-radius: 6px;
+            border: 1px solid var(--slate-200);
+        }
+
+        .meta-pill i {
+            color: var(--primary-light);
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin-bottom: 50px;
+            scroll-margin-top: 30px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--slate-200);
+        }
+
+        .section-title-wrap {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-badge {
+            font-family: var(--font-mono);
+            font-size: 13px;
+            font-weight: 600;
+            background-color: var(--primary);
+            color: #ffffff;
+            padding: 4px 10px;
+            border-radius: 6px;
+            letter-spacing: 0.02em;
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--slate-900);
+        }
+
+        .section-nav-pills {
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav-pill {
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            background: var(--slate-100);
+            color: var(--slate-600);
+            font-weight: 500;
+        }
+
+        .nav-pill.active {
+            background: var(--primary-light);
+            color: #fff;
+        }
+
+        /* Statutory & Theory Cards */
+        .statutory-box {
+            background-color: #ffffff;
+            border: 1px solid #bfdbfe;
+            border-left: 5px solid var(--primary-light);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+
+        .statutory-box-header {
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .statutory-box-body p {
+            color: var(--slate-700);
+            margin-bottom: 10px;
+        }
+
+        .statutory-box-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        .theory-card {
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+        }
+
+        .theory-title {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--slate-900);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .theory-title i {
+            color: var(--primary-light);
+        }
+
+        /* Callout Styles */
+        .callout {
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 18px 0;
+            font-size: 14.5px;
+            line-height: 1.6;
+        }
+
+        .callout-header {
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .callout-info {
+            background-color: var(--info-light);
+            border-left: 4px solid var(--info);
+            color: #0369a1;
+        }
+
+        .callout-warning {
+            background-color: var(--warning-light);
+            border-left: 4px solid var(--warning);
+            color: #854d0e;
+        }
+
+        .callout-danger {
+            background-color: var(--danger-light);
+            border-left: 4px solid var(--danger);
+            color: #991b1b;
+        }
+
+        .callout-success {
+            background-color: var(--success-light);
+            border-left: 4px solid var(--success);
+            color: #166534;
+        }
+
+        /* Exam Tip Box */
+        .exam-tip-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fffbeb 100%);
+            border: 1px solid #fde68a;
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+
+        .exam-tip-header {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: #92400e;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        /* Tables */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 18px 0;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background: #fff;
+        }
+
+        .tax-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13.5px;
+            text-align: left;
+        }
+
+        .tax-table th {
+            background-color: var(--slate-100);
+            color: var(--slate-700);
+            font-weight: 600;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .tax-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--slate-100);
+            color: var(--slate-700);
+            vertical-align: top;
+        }
+
+        .tax-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .tax-table tbody tr:hover {
+            background-color: var(--slate-50);
+        }
+
+        .badge-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .tag-success { background: var(--success-light); color: var(--success); }
+        .tag-danger { background: var(--danger-light); color: var(--danger); }
+        .tag-warning { background: var(--warning-light); color: var(--warning); }
+        .tag-info { background: var(--info-light); color: var(--info); }
+
+        /* Formula Box */
+        .formula-box {
+            background-color: var(--slate-900);
+            color: #ffffff;
+            border-radius: 8px;
+            padding: 18px 24px;
+            margin: 18px 0;
+        }
+
+        .formula-title {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--slate-400);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .formula-content {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            color: #38bdf8;
+            text-align: center;
+        }
+
+        /* Examples & Solutions */
+        .example-box {
+            background-color: #ffffff;
+            border: 1px solid #e0e7ff;
+            border-radius: 10px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .example-title {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #3730a3;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-solution {
+            background-color: #eff6ff;
+            color: var(--primary);
+            border: 1px solid #bfdbfe;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin: 14px 0 6px 0;
+            transition: all 0.2s ease;
+        }
+
+        .btn-solution:hover {
+            background-color: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+        }
+
+        .solution-card {
+            display: none;
+            background-color: var(--slate-50);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 14px;
+        }
+
+        /* Lists */
+        .styled-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 10px 0;
+        }
+
+        .styled-list li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 8px;
+            color: var(--slate-700);
+        }
+
+        .styled-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: 700;
+        }
+
+        /* Grids */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 18px;
+            margin: 16px 0;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 16px 0;
+        }
+
+        /* Bottom Nav */
+        .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .nav-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--slate-700);
+            padding: 10px 18px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .nav-btn:hover {
+            background-color: var(--slate-50);
+            border-color: var(--primary-light);
+            color: var(--primary);
+        }
+
+        .nav-label {
+            font-size: 11px;
+            color: var(--slate-400);
+            text-transform: uppercase;
+        }
+
+        .nav-title {
+            font-size: 14px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div id="reading-progress-container">
+        <div id="reading-progress"></div>
+    </div>
+
+    <div class="page-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="../../notes/dtnotes.html" class="sidebar-brand">
+                    <i class="fa-solid fa-scale-unbalanced-flip"></i>
+                    <div>Calcium <span>DT Notes</span></div>
+                </a>
+            </div>
+
+            <div class="sidebar-search">
+                <div class="sidebar-search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="sidebar-search-input" placeholder="Quick find topic/section...">
+                </div>
+            </div>
+
+            <ul class="sidebar-nav">
+                <li class="sidebar-section-title">1. Concepts &amp; Bilateral Relief</li>
+                <li class="sidebar-item">
+                    <a href="#sec-dt-concept" class="sidebar-link">
+                        <span>Double Taxation Concept</span>
+                        <span class="sidebar-badge">Jurisdiction</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-types-relief" class="sidebar-link">
+                        <span>Types of Relief</span>
+                        <span class="sidebar-badge">Methods</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-159" class="sidebar-link">
+                        <span>Bilateral Relief &amp; DTAA</span>
+                        <span class="sidebar-badge">Sec 159</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-trc" class="sidebar-link">
+                        <span>TRC &amp; Form 41 Rules</span>
+                        <span class="sidebar-badge">Rule 75</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-section-title">2. Unilateral Relief &amp; PE</li>
+                <li class="sidebar-item">
+                    <a href="#sec-160" class="sidebar-link">
+                        <span>Unilateral Relief</span>
+                        <span class="sidebar-badge">Sec 160</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-ftc" class="sidebar-link">
+                        <span>Foreign Tax Credit (FTC)</span>
+                        <span class="sidebar-badge">Rule 76</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-pe" class="sidebar-link">
+                        <span>Permanent Establishment (PE)</span>
+                        <span class="sidebar-badge">Article 5</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-bpo" class="sidebar-link">
+                        <span>BPO Units Taxation in India</span>
+                        <span class="sidebar-badge">Circular 5/2004</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-section-title">3. Practical Application (TYK)</li>
+                <li class="sidebar-item">
+                    <a href="#sec-tyk" class="sidebar-link">
+                        <span>ICAI TYK (Q1 to Q10)</span>
+                        <span class="sidebar-badge">TYK 1-10</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-1" class="sidebar-link">
+                        <span>TYK 1: Cosmos Limited PE</span>
+                        <span class="sidebar-badge">Non-Discrim.</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-2" class="sidebar-link">
+                        <span>TYK 2: Kalpesh Kumar Musician</span>
+                        <span class="sidebar-badge">Sec 160</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-3" class="sidebar-link">
+                        <span>TYK 3: Miss Vivitha Snooker</span>
+                        <span class="sidebar-badge">Sec 160</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-4" class="sidebar-link">
+                        <span>TYK 4: PE vs Business Conn.</span>
+                        <span class="sidebar-badge">PE Analysis</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-5" class="sidebar-link">
+                        <span>TYK 5: Unilateral Relief Rules</span>
+                        <span class="sidebar-badge">Sec 160</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-6" class="sidebar-link">
+                        <span>TYK 6: Treaty Override &amp; TRC</span>
+                        <span class="sidebar-badge">Sec 159</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-7" class="sidebar-link">
+                        <span>TYK 7: Arif Dual Resident</span>
+                        <span class="sidebar-badge">Tie-Breaker</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-8" class="sidebar-link">
+                        <span>TYK 8: Mr. Kamesh Multi-Country</span>
+                        <span class="sidebar-badge">Sec 160</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-9" class="sidebar-link">
+                        <span>TYK 9: Mr. Anil Loss Set-off</span>
+                        <span class="sidebar-badge">Sec 160</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#tyk-10" class="sidebar-link">
+                        <span>TYK 10: Mr. Ravi S &amp; T Countries</span>
+                        <span class="sidebar-badge">Sec 160</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <span>AY 2025-26 &amp; AY 2026-27</span>
+                <a href="../../notes/dtnotes.html"><i class="fa-solid fa-list-check"></i> Index</a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header Hero Banner -->
+            <div class="chapter-header">
+                <div class="chapter-tag">
+                    <i class="fa-solid fa-globe"></i> CA Final Direct Tax Laws &bull; Module 4: International Taxation
+                </div>
+                <h1 class="chapter-title">Chapter 22: Double Taxation Relief &amp; Foreign Tax Credit</h1>
+                <p class="chapter-desc">
+                    Comprehensive study notes covering the concept of double taxation relief, bilateral relief under Section 159 (DTAA treaty override, non-discrimination, GAAR interaction, and mandatory Tax Residency Certificate / TRC in Form 41), unilateral relief under Section 160 for non-treaty countries, Foreign Tax Credit (FTC) mechanisms under Rule 76, foreign exchange conversion under Rule 206, the doctrine of Permanent Establishment (PE) under Article 5 of OECD/UN Model Conventions, and taxation of Business Process Outsourcing (BPO) units under the Income-tax Act, 2025 and Finance Act, 2026.
+                </p>
+                <div class="chapter-meta-bar">
+                    <div class="meta-pill"><i class="fa-solid fa-book-bookmark"></i> All Statutory Sections (Sec 159 &amp; 160) Mapped</div>
+                    <div class="meta-pill"><i class="fa-solid fa-calendar-days"></i> Applicable for AY 2025-26 &amp; AY 2026-27</div>
+                    <div class="meta-pill"><i class="fa-solid fa-scale-balanced"></i> Landmark Judicial Precedents (P.V.A.L. Kulandagan Chettiar, Azadi Bachao Andolan)</div>
+                    <div class="meta-pill"><i class="fa-solid fa-graduation-cap"></i> 2 In-Text Illustrations + 10 ICAI TYK Questions</div>
+                </div>
+            </div>
+
+
+            <!-- ========================================== -->
+            <!-- SECTION 1: CONCEPT OF DOUBLE TAXATION RELIEF -->
+            <!-- ========================================== -->
+            <section id="sec-dt-concept" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Jurisprudential Foundation</span>
+                        <h2 class="section-title">Concept &amp; Dimensions of Double Taxation</h2>
+                    </div>
+                    <div class="section-nav-pills">
+                        <span class="nav-pill active"><i class="fa-solid fa-globe"></i> International Tax</span>
+                        <span class="nav-pill"><i class="fa-solid fa-balance-scale"></i> Jurisdictional Nexus</span>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title">
+                        <i class="fa-solid fa-scale-unbalanced"></i> The Genesis of Cross-Border Double Taxation
+                    </div>
+                    <p>In modern international commercial transactions, the simultaneous assertion of fiscal sovereignty by two or more sovereign nations over the same economic income gives rise to <strong>Double Taxation</strong>. This conflict arises from two competing jurisdictional principles:</p>
+                    
+                    <div class="grid-2">
+                        <div class="callout callout-info" style="margin:0;">
+                            <div class="callout-header"><i class="fa-solid fa-house-chimney-user"></i> 1. Residence Rule (Worldwide Scope)</div>
+                            <p>Stipulates that the sovereign state in which the taxpayer establishes fiscal residence, domicile, or Place of Effective Management (POEM) possesses the sovereign right to tax the taxpayer's <strong>worldwide income</strong>, regardless of where that income was earned or received.</p>
+                        </div>
+                        <div class="callout callout-warning" style="margin:0;">
+                            <div class="callout-header"><i class="fa-solid fa-location-dot"></i> 2. Source Rule (Territorial Nexus)</div>
+                            <p>Asserts that the sovereign state in which the income originates or is generated (the source state) has the primary fiscal right to tax that income, because the state provides market access, public infrastructure, and legal protection.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title">
+                        <i class="fa-solid fa-code-compare"></i> Juridical vs Economic Double Taxation
+                    </div>
+                    <div class="table-responsive">
+                        <table class="tax-table">
+                            <thead>
+                                <tr>
+                                    <th>Parameter</th>
+                                    <th>Juridical Double Taxation</th>
+                                    <th>Economic Double Taxation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Definition</strong></td>
+                                    <td>Occurs when the <strong>same legal taxpayer</strong> is taxed on the <strong>same economic income</strong> by more than one sovereign jurisdiction in the same tax period.</td>
+                                    <td>Occurs when the <strong>same economic transaction or income</strong> is taxed in the hands of <strong>two different legal taxpayers</strong> across jurisdictions.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Typical Example</strong></td>
+                                    <td>An Indian resident earns rental income from a building located in Germany; Germany taxes it under the Source Rule, while India taxes it under the Residence Rule.</td>
+                                    <td>Profits earned by an overseas subsidiary are taxed in its home country as corporate income, and the subsequent dividend is taxed again in India in the hands of the Indian parent company.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Primary Remedy</strong></td>
+                                    <td>Directly resolved through <strong>Double Taxation Avoidance Agreements (DTAAs)</strong> under Section 159 or Unilateral Relief under Section 160.</td>
+                                    <td>Addressed via underlying tax credits, participation exemptions, transfer pricing corresponding adjustments, or Section 80M inter-corporate dividend deductions.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 2: TYPES OF RELIEF & METHODS -->
+            <!-- ========================================== -->
+            <section id="sec-types-relief" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Relief Architecture</span>
+                        <h2 class="section-title">Types of Relief &amp; Methods of Elimination</h2>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title"><i class="fa-solid fa-sitemap"></i> Broad Classification of Double Taxation Relief</div>
+                    <div class="grid-2">
+                        <div class="callout callout-success" style="margin:0;">
+                            <div class="callout-header"><i class="fa-solid fa-handshake"></i> 1. Bilateral Relief [Section 159]</div>
+                            <p>Granted pursuant to an agreement entered into between two sovereign governments (DTAA / Tax Treaty) or specified territories. The two contracting states mutually agree upon the allocation of taxing rights and mechanisms for relief (Exemption or Foreign Tax Credit).</p>
+                        </div>
+                        <div class="callout callout-info" style="margin:0;">
+                            <div class="callout-header"><i class="fa-solid fa-user-shield"></i> 2. Unilateral Relief [Section 160]</div>
+                            <p>Provided by domestic legislation to its own residents in respect of income earned in a foreign country with which <strong>no DTAA exists</strong>. The country of residence voluntarily surrenders or credits tax to shield its resident from double burden.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title"><i class="fa-solid fa-diagram-project"></i> Mechanisms for Granting Bilateral Relief</div>
+                    <div class="table-responsive">
+                        <table class="tax-table">
+                            <thead>
+                                <tr>
+                                    <th>Method</th>
+                                    <th>Sub-Category</th>
+                                    <th>Operational Mechanics</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2"><strong>1. Exemption Method</strong></td>
+                                    <td><strong>Full Exemption</strong></td>
+                                    <td>The residence state completely surrenders its taxing rights over foreign-source income. The foreign income is excluded from total income and not taxed in the country of residence.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Exemption with Progression</strong></td>
+                                    <td>The foreign income is not taxed in the residence state, but is taken into account solely to determine the <strong>average rate of tax</strong> applicable to the taxpayer's remaining domestic taxable income.</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2"><strong>2. Tax Credit Method</strong></td>
+                                    <td><strong>Full Credit</strong></td>
+                                    <td>The residence state allows a deduction from its domestic tax of the entire foreign tax paid, without any ceiling limit.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Ordinary / Proportionate Credit</strong></td>
+                                    <td>The credit allowed by the residence state is restricted to the <strong>lesser of the foreign tax paid or the domestic tax attributable</strong> to the doubly taxed foreign income. <em>(Followed by India under Section 160 and Rule 76)</em>.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>3. Deduction Method</strong></td>
+                                    <td><strong>Expense Deduction</strong></td>
+                                    <td>Foreign taxes paid are allowed merely as a deductible business expenditure from gross income, rather than a dollar-for-dollar credit against final tax liability.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 3: BILATERAL RELIEF & SECTION 159 -->
+            <!-- ========================================== -->
+            <section id="sec-159" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Section 159</span>
+                        <h2 class="section-title">Bilateral Relief, DTAAs &amp; Treaty Override</h2>
+                    </div>
+                </div>
+
+                <div class="statutory-box">
+                    <div class="statutory-box-header">
+                        <i class="fa-solid fa-scale-balanced"></i> Statutory Mandate &bull; Section 159 of the Income-tax Act, 2025 [Corresponding to Sections 90 &amp; 90A of 1961 Act]
+                    </div>
+                    <div class="statutory-box-body">
+                        <p><strong>Section 159(1)</strong> empowers the Central Government to enter into an agreement with the Government of any country or specified territory outside India for:</p>
+                        <ul class="styled-list">
+                            <li><strong>Granting relief</strong> in respect of income on which income-tax has been paid both in India and in that foreign country/territory;</li>
+                            <li><strong>Avoidance of double taxation</strong> of income under this Act and under the corresponding law in force in that country/territory;</li>
+                            <li><strong>Exchange of information</strong> for the prevention of evasion or avoidance of income-tax; or</li>
+                            <li><strong>Recovery of income-tax</strong> under this Act and under the corresponding law of that country/territory.</li>
+                        </ul>
+                        <p><strong>Section 159(2)</strong> extends identical powers to any <strong>specified association in India</strong> entering into an agreement with any specified association in a foreign territory (e.g. India-Taiwan pact).</p>
+                    </div>
+                </div>
+
+                <!-- Treaty Override & Beneficial Rule -->
+                <div class="theory-card">
+                    <div class="theory-title">
+                        <i class="fa-solid fa-shield-halved"></i> Section 159(4) &bull; The Statutory Principle of Treaty Override
+                    </div>
+                    <div class="formula-box">
+                        <div class="formula-title"><i class="fa-solid fa-scale-balanced"></i> The "More Beneficial" Rule under Section 159(4)</div>
+                        <div class="formula-content">
+                            $$\mathbf{Governing\ Law} = \mathbf{DTAA\ Provisions}\quad \text{OR}\quad \mathbf{Income\text{-}tax\ Act,\ 2025\ Provisions,}\quad \mathbf{WHICHEVER\ IS\ MORE\ BENEFICIAL}$$
+                        </div>
+                    </div>
+                    <p>Where the Central Government has entered into a DTAA under Section 159, the provisions of the Income-tax Act, 2025 shall apply to the assessee <strong>only to the extent they are more beneficial to him</strong>.</p>
+
+                    <div class="callout callout-info">
+                        <div class="callout-header"><i class="fa-solid fa-gavel"></i> Landmark Judicial Precedent: CIT v. P.V.A.L. Kulandagan Chettiar [2004] 267 ITR 654 (SC)</div>
+                        <p>The Supreme Court ruled that in case of any conflict between the provisions of the domestic Income-tax Act and a Double Taxation Avoidance Agreement, <strong>the provisions of the DTAA shall prevail over the Act</strong>. If under a treaty, a specific income is taxable only in the other Contracting State, India cannot assert taxing rights under domestic law!</p>
+                    </div>
+
+                    <div class="callout callout-danger">
+                        <div class="callout-header"><i class="fa-solid fa-triangle-exclamation"></i> Exception: GAAR Overrides Section 159(4)</div>
+                        <p>Under Section 159(4) proviso, the provisions of <strong>Chapter XI-B (General Anti-Avoidance Rule / GAAR)</strong> shall apply to the assessee even if such provisions are not beneficial to him! An Impermissible Avoidance Arrangement (IAA) cannot claim treaty immunity.</p>
+                    </div>
+                </div>
+
+                <!-- Non-Discrimination Section 159(5) -->
+                <div class="theory-card">
+                    <div class="theory-title">
+                        <i class="fa-solid fa-building-columns"></i> Section 159(5) &bull; Foreign Company Tax Rate &amp; Non-Discrimination
+                    </div>
+                    <p>To eliminate ambiguity regarding Article 24 (Non-Discrimination) of DTAAs, <strong>Section 159(5)</strong> statutorily declares:</p>
+                    <div class="callout callout-warning">
+                        <p><em>&ldquo;The charge of tax in respect of a foreign company at a rate higher than the rate at which a domestic company is chargeable shall not be regarded as less favourable charge or discrimination in respect of such company.&rdquo;</em></p>
+                    </div>
+                    <p>Consequently, taxing a foreign company's Indian branch at <strong>35%</strong> (w.e.f. AY 2025-26) while domestic companies are taxed at 22% or 25% is fully valid in law and does not violate treaty non-discrimination clauses.</p>
+                </div>
+
+                <!-- Section 159(8) & TRC -->
+                <div id="sec-trc" class="theory-card">
+                    <div class="theory-title">
+                        <span class="section-badge" style="font-size:0.75rem; vertical-align:middle; margin-right:8px;">Section 159(8) &amp; Rule 75</span>
+                        Mandatory Tax Residency Certificate (TRC) &amp; Form 41 Particulars
+                    </div>
+                    <p>Under <strong>Section 159(8)</strong> [corresponding to Section 90(4) of the 1961 Act], an assessee, not being a resident in India, <strong>shall not be entitled to claim any relief under a DTAA</strong> unless he obtains a valid <strong>Tax Residency Certificate (TRC)</strong> containing prescribed particulars from the Government of that country or specified territory.</p>
+
+                    <div class="statutory-box" style="margin-top:1.25rem;">
+                        <div class="statutory-box-header">
+                            <i class="fa-solid fa-file-invoice"></i> Rule 75 Particulars &amp; Electronic Form 41 [Form 10F]
+                        </div>
+                        <div class="statutory-box-body">
+                            <p>If the TRC issued by the foreign government does not contain all statutory details, the non-resident must electronically furnish <strong>Form 41</strong> [earlier Form 10F] self-certifying the following details:</p>
+                            <ol class="styled-list">
+                                <li><strong>Status</strong> (individual, company, firm, etc.) of the assessee;</li>
+                                <li><strong>PAN</strong> (if allotted) or <strong>Tax Identification Number (TIN)</strong> of the applicant in the country of residence;</li>
+                                <li><strong>Country or specified territory</strong> of incorporation or residence;</li>
+                                <li><strong>Period</strong> for which the residential status mentioned in the TRC is applicable;</li>
+                                <li><strong>Address</strong> of the assessee in the country or specified territory outside India; and</li>
+                                <li><strong>Copy of the TRC</strong> to be uploaded as a mandatory annexure.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="callout callout-success">
+                        <div class="callout-header"><i class="fa-solid fa-gavel"></i> Landmark Precedent: Union of India v. Azadi Bachao Andolan [2003] 263 ITR 706 (SC)</div>
+                        <p>The Supreme Court affirmed that a <strong>Tax Residency Certificate (TRC)</strong> issued by the competent revenue authority of the host state constitutes <strong>sufficient and conclusive evidence</strong> for establishing residence and entitlement to treaty benefits, unless there is clear evidence of fraud or sham transaction.</p>
+                    </div>
+                </div>
+
+                <!-- ILLUSTRATION 1 -->
+                <div class="example-box">
+                    <div class="example-title">
+                        <i class="fa-solid fa-pen-nib"></i> ILLUSTRATION 1 &bull; Treaty Override over Domestic Law
+                    </div>
+                    <p><strong>Problem:</strong> Examine the correctness or otherwise of the following statement with reference to the provisions of the Income-tax Act, 2025:</p>
+                    <div class="callout callout-info" style="margin:10px 0;">
+                        <em>&ldquo;The double taxation avoidance treaties entered into by the Government of India override the domestic law.&rdquo;</em>
+                    </div>
+
+                    <button class="btn-solution" onclick="toggleSolution('sol-ill-1')">View Solution &amp; Statutory Analysis</button>
+                    <div id="sol-ill-1" class="solution-card">
+                        <p><strong>Analysis &amp; Statutory Conclusion:</strong></p>
+                        <p>The statement is <strong>CORRECT</strong>, subject to statutory qualifications:</p>
+                        <ol class="styled-list">
+                            <li><strong>Section 159(4) Mandate:</strong> Section 159(4) provides that where a double taxation avoidance treaty is entered into by the Central Government, the provisions of the Income-tax Act, 2025 shall apply to the assessee to the extent they are <strong>more beneficial to him</strong>.</li>
+                            <li><strong>Judicial Confirmation:</strong> In case of any conflict between the provisions of the DTAA and the Income-tax Act, the provisions of the DTAA prevail over the Act [<em>CIT v. P.V.A.L. Kulandagan Chettiar (2004) 267 ITR 654 (SC)</em>].</li>
+                            <li><strong>Statutory Exception:</strong> The only statutory exception is the <strong>General Anti-Avoidance Rule (GAAR)</strong> under Chapter XI-B, which overrides the treaty provisions by virtue of the express proviso to Section 159(4).</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ========================================== -->
+            <!-- SECTION 4: UNILATERAL RELIEF [SECTION 160] -->
+            <!-- ========================================== -->
+            <section id="sec-160" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Section 160</span>
+                        <h2 class="section-title">Double Taxation Unilateral Relief (Non-Treaty Countries)</h2>
+                    </div>
+                </div>
+
+                <div class="statutory-box">
+                    <div class="statutory-box-header">
+                        <i class="fa-solid fa-scale-balanced"></i> Statutory Mandate &bull; Section 160 of the Income-tax Act, 2025 [Corresponding to Section 91 of 1961 Act]
+                    </div>
+                    <div class="statutory-box-body">
+                        <p>If any person who is <strong>resident in India</strong> in any previous year proves that, in respect of his income which accrued or arose to him during that previous year <strong>outside India</strong> (and which is not deemed to accrue or arise in India), he has paid in any country with which there is <strong>no agreement under section 159</strong> for the relief or avoidance of double taxation, income-tax in that country, he shall be entitled to the deduction from the Indian income-tax payable by him of a sum calculated on such doubly taxed income.</p>
+                    </div>
+                </div>
+
+                <!-- 5 Conditions for Section 160 -->
+                <div class="theory-card">
+                    <div class="theory-title">
+                        <i class="fa-solid fa-list-check"></i> Five Cumulative Conditions for Claiming Unilateral Relief
+                    </div>
+                    <div class="table-responsive">
+                        <table class="tax-table">
+                            <thead>
+                                <tr>
+                                    <th>Condition No.</th>
+                                    <th>Statutory Requirement</th>
+                                    <th>Legal Nuance &amp; Precedent</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>1. Residential Status</strong></td>
+                                    <td>The assessee must be a <strong>Resident in India</strong> during the relevant previous year.</td>
+                                    <td>Non-residents (NR) and Residents but Not Ordinarily Resident (RNOR) are <strong>not eligible</strong> for Section 160 relief.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>2. Place of Accrual</strong></td>
+                                    <td>Income must have <strong>accrued or arisen outside India</strong>.</td>
+                                    <td>Must be genuine foreign source income; income received abroad but accrued in India is ineligible.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>3. No Deemed Accrual</strong></td>
+                                    <td>The income is <strong>not deemed to accrue or arise in India</strong> under Section 9.</td>
+                                    <td>If deemed in India u/s 9(1), 9(3), 9(5), 9(6), or 9(7), Section 160 relief is barred.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>4. Actual Tax Payment</strong></td>
+                                    <td>Income-tax must have been <strong>actually paid / deducted</strong> in the foreign country.</td>
+                                    <td>Mere liability without payment or exempt foreign income does not qualify.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>5. No DTAA in Force</strong></td>
+                                    <td>There must be <strong>no agreement under Section 159</strong> between India and that country.</td>
+                                    <td>If a DTAA exists, relief is governed by the treaty under Section 159, not Section 160.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Calculation Formula -->
+                <div class="theory-card">
+                    <div class="theory-title"><i class="fa-solid fa-calculator"></i> Mathematical Formula for Unilateral Relief</div>
+                    <div class="formula-box">
+                        <div class="formula-title"><i class="fa-solid fa-percent"></i> Unilateral Relief Formula under Section 160</div>
+                        <div class="formula-content" style="font-size:1rem; text-align:left;">
+                            $$\mathbf{Deduction\ u/s\ 160} = \mathbf{Net\ Doubly\ Taxed\ Income} \times \mathbf{LOWER}\ \text{of}:$$
+                            $$\text{(a) Average Indian Tax Rate}\quad \left[\frac{\text{Total Indian Tax (incl. Cess)}}{\text{Total Income}} \times 100\right]$$
+                            $$\text{(b) Average Foreign Tax Rate}\quad \left[\frac{\text{Total Foreign Tax Paid}}{\text{Total Foreign Doubly Taxed Income}} \times 100\right]$$
+                        </div>
+                    </div>
+
+                    <div class="callout callout-danger">
+                        <div class="callout-header"><i class="fa-solid fa-triangle-exclamation"></i> Meaning of "Net Doubly Taxed Income"</div>
+                        <p><strong>Crucial Examination Principle:</strong> Doubly taxed income includes <strong>ONLY that part of the foreign income which is included in the assessee's Total Income in India</strong>:</p>
+                        <ul class="styled-list">
+                            <li>If any deduction under <strong>Chapter VIII</strong> (e.g., Section 151 / Sec 80QQB for royalty) is allowed against such foreign income, the deduction must be subtracted!</li>
+                            <li>If any foreign business loss is set off against other foreign incomes under Section 108(1) (Sec 70), only the <strong>net remaining income</strong> constitutes doubly taxed income!</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ILLUSTRATION 2 -->
+                <div class="example-box">
+                    <div class="example-title">
+                        <i class="fa-solid fa-pen-nib"></i> ILLUSTRATION 2 &bull; Unilateral Relief with Chapter VIII Deductions
+                    </div>
+                    <p><strong>Facts:</strong> Nandita, an individual resident retired employee of Prasar Bharati aged 60 years, is a well-known dramatist deriving income of ₹1,10,000 from theatrical works played abroad. Tax of ₹11,000 was deducted in the foreign country where the plays were performed. India does not have any DTAA under Section 159 with that country. Her income in India amounted to ₹6,10,000. In view of tax planning, she deposited:</p>
+                    <ul class="styled-list">
+                        <li>Public Provident Fund (PPF): ₹1,50,000.</li>
+                        <li>Contribution to approved Pension Fund of LIC: ₹32,000.</li>
+                        <li>Contribution to Central Government Health Scheme (CGHS): ₹28,000.</li>
+                        <li>Medical insurance premium for her mother (non-resident aged 84 years, not dependent): ₹26,000.</li>
+                    </ul>
+                    <p>Compute the tax liability of Nandita for the tax year 2026-27, assuming that she opted out of the default tax regime.</p>
+
+                    <button class="btn-solution" onclick="toggleSolution('sol-ill-2')">View Solution &amp; Step-by-Step Computation</button>
+                    <div id="sol-ill-2" class="solution-card">
+                        <p><strong>Step 1: Computation of Total Income of Nandita (Senior Citizen, Opted Out of Default Regime):</strong></p>
+                        <div class="table-responsive">
+                            <table class="tax-table">
+                                <thead><tr><th>Particulars</th><th>Amount (₹)</th><th>Amount (₹)</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Indian Income</td><td></td><td style="text-align:right;">6,10,000</td></tr>
+                                    <tr><td>Foreign Income (Theatrical works)</td><td></td><td style="text-align:right;">1,10,000</td></tr>
+                                    <tr style="font-weight:600;"><td>Gross Total Income</td><td></td><td style="text-align:right;">7,20,000</td></tr>
+                                    <tr>
+                                        <td>Less: Deductions under Chapter VIII:</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>- Section 123 [Sec 80C/80CCC]: PPF ₹1,50,000 + LIC Pension ₹32,000 (restricted to statutory ceiling)</td>
+                                        <td>1,50,000</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>- Section 126 [Sec 80D]: CGHS contribution ₹28,000 (allowable up to ₹50,000 as she is a resident senior citizen); Mother's mediclaim of ₹26,000 is NOT allowable since mother is a <em>non-resident</em> (senior citizen limit of ₹50,000 applies only to resident parents; limit for non-resident parent is ₹25,000, but mother is not dependent)</td>
+                                        <td>28,000</td>
+                                        <td style="text-align:right;">(1,78,000)</td>
+                                    </tr>
+                                    <tr style="background:#f8fafc; font-weight:700;">
+                                        <td><strong>Total Income</strong></td>
+                                        <td></td>
+                                        <td style="text-align:right; color:var(--primary);"><strong>₹5,42,000</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p style="margin-top:1rem;"><strong>Step 2: Tax on Total Income (Resident Senior Citizen, Exemption Limit ₹3,00,000):</strong></p>
+                        <div class="table-responsive">
+                            <table class="tax-table">
+                                <thead><tr><th>Tax Component</th><th>Basis</th><th>Amount (₹)</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Up to ₹3,00,000</td><td>Basic Exemption Limit</td><td style="text-align:right;">NIL</td></tr>
+                                    <tr><td>₹3,00,001 to ₹5,00,000 @ 5%</td><td>$2,00,000 \times 5\%$</td><td style="text-align:right;">10,000</td></tr>
+                                    <tr><td>₹5,00,001 to ₹5,42,000 @ 20%</td><td>$42,000 \times 20\%$</td><td style="text-align:right;">8,400</td></tr>
+                                    <tr style="font-weight:600;"><td>Base Tax</td><td></td><td style="text-align:right;">18,400</td></tr>
+                                    <tr><td>Add: Health and Education Cess @ 4%</td><td>$18,400 \times 4\%$</td><td style="text-align:right;">736</td></tr>
+                                    <tr style="font-weight:700;"><td><strong>Total Indian Tax Payable</strong></td><td></td><td style="text-align:right;"><strong>₹19,136</strong></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p style="margin-top:1rem;"><strong>Step 3: Average Tax Rates &amp; Section 160 Deduction:</strong></p>
+                        <ul class="styled-list">
+                            <li><strong>Average Indian Tax Rate:</strong> $\frac{19,136}{5,42,000} \times 100 = \mathbf{3.53\%}$ (or without cess: $18,400/5,42,000 = 3.39\%$).</li>
+                            <li><strong>Average Foreign Tax Rate:</strong> $\frac{11,000}{1,10,000} \times 100 = \mathbf{10.00\%}$.</li>
+                            <li><strong>Applicable Rate:</strong> Lower of Indian Rate ($3.53\%$) and Foreign Rate ($10.00\%$) = <strong>$3.53\%$</strong>.</li>
+                            <li><strong>Deduction u/s 160:</strong> $1,10,000 \times 3.5306\% = \mathbf{₹3,884}$.</li>
+                        </ul>
+                        <p><strong>Net Tax Liability:</strong> $19,136 - 3,884 = \mathbf{₹15,252} \approx \mathbf{₹15,250}$ (rounded off u/s 288B).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 5: FOREIGN TAX CREDIT & RULE 76 -->
+            <!-- ========================================== -->
+            <section id="sec-ftc" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Rule 76 &amp; Rule 206</span>
+                        <h2 class="section-title">Foreign Tax Credit (FTC) &amp; Currency Conversion Rules</h2>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title">
+                        <i class="fa-solid fa-stamp"></i> Operational Guidelines for Foreign Tax Credit (FTC) [Rule 76 / Rule 128]
+                    </div>
+                    <p>Under <strong>Rule 76</strong> of the Income-tax Rules, 2026 [corresponding to Rule 128 of the 1962 Rules], a resident taxpayer is entitled to claim Foreign Tax Credit (FTC) subject to the following principles:</p>
+                    
+                    <div class="grid-2">
+                        <div class="callout callout-info" style="margin:0;">
+                            <div class="callout-header"><i class="fa-solid fa-calendar-check"></i> Year of Credit</div>
+                            <p>FTC is allowed in the previous year in which the <strong>corresponding income is offered to tax in India</strong>. If income is offered in installments across multiple years, FTC is apportioned accordingly.</p>
+                        </div>
+                        <div class="callout callout-warning" style="margin:0;">
+                            <div class="callout-header"><i class="fa-solid fa-coins"></i> Scope of Credit</div>
+                            <p>FTC is available against <strong>Tax, Surcharge, and Cess</strong> payable under the Act. However, FTC is <strong>NOT ALLOWED</strong> against any interest, fee, or penalty payable under the Act.</p>
+                        </div>
+                    </div>
+
+                    <div class="callout callout-danger" style="margin-top:1rem;">
+                        <div class="callout-header"><i class="fa-solid fa-ban"></i> Disputed Foreign Taxes</div>
+                        <p>No FTC is admissible in respect of any foreign tax which is <strong>disputed</strong> by the assessee in the foreign country. However, once the dispute is formally settled and proof of payment is furnished, the Assessing Officer shall grant the credit within <strong>6 months</strong> from the end of the month in which the claim is made.</p>
+                    </div>
+                </div>
+
+                <!-- Currency Conversion Rule 206 -->
+                <div class="theory-card">
+                    <div class="theory-title">
+                        <span class="section-badge" style="font-size:0.75rem; vertical-align:middle; margin-right:8px;">Rule 206</span>
+                        Rate of Exchange for Foreign Currency Conversion [Rule 115]
+                    </div>
+                    <p>Under Rule 206, the rate of exchange for converting foreign currency income into Indian Rupees is the <strong>Telegraphic Transfer Buying Rate (TTBR)</strong> adopted by the State Bank of India on the <strong>specified date</strong>:</p>
+                    <div class="table-responsive">
+                        <table class="tax-table">
+                            <thead><tr><th>Nature of Income</th><th>Specified Date for Conversion</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Salaries</strong></td><td>Last day of the month immediately preceding the month in which the salary is due or paid in advance.</td></tr>
+                                <tr><td><strong>Interest on Securities</strong></td><td>Last day of the month immediately preceding the month in which interest is due.</td></tr>
+                                <tr><td><strong>House Property / PGBP / IFOS</strong></td><td>Last day of the previous year of the assessee.</td></tr>
+                                <tr><td><strong>Dividends</strong></td><td>Last day of the month immediately preceding the month in which dividend is declared, distributed or paid.</td></tr>
+                                <tr><td><strong>Capital Gains</strong></td><td>Last day of the month immediately preceding the month in which the capital asset is transferred.</td></tr>
+                                <tr><td><strong>Foreign Tax Credit (FTC)</strong></td><td>TTBR on the date on which tax was paid or deducted in foreign currency.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 6: PERMANENT ESTABLISHMENT (PE) -->
+            <!-- ========================================== -->
+            <section id="sec-pe" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Article 5</span>
+                        <h2 class="section-title">Concept of Permanent Establishment (PE) under DTAAs</h2>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title">
+                        <i class="fa-solid fa-building-wheat"></i> Core Doctrine of Permanent Establishment
+                    </div>
+                    <p>Under <strong>Article 7 (Business Profits)</strong> of DTAAs based on OECD and UN Model Conventions, the business profits of an enterprise of a Contracting State are <strong>taxable ONLY in that State</strong>, UNLESS the enterprise carries on business in the other Contracting State through a <strong>Permanent Establishment (PE)</strong> situated therein.</p>
+                    
+                    <div class="statutory-box" style="margin-top:1rem;">
+                        <div class="statutory-box-header">
+                            <i class="fa-solid fa-landmark"></i> Definition of PE under Section 173(c) &amp; Article 5(1)
+                        </div>
+                        <div class="statutory-box-body">
+                            <p><strong>Permanent Establishment</strong> means a <em>fixed place of business</em> through which the business of an enterprise is wholly or partly carried on.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title"><i class="fa-solid fa-cubes-stacked"></i> The Four Classical Types of Permanent Establishment</div>
+                    <div class="table-responsive">
+                        <table class="tax-table">
+                            <thead><tr><th>Type of PE</th><th>Inclusions &amp; Criteria</th><th>Duration / Threshold Test</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>1. Fixed Place PE</strong><br><small>(Article 5(1) &amp; 5(2))</small></td>
+                                    <td>Place of management, branch, office, factory, workshop, mine, oil/gas well, quarry, or other place of natural resources extraction.</td>
+                                    <td>Requires a physical geographic location with a certain degree of permanence (permanence test).</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>2. Construction / Project PE</strong><br><small>(Article 5(3))</small></td>
+                                    <td>Building site, construction, installation or assembly project, or supervisory activities connected therewith.</td>
+                                    <td>Constitutes a PE only if the site or project lasts for more than <strong>6 months</strong> (UN Model) or <strong>12 months</strong> (OECD Model).</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>3. Service PE</strong><br><small>(UN Model)</small></td>
+                                    <td>Furnishing of services, including consultancy services, by an enterprise through employees or other personnel engaged for such purpose.</td>
+                                    <td>Constitutes a PE if activities continue for the same or connected project for a period aggregating &gt; <strong>90 or 182 days</strong> in any 12-month period.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>4. Agency / DAPE</strong><br><small>(Article 5(5))</small></td>
+                                    <td>A person acting on behalf of the enterprise who <strong>habitually exercises authority to conclude contracts</strong>, or habitually maintains stock to deliver goods, or secures orders exclusively.</td>
+                                    <td>Independent agents (brokers acting in ordinary course of business) are <strong>excluded</strong>.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Business Connection vs PE -->
+                <div class="theory-card">
+                    <div class="theory-title"><i class="fa-solid fa-code-compare"></i> Business Connection (Domestic) vs Permanent Establishment (Treaty)</div>
+                    <div class="table-responsive">
+                        <table class="tax-table">
+                            <thead><tr><th>Parameter</th><th>Business Connection [Section 9]</th><th>Permanent Establishment [DTAA Article 5]</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Statutory Source</strong></td>
+                                    <td>Domestic law of India (Section 9(1)(i) / Section 9(2)).</td>
+                                    <td>International Tax Treaty / DTAA (Article 5 &amp; Section 173(c)).</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Threshold Requirement</strong></td>
+                                    <td>Very broad; includes intimate economic relationship, Significant Economic Presence (SEP), or virtual presence.</td>
+                                    <td>Stringent threshold requiring fixed place of business or dependent agency with habitual authority.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Supremacy</strong></td>
+                                    <td>Subordinated to treaty provisions by virtue of Section 159(4) (Sec 90(2)).</td>
+                                    <td>Prevails over Section 9! If there is no PE under the treaty, business profits cannot be taxed in India despite a business connection.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Tie-Breaker Rules for Dual Residents -->
+                <div class="theory-card">
+                    <div class="theory-title">
+                        <i class="fa-solid fa-scale-balanced"></i> Tie-Breaker Rules for Dual Residents [Article 4(2)]
+                    </div>
+                    <p>When an individual is a tax resident of both Contracting States under their domestic laws, his residential status is resolved hierarchically under <strong>Article 4(2)</strong>:</p>
+                    <div class="table-responsive">
+                        <table class="tax-table">
+                            <thead><tr><th>Order</th><th>Tie-Breaker Rule</th><th>Evaluation Standard</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>1st</strong></td><td><strong>Permanent Home</strong></td><td>He shall be deemed to be resident only of the State in which he has a permanent home available to him.</td></tr>
+                                <tr><td><strong>2nd</strong></td><td><strong>Centre of Vital Interests</strong></td><td>If permanent home is available in both States, resident of the State with which his <strong>personal and economic relations</strong> are closer.</td></tr>
+                                <tr><td><strong>3rd</strong></td><td><strong>Habitual Abode</strong></td><td>If centre of vital interests cannot be determined, resident of the State in which he has an <strong>habitual abode</strong>.</td></tr>
+                                <tr><td><strong>4th</strong></td><td><strong>Nationality</strong></td><td>If he has an habitual abode in both or neither, resident of the State of which he is a <strong>national (citizen)</strong>.</td></tr>
+                                <tr><td><strong>5th</strong></td><td><strong>Mutual Agreement (MAP)</strong></td><td>If national of both or neither, competent authorities settle the question by <strong>mutual agreement</strong>.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- SECTION 7: TAXATION OF BPO UNITS IN INDIA -->
+            <!-- ========================================== -->
+            <section id="sec-bpo" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Circular No. 5/2004</span>
+                        <h2 class="section-title">Taxation of Business Process Outsourcing (BPO) Units in India</h2>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title"><i class="fa-solid fa-headset"></i> CBDT Guidelines on BPO Entities (Circular No. 5/2004)</div>
+                    <p>Where a non-resident foreign entity outsources business process services to an Indian call centre or BPO entity, the tax liability is evaluated under the following principles:</p>
+                    <ol class="styled-list">
+                        <li><strong>Permanent Establishment Trigger:</strong> A non-resident entity will be liable to tax in India <strong>ONLY IF</strong> the IT-enabled BPO unit in India constitutes a <strong>Permanent Establishment (PE)</strong> of the foreign enterprise under the relevant DTAA.</li>
+                        <li><strong>Fixed Place PE:</strong> A foreign company is treated as having a PE in India if it has a fixed place of business through which its business is carried on (e.g., dedicated server, premises under its control).</li>
+                        <li><strong>Agency PE:</strong> If the Indian BPO acts as a dependent agent habitually exercising authority to conclude contracts on behalf of the foreign principal.</li>
+                        <li><strong>Core vs Non-Core Services:</strong> If the Indian unit performs only preparatory or auxiliary services (non-core), no PE is constituted. However, if it performs core business operations (software development, financial analysis, clinical trials), a PE exists.</li>
+                    </ol>
+
+                    <div class="callout callout-success" style="margin-top:1rem;">
+                        <div class="callout-header"><i class="fa-solid fa-handshake-angle"></i> The Landmark Arm's Length Principle (No Further Profit Attribution)</div>
+                        <p><strong>Crucial Examination Principle:</strong> Even if the Indian BPO entity constitutes a Permanent Establishment of the foreign company, if the Indian BPO entity is remunerated on an <strong>Arm's Length Basis</strong> (taking into account all functions performed, assets utilized, and risks assumed - FAR analysis), <strong>NO FURTHER PROFITS SHALL BE ATTRIBUTED</strong> to the foreign enterprise in India!</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ========================================== -->
+            <!-- SECTION 8: TEST YOUR KNOWLEDGE (TYK 1 TO 10) -->
+            <!-- ========================================== -->
+            <section id="sec-tyk" class="content-section">
+                <div class="section-header">
+                    <div class="section-title-wrap">
+                        <span class="section-badge">Practical Application</span>
+                        <h2 class="section-title">ICAI Test Your Knowledge (TYK Questions 1 to 10)</h2>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-title"><i class="fa-solid fa-graduation-cap"></i> Examination Focus &amp; Practical Problem Solving</div>
+                    <p>The following 10 comprehensive problems from the ICAI CA Final Study Material test advanced application of treaty override principles under Section 159, non-discrimination clauses, unilateral relief under Section 160 across multi-country income streams, set-off of foreign losses, Chapter VIII deductions, and tie-breaker rules under Article 4.</p>
+                </div>
+
+                <!-- TYK QUESTION 1 -->
+                <div id="tyk-1" class="example-box">
+                    <div class="example-title">
+                        <i class="fa-solid fa-circle-question"></i> TYK QUESTION 1 &bull; Cosmos Limited Mauritius &bull; Non-Discrimination vs Section 159(5)
+                    </div>
+                    <p><strong>Facts:</strong> Cosmos Limited, a company incorporated in Mauritius, has a branch office in Hyderabad operating as a Permanent Establishment (PE). Article 24 (Non-Discrimination) of the India-Mauritius DTAA provides:</p>
+                    <div class="callout callout-info" style="margin:10px 0;">
+                        <em>&ldquo;The taxation on a permanent establishment which an enterprise of a Contracting State has in the other Contracting State shall not be less favourably levied in that other State than the taxation levied on enterprises of that other State carrying on the same activities.&rdquo;</em>
+                    </div>
+                    <p>However, the Assessing Officer computed tax on the Indian branch of Cosmos Limited at the higher corporate tax rate applicable to a foreign company (35% / 40%) rather than the 22% / 25% rate applicable to a domestic company. Is the action of the Assessing Officer in accordance with law?</p>
+
+                    <button class="btn-solution" onclick="toggleSolution('sol-tyk-1')">View Solution &amp; Statutory Analysis</button>
+                    <div id="sol-tyk-1" class="solution-card">
+                        <p><strong>Statutory Analysis under Section 159(5):</strong></p>
+                        <ol class="styled-list">
+                            <li><strong>General Principle:</strong> Under Section 159(4) [Section 90(2)], the provisions of the DTAA prevail over the domestic Income-tax Act to the extent they are more beneficial to the assessee. Article 24 of the DTAA prohibits discriminatory tax treatment against foreign PEs.</li>
+                            <li><strong>Specific Non-Obstante Provision:</strong> However, <strong>Section 159(5)</strong> [corresponding to Explanation 1 to Section 90 of the 1961 Act] statutorily clarifies that:
+                                <div class="callout callout-warning" style="margin:8px 0;">
+                                    <em>&ldquo;The charge of tax in respect of a foreign company at a rate higher than the rate at which a domestic company is chargeable shall not be regarded as less favourable charge or discrimination in respect of such company.&rdquo;</em>
+                                </div>
+                            </li>
+                            <li><strong>Judicial Harmonization:</strong> Foreign companies and domestic companies do not stand on equal footing; a foreign company enjoys territorial taxation only on Indian-source income, whereas a domestic company is taxed on its global income. Hence, levying a higher tax rate on foreign companies does not violate Article 24.</li>
+                        </ol>
+                        <p><strong>Conclusion:</strong> The action of the Assessing Officer in computing tax at the rate applicable to a foreign company is <strong>IN ACCORDANCE WITH LAW</strong>.</p>
+                    </div>
+                </div>
+
+                <!-- TYK QUESTION 2 -->
+                <div id="tyk-2" class="example-box">
+                    <div class="example-title">
+                        <i class="fa-solid fa-circle-question"></i> TYK QUESTION 2 &bull; Kalpesh Kumar &bull; Resident Musician Unilateral Relief
+                    </div>
+                    <p><strong>Facts:</strong> Kalpesh Kumar, a resident individual, is a musician deriving income of ₹7,50,000 from concerts performed outside India. Tax of ₹1,00,000 was deducted at source in the country where the concerts were performed. India does not have any DTAA under Section 159 with that country. His income in India amounted to ₹30,00,000. Compute net tax liability of Kalpesh Kumar for the tax year 2026-27 assuming he pays tax as per the default tax regime under Section 115BAC.</p>
+
+                    <button class="btn-solution" onclick="toggleSolution('sol-tyk-2')">View Solution &amp; Tax Computation</button>
+                    <div id="sol-tyk-2" class="solution-card">
+                        <p><strong>Step 1: Computation of Total Income of Kalpesh Kumar:</strong></p>
+                        <div class="table-responsive">
+                            <table class="tax-table">
+                                <thead><tr><th>Particulars</th><th>Amount (₹)</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Indian Income</td><td style="text-align:right;">30,00,000</td></tr>
+                                    <tr><td>Foreign Income (Concerts outside India)</td><td style="text-align:right;">7,50,000</td></tr>
+                                    <tr style="font-weight:600;"><td>Gross Total Income</td><td style="text-align:right;">37,50,000</td></tr>
+                                    <tr><td>Less: Deductions under Chapter VIII (Not available under default regime)</td><td style="text-align:right;">NIL</td></tr>
+                                    <tr style="background:#f8fafc; font-weight:700;"><td><strong>Total Income</strong></td><td style="text-align:right; color:var(--primary);"><strong>₹37,50,000</strong></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p style="margin-top:1rem;"><strong>Step 2: Tax on Total Income under Default Tax Regime (New Slabs):</strong></p>
+                        <div class="table-responsive">
+                            <table class="tax-table">
+                                <thead><tr><th>Income Slab</th><th>Tax Rate</th><th>Tax Amount (₹)</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Up to ₹3,00,000</td><td>Nil</td><td style="text-align:right;">NIL</td></tr>
+                                    <tr><td>₹3,00,001 to ₹7,00,000</td><td>5%</td><td style="text-align:right;">20,000</td></tr>
+                                    <tr><td>₹7,00,001 to ₹10,00,000</td><td>10%</td><td style="text-align:right;">30,000</td></tr>
+                                    <tr><td>₹10,00,001 to ₹12,00,000</td><td>15%</td><td style="text-align:right;">30,000</td></tr>
+                                    <tr><td>₹12,00,001 to ₹15,00,000</td><td>20%</td><td style="text-align:right;">60,000</td></tr>
+                                    <tr><td>Above ₹15,00,000 ($37,50,000 - 15,00,000 = 22,50,000$)</td><td>30%</td><td style="text-align:right;">6,75,000</td></tr>
+                                    <tr style="font-weight:600;"><td>Base Tax on Total Income</td><td></td><td style="text-align:right;">7,05,000</td></tr>
+                                    <tr><td>Add: Surcharge (Income ₹37.5L &le; ₹50L)</td><td>Nil</td><td style="text-align:right;">NIL</td></tr>
+                                    <tr><td>Add: Health and Education Cess @ 4% ($7,05,000 \times 4\%$)</td><td>4%</td><td style="text-align:right;">28,200</td></tr>
+                                    <tr style="font-weight:700;"><td><strong>Total Indian Tax Payable</strong></td><td></td><td style="text-align:right;"><strong>₹7,33,200</strong></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p style="margin-top:1rem;"><strong>Step 3: Average Tax Rates &amp; Section 160 Relief:</strong></p>
+                        <ul class="styled-list">
+                            <li><strong>Average Indian Tax Rate:</strong> $\frac{7,33,200}{37,50,000} \times 100 = \mathbf{19.552\%}$.</li>
+                            <li><strong>Average Foreign Tax Rate:</strong> $\frac{1,00,000}{7,50,000} \times 100 = \mathbf{13.333\%}$.</li>
+                            <li><strong>Applicable Rate:</strong> Lower of Indian Rate ($19.552\%$) and Foreign Rate ($13.333\%$) = <strong>$13.333\%$</strong>.</li>
+                            <li><strong>Deduction u/s 160:</strong> $7,50,000 \times 13.333\% = \mathbf{₹1,00,000}$.</li>
+                        </ul>
+                        <p><strong>Net Tax Liability in India:</strong> $7,33,200 - 1,00,000 = \mathbf{₹6,33,200}$.</p>
+                    </div>
+                </div>
+
+                <!-- TYK QUESTION 3 -->
+                <div id="tyk-3" class="example-box">
+                    <div class="example-title">
+                        <i class="fa-solid fa-circle-question"></i> TYK QUESTION 3 &bull; Miss Vivitha &bull; Resident Snooker Player Unilateral Relief
+                    </div>
+                    <p><strong>Facts:</strong> The following are the particulars of income earned by Miss Vivitha, a resident Indian aged 32 years, for the tax year 2026-27:</p>
+                    <ul class="styled-list">
+                        <li>Income from playing snooker matches in Country L (no DTAA with India): ₹12.00 Lakhs.</li>
+                        <li>Tax paid in Country L: ₹1.80 Lakhs.</li>
+                        <li>Income from playing snooker tournaments in India: ₹19.20 Lakhs.</li>
+                        <li>Life insurance premium paid: ₹1.10 Lakhs.</li>
+                        <li>Medical insurance premium paid for her father (resident Indian aged 62 years): ₹32,000.</li>
+                    </ul>
+                    <p>Compute her total income and net tax liability for the tax year 2026-27 assuming she is paying tax under the default tax regime under Section 115BAC.</p>
+
+                    <button class="btn-solution" onclick="toggleSolution('sol-tyk-3')">View Solution &amp; Tax Calculation</button>
+                    <div id="sol-tyk-3" class="solution-card">
+                        <p><strong>Step 1: Total Income (Default Tax Regime):</strong></p>
+                        <p>Under the default tax regime, deductions under Chapter VIII (Life insurance u/s 123 / Sec 80C and Mediclaim u/s 126 / Sec 80D) are <strong>not allowable</strong>.</p>
+                        <div class="table-responsive">
+                            <table class="tax-table">
+                                <thead><tr><th>Particulars</th><th>Amount (₹)</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Indian Income (Snooker in India)</td><td style="text-align:right;">19,20,000</td></tr>
+                                    <tr><td>Foreign Income (Snooker in Country L)</td><td style="text-align:right;">12,00,000</td></tr>
+                                    <tr style="background:#f8fafc; font-weight:700;"><td><strong>Gross Total Income / Total Income</strong></td><td style="text-align:right; color:var(--primary);"><strong>₹31,20,000</strong></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p style="margin-top:1rem;"><strong>Step 2: Tax on Total Income under Section 115BAC:</strong></p>
+                        <div class="table-responsive">
+                            <table class="tax-table">
+                                <thead><tr><th>Income Slab</th><th>Tax Rate</th><th>Tax Amount (₹)</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Up to ₹15,00,000</td><td>Slab Rates</td><td style="text-align:right;">1,40,000</td></tr>
+                                    <tr><td>Above ₹15,00,000 ($31,20,000 - 15,00,000 = 16,20,000$)</td><td>30%</td><td style="text-align:right;">4,86,000</td></tr>
+                                    <tr style="font-weight:600;"><td>Base Tax</td><td></td><td style="text-align:right;">5,16,000</td></tr>
+                                    <tr><td>Add: Health and Education Cess @ 4% ($5,16,000 \times 4\%$)</td><td>4%</td><td style="text-align:right;">20,640</td></tr>
+                                    <tr style="font-weight:700;"><td><strong>Total Indian Tax Payable</strong></td><td></td><td style="text-align:right;"><strong>₹5,36,640</strong></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p style="margin-top:1rem;"><strong>Step 3: Average Rates &amp; Section 160 Relief:</strong></p>
+                        <ul class="styled-list">
+                            <li><strong>Average Indian Tax Rate:</strong> $\frac{5,36,640}{31,20,000} \times 100 = \mathbf{17.20\%}$.</li>
+                            <li><strong>Average Foreign Tax Rate:</strong> $\frac{1,80,000}{12,00,000} \times 100 = \mathbf{15.00\%}$.</li>
+                            <li><strong>Applicable Rate:</strong> Lower of Indian Rate ($17.20\%$) and Foreign Rate ($15.00\%$) = <strong>$15.00\%$</strong>.</li>
+                            <li><strong>Deduction u/s 160:</strong> $12,00,000 \times 15\% = \mathbf{₹1,80,000}$.</li>
+                        </ul>
+                        <p><strong>Net Tax Liability in India:</strong> $5,36,640 - 1,80,000 = \mathbf{₹3,56,640}$.</p>
+                    </div>
+                </div>
+
+                <!-- TYK QUESTION 4 -->
+                <div id="tyk-4" class="example-box">
+                    <div class="example-title">
+                        <i class="fa-solid fa-circle-question"></i> TYK QUESTION 4 &bull; Permanent Establishment Concept vs Business Connection
+                    </div>
+                    <p><strong>Problem:</strong> Explain the concept of Permanent Establishment (PE) under Double Taxation Avoidance Agreements (DTAAs) and contrast it with the concept of &ldquo;Business Connection&rdquo; under Section 9 of the Income-tax Act, 2025.</p>
+
+                    <button class="btn-solution" onclick="toggleSolution('sol-tyk-4')">View Solution &amp; Conceptual Contrast</button>
+                    <div id="sol-tyk-4" class="solution-card">
+                        <p><strong>1. Concept of Permanent Establishment under DTAAs:</strong></p>
+                        <ul class="styled-list">
+                            <li>Under Article 7 of DTAAs, business profits of a foreign enterprise are taxable in the source country <strong>only if the enterprise carries on business through a Permanent Establishment (PE) situated therein</strong>.</li>
+                            <li>As per Section 173(c) and Article 5, PE includes a fixed place of business through which business is wholly or partly carried on (branches, offices, factories, workshops, construction sites &gt; specified period, or dependent agents).</li>
+                            <li>To constitute a PE, there must be a physical facility (place of business test), which is at the disposal of the enterprise (disposal test), possessing a certain degree of permanence (permanence test), through which business is conducted.</li>
+                        </ul>
+                        <p style="margin-top:1rem;"><strong>2. Contrast with "Business Connection" under Section 9:</strong></p>
+                        <ul class="styled-list">
+                            <li><strong>Scope:</strong> &ldquo;Business Connection&rdquo; under domestic law is much wider than &ldquo;Permanent Establishment&rdquo;. It encompasses intimate commercial relations, virtual presence, and Significant Economic Presence (SEP), without requiring any physical fixed base.</li>
+                            <li><strong>Treaty Superiority:</strong> Under Section 159(4), where a non-resident is protected by a DTAA, the narrower PE standard supersedes Section 9. Unless the non-resident has a PE in India, business profits cannot be taxed in India, even if a business connection exists under domestic law!</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- TYK QUESTION 5 -->
+                <div id="tyk-5" class="example-box">
+                    <div class="example-title">
+                        <i class="fa-solid fa-circle-question"></i> TYK QUESTION 5 &bull; Conditions for Claiming Unilateral Relief under Section 160
+                    </div>
+                    <p><strong>Problem:</strong> An individual resident in India, having income earned outside India in a country with which India does not have any DTAA, wishes to claim relief under Section 160. State the conditions he must satisfy.</p>
+
+                    <button class="btn-solution" onclick="toggleSolution('sol-tyk-5')">View Solution &amp; Statutory Conditions</button>
+                    <div id="sol-tyk-5" class="solution-card">
+                        <p>An assessee is entitled to unilateral relief under <strong>Section 160</strong> [Section 91 of 1961 Act] only if <strong>ALL five cumulative conditions</strong> are satisfied:</p>
+                        <ol class="styled-list">
+                            <li><strong>Status:</strong> The assessee must be a <strong>Resident in India</strong> during the relevant tax year.</li>
+                            <li><strong>Foreign Accrual:</strong> The income must have <strong>accrued or arisen to him outside India</strong>.</li>
+                            <li><strong>No Deemed Accrual:</strong> The income is <strong>not deemed to accrue or arise in India</strong> under any provision of the Act.</li>
+                            <li><strong>Tax Paid:</strong> The assessee has <strong>actually paid income-tax</strong> on such income in the foreign country by deduction or otherwise.</li>
+                            <li><strong>Absence of Treaty:</strong> There is <strong>no agreement under Section 159</strong> for the relief or avoidance of double taxation between India and that foreign country.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- TYK QUESTION 6 -->
+                <div id="tyk-6" class="example-box">
+                    <div class="example-title">
+                        <i class="fa-solid fa-circle-question"></i> TYK QUESTION 6 &bull; Treaty Override and Mandatory Particulars under Section 159(8)
+                    </div>
+                    <p><strong>Problem:</strong> The Income-tax Act, 2025 provides for taxation of a certain income earned in India by Mr. X, a non-resident. However, the DTAA between India and his country of residence provides that such income is not taxable in India. Mr. X wishes to claim treaty relief. Advise him regarding the legal position and mandatory documentation.</p>
+
+                    <button class="btn-solution" onclick="toggleSolution('sol-tyk-6')">View Solution &amp; Documentation Checklist</button>
+                    <div id="sol-tyk-6" class="solution-card">
+                        <p><strong>1. Principle of Treaty Override under Section 159(4):</strong></p>
+                        <p>Section 159(4) [Section 90(2)] clarifies that the provisions of the domestic Act apply only to the extent they are more beneficial to the assessee. The Supreme Court in <em>CIT v. P.V.A.L. Kulandagan Chettiar [2004]</em> held that treaty provisions prevail over the domestic Act. Therefore, Mr. X is <strong>NOT liable to pay tax in India</strong> on such income.</p>
+                        <p style="margin-top:1rem;"><strong>2. Mandatory Documentation under Section 159(8) and Rule 75:</strong></p>
+                        <p>To claim treaty benefits, Mr. X must obtain a <strong>Tax Residency Certificate (TRC)</strong> from his country of residence. If the TRC lacks prescribed particulars, he must electronically furnish <strong>Form 41</strong> [Form 10F] containing:</p>
+                        <ul class="styled-list">
+                            <li>Tax Year;</li>
+                            <li>Status (individual, company, firm);</li>
+                            <li>Country of residence / incorporation;</li>
+                            <li>Tax Identification Number (TIN) in foreign country;</li>
+                            <li>Period of residential status validity;</li>
+                            <li>Address of the assessee outside India; and</li>
+                            <li>Copy of the TRC uploaded as an annexure.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- TYK QUESTION 7 -->
+                <div id="tyk-7" class="example-box">
+                    <div class="example-title">
+                        <i class="fa-solid fa-circle-question"></i> TYK QUESTION 7 &bull; Arif Dual Resident &bull; Tie-Breaker Rule under Article 4
+                    </div>
+                    <p><strong>Facts:</strong> Arif is a resident of both India and a foreign country in the tax year 2026-27 under their respective domestic tax laws. He owns rubber estates in the foreign country from which he derives business income of ₹10 lakhs during the year. Arif has no permanent establishment of business carried on by him in India. Arif has residential houses both in India and the foreign country. Article 4 of the DTAA between India and the foreign country provides that where an individual is a resident of both Contracting States, his status shall be determined as follows:</p>
+                    <ol class="styled-list">
+                        <li>He shall be deemed to be a resident only of the State in which he has a permanent home available to him;</li>
+                        <li>If he has a permanent home available to him in both States, he shall be deemed to be a resident only of the State with which his personal and economic relations are closer (centre of vital interests).</li>
+                    </ol>
+                    <p>Examine with reasons whether the business income of Arif arising in the foreign country can be taxed in India for tax year 2026-27.</p>
+
+                    <button class="btn-solution" onclick="toggleSolution('sol-tyk-7')">View Solution &amp; Tie-Breaker Analysis</button>
+                    <div id="sol-tyk-7" class="solution-card">
+                        <p><strong>Step 1: Application of Tie-Breaker Rules under Article 4:</strong></p>
+                        <ul class="styled-list">
+                            <li><strong>Permanent Home:</strong> Arif has residential houses in both India and the foreign country. Thus, he has a permanent home available in both Contracting States. Rule 1 is inconclusive.</li>
+                            <li><strong>Centre of Vital Interests:</strong> Arif owns rubber estates in the foreign country from which he derives his business income. His economic relations are concentrated in the foreign country where the property is located and commercial operations are conducted.</li>
+                            <li>Therefore, his <strong>centre of vital interests lies in the foreign country</strong>, and he is deemed to be a <strong>resident only of the foreign country</strong> for tax year 2026-27 under Article 4.</li>
+                        </ul>
+                        <p style="margin-top:1rem;"><strong>Step 2: Business Profits under Article 7 and Kulandagan Chettiar Ruling:</strong></p>
+                        <p>The facts are identical to <em>CIT v. P.V.A.L. Kulandagan Chettiar [2004] (SC)</em>. Under Article 7, business profits of a resident of a foreign country are taxable in India only if he has a Permanent Establishment (PE) in India. Since Arif has <strong>NO PE in India</strong>, India has no taxing rights over his business profits.</p>
+                        <p><strong>Conclusion:</strong> Arif is <strong>NOT liable to income-tax in India</strong> in respect of the business income of ₹10 lakhs earned from rubber estates in the foreign country (subject to furnishing TRC and Form 41 u/s 159(8)).</p>
+                    </div>
+                </div>
+
+                <!-- TYK QUESTION 8 -->
+                <div id="tyk-8" class="example-box">
+                    <div class="example-title">
+                        <i class="fa-solid fa-circle-question"></i> TYK QUESTION 8 &bull; Mr. Kamesh &bull; Multi-Country Incomes, Loss Set-Off &amp; Sec 160
+                    </div>
+                    <p><strong>Facts:</strong> Mr. Kamesh, an individual resident in India aged 52 years, furnishes the following particulars for Tax Year 2026-27 (opted for normal provisions of the Act):</p>
+                    <div class="table-responsive">
+                        <table class="tax-table">
+                            <thead><tr><th>Particulars</th><th>Amount (₹)</th></tr></thead>
+                            <tbody>
+                                <tr><td>Income from profession carried on in India</td><td style="text-align:right;">7,50,000</td></tr>
+                                <tr><td>Agricultural income in Country &ldquo;X&rdquo; (gross)</td><td style="text-align:right;">50,00,00</td></tr>
+                                <tr><td>Dividend from a company incorporated in Country &ldquo;Y&rdquo; (gross)</td><td style="text-align:right;">1,50,000</td></tr>
+                                <tr><td>Royalty income from a literary book from Country &ldquo;X&rdquo; (gross)</td><td style="text-align:right;">6,00,000</td></tr>
+                                <tr><td>Expenses incurred for earning royalty</td><td style="text-align:right;">50,000</td></tr>
+                                <tr><td>Business loss in Country &ldquo;Y&rdquo; (Proprietary business)</td><td style="text-align:right;">65,000</td></tr>
+                                <tr><td>Rent from a house situated in Country &ldquo;Y&rdquo; (gross)</td><td style="text-align:right;">2,40,000</td></tr>
+                                <tr><td>Municipal tax paid for house in Country &ldquo;Y&rdquo;</td><td style="text-align:right;">10,000</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p><em>Note:</em> Rates of tax in Country X and Country Y are 10% and 20%, respectively. India has no DTAA with Country X or Y. Compute total income and net tax liability of Mr. Kamesh.</p>
+
+                    <button class="btn-solution" onclick="toggleSolution('sol-tyk-8')">View Solution &amp; Comprehensive Working Notes</button>
+                    <div id="sol-tyk-8" class="solution-card">
+                        <p><strong>Step 1: Computation of Total Income of Mr. Kamesh (Normal Provisions):</strong></p>
+                        <div class="table-responsive">
+                            <table class="tax-table">
+                                <thead><tr><th>Head of Income / Particulars</th><th>Inner (₹)</th><th>Amount (₹)</th></tr></thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>1. Income from House Property (Country Y):</strong></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gross Annual Value (Rent)</td>
+                                        <td>2,40,000</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Less: Municipal taxes paid</td>
+                                        <td>(10,000)</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Net Annual Value (NAV)</td>
+                                        <td>2,30,000</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Less: Standard Deduction u/s 22 @ 30% of NAV</td>
+                                        <td>(69,000)</td>
+                                        <td style="text-align:right;">1,61,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>2. Profits &amp; Gains of Business or Profession:</strong></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Income from Indian profession</td>
+                                        <td>7,50,000</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Royalty income from Country X ($6,00,000 - 50,000$)</td>
+                                        <td>5,50,000</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sub-Total Business Income</td>
+                                        <td>13,00,000</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Less: Business loss of Country Y set off u/s 108(1) [Sec 70]</td>
+                                        <td>(65,000)</td>
+                                        <td style="text-align:right;">12,35,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>3. Income from Other Sources:</strong></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Agricultural income in Country X (Foreign agri income is not exempt)</td>
+                                        <td>50,000</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dividend from Country Y company</td>
+                                        <td>1,50,000</td>
+                                        <td style="text-align:right;">2,00,000</td>
+                                    </tr>
+                                    <tr style="font-weight:600;">
+                                        <td><strong>Gross Total Income</strong></td>
+                                        <td></td>
+                                        <td style="text-align:right;">15,96,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Less: Deduction under Chapter VIII &bull; Section 151 [Sec 80QQB] (Literary Royalty)</td>
+                                        <td></td>
+                                        <td style="text-align:right;">(3,00,000)</td>
+                                    </tr>
+                                    <tr style="background:#f8fafc; font-weight:700;">
+                                        <td><strong>Total Income</strong></td>
+                                        <td></td>
+                                        <td style="text-align:right; color:var(--primary);"><strong>₹12,96,000</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p style="margin-top:1rem;"><strong>Step 2: Tax Liability under Normal Provisions:</strong></p>
+                        <ul class="styled-list">
+                            <li>Tax on total income ₹12,96,000: Up to ₹2.5L: Nil; ₹2.5L-5L: ₹12,500; ₹5L-10L: ₹1,00,000; Above ₹10L ($2,96,000 \times 30\%$): ₹88,800. Base Tax = ₹2,01,300.</li>
+                            <li>Add: Health and Education Cess @ 4%: $2,01,300 \times 4\% = ₹8,052$.</li>
+                            <li><strong>Total Indian Tax Payable:</strong> $\mathbf{₹2,09,352}$.</li>
+                            <li><strong>Average Indian Tax Rate:</strong> $\frac{2,09,352}{12,96,000} \times 100 = \mathbf{16.15\%}$.</li>
+                        </ul>
+
+                        <p style="margin-top:1rem;"><strong>Step 3: Computation of Unilateral Relief u/s 160:</strong></p>
+                        <div class="table-responsive">
+                            <table class="tax-table">
+                                <thead><tr><th>Country</th><th>Doubly Taxed Income Elements</th><th>Net Doubly Taxed Income</th><th>Comparison of Rates</th><th>Relief u/s 160 (₹)</th></tr></thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Country X</strong></td>
+                                        <td>
+                                            - Agri income: ₹50,000<br>
+                                            - Royalty income: $6,00,000 - 50,000\text{ (exp)} - 3,00,000\text{ (u/s 151)} = ₹2,50,000$
+                                        </td>
+                                        <td style="text-align:right; font-weight:600;">₹3,00,000</td>
+                                        <td>Indian Rate: 16.15%<br>Country X Rate: 10%<br><strong>Lower = 10%</strong></td>
+                                        <td style="text-align:right; font-weight:700;">30,000<br><small>($3,00,000 \times 10\%$)</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Country Y</strong></td>
+                                        <td>
+                                            - House property: ₹1,61,000<br>
+                                            - Dividend: ₹1,50,000<br>
+                                            - Less: Business loss set off: (₹65,000)
+                                        </td>
+                                        <td style="text-align:right; font-weight:600;">₹2,46,000</td>
+                                        <td>Indian Rate: 16.15%<br>Country Y Rate: 20%<br><strong>Lower = 16.15%</strong></td>
+                                        <td style="text-align:right; font-weight:700;">39,729<br><small>($2,46,000 \times 16.15\%$)</small></td>
+                                    </tr>
+                                    <tr style="background:#f1f5f9; font-weight:700;">
+                                        <td colspan="4"><strong>Total Deduction under Section 160 (Country X + Country Y)</strong></td>
+                                        <td style="text-align:right; color:var(--success);"><strong>₹69,729</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p style="margin-top:10px;"><strong>Net Tax Liability in India:</strong> $2,09,352 - 69,729 = ₹1,39,623 \approx \mathbf{₹1,39,620}$ (rounded off u/s 288B).</p>
+                    </div>
+                </div>
+
+                <!-- TYK QUESTION 9 -->
+                <div id="tyk-9" class="example-box">
+                    <div class="example-title">
+                        <i class="fa-solid fa-circle-question"></i> TYK QUESTION 9 &bull; Mr. Anil &bull; Foreign Business Loss Set-Off &amp; Sec 160
+                    </div>
+                    <p><strong>Facts:</strong> Mr. Anil, aged 49 years, a resident individual, furnishes the following particulars for tax year 2026-27 (opted for normal provisions):</p>
+                    <ul class="styled-list">
+                        <li>Income from profession carried on in Mumbai: ₹8,50,000.</li>
+                        <li>Agricultural Income in Country N: ₹1,30,000.</li>
+                        <li>Dividend from a company incorporated in Country N (gross): ₹85,000.</li>
+                        <li>Royalty income from a literary book from Country N (gross): ₹6,25,000 (expenses incurred ₹75,000).</li>
+                        <li>Business loss in Country N: ₹1,10,000. (Country N tax laws do not permit set-off of business loss against other incomes).</li>
+                    </ul>
+                    <p>India does not have any DTAA with Country N. Tax rate in Country N is 18%. Compute total income and net tax liability of Mr. Anil.</p>
+
+                    <button class="btn-solution" onclick="toggleSolution('sol-tyk-9')">View Solution &amp; Statutory Analysis</button>
+                    <div id="sol-tyk-9" class="solution-card">
+                        <p><strong>Step 1: Total Income of Mr. Anil:</strong></p>
+                        <div class="table-responsive">
+                            <table class="tax-table">
+                                <thead><tr><th>Particulars</th><th>Amount (₹)</th><th>Amount (₹)</th></tr></thead>
+                                <tbody>
+                                    <tr><td>Profits &amp; Gains of Business or Profession:</td><td></td><td></td></tr>
+                                    <tr><td>- Mumbai Profession Income</td><td>8,50,000</td><td></td></tr>
+                                    <tr><td>- Country N Royalty ($6,25,000 - 75,000$)</td><td>5,50,000</td><td></td></tr>
+                                    <tr><td>- Less: Business Loss in Country N set off u/s 108(1) [Sec 70]</td><td>(1,10,000)</td><td style="text-align:right;">12,90,000</td></tr>
+                                    <tr><td>Income from Other Sources:</td><td></td><td></td></tr>
+                                    <tr><td>- Country N Agricultural Income (not exempt)</td><td>1,30,000</td><td></td></tr>
+                                    <tr><td>- Country N Dividend Income</td><td>85,000</td><td style="text-align:right;">2,15,000</td></tr>
+                                    <tr style="font-weight:600;"><td>Gross Total Income</td><td></td><td style="text-align:right;">15,05,000</td></tr>
+                                    <tr><td>Less: Deduction u/s 151 [Sec 80QQB] (Literary Royalty)</td><td></td><td style="text-align:right;">(3,00,000)</td></tr>
+                                    <tr style="background:#f8fafc; font-weight:700;"><td><strong>Total Income</strong></td><td></td><td style="text-align:right; color:var(--primary);"><strong>₹12,05,000</strong></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p style="margin-top:1rem;"><strong>Step 2: Tax Liability &amp; Section 160 Deduction:</strong></p>
+                        <ul class="styled-list">
+                            <li>Tax on ₹12,05,000: $1,12,500 + 30\% \times 2,05,000 = ₹1,74,000$.</li>
+                            <li>Add: HEC @ 4% = ₹6,960 $\rightarrow$ <strong>Total Tax = ₹1,80,960</strong>.</li>
+                            <li><strong>Average Indian Tax Rate:</strong> $\frac{1,80,960}{12,05,000} \times 100 = \mathbf{15.02\%}$.</li>
+                            <li><strong>Country N Tax Rate:</strong> $\mathbf{18.00\%}$. (Lower rate = <strong>15.02%</strong>).</li>
+                        </ul>
+
+                        <p style="margin-top:0.75rem;"><strong>Step 3: Net Doubly Taxed Income from Country N:</strong></p>
+                        <div class="formula-box">
+                            <div class="formula-content" style="font-size:0.95rem; text-align:left;">
+                                $$\text{Agri Income: } ₹1,30,000\ +\ \text{Net Royalty u/s 151: } (5,50,000 - 3,00,000 = ₹2,50,000)\ +\ \text{Dividend: } ₹85,000$$
+                                $$-\ \text{Loss Set-Off: } ₹1,10,000\ =\ \mathbf{Net\ Doubly\ Taxed\ Income\ =\ ₹3,55,000}$$
+                            </div>
+                        </div>
+                        <ul class="styled-list">
+                            <li><strong>Deduction u/s 160:</strong> $3,55,000 \times 15.02\% = \mathbf{₹53,321}$.</li>
+                            <li><strong>Net Tax Liability:</strong> $1,80,960 - 53,321 = ₹1,27,639 \approx \mathbf{₹1,27,640}$ (rounded off u/s 288B).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- TYK QUESTION 10 -->
+                <div id="tyk-10" class="example-box">
+                    <div class="example-title">
+                        <i class="fa-solid fa-circle-question"></i> TYK QUESTION 10 &bull; Mr. Ravi &bull; Default Tax Regime with Countries S &amp; T
+                    </div>
+                    <p><strong>Facts:</strong> Mr. Ravi, an individual resident in India aged 45 years, furnishes particulars of income earned in India, Country S, and Country T for tax year 2026-27 (paying tax under default tax regime):</p>
+                    <div class="table-responsive">
+                        <table class="tax-table">
+                            <thead><tr><th>Country Source</th><th>Particulars</th><th>Amount (₹)</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>India</strong></td><td>Income from business in Mumbai</td><td style="text-align:right;">4,40,000</td></tr>
+                                <tr><td><strong>India</strong></td><td>Interest on savings bank with ICICI Bank</td><td style="text-align:right;">42,000</td></tr>
+                                <tr><td><strong>Country S</strong> <small>(Tax Rate: 16%)</small></td><td>Agricultural income in Country S</td><td style="text-align:right;">94,000</td></tr>
+                                <tr><td><strong>Country S</strong></td><td>Royalty on book on art (Gross: ₹7,80,000; Expenses: ₹50,000)</td><td style="text-align:right;">7,30,000</td></tr>
+                                <tr><td><strong>Country T</strong> <small>(Tax Rate: 20%)</small></td><td>Dividend from company in Country T (Gross)</td><td style="text-align:right;">2,65,000</td></tr>
+                                <tr><td><strong>Country T</strong></td><td>Rent from house property in Country T (Gross: ₹3,30,000; Municipal tax: ₹10,000)</td><td style="text-align:right;">3,20,000</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>India does not have any DTAA with Countries S &amp; T. Compute total income and net tax liability of Mr. Ravi.</p>
+
+                    <button class="btn-solution" onclick="toggleSolution('sol-tyk-10')">View Solution &amp; Computation</button>
+                    <div id="sol-tyk-10" class="solution-card">
+                        <p><strong>Step 1: Total Income (Default Tax Regime under Section 115BAC):</strong></p>
+                        <div class="table-responsive">
+                            <table class="tax-table">
+                                <thead><tr><th>Head of Income</th><th>Details</th><th>Amount (₹)</th></tr></thead>
+                                <tbody>
+                                    <tr><td><strong>Income from House Property (Country T):</strong></td><td>GAV ₹3,30,000 - Taxes ₹10,000 = NAV ₹3,20,000 - 30% std ded =</td><td style="text-align:right;">2,24,000</td></tr>
+                                    <tr><td><strong>Profits &amp; Gains of Business / Profession:</strong></td><td>Mumbai Business ₹4,40,000 + Country S Royalty ₹7,30,000 =</td><td style="text-align:right;">11,70,000</td></tr>
+                                    <tr><td><strong>Income from Other Sources:</strong></td><td>ICICI SB Interest ₹42,000 + Country S Agri ₹94,000 + Country T Dividend ₹2,65,000 =</td><td style="text-align:right;">4,01,000</td></tr>
+                                    <tr style="background:#f8fafc; font-weight:700;"><td><strong>Total Income (No Chapter VIII deductions under default regime)</strong></td><td></td><td style="text-align:right; color:var(--primary);"><strong>₹17,95,000</strong></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p style="margin-top:1rem;"><strong>Step 2: Tax Liability under Section 115BAC:</strong></p>
+                        <ul class="styled-list">
+                            <li>Tax on ₹17,95,000: Up to ₹15L = ₹1,40,000; Balance ₹2,95,000 @ 30% = ₹88,500 $\rightarrow$ Base Tax = ₹1,59,000.</li>
+                            <li>Add: Health and Education Cess @ 4%: $1,59,000 \times 4\% = ₹6,360$.</li>
+                            <li><strong>Total Indian Tax Payable:</strong> $\mathbf{₹1,65,360}$.</li>
+                            <li><strong>Average Indian Tax Rate:</strong> $\frac{1,65,360}{17,95,000} \times 100 = \mathbf{9.21\%}$.</li>
+                        </ul>
+
+                        <p style="margin-top:1rem;"><strong>Step 3: Deduction under Section 160:</strong></p>
+                        <div class="table-responsive">
+                            <table class="tax-table">
+                                <thead><tr><th>Country</th><th>Net Doubly Taxed Income</th><th>Rate Comparison</th><th>Deduction u/s 160 (₹)</th></tr></thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Country S</strong></td>
+                                        <td>Agri ₹94,000 + Royalty ₹7,30,000 = <strong>₹8,24,000</strong></td>
+                                        <td>Indian Rate: 9.21%<br>Country S Rate: 16%<br><strong>Lower = 9.21%</strong></td>
+                                        <td style="text-align:right; font-weight:700;">75,890<br><small>($8,24,000 \times 9.21\%$)</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Country T</strong></td>
+                                        <td>House Property ₹2,24,000 + Dividend ₹2,65,000 = <strong>₹4,89,000</strong></td>
+                                        <td>Indian Rate: 9.21%<br>Country T Rate: 20%<br><strong>Lower = 9.21%</strong></td>
+                                        <td style="text-align:right; font-weight:700;">45,037<br><small>($4,89,000 \times 9.21\%$)</small></td>
+                                    </tr>
+                                    <tr style="background:#f1f5f9; font-weight:700;">
+                                        <td colspan="3"><strong>Total Deduction u/s 160 (Country S + Country T)</strong></td>
+                                        <td style="text-align:right; color:var(--success);"><strong>₹1,20,927</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p style="margin-top:10px;"><strong>Net Tax Liability in India:</strong> $1,65,360 - 1,20,927 = ₹44,433 \approx \mathbf{₹44,430}$ (rounded off u/s 288B).</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ========================================== -->
+            <!-- CHAPTER BOTTOM NAVIGATION -->
+            <!-- ========================================== -->
+            <div class="bottom-nav">
+                <a href="non_resident_taxation.html" class="nav-btn prev-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <div>
+                        <div class="nav-label">Previous Chapter</div>
+                        <div class="nav-title">Chapter 21: Non-Resident Taxation</div>
+                    </div>
+                </a>
+                <a href="../../notes/dtnotes.html" class="nav-btn index-btn">
+                    <i class="fa-solid fa-list"></i>
+                    <div>
+                        <div class="nav-label">Master Index</div>
+                        <div class="nav-title">All DT Chapters</div>
+                    </div>
+                </a>
+                <a href="advance_rulings.html" class="nav-btn next-btn">
+                    <div>
+                        <div class="nav-label">Next Chapter</div>
+                        <div class="nav-title">Chapter 23: Advance Rulings (BAR)</div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Back to Top Floating Button -->
+    <button id="back-to-top" title="Go to top" style="display:none; position:fixed; bottom:30px; right:30px; width:45px; height:45px; border-radius:50%; background:var(--primary); color:#fff; border:none; cursor:pointer; box-shadow:0 4px 10px rgba(0,0,0,0.2); z-index:999; align-items:center; justify-content:center; font-size:1.1rem;">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        // Reading Progress Bar
+        window.addEventListener('scroll', function() {
+            const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            const progressBar = document.getElementById('reading-progress');
+            if (progressBar) {
+                progressBar.style.width = scrolled + '%';
+            }
+
+            // Back to top visibility
+            const backToTop = document.getElementById('back-to-top');
+            if (backToTop) {
+                if (winScroll > 300) {
+                    backToTop.style.display = 'flex';
+                } else {
+                    backToTop.style.display = 'none';
+                }
+            }
+        });
+
+        // Back to top click
+        document.getElementById('back-to-top')?.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Solution Toggle Function
+        function toggleSolution(id) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            const btn = el.previousElementSibling;
+            if (el.style.display === 'block') {
+                el.style.display = 'none';
+                if (btn && btn.classList.contains('btn-solution')) {
+                    btn.innerHTML = btn.innerHTML.replace('Hide', 'View');
+                }
+            } else {
+                el.style.display = 'block';
+                if (btn && btn.classList.contains('btn-solution')) {
+                    btn.innerHTML = btn.innerHTML.replace('View', 'Hide');
+                }
+            }
+        }
+
+        // Live Sidebar Search Filter
+        const searchInput = document.getElementById('sidebar-search-input');
+        if (searchInput) {
+            searchInput.addEventListener('input', function() {
+                const term = this.value.toLowerCase().trim();
+                const items = document.querySelectorAll('.sidebar-nav .sidebar-item');
+                items.forEach(item => {
+                    const text = item.textContent.toLowerCase();
+                    if (text.includes(term)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        }
+
+        // Scrollspy for active link
+        window.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        document.querySelectorAll('.sidebar-link').forEach(link => {
+                            if (link.getAttribute('href') === '#' + id) {
+                                link.classList.add('active');
+                            } else {
+                                link.classList.remove('active');
+                            }
+                        });
+                    }
+                });
+            }, { rootMargin: '-20% 0px -70% 0px' });
+
+            document.querySelectorAll('section[id], div[id^="sec-"]').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
+

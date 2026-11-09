@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 17: Dispute Resolution Committee (DRC) (Section 379 &amp; Rules 196-197) | CA Final Direct Tax Laws | AY 2025-26 &amp; AY 2026-27</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0f766e;
+            --primary-dark: #042f2e;
+            --primary-light: #0d9488;
+            --accent: #d97706;
+            --accent-light: #fef3c7;
+            --success: #059669;
+            --warning: #f59e0b;
+            --danger: #dc2626;
+            --slate-50: #f8fafc;
+            --slate-100: #f1f5f9;
+            --slate-200: #e2e8f0;
+            --slate-300: #cbd5e1;
+            --slate-400: #94a3b8;
+            --slate-600: #475569;
+            --slate-700: #334155;
+            --slate-800: #1e293b;
+            --slate-900: #0f172a;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--slate-800);
+            background-color: var(--slate-50);
+            line-height: 1.6;
+        }
+
+        /* Reading Progress Bar */
+        #reading-progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            z-index: 1000;
+        }
+
+        #reading-progress {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #0d9488, #059669, #d97706);
+            transition: width 0.1s ease-out;
+        }
+
+        .page-wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 320px;
+            background-color: #ffffff;
+            border-right: 1px solid var(--border-color);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            overflow-y: auto;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-header {
+            padding: 24px 20px 16px 20px;
+            border-bottom: 1px solid var(--slate-100);
+        }
+
+        .sidebar-title {
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sidebar-subtitle {
+            font-size: 12px;
+            color: var(--slate-600);
+            margin-top: 4px;
+            font-weight: 500;
+        }
+
+        .sidebar-search-box {
+            padding: 12px 20px;
+            border-bottom: 1px solid var(--slate-100);
+        }
+
+        .search-input-wrapper {
+            position: relative;
+        }
+
+        .search-input-wrapper i {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--slate-400);
+            font-size: 13px;
+        }
+
+        .sidebar-search-input {
+            width: 100%;
+            padding: 8px 12px 8px 34px;
+            border-radius: 8px;
+            border: 1px solid var(--slate-200);
+            font-size: 13px;
+            background: var(--slate-50);
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .sidebar-search-input:focus {
+            background: #ffffff;
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+        }
+
+        .sidebar-menu {
+            padding: 16px 12px;
+            list-style: none;
+            flex-grow: 1;
+        }
+
+        .sidebar-section-title {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--slate-400);
+            padding: 12px 12px 6px 12px;
+        }
+
+        .sidebar-item {
+            margin-bottom: 3px;
+        }
+
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 12px;
+            border-radius: 8px;
+            color: var(--slate-700);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .sidebar-link:hover {
+            background-color: var(--slate-100);
+            color: var(--primary);
+        }
+
+        .sidebar-link.active {
+            background-color: rgba(13, 148, 136, 0.1);
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .sidebar-link i {
+            font-size: 14px;
+            width: 18px;
+            text-align: center;
+            color: var(--slate-400);
+        }
+
+        .sidebar-link.active i {
+            color: var(--primary);
+        }
+
+        .sidebar-footer {
+            padding: 16px 20px;
+            border-top: 1px solid var(--slate-100);
+            font-size: 12px;
+            color: var(--slate-600);
+        }
+
+        /* Main Content Container */
+        .main-content {
+            margin-left: 320px;
+            flex-grow: 1;
+            padding: 40px;
+            max-width: 1200px;
+        }
+
+        .reading-container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        /* Navigation Header */
+        .breadcrumb-nav {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--slate-600);
+            margin-bottom: 24px;
+        }
+
+        .breadcrumb-nav a {
+            color: var(--primary-light);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .chapter-header-box {
+            background: linear-gradient(135deg, #042f2e 0%, #0f766e 100%);
+            color: #ffffff;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px -5px rgba(15, 118, 110, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chapter-header-box::after {
+            content: "";
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(13, 148, 136, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+            border-radius: 50%;
+        }
+
+        .chapter-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            backdrop-filter: blur(4px);
+        }
+
+        .chapter-title {
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 14px;
+        }
+
+        .chapter-desc {
+            font-size: 15px;
+            color: #ccfbf1;
+            line-height: 1.6;
+            max-width: 800px;
+        }
+
+        /* Section Styling */
+        .chapter-content-section {
+            margin-bottom: 50px;
+            scroll-margin-top: 30px;
+        }
+
+        .section-header {
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--slate-200);
+        }
+
+        .section-tag {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--primary-light);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 4px;
+        }
+
+        .section-header h2 {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin-bottom: 6px;
+        }
+
+        .section-meta {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 11.5px;
+            font-weight: 600;
+            background: var(--slate-100);
+            color: var(--slate-700);
+            border: 1px solid var(--slate-200);
+        }
+
+        .badge-primary {
+            background: rgba(13, 148, 136, 0.1);
+            color: #0f766e;
+            border-color: rgba(13, 148, 136, 0.2);
+        }
+
+        .badge-success {
+            background: rgba(16, 185, 129, 0.1);
+            color: #047857;
+            border-color: rgba(16, 185, 129, 0.2);
+        }
+
+        .badge-warning {
+            background: rgba(245, 158, 11, 0.1);
+            color: #b45309;
+            border-color: rgba(245, 158, 11, 0.2);
+        }
+
+        .badge-danger {
+            background: rgba(239, 68, 68, 0.1);
+            color: #b91c1c;
+            border-color: rgba(239, 68, 68, 0.2);
+        }
+
+        /* Cards & Content Blocks */
+        .card {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card h4 {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--slate-800);
+            margin: 16px 0 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Stat Grid */
+        .grid {
+            display: grid;
+            gap: 18px;
+        }
+
+        .grid-2 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .grid-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .grid-4 {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @media (max-width: 868px) {
+            .grid-2, .grid-3, .grid-4 {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                display: none;
+            }
+            .main-content {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
+
+        .stat-box {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            border-radius: 10px;
+            padding: 18px;
+            transition: all 0.2s;
+        }
+
+        .stat-box:hover {
+            border-color: var(--primary-light);
+            background: #ffffff;
+            box-shadow: 0 4px 12px -2px rgba(13, 148, 136, 0.15);
+        }
+
+        .stat-num {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--slate-700);
+            margin-bottom: 6px;
+        }
+
+        .stat-box p {
+            font-size: 12px;
+            color: var(--slate-600);
+            line-height: 1.5;
+        }
+
+        .panel {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        /* Table Styling */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 16px 0;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            text-align: left;
+            background: #ffffff;
+        }
+
+        .data-table th {
+            background-color: var(--slate-100);
+            color: var(--slate-800);
+            font-weight: 700;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+            white-space: nowrap;
+        }
+
+        .data-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--slate-200);
+            vertical-align: top;
+            line-height: 1.5;
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .data-table tr:hover {
+            background-color: rgba(248, 250, 252, 0.8);
+        }
+
+        /* Callout & Alerts */
+        .callout {
+            border-left: 4px solid var(--primary-light);
+            background: rgba(13, 148, 136, 0.04);
+            border-radius: 0 8px 8px 0;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+
+        .callout-header {
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--primary-dark);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .callout-warning {
+            border-left-color: var(--warning);
+            background: rgba(245, 158, 11, 0.05);
+        }
+
+        .callout-warning .callout-header {
+            color: var(--warning);
+        }
+
+        .callout-danger {
+            border-left-color: var(--danger);
+            background: rgba(239, 68, 68, 0.05);
+        }
+
+        .callout-danger .callout-header {
+            color: var(--danger);
+        }
+
+        .callout-info {
+            border-left-color: #0284c7;
+            background: rgba(2, 132, 199, 0.05);
+        }
+
+        .callout-info .callout-header {
+            color: #0284c7;
+        }
+
+        .alert {
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 14px 0;
+            font-size: 13px;
+        }
+
+        .alert-info {
+            background-color: #f0f9ff;
+            border: 1px solid #bae6fd;
+            color: #0369a1;
+        }
+
+        .alert-success {
+            background-color: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            color: #15803d;
+        }
+
+        .alert-danger {
+            background-color: #fef2f2;
+            border: 1px solid #fecaca;
+            color: #b91c1c;
+        }
+
+        .alert-title {
+            font-weight: 700;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Styled Lists */
+        .styled-list {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        .styled-list li {
+            margin-bottom: 6px;
+            font-size: 13.5px;
+            line-height: 1.55;
+        }
+
+        /* Workflows */
+        .workflow-step {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 14px;
+        }
+
+        .step-num {
+            width: 28px;
+            height: 28px;
+            background: var(--primary);
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 13px;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            flex-grow: 1;
+            font-size: 13.5px;
+        }
+
+        .step-content strong {
+            display: block;
+            margin-bottom: 2px;
+            color: var(--primary-dark);
+        }
+
+        /* Practical Problem Card */
+        .practical-card {
+            border-left: 4px solid var(--accent);
+            background: #ffffff;
+            margin-bottom: 24px;
+        }
+
+        .practical-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--slate-100);
+            padding-bottom: 10px;
+        }
+
+        .q-badge {
+            background: var(--accent);
+            color: #ffffff;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .problem-statement {
+            background: var(--slate-50);
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 13.5px;
+            margin-bottom: 16px;
+            border: 1px solid var(--slate-200);
+            line-height: 1.6;
+        }
+
+        .solution-content {
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div id="reading-progress-container">
+        <div id="reading-progress"></div>
+    </div>
+
+    <div class="page-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-title">
+                    <i class="fa-solid fa-handshake-angle"></i> Chapter 17
+                </div>
+                <div class="sidebar-subtitle">Dispute Resolution Committee (Sec 379)</div>
+            </div>
+
+            <div class="sidebar-search-box">
+                <div class="search-input-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="sidebar-search" class="sidebar-search-input" placeholder="Search Chapter 17...">
+                </div>
+            </div>
+
+            <ul class="sidebar-menu">
+                <li class="sidebar-section-title">DRC Architecture</li>
+                <li class="sidebar-item">
+                    <a href="#sec-overview" class="sidebar-link">
+                        <i class="fa-solid fa-sitemap"></i> 1. Statutory Framework &amp; Purpose
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-constitution-composition" class="sidebar-link">
+                        <i class="fa-solid fa-users-gear"></i> 2. Constitution &amp; Composition
+                    </a>
+                </li>
+                
+                <li class="sidebar-section-title">Eligibility &amp; Process</li>
+                <li class="sidebar-item">
+                    <a href="#sec-eligibility-criteria" class="sidebar-link">
+                        <i class="fa-solid fa-filter-circle-dollar"></i> 3. Specified Orders &amp; Conditions
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-procedure-timelines" class="sidebar-link">
+                        <i class="fa-solid fa-timeline"></i> 4. Procedure Before DRC (Rule 197)
+                    </a>
+                </li>
+
+                <li class="sidebar-section-title">Powers &amp; Outcomes</li>
+                <li class="sidebar-item">
+                    <a href="#sec-powers-immunity" class="sidebar-link">
+                        <i class="fa-solid fa-shield-halved"></i> 5. Penalty Waiver &amp; Immunity
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-ao-effect-termination" class="sidebar-link">
+                        <i class="fa-solid fa-stamp"></i> 6. AO Order &amp; Termination
+                    </a>
+                </li>
+
+                <li class="sidebar-section-title">Exam Practice</li>
+                <li class="sidebar-item">
+                    <a href="#sec-tyk" class="sidebar-link">
+                        <i class="fa-solid fa-graduation-cap"></i> 7. Test Your Knowledge (Q1 to Q3)
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <i class="fa-solid fa-scale-balanced"></i> Income-tax Act, 2025 &amp; FA 2026
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="reading-container">
+                <!-- Breadcrumbs -->
+                <nav class="breadcrumb-nav">
+                    <a href="../../index.html"><i class="fa-solid fa-house"></i> Home</a>
+                    <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i>
+                    <a href="../notes/dtnotes.html">Direct Tax Master</a>
+                    <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i>
+                    <span>Chapter 17: Dispute Resolution Committee</span>
+                </nav>
+
+                <!-- Chapter Banner -->
+                <header class="chapter-header-box">
+                    <span class="chapter-tag"><i class="fa-solid fa-handshake"></i> Alternate Dispute Resolution</span>
+                    <h1 class="chapter-title">Chapter 17: Dispute Resolution Committee (DRC)</h1>
+                    <p class="chapter-desc">A specialized, taxpayer-friendly dispute resolution framework under Section 379 and Rules 196 &amp; 197 of the Income-tax Act, 2025, designed to provide early tax certainty, waiver of penalty, and immunity from prosecution to small and medium taxpayers.</p>
+                </header>
+
+
+<!-- ========================================================================= -->
+<!-- SECTION 1: STATUTORY FRAMEWORK & OBJECTIVE OF DRC                         -->
+<!-- ========================================================================= -->
+<section id="sec-overview" class="chapter-content-section">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-sitemap"></i> Alternate Dispute Resolution</span>
+        <h2>1. Statutory Architecture &amp; Rationale of Dispute Resolution Committee (DRC)</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-book"></i> Income-tax Act, 2025 &amp; Finance Act, 2026</span>
+            <span class="badge"><i class="fa-solid fa-code-compare"></i> Cross-Reference: Section 245MA (1961 Act)</span>
+            <span class="badge"><i class="fa-solid fa-users"></i> Target: Small &amp; Medium Taxpayers</span>
+        </div>
+    </div>
+
+    <div class="card stat-card">
+        <h3><i class="fa-solid fa-handshake"></i> Need &amp; Rationale for Dispute Resolution Committee</h3>
+        <p>In order to provide early tax certainty, curb protracted litigation, and offer a cost-effective, expeditious dispute resolution mechanism for <strong>small and medium taxpayers</strong>, the Parliament introduced the specialized framework of the <strong>Dispute Resolution Committee (DRC)</strong> under <strong>Section 379</strong> of the Income-tax Act, 2025 (corresponding to Old Section 245MA).</p>
+        
+        <div class="grid grid-3" style="margin-top: 15px;">
+            <div class="stat-box">
+                <div class="stat-num"><i class="fa-solid fa-coins"></i> &le; ₹50L</div>
+                <div class="stat-label">Returned Total Income</div>
+                <p>Available only where returned total income of the taxpayer does not exceed ₹50,00,000 for the relevant tax year.</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num"><i class="fa-solid fa-chart-line-up"></i> &le; ₹10L</div>
+                <div class="stat-label">Maximum Variation</div>
+                <p>Aggregate sum of variations proposed or made in the specified assessment/intimation order does not exceed ₹10,00,000.</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num"><i class="fa-solid fa-shield-halved"></i> 100%</div>
+                <div class="stat-label">Immunity &amp; Waiver</div>
+                <p>DRC is uniquely empowered to modify variations, grant waiver/reduction of penalty, and confer immunity from prosecution.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3><i class="fa-solid fa-table-columns"></i> Comparative Legal Matrix: DRC (Sec 379) vs DRP (Sec 275) vs CIT(A) (Sec 356)</h3>
+        <p>A quick comparative reference distinguishing the three key dispute resolution avenues under the Income-tax Act, 2025:</p>
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Distinguishing Parameter</th>
+                        <th>Dispute Resolution Committee (DRC) [Sec 379]</th>
+                        <th>Dispute Resolution Panel (DRP) [Sec 275]</th>
+                        <th>Commissioner (Appeals) [Sec 356]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Governing Section</strong></td>
+                        <td><span class="badge badge-primary">Section 379</span> (Old 245MA)</td>
+                        <td><span class="badge badge-warning">Section 275</span> (Old 144C)</td>
+                        <td><span class="badge badge-success">Section 356</span> (Old 246A)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Target Class of Taxpayers</strong></td>
+                        <td><strong>Small &amp; medium domestic taxpayers</strong> (Income $\le ₹50	ext{L}$, Variations $\le ₹10	ext{L}$).</td>
+                        <td><strong>Eligible Assessees</strong>: Non-residents, foreign companies &amp; transfer pricing cases.</td>
+                        <td><strong>All classes of taxpayers</strong> across the board.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Composition</strong></td>
+                        <td>3 Members: 2 retired IRS officers + 1 serving PCIT/CIT.</td>
+                        <td>3 serving Principal Commissioners / Commissioners.</td>
+                        <td>Single Commissioner (Appeals) / Joint Commissioner.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nature of Orders Covered</strong></td>
+                        <td>Specified orders (assessment, intimation, rectification, default u/s 398).</td>
+                        <td><strong>Draft Assessment Orders</strong> involving variations.</td>
+                        <td>Final assessment, reassessment, penalty, and rectification orders.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Penalty Waiver &amp; Immunity</strong></td>
+                        <td><span class="badge badge-success">YES</span> &mdash; Full power to reduce/waive penalty &amp; grant immunity.</td>
+                        <td><span class="badge badge-danger">NO</span> &mdash; Only issues directions on assessment variations.</td>
+                        <td><span class="badge badge-warning">Partial</span> &mdash; Can cancel penalty in penalty appeals; no immunity.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Further Appealability</strong></td>
+                        <td><span class="badge badge-danger">STRICTLY BARRED</span> &mdash; No appeal or revision lies against DRC order.</td>
+                        <td>Appeal lies directly to <strong>ITAT</strong> under Section 362 against final order.</td>
+                        <td>Appeal lies to <strong>ITAT</strong> under Section 362.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- SECTION 2: CONSTITUTION & COMPOSITION OF DRC (SEC 379 & RULE 196)         -->
+<!-- ========================================================================= -->
+<section id="sec-constitution-composition" class="chapter-content-section">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-users-gear"></i> Administrative Structure</span>
+        <h2>2. Constitution &amp; Composition of Dispute Resolution Committee</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-code"></i> Section 379(1)</span>
+            <span class="badge"><i class="fa-solid fa-gavel"></i> Rule 196 (Old Rule 44DA)</span>
+            <span class="badge"><i class="fa-solid fa-calendar-days"></i> Tenure: 3 Years / Age 70</span>
+        </div>
+    </div>
+
+    <!-- Constitution Section 379(1) -->
+    <div class="card" id="sec-379">
+        <h3><i class="fa-solid fa-landmark"></i> 1. Statutory Constitution of DRC [Section 379(1) &amp; Rule 196]</h3>
+        <p>Section 379(1) empowers the Central Government to constitute one or more <strong>Dispute Resolution Committees (DRCs)</strong> for specified regions across India to resolve tax disputes in accordance with the prescribed rules.</p>
+
+        <div class="grid grid-3" style="margin-top: 15px;">
+            <div class="panel" style="border-top: 4px solid var(--primary);">
+                <h4><i class="fa-solid fa-user-tie"></i> Two Retired IRS Members</h4>
+                <p>Two members shall be retired officers from the <strong>Indian Revenue Service (Income-tax)</strong> who have held the post of <strong>Principal Commissioner of Income-tax or higher rank</strong> for at least two years.</p>
+            </div>
+            <div class="panel" style="border-top: 4px solid var(--primary);">
+                <h4><i class="fa-solid fa-building-user"></i> One Ex-Officio Member</h4>
+                <p>One ex-officio member who shall be a serving officer not below the rank of <strong>Principal Commissioner or Commissioner of Income-tax</strong>, designated by the Board.</p>
+            </div>
+            <div class="panel" style="border-top: 4px solid var(--primary);">
+                <h4><i class="fa-solid fa-clock"></i> Tenure &amp; Age Limit</h4>
+                <p>Members hold office for a term of <strong>three years</strong> or until they attain the age of <strong>70 years</strong>, whichever is earlier. Eligible for re-appointment subject to the age ceiling.</p>
+            </div>
+        </div>
+
+        <div class="alert alert-info" style="margin-top: 15px;">
+            <div class="alert-title"><i class="fa-solid fa-microchip"></i> Faceless &amp; Electronic Proceedings</div>
+            <p>The Dispute Resolution Committee functions through an electronic, technology-driven platform. All notices, submissions, reports, and communications between the DRC, the assessee, and the Assessing Officer are transmitted <strong>electronically</strong>, eliminating human interface and ensuring speed and impartiality.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ========================================================================= -->
+<!-- SECTION 3: SPECIFIED ORDERS, CONDITIONS & DISQUALIFICATIONS                -->
+<!-- ========================================================================= -->
+<section id="sec-eligibility-criteria" class="chapter-content-section">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-filter-circle-dollar"></i> Eligibility Framework</span>
+        <h2>3. Specified Orders, Monetary Thresholds &amp; Disqualification Conditions</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-file-invoice"></i> Specified Order Criteria</span>
+            <span class="badge"><i class="fa-solid fa-ban"></i> Disqualifications (Negative List)</span>
+            <span class="badge"><i class="fa-solid fa-scale-balanced"></i> Rule 196 &amp; Rule 197</span>
+        </div>
+    </div>
+
+    <!-- Specified Order Definition -->
+    <div class="card">
+        <h3><i class="fa-solid fa-file-circle-check"></i> 1. Meaning of "Specified Order" [Section 379 / Rule 196]</h3>
+        <p>An application before the Dispute Resolution Committee can be made only in respect of a <strong>Specified Order</strong>. An order qualifies as a specified order if it satisfies the following statutory parameters:</p>
+
+        <div class="grid grid-2">
+            <div>
+                <h4><i class="fa-solid fa-list-check"></i> Eligible Categories of Orders</h4>
+                <ul class="styled-list">
+                    <li>A draft of the proposed assessment order referred to in <strong>Section 275(1)</strong>;</li>
+                    <li>An intimation sent under <strong>Section 270(1)</strong> (summary processing) or intimation u/s 398 in relation to TDS/TCS defaults;</li>
+                    <li>An order of regular assessment or reassessment passed under <strong>Section 270(12) or Section 279</strong> (except an order passed in pursuance of search or survey);</li>
+                    <li>A rectification order passed under <strong>Section 287</strong> having the effect of enhancing liability or reducing refund;</li>
+                    <li>An order treating the assessee as an assessee in default under <strong>Section 398</strong> in relation to TDS/TCS.</li>
+                </ul>
+            </div>
+            <div>
+                <h4><i class="fa-solid fa-calculator"></i> The Twin Monetary Ceiling Thresholds</h4>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Monetary Parameter</th>
+                                <th>Statutory Ceiling Threshold</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Returned Total Income</strong></td>
+                                <td>Total income as per the return furnished by the assessee does not exceed <span class="badge badge-success" style="font-size: 13px;">₹50,00,000 (₹50 Lakhs)</span>.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sum of Variations</strong></td>
+                                <td>The aggregate sum of variations proposed or made in the order does not exceed <span class="badge badge-primary" style="font-size: 13px;">₹10,00,000 (₹10 Lakhs)</span>.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Excluded Orders -->
+        <div class="callout callout-danger" style="margin-top: 15px;">
+            <div class="callout-header"><i class="fa-solid fa-circle-xmark"></i> Orders Strictly Excluded from DRC Purview</div>
+            <p>An order shall <strong>NOT qualify as a specified order</strong> if it is based on:
+            <br>• (a) A <strong>search initiated under Section 247</strong> (Old 132) or requisition made under Section 248 (Old 132A);
+            <br>• (b) A <strong>survey carried out under Section 253</strong> (Old 133A); OR
+            <br>• (c) <strong>Information received under an agreement</strong> referred to in Section 159(1) or (2) (i.e. DTAA / foreign tax exchange of information agreements).</p>
+        </div>
+    </div>
+
+    <!-- Specified Conditions & Negative List -->
+    <div class="card">
+        <h3><i class="fa-solid fa-user-shield"></i> 2. Meaning of "Specified Person" &amp; Negative Disqualification List</h3>
+        <p>A "Specified Person" is a taxpayer who opts for dispute resolution before the DRC and who fulfills the <strong>Specified Conditions</strong>. A person is strictly disqualified from accessing the DRC if he falls into any of the following categories:</p>
+
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Statutory Disqualification Ground</th>
+                        <th>Applicable Special Legislation / Scope</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><strong>Preventive Detention</strong></td>
+                        <td>An order of detention has been made under the <strong>Conservation of Foreign Exchange and Prevention of Smuggling Activities Act, 1974 (COFEPOSA)</strong>.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><strong>Criminal Convictions</strong></td>
+                        <td>Prosecution for any offence has been instituted and he has been <strong>convicted</strong> under:
+                            <br>&bull; <strong>Bharatiya Nyaya Sanhita, 2023 (or Indian Penal Code)</strong>;
+                            <br>&bull; Prevention of Corruption Act, 1988;
+                            <br>&bull; Prevention of Money Laundering Act, 2002 (PMLA);
+                            <br>&bull; Unlawful Activities (Prevention) Act, 1967;
+                            <br>&bull; Narcotic Drugs and Psychotropic Substances Act, 1985 (NDPS).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><strong>Income-tax Prosecution</strong></td>
+                        <td>Prosecution has been <strong>initiated by an Income-tax authority</strong> for any offence punishable under Chapter XXII of the Act.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><strong>Securities Scam Special Court</strong></td>
+                        <td>Person notified under Section 3 of the <strong>Special Court (Trial of Offences Relating to Transactions in Securities) Act, 1992</strong>.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><strong>Black Money Proceedings</strong></td>
+                        <td>Proceedings have been initiated under the <strong>Black Money (Undisclosed Foreign Income and Assets) and Imposition of Tax Act, 2015</strong>.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="alert alert-success" style="margin-top: 15px;">
+            <div class="alert-title"><i class="fa-solid fa-circle-check"></i> Critical Exam Nuance: Levy of Tax Penalty is NOT a Bar!</div>
+            <p><strong>Non-levy of penalty under the Income-tax Act is NOT a specified condition.</strong> Therefore, where a penalty under Section 450 (or Section 271B/270A) has been levied on an assessee, it <strong>does NOT disqualify</strong> him from applying before the DRC, provided no criminal prosecution has been instituted!</p>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- SECTION 4: PROCEDURE & TIMELINES BEFORE DRC (RULE 197)                    -->
+<!-- ========================================================================= -->
+<section id="sec-procedure-timelines" class="chapter-content-section">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-timeline"></i> Procedural Roadmap</span>
+        <h2>4. Dispute Resolution Procedure, Screening &amp; Timelines (Rule 197)</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-clock"></i> Application: Within 1 Month</span>
+            <span class="badge"><i class="fa-solid fa-stopwatch"></i> Disposal: Within 6 Months</span>
+            <span class="badge"><i class="fa-solid fa-stamp"></i> Binding &amp; Non-Appealable Order</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3><i class="fa-solid fa-diagram-project"></i> 1. Step-by-Step Procedure Before the DRC [Rule 197]</h3>
+
+        <div class="workflow-step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+                <strong>Filing of Application:</strong>
+                The application for resolution of dispute must be filed electronically in the prescribed form:
+                <br>&bull; <em>If appeal already filed and pending before CIT(A):</em> At any time during the pendency of appeal.
+                <br>&bull; <em>In any other case:</em> Within <strong>one month from the date of receipt of the specified order</strong>.
+            </div>
+        </div>
+
+        <div class="workflow-step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+                <strong>Preliminary Screening &amp; Show Cause Notice:</strong>
+                The DRC examines the application within <strong>30 days</strong>. If the application is defective or ineligible, a show cause notice is issued. The assessee is granted an opportunity of hearing (via video conference). If satisfied, the DRC admits the application; otherwise, it passes a speaking rejection order.
+            </div>
+        </div>
+
+        <div class="workflow-step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+                <strong>Withdrawal of Pending Appeal:</strong>
+                Upon admission, the assessee must submit <strong>proof of withdrawal of appeal</strong> pending before the Commissioner (Appeals) or application before the DRP within <strong>30 days</strong> from the date of receipt of the admission decision.
+            </div>
+        </div>
+
+        <div class="workflow-step">
+            <div class="step-num">4</div>
+            <div class="step-content">
+                <strong>Examination, AO Report &amp; Submissions:</strong>
+                The DRC calls for records from the AO. The AO submits a report within <strong>30 days</strong>. The DRC may seek further details from the assessee, who responds electronically within the time specified.
+            </div>
+        </div>
+
+        <div class="workflow-step">
+            <div class="step-num">5</div>
+            <div class="step-content">
+                <strong>Passing of Final Order by DRC:</strong>
+                The DRC passes an order in writing disposing of the dispute within <strong>six months from the end of the month in which the application was admitted</strong>.
+            </div>
+        </div>
+
+        <!-- Binding Nature -->
+        <div class="callout callout-warning" style="margin-top: 15px;">
+            <div class="callout-header"><i class="fa-solid fa-lock"></i> Absolute Finality &amp; Bar on Higher Appeals</div>
+            <p><strong>The order passed by the DRC is final and binding on both the assessee and the Income-tax Department.</strong>
+            <br>• Where a modified order is passed in conformity with the directions of the DRC, <strong>NO APPEAL OR REVISION SHALL LIE</strong> against such order before the Commissioner (Appeals), Appellate Tribunal (ITAT), or High Court.
+            <br>• The taxpayer forfeits the right of subsequent appeal in exchange for early dispute settlement, penalty waiver, and prosecution immunity.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ========================================================================= -->
+<!-- SECTION 5: POWERS OF DRC, PENALTY WAIVER & IMMUNITY (SEC 379(2))          -->
+<!-- ========================================================================= -->
+<section id="sec-powers-immunity" class="chapter-content-section">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-shield-halved"></i> Statutory Powers</span>
+        <h2>5. Modification of Orders, Waiver of Penalty &amp; Immunity from Prosecution</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-code"></i> Section 379(2)</span>
+            <span class="badge"><i class="fa-solid fa-percent"></i> Penalty Waiver / Reduction</span>
+            <span class="badge"><i class="fa-solid fa-shield-cat"></i> Prosecution Immunity</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3><i class="fa-solid fa-gavel"></i> 1. Adjudicatory Decisions &amp; Powers of DRC [Section 379(2)]</h3>
+        <p>After considering the material available on record, reports from the AO, and submissions made by the assessee, the Dispute Resolution Committee has the statutory power to pass any of the following orders:</p>
+
+        <div class="grid grid-3">
+            <div class="panel" style="border-top: 4px solid #10b981;">
+                <h4><i class="fa-solid fa-pen-to-square"></i> (A) Modify Variations</h4>
+                <p>Make modifications to the variations proposed in the specified order. <strong>Statutory Bar:</strong> The DRC <em>cannot make any modification which is prejudicial to the assessee</em> (no enhancement of additions).</p>
+            </div>
+            <div class="panel" style="border-top: 4px solid #f59e0b;">
+                <h4><i class="fa-solid fa-hand-holding-dollar"></i> (B) Waive / Reduce Penalty</h4>
+                <p>Not modify the variations in income, but decide to <strong>reduce or waive any penalty</strong> imposed or imposable under the Income-tax Act, and/or grant immunity from prosecution.</p>
+            </div>
+            <div class="panel" style="border-top: 4px solid #3b82f6;">
+                <h4><i class="fa-solid fa-check-double"></i> (C) Dispose Without Change</h4>
+                <p>Not make any modification to the specified order and pass an order disposing of the application, leaving the original order intact.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Immunity & Waiver Conditions -->
+    <div class="card">
+        <h3><i class="fa-solid fa-shield-check"></i> 2. Conditions for Grant of Penalty Waiver &amp; Prosecution Immunity</h3>
+        
+        <div class="grid grid-2">
+            <div>
+                <h4><i class="fa-solid fa-circle-check" style="color: #10b981;"></i> Preconditions for Granting Immunity</h4>
+                <ul class="styled-list">
+                    <li>The assessee must have <strong>fully cooperated</strong> with the DRC during the proceedings;</li>
+                    <li>The assessee must <strong>discharge the full tax demand</strong> determined in the modified order within the period specified in the Notice of Demand;</li>
+                    <li>The assessee has not concealed any material particulars or given false statements.</li>
+                </ul>
+            </div>
+            <div>
+                <h4><i class="fa-solid fa-circle-xmark" style="color: #ef4444;"></i> Situations Where Immunity CANNOT be Granted</h4>
+                <ul class="styled-list">
+                    <li><strong>Pre-Existing Prosecution:</strong> No immunity can be granted if prosecution proceedings were <strong>already initiated</strong> against the assessee under Chapter XXII before the date of filing the application before the DRC.</li>
+                    <li><strong>Withdrawal of Immunity:</strong> Immunity and penalty waiver granted shall stand <strong>withdrawn</strong> if the assessee fails to pay the tax demand or if the DRC subsequently finds that the assessee concealed material particulars or gave false evidence.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- SECTION 6: AO ORDER LIMITATION & TERMINATION GROUNDS                      -->
+<!-- ========================================================================= -->
+<section id="sec-ao-effect-termination" class="chapter-content-section">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-stamp"></i> Final Implementation</span>
+        <h2>6. Order of Assessing Officer &amp; Termination of Proceedings</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-clock"></i> AO Order: Within 1 Month</span>
+            <span class="badge"><i class="fa-solid fa-ban"></i> Grounds for Termination</span>
+            <span class="badge"><i class="fa-solid fa-code"></i> Section 379(3)</span>
+        </div>
+    </div>
+
+    <!-- AO Order Limitation Section 379(3) -->
+    <div class="card">
+        <h3><i class="fa-solid fa-file-signature"></i> 1. Order by Assessing Officer Giving Effect to DRC [Section 379(3)]</h3>
+        <p>Upon receipt of the order of the Dispute Resolution Committee, the Assessing Officer is statutorily mandated to pass an order in conformity with the directions of the DRC within strict time limits:</p>
+
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Nature of Specified Order</th>
+                        <th>Action Required by Assessing Officer</th>
+                        <th>Statutory Time Limit for AO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Where Specified Order is a Draft Order [Sec 275(1)]</strong></td>
+                        <td>The AO shall pass the final assessment order in conformity with the directions of the DRC.</td>
+                        <td>Within <strong>one month from the end of the month</strong> in which the order of the DRC is received by the AO.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>In Any Other Case (Assessment, Intimation, Rectification)</strong></td>
+                        <td>The AO shall modify the order of assessment, reassessment, recomputation, or rectification in conformity with the directions.</td>
+                        <td>Within <strong>one month from the end of the month</strong> in which the order of the DRC is received by the AO.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Termination of Proceedings -->
+    <div class="card">
+        <h3><i class="fa-solid fa-triangle-exclamation"></i> 2. Grounds for Termination of Dispute Resolution Proceedings</h3>
+        <p>Under Rule 197, the Dispute Resolution Committee shall terminate the proceedings before it at any stage upon the occurrence of any of the following defaults:</p>
+
+        <div class="grid grid-2">
+            <div class="panel" style="border-left: 4px solid var(--danger);">
+                <h4><i class="fa-solid fa-user-xmark"></i> Non-Cooperation &amp; Non-Compliance</h4>
+                <ul class="styled-list">
+                    <li>The assessee <strong>fails to cooperate</strong> during the course of dispute resolution proceedings;</li>
+                    <li>The assessee <strong>fails to respond</strong> to, or submit any information/documents in response to, a notice issued by the Committee within the specified time.</li>
+                </ul>
+            </div>
+            <div class="panel" style="border-left: 4px solid var(--danger);">
+                <h4><i class="fa-solid fa-mask"></i> Concealment &amp; Default in Payment</h4>
+                <ul class="styled-list">
+                    <li>The Committee is satisfied that the assessee has <strong>concealed any particular material</strong> to the dispute or has furnished inaccurate particulars;</li>
+                    <li>The assessee <strong>fails to pay the demand</strong> as required in the Notice of Demand issued in consequence of the modified order.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="alert alert-danger" style="margin-top: 15px;">
+            <div class="alert-title"><i class="fa-solid fa-skull-crossbones"></i> Consequence of Termination</div>
+            <p>Upon termination of the proceedings, the dispute resolution application stands dismissed, and the original assessment, additions, penalties, and prosecution proceedings revive as if no application had been made before the DRC.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ========================================================================= -->
+<!-- SECTION 7: TEST YOUR KNOWLEDGE - PRACTICAL QUESTIONS & SOLUTIONS          -->
+<!-- ========================================================================= -->
+<section id="sec-tyk" class="chapter-content-section">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Practical Case Studies</span>
+        <h2>7. ICAI Test Your Knowledge: Practical Problems &amp; Statutory Solutions</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-list-check"></i> Questions 1 to 3</span>
+            <span class="badge"><i class="fa-solid fa-scale-balanced"></i> Statutory Solutions under ITA 2025</span>
+            <span class="badge"><i class="fa-solid fa-stamp"></i> Exam Standard Case Scenarios</span>
+        </div>
+    </div>
+
+    <!-- Question 1 -->
+    <div class="card practical-card" id="tyk-1">
+        <div class="practical-header">
+            <span class="q-badge">TYK Question 1</span>
+            <h4>Need for DRC &amp; Bar on Orders Based on Foreign DTAA Information</h4>
+        </div>
+        <div class="problem-statement">
+            <p><strong>Questions:</strong>
+            <br>(a) What is the need for the constitution of the Dispute Resolution Committee (DRC)?
+            <br>(b) Can an assessee make an application before the DRC against an order which is based on information received under an agreement referred to in Section 159 (DTAA / TIEA)?</p>
+        </div>
+        <div class="solution-content">
+            <h4><i class="fa-solid fa-gavel"></i> Statutory Analysis &amp; Solution:</h4>
+            <div class="grid grid-2">
+                <div>
+                    <h5>(a) Statutory Need &amp; Objective of DRC</h5>
+                    <ul class="styled-list">
+                        <li>In order to provide <strong>early tax certainty to small and medium taxpayers</strong>, the Dispute Resolution Committee (DRC) framework was formulated under Section 379.</li>
+                        <li>It prevents small and medium taxpayers from getting entangled in protracted, costly, and multi-tiered adversarial litigation before appellate authorities.</li>
+                        <li>It incentivizes voluntary tax compliance by offering a transparent forum that can modify variations, reduce or waive penalties, and confer immunity from prosecution.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>(b) Ineligibility of Orders Based on DTAA Info [Sec 379 / Rule 196]</h5>
+                    <ul class="styled-list">
+                        <li>Under Section 379 read with Rule 196, the definition of <strong>"Specified Order"</strong> expressly carves out and excludes any order that is based on <em>information received under an agreement referred to in Section 159(1) or (2)</em> (i.e. Double Taxation Avoidance Agreements or Tax Information Exchange Agreements).</li>
+                        <li><strong>Conclusion:</strong> An assessee <strong>CANNOT opt for dispute resolution before the DRC</strong> in respect of an assessment or reassessment order that is based on information received from a foreign treaty partner under Section 159.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="card practical-card" id="tyk-2">
+        <div class="practical-header">
+            <span class="q-badge">TYK Question 2</span>
+            <h4>Criminal Prosecution Disqualification (Bharatiya Nyaya Sanhita, 2023)</h4>
+        </div>
+        <div class="problem-statement">
+            <p><strong>Question:</strong> Can an assessee opt for dispute resolution before the DRC if prosecution for any offence punishable under the provisions of the Bharatiya Nyaya Sanhita, 2023 has been instituted against him and he has been convicted in respect of the same under the said Act?</p>
+        </div>
+        <div class="solution-content">
+            <h4><i class="fa-solid fa-gavel"></i> Statutory Analysis &amp; Solution:</h4>
+            <div class="alert alert-danger">
+                <div class="alert-title"><i class="fa-solid fa-ban"></i> Conclusion: NO, the assessee CANNOT opt for dispute resolution before the DRC.</div>
+                <p>Conviction under the Bharatiya Nyaya Sanhita, 2023 constitutes an absolute statutory disqualification.</p>
+            </div>
+            <ul class="styled-list">
+                <li><strong>Specified Person &amp; Conditions [Section 379 read with Rule 196]:</strong> The Dispute Resolution Committee can resolve disputes only in the case of a "Specified Person" who fulfills all the "Specified Conditions".</li>
+                <li><strong>Negative Disqualification Criteria:</strong> The specified conditions explicitly provide that the person <strong>must NOT be a person</strong> in respect of whom prosecution for any offence punishable under the provisions of the <strong>Bharatiya Nyaya Sanhita, 2023 (or Indian Penal Code)</strong> has been instituted and who has been <strong>convicted</strong> in respect of the same under the said enactment.</li>
+                <li><strong>Final Verdict:</strong> Since the assessee has been prosecuted and convicted of an offence punishable under the Bharatiya Nyaya Sanhita, 2023, he fails to satisfy the specified conditions and is strictly barred from making an application before the DRC.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="card practical-card" id="tyk-3">
+        <div class="practical-header">
+            <span class="q-badge">TYK Question 3</span>
+            <h4>Comprehensive Practical Case Study: Mr. Vijay (Eligibility, Timelines &amp; Appeals)</h4>
+        </div>
+        <div class="problem-statement">
+            <p><strong>Facts:</strong> Mr. Vijay furnished his return of income for Tax Year 2026-27 declaring a total income of ₹28,00,000. He received an assessment order under Section 270(10) on 26.11.2028 enhancing his total income by ₹5,00,000. He is aggrieved by the order and desires to know whether he can file an application before the DRC. He informs you that no order of detention has been made and no prosecution proceedings have been initiated under any law. However, a penalty under Section 450 has been levied on him for failure to furnish a tax audit report under Section 185.</p>
+            <p><strong>Requirements:</strong>
+            <br>(a) Can Mr. Vijay file an application before the DRC?
+            <br>(b) What is the time limit for making the application?
+            <br>(c) In case he is aggrieved by the order passed by the DRC, can he file an appeal against such order?
+            <br>(d) Would your answer be different if the assessment order was based on information received under a DTAA with Country X under Section 159?</p>
+        </div>
+        <div class="solution-content">
+            <h4><i class="fa-solid fa-gavel"></i> Statutory Evaluation &amp; Step-by-Step Solution:</h4>
+            
+            <div class="grid grid-2">
+                <div>
+                    <h5>(a) Eligibility Evaluation of Mr. Vijay</h5>
+                    <ul class="styled-list">
+                        <li><strong>Returned Income Ceiling:</strong> Returned total income = <strong>₹28,00,000</strong> (does not exceed the ceiling of ₹50,00,000). &check;</li>
+                        <li><strong>Variation Ceiling:</strong> Enhancement/variation = <strong>₹5,00,000</strong> (does not exceed the ceiling of ₹10,00,000). &check;</li>
+                        <li><strong>Search / Survey / DTAA:</strong> Not based on search, survey, or DTAA information. &check;</li>
+                        <li><strong>Specified Conditions (No Prosecution):</strong> No order of detention, and no prosecution proceedings initiated under any special Act or Chapter XXII. &check;</li>
+                        <li><strong>Impact of Penalty u/s 450:</strong> Non-levy of penalty under income-tax law is <strong>NOT a specified condition</strong>. Therefore, the mere levy of penalty under Section 450 does not disqualify him! &check;</li>
+                        <li><strong>Conclusion:</strong> Mr. Vijay is <strong>FULLY ELIGIBLE</strong> to file an application before the DRC.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>(b), (c) &amp; (d) Procedural &amp; Treaty Consequences</h5>
+                    <ul class="styled-list">
+                        <li><strong>(b) Statutory Time Limit [Rule 197]:</strong> Mr. Vijay must file his electronic application before the DRC within <strong>one month from the date of receipt of the specified order</strong>. Since the order was received on 26.11.2028, the application must be filed on or before <strong>25.12.2028 / 26.12.2028</strong>.</li>
+                        <li><strong>(c) Right of Appeal Barred:</strong> Under Section 379 read with Rule 197, once a modified order is passed in conformity with the directions of the DRC, <strong>NO APPEAL OR REVISION LIES AGAINST SUCH ORDER</strong> before the Commissioner (Appeals), ITAT, or High Court. Mr. Vijay cannot appeal against the order of the DRC.</li>
+                        <li><strong>(d) Impact of DTAA Information:</strong> If the assessment order is based on information received under a DTAA under Section 159, the order is <strong>expressly excluded from being a "specified order"</strong>. In that case, Mr. Vijay will be <strong>strictly disqualified</strong> from applying before the DRC.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CHAPTER FOOTER & NAVIGATION -->
+                <footer style="margin-top: 64px; padding-top: 32px; border-top: 2px solid var(--slate-100);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+                        <div>
+                            <a href="appeals_revision.html" style="display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; font-size: 14px;">
+                                <i class="fa-solid fa-arrow-left"></i> Previous: Chapter 16 - Appeals &amp; Revision
+                            </a>
+                        </div>
+                        <div>
+                            <a href="../notes/dtnotes.html" style="display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; font-size: 14px;">
+                                Chapter Index: Direct Tax Master Portal <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 40px; color: var(--slate-400); font-size: 13px;">
+                        <p>&copy; 2026 Calcium Notes &bull; CA Final Direct Tax Master Portal &bull; Updated for Finance Act, 2026 &amp; Income-tax Act, 2025.</p>
+                        <p style="font-size: 11.5px; margin-top: 4px;">Strictly for educational review and exam preparation based on the ICAI Study Material.</p>
+                    </div>
+                </footer>
+
+            </div> <!-- End reading-container -->
+        </main>
+    </div> <!-- End page-wrapper -->
+
+    <!-- Interactive JavaScript -->
+    <script>
+        (function() {
+            // 1. Reading Progress Bar
+            const progressBar = document.getElementById('reading-progress');
+            window.addEventListener('scroll', () => {
+                const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = totalHeight > 0 ? (window.scrollY / totalHeight) * 100 : 0;
+                if (progressBar) {
+                    progressBar.style.width = progress + '%';
+                }
+            });
+
+            // 2. Sidebar Search Filter
+            const searchInput = document.getElementById('sidebar-search');
+            const menuLinks = document.querySelectorAll('.sidebar-link');
+            const sectionTitles = document.querySelectorAll('.sidebar-section-title');
+
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    const query = this.value.toLowerCase().trim();
+                    menuLinks.forEach(link => {
+                        const text = link.textContent.toLowerCase();
+                        const href = link.getAttribute('href').toLowerCase();
+                        const match = text.includes(query) || href.includes(query);
+                        link.parentElement.style.display = match ? 'block' : 'none';
+                    });
+
+                    sectionTitles.forEach(title => {
+                        let next = title.nextElementSibling;
+                        let anyVisible = false;
+                        while (next && !next.classList.contains('sidebar-section-title')) {
+                            if (next.style.display !== 'none') {
+                                anyVisible = true;
+                                break;
+                            }
+                            next = next.nextElementSibling;
+                        }
+                        title.style.display = anyVisible || query === '' ? 'block' : 'none';
+                    });
+                });
+            }
+
+            // 3. Active Link Highlighting on Scroll
+            const sections = document.querySelectorAll('section[id], div[id^="ill-"], div[id^="tyk-"]');
+            const observerOptions = {
+                root: null,
+                rootMargin: '-80px 0px -70% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        menuLinks.forEach(link => {
+                            if (link.getAttribute('href') === '#' + id) {
+                                menuLinks.forEach(l => l.classList.remove('active'));
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(sec => observer.observe(sec));
+
+            // 4. Keyboard Shortcuts
+            document.addEventListener('keydown', (e) => {
+                if (e.key === '/' && document.activeElement !== searchInput) {
+                    e.preventDefault();
+                    if (searchInput) {
+                        searchInput.focus();
+                    }
+                } else if (e.key === 'Escape' && document.activeElement === searchInput) {
+                    searchInput.value = '';
+                    searchInput.dispatchEvent(new Event('input'));
+                    searchInput.blur();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

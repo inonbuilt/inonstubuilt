@@ -1,0 +1,2375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 16: Appeals and Revision (Sections 356 to 378) | CA Final Direct Tax Laws | AY 2025-26 &amp; AY 2026-27</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-dark: #0f172a;
+            --primary-light: #3b82f6;
+            --accent: #8b5cf6;
+            --accent-light: #ede9fe;
+            --success: #059669;
+            --warning: #d97706;
+            --danger: #dc2626;
+            --slate-50: #f8fafc;
+            --slate-100: #f1f5f9;
+            --slate-200: #e2e8f0;
+            --slate-300: #cbd5e1;
+            --slate-400: #94a3b8;
+            --slate-600: #475569;
+            --slate-700: #334155;
+            --slate-800: #1e293b;
+            --slate-900: #0f172a;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--slate-800);
+            background-color: var(--slate-50);
+            line-height: 1.6;
+        }
+
+        /* Reading Progress Bar */
+        #reading-progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            z-index: 1000;
+        }
+
+        #reading-progress {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #10b981);
+            transition: width 0.1s ease-out;
+        }
+
+        .page-wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 320px;
+            background-color: #ffffff;
+            border-right: 1px solid var(--border-color);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            overflow-y: auto;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-header {
+            padding: 24px 20px 16px 20px;
+            border-bottom: 1px solid var(--slate-100);
+        }
+
+        .sidebar-title {
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sidebar-subtitle {
+            font-size: 12px;
+            color: var(--slate-600);
+            margin-top: 4px;
+            font-weight: 500;
+        }
+
+        .sidebar-search-box {
+            padding: 12px 20px;
+            border-bottom: 1px solid var(--slate-100);
+        }
+
+        .search-input-wrapper {
+            position: relative;
+        }
+
+        .search-input-wrapper i {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--slate-400);
+            font-size: 13px;
+        }
+
+        .sidebar-search-input {
+            width: 100%;
+            padding: 8px 12px 8px 34px;
+            border-radius: 8px;
+            border: 1px solid var(--slate-200);
+            font-size: 13px;
+            background: var(--slate-50);
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .sidebar-search-input:focus {
+            background: #ffffff;
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .sidebar-menu {
+            padding: 16px 12px;
+            list-style: none;
+            flex-grow: 1;
+        }
+
+        .sidebar-section-title {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--slate-400);
+            padding: 12px 12px 6px 12px;
+        }
+
+        .sidebar-item {
+            margin-bottom: 3px;
+        }
+
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 12px;
+            border-radius: 8px;
+            color: var(--slate-700);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .sidebar-link:hover {
+            background-color: var(--slate-100);
+            color: var(--primary);
+        }
+
+        .sidebar-link.active {
+            background-color: rgba(59, 130, 246, 0.1);
+            color: var(--primary-light);
+            font-weight: 700;
+        }
+
+        .sidebar-link i {
+            font-size: 14px;
+            width: 18px;
+            text-align: center;
+            color: var(--slate-400);
+        }
+
+        .sidebar-link.active i {
+            color: var(--primary-light);
+        }
+
+        .sidebar-footer {
+            padding: 16px 20px;
+            border-top: 1px solid var(--slate-100);
+            font-size: 12px;
+            color: var(--slate-600);
+        }
+
+        /* Main Content Container */
+        .main-content {
+            margin-left: 320px;
+            flex-grow: 1;
+            padding: 40px;
+            max-width: 1200px;
+        }
+
+        .reading-container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        /* Navigation Header */
+        .breadcrumb-nav {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--slate-600);
+            margin-bottom: 24px;
+        }
+
+        .breadcrumb-nav a {
+            color: var(--primary-light);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .chapter-header-box {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            color: #ffffff;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chapter-header-box::after {
+            content: "";
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.25) 0%, rgba(255, 255, 255, 0) 70%);
+            border-radius: 50%;
+        }
+
+        .chapter-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            backdrop-filter: blur(4px);
+        }
+
+        .chapter-title {
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 14px;
+        }
+
+        .chapter-desc {
+            font-size: 15px;
+            color: #cbd5e1;
+            line-height: 1.6;
+            max-width: 800px;
+        }
+
+        /* Section Styling */
+        .chapter-content-section {
+            margin-bottom: 50px;
+            scroll-margin-top: 30px;
+        }
+
+        .section-header {
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--slate-200);
+        }
+
+        .section-tag {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--primary-light);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 4px;
+        }
+
+        .section-header h2 {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin-bottom: 6px;
+        }
+
+        .section-meta {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 11.5px;
+            font-weight: 600;
+            background: var(--slate-100);
+            color: var(--slate-700);
+            border: 1px solid var(--slate-200);
+        }
+
+        .badge-primary {
+            background: rgba(59, 130, 246, 0.1);
+            color: #1d4ed8;
+            border-color: rgba(59, 130, 246, 0.2);
+        }
+
+        .badge-success {
+            background: rgba(16, 185, 129, 0.1);
+            color: #047857;
+            border-color: rgba(16, 185, 129, 0.2);
+        }
+
+        .badge-warning {
+            background: rgba(245, 158, 11, 0.1);
+            color: #b45309;
+            border-color: rgba(245, 158, 11, 0.2);
+        }
+
+        .badge-danger {
+            background: rgba(239, 68, 68, 0.1);
+            color: #b91c1c;
+            border-color: rgba(239, 68, 68, 0.2);
+        }
+
+        /* Cards & Content Blocks */
+        .card {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card h4 {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--slate-800);
+            margin: 16px 0 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Stat Grid */
+        .grid {
+            display: grid;
+            gap: 18px;
+        }
+
+        .grid-2 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .grid-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .grid-4 {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @media (max-width: 868px) {
+            .grid-2, .grid-3, .grid-4 {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                display: none;
+            }
+            .main-content {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
+
+        .stat-box {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            border-radius: 10px;
+            padding: 18px;
+            transition: all 0.2s;
+        }
+
+        .stat-box:hover {
+            border-color: var(--primary-light);
+            background: #ffffff;
+            box-shadow: 0 4px 12px -2px rgba(59, 130, 246, 0.12);
+        }
+
+        .stat-num {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--slate-700);
+            margin-bottom: 6px;
+        }
+
+        .stat-box p {
+            font-size: 12px;
+            color: var(--slate-600);
+            line-height: 1.5;
+        }
+
+        .panel {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        /* Table Styling */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 16px 0;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            text-align: left;
+            background: #ffffff;
+        }
+
+        .data-table th {
+            background-color: var(--slate-100);
+            color: var(--slate-800);
+            font-weight: 700;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+            white-space: nowrap;
+        }
+
+        .data-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--slate-200);
+            vertical-align: top;
+            line-height: 1.5;
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .data-table tr:hover {
+            background-color: rgba(248, 250, 252, 0.8);
+        }
+
+        /* Callout & Alerts */
+        .callout {
+            border-left: 4px solid var(--primary-light);
+            background: rgba(59, 130, 246, 0.04);
+            border-radius: 0 8px 8px 0;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+
+        .callout-header {
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--primary-dark);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .callout-warning {
+            border-left-color: var(--warning);
+            background: rgba(245, 158, 11, 0.05);
+        }
+
+        .callout-warning .callout-header {
+            color: var(--warning);
+        }
+
+        .callout-danger {
+            border-left-color: var(--danger);
+            background: rgba(239, 68, 68, 0.05);
+        }
+
+        .callout-danger .callout-header {
+            color: var(--danger);
+        }
+
+        .callout-info {
+            border-left-color: #0284c7;
+            background: rgba(2, 132, 199, 0.05);
+        }
+
+        .callout-info .callout-header {
+            color: #0284c7;
+        }
+
+        .alert {
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 14px 0;
+            font-size: 13px;
+        }
+
+        .alert-info {
+            background-color: #f0f9ff;
+            border: 1px solid #bae6fd;
+            color: #0369a1;
+        }
+
+        .alert-success {
+            background-color: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            color: #15803d;
+        }
+
+        .alert-danger {
+            background-color: #fef2f2;
+            border: 1px solid #fecaca;
+            color: #b91c1c;
+        }
+
+        .alert-title {
+            font-weight: 700;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Styled Lists */
+        .styled-list {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        .styled-list li {
+            margin-bottom: 6px;
+            font-size: 13.5px;
+            line-height: 1.55;
+        }
+
+        /* Workflows */
+        .workflow-step {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 14px;
+        }
+
+        .step-num {
+            width: 28px;
+            height: 28px;
+            background: var(--primary);
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 13px;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            flex-grow: 1;
+            font-size: 13.5px;
+        }
+
+        .step-content strong {
+            display: block;
+            margin-bottom: 2px;
+            color: var(--primary-dark);
+        }
+
+        /* Practical Problem Card */
+        .practical-card {
+            border-left: 4px solid var(--accent);
+            background: #ffffff;
+            margin-bottom: 24px;
+        }
+
+        .practical-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--slate-100);
+            padding-bottom: 10px;
+        }
+
+        .q-badge {
+            background: var(--accent);
+            color: #ffffff;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .problem-statement {
+            background: var(--slate-50);
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 13.5px;
+            margin-bottom: 16px;
+            border: 1px solid var(--slate-200);
+            line-height: 1.6;
+        }
+
+        .solution-content {
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div id="reading-progress-container">
+        <div id="reading-progress"></div>
+    </div>
+
+    <div class="page-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-title">
+                    <i class="fa-solid fa-scale-unbalanced-flip"></i> Chapter 16
+                </div>
+                <div class="sidebar-subtitle">Appeals &amp; Revision (Sections 356 to 378)</div>
+            </div>
+
+            <div class="sidebar-search-box">
+                <div class="search-input-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="sidebar-search" class="sidebar-search-input" placeholder="Search Chapter 16...">
+                </div>
+            </div>
+
+            <ul class="sidebar-menu">
+                <li class="sidebar-section-title">Appellate Framework</li>
+                <li class="sidebar-item">
+                    <a href="#sec-overview" class="sidebar-link">
+                        <i class="fa-solid fa-sitemap"></i> 1. Statutory Architecture
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-appeal-cit-appeals" class="sidebar-link">
+                        <i class="fa-solid fa-user-tie"></i> 2. Appeals to CIT(Appeals)
+                    </a>
+                </li>
+                
+                <li class="sidebar-section-title">Appellate Tribunal (ITAT)</li>
+                <li class="sidebar-item">
+                    <a href="#sec-appeal-itat" class="sidebar-link">
+                        <i class="fa-solid fa-landmark"></i> 3. Appeals to ITAT
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-stay-demand-itat" class="sidebar-link">
+                        <i class="fa-solid fa-hand-holding-dollar"></i> 4. Stay of Demand by ITAT
+                    </a>
+                </li>
+
+                <li class="sidebar-section-title">Higher Courts</li>
+                <li class="sidebar-item">
+                    <a href="#sec-appeal-high-court" class="sidebar-link">
+                        <i class="fa-solid fa-building-columns"></i> 5. Appeals to High Court
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-appeal-supreme-court" class="sidebar-link">
+                        <i class="fa-solid fa-gavel"></i> 6. Supreme Court Appeals
+                    </a>
+                </li>
+
+                <li class="sidebar-section-title">Revenue Policy &amp; Revisions</li>
+                <li class="sidebar-item">
+                    <a href="#sec-revenue-appeal-policy" class="sidebar-link">
+                        <i class="fa-solid fa-arrow-trend-up"></i> 7. Revenue Monetary Limits
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-repetitive-appeals" class="sidebar-link">
+                        <i class="fa-solid fa-repeat"></i> 8. Avoiding Repetitive Appeals
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-revision-orders" class="sidebar-link">
+                        <i class="fa-solid fa-pen-to-square"></i> 9. Revision (Secs 377 &amp; 378)
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#sec-doctrine-merger" class="sidebar-link">
+                        <i class="fa-solid fa-code-merge"></i> 10. Doctrine of Merger
+                    </a>
+                </li>
+
+                <li class="sidebar-section-title">Exam Practice</li>
+                <li class="sidebar-item">
+                    <a href="#sec-tyk" class="sidebar-link">
+                        <i class="fa-solid fa-graduation-cap"></i> 11. Test Your Knowledge (1-12)
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <i class="fa-solid fa-shield-halved"></i> Income-tax Act, 2025 &amp; FA 2026
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="reading-container">
+                <!-- Breadcrumbs -->
+                <nav class="breadcrumb-nav">
+                    <a href="../../index.html"><i class="fa-solid fa-house"></i> Home</a>
+                    <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i>
+                    <a href="../notes/dtnotes.html">Direct Tax Master</a>
+                    <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i>
+                    <span>Chapter 16: Appeals &amp; Revision</span>
+                </nav>
+
+                <!-- Chapter Banner -->
+                <header class="chapter-header-box">
+                    <span class="chapter-tag"><i class="fa-solid fa-gavel"></i> Statutory Adjudication Code</span>
+                    <h1 class="chapter-title">Chapter 16: Appeals, Revision &amp; Dispute Remedies</h1>
+                    <p class="chapter-desc">A comprehensive master treatise covering the four-tier appellate hierarchy (CIT(A), ITAT, High Court, Supreme Court), stay of demand jurisprudence, CBDT monetary thresholds for revenue appeals, anti-repetitive appeal mechanisms, revisions under Sections 377 &amp; 378, and the doctrine of merger under the Income-tax Act, 2025 and Finance Act, 2026.</p>
+                </header>
+
+
+<!-- ========================================================================= -->
+<!-- SECTION 1: STATUTORY ARCHITECTURE & APPELLATE HIERARCHY                    -->
+<!-- ========================================================================= -->
+<section id="sec-overview" class="chapter-content-section">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-sitemap"></i> Appellate Architecture</span>
+        <h2>1. Statutory Architecture &amp; Hierarchy of Tax Appeals</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-book"></i> Income-tax Act, 2025 &amp; Finance Act, 2026</span>
+            <span class="badge"><i class="fa-solid fa-code-compare"></i> Cross-Reference: Sections 246A to 264 (1961 Act)</span>
+            <span class="badge"><i class="fa-solid fa-scale-balanced"></i> 4-Tier Adjudication Hierarchy</span>
+        </div>
+    </div>
+
+    <div class="card stat-card">
+        <h3><i class="fa-solid fa-diagram-project"></i> The Four-Tier Appellate Hierarchy in Direct Taxes</h3>
+        <p>The Income-tax law provides a comprehensive, multi-tiered hierarchy of dispute resolution designed to ensure that taxpayers have full access to natural justice and statutory remedies against arbitrary or erroneous tax determinations. Under the <strong>Income-tax Act, 2025</strong>, the appellate machinery is structured into four distinct levels:</p>
+        
+        <div class="grid grid-4" style="margin-top: 15px;">
+            <div class="stat-box">
+                <div class="stat-num"><i class="fa-solid fa-user-tie"></i> Level 1</div>
+                <div class="stat-label">CIT(Appeals) / JCIT(A)</div>
+                <p><strong>First Appellate Authority</strong> [Secs 356-360]. Decides questions of both fact and law. Plenary powers to confirm, reduce, enhance, or annul. Remand strictly barred.</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num"><i class="fa-solid fa-landmark"></i> Level 2</div>
+                <div class="stat-label">Appellate Tribunal (ITAT)</div>
+                <p><strong>Second Appellate Authority</strong> [Secs 361-364]. Highest and final fact-finding body. Independent judicial tribunal under Ministry of Law &amp; Justice.</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num"><i class="fa-solid fa-building-columns"></i> Level 3</div>
+                <div class="stat-label">High Court</div>
+                <p><strong>Judicial Review</strong> [Secs 365-366]. Appeal lies <em>only on a substantial question of law</em> within 120 days. No jurisdiction over pure questions of fact.</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num"><i class="fa-solid fa-gavel"></i> Level 4</div>
+                <div class="stat-label">Supreme Court</div>
+                <p><strong>Apex Constitutional Court</strong> [Secs 367-368]. Appeal on Certificate of Fitness granted by High Court or Special Leave Petition (SLP) under Article 136.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3><i class="fa-solid fa-table-columns"></i> Comparative Statutory Mapping: 2025 Act vs 1961 Act</h3>
+        <p>A quick comparative reference table illustrating the corresponding sections between the two enactments:</p>
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Subject Matter / Appellate Mechanism</th>
+                        <th>Income-tax Act, 2025</th>
+                        <th>Income-tax Act, 1961</th>
+                        <th>Key Statutory Highlights &amp; Scope</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Appealable Orders before CIT(A) / JCIT(A)</strong></td>
+                        <td><span class="badge badge-primary">Section 356</span></td>
+                        <td>Section 246A</td>
+                        <td>Appeals against assessment, reassessment, penalty, and rectification orders.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Form of Appeal, Limitation &amp; Fees to CIT(A)</strong></td>
+                        <td><span class="badge badge-primary">Section 357</span></td>
+                        <td>Section 249</td>
+                        <td>30-day limitation; Form 35; pre-payment of admitted tax; fees ₹250 to ₹1,000.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Production of Additional Evidence before CIT(A)</strong></td>
+                        <td><span class="badge badge-primary">Section 358</span></td>
+                        <td>Rule 46A</td>
+                        <td>4 exceptional circumstances; mandatory opportunity to AO to examine evidence.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Procedure, Hearing &amp; Powers of CIT(Appeals)</strong></td>
+                        <td><span class="badge badge-primary">Section 359</span></td>
+                        <td>Sections 250 &amp; 251</td>
+                        <td>Powers to confirm, reduce, enhance, annul. <strong>Strict bar on remand/set aside</strong> to AO.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Faceless Appeal Scheme (NFAC Architecture)</strong></td>
+                        <td><span class="badge badge-primary">Section 360</span></td>
+                        <td>Section 250(6B)</td>
+                        <td>National Faceless Appeal Centre; electronic hearing via video conferencing.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Constitution &amp; Benches of Appellate Tribunal (ITAT)</strong></td>
+                        <td><span class="badge badge-primary">Section 361</span></td>
+                        <td>Section 252</td>
+                        <td>Judicial &amp; Accountant Members; President, Vice-Presidents; Ministry of Law.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Orders Appealable to ITAT &amp; Cross-Objections</strong></td>
+                        <td><span class="badge badge-primary">Section 362</span></td>
+                        <td>Section 253</td>
+                        <td>60 days limitation; Form 36; Cross-objections in Form 36A (30 days, NIL fee).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Orders of ITAT &amp; Finality of Facts</strong></td>
+                        <td><span class="badge badge-primary">Section 363</span></td>
+                        <td>Section 254</td>
+                        <td>Final fact-finding authority; Rectification within 6 months u/s 363(2) (Old 254(2)).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Procedure of ITAT, Quorum &amp; Stay of Demand</strong></td>
+                        <td><span class="badge badge-primary">Section 364</span></td>
+                        <td>Section 255 &amp; 254(2A)</td>
+                        <td>Division/Single Bench; 20% pre-deposit for stay; max stay period 365 days.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Appeals to High Court on Substantial Question of Law</strong></td>
+                        <td><span class="badge badge-primary">Section 365 &amp; 366</span></td>
+                        <td>Sections 260A &amp; 260B</td>
+                        <td>120 days limitation; Bench of $\ge 2$ Judges; no review power on merits.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Appeals to the Supreme Court</strong></td>
+                        <td><span class="badge badge-primary">Section 367 &amp; 368</span></td>
+                        <td>Sections 261 &amp; 262</td>
+                        <td>Certificate of fitness under Art 134A or Special Leave Petition (Art 136).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Revenue Appeal Policy &amp; Monetary Limits</strong></td>
+                        <td><span class="badge badge-primary">Section 373</span></td>
+                        <td>Section 268A</td>
+                        <td>CBDT limits: ITAT ₹50L, HC ₹1Cr, SC ₹2Cr. Non-filing not a precedent bar.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Avoiding Repetitive Appeals (Assessee / Revenue)</strong></td>
+                        <td><span class="badge badge-primary">Sections 375 &amp; 376</span></td>
+                        <td>Sections 158A &amp; 158AB</td>
+                        <td>Form 8 declaration by assessee; deferment of revenue appeal by Collegium.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Revision of Orders Prejudicial to Revenue</strong></td>
+                        <td><span class="badge badge-primary">Section 377</span></td>
+                        <td>Section 263</td>
+                        <td>Order erroneous and prejudicial; 2-year limitation from end of FY.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Revision of Other Orders on Application by Assessee</strong></td>
+                        <td><span class="badge badge-primary">Section 378</span></td>
+                        <td>Section 264</td>
+                        <td>Suo motu or on application; 1-year limitation; waiver of appeal right; ₹500 fee.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- SECTION 2: APPEALS BEFORE CIT(APPEALS) & JCIT(APPEALS) (SECS 356-360)     -->
+<!-- ========================================================================= -->
+<section id="sec-appeal-cit-appeals" class="chapter-content-section">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-user-tie"></i> First Appellate Stage</span>
+        <h2>2. Appeals before Commissioner (Appeals) &amp; Joint Commissioner (Appeals)</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-file-invoice"></i> Orders Appealable: Section 356 (Old 246A)</span>
+            <span class="badge"><i class="fa-solid fa-clock"></i> Procedure &amp; Limitation: Section 357 (Old 249)</span>
+            <span class="badge"><i class="fa-solid fa-gavel"></i> Powers: Section 359 (Old 251)</span>
+        </div>
+    </div>
+
+    <!-- Appealable Orders Section 356 -->
+    <div class="card">
+        <h3><i class="fa-solid fa-list-check"></i> 1. Orders Appealable before CIT(Appeals) / JCIT(A) [Section 356 / Old 246A]</h3>
+        <p>Any assessee aggrieved by any of the following statutory orders passed by an Assessing Officer may appeal to the Joint Commissioner (Appeals) or Commissioner (Appeals):</p>
+        
+        <div class="grid grid-2">
+            <div>
+                <h4><i class="fa-solid fa-file-circle-check"></i> Assessment &amp; Processing Orders</h4>
+                <ul class="styled-list">
+                    <li>An intimation sent under <strong>Section 270(1)</strong> (Old 143(1)) where the assessee objects to the adjustments made.</li>
+                    <li>A regular scrutiny assessment order passed under <strong>Section 270(12)</strong> (Old 143(3)).</li>
+                    <li>A Best Judgment Assessment order passed under <strong>Section 271</strong> (Old 144).</li>
+                    <li>A reassessment or recomputation order passed under <strong>Section 279 / 280</strong> (Old 147).</li>
+                    <li>A Search Block Assessment order passed under <strong>Section 294</strong> (Old 158BC).</li>
+                    <li>A rectification order passed under <strong>Section 287</strong> (Old 154) having the effect of enhancing liability or reducing refund.</li>
+                </ul>
+            </div>
+            <div>
+                <h4><i class="fa-solid fa-file-circle-exclamation"></i> Other Statutory &amp; Penalty Orders</h4>
+                <ul class="styled-list">
+                    <li>An order treating the assessee as an <strong>assessee in default</strong> for failure to deduct TDS or pay TCS under Section 389/393 (Old 201(1) / 206C(6A)).</li>
+                    <li>An order determining liability on legal representative or successor in business under Section 314.</li>
+                    <li>An order imposing penalty under <strong>Chapter XXII</strong> (e.g., Section 467 for PAN default, Section 460 for underreporting of income u/s 270A).</li>
+                    <li>Any order passed by the Central Processing Centre (CPC) or NaFAC.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="alert alert-info" style="margin-top: 15px;">
+            <div class="alert-title"><i class="fa-solid fa-users"></i> Jurisdiction of Joint Commissioner (Appeals) [JCIT(A)]</div>
+            <p>To expedite disposal of small and non-complex appeals, the CBDT has empowered the <strong>Joint Commissioner (Appeals)</strong> to handle appeals arising from orders of AO below the rank of Joint Commissioner, excluding cases involving search, seizure, or complex faceless transfer pricing issues.</p>
+        </div>
+    </div>
+
+    <!-- Limitation, Form & Fees Section 357 -->
+    <div class="card">
+        <h3><i class="fa-solid fa-stopwatch"></i> 2. Form of Appeal, Statutory Limitation &amp; Fees [Section 357 / Old 249]</h3>
+        
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Statutory Requirement</th>
+                        <th>Prescribed Rule / Value</th>
+                        <th>Operative Details &amp; Legal Nuances</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Prescribed Form</strong></td>
+                        <td><span class="badge badge-primary">Form No. 35</span></td>
+                        <td>Filed electronically online through the e-filing portal, accompanied by Statement of Facts and Grounds of Appeal.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Statutory Limitation</strong></td>
+                        <td><span class="badge badge-danger">30 Days</span></td>
+                        <td>
+                            From the date of service of the <strong>Notice of Demand</strong> relating to the assessment or penalty, or date of communication of the order in other cases.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Condonation of Delay</strong></td>
+                        <td>Section 357(3)</td>
+                        <td>CIT(A) may admit a belated appeal if he is satisfied that the appellant had <strong>sufficient cause</strong> for not presenting it within time.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pre-Condition: Admitted Tax</strong></td>
+                        <td>Section 357(4)</td>
+                        <td>
+                            • If return filed: Assessee must pay the <strong>tax due on the returned income</strong>.<br>
+                            • If no return filed: Assessee must pay an amount equal to the <strong>advance tax payable</strong> (CIT(A) may waive upon application for good and sufficient reasons).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Prescribed Appeal Fees</strong></td>
+                        <td>Section 357(1)</td>
+                        <td>
+                            • Assessed Total Income $\le ₹1,00,000$: <strong>₹250</strong><br>
+                            • Assessed Total Income $> ₹1,00,000$ but $\le ₹2,00,000$: <strong>₹500</strong><br>
+                            • Assessed Total Income $> ₹2,00,000$: <strong>₹1,000</strong><br>
+                            • Any other matter (penalty, TDS default, intimation): <strong>₹250</strong>.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Additional Evidence Section 358 -->
+    <div class="card">
+        <h3><i class="fa-solid fa-folder-plus"></i> 3. Production of Additional Evidence before CIT(A) [Section 358 / Rule 46A]</h3>
+        <p>An appellant is not entitled to produce before the Commissioner (Appeals) any evidence, whether oral or documentary, other than the evidence produced by him during the assessment proceedings, <strong>EXCEPT in the following four situations</strong>:</p>
+
+        <div class="grid grid-2">
+            <div class="panel">
+                <h4><i class="fa-solid fa-triangle-exclamation" style="color: #f59e0b;"></i> The 4 Exceptional Gateways</h4>
+                <ol class="styled-list">
+                    <li>Where the Assessing Officer <strong>refused to admit evidence</strong> which ought to have been admitted;</li>
+                    <li>Where the appellant was prevented by <strong>sufficient cause</strong> from producing the evidence called upon by the AO;</li>
+                    <li>Where the appellant was prevented by <strong>sufficient cause</strong> from producing any evidence relevant to any ground of appeal;</li>
+                    <li>Where the AO passed the order <strong>without giving sufficient opportunity</strong> to the appellant to adduce evidence (e.g. Best Judgment u/s 271).</li>
+                </ol>
+            </div>
+            <div class="panel">
+                <h4><i class="fa-solid fa-scale-balanced" style="color: #3b82f6;"></i> Mandatory Opportunity to the Assessing Officer</h4>
+                <p>No additional evidence shall be admitted under Section 358 unless the Commissioner (Appeals) records in writing the reasons for its admission.</p>
+                <div class="alert alert-warning">
+                    <strong>Audi Alteram Partem:</strong> The CIT(A) <strong>shall NOT</strong> take such evidence into account without giving the Assessing Officer a reasonable opportunity:
+                    <br>&bull; to examine the evidence or document or to cross-examine any witness; and
+                    <br>&bull; to produce any evidence or document in rebuttal.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Powers of CIT(Appeals) Section 359 -->
+    <div class="card" id="sec-359">
+        <h3><i class="fa-solid fa-gavel"></i> 4. Hearing &amp; Powers of Commissioner (Appeals) [Section 359 / Old 251]</h3>
+        <p>In disposing of an appeal, the Commissioner (Appeals) has plenary adjudicatory powers under Section 359:</p>
+
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Nature of Appeal Proceeding</th>
+                        <th>Statutory Powers under Section 359</th>
+                        <th>Strict Statutory Limitations &amp; Prohibitions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Appeal Against Assessment Order</strong></td>
+                        <td>
+                            The CIT(A) may:
+                            <br>• <strong>Confirm</strong> the assessment;
+                            <br>• <strong>Reduce</strong> the assessment;
+                            <br>• <strong>Enhance</strong> the assessment; OR
+                            <br>• <strong>Annul</strong> the assessment.
+                        </td>
+                        <td style="background-color: rgba(239, 68, 68, 0.05); color: #dc2626; font-weight: 700;">
+                            <i class="fa-solid fa-ban"></i> STRICT BAR ON REMAND / SET ASIDE:
+                            <br>The CIT(A) has NO POWER to set aside the assessment or refer the case back to the Assessing Officer for making a fresh assessment!
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Appeal Against Penalty Order</strong></td>
+                        <td>
+                            The CIT(A) may:
+                            <br>• <strong>Confirm</strong> the penalty;
+                            <br>• <strong>Cancel</strong> the penalty;
+                            <br>• <strong>Reduce</strong> the penalty; OR
+                            <br>• <strong>Enhance</strong> the penalty.
+                        </td>
+                        <td>
+                            Cannot remand penalty proceedings to AO.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>In Any Other Appeal</strong></td>
+                        <td>
+                            The CIT(A) may pass such orders as he thinks fit.
+                        </td>
+                        <td>
+                            Orders must be in writing stating points for determination and reasons for decision.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="grid grid-2" style="margin-top: 15px;">
+            <div class="panel">
+                <h4><i class="fa-solid fa-arrow-trend-up" style="color: #ef4444;"></i> Safeguard for Enhancement</h4>
+                <p>Under <strong>Section 359(2)</strong>, the Commissioner (Appeals) <strong>shall NOT enhance an assessment or a penalty</strong> unless the appellant has been given a <strong>reasonable opportunity of showing cause</strong> against such proposed enhancement.</p>
+            </div>
+            <div class="panel">
+                <h4><i class="fa-solid fa-graduation-cap" style="color: #8b5cf6;"></i> Landmark Supreme Court Doctrines on Powers of CIT(A)</h4>
+                <ul class="styled-list">
+                    <li><strong>CIT v. Kanpur Coal Syndicate (1964) 53 ITR 225 (SC):</strong> The powers of the first appellate authority are <em>co-extensive and co-terminus with those of the Assessing Officer</em>. He can do what the AO could have done and can also direct the AO to do what he failed to do.</li>
+                    <li><strong>CIT v. Shapoorji Pallonji Mistry (1962) 44 ITR 891 (SC):</strong> The power of enhancement is restricted to the sources of income which were subject matter of assessment. The CIT(A) <strong>cannot discover a completely new source of income</strong> not considered by the AO in the assessment order.</li>
+                    <li><strong>CIT v. Nirbheram Daluram (1997) 224 ITR 610 (SC):</strong> Reaffirmed that the appellate commissioner has plenary jurisdiction over the entire assessment order and can examine all aspects arising from the returns and books.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ========================================================================= -->
+<!-- SECTION 3: APPEALS TO APPELLATE TRIBUNAL (ITAT) (SECS 361-363)            -->
+<!-- ========================================================================= -->
+<section id="sec-appeal-itat" class="chapter-content-section">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-landmark"></i> Second Appellate Stage</span>
+        <h2>3. Appeals to the Income Tax Appellate Tribunal (ITAT)</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-sitemap"></i> Constitution: Section 361 (Old 252)</span>
+            <span class="badge"><i class="fa-solid fa-file-invoice"></i> Appealable Orders: Section 362 (Old 253)</span>
+            <span class="badge"><i class="fa-solid fa-stamp"></i> Tribunal Orders: Section 363 (Old 254)</span>
+        </div>
+    </div>
+
+    <!-- Constitution of ITAT Section 361 -->
+    <div class="card" id="sec-361">
+        <h3><i class="fa-solid fa-building-columns"></i> 1. Constitution &amp; Character of the Appellate Tribunal [Section 361]</h3>
+        <p>The Income Tax Appellate Tribunal (ITAT) is the <strong>second appellate authority</strong> in the tax hierarchy. It is an independent quasi-judicial institution constituted by the Central Government, functioning under the administrative control of the <strong>Ministry of Law and Justice</strong> (not the Ministry of Finance / Department of Revenue):</p>
+        
+        <div class="grid grid-3">
+            <div class="panel">
+                <h4><i class="fa-solid fa-scale-balanced"></i> Judicial Members</h4>
+                <p>Appointed from persons who have held a judicial office for at least 10 years or advocates who have practiced for at least 10 years.</p>
+            </div>
+            <div class="panel">
+                <h4><i class="fa-solid fa-calculator"></i> Accountant Members</h4>
+                <p>Appointed from practicing Chartered Accountants with at least 10 years of practice or members of the Indian Revenue Service (IRS) who have served as CIT/PCIT.</p>
+            </div>
+            <div class="panel">
+                <h4><i class="fa-solid fa-crown"></i> President &amp; Benches</h4>
+                <p>Headed by the President (a sitting or retired High Court Judge or senior Judicial Member) who allocates work and constitutes Benches across India.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Appealable Orders & Cross-Objections Section 362 -->
+    <div class="card" id="sec-362">
+        <h3><i class="fa-solid fa-list-ol"></i> 2. Orders Appealable to ITAT &amp; Cross-Objections [Section 362 / Old 253]</h3>
+        <p>Under Section 362, an appeal lies to the Appellate Tribunal against any of the following statutory orders:</p>
+
+        <div class="grid grid-2">
+            <div>
+                <h4><i class="fa-solid fa-user-check"></i> Orders Appealable by Assessee / Revenue</h4>
+                <ul class="styled-list">
+                    <li>An order passed by the <strong>Commissioner (Appeals) or Joint Commissioner (Appeals)</strong> under Section 359 (Old 250/251) or Section 287 (rectification).</li>
+                    <li>An order passed by the <strong>Principal Commissioner or Commissioner</strong> under Section 377 (Old 263 - revision prejudicial to Revenue).</li>
+                    <li>An order passed by the Assessing Officer pursuant to the directions of the <strong>Dispute Resolution Panel (DRP)</strong> under Section 275.</li>
+                    <li>An order passed by the PCIT/CIT refusing or cancelling registration of a charitable/religious trust under Section 351.</li>
+                    <li>A Search Block Assessment order passed under Section 294.</li>
+                    <li>An order imposing penalty passed by PCIT, CIT, or Joint Commissioner.</li>
+                </ul>
+            </div>
+            <div>
+                <h4><i class="fa-solid fa-stopwatch"></i> Limitation, Form &amp; Prescribed Fees</h4>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Statutory Rule / Monetary Limit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Form of Appeal</strong></td>
+                                <td><strong>Form No. 36</strong> (in duplicate).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Limitation</strong></td>
+                                <td>Within <strong>60 days</strong> of communication of order.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Filing Fee (Assessee)</strong></td>
+                                <td>
+                                    • Assessed Income $\le ₹1,00,000$: <strong>₹500</strong><br>
+                                    • Assessed Income $> ₹1,00,000 \le ₹2,00,000$: <strong>₹1,500</strong><br>
+                                    • Assessed Income $> ₹2,00,000$: <strong>1% of income</strong> (Max <strong>₹10,000</strong>).<br>
+                                    • Any other matter (penalty/misc): <strong>₹500</strong>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fee on Revenue Appeal</strong></td>
+                                <td><strong>NIL</strong> (No fee is payable by the Assessing Officer).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cross-Objections -->
+        <div class="card" style="margin-top: 15px; background: rgba(59, 130, 246, 0.03);">
+            <h4><i class="fa-solid fa-arrows-split-up-and-left"></i> Memorandum of Cross-Objections [Section 362(4) / Old 253(4)]</h4>
+            <p>The respondent (whether the assessee or the Assessing Officer), upon receiving notice that an appeal has been preferred to the Appellate Tribunal by the other party, may file a <strong>Memorandum of Cross-Objections</strong>:</p>
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Statutory Requirement</th>
+                            <th>Operative Legal Provisions &amp; Nuances</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Who Can File?</strong></td>
+                            <td>Either the <strong>assessee</strong> or the <strong>Assessing Officer</strong> (whoever is the respondent).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Prescribed Form</strong></td>
+                            <td><span class="badge badge-primary">Form No. 36A</span> (verified in the prescribed manner).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Limitation Period</strong></td>
+                            <td>Within <strong>30 days</strong> of receipt of the notice of appeal from the Appellate Tribunal.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Filing Fee</strong></td>
+                            <td><span class="badge badge-success" style="font-size: 13px;">NO FEE (NIL)</span> is payable for filing cross-objections.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Legal Status &amp; Survivability</strong></td>
+                            <td>
+                                Cross-objections are treated by the Tribunal as a <strong>full-fledged substantive appeal</strong>. Even if the appellant subsequently withdraws the main appeal or the main appeal is dismissed as defective, the <em>cross-objections survive and must be adjudicated on merits</em>!
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Orders of ITAT Section 363 -->
+    <div class="card" id="sec-363">
+        <h3><i class="fa-solid fa-stamp"></i> 3. Orders of ITAT &amp; Finality of Facts [Section 363 / Old 254]</h3>
+        <p>The Appellate Tribunal may, after giving both parties an opportunity of being heard, pass such orders thereon as it thinks fit. The orders of the Appellate Tribunal on <strong>questions of fact are FINAL</strong>. No appeal lies to the High Court against findings of pure fact unless perverse.</p>
+
+        <div class="grid grid-2" style="margin-top: 15px;">
+            <div class="panel">
+                <h4><i class="fa-solid fa-eraser"></i> Rectification of Mistakes [Section 363(2) / Old 254(2)]</h4>
+                <ul class="styled-list">
+                    <li>The Tribunal may, at any time within <strong>6 months from the end of the month in which the order was passed</strong>, amend any order with a view to rectifying any mistake apparent from the record.</li>
+                    <li>May be done <strong>suo motu</strong> or on application by assessee or AO.</li>
+                    <li>Application fee payable by assessee: <strong>₹50</strong>.</li>
+                    <li><strong>No Power of Review:</strong> The Tribunal has no jurisdiction to review, re-hear, reconsider, or rewrite its earlier decision on merits.</li>
+                </ul>
+            </div>
+            <div class="panel">
+                <h4><i class="fa-solid fa-hand-holding-dollar"></i> Award of Costs &amp; Communication</h4>
+                <ul class="styled-list">
+                    <li>The Tribunal has full discretion to award costs in appropriate cases where an appeal or application is frivolous or vexatious.</li>
+                    <li>A copy of every order passed by the Tribunal shall be sent to the assessee and to the Principal Commissioner or Commissioner.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- SECTION 4: PROCEDURE, QUORUM & STAY OF DEMAND (SEC 364)                   -->
+<!-- ========================================================================= -->
+<section id="sec-stay-demand-itat" class="chapter-content-section">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-gavel"></i> Tribunal Procedure</span>
+        <h2>4. Benches, Quorum, Difference of Opinion &amp; Stay of Demand</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-users"></i> Benches &amp; Quorum: Section 364 (Old 255)</span>
+            <span class="badge"><i class="fa-solid fa-code-branch"></i> Difference of Opinion: Section 364(5)</span>
+            <span class="badge"><i class="fa-solid fa-hand-holding-dollar"></i> Stay of Demand: Section 364(11) (Old 254(2A))</span>
+        </div>
+    </div>
+
+    <!-- Benches & Difference of Opinion Section 364 -->
+    <div class="card" id="sec-364">
+        <h3><i class="fa-solid fa-users-rectangle"></i> 1. Quorum of Benches &amp; Difference of Opinion [Section 364]</h3>
+        
+        <div class="grid grid-3">
+            <div class="panel">
+                <h4><i class="fa-solid fa-user-group"></i> Division Bench (Standard)</h4>
+                <p>Ordinarily, an appeal is heard by a Bench consisting of <strong>one Judicial Member and one Accountant Member</strong>.</p>
+            </div>
+            <div class="panel">
+                <h4><i class="fa-solid fa-user"></i> Single Member Bench (SMC)</h4>
+                <p>A Single Member Bench may hear cases where total income as computed by the AO <strong>does not exceed ₹50,00,000</strong>.</p>
+            </div>
+            <div class="panel">
+                <h4><i class="fa-solid fa-people-group"></i> Special Bench</h4>
+                <p>Constituted by the President with <strong>3 or more members</strong> (with at least one JM and one AM) for critical questions of law.</p>
+            </div>
+        </div>
+
+        <div class="alert alert-info" style="margin-top: 15px;">
+            <div class="alert-title"><i class="fa-solid fa-arrows-split-up-and-left"></i> Resolving Difference of Opinion [Section 364(5) / Old 255(4)]</div>
+            <p>If the Members of a Bench differ in opinion on any point, the point is decided according to the <strong>opinion of the majority</strong>.<br>
+            If the members are equally divided (e.g. 1 JM and 1 AM differ), they state the point of difference. The President then refers the case to <strong>one or more other Members (Third Member)</strong>. The point is then decided according to the opinion of the majority of the Members who have heard the case, including those who first heard it.</p>
+        </div>
+
+        <div class="panel" style="margin-top: 15px; border-left: 4px solid #8b5cf6;">
+            <h4><i class="fa-solid fa-graduation-cap"></i> Supreme Court Doctrine: NTPC Ltd. v. CIT (1998) 229 ITR 383</h4>
+            <p><strong>Power to Entertain Additional Grounds:</strong> The Supreme Court held that the Appellate Tribunal is not confined only to the issues arising out of the order of the Commissioner (Appeals). The Tribunal has wide plenary powers to entertain and adjudicate any <strong>new question of law raised for the first time before it</strong>, provided the necessary facts are already available on record.</p>
+        </div>
+    </div>
+
+    <!-- Stay of Demand Section 364(11) -->
+    <div class="card">
+        <h3><i class="fa-solid fa-hand-holding-dollar"></i> 2. Statutory Conditions for Stay of Demand by ITAT [Section 364(11) / Old 254(2A)]</h3>
+        <p>The Appellate Tribunal has the power to grant a stay of demand of tax, interest, or penalty in pending appeals, subject to strict statutory preconditions:</p>
+
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Stay Parameter</th>
+                        <th>Statutory Condition under Section 364(11)</th>
+                        <th>Legal Consequences &amp; Safeguards</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Mandatory Pre-Deposit</strong></td>
+                        <td><span class="badge badge-danger" style="font-size: 13px;">Minimum 20% Deposit</span></td>
+                        <td>
+                            The Tribunal <strong>shall NOT grant a stay</strong> unless the assessee deposits an amount not less than <strong>20% of the amount of tax, interest, fee, penalty</strong> or furnishes security of equal value in respect thereof.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Initial Stay Period</strong></td>
+                        <td><span class="badge badge-primary">Up to 180 Days</span></td>
+                        <td>The initial stay of demand can be granted for a period <strong>not exceeding 180 days</strong> from the date of the stay order.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Maximum Total Extension</strong></td>
+                        <td><span class="badge badge-warning">Up to 365 Days</span></td>
+                        <td>
+                            If the delay in disposing of the appeal is <em>not attributable to the assessee</em>, the Tribunal may extend the stay, provided the <strong>aggregate period of stay does not exceed 365 days</strong>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Automatic Vacation of Stay</strong></td>
+                        <td>Proviso to Section 364(11)</td>
+                        <td>
+                            If the appeal is not disposed of within the specified stay period (or 365 days) and the <strong>delay is attributable to the assessee</strong>, the order of stay stands <strong>automatically vacated</strong> upon expiry of such period.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+<!-- ========================================================================= -->
+<!-- SECTION 5: APPEALS TO THE HIGH COURT (SECS 365 & 366)                     -->
+<!-- ========================================================================= -->
+<section id="sec-appeal-high-court" class="chapter-content-section">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-building-columns"></i> Judicial Review</span>
+        <h2>5. Appeals to High Court on Substantial Question of Law</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-scale-balanced"></i> Substantial Question of Law: Section 365 (Old 260A)</span>
+            <span class="badge"><i class="fa-solid fa-clock"></i> Limitation: 120 Days</span>
+            <span class="badge"><i class="fa-solid fa-users"></i> Division Bench: Section 366 (Old 260B)</span>
+        </div>
+    </div>
+
+    <!-- Appeals to High Court Section 365 -->
+    <div class="card" id="sec-365">
+        <h3><i class="fa-solid fa-gavel"></i> 1. Statutory Framework for High Court Appeals [Section 365]</h3>
+        <p>Under Section 365, an appeal lies to the High Court from every order passed in appeal by the Appellate Tribunal, <strong>ONLY IF the High Court is satisfied that the case involves a substantial question of law</strong>. The High Court has no jurisdiction to entertain an appeal against pure findings of fact recorded by the Tribunal.</p>
+
+        <div class="grid grid-2">
+            <div>
+                <h4><i class="fa-solid fa-list-check"></i> Procedural Rules &amp; Timelines</h4>
+                <ul class="styled-list">
+                    <li><strong>Who Can Appeal:</strong> The assessee or the Principal Commissioner or Commissioner.</li>
+                    <li><strong>Statutory Limitation:</strong> Appeal must be filed within <strong>120 days</strong> from the date on which the order appealed against is received by the appellant.</li>
+                    <li><strong>Condonation of Delay:</strong> The High Court may admit an appeal after the expiry of 120 days if satisfied that there was <strong>sufficient cause</strong> for not filing it within that period.</li>
+                    <li><strong>Memorandum of Appeal:</strong> Must be in the form of a memorandum precisely stating the substantial question of law involved.</li>
+                </ul>
+            </div>
+            <div>
+                <h4><i class="fa-solid fa-scale-unbalanced"></i> Hearing &amp; Formulation of Question</h4>
+                <ul class="styled-list">
+                    <li>Where the High Court is satisfied that a substantial question of law is involved, it shall <strong>formulate that question</strong>.</li>
+                    <li>The appeal shall be heard only on the question so formulated, and the respondent has the right to argue that the case does not involve such question.</li>
+                    <li><strong>Proviso:</strong> The High Court may, for reasons to be recorded, hear the appeal on any other substantial question of law not formulated by it, if satisfied that the case involves such question.</li>
+                    <li><strong>No Inherent Power of Review [Section 365(9)]:</strong> The High Court has <strong>no inherent power to review its earlier decision on merits</strong>. It can only rectify mistakes apparent from record.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Substantial Question of Law Doctrines -->
+    <div class="card">
+        <h3><i class="fa-solid fa-magnifying-glass-chart"></i> 2. What Constitutes a "Substantial Question of Law"?</h3>
+        <p>The expression <em>"substantial question of law"</em> is not defined in the Income-tax Act. The Supreme Court has laid down binding legal principles governing its interpretation:</p>
+
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Landmark Judicial Authority</th>
+                        <th>Core Legal Ratio &amp; Established Tests</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Sir Chunilal V. Mehta &amp; Sons Ltd. v. Century Spg. &amp; Mfg. Co. Ltd. (AIR 1962 SC 1314)</strong></td>
+                        <td>
+                            The Constitution Bench established the test: A substantial question of law is one which is of <strong>general public importance</strong> or which <strong>directly and substantially affects the rights of the parties</strong>, and which is an open question not concluded by any binding precedent of the Supreme Court or Privy Council, or calls for discussion of alternative views.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hero Vinoth v. Seshammal (2006) 5 SCC 545</strong></td>
+                        <td>
+                            Reaffirmed that a question of law having a material bearing on the decision of the case between the parties will be a substantial question of law if it is not covered by any specific statutory provision or settled by precedent, or involves two plausible interpretations.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Doctrine of Perversity (Factual Findings)</strong></td>
+                        <td>
+                            A finding of fact cannot be disturbed by the High Court <em>UNLESS it is perverse</em>. A finding of fact becomes a substantial question of law if:
+                            <br>&bull; it is arrived at without any supporting evidence on record;
+                            <br>&bull; it ignores vital, relevant, and admissible documentary evidence; or
+                            <br>&bull; it is so outrageously unreasonable that no reasonable person could have reached it.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Bench of High Court Section 366 -->
+    <div class="card" id="sec-366">
+        <h3><i class="fa-solid fa-users-rectangle"></i> 3. Hearing of Appeal by Bench of High Court [Section 366]</h3>
+        <p>Section 366 governs the composition and quorum of High Court Benches hearing tax appeals:</p>
+        <div class="grid grid-2">
+            <div class="panel">
+                <h4><i class="fa-solid fa-user-group"></i> Division Bench Mandate</h4>
+                <p>Every appeal under Section 365 shall be heard by a Bench of <strong>not less than two Judges of the High Court</strong>, and shall be decided in accordance with the opinion of such Judges or of the majority of such Judges.</p>
+            </div>
+            <div class="panel">
+                <h4><i class="fa-solid fa-arrows-split-up-and-left"></i> Difference of Opinion</h4>
+                <p>Where there is no such majority, the Judges shall state the point of law upon which they differ, and the case shall then be heard upon that point only by one or more of the other Judges, and decided according to the opinion of the majority of Judges who have heard the case.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- SECTION 6: APPEALS TO THE SUPREME COURT (SECS 367-372)                    -->
+<!-- ========================================================================= -->
+<section id="sec-appeal-supreme-court" class="chapter-content-section">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-gavel"></i> Apex Adjudication</span>
+        <h2>6. Appeals to the Supreme Court &amp; General Provisions</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-certificate"></i> Certificate of Fitness: Section 367 (Old 261)</span>
+            <span class="badge"><i class="fa-solid fa-scale-balanced"></i> Hearing: Section 368 (Old 262)</span>
+            <span class="badge"><i class="fa-solid fa-coins"></i> General Provisions: Sections 369 to 372</span>
+        </div>
+    </div>
+
+    <!-- Supreme Court Section 367 -->
+    <div class="card" id="sec-367">
+        <h3><i class="fa-solid fa-landmark-dome"></i> 1. Appellate Avenues to the Supreme Court [Section 367]</h3>
+        <p>An appeal shall lie to the Supreme Court from any judgment of the High Court delivered on an appeal under Section 365 through two distinct legal avenues:</p>
+
+        <div class="grid grid-2">
+            <div class="panel" style="border-left: 4px solid #10b981;">
+                <h4><i class="fa-solid fa-file-certificate"></i> (A) Certificate of Fitness (Section 367 / Art 134A)</h4>
+                <p>An appeal lies if the High Court <strong>certifies to be a fit one for appeal to the Supreme Court</strong>.</p>
+                <ul class="styled-list">
+                    <li>The High Court grants a certificate where the question is of wide general importance, where there is a sharp conflict between decisions of different High Courts, or where constitutional interpretation is involved.</li>
+                </ul>
+            </div>
+            <div class="panel" style="border-left: 4px solid #3b82f6;">
+                <h4><i class="fa-solid fa-shield-halved"></i> (B) Special Leave Petition (SLP under Article 136)</h4>
+                <p>Where the High Court refuses to grant a certificate of fitness, the aggrieved party (assessee or Department) may invoke the extraordinary constitutional jurisdiction of the Supreme Court by filing a <strong>Special Leave Petition (SLP)</strong> under Article 136 of the Constitution of India.</p>
+            </div>
+        </div>
+
+        <div class="alert alert-info" style="margin-top: 15px;">
+            <div class="alert-title"><i class="fa-solid fa-clock-rotate-left"></i> Hearing &amp; Effect to Judgment [Section 368]</div>
+            <p>The provisions of the Code of Civil Procedure, 1908 (CPC) apply to Supreme Court appeals. When the Supreme Court delivers its judgment, the Registrar shall send a certified copy to the Assessing Officer, who shall pass an order giving effect to the decision of the Apex Court.</p>
+        </div>
+    </div>
+
+    <!-- General Provisions Sections 369-372 -->
+    <div class="card">
+        <h3><i class="fa-solid fa-coins"></i> 2. Execution of Orders, Tax Recovery &amp; Refunds [Sections 369 to 372]</h3>
+        <div class="grid grid-3">
+            <div class="panel">
+                <h4><i class="fa-solid fa-hand-holding-dollar"></i> Tax Payable Notwithstanding Appeal (Sec 370)</h4>
+                <p>Tax shall be paid in accordance with the assessment, <strong>notwithstanding that an appeal has been preferred</strong> to the High Court or Supreme Court. Mere filing of an appeal does not operate as an automatic stay of demand.</p>
+            </div>
+            <div class="panel">
+                <h4><i class="fa-solid fa-money-bill-transfer"></i> Refund of Excess Tax (Sec 372)</h4>
+                <p>Where as a result of an appeal, the assessment is set aside or reduced, the amount of excess tax paid <strong>shall be refunded to the assessee with mandatory interest under Section 429</strong> (Old 244A).</p>
+            </div>
+            <div class="panel">
+                <h4><i class="fa-solid fa-receipt"></i> Costs of Proceedings</h4>
+                <p>The costs of an appeal to the High Court or Supreme Court shall be at the discretion of the Court.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ========================================================================= -->
+<!-- SECTION 7: REVENUE APPEAL POLICY & MONETARY LIMITS (SEC 373)              -->
+<!-- ========================================================================= -->
+<section id="sec-revenue-appeal-policy" class="chapter-content-section">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-arrow-trend-up"></i> Revenue Litigation Policy</span>
+        <h2>7. Filing of Appeal by Income-tax Authority &amp; Monetary Limits</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-code"></i> Section 373 (Old 268A)</span>
+            <span class="badge"><i class="fa-solid fa-money-bill-1-wave"></i> CBDT Monetary Limits: ₹50L, ₹1Cr, ₹2Cr</span>
+            <span class="badge"><i class="fa-solid fa-shield-virus"></i> Non-Preclusion Principle: Section 373(2)</span>
+        </div>
+    </div>
+
+    <!-- Revenue Appeal Policy Section 373 -->
+    <div class="card" id="sec-373">
+        <h3><i class="fa-solid fa-scale-balanced"></i> 1. Statutory Scheme for Revenue Appeals [Section 373]</h3>
+        <p>Under Section 373, the CBDT is statutorily empowered to issue orders, instructions, or directions to income-tax authorities fixing monetary limits for regulating the filing of appeals or applications for reference by any income-tax authority before the Appellate Tribunal, High Court, or Supreme Court:</p>
+
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Appellate Forum</th>
+                        <th>CBDT Prescribed Monetary Limit (Tax Effect)</th>
+                        <th>Operative Statutory Principle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Appellate Tribunal (ITAT)</strong></td>
+                        <td>Tax effect exceeds <span class="badge badge-primary" style="font-size: 13px;">₹50,00,000</span></td>
+                        <td>No appeal shall be filed by the Department before ITAT if disputed tax effect is $\le ₹50	ext{ Lakhs}$.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>High Court (Section 365)</strong></td>
+                        <td>Tax effect exceeds <span class="badge badge-warning" style="font-size: 13px;">₹1,00,00,000 (₹1 Crore)</span></td>
+                        <td>No appeal shall be filed by the Department before High Court if disputed tax effect is $\le ₹1	ext{ Crore}$.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Supreme Court (Section 367)</strong></td>
+                        <td>Tax effect exceeds <span class="badge badge-danger" style="font-size: 13px;">₹2,00,00,000 (₹2 Crores)</span></td>
+                        <td>No appeal shall be filed before Supreme Court if disputed tax effect is $\le ₹2	ext{ Crores}$.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="grid grid-2" style="margin-top: 15px;">
+            <div class="panel">
+                <h4><i class="fa-solid fa-calculator"></i> Meaning of "Tax Effect"</h4>
+                <p>Tax effect means the difference between the tax on the total income assessed and the tax that would have been chargeable had such total income been reduced by the amount of income in respect of the issues against which appeal is intended to be filed.</p>
+                <ul class="styled-list">
+                    <li>Tax effect includes surcharge and cess.</li>
+                    <li>Interest is excluded while computing tax effect, <em>unless the dispute itself relates to the chargeability of interest</em>.</li>
+                </ul>
+            </div>
+            <div class="panel">
+                <h4><i class="fa-solid fa-shield-halved"></i> Non-Preclusion Principle [Section 373(2)-(4)]</h4>
+                <p>An assessee cannot claim benefit from the Department's non-filing of an appeal on monetary grounds:</p>
+                <ul class="styled-list">
+                    <li>The fact that no appeal was filed on an issue in an earlier year purely due to low tax effect <strong>shall NOT preclude the Department from filing an appeal on the same issue in any other year</strong> for that assessee or in the case of any other assessee.</li>
+                    <li>The Tribunal or Court cannot accept a contention that the Department has accepted the correctness of the decision.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Exceptional Cases -->
+        <div class="callout callout-warning" style="margin-top: 15px;">
+            <div class="callout-header"><i class="fa-solid fa-triangle-exclamation"></i> Exceptions: Where Monetary Limits DO NOT Apply</div>
+            <p>Appeals shall be contested on merits by the Department <strong>irrespective of the tax effect</strong> in the following cases:
+            <br>1. Where the constitutional validity of an Act, Rule, or statutory provision is under challenge;
+            <br>2. Where Board's order, notification, instruction, or circular has been held to be illegal or ultra vires;
+            <br>3. Where revenue audit objection has been accepted by the Department;
+            <br>4. Where the addition relates to undisclosed foreign income, assets, or undisclosed offshore accounts under the Black Money Act;
+            <br>5. Cases involving organized tax evasion, accommodation entry providers, or bogus long-term capital gains / penny stock cartels;
+            <br>6. Where adverse remarks or strictures have been passed by the court against the Revenue or its officers.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- SECTION 8: AVOIDING REPETITIVE APPEALS (SECS 375 & 376)                   -->
+<!-- ========================================================================= -->
+<section id="sec-repetitive-appeals" class="chapter-content-section">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-repeat"></i> Litigation Management</span>
+        <h2>8. Statutory Mechanisms to Avoid Repetitive Appeals</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-user"></i> Assessee Procedure: Section 375 (Old 158A)</span>
+            <span class="badge"><i class="fa-solid fa-building-columns"></i> Revenue Deferment: Section 376 (Old 158AB)</span>
+        </div>
+    </div>
+
+    <!-- Section 375: Assessee Procedure -->
+    <div class="card" id="sec-375">
+        <h3><i class="fa-solid fa-file-signature"></i> 1. Procedure where Assessee Claims Identical Question is Pending [Section 375]</h3>
+        <p>Section 375 provides an enabling statutory mechanism allowing an assessee to avoid repetitive appeals on identical questions of law:</p>
+
+        <div class="grid grid-2">
+            <div>
+                <h4><i class="fa-solid fa-paper-plane"></i> Application &amp; Form No. 8</h4>
+                <ul class="styled-list">
+                    <li>Where an assessee has claimed that any question of law arising in his case for the tax year is <strong>identical with a question of law pending in his own case</strong> in an earlier year before the High Court or Supreme Court;</li>
+                    <li>He may furnish a declaration in <strong>Form No. 8</strong> to the Commissioner (Appeals) or Appellate Tribunal;</li>
+                    <li>The declaration states that if the appellate authority agrees to apply the final decision of the High Court or Supreme Court on the identical question, the assessee <strong>undertakes not to agitate that question in higher appeal</strong>.</li>
+                </ul>
+            </div>
+            <div>
+                <h4><i class="fa-solid fa-gavel"></i> Disposal &amp; Final Effect</h4>
+                <ul class="styled-list">
+                    <li>The appellate authority disposes of the appeal on other grounds, noting the declaration regarding the identical question.</li>
+                    <li>When the decision of the High Court or Supreme Court on the identical question becomes final, the appellate authority or AO passes an order conforming to such final judgment.</li>
+                    <li>Saves litigation costs, time, and reduces multi-year duplicate proceedings for the assessee.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 376: Revenue Deferment -->
+    <div class="card">
+        <h3><i class="fa-solid fa-pause"></i> 2. Deferment of Appeal by Revenue on Identical Question [Section 376 / Old 158AB]</h3>
+        <p>Section 376 provides a parallel mechanism for the Department to defer filing repetitive appeals when an identical question of law is pending before the High Court or Supreme Court:</p>
+
+        <div class="grid grid-2">
+            <div class="panel">
+                <h4><i class="fa-solid fa-users-gear"></i> Collegium Recommendation</h4>
+                <p>Where the <strong>Collegium</strong> (comprising two Chief Commissioners or Principal Commissioners) is of the opinion that a question of law arising in an order is identical with a question of law pending in the High Court or Supreme Court in the case of any assessee, the Collegium may recommend deferment of appeal.</p>
+            </div>
+            <div class="panel">
+                <h4><i class="fa-solid fa-file-lines"></i> Direction &amp; Acceptance by Assessee</h4>
+                <p>The PCIT/CIT directs the AO to make an application to the Tribunal or High Court stating that appeal may be deferred. The assessee must confirm whether he accepts that the question is identical. If confirmed, the appeal is deferred until the final decision of the higher court is rendered.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- SECTION 9: REVISION OF ORDERS BY PCIT/CIT (SECS 377 & 378)                -->
+<!-- ========================================================================= -->
+<section id="sec-revision-orders" class="chapter-content-section">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-pen-to-square"></i> Supervisory Revision</span>
+        <h2>9. Revision of Orders by Principal Commissioner or Commissioner</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-scale-unbalanced-flip"></i> Prejudicial to Revenue: Section 377 (Old 263)</span>
+            <span class="badge"><i class="fa-solid fa-user-pen"></i> Other Orders: Section 378 (Old 264)</span>
+            <span class="badge"><i class="fa-solid fa-clock"></i> Strict Limitation Rules</span>
+        </div>
+    </div>
+
+    <!-- Revision u/s 377 -->
+    <div class="card" id="sec-377">
+        <h3><i class="fa-solid fa-gavel"></i> 1. Revision of Orders Prejudicial to Interests of Revenue [Section 377 / Old 263]</h3>
+        <p>Under Section 377, the Principal Commissioner or Commissioner may call for and examine the record of any proceeding under this Act, and if he considers that any order passed by the Assessing Officer is <strong>both (i) erroneous, and (ii) prejudicial to the interests of the Revenue</strong>, he may, after giving the assessee an opportunity of being heard, pass such order thereon as the circumstances justify:</p>
+
+        <div class="grid grid-2">
+            <div class="panel" style="border-left: 4px solid #ef4444;">
+                <h4><i class="fa-solid fa-triangle-exclamation"></i> The Twin Pre-Conditions</h4>
+                <p><strong>Malabar Industrial Co. Ltd. v. CIT (2000) 243 ITR 83 (SC):</strong><br>
+                The Supreme Court established that the Commissioner cannot invoke Section 377 unless <em>both conditions are satisfied cumulatively</em>:</p>
+                <ul class="styled-list">
+                    <li>The order of the Assessing Officer must be <strong>ERRONEOUS</strong>; AND</li>
+                    <li>It must be <strong>PREJUDICIAL TO THE INTERESTS OF THE REVENUE</strong>.</li>
+                </ul>
+                <p class="text-muted"><small><em>If an order is erroneous but causes no loss to revenue, or if revenue loses tax but order is lawful, Section 377 cannot be invoked.</em></small></p>
+            </div>
+            <div class="panel" style="border-left: 4px solid #3b82f6;">
+                <h4><i class="fa-solid fa-list-check"></i> Deemed Erroneous &amp; Prejudicial Scenarios [Explanation 1 to Sec 377]</h4>
+                <p>An order of the AO shall be deemed to be erroneous and prejudicial to the interests of the Revenue if:</p>
+                <ul class="styled-list">
+                    <li>(a) The order is passed <strong>without making inquiries or verification</strong> which should have been made;</li>
+                    <li>(b) The order allows any relief <strong>without inquiring into the claim</strong>;</li>
+                    <li>(c) The order has not been made in accordance with any order, direction, or instruction issued by the Board under Section 238 (Old 119);</li>
+                    <li>(d) The order is contrary to any binding judicial decision rendered by the jurisdictional High Court or Supreme Court.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="table-responsive" style="margin-top: 15px;">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Statutory Rule under Section 377</th>
+                        <th>Legal Nuances &amp; Exceptions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Statutory Limitation</strong></td>
+                        <td>Within <strong>2 years from the end of the financial year</strong> in which the order sought to be revised was passed.</td>
+                        <td>
+                            <em>Example:</em> Order passed on 15.09.2026 (FY 2026-27). End of FY is 31.03.2027. Limitation expires on <strong>31st March 2029</strong>.
+                            <br>Exception: Can be passed at any time to give effect to findings of Court/Tribunal.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Opportunity of Hearing</strong></td>
+                        <td><span class="badge badge-danger">Mandatory Hearing</span></td>
+                        <td>Order passed without giving reasonable opportunity of being heard is void and violates principles of natural justice.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Remedy for Assessee</strong></td>
+                        <td>Appeal to ITAT under Section 362</td>
+                        <td>Order under Section 377 is directly appealable before the Appellate Tribunal.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Revision u/s 378 -->
+    <div class="card" id="sec-378">
+        <h3><i class="fa-solid fa-user-pen"></i> 2. Revision of Other Orders on Application by Assessee [Section 378 / Old 264]</h3>
+        <p>Section 378 provides a benevolent administrative remedy empowering the Principal Commissioner or Commissioner to revise any order passed by an authority subordinate to him:</p>
+
+        <div class="grid grid-2">
+            <div>
+                <h4><i class="fa-solid fa-compass"></i> Mode of Invocation &amp; Timelines</h4>
+                <ul class="styled-list">
+                    <li><strong>Suo Motu:</strong> By PCIT/CIT on his own motion within <strong>1 year from the date of the order</strong> sought to be revised.</li>
+                    <li><strong>On Application by Assessee:</strong> Application must be made within <strong>1 year from the date of communication of the order</strong> (condonable for sufficient cause).</li>
+                    <li><strong>Prescribed Fee:</strong> Application must be accompanied by a fee of <strong>₹500</strong>.</li>
+                    <li><strong>Disposal Limitation:</strong> PCIT/CIT shall pass an order within <strong>1 year from the end of the financial year</strong> in which application is made.</li>
+                </ul>
+            </div>
+            <div>
+                <h4><i class="fa-solid fa-ban" style="color: #ef4444;"></i> Absolute Statutory Bars on Section 378 Revision</h4>
+                <p>The PCIT/CIT <strong>shall NOT revise</strong> any order under Section 378 in the following circumstances:</p>
+                <ul class="styled-list">
+                    <li>Where the order is one against which an appeal lies to the CIT(Appeals), and the <strong>time for filing appeal has not expired</strong>, unless the assessee has waived his right of appeal.</li>
+                    <li>Where the order is <strong>pending in appeal</strong> before the CIT(Appeals).</li>
+                    <li>Where the order has been made the <strong>subject of an appeal to the Appellate Tribunal (ITAT)</strong>.</li>
+                    <li><strong>No Prejudicial Order:</strong> PCIT/CIT shall NOT pass any order prejudicial to the assessee under Section 378.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Comparative Table 377 vs 378 -->
+        <h4 style="margin-top: 18px;"><i class="fa-solid fa-code-compare"></i> Comprehensive Comparison: Section 377 vs Section 378</h4>
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Distinguishing Attribute</th>
+                        <th>Revision Prejudicial to Revenue [Sec 377]</th>
+                        <th>Revision on Application by Assessee [Sec 378]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Primary Purpose</strong></td>
+                        <td>Protect the interests of the Revenue from erroneous orders.</td>
+                        <td>Provide relief to the assessee against erroneous orders.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Who Can Initiate?</strong></td>
+                        <td>Only PCIT / Commissioner <strong>suo motu</strong>.</td>
+                        <td><strong>Suo motu</strong> OR on <strong>application by the assessee</strong>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nature of Resulting Order</strong></td>
+                        <td>May be prejudicial to the assessee (enhancement/cancellation).</td>
+                        <td><strong>CANNOT be prejudicial</strong> to the assessee.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Statutory Limitation</strong></td>
+                        <td>Within <strong>2 years from the end of the financial year</strong>.</td>
+                        <td>Application within <strong>1 year from date of order</strong>; disposal within 1 year from FY end.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Application Fee</strong></td>
+                        <td>Not applicable (suo motu).</td>
+                        <td><strong>₹500</strong> on application by assessee.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Further Appellate Remedy</strong></td>
+                        <td>Appeal lies directly to the <strong>Appellate Tribunal (ITAT)</strong>.</td>
+                        <td>No appeal lies to ITAT; remedy is <strong>Writ Petition under Article 226</strong> before High Court.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- SECTION 10: DOCTRINE OF PARTIAL MERGER VS TOTAL MERGER                   -->
+<!-- ========================================================================= -->
+<section id="sec-doctrine-merger" class="chapter-content-section">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-code-merge"></i> Jurisprudential Doctrines</span>
+        <h2>10. Doctrine of Partial Merger and Doctrine of Total Merger</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-scale-balanced"></i> Explanation 1 to Sec 377 &amp; Sec 378</span>
+            <span class="badge"><i class="fa-solid fa-graduation-cap"></i> Landmark Supreme Court Jurisprudence</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3><i class="fa-solid fa-diagram-project"></i> 1. The Principle of Merger in Appellate Adjudication</h3>
+        <p>The <strong>Doctrine of Merger</strong> is based on the legal principle that there cannot be more than one operative final order governing the same subject matter. Once an inferior authority's order is reviewed, modified, or decided in appeal by a superior authority, the inferior order merges into the order of the appellate authority.</p>
+
+        <div class="grid grid-2" style="margin-top: 15px;">
+            <div class="panel">
+                <h4><i class="fa-solid fa-code-branch"></i> Doctrine of Total Merger</h4>
+                <p>Under the common law doctrine of total merger, once an order is taken in appeal, the entire original order merges into the appellate order, regardless of whether the appellate authority actually considered and decided each and every issue.</p>
+            </div>
+            <div class="panel" style="border-left: 4px solid #10b981;">
+                <h4><i class="fa-solid fa-code-merge"></i> Doctrine of Partial Merger (Income-tax Rule)</h4>
+                <p>The Income-tax Act, 2025 explicitly codifies the <strong>Doctrine of Partial Merger</strong> in the Explanations to Sections 377 and 378:</p>
+                <div class="alert alert-success">
+                    <strong>Statutory Rule:</strong> The Principal Commissioner or Commissioner has full jurisdiction to revise any matter in an assessment order <strong>which has NOT been considered and decided in an appeal</strong> before the Commissioner (Appeals).
+                </div>
+            </div>
+        </div>
+
+        <h4 style="margin-top: 18px;"><i class="fa-solid fa-landmark"></i> Supreme Court Precedent: CIT v. Shri Arbuda Mills Ltd. (1998) 231 ITR 50</h4>
+        <div class="panel" style="border-left: 4px solid #8b5cf6;">
+            <p><strong>Legal Question:</strong> Can the Commissioner revise an assessment order under Section 377 (Old 263) on an issue that was not raised before or decided by the Commissioner (Appeals)?</p>
+            <p><strong>Supreme Court Ratio:</strong><br>
+            • The Supreme Court held that the powers of the Commissioner under Section 377 extend to all matters <em>other than those which have been considered and decided in an appeal</em>.<br>
+            • Therefore, if an assessment order contained four issues (A, B, C, and D), and the assessee appealed only on issues A and B before the CIT(A), the Commissioner retains complete statutory power to revise issues C and D under Section 377.<br>
+            • The doctrine of merger does not bar the Commissioner from revising matters that were neither the subject matter of appeal nor adjudicated by the CIT(A).</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ========================================================================= -->
+<!-- SECTION 11: TEST YOUR KNOWLEDGE - PRACTICAL QUESTIONS 1 TO 6              -->
+<!-- ========================================================================= -->
+<section id="sec-tyk" class="chapter-content-section">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Practical Case Studies</span>
+        <h2>11. ICAI Test Your Knowledge: Practical Problems &amp; Solutions (Part 1)</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-list-check"></i> Questions 1 to 6</span>
+            <span class="badge"><i class="fa-solid fa-scale-balanced"></i> Statutory Solutions under ITA 2025</span>
+            <span class="badge"><i class="fa-solid fa-landmark"></i> Supreme Court Precedents &amp; Practical Applications</span>
+        </div>
+    </div>
+
+    <!-- Question 1 -->
+    <div class="card practical-card" id="tyk-1">
+        <div class="practical-header">
+            <span class="q-badge">TYK Question 1</span>
+            <h4>Fresh Claim Before Appellate Authorities (Goetze India vs NTPC / Jute Corp)</h4>
+        </div>
+        <div class="problem-statement">
+            <p><strong>Facts:</strong> "SVS Propcon" did not make a claim of ₹20 Lakhs in the return of income filed for Tax Year 2027-28 which was disallowed in the previous tax year (Tax Year 2026-27) under Section 37. However, the said claim was also not considered by the Assessing Officer during assessment proceedings on the ground that no revised return was filed.</p>
+            <p><strong>Requirement:</strong> Can the assessee now make such a claim before the appellate authority?</p>
+        </div>
+        <div class="solution-content">
+            <h4><i class="fa-solid fa-gavel"></i> Statutory Analysis &amp; Solution:</h4>
+            <div class="alert alert-success">
+                <div class="alert-title"><i class="fa-solid fa-check-circle"></i> Conclusion: YES, the assessee CAN make the claim before the Appellate Authority.</div>
+                <p>The restriction imposed on the Assessing Officer in <em>Goetze (India) Ltd.</em> does not apply to appellate authorities.</p>
+            </div>
+            <ul class="styled-list">
+                <li><strong>Supreme Court Ruling in Goetze (India) Ltd. v. CIT (2006) 284 ITR 323:</strong> The Supreme Court held that the Assessing Officer has no power to entertain a claim for deduction made after filing of the return otherwise than by way of a revised return.</li>
+                <li><strong>Carve-Out for Appellate Authorities:</strong> The Supreme Court explicitly observed that this limitation is confined strictly to the Assessing Officer. It <em>does not impinge on the plenary powers of the appellate authorities</em> under the Act.</li>
+                <li><strong>Binding Precedents:</strong>
+                    <br>&bull; <strong>Jute Corporation of India v. CIT (1991) 187 ITR 688 (SC):</strong> The first appellate authority (CIT(A)) has plenary jurisdiction to examine a bona fide legal claim raised for the first time.
+                    <br>&bull; <strong>National Thermal Power Corporation (NTPC) Ltd. v. CIT (1998) 229 ITR 383 (SC):</strong> The Appellate Tribunal has full jurisdiction to entertain a question of law arising from facts already on record, even if not claimed in the return or raised before lower authorities.
+                </li>
+                <li><strong>Final Verdict:</strong> SVS Propcon is legally entitled to raise the omitted claim of ₹20 Lakhs before the Commissioner (Appeals) or the Appellate Tribunal.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="card practical-card" id="tyk-2">
+        <div class="practical-header">
+            <span class="q-badge">TYK Question 2</span>
+            <h4>Tribunal Quorum Difference &amp; High Court Review Inherent Powers</h4>
+        </div>
+        <div class="problem-statement">
+            <p><strong>Question:</strong> Examine the correctness or otherwise of the following statements with reference to the provisions of the Income-tax Act, 2025:
+            <br>(i) An appeal before Appellate Tribunal cannot be decided in the event of difference of opinion between the Judicial Member and the Accountant Member on a particular ground.
+            <br>(ii) A High Court does not have an inherent power to review an earlier order passed by it on merits.</p>
+        </div>
+        <div class="solution-content">
+            <h4><i class="fa-solid fa-gavel"></i> Statutory Analysis &amp; Solution:</h4>
+            <div class="grid grid-2">
+                <div>
+                    <h5>(i) Statement (i) is INCORRECT</h5>
+                    <ul class="styled-list">
+                        <li>Under <strong>Section 364(5) (Old Section 255(4))</strong>, if the members of a Bench are equally divided in opinion on any point, the point is decided according to the <strong>opinion of the majority</strong>.</li>
+                        <li>The members shall state the point of difference, and the President of the ITAT shall refer the case to <strong>one or more other Members (Third Member)</strong>.</li>
+                        <li>The point is then decided according to the opinion of the majority of the Members who have heard the case. Hence, the appeal can definitely be decided.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>(ii) Statement (ii) is CORRECT</h5>
+                    <ul class="styled-list">
+                        <li>Under <strong>Section 365(9) (Old Section 260A(7))</strong>, the High Court exercises statutory appellate jurisdiction and <strong>does not possess any inherent power to review its earlier decision on merits</strong>.</li>
+                        <li>The power of review is not an inherent judicial power; it must be expressly conferred by statute.</li>
+                        <li>The High Court can only rectify mistakes apparent from record or exercise procedural review where natural justice was violated, but cannot re-hear or review an order on substantive merits.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="card practical-card" id="tyk-3">
+        <div class="practical-header">
+            <span class="q-badge">TYK Question 3</span>
+            <h4>Power of ITAT to Entertain Additional Grounds (NTPC Doctrine)</h4>
+        </div>
+        <div class="problem-statement">
+            <p><strong>Question:</strong> Does the Appellate Tribunal have the power to allow the assessee to urge any ground of appeal which was not raised by him before the Commissioner (Appeals)?</p>
+        </div>
+        <div class="solution-content">
+            <h4><i class="fa-solid fa-gavel"></i> Statutory Analysis &amp; Solution:</h4>
+            <div class="alert alert-success">
+                <div class="alert-title"><i class="fa-solid fa-check-circle"></i> Conclusion: YES, the Appellate Tribunal has the power to allow additional grounds.</div>
+                <p>The Tribunal is not confined only to issues arising out of the order of the Commissioner (Appeals).</p>
+            </div>
+            <ul class="styled-list">
+                <li><strong>Section 363(1) Read with Tribunal Rules:</strong> The Appellate Tribunal has wide plenary appellate powers to pass such orders as it thinks fit after hearing both parties.</li>
+                <li><strong>Landmark Ruling in National Thermal Power Corporation (NTPC) Ltd. v. CIT (1998) 229 ITR 383 (SC):</strong>
+                    <br>&bull; The Supreme Court unequivocally held that the purpose of assessment proceedings is to determine the correct tax liability of an assessee in accordance with law.
+                    <br>&bull; The power of the Tribunal is not restricted to the issues agitated before lower authorities.
+                    <br>&bull; The Tribunal has full jurisdiction to permit an assessee (or the Department) to urge any <strong>new legal ground or question of law for the first time</strong>, provided that all relevant facts are already available on record.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="card practical-card" id="tyk-4">
+        <div class="practical-header">
+            <span class="q-badge">TYK Question 4</span>
+            <h4>Revenue Non-Filing on Low Tax Effect: Subsequent Year Preclusion (Sec 373)</h4>
+        </div>
+        <div class="problem-statement">
+            <p><strong>Facts:</strong> An Income-tax authority did not file an appeal to the Appellate Tribunal against an order of the Commissioner (Appeals) decided against the Income-tax Department on a particular issue in the case of one assessee, Alpi, for Tax Year 2026-27 on the ground that the tax effect was less than the monetary limit prescribed by CBDT. In Tax Year 2027-28, a similar issue arose in the assessments of Alpi and her sister Palki, which was decided by the CIT(A) against the Department. Can the Income-tax Department move an appeal to the Tribunal in respect of Tax Year 2027-28?</p>
+        </div>
+        <div class="solution-content">
+            <h4><i class="fa-solid fa-gavel"></i> Statutory Analysis &amp; Solution:</h4>
+            <div class="alert alert-success">
+                <div class="alert-title"><i class="fa-solid fa-check-circle"></i> Conclusion: YES, the Department CAN file the appeal.</div>
+                <p>Non-filing on monetary grounds creates no estoppel or precedent against the Revenue.</p>
+            </div>
+            <ul class="styled-list">
+                <li><strong>Section 373(1) (Old Section 268A):</strong> Empowers the CBDT to fix monetary limits for regulating the filing of appeals by income-tax authorities.</li>
+                <li><strong>Statutory Non-Preclusion Rule [Section 373(2)-(4)]:</strong>
+                    <br>&bull; The statute explicitly provides that where an income-tax authority has not filed an appeal against an order in the case of an assessee on the ground of low monetary limit, it <strong>shall NOT be precluded from filing an appeal on the same issue</strong>:
+                    <br>&nbsp;&nbsp;(a) in the case of the same assessee for any other tax year; or
+                    <br>&nbsp;&nbsp;(b) in the case of any other assessee for the same or any other tax year.
+                </li>
+                <li><strong>No Deemed Acceptance:</strong> Section 373(3) prohibits any contention that the Department has accepted the correctness of the decision on that issue.</li>
+                <li><strong>Application:</strong> Since the tax effect in Tax Year 2027-28 exceeds the prescribed threshold (or meets policy criteria), the Department is fully competent to file an appeal before the ITAT in the cases of both Alpi and Palki.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="card practical-card" id="tyk-5">
+        <div class="practical-header">
+            <span class="q-badge">TYK Question 5</span>
+            <h4>Stay of Demand by ITAT: 20% Pre-Deposit, 180 Days &amp; 365 Days Outer Limit</h4>
+        </div>
+        <div class="problem-statement">
+            <p><strong>Facts:</strong> A petition for stay of demand was filed by XYZ Ltd. before the Appellate Tribunal in respect of a disputed demand for which an appeal was pending before it. The Appellate Tribunal granted stay vide order dated 01.01.2027 for a period of 180 days. The appeal could not be disposed of within this period. Can the Tribunal extend the stay? What are the conditions?</p>
+        </div>
+        <div class="solution-content">
+            <h4><i class="fa-solid fa-gavel"></i> Statutory Analysis &amp; Solution:</h4>
+            <p>Under <strong>Section 364(11) (Old Section 254(2A))</strong>, the Appellate Tribunal has statutory powers to grant and extend a stay of demand, governed by the following rules:</p>
+            <div class="grid grid-2">
+                <div>
+                    <h5>1. Pre-requisite for Stay</h5>
+                    <ul class="styled-list">
+                        <li>The Tribunal cannot grant stay unless the assessee deposits at least <strong>20% of the amount of tax, interest, fee, or penalty</strong>, or furnishes security of equal value.</li>
+                        <li>Initial stay period cannot exceed <strong>180 days</strong> from the date of the order.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>2. Extension &amp; 365-Day Ceiling</h5>
+                    <ul class="styled-list">
+                        <li>The Tribunal may extend the stay upon an application made by the assessee if satisfied that the <strong>delay in disposing of the appeal is not attributable to the assessee</strong>.</li>
+                        <li>The aggregate period of stay (initial 180 days + extensions) <strong>shall NOT exceed 365 days</strong>.</li>
+                        <li>If appeal is not disposed of within 365 days and delay is attributable to the assessee, the stay stands automatically vacated.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="card practical-card" id="tyk-6">
+        <div class="practical-header">
+            <span class="q-badge">TYK Question 6</span>
+            <h4>Revision Application u/s 378: Appeal Period Expiry &amp; Waiver of Right</h4>
+        </div>
+        <div class="problem-statement">
+            <p><strong>Facts:</strong> An assessee who had been served with an assessment order passed under Section 270(10) on 01.11.2028 filed an application for revision against this order before the Competent Authority under Section 378 on 11.11.2028. However, the CIT refused to entertain the application on the ground that the 30-day statutory time limit for filing an appeal to the Commissioner (Appeals) had not yet expired. Examine whether the action of the CIT is tenable in law.</p>
+        </div>
+        <div class="solution-content">
+            <h4><i class="fa-solid fa-gavel"></i> Statutory Analysis &amp; Solution:</h4>
+            <div class="alert alert-info">
+                <div class="alert-title"><i class="fa-solid fa-scale-balanced"></i> Statutory Nuance: Waiver of Right of Appeal</div>
+                <p>Under Section 378(5)(b), the bar on filing revision during the appeal window can be overcome by waiving the right of appeal.</p>
+            </div>
+            <ul class="styled-list">
+                <li><strong>Section 378(5)(b) (Old Section 264(4)(b)):</strong> The Principal Commissioner or Commissioner shall not revise any order where an appeal against the order lies to the Commissioner (Appeals) and the time within which such appeal may be made has not expired, <strong>UNLESS the assessee has waived his right of appeal</strong>.</li>
+                <li><strong>Application to Case:</strong>
+                    <br>&bull; The assessment order was served on 01.11.2028, and the 30-day appeal period under Section 357 expired on 01.12.2028.
+                    <br>&bull; The assessee filed the revision petition on 11.11.2028 (within the 30-day window).
+                    <br>&bull; <strong>If the assessee waived his right of appeal</strong> to the CIT(A) in his application or through an affidavit, the CIT is <strong>bound to entertain the application</strong>.
+                    <br>&bull; However, if the assessee did not waive his right of appeal, the refusal of the CIT on 11.11.2028 was justified. The assessee may re-submit the application after 01.12.2028 or furnish the waiver.
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- ========================================================================= -->
+<!-- SECTION 12: TEST YOUR KNOWLEDGE - PRACTICAL QUESTIONS 7 TO 12             -->
+<!-- ========================================================================= -->
+<section class="chapter-content-section" style="padding-top: 0;">
+    <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Practical Case Studies</span>
+        <h2>12. ICAI Test Your Knowledge: Practical Problems &amp; Solutions (Part 2)</h2>
+        <div class="section-meta">
+            <span class="badge"><i class="fa-solid fa-list-check"></i> Questions 7 to 12</span>
+            <span class="badge"><i class="fa-solid fa-scale-balanced"></i> Landmark Judicial Precedents</span>
+            <span class="badge"><i class="fa-solid fa-stamp"></i> Exam Standard Case Solutions</span>
+        </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="card practical-card" id="tyk-7">
+        <div class="practical-header">
+            <span class="q-badge">TYK Question 7</span>
+            <h4>Revision u/s 377: Record Scope, Dropped Proceedings &amp; Second Notice</h4>
+        </div>
+        <div class="problem-statement">
+            <p><strong>Facts:</strong> The Commissioner of Income-tax issued a notice to revise an order passed by an Assessing Officer under Section 270(10). During the pendency of proceedings before the Commissioner, on the basis of material gathered during survey under Section 249, the CIT dropped the proceedings on the first issue and issued a second notice under Section 377 on another issue.</p>
+            <p><strong>Requirements:</strong> Examine whether the action of the Competent Authority in issuing the second notice is justified, and evaluate the scope of "record" under Section 377.</p>
+        </div>
+        <div class="solution-content">
+            <h4><i class="fa-solid fa-gavel"></i> Statutory Analysis &amp; Solution:</h4>
+            <div class="grid grid-2">
+                <div>
+                    <h5>1. Scope of "Record" [Section 377(2)(b) / Old 263 Explanation]</h5>
+                    <ul class="styled-list">
+                        <li>The term <strong>"record"</strong> includes all records relating to any proceeding under the Act <em>available at the time of examination by the Principal Commissioner or Commissioner</em>.</li>
+                        <li>It is not restricted only to the records available with the Assessing Officer at the time of passing the assessment order. Material gathered during a survey or inquiry subsequent to assessment, if available when the CIT examines the file, forms part of the "record".</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>2. Validity of Second Notice on New Issue</h5>
+                    <ul class="styled-list">
+                        <li>The Commissioner has plenary supervisory powers to examine any erroneous order prejudicial to Revenue.</li>
+                        <li>Dropping the initial notice on one issue <strong>does not preclude the Commissioner from issuing a second notice</strong> under Section 377 on a different issue, provided:
+                            <br>&bull; The order of the AO is both erroneous and prejudicial to Revenue; and
+                            <br>&bull; The second notice and order are passed within the statutory limitation of <strong>2 years from the end of the financial year</strong> in which the original assessment order was passed.
+                        </li>
+                        <li><strong>Conclusion:</strong> The issuance of the second notice is fully valid in law if passed within the 2-year limitation period.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="card practical-card" id="tyk-8">
+        <div class="practical-header">
+            <span class="q-badge">TYK Question 8</span>
+            <h4>Plenary Powers of CIT(A) to Enhance Assessment (Kanpur Coal vs Shapoorji)</h4>
+        </div>
+        <div class="problem-statement">
+            <p><strong>Proposition:</strong> <em>“The powers of the Joint Commissioner (Appeals) or the Commissioner (Appeals) to enhance the assessment are plenary and wide, co-terminus with those of the Assessing Officer”.</em>
+            <br>Examine the correctness or otherwise of this proposition in the context of the Income-tax Act, 2025 and decided Supreme Court case law.</p>
+        </div>
+        <div class="solution-content">
+            <h4><i class="fa-solid fa-gavel"></i> Statutory Analysis &amp; Solution:</h4>
+            <div class="alert alert-success">
+                <div class="alert-title"><i class="fa-solid fa-check-circle"></i> Conclusion: The proposition is CORRECT IN LAW.</div>
+                <p>The first appellate authority has plenary powers co-extensive and co-terminus with the Assessing Officer.</p>
+            </div>
+            <ul class="styled-list">
+                <li><strong>Supreme Court Doctrine in CIT v. Kanpur Coal Syndicate (1964) 53 ITR 225:</strong> The Supreme Court held that the powers of the first appellate authority are <strong>co-terminus with those of the Assessing Officer</strong>. He can do what the AO could have done and can also direct the AO to do what he failed to do. He can examine any matter arising from the assessment records.</li>
+                <li><strong>CIT v. Nirbheram Daluram (1997) 224 ITR 610 (SC):</strong> Reaffirmed that the appellate commissioner has plenary powers over the entire assessment order, including the power to enhance the assessment under Section 359(1).</li>
+                <li><strong>Limitation on Enhancement (CIT v. Shapoorji Pallonji Mistry (1962) 44 ITR 891 (SC)):</strong> While the power of enhancement is wide, it is confined to the <em>sources of income which were the subject matter of assessment</em>. The CIT(A) cannot discover a completely new source of income not considered or mentioned in the return or assessment order.</li>
+                <li><strong>Audi Alteram Partem:</strong> Under Section 359(2), enhancement cannot be made without giving the appellant a reasonable opportunity of showing cause.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="card practical-card" id="tyk-9">
+        <div class="practical-header">
+            <span class="q-badge">TYK Question 9</span>
+            <h4>Rectification Application Before ITAT: Bar on Re-Appreciating Evidence</h4>
+        </div>
+        <div class="problem-statement">
+            <p><strong>Question:</strong> At the time of hearing a rectification application, can the Appellate Tribunal re-appreciate the evidence produced during the proceedings of the appeal hearing? Examine the scope of powers under Section 363(2).</p>
+        </div>
+        <div class="solution-content">
+            <h4><i class="fa-solid fa-gavel"></i> Statutory Analysis &amp; Solution:</h4>
+            <div class="alert alert-danger">
+                <div class="alert-title"><i class="fa-solid fa-ban"></i> Conclusion: NO, the Tribunal CANNOT re-appreciate evidence in a rectification proceeding.</div>
+                <p>The Tribunal has no power of review under the guise of rectification of mistake.</p>
+            </div>
+            <ul class="styled-list">
+                <li><strong>Scope of Section 363(2) (Old Section 254(2)):</strong> Section 363(2) specifically empowers the Appellate Tribunal to amend any order passed by it with a view to <strong>rectifying any mistake apparent from the record</strong> within 6 months from the end of the month in which the order was passed.</li>
+                <li><strong>No Power to Re-hear or Review:</strong> A mistake apparent from record is one which is patent, obvious, and self-evident, not requiring an elaborate process of reasoning or debate.</li>
+                <li><strong>Re-Appreciation of Evidence Barred:</strong> Re-appreciating evidence, reconsidering findings of fact, or adopting an alternative interpretation amounts to a <strong>review of the order on merits</strong>. The Income-tax Act does not confer any power of review on the Appellate Tribunal.</li>
+                <li><strong>Final Verdict:</strong> The Tribunal cannot re-appreciate evidence or rewrite its judgment under Section 363(2).</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="card practical-card" id="tyk-10">
+        <div class="practical-header">
+            <span class="q-badge">TYK Question 10</span>
+            <h4>High Court Interference with Factual Findings &amp; Perversity Doctrine</h4>
+        </div>
+        <div class="problem-statement">
+            <p><strong>Question:</strong> <em>“The High Court cannot interfere with the factual finding recorded by the lower authorities and the Tribunal without any valid reasons”.</em> Examine the circumstances under which the High Court can interfere with findings of fact.</p>
+        </div>
+        <div class="solution-content">
+            <h4><i class="fa-solid fa-gavel"></i> Statutory Analysis &amp; Solution:</h4>
+            <p>Under <strong>Section 365 (Old Section 260A)</strong>, an appeal lies to the High Court exclusively on a <strong>substantial question of law</strong>. The Appellate Tribunal is the final fact-finding authority under the Act.</p>
+            <div class="callout callout-warning">
+                <div class="callout-header"><i class="fa-solid fa-scale-balanced"></i> When Does a Finding of Fact Become a Question of Law?</div>
+                <p>A finding of fact recorded by the Tribunal cannot be disturbed by the High Court unless it is demonstrated to be <strong>PERVERSE</strong>. A finding is perverse in the following legal scenarios:
+                <br>1. Where the finding is arrived at without any evidence or material on record to support it;
+                <br>2. Where the Tribunal has completely ignored or overlooked vital and relevant admissible documentary evidence;
+                <br>3. Where the finding is based on irrelevant, inadmissible, or extraneous considerations;
+                <br>4. Where the view taken by the Tribunal is so irrational that no reasonable person judicially acting could ever have reached it.</p>
+            </div>
+            <p class="text-muted"><small><em>In the absence of established perversity, the High Court has no jurisdiction to re-weigh evidence or reverse factual determinations of the ITAT.</em></small></p>
+        </div>
+    </div>
+
+    <!-- Question 11 -->
+    <div class="card practical-card" id="tyk-11">
+        <div class="practical-header">
+            <span class="q-badge">TYK Question 11</span>
+            <h4>Remedial Recourse &amp; Statutory Timelines for Aggrieved Assessee</h4>
+        </div>
+        <div class="problem-statement">
+            <p><strong>Question:</strong> An assessee, aggrieved by the following statutory orders, is desirous of knowing the available remedial recourse and the limitation period against each order under the Income-tax Act, 2025:
+            <br>(i) Scrutiny assessment order passed under Section 270(10) / (12);
+            <br>(ii) Rectification order passed under Section 287;
+            <br>(iii) Best judgment assessment order passed under Section 271;
+            <br>(iv) Intimation sent under Section 270(1).</p>
+        </div>
+        <div class="solution-content">
+            <h4><i class="fa-solid fa-gavel"></i> Statutory Remedies Matrix:</h4>
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Order Aggrieved Of</th>
+                            <th>First Available Statutory Remedy</th>
+                            <th>Alternative Remedy</th>
+                            <th>Statutory Limitation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>(i) Scrutiny Order [Sec 270(12)]</strong></td>
+                            <td>Appeal before <strong>CIT(Appeals) / JCIT(A)</strong> under Section 356 in Form 35.</td>
+                            <td>Revision petition before <strong>PCIT/CIT</strong> under Section 378 (waiving appeal).</td>
+                            <td>• Appeal: Within <strong>30 days</strong> of service of Notice of Demand.
+                            <br>• Revision: Within <strong>1 year</strong> of order.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>(ii) Rectification Order [Sec 287]</strong></td>
+                            <td>
+                                • If passed by AO: Appeal to <strong>CIT(A)</strong> u/s 356.
+                                <br>• If passed by CIT(A): Appeal to <strong>ITAT</strong> u/s 362.
+                            </td>
+                            <td>Application for further rectification if patent error persists.</td>
+                            <td>• Appeal to CIT(A): <strong>30 days</strong>.
+                            <br>• Appeal to ITAT: <strong>60 days</strong>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>(iii) Best Judgment Order [Sec 271]</strong></td>
+                            <td>Appeal before <strong>CIT(Appeals) / JCIT(A)</strong> under Section 356.</td>
+                            <td>Revision petition before <strong>PCIT/CIT</strong> under Section 378.</td>
+                            <td>Within <strong>30 days</strong> of service of notice of demand.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>(iv) Intimation u/s 270(1)</strong></td>
+                            <td>Online Rectification Application to <strong>CPC under Section 287</strong>.</td>
+                            <td>Appeal before <strong>CIT(Appeals)</strong> under Section 356 in Form 35.</td>
+                            <td>• Rectification: Within <strong>4 years</strong> from FY end.
+                            <br>• Appeal: Within <strong>30 days</strong> of intimation.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question 12 -->
+    <div class="card practical-card" id="tyk-12">
+        <div class="practical-header">
+            <span class="q-badge">TYK Question 12</span>
+            <h4>Memorandum of Cross-Objections: Eligibility, Timelines &amp; Fee Status</h4>
+        </div>
+        <div class="problem-statement">
+            <p><strong>Question:</strong> Who can file a memorandum of cross-objections before the Appellate Tribunal? What is the time limit? What is the fee for filing a memorandum of cross-objections?</p>
+        </div>
+        <div class="solution-content">
+            <h4><i class="fa-solid fa-gavel"></i> Statutory Analysis &amp; Solution:</h4>
+            <ul class="styled-list">
+                <li><strong>Who Can File [Section 362(4) / Old Section 253(4)]:</strong> The <strong>respondent</strong> in any appeal before the Appellate Tribunal &mdash; whether the <strong>assessee</strong> or the <strong>Assessing Officer</strong> &mdash; has the statutory right to file a memorandum of cross-objections against any part of the order appealed against.</li>
+                <li><strong>Prescribed Form:</strong> The memorandum of cross-objections must be filed in <strong>Form No. 36A</strong>, verified in the prescribed manner.</li>
+                <li><strong>Statutory Time Limit:</strong> Must be filed within <strong>30 days</strong> of receipt of the notice that an appeal has been preferred to the Appellate Tribunal by the other party. The Tribunal may condone delay on sufficient cause shown.</li>
+                <li><strong>Filing Fee:</strong> <span class="badge badge-success" style="font-size: 13px;">NO FEE (NIL)</span> is payable for filing a memorandum of cross-objections.</li>
+                <li><strong>Substantive Legal Status:</strong> Cross-objections are treated by the Tribunal as an independent substantive appeal. They are adjudicated on merits even if the main appeal is dismissed or withdrawn.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- CHAPTER FOOTER & NAVIGATION -->
+                <footer style="margin-top: 64px; padding-top: 32px; border-top: 2px solid var(--slate-100);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+                        <div>
+                            <a href="assessment_procedure.html" style="display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; font-size: 14px;">
+                                <i class="fa-solid fa-arrow-left"></i> Previous: Chapter 15 - Assessment Procedure, Faceless &amp; Reassessment
+                            </a>
+                        </div>
+                        <div>
+                            <a href="../notes/dtnotes.html" style="display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; font-size: 14px;">
+                                Chapter Index: Direct Tax Master Portal <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 40px; color: var(--slate-400); font-size: 13px;">
+                        <p>&copy; 2026 Calcium Notes &bull; CA Final Direct Tax Master Portal &bull; Updated for Finance Act, 2026 &amp; Income-tax Act, 2025.</p>
+                        <p style="font-size: 11.5px; margin-top: 4px;">Strictly for educational review and exam preparation based on the ICAI Study Material.</p>
+                    </div>
+                </footer>
+
+            </div> <!-- End reading-container -->
+        </main>
+    </div> <!-- End page-wrapper -->
+
+    <!-- Interactive JavaScript -->
+    <script>
+        (function() {
+            // 1. Reading Progress Bar
+            const progressBar = document.getElementById('reading-progress');
+            window.addEventListener('scroll', () => {
+                const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = totalHeight > 0 ? (window.scrollY / totalHeight) * 100 : 0;
+                if (progressBar) {
+                    progressBar.style.width = progress + '%';
+                }
+            });
+
+            // 2. Sidebar Search Filter
+            const searchInput = document.getElementById('sidebar-search');
+            const menuLinks = document.querySelectorAll('.sidebar-link');
+            const sectionTitles = document.querySelectorAll('.sidebar-section-title');
+
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    const query = this.value.toLowerCase().trim();
+                    menuLinks.forEach(link => {
+                        const text = link.textContent.toLowerCase();
+                        const href = link.getAttribute('href').toLowerCase();
+                        const match = text.includes(query) || href.includes(query);
+                        link.parentElement.style.display = match ? 'block' : 'none';
+                    });
+
+                    sectionTitles.forEach(title => {
+                        let next = title.nextElementSibling;
+                        let anyVisible = false;
+                        while (next && !next.classList.contains('sidebar-section-title')) {
+                            if (next.style.display !== 'none') {
+                                anyVisible = true;
+                                break;
+                            }
+                            next = next.nextElementSibling;
+                        }
+                        title.style.display = anyVisible || query === '' ? 'block' : 'none';
+                    });
+                });
+            }
+
+            // 3. Active Link Highlighting on Scroll
+            const sections = document.querySelectorAll('section[id], div[id^="ill-"], div[id^="tyk-"]');
+            const observerOptions = {
+                root: null,
+                rootMargin: '-80px 0px -70% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        menuLinks.forEach(link => {
+                            if (link.getAttribute('href') === '#' + id) {
+                                menuLinks.forEach(l => l.classList.remove('active'));
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(sec => observer.observe(sec));
+
+            // 4. Keyboard Shortcuts
+            document.addEventListener('keydown', (e) => {
+                if (e.key === '/' && document.activeElement !== searchInput) {
+                    e.preventDefault();
+                    if (searchInput) {
+                        searchInput.focus();
+                    }
+                } else if (e.key === 'Escape' && document.activeElement === searchInput) {
+                    searchInput.value = '';
+                    searchInput.dispatchEvent(new Event('input'));
+                    searchInput.blur();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

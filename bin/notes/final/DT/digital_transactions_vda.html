@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 12: Taxation of Digital Transactions, Equalisation Levy & VDAs | CA Final Direct Tax Laws | AY 2025-26 & AY 2026-27</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #eff6ff;
+            --secondary: #0d9488;
+            --secondary-light: #f0fdfa;
+            --slate-50: #f8fafc;
+            --slate-100: #f1f5f9;
+            --slate-200: #e2e8f0;
+            --slate-300: #cbd5e1;
+            --slate-400: #94a3b8;
+            --slate-500: #64748b;
+            --slate-600: #475569;
+            --slate-700: #334155;
+            --slate-800: #1e293b;
+            --slate-900: #0f172a;
+            --emerald-600: #059669;
+            --emerald-50: #ecfdf5;
+            --rose-600: #e11d48;
+            --rose-50: #fff1f2;
+            --amber-600: #d97706;
+            --amber-50: #fffbeb;
+            --indigo-600: #4f46e5;
+            --indigo-50: #eef2ff;
+            --purple-600: #9333ea;
+            --purple-50: #faf5ff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: var(--slate-800);
+            background-color: var(--slate-50);
+            line-height: 1.6;
+        }
+
+        /* Top Progress Bar */
+        #reading-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #2563eb, #0d9488, #9333ea);
+            width: 0%;
+            z-index: 1000;
+            transition: width 0.1s ease-out;
+        }
+
+        /* Layout Container */
+        .page-wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sticky Sidebar */
+        .sidebar {
+            width: 320px;
+            flex-shrink: 0;
+            background: #ffffff;
+            border-right: 1px solid var(--slate-200);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            z-index: 100;
+        }
+
+        .sidebar-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--slate-200);
+            background: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .sidebar-brand {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sidebar-title {
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--slate-900);
+            line-height: 1.3;
+        }
+
+        .sidebar-search-container {
+            padding: 12px 24px;
+            background: var(--slate-50);
+            border-bottom: 1px solid var(--slate-200);
+        }
+
+        .sidebar-search {
+            width: 100%;
+            padding: 8px 12px 8px 32px;
+            font-size: 13px;
+            border: 1px solid var(--slate-300);
+            border-radius: 6px;
+            outline: none;
+            background: #ffffff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%2394a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>') no-repeat 10px center;
+            transition: border-color 0.15s ease;
+        }
+
+        .sidebar-search:focus {
+            border-color: var(--primary);
+        }
+
+        .sidebar-nav {
+            padding: 16px 12px 40px 12px;
+            flex-grow: 1;
+        }
+
+        .sidebar-section-title {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--slate-400);
+            padding: 12px 12px 6px 12px;
+        }
+
+        .sidebar-menu {
+            list-style: none;
+            margin-bottom: 8px;
+        }
+
+        .sidebar-item {
+            margin-bottom: 2px;
+        }
+
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            padding: 7px 12px;
+            font-size: 13px;
+            color: var(--slate-600);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.15s ease;
+            line-height: 1.4;
+        }
+
+        .sidebar-link:hover {
+            color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        .sidebar-link.active {
+            color: var(--primary);
+            background: var(--primary-light);
+            font-weight: 700;
+        }
+
+        .sidebar-link i {
+            width: 18px;
+            margin-right: 8px;
+            font-size: 13px;
+            color: var(--slate-400);
+            text-align: center;
+        }
+
+        .sidebar-link.active i {
+            color: var(--primary);
+        }
+
+        /* Main Content Container */
+        .content-area {
+            flex-grow: 1;
+            max-width: calc(100% - 320px);
+            padding: 32px 48px 80px 48px;
+        }
+
+        .reading-container {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        /* Breadcrumbs and Top Navigation */
+        .breadcrumb-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            font-size: 13px;
+        }
+
+        .breadcrumbs {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--slate-500);
+        }
+
+        .breadcrumbs a {
+            color: var(--slate-600);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .breadcrumbs a:hover {
+            color: var(--primary);
+        }
+
+        /* Chapter Banner */
+        .chapter-header {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: 12px;
+            padding: 32px 36px;
+            margin-bottom: 36px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chapter-header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+
+        .chapter-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .chapter-badge {
+            background: var(--primary-light);
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .law-badge {
+            background: var(--secondary-light);
+            color: var(--secondary);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        .chapter-title {
+            font-size: 28px;
+            font-weight: 900;
+            color: var(--slate-900);
+            line-height: 1.25;
+            margin-bottom: 12px;
+        }
+
+        .chapter-subtitle {
+            font-size: 15px;
+            color: var(--slate-600);
+            line-height: 1.5;
+        }
+
+        /* Section Headings */
+        .section-heading {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--slate-900);
+            margin: 48px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--slate-200);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            scroll-margin-top: 24px;
+        }
+
+        .heading-num {
+            background: var(--primary);
+            color: #ffffff;
+            width: 32px;
+            height: 32px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .sub-heading {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--slate-800);
+            margin: 28px 0 14px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Statutory Provision Boxes */
+        .provision-box {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: 10px;
+            padding: 22px 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+        }
+
+        .provision-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 14px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--slate-100);
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .provision-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .statute-badge {
+            background: var(--slate-100);
+            color: var(--slate-700);
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            border: 1px solid var(--slate-200);
+        }
+
+        /* Callouts */
+        .callout {
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 18px 0;
+            display: flex;
+            gap: 14px;
+            font-size: 14px;
+            line-height: 1.55;
+        }
+
+        .callout-icon {
+            font-size: 18px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .callout-info {
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            color: #1e40af;
+        }
+
+        .callout-success {
+            background: var(--emerald-50);
+            border-left: 4px solid var(--emerald-600);
+            color: #065f46;
+        }
+
+        .callout-warning {
+            background: var(--amber-50);
+            border-left: 4px solid var(--amber-600);
+            color: #92400e;
+        }
+
+        .callout-danger {
+            background: var(--rose-50);
+            border-left: 4px solid var(--rose-600);
+            color: #9f1239;
+        }
+
+        .callout-purple {
+            background: var(--purple-50);
+            border-left: 4px solid var(--purple-600);
+            color: #6b21a8;
+        }
+
+        /* Comparative & Statutory Tables */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid var(--slate-200);
+            background: #ffffff;
+        }
+
+        .statutory-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13.5px;
+            text-align: left;
+        }
+
+        .statutory-table th {
+            background: var(--slate-100);
+            color: var(--slate-800);
+            font-weight: 700;
+            padding: 12px 14px;
+            border-bottom: 2px solid var(--slate-200);
+            white-space: nowrap;
+        }
+
+        .statutory-table td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--slate-200);
+            vertical-align: top;
+            color: var(--slate-700);
+        }
+
+        .statutory-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .statutory-table tr:hover td {
+            background: var(--slate-50);
+        }
+
+        /* Illustration and Example Cards */
+        .example-box {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: 10px;
+            padding: 22px 24px;
+            margin: 24px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+            scroll-margin-top: 24px;
+        }
+
+        .example-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--slate-100);
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .example-title {
+            font-size: 15.5px;
+            font-weight: 700;
+            color: var(--indigo-600);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .solution-box {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            border-radius: 8px;
+            padding: 18px 20px;
+            margin-top: 14px;
+        }
+
+        .solution-header {
+            font-weight: 700;
+            color: var(--emerald-600);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+        }
+
+        /* Step Process Cards */
+        .process-flow {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .process-card {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: 8px;
+            padding: 18px;
+            position: relative;
+        }
+
+        .step-num-badge {
+            position: absolute;
+            top: -10px;
+            right: 14px;
+            background: var(--primary);
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar {
+                display: none;
+            }
+            .content-area {
+                max-width: 100%;
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="reading-progress"></div>
+
+    <div class="page-wrapper">
+        <!-- STICKY SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-brand">
+                    <i class="fa-solid fa-laptop-code"></i> Direct Tax Portal
+                </div>
+                <div class="sidebar-title">CA Final Direct Tax Notes</div>
+            </div>
+
+            <div class="sidebar-search-container">
+                <input type="text" id="sidebar-search" class="sidebar-search" placeholder="Search Chapter 12..." autocomplete="off">
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="sidebar-section-title">Digital Economy Foundations</div>
+                <ul class="sidebar-menu">
+                    <li class="sidebar-item"><a href="#sec-overview" class="sidebar-link"><i class="fa-solid fa-compass"></i> Chapter Overview</a></li>
+                    <li class="sidebar-item"><a href="#sec-ecommerce-models" class="sidebar-link"><i class="fa-solid fa-network-wired"></i> E-Commerce Business Models</a></li>
+                    <li class="sidebar-item"><a href="#sec-taxation-challenges" class="sidebar-link"><i class="fa-solid fa-triangle-exclamation"></i> Nexus &amp; International Challenges</a></li>
+                    <li class="sidebar-item"><a href="#sec-beps-sep-nexus" class="sidebar-link"><i class="fa-solid fa-globe"></i> BEPS Action 1 &amp; SEP Rules</a></li>
+                    <li class="sidebar-item"><a href="#sec-equalisation-levy-history" class="sidebar-link"><i class="fa-solid fa-scale-balanced"></i> Equalisation Levy &amp; Phase-out</a></li>
+                    <li class="sidebar-item"><a href="#sec-ecommerce-tds" class="sidebar-link"><i class="fa-solid fa-receipt"></i> E-Commerce Operator TDS (0.1%)</a></li>
+                </ul>
+
+                <div class="sidebar-section-title">Virtual Digital Assets (VDAs)</div>
+                <ul class="sidebar-menu">
+                    <li class="sidebar-item"><a href="#sec-vda-definition-2-111" class="sidebar-link"><i class="fa-brands fa-bitcoin"></i> Sec 2(111): Definition of VDA</a></li>
+                    <li class="sidebar-item"><a href="#sec-vda-tax-charging-194" class="sidebar-link"><i class="fa-solid fa-percent"></i> Sec 194(1): 30% Tax Charging</a></li>
+                    <li class="sidebar-item"><a href="#sec-vda-gift-taxability" class="sidebar-link"><i class="fa-solid fa-gift"></i> Sec 92(2)(m): Gift of VDAs</a></li>
+                    <li class="sidebar-item"><a href="#sec-vda-tds-393" class="sidebar-link"><i class="fa-solid fa-money-bill-transfer"></i> Sec 393(1): 1% TDS on VDAs</a></li>
+                    <li class="sidebar-item"><a href="#sec-crypto-reporting-509" class="sidebar-link"><i class="fa-solid fa-file-shield"></i> Sec 509 &amp; 446: CARF Reporting</a></li>
+                </ul>
+
+                <div class="sidebar-section-title">Practice &amp; Applications</div>
+                <ul class="sidebar-menu">
+                    <li class="sidebar-item"><a href="#sec-illustrations" class="sidebar-link"><i class="fa-solid fa-calculator"></i> ICAI Illustrations (Ill 1 &amp; 2)</a></li>
+                    <li class="sidebar-item"><a href="#sec-tyk" class="sidebar-link"><i class="fa-solid fa-graduation-cap"></i> Test Your Knowledge (Q1 to Q4)</a></li>
+                </ul>
+
+                <div class="sidebar-section-title">Navigation</div>
+                <ul class="sidebar-menu">
+                    <li class="sidebar-item"><a href="../notes/dtnotes.html" class="sidebar-link"><i class="fa-solid fa-book-open"></i> All Chapters Index</a></li>
+                    <li class="sidebar-item"><a href="../notes/dtsections.html" class="sidebar-link"><i class="fa-solid fa-list-ol"></i> Master Section Index</a></li>
+                    <li class="sidebar-item"><a href="tax_planning_gaar.html" class="sidebar-link"><i class="fa-solid fa-arrow-left"></i> Previous: Chapter 11</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- MAIN CONTENT AREA -->
+        <main class="content-area">
+            <div class="reading-container">
+
+                <!-- Breadcrumb Bar -->
+                <div class="breadcrumb-bar">
+                    <div class="breadcrumbs">
+                        <a href="../notes/dtnotes.html"><i class="fa-solid fa-house"></i> DT Hub</a>
+                        <span>/</span>
+                        <a href="../notes/dtnotes.html">Module 2</a>
+                        <span>/</span>
+                        <span style="color: var(--slate-900); font-weight: 700;">Chapter 12: Digital Transactions</span>
+                    </div>
+                    <div style="font-size: 12px; font-weight: 700; color: var(--slate-500);">
+                        Updated for Finance Act, 2026 &amp; ITA 2025
+                    </div>
+                </div>
+
+                <!-- Chapter Banner -->
+                <header class="chapter-header">
+                    <div class="chapter-meta">
+                        <span class="chapter-badge">Chapter 12</span>
+                        <span class="law-badge"><i class="fa-solid fa-scale-balanced"></i> Income-tax Act, 2025</span>
+                        <span class="law-badge"><i class="fa-brands fa-bitcoin"></i> Crypto &amp; VDAs &bull; Sec 194(1)</span>
+                        <span class="law-badge" style="background: var(--purple-50); color: var(--purple-600);"><i class="fa-solid fa-certificate"></i> FA 2026 Updated</span>
+                    </div>
+                    <h1 class="chapter-title">Taxation of Digital Transactions, Equalisation Levy &amp; Virtual Digital Assets (VDAs)</h1>
+                    <p class="chapter-subtitle">
+                        An exhaustive CA Final treatise mastering the digital taxation framework: e-commerce operating models (B2B, B2C, Marketplace vs. Inventory), cross-border taxation hurdles (Permanent Establishment nexus, characterization, and profit attribution), OECD BEPS Action Plan 1, Significant Economic Presence (SEP), phase-out of the Equalisation Levy, comprehensive Virtual Digital Asset (VDA) regime under Section 2(111), flat 30% tax charging under Section 194(1) [legacy 115BBH], strict loss ring-fencing, 1% TDS under Section 393(1) [legacy 194S], and Crypto-asset Reporting Framework (CARF) obligations under Sections 509 &amp; 446.
+                    </p>
+                </header>
+
+                <!-- SECTION 1: CHAPTER OVERVIEW & ARCHITECTURE -->
+                <section id="sec-overview">
+                    <h2 class="section-heading">
+                        <span class="heading-num">1</span>
+                        Chapter Overview &amp; Statutory Scheme of Digital Taxation
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-compass"></i> Statutory Map under Income-tax Act, 2025</span>
+                            <span class="statute-badge">Chapter IV &bull; Chapter XII-G &bull; Chapter XVII-B</span>
+                        </div>
+                        <p>The digitalization of the global economy has revolutionized commercial transactions, eliminating the necessity of physical presence for cross-border market penetration. To capture digital value creation and regulate cryptographic assets, the direct tax framework operates through an integrated statutory architecture:</p>
+
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 14px;">
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); padding: 14px; border-radius: 8px;">
+                                <strong style="color: var(--primary); display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-network-wired"></i> Digital Economy &amp; E-Commerce</strong>
+                                <div style="font-size: 13px; color: var(--slate-600); margin-top: 4px;">Section 402(12) defines electronic commerce. Significant Economic Presence (SEP) under Section 5 expands source-based nexus based on revenue (&gt; ₹2 Cr) and active users (&gt; 3,00,000). Section 393(1) Table Sl. 8(v) levies 0.1% TDS on e-commerce operators.</div>
+                            </div>
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); padding: 14px; border-radius: 8px;">
+                                <strong style="color: var(--purple-600); display: flex; align-items: center; gap: 6px;"><i class="fa-brands fa-bitcoin"></i> Virtual Digital Assets (VDAs)</strong>
+                                <div style="font-size: 13px; color: var(--slate-600); margin-top: 4px;">Section 2(111) defines VDAs (cryptocurrencies &amp; NFTs). Section 194(1) Table Sl. 4 levies a <strong>flat 30% tax</strong> on transfer gains with strict loss isolation. Section 92(2)(m) taxes gifted VDAs under IFOS.</div>
+                            </div>
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); padding: 14px; border-radius: 8px;">
+                                <strong style="color: var(--emerald-600); display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-money-bill-transfer"></i> VDA Withholding &amp; CARF Reporting</strong>
+                                <div style="font-size: 13px; color: var(--slate-600); margin-top: 4px;">Section 393(1) Table Sl. 8(vi) mandates <strong>1% TDS</strong> on transfer payments (₹50k/₹10k thresholds). Section 509 implements the global Crypto-asset Reporting Framework (CARF) with stringent penalties under Section 446.</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 2: E-COMMERCE OPERATING MODELS -->
+                <section id="sec-ecommerce-models">
+                    <h2 class="section-heading">
+                        <span class="heading-num">2</span>
+                        What is Electronic Commerce? Core Business Models
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-server"></i> Statutory Definition &amp; Commercial Classifications</span>
+                            <span class="statute-badge">Section 402(12)</span>
+                        </div>
+                        <p>Under Section 402(12), <strong>&ldquo;electronic commerce&rdquo;</strong> is statutorily defined to mean the <em>supply of goods or services or both, including digital products over digital or electronic network</em>.</p>
+
+                        <div class="sub-heading"><i class="fa-solid fa-layer-group"></i> 1. The Four Primary E-Commerce Segments</div>
+                        <div class="process-flow">
+                            <div class="process-card">
+                                <span class="step-num-badge">B2B</span>
+                                <strong style="color: var(--primary);">Business-to-Business</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    Inter-company wholesale transactions, automated supply-chain procurement, enterprise software integration, and bulk commodity exchanges.
+                                </p>
+                            </div>
+                            <div class="process-card">
+                                <span class="step-num-badge">B2C</span>
+                                <strong style="color: var(--emerald-600);">Business-to-Consumer</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    Commercial sales of tangible merchandise, electronic gadgets, streaming entertainment, and digital downloads directly to retail end-users.
+                                </p>
+                            </div>
+                            <div class="process-card">
+                                <span class="step-num-badge">C2C</span>
+                                <strong style="color: var(--purple-600);">Consumer-to-Consumer</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    Online consumer marketplaces, classified advertisement portals, and peer-to-peer resale platforms facilitating transactions between private individuals.
+                                </p>
+                            </div>
+                            <div class="process-card">
+                                <span class="step-num-badge">C2B</span>
+                                <strong style="color: var(--amber-600);">Consumer-to-Business</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    Freelance service platforms, stock photography portals, influencer affiliate marketing, and crowdsourced consumer initiatives.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="sub-heading" style="margin-top: 24px;"><i class="fa-solid fa-store"></i> 2. Marketplace Model vs. Inventory-Based Model</div>
+                        <p style="font-size: 13.5px;">As recognized under direct tax regulations and Consolidated FDI Policy:</p>
+
+                        <div class="table-responsive">
+                            <table class="statutory-table">
+                                <thead>
+                                    <tr>
+                                        <th>Operating Feature</th>
+                                        <th>Marketplace-Based Model</th>
+                                        <th>Inventory-Based Model</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Core Nature</strong></td>
+                                        <td>Provides an information technology platform on a digital/electronic network to act as a <strong>facilitator</strong> between third-party buyers and sellers.</td>
+                                        <td>The e-commerce entity <strong>owns the inventory</strong> of goods and services and sells directly to consumers.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Ownership of Inventory</strong></td>
+                                        <td>The marketplace operator does not own or take title to the goods sold on the platform.</td>
+                                        <td>The e-commerce entity maintains legal ownership, warehousing, and inventory risk.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Primary Revenue Stream</strong></td>
+                                        <td>Commission fees, listing fees, fulfillment charges, and digital advertising space sold to sellers.</td>
+                                        <td>Direct sales revenue (retail price minus cost of goods sold).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>TDS Applicability</strong></td>
+                                        <td>Subject to <strong>TDS @ 0.1%</strong> on gross sales under Section 393(1) Table Sl. 8(v) [legacy 194-O].</td>
+                                        <td>Normal corporate assessment provisions; TDS u/s 393(1) on purchases where applicable.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 3: TAXATION ISSUES IN DIGITAL ECONOMY -->
+                <section id="sec-taxation-challenges">
+                    <h2 class="section-heading">
+                        <span class="heading-num">3</span>
+                        The Three Core International Tax Challenges in Digital Commerce
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-triangle-exclamation"></i> Nexus, Characterization &amp; Data Attribution Hurdles</span>
+                            <span class="statute-badge">International Jurisprudence</span>
+                        </div>
+                        <p>Traditional international tax treaties (OECD &amp; UN Model Conventions) were drafted in the 1920s predicated on physical brick-and-mortar factories. The digital economy exposes three fatal structural vulnerabilities in this legacy framework:</p>
+
+                        <div style="display: flex; flex-direction: column; gap: 14px; margin: 16px 0;">
+                            <div style="background: var(--slate-50); border-left: 4px solid var(--rose-600); padding: 14px 18px; border-radius: 0 8px 8px 0;">
+                                <strong style="color: var(--rose-600); font-size: 14px;"><i class="fa-solid fa-building-circle-xmark"></i> 1. The Nexus Challenge (Permanent Establishment Breakdown)</strong>
+                                <p style="font-size: 13px; color: var(--slate-600); margin-top: 4px;">
+                                    Under Article 5 and Section 9(1)(i), a source country can tax the business profits of a foreign enterprise only if it maintains a <strong>Permanent Establishment (PE)</strong> &mdash; a fixed place of business or dependent agent. Digital conglomerates operate without physical offices, warehouses, or personnel in market jurisdictions, servicing millions of Indian consumers entirely via automated cloud servers situated in low-tax countries, completely escaping source taxation.
+                                </p>
+                            </div>
+
+                            <div style="background: var(--slate-50); border-left: 4px solid var(--amber-600); padding: 14px 18px; border-radius: 0 8px 8px 0;">
+                                <strong style="color: var(--amber-600); font-size: 14px;"><i class="fa-solid fa-tags"></i> 2. The Characterization Challenge</strong>
+                                <p style="font-size: 13px; color: var(--slate-600); margin-top: 4px;">
+                                    Digital business models blur the legal demarcation between <strong>business profits</strong>, <strong>royalties</strong>, and <strong>fees for technical services (FTS)</strong>:
+                                    <br>&bull; <em>Software-as-a-Service (SaaS):</em> Is payment for accessing cloud accounting software a royalty for use of copyright, or pure business profit?
+                                    <br>&bull; <em>Online Subscriptions:</em> Are fees paid to read digital journals or access legal databases royalties for process/information, or business receipts?
+                                    <br>&bull; <em>Targeted Online Advertising:</em> Are advertising payments made to search engines business profits or technical service fees?
+                                </p>
+                            </div>
+
+                            <div style="background: var(--slate-50); border-left: 4px solid var(--indigo-600); padding: 14px 18px; border-radius: 0 8px 8px 0;">
+                                <strong style="color: var(--indigo-600); font-size: 14px;"><i class="fa-solid fa-database"></i> 3. The Data Valuation &amp; User Attribution Challenge</strong>
+                                <p style="font-size: 13px; color: var(--slate-600); margin-top: 4px;">
+                                    In modern digital platforms (social networks, search engines, ride-hailing apps), economic value is co-created by user engagement, search habits, uploaded content, and continuous algorithmic data harvesting. Traditional transfer pricing rules (functions, assets, risks - FAR analysis) fail to attribute any taxable profit to the jurisdiction where the users reside and generate this valuable data.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 4: BEPS ACTION 1 & SIGNIFICANT ECONOMIC PRESENCE (SEP) -->
+                <section id="sec-beps-sep-nexus">
+                    <h2 class="section-heading">
+                        <span class="heading-num">4</span>
+                        OECD BEPS Action Plan 1 &amp; Significant Economic Presence (SEP)
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-globe"></i> Action Plan 1 Recommendations &amp; The Indian SEP Framework</span>
+                            <span class="statute-badge">BEPS Action 1 &bull; Sec 5 / Sec 9(1)(i)</span>
+                        </div>
+                        <p>Under the G20-OECD Base Erosion and Profit Shifting (BEPS) Action Plan 1, member nations recognized that the digital economy exacerbates BEPS risks. The committee recommended three domestic safeguard options: (i) a new nexus based on Significant Economic Presence; (ii) a withholding tax on digital transactions; and (iii) an equalisation levy.</p>
+
+                        <div class="sub-heading"><i class="fa-solid fa-signal"></i> The Significant Economic Presence (SEP) Test in Indian Law</div>
+                        <p style="font-size: 13.5px;">
+                            India was among the first nations to enact the <strong>Significant Economic Presence (SEP)</strong> doctrine under Section 9(1)(i) [read with Section 5 of ITA 2025], establishing a statutory &lsquo;business connection&rsquo; based strictly on economic interaction, regardless of physical location:
+                        </p>
+
+                        <div class="table-responsive">
+                            <table class="statutory-table">
+                                <thead>
+                                    <tr>
+                                        <th>SEP Limb / Test</th>
+                                        <th>Statutory Condition &amp; Quantitative Threshold</th>
+                                        <th>Scope of Coverage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Limb A: Revenue / Transaction Threshold</strong></td>
+                                        <td>
+                                            Aggregate payments arising from transactions in respect of any goods, services, or property carried out by a non-resident with any person in India exceed <strong style="color: var(--primary);">₹2 Crore</strong> (INR 20,000,000) during the tax year.
+                                        </td>
+                                        <td>Includes digital transactions, cloud hosting, software/data downloads, digital content streaming, and online subscriptions.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Limb B: User / Interaction Threshold</strong></td>
+                                        <td>
+                                            Systematic and continuous soliciting of business activities or engaging in interaction with <strong style="color: var(--purple-600);">3,00,000 users</strong> (3 Lakh active users) in India through digital means.
+                                        </td>
+                                        <td>Covers social networking platforms, search engines, ride-hailing networks, interactive gaming, and online streaming applications.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="callout callout-info">
+                            <div class="callout-icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div>
+                                <strong>Physical Presence Expressly Irrelevant:</strong>
+                                <br>The statute explicitly mandates that an arrangement shall constitute a Significant Economic Presence in India <strong>whether or not</strong>:
+                                <ul style="margin-top: 4px; padding-left: 18px;">
+                                    <li>(i) The agreement for such transactions or activities is entered into in India;</li>
+                                    <li>(ii) The non-resident has a residence or place of business in India; or</li>
+                                    <li>(iii) The non-resident renders services in India!</li>
+                                </ul>
+                                <br><em>Interplay with Tax Treaties (DTAA):</em> Under Section 90(2), a foreign tax resident can claim the beneficial provisions of a DTAA. Since traditional tax treaties require a physical Permanent Establishment (PE) under Article 5, foreign enterprises resident in treaty partner countries continue to be protected from SEP taxation unless they have a fixed place PE in India.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 5: EQUALISATION LEVY HISTORY & PHASE-OUT -->
+                <section id="sec-equalisation-levy-history">
+                    <h2 class="section-heading">
+                        <span class="heading-num">5</span>
+                        Equalisation Levy: Genesis, Operation &amp; Legislative Phase-Out
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-scale-balanced"></i> The Rise and Sunset of Equalisation Levy</span>
+                            <span class="statute-badge">FA 2016 &bull; FA 2020 &bull; FA 2025 Abolition</span>
+                        </div>
+                        <p>Pending a global multilateral consensus on digital taxation (OECD Pillar One), India implemented unilateral Equalisation Levies as interim equalizers:</p>
+
+                        <div class="table-responsive">
+                            <table class="statutory-table">
+                                <thead>
+                                    <tr>
+                                        <th>Levy Classification</th>
+                                        <th>Enacting Statute</th>
+                                        <th>Rate &amp; Scope</th>
+                                        <th>Legislative Status &amp; Sunsetting</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Online Advertisement Levy</strong></td>
+                                        <td>Chapter VIII, Finance Act, 2016</td>
+                                        <td><strong>6%</strong> on gross consideration exceeding ₹1,00,000 received by a non-resident without an Indian PE from an Indian business resident for specified online advertising services.</td>
+                                        <td><strong style="color: var(--rose-600);"><i class="fa-solid fa-ban"></i> ABOLISHED by Finance Act, 2025</strong> in alignment with international bilateral agreements and transitional consensus.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>E-Commerce Supply Levy</strong></td>
+                                        <td>Finance Act, 2020 Amendment</td>
+                                        <td><strong>2%</strong> on gross consideration received by non-resident e-commerce operators exceeding ₹2 Crore per annum for online supply of goods or facilitation of services to Indian residents.</td>
+                                        <td><strong style="color: var(--rose-600);"><i class="fa-solid fa-ban"></i> WITHDRAWN w.e.f. 01.08.2024</strong> by Finance (No. 2) Act, 2024 to foster digital trade and prevent retaliatory international tariffs.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 6: E-COMMERCE OPERATOR TDS (0.1%) -->
+                <section id="sec-ecommerce-tds">
+                    <h2 class="section-heading">
+                        <span class="heading-num">6</span>
+                        Section 393(1) Table Sl. 8(v): TDS on E-Commerce Operators
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-receipt"></i> Withholding Tax on E-Commerce Marketplaces</span>
+                            <span class="statute-badge">Sec 393(1) Table Sl. 8(v) &bull; Legacy Sec 194-O</span>
+                        </div>
+                        <p>To establish a digital audit trail and monitor transactions facilitated through online marketplaces, a dedicated withholding regime operates under Section 393(1) Table Sl. No. 8(v):</p>
+
+                        <div class="process-flow">
+                            <div class="process-card">
+                                <span class="step-num-badge">Rate</span>
+                                <strong style="color: var(--primary);">Concessional 0.1% Rate</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    Tax is deductible @ <strong>0.1%</strong> (reduced from 1% to prevent working capital blockage for e-commerce sellers) on the gross amount of sales of goods or provision of services.
+                                </p>
+                            </div>
+
+                            <div class="process-card">
+                                <span class="step-num-badge">Deductor</span>
+                                <strong style="color: var(--emerald-600);">E-Commerce Operator</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    Every e-commerce operator responsible for paying or crediting consideration to a resident e-commerce participant.
+                                </p>
+                            </div>
+
+                            <div class="process-card">
+                                <span class="step-num-badge">Threshold</span>
+                                <strong style="color: var(--amber-600);">₹5 Lakh Exemption</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    No deduction is required if the participant is an <strong>individual or HUF</strong>, gross annual sales &le; <strong>₹5,00,000</strong>, and PAN/Aadhaar is furnished.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="callout callout-success" style="margin-top: 14px;">
+                            <div class="callout-icon"><i class="fa-solid fa-code-compare"></i></div>
+                            <div>
+                                <strong>Deemed Credit &amp; Overlap Precedence:</strong>
+                                <br>&bull; <strong>Direct Payments Included:</strong> Any payment made directly by a purchaser to an e-commerce participant (e.g. Cash on Delivery or direct UPI) is statutorily <strong>deemed to be an amount credited/paid by the e-commerce operator</strong> and subject to 0.1% TDS.
+                                <br>&bull; <strong>Statutory Precedence:</strong> Once tax is deducted under this entry, no other TDS provision (Section 194C contractor, Section 194J professional, or Section 194Q purchase of goods) shall apply to the same transaction.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 7: VDA STATUTORY DEFINITION [SECTION 2(111)] -->
+                <section id="sec-vda-definition-2-111">
+                    <span id="sec-2-111"></span>
+                    <h2 class="section-heading">
+                        <span class="heading-num">7</span>
+                        Section 2(111): Definition &amp; Scope of Virtual Digital Assets
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-brands fa-bitcoin"></i> Meaning of &lsquo;Virtual Digital Asset&rsquo; (VDA)</span>
+                            <span class="statute-badge">Section 2(111) &bull; Legacy Sec 2(47A)</span>
+                        </div>
+                        <p>Under Section 2(111), <strong>&ldquo;virtual digital asset&rdquo; (VDA)</strong> is statutorily defined to mean:</p>
+
+                        <div style="display: flex; flex-direction: column; gap: 12px; margin: 16px 0;">
+                            <div style="background: var(--slate-50); border-left: 4px solid var(--primary); padding: 12px 16px; border-radius: 0 6px 6px 0; font-size: 13.5px;">
+                                <strong>(a) Cryptographic Codes &amp; Tokens:</strong> Any information or code or number or token (not being Indian currency or foreign currency), generated through cryptographic means or otherwise, by whatever name called, providing a digital representation of value exchanged with or without consideration, with the promise or representation of having inherent value, or functioning as a store of value or a unit of account.
+                            </div>
+
+                            <div style="background: var(--slate-50); border-left: 4px solid var(--purple-600); padding: 12px 16px; border-radius: 0 6px 6px 0; font-size: 13.5px;">
+                                <strong>(b) Non-Fungible Tokens (NFTs):</strong> A non-fungible token or any other token of similar nature, by whatever name called, which provides cryptographic ownership rights over underlying digital or physical assets.
+                            </div>
+
+                            <div style="background: var(--slate-50); border-left: 4px solid var(--emerald-600); padding: 12px 16px; border-radius: 0 6px 6px 0; font-size: 13.5px;">
+                                <strong>(c) Notified Digital Assets:</strong> Any other digital asset as the Central Government may, by notification in the Official Gazette, specify.
+                            </div>
+                        </div>
+
+                        <!-- Statutory Exclusions -->
+                        <div class="callout callout-warning">
+                            <div class="callout-icon"><i class="fa-solid fa-ban"></i></div>
+                            <div>
+                                <strong>Statutory Exclusions from the VDA Definition:</strong>
+                                <br>The Central Government has specifically excluded the following digital assets from the ambit of VDA:
+                                <ul style="margin-top: 4px; padding-left: 18px;">
+                                    <li>&bull; <strong>Gift cards or vouchers</strong> that can be redeemed for goods or services or discounts from specified merchants;</li>
+                                    <li>&bull; <strong>Mileage points, reward points, or loyalty points</strong> awarded under loyalty programs without direct monetary redemption;</li>
+                                    <li>&bull; <strong>Subscriptions</strong> to websites, software platforms, or mobile applications.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <p style="font-size: 13.5px; margin-top: 10px;">
+                            <strong>VDA Need Not Be a Capital Asset:</strong> The statutory definition of &lsquo;transfer&rsquo; under Section 2(109) applies to any virtual digital asset. Whether held as an investment, stock-in-trade, or personal asset, any sale, exchange, or relinquishment of a VDA triggers tax liability exclusively under the special charging code of Section 194(1).
+                        </p>
+                    </div>
+                </section>
+
+                <!-- SECTION 8: 30% TAX CHARGING & RING-FENCING [SECTION 194(1)] -->
+                <section id="sec-vda-tax-charging-194">
+                    <span id="sec-194-1"></span>
+                    <h2 class="section-heading">
+                        <span class="heading-num">8</span>
+                        Section 194(1) Table Sl. 4: Flat 30% Tax &amp; Strict Ring-Fencing
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-percent"></i> Special Tax Rate on Income from Transfer of VDAs</span>
+                            <span class="statute-badge">Sec 194(1) Table Sl. 4 &bull; Legacy Sec 115BBH</span>
+                        </div>
+                        <p>Section 194(1) [Table: Sl. No. 4] prescribes an uncompromising, ring-fenced tax regime for income arising from the transfer of any virtual digital asset:</p>
+
+                        <div class="table-responsive">
+                            <table class="statutory-table">
+                                <thead>
+                                    <tr>
+                                        <th>Statutory Element</th>
+                                        <th>Legislative Mandate &amp; Restriction</th>
+                                        <th>Statutory Impact on Taxpayer</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Flat Tax Rate</strong></td>
+                                        <td><strong style="color: var(--rose-600); font-size: 16px;">30%</strong> (+ applicable Surcharge + 4% HEC)</td>
+                                        <td>Effective basic rate of 31.20% (prior to surcharge). Applies regardless of holding period (no long-term concessional rate).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Permissible Deductions</strong></td>
+                                        <td><strong style="color: var(--emerald-600);">Cost of Acquisition ONLY</strong></td>
+                                        <td>Under clause (a), <strong>no deduction</strong> is allowed in respect of any expenditure (other than cost of acquisition). Disallowed expenses include: exchange commissions, trading fees, transfer gas charges, electricity, mining equipment depreciation, and interest on loans!</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Set-Off Against Other Heads</strong></td>
+                                        <td><strong style="color: var(--rose-600);">STRICTLY PROHIBITED</strong></td>
+                                        <td>Under clause (b), no loss from transfer of VDA can be set off against income under any other head (Salaries, House Property, PGBP, Capital Gains, or IFOS).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Inter-VDA Loss Set-Off</strong></td>
+                                        <td><strong style="color: var(--rose-600);">STRICTLY PROHIBITED</strong></td>
+                                        <td>Loss from the transfer of one VDA (e.g. loss on an NFT) <strong>cannot be set off against gain from another VDA</strong> (e.g. gain on Bitcoin). Each profitable VDA transaction is taxed @ 30% in isolation!</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Carry Forward of Losses</strong></td>
+                                        <td><strong style="color: var(--rose-600);">NIL CARRY FORWARD</strong></td>
+                                        <td>Unabsorbed loss arising from VDA transfers lapses in the year of occurrence and cannot be carried forward to any subsequent assessment year.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Basic Exemption Adjustment</strong></td>
+                                        <td><strong style="color: var(--rose-600);">NO ADJUSTMENT</strong></td>
+                                        <td>VDA income cannot be reduced by the unexhausted basic exemption limit (under either default or optional tax regimes).</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Chapter VIII Deductions</strong></td>
+                                        <td><strong style="color: var(--rose-600);">NO DEDUCTION</strong></td>
+                                        <td>No deduction under Chapter VIII (Section 122 to 154 / 80C to 80U) is allowable from income from transfer of VDAs.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 9: GIFT OF VIRTUAL DIGITAL ASSETS [SECTION 92(2)(m)] -->
+                <section id="sec-vda-gift-taxability">
+                    <h2 class="section-heading">
+                        <span class="heading-num">9</span>
+                        Section 92(2)(m): Taxation of Gifted VDAs under IFOS
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-gift"></i> VDA as &lsquo;Property&rsquo; under Deemed Gift Provisions</span>
+                            <span class="statute-badge">Sec 92(2)(m) &bull; Sec 92(5)(f) &bull; Legacy Sec 56(2)(x)</span>
+                        </div>
+                        <p>To prevent tax avoidance through off-market token transfers, Section 92(5)(f) explicitly incorporates Virtual Digital Assets within the statutory definition of <strong>&ldquo;property&rdquo;</strong>:</p>
+
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin: 16px 0;">
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: 8px; padding: 16px;">
+                                <strong style="color: var(--primary); font-size: 14.5px;"><i class="fa-solid fa-hand-holding-dollar"></i> 1. Transfer Without Consideration</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600); line-height: 1.6;">
+                                    Where any person receives any VDA without consideration from any person, and the aggregate Fair Market Value (FMV) of such VDAs exceeds <strong>₹50,000</strong> during the tax year, the <strong>entire aggregate FMV</strong> is chargeable to tax in the hands of the recipient under the head &ldquo;Income from Other Sources&rdquo; (taxed at regular slab rates).
+                                </p>
+                            </div>
+
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: 8px; padding: 16px;">
+                                <strong style="color: var(--purple-600); font-size: 14.5px;"><i class="fa-solid fa-tags"></i> 2. Inadequate Consideration</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600); line-height: 1.6;">
+                                    Where any VDA is received for a consideration that is less than the aggregate FMV by an amount exceeding <strong>₹50,000</strong>, the excess of aggregate FMV over such consideration is taxable in the hands of the recipient under IFOS.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="callout callout-info">
+                            <div class="callout-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div>
+                                <strong>Statutory Exemptions Applicable to VDA Gifts:</strong>
+                                <br>The standard statutory exemptions under Section 92(2)(m) apply to VDA receipts as well. No tax is leviable if the VDA is received:
+                                <ul style="margin-top: 4px; padding-left: 18px;">
+                                    <li>(a) From any <strong>relative</strong> (spouse, brother/sister, lineal ascendant/descendant);</li>
+                                    <li>(b) On the occasion of the <strong>marriage</strong> of the individual;</li>
+                                    <li>(c) Under a <strong>will</strong> or by way of <strong>inheritance</strong>; or</li>
+                                    <li>(d) From any registered charitable trust, medical or educational institution.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 10: VDA WITHHOLDING TAX [SECTION 393(1) TABLE SL. 8(vi)] -->
+                <section id="sec-vda-tds-393">
+                    <span id="sec-393-1-vda"></span>
+                    <h2 class="section-heading">
+                        <span class="heading-num">10</span>
+                        Section 393(1) Table Sl. 8(vi): 1% TDS on Transfer of VDAs
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-money-bill-transfer"></i> Comprehensive Withholding Code on Virtual Digital Assets</span>
+                            <span class="statute-badge">Sec 393(1) Table Sl. 8(vi) &bull; Legacy Sec 194S</span>
+                        </div>
+                        <p>To establish an unalterable audit trail across crypto transactions, Section 393(1) [Table: Sl. No. 8(vi)] mandates deduction of tax at source at the point of transfer:</p>
+
+                        <div class="process-flow">
+                            <div class="process-card">
+                                <span class="step-num-badge">Rate</span>
+                                <strong style="color: var(--primary);">Flat 1% Withholding</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    Tax is deductible @ <strong>1%</strong> of the gross sum paid or credited to any resident transferor by way of consideration for transfer of a VDA.
+                                </p>
+                            </div>
+
+                            <div class="process-card">
+                                <span class="step-num-badge">Timing</span>
+                                <strong style="color: var(--emerald-600);">Credit or Payment</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    Deduction must be made at the time of credit of such sum to the account of the resident or at the time of payment by any mode, whichever is earlier.
+                                </p>
+                            </div>
+
+                            <div class="process-card">
+                                <span class="step-num-badge">In-Kind</span>
+                                <strong style="color: var(--rose-600);">VDA-for-VDA Exchanges</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600);">
+                                    Where consideration is wholly or partly in kind or in exchange of another VDA, the payer must ensure tax has been paid before releasing the consideration.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Threshold Table -->
+                        <div class="sub-heading" style="margin-top: 24px;"><i class="fa-solid fa-filter"></i> Statutory Non-Applicability Thresholds [Section 393(4) Table Sl. 12]</div>
+                        <div class="table-responsive">
+                            <table class="statutory-table">
+                                <thead>
+                                    <tr>
+                                        <th>Category of Payer / Deductor</th>
+                                        <th>Statutory Definition &amp; Qualifying Criteria</th>
+                                        <th>Exemption Threshold</th>
+                                        <th>Procedural Relief</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Specified Person<br>[Sl. No. 12(a)]</strong></td>
+                                        <td>
+                                            &bull; An Individual or HUF who does <strong>NOT have any income under PGBP</strong>; OR<br>
+                                            &bull; An Individual or HUF whose total sales, gross receipts or turnover does not exceed <strong>₹1 Crore</strong> (business) or <strong>₹50 Lakh</strong> (profession) in the preceding year.
+                                        </td>
+                                        <td><strong style="color: var(--emerald-600); font-size: 15px;">₹50,000</strong><br>(No TDS if aggregate annual consideration &le; ₹50,000)</td>
+                                        <td>
+                                            <strong style="color: var(--primary);">TAN NOT Required [Sec 397]:</strong> Exempt from obtaining TAN. Remits tax using challan-cum-statement in <strong>Form No. 141</strong> within 30 days.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Other Persons<br>[Sl. No. 12(b)]</strong></td>
+                                        <td>
+                                            All companies, partnership firms, LLPs, AOPs, and individuals/HUFs with business turnover exceeding ₹1 Crore or professional receipts exceeding ₹50 Lakh.
+                                        </td>
+                                        <td><strong style="color: var(--rose-600); font-size: 15px;">₹10,000</strong><br>(No TDS if aggregate annual consideration &le; ₹10,000)</td>
+                                        <td>
+                                            <strong>TAN Mandatory:</strong> Must obtain TAN, deposit via challan ITNS 281 by 7th of next month, and file quarterly statement in <strong>Form No. 140</strong>.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- CBDT Circular Guidelines -->
+                        <div class="sub-heading" style="margin-top: 24px;"><i class="fa-solid fa-book-open-reader"></i> CBDT Guidelines: Circular No. 13/2022 &amp; 14/2022</div>
+                        <div style="display: flex; flex-direction: column; gap: 12px; margin: 12px 0;">
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); padding: 12px 16px; border-radius: 6px; font-size: 13px;">
+                                <strong>1. Transactions on an Exchange:</strong> When a transfer takes place on or through a registered Crypto Exchange, the primary duty to deduct tax rests with the <strong>Exchange</strong> crediting or making payment to the seller. If payment is made through a broker, the broker must deduct tax.
+                            </div>
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); padding: 12px 16px; border-radius: 6px; font-size: 13px;">
+                                <strong>2. VDA-to-VDA Exchange (Cryptocurrency Swap):</strong> In a crypto-for-crypto swap on an Exchange, both parties are transferors. The Exchange can deduct 1% tax in kind from both legs, convert the withheld crypto to INR on the Exchange at market rates at day-end, and remit to the Government. No further TDS is triggered on such conversion.
+                            </div>
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); padding: 12px 16px; border-radius: 6px; font-size: 13px;">
+                                <strong>3. Precedence Over Other TDS Provisions:</strong> Where tax is deductible under Section 393(1) Table Sl. 8(vi), <strong>NO tax is deductible under Section 393(1) Table Sl. 8(ii) [goods purchase / legacy 194Q]</strong> or <strong>Table Sl. 8(v) [e-commerce / legacy 194-O]</strong>.
+                            </div>
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); padding: 12px 16px; border-radius: 6px; font-size: 13px;">
+                                <strong>4. Payment Gateway Exemption:</strong> In transactions where buyers pay through payment gateways, the payment gateway is not required to deduct tax if the Exchange has already deducted tax.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 11: CRYPTO-ASSET REPORTING & PENALTIES [SECTIONS 509 & 446] -->
+                <section id="sec-crypto-reporting-509">
+                    <span id="sec-509"></span>
+                    <span id="sec-446"></span>
+                    <h2 class="section-heading">
+                        <span class="heading-num">11</span>
+                        Sections 509 &amp; 446: Crypto-Asset Reporting Framework (CARF)
+                    </h2>
+
+                    <div class="provision-box">
+                        <div class="provision-header">
+                            <span class="provision-title"><i class="fa-solid fa-file-shield"></i> Reporting Obligations &amp; Penal Enforcement</span>
+                            <span class="statute-badge">Sections 509 &bull; 446</span>
+                        </div>
+                        <p>Under international commitments to the OECD Crypto-asset Reporting Framework (CARF), India mandates comprehensive third-party reporting to eliminate black-market offshore crypto flows:</p>
+
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin: 16px 0;">
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: 8px; padding: 16px;">
+                                <strong style="color: var(--primary); font-size: 14.5px;"><i class="fa-solid fa-file-invoice"></i> Section 509: Obligation to Furnish Information</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600); line-height: 1.6;">
+                                    Every reporting entity &mdash; including crypto exchanges, custodial wallet providers, token issuers, and peer-to-peer brokerages &mdash; must furnish an annual statement of financial transactions (SFT) detailing all crypto transactions, wallet IDs, transaction values, and user identities.
+                                </p>
+                            </div>
+
+                            <div style="background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: 8px; padding: 16px;">
+                                <strong style="color: var(--rose-600); font-size: 14.5px;"><i class="fa-solid fa-gavel"></i> Section 446: Stringent Penal Consequences</strong>
+                                <p style="font-size: 13px; margin-top: 6px; color: var(--slate-600); line-height: 1.6;">
+                                    &bull; <strong>Delay in Filing:</strong> Penalty of <strong>₹500 per day</strong> of default under Section 446(1).
+                                    <br>&bull; <strong>Inaccurate Information:</strong> Where an entity deliberately furnishes inaccurate crypto reporting data or fails to rectify errors, a flat penalty of <strong>₹50,000</strong> is leviable under Section 446(2).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 12: ICAI ILLUSTRATIONS & PRACTICAL CASE STUDIES -->
+                <section id="sec-illustrations">
+                    <h2 class="section-heading">
+                        <span class="heading-num">12</span>
+                        ICAI Study Material Illustrations &bull; Step-by-Step Solutions
+                    </h2>
+
+                    <!-- ILLUSTRATION 1 -->
+                    <div class="example-box" id="ill-1">
+                        <div class="example-header">
+                            <span class="example-title"><i class="fa-solid fa-calculator"></i> Illustration 1: Mr. Abhinav &bull; Optional Slab vs. 30% VDA Tax &amp; TDS Credit</span>
+                            <span class="statute-badge">ICAI Illustration 1 &bull; TY 2026-27</span>
+                        </div>
+                        <p><strong>Problem Statement:</strong> Compute the net income-tax payable (after TDS, if any) by Mr. Abhinav, aged 32 years, who has the following income for the tax year 2026-27:</p>
+                        <ul style="margin: 6px 0 10px 20px; font-size: 13.5px; line-height: 1.6;">
+                            <li>(i) Interest on fixed deposits with SBI (Gross): <strong>₹1,10,000</strong></li>
+                            <li>(ii) Interest on savings bank account with SBI: <strong>₹35,000</strong></li>
+                            <li>(iii) Consideration for transfer of VDA: <strong>₹4,62,000</strong></li>
+                            <li>(iv) Cost of acquisition of VDA: <strong>₹21,000</strong></li>
+                            <li>(v) Expenses on transfer of VDA: <strong>₹1,000</strong></li>
+                        </ul>
+                        <p style="font-size: 13.5px;">Mr. Abhinav has exercised the option to shift out of the default tax regime (i.e. governed by optional normal slab rates with basic exemption limit of ₹2,50,000).</p>
+
+                        <div class="solution-box">
+                            <div class="solution-header"><i class="fa-solid fa-square-root-variable"></i> Step-by-Step Computation &amp; Statutory Analysis</div>
+                            <div style="font-size: 13.5px; line-height: 1.65;">
+                                1. <strong>Computation of Total Income (Excluding VDA):</strong>
+                                <br>&bull; Interest on FD: ₹1,10,000
+                                <br>&bull; Interest on Savings Bank: ₹35,000
+                                <br>&bull; Gross Total Income (Excluding VDA): ₹1,45,000
+                                <br>&bull; Less: Deduction under Section 153 (legacy Section 80TTA) on SB interest: ₹10,000
+                                <br>&bull; <strong>Total Income (Excluding VDA):</strong> ₹1,35,000
+                                <br>Since normal total income is ₹1,35,000 (below basic exemption limit of ₹2,50,000), normal tax is <strong>NIL</strong>.
+
+                                <br><br>2. <strong>Non-Adjustment of Unexhausted Basic Exemption Limit:</strong>
+                                <br>The unexhausted basic exemption limit is ₹1,15,000 (₹2,50,000 &minus; ₹1,35,000). Under Section 194(1) Table Sl. No. 4 [legacy 115BBH], <strong>NO unexhausted basic exemption limit can be set off against income from transfer of VDA</strong>.
+
+                                <br><br>3. <strong>Computation of Income from Transfer of VDA:</strong>
+                                <br>&bull; Consideration for transfer: ₹4,62,000
+                                <br>&bull; Less: Cost of acquisition: ₹21,000
+                                <br>&bull; Less: Expenses on transfer: <strong>NIL</strong> (Under Section 194(1) Table Sl. 4, no deduction for any expense other than cost of acquisition is allowed; ₹1,000 is disallowed).
+                                <br>&bull; <strong>Taxable VDA Income:</strong> ₹4,41,000
+
+                                <br><br>4. <strong>Tax Calculation:</strong>
+                                <div class="table-responsive" style="margin: 8px 0;">
+                                    <table class="statutory-table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Tax on income other than VDA (₹1,35,000)</td>
+                                                <td style="text-align: right; font-weight: 700;">₹Nil</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tax on VDA Income @ 30% on ₹4,41,000 u/s 194(1)</td>
+                                                <td style="text-align: right; font-weight: 700;">₹1,32,300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Add: Health and Education Cess @ 4%</td>
+                                                <td style="text-align: right; font-weight: 700;">₹5,292</td>
+                                            </tr>
+                                            <tr style="background: var(--slate-100);">
+                                                <td><strong>Total Income-tax Payable</strong></td>
+                                                <td style="text-align: right; font-weight: 800; color: var(--primary);">₹1,37,592</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Less: TDS u/s 393(1) Table Sl. 5(ii) on FD interest (10% of ₹1,10,000)</td>
+                                                <td style="text-align: right; color: var(--emerald-600);">(₹11,000)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Less: TDS u/s 393(1) Table Sl. 8(vi) on VDA transfer (1% of ₹4,62,000)</td>
+                                                <td style="text-align: right; color: var(--emerald-600);">(₹4,620)</td>
+                                            </tr>
+                                            <tr style="background: #f0fdf4;">
+                                                <td><strong>Net Income-tax Payable</strong> [₹1,37,592 &minus; ₹15,620]</td>
+                                                <td style="text-align: right; font-weight: 800; color: var(--emerald-600);">₹1,21,972</td>
+                                            </tr>
+                                            <tr style="background: var(--emerald-50);">
+                                                <td><strong>Net Tax Payable (Rounded off u/s 288B)</strong></td>
+                                                <td style="text-align: right; font-weight: 900; color: var(--emerald-600); font-size: 15px;">₹1,21,970</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ILLUSTRATION 2 -->
+                    <div class="example-box" id="ill-2">
+                        <div class="example-header">
+                            <span class="example-title"><i class="fa-solid fa-calculator"></i> Illustration 2: Mr. Siddhanth &bull; Default Regime, Specified Person &amp; ₹50k TDS Cap</span>
+                            <span class="statute-badge">ICAI Illustration 2 &bull; TY 2026-27</span>
+                        </div>
+                        <p><strong>Problem Statement:</strong> Compute the net income-tax payable (after TDS, if any) by Mr. Siddhanth, aged 24 years, who has the following income for the tax year 2026-27:</p>
+                        <ul style="margin: 6px 0 10px 20px; font-size: 13.5px; line-height: 1.6;">
+                            <li>(i) Income from Salaries (computed): <strong>₹8,40,000</strong></li>
+                            <li>(ii) Interest on savings bank account with Axis Bank: <strong>₹12,000</strong></li>
+                            <li>(iii) Consideration on transfer of VDA to Mr. Harsh: <strong>₹50,000</strong></li>
+                            <li>(iv) Cost of acquisition of VDA transferred: <strong>₹5,000</strong></li>
+                        </ul>
+                        <p style="font-size: 13.5px;">Mr. Harsh is employed with ABC Ltd. on a monthly salary of ₹50,000 with SB interest of ₹15,000, and does not have any PGBP income. Mr. Siddhanth has NOT exercised the option to shift out of the default tax regime under Section 202 (Finance Act, 2026 tax slabs). Ignore TDS on income other than VDA.</p>
+
+                        <div class="solution-box">
+                            <div class="solution-header"><i class="fa-solid fa-square-root-variable"></i> Step-by-Step Computation &amp; Statutory Analysis</div>
+                            <div style="font-size: 13.5px; line-height: 1.65;">
+                                1. <strong>Classification of Mr. Harsh as a &lsquo;Specified Person&rsquo;:</strong>
+                                <br>Mr. Harsh does not have any income under the head PGBP. Therefore, under Section 393(4) [Table: Sl. No. 12(a)], he is a <strong>Specified Person</strong>. The threshold limit for deduction of tax by a specified person is <strong>₹50,000</strong> during the tax year.
+                                <br>Since the consideration payable by him is exactly ₹50,000 (does not exceed ₹50,000), <strong>Mr. Harsh is NOT required to deduct tax</strong> under Section 393(1) Table Sl. 8(vi). Hence, TDS credit available to Mr. Siddhanth is <strong>NIL</strong>.
+
+                                <br><br>2. <strong>Tax Computation under Default Tax Regime (Section 202):</strong>
+                                <div class="table-responsive" style="margin: 8px 0;">
+                                    <table class="statutory-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Particulars</th>
+                                                <th style="text-align: right;">Amount (₹)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Salary Income (₹8,40,000) + SB Interest (₹12,000)</td>
+                                                <td style="text-align: right; font-weight: 700;">8,52,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Income from VDA (₹50,000 &minus; ₹5,000)</td>
+                                                <td style="text-align: right; font-weight: 700;">45,000</td>
+                                            </tr>
+                                            <tr style="background: var(--slate-100);">
+                                                <td><strong>Total Income</strong></td>
+                                                <td style="text-align: right; font-weight: 800; color: var(--primary);">8,97,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Tax on Normal Income (₹8,52,000):</strong><br>
+                                                    &bull; Upto ₹4,00,000: Nil<br>
+                                                    &bull; ₹4,00,001 to ₹8,00,000 @ 5%: ₹20,000<br>
+                                                    &bull; ₹8,00,001 to ₹8,52,000 @ 10%: ₹5,200
+                                                </td>
+                                                <td style="text-align: right; font-weight: 700;">25,200</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tax on VDA Income @ 30% on ₹45,000</td>
+                                                <td style="text-align: right; font-weight: 700;">13,500</td>
+                                            </tr>
+                                            <tr style="background: var(--slate-100);">
+                                                <td><strong>Total Tax Before Rebate</strong></td>
+                                                <td style="text-align: right; font-weight: 700;">38,700</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Less: Rebate under Section 156 (Available against normal tax since total income &le; ₹12 Lakhs)</td>
+                                                <td style="text-align: right; color: var(--emerald-600);">(25,200)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tax Payable on VDA (After Rebate)</td>
+                                                <td style="text-align: right; font-weight: 700;">13,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Add: Health and Education Cess @ 4%</td>
+                                                <td style="text-align: right; font-weight: 700;">540</td>
+                                            </tr>
+                                            <tr style="background: var(--emerald-50);">
+                                                <td><strong>Net Income-tax Payable</strong> (Less TDS: Nil)</td>
+                                                <td style="text-align: right; font-weight: 900; color: var(--emerald-600); font-size: 15px;">₹14,040</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 13: TEST YOUR KNOWLEDGE PRACTICAL QUESTIONS -->
+                <section id="sec-tyk">
+                    <h2 class="section-heading">
+                        <span class="heading-num">13</span>
+                        Test Your Knowledge (TYK) &bull; Practical Examination Bank
+                    </h2>
+
+                    <!-- TYK QUESTION 1 -->
+                    <div class="example-box" id="tyk-q1">
+                        <div class="example-header">
+                            <span class="example-title"><i class="fa-solid fa-graduation-cap"></i> TYK Question 1: Distinctions Between E-Commerce and Traditional Commerce</span>
+                            <span class="statute-badge">ICAI TYK 1 &bull; Conceptual</span>
+                        </div>
+                        <p><strong>Problem Statement:</strong> Explain the core reasons for the difference between e-commerce transactions and traditional business transactions that give rise to typical international taxation challenges.</p>
+
+                        <div class="solution-box">
+                            <div class="solution-header"><i class="fa-solid fa-check"></i> Statutory Analysis &amp; Solution</div>
+                            <div style="font-size: 13.5px; line-height: 1.65;">
+                                The transition from physical commerce to digital networks introduces five fundamental structural shifts:
+                                <br>1. <strong>Disembodied and Dematerialized Nature:</strong> In traditional business, commercial transactions require tangible goods, physical warehouses, retail showrooms, and face-to-face negotiation. E-commerce operates through dematerialized digital bits, automated cloud servers, and electronic smart contracts without physical manifestation.
+                                <br>2. <strong>Bypassing Physical Borders:</strong> While traditional supply chains are monitored at international customs ports, digital services, data streams, and software downloads traverse internet backbones instantaneously, escaping conventional border checks.
+                                <br>3. <strong>Complete Mobility of Functions:</strong> Digital enterprises can host databases in Jurisdiction A, execute algorithmic matching in Jurisdiction B, receive payments in Jurisdiction C, and service customers in Jurisdiction D with zero fixed geographic nexus.
+                                <br>4. <strong>Unprecedented Scale Without Mass:</strong> Digital platforms achieve multi-billion dollar commercial scale in source countries without employing local personnel or incorporating subsidiary entities (&lsquo;scale without mass&rsquo;).
+                                <br>5. <strong>User Participation and Value Creation:</strong> In digital businesses (social networks, search engines), users contribute valuable personal data, content, and network effects that drive enterprise monetization, which traditional tax allocation rules fail to recognize.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TYK QUESTION 2 -->
+                    <div class="example-box" id="tyk-q2">
+                        <div class="example-header">
+                            <span class="example-title"><i class="fa-solid fa-globe"></i> TYK Question 2: Erosion of Traditional International Taxation Concepts</span>
+                            <span class="statute-badge">ICAI TYK 2 &bull; International Jurisprudence</span>
+                        </div>
+                        <p><strong>Problem Statement:</strong> E-commerce transactions have replaced concepts generally associated with international transactions traditionally. Discuss the typical taxation issues arising from this structural transition.</p>
+
+                        <div class="solution-box">
+                            <div class="solution-header"><i class="fa-solid fa-check"></i> Statutory Analysis &amp; Solution</div>
+                            <div style="font-size: 13.5px; line-height: 1.65;">
+                                The growth of e-commerce has fractured the foundational concepts of source-based international taxation:
+                                <br>1. <strong>Difficulty in Characterizing Nature of Payments:</strong>
+                                Traditional taxation depends on compartmentalizing income into business profits (Article 7), royalties (Article 12), or technical service fees (Article 12A). In digital transactions &mdash; such as payments for software-as-a-service (SaaS), digital subscriptions, cloud infrastructure (IaaS), and online advertising &mdash; it is extraordinarily difficult to ascertain whether payment is for the copyright/process (royalty) or for automated commercial services (business profit).
+                                <br>2. <strong>Breakdown of the Physical Nexus Rule (PE):</strong>
+                                International tax treaties allocate taxing rights to source countries only if a foreign enterprise maintains a physical Permanent Establishment (PE). E-commerce enterprises generate massive commercial profits in source countries without maintaining any physical storefront, office, or personnel, leaving the source country with zero taxing jurisdiction under legacy treaties.
+                                <br>3. <strong>Difficulty in Locating Transactions and Identifying Taxpayers:</strong>
+                                Encrypted peer-to-peer networks, proxy IP routing, offshore server mirror sites, and anonymous digital wallets make it nearly impossible for tax administrations to identify the real beneficial owner, locate where the transaction was substantively executed, and quantify the value created in the domestic economy.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TYK QUESTION 3 -->
+                    <div class="example-box" id="tyk-q3">
+                        <div class="example-header">
+                            <span class="example-title"><i class="fa-solid fa-calculator"></i> TYK Question 3: Mr. Mohan &bull; Bitcoins vs. NFT Ring-Fencing &amp; Disallowed Expenses</span>
+                            <span class="statute-badge">ICAI TYK 3 &bull; Section 194(1)</span>
+                        </div>
+                        <p><strong>Problem Statement:</strong> From the following details compute the taxable income of Mr. Mohan for the sale and purchase of Bitcoins and Non-Fungible Tokens (NFTs) made during the tax year 2026-27:</p>
+                        <div class="table-responsive" style="margin: 6px 0;">
+                            <table class="statutory-table">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Particulars</th>
+                                        <th style="text-align: right;">Units</th>
+                                        <th style="text-align: right;">Amount (₹)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>June 15, 2026</td>
+                                        <td>Purchase (Bitcoin)</td>
+                                        <td style="text-align: right;">5,000</td>
+                                        <td style="text-align: right;">50,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>July 15, 2026</td>
+                                        <td>Sale (Bitcoin)</td>
+                                        <td style="text-align: right;">2,500</td>
+                                        <td style="text-align: right;">25,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>July 20, 2026</td>
+                                        <td>Sale (Bitcoin)</td>
+                                        <td style="text-align: right;">2,500</td>
+                                        <td style="text-align: right;">28,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&mdash;</td>
+                                        <td>Expenses Incurred on Sale of Bitcoin</td>
+                                        <td style="text-align: right;">&mdash;</td>
+                                        <td style="text-align: right; color: var(--rose-600);">15,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>August 1, 2026</td>
+                                        <td>Purchase (NFT)</td>
+                                        <td style="text-align: right;">10,000</td>
+                                        <td style="text-align: right;">1,50,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>August 16, 2026</td>
+                                        <td>Sale (NFT)</td>
+                                        <td style="text-align: right;">6,000</td>
+                                        <td style="text-align: right;">89,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>August 31, 2026</td>
+                                        <td>Sale (NFT)</td>
+                                        <td style="text-align: right;">4,000</td>
+                                        <td style="text-align: right;">56,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&mdash;</td>
+                                        <td>Expenses Incurred on Sale of NFT</td>
+                                        <td style="text-align: right;">&mdash;</td>
+                                        <td style="text-align: right; color: var(--rose-600);">18,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="solution-box">
+                            <div class="solution-header"><i class="fa-solid fa-square-root-variable"></i> Statutory Solution &amp; Computation of Taxable Income</div>
+                            <div style="font-size: 13.5px; line-height: 1.65;">
+                                1. <strong>Statutory Principles under Section 194(1) Table Sl. No. 4:</strong>
+                                <br>&bull; <em>Expenses Disallowed:</em> Under clause (a), no deduction is permitted for any expenditure other than cost of acquisition. Hence, ₹15,000 (sale of Bitcoin) and ₹18,000 (sale of NFT) are <strong>strictly disallowed</strong>.
+                                <br>&bull; <em>No Inter-VDA Set-Off:</em> Under clause (b), <strong>loss from one VDA cannot be set off against gain from another VDA</strong>. Loss cannot be carried forward.
+
+                                <br><br>2. <strong>Transaction-Wise Computation:</strong>
+                                <div class="table-responsive" style="margin: 8px 0;">
+                                    <table class="statutory-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Transaction / Asset</th>
+                                                <th>Sale Consideration</th>
+                                                <th>Cost of Acquisition</th>
+                                                <th style="text-align: right;">Net Result (₹)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Sale of 2,500 Bitcoin (15.07.2026)</td>
+                                                <td>₹25,500</td>
+                                                <td>₹25,000 (₹50k &times; 2,500/5,000)</td>
+                                                <td style="text-align: right; color: var(--emerald-600); font-weight: 700;">+ ₹500 (Gain)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sale of 2,500 Bitcoin (20.07.2026)</td>
+                                                <td>₹28,750</td>
+                                                <td>₹25,000 (₹50k &times; 2,500/5,000)</td>
+                                                <td style="text-align: right; color: var(--emerald-600); font-weight: 700;">+ ₹3,750 (Gain)</td>
+                                            </tr>
+                                            <tr style="background: var(--slate-100);">
+                                                <td colspan="3"><strong>Total Gain from Transfer of Bitcoin</strong></td>
+                                                <td style="text-align: right; font-weight: 800; color: var(--primary);">₹4,250</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sale of 6,000 NFT (16.08.2026)</td>
+                                                <td>₹89,000</td>
+                                                <td>₹90,000 (₹1.5L &times; 6,000/10,000)</td>
+                                                <td style="text-align: right; color: var(--rose-600); font-weight: 700;">(₹1,000) (Loss)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sale of 4,000 NFT (31.08.2026)</td>
+                                                <td>₹56,000</td>
+                                                <td>₹60,000 (₹1.5L &times; 4,000/10,000)</td>
+                                                <td style="text-align: right; color: var(--rose-600); font-weight: 700;">(₹4,000) (Loss)</td>
+                                            </tr>
+                                            <tr style="background: #fff1f2;">
+                                                <td colspan="3"><strong>Total Loss on Sale of NFT</strong> [Neither Set-Off Nor Carry Forward Allowed]</td>
+                                                <td style="text-align: right; font-weight: 800; color: var(--rose-600);">(₹5,000)</td>
+                                            </tr>
+                                            <tr style="background: var(--emerald-50);">
+                                                <td colspan="3"><strong>Taxable Income of Mr. Mohan</strong> (Taxable @ 30% u/s 194(1))</td>
+                                                <td style="text-align: right; font-weight: 900; color: var(--emerald-600); font-size: 15px;">₹4,250</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TYK QUESTION 4 -->
+                    <div class="example-box" id="tyk-q4">
+                        <div class="example-header">
+                            <span class="example-title"><i class="fa-solid fa-calculator"></i> TYK Question 4: Mr. Raj &bull; Business Loss Set-Off Restrictions &amp; VDA Tax</span>
+                            <span class="statute-badge">ICAI TYK 4 &bull; Section 194(1)</span>
+                        </div>
+                        <p><strong>Problem Statement:</strong> Compute the net income-tax payable (after TDS, if any) by Mr. Raj, aged 32 years, who has the following income for the tax year 2026-27:</p>
+                        <ul style="margin: 6px 0 10px 20px; font-size: 13.5px; line-height: 1.6;">
+                            <li>(i) Business loss: <strong>(₹3,18,000)</strong></li>
+                            <li>(ii) Interest on fixed deposits with HDFC Bank: <strong>₹18,000</strong></li>
+                            <li>(iii) Consideration on transfer of VDA: <strong>₹6,20,000</strong></li>
+                            <li>(iv) Cost of acquisition of VDA transferred: <strong>₹20,000</strong></li>
+                        </ul>
+
+                        <div class="solution-box">
+                            <div class="solution-header"><i class="fa-solid fa-square-root-variable"></i> Step-by-Step Computation &amp; Statutory Analysis</div>
+                            <div style="font-size: 13.5px; line-height: 1.65;">
+                                1. <strong>Inter-Head Loss Set-Off under Section 109 [Legacy Section 71]:</strong>
+                                <br>&bull; Business loss of the current year (₹3,18,000) can be set off against income from other sources (FD interest of ₹18,000).
+                                <br>&bull; Remaining unabsorbed business loss = ₹3,00,000 (₹3,18,000 &minus; ₹18,000).
+
+                                <br><br>2. <strong>Strict Ban on Set-Off Against VDA Income:</strong>
+                                <br>Under Section 194(1) Table Sl. No. 4, <strong>business loss CANNOT be set off against income from transfer of VDA</strong>.
+                                <br>Therefore, the unabsorbed business loss of ₹3,00,000 cannot touch the VDA income and must be <strong>carried forward</strong> to subsequent assessment years under Section 112 [legacy Section 72].
+
+                                <br><br>3. <strong>Tax Calculation:</strong>
+                                <div class="table-responsive" style="margin: 8px 0;">
+                                    <table class="statutory-table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Income from transfer of VDA (₹6,20,000 &minus; ₹20,000)</td>
+                                                <td style="text-align: right; font-weight: 700;">₹6,00,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tax on VDA Income @ 30% on ₹6,00,000 u/s 194(1)</td>
+                                                <td style="text-align: right; font-weight: 700;">₹1,80,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Add: Health and Education Cess @ 4%</td>
+                                                <td style="text-align: right; font-weight: 700;">₹7,200</td>
+                                            </tr>
+                                            <tr style="background: var(--slate-100);">
+                                                <td><strong>Total Tax Liability</strong></td>
+                                                <td style="text-align: right; font-weight: 800; color: var(--primary);">₹1,87,200</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Less: TDS under Section 393(1) Table Sl. 8(vi) (1% on ₹6,20,000)</td>
+                                                <td style="text-align: right; color: var(--emerald-600);">(₹6,200)</td>
+                                            </tr>
+                                            <tr style="background: var(--emerald-50);">
+                                                <td><strong>Net Income-tax Payable</strong> [₹1,87,200 &minus; ₹6,200]</td>
+                                                <td style="text-align: right; font-weight: 900; color: var(--emerald-600); font-size: 15px;">₹1,81,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CHAPTER FOOTER & NAVIGATION -->
+                <footer style="margin-top: 64px; padding-top: 32px; border-top: 2px solid var(--slate-100);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+                        <div>
+                            <a href="tax_planning_gaar.html" style="display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; font-size: 14px;">
+                                <i class="fa-solid fa-arrow-left"></i> Previous: Chapter 11 - Tax Planning &amp; GAAR
+                            </a>
+                        </div>
+                        <div>
+                            <a href="../notes/dtnotes.html" style="display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; font-size: 14px;">
+                                Chapter Index: Direct Tax Master Portal <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 40px; color: var(--slate-400); font-size: 13px;">
+                        <p>&copy; 2026 Calcium Notes &bull; CA Final Direct Tax Master Portal &bull; Updated for Finance Act, 2026 &amp; Income-tax Act, 2025.</p>
+                        <p style="font-size: 11.5px; margin-top: 4px;">Strictly for educational review and exam preparation based on the ICAI Study Material.</p>
+                    </div>
+                </footer>
+
+            </div> <!-- End reading-container -->
+        </main>
+    </div> <!-- End page-wrapper -->
+
+    <!-- Interactive JavaScript -->
+    <script>
+        (function() {
+            // 1. Reading Progress Bar
+            const progressBar = document.getElementById('reading-progress');
+            window.addEventListener('scroll', () => {
+                const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = totalHeight > 0 ? (window.scrollY / totalHeight) * 100 : 0;
+                progressBar.style.width = progress + '%';
+            });
+
+            // 2. Sidebar Search Filter
+            const searchInput = document.getElementById('sidebar-search');
+            const menuLinks = document.querySelectorAll('.sidebar-link');
+            const sectionTitles = document.querySelectorAll('.sidebar-section-title');
+
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    const query = this.value.toLowerCase().trim();
+                    menuLinks.forEach(link => {
+                        const text = link.textContent.toLowerCase();
+                        const href = link.getAttribute('href').toLowerCase();
+                        const match = text.includes(query) || href.includes(query);
+                        link.parentElement.style.display = match ? 'block' : 'none';
+                    });
+
+                    sectionTitles.forEach(title => {
+                        let next = title.nextElementSibling;
+                        let anyVisible = false;
+                        while (next && !next.classList.contains('sidebar-section-title')) {
+                            if (next.style.display !== 'none') {
+                                anyVisible = true;
+                                break;
+                            }
+                            next = next.nextElementSibling;
+                        }
+                        title.style.display = anyVisible || query === '' ? 'block' : 'none';
+                    });
+                });
+            }
+
+            // 3. Active Link Highlighting on Scroll
+            const sections = document.querySelectorAll('section[id], div[id^="ill-"], div[id^="tyk-"]');
+            const observerOptions = {
+                root: null,
+                rootMargin: '-80px 0px -70% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        menuLinks.forEach(link => {
+                            if (link.getAttribute('href') === '#' + id) {
+                                menuLinks.forEach(l => l.classList.remove('active'));
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(sec => observer.observe(sec));
+
+            // 4. Keyboard Shortcuts
+            document.addEventListener('keydown', (e) => {
+                if (e.key === '/' && document.activeElement !== searchInput) {
+                    e.preventDefault();
+                    if (searchInput) {
+                        searchInput.focus();
+                    }
+                } else if (e.key === 'Escape' && document.activeElement === searchInput) {
+                    searchInput.value = '';
+                    searchInput.dispatchEvent(new Event('input'));
+                    searchInput.blur();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

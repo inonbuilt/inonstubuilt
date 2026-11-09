@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 14: Income-tax Authorities, Search &amp; Seizure Powers (Sections 236 to 260) | CA Final Direct Tax Laws | AY 2025-26 &amp; AY 2026-27</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #eff6ff;
+            --secondary: #0d9488;
+            --secondary-light: #f0fdfa;
+            --slate-50: #f8fafc;
+            --slate-100: #f1f5f9;
+            --slate-200: #e2e8f0;
+            --slate-300: #cbd5e1;
+            --slate-400: #94a3b8;
+            --slate-500: #64748b;
+            --slate-600: #475569;
+            --slate-700: #334155;
+            --slate-800: #1e293b;
+            --slate-900: #0f172a;
+            --emerald-50: #ecfdf5;
+            --emerald-600: #059669;
+            --rose-50: #fff1f2;
+            --rose-600: #e11d48;
+            --amber-50: #fffbeb;
+            --amber-500: #f59e0b;
+            --amber-600: #d97706;
+            --purple-50: #faf5ff;
+            --purple-600: #9333ea;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--slate-50);
+            color: var(--slate-800);
+            line-height: 1.65;
+            font-size: 14.5px;
+        }
+
+        /* Top Progress Bar */
+        #reading-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            width: 0%;
+            z-index: 1000;
+            transition: width 0.1s ease;
+        }
+
+        /* Layout Structure */
+        .page-wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 310px;
+            background-color: #ffffff;
+            border-right: 1px solid var(--slate-200);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            overflow-y: auto;
+            z-index: 900;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-header {
+            padding: 24px 20px 16px;
+            border-bottom: 1px solid var(--slate-100);
+            background: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .sidebar-brand {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .sidebar-title {
+            font-size: 15px;
+            font-weight: 800;
+            color: var(--slate-900);
+            line-height: 1.3;
+        }
+
+        .sidebar-search-box {
+            margin-top: 14px;
+            position: relative;
+        }
+
+        .sidebar-search-box input {
+            width: 100%;
+            padding: 7px 10px 7px 32px;
+            font-size: 12.5px;
+            border: 1px solid var(--slate-200);
+            border-radius: 6px;
+            background-color: var(--slate-50);
+            color: var(--slate-800);
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .sidebar-search-box input:focus {
+            border-color: var(--primary);
+            background-color: #ffffff;
+            box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+        }
+
+        .sidebar-search-box i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--slate-400);
+            font-size: 12px;
+        }
+
+        .sidebar-nav {
+            padding: 16px 12px 32px;
+            list-style: none;
+            flex: 1;
+        }
+
+        .sidebar-section-title {
+            font-size: 10px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--slate-400);
+            padding: 14px 10px 6px;
+        }
+
+        .sidebar-item {
+            margin-bottom: 2px;
+        }
+
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 12px;
+            font-size: 12.5px;
+            font-weight: 600;
+            color: var(--slate-600);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.15s;
+        }
+
+        .sidebar-link:hover {
+            background-color: var(--slate-100);
+            color: var(--primary);
+        }
+
+        .sidebar-link.active {
+            background-color: var(--primary-light);
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .sidebar-link i {
+            font-size: 13px;
+            width: 16px;
+            text-align: center;
+            color: var(--slate-400);
+        }
+
+        .sidebar-link.active i {
+            color: var(--primary);
+        }
+
+        /* Main Content Container */
+        .main-content {
+            margin-left: 310px;
+            flex: 1;
+            padding: 32px 40px 80px;
+            max-width: 1140px;
+        }
+
+        .reading-container {
+            margin: 0 auto;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb-nav {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            color: var(--slate-400);
+            margin-bottom: 24px;
+        }
+
+        .breadcrumb-nav a {
+            color: var(--slate-500);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.15s;
+        }
+
+        .breadcrumb-nav a:hover {
+            color: var(--primary);
+        }
+
+        /* Chapter Banner */
+        .chapter-header {
+            background: linear-gradient(135deg, #ffffff 0%, var(--slate-50) 100%);
+            border: 1px solid var(--slate-200);
+            border-left: 6px solid var(--primary);
+            padding: 28px 32px;
+            border-radius: 12px;
+            margin-bottom: 32px;
+            box-shadow: 0 4px 14px rgba(15, 23, 42, 0.03);
+        }
+
+        .chapter-meta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .chapter-badge {
+            background-color: var(--primary);
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .law-badge {
+            background-color: var(--secondary-light);
+            color: var(--secondary);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .chapter-title {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--slate-900);
+            line-height: 1.25;
+            margin-bottom: 10px;
+        }
+
+        .chapter-subtitle {
+            font-size: 14px;
+            color: var(--slate-600);
+            line-height: 1.6;
+        }
+
+        /* Content Cards & Sections */
+        .content-card {
+            background-color: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: 12px;
+            margin-bottom: 36px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.02);
+        }
+
+        .card-header {
+            padding: 18px 24px;
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--slate-100);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--slate-900);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background-color: var(--primary-light);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        .card-badge {
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 6px;
+            background-color: var(--slate-100);
+            color: var(--slate-600);
+        }
+
+        .card-body {
+            padding: 24px;
+        }
+
+        /* Typography & Components */
+        p {
+            margin-bottom: 14px;
+            color: var(--slate-700);
+            font-size: 14px;
+        }
+
+        /* Stat / Metric Grid */
+        .grid {
+            display: grid;
+            gap: 16px;
+        }
+
+        .grid-2 { grid-template-columns: repeat(2, 1fr); }
+        .grid-3 { grid-template-columns: repeat(3, 1fr); }
+        .grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+        .stat-box {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            border-top: 4px solid var(--primary);
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1.2;
+        }
+
+        .stat-label {
+            font-size: 11.5px;
+            font-weight: 700;
+            color: var(--slate-600);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 4px;
+        }
+
+        /* Tables */
+        .table-custom {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 16px 0;
+            font-size: 13px;
+            border: 1px solid var(--slate-200);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .table-custom th {
+            background-color: var(--slate-100);
+            color: var(--slate-800);
+            font-weight: 700;
+            text-align: left;
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--slate-200);
+            border-right: 1px solid var(--slate-200);
+        }
+
+        .table-custom th:last-child {
+            border-right: none;
+        }
+
+        .table-custom td {
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--slate-100);
+            border-right: 1px solid var(--slate-100);
+            color: var(--slate-700);
+            vertical-align: top;
+        }
+
+        .table-custom td:last-child {
+            border-right: none;
+        }
+
+        .table-custom tr:last-child td {
+            border-bottom: none;
+        }
+
+        .table-custom tr:hover td {
+            background-color: var(--slate-50);
+        }
+
+        /* Alerts & Callouts */
+        .callout {
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 18px 0;
+            font-size: 13px;
+            border-left: 4px solid transparent;
+        }
+
+        .callout-info {
+            background-color: var(--primary-light);
+            border-left-color: var(--primary);
+            color: var(--slate-800);
+        }
+
+        .callout-warning {
+            background-color: var(--amber-50);
+            border-left-color: var(--amber-500);
+            color: var(--slate-800);
+        }
+
+        .callout-danger {
+            background-color: var(--rose-50);
+            border-left-color: var(--rose-600);
+            color: var(--slate-800);
+        }
+
+        .callout-success {
+            background-color: var(--emerald-50);
+            border-left-color: var(--emerald-600);
+            color: var(--slate-800);
+        }
+
+        .callout-title {
+            font-weight: 800;
+            font-size: 13.5px;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Example / Illustration Box */
+        .example-box {
+            background-color: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-left: 4px solid var(--secondary);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
+
+        .example-title {
+            font-size: 15px;
+            font-weight: 800;
+            color: var(--slate-900);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Timeline / Procedure Steps */
+        .timeline-step {
+            position: relative;
+            padding-left: 32px;
+            margin-bottom: 20px;
+        }
+
+        .timeline-step:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            color: #ffffff;
+            font-size: 10px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 992px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            .sidebar.open {
+                transform: translateX(0);
+            }
+            .main-content {
+                margin-left: 0;
+                padding: 24px 20px;
+            }
+            .grid-3, .grid-4 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="reading-progress"></div>
+
+    <div class="page-wrapper">
+        <!-- Persistent Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-brand">
+                    <i class="fa-solid fa-graduation-cap"></i> Calcium Notes &bull; CA Final
+                </div>
+                <div class="sidebar-title">
+                    Chapter 14: IT Authorities &amp; Search
+                </div>
+                <div class="sidebar-search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="sidebar-search" placeholder="Quick find section or topic... (Press '/' to focus)">
+                </div>
+            </div>
+
+            <ul class="sidebar-nav">
+                <li class="sidebar-section-title">Foundations &amp; Control</li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#sec-overview">
+                        <i class="fa-solid fa-compass"></i> Chapter Overview &amp; Architecture
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#sec-hierarchy-authorities">
+                        <i class="fa-solid fa-sitemap"></i> Authorities Hierarchy [Sec 236-238]
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#sec-cbdt-instructions-charter">
+                        <i class="fa-solid fa-file-contract"></i> CBDT Circulars &amp; Charter [Sec 239-240]
+                    </a>
+                </li>
+
+                <li class="sidebar-section-title">Jurisdiction &amp; Transfer</li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#sec-jurisdiction-principles">
+                        <i class="fa-solid fa-map-location-dot"></i> AO Jurisdiction &amp; Challenge [Sec 241-242]
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#sec-transfer-cases-faceless">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i> Transfer of Cases &amp; Faceless [Sec 243-245]
+                    </a>
+                </li>
+
+                <li class="sidebar-section-title">Powers of Authorities</li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#sec-discovery-summons-powers">
+                        <i class="fa-solid fa-gavel"></i> Civil Court Powers &amp; Summons [Sec 246]
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#sec-search-seizure-powers">
+                        <i class="fa-solid fa-magnifying-glass-arrow-right"></i> Search &amp; Seizure Powers [Sec 247, 525]
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#sec-requisition-reasons-immunity">
+                        <i class="fa-solid fa-shield-halved"></i> Requisition &amp; Immunity [Sec 248-249]
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#sec-application-release-seized-assets">
+                        <i class="fa-solid fa-sack-dollar"></i> Seized Assets &amp; Release [Sec 250-251]
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#sec-power-of-survey">
+                        <i class="fa-solid fa-clipboard-list"></i> Survey Powers &amp; Functions [Sec 253]
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#sec-information-gathering-faceless">
+                        <i class="fa-solid fa-database"></i> Information Gathering &amp; Inquiries [Sec 252-260]
+                    </a>
+                </li>
+
+                <li class="sidebar-section-title">ICAI Practice Question Bank</li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#sec-tyk">
+                        <i class="fa-solid fa-clipboard-question"></i> Test Your Knowledge (TYK 1-8)
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Reading Area -->
+        <main class="main-content">
+            <div class="reading-container">
+                <!-- Breadcrumbs -->
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 8px;">
+                    <div class="breadcrumb-nav" style="margin-bottom: 0;">
+                        <a href="../notes/dtnotes.html">Direct Tax Hub</a>
+                        <span>/</span>
+                        <a href="../notes/dtsections.html">Section Index</a>
+                        <span>/</span>
+                        <span style="color: var(--slate-900); font-weight: 700;">Chapter 14: IT Authorities &amp; Search</span>
+                    </div>
+                    <div style="font-size: 12px; font-weight: 700; color: var(--slate-500);">
+                        Updated for Finance Act, 2026 &amp; ITA 2025
+                    </div>
+                </div>
+
+                <!-- Chapter Banner -->
+                <header class="chapter-header">
+                    <div class="chapter-meta">
+                        <span class="chapter-badge">Chapter 14</span>
+                        <span class="law-badge"><i class="fa-solid fa-scale-balanced"></i> Income-tax Act, 2025</span>
+                        <span class="law-badge"><i class="fa-solid fa-landmark"></i> Sections 236 to 260 &amp; 525</span>
+                        <span class="law-badge" style="background: var(--purple-50); color: var(--purple-600);"><i class="fa-solid fa-certificate"></i> FA 2026 Updated</span>
+                    </div>
+                    <h1 class="chapter-title">Income-tax Authorities, Jurisdiction, Search &amp; Seizure, and Survey Powers</h1>
+                    <p class="chapter-subtitle">
+                        An encyclopedic CA Final master compendium covering the statutory hierarchy and administrative powers of Income-tax Authorities (Sections 236 to 240), CBDT circulars and the Taxpayer's Charter, territorial jurisdiction and time limits for challenge (Section 242(4)), inter-city and intra-city case transfers (Section 243), Civil Court discovery and summons powers (Section 246), Search &amp; Seizure code (Section 247), non-seizure of stock-in-trade and CBDT jewellery thresholds (Instruction 1916), requisition of assets (Section 248), statutory immunity of reasons to believe (Section 249), application and 120-day release of seized cash with 0.5% interest (Section 250), power of survey and ceremony inspection (Section 253), broad information-gathering powers (Sections 252 to 260), and all 8 ICAI Test Your Knowledge practical questions.
+                    </p>
+                </header>
+
+<!-- ========================================================================= -->
+<!-- MODULE 1: HIERARCHY, CBDT CIRCULARS & TAXPAYER'S CHARTER                 -->
+<!-- ========================================================================= -->
+
+<!-- Section 1: Overview & Scope -->
+<section id="sec-overview" class="content-card">
+    <div class="card-header">
+        <div class="card-title">
+            <span class="card-icon"><i class="fa-solid fa-compass"></i></span>
+            Overview &amp; Architecture of Income-tax Administration
+        </div>
+        <span class="card-badge">Chapter 14 Foundations</span>
+    </div>
+    <div class="card-body">
+        <p>
+            The administrative, investigative, and quasi-judicial machinery of direct taxation in India is codified under Chapters XIII and XIV of the Income-tax Act, consolidated and modernized under the <strong>Income-tax Act, 2025</strong> and <strong>Finance Act, 2026</strong>.
+        </p>
+
+        <div class="grid grid-3 my-4">
+            <div class="stat-box">
+                <div class="stat-number">Sections 236–240</div>
+                <div class="stat-label">Hierarchy &amp; Executive Control</div>
+                <div style="font-size: 11px; color: var(--slate-500); margin-top: 6px;">CBDT powers, circulars, condonation of delay &amp; Taxpayer's Charter</div>
+            </div>
+            <div class="stat-box" style="border-top-color: var(--secondary);">
+                <div class="stat-number" style="color: var(--secondary);">Sections 241–245</div>
+                <div class="stat-label">Territorial &amp; Faceless Jurisdiction</div>
+                <div style="font-size: 11px; color: var(--slate-500); margin-top: 6px;">Jurisdiction allocation, 30-day challenge bar &amp; case transfer rules</div>
+            </div>
+            <div class="stat-box" style="border-top-color: var(--rose-600);">
+                <div class="stat-number" style="color: var(--rose-600);">Sections 246–260</div>
+                <div class="stat-label">Investigative &amp; Search Powers</div>
+                <div style="font-size: 11px; color: var(--slate-500); margin-top: 6px;">Civil discovery, Search &amp; Seizure, Requisition, Survey &amp; Seized Assets</div>
+            </div>
+        </div>
+
+        <div class="callout callout-info">
+            <div class="callout-title"><i class="fa-solid fa-circle-info"></i> Modernization under Income-tax Act, 2025</div>
+            <p>
+                Under the pre-2025 Act, administrative provisions were scattered across Sections 116 to 138. The <strong>Income-tax Act, 2025</strong> seamlessly consolidates:
+            </p>
+            <ul style="margin-left: 20px; margin-top: 6px; line-height: 1.6;">
+                <li><strong>Hierarchy &amp; Circulars:</strong> Sections 116–119 are now <strong>Sections 236–239</strong>.</li>
+                <li><strong>Jurisdiction &amp; Transfers:</strong> Sections 120–130 are now <strong>Sections 241–245</strong>.</li>
+                <li><strong>Discovery &amp; Search:</strong> Sections 131, 132, 132A, 132B, 133, 133A are now <strong>Sections 246–253</strong>.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Section 2: Hierarchy, Appointment & Control of Authorities -->
+<section id="sec-hierarchy-authorities" class="content-card">
+    <div id="sec-236"></div>
+    <div class="card-header">
+        <div class="card-title">
+            <span class="card-icon"><i class="fa-solid fa-sitemap"></i></span>
+            Classes &amp; Statutory Grading of Income-tax Authorities [Sections 236 to 238]
+        </div>
+        <span class="card-badge">Section 236</span>
+    </div>
+    <div class="card-body">
+        <p>
+            <strong>Section 236</strong> codifies the statutory hierarchy of Income-tax Authorities in India:
+        </p>
+
+        <div class="timeline-step">
+            <span class="timeline-dot">1</span>
+            <div>
+                <h4 style="color: var(--slate-900); font-weight: 700; margin-bottom: 4px;">Apex Administrative Body: Central Board of Direct Taxes (CBDT)</h4>
+                <p>
+                    Constituted under the <em>Central Boards of Revenue Act, 1963</em>. It functions under the Department of Revenue, Ministry of Finance, Government of India, exercising supreme statutory control over the administration of direct tax laws.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-step">
+            <span class="timeline-dot">2</span>
+            <div>
+                <h4 style="color: var(--slate-900); font-weight: 700; margin-bottom: 4px;">Senior Cadre: Directors General &amp; Chief Commissioners</h4>
+                <ul style="font-size: 13px; color: var(--slate-700); line-height: 1.6; margin-left: 20px;">
+                    <li>Principal Directors General of Income-tax / Principal Chief Commissioners of Income-tax (PCCIT / PDGIT)</li>
+                    <li>Directors General of Income-tax / Chief Commissioners of Income-tax (CCIT / DGIT)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-step">
+            <span class="timeline-dot">3</span>
+            <div>
+                <h4 style="color: var(--slate-900); font-weight: 700; margin-bottom: 4px;">Middle Cadre: Directors, Commissioners &amp; Appellate Authorities</h4>
+                <ul style="font-size: 13px; color: var(--slate-700); line-height: 1.6; margin-left: 20px;">
+                    <li>Principal Directors of Income-tax / Principal Commissioners of Income-tax (PDIT / PCIT)</li>
+                    <li>Directors of Income-tax / Commissioners of Income-tax (DIT / CIT)</li>
+                    <li>Commissioners of Income-tax (Appeals) / Joint Commissioners (Appeals) [Quasi-judicial appellate authorities]</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-step">
+            <span class="timeline-dot">4</span>
+            <div>
+                <h4 style="color: var(--slate-900); font-weight: 700; margin-bottom: 4px;">Executive Field &amp; Assessing Officers (AO)</h4>
+                <ul style="font-size: 13px; color: var(--slate-700); line-height: 1.6; margin-left: 20px;">
+                    <li>Additional Directors / Additional Commissioners of Income-tax (Addl. DIT / Addl. CIT)</li>
+                    <li>Joint Directors / Joint Commissioners of Income-tax (JDIT / JCIT)</li>
+                    <li>Deputy Directors / Deputy Commissioners of Income-tax (DDIT / DCIT)</li>
+                    <li>Assistant Directors / Assistant Commissioners of Income-tax (ADIT / ACIT)</li>
+                    <li>Income-tax Officers (ITOs)</li>
+                    <li>Tax Recovery Officers (TROs)</li>
+                    <li>Inspectors of Income-tax (Field executive staff)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="callout callout-warning">
+            <div class="callout-title"><i class="fa-solid fa-user-check"></i> Statutory Definition of "Assessing Officer" [Section 2(12)]</div>
+            <p>
+                An <strong>"Assessing Officer" (AO)</strong> means the Assistant Commissioner or Deputy Commissioner or Assistant Director or Deputy Director or the Income-tax Officer who is vested with the relevant jurisdiction by virtue of orders or directions issued under Section 241, or the Additional Commissioner or Additional Director or Joint Commissioner or Joint Director who is directed under Section 241 to exercise or perform all or any of the powers and functions conferred on, or assigned to, an Assessing Officer under this Act.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Section 3: CBDT Instructions, Circulars & Taxpayer's Charter -->
+<section id="sec-cbdt-instructions-charter" class="content-card">
+    <div id="sec-239"></div>
+    <div id="sec-240"></div>
+    <div class="card-header">
+        <div class="card-title">
+            <span class="card-icon"><i class="fa-solid fa-file-contract"></i></span>
+            Instructions, Circulars, Condonation of Delay &amp; Taxpayer's Charter [Sections 239 &amp; 240]
+        </div>
+        <span class="card-badge">Sections 239 &amp; 240</span>
+    </div>
+    <div class="card-body">
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-bottom: 8px;">1. Powers of the CBDT to Issue Instructions &amp; Circulars [Section 239(1)]</h4>
+        <p>
+            Under <strong>Section 239(1)</strong> (replaces Section 119(1)), the Board may issue such orders, instructions, and directions to other income-tax authorities as it may deem fit for the proper administration of this Act, and such authorities and all other persons employed in the execution of this Act <strong>shall observe and follow</strong> such orders, instructions, and directions of the Board.
+        </p>
+
+        <div class="grid grid-2 my-3">
+            <div class="stat-box" style="border-top-color: var(--primary);">
+                <div class="stat-number">Binding on Revenue</div>
+                <div class="stat-label">Subordinate Authorities Bound</div>
+                <p style="font-size: 11px; color: var(--slate-600); margin-top: 4px;">
+                    Circulars are <strong>strictly binding on all Income-tax Authorities</strong> (Assessing Officers, Commissioners, TROs). Officers cannot deviate from benevolent circulars (*Navnit Lal C. Javeri*).
+                </p>
+            </div>
+            <div class="stat-box" style="border-top-color: var(--rose-600);">
+                <div class="stat-number" style="color: var(--rose-600);">Not Binding on Courts</div>
+                <div class="stat-label">Assessee &amp; Judicial Bodies Free</div>
+                <p style="font-size: 11px; color: var(--slate-600); margin-top: 4px;">
+                    Circulars are <strong>NOT binding on the Assessee, the ITAT, High Courts, or the Supreme Court</strong> (*UCO Bank v. CIT*). The assessee can challenge adverse circulars in court.
+                </p>
+            </div>
+        </div>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 16px; margin-bottom: 8px;">2. Absolute Statutory Restrictions on Board's Powers [Section 239(1) Proviso]</h4>
+        <div class="callout callout-danger">
+            <div class="callout-title"><i class="fa-solid fa-ban"></i> Express Statutory Prohibitions</div>
+            <p>
+                The CBDT is strictly prohibited from issuing orders, instructions, or directions that:
+            </p>
+            <ol style="margin-left: 20px; margin-top: 6px; line-height: 1.6;">
+                <li>Require any income-tax authority to <strong>make a particular assessment or to dispose of a particular case in a particular manner</strong>; OR</li>
+                <li><strong>Interfere with the discretion of the Commissioner (Appeals)</strong> or Joint Commissioner (Appeals) in the exercise of their appellate functions.</li>
+            </ol>
+        </div>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;">3. Condonation of Delay to Avoid Genuine Hardship [Section 239(3)(b) &amp; Circular 13/2024]</h4>
+        <p>
+            Under <strong>Section 239(3)(b)</strong> (replaces Section 119(2)(b)), the Board is empowered to authorize any income-tax authority to admit an application or claim for any exemption, deduction, refund, or any other relief under this Act, or a return of loss, after the expiry of the period specified in the Act for making such application or claim, if it is satisfied that the taxpayer was prevented by <strong>reasonable and genuine hardship</strong> from filing it in time.
+        </p>
+
+        <table class="table-custom my-3">
+            <thead>
+                <tr>
+                    <th>Monetary Quantum of Claim / Loss</th>
+                    <th>Competent Authority for Condonation</th>
+                    <th>Statutory Time Limit for Application</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Up to ₹1 Crore</strong></td>
+                    <td>Principal Commissioner / Commissioner of Income-tax (PCIT / CIT)</td>
+                    <td>Within <strong>5 years</strong> from the end of the relevant Assessment Year</td>
+                </tr>
+                <tr>
+                    <td><strong>Exceeding ₹1 Crore up to ₹3 Crore</strong></td>
+                    <td>Chief Commissioner / Director General of Income-tax (CCIT / DGIT)</td>
+                    <td>Within <strong>5 years</strong> from the end of the relevant Assessment Year</td>
+                </tr>
+                <tr>
+                    <td><strong>Exceeding ₹3 Crore</strong></td>
+                    <td>Principal Chief Commissioner of Income-tax (PCCIT) / CBDT</td>
+                    <td>Within <strong>5 years</strong> from the end of the relevant Assessment Year</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;">4. Taxpayer's Charter [Section 240]</h4>
+        <p>
+            <strong>Section 240</strong> (replaces Section 119A) mandates that the Board shall adopt and declare a <strong>Taxpayer's Charter</strong> and issue such orders, instructions, directions or guidelines to other income-tax authorities as may be necessary for the administration of such Charter.
+        </p>
+        <div class="grid grid-2 my-2">
+            <div class="stat-box" style="border-top-color: var(--emerald-600); text-align: left;">
+                <div class="stat-label" style="color: var(--emerald-600); margin-bottom: 6px;"><i class="fa-solid fa-handshake"></i> Department's 14 Commitments</div>
+                <ul style="font-size: 11px; color: var(--slate-700); line-height: 1.5; margin-left: 16px;">
+                    <li>Treat taxpayer as honest unless reason to believe otherwise.</li>
+                    <li>Provide fair, courteous, and reasonable treatment.</li>
+                    <li>Provide fair and impartial appeal and review mechanism.</li>
+                    <li>Provide complete and accurate information.</li>
+                    <li>Provide timely decisions on refund/assessment.</li>
+                    <li>Respect privacy and maintain strict confidentiality.</li>
+                    <li>Hold authorities accountable and publish service standards.</li>
+                    <li>Reduce cost of compliance and collect only correct tax.</li>
+                </ul>
+            </div>
+            <div class="stat-box" style="border-top-color: var(--primary); text-align: left;">
+                <div class="stat-label" style="color: var(--primary); margin-bottom: 6px;"><i class="fa-solid fa-user-shield"></i> Taxpayer's 6 Obligations</div>
+                <ul style="font-size: 11px; color: var(--slate-700); line-height: 1.5; margin-left: 16px;">
+                    <li><strong>Be Honest and Compliant:</strong> Disclose full and true facts.</li>
+                    <li><strong>Be Informed:</strong> Know tax rules and seek guidance.</li>
+                    <li><strong>Keep Accurate Records:</strong> Maintain books required by law.</li>
+                    <li><strong>Know Authorized Representative:</strong> Ensure proper actions.</li>
+                    <li><strong>Respond in Time:</strong> Comply with notices promptly.</li>
+                    <li><strong>Pay Dues in Time:</strong> Discharge advance tax &amp; dues.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- MODULE 2: JURISDICTION, CASE TRANSFERS & FACELESS JURISDICTION           -->
+<!-- ========================================================================= -->
+
+<!-- Section 4: Jurisdiction Principles & Timelines to Challenge -->
+<section id="sec-jurisdiction-principles" class="content-card">
+    <div id="sec-241"></div>
+    <div id="sec-242"></div>
+    <div class="card-header">
+        <div class="card-title">
+            <span class="card-icon"><i class="fa-solid fa-map-location-dot"></i></span>
+            Jurisdiction of Income-tax Authorities &amp; Challenge Deadlines [Sections 241 &amp; 242]
+        </div>
+        <span class="card-badge">Sections 241 &amp; 242</span>
+    </div>
+    <div class="card-body">
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-bottom: 8px;">1. Allocation of Jurisdiction by CBDT [Section 241]</h4>
+        <p>
+            Under <strong>Section 241</strong> (replaces Section 120), income-tax authorities exercise such powers and perform such functions as are assigned to them by the Board. Directions may be issued having regard to any one or more of the following criteria:
+        </p>
+        <div class="grid grid-4 my-3">
+            <div class="stat-box">
+                <div class="stat-number"><i class="fa-solid fa-earth-americas"></i></div>
+                <div class="stat-label">Territorial Area</div>
+                <p style="font-size: 11px; color: var(--slate-600); margin-top: 4px;">Specified geographical limits (ward/circle/city).</p>
+            </div>
+            <div class="stat-box" style="border-top-color: var(--secondary);">
+                <div class="stat-number" style="color: var(--secondary);"><i class="fa-solid fa-users"></i></div>
+                <div class="stat-label">Classes of Persons</div>
+                <p style="font-size: 11px; color: var(--slate-600); margin-top: 4px;">Companies, salaried individuals, trusts, non-residents.</p>
+            </div>
+            <div class="stat-box" style="border-top-color: var(--amber-500);">
+                <div class="stat-number" style="color: var(--amber-600);"><i class="fa-solid fa-wallet"></i></div>
+                <div class="stat-label">Classes of Income</div>
+                <p style="font-size: 11px; color: var(--slate-600); margin-top: 4px;">Capital gains, business profits, international transactions.</p>
+            </div>
+            <div class="stat-box" style="border-top-color: var(--rose-600);">
+                <div class="stat-number" style="color: var(--rose-600);"><i class="fa-solid fa-folder-open"></i></div>
+                <div class="stat-label">Classes of Cases</div>
+                <p style="font-size: 11px; color: var(--slate-600); margin-top: 4px;">Central Circles (search cases), Transfer Pricing units.</p>
+            </div>
+        </div>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;">2. Jurisdiction of Assessing Officers [Section 242]</h4>
+        <p>
+            Under <strong>Section 242(1)</strong> (replaces Section 124(1)), where the Assessing Officer has been vested with jurisdiction over any area, they have jurisdiction over:
+        </p>
+        <ul style="margin-left: 20px; line-height: 1.7;">
+            <li>In respect of any person carrying on a business or profession, if the place of business is within the area; or where the business is carried on in more places than one, if their <strong>principal place of business</strong> is situate within the area;</li>
+            <li>In respect of any other person residing within the area.</li>
+        </ul>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;">3. Strict Time Limits for Questioning Jurisdiction [Section 242(4)]</h4>
+        <div class="callout callout-danger">
+            <div class="callout-title"><i class="fa-solid fa-clock-rotate-left"></i> Statutory Bar on Delayed Jurisdictional Challenges</div>
+            <p>
+                Under Section 242(4) (replaces Section 124(3)), no person shall be entitled to call in question the jurisdiction of an Assessing Officer:
+            </p>
+            <table class="table-custom mt-2">
+                <thead>
+                    <tr>
+                        <th>Situation of Assessee</th>
+                        <th>Mandatory Statutory Deadline to Challenge Jurisdiction</th>
+                        <th>Consequence of Delay</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Where return of income is filed under Section 139(1)</td>
+                        <td><strong>Before the expiry of the time allowed for furnishing the return</strong></td>
+                        <td>Assessee is <strong>forever precluded</strong> from challenging jurisdiction before AO, CIT(A), or ITAT.</td>
+                    </tr>
+                    <tr>
+                        <td>Where return is not filed, and notice is issued u/s 142(1) / 148</td>
+                        <td><strong>Within 30 days of the service of such notice</strong></td>
+                        <td>Jurisdiction deemed conclusive; proceedings cannot be vitiated subsequently.</td>
+                    </tr>
+                    <tr>
+                        <td>Where notice is served for search assessment u/s 271 / 153A</td>
+                        <td><strong>Before the expiry of the time allowed in the notice</strong> for furnishing return</td>
+                        <td>Assessment completed by AO is valid and legally binding.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Section 5: Transfer of Cases & Faceless Scheme -->
+<section id="sec-transfer-cases-faceless" class="content-card">
+    <div id="sec-243"></div>
+    <div id="sec-244"></div>
+    <div id="sec-245"></div>
+    <div class="card-header">
+        <div class="card-title">
+            <span class="card-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></span>
+            Transfer of Cases, Change of Authority &amp; Faceless Jurisdiction [Sections 243 to 245]
+        </div>
+        <span class="card-badge">Sections 243–245</span>
+    </div>
+    <div class="card-body">
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-bottom: 8px;">1. Statutory Powers to Transfer Cases [Section 243]</h4>
+        <p>
+            Under <strong>Section 243</strong> (replaces Section 127), the Principal Director General or Director General or Principal Chief Commissioner or Chief Commissioner or Principal Commissioner or Commissioner may transfer any case from one Assessing Officer subordinate to them to another Assessing Officer.
+        </p>
+
+        <div class="grid grid-2 my-3">
+            <div class="stat-box" style="border-top-color: var(--primary);">
+                <div class="stat-number">Intra-City Transfer</div>
+                <div class="stat-label">Same City, Locality, or Place [Sec 243(3)]</div>
+                <ul style="font-size: 11px; color: var(--slate-600); margin-top: 6px; line-height: 1.5; text-align: left; padding-left: 15px;">
+                    <li>Where transfer is between officers situated in the <strong>same city, locality, or place</strong>.</li>
+                    <li><strong>No Opportunity of Hearing Required:</strong> The authority is not required to provide a reasonable opportunity of being heard to the assessee.</li>
+                    <li>Reasons need not be communicated, but must exist on official files.</li>
+                </ul>
+            </div>
+            <div class="stat-box" style="border-top-color: var(--rose-600);">
+                <div class="stat-number" style="color: var(--rose-600);">Inter-City Transfer</div>
+                <div class="stat-label">Different Cities / States [Sec 243(1) &amp; (2)]</div>
+                <ul style="font-size: 11px; color: var(--slate-600); margin-top: 6px; line-height: 1.5; text-align: left; padding-left: 15px;">
+                    <li>Where transfer is between officers situated in <strong>different cities, towns, or localities</strong>.</li>
+                    <li><strong>Mandatory Statutory Dual Conditions:</strong>
+                        <br>1. Give a <strong>reasonable opportunity of being heard</strong> to the assessee; AND
+                        <br>2. <strong>Record reasons in writing</strong> for directing such transfer (*Ajantha Industries v. CBDT*).
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="callout callout-info">
+            <div class="callout-title"><i class="fa-solid fa-landmark"></i> Supreme Court Precedent: <em>Ajantha Industries v. CBDT</em> (102 ITR 281)</div>
+            <p>
+                The Supreme Court held that in an inter-city transfer, recording reasons is not an idle formality. The recorded reasons must be communicated to the assessee along with the transfer order. A transfer order passed without recording and communicating reasons is <strong>wholly invalid and bad in law</strong>.
+            </p>
+        </div>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;">2. Change of Incumbent &amp; Right to Demand Rehearing [Section 244]</h4>
+        <p>
+            Under <strong>Section 244</strong> (replaces Section 129), whenever an income-tax authority ceases to exercise jurisdiction and is succeeded by another:
+        </p>
+        <ul style="margin-left: 20px; line-height: 1.7;">
+            <li>The successor authority may continue the proceeding from the stage at which it was left by the predecessor.</li>
+            <li><strong>Assessee's Vested Right:</strong> The assessee has a statutory right to demand that before the proceeding is continued, the previous proceeding or any part thereof be <strong>reopened</strong>, or that they be <strong>reheard</strong> by the successor officer.</li>
+        </ul>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;">3. Faceless Jurisdiction Scheme [Section 245]</h4>
+        <p>
+            Under <strong>Section 245</strong> (replaces Section 130), the Central Government is empowered to make a scheme for faceless exercise of jurisdiction by income-tax authorities:
+        </p>
+        <ul style="margin-left: 20px; line-height: 1.7;">
+            <li>Elimination of direct physical interface between the taxpayer and tax officers.</li>
+            <li>Optimization of resources through dynamic allocation of jurisdiction using automated artificial intelligence engines.</li>
+            <li>Decentralized, team-based assessments where notice is issued by one unit, draft order prepared by another, and review performed by a third unit.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- MODULE 3: CIVIL COURT POWERS, SUMMONS & IMPOUNDING OF BOOKS              -->
+<!-- ========================================================================= -->
+
+<!-- Section 8: Civil Court Powers & Summons -->
+<section id="sec-discovery-summons-powers" class="content-card">
+    <div id="sec-246"></div>
+    <div class="card-header">
+        <div class="card-title">
+            <span class="card-icon"><i class="fa-solid fa-gavel"></i></span>
+            Powers of Discovery, Production of Evidence, Summons &amp; Oath [Section 246]
+        </div>
+        <span class="card-badge">Section 246</span>
+    </div>
+    <div class="card-body">
+        <p>
+            Under <strong>Section 246(1)</strong> (replaces Section 131(1)), income-tax authorities are vested with the same powers as are vested in a <strong>Civil Court</strong> under the <em>Code of Civil Procedure, 1908 (CPC)</em> while trying a suit in respect of the following matters:
+        </p>
+
+        <div class="grid grid-4 my-3">
+            <div class="stat-box" style="border-top-color: var(--primary);">
+                <div class="stat-number"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="stat-label">Discovery &amp; Inspection</div>
+                <p style="font-size: 11px; color: var(--slate-600); margin-top: 4px;">Directing parties to disclose documents &amp; records on affidavit.</p>
+            </div>
+            <div class="stat-box" style="border-top-color: var(--secondary);">
+                <div class="stat-number" style="color: var(--secondary);"><i class="fa-solid fa-user-check"></i></div>
+                <div class="stat-label">Enforcing Attendance</div>
+                <p style="font-size: 11px; color: var(--slate-600); margin-top: 4px;">Issuing summons to any person/bank officer and examining on oath.</p>
+            </div>
+            <div class="stat-box" style="border-top-color: var(--amber-500);">
+                <div class="stat-number" style="color: var(--amber-600);"><i class="fa-solid fa-book"></i></div>
+                <div class="stat-label">Production of Books</div>
+                <p style="font-size: 11px; color: var(--slate-600); margin-top: 4px;">Compelling production of accounts, ledgers, contracts &amp; deeds.</p>
+            </div>
+            <div class="stat-box" style="border-top-color: var(--rose-600);">
+                <div class="stat-number" style="color: var(--rose-600);"><i class="fa-solid fa-clipboard-user"></i></div>
+                <div class="stat-label">Issuing Commissions</div>
+                <p style="font-size: 11px; color: var(--slate-600); margin-top: 4px;">Appointing commissioners to examine witnesses or local accounts.</p>
+            </div>
+        </div>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;">1. "Pending Proceeding" Requirement vs. Investigation Powers [Section 246(1) vs. 246(2)(b)]</h4>
+        <div class="grid grid-2 my-3">
+            <div class="stat-box" style="border-top-color: var(--primary); text-align: left;">
+                <div class="stat-label" style="color: var(--primary); font-size: 13px; margin-bottom: 6px;">Regular Assessing Officer [Sec 246(1)]</div>
+                <p style="font-size: 12px; color: var(--slate-700); line-height: 1.6;">
+                    The Assessing Officer or Commissioner (Appeals) can exercise Section 246(1) powers <strong>strictly when a proceeding is pending</strong> before them (such as regular assessment, reassessment, penalty, or appeal).
+                    <br><em>Rule:</em> If no proceeding is pending, an Assessing Officer <strong>cannot</strong> issue summons under Section 246(1).
+                </p>
+            </div>
+            <div class="stat-box" style="border-top-color: var(--rose-600); text-align: left;">
+                <div class="stat-label" style="color: var(--rose-600); font-size: 13px; margin-bottom: 6px;">Investigation Directorate [Sec 246(2)(b)]</div>
+                <p style="font-size: 12px; color: var(--slate-700); line-height: 1.6;">
+                    Officers of the Investigation Wing (PDGIT, DGIT, PDIT, DIT, Joint Director, Assistant Director) can exercise all civil discovery, summons, and examination powers <strong>even when NO assessment or other proceeding is pending</strong> before any income-tax authority!
+                    <br><em>Statutory Test:</em> Empowered if there is <strong>reason to suspect</strong> that any income has been concealed, or is likely to be concealed.
+                </p>
+            </div>
+        </div>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;">2. Impounding &amp; Retention of Books of Account [Section 246(3)]</h4>
+        <p>
+            Under <strong>Section 246(3)</strong> (replaces Section 131(3)), any income-tax authority may impound and retain in its custody any books of account or other documents produced before it.
+        </p>
+        <div class="callout callout-warning">
+            <div class="callout-title"><i class="fa-solid fa-hourglass-half"></i> The 15-Day Rule &amp; Prior Approval Mandate</div>
+            <p>
+                An Assessing Officer, Assistant Director, or Deputy Director is subject to strict statutory checks:
+            </p>
+            <ol style="margin-left: 20px; margin-top: 6px; line-height: 1.6;">
+                <li>Must <strong>record reasons in writing</strong> before impounding any books or documents;</li>
+                <li><strong>15-Day Ceiling:</strong> Shall not retain custody of impounded books for a period <strong>exceeding 15 days (exclusive of holidays)</strong> without obtaining the prior approval of the Principal Chief Commissioner / Chief Commissioner / Principal Director General / Director General / Principal Commissioner / Commissioner.</li>
+            </ol>
+            <p style="font-size: 12px; color: var(--slate-600); margin-top: 6px;">
+                <em>Judicial Principle:</em> Retention of impounded books beyond 15 days without recording reasons and without obtaining prior administrative approval renders the continued custody illegal and without jurisdiction.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- MODULE 4: SEARCH & SEIZURE, REQUISITION & REASON TO BELIEVE IMMUNITY     -->
+<!-- ========================================================================= -->
+
+<!-- Section 11: Search & Seizure Powers -->
+<section id="sec-search-seizure-powers" class="content-card">
+    <div id="sec-247"></div>
+    <div id="sec-525"></div>
+    <div class="card-header">
+        <div class="card-title">
+            <span class="card-icon"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></span>
+            Powers of Search and Seizure: Grounds, Authorisation &amp; Execution [Sections 247 &amp; 525]
+        </div>
+        <span class="card-badge">Section 247</span>
+    </div>
+    <div class="card-body">
+        <p>
+            <strong>Search and Seizure</strong> under <strong>Section 247</strong> (replaces Section 132) is an extraordinary investigative weapon designed to unearth undisclosed income, black money, and concealed assets. Given its severe intrusion into personal liberty and privacy, it is subject to rigorous statutory safeguards.
+        </p>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 16px; margin-bottom: 8px;">1. Statutory Grounds for Search (Information in Possession &rarr; Reason to Believe)</h4>
+        <p>
+            An authorisation for search (Warrant in Form No. 45) can be issued only if the competent approving authority, in consequence of <strong>information in their possession</strong>, has <strong>reason to believe</strong> that:
+        </p>
+
+        <div class="grid grid-3 my-3">
+            <div class="stat-box" style="border-top-color: var(--primary);">
+                <div class="stat-number">Clause (a)</div>
+                <div class="stat-label">Non-Compliance with Summons</div>
+                <p style="font-size: 11px; color: var(--slate-600); margin-top: 4px;">
+                    A summons u/s 246(1) or notice u/s 142(1) was served, but the person has omitted or failed to produce books of account or other documents.
+                </p>
+            </div>
+            <div class="stat-box" style="border-top-color: var(--amber-500);">
+                <div class="stat-number" style="color: var(--amber-600);">Clause (b)</div>
+                <div class="stat-label">Anticipated Defiance</div>
+                <p style="font-size: 11px; color: var(--slate-600); margin-top: 4px;">
+                    A summons or notice has been issued or would be issued, and the person will not produce books or documents which are useful for any proceeding.
+                </p>
+            </div>
+            <div class="stat-box" style="border-top-color: var(--rose-600);">
+                <div class="stat-number" style="color: var(--rose-600);">Clause (c)</div>
+                <div class="stat-label">Undisclosed Assets in Possession</div>
+                <p style="font-size: 11px; color: var(--slate-600); margin-top: 4px;">
+                    Any person is in possession of any money, bullion, jewellery, or other valuable article or thing representing undisclosed income or property.
+                </p>
+            </div>
+        </div>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;">2. Approving Authorities &amp; Authorised Officers [Section 247(1)]</h4>
+        <table class="table-custom my-3">
+            <thead>
+                <tr>
+                    <th>Statutory Role</th>
+                    <th>Competent Authorities under Section 247(1)</th>
+                    <th>Jurisdiction Scope</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Approving Authorities</strong><br>(Empowered to issue Warrant of Authorisation)</td>
+                    <td>
+                        • Principal Director General of Income-tax (PDGIT) / Director General of Income-tax (DGIT)<br>
+                        • Principal Chief Commissioner (PCCIT) / Chief Commissioner (CCIT)<br>
+                        • Principal Director (PDIT) / Director of Income-tax (DIT)<br>
+                        • Principal Commissioner (PCIT) / Commissioner of Income-tax (CIT)
+                    </td>
+                    <td>Over any building, place, vessel, vehicle, or aircraft within their territorial area, or where they have reason to suspect assets are hidden.</td>
+                </tr>
+                <tr>
+                    <td><strong>Authorised Officers</strong><br>(Empowered to enter, search and seize)</td>
+                    <td>
+                        • Additional Director / Additional Commissioner<br>
+                        • Joint Director / Joint Commissioner<br>
+                        • Deputy Director / Deputy Commissioner<br>
+                        • Assistant Director / Assistant Commissioner<br>
+                        • Income-tax Officer (ITO)
+                    </td>
+                    <td>Authorized by name in Form No. 45 to execute the search operation.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;">3. Permitted Actions during Search &amp; Forced Entry Powers</h4>
+        <p>
+            The authorised officer is statutorily empowered to:
+        </p>
+        <ul style="margin-left: 20px; line-height: 1.7;">
+            <li><strong>Forced Entry:</strong> Enter and search any building, place, vessel, vehicle, or aircraft where they have reason to suspect books, records, or undisclosed assets are kept;</li>
+            <li><strong>Breaking Open Locks:</strong> Break open the lock of any door, box, locker, safe, almirah, or other receptacle where the keys thereof are not available or are withheld;</li>
+            <li><strong>Search of Persons:</strong> Search any person who has got out of, or is in, or about to enter the premises, if the officer has reason to suspect that such person has secreted about their person any books, bullion, or assets;</li>
+            <li><strong>Electronic Data Access:</strong> Require any person found in possession or control of any books of account maintained in electronic form (computers, servers, hard drives, cloud backups) to afford the necessary facility to inspect and clone such data;</li>
+            <li><strong>Seizure:</strong> Seize books of account, documents, money, bullion, jewellery, or other valuable article or thing found as a result of such search.</li>
+        </ul>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;">4. Express Statutory Prohibitions on Seizure</h4>
+        <div class="callout callout-danger">
+            <div class="callout-title"><i class="fa-solid fa-ban"></i> Absolute Prohibition: Stock-in-Trade Cannot be Seized [Proviso to Sec 247(1)]</div>
+            <p>
+                The second proviso to Section 247(1) expressly mandates that:
+                <br><strong>Bullion, jewellery or other valuable article or thing, being stock-in-trade of the business, SHALL NOT BE SEIZED!</strong>
+                <br>The authorised officer can only make an inventory of such stock-in-trade and take extracts/notes. Seizing commercial stock-in-trade is completely illegal and void.
+            </p>
+        </div>
+
+        <div class="callout callout-warning">
+            <div class="callout-title"><i class="fa-solid fa-gem"></i> CBDT Guidelines on Non-Seizure of Gold Jewellery (Instruction No. 1916)</div>
+            <p>
+                To avoid harassment during family searches, CBDT Instruction No. 1916 directs that gold jewellery and ornaments found in a searched household <strong>shall NOT be seized</strong> up to the following aggregate limits:
+            </p>
+            <ul style="margin-left: 20px; margin-top: 6px; line-height: 1.6;">
+                <li><strong>500 grams</strong> for each married woman;</li>
+                <li><strong>250 grams</strong> for each unmarried female;</li>
+                <li><strong>100 grams</strong> for each male member of the family.</li>
+            </ul>
+            <p style="font-size: 12px; color: var(--slate-600); margin-top: 6px;">
+                <em>Note:</em> The authorised officer may exclude a larger quantity of jewellery based on family status, social customs, and local traditions.
+            </p>
+        </div>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;">5. Deemed Seizure &amp; Prohibitory Orders [Sections 247(1) &amp; 247(3)]</h4>
+        <div class="grid grid-2 my-3">
+            <div class="stat-box" style="border-top-color: var(--primary); text-align: left;">
+                <div class="stat-label" style="color: var(--primary); margin-bottom: 6px;">Deemed Seizure [Second Proviso to Sec 247(1)]</div>
+                <p style="font-size: 12px; color: var(--slate-700); line-height: 1.6;">
+                    Where it is not feasible to take physical custody of any valuable asset due to its <strong>volume, weight, dangerous nature, or locational constraints</strong>, the officer serves an order restraining the custodian from parting with it. This is legally deemed to be an actual seizure.
+                </p>
+            </div>
+            <div class="stat-box" style="border-top-color: var(--rose-600); text-align: left;">
+                <div class="stat-label" style="color: var(--rose-600); margin-bottom: 6px;">Prohibitory Order [Section 247(3) / Old 132(3)]</div>
+                <p style="font-size: 12px; color: var(--slate-700); line-height: 1.6;">
+                    Where it is not practicable to seize for reasons other than volume/weight, the officer issues a prohibitory order not to remove or part with the asset.
+                    <br><strong>60-Day Validity:</strong> Order u/s 247(3) is valid strictly for <strong>60 days</strong> from the date of the order; cannot be extended indefinitely.
+                </p>
+            </div>
+        </div>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;">6. Statements on Oath &amp; Evidentiary Value [Section 247(4)]</h4>
+        <p>
+            The authorised officer may, during the search, examine on oath any person who is found to be in possession or control of any books of account, documents, or assets.
+        </p>
+        <ul style="margin-left: 20px; line-height: 1.7;">
+            <li><strong>Admissibility:</strong> The statement recorded under Section 247(4) (replaces Section 132(4)) may thereafter be used in evidence in any proceeding under this Act.</li>
+            <li><strong>High Evidentiary Weight:</strong> Unlike a survey statement under Section 253, a search statement on oath carries strong statutory evidentiary value (*K.P. Abdul Majeed*). An admission made under Section 247(4) cannot be retracted merely by filing an affidavit unless the assessee demonstrates coercion, duress, or misrepresentation of facts with concrete evidence.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Section 16 & 17: Requisition & Reasons Immunity -->
+<section id="sec-requisition-reasons-immunity" class="content-card">
+    <div id="sec-248"></div>
+    <div id="sec-249"></div>
+    <div class="card-header">
+        <div class="card-title">
+            <span class="card-icon"><i class="fa-solid fa-shield-halved"></i></span>
+            Requisition of Books &amp; Assets and Statutory Immunity of Reasons [Sections 248 &amp; 249]
+        </div>
+        <span class="card-badge">Sections 248 &amp; 249</span>
+    </div>
+    <div class="card-body">
+        <div class="timeline-step">
+            <span class="timeline-dot">1</span>
+            <div>
+                <h4 style="color: var(--slate-900); font-weight: 700; margin-bottom: 4px;">Requisition of Books or Assets from Other Authorities [Section 248]</h4>
+                <p>
+                    Where any books of account, documents, or assets have been taken into custody by any other officer or authority (such as the <strong>Police, CBI, Customs, Directorate of Enforcement (ED), GST department</strong>) under any other law:
+                </p>
+                <ul style="font-size: 12px; color: var(--slate-700); line-height: 1.6; margin-left: 20px;">
+                    <li>The competent income-tax authority (PDGIT, DGIT, PCCIT, CCIT, PDIT, PCIT) can issue a <strong>Requisition Order in Form 45C/45D</strong>.</li>
+                    <li>The other authority is statutorily bound to deliver the requisitioned books, records, or assets to the Requisitioning Officer.</li>
+                    <li>Upon delivery, the provisions of search assessment and application of seized assets apply as if the assets were seized in a search u/s 247.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-step">
+            <span class="timeline-dot">2</span>
+            <div>
+                <h4 style="color: var(--slate-900); font-weight: 700; margin-bottom: 4px;">Statutory Immunity from Disclosure of Reasons to Believe [Section 249]</h4>
+                <div class="callout callout-info">
+                    <div class="callout-title"><i class="fa-solid fa-user-secret"></i> Absolute Confidentiality of Search Grounds</div>
+                    <p>
+                        Under <strong>Section 249</strong> (replaces the Explanation to Sections 132(1) and 132A(1)), the reason to believe or reason to suspect, as recorded by the income-tax authority under Section 247(1) or Section 248(1):
+                        <br><strong>SHALL NOT BE DISCLOSED TO ANY PERSON OR ANY AUTHORITY OR THE APPELLATE TRIBUNAL!</strong>
+                    </p>
+                    <p style="font-size: 12px; color: var(--slate-600); margin-top: 4px;">
+                        <em>Legal Effect:</em> The assessee cannot demand inspection or copies of the recorded reasons during assessment or before the ITAT. Only the High Court or Supreme Court under writ jurisdiction (Article 226/32) may call for the file in a sealed cover to verify whether valid information existed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- MODULE 5: SEIZED ASSETS RELEASE, SURVEY POWERS & INFORMATION GATHERING   -->
+<!-- ========================================================================= -->
+
+<!-- Section 18 & 19: Application & Release of Seized Assets -->
+<section id="sec-application-release-seized-assets" class="content-card">
+    <div id="sec-250"></div>
+    <div id="sec-251"></div>
+    <div class="card-header">
+        <div class="card-title">
+            <span class="card-icon"><i class="fa-solid fa-sack-dollar"></i></span>
+            Application &amp; Release of Seized Assets and Retention of Books [Sections 250 &amp; 251]
+        </div>
+        <span class="card-badge">Sections 250 &amp; 251</span>
+    </div>
+    <div class="card-body">
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-bottom: 8px;">1. Application of Seized or Requisitioned Assets [Section 250(1)]</h4>
+        <p>
+            Under <strong>Section 250(1)</strong> (replaces Section 132B(1)), the assets seized under Section 247 or requisitioned under Section 248 may be applied for the discharge of:
+        </p>
+        <ul style="margin-left: 20px; line-height: 1.7;">
+            <li><strong>Existing Liabilities:</strong> The amount of any existing tax liability under the Income-tax Act, Wealth-tax Act, or other direct tax laws; AND</li>
+            <li><strong>Assessed Liability:</strong> The amount of liability determined on completion of the search assessment under Section 271 / Section 153A (including penalty and interest).</li>
+        </ul>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;">2. Release of Seized Cash/Assets upon Application [Proviso to Section 250(1)]</h4>
+        <div class="callout callout-success">
+            <div class="callout-title"><i class="fa-solid fa-hand-holding-dollar"></i> The 30-Day Application Window &amp; 120-Day Release Mandate</div>
+            <p>
+                Where the person concerned desires the release of seized assets (e.g., cash or jewellery) before completion of assessment:
+            </p>
+            <ol style="margin-left: 20px; margin-top: 6px; line-height: 1.6;">
+                <li><strong>30-Day Window:</strong> The assessee must make an application to the Assessing Officer within <strong>30 days from the end of the month</strong> in which the asset was seized;</li>
+                <li><strong>Explanation of Source:</strong> Explaining the nature and source of acquisition of such asset to the satisfaction of the Assessing Officer;</li>
+                <li><strong>Recovery of Existing Dues:</strong> If satisfied, the AO, with prior approval of the Principal Commissioner or Commissioner, shall release the asset after adjusting existing tax liabilities;</li>
+                <li><strong>120-Day Statutory Deadline:</strong> Such release must be executed within <strong>120 days from the date on which the last of the authorisations for search was executed</strong>.</li>
+            </ol>
+        </div>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;">3. Statutory Interest on Excess Seized Cash [Section 250(3)]</h4>
+        <p>
+            Under <strong>Section 250(3)</strong> (replaces Section 132B(4)), where the cash seized exceeds the total liability determined on assessment:
+        </p>
+        <div class="stat-box" style="border-top-color: var(--emerald-600); max-width: 500px; margin: 14px 0;">
+            <div class="stat-number" style="color: var(--emerald-600);">0.5% per Month</div>
+            <div class="stat-label">Simple Interest Payable by Central Government</div>
+            <p style="font-size: 11.5px; color: var(--slate-600); margin-top: 6px;">
+                <strong>Period of Interest:</strong> From the date immediately following the expiry of <strong>120 days from the execution of the last search authorisation</strong> up to the date of completion of the assessment.
+            </p>
+        </div>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;">4. Retention of Books of Account &amp; Handover [Section 251]</h4>
+        <ul style="margin-left: 20px; line-height: 1.7;">
+            <li><strong>30-Day Retention after Assessment:</strong> The authorised officer can retain seized books of account and documents for up to <strong>30 days from the date of the assessment order</strong>. Retention beyond 30 days requires written reasons and prior approval of the Principal Commissioner / Commissioner.</li>
+            <li><strong>Handover to Jurisdictional AO within 60 Days:</strong> If the searching officer (e.g., JDIT Delhi) does not have assessment jurisdiction over the searched person (e.g., company located in Jaipur), they must handover all seized books and assets to the jurisdictional Assessing Officer within <strong>60 days from the date of execution of search</strong>.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Section 20 & 21: Power of Survey & Search Comparison -->
+<section id="sec-power-of-survey" class="content-card">
+    <div id="sec-253"></div>
+    <div class="card-header">
+        <div class="card-title">
+            <span class="card-icon"><i class="fa-solid fa-clipboard-list"></i></span>
+            Power of Survey &amp; Ceremony Inspections [Section 253]
+        </div>
+        <span class="card-badge">Section 253</span>
+    </div>
+    <div class="card-body">
+        <p>
+            Under <strong>Section 253</strong> (replaces Section 133A), an income-tax authority may enter any place of business or profession within their jurisdiction to inspect books of account, verify cash and stock, or check compliance with TDS/TCS.
+        </p>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 16px; margin-bottom: 8px;">1. Permissible Timing for Entry</h4>
+        <table class="table-custom my-3">
+            <thead>
+                <tr>
+                    <th>Type of Premises</th>
+                    <th>Statutory Time Window for Entry [Sec 253(1)]</th>
+                    <th>Practical Nuance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Place of Business or Profession</strong></td>
+                    <td><strong>Only during the hours at which such place is open</strong> for the conduct of business or profession</td>
+                    <td>If business operates from 11:00 AM to 11:00 PM, survey can validly commence at 8:00 PM.</td>
+                </tr>
+                <tr>
+                    <td><strong>Any Other Place</strong> (where books or assets are stated to be kept)</td>
+                    <td><strong>Only after sunrise and before sunset</strong></td>
+                    <td>Night entry into residential or non-business premises is strictly prohibited.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 16px; margin-bottom: 8px;">2. Strict Prohibitions during Survey Operations [Section 253(4)]</h4>
+        <div class="callout callout-danger">
+            <div class="callout-title"><i class="fa-solid fa-triangle-exclamation"></i> Absolute Statutory Embargo: No Cash or Asset Seizure!</div>
+            <p>
+                Section 253(4) strictly debars the survey team from:
+            </p>
+            <ol style="margin-left: 20px; margin-top: 6px; line-height: 1.6;">
+                <li><strong>NO Seizure of Cash or Valuables:</strong> An income-tax authority has <strong>NO POWER to seize or remove any cash, stock, bullion, or valuable article</strong> from the premises. They can only make an inventory.</li>
+                <li><strong>NO Search of Persons:</strong> Survey officers cannot physically frisk or search individuals.</li>
+                <li><strong>NO Breaking of Locks:</strong> Officers cannot break open doors or almirahs.</li>
+                <li><strong>Impounding Books Capped at 15 Days:</strong> Books can be impounded only after recording reasons and cannot be retained for more than 15 days without approval.</li>
+            </ol>
+        </div>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;">3. Survey at Functions, Ceremonies &amp; Events [Section 253(5)]</h4>
+        <p>
+            Where an assessee incurs lavish expenditure on any function, ceremony, or event (e.g. weddings, anniversary celebrations, concerts):
+        </p>
+        <ul style="margin-left: 20px; line-height: 1.7;">
+            <li>The income-tax authority may collect information regarding the nature and scale of expenditure;</li>
+            <li><strong>Post-Event Timing:</strong> The authority can enter the venue <strong>only after the function, ceremony, or event has ended</strong>. Disrupting an ongoing ceremony is legally prohibited.</li>
+            <li>Statements of caterers, decorators, hotel managers, and event organizers may be recorded.</li>
+        </ul>
+
+        <h4 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;">4. Master Comparison: Search &amp; Seizure (Sec 247) vs. Survey (Sec 253)</h4>
+        <table class="table-custom my-3">
+            <thead>
+                <tr>
+                    <th>Statutory Parameter</th>
+                    <th>Search &amp; Seizure [Section 247 / Old Sec 132]</th>
+                    <th>Power of Survey [Section 253 / Old Sec 133A]</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Entry Timing</strong></td>
+                    <td>Anytime (day or night); search can continue over multiple days</td>
+                    <td>Only during business working hours (or sunrise to sunset for other places)</td>
+                </tr>
+                <tr>
+                    <td><strong>Premises Covered</strong></td>
+                    <td>Any building, place, vessel, vehicle, aircraft, or residence</td>
+                    <td>Strictly place of business or profession (or where books/cash kept)</td>
+                </tr>
+                <tr>
+                    <td><strong>Forced Entry &amp; Breaking Locks</strong></td>
+                    <td><strong>Permitted:</strong> Can break open locks of doors, boxes, safes, lockers</td>
+                    <td><strong>Prohibited:</strong> Cannot break open locks or force doors</td>
+                </tr>
+                <tr>
+                    <td><strong>Search of Persons</strong></td>
+                    <td><strong>Permitted:</strong> Can physically search any person entering/leaving</td>
+                    <td><strong>Prohibited:</strong> Cannot search or frisk any person</td>
+                </tr>
+                <tr>
+                    <td><strong>Seizure of Cash &amp; Assets</strong></td>
+                    <td><strong>Permitted:</strong> Can seize cash, bullion, jewellery, valuable articles</td>
+                    <td><strong>Strictly Prohibited:</strong> Cannot seize any cash, stock, or valuables</td>
+                </tr>
+                <tr>
+                    <td><strong>Seizure of Stock-in-Trade</strong></td>
+                    <td><strong>Prohibited:</strong> Can only make inventory and take notes</td>
+                    <td><strong>Prohibited:</strong> Can only make inventory and take notes</td>
+                </tr>
+                <tr>
+                    <td><strong>Evidentiary Value of Statement</strong></td>
+                    <td><strong>Statement on Oath u/s 247(4):</strong> High evidentiary weight; binding (*K.P. Abdul Majeed*)</td>
+                    <td><strong>Statement u/s 253(3):</strong> Rebuttable; not on oath; lower evidentiary weight (*S. Khader Khan Son*)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Section 22: Information Gathering & Inquiries -->
+<section id="sec-information-gathering-faceless" class="content-card">
+    <div id="sec-252"></div>
+    <div id="sec-254"></div>
+    <div id="sec-255"></div>
+    <div id="sec-256"></div>
+    <div id="sec-257"></div>
+    <div id="sec-258"></div>
+    <div id="sec-260"></div>
+    <div class="card-header">
+        <div class="card-title">
+            <span class="card-icon"><i class="fa-solid fa-database"></i></span>
+            Information Gathering, Inquiries &amp; Inter-Agency Disclosure [Sections 252 to 260]
+        </div>
+        <span class="card-badge">Sections 252–260</span>
+    </div>
+    <div class="card-body">
+        <div class="timeline-step">
+            <span class="timeline-dot">1</span>
+            <div>
+                <h4 style="color: var(--slate-900); font-weight: 700; margin-bottom: 4px;">Power to Call for Information [Section 252 / Old Sec 133]</h4>
+                <p>
+                    Under Section 252, the Assessing Officer or other authorities may require:
+                    <br>• Any firm to furnish names and addresses of partners and their shares;
+                    <br>• Any person or trustee to furnish particulars of persons for whom they act;
+                    <br>• <strong>Broad Information Powers [Sec 252(2) / Old 133(6)]:</strong> Calling for information or statement of accounts from any person, bank, or NBFC. Can be exercised <em>even if no proceeding is pending</em>, with prior approval of the Principal Commissioner / Commissioner.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-step">
+            <span class="timeline-dot">2</span>
+            <div>
+                <h4 style="color: var(--slate-900); font-weight: 700; margin-bottom: 4px;">Door-to-Door Business Data Collection [Section 254 / Old Sec 133B]</h4>
+                <p>
+                    An income-tax authority may enter any building or place within their jurisdiction where a business or profession is carried on during business hours to collect prescribed general business information. Officers cannot inspect books or remove records under this section.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-step">
+            <span class="timeline-dot">3</span>
+            <div>
+                <h4 style="color: var(--slate-900); font-weight: 700; margin-bottom: 4px;">Inspection of Registers of Companies &amp; Depositories [Section 255 / Old Sec 134]</h4>
+                <p>
+                    Income-tax authorities may inspect and take copies of any register of members, debenture holders, or security holders of any company or depository without paying any fee.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-step">
+            <span class="timeline-dot">4</span>
+            <div>
+                <h4 style="color: var(--slate-900); font-weight: 700; margin-bottom: 4px;">Deemed Judicial Proceedings under IPC [Section 257 / Old Sec 136]</h4>
+                <p>
+                    Any proceeding under this Act before an income-tax authority shall be deemed to be a <strong>judicial proceeding</strong> within the meaning of Sections 193 and 228 of the <em>Indian Penal Code (IPC)</em>. Fabricating false evidence or giving false statements carries criminal prosecution.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-step">
+            <span class="timeline-dot">5</span>
+            <div>
+                <h4 style="color: var(--slate-900); font-weight: 700; margin-bottom: 4px;">Inter-Agency Disclosure &amp; Faceless Verification [Sections 258 &amp; 260]</h4>
+                <p>
+                    <strong>Section 258 (Old 138):</strong> Disclosure of tax information to other law enforcement and regulatory authorities (CBI, ED, SEBI, RBI, SFIO, State Police) for enabling them to perform statutory functions.
+                    <br><strong>Section 260 (Old 135A):</strong> Faceless collection of information through automated electronic verification systems.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========================================================================= -->
+<!-- MODULE 6: ICAI TEST YOUR KNOWLEDGE (TYK) PRACTICAL QUESTIONS (1 TO 8)    -->
+<!-- ========================================================================= -->
+
+<section id="sec-tyk" class="content-card">
+    <div class="card-header">
+        <div class="card-title">
+            <span class="card-icon"><i class="fa-solid fa-clipboard-question"></i></span>
+            ICAI Test Your Knowledge (TYK): Comprehensive Practical Case Studies (1 to 8)
+        </div>
+        <span class="card-badge">Practical Problem Bank</span>
+    </div>
+    <div class="card-body">
+        <p>
+            The following 8 comprehensive case studies from the ICAI CA Final Study Material test real-world scenarios on condonation of return delays, jurisdictional challenges, discovery without pending proceedings, search warrants, CBI intelligence, and 120-day release of seized cash under the <strong>Income-tax Act, 2025</strong>.
+        </p>
+
+        <!-- TYK 1 -->
+        <div id="tyk-1" class="example-box my-4">
+            <div class="example-title"><i class="fa-solid fa-circle-question"></i> TYK Question 1: Server Glitch, Belated Loss Return &amp; Condonation of Delay [Section 239(3)(b)]</div>
+            <p><strong>Question:</strong></p>
+            <p>
+                ABC Ltd. regularly files its return of income electronically. While trying to upload the return of income for T.Y. 2025-26 on 31.10.2026 (the statutory due date u/s 139(1)), the company faced persistent server errors and network connectivity failures. The return containing a claim for carry forward of business loss of ₹3.10 crores was successfully uploaded at 1:00 AM on 01.11.2026 (a delay of exactly one hour). This circumstance was recorded in an e-mail addressed to the jurisdictional PCIT on the same night.
+                <br>ABC Ltd. made a request to the Principal Chief Commissioner of Income-tax (PCCIT) for condonation of delay in filing the return of income claiming carry forward of business loss. Examine the competence of the PCCIT to condone the delay under the provisions of the Income-tax Act, 2025.
+            </p>
+            <div class="callout callout-info mt-2">
+                <div class="callout-title"><i class="fa-solid fa-scale-balanced"></i> Statutory Answer &amp; Analysis</div>
+                <p>
+                    <strong>1. Statutory Power under Section 239(3)(b) [Old Section 119(2)(b)]:</strong>
+                    <br>Under Section 239(3)(b), the CBDT is empowered to authorize any income-tax authority to admit an application or claim for any exemption, deduction, refund, or any other relief under this Act, or a return of loss, after the expiry of the period specified in the Act, if the authority is satisfied that the taxpayer was prevented by <strong>reasonable and genuine hardship</strong> from filing it in time.
+                </p>
+                <p>
+                    <strong>2. Monetary Jurisdiction under CBDT Circular No. 9/2015 &amp; Circular No. 13/2024:</strong>
+                    <br>The CBDT has delegated its powers of condonation of delay based on monetary thresholds of the claim/loss:
+                </p>
+                <ul style="margin-left: 20px; line-height: 1.6;">
+                    <li>Claims/Losses up to ₹1 Crore: Principal Commissioner / Commissioner (PCIT/CIT).</li>
+                    <li>Claims/Losses exceeding ₹1 Crore up to ₹3 Crore: Chief Commissioner / Director General (CCIT/DGIT).</li>
+                    <li><strong>Claims/Losses exceeding ₹3 Crore:</strong> <strong>Principal Chief Commissioner of Income-tax (PCCIT)</strong> or the CBDT.</li>
+                </ul>
+                <p>
+                    <strong>3. Application to ABC Ltd.:</strong>
+                    <br>• The loss claimed to be carried forward is <strong>₹3.10 crores</strong>, which exceeds the ₹3 Crore threshold. Hence, the application made to the <strong>Principal Chief Commissioner of Income-tax (PCCIT)</strong> is before the legally competent authority.
+                    <br>• The delay of one hour was occasioned by genuine technical server errors beyond the control of the assessee and was evidenced by a contemporaneous email to the PCIT.
+                </p>
+                <p>
+                    <strong>Conclusion:</strong> The PCCIT is <strong>statutorily competent to condone the delay</strong> of one hour under Section 239(3)(b) and direct the Assessing Officer to accept the return as a valid return filed within due date, thereby permitting the carry forward of business loss of ₹3.10 crores.
+                </p>
+            </div>
+        </div>
+
+        <!-- TYK 2 -->
+        <div id="tyk-2" class="example-box my-4">
+            <div class="example-title"><i class="fa-solid fa-circle-question"></i> TYK Question 2: Right of Assessee to Question Jurisdiction of Assessing Officer [Section 242(4)]</div>
+            <p><strong>Question:</strong></p>
+            <p>
+                Examine the correctness of the statement: <em>“The jurisdiction of an Assessing Officer cannot be questioned by an assessee.”</em>
+            </p>
+            <div class="callout callout-info mt-2">
+                <div class="callout-title"><i class="fa-solid fa-scale-balanced"></i> Statutory Answer &amp; Analysis</div>
+                <p>
+                    The statement is <strong>INCORRECT in law</strong>.
+                </p>
+                <p>
+                    An assessee has an express statutory right to question the territorial or subject-matter jurisdiction of an Assessing Officer, provided such objection is raised within the mandatory time limits specified under <strong>Section 242(4)</strong> (replaces Section 124(3)):
+                </p>
+                <ol style="margin-left: 20px; line-height: 1.7;">
+                    <li><strong>Where a Return has been Filed u/s 139(1):</strong>
+                        <br>The jurisdiction of the AO can be questioned <strong>before the expiry of the time allowed for furnishing the return</strong> under Section 139(1).
+                    </li>
+                    <li><strong>Where No Return has been Filed and Notice is Issued u/s 142(1) or 148:</strong>
+                        <br>The jurisdiction can be questioned <strong>within 30 days of the service of such notice</strong>.
+                    </li>
+                    <li><strong>Where Notice is Issued for Search Assessment u/s 271 / 153A:</strong>
+                        <br>The objection must be raised <strong>before the expiry of the time allowed in the notice</strong> for furnishing the return.
+                    </li>
+                </ol>
+                <p>
+                    <strong>Dispute Resolution Procedure [Section 242(2)]:</strong> If the assessee raises the question of jurisdiction within the prescribed time and the AO is not satisfied with the correctness of the claim, the AO cannot arbitrarily reject it; the AO <strong>must refer the matter for determination</strong> to the Director General or Chief Commissioner or Commissioner.
+                    <br><em>Statutory Preclusion:</em> It is only when the assessee <strong>fails to challenge within the prescribed time limits</strong> that they are forever barred from questioning the AO's jurisdiction at subsequent assessment or appellate stages.
+                </p>
+            </div>
+        </div>
+
+        <!-- TYK 3 -->
+        <div id="tyk-3" class="example-box my-4">
+            <div class="example-title"><i class="fa-solid fa-circle-question"></i> TYK Question 3: Investigation Directorate Summons without Pending Proceedings [Section 246(2)(b)]</div>
+            <p><strong>Question:</strong></p>
+            <p>
+                The Director General of Income-tax, after getting information that Mr. Mogambo is manufacturing spurious goods and evading taxes, issued summons under Section 246 to Mr. Mogambo and his bankers to appear in person and produce books of account, even though no assessment or reassessment proceeding was pending against Mr. Mogambo. Mr. Mogambo challenges the validity of the summons on the ground that the income-tax authorities cannot exercise discovery and summons powers when no proceeding is pending. Decide the validity of Mr. Mogambo's contention.
+            </p>
+            <div class="callout callout-info mt-2">
+                <div class="callout-title"><i class="fa-solid fa-scale-balanced"></i> Statutory Answer &amp; Analysis</div>
+                <p>
+                    Mr. Mogambo's contention is <strong>INCORRECT in law</strong>.
+                </p>
+                <p>
+                    <strong>1. General Rule under Section 246(1) [Old Section 131(1)]:</strong>
+                    <br>A regular Assessing Officer or Commissioner (Appeals) can exercise Civil Court powers of summons and discovery <strong>only when a proceeding is actually pending</strong> before them.
+                </p>
+                <p>
+                    <strong>2. Overriding Power of Investigation Directorate under Section 246(2)(b) [Old Section 131(1A)]:</strong>
+                    <br>Under Section 246(2)(b), the Principal Director General / Director General / Principal Director / Director / Additional Director / Joint Director / Deputy Director / Assistant Director are vested with extraordinary powers:
+                </p>
+                <ul style="margin-left: 20px; line-height: 1.7;">
+                    <li>They are statutorily empowered to exercise all powers of discovery, inspection, enforcing attendance, examining on oath, and compelling production of books <strong>NOTWITHSTANDING that no proceeding with respect to such person is pending</strong> before any income-tax authority!</li>
+                    <li><strong>Condition:</strong> The officer must have <strong>reason to suspect</strong> that any income has been concealed, or is likely to be concealed, by any person or class of persons within their jurisdiction.</li>
+                </ul>
+                <p>
+                    <strong>Conclusion:</strong> Since the DGIT possessed credible information regarding the manufacture of spurious goods and tax evasion, the "reason to suspect" concealment was fully satisfied. The summons issued by the DGIT to Mr. Mogambo and his bankers without any pending proceeding is <strong>valid and legally enforceable</strong>.
+                </p>
+            </div>
+        </div>
+
+        <!-- TYK 4 -->
+        <div id="tyk-4" class="example-box my-4">
+            <div class="example-title"><i class="fa-solid fa-circle-question"></i> TYK Question 4: Search Authorisation, Approving Authorities &amp; Reasons Immunity [Sections 247 &amp; 249]</div>
+            <p><strong>Question:</strong></p>
+            <p>
+                The premises of Ganesh were subjected to a search under Section 247 of the Act. The search was authorised by a Joint Director of Income-tax. Ganesh challenges the search on two grounds:
+                <br>(a) A Joint Director is not competent to authorise a search under Section 247; and
+                <br>(b) The department must furnish him a copy of the "reasons to believe" recorded prior to issuing the search warrant.
+                <br>Examine the validity of the objections raised by Ganesh.
+            </p>
+            <div class="callout callout-info mt-2">
+                <div class="callout-title"><i class="fa-solid fa-scale-balanced"></i> Statutory Answer &amp; Analysis</div>
+                <ol style="margin-left: 20px; line-height: 1.7;">
+                    <li><strong>(a) Competence of Joint Director to Authorise Search:</strong>
+                        <br>Under Section 247(1), the primary approving authorities empowered to issue a search warrant (Form No. 45) are:
+                        <br>• Principal Director General or Director General of Income-tax;
+                        <br>• Principal Chief Commissioner or Chief Commissioner;
+                        <br>• Principal Director or Director of Income-tax;
+                        <br>• Principal Commissioner or Commissioner of Income-tax.
+                        <br>A Joint Director of Income-tax is an <strong>Authorised Officer</strong> (empowered to execute the search), but is <strong>NOT an approving authority</strong> unless specially empowered by the CBDT. If the Joint Director issued the search warrant on their own accord without authorization from a Director General / Commissioner, the search warrant is <strong>invalid</strong>. However, if the Joint Director merely executed the search under a warrant issued by the Director/Commissioner, the execution is <strong>fully valid</strong>.
+                    </li>
+                    <li><strong>(b) Demand for Copy of "Reason to Believe" [Section 249]:</strong>
+                        <br>Under <strong>Section 249</strong> (replaces the Explanation to Section 132(1)), the reason to believe or reason to suspect recorded by the income-tax authority <strong>shall NOT be disclosed to any person or any authority or the Appellate Tribunal</strong>.
+                        <br>Ganesh has <strong>no statutory right</strong> to demand inspection or a copy of the recorded reasons. His second objection is <strong>completely untenable in law</strong>.
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- TYK 5 -->
+        <div id="tyk-5" class="example-box my-4">
+            <div class="example-title"><i class="fa-solid fa-circle-question"></i> TYK Question 5: CBI Intelligence as Valid Information for Search [Section 247(1)(c)]</div>
+            <p><strong>Question:</strong></p>
+            <p>
+                Examine whether information regarding possession of unexplained cash of ₹50 lakhs received from the Central Bureau of Investigation (CBI) can form the basis for issuing a search warrant under Section 247 against Mr. X.
+            </p>
+            <div class="callout callout-info mt-2">
+                <div class="callout-title"><i class="fa-solid fa-scale-balanced"></i> Statutory Answer &amp; Analysis</div>
+                <p>
+                    <strong>1. Statutory Requirement of "Information in Possession" [Section 247(1)]:</strong>
+                    <br>Under Section 247(1)(c), the competent authority must have "information in their possession" on the basis of which they form a "reason to believe" that any person is in possession of money, bullion, jewellery, or other valuable article representing undisclosed income.
+                </p>
+                <p>
+                    <strong>2. Evidentiary Value of Law Enforcement Intelligence:</strong>
+                    <br>• While subjective suspicion or rumor is insufficient, specific and verifiable intelligence from an official premier investigative agency like the <strong>CBI, Police, or Enforcement Directorate (ED)</strong> constitutes credible and relevant <strong>"information in possession"</strong>.
+                    <br>• The Delhi High Court and Supreme Court have affirmed that information received from CBI disclosing interception of an assessee with unaccounted cash of ₹50 lakhs provides a direct and rational nexus for forming the requisite "reason to believe" under Section 247(1)(c).
+                </p>
+                <p>
+                    <strong>3. Course of Action:</strong>
+                    <br>• If the cash is still in the physical custody of Mr. X, a search warrant under <strong>Section 247</strong> can be validly issued and executed.
+                    <br>• If the cash has already been seized and retained in custody by the CBI under criminal proceedings, the appropriate statutory remedy is issuing a <strong>Requisition Order under Section 248 (Old Section 132A)</strong> requiring the CBI to deliver the ₹50 lakhs to the Requisitioning Officer.
+                </p>
+            </div>
+        </div>
+
+        <!-- TYK 6 -->
+        <div id="tyk-6" class="example-box my-4">
+            <div class="example-title"><i class="fa-solid fa-circle-question"></i> TYK Question 6: 120-Day Release of Seized Cash &amp; 30-Day Application Deadline [Section 250(1)]</div>
+            <p><strong>Question:</strong></p>
+            <p>
+                Cash of ₹95 lakhs was seized on 12.09.2026 in a search conducted as per Section 247 of the Act. The assessee moved an application before the Assessing Officer on 10.10.2026 to release such cash after explaining the sources thereof, and praying that the seized cash may be adjusted towards their advance tax liability.
+                <br>Examine the validity of the assessee's application and explain the procedure to be followed by the Assessing Officer under Section 250.
+            </p>
+            <div class="callout callout-info mt-2">
+                <div class="callout-title"><i class="fa-solid fa-scale-balanced"></i> Statutory Answer &amp; Analysis</div>
+                <p>
+                    <strong>1. Timeliness of Application [First Proviso to Section 250(1)]:</strong>
+                    <br>The assessee must make an application to the Assessing Officer within <strong>30 days from the end of the month in which the asset was seized</strong>.
+                    <br>• Date of Seizure: 12.09.2026
+                    <br>• End of the Month: 30.09.2026
+                    <br>• 30-Day Deadline: <strong>30.10.2026</strong>
+                    <br>Since the application was made on <strong>10.10.2026</strong>, it is <strong>fully within the statutory time limit</strong>.
+                </p>
+                <p>
+                    <strong>2. Adjustment towards Advance Tax Prohibited:</strong>
+                    <br>Under Section 250(1), seized assets can be applied only to discharge <strong>existing tax liabilities</strong> under direct tax laws and the liability determined on search assessment. Seized cash <strong>cannot be adjusted against future advance tax liabilities</strong> (*CIT v. Cosmos Associates*).
+                </p>
+                <p>
+                    <strong>3. Mandatory Procedure for Assessing Officer:</strong>
+                    <ul style="margin-left: 20px; line-height: 1.6;">
+                        <li>The AO must examine whether the nature and source of acquisition of the cash is explained to their satisfaction.</li>
+                        <li>If satisfied, the AO, with prior approval of the Principal Commissioner / Commissioner, shall release the cash after retaining only the amount required to satisfy any existing tax liabilities.</li>
+                        <li><strong>120-Day Mandatory Release Deadline:</strong> Such release must be executed within <strong>120 days from the date on which the last authorisation for search was executed</strong>.</li>
+                        <li><strong>Interest Penalty on Delay [Section 250(3)]:</strong> If the department fails to release the excess cash within 120 days, the Central Government is liable to pay simple interest @ <strong>0.5% per month or part of a month</strong> from the expiry of 120 days to the date of regular assessment.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <!-- TYK 7 -->
+        <div id="tyk-7" class="example-box my-4">
+            <div class="example-title"><i class="fa-solid fa-circle-question"></i> TYK Question 7: Handover of Seized Documents to Non-Jurisdictional AO within 60 Days [Section 247(7)]</div>
+            <p><strong>Question:</strong></p>
+            <p>
+                The business premises of Ram Bharose Ltd. and the residence of two of its directors at Delhi were searched on 15.08.2026. The search was authorised by the Director of Income-tax (Investigation), Delhi. During the search, books of account, title deeds, and documents belonging to its wholly owned subsidiary, Shri Krishna Ltd. (which has its registered office and is assessed at Jaipur), were seized.
+                <br>What is the procedure to be followed by the Authorised Officer at Delhi regarding the documents belonging to Shri Krishna Ltd., Jaipur?
+            </p>
+            <div class="callout callout-info mt-2">
+                <div class="callout-title"><i class="fa-solid fa-scale-balanced"></i> Statutory Answer &amp; Analysis</div>
+                <p>
+                    <strong>Statutory Mandate under Section 247(7) [replaces Section 132(9A)]:</strong>
+                </p>
+                <p>
+                    Where the Authorised Officer (JDIT/DDIT, Delhi) has <strong>no jurisdiction</strong> over the person to whom the seized books of account, documents, or assets belong (Shri Krishna Ltd., assessed at Jaipur):
+                </p>
+                <ol style="margin-left: 20px; line-height: 1.7;">
+                    <li>The Authorised Officer at Delhi cannot retain the documents indefinitely, nor can they proceed to complete the assessment of Shri Krishna Ltd.</li>
+                    <li><strong>60-Day Mandatory Handover:</strong> The Authorised Officer <strong>shall handover the seized books of account, other documents, or assets to the Assessing Officer having jurisdiction over such person (the Assessing Officer at Jaipur) within a period of 60 days</strong> from the date on which the last of the authorisations for search was executed.</li>
+                    <li><strong>Jurisdiction of Jaipur AO:</strong> Upon receiving the seized material, the Assessing Officer at Jaipur is vested with full statutory jurisdiction to initiate search assessment proceedings under Section 271 / Section 153C and apply the provisions of Section 250 for retention or release of assets.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- TYK 8 -->
+        <div id="tyk-8" class="example-box my-4">
+            <div class="example-title"><i class="fa-solid fa-circle-question"></i> TYK Question 8: Seized Asset Application Order &amp; Interest on Delayed Release [Section 250]</div>
+            <p><strong>Question:</strong></p>
+            <p>
+                In the course of a search on 25.03.2027, cash of ₹80 lakhs was seized from Mr. Loyal. The search assessment was completed on 20.12.2027, determining an aggregate tax liability of ₹35 lakhs (inclusive of interest and penalties). An existing tax arrears liability of ₹10 lakhs relating to A.Y. 2024-25 was also outstanding.
+                <br>Examine:
+                <br>(a) The procedure for applying the seized cash towards tax liabilities;
+                <br>(b) The quantum of cash refundable to Mr. Loyal; and
+                <br>(c) The interest, if any, payable by the Central Government on the excess cash under Section 250(3).
+            </p>
+            <div class="callout callout-info mt-2">
+                <div class="callout-title"><i class="fa-solid fa-scale-balanced"></i> Statutory Answer &amp; Analysis</div>
+                <p><strong>(a) Application Order of Seized Cash [Section 250(1)]:</strong></p>
+                <p>Under Section 250(1), the seized cash of ₹80 lakhs must be applied in the following statutory sequence:</p>
+                <table class="table-custom my-2">
+                    <thead>
+                        <tr>
+                            <th>Particulars</th>
+                            <th>Amount (₹)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Total Cash Seized during Search</td>
+                            <td>80,00,000</td>
+                        </tr>
+                        <tr>
+                            <td><em>Less:</em> Existing Tax Arrears for A.Y. 2024-25</td>
+                            <td>(10,00,000)</td>
+                        </tr>
+                        <tr>
+                            <td><em>Less:</em> Tax, Interest &amp; Penalty determined on Search Assessment</td>
+                            <td>(35,00,000)</td>
+                        </tr>
+                        <tr style="background: var(--emerald-50);">
+                            <td><strong>Net Excess Cash Refundable to Mr. Loyal</strong></td>
+                            <td><strong>₹35,00,000</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><strong>(b) Quantum of Refundable Cash:</strong></p>
+                <p>The net balance of <strong>₹35,00,000</strong> must be released and refunded to Mr. Loyal along with the assessment order.</p>
+
+                <p><strong>(c) Computation of Interest under Section 250(3) [Old Section 132B(4)]:</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.7;">
+                    <li><strong>Interest Rate:</strong> Simple interest @ <strong>0.5% per month or part of a month</strong>.</li>
+                    <li><strong>Commencement Date:</strong> Date immediately following the expiry of <strong>120 days from the date of search</strong> (Search: 25.03.2027 &rarr; 120 days expire on 23.07.2027 &rarr; Interest starts from <strong>24.07.2027</strong>).</li>
+                    <li><strong>Termination Date:</strong> Date of completion of assessment (<strong>20.12.2027</strong>).</li>
+                    <li><strong>Period:</strong> From 24.07.2027 to 20.12.2027 = <strong>5 calendar months</strong> (Part of a month counts as full month: July, August, September, October, November, December = 5 completed months plus fraction = 5 months).</li>
+                    <li><strong>Interest Payable:</strong> ₹35,00,000 &times; 0.5% &times; 5 months = <strong>₹87,500</strong>.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CHAPTER FOOTER & NAVIGATION -->
+                <footer style="margin-top: 64px; padding-top: 32px; border-top: 2px solid var(--slate-100);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+                        <div>
+                            <a href="tds_tcs_recovery.html" style="display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; font-size: 14px;">
+                                <i class="fa-solid fa-arrow-left"></i> Previous: Chapter 13 - TDS, TCS, Advance Tax &amp; Recovery
+                            </a>
+                        </div>
+                        <div>
+                            <a href="../notes/dtnotes.html" style="display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; font-size: 14px;">
+                                Chapter Index: Direct Tax Master Portal <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 40px; color: var(--slate-400); font-size: 13px;">
+                        <p>&copy; 2026 Calcium Notes &bull; CA Final Direct Tax Master Portal &bull; Updated for Finance Act, 2026 &amp; Income-tax Act, 2025.</p>
+                        <p style="font-size: 11.5px; margin-top: 4px;">Strictly for educational review and exam preparation based on the ICAI Study Material.</p>
+                    </div>
+                </footer>
+
+            </div> <!-- End reading-container -->
+        </main>
+    </div> <!-- End page-wrapper -->
+
+    <!-- Interactive JavaScript -->
+    <script>
+        (function() {
+            // 1. Reading Progress Bar
+            const progressBar = document.getElementById('reading-progress');
+            window.addEventListener('scroll', () => {
+                const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = totalHeight > 0 ? (window.scrollY / totalHeight) * 100 : 0;
+                if (progressBar) {
+                    progressBar.style.width = progress + '%';
+                }
+            });
+
+            // 2. Sidebar Search Filter
+            const searchInput = document.getElementById('sidebar-search');
+            const menuLinks = document.querySelectorAll('.sidebar-link');
+            const sectionTitles = document.querySelectorAll('.sidebar-section-title');
+
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    const query = this.value.toLowerCase().trim();
+                    menuLinks.forEach(link => {
+                        const text = link.textContent.toLowerCase();
+                        const href = link.getAttribute('href').toLowerCase();
+                        const match = text.includes(query) || href.includes(query);
+                        link.parentElement.style.display = match ? 'block' : 'none';
+                    });
+
+                    sectionTitles.forEach(title => {
+                        let next = title.nextElementSibling;
+                        let anyVisible = false;
+                        while (next && !next.classList.contains('sidebar-section-title')) {
+                            if (next.style.display !== 'none') {
+                                anyVisible = true;
+                                break;
+                            }
+                            next = next.nextElementSibling;
+                        }
+                        title.style.display = anyVisible || query === '' ? 'block' : 'none';
+                    });
+                });
+            }
+
+            // 3. Active Link Highlighting on Scroll
+            const sections = document.querySelectorAll('section[id], div[id^="ill-"], div[id^="tyk-"]');
+            const observerOptions = {
+                root: null,
+                rootMargin: '-80px 0px -70% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        menuLinks.forEach(link => {
+                            if (link.getAttribute('href') === '#' + id) {
+                                menuLinks.forEach(l => l.classList.remove('active'));
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(sec => observer.observe(sec));
+
+            // 4. Keyboard Shortcuts
+            document.addEventListener('keydown', (e) => {
+                if (e.key === '/' && document.activeElement !== searchInput) {
+                    e.preventDefault();
+                    if (searchInput) {
+                        searchInput.focus();
+                    }
+                } else if (e.key === 'Escape' && document.activeElement === searchInput) {
+                    searchInput.value = '';
+                    searchInput.dispatchEvent(new Event('input'));
+                    searchInput.blur();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
+
