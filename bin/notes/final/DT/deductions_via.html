@@ -6,7 +6,7 @@
     <title>Chapter 8: Deductions from Gross Total Income | CA Final DT | Calcium Notes</title>
     <meta name="description" content="Comprehensive CA Final Direct Tax revision notes on Deductions from Gross Total Income (Chapter VIII, Sections 122 to 154 of Income-tax Act, 2025; formerly Chapter VI-A, Sections 80C to 80U of 1961 Act). Includes all 19 ICAI Illustrations and 5 Test Your Knowledge questions.">
     <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/DT/deductions_via.html">
-    <link rel="icon" href="../../../fevicol.png" type="image/png">
+    <link rel="icon" href="../../../../fevicol.png" type="image/png">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -624,13 +624,41 @@
             color: var(--primary-color);
             background: var(--primary-light);
         }
+    
+/* ═══════════════════════════════════════
+   SCROLL PROGRESS BAR
+═══════════════════════════════════════ */
+#scroll-progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(226, 232, 240, 0.6);
+    z-index: 9999;
+    backdrop-filter: blur(2px);
+}
+#scroll-progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #2563eb 0%, #7c3aed 50%, #0ea5e9 100%);
+    border-radius: 0 2px 2px 0;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+}
     </style>
 </head>
 <body>
 
+    <!-- ═══ SCROLL PROGRESS BAR ═══ -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+    </div>
+
+
     <!-- Top Navigation Bar -->
     <header class="topbar">
-        <a href="../../../index.html" class="brand-wrapper">
+        <a href="../../../../index.html" class="brand-wrapper">
             <div class="brand-logo">C</div>
             <div class="brand-text">
                 <h1>Calcium Notes</h1>
@@ -641,7 +669,7 @@
             <a href="../../notes/dtnotes.html" class="topbar-link">Chapter Index</a>
             <a href="../../notes/dtsections.html" class="topbar-link">Section Directory</a>
             <a href="losses_aggregation.html" class="topbar-link">&larr; Chapter 7</a>
-            <a href="assessment.html" class="topbar-link">Chapter 9 &rarr;</a>
+            <a href="assessment_entities.html" class="topbar-link">Chapter 9 &rarr;</a>
         </nav>
     </header>
 
@@ -4108,7 +4136,7 @@
                     <span style="font-weight: 600; color: var(--slate-700);">Calcium DT Notes &bull; CA Final</span>
                 </div>
                 <div>
-                    <a href="assessment.html" class="footer-nav-btn">
+                    <a href="assessment_entities.html" class="footer-nav-btn">
                         <span>Next: Chapter 9 &mdash; Assessment of Various Entities</span>
                         <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                     </a>
@@ -4134,5 +4162,22 @@
             });
         }
     </script>
+    <!-- ═══ SCROLL PROGRESS BAR SCRIPT ═══ -->
+    <script>
+        (function () {
+            const bar = document.getElementById('scroll-progress-bar');
+            if (!bar) return;
+            function updateProgress() {
+                const scrollTop = window.scrollY || document.documentElement.scrollTop;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+                bar.style.width = Math.min(pct, 100) + '%';
+            }
+            window.addEventListener('scroll', updateProgress, { passive: true });
+            window.addEventListener('resize', updateProgress, { passive: true });
+            updateProgress();
+        })();
+    </script>
+
 </body>
 </html>

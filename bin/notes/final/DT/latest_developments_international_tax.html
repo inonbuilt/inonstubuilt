@@ -73,22 +73,26 @@
             overflow-x: hidden;
         }
 
-        /* Top Reading Progress Bar */
-        #reading-progress-container {
+        /* ═══════════════════════════════════════
+           SCROLL PROGRESS BAR
+        ═══════════════════════════════════════ */
+        #scroll-progress-container {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 4px;
-            background: transparent;
-            z-index: 1000;
+            background: rgba(226, 232, 240, 0.6);
+            z-index: 9999;
+            backdrop-filter: blur(2px);
         }
-
-        #reading-progress {
+        #scroll-progress-bar {
             height: 100%;
             width: 0%;
-            background: linear-gradient(90deg, var(--primary), var(--secondary-light));
-            transition: width 0.1s ease;
+            background: linear-gradient(90deg, #2563eb 0%, #7c3aed 50%, #0ea5e9 100%);
+            border-radius: 0 2px 2px 0;
+            transition: width 0.1s linear;
+            box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
         }
 
         /* Layout Container */
@@ -694,8 +698,9 @@
 </head>
 <body>
     <!-- Top Reading Progress Indicator -->
-    <div id="reading-progress-container">
-        <div id="reading-progress"></div>
+        <!-- ═══ SCROLL PROGRESS BAR ═══ -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
     </div>
 
     <div class="app-container">
@@ -1771,7 +1776,7 @@
             const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             const scrolled = (winScroll / height) * 100;
-            const progressBar = document.getElementById('reading-progress');
+            const progressBar = document.getElementById('scroll-progress-bar');
             if (progressBar) {
                 progressBar.style.width = scrolled + '%';
             }

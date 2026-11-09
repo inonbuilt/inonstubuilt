@@ -511,9 +511,37 @@
         .footer-btn-next:hover {
             background-color: var(--indigo-700);
         }
+    
+/* ═══════════════════════════════════════
+   SCROLL PROGRESS BAR
+═══════════════════════════════════════ */
+#scroll-progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(226, 232, 240, 0.6);
+    z-index: 9999;
+    backdrop-filter: blur(2px);
+}
+#scroll-progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #2563eb 0%, #7c3aed 50%, #0ea5e9 100%);
+    border-radius: 0 2px 2px 0;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+}
     </style>
 </head>
 <body>
+
+    <!-- ═══ SCROLL PROGRESS BAR ═══ -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+    </div>
+
 
     <!-- Topbar Navigation -->
     <header class="topbar">
@@ -3139,5 +3167,22 @@
             </footer>
         </main>
     </div>
+    <!-- ═══ SCROLL PROGRESS BAR SCRIPT ═══ -->
+    <script>
+        (function () {
+            const bar = document.getElementById('scroll-progress-bar');
+            if (!bar) return;
+            function updateProgress() {
+                const scrollTop = window.scrollY || document.documentElement.scrollTop;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+                bar.style.width = Math.min(pct, 100) + '%';
+            }
+            window.addEventListener('scroll', updateProgress, { passive: true });
+            window.addEventListener('resize', updateProgress, { passive: true });
+            updateProgress();
+        })();
+    </script>
+
 </body>
 </html>

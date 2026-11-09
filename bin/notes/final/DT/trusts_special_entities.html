@@ -119,19 +119,27 @@
             background-color: rgba(255, 255, 255, 0.02);
         }
 
-        /* Reading Progress Bar */
-        #reading-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #2563eb, #38bdf8);
-            width: 0%;
-            z-index: 9999;
-            transition: width 0.1s ease;
-        }
-
-        /* Layout Grid */
+        /* ═══════════════════════════════════════
+   SCROLL PROGRESS BAR
+═══════════════════════════════════════ */
+#scroll-progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(226, 232, 240, 0.6);
+    z-index: 9999;
+    backdrop-filter: blur(2px);
+}
+#scroll-progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #2563eb 0%, #7c3aed 50%, #0ea5e9 100%);
+    border-radius: 0 2px 2px 0;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+}/* Layout Grid */
         .page-wrapper {
             display: flex;
             max-width: 1540px;
@@ -576,7 +584,10 @@
 </head>
 <body>
 
-    <div id="reading-progress"></div>
+        <!-- ═══ SCROLL PROGRESS BAR ═══ -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+    </div>
 
     <div class="page-wrapper">
         <!-- Sidebar Navigation -->
@@ -632,7 +643,7 @@
                     <span>/</span>
                     <a href="../../notes.html" style="color: var(--slate-500); text-decoration: none;">CA Final Notes</a>
                     <span>/</span>
-                    <a href="../notes/dtnotes.html" style="color: var(--slate-500); text-decoration: none;">Direct Tax</a>
+                    <a href="../../notes/dtnotes.html" style="color: var(--slate-500); text-decoration: none;">Direct Tax</a>
                     <span>/</span>
                     <span style="color: var(--primary); font-weight: 700;">Chapter 10: RNPO & Special Entities</span>
                 </nav>
@@ -1904,7 +1915,7 @@
                             </a>
                         </div>
                         <div>
-                            <a href="../notes/dtnotes.html" style="display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; font-size: 14px;">
+                            <a href="../../notes/dtnotes.html" style="display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; font-size: 14px;">
                                 Chapter Index: Direct Tax Master Portal <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
@@ -1924,7 +1935,7 @@
     <script>
         (function() {
             // 1. Reading Progress Bar
-            const progressBar = document.getElementById('reading-progress');
+            const progressBar = document.getElementById('scroll-progress-bar');
             window.addEventListener('scroll', () => {
                 const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
                 const progress = totalHeight > 0 ? (window.scrollY / totalHeight) * 100 : 0;

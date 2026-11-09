@@ -204,23 +204,27 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Reading Progress Bar */
-        .progress-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: transparent;
-            z-index: 1000;
-        }
-
-        .progress-bar {
-            height: 100%;
-            width: 0%;
-            background: linear-gradient(90deg, #2563eb, #7c3aed, #059669);
-            transition: width 0.1s ease;
-        }
+        /* ═══════════════════════════════════════
+   SCROLL PROGRESS BAR
+═══════════════════════════════════════ */
+#scroll-progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(226, 232, 240, 0.6);
+    z-index: 9999;
+    backdrop-filter: blur(2px);
+}
+#scroll-progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #2563eb 0%, #7c3aed 50%, #0ea5e9 100%);
+    border-radius: 0 2px 2px 0;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+}
 
         /* Sticky Topbar */
         .topbar {
@@ -1131,8 +1135,9 @@
 <body>
     
     <!-- Reading Progress Bar -->
-    <div class="progress-container">
-        <div class="progress-bar" id="progressBar"></div>
+        <!-- ═══ SCROLL PROGRESS BAR ═══ -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
     </div>
 
     <!-- Top Navigation Bar -->
@@ -1243,7 +1248,8 @@
                 <div id="cardsViewContainer" class="cards-grid">
 
                     <!-- Section 192 Card -->
-                    <div class="section-card" data-category="cat-salary" data-sec="192" data-text="192 salary any person / employer employee (resident/nr) basic exemption limit / tax based on slab rate average rate of income-tax / slab rate" id="sec-192">
+                    <div id="cat-salary" style="scroll-margin-top: 80px;"></div>
+            <div class="section-card" data-category="cat-salary" id="sec-192"
                         <div class="card-header">
                             <div class="card-title-group">
                                 <div class="sec-badge-row">
@@ -1345,7 +1351,8 @@
                     </div>
 
                     <!-- Section 193 Card -->
-                    <div class="section-card" data-category="cat-interest" data-sec="193" data-text="193 interest on securities any person resident person &gt; &#8377;10,000 in a f.y. 10%" id="sec-193">
+                    <div id="cat-interest" style="scroll-margin-top: 80px;"></div>
+            <div class="section-card" data-category="cat-interest" id="sec-193"
                         <div class="card-header">
                             <div class="card-title-group">
                                 <div class="sec-badge-row">
@@ -1511,7 +1518,8 @@
                     </div>
 
                     <!-- Section 194B Card -->
-                    <div class="section-card" data-category="cat-lottery" data-sec="194b" data-text="194b winnings from lottery, crossword puzzles, card games any person any person &gt; &#8377;10,000 in a f.y. (single transaction) 30%" id="sec-194b">
+                    <div id="cat-lottery" style="scroll-margin-top: 80px;"></div>
+            <div class="section-card" data-category="cat-lottery" id="sec-194b"
                         <div class="card-header">
                             <div class="card-title-group">
                                 <div class="sec-badge-row">
@@ -1665,9 +1673,8 @@
                     </div>
 
                     <!-- Section 194C Card -->
-                    <div class="section-card" data-category="cat-contracts" data-sec="194c" data-text="194c contracts &amp; sub-contracts specified entities / any person (ind/huf requires prior year t/o
-            &gt; &#8377;1 cr or g/r &gt; &#8377;50 lakhs) resident person &gt; &#8377;30,000 (single) or &gt; &#8377;1,00,000 (aggregate in
-            a f.y.) 1% for ind/huf, 2% for others" id="sec-194c">
+                    <div id="cat-contracts" style="scroll-margin-top: 80px;"></div>
+            <div class="section-card" data-category="cat-contracts" id="sec-194c"
                         <div class="card-header">
                             <div class="card-title-group">
                                 <div class="sec-badge-row">
@@ -1973,7 +1980,8 @@
                     </div>
 
                     <!-- Section 194-I Card -->
-                    <div class="section-card" data-category="cat-rent" data-sec="194-i" data-text="194-i rent any person (excluding ind/huf unless prior year t/o limits apply) resident person &gt; &#8377;50,000 to a person per month or part of the month 2% for plant/machinery/equipment; 10% for land/building/furniture" id="sec-194-i">
+                    <div id="cat-rent" style="scroll-margin-top: 80px;"></div>
+            <div class="section-card" data-category="cat-rent" id="sec-194-i"
                         <div class="card-header">
                             <div class="card-title-group">
                                 <div class="sec-badge-row">
@@ -2360,9 +2368,8 @@
                     </div>
 
                     <!-- Section 194N Card -->
-                    <div class="section-card" data-category="cat-cash" data-sec="194n" data-text="194n cash withdrawal from bank, co-op. bank, post office bank, co-op. bank, or post office any person &gt; &#8377;1 crore in a p.y. (&gt; &#8377;3 crore if payee is a
-            co-op society; &gt; &#8377;20 lakhs if non-filer) 2% (5% if withdrawal &gt; &#8377;1 crore and payee is a non-filer
-            for 3 preceding p.y.s)" id="sec-194n">
+                    <div id="cat-cash" style="scroll-margin-top: 80px;"></div>
+            <div class="section-card" data-category="cat-cash" id="sec-194n"
                         <div class="card-header">
                             <div class="card-title-group">
                                 <div class="sec-badge-row">
@@ -2518,8 +2525,8 @@
                     </div>
 
                     <!-- Section 194Q Card -->
-                    <div class="section-card" data-category="cat-goods" data-sec="194q" data-text="194q purchase of goods any person (buyer) with prior p.y. business t/o &gt; &#8377;10
-            crores resident person (seller) &gt; &#8377;50 lakhs in a p.y. 0.1% of sum exceeding &#8377;50 lakhs" id="sec-194q">
+                    <div id="cat-goods" style="scroll-margin-top: 80px;"></div>
+            <div class="section-card" data-category="cat-goods" id="sec-194q"
                         <div class="card-header">
                             <div class="card-title-group">
                                 <div class="sec-badge-row">
@@ -2681,7 +2688,8 @@
                     </div>
 
                     <!-- Section 194T Card -->
-                    <div class="section-card" data-category="cat-partner" data-sec="194t" data-text="194t salary, remuneration, commission, bonus or interest to a partner firm (including llp) partner &gt; &#8377;20,000 during the f.y. 10%" id="sec-194t">
+                    <div id="cat-partner" style="scroll-margin-top: 80px;"></div>
+            <div class="section-card" data-category="cat-partner" id="sec-194t"
                         <div class="card-header">
                             <div class="card-title-group">
                                 <div class="sec-badge-row">
@@ -3535,7 +3543,7 @@
             var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             var scrolled = (winScroll / height) * 100;
-            document.getElementById('progressBar').style.width = scrolled + '%';
+            document.getElementById('scroll-progress-bar').style.width = scrolled + '%';
             
             // Scroll to Top visibility
             var scrollBtn = document.getElementById('scrollTopBtn');
