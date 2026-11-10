@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CA Final AFM | 3D Interactive Exam | Calcium Notes</title>
     <link rel="stylesheet" href="./pfafm.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-YYJ8R39EXM');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YYJ8R39EXM');
     </script>
     <!-- Added add sense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124"
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <button id="prev-btn" class="nav-btn" title="Previous Page">&#10094;</button>
@@ -29,13 +34,17 @@
 
         <div class="controls">
             <div class="hint">Click and drag pages left or right to flip</div>
-            <button id="home-btn" class="finish-exam-btn" style="display:none; background:#0f172a; color:white; margin-top:15px;" onclick="window.location.href='./eafm.html'">Return to Home</button>
+            <button id="home-btn" class="finish-exam-btn"
+                style="display:none; background:#0f172a; color:white; margin-top:15px;"
+                onclick="window.location.href='./eafm.html'">Return to Home</button>
         </div>
     </div>
 
-    <!-- Make sure to create these new data files for AFM content -->
+    <!-- Make sure scripts are in this order -->
     <script src="./pfafmmcq.js"></script>
+    <script src="./pfaicaism.js"></script>
     <script src="./pfafmquestions.js"></script>
     <script src="./pfafm.js"></script>
 </body>
+
 </html>

@@ -663,6 +663,30 @@ function updateBookPosition() {
     }
 }
 
+function isScrollbarHit(e) {
+    let el = e.target;
+    while (el && el !== document.body && el !== document.documentElement) {
+        const rect = el.getBoundingClientRect();
+        const style = window.getComputedStyle(el);
+        
+        // Vertical scrollbar check: present when scrollHeight > clientHeight
+        if (el.scrollHeight > el.clientHeight + 1 && (style.overflowY === 'auto' || style.overflowY === 'scroll')) {
+            if (e.clientX >= rect.right - 24 && e.clientX <= rect.right + 4) {
+                return true;
+            }
+        }
+        
+        // Horizontal scrollbar check: present when scrollWidth > clientWidth
+        if (el.scrollWidth > el.clientWidth + 1 && (style.overflowX === 'auto' || style.overflowX === 'scroll')) {
+            if (e.clientY >= rect.bottom - 22 && e.clientY <= rect.bottom + 4) {
+                return true;
+            }
+        }
+        el = el.parentElement;
+    }
+    return false;
+}
+
 function initBookPhysics() {
     const book = document.getElementById('book');
     pages = Array.from(document.querySelectorAll('.page'));
@@ -673,25 +697,59 @@ function initBookPhysics() {
 
     startExamTimer();
 
+    let isPointerDown = false;
+    let startX = 0, startY = 0;
+    let dragCandidatePage = null;
+
     document.addEventListener('pointerdown', (e) => {
         if (!e.target.closest('.book')) return;
-        if (e.target.closest('button, .mcq-option, a, input, select')) return;
+        if (e.target.closest('button, .mcq-option, a, input, select, .table-wrapper, .katex-display, .math-block, table')) return;
+        if (isScrollbarHit(e)) return;
+
         const spineX = book.getBoundingClientRect().left;
 
         if (e.clientX > spineX) {
-            activePage = pages.find(p => !p.classList.contains('flipped'));
+            dragCandidatePage = pages.find(p => !p.classList.contains('flipped'));
             currentAngle = 0;
         } else {
             const flippedPages = pages.filter(p => p.classList.contains('flipped'));
-            activePage = flippedPages[flippedPages.length - 1];
+            dragCandidatePage = flippedPages[flippedPages.length - 1];
             currentAngle = -180;
         }
 
-        if (activePage) { isDragging = true; activePage.style.transition = 'none'; activePage.style.zIndex = pages.length + 5; }
+        if (!dragCandidatePage) return;
+
+        isPointerDown = true;
+        isDragging = false;
+        startX = e.clientX;
+        startY = e.clientY;
     });
 
     document.addEventListener('pointermove', (e) => {
-        if (!isDragging || !activePage) return;
+        if (!isPointerDown || !dragCandidatePage) return;
+
+        const deltaX = e.clientX - startX;
+        const deltaY = e.clientY - startY;
+
+        if (!isDragging) {
+            // If movement is predominantly vertical, user is trying to scroll! Cancel flip gesture
+            if (Math.abs(deltaY) > 8 && Math.abs(deltaY) >= Math.abs(deltaX)) {
+                isPointerDown = false;
+                dragCandidatePage = null;
+                return;
+            }
+
+            // Only engage 3D page flip if horizontal swipe exceeds threshold and is clearly horizontal
+            if (Math.abs(deltaX) > 12 && Math.abs(deltaX) > Math.abs(deltaY)) {
+                isDragging = true;
+                activePage = dragCandidatePage;
+                activePage.style.transition = 'none';
+                activePage.style.zIndex = pages.length + 5;
+            } else {
+                return;
+            }
+        }
+
         const pageWidth = book.getBoundingClientRect().width;
         let angle = ((e.clientX - book.getBoundingClientRect().left) / pageWidth) * 90 - 90;
         angle = Math.max(-180, Math.min(0, angle));
@@ -700,17 +758,48 @@ function initBookPhysics() {
     });
 
     document.addEventListener('pointerup', () => {
-        if (!isDragging || !activePage) return;
-        isDragging = false;
-        activePage.style.transition = 'transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1)';
-        
-        if (currentAngle < -90) { activePage.style.transform = `rotateY(-180deg)`; activePage.classList.add('flipped'); } 
-        else { activePage.style.transform = `rotateY(0deg)`; activePage.classList.remove('flipped'); }
+        if (!isPointerDown) return;
+        isPointerDown = false;
 
-        updateBookPosition(); 
-        const targetPage = activePage;
-        setTimeout(() => { targetPage.style.transform = ''; resetZIndexes(); }, 600);
+        if (isDragging && activePage) {
+            isDragging = false;
+            activePage.style.transition = 'transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1)';
+            
+            if (currentAngle < -90) { 
+                activePage.style.transform = `rotateY(-180deg)`; 
+                activePage.classList.add('flipped'); 
+            } else { 
+                activePage.style.transform = `rotateY(0deg)`; 
+                activePage.classList.remove('flipped'); 
+            }
+
+            updateBookPosition(); 
+            const targetPage = activePage;
+            setTimeout(() => { targetPage.style.transform = ''; resetZIndexes(); }, 600);
+            activePage = null;
+        }
+
+        dragCandidatePage = null;
+    });
+
+    document.addEventListener('pointercancel', () => {
+        if (isDragging && activePage) {
+            activePage.style.transition = 'transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1)';
+            if (currentAngle < -90) {
+                activePage.style.transform = `rotateY(-180deg)`;
+                activePage.classList.add('flipped');
+            } else {
+                activePage.style.transform = `rotateY(0deg)`;
+                activePage.classList.remove('flipped');
+            }
+            updateBookPosition();
+            const targetPage = activePage;
+            setTimeout(() => { targetPage.style.transform = ''; resetZIndexes(); }, 600);
+        }
+        isPointerDown = false;
+        isDragging = false;
         activePage = null;
+        dragCandidatePage = null;
     });
 
     const nextBtn = document.getElementById('next-btn');
@@ -738,4 +827,16 @@ function initBookPhysics() {
             setTimeout(() => { p.style.transform = ''; resetZIndexes(); }, 600);
         });
     }
+
+    // Keyboard shortcuts: Left/Right arrows and PageUp/PageDown flip pages
+    window.addEventListener('keydown', (e) => {
+        if (e.target.closest('input, textarea, select')) return;
+        if (e.key === 'ArrowRight' || e.key === 'PageDown') {
+            const nextBtn = document.getElementById('next-btn');
+            if (nextBtn) nextBtn.click();
+        } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+            const prevBtn = document.getElementById('prev-btn');
+            if (prevBtn) prevBtn.click();
+        }
+    });
 }

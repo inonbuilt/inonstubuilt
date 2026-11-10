@@ -10,6 +10,29 @@ let selectedDescriptive = [];
 
 const TEXT_CHUNK_LIMIT = 90;
 
+// Official ICAI AFM Chapter Weightage Percentages
+const ICAI_WEIGHTS = {
+    "Financial Policy and Corporate Strategy": 10,
+    "Risk Management": 10,
+    "Advanced Capital Budgeting Decisions": 15,
+    "Security Analysis": 8,
+    "Security Valuation": 15,
+    "Portfolio Management": 20,
+    "Securitization": 8,
+    "Mutual Funds": 10,
+    "Derivatives Analysis and Valuation": 15,
+    "Derivatives": 15,
+    "Foreign Exchange Exposure and Risk Management": 20,
+    "Foreign Exchange Risk Management": 20,
+    "International Financial Management": 8,
+    "Interest Rate Risk Management": 10,
+    "Business Valuation": 12,
+    "Corporate Valuation": 12,
+    "Mergers, Acquisitions and Corporate Restructuring": 15,
+    "Corporate Restructuring": 15,
+    "Startup Finance": 8
+};
+
 function shuffleArray(array) {
     let shuffled = [...array];
     for (let i = shuffled.length - 1; i > 0; i--) {
@@ -40,8 +63,18 @@ function readCssPx(styles, propertyName, fallbackValue) {
     return Number.isFinite(value) ? value : fallbackValue;
 }
 
+// Extracts Question slot 1 to 6 from question_id (e.g., _Q1A -> 1, _Q4B -> 4)
+function getMtpPlacement(q) {
+    const match = q.question_id && q.question_id.match(/_Q([1-6])/i);
+    if (match) {
+        return parseInt(match[1], 10);
+    }
+    return Number(q.placement) || 1;
+}
+
 function splitPlainTextForPagination(text) {
     if (/<[^>]+>/.test(text)) return [text];
+    if (/\$|\\\(|\\\[|\\frac|\\times|\\text|\\sigma|\\Delta/.test(text)) return [text];
 
     const chunks = [];
     const softParts = text
@@ -271,6 +304,15 @@ function splitHtmlIntoElements(htmlString) {
                 });
             } 
             else {
+                const innerText = node.innerHTML || '';
+                // Keep blocks containing display math or math blocks intact without splitting
+                if (innerText.includes('$$') || innerText.includes('\\[') || (node.classList && node.classList.contains('math-block'))) {
+                    if (node.classList) node.classList.add('no-split');
+                    elements.push(node.outerHTML);
+                    if (isBlock) elements.push(`<div style="display:block; height:10px; width:100%;"></div>`);
+                    return;
+                }
+
                 let safeHtml = node.innerHTML
                     .replace(/<br\s*\/?>/gi, '<br>[SPLIT]')
                     .replace(/(\.|\?|!)\s+/g, '$1[SPLIT]');
@@ -299,58 +341,154 @@ function splitHtmlIntoElements(htmlString) {
     return elements;
 }
 
-function getRandomCombinationForMarks(questions, targetMarks) {
-    let validCombinations = [];
-
-    function findCombos(startIndex, currentCombo, currentSum) {
-        if (currentSum === targetMarks) {
-            validCombinations.push([...currentCombo]);
-            return;
-        }
-        if (currentSum > targetMarks) return;
-
-        for (let i = startIndex; i < questions.length; i++) {
-            currentCombo.push(questions[i]);
-            findCombos(i + 1, currentCombo, currentSum + (Number(questions[i].marks) || 0));
-            currentCombo.pop();
-        }
-    }
-
-    findCombos(0, [], 0);
-
-    if (validCombinations.length > 0) {
-        const randomIndex = Math.floor(Math.random() * validCombinations.length);
-        return shuffleArray(validCombinations[randomIndex]); 
-    } else {
-        let greedyCombo = [];
-        let sum = 0;
-        let shuffled = shuffleArray(questions);
-        for (let q of shuffled) {
-            let m = Number(q.marks) || 0;
-            if (sum + m <= targetMarks) {
-                greedyCombo.push(q);
-                sum += m;
+// Chapter-weighted selection for ICAI questions
+function getQuestionWeight(q) {
+    if (!q.chapter_name) return 10;
+    const chapters = Array.isArray(q.chapter_name) ? q.chapter_name : [q.chapter_name];
+    let maxWeight = 5;
+    for (let ch of chapters) {
+        for (let [key, val] of Object.entries(ICAI_WEIGHTS)) {
+            if (ch.toLowerCase().includes(key.toLowerCase()) || key.toLowerCase().includes(ch.toLowerCase())) {
+                if (val > maxWeight) maxWeight = val;
             }
         }
-        return greedyCombo;
     }
+    return maxWeight;
+}
+
+function pickWeightedQuestion(candidates) {
+    if (!candidates || candidates.length === 0) return null;
+    let totalWeight = candidates.reduce((sum, q) => sum + getQuestionWeight(q), 0);
+    let rand = Math.random() * totalWeight;
+    for (let q of candidates) {
+        rand -= getQuestionWeight(q);
+        if (rand <= 0) return q;
+    }
+    return candidates[candidates.length - 1];
 }
 
 // ==========================================
-// 2. INITIALIZATION & GENERATION
+// 2. DYNAMIC 40:60 EXAM PAPER GENERATOR (WITH PLACEMENT)
+// ==========================================
+function generateRandomPaper() {
+    const TOTAL_DESCRIPTIVE_MARKS = 84; // 6 questions * 14 marks
+    const TARGET_MTP_MARKS = 34;        // ~40% of 84 marks
+    
+    // Sub-part mark configurations summing to 14
+    const MARK_PATTERNS = [
+        [8, 6],
+        [6, 8],
+        [10, 4],
+        [4, 10],
+        [6, 4, 4],
+        [4, 6, 4],
+        [4, 4, 6],
+        [8, 4, 2],
+        [6, 6, 2]
+    ];
+
+    for (let attempt = 0; attempt < 500; attempt++) {
+        let usedIds = new Set();
+        let mtpPool = descriptiveQuestions.map(q => ({ ...q, _source: 'MTP' }));
+        let icaiPool = icaibookData.map(q => ({ ...q, _source: 'ICAI' }));
+        
+        let remainingMtpMarks = TARGET_MTP_MARKS;
+        let remainingTotalMarks = TOTAL_DESCRIPTIVE_MARKS;
+        let questions = [];
+        let success = true;
+
+        for (let qNum = 1; qNum <= 6; qNum++) {
+            let pattern = MARK_PATTERNS[Math.floor(Math.random() * MARK_PATTERNS.length)];
+            let chosenParts = [];
+
+            for (let mark of pattern) {
+                // Adaptive probability to achieve ~40:60 split across entire paper
+                let pMtp = Math.max(0, Math.min(1, remainingMtpMarks / remainingTotalMarks));
+                let preferMtp = Math.random() < pMtp;
+
+                // CRITICAL RULE: MTP question for slot qNum MUST have getMtpPlacement(q) === qNum
+                let mtpCandidates = mtpPool.filter(q => 
+                    getMtpPlacement(q) === qNum && 
+                    Number(q.marks) === mark && 
+                    !usedIds.has(q.question_id)
+                );
+                
+                // ICAI questions can be placed in any question according to chapter weightage
+                let icaiCandidates = icaiPool.filter(q => 
+                    Number(q.marks) === mark && 
+                    !usedIds.has(q.question_id)
+                );
+
+                let candidate = null;
+
+                if (preferMtp && mtpCandidates.length > 0) {
+                    candidate = mtpCandidates[Math.floor(Math.random() * mtpCandidates.length)];
+                } else if (!preferMtp && icaiCandidates.length > 0) {
+                    candidate = pickWeightedQuestion(icaiCandidates);
+                } else if (mtpCandidates.length > 0) {
+                    candidate = mtpCandidates[Math.floor(Math.random() * mtpCandidates.length)];
+                } else if (icaiCandidates.length > 0) {
+                    candidate = pickWeightedQuestion(icaiCandidates);
+                }
+
+                if (!candidate) {
+                    success = false;
+                    break;
+                }
+
+                usedIds.add(candidate.question_id);
+                if (candidate._source === 'MTP') {
+                    remainingMtpMarks -= mark;
+                }
+                remainingTotalMarks -= mark;
+                chosenParts.push(candidate);
+            }
+
+            if (!success) break;
+            
+            // Randomize order of parts within Question qNum so (a), (b), (c) can be MTP or ICAI interchangeably
+            questions.push({ placement: qNum, parts: shuffleArray(chosenParts) });
+        }
+
+        // Accept when all 6 questions exist and MTP total marks is ~40% (between 30 and 38 marks)
+        let actualMtpMarks = TARGET_MTP_MARKS - remainingMtpMarks;
+        if (success && actualMtpMarks >= 30 && actualMtpMarks <= 38) {
+            return questions;
+        }
+    }
+
+    // Fallback: If 500 attempts exceeded, produce balanced paper preserving strict placement
+    let fallbackQuestions = [];
+    for (let qNum = 1; qNum <= 6; qNum++) {
+        let mtpAvailable = descriptiveQuestions.filter(q => getMtpPlacement(q) === qNum);
+        let icaiAvailable = icaibookData;
+        let parts = [];
+        
+        let mtpQ = mtpAvailable[Math.floor(Math.random() * mtpAvailable.length)];
+        parts.push(mtpQ);
+        
+        let remaining = 14 - (Number(mtpQ.marks) || 0);
+        let icaiMatches = icaiAvailable.filter(q => Number(q.marks) === remaining);
+        if (icaiMatches.length > 0) {
+            parts.push(pickWeightedQuestion(icaiMatches));
+        }
+        fallbackQuestions.push({ placement: qNum, parts: shuffleArray(parts) });
+    }
+    return fallbackQuestions;
+}
+
+// ==========================================
+// 3. INITIALIZATION & DATA RENDERING
 // ==========================================
 document.addEventListener("DOMContentLoaded", () => {
+    // 1. Pick 3 random case studies for MCQs (30 Marks)
     if (typeof mcqData !== 'undefined') {
         selectedMCQs = shuffleArray(mcqData).slice(0, 3);
     }
 
-    if (typeof descriptiveQuestions !== 'undefined') {
-        const uniquePlacements = [...new Set(descriptiveQuestions.map(q => q.placement))].sort((a,b) => a-b);
-        uniquePlacements.forEach(num => {
-            let availableParts = descriptiveQuestions.filter(q => q.placement === num);
-            let selectedParts = getRandomCombinationForMarks(availableParts, 14);
-            selectedDescriptive.push({ placement: num, parts: selectedParts });
-        });
+    // 2. Generate random 40:60 mixed descriptive paper (70/84 Marks) with placement
+    if (typeof descriptiveQuestions !== 'undefined' && typeof icaibookData !== 'undefined') {
+        selectedDescriptive = generateRandomPaper();
     }
 
     generateExamData(); 
@@ -363,7 +501,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function generateExamData() {
     rawExamElements = []; 
-
     const examDate = getCurrentExamDate();
 
     rawExamElements.push(`
@@ -382,27 +519,26 @@ function generateExamData() {
     if (selectedMCQs.length > 0) {
         selectedMCQs.forEach((block, bIdx) => {
             rawExamElements.push(`<h3 class="no-split" style="color:#2563eb; border-bottom:1px solid #ccc; padding-bottom:5px; margin-top:15px; display:block;">Case Study ${bIdx + 1}</h3>`);
-            rawExamElements = rawExamElements.concat(splitHtmlIntoElements(block.caseText));
+            rawExamElements = rawExamElements.concat(splitHtmlIntoElements(sanitizeInsertedMathHtml(block.caseText)));
 
             block.questions.forEach((q, qIdx) => {
                 rawExamElements.push(`<div class="mcq-item no-split" data-qid="${q.question_id}" style="height:14px; display:block;"></div>`);
                 
-                splitPlainTextForPagination(q.question).forEach((chunk, chunkIdx) => {
+                splitPlainTextForPagination(sanitizeInsertedMathHtml(q.question)).forEach((chunk, chunkIdx) => {
                     const label = chunkIdx === 0 ? `<strong>Q${qIdx+1}:</strong> ` : "";
                     rawExamElements.push(`<span class="mcq-question-text" data-qid="${q.question_id}" style="display:inline; line-height:1.5; font-size:calc(15px * var(--font-scale));">${label}${chunk} </span>`);
                 });
 
-                // Add a small breather gap before options
                 rawExamElements.push(`<div style="display:block; height:8px; width:100%;"></div>`);
 
                 q.options.forEach((opt, i) => {
                     const isCorrect = examCompleted && (i === q.answer) ? "correct-ans" : "";
-                    const optionHtml = `<div class="mcq-option no-split ${isCorrect}" data-qid="${q.question_id}" onclick="selectOption(this)" id="q-${bIdx}-${qIdx}-${i}">${opt}</div>`;
+                    const optionHtml = `<div class="mcq-option no-split ${isCorrect}" data-qid="${q.question_id}" onclick="selectOption(this)" id="q-${bIdx}-${qIdx}-${i}">${sanitizeInsertedMathHtml(opt)}</div>`;
                     rawExamElements.push(optionHtml);
                 });
 
                 if (examCompleted) {
-                    rawExamElements.push(`<div class="solution-box no-split" style="margin-bottom:15px; display:block;">Correct Answer: ${q.options[q.answer]}</div>`);
+                    rawExamElements.push(`<div class="solution-box no-split" style="margin-bottom:15px; display:block;">Correct Answer: ${sanitizeInsertedMathHtml(q.options[q.answer])}</div>`);
                 }
             });
         });
@@ -417,17 +553,13 @@ function generateExamData() {
                 const label = group.parts.length > 1 ? `<strong>(${String.fromCharCode(97 + index)})</strong> ` : "";
 
                 if (!examCompleted) {
-                    // Inject beautiful marks badge
                     const marksBadge = `<div class="no-split" style="background-color: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; padding: 4px 8px; border-radius: 4px; font-weight: bold; font-size: 13px; display: inline-block; margin-bottom: 8px;">[ ${part.marks} Marks ]</div>`;
-                    
                     const wrappedHtml = `${marksBadge}<br>${label}${part.question_html}`;
-                    rawExamElements = rawExamElements.concat(splitHtmlIntoElements(wrappedHtml));
+                    rawExamElements = rawExamElements.concat(splitHtmlIntoElements(sanitizeInsertedMathHtml(wrappedHtml)));
                 } else {
-                    // Inject beautiful solution badge
                     const solBadge = `<div class="no-split" style="background-color: #dcfce7; color: #166534; border: 1px solid #4ade80; padding: 4px 8px; border-radius: 4px; font-weight: bold; font-size: 13px; display: inline-block; margin-bottom: 8px; margin-top: 15px;">Solution Q${group.placement} ${label}</div>`;
-                    
                     rawExamElements.push(solBadge);
-                    rawExamElements = rawExamElements.concat(splitHtmlIntoElements(part.solution_html));
+                    rawExamElements = rawExamElements.concat(splitHtmlIntoElements(sanitizeInsertedMathHtml(part.solution_html)));
                 }
             });
         });
@@ -445,8 +577,47 @@ function generateExamData() {
 }
 
 // ==========================================
-// 3. THE REACTIVE PAGINATION ENGINE
+// 4. THE REACTIVE PAGINATION ENGINE
 // ==========================================
+function sanitizeInsertedMathHtml(html = "") {
+    if (!html || typeof html !== 'string') return html;
+
+    let clean = html
+        .replace(/\[cite\s*:\s*\d+\]/gi, '')
+        .replace(/`+/g, '')
+        .trim();
+
+    // Protect currency patterns so they are not mistaken for math delimiters (without touching $$)
+    clean = clean.replace(/\b(US|HK|AU|CAD|SGD|NZ|S)\s*\$(?!\$)/gi, '<span class="no-math">$1$</span>');
+    clean = clean.replace(/(\/|\bper\s*)\$(?!\$)/gi, '$1<span class="no-math">$</span>');
+    clean = clean.replace(/(?<!\$)\$(\s*\/)/gi, '<span class="no-math">$</span>$1');
+    clean = clean.replace(/(?<!\$)\$(\s*[\d,]+(?:\.\d+)?(?!\s*[\\+=_^\-a-zA-Z]))(?!\$)/g, '<span class="no-math">$</span>$1');
+
+    return clean;
+}
+
+function renderMathInBook(targetElement) {
+    const container = targetElement || document.getElementById("book");
+    if (!container || typeof window.renderMathInElement !== 'function') return;
+
+    try {
+        window.renderMathInElement(container, {
+            delimiters: [
+                { left: '$$', right: '$$', display: true },
+                { left: '\\[', right: '\\]', display: true },
+                { left: '\\(', right: '\\)', display: false },
+                { left: '$', right: '$', display: false }
+            ],
+            ignoredClasses: ["no-math", "mcq-option-code", "katex-ignore"],
+            throwOnError: false,
+            strict: 'ignore',
+            trust: true
+        });
+    } catch (error) {
+        console.warn('KaTeX render failed:', error);
+    }
+}
+
 function renderBookPages() {
     const bookContainer = document.getElementById("book");
     bookContainer.innerHTML = ""; 
@@ -473,6 +644,9 @@ function renderBookPages() {
 
     for (let i = 0; i < rawExamElements.length; i++) {
         let el = rawExamElements[i];
+        if (typeof el === 'string') {
+            el = sanitizeInsertedMathHtml(el);
+        }
 
         if (typeof el === 'object' && el !== null && el.type === 'splittable-table') {
             const tableAttrs = el.attrs || '';
@@ -492,7 +666,6 @@ function renderBookPages() {
             let isContd = false;
             let currentTableRows = [];
 
-            // If current page is already significantly full, check if header + 2 rows fit
             if (currentPageHtml.trim() !== "") {
                 const minTestRows = rows.slice(0, Math.min(2, rows.length));
                 tape.innerHTML = currentPageHtml + buildTableHtml(minTestRows, false);
@@ -528,9 +701,17 @@ function renderBookPages() {
 
         tape.innerHTML = currentPageHtml + el;
 
+        if (typeof window.renderMathInElement === 'function' && typeof el === 'string' && (el.includes('$$') || el.includes('$') || el.includes('\\('))) {
+            renderMathInBook(tape);
+        }
+
         if (tape.scrollHeight > SAFE_HEIGHT && currentPageHtml !== "") {
             finalizedPages.push(currentPageHtml); 
             currentPageHtml = el; 
+            tape.innerHTML = el;
+            if (typeof window.renderMathInElement === 'function' && typeof el === 'string' && (el.includes('$$') || el.includes('$') || el.includes('\\('))) {
+                renderMathInBook(tape);
+            }
         } else {
             currentPageHtml += el; 
         }
@@ -552,6 +733,7 @@ function renderBookPages() {
         bookContainer.appendChild(pageDiv);
         pageCount += 2;
     }
+    renderMathInBook(bookContainer);
 
     selectedOptions.forEach(id => {
         const el = document.getElementById(id);
@@ -568,7 +750,7 @@ function renderBookPages() {
 }
 
 // ==========================================
-// 4. EXAM LOGIC & TIMER
+// 5. EXAM LOGIC & TIMER
 // ==========================================
 let timerInterval;
 
@@ -639,7 +821,7 @@ function startExamTimer() {
 }
 
 // ==========================================
-// 5. 3D BOOK PHYSICS ENGINE & BALANCER
+// 6. 3D BOOK PHYSICS ENGINE & BALANCER
 // ==========================================
 let pages = [];
 let isDragging = false, activePage = null, currentAngle = 0;
@@ -663,6 +845,30 @@ function updateBookPosition() {
     }
 }
 
+function isScrollbarHit(e) {
+    let el = e.target;
+    while (el && el !== document.body && el !== document.documentElement) {
+        const rect = el.getBoundingClientRect();
+        const style = window.getComputedStyle(el);
+        
+        // Vertical scrollbar check: present when scrollHeight > clientHeight
+        if (el.scrollHeight > el.clientHeight + 1 && (style.overflowY === 'auto' || style.overflowY === 'scroll')) {
+            if (e.clientX >= rect.right - 24 && e.clientX <= rect.right + 4) {
+                return true;
+            }
+        }
+        
+        // Horizontal scrollbar check: present when scrollWidth > clientWidth
+        if (el.scrollWidth > el.clientWidth + 1 && (style.overflowX === 'auto' || style.overflowX === 'scroll')) {
+            if (e.clientY >= rect.bottom - 22 && e.clientY <= rect.bottom + 4) {
+                return true;
+            }
+        }
+        el = el.parentElement;
+    }
+    return false;
+}
+
 function initBookPhysics() {
     const book = document.getElementById('book');
     pages = Array.from(document.querySelectorAll('.page'));
@@ -673,25 +879,59 @@ function initBookPhysics() {
 
     startExamTimer();
 
+    let isPointerDown = false;
+    let startX = 0, startY = 0;
+    let dragCandidatePage = null;
+
     document.addEventListener('pointerdown', (e) => {
         if (!e.target.closest('.book')) return;
-        if (e.target.closest('button, .mcq-option, a, input, select')) return;
+        if (e.target.closest('button, .mcq-option, a, input, select, .table-wrapper, .katex-display, .math-block, table')) return;
+        if (isScrollbarHit(e)) return;
+
         const spineX = book.getBoundingClientRect().left;
 
         if (e.clientX > spineX) {
-            activePage = pages.find(p => !p.classList.contains('flipped'));
+            dragCandidatePage = pages.find(p => !p.classList.contains('flipped'));
             currentAngle = 0;
         } else {
             const flippedPages = pages.filter(p => p.classList.contains('flipped'));
-            activePage = flippedPages[flippedPages.length - 1];
+            dragCandidatePage = flippedPages[flippedPages.length - 1];
             currentAngle = -180;
         }
 
-        if (activePage) { isDragging = true; activePage.style.transition = 'none'; activePage.style.zIndex = pages.length + 5; }
+        if (!dragCandidatePage) return;
+
+        isPointerDown = true;
+        isDragging = false;
+        startX = e.clientX;
+        startY = e.clientY;
     });
 
     document.addEventListener('pointermove', (e) => {
-        if (!isDragging || !activePage) return;
+        if (!isPointerDown || !dragCandidatePage) return;
+
+        const deltaX = e.clientX - startX;
+        const deltaY = e.clientY - startY;
+
+        if (!isDragging) {
+            // If movement is predominantly vertical, user is trying to scroll! Cancel flip gesture
+            if (Math.abs(deltaY) > 8 && Math.abs(deltaY) >= Math.abs(deltaX)) {
+                isPointerDown = false;
+                dragCandidatePage = null;
+                return;
+            }
+
+            // Only engage 3D page flip if horizontal swipe exceeds threshold and is clearly horizontal
+            if (Math.abs(deltaX) > 12 && Math.abs(deltaX) > Math.abs(deltaY)) {
+                isDragging = true;
+                activePage = dragCandidatePage;
+                activePage.style.transition = 'none';
+                activePage.style.zIndex = pages.length + 5;
+            } else {
+                return;
+            }
+        }
+
         const pageWidth = book.getBoundingClientRect().width;
         let angle = ((e.clientX - book.getBoundingClientRect().left) / pageWidth) * 90 - 90;
         angle = Math.max(-180, Math.min(0, angle));
@@ -700,21 +940,52 @@ function initBookPhysics() {
     });
 
     document.addEventListener('pointerup', () => {
-        if (!isDragging || !activePage) return;
-        isDragging = false;
-        activePage.style.transition = 'transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1)';
-        
-        if (currentAngle < -90) { activePage.style.transform = `rotateY(-180deg)`; activePage.classList.add('flipped'); } 
-        else { activePage.style.transform = `rotateY(0deg)`; activePage.classList.remove('flipped'); }
+        if (!isPointerDown) return;
+        isPointerDown = false;
 
-        updateBookPosition(); 
-        const targetPage = activePage;
-        setTimeout(() => { targetPage.style.transform = ''; resetZIndexes(); }, 600);
+        if (isDragging && activePage) {
+            isDragging = false;
+            activePage.style.transition = 'transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1)';
+            
+            if (currentAngle < -90) { 
+                activePage.style.transform = `rotateY(-180deg)`; 
+                activePage.classList.add('flipped'); 
+            } else { 
+                activePage.style.transform = `rotateY(0deg)`; 
+                activePage.classList.remove('flipped'); 
+            }
+
+            updateBookPosition(); 
+            const targetPage = activePage;
+            setTimeout(() => { targetPage.style.transform = ''; resetZIndexes(); }, 600);
+            activePage = null;
+        }
+
+        dragCandidatePage = null;
+    });
+
+    document.addEventListener('pointercancel', () => {
+        if (isDragging && activePage) {
+            activePage.style.transition = 'transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1)';
+            if (currentAngle < -90) {
+                activePage.style.transform = `rotateY(-180deg)`;
+                activePage.classList.add('flipped');
+            } else {
+                activePage.style.transform = `rotateY(0deg)`;
+                activePage.classList.remove('flipped');
+            }
+            updateBookPosition();
+            const targetPage = activePage;
+            setTimeout(() => { targetPage.style.transform = ''; resetZIndexes(); }, 600);
+        }
+        isPointerDown = false;
+        isDragging = false;
         activePage = null;
+        dragCandidatePage = null;
     });
 
     const nextBtn = document.getElementById('next-btn');
-    if(nextBtn) {
+    if (nextBtn) {
         nextBtn.addEventListener('click', () => {
             const unflippedPages = pages.filter(p => !p.classList.contains('flipped'));
             if (unflippedPages.length === 0) return;
@@ -727,7 +998,7 @@ function initBookPhysics() {
     }
 
     const prevBtn = document.getElementById('prev-btn');
-    if(prevBtn) {
+    if (prevBtn) {
         prevBtn.addEventListener('click', () => {
             const flippedPages = pages.filter(p => p.classList.contains('flipped'));
             if (flippedPages.length === 0) return;
@@ -738,4 +1009,31 @@ function initBookPhysics() {
             setTimeout(() => { p.style.transform = ''; resetZIndexes(); }, 600);
         });
     }
+
+    // Keyboard shortcuts: Left/Right arrows and PageUp/PageDown flip pages
+    window.addEventListener('keydown', (e) => {
+        if (e.target.closest('input, textarea, select')) return;
+        if (e.key === 'ArrowRight' || e.key === 'PageDown') {
+            const nextBtn = document.getElementById('next-btn');
+            if (nextBtn) nextBtn.click();
+        } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+            const prevBtn = document.getElementById('prev-btn');
+            if (prevBtn) prevBtn.click();
+        }
+    });
+}
+
+// Window load and fallback retry listeners for KaTeX rendering
+window.addEventListener('load', () => {
+    renderMathInBook();
+});
+
+if (typeof window.renderMathInElement !== 'function') {
+    const katexReadyTimer = setInterval(() => {
+        if (typeof window.renderMathInElement === 'function') {
+            clearInterval(katexReadyTimer);
+            renderMathInBook();
+        }
+    }, 150);
+    setTimeout(() => clearInterval(katexReadyTimer), 6000);
 }

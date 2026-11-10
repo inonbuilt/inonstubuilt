@@ -116,10 +116,10 @@ const icaibookData = [
       <p><strong>1. Amount to be raised from Short Term Funds:</strong></p>
       <ul>
         <li>New amount of Short-Term Loans and Payables &amp; Provisions:
-          <br />$$\frac{3}{4} \times ₹ 7,200 = ₹ 5,400 \text{ lakhs}$$
+          <br />$$\\frac{3}{4} \\times ₹ 7,200 = ₹ 5,400 \\text{ lakhs}$$
         </li>
         <li>Less: Existing amount of Short-Term Loans and Payables &amp; Provisions:
-          <br />$$(₹ 2,000 \times 1.20) + ₹ 3,000 = ₹ 2,400 + ₹ 3,000 = ₹ 5,400 \text{ lakhs}$$
+          <br />$$(₹ 2,000 \\times 1.20) + ₹ 3,000 = ₹ 2,400 + ₹ 3,000 = ₹ 5,400 \\text{ lakhs}$$
         </li>
         <li><strong>Amount to be raised from Short-Term Funds:</strong> ₹ 5,400 - ₹ 5,400 = <strong>Nil</strong></li>
       </ul>
@@ -128,7 +128,7 @@ const icaibookData = [
       <ul>
         <li>New Fixed Assets (₹ 6,000 + 20% of ₹ 6,000) = ₹ 7,200 lakhs</li>
         <li>Required Long-Term Loans (Fixed Assets / 1.5):
-          <br />$$\frac{₹ 7,200}{1.5} = ₹ 4,800 \text{ lakhs}$$
+          <br />$$\\frac{₹ 7,200}{1.5} = ₹ 4,800 \\text{ lakhs}$$
         </li>
         <li>Less: Existing Long-Term Loans = ₹ 4,000 lakhs</li>
         <li><strong>Amount to be raised from Long-Term Funds:</strong> ₹ 4,800 - ₹ 4,000 = <strong>₹ 800.00 lakhs</strong></li>
@@ -159,25 +159,25 @@ const icaibookData = [
       </div>
 
       <p><strong>Debt-Equity Ratio Verification:</strong></p>
-      <p>$$\text{Debt-Equity Ratio} = \frac{\text{Debt}}{\text{Shareholders' Funds}} = \frac{₹ 4,800}{₹ 3,000 + ₹ 1,456 + ₹ 2,000 + ₹ 144} = \frac{₹ 4,800}{₹ 6,600} = 0.727$$</p>
+      <p>$$\\text{Debt-Equity Ratio} = \\frac{\\text{Debt}}{\\text{Shareholders' Funds}} = \\frac{₹ 4,800}{₹ 3,000 + ₹ 1,456 + ₹ 2,000 + ₹ 144} = \\frac{₹ 4,800}{₹ 6,600} = 0.727$$</p>
       <p>Since 0.727 is less than the upper ceiling of 1.5, the condition is satisfied.</p>
 
       <hr style="margin: 16px 0; border: none; border-top: 1px dashed #ccc;" />
 
       <h4>Alternative Solution (Formula Approach)</h4>
-      <p>$$\text{EFR} = \left(\frac{\text{TA} - \text{P}}{\text{S}}\right) \times \Delta S - [m \times S_1 \times (1 - d)]$$</p>
+      <p>$$\\text{EFR} = \\left(\\frac{\\text{TA} - \\text{P}}{\\text{S}}\\right) \\times \\Delta S - [m \\times S_1 \\times (1 - d)]$$</p>
       <p>Where:</p>
       <ul>
-        <li>$\text{TA}$ = Total Assets = ₹ 14,000 lakhs</li>
-        <li>$\text{P}$ = Spontaneous Payables &amp; Provisions = ₹ 2,000 lakhs</li>
-        <li>$\text{S}$ = Current Sales = ₹ 6,000 lakhs</li>
-        <li>$\Delta S$ = Change in Sales = ₹ 1,200 lakhs</li>
+        <li>$\\text{TA}$ = Total Assets = ₹ 14,000 lakhs</li>
+        <li>$\\text{P}$ = Spontaneous Payables &amp; Provisions = ₹ 2,000 lakhs</li>
+        <li>$\\text{S}$ = Current Sales = ₹ 6,000 lakhs</li>
+        <li>$\\Delta S$ = Change in Sales = ₹ 1,200 lakhs</li>
         <li>$S_1$ = Revised Projected Sales = ₹ 7,200 lakhs</li>
         <li>$m$ = Net Profit Margin Ratio = 0.04</li>
         <li>$d$ = Dividend Payout Ratio = 0.50</li>
       </ul>
-      <p>$$\text{EFR} = \left(\frac{14,000 - 2,000}{6,000}\right) \times 1,200 - [0.04 \times 7,200 \times (1 - 0.50)]$$</p>
-      <p>$$\text{EFR} = (2.0 \times 1,200) - 144 = 2,400 - 144 = ₹ 2,256 \text{ lakhs}$$</p>
+      <p>$$\\text{EFR} = \\left(\\frac{14,000 - 2,000}{6,000}\\right) \\times 1,200 - [0.04 \\times 7,200 \\times (1 - 0.50)]$$</p>
+      <p>$$\\text{EFR} = (2.0 \\times 1,200) - 144 = 2,400 - 144 = ₹ 2,256 \\text{ lakhs}$$</p>
     `
   },
   {
@@ -256,8 +256,8 @@ const icaibookData = [
 
       <h4>3. Sustainable Growth Rate (SGR) Model</h4>
       <p>Developed by <strong>Robert C. Higgins</strong>, the Sustainable Growth Rate represents the maximum rate of sales growth achievable given a firm's profitability, asset turnover, financial leverage, and dividend payout policies without raising external equity.</p>
-      <p>$$\text{SGR} = \text{ROE} \times (1 - \text{Dividend Payout Ratio}) = \text{ROE} \times b$$</p>
-      <p>Where $b$ is the retention ratio ($1 - \text{Payout Ratio}$).</p>
+      <p>$$\\text{SGR} = \\text{ROE} \\times (1 - \\text{Dividend Payout Ratio}) = \\text{ROE} \\times b$$</p>
+      <p>Where $b$ is the retention ratio ($1 - \\text{Payout Ratio}$).</p>
       <p><strong>Core Assumptions:</strong></p>
       <ol>
         <li>The firm maintains a constant target capital structure without issuing new equity.</li>
@@ -294,7 +294,7 @@ const icaibookData = [
       <p>Assuming share prices are normally distributed, for a 99% confidence level, the equivalent Z-score from the Standard Normal Cumulative Distribution Table is <strong>2.33</strong>.</p>
       
       <h4>1. Daily Volatility (Standard Deviation) in Monetary Terms</h4>
-      <p>$$\sigma_{\\text{daily}} = 2\\% \\times ₹ 2,00,00,000 = ₹ 4,00,000 \\text{ (₹ 4.00 lakhs)}$$</p>
+      <p>$$\\sigma_{\\text{daily}} = 2\\% \\times ₹ 2,00,00,000 = ₹ 4,00,000 \\text{ (₹ 4.00 lakhs)}$$</p>
 
       <h4>2. Maximum Loss for 1 Trading Day (99% Confidence Level)</h4>
       <p>$$\\text{VAR}_{1\\text{-day}} = \\text{Volatility} \\times Z = ₹ 4.00 \\text{ lakhs} \\times 2.33 = ₹ 9.32 \\text{ lakhs}$$</p>
@@ -422,12 +422,12 @@ const icaibookData = [
     solution_html: `
       <p>The <strong>Certainty Equivalent (CE) Approach</strong> incorporates risk in capital budgeting by adjusting risky future cash flows rather than the discount rate[cite: 1]. Risky cash flows are converted into equivalent certain cash flows that a risk-averse decision maker would accept with indifference[cite: 1].</p>
       <ul>
-        <li><strong>CE Coefficient ($\alpha_t$):</strong> Calculated as $\alpha_t = \frac{\text{Certain Cash Flow}_t}{\text{Risky or Expected Cash Flow}_t}$[cite: 1]. Its value lies between $0$ and $1$[cite: 1]. The greater the riskiness of an expected cash flow, the lower the certainty equivalent coefficient for receipts[cite: 1].</li>
+        <li><strong>CE Coefficient ($\\alpha_t$):</strong> Calculated as $\\alpha_t = \\frac{\\text{Certain Cash Flow}_t}{\\text{Risky or Expected Cash Flow}_t}$[cite: 1]. Its value lies between $0$ and $1$[cite: 1]. The greater the riskiness of an expected cash flow, the lower the certainty equivalent coefficient for receipts[cite: 1].</li>
         <li><strong>Risk-Free Discounting:</strong> Once risky cash flows are scaled down to certain flows, they are discounted at the risk-free rate of return ($R_f$)[cite: 1]. Using a risk-adjusted rate here would result in double-counting of risk[cite: 1].</li>
         <li><strong>Net Present Value Formula:</strong>
-          $$\text{NPV} = \sum_{t=1}^{n} \frac{\alpha_t \times \text{NCF}_t}{(1 + R_f)^t} - I_0$$[cite: 1]
+          $$\\text{NPV} = \\sum_{t=1}^{n} \\frac{\\alpha_t \\times \\text{NCF}_t}{(1 + R_f)^t} - I_0$$[cite: 1]
         </li>
-        <li><strong>Merits &amp; Demerits:</strong> Unlike the Risk-Adjusted Discount Rate (RADR) method, it does not assume that risk compounds monotonically at a constant rate over time[cite: 1]. However, determining objective $\alpha_t$ values across various future periods can be subjective[cite: 1].</li>
+        <li><strong>Merits &amp; Demerits:</strong> Unlike the Risk-Adjusted Discount Rate (RADR) method, it does not assume that risk compounds monotonically at a constant rate over time[cite: 1]. However, determining objective $\\alpha_t$ values across various future periods can be subjective[cite: 1].</li>
       </ul>
     `
   },
@@ -472,7 +472,7 @@ const icaibookData = [
       <ul>
         <li><strong>Approach 1 (Real Cash Flows &amp; Real Rate):</strong> Deflate nominal expected cash flows to real cash flows using the inflation index and discount them using the real cost of capital[cite: 1].</li>
         <li><strong>Approach 2 (Nominal Cash Flows &amp; Nominal Rate):</strong> Project cash inflows/outflows using anticipated inflation rates and discount them using the nominal required rate of return ($R_N$)[cite: 1]:
-          $$1 + R_N = (1 + R_R)(1 + P) \quad \text{or} \quad R_N \approx R_R + P$$[cite: 1]
+          $$1 + R_N = (1 + R_R)(1 + P) \\quad \\text{or} \\quad R_N \\approx R_R + P$$[cite: 1]
         </li>
       </ul>
       <h4>Prudential Guidelines</h4>
@@ -550,26 +550,26 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Expected Net Present Value (ENPV)</h4>
       <ul>
-        <li>$\text{ENCF}_1 = (14 \times 0.1) + (18 \times 0.2) + (25 \times 0.4) + (40 \times 0.3) = 1.4 + 3.6 + 10.0 + 12.0 = ₹ 27.0 \text{ lakhs}$[cite: 1]</li>
-        <li>$\text{ENCF}_2 = (15 \times 0.1) + (20 \times 0.3) + (32 \times 0.4) + (45 \times 0.2) = 1.5 + 6.0 + 12.8 + 9.0 = ₹ 29.3 \text{ lakhs}$[cite: 1]</li>
-        <li>$\text{ENCF}_3 = (18 \times 0.2) + (25 \times 0.5) + (35 \times 0.2) + (48 \times 0.1) = 3.6 + 12.5 + 7.0 + 4.8 = ₹ 27.9 \text{ lakhs}$[cite: 1]</li>
+        <li>$\\text{ENCF}_1 = (14 \\times 0.1) + (18 \\times 0.2) + (25 \\times 0.4) + (40 \\times 0.3) = 1.4 + 3.6 + 10.0 + 12.0 = ₹ 27.0 \\text{ lakhs}$[cite: 1]</li>
+        <li>$\\text{ENCF}_2 = (15 \\times 0.1) + (20 \\times 0.3) + (32 \\times 0.4) + (45 \\times 0.2) = 1.5 + 6.0 + 12.8 + 9.0 = ₹ 29.3 \\text{ lakhs}$[cite: 1]</li>
+        <li>$\\text{ENCF}_3 = (18 \\times 0.2) + (25 \\times 0.5) + (35 \\times 0.2) + (48 \\times 0.1) = 3.6 + 12.5 + 7.0 + 4.8 = ₹ 27.9 \\text{ lakhs}$[cite: 1]</li>
       </ul>
       <p>Discounting at 6% risk-free rate ($PVF_1 = 0.943, PVF_2 = 0.890, PVF_3 = 0.840$)[cite: 1]:</p>
-      <p>$$\text{PV of Inflows} = (27.0 \times 0.943) + (29.3 \times 0.890) + (27.9 \times 0.840) = 25.461 + 26.077 + 23.436 = ₹ 74.974 \text{ lakhs}$$[cite: 1]</p>
-      <p>$$\text{Expected NPV} = ₹ 74.974 \text{ lakhs} - ₹ 50.00 \text{ lakhs} = \mathbf{₹ 24.974 \text{ lakhs}}$$[cite: 1]</p>
+      <p>$$\\text{PV of Inflows} = (27.0 \\times 0.943) + (29.3 \\times 0.890) + (27.9 \\times 0.840) = 25.461 + 26.077 + 23.436 = ₹ 74.974 \\text{ lakhs}$$[cite: 1]</p>
+      <p>$$\\text{Expected NPV} = ₹ 74.974 \\text{ lakhs} - ₹ 50.00 \\text{ lakhs} = \\mathbf{₹ 24.974 \\text{ lakhs}}$$[cite: 1]</p>
 
-      <h4>(ii) Possible Deviation in Expected Value ($\sigma$)</h4>
+      <h4>(ii) Possible Deviation in Expected Value ($\\sigma$)</h4>
       <ul>
-        <li>$\sigma_1^2 = (14-27)^2(0.1) + (18-27)^2(0.2) + (25-27)^2(0.4) + (40-27)^2(0.3) = 16.9 + 16.2 + 1.6 + 50.7 = 85.4$[cite: 1]</li>
-        <li>$\sigma_2^2 = (15-29.3)^2(0.1) + (20-29.3)^2(0.3) + (32-29.3)^2(0.4) + (45-29.3)^2(0.2) = 20.449 + 25.947 + 2.916 + 49.298 = 98.61$[cite: 1]</li>
-        <li>$\sigma_3^2 = (18-27.9)^2(0.2) + (25-27.9)^2(0.5) + (35-27.9)^2(0.2) + (48-27.9)^2(0.1) = 19.602 + 4.205 + 10.082 + 40.401 = 74.29$[cite: 1]</li>
+        <li>$\\sigma_1^2 = (14-27)^2(0.1) + (18-27)^2(0.2) + (25-27)^2(0.4) + (40-27)^2(0.3) = 16.9 + 16.2 + 1.6 + 50.7 = 85.4$[cite: 1]</li>
+        <li>$\\sigma_2^2 = (15-29.3)^2(0.1) + (20-29.3)^2(0.3) + (32-29.3)^2(0.4) + (45-29.3)^2(0.2) = 20.449 + 25.947 + 2.916 + 49.298 = 98.61$[cite: 1]</li>
+        <li>$\\sigma_3^2 = (18-27.9)^2(0.2) + (25-27.9)^2(0.5) + (35-27.9)^2(0.2) + (48-27.9)^2(0.1) = 19.602 + 4.205 + 10.082 + 40.401 = 74.29$[cite: 1]</li>
       </ul>
       <p>Since cash flows are independent over time[cite: 1]:</p>
-      <p>$$\sigma = \sqrt{\frac{\sigma_1^2}{(1+i)^2} + \frac{\sigma_2^2}{(1+i)^4} + \frac{\sigma_3^2}{(1+i)^6}} = \sqrt{\frac{85.4}{(1.06)^2} + \frac{98.61}{(1.06)^4} + \frac{74.29}{(1.06)^6}}$$[cite: 1]</p>
-      <p>$$\sigma = \sqrt{76.008 + 78.110 + 52.372} = \sqrt{206.49} = \mathbf{₹ 14.3696 \text{ lakhs}}$$[cite: 1]</p>
+      <p>$$\\sigma = \\sqrt{\\frac{\\sigma_1^2}{(1+i)^2} + \\frac{\\sigma_2^2}{(1+i)^4} + \\frac{\\sigma_3^2}{(1+i)^6}} = \\sqrt{\\frac{85.4}{(1.06)^2} + \\frac{98.61}{(1.06)^4} + \\frac{74.29}{(1.06)^6}}$$[cite: 1]</p>
+      <p>$$\\sigma = \\sqrt{76.008 + 78.110 + 52.372} = \\sqrt{206.49} = \\mathbf{₹ 14.3696 \\text{ lakhs}}$$[cite: 1]</p>
 
       <h4>(iii) Role of Standard Deviation in Decision Making</h4>
-      <p>Standard deviation measures the dispersion of cash flows around the mean[cite: 1]. It enables management to quantify the volatility of expected returns[cite: 1]. When comparing projects of similar sizes and returns, the alternative with lower dispersion is chosen[cite: 1]. Assuming a normal distribution, $\sigma$ also allows management to evaluate the probability that NPV will fall below zero[cite: 1].</p>
+      <p>Standard deviation measures the dispersion of cash flows around the mean[cite: 1]. It enables management to quantify the volatility of expected returns[cite: 1]. When comparing projects of similar sizes and returns, the alternative with lower dispersion is chosen[cite: 1]. Assuming a normal distribution, $\\sigma$ also allows management to evaluate the probability that NPV will fall below zero[cite: 1].</p>
     `
   },
   {
@@ -603,24 +603,24 @@ const icaibookData = [
     solution_html: `
       <h4>1. Expected Annual Cash Flow (ENCF)</h4>
       <ul>
-        <li><strong>Project A:</strong> $(6,00,000 \times 0.3) + (4,00,000 \times 0.4) + (2,00,000 \times 0.3) = ₹ 4,00,000$[cite: 1]</li>
-        <li><strong>Project B:</strong> $(5,00,000 \times 0.3) + (4,00,000 \times 0.4) + (3,00,000 \times 0.3) = ₹ 4,00,000$[cite: 1]</li>
+        <li><strong>Project A:</strong> $(6,00,000 \\times 0.3) + (4,00,000 \\times 0.4) + (2,00,000 \\times 0.3) = ₹ 4,00,000$[cite: 1]</li>
+        <li><strong>Project B:</strong> $(5,00,000 \\times 0.3) + (4,00,000 \\times 0.4) + (3,00,000 \\times 0.3) = ₹ 4,00,000$[cite: 1]</li>
       </ul>
 
       <h4>2. Net Present Value (at 7% for 5 years, PVIFA = 4.100)</h4>
       <ul>
-        <li>$$\text{NPV}_A = (₹ 4,00,000 \times 4.100) - ₹ 5,00,000 = ₹ 16,40,000 - ₹ 5,00,000 = ₹ 11,40,000$$[cite: 1]</li>
-        <li>$$\text{NPV}_B = (₹ 4,00,000 \times 4.100) - ₹ 5,00,000 = ₹ 16,40,000 - ₹ 5,00,000 = ₹ 11,40,000$$[cite: 1]</li>
+        <li>$$\\text{NPV}_A = (₹ 4,00,000 \\times 4.100) - ₹ 5,00,000 = ₹ 16,40,000 - ₹ 5,00,000 = ₹ 11,40,000$$[cite: 1]</li>
+        <li>$$\\text{NPV}_B = (₹ 4,00,000 \\times 4.100) - ₹ 5,00,000 = ₹ 16,40,000 - ₹ 5,00,000 = ₹ 11,40,000$$[cite: 1]</li>
       </ul>
 
-      <h4>3. Standard Deviation of Annual Cash Flows ($\sigma$)</h4>
+      <h4>3. Standard Deviation of Annual Cash Flows ($\\sigma$)</h4>
       <p><strong>Project A:</strong></p>
-      <p>$$\sigma_A^2 = 0.3(6,00,000 - 4,00,000)^2 + 0.4(4,00,000 - 4,00,000)^2 + 0.3(2,00,000 - 4,00,000)^2 = 2.4 \times 10^{10}$$[cite: 1]</p>
-      <p>$$\sigma_A = \sqrt{24,00,00,00,000} \approx \mathbf{₹ 1,54,919.33}$$[cite: 1]</p>
+      <p>$$\\sigma_A^2 = 0.3(6,00,000 - 4,00,000)^2 + 0.4(4,00,000 - 4,00,000)^2 + 0.3(2,00,000 - 4,00,000)^2 = 2.4 \\times 10^{10}$$[cite: 1]</p>
+      <p>$$\\sigma_A = \\sqrt{24,00,00,00,000} \\approx \\mathbf{₹ 1,54,919.33}$$[cite: 1]</p>
 
       <p><strong>Project B:</strong></p>
-      <p>$$\sigma_B^2 = 0.3(5,00,000 - 4,00,000)^2 + 0.4(4,00,000 - 4,00,000)^2 + 0.3(3,00,000 - 4,00,000)^2 = 0.6 \times 10^{10}$$[cite: 1]</p>
-      <p>$$\sigma_B = \sqrt{6,00,00,00,000} \approx \mathbf{₹ 77,459.66}$$[cite: 1]</p>
+      <p>$$\\sigma_B^2 = 0.3(5,00,000 - 4,00,000)^2 + 0.4(4,00,000 - 4,00,000)^2 + 0.3(3,00,000 - 4,00,000)^2 = 0.6 \\times 10^{10}$$[cite: 1]</p>
+      <p>$$\\sigma_B = \\sqrt{6,00,00,00,000} \\approx \\mathbf{₹ 77,459.66}$$[cite: 1]</p>
 
       <h4>Recommendation</h4>
       <p>Both projects yield an identical Expected NPV of ₹ 11,40,000[cite: 1]. Therefore, the decision is made on the basis of standard deviation[cite: 1]. <strong>Project B</strong> is recommended because its standard deviation (₹ 77,459.66) is substantially lower than Project A (₹ 1,54,919.33), making it significantly less risky[cite: 1].</p>
@@ -661,8 +661,8 @@ const icaibookData = [
       <p>Based solely on standard deviation, <strong>Project X</strong> is recommended as it has a lower standard deviation (₹ 90,000) compared to Project Y (₹ 1,20,000), indicating lower absolute risk[cite: 1].</p>
 
       <h4>(ii) Evaluation Using Coefficient of Variation (CV)</h4>
-      <p>$$\text{CV}_X = \frac{\sigma_X}{\text{ENPV}_X} = \frac{₹ 90,000}{₹ 1,22,000} \approx \mathbf{0.738}$$[cite: 1]</p>
-      <p>$$\text{CV}_Y = \frac{\sigma_Y}{\text{ENPV}_Y} = \frac{₹ 1,20,000}{₹ 2,25,000} \approx \mathbf{0.533}$$[cite: 1]</p>
+      <p>$$\\text{CV}_X = \\frac{\\sigma_X}{\\text{ENPV}_X} = \\frac{₹ 90,000}{₹ 1,22,000} \\approx \\mathbf{0.738}$$[cite: 1]</p>
+      <p>$$\\text{CV}_Y = \\frac{\\sigma_Y}{\\text{ENPV}_Y} = \\frac{₹ 1,20,000}{₹ 2,25,000} \\approx \\mathbf{0.533}$$[cite: 1]</p>
       <p>Yes, the opinion changes[cite: 1]. Under Coefficient of Variation, <strong>Project Y</strong> is preferred because it carries a lower risk per unit of expected return ($0.533 < 0.738$)[cite: 1].</p>
 
       <h4>(iii) Most Appropriate Measure</h4>
@@ -711,18 +711,18 @@ const icaibookData = [
       <h4>(i) Statistical Computations</h4>
       <p><strong>Project K:</strong></p>
       <ul>
-        <li>$\text{Expected Value (Mean)} = (11 \times 0.10) + (13 \times 0.20) + (15 \times 0.40) + (17 \times 0.20) + (19 \times 0.10) = 1.1 + 2.6 + 6.0 + 3.4 + 1.9 = \mathbf{15.00}$[cite: 1]</li>
-        <li>$\text{Variance } (\sigma^2) = 0.1(11-15)^2 + 0.2(13-15)^2 + 0.4(15-15)^2 + 0.2(17-15)^2 + 0.1(19-15)^2 = 1.6 + 0.8 + 0 + 0.8 + 1.6 = \mathbf{4.80}$[cite: 1]</li>
-        <li>$\text{Standard Deviation } (\sigma) = \sqrt{4.80} = \mathbf{2.19}$[cite: 1]</li>
-        <li>$\text{Coefficient of Variation (CV)} = \frac{2.19}{15} = \mathbf{0.146}$[cite: 1]</li>
+        <li>$\\text{Expected Value (Mean)} = (11 \\times 0.10) + (13 \\times 0.20) + (15 \\times 0.40) + (17 \\times 0.20) + (19 \\times 0.10) = 1.1 + 2.6 + 6.0 + 3.4 + 1.9 = \\mathbf{15.00}$[cite: 1]</li>
+        <li>$\\text{Variance } (\\sigma^2) = 0.1(11-15)^2 + 0.2(13-15)^2 + 0.4(15-15)^2 + 0.2(17-15)^2 + 0.1(19-15)^2 = 1.6 + 0.8 + 0 + 0.8 + 1.6 = \\mathbf{4.80}$[cite: 1]</li>
+        <li>$\\text{Standard Deviation } (\\sigma) = \\sqrt{4.80} = \\mathbf{2.19}$[cite: 1]</li>
+        <li>$\\text{Coefficient of Variation (CV)} = \\frac{2.19}{15} = \\mathbf{0.146}$[cite: 1]</li>
       </ul>
 
       <p><strong>Project S:</strong></p>
       <ul>
-        <li>$\text{Expected Value (Mean)} = (9 \times 0.10) + (13 \times 0.25) + (17 \times 0.30) + (21 \times 0.25) + (25 \times 0.10) = 0.9 + 3.25 + 5.1 + 5.25 + 2.5 = \mathbf{17.00}$[cite: 1]</li>
-        <li>$\text{Variance } (\sigma^2) = 0.1(9-17)^2 + 0.25(13-17)^2 + 0.3(17-17)^2 + 0.25(21-17)^2 + 0.1(25-17)^2 = 6.4 + 4.0 + 0 + 4.0 + 6.4 = \mathbf{20.80}$[cite: 1]</li>
-        <li>$\text{Standard Deviation } (\sigma) = \sqrt{20.80} = \mathbf{4.56}$[cite: 1]</li>
-        <li>$\text{Coefficient of Variation (CV)} = \frac{4.56}{17} = \mathbf{0.268}$[cite: 1]</li>
+        <li>$\\text{Expected Value (Mean)} = (9 \\times 0.10) + (13 \\times 0.25) + (17 \\times 0.30) + (21 \\times 0.25) + (25 \\times 0.10) = 0.9 + 3.25 + 5.1 + 5.25 + 2.5 = \\mathbf{17.00}$[cite: 1]</li>
+        <li>$\\text{Variance } (\\sigma^2) = 0.1(9-17)^2 + 0.25(13-17)^2 + 0.3(17-17)^2 + 0.25(21-17)^2 + 0.1(25-17)^2 = 6.4 + 4.0 + 0 + 4.0 + 6.4 = \\mathbf{20.80}$[cite: 1]</li>
+        <li>$\\text{Standard Deviation } (\\sigma) = \\sqrt{20.80} = \\mathbf{4.56}$[cite: 1]</li>
+        <li>$\\text{Coefficient of Variation (CV)} = \\frac{4.56}{17} = \\mathbf{0.268}$[cite: 1]</li>
       </ul>
 
       <h4>(ii) Risk Assessment</h4>
@@ -771,29 +771,29 @@ const icaibookData = [
       <h4>(a) Calculation of Expected NPV at 10%</h4>
       <p><strong>Project X:</strong></p>
       <ul>
-        <li>$\text{ENCF}_1 = (30 \times 0.3) + (50 \times 0.4) + (65 \times 0.3) = ₹ 48.5 \text{ lakhs}$[cite: 1]</li>
-        <li>$\text{ENCF}_2 = (30 \times 0.3) + (40 \times 0.4) + (55 \times 0.3) = ₹ 41.5 \text{ lakhs}$[cite: 1]</li>
-        <li>$\text{ENCF}_3 = (30 \times 0.3) + (40 \times 0.4) + (45 \times 0.3) = ₹ 38.5 \text{ lakhs}$[cite: 1]</li>
-        <li>$\text{PV of Inflows} = (48.5 \times 0.909) + (41.5 \times 0.826) + (38.5 \times 0.751) = 44.09 + 34.28 + 28.91 = ₹ 107.28 \text{ lakhs}$[cite: 1]</li>
-        <li>$$\text{NPV}_X = ₹ 107.28 - ₹ 70.00 = \mathbf{₹ 37.28 \text{ lakhs}}$$[cite: 1]</li>
+        <li>$\\text{ENCF}_1 = (30 \\times 0.3) + (50 \\times 0.4) + (65 \\times 0.3) = ₹ 48.5 \\text{ lakhs}$[cite: 1]</li>
+        <li>$\\text{ENCF}_2 = (30 \\times 0.3) + (40 \\times 0.4) + (55 \\times 0.3) = ₹ 41.5 \\text{ lakhs}$[cite: 1]</li>
+        <li>$\\text{ENCF}_3 = (30 \\times 0.3) + (40 \\times 0.4) + (45 \\times 0.3) = ₹ 38.5 \\text{ lakhs}$[cite: 1]</li>
+        <li>$\\text{PV of Inflows} = (48.5 \\times 0.909) + (41.5 \\times 0.826) + (38.5 \\times 0.751) = 44.09 + 34.28 + 28.91 = ₹ 107.28 \\text{ lakhs}$[cite: 1]</li>
+        <li>$$\\text{NPV}_X = ₹ 107.28 - ₹ 70.00 = \\mathbf{₹ 37.28 \\text{ lakhs}}$$[cite: 1]</li>
       </ul>
 
       <p><strong>Project Y:</strong></p>
       <ul>
-        <li>$\text{ENCF}_{1-3} = (40 \times 0.2) + (45 \times 0.5) + (50 \times 0.3) = ₹ 45.5 \text{ lakhs}$[cite: 1]</li>
-        <li>$\text{PV of Inflows} = 45.5 \times 2.487 = ₹ 113.16 \text{ lakhs}$[cite: 1]</li>
-        <li>$$\text{NPV}_Y = ₹ 113.16 - ₹ 80.00 = \mathbf{₹ 33.16 \text{ lakhs}}$$[cite: 1]</li>
+        <li>$\\text{ENCF}_{1-3} = (40 \\times 0.2) + (45 \\times 0.5) + (50 \\times 0.3) = ₹ 45.5 \\text{ lakhs}$[cite: 1]</li>
+        <li>$\\text{PV of Inflows} = 45.5 \\times 2.487 = ₹ 113.16 \\text{ lakhs}$[cite: 1]</li>
+        <li>$$\\text{NPV}_Y = ₹ 113.16 - ₹ 80.00 = \\mathbf{₹ 33.16 \\text{ lakhs}}$$[cite: 1]</li>
       </ul>
       <p><strong>Conclusion (a):</strong> Project X is better based on the NPV criterion (₹ 37.28 lakhs vs. ₹ 33.16 lakhs)[cite: 1].</p>
 
       <h4>(b) Standard Deviation of Present Value Distribution (Hillier's Model)</h4>
       <p>Assuming cash flows are perfectly correlated over time within states[cite: 1]:</p>
       <ul>
-        <li>For Project X: $\sigma_1 \approx 13.61, \sigma_2 \approx 9.76, \sigma_3 \approx 5.94$[cite: 1].
-          $$\sigma_{\text{PV}, X} = \sum_{t=1}^3 \frac{\sigma_t}{(1+r)^t} = \frac{13.61}{1.10} + \frac{9.76}{(1.10)^2} + \frac{5.94}{(1.10)^3} = \mathbf{₹ 15.43 \text{ lakhs}}$$[cite: 1]
+        <li>For Project X: $\\sigma_1 \\approx 13.61, \\sigma_2 \\approx 9.76, \\sigma_3 \\approx 5.94$[cite: 1].
+          $$\\sigma_{\\text{PV}, X} = \\sum_{t=1}^3 \\frac{\\sigma_t}{(1+r)^t} = \\frac{13.61}{1.10} + \\frac{9.76}{(1.10)^2} + \\frac{5.94}{(1.10)^3} = \\mathbf{₹ 15.43 \\text{ lakhs}}$$[cite: 1]
         </li>
-        <li>For Project Y: Annual $\sigma = \sqrt{0.2(40-45.5)^2 + 0.5(45-45.5)^2 + 0.3(50-45.5)^2} = \sqrt{12.25} = 3.50$[cite: 1].
-          $$\sigma_{\text{PV}, Y} = \sigma \times \text{PVIFA}(10\%, 3) = 3.50 \times 2.487 \approx 5.03 \text{ (or } \mathbf{₹ 5.03 \text{ lakhs}}\text{)}$$[cite: 1]
+        <li>For Project Y: Annual $\\sigma = \\sqrt{0.2(40-45.5)^2 + 0.5(45-45.5)^2 + 0.3(50-45.5)^2} = \\sqrt{12.25} = 3.50$[cite: 1].
+          $$\\sigma_{\\text{PV}, Y} = \\sigma \\times \\text{PVIFA}(10\\%, 3) = 3.50 \\times 2.487 \\approx 5.03 \\text{ (or } \\mathbf{₹ 5.03 \\text{ lakhs}}\\text{)}$$[cite: 1]
         </li>
       </ul>
       <p><strong>Analysis:</strong> Project Y is much less risky as its standard deviation of present value is only ₹ 5.03 lakhs compared to ₹ 15.43 lakhs for Project X[cite: 1].</p>
@@ -840,30 +840,30 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Expected Net Present Value</h4>
       <ul>
-        <li>$$\text{ENPV}_A = (15,000 \times 0.2) + (12,000 \times 0.3) + (6,000 \times 0.3) + (3,000 \times 0.2) = \mathbf{₹ 9,000}$$[cite: 1]</li>
-        <li>$$\text{ENPV}_B = (15,000 \times 0.1) + (12,000 \times 0.4) + (6,000 \times 0.4) + (3,000 \times 0.1) = \mathbf{₹ 9,000}$$[cite: 1]</li>
+        <li>$$\\text{ENPV}_A = (15,000 \\times 0.2) + (12,000 \\times 0.3) + (6,000 \\times 0.3) + (3,000 \\times 0.2) = \\mathbf{₹ 9,000}$$[cite: 1]</li>
+        <li>$$\\text{ENPV}_B = (15,000 \\times 0.1) + (12,000 \\times 0.4) + (6,000 \\times 0.4) + (3,000 \\times 0.1) = \\mathbf{₹ 9,000}$$[cite: 1]</li>
       </ul>
 
-      <h4>(ii) Standard Deviation ($\sigma$)</h4>
+      <h4>(ii) Standard Deviation ($\\sigma$)</h4>
       <p><strong>Project A:</strong></p>
-      <p>$$\sigma_A^2 = 0.2(6,000)^2 + 0.3(3,000)^2 + 0.3(-3,000)^2 + 0.2(-6,000)^2 = 72\text{L} + 27\text{L} + 27\text{L} + 72\text{L} = 1,98,00,000$$[cite: 1]</p>
-      <p>$$\sigma_A = \sqrt{1,98,00,000} \approx \mathbf{₹ 4,450}$$[cite: 1]</p>
+      <p>$$\\sigma_A^2 = 0.2(6,000)^2 + 0.3(3,000)^2 + 0.3(-3,000)^2 + 0.2(-6,000)^2 = 72\\text{L} + 27\\text{L} + 27\\text{L} + 72\\text{L} = 1,98,00,000$$[cite: 1]</p>
+      <p>$$\\sigma_A = \\sqrt{1,98,00,000} \\approx \\mathbf{₹ 4,450}$$[cite: 1]</p>
 
       <p><strong>Project B:</strong></p>
-      <p>$$\sigma_B^2 = 0.1(6,000)^2 + 0.4(3,000)^2 + 0.4(-3,000)^2 + 0.1(-6,000)^2 = 36\text{L} + 36\text{L} + 36\text{L} + 36\text{L} = 1,44,00,000$$[cite: 1]</p>
-      <p>$$\sigma_B = \sqrt{1,44,00,00,000 \times 10^{-2}} = \sqrt{1,44,00,000} = \mathbf{₹ 3,795}$$[cite: 1]</p>
+      <p>$$\\sigma_B^2 = 0.1(6,000)^2 + 0.4(3,000)^2 + 0.4(-3,000)^2 + 0.1(-6,000)^2 = 36\\text{L} + 36\\text{L} + 36\\text{L} + 36\\text{L} = 1,44,00,000$$[cite: 1]</p>
+      <p>$$\\sigma_B = \\sqrt{1,44,00,00,000 \\times 10^{-2}} = \\sqrt{1,44,00,000} = \\mathbf{₹ 3,795}$$[cite: 1]</p>
 
       <h4>(iii) Profitability Index (PI)</h4>
-      <p>$$\text{PI} = \frac{\text{PV of Inflows}}{\text{Initial Outlay}} = \frac{\text{ENPV} + \text{Cost}}{\text{Cost}}$$[cite: 1]</p>
+      <p>$$\\text{PI} = \\frac{\\text{PV of Inflows}}{\\text{Initial Outlay}} = \\frac{\\text{ENPV} + \\text{Cost}}{\\text{Cost}}$$[cite: 1]</p>
       <ul>
-        <li>$$\text{PI}_A = \frac{9,000 + 36,000}{36,000} = \frac{45,000}{36,000} = \mathbf{1.25}$$[cite: 1]</li>
-        <li>$$\text{PI}_B = \frac{9,000 + 30,000}{30,000} = \frac{39,000}{30,000} = \mathbf{1.30}$$[cite: 1]</li>
+        <li>$$\\text{PI}_A = \\frac{9,000 + 36,000}{36,000} = \\frac{45,000}{36,000} = \\mathbf{1.25}$$[cite: 1]</li>
+        <li>$$\\text{PI}_B = \\frac{9,000 + 30,000}{30,000} = \\frac{39,000}{30,000} = \\mathbf{1.30}$$[cite: 1]</li>
       </ul>
 
       <h4>(iv) Recommendation</h4>
       <p><strong>Project B</strong> is recommended because[cite: 1]:</p>
       <ul>
-        <li>Both projects offer the same ENPV of ₹ 9,000, but Project B has lower dispersion/risk ($\sigma = ₹ 3,795$ vs. $₹ 4,450$)[cite: 1].</li>
+        <li>Both projects offer the same ENPV of ₹ 9,000, but Project B has lower dispersion/risk ($\\sigma = ₹ 3,795$ vs. $₹ 4,450$)[cite: 1].</li>
         <li>Project B has a higher Profitability Index ($1.30 > 1.25$)[cite: 1].</li>
       </ul>
     `
@@ -907,40 +907,40 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Expected NPV at 10%</h4>
       <ul>
-        <li>Expected Annual Inflows (Years 1-4) $= (1,00,000 \times 0.3) + (1,10,000 \times 0.5) + (1,20,000 \times 0.2) = ₹ 1,09,000$[cite: 1]</li>
-        <li>Expected Salvage $= (20,000 \times 0.3) + (50,000 \times 0.5) + (60,000 \times 0.2) = ₹ 43,000$[cite: 1]</li>
+        <li>Expected Annual Inflows (Years 1-4) $= (1,00,000 \\times 0.3) + (1,10,000 \\times 0.5) + (1,20,000 \\times 0.2) = ₹ 1,09,000$[cite: 1]</li>
+        <li>Expected Salvage $= (20,000 \\times 0.3) + (50,000 \\times 0.5) + (60,000 \\times 0.2) = ₹ 43,000$[cite: 1]</li>
         <li>Year 5 Total Flow $= 1,09,000 + 43,000 = ₹ 1,52,000$[cite: 1]</li>
-        <li>$$\text{PV of Inflows} = (1,09,000 \times 3.170) + (1,52,000 \times 0.621) = 3,45,530 + 94,392 = ₹ 4,39,922$$[cite: 1]</li>
-        <li>$$\text{Expected NPV} = ₹ 4,39,922 - ₹ 4,00,000 = \mathbf{₹ 39,922}$$[cite: 1]</li>
+        <li>$$\\text{PV of Inflows} = (1,09,000 \\times 3.170) + (1,52,000 \\times 0.621) = 3,45,530 + 94,392 = ₹ 4,39,922$$[cite: 1]</li>
+        <li>$$\\text{Expected NPV} = ₹ 4,39,922 - ₹ 4,00,000 = \\mathbf{₹ 39,922}$$[cite: 1]</li>
       </ul>
 
       <h4>(ii) Worst Case and Best Case NPV</h4>
       <ul>
         <li><strong>Worst Case (P = 0.3):</strong>
-          $$\text{NPV} = -4,00,000 + (1,00,000 \times 3.790) + (20,00,000 \times 0.621 \times 0.01) = -4,00,000 + 3,79,000 + 12,420 = \mathbf{-₹ 8,580}$$[cite: 1]
+          $$\\text{NPV} = -4,00,000 + (1,00,000 \\times 3.790) + (20,00,000 \\times 0.621 \\times 0.01) = -4,00,000 + 3,79,000 + 12,420 = \\mathbf{-₹ 8,580}$$[cite: 1]
         </li>
         <li><strong>Best Case (P = 0.2):</strong>
-          $$\text{NPV} = -4,00,000 + (1,20,000 \times 3.790) + (60,000 \times 0.621) = -4,00,000 + 4,54,800 + 37,260 = \mathbf{₹ 92,060}$$[cite: 1]
+          $$\\text{NPV} = -4,00,000 + (1,20,000 \\times 3.790) + (60,000 \\times 0.621) = -4,00,000 + 4,54,800 + 37,260 = \\mathbf{₹ 92,060}$$[cite: 1]
         </li>
       </ul>
 
       <h4>(iii) Probability of Worst Case Occurrence</h4>
       <ul>
-        <li>If cash flows are perfectly dependent over time: $\mathbf{0.30}$ (or 30%)[cite: 1].</li>
-        <li>If cash flows are independent over time: $(0.3)^5 = \mathbf{0.00243}$[cite: 1].</li>
+        <li>If cash flows are perfectly dependent over time: $\\mathbf{0.30}$ (or 30%)[cite: 1].</li>
+        <li>If cash flows are independent over time: $(0.3)^5 = \\mathbf{0.00243}$[cite: 1].</li>
       </ul>
 
       <h4>(iv) Standard Deviation &amp; Coefficient of Variation</h4>
       <ul>
-        <li>Base case NPV $(P = 0.5) = -4,00,000 + (1,10,000 \times 3.790) + (50,000 \times 0.621) = ₹ 47,950$[cite: 1]</li>
-        <li>Weighted $\text{ENPV} = 0.3(-8,580) + 0.5(47,950) + 0.2(92,060) = \mathbf{₹ 39,813}$[cite: 1]</li>
-        <li>$$\sigma = \sqrt{0.3(-8,580 - 39,813)^2 + 0.5(47,950 - 39,813)^2 + 0.2(92,060 - 39,813)^2} \approx \mathbf{₹ 35,800}$$[cite: 1]</li>
-        <li>$$\text{CV} = \frac{35,800}{39,813} = \mathbf{0.90}$$[cite: 1]</li>
+        <li>Base case NPV $(P = 0.5) = -4,00,000 + (1,10,000 \\times 3.790) + (50,000 \\times 0.621) = ₹ 47,950$[cite: 1]</li>
+        <li>Weighted $\\text{ENPV} = 0.3(-8,580) + 0.5(47,950) + 0.2(92,060) = \\mathbf{₹ 39,813}$[cite: 1]</li>
+        <li>$$\\sigma = \\sqrt{0.3(-8,580 - 39,813)^2 + 0.5(47,950 - 39,813)^2 + 0.2(92,060 - 39,813)^2} \\approx \\mathbf{₹ 35,800}$$[cite: 1]</li>
+        <li>$$\\text{CV} = \\frac{35,800}{39,813} = \\mathbf{0.90}$$[cite: 1]</li>
       </ul>
 
       <h4>(v) Final Recommendation</h4>
-      <p>Since the project's CV ($0.90$) is lower than the company's average ($0.95 - 1.0$), it is less risky[cite: 1]. Cost of capital is reduced by 100 bps to $9\%$ ($PVAF_{9\%, 4} = 3.240, PVF_{9\%, 5} = 0.650$)[cite: 1]:</p>
-      <p>$$\text{Revised ENPV} = (1,09,000 \times 3.240) + (1,52,000 \times 0.650) - 4,00,000 = 3,53,160 + 98,800 - 4,00,000 = \mathbf{₹ 51,960}$$[cite: 1]</p>
+      <p>Since the project's CV ($0.90$) is lower than the company's average ($0.95 - 1.0$), it is less risky[cite: 1]. Cost of capital is reduced by 100 bps to $9\\%$ ($PVAF_{9\\%, 4} = 3.240, PVF_{9\\%, 5} = 0.650$)[cite: 1]:</p>
+      <p>$$\\text{Revised ENPV} = (1,09,000 \\times 3.240) + (1,52,000 \\times 0.650) - 4,00,000 = 3,53,160 + 98,800 - 4,00,000 = \\mathbf{₹ 51,960}$$[cite: 1]</p>
       <p><strong>The project should be accepted</strong>[cite: 1].</p>
     `
   },
@@ -980,25 +980,25 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Probable (Expected) NPV</h4>
       <ul>
-        <li>Expected Annual Inflow $= (20,000 \times 0.1) + (30,000 \times 0.7) + (40,000 \times 0.2) = ₹ 31,000$[cite: 1]</li>
-        <li>Expected Terminal Value $= (0 \times 0.1) + (20,000 \times 0.7) + (30,000 \times 0.2) = ₹ 20,000$[cite: 1]</li>
+        <li>Expected Annual Inflow $= (20,000 \\times 0.1) + (30,000 \\times 0.7) + (40,000 \\times 0.2) = ₹ 31,000$[cite: 1]</li>
+        <li>Expected Terminal Value $= (0 \\times 0.1) + (20,000 \\times 0.7) + (30,000 \\times 0.2) = ₹ 20,000$[cite: 1]</li>
       </ul>
-      <p>At 20% discount rate ($PVAF_{20\%, 5} = 2.9906, PVF_{20\%, 5} = 0.401878$)[cite: 1]:</p>
-      <p>$$\text{PV of Inflows} = (31,000 \times 2.9906) + (20,000 \times 0.401878) = 92,709 + 8,037.55 = ₹ 1,00,746.55$$[cite: 1]</p>
-      <p>$$\text{Probable NPV} = ₹ 1,00,746.55 - ₹ 1,00,000 = \mathbf{₹ 746.52}$$[cite: 1]</p>
+      <p>At 20% discount rate ($PVAF_{20\\%, 5} = 2.9906, PVF_{20\\%, 5} = 0.401878$)[cite: 1]:</p>
+      <p>$$\\text{PV of Inflows} = (31,000 \\times 2.9906) + (20,000 \\times 0.401878) = 92,709 + 8,037.55 = ₹ 1,00,746.55$$[cite: 1]</p>
+      <p>$$\\text{Probable NPV} = ₹ 1,00,746.55 - ₹ 1,00,000 = \\mathbf{₹ 746.52}$$[cite: 1]</p>
 
       <h4>(ii) Worst-Case and Best-Case NPV</h4>
       <ul>
         <li><strong>Worst-Case:</strong> Annual inflow ₹ 20,000, Terminal value Nil[cite: 1].
-          $$\text{NPV} = (20,000 \times 2.9906) - 1,00,000 = 59,812.24 - 1,00,000 = \mathbf{-₹ 40,187.76}$$[cite: 1]
+          $$\\text{NPV} = (20,000 \\times 2.9906) - 1,00,000 = 59,812.24 - 1,00,000 = \\mathbf{-₹ 40,187.76}$$[cite: 1]
         </li>
         <li><strong>Best-Case:</strong> Annual inflow ₹ 40,000, Terminal value ₹ 30,000[cite: 1].
-          $$\text{NPV} = (40,000 \times 2.9906) + (30,000 \times 0.401878) - 1,00,000 = 1,19,624.48 + 12,056.33 - 1,00,000 = \mathbf{₹ 31,680.81}$$[cite: 1]
+          $$\\text{NPV} = (40,000 \\times 2.9906) + (30,000 \\times 0.401878) - 1,00,000 = 1,19,624.48 + 12,056.33 - 1,00,000 = \\mathbf{₹ 31,680.81}$$[cite: 1]
         </li>
       </ul>
 
       <h4>(iii) Probability of Worst-Case</h4>
-      <p>With perfectly positive correlation over time, a poor inflow in Year 1 ensures poor inflows in all subsequent years[cite: 1]. Hence, the probability of occurrence is simply the probability of Year 1 worst outcome: $\mathbf{0.10 \text{ (or } 10\% \text{)}}$[cite: 1].</p>
+      <p>With perfectly positive correlation over time, a poor inflow in Year 1 ensures poor inflows in all subsequent years[cite: 1]. Hence, the probability of occurrence is simply the probability of Year 1 worst outcome: $\\mathbf{0.10 \\text{ (or } 10\\% \\text{)}}$[cite: 1].</p>
     `
   },
   {
@@ -1028,32 +1028,32 @@ const icaibookData = [
     solution_html: `
       <h4>Base Case NPV</h4>
       <ul>
-        <li>Year 1 Inflow: $20,000 \times (60 - 40) = ₹ 4,00,000$[cite: 1]</li>
-        <li>Year 2 Inflow: $30,000 \times 20 = ₹ 6,00,000$[cite: 1]</li>
-        <li>Year 3 Inflow: $30,000 \times 20 = ₹ 6,00,000$[cite: 1]</li>
+        <li>Year 1 Inflow: $20,000 \\times (60 - 40) = ₹ 4,00,000$[cite: 1]</li>
+        <li>Year 2 Inflow: $30,000 \\times 20 = ₹ 6,00,000$[cite: 1]</li>
+        <li>Year 3 Inflow: $30,000 \\times 20 = ₹ 6,00,000$[cite: 1]</li>
       </ul>
-      <p>$$\text{PV of Inflows} = \frac{4,00,000}{1.1} + \frac{6,00,000}{(1.1)^2} + \frac{6,00,000}{(1.1)^3} = 3,63,636 + 4,95,868 + 4,50,789 = ₹ 13,10,293$$[cite: 1]</p>
-      <p>$$\text{NPV} = ₹ 13,10,293 - ₹ 10,00,000 = \mathbf{₹ 3,10,293}$$[cite: 1]</p>
+      <p>$$\\text{PV of Inflows} = \\frac{4,00,000}{1.1} + \\frac{6,00,000}{(1.1)^2} + \\frac{6,00,000}{(1.1)^3} = 3,63,636 + 4,95,868 + 4,50,789 = ₹ 13,10,293$$[cite: 1]</p>
+      <p>$$\\text{NPV} = ₹ 13,10,293 - ₹ 10,00,000 = \\mathbf{₹ 3,10,293}$$[cite: 1]</p>
 
       <h4>Sensitivity Measurements (to reduce NPV to Zero)</h4>
       <ul>
         <li><strong>(a) Sales Price/Unit:</strong>
-          $$\text{Required Contribution Margin} = \frac{₹ 10,00,000}{₹ 13,10,293} \times ₹ 20 = ₹ 15.26 \implies S = ₹ 40 + ₹ 15.26 = ₹ 55.26$$[cite: 1]
-          $$\text{Permissible Fall} = \frac{60 - 55.26}{60} = \mathbf{7.90\%}$$[cite: 1]
+          $$\\text{Required Contribution Margin} = \\frac{₹ 10,00,000}{₹ 13,10,293} \\times ₹ 20 = ₹ 15.26 \\implies S = ₹ 40 + ₹ 15.26 = ₹ 55.26$$[cite: 1]
+          $$\\text{Permissible Fall} = \\frac{60 - 55.26}{60} = \\mathbf{7.90\\%}$$[cite: 1]
         </li>
         <li><strong>(b) Unit Cost:</strong>
-          $$\text{Allowable Cost} = ₹ 60 - ₹ 15.26 = ₹ 44.74 \implies \text{Permissible Rise} = \frac{44.74 - 40}{40} = \mathbf{11.85\%}$$[cite: 1]
+          $$\\text{Allowable Cost} = ₹ 60 - ₹ 15.26 = ₹ 44.74 \\implies \\text{Permissible Rise} = \\frac{44.74 - 40}{40} = \\mathbf{11.85\\%}$$[cite: 1]
         </li>
         <li><strong>(c) Sales Volume:</strong>
-          $$\text{Permissible Fall} = \frac{\text{NPV}}{\text{PV of Inflows}} = \frac{3,10,293}{13,10,293} = \mathbf{23.68\%}$$[cite: 1]
+          $$\\text{Permissible Fall} = \\frac{\\text{NPV}}{\\text{PV of Inflows}} = \\frac{3,10,293}{13,10,293} = \\mathbf{23.68\\%}$$[cite: 1]
         </li>
         <li><strong>(d) Initial Outlay:</strong>
-          $$\text{Permissible Rise} = \frac{3,10,293}{10,00,000} = \mathbf{31.03\%}$$[cite: 1]
+          $$\\text{Permissible Rise} = \\frac{3,10,293}{10,00,000} = \\mathbf{31.03\\%}$$[cite: 1]
         </li>
         <li><strong>(e) Project Lifetime:</strong>
           <p>PV of first 2 years $= 4,00,000(0.909) + 6,00,000(0.826) = ₹ 8,59,200$[cite: 1]. Deficit to break even $= 10,00,000 - 8,59,200 = ₹ 1,40,800$[cite: 1].</p>
-          <p>PV of Year 3 $= 6,00,000 \times 0.751 = ₹ 4,50,600$[cite: 1]. Daily PV (360 days) $= \frac{4,50,600}{360} = ₹ 1,252$[cite: 1].</p>
-          <p>Days needed in Year 3 $= \frac{1,40,800}{1,252} \approx 112 \text{ days}$[cite: 1]. Required life $= 2 \text{ years } 112 \text{ days}$, representing a fall of $\mathbf{22.97\%}$[cite: 1].</p>
+          <p>PV of Year 3 $= 6,00,000 \\times 0.751 = ₹ 4,50,600$[cite: 1]. Daily PV (360 days) $= \\frac{4,50,600}{360} = ₹ 1,252$[cite: 1].</p>
+          <p>Days needed in Year 3 $= \\frac{1,40,800}{1,252} \\approx 112 \\text{ days}$[cite: 1]. Required life $= 2 \\text{ years } 112 \\text{ days}$, representing a fall of $\\mathbf{22.97\\%}$[cite: 1].</p>
         </li>
       </ul>
     `
@@ -1077,22 +1077,22 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>Base Case NPV</h4>
-      <p>$$\text{PV of Inflows} = ₹ 45,000 \times 3.169 = ₹ 1,42,605$$[cite: 1]</p>
-      <p>$$\text{Base NPV} = ₹ 1,42,605 - ₹ 1,20,000 = \mathbf{₹ 22,605}$$[cite: 1]</p>
+      <p>$$\\text{PV of Inflows} = ₹ 45,000 \\times 3.169 = ₹ 1,42,605$$[cite: 1]</p>
+      <p>$$\\text{Base NPV} = ₹ 1,42,605 - ₹ 1,20,000 = \\mathbf{₹ 22,605}$$[cite: 1]</p>
 
       <h4>Sensitivity to 10% Adverse Variation</h4>
       <ol>
         <li><strong>Initial Project Cost (+10% $\rightarrow$ ₹ 1,32,000):</strong>
-          $$\text{Revised NPV} = ₹ 1,42,605 - ₹ 1,32,000 = ₹ 10,605$$[cite: 1]
-          $$\text{Percentage Change in NPV} = \frac{22,605 - 10,605}{22,605} = \mathbf{53.08\%}$$[cite: 1]
+          $$\\text{Revised NPV} = ₹ 1,42,605 - ₹ 1,32,000 = ₹ 10,605$$[cite: 1]
+          $$\\text{Percentage Change in NPV} = \\frac{22,605 - 10,605}{22,605} = \\mathbf{53.08\\%}$$[cite: 1]
         </li>
         <li><strong>Annual Cash Inflow (-10% $\rightarrow$ ₹ 40,500):</strong>
-          $$\text{Revised NPV} = (₹ 40,500 \times 3.169) - ₹ 1,20,000 = ₹ 1,28,344.50 - ₹ 1,20,000 = ₹ 8,344.50 \approx ₹ 8,345$$[cite: 1]
-          $$\text{Percentage Change in NPV} = \frac{22,605 - 8,345}{22,605} = \mathbf{63.08\%}$$[cite: 1]
+          $$\\text{Revised NPV} = (₹ 40,500 \\times 3.169) - ₹ 1,20,000 = ₹ 1,28,344.50 - ₹ 1,20,000 = ₹ 8,344.50 \\approx ₹ 8,345$$[cite: 1]
+          $$\\text{Percentage Change in NPV} = \\frac{22,605 - 8,345}{22,605} = \\mathbf{63.08\\%}$$[cite: 1]
         </li>
         <li><strong>Cost of Capital (+10% adverse $\rightarrow$ 11%, factor 3.103):</strong>
-          $$\text{Revised NPV} = (₹ 45,000 \times 3.103) - ₹ 1,20,000 = ₹ 1,39,635 - ₹ 1,20,000 = ₹ 19,635$$[cite: 1]
-          $$\text{Percentage Change in NPV} = \frac{22,605 - 19,635}{22,605} = \mathbf{13.14\%}$$[cite: 1]
+          $$\\text{Revised NPV} = (₹ 45,000 \\times 3.103) - ₹ 1,20,000 = ₹ 1,39,635 - ₹ 1,20,000 = ₹ 19,635$$[cite: 1]
+          $$\\text{Percentage Change in NPV} = \\frac{22,605 - 19,635}{22,605} = \\mathbf{13.14\\%}$$[cite: 1]
         </li>
       </ol>
       <p><strong>Conclusion:</strong> The project is <strong>most sensitive to annual cash inflow</strong> (63.08% impact)[cite: 1].</p>
@@ -1130,22 +1130,22 @@ const icaibookData = [
     solution_html: `
       <h4>Base Present Values</h4>
       <ul>
-        <li>$\text{PV of Savings} = (12,000 \times 0.917) + (14,000 \times 0.842) = 11,004 + 11,788 = ₹ 22,792$[cite: 1]</li>
-        <li>$\text{PV of Running Costs} = (4,000 \times 0.917) + (5,000 \times 0.842) = 3,668 + 4,210 = ₹ 7,878$[cite: 1]</li>
-        <li>$\text{Net PV of Operating Inflows} = 22,792 - 7,878 = ₹ 14,914$[cite: 1]</li>
-        <li>$$\text{Base NPV} = ₹ 14,914 - ₹ 10,000 = \mathbf{₹ 4,914}$$[cite: 1]</li>
+        <li>$\\text{PV of Savings} = (12,000 \\times 0.917) + (14,000 \\times 0.842) = 11,004 + 11,788 = ₹ 22,792$[cite: 1]</li>
+        <li>$\\text{PV of Running Costs} = (4,000 \\times 0.917) + (5,000 \\times 0.842) = 3,668 + 4,210 = ₹ 7,878$[cite: 1]</li>
+        <li>$\\text{Net PV of Operating Inflows} = 22,792 - 7,878 = ₹ 14,914$[cite: 1]</li>
+        <li>$$\\text{Base NPV} = ₹ 14,914 - ₹ 10,000 = \\mathbf{₹ 4,914}$$[cite: 1]</li>
       </ul>
 
       <h4>Sensitivity to Reach Zero NPV</h4>
       <ul>
         <li><strong>Plant Value Increase:</strong>
-          $$\frac{₹ 4,914}{₹ 10,000} \times 100 = \mathbf{49.14\%}$$[cite: 1]
+          $$\\frac{₹ 4,914}{₹ 10,000} \\times 100 = \\mathbf{49.14\\%}$$[cite: 1]
         </li>
         <li><strong>Running Cost Increase:</strong>
-          $$\frac{₹ 4,914}{₹ 7,878} \times 100 = \mathbf{62.38\%}$$[cite: 1]
+          $$\\frac{₹ 4,914}{₹ 7,878} \\times 100 = \\mathbf{62.38\\%}$$[cite: 1]
         </li>
         <li><strong>Savings Fall:</strong>
-          $$\frac{₹ 4,914}{₹ 22,792} \times 100 = \mathbf{21.56\%}$$[cite: 1]
+          $$\\frac{₹ 4,914}{₹ 22,792} \\times 100 = \\mathbf{21.56\\%}$$[cite: 1]
         </li>
       </ul>
       <p><strong>Conclusion:</strong> The <strong>savings factor is the most sensitive</strong> because it requires the smallest percentage adverse shift (21.56%) to completely wipe out the project's NPV[cite: 1].</p>
@@ -1178,27 +1178,27 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Initial Investment</h4>
       <p>At IRR (16%), NPV is zero[cite: 1]:</p>
-      <p>$$\text{Initial Investment} = \text{Annual Cash Flow} \times \text{PVAF}(16\%, 5) = ₹ 57,500 \times 3.274 = \mathbf{₹ 1,88,255}$$[cite: 1]</p>
+      <p>$$\\text{Initial Investment} = \\text{Annual Cash Flow} \\times \\text{PVAF}(16\\%, 5) = ₹ 57,500 \\times 3.274 = \\mathbf{₹ 1,88,255}$$[cite: 1]</p>
 
       <h4>(ii) Net Present Value (NPV)</h4>
       <p>Let Cost of Capital be $k$. Sensitivity of discount rate is given as 60%[cite: 1]:</p>
-      <p>$$\frac{\text{IRR} - k}{k} = 0.60 \implies \frac{0.16 - k}{k} = 0.60 \implies 1.60k = 0.16 \implies k = 10\%$$[cite: 1]</p>
-      <p>$$\text{NPV} = (₹ 57,500 \times 3.791) - ₹ 1,88,255 = ₹ 2,17,982.50 - ₹ 1,88,255 = \mathbf{₹ 29,727.50}$$[cite: 1]</p>
+      <p>$$\\frac{\\text{IRR} - k}{k} = 0.60 \\implies \\frac{0.16 - k}{k} = 0.60 \\implies 1.60k = 0.16 \\implies k = 10\\%$$[cite: 1]</p>
+      <p>$$\\text{NPV} = (₹ 57,500 \\times 3.791) - ₹ 1,88,255 = ₹ 2,17,982.50 - ₹ 1,88,255 = \\mathbf{₹ 29,727.50}$$[cite: 1]</p>
 
       <h4>(iii) Annual Fixed Cost</h4>
-      <p>Let $\Delta\text{FC}$ be the increase in fixed cost making NPV zero[cite: 1]:</p>
-      <p>$$\Delta\text{FC} \times 3.791 = ₹ 29,727.50 \implies \Delta\text{FC} = ₹ 7,841.60$$[cite: 1]</p>
-      <p>Since annual fixed cost sensitivity is $7.8416\%$[cite: 1]:</p>
-      <p>$$\text{Fixed Cost} = \frac{₹ 7,841.60}{0.078416} = \mathbf{₹ 1,00,000}$$[cite: 1]</p>
+      <p>Let $\\Delta\\text{FC}$ be the increase in fixed cost making NPV zero[cite: 1]:</p>
+      <p>$$\\Delta\\text{FC} \\times 3.791 = ₹ 29,727.50 \\implies \\Delta\\text{FC} = ₹ 7,841.60$$[cite: 1]</p>
+      <p>Since annual fixed cost sensitivity is $7.8416\\%$[cite: 1]:</p>
+      <p>$$\\text{Fixed Cost} = \\frac{₹ 7,841.60}{0.078416} = \\mathbf{₹ 1,00,000}$$[cite: 1]</p>
 
       <h4>(iv) Estimated Annual Units of Sales</h4>
-      <p>$$\text{Selling Price per unit} = \frac{\text{Variable Cost}}{1 - \text{P/V Ratio}} = \frac{₹ 60}{1 - 0.70} = ₹ 200$$[cite: 1]</p>
-      <p>$$\text{Sales Value} = \frac{\text{Cash Flow} + \text{Fixed Cost}}{\text{P/V Ratio}} = \frac{₹ 57,500 + ₹ 1,00,000}{0.70} = ₹ 2,25,000$$[cite: 1]</p>
-      <p>$$\text{Sales Units} = \frac{₹ 2,25,000}{₹ 200} = \mathbf{1,125 \text{ units}}$$[cite: 1]</p>
+      <p>$$\\text{Selling Price per unit} = \\frac{\\text{Variable Cost}}{1 - \\text{P/V Ratio}} = \\frac{₹ 60}{1 - 0.70} = ₹ 200$$[cite: 1]</p>
+      <p>$$\\text{Sales Value} = \\frac{\\text{Cash Flow} + \\text{Fixed Cost}}{\\text{P/V Ratio}} = \\frac{₹ 57,500 + ₹ 1,00,000}{0.70} = ₹ 2,25,000$$[cite: 1]</p>
+      <p>$$\\text{Sales Units} = \\frac{₹ 2,25,000}{₹ 200} = \\mathbf{1,125 \\text{ units}}$$[cite: 1]</p>
 
       <h4>(v) Break-Even Units</h4>
-      <p>$$\text{Contribution per unit} = ₹ 200 - ₹ 60 = ₹ 140$$[cite: 1]</p>
-      <p>$$\text{BEP (units)} = \frac{\text{Fixed Cost}}{\text{Contribution per unit}} = \frac{₹ 1,00,000}{₹ 140} = \mathbf{714.285 \text{ units}}$$[cite: 1]</p>
+      <p>$$\\text{Contribution per unit} = ₹ 200 - ₹ 60 = ₹ 140$$[cite: 1]</p>
+      <p>$$\\text{BEP (units)} = \\frac{\\text{Fixed Cost}}{\\text{Contribution per unit}} = \\frac{₹ 1,00,000}{₹ 140} = \\mathbf{714.285 \\text{ units}}$$[cite: 1]</p>
     `
   },
   {
@@ -1218,29 +1218,29 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>Base Case NPV</h4>
-      <p>$$\text{Annual Cash Flow} = 2,00,000(30 - 16.50) - 10,00,000 = 27,00,000 - 10,00,000 = ₹ 17,00,000$$[cite: 1]</p>
-      <p>$$\text{NPV} = (₹ 17,00,000 \times 3.605) - ₹ 50,00,000 = ₹ 61,28,500 - ₹ 50,00,000 = \mathbf{₹ 11,28,500}$$[cite: 1]</p>
+      <p>$$\\text{Annual Cash Flow} = 2,00,000(30 - 16.50) - 10,00,000 = 27,00,000 - 10,00,000 = ₹ 17,00,000$$[cite: 1]</p>
+      <p>$$\\text{NPV} = (₹ 17,00,000 \\times 3.605) - ₹ 50,00,000 = ₹ 61,28,500 - ₹ 50,00,000 = \\mathbf{₹ 11,28,500}$$[cite: 1]</p>
 
       <h4>(a) Sensitivity Analysis (to reach 0 NPV)</h4>
       <ul>
         <li><strong>Sale Price ($S$):</strong>
-          $$[2,00,000(S - 16.50) - 10,00,000] \times 3.605 = 50,00,000 \implies S = ₹ 28.43$$[cite: 1]
-          $$\text{Fall} = \frac{30 - 28.43}{30} = \mathbf{5.23\%}$$[cite: 1]
+          $$[2,00,000(S - 16.50) - 10,00,000] \\times 3.605 = 50,00,000 \\implies S = ₹ 28.43$$[cite: 1]
+          $$\\text{Fall} = \\frac{30 - 28.43}{30} = \\mathbf{5.23\\%}$$[cite: 1]
         </li>
         <li><strong>Sales Volume ($V$):</strong>
-          $$[V(13.50) - 10,00,000] \times 3.605 = 50,00,000 \implies V = 1,76,812 \text{ units}$$[cite: 1]
-          $$\text{Fall} = \frac{2,00,000 - 1,76,812}{2,00,000} = \mathbf{11.59\%}$$[cite: 1]
+          $$[V(13.50) - 10,00,000] \\times 3.605 = 50,00,000 \\implies V = 1,76,812 \\text{ units}$$[cite: 1]
+          $$\\text{Fall} = \\frac{2,00,000 - 1,76,812}{2,00,000} = \\mathbf{11.59\\%}$$[cite: 1]
         </li>
         <li><strong>Variable Cost ($VC$):</strong>
-          $$[2,00,000(30 - VC) - 10,00,000] \times 3.605 = 50,00,000 \implies VC = ₹ 18.07$$[cite: 1]
-          $$\text{Rise} = \frac{18.07 - 16.50}{16.50} = \mathbf{9.51\%}$$[cite: 1]
+          $$[2,00,000(30 - VC) - 10,00,000] \\times 3.605 = 50,00,000 \\implies VC = ₹ 18.07$$[cite: 1]
+          $$\\text{Rise} = \\frac{18.07 - 16.50}{16.50} = \\mathbf{9.51\\%}$$[cite: 1]
         </li>
       </ul>
 
       <h4>(b) Expected NPV &amp; Acceptance Decision</h4>
-      <p>$$\text{Expected Annual Sales} = (1,75,000 \times 0.3) + (2,00,000 \times 0.6) + (2,25,000 \times 0.1) = 1,95,000 \text{ units}$$[cite: 1]</p>
-      <p>$$\text{ENPV} = [1,95,000(13.50) - 10,00,000] \times 3.605 - 50,00,000 = \mathbf{₹ 8,85,163}$$[cite: 1]</p>
-      <p>In the poor state (worst case), NPV $= [1,75,000(13.50) - 10,00,000] \times 3.605 - 50,00,000 = \mathbf{-₹ 88,188}$[cite: 1].</p>
+      <p>$$\\text{Expected Annual Sales} = (1,75,000 \\times 0.3) + (2,00,000 \\times 0.6) + (2,25,000 \\times 0.1) = 1,95,000 \\text{ units}$$[cite: 1]</p>
+      <p>$$\\text{ENPV} = [1,95,000(13.50) - 10,00,000] \\times 3.605 - 50,00,000 = \\mathbf{₹ 8,85,163}$$[cite: 1]</p>
+      <p>In the poor state (worst case), NPV $= [1,75,000(13.50) - 10,00,000] \\times 3.605 - 50,00,000 = \\mathbf{-₹ 88,188}$[cite: 1].</p>
       <p><strong>Decision:</strong> There is a 30% probability of incurring a loss (negative NPV)[cite: 1]. Since the acceptable risk limit of the firm is only 20%, the <strong>project should not be accepted</strong>[cite: 1].</p>
     `
   },
@@ -1284,18 +1284,18 @@ const icaibookData = [
       <h4>(i) Net Present Value Evaluation</h4>
       <p><strong>Project M:</strong></p>
       <ul>
-        <li>Year 1: $4,50,000 \times 0.8 \times 0.943 = ₹ 3,39,480$[cite: 1]</li>
-        <li>Year 2: $5,00,000 \times 0.7 \times 0.890 = ₹ 3,11,500$[cite: 1]</li>
-        <li>Year 3: $5,00,000 \times 0.5 \times 0.840 = ₹ 2,10,000$[cite: 1]</li>
-        <li>$$\text{PV of Inflows} = ₹ 8,60,980 \implies \text{NPV}_M = 8,60,980 - 8,50,000 = \mathbf{₹ 10,980}$$[cite: 1]</li>
+        <li>Year 1: $4,50,000 \\times 0.8 \\times 0.943 = ₹ 3,39,480$[cite: 1]</li>
+        <li>Year 2: $5,00,000 \\times 0.7 \\times 0.890 = ₹ 3,11,500$[cite: 1]</li>
+        <li>Year 3: $5,00,000 \\times 0.5 \\times 0.840 = ₹ 2,10,000$[cite: 1]</li>
+        <li>$$\\text{PV of Inflows} = ₹ 8,60,980 \\implies \\text{NPV}_M = 8,60,980 - 8,50,000 = \\mathbf{₹ 10,980}$$[cite: 1]</li>
       </ul>
 
       <p><strong>Project N:</strong></p>
       <ul>
-        <li>Year 1: $4,50,000 \times 0.9 \times 0.943 = ₹ 3,81,915$[cite: 1]</li>
-        <li>Year 2: $4,50,000 \times 0.8 \times 0.890 = ₹ 3,20,400$[cite: 1]</li>
-        <li>Year 3: $5,00,000 \times 0.7 \times 0.840 = ₹ 2,94,000$[cite: 1]</li>
-        <li>$$\text{PV of Inflows} = ₹ 9,96,315 \implies \text{NPV}_N = 9,96,315 - 8,25,000 = \mathbf{₹ 1,71,315}$$[cite: 1]</li>
+        <li>Year 1: $4,50,000 \\times 0.9 \\times 0.943 = ₹ 3,81,915$[cite: 1]</li>
+        <li>Year 2: $4,50,000 \\times 0.8 \\times 0.890 = ₹ 3,20,400$[cite: 1]</li>
+        <li>Year 3: $5,00,000 \\times 0.7 \\times 0.840 = ₹ 2,94,000$[cite: 1]</li>
+        <li>$$\\text{PV of Inflows} = ₹ 9,96,315 \\implies \\text{NPV}_N = 9,96,315 - 8,25,000 = \\mathbf{₹ 1,71,315}$$[cite: 1]</li>
       </ul>
       <p><strong>Decision:</strong> <strong>Project N should be accepted</strong> as its NPV (₹ 1,71,315) is substantially higher[cite: 1].</p>
 
@@ -1415,25 +1415,25 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(i) Determination of RADR (using CAPM framework)</h4>
-      <p>$$\text{RADR} = R_f + (k_o - R_f) \times \text{Risk Index}$$[cite: 1]</p>
+      <p>$$\\text{RADR} = R_f + (k_o - R_f) \\times \\text{Risk Index}$$[cite: 1]</p>
       <ul>
-        <li><strong>P-I:</strong> $10\% + (15\% - 10\%) \times 1.80 = 10\% + 9\% = \mathbf{19\%}$[cite: 1]</li>
-        <li><strong>P-II:</strong> $10\% + (15\% - 10\%) \times 1.00 = 10\% + 5\% = \mathbf{15\%}$[cite: 1]</li>
-        <li><strong>P-III:</strong> $10\% + (15\% - 10\%) \times 0.60 = 10\% + 3\% = \mathbf{13\%}$[cite: 1]</li>
+        <li><strong>P-I:</strong> $10\\% + (15\\% - 10\\%) \\times 1.80 = 10\\% + 9\\% = \\mathbf{19\\%}$[cite: 1]</li>
+        <li><strong>P-II:</strong> $10\\% + (15\\% - 10\\%) \\times 1.00 = 10\\% + 5\\% = \\mathbf{15\\%}$[cite: 1]</li>
+        <li><strong>P-III:</strong> $10\\% + (15\\% - 10\\%) \\times 0.60 = 10\\% + 3\\% = \\mathbf{13\\%}$[cite: 1]</li>
       </ul>
 
       <h4>(ii) Project Evaluation</h4>
       <ul>
         <li><strong>Project P-I (@ 19%, PVAF = 2.639):</strong>
-          $$\text{PV} = ₹ 6,00,000 \times 2.639 = ₹ 15,83,400 \implies \text{NPV} = 15,83,400 - 15,00,000 = \mathbf{₹ 83,400}$$[cite: 1]
+          $$\\text{PV} = ₹ 6,00,000 \\times 2.639 = ₹ 15,83,400 \\implies \\text{NPV} = 15,83,400 - 15,00,000 = \\mathbf{₹ 83,400}$$[cite: 1]
         </li>
         <li><strong>Project P-II (@ 15%):</strong>
-          $$\text{PV} = (6\text{L} \times 0.870) + (4\text{L} \times 0.756) + (5\text{L} \times 0.658) + (2\text{L} \times 0.572) = 5,22,000 + 3,02,400 + 3,29,000 + 1,14,400 = ₹ 12,67,800$$[cite: 1]
-          $$\text{NPV} = ₹ 12,67,800 - ₹ 11,00,000 = \mathbf{₹ 1,67,800}$$[cite: 1]
+          $$\\text{PV} = (6\\text{L} \\times 0.870) + (4\\text{L} \\times 0.756) + (5\\text{L} \\times 0.658) + (2\\text{L} \\times 0.572) = 5,22,000 + 3,02,400 + 3,29,000 + 1,14,400 = ₹ 12,67,800$$[cite: 1]
+          $$\\text{NPV} = ₹ 12,67,800 - ₹ 11,00,000 = \\mathbf{₹ 1,67,800}$$[cite: 1]
         </li>
         <li><strong>Project P-III (@ 13%):</strong>
-          $$\text{PV} = (4\text{L} \times 0.885) + (6\text{L} \times 0.783) + (8\text{L} \times 0.693) + (12\text{L} \times 0.613) = 3,54,000 + 4,69,800 + 5,54,400 + 7,35,600 = ₹ 21,13,800$$[cite: 1]
-          $$\text{NPV} = ₹ 21,13,800 - ₹ 19,00,000 = \mathbf{₹ 2,13,800}$$[cite: 1]
+          $$\\text{PV} = (4\\text{L} \\times 0.885) + (6\\text{L} \\times 0.783) + (8\\text{L} \\times 0.693) + (12\\text{L} \\times 0.613) = 3,54,000 + 4,69,800 + 5,54,400 + 7,35,600 = ₹ 21,13,800$$[cite: 1]
+          $$\\text{NPV} = ₹ 21,13,800 - ₹ 19,00,000 = \\mathbf{₹ 2,13,800}$$[cite: 1]
         </li>
       </ul>
       <p><strong>Conclusion:</strong> <strong>Project P-III</strong> is the best project as it generates the highest NPV (₹ 2,13,800)[cite: 1].</p>
@@ -1457,7 +1457,7 @@ const icaibookData = [
             <tr style="background-color:#f2f2f2;">
               <th style="padding:6px; border:1px solid #ddd;">Year</th>
               <th style="padding:6px; border:1px solid #ddd;">Nominal CF (₹ L)</th>
-              <th style="padding:6px; border:1px solid #ddd;">Inflation Deflator $\frac{1}{(1.05)^t}$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Inflation Deflator $\\frac{1}{(1.05)^t}$</th>
               <th style="padding:6px; border:1px solid #ddd;">Real Cash Flow (₹ L)</th>
               <th style="padding:6px; border:1px solid #ddd;">PVF @ 10%</th>
               <th style="padding:6px; border:1px solid #ddd;">PV (₹ L)</th>
@@ -1475,11 +1475,11 @@ const icaibookData = [
           </tbody>
         </table>
       </div>
-      <p>$$\text{NPV} = ₹ 75.40 \text{ lakhs} - ₹ 70.00 \text{ lakhs} = \mathbf{+₹ 5.40 \text{ lakhs}}$$[cite: 1]</p>
+      <p>$$\\text{NPV} = ₹ 75.40 \\text{ lakhs} - ₹ 70.00 \\text{ lakhs} = \\mathbf{+₹ 5.40 \\text{ lakhs}}$$[cite: 1]</p>
 
       <p><em>Alternative Approach (Nominal Discount Rate):</em></p>
-      <p>$$\text{Nominal Rate } = (1 + 0.10)(1 + 0.05) - 1 = 15.50\%$$[cite: 1]</p>
-      <p>$$\text{PV} = \frac{30}{1.155} + \frac{40}{(1.155)^2} + \frac{30}{(1.155)^3} = 25.98 + 29.96 + 19.47 = ₹ 75.41 \text{ lakhs} \implies \text{NPV} = \mathbf{+₹ 5.41 \text{ lakhs}}$$[cite: 1]</p>
+      <p>$$\\text{Nominal Rate } = (1 + 0.10)(1 + 0.05) - 1 = 15.50\\%$$[cite: 1]</p>
+      <p>$$\\text{PV} = \\frac{30}{1.155} + \\frac{40}{(1.155)^2} + \\frac{30}{(1.155)^3} = 25.98 + 29.96 + 19.47 = ₹ 75.41 \\text{ lakhs} \\implies \\text{NPV} = \\mathbf{+₹ 5.41 \\text{ lakhs}}$$[cite: 1]</p>
       <p><strong>Advice:</strong> Since NPV is positive, the project is financially viable and should be accepted[cite: 1].</p>
     `
   },
@@ -1491,16 +1491,16 @@ const icaibookData = [
     placement: 22,
     marks: 6,
     question_html: `
-      <p>Shashi Co. Ltd has projected the following nominal cash flows (₹ in lakhs): Year 0: (72); Year 1: 30; Year 2: 40; Year 3: 30[cite: 1]. Real cost of capital is 10% and expected annual inflation is 5%[cite: 1]. Show how the viability of the project is to be evaluated ($PVF_{10\%} = 0.909, 0.826, 0.751$)[cite: 1].</p>
+      <p>Shashi Co. Ltd has projected the following nominal cash flows (₹ in lakhs): Year 0: (72); Year 1: 30; Year 2: 40; Year 3: 30[cite: 1]. Real cost of capital is 10% and expected annual inflation is 5%[cite: 1]. Show how the viability of the project is to be evaluated ($PVF_{10\\%} = 0.909, 0.826, 0.751$)[cite: 1].</p>
     `,
     solution_html: `
       <h4>Nominal Discount Rate Approach</h4>
-      <p>$$\text{Nominal Discount Rate} = (1 + \text{Real Rate})(1 + \text{Inflation}) - 1 = (1.10)(1.05) - 1 = 15.50\%$$[cite: 1]</p>
+      <p>$$\\text{Nominal Discount Rate} = (1 + \\text{Real Rate})(1 + \\text{Inflation}) - 1 = (1.10)(1.05) - 1 = 15.50\\%$$[cite: 1]</p>
       <p>Adjusted discount factors[cite: 1]:</p>
       <ul>
-        <li>Year 1: $\frac{0.909}{1.05} = 0.866$[cite: 1]</li>
-        <li>Year 2: $\frac{0.826}{(1.05)^2} = 0.749$ (or $0.750$)[cite: 1]</li>
-        <li>Year 3: $\frac{0.751}{(1.05)^3} = 0.649$[cite: 1]</li>
+        <li>Year 1: $\\frac{0.909}{1.05} = 0.866$[cite: 1]</li>
+        <li>Year 2: $\\frac{0.826}{(1.05)^2} = 0.749$ (or $0.750$)[cite: 1]</li>
+        <li>Year 3: $\\frac{0.751}{(1.05)^3} = 0.649$[cite: 1]</li>
       </ul>
       <div style="overflow-x:auto;">
         <table border="1" style="width:100%; border-collapse:collapse; text-align:center;">
@@ -1555,19 +1555,19 @@ const icaibookData = [
       <ul>
         <li><strong>Revenues:</strong>
           <ul>
-            <li>Year 1: $10,00,000 \times 1.09 = ₹ 10,90,000$[cite: 1]</li>
-            <li>Year 2: $13,00,000 \times 1.09 \times 1.08 = ₹ 15,30,360$[cite: 1]</li>
-            <li>Year 3: $14,00,000 \times 1.09 \times 1.08 \times 1.06 = ₹ 17,46,965$[cite: 1]</li>
+            <li>Year 1: $10,00,000 \\times 1.09 = ₹ 10,90,000$[cite: 1]</li>
+            <li>Year 2: $13,00,000 \\times 1.09 \\times 1.08 = ₹ 15,30,360$[cite: 1]</li>
+            <li>Year 3: $14,00,000 \\times 1.09 \\times 1.08 \\times 1.06 = ₹ 17,46,965$[cite: 1]</li>
           </ul>
         </li>
         <li><strong>Costs:</strong>
           <ul>
-            <li>Year 1: $5,00,000 \times 1.10 = ₹ 5,50,000$[cite: 1]</li>
-            <li>Year 2: $6,00,000 \times 1.10 \times 1.09 = ₹ 7,19,400$[cite: 1]</li>
-            <li>Year 3: $6,50,000 \times 1.10 \times 1.09 \times 1.07 = ₹ 8,33,905$[cite: 1]</li>
+            <li>Year 1: $5,00,000 \\times 1.10 = ₹ 5,50,000$[cite: 1]</li>
+            <li>Year 2: $6,00,000 \\times 1.10 \\times 1.09 = ₹ 7,19,400$[cite: 1]</li>
+            <li>Year 3: $6,50,000 \\times 1.10 \\times 1.09 \\times 1.07 = ₹ 8,33,905$[cite: 1]</li>
           </ul>
         </li>
-        <li><strong>Tax Shield on Depreciation:</strong> $₹ 5,00,000 \times 35\% = \mathbf{₹ 1,75,000 \text{ p.a.}}$[cite: 1]</li>
+        <li><strong>Tax Shield on Depreciation:</strong> $₹ 5,00,000 \\times 35\\% = \\mathbf{₹ 1,75,000 \\text{ p.a.}}$[cite: 1]</li>
       </ul>
 
       <h4>2. Net Profit after Tax and Operating Cash Flows</h4>
@@ -1593,8 +1593,8 @@ const icaibookData = [
       </div>
 
       <h4>3. Present Value and NPV Computation</h4>
-      <p>$$\text{PV} = (5,26,000 \times 0.877) + (7,02,124 \times 0.769) + (7,68,489 \times 0.675) = 4,61,302 + 5,39,933 + 5,18,730 = ₹ 15,19,965$$[cite: 1]</p>
-      <p>$$\text{NPV} = ₹ 15,19,965 - ₹ 15,00,000 = \mathbf{₹ 19,965}$$[cite: 1]</p>
+      <p>$$\\text{PV} = (5,26,000 \\times 0.877) + (7,02,124 \\times 0.769) + (7,68,489 \\times 0.675) = 4,61,302 + 5,39,933 + 5,18,730 = ₹ 15,19,965$$[cite: 1]</p>
+      <p>$$\\text{NPV} = ₹ 15,19,965 - ₹ 15,00,000 = \\mathbf{₹ 19,965}$$[cite: 1]</p>
     `
   },
   {
@@ -1639,12 +1639,12 @@ const icaibookData = [
             </tr>
           </thead>
           <tbody>
-            <tr><td>1</td><td>50,000</td><td>24,000</td><td>65,274</td><td>-14,726</td><td>$0.4 \times 0.2 = 0.08$</td><td>-1,178.08</td></tr>
-            <tr><td>2</td><td>50,000</td><td>32,000</td><td>71,882</td><td>-8,118</td><td>$0.4 \times 0.3 = 0.12$</td><td>-974.16</td></tr>
-            <tr><td>3</td><td>50,000</td><td>44,000</td><td>81,794</td><td>+1,794</td><td>$0.4 \times 0.5 = 0.20$</td><td>+358.80</td></tr>
-            <tr><td>4</td><td>60,000</td><td>40,000</td><td>87,580</td><td>+7,580</td><td>$0.6 \times 0.4 = 0.24$</td><td>+1,819.20</td></tr>
-            <tr><td>5</td><td>60,000</td><td>50,000</td><td>95,840</td><td>+15,840</td><td>$0.6 \times 0.5 = 0.30$</td><td>+4,752.00</td></tr>
-            <tr><td>6</td><td>60,000</td><td>60,000</td><td>1,04,100</td><td>+24,100</td><td>$0.6 \times 0.1 = 0.06$</td><td>+1,446.00</td></tr>
+            <tr><td>1</td><td>50,000</td><td>24,000</td><td>65,274</td><td>-14,726</td><td>$0.4 \\times 0.2 = 0.08$</td><td>-1,178.08</td></tr>
+            <tr><td>2</td><td>50,000</td><td>32,000</td><td>71,882</td><td>-8,118</td><td>$0.4 \\times 0.3 = 0.12$</td><td>-974.16</td></tr>
+            <tr><td>3</td><td>50,000</td><td>44,000</td><td>81,794</td><td>+1,794</td><td>$0.4 \\times 0.5 = 0.20$</td><td>+358.80</td></tr>
+            <tr><td>4</td><td>60,000</td><td>40,000</td><td>87,580</td><td>+7,580</td><td>$0.6 \\times 0.4 = 0.24$</td><td>+1,819.20</td></tr>
+            <tr><td>5</td><td>60,000</td><td>50,000</td><td>95,840</td><td>+15,840</td><td>$0.6 \\times 0.5 = 0.30$</td><td>+4,752.00</td></tr>
+            <tr><td>6</td><td>60,000</td><td>60,000</td><td>1,04,100</td><td>+24,100</td><td>$0.6 \\times 0.1 = 0.06$</td><td>+1,446.00</td></tr>
             <tr style="font-weight:bold; background-color:#fafafa;">
               <td colspan="6">Total Expected Net Present Value</td>
               <td>+6,223.76</td>
@@ -1654,9 +1654,9 @@ const icaibookData = [
       </div>
       <h4>Summary Answers</h4>
       <ol type="i">
-        <li><strong>Expected NPV:</strong> $\mathbf{₹ 6,223.76}$[cite: 1]</li>
-        <li><strong>Worst Outcome:</strong> Path 1 yields $\text{NPV} = \mathbf{-₹ 14,726}$ with probability $\mathbf{0.08 \text{ (8\%)}}$[cite: 1].</li>
-        <li><strong>Best Outcome:</strong> Path 6 yields $\text{NPV} = \mathbf{+₹ 24,100}$ with probability $\mathbf{0.06 \text{ (6\%)}}$[cite: 1].</li>
+        <li><strong>Expected NPV:</strong> $\\mathbf{₹ 6,223.76}$[cite: 1]</li>
+        <li><strong>Worst Outcome:</strong> Path 1 yields $\\text{NPV} = \\mathbf{-₹ 14,726}$ with probability $\\mathbf{0.08 \\text{ (8\\%)}}$[cite: 1].</li>
+        <li><strong>Best Outcome:</strong> Path 6 yields $\\text{NPV} = \\mathbf{+₹ 24,100}$ with probability $\\mathbf{0.06 \\text{ (6\\%)}}$[cite: 1].</li>
         <li><strong>Decision:</strong> <strong>Accept the project</strong> because the overall Expected NPV is positive (+₹ 6,223.76)[cite: 1].</li>
       </ol>
     `
@@ -1688,13 +1688,13 @@ const icaibookData = [
     solution_html: `
       <h4>Expected Utility Computation</h4>
       <p><strong>Project A:</strong></p>
-      <p>$$\text{E}(U)_A = (-100 \times 0.10) + (-60 \times 0.20) + (40 \times 0.40) + (30 \times 0.20) + (20 \times 0.10) = -10 - 12 + 16 + 6 + 2 = \mathbf{2.00}$$[cite: 1]</p>
+      <p>$$\\text{E}(U)_A = (-100 \\times 0.10) + (-60 \\times 0.20) + (40 \\times 0.40) + (30 \\times 0.20) + (20 \\times 0.10) = -10 - 12 + 16 + 6 + 2 = \\mathbf{2.00}$$[cite: 1]</p>
 
       <p><strong>Project B:</strong></p>
-      <p>$$\text{E}(U)_B = (-60 \times 0.10) + (-3 \times 0.15) + (40 \times 0.40) + (20 \times 0.25) + (30 \times 0.10) = -6 - 0.45 + 16 + 5 + 3 = \mathbf{17.55}$$[cite: 1]</p>
+      <p>$$\\text{E}(U)_B = (-60 \\times 0.10) + (-3 \\times 0.15) + (40 \\times 0.40) + (20 \\times 0.25) + (30 \\times 0.10) = -6 - 0.45 + 16 + 5 + 3 = \\mathbf{17.55}$$[cite: 1]</p>
 
       <h4>Decision</h4>
-      <p><strong>Project B should be selected</strong> because its expected utility ($\mathbf{17.55}$) is significantly higher than that of Project A ($\mathbf{2.00}$)[cite: 1].</p>
+      <p><strong>Project B should be selected</strong> because its expected utility ($\\mathbf{17.55}$) is significantly higher than that of Project A ($\\mathbf{2.00}$)[cite: 1].</p>
     `
   },
   {
@@ -1725,29 +1725,29 @@ const icaibookData = [
           </tbody>
         </table>
       </div>
-      <p>Cost of capital is 15% ($PVAF_{15\%, 8} = 4.4873, PVF_{15\%, 8} = 0.3269$). When should the company replace the machine?[cite: 1]</p>
+      <p>Cost of capital is 15% ($PVAF_{15\\%, 8} = 4.4873, PVF_{15\\%, 8} = 0.3269$). When should the company replace the machine?[cite: 1]</p>
     `,
     solution_html: `
       <h4>1. Equivalent Annual Cost (EAC) of New Machine</h4>
       <ul>
         <li>Cost of New Machine: ₹ 90,000[cite: 1]</li>
-        <li>Add: PV of Repairs ($₹ 10,000 \times 4.4873$): ₹ 44,873[cite: 1]</li>
-        <li>Less: PV of Salvage ($₹ 20,000 \times 0.3269$): (₹ 6,538)[cite: 1]</li>
+        <li>Add: PV of Repairs ($₹ 10,000 \\times 4.4873$): ₹ 44,873[cite: 1]</li>
+        <li>Less: PV of Salvage ($₹ 20,000 \\times 0.3269$): (₹ 6,538)[cite: 1]</li>
         <li>Total PV of Costs: ₹ 1,28,335[cite: 1]</li>
       </ul>
-      <p>$$\text{EAC} = \frac{₹ 1,28,335}{4.4873} = \mathbf{₹ 28,600 \text{ p.a.}}$$[cite: 1]</p>
+      <p>$$\\text{EAC} = \\frac{₹ 1,28,335}{4.4873} = \\mathbf{₹ 28,600 \\text{ p.a.}}$$[cite: 1]</p>
 
       <h4>2. Timing Comparison (PV of Cost of Replacement Across Scenarios)</h4>
       <ul>
         <li><strong>Replace Immediately (Year 0):</strong>
-          $$\text{Net Outflow} = -₹ 28,600 + ₹ 40,000 (\text{salvage}) = \mathbf{+₹ 11,400 \text{ (Net Benefit)}}$$[cite: 1]
+          $$\\text{Net Outflow} = -₹ 28,600 + ₹ 40,000 (\\text{salvage}) = \\mathbf{+₹ 11,400 \\text{ (Net Benefit)}}$$[cite: 1]
         </li>
         <li><strong>Replace in 1 Year:</strong>
-          $$\text{PV} = [25,000 - 10,000 - 28,600] \times 0.870 = -₹ 13,600 \times 0.870 = \mathbf{-₹ 11,832}$$[cite: 1]
+          $$\\text{PV} = [25,000 - 10,000 - 28,600] \\times 0.870 = -₹ 13,600 \\times 0.870 = \\mathbf{-₹ 11,832}$$[cite: 1]
         </li>
-        <li><strong>Replace in 2 Years:</strong> $\text{PV of Costs} = \mathbf{-₹ 34,102}$[cite: 1]</li>
-        <li><strong>Replace in 3 Years:</strong> $\text{PV of Costs} = \mathbf{-₹ 55,799}$[cite: 1]</li>
-        <li><strong>Replace in 4 Years:</strong> $\text{PV of Costs} = \mathbf{-₹ 82,799}$[cite: 1]</li>
+        <li><strong>Replace in 2 Years:</strong> $\\text{PV of Costs} = \\mathbf{-₹ 34,102}$[cite: 1]</li>
+        <li><strong>Replace in 3 Years:</strong> $\\text{PV of Costs} = \\mathbf{-₹ 55,799}$[cite: 1]</li>
+        <li><strong>Replace in 4 Years:</strong> $\\text{PV of Costs} = \\mathbf{-₹ 82,799}$[cite: 1]</li>
       </ul>
       <p><strong>Advice:</strong> The company should <strong>replace the machine immediately</strong> because replacing now yields the lowest cost / highest net benefit[cite: 1].</p>
     `
@@ -1790,13 +1790,13 @@ const icaibookData = [
     solution_html: `
       <h4>1. Initial Incremental Cash Outflows</h4>
       <ul>
-        <li><strong>Upgraded Machine:</strong> $\mathbf{₹ 10,00,000}$[cite: 1]</li>
-        <li><strong>New Machine:</strong> $₹ 20,50,000 - [₹ 50,000 \times (1 - 0.40)] = ₹ 20,50,000 - ₹ 30,000 = \mathbf{₹ 20,20,000}$[cite: 1]</li>
+        <li><strong>Upgraded Machine:</strong> $\\mathbf{₹ 10,00,000}$[cite: 1]</li>
+        <li><strong>New Machine:</strong> $₹ 20,50,000 - [₹ 50,000 \\times (1 - 0.40)] = ₹ 20,50,000 - ₹ 30,000 = \\mathbf{₹ 20,20,000}$[cite: 1]</li>
       </ul>
 
-      <h4>2. Annual Incremental CFAT ($\text{CFAT} = \text{EAT} + \text{Depreciation}$)</h4>
+      <h4>2. Annual Incremental CFAT ($\\text{CFAT} = \\text{EAT} + \\text{Depreciation}$)</h4>
       <ul>
-        <li>Depreciation (Upgraded) $= \frac{10,00,000}{5} = ₹ 2,00,000$[cite: 1]; Depreciation (New) $= \frac{20,50,000}{5} = ₹ 4,10,000$[cite: 1]; Old $= 0$[cite: 1]</li>
+        <li>Depreciation (Upgraded) $= \\frac{10,00,000}{5} = ₹ 2,00,000$[cite: 1]; Depreciation (New) $= \\frac{20,50,000}{5} = ₹ 4,10,000$[cite: 1]; Old $= 0$[cite: 1]</li>
         <li><strong>Upgraded Incremental CFAT:</strong>
           <ul>
             <li>Y1 &amp; Y2: $(5,50,000 + 2,00,000) - 5,00,000 = ₹ 2,50,000$[cite: 1]</li>
@@ -1817,12 +1817,12 @@ const icaibookData = [
       <h4>3. Incremental NPV Evaluation</h4>
       <ul>
         <li><strong>Upgraded Machine:</strong>
-          $$\text{PV} = (2.5\text{L} \times 0.870) + (2.5\text{L} \times 0.756) + (2.3\text{L} \times 0.658) + (2.3\text{L} \times 0.572) + (2.4\text{L} \times 0.497) = ₹ 8,08,680$$[cite: 1]
-          $$\text{NPV} = ₹ 8,08,680 - ₹ 10,00,000 = \mathbf{-₹ 1,91,320}$$[cite: 1]
+          $$\\text{PV} = (2.5\\text{L} \\times 0.870) + (2.5\\text{L} \\times 0.756) + (2.3\\text{L} \\times 0.658) + (2.3\\text{L} \\times 0.572) + (2.4\\text{L} \\times 0.497) = ₹ 8,08,680$$[cite: 1]
+          $$\\text{NPV} = ₹ 8,08,680 - ₹ 10,00,000 = \\mathbf{-₹ 1,91,320}$$[cite: 1]
         </li>
         <li><strong>New Machine:</strong>
-          $$\text{PV} = (5.1\text{L} \times 0.870) + (5.1\text{L} \times 0.756) + (5.2\text{L} \times 0.658) + (5.3\text{L} \times 0.572) + (5.5\text{L} \times 0.497) = ₹ 17,47,930$$[cite: 1]
-          $$\text{NPV} = ₹ 17,47,930 - ₹ 20,20,000 = \mathbf{-₹ 2,72,070}$$[cite: 1]
+          $$\\text{PV} = (5.1\\text{L} \\times 0.870) + (5.1\\text{L} \\times 0.756) + (5.2\\text{L} \\times 0.658) + (5.3\\text{L} \\times 0.572) + (5.5\\text{L} \\times 0.497) = ₹ 17,47,930$$[cite: 1]
+          $$\\text{NPV} = ₹ 17,47,930 - ₹ 20,20,000 = \\mathbf{-₹ 2,72,070}$$[cite: 1]
         </li>
       </ul>
       <p><strong>Advice:</strong> Because both options yield negative incremental NPVs, the company should reject both and <strong>continue with the existing old machine</strong>[cite: 1].</p>
@@ -1841,18 +1841,18 @@ const icaibookData = [
         <li>Machine A costs ₹ 1,50,000, lasts 3 years, and costs ₹ 40,000/year to run[cite: 1].</li>
         <li>Machine B costs ₹ 1,00,000, lasts 2 years, and costs ₹ 60,000/year to run[cite: 1].</li>
       </ul>
-      <p>Opportunity cost of capital is 10% ($PVAF_{10\%, 3} = 2.486, PVAF_{10\%, 2} = 1.735$). Ignore tax. Which machine should Company X buy?[cite: 1]</p>
+      <p>Opportunity cost of capital is 10% ($PVAF_{10\\%, 3} = 2.486, PVAF_{10\\%, 2} = 1.735$). Ignore tax. Which machine should Company X buy?[cite: 1]</p>
     `,
     solution_html: `
       <h4>Equivalent Annual Cost (EAC) Evaluation</h4>
       <ul>
         <li><strong>Machine A:</strong>
-          $$\text{Total PV of Costs} = ₹ 1,50,000 + (₹ 40,000 \times 2.486) = ₹ 1,50,000 + ₹ 99,440 = ₹ 2,49,440$$[cite: 1]
-          $$\text{EAC}_A = \frac{₹ 2,49,440}{2.486} = \mathbf{₹ 1,00,338}$$[cite: 1]
+          $$\\text{Total PV of Costs} = ₹ 1,50,000 + (₹ 40,000 \\times 2.486) = ₹ 1,50,000 + ₹ 99,440 = ₹ 2,49,440$$[cite: 1]
+          $$\\text{EAC}_A = \\frac{₹ 2,49,440}{2.486} = \\mathbf{₹ 1,00,338}$$[cite: 1]
         </li>
         <li><strong>Machine B:</strong>
-          $$\text{Total PV of Costs} = ₹ 1,00,000 + (₹ 60,000 \times 1.735) = ₹ 1,00,000 + ₹ 1,04,100 = ₹ 2,04,100$$[cite: 1]
-          $$\text{EAC}_B = \frac{₹ 2,04,100}{1.735} = \mathbf{₹ 1,17,637}$$[cite: 1]
+          $$\\text{Total PV of Costs} = ₹ 1,00,000 + (₹ 60,000 \\times 1.735) = ₹ 1,00,000 + ₹ 1,04,100 = ₹ 2,04,100$$[cite: 1]
+          $$\\text{EAC}_B = \\frac{₹ 2,04,100}{1.735} = \\mathbf{₹ 1,17,637}$$[cite: 1]
         </li>
       </ul>
       <p><strong>Decision:</strong> Company X should buy <strong>Machine A</strong> because its Equivalent Annual Cost (₹ 1,00,338) is lower than that of Machine B (₹ 1,17,637)[cite: 1].</p>
@@ -1867,20 +1867,20 @@ const icaibookData = [
     marks: 6,
     question_html: `
       <p>Company Y is operating an elderly machine that is expected to produce net cash inflows of ₹ 40,000 in Year 1 and ₹ 40,000 in Year 2[cite: 1]. Current salvage value is ₹ 80,000, falling to ₹ 70,000 next year[cite: 1].</p>
-      <p>A new machine costs ₹ 1,50,000 and provides cash inflows of ₹ 80,000/year for 3 years ($PVAF_{10\%, 3} = 2.486$)[cite: 1]. Opportunity cost of capital is 10%. Advise whether to replace now or wait one year[cite: 1].</p>
+      <p>A new machine costs ₹ 1,50,000 and provides cash inflows of ₹ 80,000/year for 3 years ($PVAF_{10\\%, 3} = 2.486$)[cite: 1]. Opportunity cost of capital is 10%. Advise whether to replace now or wait one year[cite: 1].</p>
     `,
     solution_html: `
       <h4>NPV of New Machine</h4>
-      <p>$$\text{NPV}_{\text{New}} = (₹ 80,000 \times 2.486) - ₹ 1,50,000 = ₹ 1,98,880 - ₹ 1,50,000 = \mathbf{₹ 48,880}$$[cite: 1]</p>
+      <p>$$\\text{NPV}_{\\text{New}} = (₹ 80,000 \\times 2.486) - ₹ 1,50,000 = ₹ 1,98,880 - ₹ 1,50,000 = \\mathbf{₹ 48,880}$$[cite: 1]</p>
 
       <h4>Timing Evaluation</h4>
       <ul>
         <li><strong>Alternative 1: Replace Immediately (Year 0):</strong>
-          $$\text{Total NPV} = \text{Current Salvage} + \text{NPV}_{\text{New}} = ₹ 80,000 + ₹ 48,880 = \mathbf{₹ 1,28,880}$$[cite: 1]
+          $$\\text{Total NPV} = \\text{Current Salvage} + \\text{NPV}_{\\text{New}} = ₹ 80,000 + ₹ 48,880 = \\mathbf{₹ 1,28,880}$$[cite: 1]
         </li>
         <li><strong>Alternative 2: Replace After 1 Year:</strong>
-          $$\text{Total Inflow at Year 1} = \text{Year 1 Inflow} + \text{Salvage Year 1} + \text{NPV}_{\text{New}} = ₹ 40,000 + ₹ 70,000 + ₹ 48,880 = ₹ 1,58,880$$[cite: 1]
-          $$\text{Present Value (Year 0)} = \frac{₹ 1,58,880}{1.10} = \mathbf{₹ 1,44,436}$$[cite: 1]
+          $$\\text{Total Inflow at Year 1} = \\text{Year 1 Inflow} + \\text{Salvage Year 1} + \\text{NPV}_{\\text{New}} = ₹ 40,000 + ₹ 70,000 + ₹ 48,880 = ₹ 1,58,880$$[cite: 1]
+          $$\\text{Present Value (Year 0)} = \\frac{₹ 1,58,880}{1.10} = \\mathbf{₹ 1,44,436}$$[cite: 1]
         </li>
       </ul>
       <p><strong>Advice:</strong> Company Y should <strong>wait one year and replace the machine at the end of Year 1</strong>, as this produces a higher net present value (₹ 1,44,436 vs. ₹ 1,28,880)[cite: 1].</p>
@@ -1919,20 +1919,20 @@ const icaibookData = [
       <h4>Present Value of Costs for Replacement Cycles</h4>
       <ul>
         <li><strong>1-Year Cycle:</strong>
-          $$\text{PV} = 60,000 + (16,000 - 32,000) \times 0.8696 = 60,000 - 13,914 = ₹ 46,086$$[cite: 1]
-          $$\text{EAC} = \frac{₹ 46,086}{0.8696} = \mathbf{₹ 52,997}$$[cite: 1]
+          $$\\text{PV} = 60,000 + (16,000 - 32,000) \\times 0.8696 = 60,000 - 13,914 = ₹ 46,086$$[cite: 1]
+          $$\\text{EAC} = \\frac{₹ 46,086}{0.8696} = \\mathbf{₹ 52,997}$$[cite: 1]
         </li>
         <li><strong>2-Year Cycle:</strong>
-          $$\text{PV} = 60,000 + 16,000(0.8696) + (22,000 - 24,000)(0.7561) = 60,000 + 13,914 - 1,512 = ₹ 72,402$$[cite: 1]
-          $$\text{EAC} = \frac{₹ 72,402}{0.8696 + 0.7561} = \frac{₹ 72,402}{1.6257} = \mathbf{₹ 44,536}$$[cite: 1]
+          $$\\text{PV} = 60,000 + 16,000(0.8696) + (22,000 - 24,000)(0.7561) = 60,000 + 13,914 - 1,512 = ₹ 72,402$$[cite: 1]
+          $$\\text{EAC} = \\frac{₹ 72,402}{0.8696 + 0.7561} = \\frac{₹ 72,402}{1.6257} = \\mathbf{₹ 44,536}$$[cite: 1]
         </li>
         <li><strong>3-Year Cycle:</strong>
-          $$\text{PV} = 72,402 + 2,000(0.7561) + (28,000 - 16,000)(0.6575) = 72,402 + 1,512 + 7,890 = ₹ 98,438$$[cite: 1]
-          $$\text{EAC} = \frac{₹ 98,438}{1.6257 + 0.6575} = \frac{₹ 98,438}{2.2832} = \mathbf{₹ 43,114}$$[cite: 1]
+          $$\\text{PV} = 72,402 + 2,000(0.7561) + (28,000 - 16,000)(0.6575) = 72,402 + 1,512 + 7,890 = ₹ 98,438$$[cite: 1]
+          $$\\text{EAC} = \\frac{₹ 98,438}{1.6257 + 0.6575} = \\frac{₹ 98,438}{2.2832} = \\mathbf{₹ 43,114}$$[cite: 1]
         </li>
         <li><strong>4-Year Cycle:</strong>
-          $$\text{PV} = 98,438 + 12,000(0.6575) + (36,000 - 8,000)(0.5718) = 98,438 + 7,890 + 16,010 = ₹ 1,24,968$$[cite: 1]
-          $$\text{EAC} = \frac{₹ 1,24,968}{2.2832 + 0.5718} = \frac{₹ 1,24,968}{2.8550} = \mathbf{₹ 43,772}$$[cite: 1]
+          $$\\text{PV} = 98,438 + 12,000(0.6575) + (36,000 - 8,000)(0.5718) = 98,438 + 7,890 + 16,010 = ₹ 1,24,968$$[cite: 1]
+          $$\\text{EAC} = \\frac{₹ 1,24,968}{2.2832 + 0.5718} = \\frac{₹ 1,24,968}{2.8550} = \\mathbf{₹ 43,772}$$[cite: 1]
         </li>
       </ul>
       <p><strong>Conclusion:</strong> The <strong>optimum replacement cycle is 3 years</strong>, as it results in the lowest Equivalent Annual Cost of <strong>₹ 43,114</strong>[cite: 1].</p>
@@ -1969,9 +1969,9 @@ const icaibookData = [
     solution_html: `
       <h4>1. Present Value of Operating Costs and Resale Value</h4>
       <ul>
-        <li>Year 1: Total Cost $= ₹ 33,000 \times 0.909 = ₹ 29,997$; Resale PV $= ₹ 35,000 \times 0.909 = ₹ 31,815$[cite: 1]</li>
-        <li>Year 2: Total Cost $= ₹ 38,000 \times 0.826 = ₹ 31,388$; Resale PV $= ₹ 21,000 \times 0.826 = ₹ 17,346$[cite: 1]</li>
-        <li>Year 3: Total Cost $= ₹ 46,000 \times 0.751 = ₹ 34,546$; Resale PV $= ₹ 9,000 \times 0.751 = ₹ 6,759$[cite: 1]</li>
+        <li>Year 1: Total Cost $= ₹ 33,000 \\times 0.909 = ₹ 29,997$; Resale PV $= ₹ 35,000 \\times 0.909 = ₹ 31,815$[cite: 1]</li>
+        <li>Year 2: Total Cost $= ₹ 38,000 \\times 0.826 = ₹ 31,388$; Resale PV $= ₹ 21,000 \\times 0.826 = ₹ 17,346$[cite: 1]</li>
+        <li>Year 3: Total Cost $= ₹ 46,000 \\times 0.751 = ₹ 34,546$; Resale PV $= ₹ 9,000 \\times 0.751 = ₹ 6,759$[cite: 1]</li>
       </ul>
 
       <h4>2. Net Outflow and EAC Computation</h4>
@@ -2040,7 +2040,7 @@ const icaibookData = [
       <p>The annual cash flow of ₹ 15,000 is stated in real terms, whereas the cost of capital of 12% is in nominal terms[cite: 1]. It is inconsistent to discount real cash flows with a nominal discount rate[cite: 1]. There are two methods to evaluate the project[cite: 1]:</p>
 
       <h4>Approach 1: Restate Cash Flows in Nominal Terms and Discount at Nominal Rate (12%)</h4>
-      <p>Nominal Cash Flow $= \text{Real Cash Flow} \times (1 + \text{Inflation Rate})^t$[cite: 1]</p>
+      <p>Nominal Cash Flow $= \\text{Real Cash Flow} \\times (1 + \\text{Inflation Rate})^t$[cite: 1]</p>
       <div style="overflow-x:auto;">
         <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
           <thead>
@@ -2053,10 +2053,10 @@ const icaibookData = [
             </tr>
           </thead>
           <tbody>
-            <tr><td>1</td><td>15,000</td><td>$15,000 \times 1.10 = 16,500$</td><td>0.8929</td><td>14,732</td></tr>
-            <tr><td>2</td><td>15,000</td><td>$15,000 \times (1.10)^2 = 18,150$</td><td>0.7972</td><td>14,469</td></tr>
-            <tr><td>3</td><td>15,000</td><td>$15,000 \times (1.10)^3 = 19,965$</td><td>0.7118</td><td>14,211</td></tr>
-            <tr><td>4</td><td>15,000</td><td>$15,000 \times (1.10)^4 = 21,962$</td><td>0.6355</td><td>13,957</td></tr>
+            <tr><td>1</td><td>15,000</td><td>$15,000 \\times 1.10 = 16,500$</td><td>0.8929</td><td>14,732</td></tr>
+            <tr><td>2</td><td>15,000</td><td>$15,000 \\times (1.10)^2 = 18,150$</td><td>0.7972</td><td>14,469</td></tr>
+            <tr><td>3</td><td>15,000</td><td>$15,000 \\times (1.10)^3 = 19,965$</td><td>0.7118</td><td>14,211</td></tr>
+            <tr><td>4</td><td>15,000</td><td>$15,000 \\times (1.10)^4 = 21,962$</td><td>0.6355</td><td>13,957</td></tr>
             <tr style="font-weight:bold; background-color:#fafafa;">
               <td colspan="4">Total Present Value of Inflows</td>
               <td>57,369</td>
@@ -2074,10 +2074,10 @@ const icaibookData = [
       </div>
 
       <h4>Approach 2: Restate Discount Rate in Real Terms and Discount Real Cash Flows</h4>
-      <p>$$\text{Real Discount Rate} = \frac{1 + \text{Nominal Discount Rate}}{1 + \text{Inflation Rate}} - 1 = \frac{1 + 0.12}{1 + 0.10} - 1 = 0.01818 \approx 1.82\%$$[cite: 1]</p>
-      <p>Discounting real cash flows at $1.82\%$[cite: 1]:</p>
-      <p>$$\text{PV} = \frac{15,000}{1.0182} + \frac{15,000}{(1.0182)^2} + \frac{15,000}{(1.0182)^3} + \frac{15,000}{(1.0182)^4} = 14,732 + 14,469 + 14,210 + 13,956 = ₹ 57,367$$[cite: 1]</p>
-      <p>$$\text{NPV} = ₹ 57,367 - ₹ 40,000 = \mathbf{₹ 17,367 \text{ (Approx)}}$$[cite: 1]</p>
+      <p>$$\\text{Real Discount Rate} = \\frac{1 + \\text{Nominal Discount Rate}}{1 + \\text{Inflation Rate}} - 1 = \\frac{1 + 0.12}{1 + 0.10} - 1 = 0.01818 \\approx 1.82\\%$$[cite: 1]</p>
+      <p>Discounting real cash flows at $1.82\\%$[cite: 1]:</p>
+      <p>$$\\text{PV} = \\frac{15,000}{1.0182} + \\frac{15,000}{(1.0182)^2} + \\frac{15,000}{(1.0182)^3} + \\frac{15,000}{(1.0182)^4} = 14,732 + 14,469 + 14,210 + 13,956 = ₹ 57,367$$[cite: 1]</p>
+      <p>$$\\text{NPV} = ₹ 57,367 - ₹ 40,000 = \\mathbf{₹ 17,367 \\text{ (Approx)}}$$[cite: 1]</p>
     `
   },
   {
@@ -2117,21 +2117,21 @@ const icaibookData = [
       <ul>
         <li><strong>Revenues:</strong>
           <ul>
-            <li>Year 1: $6,00,000 \times 1.10 = ₹ 6,60,000$[cite: 1]</li>
-            <li>Year 2: $7,00,000 \times 1.10 \times 1.09 = ₹ 8,39,300$[cite: 1]</li>
-            <li>Year 3: $8,00,000 \times 1.10 \times 1.09 \times 1.08 = ₹ 10,35,936$[cite: 1]</li>
-            <li>Year 4: $8,00,000 \times 1.10 \times 1.09 \times 1.08 \times 1.07 = ₹ 11,08,452$[cite: 1]</li>
+            <li>Year 1: $6,00,000 \\times 1.10 = ₹ 6,60,000$[cite: 1]</li>
+            <li>Year 2: $7,00,000 \\times 1.10 \\times 1.09 = ₹ 8,39,300$[cite: 1]</li>
+            <li>Year 3: $8,00,000 \\times 1.10 \\times 1.09 \\times 1.08 = ₹ 10,35,936$[cite: 1]</li>
+            <li>Year 4: $8,00,000 \\times 1.10 \\times 1.09 \\times 1.08 \\times 1.07 = ₹ 11,08,452$[cite: 1]</li>
           </ul>
         </li>
         <li><strong>Costs:</strong>
           <ul>
-            <li>Year 1: $3,00,000 \times 1.12 = ₹ 3,36,000$[cite: 1]</li>
-            <li>Year 2: $4,00,000 \times 1.12 \times 1.10 = ₹ 4,92,800$[cite: 1]</li>
-            <li>Year 3: $4,00,000 \times 1.12 \times 1.10 \times 1.09 = ₹ 5,37,152$[cite: 1]</li>
-            <li>Year 4: $4,00,000 \times 1.12 \times 1.10 \times 1.09 \times 1.08 = ₹ 5,80,124$[cite: 1]</li>
+            <li>Year 1: $3,00,000 \\times 1.12 = ₹ 3,36,000$[cite: 1]</li>
+            <li>Year 2: $4,00,000 \\times 1.12 \\times 1.10 = ₹ 4,92,800$[cite: 1]</li>
+            <li>Year 3: $4,00,000 \\times 1.12 \\times 1.10 \\times 1.09 = ₹ 5,37,152$[cite: 1]</li>
+            <li>Year 4: $4,00,000 \\times 1.12 \\times 1.10 \\times 1.09 \\times 1.08 = ₹ 5,80,124$[cite: 1]</li>
           </ul>
         </li>
-        <li><strong>Tax Shield on Depreciation:</strong> $₹ 2,00,000 \times 60\% = \mathbf{₹ 1,20,000 \text{ p.a.}}$[cite: 1]</li>
+        <li><strong>Tax Shield on Depreciation:</strong> $₹ 2,00,000 \\times 60\\% = \\mathbf{₹ 1,20,000 \\text{ p.a.}}$[cite: 1]</li>
       </ul>
 
       <h4>2. Net Profit after Tax and Operating Cash Flow</h4>
@@ -2229,19 +2229,19 @@ const icaibookData = [
       <h4>1. Calculation of Expected Net Cash Flow (ENCF)</h4>
       <ul>
         <li><strong>Project A:</strong>
-          $$\text{ENCF}_A = (8,000 \times 0.10) + (10,000 \times 0.20) + (12,000 \times 0.40) + (14,000 \times 0.20) + (16,000 \times 0.10)$$[cite: 1]
-          $$\text{ENCF}_A = 800 + 2,000 + 4,800 + 2,800 + 1,600 = \mathbf{₹ 12,000}$$[cite: 1]
+          $$\\text{ENCF}_A = (8,000 \\times 0.10) + (10,000 \\times 0.20) + (12,000 \\times 0.40) + (14,000 \\times 0.20) + (16,000 \\times 0.10)$$[cite: 1]
+          $$\\text{ENCF}_A = 800 + 2,000 + 4,800 + 2,800 + 1,600 = \\mathbf{₹ 12,000}$$[cite: 1]
         </li>
         <li><strong>Project B:</strong>
-          $$\text{ENCF}_B = (24,000 \times 0.10) + (20,000 \times 0.15) + (16,000 \times 0.50) + (12,000 \times 0.15) + (8,000 \times 0.10)$$[cite: 1]
-          $$\text{ENCF}_B = 2,400 + 3,000 + 8,000 + 1,800 + 800 = \mathbf{₹ 16,000}$$[cite: 1]
+          $$\\text{ENCF}_B = (24,000 \\times 0.10) + (20,000 \\times 0.15) + (16,000 \\times 0.50) + (12,000 \\times 0.15) + (8,000 \\times 0.10)$$[cite: 1]
+          $$\\text{ENCF}_B = 2,400 + 3,000 + 8,000 + 1,800 + 800 = \\mathbf{₹ 16,000}$$[cite: 1]
         </li>
       </ul>
 
       <h4>2. Expected Net Present Value (at 10% Discount Rate, PVF = 0.909)</h4>
       <ul>
-        <li>$$\text{NPV}_A = (₹ 12,000 \times 0.909) - ₹ 10,000 = ₹ 10,908 - ₹ 10,000 = \mathbf{₹ 908}$$[cite: 1]</li>
-        <li>$$\text{NPV}_B = (₹ 16,000 \times 0.909) - ₹ 10,000 = ₹ 14,544 - ₹ 10,000 = \mathbf{₹ 4,544}$$[cite: 1]</li>
+        <li>$$\\text{NPV}_A = (₹ 12,000 \\times 0.909) - ₹ 10,000 = ₹ 10,908 - ₹ 10,000 = \\mathbf{₹ 908}$$[cite: 1]</li>
+        <li>$$\\text{NPV}_B = (₹ 16,000 \\times 0.909) - ₹ 10,000 = ₹ 14,544 - ₹ 10,000 = \\mathbf{₹ 4,544}$$[cite: 1]</li>
       </ul>
 
       <h4>Conclusion</h4>
@@ -2287,17 +2287,17 @@ const icaibookData = [
     solution_html: `
       <h4>1. Calculation of Expected Cash Flows (ENCF)</h4>
       <ul>
-        <li><strong>Year 1:</strong> $(2,000 \times 0.1) + (4,000 \times 0.2) + (6,000 \times 0.3) + (8,000 \times 0.4) = 200 + 800 + 1,800 + 3,200 = \mathbf{₹ 6,000}$[cite: 1]</li>
-        <li><strong>Year 2:</strong> $(2,000 \times 0.2) + (4,000 \times 0.3) + (6,000 \times 0.4) + (8,000 \times 0.1) = 400 + 1,200 + 2,400 + 800 = \mathbf{₹ 4,800}$[cite: 1]</li>
-        <li><strong>Year 3:</strong> $(2,000 \times 0.3) + (4,000 \times 0.4) + (6,000 \times 0.2) + (8,000 \times 0.1) = 600 + 1,600 + 1,200 + 800 = \mathbf{₹ 4,200}$[cite: 1]</li>
+        <li><strong>Year 1:</strong> $(2,000 \\times 0.1) + (4,000 \\times 0.2) + (6,000 \\times 0.3) + (8,000 \\times 0.4) = 200 + 800 + 1,800 + 3,200 = \\mathbf{₹ 6,000}$[cite: 1]</li>
+        <li><strong>Year 2:</strong> $(2,000 \\times 0.2) + (4,000 \\times 0.3) + (6,000 \\times 0.4) + (8,000 \\times 0.1) = 400 + 1,200 + 2,400 + 800 = \\mathbf{₹ 4,800}$[cite: 1]</li>
+        <li><strong>Year 3:</strong> $(2,000 \\times 0.3) + (4,000 \\times 0.4) + (6,000 \\times 0.2) + (8,000 \\times 0.1) = 600 + 1,600 + 1,200 + 800 = \\mathbf{₹ 4,200}$[cite: 1]</li>
       </ul>
 
       <h4>2. Present Value of Expected Cash Flows (Discount rate = 10%)</h4>
-      <p>$$\text{PV} = (6,000 \times 0.909) + (4,800 \times 0.826) + (4,200 \times 0.751)$$[cite: 1]</p>
-      <p>$$\text{PV} = 5,454 + 3,964.80 + 3,154.20 = \mathbf{₹ 12,573}$$[cite: 1]</p>
+      <p>$$\\text{PV} = (6,000 \\times 0.909) + (4,800 \\times 0.826) + (4,200 \\times 0.751)$$[cite: 1]</p>
+      <p>$$\\text{PV} = 5,454 + 3,964.80 + 3,154.20 = \\mathbf{₹ 12,573}$$[cite: 1]</p>
 
       <h4>3. Expected Net Present Value</h4>
-      <p>$$\text{ENPV} = \text{PV of Inflows} - \text{Initial Investment} = ₹ 12,573 - ₹ 10,000 = \mathbf{₹ 2,573}$$[cite: 1]</p>
+      <p>$$\\text{ENPV} = \\text{PV of Inflows} - \\text{Initial Investment} = ₹ 12,573 - ₹ 10,000 = \\mathbf{₹ 2,573}$$[cite: 1]</p>
     `
   },
   {
@@ -2337,19 +2337,19 @@ const icaibookData = [
     solution_html: `
       <h4>1. Expected Net Cash Flows (ENCF)</h4>
       <ul>
-        <li>$\text{ENCF}_A = (8,000 \times 0.1) + (10,000 \times 0.2) + (12,000 \times 0.4) + (14,000 \times 0.2) + (16,000 \times 0.1) = \mathbf{₹ 12,000}$[cite: 1]</li>
-        <li>$\text{ENCF}_B = (24,000 \times 0.1) + (20,000 \times 0.15) + (16,000 \times 0.5) + (12,000 \times 0.15) + (8,000 \times 0.1) = \mathbf{₹ 16,000}$[cite: 1]</li>
+        <li>$\\text{ENCF}_A = (8,000 \\times 0.1) + (10,000 \\times 0.2) + (12,000 \\times 0.4) + (14,000 \\times 0.2) + (16,000 \\times 0.1) = \\mathbf{₹ 12,000}$[cite: 1]</li>
+        <li>$\\text{ENCF}_B = (24,000 \\times 0.1) + (20,000 \\times 0.15) + (16,000 \\times 0.5) + (12,000 \\times 0.15) + (8,000 \\times 0.1) = \\mathbf{₹ 16,000}$[cite: 1]</li>
       </ul>
 
       <h4>2. Project A: Variance and Standard Deviation</h4>
-      <p>$$\sigma_A^2 = (8,000 - 12,000)^2(0.1) + (10,000 - 12,000)^2(0.2) + (12,000 - 12,000)^2(0.4) + (14,000 - 12,000)^2(0.2) + (16,000 - 12,000)^2(0.1)$$[cite: 1]</p>
-      <p>$$\sigma_A^2 = 16,00,000 + 8,00,000 + 0 + 8,00,000 + 16,00,000 = \mathbf{48,00,000}$$[cite: 1]</p>
-      <p>$$\text{Standard Deviation } (\sigma_A) = \sqrt{48,00,000} \approx \mathbf{₹ 2,190.90}$$[cite: 1]</p>
+      <p>$$\\sigma_A^2 = (8,000 - 12,000)^2(0.1) + (10,000 - 12,000)^2(0.2) + (12,000 - 12,000)^2(0.4) + (14,000 - 12,000)^2(0.2) + (16,000 - 12,000)^2(0.1)$$[cite: 1]</p>
+      <p>$$\\sigma_A^2 = 16,00,000 + 8,00,000 + 0 + 8,00,000 + 16,00,000 = \\mathbf{48,00,000}$$[cite: 1]</p>
+      <p>$$\\text{Standard Deviation } (\\sigma_A) = \\sqrt{48,00,000} \\approx \\mathbf{₹ 2,190.90}$$[cite: 1]</p>
 
       <h4>3. Project B: Variance and Standard Deviation</h4>
-      <p>$$\sigma_B^2 = (24,000 - 16,000)^2(0.1) + (20,000 - 16,000)^2(0.15) + (16,000 - 16,000)^2(0.5) + (12,000 - 16,000)^2(0.15) + (8,000 - 16,000)^2(0.1)$$[cite: 1]</p>
-      <p>$$\sigma_B^2 = 64,00,000 + 24,00,000 + 0 + 24,00,000 + 64,00,000 = \mathbf{1,76,00,000}$$[cite: 1]</p>
-      <p>$$\text{Standard Deviation } (\sigma_B) = \sqrt{1,76,00,000} \approx \mathbf{₹ 4,195.23}$$[cite: 1]</p>
+      <p>$$\\sigma_B^2 = (24,000 - 16,000)^2(0.1) + (20,000 - 16,000)^2(0.15) + (16,000 - 16,000)^2(0.5) + (12,000 - 16,000)^2(0.15) + (8,000 - 16,000)^2(0.1)$$[cite: 1]</p>
+      <p>$$\\sigma_B^2 = 64,00,000 + 24,00,000 + 0 + 24,00,000 + 64,00,000 = \\mathbf{1,76,00,000}$$[cite: 1]</p>
+      <p>$$\\text{Standard Deviation } (\\sigma_B) = \\sqrt{1,76,00,000} \\approx \\mathbf{₹ 4,195.23}$$[cite: 1]</p>
     `
   },
   {
@@ -2389,27 +2389,27 @@ const icaibookData = [
     solution_html: `
       <h4>1. Calculation of Expected Cash Flows (Mean)</h4>
       <ul>
-        <li>$\text{ENCF}_A = (10,000 \times 0.1) + (12,000 \times 0.2) + (14,000 \times 0.4) + (16,000 \times 0.2) + (18,000 \times 0.1) = \mathbf{₹ 14,000}$[cite: 1]</li>
-        <li>$\text{ENCF}_B = (26,000 \times 0.1) + (22,000 \times 0.15) + (18,000 \times 0.5) + (14,000 \times 0.15) + (10,000 \times 0.1) = \mathbf{₹ 18,000}$[cite: 1]</li>
+        <li>$\\text{ENCF}_A = (10,000 \\times 0.1) + (12,000 \\times 0.2) + (14,000 \\times 0.4) + (16,000 \\times 0.2) + (18,000 \\times 0.1) = \\mathbf{₹ 14,000}$[cite: 1]</li>
+        <li>$\\text{ENCF}_B = (26,000 \\times 0.1) + (22,000 \\times 0.15) + (18,000 \\times 0.5) + (14,000 \\times 0.15) + (10,000 \\times 0.1) = \\mathbf{₹ 18,000}$[cite: 1]</li>
       </ul>
 
-      <h4>2. Standard Deviation ($\sigma$)</h4>
+      <h4>2. Standard Deviation ($\\sigma$)</h4>
       <ul>
         <li><strong>Project A:</strong>
-          $$\sigma_A^2 = (10,000 - 14,000)^2(0.1) + (12,000 - 14,000)^2(0.2) + 0 + (16,000 - 14,000)^2(0.2) + (18,000 - 14,000)^2(0.1) = 48,00,000$$[cite: 1]
-          $$\sigma_A = \sqrt{48,00,000} \approx \mathbf{₹ 2,190.90}$$[cite: 1]
+          $$\\sigma_A^2 = (10,000 - 14,000)^2(0.1) + (12,000 - 14,000)^2(0.2) + 0 + (16,000 - 14,000)^2(0.2) + (18,000 - 14,000)^2(0.1) = 48,00,000$$[cite: 1]
+          $$\\sigma_A = \\sqrt{48,00,000} \\approx \\mathbf{₹ 2,190.90}$$[cite: 1]
         </li>
         <li><strong>Project B:</strong>
-          $$\sigma_B^2 = (26,000 - 18,000)^2(0.1) + (22,000 - 18,000)^2(0.15) + 0 + (14,000 - 18,000)^2(0.15) + (10,000 - 18,000)^2(0.1) = 1,76,00,000$$[cite: 1]
-          $$\sigma_B = \sqrt{1,76,00,000} \approx \mathbf{₹ 4,195.23}$$[cite: 1]
+          $$\\sigma_B^2 = (26,000 - 18,000)^2(0.1) + (22,000 - 18,000)^2(0.15) + 0 + (14,000 - 18,000)^2(0.15) + (10,000 - 18,000)^2(0.1) = 1,76,00,000$$[cite: 1]
+          $$\\sigma_B = \\sqrt{1,76,00,000} \\approx \\mathbf{₹ 4,195.23}$$[cite: 1]
         </li>
       </ul>
 
       <h4>3. Coefficient of Variation (CV)</h4>
-      <p>$$\text{CV} = \frac{\text{Standard Deviation}}{\text{Expected Return / Mean}}$$[cite: 1]</p>
+      <p>$$\\text{CV} = \\frac{\\text{Standard Deviation}}{\\text{Expected Return / Mean}}$$[cite: 1]</p>
       <ul>
-        <li>$$\text{CV}_A = \frac{2,190.90}{14,000} = \mathbf{0.1565}$$[cite: 1]</li>
-        <li>$$\text{CV}_B = \frac{4,195.23}{18,000} = \mathbf{0.2331}$$[cite: 1]</li>
+        <li>$$\\text{CV}_A = \\frac{2,190.90}{14,000} = \\mathbf{0.1565}$$[cite: 1]</li>
+        <li>$$\\text{CV}_B = \\frac{4,195.23}{18,000} = \\mathbf{0.2331}$$[cite: 1]</li>
       </ul>
       <p><strong>Decision:</strong> In Project A, the risk per rupee of cash flow is ₹ 0.16, whereas in Project B it is ₹ 0.23[cite: 1]. Therefore, <strong>Project A is better than Project B</strong> due to its lower relative risk[cite: 1].</p>
     `
@@ -2477,7 +2477,7 @@ const icaibookData = [
       </div>
 
       <h4>2. NPV Based on Risk-Adjusted Discount Rate (RADR)</h4>
-      <p>$$\text{RADR} = \text{Risk-Free Rate} + \text{Risk Premium} = 7\% + 7\% = \mathbf{14\%}$$[cite: 1]</p>
+      <p>$$\\text{RADR} = \\text{Risk-Free Rate} + \\text{Risk Premium} = 7\\% + 7\\% = \\mathbf{14\\%}$$[cite: 1]</p>
       <div style="overflow-x:auto;">
         <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
           <thead>
@@ -2540,12 +2540,12 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>NPV Calculation Using Certainty Equivalent Approach</h4>
-      <p>Under this approach, certainty-adjusted cash flows are discounted at the risk-free rate ($k = 5\%$)[cite: 1]:</p>
-      <p>$$\text{NPV} = \sum_{t=1}^{n} \frac{\alpha_t \times \text{NCF}_t}{(1 + k)^t} - I_0$$[cite: 1]</p>
-      <p>$$\text{NPV} = \frac{10,00,000 \times 0.90}{(1.05)^1} + \frac{15,00,000 \times 0.85}{(1.05)^2} + \frac{20,00,000 \times 0.82}{(1.05)^3} + \frac{25,00,000 \times 0.78}{(1.05)^4} - 45,00,000$$[cite: 1]</p>
-      <p>$$\text{NPV} = \frac{9,00,000}{1.05} + \frac{12,75,000}{1.1025} + \frac{16,40,000}{1.157625} + \frac{19,50,000}{1.215506} - 45,00,000$$</p>
-      <p>$$\text{NPV} = 8,57,143 + 11,56,463 + 14,16,694 + 16,04,270 - 45,00,000$$</p>
-      <p>$$\text{NPV} = ₹ 50,34,570 - ₹ 45,00,000 = \mathbf{₹ 5,34,570}$$[cite: 1]</p>
+      <p>Under this approach, certainty-adjusted cash flows are discounted at the risk-free rate ($k = 5\\%$)[cite: 1]:</p>
+      <p>$$\\text{NPV} = \\sum_{t=1}^{n} \\frac{\\alpha_t \\times \\text{NCF}_t}{(1 + k)^t} - I_0$$[cite: 1]</p>
+      <p>$$\\text{NPV} = \\frac{10,00,000 \\times 0.90}{(1.05)^1} + \\frac{15,00,000 \\times 0.85}{(1.05)^2} + \\frac{20,00,000 \\times 0.82}{(1.05)^3} + \\frac{25,00,000 \\times 0.78}{(1.05)^4} - 45,00,000$$[cite: 1]</p>
+      <p>$$\\text{NPV} = \\frac{9,00,000}{1.05} + \\frac{12,75,000}{1.1025} + \\frac{16,40,000}{1.157625} + \\frac{19,50,000}{1.215506} - 45,00,000$$</p>
+      <p>$$\\text{NPV} = 8,57,143 + 11,56,463 + 14,16,694 + 16,04,270 - 45,00,000$$</p>
+      <p>$$\\text{NPV} = ₹ 50,34,570 - ₹ 45,00,000 = \\mathbf{₹ 5,34,570}$$[cite: 1]</p>
     `
   },
   {
@@ -2564,7 +2564,7 @@ const icaibookData = [
         <li>Variable cost per unit: ₹ 50[cite: 1]</li>
         <li>Fixed costs per year: ₹ 50 Cr.[cite: 1]</li>
         <li>Discount Rate: 6%[cite: 1]</li>
-        <li>Project Life: 3 years ($PVAF_{6\%, 3} = 2.673$)[cite: 1]</li>
+        <li>Project Life: 3 years ($PVAF_{6\\%, 3} = 2.673$)[cite: 1]</li>
       </ul>
       <p><strong>Required:</strong></p>
       <ol>
@@ -2575,12 +2575,12 @@ const icaibookData = [
     solution_html: `
       <h4>1. Base Case Net Cash Inflow and NPV</h4>
       <ul>
-        <li>Selling Price per unit $= ₹ 100$; Variable Cost per unit $= ₹ 50 \implies \text{Contribution per unit} = ₹ 50$[cite: 1]</li>
-        <li>Total Annual Contribution $= 5 \text{ Cr. units} \times ₹ 50 = ₹ 250 \text{ Cr.}$[cite: 1]</li>
-        <li>Less: Annual Fixed Costs $= ₹ 50 \text{ Cr.}$[cite: 1]</li>
-        <li>Annual Net Cash Inflow $= ₹ 250 \text{ Cr.} - ₹ 50 \text{ Cr.} = ₹ 200 \text{ Cr.}$[cite: 1]</li>
-        <li>$\text{PV of Cash Inflows} = ₹ 200 \text{ Cr.} \times 2.673 = ₹ 534.60 \text{ Cr.}$[cite: 1]</li>
-        <li>$$\text{Base NPV} = ₹ 534.60 \text{ Cr.} - ₹ 400.00 \text{ Cr.} = \mathbf{₹ 134.60 \text{ Cr.}}$$[cite: 1]</li>
+        <li>Selling Price per unit $= ₹ 100$; Variable Cost per unit $= ₹ 50 \\implies \\text{Contribution per unit} = ₹ 50$[cite: 1]</li>
+        <li>Total Annual Contribution $= 5 \\text{ Cr. units} \\times ₹ 50 = ₹ 250 \\text{ Cr.}$[cite: 1]</li>
+        <li>Less: Annual Fixed Costs $= ₹ 50 \\text{ Cr.}$[cite: 1]</li>
+        <li>Annual Net Cash Inflow $= ₹ 250 \\text{ Cr.} - ₹ 50 \\text{ Cr.} = ₹ 200 \\text{ Cr.}$[cite: 1]</li>
+        <li>$\\text{PV of Cash Inflows} = ₹ 200 \\text{ Cr.} \\times 2.673 = ₹ 534.60 \\text{ Cr.}$[cite: 1]</li>
+        <li>$$\\text{Base NPV} = ₹ 534.60 \\text{ Cr.} - ₹ 400.00 \\text{ Cr.} = \\mathbf{₹ 134.60 \\text{ Cr.}}$$[cite: 1]</li>
       </ul>
 
       <h4>2. Sensitivity Analysis (2.5% Adverse Variance in Each Variable)</h4>
@@ -2681,8 +2681,8 @@ const icaibookData = [
 
       <h4>2. Mixed Scenario Analysis</h4>
       <p>If Years 1 &amp; 2 yield "Most Likely" and Year 3 yields "Worst Case"[cite: 1]:</p>
-      <p>$$\text{NPV} = -14,00,000 + \frac{5,50,000}{1.09} + \frac{4,50,000}{(1.09)^2} + \frac{7,00,000}{(1.09)^3}$$[cite: 1]</p>
-      <p>$$\text{NPV} = -14,00,000 + 5,04,587 + 3,78,756 + 5,40,528 = \mathbf{₹ 23,871}$$[cite: 1]</p>
+      <p>$$\\text{NPV} = -14,00,000 + \\frac{5,50,000}{1.09} + \\frac{4,50,000}{(1.09)^2} + \\frac{7,00,000}{(1.09)^3}$$[cite: 1]</p>
+      <p>$$\\text{NPV} = -14,00,000 + 5,04,587 + 3,78,756 + 5,40,528 = \\mathbf{₹ 23,871}$$[cite: 1]</p>
     `
   },
   {
@@ -2705,7 +2705,7 @@ const icaibookData = [
 
       <p><strong>1. Evaluation at Decision Node C (Given Success of Pilot):</strong></p>
       <ul>
-        <li>Capitalized value of perpetual inflow $= \frac{₹ 4,00,000}{0.10} = ₹ 40,00,000$[cite: 1]</li>
+        <li>Capitalized value of perpetual inflow $= \\frac{₹ 4,00,000}{0.10} = ₹ 40,00,000$[cite: 1]</li>
         <li>Less: Required commercial investment $= ₹ 20,00,000$[cite: 1]</li>
         <li>Net Payoff if Invested $= ₹ 40,00,000 - ₹ 20,00,000 = +₹ 20,00,000$[cite: 1]</li>
         <li>Net Payoff if Not Invested $= ₹ 0$[cite: 1]</li>
@@ -2714,7 +2714,7 @@ const icaibookData = [
 
       <p><strong>2. Evaluation at Decision Node D (Given Failure of Pilot):</strong></p>
       <ul>
-        <li>Capitalized value of perpetual inflow $= \frac{₹ 1,00,000}{0.10} = ₹ 10,00,000$[cite: 1]</li>
+        <li>Capitalized value of perpetual inflow $= \\frac{₹ 1,00,000}{0.10} = ₹ 10,00,000$[cite: 1]</li>
         <li>Less: Required commercial investment $= ₹ 12,00,000$[cite: 1]</li>
         <li>Net Payoff if Invested $= ₹ 10,00,000 - ₹ 12,00,000 = -₹ 2,00,000$[cite: 1]</li>
         <li>Net Payoff if Not Invested $= ₹ 0$[cite: 1]</li>
@@ -2722,12 +2722,12 @@ const icaibookData = [
       </ul>
 
       <p><strong>3. Expected Monetary Value (EMV) at Chance Node B:</strong></p>
-      <p>$$\text{EMV}_B = (₹ 20 \text{ lacs} \times 0.50) + (₹ 0 \times 0.50) = \mathbf{₹ 10,00,000}$$[cite: 1]</p>
+      <p>$$\\text{EMV}_B = (₹ 20 \\text{ lacs} \\times 0.50) + (₹ 0 \\times 0.50) = \\mathbf{₹ 10,00,000}$$[cite: 1]</p>
 
       <p><strong>4. Evaluation at Initial Decision Node A:</strong></p>
       <ul>
-        <li>Alternative 1 (Undertake Test): $\text{Net Gain} = \text{EMV}_B - \text{Pilot Cost} = ₹ 10,00,000 - ₹ 2,40,000 = \mathbf{+₹ 7,60,000}$[cite: 1]</li>
-        <li>Alternative 2 (Do Not Test): $\text{Net Gain} = ₹ 0$[cite: 1]</li>
+        <li>Alternative 1 (Undertake Test): $\\text{Net Gain} = \\text{EMV}_B - \\text{Pilot Cost} = ₹ 10,00,000 - ₹ 2,40,000 = \\mathbf{+₹ 7,60,000}$[cite: 1]</li>
+        <li>Alternative 2 (Do Not Test): $\\text{Net Gain} = ₹ 0$[cite: 1]</li>
       </ul>
       <p><strong>Recommendation:</strong> The company should <strong>invest ₹ 2,40,000 and undertake the pilot test</strong>[cite: 1].</p>
     `
@@ -2746,28 +2746,28 @@ const icaibookData = [
     solution_html: `
       <h4>Step I: Initial Net Cash Outflow</h4>
       <ul>
-        <li>Book value of old system $= ₹ 25,000 - (5 \times ₹ 2,500) = ₹ 12,500$[cite: 1]</li>
+        <li>Book value of old system $= ₹ 25,000 - (5 \\times ₹ 2,500) = ₹ 12,500$[cite: 1]</li>
         <li>Loss on sale of old system $= ₹ 12,500 - ₹ 5,000 = ₹ 7,500$[cite: 1]</li>
-        <li>Tax savings on loss on sale $= ₹ 7,500 \times 0.30 = ₹ 2,250$[cite: 1]</li>
-        <li>$$\text{Net Outflow} = \text{Cost of New} - (\text{Sale Value} + \text{Tax Savings}) = 50,00,000 \times 10^{-2} - (5,000 + 2,250) = ₹ 50,000 - ₹ 7,250 = \mathbf{₹ 42,750}$$[cite: 1]</li>
+        <li>Tax savings on loss on sale $= ₹ 7,500 \\times 0.30 = ₹ 2,250$[cite: 1]</li>
+        <li>$$\\text{Net Outflow} = \\text{Cost of New} - (\\text{Sale Value} + \\text{Tax Savings}) = 50,00,000 \\times 10^{-2} - (5,000 + 2,250) = ₹ 50,000 - ₹ 7,250 = \\mathbf{₹ 42,750}$$[cite: 1]</li>
       </ul>
 
       <h4>Step II: Incremental Annual Cash Inflows</h4>
       <ul>
-        <li>Increase in Annual Sales $= 10\% \times ₹ 10,00,000 = ₹ 1,00,000 \text{ (or } ₹ 10,000 \text{ profit impact depending on margin / data given as } ₹ 1,00,000 \times 0.1 = ₹ 10,000)$[cite: 1]</li>
+        <li>Increase in Annual Sales $= 10\\% \\times ₹ 10,00,000 = ₹ 1,00,000 \\text{ (or } ₹ 10,000 \\text{ profit impact depending on margin / data given as } ₹ 1,00,000 \\times 0.1 = ₹ 10,000)$[cite: 1]</li>
         <li>Cost Savings $= ₹ 5,000$[cite: 1]</li>
-        <li>Depreciation on new system $= \frac{50,000 - 1,000}{5} = ₹ 9,800$[cite: 1]</li>
-        <li>Depreciation on old system $= \frac{25,000}{10} = ₹ 2,500$[cite: 1]</li>
+        <li>Depreciation on new system $= \\frac{50,000 - 1,000}{5} = ₹ 9,800$[cite: 1]</li>
+        <li>Depreciation on old system $= \\frac{25,000}{10} = ₹ 2,500$[cite: 1]</li>
         <li>Incremental Depreciation $= ₹ 9,800 - ₹ 2,500 = ₹ 7,300$[cite: 1]</li>
-        <li>$$\Delta \text{CFAT} = [(\Delta\text{Sales} + \Delta\text{Savings}) - \Delta\text{Dep.}](1 - T) + \Delta\text{Dep.}$$[cite: 1]</li>
-        <li>$$\Delta \text{CFAT} = [(10,000 + 5,000) - 7,300](1 - 0.30) + 7,300 = [7,700 \times 0.70] + 7,300 = 5,390 + 7,300 = \mathbf{₹ 12,690}$$[cite: 1]</li>
+        <li>$$\\Delta \\text{CFAT} = [(\\Delta\\text{Sales} + \\Delta\\text{Savings}) - \\Delta\\text{Dep.}](1 - T) + \\Delta\\text{Dep.}$$[cite: 1]</li>
+        <li>$$\\Delta \\text{CFAT} = [(10,000 + 5,000) - 7,300](1 - 0.30) + 7,300 = [7,700 \\times 0.70] + 7,300 = 5,390 + 7,300 = \\mathbf{₹ 12,690}$$[cite: 1]</li>
       </ul>
 
       <h4>Step III: Present Value of Inflows and Salvage Value</h4>
-      <p>$$\text{PV of Inflows} = (₹ 12,690 \times \text{PVIFA}_{10\%, 5}) + (₹ 1,000 \times \text{PVIF}_{10\%, 5}) = (12,690 \times 3.791) + (1,000 \times 0.621) = 48,108 + 621 \approx \mathbf{₹ 48,723}$$[cite: 1]</p>
+      <p>$$\\text{PV of Inflows} = (₹ 12,690 \\times \\text{PVIFA}_{10\\%, 5}) + (₹ 1,000 \\times \\text{PVIF}_{10\\%, 5}) = (12,690 \\times 3.791) + (1,000 \\times 0.621) = 48,108 + 621 \\approx \\mathbf{₹ 48,723}$$[cite: 1]</p>
 
       <h4>Step IV: Net Present Value</h4>
-      <p>$$\text{NPV} = ₹ 48,723 - ₹ 42,750 = \mathbf{+₹ 5,973}$$[cite: 1]</p>
+      <p>$$\\text{NPV} = ₹ 48,723 - ₹ 42,750 = \\mathbf{+₹ 5,973}$$[cite: 1]</p>
       <p><strong>Decision:</strong> Since the NPV is positive, the proposal to replace the computer system should be accepted[cite: 1].</p>
     `
   },
@@ -2802,18 +2802,18 @@ const icaibookData = [
       <h4>1. Present Value of Outflows for Each Retention Period</h4>
       <ul>
         <li><strong>If kept for 1 Year:</strong>
-          $$\text{PV} = -4,00,000 - (1,80,000 \times 0.909) + (2,80,000 \times 0.909) = -4,00,000 + 90,900 = \mathbf{-₹ 3,09,100}$$[cite: 1]
+          $$\\text{PV} = -4,00,000 - (1,80,000 \\times 0.909) + (2,80,000 \\times 0.909) = -4,00,000 + 90,900 = \\mathbf{-₹ 3,09,100}$$[cite: 1]
         </li>
         <li><strong>If kept for 2 Years:</strong>
-          $$\text{PV} = -4,00,000 - (1,80,000 \times 0.909) - (2,10,000 \times 0.826) + (2,30,000 \times 0.826) = -4,00,000 - 1,63,620 + 16,520 = \mathbf{-₹ 5,47,100}$$[cite: 1]
+          $$\\text{PV} = -4,00,000 - (1,80,000 \\times 0.909) - (2,10,000 \\times 0.826) + (2,30,000 \\times 0.826) = -4,00,000 - 1,63,620 + 16,520 = \\mathbf{-₹ 5,47,100}$$[cite: 1]
         </li>
         <li><strong>If kept for 3 Years:</strong>
-          $$\text{PV} = -4,00,000 - (1,80,000 \times 0.909) - (2,10,000 \times 0.826) - (2,38,000 \times 0.751) + (1,68,000 \times 0.751) = \mathbf{-₹ 7,89,650}$$[cite: 1]
+          $$\\text{PV} = -4,00,000 - (1,80,000 \\times 0.909) - (2,10,000 \\times 0.826) - (2,38,000 \\times 0.751) + (1,68,000 \\times 0.751) = \\mathbf{-₹ 7,89,650}$$[cite: 1]
         </li>
       </ul>
 
       <h4>2. Equivalent Annual Cost (EAC) Calculation</h4>
-      <p>$$\text{EAC} = \frac{\text{PV of Cash Outflows}}{\text{PVAF}(10\%, n)}$$[cite: 1]</p>
+      <p>$$\\text{EAC} = \\frac{\\text{PV of Cash Outflows}}{\\text{PVAF}(10\\%, n)}$$[cite: 1]</p>
       <div style="overflow-x:auto;">
         <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
           <thead>
@@ -3011,13 +3011,13 @@ const icaibookData = [
           </tbody>
         </table>
       </div>
-      <p>Calculate the <strong>Exponential Moving Average (EMA)</strong> of the Sensex during the above period[cite: 2]. The previous day's exponential moving average of the Sensex can be assumed as <strong>15,000</strong>[cite: 2]. The value of the exponent ($\alpha$) for a 31-day EMA is <strong>0.062</strong>[cite: 2].</p>
+      <p>Calculate the <strong>Exponential Moving Average (EMA)</strong> of the Sensex during the above period[cite: 2]. The previous day's exponential moving average of the Sensex can be assumed as <strong>15,000</strong>[cite: 2]. The value of the exponent ($\\alpha$) for a 31-day EMA is <strong>0.062</strong>[cite: 2].</p>
       <p>Give a detailed analysis on the basis of your calculations[cite: 2].</p>
     `,
     solution_html: `
       <h4>1. Calculation Formula</h4>
-      <p>$$\text{EMA}_t = \text{EMA}_{t-1} + \alpha \times (\text{Closing Price}_t - \text{EMA}_{t-1})$$[cite: 2]</p>
-      <p>Where Exponent ($\alpha$) = <strong>0.062</strong>, and Initial $\text{EMA}_0 = \mathbf{15,000}$[cite: 2].</p>
+      <p>$$\\text{EMA}_t = \\text{EMA}_{t-1} + \\alpha \\times (\\text{Closing Price}_t - \\text{EMA}_{t-1})$$[cite: 2]</p>
+      <p>Where Exponent ($\\alpha$) = <strong>0.062</strong>, and Initial $\\text{EMA}_0 = \\mathbf{15,000}$[cite: 2].</p>
 
       <h4>2. Computation Schedule</h4>
       <div style="overflow-x:auto;">
@@ -3183,27 +3183,27 @@ const icaibookData = [
       <ul>
         <li>Number of positive price changes ($n_1$) = <strong>11</strong>[cite: 2]</li>
         <li>Number of negative price changes ($n_2$) = <strong>8</strong>[cite: 2]</li>
-        <li>Total observations ($n_1 + n_2$) = $11 + 8 = \mathbf{19}$[cite: 2]</li>
+        <li>Total observations ($n_1 + n_2$) = $11 + 8 = \\mathbf{19}$[cite: 2]</li>
         <li>Total number of runs observed ($r$) = <strong>8</strong>[cite: 2]</li>
-        <li>Degrees of freedom ($n - 1$) = $19 - 1 = \mathbf{18}$[cite: 2]</li>
+        <li>Degrees of freedom ($n - 1$) = $19 - 1 = \\mathbf{18}$[cite: 2]</li>
       </ul>
 
-      <h4>3. Expected Mean of Runs ($\mu_r$)</h4>
-      <p>$$\mu_r = \frac{2n_1n_2}{n_1 + n_2} + 1 = \frac{2 \times 11 \times 8}{11 + 8} + 1 = \frac{176}{19} + 1 = 9.263 + 1 = \mathbf{10.26}$$[cite: 2]</p>
+      <h4>3. Expected Mean of Runs ($\\mu_r$)</h4>
+      <p>$$\\mu_r = \\frac{2n_1n_2}{n_1 + n_2} + 1 = \\frac{2 \\times 11 \\times 8}{11 + 8} + 1 = \\frac{176}{19} + 1 = 9.263 + 1 = \\mathbf{10.26}$$[cite: 2]</p>
 
-      <h4>4. Standard Deviation of Runs ($\hat{\sigma}_r$)</h4>
-      <p>$$\hat{\sigma}_r = \sqrt{\frac{2n_1n_2(2n_1n_2 - n_1 - n_2)}{(n_1 + n_2)^2(n_1 + n_2 - 1)}}$$[cite: 2]</p>
-      <p>$$\hat{\sigma}_r = \sqrt{\frac{176 \times (176 - 19)}{(19)^2 \times (18)}} = \sqrt{\frac{176 \times 157}{361 \times 18}} = \sqrt{\frac{27,632}{6,498}} = \sqrt{4.2524} = \mathbf{2.06}$$[cite: 2]</p>
+      <h4>4. Standard Deviation of Runs ($\\hat{\\sigma}_r$)</h4>
+      <p>$$\\hat{\\sigma}_r = \\sqrt{\\frac{2n_1n_2(2n_1n_2 - n_1 - n_2)}{(n_1 + n_2)^2(n_1 + n_2 - 1)}}$$[cite: 2]</p>
+      <p>$$\\hat{\\sigma}_r = \\sqrt{\\frac{176 \\times (176 - 19)}{(19)^2 \\times (18)}} = \\sqrt{\\frac{176 \\times 157}{361 \\times 18}} = \\sqrt{\\frac{27,632}{6,498}} = \\sqrt{4.2524} = \\mathbf{2.06}$$[cite: 2]</p>
 
       <h4>5. Hypothesis Testing (Two-Tailed Limits)</h4>
       <ul>
         <li><strong>At 5% Level of Significance ($t = 2.101$):</strong>
-          <p>$$\text{Lower Limit} = \mu_r - (t \times \hat{\sigma}_r) = 10.26 - (2.101 \times 2.06) = 10.26 - 4.328 = \mathbf{5.932}$$[cite: 2]</p>
-          <p>$$\text{Upper Limit} = \mu_r + (t \times \hat{\sigma}_r) = 10.26 + (2.101 \times 2.06) = 10.26 + 4.328 = \mathbf{14.588}$$[cite: 2]</p>
+          <p>$$\\text{Lower Limit} = \\mu_r - (t \\times \\hat{\\sigma}_r) = 10.26 - (2.101 \\times 2.06) = 10.26 - 4.328 = \\mathbf{5.932}$$[cite: 2]</p>
+          <p>$$\\text{Upper Limit} = \\mu_r + (t \\times \\hat{\\sigma}_r) = 10.26 + (2.101 \\times 2.06) = 10.26 + 4.328 = \\mathbf{14.588}$$[cite: 2]</p>
         </li>
         <li><strong>At 10% Level of Significance ($t = 1.734$):</strong>
-          <p>$$\text{Lower Limit} = \mu_r - (t \times \hat{\sigma}_r) = 10.26 - (1.734 \times 2.06) = 10.26 - 3.572 = \mathbf{6.688}$$[cite: 2]</p>
-          <p>$$\text{Upper Limit} = \mu_r + (t \times \hat{\sigma}_r) = 10.26 + (1.734 \times 2.06) = 10.26 + 3.572 = \mathbf{13.832}$$[cite: 2]</p>
+          <p>$$\\text{Lower Limit} = \\mu_r - (t \\times \\hat{\\sigma}_r) = 10.26 - (1.734 \\times 2.06) = 10.26 - 3.572 = \\mathbf{6.688}$$[cite: 2]</p>
+          <p>$$\\text{Upper Limit} = \\mu_r + (t \\times \\hat{\\sigma}_r) = 10.26 + (1.734 \\times 2.06) = 10.26 + 3.572 = \\mathbf{13.832}$$[cite: 2]</p>
         </li>
       </ul>
 
@@ -3261,19 +3261,19 @@ const icaibookData = [
     solution_html: `
       <h4>1. Fundamental Financial Parameters</h4>
       <ul>
-        <li>$\text{EPS} = \text{Book Value} \times \text{ROE} = ₹ 137.80 \times 15\% = \mathbf{₹ 20.67}$[cite: 3]</li>
-        <li>Retention Ratio ($b$) $= 60\% = 0.60 \implies \text{Dividend Payout Ratio} (1 - b) = 40\%$[cite: 3]</li>
-        <li>$\text{Dividend per Share } (D_1) = ₹ 20.67 \times 40\% = \mathbf{₹ 8.268 \approx ₹ 8.27}$[cite: 3]</li>
-        <li>Growth Rate ($g$) $= b \times r = 0.60 \times 15\% = \mathbf{9\%} = 0.09$[cite: 3]</li>
-        <li>Opportunity Cost of Capital ($K_e$) $= 18\% = 0.18$[cite: 3]</li>
+        <li>$\\text{EPS} = \\text{Book Value} \\times \\text{ROE} = ₹ 137.80 \\times 15\\% = \\mathbf{₹ 20.67}$[cite: 3]</li>
+        <li>Retention Ratio ($b$) $= 60\\% = 0.60 \\implies \\text{Dividend Payout Ratio} (1 - b) = 40\\%$[cite: 3]</li>
+        <li>$\\text{Dividend per Share } (D_1) = ₹ 20.67 \\times 40\\% = \\mathbf{₹ 8.268 \\approx ₹ 8.27}$[cite: 3]</li>
+        <li>Growth Rate ($g$) $= b \\times r = 0.60 \\times 15\\% = \\mathbf{9\\%} = 0.09$[cite: 3]</li>
+        <li>Opportunity Cost of Capital ($K_e$) $= 18\\% = 0.18$[cite: 3]</li>
       </ul>
 
       <h4>2. Valuation as per Dividend Growth Model (Gordon's Model)</h4>
-      <p>$$P_0 = \frac{D_1}{K_e - g} = \frac{₹ 8.27}{0.18 - 0.09} = \frac{₹ 8.27}{0.09} = \mathbf{₹ 91.89}$$[cite: 3]</p>
+      <p>$$P_0 = \\frac{D_1}{K_e - g} = \\frac{₹ 8.27}{0.18 - 0.09} = \\frac{₹ 8.27}{0.09} = \\mathbf{₹ 91.89}$$[cite: 3]</p>
 
       <h4>3. Valuation as per Walter's Approach</h4>
-      <p>$$V_c = \frac{D + \frac{R_a}{R_c}(E - D)}{R_c}$$[cite: 3]</p>
-      <p>$$V_c = \frac{8.27 + \frac{0.15}{0.18}(20.67 - 8.27)}{0.18} = \frac{8.27 + (0.8333 \times 12.40)}{0.18} = \frac{8.27 + 10.333}{0.18} = \frac{18.603}{0.18} = \mathbf{₹ 103.35}$$[cite: 3]</p>
+      <p>$$V_c = \\frac{D + \\frac{R_a}{R_c}(E - D)}{R_c}$$[cite: 3]</p>
+      <p>$$V_c = \\frac{8.27 + \\frac{0.15}{0.18}(20.67 - 8.27)}{0.18} = \\frac{8.27 + (0.8333 \\times 12.40)}{0.18} = \\frac{8.27 + 10.333}{0.18} = \\frac{18.603}{0.18} = \\mathbf{₹ 103.35}$$[cite: 3]</p>
     `
   },
   {
@@ -3295,24 +3295,24 @@ const icaibookData = [
     solution_html: `
       <h4>(i) One Right Share for Every Two Shares Held</h4>
       <ul>
-        <li>Number of new rights shares issued $= \frac{10,00,000}{2} = 5,00,000 \text{ shares}$[cite: 3]</li>
-        <li>Subscription Price ($S$) $= \frac{₹ 20,00,000}{5,00,000} = \mathbf{₹ 4 \text{ per share}}$[cite: 3]</li>
-        <li>$$\text{Ex-Right Price } (P_e) = \frac{(10,00,000 \times ₹ 13) + ₹ 20,00,000}{10,00,000 + 5,00,000} = \frac{₹ 1,50,00,000}{15,00,000} = \mathbf{₹ 10}$$[cite: 3]</li>
-        <li>$\text{Value of a Right} = P_e - S = ₹ 10 - ₹ 4 = \mathbf{₹ 6}$[cite: 3]</li>
-        <li>$\text{Value of Right on per-existing-share basis} = \frac{₹ 6}{2} = \mathbf{₹ 3}$[cite: 3]</li>
+        <li>Number of new rights shares issued $= \\frac{10,00,000}{2} = 5,00,000 \\text{ shares}$[cite: 3]</li>
+        <li>Subscription Price ($S$) $= \\frac{₹ 20,00,000}{5,00,000} = \\mathbf{₹ 4 \\text{ per share}}$[cite: 3]</li>
+        <li>$$\\text{Ex-Right Price } (P_e) = \\frac{(10,00,000 \\times ₹ 13) + ₹ 20,00,000}{10,00,000 + 5,00,000} = \\frac{₹ 1,50,00,000}{15,00,000} = \\mathbf{₹ 10}$$[cite: 3]</li>
+        <li>$\\text{Value of a Right} = P_e - S = ₹ 10 - ₹ 4 = \\mathbf{₹ 6}$[cite: 3]</li>
+        <li>$\\text{Value of Right on per-existing-share basis} = \\frac{₹ 6}{2} = \\mathbf{₹ 3}$[cite: 3]</li>
       </ul>
 
       <h4>(ii) One Right Share for Every Four Shares Held</h4>
       <ul>
-        <li>Number of new rights shares issued $= \frac{10,00,000}{4} = 2,50,000 \text{ shares}$[cite: 3]</li>
-        <li>Subscription Price ($S$) $= \frac{₹ 20,00,000}{2,50,000} = \mathbf{₹ 8 \text{ per share}}$[cite: 3]</li>
-        <li>$$\text{Ex-Right Price } (P_e) = \frac{(10,00,000 \times ₹ 13) + ₹ 20,00,000}{10,00,000 + 2,50,000} = \frac{₹ 1,50,00,000}{12,50,000} = \mathbf{₹ 12}$$[cite: 3]</li>
-        <li>$\text{Value of a Right} = P_e - S = ₹ 12 - ₹ 8 = \mathbf{₹ 4}$[cite: 3]</li>
-        <li>$\text{Value of Right on per-existing-share basis} = \frac{₹ 4}{4} = \mathbf{₹ 1}$[cite: 3]</li>
+        <li>Number of new rights shares issued $= \\frac{10,00,000}{4} = 2,50,000 \\text{ shares}$[cite: 3]</li>
+        <li>Subscription Price ($S$) $= \\frac{₹ 20,00,000}{2,50,000} = \\mathbf{₹ 8 \\text{ per share}}$[cite: 3]</li>
+        <li>$$\\text{Ex-Right Price } (P_e) = \\frac{(10,00,000 \\times ₹ 13) + ₹ 20,00,000}{10,00,000 + 2,50,000} = \\frac{₹ 1,50,00,000}{12,50,000} = \\mathbf{₹ 12}$$[cite: 3]</li>
+        <li>$\\text{Value of a Right} = P_e - S = ₹ 12 - ₹ 8 = \\mathbf{₹ 4}$[cite: 3]</li>
+        <li>$\\text{Value of Right on per-existing-share basis} = \\frac{₹ 4}{4} = \\mathbf{₹ 1}$[cite: 3]</li>
       </ul>
 
       <h4>(iii) Impact on Shareholders' Wealth (Holding 100 Shares)</h4>
-      <p>Wealth before rights issue: $100 \times ₹ 13 = \mathbf{₹ 1,300}$[cite: 3].</p>
+      <p>Wealth before rights issue: $100 \\times ₹ 13 = \\mathbf{₹ 1,300}$[cite: 3].</p>
       <ul>
         <li><strong>Under Option (i):</strong>
           <br />Value of post-rights holding (150 shares &times; ₹ 10) = ₹ 1,500[cite: 3]
@@ -3343,18 +3343,18 @@ const icaibookData = [
       <h4>1. Dividend Projections</h4>
       <ul>
         <li>$D_0 = ₹ 4.00$[cite: 3]</li>
-        <li>$D_1 = ₹ 4.00 \times 1.20 = \mathbf{₹ 4.80}$[cite: 3]</li>
-        <li>$D_2 = ₹ 4.80 \times 1.20 = \mathbf{₹ 5.76}$[cite: 3]</li>
-        <li>$D_3 = ₹ 5.76 \times 1.10 = \mathbf{₹ 6.336}$[cite: 3]</li>
+        <li>$D_1 = ₹ 4.00 \\times 1.20 = \\mathbf{₹ 4.80}$[cite: 3]</li>
+        <li>$D_2 = ₹ 4.80 \\times 1.20 = \\mathbf{₹ 5.76}$[cite: 3]</li>
+        <li>$D_3 = ₹ 5.76 \\times 1.10 = \\mathbf{₹ 6.336}$[cite: 3]</li>
       </ul>
 
       <h4>2. Terminal Price at Year 2 ($P_2$)</h4>
-      <p>$$P_2 = \frac{D_3}{K_e - g_2} = \frac{₹ 6.336}{0.15 - 0.10} = \frac{₹ 6.336}{0.05} = \mathbf{₹ 126.72}$$[cite: 3]</p>
+      <p>$$P_2 = \\frac{D_3}{K_e - g_2} = \\frac{₹ 6.336}{0.15 - 0.10} = \\frac{₹ 6.336}{0.05} = \\mathbf{₹ 126.72}$$[cite: 3]</p>
 
       <h4>3. Current Intrinsic Price ($P_0$)</h4>
-      <p>$$P_0 = (D_1 \times \text{PVIF}_{15\%, 1}) + (D_2 \times \text{PVIF}_{15\%, 2}) + (P_2 \times \text{PVIF}_{15\%, 2})$$[cite: 3]</p>
-      <p>$$P_0 = (4.80 \times 0.8696) + (5.76 \times 0.7561) + (126.72 \times 0.7561)$$[cite: 3]</p>
-      <p>$$P_0 = 4.174 + 4.355 + 95.813 = \mathbf{₹ 104.34}$$[cite: 3]</p>
+      <p>$$P_0 = (D_1 \\times \\text{PVIF}_{15\\%, 1}) + (D_2 \\times \\text{PVIF}_{15\\%, 2}) + (P_2 \\times \\text{PVIF}_{15\\%, 2})$$[cite: 3]</p>
+      <p>$$P_0 = (4.80 \\times 0.8696) + (5.76 \\times 0.7561) + (126.72 \\times 0.7561)$$[cite: 3]</p>
+      <p>$$P_0 = 4.174 + 4.355 + 95.813 = \\mathbf{₹ 104.34}$$[cite: 3]</p>
     `
   },
   {
@@ -3378,18 +3378,18 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(i) Present Value of Stock (Gordon Growth Model)</h4>
-      <p>$$V_0 = \frac{D_0(1+g)}{K_e - g} = \frac{₹ 2.50 \times 1.02}{0.105 - 0.02} = \frac{₹ 2.55}{0.085} = \mathbf{₹ 30.00}$$[cite: 3]</p>
+      <p>$$V_0 = \\frac{D_0(1+g)}{K_e - g} = \\frac{₹ 2.50 \\times 1.02}{0.105 - 0.02} = \\frac{₹ 2.55}{0.085} = \\mathbf{₹ 30.00}$$[cite: 3]</p>
 
       <h4>(ii) Overvaluation Assessment</h4>
       <p><strong>A. Value under PE Multiple Approach:</strong></p>
       <ul>
-        <li>Theoretical PE Multiple $= \frac{1}{\text{ROE}} = \frac{1}{0.09} = 11.11 \text{ times}$[cite: 3]</li>
-        <li>Estimated Fair Price $= \text{EPS} \times \text{PE} = ₹ 2.25 \times 11.11 = \mathbf{₹ 25.00}$[cite: 3]</li>
+        <li>Theoretical PE Multiple $= \\frac{1}{\\text{ROE}} = \\frac{1}{0.09} = 11.11 \\text{ times}$[cite: 3]</li>
+        <li>Estimated Fair Price $= \\text{EPS} \\times \\text{PE} = ₹ 2.25 \\times 11.11 = \\mathbf{₹ 25.00}$[cite: 3]</li>
         <li><em>Conclusion:</em> Since the current market price (₹ 35.00) exceeds its fair value (₹ 25.00), the stock is <strong>overvalued</strong>[cite: 3].</li>
       </ul>
 
       <p><strong>B. Value under Earnings Growth Model:</strong></p>
-      <p>$$P_0 = \frac{\text{EPS}_1}{K_e - g} = \frac{\text{EPS}_0(1+g)}{\text{ROE} - g} = \frac{₹ 2.25 \times 1.02}{0.09 - 0.02} = \frac{₹ 2.295}{0.07} = \mathbf{₹ 32.79}$$[cite: 3]</p>
+      <p>$$P_0 = \\frac{\\text{EPS}_1}{K_e - g} = \\frac{\\text{EPS}_0(1+g)}{\\text{ROE} - g} = \\frac{₹ 2.25 \\times 1.02}{0.09 - 0.02} = \\frac{₹ 2.295}{0.07} = \\mathbf{₹ 32.79}$$[cite: 3]</p>
       <p><em>Conclusion:</em> Since the current market price of ₹ 35.00 is higher than ₹ 32.79, the stock is <strong>overvalued</strong>[cite: 3].</p>
     `
   },
@@ -3413,18 +3413,18 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Maximum Price for 3-Year Holding Period with Target Price ₹ 360</h4>
       <ul>
-        <li>$D_1 = 14.00 \times 1.09 = \mathbf{₹ 15.26}$[cite: 3]</li>
-        <li>$D_2 = 15.26 \times 1.09 = \mathbf{₹ 16.63}$[cite: 3]</li>
-        <li>$D_3 = 16.63 \times 1.09 = \mathbf{₹ 18.13}$[cite: 3]</li>
+        <li>$D_1 = 14.00 \\times 1.09 = \\mathbf{₹ 15.26}$[cite: 3]</li>
+        <li>$D_2 = 15.26 \\times 1.09 = \\mathbf{₹ 16.63}$[cite: 3]</li>
+        <li>$D_3 = 16.63 \\times 1.09 = \\mathbf{₹ 18.13}$[cite: 3]</li>
       </ul>
-      <p>$$P_0 = (15.26 \times 0.885) + (16.63 \times 0.783) + (18.13 \times 0.693) + (360 \times 0.693)$$[cite: 3]</p>
-      <p>$$P_0 = 13.50 + 13.02 + 12.56 + 249.48 = \mathbf{₹ 288.56}$$[cite: 3]</p>
+      <p>$$P_0 = (15.26 \\times 0.885) + (16.63 \\times 0.783) + (18.13 \\times 0.693) + (360 \\times 0.693)$$[cite: 3]</p>
+      <p>$$P_0 = 13.50 + 13.02 + 12.56 + 249.48 = \\mathbf{₹ 288.56}$$[cite: 3]</p>
 
       <h4>(ii) Maximum Price if 9% Growth is Maintained Indefinitely</h4>
-      <p>$$P_0 = \frac{D_1}{K_e - g} = \frac{₹ 15.26}{0.13 - 0.09} = \frac{₹ 15.26}{0.04} = \mathbf{₹ 381.50}$$[cite: 3]</p>
+      <p>$$P_0 = \\frac{D_1}{K_e - g} = \\frac{₹ 15.26}{0.13 - 0.09} = \\frac{₹ 15.26}{0.04} = \\mathbf{₹ 381.50}$$[cite: 3]</p>
 
       <h4>(iii) Expected Share Price at the End of Year 3 ($P_3$)</h4>
-      <p>$$P_3 = \frac{D_4}{K_e - g} = \frac{D_3(1+g)}{K_e - g} = \frac{₹ 18.13 \times 1.09}{0.13 - 0.09} = \frac{₹ 19.76}{0.04} = \mathbf{₹ 494.00}$$[cite: 3]</p>
+      <p>$$P_3 = \\frac{D_4}{K_e - g} = \\frac{D_3(1+g)}{K_e - g} = \\frac{₹ 18.13 \\times 1.09}{0.13 - 0.09} = \\frac{₹ 19.76}{0.04} = \\mathbf{₹ 494.00}$$[cite: 3]</p>
     `
   },
   {
@@ -3443,27 +3443,27 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(i) Constant Growth Model</h4>
-      <p>$$K_e = \frac{D_1}{P_0} + g = \frac{₹ 1.00(1 + 0.12)}{₹ 20.00} + 0.12 = \frac{₹ 1.12}{₹ 20.00} + 0.12 = 0.056 + 0.12 = \mathbf{17.60\%}$$[cite: 3]</p>
+      <p>$$K_e = \\frac{D_1}{P_0} + g = \\frac{₹ 1.00(1 + 0.12)}{₹ 20.00} + 0.12 = \\frac{₹ 1.12}{₹ 20.00} + 0.12 = 0.056 + 0.12 = \\mathbf{17.60\\%}$$[cite: 3]</p>
 
       <h4>(ii) Two-Stage Supernormal Growth Model</h4>
-      <p>Dividend schedule ($D_0 = ₹ 1.00, g_s = 20\%$ for 5 years):</p>
+      <p>Dividend schedule ($D_0 = ₹ 1.00, g_s = 20\\%$ for 5 years):</p>
       <ul>
-        <li>$D_1 = ₹ 1.20; \quad D_2 = ₹ 1.44; \quad D_3 = ₹ 1.73; \quad D_4 = ₹ 2.07; \quad D_5 = ₹ 2.49$[cite: 3]</li>
-        <li>$D_6 = D_5(1 + 0.10) = 2.49 \times 1.10 = ₹ 2.74$[cite: 3]</li>
+        <li>$D_1 = ₹ 1.20; \\quad D_2 = ₹ 1.44; \\quad D_3 = ₹ 1.73; \\quad D_4 = ₹ 2.07; \\quad D_5 = ₹ 2.49$[cite: 3]</li>
+        <li>$D_6 = D_5(1 + 0.10) = 2.49 \\times 1.10 = ₹ 2.74$[cite: 3]</li>
       </ul>
       <p>We solve by trial and error to equate PV of inflows to $P_0 = ₹ 20.00$[cite: 3]:</p>
       <ul>
-        <li><strong>Trial at $K_e = 18\%$:</strong>
-          <br />$$\text{PV} = 1.20(0.8475) + 1.44(0.7182) + 1.73(0.6086) + 2.07(0.5158) + 2.49(0.4371) + \left[\frac{2.74}{0.18 - 0.10} \times 0.4371\right]$$[cite: 3]
-          <br />$$\text{PV} = 1.017 + 1.034 + 1.053 + 1.068 + 1.088 + 14.971 = ₹ 20.23$$[cite: 3]
+        <li><strong>Trial at $K_e = 18\\%$:</strong>
+          <br />$$\\text{PV} = 1.20(0.8475) + 1.44(0.7182) + 1.73(0.6086) + 2.07(0.5158) + 2.49(0.4371) + \\left[\\frac{2.74}{0.18 - 0.10} \\times 0.4371\\right]$$[cite: 3]
+          <br />$$\\text{PV} = 1.017 + 1.034 + 1.053 + 1.068 + 1.088 + 14.971 = ₹ 20.23$$[cite: 3]
         </li>
-        <li><strong>Trial at $K_e = 19\%$:</strong>
-          <br />$$\text{PV} = 1.20(0.8403) + 1.44(0.7061) + 1.73(0.5934) + 2.07(0.4986) + 2.49(0.4190) + \left[\frac{2.74}{0.19 - 0.10} \times 0.4190\right]$$[cite: 3]
-          <br />$$\text{PV} = 1.008 + 1.017 + 1.027 + 1.032 + 1.043 + 12.755 = ₹ 17.89$$[cite: 3]
+        <li><strong>Trial at $K_e = 19\\%$:</strong>
+          <br />$$\\text{PV} = 1.20(0.8403) + 1.44(0.7061) + 1.73(0.5934) + 2.07(0.4986) + 2.49(0.4190) + \\left[\\frac{2.74}{0.19 - 0.10} \\times 0.4190\\right]$$[cite: 3]
+          <br />$$\\text{PV} = 1.008 + 1.017 + 1.027 + 1.032 + 1.043 + 12.755 = ₹ 17.89$$[cite: 3]
         </li>
       </ul>
       <p>By interpolation[cite: 3]:</p>
-      <p>$$K_e = 18\% + \left[\frac{₹ 20.23 - ₹ 20.00}{₹ 20.23 - ₹ 17.89}\right] \times (19\% - 18\%) = 18\% + \left[\frac{0.23}{2.34}\right] \times 1\% = 18\% + 0.10\% = \mathbf{18.10\%}$$[cite: 3]</p>
+      <p>$$K_e = 18\\% + \\left[\\frac{₹ 20.23 - ₹ 20.00}{₹ 20.23 - ₹ 17.89}\\right] \\times (19\\% - 18\\%) = 18\\% + \\left[\\frac{0.23}{2.34}\\right] \\times 1\\% = 18\\% + 0.10\\% = \\mathbf{18.10\\%}$$[cite: 3]</p>
     `
   },
   {
@@ -3487,33 +3487,33 @@ const icaibookData = [
       <h4>1. Profit Distribution Schedule</h4>
       <ul>
         <li>PBIT $= ₹ 32,00,000$[cite: 3]</li>
-        <li>Less: Debenture Interest ($₹ 64,00,000 \times 12\%$) $= ₹ 7,68,000$[cite: 3]</li>
-        <li>PBT $= ₹ 24,32,000$; Less: Tax @ 35% $= ₹ 8,51,200 \implies \text{PAT} = ₹ 15,80,800$[cite: 3]</li>
-        <li>Less: Preference Dividend ($₹ 40,00,000 \times 8\%$) $= ₹ 3,20,000$[cite: 3]</li>
-        <li>Less: Equity Dividend Paid ($₹ 80,00,000 \times 8\%$) $= ₹ 6,40,000$[cite: 3]</li>
-        <li>Undistributed Profits (Retained) $= ₹ 15,80,800 - 9,60,000 = \mathbf{₹ 6,20,800}$[cite: 3]</li>
+        <li>Less: Debenture Interest ($₹ 64,00,000 \\times 12\\%$) $= ₹ 7,68,000$[cite: 3]</li>
+        <li>PBT $= ₹ 24,32,000$; Less: Tax @ 35% $= ₹ 8,51,200 \\implies \\text{PAT} = ₹ 15,80,800$[cite: 3]</li>
+        <li>Less: Preference Dividend ($₹ 40,00,000 \\times 8\\%$) $= ₹ 3,20,000$[cite: 3]</li>
+        <li>Less: Equity Dividend Paid ($₹ 80,00,000 \\times 8\\%$) $= ₹ 6,40,000$[cite: 3]</li>
+        <li>Undistributed Profits (Retained) $= ₹ 15,80,800 - 9,60,000 = \\mathbf{₹ 6,20,800}$[cite: 3]</li>
       </ul>
 
       <h4>2. Ratio Analysis and Risk Premium</h4>
       <ul>
         <li><strong>Fixed Charges Coverage:</strong>
-          $$\frac{\text{PAT} + \text{Debenture Interest}}{\text{Debenture Interest} + \text{Pref. Dividend}} = \frac{15,80,800 + 7,68,000}{7,68,000 + 3,20,000} = \frac{23,48,800}{10,88,000} = \mathbf{2.16 \text{ times}}$$[cite: 3]
-          $$\text{Risk Premium} = (3.00 - 2.16) \times 1\% = \mathbf{0.84\%}$$[cite: 3]
+          $$\\frac{\\text{PAT} + \\text{Debenture Interest}}{\\text{Debenture Interest} + \\text{Pref. Dividend}} = \\frac{15,80,800 + 7,68,000}{7,68,000 + 3,20,000} = \\frac{23,48,800}{10,88,000} = \\mathbf{2.16 \\text{ times}}$$[cite: 3]
+          $$\\text{Risk Premium} = (3.00 - 2.16) \\times 1\\% = \\mathbf{0.84\\%}$$[cite: 3]
         </li>
         <li><strong>Capital Gearing Ratio:</strong>
-          $$\frac{\text{Preference Capital} + \text{Debentures}}{\text{Equity Capital} + \text{Reserves}} = \frac{40,00,000 + 64,00,000}{80,00,000 + 32,00,000} = \frac{1,04,00,000}{1,12,00,000} = \mathbf{0.93}$$[cite: 3]
-          $$\text{Risk Premium} = (0.93 - 0.75) \times 2\% = \mathbf{0.36\%}$$[cite: 3]
+          $$\\frac{\\text{Preference Capital} + \\text{Debentures}}{\\text{Equity Capital} + \\text{Reserves}} = \\frac{40,00,000 + 64,00,000}{80,00,000 + 32,00,000} = \\frac{1,04,00,000}{1,12,00,000} = \\mathbf{0.93}$$[cite: 3]
+          $$\\text{Risk Premium} = (0.93 - 0.75) \\times 2\\% = \\mathbf{0.36\\%}$$[cite: 3]
         </li>
-        <li><strong>Expected Yield on Equity:</strong> $9.60\% + 0.84\% + 0.36\% = \mathbf{10.80\%}$[cite: 3]</li>
+        <li><strong>Expected Yield on Equity:</strong> $9.60\\% + 0.84\\% + 0.36\\% = \\mathbf{10.80\\%}$[cite: 3]</li>
       </ul>
 
       <h4>3. Actual Yield and Valuation</h4>
       <ul>
-        <li>Yield on Distributed Profits ($50\% \times ₹ 6,40,000$) $= ₹ 3,20,000$[cite: 3]</li>
-        <li>Yield on Undistributed Profits ($5\% \times ₹ 6,20,800$) $= ₹ 31,040$[cite: 3]</li>
-        <li>Total Yield $= ₹ 3,51,040 \implies \text{Actual Yield \%} = \frac{₹ 3,51,040}{₹ 80,00,000} \times 100 = \mathbf{4.388\% \approx 4.39\%}$[cite: 3]</li>
+        <li>Yield on Distributed Profits ($50\\% \\times ₹ 6,40,000$) $= ₹ 3,20,000$[cite: 3]</li>
+        <li>Yield on Undistributed Profits ($5\\% \\times ₹ 6,20,800$) $= ₹ 31,040$[cite: 3]</li>
+        <li>Total Yield $= ₹ 3,51,040 \\implies \\text{Actual Yield \\%} = \\frac{₹ 3,51,040}{₹ 80,00,000} \\times 100 = \\mathbf{4.388\\% \\approx 4.39\\%}$[cite: 3]</li>
       </ul>
-      <p>$$\text{Value per Share} = \frac{\text{Actual Yield}}{\text{Expected Yield}} \times \text{Paid-up Value} = \frac{4.39\%}{10.80\%} \times ₹ 100 = \mathbf{₹ 40.65}$$[cite: 3]</p>
+      <p>$$\\text{Value per Share} = \\frac{\\text{Actual Yield}}{\\text{Expected Yield}} \\times \\text{Paid-up Value} = \\frac{4.39\\%}{10.80\\%} \\times ₹ 100 = \\mathbf{₹ 40.65}$$[cite: 3]</p>
     `
   },
   {
@@ -3528,10 +3528,10 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Expected Rate of Return (CAPM)</h4>
-      <p>$$\text{ER} = R_f + \beta(R_m - R_f) = 8\% + 1.5(12\% - 8\%) = 8\% + 6\% = \mathbf{14\%}$$[cite: 3]</p>
+      <p>$$\\text{ER} = R_f + \\beta(R_m - R_f) = 8\\% + 1.5(12\\% - 8\\%) = 8\\% + 6\\% = \\mathbf{14\\%}$$[cite: 3]</p>
 
       <h4>2. Equilibrium Price per Share</h4>
-      <p>$$P_0 = \frac{D_1}{K_e - g} = \frac{D_0(1+g)}{K_e - g} = \frac{₹ 3(1 + 0.10)}{0.14 - 0.10} = \frac{₹ 3.30}{0.04} = \mathbf{₹ 82.50}$$[cite: 3]</p>
+      <p>$$P_0 = \\frac{D_1}{K_e - g} = \\frac{D_0(1+g)}{K_e - g} = \\frac{₹ 3(1 + 0.10)}{0.14 - 0.10} = \\frac{₹ 3.30}{0.04} = \\mathbf{₹ 82.50}$$[cite: 3]</p>
     `
   },
   {
@@ -3545,15 +3545,15 @@ const icaibookData = [
       <p>A Company pays a dividend of ₹ 2.00 per share with a growth rate of 7%[cite: 3]. Risk-free rate is 9% and market return is 13%[cite: 3]. Beta is 1.50, but is expected to rise to 1.75 due to a managerial decision[cite: 3]. Find the present as well as the revised value of the share[cite: 3].</p>
     `,
     solution_html: `
-      <h4>1. Present Value of the Share ($\beta = 1.50$)</h4>
-      <p>$$K_e = 9\% + 1.50(13\% - 9\%) = 9\% + 6\% = 15\%$$[cite: 3]</p>
-      <p>$$P_0 = \frac{D_1}{K_e - g} = \frac{₹ 2.00 \times 1.07}{0.15 - 0.07} = \frac{₹ 2.14}{0.08} = \mathbf{₹ 26.75}$$[cite: 3]</p>
-      <p><small><em>(Note: If $D_0 = ₹ 2.00$ is taken as $D_1$, $P_0 = \frac{2.00}{0.08} = ₹ 25.00$)</em></small>[cite: 3]</p>
+      <h4>1. Present Value of the Share ($\\beta = 1.50$)</h4>
+      <p>$$K_e = 9\\% + 1.50(13\\% - 9\\%) = 9\\% + 6\\% = 15\\%$$[cite: 3]</p>
+      <p>$$P_0 = \\frac{D_1}{K_e - g} = \\frac{₹ 2.00 \\times 1.07}{0.15 - 0.07} = \\frac{₹ 2.14}{0.08} = \\mathbf{₹ 26.75}$$[cite: 3]</p>
+      <p><small><em>(Note: If $D_0 = ₹ 2.00$ is taken as $D_1$, $P_0 = \\frac{2.00}{0.08} = ₹ 25.00$)</em></small>[cite: 3]</p>
 
-      <h4>2. Revised Value of the Share ($\beta = 1.75$)</h4>
-      <p>$$\text{Revised } K_e = 9\% + 1.75(13\% - 9\%) = 9\% + 7\% = 16\%$$[cite: 3]</p>
-      <p>$$P_0 = \frac{₹ 2.00 \times 1.07}{0.16 - 0.07} = \frac{₹ 2.14}{0.09} = \mathbf{₹ 23.78}$$[cite: 3]</p>
-      <p><small><em>(Note: If $D_1 = ₹ 2.00$, $P_0 = \frac{2.00}{0.09} = ₹ 22.22$)</em></small>[cite: 3]</p>
+      <h4>2. Revised Value of the Share ($\\beta = 1.75$)</h4>
+      <p>$$\\text{Revised } K_e = 9\\% + 1.75(13\\% - 9\\%) = 9\\% + 7\\% = 16\\%$$[cite: 3]</p>
+      <p>$$P_0 = \\frac{₹ 2.00 \\times 1.07}{0.16 - 0.07} = \\frac{₹ 2.14}{0.09} = \\mathbf{₹ 23.78}$$[cite: 3]</p>
+      <p><small><em>(Note: If $D_1 = ₹ 2.00$, $P_0 = \\frac{2.00}{0.09} = ₹ 22.22$)</em></small>[cite: 3]</p>
     `
   },
   {
@@ -3567,7 +3567,7 @@ const icaibookData = [
       <p>Calculate the value of a share from the following information[cite: 3]:</p>
       <ul>
         <li>PAT: ₹ 290 crores; Equity capital: ₹ 1,300 crores (Par ₹ 40 each)[cite: 3]</li>
-        <li>Debt ratio ($\text{Debt} / [\text{Debt} + \text{Equity}]$): 27%[cite: 3]</li>
+        <li>Debt ratio ($\\text{Debt} / [\\text{Debt} + \\text{Equity}]$): 27%[cite: 3]</li>
         <li>Long-run growth rate: 8%; Beta: 0.1; $R_f$: 8.7%; Market return: 10.3%[cite: 3]</li>
         <li>Per share data: Capital expenditure = ₹ 47, Depreciation = ₹ 39, Working capital change = ₹ 3.45[cite: 3]</li>
       </ul>
@@ -3575,16 +3575,16 @@ const icaibookData = [
     solution_html: `
       <h4>1. Per Share Earnings and Free Cash Flow to Equity (FCFE)</h4>
       <ul>
-        <li>Number of Shares $= \frac{₹ 1,300 \text{ crores}}{₹ 40} = 32.50 \text{ crores}$[cite: 3]</li>
-        <li>$\text{EPS} = \frac{₹ 290 \text{ crores}}{32.50 \text{ crores}} = \mathbf{₹ 8.923}$[cite: 3]</li>
+        <li>Number of Shares $= \\frac{₹ 1,300 \\text{ crores}}{₹ 40} = 32.50 \\text{ crores}$[cite: 3]</li>
+        <li>$\\text{EPS} = \\frac{₹ 290 \\text{ crores}}{32.50 \\text{ crores}} = \\mathbf{₹ 8.923}$[cite: 3]</li>
         <li>Equity financing proportion $= 1 - 0.27 = 0.73$[cite: 3]</li>
       </ul>
-      <p>$$\text{FCFE} = \text{EPS} - [(1 - \text{Debt Ratio}) \times (\text{Capex} - \text{Dep.})] - [(1 - \text{Debt Ratio}) \times \Delta\text{WC}]$$[cite: 3]</p>
-      <p>$$\text{FCFE} = 8.923 - [0.73 \times (47 - 39)] - [0.73 \times 3.45] = 8.923 - [5.84 + 2.5185] = \mathbf{₹ 0.5645}$$[cite: 3]</p>
+      <p>$$\\text{FCFE} = \\text{EPS} - [(1 - \\text{Debt Ratio}) \\times (\\text{Capex} - \\text{Dep.})] - [(1 - \\text{Debt Ratio}) \\times \\Delta\\text{WC}]$$[cite: 3]</p>
+      <p>$$\\text{FCFE} = 8.923 - [0.73 \\times (47 - 39)] - [0.73 \\times 3.45] = 8.923 - [5.84 + 2.5185] = \\mathbf{₹ 0.5645}$$[cite: 3]</p>
 
       <h4>2. Cost of Equity and Valuation</h4>
-      <p>$$K_e = 8.7\% + 0.1(10.3\% - 8.7\%) = 8.7\% + 0.16\% = \mathbf{8.86\%}$$[cite: 3]</p>
-      <p>$$P_0 = \frac{\text{FCFE}_0(1 + g)}{K_e - g} = \frac{0.5645 \times 1.08}{0.0886 - 0.08} = \frac{0.60966}{0.0086} = \mathbf{₹ 70.89}$$[cite: 3]</p>
+      <p>$$K_e = 8.7\\% + 0.1(10.3\\% - 8.7\\%) = 8.7\\% + 0.16\\% = \\mathbf{8.86\\%}$$[cite: 3]</p>
+      <p>$$P_0 = \\frac{\\text{FCFE}_0(1 + g)}{K_e - g} = \\frac{0.5645 \\times 1.08}{0.0886 - 0.08} = \\frac{0.60966}{0.0086} = \\mathbf{₹ 70.89}$$[cite: 3]</p>
     `
   },
   {
@@ -3605,21 +3605,21 @@ const icaibookData = [
     solution_html: `
       <h4>1. EPS, Dividend and Market Price</h4>
       <ul>
-        <li>$\text{EPS} = \frac{₹ 5}{0.45} = \mathbf{₹ 11.11}$[cite: 3]</li>
-        <li>$\text{Dividend per share } (D_1) = ₹ 11.11 \times 55\% = \mathbf{₹ 6.11}$[cite: 3]</li>
-        <li>$\text{Current Market Price } (P_0) = \text{EPS} \times \text{PE} = ₹ 11.11 \times 8 = \mathbf{₹ 88.88}$[cite: 3]</li>
+        <li>$\\text{EPS} = \\frac{₹ 5}{0.45} = \\mathbf{₹ 11.11}$[cite: 3]</li>
+        <li>$\\text{Dividend per share } (D_1) = ₹ 11.11 \\times 55\\% = \\mathbf{₹ 6.11}$[cite: 3]</li>
+        <li>$\\text{Current Market Price } (P_0) = \\text{EPS} \\times \\text{PE} = ₹ 11.11 \\times 8 = \\mathbf{₹ 88.88}$[cite: 3]</li>
       </ul>
 
       <h4>2. Sub-Questions</h4>
       <ul>
         <li><strong>(i) Cost of Equity:</strong>
-          $$K_e = \frac{D_1}{P_0} + g = \frac{₹ 6.11}{₹ 88.88} + 0.15 = 0.0687 + 0.15 = \mathbf{21.87\%}$$[cite: 3]
+          $$K_e = \\frac{D_1}{P_0} + g = \\frac{₹ 6.11}{₹ 88.88} + 0.15 = 0.0687 + 0.15 = \\mathbf{21.87\\%}$$[cite: 3]
         </li>
-        <li><strong>(ii) Market Price at $g = 16\%$:</strong>
-          $$P_0 = \frac{D_1}{K_e - g} = \frac{₹ 6.11}{0.2187 - 0.16} = \frac{₹ 6.11}{0.0587} = \mathbf{₹ 104.08}$$[cite: 3]
+        <li><strong>(ii) Market Price at $g = 16\\%$:</strong>
+          $$P_0 = \\frac{D_1}{K_e - g} = \\frac{₹ 6.11}{0.2187 - 0.16} = \\frac{₹ 6.11}{0.0587} = \\mathbf{₹ 104.08}$$[cite: 3]
         </li>
-        <li><strong>(iii) Market Price at $K_e = 20\%$ and $g = 19\%$:</strong>
-          $$P_0 = \frac{₹ 6.11}{0.20 - 0.19} = \frac{₹ 6.11}{0.01} = \mathbf{₹ 611.00}$$[cite: 3]
+        <li><strong>(iii) Market Price at $K_e = 20\\%$ and $g = 19\\%$:</strong>
+          $$P_0 = \\frac{₹ 6.11}{0.20 - 0.19} = \\frac{₹ 6.11}{0.01} = \\mathbf{₹ 611.00}$$[cite: 3]
         </li>
       </ul>
     `
@@ -3643,21 +3643,21 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Income Statement (₹ in lakhs)</h4>
       <ul>
-        <li>Turnover $= ₹ 600 \times 1.1 = \mathbf{₹ 660.00}$[cite: 3]</li>
-        <li>Operating Expenses (90%) $= ₹ 594.00 \implies \text{EBIT} = \mathbf{₹ 66.00}$[cite: 3]</li>
-        <li>Interest [$(125 + 50) \times 8\%$] $= ₹ 14.00 \implies \text{EBT} = \mathbf{₹ 52.00}$[cite: 3]</li>
-        <li>Tax @ 40% $= ₹ 20.80 \implies \text{EAT (PAT)} = \mathbf{₹ 31.20}$[cite: 3]</li>
-        <li>Dividends @ 16.67% $= \mathbf{₹ 5.20}$; Retained Earnings $= \mathbf{₹ 26.00}$[cite: 3]</li>
+        <li>Turnover $= ₹ 600 \\times 1.1 = \\mathbf{₹ 660.00}$[cite: 3]</li>
+        <li>Operating Expenses (90%) $= ₹ 594.00 \\implies \\text{EBIT} = \\mathbf{₹ 66.00}$[cite: 3]</li>
+        <li>Interest [$(125 + 50) \\times 8\\%$] $= ₹ 14.00 \\implies \\text{EBT} = \\mathbf{₹ 52.00}$[cite: 3]</li>
+        <li>Tax @ 40% $= ₹ 20.80 \\implies \\text{EAT (PAT)} = \\mathbf{₹ 31.20}$[cite: 3]</li>
+        <li>Dividends @ 16.67% $= \\mathbf{₹ 5.20}$; Retained Earnings $= \\mathbf{₹ 26.00}$[cite: 3]</li>
       </ul>
 
       <h4>(ii) Sustainable Growth Rate (SGR)</h4>
-      <p>$$\text{Net Worth} = 100 + 300 = ₹ 400 \text{ lakhs} \implies \text{ROE} = \frac{₹ 31.20}{₹ 400} = 7.80\%$$[cite: 3]</p>
-      <p>$$\text{SGR} = \text{ROE} \times (1 - \text{Payout}) = 7.80\% \times (1 - 0.1667) = \mathbf{6.50\%} \quad \left(\text{or } \frac{0.078 \times 0.8333}{1 - 0.078 \times 0.8333} = \mathbf{6.95\%}\right)$$[cite: 3]</p>
+      <p>$$\\text{Net Worth} = 100 + 300 = ₹ 400 \\text{ lakhs} \\implies \\text{ROE} = \\frac{₹ 31.20}{₹ 400} = 7.80\\%$$[cite: 3]</p>
+      <p>$$\\text{SGR} = \\text{ROE} \\times (1 - \\text{Payout}) = 7.80\\% \\times (1 - 0.1667) = \\mathbf{6.50\\%} \\quad \\left(\\text{or } \\frac{0.078 \\times 0.8333}{1 - 0.078 \\times 0.8333} = \\mathbf{6.95\\%}\\right)$$[cite: 3]</p>
 
       <h4>(iii) Fair Price Using DDM</h4>
-      <p>$$D_0 = \frac{₹ 5.20 \text{ lakhs}}{10 \text{ lakh shares}} = ₹ 0.52$$[cite: 3]</p>
-      <p>$$\text{At } g = 6.50\%: \quad P_0 = \frac{0.52 \times 1.065}{0.15 - 0.065} = \frac{0.5538}{0.085} = \mathbf{₹ 6.51}$$[cite: 3]</p>
-      <p>$$\text{At } g = 6.95\%: \quad P_0 = \frac{0.52 \times 1.0695}{0.15 - 0.0695} = \frac{0.5561}{0.0805} = \mathbf{₹ 6.91}$$[cite: 3]</p>
+      <p>$$D_0 = \\frac{₹ 5.20 \\text{ lakhs}}{10 \\text{ lakh shares}} = ₹ 0.52$$[cite: 3]</p>
+      <p>$$\\text{At } g = 6.50\\%: \\quad P_0 = \\frac{0.52 \\times 1.065}{0.15 - 0.065} = \\frac{0.5538}{0.085} = \\mathbf{₹ 6.51}$$[cite: 3]</p>
+      <p>$$\\text{At } g = 6.95\\%: \\quad P_0 = \\frac{0.52 \\times 1.0695}{0.15 - 0.0695} = \\frac{0.5561}{0.0805} = \\mathbf{₹ 6.91}$$[cite: 3]</p>
 
       <h4>(iv) Investment Decision</h4>
       <p>Because the current market price (₹ 14.00) is more than double its intrinsic fair value (₹ 6.51 &ndash; ₹ 6.91), the stock is substantially <strong>overvalued</strong>[cite: 3]. The investor <strong>should not invest</strong> in the share[cite: 3].</p>
@@ -3675,10 +3675,10 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Required Rate of Return (CAPM)</h4>
-      <p>$$K_e = 9\% + 0.75(15\% - 9\%) = 9\% + 4.5\% = \mathbf{13.50\%}$$[cite: 3]</p>
+      <p>$$K_e = 9\\% + 0.75(15\\% - 9\\%) = 9\\% + 4.5\\% = \\mathbf{13.50\\%}$$[cite: 3]</p>
 
       <h4>2. Intrinsic Value</h4>
-      <p>$$P_0 = \frac{D_1}{K_e - g} = \frac{₹ 2.50 \times 1.10}{0.135 - 0.10} = \frac{₹ 2.75}{0.035} = \mathbf{₹ 78.57}$$[cite: 3]</p>
+      <p>$$P_0 = \\frac{D_1}{K_e - g} = \\frac{₹ 2.50 \\times 1.10}{0.135 - 0.10} = \\frac{₹ 2.75}{0.035} = \\mathbf{₹ 78.57}$$[cite: 3]</p>
     `
   },
   {
@@ -3689,15 +3689,15 @@ const icaibookData = [
     placement: 16,
     marks: 8,
     question_html: `
-      <p>Mr. A is thinking of buying shares at ₹ 500 each (face value ₹ 100)[cite: 3]. He expects a 1:5 bonus issue in Year 4[cite: 3]. Expected dividend is 20% p.a. on original and bonus shares[cite: 3]. He plans to sell at Year 7 at ₹ 900 each[cite: 3]. Incidental costs for purchase and sale are 5% of price[cite: 3]. Minimum required return is 12% ($PVF_{12\%}: 0.893, 0.797, 0.712, 0.636, 0.567, 0.507, 0.452$)[cite: 3]. Should Mr. A buy the share, and what is the maximum price he should pay?[cite: 3]</p>
+      <p>Mr. A is thinking of buying shares at ₹ 500 each (face value ₹ 100)[cite: 3]. He expects a 1:5 bonus issue in Year 4[cite: 3]. Expected dividend is 20% p.a. on original and bonus shares[cite: 3]. He plans to sell at Year 7 at ₹ 900 each[cite: 3]. Incidental costs for purchase and sale are 5% of price[cite: 3]. Minimum required return is 12% ($PVF_{12\\%}: 0.893, 0.797, 0.712, 0.636, 0.567, 0.507, 0.452$)[cite: 3]. Should Mr. A buy the share, and what is the maximum price he should pay?[cite: 3]</p>
     `,
     solution_html: `
       <h4>1. Discounted Cash Flows per Share Purchased</h4>
       <ul>
-        <li>Years 1 to 3: Dividend $= 20\% \times ₹ 100 = ₹ 20 \text{ p.a.}$[cite: 3]</li>
-        <li>Year 4 Bonus (1 for 5): Total holding becomes $1.20 \text{ shares}$[cite: 3].</li>
-        <li>Years 4 to 7: Dividend $= 1.20 \times ₹ 20 = ₹ 24 \text{ p.a.}$[cite: 3]</li>
-        <li>Year 7 Sale proceeds (net of 5% transaction costs) $= 1.20 \times ₹ 900 \times 0.95 = \mathbf{₹ 1,026}$[cite: 3]</li>
+        <li>Years 1 to 3: Dividend $= 20\\% \\times ₹ 100 = ₹ 20 \\text{ p.a.}$[cite: 3]</li>
+        <li>Year 4 Bonus (1 for 5): Total holding becomes $1.20 \\text{ shares}$[cite: 3].</li>
+        <li>Years 4 to 7: Dividend $= 1.20 \\times ₹ 20 = ₹ 24 \\text{ p.a.}$[cite: 3]</li>
+        <li>Year 7 Sale proceeds (net of 5% transaction costs) $= 1.20 \\times ₹ 900 \\times 0.95 = \\mathbf{₹ 1,026}$[cite: 3]</li>
       </ul>
       <div style="overflow-x:auto;">
         <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
@@ -3728,10 +3728,10 @@ const icaibookData = [
 
       <h4>2. Decision and Maximum Purchase Price</h4>
       <ul>
-        <li>Current Acquisition Cost (including 5% costs) $= ₹ 500 \times 1.05 = \mathbf{₹ 525.00}$[cite: 3]</li>
-        <li>$\text{Net Gain} = ₹ 563.68 - ₹ 525.00 = \mathbf{+₹ 38.68}$[cite: 3]</li>
+        <li>Current Acquisition Cost (including 5% costs) $= ₹ 500 \\times 1.05 = \\mathbf{₹ 525.00}$[cite: 3]</li>
+        <li>$\\text{Net Gain} = ₹ 563.68 - ₹ 525.00 = \\mathbf{+₹ 38.68}$[cite: 3]</li>
         <li><strong>Decision:</strong> Mr. A <strong>should buy the share</strong>[cite: 3].</li>
-        <li>$$\text{Maximum Price Payable} = \frac{₹ 563.68}{1.05} = \mathbf{₹ 536.84}$$[cite: 3]</li>
+        <li>$$\\text{Maximum Price Payable} = \\frac{₹ 563.68}{1.05} = \\mathbf{₹ 536.84}$$[cite: 3]</li>
       </ul>
     `
   },
@@ -3743,7 +3743,7 @@ const icaibookData = [
     placement: 17,
     marks: 8,
     question_html: `
-      <p>For Platinum Ltd., $R_f = 9\%$, $R_m = 13\%$, dividend growth $g = 7\%$, last dividend $D_0 = ₹ 2.00$, and Beta = 1.2[cite: 3].</p>
+      <p>For Platinum Ltd., $R_f = 9\\%$, $R_m = 13\\%$, dividend growth $g = 7\\%$, last dividend $D_0 = ₹ 2.00$, and Beta = 1.2[cite: 3].</p>
       <ol type="i">
         <li>What is the equilibrium stock price?[cite: 3]</li>
         <li>How would the equilibrium price change when (evaluated independently)[cite: 3]:
@@ -3757,20 +3757,20 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(i) Base Equilibrium Price</h4>
-      <p>$$K_e = 9\% + 1.2(13\% - 9\%) = 13.80\%$$[cite: 3]</p>
-      <p>$$P_0 = \frac{₹ 2.00 \times 1.07}{0.138 - 0.07} = \frac{₹ 2.14}{0.068} = \mathbf{₹ 31.47}$$[cite: 3]</p>
+      <p>$$K_e = 9\\% + 1.2(13\\% - 9\\%) = 13.80\\%$$[cite: 3]</p>
+      <p>$$P_0 = \\frac{₹ 2.00 \\times 1.07}{0.138 - 0.07} = \\frac{₹ 2.14}{0.068} = \\mathbf{₹ 31.47}$$[cite: 3]</p>
 
       <h4>(ii) Sensitivity Scenarios (Independent Analysis)</h4>
       <ul>
         <li><strong>Inflation Premium +2%:</strong>
-          <br />$R_f$ becomes $11\%$, $R_m$ becomes $15\% \implies K_e = 11\% + 1.2(15\% - 11\%) = 15.80\%$[cite: 3]
-          <br />$$P_0 = \frac{₹ 2.14}{0.158 - 0.07} = \frac{₹ 2.14}{0.088} = \mathbf{₹ 24.32}$$[cite: 3]
+          <br />$R_f$ becomes $11\\%$, $R_m$ becomes $15\\% \\implies K_e = 11\\% + 1.2(15\\% - 11\\%) = 15.80\\%$[cite: 3]
+          <br />$$P_0 = \\frac{₹ 2.14}{0.158 - 0.07} = \\frac{₹ 2.14}{0.088} = \\mathbf{₹ 24.32}$$[cite: 3]
         </li>
-        <li><strong>Growth Rate Increases by +3% ($g = 10\%$):</strong>
-          <br />$$P_0 = \frac{₹ 2.00 \times 1.10}{0.138 - 0.10} = \frac{₹ 2.20}{0.038} = \mathbf{₹ 57.89}$$[cite: 3]
+        <li><strong>Growth Rate Increases by +3% ($g = 10\\%$):</strong>
+          <br />$$P_0 = \\frac{₹ 2.00 \\times 1.10}{0.138 - 0.10} = \\frac{₹ 2.20}{0.038} = \\mathbf{₹ 57.89}$$[cite: 3]
         </li>
         <li><strong>Beta Rises to 1.3:</strong>
-          <br />$$K_e = 9\% + 1.3(4\%) = 14.20\% \implies P_0 = \frac{₹ 2.14}{0.142 - 0.07} = \frac{₹ 2.14}{0.072} = \mathbf{₹ 29.72}$$[cite: 3]
+          <br />$$K_e = 9\\% + 1.3(4\\%) = 14.20\\% \\implies P_0 = \\frac{₹ 2.14}{0.142 - 0.07} = \\frac{₹ 2.14}{0.072} = \\mathbf{₹ 29.72}$$[cite: 3]
         </li>
       </ul>
     `
@@ -3789,26 +3789,26 @@ const icaibookData = [
     solution_html: `
       <h4>1. Valuation Impact</h4>
       <ul>
-        <li><strong>Without Project:</strong> $P_0 = \frac{₹ 2.00 \times 1.06}{0.08 - 0.06} = \mathbf{₹ 106.00}$[cite: 3]</li>
+        <li><strong>Without Project:</strong> $P_0 = \\frac{₹ 2.00 \\times 1.06}{0.08 - 0.06} = \\mathbf{₹ 106.00}$[cite: 3]</li>
         <li><strong>With Project:</strong>
-          <br />Price at Year 3 ($P_3$) $= \frac{D_4}{K_e - g} = \frac{₹ 2.50}{0.08 - 0.07} = \mathbf{₹ 250.00}$[cite: 3]
-          <br />Current Price ($P_0$) $= \frac{₹ 250}{(1.08)^3} = \mathbf{₹ 198.46}$[cite: 3]
+          <br />Price at Year 3 ($P_3$) $= \\frac{D_4}{K_e - g} = \\frac{₹ 2.50}{0.08 - 0.07} = \\mathbf{₹ 250.00}$[cite: 3]
+          <br />Current Price ($P_0$) $= \\frac{₹ 250}{(1.08)^3} = \\mathbf{₹ 198.46}$[cite: 3]
         </li>
       </ul>
 
       <h4>2. Shareholder Realization Strategy</h4>
       <ul>
-        <li>Market price at end of Year 1 $= \frac{₹ 250}{(1.08)^2} = ₹ 214.33$[cite: 3]
-          <br />Sell 10 shares: $10 \times ₹ 214.33 = \mathbf{₹ 2,143.30}$[cite: 3]
+        <li>Market price at end of Year 1 $= \\frac{₹ 250}{(1.08)^2} = ₹ 214.33$[cite: 3]
+          <br />Sell 10 shares: $10 \\times ₹ 214.33 = \\mathbf{₹ 2,143.30}$[cite: 3]
         </li>
-        <li>Market price at end of Year 2 $= \frac{₹ 250}{1.08} = ₹ 231.48$[cite: 3]
-          <br />Sell 9 shares: $9 \times ₹ 231.48 = \mathbf{₹ 2,083.32}$[cite: 3]
+        <li>Market price at end of Year 2 $= \\frac{₹ 250}{1.08} = ₹ 231.48$[cite: 3]
+          <br />Sell 9 shares: $9 \\times ₹ 231.48 = \\mathbf{₹ 2,083.32}$[cite: 3]
         </li>
         <li>Market price at end of Year 3 $= ₹ 250.00$[cite: 3]
-          <br />Sell 8 shares: $8 \times ₹ 250.00 = \mathbf{₹ 2,000.00}$[cite: 3]
+          <br />Sell 8 shares: $8 \\times ₹ 250.00 = \\mathbf{₹ 2,000.00}$[cite: 3]
         </li>
       </ul>
-      <p>At Year 4, the investor holds $1,000 - (10 + 9 + 8) = \mathbf{973 \text{ shares}}$[cite: 3]. Dividend received in Year 4 $= 973 \times ₹ 2.50 = \mathbf{₹ 2,432.50}$, exceeding the ₹ 2,000 target[cite: 3].</p>
+      <p>At Year 4, the investor holds $1,000 - (10 + 9 + 8) = \\mathbf{973 \\text{ shares}}$[cite: 3]. Dividend received in Year 4 $= 973 \\times ₹ 2.50 = \\mathbf{₹ 2,432.50}$, exceeding the ₹ 2,000 target[cite: 3].</p>
     `
   },
   {
@@ -3823,23 +3823,23 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Beta and Required Rate of Return</h4>
-      <p>$$\beta = \frac{\text{Covariance}(s, m)}{\text{Variance}(m)} = \frac{30\%}{24\%} = \mathbf{1.25}$$[cite: 3]</p>
-      <p>$$K_e = 11\% + 1.25(18\% - 11\%) = 11\% + 8.75\% = \mathbf{19.75\%}$$[cite: 3]</p>
+      <p>$$\\beta = \\frac{\\text{Covariance}(s, m)}{\\text{Variance}(m)} = \\frac{30\\%}{24\\%} = \\mathbf{1.25}$$[cite: 3]</p>
+      <p>$$K_e = 11\\% + 1.25(18\\% - 11\\%) = 11\\% + 8.75\\% = \\mathbf{19.75\\%}$$[cite: 3]</p>
 
       <h4>2. Supernormal Dividends (Years 1-5 @ 40%)</h4>
       <ul>
-        <li>$D_1 = 2 \times 1.40 = ₹ 2.80 \implies \text{PV} = 2.80 \times 0.835 = ₹ 2.34$[cite: 3]</li>
-        <li>$D_2 = 2.80 \times 1.40 = ₹ 3.92 \implies \text{PV} = 3.92 \times 0.697 = ₹ 2.73$[cite: 3]</li>
-        <li>$D_3 = 3.92 \times 1.40 = ₹ 5.49 \implies \text{PV} = 5.49 \times 0.582 = ₹ 3.19$[cite: 3]</li>
-        <li>$D_4 = 5.49 \times 1.40 = ₹ 7.68 \implies \text{PV} = 7.68 \times 0.486 = ₹ 3.73$[cite: 3]</li>
-        <li>$D_5 = 7.68 \times 1.40 = ₹ 10.76 \implies \text{PV} = 10.76 \times 0.406 = ₹ 4.37$[cite: 3]</li>
-        <li>$\text{Total PV of Dividends (Years 1-5)} = \mathbf{₹ 16.36}$[cite: 3]</li>
+        <li>$D_1 = 2 \\times 1.40 = ₹ 2.80 \\implies \\text{PV} = 2.80 \\times 0.835 = ₹ 2.34$[cite: 3]</li>
+        <li>$D_2 = 2.80 \\times 1.40 = ₹ 3.92 \\implies \\text{PV} = 3.92 \\times 0.697 = ₹ 2.73$[cite: 3]</li>
+        <li>$D_3 = 3.92 \\times 1.40 = ₹ 5.49 \\implies \\text{PV} = 5.49 \\times 0.582 = ₹ 3.19$[cite: 3]</li>
+        <li>$D_4 = 5.49 \\times 1.40 = ₹ 7.68 \\implies \\text{PV} = 7.68 \\times 0.486 = ₹ 3.73$[cite: 3]</li>
+        <li>$D_5 = 7.68 \\times 1.40 = ₹ 10.76 \\implies \\text{PV} = 10.76 \\times 0.406 = ₹ 4.37$[cite: 3]</li>
+        <li>$\\text{Total PV of Dividends (Years 1-5)} = \\mathbf{₹ 16.36}$[cite: 3]</li>
       </ul>
 
       <h4>3. Terminal Value and Total Intrinsic Value</h4>
-      <p>$$P_5 = \frac{D_6}{K_e - g_n} = \frac{10.76 \times 1.15}{0.1975 - 0.15} = \frac{12.374}{0.0475} = ₹ 260.505$$[cite: 3]</p>
-      <p>$$\text{PV of Terminal Value} = ₹ 260.505 \times 0.406 = \mathbf{₹ 105.77}$$[cite: 3]</p>
-      <p>$$\text{Total Intrinsic Value} = ₹ 16.36 + ₹ 105.77 = \mathbf{₹ 122.13}$$[cite: 3]</p>
+      <p>$$P_5 = \\frac{D_6}{K_e - g_n} = \\frac{10.76 \\times 1.15}{0.1975 - 0.15} = \\frac{12.374}{0.0475} = ₹ 260.505$$[cite: 3]</p>
+      <p>$$\\text{PV of Terminal Value} = ₹ 260.505 \\times 0.406 = \\mathbf{₹ 105.77}$$[cite: 3]</p>
+      <p>$$\\text{Total Intrinsic Value} = ₹ 16.36 + ₹ 105.77 = \\mathbf{₹ 122.13}$$[cite: 3]</p>
     `
   },
   {
@@ -3859,21 +3859,21 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(i) Buyback Price per Share ($P$)</h4>
-      <p>Total funds allocated for buyback $= 27\% \times ₹ 100 \text{ lakhs} = ₹ 27 \text{ lakhs}$[cite: 3].</p>
-      <p>$$\text{Post-Buyback Price} = 1.10 P$$[cite: 3]</p>
-      <p>$$\text{Post-Buyback Shares} = 10,00,000 - \frac{₹ 27,00,000}{P}$$[cite: 3]</p>
-      <p>$$1.10 P \times \left(10,00,000 - \frac{27,00,000}{P}\right) = ₹ 2,10,00,000$$[cite: 3]</p>
-      <p>$$11,00,000 P - 29,70,000 = 2,10,00,000 \implies 11,00,000 P = 2,39,70,000$$[cite: 3]</p>
-      <p>$$P = \frac{2,39,70,000}{11,00,000} = \mathbf{₹ 21.79 \text{ per share}}$$[cite: 3]</p>
+      <p>Total funds allocated for buyback $= 27\\% \\times ₹ 100 \\text{ lakhs} = ₹ 27 \\text{ lakhs}$[cite: 3].</p>
+      <p>$$\\text{Post-Buyback Price} = 1.10 P$$[cite: 3]</p>
+      <p>$$\\text{Post-Buyback Shares} = 10,00,000 - \\frac{₹ 27,00,000}{P}$$[cite: 3]</p>
+      <p>$$1.10 P \\times \\left(10,00,000 - \\frac{27,00,000}{P}\\right) = ₹ 2,10,00,000$$[cite: 3]</p>
+      <p>$$11,00,000 P - 29,70,000 = 2,10,00,000 \\implies 11,00,000 P = 2,39,70,000$$[cite: 3]</p>
+      <p>$$P = \\frac{2,39,70,000}{11,00,000} = \\mathbf{₹ 21.79 \\text{ per share}}$$[cite: 3]</p>
 
       <h4>(ii) Number of Shares Repurchased</h4>
-      <p>$$\text{Shares Repurchased} = \frac{₹ 27,00,000}{₹ 21.79} \approx \mathbf{1,23,910 \text{ shares (1.24 lakhs)}}[cite: 3]$$</p>
+      <p>$$\\text{Shares Repurchased} = \\frac{₹ 27,00,000}{₹ 21.79} \\approx \\mathbf{1,23,910 \\text{ shares (1.24 lakhs)}}[cite: 3]$$</p>
 
       <h4>(iii) Impact on EPS</h4>
       <ul>
-        <li>Total Earnings $= 10,00,000 \times ₹ 3 = ₹ 30,00,000$[cite: 3]</li>
-        <li>Remaining Shares $= 10,00,000 - 1,23,910 = 8,76,090 \text{ shares}$[cite: 3]</li>
-        <li>$$\text{New EPS} = \frac{₹ 30,00,000}{8,76,090} = \mathbf{₹ 3.43}$$[cite: 3]</li>
+        <li>Total Earnings $= 10,00,000 \\times ₹ 3 = ₹ 30,00,000$[cite: 3]</li>
+        <li>Remaining Shares $= 10,00,000 - 1,23,910 = 8,76,090 \\text{ shares}$[cite: 3]</li>
+        <li>$$\\text{New EPS} = \\frac{₹ 30,00,000}{8,76,090} = \\mathbf{₹ 3.43}$$[cite: 3]</li>
       </ul>
       <p>EPS increases from <strong>₹ 3.00 to ₹ 3.43</strong>[cite: 3].</p>
     `
@@ -3895,19 +3895,19 @@ const icaibookData = [
       </ol>
     `,
     solution_html: `
-      <p>Annual Coupon $= 10\% \times ₹ 100 = ₹ 10$; Redemption Value $= ₹ 110$[cite: 3].</p>
+      <p>Annual Coupon $= 10\\% \\times ₹ 100 = ₹ 10$; Redemption Value $= ₹ 110$[cite: 3].</p>
       <ul>
         <li><strong>(i) At 5% Yield:</strong>
-          $$V = (10 \times 4.330) + (110 \times 0.784) = 43.30 + 86.24 = \mathbf{₹ 129.54}$$[cite: 3]
+          $$V = (10 \\times 4.330) + (110 \\times 0.784) = 43.30 + 86.24 = \\mathbf{₹ 129.54}$$[cite: 3]
         </li>
         <li><strong>(ii) At 5.1% Yield:</strong>
-          $$V = (10 \times 4.317) + (110 \times 0.780) = 43.17 + 85.80 = \mathbf{₹ 128.97}$$[cite: 3]
+          $$V = (10 \\times 4.317) + (110 \\times 0.780) = 43.17 + 85.80 = \\mathbf{₹ 128.97}$$[cite: 3]
         </li>
         <li><strong>(iii) At 10% Yield:</strong>
-          $$V = (10 \times 3.791) + (110 \times 0.621) = 37.91 + 68.31 = \mathbf{₹ 106.22}$$[cite: 3]
+          $$V = (10 \\times 3.791) + (110 \\times 0.621) = 37.91 + 68.31 = \\mathbf{₹ 106.22}$$[cite: 3]
         </li>
         <li><strong>(iv) At 10.1% Yield:</strong>
-          $$V = (10 \times 3.781) + (110 \times 0.618) = 37.81 + 67.98 = \mathbf{₹ 105.79}$$[cite: 3]
+          $$V = (10 \\times 3.781) + (110 \\times 0.618) = 37.81 + 67.98 = \\mathbf{₹ 105.79}$$[cite: 3]
         </li>
       </ul>
     `
@@ -3922,19 +3922,19 @@ const icaibookData = [
     question_html: `
       <p>An investor is considering the purchase of a 3-year bond: Face value ₹ 100, Coupon rate 11%[cite: 3].</p>
       <ol type="i">
-        <li>If he wants a yield of 13%, what is the maximum price he should pay? ($PVAF_{13\%, 3} = 2.361, PVF_{13\%, 3} = 0.693$)[cite: 3]</li>
-        <li>If the bond is selling for ₹ 97.60, what would be his yield? ($PVAF_{12\%, 3} = 2.402, PVF_{12\%, 3} = 0.712$)[cite: 3]</li>
+        <li>If he wants a yield of 13%, what is the maximum price he should pay? ($PVAF_{13\\%, 3} = 2.361, PVF_{13\\%, 3} = 0.693$)[cite: 3]</li>
+        <li>If the bond is selling for ₹ 97.60, what would be his yield? ($PVAF_{12\\%, 3} = 2.402, PVF_{12\\%, 3} = 0.712$)[cite: 3]</li>
       </ol>
     `,
     solution_html: `
       <h4>(i) Maximum Purchase Price at 13% Yield</h4>
-      <p>$$P_0 = (₹ 11 \times 2.361) + (₹ 100 \times 0.693) = 25.97 + 69.30 = \mathbf{₹ 95.27}$$[cite: 3]</p>
+      <p>$$P_0 = (₹ 11 \\times 2.361) + (₹ 100 \\times 0.693) = 25.97 + 69.30 = \\mathbf{₹ 95.27}$$[cite: 3]</p>
 
       <h4>(ii) Yield to Maturity (YTM) at Price ₹ 97.60</h4>
       <p>Testing at 12% discount rate[cite: 3]:</p>
-      <p>$$P = (11 \times 2.402) + (100 \times 0.712) = 26.422 + 71.20 = \mathbf{₹ 97.62}$$[cite: 3]</p>
+      <p>$$P = (11 \\times 2.402) + (100 \\times 0.712) = 26.422 + 71.20 = \\mathbf{₹ 97.62}$$[cite: 3]</p>
       <p>Because the market price of ₹ 97.60 is almost identical to ₹ 97.62, the <strong>YTM is 12%</strong>[cite: 3].</p>
-      <p><em>(Using approximation formula: $\text{YTM} \approx \frac{11 + \frac{100 - 97.60}{3}}{\frac{100 + 97.60}{2}} = \frac{11 + 0.80}{98.80} = \mathbf{11.94\% \approx 12\%}$)[cite: 3]</em></p>
+      <p><em>(Using approximation formula: $\\text{YTM} \\approx \\frac{11 + \\frac{100 - 97.60}{3}}{\\frac{100 + 97.60}{2}} = \\frac{11 + 0.80}{98.80} = \\mathbf{11.94\\% \\approx 12\\%}$)[cite: 3]</em></p>
     `
   },
   {
@@ -3954,19 +3954,19 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Perpetual GOI Security Price</h4>
       <ul>
-        <li>Current Yield $= \frac{\text{Coupon}}{\text{Market Price}} \times 100 = \frac{10}{110} \times 100 = 9.09\%$[cite: 3]</li>
-        <li>Expected Yield $= 9.09\% + 1.00\% = 10.09\%$[cite: 3]</li>
-        <li>$$\text{New Market Price} = \frac{\text{Coupon}}{\text{New Yield}} = \frac{₹ 10}{0.1009} = \mathbf{₹ 99.11}$$[cite: 3]</li>
+        <li>Current Yield $= \\frac{\\text{Coupon}}{\\text{Market Price}} \\times 100 = \\frac{10}{110} \\times 100 = 9.09\\%$[cite: 3]</li>
+        <li>Expected Yield $= 9.09\\% + 1.00\\% = 10.09\\%$[cite: 3]</li>
+        <li>$$\\text{New Market Price} = \\frac{\\text{Coupon}}{\\text{New Yield}} = \\frac{₹ 10}{0.1009} = \\mathbf{₹ 99.11}$$[cite: 3]</li>
       </ul>
 
       <h4>(ii) Semi-Annual Coupon Bond Valuation</h4>
       <ul>
-        <li>Semi-annual coupon ($I/2$) $= \frac{7.5\% \times ₹ 10,000}{2} = ₹ 375$[cite: 3]</li>
-        <li>Semi-annual yield ($k_d/2$) $= \frac{6\%}{2} = 3\%$[cite: 3]</li>
-        <li>Periods ($2n$) $= 2 \times 2 = 4 \text{ periods}$[cite: 3]</li>
+        <li>Semi-annual coupon ($I/2$) $= \\frac{7.5\\% \\times ₹ 10,000}{2} = ₹ 375$[cite: 3]</li>
+        <li>Semi-annual yield ($k_d/2$) $= \\frac{6\\%}{2} = 3\\%$[cite: 3]</li>
+        <li>Periods ($2n$) $= 2 \\times 2 = 4 \\text{ periods}$[cite: 3]</li>
       </ul>
-      <p>$$P_0 = (375 \times \text{PVIFA}_{3\%, 4}) + (10,000 \times \text{PVIF}_{3\%, 4})$$[cite: 3]</p>
-      <p>$$P_0 = (375 \times 3.7171) + (10,000 \times 0.888487) = 1,393.91 + 8,884.87 = \mathbf{₹ 10,279}$$[cite: 3]</p>
+      <p>$$P_0 = (375 \\times \\text{PVIFA}_{3\\%, 4}) + (10,000 \\times \\text{PVIF}_{3\\%, 4})$$[cite: 3]</p>
+      <p>$$P_0 = (375 \\times 3.7171) + (10,000 \\times 0.888487) = 1,393.91 + 8,884.87 = \\mathbf{₹ 10,279}$$[cite: 3]</p>
     `
   },
   {
@@ -3981,9 +3981,9 @@ const icaibookData = [
     `,
     solution_html: `
       <ul>
-        <li>Conversion Value $= 14 \text{ shares} \times ₹ 80 = \mathbf{₹ 1,120}$[cite: 3]</li>
-        <li>Market Price of Convertible Bond $= \mathbf{₹ 1,475}$[cite: 3]</li>
-        <li>$$\text{Premium over Conversion Value} = \frac{₹ 1,475 - ₹ 1,120}{₹ 1,120} \times 100 = \frac{₹ 355}{₹ 1,120} \times 100 = \mathbf{31.70\%}$$[cite: 3]</li>
+        <li>Conversion Value $= 14 \\text{ shares} \\times ₹ 80 = \\mathbf{₹ 1,120}$[cite: 3]</li>
+        <li>Market Price of Convertible Bond $= \\mathbf{₹ 1,475}$[cite: 3]</li>
+        <li>$$\\text{Premium over Conversion Value} = \\frac{₹ 1,475 - ₹ 1,120}{₹ 1,120} \\times 100 = \\frac{₹ 355}{₹ 1,120} \\times 100 = \\mathbf{31.70\\%}$$[cite: 3]</li>
       </ul>
     `
   },
@@ -3995,17 +3995,17 @@ const icaibookData = [
     placement: 25,
     marks: 6,
     question_html: `
-      <p>Saranam Ltd. has issued convertible debentures with a coupon rate of 12%[cite: 3]. Each debenture converts into 20 equity shares at any time until maturity[cite: 3]. Debentures are redeemed at ₹ 100 on maturity after 5 years[cite: 3]. Required return is 8% ($PVAF_{8\%, 5} = 3.993, PVF_{8\%, 5} = 0.681$)[cite: 3]. When will you exercise conversion for equity share prices of (i) ₹ 4, (ii) ₹ 5, and (iii) ₹ 6?[cite: 3]</p>
+      <p>Saranam Ltd. has issued convertible debentures with a coupon rate of 12%[cite: 3]. Each debenture converts into 20 equity shares at any time until maturity[cite: 3]. Debentures are redeemed at ₹ 100 on maturity after 5 years[cite: 3]. Required return is 8% ($PVAF_{8\\%, 5} = 3.993, PVF_{8\\%, 5} = 0.681$)[cite: 3]. When will you exercise conversion for equity share prices of (i) ₹ 4, (ii) ₹ 5, and (iii) ₹ 6?[cite: 3]</p>
     `,
     solution_html: `
       <h4>1. Straight Bond Value (Without Conversion)</h4>
-      <p>$$V = (₹ 12 \times 3.993) + (₹ 100 \times 0.681) = 47.916 + 68.10 = \mathbf{₹ 116.02}$$[cite: 3]</p>
+      <p>$$V = (₹ 12 \\times 3.993) + (₹ 100 \\times 0.681) = 47.916 + 68.10 = \\mathbf{₹ 116.02}$$[cite: 3]</p>
 
       <h4>2. Conversion Value Comparison</h4>
       <ul>
-        <li>(i) At Share Price ₹ 4: Conversion Value $= 20 \times ₹ 4 = \mathbf{₹ 80}$[cite: 3]</li>
-        <li>(ii) At Share Price ₹ 5: Conversion Value $= 20 \times ₹ 5 = \mathbf{₹ 100}$[cite: 3]</li>
-        <li>(iii) At Share Price ₹ 6: Conversion Value $= 20 \times ₹ 6 = \mathbf{₹ 120}$[cite: 3]</li>
+        <li>(i) At Share Price ₹ 4: Conversion Value $= 20 \\times ₹ 4 = \\mathbf{₹ 80}$[cite: 3]</li>
+        <li>(ii) At Share Price ₹ 5: Conversion Value $= 20 \\times ₹ 5 = \\mathbf{₹ 100}$[cite: 3]</li>
+        <li>(iii) At Share Price ₹ 6: Conversion Value $= 20 \\times ₹ 6 = \\mathbf{₹ 120}$[cite: 3]</li>
       </ul>
       <p><strong>Decision:</strong> The investor should only exercise conversion when the equity share price reaches <strong>₹ 6</strong>, because only then does the conversion value (₹ 120) exceed the straight value of the debenture (₹ 116.02)[cite: 3].</p>
     `
@@ -4029,16 +4029,16 @@ const icaibookData = [
     solution_html: `
       <ul>
         <li><strong>(i) Stock Value (Conversion Value):</strong>
-          $$20 \text{ shares} \times ₹ 12 = \mathbf{₹ 240}$$[cite: 3]
+          $$20 \\text{ shares} \\times ₹ 12 = \\mathbf{₹ 240}$$[cite: 3]
         </li>
         <li><strong>(ii) Downside Risk (%):</strong>
-          $$\frac{₹ 265 - ₹ 235}{₹ 235} \times 100 = \mathbf{12.77\%} \quad \left(\text{or } \frac{₹ 265 - ₹ 235}{₹ 265} \times 100 = \mathbf{11.32\%}\right)$$[cite: 3]
+          $$\\frac{₹ 265 - ₹ 235}{₹ 235} \\times 100 = \\mathbf{12.77\\%} \\quad \\left(\\text{or } \\frac{₹ 265 - ₹ 235}{₹ 265} \\times 100 = \\mathbf{11.32\\%}\\right)$$[cite: 3]
         </li>
         <li><strong>(iii) Conversion Premium:</strong>
-          $$\frac{₹ 265 - ₹ 240}{₹ 240} \times 100 = \frac{₹ 25}{₹ 240} \times 100 = \mathbf{10.42\%}$$[cite: 3]
+          $$\\frac{₹ 265 - ₹ 240}{₹ 240} \\times 100 = \\frac{₹ 25}{₹ 240} \\times 100 = \\mathbf{10.42\\%}$$[cite: 3]
         </li>
         <li><strong>(iv) Conversion Parity Price:</strong>
-          $$\frac{\text{Bond Price}}{\text{No. of Shares}} = \frac{₹ 265}{20} = \mathbf{₹ 13.25}$$[cite: 3]
+          $$\\frac{\\text{Bond Price}}{\\text{No. of Shares}} = \\frac{₹ 265}{20} = \\mathbf{₹ 13.25}$$[cite: 3]
         </li>
       </ul>
     `
@@ -4051,30 +4051,30 @@ const icaibookData = [
     placement: 27,
     marks: 8,
     question_html: `
-      <p>ABC Ltd. has ₹ 300 million, 12% bonds outstanding with 6 years to maturity[cite: 3]. It plans to refund these with a new ₹ 300 million issue of 6-year, 10% bonds[cite: 3]. Issue cost of new bonds is ₹ 6 million and call premium is 4%[cite: 3]. Unamortized issue cost of old bonds is ₹ 9 million, write-off immediately upon call[cite: 3]. Tax rate is 30%[cite: 3]. Analyse the bond refunding decision ($PVIFA_{7\%, 6} = 4.766$)[cite: 3].</p>
+      <p>ABC Ltd. has ₹ 300 million, 12% bonds outstanding with 6 years to maturity[cite: 3]. It plans to refund these with a new ₹ 300 million issue of 6-year, 10% bonds[cite: 3]. Issue cost of new bonds is ₹ 6 million and call premium is 4%[cite: 3]. Unamortized issue cost of old bonds is ₹ 9 million, write-off immediately upon call[cite: 3]. Tax rate is 30%[cite: 3]. Analyse the bond refunding decision ($PVIFA_{7\\%, 6} = 4.766$)[cite: 3].</p>
     `,
     solution_html: `
       <h4>1. Initial Net Outlay</h4>
       <ul>
-        <li>Call price of old bonds (Face Value ₹ 300m + 4% Premium) $= ₹ 312.00\text{m}$[cite: 3]</li>
-        <li>Less: Net proceeds of new issue ($₹ 300\text{m} - ₹ 6\text{m}$) $= ₹ 294.00\text{m}$[cite: 3]</li>
-        <li>Less: Tax saving on call premium &amp; unamortized cost $[30\% \times (12 + 9)] = ₹ 6.30\text{m}$[cite: 3]</li>
-        <li>$$\text{Initial Net Outlay} = 312.00 - 294.00 - 6.30 = \mathbf{₹ 11.70 \text{ million}}$$[cite: 3]</li>
+        <li>Call price of old bonds (Face Value ₹ 300m + 4% Premium) $= ₹ 312.00\\text{m}$[cite: 3]</li>
+        <li>Less: Net proceeds of new issue ($₹ 300\\text{m} - ₹ 6\\text{m}$) $= ₹ 294.00\\text{m}$[cite: 3]</li>
+        <li>Less: Tax saving on call premium &amp; unamortized cost $[30\\% \\times (12 + 9)] = ₹ 6.30\\text{m}$[cite: 3]</li>
+        <li>$$\\text{Initial Net Outlay} = 312.00 - 294.00 - 6.30 = \\mathbf{₹ 11.70 \\text{ million}}$$[cite: 3]</li>
       </ul>
 
       <h4>2. Annual Cash Inflow from Refunding</h4>
       <ul>
-        <li>Annual interest savings: $₹ 300\text{m} \times (12\% - 10\%) = ₹ 6.00\text{m}$[cite: 3]</li>
+        <li>Annual interest savings: $₹ 300\\text{m} \\times (12\\% - 10\\%) = ₹ 6.00\\text{m}$[cite: 3]</li>
         <li>Less: Tax impact on interest and issue cost amortization:
-          $$30\% \times \left[6.00 + \frac{9 - 6}{6}\right] = 30\% \times [6.00 + 0.50] = ₹ 1.95\text{m}$$[cite: 3]
+          $$30\\% \\times \\left[6.00 + \\frac{9 - 6}{6}\\right] = 30\\% \\times [6.00 + 0.50] = ₹ 1.95\\text{m}$$[cite: 3]
         </li>
-        <li>Annual Net Cash Savings $= ₹ 6.00\text{m} - ₹ 1.95\text{m} = \mathbf{₹ 4.05 \text{ million}}$[cite: 3]</li>
+        <li>Annual Net Cash Savings $= ₹ 6.00\\text{m} - ₹ 1.95\\text{m} = \\mathbf{₹ 4.05 \\text{ million}}$[cite: 3]</li>
       </ul>
 
       <h4>3. NPV of Refunding</h4>
-      <p>After-tax discount rate $= 10\% \times (1 - 0.30) = \mathbf{7\%}$[cite: 3].</p>
-      <p>$$\text{PV of Annual Savings} = ₹ 4.05\text{m} \times 4.766 = ₹ 19.30 \text{ million}$$[cite: 3]</p>
-      <p>$$\text{NPV} = ₹ 19.30\text{m} - ₹ 11.70\text{m} = \mathbf{+₹ 7.60 \text{ million}}$$[cite: 3]</p>
+      <p>After-tax discount rate $= 10\\% \\times (1 - 0.30) = \\mathbf{7\\%}$[cite: 3].</p>
+      <p>$$\\text{PV of Annual Savings} = ₹ 4.05\\text{m} \\times 4.766 = ₹ 19.30 \\text{ million}$$[cite: 3]</p>
+      <p>$$\\text{NPV} = ₹ 19.30\\text{m} - ₹ 11.70\\text{m} = \\mathbf{+₹ 7.60 \\text{ million}}$$[cite: 3]</p>
       <p><strong>Decision:</strong> The bonds <strong>should be refunded</strong> because the net present value is positive[cite: 3].</p>
     `
   },
@@ -4090,7 +4090,7 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Market Price of the Bond ($P_0$)</h4>
-      <p>$$P_0 = (₹ 160 \times \text{PVIFA}_{17\%, 6}) + (₹ 1,000 \times \text{PVIF}_{17\%, 6}) = (160 \times 3.589) + (1,000 \times 0.390) = 574.24 + 390 = \mathbf{₹ 964.24 \approx ₹ 964.40}$$[cite: 3]</p>
+      <p>$$P_0 = (₹ 160 \\times \\text{PVIFA}_{17\\%, 6}) + (₹ 1,000 \\times \\text{PVIF}_{17\\%, 6}) = (160 \\times 3.589) + (1,000 \\times 0.390) = 574.24 + 390 = \\mathbf{₹ 964.24 \\approx ₹ 964.40}$$[cite: 3]</p>
 
       <h4>2. Macaulay Duration Schedule</h4>
       <div style="overflow-x:auto;">
@@ -4102,7 +4102,7 @@ const icaibookData = [
               <th style="padding:6px; border:1px solid #ddd;">PVF @ 17%</th>
               <th style="padding:6px; border:1px solid #ddd;">PV (₹)</th>
               <th style="padding:6px; border:1px solid #ddd;">Weight ($PV / P_0$)</th>
-              <th style="padding:6px; border:1px solid #ddd;">$t \times \text{Weight}$</th>
+              <th style="padding:6px; border:1px solid #ddd;">$t \\times \\text{Weight}$</th>
             </tr>
           </thead>
           <tbody>
@@ -4121,13 +4121,13 @@ const icaibookData = [
           </tbody>
         </table>
       </div>
-      <p>$$\text{Macaulay Duration } (D) = \mathbf{4.247 \text{ years}} \quad (\text{or } 4.242 \text{ years})$$[cite: 3]</p>
+      <p>$$\\text{Macaulay Duration } (D) = \\mathbf{4.247 \\text{ years}} \\quad (\\text{or } 4.242 \\text{ years})$$[cite: 3]</p>
 
       <h4>3. Volatility (Modified Duration) and Price Impact</h4>
-      <p>$$\text{Modified Duration} = \frac{D}{1 + \text{YTM}} = \frac{4.247}{1.17} = \mathbf{3.63\%}$$[cite: 3]</p>
-      <p>For an increase in yield of $\Delta y = +0.75\%$ (+75 bps)[cite: 3]:</p>
-      <p>$$\text{Expected Price Decline} = ₹ 964.40 \times (3.63\% \times 0.75) = \mathbf{₹ 26.26}$$[cite: 3]</p>
-      <p>$$\text{Expected Market Price} = ₹ 964.40 - ₹ 26.26 = \mathbf{₹ 938.14} \quad (\text{or } ₹ 934.12)[cite: 3]$$</p>
+      <p>$$\\text{Modified Duration} = \\frac{D}{1 + \\text{YTM}} = \\frac{4.247}{1.17} = \\mathbf{3.63\\%}$$[cite: 3]</p>
+      <p>For an increase in yield of $\\Delta y = +0.75\\%$ (+75 bps)[cite: 3]:</p>
+      <p>$$\\text{Expected Price Decline} = ₹ 964.40 \\times (3.63\\% \\times 0.75) = \\mathbf{₹ 26.26}$$[cite: 3]</p>
+      <p>$$\\text{Expected Market Price} = ₹ 964.40 - ₹ 26.26 = \\mathbf{₹ 938.14} \\quad (\\text{or } ₹ 934.12)[cite: 3]$$</p>
     `
   },
   {
@@ -4148,22 +4148,22 @@ const icaibookData = [
     solution_html: `
       <h4>1. Duration of Bonds</h4>
       <ul>
-        <li><strong>Bond X:</strong> Matures in 1 year $\implies D_X = \mathbf{1.00 \text{ year}}$[cite: 3].</li>
+        <li><strong>Bond X:</strong> Matures in 1 year $\\implies D_X = \\mathbf{1.00 \\text{ year}}$[cite: 3].</li>
         <li><strong>Bond Y:</strong>
-          <br />$D_Y = \frac{80(0.909)(1) + 80(0.826)(2) + 80(0.751)(3) + 1,080(0.683)(4)}{₹ 936.52} = \frac{72.72 + 132.16 + 180.24 + 2,950.56}{936.52} = \mathbf{3.563 \text{ years}}$[cite: 3]
+          <br />$D_Y = \\frac{80(0.909)(1) + 80(0.826)(2) + 80(0.751)(3) + 1,080(0.683)(4)}{₹ 936.52} = \\frac{72.72 + 132.16 + 180.24 + 2,950.56}{936.52} = \\mathbf{3.563 \\text{ years}}$[cite: 3]
         </li>
       </ul>
 
       <h4>2. Immunization Portfolio Allocation</h4>
-      <p>Target duration $= 2.0 \text{ years}$[cite: 3]. Let $w_1$ be the weight of Bond X[cite: 3]:</p>
-      <p>$$2.0 = w_1(1.0) + (1 - w_1)(3.563) \implies 2.563 w_1 = 1.563 \implies w_1 = \mathbf{0.61 \text{ (61\%)}}$$[cite: 3]</p>
-      <p>$$\text{Weight of Bond Y } (w_2) = 1 - 0.61 = \mathbf{0.39 \text{ (39\%)}}$$[cite: 3]</p>
+      <p>Target duration $= 2.0 \\text{ years}$[cite: 3]. Let $w_1$ be the weight of Bond X[cite: 3]:</p>
+      <p>$$2.0 = w_1(1.0) + (1 - w_1)(3.563) \\implies 2.563 w_1 = 1.563 \\implies w_1 = \\mathbf{0.61 \\text{ (61\\%)}}$$[cite: 3]</p>
+      <p>$$\\text{Weight of Bond Y } (w_2) = 1 - 0.61 = \\mathbf{0.39 \\text{ (39\\%)}}$$[cite: 3]</p>
 
       <h4>3. Investment and Number of Bonds</h4>
-      <p>$$\text{Total PV needed today} = \frac{₹ 1,00,000}{(1.10)^2} = ₹ 1,00,000 \times 0.826 = \mathbf{₹ 82,600}$$[cite: 3]</p>
+      <p>$$\\text{Total PV needed today} = \\frac{₹ 1,00,000}{(1.10)^2} = ₹ 1,00,000 \\times 0.826 = \\mathbf{₹ 82,600}$$[cite: 3]</p>
       <ul>
-        <li>Investment in Bond X $= ₹ 82,600 \times 61\% = ₹ 50,386 \implies \frac{₹ 50,386}{₹ 972.73} \approx \mathbf{52 \text{ bonds}}$[cite: 3]</li>
-        <li>Investment in Bond Y $= ₹ 82,600 \times 39\% = ₹ 32,214 \implies \frac{₹ 32,214}{₹ 936.52} \approx \mathbf{34 \text{ bonds}}$[cite: 3]</li>
+        <li>Investment in Bond X $= ₹ 82,600 \\times 61\\% = ₹ 50,386 \\implies \\frac{₹ 50,386}{₹ 972.73} \\approx \\mathbf{52 \\text{ bonds}}$[cite: 3]</li>
+        <li>Investment in Bond Y $= ₹ 82,600 \\times 39\\% = ₹ 32,214 \\implies \\frac{₹ 32,214}{₹ 936.52} \\approx \\mathbf{34 \\text{ bonds}}$[cite: 3]</li>
       </ul>
     `
   },
@@ -4178,10 +4178,10 @@ const icaibookData = [
       <p>RBI sold a 91-day T-bill of face value ₹ 100 at a yield of 6%[cite: 3]. What was the issue price?[cite: 3]</p>
     `,
     solution_html: `
-      <p>$$Y = \left[\frac{F - P}{P}\right] \times \frac{365}{M} \times 100$$[cite: 3]</p>
-      <p>$$6 = \left[\frac{100 - P}{P}\right] \times \frac{365}{91} \times 100$$[cite: 3]</p>
-      <p>$$0.06 \times 91 \times P = 365(100 - P) \implies 5.46 P = 36,500 - 365 P$$[cite: 3]</p>
-      <p>$$370.46 P = 36,500 \implies P = \frac{36,500}{370.46} = \mathbf{₹ 98.53}$$[cite: 3]</p>
+      <p>$$Y = \\left[\\frac{F - P}{P}\\right] \\times \\frac{365}{M} \\times 100$$[cite: 3]</p>
+      <p>$$6 = \\left[\\frac{100 - P}{P}\\right] \\times \\frac{365}{91} \\times 100$$[cite: 3]</p>
+      <p>$$0.06 \\times 91 \\times P = 365(100 - P) \\implies 5.46 P = 36,500 - 365 P$$[cite: 3]</p>
+      <p>$$370.46 P = 36,500 \\implies P = \\frac{36,500}{370.46} = \\mathbf{₹ 98.53}$$[cite: 3]</p>
     `
   },
   {
@@ -4200,13 +4200,13 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(i) Investment Period for 5% Pre-Tax Income</h4>
-      <p>Target Return $= 5\% \times ₹ 20,00,000 = ₹ 1,00,000$[cite: 3].</p>
-      <p>$$\left(₹ 20,00,000 \times 9\% \times \frac{P}{12}\right) - ₹ 50,000 = ₹ 1,00,000$$[cite: 3]</p>
-      <p>$$15,000 P = 1,50,000 \implies P = \mathbf{10 \text{ months}}$$[cite: 3]</p>
+      <p>Target Return $= 5\\% \\times ₹ 20,00,000 = ₹ 1,00,000$[cite: 3].</p>
+      <p>$$\\left(₹ 20,00,000 \\times 9\\% \\times \\frac{P}{12}\\right) - ₹ 50,000 = ₹ 1,00,000$$[cite: 3]</p>
+      <p>$$15,000 P = 1,50,000 \\implies P = \\mathbf{10 \\text{ months}}$$[cite: 3]</p>
 
       <h4>(ii) Minimum Period to Break Even</h4>
-      <p>$$\left(₹ 20,00,000 \times 9\% \times \frac{P}{12}\right) - ₹ 50,00,000 \times 10^{-2} = 0$$[cite: 3]</p>
-      <p>$$15,000 P = 50,000 \implies P = \frac{50,000}{15,000} = \mathbf{3.33 \text{ months (approx. 100 days)}}$$[cite: 3]</p>
+      <p>$$\\left(₹ 20,00,000 \\times 9\\% \\times \\frac{P}{12}\\right) - ₹ 50,00,000 \\times 10^{-2} = 0$$[cite: 3]</p>
+      <p>$$15,000 P = 50,000 \\implies P = \\frac{50,000}{15,000} = \\mathbf{3.33 \\text{ months (approx. 100 days)}}$$[cite: 3]</p>
     `
   },
   {
@@ -4220,9 +4220,9 @@ const icaibookData = [
       <p>Z Co. Ltd. issued Commercial Paper worth ₹ 10 crores on 16th January 2019, maturing on 17th April 2019 (91 days) at 12.04% p.a.[cite: 3] What was the net amount received on issue?[cite: 3]</p>
     `,
     solution_html: `
-      <p>$$\text{Discount for 91 days} = 12.04\% \times \frac{91}{365} = 3.002\%$$[cite: 3]</p>
-      <p>$$\text{Net Proceeds} = \frac{₹ 10.00 \text{ crores}}{1 + 0.03002} = \mathbf{₹ 9.70855 \text{ crores}}$$[cite: 3]</p>
-      <p><em>(Alternatively: $\text{Discount} = ₹ 10 \text{ crores} \times \frac{3.002}{103.002} = ₹ 0.29151 \text{ crores} \implies \text{Net} = \mathbf{₹ 9.70849 \text{ crores}}$)</em>[cite: 3]</p>
+      <p>$$\\text{Discount for 91 days} = 12.04\\% \\times \\frac{91}{365} = 3.002\\%$$[cite: 3]</p>
+      <p>$$\\text{Net Proceeds} = \\frac{₹ 10.00 \\text{ crores}}{1 + 0.03002} = \\mathbf{₹ 9.70855 \\text{ crores}}$$[cite: 3]</p>
+      <p><em>(Alternatively: $\\text{Discount} = ₹ 10 \\text{ crores} \\times \\frac{3.002}{103.002} = ₹ 0.29151 \\text{ crores} \\implies \\text{Net} = \\mathbf{₹ 9.70849 \\text{ crores}}$)</em>[cite: 3]</p>
     `
   },
   {
@@ -4241,18 +4241,18 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(i) Dirty Price per Bond</h4>
-      <p>$$\text{Accrued Interest} = 100 \times 10\% \times \frac{262}{360} = \mathbf{₹ 7.278}$$[cite: 3]</p>
-      <p>$$\text{Dirty Price} = \text{Clean Price} + \text{Accrued Interest} = 99.42 + 7.278 = \mathbf{₹ 106.698 \approx ₹ 106.70}$$[cite: 3]</p>
+      <p>$$\\text{Accrued Interest} = 100 \\times 10\\% \\times \\frac{262}{360} = \\mathbf{₹ 7.278}$$[cite: 3]</p>
+      <p>$$\\text{Dirty Price} = \\text{Clean Price} + \\text{Accrued Interest} = 99.42 + 7.278 = \\mathbf{₹ 106.698 \\approx ₹ 106.70}$$[cite: 3]</p>
 
       <h4>(ii) Settlement Legs</h4>
       <ul>
         <li><strong>First Leg (Start Proceeds):</strong>
-          $$\text{Start Proceeds} = \text{Nominal Value} \times \frac{\text{Dirty Price}}{100} \times \frac{100 - \text{Initial Margin}}{100}$$[cite: 3]
-          $$\text{Start Proceeds} = ₹ 8,00,00,000 \times \frac{106.70}{100} \times \frac{98}{100} = \mathbf{₹ 8,36,52,800}$$[cite: 3]
+          $$\\text{Start Proceeds} = \\text{Nominal Value} \\times \\frac{\\text{Dirty Price}}{100} \\times \\frac{100 - \\text{Initial Margin}}{100}$$[cite: 3]
+          $$\\text{Start Proceeds} = ₹ 8,00,00,000 \\times \\frac{106.70}{100} \\times \\frac{98}{100} = \\mathbf{₹ 8,36,52,800}$$[cite: 3]
         </li>
         <li><strong>Second Leg (Repayment at Maturity):</strong>
-          $$\text{Repayment} = \text{Start Proceeds} \times \left[1 + \text{Repo Rate} \times \frac{\text{No. of Days}}{360}\right]$$[cite: 3]
-          $$\text{Repayment} = ₹ 8,36,52,800 \times \left[1 + 0.0565 \times \frac{14}{360}\right] = ₹ 8,36,52,800 \times 1.0021972 = \mathbf{₹ 8,38,36,604}$$[cite: 3]
+          $$\\text{Repayment} = \\text{Start Proceeds} \\times \\left[1 + \\text{Repo Rate} \\times \\frac{\\text{No. of Days}}{360}\\right]$$[cite: 3]
+          $$\\text{Repayment} = ₹ 8,36,52,800 \\times \\left[1 + 0.0565 \\times \\frac{14}{360}\\right] = ₹ 8,36,52,800 \\times 1.0021972 = \\mathbf{₹ 8,38,36,604}$$[cite: 3]
         </li>
       </ul>
     `
@@ -4809,7 +4809,7 @@ const icaibookData = [
         <li><strong>(i) Expected Return:</strong> $\\mathbf{7.083\\%}$[cite: 4]</li>
         <li><strong>(ii) Standard Deviation of Returns:</strong> $\\sigma = \\sqrt{34.905} = \\mathbf{5.908\\%}$[cite: 4]</li>
       </ul>
-      <p><small><em>(Alternatively, Expected Price $= 115(0.1) + 120(0.1) + 125(0.2) + 130(0.3) + 135(0.2) + 140(0.1) = ₹ 128.50 \implies \\text{Return} = \\frac{128.50 - 120}{120} \\times 100 = 7.083\\%$)</em></small>[cite: 4]</p>
+      <p><small><em>(Alternatively, Expected Price $= 115(0.1) + 120(0.1) + 125(0.2) + 130(0.3) + 135(0.2) + 140(0.1) = ₹ 128.50 \\implies \\text{Return} = \\frac{128.50 - 120}{120} \\times 100 = 7.083\\%$)</em></small>[cite: 4]</p>
     `
   },
   {
@@ -5064,7 +5064,7 @@ const icaibookData = [
         <li>$$\\text{Portfolio Return} = (0.75 \\times 8\\%) + (0.25 \\times 12\\%) = 6\\% + 3\\% = \\mathbf{9\\%}$$[cite: 4]</li>
         <li>$$\\text{Portfolio Risk } (\\sigma_p) = (0.75 \\times 4) + (0.25 \\times 12) = 3 + 3 = \\mathbf{6\\%}$$[cite: 4]</li>
       </ul>
-      <p>Security E alone yields <strong>9% return with $\\sigma = 5\%$</strong>[cite: 4].</p>
+      <p>Security E alone yields <strong>9% return with $\\sigma = 5\\%$</strong>[cite: 4].</p>
       <p><strong>Conclusion:</strong> For the same expected return of 9%, Security E carries lower risk ($5\\% < 6\\%$)[cite: 4]. Therefore, <strong>investing 100% in E is preferable</strong>[cite: 4].</p>
     `
   },
@@ -5293,7 +5293,7 @@ const icaibookData = [
           <thead>
             <tr style="background-color:#f2f2f2;">
               <th style="padding:6px; border:1px solid #ddd;">Period</th>
-              <th style="padding:6px; border:1px solid #ddd;">Expected Return (CAPM @ $R_f = 6\%$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Expected Return (CAPM @ $R_f = 6\\%$)</th>
               <th style="padding:6px; border:1px solid #ddd;">Actual Return</th>
               <th style="padding:6px; border:1px solid #ddd;">Action Recommendation</th>
             </tr>
@@ -5424,21 +5424,21 @@ const icaibookData = [
       <p>You are required to determine the beta coefficients of the shares of Company A and Company B.</p>
     `,
     solution_html: `
-      <h4>1. Market Variance ($\sigma_M^2$)</h4>
-      <p>$$\bar{R}_M = \frac{12.0 + 11.0 + 9.0}{3} = \frac{32.0}{3} = 10.67\%$$</p>
-      <p>$$\sigma_M^2 = \frac{(12.0 - 10.67)^2 + (11.0 - 10.67)^2 + (9.0 - 10.67)^2}{3} = \frac{1.77 + 0.11 + 2.79}{3} = \frac{4.67}{3} = \mathbf{1.557}$$</p>
+      <h4>1. Market Variance ($\\sigma_M^2$)</h4>
+      <p>$$\\bar{R}_M = \\frac{12.0 + 11.0 + 9.0}{3} = \\frac{32.0}{3} = 10.67\\%$$</p>
+      <p>$$\\sigma_M^2 = \\frac{(12.0 - 10.67)^2 + (11.0 - 10.67)^2 + (9.0 - 10.67)^2}{3} = \\frac{1.77 + 0.11 + 2.79}{3} = \\frac{4.67}{3} = \\mathbf{1.557}$$</p>
 
       <h4>2. Beta of Company A</h4>
-      <p>$$\bar{R}_A = \frac{13.0 + 11.5 + 9.8}{3} = \frac{34.3}{3} = 11.43\%$$</p>
-      <p>$$\text{Cov}(A, M) = \frac{(13.0 - 11.43)(1.33) + (11.5 - 11.43)(0.33) + (9.8 - 11.43)(-1.67)}{3}$$[cite: 4]</p>
-      <p>$$\text{Cov}(A, M) = \frac{2.09 + 0.02 + 2.72}{3} = \frac{4.83}{3} = \mathbf{1.61}$$[cite: 4]</p>
-      <p>$$\beta_A = \frac{\text{Cov}(A, M)}{\sigma_M^2} = \frac{1.61}{1.557} = \mathbf{1.03}$$[cite: 4]</p>
+      <p>$$\\bar{R}_A = \\frac{13.0 + 11.5 + 9.8}{3} = \\frac{34.3}{3} = 11.43\\%$$</p>
+      <p>$$\\text{Cov}(A, M) = \\frac{(13.0 - 11.43)(1.33) + (11.5 - 11.43)(0.33) + (9.8 - 11.43)(-1.67)}{3}$$[cite: 4]</p>
+      <p>$$\\text{Cov}(A, M) = \\frac{2.09 + 0.02 + 2.72}{3} = \\frac{4.83}{3} = \\mathbf{1.61}$$[cite: 4]</p>
+      <p>$$\\beta_A = \\frac{\\text{Cov}(A, M)}{\\sigma_M^2} = \\frac{1.61}{1.557} = \\mathbf{1.03}$$[cite: 4]</p>
 
       <h4>3. Beta of Company B</h4>
-      <p>$$\bar{R}_B = \frac{11.0 + 10.5 + 9.5}{3} = \frac{31.0}{3} = 10.33\%$$[cite: 4]</p>
-      <p>$$\text{Cov}(B, M) = \frac{(11.0 - 10.33)(1.33) + (10.5 - 10.33)(0.33) + (9.5 - 10.33)(-1.67)}{3}$$[cite: 4]</p>
-      <p>$$\text{Cov}(B, M) = \frac{0.89 + 0.06 + 1.39}{3} = \frac{2.34}{3} = \mathbf{0.78}$$[cite: 4]</p>
-      <p>$$\beta_B = \frac{\text{Cov}(B, M)}{\sigma_M^2} = \frac{0.78}{1.557} = \mathbf{0.50}$$[cite: 4]</p>
+      <p>$$\\bar{R}_B = \\frac{11.0 + 10.5 + 9.5}{3} = \\frac{31.0}{3} = 10.33\\%$$[cite: 4]</p>
+      <p>$$\\text{Cov}(B, M) = \\frac{(11.0 - 10.33)(1.33) + (10.5 - 10.33)(0.33) + (9.5 - 10.33)(-1.67)}{3}$$[cite: 4]</p>
+      <p>$$\\text{Cov}(B, M) = \\frac{0.89 + 0.06 + 1.39}{3} = \\frac{2.34}{3} = \\mathbf{0.78}$$[cite: 4]</p>
+      <p>$$\\beta_B = \\frac{\\text{Cov}(B, M)}{\\sigma_M^2} = \\frac{0.78}{1.557} = \\mathbf{0.50}$$[cite: 4]</p>
     `
   },
   {
@@ -5536,14 +5536,14 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Beta Estimation</h4>
-      <p>$$\bar{R}_X = \frac{150}{10} = 15.0\%, \quad \bar{R}_M = \frac{120}{10} = 12.0\%$$[cite: 4]</p>
-      <p>$$\sum (R_M - \bar{R}_M)^2 = 706 \implies \sigma_M^2 = \frac{706}{10} = 70.60$$[cite: 4]</p>
-      <p>$$\sum (R_X - \bar{R}_X)(R_M - \bar{R}_M) = 357 \implies \text{Cov}(X, M) = \frac{357}{10} = 35.70$$[cite: 4]</p>
-      <p>$$\beta_X = \frac{\text{Cov}(X, M)}{\sigma_M^2} = \frac{35.70}{70.60} = \mathbf{0.505} \quad (\text{or } 0.506)[cite: 4]$$</p>
+      <p>$$\\bar{R}_X = \\frac{150}{10} = 15.0\\%, \\quad \\bar{R}_M = \\frac{120}{10} = 12.0\\%$$[cite: 4]</p>
+      <p>$$\\sum (R_M - \\bar{R}_M)^2 = 706 \\implies \\sigma_M^2 = \\frac{706}{10} = 70.60$$[cite: 4]</p>
+      <p>$$\\sum (R_X - \\bar{R}_X)(R_M - \\bar{R}_M) = 357 \\implies \\text{Cov}(X, M) = \\frac{357}{10} = 35.70$$[cite: 4]</p>
+      <p>$$\\beta_X = \\frac{\\text{Cov}(X, M)}{\\sigma_M^2} = \\frac{35.70}{70.60} = \\mathbf{0.505} \\quad (\\text{or } 0.506)[cite: 4]$$</p>
 
       <h4>2. Characteristic Line</h4>
-      <p>$$\alpha_X = \bar{R}_X - \beta_X \bar{R}_M = 15.0 - (0.505 \times 12.0) = 15.0 - 6.06 = \mathbf{8.94\%}$$[cite: 4]</p>
-      <p>$$\text{Characteristic Line: } R_X = 8.94 + 0.505 R_M$$[cite: 4]</p>
+      <p>$$\\alpha_X = \\bar{R}_X - \\beta_X \\bar{R}_M = 15.0 - (0.505 \\times 12.0) = 15.0 - 6.06 = \\mathbf{8.94\\%}$$[cite: 4]</p>
+      <p>$$\\text{Characteristic Line: } R_X = 8.94 + 0.505 R_M$$[cite: 4]</p>
     `
   },
   {
@@ -5580,32 +5580,32 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(a) Betas of the Two Stocks</h4>
-      <p>$$\beta = \frac{\Delta R_{\text{stock}}}{\Delta R_M}$$[cite: 4]</p>
+      <p>$$\\beta = \\frac{\\Delta R_{\\text{stock}}}{\\Delta R_M}$$[cite: 4]</p>
       <ul>
-        <li>Aggressive Stock: $\beta_A = \frac{40\% - 4\%}{25\% - 7\%} = \frac{36\%}{18\%} = \mathbf{2.00}$[cite: 4]</li>
-        <li>Defensive Stock: $\beta_D = \frac{18\% - 9\%}{25\% - 7\%} = \frac{9\%}{18\%} = \mathbf{0.50}$[cite: 4]</li>
+        <li>Aggressive Stock: $\\beta_A = \\frac{40\\% - 4\\%}{25\\% - 7\\%} = \\frac{36\\%}{18\\%} = \\mathbf{2.00}$[cite: 4]</li>
+        <li>Defensive Stock: $\\beta_D = \\frac{18\\% - 9\\%}{25\\% - 7\\%} = \\frac{9\\%}{18\\%} = \\mathbf{0.50}$[cite: 4]</li>
       </ul>
 
       <h4>(b) Expected Returns (Equally Likely Outcomes)</h4>
       <ul>
-        <li>Aggressive: $(0.50 \times 4\%) + (0.50 \times 40\%) = \mathbf{22.00\%}$[cite: 4]</li>
-        <li>Defensive: $(0.50 \times 9\%) + (0.50 \times 18\%) = \mathbf{13.50\%}$[cite: 4]</li>
+        <li>Aggressive: $(0.50 \\times 4\\%) + (0.50 \\times 40\\%) = \\mathbf{22.00\\%}$[cite: 4]</li>
+        <li>Defensive: $(0.50 \\times 9\\%) + (0.50 \\times 18\\%) = \\mathbf{13.50\\%}$[cite: 4]</li>
       </ul>
 
       <h4>(c) Security Market Line (SML)</h4>
-      <p>$$E(R_M) = (0.50 \times 7\%) + (0.50 \times 25\%) = 16.00\%$$[cite: 4]</p>
-      <p>$$\text{Market Risk Premium} = 16.00\% - 7.50\% = 8.50\%$$[cite: 4]</p>
-      <p>$$\text{SML Equation: } R_j = 7.50\% + \beta_j(8.50\%)$$[cite: 4]</p>
+      <p>$$E(R_M) = (0.50 \\times 7\\%) + (0.50 \\times 25\\%) = 16.00\\%$$[cite: 4]</p>
+      <p>$$\\text{Market Risk Premium} = 16.00\\% - 7.50\\% = 8.50\\%$$[cite: 4]</p>
+      <p>$$\\text{SML Equation: } R_j = 7.50\\% + \\beta_j(8.50\\%)$$[cite: 4]</p>
 
-      <h4>(d) Alphas of the Two Stocks ($\alpha = \text{Actual Expected Return} - \text{CAPM Return}$)</h4>
+      <h4>(d) Alphas of the Two Stocks ($\\alpha = \\text{Actual Expected Return} - \\text{CAPM Return}$)</h4>
       <ul>
         <li>Aggressive Stock:
-          <br />$$\text{CAPM Return} = 7.5\% + 2.0(8.5\%) = 24.5\%$$
-          <br />$$\alpha_A = 22.0\% - 24.5\% = \mathbf{-2.5\%} \quad (\text{or Characteristic intercept } \alpha_A = 22\% - 2(16\%) = \mathbf{-10\%})[cite: 4]$$
+          <br />$$\\text{CAPM Return} = 7.5\\% + 2.0(8.5\\%) = 24.5\\%$$
+          <br />$$\\alpha_A = 22.0\\% - 24.5\\% = \\mathbf{-2.5\\%} \\quad (\\text{or Characteristic intercept } \\alpha_A = 22\\% - 2(16\\%) = \\mathbf{-10\\%})[cite: 4]$$
         </li>
         <li>Defensive Stock:
-          <br />$$\text{CAPM Return} = 7.5\% + 0.5(8.5\%) = 11.75\%$$
-          <br />$$\alpha_D = 13.5\% - 11.75\% = \mathbf{+1.75\%} \quad (\text{or Characteristic intercept } \alpha_D = 13.5\% - 0.5(16\%) = \mathbf{+5.5\%})[cite: 4]$$
+          <br />$$\\text{CAPM Return} = 7.5\\% + 0.5(8.5\\%) = 11.75\\%$$
+          <br />$$\\alpha_D = 13.5\\% - 11.75\\% = \\mathbf{+1.75\\%} \\quad (\\text{or Characteristic intercept } \\alpha_D = 13.5\\% - 0.5(16\\%) = \\mathbf{+5.5\\%})[cite: 4]$$
         </li>
       </ul>
     `
@@ -5635,9 +5635,9 @@ const icaibookData = [
           </tbody>
         </table>
       </div>
-      <p>The standard deviation of the market portfolio is observed to be 15% ($\sigma_m = 15\%$)[cite: 4]. Calculate[cite: 4]:</p>
+      <p>The standard deviation of the market portfolio is observed to be 15% ($\\sigma_m = 15\\%$)[cite: 4]. Calculate[cite: 4]:</p>
       <ol type="i">
-        <li>The sensitivity ($\beta$) of returns of each stock with respect to the market[cite: 4].</li>
+        <li>The sensitivity ($\\beta$) of returns of each stock with respect to the market[cite: 4].</li>
         <li>The covariances among the various stocks[cite: 4].</li>
         <li>The risk of a portfolio consisting of all three stocks equally[cite: 4].</li>
         <li>The beta of the portfolio consisting of equal investment in each stock[cite: 4].</li>
@@ -5646,32 +5646,32 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(i) Betas of Individual Stocks</h4>
-      <p>$$\beta_i = \frac{\sigma_i \cdot r_{im}}{\sigma_m}$$[cite: 4]</p>
+      <p>$$\\beta_i = \\frac{\\sigma_i \\cdot r_{im}}{\\sigma_m}$$[cite: 4]</p>
       <ul>
-        <li>Stock A: $\beta_A = \frac{20 \times 0.60}{15} = \mathbf{0.80}$[cite: 4]</li>
-        <li>Stock B: $\beta_B = \frac{18 \times 0.95}{15} = \mathbf{1.14}$[cite: 4]</li>
-        <li>Stock C: $\beta_C = \frac{12 \times 0.75}{15} = \mathbf{0.60}$[cite: 4]</li>
+        <li>Stock A: $\\beta_A = \\frac{20 \\times 0.60}{15} = \\mathbf{0.80}$[cite: 4]</li>
+        <li>Stock B: $\\beta_B = \\frac{18 \\times 0.95}{15} = \\mathbf{1.14}$[cite: 4]</li>
+        <li>Stock C: $\\beta_C = \\frac{12 \\times 0.75}{15} = \\mathbf{0.60}$[cite: 4]</li>
       </ul>
 
-      <h4>(ii) Covariance Matrix Between Stocks ($\text{Cov}_{ij} = \beta_i \beta_j \sigma_m^2$)</h4>
-      <p>$$\sigma_m^2 = 15^2 = 225$$[cite: 4]</p>
+      <h4>(ii) Covariance Matrix Between Stocks ($\\text{Cov}_{ij} = \\beta_i \\beta_j \\sigma_m^2$)</h4>
+      <p>$$\\sigma_m^2 = 15^2 = 225$$[cite: 4]</p>
       <ul>
-        <li>$\text{Cov}(A, B) = 0.80 \times 1.14 \times 225 = \mathbf{205.20}$[cite: 4]</li>
-        <li>$\text{Cov}(A, C) = 0.80 \times 0.60 \times 225 = \mathbf{108.00}$[cite: 4]</li>
-        <li>$\text{Cov}(B, C) = 1.14 \times 0.60 \times 225 = \mathbf{153.90}$[cite: 4]</li>
+        <li>$\\text{Cov}(A, B) = 0.80 \\times 1.14 \\times 225 = \\mathbf{205.20}$[cite: 4]</li>
+        <li>$\\text{Cov}(A, C) = 0.80 \\times 0.60 \\times 225 = \\mathbf{108.00}$[cite: 4]</li>
+        <li>$\\text{Cov}(B, C) = 1.14 \\times 0.60 \\times 225 = \\mathbf{153.90}$[cite: 4]</li>
       </ul>
 
       <h4>(iii) Risk (Variance) of Equally Weighted Portfolio ($w_A = w_B = w_C = 1/3$)</h4>
-      <p>$$\sigma_p^2 = \left(\frac{1}{3}\right)^2 [20^2 + 18^2 + 12^2 + 2(205.20) + 2(108.00) + 2(153.90)]$$[cite: 4]</p>
-      <p>$$\sigma_p^2 = \frac{400 + 324 + 144 + 410.40 + 216.00 + 307.80}{9} = \frac{1,802.20}{9} = \mathbf{200.244(\\%)^2}$$[cite: 4]</p>
+      <p>$$\\sigma_p^2 = \\left(\\frac{1}{3}\\right)^2 [20^2 + 18^2 + 12^2 + 2(205.20) + 2(108.00) + 2(153.90)]$$[cite: 4]</p>
+      <p>$$\\sigma_p^2 = \\frac{400 + 324 + 144 + 410.40 + 216.00 + 307.80}{9} = \\frac{1,802.20}{9} = \\mathbf{200.244(\\%)^2}$$[cite: 4]</p>
 
       <h4>(iv) Portfolio Beta</h4>
-      <p>$$\beta_p = \frac{0.80 + 1.14 + 0.60}{3} = \mathbf{0.8467}$$[cite: 4]</p>
+      <p>$$\\beta_p = \\frac{0.80 + 1.14 + 0.60}{3} = \\mathbf{0.8467}$$[cite: 4]</p>
 
       <h4>(v) Risk Decomposition of the Portfolio</h4>
       <ul>
-        <li>$$\text{Systematic Risk} = \beta_p^2 \sigma_m^2 = (0.8467)^2 \times 225 = 0.7169 \times 225 = \mathbf{161.302(\\%)^2}$$[cite: 4]</li>
-        <li>$$\text{Unsystematic Risk} = \text{Total Variance} - \text{Systematic Risk} = 200.244 - 161.302 = \mathbf{38.942(\\%)^2}$$[cite: 4]</li>
+        <li>$$\\text{Systematic Risk} = \\beta_p^2 \\sigma_m^2 = (0.8467)^2 \\times 225 = 0.7169 \\times 225 = \\mathbf{161.302(\\%)^2}$$[cite: 4]</li>
+        <li>$$\\text{Unsystematic Risk} = \\text{Total Variance} - \\text{Systematic Risk} = 200.244 - 161.302 = \\mathbf{38.942(\\%)^2}$$[cite: 4]</li>
       </ul>
     `
   },
@@ -5709,31 +5709,31 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(i) Portfolio Sensitivities (Without Borrowing)</h4>
-      <p>Weights: $w_A = \frac{₹ 1,50,000}{₹ 1,00,000} = +1.50; \quad w_B = \frac{-₹ 50,000}{₹ 1,00,000} = -0.50$[cite: 4]</p>
+      <p>Weights: $w_A = \\frac{₹ 1,50,000}{₹ 1,00,000} = +1.50; \\quad w_B = \\frac{-₹ 50,000}{₹ 1,00,000} = -0.50$[cite: 4]</p>
       <ul>
-        <li>$$b_{p1} = 1.50(0.80) + (-0.50)(1.50) = 1.20 - 0.75 = \mathbf{0.45}$$[cite: 4]</li>
-        <li>$$b_{p2} = 1.50(0.60) + (-0.50)(1.20) = 0.90 - 0.60 = \mathbf{0.30}$$[cite: 4]</li>
+        <li>$$b_{p1} = 1.50(0.80) + (-0.50)(1.50) = 1.20 - 0.75 = \\mathbf{0.45}$$[cite: 4]</li>
+        <li>$$b_{p2} = 1.50(0.60) + (-0.50)(1.20) = 0.90 - 0.60 = \\mathbf{0.30}$$[cite: 4]</li>
       </ul>
 
       <h4>(ii) Portfolio Sensitivities (With Risk-Free Borrowing)</h4>
       <p>Total Capital Employed = ₹ 2,00,000. Positions relative to equity of ₹ 1,00,000[cite: 4]:</p>
       <ul>
-        <li>Security A: $\frac{₹ 3,00,000}{₹ 1,00,000} = +3.00$[cite: 4]</li>
-        <li>Security B: $\frac{-₹ 1,00,000}{₹ 1,00,000} = -1.00$[cite: 4]</li>
-        <li>Risk-Free Asset: $\frac{-₹ 1,00,000}{₹ 1,00,000} = -1.00$[cite: 4]</li>
+        <li>Security A: $\\frac{₹ 3,00,000}{₹ 1,00,000} = +3.00$[cite: 4]</li>
+        <li>Security B: $\\frac{-₹ 1,00,000}{₹ 1,00,000} = -1.00$[cite: 4]</li>
+        <li>Risk-Free Asset: $\\frac{-₹ 1,00,000}{₹ 1,00,000} = -1.00$[cite: 4]</li>
       </ul>
       <ul>
-        <li>$$b_{p1} = 3.0(0.80) + (-1.0)(1.50) + (-1.0)(0) = 2.40 - 1.50 = \mathbf{0.90}$$[cite: 4]</li>
-        <li>$$b_{p2} = 3.0(0.60) + (-1.0)(1.20) + (-1.0)(0) = 1.80 - 1.20 = \mathbf{0.60}$$[cite: 4]</li>
+        <li>$$b_{p1} = 3.0(0.80) + (-1.0)(1.50) + (-1.0)(0) = 2.40 - 1.50 = \\mathbf{0.90}$$[cite: 4]</li>
+        <li>$$b_{p2} = 3.0(0.60) + (-1.0)(1.20) + (-1.0)(0) = 1.80 - 1.20 = \\mathbf{0.60}$$[cite: 4]</li>
       </ul>
 
-      <h4>(iii) Return Premium of Factor 2 ($\lambda_2$)</h4>
-      <p>APT Model: $E(R_i) = R_f + b_{i1}\lambda_1 + b_{i2}\lambda_2$[cite: 4]</p>
-      <p>$$15 = 10 + 0.80\lambda_1 + 0.60\lambda_2 \implies 0.80\lambda_1 + 0.60\lambda_2 = 5$$[cite: 4]</p>
-      <p>$$20 = 10 + 1.50\lambda_1 + 1.20\lambda_2 \implies 1.50\lambda_1 + 1.20\lambda_2 = 10$$[cite: 4]</p>
-      <p>Multiplying the first equation by 2: $1.60\lambda_1 + 1.20\lambda_2 = 10$[cite: 4].</p>
-      <p>Subtracting yields $0.10\lambda_1 = 0 \implies \lambda_1 = 0$[cite: 4].</p>
-      <p>$$0.60\lambda_2 = 5 \implies \lambda_2 = \frac{5}{0.60} = \mathbf{8.33\%}$$[cite: 4]</p>
+      <h4>(iii) Return Premium of Factor 2 ($\\lambda_2$)</h4>
+      <p>APT Model: $E(R_i) = R_f + b_{i1}\\lambda_1 + b_{i2}\\lambda_2$[cite: 4]</p>
+      <p>$$15 = 10 + 0.80\\lambda_1 + 0.60\\lambda_2 \\implies 0.80\\lambda_1 + 0.60\\lambda_2 = 5$$[cite: 4]</p>
+      <p>$$20 = 10 + 1.50\\lambda_1 + 1.20\\lambda_2 \\implies 1.50\\lambda_1 + 1.20\\lambda_2 = 10$$[cite: 4]</p>
+      <p>Multiplying the first equation by 2: $1.60\\lambda_1 + 1.20\\lambda_2 = 10$[cite: 4].</p>
+      <p>Subtracting yields $0.10\\lambda_1 = 0 \\implies \\lambda_1 = 0$[cite: 4].</p>
+      <p>$$0.60\\lambda_2 = 5 \\implies \\lambda_2 = \\frac{5}{0.60} = \\mathbf{8.33\\%}$$[cite: 4]</p>
     `
   },
   {
@@ -5765,13 +5765,13 @@ const icaibookData = [
       <p>The risk-free rate of return is 7% and the market rate of return is 14%[cite: 4]. Determine the portfolio return and calculate the portfolio Beta[cite: 4].</p>
     `,
     solution_html: `
-      <h4>1. Calculation of Portfolio Beta ($\beta_p$)</h4>
-      <p>Total Portfolio Value $= 0.80 + 1.50 + 2.25 + 4.50 = \mathbf{₹ 9.05 \text{ Lakhs}}$[cite: 4]</p>
-      <p>$$\beta_p = \frac{(0.80 \times 0.45) + (1.50 \times 0.35) + (2.25 \times 1.15) + (4.50 \times 1.85)}{9.05}$$[cite: 4]</p>
-      <p>$$\beta_p = \frac{0.36 + 0.525 + 2.5875 + 8.325}{9.05} = \frac{11.7975}{9.05} = \mathbf{1.3035 \approx 1.30}$$[cite: 4]</p>
+      <h4>1. Calculation of Portfolio Beta ($\\beta_p$)</h4>
+      <p>Total Portfolio Value $= 0.80 + 1.50 + 2.25 + 4.50 = \\mathbf{₹ 9.05 \\text{ Lakhs}}$[cite: 4]</p>
+      <p>$$\\beta_p = \\frac{(0.80 \\times 0.45) + (1.50 \\times 0.35) + (2.25 \\times 1.15) + (4.50 \\times 1.85)}{9.05}$$[cite: 4]</p>
+      <p>$$\\beta_p = \\frac{0.36 + 0.525 + 2.5875 + 8.325}{9.05} = \\frac{11.7975}{9.05} = \\mathbf{1.3035 \\approx 1.30}$$[cite: 4]</p>
 
       <h4>2. Portfolio Return</h4>
-      <p>$$R_p = R_f + \beta_p (R_m - R_f) = 7\% + 1.3035(14\% - 7\%) = 7\% + 9.1245\% = \mathbf{16.125\% \approx 16.13\%}$$[cite: 4]</p>
+      <p>$$R_p = R_f + \\beta_p (R_m - R_f) = 7\\% + 1.3035(14\\% - 7\\%) = 7\\% + 9.1245\\% = \\mathbf{16.125\\% \\approx 16.13\\%}$$[cite: 4]</p>
     `
   },
   {
@@ -5816,22 +5816,22 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(i) Variances from Covariance Matrix</h4>
-      <p>$$\sigma_{\text{MFX}}^2 = \mathbf{4.800}, \quad \sigma_{\text{MFY}}^2 = \mathbf{4.250}, \quad \sigma_M^2 = \mathbf{3.100}$$[cite: 4]</p>
+      <p>$$\\sigma_{\\text{MFX}}^2 = \\mathbf{4.800}, \\quad \\sigma_{\\text{MFY}}^2 = \\mathbf{4.250}, \\quad \\sigma_M^2 = \\mathbf{3.100}$$[cite: 4]</p>
 
       <h4>(ii) Portfolio Mix Metrics ($w_X = 0.60, w_Y = 0.40$)</h4>
       <ul>
-        <li>$$R_p = (0.60 \times 15\%) + (0.40 \times 14\%) = \mathbf{14.60\%}$$[cite: 4]</li>
-        <li>$$\beta_X = \frac{\text{Cov}(X, M)}{\sigma_M^2} = \frac{3.370}{3.100} = \mathbf{1.087}; \quad \beta_Y = \frac{2.800}{3.100} = \mathbf{0.903}$$[cite: 4]</li>
-        <li>$$\beta_p = (0.60 \times 1.087) + (0.40 \times 0.903) = \mathbf{1.013}$$[cite: 4]</li>
-        <li>$$\sigma_p^2 = (0.60)^2(4.80) + (0.40)^2(4.25) + 2(0.60)(0.40)(4.30) = 1.728 + 0.680 + 2.064 = \mathbf{4.472}$$[cite: 4]</li>
-        <li>$$\sigma_p = \sqrt{4.472} = \mathbf{2.115\%}$$[cite: 4]</li>
+        <li>$$R_p = (0.60 \\times 15\\%) + (0.40 \\times 14\\%) = \\mathbf{14.60\\%}$$[cite: 4]</li>
+        <li>$$\\beta_X = \\frac{\\text{Cov}(X, M)}{\\sigma_M^2} = \\frac{3.370}{3.100} = \\mathbf{1.087}; \\quad \\beta_Y = \\frac{2.800}{3.100} = \\mathbf{0.903}$$[cite: 4]</li>
+        <li>$$\\beta_p = (0.60 \\times 1.087) + (0.40 \\times 0.903) = \\mathbf{1.013}$$[cite: 4]</li>
+        <li>$$\\sigma_p^2 = (0.60)^2(4.80) + (0.40)^2(4.25) + 2(0.60)(0.40)(4.30) = 1.728 + 0.680 + 2.064 = \\mathbf{4.472}$$[cite: 4]</li>
+        <li>$$\\sigma_p = \\sqrt{4.472} = \\mathbf{2.115\\%}$$[cite: 4]</li>
       </ul>
 
       <h4>(iii) Systematic and Unsystematic Risk</h4>
       <ul>
-        <li><strong>MFX:</strong> Systematic Risk $= (1.087)^2 \times 3.10 = \mathbf{3.663}$; Unsystematic Risk $= 4.800 - 3.663 = \mathbf{1.137}$[cite: 4]</li>
-        <li><strong>MFY:</strong> Systematic Risk $= (0.903)^2 \times 3.10 = \mathbf{2.528}$; Unsystematic Risk $= 4.250 - 2.528 = \mathbf{1.722}$[cite: 4]</li>
-        <li><strong>Portfolio Mix:</strong> Systematic Risk $= (1.013)^2 \times 3.10 = \mathbf{3.181}$; Unsystematic Risk $= 4.472 - 3.181 = \mathbf{1.291}$[cite: 4]</li>
+        <li><strong>MFX:</strong> Systematic Risk $= (1.087)^2 \\times 3.10 = \\mathbf{3.663}$; Unsystematic Risk $= 4.800 - 3.663 = \\mathbf{1.137}$[cite: 4]</li>
+        <li><strong>MFY:</strong> Systematic Risk $= (0.903)^2 \\times 3.10 = \\mathbf{2.528}$; Unsystematic Risk $= 4.250 - 2.528 = \\mathbf{1.722}$[cite: 4]</li>
+        <li><strong>Portfolio Mix:</strong> Systematic Risk $= (1.013)^2 \\times 3.10 = \\mathbf{3.181}$; Unsystematic Risk $= 4.472 - 3.181 = \\mathbf{1.291}$[cite: 4]</li>
       </ul>
 
       <h4>(iv) Performance Ratios</h4>
@@ -5840,33 +5840,33 @@ const icaibookData = [
           <thead>
             <tr style="background-color:#f2f2f2;">
               <th style="padding:6px; border:1px solid #ddd;">Fund / Mix</th>
-              <th style="padding:6px; border:1px solid #ddd;">Sharpe Ratio $\frac{R_i - R_f}{\sigma_i}$</th>
-              <th style="padding:6px; border:1px solid #ddd;">Treynor Ratio $\frac{R_i - R_f}{\beta_i}$</th>
-              <th style="padding:6px; border:1px solid #ddd;">CAPM Req. $R_f + \beta(R_m - R_f)$</th>
-              <th style="padding:6px; border:1px solid #ddd;">Jensen Alpha ($R_i - \text{CAPM}$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Sharpe Ratio $\\frac{R_i - R_f}{\\sigma_i}$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Treynor Ratio $\\frac{R_i - R_f}{\\beta_i}$</th>
+              <th style="padding:6px; border:1px solid #ddd;">CAPM Req. $R_f + \\beta(R_m - R_f)$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Jensen Alpha ($R_i - \\text{CAPM}$)</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>MFX</td>
-              <td>$\frac{15 - 10}{\sqrt{4.80}} = \mathbf{2.282}$[cite: 4]</td>
-              <td>$\frac{15 - 10}{1.087} = \mathbf{4.60}$[cite: 4]</td>
-              <td>$10 + 1.087(2) = 12.17\%$[cite: 4]</td>
-              <td>$15 - 12.17 = \mathbf{+2.83\%}$[cite: 4]</td>
+              <td>$\\frac{15 - 10}{\\sqrt{4.80}} = \\mathbf{2.282}$[cite: 4]</td>
+              <td>$\\frac{15 - 10}{1.087} = \\mathbf{4.60}$[cite: 4]</td>
+              <td>$10 + 1.087(2) = 12.17\\%$[cite: 4]</td>
+              <td>$15 - 12.17 = \\mathbf{+2.83\\%}$[cite: 4]</td>
             </tr>
             <tr>
               <td>MFY</td>
-              <td>$\frac{14 - 10}{\sqrt{4.25}} = \mathbf{1.940}$[cite: 4]</td>
-              <td>$\frac{14 - 10}{0.903} = \mathbf{4.43}$[cite: 4]</td>
-              <td>$10 + 0.903(2) = 11.81\%$[cite: 4]</td>
-              <td>$14 - 11.81 = \mathbf{+2.19\%}$[cite: 4]</td>
+              <td>$\\frac{14 - 10}{\\sqrt{4.25}} = \\mathbf{1.940}$[cite: 4]</td>
+              <td>$\\frac{14 - 10}{0.903} = \\mathbf{4.43}$[cite: 4]</td>
+              <td>$10 + 0.903(2) = 11.81\\%$[cite: 4]</td>
+              <td>$14 - 11.81 = \\mathbf{+2.19\\%}$[cite: 4]</td>
             </tr>
             <tr>
               <td>Portfolio Mix</td>
-              <td>$\frac{14.60 - 10}{2.115} = \mathbf{2.175}$[cite: 4]</td>
-              <td>$\frac{14.60 - 10}{1.013} = \mathbf{4.54}$[cite: 4]</td>
-              <td>$10 + 1.013(2) = 12.03\%$[cite: 4]</td>
-              <td>$14.60 - 12.03 = \mathbf{+2.57\%}$[cite: 4]</td>
+              <td>$\\frac{14.60 - 10}{2.115} = \\mathbf{2.175}$[cite: 4]</td>
+              <td>$\\frac{14.60 - 10}{1.013} = \\mathbf{4.54}$[cite: 4]</td>
+              <td>$10 + 1.013(2) = 12.03\\%$[cite: 4]</td>
+              <td>$14.60 - 12.03 = \\mathbf{+2.57\\%}$[cite: 4]</td>
             </tr>
           </tbody>
         </table>
@@ -5886,10 +5886,10 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Expected Rate of Return (CAPM)</h4>
-      <p>$$E(R) = R_f + \beta(R_m - R_f) = 10\% + 1.2(15\% - 10\%) = 10\% + 6\% = \mathbf{16.00\%}$$[cite: 4]</p>
+      <p>$$E(R) = R_f + \\beta(R_m - R_f) = 10\\% + 1.2(15\\% - 10\\%) = 10\\% + 6\\% = \\mathbf{16.00\\%}$$[cite: 4]</p>
 
       <h4>2. Equilibrium Price per Share</h4>
-      <p>$$P_0 = \frac{D_1}{K_e - g} = \frac{D_0(1+g)}{K_e - g} = \frac{₹ 3(1 + 0.12)}{0.16 - 0.12} = \frac{₹ 3.36}{0.04} = \mathbf{₹ 84.00}$$[cite: 4]</p>
+      <p>$$P_0 = \\frac{D_1}{K_e - g} = \\frac{D_0(1+g)}{K_e - g} = \\frac{₹ 3(1 + 0.12)}{0.16 - 0.12} = \\frac{₹ 3.36}{0.04} = \\mathbf{₹ 84.00}$$[cite: 4]</p>
     `
   },
   {
@@ -5912,16 +5912,16 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Risk-Free Rate and Beta Determination</h4>
-      <p>$$R_f = \frac{\text{Coupon}}{\text{Bond Price}} = \frac{\$7}{\$140} = \mathbf{5\%}$$[cite: 4]</p>
+      <p>$$R_f = \\frac{\\text{Coupon}}{\\text{Bond Price}} = \\frac{\\$7}{\\$140} = \\mathbf{5\\%}$$[cite: 4]</p>
       <p>Under CAPM equilibrium[cite: 4]:</p>
-      <p>$$R_X = R_f + \beta_X(R_m - R_f) \implies 15\% = 5\% + \beta_X(15\% - 5\%) \implies \beta_X = \mathbf{1.0}$$[cite: 4]</p>
+      <p>$$R_X = R_f + \\beta_X(R_m - R_f) \\implies 15\\% = 5\\% + \\beta_X(15\\% - 5\\%) \\implies \\beta_X = \\mathbf{1.0}$$[cite: 4]</p>
 
-      <h4>2. Standard Deviation of Market Return ($\sigma_m$)</h4>
-      <p>$$\beta_X = \frac{\text{Cov}(X, m)}{\sigma_m^2} \implies 1.0 = \frac{225}{\sigma_m^2} \implies \sigma_m^2 = 225 \implies \sigma_m = \mathbf{15.00\%}$$[cite: 4]</p>
+      <h4>2. Standard Deviation of Market Return ($\\sigma_m$)</h4>
+      <p>$$\\beta_X = \\frac{\\text{Cov}(X, m)}{\\sigma_m^2} \\implies 1.0 = \\frac{225}{\\sigma_m^2} \\implies \\sigma_m^2 = 225 \\implies \\sigma_m = \\mathbf{15.00\\%}$$[cite: 4]</p>
 
-      <h4>3. Standard Deviation of Security Return ($\sigma_X$)</h4>
-      <p>$$\beta_X = \frac{\sigma_X}{\sigma_m} \cdot r_{Xm} \implies 1.0 = \frac{\sigma_X}{15} \times 0.75$$[cite: 4]</p>
-      <p>$$\sigma_X = \frac{15}{0.75} = \mathbf{20.00\%}$$[cite: 4]</p>
+      <h4>3. Standard Deviation of Security Return ($\\sigma_X$)</h4>
+      <p>$$\\beta_X = \\frac{\\sigma_X}{\\sigma_m} \\cdot r_{Xm} \\implies 1.0 = \\frac{\\sigma_X}{15} \\times 0.75$$[cite: 4]</p>
+      <p>$$\\sigma_X = \\frac{15}{0.75} = \\mathbf{20.00\\%}$$[cite: 4]</p>
     `
   },
   {
@@ -5952,15 +5952,15 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>Derivation of SML Parameters</h4>
-      <p>$$R_j = R_f + \beta_j(R_m - R_f)$$[cite: 4]</p>
-      <p>$$19.8 = R_f + 1.2(R_m - R_f) \quad \text{--- (1)}$$[cite: 4]</p>
-      <p>$$17.1 = R_f + 0.9(R_m - R_f) \quad \text{--- (2)}$$[cite: 4]</p>
+      <p>$$R_j = R_f + \\beta_j(R_m - R_f)$$[cite: 4]</p>
+      <p>$$19.8 = R_f + 1.2(R_m - R_f) \\quad \\text{--- (1)}$$[cite: 4]</p>
+      <p>$$17.1 = R_f + 0.9(R_m - R_f) \\quad \\text{--- (2)}$$[cite: 4]</p>
       <p>Subtracting (2) from (1)[cite: 4]:</p>
-      <p>$$2.7 = 0.3(R_m - R_f) \implies (R_m - R_f) = \frac{2.7}{0.3} = \mathbf{9.00\%}$$[cite: 4]</p>
+      <p>$$2.7 = 0.3(R_m - R_f) \\implies (R_m - R_f) = \\frac{2.7}{0.3} = \\mathbf{9.00\\%}$$[cite: 4]</p>
       <p>Substituting into (2)[cite: 4]:</p>
-      <p>$$17.1 = R_f + 0.9(9.0) = R_f + 8.1 \implies R_f = \mathbf{9.00\%}, \quad R_m = 9.0 + 9.0 = \mathbf{18.00\%}$$[cite: 4]</p>
+      <p>$$17.1 = R_f + 0.9(9.0) = R_f + 8.1 \\implies R_f = \\mathbf{9.00\\%}, \\quad R_m = 9.0 + 9.0 = \\mathbf{18.00\\%}$$[cite: 4]</p>
       <p><strong>Security Market Line (SML) Equation:</strong></p>
-      <p>$$R_j = 9\% + \beta_j(9\%)$$[cite: 4]</p>
+      <p>$$R_j = 9\\% + \\beta_j(9\\%)$$[cite: 4]</p>
     `
   },
   {
@@ -5971,7 +5971,7 @@ const icaibookData = [
     placement: 33,
     marks: 8,
     question_html: `
-      <p>A Ltd. has an expected return of 22% and standard deviation of 40% ($\beta = 0.86$)[cite: 4]. B Ltd. has an expected return of 24% and standard deviation of 38% ($\beta = 1.24$)[cite: 4]. The correlation coefficient between them is 0.72[cite: 4]. The standard deviation of the market return is 20%[cite: 4]. Suggest[cite: 4]:</p>
+      <p>A Ltd. has an expected return of 22% and standard deviation of 40% ($\\beta = 0.86$)[cite: 4]. B Ltd. has an expected return of 24% and standard deviation of 38% ($\\beta = 1.24$)[cite: 4]. The correlation coefficient between them is 0.72[cite: 4]. The standard deviation of the market return is 20%[cite: 4]. Suggest[cite: 4]:</p>
       <ol type="i">
         <li>Is investing in B Ltd. better than investing in A Ltd.?[cite: 4]</li>
         <li>If you invest 30% in B Ltd. and 70% in A Ltd., what is your expected return and portfolio standard deviation?[cite: 4]</li>
@@ -5984,19 +5984,19 @@ const icaibookData = [
       <p>B Ltd. provides a higher expected return (24% vs. 22%) and a lower standard deviation (38% vs. 40%) compared to A Ltd.[cite: 4] Therefore, <strong>investing in B Ltd. is superior</strong> on an individual basis[cite: 4].</p>
 
       <h4>(ii) Portfolio Return and Standard Deviation ($w_A = 0.70, w_B = 0.30$)</h4>
-      <p>$$E(R_p) = (0.70 \times 22\%) + (0.30 \times 24\%) = 15.4\% + 7.2\% = \mathbf{22.60\%}$$[cite: 4]</p>
-      <p>$$\sigma_p^2 = (0.70)^2(40)^2 + (0.30)^2(38)^2 + 2(0.70)(0.30)(40)(38)(0.72)$$[cite: 4]</p>
-      <p>$$\sigma_p^2 = 784.00 + 129.96 + 459.65 = 1,373.61 \implies \sigma_p = \sqrt{1,373.61} = \mathbf{37.06\% \approx 37.00\%}$$[cite: 4]</p>
+      <p>$$E(R_p) = (0.70 \\times 22\\%) + (0.30 \\times 24\\%) = 15.4\\% + 7.2\\% = \\mathbf{22.60\\%}$$[cite: 4]</p>
+      <p>$$\\sigma_p^2 = (0.70)^2(40)^2 + (0.30)^2(38)^2 + 2(0.70)(0.30)(40)(38)(0.72)$$[cite: 4]</p>
+      <p>$$\\sigma_p^2 = 784.00 + 129.96 + 459.65 = 1,373.61 \\implies \\sigma_p = \\sqrt{1,373.61} = \\mathbf{37.06\\% \\approx 37.00\\%}$$[cite: 4]</p>
 
       <h4>(iii) Risk-Free Rate and Market Return</h4>
-      <p>$$22 = R_f + 0.86(R_m - R_f) \quad \text{--- (1)}$$[cite: 4]</p>
-      <p>$$24 = R_f + 1.24(R_m - R_f) \quad \text{--- (2)}$$[cite: 4]</p>
-      <p>$$2 = 0.38(R_m - R_f) \implies (R_m - R_f) = \frac{2}{0.38} = \mathbf{5.263\%}$$[cite: 4]</p>
-      <p>$$R_f = 22 - (0.86 \times 5.263) = 22 - 4.526 = \mathbf{17.474\% \approx 17.48\%}$$[cite: 4]</p>
-      <p>$$R_m = 17.48\% + 5.26\% = \mathbf{22.74\%}$$[cite: 4]</p>
+      <p>$$22 = R_f + 0.86(R_m - R_f) \\quad \\text{--- (1)}$$[cite: 4]</p>
+      <p>$$24 = R_f + 1.24(R_m - R_f) \\quad \\text{--- (2)}$$[cite: 4]</p>
+      <p>$$2 = 0.38(R_m - R_f) \\implies (R_m - R_f) = \\frac{2}{0.38} = \\mathbf{5.263\\%}$$[cite: 4]</p>
+      <p>$$R_f = 22 - (0.86 \\times 5.263) = 22 - 4.526 = \\mathbf{17.474\\% \\approx 17.48\\%}$$[cite: 4]</p>
+      <p>$$R_m = 17.48\\% + 5.26\\% = \\mathbf{22.74\\%}$$[cite: 4]</p>
 
       <h4>(iv) Portfolio Beta</h4>
-      <p>$$\beta_p = (0.70 \times 0.86) + (0.30 \times 1.24) = 0.602 + 0.372 = \mathbf{0.974}$$[cite: 4]</p>
+      <p>$$\\beta_p = (0.70 \\times 0.86) + (0.30 \\times 1.24) = 0.602 + 0.372 = \\mathbf{0.974}$$[cite: 4]</p>
     `
   },
   {
@@ -6042,10 +6042,10 @@ const icaibookData = [
               <th style="padding:6px; border:1px solid #ddd;">Stock</th>
               <th style="padding:6px; border:1px solid #ddd;">Market Value (₹)</th>
               <th style="padding:6px; border:1px solid #ddd;">Weight ($w$)</th>
-              <th style="padding:6px; border:1px solid #ddd;">Beta ($\beta$)</th>
-              <th style="padding:6px; border:1px solid #ddd;">$w \cdot \beta$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Beta ($\\beta$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">$w \\cdot \\beta$</th>
               <th style="padding:6px; border:1px solid #ddd;">Dividend Yield</th>
-              <th style="padding:6px; border:1px solid #ddd;">CAPM Req. $11\% + \beta(8\%)$</th>
+              <th style="padding:6px; border:1px solid #ddd;">CAPM Req. $11\\% + \\beta(8\\%)$</th>
             </tr>
           </thead>
           <tbody>
@@ -6058,16 +6058,16 @@ const icaibookData = [
               <td>11,00,500</td>
               <td>1.0000</td>
               <td colspan="1">—</td>
-              <td>\beta_p = 1.468</td>
+              <td>\\beta_p = 1.468</td>
               <td colspan="2">—</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p>$$\text{Total Dividend Inflow} = (2,57,400 \times 19.5\%) + (2,33,600 \times 24\%) + (2,17,000 \times 17.5\%) + (3,92,500 \times 26\%) = ₹ 2,46,282$$[cite: 4]</p>
-      <p>$$\text{Portfolio Dividend Return} = \frac{₹ 2,46,282}{₹ 11,00,500} = 22.38\%$$[cite: 4]</p>
-      <p>$$\text{Implicit Beta from Yield} = \frac{22.38\% - 11\%}{8\%} = \mathbf{1.42}$$[cite: 4]</p>
-      <p>Because the actual portfolio Beta ($\mathbf{1.46}$) is higher than 1.42, the portfolio is marginally riskier than its return compensation suggests[cite: 4].</p>
+      <p>$$\\text{Total Dividend Inflow} = (2,57,400 \\times 19.5\\%) + (2,33,600 \\times 24\\%) + (2,17,000 \\times 17.5\\%) + (3,92,500 \\times 26\\%) = ₹ 2,46,282$$[cite: 4]</p>
+      <p>$$\\text{Portfolio Dividend Return} = \\frac{₹ 2,46,282}{₹ 11,00,500} = 22.38\\%$$[cite: 4]</p>
+      <p>$$\\text{Implicit Beta from Yield} = \\frac{22.38\\% - 11\\%}{8\\%} = \\mathbf{1.42}$$[cite: 4]</p>
+      <p>Because the actual portfolio Beta ($\\mathbf{1.46}$) is higher than 1.42, the portfolio is marginally riskier than its return compensation suggests[cite: 4].</p>
 
       <h4>2. Recommendation on Portfolio Composition</h4>
       <ul>
@@ -6088,23 +6088,23 @@ const icaibookData = [
       <ol type="i">
         <li>If 20% is invested in each of A and B, and the balance equally in C, D, and E, what is the portfolio beta?[cite: 4]</li>
         <li>If the company invests 15% in C, 15% in A, 10% in E, and the balance equally in B and D, what is the portfolio beta?[cite: 4]</li>
-        <li>If the expected return on the market portfolio is 12% (at $\beta = 1.0$), what will be the portfolio's expected return in both situations?[cite: 4]</li>
+        <li>If the expected return on the market portfolio is 12% (at $\\beta = 1.0$), what will be the portfolio's expected return in both situations?[cite: 4]</li>
       </ol>
     `,
     solution_html: `
       <h4>(i) Portfolio Beta under Strategy 1 (20% in Each Fund)</h4>
-      <p>$$\beta_p = (0.20 \times 1.6) + (0.20 \times 1.0) + (0.20 \times 0.9) + (0.20 \times 2.0) + (0.20 \times 0.6)$$[cite: 4]</p>
-      <p>$$\beta_p = 0.32 + 0.20 + 0.18 + 0.40 + 0.12 = \mathbf{1.22}$$[cite: 4]</p>
+      <p>$$\\beta_p = (0.20 \\times 1.6) + (0.20 \\times 1.0) + (0.20 \\times 0.9) + (0.20 \\times 2.0) + (0.20 \\times 0.6)$$[cite: 4]</p>
+      <p>$$\\beta_p = 0.32 + 0.20 + 0.18 + 0.40 + 0.12 = \\mathbf{1.22}$$[cite: 4]</p>
 
       <h4>(ii) Portfolio Beta under Strategy 2</h4>
       <p>Weights: C = 15%, A = 15%, E = 10% (Subtotal = 40%)[cite: 4]. Balance 60% split equally: B = 30%, D = 30%[cite: 4].</p>
-      <p>$$\beta_p = (0.15 \times 0.9) + (0.15 \times 1.6) + (0.10 \times 0.6) + (0.30 \times 1.0) + (0.30 \times 2.0)$$[cite: 4]</p>
-      <p>$$\beta_p = 0.135 + 0.240 + 0.060 + 0.300 + 0.600 = \mathbf{1.335}$$[cite: 4]</p>
+      <p>$$\\beta_p = (0.15 \\times 0.9) + (0.15 \\times 1.6) + (0.10 \\times 0.6) + (0.30 \\times 1.0) + (0.30 \\times 2.0)$$[cite: 4]</p>
+      <p>$$\\beta_p = 0.135 + 0.240 + 0.060 + 0.300 + 0.600 = \\mathbf{1.335}$$[cite: 4]</p>
 
-      <h4>(iii) Expected Portfolio Returns (at $R_m = 12\%$)</h4>
+      <h4>(iii) Expected Portfolio Returns (at $R_m = 12\\%$)</h4>
       <ul>
-        <li>Strategy 1: $12\% \times 1.22 = \mathbf{14.64\%}$[cite: 4]</li>
-        <li>Strategy 2: $12\% \times 1.335 = \mathbf{16.02\%}$[cite: 4]</li>
+        <li>Strategy 1: $12\\% \\times 1.22 = \\mathbf{14.64\\%}$[cite: 4]</li>
+        <li>Strategy 2: $12\\% \\times 1.335 = \\mathbf{16.02\\%}$[cite: 4]</li>
       </ul>
     `
   },
@@ -6116,7 +6116,7 @@ const icaibookData = [
     placement: 36,
     marks: 8,
     question_html: `
-      <p>A global equity fund currently invested solely in developed-country stocks ($E(R) = 10\%, \sigma = 16\%$) is considering adding stocks of Economy A ($E(R) = 15\%, \sigma = 30\%$)[cite: 4]. The correlation coefficient ($\rho$) between them is 0.30, and the risk-free rate is 3%[cite: 4].</p>
+      <p>A global equity fund currently invested solely in developed-country stocks ($E(R) = 10\\%, \\sigma = 16\\%$) is considering adding stocks of Economy A ($E(R) = 15\\%, \\sigma = 30\\%$)[cite: 4]. The correlation coefficient ($\\rho$) between them is 0.30, and the risk-free rate is 3%[cite: 4].</p>
       <ol type="a">
         <li>What percentage should be allocated to Economy A to raise the expected return by 0.5%?[cite: 4]</li>
         <li>What will be the standard deviation of the resulting portfolio?[cite: 4]</li>
@@ -6125,25 +6125,25 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(a) Asset Allocation</h4>
-      <p>Target Return $= 10.0\% + 0.5\% = 10.5\%$[cite: 4]. Let weight of Economy A be $w$[cite: 4]:</p>
-      <p>$$(1 - w)(10.0) + w(15.0) = 10.5 \implies 10 + 5w = 10.5 \implies w = \mathbf{0.10 \text{ (10\%)}}$$[cite: 4]</p>
+      <p>Target Return $= 10.0\\% + 0.5\\% = 10.5\\%$[cite: 4]. Let weight of Economy A be $w$[cite: 4]:</p>
+      <p>$$(1 - w)(10.0) + w(15.0) = 10.5 \\implies 10 + 5w = 10.5 \\implies w = \\mathbf{0.10 \\text{ (10\\%)}}$$[cite: 4]</p>
       <p>Allocation: <strong>10% in Economy A</strong> and <strong>90% in Developed Country Stocks</strong>[cite: 4].</p>
 
-      <h4>(b) Portfolio Standard Deviation ($\sigma_p$)</h4>
-      <p>$$\sigma_p^2 = (0.90)^2(0.16)^2 + (0.10)^2(0.30)^2 + 2(0.90)(0.10)(0.16)(0.30)(0.30)$$[cite: 4]</p>
-      <p>$$\sigma_p^2 = (0.81 \times 0.0256) + (0.01 \times 0.09) + (0.18 \times 0.0144) = 0.020736 + 0.0009 + 0.002592 = 0.024228$$[cite: 4]</p>
-      <p>$$\sigma_p = \sqrt{0.024228} = \mathbf{0.15565 \approx 15.57\% \text{ (or } 15.60\%)}[cite: 4]$$</p>
+      <h4>(b) Portfolio Standard Deviation ($\\sigma_p$)</h4>
+      <p>$$\\sigma_p^2 = (0.90)^2(0.16)^2 + (0.10)^2(0.30)^2 + 2(0.90)(0.10)(0.16)(0.30)(0.30)$$[cite: 4]</p>
+      <p>$$\\sigma_p^2 = (0.81 \\times 0.0256) + (0.01 \\times 0.09) + (0.18 \\times 0.0144) = 0.020736 + 0.0009 + 0.002592 = 0.024228$$[cite: 4]</p>
+      <p>$$\\sigma_p = \\sqrt{0.024228} = \\mathbf{0.15565 \\approx 15.57\\% \\text{ (or } 15.60\\%)}[cite: 4]$$</p>
 
       <h4>(c) Sharpe Ratio Comparison</h4>
       <ul>
         <li>Developed Countries Only:
-          $$\text{Sharpe Ratio} = \frac{10\% - 3\%}{16\%} = \frac{7}{16} = \mathbf{0.4375}$$[cite: 4]
+          $$\\text{Sharpe Ratio} = \\frac{10\\% - 3\\%}{16\\%} = \\frac{7}{16} = \\mathbf{0.4375}$$[cite: 4]
         </li>
         <li>With Economy A Added:
-          $$\text{Sharpe Ratio} = \frac{10.5\% - 3\%}{15.565\%} = \frac{7.5}{15.565} = \mathbf{0.4818}$$[cite: 4]
+          $$\\text{Sharpe Ratio} = \\frac{10.5\\% - 3\\%}{15.565\\%} = \\frac{7.5}{15.565} = \\mathbf{0.4818}$$[cite: 4]
         </li>
       </ul>
-      <p><strong>Conclusion:</strong> Due to diversification benefits ($\rho = 0.30$), portfolio risk actually falls from 16.0% to 15.57% while returns rise, improving the Sharpe ratio by <strong>~0.044</strong>[cite: 4].</p>
+      <p><strong>Conclusion:</strong> Due to diversification benefits ($\\rho = 0.30$), portfolio risk actually falls from 16.0% to 15.57% while returns rise, improving the Sharpe ratio by <strong>~0.044</strong>[cite: 4].</p>
     `
   },
   {
@@ -6181,12 +6181,12 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(i) Expected Return on Portfolio</h4>
-      <p>$$\beta_p = \frac{(60 \times 0.50) + (80 \times 1.00) + (100 \times 0.80) + (120 \times 1.20) + (160 \times 1.50)}{520}$$[cite: 4]</p>
-      <p>$$\beta_p = \frac{30 + 80 + 80 + 144 + 240}{520} = \frac{574}{520} = \mathbf{1.1038 \approx 1.104}$$[cite: 4]</p>
-      <p>$$E(R_p) = R_f + \beta_p(R_m - R_f) = 8\% + 1.1038(10\% - 8\%) = 8\% + 2.208\% = \mathbf{10.208\% \approx 10.21\%}$$[cite: 4]</p>
+      <p>$$\\beta_p = \\frac{(60 \\times 0.50) + (80 \\times 1.00) + (100 \\times 0.80) + (120 \\times 1.20) + (160 \\times 1.50)}{520}$$[cite: 4]</p>
+      <p>$$\\beta_p = \\frac{30 + 80 + 80 + 144 + 240}{520} = \\frac{574}{520} = \\mathbf{1.1038 \\approx 1.104}$$[cite: 4]</p>
+      <p>$$E(R_p) = R_f + \\beta_p(R_m - R_f) = 8\\% + 1.1038(10\\% - 8\\%) = 8\\% + 2.208\\% = \\mathbf{10.208\\% \\approx 10.21\\%}$$[cite: 4]</p>
 
       <h4>(ii) Advisability of Replacing Security &lsquo;Better&rsquo; with NIFTY</h4>
-      <p>Security &lsquo;Better&rsquo; has a Beta of <strong>1.00</strong>, which matches the Beta of the NIFTY index[cite: 4]. Its expected return under CAPM is exactly $8\% + 1.0(2\%) = 10\%$, equal to NIFTY[cite: 4]. Therefore, replacing &lsquo;Better&rsquo; with NIFTY will produce no change in portfolio return or systematic risk, making the replacement <strong>neutral</strong>[cite: 4].</p>
+      <p>Security &lsquo;Better&rsquo; has a Beta of <strong>1.00</strong>, which matches the Beta of the NIFTY index[cite: 4]. Its expected return under CAPM is exactly $8\\% + 1.0(2\\%) = 10\\%$, equal to NIFTY[cite: 4]. Therefore, replacing &lsquo;Better&rsquo; with NIFTY will produce no change in portfolio return or systematic risk, making the replacement <strong>neutral</strong>[cite: 4].</p>
     `
   },
   {
@@ -6249,27 +6249,27 @@ const icaibookData = [
           </tbody>
         </table>
       </div>
-      <p>$$R_m = \frac{\text{Total Dividend} + \text{Capital Gain}}{\text{Total Cost}} \times 100 = \frac{₹ 7,025 + ₹ 5,500}{₹ 75,000} \times 100 = \frac{₹ 12,525}{₹ 75,000} \times 100 = \mathbf{16.70\%}$$[cite: 4]</p>
+      <p>$$R_m = \\frac{\\text{Total Dividend} + \\text{Capital Gain}}{\\text{Total Cost}} \\times 100 = \\frac{₹ 7,025 + ₹ 5,500}{₹ 75,000} \\times 100 = \\frac{₹ 12,525}{₹ 75,000} \\times 100 = \\mathbf{16.70\\%}$$[cite: 4]</p>
 
       <h4>2. Calculation of Risk-Free Rate ($R_f$)</h4>
-      <p>$$\text{Average Beta } (\bar{\beta}) = \frac{0.60 + 0.80 + 0.60 + 0.01}{4} = \mathbf{0.5025 \approx 0.50}$$[cite: 4]</p>
-      <p>Under CAPM: $R_p = R_f + \bar{\beta}(R_m - R_f)$[cite: 4]</p>
-      <p>$$15.70\% = R_f + 0.50(16.70\% - R_f)$$[cite: 4]</p>
-      <p>$$15.70\% = 0.50 R_f + 8.35\% \implies 0.50 R_f = 7.35\% \implies R_f = \mathbf{14.70\%}$$[cite: 4]</p>
+      <p>$$\\text{Average Beta } (\\bar{\\beta}) = \\frac{0.60 + 0.80 + 0.60 + 0.01}{4} = \\mathbf{0.5025 \\approx 0.50}$$[cite: 4]</p>
+      <p>Under CAPM: $R_p = R_f + \\bar{\\beta}(R_m - R_f)$[cite: 4]</p>
+      <p>$$15.70\\% = R_f + 0.50(16.70\\% - R_f)$$[cite: 4]</p>
+      <p>$$15.70\\% = 0.50 R_f + 8.35\\% \\implies 0.50 R_f = 7.35\\% \\implies R_f = \\mathbf{14.70\\%}$$[cite: 4]</p>
 
       <h4>3. Expected Rate of Return for Each Security (CAPM)</h4>
-      <p>$$R_j = R_f + \beta_j(R_m - R_f) = 14.70\% + \beta_j(16.70\% - 14.70\%) = 14.70\% + \beta_j(2.00\%)$$[cite: 4]</p>
+      <p>$$R_j = R_f + \\beta_j(R_m - R_f) = 14.70\\% + \\beta_j(16.70\\% - 14.70\\%) = 14.70\\% + \\beta_j(2.00\\%)$$[cite: 4]</p>
       <ul>
-        <li><strong>Gold Ltd.:</strong> $14.70\% + 0.60(2.00\%) = \mathbf{15.90\%}$[cite: 4]</li>
-        <li><strong>Silver Ltd.:</strong> $14.70\% + 0.80(2.00\%) = \mathbf{16.30\%}$[cite: 4]</li>
-        <li><strong>Bronze Ltd.:</strong> $14.70\% + 0.60(2.00\%) = \mathbf{15.90\%}$[cite: 4]</li>
-        <li><strong>GOI Bonds:</strong> $14.70\% + 0.01(2.00\%) = \mathbf{14.72\%}$[cite: 4]</li>
+        <li><strong>Gold Ltd.:</strong> $14.70\\% + 0.60(2.00\\%) = \\mathbf{15.90\\%}$[cite: 4]</li>
+        <li><strong>Silver Ltd.:</strong> $14.70\\% + 0.80(2.00\\%) = \\mathbf{16.30\\%}$[cite: 4]</li>
+        <li><strong>Bronze Ltd.:</strong> $14.70\\% + 0.60(2.00\\%) = \\mathbf{15.90\\%}$[cite: 4]</li>
+        <li><strong>GOI Bonds:</strong> $14.70\\% + 0.01(2.00\\%) = \\mathbf{14.72\\%}$[cite: 4]</li>
       </ul>
 
       <p><em>Alternative Method (Using Market Value Weights):</em></p>
-      <p>Total Market Value $= ₹ 80,500$; Portfolio $\beta = \frac{(9,800 \times 0.6) + (16,200 \times 0.8) + (20,000 \times 0.6) + (34,500 \times 0.01)}{80,500} = \frac{31,185}{80,500} = 0.387$[cite: 4].</p>
-      <p>Using GOI Bond return as proxy for $R_f = \frac{3,600 + (34,500 - 36,000)}{36,000} = \frac{2,100}{36,000} = 5.83\%$[cite: 4].</p>
-      <p>Then: $15.7\% = 5.83\% + 0.387(R_m - 5.83\%) \implies R_m = 31.32\%$[cite: 4].</p>
+      <p>Total Market Value $= ₹ 80,500$; Portfolio $\\beta = \\frac{(9,800 \\times 0.6) + (16,200 \\times 0.8) + (20,000 \\times 0.6) + (34,500 \\times 0.01)}{80,500} = \\frac{31,185}{80,500} = 0.387$[cite: 4].</p>
+      <p>Using GOI Bond return as proxy for $R_f = \\frac{3,600 + (34,500 - 36,000)}{36,000} = \\frac{2,100}{36,000} = 5.83\\%$[cite: 4].</p>
+      <p>Then: $15.7\\% = 5.83\\% + 0.387(R_m - 5.83\\%) \\implies R_m = 31.32\\%$[cite: 4].</p>
     `
   },
   {
@@ -6308,23 +6308,23 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Calculation of Market Return ($R_m$)</h4>
-      <p>$$\text{Total Cost} = 25 + 35 + 45 + 1,000 = ₹ 1,105$$[cite: 4]</p>
-      <p>$$\text{Total Dividend} = 2 + 2 + 2 + 140 = ₹ 146$$[cite: 4]</p>
-      <p>$$\text{Total Capital Gain} = (50 - 25) + (60 - 35) + (135 - 45) + (1,005 - 1,000) = 25 + 25 + 90 + 5 = ₹ 145$$[cite: 4]</p>
-      <p>$$R_m = \frac{₹ 146 + ₹ 145}{₹ 1,105} \times 100 = \frac{₹ 291}{₹ 1,105} \times 100 = \mathbf{26.33\%}$$[cite: 4]</p>
+      <p>$$\\text{Total Cost} = 25 + 35 + 45 + 1,000 = ₹ 1,105$$[cite: 4]</p>
+      <p>$$\\text{Total Dividend} = 2 + 2 + 2 + 140 = ₹ 146$$[cite: 4]</p>
+      <p>$$\\text{Total Capital Gain} = (50 - 25) + (60 - 35) + (135 - 45) + (1,005 - 1,000) = 25 + 25 + 90 + 5 = ₹ 145$$[cite: 4]</p>
+      <p>$$R_m = \\frac{₹ 146 + ₹ 145}{₹ 1,105} \\times 100 = \\frac{₹ 291}{₹ 1,105} \\times 100 = \\mathbf{26.33\\%}$$[cite: 4]</p>
 
-      <h4>2. Expected Returns Using CAPM ($R_f = 14\%$)</h4>
-      <p>$$R_j = 14\% + \beta_j(26.33\% - 14\%) = 14\% + \beta_j(12.33\%)$$[cite: 4]</p>
+      <h4>2. Expected Returns Using CAPM ($R_f = 14\\%$)</h4>
+      <p>$$R_j = 14\\% + \\beta_j(26.33\\% - 14\\%) = 14\\% + \\beta_j(12.33\\%)$$[cite: 4]</p>
       <ul>
-        <li><strong>Epsilon Ltd.:</strong> $14\% + 0.80(12.33\%) = 14\% + 9.86\% = \mathbf{23.86\%}$[cite: 4]</li>
-        <li><strong>Sigma Ltd.:</strong> $14\% + 0.70(12.33\%) = 14\% + 8.63\% = \mathbf{22.63\%}$[cite: 4]</li>
-        <li><strong>Omega Ltd.:</strong> $14\% + 0.50(12.33\%) = 14\% + 6.17\% = \mathbf{20.17\%}$[cite: 4]</li>
-        <li><strong>GOI Bonds:</strong> $14\% + 0.01(12.33\%) = 14\% + 0.12\% = \mathbf{14.12\%}$[cite: 4]</li>
+        <li><strong>Epsilon Ltd.:</strong> $14\\% + 0.80(12.33\\%) = 14\\% + 9.86\\% = \\mathbf{23.86\\%}$[cite: 4]</li>
+        <li><strong>Sigma Ltd.:</strong> $14\\% + 0.70(12.33\\%) = 14\\% + 8.63\\% = \\mathbf{22.63\\%}$[cite: 4]</li>
+        <li><strong>Omega Ltd.:</strong> $14\\% + 0.50(12.33\\%) = 14\\% + 6.17\\% = \\mathbf{20.17\\%}$[cite: 4]</li>
+        <li><strong>GOI Bonds:</strong> $14\\% + 0.01(12.33\\%) = 14\\% + 0.12\\% = \\mathbf{14.12\\%}$[cite: 4]</li>
       </ul>
 
       <h4>3. Average Return of the Portfolio</h4>
-      <p>$$\bar{R}_p = \frac{23.86\% + 22.63\% + 20.17\% + 14.12\%}{4} = \frac{80.78\%}{4} = \mathbf{20.20\%}$$[cite: 4]</p>
-      <p><small><em>(Alternatively, Average Beta $= \frac{0.8 + 0.7 + 0.5 + 0.01}{4} = 0.5025 \implies \bar{R}_p = 14\% + 0.5025(12.33\%) = \mathbf{20.20\%}$)</em></small>[cite: 4]</p>
+      <p>$$\\bar{R}_p = \\frac{23.86\\% + 22.63\\% + 20.17\\% + 14.12\\%}{4} = \\frac{80.78\\%}{4} = \\mathbf{20.20\\%}$$[cite: 4]</p>
+      <p><small><em>(Alternatively, Average Beta $= \\frac{0.8 + 0.7 + 0.5 + 0.01}{4} = 0.5025 \\implies \\bar{R}_p = 14\\% + 0.5025(12.33\\%) = \\mathbf{20.20\\%}$)</em></small>[cite: 4]</p>
     `
   },
   {
@@ -6363,22 +6363,22 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Calculation of Market Return ($R_m$)</h4>
-      <p>$$\text{Total Cost} = 8,000 + 10,000 + 16,000 + 34,000 = ₹ 68,000$$[cite: 4]</p>
-      <p>$$\text{Total Dividends} = 800 + 800 + 800 + 3,400 = ₹ 5,800$$[cite: 4]</p>
-      <p>$$\text{Total Capital Gain} = 200 + 500 + 6,000 - 1,700 = ₹ 5,000$$[cite: 4]</p>
-      <p>$$R_m = \frac{₹ 5,800 + ₹ 5,000}{₹ 68,000} \times 100 = \frac{₹ 10,800}{₹ 68,000} \times 100 = \mathbf{15.88\%}$$[cite: 4]</p>
+      <p>$$\\text{Total Cost} = 8,000 + 10,000 + 16,000 + 34,000 = ₹ 68,000$$[cite: 4]</p>
+      <p>$$\\text{Total Dividends} = 800 + 800 + 800 + 3,400 = ₹ 5,800$$[cite: 4]</p>
+      <p>$$\\text{Total Capital Gain} = 200 + 500 + 6,000 - 1,700 = ₹ 5,000$$[cite: 4]</p>
+      <p>$$R_m = \\frac{₹ 5,800 + ₹ 5,000}{₹ 68,000} \\times 100 = \\frac{₹ 10,800}{₹ 68,000} \\times 100 = \\mathbf{15.88\\%}$$[cite: 4]</p>
 
-      <h4>2. Expected Returns Using CAPM ($R_f = 15\%$)</h4>
-      <p>$$R_j = 15\% + \beta_j(15.88\% - 15.00\%) = 15\% + \beta_j(0.88\%)$$[cite: 4]</p>
+      <h4>2. Expected Returns Using CAPM ($R_f = 15\\%$)</h4>
+      <p>$$R_j = 15\\% + \\beta_j(15.88\\% - 15.00\\%) = 15\\% + \\beta_j(0.88\\%)$$[cite: 4]</p>
       <ul>
-        <li><strong>Co. X:</strong> $15\% + 0.80(0.88\%) = \mathbf{15.70\%}$[cite: 4]</li>
-        <li><strong>Co. Y:</strong> $15\% + 0.70(0.88\%) = \mathbf{15.62\%}$[cite: 4]</li>
-        <li><strong>Co. Z:</strong> $15\% + 0.50(0.88\%) = \mathbf{15.44\%}$[cite: 4]</li>
-        <li><strong>PSU Bonds:</strong> $15\% + 0.20(0.88\%) = \mathbf{15.18\%}$[cite: 4]</li>
+        <li><strong>Co. X:</strong> $15\\% + 0.80(0.88\\%) = \\mathbf{15.70\\%}$[cite: 4]</li>
+        <li><strong>Co. Y:</strong> $15\\% + 0.70(0.88\\%) = \\mathbf{15.62\\%}$[cite: 4]</li>
+        <li><strong>Co. Z:</strong> $15\\% + 0.50(0.88\\%) = \\mathbf{15.44\\%}$[cite: 4]</li>
+        <li><strong>PSU Bonds:</strong> $15\\% + 0.20(0.88\\%) = \\mathbf{15.18\\%}$[cite: 4]</li>
       </ul>
 
       <h4>3. Simple Average Return of the Portfolio</h4>
-      <p>$$\bar{R}_p = \frac{15.70\% + 15.62\% + 15.44\% + 15.18\%}{4} = \frac{61.94\%}{4} = \mathbf{15.49\%}$$[cite: 4]</p>
+      <p>$$\\bar{R}_p = \\frac{15.70\\% + 15.62\\% + 15.44\\% + 15.18\\%}{4} = \\frac{61.94\\%}{4} = \\mathbf{15.49\\%}$$[cite: 4]</p>
     `
   },
   {
@@ -6412,15 +6412,15 @@ const icaibookData = [
     solution_html: `
       <h4>1. Existing Scenario Analysis</h4>
       <ul>
-        <li>$$K_e = 12\% + 1.40(6\%) = 12\% + 8.4\% = \mathbf{20.40\%}$$[cite: 4]</li>
-        <li>$$P_0 = \frac{D_0(1+g)}{K_e - g} = \frac{₹ 2(1 + 0.05)}{0.204 - 0.05} = \frac{₹ 2.10}{0.154} = \mathbf{₹ 13.64}$$[cite: 4]</li>
+        <li>$$K_e = 12\\% + 1.40(6\\%) = 12\\% + 8.4\\% = \\mathbf{20.40\\%}$$[cite: 4]</li>
+        <li>$$P_0 = \\frac{D_0(1+g)}{K_e - g} = \\frac{₹ 2(1 + 0.05)}{0.204 - 0.05} = \\frac{₹ 2.10}{0.154} = \\mathbf{₹ 13.64}$$[cite: 4]</li>
       </ul>
       <p>Under existing conditions, the fair intrinsic value is ₹ 13.64 while the market price is ₹ 25.00[cite: 4]. The share is overpriced by ₹ 11.36 and warrants a <strong>Sell</strong> recommendation[cite: 4].</p>
 
       <h4>2. Revised Scenario Analysis</h4>
       <ul>
-        <li>$$K_e = 10\% + 1.25(4\%) = 10\% + 5\% = \mathbf{15.00\%}$$[cite: 4]</li>
-        <li>$$P_0 = \frac{D_0(1+g)}{K_e - g} = \frac{₹ 2(1 + 0.09)}{0.15 - 0.09} = \frac{₹ 2.18}{0.06} = \mathbf{₹ 36.33}$$[cite: 4]</li>
+        <li>$$K_e = 10\\% + 1.25(4\\%) = 10\\% + 5\\% = \\mathbf{15.00\\%}$$[cite: 4]</li>
+        <li>$$P_0 = \\frac{D_0(1+g)}{K_e - g} = \\frac{₹ 2(1 + 0.09)}{0.15 - 0.09} = \\frac{₹ 2.18}{0.06} = \\mathbf{₹ 36.33}$$[cite: 4]</li>
       </ul>
 
       <h4>Conclusion and Advice</h4>
@@ -6458,12 +6458,12 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Valuation in Current Year</h4>
-      <p>$$K_e = 12\% + 1.30(5\%) = 12\% + 6.5\% = \mathbf{18.50\%}$$[cite: 4]</p>
-      <p>$$P_0 = \frac{₹ 3(1 + 0.09)}{0.185 - 0.09} = \frac{₹ 3.27}{0.095} = \mathbf{₹ 34.42}$$[cite: 4]</p>
+      <p>$$K_e = 12\\% + 1.30(5\\%) = 12\\% + 6.5\\% = \\mathbf{18.50\\%}$$[cite: 4]</p>
+      <p>$$P_0 = \\frac{₹ 3(1 + 0.09)}{0.185 - 0.09} = \\frac{₹ 3.27}{0.095} = \\mathbf{₹ 34.42}$$[cite: 4]</p>
 
       <h4>2. Valuation for Next Year</h4>
-      <p>$$K_e = 10\% + 1.40(4\%) = 10\% + 5.6\% = \mathbf{15.60\%}$$[cite: 4]</p>
-      <p>$$P_0 = \frac{₹ 2.50(1 + 0.07)}{0.156 - 0.07} = \frac{₹ 2.675}{0.086} = \mathbf{₹ 31.10}$$[cite: 4]</p>
+      <p>$$K_e = 10\\% + 1.40(4\\%) = 10\\% + 5.6\\% = \\mathbf{15.60\\%}$$[cite: 4]</p>
+      <p>$$P_0 = \\frac{₹ 2.50(1 + 0.07)}{0.156 - 0.07} = \\frac{₹ 2.675}{0.086} = \\mathbf{₹ 31.10}$$[cite: 4]</p>
 
       <h4>Conclusion</h4>
       <p>The current market quotation of <strong>₹ 40.00</strong> is higher than both the current intrinsic value of <strong>₹ 34.42</strong> and the revised future value of <strong>₹ 31.10</strong>[cite: 4]. The stock is significantly overvalued in the market, so the investor should <strong>SELL</strong> the shares[cite: 4].</p>
@@ -6502,25 +6502,25 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(i) Weights for Combined Portfolio (₹ 5,000 in X + ₹ 3,000 in Y)</h4>
-      <p>Total Investment = ₹ 8,000. Weight in X $= \frac{5}{8} = 0.625$, Weight in Y $= \frac{3}{8} = 0.375$[cite: 4].</p>
+      <p>Total Investment = ₹ 8,000. Weight in X $= \\frac{5}{8} = 0.625$, Weight in Y $= \\frac{3}{8} = 0.375$[cite: 4].</p>
       <ul>
-        <li>Stock A $= (0.625 \times 0.30) + (0.375 \times 0.20) = 0.1875 + 0.075 = \mathbf{0.2625 \text{ (or } 0.26)} \implies ₹ 2,100$[cite: 4]</li>
-        <li>Stock B $= (0.625 \times 0.40) + (0.375 \times 0.50) = 0.2500 + 0.1875 = \mathbf{0.4375 \text{ (or } 0.44)} \implies ₹ 3,500$[cite: 4]</li>
-        <li>Stock C $= (0.625 \times 0.30) + (0.375 \times 0.30) = 0.1875 + 0.1125 = \mathbf{0.3000 \text{ (or } 0.30)} \implies ₹ 2,400$[cite: 4]</li>
+        <li>Stock A $= (0.625 \\times 0.30) + (0.375 \\times 0.20) = 0.1875 + 0.075 = \\mathbf{0.2625 \\text{ (or } 0.26)} \\implies ₹ 2,100$[cite: 4]</li>
+        <li>Stock B $= (0.625 \\times 0.40) + (0.375 \\times 0.50) = 0.2500 + 0.1875 = \\mathbf{0.4375 \\text{ (or } 0.44)} \\implies ₹ 3,500$[cite: 4]</li>
+        <li>Stock C $= (0.625 \\times 0.30) + (0.375 \\times 0.30) = 0.1875 + 0.1125 = \\mathbf{0.3000 \\text{ (or } 0.30)} \\implies ₹ 2,400$[cite: 4]</li>
       </ul>
 
       <h4>(ii) Allocation with ₹ 4,000 Invested in Security A ($W_A = 0.50$)</h4>
       <p>Because Portfolios X and Y lie on the minimum variance set, any linear combination of X and Y also lies on the minimum variance set (Critical Line)[cite: 4]:</p>
       <p>$$W_B = a + b W_A$$[cite: 4]</p>
-      <p>$$0.40 = a + 0.30 b \quad \text{--- (1)}$$[cite: 4]</p>
-      <p>$$0.50 = a + 0.20 b \quad \text{--- (2)}$$[cite: 4]</p>
-      <p>Subtracting (1) from (2): $0.10 = -0.10 b \implies b = \mathbf{-1.0}$[cite: 4].</p>
-      <p>$$0.40 = a + 0.30(-1) \implies a = \mathbf{0.70}$$[cite: 4]</p>
-      <p>$$\text{Critical Line Equation: } W_B = 0.70 - W_A$$[cite: 4]</p>
-      <p>For $W_A = \frac{₹ 4,000}{₹ 8,000} = 0.50$[cite: 4]:</p>
+      <p>$$0.40 = a + 0.30 b \\quad \\text{--- (1)}$$[cite: 4]</p>
+      <p>$$0.50 = a + 0.20 b \\quad \\text{--- (2)}$$[cite: 4]</p>
+      <p>Subtracting (1) from (2): $0.10 = -0.10 b \\implies b = \\mathbf{-1.0}$[cite: 4].</p>
+      <p>$$0.40 = a + 0.30(-1) \\implies a = \\mathbf{0.70}$$[cite: 4]</p>
+      <p>$$\\text{Critical Line Equation: } W_B = 0.70 - W_A$$[cite: 4]</p>
+      <p>For $W_A = \\frac{₹ 4,000}{₹ 8,000} = 0.50$[cite: 4]:</p>
       <ul>
-        <li>$$W_B = 0.70 - 0.50 = \mathbf{0.20} \implies ₹ 8,000 \times 0.20 = \mathbf{₹ 1,600 \text{ in Security B}}$$[cite: 4]</li>
-        <li>$$W_C = 1 - W_A - W_B = 1 - 0.50 - 0.20 = \mathbf{0.30} \implies ₹ 8,000 \times 0.30 = \mathbf{₹ 2,400 \text{ in Security C}}$$[cite: 4]</li>
+        <li>$$W_B = 0.70 - 0.50 = \\mathbf{0.20} \\implies ₹ 8,000 \\times 0.20 = \\mathbf{₹ 1,600 \\text{ in Security B}}$$[cite: 4]</li>
+        <li>$$W_C = 1 - W_A - W_B = 1 - 0.50 - 0.20 = \\mathbf{0.30} \\implies ₹ 8,000 \\times 0.30 = \\mathbf{₹ 2,400 \\text{ in Security C}}$$[cite: 4]</li>
       </ul>
     `
   },
@@ -6565,36 +6565,36 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Portfolio Return for Year Ended 31.03.2010</h4>
       <ul>
-        <li><strong>M Ltd.:</strong> Dividend $= 10\% \times ₹ 100 = ₹ 10$; Cap Gain $= ₹ 220 - ₹ 200 = ₹ 20 \implies \text{Return} = \frac{30}{200} = \mathbf{15.00\%}$[cite: 4]</li>
-        <li><strong>N Ltd.:</strong> Dividend $= 30\% \times ₹ 10 = ₹ 3$; Cap Loss $= ₹ 290 - ₹ 300 = -₹ 10 \implies \text{Return} = \frac{-7}{300} = \mathbf{-2.33\%}$[cite: 4]</li>
-        <li>Cost Weights: M Ltd. $= \frac{2,00,000}{3,50,000} = 57.14\%$; N Ltd. $= \frac{1,50,000}{3,50,000} = 42.86\%[cite: 4]$</li>
-        <li>$$\text{Weighted Average Return (2009-10)} = (0.5714 \times 15\%) + [0.4286 \times (-2.33\%)] = \mathbf{7.55\%}$$[cite: 4]</li>
+        <li><strong>M Ltd.:</strong> Dividend $= 10\\% \\times ₹ 100 = ₹ 10$; Cap Gain $= ₹ 220 - ₹ 200 = ₹ 20 \\implies \\text{Return} = \\frac{30}{200} = \\mathbf{15.00\\%}$[cite: 4]</li>
+        <li><strong>N Ltd.:</strong> Dividend $= 30\\% \\times ₹ 10 = ₹ 3$; Cap Loss $= ₹ 290 - ₹ 300 = -₹ 10 \\implies \\text{Return} = \\frac{-7}{300} = \\mathbf{-2.33\\%}$[cite: 4]</li>
+        <li>Cost Weights: M Ltd. $= \\frac{2,00,000}{3,50,000} = 57.14\\%$; N Ltd. $= \\frac{1,50,000}{3,50,000} = 42.86\\%[cite: 4]$</li>
+        <li>$$\\text{Weighted Average Return (2009-10)} = (0.5714 \\times 15\\%) + [0.4286 \\times (-2.33\\%)] = \\mathbf{7.55\\%}$$[cite: 4]</li>
       </ul>
 
       <h4>(ii) Expected Return for 2010&ndash;11</h4>
       <ul>
-        <li>Expected Price (M Ltd.) $= (220 \times 0.2) + (250 \times 0.5) + (280 \times 0.3) = 44 + 125 + 84 = ₹ 253$[cite: 4]
-          <br />$$\text{Return (M Ltd.)} = \frac{(253 - 220) + 20}{220} = \frac{53}{220} = \mathbf{24.09\%}$$[cite: 4]
+        <li>Expected Price (M Ltd.) $= (220 \\times 0.2) + (250 \\times 0.5) + (280 \\times 0.3) = 44 + 125 + 84 = ₹ 253$[cite: 4]
+          <br />$$\\text{Return (M Ltd.)} = \\frac{(253 - 220) + 20}{220} = \\frac{53}{220} = \\mathbf{24.09\\%}$$[cite: 4]
         </li>
-        <li>Expected Price (N Ltd.) $= (290 \times 0.2) + (310 \times 0.5) + (330 \times 0.3) = 58 + 155 + 99 = ₹ 312$[cite: 4]
-          <br />$$\text{Return (N Ltd.)} = \frac{(312 - 290) + 3.50}{290} = \frac{25.50}{290} = \mathbf{8.79\%}$$[cite: 4]
+        <li>Expected Price (N Ltd.) $= (290 \\times 0.2) + (310 \\times 0.5) + (330 \\times 0.3) = 58 + 155 + 99 = ₹ 312$[cite: 4]
+          <br />$$\\text{Return (N Ltd.)} = \\frac{(312 - 290) + 3.50}{290} = \\frac{25.50}{290} = \\mathbf{8.79\\%}$$[cite: 4]
         </li>
-        <li>Market Value Weights (01.04.2010): M Ltd. $= 1,000 \times 220 = ₹ 2,20,000$ (60.3%); N Ltd. $= 500 \times 290 = ₹ 1,45,000$ (39.7%)[cite: 4]</li>
-        <li>$$\text{Expected Portfolio Return (2010-11)} = (0.603 \times 24.09\%) + (0.397 \times 8.79\%) = \mathbf{18.02\%}$$[cite: 4]</li>
+        <li>Market Value Weights (01.04.2010): M Ltd. $= 1,000 \\times 220 = ₹ 2,20,000$ (60.3%); N Ltd. $= 500 \\times 290 = ₹ 1,45,000$ (39.7%)[cite: 4]</li>
+        <li>$$\\text{Expected Portfolio Return (2010-11)} = (0.603 \\times 24.09\\%) + (0.397 \\times 8.79\\%) = \\mathbf{18.02\\%}$$[cite: 4]</li>
       </ul>
 
       <h4>(iii) Standard Deviation Comparison</h4>
       <ul>
         <li><strong>M Ltd. (in ₹ terms):</strong>
-          <br />$$\sigma_M^2 = 0.2(20 - 53)^2 + 0.5(50 - 53)^2 + 0.3(80 - 53)^2 = 217.8 + 4.5 + 218.7 = 441 \implies \sigma_M = \mathbf{₹ 21}$$[cite: 4]
-          <br /><small><em>(In % terms: $\sigma_M = \frac{21}{220} = \mathbf{9.54\%}$)</em></small>[cite: 4]
+          <br />$$\\sigma_M^2 = 0.2(20 - 53)^2 + 0.5(50 - 53)^2 + 0.3(80 - 53)^2 = 217.8 + 4.5 + 218.7 = 441 \\implies \\sigma_M = \\mathbf{₹ 21}$$[cite: 4]
+          <br /><small><em>(In % terms: $\\sigma_M = \\frac{21}{220} = \\mathbf{9.54\\%}$)</em></small>[cite: 4]
         </li>
         <li><strong>N Ltd. (in ₹ terms):</strong>
-          <br />$$\sigma_N^2 = 0.2(3.5 - 25.5)^2 + 0.5(23.5 - 25.5)^2 + 0.3(43.5 - 25.5)^2 = 96.8 + 2.0 + 97.2 = 196 \implies \sigma_N = \mathbf{₹ 14}$$[cite: 4]
-          <br /><small><em>(In % terms: $\sigma_N = \frac{14}{290} = \mathbf{4.83\%}$)</em></small>[cite: 4]
+          <br />$$\\sigma_N^2 = 0.2(3.5 - 25.5)^2 + 0.5(23.5 - 25.5)^2 + 0.3(43.5 - 25.5)^2 = 96.8 + 2.0 + 97.2 = 196 \\implies \\sigma_N = \\mathbf{₹ 14}$$[cite: 4]
+          <br /><small><em>(In % terms: $\\sigma_N = \\frac{14}{290} = \\mathbf{4.83\\%}$)</em></small>[cite: 4]
         </li>
       </ul>
-      <p><strong>Advice:</strong> M Ltd. has greater risk ($\sigma = 9.54\%$ vs. $4.83\%$) than N Ltd.[cite: 4]</p>
+      <p><strong>Advice:</strong> M Ltd. has greater risk ($\\sigma = 9.54\\%$ vs. $4.83\\%$) than N Ltd.[cite: 4]</p>
     `
   },
   {
@@ -6632,32 +6632,32 @@ const icaibookData = [
     solution_html: `
       <h4>1. Expected Returns and Market Variance</h4>
       <ul>
-        <li>$$E(R_A) = (0.40 \times 25) + (0.30 \times 10) + [0.30 \times (-5)] = 10 + 3 - 1.5 = \mathbf{11.50\%}$$[cite: 4]</li>
-        <li>$$E(R_B) = (0.40 \times 20) + (0.30 \times 15) + [0.30 \times (-8)] = 8 + 4.5 - 2.4 = \mathbf{10.10\%}$$[cite: 4]</li>
-        <li>$$E(R_M) = (0.40 \times 18) + (0.30 \times 13) + [0.30 \times (-3)] = 7.2 + 3.9 - 0.9 = \mathbf{10.20\%}$$[cite: 4]</li>
-        <li>$$\sigma_M^2 = 0.4(18 - 10.2)^2 + 0.3(13 - 10.2)^2 + 0.3(-3 - 10.2)^2 = 24.336 + 2.352 + 52.272 = \mathbf{78.96}$$[cite: 4]</li>
+        <li>$$E(R_A) = (0.40 \\times 25) + (0.30 \\times 10) + [0.30 \\times (-5)] = 10 + 3 - 1.5 = \\mathbf{11.50\\%}$$[cite: 4]</li>
+        <li>$$E(R_B) = (0.40 \\times 20) + (0.30 \\times 15) + [0.30 \\times (-8)] = 8 + 4.5 - 2.4 = \\mathbf{10.10\\%}$$[cite: 4]</li>
+        <li>$$E(R_M) = (0.40 \\times 18) + (0.30 \\times 13) + [0.30 \\times (-3)] = 7.2 + 3.9 - 0.9 = \\mathbf{10.20\\%}$$[cite: 4]</li>
+        <li>$$\\sigma_M^2 = 0.4(18 - 10.2)^2 + 0.3(13 - 10.2)^2 + 0.3(-3 - 10.2)^2 = 24.336 + 2.352 + 52.272 = \\mathbf{78.96}$$[cite: 4]</li>
       </ul>
 
       <h4>2. Covariance and Beta Computations</h4>
       <ul>
-        <li>$$\text{Cov}(A, M) = 0.4(13.5)(7.8) + 0.3(-1.5)(2.8) + 0.3(-16.5)(-13.2) = 42.12 - 1.26 + 65.34 = \mathbf{106.20}$$[cite: 4]</li>
-        <li>$$\beta_A = \frac{106.20}{78.96} = \mathbf{1.345}$$[cite: 4]</li>
-        <li>$$\text{Cov}(B, M) = 0.4(9.9)(7.8) + 0.3(4.9)(2.8) + 0.3(-18.1)(-13.2) = 30.888 + 4.116 + 71.676 = \mathbf{106.68}$$[cite: 4]</li>
-        <li>$$\beta_B = \frac{106.68}{78.96} = \mathbf{1.351}$$[cite: 4]</li>
+        <li>$$\\text{Cov}(A, M) = 0.4(13.5)(7.8) + 0.3(-1.5)(2.8) + 0.3(-16.5)(-13.2) = 42.12 - 1.26 + 65.34 = \\mathbf{106.20}$$[cite: 4]</li>
+        <li>$$\\beta_A = \\frac{106.20}{78.96} = \\mathbf{1.345}$$[cite: 4]</li>
+        <li>$$\\text{Cov}(B, M) = 0.4(9.9)(7.8) + 0.3(4.9)(2.8) + 0.3(-18.1)(-13.2) = 30.888 + 4.116 + 71.676 = \\mathbf{106.68}$$[cite: 4]</li>
+        <li>$$\\beta_B = \\frac{106.68}{78.96} = \\mathbf{1.351}$$[cite: 4]</li>
       </ul>
 
-      <h4>3. CAPM Required Returns and Alpha Evaluation ($R_f = 11\%$)</h4>
+      <h4>3. CAPM Required Returns and Alpha Evaluation ($R_f = 11\\%$)</h4>
       <ul>
         <li><strong>Stock A:</strong>
-          <br />$$\text{Req}(R_A) = 11\% + 1.345(10.2\% - 11\%) = 11\% - 1.076\% = \mathbf{9.924\%}$$[cite: 4]
-          <br />$$\alpha_A = 11.50\% - 9.924\% = \mathbf{+1.576\%}$$[cite: 4]
+          <br />$$\\text{Req}(R_A) = 11\\% + 1.345(10.2\\% - 11\\%) = 11\\% - 1.076\\% = \\mathbf{9.924\\%}$$[cite: 4]
+          <br />$$\\alpha_A = 11.50\\% - 9.924\\% = \\mathbf{+1.576\\%}$$[cite: 4]
         </li>
         <li><strong>Stock B:</strong>
-          <br />$$\text{Req}(R_B) = 11\% + 1.351(10.2\% - 11\%) = 11\% - 1.081\% = \mathbf{9.919\% \approx 9.92\%}$$[cite: 4]
-          <br />$$\alpha_B = 10.10\% - 9.92\% = \mathbf{+0.18\%}$$[cite: 4]
+          <br />$$\\text{Req}(R_B) = 11\\% + 1.351(10.2\\% - 11\\%) = 11\\% - 1.081\\% = \\mathbf{9.919\\% \\approx 9.92\\%}$$[cite: 4]
+          <br />$$\\alpha_B = 10.10\\% - 9.92\\% = \\mathbf{+0.18\\%}$$[cite: 4]
         </li>
       </ul>
-      <p><strong>Conclusion:</strong> Both stocks have positive Alphas ($\alpha > 0$) and are underpriced relative to their CAPM risk profile[cite: 4]. The investor should <strong>make fresh investments</strong> in both stocks[cite: 4].</p>
+      <p><strong>Conclusion:</strong> Both stocks have positive Alphas ($\\alpha > 0$) and are underpriced relative to their CAPM risk profile[cite: 4]. The investor should <strong>make fresh investments</strong> in both stocks[cite: 4].</p>
     `
   },
   {
@@ -6687,7 +6687,7 @@ const icaibookData = [
           </tbody>
         </table>
       </div>
-      <p>Standard deviation of market portfolio returns = 10% ($\sigma_M^2 = 0.01$)[cite: 4]. Additional covariances: $\text{Cov}(A, B) = 0.030, \text{Cov}(A, C) = 0.020, \text{Cov}(B, C) = 0.040$[cite: 4]. Calculate:</p>
+      <p>Standard deviation of market portfolio returns = 10% ($\\sigma_M^2 = 0.01$)[cite: 4]. Additional covariances: $\\text{Cov}(A, B) = 0.030, \\text{Cov}(A, C) = 0.020, \\text{Cov}(B, C) = 0.040$[cite: 4]. Calculate:</p>
       <ol type="i">
         <li>The Portfolio Beta[cite: 4].</li>
         <li>Residual variance of each of the three shares[cite: 4].</li>
@@ -6697,26 +6697,26 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(i) Portfolio Beta</h4>
-      <p>$$\beta_p = (0.20 \times 0.40) + (0.50 \times 0.50) + (0.30 \times 1.10) = 0.08 + 0.25 + 0.33 = \mathbf{0.66}$$[cite: 4]</p>
+      <p>$$\\beta_p = (0.20 \\times 0.40) + (0.50 \\times 0.50) + (0.30 \\times 1.10) = 0.08 + 0.25 + 0.33 = \\mathbf{0.66}$$[cite: 4]</p>
 
-      <h4>(ii) Residual Variance ($\sigma_{ei}^2 = \sigma_i^2 - \beta_i^2 \sigma_M^2$)</h4>
-      <p>$$\sigma_M^2 = (0.10)^2 = 0.01$$[cite: 4]</p>
+      <h4>(ii) Residual Variance ($\\sigma_{ei}^2 = \\sigma_i^2 - \\beta_i^2 \\sigma_M^2$)</h4>
+      <p>$$\\sigma_M^2 = (0.10)^2 = 0.01$$[cite: 4]</p>
       <ul>
-        <li><strong>Share A:</strong> $0.015 - (0.40)^2(0.01) = 0.015 - 0.0016 = \mathbf{0.0134}$[cite: 4]</li>
-        <li><strong>Share B:</strong> $0.025 - (0.50)^2(0.01) = 0.025 - 0.0025 = \mathbf{0.0225}$[cite: 4]</li>
-        <li><strong>Share C:</strong> $0.100 - (1.10)^2(0.01) = 0.100 - 0.0121 = \mathbf{0.0879}$[cite: 4]</li>
+        <li><strong>Share A:</strong> $0.015 - (0.40)^2(0.01) = 0.015 - 0.0016 = \\mathbf{0.0134}$[cite: 4]</li>
+        <li><strong>Share B:</strong> $0.025 - (0.50)^2(0.01) = 0.025 - 0.0025 = \\mathbf{0.0225}$[cite: 4]</li>
+        <li><strong>Share C:</strong> $0.100 - (1.10)^2(0.01) = 0.100 - 0.0121 = \\mathbf{0.0879}$[cite: 4]</li>
       </ul>
 
       <h4>(iii) Portfolio Variance (Sharpe Index Model)</h4>
-      <p>$$\sigma_p^2 = \beta_p^2 \sigma_M^2 + \sum w_i^2 \sigma_{ei}^2$$[cite: 4]</p>
-      <p>$$\text{Systematic Variance} = (0.66)^2 \times 0.01 = 0.4356 \times 0.01 = \mathbf{0.004356}$$[cite: 4]</p>
-      <p>$$\text{Unsystematic Variance} = (0.2)^2(0.0134) + (0.5)^2(0.0225) + (0.3)^2(0.0879) = 0.000536 + 0.005625 + 0.007911 = \mathbf{0.014072}$$[cite: 4]</p>
-      <p>$$\sigma_p^2 = 0.004356 + 0.014072 = \mathbf{0.018428}$$[cite: 4]</p>
+      <p>$$\\sigma_p^2 = \\beta_p^2 \\sigma_M^2 + \\sum w_i^2 \\sigma_{ei}^2$$[cite: 4]</p>
+      <p>$$\\text{Systematic Variance} = (0.66)^2 \\times 0.01 = 0.4356 \\times 0.01 = \\mathbf{0.004356}$$[cite: 4]</p>
+      <p>$$\\text{Unsystematic Variance} = (0.2)^2(0.0134) + (0.5)^2(0.0225) + (0.3)^2(0.0879) = 0.000536 + 0.005625 + 0.007911 = \\mathbf{0.014072}$$[cite: 4]</p>
+      <p>$$\\sigma_p^2 = 0.004356 + 0.014072 = \\mathbf{0.018428}$$[cite: 4]</p>
 
       <h4>(iv) Portfolio Variance (Markowitz Model)</h4>
-      <p>$$\sigma_p^2 = \sum w_i^2 \sigma_i^2 + 2 \sum w_i w_j \text{Cov}_{ij}$$[cite: 4]</p>
-      <p>$$\sigma_p^2 = (0.2)^2(0.015) + (0.5)^2(0.025) + (0.3)^2(0.100) + 2(0.2)(0.5)(0.030) + 2(0.2)(0.3)(0.020) + 2(0.5)(0.3)(0.040)$$[cite: 4]</p>
-      <p>$$\sigma_p^2 = 0.0006 + 0.00625 + 0.0090 + 0.0060 + 0.0024 + 0.0120 = \mathbf{0.03625 \approx 0.0363}$$[cite: 4]</p>
+      <p>$$\\sigma_p^2 = \\sum w_i^2 \\sigma_i^2 + 2 \\sum w_i w_j \\text{Cov}_{ij}$$[cite: 4]</p>
+      <p>$$\\sigma_p^2 = (0.2)^2(0.015) + (0.5)^2(0.025) + (0.3)^2(0.100) + 2(0.2)(0.5)(0.030) + 2(0.2)(0.3)(0.020) + 2(0.5)(0.3)(0.040)$$[cite: 4]</p>
+      <p>$$\\sigma_p^2 = 0.0006 + 0.00625 + 0.0090 + 0.0060 + 0.0024 + 0.0120 = \\mathbf{0.03625 \\approx 0.0363}$$[cite: 4]</p>
     `
   },
   {
@@ -6748,7 +6748,7 @@ const icaibookData = [
           </tbody>
         </table>
       </div>
-      <p>Market index variance is 10% ($\sigma_m^2 = 10$) and the risk-free rate is 7%[cite: 4]. Determine the <strong>optimum portfolio</strong> using Sharpe's single-index formulation assuming no short sales[cite: 4].</p>
+      <p>Market index variance is 10% ($\\sigma_m^2 = 10$) and the risk-free rate is 7%[cite: 4]. Determine the <strong>optimum portfolio</strong> using Sharpe's single-index formulation assuming no short sales[cite: 4].</p>
     `,
     solution_html: `
       <h4>1. Ranking Securities by Treynor Ratio / Excess Return to Beta</h4>
@@ -6758,9 +6758,9 @@ const icaibookData = [
             <tr style="background-color:#f2f2f2;">
               <th style="padding:6px; border:1px solid #ddd;">Security</th>
               <th style="padding:6px; border:1px solid #ddd;">$R_i - R_f$</th>
-              <th style="padding:6px; border:1px solid #ddd;">$\beta_i$</th>
-              <th style="padding:6px; border:1px solid #ddd;">$\sigma_{ei}^2$</th>
-              <th style="padding:6px; border:1px solid #ddd;">$\frac{R_i - R_f}{\beta_i}$</th>
+              <th style="padding:6px; border:1px solid #ddd;">$\\beta_i$</th>
+              <th style="padding:6px; border:1px solid #ddd;">$\\sigma_{ei}^2$</th>
+              <th style="padding:6px; border:1px solid #ddd;">$\\frac{R_i - R_f}{\\beta_i}$</th>
               <th style="padding:6px; border:1px solid #ddd;">Rank</th>
             </tr>
           </thead>
@@ -6776,16 +6776,16 @@ const icaibookData = [
       </div>
 
       <h4>2. Calculation of Cut-off Point ($C_i$)</h4>
-      <p>$$C_i = \frac{\sigma_m^2 \sum_{j=1}^i \frac{(R_j - R_f)\beta_j}{\sigma_{ej}^2}}{1 + \sigma_m^2 \sum_{j=1}^i \frac{\beta_j^2}{\sigma_{ej}^2}}$$[cite: 4]</p>
+      <p>$$C_i = \\frac{\\sigma_m^2 \\sum_{j=1}^i \\frac{(R_j - R_f)\\beta_j}{\\sigma_{ej}^2}}{1 + \\sigma_m^2 \\sum_{j=1}^i \\frac{\\beta_j^2}{\\sigma_{ej}^2}}$$[cite: 4]</p>
       <div style="overflow-x:auto;">
         <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
           <thead>
             <tr style="background-color:#f2f2f2;">
               <th style="padding:6px; border:1px solid #ddd;">Stock</th>
-              <th style="padding:6px; border:1px solid #ddd;">$\frac{(R_i - R_f)\beta_i}{\sigma_{ei}^2}$</th>
-              <th style="padding:6px; border:1px solid #ddd;">$\sum \frac{(R_i - R_f)\beta_i}{\sigma_{ei}^2}$</th>
-              <th style="padding:6px; border:1px solid #ddd;">$\frac{\beta_i^2}{\sigma_{ei}^2}$</th>
-              <th style="padding:6px; border:1px solid #ddd;">$\sum \frac{\beta_i^2}{\sigma_{ei}^2}$</th>
+              <th style="padding:6px; border:1px solid #ddd;">$\\frac{(R_i - R_f)\\beta_i}{\\sigma_{ei}^2}$</th>
+              <th style="padding:6px; border:1px solid #ddd;">$\\sum \\frac{(R_i - R_f)\\beta_i}{\\sigma_{ei}^2}$</th>
+              <th style="padding:6px; border:1px solid #ddd;">$\\frac{\\beta_i^2}{\\sigma_{ei}^2}$</th>
+              <th style="padding:6px; border:1px solid #ddd;">$\\sum \\frac{\\beta_i^2}{\\sigma_{ei}^2}$</th>
               <th style="padding:6px; border:1px solid #ddd;">$C_i$</th>
             </tr>
           </thead>
@@ -6799,17 +6799,17 @@ const icaibookData = [
           </tbody>
         </table>
       </div>
-      <p>The maximum cut-off point is $C^* = \mathbf{2.814}$ at Security F[cite: 4]. All securities with $\frac{R_i - R_f}{\beta_i} > 2.814$ are selected (Securities A and F)[cite: 4].</p>
+      <p>The maximum cut-off point is $C^* = \\mathbf{2.814}$ at Security F[cite: 4]. All securities with $\\frac{R_i - R_f}{\\beta_i} > 2.814$ are selected (Securities A and F)[cite: 4].</p>
 
       <h4>3. Optimal Weights for Selected Securities</h4>
-      <p>$$Z_i = \frac{\beta_i}{\sigma_{ei}^2} \left[\frac{R_i - R_f}{\beta_i} - C^*\right]$$[cite: 4]</p>
+      <p>$$Z_i = \\frac{\\beta_i}{\\sigma_{ei}^2} \\left[\\frac{R_i - R_f}{\\beta_i} - C^*\\right]$$[cite: 4]</p>
       <ul>
-        <li>$$Z_A = \frac{1.5}{40} [5.33 - 2.814] = 0.0375 \times 2.516 = \mathbf{0.09435}$$[cite: 4]</li>
-        <li>$$Z_F = \frac{1.5}{30} [4.67 - 2.814] = 0.0500 \times 1.856 = \mathbf{0.09280}$$[cite: 4]</li>
-        <li>$$\sum Z_i = 0.09435 + 0.09280 = 0.18715$$[cite: 4]</li>
+        <li>$$Z_A = \\frac{1.5}{40} [5.33 - 2.814] = 0.0375 \\times 2.516 = \\mathbf{0.09435}$$[cite: 4]</li>
+        <li>$$Z_F = \\frac{1.5}{30} [4.67 - 2.814] = 0.0500 \\times 1.856 = \\mathbf{0.09280}$$[cite: 4]</li>
+        <li>$$\\sum Z_i = 0.09435 + 0.09280 = 0.18715$$[cite: 4]</li>
       </ul>
-      <p>$$X_A = \frac{0.09435}{0.18715} = \mathbf{50.41\%}$$[cite: 4]</p>
-      <p>$$X_F = \frac{0.09280}{0.18715} = \mathbf{49.59\%}$$[cite: 4]</p>
+      <p>$$X_A = \\frac{0.09435}{0.18715} = \\mathbf{50.41\\%}$$[cite: 4]</p>
+      <p>$$X_F = \\frac{0.09280}{0.18715} = \\mathbf{49.59\\%}$$[cite: 4]</p>
     `
   },
   {
@@ -6849,21 +6849,21 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Portfolio Beta</h4>
       <ul>
-        <li>VSL: $10,000 \times 50 = ₹ 5,00,000$; Weighted $\beta = 5,00,000 \times 0.9 = 4,50,000$[cite: 4]</li>
-        <li>CSL: $5,00,000 \times 10^{-1} = ₹ 1,00,000$; Weighted $\beta = 1,00,000 \times 1.0 = 1,00,000$[cite: 4]</li>
-        <li>SML: $8,000 \times 25 = ₹ 2,00,000$; Weighted $\beta = 2,00,000 \times 1.5 = 3,00,000$[cite: 4]</li>
-        <li>APL: $2,000 \times 200 = ₹ 4,00,000$; Weighted $\beta = 4,00,000 \times 1.2 = 4,80,000$[cite: 4]</li>
-        <li>Total Value $= \mathbf{₹ 12,00,000}$; Total Weighted $\beta = \mathbf{13,30,000}$[cite: 4]</li>
+        <li>VSL: $10,000 \\times 50 = ₹ 5,00,000$; Weighted $\\beta = 5,00,000 \\times 0.9 = 4,50,000$[cite: 4]</li>
+        <li>CSL: $5,00,000 \\times 10^{-1} = ₹ 1,00,000$; Weighted $\\beta = 1,00,000 \\times 1.0 = 1,00,000$[cite: 4]</li>
+        <li>SML: $8,000 \\times 25 = ₹ 2,00,000$; Weighted $\\beta = 2,00,000 \\times 1.5 = 3,00,000$[cite: 4]</li>
+        <li>APL: $2,000 \\times 200 = ₹ 4,00,000$; Weighted $\\beta = 4,00,000 \\times 1.2 = 4,80,000$[cite: 4]</li>
+        <li>Total Value $= \\mathbf{₹ 12,00,000}$; Total Weighted $\\beta = \\mathbf{13,30,000}$[cite: 4]</li>
       </ul>
-      <p>$$\beta_p = \frac{13,30,000}{12,00,000} = \mathbf{1.108}$$[cite: 4]</p>
+      <p>$$\\beta_p = \\frac{13,30,000}{12,00,000} = \\mathbf{1.108}$$[cite: 4]</p>
 
       <h4>(ii) Additional Risk-Free Investment to Reduce Beta to 0.8</h4>
-      <p>$$\frac{13,30,000}{12,00,000 + X} = 0.80 \implies 13,30,000 = 9,60,000 + 0.80X$$[cite: 4]</p>
-      <p>$$0.80X = 3,70,000 \implies X = \mathbf{₹ 4,62,500} \quad (\text{or } ₹ 4,62,050 \text{ using rounded proportions})[cite: 4]$$</p>
+      <p>$$\\frac{13,30,000}{12,00,000 + X} = 0.80 \\implies 13,30,000 = 9,60,000 + 0.80X$$[cite: 4]</p>
+      <p>$$0.80X = 3,70,000 \\implies X = \\mathbf{₹ 4,62,500} \\quad (\\text{or } ₹ 4,62,050 \\text{ using rounded proportions})[cite: 4]$$</p>
 
       <h4>(iii) Risk-Free Divestment / Borrowing to Increase Beta to 1.2</h4>
-      <p>$$\frac{13,30,000}{12,00,000 + Y} = 1.20 \implies 13,30,000 = 14,40,000 + 1.20Y$$[cite: 4]</p>
-      <p>$$1.20Y = -1,10,000 \implies Y = \mathbf{-₹ 91,667} \quad (\text{divest/borrow } ₹ 91,667 \text{ to } ₹ 91,970)[cite: 4]$$</p>
+      <p>$$\\frac{13,30,000}{12,00,000 + Y} = 1.20 \\implies 13,30,000 = 14,40,000 + 1.20Y$$[cite: 4]</p>
+      <p>$$1.20Y = -1,10,000 \\implies Y = \\mathbf{-₹ 91,667} \\quad (\\text{divest/borrow } ₹ 91,667 \\text{ to } ₹ 91,970)[cite: 4]$$</p>
     `
   },
   {
@@ -6893,19 +6893,19 @@ const icaibookData = [
           </tbody>
         </table>
       </div>
-      <p>Find out the risk (Standard Deviation) of the portfolio if the market standard deviation is 18% ($\sigma_m = 18\%$)[cite: 4].</p>
+      <p>Find out the risk (Standard Deviation) of the portfolio if the market standard deviation is 18% ($\\sigma_m = 18\\%$).</p>
     `,
     solution_html: `
       <h4>1. Portfolio Beta</h4>
-      <p>$$\beta_p = (0.25 \times 1.60) + (0.30 \times 1.15) + (0.25 \times 1.40) + (0.20 \times 1.00) = 0.40 + 0.345 + 0.35 + 0.20 = \mathbf{1.295}$$[cite: 4]</p>
+      <p>$$\\beta_p = (0.25 \\times 1.60) + (0.30 \\times 1.15) + (0.25 \\times 1.40) + (0.20 \\times 1.00) = 0.40 + 0.345 + 0.35 + 0.20 = \\mathbf{1.295}$$</p>
 
       <h4>2. Portfolio Variance and Standard Deviation</h4>
-      <p>$$\sigma_p^2 = \beta_p^2 \sigma_m^2 + \sum w_i^2 \sigma_{ei}^2$$[cite: 4]</p>
-      <p>$$\text{Systematic Variance} = (1.295)^2 \times (18)^2 = 1.677025 \times 324 = \mathbf{543.356}$$[cite: 4]</p>
-      <p>$$\text{Unsystematic Variance} = (0.25)^2(7)^2 + (0.30)^2(11)^2 + (0.25)^2(3)^2 + (0.20)^2(9)^2$$[cite: 4]</p>
-      <p>$$\text{Unsystematic Variance} = 3.0625 + 10.89 + 0.5625 + 3.24 = \mathbf{17.755}$$[cite: 4]</p>
-      <p>$$\sigma_p^2 = 543.356 + 17.755 = \mathbf{561.111}$$[cite: 4]</p>
-      <p>$$\sigma_p = \sqrt{561.111} = \mathbf{23.69\%}$$[cite: 4]</p>
+      <p>$$\\sigma_p^2 = \\beta_p^2 \\sigma_m^2 + \\sum w_i^2 \\sigma_{ei}^2$$</p>
+      <p>$$\\text{Systematic Variance} = (1.295)^2 \\times (18)^2 = 1.677025 \\times 324 = \\mathbf{543.356}$$</p>
+      <p>$$\\text{Unsystematic Variance} = (0.25)^2(7)^2 + (0.30)^2(11)^2 + (0.25)^2(3)^2 + (0.20)^2(9)^2$$</p>
+      <p>$$\\text{Unsystematic Variance} = 3.0625 + 10.89 + 0.5625 + 3.24 = \\mathbf{17.755}$$</p>
+      <p>$$\\sigma_p^2 = 543.356 + 17.755 = \\mathbf{561.111}$$</p>
+      <p>$$\\sigma_p = \\sqrt{561.111} = \\mathbf{23.69\\%}$$</p>
     `
   },
   {
@@ -6945,9 +6945,9 @@ const icaibookData = [
           <thead>
             <tr style="background-color:#f2f2f2;">
               <th style="padding:6px; border:1px solid #ddd;">Macroeconomic Factor</th>
-              <th style="padding:6px; border:1px solid #ddd;">Beta ($\beta$)</th>
-              <th style="padding:6px; border:1px solid #ddd;">Surprise $(\text{Actual} - \text{Expected})$</th>
-              <th style="padding:6px; border:1px solid #ddd;">Impact $\beta \times \text{Surprise}$ (%)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Beta ($\\beta$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Surprise $(\\text{Actual} - \\text{Expected})$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Impact $\\beta \\times \\text{Surprise}$ (%)</th>
             </tr>
           </thead>
           <tbody>
@@ -6965,7 +6965,7 @@ const icaibookData = [
       </div>
 
       <h4>2. Expected Total Return</h4>
-      <p>$$E(R) = R_f + \sum \beta_i (\text{Actual}_i - \text{Expected}_i) = 9.25\% + 8.16\% = \mathbf{17.41\%}$$[cite: 4]</p>
+      <p>$$E(R) = R_f + \\sum \\beta_i (\\text{Actual}_i - \\text{Expected}_i) = 9.25\\% + 8.16\\% = \\mathbf{17.41\\%}$$[cite: 4]</p>
     `
   },
   {
@@ -6983,19 +6983,19 @@ const icaibookData = [
       </ol>
     `,
     solution_html: `
-      <h4>(i) Asset Beta ($\beta_{\text{asset}}$)</h4>
-      <p>Assuming debt is risk-free ($\beta_D = 0$)[cite: 4]:</p>
-      <p>$$\beta_{\text{asset}} = \beta_E \left[\frac{V_E}{V_0}\right] + \beta_D \left[\frac{V_D}{V_0}\right] = 1.5 \left[\frac{₹ 60\text{L}}{₹ 100\text{L}}\right] + 0 = \mathbf{0.90}$$[cite: 4]</p>
+      <h4>(i) Asset Beta ($\\beta_{\\text{asset}}$)</h4>
+      <p>Assuming debt is risk-free ($\\beta_D = 0$)[cite: 4]:</p>
+      <p>$$\\beta_{\\text{asset}} = \\beta_E \\left[\\frac{V_E}{V_0}\\right] + \\beta_D \\left[\\frac{V_D}{V_0}\\right] = 1.5 \\left[\\frac{₹ 60\\text{L}}{₹ 100\\text{L}}\\right] + 0 = \\mathbf{0.90}$$[cite: 4]</p>
 
       <h4>(ii) Cost of Capital / Project Discount Rate for Expansion</h4>
       <ul>
         <li><strong>Method A (Using Asset Beta):</strong>
-          $$\text{Project Discount Rate} = R_f + \beta_{\text{asset}}(R_m - R_f) = 8\% + 0.90(10\%) = \mathbf{17.00\%}$$[cite: 4]
+          $$\\text{Project Discount Rate} = R_f + \\beta_{\\text{asset}}(R_m - R_f) = 8\\% + 0.90(10\\%) = \\mathbf{17.00\\%}$$[cite: 4]
         </li>
         <li><strong>Method B (Using WACC):</strong>
-          <br />$$\text{Cost of Equity } (K_e) = 8\% + 1.5(10\%) = 23.00\%$$[cite: 4]
-          <br />$$\text{Cost of Debt } (K_d) = 8.00\%$$[cite: 4]
-          <br />$$\text{WACC} = \left(23\% \times \frac{60}{100}\right) + \left(8\% \times \frac{40}{100}\right) = 13.80\% + 3.20\% = \mathbf{17.00\%}$$[cite: 4]
+          <br />$$\\text{Cost of Equity } (K_e) = 8\\% + 1.5(10\\%) = 23.00\\%$$[cite: 4]
+          <br />$$\\text{Cost of Debt } (K_d) = 8.00\\%$$[cite: 4]
+          <br />$$\\text{WACC} = \\left(23\\% \\times \\frac{60}{100}\\right) + \\left(8\\% \\times \\frac{40}{100}\\right) = 13.80\\% + 3.20\\% = \\mathbf{17.00\\%}$$[cite: 4]
         </li>
       </ul>
     `
@@ -7044,22 +7044,22 @@ const icaibookData = [
     solution_html: `
       <h4>(a) Market Return Using Arbitrage Pricing Theory (APT)</h4>
       <ul>
-        <li>Small Cap Growth $= 4.5 + 0.80(6.85) + 1.39(-3.5) + 1.35(0.65) = \mathbf{5.9925\%}$[cite: 4]</li>
-        <li>Small Cap Value $= 4.5 + 0.90(6.85) + 0.75(-3.5) + 1.25(0.65) = \mathbf{8.8525\%}$[cite: 4]</li>
-        <li>Large Cap Growth $= 4.5 + 1.165(6.85) + 2.75(-3.5) + 8.65(0.65) = \mathbf{8.4780\%}$[cite: 4]</li>
-        <li>Large Cap Value $= 4.5 + 0.85(6.85) + 2.05(-3.5) + 6.75(0.65) = \mathbf{7.5350\%}$[cite: 4]</li>
+        <li>Small Cap Growth $= 4.5 + 0.80(6.85) + 1.39(-3.5) + 1.35(0.65) = \\mathbf{5.9925\\%}$[cite: 4]</li>
+        <li>Small Cap Value $= 4.5 + 0.90(6.85) + 0.75(-3.5) + 1.25(0.65) = \\mathbf{8.8525\\%}$[cite: 4]</li>
+        <li>Large Cap Growth $= 4.5 + 1.165(6.85) + 2.75(-3.5) + 8.65(0.65) = \\mathbf{8.4780\\%}$[cite: 4]</li>
+        <li>Large Cap Value $= 4.5 + 0.85(6.85) + 2.05(-3.5) + 6.75(0.65) = \\mathbf{7.5350\\%}$[cite: 4]</li>
       </ul>
-      <p>$$\text{Weighted Market Return} = (0.25 \times 5.9925) + (0.10 \times 8.8525) + (0.50 \times 8.4780) + (0.15 \times 7.5350) = \mathbf{7.7526\%}$$[cite: 4]</p>
+      <p>$$\\text{Weighted Market Return} = (0.25 \\times 5.9925) + (0.10 \\times 8.8525) + (0.50 \\times 8.4780) + (0.15 \\times 7.5350) = \\mathbf{7.7526\\%}$$[cite: 4]</p>
 
       <h4>(b) Market Return Using CAPM</h4>
-      <p>$$\text{Index Beta } (\beta_M) = (0.25 \times 0.80) + (0.10 \times 0.90) + (0.50 \times 1.165) + (0.15 \times 0.85) = 0.20 + 0.09 + 0.5825 + 0.1275 = \mathbf{1.00}$$[cite: 4]</p>
-      <p>$$E(R_M) = R_f + \beta_M(R_m - R_f) = 4.5\% + 1.0(6.85\%) = \mathbf{11.35\% \approx 11.33\%}$$[cite: 4]</p>
+      <p>$$\\text{Index Beta } (\\beta_M) = (0.25 \\times 0.80) + (0.10 \\times 0.90) + (0.50 \\times 1.165) + (0.15 \\times 0.85) = 0.20 + 0.09 + 0.5825 + 0.1275 = \\mathbf{1.00}$$[cite: 4]</p>
+      <p>$$E(R_M) = R_f + \\beta_M(R_m - R_f) = 4.5\\% + 1.0(6.85\\%) = \\mathbf{11.35\\% \\approx 11.33\\%}$$[cite: 4]</p>
 
-      <h4>(c) Portfolio Formulation for Target $\beta = 1.0$</h4>
+      <h4>(c) Portfolio Formulation for Target $\\beta = 1.0$</h4>
       <p>Let weight in Small Cap Value be $w$[cite: 4]:</p>
-      <p>$$w(0.90) + (1 - w)(1.165) = 1.00 \implies 1.165 - 0.265w = 1.00 \implies 0.265w = 0.165$$[cite: 4]</p>
-      <p>$$w = \frac{0.165}{0.265} = \mathbf{0.623 \text{ (62.3\% in Small Cap Value)}}$$[cite: 4]</p>
-      <p>$$\text{Weight in Large Cap Growth} = 1 - 0.623 = \mathbf{0.377 \text{ (37.7\%)}}$$[cite: 4]</p>
+      <p>$$w(0.90) + (1 - w)(1.165) = 1.00 \\implies 1.165 - 0.265w = 1.00 \\implies 0.265w = 0.165$$[cite: 4]</p>
+      <p>$$w = \\frac{0.165}{0.265} = \\mathbf{0.623 \\text{ (62.3\\% in Small Cap Value)}}$$[cite: 4]</p>
+      <p>$$\\text{Weight in Large Cap Growth} = 1 - 0.623 = \\mathbf{0.377 \\text{ (37.7\\%)}}$$[cite: 4]</p>
     `
   },
   {
@@ -7070,7 +7070,7 @@ const icaibookData = [
     placement: 53,
     marks: 6,
     question_html: `
-      <p>The following are data on five mutual funds ($R_f = 6\%$)[cite: 4]:</p>
+      <p>The following are data on five mutual funds ($R_f = 6\\%$)[cite: 4]:</p>
       <div style="overflow-x:auto;">
         <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
           <thead>
@@ -7100,8 +7100,8 @@ const icaibookData = [
             <tr style="background-color:#f2f2f2;">
               <th rowspan="2" style="padding:6px; border:1px solid #ddd;">Fund</th>
               <th rowspan="2" style="padding:6px; border:1px solid #ddd;">$R_i - R_f$</th>
-              <th colspan="2" style="padding:6px; border:1px solid #ddd;">Sharpe Ratio $\frac{R_i - R_f}{\sigma_i}$</th>
-              <th colspan="2" style="padding:6px; border:1px solid #ddd;">Treynor Ratio $\frac{R_i - R_f}{\beta_i}$</th>
+              <th colspan="2" style="padding:6px; border:1px solid #ddd;">Sharpe Ratio $\\frac{R_i - R_f}{\\sigma_i}$</th>
+              <th colspan="2" style="padding:6px; border:1px solid #ddd;">Treynor Ratio $\\frac{R_i - R_f}{\\beta_i}$</th>
             </tr>
             <tr style="background-color:#fafafa;">
               <th style="padding:6px; border:1px solid #ddd;">Ratio</th>
@@ -7111,11 +7111,11 @@ const icaibookData = [
             </tr>
           </thead>
           <tbody>
-            <tr><td>A</td><td>9</td><td>$\frac{9}{7} = \mathbf{1.285}$</td><td><strong>II</strong></td><td>$\frac{9}{1.25} = \mathbf{7.20}$</td><td><strong>II</strong></td></tr>
-            <tr><td>B</td><td>12</td><td>$\frac{12}{10} = \mathbf{1.200}$</td><td><strong>III</strong></td><td>$\frac{12}{0.75} = \mathbf{16.00}$</td><td><strong>I</strong></td></tr>
-            <tr><td>C</td><td>8</td><td>$\frac{8}{5} = \mathbf{1.600}$</td><td><strong>I</strong></td><td>$\frac{8}{1.40} = \mathbf{5.71}$</td><td><strong>V</strong></td></tr>
-            <tr><td>D</td><td>6</td><td>$\frac{6}{6} = \mathbf{1.000}$</td><td><strong>V</strong></td><td>$\frac{6}{0.98} = \mathbf{6.12}$</td><td><strong>IV</strong></td></tr>
-            <tr><td>E</td><td>10</td><td>$\frac{10}{9} = \mathbf{1.111}$</td><td><strong>IV</strong></td><td>$\frac{10}{1.50} = \mathbf{6.67}$</td><td><strong>III</strong></td></tr>
+            <tr><td>A</td><td>9</td><td>$\\frac{9}{7} = \\mathbf{1.285}$</td><td><strong>II</strong></td><td>$\\frac{9}{1.25} = \\mathbf{7.20}$</td><td><strong>II</strong></td></tr>
+            <tr><td>B</td><td>12</td><td>$\\frac{12}{10} = \\mathbf{1.200}$</td><td><strong>III</strong></td><td>$\\frac{12}{0.75} = \\mathbf{16.00}$</td><td><strong>I</strong></td></tr>
+            <tr><td>C</td><td>8</td><td>$\\frac{8}{5} = \\mathbf{1.600}$</td><td><strong>I</strong></td><td>$\\frac{8}{1.40} = \\mathbf{5.71}$</td><td><strong>V</strong></td></tr>
+            <tr><td>D</td><td>6</td><td>$\\frac{6}{6} = \\mathbf{1.000}$</td><td><strong>V</strong></td><td>$\\frac{6}{0.98} = \\mathbf{6.12}$</td><td><strong>IV</strong></td></tr>
+            <tr><td>E</td><td>10</td><td>$\\frac{10}{9} = \\mathbf{1.111}$</td><td><strong>IV</strong></td><td>$\\frac{10}{1.50} = \\mathbf{6.67}$</td><td><strong>III</strong></td></tr>
           </tbody>
         </table>
       </div>
@@ -7149,16 +7149,16 @@ const icaibookData = [
           </tbody>
         </table>
       </div>
-      <p>Market Risk ($\sigma_m$) = 1.2, Market Return ($R_m$) = 14.0%, Risk-free Rate ($R_f$) = 9.0%[cite: 4]. Rank the portfolios using Sharpe's method, Treynor's method, and Jensen's Alpha[cite: 4].</p>
+      <p>Market Risk ($\\sigma_m$) = 1.2, Market Return ($R_m$) = 14.0%, Risk-free Rate ($R_f$) = 9.0%[cite: 4]. Rank the portfolios using Sharpe's method, Treynor's method, and Jensen's Alpha[cite: 4].</p>
     `,
     solution_html: `
-      <h4>1. Calculation of Portfolio Betas ($\beta_p = \frac{S_p \cdot r}{\sigma_m}$)</h4>
+      <h4>1. Calculation of Portfolio Betas ($\\beta_p = \\frac{S_p \\cdot r}{\\sigma_m}$)</h4>
       <ul>
-        <li>Portfolio A: $\beta_A = \frac{2.5 \times 0.840}{1.2} = \mathbf{1.75}$[cite: 4]</li>
-        <li>Portfolio B: $\beta_B = \frac{2.0 \times 0.540}{1.2} = \mathbf{0.90}$[cite: 4]</li>
-        <li>Portfolio C: $\beta_C = \frac{0.8 \times 0.975}{1.2} = \mathbf{0.65}$[cite: 4]</li>
-        <li>Portfolio D: $\beta_D = \frac{2.0 \times 0.750}{1.2} = \mathbf{1.25}$[cite: 4]</li>
-        <li>Portfolio E: $\beta_E = \frac{1.8 \times 0.600}{1.2} = \mathbf{0.90}$[cite: 4]</li>
+        <li>Portfolio A: $\\beta_A = \\frac{2.5 \\times 0.840}{1.2} = \\mathbf{1.75}$[cite: 4]</li>
+        <li>Portfolio B: $\\beta_B = \\frac{2.0 \\times 0.540}{1.2} = \\mathbf{0.90}$[cite: 4]</li>
+        <li>Portfolio C: $\\beta_C = \\frac{0.8 \\times 0.975}{1.2} = \\mathbf{0.65}$[cite: 4]</li>
+        <li>Portfolio D: $\\beta_D = \\frac{2.0 \\times 0.750}{1.2} = \\mathbf{1.25}$[cite: 4]</li>
+        <li>Portfolio E: $\\beta_E = \\frac{1.8 \\times 0.600}{1.2} = \\mathbf{0.90}$[cite: 4]</li>
       </ul>
 
       <h4>2. Comparative Performance Evaluation</h4>
@@ -7167,9 +7167,9 @@ const icaibookData = [
           <thead>
             <tr style="background-color:#f2f2f2;">
               <th rowspan="2" style="padding:6px; border:1px solid #ddd;">Portfolio</th>
-              <th colspan="2" style="padding:6px; border:1px solid #ddd;">Sharpe $\frac{R_p - 9.0}{S_p}$</th>
-              <th colspan="2" style="padding:6px; border:1px solid #ddd;">Treynor $\frac{R_p - 9.0}{\beta_p}$</th>
-              <th colspan="2" style="padding:6px; border:1px solid #ddd;">Jensen $\alpha = R_p - [9 + \beta(5)]$</th>
+              <th colspan="2" style="padding:6px; border:1px solid #ddd;">Sharpe $\\frac{R_p - 9.0}{S_p}$</th>
+              <th colspan="2" style="padding:6px; border:1px solid #ddd;">Treynor $\\frac{R_p - 9.0}{\\beta_p}$</th>
+              <th colspan="2" style="padding:6px; border:1px solid #ddd;">Jensen $\\alpha = R_p - [9 + \\beta(5)]$</th>
             </tr>
             <tr style="background-color:#fafafa;">
               <th style="padding:6px; border:1px solid #ddd;">Value</th>
@@ -7183,47 +7183,47 @@ const icaibookData = [
           <tbody>
             <tr>
               <td>A</td>
-              <td>$\frac{10.0}{2.5} = \mathbf{4.00}$[cite: 4]</td>
+              <td>$\\frac{10.0}{2.5} = \\mathbf{4.00}$[cite: 4]</td>
               <td><strong>IV</strong>[cite: 4]</td>
-              <td>$\frac{10.0}{1.75} = \mathbf{5.71}$[cite: 4]</td>
+              <td>$\\frac{10.0}{1.75} = \\mathbf{5.71}$[cite: 4]</td>
               <td><strong>V</strong>[cite: 4]</td>
-              <td>$19.0 - 17.75 = \mathbf{+1.25\%}$[cite: 4]</td>
+              <td>$19.0 - 17.75 = \\mathbf{+1.25\\%}$[cite: 4]</td>
               <td><strong>V</strong>[cite: 4]</td>
             </tr>
             <tr>
               <td>B</td>
-              <td>$\frac{6.0}{2.0} = \mathbf{3.00}$[cite: 4]</td>
+              <td>$\\frac{6.0}{2.0} = \\mathbf{3.00}$[cite: 4]</td>
               <td><strong>V</strong>[cite: 4]</td>
-              <td>$\frac{6.0}{0.90} = \mathbf{6.67}$[cite: 4]</td>
+              <td>$\\frac{6.0}{0.90} = \\mathbf{6.67}$[cite: 4]</td>
               <td><strong>IV</strong>[cite: 4]</td>
-              <td>$15.0 - 13.50 = \mathbf{+1.50\%}$[cite: 4]</td>
+              <td>$15.0 - 13.50 = \\mathbf{+1.50\\%}$[cite: 4]</td>
               <td><strong>IV</strong>[cite: 4]</td>
             </tr>
             <tr>
               <td>C</td>
-              <td>$\frac{6.0}{0.8} = \mathbf{7.50}$[cite: 4]</td>
+              <td>$\\frac{6.0}{0.8} = \\mathbf{7.50}$[cite: 4]</td>
               <td><strong>I</strong>[cite: 4]</td>
-              <td>$\frac{6.0}{0.65} = \mathbf{9.23}$[cite: 4]</td>
+              <td>$\\frac{6.0}{0.65} = \\mathbf{9.23}$[cite: 4]</td>
               <td><strong>I</strong>[cite: 4]</td>
-              <td>$15.0 - 12.25 = \mathbf{+2.75\%}$[cite: 4]</td>
+              <td>$15.0 - 12.25 = \\mathbf{+2.75\\%}$[cite: 4]</td>
               <td><strong>II</strong>[cite: 4]</td>
             </tr>
             <tr>
               <td>D</td>
-              <td>$\frac{8.5}{2.0} = \mathbf{4.25}$[cite: 4]</td>
+              <td>$\\frac{8.5}{2.0} = \\mathbf{4.25}$[cite: 4]</td>
               <td><strong>III</strong>[cite: 4]</td>
-              <td>$\frac{8.5}{1.25} = \mathbf{6.80}$[cite: 4]</td>
+              <td>$\\frac{8.5}{1.25} = \\mathbf{6.80}$[cite: 4]</td>
               <td><strong>III</strong>[cite: 4]</td>
-              <td>$17.5 - 15.25 = \mathbf{+2.25\%}$[cite: 4]</td>
+              <td>$17.5 - 15.25 = \\mathbf{+2.25\\%}$[cite: 4]</td>
               <td><strong>III</strong>[cite: 4]</td>
             </tr>
             <tr>
               <td>E</td>
-              <td>$\frac{8.1}{1.8} = \mathbf{4.50}$[cite: 4]</td>
+              <td>$\\frac{8.1}{1.8} = \\mathbf{4.50}$[cite: 4]</td>
               <td><strong>II</strong>[cite: 4]</td>
-              <td>$\frac{8.1}{0.90} = \mathbf{9.00}$[cite: 4]</td>
+              <td>$\\frac{8.1}{0.90} = \\mathbf{9.00}$[cite: 4]</td>
               <td><strong>II</strong>[cite: 4]</td>
-              <td>$17.1 - 13.50 = \mathbf{+3.60\%}$[cite: 4]</td>
+              <td>$17.1 - 13.50 = \\mathbf{+3.60\\%}$[cite: 4]</td>
               <td><strong>I</strong>[cite: 4]</td>
             </tr>
           </tbody>
@@ -7408,17 +7408,17 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>Formula</h4>
-      <p>$$R_2 = \frac{1}{1 - \text{Initial Expenses}} \times R_1 + \text{Annual Recurring Expenses}$$[cite: 6]</p>
+      <p>$$R_2 = \\frac{1}{1 - \\text{Initial Expenses}} \\times R_1 + \\text{Annual Recurring Expenses}$$[cite: 6]</p>
       <p>Where:</p>
       <ul>
-        <li>$R_1$ = Personal return required by investor = $16\%$[cite: 6]</li>
-        <li>Initial issue expenses = $5.5\% = 0.055$[cite: 6]</li>
-        <li>Annual recurring expenses = $1.5\%$[cite: 6]</li>
+        <li>$R_1$ = Personal return required by investor = $16\\%$[cite: 6]</li>
+        <li>Initial issue expenses = $5.5\\% = 0.055$[cite: 6]</li>
+        <li>Annual recurring expenses = $1.5\\%$[cite: 6]</li>
       </ul>
 
       <h4>Computation</h4>
-      <p>$$R_2 = \left(\frac{1}{1 - 0.055} \times 16\%\right) + 1.5\% = \left(\frac{1}{0.945} \times 16\%\right) + 1.5\%$$[cite: 6]</p>
-      <p>$$R_2 = 16.9312\% + 1.50\% = \mathbf{18.43\%}$$[cite: 6]</p>
+      <p>$$R_2 = \\left(\\frac{1}{1 - 0.055} \\times 16\\%\\right) + 1.5\\% = \\left(\\frac{1}{0.945} \\times 16\\%\\right) + 1.5\\%$$[cite: 6]</p>
+      <p>$$R_2 = 16.9312\\% + 1.50\\% = \\mathbf{18.43\\%}$$[cite: 6]</p>
       <p>The Mutual Fund must earn a gross return of <strong>18.43%</strong> to deliver a net return of 16% to Mr. A[cite: 6].</p>
     `
   },
@@ -7441,12 +7441,12 @@ const icaibookData = [
       <h4>Method 1: Based on Formula Defined in ICAI Text</h4>
       <ul>
         <li><strong>(i) Front-End Load ($F$):</strong>
-          $$\text{Public Offer Price} = \frac{\text{NAV}}{1 - F} \implies 10.204 = \frac{10}{1 - F}$$[cite: 6]
-          $$1 - F = \frac{10}{10.204} = 0.9800 \implies F = 1 - 0.9800 = \mathbf{0.0200 \text{ (2.00\%)}}$$[cite: 6]
+          $$\\text{Public Offer Price} = \\frac{\\text{NAV}}{1 - F} \\implies 10.204 = \\frac{10}{1 - F}$$[cite: 6]
+          $$1 - F = \\frac{10}{10.204} = 0.9800 \\implies F = 1 - 0.9800 = \\mathbf{0.0200 \\text{ (2.00\\%)}}$$[cite: 6]
         </li>
         <li><strong>(ii) Back-End Load ($B$):</strong>
-          $$\text{Redemption Price} = \frac{\text{NAV}}{1 + B} \implies 9.80 = \frac{10}{1 + B}$$[cite: 6]
-          $$1 + B = \frac{10}{9.80} = 1.0204 \implies B = \mathbf{0.0204 \text{ (2.04\%)}}$$[cite: 6]
+          $$\\text{Redemption Price} = \\frac{\\text{NAV}}{1 + B} \\implies 9.80 = \\frac{10}{1 + B}$$[cite: 6]
+          $$1 + B = \\frac{10}{9.80} = 1.0204 \\implies B = \\mathbf{0.0204 \\text{ (2.04\\%)}}$$[cite: 6]
         </li>
       </ul>
 
@@ -7455,10 +7455,10 @@ const icaibookData = [
       <h4>Alternative Method (Load Calculated as % of Base NAV)</h4>
       <ul>
         <li><strong>Front-End Load:</strong>
-          $$\frac{\text{Public Offer Price} - \text{NAV}}{\text{NAV}} \times 100 = \frac{10.204 - 10.00}{10.00} \times 100 = \mathbf{2.04\%}$$[cite: 6]
+          $$\\frac{\\text{Public Offer Price} - \\text{NAV}}{\\text{NAV}} \\times 100 = \\frac{10.204 - 10.00}{10.00} \\times 100 = \\mathbf{2.04\\%}$$[cite: 6]
         </li>
         <li><strong>Back-End Load (Exit Load):</strong>
-          $$\frac{\text{NAV} - \text{Redemption Price}}{\text{NAV}} \times 100 = \frac{10.00 - 9.80}{10.00} \times 100 = \mathbf{2.00\%}$$[cite: 6]
+          $$\\frac{\\text{NAV} - \\text{Redemption Price}}{\\text{NAV}} \\times 100 = \\frac{10.00 - 9.80}{10.00} \\times 100 = \\mathbf{2.00\\%}$$[cite: 6]
         </li>
       </ul>
     `
@@ -7475,17 +7475,17 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>Formula</h4>
-      <p>$$r = \frac{(\text{NAV}_t - \text{NAV}_{t-1}) + I_t + G_t}{\text{NAV}_{t-1}}$$[cite: 6]</p>
+      <p>$$r = \\frac{(\\text{NAV}_t - \\text{NAV}_{t-1}) + I_t + G_t}{\\text{NAV}_{t-1}}$$[cite: 6]</p>
 
       <h4>Computation</h4>
       <ul>
-        <li>Capital Appreciation $(\text{NAV}_t - \text{NAV}_{t-1}) = ₹ 20.06 - ₹ 20.00 = ₹ 0.06$[cite: 6]</li>
+        <li>Capital Appreciation $(\\text{NAV}_t - \\text{NAV}_{t-1}) = ₹ 20.06 - ₹ 20.00 = ₹ 0.06$[cite: 6]</li>
         <li>Income Distribution ($I_t$) = ₹ 0.0375[cite: 6]</li>
         <li>Capital Gain Distribution ($G_t$) = ₹ 0.0300[cite: 6]</li>
-        <li>$$\text{Total Return for Month} = 0.06 + 0.0375 + 0.0300 = ₹ 0.1275$$[cite: 6]</li>
+        <li>$$\\text{Total Return for Month} = 0.06 + 0.0375 + 0.0300 = ₹ 0.1275$$[cite: 6]</li>
       </ul>
-      <p>$$\text{Monthly Return } (r) = \frac{₹ 0.1275}{₹ 20.00} \times 100 = \mathbf{0.6375\% \text{ p.m.}}$$[cite: 6]</p>
-      <p>$$\text{Annualized Return} = 0.6375\% \times 12 = \mathbf{7.65\% \text{ p.a.}}$$[cite: 6]</p>
+      <p>$$\\text{Monthly Return } (r) = \\frac{₹ 0.1275}{₹ 20.00} \\times 100 = \\mathbf{0.6375\\% \\text{ p.m.}}$$[cite: 6]</p>
+      <p>$$\\text{Annualized Return} = 0.6375\\% \\times 12 = \\mathbf{7.65\\% \\text{ p.a.}}$$[cite: 6]</p>
     `
   },
   {
@@ -7509,17 +7509,17 @@ const icaibookData = [
         <li>Capital Appreciation per unit $= ₹ 13.00 - ₹ 12.25 = ₹ 0.75$[cite: 6]</li>
         <li>Dividend per unit = ₹ 1.25; Capital Gain Distribution per unit = ₹ 1.00[cite: 6]</li>
         <li>Total Reward per unit $= 0.75 + 1.25 + 1.00 = ₹ 3.00$[cite: 6]</li>
-        <li>$$\text{Return on Investment} = \frac{₹ 3.00}{₹ 12.25} \times 100 = \mathbf{24.49\%}$$[cite: 6]</li>
+        <li>$$\\text{Return on Investment} = \\frac{₹ 3.00}{₹ 12.25} \\times 100 = \\mathbf{24.49\\%}$$[cite: 6]</li>
       </ul>
 
       <h4>(ii) Return With Distribution Reinvestment @ ₹ 12.50 per unit</h4>
       <ul>
-        <li>Total distributions received $= (₹ 1.25 + ₹ 1.00) \times 300 \text{ units} = ₹ 2.25 \times 300 = ₹ 675$[cite: 6]</li>
-        <li>Additional units acquired $= \frac{₹ 675}{₹ 12.50} = \mathbf{54 \text{ units}}$[cite: 6]</li>
-        <li>Total unit balance at year-end $= 300 + 54 = \mathbf{354 \text{ units}}$[cite: 6]</li>
-        <li>Total value of holding on 31.12.2010 $= 354 \text{ units} \times ₹ 13.00 = \mathbf{₹ 4,602}$[cite: 6]</li>
-        <li>Initial purchase cost $= 300 \text{ units} \times ₹ 12.25 = \mathbf{₹ 3,675}$[cite: 6]</li>
-        <li>$$\text{Net Return} = \frac{₹ 4,602 - ₹ 3,675}{₹ 3,675} \times 100 = \frac{₹ 927}{₹ 3,675} \times 100 = \mathbf{25.22\%}$$[cite: 6]</li>
+        <li>Total distributions received $= (₹ 1.25 + ₹ 1.00) \\times 300 \\text{ units} = ₹ 2.25 \\times 300 = ₹ 675$[cite: 6]</li>
+        <li>Additional units acquired $= \\frac{₹ 675}{₹ 12.50} = \\mathbf{54 \\text{ units}}$[cite: 6]</li>
+        <li>Total unit balance at year-end $= 300 + 54 = \\mathbf{354 \\text{ units}}$[cite: 6]</li>
+        <li>Total value of holding on 31.12.2010 $= 354 \\text{ units} \\times ₹ 13.00 = \\mathbf{₹ 4,602}$[cite: 6]</li>
+        <li>Initial purchase cost $= 300 \\text{ units} \\times ₹ 12.25 = \\mathbf{₹ 3,675}$[cite: 6]</li>
+        <li>$$\\text{Net Return} = \\frac{₹ 4,602 - ₹ 3,675}{₹ 3,675} \\times 100 = \\frac{₹ 927}{₹ 3,675} \\times 100 = \\mathbf{25.22\\%}$$[cite: 6]</li>
       </ul>
     `
   },
@@ -7541,19 +7541,19 @@ const icaibookData = [
       <h4>(i) Return Without Reinvestment</h4>
       <ul>
         <li>Capital gain in NAV $= ₹ 9.10 - ₹ 8.50 = ₹ 0.60$[cite: 6]</li>
-        <li>Cash distributions $= ₹ 0.90 (\text{Dividend}) + ₹ 0.75 (\text{Capital Gain}) = ₹ 1.65$[cite: 6]</li>
+        <li>Cash distributions $= ₹ 0.90 (\\text{Dividend}) + ₹ 0.75 (\\text{Capital Gain}) = ₹ 1.65$[cite: 6]</li>
         <li>Total Return per unit $= 0.60 + 1.65 = ₹ 2.25$[cite: 6]</li>
-        <li>$$\text{Return on Investment} = \frac{₹ 2.25}{₹ 8.50} \times 100 = \mathbf{26.47\%}$$[cite: 6]</li>
+        <li>$$\\text{Return on Investment} = \\frac{₹ 2.25}{₹ 8.50} \\times 100 = \\mathbf{26.47\\%}$$[cite: 6]</li>
       </ul>
 
       <h4>(ii) Return With Distributions Reinvested @ ₹ 8.75 per unit</h4>
       <ul>
-        <li>Total cash distributions received $= 200 \text{ units} \times ₹ 1.65 = ₹ 330$[cite: 6]</li>
-        <li>Additional units acquired $= \frac{₹ 330}{₹ 8.75} = \mathbf{37.714 \text{ units}}$[cite: 6]</li>
-        <li>Total units at year-end $= 200 + 37.714 = \mathbf{237.714 \text{ units}}$[cite: 6]</li>
-        <li>Closing value of holding $= 237.714 \text{ units} \times ₹ 9.10 = \mathbf{₹ 2,163.20}$[cite: 6]</li>
-        <li>Initial cost of 200 units $= 200 \times ₹ 8.50 = \mathbf{₹ 1,700}$[cite: 6]</li>
-        <li>$$\text{Return} = \frac{₹ 2,163.20 - ₹ 1,700}{₹ 1,700} \times 100 = \frac{₹ 463.20}{₹ 1,700} \times 100 = \mathbf{27.25\% \text{ (or } 27.24\%)}[cite: 6]$$</li>
+        <li>Total cash distributions received $= 200 \\text{ units} \\times ₹ 1.65 = ₹ 330$[cite: 6]</li>
+        <li>Additional units acquired $= \\frac{₹ 330}{₹ 8.75} = \\mathbf{37.714 \\text{ units}}$[cite: 6]</li>
+        <li>Total units at year-end $= 200 + 37.714 = \\mathbf{237.714 \\text{ units}}$[cite: 6]</li>
+        <li>Closing value of holding $= 237.714 \\text{ units} \\times ₹ 9.10 = \\mathbf{₹ 2,163.20}$[cite: 6]</li>
+        <li>Initial cost of 200 units $= 200 \\times ₹ 8.50 = \\mathbf{₹ 1,700}$[cite: 6]</li>
+        <li>$$\\text{Return} = \\frac{₹ 2,163.20 - ₹ 1,700}{₹ 1,700} \\times 100 = \\frac{₹ 463.20}{₹ 1,700} \\times 100 = \\mathbf{27.25\\% \\text{ (or } 27.24\\%)}[cite: 6]$$</li>
       </ul>
     `
   },
@@ -7579,11 +7579,11 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(i) Month-End NAV Computation</h4>
-      <p>$$\text{Monthly Return } (r) = \frac{15\%}{12} = 1.25\% = 0.0125$$[cite: 6]</p>
-      <p>$$r = \frac{(\text{NAV}_t - \text{NAV}_{t-1}) + I_t + G_t}{\text{NAV}_{t-1}}$$[cite: 6]</p>
-      <p>$$0.0125 = \frac{(\text{NAV}_t - 65.78) + 0.50 + 0.32}{65.78}$$[cite: 6]</p>
-      <p>$$0.0125 \times 65.78 = \text{NAV}_t - 65.78 + 0.82 \implies 0.82225 = \text{NAV}_t - 64.96$$[cite: 6]</p>
-      <p>$$\text{NAV}_t = 64.96 + 0.82225 = \mathbf{₹ 65.78}$$[cite: 6]</p>
+      <p>$$\\text{Monthly Return } (r) = \\frac{15\\%}{12} = 1.25\\% = 0.0125$$[cite: 6]</p>
+      <p>$$r = \\frac{(\\text{NAV}_t - \\text{NAV}_{t-1}) + I_t + G_t}{\\text{NAV}_{t-1}}$$[cite: 6]</p>
+      <p>$$0.0125 = \\frac{(\\text{NAV}_t - 65.78) + 0.50 + 0.32}{65.78}$$[cite: 6]</p>
+      <p>$$0.0125 \\times 65.78 = \\text{NAV}_t - 65.78 + 0.82 \\implies 0.82225 = \\text{NAV}_t - 64.96$$[cite: 6]</p>
+      <p>$$\\text{NAV}_t = 64.96 + 0.82225 = \\mathbf{₹ 65.78}$$[cite: 6]</p>
 
       <h4>(ii) Comment</h4>
       <p>The month-end NAV remains unchanged at <strong>₹ 65.78</strong>[cite: 6]. The total monthly earnings generated by the underlying portfolio were entirely paid out in the form of income and capital gain distributions (₹ 0.82), leaving the capital base intact[cite: 6].</p>
@@ -7620,21 +7620,21 @@ const icaibookData = [
     solution_html: `
       <h4>1. Market Value of Portfolio Investments</h4>
       <ul>
-        <li>Nairobi Ltd.: $25,000 \times ₹ 20 = ₹ 5,00,000$[cite: 6]</li>
-        <li>Dakar Ltd.: $35,000 \times ₹ 300 = ₹ 1,05,00,000$[cite: 6]</li>
-        <li>Senegal Ltd.: $29,000 \times ₹ 380 = ₹ 1,10,20,000$[cite: 6]</li>
-        <li>Cairo Ltd.: $40,000 \times ₹ 500 = ₹ 2,00,00,000$[cite: 6]</li>
+        <li>Nairobi Ltd.: $25,000 \\times ₹ 20 = ₹ 5,00,000$[cite: 6]</li>
+        <li>Dakar Ltd.: $35,000 \\times ₹ 300 = ₹ 1,05,00,000$[cite: 6]</li>
+        <li>Senegal Ltd.: $29,000 \\times ₹ 380 = ₹ 1,10,20,000$[cite: 6]</li>
+        <li>Cairo Ltd.: $40,000 \\times ₹ 500 = ₹ 2,00,00,000$[cite: 6]</li>
         <li><strong>Total Portfolio Value: ₹ 4,20,20,000</strong>[cite: 6]</li>
       </ul>
 
       <h4>2. Net Assets of the Scheme</h4>
-      <p>$$\text{Gross Assets} = ₹ 4,20,20,000$$[cite: 6]</p>
-      <p>$$\text{Less: Accrued Expenses} = (₹ 2,50,000)$$[cite: 6]</p>
-      <p>$$\text{Less: Other Liabilities} = (₹ 2,00,000)$$[cite: 6]</p>
-      <p>$$\text{Net Assets} = ₹ 4,20,20,000 - ₹ 4,50,000 = \mathbf{₹ 4,15,70,000}$$[cite: 6]</p>
+      <p>$$\\text{Gross Assets} = ₹ 4,20,20,000$$[cite: 6]</p>
+      <p>$$\\text{Less: Accrued Expenses} = (₹ 2,50,000)$$[cite: 6]</p>
+      <p>$$\\text{Less: Other Liabilities} = (₹ 2,00,000)$$[cite: 6]</p>
+      <p>$$\\text{Net Assets} = ₹ 4,20,20,000 - ₹ 4,50,000 = \\mathbf{₹ 4,15,70,000}$$[cite: 6]</p>
 
       <h4>3. NAV per Unit</h4>
-      <p>$$\text{NAV per Unit} = \frac{\text{Net Assets}}{\text{Outstanding Units}} = \frac{₹ 4,15,70,000}{10,00,000} = \mathbf{₹ 41.57}$$[cite: 6]</p>
+      <p>$$\\text{NAV per Unit} = \\frac{\\text{Net Assets}}{\\text{Outstanding Units}} = \\frac{₹ 4,15,70,000}{10,00,000} = \\mathbf{₹ 41.57}$$[cite: 6]</p>
     `
   },
   {
@@ -7673,33 +7673,33 @@ const icaibookData = [
     solution_html: `
       <h4>(i) NAV as on 1st February 2012</h4>
       <ul>
-        <li>L Ltd.: $20,000 \times 20.00 = ₹ 4,00,000$[cite: 6]</li>
-        <li>M Ltd.: $30,000 \times 312.40 = ₹ 93,72,000$[cite: 6]</li>
-        <li>N Ltd.: $20,000 \times 361.20 = ₹ 72,24,000$[cite: 6]</li>
-        <li>P Ltd.: $60,000 \times 505.10 = ₹ 3,03,06,000$[cite: 6]</li>
+        <li>L Ltd.: $20,000 \\times 20.00 = ₹ 4,00,000$[cite: 6]</li>
+        <li>M Ltd.: $30,000 \\times 312.40 = ₹ 93,72,000$[cite: 6]</li>
+        <li>N Ltd.: $20,000 \\times 361.20 = ₹ 72,24,000$[cite: 6]</li>
+        <li>P Ltd.: $60,000 \\times 505.10 = ₹ 3,03,06,000$[cite: 6]</li>
         <li><strong>Total Portfolio Value: ₹ 4,73,02,000</strong>[cite: 6]</li>
       </ul>
-      <p>$$\text{NAV}_1 = \frac{₹ 4,73,02,000}{6,00,000} = \mathbf{₹ 78.8366 \approx ₹ 78.84}$$[cite: 6]</p>
+      <p>$$\\text{NAV}_1 = \\frac{₹ 4,73,02,000}{6,00,000} = \\mathbf{₹ 78.8366 \\approx ₹ 78.84}$$[cite: 6]</p>
 
       <h4>(ii) Fund Position After ₹ 30 Lakh Inflow and Purchase of M Ltd.</h4>
       <ul>
-        <li>Cost of 8,000 shares of M Ltd. @ ₹ 312.40 $= 8,000 \times 312.40 = ₹ 24,99,200$[cite: 6]</li>
-        <li>Balance Cash held in Bank $= ₹ 30,00,000 - ₹ 24,99,200 = \mathbf{₹ 5,00,800}$[cite: 6]</li>
-        <li>New units issued to Mr. A $= \frac{₹ 30,00,000}{78.8366} = \mathbf{38,053 \text{ units}}$[cite: 6]</li>
-        <li>Total outstanding units $= 6,00,000 + 38,053 = \mathbf{6,38,053 \text{ units}}$[cite: 6]</li>
-        <li>Holding in M Ltd. becomes: $30,000 + 8,000 = \mathbf{38,000 \text{ shares}}$[cite: 6]</li>
+        <li>Cost of 8,000 shares of M Ltd. @ ₹ 312.40 $= 8,000 \\times 312.40 = ₹ 24,99,200$[cite: 6]</li>
+        <li>Balance Cash held in Bank $= ₹ 30,00,000 - ₹ 24,99,200 = \\mathbf{₹ 5,00,800}$[cite: 6]</li>
+        <li>New units issued to Mr. A $= \\frac{₹ 30,00,000}{78.8366} = \\mathbf{38,053 \\text{ units}}$[cite: 6]</li>
+        <li>Total outstanding units $= 6,00,000 + 38,053 = \\mathbf{6,38,053 \\text{ units}}$[cite: 6]</li>
+        <li>Holding in M Ltd. becomes: $30,000 + 8,000 = \\mathbf{38,000 \\text{ shares}}$[cite: 6]</li>
       </ul>
 
       <h4>(iii) New NAV as on 2nd February 2012</h4>
       <ul>
-        <li>L Ltd.: $20,000 \times 20.50 = ₹ 4,10,000$[cite: 6]</li>
-        <li>M Ltd.: $38,000 \times 360.00 = ₹ 1,36,80,000$[cite: 6]</li>
-        <li>N Ltd.: $20,000 \times 383.10 = ₹ 76,62,000$[cite: 6]</li>
-        <li>P Ltd.: $60,000 \times 503.90 = ₹ 3,02,34,000$[cite: 6]</li>
+        <li>L Ltd.: $20,000 \\times 20.50 = ₹ 4,10,000$[cite: 6]</li>
+        <li>M Ltd.: $38,000 \\times 360.00 = ₹ 1,36,80,000$[cite: 6]</li>
+        <li>N Ltd.: $20,000 \\times 383.10 = ₹ 76,62,000$[cite: 6]</li>
+        <li>P Ltd.: $60,000 \\times 503.90 = ₹ 3,02,34,000$[cite: 6]</li>
         <li>Bank Balance $= ₹ 5,00,800$[cite: 6]</li>
         <li><strong>Total Value on 2nd Feb: ₹ 5,24,86,800</strong>[cite: 6]</li>
       </ul>
-      <p>$$\text{NAV}_2 = \frac{₹ 5,24,86,800}{6,38,053} = \mathbf{₹ 82.26 \text{ per unit}}$$[cite: 6]</p>
+      <p>$$\\text{NAV}_2 = \\frac{₹ 5,24,86,800}{6,38,053} = \\mathbf{₹ 82.26 \\text{ per unit}}$$[cite: 6]</p>
     `
   },
   {
@@ -7740,35 +7740,35 @@ const icaibookData = [
     solution_html: `
       <h4>(a) NAV on 1st April 2009</h4>
       <ul>
-        <li>A Ltd.: $10,000 \times 19.70 = ₹ 1,97,000$[cite: 6]</li>
-        <li>B Ltd.: $50,000 \times 482.60 = ₹ 2,41,30,000$[cite: 6]</li>
-        <li>C Ltd.: $10,000 \times 264.40 = ₹ 26,44,000$[cite: 6]</li>
-        <li>D Ltd.: $1,00,000 \times 674.90 = ₹ 6,74,90,000$[cite: 6]</li>
-        <li>E Ltd.: $30,000 \times 25.90 = ₹ 7,77,000$[cite: 6]</li>
+        <li>A Ltd.: $10,000 \\times 19.70 = ₹ 1,97,000$[cite: 6]</li>
+        <li>B Ltd.: $50,000 \\times 482.60 = ₹ 2,41,30,000$[cite: 6]</li>
+        <li>C Ltd.: $10,000 \\times 264.40 = ₹ 26,44,000$[cite: 6]</li>
+        <li>D Ltd.: $1,00,000 \\times 674.90 = ₹ 6,74,90,000$[cite: 6]</li>
+        <li>E Ltd.: $30,000 \\times 25.90 = ₹ 7,77,000$[cite: 6]</li>
         <li><strong>Total Portfolio Value: ₹ 9,52,38,000</strong>[cite: 6]</li>
       </ul>
-      <p>$$\text{NAV} = \frac{₹ 9,52,38,000}{8,00,000} = \mathbf{₹ 119.0475 \approx ₹ 119.05}$$[cite: 6]</p>
+      <p>$$\\text{NAV} = \\frac{₹ 9,52,38,000}{8,00,000} = \\mathbf{₹ 119.0475 \\approx ₹ 119.05}$$[cite: 6]</p>
 
       <h4>(b) Revised Fund Position After ₹ 50 Lakh Inflow</h4>
       <ul>
-        <li>Purchase cost of 18,000 shares of C Ltd. @ ₹ 264.40 $= 18,000 \times 264.40 = ₹ 47,59,200$[cite: 6]</li>
-        <li>Cash Balance in Bank $= ₹ 50,00,000 - ₹ 47,59,200 = \mathbf{₹ 2,40,800}$[cite: 6]</li>
-        <li>New units issued to Mr. X $= \frac{₹ 50,00,000}{119.0475} = \mathbf{42,000 \text{ units}}$[cite: 6]</li>
-        <li>Total units outstanding $= 8,00,000 + 42,000 = \mathbf{8,42,000 \text{ units}}$[cite: 6]</li>
-        <li>Shares of C Ltd. holding $= 10,000 + 18,000 = \mathbf{28,000 \text{ shares}}$[cite: 6]</li>
+        <li>Purchase cost of 18,000 shares of C Ltd. @ ₹ 264.40 $= 18,000 \\times 264.40 = ₹ 47,59,200$[cite: 6]</li>
+        <li>Cash Balance in Bank $= ₹ 50,00,000 - ₹ 47,59,200 = \\mathbf{₹ 2,40,800}$[cite: 6]</li>
+        <li>New units issued to Mr. X $= \\frac{₹ 50,00,000}{119.0475} = \\mathbf{42,000 \\text{ units}}$[cite: 6]</li>
+        <li>Total units outstanding $= 8,00,000 + 42,000 = \\mathbf{8,42,000 \\text{ units}}$[cite: 6]</li>
+        <li>Shares of C Ltd. holding $= 10,000 + 18,000 = \\mathbf{28,000 \\text{ shares}}$[cite: 6]</li>
       </ul>
 
       <h4>(c) New NAV on 2nd April 2009</h4>
       <ul>
-        <li>A Ltd.: $10,000 \times 20.30 = ₹ 2,03,000$[cite: 6]</li>
-        <li>B Ltd.: $50,000 \times 513.70 = ₹ 2,56,85,000$[cite: 6]</li>
-        <li>C Ltd.: $28,000 \times 290.80 = ₹ 81,42,400$[cite: 6]</li>
-        <li>D Ltd.: $1,00,000 \times 671.90 = ₹ 6,71,90,000$[cite: 6]</li>
-        <li>E Ltd.: $30,000 \times 44.20 = ₹ 13,26,000$[cite: 6]</li>
+        <li>A Ltd.: $10,000 \\times 20.30 = ₹ 2,03,000$[cite: 6]</li>
+        <li>B Ltd.: $50,000 \\times 513.70 = ₹ 2,56,85,000$[cite: 6]</li>
+        <li>C Ltd.: $28,000 \\times 290.80 = ₹ 81,42,400$[cite: 6]</li>
+        <li>D Ltd.: $1,00,000 \\times 671.90 = ₹ 6,71,90,000$[cite: 6]</li>
+        <li>E Ltd.: $30,000 \\times 44.20 = ₹ 13,26,000$[cite: 6]</li>
         <li>Cash in Bank $= ₹ 2,40,800$[cite: 6]</li>
         <li><strong>Total Net Assets: ₹ 10,27,87,200</strong>[cite: 6]</li>
       </ul>
-      <p>$$\text{NAV as on 02.04.2009} = \frac{₹ 10,27,87,200}{8,42,000} = \mathbf{₹ 122.075 \text{ per unit}}$$[cite: 4, 6]</p>
+      <p>$$\\text{NAV as on 02.04.2009} = \\frac{₹ 10,27,87,200}{8,42,000} = \\mathbf{₹ 122.075 \\text{ per unit}}$$[cite: 4, 6]</p>
     `
   },
   {
@@ -7832,7 +7832,7 @@ const icaibookData = [
           </tbody>
         </table>
       </div>
-      <p>$$\text{Formula: Effective Yield p.a.} = \frac{\text{Total Yield (h)}}{\text{Investment (a)}} \times \frac{365}{\text{Days (i)}} \times 100$$[cite: 6]</p>
+      <p>$$\\text{Formula: Effective Yield p.a.} = \\frac{\\text{Total Yield (h)}}{\\text{Investment (a)}} \\times \\frac{365}{\\text{Days (i)}} \\times 100$$[cite: 6]</p>
     `
   },
   {
@@ -7874,37 +7874,37 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Number of Units in Each Scheme</h4>
       <ul>
-        <li>MF X: $\frac{₹ 2,00,000}{10.30} = \mathbf{19,417.48 \text{ units}}$[cite: 6]</li>
-        <li>MF Y: $\frac{₹ 4,00,000}{10.10} = \mathbf{39,603.96 \text{ units}}$[cite: 6]</li>
-        <li>MF Z: $\frac{₹ 2,00,000}{10.00} = \mathbf{20,000.00 \text{ units}}$[cite: 6]</li>
+        <li>MF X: $\\frac{₹ 2,00,000}{10.30} = \\mathbf{19,417.48 \\text{ units}}$[cite: 6]</li>
+        <li>MF Y: $\\frac{₹ 4,00,000}{10.10} = \\mathbf{39,603.96 \\text{ units}}$[cite: 6]</li>
+        <li>MF Z: $\\frac{₹ 2,00,000}{10.00} = \\mathbf{20,000.00 \\text{ units}}$[cite: 6]</li>
       </ul>
 
       <h4>(ii) Total Closing NAV as on 31.03.2018</h4>
       <ul>
-        <li>MF X: $19,417.48 \times ₹ 10.25 = ₹ 1,99,029.17$[cite: 6]</li>
-        <li>MF Y: $39,603.96 \times ₹ 10.00 = ₹ 3,96,039.60$[cite: 6]</li>
-        <li>MF Z: $20,000.00 \times ₹ 10.20 = ₹ 2,04,000.00$[cite: 6]</li>
+        <li>MF X: $19,417.48 \\times ₹ 10.25 = ₹ 1,99,029.17$[cite: 6]</li>
+        <li>MF Y: $39,603.96 \\times ₹ 10.00 = ₹ 3,96,039.60$[cite: 6]</li>
+        <li>MF Z: $20,000.00 \\times ₹ 10.20 = ₹ 2,04,000.00$[cite: 6]</li>
         <li><strong>Total Portfolio Value: ₹ 7,99,068.77</strong>[cite: 6]</li>
       </ul>
 
       <h4>(iii) Total Yield</h4>
       <ul>
-        <li>MF X: $(1,99,029.17 - 2,00,000) + 6,000 = -970.83 + 6,000 = \mathbf{₹ 5,029.17}$[cite: 6]</li>
-        <li>MF Y: $(3,96,039.60 - 4,00,000) + 0 = \mathbf{-₹ 3,960.40}$[cite: 6]</li>
-        <li>MF Z: $(2,04,000.00 - 2,00,000) + 5,000 = 4,000 + 5,000 = \mathbf{₹ 9,000.00}$[cite: 6]</li>
-        <li>$$\text{Total Yield} = ₹ 5,029.17 - ₹ 3,960.40 + ₹ 9,000.00 = \mathbf{₹ 10,068.77 \text{ (or } 1.2586\%)}[cite: 6]$$</li>
+        <li>MF X: $(1,99,029.17 - 2,00,000) + 6,000 = -970.83 + 6,000 = \\mathbf{₹ 5,029.17}$[cite: 6]</li>
+        <li>MF Y: $(3,96,039.60 - 4,00,000) + 0 = \\mathbf{-₹ 3,960.40}$[cite: 6]</li>
+        <li>MF Z: $(2,04,000.00 - 2,00,000) + 5,000 = 4,000 + 5,000 = \\mathbf{₹ 9,000.00}$[cite: 6]</li>
+        <li>$$\\text{Total Yield} = ₹ 5,029.17 - ₹ 3,960.40 + ₹ 9,000.00 = \\mathbf{₹ 10,068.77 \\text{ (or } 1.2586\\%)}[cite: 6]$$</li>
       </ul>
 
       <h4>(iv) Holding Period and Investment Dates</h4>
-      <p>$$\text{Holding Period (Days)} = \frac{\text{Yield Amount}}{\text{Cost}} \times \frac{365}{\text{Yield p.a. \%}}$$[cite: 6]</p>
+      <p>$$\\text{Holding Period (Days)} = \\frac{\\text{Yield Amount}}{\\text{Cost}} \\times \\frac{365}{\\text{Yield p.a. \\%}}$$[cite: 6]</p>
       <ul>
-        <li><strong>MF X:</strong> $\frac{₹ 5,029.17}{₹ 2,00,000} \times \frac{365}{0.0966} = 0.025146 \times 3,778.47 \approx \mathbf{95 \text{ days}}$[cite: 6]
+        <li><strong>MF X:</strong> $\\frac{₹ 5,029.17}{₹ 2,00,000} \\times \\frac{365}{0.0966} = 0.025146 \\times 3,778.47 \\approx \\mathbf{95 \\text{ days}}$[cite: 6]
           <br /><em>Date of Investment:</em> Count back 95 days from 31.03.2018 $\rightarrow$ <strong>27.12.2017</strong> (or 26.12.2017)[cite: 6]
         </li>
-        <li><strong>MF Y:</strong> $\frac{-₹ 3,960.40}{₹ 4,00,000} \times \frac{365}{-0.1166} = -0.009901 \times (-3,130.36) \approx \mathbf{31 \text{ days}}$[cite: 6]
+        <li><strong>MF Y:</strong> $\\frac{-₹ 3,960.40}{₹ 4,00,000} \\times \\frac{365}{-0.1166} = -0.009901 \\times (-3,130.36) \\approx \\mathbf{31 \\text{ days}}$[cite: 6]
           <br /><em>Date of Investment:</em> Count back 31 days from 31.03.2018 $\rightarrow$ <strong>01.03.2018</strong> (or 28.02.2018)[cite: 6]
         </li>
-        <li><strong>MF Z:</strong> $\frac{₹ 9,000.00}{₹ 2,00,000} \times \frac{365}{0.2415} = 0.045000 \times 1,511.39 \approx \mathbf{68 \text{ days}}$[cite: 6]
+        <li><strong>MF Z:</strong> $\\frac{₹ 9,000.00}{₹ 2,00,000} \\times \\frac{365}{0.2415} = 0.045000 \\times 1,511.39 \\approx \\mathbf{68 \\text{ days}}$[cite: 6]
           <br /><em>Date of Investment:</em> Count back 68 days from 31.03.2018 $\rightarrow$ <strong>23.01.2018</strong> (or 22.01.2018)[cite: 6]
         </li>
       </ul>
@@ -7924,26 +7924,26 @@ const icaibookData = [
     solution_html: `
       <h4>1. NAV as on 31.03.2008 (Holding period = 9 months)</h4>
       <ul>
-        <li>9-Month Yield $= 153.33\% \times \frac{9}{12} = \mathbf{115\%}$[cite: 6]</li>
-        <li>Cum-dividend value of investment $= ₹ 1,00,000 \times (1 + 1.15) = \mathbf{₹ 2,15,000}$[cite: 6]</li>
-        <li>Dividend declared $= 10,000 \times 10 \times 10\% = ₹ 10,000$[cite: 6]</li>
-        <li>Ex-Dividend NAV as on 31.03.2008 $= \frac{₹ 2,15,000 - ₹ 10,000}{10,000} = \frac{₹ 2,05,000}{10,000} = \mathbf{₹ 20.50}$[cite: 6]</li>
-        <li>Additional units acquired through reinvestment $= \frac{₹ 10,00,000 \times 10^{-2}}{20.50} = \frac{10,000}{20.50} = \mathbf{487.80 \text{ units}}$[cite: 6]</li>
-        <li>Total units as on 31.03.2008 $= 10,000 + 487.80 = \mathbf{10,487.80 \text{ units}}$[cite: 6]</li>
+        <li>9-Month Yield $= 153.33\\% \\times \\frac{9}{12} = \\mathbf{115\\%}$[cite: 6]</li>
+        <li>Cum-dividend value of investment $= ₹ 1,00,000 \\times (1 + 1.15) = \\mathbf{₹ 2,15,000}$[cite: 6]</li>
+        <li>Dividend declared $= 10,000 \\times 10 \\times 10\\% = ₹ 10,000$[cite: 6]</li>
+        <li>Ex-Dividend NAV as on 31.03.2008 $= \\frac{₹ 2,15,000 - ₹ 10,000}{10,000} = \\frac{₹ 2,05,000}{10,000} = \\mathbf{₹ 20.50}$[cite: 6]</li>
+        <li>Additional units acquired through reinvestment $= \\frac{₹ 10,00,000 \\times 10^{-2}}{20.50} = \\frac{10,000}{20.50} = \\mathbf{487.80 \\text{ units}}$[cite: 6]</li>
+        <li>Total units as on 31.03.2008 $= 10,000 + 487.80 = \\mathbf{10,487.80 \\text{ units}}$[cite: 6]</li>
       </ul>
 
       <h4>2. NAV as on 31.03.2009</h4>
       <ul>
-        <li>Dividend on 31.03.2009 $= 10,487.80 \text{ units} \times ₹ 10 \times 20\% = \mathbf{₹ 20,975.60}$[cite: 6]</li>
-        <li>Additional units acquired on 31.03.2009 $= 11,296.11 - 10,487.80 = \mathbf{808.31 \text{ units}}$[cite: 6]</li>
-        <li>$$\text{NAV as on 31.03.2009} = \frac{₹ 20,975.60}{808.31} = \mathbf{₹ 25.95}$$[cite: 6]</li>
+        <li>Dividend on 31.03.2009 $= 10,487.80 \\text{ units} \\times ₹ 10 \\times 20\\% = \\mathbf{₹ 20,975.60}$[cite: 6]</li>
+        <li>Additional units acquired on 31.03.2009 $= 11,296.11 - 10,487.80 = \\mathbf{808.31 \\text{ units}}$[cite: 6]</li>
+        <li>$$\\text{NAV as on 31.03.2009} = \\frac{₹ 20,975.60}{808.31} = \\mathbf{₹ 25.95}$$[cite: 6]</li>
       </ul>
 
       <h4>3. NAV as on 31.03.2010 (Total holding period = 33 months)</h4>
       <ul>
-        <li>Total Cumulative Return $= 73.52\% \times \frac{33}{12} = \mathbf{202.18\%}$[cite: 6]</li>
-        <li>Total Redemption Value $= ₹ 1,00,000 \times (1 + 2.0218) = \mathbf{₹ 3,02,180}$[cite: 6]</li>
-        <li>$$\text{NAV as on 31.03.2010} = \frac{₹ 3,02,180}{11,296.11} = \mathbf{₹ 26.75}$$[cite: 6]</li>
+        <li>Total Cumulative Return $= 73.52\\% \\times \\frac{33}{12} = \\mathbf{202.18\\%}$[cite: 6]</li>
+        <li>Total Redemption Value $= ₹ 1,00,000 \\times (1 + 2.0218) = \\mathbf{₹ 3,02,180}$[cite: 6]</li>
+        <li>$$\\text{NAV as on 31.03.2010} = \\frac{₹ 3,02,180}{11,296.11} = \\mathbf{₹ 26.75}$$[cite: 6]</li>
       </ul>
     `
   },
@@ -7961,47 +7961,47 @@ const icaibookData = [
     solution_html: `
       <h4>1. NAV as on 31.03.2013</h4>
       <ul>
-        <li>Initial Investment $= ₹ 1,00,000$ at Face Value of ₹ 10 $\implies \text{Initial Units} = 10,000 \text{ units}$[cite: 6].</li>
-        <li>Holding Period Return (9 months) $= 115\%$[cite: 6].</li>
+        <li>Initial Investment $= ₹ 1,00,000$ at Face Value of ₹ 10 $\\implies \\text{Initial Units} = 10,000 \\text{ units}$[cite: 6].</li>
+        <li>Holding Period Return (9 months) $= 115\\%$[cite: 6].</li>
         <li>Total value of investment on 31.03.2013 before dividend distribution:
-          <br />$$₹ 1,00,000 \times (1 + 1.15) = ₹ 2,15,000$$[cite: 6]
+          <br />$$₹ 1,00,000 \\times (1 + 1.15) = ₹ 2,15,000$$[cite: 6]
         </li>
         <li>Dividend declared on 31.03.2013:
-          <br />$$10,000 \text{ units} \times ₹ 10 \times 10\% = ₹ 10,000$$[cite: 6]
+          <br />$$10,000 \\text{ units} \\times ₹ 10 \\times 10\\% = ₹ 10,000$$[cite: 6]
         </li>
         <li>Ex-Dividend NAV as on 31.03.2013:
-          <br />$$\text{NAV}_{31.03.2013} = \frac{₹ 2,15,000 - ₹ 10,000}{10,000 \text{ units}} = \frac{₹ 2,05,000}{10,000} = \mathbf{₹ 20.50}$$[cite: 6]
+          <br />$$\\text{NAV}_{31.03.2013} = \\frac{₹ 2,15,000 - ₹ 10,000}{10,000 \\text{ units}} = \\frac{₹ 2,05,000}{10,000} = \\mathbf{₹ 20.50}$$[cite: 6]
         </li>
         <li>Additional units acquired by reinvesting dividend:
-          <br />$$\frac{₹ 10,000}{₹ 20.50} = 487.80 \text{ units}$$[cite: 6]
+          <br />$$\\frac{₹ 10,000}{₹ 20.50} = 487.80 \\text{ units}$$[cite: 6]
         </li>
         <li>Total units as on 31.03.2013:
-          <br />$$10,000 + 487.80 = \mathbf{10,487.80 \text{ units}}$$[cite: 6]
+          <br />$$10,000 + 487.80 = \\mathbf{10,487.80 \\text{ units}}$$[cite: 6]
         </li>
       </ul>
 
       <h4>2. NAV as on 31.03.2014</h4>
       <ul>
         <li>Dividend declared on 31.03.2014:
-          <br />$$10,487.80 \text{ units} \times ₹ 10 \times 20\% = ₹ 20,975.60$$[cite: 6]
+          <br />$$10,487.80 \\text{ units} \\times ₹ 10 \\times 20\\% = ₹ 20,975.60$$[cite: 6]
         </li>
         <li>Additional units acquired from dividend reinvestment on 31.03.2014:
-          <br />$$11,296.11 - 10,487.80 = 808.31 \text{ units}$$[cite: 6]
+          <br />$$11,296.11 - 10,487.80 = 808.31 \\text{ units}$$[cite: 6]
         </li>
         <li>NAV as on 31.03.2014:
-          <br />$$\text{NAV}_{31.03.2014} = \frac{₹ 20,975.60}{808.31 \text{ units}} = \mathbf{₹ 25.95}$$[cite: 6]
+          <br />$$\\text{NAV}_{31.03.2014} = \\frac{₹ 20,975.60}{808.31 \\text{ units}} = \\mathbf{₹ 25.95}$$[cite: 6]
         </li>
       </ul>
 
       <h4>3. NAV as on 31.03.2015</h4>
       <ul>
-        <li>Holding Period Return on redemption $= 202.17\%$[cite: 6].</li>
+        <li>Holding Period Return on redemption $= 202.17\\%$[cite: 6].</li>
         <li>Total Redemption Proceeds:
-          <br />$$₹ 1,00,000 \times (1 + 2.0217) = ₹ 3,02,170$$[cite: 6]
+          <br />$$₹ 1,00,000 \\times (1 + 2.0217) = ₹ 3,02,170$$[cite: 6]
         </li>
-        <li>Total units redeemed $= 11,296.11 \text{ units}$[cite: 6].</li>
+        <li>Total units redeemed $= 11,296.11 \\text{ units}$[cite: 6].</li>
         <li>NAV as on 31.03.2015:
-          <br />$$\text{NAV}_{31.03.2015} = \frac{₹ 3,02,170}{11,296.11 \text{ units}} = \mathbf{₹ 26.75}$$[cite: 6]
+          <br />$$\\text{NAV}_{31.03.2015} = \\frac{₹ 3,02,170}{11,296.11 \\text{ units}} = \\mathbf{₹ 26.75}$$[cite: 6]
         </li>
       </ul>
     `
@@ -8028,19 +8028,19 @@ const icaibookData = [
         <li>Dividends received per unit $= ₹ 0.75$[cite: 6]</li>
         <li>Capital gains distribution per unit $= ₹ 0.60$[cite: 6]</li>
         <li>Total Reward per unit $= ₹ 0.70 + ₹ 0.75 + ₹ 0.60 = ₹ 2.05$[cite: 6]</li>
-        <li>$$\text{Holding Period Return} = \frac{₹ 2.05}{₹ 8.75} \times 100 = \mathbf{23.43\%}$$[cite: 6]</li>
+        <li>$$\\text{Holding Period Return} = \\frac{₹ 2.05}{₹ 8.75} \\times 100 = \\mathbf{23.43\\%}$$[cite: 6]</li>
       </ul>
 
       <h4>Option (ii): Distributions Reinvested @ ₹ 8.65 per Unit</h4>
       <ul>
         <li>Total distributions per unit $= ₹ 0.75 + ₹ 0.60 = ₹ 1.35$[cite: 6]</li>
-        <li>Total distribution proceeds on 300 units $= 300 \times ₹ 1.35 = ₹ 405.00$[cite: 6]</li>
-        <li>Additional units acquired $= \frac{₹ 405.00}{₹ 8.65} = 46.82 \text{ units}$[cite: 6]</li>
-        <li>Total units at year-end $= 300 + 46.82 = 346.82 \text{ units}$[cite: 6]</li>
-        <li>Closing value of holding $= 346.82 \text{ units} \times ₹ 9.45 = ₹ 3,277.45$[cite: 6]</li>
-        <li>Initial investment cost $= 300 \text{ units} \times ₹ 8.75 = ₹ 2,625.00$[cite: 6]</li>
+        <li>Total distribution proceeds on 300 units $= 300 \\times ₹ 1.35 = ₹ 405.00$[cite: 6]</li>
+        <li>Additional units acquired $= \\frac{₹ 405.00}{₹ 8.65} = 46.82 \\text{ units}$[cite: 6]</li>
+        <li>Total units at year-end $= 300 + 46.82 = 346.82 \\text{ units}$[cite: 6]</li>
+        <li>Closing value of holding $= 346.82 \\text{ units} \\times ₹ 9.45 = ₹ 3,277.45$[cite: 6]</li>
+        <li>Initial investment cost $= 300 \\text{ units} \\times ₹ 8.75 = ₹ 2,625.00$[cite: 6]</li>
         <li>Total gain $= ₹ 3,277.45 - ₹ 2,625.00 = ₹ 652.45$[cite: 6]</li>
-        <li>$$\text{Holding Period Return} = \frac{₹ 652.45}{₹ 2,625.00} \times 100 = \mathbf{24.85\%}$$[cite: 6]</li>
+        <li>$$\\text{Holding Period Return} = \\frac{₹ 652.45}{₹ 2,625.00} \\times 100 = \\mathbf{24.85\\%}$$[cite: 6]</li>
       </ul>
 
       <h4>Conclusion</h4>
@@ -8112,22 +8112,22 @@ const icaibookData = [
 
       <h4>2. Closing NAV as on 30.04.2012</h4>
       <ul>
-        <li>Closing Market Value of Portfolio $= ₹ 198.00 \text{ lakhs}$[cite: 6]</li>
-        <li>Add: Closing Cash / Bank Balance $= ₹ 0.80 \text{ lakhs}$[cite: 6]</li>
-        <li>Less: Arrears of Management Expenses (10% of ₹ 8 lakhs) $= (₹ 0.80 \text{ lakhs})$[cite: 6]</li>
-        <li>Closing Net Assets $= ₹ 198.00 + 0.80 - 0.80 = \mathbf{₹ 198.00 \text{ lakhs}}$[cite: 6]</li>
-        <li>$$\text{Closing NAV per unit} = \frac{₹ 198.00 \text{ lakhs}}{20 \text{ lakh units}} = \mathbf{₹ 9.90}$$[cite: 6]</li>
+        <li>Closing Market Value of Portfolio $= ₹ 198.00 \\text{ lakhs}$[cite: 6]</li>
+        <li>Add: Closing Cash / Bank Balance $= ₹ 0.80 \\text{ lakhs}$[cite: 6]</li>
+        <li>Less: Arrears of Management Expenses (10% of ₹ 8 lakhs) $= (₹ 0.80 \\text{ lakhs})$[cite: 6]</li>
+        <li>Closing Net Assets $= ₹ 198.00 + 0.80 - 0.80 = \\mathbf{₹ 198.00 \\text{ lakhs}}$[cite: 6]</li>
+        <li>$$\\text{Closing NAV per unit} = \\frac{₹ 198.00 \\text{ lakhs}}{20 \\text{ lakh units}} = \\mathbf{₹ 9.90}$$[cite: 6]</li>
       </ul>
 
       <h4>3. Rate of Earning for Mr. Akash</h4>
       <ul>
         <li>Cash Distribution received per unit:
-          <br />$$\frac{₹ 2.40 \text{ lakhs} + ₹ 1.60 \text{ lakhs}}{20 \text{ lakh units}} = \frac{₹ 4.00 \text{ lakhs}}{20 \text{ lakh units}} = ₹ 0.20$$[cite: 6]
+          <br />$$\\frac{₹ 2.40 \\text{ lakhs} + ₹ 1.60 \\text{ lakhs}}{20 \\text{ lakh units}} = \\frac{₹ 4.00 \\text{ lakhs}}{20 \\text{ lakh units}} = ₹ 0.20$$[cite: 6]
         </li>
         <li>Capital Loss on redemption per unit $= ₹ 9.90 - ₹ 10.00 = -₹ 0.10$[cite: 6]</li>
-        <li>Net Earnings for the month per unit $= ₹ 0.20 - ₹ 0.10 = \mathbf{₹ 0.10}$[cite: 6]</li>
-        <li>$$\text{Monthly Rate of Earning} = \frac{₹ 0.10}{₹ 10.00} \times 100 = \mathbf{1\% \text{ per month}}$$[cite: 6]</li>
-        <li>$$\text{Annual Rate of Earning} = 1\% \times 12 = \mathbf{12\% \text{ p.a.}}$$[cite: 6]</li>
+        <li>Net Earnings for the month per unit $= ₹ 0.20 - ₹ 0.10 = \\mathbf{₹ 0.10}$[cite: 6]</li>
+        <li>$$\\text{Monthly Rate of Earning} = \\frac{₹ 0.10}{₹ 10.00} \\times 100 = \\mathbf{1\\% \\text{ per month}}$$[cite: 6]</li>
+        <li>$$\\text{Annual Rate of Earning} = 1\\% \\times 12 = \\mathbf{12\\% \\text{ p.a.}}$$[cite: 6]</li>
       </ul>
     `
   },
@@ -8179,42 +8179,42 @@ const icaibookData = [
       <h4>1. Mrs. Charu: Plan A (Dividend Reinvestment)</h4>
       <ul>
         <li>01.04.1999: Subscribed 10,000 units @ ₹ 10[cite: 6].</li>
-        <li>28.07.2003: Dividend 20% on ₹ 1,00,000 $= ₹ 20,000 / 30.70 = 651.47 \text{ units} \implies 10,651.47 \text{ units}$[cite: 6].</li>
-        <li>31.03.2004: Dividend 70% $= ₹ 74,560.29 / 58.42 = 1,276.28 \text{ units} \implies 11,927.75 \text{ units}$[cite: 6].</li>
-        <li>31.10.2007: Dividend 40% $= ₹ 47,711.00 / 42.18 = 1,131.13 \text{ units} \implies 13,058.88 \text{ units}$[cite: 6].</li>
-        <li>15.03.2008: Dividend 25% $= ₹ 32,647.20 / 46.45 = 702.85 \text{ units} \implies 13,761.73 \text{ units}$[cite: 6].</li>
-        <li>24.03.2009: Dividend 40% $= ₹ 55,046.92 / 48.10 = 1,144.43 \text{ units} \implies \mathbf{14,906.16 \text{ units}}$[cite: 6].</li>
-        <li>Redemption Proceeds: $14,906.16 \times ₹ 53.75 = ₹ 8,01,206.10$[cite: 6]</li>
-        <li>Less: STT @ 0.2% $= (₹ 1,602.41) \implies \text{Net} = ₹ 7,99,603.69$[cite: 6]</li>
+        <li>28.07.2003: Dividend 20% on ₹ 1,00,000 $= ₹ 20,000 / 30.70 = 651.47 \\text{ units} \\implies 10,651.47 \\text{ units}$[cite: 6].</li>
+        <li>31.03.2004: Dividend 70% $= ₹ 74,560.29 / 58.42 = 1,276.28 \\text{ units} \\implies 11,927.75 \\text{ units}$[cite: 6].</li>
+        <li>31.10.2007: Dividend 40% $= ₹ 47,711.00 / 42.18 = 1,131.13 \\text{ units} \\implies 13,058.88 \\text{ units}$[cite: 6].</li>
+        <li>15.03.2008: Dividend 25% $= ₹ 32,647.20 / 46.45 = 702.85 \\text{ units} \\implies 13,761.73 \\text{ units}$[cite: 6].</li>
+        <li>24.03.2009: Dividend 40% $= ₹ 55,046.92 / 48.10 = 1,144.43 \\text{ units} \\implies \\mathbf{14,906.16 \\text{ units}}$[cite: 6].</li>
+        <li>Redemption Proceeds: $14,906.16 \\times ₹ 53.75 = ₹ 8,01,206.10$[cite: 6]</li>
+        <li>Less: STT @ 0.2% $= (₹ 1,602.41) \\implies \\text{Net} = ₹ 7,99,603.69$[cite: 6]</li>
         <li>Less: STCG Tax on units acquired on 24.03.2009 (held &lt; 1 yr):
-          <br />$$1,144.43 \times [₹ 53.64 - ₹ 48.10] \times 10\% = ₹ 634.00$$[cite: 6]
+          <br />$$1,144.43 \\times [₹ 53.64 - ₹ 48.10] \\times 10\\% = ₹ 634.00$$[cite: 6]
         </li>
         <li>Net Realization $= ₹ 7,99,603.69 - ₹ 634.00 = ₹ 7,98,969.69$[cite: 6]</li>
-        <li>$$\text{Annual Rate of Return} = \frac{₹ 7,98,969.69 - ₹ 1,00,000}{₹ 1,00,000} \times \frac{12}{124} \times 100 = \mathbf{67.64\%}$$[cite: 6]</li>
+        <li>$$\\text{Annual Rate of Return} = \\frac{₹ 7,98,969.69 - ₹ 1,00,000}{₹ 1,00,000} \\times \\frac{12}{124} \\times 100 = \\mathbf{67.64\\%}$$[cite: 6]</li>
       </ul>
 
       <h4>2. Mr. Anand: Plan B (Bonus Plan)</h4>
       <ul>
         <li>01.04.1999: 10,000 units @ ₹ 10[cite: 6].</li>
-        <li>31.03.2004: Bonus 5:4 $\implies 10,000 \times \frac{5}{4} = 12,500 \text{ units} \implies 22,500 \text{ units}$[cite: 6].</li>
-        <li>31.03.2008: Bonus 1:3 $\implies 22,500 \times \frac{1}{3} = 7,500 \text{ units} \implies 30,000 \text{ units}$[cite: 6].</li>
-        <li>24.03.2009: Bonus 1:4 $\implies 30,000 \times \frac{1}{4} = 7,500 \text{ units} \implies \mathbf{37,500 \text{ units}}$[cite: 6].</li>
-        <li>Redemption Proceeds: $37,500 \times ₹ 22.98 = ₹ 8,61,750.00$[cite: 6]</li>
-        <li>Less: STT @ 0.2% $= (₹ 1,723.50) \implies \text{Net} = ₹ 8,60,026.50$[cite: 6]</li>
+        <li>31.03.2004: Bonus 5:4 $\\implies 10,000 \\times \\frac{5}{4} = 12,500 \\text{ units} \\implies 22,500 \\text{ units}$[cite: 6].</li>
+        <li>31.03.2008: Bonus 1:3 $\\implies 22,500 \\times \\frac{1}{3} = 7,500 \\text{ units} \\implies 30,000 \\text{ units}$[cite: 6].</li>
+        <li>24.03.2009: Bonus 1:4 $\\implies 30,000 \\times \\frac{1}{4} = 7,500 \\text{ units} \\implies \\mathbf{37,500 \\text{ units}}$[cite: 6].</li>
+        <li>Redemption Proceeds: $37,500 \\times ₹ 22.98 = ₹ 8,61,750.00$[cite: 6]</li>
+        <li>Less: STT @ 0.2% $= (₹ 1,723.50) \\implies \\text{Net} = ₹ 8,60,026.50$[cite: 6]</li>
         <li>Less: STCG Tax on 7,500 units issued on 24.03.2009:
-          <br />$$7,500 \times (₹ 22.93 - ₹ 19.95) \times 10\% = ₹ 2,235.00$$[cite: 6]
+          <br />$$7,500 \\times (₹ 22.93 - ₹ 19.95) \\times 10\\% = ₹ 2,235.00$$[cite: 6]
         </li>
         <li>Net Realization $= ₹ 8,60,026.50 - ₹ 2,235.00 = ₹ 8,57,791.50$[cite: 6]</li>
-        <li>$$\text{Annual Rate of Return} = \frac{₹ 8,57,791.50 - ₹ 1,00,000}{₹ 1,00,000} \times \frac{12}{124} \times 100 = \mathbf{73.33\%}$$[cite: 6]</li>
+        <li>$$\\text{Annual Rate of Return} = \\frac{₹ 8,57,791.50 - ₹ 1,00,000}{₹ 1,00,000} \\times \\frac{12}{124} \\times 100 = \\mathbf{73.33\\%}$$[cite: 6]</li>
       </ul>
 
       <h4>3. Mr. Bacchan: Plan C (Growth Plan)</h4>
       <ul>
         <li>Holding: 10,000 units throughout[cite: 6].</li>
-        <li>Redemption Proceeds: $10,000 \times ₹ 82.07 = ₹ 8,20,700.00$[cite: 6]</li>
-        <li>Less: STT @ 0.2% $= (₹ 1,641.40) \implies \text{Net} = ₹ 8,19,058.60$[cite: 6]</li>
-        <li>LTCG Tax $= \text{Nil}$ (Exempt)[cite: 6].</li>
-        <li>$$\text{Annual Rate of Return} = \frac{₹ 8,19,058.60 - ₹ 1,00,000}{₹ 1,00,000} \times \frac{12}{124} \times 100 = \mathbf{69.59\%}$$[cite: 6]</li>
+        <li>Redemption Proceeds: $10,000 \\times ₹ 82.07 = ₹ 8,20,700.00$[cite: 6]</li>
+        <li>Less: STT @ 0.2% $= (₹ 1,641.40) \\implies \\text{Net} = ₹ 8,19,058.60$[cite: 6]</li>
+        <li>LTCG Tax $= \\text{Nil}$ (Exempt)[cite: 6].</li>
+        <li>$$\\text{Annual Rate of Return} = \\frac{₹ 8,19,058.60 - ₹ 1,00,000}{₹ 1,00,000} \\times \\frac{12}{124} \\times 100 = \\mathbf{69.59\\%}$$[cite: 6]</li>
       </ul>
     `
   },
@@ -8258,27 +8258,27 @@ const icaibookData = [
     solution_html: `
       <h4>1. Plan D (Dividend Reinvestment Plan)</h4>
       <ul>
-        <li>Initial Units acquired on 01.04.2005 $= \frac{₹ 2,00,000}{38.20} = \mathbf{5,235.60 \text{ units}}$[cite: 6]</li>
-        <li>30.09.2005: Dividend $10\% \times 10 \times 5,235.60 = ₹ 5,235.60 \implies \frac{5,235.60}{39.10} = 133.90 \text{ units} \implies 5,369.50 \text{ units}$[cite: 6]</li>
-        <li>31.03.2007: Dividend $15\% \times 10 \times 5,369.50 = ₹ 8,054.25 \implies \frac{8,054.25}{44.20} = 182.22 \text{ units} \implies 5,551.72 \text{ units}$[cite: 6]</li>
-        <li>15.09.2008: Dividend $13\% \times 10 \times 5,551.72 = ₹ 7,217.24 \implies \frac{7,217.24}{45.05} = 160.20 \text{ units} \implies 5,711.92 \text{ units}$[cite: 6]</li>
-        <li>27.03.2009: Dividend $16\% \times 10 \times 5,711.92 = ₹ 9,139.07 \implies \frac{9,139.07}{44.80} = 204.00 \text{ units} \implies \mathbf{5,915.92 \text{ units}}$[cite: 6]</li>
-        <li>Maturity Value on 31.03.2010: $5,915.92 \times ₹ 40.40 = \mathbf{₹ 2,39,003.17}$[cite: 6]</li>
+        <li>Initial Units acquired on 01.04.2005 $= \\frac{₹ 2,00,000}{38.20} = \\mathbf{5,235.60 \\text{ units}}$[cite: 6]</li>
+        <li>30.09.2005: Dividend $10\\% \\times 10 \\times 5,235.60 = ₹ 5,235.60 \\implies \\frac{5,235.60}{39.10} = 133.90 \\text{ units} \\implies 5,369.50 \\text{ units}$[cite: 6]</li>
+        <li>31.03.2007: Dividend $15\\% \\times 10 \\times 5,369.50 = ₹ 8,054.25 \\implies \\frac{8,054.25}{44.20} = 182.22 \\text{ units} \\implies 5,551.72 \\text{ units}$[cite: 6]</li>
+        <li>15.09.2008: Dividend $13\\% \\times 10 \\times 5,551.72 = ₹ 7,217.24 \\implies \\frac{7,217.24}{45.05} = 160.20 \\text{ units} \\implies 5,711.92 \\text{ units}$[cite: 6]</li>
+        <li>27.03.2009: Dividend $16\\% \\times 10 \\times 5,711.92 = ₹ 9,139.07 \\implies \\frac{9,139.07}{44.80} = 204.00 \\text{ units} \\implies \\mathbf{5,915.92 \\text{ units}}$[cite: 6]</li>
+        <li>Maturity Value on 31.03.2010: $5,915.92 \\times ₹ 40.40 = \\mathbf{₹ 2,39,003.17}$[cite: 6]</li>
         <li>Total Gain $= ₹ 2,39,003.17 - ₹ 2,00,000.00 = ₹ 39,003.17$[cite: 6]</li>
-        <li>$$\text{Effective Yield (Simple)} = \frac{₹ 39,003.17}{₹ 2,00,000} \times \frac{1}{5} \times 100 = \mathbf{3.90\% \text{ p.a.}}$$[cite: 6]</li>
-        <li><small><em>(By IRR method: $\mathbf{3.645\% \text{ p.a.}}$)</em></small>[cite: 6]</li>
+        <li>$$\\text{Effective Yield (Simple)} = \\frac{₹ 39,003.17}{₹ 2,00,000} \\times \\frac{1}{5} \\times 100 = \\mathbf{3.90\\% \\text{ p.a.}}$$[cite: 6]</li>
+        <li><small><em>(By IRR method: $\\mathbf{3.645\\% \\text{ p.a.}}$)</em></small>[cite: 6]</li>
       </ul>
 
       <h4>2. Plan B (Bonus Plan)</h4>
       <ul>
-        <li>Initial Units acquired on 01.04.2005 $= \frac{₹ 2,00,000}{35.60} = \mathbf{5,617.98 \text{ units}}$[cite: 6]</li>
-        <li>30.06.2006: Bonus 1:5 $\implies \frac{5,617.98}{5} = 1,123.60 \text{ units} \implies 6,741.58 \text{ units}$[cite: 6]</li>
-        <li>30.10.2008: Bonus 1:8 $\implies \frac{6,741.58}{8} = 842.70 \text{ units} \implies 7,584.28 \text{ units}$[cite: 6]</li>
-        <li>11.04.2009: Bonus 1:10 $\implies \frac{7,584.28}{10} = 758.43 \text{ units} \implies \mathbf{8,342.71 \text{ units}}$[cite: 6]</li>
-        <li>Maturity Value on 31.03.2010: $8,342.71 \times ₹ 39.70 = \mathbf{₹ 3,31,205.59}$[cite: 6]</li>
+        <li>Initial Units acquired on 01.04.2005 $= \\frac{₹ 2,00,000}{35.60} = \\mathbf{5,617.98 \\text{ units}}$[cite: 6]</li>
+        <li>30.06.2006: Bonus 1:5 $\\implies \\frac{5,617.98}{5} = 1,123.60 \\text{ units} \\implies 6,741.58 \\text{ units}$[cite: 6]</li>
+        <li>30.10.2008: Bonus 1:8 $\\implies \\frac{6,741.58}{8} = 842.70 \\text{ units} \\implies 7,584.28 \\text{ units}$[cite: 6]</li>
+        <li>11.04.2009: Bonus 1:10 $\\implies \\frac{7,584.28}{10} = 758.43 \\text{ units} \\implies \\mathbf{8,342.71 \\text{ units}}$[cite: 6]</li>
+        <li>Maturity Value on 31.03.2010: $8,342.71 \\times ₹ 39.70 = \\mathbf{₹ 3,31,205.59}$[cite: 6]</li>
         <li>Total Gain $= ₹ 3,31,205.59 - ₹ 2,00,000.00 = ₹ 1,31,205.59$[cite: 6]</li>
-        <li>$$\text{Effective Yield (Simple)} = \frac{₹ 1,31,205.59}{₹ 2,00,000} \times \frac{1}{5} \times 100 = \mathbf{13.12\% \text{ p.a.}}$$[cite: 6]</li>
-        <li><small><em>(By IRR method: $\mathbf{10.78\% \text{ p.a.}}$)</em></small>[cite: 6]</li>
+        <li>$$\\text{Effective Yield (Simple)} = \\frac{₹ 1,31,205.59}{₹ 2,00,000} \\times \\frac{1}{5} \\times 100 = \\mathbf{13.12\\% \\text{ p.a.}}$$[cite: 6]</li>
+        <li><small><em>(By IRR method: $\\mathbf{10.78\\% \\text{ p.a.}}$)</em></small>[cite: 6]</li>
       </ul>
     `
   },
@@ -8305,29 +8305,29 @@ const icaibookData = [
       <ul>
         <li>Opening Cash Balance $= ₹ 1,00,00,000 - ₹ 98,00,000 = ₹ 2,00,000$[cite: 6]</li>
         <li>Dividend received on Equity Shares $= ₹ 12,00,000$[cite: 6]</li>
-        <li>Interest on 7% Govt. Securities $= 7\% \times ₹ 8,00,000 = ₹ 56,000$[cite: 6]</li>
-        <li>Interest on 9% Debentures $= 9\% \times ₹ 5,00,000 = ₹ 45,000$[cite: 6]</li>
-        <li>Interest on 10% Debentures $= 10\% \times ₹ 5,00,000 = ₹ 50,000$[cite: 6]</li>
+        <li>Interest on 7% Govt. Securities $= 7\\% \\times ₹ 8,00,000 = ₹ 56,000$[cite: 6]</li>
+        <li>Interest on 9% Debentures $= 9\\% \\times ₹ 5,00,000 = ₹ 45,000$[cite: 6]</li>
+        <li>Interest on 10% Debentures $= 10\\% \\times ₹ 5,00,000 = ₹ 50,000$[cite: 6]</li>
         <li>Total Cash Inflows $= ₹ 2,00,000 + ₹ 12,00,000 + ₹ 1,51,000 = ₹ 15,51,000$[cite: 6]</li>
         <li>Less: Operating Expenses paid $= (₹ 5,00,000)$[cite: 6]</li>
-        <li>Closing Cash Balance $= \mathbf{₹ 10,51,000}$[cite: 6]</li>
+        <li>Closing Cash Balance $= \\mathbf{₹ 10,51,000}$[cite: 6]</li>
       </ul>
 
       <h4>2. Closing Portfolio Valuation and NAV</h4>
       <ul>
-        <li>Equity Shares: $50,000 \times ₹ 100 \times 175\% = ₹ 87,50,000$[cite: 6]</li>
+        <li>Equity Shares: $50,000 \\times ₹ 100 \\times 175\\% = ₹ 87,50,000$[cite: 6]</li>
         <li>7% Government Securities (at par) $= ₹ 8,00,000$[cite: 6]</li>
         <li>9% Unlisted Debentures (at cost) $= ₹ 5,00,000$[cite: 6]</li>
-        <li>10% Listed Debentures: $₹ 5,00,000 \times 90\% = ₹ 4,50,000$[cite: 6]</li>
+        <li>10% Listed Debentures: $₹ 5,00,000 \\times 90\\% = ₹ 4,50,000$[cite: 6]</li>
         <li>Cash Balance $= ₹ 10,51,000$[cite: 6]</li>
-        <li>Total Net Assets $= \mathbf{₹ 1,15,51,000}$[cite: 6]</li>
-        <li>$$\text{NAV per Unit (No Dividend)} = \frac{₹ 1,15,51,000}{10,00,000 \text{ units}} = \mathbf{₹ 11.55}$$[cite: 6]</li>
+        <li>Total Net Assets $= \\mathbf{₹ 1,15,51,000}$[cite: 6]</li>
+        <li>$$\\text{NAV per Unit (No Dividend)} = \\frac{₹ 1,15,51,000}{10,00,000 \\text{ units}} = \\mathbf{₹ 11.55}$$[cite: 6]</li>
       </ul>
 
       <h4>3. NAV If Dividend of ₹ 0.80 per Unit is Distributed</h4>
-      <p>$$\text{Total Dividend Distributed} = 10,00,000 \times ₹ 0.80 = ₹ 8,00,000$$[cite: 6]</p>
-      <p>$$\text{Revised Net Assets} = ₹ 1,15,51,000 - ₹ 8,00,000 = ₹ 1,07,51,000$$[cite: 6]</p>
-      <p>$$\text{NAV per Unit} = \frac{₹ 1,07,51,000}{10,00,000} = \mathbf{₹ 10.75}$$[cite: 6]</p>
+      <p>$$\\text{Total Dividend Distributed} = 10,00,000 \\times ₹ 0.80 = ₹ 8,00,000$$[cite: 6]</p>
+      <p>$$\\text{Revised Net Assets} = ₹ 1,15,51,000 - ₹ 8,00,000 = ₹ 1,07,51,000$$[cite: 6]</p>
+      <p>$$\\text{NAV per Unit} = \\frac{₹ 1,07,51,000}{10,00,000} = \\mathbf{₹ 10.75}$$[cite: 6]</p>
     `
   },
   {
@@ -8352,28 +8352,28 @@ const icaibookData = [
       <h4>1. Valuation of Assets</h4>
       <ul>
         <li>Listed Shares (adjusted for index movement):
-          <br />$$₹ 20.00 \text{ crores} \times \frac{2,300}{1,000} = \mathbf{₹ 46.00 \text{ crores}}$$[cite: 6]
+          <br />$$₹ 20.00 \\text{ crores} \\times \\frac{2,300}{1,000} = \\mathbf{₹ 46.00 \\text{ crores}}$$[cite: 6]
         </li>
-        <li>Cash in Hand $= \mathbf{₹ 1.23 \text{ crores}}$[cite: 6]</li>
-        <li>Listed Bonds and Debentures (at market value) $= \mathbf{₹ 8.00 \text{ crores}}$[cite: 6]</li>
+        <li>Cash in Hand $= \\mathbf{₹ 1.23 \\text{ crores}}$[cite: 6]</li>
+        <li>Listed Bonds and Debentures (at market value) $= \\mathbf{₹ 8.00 \\text{ crores}}$[cite: 6]</li>
         <li>Unlisted Bonds and Debentures:
-          <br />$$₹ 1.00 \text{ crore} \times (1 - 0.20) = \mathbf{₹ 0.80 \text{ crores}}$$[cite: 6]
+          <br />$$₹ 1.00 \\text{ crore} \\times (1 - 0.20) = \\mathbf{₹ 0.80 \\text{ crores}}$$[cite: 6]
         </li>
-        <li>Other Fixed Interest Securities (at cost) $= \mathbf{₹ 4.50 \text{ crores}}$[cite: 6]</li>
-        <li>Dividend Accrued $= \mathbf{₹ 0.80 \text{ crores}}$[cite: 6]</li>
+        <li>Other Fixed Interest Securities (at cost) $= \\mathbf{₹ 4.50 \\text{ crores}}$[cite: 6]</li>
+        <li>Dividend Accrued $= \\mathbf{₹ 0.80 \\text{ crores}}$[cite: 6]</li>
         <li><strong>Total Assets (A): ₹ 61.33 crores</strong>[cite: 6]</li>
       </ul>
 
       <h4>2. Liabilities</h4>
       <ul>
-        <li>Amount payable on shares $= ₹ 6.32 \text{ crores}$[cite: 6]</li>
-        <li>Expenditure accrued $= ₹ 0.75 \text{ crores}$[cite: 6]</li>
+        <li>Amount payable on shares $= ₹ 6.32 \\text{ crores}$[cite: 6]</li>
+        <li>Expenditure accrued $= ₹ 0.75 \\text{ crores}$[cite: 6]</li>
         <li><strong>Total Liabilities (B): ₹ 7.07 crores</strong>[cite: 6]</li>
       </ul>
 
       <h4>3. Net Asset Value (NAV) per Unit</h4>
-      <p>$$\text{Net Assets} = \text{Assets (A)} - \text{Liabilities (B)} = ₹ 61.33 - ₹ 7.07 = \mathbf{₹ 54.26 \text{ crores}}$$[cite: 6]</p>
-      <p>$$\text{NAV per Unit} = \frac{₹ 54.26 \text{ crores}}{20,00,000 \text{ units}} = \frac{₹ 54,26,00,000}{20,00,000} = \mathbf{₹ 271.30}$$[cite: 6]</p>
+      <p>$$\\text{Net Assets} = \\text{Assets (A)} - \\text{Liabilities (B)} = ₹ 61.33 - ₹ 7.07 = \\mathbf{₹ 54.26 \\text{ crores}}$$[cite: 6]</p>
+      <p>$$\\text{NAV per Unit} = \\frac{₹ 54.26 \\text{ crores}}{20,00,000 \\text{ units}} = \\frac{₹ 54,26,00,000}{20,00,000} = \\mathbf{₹ 271.30}$$[cite: 6]</p>
     `
   },
   {
@@ -8396,39 +8396,39 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Calculation of Available Income</h4>
       <ul>
-        <li>April Income on 300 lakh units $= ₹ 22.95 \text{ lakhs} \implies \frac{₹ 22.95}{300} = ₹ 0.0765 \text{ per unit}$[cite: 6]</li>
-        <li>Dividend equalization collected on April issue $(6 \times 0.0765) = ₹ 0.4590 \text{ lakhs}$[cite: 6]
-          <br />$$\text{Income pool at April end} = 22.95 + 0.459 = ₹ 23.4090 \text{ lakhs on 306 lakh units}$$[cite: 6]
+        <li>April Income on 300 lakh units $= ₹ 22.95 \\text{ lakhs} \\implies \\frac{₹ 22.95}{300} = ₹ 0.0765 \\text{ per unit}$[cite: 6]</li>
+        <li>Dividend equalization collected on April issue $(6 \\times 0.0765) = ₹ 0.4590 \\text{ lakhs}$[cite: 6]
+          <br />$$\\text{Income pool at April end} = 22.95 + 0.459 = ₹ 23.4090 \\text{ lakhs on 306 lakh units}$$[cite: 6]
         </li>
-        <li>May Income on 306 lakh units $= ₹ 34.425 \text{ lakhs} \implies \frac{₹ 34.425}{306} = ₹ 0.1125 \text{ per unit}$[cite: 6]
+        <li>May Income on 306 lakh units $= ₹ 34.425 \\text{ lakhs} \\implies \\frac{₹ 34.425}{306} = ₹ 0.1125 \\text{ per unit}$[cite: 6]
           <br />Cumulative income per unit by May end $= 0.0765 + 0.1125 = ₹ 0.1890$[cite: 6]
         </li>
-        <li>Less: Dividend equalization paid on 3 lakh repurchased units $(3 \times 0.1890) = (₹ 0.5670 \text{ lakhs})$[cite: 6]
-          <br />$$\text{Income pool at May end} = 23.4090 + 34.4250 - 0.5670 = ₹ 57.2670 \text{ lakhs on 303 lakh units}$$[cite: 6]
+        <li>Less: Dividend equalization paid on 3 lakh repurchased units $(3 \\times 0.1890) = (₹ 0.5670 \\text{ lakhs})$[cite: 6]
+          <br />$$\\text{Income pool at May end} = 23.4090 + 34.4250 - 0.5670 = ₹ 57.2670 \\text{ lakhs on 303 lakh units}$$[cite: 6]
         </li>
-        <li>June Income on 303 lakh units $= ₹ 45.45 \text{ lakhs} \implies \frac{₹ 45.45}{303} = ₹ 0.1500 \text{ per unit}$[cite: 6]</li>
-        <li>Total Cumulative Available Income $= 57.2670 + 45.4500 = \mathbf{₹ 102.7170 \text{ lakhs}}$ (₹ 0.3390 per unit)[cite: 6]</li>
-        <li>Dividend distributed @ 70% $= 70\% \times ₹ 102.7170 = \mathbf{₹ 71.9019 \text{ lakhs}}$[cite: 6]</li>
-        <li><strong>Income Available After Distribution:</strong> $₹ 102.7170 - ₹ 71.9019 = \mathbf{₹ 30.8151 \text{ lakhs}}$[cite: 6]</li>
+        <li>June Income on 303 lakh units $= ₹ 45.45 \\text{ lakhs} \\implies \\frac{₹ 45.45}{303} = ₹ 0.1500 \\text{ per unit}$[cite: 6]</li>
+        <li>Total Cumulative Available Income $= 57.2670 + 45.4500 = \\mathbf{₹ 102.7170 \\text{ lakhs}}$ (₹ 0.3390 per unit)[cite: 6]</li>
+        <li>Dividend distributed @ 70% $= 70\\% \\times ₹ 102.7170 = \\mathbf{₹ 71.9019 \\text{ lakhs}}$[cite: 6]</li>
+        <li><strong>Income Available After Distribution:</strong> $₹ 102.7170 - ₹ 71.9019 = \\mathbf{₹ 30.8151 \\text{ lakhs}}$[cite: 6]</li>
       </ul>
 
       <h4>(ii) Issue Price at the End of April</h4>
-      <p>$$\text{Issue Price} = \text{Opening NAV} + \text{Entry Load (2%)} + \text{Dividend Equalization}$$[cite: 6]</p>
-      <p>$$\text{Issue Price} = 18.75 + (2\% \times 18.75) + 0.0765 = 18.75 + 0.375 + 0.0765 = \mathbf{₹ 19.2015}$$[cite: 6]</p>
+      <p>$$\\text{Issue Price} = \\text{Opening NAV} + \\text{Entry Load (2\\%)} + \\text{Dividend Equalization}$$[cite: 6]</p>
+      <p>$$\\text{Issue Price} = 18.75 + (2\\% \\times 18.75) + 0.0765 = 18.75 + 0.375 + 0.0765 = \\mathbf{₹ 19.2015}$$[cite: 6]</p>
 
       <h4>(iii) Repurchase Price at the End of May</h4>
-      <p>$$\text{Repurchase Price} = \text{Opening NAV} - \text{Exit Load (2%)} + \text{Cumulative Dividend Equalization}$$[cite: 6]</p>
-      <p>$$\text{Repurchase Price} = 18.75 - (2\% \times 18.75) + 0.1890 = 18.75 - 0.375 + 0.1890 = \mathbf{₹ 18.5640}$$[cite: 6]</p>
+      <p>$$\\text{Repurchase Price} = \\text{Opening NAV} - \\text{Exit Load (2\\%)} + \\text{Cumulative Dividend Equalization}$$[cite: 6]</p>
+      <p>$$\\text{Repurchase Price} = 18.75 - (2\\% \\times 18.75) + 0.1890 = 18.75 - 0.375 + 0.1890 = \\mathbf{₹ 18.5640}$$[cite: 6]</p>
 
       <h4>(iv) Closing NAV as on 30th June</h4>
       <div style="overflow-x:auto;">
         <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
           <tbody>
-            <tr><td>Opening Net Assets ($300 \times ₹ 18.75$)</td><td style="text-align:right;">₹ 5,625.0000 lakhs[cite: 6]</td></tr>
+            <tr><td>Opening Net Assets ($300 \\times ₹ 18.75$)</td><td style="text-align:right;">₹ 5,625.0000 lakhs[cite: 6]</td></tr>
             <tr><td>Add: Portfolio Value Appreciation</td><td style="text-align:right;">₹ 425.4700 lakhs[cite: 6]</td></tr>
-            <tr><td>Add: Proceeds from issue of 6 lakh units ($6 \times ₹ 19.2015$)</td><td style="text-align:right;">₹ 115.2090 lakhs[cite: 6]</td></tr>
+            <tr><td>Add: Proceeds from issue of 6 lakh units ($6 \\times ₹ 19.2015$)</td><td style="text-align:right;">₹ 115.2090 lakhs[cite: 6]</td></tr>
             <tr><td>Add: Total Operating Income ($22.95 + 34.425 + 45.45$)</td><td style="text-align:right;">₹ 102.8250 lakhs[cite: 6]</td></tr>
-            <tr><td>Less: Outflow on repurchase of 3 lakh units ($3 \times ₹ 18.564$)</td><td style="text-align:right;">(₹ 55.6920 lakhs)[cite: 6]</td></tr>
+            <tr><td>Less: Outflow on repurchase of 3 lakh units ($3 \\times ₹ 18.564$)</td><td style="text-align:right;">(₹ 55.6920 lakhs)[cite: 6]</td></tr>
             <tr><td>Less: Dividend Distributed</td><td style="text-align:right;">(₹ 71.9019 lakhs)[cite: 6]</td></tr>
             <tr style="font-weight:bold; background-color:#fafafa;">
               <td>Closing Net Assets as on 30th June</td>
@@ -8437,8 +8437,8 @@ const icaibookData = [
           </tbody>
         </table>
       </div>
-      <p>Closing units outstanding $= 300 + 6 - 3 = 303 \text{ lakh units}$[cite: 6].</p>
-      <p>$$\text{Closing NAV as on 30th June} = \frac{₹ 6,140.9101 \text{ lakhs}}{303 \text{ lakh units}} = \mathbf{₹ 20.2670}$$[cite: 6]</p>
+      <p>Closing units outstanding $= 300 + 6 - 3 = 303 \\text{ lakh units}$[cite: 6].</p>
+      <p>$$\\text{Closing NAV as on 30th June} = \\frac{₹ 6,140.9101 \\text{ lakhs}}{303 \\text{ lakh units}} = \\mathbf{₹ 20.2670}$$[cite: 6]</p>
     `
   },
   {
@@ -8469,36 +8469,36 @@ const icaibookData = [
       <p>Annual average operational cost is ₹ 3 per unit for both funds[cite: 6]. If the share market drops by 5% over the next month, calculate the expected NAV after one month for both schemes[cite: 6].</p>
     `,
     solution_html: `
-      <h4>1. Determination of Betas ($\beta$)</h4>
+      <h4>1. Determination of Betas ($\\beta$)</h4>
       <ul>
         <li><strong>D Mutual Fund:</strong>
-          <br />$$\text{Sharpe Ratio} = \frac{R_D - R_f}{\sigma_D} \implies 2 = \frac{R_D - R_f}{11.25} \implies R_D - R_f = 22.50\%$$[cite: 6]
-          <br />$$\text{Treynor Ratio} = \frac{R_D - R_f}{\beta_D} \implies 15 = \frac{22.50}{\beta_D} \implies \beta_D = \frac{22.50}{15} = \mathbf{1.50}$$[cite: 6]
+          <br />$$\\text{Sharpe Ratio} = \\frac{R_D - R_f}{\\sigma_D} \\implies 2 = \\frac{R_D - R_f}{11.25} \\implies R_D - R_f = 22.50\\%$$[cite: 6]
+          <br />$$\\text{Treynor Ratio} = \\frac{R_D - R_f}{\\beta_D} \\implies 15 = \\frac{22.50}{\\beta_D} \\implies \\beta_D = \\frac{22.50}{15} = \\mathbf{1.50}$$[cite: 6]
         </li>
         <li><strong>K Mutual Fund:</strong>
-          <br />$$\text{Sharpe Ratio} = \frac{R_K - R_f}{\sigma_K} \implies 3.3 = \frac{R_K - R_f}{5.00} \implies R_K - R_f = 16.50\%$$[cite: 6]
-          <br />$$\text{Treynor Ratio} = \frac{R_K - R_f}{\beta_K} \implies 15 = \frac{16.50}{\beta_K} \implies \beta_K = \frac{16.50}{15} = \mathbf{1.10}$$[cite: 6]
+          <br />$$\\text{Sharpe Ratio} = \\frac{R_K - R_f}{\\sigma_K} \\implies 3.3 = \\frac{R_K - R_f}{5.00} \\implies R_K - R_f = 16.50\\%$$[cite: 6]
+          <br />$$\\text{Treynor Ratio} = \\frac{R_K - R_f}{\\beta_K} \\implies 15 = \\frac{16.50}{\\beta_K} \\implies \\beta_K = \\frac{16.50}{15} = \\mathbf{1.10}$$[cite: 6]
         </li>
       </ul>
 
       <h4>2. Expected NAV for D Mutual Fund</h4>
       <ul>
-        <li>Equity component $= 99\% \times ₹ 70.71 = ₹ 70.0029$; Cash component $= 1\% \times ₹ 70.71 = ₹ 0.7071$[cite: 6]</li>
-        <li>Decline in equity value $= 5\% \times \beta_D = 5\% \times 1.50 = 7.50\%$[cite: 6]</li>
-        <li>Revised Equity Value $= ₹ 70.0029 \times (1 - 0.075) = ₹ 64.7527$[cite: 6]</li>
+        <li>Equity component $= 99\\% \\times ₹ 70.71 = ₹ 70.0029$; Cash component $= 1\\% \\times ₹ 70.71 = ₹ 0.7071$[cite: 6]</li>
+        <li>Decline in equity value $= 5\\% \\times \\beta_D = 5\\% \\times 1.50 = 7.50\\%$[cite: 6]</li>
+        <li>Revised Equity Value $= ₹ 70.0029 \\times (1 - 0.075) = ₹ 64.7527$[cite: 6]</li>
         <li>Total Value before expenses $= 64.7527 + 0.7071 = ₹ 65.4598$[cite: 6]</li>
-        <li>Less: Monthly Management Expenses $= \frac{₹ 3}{12} = ₹ 0.25$[cite: 6]</li>
-        <li>$$\text{Expected NAV (D Mutual Fund)} = ₹ 65.4598 - ₹ 0.25 = \mathbf{₹ 65.21}$$[cite: 6]</li>
+        <li>Less: Monthly Management Expenses $= \\frac{₹ 3}{12} = ₹ 0.25$[cite: 6]</li>
+        <li>$$\\text{Expected NAV (D Mutual Fund)} = ₹ 65.4598 - ₹ 0.25 = \\mathbf{₹ 65.21}$$[cite: 6]</li>
       </ul>
 
       <h4>3. Expected NAV for K Mutual Fund</h4>
       <ul>
-        <li>Equity component $= 96\% \times ₹ 62.50 = ₹ 60.0000$; Cash component $= 4\% \times ₹ 62.50 = ₹ 2.5000$[cite: 6]</li>
-        <li>Decline in equity value $= 5\% \times \beta_K = 5\% \times 1.10 = 5.50\%$[cite: 6]</li>
-        <li>Revised Equity Value $= ₹ 60.0000 \times (1 - 0.055) = ₹ 56.7000$[cite: 6]</li>
+        <li>Equity component $= 96\\% \\times ₹ 62.50 = ₹ 60.0000$; Cash component $= 4\\% \\times ₹ 62.50 = ₹ 2.5000$[cite: 6]</li>
+        <li>Decline in equity value $= 5\\% \\times \\beta_K = 5\\% \\times 1.10 = 5.50\\%$[cite: 6]</li>
+        <li>Revised Equity Value $= ₹ 60.0000 \\times (1 - 0.055) = ₹ 56.7000$[cite: 6]</li>
         <li>Total Value before expenses $= 56.7000 + 2.5000 = ₹ 59.2000$[cite: 6]</li>
-        <li>Less: Monthly Management Expenses $= \frac{₹ 3}{12} = ₹ 0.25$[cite: 6]</li>
-        <li>$$\text{Expected NAV (K Mutual Fund)} = ₹ 59.2000 - ₹ 0.25 = \mathbf{₹ 58.95}$$[cite: 6]</li>
+        <li>Less: Monthly Management Expenses $= \\frac{₹ 3}{12} = ₹ 0.25$[cite: 6]</li>
+        <li>$$\\text{Expected NAV (K Mutual Fund)} = ₹ 59.2000 - ₹ 0.25 = \\mathbf{₹ 58.95}$$[cite: 6]</li>
       </ul>
     `
   },
@@ -8521,27 +8521,27 @@ const icaibookData = [
     solution_html: `
       <h4>General Fee Structure</h4>
       <ul>
-        <li>$$\text{Fixed Management Fee} = 0.10\% \times ₹ 20 \text{ crores} = \mathbf{₹ 2,00,000}$$[cite: 6]</li>
-        <li>High-Water Mark benchmark $= \mathbf{₹ 21.00 \text{ crores}}$[cite: 6]</li>
+        <li>$$\\text{Fixed Management Fee} = 0.10\\% \\times ₹ 20 \\text{ crores} = \\mathbf{₹ 2,00,000}$$[cite: 6]</li>
+        <li>High-Water Mark benchmark $= \\mathbf{₹ 21.00 \\text{ crores}}$[cite: 6]</li>
       </ul>
 
       <h4>Fee Payable Under Scenarios</h4>
       <ul>
         <li><strong>(a) Return = 29%:</strong>
-          <br />Year-end Portfolio Value $= ₹ 20 \text{ crores} \times (1 + 0.29) = ₹ 25.80 \text{ crores}$[cite: 6]
-          <br />Excess value over high-water mark $= ₹ 25.80 - ₹ 21.00 = ₹ 4.80 \text{ crores}$[cite: 6]
-          <br />Incentive Fee $= 2\% \times ₹ 4.80 \text{ crores} = ₹ 9,60,000$[cite: 6]
-          <br />$$\text{Total Fee Payable} = ₹ 2,00,000 + ₹ 9,60,000 = \mathbf{₹ 11,60,000}$$[cite: 6]
+          <br />Year-end Portfolio Value $= ₹ 20 \\text{ crores} \\times (1 + 0.29) = ₹ 25.80 \\text{ crores}$[cite: 6]
+          <br />Excess value over high-water mark $= ₹ 25.80 - ₹ 21.00 = ₹ 4.80 \\text{ crores}$[cite: 6]
+          <br />Incentive Fee $= 2\\% \\times ₹ 4.80 \\text{ crores} = ₹ 9,60,000$[cite: 6]
+          <br />$$\\text{Total Fee Payable} = ₹ 2,00,000 + ₹ 9,60,000 = \\mathbf{₹ 11,60,000}$$[cite: 6]
         </li>
         <li><strong>(b) Return = 4.5%:</strong>
-          <br />Year-end Portfolio Value $= ₹ 20 \text{ crores} \times (1 + 0.045) = ₹ 20.90 \text{ crores}$[cite: 6]
-          <br />Since ₹ 20.90 crores is less than the high-water mark of ₹ 21.00 crores, Incentive Fee $= \mathbf{Nil}$[cite: 6].
-          <br />$$\text{Total Fee Payable} = \text{Fixed Fee only} = \mathbf{₹ 2,00,000}$$[cite: 6]
+          <br />Year-end Portfolio Value $= ₹ 20 \\text{ crores} \\times (1 + 0.045) = ₹ 20.90 \\text{ crores}$[cite: 6]
+          <br />Since ₹ 20.90 crores is less than the high-water mark of ₹ 21.00 crores, Incentive Fee $= \\mathbf{Nil}$[cite: 6].
+          <br />$$\\text{Total Fee Payable} = \\text{Fixed Fee only} = \\mathbf{₹ 2,00,000}$$[cite: 6]
         </li>
         <li><strong>(c) Return = -1.8%:</strong>
-          <br />Year-end Portfolio Value $= ₹ 20 \text{ crores} \times (1 - 0.018) = ₹ 19.64 \text{ crores}$[cite: 6]
-          <br />Since value is below the benchmark, Incentive Fee $= \mathbf{Nil}$[cite: 6].
-          <br />$$\text{Total Fee Payable} = \text{Fixed Fee only} = \mathbf{₹ 2,00,000}$$[cite: 6]
+          <br />Year-end Portfolio Value $= ₹ 20 \\text{ crores} \\times (1 - 0.018) = ₹ 19.64 \\text{ crores}$[cite: 6]
+          <br />Since value is below the benchmark, Incentive Fee $= \\mathbf{Nil}$[cite: 6].
+          <br />$$\\text{Total Fee Payable} = \\text{Fixed Fee only} = \\mathbf{₹ 2,00,000}$$[cite: 6]
         </li>
       </ul>
     `
@@ -8762,7 +8762,7 @@ const icaibookData = [
       <h4>4. Current Fair Value of Call Option ($C_0$)</h4>
       <p>$$C_0 = \\frac{p \\cdot C_u + (1 - p) \\cdot C_d}{r} = \\frac{(0.6235 \\times 5.673) + (0.3765 \\times 1.0341)}{1.0247} = \\frac{3.5371 + 0.3893}{1.0247} = \\mathbf{₹ 3.83}$$</p>
 
-      <h4>5. Hedge Ratio ($\Delta$) at Valuation Date</h4>
+      <h4>5. Hedge Ratio ($\\Delta$) at Valuation Date</h4>
       <p>$$\\Delta = \\frac{C_u - C_d}{S_u - S_d} = \\frac{5.673 - 1.0341}{33 - 27} = \\frac{4.6389}{6} = \\mathbf{0.7731 \\text{ shares per call}}$$</p>
       <p><small><em>(Note: ICAI study material simplifies $\\Delta = \\frac{5 - 0}{33 - 27} = \\frac{5}{6}$ shares held for every 1 call option written)</em></small>.</p>
     `
@@ -8845,7 +8845,7 @@ const icaibookData = [
     // placement: 4,
     marks: 8,
     question_html: `
-      <p>ABC Ltd. is a pharmaceutical company possessing a patent for a drug called &lsquo;Aidrex&rsquo; with a patent life of 15 years. Development and marketing costs are estimated at $ 12.5 million. The expected present value of cash flows from sales over 15 years is $ 16.7 million. Cash flows exhibit a variance of 26.8% ($\sigma^2 = 0.268$). The current yield on 15-year Treasury Bonds is 7.8%. Determine the value of the patent using the Black-Scholes Real Options model.</p>
+      <p>ABC Ltd. is a pharmaceutical company possessing a patent for a drug called &lsquo;Aidrex&rsquo; with a patent life of 15 years. Development and marketing costs are estimated at $ 12.5 million. The expected present value of cash flows from sales over 15 years is $ 16.7 million. Cash flows exhibit a variance of 26.8% ($\\sigma^2 = 0.268$). The current yield on 15-year Treasury Bonds is 7.8%. Determine the value of the patent using the Black-Scholes Real Options model.</p>
       <p><em>Given: $\\ln(1.336) = 0.2897; e^{-1.0005} = 0.3677; e^{-1.1700} = 0.3104; N(1.2315) = 0.8910; N(-0.7735) = 0.2196$</em></p>
     `,
     solution_html: `
@@ -8854,9 +8854,9 @@ const icaibookData = [
         <li>Current Asset Value ($S$) = $ 16.7 million</li>
         <li>Exercise Cost ($E$) = $ 12.5 million</li>
         <li>Time to Expiration ($t$) = 15 years</li>
-        <li>Variance ($\sigma^2$) = 0.268 $\implies \sigma = \sqrt{0.268} = 0.5177$</li>
+        <li>Variance ($\\sigma^2$) = 0.268 $\\implies \\sigma = \\sqrt{0.268} = 0.5177$</li>
         <li>Risk-free rate ($R$) = 7.8% = 0.078</li>
-        <li>Cost of delay ($D$) $= \frac{1}{15} = 0.0667$</li>
+        <li>Cost of delay ($D$) $= \\frac{1}{15} = 0.0667$</li>
       </ul>
 
       <h4>2. Black-Scholes Intermediate Calculations</h4>
@@ -8882,8 +8882,8 @@ const icaibookData = [
     solution_html: `
       <h4>1. Payoffs at Year 1</h4>
       <ul>
-        <li>Favorable conditions ($S_u = ₹ 130 \\text{ crore}$): Continue project $\implies \\text{Abandonment Payoff} = \\max(0, 80 - 130) = \\mathbf{₹ 0}$</li>
-        <li>Sluggish conditions ($S_d = ₹ 60 \\text{ crore}$): Abandon project $\implies \\text{Abandonment Payoff} = 80 - 60 = \\mathbf{₹ 20 \\text{ crore}}$</li>
+        <li>Favorable conditions ($S_u = ₹ 130 \\text{ crore}$): Continue project $\\implies \\text{Abandonment Payoff} = \\max(0, 80 - 130) = \\mathbf{₹ 0}$</li>
+        <li>Sluggish conditions ($S_d = ₹ 60 \\text{ crore}$): Abandon project $\\implies \\text{Abandonment Payoff} = 80 - 60 = \\mathbf{₹ 20 \\text{ crore}}$</li>
       </ul>
 
       <h4>2. Risk-Neutral Probability ($p$)</h4>
@@ -8985,7 +8985,7 @@ const icaibookData = [
         <li><strong>Absence of Friction:</strong> There are no transaction costs, brokerage charges, or taxes, and all securities are infinitely divisible.</li>
         <li><strong>Constant Risk-Free Rate:</strong> The short-term risk-free interest rate is known, constant, and continuously compounded over the life of the option.</li>
         <li><strong>No Interim Cash Flows:</strong> The underlying stock does not pay dividends during the tenure of the contract.</li>
-        <li><strong>Lognormal Distribution of Prices:</strong> Stock prices follow a geometric Brownian motion (random walk), meaning continuous returns are normally distributed with constant volatility ($\sigma$).</li>
+        <li><strong>Lognormal Distribution of Prices:</strong> Stock prices follow a geometric Brownian motion (random walk), meaning continuous returns are normally distributed with constant volatility ($\\sigma$).</li>
       </ol>
     `
   },
@@ -9002,11 +9002,11 @@ const icaibookData = [
     solution_html: `
       <p><strong>Option Greeks</strong> are sensitivity measures derived from option pricing models that quantify how an option's premium responds to shifts in underlying parameters:</p>
       <ul>
-        <li><strong>Delta ($\Delta$):</strong> Measures the change in option price for a unit change in the underlying stock price ($\\frac{\\partial C}{\\partial S}$). It also defines the hedge ratio for delta-neutral portfolios.</li>
+        <li><strong>Delta ($\\Delta$):</strong> Measures the change in option price for a unit change in the underlying stock price ($\\frac{\\partial C}{\\partial S}$). It also defines the hedge ratio for delta-neutral portfolios.</li>
         <li><strong>Gamma ($\Gamma$):</strong> Measures the rate of change of Delta for a unit movement in the underlying price ($\\frac{\\partial^2 C}{\\partial S^2}$).</li>
         <li><strong>Theta ($\Theta$):</strong> Measures the sensitivity of the option's value to the passage of time (time decay, $\\frac{\\partial C}{\\partial t}$).</li>
         <li><strong>Vega ($\nu$):</strong> Measures the change in option premium for a 1% change in the volatility of the underlying asset ($\\frac{\\partial C}{\\partial \\sigma}$).</li>
-        <li><strong>Rho ($\rho$):</strong> Measures the responsiveness of the option's theoretical value to a 1% change in the risk-free interest rate ($\\frac{\\partial C}{\\partial r}$).</li>
+        <li><strong>Rho ($\\rho$):</strong> Measures the responsiveness of the option's theoretical value to a 1% change in the risk-free interest rate ($\\frac{\\partial C}{\\partial r}$).</li>
       </ul>
     `
   },
@@ -9261,9 +9261,9 @@ const icaibookData = [
     question_html: `
       <p>Determine the position on the index future required to obtain a complete hedge against the following portfolio:</p>
       <ul>
-        <li>Long cash position of ₹ 50 lakhs in Right Limited ($\beta = 1.25$)</li>
-        <li>Short cash position of ₹ 25 lakhs in Wrong Limited ($\beta = 0.90$)</li>
-        <li>Short cash position of ₹ 20 lakhs in Fair Limited ($\beta = 0.75$)</li>
+        <li>Long cash position of ₹ 50 lakhs in Right Limited ($\\beta = 1.25$)</li>
+        <li>Short cash position of ₹ 25 lakhs in Wrong Limited ($\\beta = 0.90$)</li>
+        <li>Short cash position of ₹ 20 lakhs in Fair Limited ($\\beta = 0.75$)</li>
       </ul>
     `,
     solution_html: `
@@ -9324,7 +9324,7 @@ const icaibookData = [
     // placement: 20,
     marks: 8,
     question_html: `
-      <p>Ram buys 10,000 shares of X Ltd. at ₹ 22 ($\beta = 1.5$) and sells short 5,000 shares of A Ltd. at ₹ 40 ($\beta = 2.0$). He obtains a complete hedge using Nifty futures at ₹ 1,000 each. The next day, share X drops by 2%, share A appreciates by 3%, and Nifty futures drops by 1.5%. He closes all positions. What is the overall profit or loss?</p>
+      <p>Ram buys 10,000 shares of X Ltd. at ₹ 22 ($\\beta = 1.5$) and sells short 5,000 shares of A Ltd. at ₹ 40 ($\\beta = 2.0$). He obtains a complete hedge using Nifty futures at ₹ 1,000 each. The next day, share X drops by 2%, share A appreciates by 3%, and Nifty futures drops by 1.5%. He closes all positions. What is the overall profit or loss?</p>
     `,
     solution_html: `
       <h4>1. Determination of Futures Hedge Position</h4>
@@ -9385,7 +9385,7 @@ const icaibookData = [
         <li>The number of contracts of NIFTY the investor needs to sell to get a full hedge until February for his portfolio if the current value of NIFTY is 5,900 and NIFTY futures have a lot size of 200 units[cite: 7].</li>
         <li>The number of futures contracts the investor should trade if he desires to reduce the beta of his portfolio to 0.6[cite: 7].</li>
       </ol>
-      <p><em>Given: $\ln(1.105) = 0.0998$ and $e^{0.015858} = 1.01598$</em>[cite: 7]</p>
+      <p><em>Given: $\\ln(1.105) = 0.0998$ and $e^{0.015858} = 1.01598$</em>[cite: 7]</p>
     `,
     solution_html: `
       <h4>(i) Portfolio Beta Calculation</h4>
@@ -9398,8 +9398,8 @@ const icaibookData = [
               <th style="padding:6px; border:1px solid #ddd;">Shares</th>
               <th style="padding:6px; border:1px solid #ddd;">Market Value (₹)</th>
               <th style="padding:6px; border:1px solid #ddd;">Weight ($w_i$)</th>
-              <th style="padding:6px; border:1px solid #ddd;">Beta ($\beta_i$)</th>
-              <th style="padding:6px; border:1px solid #ddd;">$w_i \cdot \beta_i$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Beta ($\\beta_i$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">$w_i \\cdot \\beta_i$</th>
             </tr>
           </thead>
           <tbody>
@@ -9418,22 +9418,22 @@ const icaibookData = [
           </tbody>
         </table>
       </div>
-      <p>$$\text{Portfolio Beta } (\beta_P) = \mathbf{0.849}$$[cite: 7]</p>
+      <p>$$\\text{Portfolio Beta } (\\beta_P) = \\mathbf{0.849}$$[cite: 7]</p>
 
       <h4>(ii) Theoretical Value of February 2013 NIFTY Futures</h4>
-      <p>Continuous compounding rate: $r = \ln(1.105) = 0.0998$[cite: 7].</p>
-      <p>Time period: $t = \frac{58}{365} = 0.1589 \text{ years}$[cite: 7].</p>
-      <p>$$F = S_0 \cdot e^{rt} = 5,900 \cdot e^{0.0998 \times 0.1589} = 5,900 \cdot e^{0.015858}$$[cite: 7]</p>
-      <p>$$F = 5,900 \times 1.01598 = \mathbf{₹ 5,994.28}$$[cite: 7]</p>
-      <p><small><em>(Alternatively, using simple continuous exponent: $5,900 \times e^{0.105 \times (58/365)} = ₹ 5,999.24$)</em></small>[cite: 7]</p>
+      <p>Continuous compounding rate: $r = \\ln(1.105) = 0.0998$[cite: 7].</p>
+      <p>Time period: $t = \\frac{58}{365} = 0.1589 \\text{ years}$[cite: 7].</p>
+      <p>$$F = S_0 \\cdot e^{rt} = 5,900 \\cdot e^{0.0998 \\times 0.1589} = 5,900 \\cdot e^{0.015858}$$[cite: 7]</p>
+      <p>$$F = 5,900 \\times 1.01598 = \\mathbf{₹ 5,994.28}$$[cite: 7]</p>
+      <p><small><em>(Alternatively, using simple continuous exponent: $5,900 \\times e^{0.105 \\times (58/365)} = ₹ 5,999.24$)</em></small>[cite: 7]</p>
 
       <h4>(iii) Number of Contracts to Sell for Full Hedge</h4>
-      <p>$$\text{Contract Value} = 5,994.28 \times 200 = ₹ 11,98,856$$[cite: 7]</p>
-      <p>$$\text{Number of Contracts} = \frac{V_P \times \beta_P}{\text{Futures Contract Value}} = \frac{₹ 1,88,54,860 \times 0.849}{₹ 11,98,856} = 13.35 \approx \mathbf{13 \text{ contracts (or 14 contracts)}}$$[cite: 7]</p>
+      <p>$$\\text{Contract Value} = 5,994.28 \\times 200 = ₹ 11,98,856$$[cite: 7]</p>
+      <p>$$\\text{Number of Contracts} = \\frac{V_P \\times \\beta_P}{\\text{Futures Contract Value}} = \\frac{₹ 1,88,54,860 \\times 0.849}{₹ 11,98,856} = 13.35 \\approx \\mathbf{13 \\text{ contracts (or 14 contracts)}}$$[cite: 7]</p>
 
       <h4>(iv) Number of Contracts to Reduce Portfolio Beta to 0.60</h4>
-      <p>$$\text{Number of Contracts} = \frac{V_P \times (\beta_P - \beta_P^*)}{\text{Futures Contract Value}} = \frac{₹ 1,88,54,860 \times (0.849 - 0.600)}{5,994.28 \times 200}$$[cite: 7]</p>
-      <p>$$\text{Number of Contracts} = \frac{₹ 1,88,54,860 \times 0.249}{₹ 11,98,856} = 3.92 \approx \mathbf{4 \text{ contracts to sell}}$$[cite: 7]</p>
+      <p>$$\\text{Number of Contracts} = \\frac{V_P \\times (\\beta_P - \\beta_P^*)}{\\text{Futures Contract Value}} = \\frac{₹ 1,88,54,860 \\times (0.849 - 0.600)}{5,994.28 \\times 200}$$[cite: 7]</p>
+      <p>$$\\text{Number of Contracts} = \\frac{₹ 1,88,54,860 \\times 0.249}{₹ 11,98,856} = 3.92 \\approx \\mathbf{4 \\text{ contracts to sell}}$$[cite: 7]</p>
     `
   },
   {
@@ -9472,38 +9472,38 @@ const icaibookData = [
     solution_html: `
       <h4>1. Portfolio Valuation and Current Beta</h4>
       <ul>
-        <li>A Ltd.: $3.00 \text{ lakh} \times ₹ 500 = ₹ 1,500 \text{ lakhs}$ (Weight $= 0.30$; $\beta = 1.40$)[cite: 7]</li>
-        <li>B Ltd.: $4.00 \text{ lakh} \times ₹ 750 = ₹ 3,000 \text{ lakhs}$ (Weight $= 0.60$; $\beta = 1.20$)[cite: 7]</li>
-        <li>C Ltd.: $2.00 \text{ lakh} \times ₹ 250 = ₹ 500 \text{ lakhs}$ (Weight $= 0.10$; $\beta = 1.60$)[cite: 7]</li>
-        <li>Total Portfolio Value $= \mathbf{₹ 5,000 \text{ lakhs}}$[cite: 7]</li>
+        <li>A Ltd.: $3.00 \\text{ lakh} \\times ₹ 500 = ₹ 1,500 \\text{ lakhs}$ (Weight $= 0.30$; $\\beta = 1.40$)[cite: 7]</li>
+        <li>B Ltd.: $4.00 \\text{ lakh} \\times ₹ 750 = ₹ 3,000 \\text{ lakhs}$ (Weight $= 0.60$; $\\beta = 1.20$)[cite: 7]</li>
+        <li>C Ltd.: $2.00 \\text{ lakh} \\times ₹ 250 = ₹ 500 \\text{ lakhs}$ (Weight $= 0.10$; $\\beta = 1.60$)[cite: 7]</li>
+        <li>Total Portfolio Value $= \\mathbf{₹ 5,000 \\text{ lakhs}}$[cite: 7]</li>
       </ul>
-      <p>$$\beta_P = (0.30 \times 1.40) + (0.60 \times 1.20) + (0.10 \times 1.60) = 0.42 + 0.72 + 0.16 = \mathbf{1.30}$$[cite: 7]</p>
+      <p>$$\\beta_P = (0.30 \\times 1.40) + (0.60 \\times 1.20) + (0.10 \\times 1.60) = 0.42 + 0.72 + 0.16 = \\mathbf{1.30}$$[cite: 7]</p>
 
       <h4>2. Value of Risk-Free Securities to be Acquired</h4>
-      <p>Let $p$ be the proportion allocated to risk-free assets ($\beta = 0$)[cite: 7]:</p>
-      <p>$$0.91 = (0 \times p) + 1.30(1 - p) \implies 1.30p = 1.30 - 0.91 = 0.39 \implies p = \mathbf{0.30 \text{ (30\%)}}$$[cite: 7]</p>
-      <p>$$\text{Value of Risk-Free Securities} = 30\% \times ₹ 5,000 \text{ lakhs} = \mathbf{₹ 1,500 \text{ lakhs}}$$[cite: 7]</p>
+      <p>Let $p$ be the proportion allocated to risk-free assets ($\\beta = 0$)[cite: 7]:</p>
+      <p>$$0.91 = (0 \\times p) + 1.30(1 - p) \\implies 1.30p = 1.30 - 0.91 = 0.39 \\implies p = \\mathbf{0.30 \\text{ (30\\%)}}$$[cite: 7]</p>
+      <p>$$\\text{Value of Risk-Free Securities} = 30\\% \\times ₹ 5,000 \\text{ lakhs} = \\mathbf{₹ 1,500 \\text{ lakhs}}$$[cite: 7]</p>
 
       <h4>3. Number of Shares to be Disposed Of Proportionately</h4>
       <ul>
-        <li>A Ltd.: $\frac{30\% \times ₹ 1,500 \text{ lakhs}}{₹ 500} = \frac{₹ 450 \text{ lakhs}}{₹ 500} = \mathbf{0.90 \text{ lakh shares}}$[cite: 7]</li>
-        <li>B Ltd.: $\frac{60\% \times ₹ 1,500 \text{ lakhs}}{₹ 750} = \frac{₹ 900 \text{ lakhs}}{₹ 750} = \mathbf{1.20 \text{ lakh shares}}$[cite: 7]</li>
-        <li>C Ltd.: $\frac{10\% \times ₹ 1,500 \text{ lakhs}}{₹ 250} = \frac{₹ 150 \text{ lakhs}}{₹ 250} = \mathbf{0.60 \text{ lakh shares}}$[cite: 7]</li>
+        <li>A Ltd.: $\\frac{30\\% \\times ₹ 1,500 \\text{ lakhs}}{₹ 500} = \\frac{₹ 450 \\text{ lakhs}}{₹ 500} = \\mathbf{0.90 \\text{ lakh shares}}$[cite: 7]</li>
+        <li>B Ltd.: $\\frac{60\\% \\times ₹ 1,500 \\text{ lakhs}}{₹ 750} = \\frac{₹ 900 \\text{ lakhs}}{₹ 750} = \\mathbf{1.20 \\text{ lakh shares}}$[cite: 7]</li>
+        <li>C Ltd.: $\\frac{10\\% \\times ₹ 1,500 \\text{ lakhs}}{₹ 250} = \\frac{₹ 150 \\text{ lakhs}}{₹ 250} = \\mathbf{0.60 \\text{ lakh shares}}$[cite: 7]</li>
       </ul>
 
       <h4>4. Number of Nifty Contracts to be Sold</h4>
-      <p>$$\text{Number of Contracts} = \frac{(\beta_P - \beta_P^*) \times V_P}{\text{Nifty Value} \times \text{Multiplier}} = \frac{(1.30 - 0.91) \times ₹ 50,00,00,000}{8,125 \times 200}$$[cite: 7]</p>
-      <p>$$\text{Number of Contracts} = \frac{0.39 \times ₹ 50,00,00,000}{₹ 16,25,000} = \mathbf{120 \text{ contracts to sell}}$$[cite: 7]</p>
+      <p>$$\\text{Number of Contracts} = \\frac{(\\beta_P - \\beta_P^*) \\times V_P}{\\text{Nifty Value} \\times \\text{Multiplier}} = \\frac{(1.30 - 0.91) \\times ₹ 50,00,00,000}{8,125 \\times 200}$$[cite: 7]</p>
+      <p>$$\\text{Number of Contracts} = \\frac{0.39 \\times ₹ 50,00,00,000}{₹ 16,25,000} = \\mathbf{120 \\text{ contracts to sell}}$$[cite: 7]</p>
 
       <h4>5. Verification of Portfolio Beta for 2% Rise in Nifty</h4>
       <ul>
-        <li>Increase in equity portfolio value: $2\% \times 1.30 = 2.6\% \implies ₹ 5,000 \times 1.026 = ₹ 5,130 \text{ lakhs}$[cite: 7]</li>
+        <li>Increase in equity portfolio value: $2\\% \\times 1.30 = 2.6\\% \\implies ₹ 5,000 \\times 1.026 = ₹ 5,130 \\text{ lakhs}$[cite: 7]</li>
         <li>Mark-to-Market loss on short futures:
-          <br />$$120 \times (8,125 \times 2\%) \times 200 = 120 \times 162.50 \times 200 = ₹ 39 \text{ lakhs}$$[cite: 7]
+          <br />$$120 \\times (8,125 \\times 2\\%) \\times 200 = 120 \\times 162.50 \\times 200 = ₹ 39 \\text{ lakhs}$$[cite: 7]
         </li>
-        <li>Net Value of Hedged Position $= ₹ 5,130 - ₹ 39 = \mathbf{₹ 5,091 \text{ lakhs}}$[cite: 7]</li>
-        <li>$$\text{Net Change in Portfolio} = \frac{₹ 5,091 - ₹ 5,000}{₹ 5,000} \times 100 = 1.82\%$$[cite: 7]</li>
-        <li>$$\text{Effective Beta} = \frac{1.82\%}{2.00\%} = \mathbf{0.91}$$[cite: 7]</li>
+        <li>Net Value of Hedged Position $= ₹ 5,130 - ₹ 39 = \\mathbf{₹ 5,091 \\text{ lakhs}}$[cite: 7]</li>
+        <li>$$\\text{Net Change in Portfolio} = \\frac{₹ 5,091 - ₹ 5,000}{₹ 5,000} \\times 100 = 1.82\\%$$[cite: 7]</li>
+        <li>$$\\text{Effective Beta} = \\frac{1.82\\%}{2.00\\%} = \\mathbf{0.91}$$[cite: 7]</li>
       </ul>
     `
   },
@@ -9553,8 +9553,8 @@ const icaibookData = [
             <tr style="background-color:#f2f2f2;">
               <th style="padding:6px; border:1px solid #ddd;">Security</th>
               <th style="padding:6px; border:1px solid #ddd;">Market Value (₹)</th>
-              <th style="padding:6px; border:1px solid #ddd;">Beta ($\beta$)</th>
-              <th style="padding:6px; border:1px solid #ddd;">Value &times; $\beta$ (₹)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Beta ($\\beta$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Value &times; $\\beta$ (₹)</th>
             </tr>
           </thead>
           <tbody>
@@ -9575,26 +9575,26 @@ const icaibookData = [
           </tbody>
         </table>
       </div>
-      <p>$$\beta_P = \frac{₹ 10,95,832.30}{₹ 9,94,450} = \mathbf{1.102}$$[cite: 7]</p>
+      <p>$$\\beta_P = \\frac{₹ 10,95,832.30}{₹ 9,94,450} = \\mathbf{1.102}$$[cite: 7]</p>
 
       <h4>(ii) Theoretical Futures Prices</h4>
       <ul>
         <li><strong>May Futures ($t = 2/12 = 0.1667$):</strong>
-          <br />$$F_{\text{May}} = 8,500 \cdot e^{0.20 \times (2/12)} = 8,500 \cdot e^{0.0333}$$[cite: 7]
-          <br />By linear interpolation: $e^{0.0333} = 1.03045 + \frac{0.0033}{0.01}(1.04081 - 1.03045) = 1.03045 + 0.00342 = 1.03387$[cite: 7]
-          <br />$$F_{\text{May}} = 8,500 \times 1.03387 = \mathbf{₹ 8,787.90 \approx ₹ 8,788}$$[cite: 7]
+          <br />$$F_{\\text{May}} = 8,500 \\cdot e^{0.20 \\times (2/12)} = 8,500 \\cdot e^{0.0333}$$[cite: 7]
+          <br />By linear interpolation: $e^{0.0333} = 1.03045 + \\frac{0.0033}{0.01}(1.04081 - 1.03045) = 1.03045 + 0.00342 = 1.03387$[cite: 7]
+          <br />$$F_{\\text{May}} = 8,500 \\times 1.03387 = \\mathbf{₹ 8,787.90 \\approx ₹ 8,788}$$[cite: 7]
         </li>
         <li><strong>June Futures ($t = 3/12 = 0.25$):</strong>
-          <br />$$F_{\text{June}} = 8,500 \cdot e^{0.20 \times 0.25} = 8,500 \cdot e^{0.05} = 8,500 \times 1.05127 = \mathbf{₹ 8,935.80}$$[cite: 7]
+          <br />$$F_{\\text{June}} = 8,500 \\cdot e^{0.20 \\times 0.25} = 8,500 \\cdot e^{0.05} = 8,500 \\times 1.05127 = \\mathbf{₹ 8,935.80}$$[cite: 7]
         </li>
       </ul>
 
       <h4>(iii) Number of June Futures Contracts to Sell (Quoted Price: 8,850; Lot: 25)</h4>
-      <p>$$\text{Formula} = \frac{\text{Hedged Value} \times \beta_P}{\text{Futures Price} \times \text{Lot Size}} = \frac{\text{Hedged Value} \times 1.102}{8,850 \times 25} = \frac{\text{Hedged Value} \times 1.102}{2,21,250}$$[cite: 7]</p>
+      <p>$$\\text{Formula} = \\frac{\\text{Hedged Value} \\times \\beta_P}{\\text{Futures Price} \\times \\text{Lot Size}} = \\frac{\\text{Hedged Value} \\times 1.102}{8,850 \\times 25} = \\frac{\\text{Hedged Value} \\times 1.102}{2,21,250}$$[cite: 7]</p>
       <ul>
-        <li><strong>(A) Total Portfolio:</strong> $\frac{₹ 9,94,450 \times 1.102}{2,21,250} = 4.953 \approx \mathbf{5 \text{ contracts}}$[cite: 7]</li>
-        <li><strong>(B) 50% of Portfolio:</strong> $\frac{(0.50 \times ₹ 9,94,450) \times 1.102}{2,21,250} = 2.476 \approx \mathbf{2 \text{ contracts}}$[cite: 7]</li>
-        <li><strong>(C) 120% of Portfolio:</strong> $\frac{(1.20 \times ₹ 9,94,450) \times 1.102}{2,21,250} = 5.943 \approx \mathbf{6 \text{ contracts}}$[cite: 7]</li>
+        <li><strong>(A) Total Portfolio:</strong> $\\frac{₹ 9,94,450 \\times 1.102}{2,21,250} = 4.953 \\approx \\mathbf{5 \\text{ contracts}}$[cite: 7]</li>
+        <li><strong>(B) 50% of Portfolio:</strong> $\\frac{(0.50 \\times ₹ 9,94,450) \\times 1.102}{2,21,250} = 2.476 \\approx \\mathbf{2 \\text{ contracts}}$[cite: 7]</li>
+        <li><strong>(C) 120% of Portfolio:</strong> $\\frac{(1.20 \\times ₹ 9,94,450) \\times 1.102}{2,21,250} = 5.943 \\approx \\mathbf{6 \\text{ contracts}}$[cite: 7]</li>
       </ul>
     `
   },
@@ -9631,8 +9631,8 @@ const icaibookData = [
     solution_html: `
       <h4>1. Margin Requirements</h4>
       <ul>
-        <li>$$\text{Initial Margin} = \mu + 3\sigma = ₹ 10,000 + 3(₹ 2,000) = \mathbf{₹ 16,000}$$[cite: 7]</li>
-        <li>$$\text{Maintenance Margin} = 75\% \times ₹ 16,000 = \mathbf{₹ 12,000}$$[cite: 7]</li>
+        <li>$$\\text{Initial Margin} = \\mu + 3\\sigma = ₹ 10,000 + 3(₹ 2,000) = \\mathbf{₹ 16,000}$$[cite: 7]</li>
+        <li>$$\\text{Maintenance Margin} = 75\\% \\times ₹ 16,000 = \\mathbf{₹ 12,000}$$[cite: 7]</li>
       </ul>
 
       <h4>2. Daily Marking to Market (MTM) Schedule</h4>
@@ -9681,13 +9681,13 @@ const icaibookData = [
       <ul>
         <li><strong>Call Option ($X = ₹ 550$):</strong> Since $S_T (₹ 350) < X (₹ 550)$, the call expires out-of-the-money and is <strong>not exercised</strong> (Payoff = ₹ 0)[cite: 7].</li>
         <li><strong>Put Option ($X = ₹ 450$):</strong> Since $S_T (₹ 350) < X (₹ 450)$, the put is exercised[cite: 7]:
-          <br />$$\text{Gross Gain} = (₹ 450 - ₹ 350) \times 100 = ₹ 100 \times 100 = \mathbf{₹ 10,000}$$[cite: 7]
+          <br />$$\\text{Gross Gain} = (₹ 450 - ₹ 350) \\times 100 = ₹ 100 \\times 100 = \\mathbf{₹ 10,000}$$[cite: 7]
         </li>
         <li><strong>Total Premium Paid:</strong>
-          <br />$$(₹ 30 + ₹ 5) \times 100 = ₹ 35 \times 100 = \mathbf{₹ 3,500}$$[cite: 7]
+          <br />$$(₹ 30 + ₹ 5) \\times 100 = ₹ 35 \\times 100 = \\mathbf{₹ 3,500}$$[cite: 7]
         </li>
       </ul>
-      <p>$$\text{Net Profit} = \text{Gross Gain} - \text{Total Premium} = ₹ 10,000 - ₹ 3,500 = \mathbf{+₹ 6,500}$$[cite: 7]</p>
+      <p>$$\\text{Net Profit} = \\text{Gross Gain} - \\text{Total Premium} = ₹ 10,000 - ₹ 3,500 = \\mathbf{+₹ 6,500}$$[cite: 7]</p>
     `
   },
   {
@@ -9705,20 +9705,20 @@ const icaibookData = [
       </ol>
     `,
     solution_html: `
-      <p>$$\text{Total Premium Paid} = (₹ 2 + ₹ 1) \times 100 = \mathbf{₹ 300}$$[cite: 7]</p>
+      <p>$$\\text{Total Premium Paid} = (₹ 2 + ₹ 1) \\times 100 = \\mathbf{₹ 300}$$[cite: 7]</p>
 
       <h4>(i) Share Price Rises to ₹ 43</h4>
       <ul>
-        <li>Call Option ($X = ₹ 42$): Exercised $\implies \text{Gain} = (43 - 42) \times 100 = \mathbf{₹ 100}$[cite: 7]</li>
+        <li>Call Option ($X = ₹ 42$): Exercised $\\implies \\text{Gain} = (43 - 42) \\times 100 = \\mathbf{₹ 100}$[cite: 7]</li>
         <li>Put Option ($X = ₹ 40$): Not exercised (₹ 0)[cite: 7]</li>
-        <li>$$\text{Net Payoff} = ₹ 100 - ₹ 300 = \mathbf{-₹ 200 \text{ (Net Loss)}}$$[cite: 7]</li>
+        <li>$$\\text{Net Payoff} = ₹ 100 - ₹ 300 = \\mathbf{-₹ 200 \\text{ (Net Loss)}}$$[cite: 7]</li>
       </ul>
 
       <h4>(ii) Share Price Falls to ₹ 36</h4>
       <ul>
         <li>Call Option ($X = ₹ 42$): Not exercised (₹ 0)[cite: 7]</li>
-        <li>Put Option ($X = ₹ 40$): Exercised $\implies \text{Gain} = (40 - 36) \times 100 = \mathbf{₹ 400}$[cite: 7]</li>
-        <li>$$\text{Net Payoff} = ₹ 400 - ₹ 300 = \mathbf{+₹ 100 \text{ (Net Profit)}}$$[cite: 7]</li>
+        <li>Put Option ($X = ₹ 40$): Exercised $\\implies \\text{Gain} = (40 - 36) \\times 100 = \\mathbf{₹ 400}$[cite: 7]</li>
+        <li>$$\\text{Net Payoff} = ₹ 400 - ₹ 300 = \\mathbf{+₹ 100 \\text{ (Net Profit)}}$$[cite: 7]</li>
       </ul>
     `
   },
@@ -9758,8 +9758,8 @@ const icaibookData = [
             <tr style="background-color:#f2f2f2;">
               <th style="padding:6px; border:1px solid #ddd;">Future Price ($S_T$)</th>
               <th style="padding:6px; border:1px solid #ddd;">Probability ($p$)</th>
-              <th style="padding:6px; border:1px solid #ddd;">Put Payoff $\max(0, 300 - S_T)$</th>
-              <th style="padding:6px; border:1px solid #ddd;">Expected Value ($p \cdot \text{Payoff}$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Put Payoff $\\max(0, 300 - S_T)$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Expected Value ($p \\cdot \\text{Payoff}$)</th>
             </tr>
           </thead>
           <tbody>
@@ -9811,11 +9811,11 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(i) Expected Share Price at the End of 4 Months</h4>
-      <p>$$E(S_T) = (120 \times 0.05) + (140 \times 0.20) + (160 \times 0.50) + (180 \times 0.10) + (190 \times 0.15)$$[cite: 7]</p>
-      <p>$$E(S_T) = 6.00 + 28.00 + 80.00 + 18.00 + 28.50 = \mathbf{₹ 160.50}$$[cite: 7]</p>
+      <p>$$E(S_T) = (120 \\times 0.05) + (140 \\times 0.20) + (160 \\times 0.50) + (180 \\times 0.10) + (190 \\times 0.15)$$[cite: 7]</p>
+      <p>$$E(S_T) = 6.00 + 28.00 + 80.00 + 18.00 + 28.50 = \\mathbf{₹ 160.50}$$[cite: 7]</p>
 
       <h4>(ii) Value of Call Option if Exercise Price ($S_T = ₹ 150$) Prevails</h4>
-      <p>$$\text{Intrinsic Value} = \max(0, 150 - 150) = \mathbf{Nil}$$[cite: 7]</p>
+      <p>$$\\text{Intrinsic Value} = \\max(0, 150 - 150) = \\mathbf{Nil}$$[cite: 7]</p>
 
       <h4>(iii) Expected Value of Call Option Held to Maturity</h4>
       <div style="overflow-x:auto;">
@@ -9824,8 +9824,8 @@ const icaibookData = [
             <tr style="background-color:#f2f2f2;">
               <th style="padding:6px; border:1px solid #ddd;">Price ($S_T$)</th>
               <th style="padding:6px; border:1px solid #ddd;">Prob. ($p$)</th>
-              <th style="padding:6px; border:1px solid #ddd;">Payoff $\max(0, S_T - 150)$</th>
-              <th style="padding:6px; border:1px solid #ddd;">Expected Payoff ($p \cdot \text{Payoff}$)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Payoff $\\max(0, S_T - 150)$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Expected Payoff ($p \\cdot \\text{Payoff}$)</th>
             </tr>
           </thead>
           <tbody>
@@ -9865,27 +9865,27 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>Initial Cost</h4>
-      <p>$$\text{Total Premium Paid} = (₹ 30 + ₹ 5) \times 100 = \mathbf{₹ 3,500}$$[cite: 7]</p>
+      <p>$$\\text{Total Premium Paid} = (₹ 30 + ₹ 5) \\times 100 = \\mathbf{₹ 3,500}$$[cite: 7]</p>
 
       <h4>(i) Price Remains at ₹ 500</h4>
       <ul>
         <li>Call ($X=550$): Out of money (Payoff = ₹ 0)[cite: 7]</li>
         <li>Put ($X=450$): Out of money (Payoff = ₹ 0)[cite: 7]</li>
-        <li>$$\text{Net Result} = 0 - ₹ 3,500 = \mathbf{-₹ 3,500 \text{ (Net Loss)}}$$[cite: 7]</li>
+        <li>$$\\text{Net Result} = 0 - ₹ 3,500 = \\mathbf{-₹ 3,500 \\text{ (Net Loss)}}$$[cite: 7]</li>
       </ul>
 
       <h4>(ii) Price Falls to ₹ 350</h4>
       <ul>
         <li>Call ($X=550$): Out of money (₹ 0)[cite: 7]</li>
-        <li>Put ($X=450$): Exercised $\implies (450 - 350) \times 100 = +₹ 10,000$[cite: 7]</li>
-        <li>$$\text{Net Result} = ₹ 10,000 - ₹ 3,500 = \mathbf{+₹ 6,500 \text{ (Net Profit)}}$$[cite: 7]</li>
+        <li>Put ($X=450$): Exercised $\\implies (450 - 350) \\times 100 = +₹ 10,000$[cite: 7]</li>
+        <li>$$\\text{Net Result} = ₹ 10,000 - ₹ 3,500 = \\mathbf{+₹ 6,500 \\text{ (Net Profit)}}$$[cite: 7]</li>
       </ul>
 
       <h4>(iii) Price Rises to ₹ 600</h4>
       <ul>
-        <li>Call ($X=550$): Exercised $\implies (600 - 550) \times 100 = +₹ 5,000$[cite: 7]</li>
+        <li>Call ($X=550$): Exercised $\\implies (600 - 550) \\times 100 = +₹ 5,000$[cite: 7]</li>
         <li>Put ($X=450$): Out of money (₹ 0)[cite: 7]</li>
-        <li>$$\text{Net Result} = ₹ 5,000 - ₹ 3,500 = \mathbf{+₹ 1,500 \text{ (Net Profit)}}$$[cite: 7]</li>
+        <li>$$\\text{Net Result} = ₹ 5,000 - ₹ 3,500 = \\mathbf{+₹ 1,500 \\text{ (Net Profit)}}$$[cite: 7]</li>
       </ul>
     `
   },
@@ -9907,10 +9907,10 @@ const icaibookData = [
           <thead>
             <tr style="background-color:#f2f2f2;">
               <th style="padding:6px; border:1px solid #ddd;">Spot Price ($S_T$)</th>
-              <th style="padding:6px; border:1px solid #ddd;">Call Gross Payoff $\max(0, S_T - 220)$</th>
-              <th style="padding:6px; border:1px solid #ddd;">Call Net Payoff $(\text{Gross} - 6)$</th>
-              <th style="padding:6px; border:1px solid #ddd;">Put Gross Payoff $\max(0, 220 - S_T)$</th>
-              <th style="padding:6px; border:1px solid #ddd;">Put Net Payoff $(\text{Gross} - 5)$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Call Gross Payoff $\\max(0, S_T - 220)$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Call Net Payoff $(\\text{Gross} - 6)$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Put Gross Payoff $\\max(0, 220 - S_T)$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Put Net Payoff $(\\text{Gross} - 5)$</th>
             </tr>
           </thead>
           <tbody>
@@ -9925,8 +9925,8 @@ const icaibookData = [
 
       <h4>Gainful Exercise Range</h4>
       <ul>
-        <li><strong>Call Option:</strong> Exercised whenever $S_T > ₹ 220$, and breaks even at $₹ 220 + ₹ 6 = \mathbf{₹ 226}$[cite: 7]. It yields a positive net profit at any price <strong>above ₹ 226</strong>[cite: 7].</li>
-        <li><strong>Put Option:</strong> Exercised whenever $S_T < ₹ 220$, and breaks even at $₹ 220 - ₹ 5 = \mathbf{₹ 215}$[cite: 7]. It yields a positive net profit at any price <strong>below ₹ 215</strong>[cite: 7].</li>
+        <li><strong>Call Option:</strong> Exercised whenever $S_T > ₹ 220$, and breaks even at $₹ 220 + ₹ 6 = \\mathbf{₹ 226}$[cite: 7]. It yields a positive net profit at any price <strong>above ₹ 226</strong>[cite: 7].</li>
+        <li><strong>Put Option:</strong> Exercised whenever $S_T < ₹ 220$, and breaks even at $₹ 220 - ₹ 5 = \\mathbf{₹ 215}$[cite: 7]. It yields a positive net profit at any price <strong>below ₹ 215</strong>[cite: 7].</li>
       </ul>
     `
   },
@@ -9945,13 +9945,13 @@ const icaibookData = [
       <h4>1. Parameter Identification</h4>
       <ul>
         <li>Current Stock Price ($S$) = ₹ 421[cite: 7]</li>
-        <li>Upper Price ($S_u$) = ₹ 592 $\implies u = \frac{592}{421} = 1.406$[cite: 7]</li>
-        <li>Lower Price ($S_d$) = ₹ 411 $\implies d = \frac{411}{421} = 0.976$[cite: 7]</li>
+        <li>Upper Price ($S_u$) = ₹ 592 $\\implies u = \\frac{592}{421} = 1.406$[cite: 7]</li>
+        <li>Lower Price ($S_d$) = ₹ 411 $\\implies d = \\frac{411}{421} = 0.976$[cite: 7]</li>
         <li>Compounding factor: $e^{rt} = e^{0.036} = 1.037$[cite: 7]</li>
       </ul>
 
       <h4>2. Risk-Neutral Probability ($p$)</h4>
-      <p>$$p = \frac{e^{rt} - d}{u - d} = \frac{1.037 - 0.976}{1.406 - 0.976} = \frac{0.061}{0.430} = \mathbf{0.1418}$$[cite: 7]</p>
+      <p>$$p = \\frac{e^{rt} - d}{u - d} = \\frac{1.037 - 0.976}{1.406 - 0.976} = \\frac{0.061}{0.430} = \\mathbf{0.1418}$$[cite: 7]</p>
       <p>The probability of the share price rising to ₹ 592 is only <strong>14.18%</strong>, indicating that the call option carries a high degree of speculative risk[cite: 7].</p>
     `
   },
@@ -9971,24 +9971,24 @@ const icaibookData = [
       </ol>
     `,
     solution_html: `
-      <h4>(i) Hedge Ratio ($\Delta$)</h4>
+      <h4>(i) Hedge Ratio ($\\Delta$)</h4>
       <ul>
         <li>At $S_u = ₹ 780$: Call Payoff $C_u = 780 - 630 = ₹ 150$[cite: 7]</li>
-        <li>At $S_d = ₹ 480$: Call Payoff $C_d = \max(0, 480 - 630) = ₹ 0$[cite: 7]</li>
+        <li>At $S_d = ₹ 480$: Call Payoff $C_d = \\max(0, 480 - 630) = ₹ 0$[cite: 7]</li>
       </ul>
-      <p>$$\Delta = \frac{C_u - C_d}{S_u - S_d} = \frac{150 - 0}{780 - 480} = \frac{150}{300} = \mathbf{0.50 \text{ shares per option}}$$[cite: 7]</p>
+      <p>$$\\Delta = \\frac{C_u - C_d}{S_u - S_d} = \\frac{150 - 0}{780 - 480} = \\frac{150}{300} = \\mathbf{0.50 \\text{ shares per option}}$$[cite: 7]</p>
       <p>Mr. Dayal should <strong>buy 0.50 shares for every 1 call option written</strong> (or buy 1 share against 2 calls written)[cite: 7].</p>
 
       <h4>(ii) Current Value of Call Option</h4>
       <p>Portfolio cash inflow at Month 3 under either state[cite: 7]:</p>
-      <p>$$(0.50 \times 780) - 150 = 390 - 150 = ₹ 240 \quad \text{or} \quad (0.50 \times 480) - 0 = ₹ 240$$[cite: 7]</p>
-      <p>Periodic risk-free rate (3 months): $1 + \left(0.10 \times \frac{3}{12}\right) = 1.025$[cite: 7].</p>
-      <p>$$(0.50 \times 600 - C_0) \times 1.025 = 240 \implies (300 - C_0) \times 1.025 = 240$$[cite: 7]</p>
-      <p>$$300 - C_0 = \frac{240}{1.025} = 234.146 \implies C_0 = 300 - 234.146 = \mathbf{₹ 65.85}$$[cite: 7]</p>
+      <p>$$(0.50 \\times 780) - 150 = 390 - 150 = ₹ 240 \\quad \\text{or} \\quad (0.50 \\times 480) - 0 = ₹ 240$$[cite: 7]</p>
+      <p>Periodic risk-free rate (3 months): $1 + \\left(0.10 \\times \\frac{3}{12}\\right) = 1.025$[cite: 7].</p>
+      <p>$$(0.50 \\times 600 - C_0) \\times 1.025 = 240 \\implies (300 - C_0) \\times 1.025 = 240$$[cite: 7]</p>
+      <p>$$300 - C_0 = \\frac{240}{1.025} = 234.146 \\implies C_0 = 300 - 234.146 = \\mathbf{₹ 65.85}$$[cite: 7]</p>
 
       <h4>(iii) Expected Rate of Return on Call Option</h4>
-      <p>$$\text{Expected Expiration Value} = (150 \times 0.60) + (0 \times 0.40) = ₹ 90.00$$[cite: 7]</p>
-      <p>$$\text{Expected Rate of Return} = \frac{₹ 90.00 - ₹ 65.85}{₹ 65.85} \times 100 = \frac{₹ 24.15}{₹ 65.85} \times 100 = \mathbf{36.67\%}$$[cite: 7]</p>
+      <p>$$\\text{Expected Expiration Value} = (150 \\times 0.60) + (0 \\times 0.40) = ₹ 90.00$$[cite: 7]</p>
+      <p>$$\\text{Expected Rate of Return} = \\frac{₹ 90.00 - ₹ 65.85}{₹ 65.85} \\times 100 = \\frac{₹ 24.15}{₹ 65.85} \\times 100 = \\mathbf{36.67\\%}$$[cite: 7]</p>
     `
   },
   {
@@ -10004,29 +10004,29 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Risk-Neutral Probabilities</h4>
-      <p>$$p = \frac{(1 + r) - d}{u - d} = \frac{1.06 - 0.80}{1.20 - 0.80} = \frac{0.26}{0.40} = \mathbf{0.65}$$[cite: 7]</p>
-      <p>$$1 - p = 1 - 0.65 = \mathbf{0.35}$$[cite: 7]</p>
+      <p>$$p = \\frac{(1 + r) - d}{u - d} = \\frac{1.06 - 0.80}{1.20 - 0.80} = \\frac{0.26}{0.40} = \\mathbf{0.65}$$[cite: 7]</p>
+      <p>$$1 - p = 1 - 0.65 = \\mathbf{0.35}$$[cite: 7]</p>
 
       <h4>2. Two-Step Binomial Price &amp; Payoff Tree</h4>
       <ul>
         <li><strong>Node A ($t=0$):</strong> $S_0 = ₹ 50.00$</li>
-        <li><strong>Node B ($t=1$, Up):</strong> $S_u = 50 \times 1.20 = ₹ 60.00$</li>
-        <li><strong>Node C ($t=1$, Down):</strong> $S_d = 50 \times 0.80 = ₹ 40.00$</li>
-        <li><strong>Node D ($t=2$, Up-Up):</strong> $S_{uu} = 60 \times 1.20 = ₹ 72.00 \implies C_{uu} = \max(0, 72 - 50) = \mathbf{₹ 22.00}$[cite: 7]</li>
-        <li><strong>Node E ($t=2$, Up-Down):</strong> $S_{ud} = 60 \times 0.80 = ₹ 48.00 \implies C_{ud} = \max(0, 48 - 50) = \mathbf{₹ 0.00}$[cite: 7]</li>
-        <li><strong>Node F ($t=2$, Down-Down):</strong> $S_{dd} = 40 \times 0.80 = ₹ 32.00 \implies C_{dd} = \max(0, 32 - 50) = \mathbf{₹ 0.00}$[cite: 7]</li>
+        <li><strong>Node B ($t=1$, Up):</strong> $S_u = 50 \\times 1.20 = ₹ 60.00$</li>
+        <li><strong>Node C ($t=1$, Down):</strong> $S_d = 50 \\times 0.80 = ₹ 40.00$</li>
+        <li><strong>Node D ($t=2$, Up-Up):</strong> $S_{uu} = 60 \\times 1.20 = ₹ 72.00 \\implies C_{uu} = \\max(0, 72 - 50) = \\mathbf{₹ 22.00}$[cite: 7]</li>
+        <li><strong>Node E ($t=2$, Up-Down):</strong> $S_{ud} = 60 \\times 0.80 = ₹ 48.00 \\implies C_{ud} = \\max(0, 48 - 50) = \\mathbf{₹ 0.00}$[cite: 7]</li>
+        <li><strong>Node F ($t=2$, Down-Down):</strong> $S_{dd} = 40 \\times 0.80 = ₹ 32.00 \\implies C_{dd} = \\max(0, 32 - 50) = \\mathbf{₹ 0.00}$[cite: 7]</li>
       </ul>
 
       <h4>3. Backward Induction for Option Values</h4>
       <ul>
         <li><strong>Value at Node B:</strong>
-          <br />$$C_B = \frac{(0.65 \times 22) + (0.35 \times 0)}{1.06} = \frac{14.30}{1.06} = \mathbf{₹ 13.49}$$[cite: 7]
+          <br />$$C_B = \\frac{(0.65 \\times 22) + (0.35 \\times 0)}{1.06} = \\frac{14.30}{1.06} = \\mathbf{₹ 13.49}$$[cite: 7]
         </li>
         <li><strong>Value at Node C:</strong>
-          <br />$$C_C = \frac{(0.65 \times 0) + (0.35 \times 0)}{1.06} = \mathbf{₹ 0.00}$$[cite: 7]
+          <br />$$C_C = \\frac{(0.65 \\times 0) + (0.35 \\times 0)}{1.06} = \\mathbf{₹ 0.00}$$[cite: 7]
         </li>
         <li><strong>Value at Initial Node A ($C_0$):</strong>
-          <br />$$C_A = \frac{(0.65 \times 13.49) + (0.35 \times 0)}{1.06} = \frac{8.7685}{1.06} = \mathbf{₹ 8.272}$$[cite: 7]
+          <br />$$C_A = \\frac{(0.65 \\times 13.49) + (0.35 \\times 0)}{1.06} = \\frac{8.7685}{1.06} = \\mathbf{₹ 8.272}$$[cite: 7]
         </li>
       </ul>
     `
@@ -10044,13 +10044,13 @@ const icaibookData = [
     solution_html: `
       <h4>1. Risk-Neutral Probability Calculation</h4>
       <p>$$(500 - 420)p + (400 - 420)(1 - p) = 420(e^{0.02} - 1)$$[cite: 7]</p>
-      <p>$$80p - 20(1 - p) = 420(1.0202 - 1) = 420 \times 0.0202 = 8.484$$[cite: 7]</p>
-      <p>$$100p - 20 = 8.484 \implies 100p = 28.484 \implies p = \mathbf{0.2848}$$[cite: 7]</p>
-      <p>$$1 - p = 1 - 0.2848 = \mathbf{0.7152}$$[cite: 7]</p>
+      <p>$$80p - 20(1 - p) = 420(1.0202 - 1) = 420 \\times 0.0202 = 8.484$$[cite: 7]</p>
+      <p>$$100p - 20 = 8.484 \\implies 100p = 28.484 \\implies p = \\mathbf{0.2848}$$[cite: 7]</p>
+      <p>$$1 - p = 1 - 0.2848 = \\mathbf{0.7152}$$[cite: 7]</p>
 
       <h4>2. Expected Call Option Value</h4>
-      <p>$$\text{Payoff at ₹ 500} = 500 - 450 = ₹ 50; \quad \text{Payoff at ₹ 400} = ₹ 0$$[cite: 7]</p>
-      <p>$$C_0 = \frac{(0.2848 \times 50) + (0.7152 \times 0)}{1.0202} = \frac{14.24}{1.0202} = \mathbf{₹ 13.96}$$[cite: 7]</p>
+      <p>$$\\text{Payoff at ₹ 500} = 500 - 450 = ₹ 50; \\quad \\text{Payoff at ₹ 400} = ₹ 0$$[cite: 7]</p>
+      <p>$$C_0 = \\frac{(0.2848 \\times 50) + (0.7152 \\times 0)}{1.0202} = \\frac{14.24}{1.0202} = \\mathbf{₹ 13.96}$$[cite: 7]</p>
     `
   },
   {
@@ -10065,11 +10065,11 @@ const icaibookData = [
       <ul>
         <li>Current Stock Price ($S$) = ₹ 80[cite: 7]</li>
         <li>Exercise Price ($K$) = ₹ 75[cite: 7]</li>
-        <li>Standard Deviation ($\sigma$) = 0.40[cite: 7]</li>
+        <li>Standard Deviation ($\\sigma$) = 0.40[cite: 7]</li>
         <li>Maturity period ($t$) = 6 months (0.5 years)[cite: 7]</li>
         <li>Annual interest rate ($r$) = 12%[cite: 7]</li>
       </ul>
-      <p><em>Given: $e^{0.12 \times 0.5} = 1.062; \ln(1.0667) = 0.0646$</em>[cite: 7]</p>
+      <p><em>Given: $e^{0.12 \\times 0.5} = 1.062; \\ln(1.0667) = 0.0646$</em>[cite: 7]</p>
       <div style="overflow-x:auto;">
         <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
           <thead>
@@ -10090,27 +10090,27 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Calculation of $d_1$ and $d_2$</h4>
-      <p>$$d_1 = \frac{\ln(S/K) + (r + \sigma^2/2)t}{\sigma\sqrt{t}} = \frac{\ln(80/75) + [0.12 + 0.5(0.40)^2](0.5)}{0.40\sqrt{0.5}}$$[cite: 7]</p>
-      <p>$$d_1 = \frac{0.0646 + [0.12 + 0.08](0.5)}{0.40 \times 0.7071} = \frac{0.0646 + 0.10}{0.2828} = \frac{0.1646}{0.2828} = \mathbf{0.5820}$$[cite: 7]</p>
-      <p>$$d_2 = d_1 - \sigma\sqrt{t} = 0.5820 - 0.2828 = \mathbf{0.2992}$$[cite: 7]</p>
+      <p>$$d_1 = \\frac{\\ln(S/K) + (r + \\sigma^2/2)t}{\\sigma\\sqrt{t}} = \\frac{\\ln(80/75) + [0.12 + 0.5(0.40)^2](0.5)}{0.40\\sqrt{0.5}}$$[cite: 7]</p>
+      <p>$$d_1 = \\frac{0.0646 + [0.12 + 0.08](0.5)}{0.40 \\times 0.7071} = \\frac{0.0646 + 0.10}{0.2828} = \\frac{0.1646}{0.2828} = \\mathbf{0.5820}$$[cite: 7]</p>
+      <p>$$d_2 = d_1 - \\sigma\\sqrt{t} = 0.5820 - 0.2828 = \\mathbf{0.2992}$$[cite: 7]</p>
 
       <h4>2. Linear Interpolation for $N(d_1)$ and $N(d_2)$</h4>
       <ul>
         <li><strong>For $N(d_1) = N(0.5820)$ between $z = 0.55$ and $z = 0.60$:</strong>
-          <br />$$\text{Base } N(0.55) = 0.7088$$[cite: 7]
-          <br />$$\text{Difference} = 0.7257 - 0.7088 = 0.0169$$[cite: 7]
-          <br />$$N(0.5820) = 0.7088 + \left(\frac{0.0320}{0.05} \times 0.0169\right) = 0.7088 + 0.0108 = \mathbf{0.7196 \approx 0.7197}$$[cite: 7]
+          <br />$$\\text{Base } N(0.55) = 0.7088$$[cite: 7]
+          <br />$$\\text{Difference} = 0.7257 - 0.7088 = 0.0169$$[cite: 7]
+          <br />$$N(0.5820) = 0.7088 + \\left(\\frac{0.0320}{0.05} \\times 0.0169\\right) = 0.7088 + 0.0108 = \\mathbf{0.7196 \\approx 0.7197}$$[cite: 7]
         </li>
         <li><strong>For $N(d_2) = N(0.2992)$ between $z = 0.25$ and $z = 0.30$:</strong>
-          <br />$$\text{Base } N(0.25) = 0.5987$$[cite: 7]
-          <br />$$\text{Difference} = 0.6179 - 0.5987 = 0.0192$$[cite: 7]
-          <br />$$N(0.2992) = 0.5987 + \left(\frac{0.0492}{0.05} \times 0.0192\right) = 0.5987 + 0.0189 = \mathbf{0.6176}$$[cite: 7]
+          <br />$$\\text{Base } N(0.25) = 0.5987$$[cite: 7]
+          <br />$$\\text{Difference} = 0.6179 - 0.5987 = 0.0192$$[cite: 7]
+          <br />$$N(0.2992) = 0.5987 + \\left(\\frac{0.0492}{0.05} \\times 0.0192\\right) = 0.5987 + 0.0189 = \\mathbf{0.6176}$$[cite: 7]
         </li>
       </ul>
 
       <h4>3. Call Option Value</h4>
-      <p>$$C = S \cdot N(d_1) - K \cdot e^{-rt} N(d_2) = [80 \times 0.7197] - \left[\frac{75}{1.062} \times 0.6176\right]$$[cite: 7]</p>
-      <p>$$C = 57.576 - [70.621 \times 0.6176] = 57.576 - 43.616 = \mathbf{₹ 13.96}$$[cite: 7]</p>
+      <p>$$C = S \\cdot N(d_1) - K \\cdot e^{-rt} N(d_2) = [80 \\times 0.7197] - \\left[\\frac{75}{1.062} \\times 0.6176\\right]$$[cite: 7]</p>
+      <p>$$C = 57.576 - [70.621 \\times 0.6176] = 57.576 - 43.616 = \\mathbf{₹ 13.96}$$[cite: 7]</p>
     `
   },
   // chapter10
@@ -10127,8 +10127,8 @@ const icaibookData = [
     solution_html: `
       <p>An exchange rate quotation expresses the price of one currency in terms of another:</p>
       <ul>
-        <li><strong>Indirect Quote (from Indian perspective):</strong> One can buy <strong>0.0217 US dollars</strong> for one Indian rupee ($\$ 0.0217 / ₹$).</li>
-        <li><strong>Direct Quote (from Indian perspective):</strong> <strong>₹ 46.08 Indian rupees</strong> are needed to buy one US dollar ($₹ 46.08 / \$$).</li>
+        <li><strong>Indirect Quote (from Indian perspective):</strong> One can buy <strong>0.0217 US dollars</strong> for one Indian rupee ($\\$ 0.0217 / ₹$).</li>
+        <li><strong>Direct Quote (from Indian perspective):</strong> <strong>₹ 46.08 Indian rupees</strong> are needed to buy one US dollar ($₹ 46.08 / \\$$).</li>
       </ul>
     `
   },
@@ -10218,7 +10218,7 @@ const icaibookData = [
 
       <h4>3. Corrective Steps to be Taken by Dealer</h4>
       <ul>
-        <li><strong>Step 1 (Cash Position Adjustment):</strong> The Nostro account currently shows a credit balance of £ 27,500, whereas the required credit balance is £ 7,500[cite: 8]. Therefore, the bank must <strong>sell £ 20,000 in the Spot market</strong> ($£ 27,500 - £ 7,500$)[cite: 8].</li>
+        <li><strong>Step 1 (Cash Position Adjustment):</strong> The Nostro account currently shows a credit balance of £ 27,500, whereas the required credit balance is £ 7,500[cite: 8]. Therefore, the bank must <strong>sell £ 20,000 in the Spot market</strong> (\\$£ 27,500 - £ 7,500\\$)[cite: 8].</li>
         <li><strong>Step 2 (Exchange Position Adjustment):</strong> Selling £ 20,000 spot reduces the closing overbought exchange position of £ 20,000 to Nil[cite: 8]. Since the bank is required to maintain an overbought position of £ 7,500, it must <strong>buy £ 7,500 in the Forward market</strong>[cite: 8].</li>
       </ul>
     `
@@ -10231,11 +10231,11 @@ const icaibookData = [
     // placement: 3,
     marks: 4,
     question_html: `
-      <p>On 1st June 2015, the bank enters into a forward contract for 2 months for selling US$ 1,00,000 at ₹ 65.5000[cite: 8]. On 31st July 2015, the spot rate is ₹ 65.7500 / 65.2500[cite: 8]. Calculate the amount to be debited to the customer's account[cite: 8].</p>
+      <p>On 1st June 2015, the bank enters into a forward contract for 2 months for selling US\\$ 1,00,000 at ₹ 65.5000[cite: 8]. On 31st July 2015, the spot rate is ₹ 65.7500 / 65.2500[cite: 8]. Calculate the amount to be debited to the customer's account[cite: 8].</p>
     `,
     solution_html: `
       <p>Because delivery takes place on the contractual due date (31st July 2015), the bank executes the transaction at the originally agreed forward contract rate irrespective of prevailing spot market rate movements[cite: 8].</p>
-      <p>$$\text{Amount Debited} = \text{US\$ } 1,00,000 \times ₹ 65.5000 = \mathbf{₹ 65,50,000}$$[cite: 8]</p>
+      <p>$$\\text{Amount Debited} = \\text{US\\$ } 1,00,000 \\times ₹ 65.5000 = \\mathbf{₹ 65,50,000}$$[cite: 8]</p>
     `
   },
   {
@@ -10246,7 +10246,7 @@ const icaibookData = [
     // placement: 4,
     marks: 8,
     question_html: `
-      <p>On 1 October 2015, Mr. X, an exporter, enters into a forward contract with BNP Bank to sell US$ 1,00,000 on 31 December 2015 at ₹ 65.40/$[cite: 8]. Due to an early remittance, Mr. X requests the bank to take delivery on 30 November 2015 (before the due date)[cite: 8].</p>
+      <p>On 1 October 2015, Mr. X, an exporter, enters into a forward contract with BNP Bank to sell US\\$ 1,00,000 on 31 December 2015 at ₹ 65.40/\\$[cite: 8]. Due to an early remittance, Mr. X requests the bank to take delivery on 30 November 2015 (before the due date)[cite: 8].</p>
       <p>Interbank rates on 28 November 2015 are[cite: 8]:</p>
       <ul>
         <li>Spot: ₹ 65.22 / 65.27[cite: 8]</li>
@@ -10256,28 +10256,28 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Swap Difference (Swap Loss to Bank)</h4>
-      <p>To take early delivery on 30th November, the bank buys US$ from the customer and sells spot in the interbank market, simultaneously buying 1-month forward to cover its original commitment for 31st December[cite: 8]:</p>
+      <p>To take early delivery on 30th November, the bank buys US\\$ from the customer and sells spot in the interbank market, simultaneously buying 1-month forward to cover its original commitment for 31st December[cite: 8]:</p>
       <ul>
-        <li>Bank sells Spot @ Market Buying Rate $= ₹ 65.2200$[cite: 8]</li>
-        <li>Bank buys 1-Month Forward (31 Dec) @ Market Selling Rate ($₹ 65.27 + ₹ 0.15$) $= ₹ 65.4200$[cite: 8]</li>
-        <li>Swap Loss per US$ $= ₹ 65.4200 - ₹ 65.2200 = \mathbf{₹ 0.2000}$[cite: 8]</li>
-        <li>$$\text{Total Swap Loss on US\$ } 1,00,000 = 1,00,000 \times ₹ 0.20 = \mathbf{₹ 20,000.00}$$[cite: 8]</li>
+        <li>Bank sells Spot @ Market Buying Rate \\$= ₹ 65.2200\\$[cite: 8]</li>
+        <li>Bank buys 1-Month Forward (31 Dec) @ Market Selling Rate (\\$₹ 65.27 + ₹ 0.15\\$) \\$= ₹ 65.4200\\$[cite: 8]</li>
+        <li>Swap Loss per US\\$ \\$= ₹ 65.4200 - ₹ 65.2200 = \\mathbf{₹ 0.2000}\\$[cite: 8]</li>
+        <li>$$\\text{Total Swap Loss on US\\$ } 1,00,000 = 1,00,000 \\times ₹ 0.20 = \\mathbf{₹ 20,000.00}$$[cite: 8]</li>
       </ul>
 
       <h4>2. Interest on Outlay of Funds</h4>
       <ul>
-        <li>Bank pays customer at contracted purchase rate on 30 Nov $= ₹ 65.4000$[cite: 8]</li>
-        <li>Bank receives from market spot sale $= ₹ 65.2200$[cite: 8]</li>
-        <li>Outlay of Funds per US$ $= ₹ 65.4000 - ₹ 65.2200 = \mathbf{₹ 0.1800}$[cite: 8]</li>
+        <li>Bank pays customer at contracted purchase rate on 30 Nov \\$= ₹ 65.4000\\$[cite: 8]</li>
+        <li>Bank receives from market spot sale \\$= ₹ 65.2200\\$[cite: 8]</li>
+        <li>Outlay of Funds per US\\$ \\$= ₹ 65.4000 - ₹ 65.2200 = \\mathbf{₹ 0.1800}\\$[cite: 8]</li>
         <li>Outlay period: 30 November to 31 December = <strong>31 days</strong>[cite: 8]</li>
-        <li>$$\text{Interest on Outlay} = 1,00,000 \times ₹ 0.18 \times \frac{31}{365} \times 18\% = \mathbf{₹ 275.18 \approx ₹ 275.00}$$[cite: 8]</li>
+        <li>$$\\text{Interest on Outlay} = 1,00,000 \\times ₹ 0.18 \\times \\frac{31}{365} \\times 18\\% = \\mathbf{₹ 275.18 \\approx ₹ 275.00}$$[cite: 8]</li>
       </ul>
 
       <h4>3. Net Inflow to Mr. X</h4>
       <div style="overflow-x:auto;">
         <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
           <tbody>
-            <tr><td>Gross Proceeds at Contracted Rate ($1,00,000 \times ₹ 65.40$)</td><td style="text-align:right;">₹ 65,40,000.00[cite: 8]</td></tr>
+            <tr><td>Gross Proceeds at Contracted Rate (\\$1,00,000 \\times ₹ 65.40\\$)</td><td style="text-align:right;">₹ 65,40,000.00[cite: 8]</td></tr>
             <tr><td>Less: Swap Loss</td><td style="text-align:right;">(₹ 20,000.00)[cite: 8]</td></tr>
             <tr><td>Less: Interest on Outlay of Funds</td><td style="text-align:right;">(₹ 275.00)[cite: 8]</td></tr>
             <tr style="font-weight:bold; background-color:#f9f9f9;">
@@ -10297,9 +10297,9 @@ const icaibookData = [
     // placement: 5,
     marks: 6,
     question_html: `
-      <p>On 15th January 2015, a banker booked a forward sale contract for US$ 2,50,000 for an import customer deliverable on 15th March 2015 at ₹ 65.3450[cite: 8]. On the due date, the customer requests cancellation of the contract[cite: 8]. Quotes in the interbank market are[cite: 8]:</p>
+      <p>On 15th January 2015, a banker booked a forward sale contract for US\\$ 2,50,000 for an import customer deliverable on 15th March 2015 at ₹ 65.3450[cite: 8]. On the due date, the customer requests cancellation of the contract[cite: 8]. Quotes in the interbank market are[cite: 8]:</p>
       <ul>
-        <li>Spot: ₹ 65.2900 / 65.2975 per US$[cite: 8]</li>
+        <li>Spot: ₹ 65.2900 / 65.2975 per US\\$[cite: 8]</li>
         <li>Spot / April: 3000 / 3100[cite: 8]</li>
         <li>Spot / May: 6000 / 6100[cite: 8]</li>
       </ul>
@@ -10308,20 +10308,20 @@ const icaibookData = [
     solution_html: `
       <h4>1. Cancellation Rate (Spot Buying Rate)</h4>
       <p>A forward sale contract is cancelled on the due date by purchasing spot at the bank's buying rate[cite: 8]:</p>
-      <p>$$\text{Market Spot Buying Rate} = ₹ 65.2900$$[cite: 8]</p>
-      <p>$$\text{Less: Exchange Margin @ 0.10\%} = 0.10\% \times ₹ 65.2900 = ₹ 0.0653$$[cite: 8]</p>
-      <p>$$\text{Cancellation Rate} = ₹ 65.2900 - ₹ 0.0653 = ₹ 65.2247 \rightarrow \mathbf{₹ 65.2250}$$[cite: 8]</p>
+      <p>$$\\text{Market Spot Buying Rate} = ₹ 65.2900$$[cite: 8]</p>
+      <p>$$\\text{Less: Exchange Margin @ 0.10\\%} = 0.10\\% \\times ₹ 65.2900 = ₹ 0.0653$$[cite: 8]</p>
+      <p>$$\\text{Cancellation Rate} = ₹ 65.2900 - ₹ 0.0653 = ₹ 65.2247 \rightarrow \\mathbf{₹ 65.2250}$$[cite: 8]</p>
 
       <h4>2. Cancellation Charges Payable</h4>
       <ul>
-        <li>Contracted Selling Rate to Customer $= ₹ 65.3450$[cite: 8]</li>
-        <li>Cancellation Buying Rate from Customer $= ₹ 65.2250$[cite: 8]</li>
-        <li>Difference payable by customer per US$ $= ₹ 65.3450 - ₹ 65.2250 = \mathbf{₹ 0.1200}$[cite: 8]</li>
+        <li>Contracted Selling Rate to Customer \\$= ₹ 65.3450\\$[cite: 8]</li>
+        <li>Cancellation Buying Rate from Customer \\$= ₹ 65.2250\\$[cite: 8]</li>
+        <li>Difference payable by customer per US\\$ \\$= ₹ 65.3450 - ₹ 65.2250 = \\mathbf{₹ 0.1200}\\$[cite: 8]</li>
       </ul>
       <div style="overflow-x:auto;">
         <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
           <tbody>
-            <tr><td>Exchange Difference: $2,50,000 \times ₹ 0.1200$</td><td style="text-align:right;">₹ 30,000.00[cite: 8]</td></tr>
+            <tr><td>Exchange Difference: \\$2,50,000 \\times ₹ 0.1200\\$</td><td style="text-align:right;">₹ 30,000.00[cite: 8]</td></tr>
             <tr><td>Add: Flat Cancellation Charges</td><td style="text-align:right;">₹ 100.00[cite: 8]</td></tr>
             <tr style="font-weight:bold; background-color:#f9f9f9;">
               <td>Total Cancellation Charges Payable by Customer</td>
@@ -10351,11 +10351,11 @@ const icaibookData = [
       <h4>Cancellation of Forward Purchase Contract Before Due Date</h4>
       <p>The contract has 1 month remaining to its original maturity[cite: 8]. The bank cancels the forward purchase contract by selling AUD 1 month forward at the market offer rate[cite: 8]:</p>
       <ul>
-        <li>1-Month Forward Selling Rate $= \mathbf{₹ 47.5200}$[cite: 8]</li>
-        <li>Contracted Purchase Rate from Customer $= \mathbf{₹ 47.2500}$[cite: 8]</li>
-        <li>Exchange Difference payable by customer per AUD $= ₹ 47.5200 - ₹ 47.2500 = \mathbf{₹ 0.2700}$[cite: 8]</li>
+        <li>1-Month Forward Selling Rate \\$= \\mathbf{₹ 47.5200}\\$[cite: 8]</li>
+        <li>Contracted Purchase Rate from Customer \\$= \\mathbf{₹ 47.2500}\\$[cite: 8]</li>
+        <li>Exchange Difference payable by customer per AUD \\$= ₹ 47.5200 - ₹ 47.2500 = \\mathbf{₹ 0.2700}\\$[cite: 8]</li>
       </ul>
-      <p>$$\text{Total Cancellation Charges Payable} = 1,00,000 \times ₹ 0.2700 = \mathbf{₹ 27,000.00}$$[cite: 8]</p>
+      <p>$$\\text{Total Cancellation Charges Payable} = 1,00,000 \\times ₹ 0.2700 = \\mathbf{₹ 27,000.00}$$[cite: 8]</p>
     `
   },
   {
@@ -10366,7 +10366,7 @@ const icaibookData = [
     // placement: 7,
     marks: 8,
     question_html: `
-      <p>An export customer booked a US$ 1,00,000 forward sale contract for 2 months at ₹ 62.5200 (cover rate ₹ 62.5900)[cite: 8]. On the due date, the customer requests cancellation and extension of the contract by 1 month[cite: 8]. Market quotes are[cite: 8]:</p>
+      <p>An export customer booked a US\\$ 1,00,000 forward sale contract for 2 months at ₹ 62.5200 (cover rate ₹ 62.5900)[cite: 8]. On the due date, the customer requests cancellation and extension of the contract by 1 month[cite: 8]. Market quotes are[cite: 8]:</p>
       <ul>
         <li>Spot: ₹ 62.6800 / 62.7200[cite: 8]</li>
         <li>1-Month Forward: ₹ 62.6400 / 62.7400[cite: 8]</li>
@@ -10376,16 +10376,16 @@ const icaibookData = [
     solution_html: `
       <h4>1. Cancellation of Original Contract on Due Date</h4>
       <p>The bank cancels the purchase contract by selling spot at the market offer rate plus margin[cite: 8]:</p>
-      <p>$$\text{Market Spot Selling Rate} = ₹ 62.7200$$[cite: 8]</p>
-      <p>$$\text{Add: Margin @ 0.10\%} = 0.10\% \times ₹ 62.7200 = ₹ 0.06272$$[cite: 8]</p>
-      <p>$$\text{Cancellation Selling Rate} = ₹ 62.7200 + ₹ 0.06272 = ₹ 62.78272 \rightarrow \mathbf{₹ 62.7825}$$[cite: 8]</p>
-      <p>$$\text{Difference payable by customer} = ₹ 62.7825 - ₹ 62.5200 = \mathbf{₹ 0.2625 \text{ per US\$}}$$[cite: 8]</p>
-      <p>$$\text{Cancellation Charges Payable} = 1,00,000 \times ₹ 0.2625 = \mathbf{₹ 26,250.00}$$[cite: 8]</p>
+      <p>$$\\text{Market Spot Selling Rate} = ₹ 62.7200$$[cite: 8]</p>
+      <p>$$\\text{Add: Margin @ 0.10\\%} = 0.10\\% \\times ₹ 62.7200 = ₹ 0.06272$$[cite: 8]</p>
+      <p>$$\\text{Cancellation Selling Rate} = ₹ 62.7200 + ₹ 0.06272 = ₹ 62.78272 \rightarrow \\mathbf{₹ 62.7825}$$[cite: 8]</p>
+      <p>$$\\text{Difference payable by customer} = ₹ 62.7825 - ₹ 62.5200 = \\mathbf{₹ 0.2625 \\text{ per US\\$}}$$[cite: 8]</p>
+      <p>$$\\text{Cancellation Charges Payable} = 1,00,000 \\times ₹ 0.2625 = \\mathbf{₹ 26,250.00}$$[cite: 8]</p>
 
       <h4>2. Rate for Rebooking 1-Month Forward Purchase Contract</h4>
-      <p>$$\text{Market 1-Month Forward Buying Rate} = ₹ 62.6400$$[cite: 8]</p>
-      <p>$$\text{Less: Margin @ 0.10\%} = 0.10\% \times ₹ 62.6400 = ₹ 0.06264$$[cite: 8]</p>
-      <p>$$\text{New Contract Buying Rate} = ₹ 62.6400 - ₹ 0.06264 = ₹ 62.57736 \rightarrow \mathbf{₹ 62.5775}$$[cite: 8]</p>
+      <p>$$\\text{Market 1-Month Forward Buying Rate} = ₹ 62.6400$$[cite: 8]</p>
+      <p>$$\\text{Less: Margin @ 0.10\\%} = 0.10\\% \\times ₹ 62.6400 = ₹ 0.06264$$[cite: 8]</p>
+      <p>$$\\text{New Contract Buying Rate} = ₹ 62.6400 - ₹ 0.06264 = ₹ 62.57736 \rightarrow \\mathbf{₹ 62.5775}$$[cite: 8]</p>
     `
   },
   {
@@ -10396,7 +10396,7 @@ const icaibookData = [
     // placement: 8,
     marks: 8,
     question_html: `
-      <p>A bank entered into a forward purchase contract for US$ 50,000 on 5th March with an export customer for 3 months at ₹ 59.6000 (covered at ₹ 60.6025)[cite: 8]. On 5th May, the customer requests extension of the contract to 5th July[cite: 8]. Market quotes on 5th May are[cite: 8]:</p>
+      <p>A bank entered into a forward purchase contract for US\\$ 50,000 on 5th March with an export customer for 3 months at ₹ 59.6000 (covered at ₹ 60.6025)[cite: 8]. On 5th May, the customer requests extension of the contract to 5th July[cite: 8]. Market quotes on 5th May are[cite: 8]:</p>
       <ul>
         <li>Spot: ₹ 59.1300 / 59.1400[cite: 8]</li>
         <li>Spot / 5th June: ₹ 59.2300 / 59.2425[cite: 8]</li>
@@ -10407,20 +10407,20 @@ const icaibookData = [
     solution_html: `
       <h4>1. Cancellation of Original Contract (Delivery 5th June)</h4>
       <p>On 5th May, 1 month remains until 5th June maturity[cite: 8]. The bank cancels by selling 1 month forward[cite: 8]:</p>
-      <p>$$\text{Interbank Forward Selling Rate (5th June)} = ₹ 59.2425$$[cite: 8]</p>
-      <p>$$\text{Add: Margin @ 0.10\%} = 0.10\% \times ₹ 59.2425 = ₹ 0.05924$$[cite: 8]</p>
-      <p>$$\text{Cancellation Rate} = ₹ 59.2425 + ₹ 0.05924 = ₹ 59.30174 \rightarrow \mathbf{₹ 59.3025}$$[cite: 8]</p>
+      <p>$$\\text{Interbank Forward Selling Rate (5th June)} = ₹ 59.2425$$[cite: 8]</p>
+      <p>$$\\text{Add: Margin @ 0.10\\%} = 0.10\\% \\times ₹ 59.2425 = ₹ 0.05924$$[cite: 8]</p>
+      <p>$$\\text{Cancellation Rate} = ₹ 59.2425 + ₹ 0.05924 = ₹ 59.30174 \rightarrow \\mathbf{₹ 59.3025}$$[cite: 8]</p>
       <ul>
-        <li>Contracted Purchase Rate from Customer $= ₹ 59.6000$[cite: 8]</li>
-        <li>Cancellation Selling Rate to Customer $= ₹ 59.3025$[cite: 8]</li>
-        <li>Difference in favor of customer $= ₹ 59.6000 - ₹ 59.3025 = \mathbf{₹ 0.2975 \text{ per US\$}}$[cite: 8]</li>
+        <li>Contracted Purchase Rate from Customer \\$= ₹ 59.6000\\$[cite: 8]</li>
+        <li>Cancellation Selling Rate to Customer \\$= ₹ 59.3025\\$[cite: 8]</li>
+        <li>Difference in favor of customer \\$= ₹ 59.6000 - ₹ 59.3025 = \\mathbf{₹ 0.2975 \\text{ per US\\$}}\\$[cite: 8]</li>
       </ul>
-      <p>$$\text{Net Exchange Difference Payable to Customer} = 50,000 \times ₹ 0.2975 = \mathbf{₹ 14,875.00}$$[cite: 8]</p>
+      <p>$$\\text{Net Exchange Difference Payable to Customer} = 50,000 \\times ₹ 0.2975 = \\mathbf{₹ 14,875.00}$$[cite: 8]</p>
 
       <h4>2. Rate for Rebooking New Contract (Delivery 5th July)</h4>
-      <p>$$\text{Interbank Forward Buying Rate (5th July)} = ₹ 59.6300$$[cite: 8]</p>
-      <p>$$\text{Less: Margin @ 0.10\%} = 0.10\% \times ₹ 59.6300 = ₹ 0.05963$$[cite: 8]</p>
-      <p>$$\text{New Rate} = ₹ 59.6300 - ₹ 0.05963 = ₹ 59.57037 \rightarrow \mathbf{₹ 59.5700}$$[cite: 8]</p>
+      <p>$$\\text{Interbank Forward Buying Rate (5th July)} = ₹ 59.6300$$[cite: 8]</p>
+      <p>$$\\text{Less: Margin @ 0.10\\%} = 0.10\\% \\times ₹ 59.6300 = ₹ 0.05963$$[cite: 8]</p>
+      <p>$$\\text{New Rate} = ₹ 59.6300 - ₹ 0.05963 = ₹ 59.57037 \rightarrow \\mathbf{₹ 59.5700}$$[cite: 8]</p>
     `
   },
   {
@@ -10455,35 +10455,35 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Cancellation Rate (Automatic Cancellation on 13th June - 3rd Working Day)</h4>
       <p>Contract cancelled at Spot TT Buying rate on 13th June[cite: 8]:</p>
-      <p>$$\text{Market Spot Buying Rate} = ₹ 63.6800$$[cite: 8]</p>
-      <p>$$\text{Less: Margin @ 0.10\%} = 0.10\% \times ₹ 63.6800 = ₹ 0.06368$$[cite: 8]</p>
-      <p>$$\text{Cancellation Rate} = ₹ 63.6800 - ₹ 0.06368 = ₹ 63.61632 \rightarrow \mathbf{₹ 63.6175}$$[cite: 8]</p>
+      <p>$$\\text{Market Spot Buying Rate} = ₹ 63.6800$$[cite: 8]</p>
+      <p>$$\\text{Less: Margin @ 0.10\\%} = 0.10\\% \\times ₹ 63.6800 = ₹ 0.06368$$[cite: 8]</p>
+      <p>$$\\text{Cancellation Rate} = ₹ 63.6800 - ₹ 0.06368 = ₹ 63.61632 \rightarrow \\mathbf{₹ 63.6175}$$[cite: 8]</p>
 
       <h4>(ii) Amount Payable on Cancellation</h4>
       <ul>
-        <li>Contracted Sale Rate $= ₹ 64.4000 \implies 2,00,000 \times 64.4000 = ₹ 1,28,80,000$[cite: 8]</li>
-        <li>Cancellation Purchase Rate $= ₹ 63.6175 \implies 2,00,000 \times 63.6175 = ₹ 1,27,23,500$[cite: 8]</li>
-        <li>$$\text{Exchange Difference Payable by Customer} = ₹ 1,28,80,000 - ₹ 1,27,23,500 = \mathbf{₹ 1,56,500.00}$$[cite: 8]</li>
+        <li>Contracted Sale Rate \\$= ₹ 64.4000 \\implies 2,00,000 \\times 64.4000 = ₹ 1,28,80,000\\$[cite: 8]</li>
+        <li>Cancellation Purchase Rate \\$= ₹ 63.6175 \\implies 2,00,000 \\times 63.6175 = ₹ 1,27,23,500\\$[cite: 8]</li>
+        <li>$$\\text{Exchange Difference Payable by Customer} = ₹ 1,28,80,000 - ₹ 1,27,23,500 = \\mathbf{₹ 1,56,500.00}$$[cite: 8]</li>
       </ul>
 
       <h4>(iii) Swap Loss (Executed on 10th June)</h4>
       <p>Bank sells spot @ 63.8000 and buys 1-month forward (June) @ 63.9500[cite: 8]:</p>
-      <p>$$\text{Swap Loss per US\$} = ₹ 63.9500 - ₹ 63.8000 = ₹ 0.1500$$[cite: 8]</p>
-      <p>$$\text{Total Swap Loss} = 2,00,000 \times ₹ 0.1500 = \mathbf{₹ 30,000.00}$$[cite: 8]</p>
+      <p>$$\\text{Swap Loss per US\\$} = ₹ 63.9500 - ₹ 63.8000 = ₹ 0.1500$$[cite: 8]</p>
+      <p>$$\\text{Total Swap Loss} = 2,00,000 \\times ₹ 0.1500 = \\mathbf{₹ 30,000.00}$$[cite: 8]</p>
 
       <h4>(iv) Interest on Outlay of Funds</h4>
       <p>On 10th June, bank pays cover rate ₹ 64.2800 and receives spot sale ₹ 63.8000[cite: 8]:</p>
-      <p>$$\text{Outlay per US\$} = ₹ 64.2800 - ₹ 63.8000 = ₹ 0.4800 \implies \text{Total Outlay} = 2,00,000 \times 0.48 = ₹ 96,000$$[cite: 8]</p>
+      <p>$$\\text{Outlay per US\\$} = ₹ 64.2800 - ₹ 63.8000 = ₹ 0.4800 \\implies \\text{Total Outlay} = 2,00,000 \\times 0.48 = ₹ 96,000$$[cite: 8]</p>
       <p>Outlay duration: 10th June to 13th June = 3 days[cite: 8].</p>
-      <p>$$\text{Interest} = ₹ 96,000 \times 12\% \times \frac{3}{365} = \mathbf{₹ 94.68 \approx ₹ 96.00}$$[cite: 8]</p>
+      <p>$$\\text{Interest} = ₹ 96,000 \\times 12\\% \\times \\frac{3}{365} = \\mathbf{₹ 94.68 \\approx ₹ 96.00}$$[cite: 8]</p>
 
       <h4>(v) New Contract Rate (Delivery 10th August)</h4>
-      <p>$$\text{August Forward Selling Rate (13th June)} = ₹ 64.2500$$[cite: 8]</p>
-      <p>$$\text{Add: Margin @ 0.10\%} = 0.10\% \times ₹ 64.2500 = ₹ 0.06425$$[cite: 8]</p>
-      <p>$$\text{New Rate} = ₹ 64.2500 + ₹ 0.06425 = ₹ 64.31425 \rightarrow \mathbf{₹ 64.3150}$$[cite: 8]</p>
+      <p>$$\\text{August Forward Selling Rate (13th June)} = ₹ 64.2500$$[cite: 8]</p>
+      <p>$$\\text{Add: Margin @ 0.10\\%} = 0.10\\% \\times ₹ 64.2500 = ₹ 0.06425$$[cite: 8]</p>
+      <p>$$\\text{New Rate} = ₹ 64.2500 + ₹ 0.06425 = ₹ 64.31425 \rightarrow \\mathbf{₹ 64.3150}$$[cite: 8]</p>
 
       <h4>(vi) Total Cost Payable by Customer</h4>
-      <p>$$\text{Total Cost} = ₹ 1,56,500 (\text{Cancellation}) + ₹ 30,000 (\text{Swap Loss}) + ₹ 96 (\text{Interest}) = \mathbf{₹ 1,86,596.00}$$[cite: 8]</p>
+      <p>$$\\text{Total Cost} = ₹ 1,56,500 (\\text{Cancellation}) + ₹ 30,000 (\\text{Swap Loss}) + ₹ 96 (\\text{Interest}) = \\mathbf{₹ 1,86,596.00}$$[cite: 8]</p>
     `
   },
   {
@@ -10539,12 +10539,12 @@ const icaibookData = [
     // placement: 12,
     marks: 4,
     question_html: `
-      <p>The price of a bond just before a year of maturity is $ 5,000[cite: 8]. Its redemption value is $ 5,250 at the end of the year[cite: 8]. Interest is $ 350 p.a.[cite: 8] The Dollar appreciates by 2% during the period[cite: 8]. Calculate the rate of return[cite: 8].</p>
+      <p>The price of a bond just before a year of maturity is \\$ 5,000[cite: 8]. Its redemption value is \\$ 5,250 at the end of the year[cite: 8]. Interest is \\$ 350 p.a.[cite: 8] The Dollar appreciates by 2% during the period[cite: 8]. Calculate the rate of return[cite: 8].</p>
     `,
     solution_html: `
       <h4>1. Return in US Dollar Terms</h4>
-      <p>$$\text{Dollar Return } (R_$) = \frac{(\text{Redemption Price} - \text{Purchase Price}) + \text{Interest}}{\text{Purchase Price}}$$[cite: 8]</p>
-      <p>$$R_$ = \frac{(5,250 - 5,000) + 350}{5,000} = \frac{250 + 350}{5,000} = \frac{600}{5,000} = \mathbf{12.00\%}$$[cite: 8]</p>
+      <p>$$\\text{Dollar Return } (R_$) = \\frac{(\\text{Redemption Price} - \\text{Purchase Price}) + \\text{Interest}}{\\text{Purchase Price}}$$[cite: 8]</p>
+      <p>$$R_$ = \\frac{(5,250 - 5,000) + 350}{5,000} = \\frac{250 + 350}{5,000} = \\frac{600}{5,000} = \\mathbf{12.00\\%}$$[cite: 8]</p>
 
       <h4>2. Rate of Return Across Investor Types</h4>
       <ul>
@@ -10553,8 +10553,8 @@ const icaibookData = [
         </li>
         <li><strong>(ii) For a Non-US (Foreign/Indian) Investor:</strong>
           <br />The investor benefits both from the bond yield and the 2% appreciation of the US dollar[cite: 8]:
-          <br />$$\text{Total Return} = (1 + R_$)(1 + \text{Currency Appreciation}) - 1$$[cite: 8]
-          <br />$$\text{Total Return} = (1 + 0.12)(1 + 0.02) - 1 = (1.12 \times 1.02) - 1 = 1.1424 - 1 = \mathbf{14.24\%}$$[cite: 8]
+          <br />$$\\text{Total Return} = (1 + R_$)(1 + \\text{Currency Appreciation}) - 1$$[cite: 8]
+          <br />$$\\text{Total Return} = (1 + 0.12)(1 + 0.02) - 1 = (1.12 \\times 1.02) - 1 = 1.1424 - 1 = \\mathbf{14.24\\%}$$[cite: 8]
         </li>
       </ul>
     `
@@ -10567,16 +10567,16 @@ const icaibookData = [
     // placement: 13,
     marks: 4,
     question_html: `
-      <p>ABN-Amro Bank, Amsterdam, wants to purchase ₹ 15 million against US$ for funding their Nostro account with Canara Bank, New Delhi[cite: 8]. Assuming the interbank quote for US$ is ₹ 51.3625 / 51.3700, what rate would Canara Bank quote to ABN-Amro Bank?[cite: 8] Further, if the deal is struck, what would be the equivalent US$ amount?[cite: 8]</p>
+      <p>ABN-Amro Bank, Amsterdam, wants to purchase ₹ 15 million against US\\$ for funding their Nostro account with Canara Bank, New Delhi[cite: 8]. Assuming the interbank quote for US\\$ is ₹ 51.3625 / 51.3700, what rate would Canara Bank quote to ABN-Amro Bank?[cite: 8] Further, if the deal is struck, what would be the equivalent US\\$ amount?[cite: 8]</p>
     `,
     solution_html: `
       <h4>1. Applicable Exchange Rate</h4>
-      <p>ABN-Amro Bank wishes to purchase INR (which means selling USD to Canara Bank)[cite: 8]. Canara Bank will buy US$ at the market bid rate and sell INR[cite: 8]:</p>
-      <p>$$\text{Quoted Rate} = \mathbf{₹ 51.3625 \text{ per US\$}} \quad \left(\text{or } \$ 0.019469/\text{₹}\right)$$[cite: 8]</p>
+      <p>ABN-Amro Bank wishes to purchase INR (which means selling USD to Canara Bank)[cite: 8]. Canara Bank will buy US\\$ at the market bid rate and sell INR[cite: 8]:</p>
+      <p>$$\\text{Quoted Rate} = \\mathbf{₹ 51.3625 \\text{ per US\\$}} \\quad \\left(\\text{or } \\$ 0.019469/\\text{₹}\\right)$$[cite: 8]</p>
 
-      <h4>2. Equivalent US$ Amount</h4>
-      <p>$$\text{USD Amount} = \frac{₹ 1,50,00,000}{51.3625} = \mathbf{US\$ 2,92,041.86}$$[cite: 8]</p>
-      <p><small><em>(Alternatively, at $\$ 0.01947/₹$: $15,000,000 \times 0.01947 = \mathbf{US\$ 2,92,050.00}$)</em></small>[cite: 8]</p>
+      <h4>2. Equivalent US\\$ Amount</h4>
+      <p>$$\\text{USD Amount} = \\frac{₹ 1,50,00,000}{51.3625} = \\mathbf{US\\$ 2,92,041.86}$$[cite: 8]</p>
+      <p><small><em>(Alternatively, at \\$\\$ 0.01947/₹\\$: \\$15,000,000 \\times 0.01947 = \\mathbf{US\\$ 2,92,050.00}\\$)</em></small>[cite: 8]</p>
     `
   },
   {
@@ -10590,18 +10590,18 @@ const icaibookData = [
       <p>XYZ LTD Bank, Amsterdam, wants to purchase ₹ 25 million against £ for funding their Nostro account, and they have credited a LORO account with Bank of London[cite: 8].</p>
       <p>Calculate the amount of £ credited[cite: 8]. Ongoing interbank rates are:</p>
       <ul>
-        <li>₹ / $: 61.3625 / 61.3700[cite: 8]</li>
-        <li>$ / £: 1.5260 / 1.5270[cite: 8]</li>
+        <li>₹ / \\$: 61.3625 / 61.3700[cite: 8]</li>
+        <li>\\$ / £: 1.5260 / 1.5270[cite: 8]</li>
       </ul>
     `,
     solution_html: `
       <h4>1. Chain Rule for (£ / ₹) Ask Rate</h4>
       <p>To acquire INR against GBP, the bank must sell GBP to purchase USD (at the bid rate for GBP), and subsequently sell USD to purchase INR (at the bid rate for USD)[cite: 8]:</p>
-      <p>$$\left(\frac{£}{₹}\right)_{\text{ask}} = \frac{1}{\left(\frac{\$}{£}\right)_{\text{bid}} \times \left(\frac{₹}{\$}\right)_{\text{bid}}} = \frac{1}{1.5260 \times 61.3625} = \frac{1}{93.639175} = \mathbf{£ 0.0106793 \approx £ 0.0107}$$[cite: 8]</p>
+      <p>$$\\left(\\frac{£}{₹}\\right)_{\\text{ask}} = \\frac{1}{\\left(\\frac{\\$}{£}\\right)_{\\text{bid}} \\times \\left(\\frac{₹}{\\$}\\right)_{\\text{bid}}} = \\frac{1}{1.5260 \\times 61.3625} = \\frac{1}{93.639175} = \\mathbf{£ 0.0106793 \\approx £ 0.0107}$$[cite: 8]</p>
 
       <h4>2. Calculation of GBP Credited</h4>
-      <p>$$\text{Amount of } £ = ₹ 25,000,000 \times 0.0107 = \mathbf{£ 2,67,500}$$[cite: 8]</p>
-      <p>$$\left(\text{Exact computation: } \frac{₹ 25,000,000}{93.639175} = \mathbf{£ 2,66,982.42}\right)$$</p>
+      <p>$$\\text{Amount of } £ = ₹ 25,000,000 \\times 0.0107 = \\mathbf{£ 2,67,500}$$[cite: 8]</p>
+      <p>$$\\left(\\text{Exact computation: } \\frac{₹ 25,000,000}{93.639175} = \\mathbf{£ 2,66,982.42}\\right)$$</p>
     `
   },
   {
@@ -10612,9 +10612,9 @@ const icaibookData = [
     // placement: 15,
     marks: 8,
     question_html: `
-      <p>ABC Ltd. of UK has exported goods worth Can $ 5,00,000 receivable in 6 months[cite: 8]. The exporter wants to hedge the receipt in the forward market[cite: 8]. Data:</p>
+      <p>ABC Ltd. of UK has exported goods worth Can \\$ 5,00,000 receivable in 6 months[cite: 8]. The exporter wants to hedge the receipt in the forward market[cite: 8]. Data:</p>
       <ul>
-        <li>Spot Exchange Rate: Can $ 2.50 / £[cite: 8]</li>
+        <li>Spot Exchange Rate: Can \\$ 2.50 / £[cite: 8]</li>
         <li>Interest Rate in UK: 12% p.a.[cite: 8]</li>
         <li>Interest Rate in Canada: 15% p.a.[cite: 8]</li>
       </ul>
@@ -10622,22 +10622,22 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Theoretical 6-Month Forward Rate (Interest Rate Parity)</h4>
-      <p>$$F = S_0 \times \frac{1 + r_{\text{Canada}} \times (6/12)}{1 + r_{\text{UK}} \times (6/12)} = 2.50 \times \frac{1 + 0.075}{1 + 0.060} = 2.50 \times \frac{1.075}{1.060} = \mathbf{\text{Can } \$ 2.53538 \approx \text{Can } \$ 2.535 \text{ per } £}$$[cite: 8]</p>
-      <p>$$\text{Forward Sterling Receipt} = \frac{\text{Can } \$ 5,00,000}{2.535} = \mathbf{£ 1,97,239}$$[cite: 8]</p>
+      <p>$$F = S_0 \\times \\frac{1 + r_{\\text{Canada}} \\times (6/12)}{1 + r_{\\text{UK}} \\times (6/12)} = 2.50 \\times \\frac{1 + 0.075}{1 + 0.060} = 2.50 \\times \\frac{1.075}{1.060} = \\mathbf{\\text{Can } \\$ 2.53538 \\approx \\text{Can } \\$ 2.535 \\text{ per } £}$$[cite: 8]</p>
+      <p>$$\\text{Forward Sterling Receipt} = \\frac{\\text{Can } \\$ 5,00,000}{2.535} = \\mathbf{£ 1,97,239}$$[cite: 8]</p>
 
       <h4>2. Gain or Loss Under Spot Scenarios</h4>
       <ul>
-        <li><strong>(i) Can $ Declines by 2% (Spot becomes $2.50 \times 1.02 = \text{Can } \$ 2.55/£$):</strong>
-          <br />$$\text{Spot Receipt} = \frac{5,00,000}{2.55} = £ 1,96,078$$[cite: 8]
-          <br />$$\text{Gain due to Forward Contract} = £ 1,97,239 - £ 1,96,078 = \mathbf{+£ 1,161}$$[cite: 8]
+        <li><strong>(i) Can \\$ Declines by 2\\% (Spot becomes \\$2.50 \\times 1.02 = \\text{Can } \\$ 2.55/£\\$):</strong>
+          <br />$$\\text{Spot Receipt} = \\frac{5,00,000}{2.55} = £ 1,96,078$$[cite: 8]
+          <br />$$\\text{Gain due to Forward Contract} = £ 1,97,239 - £ 1,96,078 = \\mathbf{+£ 1,161}$$[cite: 8]
         </li>
-        <li><strong>(ii) Can $ Gains by 4% (Spot becomes $2.50 \times 0.96 = \text{Can } \$ 2.40/£$):</strong>
-          <br />$$\text{Spot Receipt} = \frac{5,00,000}{2.40} = £ 2,08,333$$[cite: 8]
-          <br />$$\text{Loss due to Forward Contract} = £ 1,97,239 - £ 2,08,333 = \mathbf{-£ 11,094}$$[cite: 8]
+        <li><strong>(ii) Can \\$ Gains by 4\\% (Spot becomes \\$2.50 \\times 0.96 = \\text{Can } \\$ 2.40/£\\$):</strong>
+          <br />$$\\text{Spot Receipt} = \\frac{5,00,000}{2.40} = £ 2,08,333$$[cite: 8]
+          <br />$$\\text{Loss due to Forward Contract} = £ 1,97,239 - £ 2,08,333 = \\mathbf{-£ 11,094}$$[cite: 8]
         </li>
-        <li><strong>(iii) Spot Remains Unchanged (Spot = Can $ 2.50/£):</strong>
-          <br />$$\text{Spot Receipt} = \frac{5,00,000}{2.50} = £ 2,00,000$$[cite: 8]
-          <br />$$\text{Loss due to Forward Contract} = £ 1,97,239 - £ 2,00,000 = \mathbf{-£ 2,761}$$[cite: 8]
+        <li><strong>(iii) Spot Remains Unchanged (Spot = Can \\$ 2.50/£):</strong>
+          <br />$$\\text{Spot Receipt} = \\frac{5,00,000}{2.50} = £ 2,00,000$$[cite: 8]
+          <br />$$\\text{Loss due to Forward Contract} = £ 1,97,239 - £ 2,00,000 = \\mathbf{-£ 2,761}$$[cite: 8]
         </li>
       </ul>
     `
@@ -10652,7 +10652,7 @@ const icaibookData = [
     question_html: `
       <p>On April 3, 2016, a Bank quotes the following (Spot date: April 5, 2016; 1 swap point = 0.0001)[cite: 8]:</p>
       <ul>
-        <li>Spot exchange rate (US $ 1): INR 66.2525 / 67.5945[cite: 8]</li>
+        <li>Spot exchange rate (US \\$ 1): INR 66.2525 / 67.5945[cite: 8]</li>
         <li>2 months' swap points: 70 / 90[cite: 8]</li>
         <li>3 months' swap points: 160 / 186[cite: 8]</li>
       </ul>
@@ -10660,7 +10660,7 @@ const icaibookData = [
       <ol type="i">
         <li>Ascertain swap points for 2 months and 15 days (June 20, 2016)[cite: 8].</li>
         <li>Determine foreign exchange rate for June 20, 2016[cite: 8].</li>
-        <li>Compute the annual rate of premium/discount of US$ on INR on an average rate basis[cite: 8].</li>
+        <li>Compute the annual rate of premium/discount of US\\$ on INR on an average rate basis[cite: 8].</li>
       </ol>
     `,
     solution_html: `
@@ -10668,22 +10668,22 @@ const icaibookData = [
       <ul>
         <li>Swap points for 2 months: 70 / 90[cite: 8]</li>
         <li>Swap points for 3 months: 160 / 186[cite: 8]</li>
-        <li>Difference for 1 month (30 days): $160 - 70 = 90$ (Bid) and $186 - 90 = 96$ (Ask)[cite: 8]</li>
-        <li>Swap points for 15 days: $\frac{90}{2} = 45$ (Bid) and $\frac{96}{2} = 48$ (Ask)[cite: 8]</li>
-        <li>Total swap points for 2 months 15 days: $70 + 45 = \mathbf{115}$ (Bid) and $90 + 48 = \mathbf{138}$ (Ask)[cite: 8]</li>
+        <li>Difference for 1 month (30 days): \\$160 - 70 = 90\\$ (Bid) and \\$186 - 90 = 96\\$ (Ask)[cite: 8]</li>
+        <li>Swap points for 15 days: \\$\\frac{90}{2} = 45\\$ (Bid) and \\$\\frac{96}{2} = 48\\$ (Ask)[cite: 8]</li>
+        <li>Total swap points for 2 months 15 days: \\$70 + 45 = \\mathbf{115}\\$ (Bid) and \\$90 + 48 = \\mathbf{138}\\$ (Ask)[cite: 8]</li>
       </ul>
 
       <h4>(ii) Foreign Exchange Rates for June 20, 2016</h4>
       <p>Since swap points are ascending (115/138), USD is at a premium and points are added to the spot rate[cite: 8]:</p>
-      <p>$$\text{Bid Rate} = 66.2525 + 0.0115 = \mathbf{66.2640}$$[cite: 8]</p>
-      <p>$$\text{Ask Rate} = 67.5945 + 0.0138 = \mathbf{67.6083}$$[cite: 8]</p>
+      <p>$$\\text{Bid Rate} = 66.2525 + 0.0115 = \\mathbf{66.2640}$$[cite: 8]</p>
+      <p>$$\\text{Ask Rate} = 67.5945 + 0.0138 = \\mathbf{67.6083}$$[cite: 8]</p>
 
       <h4>(iii) Annualized Rate of Premium (Average Basis)</h4>
-      <p>$$\text{Average Spot Rate} = \frac{66.2525 + 67.5945}{2} = 66.9235$$[cite: 8]</p>
-      <p>$$\text{Average Forward Rate (June 20)} = \frac{66.2640 + 67.6083}{2} = 66.93615$$[cite: 8]</p>
-      <p>$$\text{Average Premium} = 66.93615 - 66.9235 = 0.01265$$[cite: 8]</p>
-      <p>$$\text{Annual Rate of Premium} = \frac{0.01265}{66.9235} \times \frac{12}{2.5} \times 100 = \mathbf{0.0908\% \text{ p.a.}}$$</p>
-      <p><small><em>(Alternatively, Bid: $\frac{0.0115}{66.2583} \times \frac{12}{2.5} \times 100 = \mathbf{0.0833\%}$; Ask: $\frac{0.0138}{67.6014} \times \frac{12}{2.5} \times 100 = \mathbf{0.0980\%}$)</em></small>[cite: 8]</p>
+      <p>$$\\text{Average Spot Rate} = \\frac{66.2525 + 67.5945}{2} = 66.9235$$[cite: 8]</p>
+      <p>$$\\text{Average Forward Rate (June 20)} = \\frac{66.2640 + 67.6083}{2} = 66.93615$$[cite: 8]</p>
+      <p>$$\\text{Average Premium} = 66.93615 - 66.9235 = 0.01265$$[cite: 8]</p>
+      <p>$$\\text{Annual Rate of Premium} = \\frac{0.01265}{66.9235} \\times \\frac{12}{2.5} \\times 100 = \\mathbf{0.0908\\% \\text{ p.a.}}$$</p>
+      <p><small><em>(Alternatively, Bid: \\$\\frac{0.0115}{66.2583} \\times \\frac{12}{2.5} \\times 100 = \\mathbf{0.0833\\%}\\$; Ask: \\$\\frac{0.0138}{67.6014} \\times \\frac{12}{2.5} \\times 100 = \\mathbf{0.0980\\%}\\$)</em></small>[cite: 8]</p>
     `
   },
   {
@@ -10694,37 +10694,37 @@ const icaibookData = [
     // placement: 17,
     marks: 8,
     question_html: `
-      <p>JKL Ltd., an Indian company, has an export exposure of JPY 10,000,000 receivable on August 31, 2014[cite: 8]. Current spot rates: INR/US $ = ₹ 62.22; JPY/US $ = JPY 102.34[cite: 8]. JPY is estimated to depreciate to 124/USD and INR to ₹ 65/USD[cite: 8]. Forward rates for August 2014 are: INR/US $ = ₹ 66.50; JPY/US $ = JPY 110.35[cite: 8].</p>
+      <p>JKL Ltd., an Indian company, has an export exposure of JPY 10,000,000 receivable on August 31, 2014[cite: 8]. Current spot rates: INR/US \\$ = ₹ 62.22; JPY/US \\$ = JPY 102.34[cite: 8]. JPY is estimated to depreciate to 124/USD and INR to ₹ 65/USD[cite: 8]. Forward rates for August 2014 are: INR/US \\$ = ₹ 66.50; JPY/US \\$ = JPY 110.35[cite: 8].</p>
       <ol type="i">
         <li>Calculate the expected loss if hedging is not done, and how the position changes under forward cover[cite: 8].</li>
-        <li>If actual spot rates on August 31, 2014 turn out to be INR/US $ = ₹ 66.25 and JPY/US $ = JPY 110.85, is the forward cover decision justified?[cite: 8]</li>
+        <li>If actual spot rates on August 31, 2014 turn out to be INR/US \\$ = ₹ 66.25 and JPY/US \\$ = JPY 110.85, is the forward cover decision justified?[cite: 8]</li>
       </ol>
     `,
     solution_html: `
       <h4>1. Spot and Forward Cross Rates (INR per JPY)</h4>
       <ul>
-        <li>Current Spot Rate $= \frac{₹ 62.22}{102.34} = \mathbf{₹ 0.6080 \text{ per JPY}}$[cite: 8]</li>
-        <li>Expected Spot Rate for August $= \frac{₹ 65.00}{124.00} = \mathbf{₹ 0.5242 \text{ per JPY}}$[cite: 8]</li>
-        <li>August Forward Rate $= \frac{₹ 66.50}{110.35} = \mathbf{₹ 0.6026 \text{ per JPY}}$[cite: 8]</li>
+        <li>Current Spot Rate \\$= \\frac{₹ 62.22}{102.34} = \\mathbf{₹ 0.6080 \\text{ per JPY}}\\$[cite: 8]</li>
+        <li>Expected Spot Rate for August \\$= \\frac{₹ 65.00}{124.00} = \\mathbf{₹ 0.5242 \\text{ per JPY}}\\$[cite: 8]</li>
+        <li>August Forward Rate \\$= \\frac{₹ 66.50}{110.35} = \\mathbf{₹ 0.6026 \\text{ per JPY}}\\$[cite: 8]</li>
       </ul>
 
       <h4>2. (i) Expected Loss Comparison</h4>
       <ul>
-        <li>Initial invoice value at current spot $= 1,00,00,000 \times ₹ 0.6080 = ₹ 60,80,000$[cite: 8]</li>
-        <li>Estimated receipt without hedge $= 1,00,00,000 \times ₹ 0.5242 = ₹ 52,42,000$[cite: 8]</li>
-        <li><strong>Expected Loss without Hedging:</strong> $₹ 60,80,000 - ₹ 52,42,000 = \mathbf{₹ 8,38,000}$[cite: 8]</li>
-        <li>Receipt with Forward Cover $= 1,00,00,000 \times ₹ 0.6026 = ₹ 60,26,000$[cite: 8]</li>
-        <li><strong>Loss under Forward Cover:</strong> $₹ 60,80,000 - ₹ 60,26,000 = \mathbf{₹ 54,000}$[cite: 8]</li>
+        <li>Initial invoice value at current spot \\$= 1,00,00,000 \\times ₹ 0.6080 = ₹ 60,80,000\\$[cite: 8]</li>
+        <li>Estimated receipt without hedge \\$= 1,00,00,000 \\times ₹ 0.5242 = ₹ 52,42,000\\$[cite: 8]</li>
+        <li><strong>Expected Loss without Hedging:</strong> \\$₹ 60,80,000 - ₹ 52,42,000 = \\mathbf{₹ 8,38,000}\\$[cite: 8]</li>
+        <li>Receipt with Forward Cover \\$= 1,00,00,000 \\times ₹ 0.6026 = ₹ 60,26,000\\$[cite: 8]</li>
+        <li><strong>Loss under Forward Cover:</strong> \\$₹ 60,80,000 - ₹ 60,26,000 = \\mathbf{₹ 54,000}\\$[cite: 8]</li>
       </ul>
-      <p>Taking a forward cover protects the firm and minimizes expected loss by <strong>₹ 7,84,000</strong> ($8,38,000 - 54,000$)[cite: 8].</p>
+      <p>Taking a forward cover protects the firm and minimizes expected loss by <strong>₹ 7,84,000</strong> (\\$8,38,000 - 54,000\\$)[cite: 8].</p>
 
       <h4>3. (ii) Justification Against Actual Spot on 31 August 2014</h4>
       <ul>
-        <li>Actual Spot Rate on 31 August $= \frac{₹ 66.25}{110.85} = \mathbf{₹ 0.5977 \text{ per JPY}}$[cite: 8]</li>
-        <li>Actual unhedged realization $= 1,00,00,000 \times ₹ 0.5977 = ₹ 59,77,000$[cite: 8]</li>
-        <li>Realization under forward contract $= \mathbf{₹ 60,26,000}$[cite: 8]</li>
+        <li>Actual Spot Rate on 31 August \\$= \\frac{₹ 66.25}{110.85} = \\mathbf{₹ 0.5977 \\text{ per JPY}}\\$[cite: 8]</li>
+        <li>Actual unhedged realization \\$= 1,00,00,000 \\times ₹ 0.5977 = ₹ 59,77,000\\$[cite: 8]</li>
+        <li>Realization under forward contract \\$= \\mathbf{₹ 60,26,000}\\$[cite: 8]</li>
       </ul>
-      <p>Because the forward contract delivered <strong>₹ 49,000 more</strong> ($₹ 60,26,000 - ₹ 59,77,000$) than the unhedged spot market, the decision to take forward cover was <strong>fully justified</strong>[cite: 8].</p>
+      <p>Because the forward contract delivered <strong>₹ 49,000 more</strong> (\\$₹ 60,26,000 - ₹ 59,77,000\\$) than the unhedged spot market, the decision to take forward cover was <strong>fully justified</strong>[cite: 8].</p>
     `
   },
   {
@@ -10737,8 +10737,8 @@ const icaibookData = [
     question_html: `
       <p>You sold Hong Kong Dollar (HKD) 1,00,00,000 value spot to a customer at ₹ 5.70 and covered yourself in the London market on the same day when rates were[cite: 8]:</p>
       <ul>
-        <li>US$ 1 = H.K.$ 7.5880 / 7.5920[cite: 8]</li>
-        <li>Local interbank spot US$ 1 = ₹ 42.70 / 42.85[cite: 8]</li>
+        <li>US\\$ 1 = H.K.\\$ 7.5880 / 7.5920[cite: 8]</li>
+        <li>Local interbank spot US\\$ 1 = ₹ 42.70 / 42.85[cite: 8]</li>
       </ul>
       <p>Calculate the cover rate and ascertain the profit or loss on the transaction (ignore brokerage)[cite: 8].</p>
     `,
@@ -10746,17 +10746,17 @@ const icaibookData = [
       <h4>1. Cover Rate Calculation</h4>
       <p>To cover the sale of HKD, the bank must buy HKD against USD in London and buy USD against INR in the local market[cite: 8]:</p>
       <ul>
-        <li>Bank buys USD locally at market selling rate $= ₹ 42.85$[cite: 8]</li>
-        <li>Bank sells USD to buy HKD in London at market buying rate $= \text{HKD } 7.5880$[cite: 8]</li>
+        <li>Bank buys USD locally at market selling rate \\$= ₹ 42.85\\$[cite: 8]</li>
+        <li>Bank sells USD to buy HKD in London at market buying rate \\$= \\text{HKD } 7.5880\\$[cite: 8]</li>
       </ul>
-      <p>$$\text{Rupee - HKD Cover Rate} = \frac{₹ 42.85}{7.5880} = \mathbf{₹ 5.6471 \text{ per HKD}}$$[cite: 8]</p>
+      <p>$$\\text{Rupee - HKD Cover Rate} = \\frac{₹ 42.85}{7.5880} = \\mathbf{₹ 5.6471 \\text{ per HKD}}$$[cite: 8]</p>
 
       <h4>2. Profit or Loss Determination</h4>
       <div style="overflow-x:auto;">
         <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
           <tbody>
-            <tr><td>Amount received from customer ($1,00,00,000 \times ₹ 5.70$)</td><td style="text-align:right;">₹ 5,70,00,000.00[cite: 8]</td></tr>
-            <tr><td>Less: Cost of cover purchase ($1,00,00,000 \times ₹ 5.6471$)</td><td style="text-align:right;">(₹ 5,64,71,000.00)[cite: 8]</td></tr>
+            <tr><td>Amount received from customer (\\$1,00,00,000 \\times ₹ 5.70\\$)</td><td style="text-align:right;">₹ 5,70,00,000.00[cite: 8]</td></tr>
+            <tr><td>Less: Cost of cover purchase (\\$1,00,00,000 \\times ₹ 5.6471\\$)</td><td style="text-align:right;">(₹ 5,64,71,000.00)[cite: 8]</td></tr>
             <tr style="font-weight:bold; background-color:#f9f9f9;">
               <td>Net Profit to Bank</td>
               <td style="text-align:right;"><strong>₹ 5,29,000.00</strong>[cite: 8]</td>
@@ -10784,28 +10784,28 @@ const icaibookData = [
       <p>In which market will you cover the transaction (London or New York), and what will be the exchange profit or loss? (Ignore brokerage)[cite: 8]</p>
     `,
     solution_html: `
-      <p>$$\text{Amount Realized from Customer} = 10,00,000 \times ₹ 6.5150 = \mathbf{₹ 65,15,000}$$[cite: 8]</p>
+      <p>$$\\text{Amount Realized from Customer} = 10,00,000 \\times ₹ 6.5150 = \\mathbf{₹ 65,15,000}$$[cite: 8]</p>
 
       <h4>1. Cover at London</h4>
       <ul>
-        <li>DKK bought in London at market ask rate: $1 \text{ GBP} = \text{DKK } 11.4200$[cite: 8]</li>
-        <li>GBP required $= \frac{\text{DKK } 10,00,000}{11.4200} = \mathbf{\text{GBP } 87,565.67}$[cite: 8]</li>
-        <li>GBP bought in Mumbai at market ask rate $= ₹ 74.3200$[cite: 8]</li>
-        <li>$$\text{Total Rupee Cost (London)} = 87,565.67 \times ₹ 74.3200 = \mathbf{₹ 65,07,881}$$[cite: 8]</li>
-        <li>$$\text{Profit at London} = ₹ 65,15,000 - ₹ 65,07,881 = \mathbf{+₹ 7,119}$$[cite: 8]</li>
+        <li>DKK bought in London at market ask rate: \\$1 \\text{ GBP} = \\text{DKK } 11.4200\\$[cite: 8]</li>
+        <li>GBP required \\$= \\frac{\\text{DKK } 10,00,000}{11.4200} = \\mathbf{\\text{GBP } 87,565.67}\\$[cite: 8]</li>
+        <li>GBP bought in Mumbai at market ask rate \\$= ₹ 74.3200\\$[cite: 8]</li>
+        <li>$$\\text{Total Rupee Cost (London)} = 87,565.67 \\times ₹ 74.3200 = \\mathbf{₹ 65,07,881}$$[cite: 8]</li>
+        <li>$$\\text{Profit at London} = ₹ 65,15,000 - ₹ 65,07,881 = \\mathbf{+₹ 7,119}$$[cite: 8]</li>
       </ul>
 
       <h4>2. Cover at New York</h4>
       <ul>
-        <li>DKK bought in New York at market ask rate: $1 \text{ USD} = \text{DKK } 7.5670$[cite: 8]</li>
-        <li>USD required $= \frac{\text{DKK } 10,00,000}{7.5670} = \mathbf{\text{USD } 1,32,152.77}$[cite: 8]</li>
-        <li>USD bought in Mumbai at market ask rate $= ₹ 49.2625$[cite: 8]</li>
-        <li>$$\text{Total Rupee Cost (New York)} = 1,32,152.77 \times ₹ 49.2625 = \mathbf{₹ 65,10,176}$$[cite: 8]</li>
-        <li>$$\text{Profit at New York} = ₹ 65,15,000 - ₹ 65,10,176 = \mathbf{+₹ 4,824}$$[cite: 8]</li>
+        <li>DKK bought in New York at market ask rate: \\$1 \\text{ USD} = \\text{DKK } 7.5670\\$[cite: 8]</li>
+        <li>USD required \\$= \\frac{\\text{DKK } 10,00,000}{7.5670} = \\mathbf{\\text{USD } 1,32,152.77}\\$[cite: 8]</li>
+        <li>USD bought in Mumbai at market ask rate \\$= ₹ 49.2625\\$[cite: 8]</li>
+        <li>$$\\text{Total Rupee Cost (New York)} = 1,32,152.77 \\times ₹ 49.2625 = \\mathbf{₹ 65,10,176}$$[cite: 8]</li>
+        <li>$$\\text{Profit at New York} = ₹ 65,15,000 - ₹ 65,10,176 = \\mathbf{+₹ 4,824}$$[cite: 8]</li>
       </ul>
 
       <h4>Conclusion</h4>
-      <p>The transaction should be covered in <strong>London</strong>, as it results in a lower cost by ₹ 2,295 ($65,10,176 - 65,07,881$) and yields a higher profit of <strong>₹ 7,119</strong>[cite: 8].</p>
+      <p>The transaction should be covered in <strong>London</strong>, as it results in a lower cost by ₹ 2,295 (\\$65,10,176 - 65,07,881\\$) and yields a higher profit of <strong>₹ 7,119</strong>[cite: 8].</p>
     `
   },
   {
@@ -10827,8 +10827,8 @@ const icaibookData = [
             </tr>
           </thead>
           <tbody>
-            <tr><td>US$ 1</td><td>₹ 45.85 / 45.90</td><td>₹ 45.91 / 45.97</td></tr>
-            <tr><td>GBP £ 1</td><td>US$ 1.7840 / 1.7850</td><td>US$ 1.7765 / 1.7775</td></tr>
+            <tr><td>US\\$ 1</td><td>₹ 45.85 / 45.90</td><td>₹ 45.91 / 45.97</td></tr>
+            <tr><td>GBP £ 1</td><td>US\\$ 1.7840 / 1.7850</td><td>US\\$ 1.7765 / 1.7775</td></tr>
             <tr><td>GBP £ 1</td><td>SGD 3.1575 / 3.1590</td><td>SGD 3.1380 / 3.1390</td></tr>
           </tbody>
         </table>
@@ -10837,18 +10837,18 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Selling Rate for SGD on January 28, 2013</h4>
-      <p>$$\text{Cross Rate (INR/SGD)} = \frac{\text{Ask(INR/USD)} \times \text{Ask(USD/GBP)}}{\text{Bid(SGD/GBP)}} = \frac{₹ 45.90 \times 1.7850}{3.1575} = ₹ 25.9482$$[cite: 8]</p>
-      <p>$$\text{Add: Exchange Margin @ 0.125\%} = 0.125\% \times 25.9482 = ₹ 0.0324$$[cite: 8]</p>
-      <p>$$\text{Applicable Rate (Jan 28)} = 25.9482 + 0.0324 = \mathbf{₹ 25.9806 \text{ per SGD}}$$[cite: 8]</p>
+      <p>$$\\text{Cross Rate (INR/SGD)} = \\frac{\\text{Ask(INR/USD)} \\times \\text{Ask(USD/GBP)}}{\\text{Bid(SGD/GBP)}} = \\frac{₹ 45.90 \\times 1.7850}{3.1575} = ₹ 25.9482$$[cite: 8]</p>
+      <p>$$\\text{Add: Exchange Margin @ 0.125\\%} = 0.125\\% \\times 25.9482 = ₹ 0.0324$$[cite: 8]</p>
+      <p>$$\\text{Applicable Rate (Jan 28)} = 25.9482 + 0.0324 = \\mathbf{₹ 25.9806 \\text{ per SGD}}$$[cite: 8]</p>
 
       <h4>2. Selling Rate for SGD on February 4, 2013</h4>
-      <p>$$\text{Cross Rate (INR/SGD)} = \frac{₹ 45.97 \times 1.7775}{3.1380} = ₹ 26.0394$$[cite: 8]</p>
-      <p>$$\text{Add: Exchange Margin @ 0.125\%} = 0.125\% \times 26.0394 = ₹ 0.0325$$[cite: 8]</p>
-      <p>$$\text{Applicable Rate (Feb 4)} = 26.0394 + 0.0325 = \mathbf{₹ 26.0719 \text{ per SGD}}$$[cite: 8]</p>
+      <p>$$\\text{Cross Rate (INR/SGD)} = \\frac{₹ 45.97 \\times 1.7775}{3.1380} = ₹ 26.0394$$[cite: 8]</p>
+      <p>$$\\text{Add: Exchange Margin @ 0.125\\%} = 0.125\\% \\times 26.0394 = ₹ 0.0325$$[cite: 8]</p>
+      <p>$$\\text{Applicable Rate (Feb 4)} = 26.0394 + 0.0325 = \\mathbf{₹ 26.0719 \\text{ per SGD}}$$[cite: 8]</p>
 
       <h4>3. Financial Impact on Customer</h4>
-      <p>$$\text{Difference per SGD} = ₹ 26.0719 - ₹ 25.9806 = \mathbf{₹ 0.0913 \text{ per SGD (Adverse)}}[cite: 8]$$</p>
-      <p>$$\text{Total Loss to Importer} = 25,00,000 \times ₹ 0.0913 = \mathbf{₹ 2,28,250.00}$$[cite: 8]</p>
+      <p>$$\\text{Difference per SGD} = ₹ 26.0719 - ₹ 25.9806 = \\mathbf{₹ 0.0913 \\text{ per SGD (Adverse)}}[cite: 8]$$</p>
+      <p>$$\\text{Total Loss to Importer} = 25,00,000 \\times ₹ 0.0913 = \\mathbf{₹ 2,28,250.00}$$[cite: 8]</p>
     `
   },
   {
@@ -10872,7 +10872,7 @@ const icaibookData = [
             </tr>
           </thead>
           <tbody>
-            <tr><td>US $</td><td>4,00,00,000</td><td>2,00,00,000</td><td>48.01</td><td>48.82</td></tr>
+            <tr><td>US \\$</td><td>4,00,00,000</td><td>2,00,00,000</td><td>48.01</td><td>48.82</td></tr>
             <tr><td>French Franc (FFr)</td><td>2,00,00,000</td><td>80,00,000</td><td>7.45</td><td>8.12</td></tr>
             <tr><td>U.K. £</td><td>3,00,00,000</td><td>2,00,00,000</td><td>75.57</td><td>75.98</td></tr>
             <tr><td>Japanese Yen (JPY)</td><td>1,50,00,000</td><td>2,50,00,000</td><td>3.20</td><td>2.40</td></tr>
@@ -10900,11 +10900,11 @@ const icaibookData = [
           </thead>
           <tbody>
             <tr>
-              <td>US $</td>
+              <td>US \\$</td>
               <td>40.0</td>
               <td>20.0</td>
               <td>+20.0 (Net Inflow)</td>
-              <td>$48.82 - 48.01 = +0.81$</td>
+              <td>\\$48.82 - 48.01 = +0.81\\$</td>
               <td><strong>+16.20</strong></td>
             </tr>
             <tr>
@@ -10912,7 +10912,7 @@ const icaibookData = [
               <td>20.0</td>
               <td>8.0</td>
               <td>+12.0 (Net Inflow)</td>
-              <td>$8.12 - 7.45 = +0.67$</td>
+              <td>\\$8.12 - 7.45 = +0.67\\$</td>
               <td><strong>+8.04</strong></td>
             </tr>
             <tr>
@@ -10920,7 +10920,7 @@ const icaibookData = [
               <td>30.0</td>
               <td>20.0</td>
               <td>+10.0 (Net Inflow)</td>
-              <td>$75.98 - 75.57 = +0.41$</td>
+              <td>\\$75.98 - 75.57 = +0.41\\$</td>
               <td><strong>+4.10</strong></td>
             </tr>
             <tr>
@@ -10928,7 +10928,7 @@ const icaibookData = [
               <td>15.0</td>
               <td>25.0</td>
               <td>-10.0 (Net Outflow)</td>
-              <td>$2.40 - 3.20 = -0.80$</td>
+              <td>\\$2.40 - 3.20 = -0.80\\$</td>
               <td><strong>+8.00</strong></td>
             </tr>
           </tbody>
@@ -10939,7 +10939,7 @@ const icaibookData = [
       <p>Yes, natural hedge offsets occur in the portfolio[cite: 8]:</p>
       <ul>
         <li>For <strong>Japanese Yen</strong>, the net exposure is a net payable (-10 million JPY) and the currency is trading at a forward discount (-₹ 0.80), which reduces the expected outflow in rupee terms[cite: 8].</li>
-        <li>For <strong>US $, FFr, and UK £</strong>, net exposures are receivables (inflows) and all three currencies trade at a forward premium, increasing the rupee proceeds upon realization[cite: 8].</li>
+        <li>For <strong>US \\$, FFr, and UK £</strong>, net exposures are receivables (inflows) and all three currencies trade at a forward premium, increasing the rupee proceeds upon realization[cite: 8].</li>
       </ul>
     `
   },
@@ -10953,38 +10953,38 @@ const icaibookData = [
     question_html: `
       <p>The following 2-way quotes appear in the foreign exchange market[cite: 8]:</p>
       <ul>
-        <li>Spot: ₹ / US $ = ₹ 46.00 / ₹ 46.25[cite: 8]</li>
-        <li>2-months forward: ₹ / US $ = ₹ 47.00 / ₹ 47.50[cite: 8]</li>
+        <li>Spot: ₹ / US \\$ = ₹ 46.00 / ₹ 46.25[cite: 8]</li>
+        <li>2-months forward: ₹ / US \\$ = ₹ 47.00 / ₹ 47.50[cite: 8]</li>
       </ul>
       <p><strong>Required:</strong></p>
       <ol type="i">
         <li>How many US dollars should a firm sell to get ₹ 25 lakhs after 2 months?[cite: 8]</li>
-        <li>How many Rupees is the firm required to pay to obtain US $ 2,00,000 in the spot market?[cite: 8]</li>
-        <li>Assume the firm has US $ 69,000 in a current account earning no interest[cite: 8]. ROI on Rupee investment is 10% p.a.[cite: 8] Should the firm encash the US $ now or 2 months later?[cite: 8]</li>
+        <li>How many Rupees is the firm required to pay to obtain US \\$ 2,00,000 in the spot market?[cite: 8]</li>
+        <li>Assume the firm has US \\$ 69,000 in a current account earning no interest[cite: 8]. ROI on Rupee investment is 10\\% p.a.[cite: 8] Should the firm encash the US \\$ now or 2 months later?[cite: 8]</li>
       </ol>
     `,
     solution_html: `
       <h4>(i) US Dollars to Sell to Realize ₹ 25 Lakhs After 2 Months</h4>
       <p>The firm will sell USD 2 months forward, and the bank will buy at the forward bid rate of <strong>₹ 47.00</strong>[cite: 8]:</p>
-      <p>$$\text{US Dollars Required} = \frac{₹ 25,00,000}{₹ 47.00} = \mathbf{US\$ 53,191.49}$$[cite: 8]</p>
+      <p>$$\\text{US Dollars Required} = \\frac{₹ 25,00,000}{₹ 47.00} = \\mathbf{US\\$ 53,191.49}$$[cite: 8]</p>
 
-      <h4>(ii) Rupees Required to Purchase US $ 2,00,000 Spot</h4>
+      <h4>(ii) Rupees Required to Purchase US \\$ 2,00,000 Spot</h4>
       <p>The firm will buy USD spot from the bank at the spot ask rate of <strong>₹ 46.25</strong>[cite: 8]:</p>
-      <p>$$\text{Rupees Payable} = \text{US\$ } 2,00,000 \times ₹ 46.25 = \mathbf{₹ 92,50,000}$$[cite: 8]</p>
+      <p>$$\\text{Rupees Payable} = \\text{US\\$ } 2,00,000 \\times ₹ 46.25 = \\mathbf{₹ 92,50,000}$$[cite: 8]</p>
 
-      <h4>(iii) Evaluation: Encash US $ 69,000 Now vs. 2 Months Later</h4>
+      <h4>(iii) Evaluation: Encash US \\$ 69,000 Now vs. 2 Months Later</h4>
       <ul>
         <li><strong>Option 1: Encash Now in Spot Market:</strong>
-          <br />Spot proceeds @ ₹ 46.00 (bank bid) $= 69,000 \times ₹ 46.00 = ₹ 31,74,000$[cite: 8]
+          <br />Spot proceeds @ ₹ 46.00 (bank bid) \\$= 69,000 \\times ₹ 46.00 = ₹ 31,74,000\\$[cite: 8]
           <br />Add: Interest on Rupee investment @ 10% p.a. for 2 months:
-          <br />$$₹ 31,74,000 \times 10\% \times \frac{2}{12} = ₹ 52,900$$[cite: 8]
-          <br />$$\text{Total Realization after 2 months} = ₹ 31,74,000 + ₹ 52,900 = \mathbf{₹ 32,26,900}$$[cite: 8]
+          <br />$$₹ 31,74,000 \\times 10\\% \\times \\frac{2}{12} = ₹ 52,900$$[cite: 8]
+          <br />$$\\text{Total Realization after 2 months} = ₹ 31,74,000 + ₹ 52,900 = \\mathbf{₹ 32,26,900}$$[cite: 8]
         </li>
         <li><strong>Option 2: Encash 2 Months Later Using Forward Contract:</strong>
-          <br />$$\text{Forward Proceeds} = 69,000 \times ₹ 47.00 = \mathbf{₹ 32,43,000}$$[cite: 8]
+          <br />$$\\text{Forward Proceeds} = 69,000 \\times ₹ 47.00 = \\mathbf{₹ 32,43,000}$$[cite: 8]
         </li>
       </ul>
-      <p><strong>Advice:</strong> The firm should <strong>encash the US $ 2 months later</strong>, as it yields an additional gain of <strong>₹ 16,100</strong> ($₹ 32,43,000 - ₹ 32,26,900$)[cite: 8].</p>
+      <p><strong>Advice:</strong> The firm should <strong>encash the US \\$ 2 months later</strong>, as it yields an additional gain of <strong>₹ 16,100</strong> (\\$₹ 32,43,000 - ₹ 32,26,900\\$)[cite: 8].</p>
     `
   },
   {
@@ -11007,27 +11007,27 @@ const icaibookData = [
     solution_html: `
       <h4>Option (i): Pay the Supplier on Day 60 Using Bank Borrowing</h4>
       <ul>
-        <li>Amount payable to supplier on Day 60 $= \text{USD } 20,00,000$[cite: 8]</li>
-        <li>Rupee outflow on Day 60 @ ₹ 57.10 $= 20,00,000 \times ₹ 57.10 = ₹ 11,42,00,000$[cite: 8]</li>
+        <li>Amount payable to supplier on Day 60 \\$= \\text{USD } 20,00,000\\$[cite: 8]</li>
+        <li>Rupee outflow on Day 60 @ ₹ 57.10 \\$= 20,00,000 \\times ₹ 57.10 = ₹ 11,42,00,000\\$[cite: 8]</li>
         <li>Interest on Rupee loan for 30 days @ 10% p.a.:
-          <br />$$₹ 11,42,00,000 \times 10\% \times \frac{30}{360} = \mathbf{₹ 9,51,667}$$[cite: 8]
+          <br />$$₹ 11,42,00,000 \\times 10\\% \\times \\frac{30}{360} = \\mathbf{₹ 9,51,667}$$[cite: 8]
         </li>
-        <li>$$\text{Total Rupee Outflow on Day 90} = ₹ 11,42,00,000 + ₹ 9,51,667 = \mathbf{₹ 11,51,51,667}$$[cite: 8]</li>
+        <li>$$\\text{Total Rupee Outflow on Day 90} = ₹ 11,42,00,000 + ₹ 9,51,667 = \\mathbf{₹ 11,51,51,667}$$[cite: 8]</li>
       </ul>
 
       <h4>Option (ii): Avail Supplier's 90-Day Credit</h4>
       <ul>
-        <li>Principal Invoice Amount $= \text{USD } 20,00,000$[cite: 8]</li>
+        <li>Principal Invoice Amount \\$= \\text{USD } 20,00,000\\$[cite: 8]</li>
         <li>Add: Supplier interest for 30 days @ 8% p.a.:
-          <br />$$\text{USD } 20,00,000 \times 8\% \times \frac{30}{360} = \text{USD } 13,333.33$$[cite: 8]
+          <br />$$\\text{USD } 20,00,000 \\times 8\\% \\times \\frac{30}{360} = \\text{USD } 13,333.33$$[cite: 8]
         </li>
-        <li>Total USD payable on Day 90 $= \text{USD } 20,13,333.33$[cite: 8]</li>
-        <li>Applicable 90-day forward rate $= ₹ 57.50$[cite: 8]</li>
-        <li>$$\text{Total Rupee Outflow on Day 90} = 20,13,333.33 \times ₹ 57.50 = \mathbf{₹ 11,57,66,667 \approx ₹ 11,57,66,648}$$[cite: 8]</li>
+        <li>Total USD payable on Day 90 \\$= \\text{USD } 20,13,333.33\\$[cite: 8]</li>
+        <li>Applicable 90-day forward rate \\$= ₹ 57.50\\$[cite: 8]</li>
+        <li>$$\\text{Total Rupee Outflow on Day 90} = 20,13,333.33 \\times ₹ 57.50 = \\mathbf{₹ 11,57,66,667 \\approx ₹ 11,57,66,648}$$[cite: 8]</li>
       </ul>
 
       <h4>Conclusion</h4>
-      <p><strong>Option (i) is preferable</strong>, as it results in a lower cash outflow by <strong>₹ 6,14,981</strong> ($₹ 11,57,66,648 - ₹ 11,51,51,667$)[cite: 8].</p>
+      <p><strong>Option (i) is preferable</strong>, as it results in a lower cash outflow by <strong>₹ 6,14,981</strong> (\\$₹ 11,57,66,648 - ₹ 11,51,51,667\\$)[cite: 8].</p>
     `
   },
   {
@@ -11050,18 +11050,18 @@ const icaibookData = [
       <h4>1. Execution of Triangular Arbitrage Operations</h4>
       <ol>
         <li><strong>Step 1 (Mumbai):</strong> Sell USD 1,00,00,000 to purchase INR @ 48.30:
-          <br />$$\text{Proceeds} = 1,00,00,000 \times ₹ 48.30 = \mathbf{₹ 48,30,00,000}$$[cite: 8]
+          <br />$$\\text{Proceeds} = 1,00,00,000 \\times ₹ 48.30 = \\mathbf{₹ 48,30,00,000}$$[cite: 8]
         </li>
         <li><strong>Step 2 (London):</strong> Convert INR into GBP @ ₹ 77.52 per GBP:
-          <br />$$\text{GBP Received} = \frac{₹ 48,30,00,000}{77.52} = \mathbf{GBP 6,230,650.155}$$[cite: 8]
+          <br />$$\\text{GBP Received} = \\frac{₹ 48,30,00,000}{77.52} = \\mathbf{GBP 6,230,650.155}$$[cite: 8]
         </li>
-        <li><strong>Step 3 (New York):</strong> Convert GBP into USD @ $ 1.6231 per GBP:
-          <br />$$\text{USD Received} = 6,230,650.155 \times 1.6231 = \mathbf{USD 10,112,968.27}$$[cite: 8]
+        <li><strong>Step 3 (New York):</strong> Convert GBP into USD @ \\$ 1.6231 per GBP:
+          <br />$$\\text{USD Received} = 6,230,650.155 \\times 1.6231 = \\mathbf{USD 10,112,968.27}$$[cite: 8]
         </li>
       </ol>
 
       <h4>2. Net Arbitrage Gain</h4>
-      <p>$$\text{Net Gain} = \text{USD } 10,112,968.27 - \text{USD } 10,000,000.00 = \mathbf{USD 112,968.27}$$[cite: 8]</p>
+      <p>$$\\text{Net Gain} = \\text{USD } 10,112,968.27 - \\text{USD } 10,000,000.00 = \\mathbf{USD 112,968.27}$$[cite: 8]</p>
       <p>A riskless triangular arbitrage gain of <strong>USD 1,12,968.27</strong> is achieved[cite: 8].</p>
     `
   },
@@ -11085,11 +11085,11 @@ const icaibookData = [
       <p>Under Interest Rate Parity, the currency of the country with the lower interest rate (USA @ 4%) trades at a <strong>forward premium</strong> against the currency of the country with the higher interest rate (India @ 10%)[cite: 8]. Therefore, the US dollar is expected to quote at a <strong>premium</strong>[cite: 8].</p>
 
       <h4>(ii) Expected 6-Month Forward Rate</h4>
-      <p>$$F_1 = S_0 \times \frac{1 + r_{\text{home}} \times (6/12)}{1 + r_{\text{foreign}} \times (6/12)} = 55.50 \times \frac{1 + 0.05}{1 + 0.02} = 55.50 \times \frac{1.05}{1.02}$$[cite: 8]</p>
-      <p>$$F_1 = \frac{58.275}{1.02} = \mathbf{₹ 57.132 \approx ₹ 57.13}$$[cite: 8]</p>
+      <p>$$F_1 = S_0 \\times \\frac{1 + r_{\\text{home}} \\times (6/12)}{1 + r_{\\text{foreign}} \\times (6/12)} = 55.50 \\times \\frac{1 + 0.05}{1 + 0.02} = 55.50 \\times \\frac{1.05}{1.02}$$[cite: 8]</p>
+      <p>$$F_1 = \\frac{58.275}{1.02} = \\mathbf{₹ 57.132 \\approx ₹ 57.13}$$[cite: 8]</p>
 
       <h4>(iii) Annualized Rate of Forward Premium</h4>
-      <p>$$\text{Forward Premium \%} = \frac{F_1 - S_0}{S_0} \times \frac{12}{6} \times 100 = \frac{57.13 - 55.50}{55.50} \times 2 \times 100 = \frac{1.63}{55.50} \times 200 = \mathbf{5.87\% \text{ p.a.}}$$[cite: 8]</p>
+      <p>$$\\text{Forward Premium \\%} = \\frac{F_1 - S_0}{S_0} \\times \\frac{12}{6} \\times 100 = \\frac{57.13 - 55.50}{55.50} \\times 2 \\times 100 = \\frac{1.63}{55.50} \\times 200 = \\mathbf{5.87\\% \\text{ p.a.}}$$[cite: 8]</p>
     `
   },
   {
@@ -11105,7 +11105,7 @@ const icaibookData = [
         <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
           <thead>
             <tr style="background-color:#f2f2f2;">
-              <th style="padding:6px; border:1px solid #ddd;">$ / £ Rate</th>
+              <th style="padding:6px; border:1px solid #ddd;">\\$ / £ Rate</th>
               <th style="padding:6px; border:1px solid #ddd;">1.60</th>
               <th style="padding:6px; border:1px solid #ddd;">1.70</th>
               <th style="padding:6px; border:1px solid #ddd;">1.80</th>
@@ -11120,16 +11120,16 @@ const icaibookData = [
       </div>
       <ol type="i">
         <li>What is the expected spot rate for 01.09.2009?[cite: 8]</li>
-        <li>If the 6-month forward rate in March 2009 is $ 1.80, should the firm sell forward its pound receivables due in September 2009?[cite: 8]</li>
+        <li>If the 6-month forward rate in March 2009 is \\$ 1.80, should the firm sell forward its pound receivables due in September 2009?[cite: 8]</li>
       </ol>
     `,
     solution_html: `
       <h4>(i) Expected Spot Rate for September 2009</h4>
-      <p>$$E(S) = (1.60 \times 0.15) + (1.70 \times 0.20) + (1.80 \times 0.25) + (1.90 \times 0.20) + (2.00 \times 0.20)$$[cite: 8]</p>
-      <p>$$E(S) = 0.24 + 0.34 + 0.45 + 0.38 + 0.40 = \mathbf{\$ 1.81 \text{ per } £}$$[cite: 8]</p>
+      <p>$$E(S) = (1.60 \\times 0.15) + (1.70 \\times 0.20) + (1.80 \\times 0.25) + (1.90 \\times 0.20) + (2.00 \\times 0.20)$$[cite: 8]</p>
+      <p>$$E(S) = 0.24 + 0.34 + 0.45 + 0.38 + 0.40 = \\mathbf{\\$ 1.81 \\text{ per } £}$$[cite: 8]</p>
 
       <h4>(ii) Forward Hedging Decision</h4>
-      <p>The forward rate ($ 1.80) is lower than the expected future spot rate ($ 1.81)[cite: 8]. If the firm sells forward, it locks in $ 1.80 per pound, whereas keeping the exposure unhedged promises an expected return of $ 1.81 per pound[cite: 8]. Therefore, if the firm seeks to maximize expected dollar receipts, it should <strong>retain its pound receivables unhedged</strong> (or hedge only if it is strictly risk-averse)[cite: 8].</p>
+      <p>The forward rate (\\$ 1.80) is lower than the expected future spot rate (\\$ 1.81)[cite: 8]. If the firm sells forward, it locks in \\$ 1.80 per pound, whereas keeping the exposure unhedged promises an expected return of \\$ 1.81 per pound[cite: 8]. Therefore, if the firm seeks to maximize expected dollar receipts, it should <strong>retain its pound receivables unhedged</strong> (or hedge only if it is strictly risk-averse)[cite: 8].</p>
     `
   },
   {
@@ -11169,17 +11169,17 @@ const icaibookData = [
       <p>The bank sells SGD to the importer, which requires buying USD against INR and selling USD against SGD[cite: 8]:</p>
       <ul>
         <li><strong>USD / INR Selling (Ask) Rate:</strong>
-          <br />$$\text{Spot Ask} = 49.3800; \quad \text{October Premium} = 0.1300 \implies \mathbf{₹ 49.5100}$$[cite: 8]
+          <br />$$\\text{Spot Ask} = 49.3800; \\quad \\text{October Premium} = 0.1300 \\implies \\mathbf{₹ 49.5100}$$[cite: 8]
         </li>
         <li><strong>USD / SGD Buying (Bid) Rate:</strong>
-          <br />$$\text{Spot Bid} = 1.7058; \quad \text{2nd Month Premium} = 0.0096 \implies \mathbf{\text{SGD } 1.7154}$$[cite: 8]
+          <br />$$\\text{Spot Bid} = 1.7058; \\quad \\text{2nd Month Premium} = 0.0096 \\implies \\mathbf{\\text{SGD } 1.7154}$$[cite: 8]
         </li>
       </ul>
 
       <h4>2. Cross Currency Calculation (INR per SGD)</h4>
-      <p>$$\text{Cross Ask Rate (INR / SGD)} = \frac{\text{Ask(USD/INR)}}{\text{Bid(USD/SGD)}} = \frac{₹ 49.5100}{1.7154} = \mathbf{₹ 28.8621}$$[cite: 8]</p>
-      <p>$$\text{Add: Exchange Margin} = \mathbf{₹ 0.0500}$$[cite: 8]</p>
-      <p>$$\text{Merchant Selling Rate Quoted to Importer} = 28.8621 + 0.0500 = \mathbf{₹ 28.9121 \text{ per SGD}}$$[cite: 8]</p>
+      <p>$$\\text{Cross Ask Rate (INR / SGD)} = \\frac{\\text{Ask(USD/INR)}}{\\text{Bid(USD/SGD)}} = \\frac{₹ 49.5100}{1.7154} = \\mathbf{₹ 28.8621}$$[cite: 8]</p>
+      <p>$$\\text{Add: Exchange Margin} = \\mathbf{₹ 0.0500}$$[cite: 8]</p>
+      <p>$$\\text{Merchant Selling Rate Quoted to Importer} = 28.8621 + 0.0500 = \\mathbf{₹ 28.9121 \\text{ per SGD}}$$[cite: 8]</p>
     `
   },
   {
@@ -11196,19 +11196,19 @@ const icaibookData = [
     solution_html: `
       <h4>1. Expected Unhedged Position</h4>
       <ul>
-        <li>Current Spot Rate $= \frac{\text{¥ } 108 \text{ lakhs}}{₹ 30 \text{ lakhs}} = \text{¥ } 3.60 \text{ per Rupee}$[cite: 8]</li>
+        <li>Current Spot Rate \\$= \\frac{\\text{¥ } 108 \\text{ lakhs}}{₹ 30 \\text{ lakhs}} = \\text{¥ } 3.60 \\text{ per Rupee}\\$[cite: 8]</li>
         <li>Expected Spot Rate after 10% fall in Yen/₹:
-          <br />$$\text{¥ } 3.60 \times (1 - 0.10) = \mathbf{\text{¥ } 3.24 \text{ per Rupee}}$$[cite: 8]
+          <br />$$\\text{¥ } 3.60 \\times (1 - 0.10) = \\mathbf{\\text{¥ } 3.24 \\text{ per Rupee}}$$[cite: 8]
         </li>
-        <li>Expected Rupee Outflow $= \frac{\text{¥ } 108 \text{ lakhs}}{3.24} = \mathbf{₹ 33.33 \text{ lakhs}}$[cite: 8]</li>
-        <li>$$\text{Expected Exchange Loss} = ₹ 33.33 \text{ lakhs} - ₹ 30.00 \text{ lakhs} = \mathbf{₹ 3.33 \text{ lakhs}}$$[cite: 8]</li>
+        <li>Expected Rupee Outflow \\$= \\frac{\\text{¥ } 108 \\text{ lakhs}}{3.24} = \\mathbf{₹ 33.33 \\text{ lakhs}}\\$[cite: 8]</li>
+        <li>$$\\text{Expected Exchange Loss} = ₹ 33.33 \\text{ lakhs} - ₹ 30.00 \\text{ lakhs} = \\mathbf{₹ 3.33 \\text{ lakhs}}$$[cite: 8]</li>
       </ul>
 
       <h4>2. Hedged Position Using Forward Contract</h4>
       <ul>
-        <li>3-Month Forward Rate $= \text{¥ } 3.30 \text{ per Rupee}$[cite: 8]</li>
-        <li>Rupee Outflow under Forward Cover $= \frac{\text{¥ } 108 \text{ lakhs}}{3.30} = \mathbf{₹ 32.73 \text{ lakhs}}$[cite: 8]</li>
-        <li>$$\text{Hedging Loss} = ₹ 32.73 \text{ lakhs} - ₹ 30.00 \text{ lakhs} = \mathbf{₹ 2.73 \text{ lakhs}}$$[cite: 8]</li>
+        <li>3-Month Forward Rate \\$= \\text{¥ } 3.30 \\text{ per Rupee}\\$[cite: 8]</li>
+        <li>Rupee Outflow under Forward Cover \\$= \\frac{\\text{¥ } 108 \\text{ lakhs}}{3.30} = \\mathbf{₹ 32.73 \\text{ lakhs}}\\$[cite: 8]</li>
+        <li>$$\\text{Hedging Loss} = ₹ 32.73 \\text{ lakhs} - ₹ 30.00 \\text{ lakhs} = \\mathbf{₹ 2.73 \\text{ lakhs}}$$[cite: 8]</li>
       </ul>
 
       <h4>Conclusion</h4>
@@ -11236,15 +11236,15 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Total Rupee Commitment Under Forward Contract</h4>
       <ul>
-        <li>Interest Rate $= 2\% (\text{SOFR}) + 1\% = \mathbf{3.00\% \text{ p.a.}}$[cite: 8]</li>
-        <li>$$\text{Interest Amount for 6 Months} = \text{US\$ } 20,00,000 \times 3\% \times \frac{6}{12} = \mathbf{\text{US\$ } 30,00,000 \times 10^{-2} = \text{US\$ } 30,000}$$[cite: 8]</li>
-        <li>Total USD Due at Maturity $= \text{US\$ } 20,00,000 + \text{US\$ } 30,000 = \mathbf{\text{US\$ } 20,30,000}$[cite: 8]</li>
-        <li>Applicable 6-Month Forward Rate $= \mathbf{₹ 48.4575}$[cite: 8]</li>
-        <li>$$\text{Total Rupee Commitment} = 20,30,000 \times ₹ 48.4575 = \mathbf{₹ 9,83,68,725}$$[cite: 8]</li>
+        <li>Interest Rate \\$= 2\\% (\\text{SOFR}) + 1\\% = \\mathbf{3.00\\% \\text{ p.a.}}\\$[cite: 8]</li>
+        <li>$$\\text{Interest Amount for 6 Months} = \\text{US\\$ } 20,00,000 \\times 3\\% \\times \\frac{6}{12} = \\mathbf{\\text{US\\$ } 30,00,000 \\times 10^{-2} = \\text{US\\$ } 30,000}$$[cite: 8]</li>
+        <li>Total USD Due at Maturity \\$= \\text{US\\$ } 20,00,000 + \\text{US\\$ } 30,000 = \\mathbf{\\text{US\\$ } 20,30,000}\\$[cite: 8]</li>
+        <li>Applicable 6-Month Forward Rate \\$= \\mathbf{₹ 48.4575}\\$[cite: 8]</li>
+        <li>$$\\text{Total Rupee Commitment} = 20,30,000 \\times ₹ 48.4575 = \\mathbf{₹ 9,83,68,725}$$[cite: 8]</li>
       </ul>
 
       <h4>(ii) Advice and Managerial Reasoning</h4>
-      <p>The forward market quotes USD at a forward discount of ₹ 0.0700 ($₹ 48.5275 - ₹ 48.4575$)[cite: 8].</p>
+      <p>The forward market quotes USD at a forward discount of ₹ 0.0700 (\\$₹ 48.5275 - ₹ 48.4575\\$)[cite: 8].</p>
       <ul>
         <li>If the firm has no specific forecast of dollar depreciation beyond ₹ 48.4575, entering into a forward contract freezes the total liability and insulates against upside volatility[cite: 8].</li>
         <li>Given structural inflation differentials between India and the US, the Rupee historically depreciates against the Dollar over time; therefore, relying on unhedged dollar depreciation is risky[cite: 8]. <strong>Booking forward cover is advised</strong>[cite: 8].</li>
@@ -11267,12 +11267,12 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(i) Annualized Rate of Forward Discount</h4>
-      <p>$$\text{Discount Rate} = \frac{\text{Spot Rate} - \text{Forward Rate}}{\text{Spot Rate}} \times \frac{365}{\text{Days}} \times 100$$[cite: 8]</p>
-      <p>$$\text{Discount Rate} = \frac{₹ 45.60 - ₹ 45.20}{₹ 45.60} \times \frac{365}{60} \times 100 = \frac{0.40}{45.60} \times 6.0833 \times 100 = \mathbf{5.34\% \text{ (or } 5.33\%)}[cite: 8]$$</p>
+      <p>$$\\text{Discount Rate} = \\frac{\\text{Spot Rate} - \\text{Forward Rate}}{\\text{Spot Rate}} \\times \\frac{365}{\\text{Days}} \\times 100$$[cite: 8]</p>
+      <p>$$\\text{Discount Rate} = \\frac{₹ 45.60 - ₹ 45.20}{₹ 45.60} \\times \\frac{365}{60} \\times 100 = \\frac{0.40}{45.60} \\times 6.0833 \\times 100 = \\mathbf{5.34\\% \\text{ (or } 5.33\\%)}[cite: 8]$$</p>
 
       <h4>(ii) Loss of Budgeted Operating Profit</h4>
-      <p>$$\text{Loss per USD} = \text{Budgeted Rate} - \text{Forward Rate} = ₹ 45.50 - ₹ 45.20 = \mathbf{₹ 0.30}$$[cite: 8]</p>
-      <p>$$\text{Total Loss of Operating Profit} = 1,00,000 \times ₹ 0.30 = \mathbf{₹ 30,000}$$[cite: 8]</p>
+      <p>$$\\text{Loss per USD} = \\text{Budgeted Rate} - \\text{Forward Rate} = ₹ 45.50 - ₹ 45.20 = \\mathbf{₹ 0.30}$$[cite: 8]</p>
+      <p>$$\\text{Total Loss of Operating Profit} = 1,00,000 \\times ₹ 0.30 = \\mathbf{₹ 30,000}$$[cite: 8]</p>
     `
   },
   {
@@ -11283,22 +11283,22 @@ const icaibookData = [
     // placement: 31,
     marks: 4,
     question_html: `
-      <p>In the International Monetary Market, an international forward bid for December 15 on pound sterling is $ 1.2816, while the price of IMM sterling futures for delivery on December 15 is $ 1.2806 (contract size: £ 62,500)[cite: 8]. How could a dealer profit from arbitrage, and how much profit is earned?[cite: 8]</p>
+      <p>In the International Monetary Market, an international forward bid for December 15 on pound sterling is \\$ 1.2816, while the price of IMM sterling futures for delivery on December 15 is \\$ 1.2806 (contract size: £ 62,500)[cite: 8]. How could a dealer profit from arbitrage, and how much profit is earned?[cite: 8]</p>
     `,
     solution_html: `
       <h4>Arbitrage Strategy</h4>
       <p>Because identical delivery commitments trade at different prices across markets, an arbitrageur exploits the spread by buying cheap in the futures market and selling expensive in the forward market[cite: 8]:</p>
       <ul>
-        <li><strong>Buy</strong> 1 IMM Sterling Futures contract at $ 1.2806 per £[cite: 8].</li>
-        <li><strong>Sell</strong> £ 62,500 in the forward market at $ 1.2816 per £[cite: 8].</li>
+        <li><strong>Buy</strong> 1 IMM Sterling Futures contract at \\$ 1.2806 per £[cite: 8].</li>
+        <li><strong>Sell</strong> £ 62,500 in the forward market at \\$ 1.2816 per £[cite: 8].</li>
         <li>Take delivery under futures contract on December 15 paying:
-          <br />$$£ 62,500 \times 1.2806 = \$ 80,037.50$$[cite: 8]
+          <br />$$£ 62,500 \\times 1.2806 = \\$ 80,037.50$$[cite: 8]
         </li>
         <li>Deliver pounds into forward contract on December 15 receiving:
-          <br />$$£ 62,500 \times 1.2816 = \$ 80,100.00$$[cite: 8]
+          <br />$$£ 62,500 \\times 1.2816 = \\$ 80,100.00$$[cite: 8]
         </li>
       </ul>
-      <p>$$\text{Net Riskless Arbitrage Profit} = \$ 80,100.00 - \$ 80,037.50 = \mathbf{\$ 62.50}$$[cite: 8]</p>
+      <p>$$\\text{Net Riskless Arbitrage Profit} = \\$ 80,100.00 - \\$ 80,037.50 = \\mathbf{\\$ 62.50}$$[cite: 8]</p>
     `
   },
   {
@@ -11309,41 +11309,41 @@ const icaibookData = [
     // placement: 32,
     marks: 6,
     question_html: `
-      <p>An Indian importer has to settle an import bill of $ 1,30,000 under two options[cite: 8]:</p>
+      <p>An Indian importer has to settle an import bill of \\$ 1,30,000 under two options[cite: 8]:</p>
       <ol type="i">
         <li>Pay immediately without interest charges[cite: 8].</li>
         <li>Pay after 3 months with interest @ 5% p.a.[cite: 8]</li>
       </ol>
       <p>Bank overdraft rate is 15% p.a. Market quotes[cite: 8]:</p>
       <ul>
-        <li>Spot rate (₹ / $): 48.35 / 48.36[cite: 8]</li>
-        <li>3-Months forward rate (₹ / $): 48.81 / 48.83[cite: 8]</li>
+        <li>Spot rate (₹ / \\$): 48.35 / 48.36[cite: 8]</li>
+        <li>3-Months forward rate (₹ / \\$): 48.81 / 48.83[cite: 8]</li>
       </ul>
       <p>Advise the importer on which option to choose[cite: 8].</p>
     `,
     solution_html: `
       <h4>Option (i): Pay Immediately Using Bank Overdraft</h4>
       <ul>
-        <li>Rupee cost to buy USD spot @ ₹ 48.36 $= 1,30,000 \times ₹ 48.36 = ₹ 62,86,800$[cite: 8]</li>
+        <li>Rupee cost to buy USD spot @ ₹ 48.36 \\$= 1,30,000 \\times ₹ 48.36 = ₹ 62,86,800\\$[cite: 8]</li>
         <li>Add: Overdraft interest for 3 months @ 15% p.a.:
-          <br />$$₹ 62,86,800 \times 15\% \times \frac{3}{12} = ₹ 2,35,755$$[cite: 8]
+          <br />$$₹ 62,86,800 \\times 15\\% \\times \\frac{3}{12} = ₹ 2,35,755$$[cite: 8]
         </li>
-        <li>$$\text{Total Rupee Outflow after 3 Months} = ₹ 62,86,800 + ₹ 2,35,755 = \mathbf{₹ 65,22,555}$$[cite: 8]</li>
+        <li>$$\\text{Total Rupee Outflow after 3 Months} = ₹ 62,86,800 + ₹ 2,35,755 = \\mathbf{₹ 65,22,555}$$[cite: 8]</li>
       </ul>
 
       <h4>Option (ii): Settle After 3 Months with Supplier Credit and Forward Cover</h4>
       <ul>
         <li>Interest charged by supplier for 3 months @ 5% p.a.:
-          <br />$$\text{US\$ } 1,30,000 \times 5\% \times \frac{3}{12} = \text{US\$ } 1,625$$[cite: 8]
+          <br />$$\\text{US\\$ } 1,30,000 \\times 5\\% \\times \\frac{3}{12} = \\text{US\\$ } 1,625$$[cite: 8]
         </li>
-        <li>Total USD payable on maturity $= \text{US\$ } 1,30,000 + 1,625 = \text{US\$ } 1,31,625$[cite: 8]</li>
+        <li>Total USD payable on maturity \\$= \\text{US\\$ } 1,30,000 + 1,625 = \\text{US\\$ } 1,31,625\\$[cite: 8]</li>
         <li>Rupee outflow @ 3-month forward ask rate ₹ 48.83:
-          <br />$$1,31,625 \times ₹ 48.83 = \mathbf{₹ 64,27,249}$$[cite: 8]
+          <br />$$1,31,625 \\times ₹ 48.83 = \\mathbf{₹ 64,27,249}$$[cite: 8]
         </li>
       </ul>
 
       <h4>Recommendation</h4>
-      <p><strong>Option (ii) is preferable</strong>, as the total cash outflow is lower by <strong>₹ 95,306</strong> ($₹ 65,22,555 - ₹ 64,27,249$)[cite: 8].</p>
+      <p><strong>Option (ii) is preferable</strong>, as the total cash outflow is lower by <strong>₹ 95,306</strong> (\\$₹ 65,22,555 - ₹ 64,27,249\\$)[cite: 8].</p>
     `
   },
   {
@@ -11354,31 +11354,31 @@ const icaibookData = [
     // placement: 33,
     marks: 6,
     question_html: `
-      <p>DEF Ltd. imported goods worth US$ 1 crore[cite: 8]. Payment terms offer 60 days interest-free credit, with additional 30-day credit charged at 7.75% p.a.[cite: 8] DEF Ltd.'s banker offers a 30-day loan at 9.50% p.a.[cite: 8] Foreign exchange quotes[cite: 8]:</p>
+      <p>DEF Ltd. imported goods worth US\\$ 1 crore[cite: 8]. Payment terms offer 60 days interest-free credit, with additional 30-day credit charged at 7.75% p.a.[cite: 8] DEF Ltd.'s banker offers a 30-day loan at 9.50% p.a.[cite: 8] Foreign exchange quotes[cite: 8]:</p>
       <ul>
-        <li>Spot INR/US$: 62.50[cite: 8]</li>
-        <li>60 days forward INR/US$: 63.15[cite: 8]</li>
-        <li>90 days forward INR/US$: 63.45[cite: 8]</li>
+        <li>Spot INR/US\\$: 62.50[cite: 8]</li>
+        <li>60 days forward INR/US\\$: 63.15[cite: 8]</li>
+        <li>90 days forward INR/US\\$: 63.45[cite: 8]</li>
       </ul>
       <p>Which option is better: (i) Pay supplier on Day 60 and borrow from bank for 30 days, or (ii) Avail supplier's 90-day credit?[cite: 8]</p>
     `,
     solution_html: `
       <h4>Option (i): Pay on Day 60 Using Bank Loan</h4>
       <ul>
-        <li>Rupee cost on Day 60 @ ₹ 63.15 $= 1,00,00,000 \times ₹ 63.15 = ₹ 63.15 \text{ crores}$[cite: 8]</li>
+        <li>Rupee cost on Day 60 @ ₹ 63.15 \\$= 1,00,00,000 \\times ₹ 63.15 = ₹ 63.15 \\text{ crores}\\$[cite: 8]</li>
         <li>Interest on bank loan for 30 days @ 9.50% p.a.:
-          <br />$$₹ 63.15 \text{ crores} \times 9.5\% \times \frac{30}{360} = \mathbf{₹ 0.4999 \approx ₹ 0.50 \text{ crore}}$$[cite: 8]
+          <br />$$₹ 63.15 \\text{ crores} \\times 9.5\\% \\times \\frac{30}{360} = \\mathbf{₹ 0.4999 \\approx ₹ 0.50 \\text{ crore}}$$[cite: 8]
         </li>
-        <li>$$\text{Total Outflow at Day 90} = ₹ 63.15 + ₹ 0.50 = \mathbf{₹ 63.65 \text{ crores}}$$[cite: 8]</li>
+        <li>$$\\text{Total Outflow at Day 90} = ₹ 63.15 + ₹ 0.50 = \\mathbf{₹ 63.65 \\text{ crores}}$$[cite: 8]</li>
       </ul>
 
       <h4>Option (ii): Avail Supplier's 90-Day Credit</h4>
       <ul>
         <li>Supplier interest for 30 days @ 7.75% p.a.:
-          <br />$$\text{US\$ } 1,00,00,000 \times 7.75\% \times \frac{30}{360} = \text{US\$ } 64,583.33 \approx \text{US\$ } 0.00646 \text{ crore}$$[cite: 8]
+          <br />$$\\text{US\\$ } 1,00,00,000 \\times 7.75\\% \\times \\frac{30}{360} = \\text{US\\$ } 64,583.33 \\approx \\text{US\\$ } 0.00646 \\text{ crore}$$[cite: 8]
         </li>
-        <li>Total USD payable on Day 90 $= \text{US\$ } 1.00646 \text{ crore}$[cite: 8]</li>
-        <li>Rupee cost on Day 90 @ ₹ 63.45 $= 1.00646 \times ₹ 63.45 = \mathbf{₹ 63.86 \text{ crores}}$[cite: 8]</li>
+        <li>Total USD payable on Day 90 \\$= \\text{US\\$ } 1.00646 \\text{ crore}\\$[cite: 8]</li>
+        <li>Rupee cost on Day 90 @ ₹ 63.45 \\$= 1.00646 \\times ₹ 63.45 = \\mathbf{₹ 63.86 \\text{ crores}}\\$[cite: 8]</li>
       </ul>
 
       <h4>Conclusion</h4>
@@ -11393,38 +11393,38 @@ const icaibookData = [
     // placement: 34,
     marks: 8,
     question_html: `
-      <p>A company purchased goods on 01.07.2016 for US$ 60,000 payable on 31.12.2016[cite: 8]. Spot rate: 1 US$ = ₹ 65[cite: 8]. It can book a forward contract at ₹ 64, subject to an upfront premium of 2% of the forward value[cite: 8]. Cost of funds is 12% p.a.[cite: 8]</p>
+      <p>A company purchased goods on 01.07.2016 for US\\$ 60,000 payable on 31.12.2016[cite: 8]. Spot rate: 1 US\\$ = ₹ 65[cite: 8]. It can book a forward contract at ₹ 64, subject to an upfront premium of 2% of the forward value[cite: 8]. Cost of funds is 12% p.a.[cite: 8]</p>
       <p>Compute the profit/loss from hedging if the spot exchange rate on 31.12.2016 is: (i) ₹ 68, (ii) ₹ 62, (iii) ₹ 70, and (iv) ₹ 65[cite: 8].</p>
     `,
     solution_html: `
       <h4>1. Total Cost of Hedging</h4>
       <ul>
         <li>Upfront forward fee paid on 1st July:
-          <br />$$60,000 \times ₹ 64 \times 2\% = ₹ 38,40,000 \times 2\% = ₹ 76,800$$[cite: 8]
+          <br />$$60,000 \\times ₹ 64 \\times 2\\% = ₹ 38,40,000 \\times 2\\% = ₹ 76,800$$[cite: 8]
         </li>
         <li>Interest on upfront fee for 6 months @ 12% p.a.:
-          <br />$$₹ 76,800 \times 12\% \times \frac{6}{12} = ₹ 4,608$$[cite: 8]
+          <br />$$₹ 76,800 \\times 12\\% \\times \\frac{6}{12} = ₹ 4,608$$[cite: 8]
         </li>
-        <li>$$\text{Total Hedging Cost} = ₹ 76,800 + ₹ 4,608 = \mathbf{₹ 81,408}$$[cite: 8]</li>
+        <li>$$\\text{Total Hedging Cost} = ₹ 76,800 + ₹ 4,608 = \\mathbf{₹ 81,408}$$[cite: 8]</li>
       </ul>
 
       <h4>2. Gain or Loss Under Spot Rate Scenarios on 31.12.2016</h4>
       <ul>
         <li><strong>(i) Spot Rate = ₹ 68:</strong>
-          <br />$$\text{Gross Gain on Forward} = 60,000 \times (₹ 68 - ₹ 64) = ₹ 2,40,000$$[cite: 8]
-          <br />$$\text{Net Gain} = ₹ 2,40,000 - ₹ 81,408 = \mathbf{+₹ 1,58,592}$$[cite: 8]
+          <br />$$\\text{Gross Gain on Forward} = 60,000 \\times (₹ 68 - ₹ 64) = ₹ 2,40,000$$[cite: 8]
+          <br />$$\\text{Net Gain} = ₹ 2,40,000 - ₹ 81,408 = \\mathbf{+₹ 1,58,592}$$[cite: 8]
         </li>
         <li><strong>(ii) Spot Rate = ₹ 62:</strong>
-          <br />$$\text{Gross Loss on Forward} = 60,000 \times (₹ 64 - ₹ 62) = -₹ 1,20,000$$[cite: 8]
-          <br />$$\text{Total Loss} = -₹ 1,20,000 - ₹ 81,408 = \mathbf{-₹ 2,01,408}$$[cite: 8]
+          <br />$$\\text{Gross Loss on Forward} = 60,000 \\times (₹ 64 - ₹ 62) = -₹ 1,20,000$$[cite: 8]
+          <br />$$\\text{Total Loss} = -₹ 1,20,000 - ₹ 81,408 = \\mathbf{-₹ 2,01,408}$$[cite: 8]
         </li>
         <li><strong>(iii) Spot Rate = ₹ 70:</strong>
-          <br />$$\text{Gross Gain on Forward} = 60,000 \times (₹ 70 - ₹ 64) = ₹ 3,60,000$$[cite: 8]
-          <br />$$\text{Net Gain} = ₹ 3,60,000 - ₹ 81,408 = \mathbf{+₹ 2,78,592}$$[cite: 8]
+          <br />$$\\text{Gross Gain on Forward} = 60,000 \\times (₹ 70 - ₹ 64) = ₹ 3,60,000$$[cite: 8]
+          <br />$$\\text{Net Gain} = ₹ 3,60,000 - ₹ 81,408 = \\mathbf{+₹ 2,78,592}$$[cite: 8]
         </li>
         <li><strong>(iv) Spot Rate = ₹ 65:</strong>
-          <br />$$\text{Gross Gain on Forward} = 60,000 \times (₹ 65 - ₹ 64) = ₹ 60,000$$[cite: 8]
-          <br />$$\text{Net Loss} = ₹ 60,000 - ₹ 81,408 = \mathbf{-₹ 21,408}$$[cite: 8]
+          <br />$$\\text{Gross Gain on Forward} = 60,000 \\times (₹ 65 - ₹ 64) = ₹ 60,000$$[cite: 8]
+          <br />$$\\text{Net Loss} = ₹ 60,000 - ₹ 81,408 = \\mathbf{-₹ 21,408}$$[cite: 8]
         </li>
       </ul>
     `
@@ -11450,46 +11450,46 @@ const icaibookData = [
           </thead>
           <tbody>
             <tr><td>Variable Cost per Unit (₹)</td><td>225</td><td>395</td><td>510</td></tr>
-            <tr><td>Export Sale Price per Unit</td><td>Yen 650</td><td>US$ 10.23</td><td>Euro 11.99</td></tr>
-            <tr><td>Receipts Due in 90 Days</td><td>Yen 78,00,000</td><td>US$ 1,02,300</td><td>Euro 95,920</td></tr>
+            <tr><td>Export Sale Price per Unit</td><td>Yen 650</td><td>US\\$ 10.23</td><td>Euro 11.99</td></tr>
+            <tr><td>Receipts Due in 90 Days</td><td>Yen 78,00,000</td><td>US\\$ 1,02,300</td><td>Euro 95,920</td></tr>
           </tbody>
         </table>
       </div>
       <p>Indirect foreign exchange rates (foreign currency per ₹)[cite: 8]:</p>
       <ul>
-        <li>Spot: Yen 2.417&ndash;2.437; US$ 0.0214&ndash;0.0217; Euro 0.0177&ndash;0.0180[cite: 8]</li>
-        <li>3-Months Forward: Yen 2.397&ndash;2.427; US$ 0.0213&ndash;0.0216; Euro 0.0176&ndash;0.0178[cite: 8]</li>
-        <li>3-Months Spot: Yen 2.423&ndash;2.459; US$ 0.02144&ndash;0.02156; Euro 0.0177&ndash;0.0179[cite: 8]</li>
+        <li>Spot: Yen 2.417&ndash;2.437; US\\$ 0.0214&ndash;0.0217; Euro 0.0177&ndash;0.0180[cite: 8]</li>
+        <li>3-Months Forward: Yen 2.397&ndash;2.427; US\\$ 0.0213&ndash;0.0216; Euro 0.0176&ndash;0.0178[cite: 8]</li>
+        <li>3-Months Spot: Yen 2.423&ndash;2.459; US\\$ 0.02144&ndash;0.02156; Euro 0.0177&ndash;0.0179[cite: 8]</li>
       </ul>
       <p>Advise AKC Ltd. by calculating the average contribution-to-sales ratio whether it should hedge its foreign currency risk[cite: 8].</p>
     `,
     solution_html: `
       <h4>1. Units Sold and Total Variable Costs</h4>
       <ul>
-        <li>Japan: $\frac{\text{Yen } 78,00,000}{650} = 12,000 \text{ units} \implies 12,000 \times ₹ 225 = ₹ 27,00,000$[cite: 8]</li>
-        <li>USA: $\frac{\text{US\$ } 1,02,300}{10.23} = 10,000 \text{ units} \implies 10,000 \times ₹ 395 = ₹ 39,50,000$[cite: 8]</li>
-        <li>Europe: $\frac{\text{Euro } 95,920}{11.99} = 8,000 \text{ units} \implies 8,000 \times ₹ 510 = ₹ 40,80,000$[cite: 8]</li>
-        <li>$$\text{Total Variable Cost} = ₹ 27,00,000 + ₹ 39,50,000 + ₹ 40,80,000 = \mathbf{₹ 1,07,30,000}$$[cite: 8]</li>
+        <li>Japan: \\$\\frac{\\text{Yen } 78,00,000}{650} = 12,000 \\text{ units} \\implies 12,000 \\times ₹ 225 = ₹ 27,00,000\\$[cite: 8]</li>
+        <li>USA: \\$\\frac{\\text{US\\$ } 1,02,300}{10.23} = 10,000 \\text{ units} \\implies 10,000 \\times ₹ 395 = ₹ 39,50,000\\$[cite: 8]</li>
+        <li>Europe: \\$\\frac{\\text{Euro } 95,920}{11.99} = 8,000 \\text{ units} \\implies 8,000 \\times ₹ 510 = ₹ 40,80,000\\$[cite: 8]</li>
+        <li>$$\\text{Total Variable Cost} = ₹ 27,00,000 + ₹ 39,50,000 + ₹ 40,80,000 = \\mathbf{₹ 1,07,30,000}$$[cite: 8]</li>
       </ul>
 
       <h4>2. Scenario A: If Foreign Exchange Risk is Hedged (3-Month Forward Bid Rates)</h4>
       <ul>
-        <li>Japan: $\frac{\text{Yen } 78,00,000}{2.427} = ₹ 32,13,844$[cite: 8]</li>
-        <li>USA: $\frac{\text{US\$ } 1,02,300}{0.0216} = ₹ 47,36,111$[cite: 8]</li>
-        <li>Europe: $\frac{\text{Euro } 95,920}{0.0178} = ₹ 53,88,764$[cite: 8]</li>
-        <li>$$\text{Total Hedged Sales} = ₹ 1,33,38,719$$[cite: 8]</li>
-        <li>$$\text{Contribution} = ₹ 1,33,38,719 - ₹ 1,07,30,000 = \mathbf{₹ 26,08,719}$$[cite: 8]</li>
-        <li>$$\text{Contribution to Sales Ratio} = \frac{₹ 26,08,719}{₹ 1,33,38,719} \times 100 = \mathbf{19.56\%}$$[cite: 8]</li>
+        <li>Japan: \\$\\frac{\\text{Yen } 78,00,000}{2.427} = ₹ 32,13,844\\$[cite: 8]</li>
+        <li>USA: \\$\\frac{\\text{US\\$ } 1,02,300}{0.0216} = ₹ 47,36,111\\$[cite: 8]</li>
+        <li>Europe: \\$\\frac{\\text{Euro } 95,920}{0.0178} = ₹ 53,88,764\\$[cite: 8]</li>
+        <li>$$\\text{Total Hedged Sales} = ₹ 1,33,38,719$$[cite: 8]</li>
+        <li>$$\\text{Contribution} = ₹ 1,33,38,719 - ₹ 1,07,30,000 = \\mathbf{₹ 26,08,719}$$[cite: 8]</li>
+        <li>$$\\text{Contribution to Sales Ratio} = \\frac{₹ 26,08,719}{₹ 1,33,38,719} \\times 100 = \\mathbf{19.56\\%}$$[cite: 8]</li>
       </ul>
 
       <h4>3. Scenario B: If Foreign Exchange Risk is Not Hedged (3-Month Spot Bid Rates)</h4>
       <ul>
-        <li>Japan: $\frac{\text{Yen } 78,00,000}{2.459} = ₹ 31,72,021$[cite: 8]</li>
-        <li>USA: $\frac{\text{US\$ } 1,02,300}{0.02156} = ₹ 47,44,898$[cite: 8]</li>
-        <li>Europe: $\frac{\text{Euro } 95,920}{0.0179} = ₹ 53,58,659$[cite: 8]</li>
-        <li>$$\text{Total Unhedged Sales} = ₹ 1,32,75,578$$[cite: 8]</li>
-        <li>$$\text{Contribution} = ₹ 1,32,75,578 - ₹ 1,07,30,000 = \mathbf{₹ 25,45,578}$$[cite: 8]</li>
-        <li>$$\text{Contribution to Sales Ratio} = \frac{₹ 25,45,578}{₹ 1,32,75,578} \times 100 = \mathbf{19.17\%}$$[cite: 8]</li>
+        <li>Japan: \\$\\frac{\\text{Yen } 78,00,000}{2.459} = ₹ 31,72,021\\$[cite: 8]</li>
+        <li>USA: \\$\\frac{\\text{US\\$ } 1,02,300}{0.02156} = ₹ 47,44,898\\$[cite: 8]</li>
+        <li>Europe: \\$\\frac{\\text{Euro } 95,920}{0.0179} = ₹ 53,58,659\\$[cite: 8]</li>
+        <li>$$\\text{Total Unhedged Sales} = ₹ 1,32,75,578$$[cite: 8]</li>
+        <li>$$\\text{Contribution} = ₹ 1,32,75,578 - ₹ 1,07,30,000 = \\mathbf{₹ 25,45,578}$$[cite: 8]</li>
+        <li>$$\\text{Contribution to Sales Ratio} = \\frac{₹ 25,45,578}{₹ 1,32,75,578} \\times 100 = \\mathbf{19.17\\%}$$[cite: 8]</li>
       </ul>
 
       <h4>Conclusion</h4>
@@ -11504,14 +11504,14 @@ const icaibookData = [
     // placement: 36,
     marks: 10,
     question_html: `
-      <p>EFD Ltd. is an Indian exporter with a receivable of US$ 10,000,000 due on April 1, 2015[cite: 8]. Market quotes on January 1, 2015 are[cite: 8]:</p>
+      <p>EFD Ltd. is an Indian exporter with a receivable of US\\$ 10,000,000 due on April 1, 2015[cite: 8]. Market quotes on January 1, 2015 are[cite: 8]:</p>
       <div style="overflow-x:auto;">
         <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
           <thead>
             <tr style="background-color:#f2f2f2;">
               <th style="padding:6px; border:1px solid #ddd;">Tenor</th>
-              <th style="padding:6px; border:1px solid #ddd;">Exchange Rates (US$ / INR)</th>
-              <th style="padding:6px; border:1px solid #ddd;">Currency Futures (US$ / INR)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Exchange Rates (US\\$ / INR)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Currency Futures (US\\$ / INR)</th>
               <th style="padding:6px; border:1px solid #ddd;">Initial Margin</th>
             </tr>
           </thead>
@@ -11526,27 +11526,27 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Alternative I: Forward Contract</h4>
-      <p>$$\text{Rupee Receipts} = \frac{\text{US\$ } 10,000,000}{0.016129} = \mathbf{₹ 62,00,01,240}$$[cite: 8]</p>
+      <p>$$\\text{Rupee Receipts} = \\frac{\\text{US\\$ } 10,000,000}{0.016129} = \\mathbf{₹ 62,00,01,240}$$[cite: 8]</p>
 
       <h4>2. Alternative II: Currency Futures</h4>
       <ul>
-        <li>Contract size in USD $= ₹ 24,816,975 \times 0.016118 = \text{US\$ } 4,00,000$[cite: 8]</li>
-        <li>$$\text{Number of Contracts to Short} = \frac{\text{US\$ } 10,000,000}{\text{US\$ } 4,00,000} = \mathbf{25 \text{ contracts}}$$[cite: 8]</li>
-        <li>Initial Margin deposited $= 25 \times ₹ 22,500 = ₹ 5,62,500$[cite: 8]</li>
+        <li>Contract size in USD \\$= ₹ 24,816,975 \\times 0.016118 = \\text{US\\$ } 4,00,000\\$[cite: 8]</li>
+        <li>$$\\text{Number of Contracts to Short} = \\frac{\\text{US\\$ } 10,000,000}{\\text{US\\$ } 4,00,000} = \\mathbf{25 \\text{ contracts}}$$[cite: 8]</li>
+        <li>Initial Margin deposited \\$= 25 \\times ₹ 22,500 = ₹ 5,62,500\\$[cite: 8]</li>
         <li>Financing cost on margin for 3 months @ 7%:
-          <br />$$₹ 5,62,500 \times 7\% \times \frac{3}{12} = ₹ 9,844$$[cite: 8]
+          <br />$$₹ 5,62,500 \\times 7\\% \\times \\frac{3}{12} = ₹ 9,844$$[cite: 8]
         </li>
         <li>Receipt on selling USD 10,000,000 in spot market on April 1:
-          <br />$$\frac{\text{US\$ } 10,00,000 \times 10}{0.016136} = ₹ 61,97,32,276$$[cite: 8]
+          <br />$$\\frac{\\text{US\\$ } 10,00,000 \\times 10}{0.016136} = ₹ 61,97,32,276$$[cite: 8]
         </li>
         <li>Variation Margin Gain on Futures Position:
-          <br />$$\frac{(0.016134 - 0.016118) \times 25 \times 24,816,975}{0.016136} = \frac{9,926.79}{0.016136} = ₹ 6,15,195$$[cite: 8]
+          <br />$$\\frac{(0.016134 - 0.016118) \\times 25 \\times 24,816,975}{0.016136} = \\frac{9,926.79}{0.016136} = ₹ 6,15,195$$[cite: 8]
         </li>
-        <li>$$\text{Net Realization} = ₹ 61,97,32,276 + ₹ 6,15,195 - ₹ 9,844 = \mathbf{₹ 62,03,37,627}$$[cite: 8]</li>
+        <li>$$\\text{Net Realization} = ₹ 61,97,32,276 + ₹ 6,15,195 - ₹ 9,844 = \\mathbf{₹ 62,03,37,627}$$[cite: 8]</li>
       </ul>
 
       <h4>3. Alternative III: No Hedge (Spot Realization on April 1)</h4>
-      <p>$$\text{Receipts} = \frac{\text{US\$ } 10,000,000}{0.016136} = \mathbf{₹ 61,97,32,276}$$[cite: 8]</p>
+      <p>$$\\text{Receipts} = \\frac{\\text{US\\$ } 10,000,000}{0.016136} = \\mathbf{₹ 61,97,32,276}$$[cite: 8]</p>
 
       <h4>Summary Evaluation</h4>
       <div style="overflow-x:auto;">
@@ -11577,42 +11577,42 @@ const icaibookData = [
     question_html: `
       <p>Given the following data:</p>
       <ul>
-        <li>Spot rate: 1 US $ = ₹ 48.0123</li>
-        <li>180 days Forward rate for 1 US $ = ₹ 48.8190</li>
+        <li>Spot rate: 1 US \\$ = ₹ 48.0123</li>
+        <li>180 days Forward rate for 1 US \\$ = ₹ 48.8190</li>
         <li>Annualized interest rate for 6 months &ndash; Rupee = 12%</li>
-        <li>Annualized interest rate for 6 months &ndash; US $ = 8%</li>
+        <li>Annualized interest rate for 6 months &ndash; US \\$ = 8%</li>
       </ul>
-      <p>Is there any arbitrage opportunity? If yes, how can an arbitrageur take advantage of the situation if he is willing to borrow ₹ 40,00,000 or US $ 83,312?</p>
+      <p>Is there any arbitrage opportunity? If yes, how can an arbitrageur take advantage of the situation if he is willing to borrow ₹ 40,00,000 or US \\$ 83,312?</p>
     `,
     solution_html: `
       <h4>1. Evaluation of Arbitrage Opportunity</h4>
       <ul>
-        <li>$$\text{Spot Rate} = \frac{₹ 40,00,000}{\text{US\$ } 83,312} = ₹ 48.0123 \text{ per USD}$$</li>
-        <li>$$\text{Forward Premium on USD} = \frac{48.8190 - 48.0123}{48.0123} \times \frac{12}{6} \times 100 = \frac{0.8067}{48.0123} \times 200 = \mathbf{3.36\% \text{ p.a.}}$$</li>
-        <li>$$\text{Interest Rate Differential } (r_{\text{INR}} - r_{\text{USD}}) = 12\% - 8\% = \mathbf{4.00\% \text{ p.a.}}$$[cite: 8]</li>
+        <li>$$\\text{Spot Rate} = \\frac{₹ 40,00,000}{\\text{US\\$ } 83,312} = ₹ 48.0123 \\text{ per USD}$$</li>
+        <li>$$\\text{Forward Premium on USD} = \\frac{48.8190 - 48.0123}{48.0123} \\times \\frac{12}{6} \\times 100 = \\frac{0.8067}{48.0123} \\times 200 = \\mathbf{3.36\\% \\text{ p.a.}}$$</li>
+        <li>$$\\text{Interest Rate Differential } (r_{\\text{INR}} - r_{\\text{USD}}) = 12\\% - 8\\% = \\mathbf{4.00\\% \\text{ p.a.}}$$[cite: 8]</li>
       </ul>
-      <p>Because the interest rate differential ($4.00\%$) is higher than the forward premium on the dollar ($3.36\%$), covered interest arbitrage inflow into India is profitable[cite: 8].</p>
+      <p>Because the interest rate differential (\\$4.00\\%\\$) is higher than the forward premium on the dollar (\\$3.36\\%\\$), covered interest arbitrage inflow into India is profitable[cite: 8].</p>
 
       <h4>2. Arbitrage Execution Steps</h4>
       <ol>
-        <li><strong>Borrow</strong> US$ 83,312 for 6 months at 8% p.a.[cite: 8]
-          <br />$$\text{Repayment Obligation at Month 6} = \text{US\$ } 83,312 \times \left(1 + 0.08 \times \frac{6}{12}\right) = \text{US\$ } 83,312 \times 1.04 = \mathbf{\text{US\$ } 86,644.48}$$[cite: 8]
+        <li><strong>Borrow</strong> US\\$ 83,312 for 6 months at 8% p.a.[cite: 8]
+          <br />$$\\text{Repayment Obligation at Month 6} = \\text{US\\$ } 83,312 \\times \\left(1 + 0.08 \\times \\frac{6}{12}\\right) = \\text{US\\$ } 83,312 \\times 1.04 = \\mathbf{\\text{US\\$ } 86,644.48}$$[cite: 8]
         </li>
-        <li><strong>Convert</strong> US$ 83,312 into Rupees at the spot rate of ₹ 48.0123:
-          <br />$$\text{Rupee Principal Realized} = \text{US\$ } 83,312 \times ₹ 48.0123 = \mathbf{₹ 40,00,000}$$[cite: 8]
+        <li><strong>Convert</strong> US\\$ 83,312 into Rupees at the spot rate of ₹ 48.0123:
+          <br />$$\\text{Rupee Principal Realized} = \\text{US\\$ } 83,312 \\times ₹ 48.0123 = \\mathbf{₹ 40,00,000}$$[cite: 8]
         </li>
         <li><strong>Invest</strong> ₹ 40,00,000 in India for 6 months at 12% p.a.[cite: 8]:
-          <br />$$\text{Interest Earned} = ₹ 40,00,000 \times 12\% \times \frac{6}{12} = ₹ 2,40,000$$[cite: 8]
-          <br />$$\text{Total Proceeds at Month 6} = ₹ 40,00,000 + ₹ 2,40,000 = \mathbf{₹ 42,40,000}$$[cite: 8]
+          <br />$$\\text{Interest Earned} = ₹ 40,00,000 \\times 12\\% \\times \\frac{6}{12} = ₹ 2,40,000$$[cite: 8]
+          <br />$$\\text{Total Proceeds at Month 6} = ₹ 40,00,000 + ₹ 2,40,000 = \\mathbf{₹ 42,40,000}$$[cite: 8]
         </li>
         <li><strong>Cover</strong> forward by selling INR proceeds at the forward rate of ₹ 48.8190:
-          <br />$$\text{USD Converted} = \frac{₹ 42,40,000}{₹ 48.8190} = \mathbf{\text{US\$ } 86,851.43}$$[cite: 8]
+          <br />$$\\text{USD Converted} = \\frac{₹ 42,40,000}{₹ 48.8190} = \\mathbf{\\text{US\\$ } 86,851.43}$$[cite: 8]
         </li>
       </ol>
 
       <h4>3. Net Arbitrage Profit</h4>
-      <p>$$\text{Profit in USD} = \text{US\$ } 86,851.43 - \text{US\$ } 86,644.48 = \mathbf{\text{US\$ } 206.95}$$[cite: 8]</p>
-      <p>$$\text{Profit in INR} = \text{US\$ } 206.95 \times ₹ 48.8190 = \mathbf{₹ 10,103}$$[cite: 8]</p>
+      <p>$$\\text{Profit in USD} = \\text{US\\$ } 86,851.43 - \\text{US\\$ } 86,644.48 = \\mathbf{\\text{US\\$ } 206.95}$$[cite: 8]</p>
+      <p>$$\\text{Profit in INR} = \\text{US\\$ } 206.95 \\times ₹ 48.8190 = \\mathbf{₹ 10,103}$$[cite: 8]</p>
     `
   },
   {
@@ -11633,29 +11633,29 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Evaluation of Forward Premium and Interest Differential</h4>
-      <p>$$\text{Forward Premium on DM} = \frac{0.670 - 0.665}{0.665} \times \frac{12}{3} \times 100 = \frac{0.005}{0.665} \times 400 = \mathbf{3.01\% \text{ p.a.}}$$[cite: 8]</p>
-      <p>$$\text{Interest Rate Differential } (r_{\text{Can\$}} - r_{\text{DM}}) = 9\% - 7\% = \mathbf{2.00\% \text{ p.a.}}$$[cite: 8]</p>
+      <p>$$\\text{Forward Premium on DM} = \\frac{0.670 - 0.665}{0.665} \\times \\frac{12}{3} \\times 100 = \\frac{0.005}{0.665} \\times 400 = \\mathbf{3.01\\% \\text{ p.a.}}$$[cite: 8]</p>
+      <p>$$\\text{Interest Rate Differential } (r_{\\text{Can\\$}} - r_{\\text{DM}}) = 9\\% - 7\\% = \\mathbf{2.00\\% \\text{ p.a.}}$$[cite: 8]</p>
       <p>Because the forward premium on the Deutschmark (3.01%) exceeds the interest rate differential (2.00%), it is profitable to borrow Canadian Dollars and invest in the currency with the lower interest rate (DM)[cite: 8].</p>
 
-      <h4>2. Arbitrage Operations (Assuming a base borrowing of Can$ 1,000)</h4>
+      <h4>2. Arbitrage Operations (Assuming a base borrowing of Can\\$ 1,000)</h4>
       <ol>
-        <li><strong>Borrow</strong> Can$ 1,000 for 3 months at 9% p.a.[cite: 8]
-          <br />$$\text{Repayment Obligation} = \text{Can\$ } 1,000 \times \left(1 + 0.09 \times \frac{3}{12}\right) = \text{Can\$ } 1,000 \times 1.0225 = \mathbf{\text{Can\$ } 1,022.50}$$[cite: 8]
+        <li><strong>Borrow</strong> Can\\$ 1,000 for 3 months at 9% p.a.[cite: 8]
+          <br />$$\\text{Repayment Obligation} = \\text{Can\\$ } 1,000 \\times \\left(1 + 0.09 \\times \\frac{3}{12}\\right) = \\text{Can\\$ } 1,000 \\times 1.0225 = \\mathbf{\\text{Can\\$ } 1,022.50}$$[cite: 8]
         </li>
-        <li><strong>Convert</strong> Can$ 1,000 into DM at the spot rate of 0.665:
-          <br />$$\text{DM Purchased} = \frac{\text{Can\$ } 1,000}{0.665} = \mathbf{\text{DM } 1,503.76}$$[cite: 8]
+        <li><strong>Convert</strong> Can\\$ 1,000 into DM at the spot rate of 0.665:
+          <br />$$\\text{DM Purchased} = \\frac{\\text{Can\\$ } 1,000}{0.665} = \\mathbf{\\text{DM } 1,503.76}$$[cite: 8]
         </li>
         <li><strong>Invest</strong> DM 1,503.76 for 3 months at 7% p.a.[cite: 8]:
-          <br />$$\text{Interest Earned} = \text{DM } 1,503.76 \times 0.07 \times \frac{3}{12} = \text{DM } 26.32$$[cite: 8]
-          <br />$$\text{Total Maturity Value} = \text{DM } 1,503.76 + \text{DM } 26.32 = \mathbf{\text{DM } 1,530.08}$$[cite: 8]
+          <br />$$\\text{Interest Earned} = \\text{DM } 1,503.76 \\times 0.07 \\times \\frac{3}{12} = \\text{DM } 26.32$$[cite: 8]
+          <br />$$\\text{Total Maturity Value} = \\text{DM } 1,503.76 + \\text{DM } 26.32 = \\mathbf{\\text{DM } 1,530.08}$$[cite: 8]
         </li>
-        <li><strong>Sell</strong> DM 1,530.08 forward for 3 months at the forward rate of Can$ 0.670 per DM:
-          <br />$$\text{Can\$ Proceeds} = \text{DM } 1,530.08 \times 0.670 = \mathbf{\text{Can\$ } 1,025.15}$$[cite: 8]
+        <li><strong>Sell</strong> DM 1,530.08 forward for 3 months at the forward rate of Can\\$ 0.670 per DM:
+          <br />$$\\text{Can\\$ Proceeds} = \\text{DM } 1,530.08 \\times 0.670 = \\mathbf{\\text{Can\\$ } 1,025.15}$$[cite: 8]
         </li>
       </ol>
 
       <h4>3. Net Arbitrage Profit</h4>
-      <p>$$\text{Net Gain} = \text{Can\$ } 1,025.15 - \text{Can\$ } 1,022.50 = \mathbf{\text{Can\$ } 2.65 \text{ per Can\$ 1,000 borrowed}}$$[cite: 8]</p>
+      <p>$$\\text{Net Gain} = \\text{Can\\$ } 1,025.15 - \\text{Can\\$ } 1,022.50 = \\mathbf{\\text{Can\\$ } 2.65 \\text{ per Can\\$ 1,000 borrowed}}$$[cite: 8]</p>
     `
   },
   {
@@ -11677,22 +11677,22 @@ const icaibookData = [
     solution_html: `
       <h4>1. Money Market Hedge Execution Steps</h4>
       <ol>
-        <li><strong>Borrow in Sterling (£):</strong> Borrow an amount of £ $x$ such that the principal plus 3 months' interest @ 5% p.a. equals the receivable of £ 500,000[cite: 8]:
-          <br />$$x \left(1 + 0.05 \times \frac{3}{12}\right) = 500,000 \implies x(1.0125) = 500,000$$[cite: 8]
-          <br />$$x = \frac{500,000}{1.0125} = \mathbf{£ 493,827.16 \approx £ 493,827}$$[cite: 8]
+        <li><strong>Borrow in Sterling (£):</strong> Borrow an amount of £ \\$x\\$ such that the principal plus 3 months' interest @ 5% p.a. equals the receivable of £ 500,000[cite: 8]:
+          <br />$$x \\left(1 + 0.05 \\times \\frac{3}{12}\\right) = 500,000 \\implies x(1.0125) = 500,000$$[cite: 8]
+          <br />$$x = \\frac{500,000}{1.0125} = \\mathbf{£ 493,827.16 \\approx £ 493,827}$$[cite: 8]
         </li>
         <li><strong>Convert at Spot:</strong> Sell borrowed sterling in the spot market @ ₹ 56.00 / £[cite: 8]:
-          <br />$$\text{Rupee Proceeds} = £ 493,827 \times ₹ 56.00 = \mathbf{₹ 2,76,54,312}$$[cite: 8]
+          <br />$$\\text{Rupee Proceeds} = £ 493,827 \\times ₹ 56.00 = \\mathbf{₹ 2,76,54,312}$$[cite: 8]
         </li>
         <li><strong>Invest in India:</strong> Deposit ₹ 2,76,54,312 in the Indian money market for 3 months @ 12% p.a.[cite: 8]:
-          <br />$$\text{Total Rupee Maturity Proceeds} = ₹ 2,76,54,312 \times \left(1 + 0.12 \times \frac{3}{12}\right) = ₹ 2,76,54,312 \times 1.03 = \mathbf{₹ 2,84,83,941}$$[cite: 8]
+          <br />$$\\text{Total Rupee Maturity Proceeds} = ₹ 2,76,54,312 \\times \\left(1 + 0.12 \\times \\frac{3}{12}\\right) = ₹ 2,76,54,312 \\times 1.03 = \\mathbf{₹ 2,84,83,941}$$[cite: 8]
         </li>
         <li><strong>Settle:</strong> Use the £ 500,000 export proceeds received at Month 3 to repay the UK bank borrowing completely[cite: 8].</li>
       </ol>
 
       <h4>2. Net Gain Evaluation</h4>
-      <p>$$\text{Value of Export at Current Spot} = £ 500,000 \times ₹ 56.00 = ₹ 2,80,00,000$$[cite: 8]</p>
-      <p>$$\text{Net Gain from Money Market Operation} = ₹ 2,84,83,941 - ₹ 2,80,00,000 = \mathbf{₹ 4,83,941}$$[cite: 8]</p>
+      <p>$$\\text{Value of Export at Current Spot} = £ 500,000 \\times ₹ 56.00 = ₹ 2,80,00,000$$[cite: 8]</p>
+      <p>$$\\text{Net Gain from Money Market Operation} = ₹ 2,84,83,941 - ₹ 2,80,00,000 = \\mathbf{₹ 4,83,941}$$[cite: 8]</p>
     `
   },
   {
@@ -11703,11 +11703,11 @@ const icaibookData = [
     // placement: 40,
     marks: 8,
     question_html: `
-      <p>A UK-based exporter has an invoice amount of $ 3,50,000 with a credit period of 3 months[cite: 8]. Market rates in London are[cite: 8]:</p>
+      <p>A UK-based exporter has an invoice amount of \\$ 3,50,000 with a credit period of 3 months[cite: 8]. Market rates in London are[cite: 8]:</p>
       <ul>
-        <li>Spot Rate ($ / £): 1.5865 &ndash; 1.5905[cite: 8]</li>
-        <li>3-Month Forward Rate ($ / £): 1.6100 &ndash; 1.6140[cite: 8]</li>
-        <li>US $ Interest Rates: Deposit = 7% p.a.; Loan = 9% p.a.[cite: 8]</li>
+        <li>Spot Rate (\\$ / £): 1.5865 &ndash; 1.5905[cite: 8]</li>
+        <li>3-Month Forward Rate (\\$ / £): 1.6100 &ndash; 1.6140[cite: 8]</li>
+        <li>US \\$ Interest Rates: Deposit = 7% p.a.; Loan = 9% p.a.[cite: 8]</li>
         <li>UK £ Interest Rates: Deposit = 5% p.a.; Loan = 8% p.a.[cite: 8]</li>
       </ul>
       <p>Compute and show how a money market hedge can be put in place, and compare the outcome with a forward contract[cite: 8].</p>
@@ -11715,24 +11715,24 @@ const icaibookData = [
     solution_html: `
       <h4>1. Money Market Hedge Strategy</h4>
       <ul>
-        <li><strong>Step 1 (Borrow USD):</strong> Borrow an amount in USD such that principal plus 3 months' interest @ 9% p.a. (2.25% per quarter) equals $ 3,50,000[cite: 8]:
-          <br />$$\text{USD Borrowed} = \frac{\$ 3,50,000}{1 + \left(0.09 \times \frac{3}{12}\right)} = \frac{\$ 3,50,00,000 \times 10^{-2}}{1.0225} = \mathbf{\$ 3,42,298.29}$$[cite: 8]
+        <li><strong>Step 1 (Borrow USD):</strong> Borrow an amount in USD such that principal plus 3 months' interest @ 9% p.a. (2.25% per quarter) equals \\$ 3,50,000[cite: 8]:
+          <br />$$\\text{USD Borrowed} = \\frac{\\$ 3,50,000}{1 + \\left(0.09 \\times \\frac{3}{12}\\right)} = \\frac{\\$ 3,50,00,000 \\times 10^{-2}}{1.0225} = \\mathbf{\\$ 3,42,298.29}$$[cite: 8]
         </li>
-        <li><strong>Step 2 (Convert to GBP Spot):</strong> Sell USD and buy GBP at the spot ask rate of 1.5905 $/£[cite: 8]:
-          <br />$$\text{GBP Received} = \frac{\$ 3,42,298.29}{1.5905} = \mathbf{£ 2,15,214.27}$$[cite: 8]
+        <li><strong>Step 2 (Convert to GBP Spot):</strong> Sell USD and buy GBP at the spot ask rate of 1.5905 \\$/£[cite: 8]:
+          <br />$$\\text{GBP Received} = \\frac{\\$ 3,42,298.29}{1.5905} = \\mathbf{£ 2,15,214.27}$$[cite: 8]
         </li>
         <li><strong>Step 3 (Deposit in GBP):</strong> Place £ 2,15,214.27 on deposit for 3 months @ 5% p.a. (1.25% per quarter)[cite: 8]:
-          <br />$$\text{Maturity Value in GBP} = £ 2,15,214.27 \times \left(1 + 0.05 \times \frac{3}{12}\right) = £ 2,15,214.27 \times 1.0125 = \mathbf{£ 2,17,904.45}$$[cite: 8]
+          <br />$$\\text{Maturity Value in GBP} = £ 2,15,214.27 \\times \\left(1 + 0.05 \\times \\frac{3}{12}\\right) = £ 2,15,214.27 \\times 1.0125 = \\mathbf{£ 2,17,904.45}$$[cite: 8]
         </li>
-        <li><strong>Step 4 (Settlement):</strong> The incoming customer remittance of $ 3,50,000 settles the dollar borrowing completely[cite: 8].</li>
+        <li><strong>Step 4 (Settlement):</strong> The incoming customer remittance of \\$ 3,50,000 settles the dollar borrowing completely[cite: 8].</li>
       </ul>
 
       <h4>2. Forward Contract Hedge</h4>
-      <p>Sell $ 3,50,000 at the 3-month forward ask rate of 1.6140 $/£[cite: 8]:</p>
-      <p>$$\text{GBP Proceeds Under Forward Cover} = \frac{\$ 3,50,000}{1.6140} = \mathbf{£ 2,16,852.54}$$[cite: 8]</p>
+      <p>Sell \\$ 3,50,000 at the 3-month forward ask rate of 1.6140 \\$/£[cite: 8]:</p>
+      <p>$$\\text{GBP Proceeds Under Forward Cover} = \\frac{\\$ 3,50,000}{1.6140} = \\mathbf{£ 2,16,852.54}$$[cite: 8]</p>
 
       <h4>3. Comparison and Conclusion</h4>
-      <p>$$\text{Gain from Money Market Hedge over Forward Cover} = £ 2,17,904.45 - £ 2,16,852.54 = \mathbf{£ 1,051.91}$$[cite: 8]</p>
+      <p>$$\\text{Gain from Money Market Hedge over Forward Cover} = £ 2,17,904.45 - £ 2,16,852.54 = \\mathbf{£ 1,051.91}$$[cite: 8]</p>
       <p>The <strong>Money Market Hedge is more beneficial</strong> for the exporter[cite: 8].</p>
     `
   },
@@ -11748,23 +11748,23 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Formula under Relative Purchasing Power Parity</h4>
-      <p>$$E(S_t) = S_0 \times \left[\frac{1 + I_{\text{domestic}}}{1 + I_{\text{foreign}}}\right]^t$$[cite: 8]</p>
-      <p>Where $S_0 = ₹ 46.00$, $I_{\text{domestic}} = 0.08$, and $I_{\text{foreign}} = 0.04$[cite: 8].</p>
+      <p>$$E(S_t) = S_0 \\times \\left[\\frac{1 + I_{\\text{domestic}}}{1 + I_{\\text{foreign}}}\\right]^t$$[cite: 8]</p>
+      <p>Where \\$S_0 = ₹ 46.00\\$, \\$I_{\\text{domestic}} = 0.08\\$, and \\$I_{\\text{foreign}} = 0.04\\$[cite: 8].</p>
 
       <h4>2. Year-by-Year Forecasts</h4>
       <ul>
         <li><strong>After Year 1:</strong>
-          <br />$$E(S_1) = ₹ 46.00 \times \frac{1.08}{1.04} = ₹ 46.00 \times 1.03846 = \mathbf{₹ 47.77 \text{ per USD}}$$[cite: 8]
+          <br />$$E(S_1) = ₹ 46.00 \\times \\frac{1.08}{1.04} = ₹ 46.00 \\times 1.03846 = \\mathbf{₹ 47.77 \\text{ per USD}}$$[cite: 8]
         </li>
         <li><strong>After Year 2:</strong>
-          <br />$$E(S_2) = ₹ 47.77 \times \frac{1.08}{1.04} = \mathbf{₹ 49.61 \text{ per USD}}$$[cite: 8]
+          <br />$$E(S_2) = ₹ 47.77 \\times \\frac{1.08}{1.04} = \\mathbf{₹ 49.61 \\text{ per USD}}$$[cite: 8]
         </li>
         <li><strong>After Year 3:</strong>
-          <br />$$E(S_3) = ₹ 49.61 \times \frac{1.08}{1.04} = \mathbf{₹ 51.52 \text{ per USD}}$$[cite: 8]
+          <br />$$E(S_3) = ₹ 49.61 \\times \\frac{1.08}{1.04} = \\mathbf{₹ 51.52 \\text{ per USD}}$$[cite: 8]
         </li>
         <li><strong>After Year 4:</strong>
-          <br />$$E(S_4) = ₹ 51.52 \times \frac{1.08}{1.04} = \mathbf{₹ 53.50 \text{ per USD}}$$[cite: 8]
-          <br /><small><em>(Directly: $46.00 \times (1.0384615)^4 = 46.00 \times 1.16301 = \mathbf{₹ 53.50}$)</em></small>[cite: 8]
+          <br />$$E(S_4) = ₹ 51.52 \\times \\frac{1.08}{1.04} = \\mathbf{₹ 53.50 \\text{ per USD}}$$[cite: 8]
+          <br /><small><em>(Directly: \\$46.00 \\times (1.0384615)^4 = 46.00 \\times 1.16301 = \\mathbf{₹ 53.50}\\$)</em></small>[cite: 8]
         </li>
       </ul>
     `
@@ -11777,19 +11777,19 @@ const icaibookData = [
     // placement: 42,
     marks: 4,
     question_html: `
-      <p>On April 1, 3-month interest rates in UK (£) and US ($) are 7.5% and 3.5% p.a. respectively[cite: 8]. The UK £ / US $ spot rate is 0.7570[cite: 8]. What would be the forward rate for US $ for delivery on 30th June?[cite: 8]</p>
+      <p>On April 1, 3-month interest rates in UK (£) and US (\\$) are 7.5\\% and 3.5\\% p.a. respectively[cite: 8]. The UK £ / US \\$ spot rate is 0.7570[cite: 8]. What would be the forward rate for US \\$ for delivery on 30th June?[cite: 8]</p>
     `,
     solution_html: `
       <h4>Formula (Interest Rate Parity)</h4>
-      <p>$$F = S_0 \times \frac{1 + r_£ \times (3/12)}{1 + r_{\$} \times (3/12)}$$[cite: 8]</p>
+      <p>$$F = S_0 \\times \\frac{1 + r_£ \\times (3/12)}{1 + r_{\\$} \\times (3/12)}$$[cite: 8]</p>
 
       <h4>Computation</h4>
       <ul>
-        <li>3-Month UK Rate: $7.5\% \times \frac{3}{12} = 1.875\%$[cite: 8]</li>
-        <li>3-Month US Rate: $3.5\% \times \frac{3}{12} = 0.875\%$[cite: 8]</li>
+        <li>3-Month UK Rate: \\$7.5\\% \\times \\frac{3}{12} = 1.875\\%\\$[cite: 8]</li>
+        <li>3-Month US Rate: \\$3.5\\% \\times \\frac{3}{12} = 0.875\\%\\$[cite: 8]</li>
       </ul>
-      <p>$$F = 0.7570 \times \frac{1 + 0.01875}{1 + 0.00875} = 0.7570 \times \frac{1.01875}{1.00875}$$[cite: 8]</p>
-      <p>$$F = 0.7570 \times 1.009913 = \mathbf{£ 0.7645 \text{ per US\$}}$$[cite: 8]</p>
+      <p>$$F = 0.7570 \\times \\frac{1 + 0.01875}{1 + 0.00875} = 0.7570 \\times \\frac{1.01875}{1.00875}$$[cite: 8]</p>
+      <p>$$F = 0.7570 \\times 1.009913 = \\mathbf{£ 0.7645 \\text{ per US\\$}}$$[cite: 8]</p>
     `
   },
   {
@@ -11800,7 +11800,7 @@ const icaibookData = [
     // placement: 43,
     marks: 6,
     question_html: `
-      <p>An importer requests his bank to extend a forward contract for US$ 20,000 due for maturity on 30th October 2010 for a further period of 3 months[cite: 8]. Contracted Rate: US$ 1 = ₹ 42.32[cite: 8].</p>
+      <p>An importer requests his bank to extend a forward contract for US\\$ 20,000 due for maturity on 30th October 2010 for a further period of 3 months[cite: 8]. Contracted Rate: US\\$ 1 = ₹ 42.32[cite: 8].</p>
       <p>Market quotes on 30.10.2010[cite: 8]:</p>
       <ul>
         <li>Spot: ₹ 41.5000 / 41.5200[cite: 8]</li>
@@ -11813,15 +11813,15 @@ const icaibookData = [
       <h4>(i) Cost of Extension to the Importer</h4>
       <p>The original forward sale contract is cancelled on the due date by purchasing spot from the customer at the spot buying rate less margin[cite: 8]:</p>
       <ul>
-        <li>Spot Buying Rate $= ₹ 41.5000$[cite: 8]</li>
-        <li>Less: Margin @ 0.075% $= 0.075\% \times ₹ 41.5000 = ₹ 0.031125$[cite: 8]</li>
-        <li>Cancellation Buying Rate $= ₹ 41.5000 - ₹ 0.0311 = ₹ 41.4689 \rightarrow \mathbf{₹ 41.4700}$[cite: 8]</li>
+        <li>Spot Buying Rate \\$= ₹ 41.5000\\$[cite: 8]</li>
+        <li>Less: Margin @ 0.075% \\$= 0.075\\% \\times ₹ 41.5000 = ₹ 0.031125\\$[cite: 8]</li>
+        <li>Cancellation Buying Rate \\$= ₹ 41.5000 - ₹ 0.0311 = ₹ 41.4689 \rightarrow \\mathbf{₹ 41.4700}\\$[cite: 8]</li>
       </ul>
       <div style="overflow-x:auto;">
         <table border="1" style="width:100%; border-collapse:collapse; text-align:left; margin:10px 0;">
           <tbody>
-            <tr><td>Payable by customer at contracted rate ($20,000 \times ₹ 42.32$)</td><td style="text-align:right;">₹ 8,46,400.00[cite: 8]</td></tr>
-            <tr><td>Less: Credited to customer at cancellation rate ($20,000 \times ₹ 41.47$)</td><td style="text-align:right;">(₹ 8,29,400.00)[cite: 8]</td></tr>
+            <tr><td>Payable by customer at contracted rate (\\$20,000 \\times ₹ 42.32\\$)</td><td style="text-align:right;">₹ 8,46,400.00[cite: 8]</td></tr>
+            <tr><td>Less: Credited to customer at cancellation rate (\\$20,000 \\times ₹ 41.47\\$)</td><td style="text-align:right;">(₹ 8,29,400.00)[cite: 8]</td></tr>
             <tr style="font-weight:bold; background-color:#f9f9f9;">
               <td>Net Cost to Importer on Extension</td>
               <td style="text-align:right;"><strong>₹ 17,000.00</strong>[cite: 8]</td>
@@ -11833,11 +11833,11 @@ const icaibookData = [
       <h4>(ii) Rate of New 3-Month Forward Contract</h4>
       <p>The contract is rebooked at the 3-month forward selling rate plus selling margin[cite: 8]:</p>
       <ul>
-        <li>Spot Selling Rate $= ₹ 41.5200$[cite: 8]</li>
-        <li>Add: 3 Months' Premium @ 0.93% $= 0.93\% \times ₹ 41.5200 = ₹ 0.3861$[cite: 8]</li>
-        <li>Forward Base Rate $= ₹ 41.5200 + ₹ 0.3861 = ₹ 41.9061$[cite: 8]</li>
-        <li>Add: Selling Margin @ 0.20% $= 0.20\% \times ₹ 41.9061 = ₹ 0.0838$[cite: 8]</li>
-        <li>$$\text{New Forward Rate} = ₹ 41.9061 + ₹ 0.0838 = ₹ 41.9899 \rightarrow \mathbf{₹ 41.9900 \text{ per US\$}}$$[cite: 8]</li>
+        <li>Spot Selling Rate \\$= ₹ 41.5200\\$[cite: 8]</li>
+        <li>Add: 3 Months' Premium @ 0.93% \\$= 0.93\\% \\times ₹ 41.5200 = ₹ 0.3861\\$[cite: 8]</li>
+        <li>Forward Base Rate \\$= ₹ 41.5200 + ₹ 0.3861 = ₹ 41.9061\\$[cite: 8]</li>
+        <li>Add: Selling Margin @ 0.20% \\$= 0.20\\% \\times ₹ 41.9061 = ₹ 0.0838\\$[cite: 8]</li>
+        <li>$$\\text{New Forward Rate} = ₹ 41.9061 + ₹ 0.0838 = ₹ 41.9899 \rightarrow \\mathbf{₹ 41.9900 \\text{ per US\\$}}$$[cite: 8]</li>
       </ul>
     `
   },
@@ -11861,24 +11861,24 @@ const icaibookData = [
     solution_html: `
       <h4>1. Alternative I: Forward Market Cover</h4>
       <p>To acquire Yen against INR, the bank buys INR and sells JY at the forward bid rate of 1.9726 JY/INR[cite: 8]:</p>
-      <p>$$\text{Rupee Cost per JY} = \frac{1}{1.9726} = ₹ 0.506945 \approx ₹ 0.5070$$[cite: 8]</p>
-      <p>$$\text{Total Outflow in INR} = \frac{\text{JY } 5,00,000}{1.9726} = \mathbf{₹ 2,53,473 \approx ₹ 2,53,500}$$[cite: 8]</p>
+      <p>$$\\text{Rupee Cost per JY} = \\frac{1}{1.9726} = ₹ 0.506945 \\approx ₹ 0.5070$$[cite: 8]</p>
+      <p>$$\\text{Total Outflow in INR} = \\frac{\\text{JY } 5,00,000}{1.9726} = \\mathbf{₹ 2,53,473 \\approx ₹ 2,53,500}$$[cite: 8]</p>
 
       <h4>2. Alternative II: Currency Option Cover</h4>
       <p>To hedge a Yen payable, the firm purchases a <strong>Put Option on INR</strong> (giving the right to sell INR and buy Yen) at the strike of JY 2.125 / INR[cite: 8]:</p>
       <ul>
         <li>Principal INR required at strike:
-          <br />$$\frac{\text{JY } 5,00,000}{2.125} = \mathbf{₹ 2,35,294.12}$$[cite: 8]
+          <br />$$\\frac{\\text{JY } 5,00,000}{2.125} = \\mathbf{₹ 2,35,294.12}$$[cite: 8]
         </li>
         <li>Put Option Premium payable today @ JY 0.098 per INR:
-          <br />$$\text{Total Premium in JY} = ₹ 2,35,294.12 \times \text{JY } 0.098 = \text{JY } 23,058.82$$[cite: 8]
-          <br />$$\text{Premium Cost in INR (at spot bid 1.9516)} = \frac{\text{JY } 23,058.82}{1.9516} = \mathbf{₹ 11,815.34}$$[cite: 8]
+          <br />$$\\text{Total Premium in JY} = ₹ 2,35,294.12 \\times \\text{JY } 0.098 = \\text{JY } 23,058.82$$[cite: 8]
+          <br />$$\\text{Premium Cost in INR (at spot bid 1.9516)} = \\frac{\\text{JY } 23,058.82}{1.9516} = \\mathbf{₹ 11,815.34}$$[cite: 8]
         </li>
-        <li>$$\text{Total Rupee Outflow under Option Cover} = ₹ 2,35,294.12 + ₹ 11,815.34 = \mathbf{₹ 2,47,109.46 \approx ₹ 2,47,109}$$[cite: 8]</li>
+        <li>$$\\text{Total Rupee Outflow under Option Cover} = ₹ 2,35,294.12 + ₹ 11,815.34 = \\mathbf{₹ 2,47,109.46 \\approx ₹ 2,47,109}$$[cite: 8]</li>
       </ul>
 
       <h4>Recommendation</h4>
-      <p>The <strong>Currency Option Cover is cheaper</strong> by <strong>₹ 6,391</strong> ($₹ 2,53,500 - ₹ 2,47,109$) and retains the upside potential if the Rupee strengthens beyond JY 2.125[cite: 8].</p>
+      <p>The <strong>Currency Option Cover is cheaper</strong> by <strong>₹ 6,391</strong> (\\$₹ 2,53,500 - ₹ 2,47,109\\$) and retains the upside potential if the Rupee strengthens beyond JY 2.125[cite: 8].</p>
     `
   },
   {
@@ -11889,28 +11889,28 @@ const icaibookData = [
     // placement: 45,
     marks: 6,
     question_html: `
-      <p>ABC Technologic is expecting to receive US$ 4,00,000 after 3 months and hedges using futures contracts (standard lot: $ 1,000)[cite: 8]. Current spot and 3-month futures quote at ₹ 44.00 and ₹ 45.00 respectively[cite: 8].</p>
+      <p>ABC Technologic is expecting to receive US\\$ 4,00,000 after 3 months and hedges using futures contracts (standard lot: \\$ 1,000)[cite: 8]. Current spot and 3-month futures quote at ₹ 44.00 and ₹ 45.00 respectively[cite: 8].</p>
       <p>After 3 months, the company closes its position when both futures and spot quote at ₹ 44.50[cite: 8]. Calculate the effective realization per dollar and the hedging benefit[cite: 8].</p>
     `,
     solution_html: `
       <h4>1. Futures Hedging Strategy</h4>
       <ul>
-        <li>$$\text{Number of Contracts to Sell} = \frac{\text{US\$ } 4,00,000}{\$ 1,000} = \mathbf{400 \text{ contracts}}$$[cite: 8]</li>
+        <li>$$\\text{Number of Contracts to Sell} = \\frac{\\text{US\\$ } 4,00,000}{\\$ 1,000} = \\mathbf{400 \\text{ contracts}}$$[cite: 8]</li>
         <li>Gain on Futures Position:
-          <br />$$400 \times \$ 1,000 \times (₹ 45.00 - ₹ 44.50) = 4,00,000 \times ₹ 0.50 = \mathbf{₹ 2,00,000}$$[cite: 8]
+          <br />$$400 \\times \\$ 1,000 \\times (₹ 45.00 - ₹ 44.50) = 4,00,000 \\times ₹ 0.50 = \\mathbf{₹ 2,00,000}$$[cite: 8]
         </li>
       </ul>
 
       <h4>2. Total Realization and Effective Rate</h4>
       <ul>
-        <li>Spot realization from export remittance ($4,00,000 \times ₹ 44.50$) $= ₹ 1,78,00,000$[cite: 8]</li>
-        <li>Add: Profit from futures hedge $= ₹ 2,00,000$[cite: 8]</li>
-        <li>$$\text{Total Net Inflow} = ₹ 1,78,00,000 + ₹ 2,00,000 = \mathbf{₹ 1,80,00,000}$$[cite: 8]</li>
-        <li>$$\text{Effective Realization per US\$} = \frac{₹ 1,80,00,000}{\text{US\$ } 4,00,000} = \mathbf{₹ 45.00 \text{ per US\$}}$$[cite: 8]</li>
+        <li>Spot realization from export remittance (\\$4,00,000 \\times ₹ 44.50\\$) \\$= ₹ 1,78,00,000\\$[cite: 8]</li>
+        <li>Add: Profit from futures hedge \\$= ₹ 2,00,000\\$[cite: 8]</li>
+        <li>$$\\text{Total Net Inflow} = ₹ 1,78,00,000 + ₹ 2,00,000 = \\mathbf{₹ 1,80,00,000}$$[cite: 8]</li>
+        <li>$$\\text{Effective Realization per US\\$} = \\frac{₹ 1,80,00,000}{\\text{US\\$ } 4,00,000} = \\mathbf{₹ 45.00 \\text{ per US\\$}}$$[cite: 8]</li>
       </ul>
 
       <h4>3. Benefit of Hedging</h4>
-      <p>$$\text{Benefit} = \text{Futures Profit} = \mathbf{₹ 2,00,000}$$[cite: 8]</p>
+      <p>$$\\text{Benefit} = \\text{Futures Profit} = \\mathbf{₹ 2,00,000}$$[cite: 8]</p>
       <p>Without the hedge, the firm would have received only ₹ 44.50 per dollar; hedging locked in the original futures price of ₹ 45.00[cite: 8].</p>
     `
   },
@@ -11922,9 +11922,9 @@ const icaibookData = [
     // placement: 46,
     marks: 6,
     question_html: `
-      <p>Gibraltar Limited imported 5,000 bottles of shampoo at a landed cost of US $ 20 each[cite: 8]. The company can pay immediately or in 3 months' time[cite: 8]. It has a clean overdraft facility at 14% p.a.[cite: 8] Market quotes[cite: 8]:</p>
+      <p>Gibraltar Limited imported 5,000 bottles of shampoo at a landed cost of US \\$ 20 each[cite: 8]. The company can pay immediately or in 3 months' time[cite: 8]. It has a clean overdraft facility at 14% p.a.[cite: 8] Market quotes[cite: 8]:</p>
       <ul>
-        <li>Mumbai ₹ / $ spot: 60.25 &ndash; 60.55[cite: 8]</li>
+        <li>Mumbai ₹ / \\$ spot: 60.25 &ndash; 60.55[cite: 8]</li>
         <li>3 months swap points: 35 / 25[cite: 8]</li>
       </ul>
       <p>Calculate which method is cheaper[cite: 8]:</p>
@@ -11934,31 +11934,31 @@ const icaibookData = [
       </ol>
     `,
     solution_html: `
-      <p>$$\text{Principal Payable} = 5,000 \text{ bottles} \times \$ 20 = \mathbf{\$ 1,00,000}$$[cite: 8]</p>
+      <p>$$\\text{Principal Payable} = 5,000 \\text{ bottles} \\times \\$ 20 = \\mathbf{\\$ 1,00,000}$$[cite: 8]</p>
 
       <h4>Option (i): Pay in 3 Months with Supplier Interest and Forward Cover</h4>
       <ul>
         <li>Interest for 3 months @ 10% p.a.:
-          <br />$$\$ 1,00,000 \times 10\% \times \frac{3}{12} = \$ 2,500$$[cite: 8]
+          <br />$$\\$ 1,00,000 \\times 10\\% \\times \\frac{3}{12} = \\$ 2,500$$[cite: 8]
         </li>
-        <li>Total USD payable at Month 3 $= \$ 1,02,500$[cite: 8]</li>
+        <li>Total USD payable at Month 3 \\$= \\$ 1,02,500\\$[cite: 8]</li>
         <li>Swap points are descending (35/25), indicating the dollar is at a <strong>discount</strong>[cite: 8]:
-          <br />$$\text{3-Month Forward Ask Rate} = 60.55 - 0.25 = \mathbf{₹ 60.30}$$[cite: 8]
+          <br />$$\\text{3-Month Forward Ask Rate} = 60.55 - 0.25 = \\mathbf{₹ 60.30}$$[cite: 8]
         </li>
-        <li>$$\text{Total Rupee Outflow} = \$ 1,02,500 \times ₹ 60.30 = \mathbf{₹ 61,80,750}$$[cite: 8]</li>
+        <li>$$\\text{Total Rupee Outflow} = \\$ 1,02,500 \\times ₹ 60.30 = \\mathbf{₹ 61,80,750}$$[cite: 8]</li>
       </ul>
 
       <h4>Option (ii): Settle Immediately Using Bank Overdraft</h4>
       <ul>
-        <li>Spot purchase cost @ ₹ 60.55 $= \$ 1,00,000 \times ₹ 60.55 = ₹ 60,55,000$[cite: 8]</li>
+        <li>Spot purchase cost @ ₹ 60.55 \\$= \\$ 1,00,000 \\times ₹ 60.55 = ₹ 60,55,000\\$[cite: 8]</li>
         <li>Overdraft interest for 3 months @ 14% p.a.:
-          <br />$$₹ 60,55,000 \times 14\% \times \frac{3}{12} = ₹ 2,11,925$$[cite: 8]
+          <br />$$₹ 60,55,000 \\times 14\\% \\times \\frac{3}{12} = ₹ 2,11,925$$[cite: 8]
         </li>
-        <li>$$\text{Total Rupee Outflow} = ₹ 60,55,000 + ₹ 2,11,925 = \mathbf{₹ 62,66,925}$$[cite: 8]</li>
+        <li>$$\\text{Total Rupee Outflow} = ₹ 60,55,000 + ₹ 2,11,925 = \\mathbf{₹ 62,66,925}$$[cite: 8]</li>
       </ul>
 
       <h4>Conclusion</h4>
-      <p><strong>Option (i) is cheaper</strong> by <strong>₹ 86,175</strong> ($₹ 62,66,925 - ₹ 61,80,750$) and should be preferred[cite: 8].</p>
+      <p><strong>Option (i) is cheaper</strong> by <strong>₹ 86,175</strong> (\\$₹ 62,66,925 - ₹ 61,80,750\\$) and should be preferred[cite: 8].</p>
     `
   },
   {
@@ -11969,44 +11969,44 @@ const icaibookData = [
     // placement: 47,
     marks: 8,
     question_html: `
-      <p>An American firm is under obligation to pay interest of Can$ 1,010,000 on 31st July and Can$ 705,000 on 30th September (current date: June 30)[cite: 8]. The firm is risk-averse and evaluates forward contracts vs. options[cite: 8].</p>
-      <p>Quotes (US$ per Can$)[cite: 8]:</p>
+      <p>An American firm is under obligation to pay interest of Can\\$ 1,010,000 on 31st July and Can\\$ 705,000 on 30th September (current date: June 30)[cite: 8]. The firm is risk-averse and evaluates forward contracts vs. options[cite: 8].</p>
+      <p>Quotes (US\\$ per Can\\$)[cite: 8]:</p>
       <ul>
         <li>Spot: 0.9284 &ndash; 0.9288; 1-Month Forward: 0.9501; 3-Months Forward: 0.9556[cite: 8]</li>
         <li>Call Option Strike 0.94 (July expiry): 1.02 cents; Call Option Strike 0.95 (Sept expiry): 1.64 cents[cite: 8]</li>
-        <li>Contract size: Can$ 50,000; uncovered portion covered at forward rate[cite: 8].</li>
+        <li>Contract size: Can\\$ 50,000; uncovered portion covered at forward rate[cite: 8].</li>
       </ul>
       <p>Recommend which hedging method is appropriate for the American firm[cite: 8].</p>
     `,
     solution_html: `
       <h4>1. Method I: Forward Market Cover</h4>
       <ul>
-        <li>July 31 Payment: $\text{Can\$ } 1,010,000 \times 0.9501 = \mathbf{\text{US\$ } 9,59,601}$[cite: 8]</li>
-        <li>September 30 Payment: $\text{Can\$ } 705,000 \times 0.9556 = \mathbf{\text{US\$ } 6,73,698}$[cite: 8]</li>
-        <li>$$\text{Total Outflow under Forward Cover} = \$ 9,59,601 + \$ 6,73,698 = \mathbf{\text{US\$ } 1,633,299}$$</li>
+        <li>July 31 Payment: \\$\\text{Can\\$ } 1,010,000 \\times 0.9501 = \\mathbf{\\text{US\\$ } 9,59,601}\\$[cite: 8]</li>
+        <li>September 30 Payment: \\$\\text{Can\\$ } 705,000 \\times 0.9556 = \\mathbf{\\text{US\\$ } 6,73,698}\\$[cite: 8]</li>
+        <li>$$\\text{Total Outflow under Forward Cover} = \\$ 9,59,601 + \\$ 6,73,698 = \\mathbf{\\text{US\\$ } 1,633,299}$$</li>
       </ul>
 
       <h4>2. Method II: Currency Option Contracts</h4>
       <ul>
-        <li><strong>July Commitment (Can$ 1,010,000):</strong>
-          <br />Number of full contracts: $\frac{1,010,000}{50,000} = 20.20 \implies \mathbf{20 \text{ contracts}}$ ($20 \times 50,000 = \text{Can\$ } 1,000,000$)[cite: 8]
-          <br />Cost under exercised option ($1,000,000 \times \$ 0.94$) $= \$ 9,40,000$[cite: 8]
-          <br />Remainder Can$ 10,000 covered at forward rate ($10,000 \times 0.9501$) $= \$ 9,501$[cite: 8]
-          <br />Upfront Premium paid ($1,000,000 \times \$ 0.0102$) $= \$ 10,200$[cite: 8]
-          <br />$$\text{Total July Outflow} = 9,40,000 + 9,501 + 10,200 = \mathbf{\text{US\$ } 9,59,701}$$[cite: 8]
+        <li><strong>July Commitment (Can\\$ 1,010,000):</strong>
+          <br />Number of full contracts: \\$\\frac{1,010,000}{50,000} = 20.20 \\implies \\mathbf{20 \\text{ contracts}}\\$ (\\$20 \\times 50,000 = \\text{Can\\$ } 1,000,000\\$)[cite: 8]
+          <br />Cost under exercised option (\\$1,000,000 \\times \\$ 0.94\\$) \\$= \\$ 9,40,000\\$[cite: 8]
+          <br />Remainder Can\\$ 10,000 covered at forward rate (\\$10,000 \\times 0.9501\\$) \\$= \\$ 9,501\\$[cite: 8]
+          <br />Upfront Premium paid (\\$1,000,000 \\times \\$ 0.0102\\$) \\$= \\$ 10,200\\$[cite: 8]
+          <br />$$\\text{Total July Outflow} = 9,40,000 + 9,501 + 10,200 = \\mathbf{\\text{US\\$ } 9,59,701}$$[cite: 8]
         </li>
-        <li><strong>September Commitment (Can$ 705,000):</strong>
-          <br />Number of full contracts: $\frac{705,000}{50,000} = 14.10 \implies \mathbf{14 \text{ contracts}}$ ($14 \times 50,000 = \text{Can\$ } 700,000$)[cite: 8]
-          <br />Cost under exercised option ($700,000 \times \$ 0.95$) $= \$ 6,65,000$[cite: 8]
-          <br />Remainder Can$ 5,000 covered at forward rate ($5,000 \times 0.9556$) $= \$ 4,778$[cite: 8]
-          <br />Upfront Premium paid ($700,000 \times \$ 0.0164$) $= \$ 11,480$[cite: 8]
-          <br />$$\text{Total September Outflow} = 6,65,000 + 4,778 + 11,480 = \mathbf{\text{US\$ } 6,81,258}$$[cite: 8]
+        <li><strong>September Commitment (Can\\$ 705,000):</strong>
+          <br />Number of full contracts: \\$\\frac{705,000}{50,000} = 14.10 \\implies \\mathbf{14 \\text{ contracts}}\\$ (\\$14 \\times 50,000 = \\text{Can\\$ } 700,000\\$)[cite: 8]
+          <br />Cost under exercised option (\\$700,000 \\times \\$ 0.95\\$) \\$= \\$ 6,65,000\\$[cite: 8]
+          <br />Remainder Can\\$ 5,000 covered at forward rate (\\$5,000 \\times 0.9556\\$) \\$= \\$ 4,778\\$[cite: 8]
+          <br />Upfront Premium paid (\\$700,000 \\times \\$ 0.0164\\$) \\$= \\$ 11,480\\$[cite: 8]
+          <br />$$\\text{Total September Outflow} = 6,65,000 + 4,778 + 11,480 = \\mathbf{\\text{US\\$ } 6,81,258}$$[cite: 8]
         </li>
-        <li>$$\text{Total Outflow under Option Cover} = \$ 9,59,701 + \$ 6,81,258 = \mathbf{\text{US\$ } 1,640,959}$$</li>
+        <li>$$\\text{Total Outflow under Option Cover} = \\$ 9,59,701 + \\$ 6,81,258 = \\mathbf{\\text{US\\$ } 1,640,959}$$</li>
       </ul>
 
       <h4>Recommendation</h4>
-      <p>Because the cash outflows are completely certain and the firm is risk-averse, the <strong>Forward Contract Cover is recommended</strong>, as it is cheaper in both periods (saving $ 100 in July and $ 7,560 in September)[cite: 8].</p>
+      <p>Because the cash outflows are completely certain and the firm is risk-averse, the <strong>Forward Contract Cover is recommended</strong>, as it is cheaper in both periods (saving \\$ 100 in July and \\$ 7,560 in September)[cite: 8].</p>
     `
   },
   {
@@ -12028,27 +12028,27 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Alternative (a): Invoicing in Sterling at Current Spot Mid-Rate</h4>
-      <p>$$\text{Average Spot Rate} = \frac{1.1960 + 1.1970}{2} = € 1.1965 / £$$[cite: 8]</p>
-      <p>$$\text{Sterling Invoiced Amount} = \frac{€ 28,00,000}{1.1965} = \mathbf{£ 2,340,159 \approx £ 2.340 \text{ million}}$$[cite: 8]</p>
+      <p>$$\\text{Average Spot Rate} = \\frac{1.1960 + 1.1970}{2} = € 1.1965 / £$$[cite: 8]</p>
+      <p>$$\\text{Sterling Invoiced Amount} = \\frac{€ 28,00,000}{1.1965} = \\mathbf{£ 2,340,159 \\approx £ 2.340 \\text{ million}}$$[cite: 8]</p>
 
       <h4>2. Alternative (b): Invoicing in Euro with Forward Cover</h4>
       <p>The forward discount on £ means Euro is at a premium, or £ is at a discount; bank buys € and sells £[cite: 8]:</p>
-      <p>$$\text{6-Month Forward Bid Rate} = 1.1970 - 0.0055 = \mathbf{€ 1.1915 / £}$$[cite: 8]</p>
-      <p>$$\text{Sterling Receipts} = \frac{€ 28,00,000}{1.1915} = \mathbf{£ 2,350,000 \approx £ 2.350 \text{ million}}$$[cite: 8]</p>
+      <p>$$\\text{6-Month Forward Bid Rate} = 1.1970 - 0.0055 = \\mathbf{€ 1.1915 / £}$$[cite: 8]</p>
+      <p>$$\\text{Sterling Receipts} = \\frac{€ 28,00,000}{1.1915} = \\mathbf{£ 2,350,000 \\approx £ 2.350 \\text{ million}}$$[cite: 8]</p>
 
       <h4>3. Alternative (c): Invoicing in Euro with Sterling Futures Hedge</h4>
       <ul>
         <li>Pounds required to hedge based on futures quote:
-          <br />$$\frac{€ 28,00,000}{1.1943} = £ 2,344,470$$[cite: 8]
+          <br />$$\\frac{€ 28,00,000}{1.1943} = £ 2,344,470$$[cite: 8]
         </li>
-        <li>$$\text{Number of Contracts} = \frac{£ 2,344,470}{£ 62,500} = 37.51 \approx \mathbf{37 \text{ contracts}}$$[cite: 8]</li>
-        <li>Sterling amount hedged $= 37 \times £ 62,500 = £ 2,312,500$[cite: 8]</li>
+        <li>$$\\text{Number of Contracts} = \\frac{£ 2,344,470}{£ 62,500} = 37.51 \\approx \\mathbf{37 \\text{ contracts}}$$[cite: 8]</li>
+        <li>Sterling amount hedged \\$= 37 \\times £ 62,500 = £ 2,312,500\\$[cite: 8]</li>
         <li>Buy futures @ € 1.1943 and close out @ € 1.1873:
-          <br />$$\text{Loss per } £ = 1.1943 - 1.1873 = € 0.0070$$[cite: 8]
-          <br />$$\text{Total Loss on Futures} = 37 \times £ 62,500 \times € 0.0070 = \mathbf{€ 16,188}$$[cite: 8]
+          <br />$$\\text{Loss per } £ = 1.1943 - 1.1873 = € 0.0070$$[cite: 8]
+          <br />$$\\text{Total Loss on Futures} = 37 \\times £ 62,500 \\times € 0.0070 = \\mathbf{€ 16,188}$$[cite: 8]
         </li>
-        <li>Net Euro proceeds $= € 28,00,000 - € 16,188 = € 27,83,812$[cite: 8]</li>
-        <li>$$\text{Sterling Realized at Spot 1.1873} = \frac{€ 27,83,812}{1.1873} = \mathbf{£ 2,344,657 \approx £ 2.3446 \text{ million}}$$[cite: 8]</li>
+        <li>Net Euro proceeds \\$= € 28,00,000 - € 16,188 = € 27,83,812\\$[cite: 8]</li>
+        <li>$$\\text{Sterling Realized at Spot 1.1873} = \\frac{€ 27,83,812}{1.1873} = \\mathbf{£ 2,344,657 \\approx £ 2.3446 \\text{ million}}$$[cite: 8]</li>
       </ul>
 
       <h4>Conclusion</h4>
@@ -12066,47 +12066,47 @@ const icaibookData = [
       <p>Columbus Surgicals Inc., based in the US, has imported surgical raw materials from the UK invoiced for £ 480,000 payable in 3 months[cite: 8]. It has also exported goods to India invoiced for £ 138,000 payable in 3 months, and to France invoiced for € 590,000 payable in 4 months[cite: 8].</p>
       <p>Market quotations are as follows[cite: 8]:</p>
       <ul>
-        <li>Spot £ / US$: 0.9830 &ndash; 0.9850; 3-Month Forward: 0.9520 &ndash; 0.9545[cite: 8]</li>
-        <li>Spot US$ / €: 1.8890 &ndash; 1.8920; 4-Month Forward: 1.9510 &ndash; 1.9540[cite: 8]</li>
+        <li>Spot £ / US\\$: 0.9830 &ndash; 0.9850; 3-Month Forward: 0.9520 &ndash; 0.9545[cite: 8]</li>
+        <li>Spot US\\$ / €: 1.8890 &ndash; 1.8920; 4-Month Forward: 1.9510 &ndash; 1.9540[cite: 8]</li>
         <li>Interest rates (p.a.): UK: 10.0% &ndash; 12.0%; France: 14.0% &ndash; 16.0%; USA: 11.5% &ndash; 13.0%[cite: 8]</li>
       </ul>
       <p>Show how the company can hedge its foreign exchange exposure using Forward and Money Market hedges, and suggest the best technique[cite: 8].</p>
     `,
     solution_html: `
       <h4>1. Hedging of £ Exposure (Net Payable in 3 Months)</h4>
-      <p>$$\text{Net £ Payable} = £ 480,000 - £ 138,000 = \mathbf{£ 342,000}$$[cite: 8]</p>
+      <p>$$\\text{Net £ Payable} = £ 480,000 - £ 138,000 = \\mathbf{£ 342,000}$$[cite: 8]</p>
       <ul>
         <li><strong>Forward Market Hedge:</strong>
-          <br />The bank buys USD and sells GBP @ forward bid 0.9520 £/US$[cite: 8]:
-          <br />$$\text{Dollar Cost} = \frac{£ 342,000}{0.9520} = \mathbf{\text{US\$ } 359,243.70 \approx \text{US\$ } 359,244}$$[cite: 8]
+          <br />The bank buys USD and sells GBP @ forward bid 0.9520 £/US\\$[cite: 8]:
+          <br />$$\\text{Dollar Cost} = \\frac{£ 342,000}{0.9520} = \\mathbf{\\text{US\\$ } 359,243.70 \\approx \\text{US\\$ } 359,244}$$[cite: 8]
         </li>
         <li><strong>Money Market Hedge:</strong>
           <br />Deposit £ in the UK @ 10% p.a. (2.5% for 3 months) to accumulate to £ 342,000[cite: 8]:
-          <br />$$\text{Amount to Deposit Today} = \frac{£ 342,000}{1 + 0.025} = \frac{£ 342,000}{1.025} = \mathbf{£ 333,658.54}$$[cite: 8]
-          <br />Buy £ spot @ 0.9830 £/US$:
-          <br />$$\text{US\$ Loan Needed} = \frac{£ 333,658.54}{0.9830} = \mathbf{\text{US\$ } 339,428.83}$$[cite: 8]
-          <br />Repay US$ loan after 3 months @ 13% borrowing rate (3.25% for 3 months):
-          <br />$$\text{Total US\$ Outflow} = \text{US\$ } 339,428.83 \times (1 + 0.0325) = \mathbf{\text{US\$ } 350,460.27 \approx \text{US\$ } 350,460}$$[cite: 8]
+          <br />$$\\text{Amount to Deposit Today} = \\frac{£ 342,000}{1 + 0.025} = \\frac{£ 342,000}{1.025} = \\mathbf{£ 333,658.54}$$[cite: 8]
+          <br />Buy £ spot @ 0.9830 £/US\\$:
+          <br />$$\\text{US\\$ Loan Needed} = \\frac{£ 333,658.54}{0.9830} = \\mathbf{\\text{US\\$ } 339,428.83}$$[cite: 8]
+          <br />Repay US\\$ loan after 3 months @ 13% borrowing rate (3.25% for 3 months):
+          <br />$$\\text{Total US\\$ Outflow} = \\text{US\\$ } 339,428.83 \\times (1 + 0.0325) = \\mathbf{\\text{US\\$ } 350,460.27 \\approx \\text{US\\$ } 350,460}$$[cite: 8]
         </li>
       </ul>
-      <p><em>Conclusion for £ Exposure:</em> The <strong>Money Market Hedge is cheaper</strong> (saving $ 8,784)[cite: 8].</p>
+      <p><em>Conclusion for £ Exposure:</em> The <strong>Money Market Hedge is cheaper</strong> (saving \\$ 8,784)[cite: 8].</p>
 
       <h4>2. Hedging of € Exposure (Receivable of € 590,000 in 4 Months)</h4>
       <ul>
         <li><strong>Forward Market Hedge:</strong>
-          <br />Sell € 4 months forward @ 1.9510 US$/€ (bid rate)[cite: 8]:
-          <br />$$\text{Dollar Receipts} = € 590,000 \times 1.9510 = \mathbf{\text{US\$ } 1,151,090}$$[cite: 8]
+          <br />Sell € 4 months forward @ 1.9510 US\\$/€ (bid rate)[cite: 8]:
+          <br />$$\\text{Dollar Receipts} = € 590,000 \\times 1.9510 = \\mathbf{\\text{US\\$ } 1,151,090}$$[cite: 8]
         </li>
         <li><strong>Money Market Hedge:</strong>
-          <br />Borrow in France @ 16% p.a. ($16\% \times \frac{4}{12} = 5.333\%$ for 4 months)[cite: 8]:
-          <br />$$\text{Amount to Borrow Today} = \frac{€ 590,000}{1 + 0.05333} = \frac{€ 590,000}{1.05333} = \mathbf{€ 560,128.36 \approx € 560,144}$$[cite: 8]
-          <br />Convert € to US$ spot @ 1.8890 US$/€:
-          <br />$$\text{US\$ Deposit Today} = € 560,144 \times 1.8890 = \mathbf{\text{US\$ } 1,058,112.02}$$[cite: 8]
-          <br />Invest in US money market for 4 months @ 11.5% deposit rate ($11.5\% \times \frac{4}{12} = 3.833\%$)[cite: 8]:
-          <br />$$\text{Total US\$ Maturity Proceeds} = \text{US\$ } 1,058,112.02 \times (1 + 0.03833) = \mathbf{\text{US\$ } 1,098,639}$$[cite: 8]
+          <br />Borrow in France @ 16% p.a. (\\$16\\% \\times \\frac{4}{12} = 5.333\\%\\$ for 4 months)[cite: 8]:
+          <br />$$\\text{Amount to Borrow Today} = \\frac{€ 590,000}{1 + 0.05333} = \\frac{€ 590,000}{1.05333} = \\mathbf{€ 560,128.36 \\approx € 560,144}$$[cite: 8]
+          <br />Convert € to US\\$ spot @ 1.8890 US\\$/€:
+          <br />$$\\text{US\\$ Deposit Today} = € 560,144 \\times 1.8890 = \\mathbf{\\text{US\\$ } 1,058,112.02}$$[cite: 8]
+          <br />Invest in US money market for 4 months @ 11.5% deposit rate (\\$11.5\\% \\times \\frac{4}{12} = 3.833\\%\\$)[cite: 8]:
+          <br />$$\\text{Total US\\$ Maturity Proceeds} = \\text{US\\$ } 1,058,112.02 \\times (1 + 0.03833) = \\mathbf{\\text{US\\$ } 1,098,639}$$[cite: 8]
         </li>
       </ul>
-      <p><em>Conclusion for € Exposure:</em> The <strong>Forward Market Hedge is superior</strong> (yielding $ 52,451 more)[cite: 8].</p>
+      <p><em>Conclusion for € Exposure:</em> The <strong>Forward Market Hedge is superior</strong> (yielding \\$ 52,451 more)[cite: 8].</p>
     `
   },
   {
@@ -12119,48 +12119,48 @@ const icaibookData = [
     question_html: `
       <p>XYZ Ltd., a US firm, will need £ 3,00,000 in 180 days[cite: 8]. Available market data:</p>
       <ul>
-        <li>Spot rate: 1 £ = $ 2.00; 180-day forward rate: $ 1.96[cite: 8]</li>
+        <li>Spot rate: 1 £ = \\$ 2.00; 180-day forward rate: \\$ 1.96[cite: 8]</li>
         <li>180-day interest rates: UK Deposit = 4.5%, Borrowing = 5.0%; US Deposit = 5.0%, Borrowing = 5.5%[cite: 8]</li>
-        <li>Call option (180-day expiry): Strike price = $ 1.97, Premium = $ 0.04 per £[cite: 8]</li>
-        <li>Forecasted spot rates in 180 days: $ 1.91 (25%), $ 1.95 (60%), $ 2.05 (15%)[cite: 8]</li>
+        <li>Call option (180-day expiry): Strike price = \\$ 1.97, Premium = \\$ 0.04 per £[cite: 8]</li>
+        <li>Forecasted spot rates in 180 days: \\$ 1.91 (25\\%), \\$ 1.95 (60%), \\$ 2.05 (15%)[cite: 8]</li>
       </ul>
       <p>Evaluate which strategy is most preferable: (a) Forward Contract, (b) Money Market Hedge, (c) Option Contract, or (d) No Hedging[cite: 8].</p>
     `,
     solution_html: `
       <h4>(a) Forward Contract</h4>
-      <p>$$\text{Dollar Outflow} = £ 3,00,000 \times \$ 1.96 = \mathbf{\text{US\$ } 5,88,000}$$[cite: 8]</p>
+      <p>$$\\text{Dollar Outflow} = £ 3,00,000 \\times \\$ 1.96 = \\mathbf{\\text{US\\$ } 5,88,000}$$[cite: 8]</p>
 
       <h4>(b) Money Market Hedge</h4>
       <ul>
         <li>Deposit £ in UK @ 4.5% for 180 days:
-          <br />$$\text{Amount to Deposit Today} = \frac{£ 3,00,000}{1 + 0.045} = \mathbf{£ 2,87,081.34}$$[cite: 8]
+          <br />$$\\text{Amount to Deposit Today} = \\frac{£ 3,00,000}{1 + 0.045} = \\mathbf{£ 2,87,081.34}$$[cite: 8]
         </li>
-        <li>Convert to USD at spot rate of $ 2.00:
-          <br />$$\text{USD to Borrow Today} = £ 2,87,081.34 \times \$ 2.00 = \mathbf{\text{US\$ } 5,74,162.68}$$[cite: 8]
+        <li>Convert to USD at spot rate of \\$ 2.00:
+          <br />$$\\text{USD to Borrow Today} = £ 2,87,081.34 \\times \\$ 2.00 = \\mathbf{\\text{US\\$ } 5,74,162.68}$$[cite: 8]
         </li>
         <li>Repay USD loan after 180 days @ 5.5% borrowing rate:
-          <br />$$\text{Total Dollar Outflow} = \text{US\$ } 5,74,162.68 \times (1 + 0.055) = \mathbf{\text{US\$ } 6,05,741.63 \approx \text{US\$ } 6,05,741}$$[cite: 8]
+          <br />$$\\text{Total Dollar Outflow} = \\text{US\\$ } 5,74,162.68 \\times (1 + 0.055) = \\mathbf{\\text{US\\$ } 6,05,741.63 \\approx \\text{US\\$ } 6,05,741}$$[cite: 8]
         </li>
       </ul>
 
-      <h4>(c) Currency Call Option Contract ($X = \$ 1.97$, Premium $= \$ 0.04$)</h4>
-      <p>$$\text{Premium Paid Today} = £ 3,00,000 \times \$ 0.04 = \$ 12,000$$[cite: 8]</p>
-      <p>$$\text{Opportunity Cost of Premium at 5.5\%} = \$ 12,000 \times 1.055 = \mathbf{\$ 12,660}$$[cite: 8]</p>
+      <h4>(c) Currency Call Option Contract (\\$X = \\$ 1.97\\$, Premium \\$= \\$ 0.04\\$)</h4>
+      <p>$$\\text{Premium Paid Today} = £ 3,00,000 \\times \\$ 0.04 = \\$ 12,000$$[cite: 8]</p>
+      <p>$$\\text{Opportunity Cost of Premium at 5.5\\%} = \\$ 12,000 \\times 1.055 = \\mathbf{\\$ 12,660}$$[cite: 8]</p>
       <div style="overflow-x:auto;">
         <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
           <thead>
             <tr style="background-color:#f2f2f2;">
               <th style="padding:6px; border:1px solid #ddd;">Spot Rate</th>
               <th style="padding:6px; border:1px solid #ddd;">Action</th>
-              <th style="padding:6px; border:1px solid #ddd;">Exercise Cost ($)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Exercise Cost (\\$)</th>
               <th style="padding:6px; border:1px solid #ddd;">Probability</th>
-              <th style="padding:6px; border:1px solid #ddd;">Weighted Cost ($)</th>
+              <th style="padding:6px; border:1px solid #ddd;">Weighted Cost (\\$)</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td>$ 1.91</td><td>Lapse (Buy Spot)</td><td>$3,00,000 \times 1.91 = 5,73,000$</td><td>0.25</td><td>1,43,250</td></tr>
-            <tr><td>$ 1.95</td><td>Lapse (Buy Spot)</td><td>$3,00,000 \times 1.95 = 5,85,000$</td><td>0.60</td><td>3,51,000</td></tr>
-            <tr><td>$ 2.05</td><td>Exercise @ 1.97</td><td>$3,00,000 \times 1.97 = 5,91,000$</td><td>0.15</td><td>88,650</td></tr>
+            <tr><td>\\$ 1.91</td><td>Lapse (Buy Spot)</td><td>\\$3,00,000 \\times 1.91 = 5,73,000\\$</td><td>0.25</td><td>1,43,250</td></tr>
+            <tr><td>\\$ 1.95</td><td>Lapse (Buy Spot)</td><td>\\$3,00,000 \\times 1.95 = 5,85,000\\$</td><td>0.60</td><td>3,51,000</td></tr>
+            <tr><td>\\$ 2.05</td><td>Exercise @ 1.97</td><td>\\$3,00,000 \\times 1.97 = 5,91,000\\$</td><td>0.15</td><td>88,650</td></tr>
             <tr style="font-weight:bold; background-color:#fafafa;">
               <td colspan="4">Expected Purchase Outflow</td>
               <td>5,82,900</td>
@@ -12168,14 +12168,14 @@ const icaibookData = [
           </tbody>
         </table>
       </div>
-      <p>$$\text{Total Expected Cost under Option} = \$ 5,82,900 + \$ 12,660 (\text{Premium + Interest}) = \mathbf{\text{US\$ } 5,95,560}$$[cite: 8]</p>
+      <p>$$\\text{Total Expected Cost under Option} = \\$ 5,82,900 + \\$ 12,660 (\\text{Premium + Interest}) = \\mathbf{\\text{US\\$ } 5,95,560}$$[cite: 8]</p>
 
       <h4>(d) No Hedging Strategy</h4>
-      <p>$$\text{Expected Spot Rate} = (1.91 \times 0.25) + (1.95 \times 0.60) + (2.05 \times 0.15) = 0.4775 + 1.1700 + 0.3075 = \mathbf{\$ 1.955}$$[cite: 8]</p>
-      <p>$$\text{Expected Dollar Outflow} = £ 3,00,000 \times \$ 1.955 = \mathbf{\text{US\$ } 5,86,500}$$[cite: 8]</p>
+      <p>$$\\text{Expected Spot Rate} = (1.91 \\times 0.25) + (1.95 \\times 0.60) + (2.05 \\times 0.15) = 0.4775 + 1.1700 + 0.3075 = \\mathbf{\\$ 1.955}$$[cite: 8]</p>
+      <p>$$\\text{Expected Dollar Outflow} = £ 3,00,000 \\times \\$ 1.955 = \\mathbf{\\text{US\\$ } 5,86,500}$$[cite: 8]</p>
 
       <h4>Summary Decision</h4>
-      <p>The <strong>No Hedging strategy</strong> yields the lowest expected cost of <strong>$ 5,86,500</strong>[cite: 8]. However, if the firm seeks risk aversion to eliminate currency fluctuations, the <strong>Forward Contract</strong> at a fixed cost of <strong>$ 5,88,000</strong> is preferred[cite: 8].</p>
+      <p>The <strong>No Hedging strategy</strong> yields the lowest expected cost of <strong>\\$ 5,86,500</strong>[cite: 8]. However, if the firm seeks risk aversion to eliminate currency fluctuations, the <strong>Forward Contract</strong> at a fixed cost of <strong>\\$ 5,88,000</strong> is preferred[cite: 8].</p>
     `
   },
   {
@@ -12198,37 +12198,37 @@ const icaibookData = [
     solution_html: `
       <h4>1. Direct Quotes Formulation (GBP per USD)</h4>
       <ul>
-        <li>Spot Rate: $\frac{1}{1.5673} \text{ to } \frac{1}{1.5617} = \mathbf{\text{GBP } 0.63804 - 0.64033 \text{ per USD}}$[cite: 8]</li>
-        <li>6-Month Forward Rate: $\frac{1}{1.5609} \text{ to } \frac{1}{1.5455} = \mathbf{\text{GBP } 0.64066 - 0.64704 \text{ per USD}}$[cite: 8]</li>
+        <li>Spot Rate: \\$\\frac{1}{1.5673} \\text{ to } \\frac{1}{1.5617} = \\mathbf{\\text{GBP } 0.63804 - 0.64033 \\text{ per USD}}\\$[cite: 8]</li>
+        <li>6-Month Forward Rate: \\$\\frac{1}{1.5609} \\text{ to } \\frac{1}{1.5455} = \\mathbf{\\text{GBP } 0.64066 - 0.64704 \\text{ per USD}}\\$[cite: 8]</li>
       </ul>
 
       <h4>2. Alternative (i): Forward Cover</h4>
-      <p>$$\text{GBP Outflow} = \text{USD } 3,64,897 \times 0.64704 = \mathbf{\text{GBP } 2,36,103}$$[cite: 8]</p>
+      <p>$$\\text{GBP Outflow} = \\text{USD } 3,64,897 \\times 0.64704 = \\mathbf{\\text{GBP } 2,36,103}$$[cite: 8]</p>
 
       <h4>3. Alternative (ii): Money Market Cover</h4>
       <ul>
         <li>Deposit USD in US @ 4.5% p.a. (2.25% for 6 months)[cite: 8]:
-          <br />$$\text{USD to Deposit Today} = \frac{\text{USD } 3,64,897}{1 + 0.0225} = \mathbf{\text{USD } 3,56,867.48}$$[cite: 8]
+          <br />$$\\text{USD to Deposit Today} = \\frac{\\text{USD } 3,64,897}{1 + 0.0225} = \\mathbf{\\text{USD } 3,56,867.48}$$[cite: 8]
         </li>
         <li>Buy USD spot @ 0.64033 GBP/USD:
-          <br />$$\text{GBP Borrowed Today} = \text{USD } 3,56,867.48 \times 0.64033 = \mathbf{\text{GBP } 2,28,512.95}$$[cite: 8]
+          <br />$$\\text{GBP Borrowed Today} = \\text{USD } 3,56,867.48 \\times 0.64033 = \\mathbf{\\text{GBP } 2,28,512.95}$$[cite: 8]
         </li>
         <li>Repay UK borrowing after 6 months @ 7% p.a. (3.5% for 6 months):
-          <br />$$\text{Total GBP Outflow} = \text{GBP } 2,28,512.95 \times (1 + 0.035) = \mathbf{\text{GBP } 2,36,510.90 \approx \text{GBP } 2,36,510}$$[cite: 8]
+          <br />$$\\text{Total GBP Outflow} = \\text{GBP } 2,28,512.95 \\times (1 + 0.035) = \\mathbf{\\text{GBP } 2,36,510.90 \\approx \\text{GBP } 2,36,510}$$[cite: 8]
         </li>
       </ul>
 
       <h4>4. Alternative (iii): Currency Option Cover</h4>
       <p>To hedge a USD payable, the UK firm buys a <strong>Put Option on GBP</strong> (giving the right to sell GBP and acquire USD) at strike USD 1.70 / GBP[cite: 8]:</p>
       <ul>
-        <li>USD proceeds per contract: $12,500 \times 1.70 = \text{USD } 21,250$[cite: 8]</li>
-        <li>$$\text{Number of Contracts} = \frac{\text{USD } 3,64,897}{\text{USD } 21,250} = 17.17 \implies \mathbf{17 \text{ contracts}}$$[cite: 8]</li>
-        <li>USD covered by options: $17 \times 21,250 = \text{USD } 3,61,250$[cite: 8]</li>
-        <li>Remainder covered by forward: $\text{USD } 3,64,897 - 3,61,250 = \text{USD } 3,647$[cite: 8]</li>
-        <li>Pounds payable under option exercise: $17 \times £ 12,500 = \mathbf{£ 2,12,500}$[cite: 8]</li>
-        <li>Forward cost of uncovered balance: $3,647 \times 0.64704 = \mathbf{£ 2,360}$[cite: 8]</li>
-        <li>Option Premium paid: $17 \times 12,500 \times \$ 0.096 = \$ 20,400 \implies \frac{\$ 20,400}{1.5617} = \mathbf{£ 13,063}$[cite: 8]</li>
-        <li>$$\text{Total Outflow under Option} = £ 2,12,500 + £ 13,063 + £ 2,360 = \mathbf{\text{GBP } 2,27,923}$$[cite: 8]</li>
+        <li>USD proceeds per contract: \\$12,500 \\times 1.70 = \\text{USD } 21,250\\$[cite: 8]</li>
+        <li>$$\\text{Number of Contracts} = \\frac{\\text{USD } 3,64,897}{\\text{USD } 21,250} = 17.17 \\implies \\mathbf{17 \\text{ contracts}}$$[cite: 8]</li>
+        <li>USD covered by options: \\$17 \\times 21,250 = \\text{USD } 3,61,250\\$[cite: 8]</li>
+        <li>Remainder covered by forward: \\$\\text{USD } 3,64,897 - 3,61,250 = \\text{USD } 3,647\\$[cite: 8]</li>
+        <li>Pounds payable under option exercise: \\$17 \\times £ 12,500 = \\mathbf{£ 2,12,500}\\$[cite: 8]</li>
+        <li>Forward cost of uncovered balance: \\$3,647 \\times 0.64704 = \\mathbf{£ 2,360}\\$[cite: 8]</li>
+        <li>Option Premium paid: \\$17 \\times 12,500 \\times \\$ 0.096 = \\$ 20,400 \\implies \\frac{\\$ 20,400}{1.5617} = \\mathbf{£ 13,063}\\$[cite: 8]</li>
+        <li>$$\\text{Total Outflow under Option} = £ 2,12,500 + £ 13,063 + £ 2,360 = \\mathbf{\\text{GBP } 2,27,923}$$[cite: 8]</li>
       </ul>
 
       <h4>Conclusion</h4>
@@ -12254,27 +12254,27 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(a) Proposal 1: Invoicing in Sterling at Current Spot Ask Rate (€ 1.1770)</h4>
-      <p>$$\text{Sterling Invoiced Amount} = \frac{€ 40,00,000}{1.1770} = \mathbf{£ 33,98,471}$$[cite: 8]</p>
+      <p>$$\\text{Sterling Invoiced Amount} = \\frac{€ 40,00,000}{1.1770} = \\mathbf{£ 33,98,471}$$[cite: 8]</p>
 
       <h4>(b) Proposal 2: Invoicing in Euro with Forward Cover</h4>
-      <p>$$\text{6-Month Forward Bid Rate} = 1.1770 + 0.0060 = \mathbf{€ 1.1830 / £}$$[cite: 8]</p>
-      <p>$$\text{Sterling Receipts} = \frac{€ 40,00,000}{1.1830} = \mathbf{£ 33,81,234}$$[cite: 8]</p>
+      <p>$$\\text{6-Month Forward Bid Rate} = 1.1770 + 0.0060 = \\mathbf{€ 1.1830 / £}$$[cite: 8]</p>
+      <p>$$\\text{Sterling Receipts} = \\frac{€ 40,00,000}{1.1830} = \\mathbf{£ 33,81,234}$$[cite: 8]</p>
 
       <h4>(c) Proposal 3: Invoicing in Euro with Futures Hedge</h4>
       <ul>
         <li>Pounds required to hedge based on futures price:
-          <br />$$\frac{€ 40,00,000}{1.1760} = £ 34,01,360.54$$[cite: 8]
+          <br />$$\\frac{€ 40,00,000}{1.1760} = £ 34,01,360.54$$[cite: 8]
         </li>
-        <li>$$\text{Number of Contracts} = \frac{£ 34,01,360.54}{£ 62,500} = 54.42 \implies \mathbf{54 \text{ contracts}}$$[cite: 8]</li>
-        <li>Euro amount hedged: $54 \times £ 62,500 \times 1.1760 = € 39,69,000$[cite: 8]</li>
+        <li>$$\\text{Number of Contracts} = \\frac{£ 34,01,360.54}{£ 62,500} = 54.42 \\implies \\mathbf{54 \\text{ contracts}}$$[cite: 8]</li>
+        <li>Euro amount hedged: \\$54 \\times £ 62,500 \\times 1.1760 = € 39,69,000\\$[cite: 8]</li>
         <li>Profit on Futures Contracts:
-          <br />$$54 \times £ 62,500 \times (1.1785 - 1.1760) = 54 \times 62,500 \times € 0.0025 = \mathbf{€ 8,438}$$[cite: 8]
+          <br />$$54 \\times £ 62,500 \\times (1.1785 - 1.1760) = 54 \\times 62,500 \\times € 0.0025 = \\mathbf{€ 8,438}$$[cite: 8]
         </li>
         <li>Total Euro Realization at Month 6:
-          <br />$$€ 40,00,000 + € 8,438 = \mathbf{€ 40,08,438}$$[cite: 8]
+          <br />$$€ 40,00,000 + € 8,438 = \\mathbf{€ 40,08,438}$$[cite: 8]
         </li>
         <li>Convert into Sterling at Spot 1.1785:
-          <br />$$\text{Sterling Proceeds} = \frac{€ 40,08,438}{1.1785} = \mathbf{£ 34,01,305}$$[cite: 8]
+          <br />$$\\text{Sterling Proceeds} = \\frac{€ 40,08,438}{1.1785} = \\mathbf{£ 34,01,305}$$[cite: 8]
         </li>
       </ul>
 
@@ -12300,33 +12300,33 @@ const icaibookData = [
     solution_html: `
       <h4>Option I: Domestic Rupee Loan @ 18% p.a. (Quarterly Rests)</h4>
       <ul>
-        <li>Spot Cost of Equipment: $\frac{\text{¥ } 3,400 \text{ lakhs}}{340} \times 100 = \mathbf{₹ 1,000.00 \text{ lakhs}}$[cite: 8]</li>
-        <li>Quarterly interest rate: $\frac{18\%}{4} = 4.5\%$ per quarter[cite: 8]</li>
+        <li>Spot Cost of Equipment: \\$\\frac{\\text{¥ } 3,400 \\text{ lakhs}}{340} \\times 100 = \\mathbf{₹ 1,000.00 \\text{ lakhs}}\\$[cite: 8]</li>
+        <li>Quarterly interest rate: \\$\\frac{18\\%}{4} = 4.5\\%\\$ per quarter[cite: 8]</li>
         <li>Compound Amount after 2 quarters (180 days):
-          <br />$$₹ 1,000.00 \times (1 + 0.045)^2 = ₹ 1,000.00 \times 1.092025 = \mathbf{₹ 1,092.03 \text{ lakhs}}$$[cite: 8]
+          <br />$$₹ 1,000.00 \\times (1 + 0.045)^2 = ₹ 1,000.00 \\times 1.092025 = \\mathbf{₹ 1,092.03 \\text{ lakhs}}$$[cite: 8]
         </li>
       </ul>
 
       <h4>Option II: Japanese Credit Facility with Forward Cover</h4>
       <ul>
-        <li>Letter of Credit (LC) Commission for 180 days ($2\% \times \frac{180}{360} = 1\%$):
-          <br />$$1\% \times ₹ 1,000.00 \text{ lakhs} = ₹ 10.00 \text{ lakhs}$$[cite: 8]
+        <li>Letter of Credit (LC) Commission for 180 days (\\$2\\% \\times \\frac{180}{360} = 1\\%\\$):
+          <br />$$1\\% \\times ₹ 1,000.00 \\text{ lakhs} = ₹ 10.00 \\text{ lakhs}$$[cite: 8]
         </li>
         <li>Financing cost of LC commission for 2 quarters @ 4.5%:
-          <br />$$₹ 10.00 \times (1.045)^2 = \mathbf{₹ 10.92 \text{ lakhs \approx ₹ 10.90 lakhs}}$$[cite: 8]
+          <br />$$₹ 10.00 \\times (1.045)^2 = \\mathbf{₹ 10.92 \\text{ lakhs \\approx ₹ 10.90 lakhs}}$$[cite: 8]
         </li>
         <li>Yen Interest on supplier credit @ 2% p.a. for 180 days:
-          <br />$$\text{¥ } 3,400 \text{ lakhs} \times 2\% \times \frac{180}{365} = \mathbf{\text{¥ } 33.53 \text{ lakhs}}$$[cite: 8]
+          <br />$$\\text{¥ } 3,400 \\text{ lakhs} \\times 2\\% \\times \\frac{180}{365} = \\mathbf{\\text{¥ } 33.53 \\text{ lakhs}}$$[cite: 8]
         </li>
-        <li>Total Yen Payable on Day 180 $= 3,400 + 33.53 = \mathbf{\text{¥ } 3,433.53 \text{ lakhs}}$[cite: 8]</li>
+        <li>Total Yen Payable on Day 180 \\$= 3,400 + 33.53 = \\mathbf{\\text{¥ } 3,433.53 \\text{ lakhs}}\\$[cite: 8]</li>
         <li>Rupee cost under 180-day forward contract (345 yen = ₹ 100):
-          <br />$$\frac{\text{¥ } 3,433.53 \text{ lakhs}}{345} \times 100 = \mathbf{₹ 995.23 \text{ lakhs}}$$[cite: 8]
+          <br />$$\\frac{\\text{¥ } 3,433.53 \\text{ lakhs}}{345} \\times 100 = \\mathbf{₹ 995.23 \\text{ lakhs}}$$[cite: 8]
         </li>
-        <li>$$\text{Total Cost under Option II} = ₹ 995.23 \text{ lakhs} + ₹ 10.90 \text{ lakhs} = \mathbf{₹ 1,006.13 \text{ lakhs}}$$[cite: 8]</li>
+        <li>$$\\text{Total Cost under Option II} = ₹ 995.23 \\text{ lakhs} + ₹ 10.90 \\text{ lakhs} = \\mathbf{₹ 1,006.13 \\text{ lakhs}}$$[cite: 8]</li>
       </ul>
 
       <h4>Advice</h4>
-      <p><strong>Option II should be accepted</strong>, as it results in a substantial cost saving of <strong>₹ 85.90 lakhs</strong> ($₹ 1,092.03 - ₹ 1,006.13$)[cite: 8].</p>
+      <p><strong>Option II should be accepted</strong>, as it results in a substantial cost saving of <strong>₹ 85.90 lakhs</strong> (\\$₹ 1,092.03 - ₹ 1,006.13\\$)[cite: 8].</p>
     `
   },
   {
@@ -12337,38 +12337,38 @@ const icaibookData = [
     // placement: 54,
     marks: 8,
     question_html: `
-      <p>NP and Co. has an import payable of US $ 7,00,000 due in 3 months and an export receivable of US $ 4,50,000 due in 2 months (forward contract already booked at ₹ 48.90)[cite: 8]. Market quotes: Spot ₹ 48.50/70; 2 months points 25/30; 3 months points 40/45[cite: 8]. Cost of Rupee funds is 12% p.a.[cite: 8]</p>
+      <p>NP and Co. has an import payable of US \\$ 7,00,000 due in 3 months and an export receivable of US \\$ 4,50,000 due in 2 months (forward contract already booked at ₹ 48.90)[cite: 8]. Market quotes: Spot ₹ 48.50/70; 2 months points 25/30; 3 months points 40/45[cite: 8]. Cost of Rupee funds is 12% p.a.[cite: 8]</p>
       <p>Evaluate: (A) Cover payable in forward market, vs. (B) Lag receivables by 1 month, cancel existing forward, and cover net amount[cite: 8].</p>
     `,
     solution_html: `
       <h4>Option (A): Cover Payable at Month 3 and Retain Export Forward at Month 2</h4>
       <ul>
         <li>Import Payable at Month 3 @ forward ask ₹ 48.45 (or 48.50 + 0.45):
-          <br />$$\text{Outflow (A)} = \$ 7,00,000 \times ₹ 48.45 = ₹ 3,39,15,000$$[cite: 8]
+          <br />$$\\text{Outflow (A)} = \\$ 7,00,000 \\times ₹ 48.45 = ₹ 3,39,15,000$$[cite: 8]
         </li>
         <li>Export Receivable at Month 2 @ contracted rate ₹ 48.90:
-          <br />$$\text{Inflow (B)} = \$ 4,50,000 \times ₹ 48.90 = ₹ 2,20,05,000$$[cite: 8]
+          <br />$$\\text{Inflow (B)} = \\$ 4,50,000 \\times ₹ 48.90 = ₹ 2,20,05,000$$[cite: 8]
         </li>
         <li>Interest earned by investing export proceeds for 1 month @ 12% p.a.:
-          <br />$$\text{Interest (C)} = ₹ 2,20,05,000 \times 12\% \times \frac{1}{12} = ₹ 2,20,050$$[cite: 8]
+          <br />$$\\text{Interest (C)} = ₹ 2,20,05,000 \\times 12\\% \\times \\frac{1}{12} = ₹ 2,20,050$$[cite: 8]
         </li>
-        <li>$$\text{Net Rupee Outflow} = ₹ 3,39,15,000 - ₹ 2,20,05,000 - ₹ 2,20,050 = \mathbf{₹ 1,16,89,950}$$[cite: 8]</li>
+        <li>$$\\text{Net Rupee Outflow} = ₹ 3,39,15,000 - ₹ 2,20,05,000 - ₹ 2,20,050 = \\mathbf{₹ 1,16,89,950}$$[cite: 8]</li>
       </ul>
 
       <h4>Option (B): Lag Receivables by 1 Month and Net Outflows</h4>
       <ul>
-        <li>Net USD payable at Month 3: $\$ 7,00,000 - \$ 4,50,000 = \mathbf{\$ 2,50,000}$[cite: 8]</li>
+        <li>Net USD payable at Month 3: \\$\\$ 7,00,000 - \\$ 4,50,000 = \\mathbf{\\$ 2,50,000}\\$[cite: 8]</li>
         <li>Rupee outflow for net amount @ ₹ 48.45:
-          <br />$$\text{Outflow} = \$ 2,50,000 \times ₹ 48.45 = ₹ 1,21,12,500$$[cite: 8]
+          <br />$$\\text{Outflow} = \\$ 2,50,000 \\times ₹ 48.45 = ₹ 1,21,12,500$$[cite: 8]
         </li>
-        <li>Profit on cancellation of 2-month forward contract ($₹ 48.90 - ₹ 48.30$ spot):
-          <br />$$\text{Cancellation Gain} = \$ 4,50,000 \times (₹ 48.90 - ₹ 48.30) = ₹ 2,70,000$$[cite: 8]
+        <li>Profit on cancellation of 2-month forward contract (\\$₹ 48.90 - ₹ 48.30\\$ spot):
+          <br />$$\\text{Cancellation Gain} = \\$ 4,50,000 \\times (₹ 48.90 - ₹ 48.30) = ₹ 2,70,000$$[cite: 8]
         </li>
-        <li>$$\text{Net Rupee Outflow} = ₹ 1,21,12,500 - ₹ 2,70,000 = \mathbf{₹ 1,18,42,500}$$[cite: 8]</li>
+        <li>$$\\text{Net Rupee Outflow} = ₹ 1,21,12,500 - ₹ 2,70,000 = \\mathbf{₹ 1,18,42,500}$$[cite: 8]</li>
       </ul>
 
       <h4>Recommendation</h4>
-      <p><strong>Option (A) is preferable</strong>, as the net cash outflow is lower by <strong>₹ 1,52,550</strong> ($₹ 1,18,42,500 - ₹ 1,16,89,950$)[cite: 8].</p>
+      <p><strong>Option (A) is preferable</strong>, as the net cash outflow is lower by <strong>₹ 1,52,550</strong> (\\$₹ 1,18,42,500 - ₹ 1,16,89,950\\$)[cite: 8].</p>
     `
   },
   {
@@ -12392,9 +12392,9 @@ const icaibookData = [
       <ul>
         <li>Bank sells to customer @ 1-month forward ask rate: <strong>₹ 27.52</strong>[cite: 8]</li>
         <li>Bank bought from customer under original contract: <strong>₹ 27.25</strong>[cite: 8]</li>
-        <li>$$\text{Exchange Difference Payable by Customer} = ₹ 27.52 - ₹ 27.25 = \mathbf{₹ 0.27 \text{ per CHF}}$$[cite: 8]</li>
+        <li>$$\\text{Exchange Difference Payable by Customer} = ₹ 27.52 - ₹ 27.25 = \\mathbf{₹ 0.27 \\text{ per CHF}}$$[cite: 8]</li>
       </ul>
-      <p>$$\text{Total Loss to Customer} = 10,000 \times ₹ 0.27 = \mathbf{₹ 2,700.00}$$[cite: 8]</p>
+      <p>$$\\text{Total Loss to Customer} = 10,000 \\times ₹ 0.27 = \\mathbf{₹ 2,700.00}$$[cite: 8]</p>
     `
   },
   {
@@ -12420,19 +12420,19 @@ const icaibookData = [
           <br />$$49.4455 + 0.4200 = ₹ 49.8655$$[cite: 8]
         </li>
         <li>Add: Exchange Margin @ 0.10%:
-          <br />$$0.10\% \times ₹ 49.8655 = ₹ 0.04987 \implies ₹ 49.91537 \approx \mathbf{₹ 49.9154}$$[cite: 8]
+          <br />$$0.10\\% \\times ₹ 49.8655 = ₹ 0.04987 \\implies ₹ 49.91537 \\approx \\mathbf{₹ 49.9154}$$[cite: 8]
         </li>
-        <li>USD / CHF 1-Month Forward Buying Rate in Singapore $= \mathbf{\text{CHF } 1.5150}$[cite: 8]</li>
-        <li>$$\text{Cross Selling Rate for CHF} = \frac{₹ 49.91537}{1.5150} = ₹ 32.9474 \rightarrow \mathbf{₹ 32.9475}$$[cite: 8]</li>
+        <li>USD / CHF 1-Month Forward Buying Rate in Singapore \\$= \\mathbf{\\text{CHF } 1.5150}\\$[cite: 8]</li>
+        <li>$$\\text{Cross Selling Rate for CHF} = \\frac{₹ 49.91537}{1.5150} = ₹ 32.9474 \rightarrow \\mathbf{₹ 32.9475}$$[cite: 8]</li>
       </ul>
 
       <h4>2. Cancellation Charges Payable by Customer</h4>
       <ul>
         <li>Bank sells CHF on cancellation @ ₹ 32.9475[cite: 8]</li>
         <li>Bank bought CHF under original contract @ ₹ 32.4000[cite: 8]</li>
-        <li>$$\text{Difference Payable per CHF} = ₹ 32.9475 - ₹ 32.4000 = \mathbf{₹ 0.5475}$$[cite: 8]</li>
+        <li>$$\\text{Difference Payable per CHF} = ₹ 32.9475 - ₹ 32.4000 = \\mathbf{₹ 0.5475}$$[cite: 8]</li>
       </ul>
-      <p>$$\text{Total Cancellation Charges} = 1,00,000 \times ₹ 0.5475 = \mathbf{₹ 54,750.00}$$[cite: 8]</p>
+      <p>$$\\text{Total Cancellation Charges} = 1,00,000 \\times ₹ 0.5475 = \\mathbf{₹ 54,750.00}$$[cite: 8]</p>
     `
   },
   {
@@ -12443,10 +12443,10 @@ const icaibookData = [
     // placement: 57,
     marks: 6,
     question_html: `
-      <p>A forex dealer entered into a cross-currency deal and sold US $ 10,00,000 against EURO at US $ 1 = EURO 1.4400 spot[cite: 8]. Due to market volatility, the dealer squares up the position later in the day when quotes are[cite: 8]:</p>
+      <p>A forex dealer entered into a cross-currency deal and sold US \\$ 10,00,000 against EURO at US \\$ 1 = EURO 1.4400 spot[cite: 8]. Due to market volatility, the dealer squares up the position later in the day when quotes are[cite: 8]:</p>
       <ul>
-        <li>Spot US $ 1 = INR 31.4300 / 31.4500[cite: 8]</li>
-        <li>Spot US $ 1 = EURO 1.4400 / 1.4450[cite: 8]</li>
+        <li>Spot US \\$ 1 = INR 31.4300 / 31.4500[cite: 8]</li>
+        <li>Spot US \\$ 1 = EURO 1.4400 / 1.4450[cite: 8]</li>
       </ul>
       <p>What is the gain or loss on the transaction in Indian Rupees?[cite: 8]</p>
     `,
@@ -12454,18 +12454,18 @@ const icaibookData = [
       <h4>1. Determination of Euro Cash Flow</h4>
       <ul>
         <li>Initial Deal (Sold USD 10,00,000 @ 1.4400):
-          <br />$$\text{Euro Received} = 10,00,000 \times 1.4400 = \mathbf{\text{EURO } 14,40,000}$$[cite: 8]
+          <br />$$\\text{Euro Received} = 10,00,000 \\times 1.4400 = \\mathbf{\\text{EURO } 14,40,000}$$[cite: 8]
         </li>
         <li>Square-Up Deal (Bought USD 10,00,000 @ market ask 1.4450):
-          <br />$$\text{Euro Paid} = 10,00,000 \times 1.4450 = \mathbf{\text{EURO } 14,45,000}$$[cite: 8]
+          <br />$$\\text{Euro Paid} = 10,00,000 \\times 1.4450 = \\mathbf{\\text{EURO } 14,45,000}$$[cite: 8]
         </li>
-        <li>$$\text{Net Loss in Euro} = \text{EURO } 14,40,000 - \text{EURO } 14,45,000 = \mathbf{\text{EURO } 5,000}$$[cite: 8]</li>
+        <li>$$\\text{Net Loss in Euro} = \\text{EURO } 14,40,000 - \\text{EURO } 14,45,000 = \\mathbf{\\text{EURO } 5,000}$$[cite: 8]</li>
       </ul>
 
       <h4>2. Conversion of Loss to Indian Rupees</h4>
       <p>To purchase EURO 5,000 from the market, the bank sells INR to buy USD @ ₹ 31.4500 and sells USD to buy Euro @ 1.4400[cite: 8]:</p>
-      <p>$$\text{Cross Rate (INR / EUR)} = \frac{₹ 31.4500}{1.4400} = \mathbf{₹ 21.8403 \text{ per Euro}}$$[cite: 8]</p>
-      <p>$$\text{Total Loss in Rupees} = \text{EURO } 5,000 \times ₹ 21.8403 = \mathbf{₹ 1,09,201.50}$$[cite: 8]</p>
+      <p>$$\\text{Cross Rate (INR / EUR)} = \\frac{₹ 31.4500}{1.4400} = \\mathbf{₹ 21.8403 \\text{ per Euro}}$$[cite: 8]</p>
+      <p>$$\\text{Total Loss in Rupees} = \\text{EURO } 5,000 \\times ₹ 21.8403 = \\mathbf{₹ 1,09,201.50}$$[cite: 8]</p>
     `
   },
   {
@@ -12506,27 +12506,27 @@ const icaibookData = [
         <li>Buy USD against CHF from <strong>Bank A</strong> @ ask rate: <strong>CHF 1.4655 per USD</strong>[cite: 8]</li>
         <li>Buy GBP against USD from <strong>Bank B</strong> @ ask rate: <strong>USD 1.7650 per GBP</strong>[cite: 8]</li>
       </ul>
-      <p>$$\text{Cross Ask Rate (GBP / CHF)} = 1.7650 \times 1.4655 = \mathbf{\text{CHF } 2.5866 \text{ per GBP}}$$[cite: 8]</p>
-      <p>$$\text{Amount Payable} = 10,00,000 \times \text{CHF } 2.5866 = \mathbf{\text{CHF } 25,86,600}$$[cite: 8]</p>
+      <p>$$\\text{Cross Ask Rate (GBP / CHF)} = 1.7650 \\times 1.4655 = \\mathbf{\\text{CHF } 2.5866 \\text{ per GBP}}$$[cite: 8]</p>
+      <p>$$\\text{Amount Payable} = 10,00,000 \\times \\text{CHF } 2.5866 = \\mathbf{\\text{CHF } 25,86,600}$$[cite: 8]</p>
 
       <h4>(ii) Implied 3-Month Swap Points for GBP / CHF (Bank A Only)</h4>
       <ul>
         <li><strong>Spot GBP / CHF:</strong>
-          <br />$$\text{Bid} = 1.7645 \times 1.4650 = \mathbf{2.5850}; \quad \text{Ask} = 1.7660 \times 1.4655 = \mathbf{2.5881}$$[cite: 8]
+          <br />$$\\text{Bid} = 1.7645 \\times 1.4650 = \\mathbf{2.5850}; \\quad \\text{Ask} = 1.7660 \\times 1.4655 = \\mathbf{2.5881}$$[cite: 8]
         </li>
         <li><strong>3-Month Outright Rates:</strong>
-          <br />GBP / USD swap points (25/20) are descending $\implies$ discount:
-          <br />$$\text{Outright GBP / USD} = (1.7645 - 0.0025) / (1.7660 - 0.0020) = 1.7620 / 1.7640$$[cite: 8]
-          <br />USD / CHF swap points (5/10) are ascending $\implies$ premium:
-          <br />$$\text{Outright USD / CHF} = (1.4650 + 0.0005) / (1.4655 + 0.0010) = 1.4655 / 1.4665$$[cite: 8]
+          <br />GBP / USD swap points (25/20) are descending \\$\\implies\\$ discount:
+          <br />$$\\text{Outright GBP / USD} = (1.7645 - 0.0025) / (1.7660 - 0.0020) = 1.7620 / 1.7640$$[cite: 8]
+          <br />USD / CHF swap points (5/10) are ascending \\$\\implies\\$ premium:
+          <br />$$\\text{Outright USD / CHF} = (1.4650 + 0.0005) / (1.4655 + 0.0010) = 1.4655 / 1.4665$$[cite: 8]
         </li>
         <li><strong>3-Month Outright GBP / CHF:</strong>
-          <br />$$\text{Bid} = 1.7620 \times 1.4655 = \mathbf{2.5822}; \quad \text{Ask} = 1.7640 \times 1.4665 = \mathbf{2.5869}$$[cite: 8]
+          <br />$$\\text{Bid} = 1.7620 \\times 1.4655 = \\mathbf{2.5822}; \\quad \\text{Ask} = 1.7640 \\times 1.4665 = \\mathbf{2.5869}$$[cite: 8]
         </li>
       </ul>
-      <p>$$\text{Swap Points (Bid)} = 2.5850 - 2.5822 = \mathbf{0.0028 \text{ (28 points discount)}}$$[cite: 8]</p>
-      <p>$$\text{Swap Points (Ask)} = 2.5881 - 2.5869 = \mathbf{0.0012 \text{ (12 points discount)}}$$[cite: 8]</p>
-      <p>$$\text{Implied Swap Points: } \mathbf{28 / 12 \text{ at a discount}}$$[cite: 8]</p>
+      <p>$$\\text{Swap Points (Bid)} = 2.5850 - 2.5822 = \\mathbf{0.0028 \\text{ (28 points discount)}}$$[cite: 8]</p>
+      <p>$$\\text{Swap Points (Ask)} = 2.5881 - 2.5869 = \\mathbf{0.0012 \\text{ (12 points discount)}}$$[cite: 8]</p>
+      <p>$$\\text{Implied Swap Points: } \\mathbf{28 / 12 \\text{ at a discount}}$$[cite: 8]</p>
     `
   },
   {
@@ -12537,47 +12537,47 @@ const icaibookData = [
     // placement: 59,
     marks: 10,
     question_html: `
-      <p>M/s Omega Electronics Ltd. exports 2,400 ACs to Germany at Euro 500 each and imports components from Singapore at S$ 800 each (FC = ₹ 1,000, VC = ₹ 1,500)[cite: 8]. Quotes:</p>
+      <p>M/s Omega Electronics Ltd. exports 2,400 ACs to Germany at Euro 500 each and imports components from Singapore at S\\$ 800 each (FC = ₹ 1,000, VC = ₹ 1,500)[cite: 8]. Quotes:</p>
       <ul>
-        <li>Current Spot: ₹/Euro = 51.50/55; ₹/S$ = 27.20/25[cite: 8]</li>
-        <li>6-Month Spot: ₹/Euro = 52.00/05; ₹/S$ = 27.70/75[cite: 8]</li>
+        <li>Current Spot: ₹/Euro = 51.50/55; ₹/S\\$ = 27.20/25[cite: 8]</li>
+        <li>6-Month Spot: ₹/Euro = 52.00/05; ₹/S\\$ = 27.70/75[cite: 8]</li>
       </ul>
-      <p>Calculate: (A) Loss/gain due to transaction exposure[cite: 8]. (B) Loss/gain due to transaction and operating exposure if contracted price is ₹ 25,000, price elasticity is 1.5, and new spot rates become ₹/Euro = 51.75/80 and ₹/S$ = 27.10/15[cite: 8].</p>
+      <p>Calculate: (A) Loss/gain due to transaction exposure[cite: 8]. (B) Loss/gain due to transaction and operating exposure if contracted price is ₹ 25,000, price elasticity is 1.5, and new spot rates become ₹/Euro = 51.75/80 and ₹/S\\$ = 27.10/15[cite: 8].</p>
     `,
     solution_html: `
       <h4>(A) Loss / Gain Due to Transaction Exposure</h4>
       <ul>
         <li>Initial Expected Profit at Current Rates:
-          <br />$$2,400 \times [500 \times ₹ 51.50 - (800 \times ₹ 27.25 + ₹ 1,000 + ₹ 1,500)]$$[cite: 8]
-          <br />$$2,400 \times [₹ 25,750 - ₹ 24,300] = 2,400 \times ₹ 1,450 = \mathbf{₹ 34,80,000}$$[cite: 8]
+          <br />$$2,400 \\times [500 \\times ₹ 51.50 - (800 \\times ₹ 27.25 + ₹ 1,000 + ₹ 1,500)]$$[cite: 8]
+          <br />$$2,400 \\times [₹ 25,750 - ₹ 24,300] = 2,400 \\times ₹ 1,450 = \\mathbf{₹ 34,80,000}$$[cite: 8]
         </li>
         <li>Actual Profit at 6-Month Realized Rates:
-          <br />$$2,400 \times [500 \times ₹ 52.00 - (800 \times ₹ 27.75 + ₹ 1,000 + ₹ 1,500)]$$[cite: 8]
-          <br />$$2,400 \times [₹ 26,000 - ₹ 24,700] = 2,400 \times ₹ 1,300 = \mathbf{₹ 31,20,000}$$[cite: 8]
+          <br />$$2,400 \\times [500 \\times ₹ 52.00 - (800 \\times ₹ 27.75 + ₹ 1,000 + ₹ 1,500)]$$[cite: 8]
+          <br />$$2,400 \\times [₹ 26,000 - ₹ 24,700] = 2,400 \\times ₹ 1,300 = \\mathbf{₹ 31,20,000}$$[cite: 8]
         </li>
       </ul>
-      <p>$$\text{Loss Due to Transaction Exposure} = ₹ 34,80,000 - ₹ 31,20,000 = \mathbf{₹ 3,60,000}$$[cite: 8]</p>
+      <p>$$\\text{Loss Due to Transaction Exposure} = ₹ 34,80,000 - ₹ 31,20,000 = \\mathbf{₹ 3,60,000}$$[cite: 8]</p>
 
       <h4>(B) Transaction &amp; Operating Exposure with Price Elasticity</h4>
       <ul>
-        <li>Contracted Unit Price in INR $= ₹ 25,000$[cite: 8]</li>
+        <li>Contracted Unit Price in INR \\$= ₹ 25,000\\$[cite: 8]</li>
         <li>Initial Base Profit:
-          <br />$$2,400 \times [₹ 25,000 - (800 \times ₹ 27.15 + ₹ 1,000 + ₹ 1,500)] = 2,400 \times [25,000 - 24,220] = \mathbf{₹ 18,72,000}$$[cite: 8]
+          <br />$$2,400 \\times [₹ 25,000 - (800 \\times ₹ 27.15 + ₹ 1,000 + ₹ 1,500)] = 2,400 \\times [25,000 - 24,220] = \\mathbf{₹ 18,72,000}$$[cite: 8]
         </li>
-        <li>Actual Profit After 6 Months (Exchange Rate ₹/S$ = 27.75):
-          <br />$$2,400 \times [₹ 25,000 - (800 \times ₹ 27.75 + ₹ 2,500)] = 2,400 \times [25,000 - 24,700] = \mathbf{₹ 7,20,000}$$[cite: 8]
+        <li>Actual Profit After 6 Months (Exchange Rate ₹/S\\$ = 27.75):
+          <br />$$2,400 \\times [₹ 25,000 - (800 \\times ₹ 27.75 + ₹ 2,500)] = 2,400 \\times [25,000 - 24,700] = \\mathbf{₹ 7,20,000}$$[cite: 8]
         </li>
-        <li>$$\text{Decline in Profit (Transaction Exposure)} = ₹ 18,72,000 - ₹ 7,20,000 = \mathbf{₹ 11,52,000}$$[cite: 8]</li>
+        <li>$$\\text{Decline in Profit (Transaction Exposure)} = ₹ 18,72,000 - ₹ 7,20,000 = \\mathbf{₹ 11,52,000}$$[cite: 8]</li>
         <li>Operating Volume Adjustment:
-          <br />Price in Euro at ₹ 51.50 $= \frac{₹ 25,000}{51.50} = € 485.44$[cite: 8]
-          <br />Price in Euro at ₹ 51.75 $= \frac{₹ 25,000}{51.75} = € 483.09$[cite: 8]
-          <br />Percentage fall in price $= \frac{485.44 - 483.09}{485.44} \times 100 = 0.484\%$[cite: 8]
-          <br />Increase in demand ($e = 1.5$): $0.484\% \times 1.5 = 0.726\% \approx 0.72\%$[cite: 8]
-          <br />New Sales Volume $= 2,400 \times 1.0072 = \mathbf{2,417 \text{ units}}$[cite: 8]
-          <br />$$\text{Revised Profit} = 2,417 \times (₹ 25,000 - ₹ 24,700) = 2,417 \times ₹ 300 = \mathbf{₹ 7,25,100}$$[cite: 8]
+          <br />Price in Euro at ₹ 51.50 \\$= \\frac{₹ 25,000}{51.50} = € 485.44\\$[cite: 8]
+          <br />Price in Euro at ₹ 51.75 \\$= \\frac{₹ 25,000}{51.75} = € 483.09\\$[cite: 8]
+          <br />Percentage fall in price \\$= \\frac{485.44 - 483.09}{485.44} \\times 100 = 0.484\\%\\$[cite: 8]
+          <br />Increase in demand (\\$e = 1.5\\$): \\$0.484\\% \\times 1.5 = 0.726\\% \\approx 0.72\\%\\$[cite: 8]
+          <br />New Sales Volume \\$= 2,400 \\times 1.0072 = \\mathbf{2,417 \\text{ units}}\\$[cite: 8]
+          <br />$$\\text{Revised Profit} = 2,417 \\times (₹ 25,000 - ₹ 24,700) = 2,417 \\times ₹ 300 = \\mathbf{₹ 7,25,100}$$[cite: 8]
         </li>
       </ul>
-      <p>$$\text{Decrease in Profit Due to Operating Exposure} = ₹ 18,72,000 - ₹ 7,25,100 = \mathbf{₹ 11,46,900}$$[cite: 8]</p>
+      <p>$$\\text{Decrease in Profit Due to Operating Exposure} = ₹ 18,72,000 - ₹ 7,25,100 = \\mathbf{₹ 11,46,900}$$[cite: 8]</p>
     `
   },
   {
@@ -12599,39 +12599,39 @@ const icaibookData = [
       <h4>1. Option 1: Invest in London (£ Money Market @ 5% p.a.)</h4>
       <ul>
         <li>Convert USD 5,00,000 to GBP spot @ ask rate 1.5390:
-          <br />$$\text{GBP Principal} = \frac{\$ 5,00,000}{1.5390} = \mathbf{£ 3,24,886.29}$$[cite: 8]
+          <br />$$\\text{GBP Principal} = \\frac{\\$ 5,00,000}{1.5390} = \\mathbf{£ 3,24,886.29}$$[cite: 8]
         </li>
         <li>Interest earned for 3 months @ 5% p.a.:
-          <br />$$£ 3,24,886.29 \times 5\% \times \frac{3}{12} = £ 4,061.08 \implies \text{Total GBP} = \mathbf{£ 3,28,947.37}$$[cite: 8]
+          <br />$$£ 3,24,886.29 \\times 5\\% \\times \\frac{3}{12} = £ 4,061.08 \\implies \\text{Total GBP} = \\mathbf{£ 3,28,947.37}$$[cite: 8]
         </li>
-        <li>USD Funding Cost to Repay: $\$ 5,00,000 \times (1 + 0.04 \times 0.25) = \$ 5,05,000$[cite: 8]</li>
-        <li>Pounds needed to buy back $ 5,05,000 @ forward rate 1.5430 ($1.5350 + 0.0080$):
-          <br />$$\frac{\$ 5,05,000}{1.5430} = \mathbf{£ 3,27,284.51}$$[cite: 8]
+        <li>USD Funding Cost to Repay: \\$\\$ 5,00,000 \\times (1 + 0.04 \\times 0.25) = \\$ 5,05,000\\$[cite: 8]</li>
+        <li>Pounds needed to buy back \\$ 5,05,000 @ forward rate 1.5430 (\\$1.5350 + 0.0080\\$):
+          <br />$$\\frac{\\$ 5,05,000}{1.5430} = \\mathbf{£ 3,27,284.51}$$[cite: 8]
         </li>
-        <li>$$\text{Net Gain (London)} = £ 3,28,947.37 - £ 3,27,284.51 = \mathbf{£ 1,662.86 \approx £ 1,662}$$[cite: 8]</li>
+        <li>$$\\text{Net Gain (London)} = £ 3,28,947.37 - £ 3,27,284.51 = \\mathbf{£ 1,662.86 \\approx £ 1,662}$$[cite: 8]</li>
       </ul>
 
-      <h4>2. Option 2: Invest in New York ($ Money Market @ 8% p.a.)</h4>
+      <h4>2. Option 2: Invest in New York (\\$ Money Market @ 8% p.a.)</h4>
       <ul>
-        <li>Net Interest Margin in USD: $8\% - 4\% = 4\%$ p.a.[cite: 8]</li>
-        <li>$$\text{Gain in USD} = \$ 5,00,000 \times 4\% \times \frac{3}{12} = \mathbf{\text{US\$ } 5,000}$$[cite: 8]</li>
-        <li>Convert USD gain to GBP @ 3-month forward ask rate 1.5475 ($1.5390 + 0.0085$):
-          <br />$$\text{Net Gain (New York)} = \frac{\$ 5,000}{1.5475} = \mathbf{£ 3,231.02 \approx £ 3,231}$$[cite: 8]
+        <li>Net Interest Margin in USD: \\$8\\% - 4\\% = 4\\%\\$ p.a.[cite: 8]</li>
+        <li>$$\\text{Gain in USD} = \\$ 5,00,000 \\times 4\\% \\times \\frac{3}{12} = \\mathbf{\\text{US\\$ } 5,000}$$[cite: 8]</li>
+        <li>Convert USD gain to GBP @ 3-month forward ask rate 1.5475 (\\$1.5390 + 0.0085\\$):
+          <br />$$\\text{Net Gain (New York)} = \\frac{\\$ 5,000}{1.5475} = \\mathbf{£ 3,231.02 \\approx £ 3,231}$$[cite: 8]
         </li>
       </ul>
 
       <h4>3. Option 3: Invest in Frankfurt (€ Money Market @ 3% p.a.)</h4>
       <ul>
-        <li>Convert USD to Euro spot via cross rate $\frac{1.8260}{1.5390} = 1.18648 €/\$$:
-          <br />$$\text{Euro Principal} = \$ 5,00,000 \times 1.18648 = \mathbf{€ 5,93,242.37 \approx € 5,93,250}$$[cite: 8]
+        <li>Convert USD to Euro spot via cross rate \\$\\frac{1.8260}{1.5390} = 1.18648 €/\\$$:
+          <br />$$\\text{Euro Principal} = \\$ 5,00,000 \\times 1.18648 = \\mathbf{€ 5,93,242.37 \\approx € 5,93,250}$$[cite: 8]
         </li>
         <li>Interest earned for 3 months @ 3% p.a.:
-          <br />$$€ 5,93,250 \times 3\% \times \frac{3}{12} = € 4,449.38 \implies \text{Total Euro} = \mathbf{€ 5,97,699.38}$$[cite: 8]
+          <br />$$€ 5,93,250 \\times 3\\% \\times \\frac{3}{12} = € 4,449.38 \\implies \\text{Total Euro} = \\mathbf{€ 5,97,699.38}$$[cite: 8]
         </li>
-        <li>Sell Euro forward for GBP @ $\frac{1}{1.8290 - 0.0140} = \frac{1}{1.8150} = £ 0.55096$:
-          <br />$$\text{GBP Proceeds} = € 5,97,699.38 \times 0.55096 = \mathbf{£ 3,29,310 \approx £ 3,29,332}$$[cite: 8]
+        <li>Sell Euro forward for GBP @ $\\frac{1}{1.8290 - 0.0140} = \\frac{1}{1.8150} = £ 0.55096$:
+          <br />$$\\text{GBP Proceeds} = € 5,97,699.38 \\times 0.55096 = \\mathbf{£ 3,29,310 \\approx £ 3,29,332}$$[cite: 8]
         </li>
-        <li>$$\text{Net Gain (Frankfurt)} = £ 3,29,332 - £ 3,27,285 = \mathbf{£ 2,047}$$[cite: 8]</li>
+        <li>$$\\text{Net Gain (Frankfurt)} = £ 3,29,332 - £ 3,27,285 = \\mathbf{£ 2,047}$$[cite: 8]</li>
       </ul>
 
       <h4>Conclusion</h4>
@@ -12646,7 +12646,7 @@ const icaibookData = [
     // placement: 61,
     marks: 8,
     question_html: `
-      <p>Drilldip Inc., a US-based firm, won an oil drilling contract in India requiring an initial investment of ₹ 500 crore[cite: 8]. The project will be sold to the Indian Government for ₹ 740 crore in 1 year[cite: 8]. Expected spot rate after 1 year: 1 US$ = ₹ 54[cite: 8]. Current spot rate: 1 US$ = ₹ 50[cite: 8]. Drilldip can borrow USD @ 8% p.a.[cite: 8]</p>
+      <p>Drilldip Inc., a US-based firm, won an oil drilling contract in India requiring an initial investment of ₹ 500 crore[cite: 8]. The project will be sold to the Indian Government for ₹ 740 crore in 1 year[cite: 8]. Expected spot rate after 1 year: 1 US$ = ₹ 54[cite: 8]. Current spot rate: 1 US\\$ = ₹ 50[cite: 8]. Drilldip can borrow USD @ 8% p.a.[cite: 8]</p>
       <ol type="a">
         <li>Construct a currency swap to reduce exchange rate risk[cite: 8].</li>
         <li>Evaluate whether Drilldip should accept a swap offered by the Indian Government at the current spot rate of ₹ 50/$ or do nothing[cite: 8].</li>
@@ -12655,8 +12655,8 @@ const icaibookData = [
     solution_html: `
       <h4>(a) Currency Swap Construction</h4>
       <ul>
-        <li><strong>Year 0 (Initiation):</strong> Drilldip borrows US$ 100 million in the US @ 8% and swaps it for ₹ 500 crore spot (@ ₹ 50/$) to fund the drilling investment[cite: 8].</li>
-        <li><strong>Year 1 (Termination):</strong> Drilldip swaps back ₹ 500 crore at the contractual swap rate of ₹ 50/$ to receive US$ 100 million, leaving only the profit of ₹ 240 crore ($₹ 740 - ₹ 500$) exposed to market spot rates[cite: 8].</li>
+        <li><strong>Year 0 (Initiation):</strong> Drilldip borrows US$ 100 million in the US @ 8\\% and swaps it for ₹ 500 crore spot (@ ₹ 50/$) to fund the drilling investment[cite: 8].</li>
+        <li><strong>Year 1 (Termination):</strong> Drilldip swaps back ₹ 500 crore at the contractual swap rate of ₹ 50/$ to receive US\\$ 100 million, leaving only the profit of ₹ 240 crore ($₹ 740 - ₹ 500$) exposed to market spot rates[cite: 8].</li>
       </ul>
 
       <h4>(b) Financial Evaluation: Swap vs. No Swap</h4>
@@ -12670,10 +12670,10 @@ const icaibookData = [
             </tr>
           </thead>
           <tbody>
-            <tr><td>Initial Outflow (Year 0): $\frac{₹ 500 \text{ cr}}{50}$</td><td style="text-align:right;">(100.00)</td><td style="text-align:right;">(100.00)</td></tr>
-            <tr><td>Swap Principal Recovery (Year 1): $\frac{₹ 500 \text{ cr}}{50}$</td><td style="text-align:right;">100.00</td><td style="text-align:right;">—</td></tr>
-            <tr><td>Spot Conversion of Surplus: $\frac{₹ 240 \text{ cr}}{54}$ vs. $\frac{₹ 740 \text{ cr}}{54}$</td><td style="text-align:right;">44.44</td><td style="text-align:right;">137.04</td></tr>
-            <tr><td>Less: US$ Loan Interest @ 8% on $ 100M</td><td style="text-align:right;">(8.00)</td><td style="text-align:right;">(8.00)</td></tr>
+            <tr><td>Initial Outflow (Year 0): $\\frac{₹ 500 \\text{ cr}}{50}$</td><td style="text-align:right;">(100.00)</td><td style="text-align:right;">(100.00)</td></tr>
+            <tr><td>Swap Principal Recovery (Year 1): $\\frac{₹ 500 \\text{ cr}}{50}$</td><td style="text-align:right;">100.00</td><td style="text-align:right;">—</td></tr>
+            <tr><td>Spot Conversion of Surplus: $\\frac{₹ 240 \\text{ cr}}{54}$ vs. $\\frac{₹ 740 \\text{ cr}}{54}$</td><td style="text-align:right;">44.44</td><td style="text-align:right;">137.04</td></tr>
+            <tr><td>Less: US$ Loan Interest @ 8\\% on $ 100M</td><td style="text-align:right;">(8.00)</td><td style="text-align:right;">(8.00)</td></tr>
             <tr style="font-weight:bold; background-color:#fafafa;">
               <td>Net Receipt at Year 1</td>
               <td style="text-align:right;"><strong>US$ 36.44 Million</strong>[cite: 8]</td>
@@ -12791,20 +12791,20 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Projected Exchange Rates (Purchasing Power Parity)</h4>
-      <p>$$E(S_t) = S_{t-1} \times \frac{1 + I_{\text{India}}}{1 + I_{\text{US}}}$$[cite: 9]</p>
+      <p>$$E(S_t) = S_{t-1} \\times \\frac{1 + I_{\\text{India}}}{1 + I_{\\text{US}}}$$[cite: 9]</p>
       <ul>
-        <li>Year 1: $57.00 \times \frac{1.060}{1.050} = \mathbf{₹ 57.54 / \$}$[cite: 9]</li>
-        <li>Year 2: $57.54 \times \frac{1.055}{1.050} = \mathbf{₹ 57.82 / \$}$[cite: 9]</li>
-        <li>Year 3: $57.82 \times \frac{1.050}{1.050} = \mathbf{₹ 57.82 / \$}$[cite: 9]</li>
-        <li>Year 4: $57.82 \times \frac{1.045}{1.050} = \mathbf{₹ 57.54 / \$}$[cite: 9]</li>
-        <li>Year 5: $57.54 \times \frac{1.040}{1.050} = \mathbf{₹ 56.99 / \$}$[cite: 9]</li>
-        <li>Year 6: $56.99 \times \frac{1.035}{1.050} = \mathbf{₹ 56.18 / \$}$[cite: 9]</li>
+        <li>Year 1: $57.00 \\times \\frac{1.060}{1.050} = \\mathbf{₹ 57.54 / \\$}$[cite: 9]</li>
+        <li>Year 2: $57.54 \\times \\frac{1.055}{1.050} = \\mathbf{₹ 57.82 / \\$}$[cite: 9]</li>
+        <li>Year 3: $57.82 \\times \\frac{1.050}{1.050} = \\mathbf{₹ 57.82 / \\$}$[cite: 9]</li>
+        <li>Year 4: $57.82 \\times \\frac{1.045}{1.050} = \\mathbf{₹ 57.54 / \\$}$[cite: 9]</li>
+        <li>Year 5: $57.54 \\times \\frac{1.040}{1.050} = \\mathbf{₹ 56.99 / \\$}$[cite: 9]</li>
+        <li>Year 6: $56.99 \\times \\frac{1.035}{1.050} = \\mathbf{₹ 56.18 / \\$}$[cite: 9]</li>
       </ul>
 
       <h4>2. Revenue and Royalty Schedule (₹ in crores)</h4>
       <ul>
-        <li>Depreciation p.a. $= \frac{₹ 200 - ₹ 5}{5} = \mathbf{₹ 39.00 \text{ crores}}$[cite: 9]</li>
-        <li>Royalty p.a. $= 24 \text{ cr bottles} \times \$ 0.01 = \mathbf{\$ 0.24 \text{ crore}}$[cite: 9]</li>
+        <li>Depreciation p.a. $= \\frac{₹ 200 - ₹ 5}{5} = \\mathbf{₹ 39.00 \\text{ crores}}$[cite: 9]</li>
+        <li>Royalty p.a. $= 24 \\text{ cr bottles} \\times \\$ 0.01 = \\mathbf{\\$ 0.24 \\text{ crore}}$[cite: 9]</li>
       </ul>
       <div style="overflow-x:auto;">
         <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
@@ -12819,11 +12819,11 @@ const icaibookData = [
             </tr>
           </thead>
           <tbody>
-            <tr><td>1</td><td>7.50</td><td>$7.50 \times 1.060 = 7.95$</td><td>190.80</td><td>104.94</td><td>$0.24 \times 57.54 = 13.81$</td></tr>
-            <tr><td>2</td><td>8.50</td><td>$8.50 \times 1.055 = 8.97$</td><td>215.28</td><td>118.40</td><td>$0.24 \times 57.82 = 13.88$</td></tr>
-            <tr><td>3</td><td>9.50</td><td>$9.50 \times 1.050 = 9.98$</td><td>239.52</td><td>131.74</td><td>$0.24 \times 57.82 = 13.88$</td></tr>
-            <tr><td>4</td><td>10.50</td><td>$10.50 \times 1.045 = 10.97$</td><td>263.28</td><td>144.80</td><td>$0.24 \times 57.54 = 13.81$</td></tr>
-            <tr><td>5</td><td>11.50</td><td>$11.50 \times 1.040 = 11.96$</td><td>287.04</td><td>157.87</td><td>$0.24 \times 56.99 = 13.68$</td></tr>
+            <tr><td>1</td><td>7.50</td><td>$7.50 \\times 1.060 = 7.95$</td><td>190.80</td><td>104.94</td><td>$0.24 \\times 57.54 = 13.81$</td></tr>
+            <tr><td>2</td><td>8.50</td><td>$8.50 \\times 1.055 = 8.97$</td><td>215.28</td><td>118.40</td><td>$0.24 \\times 57.82 = 13.88$</td></tr>
+            <tr><td>3</td><td>9.50</td><td>$9.50 \\times 1.050 = 9.98$</td><td>239.52</td><td>131.74</td><td>$0.24 \\times 57.82 = 13.88$</td></tr>
+            <tr><td>4</td><td>10.50</td><td>$10.50 \\times 1.045 = 10.97$</td><td>263.28</td><td>144.80</td><td>$0.24 \\times 57.54 = 13.81$</td></tr>
+            <tr><td>5</td><td>11.50</td><td>$11.50 \\times 1.040 = 11.96$</td><td>287.04</td><td>157.87</td><td>$0.24 \\times 56.99 = 13.68$</td></tr>
           </tbody>
         </table>
       </div>
@@ -12939,24 +12939,24 @@ const icaibookData = [
       <h4>1. Cost of Capital / Project Discount Rate</h4>
       <ul>
         <li>Un-gearing Competitor's Beta (Asset Beta in Nepal):
-          <br />$$\beta_{\text{asset}} = \beta_E \times \frac{E}{E + D(1 - t)} = 1.35 \times \frac{1,850}{1,850 + 510(1 - 0.20)} = 1.35 \times \frac{1,850}{2,258} = \mathbf{1.106}$$[cite: 9]
+          <br />$$\\beta_{\\text{asset}} = \\beta_E \\times \\frac{E}{E + D(1 - t)} = 1.35 \\times \\frac{1,850}{1,850 + 510(1 - 0.20)} = 1.35 \\times \\frac{1,850}{2,258} = \\mathbf{1.106}$$[cite: 9]
         </li>
-        <li>Re-gearing for Water Park Project ($E = 55\%, D = 45\%$):
-          <br />$$1.106 = \beta_E \times \frac{55}{55 + 45(1 - 0.20)} = \beta_E \times \frac{55}{91} \implies \beta_E = \mathbf{1.83}$$[cite: 9]
+        <li>Re-gearing for Water Park Project ($E = 55\\%, D = 45\\%$):
+          <br />$$1.106 = \\beta_E \\times \\frac{55}{55 + 45(1 - 0.20)} = \\beta_E \\times \\frac{55}{91} \\implies \\beta_E = \\mathbf{1.83}$$[cite: 9]
         </li>
         <li>Cost of Equity ($K_e$ via CAPM):
-          <br />$$K_e = 8\% + 1.83(11\% - 8\%) = 8\% + 5.49\% = \mathbf{13.49\%}$$[cite: 9]
+          <br />$$K_e = 8\\% + 1.83(11\\% - 8\\%) = 8\\% + 5.49\\% = \\mathbf{13.49\\%}$$[cite: 9]
         </li>
         <li>WACC in Nepal:
-          <br />$$\text{WACC} = (13.49\% \times 0.55) + [9\%(1 - 0.20) \times 0.45] = 7.42\% + 3.24\% = \mathbf{10.66\%}$$[cite: 9]
+          <br />$$\\text{WACC} = (13.49\\% \\times 0.55) + [9\\%(1 - 0.20) \\times 0.45] = 7.42\\% + 3.24\\% = \\mathbf{10.66\\%}$$[cite: 9]
         </li>
       </ul>
 
       <h4>2. Annual Operating Numbers (NPR in crores)</h4>
       <ul>
-        <li>Annual Visitors: $20,000 \times 70\% \times 360 = \mathbf{50,40,000 \text{ visitors}}$[cite: 9]</li>
-        <li>Year 0 Base Revenue per visitor: $220 + (150 \times 20\%) + (50 \times 50\%) = 220 + 30 + 25 = \mathbf{\text{NPR } 275}$[cite: 9]
-          <br />At Year 2 ($t=2$): $275 \times (1.05)^2 = \text{NPR } 303.19$ per visitor $\implies \mathbf{\text{NPR } 152.81 \text{ crores}}$[cite: 9]
+        <li>Annual Visitors: $20,000 \\times 70\\% \\times 360 = \\mathbf{50,40,000 \\text{ visitors}}$[cite: 9]</li>
+        <li>Year 0 Base Revenue per visitor: $220 + (150 \\times 20\\%) + (50 \\times 50\\%) = 220 + 30 + 25 = \\mathbf{\\text{NPR } 275}$[cite: 9]
+          <br />At Year 2 ($t=2$): $275 \\times (1.05)^2 = \\text{NPR } 303.19$ per visitor $\\implies \\mathbf{\\text{NPR } 152.81 \\text{ crores}}$[cite: 9]
         </li>
       </ul>
 
@@ -13019,20 +13019,20 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Cost of Capital via GDR Issue</h4>
-      <p>$$D_1 = ₹ 10 \times 25\% \times 1.10 = ₹ 2.75$$[cite: 9]</p>
-      <p>$$\text{Net Proceeds per share} = ₹ 200 \times (1 - 0.01) = ₹ 198$$[cite: 9]</p>
-      <p>$$K_e = \frac{D_1}{P_0} + g = \frac{₹ 2.75}{₹ 198} + 0.10 = 0.01389 + 0.10 = \mathbf{11.39\%}$$[cite: 9]</p>
+      <p>$$D_1 = ₹ 10 \\times 25\\% \\times 1.10 = ₹ 2.75$$[cite: 9]</p>
+      <p>$$\\text{Net Proceeds per share} = ₹ 200 \\times (1 - 0.01) = ₹ 198$$[cite: 9]</p>
+      <p>$$K_e = \\frac{D_1}{P_0} + g = \\frac{₹ 2.75}{₹ 198} + 0.10 = 0.01389 + 0.10 = \\mathbf{11.39\\%}$$[cite: 9]</p>
 
       <h4>2. Projected Exchange Rates (Interest Rate Parity)</h4>
       <ul>
-        <li>Year 1: $9.50 \times \frac{1 + 0.12}{1 + 0.10} = \mathbf{₹ 9.67 \text{ per CN¥}}$[cite: 9]</li>
-        <li>Year 2: $9.50 \times \frac{(1.12)^2}{(1.10)^2} = \mathbf{₹ 9.85 \text{ per CN¥}}$[cite: 9]</li>
+        <li>Year 1: $9.50 \\times \\frac{1 + 0.12}{1 + 0.10} = \\mathbf{₹ 9.67 \\text{ per CN¥}}$[cite: 9]</li>
+        <li>Year 2: $9.50 \\times \\frac{(1.12)^2}{(1.10)^2} = \\mathbf{₹ 9.85 \\text{ per CN¥}}$[cite: 9]</li>
       </ul>
 
       <h4>3. Terminal Asset Recoveries Net of 25% Tax (CN¥)</h4>
       <ul>
-        <li>Land: Cost = 30,00,000; Sale = 35,00,000 $\implies \text{Tax} = 25\%(5,00,000) = 1,25,000 \implies \text{Net} = \mathbf{\text{CN¥ } 33,75,000}$[cite: 9]</li>
-        <li>Complex: WDV = 0; Sale = 5,00,000 $\implies \text{Tax} = 25\%(5,00,000) = 1,25,000 \implies \text{Net} = \mathbf{\text{CN¥ } 3,75,000}$[cite: 9]</li>
+        <li>Land: Cost = 30,00,000; Sale = 35,00,000 $\\implies \\text{Tax} = 25\\%(5,00,000) = 1,25,000 \\implies \\text{Net} = \\mathbf{\\text{CN¥ } 33,75,000}$[cite: 9]</li>
+        <li>Complex: WDV = 0; Sale = 5,00,000 $\\implies \\text{Tax} = 25\\%(5,00,000) = 1,25,000 \\implies \\text{Net} = \\mathbf{\\text{CN¥ } 3,75,000}$[cite: 9]</li>
       </ul>
 
       <h4>4. (a) Project NPV in Chinese Yuan (CN¥)</h4>
@@ -13107,19 +13107,19 @@ const icaibookData = [
     solution_html: `
       <h4>1. Issue Price and Number of GDRs</h4>
       <ul>
-        <li>$$\text{Gross Funds Required} = \frac{\$ 10,000,000}{1 - 0.02} = \mathbf{\$ 10.204 \text{ million}}$$[cite: 9]</li>
+        <li>$$\\text{Gross Funds Required} = \\frac{\\$ 10,000,000}{1 - 0.02} = \\mathbf{\\$ 10.204 \\text{ million}}$$[cite: 9]</li>
         <li>Issue Price per GDR in INR:
-          <br />$$2 \text{ shares} \times ₹ 250 \times (1 - 0.10) = 2 \times ₹ 225 = \mathbf{₹ 450.00}$$[cite: 9]
+          <br />$$2 \\text{ shares} \\times ₹ 250 \\times (1 - 0.10) = 2 \\times ₹ 225 = \\mathbf{₹ 450.00}$$[cite: 9]
         </li>
-        <li>$$\text{Issue Price per GDR in USD} = \frac{₹ 450}{₹ 60} = \mathbf{\$ 7.50}$$[cite: 9]</li>
-        <li>$$\text{Number of GDRs to be Issued} = \frac{\$ 10.204 \text{ million}}{\$ 7.50} = \mathbf{1.3605 \text{ million GDRs}}$$[cite: 9]</li>
+        <li>$$\\text{Issue Price per GDR in USD} = \\frac{₹ 450}{₹ 60} = \\mathbf{\\$ 7.50}$$[cite: 9]</li>
+        <li>$$\\text{Number of GDRs to be Issued} = \\frac{\\$ 10.204 \\text{ million}}{\\$ 7.50} = \\mathbf{1.3605 \\text{ million GDRs}}$$[cite: 9]</li>
       </ul>
 
       <h4>2. Cost of Capital of GDR ($K_e$)</h4>
       <ul>
-        <li>Dividend per GDR ($D_1$): $2 \text{ shares} \times (₹ 100 \times 20\%) = \mathbf{₹ 40.00}$[cite: 9]</li>
-        <li>$$\text{Net Proceeds per GDR} = ₹ 450 \times (1 - 0.02) = \mathbf{₹ 441.00}$$[cite: 9]</li>
-        <li>$$K_e = \frac{D_1}{\text{Net Proceeds}} + g = \frac{₹ 40.00}{₹ 441.00} + 0.12 = 0.0907 + 0.12 = \mathbf{21.07\%}$$[cite: 9]</li>
+        <li>Dividend per GDR ($D_1$): $2 \\text{ shares} \\times (₹ 100 \\times 20\\%) = \\mathbf{₹ 40.00}$[cite: 9]</li>
+        <li>$$\\text{Net Proceeds per GDR} = ₹ 450 \\times (1 - 0.02) = \\mathbf{₹ 441.00}$$[cite: 9]</li>
+        <li>$$K_e = \\frac{D_1}{\\text{Net Proceeds}} + g = \\frac{₹ 40.00}{₹ 441.00} + 0.12 = 0.0907 + 0.12 = \\mathbf{21.07\\%}$$[cite: 9]</li>
       </ul>
     `
   },
@@ -13196,10 +13196,10 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Risk-Adjusted Dollar Discount Rate</h4>
-      <p>$$(1 + r_{f,\text{India}})(1 + \text{Risk Premium}) = (1 + k_{\text{India}})$$[cite: 9]</p>
-      <p>$$(1 + 0.12)(1 + \text{Risk Premium}) = (1 + 0.14) \implies 1 + \text{Risk Premium} = \frac{1.14}{1.12} = \mathbf{1.017857}$$[cite: 9]</p>
-      <p>$$\text{Risk-Adjusted US\$ Rate} = (1 + \text{Risk Premium}) \times (1 + r_{f,\text{US}}) - 1$$[cite: 9]</p>
-      <p>$$\text{Rate} = (1.017857 \times 1.08) - 1 = 1.099286 - 1 = \mathbf{9.93\% \approx 9.90\%}$$[cite: 9]</p>
+      <p>$$(1 + r_{f,\\text{India}})(1 + \\text{Risk Premium}) = (1 + k_{\\text{India}})$$[cite: 9]</p>
+      <p>$$(1 + 0.12)(1 + \\text{Risk Premium}) = (1 + 0.14) \\implies 1 + \\text{Risk Premium} = \\frac{1.14}{1.12} = \\mathbf{1.017857}$$[cite: 9]</p>
+      <p>$$\\text{Risk-Adjusted US\\$ Rate} = (1 + \\text{Risk Premium}) \\times (1 + r_{f,\\text{US}}) - 1$$[cite: 9]</p>
+      <p>$$\\text{Rate} = (1.017857 \\times 1.08) - 1 = 1.099286 - 1 = \\mathbf{9.93\\% \\approx 9.90\\%}$$[cite: 9]</p>
 
       <h4>2. Discounted Cash Flows in Foreign Currency ($)</h4>
       <div style="overflow-x:auto;">
@@ -13233,7 +13233,7 @@ const icaibookData = [
           </tbody>
         </table>
       </div>
-      <p>$$\text{Rupee NPV} = \$ 1.013 \text{ million} \times ₹ 48 = \mathbf{₹ 48.624 \text{ Million}}$$[cite: 9]</p>
+      <p>$$\\text{Rupee NPV} = \\$ 1.013 \\text{ million} \\times ₹ 48 = \\mathbf{₹ 48.624 \\text{ Million}}$$[cite: 9]</p>
     `
   },
   {
@@ -13257,26 +13257,26 @@ const icaibookData = [
     solution_html: `
       <h4>1. Operating Financials of Indian Unit</h4>
       <ul>
-        <li>Revenue from Parent: $\text{US\$ } 10 \text{ million} \times ₹ 48 = \mathbf{₹ 48,00,00,000}$[cite: 9]</li>
+        <li>Revenue from Parent: $\\text{US\\$ } 10 \\text{ million} \\times ₹ 48 = \\mathbf{₹ 48,00,00,000}$[cite: 9]</li>
         <li>Less Operating Costs:
           <ul>
             <li>Rent $= ₹ 15,00,000$[cite: 9]</li>
-            <li>Manpower: $80 \times 10 \times 365 \times ₹ 400 = \mathbf{₹ 11,68,00,000}$[cite: 9]</li>
+            <li>Manpower: $80 \\times 10 \\times 365 \\times ₹ 400 = \\mathbf{₹ 11,68,00,000}$[cite: 9]</li>
             <li>Administrative Costs $= ₹ 12,00,000$[cite: 9]</li>
-            <li>Total Operating Expenses $= \mathbf{₹ 11,95,00,000}$[cite: 9]</li>
+            <li>Total Operating Expenses $= \\mathbf{₹ 11,95,00,000}$[cite: 9]</li>
           </ul>
         </li>
-        <li>$$\text{Earnings Before Tax (EBT)} = ₹ 48,00,00,000 - ₹ 11,95,00,000 = \mathbf{₹ 36,05,00,000}$$[cite: 9]</li>
-        <li>Less: Indian Corporate Tax @ 30% $= 30\% \times ₹ 36,05,00,000 = \mathbf{₹ 10,81,50,000}$[cite: 9]</li>
-        <li>$$\text{Earnings After Tax (EAT)} = ₹ 36,05,00,000 - ₹ 10,81,50,000 = \mathbf{₹ 25,23,50,000}$$[cite: 9]</li>
-        <li>Less: Withholding Tax (TDS) @ 10% $= 10\% \times ₹ 25,23,50,000 = \mathbf{₹ 2,52,35,000}$[cite: 9]</li>
-        <li>$$\text{Net Repatriation to Parent} = ₹ 25,23,50,000 - ₹ 2,52,35,000 = \mathbf{₹ 22,71,15,000}$$[cite: 9]</li>
+        <li>$$\\text{Earnings Before Tax (EBT)} = ₹ 48,00,00,000 - ₹ 11,95,00,000 = \\mathbf{₹ 36,05,00,000}$$[cite: 9]</li>
+        <li>Less: Indian Corporate Tax @ 30% $= 30\\% \\times ₹ 36,05,00,000 = \\mathbf{₹ 10,81,50,000}$[cite: 9]</li>
+        <li>$$\\text{Earnings After Tax (EAT)} = ₹ 36,05,00,000 - ₹ 10,81,50,000 = \\mathbf{₹ 25,23,50,000}$$[cite: 9]</li>
+        <li>Less: Withholding Tax (TDS) @ 10% $= 10\\% \\times ₹ 25,23,50,000 = \\mathbf{₹ 2,52,35,000}$[cite: 9]</li>
+        <li>$$\\text{Net Repatriation to Parent} = ₹ 25,23,50,000 - ₹ 2,52,35,000 = \\mathbf{₹ 22,71,15,000}$$[cite: 9]</li>
       </ul>
 
       <h4>2. Cost to US Parent and Viability Assessment</h4>
-      <p>$$\text{Net Inflow Repatriated in USD} = \frac{₹ 22,71,15,000}{₹ 48} = \mathbf{\text{US\$ } 4.7315 \text{ Million}}$$[cite: 9]</p>
-      <p>$$\text{Net Cost of Development to Parent} = \text{Transfer Price} - \text{Repatriated Inflow} = \$ 10.00\text{m} - \$ 4.7315\text{m} = \mathbf{\text{US\$ } 5.2685 \text{ Million}}$$[cite: 9]</p>
-      <p>$$\text{Net Profit on US Market Sale} = \$ 12.00\text{m} - \$ 5.2685\text{m} = \mathbf{+\text{US\$ } 6.7315 \text{ Million}}$$[cite: 9]</p>
+      <p>$$\\text{Net Inflow Repatriated in USD} = \\frac{₹ 22,71,15,000}{₹ 48} = \\mathbf{\\text{US\\$ } 4.7315 \\text{ Million}}$$[cite: 9]</p>
+      <p>$$\\text{Net Cost of Development to Parent} = \\text{Transfer Price} - \\text{Repatriated Inflow} = \\$ 10.00\\text{m} - \\$ 4.7315\\text{m} = \\mathbf{\\text{US\\$ } 5.2685 \\text{ Million}}$$[cite: 9]</p>
+      <p>$$\\text{Net Profit on US Market Sale} = \\$ 12.00\\text{m} - \\$ 5.2685\\text{m} = \\mathbf{+\\text{US\\$ } 6.7315 \\text{ Million}}$$[cite: 9]</p>
       <p><strong>Advice:</strong> Developing the software in India is <strong>financially highly viable</strong>, generating a substantial net surplus over US market realization[cite: 9].</p>
     `
   },
@@ -13310,7 +13310,7 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Projected Exchange Rates (Interest Rate Parity / PPP)</h4>
-      <p>$$S_t = S_{t-1} \times \frac{1 + 0.40}{1 + 0.10} = S_{t-1} \times 1.2727$$[cite: 9]</p>
+      <p>$$S_t = S_{t-1} \\times \\frac{1 + 0.40}{1 + 0.10} = S_{t-1} \\times 1.2727$$[cite: 9]</p>
       <ul>
         <li>Year 0 = 6.0000; Year 1 = 7.6364; Year 2 = 9.7190; Year 3 = 12.3696 Rand / ₹[cite: 9]</li>
       </ul>
@@ -13328,9 +13328,9 @@ const icaibookData = [
             </tr>
           </thead>
           <tbody>
-            <tr><td>Nominal Indian CF (₹)</td><td>(50,000)</td><td>$-1,500 \times 1.10 = -1,650$</td><td>$-2,000 \times 1.21 = -2,420$</td><td>$-2,500 \times 1.331 = -3,327.5$</td></tr>
-            <tr><td>Nominal African CF (Rand)</td><td>(2,00,000)</td><td>$50,000 \times 1.40 = 70,000$</td><td>$70,000 \times 1.96 = 1,37,200$</td><td>$90,000 \times 2.744 = 2,46,960$</td></tr>
-            <tr><td>African CF in INR (₹)</td><td>(33,333)</td><td>$\frac{70,000}{7.6364} = 9,167$</td><td>$\frac{1,37,200}{9.7190} = 14,117$</td><td>$\frac{2,46,960}{12.3696} = 19,965$</td></tr>
+            <tr><td>Nominal Indian CF (₹)</td><td>(50,000)</td><td>$-1,500 \\times 1.10 = -1,650$</td><td>$-2,000 \\times 1.21 = -2,420$</td><td>$-2,500 \\times 1.331 = -3,327.5$</td></tr>
+            <tr><td>Nominal African CF (Rand)</td><td>(2,00,000)</td><td>$50,000 \\times 1.40 = 70,000$</td><td>$70,000 \\times 1.96 = 1,37,200$</td><td>$90,000 \\times 2.744 = 2,46,960$</td></tr>
+            <tr><td>African CF in INR (₹)</td><td>(33,333)</td><td>$\\frac{70,000}{7.6364} = 9,167$</td><td>$\\frac{1,37,200}{9.7190} = 14,117$</td><td>$\\frac{2,46,960}{12.3696} = 19,965$</td></tr>
             <tr style="font-weight:bold; background-color:#fafafa;">
               <td>Net Cash Flow (₹ '000)</td>
               <td>(83,333)</td>
@@ -13345,14 +13345,14 @@ const icaibookData = [
       <h4>3. Discounted Cash Flows and Project NPV</h4>
       <ul>
         <li>PV of Inflows (Years 1 to 3):
-          <br />$$(7,517 \times 0.833) + (11,697 \times 0.694) + (16,637 \times 0.579) = 6,262 + 8,118 + 9,633 = ₹ 24,013 \text{ ('000)}$$[cite: 9]
+          <br />$$(7,517 \\times 0.833) + (11,697 \\times 0.694) + (16,637 \\times 0.579) = 6,262 + 8,118 + 9,633 = ₹ 24,013 \\text{ ('000)}$$[cite: 9]
         </li>
         <li>Capitalized Terminal Value of Year 3 Perpetuity:
-          <br />$$\text{PV} = \frac{16,637.5}{0.20} \times 0.579 = 83,187.5 \times 0.579 = \mathbf{₹ 48,164 \text{ ('000)}}$$[cite: 9]
+          <br />$$\\text{PV} = \\frac{16,637.5}{0.20} \\times 0.579 = 83,187.5 \\times 0.579 = \\mathbf{₹ 48,164 \\text{ ('000)}}$$[cite: 9]
         </li>
-        <li>$$\text{Total PV of Operating Inflows} = 24,013 + 48,164 = \mathbf{₹ 72,177 \text{ ('000)}}$$</li>
+        <li>$$\\text{Total PV of Operating Inflows} = 24,013 + 48,164 = \\mathbf{₹ 72,177 \\text{ ('000)}}$$</li>
       </ul>
-      <p>$$\text{Project NPV} = ₹ 72,177 - ₹ 83,333 = \mathbf{-₹ 11,156 \text{ ('000)}}$$[cite: 9]</p>
+      <p>$$\\text{Project NPV} = ₹ 72,177 - ₹ 83,333 = \\mathbf{-₹ 11,156 \\text{ ('000)}}$$[cite: 9]</p>
       <p><strong>Decision:</strong> The project generates a negative NPV of <strong>-₹ 11.156 million</strong>; therefore, it <strong>should not be undertaken</strong>[cite: 9].</p>
     `
   },
@@ -13366,50 +13366,50 @@ const icaibookData = [
     question_html: `
       <p>An MNC plans to establish a manufacturing subsidiary in India instead of exporting[cite: 9]:</p>
       <ul>
-        <li>Initial cost: Plant and Machinery = US$ 500 million (5-year life, SLM depreciation to zero)[cite: 9]; Net working capital = US$ 50 million (released at Year 5)[cite: 9]. Existing working capital released from stopping exports = US$ 15 million[cite: 9].</li>
-        <li>Capacity: 5 million units @ US$ 80 selling price, variable operating cost = US$ 20/unit, additional cash fixed cost = US$ 30 million p.a. (allocated fixed cost of $ 3 million ignored)[cite: 9].</li>
-        <li>Cannibalized Exports: Currently exports 2 million units (would decline to 1.5 million units if subsidiary is not set up) @ US$ 80, variable cost = US$ 40/unit[cite: 9].</li>
-        <li>Tax rate = 35%; Required rate of return = 12% ($PVAF_{12\%, 5} = 3.6048; PVF_{12\%, 5} = 0.5674$)[cite: 9].</li>
+        <li>Initial cost: Plant and Machinery = US$ 500 million (5-year life, SLM depreciation to zero)[cite: 9]; Net working capital = US\\$ 50 million (released at Year 5)[cite: 9]. Existing working capital released from stopping exports = US$ 15 million[cite: 9].</li>
+        <li>Capacity: 5 million units @ US$ 80 selling price, variable operating cost = US\\$ 20/unit, additional cash fixed cost = US$ 30 million p.a. (allocated fixed cost of $ 3 million ignored)[cite: 9].</li>
+        <li>Cannibalized Exports: Currently exports 2 million units (would decline to 1.5 million units if subsidiary is not set up) @ US$ 80, variable cost = US\\$ 40/unit[cite: 9].</li>
+        <li>Tax rate = 35%; Required rate of return = 12% ($PVAF_{12\\%, 5} = 3.6048; PVF_{12\\%, 5} = 0.5674$)[cite: 9].</li>
       </ul>
       <p>Estimate the Net Present Value (NPV) of the proposed project in India[cite: 9].</p>
     `,
     solution_html: `
       <h4>1. Initial Incremental Cash Outflow ($ Millions)</h4>
       <ul>
-        <li>Plant and Machinery $= \$ 500.00\text{m}$[cite: 9]</li>
-        <li>Working Capital required $= \$ 50.00\text{m}$[cite: 9]</li>
-        <li>Less: Working Capital released from existing export operations $= (\$ 15.00\text{m})$[cite: 9]</li>
-        <li>$$\text{Net Initial Outlay} = \$ 500 + \$ 50 - \$ 15 = \mathbf{\text{US\$ } 535.00 \text{ Million}}$$[cite: 9]</li>
+        <li>Plant and Machinery $= \\$ 500.00\\text{m}$[cite: 9]</li>
+        <li>Working Capital required $= \\$ 50.00\\text{m}$[cite: 9]</li>
+        <li>Less: Working Capital released from existing export operations $= (\\$ 15.00\\text{m})$[cite: 9]</li>
+        <li>$$\\text{Net Initial Outlay} = \\$ 500 + \\$ 50 - \\$ 15 = \\mathbf{\\text{US\\$ } 535.00 \\text{ Million}}$$[cite: 9]</li>
       </ul>
 
       <h4>2. Annual Operating CFAT from Indian Subsidiary ($ Millions)</h4>
       <ul>
-        <li>Sales Revenue ($5\text{m units} \times \$ 80$) $= \$ 400.00\text{m}$[cite: 9]</li>
-        <li>Less: Variable Cost ($5\text{m units} \times \$ 20$) $= (\$ 100.00\text{m})$[cite: 9]</li>
-        <li>Less: Cash Fixed Costs $= (\$ 30.00\text{m})$[cite: 9]</li>
-        <li>Less: Depreciation ($\$ 500\text{m} / 5$) $= (\$ 100.00\text{m})$[cite: 9]</li>
-        <li>$$\text{EBIT} = \$ 400 - \$ 100 - \$ 30 - \$ 100 = \mathbf{\$ 170.00 \text{ Million}}$$[cite: 9]</li>
-        <li>Less: Tax @ 35% $= 35\% \times \$ 170 = (\$ 59.50\text{m}) \implies \text{EAT} = \$ 110.50\text{m}$[cite: 9]</li>
-        <li>$$\text{CFAT (Subsidiary)} = \text{EAT} + \text{Depreciation} = \$ 110.50 + \$ 100.00 = \mathbf{\$ 210.50 \text{ Million p.a.}}$$[cite: 9]</li>
+        <li>Sales Revenue ($5\\text{m units} \\times \\$ 80$) $= \\$ 400.00\\text{m}$[cite: 9]</li>
+        <li>Less: Variable Cost ($5\\text{m units} \\times \\$ 20$) $= (\\$ 100.00\\text{m})$[cite: 9]</li>
+        <li>Less: Cash Fixed Costs $= (\\$ 30.00\\text{m})$[cite: 9]</li>
+        <li>Less: Depreciation ($\\$ 500\\text{m} / 5$) $= (\\$ 100.00\\text{m})$[cite: 9]</li>
+        <li>$$\\text{EBIT} = \\$ 400 - \\$ 100 - \\$ 30 - \\$ 100 = \\mathbf{\\$ 170.00 \\text{ Million}}$$[cite: 9]</li>
+        <li>Less: Tax @ 35% $= 35\\% \\times \\$ 170 = (\\$ 59.50\\text{m}) \\implies \\text{EAT} = \\$ 110.50\\text{m}$[cite: 9]</li>
+        <li>$$\\text{CFAT (Subsidiary)} = \\text{EAT} + \\text{Depreciation} = \\$ 110.50 + \\$ 100.00 = \\mathbf{\\$ 210.50 \\text{ Million p.a.}}$$[cite: 9]</li>
       </ul>
 
       <h4>3. Opportunity Cost of Cannibalized Exports ($ Millions)</h4>
       <ul>
-        <li>Lost Export Volume $= 1.50 \text{ million units}$[cite: 9]</li>
-        <li>Contribution per unit $= \$ 80 - \$ 40 = \$ 40$[cite: 9]</li>
-        <li>$$\text{Lost Pre-tax Contribution} = 1.50\text{m} \times \$ 40 = \$ 60.00\text{m}$$[cite: 9]</li>
-        <li>$$\text{Lost After-tax CFAT} = \$ 60.00\text{m} \times (1 - 0.35) = \mathbf{\$ 39.00 \text{ Million p.a.}}$$[cite: 9]</li>
+        <li>Lost Export Volume $= 1.50 \\text{ million units}$[cite: 9]</li>
+        <li>Contribution per unit $= \\$ 80 - \\$ 40 = \\$ 40$[cite: 9]</li>
+        <li>$$\\text{Lost Pre-tax Contribution} = 1.50\\text{m} \\times \\$ 40 = \\$ 60.00\\text{m}$$[cite: 9]</li>
+        <li>$$\\text{Lost After-tax CFAT} = \\$ 60.00\\text{m} \\times (1 - 0.35) = \\mathbf{\\$ 39.00 \\text{ Million p.a.}}$$[cite: 9]</li>
       </ul>
 
       <h4>4. Net Incremental Cash Inflows and NPV</h4>
       <ul>
-        <li>$$\text{Net Annual Incremental CFAT} = \$ 210.50\text{m} - \$ 39.00\text{m} = \mathbf{\$ 171.50 \text{ Million p.a.}}$$[cite: 9]</li>
-        <li>Terminal Recovery of Working Capital at Year 5: $\$ 50\text{m} - \$ 15\text{m} = \mathbf{\$ 35.00 \text{ Million}}$[cite: 9]</li>
-        <li>$$\text{PV of Annual Operating CFAT} = \$ 171.50\text{m} \times 3.6048 = \$ 618.2232\text{m}$$[cite: 9]</li>
-        <li>$$\text{PV of Terminal Working Capital} = \$ 35.00\text{m} \times 0.5674 = \$ 19.8590\text{m}$$[cite: 9]</li>
-        <li>$$\text{Total Present Value of Inflows} = \$ 618.2232\text{m} + \$ 19.8590\text{m} = \mathbf{\$ 638.0822 \text{ Million}}$$[cite: 9]</li>
+        <li>$$\\text{Net Annual Incremental CFAT} = \\$ 210.50\\text{m} - \\$ 39.00\\text{m} = \\mathbf{\\$ 171.50 \\text{ Million p.a.}}$$[cite: 9]</li>
+        <li>Terminal Recovery of Working Capital at Year 5: $\\$ 50\\text{m} - \\$ 15\\text{m} = \\mathbf{\\$ 35.00 \\text{ Million}}$[cite: 9]</li>
+        <li>$$\\text{PV of Annual Operating CFAT} = \\$ 171.50\\text{m} \\times 3.6048 = \\$ 618.2232\\text{m}$$[cite: 9]</li>
+        <li>$$\\text{PV of Terminal Working Capital} = \\$ 35.00\\text{m} \\times 0.5674 = \\$ 19.8590\\text{m}$$[cite: 9]</li>
+        <li>$$\\text{Total Present Value of Inflows} = \\$ 618.2232\\text{m} + \\$ 19.8590\\text{m} = \\mathbf{\\$ 638.0822 \\text{ Million}}$$[cite: 9]</li>
       </ul>
-      <p>$$\text{Project NPV} = \$ 638.0822\text{m} - \$ 535.0000\text{m} = \mathbf{+\text{US\$ } 103.0822 \text{ Million}}$$[cite: 9]</p>
+      <p>$$\\text{Project NPV} = \\$ 638.0822\\text{m} - \\$ 535.0000\\text{m} = \\mathbf{+\\text{US\\$ } 103.0822 \\text{ Million}}$$[cite: 9]</p>
       <p><strong>Decision:</strong> Because the Net Present Value is positive, the project to set up a manufacturing subsidiary in India <strong>should be accepted</strong>[cite: 9].</p>
     `
   },
@@ -13445,17 +13445,17 @@ const icaibookData = [
     solution_html: `
       <h4>1. Forward Exchange Rates (NC per ₹)</h4>
       <ul>
-        <li>Year 1: $1.60 \times \frac{1 + 0.09}{1 + 0.08} = \mathbf{1.615}$[cite: 9]</li>
-        <li>Year 2: $1.615 \times \frac{1.09}{1.08} = \mathbf{1.630}$[cite: 9]</li>
-        <li>Year 3: $1.630 \times \frac{1.09}{1.08} = \mathbf{1.645}$[cite: 9]</li>
+        <li>Year 1: $1.60 \\times \\frac{1 + 0.09}{1 + 0.08} = \\mathbf{1.615}$[cite: 9]</li>
+        <li>Year 2: $1.615 \\times \\frac{1.09}{1.08} = \\mathbf{1.630}$[cite: 9]</li>
+        <li>Year 3: $1.630 \\times \\frac{1.09}{1.08} = \\mathbf{1.645}$[cite: 9]</li>
       </ul>
 
       <h4>2. Conversion of NC Cash Flows to Indian Rupees (₹ Millions)</h4>
       <ul>
-        <li>Year 0 Outflow: $\frac{\text{NC } 25.000}{1.600} = \mathbf{₹ 15.625 \text{ Million}}$[cite: 9]</li>
-        <li>Year 1 Inflow: $\frac{\text{NC } 2.600}{1.615} = \mathbf{₹ 1.610 \text{ Million}}$[cite: 9]</li>
-        <li>Year 2 Inflow: $\frac{\text{NC } 3.800}{1.630} = \mathbf{₹ 2.331 \text{ Million}}$[cite: 9]</li>
-        <li>Year 3 Inflow: $\frac{\text{NC } 4.100}{1.645} = \mathbf{₹ 2.492 \text{ Million}}$[cite: 9]</li>
+        <li>Year 0 Outflow: $\\frac{\\text{NC } 25.000}{1.600} = \\mathbf{₹ 15.625 \\text{ Million}}$[cite: 9]</li>
+        <li>Year 1 Inflow: $\\frac{\\text{NC } 2.600}{1.615} = \\mathbf{₹ 1.610 \\text{ Million}}$[cite: 9]</li>
+        <li>Year 2 Inflow: $\\frac{\\text{NC } 3.800}{1.630} = \\mathbf{₹ 2.331 \\text{ Million}}$[cite: 9]</li>
+        <li>Year 3 Inflow: $\\frac{\\text{NC } 4.100}{1.645} = \\mathbf{₹ 2.492 \\text{ Million}}$[cite: 9]</li>
       </ul>
 
       <h4>3. Total Combined Rupee Cash Flows and NPV (₹ Millions)</h4>
@@ -13478,7 +13478,7 @@ const icaibookData = [
             <tr><td>3</td><td>4.600</td><td>2.492</td><td>7.092</td><td>0.772</td><td>5.475</td></tr>
             <tr style="font-weight:bold; background-color:#fafafa;">
               <td colspan="5">Net Present Value (NPV)</td>
-              <td><strong>- ₹ 0.544 Million \approx - ₹ 0.547 Million</strong></td>
+              <td><strong>- ₹ 0.544 Million \\approx - ₹ 0.547 Million</strong></td>
             </tr>
           </tbody>
         </table>
@@ -13487,13 +13487,13 @@ const icaibookData = [
       <h4>4. Modified Internal Rate of Return (MIRR)</h4>
       <p>Terminal compounding of intermediate inflows to Year 3 @ 9%[cite: 9]:</p>
       <ul>
-        <li>Year 1 Inflow: $₹ 4.479 \times 1.188 = ₹ 5.321 \text{ Million}$[cite: 9]</li>
-        <li>Year 2 Inflow: $₹ 6.531 \times 1.090 = ₹ 7.119 \text{ Million}$[cite: 9]</li>
-        <li>Year 3 Inflow: $₹ 7.092 \times 1.000 = ₹ 7.092 \text{ Million}$[cite: 9]</li>
-        <li>$$\text{Total Terminal Cash Flow} = 5.321 + 7.119 + 7.092 = \mathbf{₹ 19.532 \text{ Million}}$$[cite: 9]</li>
+        <li>Year 1 Inflow: $₹ 4.479 \\times 1.188 = ₹ 5.321 \\text{ Million}$[cite: 9]</li>
+        <li>Year 2 Inflow: $₹ 6.531 \\times 1.090 = ₹ 7.119 \\text{ Million}$[cite: 9]</li>
+        <li>Year 3 Inflow: $₹ 7.092 \\times 1.000 = ₹ 7.092 \\text{ Million}$[cite: 9]</li>
+        <li>$$\\text{Total Terminal Cash Flow} = 5.321 + 7.119 + 7.092 = \\mathbf{₹ 19.532 \\text{ Million}}$$[cite: 9]</li>
       </ul>
-      <p>$$\text{MIRR} = \left(\frac{\text{Terminal Value}}{\text{Initial Outlay}}\right)^{1/n} - 1 = \left(\frac{19.532}{15.625}\right)^{1/3} - 1$$[cite: 9]</p>
-      <p>$$\text{MIRR} = (1.25005)^{0.3333} - 1 = 1.0772 - 1 = \mathbf{7.72\%}$$[cite: 9]</p>
+      <p>$$\\text{MIRR} = \\left(\\frac{\\text{Terminal Value}}{\\text{Initial Outlay}}\\right)^{1/n} - 1 = \\left(\\frac{19.532}{15.625}\\right)^{1/3} - 1$$[cite: 9]</p>
+      <p>$$\\text{MIRR} = (1.25005)^{0.3333} - 1 = 1.0772 - 1 = \\mathbf{7.72\\%}$$[cite: 9]</p>
     `
   },
   // chapter12
@@ -13516,7 +13516,7 @@ const icaibookData = [
         <li><strong>Off-Balance Sheet Instrument:</strong> FRAs do not involve the exchange of principal amounts; the underlying principal is purely &ldquo;notional&rdquo; and serves only as the base for computing interest differentials[cite: 10].</li>
         <li><strong>Cash Settlement at Inception:</strong> Unlike ordinary loan interest settled in arrears at the end of the borrowing period, FRA settlement occurs at the <em>beginning</em> of the contract period (the settlement/fixing date)[cite: 10]. Consequently, the interest differential is discounted back to present value using the actual spot reference rate prevailing on that date[cite: 10].</li>
         <li><strong>Settlement Formula:</strong>
-          $$\text{Settlement Amount} = \frac{N \times (RR - FR) \times \left(\frac{dtm}{DY}\right)}{1 + RR \times \left(\frac{dtm}{DY}\right)}$$[cite: 10]
+          $$\\text{Settlement Amount} = \\frac{N \\times (RR - FR) \\times \\left(\\frac{dtm}{DY}\\right)}{1 + RR \\times \\left(\\frac{dtm}{DY}\\right)}$$[cite: 10]
           <p>Where:</p>
           <ul>
             <li>$N$ = Notional principal amount[cite: 10]</li>
@@ -13572,7 +13572,7 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>Formula</h4>
-      <p>$$\text{Settlement Amount} = \frac{N \times (RR - FR) \times (dtm / DY)}{1 + RR \times (dtm / DY)}$$[cite: 10]</p>
+      <p>$$\\text{Settlement Amount} = \\frac{N \\times (RR - FR) \\times (dtm / DY)}{1 + RR \\times (dtm / DY)}$$[cite: 10]</p>
       <p>Where:</p>
       <ul>
         <li>Notional Principal ($N$) = ₹ 60 crores = ₹ 60,00,00,000[cite: 10]</li>
@@ -13581,14 +13581,14 @@ const icaibookData = [
       </ul>
 
       <h4>(i) Actual Rate of Interest ($RR$) = 9.60% p.a.</h4>
-      <p>$$\text{Settlement Amount} = \frac{₹ 60,00,00,000 \times (0.096 - 0.093) \times 0.25}{1 + 0.096 \times 0.25}$$[cite: 10]</p>
-      <p>$$\text{Settlement Amount} = \frac{₹ 60,00,00,000 \times 0.003 \times 0.25}{1 + 0.024} = \frac{₹ 4,50,000}{1.024} = \mathbf{₹ 4,39,453.13}$$[cite: 10]</p>
-      <p>Since the market rate exceeds the forward rate ($9.60\% > 9.30\%$), the <strong>banker will pay Parker &amp; Co. ₹ 4,39,453.13</strong>[cite: 10].</p>
+      <p>$$\\text{Settlement Amount} = \\frac{₹ 60,00,00,000 \\times (0.096 - 0.093) \\times 0.25}{1 + 0.096 \\times 0.25}$$[cite: 10]</p>
+      <p>$$\\text{Settlement Amount} = \\frac{₹ 60,00,00,000 \\times 0.003 \\times 0.25}{1 + 0.024} = \\frac{₹ 4,50,000}{1.024} = \\mathbf{₹ 4,39,453.13}$$[cite: 10]</p>
+      <p>Since the market rate exceeds the forward rate ($9.60\\% > 9.30\\%$), the <strong>banker will pay Parker &amp; Co. ₹ 4,39,453.13</strong>[cite: 10].</p>
 
       <h4>(ii) Actual Rate of Interest ($RR$) = 8.80% p.a.</h4>
-      <p>$$\text{Settlement Amount} = \frac{₹ 60,00,00,000 \times (0.088 - 0.093) \times 0.25}{1 + 0.088 \times 0.25}$$[cite: 10]</p>
-      <p>$$\text{Settlement Amount} = \frac{₹ 60,00,00,000 \times (-0.005) \times 0.25}{1 + 0.022} = \frac{-₹ 7,50,000}{1.022} = \mathbf{-₹ 7,33,855.19}$$[cite: 10]</p>
-      <p>Since the market rate is below the forward rate ($8.80\% < 9.30\%$), <strong>Parker &amp; Co. will pay the banker ₹ 7,33,855.19</strong>[cite: 10].</p>
+      <p>$$\\text{Settlement Amount} = \\frac{₹ 60,00,00,000 \\times (0.088 - 0.093) \\times 0.25}{1 + 0.088 \\times 0.25}$$[cite: 10]</p>
+      <p>$$\\text{Settlement Amount} = \\frac{₹ 60,00,00,000 \\times (-0.005) \\times 0.25}{1 + 0.022} = \\frac{-₹ 7,50,000}{1.022} = \\mathbf{-₹ 7,33,855.19}$$[cite: 10]</p>
+      <p>Since the market rate is below the forward rate ($8.80\\% < 9.30\\%$), <strong>Parker &amp; Co. will pay the banker ₹ 7,33,855.19</strong>[cite: 10].</p>
     `
   },
   {
@@ -13599,7 +13599,7 @@ const icaibookData = [
     // placement: 4,
     marks: 6,
     question_html: `
-      <p>TM Fincorp has bought a $6 \times 9$ ₹ 100 crore Forward Rate Agreement (FRA) at 5.25%[cite: 10]. On the fixing date, the reference rate (MIBOR) turns out to be[cite: 10]:</p>
+      <p>TM Fincorp has bought a $6 \\times 9$ ₹ 100 crore Forward Rate Agreement (FRA) at 5.25%[cite: 10]. On the fixing date, the reference rate (MIBOR) turns out to be[cite: 10]:</p>
       <ul>
         <li>3 months: 5.50%[cite: 10]</li>
         <li>6 months: 5.70%[cite: 10]</li>
@@ -13613,19 +13613,19 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(a) Profit / Loss in Terms of Basis Points</h4>
-      <p>A $6 \times 9$ FRA is a contract on the 3-month interest rate beginning 6 months from today and maturing in 9 months[cite: 10]. Therefore, the applicable benchmark is the <strong>3-month MIBOR = 5.50%</strong>[cite: 10].</p>
-      <p>$$\text{Profit in Basis Points} = 5.50\% - 5.25\% = 0.25\% = \mathbf{25 \text{ basis points}}$$[cite: 10]</p>
+      <p>A $6 \\times 9$ FRA is a contract on the 3-month interest rate beginning 6 months from today and maturing in 9 months[cite: 10]. Therefore, the applicable benchmark is the <strong>3-month MIBOR = 5.50%</strong>[cite: 10].</p>
+      <p>$$\\text{Profit in Basis Points} = 5.50\\% - 5.25\\% = 0.25\\% = \\mathbf{25 \\text{ basis points}}$$[cite: 10]</p>
 
       <h4>(b) Settlement Amount Calculation</h4>
-      <p>$$\text{Settlement Amount} = \frac{N \times (RR - FR) \times (dtm / 360)}{1 + RR \times (dtm / 360)}$$[cite: 10]</p>
+      <p>$$\\text{Settlement Amount} = \\frac{N \\times (RR - FR) \\times (dtm / 360)}{1 + RR \\times (dtm / 360)}$$[cite: 10]</p>
       <ul>
         <li>Notional Principal ($N$) = ₹ 100 crores = ₹ 1,00,00,00,000[cite: 10]</li>
         <li>Reference Rate ($RR$) = 5.50% = 0.055[cite: 10]</li>
         <li>Forward Rate ($FR$) = 5.25% = 0.0525[cite: 10]</li>
         <li>$dtm / 360 = 90 / 360 = 0.25$[cite: 10]</li>
       </ul>
-      <p>$$\text{Settlement Amount} = \frac{₹ 1,00,00,00,000 \times (0.055 - 0.0525) \times 0.25}{1 + 0.055 \times 0.25}$$[cite: 10]</p>
-      <p>$$\text{Settlement Amount} = \frac{₹ 1,00,00,00,000 \times 0.0025 \times 0.25}{1 + 0.01375} = \frac{₹ 6,25,000}{1.01375} = \mathbf{₹ 6,16,522.81 \approx ₹ 6,16,523}$$[cite: 10]</p>
+      <p>$$\\text{Settlement Amount} = \\frac{₹ 1,00,00,00,000 \\times (0.055 - 0.0525) \\times 0.25}{1 + 0.055 \\times 0.25}$$[cite: 10]</p>
+      <p>$$\\text{Settlement Amount} = \\frac{₹ 1,00,00,00,000 \\times 0.0025 \\times 0.25}{1 + 0.01375} = \\frac{₹ 6,25,000}{1.01375} = \\mathbf{₹ 6,16,522.81 \\approx ₹ 6,16,523}$$[cite: 10]</p>
       <p>TM Fincorp earns a net profit settlement of <strong>₹ 6,16,523</strong> from the FRA seller[cite: 10].</p>
     `
   },
@@ -13657,10 +13657,10 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>1. Calculation of Periodic Amortized Cap Premium</h4>
-      <p>Loan tenure is 24 months with 6-month rests, implying 4 reset periods[cite: 10]. The semi-annual fixed rate is $i = \frac{7.00\%}{2} = 3.50\% = 0.035$[cite: 10].</p>
-      <p>$$\text{Total Upfront Premium} = 1.00\% \times £ 15,00,00,00 \times 10^{-1} = 1.00\% \times £ 15,000,000 = \mathbf{£ 150,000}$$[cite: 10]</p>
-      <p>$$\text{PVAF}(3.5\%, 4) = \frac{1}{1.035} + \frac{1}{(1.035)^2} + \frac{1}{(1.035)^3} + \frac{1}{(1.035)^4} = 0.9662 + 0.9335 + 0.9019 + 0.8714 = \mathbf{3.673 \approx 3.671}$$[cite: 10]</p>
-      <p>$$\text{Amortized Semi-Annual Premium} = \frac{£ 150,000}{3.671} = \mathbf{£ 40,861 \text{ per period}}$$[cite: 10]</p>
+      <p>Loan tenure is 24 months with 6-month rests, implying 4 reset periods[cite: 10]. The semi-annual fixed rate is $i = \\frac{7.00\\%}{2} = 3.50\\% = 0.035$[cite: 10].</p>
+      <p>$$\\text{Total Upfront Premium} = 1.00\\% \\times £ 15,00,00,00 \\times 10^{-1} = 1.00\\% \\times £ 15,000,000 = \\mathbf{£ 150,000}$$[cite: 10]</p>
+      <p>$$\\text{PVAF}(3.5\\%, 4) = \\frac{1}{1.035} + \\frac{1}{(1.035)^2} + \\frac{1}{(1.035)^3} + \\frac{1}{(1.035)^4} = 0.9662 + 0.9335 + 0.9019 + 0.8714 = \\mathbf{3.673 \\approx 3.671}$$[cite: 10]</p>
+      <p>$$\\text{Amortized Semi-Annual Premium} = \\frac{£ 150,000}{3.671} = \\mathbf{£ 40,861 \\text{ per period}}$$[cite: 10]</p>
       <p><small><em>(Alternatively, using exact formula: $£ 40,595$)</em></small>[cite: 10]</p>
 
       <h4>2. Cap Payoff and Hedging Schedule</h4>
@@ -13670,7 +13670,7 @@ const icaibookData = [
             <tr style="background-color:#f2f2f2;">
               <th style="padding:6px; border:1px solid #ddd;">Reset Period</th>
               <th style="padding:6px; border:1px solid #ddd;">Actual SONIA (%)</th>
-              <th style="padding:6px; border:1px solid #ddd;">Additional Interest $\text{Max}(0, \text{SONIA} - 8\%) \times £ 15\text{M} \times \frac{6}{12}$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Additional Interest $\\text{Max}(0, \\text{SONIA} - 8\\%) \\times £ 15\\text{M} \\times \\frac{6}{12}$</th>
               <th style="padding:6px; border:1px solid #ddd;">Gross Receipt from Bank (£)</th>
               <th style="padding:6px; border:1px solid #ddd;">Amortized Premium (£)</th>
               <th style="padding:6px; border:1px solid #ddd;">Net Inflow / Risk Hedged (£)</th>
@@ -13680,7 +13680,7 @@ const icaibookData = [
             <tr>
               <td>1</td>
               <td>9.00%</td>
-              <td>$(9\% - 8\%) \times £ 15\text{M} \times 0.5 = \mathbf{£ 75,000}$</td>
+              <td>$(9\\% - 8\\%) \\times £ 15\\text{M} \\times 0.5 = \\mathbf{£ 75,000}$</td>
               <td>75,000</td>
               <td>40,861</td>
               <td><strong>34,139</strong></td>
@@ -13688,7 +13688,7 @@ const icaibookData = [
             <tr>
               <td>2</td>
               <td>9.50%</td>
-              <td>$(9.5\% - 8\%) \times £ 15\text{M} \times 0.5 = \mathbf{£ 112,500}$</td>
+              <td>$(9.5\\% - 8\\%) \\times £ 15\\text{M} \\times 0.5 = \\mathbf{£ 112,500}$</td>
               <td>1,12,500</td>
               <td>40,861</td>
               <td><strong>71,639</strong></td>
@@ -13696,7 +13696,7 @@ const icaibookData = [
             <tr>
               <td>3</td>
               <td>10.00%</td>
-              <td>$(10\% - 8\%) \times £ 15\text{M} \times 0.5 = \mathbf{£ 150,000}$</td>
+              <td>$(10\\% - 8\\%) \\times £ 15\\text{M} \\times 0.5 = \\mathbf{£ 150,000}$</td>
               <td>1,50,000</td>
               <td>40,861</td>
               <td><strong>1,09,139</strong></td>
@@ -13731,16 +13731,16 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(i) Semi-Annual Fixed Payment (30/360 Day Count)</h4>
-      <p>$$\text{Fixed Payment} = N \times \text{AIC} \times \left(\frac{180}{360}\right) = \$ 5,00,000 \times 0.08 \times 0.50 = \mathbf{\text{US\$ } 20,000}$$[cite: 10]</p>
+      <p>$$\\text{Fixed Payment} = N \\times \\text{AIC} \\times \\left(\\frac{180}{360}\\right) = \\$ 5,00,000 \\times 0.08 \\times 0.50 = \\mathbf{\\text{US\\$ } 20,000}$$[cite: 10]</p>
 
       <h4>(ii) Floating Rate Payment (Actual/360 Day Count)</h4>
-      <p>$$\text{Floating Payment} = N \times \text{SOFR} \times \left(\frac{dt}{360}\right) = \$ 5,00,000 \times 0.06 \times \left(\frac{181}{360}\right)$$[cite: 10]</p>
-      <p>$$\text{Floating Payment} = \$ 30,000 \times 0.502778 = \mathbf{\text{US\$ } 15,083.33 \approx \text{US\$ } 15,083}$$[cite: 10]</p>
-      <p><small><em>(Note: Using rounded factor $0.503$, payment $= \mathbf{\text{US\$ } 15,090}$)</em></small>[cite: 10]</p>
+      <p>$$\\text{Floating Payment} = N \\times \\text{SOFR} \\times \\left(\\frac{dt}{360}\\right) = \\$ 5,00,000 \\times 0.06 \\times \\left(\\frac{181}{360}\\right)$$[cite: 10]</p>
+      <p>$$\\text{Floating Payment} = \\$ 30,000 \\times 0.502778 = \\mathbf{\\text{US\\$ } 15,083.33 \\approx \\text{US\\$ } 15,083}$$[cite: 10]</p>
+      <p><small><em>(Note: Using rounded factor $0.503$, payment $= \\mathbf{\\text{US\\$ } 15,090}$)</em></small>[cite: 10]</p>
 
       <h4>(iii) Net Settlement Payment</h4>
-      <p>$$\text{Net Amount Payable by Fixed Payer} = \text{Fixed Payment} - \text{Floating Receipt}$$[cite: 10]</p>
-      <p>$$\text{Net Payment} = \$ 20,000 - \$ 15,083 = \mathbf{\text{US\$ } 4,917} \quad (\text{or } \$ 20,000 - \$ 15,090 = \mathbf{\text{US\$ } 4,910})[cite: 10]$$</p>
+      <p>$$\\text{Net Amount Payable by Fixed Payer} = \\text{Fixed Payment} - \\text{Floating Receipt}$$[cite: 10]</p>
+      <p>$$\\text{Net Payment} = \\$ 20,000 - \\$ 15,083 = \\mathbf{\\text{US\\$ } 4,917} \\quad (\\text{or } \\$ 20,000 - \\$ 15,090 = \\mathbf{\\text{US\\$ } 4,910})[cite: 10]$$</p>
     `
   },
   {
@@ -13770,12 +13770,12 @@ const icaibookData = [
             </tr>
           </thead>
           <tbody>
-            <tr><td>Tuesday</td><td>10,00,00,000</td><td>7.75%</td><td>1</td><td>$10\text{Cr} \times 0.0775 \times \frac{1}{365} = 21,233$</td><td>10,00,21,233</td></tr>
-            <tr><td>Wednesday</td><td>10,00,21,233</td><td>8.15%</td><td>1</td><td>$10,00,21,233 \times 0.0815 \times \frac{1}{365} = 22,334$</td><td>10,00,43,567</td></tr>
-            <tr><td>Thursday</td><td>10,00,43,567</td><td>8.12%</td><td>1</td><td>$10,00,43,567 \times 0.0812 \times \frac{1}{365} = 22,256$</td><td>10,00,65,823</td></tr>
-            <tr><td>Friday</td><td>10,00,65,823</td><td>7.95%</td><td>1</td><td>$10,00,65,823 \times 0.0795 \times \frac{1}{365} = 21,795$</td><td>10,00,87,618</td></tr>
-            <tr><td>Sat &amp; Sun</td><td>10,00,87,618</td><td>7.98%</td><td>2</td><td>$10,00,87,618 \times 0.0798 \times \frac{2}{365} = 43,764$</td><td>10,01,31,382</td></tr>
-            <tr><td>Monday</td><td>10,01,31,382</td><td>8.15%</td><td>1</td><td>$10,01,31,382 \times 0.0815 \times \frac{1}{365} = 22,358$</td><td>10,01,53,740</td></tr>
+            <tr><td>Tuesday</td><td>10,00,00,000</td><td>7.75%</td><td>1</td><td>$10\\text{Cr} \\times 0.0775 \\times \\frac{1}{365} = 21,233$</td><td>10,00,21,233</td></tr>
+            <tr><td>Wednesday</td><td>10,00,21,233</td><td>8.15%</td><td>1</td><td>$10,00,21,233 \\times 0.0815 \\times \\frac{1}{365} = 22,334$</td><td>10,00,43,567</td></tr>
+            <tr><td>Thursday</td><td>10,00,43,567</td><td>8.12%</td><td>1</td><td>$10,00,43,567 \\times 0.0812 \\times \\frac{1}{365} = 22,256$</td><td>10,00,65,823</td></tr>
+            <tr><td>Friday</td><td>10,00,65,823</td><td>7.95%</td><td>1</td><td>$10,00,65,823 \\times 0.0795 \\times \\frac{1}{365} = 21,795$</td><td>10,00,87,618</td></tr>
+            <tr><td>Sat &amp; Sun</td><td>10,00,87,618</td><td>7.98%</td><td>2</td><td>$10,00,87,618 \\times 0.0798 \\times \\frac{2}{365} = 43,764$</td><td>10,01,31,382</td></tr>
+            <tr><td>Monday</td><td>10,01,31,382</td><td>8.15%</td><td>1</td><td>$10,01,31,382 \\times 0.0815 \\times \\frac{1}{365} = 22,358$</td><td>10,01,53,740</td></tr>
             <tr style="font-weight:bold; background-color:#fafafa;">
               <td colspan="4">Total Floating Interest Received</td>
               <td><strong>₹ 1,53,740</strong></td>
@@ -13786,10 +13786,10 @@ const icaibookData = [
       </div>
 
       <h4>2. Fixed Leg Interest and Fixed Rate</h4>
-      <p>$$\text{Net Settlement Received} = \text{Floating Interest} - \text{Fixed Interest} = ₹ 317$$[cite: 10]</p>
-      <p>$$\text{Fixed Interest Paid} = ₹ 1,53,740 - ₹ 317 = \mathbf{₹ 1,53,423}$$[cite: 10]</p>
-      <p>$$\text{Fixed Rate } (r_{\text{fixed}}) = \frac{\text{Fixed Interest} \times 365}{\text{Principal} \times 7} \times 100$$[cite: 10]</p>
-      <p>$$r_{\text{fixed}} = \frac{₹ 1,53,423 \times 365}{₹ 10,00,00,000 \times 7} \times 100 = \frac{5,60,00,395}{70,00,00,000} \times 100 = \mathbf{7.9999\% \approx 8.00\%}$$[cite: 10]</p>
+      <p>$$\\text{Net Settlement Received} = \\text{Floating Interest} - \\text{Fixed Interest} = ₹ 317$$[cite: 10]</p>
+      <p>$$\\text{Fixed Interest Paid} = ₹ 1,53,740 - ₹ 317 = \\mathbf{₹ 1,53,423}$$[cite: 10]</p>
+      <p>$$\\text{Fixed Rate } (r_{\\text{fixed}}) = \\frac{\\text{Fixed Interest} \\times 365}{\\text{Principal} \\times 7} \\times 100$$[cite: 10]</p>
+      <p>$$r_{\\text{fixed}} = \\frac{₹ 1,53,423 \\times 365}{₹ 10,00,00,000 \\times 7} \\times 100 = \\frac{5,60,00,395}{70,00,00,000} \\times 100 = \\mathbf{7.9999\\% \\approx 8.00\\%}$$[cite: 10]</p>
     `
   },
   {
@@ -13800,7 +13800,7 @@ const icaibookData = [
     // placement: 8,
     marks: 8,
     question_html: `
-      <p>A Inc. and B Inc. intend to borrow $ 200,000 and equivalent in Yen ($ 200,000 \times 120 = \text{¥ } 24,000,000$) respectively for 1 year[cite: 10]. Prevalent interest rates[cite: 10]:</p>
+      <p>A Inc. and B Inc. intend to borrow $ 200,000 and equivalent in Yen ($ 200,000 \\times 120 = \\text{¥ } 24,000,000$) respectively for 1 year[cite: 10]. Prevalent interest rates[cite: 10]:</p>
       <div style="overflow-x:auto;">
         <table border="1" style="width:100%; border-collapse:collapse; text-align:center; margin:10px 0;">
           <thead>
@@ -13822,33 +13822,33 @@ const icaibookData = [
       <h4>1. Financial Evaluation for A Inc. (Desires $ 200,000 Loan)</h4>
       <ul>
         <li>A Inc. raises ¥ 24,000,000 loan locally @ 5%:
-          <br />$$\text{Interest to Japanese Lender} = \text{¥ } 24,000,000 \times 5\% = \text{¥ } 12,00,000 \text{ (or \$ 10,000)}$$[cite: 10]
+          <br />$$\\text{Interest to Japanese Lender} = \\text{¥ } 24,000,000 \\times 5\\% = \\text{¥ } 12,00,000 \\text{ (or \\$ 10,000)}$$[cite: 10]
         </li>
         <li>Reimburses B Inc. in USD @ 9%:
-          <br />$$\$ 200,000 \times 9\% = \$ 18,000 \text{ (or ¥ 21,60,000)}$$[cite: 10]
+          <br />$$\\$ 200,000 \\times 9\\% = \\$ 18,000 \\text{ (or ¥ 21,60,000)}$$[cite: 10]
         </li>
         <li>Receives interest from B Inc. in Yen @ 6%:
-          <br />$$\text{¥ } 24,00,000 \times 6\% = \text{¥ } 14,40,000 \text{ (or \$ 12,000)}$$[cite: 10]
+          <br />$$\\text{¥ } 24,00,000 \\times 6\\% = \\text{¥ } 14,40,000 \\text{ (or \\$ 12,000)}$$[cite: 10]
         </li>
-        <li>$$\text{Net Interest Cost to A Inc.} = \$ 10,000 + \$ 18,000 - \$ 12,000 = \mathbf{\$ 16,000 \text{ (Effective Rate: 8\%)}}$$[cite: 10]</li>
-        <li>Cost without Swap (Direct $ Borrowing @ 9%) $= \$ 18,000$[cite: 10]</li>
-        <li>$$\text{Opportunity Gain to A Inc.} = \$ 18,000 - \$ 16,000 = \mathbf{\$ 2,000 \text{ (1.00\% of principal)}}$$[cite: 10]</li>
+        <li>$$\\text{Net Interest Cost to A Inc.} = \\$ 10,000 + \\$ 18,000 - \\$ 12,000 = \\mathbf{\\$ 16,000 \\text{ (Effective Rate: 8\\%)}}$$[cite: 10]</li>
+        <li>Cost without Swap (Direct $ Borrowing @ 9\\%) $= \\$ 18,000$[cite: 10]</li>
+        <li>$$\\text{Opportunity Gain to A Inc.} = \\$ 18,000 - \\$ 16,000 = \\mathbf{\\$ 2,000 \\text{ (1.00\\% of principal)}}$$[cite: 10]</li>
       </ul>
 
       <h4>2. Financial Evaluation for B Inc. (Desires ¥ 24,000,000 Loan)</h4>
       <ul>
         <li>B Inc. raises $ 200,000 loan locally @ 10%:
-          <br />$$\text{Interest to US Lender} = \$ 200,000 \times 10\% = \$ 20,000 \text{ (or ¥ 24,00,000)}$$[cite: 10]
+          <br />$$\\text{Interest to US Lender} = \\$ 200,000 \\times 10\\% = \\$ 20,000 \\text{ (or ¥ 24,00,000)}$$[cite: 10]
         </li>
         <li>Pays A Inc. in Yen @ 6%:
-          <br />$$\text{¥ } 24,000,000 \times 6\% = \text{¥ } 14,40,000 \text{ (or \$ 12,000)}$$[cite: 10]
+          <br />$$\\text{¥ } 24,000,000 \\times 6\\% = \\text{¥ } 14,40,000 \\text{ (or \\$ 12,000)}$$[cite: 10]
         </li>
         <li>Receives interest from A Inc. in USD @ 9%:
-          <br />$$\$ 200,000 \times 9\% = \$ 18,000 \text{ (or ¥ 21,60,000)}$$[cite: 10]
+          <br />$$\\$ 200,000 \\times 9\\% = \\$ 18,000 \\text{ (or ¥ 21,60,000)}$$[cite: 10]
         </li>
-        <li>$$\text{Net Interest Cost to B Inc.} = \text{¥ } 24,00,000 + \text{¥ } 14,40,000 - \text{¥ } 21,60,000 = \mathbf{\text{¥ } 16,80,000 \text{ (Effective Rate: 7\%)}}$$[cite: 10]</li>
-        <li>Cost without Swap (Direct ¥ Borrowing @ 8%) $= \text{¥ } 19,20,000$[cite: 10]</li>
-        <li>$$\text{Opportunity Gain to B Inc.} = \text{¥ } 19,20,000 - \text{¥ } 16,80,000 = \mathbf{\text{¥ } 2,40,000 \text{ (or \$ 2,000 / 1.00\% of principal)}}$$[cite: 10]</li>
+        <li>$$\\text{Net Interest Cost to B Inc.} = \\text{¥ } 24,00,000 + \\text{¥ } 14,40,000 - \\text{¥ } 21,60,000 = \\mathbf{\\text{¥ } 16,80,000 \\text{ (Effective Rate: 7\\%)}}$$[cite: 10]</li>
+        <li>Cost without Swap (Direct ¥ Borrowing @ 8%) $= \\text{¥ } 19,20,000$[cite: 10]</li>
+        <li>$$\\text{Opportunity Gain to B Inc.} = \\text{¥ } 19,20,000 - \\text{¥ } 16,80,000 = \\mathbf{\\text{¥ } 2,40,000 \\text{ (or \\$ 2,000 / 1.00\\% of principal)}}$$[cite: 10]</li>
       </ul>
     `
   },
@@ -13875,7 +13875,7 @@ const icaibookData = [
         <li>Reference Rate: Floating rate applicable to the loan[cite: 10]</li>
         <li>Settlement Frequency: Annually on 31st March through 31.03.2016[cite: 10]</li>
         <li>Upfront Premium Paid on 01.10.2012:
-          <br />$$₹ 40,00,000 \times 0.75\% = \mathbf{₹ 30,000}$$[cite: 10]
+          <br />$$₹ 40,00,000 \\times 0.75\\% = \\mathbf{₹ 30,000}$$[cite: 10]
         </li>
       </ul>
 
@@ -13887,7 +13887,7 @@ const icaibookData = [
               <th style="padding:6px; border:1px solid #ddd;">Settlement Date</th>
               <th style="padding:6px; border:1px solid #ddd;">Actual Interest Rate</th>
               <th style="padding:6px; border:1px solid #ddd;">Cap Strike Rate</th>
-              <th style="padding:6px; border:1px solid #ddd;">Rate Differential $\text{Max}(0, r - r_c)$</th>
+              <th style="padding:6px; border:1px solid #ddd;">Rate Differential $\\text{Max}(0, r - r_c)$</th>
               <th style="padding:6px; border:1px solid #ddd;">Compensation Received by Borrower (₹)</th>
             </tr>
           </thead>
@@ -13896,28 +13896,28 @@ const icaibookData = [
               <td>31.03.2013</td>
               <td>10.20%</td>
               <td>8.50%</td>
-              <td>$10.20\% - 8.50\% = 1.70\%$</td>
-              <td>$₹ 40,00,000 \times 1.70\% = \mathbf{₹ 68,000}$[cite: 10]</td>
+              <td>$10.20\\% - 8.50\\% = 1.70\\%$</td>
+              <td>$₹ 40,00,000 \\times 1.70\\% = \\mathbf{₹ 68,000}$[cite: 10]</td>
             </tr>
             <tr>
               <td>31.03.2014</td>
               <td>11.50%</td>
               <td>8.50%</td>
-              <td>$11.50\% - 8.50\% = 3.00\%$</td>
-              <td>$₹ 40,00,000 \times 3.00\% = \mathbf{₹ 1,20,000}$[cite: 10]</td>
+              <td>$11.50\\% - 8.50\\% = 3.00\\%$</td>
+              <td>$₹ 40,00,000 \\times 3.00\\% = \\mathbf{₹ 1,20,000}$[cite: 10]</td>
             </tr>
             <tr>
               <td>31.03.2015</td>
               <td>9.25%</td>
               <td>8.50%</td>
-              <td>$9.25\% - 8.50\% = 0.75\%$</td>
-              <td>$₹ 40,00,000 \times 0.75\% = \mathbf{₹ 30,000}$[cite: 10]</td>
+              <td>$9.25\\% - 8.50\\% = 0.75\\%$</td>
+              <td>$₹ 40,00,000 \\times 0.75\\% = \\mathbf{₹ 30,000}$[cite: 10]</td>
             </tr>
             <tr>
               <td>31.03.2016</td>
               <td>8.25%</td>
               <td>8.50%</td>
-              <td>$8.25\% < 8.50\% \implies 0.00\%$</td>
+              <td>$8.25\\% < 8.50\\% \\implies 0.00\\%$</td>
               <td><strong>Nil (Cap Lapses)</strong>[cite: 10]</td>
             </tr>
             <tr style="font-weight:bold; background-color:#fafafa;">
@@ -13974,16 +13974,16 @@ const icaibookData = [
       <h4>1. Cost of Capital (WACC) Computations</h4>
       <ul>
         <li><strong>High Growth Phase (Years 1 to 4):</strong>
-          <br />$$K_e = 10\% + 1.15(6\%) = 10\% + 6.90\% = \mathbf{16.90\%}$$[cite: 11]
-          <br />$$\text{Post-tax } K_d = 13\% \times (1 - 0.30) = \mathbf{9.10\%}$$[cite: 11]
-          <br />$$\text{Debt-to-Equity Ratio} = 1:1 \implies \text{Weights} = 0.50 \text{ Equity}, 0.50 \text{ Debt}$$[cite: 11]
-          <br />$$\text{WACC}_{\text{High}} = (16.90\% \times 0.50) + (9.10\% \times 0.50) = 8.45\% + 4.55\% = \mathbf{13.00\%}$$[cite: 11]
+          <br />$$K_e = 10\\% + 1.15(6\\%) = 10\\% + 6.90\\% = \\mathbf{16.90\\%}$$[cite: 11]
+          <br />$$\\text{Post-tax } K_d = 13\\% \\times (1 - 0.30) = \\mathbf{9.10\\%}$$[cite: 11]
+          <br />$$\\text{Debt-to-Equity Ratio} = 1:1 \\implies \\text{Weights} = 0.50 \\text{ Equity}, 0.50 \\text{ Debt}$$[cite: 11]
+          <br />$$\\text{WACC}_{\\text{High}} = (16.90\\% \\times 0.50) + (9.10\\% \\times 0.50) = 8.45\\% + 4.55\\% = \\mathbf{13.00\\%}$$[cite: 11]
         </li>
         <li><strong>Stable Growth Phase (Year 5 onwards):</strong>
-          <br />$$K_e = 9\% + 1.00(5\%) = \mathbf{14.00\%}$$[cite: 11]
-          <br />$$\text{Post-tax } K_d = 12.86\% \times (1 - 0.30) = \mathbf{9.00\%}$$[cite: 11]
-          <br />$$\text{Debt-to-Equity Ratio} = 2:3 \implies \text{Weights} = 0.60 \text{ Equity}, 0.40 \text{ Debt}$$[cite: 11]
-          <br />$$\text{WACC}_{\text{Stable}} = (14.00\% \times 0.60) + (9.00\% \times 0.40) = 8.40\% + 3.60\% = \mathbf{12.00\%}$$[cite: 11]
+          <br />$$K_e = 9\\% + 1.00(5\\%) = \\mathbf{14.00\\%}$$[cite: 11]
+          <br />$$\\text{Post-tax } K_d = 12.86\\% \\times (1 - 0.30) = \\mathbf{9.00\\%}$$[cite: 11]
+          <br />$$\\text{Debt-to-Equity Ratio} = 2:3 \\implies \\text{Weights} = 0.60 \\text{ Equity}, 0.40 \\text{ Debt}$$[cite: 11]
+          <br />$$\\text{WACC}_{\\text{Stable}} = (14.00\\% \\times 0.60) + (9.00\\% \\times 0.40) = 8.40\\% + 3.60\\% = \\mathbf{12.00\\%}$$[cite: 11]
         </li>
       </ul>
 
@@ -14020,13 +14020,13 @@ const icaibookData = [
 
       <h4>3. Valuation of the Firm</h4>
       <ul>
-        <li>$$\text{PV of Explicit FCFFs @ 13%} = (56 \times 0.885) + (67.20 \times 0.783) + (80.64 \times 0.693) + (96.77 \times 0.613)$$[cite: 11]
-          <br />$$\text{PV} = 49.56 + 52.62 + 55.88 + 59.32 = \mathbf{₹ 217.38 \text{ Crores}}$$[cite: 11]
+        <li>$$\\text{PV of Explicit FCFFs @ 13\\%} = (56 \\times 0.885) + (67.20 \\times 0.783) + (80.64 \\times 0.693) + (96.77 \\times 0.613)$$[cite: 11]
+          <br />$$\\text{PV} = 49.56 + 52.62 + 55.88 + 59.32 = \\mathbf{₹ 217.38 \\text{ Crores}}$$[cite: 11]
         </li>
-        <li>$$\text{Terminal Value at Year 4} = \frac{\text{Terminal FCFF}}{\text{WACC}_{\text{Stable}} - g_{\text{Stable}}} = \frac{₹ 375.32 \text{ crores}}{0.12 - 0.10} = \mathbf{₹ 18,766.00 \text{ Crores}}$$[cite: 11]</li>
-        <li>$$\text{PV of Terminal Value} = \frac{₹ 18,766.00 \text{ crores}}{(1.13)^4} = ₹ 18,766.00 \times 0.613 = \mathbf{₹ 11,503.56 \text{ Crores}}$$[cite: 11]</li>
+        <li>$$\\text{Terminal Value at Year 4} = \\frac{\\text{Terminal FCFF}}{\\text{WACC}_{\\text{Stable}} - g_{\\text{Stable}}} = \\frac{₹ 375.32 \\text{ crores}}{0.12 - 0.10} = \\mathbf{₹ 18,766.00 \\text{ Crores}}$$[cite: 11]</li>
+        <li>$$\\text{PV of Terminal Value} = \\frac{₹ 18,766.00 \\text{ crores}}{(1.13)^4} = ₹ 18,766.00 \\times 0.613 = \\mathbf{₹ 11,503.56 \\text{ Crores}}$$[cite: 11]</li>
       </ul>
-      <p>$$\text{Total Value of the Firm} = ₹ 217.38 \text{ crores} + ₹ 11,503.56 \text{ crores} = \mathbf{₹ 11,720.94 \text{ Crores}}$$[cite: 11]</p>
+      <p>$$\\text{Total Value of the Firm} = ₹ 217.38 \\text{ crores} + ₹ 11,503.56 \\text{ crores} = \\mathbf{₹ 11,720.94 \\text{ Crores}}$$[cite: 11]</p>
     `
   },
   {
@@ -14053,8 +14053,8 @@ const icaibookData = [
     solution_html: `
       <h4>1. Base Year Analysis (₹ in Crores)</h4>
       <ul>
-        <li>$$\text{Base EBIT} = ₹ 7,500 - ₹ 3,000 - ₹ 2,250 = \mathbf{₹ 2,250 \text{ Crores}}$$[cite: 11]</li>
-        <li>$$\text{Base Net Capex (Capex - Dep.)} = ₹ 750 - ₹ 600 = \mathbf{₹ 150 \text{ Crores}}$$[cite: 11]</li>
+        <li>$$\\text{Base EBIT} = ₹ 7,500 - ₹ 3,000 - ₹ 2,250 = \\mathbf{₹ 2,250 \\text{ Crores}}$$[cite: 11]</li>
+        <li>$$\\text{Base Net Capex (Capex - Dep.)} = ₹ 750 - ₹ 600 = \\mathbf{₹ 150 \\text{ Crores}}$$[cite: 11]</li>
       </ul>
 
       <h4>2. Forecasted Free Cash Flows to Firm (FCFF) (₹ in Crores)</h4>
@@ -14088,13 +14088,13 @@ const icaibookData = [
 
       <h4>3. Valuation of WXY Ltd.</h4>
       <ul>
-        <li>$$\text{PV of Explicit FCFFs @ 15%} = (1,342.50 \times 0.8696) + (1,619.62 \times 0.7561) + (1,953.47 \times 0.6575)$$[cite: 11]
-          <br />$$\text{PV} = 1,167.44 + 1,224.59 + 1,284.41 = \mathbf{₹ 3,676.44 \text{ Crores}}$$[cite: 11]
+        <li>$$\\text{PV of Explicit FCFFs @ 15\\%} = (1,342.50 \\times 0.8696) + (1,619.62 \\times 0.7561) + (1,953.47 \\times 0.6575)$$[cite: 11]
+          <br />$$\\text{PV} = 1,167.44 + 1,224.59 + 1,284.41 = \\mathbf{₹ 3,676.44 \\text{ Crores}}$$[cite: 11]
         </li>
-        <li>$$\text{Terminal Value at Year 3} = \frac{\text{Terminal FCFF}}{\text{WACC} - g_n} = \frac{₹ 2,680.13 \text{ crores}}{0.15 - 0.08} = \frac{₹ 2,680.13}{0.07} = \mathbf{₹ 38,287.57 \text{ Crores}}$$[cite: 11]</li>
-        <li>$$\text{PV of Terminal Value} = \frac{₹ 38,287.57 \text{ crores}}{(1.15)^3} = ₹ 38,287.57 \times 0.6575 = \mathbf{₹ 25,174.08 \text{ Crores}}$$[cite: 11]</li>
+        <li>$$\\text{Terminal Value at Year 3} = \\frac{\\text{Terminal FCFF}}{\\text{WACC} - g_n} = \\frac{₹ 2,680.13 \\text{ crores}}{0.15 - 0.08} = \\frac{₹ 2,680.13}{0.07} = \\mathbf{₹ 38,287.57 \\text{ Crores}}$$[cite: 11]</li>
+        <li>$$\\text{PV of Terminal Value} = \\frac{₹ 38,287.57 \\text{ crores}}{(1.15)^3} = ₹ 38,287.57 \\times 0.6575 = \\mathbf{₹ 25,174.08 \\text{ Crores}}$$[cite: 11]</li>
       </ul>
-      <p>$$\text{Total Value of WXY Ltd.} = ₹ 3,676.44 \text{ crores} + ₹ 25,174.08 \text{ crores} = \mathbf{₹ 28,850.52 \text{ Crores}}$$[cite: 11]</p>
+      <p>$$\\text{Total Value of WXY Ltd.} = ₹ 3,676.44 \\text{ crores} + ₹ 25,174.08 \\text{ crores} = \\mathbf{₹ 28,850.52 \\text{ Crores}}$$[cite: 11]</p>
     `
   },
   {
@@ -14116,20 +14116,20 @@ const icaibookData = [
     solution_html: `
       <h4>1. Operating Profit (PBIT) Determination</h4>
       <ul>
-        <li>$$\text{Interest on 10% Debentures} = ₹ 400 \text{ lakhs} \times 10\% = \mathbf{₹ 40 \text{ lakhs}}$$[cite: 11]</li>
-        <li>$$\text{Financial Leverage} = \frac{\text{PBIT}}{\text{PBT}} = \frac{\text{PBIT}}{\text{PBIT} - \text{Interest}} = 1.5$$[cite: 11]</li>
-        <li>$$1.5(\text{PBIT} - 40) = \text{PBIT} \implies 1.5\text{PBIT} - 60 = \text{PBIT} \implies 0.5\text{PBIT} = 60$$[cite: 11]</li>
-        <li>$$\text{PBIT} = \frac{60}{0.5} = \mathbf{₹ 120 \text{ lakhs}}$$[cite: 11]</li>
-        <li>$$\text{NOPAT} = \text{PBIT} \times (1 - T) = ₹ 120 \text{ lakhs} \times (1 - 0.30) = \mathbf{₹ 84 \text{ lakhs}}$$[cite: 11]</li>
+        <li>$$\\text{Interest on 10\\% Debentures} = ₹ 400 \\text{ lakhs} \\times 10\\% = \\mathbf{₹ 40 \\text{ lakhs}}$$[cite: 11]</li>
+        <li>$$\\text{Financial Leverage} = \\frac{\\text{PBIT}}{\\text{PBT}} = \\frac{\\text{PBIT}}{\\text{PBIT} - \\text{Interest}} = 1.5$$[cite: 11]</li>
+        <li>$$1.5(\\text{PBIT} - 40) = \\text{PBIT} \\implies 1.5\\text{PBIT} - 60 = \\text{PBIT} \\implies 0.5\\text{PBIT} = 60$$[cite: 11]</li>
+        <li>$$\\text{PBIT} = \\frac{60}{0.5} = \\mathbf{₹ 120 \\text{ lakhs}}$$[cite: 11]</li>
+        <li>$$\\text{NOPAT} = \\text{PBIT} \\times (1 - T) = ₹ 120 \\text{ lakhs} \\times (1 - 0.30) = \\mathbf{₹ 84 \\text{ lakhs}}$$[cite: 11]</li>
       </ul>
 
       <h4>2. Weighted Average Cost of Capital (WACC)</h4>
-      <p>Total Capital Employed $= ₹ 160 + ₹ 140 + ₹ 400 = \mathbf{₹ 700 \text{ lakhs}}$ (Equity Funds = ₹ 300 lakhs, Debt = ₹ 400 lakhs)[cite: 11].</p>
-      <p>$$\text{WACC} = \left(14\% \times \frac{300}{700}\right) + \left[10\%(1 - 0.30) \times \frac{400}{700}\right] = 6.00\% + 4.00\% = \mathbf{10.00\%}$$[cite: 11]</p>
+      <p>Total Capital Employed $= ₹ 160 + ₹ 140 + ₹ 400 = \\mathbf{₹ 700 \\text{ lakhs}}$ (Equity Funds = ₹ 300 lakhs, Debt = ₹ 400 lakhs)[cite: 11].</p>
+      <p>$$\\text{WACC} = \\left(14\\% \\times \\frac{300}{700}\\right) + \\left[10\\%(1 - 0.30) \\times \\frac{400}{700}\\right] = 6.00\\% + 4.00\\% = \\mathbf{10.00\\%}$$[cite: 11]</p>
 
       <h4>3. Economic Value Added (EVA)</h4>
-      <p>$$\text{Capital Charge} = \text{Total Capital} \times \text{WACC} = ₹ 700 \text{ lakhs} \times 10\% = \mathbf{₹ 70 \text{ lakhs}}$$[cite: 11]</p>
-      <p>$$\text{EVA} = \text{NOPAT} - \text{Capital Charge} = ₹ 84 \text{ lakhs} - ₹ 70 \text{ lakhs} = \mathbf{₹ 14 \text{ lakhs}}$$[cite: 11]</p>
+      <p>$$\\text{Capital Charge} = \\text{Total Capital} \\times \\text{WACC} = ₹ 700 \\text{ lakhs} \\times 10\\% = \\mathbf{₹ 70 \\text{ lakhs}}$$[cite: 11]</p>
+      <p>$$\\text{EVA} = \\text{NOPAT} - \\text{Capital Charge} = ₹ 84 \\text{ lakhs} - ₹ 70 \\text{ lakhs} = \\mathbf{₹ 14 \\text{ lakhs}}$$[cite: 11]</p>
     `
   },
   {
@@ -14152,20 +14152,20 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Estimation of WACC</h4>
       <ul>
-        <li>$$K_e = R_f + \beta(R_m - R_f) = 8.5\% + 1.36(9\%) = 8.5\% + 12.24\% = \mathbf{20.74\%}$$[cite: 11]</li>
-        <li>$$\text{Post-tax } K_d = 11\% \times (1 - 0.30) = \mathbf{7.70\%}$$[cite: 11]</li>
-        <li>$$\text{WACC} = \left(20.74\% \times \frac{125}{165}\right) + \left(7.70\% \times \frac{40}{165}\right) = 15.712\% + 1.867\% = \mathbf{17.58\%}$$[cite: 11]</li>
+        <li>$$K_e = R_f + \\beta(R_m - R_f) = 8.5\\% + 1.36(9\\%) = 8.5\\% + 12.24\\% = \\mathbf{20.74\\%}$$[cite: 11]</li>
+        <li>$$\\text{Post-tax } K_d = 11\\% \\times (1 - 0.30) = \\mathbf{7.70\\%}$$[cite: 11]</li>
+        <li>$$\\text{WACC} = \\left(20.74\\% \\times \\frac{125}{165}\\right) + \\left(7.70\\% \\times \\frac{40}{165}\\right) = 15.712\\% + 1.867\\% = \\mathbf{17.58\\%}$$[cite: 11]</li>
       </ul>
 
       <h4>(ii) Estimation of Economic Value Added (EVA)</h4>
       <ul>
-        <li>$$\text{Taxable Income (EBT)} = \frac{₹ 25,00,000}{1 - 0.30} = \mathbf{₹ 35,71,429}$$[cite: 11]</li>
-        <li>$$\text{Interest on Debt} = ₹ 40,00,000 \times 11\% = ₹ 4,40,000$$[cite: 11]</li>
-        <li>$$\text{EBIT} = ₹ 35,71,429 + ₹ 4,40,000 = \mathbf{₹ 40,11,429}$$[cite: 11]</li>
-        <li>$$\text{NOPAT} = \text{EBIT} \times (1 - T) = ₹ 40,11,429 \times 0.70 = \mathbf{₹ 28,08,000}$$[cite: 11]</li>
-        <li>$$\text{Capital Charge} = \text{Invested Capital} \times \text{WACC} = ₹ 1,65,00,000 \times 17.58\% = \mathbf{₹ 29,00,700}$$[cite: 11]</li>
+        <li>$$\\text{Taxable Income (EBT)} = \\frac{₹ 25,00,000}{1 - 0.30} = \\mathbf{₹ 35,71,429}$$[cite: 11]</li>
+        <li>$$\\text{Interest on Debt} = ₹ 40,00,000 \\times 11\\% = ₹ 4,40,000$$[cite: 11]</li>
+        <li>$$\\text{EBIT} = ₹ 35,71,429 + ₹ 4,40,000 = \\mathbf{₹ 40,11,429}$$[cite: 11]</li>
+        <li>$$\\text{NOPAT} = \\text{EBIT} \\times (1 - T) = ₹ 40,11,429 \\times 0.70 = \\mathbf{₹ 28,08,000}$$[cite: 11]</li>
+        <li>$$\\text{Capital Charge} = \\text{Invested Capital} \\times \\text{WACC} = ₹ 1,65,00,000 \\times 17.58\\% = \\mathbf{₹ 29,00,700}$$[cite: 11]</li>
       </ul>
-      <p>$$\text{EVA} = \text{NOPAT} - \text{Capital Charge} = ₹ 28,08,000 - ₹ 29,00,700 = \mathbf{- ₹ 92,700}$$[cite: 11]</p>
+      <p>$$\\text{EVA} = \\text{NOPAT} - \\text{Capital Charge} = ₹ 28,08,000 - ₹ 29,00,700 = \\mathbf{- ₹ 92,700}$$[cite: 11]</p>
     `
   },
   {
@@ -14186,19 +14186,19 @@ const icaibookData = [
     solution_html: `
       <h4>(a) Operating Income (EBIT)</h4>
       <ul>
-        <li>$$\text{EBT} = \frac{₹ 15,00,000}{1 - 0.30} = \mathbf{₹ 21,42,857}$$[cite: 11]</li>
-        <li>$$\text{EBIT} = \text{EBT} + \text{Interest} = ₹ 21,42,857 + ₹ 10,00,000 = \mathbf{₹ 31,42,857 \text{ (₹ 31.43 lakhs)}}$$[cite: 11]</li>
+        <li>$$\\text{EBT} = \\frac{₹ 15,00,000}{1 - 0.30} = \\mathbf{₹ 21,42,857}$$[cite: 11]</li>
+        <li>$$\\text{EBIT} = \\text{EBT} + \\text{Interest} = ₹ 21,42,857 + ₹ 10,00,000 = \\mathbf{₹ 31,42,857 \\text{ (₹ 31.43 lakhs)}}$$[cite: 11]</li>
       </ul>
 
       <h4>(b) Economic Value Added (EVA)</h4>
       <ul>
-        <li>$$\text{NOPAT} = \text{EBIT} \times (1 - T) = ₹ 31,42,857 \times 0.70 = \mathbf{₹ 22,00,000}$$[cite: 11]</li>
-        <li>$$\text{Capital Charge} = \text{Invested Capital} \times \text{WACC} = ₹ 95,00,000 \times 13\% = \mathbf{₹ 12,35,000}$$[cite: 11]</li>
-        <li>$$\text{EVA} = ₹ 22,00,000 - ₹ 12,35,000 = \mathbf{₹ 9,65,000}$$[cite: 11]</li>
+        <li>$$\\text{NOPAT} = \\text{EBIT} \\times (1 - T) = ₹ 31,42,857 \\times 0.70 = \\mathbf{₹ 22,00,000}$$[cite: 11]</li>
+        <li>$$\\text{Capital Charge} = \\text{Invested Capital} \\times \\text{WACC} = ₹ 95,00,000 \\times 13\\% = \\mathbf{₹ 12,35,000}$$[cite: 11]</li>
+        <li>$$\\text{EVA} = ₹ 22,00,000 - ₹ 12,35,000 = \\mathbf{₹ 9,65,000}$$[cite: 11]</li>
       </ul>
 
       <h4>(c) Maximum Dividend Payable Per Share</h4>
-      <p>$$\text{Maximum Dividend Payable without Destroying Value} = \frac{\text{EVA}}{\text{Number of Equity Shares}} = \frac{₹ 9,65,000}{6,00,000 \text{ shares}} = \mathbf{₹ 1.6083 \text{ per share}}$$[cite: 11]</p>
+      <p>$$\\text{Maximum Dividend Payable without Destroying Value} = \\frac{\\text{EVA}}{\\text{Number of Equity Shares}} = \\frac{₹ 9,65,000}{6,00,000 \\text{ shares}} = \\mathbf{₹ 1.6083 \\text{ per share}}$$[cite: 11]</p>
     `
   },
   {
@@ -14233,17 +14233,17 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Weighted Average Cost of Capital (WACC)</h4>
       <ul>
-        <li><strong>Orange:</strong> $\text{Post-tax } K_d = 16\%(1 - 0.35) = 10.40\% \implies \text{WACC} = (10.4\% \times 0.8) + (26\% \times 0.2) = \mathbf{13.52\%}$[cite: 11]</li>
-        <li><strong>Grape:</strong> $\text{Post-tax } K_d = 13\%(1 - 0.35) = 8.45\% \implies \text{WACC} = (8.45\% \times 0.5) + (22\% \times 0.5) = \mathbf{15.225\%}$[cite: 11]</li>
-        <li><strong>Apple:</strong> $\text{Post-tax } K_d = 15\%(1 - 0.35) = 9.75\% \implies \text{WACC} = (9.75\% \times 0.2) + (20\% \times 0.8) = \mathbf{17.95\%}$[cite: 11]</li>
+        <li><strong>Orange:</strong> $\\text{Post-tax } K_d = 16\\%(1 - 0.35) = 10.40\\% \\implies \\text{WACC} = (10.4\\% \\times 0.8) + (26\\% \\times 0.2) = \\mathbf{13.52\\%}$[cite: 11]</li>
+        <li><strong>Grape:</strong> $\\text{Post-tax } K_d = 13\\%(1 - 0.35) = 8.45\\% \\implies \\text{WACC} = (8.45\\% \\times 0.5) + (22\\% \\times 0.5) = \\mathbf{15.225\\%}$[cite: 11]</li>
+        <li><strong>Apple:</strong> $\\text{Post-tax } K_d = 15\\%(1 - 0.35) = 9.75\\% \\implies \\text{WACC} = (9.75\\% \\times 0.2) + (20\\% \\times 0.8) = \\mathbf{17.95\\%}$[cite: 11]</li>
       </ul>
 
       <h4>(ii) Economic Value Added (EVA)</h4>
-      <p>$$\text{NOPAT} = \text{EBIT} \times (1 - T) = ₹ 25,000 \times (1 - 0.35) = \mathbf{₹ 16,250}$$[cite: 11]</p>
+      <p>$$\\text{NOPAT} = \\text{EBIT} \\times (1 - T) = ₹ 25,000 \\times (1 - 0.35) = \\mathbf{₹ 16,250}$$[cite: 11]</p>
       <ul>
-        <li><strong>Orange:</strong> $₹ 16,250 - (13.52\% \times ₹ 1,00,000) = ₹ 16,250 - ₹ 13,520 = \mathbf{+₹ 2,730}$[cite: 11]</li>
-        <li><strong>Grape:</strong> $₹ 16,250 - (15.225\% \times ₹ 1,00,000) = ₹ 16,250 - ₹ 15,225 = \mathbf{+₹ 1,025}$[cite: 11]</li>
-        <li><strong>Apple:</strong> $₹ 16,250 - (17.95\% \times ₹ 1,00,000) = ₹ 16,250 - ₹ 17,950 = \mathbf{-₹ 1,700}$[cite: 11]</li>
+        <li><strong>Orange:</strong> $₹ 16,250 - (13.52\\% \\times ₹ 1,00,000) = ₹ 16,250 - ₹ 13,520 = \\mathbf{+₹ 2,730}$[cite: 11]</li>
+        <li><strong>Grape:</strong> $₹ 16,250 - (15.225\\% \\times ₹ 1,00,000) = ₹ 16,250 - ₹ 15,225 = \\mathbf{+₹ 1,025}$[cite: 11]</li>
+        <li><strong>Apple:</strong> $₹ 16,250 - (17.95\\% \\times ₹ 1,00,000) = ₹ 16,250 - ₹ 17,950 = \\mathbf{-₹ 1,700}$[cite: 11]</li>
       </ul>
 
       <h4>(iii) Investment Recommendation</h4>
@@ -14293,19 +14293,19 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Operating Income (EBIT)</h4>
       <ul>
-        <li>$$\text{Taxable Income (EBT)} = \frac{₹ 15,00,000}{1 - 0.40} = \mathbf{₹ 25,00,000}$$[cite: 11]</li>
-        <li>$$\text{EBIT} = \text{EBT} + \text{Interest} = ₹ 25,00,000 + ₹ 15,00,000 = \mathbf{₹ 40,00,000}$$[cite: 11]</li>
+        <li>$$\\text{Taxable Income (EBT)} = \\frac{₹ 15,00,000}{1 - 0.40} = \\mathbf{₹ 25,00,000}$$[cite: 11]</li>
+        <li>$$\\text{EBIT} = \\text{EBT} + \\text{Interest} = ₹ 25,00,000 + ₹ 15,00,000 = \\mathbf{₹ 40,00,000}$$[cite: 11]</li>
       </ul>
 
       <h4>(ii) Economic Value Added (EVA)</h4>
       <ul>
-        <li>$$\text{NOPAT} = \text{EBIT} \times (1 - T) = ₹ 40,00,000 \times 0.60 = \mathbf{₹ 24,00,000}$$[cite: 11]</li>
-        <li>$$\text{Capital Charge} = \text{Invested Capital} \times \text{WACC} = ₹ 1,00,00,000 \times 12.6\% = \mathbf{₹ 12,60,000}$$[cite: 11]</li>
-        <li>$$\text{EVA} = ₹ 24,00,000 - ₹ 12,60,000 = \mathbf{₹ 11,40,000}$$[cite: 11]</li>
+        <li>$$\\text{NOPAT} = \\text{EBIT} \\times (1 - T) = ₹ 40,00,000 \\times 0.60 = \\mathbf{₹ 24,00,000}$$[cite: 11]</li>
+        <li>$$\\text{Capital Charge} = \\text{Invested Capital} \\times \\text{WACC} = ₹ 1,00,00,000 \\times 12.6\\% = \\mathbf{₹ 12,60,000}$$[cite: 11]</li>
+        <li>$$\\text{EVA} = ₹ 24,00,000 - ₹ 12,60,000 = \\mathbf{₹ 11,40,000}$$[cite: 11]</li>
       </ul>
 
       <h4>(iii) Maximum Dividend and Retention Effect</h4>
-      <p>$$\text{Permissible Dividend per Share} = \frac{₹ 11,40,000}{2,50,000 \text{ shares}} = \mathbf{₹ 4.56 \text{ per share}}$$[cite: 11]</p>
+      <p>$$\\text{Permissible Dividend per Share} = \\frac{₹ 11,40,000}{2,50,000 \\text{ shares}} = \\mathbf{₹ 4.56 \\text{ per share}}$$[cite: 11]</p>
       <p>If Delta Ltd. does not pay dividends, the retained earnings will compound within the firm at returns above its cost of capital, accelerating business growth and expanding the total value of the company[cite: 11].</p>
     `
   },
@@ -14329,17 +14329,17 @@ const icaibookData = [
     solution_html: `
       <h4>(a) Determination of Economic Value Added (EVA)</h4>
       <ul>
-        <li>$$\text{NOPAT} = \text{EBIT} \times (1 - T) = \$ 180.00\text{m} \times (1 - 0.35) = \mathbf{\$ 117.00 \text{ Million}}$$[cite: 11]</li>
-        <li>$$\text{Invested Capital} = \text{Total Assets} - \text{Current Liabilities} = \$ 785\text{m} - \$ 180\text{m} = \mathbf{\$ 605.00 \text{ Million}}$$ (or Equity $100 + 325$ + Debt $180 = \$ 605\text{m}$)[cite: 11]</li>
-        <li>$$\text{Capital Charge} = \$ 605.00\text{m} \times 12\% = \mathbf{\$ 72.60 \text{ Million}}$$[cite: 11]</li>
-        <li>$$\text{Economic Value Added (EVA)} = \$ 117.00\text{m} - \$ 72.60\text{m} = \mathbf{\$ 44.40 \text{ Million}}$$[cite: 11]</li>
+        <li>$$\\text{NOPAT} = \\text{EBIT} \\times (1 - T) = \\$ 180.00\\text{m} \\times (1 - 0.35) = \\mathbf{\\$ 117.00 \\text{ Million}}$$[cite: 11]</li>
+        <li>$$\\text{Invested Capital} = \\text{Total Assets} - \\text{Current Liabilities} = \\$ 785\\text{m} - \\$ 180\\text{m} = \\mathbf{\\$ 605.00 \\text{ Million}}$$ (or Equity $100 + 325$ + Debt $180 = \\$ 605\\text{m}$)[cite: 11]</li>
+        <li>$$\\text{Capital Charge} = \\$ 605.00\\text{m} \\times 12\\% = \\mathbf{\\$ 72.60 \\text{ Million}}$$[cite: 11]</li>
+        <li>$$\\text{Economic Value Added (EVA)} = \\$ 117.00\\text{m} - \\$ 72.60\\text{m} = \\mathbf{\\$ 44.40 \\text{ Million}}$$[cite: 11]</li>
       </ul>
 
       <h4>(b) Determination of Market Value Added (MVA)</h4>
       <ul>
-        <li>$$\text{Market Value of Equity} = 10 \text{ million shares} \times \$ 50 = \mathbf{\$ 500.00 \text{ Million}}$$[cite: 11]</li>
-        <li>$$\text{Book Value of Equity (Shareholders' Funds)} = \$ 100\text{m} + \$ 325\text{m} = \mathbf{\$ 425.00 \text{ Million}}$$[cite: 11]</li>
-        <li>$$\text{Market Value Added (MVA)} = \$ 500.00\text{m} - \$ 425.00\text{m} = \mathbf{\$ 75.00 \text{ Million}}$$[cite: 11]</li>
+        <li>$$\\text{Market Value of Equity} = 10 \\text{ million shares} \\times \\$ 50 = \\mathbf{\\$ 500.00 \\text{ Million}}$$[cite: 11]</li>
+        <li>$$\\text{Book Value of Equity (Shareholders' Funds)} = \\$ 100\\text{m} + \\$ 325\\text{m} = \\mathbf{\\$ 425.00 \\text{ Million}}$$[cite: 11]</li>
+        <li>$$\\text{Market Value Added (MVA)} = \\$ 500.00\\text{m} - \\$ 425.00\\text{m} = \\mathbf{\\$ 75.00 \\text{ Million}}$$[cite: 11]</li>
       </ul>
     `
   },
@@ -14356,15 +14356,15 @@ const icaibookData = [
     solution_html: `
       <h4>1. Total Capital Employed (Including Unrecorded Patent)</h4>
       <ul>
-        <li>Working Capital $= ₹ 20 \text{ lakhs}$[cite: 11]</li>
-        <li>Property, Plant, and Equipment $= ₹ 80 \text{ lakhs}$[cite: 11]</li>
-        <li>Market Value of Patent Rights $= ₹ 40 \text{ lakhs}$[cite: 11]</li>
-        <li>$$\text{Total Invested Capital} = ₹ 20 + ₹ 80 + ₹ 40 = \mathbf{₹ 140 \text{ lakhs}}$$[cite: 11]</li>
+        <li>Working Capital $= ₹ 20 \\text{ lakhs}$[cite: 11]</li>
+        <li>Property, Plant, and Equipment $= ₹ 80 \\text{ lakhs}$[cite: 11]</li>
+        <li>Market Value of Patent Rights $= ₹ 40 \\text{ lakhs}$[cite: 11]</li>
+        <li>$$\\text{Total Invested Capital} = ₹ 20 + ₹ 80 + ₹ 40 = \\mathbf{₹ 140 \\text{ lakhs}}$$[cite: 11]</li>
       </ul>
 
       <h4>2. Economic Value Added (EVA)</h4>
-      <p>$$\text{Capital Charge} = \text{Total Capital} \times \text{WACC} = ₹ 140 \text{ lakhs} \times 15\% = \mathbf{₹ 21 \text{ lakhs}}$$[cite: 11]</p>
-      <p>$$\text{EVA} = \text{After-tax Earnings} - \text{Capital Charge} = ₹ 12 \text{ lakhs} - ₹ 21 \text{ lakhs} = \mathbf{-₹ 9 \text{ lakhs}}$$[cite: 11]</p>
+      <p>$$\\text{Capital Charge} = \\text{Total Capital} \\times \\text{WACC} = ₹ 140 \\text{ lakhs} \\times 15\\% = \\mathbf{₹ 21 \\text{ lakhs}}$$[cite: 11]</p>
+      <p>$$\\text{EVA} = \\text{After-tax Earnings} - \\text{Capital Charge} = ₹ 12 \\text{ lakhs} - ₹ 21 \\text{ lakhs} = \\mathbf{-₹ 9 \\text{ lakhs}}$$[cite: 11]</p>
       <p>Herbal Gyan has a negative EVA of <strong>-₹ 9 lakhs</strong>[cite: 11].</p>
     `
   },
@@ -14381,18 +14381,18 @@ const icaibookData = [
     solution_html: `
       <h4>1. Cost of Equity and WACC</h4>
       <ul>
-        <li>Because the stock moves in tandem with the market, Beta $\beta = 1.00$[cite: 11].</li>
-        <li>$$\text{Cost of Equity } (K_e) = R_f + \beta(R_m - R_f) = 10\% + 1.00(12\% - 10\%) = \mathbf{12.00\%}$$[cite: 11]</li>
-        <li>Cost of Debt ($K_d$) $= \mathbf{10.00\%}$[cite: 11]</li>
-        <li>Total Equity (including patent value) $= ₹ 200 \text{ cr (Net Worth)} + ₹ 100 \text{ cr (Patent)} = \mathbf{₹ 300 \text{ Crores}}$[cite: 11]</li>
-        <li>Debt $= \mathbf{₹ 400 \text{ Crores}}$[cite: 11]</li>
-        <li>$$\text{Total Invested Capital} = ₹ 300 + ₹ 400 = \mathbf{₹ 700 \text{ Crores}}$$[cite: 11]</li>
-        <li>$$\text{WACC} = \left(12\% \times \frac{300}{700}\right) + \left(10\% \times \frac{400}{700}\right) = 5.143\% + 5.714\% = \mathbf{10.857\% \approx 10.85\%}$$[cite: 11]</li>
+        <li>Because the stock moves in tandem with the market, Beta $\\beta = 1.00$[cite: 11].</li>
+        <li>$$\\text{Cost of Equity } (K_e) = R_f + \\beta(R_m - R_f) = 10\\% + 1.00(12\\% - 10\\%) = \\mathbf{12.00\\%}$$[cite: 11]</li>
+        <li>Cost of Debt ($K_d$) $= \\mathbf{10.00\\%}$[cite: 11]</li>
+        <li>Total Equity (including patent value) $= ₹ 200 \\text{ cr (Net Worth)} + ₹ 100 \\text{ cr (Patent)} = \\mathbf{₹ 300 \\text{ Crores}}$[cite: 11]</li>
+        <li>Debt $= \\mathbf{₹ 400 \\text{ Crores}}$[cite: 11]</li>
+        <li>$$\\text{Total Invested Capital} = ₹ 300 + ₹ 400 = \\mathbf{₹ 700 \\text{ Crores}}$$[cite: 11]</li>
+        <li>$$\\text{WACC} = \\left(12\\% \\times \\frac{300}{700}\\right) + \\left(10\\% \\times \\frac{400}{700}\\right) = 5.143\\% + 5.714\\% = \\mathbf{10.857\\% \\approx 10.85\\%}$$[cite: 11]</li>
       </ul>
 
       <h4>2. Economic Value Added (EVA)</h4>
-      <p>$$\text{Capital Charge} = ₹ 700 \text{ crores} \times 10.85\% = \mathbf{₹ 75.95 \text{ Crores}}$$ (or ₹ 76.00 crores @ 10.857%)[cite: 11]</p>
-      <p>$$\text{EVA} = \text{NOPAT} - \text{Capital Charge} = ₹ 84.00 \text{ crores} - ₹ 75.95 \text{ crores} = \mathbf{₹ 8.05 \text{ Crores}}$$[cite: 11]</p>
+      <p>$$\\text{Capital Charge} = ₹ 700 \\text{ crores} \\times 10.85\\% = \\mathbf{₹ 75.95 \\text{ Crores}}$$ (or ₹ 76.00 crores @ 10.857%)[cite: 11]</p>
+      <p>$$\\text{EVA} = \\text{NOPAT} - \\text{Capital Charge} = ₹ 84.00 \\text{ crores} - ₹ 75.95 \\text{ crores} = \\mathbf{₹ 8.05 \\text{ Crores}}$$[cite: 11]</p>
     `
   },
   // chapter14
@@ -14445,32 +14445,32 @@ const icaibookData = [
     solution_html: `
       <h4>1. Total Reconstruction Surplus Generated (₹ in lakhs)</h4>
       <ul>
-        <li>Reduction in Equity Share Capital: $6 \text{ lakhs} \times (₹ 100 - ₹ 25) = \mathbf{₹ 450 \text{ lakhs}}$[cite: 12]</li>
-        <li>Reduction in Preference Share Capital: $2 \text{ lakhs} \times (₹ 100 - ₹ 50) = \mathbf{₹ 100 \text{ lakhs}}$[cite: 12]</li>
-        <li>Waiver of Accrued Debenture Interest $= \mathbf{₹ 26 \text{ lakhs}}$[cite: 12]</li>
-        <li>Waiver by Trade Creditors ($25\% \times ₹ 300 \text{ lakhs}$) $= \mathbf{₹ 75 \text{ lakhs}}$[cite: 12]</li>
-        <li>Appreciation on revaluation of Land &amp; Building ($₹ 250 - ₹ 200$) $= \mathbf{₹ 50 \text{ lakhs}}$[cite: 12]</li>
+        <li>Reduction in Equity Share Capital: $6 \\text{ lakhs} \\times (₹ 100 - ₹ 25) = \\mathbf{₹ 450 \\text{ lakhs}}$[cite: 12]</li>
+        <li>Reduction in Preference Share Capital: $2 \\text{ lakhs} \\times (₹ 100 - ₹ 50) = \\mathbf{₹ 100 \\text{ lakhs}}$[cite: 12]</li>
+        <li>Waiver of Accrued Debenture Interest $= \\mathbf{₹ 26 \\text{ lakhs}}$[cite: 12]</li>
+        <li>Waiver by Trade Creditors ($25\\% \\times ₹ 300 \\text{ lakhs}$) $= \\mathbf{₹ 75 \\text{ lakhs}}$[cite: 12]</li>
+        <li>Appreciation on revaluation of Land &amp; Building ($₹ 250 - ₹ 200$) $= \\mathbf{₹ 50 \\text{ lakhs}}$[cite: 12]</li>
         <li><strong>Total Capital Reduction Reserve Created: ₹ 701 lakhs</strong>[cite: 12]</li>
       </ul>
 
       <h4>2. Utilization of Reconstruction Surplus (₹ in lakhs)</h4>
       <ul>
-        <li>Writing off Profit &amp; Loss Debit Balance $= ₹ 485 \text{ lakhs}$[cite: 12]</li>
-        <li>Writing off Preliminary Expenses $= ₹ 10 \text{ lakhs}$[cite: 12]</li>
-        <li>Writing off Cost of Issue of Debentures $= ₹ 5 \text{ lakhs}$[cite: 12]</li>
-        <li>Provision for Bad and Doubtful Debts $= ₹ 5 \text{ lakhs}$[cite: 12]</li>
-        <li>Write-down of Plant &amp; Machinery ($₹ 300 - ₹ 104$) $= ₹ 196 \text{ lakhs}$[cite: 12]</li>
+        <li>Writing off Profit &amp; Loss Debit Balance $= ₹ 485 \\text{ lakhs}$[cite: 12]</li>
+        <li>Writing off Preliminary Expenses $= ₹ 10 \\text{ lakhs}$[cite: 12]</li>
+        <li>Writing off Cost of Issue of Debentures $= ₹ 5 \\text{ lakhs}$[cite: 12]</li>
+        <li>Provision for Bad and Doubtful Debts $= ₹ 5 \\text{ lakhs}$[cite: 12]</li>
+        <li>Write-down of Plant &amp; Machinery ($₹ 300 - ₹ 104$) $= ₹ 196 \\text{ lakhs}$[cite: 12]</li>
         <li><strong>Total Amount Utilized: ₹ 701 lakhs</strong>[cite: 12]</li>
       </ul>
 
       <h4>3. Working Notes for New Capital and Cash</h4>
       <ul>
-        <li>Shares issued to Trade Creditors ($75\% \times ₹ 300 \text{ lakhs} = ₹ 225 \text{ lakhs} / ₹ 25$) $= \mathbf{9 \text{ lakh shares}}$[cite: 12].</li>
+        <li>Shares issued to Trade Creditors ($75\\% \\times ₹ 300 \\text{ lakhs} = ₹ 225 \\text{ lakhs} / ₹ 25$) $= \\mathbf{9 \\text{ lakh shares}}$[cite: 12].</li>
         <li>Total Post-Reconstruction Equity Shares:
-          <br />$$6 \text{ lakhs (existing)} + 9 \text{ lakhs (creditors)} + 6 \text{ lakhs (rights cash)} = \mathbf{21 \text{ lakh shares of ₹ 25 each}} = \mathbf{₹ 525 \text{ lakhs}}$$[cite: 12]
+          <br />$$6 \\text{ lakhs (existing)} + 9 \\text{ lakhs (creditors)} + 6 \\text{ lakhs (rights cash)} = \\mathbf{21 \\text{ lakh shares of ₹ 25 each}} = \\mathbf{₹ 525 \\text{ lakhs}}$$[cite: 12]
         </li>
         <li>Closing Bank Balance:
-          <br />$$₹ 130 \text{ lakhs (opening)} + ₹ 150 \text{ lakhs (issue of 6L shares @ 25)} - ₹ 74 \text{ lakhs (bank loan repaid)} = \mathbf{₹ 206 \text{ lakhs}}$$[cite: 12]
+          <br />$$₹ 130 \\text{ lakhs (opening)} + ₹ 150 \\text{ lakhs (issue of 6L shares @ 25)} - ₹ 74 \\text{ lakhs (bank loan repaid)} = \\mathbf{₹ 206 \\text{ lakhs}}$$[cite: 12]
         </li>
       </ul>
 
@@ -14518,36 +14518,36 @@ const icaibookData = [
     solution_html: `
       <h4>1. Total Combined Earnings</h4>
       <ul>
-        <li>Company X: $3,00,000 \times ₹ 4.00 = ₹ 12,00,000$[cite: 12]</li>
-        <li>Company Y: $2,00,000 \times ₹ 2.25 = ₹ 4,50,000$[cite: 12]</li>
-        <li>Total Combined Earnings $= ₹ 12,00,000 + ₹ 4,50,000 = \mathbf{₹ 16,50,000}$[cite: 12]</li>
+        <li>Company X: $3,00,000 \\times ₹ 4.00 = ₹ 12,00,000$[cite: 12]</li>
+        <li>Company Y: $2,00,000 \\times ₹ 2.25 = ₹ 4,50,000$[cite: 12]</li>
+        <li>Total Combined Earnings $= ₹ 12,00,000 + ₹ 4,50,000 = \\mathbf{₹ 16,50,000}$[cite: 12]</li>
       </ul>
 
       <h4>2. Alternative (i): Exchange Ratio in Proportion to Relative EPS ($2.25 : 4$)</h4>
       <ul>
-        <li>New shares issued to Company Y: $2,00,000 \times \frac{2.25}{4} = \mathbf{1,12,500 \text{ shares}}$[cite: 12]</li>
-        <li>Total shares post-merger $= 3,00,000 + 1,12,500 = \mathbf{4,12,500 \text{ shares}}$[cite: 12]</li>
-        <li>$$\text{Post-Merger EPS} = \frac{₹ 16,50,000}{4,12,500} = \mathbf{₹ 4.00}$$[cite: 12]</li>
-        <li>Equivalent EPS for Company Y shareholders: $₹ 4.00 \times \frac{2.25}{4} = \mathbf{₹ 2.25}$[cite: 12]</li>
+        <li>New shares issued to Company Y: $2,00,000 \\times \\frac{2.25}{4} = \\mathbf{1,12,500 \\text{ shares}}$[cite: 12]</li>
+        <li>Total shares post-merger $= 3,00,000 + 1,12,500 = \\mathbf{4,12,500 \\text{ shares}}$[cite: 12]</li>
+        <li>$$\\text{Post-Merger EPS} = \\frac{₹ 16,50,000}{4,12,500} = \\mathbf{₹ 4.00}$$[cite: 12]</li>
+        <li>Equivalent EPS for Company Y shareholders: $₹ 4.00 \\times \\frac{2.25}{4} = \\mathbf{₹ 2.25}$[cite: 12]</li>
         <li><strong>Impact:</strong> Nil change in EPS for shareholders of both companies[cite: 12].</li>
       </ul>
 
       <h4>3. Alternative (ii): Exchange Ratio of 0.5 : 1</h4>
       <ul>
-        <li>New shares issued to Company Y: $2,00,000 \times 0.5 = \mathbf{1,00,000 \text{ shares}}$[cite: 12]</li>
-        <li>Total shares post-merger $= 3,00,000 + 1,00,000 = \mathbf{4,00,000 \text{ shares}}$[cite: 12]</li>
-        <li>$$\text{Post-Merger EPS} = \frac{₹ 16,50,000}{4,00,000} = \mathbf{₹ 4.125}$$[cite: 12]</li>
+        <li>New shares issued to Company Y: $2,00,000 \\times 0.5 = \\mathbf{1,00,000 \\text{ shares}}$[cite: 12]</li>
+        <li>Total shares post-merger $= 3,00,000 + 1,00,000 = \\mathbf{4,00,000 \\text{ shares}}$[cite: 12]</li>
+        <li>$$\\text{Post-Merger EPS} = \\frac{₹ 16,50,000}{4,00,000} = \\mathbf{₹ 4.125}$$[cite: 12]</li>
       </ul>
 
       <h4>4. Impact on EPS Under Alternative (ii)</h4>
       <ul>
         <li><strong>Company X Shareholders:</strong>
           <br />Post-merger EPS $= ₹ 4.125$; Pre-merger EPS $= ₹ 4.000$
-          <br />$$\text{EPS Accretion (Increase)} = ₹ 4.125 - ₹ 4.000 = \mathbf{+₹ 0.125}$$[cite: 12]
+          <br />$$\\text{EPS Accretion (Increase)} = ₹ 4.125 - ₹ 4.000 = \\mathbf{+₹ 0.125}$$[cite: 12]
         </li>
         <li><strong>Company Y Shareholders:</strong>
-          <br />Equivalent Post-merger EPS $= ₹ 4.125 \times 0.5 = ₹ 2.0625$; Pre-merger EPS $= ₹ 2.250$
-          <br />$$\text{EPS Dilution (Decrease)} = ₹ 2.0625 - ₹ 2.2500 = \mathbf{-₹ 0.1875}$$[cite: 12]
+          <br />Equivalent Post-merger EPS $= ₹ 4.125 \\times 0.5 = ₹ 2.0625$; Pre-merger EPS $= ₹ 2.250$
+          <br />$$\\text{EPS Dilution (Decrease)} = ₹ 2.0625 - ₹ 2.2500 = \\mathbf{-₹ 0.1875}$$[cite: 12]
         </li>
       </ul>
     `
@@ -14573,21 +14573,21 @@ const icaibookData = [
     solution_html: `
       <h4>(i) New EPS Based on Market Price Exchange Ratio</h4>
       <ul>
-        <li>$$\text{Exchange Ratio} = \frac{\text{MPS}_B}{\text{MPS}_A} = \frac{₹ 60}{₹ 75} = \mathbf{0.80 \text{ (4 shares of A Ltd. for 5 shares of B Ltd.)}}$$[cite: 12]</li>
-        <li>New shares issued to B Ltd.: $50,00,000 \times 10^{-2} \times 0.80 = 50,000 \times 0.80 = \mathbf{40,000 \text{ shares}}$[cite: 12]</li>
-        <li>Total shares in A Ltd. post-merger $= 2,00,000 + 40,000 = \mathbf{2,40,000 \text{ shares}}$[cite: 12]</li>
+        <li>$$\\text{Exchange Ratio} = \\frac{\\text{MPS}_B}{\\text{MPS}_A} = \\frac{₹ 60}{₹ 75} = \\mathbf{0.80 \\text{ (4 shares of A Ltd. for 5 shares of B Ltd.)}}$$[cite: 12]</li>
+        <li>New shares issued to B Ltd.: $50,00,000 \\times 10^{-2} \\times 0.80 = 50,000 \\times 0.80 = \\mathbf{40,000 \\text{ shares}}$[cite: 12]</li>
+        <li>Total shares in A Ltd. post-merger $= 2,00,000 + 40,000 = \\mathbf{2,40,000 \\text{ shares}}$[cite: 12]</li>
         <li>Total Combined Earnings $= ₹ 10,00,000 + ₹ 3,00,000 = ₹ 13,00,000$[cite: 12]</li>
-        <li>$$\text{New EPS of A Ltd.} = \frac{₹ 13,00,000}{2,40,000} = \mathbf{₹ 5.42 \text{ per share}}$$ (an increase from ₹ 5.00)[cite: 12]</li>
+        <li>$$\\text{New EPS of A Ltd.} = \\frac{₹ 13,00,000}{2,40,000} = \\mathbf{₹ 5.42 \\text{ per share}}$$ (an increase from ₹ 5.00)[cite: 12]</li>
       </ul>
 
       <h4>(ii) Exchange Ratio to Protect B Ltd.'s EPS</h4>
       <ul>
-        <li>$\text{Pre-merger EPS of A Ltd.} = \frac{₹ 10,00,000}{2,00,000} = \mathbf{₹ 5.00}$[cite: 12]</li>
-        <li>$\text{Pre-merger EPS of B Ltd.} = \frac{₹ 3,00,000}{50,000} = \mathbf{₹ 6.00}$[cite: 12]</li>
-        <li>$$\text{Exchange Ratio Based on Relative EPS} = \frac{\text{EPS}_B}{\text{EPS}_A} = \frac{₹ 6.00}{₹ 5.00} = \mathbf{1.20 \text{ (6 shares of A Ltd. for 5 shares of B Ltd.)}}$$[cite: 12]</li>
-        <li>Shares issued to B Ltd.: $50,000 \times 1.20 = \mathbf{60,000 \text{ shares}}$[cite: 12]</li>
-        <li>$$\text{Post-merger EPS of A Ltd.} = \frac{₹ 13,00,000}{2,00,000 + 60,000} = \frac{₹ 13,00,000}{2,60,000} = \mathbf{₹ 5.00}$$[cite: 12]</li>
-        <li>Equivalent EPS to B Ltd. shareholders: $₹ 5.00 \times 1.20 = \mathbf{₹ 6.00}$ (remains exactly unaffected)[cite: 12].</li>
+        <li>$\\text{Pre-merger EPS of A Ltd.} = \\frac{₹ 10,00,000}{2,00,000} = \\mathbf{₹ 5.00}$[cite: 12]</li>
+        <li>$\\text{Pre-merger EPS of B Ltd.} = \\frac{₹ 3,00,000}{50,000} = \\mathbf{₹ 6.00}$[cite: 12]</li>
+        <li>$$\\text{Exchange Ratio Based on Relative EPS} = \\frac{\\text{EPS}_B}{\\text{EPS}_A} = \\frac{₹ 6.00}{₹ 5.00} = \\mathbf{1.20 \\text{ (6 shares of A Ltd. for 5 shares of B Ltd.)}}$$[cite: 12]</li>
+        <li>Shares issued to B Ltd.: $50,000 \\times 1.20 = \\mathbf{60,000 \\text{ shares}}$[cite: 12]</li>
+        <li>$$\\text{Post-merger EPS of A Ltd.} = \\frac{₹ 13,00,000}{2,00,000 + 60,000} = \\frac{₹ 13,00,000}{2,60,000} = \\mathbf{₹ 5.00}$$[cite: 12]</li>
+        <li>Equivalent EPS to B Ltd. shareholders: $₹ 5.00 \\times 1.20 = \\mathbf{₹ 6.00}$ (remains exactly unaffected)[cite: 12].</li>
       </ul>
     `
   },
@@ -14808,27 +14808,27 @@ const icaibookData = [
       <h4>1. Pre-Merger Earnings and Valuations</h4>
       <ul>
         <li><strong>Target Company (C Ltd.):</strong>
-          <br />$$\text{Total Market Value} = 1,00,000 \times ₹ 15 = ₹ 15,00,000$$[cite: 12]
-          <br />$$\text{Total Earnings (EAT)} = \frac{\text{Market Value}}{\text{PE Ratio}} = \frac{₹ 15,00,000}{10} = \mathbf{₹ 1,50,000}$$[cite: 12]
+          <br />$$\\text{Total Market Value} = 1,00,000 \\times ₹ 15 = ₹ 15,00,000$$[cite: 12]
+          <br />$$\\text{Total Earnings (EAT)} = \\frac{\\text{Market Value}}{\\text{PE Ratio}} = \\frac{₹ 15,00,000}{10} = \\mathbf{₹ 1,50,000}$$[cite: 12]
         </li>
         <li><strong>Acquiring Company (B Ltd.):</strong>
-          <br />$$\text{Total Market Value} = 5,00,000 \times ₹ 12 = ₹ 60,00,000$$[cite: 12]
-          <br />$$\text{Total Earnings (EAT)} = \frac{₹ 60,00,000}{17} = \mathbf{₹ 3,52,941}$$[cite: 12]
-          <br />$$\text{Pre-Merger EPS of B Ltd.} = \frac{₹ 3,52,941}{5,00,000} = \mathbf{₹ 0.706 \approx ₹ 0.71}$$[cite: 12]
+          <br />$$\\text{Total Market Value} = 5,00,000 \\times ₹ 12 = ₹ 60,00,000$$[cite: 12]
+          <br />$$\\text{Total Earnings (EAT)} = \\frac{₹ 60,00,000}{17} = \\mathbf{₹ 3,52,941}$$[cite: 12]
+          <br />$$\\text{Pre-Merger EPS of B Ltd.} = \\frac{₹ 3,52,941}{5,00,000} = \\mathbf{₹ 0.706 \\approx ₹ 0.71}$$[cite: 12]
         </li>
       </ul>
 
       <h4>2. Shares Issued and Post-Merger EPS</h4>
       <ul>
-        <li>Purchase Consideration $= \text{Total Market Value of C Ltd.} = ₹ 15,00,000$[cite: 12]</li>
-        <li>$$\text{New Shares Issued by B Ltd.} = \frac{₹ 15,00,000}{₹ 12} = \mathbf{1,25,000 \text{ shares}}$$[cite: 12]</li>
-        <li>Total shares in B Ltd. post-merger $= 5,00,000 + 1,25,000 = \mathbf{6,25,000 \text{ shares}}$[cite: 12]</li>
-        <li>Total combined earnings $= ₹ 3,52,941 + ₹ 1,50,000 = \mathbf{₹ 5,02,941}$[cite: 12]</li>
-        <li>$$\text{Post-Merger EPS of B Ltd.} = \frac{₹ 5,02,941}{6,25,000} = \mathbf{₹ 0.8047 \approx ₹ 0.80}$$[cite: 12]</li>
+        <li>Purchase Consideration $= \\text{Total Market Value of C Ltd.} = ₹ 15,00,000$[cite: 12]</li>
+        <li>$$\\text{New Shares Issued by B Ltd.} = \\frac{₹ 15,00,000}{₹ 12} = \\mathbf{1,25,000 \\text{ shares}}$$[cite: 12]</li>
+        <li>Total shares in B Ltd. post-merger $= 5,00,000 + 1,25,000 = \\mathbf{6,25,000 \\text{ shares}}$[cite: 12]</li>
+        <li>Total combined earnings $= ₹ 3,52,941 + ₹ 1,50,000 = \\mathbf{₹ 5,02,941}$[cite: 12]</li>
+        <li>$$\\text{Post-Merger EPS of B Ltd.} = \\frac{₹ 5,02,941}{6,25,000} = \\mathbf{₹ 0.8047 \\approx ₹ 0.80}$$[cite: 12]</li>
       </ul>
 
       <h4>3. Change in EPS</h4>
-      <p>$$\text{Increase in EPS} = ₹ 0.80 - ₹ 0.71 = \mathbf{+₹ 0.09 \text{ per share}}$$ (EPS increases due to the acquisition of a lower P/E firm)[cite: 12].</p>
+      <p>$$\\text{Increase in EPS} = ₹ 0.80 - ₹ 0.71 = \\mathbf{+₹ 0.09 \\text{ per share}}$$ (EPS increases due to the acquisition of a lower P/E firm)[cite: 12].</p>
     `
   },
   {
@@ -14849,23 +14849,23 @@ const icaibookData = [
     solution_html: `
       <h4>1. Valuation of the Merged Entity</h4>
       <ul>
-        <li>Standalone Value of Elrond Ltd. ($20 \text{ lakhs} \times ₹ 50$) $= ₹ 1,000 \text{ lakhs}$[cite: 12]</li>
-        <li>Standalone Value of Doom Ltd. ($10 \text{ lakhs} \times ₹ 25$) $= ₹ 250 \text{ lakhs}$[cite: 12]</li>
-        <li>Synergy Gains $= ₹ 200 \text{ lakhs}$[cite: 12]</li>
-        <li>$$\text{Total Post-Merger Value of Combined Firm } (V_{AB}) = 1,000 + 250 + 200 = \mathbf{₹ 1,450 \text{ lakhs}}$$[cite: 12]</li>
+        <li>Standalone Value of Elrond Ltd. ($20 \\text{ lakhs} \\times ₹ 50$) $= ₹ 1,000 \\text{ lakhs}$[cite: 12]</li>
+        <li>Standalone Value of Doom Ltd. ($10 \\text{ lakhs} \\times ₹ 25$) $= ₹ 250 \\text{ lakhs}$[cite: 12]</li>
+        <li>Synergy Gains $= ₹ 200 \\text{ lakhs}$[cite: 12]</li>
+        <li>$$\\text{Total Post-Merger Value of Combined Firm } (V_{AB}) = 1,000 + 250 + 200 = \\mathbf{₹ 1,450 \\text{ lakhs}}$$[cite: 12]</li>
       </ul>
 
       <h4>2. Shareholding Ownership of Doom Ltd.</h4>
       <ul>
-        <li>New shares issued to Doom Ltd. $= 10 \text{ lakhs} \times 0.5 = \mathbf{5 \text{ lakh shares}}$[cite: 12]</li>
-        <li>Total shares in merged firm $= 20 \text{ lakhs} + 5 \text{ lakhs} = \mathbf{25 \text{ lakh shares}}$[cite: 12]</li>
-        <li>$$\text{Proportion Owned by Doom Ltd. Shareholders} = \frac{5}{25} = \mathbf{20.00\%}$$[cite: 12]</li>
-        <li>$$\text{Market Value of Shares Received by Doom Ltd.} = 20\% \times ₹ 1,450 \text{ lakhs} = \mathbf{₹ 290 \text{ lakhs}}$$[cite: 12]</li>
+        <li>New shares issued to Doom Ltd. $= 10 \\text{ lakhs} \\times 0.5 = \\mathbf{5 \\text{ lakh shares}}$[cite: 12]</li>
+        <li>Total shares in merged firm $= 20 \\text{ lakhs} + 5 \\text{ lakhs} = \\mathbf{25 \\text{ lakh shares}}$[cite: 12]</li>
+        <li>$$\\text{Proportion Owned by Doom Ltd. Shareholders} = \\frac{5}{25} = \\mathbf{20.00\\%}$$[cite: 12]</li>
+        <li>$$\\text{Market Value of Shares Received by Doom Ltd.} = 20\\% \\times ₹ 1,450 \\text{ lakhs} = \\mathbf{₹ 290 \\text{ lakhs}}$$[cite: 12]</li>
       </ul>
 
       <h4>3. True Cost of Merger to Elrond Limited</h4>
-      <p>$$\text{True Cost} = \text{Value Received by Target Shareholders} - \text{Standalone Value of Target}$$[cite: 12]</p>
-      <p>$$\text{True Cost} = ₹ 290 \text{ lakhs} - ₹ 250 \text{ lakhs} = \mathbf{₹ 40 \text{ lakhs}}$$ (the economic premium surrendered)[cite: 12].</p>
+      <p>$$\\text{True Cost} = \\text{Value Received by Target Shareholders} - \\text{Standalone Value of Target}$$[cite: 12]</p>
+      <p>$$\\text{True Cost} = ₹ 290 \\text{ lakhs} - ₹ 250 \\text{ lakhs} = \\mathbf{₹ 40 \\text{ lakhs}}$$ (the economic premium surrendered)[cite: 12].</p>
     `
   },
   {
@@ -14901,22 +14901,22 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Post-Merger EPS Based on Market Price Ratio</h4>
       <ul>
-        <li>$$\text{Exchange Ratio} = \frac{\text{MPS}_{NN}}{\text{MPS}_{MK}} = \frac{₹ 160}{₹ 200} = \mathbf{0.80 \text{ (4 shares of MK for 5 of NN)}}$$[cite: 12]</li>
-        <li>New shares issued to NN Ltd.: $3,00,000 \times 0.80 = \mathbf{2,40,000 \text{ shares}}$[cite: 12]</li>
-        <li>Total shares in MK Ltd. post-merger $= 12,00,000 + 2,40,000 = \mathbf{14,40,000 \text{ shares}}$[cite: 12]</li>
-        <li>Total combined earnings $= ₹ 60,00,000 + ₹ 18,00,000 = \mathbf{₹ 78,00,000}$[cite: 12]</li>
-        <li>$$\text{Post-Merger EPS} = \frac{₹ 78,00,000}{14,40,000} = \mathbf{₹ 5.42 \text{ per share}}$$ (Pre-merger EPS of MK was ₹ 5.00)[cite: 12]</li>
+        <li>$$\\text{Exchange Ratio} = \\frac{\\text{MPS}_{NN}}{\\text{MPS}_{MK}} = \\frac{₹ 160}{₹ 200} = \\mathbf{0.80 \\text{ (4 shares of MK for 5 of NN)}}$$[cite: 12]</li>
+        <li>New shares issued to NN Ltd.: $3,00,000 \\times 0.80 = \\mathbf{2,40,000 \\text{ shares}}$[cite: 12]</li>
+        <li>Total shares in MK Ltd. post-merger $= 12,00,000 + 2,40,000 = \\mathbf{14,40,000 \\text{ shares}}$[cite: 12]</li>
+        <li>Total combined earnings $= ₹ 60,00,000 + ₹ 18,00,000 = \\mathbf{₹ 78,00,000}$[cite: 12]</li>
+        <li>$$\\text{Post-Merger EPS} = \\frac{₹ 78,00,000}{14,40,000} = \\mathbf{₹ 5.42 \\text{ per share}}$$ (Pre-merger EPS of MK was ₹ 5.00)[cite: 12]</li>
       </ul>
 
       <h4>(ii) Exchange Ratio to Ensure No Loss of Earnings to NN Ltd. Shareholders</h4>
       <ul>
-        <li>Pre-merger EPS of MK Ltd. $= \frac{₹ 60,00,000}{12,00,000} = \mathbf{₹ 5.00}$[cite: 12]</li>
-        <li>Pre-merger EPS of NN Ltd. $= \frac{₹ 18,00,000}{3,00,000} = \mathbf{₹ 6.00}$[cite: 12]</li>
-        <li>$$\text{Exchange Ratio Based on Relative EPS} = \frac{\text{EPS}_{NN}}{\text{EPS}_{MK}} = \frac{₹ 6.00}{₹ 5.00} = \mathbf{1.20 \text{ (6 shares of MK for 5 of NN)}}$$[cite: 12]</li>
-        <li>New shares issued $= 3,00,000 \times 1.20 = \mathbf{3,60,000 \text{ shares}}$[cite: 12]</li>
-        <li>Total combined shares $= 12,00,000 + 3,60,000 = 15,60,000 \text{ shares}$[cite: 12]</li>
-        <li>$$\text{Post-Merger EPS of MK Ltd.} = \frac{₹ 78,00,000}{15,60,000} = \mathbf{₹ 5.00}$$[cite: 12]</li>
-        <li>Earnings to NN Ltd. shareholders: $3,60,000 \times ₹ 5.00 = \mathbf{₹ 18,00,000}$ (identical to pre-merger earnings)[cite: 12].</li>
+        <li>Pre-merger EPS of MK Ltd. $= \\frac{₹ 60,00,000}{12,00,000} = \\mathbf{₹ 5.00}$[cite: 12]</li>
+        <li>Pre-merger EPS of NN Ltd. $= \\frac{₹ 18,00,000}{3,00,000} = \\mathbf{₹ 6.00}$[cite: 12]</li>
+        <li>$$\\text{Exchange Ratio Based on Relative EPS} = \\frac{\\text{EPS}_{NN}}{\\text{EPS}_{MK}} = \\frac{₹ 6.00}{₹ 5.00} = \\mathbf{1.20 \\text{ (6 shares of MK for 5 of NN)}}$$[cite: 12]</li>
+        <li>New shares issued $= 3,00,000 \\times 1.20 = \\mathbf{3,60,000 \\text{ shares}}$[cite: 12]</li>
+        <li>Total combined shares $= 12,00,000 + 3,60,000 = 15,60,000 \\text{ shares}$[cite: 12]</li>
+        <li>$$\\text{Post-Merger EPS of MK Ltd.} = \\frac{₹ 78,00,000}{15,60,000} = \\mathbf{₹ 5.00}$$[cite: 12]</li>
+        <li>Earnings to NN Ltd. shareholders: $3,60,000 \\times ₹ 5.00 = \\mathbf{₹ 18,00,000}$ (identical to pre-merger earnings)[cite: 12].</li>
       </ul>
     `
   },
@@ -14942,25 +14942,25 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Pre-Merger EPS</h4>
       <ul>
-        <li>$$\text{EPS}_{\text{ABC}} = \frac{₹ 50,00,000}{10,00,000} = \mathbf{₹ 5.00}$$[cite: 12]</li>
-        <li>$$\text{EPS}_{\text{XYZ}} = \frac{₹ 18,00,000}{6,00,000} = \mathbf{₹ 3.00}$$[cite: 12]</li>
+        <li>$$\\text{EPS}_{\\text{ABC}} = \\frac{₹ 50,00,000}{10,00,000} = \\mathbf{₹ 5.00}$$[cite: 12]</li>
+        <li>$$\\text{EPS}_{\\text{XYZ}} = \\frac{₹ 18,00,000}{6,00,000} = \\mathbf{₹ 3.00}$$[cite: 12]</li>
       </ul>
 
       <h4>(ii) Post-Merger EPS Based on Market Price Exchange Ratio</h4>
       <ul>
-        <li>$$\text{Exchange Ratio} = \frac{\text{MPS}_{\text{XYZ}}}{\text{MPS}_{\text{ABC}}} = \frac{₹ 28}{₹ 42} = \mathbf{\frac{2}{3} \approx 0.6667}$$[cite: 12]</li>
-        <li>Shares issued to XYZ Ltd.: $6,00,000 \times \frac{28}{42} = \mathbf{4,00,000 \text{ shares}}$[cite: 12]</li>
-        <li>Total shares in ABC Ltd. post-merger $= 10,00,000 + 4,00,000 = \mathbf{14,00,000 \text{ shares}}$[cite: 12]</li>
-        <li>$$\text{Post-Merger EPS} = \frac{₹ 50,00,000 + ₹ 18,00,000}{14,00,000} = \frac{₹ 68,00,000}{14,00,000} = \mathbf{₹ 4.86}$$[cite: 12]</li>
+        <li>$$\\text{Exchange Ratio} = \\frac{\\text{MPS}_{\\text{XYZ}}}{\\text{MPS}_{\\text{ABC}}} = \\frac{₹ 28}{₹ 42} = \\mathbf{\\frac{2}{3} \\approx 0.6667}$$[cite: 12]</li>
+        <li>Shares issued to XYZ Ltd.: $6,00,000 \\times \\frac{28}{42} = \\mathbf{4,00,000 \\text{ shares}}$[cite: 12]</li>
+        <li>Total shares in ABC Ltd. post-merger $= 10,00,000 + 4,00,000 = \\mathbf{14,00,000 \\text{ shares}}$[cite: 12]</li>
+        <li>$$\\text{Post-Merger EPS} = \\frac{₹ 50,00,000 + ₹ 18,00,000}{14,00,000} = \\frac{₹ 68,00,000}{14,00,000} = \\mathbf{₹ 4.86}$$[cite: 12]</li>
       </ul>
 
       <h4>(iii) Exchange Ratio to Maintain XYZ Ltd.'s Earnings</h4>
       <ul>
-        <li>$$\text{Exchange Ratio on EPS Basis} = \frac{\text{EPS}_{\text{XYZ}}}{\text{EPS}_{\text{ABC}}} = \frac{₹ 3.00}{₹ 5.00} = \mathbf{0.60 \text{ (3 shares of ABC for 5 of XYZ)}}$$[cite: 12]</li>
-        <li>Shares issued: $6,00,000 \times 0.60 = \mathbf{3,60,000 \text{ shares}}$[cite: 12]</li>
-        <li>Total shares post-merger $= 10,00,000 + 3,60,000 = \mathbf{13,60,000 \text{ shares}}$[cite: 12]</li>
-        <li>$$\text{Post-Merger EPS} = \frac{₹ 68,00,000}{13,60,000} = \mathbf{₹ 5.00}$$[cite: 12]</li>
-        <li>Earnings to XYZ Ltd. shareholders: $3,60,000 \times ₹ 5.00 = \mathbf{₹ 18,00,000}$ (unchanged)[cite: 12].</li>
+        <li>$$\\text{Exchange Ratio on EPS Basis} = \\frac{\\text{EPS}_{\\text{XYZ}}}{\\text{EPS}_{\\text{ABC}}} = \\frac{₹ 3.00}{₹ 5.00} = \\mathbf{0.60 \\text{ (3 shares of ABC for 5 of XYZ)}}$$[cite: 12]</li>
+        <li>Shares issued: $6,00,000 \\times 0.60 = \\mathbf{3,60,000 \\text{ shares}}$[cite: 12]</li>
+        <li>Total shares post-merger $= 10,00,000 + 3,60,000 = \\mathbf{13,60,000 \\text{ shares}}$[cite: 12]</li>
+        <li>$$\\text{Post-Merger EPS} = \\frac{₹ 68,00,000}{13,60,000} = \\mathbf{₹ 5.00}$$[cite: 12]</li>
+        <li>Earnings to XYZ Ltd. shareholders: $3,60,000 \\times ₹ 5.00 = \\mathbf{₹ 18,00,000}$ (unchanged)[cite: 12].</li>
       </ul>
     `
   },
@@ -14981,21 +14981,21 @@ const icaibookData = [
     solution_html: `
       <h4>1. Pre-Merger Status</h4>
       <ul>
-        <li>Acquirer Shares $= \frac{\text{Market Cap}}{\text{MPS}} = \frac{₹ 80 \text{ lakhs} \times 10.5}{₹ 42} = \frac{₹ 840 \text{ lakhs}}{₹ 42} = \mathbf{20 \text{ lakh shares}}$[cite: 12]</li>
-        <li>Acquirer Pre-Merger EPS $= \frac{₹ 80 \text{ lakhs}}{20 \text{ lakhs}} = \mathbf{₹ 4.00}$[cite: 12]</li>
-        <li>Target Shares $= \frac{₹ 15.75 \text{ lakhs} \times 10}{₹ 105} = \frac{₹ 157.50 \text{ lakhs}}{₹ 105} = \mathbf{1.50 \text{ lakh shares}}$[cite: 12]</li>
-        <li>Target Pre-Merger EPS $= \frac{₹ 15.75 \text{ lakhs}}{1.50 \text{ lakhs}} = \mathbf{₹ 10.50}$[cite: 12]</li>
+        <li>Acquirer Shares $= \\frac{\\text{Market Cap}}{\\text{MPS}} = \\frac{₹ 80 \\text{ lakhs} \\times 10.5}{₹ 42} = \\frac{₹ 840 \\text{ lakhs}}{₹ 42} = \\mathbf{20 \\text{ lakh shares}}$[cite: 12]</li>
+        <li>Acquirer Pre-Merger EPS $= \\frac{₹ 80 \\text{ lakhs}}{20 \\text{ lakhs}} = \\mathbf{₹ 4.00}$[cite: 12]</li>
+        <li>Target Shares $= \\frac{₹ 15.75 \\text{ lakhs} \\times 10}{₹ 105} = \\frac{₹ 157.50 \\text{ lakhs}}{₹ 105} = \\mathbf{1.50 \\text{ lakh shares}}$[cite: 12]</li>
+        <li>Target Pre-Merger EPS $= \\frac{₹ 15.75 \\text{ lakhs}}{1.50 \\text{ lakhs}} = \\mathbf{₹ 10.50}$[cite: 12]</li>
       </ul>
 
       <h4>(i) Maximum Share Exchange Ratio to Maintain EPS</h4>
-      <p>$$\text{Maximum Exchange Ratio} = \frac{\text{Target EPS}}{\text{Acquirer EPS}} = \frac{₹ 10.50}{₹ 4.00} = \mathbf{2.625 \text{ shares of Acquirer for 1 Target share}}$$[cite: 12]</p>
+      <p>$$\\text{Maximum Exchange Ratio} = \\frac{\\text{Target EPS}}{\\text{Acquirer EPS}} = \\frac{₹ 10.50}{₹ 4.00} = \\mathbf{2.625 \\text{ shares of Acquirer for 1 Target share}}$$[cite: 12]</p>
 
       <h4>(ii) Cash Buyout Financed by 15% Borrowings</h4>
       <p>Let $x$ (₹ in lakhs) be the cash offered to the target company[cite: 12]:</p>
-      <p>$$\text{Post-tax Borrowing Cost} = 15\% \times (1 - 0.30) = 10.5\% = 0.105$$[cite: 12]</p>
-      <p>$$\text{Target Post-Merger EPS} = \frac{(₹ 80.00 + ₹ 15.75) - 0.105x}{20 \text{ lakh shares}} = ₹ 4.00$$[cite: 12]</p>
-      <p>$$95.75 - 0.105x = 80.00 \implies 0.105x = 15.75$$[cite: 12]</p>
-      <p>$$x = \frac{15.75}{0.105} = \mathbf{₹ 150.00 \text{ lakhs}}$$ (or ₹ 1.50 crores)[cite: 12].</p>
+      <p>$$\\text{Post-tax Borrowing Cost} = 15\\% \\times (1 - 0.30) = 10.5\\% = 0.105$$[cite: 12]</p>
+      <p>$$\\text{Target Post-Merger EPS} = \\frac{(₹ 80.00 + ₹ 15.75) - 0.105x}{20 \\text{ lakh shares}} = ₹ 4.00$$[cite: 12]</p>
+      <p>$$95.75 - 0.105x = 80.00 \\implies 0.105x = 15.75$$[cite: 12]</p>
+      <p>$$x = \\frac{15.75}{0.105} = \\mathbf{₹ 150.00 \\text{ lakhs}}$$ (or ₹ 1.50 crores)[cite: 12].</p>
       <p>The CEO can offer a maximum of <strong>₹ 150 lakhs in cash</strong> to maintain the current EPS of ₹ 4.00[cite: 12].</p>
     `
   },
@@ -15030,21 +15030,21 @@ const icaibookData = [
     `,
     solution_html: `
       <h4>(i) Number of Equity Shares Issued by A Ltd.</h4>
-      <p>$$\text{New Shares} = 1,80,000 \times 0.5 = \mathbf{90,000 \text{ shares}}$$</p>
+      <p>$$\\text{New Shares} = 1,80,000 \\times 0.5 = \\mathbf{90,000 \\text{ shares}}$$</p>
 
       <h4>(ii) EPS of A Ltd. After Acquisition</h4>
-      <p>$$\text{Total Earnings} = ₹ 18,00,000 + ₹ 3,60,000 = ₹ 21,60,000$$</p>
-      <p>$$\text{Total Shares} = 6,00,000 + 90,000 = 6,90,000 \text{ shares}$$</p>
-      <p>$$\text{Post-Merger EPS} = \frac{₹ 21,60,000}{6,90,000} = \mathbf{₹ 3.13 \text{ per share}}$$</p>
+      <p>$$\\text{Total Earnings} = ₹ 18,00,000 + ₹ 3,60,000 = ₹ 21,60,000$$</p>
+      <p>$$\\text{Total Shares} = 6,00,000 + 90,000 = 6,90,000 \\text{ shares}$$</p>
+      <p>$$\\text{Post-Merger EPS} = \\frac{₹ 21,60,000}{6,90,000} = \\mathbf{₹ 3.13 \\text{ per share}}$$</p>
 
       <h4>(iii) Equivalent EPS of T Ltd.</h4>
-      <p>$$\text{Equivalent EPS} = \text{Post-Merger EPS} \times \text{Swap Ratio} = ₹ 3.13 \times 0.5 = \mathbf{₹ 1.565 \approx ₹ 1.57}$$</p>
+      <p>$$\\text{Equivalent EPS} = \\text{Post-Merger EPS} \\times \\text{Swap Ratio} = ₹ 3.13 \\times 0.5 = \\mathbf{₹ 1.565 \\approx ₹ 1.57}$$</p>
 
       <h4>(iv) Expected Market Price per Share of A Ltd. (PE = 10 times)</h4>
-      <p>$$\text{Expected Market Price} = \text{Post-Merger EPS} \times \text{PE} = ₹ 3.13 \times 10 = \mathbf{₹ 31.30}$$</p>
+      <p>$$\\text{Expected Market Price} = \\text{Post-Merger EPS} \\times \\text{PE} = ₹ 3.13 \\times 10 = \\mathbf{₹ 31.30}$$</p>
 
       <h4>(v) Market Value of the Merged Firm</h4>
-      <p>$$\text{Market Value} = 6,90,000 \text{ shares} \times ₹ 31.30 = \mathbf{₹ 2,15,97,000}$$</p>
+      <p>$$\\text{Market Value} = 6,90,000 \\text{ shares} \\times ₹ 31.30 = \\mathbf{₹ 2,15,97,000}$$</p>
     `
   },
   {
@@ -15077,22 +15077,22 @@ const icaibookData = [
     solution_html: `
       <h4>1. Pre-Merger Status</h4>
       <ul>
-        <li>$$\text{EPS}_{\text{Mark}} = \frac{₹ 2,000 \text{ lakhs}}{200 \text{ lakhs}} = ₹ 10; \quad \text{MPS}_{\text{Mark}} = ₹ 10 \times 10 = \mathbf{₹ 100}$$[cite: 12]</li>
-        <li>$$\text{EPS}_{\text{Mask}} = \frac{₹ 400 \text{ lakhs}}{100 \text{ lakhs}} = ₹ 4; \quad \text{MPS}_{\text{Mask}} = ₹ 4 \times 5 = \mathbf{₹ 20}$$[cite: 12]</li>
+        <li>$$\\text{EPS}_{\\text{Mark}} = \\frac{₹ 2,000 \\text{ lakhs}}{200 \\text{ lakhs}} = ₹ 10; \\quad \\text{MPS}_{\\text{Mark}} = ₹ 10 \\times 10 = \\mathbf{₹ 100}$$[cite: 12]</li>
+        <li>$$\\text{EPS}_{\\text{Mask}} = \\frac{₹ 400 \\text{ lakhs}}{100 \\text{ lakhs}} = ₹ 4; \\quad \\text{MPS}_{\\text{Mask}} = ₹ 4 \\times 5 = \\mathbf{₹ 20}$$[cite: 12]</li>
       </ul>
 
       <h4>(i) Swap Ratio Based on Market Prices</h4>
-      <p>$$\text{Swap Ratio} = \frac{\text{MPS}_{\text{Mask}}}{\text{MPS}_{\text{Mark}}} = \frac{₹ 20}{₹ 100} = \mathbf{0.20 \text{ (1 share of Mark for 5 of Mask)}}$$[cite: 12]</p>
-      <p>$$\text{New Shares Issued} = 100 \text{ lakhs} \times 0.20 = \mathbf{20 \text{ lakh shares}}$$[cite: 12]</p>
+      <p>$$\\text{Swap Ratio} = \\frac{\\text{MPS}_{\\text{Mask}}}{\\text{MPS}_{\\text{Mark}}} = \\frac{₹ 20}{₹ 100} = \\mathbf{0.20 \\text{ (1 share of Mark for 5 of Mask)}}$$[cite: 12]</p>
+      <p>$$\\text{New Shares Issued} = 100 \\text{ lakhs} \\times 0.20 = \\mathbf{20 \\text{ lakh shares}}$$[cite: 12]</p>
 
       <h4>(ii) Post-Merger EPS of Mark Limited</h4>
-      <p>$$\text{Post-Merger EPS} = \frac{₹ 2,000 + ₹ 400}{200 + 20} = \frac{₹ 2,400 \text{ lakhs}}{220 \text{ lakhs}} = \mathbf{₹ 10.91 \text{ per share}}$$[cite: 12]</p>
+      <p>$$\\text{Post-Merger EPS} = \\frac{₹ 2,000 + ₹ 400}{200 + 20} = \\frac{₹ 2,400 \\text{ lakhs}}{220 \\text{ lakhs}} = \\mathbf{₹ 10.91 \\text{ per share}}$$[cite: 12]</p>
 
       <h4>(iii) Expected Market Price per Share (PE = 10 times)</h4>
-      <p>$$\text{Market Price} = ₹ 10.91 \times 10 = \mathbf{₹ 109.10}$$[cite: 12]</p>
+      <p>$$\\text{Market Price} = ₹ 10.91 \\times 10 = \\mathbf{₹ 109.10}$$[cite: 12]</p>
 
       <h4>(iv) Total Market Value of the Merged Firm</h4>
-      <p>$$\text{Market Value} = 220 \text{ lakh shares} \times ₹ 109.10 = \mathbf{₹ 24,002 \text{ lakhs \approx ₹ 240.02 Crores}}$$[cite: 12]</p>
+      <p>$$\\text{Market Value} = 220 \\text{ lakh shares} \\times ₹ 109.10 = \\mathbf{₹ 24,002 \\text{ lakhs \\approx ₹ 240.02 Crores}}$$[cite: 12]</p>
 
       <h4>(v) Gain / Loss for Shareholders</h4>
       <div style="overflow-x:auto;">
@@ -15105,8 +15105,8 @@ const icaibookData = [
             </tr>
           </thead>
           <tbody>
-            <tr><td>Post-Merger Value (₹ Crores)</td><td>$200 \times 109.10 = \mathbf{218.20}$</td><td>$20 \times 109.10 = \mathbf{21.82}$</td></tr>
-            <tr><td>Pre-Merger Value (₹ Crores)</td><td>$200 \times 100.00 = 200.00$</td><td>$100 \times 20.00 = 20.00$</td></tr>
+            <tr><td>Post-Merger Value (₹ Crores)</td><td>$200 \\times 109.10 = \\mathbf{218.20}$</td><td>$20 \\times 109.10 = \\mathbf{21.82}$</td></tr>
+            <tr><td>Pre-Merger Value (₹ Crores)</td><td>$200 \\times 100.00 = 200.00$</td><td>$100 \\times 20.00 = 20.00$</td></tr>
             <tr style="font-weight:bold; background-color:#fafafa;">
               <td>Gain to Shareholders (₹ Crores)</td>
               <td><strong>+ 18.20 Crores</strong></td>
@@ -15152,34 +15152,34 @@ const icaibookData = [
     solution_html: `
       <h4>1. Pre-Merger Base Data</h4>
       <ul>
-        <li>Total Earnings: XYZ Ltd. $= 10,00,000 \times ₹ 40 = ₹ 400 \text{ lakhs}$; ABC Ltd. $= 4,00,000 \times ₹ 28 = ₹ 112 \text{ lakhs}$[cite: 12]</li>
-        <li>$$\text{P/E Ratio of XYZ Ltd.} = \frac{₹ 250}{₹ 40} = \mathbf{6.25 \text{ times}}$$[cite: 12]</li>
+        <li>Total Earnings: XYZ Ltd. $= 10,00,000 \\times ₹ 40 = ₹ 400 \\text{ lakhs}$; ABC Ltd. $= 4,00,000 \\times ₹ 28 = ₹ 112 \\text{ lakhs}$[cite: 12]</li>
+        <li>$$\\text{P/E Ratio of XYZ Ltd.} = \\frac{₹ 250}{₹ 40} = \\mathbf{6.25 \\text{ times}}$$[cite: 12]</li>
       </ul>
 
       <h4>(i) Impact on EPS Under 0.70 : 1 Exchange Ratio</h4>
       <ul>
-        <li>New shares issued to ABC Ltd. $= 4,00,000 \times 0.70 = 2,80,000 \text{ shares}$[cite: 12]</li>
-        <li>Total post-merger shares $= 10,00,000 + 2,80,000 = 12,80,000 \text{ shares}$[cite: 12]</li>
-        <li>$$\text{Post-Merger EPS} = \frac{₹ 400 \text{ lakhs} + ₹ 112 \text{ lakhs}}{12,80,000} = \frac{₹ 512 \text{ lakhs}}{12,80,000} = \mathbf{₹ 40.00}$$[cite: 12]</li>
-        <li>Equivalent EPS to ABC Ltd.: $₹ 40.00 \times 0.70 = \mathbf{₹ 28.00}$[cite: 12]</li>
+        <li>New shares issued to ABC Ltd. $= 4,00,000 \\times 0.70 = 2,80,000 \\text{ shares}$[cite: 12]</li>
+        <li>Total post-merger shares $= 10,00,000 + 2,80,000 = 12,80,000 \\text{ shares}$[cite: 12]</li>
+        <li>$$\\text{Post-Merger EPS} = \\frac{₹ 400 \\text{ lakhs} + ₹ 112 \\text{ lakhs}}{12,80,000} = \\frac{₹ 512 \\text{ lakhs}}{12,80,000} = \\mathbf{₹ 40.00}$$[cite: 12]</li>
+        <li>Equivalent EPS to ABC Ltd.: $₹ 40.00 \\times 0.70 = \\mathbf{₹ 28.00}$[cite: 12]</li>
         <li><strong>Impact:</strong> <strong>Nil change</strong> for both sets of shareholders[cite: 12].</li>
       </ul>
 
       <h4>(ii) &amp; (iii) Impact Under 1 : 1 Exchange Ratio</h4>
       <ul>
-        <li>Total shares $= 10,00,000 + 4,00,000 = 14,00,000 \text{ shares}$[cite: 12]</li>
-        <li>$$\text{Post-Merger EPS} = \frac{₹ 512 \text{ lakhs}}{14,00,000} = \mathbf{₹ 36.5714}$$[cite: 12]</li>
-        <li>$$\text{Post-Merger Market Price} = ₹ 36.5714 \times 6.25 = \mathbf{₹ 228.57}$$[cite: 12]</li>
-        <li><strong>Gain to ABC Ltd. Shareholders:</strong> $₹ 228.57 - ₹ 160.00 = \mathbf{+₹ 68.57 \text{ per share}}$[cite: 12]</li>
-        <li><strong>Loss to XYZ Ltd. Shareholders:</strong> $₹ 228.57 - ₹ 250.00 = \mathbf{-₹ 21.43 \text{ per share}}$[cite: 12]</li>
+        <li>Total shares $= 10,00,000 + 4,00,000 = 14,00,000 \\text{ shares}$[cite: 12]</li>
+        <li>$$\\text{Post-Merger EPS} = \\frac{₹ 512 \\text{ lakhs}}{14,00,000} = \\mathbf{₹ 36.5714}$$[cite: 12]</li>
+        <li>$$\\text{Post-Merger Market Price} = ₹ 36.5714 \\times 6.25 = \\mathbf{₹ 228.57}$$[cite: 12]</li>
+        <li><strong>Gain to ABC Ltd. Shareholders:</strong> $₹ 228.57 - ₹ 160.00 = \\mathbf{+₹ 68.57 \\text{ per share}}$[cite: 12]</li>
+        <li><strong>Loss to XYZ Ltd. Shareholders:</strong> $₹ 228.57 - ₹ 250.00 = \\mathbf{-₹ 21.43 \\text{ per share}}$[cite: 12]</li>
       </ul>
 
       <h4>(iv) Maximum Exchange Ratio Acceptable to XYZ Ltd.</h4>
-      <p>XYZ Ltd. shareholders will not accept dilution below their current aggregate market value of ₹ 2,500 lakhs ($10\text{L} \times ₹ 250$)[cite: 12]:</p>
-      <p>$$\text{Total Post-Merger Firm Value} = ₹ 512 \text{ lakhs} \times 6.25 = ₹ 3,200 \text{ lakhs}$$[cite: 12]</p>
-      <p>$$\text{Value Available to ABC Ltd. Shareholders} = ₹ 3,200 - ₹ 2,500 = ₹ 700 \text{ lakhs}$$[cite: 12]</p>
-      <p>$$\text{Max Shares to Issue} = \frac{₹ 700 \text{ lakhs}}{₹ 250} = \mathbf{2,80,000 \text{ shares}}$$[cite: 12]</p>
-      <p>$$\text{Maximum Acceptable Exchange Ratio} = \frac{2,80,000}{4,00,000} = \mathbf{0.70 \text{ shares of XYZ for 1 share of ABC}}$$[cite: 12]</p>
+      <p>XYZ Ltd. shareholders will not accept dilution below their current aggregate market value of ₹ 2,500 lakhs ($10\\text{L} \\times ₹ 250$)[cite: 12]:</p>
+      <p>$$\\text{Total Post-Merger Firm Value} = ₹ 512 \\text{ lakhs} \\times 6.25 = ₹ 3,200 \\text{ lakhs}$$[cite: 12]</p>
+      <p>$$\\text{Value Available to ABC Ltd. Shareholders} = ₹ 3,200 - ₹ 2,500 = ₹ 700 \\text{ lakhs}$$[cite: 12]</p>
+      <p>$$\\text{Max Shares to Issue} = \\frac{₹ 700 \\text{ lakhs}}{₹ 250} = \\mathbf{2,80,000 \\text{ shares}}$$[cite: 12]</p>
+      <p>$$\\text{Maximum Acceptable Exchange Ratio} = \\frac{2,80,000}{4,00,000} = \\mathbf{0.70 \\text{ shares of XYZ for 1 share of ABC}}$$[cite: 12]</p>
     `
   },
   {
@@ -15200,24 +15200,24 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Pre-Merger EPS and P/E Ratios</h4>
       <ul>
-        <li>$$\text{EPS}_{\text{XYZ}} = \frac{₹ 5,00,000}{2,50,000} = \mathbf{₹ 2.00}; \quad \text{PE}_{\text{XYZ}} = \frac{₹ 20}{₹ 2} = \mathbf{10 \text{ times}}$$[cite: 12]</li>
-        <li>$$\text{EPS}_{\text{ABC}} = \frac{₹ 1,25,000}{1,25,000} = \mathbf{₹ 1.00}; \quad \text{PE}_{\text{ABC}} = \frac{₹ 10}{₹ 1} = \mathbf{10 \text{ times}}$$[cite: 12]</li>
+        <li>$$\\text{EPS}_{\\text{XYZ}} = \\frac{₹ 5,00,000}{2,50,000} = \\mathbf{₹ 2.00}; \\quad \\text{PE}_{\\text{XYZ}} = \\frac{₹ 20}{₹ 2} = \\mathbf{10 \\text{ times}}$$[cite: 12]</li>
+        <li>$$\\text{EPS}_{\\text{ABC}} = \\frac{₹ 1,25,000}{1,25,000} = \\mathbf{₹ 1.00}; \\quad \\text{PE}_{\\text{ABC}} = \\frac{₹ 10}{₹ 1} = \\mathbf{10 \\text{ times}}$$[cite: 12]</li>
       </ul>
 
       <h4>(ii) Scenario with ABC Ltd.'s P/E Ratio = 6.4</h4>
       <ul>
-        <li>$$\text{Market Price of ABC Ltd.} = \text{EPS} \times \text{PE} = ₹ 1.00 \times 6.4 = \mathbf{₹ 6.40}$$[cite: 12]</li>
-        <li>$$\text{Exchange Ratio} = \frac{₹ 6.40}{₹ 20.00} = \mathbf{0.32 \text{ (or 1 share of XYZ for 3.125 shares of ABC)}}$$[cite: 12]</li>
-        <li>New shares issued to ABC Ltd. $= 1,25,000 \times 0.32 = 40,000 \text{ shares}$[cite: 12]</li>
-        <li>Total post-merger shares $= 2,50,000 + 40,00,000 \times 10^{-2} = \mathbf{2,90,000 \text{ shares}}$[cite: 12]</li>
-        <li>$$\text{Post-Merger EPS of XYZ Ltd.} = \frac{₹ 5,00,000 + ₹ 1,25,000}{2,90,000} = \frac{₹ 6,25,000}{2,90,000} = \mathbf{₹ 2.155 \approx ₹ 2.16}$$[cite: 12]</li>
+        <li>$$\\text{Market Price of ABC Ltd.} = \\text{EPS} \\times \\text{PE} = ₹ 1.00 \\times 6.4 = \\mathbf{₹ 6.40}$$[cite: 12]</li>
+        <li>$$\\text{Exchange Ratio} = \\frac{₹ 6.40}{₹ 20.00} = \\mathbf{0.32 \\text{ (or 1 share of XYZ for 3.125 shares of ABC)}}$$[cite: 12]</li>
+        <li>New shares issued to ABC Ltd. $= 1,25,000 \\times 0.32 = 40,000 \\text{ shares}$[cite: 12]</li>
+        <li>Total post-merger shares $= 2,50,000 + 40,00,000 \\times 10^{-2} = \\mathbf{2,90,000 \\text{ shares}}$[cite: 12]</li>
+        <li>$$\\text{Post-Merger EPS of XYZ Ltd.} = \\frac{₹ 5,00,000 + ₹ 1,25,000}{2,90,000} = \\frac{₹ 6,25,000}{2,90,000} = \\mathbf{₹ 2.155 \\approx ₹ 2.16}$$[cite: 12]</li>
       </ul>
 
       <h4>(iii) Exchange Ratio to Maintain XYZ Ltd.'s EPS @ ₹ 2.00</h4>
       <ul>
-        <li>$$\text{Permissible Total Post-Merger Shares} = \frac{\text{Combined Earnings}}{\text{Target EPS}} = \frac{₹ 6,25,000}{₹ 2.00} = \mathbf{3,12,500 \text{ shares}}$$[cite: 12]</li>
-        <li>New shares to be issued $= 3,12,500 - 2,50,000 = \mathbf{62,500 \text{ shares}}$[cite: 12]</li>
-        <li>$$\text{Exchange Ratio} = \frac{62,500}{1,25,000} = \mathbf{0.50 \text{ (1 share of XYZ for 2 shares of ABC)}}$$[cite: 12]</li>
+        <li>$$\\text{Permissible Total Post-Merger Shares} = \\frac{\\text{Combined Earnings}}{\\text{Target EPS}} = \\frac{₹ 6,25,000}{₹ 2.00} = \\mathbf{3,12,500 \\text{ shares}}$$[cite: 12]</li>
+        <li>New shares to be issued $= 3,12,500 - 2,50,000 = \\mathbf{62,500 \\text{ shares}}$[cite: 12]</li>
+        <li>$$\\text{Exchange Ratio} = \\frac{62,500}{1,25,000} = \\mathbf{0.50 \\text{ (1 share of XYZ for 2 shares of ABC)}}$$[cite: 12]</li>
       </ul>
     `
   },
@@ -15251,23 +15251,23 @@ const icaibookData = [
     solution_html: `
       <h4>1. Pre-Merger Base Metrics</h4>
       <ul>
-        <li>Mani Ltd.: $\text{EPS} = \frac{₹ 2,000}{200} = ₹ 10; \quad \text{MPS} = ₹ 10 \times 10 = \mathbf{₹ 100}$[cite: 12]</li>
-        <li>Ratnam Ltd.: $\text{EPS} = \frac{₹ 4,000}{1,000} = ₹ 4; \quad \text{MPS} = ₹ 4 \times 5 = \mathbf{₹ 20}$[cite: 12]</li>
+        <li>Mani Ltd.: $\\text{EPS} = \\frac{₹ 2,000}{200} = ₹ 10; \\quad \\text{MPS} = ₹ 10 \\times 10 = \\mathbf{₹ 100}$[cite: 12]</li>
+        <li>Ratnam Ltd.: $\\text{EPS} = \\frac{₹ 4,000}{1,000} = ₹ 4; \\quad \\text{MPS} = ₹ 4 \\times 5 = \\mathbf{₹ 20}$[cite: 12]</li>
       </ul>
 
       <h4>(i) Swap Ratio Based on Market Prices</h4>
-      <p>$$\text{Swap Ratio} = \frac{₹ 20}{₹ 100} = \mathbf{0.20 \text{ (1 share of Mani for 5 of Ratnam)}}$$[cite: 12]</p>
-      <p>$$\text{Shares Issued to Ratnam Ltd.} = 1,000 \text{ lakhs} \times 0.20 = \mathbf{200 \text{ lakh shares}}$$[cite: 12]</p>
+      <p>$$\\text{Swap Ratio} = \\frac{₹ 20}{₹ 100} = \\mathbf{0.20 \\text{ (1 share of Mani for 5 of Ratnam)}}$$[cite: 12]</p>
+      <p>$$\\text{Shares Issued to Ratnam Ltd.} = 1,000 \\text{ lakhs} \\times 0.20 = \\mathbf{200 \\text{ lakh shares}}$$[cite: 12]</p>
 
       <h4>(ii) Post-Merger EPS of Mani Ltd.</h4>
-      <p>$$\text{Post-Merger EPS} = \frac{₹ 2,000 \text{ lakhs} + ₹ 4,000 \text{ lakhs}}{200 \text{ lakhs} + 200 \text{ lakhs}} = \frac{₹ 6,000 \text{ lakhs}}{400 \text{ lakhs}} = \mathbf{₹ 15.00}$$[cite: 12]</p>
+      <p>$$\\text{Post-Merger EPS} = \\frac{₹ 2,000 \\text{ lakhs} + ₹ 4,000 \\text{ lakhs}}{200 \\text{ lakhs} + 200 \\text{ lakhs}} = \\frac{₹ 6,000 \\text{ lakhs}}{400 \\text{ lakhs}} = \\mathbf{₹ 15.00}$$[cite: 12]</p>
 
       <h4>(iii) Expected Market Price After Acquisition (PE Drops 10%)</h4>
-      <p>$$\text{New PE Ratio} = 10 \times (1 - 0.10) = \mathbf{9 \text{ times}}$$[cite: 12]</p>
-      <p>$$\text{Expected Market Price} = \text{EPS} \times \text{PE} = ₹ 15.00 \times 9 = \mathbf{₹ 135.00}$$[cite: 12]</p>
+      <p>$$\\text{New PE Ratio} = 10 \\times (1 - 0.10) = \\mathbf{9 \\text{ times}}$$[cite: 12]</p>
+      <p>$$\\text{Expected Market Price} = \\text{EPS} \\times \\text{PE} = ₹ 15.00 \\times 9 = \\mathbf{₹ 135.00}$$[cite: 12]</p>
 
       <h4>(iv) Market Value of Merged Company</h4>
-      <p>$$\text{Market Value} = 400 \text{ lakh shares} \times ₹ 135 = \mathbf{₹ 54,000 \text{ lakhs \approx ₹ 540.00 Crores}}$$[cite: 12]</p>
+      <p>$$\\text{Market Value} = 400 \\text{ lakh shares} \\times ₹ 135 = \\mathbf{₹ 54,000 \\text{ lakhs \\approx ₹ 540.00 Crores}}$$[cite: 12]</p>
 
       <h4>(v) Gain / Loss for Shareholders</h4>
       <div style="overflow-x:auto;">
@@ -15280,8 +15280,8 @@ const icaibookData = [
             </tr>
           </thead>
           <tbody>
-            <tr><td>Post-Merger Value (₹ Crores)</td><td>$200 \text{L} \times ₹ 135 = \mathbf{270.00}$</td><td>$200 \text{L} \times ₹ 135 = \mathbf{270.00}$</td></tr>
-            <tr><td>Pre-Merger Value (₹ Crores)</td><td>$200 \text{L} \times ₹ 100 = 200.00$</td><td>$1,000 \text{L} \times ₹ 20 = 200.00$</td></tr>
+            <tr><td>Post-Merger Value (₹ Crores)</td><td>$200 \\text{L} \\times ₹ 135 = \\mathbf{270.00}$</td><td>$200 \\text{L} \\times ₹ 135 = \\mathbf{270.00}$</td></tr>
+            <tr><td>Pre-Merger Value (₹ Crores)</td><td>$200 \\text{L} \\times ₹ 100 = 200.00$</td><td>$1,000 \\text{L} \\times ₹ 20 = 200.00$</td></tr>
             <tr style="font-weight:bold; background-color:#fafafa;">
               <td>Total Gain (₹ Crores)</td>
               <td><strong>+ 70.00 Crores</strong></td>
@@ -15335,29 +15335,29 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Post-Merger EPS of Rama Ltd.</h4>
       <ul>
-        <li>Exchange Ratio based on Market Prices ($₹ 35 / ₹ 35$) $= \mathbf{1 : 1}$</li>
-        <li>New shares issued to Krishna Ltd. $= 2,00,000 \times 1 = \mathbf{2,00,000 \text{ shares}}$</li>
-        <li>Total shares in Rama Ltd. post-merger $= 4,00,000 + 2,00,000 = \mathbf{6,00,000 \text{ shares}}$</li>
-        <li>Total combined earnings $= ₹ 10,00,000 + ₹ 7,00,000 = \mathbf{₹ 17,00,000}$[cite: 12]</li>
-        <li>$$\text{Post-Merger EPS} = \frac{₹ 17,00,000}{6,00,000 \text{ shares}} = \mathbf{₹ 2.8333 \approx ₹ 2.83 \text{ per share}}$$</li>
+        <li>Exchange Ratio based on Market Prices ($₹ 35 / ₹ 35$) $= \\mathbf{1 : 1}$</li>
+        <li>New shares issued to Krishna Ltd. $= 2,00,000 \\times 1 = \\mathbf{2,00,000 \\text{ shares}}$</li>
+        <li>Total shares in Rama Ltd. post-merger $= 4,00,000 + 2,00,000 = \\mathbf{6,00,000 \\text{ shares}}$</li>
+        <li>Total combined earnings $= ₹ 10,00,000 + ₹ 7,00,000 = \\mathbf{₹ 17,00,000}$[cite: 12]</li>
+        <li>$$\\text{Post-Merger EPS} = \\frac{₹ 17,00,000}{6,00,000 \\text{ shares}} = \\mathbf{₹ 2.8333 \\approx ₹ 2.83 \\text{ per share}}$$</li>
       </ul>
 
       <h4>(ii) Change in EPS for Both Sets of Shareholders</h4>
       <ul>
         <li><strong>Rama Ltd. Shareholders:</strong>
           <br />Post-merger EPS $= ₹ 2.83$; Pre-merger EPS $= ₹ 2.50$
-          <br />$$\text{EPS Accretion (Increase)} = ₹ 2.83 - ₹ 2.50 = \mathbf{+₹ 0.33 \text{ per share}}$$
+          <br />$$\\text{EPS Accretion (Increase)} = ₹ 2.83 - ₹ 2.50 = \\mathbf{+₹ 0.33 \\text{ per share}}$$
         </li>
         <li><strong>Krishna Ltd. Shareholders:</strong>
-          <br />Equivalent Post-merger EPS ($₹ 2.83 \times 1$) $= ₹ 2.83$; Pre-merger EPS $= ₹ 3.50$
-          <br />$$\text{EPS Dilution (Decrease)} = ₹ 2.83 - ₹ 3.50 = \mathbf{-₹ 0.67 \text{ per share}}$$
+          <br />Equivalent Post-merger EPS ($₹ 2.83 \\times 1$) $= ₹ 2.83$; Pre-merger EPS $= ₹ 3.50$
+          <br />$$\\text{EPS Dilution (Decrease)} = ₹ 2.83 - ₹ 3.50 = \\mathbf{-₹ 0.67 \\text{ per share}}$$
         </li>
       </ul>
 
       <h4>(iii) Market Value of Post-Merger Firm (P/E = 14 times)</h4>
       <ul>
-        <li>$$\text{New Market Price per Share} = \text{New EPS} \times \text{P/E} = ₹ 2.8333 \times 14 = \mathbf{₹ 39.667 \approx ₹ 39.62}$$</li>
-        <li>$$\text{Total Post-Merger Market Capitalization} = 6,00,000 \text{ shares} \times ₹ 39.62 = \mathbf{₹ 2,37,72,000}$$</li>
+        <li>$$\\text{New Market Price per Share} = \\text{New EPS} \\times \\text{P/E} = ₹ 2.8333 \\times 14 = \\mathbf{₹ 39.667 \\approx ₹ 39.62}$$</li>
+        <li>$$\\text{Total Post-Merger Market Capitalization} = 6,00,000 \\text{ shares} \\times ₹ 39.62 = \\mathbf{₹ 2,37,72,000}$$</li>
       </ul>
 
       <h4>(iv) Total Synergy Gains Apportioned Between Shareholders</h4>
@@ -15373,15 +15373,15 @@ const icaibookData = [
           </thead>
           <tbody>
             <tr>
-              <td>Post-Merger Value ($N \times ₹ 39.62$)</td>
-              <td>$4,00,000 \times 39.62 = \mathbf{1,58,48,000}$</td>
-              <td>$2,00,000 \times 39.62 = \mathbf{79,24,000}$</td>
+              <td>Post-Merger Value ($N \\times ₹ 39.62$)</td>
+              <td>$4,00,000 \\times 39.62 = \\mathbf{1,58,48,000}$</td>
+              <td>$2,00,000 \\times 39.62 = \\mathbf{79,24,000}$</td>
               <td><strong>2,37,72,000</strong></td>
             </tr>
             <tr>
-              <td>Pre-Merger Market Value ($N \times ₹ 35$)</td>
-              <td>$4,00,000 \times 35 = 1,40,00,000$</td>
-              <td>$2,00,000 \times 35 = 70,00,000$</td>
+              <td>Pre-Merger Market Value ($N \\times ₹ 35$)</td>
+              <td>$4,00,000 \\times 35 = 1,40,00,000$</td>
+              <td>$2,00,000 \\times 35 = 70,00,000$</td>
               <td>2,10,00,000</td>
             </tr>
             <tr style="font-weight:bold; background-color:#fafafa;">
@@ -15429,22 +15429,22 @@ const icaibookData = [
     solution_html: `
       <h4>(i) New EPS Based on Market Price Exchange Ratio</h4>
       <ul>
-        <li>$$\text{Exchange Ratio} = \frac{\text{MPS}_N}{\text{MPS}_M} = \frac{₹ 160}{₹ 200} = \mathbf{0.80 \text{ (4 shares of M for 5 of N)}}$$[cite: 12]</li>
-        <li>New shares issued to N Co. Ltd.: $4,00,000 \times 0.80 = \mathbf{3,20,000 \text{ shares}}$[cite: 12]</li>
-        <li>Total shares in M Co. Ltd. post-merger $= 16,00,000 + 3,20,000 = \mathbf{19,20,000 \text{ shares}}$[cite: 12]</li>
-        <li>Total combined earnings $= ₹ 80,00,000 + ₹ 24,00,000 = \mathbf{₹ 1,04,00,000}$[cite: 12]</li>
-        <li>$$\text{New EPS of M Co. Ltd.} = \frac{₹ 1,04,00,000}{19,20,000 \text{ shares}} = \mathbf{₹ 5.42 \text{ per share}}$$ (an accretion from ₹ 5.00)[cite: 12]</li>
+        <li>$$\\text{Exchange Ratio} = \\frac{\\text{MPS}_N}{\\text{MPS}_M} = \\frac{₹ 160}{₹ 200} = \\mathbf{0.80 \\text{ (4 shares of M for 5 of N)}}$$[cite: 12]</li>
+        <li>New shares issued to N Co. Ltd.: $4,00,000 \\times 0.80 = \\mathbf{3,20,000 \\text{ shares}}$[cite: 12]</li>
+        <li>Total shares in M Co. Ltd. post-merger $= 16,00,000 + 3,20,000 = \\mathbf{19,20,000 \\text{ shares}}$[cite: 12]</li>
+        <li>Total combined earnings $= ₹ 80,00,000 + ₹ 24,00,000 = \\mathbf{₹ 1,04,00,000}$[cite: 12]</li>
+        <li>$$\\text{New EPS of M Co. Ltd.} = \\frac{₹ 1,04,00,000}{19,20,000 \\text{ shares}} = \\mathbf{₹ 5.42 \\text{ per share}}$$ (an accretion from ₹ 5.00)[cite: 12]</li>
       </ul>
 
       <h4>(ii) Exchange Ratio to Protect N Co. Ltd.'s Earnings</h4>
       <ul>
-        <li>$$\text{Pre-Merger EPS of M Co. Ltd.} = \frac{₹ 80,00,000}{16,00,000} = \mathbf{₹ 5.00}$$[cite: 12]</li>
-        <li>$$\text{Pre-Merger EPS of N Co. Ltd.} = \frac{₹ 24,00,000}{4,00,000} = \mathbf{₹ 6.00}$$[cite: 12]</li>
-        <li>$$\text{Exchange Ratio on EPS Basis} = \frac{\text{EPS}_N}{\text{EPS}_M} = \frac{₹ 6.00}{₹ 5.00} = \mathbf{1.20 \text{ (6 shares of M for 5 of N)}}$$[cite: 12]</li>
-        <li>Shares issued: $4,00,000 \times 1.20 = \mathbf{4,80,000 \text{ shares}}$[cite: 12]</li>
-        <li>Total post-merger shares $= 16,00,000 + 4,80,000 = \mathbf{20,80,000 \text{ shares}}$[cite: 12]</li>
-        <li>$$\text{Post-Merger EPS of M Co. Ltd.} = \frac{₹ 1,04,00,000}{20,80,000} = \mathbf{₹ 5.00}$$[cite: 12]</li>
-        <li>Total earnings available to N Co. Ltd. shareholders: $4,80,000 \times ₹ 5.00 = \mathbf{₹ 24,00,000}$ (identical to pre-merger earnings)[cite: 12].</li>
+        <li>$$\\text{Pre-Merger EPS of M Co. Ltd.} = \\frac{₹ 80,00,000}{16,00,000} = \\mathbf{₹ 5.00}$$[cite: 12]</li>
+        <li>$$\\text{Pre-Merger EPS of N Co. Ltd.} = \\frac{₹ 24,00,000}{4,00,000} = \\mathbf{₹ 6.00}$$[cite: 12]</li>
+        <li>$$\\text{Exchange Ratio on EPS Basis} = \\frac{\\text{EPS}_N}{\\text{EPS}_M} = \\frac{₹ 6.00}{₹ 5.00} = \\mathbf{1.20 \\text{ (6 shares of M for 5 of N)}}$$[cite: 12]</li>
+        <li>Shares issued: $4,00,000 \\times 1.20 = \\mathbf{4,80,000 \\text{ shares}}$[cite: 12]</li>
+        <li>Total post-merger shares $= 16,00,000 + 4,80,000 = \\mathbf{20,80,000 \\text{ shares}}$[cite: 12]</li>
+        <li>$$\\text{Post-Merger EPS of M Co. Ltd.} = \\frac{₹ 1,04,00,000}{20,80,000} = \\mathbf{₹ 5.00}$$[cite: 12]</li>
+        <li>Total earnings available to N Co. Ltd. shareholders: $4,80,000 \\times ₹ 5.00 = \\mathbf{₹ 24,00,000}$ (identical to pre-merger earnings)[cite: 12].</li>
       </ul>
     `
   },
@@ -15477,29 +15477,29 @@ const icaibookData = [
       <p>Determine: (i) Pre-merger Market Value per Share, and (ii) Maximum exchange ratio Longitude Limited can offer without dilution of (1) EPS, and (2) Market Value per Share (calculate ratios up to 4 decimal places)[cite: 12].</p>
     `,
     solution_html: `
-      <h4>(i) Pre-Merger Market Value per Share ($\text{MPS} = \text{EPS} \times \text{P/E}$)</h4>
+      <h4>(i) Pre-Merger Market Value per Share ($\\text{MPS} = \\text{EPS} \\times \\text{P/E}$)</h4>
       <ul>
-        <li><strong>Longitude Limited:</strong> $₹ 8.00 \times 15 = \mathbf{₹ 120.00}$[cite: 12]</li>
-        <li><strong>Latitude Limited:</strong> $₹ 5.00 \times 10 = \mathbf{₹ 50.00}$[cite: 12]</li>
+        <li><strong>Longitude Limited:</strong> $₹ 8.00 \\times 15 = \\mathbf{₹ 120.00}$[cite: 12]</li>
+        <li><strong>Latitude Limited:</strong> $₹ 5.00 \\times 10 = \\mathbf{₹ 50.00}$[cite: 12]</li>
       </ul>
 
       <h4>(ii) Maximum Exchange Ratio to Avoid Dilution</h4>
       <p><strong>1. Without Dilution of EPS (Maintain EPS @ ₹ 8.00):</strong></p>
       <ul>
-        <li>Combined Earnings $= ₹ 120 \text{ lakhs} + ₹ 80 \text{ lakhs} = ₹ 200 \text{ lakhs}$[cite: 12]</li>
-        <li>$$\text{Maximum Post-Merger Shares Permissible} = \frac{₹ 200 \text{ lakhs}}{₹ 8.00} = \mathbf{25.00 \text{ lakh shares}}$$[cite: 12]</li>
-        <li>Maximum new shares issued to Latitude Ltd. $= 25.00 - 15.00 = \mathbf{10.00 \text{ lakh shares}}$[cite: 12]</li>
-        <li>$$\text{Maximum Exchange Ratio} = \frac{10.00 \text{ lakhs}}{16.00 \text{ lakhs}} = \mathbf{0.6250 : 1 \text{ (or 5 : 8)}}$$[cite: 12]</li>
+        <li>Combined Earnings $= ₹ 120 \\text{ lakhs} + ₹ 80 \\text{ lakhs} = ₹ 200 \\text{ lakhs}$[cite: 12]</li>
+        <li>$$\\text{Maximum Post-Merger Shares Permissible} = \\frac{₹ 200 \\text{ lakhs}}{₹ 8.00} = \\mathbf{25.00 \\text{ lakh shares}}$$[cite: 12]</li>
+        <li>Maximum new shares issued to Latitude Ltd. $= 25.00 - 15.00 = \\mathbf{10.00 \\text{ lakh shares}}$[cite: 12]</li>
+        <li>$$\\text{Maximum Exchange Ratio} = \\frac{10.00 \\text{ lakhs}}{16.00 \\text{ lakhs}} = \\mathbf{0.6250 : 1 \\text{ (or 5 : 8)}}$$[cite: 12]</li>
       </ul>
 
       <p><strong>2. Without Dilution of Market Value per Share (Maintain MPS @ ₹ 120.00):</strong></p>
       <ul>
-        <li>Pre-merger Market Cap of Longitude Ltd. ($15\text{L} \times ₹ 120$) $= ₹ 1,800 \text{ lakhs}$[cite: 12]</li>
-        <li>Pre-merger Market Cap of Latitude Ltd. ($16\text{L} \times ₹ 50$) $= ₹ 800 \text{ lakhs}$[cite: 12]</li>
-        <li>$$\text{Combined Market Value} = ₹ 1,800 + ₹ 800 = \mathbf{₹ 2,600 \text{ lakhs}}$$[cite: 12]</li>
-        <li>$$\text{Maximum Post-Merger Shares Permissible} = \frac{₹ 2,600 \text{ lakhs}}{₹ 120} = \mathbf{21.67 \text{ lakh shares}}$$[cite: 12]</li>
-        <li>Maximum new shares issued to Latitude Ltd. $= 21.67 - 15.00 = \mathbf{6.67 \text{ lakh shares}}$[cite: 12]</li>
-        <li>$$\text{Maximum Exchange Ratio} = \frac{6.67 \text{ lakhs}}{16.00 \text{ lakhs}} = \mathbf{0.4169 : 1}$$[cite: 12]</li>
+        <li>Pre-merger Market Cap of Longitude Ltd. ($15\\text{L} \\times ₹ 120$) $= ₹ 1,800 \\text{ lakhs}$[cite: 12]</li>
+        <li>Pre-merger Market Cap of Latitude Ltd. ($16\\text{L} \\times ₹ 50$) $= ₹ 800 \\text{ lakhs}$[cite: 12]</li>
+        <li>$$\\text{Combined Market Value} = ₹ 1,800 + ₹ 800 = \\mathbf{₹ 2,600 \\text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\\text{Maximum Post-Merger Shares Permissible} = \\frac{₹ 2,600 \\text{ lakhs}}{₹ 120} = \\mathbf{21.67 \\text{ lakh shares}}$$[cite: 12]</li>
+        <li>Maximum new shares issued to Latitude Ltd. $= 21.67 - 15.00 = \\mathbf{6.67 \\text{ lakh shares}}$[cite: 12]</li>
+        <li>$$\\text{Maximum Exchange Ratio} = \\frac{6.67 \\text{ lakhs}}{16.00 \\text{ lakhs}} = \\mathbf{0.4169 : 1}$$[cite: 12]</li>
       </ul>
     `
   },
@@ -15533,35 +15533,35 @@ const icaibookData = [
     solution_html: `
       <h4>1. Pre-Merger Base Data</h4>
       <ul>
-        <li><strong>P Ltd.:</strong> $\text{PAT} = ₹ 15.00(1 - 0.30) = ₹ 10.50 \text{ cr} \implies \text{EPS} = \frac{10.50}{25} = ₹ 0.42 \implies \text{MPS} = 0.42 \times 12 = \mathbf{₹ 5.04}$[cite: 12]</li>
-        <li><strong>R Ltd.:</strong> $\text{PAT} = ₹ 13.50(1 - 0.30) = ₹ 9.45 \text{ cr} \implies \text{EPS} = \frac{9.45}{15} = ₹ 0.63 \implies \text{MPS} = 0.63 \times 9 = \mathbf{₹ 5.67}$[cite: 12]</li>
+        <li><strong>P Ltd.:</strong> $\\text{PAT} = ₹ 15.00(1 - 0.30) = ₹ 10.50 \\text{ cr} \\implies \\text{EPS} = \\frac{10.50}{25} = ₹ 0.42 \\implies \\text{MPS} = 0.42 \\times 12 = \\mathbf{₹ 5.04}$[cite: 12]</li>
+        <li><strong>R Ltd.:</strong> $\\text{PAT} = ₹ 13.50(1 - 0.30) = ₹ 9.45 \\text{ cr} \\implies \\text{EPS} = \\frac{9.45}{15} = ₹ 0.63 \\implies \\text{MPS} = 0.63 \\times 9 = \\mathbf{₹ 5.67}$[cite: 12]</li>
       </ul>
 
       <h4>(i) Market Value of Both Companies (Pre-Merger)</h4>
       <ul>
-        <li>Market Value of P Ltd. ($25 \text{ cr} \times ₹ 5.04$) $= \mathbf{₹ 126.00 \text{ Crores}}$[cite: 12]</li>
-        <li>Market Value of R Ltd. ($15 \text{ cr} \times ₹ 5.67$) $= \mathbf{₹ 85.05 \text{ Crores}}$[cite: 12]</li>
-        <li>$$\text{Combined Pre-Merger Value} = ₹ 126.00 + ₹ 85.05 = \mathbf{₹ 211.05 \text{ Crores}}$$[cite: 12]</li>
+        <li>Market Value of P Ltd. ($25 \\text{ cr} \\times ₹ 5.04$) $= \\mathbf{₹ 126.00 \\text{ Crores}}$[cite: 12]</li>
+        <li>Market Value of R Ltd. ($15 \\text{ cr} \\times ₹ 5.67$) $= \\mathbf{₹ 85.05 \\text{ Crores}}$[cite: 12]</li>
+        <li>$$\\text{Combined Pre-Merger Value} = ₹ 126.00 + ₹ 85.05 = \\mathbf{₹ 211.05 \\text{ Crores}}$$[cite: 12]</li>
       </ul>
 
       <h4>(ii) Value of Original Shareholders in the Merged Firm (No Synergy Assumption)</h4>
       <ul>
-        <li>New shares issued to R Ltd. $= 15 \text{ cr} \times \frac{4}{5} = \mathbf{12.00 \text{ crore shares}}$[cite: 12]</li>
-        <li>Total post-merger shares $= 25 + 12 = \mathbf{37.00 \text{ crore shares}}$[cite: 12]</li>
-        <li>$$\text{Value Owned by P Ltd. Shareholders} = ₹ 211.05 \text{ cr} \times \frac{25}{37} = \mathbf{₹ 142.61 \text{ Crores}}$$ (Gain of ₹ 16.61 cr)[cite: 12]</li>
-        <li>$$\text{Value Owned by R Ltd. Shareholders} = ₹ 211.05 \text{ cr} \times \frac{12}{37} = \mathbf{₹ 68.44 \text{ Crores}}$$ (Loss of ₹ 16.61 cr)[cite: 12]</li>
+        <li>New shares issued to R Ltd. $= 15 \\text{ cr} \\times \\frac{4}{5} = \\mathbf{12.00 \\text{ crore shares}}$[cite: 12]</li>
+        <li>Total post-merger shares $= 25 + 12 = \\mathbf{37.00 \\text{ crore shares}}$[cite: 12]</li>
+        <li>$$\\text{Value Owned by P Ltd. Shareholders} = ₹ 211.05 \\text{ cr} \\times \\frac{25}{37} = \\mathbf{₹ 142.61 \\text{ Crores}}$$ (Gain of ₹ 16.61 cr)[cite: 12]</li>
+        <li>$$\\text{Value Owned by R Ltd. Shareholders} = ₹ 211.05 \\text{ cr} \\times \\frac{12}{37} = \\mathbf{₹ 68.44 \\text{ Crores}}$$ (Loss of ₹ 16.61 cr)[cite: 12]</li>
       </ul>
 
       <h4>(iii) &amp; (iv) Post-Merger Share Price with P Ltd.'s Pre-Merger P/E Ratio (12 times)</h4>
       <ul>
-        <li>Total Combined Earnings $= ₹ 10.50 \text{ cr} + ₹ 9.45 \text{ cr} = \mathbf{₹ 19.95 \text{ Crores}}$[cite: 12]</li>
-        <li>$$\text{Post-Merger EPS} = \frac{₹ 19.95 \text{ cr}}{37 \text{ cr shares}} = \mathbf{₹ 0.5392 \text{ per share}}$$[cite: 12]</li>
-        <li>$$\text{Post-Merger Share Price} = ₹ 0.5392 \times 12 = \mathbf{₹ 6.47}$$ (Total Market Cap $= 37 \times 6.47 = \mathbf{₹ 239.39 \text{ Crores}}$)[cite: 12]</li>
+        <li>Total Combined Earnings $= ₹ 10.50 \\text{ cr} + ₹ 9.45 \\text{ cr} = \\mathbf{₹ 19.95 \\text{ Crores}}$[cite: 12]</li>
+        <li>$$\\text{Post-Merger EPS} = \\frac{₹ 19.95 \\text{ cr}}{37 \\text{ cr shares}} = \\mathbf{₹ 0.5392 \\text{ per share}}$$[cite: 12]</li>
+        <li>$$\\text{Post-Merger Share Price} = ₹ 0.5392 \\times 12 = \\mathbf{₹ 6.47}$$ (Total Market Cap $= 37 \\times 6.47 = \\mathbf{₹ 239.39 \\text{ Crores}}$)[cite: 12]</li>
       </ul>
       <p><strong>Effect on Share Prices:</strong></p>
       <ul>
         <li><strong>P Ltd. Shareholders:</strong> Price rises from ₹ 5.04 to ₹ 6.47, an increase of <strong>+₹ 1.43 (+28.4%)</strong>[cite: 12].</li>
-        <li><strong>R Ltd. Shareholders:</strong> Equivalent price per share $= ₹ 6.47 \times 0.80 = \mathbf{₹ 5.18}$[cite: 12]. Price decreases from ₹ 5.67 to ₹ 5.18, a drop of <strong>-₹ 0.49 (-8.64%)</strong>[cite: 12].</li>
+        <li><strong>R Ltd. Shareholders:</strong> Equivalent price per share $= ₹ 6.47 \\times 0.80 = \\mathbf{₹ 5.18}$[cite: 12]. Price decreases from ₹ 5.67 to ₹ 5.18, a drop of <strong>-₹ 0.49 (-8.64%)</strong>[cite: 12].</li>
       </ul>
     `
   },
@@ -15601,9 +15601,9 @@ const icaibookData = [
           <ul>
             <li>High Growth (820): Debt = 460; Equity = $820 - 460 = 360$[cite: 12]</li>
             <li>Medium Growth (550): Debt = 460; Equity = $550 - 460 = 90$[cite: 12]</li>
-            <li>Slow Growth (410): Firm value &lt; Debt $\implies$ Debt = 410; Equity = $\mathbf{0}$[cite: 12]</li>
-            <li>$$\text{Expected Debt} = (460 \times 0.2) + (460 \times 0.6) + (410 \times 0.2) = 92 + 276 + 82 = \mathbf{₹ 450 \text{ lakhs}}$$[cite: 12]</li>
-            <li>$$\text{Expected Equity} = (360 \times 0.2) + (90 \times 0.6) + (0 \times 0.2) = 72 + 54 + 0 = \mathbf{₹ 126 \text{ lakhs}}$$[cite: 12]</li>
+            <li>Slow Growth (410): Firm value &lt; Debt $\\implies$ Debt = 410; Equity = $\\mathbf{0}$[cite: 12]</li>
+            <li>$$\\text{Expected Debt} = (460 \\times 0.2) + (460 \\times 0.6) + (410 \\times 0.2) = 92 + 276 + 82 = \\mathbf{₹ 450 \\text{ lakhs}}$$[cite: 12]</li>
+            <li>$$\\text{Expected Equity} = (360 \\times 0.2) + (90 \\times 0.6) + (0 \\times 0.2) = 72 + 54 + 0 = \\mathbf{₹ 126 \\text{ lakhs}}$$[cite: 12]</li>
           </ul>
         </li>
         <li><strong>Dimple Ltd. (Debt = ₹ 65 lakhs):</strong>
@@ -15611,16 +15611,16 @@ const icaibookData = [
             <li>High Growth (1,050): Debt = 65; Equity = $1,050 - 65 = 985$[cite: 12]</li>
             <li>Medium Growth (825): Debt = 65; Equity = $825 - 65 = 760$[cite: 12]</li>
             <li>Slow Growth (590): Debt = 65; Equity = $590 - 65 = 525$[cite: 12]</li>
-            <li>$$\text{Expected Debt} = \mathbf{₹ 65 \text{ lakhs}}$$ (solvent in all states)[cite: 12]</li>
-            <li>$$\text{Expected Equity} = (985 \times 0.2) + (760 \times 0.6) + (525 \times 0.2) = 197 + 456 + 105 = \mathbf{₹ 758 \text{ lakhs}}$$[cite: 12]</li>
+            <li>$$\\text{Expected Debt} = \\mathbf{₹ 65 \\text{ lakhs}}$$ (solvent in all states)[cite: 12]</li>
+            <li>$$\\text{Expected Equity} = (985 \\times 0.2) + (760 \\times 0.6) + (525 \\times 0.2) = 197 + 456 + 105 = \\mathbf{₹ 758 \\text{ lakhs}}$$[cite: 12]</li>
           </ul>
         </li>
       </ul>
 
       <h4>2. Expected Value of Debt and Equity for Merged Entity</h4>
       <ul>
-        <li>$$\text{Expected Debt of Merged Entity} = ₹ 450 \text{ lakhs} + ₹ 65 \text{ lakhs} = \mathbf{₹ 515 \text{ lakhs}}$$[cite: 12]</li>
-        <li>$$\text{Expected Equity of Merged Entity} = ₹ 126 \text{ lakhs} + ₹ 758 \text{ lakhs} = \mathbf{₹ 884 \text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\\text{Expected Debt of Merged Entity} = ₹ 450 \\text{ lakhs} + ₹ 65 \\text{ lakhs} = \\mathbf{₹ 515 \\text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\\text{Expected Equity of Merged Entity} = ₹ 126 \\text{ lakhs} + ₹ 758 \\text{ lakhs} = \\mathbf{₹ 884 \\text{ lakhs}}$$[cite: 12]</li>
       </ul>
     `
   },
@@ -15657,27 +15657,27 @@ const icaibookData = [
     solution_html: `
       <h4>1. Valuation of Yes Ltd. Before Merger</h4>
       <ul>
-        <li>$$\text{PV of Explicit FCFs (Years 1 to 5)} = (175 \times 0.870) + (200 \times 0.756) + (320 \times 0.658) + (340 \times 0.572) + (350 \times 0.497) = \mathbf{₹ 882.44 \text{ lakhs}}$$[cite: 12]</li>
-        <li>$$\text{Terminal Value at Year 5 } (TV_5) = \frac{350 \times (1 + 0.05)}{0.15 - 0.05} = \frac{367.50}{0.10} = ₹ 3,675.00 \text{ lakhs}$$[cite: 12]</li>
-        <li>$$\text{PV of Terminal Value} = ₹ 3,675.00 \times 0.497 = \mathbf{₹ 1,826.475 \text{ lakhs}}$$[cite: 12]</li>
-        <li>$$\text{Total Standalone Value of Yes Ltd.} = ₹ 882.44 + ₹ 1,826.475 = \mathbf{₹ 2,708.915 \text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\\text{PV of Explicit FCFs (Years 1 to 5)} = (175 \\times 0.870) + (200 \\times 0.756) + (320 \\times 0.658) + (340 \\times 0.572) + (350 \\times 0.497) = \\mathbf{₹ 882.44 \\text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\\text{Terminal Value at Year 5 } (TV_5) = \\frac{350 \\times (1 + 0.05)}{0.15 - 0.05} = \\frac{367.50}{0.10} = ₹ 3,675.00 \\text{ lakhs}$$[cite: 12]</li>
+        <li>$$\\text{PV of Terminal Value} = ₹ 3,675.00 \\times 0.497 = \\mathbf{₹ 1,826.475 \\text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\\text{Total Standalone Value of Yes Ltd.} = ₹ 882.44 + ₹ 1,826.475 = \\mathbf{₹ 2,708.915 \\text{ lakhs}}$$[cite: 12]</li>
       </ul>
 
       <h4>2. Valuation of Merged Entity After Merger</h4>
       <ul>
-        <li>$$\text{PV of Combined Explicit FCFs} = (400 \times 0.870) + (450 \times 0.756) + (525 \times 0.658) + (590 \times 0.572) + (620 \times 0.497) = \mathbf{₹ 1,679.27 \text{ lakhs}}$$[cite: 12]</li>
-        <li>$$\text{Combined Terminal Value at Year 5 } (TV_5) = \frac{620 \times (1 + 0.06)}{0.15 - 0.06} = \frac{657.20}{0.09} = ₹ 7,302.22 \text{ lakhs}$$[cite: 12]</li>
-        <li>$$\text{PV of Combined Terminal Value} = ₹ 7,302.22 \times 0.497 = \mathbf{₹ 3,629.20 \text{ lakhs}}$$[cite: 12]</li>
-        <li>$$\text{Total Value of Merged Entity } (V_{AB}) = ₹ 1,679.27 + ₹ 3,629.20 = \mathbf{₹ 5,308.47 \text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\\text{PV of Combined Explicit FCFs} = (400 \\times 0.870) + (450 \\times 0.756) + (525 \\times 0.658) + (590 \\times 0.572) + (620 \\times 0.497) = \\mathbf{₹ 1,679.27 \\text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\\text{Combined Terminal Value at Year 5 } (TV_5) = \\frac{620 \\times (1 + 0.06)}{0.15 - 0.06} = \\frac{657.20}{0.09} = ₹ 7,302.22 \\text{ lakhs}$$[cite: 12]</li>
+        <li>$$\\text{PV of Combined Terminal Value} = ₹ 7,302.22 \\times 0.497 = \\mathbf{₹ 3,629.20 \\text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\\text{Total Value of Merged Entity } (V_{AB}) = ₹ 1,679.27 + ₹ 3,629.20 = \\mathbf{₹ 5,308.47 \\text{ lakhs}}$$[cite: 12]</li>
       </ul>
 
       <h4>3. (ii) Value of Acquisition</h4>
-      <p>$$\text{Value of Acquisition} = V_{AB} - V_A = ₹ 5,308.47 \text{ lakhs} - ₹ 2,708.915 \text{ lakhs} = \mathbf{₹ 2,599.555 \text{ lakhs}}$$[cite: 12]</p>
+      <p>$$\\text{Value of Acquisition} = V_{AB} - V_A = ₹ 5,308.47 \\text{ lakhs} - ₹ 2,708.915 \\text{ lakhs} = \\mathbf{₹ 2,599.555 \\text{ lakhs}}$$[cite: 12]</p>
 
       <h4>4. (iii) Gain to Shareholders of Yes Ltd.</h4>
-      <p>Under a 0.5 : 1 swap ratio with equal initial shares, Yes Ltd. shareholders own $\frac{1}{1 + 0.5} = \frac{1}{1.5} = \frac{2}{3}$ of the combined entity[cite: 12]:</p>
-      <p>$$\text{Share of Yes Ltd. in Merged Firm} = ₹ 5,308.47 \text{ lakhs} \times \frac{1}{1.5} = \mathbf{₹ 3,538.98 \text{ lakhs}}$$[cite: 12]</p>
-      <p>$$\text{Gain to Yes Ltd. Shareholders} = ₹ 3,538.98 \text{ lakhs} - ₹ 2,708.915 \text{ lakhs} = \mathbf{₹ 830.065 \text{ lakhs}}$$[cite: 12]</p>
+      <p>Under a 0.5 : 1 swap ratio with equal initial shares, Yes Ltd. shareholders own $\\frac{1}{1 + 0.5} = \\frac{1}{1.5} = \\frac{2}{3}$ of the combined entity[cite: 12]:</p>
+      <p>$$\\text{Share of Yes Ltd. in Merged Firm} = ₹ 5,308.47 \\text{ lakhs} \\times \\frac{1}{1.5} = \\mathbf{₹ 3,538.98 \\text{ lakhs}}$$[cite: 12]</p>
+      <p>$$\\text{Gain to Yes Ltd. Shareholders} = ₹ 3,538.98 \\text{ lakhs} - ₹ 2,708.915 \\text{ lakhs} = \\mathbf{₹ 830.065 \\text{ lakhs}}$$[cite: 12]</p>
     `
   },
   {
@@ -15713,40 +15713,40 @@ const icaibookData = [
       <h4>1. Determination of Valuation Parameters</h4>
       <ul>
         <li><strong>Efficient Ltd.:</strong>
-          <br />$$\text{MPS} = \frac{₹ 500 \text{L}}{10\text{L}} = ₹ 50; \quad \text{EPS} = \frac{₹ 50}{10} = ₹ 5.00; \quad \text{Total PAT} = ₹ 50.00 \text{ lakhs}$$[cite: 12]
-          <br />$$\text{Book Value per share} = \frac{₹ 100 \text{L (Capital)} + ₹ 300 \text{L (Reserves)}}{10 \text{ lakh shares}} = \mathbf{₹ 40.00}$$[cite: 12]
+          <br />$$\\text{MPS} = \\frac{₹ 500 \\text{L}}{10\\text{L}} = ₹ 50; \\quad \\text{EPS} = \\frac{₹ 50}{10} = ₹ 5.00; \\quad \\text{Total PAT} = ₹ 50.00 \\text{ lakhs}$$[cite: 12]
+          <br />$$\\text{Book Value per share} = \\frac{₹ 100 \\text{L (Capital)} + ₹ 300 \\text{L (Reserves)}}{10 \\text{ lakh shares}} = \\mathbf{₹ 40.00}$$[cite: 12]
         </li>
         <li><strong>Healthy Ltd.:</strong>
-          <br />$$\text{MPS} = \frac{₹ 750 \text{L}}{7.5\text{L}} = ₹ 100; \quad \text{EPS} = \frac{₹ 100}{5} = ₹ 20.00; \quad \text{Total PAT} = ₹ 150.00 \text{ lakhs}$$[cite: 12]
-          <br />$$\text{Book Value per share} = \frac{₹ 75 \text{L (Capital)} + ₹ 165 \text{L (Reserves)}}{7.5 \text{ lakh shares}} = \mathbf{₹ 32.00}$$[cite: 12]
+          <br />$$\\text{MPS} = \\frac{₹ 750 \\text{L}}{7.5\\text{L}} = ₹ 100; \\quad \\text{EPS} = \\frac{₹ 100}{5} = ₹ 20.00; \\quad \\text{Total PAT} = ₹ 150.00 \\text{ lakhs}$$[cite: 12]
+          <br />$$\\text{Book Value per share} = \\frac{₹ 75 \\text{L (Capital)} + ₹ 165 \\text{L (Reserves)}}{7.5 \\text{ lakh shares}} = \\mathbf{₹ 32.00}$$[cite: 12]
         </li>
       </ul>
 
       <h4>2. (i) Weighted Swap Ratio and Promoter Holding</h4>
       <ul>
-        <li>EPS Ratio: $\frac{20}{5} = 4.0 \times 40\% = \mathbf{1.60}$[cite: 12]</li>
-        <li>Book Value Ratio: $\frac{32}{40} = 0.8 \times 25\% = \mathbf{0.20}$[cite: 12]</li>
-        <li>Market Price Ratio: $\frac{100}{50} = 2.0 \times 35\% = \mathbf{0.70}$[cite: 12]</li>
-        <li>$$\text{Weighted Swap Ratio} = 1.60 + 0.20 + 0.70 = \mathbf{2.50 \text{ shares of Efficient for 1 of Healthy}}$$[cite: 12]</li>
-        <li>New shares issued to Healthy Ltd. $= 7.50 \text{ lakhs} \times 2.50 = \mathbf{18.75 \text{ lakh shares}}$[cite: 12]</li>
-        <li>Total post-merger shares $= 10.00 + 18.75 = \mathbf{28.75 \text{ lakh shares}}$[cite: 12]</li>
-        <li>$$\text{Promoters' Holding Post-Merger} = 4.75 \text{L} + (5.00 \text{L} \times 2.50) = 4.75 + 12.50 = \mathbf{17.25 \text{ lakh shares}}$$[cite: 12]</li>
-        <li>$$\text{Promoters' Holding \%} = \frac{17.25 \text{ lakhs}}{28.75 \text{ lakhs}} \times 100 = \mathbf{60.00\%}$$[cite: 12]</li>
+        <li>EPS Ratio: $\\frac{20}{5} = 4.0 \\times 40\\% = \\mathbf{1.60}$[cite: 12]</li>
+        <li>Book Value Ratio: $\\frac{32}{40} = 0.8 \\times 25\\% = \\mathbf{0.20}$[cite: 12]</li>
+        <li>Market Price Ratio: $\\frac{100}{50} = 2.0 \\times 35\\% = \\mathbf{0.70}$[cite: 12]</li>
+        <li>$$\\text{Weighted Swap Ratio} = 1.60 + 0.20 + 0.70 = \\mathbf{2.50 \\text{ shares of Efficient for 1 of Healthy}}$$[cite: 12]</li>
+        <li>New shares issued to Healthy Ltd. $= 7.50 \\text{ lakhs} \\times 2.50 = \\mathbf{18.75 \\text{ lakh shares}}$[cite: 12]</li>
+        <li>Total post-merger shares $= 10.00 + 18.75 = \\mathbf{28.75 \\text{ lakh shares}}$[cite: 12]</li>
+        <li>$$\\text{Promoters' Holding Post-Merger} = 4.75 \\text{L} + (5.00 \\text{L} \\times 2.50) = 4.75 + 12.50 = \\mathbf{17.25 \\text{ lakh shares}}$$[cite: 12]</li>
+        <li>$$\\text{Promoters' Holding \\%} = \\frac{17.25 \\text{ lakhs}}{28.75 \\text{ lakhs}} \\times 100 = \\mathbf{60.00\\%}$$[cite: 12]</li>
       </ul>
 
       <h4>3. (ii) Post-Merger EPS of Efficient Ltd.</h4>
-      <p>$$\text{Combined PAT} = ₹ 50.00 \text{ lakhs} + ₹ 150.00 \text{ lakhs} = ₹ 200.00 \text{ lakhs}$$[cite: 12]</p>
-      <p>$$\text{Post-Merger EPS} = \frac{₹ 200.00 \text{ lakhs}}{28.75 \text{ lakh shares}} = \mathbf{₹ 6.956 \text{ per share}}$$ (or ₹ 6.96)[cite: 12]</p>
+      <p>$$\\text{Combined PAT} = ₹ 50.00 \\text{ lakhs} + ₹ 150.00 \\text{ lakhs} = ₹ 200.00 \\text{ lakhs}$$[cite: 12]</p>
+      <p>$$\\text{Post-Merger EPS} = \\frac{₹ 200.00 \\text{ lakhs}}{28.75 \\text{ lakh shares}} = \\mathbf{₹ 6.956 \\text{ per share}}$$ (or ₹ 6.96)[cite: 12]</p>
 
       <h4>4. (iii) Expected Market Price and Market Capitalization (PE = 10 times)</h4>
       <ul>
-        <li>$$\text{Expected Market Price} = ₹ 6.956 \times 10 = \mathbf{₹ 69.56 \text{ per share}}$$[cite: 12]</li>
-        <li>$$\text{Total Market Capitalization} = 28.75 \text{ lakh shares} \times ₹ 69.56 = \mathbf{₹ 1,999.85 \text{ lakhs \approx ₹ 2,000 lakhs}}$$[cite: 12]</li>
+        <li>$$\\text{Expected Market Price} = ₹ 6.956 \\times 10 = \\mathbf{₹ 69.56 \\text{ per share}}$$[cite: 12]</li>
+        <li>$$\\text{Total Market Capitalization} = 28.75 \\text{ lakh shares} \\times ₹ 69.56 = \\mathbf{₹ 1,999.85 \\text{ lakhs \\approx ₹ 2,000 lakhs}}$$[cite: 12]</li>
       </ul>
 
       <h4>5. (iv) Free Float Market Capitalization</h4>
-      <p>Non-promoter (public) holding $= 100\% - 60\% = 40\%$[cite: 12].</p>
-      <p>$$\text{Free Float Market Cap} = 40\% \times ₹ 1,999.85 \text{ lakhs} = \mathbf{₹ 799.94 \text{ lakhs}}$$[cite: 12]</p>
+      <p>Non-promoter (public) holding $= 100\\% - 60\\% = 40\\%$[cite: 12].</p>
+      <p>$$\\text{Free Float Market Cap} = 40\\% \\times ₹ 1,999.85 \\text{ lakhs} = \\mathbf{₹ 799.94 \\text{ lakhs}}$$[cite: 12]</p>
     `
   },
   {
@@ -15783,34 +15783,34 @@ const icaibookData = [
       <h4>1. Per-Share Financials of Both Companies</h4>
       <ul>
         <li><strong>Abhiman Ltd.:</strong>
-          <br />Shares $= \frac{₹ 200\text{L}}{100} = 2 \text{ lakh shares}$[cite: 12]
-          <br />$$\text{Book Value per share} = \frac{₹ 200\text{L} + ₹ 900\text{L}}{2\text{L}} = \mathbf{₹ 550.00}$$[cite: 12]
-          <br />$$\text{Total Market Cap} = \frac{₹ 500\text{L}}{50\%} = ₹ 1,000 \text{ lakhs} \implies \text{MPS} = \frac{₹ 1,000\text{L}}{2\text{L}} = \mathbf{₹ 500.00}$$[cite: 12]
-          <br />$$\text{EPS} = \frac{₹ 500}{10} = \mathbf{₹ 50.00} \implies \text{PAT} = 2\text{L} \times ₹ 50 = ₹ 100 \text{ lakhs}$$[cite: 12]
+          <br />Shares $= \\frac{₹ 200\\text{L}}{100} = 2 \\text{ lakh shares}$[cite: 12]
+          <br />$$\\text{Book Value per share} = \\frac{₹ 200\\text{L} + ₹ 900\\text{L}}{2\\text{L}} = \\mathbf{₹ 550.00}$$[cite: 12]
+          <br />$$\\text{Total Market Cap} = \\frac{₹ 500\\text{L}}{50\\%} = ₹ 1,000 \\text{ lakhs} \\implies \\text{MPS} = \\frac{₹ 1,000\\text{L}}{2\\text{L}} = \\mathbf{₹ 500.00}$$[cite: 12]
+          <br />$$\\text{EPS} = \\frac{₹ 500}{10} = \\mathbf{₹ 50.00} \\implies \\text{PAT} = 2\\text{L} \\times ₹ 50 = ₹ 100 \\text{ lakhs}$$[cite: 12]
         </li>
         <li><strong>Swabhiman Ltd.:</strong>
-          <br />Shares $= \frac{₹ 100\text{L}}{10} = 10 \text{ lakh shares}$[cite: 12]
-          <br />$$\text{Book Value per share} = \frac{₹ 100\text{L} + ₹ 600\text{L}}{10\text{L}} = \mathbf{₹ 70.00}$$[cite: 12]
-          <br />$$\text{Total Market Cap} = \frac{₹ 156\text{L}}{40\%} = ₹ 390 \text{ lakhs} \implies \text{MPS} = \frac{₹ 390\text{L}}{10\text{L}} = \mathbf{₹ 39.00}$$[cite: 12]
-          <br />$$\text{EPS} = \frac{₹ 39}{4} = \mathbf{₹ 9.75} \implies \text{PAT} = 10\text{L} \times ₹ 9.75 = ₹ 97.50 \text{ lakhs}$$[cite: 12]
+          <br />Shares $= \\frac{₹ 100\\text{L}}{10} = 10 \\text{ lakh shares}$[cite: 12]
+          <br />$$\\text{Book Value per share} = \\frac{₹ 100\\text{L} + ₹ 600\\text{L}}{10\\text{L}} = \\mathbf{₹ 70.00}$$[cite: 12]
+          <br />$$\\text{Total Market Cap} = \\frac{₹ 156\\text{L}}{40\\%} = ₹ 390 \\text{ lakhs} \\implies \\text{MPS} = \\frac{₹ 390\\text{L}}{10\\text{L}} = \\mathbf{₹ 39.00}$$[cite: 12]
+          <br />$$\\text{EPS} = \\frac{₹ 39}{4} = \\mathbf{₹ 9.75} \\implies \\text{PAT} = 10\\text{L} \\times ₹ 9.75 = ₹ 97.50 \\text{ lakhs}$$[cite: 12]
         </li>
       </ul>
 
       <h4>2. (i) Weighted Swap Ratio</h4>
       <ul>
-        <li>Book Value Ratio: $\frac{70}{550} = 0.12727 \times 25\% = \mathbf{0.03182}$[cite: 12]</li>
-        <li>EPS Ratio: $\frac{9.75}{50} = 0.19500 \times 50\% = \mathbf{0.09750}$[cite: 12]</li>
-        <li>Market Price Ratio: $\frac{39}{500} = 0.07800 \times 25\% = \mathbf{0.01950}$[cite: 12]</li>
-        <li>$$\text{Weighted Swap Ratio} = 0.03182 + 0.09750 + 0.01950 = \mathbf{0.148825 \text{ shares of Abhiman for 1 of Swabhiman}}$$[cite: 12]</li>
-        <li>New shares issued $= 10,00,000 \times 0.148825 = \mathbf{1,48,825 \text{ shares}}$[cite: 12]</li>
+        <li>Book Value Ratio: $\\frac{70}{550} = 0.12727 \\times 25\\% = \\mathbf{0.03182}$[cite: 12]</li>
+        <li>EPS Ratio: $\\frac{9.75}{50} = 0.19500 \\times 50\\% = \\mathbf{0.09750}$[cite: 12]</li>
+        <li>Market Price Ratio: $\\frac{39}{500} = 0.07800 \\times 25\\% = \\mathbf{0.01950}$[cite: 12]</li>
+        <li>$$\\text{Weighted Swap Ratio} = 0.03182 + 0.09750 + 0.01950 = \\mathbf{0.148825 \\text{ shares of Abhiman for 1 of Swabhiman}}$$[cite: 12]</li>
+        <li>New shares issued $= 10,00,000 \\times 0.148825 = \\mathbf{1,48,825 \\text{ shares}}$[cite: 12]</li>
       </ul>
 
       <h4>3. (ii) Post-Merger Book Value, EPS, and Market Price</h4>
       <ul>
-        <li>Total shares in merged entity $= 2,00,000 + 1,48,825 = \mathbf{3,48,825 \text{ shares}}$[cite: 12]</li>
-        <li>$$\text{Post-Merger Book Value} = \frac{₹ 1,100 \text{ lakhs} + ₹ 700 \text{ lakhs}}{3,48,825 \text{ shares}} = \frac{₹ 1,800 \text{ lakhs}}{3.48825 \text{ lakhs}} = \mathbf{₹ 516.02 \text{ per share}}$$[cite: 12]</li>
-        <li>$$\text{Post-Merger EPS} = \frac{₹ 100 \text{ lakhs} + ₹ 97.50 \text{ lakhs}}{3,48,825 \text{ shares}} = \frac{₹ 197.50 \text{ lakhs}}{3.48825 \text{ lakhs}} = \mathbf{₹ 56.62 \text{ per share}}$$[cite: 12]</li>
-        <li>$$\text{Expected Market Price (P/E = 10)} = ₹ 56.62 \times 10 = \mathbf{₹ 566.20 \text{ per share}}$$[cite: 12]</li>
+        <li>Total shares in merged entity $= 2,00,000 + 1,48,825 = \\mathbf{3,48,825 \\text{ shares}}$[cite: 12]</li>
+        <li>$$\\text{Post-Merger Book Value} = \\frac{₹ 1,100 \\text{ lakhs} + ₹ 700 \\text{ lakhs}}{3,48,825 \\text{ shares}} = \\frac{₹ 1,800 \\text{ lakhs}}{3.48825 \\text{ lakhs}} = \\mathbf{₹ 516.02 \\text{ per share}}$$[cite: 12]</li>
+        <li>$$\\text{Post-Merger EPS} = \\frac{₹ 100 \\text{ lakhs} + ₹ 97.50 \\text{ lakhs}}{3,48,825 \\text{ shares}} = \\frac{₹ 197.50 \\text{ lakhs}}{3.48825 \\text{ lakhs}} = \\mathbf{₹ 56.62 \\text{ per share}}$$[cite: 12]</li>
+        <li>$$\\text{Expected Market Price (P/E = 10)} = ₹ 56.62 \\times 10 = \\mathbf{₹ 566.20 \\text{ per share}}$$[cite: 12]</li>
       </ul>
     `
   },
@@ -15847,42 +15847,42 @@ const icaibookData = [
       <h4>(i) Per-Share Financial Metrics</h4>
       <ul>
         <li><strong>E Ltd.:</strong>
-          <br />$$\text{MPS} = \frac{₹ 1,000 \text{L}}{20\text{L}} = \mathbf{₹ 50.00}; \quad \text{EPS} = \frac{₹ 50}{10} = \mathbf{₹ 5.00}; \quad \text{Total PAT} = \mathbf{₹ 100 \text{ lakhs}}$$[cite: 12]
-          <br />$$\text{Book Value per share} = \frac{₹ 200\text{L (Capital)} + ₹ 600\text{L (Reserves)}}{20 \text{ lakh shares}} = \mathbf{₹ 40.00}$$[cite: 12]
+          <br />$$\\text{MPS} = \\frac{₹ 1,000 \\text{L}}{20\\text{L}} = \\mathbf{₹ 50.00}; \\quad \\text{EPS} = \\frac{₹ 50}{10} = \\mathbf{₹ 5.00}; \\quad \\text{Total PAT} = \\mathbf{₹ 100 \\text{ lakhs}}$$[cite: 12]
+          <br />$$\\text{Book Value per share} = \\frac{₹ 200\\text{L (Capital)} + ₹ 600\\text{L (Reserves)}}{20 \\text{ lakh shares}} = \\mathbf{₹ 40.00}$$[cite: 12]
         </li>
         <li><strong>H Ltd.:</strong>
-          <br />$$\text{MPS} = \frac{₹ 1,500 \text{L}}{15\text{L}} = \mathbf{₹ 100.00}; \quad \text{EPS} = \frac{₹ 100}{5} = \mathbf{₹ 20.00}; \quad \text{Total PAT} = \mathbf{₹ 300 \text{ lakhs}}$$[cite: 12]
-          <br />$$\text{Book Value per share} = \frac{₹ 150\text{L (Capital)} + ₹ 330\text{L (Reserves)}}{15 \text{ lakh shares}} = \mathbf{₹ 32.00}$$[cite: 12]
+          <br />$$\\text{MPS} = \\frac{₹ 1,500 \\text{L}}{15\\text{L}} = \\mathbf{₹ 100.00}; \\quad \\text{EPS} = \\frac{₹ 100}{5} = \\mathbf{₹ 20.00}; \\quad \\text{Total PAT} = \\mathbf{₹ 300 \\text{ lakhs}}$$[cite: 12]
+          <br />$$\\text{Book Value per share} = \\frac{₹ 150\\text{L (Capital)} + ₹ 330\\text{L (Reserves)}}{15 \\text{ lakh shares}} = \\mathbf{₹ 32.00}$$[cite: 12]
         </li>
       </ul>
 
       <h4>(ii) Weighted Swap Ratio</h4>
       <ul>
-        <li>EPS Ratio: $\frac{20}{5} = 4.0 \times 40\% = \mathbf{1.60}$[cite: 12]</li>
-        <li>Book Value Ratio: $\frac{32}{40} = 0.8 \times 25\% = \mathbf{0.20}$[cite: 12]</li>
-        <li>Market Price Ratio: $\frac{100}{50} = 2.0 \times 35\% = \mathbf{0.70}$[cite: 12]</li>
-        <li>$$\text{Weighted Swap Ratio} = 1.60 + 0.20 + 0.70 = \mathbf{2.50 \text{ shares of E Ltd. for 1 share of H Ltd.}}$$[cite: 12]</li>
-        <li>New shares issued to H Ltd. $= 15 \text{ lakhs} \times 2.50 = \mathbf{37.50 \text{ lakh shares}}$[cite: 12]</li>
-        <li>Total post-merger shares $= 20.00 + 37.50 = \mathbf{57.50 \text{ lakh shares}}$[cite: 12]</li>
+        <li>EPS Ratio: $\\frac{20}{5} = 4.0 \\times 40\\% = \\mathbf{1.60}$[cite: 12]</li>
+        <li>Book Value Ratio: $\\frac{32}{40} = 0.8 \\times 25\\% = \\mathbf{0.20}$[cite: 12]</li>
+        <li>Market Price Ratio: $\\frac{100}{50} = 2.0 \\times 35\\% = \\mathbf{0.70}$[cite: 12]</li>
+        <li>$$\\text{Weighted Swap Ratio} = 1.60 + 0.20 + 0.70 = \\mathbf{2.50 \\text{ shares of E Ltd. for 1 share of H Ltd.}}$$[cite: 12]</li>
+        <li>New shares issued to H Ltd. $= 15 \\text{ lakhs} \\times 2.50 = \\mathbf{37.50 \\text{ lakh shares}}$[cite: 12]</li>
+        <li>Total post-merger shares $= 20.00 + 37.50 = \\mathbf{57.50 \\text{ lakh shares}}$[cite: 12]</li>
       </ul>
 
       <h4>(iii) Promoter's Holding Percentage Post-Merger</h4>
       <ul>
-        <li>$$\text{Total Promoters' Shares} = 9.50 \text{L} + (10.00 \text{L} \times 2.50) = 9.50 + 25.00 = \mathbf{34.50 \text{ lakh shares}}$$[cite: 12]</li>
-        <li>$$\text{Promoters' Holding \%} = \frac{34.50 \text{ lakhs}}{57.50 \text{ lakhs}} \times 100 = \mathbf{60.00\%}$$[cite: 12]</li>
+        <li>$$\\text{Total Promoters' Shares} = 9.50 \\text{L} + (10.00 \\text{L} \\times 2.50) = 9.50 + 25.00 = \\mathbf{34.50 \\text{ lakh shares}}$$[cite: 12]</li>
+        <li>$$\\text{Promoters' Holding \\%} = \\frac{34.50 \\text{ lakhs}}{57.50 \\text{ lakhs}} \\times 100 = \\mathbf{60.00\\%}$$[cite: 12]</li>
       </ul>
 
       <h4>(iv) Post-Merger EPS of E Ltd.</h4>
-      <p>$$\text{Post-Merger EPS} = \frac{₹ 100 \text{ lakhs} + ₹ 300 \text{ lakhs}}{57.50 \text{ lakh shares}} = \frac{₹ 400 \text{ lakhs}}{57.50 \text{ lakhs}} = \mathbf{₹ 6.956 \text{ per share}}$$ (or ₹ 6.96)[cite: 12]</p>
+      <p>$$\\text{Post-Merger EPS} = \\frac{₹ 100 \\text{ lakhs} + ₹ 300 \\text{ lakhs}}{57.50 \\text{ lakh shares}} = \\frac{₹ 400 \\text{ lakhs}}{57.50 \\text{ lakhs}} = \\mathbf{₹ 6.956 \\text{ per share}}$$ (or ₹ 6.96)[cite: 12]</p>
 
       <h4>(v) Expected Market Price and Market Capitalization (PE = 10 times)</h4>
       <ul>
-        <li>$$\text{Expected Market Price} = ₹ 6.956 \times 10 = \mathbf{₹ 69.56}$$[cite: 12]</li>
-        <li>$$\text{Total Market Capitalization} = 57.50 \text{ lakh shares} \times ₹ 69.56 = \mathbf{₹ 3,999.70 \text{ lakhs \approx ₹ 4,000 lakhs}}$$[cite: 12]</li>
+        <li>$$\\text{Expected Market Price} = ₹ 6.956 \\times 10 = \\mathbf{₹ 69.56}$$[cite: 12]</li>
+        <li>$$\\text{Total Market Capitalization} = 57.50 \\text{ lakh shares} \\times ₹ 69.56 = \\mathbf{₹ 3,999.70 \\text{ lakhs \\approx ₹ 4,000 lakhs}}$$[cite: 12]</li>
       </ul>
 
       <h4>(vi) Free Float Market Capitalization</h4>
-      <p>$$\text{Free Float Market Cap} = 40\% \times ₹ 3,999.70 \text{ lakhs} = \mathbf{₹ 1,599.88 \text{ lakhs}}$$[cite: 12]</p>
+      <p>$$\\text{Free Float Market Cap} = 40\\% \\times ₹ 3,999.70 \\text{ lakhs} = \\mathbf{₹ 1,599.88 \\text{ lakhs}}$$[cite: 12]</p>
     `
   },
   {
@@ -15923,49 +15923,49 @@ const icaibookData = [
       <h4>1. Pre-Merger Financial Indicators</h4>
       <ul>
         <li><strong>Abhiman Ltd.:</strong>
-          <br />Shares $= \frac{₹ 200\text{L}}{100} = 2 \text{ lakh shares}$; $\text{BVPS} = \frac{₹ 1,000\text{L}}{2\text{L}} = \mathbf{₹ 500}$[cite: 12]
-          <br />$$\text{Total Market Cap} = \frac{₹ 400\text{L}}{50\%} = ₹ 800 \text{ lakhs} \implies \text{MPS} = \frac{₹ 800\text{L}}{2\text{L}} = \mathbf{₹ 400}$$[cite: 12]
-          <br />$$\text{EPS} = \frac{₹ 400}{10} = \mathbf{₹ 40} \implies \text{PAT} = 2\text{L} \times ₹ 40 = ₹ 80 \text{ lakhs}$$[cite: 12]
+          <br />Shares $= \\frac{₹ 200\\text{L}}{100} = 2 \\text{ lakh shares}$; $\\text{BVPS} = \\frac{₹ 1,000\\text{L}}{2\\text{L}} = \\mathbf{₹ 500}$[cite: 12]
+          <br />$$\\text{Total Market Cap} = \\frac{₹ 400\\text{L}}{50\\%} = ₹ 800 \\text{ lakhs} \\implies \\text{MPS} = \\frac{₹ 800\\text{L}}{2\\text{L}} = \\mathbf{₹ 400}$$[cite: 12]
+          <br />$$\\text{EPS} = \\frac{₹ 400}{10} = \\mathbf{₹ 40} \\implies \\text{PAT} = 2\\text{L} \\times ₹ 40 = ₹ 80 \\text{ lakhs}$$[cite: 12]
         </li>
         <li><strong>Abhishek Ltd.:</strong>
-          <br />Shares $= \frac{₹ 100\text{L}}{10} = 10 \text{ lakh shares}$; $\text{BVPS} = \frac{₹ 600\text{L}}{10\text{L}} = \mathbf{₹ 60}$[cite: 12]
-          <br />$$\text{Total Market Cap} = \frac{₹ 128\text{L}}{40\%} = ₹ 320 \text{ lakhs} \implies \text{MPS} = \frac{₹ 320\text{L}}{10\text{L}} = \mathbf{₹ 32}$$[cite: 12]
-          <br />$$\text{EPS} = \frac{₹ 32}{4} = \mathbf{₹ 8} \implies \text{PAT} = 10\text{L} \times ₹ 8 = ₹ 80 \text{ lakhs}$$[cite: 12]
+          <br />Shares $= \\frac{₹ 100\\text{L}}{10} = 10 \\text{ lakh shares}$; $\\text{BVPS} = \\frac{₹ 600\\text{L}}{10\\text{L}} = \\mathbf{₹ 60}$[cite: 12]
+          <br />$$\\text{Total Market Cap} = \\frac{₹ 128\\text{L}}{40\\%} = ₹ 320 \\text{ lakhs} \\implies \\text{MPS} = \\frac{₹ 320\\text{L}}{10\\text{L}} = \\mathbf{₹ 32}$$[cite: 12]
+          <br />$$\\text{EPS} = \\frac{₹ 32}{4} = \\mathbf{₹ 8} \\implies \\text{PAT} = 10\\text{L} \\times ₹ 8 = ₹ 80 \\text{ lakhs}$$[cite: 12]
         </li>
       </ul>
 
       <h4>(a) Calculation of Swap Ratio</h4>
       <ul>
-        <li>Book Value Ratio: $\frac{60}{500} = 0.12 \times 25\% = \mathbf{0.03}$[cite: 12]</li>
-        <li>EPS Ratio: $\frac{8}{40} = 0.20 \times 50\% = \mathbf{0.10}$[cite: 12]</li>
-        <li>Market Price Ratio: $\frac{32}{400} = 0.08 \times 25\% = \mathbf{0.02}$[cite: 12]</li>
-        <li>$$\text{Weighted Swap Ratio} = 0.03 + 0.10 + 0.02 = \mathbf{0.15 \text{ shares of Abhiman for 1 of Abhishek}}$$[cite: 12]</li>
-        <li>New shares issued to Abhishek Ltd. $= 10 \text{ lakhs} \times 0.15 = \mathbf{1.50 \text{ lakh shares}}$[cite: 12]</li>
-        <li>Total post-merger shares $= 2.00 + 1.50 = \mathbf{3.50 \text{ lakh shares}}$[cite: 12]</li>
+        <li>Book Value Ratio: $\\frac{60}{500} = 0.12 \\times 25\\% = \\mathbf{0.03}$[cite: 12]</li>
+        <li>EPS Ratio: $\\frac{8}{40} = 0.20 \\times 50\\% = \\mathbf{0.10}$[cite: 12]</li>
+        <li>Market Price Ratio: $\\frac{32}{400} = 0.08 \\times 25\\% = \\mathbf{0.02}$[cite: 12]</li>
+        <li>$$\\text{Weighted Swap Ratio} = 0.03 + 0.10 + 0.02 = \\mathbf{0.15 \\text{ shares of Abhiman for 1 of Abhishek}}$$[cite: 12]</li>
+        <li>New shares issued to Abhishek Ltd. $= 10 \\text{ lakhs} \\times 0.15 = \\mathbf{1.50 \\text{ lakh shares}}$[cite: 12]</li>
+        <li>Total post-merger shares $= 2.00 + 1.50 = \\mathbf{3.50 \\text{ lakh shares}}$[cite: 12]</li>
       </ul>
 
       <h4>(b) Post-Merger Book Value, EPS, and Market Price</h4>
       <ul>
-        <li>$$\text{Book Value per share} = \frac{₹ 1,000 \text{ lakhs} + ₹ 600 \text{ lakhs}}{3.50 \text{ lakh shares}} = \frac{₹ 1,600 \text{ lakhs}}{3.50 \text{ lakhs}} = \mathbf{₹ 457.14}$$[cite: 12]</li>
-        <li>$$\text{Post-Merger EPS} = \frac{₹ 80 \text{ lakhs} + ₹ 80 \text{ lakhs}}{3.50 \text{ lakh shares}} = \frac{₹ 160 \text{ lakhs}}{3.50 \text{ lakhs}} = \mathbf{₹ 45.71 \text{ per share}}$$[cite: 12]</li>
-        <li>$$\text{Expected Market Price (P/E = 10)} = ₹ 45.71 \times 10 = \mathbf{₹ 457.10}$$[cite: 12]</li>
+        <li>$$\\text{Book Value per share} = \\frac{₹ 1,000 \\text{ lakhs} + ₹ 600 \\text{ lakhs}}{3.50 \\text{ lakh shares}} = \\frac{₹ 1,600 \\text{ lakhs}}{3.50 \\text{ lakhs}} = \\mathbf{₹ 457.14}$$[cite: 12]</li>
+        <li>$$\\text{Post-Merger EPS} = \\frac{₹ 80 \\text{ lakhs} + ₹ 80 \\text{ lakhs}}{3.50 \\text{ lakh shares}} = \\frac{₹ 160 \\text{ lakhs}}{3.50 \\text{ lakhs}} = \\mathbf{₹ 45.71 \\text{ per share}}$$[cite: 12]</li>
+        <li>$$\\text{Expected Market Price (P/E = 10)} = ₹ 45.71 \\times 10 = \\mathbf{₹ 457.10}$$[cite: 12]</li>
       </ul>
 
       <h4>(c) Ownership, Free Float, and Capital Restructuring</h4>
       <ul>
         <li><strong>(i) Promoters' Revised Holding:</strong>
-          <br />$$\text{Promoters' Shares} = (50\% \times 2\text{L}) + (60\% \times 10\text{L} \times 0.15) = 1.00 + 0.90 = \mathbf{1.90 \text{ lakh shares}}$$[cite: 12]
-          <br />$$\text{Promoter's Holding \%} = \frac{1.90 \text{ lakhs}}{3.50 \text{ lakhs}} \times 100 = \mathbf{54.29\%}$$[cite: 12]
+          <br />$$\\text{Promoters' Shares} = (50\\% \\times 2\\text{L}) + (60\\% \\times 10\\text{L} \\times 0.15) = 1.00 + 0.90 = \\mathbf{1.90 \\text{ lakh shares}}$$[cite: 12]
+          <br />$$\\text{Promoter's Holding \\%} = \\frac{1.90 \\text{ lakhs}}{3.50 \\text{ lakhs}} \\times 100 = \\mathbf{54.29\\%}$$[cite: 12]
         </li>
         <li><strong>(ii) Free Float Market Capitalization:</strong>
-          <br />$$\text{Free Float Shares} = 3.50 - 1.90 = \mathbf{1.60 \text{ lakh shares}}$$[cite: 12]
-          <br />$$\text{Free Float Market Cap} = 1.60 \text{ lakh shares} \times ₹ 457.10 = \mathbf{₹ 731.36 \text{ lakhs}}$$[cite: 12]
+          <br />$$\\text{Free Float Shares} = 3.50 - 1.90 = \\mathbf{1.60 \\text{ lakh shares}}$$[cite: 12]
+          <br />$$\\text{Free Float Market Cap} = 1.60 \\text{ lakh shares} \\times ₹ 457.10 = \\mathbf{₹ 731.36 \\text{ lakhs}}$$[cite: 12]
         </li>
         <li><strong>(iii) Impact of 1 : 2 Bonus Issue Followed by Stock Split to ₹ 5:</strong>
-          <br />After 1 : 2 Bonus issue: Shares $= 3.50 \times 1.5 = \mathbf{5.25 \text{ lakh shares of ₹ 100 each}}$[cite: 12]
-          <br />After stock split to ₹ 5 par: Shares $= 5.25 \text{ lakhs} \times \frac{₹ 100}{₹ 5} = \mathbf{105.00 \text{ lakh shares}}$[cite: 12]
-          <br />$$\text{New EPS} = \frac{₹ 160 \text{ lakhs}}{105 \text{ lakh shares}} = \mathbf{₹ 1.524 \approx ₹ 1.523}$$[cite: 12]
-          <br />$$\text{New Book Value per share} = \frac{₹ 1,600 \text{ lakhs}}{105 \text{ lakh shares}} = \mathbf{₹ 15.238}$$[cite: 12]
+          <br />After 1 : 2 Bonus issue: Shares $= 3.50 \\times 1.5 = \\mathbf{5.25 \\text{ lakh shares of ₹ 100 each}}$[cite: 12]
+          <br />After stock split to ₹ 5 par: Shares $= 5.25 \\text{ lakhs} \\times \\frac{₹ 100}{₹ 5} = \\mathbf{105.00 \\text{ lakh shares}}$[cite: 12]
+          <br />$$\\text{New EPS} = \\frac{₹ 160 \\text{ lakhs}}{105 \\text{ lakh shares}} = \\mathbf{₹ 1.524 \\approx ₹ 1.523}$$[cite: 12]
+          <br />$$\\text{New Book Value per share} = \\frac{₹ 1,600 \\text{ lakhs}}{105 \\text{ lakh shares}} = \\mathbf{₹ 15.238}$$[cite: 12]
         </li>
       </ul>
     `
@@ -16007,20 +16007,20 @@ const icaibookData = [
     solution_html: `
       <h4>1. Pre-Acquisition Standalone Data of T Ltd.</h4>
       <ul>
-        <li>$$\text{Pre-Acquisition Interest} = 10\% \times ₹ 580 \text{ lakhs} = ₹ 58.00 \text{ lakhs}$$[cite: 12]</li>
-        <li>$$\text{PBT} = ₹ 400.86 - ₹ 58.00 = ₹ 342.86 \text{ lakhs}$$[cite: 12]</li>
-        <li>$$\text{PAT} = ₹ 342.86 \times (1 - 0.30) = ₹ 240.00 \text{ lakhs}$$[cite: 12]</li>
-        <li>$$\text{Pre-Acquisition EPS} = \frac{₹ 240.00 \text{ lakhs}}{12.00 \text{ lakh shares}} = \mathbf{₹ 20.00}$$[cite: 12]</li>
-        <li>$$\text{Pre-Acquisition P/E Ratio} = \frac{₹ 220.00}{₹ 20.00} = \mathbf{11 \text{ times}}$$[cite: 12]</li>
+        <li>$$\\text{Pre-Acquisition Interest} = 10\\% \\times ₹ 580 \\text{ lakhs} = ₹ 58.00 \\text{ lakhs}$$[cite: 12]</li>
+        <li>$$\\text{PBT} = ₹ 400.86 - ₹ 58.00 = ₹ 342.86 \\text{ lakhs}$$[cite: 12]</li>
+        <li>$$\\text{PAT} = ₹ 342.86 \\times (1 - 0.30) = ₹ 240.00 \\text{ lakhs}$$[cite: 12]</li>
+        <li>$$\\text{Pre-Acquisition EPS} = \\frac{₹ 240.00 \\text{ lakhs}}{12.00 \\text{ lakh shares}} = \\mathbf{₹ 20.00}$$[cite: 12]</li>
+        <li>$$\\text{Pre-Acquisition P/E Ratio} = \\frac{₹ 220.00}{₹ 20.00} = \\mathbf{11 \\text{ times}}$$[cite: 12]</li>
       </ul>
 
       <h4>2. Combined Post-Acquisition Operating Earnings (PAT)</h4>
       <ul>
-        <li>Combined EBIDAT $= ₹ 400.86 + ₹ 115.71 = ₹ 516.57 \text{ lakhs}$[cite: 12]</li>
-        <li>Less: Total Interest $[₹ 58.00\text{L} + (12.5\% \times ₹ 240\text{L} = ₹ 30.00\text{L})] = (₹ 88.00 \text{ lakhs})$[cite: 12]</li>
-        <li>Combined PBT $= ₹ 516.57 - ₹ 88.00 = ₹ 428.57 \text{ lakhs}$[cite: 12]</li>
-        <li>Less: Tax @ 30% $= (₹ 128.57 \text{ lakhs})$[cite: 12]</li>
-        <li>$$\text{Combined Net Profit After Tax (NPAT)} = \mathbf{₹ 300.00 \text{ lakhs}}$$[cite: 12]</li>
+        <li>Combined EBIDAT $= ₹ 400.86 + ₹ 115.71 = ₹ 516.57 \\text{ lakhs}$[cite: 12]</li>
+        <li>Less: Total Interest $[₹ 58.00\\text{L} + (12.5\\% \\times ₹ 240\\text{L} = ₹ 30.00\\text{L})] = (₹ 88.00 \\text{ lakhs})$[cite: 12]</li>
+        <li>Combined PBT $= ₹ 516.57 - ₹ 88.00 = ₹ 428.57 \\text{ lakhs}$[cite: 12]</li>
+        <li>Less: Tax @ 30% $= (₹ 128.57 \\text{ lakhs})$[cite: 12]</li>
+        <li>$$\\text{Combined Net Profit After Tax (NPAT)} = \\mathbf{₹ 300.00 \\text{ lakhs}}$$[cite: 12]</li>
       </ul>
 
       <h4>3. Comparative Evaluation of Proposals</h4>
@@ -16036,28 +16036,28 @@ const icaibookData = [
           <tbody>
             <tr>
               <td>(i) Net Consideration Payable</td>
-              <td style="text-align:right;">$(7 \times 115.71) - 240 = \mathbf{₹ 569.97 \text{ lakhs}}$[cite: 12]</td>
-              <td style="text-align:right;">$6\text{L shares} \times ₹ 110 = \mathbf{₹ 660.00 \text{ lakhs}}$[cite: 12]</td>
+              <td style="text-align:right;">$(7 \\times 115.71) - 240 = \\mathbf{₹ 569.97 \\text{ lakhs}}$[cite: 12]</td>
+              <td style="text-align:right;">$6\\text{L shares} \\times ₹ 110 = \\mathbf{₹ 660.00 \\text{ lakhs}}$[cite: 12]</td>
             </tr>
             <tr>
               <td>(ii) Shares Issued by T Ltd. (@ ₹ 220)</td>
-              <td style="text-align:right;">$\frac{₹ 569.97\text{L}}{₹ 220} = \mathbf{2,59,000 \text{ shares}}$[cite: 12]</td>
-              <td style="text-align:right;">$\frac{₹ 660.00\text{L}}{₹ 220} = \mathbf{3,00,000 \text{ shares}}$[cite: 12]</td>
+              <td style="text-align:right;">$\\frac{₹ 569.97\\text{L}}{₹ 220} = \\mathbf{2,59,000 \\text{ shares}}$[cite: 12]</td>
+              <td style="text-align:right;">$\\frac{₹ 660.00\\text{L}}{₹ 220} = \\mathbf{3,00,000 \\text{ shares}}$[cite: 12]</td>
             </tr>
             <tr>
               <td>Total Shares Post-Merger</td>
-              <td style="text-align:right;">$12.00\text{L} + 2.59\text{L} = \mathbf{14.59 \text{ lakh shares}}$[cite: 12]</td>
-              <td style="text-align:right;">$12.00\text{L} + 3.00\text{L} = \mathbf{15.00 \text{ lakh shares}}$[cite: 12]</td>
+              <td style="text-align:right;">$12.00\\text{L} + 2.59\\text{L} = \\mathbf{14.59 \\text{ lakh shares}}$[cite: 12]</td>
+              <td style="text-align:right;">$12.00\\text{L} + 3.00\\text{L} = \\mathbf{15.00 \\text{ lakh shares}}$[cite: 12]</td>
             </tr>
             <tr>
               <td>(iii) Post-Merger EPS of T Ltd.</td>
-              <td style="text-align:right;">$\frac{₹ 300\text{L}}{14.59\text{L}} = \mathbf{₹ 20.56}$[cite: 12]</td>
-              <td style="text-align:right;">$\frac{₹ 300\text{L}}{15.00\text{L}} = \mathbf{₹ 20.00}$[cite: 12]</td>
+              <td style="text-align:right;">$\\frac{₹ 300\\text{L}}{14.59\\text{L}} = \\mathbf{₹ 20.56}$[cite: 12]</td>
+              <td style="text-align:right;">$\\frac{₹ 300\\text{L}}{15.00\\text{L}} = \\mathbf{₹ 20.00}$[cite: 12]</td>
             </tr>
             <tr>
               <td>(iv) Expected Market Price (P/E = 11)</td>
-              <td style="text-align:right;">$₹ 20.56 \times 11 = \mathbf{₹ 226.16}$[cite: 12]</td>
-              <td style="text-align:right;">$₹ 20.00 \times 11 = \mathbf{₹ 220.00}$[cite: 12]</td>
+              <td style="text-align:right;">$₹ 20.56 \\times 11 = \\mathbf{₹ 226.16}$[cite: 12]</td>
+              <td style="text-align:right;">$₹ 20.00 \\times 11 = \\mathbf{₹ 220.00}$[cite: 12]</td>
             </tr>
           </tbody>
         </table>
@@ -16105,27 +16105,27 @@ const icaibookData = [
     solution_html: `
       <h4>1. Share Entitlement Ratio of Fortune Pharma Ltd.</h4>
       <ul>
-        <li>$$\text{Estimated EPS of Fortune Pharma Ltd.} = \frac{\text{Market Price}}{\text{P/E Ratio}} = \frac{₹ 24.50}{25} = \mathbf{₹ 0.98}$$[cite: 12]</li>
-        <li>$$\text{Number of Shares to be Issued} = \frac{\text{Estimated Profit}}{\text{EPS}} = \frac{₹ 1,470 \text{ lakhs}}{₹ 0.98} = \mathbf{1,500 \text{ lakh shares}}$$[cite: 12]</li>
-        <li>$$\text{Share Entitlement Ratio} = \frac{1,500 \text{ lakh shares of Fortune Pharma}}{3,000 \text{ lakh shares of Fortune India}} = \mathbf{0.50 : 1}$$[cite: 12]</li>
+        <li>$$\\text{Estimated EPS of Fortune Pharma Ltd.} = \\frac{\\text{Market Price}}{\\text{P/E Ratio}} = \\frac{₹ 24.50}{25} = \\mathbf{₹ 0.98}$$[cite: 12]</li>
+        <li>$$\\text{Number of Shares to be Issued} = \\frac{\\text{Estimated Profit}}{\\text{EPS}} = \\frac{₹ 1,470 \\text{ lakhs}}{₹ 0.98} = \\mathbf{1,500 \\text{ lakh shares}}$$[cite: 12]</li>
+        <li>$$\\text{Share Entitlement Ratio} = \\frac{1,500 \\text{ lakh shares of Fortune Pharma}}{3,000 \\text{ lakh shares of Fortune India}} = \\mathbf{0.50 : 1}$$[cite: 12]</li>
       </ul>
       <p>Fortune India shareholders receive <strong>1 share of Fortune Pharma Ltd. for every 2 shares held</strong> (or 0.50 share per 1 share)[cite: 12].</p>
 
       <h4>2. Expected Market Price of Fortune India (FMCG) Ltd.</h4>
       <ul>
-        <li>$$\text{Estimated EPS of FMCG Business} = \frac{₹ 11,400 \text{ lakhs}}{3,000 \text{ lakh shares}} = \mathbf{₹ 3.80}$$[cite: 12]</li>
-        <li>$$\text{Expected Market Price} = \text{EPS} \times \text{P/E} = ₹ 3.80 \times 42 = \mathbf{₹ 159.60 \text{ per share}}$$[cite: 12]</li>
+        <li>$$\\text{Estimated EPS of FMCG Business} = \\frac{₹ 11,400 \\text{ lakhs}}{3,000 \\text{ lakh shares}} = \\mathbf{₹ 3.80}$$[cite: 12]</li>
+        <li>$$\\text{Expected Market Price} = \\text{EPS} \\times \\text{P/E} = ₹ 3.80 \\times 42 = \\mathbf{₹ 159.60 \\text{ per share}}$$[cite: 12]</li>
       </ul>
 
       <h4>3. Book Value Per Share Post-Demerger</h4>
       <ul>
         <li><strong>Fortune Pharma Ltd.:</strong>
-          <br />$$\text{Net Worth} = \text{Assets} - \text{Outside Liabilities} = ₹ 25,100 - ₹ 4,100 = \mathbf{₹ 21,000 \text{ lakhs}}$$[cite: 12]
-          <br />$$\text{Book Value per Share} = \frac{₹ 21,000 \text{ lakhs}}{1,500 \text{ lakh shares}} = \mathbf{₹ 14.00}$$[cite: 12]
+          <br />$$\\text{Net Worth} = \\text{Assets} - \\text{Outside Liabilities} = ₹ 25,100 - ₹ 4,100 = \\mathbf{₹ 21,000 \\text{ lakhs}}$$[cite: 12]
+          <br />$$\\text{Book Value per Share} = \\frac{₹ 21,000 \\text{ lakhs}}{1,500 \\text{ lakh shares}} = \\mathbf{₹ 14.00}$$[cite: 12]
         </li>
         <li><strong>Fortune India (FMCG) Ltd.:</strong>
-          <br />$$\text{Net Worth} = (₹ 70,000 - ₹ 25,100) - (₹ 25,000 - ₹ 4,100) = ₹ 44,900 - ₹ 20,900 = \mathbf{₹ 24,000 \text{ lakhs}}$$[cite: 12]
-          <br />$$\text{Book Value per Share} = \frac{₹ 24,000 \text{ lakhs}}{3,000 \text{ lakh shares}} = \mathbf{₹ 8.00}$$[cite: 12]
+          <br />$$\\text{Net Worth} = (₹ 70,000 - ₹ 25,100) - (₹ 25,000 - ₹ 4,100) = ₹ 44,900 - ₹ 20,900 = \\mathbf{₹ 24,000 \\text{ lakhs}}$$[cite: 12]
+          <br />$$\\text{Book Value per Share} = \\frac{₹ 24,000 \\text{ lakhs}}{3,000 \\text{ lakh shares}} = \\mathbf{₹ 8.00}$$[cite: 12]
         </li>
       </ul>
     `
@@ -16163,24 +16163,24 @@ const icaibookData = [
       <h4>(i) Net Asset Value per Share</h4>
       <ul>
         <li><strong>H Ltd. (3.50 crore shares):</strong>
-          $$\text{Net Assets} = \frac{₹ 1,300 \text{ cr} - ₹ 300 \text{ cr (Contingent Liability)}}{3.50 \text{ crore shares}} = \frac{₹ 1,000 \text{ cr}}{3.50} = \mathbf{₹ 285.71}$$[cite: 12]
+          $$\\text{Net Assets} = \\frac{₹ 1,300 \\text{ cr} - ₹ 300 \\text{ cr (Contingent Liability)}}{3.50 \\text{ crore shares}} = \\frac{₹ 1,000 \\text{ cr}}{3.50} = \\mathbf{₹ 285.71}$$[cite: 12]
         </li>
         <li><strong>B Ltd. (0.65 crore shares):</strong>
-          $$\text{Net Assets} = \frac{₹ 31.50 \text{ cr}}{0.65 \text{ crore shares}} = \mathbf{₹ 48.46}$$[cite: 12]
+          $$\\text{Net Assets} = \\frac{₹ 31.50 \\text{ cr}}{0.65 \\text{ crore shares}} = \\mathbf{₹ 48.46}$$[cite: 12]
         </li>
       </ul>
 
       <h4>(ii) Earnings Capitalization Value per Share (@ 8%)</h4>
       <ul>
-        <li><strong>H Ltd.:</strong> $\frac{₹ 300 \text{ cr} / 0.08}{3.50 \text{ cr shares}} = \frac{₹ 3,750 \text{ cr}}{3.50} = \mathbf{₹ 1,071.43}$[cite: 12]</li>
-        <li><strong>B Ltd.:</strong> $\frac{₹ 10 \text{ cr} / 0.08}{0.65 \text{ cr shares}} = \frac{₹ 125 \text{ cr}}{0.65} = \mathbf{₹ 192.31}$[cite: 12]</li>
+        <li><strong>H Ltd.:</strong> $\\frac{₹ 300 \\text{ cr} / 0.08}{3.50 \\text{ cr shares}} = \\frac{₹ 3,750 \\text{ cr}}{3.50} = \\mathbf{₹ 1,071.43}$[cite: 12]</li>
+        <li><strong>B Ltd.:</strong> $\\frac{₹ 10 \\text{ cr} / 0.08}{0.65 \\text{ cr shares}} = \\frac{₹ 125 \\text{ cr}}{0.65} = \\mathbf{₹ 192.31}$[cite: 12]</li>
       </ul>
 
       <h4>(iii) Fair Value per Share and Exchange Ratio</h4>
       <ul>
-        <li>$$\text{Fair Value of H Ltd.} = \frac{(₹ 285.71 \times 1) + (₹ 1,071.43 \times 3)}{4} = \mathbf{₹ 875.00}$$[cite: 12]</li>
-        <li>$$\text{Fair Value of B Ltd.} = \frac{(₹ 48.46 \times 1) + (₹ 192.31 \times 3)}{4} = \mathbf{₹ 156.3475}$$[cite: 12]</li>
-        <li>$$\text{Exchange Ratio} = \frac{₹ 156.3475}{₹ 875.00} = \mathbf{0.1787 \text{ shares of H Ltd. for 1 share of B Ltd.}}$$[cite: 12]</li>
+        <li>$$\\text{Fair Value of H Ltd.} = \\frac{(₹ 285.71 \\times 1) + (₹ 1,071.43 \\times 3)}{4} = \\mathbf{₹ 875.00}$$[cite: 12]</li>
+        <li>$$\\text{Fair Value of B Ltd.} = \\frac{(₹ 48.46 \\times 1) + (₹ 192.31 \\times 3)}{4} = \\mathbf{₹ 156.3475}$$[cite: 12]</li>
+        <li>$$\\text{Exchange Ratio} = \\frac{₹ 156.3475}{₹ 875.00} = \\mathbf{0.1787 \\text{ shares of H Ltd. for 1 share of B Ltd.}}$$[cite: 12]</li>
       </ul>
     `
   },
@@ -16219,21 +16219,21 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Pre-Merger Market Value of Each Company</h4>
       <ul>
-        <li>$$\text{RIL: } \text{MPS} = ₹ 2.00 \times 10 = ₹ 20 \implies \text{Market Value} = 10,00,000 \times ₹ 20 = \mathbf{₹ 2,00,00,000}$$[cite: 12]</li>
-        <li>$$\text{SIL: } \text{MPS} = ₹ 1.00 \times 5 = ₹ 5 \implies \text{Market Value} = 10,00,000 \times ₹ 5 = \mathbf{₹ 50,00,000}$$[cite: 12]</li>
+        <li>$$\\text{RIL: } \\text{MPS} = ₹ 2.00 \\times 10 = ₹ 20 \\implies \\text{Market Value} = 10,00,000 \\times ₹ 20 = \\mathbf{₹ 2,00,00,000}$$[cite: 12]</li>
+        <li>$$\\text{SIL: } \\text{MPS} = ₹ 1.00 \\times 5 = ₹ 5 \\implies \\text{Market Value} = 10,00,000 \\times ₹ 5 = \\mathbf{₹ 50,00,000}$$[cite: 12]</li>
       </ul>
 
       <h4>(ii) Post-Merger Position Without Synergy (1 : 4 Ratio)</h4>
       <ul>
-        <li>Shares issued to SIL: $\frac{10,00,000}{4} = \mathbf{2,50,000 \text{ shares}}$[cite: 12]</li>
-        <li>Total post-merger shares $= 10,00,000 + 2,50,000 = \mathbf{12,50,000 \text{ shares}}$[cite: 12]</li>
-        <li>$$\text{Combined Earnings} = ₹ 20,00,000 + ₹ 10,00,000 = ₹ 30,00,000 \implies \text{EPS} = \frac{₹ 30,00,000}{12,50,000} = \mathbf{₹ 2.40}$$[cite: 12]</li>
-        <li>$$\text{Post-Merger Share Price (P/E = 10)} = ₹ 2.40 \times 10 = \mathbf{₹ 24.00}$$[cite: 12]</li>
-        <li>$$\text{Total Post-Merger Market Value} = 12,50,000 \times ₹ 24.00 = \mathbf{₹ 3,00,00,000}$$[cite: 12]</li>
+        <li>Shares issued to SIL: $\\frac{10,00,000}{4} = \\mathbf{2,50,000 \\text{ shares}}$[cite: 12]</li>
+        <li>Total post-merger shares $= 10,00,000 + 2,50,000 = \\mathbf{12,50,000 \\text{ shares}}$[cite: 12]</li>
+        <li>$$\\text{Combined Earnings} = ₹ 20,00,000 + ₹ 10,00,000 = ₹ 30,00,000 \\implies \\text{EPS} = \\frac{₹ 30,00,000}{12,50,000} = \\mathbf{₹ 2.40}$$[cite: 12]</li>
+        <li>$$\\text{Post-Merger Share Price (P/E = 10)} = ₹ 2.40 \\times 10 = \\mathbf{₹ 24.00}$$[cite: 12]</li>
+        <li>$$\\text{Total Post-Merger Market Value} = 12,50,000 \\times ₹ 24.00 = \\mathbf{₹ 3,00,00,000}$$[cite: 12]</li>
         <li><strong>Apportionment of Wealth:</strong>
           <ul>
-            <li>RIL Shareholders: $10,00,000 \times ₹ 24 = ₹ 2,40,00,000$ (Gain of <strong>+₹ 40,00,000</strong>)[cite: 12]</li>
-            <li>SIL Shareholders: $2,50,000 \times ₹ 24 = ₹ 60,00,000$ (Gain of <strong>+₹ 10,00,000</strong>)[cite: 12]</li>
+            <li>RIL Shareholders: $10,00,000 \\times ₹ 24 = ₹ 2,40,00,000$ (Gain of <strong>+₹ 40,00,000</strong>)[cite: 12]</li>
+            <li>SIL Shareholders: $2,50,000 \\times ₹ 24 = ₹ 60,00,000$ (Gain of <strong>+₹ 10,00,000</strong>)[cite: 12]</li>
           </ul>
         </li>
       </ul>
@@ -16241,9 +16241,9 @@ const icaibookData = [
 
       <h4>(iii) Post-Merger Position With 20% Synergy Gains</h4>
       <ul>
-        <li>$$\text{Synergistic Earnings} = ₹ 30,00,000 \times 1.20 = \mathbf{₹ 36,00,000}$$[cite: 12]</li>
-        <li>$$\text{New Post-Merger EPS} = \frac{₹ 36,00,000}{12,50,000} = \mathbf{₹ 2.88}$$[cite: 12]</li>
-        <li>$$\text{New Post-Merger Share Price} = ₹ 2.88 \times 10 = \mathbf{₹ 28.80}$$[cite: 12]</li>
+        <li>$$\\text{Synergistic Earnings} = ₹ 30,00,000 \\times 1.20 = \\mathbf{₹ 36,00,000}$$[cite: 12]</li>
+        <li>$$\\text{New Post-Merger EPS} = \\frac{₹ 36,00,000}{12,50,000} = \\mathbf{₹ 2.88}$$[cite: 12]</li>
+        <li>$$\\text{New Post-Merger Share Price} = ₹ 2.88 \\times 10 = \\mathbf{₹ 28.80}$$[cite: 12]</li>
       </ul>
       <p>Shareholders are <strong>significantly better off</strong> (RIL price reaches ₹ 28.80 vs. ₹ 20.00 pre-merger)[cite: 12].</p>
     `
@@ -16266,30 +16266,30 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Increase in Total Value of BCD Ltd.</h4>
       <ul>
-        <li>$$K_e \text{ of BCD Ltd.} = \frac{D_1}{P_0} + g = \frac{₹ 0.60}{₹ 20} + 0.07 = 0.03 + 0.07 = \mathbf{10.00\%}$$[cite: 12]</li>
-        <li>$$\text{New Value per Share with } g = 8\% = \frac{₹ 0.60}{0.10 - 0.08} = \frac{₹ 0.60}{0.02} = \mathbf{₹ 30.00}$$[cite: 12]</li>
-        <li>$$\text{Increase in Total Value} = 5,00,000 \text{ shares} \times (₹ 30 - ₹ 20) = \mathbf{₹ 50,00,000}$$[cite: 12]</li>
+        <li>$$K_e \\text{ of BCD Ltd.} = \\frac{D_1}{P_0} + g = \\frac{₹ 0.60}{₹ 20} + 0.07 = 0.03 + 0.07 = \\mathbf{10.00\\%}$$[cite: 12]</li>
+        <li>$$\\text{New Value per Share with } g = 8\\% = \\frac{₹ 0.60}{0.10 - 0.08} = \\frac{₹ 0.60}{0.02} = \\mathbf{₹ 30.00}$$[cite: 12]</li>
+        <li>$$\\text{Increase in Total Value} = 5,00,000 \\text{ shares} \\times (₹ 30 - ₹ 20) = \\mathbf{₹ 50,00,000}$$[cite: 12]</li>
       </ul>
 
       <h4>(ii) Gain / Loss Under 1 : 4 Share Exchange Ratio</h4>
       <ul>
-        <li>New shares issued by AFC Ltd. $= \frac{5,00,000}{4} = \mathbf{1,25,000 \text{ shares}}$ ($1.25 \text{ lakhs}$)[cite: 12]</li>
-        <li>Total shares in combined entity $= 10.00 + 1.25 = \mathbf{11.25 \text{ lakh shares}}$[cite: 12]</li>
-        <li>$$\text{Combined Entity Value} = (10\text{L} \times ₹ 100) + (5\text{L} \times ₹ 30) = ₹ 1,000\text{L} + ₹ 150\text{L} = \mathbf{₹ 1,150 \text{ lakhs}}$$[cite: 12]</li>
-        <li>$$\text{New Price per Share} = \frac{₹ 1,150 \text{ lakhs}}{11.25 \text{ lakh shares}} = \mathbf{₹ 102.22}$$[cite: 12]</li>
-        <li><strong>Gain to BCD Ltd. Shareholders:</strong> $₹ 102.22 - (4 \times ₹ 20) = \mathbf{+₹ 22.22 \text{ per 4 shares}}$ (or ₹ 5.56 per share)[cite: 12]</li>
-        <li><strong>Gain to AFC Ltd. Shareholders:</strong> $₹ 102.22 - ₹ 100.00 = \mathbf{+₹ 2.22 \text{ per share}}$[cite: 12]</li>
+        <li>New shares issued by AFC Ltd. $= \\frac{5,00,000}{4} = \\mathbf{1,25,000 \\text{ shares}}$ ($1.25 \\text{ lakhs}$)[cite: 12]</li>
+        <li>Total shares in combined entity $= 10.00 + 1.25 = \\mathbf{11.25 \\text{ lakh shares}}$[cite: 12]</li>
+        <li>$$\\text{Combined Entity Value} = (10\\text{L} \\times ₹ 100) + (5\\text{L} \\times ₹ 30) = ₹ 1,000\\text{L} + ₹ 150\\text{L} = \\mathbf{₹ 1,150 \\text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\\text{New Price per Share} = \\frac{₹ 1,150 \\text{ lakhs}}{11.25 \\text{ lakh shares}} = \\mathbf{₹ 102.22}$$[cite: 12]</li>
+        <li><strong>Gain to BCD Ltd. Shareholders:</strong> $₹ 102.22 - (4 \\times ₹ 20) = \\mathbf{+₹ 22.22 \\text{ per 4 shares}}$ (or ₹ 5.56 per share)[cite: 12]</li>
+        <li><strong>Gain to AFC Ltd. Shareholders:</strong> $₹ 102.22 - ₹ 100.00 = \\mathbf{+₹ 2.22 \\text{ per share}}$[cite: 12]</li>
       </ul>
 
       <h4>(iii) Gain Under ₹ 22 Cash Buyout per Share</h4>
       <ul>
-        <li>Earnings acquired from BCD Ltd. ($5,00,000 \times ₹ 2.50$) $= ₹ 12,50,000$[cite: 12]</li>
-        <li>Less: Opportunity cost of cash paid ($5,00,000 \times ₹ 22 \times 10\%$) $= (₹ 11,00,000)$[cite: 12]</li>
+        <li>Earnings acquired from BCD Ltd. ($5,00,000 \\times ₹ 2.50$) $= ₹ 12,50,000$[cite: 12]</li>
+        <li>Less: Opportunity cost of cash paid ($5,00,000 \\times ₹ 22 \\times 10\\%$) $= (₹ 11,00,000)$[cite: 12]</li>
         <li>Net incremental earnings to AFC Ltd. $= ₹ 1,50,000$[cite: 12]</li>
-        <li>$$\text{Increase in EPS of AFC Ltd.} = \frac{₹ 1,50,00,000 \times 10^{-2}}{10,00,000} = \mathbf{₹ 0.15}$$[cite: 12]</li>
-        <li>$$\text{P/E Ratio of AFC Ltd.} = \frac{₹ 100}{₹ 8} = \mathbf{12.50 \text{ times}}$$[cite: 12]</li>
-        <li><strong>Gain per Share to AFC Ltd. Shareholders:</strong> $₹ 0.15 \times 12.50 = \mathbf{+₹ 1.88 \text{ per share}}$[cite: 12]</li>
-        <li><strong>Gain per Share to BCD Ltd. Shareholders:</strong> $₹ 22.00 - ₹ 20.00 = \mathbf{+₹ 2.00 \text{ per share}}$[cite: 12]</li>
+        <li>$$\\text{Increase in EPS of AFC Ltd.} = \\frac{₹ 1,50,00,000 \\times 10^{-2}}{10,00,000} = \\mathbf{₹ 0.15}$$[cite: 12]</li>
+        <li>$$\\text{P/E Ratio of AFC Ltd.} = \\frac{₹ 100}{₹ 8} = \\mathbf{12.50 \\text{ times}}$$[cite: 12]</li>
+        <li><strong>Gain per Share to AFC Ltd. Shareholders:</strong> $₹ 0.15 \\times 12.50 = \\mathbf{+₹ 1.88 \\text{ per share}}$[cite: 12]</li>
+        <li><strong>Gain per Share to BCD Ltd. Shareholders:</strong> $₹ 22.00 - ₹ 20.00 = \\mathbf{+₹ 2.00 \\text{ per share}}$[cite: 12]</li>
       </ul>
     `
   },
@@ -16307,20 +16307,20 @@ const icaibookData = [
     solution_html: `
       <h4>(a) Total Business Value of XY Ltd.</h4>
       <ul>
-        <li>Issue Price of AB Ltd. $= \frac{₹ 570 + ₹ 430}{2} = \mathbf{₹ 500}$[cite: 12]</li>
-        <li>Net Asset Value (NAV) of XY Ltd. $= \mathbf{₹ 250.00 \text{ lakhs}}$[cite: 12]</li>
-        <li>$$\text{DCF Value} = (105 \times 0.93) + (120 \times 0.86) + (125 \times 0.79) + (120 \times 0.74) + (300 \times 0.68) = \mathbf{₹ 592.40 \text{ lakhs}}$$[cite: 12]</li>
-        <li>$$\text{Average Value of Business} = \frac{₹ 592.40 + ₹ 250.00}{2} = \mathbf{₹ 421.20 \text{ lakhs}}$$ (₹ 4,21,20,000)[cite: 12]</li>
+        <li>Issue Price of AB Ltd. $= \\frac{₹ 570 + ₹ 430}{2} = \\mathbf{₹ 500}$[cite: 12]</li>
+        <li>Net Asset Value (NAV) of XY Ltd. $= \\mathbf{₹ 250.00 \\text{ lakhs}}$[cite: 12]</li>
+        <li>$$\\text{DCF Value} = (105 \\times 0.93) + (120 \\times 0.86) + (125 \\times 0.79) + (120 \\times 0.74) + (300 \\times 0.68) = \\mathbf{₹ 592.40 \\text{ lakhs}}$$[cite: 12]</li>
+        <li>$$\\text{Average Value of Business} = \\frac{₹ 592.40 + ₹ 250.00}{2} = \\mathbf{₹ 421.20 \\text{ lakhs}}$$ (₹ 4,21,20,000)[cite: 12]</li>
       </ul>
 
       <h4>(b) Number of Shares Issued by AB Ltd.</h4>
-      <p>$$\text{Shares to Issue} = \frac{₹ 4,21,20,000}{₹ 500} = \mathbf{84,240 \text{ shares}}$$[cite: 12]</p>
+      <p>$$\\text{Shares to Issue} = \\frac{₹ 4,21,20,000}{₹ 500} = \\mathbf{84,240 \\text{ shares}}$$[cite: 12]</p>
 
       <h4>(c) Allocation to Shareholders</h4>
       <ul>
-        <li>Equivalent fully paid shares in XY Ltd. $= 20 \text{L} + (10\text{L} \times 0.5) = \mathbf{25 \text{ lakh shares}}$[cite: 12]</li>
-        <li>$$\text{Fully Paid Group} = 84,240 \times \frac{20}{25} = \mathbf{67,392 \text{ shares}}$$[cite: 12]</li>
-        <li>$$\text{Partly Paid Group} = 84,240 \times \frac{5}{25} = \mathbf{16,848 \text{ shares}}$$[cite: 12]</li>
+        <li>Equivalent fully paid shares in XY Ltd. $= 20 \\text{L} + (10\\text{L} \\times 0.5) = \\mathbf{25 \\text{ lakh shares}}$[cite: 12]</li>
+        <li>$$\\text{Fully Paid Group} = 84,240 \\times \\frac{20}{25} = \\mathbf{67,392 \\text{ shares}}$$[cite: 12]</li>
+        <li>$$\\text{Partly Paid Group} = 84,240 \\times \\frac{5}{25} = \\mathbf{16,848 \\text{ shares}}$$[cite: 12]</li>
       </ul>
     `
   },
@@ -16370,18 +16370,18 @@ const icaibookData = [
           </tbody>
         </table>
       </div>
-      <p>$$\text{Verification: } \text{EPS} = \text{ROE} \times \text{BVPS} \implies R: 22.21\% \times 12 = ₹ 2.665; \quad S: 15.60\% \times 10 = ₹ 1.560$$[cite: 12]</p>
+      <p>$$\\text{Verification: } \\text{EPS} = \\text{ROE} \\times \\text{BVPS} \\implies R: 22.21\\% \\times 12 = ₹ 2.665; \\quad S: 15.60\\% \\times 10 = ₹ 1.560$$[cite: 12]</p>
 
-      <h4>(ii) Future EPS Growth Rates ($g = \text{ROE} \times b$)</h4>
+      <h4>(ii) Future EPS Growth Rates ($g = \\text{ROE} \\times b$)</h4>
       <ul>
-        <li><strong>R Ltd.:</strong> Retention Ratio $b = 1 - 0.20 = 0.80 \implies g = 22.21\% \times 0.80 = \mathbf{17.77\% \text{ p.a.}}$[cite: 12]</li>
-        <li><strong>S Ltd.:</strong> Retention Ratio $b = 1 - 0.30 = 0.70 \implies g = 15.60\% \times 0.70 = \mathbf{10.92\% \text{ p.a.}}$[cite: 12]</li>
+        <li><strong>R Ltd.:</strong> Retention Ratio $b = 1 - 0.20 = 0.80 \\implies g = 22.21\\% \\times 0.80 = \\mathbf{17.77\\% \\text{ p.a.}}$[cite: 12]</li>
+        <li><strong>S Ltd.:</strong> Retention Ratio $b = 1 - 0.30 = 0.70 \\implies g = 15.60\\% \\times 0.70 = \\mathbf{10.92\\% \\text{ p.a.}}$[cite: 12]</li>
       </ul>
 
       <h4>(iii) Range of Exchange Ratios and Expected Settlement</h4>
       <ul>
-        <li>$$\text{Lower Limit (Current Market Price Ratio)} = \frac{\text{MPS}_S}{\text{MPS}_R} = \frac{₹ 20}{₹ 50} = \mathbf{0.40 : 1}$$[cite: 12]</li>
-        <li>$$\text{Upper Limit (Intrinsic Synergy Value Ratio)} = \frac{\text{Intrinsic Value}_S}{\text{MPS}_R} = \frac{₹ 25}{₹ 50} = \mathbf{0.50 : 1}$$[cite: 12]</li>
+        <li>$$\\text{Lower Limit (Current Market Price Ratio)} = \\frac{\\text{MPS}_S}{\\text{MPS}_R} = \\frac{₹ 20}{₹ 50} = \\mathbf{0.40 : 1}$$[cite: 12]</li>
+        <li>$$\\text{Upper Limit (Intrinsic Synergy Value Ratio)} = \\frac{\\text{Intrinsic Value}_S}{\\text{MPS}_R} = \\frac{₹ 25}{₹ 50} = \\mathbf{0.50 : 1}$$[cite: 12]</li>
       </ul>
       <p><strong>Observation:</strong> R Ltd. possesses superior EPS, higher ROE (22.21% vs. 15.60%), a stronger growth trajectory (17.77% vs. 10.92%), and a premium P/E multiple[cite: 12]. Consequently, R Ltd. holds superior bargaining leverage, and negotiated terms are expected to be <strong>closer to the lower limit (0.40 : 1)</strong>[cite: 12].</p>
     `
@@ -16431,32 +16431,32 @@ const icaibookData = [
         </table>
       </div>
 
-      <h4>(ii) Growth Rate in EPS ($g = \text{ROE} \times b$)</h4>
+      <h4>(ii) Growth Rate in EPS ($g = \\text{ROE} \\times b$)</h4>
       <ul>
-        <li><strong>BA Ltd.:</strong> $17.50\% \times (1 - 0.40) = \mathbf{10.50\% \text{ p.a.}}$[cite: 12]</li>
-        <li><strong>DA Ltd.:</strong> $12.375\% \times (1 - 0.60) = \mathbf{4.95\% \text{ p.a.}}$[cite: 12]</li>
+        <li><strong>BA Ltd.:</strong> $17.50\\% \\times (1 - 0.40) = \\mathbf{10.50\\% \\text{ p.a.}}$[cite: 12]</li>
+        <li><strong>DA Ltd.:</strong> $12.375\\% \\times (1 - 0.60) = \\mathbf{4.95\\% \\text{ p.a.}}$[cite: 12]</li>
       </ul>
 
       <h4>(iii) Range of Exchange Ratios</h4>
       <ul>
-        <li>$$\text{Lower Limit (Market Price)} = \frac{\text{MPS}_{DA}}{\text{MPS}_{BA}} = \frac{₹ 15}{₹ 40} = \mathbf{0.375 : 1}$$[cite: 12]</li>
-        <li>$$\text{Upper Limit (Intrinsic Value)} = \frac{₹ 20}{₹ 40} = \mathbf{0.500 : 1}$$[cite: 12]</li>
+        <li>$$\\text{Lower Limit (Market Price)} = \\frac{\\text{MPS}_{DA}}{\\text{MPS}_{BA}} = \\frac{₹ 15}{₹ 40} = \\mathbf{0.375 : 1}$$[cite: 12]</li>
+        <li>$$\\text{Upper Limit (Intrinsic Value)} = \\frac{₹ 20}{₹ 40} = \\mathbf{0.500 : 1}$$[cite: 12]</li>
       </ul>
       <p>Because BA Ltd. holds higher growth and profitability, the settlement will be <strong>closer to 0.375 : 1</strong>[cite: 12].</p>
 
       <h4>(iv) Post-Merger EPS and Accretion / Dilution (at 0.40 : 1 Ratio)</h4>
       <ul>
-        <li>Shares issued: $80,000 \times 0.40 = 32,000 \text{ shares} \implies \text{Total Shares} = \mathbf{1,32,000}$[cite: 12]</li>
-        <li>$$\text{Post-Merger EPS} = \frac{₹ 2,10,000 + ₹ 99,000}{1,32,000} = \frac{₹ 3,09,000}{1,32,000} = \mathbf{₹ 2.341}$$[cite: 12]</li>
-        <li><strong>BA Ltd. Shareholders:</strong> $₹ 2.341 - ₹ 2.100 = \mathbf{+₹ 0.241 \text{ (Accretion)}}$[cite: 12]</li>
-        <li><strong>DA Ltd. Shareholders:</strong> $(₹ 2.341 \times 0.40) - ₹ 1.2375 = ₹ 0.9364 - ₹ 1.2375 = \mathbf{-₹ 0.301 \text{ (Dilution)}}$[cite: 12]</li>
+        <li>Shares issued: $80,000 \\times 0.40 = 32,000 \\text{ shares} \\implies \\text{Total Shares} = \\mathbf{1,32,000}$[cite: 12]</li>
+        <li>$$\\text{Post-Merger EPS} = \\frac{₹ 2,10,000 + ₹ 99,000}{1,32,000} = \\frac{₹ 3,09,000}{1,32,000} = \\mathbf{₹ 2.341}$$[cite: 12]</li>
+        <li><strong>BA Ltd. Shareholders:</strong> $₹ 2.341 - ₹ 2.100 = \\mathbf{+₹ 0.241 \\text{ (Accretion)}}$[cite: 12]</li>
+        <li><strong>DA Ltd. Shareholders:</strong> $(₹ 2.341 \\times 0.40) - ₹ 1.2375 = ₹ 0.9364 - ₹ 1.2375 = \\mathbf{-₹ 0.301 \\text{ (Dilution)}}$[cite: 12]</li>
       </ul>
 
       <h4>(v) Post-Merger Market Price (P/E = 19.05 times)</h4>
       <ul>
-        <li>$$\text{New Market Price} = ₹ 2.341 \times 19.05 = \mathbf{₹ 44.60}$$[cite: 12]</li>
-        <li><strong>BA Ltd. Shareholders:</strong> $₹ 44.60 - ₹ 40.00 = \mathbf{+₹ 4.60 \text{ Accretion}}$[cite: 12]</li>
-        <li><strong>DA Ltd. Shareholders:</strong> $(₹ 44.60 \times 0.40) - ₹ 15.00 = ₹ 17.84 - ₹ 15.00 = \mathbf{+₹ 2.84 \text{ Accretion}}$[cite: 12]</li>
+        <li>$$\\text{New Market Price} = ₹ 2.341 \\times 19.05 = \\mathbf{₹ 44.60}$$[cite: 12]</li>
+        <li><strong>BA Ltd. Shareholders:</strong> $₹ 44.60 - ₹ 40.00 = \\mathbf{+₹ 4.60 \\text{ Accretion}}$[cite: 12]</li>
+        <li><strong>DA Ltd. Shareholders:</strong> $(₹ 44.60 \\times 0.40) - ₹ 15.00 = ₹ 17.84 - ₹ 15.00 = \\mathbf{+₹ 2.84 \\text{ Accretion}}$[cite: 12]</li>
       </ul>
     `
   },
@@ -16496,22 +16496,22 @@ const icaibookData = [
     solution_html: `
       <h4>1. Book Values per Share</h4>
       <ul>
-        <li>Weak Bank: $\text{Net Worth} = 150 + 80 - 50 = ₹ 180 \text{ lakhs} \implies \text{BVPS} = \frac{₹ 180\text{L}}{15\text{L}} = \mathbf{₹ 12.00}$[cite: 12]</li>
-        <li>Strong Bank: $\text{Net Worth} = 500 + 5,500 = ₹ 6,000 \text{ lakhs} \implies \text{BVPS} = \frac{₹ 6,000\text{L}}{50\text{L}} = \mathbf{₹ 120.00}$[cite: 12]</li>
+        <li>Weak Bank: $\\text{Net Worth} = 150 + 80 - 50 = ₹ 180 \\text{ lakhs} \\implies \\text{BVPS} = \\frac{₹ 180\\text{L}}{15\\text{L}} = \\mathbf{₹ 12.00}$[cite: 12]</li>
+        <li>Strong Bank: $\\text{Net Worth} = 500 + 5,500 = ₹ 6,000 \\text{ lakhs} \\implies \\text{BVPS} = \\frac{₹ 6,000\\text{L}}{50\\text{L}} = \\mathbf{₹ 120.00}$[cite: 12]</li>
       </ul>
 
       <h4>(a) Calculation of Weighted Swap Ratio</h4>
       <ul>
-        <li>Gross NPA Ratio: $\frac{5}{40} \times 30\% = \mathbf{0.0375}$[cite: 12]</li>
-        <li>CAR Ratio: $\frac{5}{16} \times 28\% = \mathbf{0.0875}$[cite: 12]</li>
-        <li>Market Price Ratio: $\frac{12}{96} \times 32\% = \mathbf{0.0400}$[cite: 12]</li>
-        <li>Book Value Ratio: $\frac{12}{120} \times 10\% = \mathbf{0.0100}$[cite: 12]</li>
-        <li>$$\text{Weighted Swap Ratio} = 0.0375 + 0.0875 + 0.0400 + 0.0100 = \mathbf{0.1750}$$[cite: 12]</li>
+        <li>Gross NPA Ratio: $\\frac{5}{40} \\times 30\\% = \\mathbf{0.0375}$[cite: 12]</li>
+        <li>CAR Ratio: $\\frac{5}{16} \\times 28\\% = \\mathbf{0.0875}$[cite: 12]</li>
+        <li>Market Price Ratio: $\\frac{12}{96} \\times 32\\% = \\mathbf{0.0400}$[cite: 12]</li>
+        <li>Book Value Ratio: $\\frac{12}{120} \\times 10\\% = \\mathbf{0.0100}$[cite: 12]</li>
+        <li>$$\\text{Weighted Swap Ratio} = 0.0375 + 0.0875 + 0.0400 + 0.0100 = \\mathbf{0.1750}$$[cite: 12]</li>
       </ul>
 
       <h4>(b) Shares to be Issued to Weak Bank</h4>
-      <p>$$\text{Shares Issued} = 15 \text{ lakh shares} \times 0.1750 = \mathbf{2.625 \text{ lakh shares (Nominal: ₹ 26.25 lakhs)}}$$[cite: 12]</p>
-      <p>$$\text{Capital Reserve Created} = \text{Net Worth Acquired} - \text{Nominal Share Capital} = ₹ 180.00\text{L} - ₹ 26.25\text{L} = \mathbf{₹ 153.75 \text{ lakhs}}$$[cite: 12]</p>
+      <p>$$\\text{Shares Issued} = 15 \\text{ lakh shares} \\times 0.1750 = \\mathbf{2.625 \\text{ lakh shares (Nominal: ₹ 26.25 lakhs)}}$$[cite: 12]</p>
+      <p>$$\\text{Capital Reserve Created} = \\text{Net Worth Acquired} - \\text{Nominal Share Capital} = ₹ 180.00\\text{L} - ₹ 26.25\\text{L} = \\mathbf{₹ 153.75 \\text{ lakhs}}$$[cite: 12]</p>
 
       <h4>(c) Balance Sheet of Strong Bank Post-Merger (₹ in Lakhs)</h4>
       <div style="overflow-x:auto;">
@@ -16540,14 +16540,14 @@ const icaibookData = [
       <h4>(d) Post-Merger Prudential Ratios</h4>
       <ul>
         <li><strong>Risk-Weighted Assets:</strong>
-          <br />Weak Bank: $\frac{₹ 180\text{L}}{0.05} = ₹ 3,600 \text{ lakhs}$; Strong Bank: $\frac{₹ 6,000\text{L}}{0.16} = ₹ 37,500 \text{ lakhs}$[cite: 12]
-          <br />$$\text{Combined RWA} = ₹ 3,600 + ₹ 37,500 = \mathbf{₹ 41,100 \text{ lakhs}}$$[cite: 12]
-          <br />$$\text{Post-Merger CAR} = \frac{₹ 6,180 \text{ lakhs}}{₹ 41,100 \text{ lakhs}} \times 100 = \mathbf{15.04\%}$$[cite: 12]
+          <br />Weak Bank: $\\frac{₹ 180\\text{L}}{0.05} = ₹ 3,600 \\text{ lakhs}$; Strong Bank: $\\frac{₹ 6,000\\text{L}}{0.16} = ₹ 37,500 \\text{ lakhs}$[cite: 12]
+          <br />$$\\text{Combined RWA} = ₹ 3,600 + ₹ 37,500 = \\mathbf{₹ 41,100 \\text{ lakhs}}$$[cite: 12]
+          <br />$$\\text{Post-Merger CAR} = \\frac{₹ 6,180 \\text{ lakhs}}{₹ 41,100 \\text{ lakhs}} \\times 100 = \\mathbf{15.04\\%}$$[cite: 12]
         </li>
         <li><strong>Gross NPA:</strong>
-          <br />Weak Bank: $40\% \times ₹ 3,500\text{L} = ₹ 1,400 \text{ lakhs}$; Strong Bank: $5\% \times ₹ 27,000\text{L} = ₹ 1,350 \text{ lakhs}$[cite: 12]
-          <br />$$\text{Combined GNPA} = ₹ 1,400 + ₹ 1,350 = \mathbf{₹ 2,750 \text{ lakhs}}$$[cite: 12]
-          <br />$$\text{Post-Merger Gross NPA \%} = \frac{₹ 2,750 \text{ lakhs}}{₹ 30,500 \text{ lakhs}} \times 100 = \mathbf{9.02\%}$$[cite: 12]
+          <br />Weak Bank: $40\\% \\times ₹ 3,500\\text{L} = ₹ 1,400 \\text{ lakhs}$; Strong Bank: $5\\% \\times ₹ 27,000\\text{L} = ₹ 1,350 \\text{ lakhs}$[cite: 12]
+          <br />$$\\text{Combined GNPA} = ₹ 1,400 + ₹ 1,350 = \\mathbf{₹ 2,750 \\text{ lakhs}}$$[cite: 12]
+          <br />$$\\text{Post-Merger Gross NPA \\%} = \\frac{₹ 2,750 \\text{ lakhs}}{₹ 30,500 \\text{ lakhs}} \\times 100 = \\mathbf{9.02\\%}$$[cite: 12]
         </li>
       </ul>
     `
@@ -16572,21 +16572,21 @@ const icaibookData = [
     solution_html: `
       <h4>1. Net Purchase Consideration (Initial Cash Outlay)</h4>
       <ul>
-        <li>Equity shares issued: $\frac{70,000}{2} = 35,000 \text{ shares} \times ₹ 15 = ₹ 5,25,000$[cite: 12]</li>
+        <li>Equity shares issued: $\\frac{70,000}{2} = 35,000 \\text{ shares} \\times ₹ 15 = ₹ 5,25,000$[cite: 12]</li>
         <li>Settlement of external liabilities $= ₹ 5,00,000$[cite: 12]</li>
         <li>Issue of 13% convertible debentures $= ₹ 3,00,000$[cite: 12]</li>
-        <li>Total Gross Consideration $= \mathbf{₹ 13,25,000}$[cite: 12]</li>
+        <li>Total Gross Consideration $= \\mathbf{₹ 13,25,000}$[cite: 12]</li>
         <li>Less: Current liquid assets realized ($₹ 2,00,000 + ₹ 50,000$) $= (₹ 2,50,000)$[cite: 12]</li>
-        <li>$$\text{Net Acquisition Outflow} = ₹ 13,25,000 - ₹ 2,50,000 = \mathbf{₹ 10,75,000}$$[cite: 12]</li>
+        <li>$$\\text{Net Acquisition Outflow} = ₹ 13,25,000 - ₹ 2,50,000 = \\mathbf{₹ 10,75,000}$$[cite: 12]</li>
       </ul>
 
       <h4>2. Discounted Cash Inflows and Project NPV</h4>
       <ul>
-        <li>$$\text{PV of 6-Year Operating Cash Inflows} = ₹ 5,00,000 \times 3.684 = \mathbf{₹ 18,42,000}$$[cite: 12]</li>
-        <li>$$\text{PV of Terminal Demerger Realization} = ₹ 2,00,000 \times 0.410 = \mathbf{₹ 82,000}$$[cite: 12]</li>
-        <li>$$\text{Total Present Value of Benefits} = ₹ 18,42,000 + ₹ 82,000 = \mathbf{₹ 19,24,000}$$[cite: 12]</li>
+        <li>$$\\text{PV of 6-Year Operating Cash Inflows} = ₹ 5,00,000 \\times 3.684 = \\mathbf{₹ 18,42,000}$$[cite: 12]</li>
+        <li>$$\\text{PV of Terminal Demerger Realization} = ₹ 2,00,000 \\times 0.410 = \\mathbf{₹ 82,000}$$[cite: 12]</li>
+        <li>$$\\text{Total Present Value of Benefits} = ₹ 18,42,000 + ₹ 82,000 = \\mathbf{₹ 19,24,000}$$[cite: 12]</li>
       </ul>
-      <p>$$\text{Net Present Value (NPV)} = ₹ 19,24,000 - ₹ 10,75,000 = \mathbf{+₹ 8,49,000}$$[cite: 12]</p>
+      <p>$$\\text{Net Present Value (NPV)} = ₹ 19,24,000 - ₹ 10,75,000 = \\mathbf{+₹ 8,49,000}$$[cite: 12]</p>
       <p><strong>Advice:</strong> Because the acquisition generates a positive NPV of <strong>₹ 8,49,000</strong>, the takeover of Leopard Ltd. is <strong>financially feasible and recommended</strong>[cite: 12].</p>
     `
   },
@@ -16607,21 +16607,21 @@ const icaibookData = [
     solution_html: `
       <h4>(i) Maximum Price Per Share Payable by PQR Ltd.</h4>
       <ul>
-        <li>Current Standalone Market Value of XYZ Ltd. ($10,00,000 \times ₹ 24$) $= ₹ 2,40,00,000$[cite: 12]</li>
+        <li>Current Standalone Market Value of XYZ Ltd. ($10,00,000 \\times ₹ 24$) $= ₹ 2,40,00,000$[cite: 12]</li>
         <li>Add: Present Value of Operating Synergies $= ₹ 80,00,000$[cite: 12]</li>
         <li>Add: Present Value of Executive Salary &amp; Perk Savings $= ₹ 30,00,000$[cite: 12]</li>
-        <li>$$\text{Total Maximum Value of Target Entity} = \mathbf{₹ 3,50,00,000}$$[cite: 12]</li>
+        <li>$$\\text{Total Maximum Value of Target Entity} = \\mathbf{₹ 3,50,00,000}$$[cite: 12]</li>
       </ul>
-      <p>$$\text{Maximum Price per Share} = \frac{₹ 3,50,00,000}{10,00,000 \text{ shares}} = \mathbf{₹ 35.00 \text{ per share}}$$[cite: 12]</p>
+      <p>$$\\text{Maximum Price per Share} = \\frac{₹ 3,50,00,000}{10,00,000 \\text{ shares}} = \\mathbf{₹ 35.00 \\text{ per share}}$$[cite: 12]</p>
 
       <h4>(ii) Minimum Price Per Share Acceptable to Controlling Promoters</h4>
       <ul>
-        <li>Promoters' Holding in XYZ Ltd. $= 40\% \times 10,00,000 = \mathbf{4,00,000 \text{ shares}}$[cite: 12]</li>
-        <li>Standalone Value of Promoters' Stake ($4,00,000 \times ₹ 24$) $= ₹ 96,00,000$[cite: 12]</li>
+        <li>Promoters' Holding in XYZ Ltd. $= 40\\% \\times 10,00,000 = \\mathbf{4,00,000 \\text{ shares}}$[cite: 12]</li>
+        <li>Standalone Value of Promoters' Stake ($4,00,000 \\times ₹ 24$) $= ₹ 96,00,000$[cite: 12]</li>
         <li>Add: PV of Personal Remuneration and Perks Forgone upon Exit $= ₹ 30,00,000$[cite: 12]</li>
-        <li>$$\text{Total Minimum Consideration Required by Promoters} = ₹ 96,00,000 + ₹ 30,00,000 = \mathbf{₹ 1,26,00,000}$$[cite: 12]</li>
+        <li>$$\\text{Total Minimum Consideration Required by Promoters} = ₹ 96,00,000 + ₹ 30,00,000 = \\mathbf{₹ 1,26,00,000}$$[cite: 12]</li>
       </ul>
-      <p>$$\text{Minimum Acceptable Price per Share} = \frac{₹ 1,26,00,000}{4,00,000 \text{ shares}} = \mathbf{₹ 31.50 \text{ per share}}$$[cite: 12]</p>
+      <p>$$\\text{Minimum Acceptable Price per Share} = \\frac{₹ 1,26,00,000}{4,00,000 \\text{ shares}} = \\mathbf{₹ 31.50 \\text{ per share}}$$[cite: 12]</p>
     `
   },
   // chapter15
@@ -16765,7 +16765,7 @@ const icaibookData = [
         <li><strong>Financial Resources, Controls, and Systems:</strong> The capital adequacy, cash flow runway, and internal governance frameworks required to execute plans[cite: 15].</li>
         <li><strong>The Right Management Team and Processes:</strong> A skilled leadership group and operational processes to execute the strategy[cite: 15].</li>
       </ul>
-      <p style="text-align:center; font-weight:bold; margin-top:10px;">$$\text{Strategy} + \text{Finance} + \text{Management} = \text{Fundamentals of Business}$$[cite: 15]</p>
+      <p style="text-align:center; font-weight:bold; margin-top:10px;">$$\\text{Strategy} + \\text{Finance} + \\text{Management} = \\text{Fundamentals of Business}$$[cite: 15]</p>
     `
   },
   {
@@ -16880,7 +16880,7 @@ const icaibookData = [
         <li><strong>Financial Tools (FT):</strong> Analytical instruments like cash flow forecasting, ratio analysis, sensitivity modeling, and capital budgeting methods[cite: 15].</li>
         <li><strong>Financial Goals (FG):</strong> Quantified financial targets, such as return on equity, profit margins, and revenue growth[cite: 15].</li>
       </ul>
-      <p style="text-align:center; font-weight:bold; margin-top:8px;">$$\text{Financial Planning: } \text{FR} + \text{FT} = \text{FG}$$[cite: 15]</p>
+      <p style="text-align:center; font-weight:bold; margin-top:8px;">$$\\text{Financial Planning: } \\text{FR} + \\text{FT} = \\text{FG}$$[cite: 15]</p>
     `
   },
   {
@@ -16984,7 +16984,7 @@ const icaibookData = [
     solution_html: `
       <h4>1. Concept and Formula</h4>
       <p>The <strong>Sustainable Growth Rate (SGR)</strong>, developed by Robert C. Higgins, is the maximum annual percentage increase in sales a firm can achieve without issuing new equity or changing its financial leverage[cite: 15]:</p>
-      <p>$$\text{SGR} = \text{ROE} \times (1 - \text{Dividend Payout Ratio}) = \text{ROE} \times b$$[cite: 15]</p>
+      <p>$$\\text{SGR} = \\text{ROE} \\times (1 - \\text{Dividend Payout Ratio}) = \\text{ROE} \\times b$$[cite: 15]</p>
       <p>It represents the growth limit supported by internally generated profits and proportional borrowing, after which the firm must alter its financial structure or raise external equity[cite: 15].</p>
 
       <h4>2. Key Model Assumptions</h4>
@@ -17075,16 +17075,16 @@ const icaibookData = [
     solution_html: `
       <h4>1. Determination of Equity and ROE</h4>
       <ul>
-        <li>$$\text{Shareholders' Equity} = \text{Total Assets} - \text{Total Liabilities} = ₹ 250 - ₹ 220 = \mathbf{₹ 30 \text{ lakhs}}$$[cite: 15]</li>
-        <li>$$\text{Return on Equity (ROE)} = \frac{\text{Net Income}}{\text{Equity}} \times 100 = \frac{₹ 12}{₹ 30} \times 100 = \mathbf{40.00\%}$$[cite: 15]</li>
+        <li>$$\\text{Shareholders' Equity} = \\text{Total Assets} - \\text{Total Liabilities} = ₹ 250 - ₹ 220 = \\mathbf{₹ 30 \\text{ lakhs}}$$[cite: 15]</li>
+        <li>$$\\text{Return on Equity (ROE)} = \\frac{\\text{Net Income}}{\\text{Equity}} \\times 100 = \\frac{₹ 12}{₹ 30} \\times 100 = \\mathbf{40.00\\%}$$[cite: 15]</li>
       </ul>
 
       <h4>2. Retention Ratio ($b$)</h4>
-      <p>$$\text{Retention Ratio } (b) = \frac{\text{Net Income} - \text{Dividends}}{\text{Net Income}} \times 100 = \frac{₹ 12 - ₹ 4.50}{₹ 12} \times 100 = \frac{₹ 7.50}{₹ 12} \times 100 = \mathbf{62.50\%}$$[cite: 15]</p>
+      <p>$$\\text{Retention Ratio } (b) = \\frac{\\text{Net Income} - \\text{Dividends}}{\\text{Net Income}} \\times 100 = \\frac{₹ 12 - ₹ 4.50}{₹ 12} \\times 100 = \\frac{₹ 7.50}{₹ 12} \\times 100 = \\mathbf{62.50\\%}$$[cite: 15]</p>
 
       <h4>3. Sustainable Growth Rate (SGR) and Sales Capacity</h4>
-      <p>$$\text{SGR} = \text{ROE} \times b = 40.00\% \times 62.50\% = \mathbf{25.00\%}$$[cite: 15]</p>
-      <p>$$\text{Maximum Sales without Additional Borrowings} = ₹ 100 \text{ lakhs} \times (1 + 0.25) = \mathbf{₹ 125.00 \text{ lakhs}}$$ (an increase of ₹ 25 lakhs)[cite: 15].</p>
+      <p>$$\\text{SGR} = \\text{ROE} \\times b = 40.00\\% \\times 62.50\\% = \\mathbf{25.00\\%}$$[cite: 15]</p>
+      <p>$$\\text{Maximum Sales without Additional Borrowings} = ₹ 100 \\text{ lakhs} \\times (1 + 0.25) = \\mathbf{₹ 125.00 \\text{ lakhs}}$$ (an increase of ₹ 25 lakhs)[cite: 15].</p>
     `
   },
 
@@ -17174,8 +17174,8 @@ const icaibookData = [
       <h4>2. Key Features</h4>
       <ul>
         <li><strong>Components:</strong> Defined by a time horizon, a confidence level (typically 95% or 99%), and a maximum loss figure[cite: 15].</li>
-        <li><strong>Statistical Basis:</strong> Calculates potential losses using the standard deviation ($\sigma$) of returns and normal distribution Z-scores: $\text{VAR} = Z \times \sigma \times \text{Portfolio Value}$[cite: 15].</li>
-        <li><strong>Time Horizon Scaling:</strong> Scaled across different holding periods using the square-root-of-time rule ($\text{VAR}_T = \text{VAR}_1 \times \sqrt{T}$)[cite: 15].</li>
+        <li><strong>Statistical Basis:</strong> Calculates potential losses using the standard deviation ($\\sigma$) of returns and normal distribution Z-scores: $\\text{VAR} = Z \\times \\sigma \\times \\text{Portfolio Value}$[cite: 15].</li>
+        <li><strong>Time Horizon Scaling:</strong> Scaled across different holding periods using the square-root-of-time rule ($\\text{VAR}_T = \\text{VAR}_1 \\times \\sqrt{T}$)[cite: 15].</li>
       </ul>
 
       <h4>3. Practical Applications</h4>
@@ -17855,7 +17855,7 @@ const icaibookData = [
       <ul>
         <li><strong>Serial Correlation Test:</strong> Computes correlation coefficients between price changes across successive time lags (e.g., $t$ and $t-1$)[cite: 11]. A correlation coefficient near zero indicates that past price changes do not predict future returns, supporting the random walk hypothesis[cite: 11].</li>
         <li><strong>Runs Test:</strong> A non-parametric test that ignores the magnitude of price changes and tracks only directional signs: positive ($+$), negative ($-$), or zero ($0$)[cite: 11]. A sequence of consecutive price changes in the same direction forms a &ldquo;run&rdquo;[cite: 11]. The actual number of observed runs is compared against the expected number of runs in a random sequence; if the difference is statistically insignificant, the market exhibits weak-form efficiency[cite: 11].</li>
-        <li><strong>Filter Rules Test:</strong> Evaluates mechanical trading rules (e.g., &ldquo;buy if price rises by $N\%$, hold until price declines by $N\%$ from its subsequent high, then sell&rdquo;)[cite: 11]. If markets are weak-form efficient, trading based on filter rules will not outperform a simple buy-and-hold strategy, particularly after accounting for brokerage and transaction costs[cite: 11].</li>
+        <li><strong>Filter Rules Test:</strong> Evaluates mechanical trading rules (e.g., &ldquo;buy if price rises by $N\\%$, hold until price declines by $N\\%$ from its subsequent high, then sell&rdquo;)[cite: 11]. If markets are weak-form efficient, trading based on filter rules will not outperform a simple buy-and-hold strategy, particularly after accounting for brokerage and transaction costs[cite: 11].</li>
       </ul>
     `
   },
@@ -18435,7 +18435,7 @@ const icaibookData = [
       <ul>
         <li><strong>Serial Correlation Test:</strong> Tests for randomness in price changes by measuring correlation across successive time periods[cite: 11]. Studies examining different stocks and time lags generally find no significant correlation, supporting the view that prices follow short-term random trends[cite: 11].</li>
         <li><strong>Runs Test:</strong> Tests for statistical independence by comparing the observed number of directional runs ($+$, $-$, or $0$) in a price series against the expected number of runs in a purely random sequence[cite: 11]. Findings generally support the Random Walk Model[cite: 11].</li>
-        <li><strong>Filter Rules Test:</strong> Evaluates mechanical trading rules (e.g., buy if price rises by $N\%$, hold until it falls by $N\%$ from its peak, then sell)[cite: 11]. If markets are weak-form efficient, filter rules will not outperform a simple buy-and-hold strategy, particularly after accounting for brokerage and transaction costs[cite: 11].</li>
+        <li><strong>Filter Rules Test:</strong> Evaluates mechanical trading rules (e.g., buy if price rises by $N\\%$, hold until it falls by $N\\%$ from its peak, then sell)[cite: 11]. If markets are weak-form efficient, filter rules will not outperform a simple buy-and-hold strategy, particularly after accounting for brokerage and transaction costs[cite: 11].</li>
       </ul>
     `
   },
@@ -18879,7 +18879,7 @@ const icaibookData = [
       <h4>2. Core Characteristics of a Unicorn</h4>
       <ul>
         <li><strong>Privately Held:</strong> Must be unlisted; once a unicorn completes an IPO on a public stock exchange, it transitions to a publicly traded corporation[cite: 9].</li>
-        <li><strong>Billion-Dollar Valuation:</strong> The valuation must equal or exceed US$ 1 billion based on recognized funding rounds[cite: 9]. If its valuation subsequently slips below US$ 1 billion in down-rounds, it loses its unicorn status[cite: 9].</li>
+        <li><strong>Billion-Dollar Valuation:</strong> The valuation must equal or exceed US$ 1 billion based on recognized funding rounds[cite: 9]. If its valuation subsequently slips below US\\$ 1 billion in down-rounds, it loses its unicorn status[cite: 9].</li>
         <li><strong>Disruptive Innovation &amp; Tech Focus:</strong> Typically driven by software, digital platforms, network effects, and consumer-centric technology that disrupt traditional industries[cite: 9].</li>
       </ul>
 
