@@ -10227,5 +10227,1999 @@ const descriptiveQuestions = [
       </ul>
     `
   },
+  // MTP spt 25
+  {
+  question_id: "AFM_MTPJUL25_Q1A",
+  source: "ICAI Mock Test Paper - Series I, July 2025",
+  chapter_name: "Security Analysis",
+  placement: 1,
+  marks: 6,
+  question_html: `
+    <p>Mr. NK has categorized all the available stock in the market into the following types:</p>
+    <ol type="i">
+      <li>Small cap growth stocks</li>
+      <li>Small cap value stocks</li>
+      <li>Large cap growth stocks</li>
+      <li>Large cap value stocks</li>
+    </ol>
+    <p>Mr. NK also estimated the weights of the above categories of stocks in the market index. Further, the sensitivity of returns on these categories of stocks to the three important factors are estimated to be:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Category of Stocks</th>
+          <th>Weight in Market Index</th>
+          <th>Factor I (Beta)</th>
+          <th>Factor II (Book Price)</th>
+          <th>Factor III (Inflation)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Small cap growth</td><td>25%</td><td>0.80</td><td>1.39</td><td>1.35</td></tr>
+        <tr><td>Small cap value</td><td>10%</td><td>0.90</td><td>0.75</td><td>1.25</td></tr>
+        <tr><td>Large cap growth</td><td>50%</td><td>1.165</td><td>2.75</td><td>8.65</td></tr>
+        <tr><td>Large cap value</td><td>15%</td><td>0.85</td><td>2.05</td><td>6.75</td></tr>
+        <tr><td>Risk Premium</td><td></td><td>6.85%</td><td>-3.5%</td><td>0.65%</td></tr>
+      </tbody>
+    </table>
+    <p>The rate of return on Treasury Bonds is 4.50%.</p>
+    <p><strong>Required:</strong></p>
+    <ol type="i">
+      <li>Using Arbitrage Pricing Theory, determine the expected return on the market index.</li>
+      <li>Using Capital Asset Pricing Model (CAPM), determine the expected return on the market index.</li>
+      <li>Mr. NK wants to construct a portfolio constituting only the ‘Small cap value’ and ‘Large cap growth’ stocks. If the target beta for the desired portfolio is 1, suggest the composition of his portfolio.</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>(i) Using Arbitrage Pricing Theory (APT)</strong></p>
+    <p><strong>Method I – Expected return of individual categories:</strong></p>
+    <p>Expected return = Risk-free rate + (Beta × Factor I premium) + (Factor II sensitivity × Factor II premium) + (Factor III sensitivity × Factor III premium)</p>
+    <ul>
+      <li>Small cap growth = 4.5 + (0.80 × 6.85) + (1.39 × -3.5) + (1.35 × 0.65) = <strong>5.9925%</strong></li>
+      <li>Small cap value = 4.5 + (0.90 × 6.85) + (0.75 × -3.5) + (1.25 × 0.65) = <strong>8.8525%</strong></li>
+      <li>Large cap growth = 4.5 + (1.165 × 6.85) + (2.75 × -3.5) + (8.65 × 0.65) = <strong>8.478%</strong></li>
+      <li>Large cap value = 4.5 + (0.85 × 6.85) + (2.05 × -3.5) + (6.75 × 0.65) = <strong>7.535%</strong></li>
+    </ul>
+    <p><strong>Expected return on market index:</strong></p>
+    <p>= (0.25 × 5.9925) + (0.10 × 8.8525) + (0.50 × 8.478) + (0.15 × 7.535)</p>
+    <p>= <strong>7.7526%</strong></p>
+    <p><strong>Method II – Expected return on market index:</strong></p>
+    <p>= 4.5% + [ (0.10 × 0.90) + (0.25 × 0.80) + (0.15 × 0.85) + (0.50 × 1.165) ] × 6.85</p>
+    <p>+ [ (0.75 × 0.10) + (1.39 × 0.25) + (2.05 × 0.15) + (2.75 × 0.50) ] × (-3.5)</p>
+    <p>+ [ (1.25 × 0.10) + (1.35 × 0.25) + (6.75 × 0.15) + (8.65 × 0.50) ] × 0.65</p>
+    <p>= 4.5 + 6.85 - 7.3675 + 3.77</p>
+    <p>= <strong>7.7525%</strong></p>
+    <p><strong>(ii) Using Capital Asset Pricing Model (CAPM)</strong></p>
+    <p>Expected return = Risk-free rate + (Beta × Market risk premium)</p>
+    <ul>
+      <li>Small cap growth = 4.5 + (6.85 × 0.80) = <strong>9.98%</strong></li>
+      <li>Small cap value = 4.5 + (6.85 × 0.90) = <strong>10.665%</strong></li>
+      <li>Large cap growth = 4.5 + (6.85 × 1.165) = <strong>12.48%</strong></li>
+      <li>Large cap value = 4.5 + (6.85 × 0.85) = <strong>10.3225%</strong></li>
+    </ul>
+    <p><strong>Expected return on market index:</strong></p>
+    <p>= (0.25 × 9.98) + (0.10 × 10.665) + (0.50 × 12.45) + (0.15 × 10.3225)</p>
+    <p>= <strong>11.33%</strong> (as stated in the ICAI answer key).</p>
+    <p><strong>(iii) Composition of portfolio with target beta of 1</strong></p>
+    <p>Let X<sub>1</sub> = proportion invested in Small cap value stocks.</p>
+    <p>Let X<sub>2</sub> = proportion invested in Large cap growth stocks.</p>
+    <p>X<sub>1</sub> + X<sub>2</sub> = 1</p>
+    <p>0.90X<sub>1</sub> + 1.165X<sub>2</sub> = 1</p>
+    <p>Substituting X<sub>2</sub> = 1 - X<sub>1</sub>:</p>
+    <p>0.90X<sub>1</sub> + 1.165(1 - X<sub>1</sub>) = 1</p>
+    <p>0.90X<sub>1</sub> + 1.165 - 1.165X<sub>1</sub> = 1</p>
+    <p>0.265X<sub>1</sub> = 0.165</p>
+    <p>X<sub>1</sub> = 0.623 and X<sub>2</sub> = 0.377</p>
+    <p><strong>Suggested portfolio composition:</strong></p>
+    <ul>
+      <li>Small cap value stocks: <strong>62.30%</strong></li>
+      <li>Large cap growth stocks: <strong>37.70%</strong></li>
+    </ul>
+    <p><strong>Note:</strong> The ICAI answer key has a numerical inconsistency in the CAPM weighted-return calculation: it calculates Large cap growth at 12.48% but uses 12.45% in the weighted-average expression. The stated result of 11.33% is reproduced as given in the source.</p>
+  `
+},
+{
+  question_id: "AFM_MTPJUL25_Q1B",
+  source: "ICAI Mock Test Paper - Series I, July 2025",
+  chapter_name: "Mutual Funds",
+  placement: 1,
+  marks: 4,
+  question_html: `
+    <p>On 1st April 2019 FR Mutual Fund has the following assets and prices at 4.00 p.m.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Shares</th>
+          <th>No. of Shares</th>
+          <th>Market Price Per Share (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>A Ltd.</td><td>10,000</td><td>19.70</td></tr>
+        <tr><td>B Ltd.</td><td>50,000</td><td>482.60</td></tr>
+        <tr><td>C Ltd.</td><td>10,000</td><td>264.40</td></tr>
+        <tr><td>D Ltd.</td><td>1,00,000</td><td>674.90</td></tr>
+        <tr><td>E Ltd.</td><td>30,000</td><td>25.90</td></tr>
+      </tbody>
+    </table>
+    <p>No. of units of fund: 8,00,000</p>
+    <p><strong>Required:</strong></p>
+    <ol type="i">
+      <li>Calculate NAV of the Fund on 1st April 2019.</li>
+      <li>Assess the position of Fund, assuming that on 1st April 2019, Mr. X, an HNI, sends a cheque of ₹50,00,000 to the Fund and Fund Manager immediately purchases 18,000 shares of C Ltd. and the balance is held in bank.</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>(i) Calculation of NAV of the Fund</strong></p>
+    <table>
+      <thead>
+        <tr><th>Shares</th><th>Calculation</th><th>Value (₹)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>A Ltd.</td><td>10,000 × 19.70</td><td>1,97,000</td></tr>
+        <tr><td>B Ltd.</td><td>50,000 × 482.60</td><td>2,41,30,000</td></tr>
+        <tr><td>C Ltd.</td><td>10,000 × 264.40</td><td>26,44,000</td></tr>
+        <tr><td>D Ltd.</td><td>1,00,000 × 674.90</td><td>6,74,90,000</td></tr>
+        <tr><td>E Ltd.</td><td>30,000 × 25.90</td><td>7,77,000</td></tr>
+        <tr><td><strong>Total assets</strong></td><td></td><td><strong>9,52,38,000</strong></td></tr>
+      </tbody>
+    </table>
+    <p>NAV = Total assets / Number of units</p>
+    <p>= ₹9,52,38,000 / 8,00,000</p>
+    <p>= ₹119.0475</p>
+    <p><strong>NAV = ₹119.05 (rounded)</strong></p>
+    <p><strong>(ii) Revised position of the Fund</strong></p>
+    <p>Mr. X invests ₹50,00,000.</p>
+    <p>Amount invested in C Ltd. = 18,000 × ₹264.40 = ₹47,59,200</p>
+    <p>Balance held in bank = ₹50,00,000 - ₹47,59,200 = <strong>₹2,40,800</strong></p>
+    <table>
+      <thead>
+        <tr><th>Assets</th><th>No. of shares</th><th>Price (₹)</th><th>Amount (₹)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>A Ltd.</td><td>10,000</td><td>19.70</td><td>1,97,000</td></tr>
+        <tr><td>B Ltd.</td><td>50,000</td><td>482.60</td><td>2,41,30,000</td></tr>
+        <tr><td>C Ltd.</td><td>28,000</td><td>264.40</td><td>74,03,200</td></tr>
+        <tr><td>D Ltd.</td><td>1,00,000</td><td>674.90</td><td>6,74,90,000</td></tr>
+        <tr><td>E Ltd.</td><td>30,000</td><td>25.90</td><td>7,77,000</td></tr>
+        <tr><td>Cash</td><td>-</td><td>-</td><td>2,40,800</td></tr>
+        <tr><td><strong>Total</strong></td><td></td><td></td><td><strong>10,02,38,000</strong></td></tr>
+      </tbody>
+    </table>
+    <p>Additional units issued = ₹50,00,000 / ₹119.0475 = approximately 42,000 units.</p>
+    <p>Revised number of units = 8,00,000 + 42,000 = <strong>8,42,000 units</strong>.</p>
+    <p>Revised NAV = ₹10,02,38,000 / 8,42,000 = approximately <strong>₹119.05</strong>.</p>
+  `
+},
+{
+  question_id: "AFM_MTPJUL25_Q1C",
+  source: "ICAI Mock Test Paper - Series I, July 2025",
+  chapter_name: "Risk Management",
+  placement: 1,
+  marks: 4,
+  question_html: `
+    <p>Define the term Value-at-Risk (VaR) and explain its main features.</p>
+  `,
+  solution_html: `
+    <p><strong>Meaning of Value-at-Risk (VaR):</strong></p>
+    <p>VaR is a measure of risk of investment. This investment can be a portfolio, capital investment or foreign exchange, etc. VaR answers two basic questions:</p>
+    <ol>
+      <li>What is the worst-case scenario?</li>
+      <li>What will be the loss?</li>
+    </ol>
+    <p><strong>Main features of VaR:</strong></p>
+    <ol>
+      <li><strong>Components of Calculations:</strong> VaR calculation is based on the following three components:
+        <ul>
+          <li>Time period</li>
+          <li>Confidence level – generally 95% and 99%</li>
+          <li>Loss in percentage or in amount</li>
+        </ul>
+      </li>
+      <li><strong>Statistical Method:</strong> It is a type of statistical tool based on Standard Deviation.</li>
+      <li><strong>Time Horizon:</strong> VaR can be applied for different time horizons, such as one day, one week, one month and so on.</li>
+      <li><strong>Probability:</strong> Assuming the values are normally distributed, probability of maximum loss can be predicted.</li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPJUL25_Q2A",
+  source: "ICAI Mock Test Paper - Series I, July 2025",
+  chapter_name: "Risk Management",
+  placement: 2,
+  marks: 6,
+  question_html: `
+    <p>KLM Ltd. is considering taking up one of the two projects – Project K and Project S. Both the projects, having the same life, require equal investment of ₹80 lakhs each. Both are estimated to have almost the same yield.</p>
+    <p>As the company is new to this type of business, the cash flows arising from the projects cannot be estimated with certainty. An attempt was therefore made to use probability to analyse the pattern of cash flows from other projects during the first year of operations. This pattern is likely to continue during the life of these projects. The results of the analysis are as follows:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Project K Cash Flow (₹)</th>
+          <th>Probability</th>
+          <th>Project S Cash Flow (₹)</th>
+          <th>Probability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>11</td><td>0.10</td><td>9</td><td>0.10</td></tr>
+        <tr><td>13</td><td>0.20</td><td>13</td><td>0.25</td></tr>
+        <tr><td>15</td><td>0.40</td><td>17</td><td>0.30</td></tr>
+        <tr><td>17</td><td>0.20</td><td>21</td><td>0.25</td></tr>
+        <tr><td>19</td><td>0.10</td><td>25</td><td>0.10</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Required:</strong> Evaluate which of the two projects is riskier.</p>
+  `,
+  solution_html: `
+    <p><strong>Calculation of Variance and Standard Deviation</strong></p>
+    <p><strong>Project K</strong></p>
+    <p>Expected Net Cash Flow:</p>
+    <p>= (0.10 × 11) + (0.20 × 13) + (0.40 × 15) + (0.20 × 17) + (0.10 × 19)</p>
+    <p>= 1.1 + 2.6 + 6 + 3.4 + 1.9 = <strong>₹15</strong></p>
+    <p>Variance (σ²):</p>
+    <p>= 0.10(11 − 15)² + 0.20(13 − 15)² + 0.40(15 − 15)² + 0.20(17 − 15)² + 0.10(19 − 15)²</p>
+    <p>= 1.6 + 0.8 + 0 + 0.8 + 1.6</p>
+    <p>= <strong>4.8</strong></p>
+    <p>Standard Deviation (σ) = √4.8 = <strong>2.19</strong></p>
+    <p><strong>Project S</strong></p>
+    <p>Expected Net Cash Flow:</p>
+    <p>= (0.10 × 9) + (0.25 × 13) + (0.30 × 17) + (0.25 × 21) + (0.10 × 25)</p>
+    <p>= 0.9 + 3.25 + 5.1 + 5.25 + 2.5 = <strong>₹17</strong></p>
+    <p>Variance (σ²):</p>
+    <p>= 0.10(9 − 17)² + 0.25(13 − 17)² + 0.30(17 − 17)² + 0.25(21 − 17)² + 0.10(25 − 17)²</p>
+    <p>= 6.4 + 4 + 0 + 4 + 6.4</p>
+    <p>= <strong>20.8</strong></p>
+    <p>Standard Deviation (σ) = √20.8 = <strong>4.56</strong></p>
+    <p><strong>Calculation of Coefficient of Variation</strong></p>
+    <p>Coefficient of Variation = Standard Deviation / Mean</p>
+    <ul>
+      <li>Project K = 2.19 / 15 = <strong>0.146</strong></li>
+      <li>Project S = 4.56 / 17 = <strong>0.268</strong></li>
+    </ul>
+    <p><strong>Conclusion:</strong> Project S is riskier as it has a higher Coefficient of Variation.</p>
+  `
+},
+{
+  question_id: "AFM_MTPJUL25_Q2B",
+  source: "ICAI Mock Test Paper - Series I, July 2025",
+  chapter_name: "Financial Policy and Corporate Strategy",
+  placement: 2,
+  marks: 4,
+  question_html: `
+    <p>R Ltd. has surplus cash of ₹100 lakhs and wants to distribute 27% of it to the shareholders. The company decides to buy back shares.</p>
+    <p>The Finance Manager of the company estimates that its share price after repurchase is likely to be 10% above the buyback price if the buyback route is taken. The number of shares outstanding at present is 10 lakhs and the current EPS is ₹3.</p>
+    <p><strong>Required:</strong> Suggest:</p>
+    <ol type="i">
+      <li>The price at which the shares can be repurchased, if the market capitalisation of the company should be ₹210 lakhs after buyback.</li>
+      <li>The number of shares that can be repurchased.</li>
+      <li>The impact of share repurchase on the EPS, assuming that after buyback net income shall remain the same.</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>(i) Calculation of buyback price</strong></p>
+    <p>Let P be the buyback price decided by R Ltd.</p>
+    <p>Share price after buyback = 1.10P</p>
+    <p>Amount used for buyback = 27% of ₹100 lakhs = ₹27 lakhs.</p>
+    <p>Number of shares bought back = ₹27 lakhs / P</p>
+    <p>Market capitalisation after buyback:</p>
+    <p>= 1.10P × (Original shares − Shares bought back)</p>
+    <p>= 1.10P × (10 lakhs − ₹27 lakhs / P)</p>
+    <p>= 11 lakhs × P − 29.7 lakhs</p>
+    <p>Given market capitalisation after buyback = ₹210 lakhs:</p>
+    <p>11 lakhs × P − 29.7 lakhs = 210 lakhs</p>
+    <p>11 lakhs × P = 239.7 lakhs</p>
+    <p>P = 239.7 / 11</p>
+    <p><strong>Buyback price = ₹21.79 per share (approximately)</strong></p>
+    <p><strong>(ii) Number of shares to be bought back</strong></p>
+    <p>= ₹27 lakhs / ₹21.79</p>
+    <p>= <strong>Approximately 1.24 lakh shares</strong> (approximately 1,23,910 shares).</p>
+    <p><strong>(iii) Impact on EPS</strong></p>
+    <p>Original net income = EPS × Original number of shares</p>
+    <p>= ₹3 × 10 lakhs = ₹30 lakhs</p>
+    <p>New equity shares = 10,00,000 − 1,23,910</p>
+    <p>= <strong>8,76,090 shares</strong> (approximately 8.76 lakhs)</p>
+    <p>New EPS = ₹30 lakhs / 8.76 lakhs</p>
+    <p>= <strong>₹3.43</strong> (approximately)</p>
+    <p><strong>Conclusion:</strong> EPS of R Ltd. increases to approximately ₹3.43 after the buyback.</p>
+  `
+},
+{
+  question_id: "AFM_MTPJUL25_Q2C",
+  source: "ICAI Mock Test Paper - Series I, July 2025",
+  chapter_name: "Security Analysis",
+  placement: 2,
+  marks: 4,
+  question_html: `
+    <p>Briefly explain the techniques used for analysing the industry-wide factors.</p>
+  `,
+  solution_html: `
+    <p>The techniques used for analysing the industry-wide factors are:</p>
+    <p><strong>(a) Regression Analysis</strong></p>
+    <p>Investors diagnose the factors determining the demand for the output of an industry through product demand analysis.</p>
+    <p>Factors to be considered are:</p>
+    <ul>
+      <li>GNP</li>
+      <li>Disposable income</li>
+      <li>Per capita consumption / income</li>
+      <li>Price elasticity of demand</li>
+    </ul>
+    <p>For identifying factors affecting demand, statistical techniques like regression analysis and correlation are used.</p>
+    <p><strong>(b) Input-Output Analysis</strong></p>
+    <p>It reflects the flow of goods and services through the economy and the intermediate steps in the production process as goods proceed from the raw material stage through final consumption.</p>
+    <p>This is carried out to detect changing patterns or trends indicating the growth or decline of industries.</p>
+  `
+},
+{
+  question_id: "AFM_MTPJUL25_Q3A",
+  source: "ICAI Mock Test Paper - Series I, July 2025",
+  chapter_name: "Foreign Exchange Exposure and Risk Management",
+  placement: 3,
+  marks: 6,
+  question_html: `
+    <p>Zaz plc, a UK company, is in the process of negotiating an order amounting to €2.8 million with a large German retailer on six months' credit. If successful, this will be the first time Zaz has exported goods into the highly competitive German market.</p>
+    <p>Zaz is considering the following three alternatives for managing the transaction risk before the order is finalized:</p>
+    <ol type="I">
+      <li>Mr. Peter, the Marketing Head, has suggested that, in order to remove transaction risk completely, Zaz should invoice the German firm in Sterling using the current €/£ average spot rate to calculate the invoice amount.</li>
+      <li>Mr. Wilson, CEO, is doubtful about Mr. Peter's proposal and has suggested an alternative of invoicing the German firm in € and using a forward exchange contract to hedge the transaction risk.</li>
+      <li>Ms. Karen, CFO, agrees with Mr. Wilson's proposal to invoice the German firm in €, but is of the opinion that Zaz should use sufficient six-month Sterling Futures contracts (to the nearest whole number) to hedge the transaction risk.</li>
+    </ol>
+    <p><strong>Following data is available:</strong></p>
+    <table>
+      <tbody>
+        <tr><td>Spot rate</td><td>€1.1960 – €1.1970/£</td></tr>
+        <tr><td>Six-month forward points</td><td>0.60 – 0.55 Euro cents</td></tr>
+        <tr><td>Six-month Futures contract currently trading at</td><td>€1.1943/£</td></tr>
+        <tr><td>Six-month Futures contract size</td><td>£62,500</td></tr>
+        <tr><td>After six months: Spot rate and Futures rate</td><td>€1.1873/£</td></tr>
+      </tbody>
+    </table>
+    <p><strong>Required:</strong></p>
+    <ol type="i">
+      <li>Suggest which alternative you consider to be most appropriate.</li>
+      <li>Explain the reason why Mr. Wilson is doubtful about Mr. Peter's proposal.</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>(i) Comparison of receipts under the three proposals</strong></p>
+    <p><strong>Proposal I – Mr. Peter: Invoicing in Sterling</strong></p>
+    <p>Using the average spot rate:</p>
+    <p>Average spot rate = (1.1960 + 1.1970) / 2 = €1.1965/£</p>
+    <p>Sterling invoice amount = €2.8 million / 1.1965</p>
+    <p>= <strong>£2.340 million approximately</strong></p>
+    <p><strong>Proposal II – Mr. Wilson: Forward market hedge</strong></p>
+    <p>Forward rate = €1.1970 − €0.0055</p>
+    <p>= <strong>€1.1915/£</strong></p>
+    <p>Sterling receipt using forward market hedge:</p>
+    <p>= €2.8 million / 1.1915</p>
+    <p>= <strong>£2.35 million approximately</strong></p>
+    <p><strong>Proposal III – Ms. Karen: Futures market hedge</strong></p>
+    <p>Equivalent Sterling amount based on Futures price:</p>
+    <p>= €2.8 million / 1.1943</p>
+    <p>= <strong>£2,344,470 approximately</strong></p>
+    <p>Number of Futures contracts:</p>
+    <p>= £2,344,470 / £62,500</p>
+    <p>= 37 contracts (nearest whole number)</p>
+    <p>Sterling amount hedged through Futures:</p>
+    <p>= 37 × £62,500 = <strong>£23,12,500</strong></p>
+    <p>Futures position:</p>
+    <ul>
+      <li>Buy Futures at €1.1943/£</li>
+      <li>Sell Futures at €1.1873/£</li>
+      <li>Loss per pound = €0.0070</li>
+    </ul>
+    <p>Total loss on Futures contracts:</p>
+    <p>= 37 × £62,500 × €0.0070</p>
+    <p>= <strong>€16,188 approximately</strong></p>
+    <p>After six months:</p>
+    <table>
+      <tbody>
+        <tr><td>Amount received</td><td>€28,00,000</td></tr>
+        <tr><td>Less: Loss on Futures contracts</td><td>€16,188</td></tr>
+        <tr><td><strong>Net receipt</strong></td><td><strong>€27,83,812</strong></td></tr>
+      </tbody>
+    </table>
+    <p>Sterling receipt on sale of euros at the spot rate:</p>
+    <p>= €27,83,812 / 1.1873</p>
+    <p>= <strong>£2.3446 million approximately</strong></p>
+    <p><strong>Conclusion:</strong> Proposal II, the forward market hedge suggested by Mr. Wilson, is preferable because Proposal I and Proposal III produce lower Sterling receipts.</p>
+    <p><strong>(ii) Reason for Mr. Wilson's doubt</strong></p>
+    <p>Zaz is entering a highly competitive market. Invoicing in the seller's currency may not be acceptable to buyers in that market.</p>
+  `
+},
+{
+  question_id: "AFM_MTPJUL25_Q3B",
+  source: "ICAI Mock Test Paper - Series I, July 2025",
+  chapter_name: "Financial Policy and Corporate Strategy",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p>From the following particulars, calculate the effective rate of interest p.a. as well as the total cost of funds to Bhaskar Ltd., which is planning a Commercial Paper (CP) issue.</p>
+    <table>
+      <tbody>
+        <tr><td>Issue Price of CP</td><td>₹97,550</td></tr>
+        <tr><td>Face Value</td><td>₹1,00,000</td></tr>
+        <tr><td>Maturity Period</td><td>3 months</td></tr>
+        <tr><td>Brokerage</td><td>0.15% for 3 months</td></tr>
+        <tr><td>Rating Charges</td><td>0.50% p.a.</td></tr>
+        <tr><td>Stamp Duty</td><td>0.175% for 3 months</td></tr>
+      </tbody>
+    </table>
+  `,
+  solution_html: `
+    <p><strong>Nominal Interest or Bond Equivalent Yield</strong></p>
+    <p>Bond Equivalent Yield = [(F − P) / P] × (12 / M) × 100</p>
+    <p>Where:</p>
+    <ul>
+      <li>F = Face value</li>
+      <li>P = Issue price</li>
+      <li>M = Maturity period in months</li>
+    </ul>
+    <p>= [(₹1,00,000 − ₹97,550) / ₹97,550] × (12 / 3) × 100</p>
+    <p>= 0.025115 × 4 × 100</p>
+    <p>= <strong>10.046% or 10.05% p.a.</strong></p>
+    <p><strong>Effective Interest Rate</strong></p>
+    <p>= [1 + (0.1005 / 4)]<sup>4</sup> − 1</p>
+    <p>= <strong>10.435% p.a.</strong></p>
+    <p><strong>Cost of Funds to the Company</strong></p>
+    <table>
+      <tbody>
+        <tr><td>Effective interest</td><td>10.435%</td></tr>
+        <tr><td>Brokerage (0.150% × 4)</td><td>0.60%</td></tr>
+        <tr><td>Rating charges</td><td>0.50%</td></tr>
+        <tr><td>Stamp duty (0.175% × 4)</td><td>0.70%</td></tr>
+        <tr><td><strong>Total cost of funds</strong></td><td><strong>12.235%</strong></td></tr>
+      </tbody>
+    </table>
+    <p><strong>Alternative calculation reproduced in the ICAI answer key:</strong></p>
+    <p>The answer key also gives the following alternative calculation:</p>
+    <p>97,750 = 1,00,000 / (1 + i × 3/12)</p>
+    <p>i = 10.046%</p>
+    <p>It then calculates:</p>
+    <table>
+      <tbody>
+        <tr><td>Effective interest</td><td>10.046%</td></tr>
+        <tr><td>Brokerage (0.150% × 4)</td><td>0.60%</td></tr>
+        <tr><td>Rating charges</td><td>0.50%</td></tr>
+        <tr><td>Stamp duty (0.175% × 4)</td><td>0.70%</td></tr>
+        <tr><td><strong>Total cost of funds</strong></td><td><strong>11.846%</strong></td></tr>
+      </tbody>
+    </table>
+    <p><strong>Source discrepancy:</strong> The ICAI answer key gives two different effective-interest and total-cost figures: 10.435% and 12.235% in its main calculation, and 10.046% and 11.846% in its alternative calculation. These are reproduced separately rather than treating them as equivalent results.</p>
+  `
+},
+{
+  question_id: "AFM_MTPJUL25_Q3C1",
+  source: "ICAI Mock Test Paper - Series I, July 2025",
+  chapter_name: "Securitization",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p>Briefly explain the steps in the securitization mechanism.</p>
+  `,
+  solution_html: `
+    <p><strong>Steps involved in the securitization mechanism:</strong></p>
+    <ol>
+      <li><strong>Creation of Pool of Assets:</strong> The process of securitization begins with the creation of a pool of assets by segregation of assets backed by similar types of mortgages.</li>
+      <li><strong>Transfer to SPV:</strong> Once assets have been pooled, they are transferred to a Special Purpose Vehicle (SPV) especially created for this purpose.</li>
+      <li><strong>Sale of Securitized Papers:</strong> The SPV designs the instruments based on the nature of interest, risk, tenure, pool of assets, etc.</li>
+      <li><strong>Administration of Assets:</strong> The administration of assets is subcontracted back to the originator, which collects principal and interest from the underlying assets and transfers it to the SPV. The SPV works as a servicer or conduit, typically for an agreed fee.</li>
+      <li><strong>Recourse to Originator:</strong> Performance of securitized papers depends on the performance of the underlying assets and, unless specified otherwise, in case of default by debtors, receivables go back to the originator from the SPV.</li>
+      <li><strong>Repayment of Funds:</strong> The SPV repays the funds to investors in the form of interest and principal arising from the pooled assets.</li>
+      <li><strong>Credit Rating to Instruments:</strong> Sometimes, before the sale of securitized instruments, credit rating can be done to assess the risk of the issuer.</li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPJUL25_Q3C2",
+  source: "ICAI Mock Test Paper - Series I, July 2025",
+  chapter_name: "Derivatives",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p>Explain the factors affecting the value of an option.</p>
+  `,
+  solution_html: `
+    <p><strong>Factors affecting the value of an option:</strong></p>
+    <ol>
+      <li><strong>Price Movement of the Underlying:</strong> The value of calls and puts is affected by changes in the underlying stock price in a relatively straightforward manner.</li>
+      <li><strong>Time till Expiry:</strong> The option's future expiry, at which time it may become worthless, is an important and key factor of every option strategy.</li>
+      <li><strong>Volatility in Stock Prices:</strong> Stock volatility is a statistical measure of the past price movements of the stock. It tells how volatile the stock has actually been over a given period of time.</li>
+      <li><strong>Interest Rate:</strong> Another feature affecting the value of an option is the time value of money. The greater the interest rates, the lower the present value of the future exercise price.</li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPJUL25_Q4A",
+  source: "ICAI Mock Test Paper - Series I, July 2025",
+  chapter_name: "Interest Rate Risk Management",
+  placement: 4,
+  marks: 4,
+  question_html: `
+    <p>Two companies ABC Ltd. and XYZ Ltd. approach DEF Bank for a Forward Rate Agreement (FRA). Both companies want to borrow ₹100 crores after 2 years for a period of 1 year. The bank has calculated the yield curves of both companies as follows:</p>
+
+    <table>
+      <tr><th>Year</th><th>XYZ Ltd.</th><th>ABC Ltd.</th></tr>
+      <tr><td>1</td><td>3.86%</td><td>4.12%</td></tr>
+      <tr><td>2</td><td>4.20%</td><td>5.48%</td></tr>
+      <tr><td>3</td><td>4.48%</td><td>5.78%</td></tr>
+    </table>
+
+    <p><strong>Required:</strong></p>
+    <ol>
+      <li>Identify at least one reason for the difference in the yield curves of the companies.</li>
+      <li>Calculate the rate of interest DEF Bank would quote under a 2V3 FRA, using the companies' yield information as quoted above.</li>
+      <li>Suppose DEF Bank offers an Interest Rate Guarantee for a premium of 0.10% of the amount of loan. Calculate the cost of interest for XYZ Ltd. if the interest rate for one year after 2 years turns out to be:
+        <ol>
+          <li>4.50%</li>
+          <li>5.50%</li>
+        </ol>
+      </li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>(i) Reason for difference in yield curves</strong></p>
+    <p>The difference in yield curves may be due to the lower credit rating of ABC Ltd. compared to XYZ Ltd.</p>
+
+    <p><strong>(ii) Calculation of 2V3 FRA rate</strong></p>
+    <p><strong>XYZ Ltd.</strong></p>
+    <p>Using the relationship:</p>
+    <p>(1 + r) × (1 + 0.0420)<sup>2</sup> = (1 + 0.0448)<sup>3</sup></p>
+    <p>r = [(1.0448)<sup>3</sup> / (1.0420)<sup>2</sup>] − 1</p>
+    <p><strong>r = 5.04%</strong></p>
+    <p>DEF Bank will quote 5.04% for a 2V3 FRA for XYZ Ltd.</p>
+
+    <p><strong>ABC Ltd.</strong></p>
+    <p>(1 + r) × (1 + 0.0548)<sup>2</sup> = (1 + 0.0578)<sup>3</sup></p>
+    <p>r = [(1.0578)<sup>3</sup> / (1.0548)<sup>2</sup>] − 1</p>
+    <p><strong>r = 6.38%</strong></p>
+    <p>DEF Bank will quote 6.38% for a 2V3 FRA for ABC Ltd.</p>
+
+    <p><strong>(iii) Interest payable by XYZ Ltd.</strong></p>
+    <p>The FRA/guaranteed rate for XYZ Ltd. is 5.04%. The premium for the Interest Rate Guarantee is 0.10% of the loan amount.</p>
+
+    <table>
+      <tr><th>Particulars</th><th>Actual rate 4.50%</th><th>Actual rate 5.50%</th></tr>
+      <tr><td>Interest at actual rate / guaranteed rate</td><td>₹100 crore × 4.50% = ₹4.50 crores</td><td>₹100 crore × 5.04% = ₹5.04 crores</td></tr>
+      <tr><td>Premium (cost of option)</td><td>₹100 crore × 0.10% = ₹0.10 crores</td><td>₹100 crore × 0.10% = ₹0.10 crores</td></tr>
+      <tr><td><strong>Total cost</strong></td><td><strong>₹4.60 crores</strong></td><td><strong>₹5.14 crores</strong></td></tr>
+    </table>
+
+    <p>When the actual interest rate is 4.50%, the option is allowed to lapse because the actual rate is lower than the guaranteed rate.</p>
+    <p>When the actual interest rate is 5.50%, it is beneficial for XYZ Ltd. to exercise its option and use the guaranteed rate of 5.04%.</p>
+  `
+},
+{
+  question_id: "AFM_MTPJUL25_Q4B",
+  source: "ICAI Mock Test Paper - Series I, July 2025",
+  chapter_name: "Security Analysis",
+  placement: 4,
+  marks: 6,
+  question_html: `
+    <p>Equity of KGF Ltd. (KGFL) is ₹410 crores and its debt is worth ₹170 crores. Printer Division segment value is attributable to 74%, which has an Asset Beta (βp) of 1.45. The balance value is attributable to Spares and Consumables Division, which has an Asset Beta (βsc) of 1.20. KGFL Debt Beta (βD) is 0.24.</p>
+
+    <p><strong>Required:</strong></p>
+    <ol>
+      <li>Calculate Equity Beta (βE) of KGFL.</li>
+      <li>Assess Equity Beta (βE), if KGF Ltd. decides to change its Debt Equity position by raising further debt and buying back equity to have its Debt Equity Ratio at 1.90 [Debt / (Debt + Equity)]. Assume that the present Debt Beta (βD1) is 0.35 and any further funds raised by way of Debt will have a Beta (βD2) of 0.40.</li>
+    </ol>
+    <p><em>Note: Round off calculations up to 3 decimal points.</em></p>
+  `,
+  solution_html: `
+    <p><strong>(i) Calculation of Equity Beta</strong></p>
+    <p>First, calculate the weighted average of Asset Beta:</p>
+    <p>= 1.45 × 0.74 + 1.20 × 0.26</p>
+    <p>= 1.073 + 0.312</p>
+    <p><strong>Weighted Average Asset Beta = 1.385</strong></p>
+
+    <p>Using the formula:</p>
+    <p>βAsset = βEquity × [E / (E + D)] + βDebt × [D / (E + D)]</p>
+
+    <p>1.385 = βEquity × (410 / 580) + 0.24 × (170 / 580)</p>
+    <p>1.385 = βEquity × 0.7069 + 0.0703</p>
+    <p><strong>βEquity = 1.86</strong></p>
+
+    <p><strong>(ii) Equity Beta on change in capital structure</strong></p>
+    <p>Total value of firm = Equity + Debt</p>
+    <p>= ₹410 crores + ₹170 crores = ₹580 crores</p>
+
+    <p>Desired Debt Equity Ratio = 1.90 : 1.00</p>
+    <p>Desired Debt Level = ₹580 crores × [1.90 / (1.90 + 1.00)]</p>
+    <p>= ₹380 crores (approximately)</p>
+
+    <p>Less: Existing debt = ₹170 crores</p>
+    <p><strong>Additional debt to be raised = ₹210 crores</strong></p>
+
+    <p>Equity after buyback = Total firm value − Desired debt</p>
+    <p>= ₹580 crores − ₹380 crores</p>
+    <p><strong>= ₹200 crores</strong></p>
+
+    <p><strong>Weighted average beta of KGFL</strong></p>
+    <table>
+      <tr><th>Source of finance</th><th>Investment (₹ crores)</th><th>Weight</th><th>Beta</th><th>Weighted Beta</th></tr>
+      <tr><td>Equity</td><td>200</td><td>0.345</td><td>x</td><td>0.345x</td></tr>
+      <tr><td>Debt – 1</td><td>170</td><td>0.293</td><td>0.35</td><td>0.103</td></tr>
+      <tr><td>Debt – 2</td><td>210</td><td>0.362</td><td>0.40</td><td>0.145</td></tr>
+      <tr><td><strong>Total</strong></td><td><strong>580</strong></td><td><strong>1.000</strong></td><td></td><td><strong>0.248 + 0.345x</strong></td></tr>
+    </table>
+
+    <p>Weighted average Asset Beta = 1.385</p>
+    <p>1.385 = 0.248 + 0.345x</p>
+    <p>0.345x = 1.385 − 0.248</p>
+    <p>x = 1.137 / 0.345</p>
+    <p><strong>Revised Equity Beta (βKGFL) = 3.296</strong></p>
+  `
+},
+{
+  question_id: "AFM_MTPJUL25_Q4C",
+  source: "ICAI Mock Test Paper - Series I, July 2025",
+  chapter_name: "Startup Finance",
+  placement: 4,
+  marks: 4,
+  question_html: `
+    <p>Explain the structure of Venture Capital Funds existing in India.</p>
+  `,
+  solution_html: `
+    <p>Three main types of fund structures exist, which are as follows:</p>
+
+    <p><strong>(i) Domestic Funds</strong></p>
+    <p>Domestic Funds, i.e. funds which raise funds domestically, are usually structured as:</p>
+    <ol>
+      <li>A domestic vehicle for the pooling of funds from the investor; and</li>
+      <li>A separate investment adviser that carries out the duties of an asset manager.</li>
+    </ol>
+    <p>The choice of entity for the pooling vehicle falls between a trust and a company, with the trust form prevailing due to its operational flexibility.</p>
+
+    <p><strong>(ii) Offshore Funds</strong></p>
+    <p>Two common alternatives available to offshore investors are the offshore structure and the unified structure.</p>
+
+    <p><strong>Offshore Structure:</strong></p>
+    <p>Under this structure, an investment vehicle makes investments directly into Indian portfolio companies. The assets are managed by an offshore manager, while the investment adviser in India carries out the due diligence and identifies deals.</p>
+
+    <p><strong>Unified Structure:</strong></p>
+    <p>When domestic investors are expected to participate in the fund, a unified structure is used. Overseas investors pool their assets in an offshore vehicle that invests in a locally managed trust, whereas domestic investors directly contribute to the trust.</p>
+  `
+},
+{
+  question_id: "AFM_MTPJUL25_Q5A",
+  source: "ICAI Mock Test Paper - Series I, July 2025",
+  chapter_name: "Derivatives",
+  placement: 5,
+  marks: 8,
+  question_html: `
+    <p><strong>(i) Portfolio Hedging using NIFTY Futures</strong></p>
+
+    <p>On 1 April 2015, Sunidhi was holding a portfolio of 10 securities whose value was ₹9,94,450. The weighted average beta of 9 securities of the portfolio was 1.10.</p>
+
+    <p>Since she was expecting a fall in the prices of the shares in the near future, to hedge her portfolio she sold 5 contracts of NIFTY Futures (Multiplier of 25) expiring in May 2015, which was trading at 8767.07 on 1 April.</p>
+
+    <p><strong>Required:</strong></p>
+    <ol>
+      <li>Calculate the beta of the 10th security.</li>
+      <li>Reconcile the reasons in spite of a 2% fall in the market, as per Sunidhi's apprehension, if she would have earned some profit on her cash position.</li>
+    </ol>
+
+    <p><strong>(ii) Pricing and Gain/Loss on Futures Contract</strong></p>
+
+    <p>A Futures contract is available on R Ltd. that pays an annual dividend of ₹4 and whose stock is currently priced at ₹125. Each Futures contract calls for delivery of 1,000 shares of stock in one year, with daily marking to market. The Treasury Bill rate is 8%.</p>
+
+    <p><strong>Required:</strong></p>
+    <ol>
+      <li>Given the above information, assess the price of one Futures contract.</li>
+      <li>If the company stock price decreases by 6%, what will be the price of one Futures contract?</li>
+      <li>Suppose the company stock price decreases, then evaluate the gain or loss for an investor who has a long position in one Futures contract of R Ltd.</li>
+    </ol>
+
+    <p><em>Ignore margin and taxation, if any.</em></p>
+  `,
+  solution_html: `
+    <p><strong>(i)(1) Calculation of beta of the 10th security</strong></p>
+
+    <p>To compute the beta of the 10th security, first compute the overall weighted beta of the portfolio.</p>
+
+    <p>Let the weighted beta of the portfolio be w.</p>
+
+    <p>5 = [₹9,94,450 / (8767.07 × 25)] × w</p>
+    <p>w = (5 × 8767.07 × 25) / 9,94,450</p>
+    <p><strong>w = 1.102 approximately</strong></p>
+
+    <p>Let the beta of the 10th security be β.</p>
+
+    <p>1.102 = (0.90 × 1.10) + (0.10 × β)</p>
+    <p>1.102 = 0.99 + 0.10β</p>
+    <p><strong>β = 1.12</strong></p>
+
+    <p><strong>(i)(2) Reasons for profit on cash position</strong></p>
+    <p>The main reason for the profit in the cash position might be that, contrary to her expectation, there may be an increase in the value of the cash position or the decrease in the stock price may be lesser than 2%.</p>
+
+    <p><strong>(ii)(1) Price of one Futures contract</strong></p>
+    <p>Future Price = Spot Price + Cost of Carry − Dividend</p>
+
+    <p>= ₹125 + (₹125 × 0.08) − ₹4</p>
+    <p>= ₹125 + ₹10 − ₹4</p>
+    <p><strong>Future Price = ₹131 per share</strong></p>
+
+    <p>Price of one Futures contract = 1,000 shares × ₹131</p>
+    <p><strong>= ₹1,31,000</strong></p>
+
+    <p><strong>(ii)(2) Futures price when stock price decreases by 6%</strong></p>
+    <p>New market price = ₹125 × 94%</p>
+    <p>= ₹117.50</p>
+
+    <p>Future Price = Spot Price + Cost of Carry − Dividend</p>
+    <p>= ₹117.50 + (₹117.50 × 0.08) − ₹4</p>
+    <p>= ₹117.50 + ₹9.40 − ₹4</p>
+    <p><strong>Future Price = ₹122.90 per share</strong></p>
+
+    <p>Price of one Futures contract = ₹122.90 × 1,000</p>
+    <p><strong>= ₹1,22,900</strong></p>
+
+    <p><strong>(ii)(3) Gain or loss for an investor with a long position</strong></p>
+    <p>If the investor has taken a long position, a decrease in price will result in a loss for the investor.</p>
+
+    <p>Amount of loss = Initial Futures contract value − Revised Futures contract value</p>
+    <p>= ₹1,31,000 − ₹1,22,900</p>
+    <p><strong>Loss = ₹8,100</strong></p>
+  `
+},
+{
+  question_id: "AFM_MTPJUL25_Q5B",
+  source: "ICAI Mock Test Paper - Series I, July 2025",
+  chapter_name: "Interest Rate Risk Management",
+  placement: 5,
+  marks: 6,
+  question_html: `
+    <p>Electraspace is a consumer electronics wholesaler. The business of the firm is highly seasonal in nature. In 6 months of a year, the firm has huge cash deposits, especially near Christmas time, and during the other 6 months the firm faces a cash crunch, leading to borrowing of money to cover its exposures for running the business.</p>
+
+    <p>It is expected that the firm shall borrow a sum of €50 million for the entire period of the slack season in about 3 months.</p>
+
+    <p>A bank has given the following quotations:</p>
+
+    <table>
+      <tr><th>Instrument</th><th>Quotation</th></tr>
+      <tr><td>Spot</td><td>5.50% – 5.75%</td></tr>
+      <tr><td>3 × 6 FRA</td><td>5.59% – 5.82%</td></tr>
+      <tr><td>3 × 9 FRA</td><td>5.64% – 5.94%</td></tr>
+      <tr><td>3-month €50,000 Futures contract maturing in 3 months</td><td>94.15 (5.85%)</td></tr>
+    </table>
+
+    <p><strong>Required:</strong></p>
+    <ol>
+      <li>How will an FRA be useful if the actual interest rate after 3 months turns out to be:
+        <ol>
+          <li>4.5%</li>
+          <li>6.5%</li>
+        </ol>
+      </li>
+      <li>How will a 3-month Futures contract be useful for the company if the interest rate turns out as mentioned above?</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><strong>(i) Use of FRA</strong></p>
+
+    <p>By entering into an FRA, the firm shall effectively lock in the interest rate for a specified future period. In the given case, the borrowing period is 6 months and starts after 3 months. Therefore, the firm shall opt for a 3 × 9 FRA, locking the borrowing rate at 5.94%.</p>
+
+    <p><strong>FRA settlement under the two scenarios</strong></p>
+
+    <table>
+      <tr><th>Particulars</th><th>Actual rate 4.50%</th><th>Actual rate 6.50%</th></tr>
+      <tr><td>FRA Rate</td><td>5.94%</td><td>5.94%</td></tr>
+      <tr><td>Actual Interest Rate</td><td>4.50%</td><td>6.50%</td></tr>
+      <tr><td>Loss / (Gain)</td><td>1.44%</td><td>(0.56%)</td></tr>
+      <tr><td>FRA Payment / (Receipts)</td><td>€50 million × 1.44% × ½ = €360,000</td><td>€50 million × 0.56% × ½ = (€140,000)</td></tr>
+      <tr><td>Interest for 6 months at actual rate</td><td>€50 million × 4.50% × ½ = €1,125,000</td><td>€50 million × 6.50% × ½ = €1,625,000</td></tr>
+      <tr><td><strong>Net Outflow</strong></td><td><strong>€1,485,000</strong></td><td><strong>€1,485,000</strong></td></tr>
+    </table>
+
+    <p>Thus, by entering into an FRA, the firm has committed itself to a rate of 5.94%.</p>
+
+    <p><strong>(ii) Use of Futures Contract</strong></p>
+
+    <p>Since the firm is a borrower, it will like to offset its interest cost by profit on Futures contracts. Accordingly, if the interest rate rises, it will gain; hence, it should sell interest rate Futures.</p>
+
+    <p><strong>Number of contracts</strong></p>
+    <p>= (Amount of Borrowing × Duration of Loan) / (Contract Size × Contract Duration)</p>
+    <p>= (€50,000,000 × 6) / (€50,000 × 3)</p>
+    <p><strong>= 2,000 contracts</strong></p>
+
+    <p><strong>Futures settlement under the two scenarios</strong></p>
+
+    <table>
+      <tr><th>Particulars</th><th>Actual rate 4.50%</th><th>Actual rate 6.50%</th></tr>
+      <tr><td>Sell to open</td><td>94.15</td><td>94.15</td></tr>
+      <tr><td>Buy to close</td><td>95.50 (100 − 4.50)</td><td>93.50 (100 − 6.50)</td></tr>
+      <tr><td>Loss / (Gain)</td><td>1.35%</td><td>(0.65%)</td></tr>
+      <tr><td>Cash payment / (receipt) for Futures settlement</td><td>€50,000 × 2,000 × 1.35% × 3/12 = €337,500</td><td>€50,000 × 2,000 × 0.65% × 3/12 = (€162,500)</td></tr>
+      <tr><td>Interest for 6 months at actual rates</td><td>€50 million × 4.50% × ½ = €1,125,000</td><td>€50 million × 6.50% × ½ = €1,625,000</td></tr>
+      <tr><td><strong>Net Outflow</strong></td><td><strong>€1,462,500</strong></td><td><strong>€1,462,500</strong></td></tr>
+    </table>
+
+    <p>Thus, the firm has effectively locked itself into an interest rate of:</p>
+    <p>= (€1,462,500 / €50,000,000) × 100 × (12/6)</p>
+    <p><strong>= 5.85%</strong></p>
+  `
+},
+{
+  question_id: "AFM_MTPJUL25_Q6B",
+  source: "ICAI Mock Test Paper - Series I, July 2025",
+  chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+  placement: 6,
+  marks: 6,
+  question_html: `
+    <p>C Ltd. and P Ltd. both companies operating in the same industry decided to merge and form a new entity S Ltd. The relevant financial details of the two companies prior to merger announcement are as follows:</p>
+
+    <table>
+      <tr><th>Particulars</th><th>C Ltd.</th><th>P Ltd.</th></tr>
+      <tr><td>Annual Earnings after Tax (₹ lakh)</td><td>10,000</td><td>5,800</td></tr>
+      <tr><td>No. of Shares Outstanding (lakh)</td><td>4,000</td><td>1,000</td></tr>
+      <tr><td>P/E Ratio (No. of Times)</td><td>8</td><td>10</td></tr>
+    </table>
+
+    <p>The merger will be affected by means of stock swap (exchange) of 3 shares of C Ltd. for 1 share of P Ltd.</p>
+
+    <p>After the merger it is expected that due to synergy effects, Annual Earnings (Post Tax) are expected to be 8% higher than sum of the earnings of the two companies individually. Further, it is expected that P/E Ratio of S Ltd. shall be average of P/E Ratios of two companies before the merger.</p>
+
+    <p>You are required to determine the extent to which shareholders of P Ltd. will be benefitted per share from the proposed merger.</p>
+  `,
+  solution_html: `
+    <p><strong>Working Notes:</strong></p>
+
+    <p><strong>(i) The Earnings of S Ltd.</strong></p>
+    <table>
+      <tr><th>Particulars</th><th>₹ lakh</th></tr>
+      <tr><td>Earnings of C Ltd.</td><td>10,000</td></tr>
+      <tr><td>Earnings of P Ltd.</td><td>5,800</td></tr>
+      <tr><td>Total Earnings</td><td>15,800</td></tr>
+      <tr><td>Growth due to synergy</td><td>8%</td></tr>
+      <tr><td><strong>Earnings of S Ltd. (15,800 × 1.08)</strong></td><td><strong>17,064</strong></td></tr>
+    </table>
+
+    <p><strong>(ii) Market Value of S Ltd.</strong></p>
+    <table>
+      <tr><th>Particulars</th><th>₹ lakh</th></tr>
+      <tr><td>Earnings of S Ltd.</td><td>17,064</td></tr>
+      <tr><td>P/E Ratio (8 + 10) / 2</td><td>9</td></tr>
+      <tr><td><strong>Market Value of S Ltd.</strong></td><td><strong>1,53,576</strong></td></tr>
+    </table>
+
+    <p><strong>(iii) Number of shares in S Ltd.</strong></p>
+    <table>
+      <tr><th>Particulars</th><th>Shares (lakh)</th></tr>
+      <tr><td>Number of shares of C Ltd.</td><td>4,000</td></tr>
+      <tr><td>Shares issued to P Ltd. (1,000 × 3)</td><td>3,000</td></tr>
+      <tr><td><strong>Total shares of S Ltd.</strong></td><td><strong>7,000</strong></td></tr>
+    </table>
+
+    <p><strong>Gain to Shareholders of P Ltd.</strong></p>
+    <table>
+      <tr><th>Particulars</th><th>Amount</th></tr>
+      <tr><td>Share of shareholders of P Ltd. in S Ltd. (3,000 / 7,000 × 1,53,576)</td><td>₹65,818.29 lakh</td></tr>
+      <tr><td>Market Value of P Ltd. before merger (5,800 × 10)</td><td>₹58,000.00 lakh</td></tr>
+      <tr><td><strong>Gain to shareholders</strong></td><td><strong>₹7,818.29 lakh</strong></td></tr>
+      <tr><td>Number of shares before merger</td><td>1,000 lakh</td></tr>
+      <tr><td><strong>Gain per share</strong></td><td><strong>₹7.82</strong></td></tr>
+    </table>
+
+    <p>Therefore, shareholders of P Ltd. will benefit by approximately ₹7.82 per share from the proposed merger.</p>
+  `
+},
+// sept 25 series 2
+{
+  question_id: "AFM_MTPAUG25_Q1A",
+  source: "ICAI Mock Test Paper - Series II, August 2025",
+  chapter_name: "International Financial Management",
+  placement: 1,
+  marks: 6,
+  question_html: `
+    <p>The Treasury desk of a global bank incorporated in UK wants to invest GBP 200 million on 1st January, 2019 for a period of 6 months and has the following options:</p>
+
+    <p><strong>(1) Equity Trading Desk in Japan:</strong></p>
+    <p>The Equity Trading desk in Japan wants to invest the entire GBP 200 million in high dividend yielding Japanese securities that would earn a dividend income of JPY 1,182 million. The dividends are declared and paid on 29th June. Post dividend, the securities are expected to quote at a 2% discount. The desk also plans to earn JPY 10 million on a stock borrow lending activity because of this investment. The securities are to be sold on June 29 with a T+1 settlement and the amount remitted back to the Treasury in London.</p>
+
+    <p><strong>(2) Fixed Income Desk in US:</strong></p>
+    <p>The Fixed Income desk of US proposed to invest the amount in 6-month G-Secs that provides a return of 5% p.a.</p>
+
+    <p>The exchange rates are as follows:</p>
+
+    <table>
+      <tr>
+        <th>Currency Pair</th>
+        <th>1 Jan 2019 (Spot)</th>
+        <th>30 Jun 2019 (Forward)</th>
+      </tr>
+      <tr>
+        <td>GBP - JPY</td>
+        <td>148.0002</td>
+        <td>150.0000</td>
+      </tr>
+      <tr>
+        <td>GBP - USD</td>
+        <td>1.28000</td>
+        <td>1.30331</td>
+      </tr>
+    </table>
+
+    <p>As a treasurer, advise the bank on the best investment option. What would be your decision from a risk perspective? You may ignore taxation.</p>
+
+    <p><strong>Note:</strong> Show all calculations in Millions and round off them upto two decimal points.</p>
+  `,
+  solution_html: `
+    <p><strong>(1) Yield from Investment in Equity Trading Index in Japan</strong></p>
+
+    <table>
+      <tr>
+        <th>Particulars</th>
+        <th>Amount</th>
+      </tr>
+      <tr>
+        <td>Conversion of GBP 200 million in JPY (148.0002)</td>
+        <td>JPY 29,600.04 Million</td>
+      </tr>
+      <tr>
+        <td>Dividend Income</td>
+        <td>JPY 1,182.00 Million</td>
+      </tr>
+      <tr>
+        <td>Stock Lending</td>
+        <td>JPY 10.00 Million</td>
+      </tr>
+      <tr>
+        <td>Investment Value at End (after 2% discount)</td>
+        <td>JPY 29,008.0392 Million</td>
+      </tr>
+      <tr>
+        <td><strong>Amount available at End</strong></td>
+        <td><strong>JPY 30,200.0392 Million</strong></td>
+      </tr>
+      <tr>
+        <td>Forward Rate of 30.06.2019</td>
+        <td>JPY 150 / GBP</td>
+      </tr>
+      <tr>
+        <td>Amount to be Remitted back to London</td>
+        <td>GBP 201.3336 Million</td>
+      </tr>
+      <tr>
+        <td>Initial Investment</td>
+        <td>GBP 200 Million</td>
+      </tr>
+      <tr>
+        <td><strong>Gain (201.3336 - 200)</strong></td>
+        <td><strong>GBP 1.3336 Million</strong></td>
+      </tr>
+    </table>
+
+    <p><strong>(2) Fixed Income Desk of US</strong></p>
+
+    <table>
+      <tr>
+        <th>Particulars</th>
+        <th>Amount</th>
+      </tr>
+      <tr>
+        <td>Conversion of GBP 200 million in USD (1.28000)</td>
+        <td>USD 256.00 Million</td>
+      </tr>
+      <tr>
+        <td>Add: Interest @ 5% p.a. for 6 months</td>
+        <td>USD 6.40 Million</td>
+      </tr>
+      <tr>
+        <td>Amount available at End</td>
+        <td>USD 262.40 Million</td>
+      </tr>
+      <tr>
+        <td>Forward Rate of 30.06.2019</td>
+        <td>USD 1.30331 / GBP</td>
+      </tr>
+      <tr>
+        <td>Amount to be Remitted back to London</td>
+        <td>GBP 201.3335 Million</td>
+      </tr>
+      <tr>
+        <td>Initial Investment</td>
+        <td>GBP 200 Million</td>
+      </tr>
+      <tr>
+        <td><strong>Gain (201.3335 - 200)</strong></td>
+        <td><strong>GBP 1.3335 Million</strong></td>
+      </tr>
+    </table>
+
+    <p><strong>Decision:</strong></p>
+    <p>Investment in Japanese Yen is preferred over the investment in USD G-Sec as there is a marginal gain.</p>
+
+    <p>From a risk perspective, the company should go for Option-2 Investment in G-Secs as they are risk free.</p>
+  `
+},
+{
+  question_id: "AFM_MTPAUG25_Q1B",
+  source: "ICAI Mock Test Paper - Series II, August 2025",
+  chapter_name: "Interest Rate Risk Management",
+  placement: 1,
+  marks: 8,
+
+  question_html: `
+    <p>MPD Ltd. issues a ₹50 Million Floating Rate Loan on July 1, 2018 with resetting of coupon rate every 6 Months equal to LIBOR + 50 bps.</p>
+
+    <p>MPD is interested in an Interest Rate Collar Strategy of selling a Floor and buying a Cap.</p>
+
+    <p>MPD buys the 3 years Cap and sells 3 years Floor as per the following details on July 1, 2018:</p>
+
+    <table>
+      <tr><th>Particulars</th><th>Details</th></tr>
+      <tr><td>Principal Amount</td><td>₹50 Million</td></tr>
+      <tr><td>Strike Rate</td><td>5% for Floor &amp; 8% for Cap</td></tr>
+      <tr><td>Reference Rate</td><td>6 months LIBOR</td></tr>
+      <tr><td>Premium</td><td>NIL, since premium paid for Cap = premium received for Floor</td></tr>
+    </table>
+
+    <p>The Reset dates and interest rates p.a. on those dates are:</p>
+
+    <table>
+      <tr>
+        <th>Reset Date</th>
+        <th>31-12-2018</th>
+        <th>30-06-2019</th>
+        <th>31-12-2019</th>
+        <th>30-06-2020</th>
+        <th>31-12-2020</th>
+        <th>30-06-2021</th>
+      </tr>
+      <tr>
+        <th>LIBOR (%)</th>
+        <td>7.00</td>
+        <td>8.00</td>
+        <td>6.00</td>
+        <td>4.75</td>
+        <td>4.25</td>
+        <td>5.25</td>
+      </tr>
+    </table>
+
+    <p>Using the above data, you are required to determine:</p>
+    <ol>
+      <li>Effective interest paid out at each of the six reset dates (Round off to the nearest rupee).</li>
+      <li>Average overall effective rate of interest p.a. (Round off to 2 decimals).</li>
+    </ol>
+
+    <p><strong>(8 Marks)</strong></p>
+  `,
+
+  solution_html: `
+    <p><strong>(i) Computation of pay-off of each leg:</strong></p>
+
+    <p><strong>Cap Receipt:</strong></p>
+    <p>Max {0, [Notional Principal × (LIBOR on Reset Date – Cap Strike Rate) × (No. of days in settlement period / 365)]}</p>
+
+    <p><strong>Floor Pay-off:</strong></p>
+    <p>Max {0, [Notional Principal × (Floor Strike Rate – LIBOR on Reset Date) × (No. of days in settlement period / 365)]}</p>
+
+    <p><strong>Statement showing effective interest on each payment date:</strong></p>
+
+    <table>
+      <tr>
+        <th>Reset Date</th>
+        <th>LIBOR (%)</th>
+        <th>Date of Payment</th>
+        <th>Days</th>
+        <th>Interest Payment (₹)<br>LIBOR + 0.50%</th>
+        <th>Cap Receipts (₹)</th>
+        <th>Floor Pay-off (₹)</th>
+        <th>Effective Interest (₹)</th>
+      </tr>
+      <tr>
+        <td>31-12-2018</td>
+        <td>7.00</td>
+        <td>30-06-2019</td>
+        <td>181</td>
+        <td>18,59,589</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18,59,589</td>
+      </tr>
+      <tr>
+        <td>30-06-2019</td>
+        <td>8.00</td>
+        <td>31-12-2019</td>
+        <td>184</td>
+        <td>21,42,466</td>
+        <td>0</td>
+        <td>0</td>
+        <td>21,42,466</td>
+      </tr>
+      <tr>
+        <td>31-12-2019</td>
+        <td>6.00</td>
+        <td>30-06-2020</td>
+        <td>182</td>
+        <td>16,16,120</td>
+        <td>0</td>
+        <td>0</td>
+        <td>16,16,120</td>
+      </tr>
+      <tr>
+        <td>30-06-2020</td>
+        <td>4.75</td>
+        <td>31-12-2020</td>
+        <td>184</td>
+        <td>13,19,672</td>
+        <td>0</td>
+        <td>62,842</td>
+        <td>13,82,514</td>
+      </tr>
+      <tr>
+        <td>31-12-2020</td>
+        <td>4.25</td>
+        <td>30-06-2021</td>
+        <td>181</td>
+        <td>11,77,740</td>
+        <td>0</td>
+        <td>1,85,959</td>
+        <td>13,63,699</td>
+      </tr>
+      <tr>
+        <td>30-06-2021</td>
+        <td>5.25</td>
+        <td>31-12-2021</td>
+        <td>184</td>
+        <td>14,49,315</td>
+        <td>0</td>
+        <td>0</td>
+        <td>14,49,315</td>
+      </tr>
+      <tr>
+        <th colspan="3">Total</th>
+        <th>1096</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th>98,13,703</th>
+      </tr>
+    </table>
+
+    <p><strong>(ii) Computation of Average Annual Effective Interest Rate:</strong></p>
+
+    <p>Average Annual Effective Interest Rate:</p>
+
+    <p>
+      = (Total Effective Interest / Principal Amount) × (365 / Total Number of Days) × 100
+    </p>
+
+    <p>
+      = (₹98,13,703 / ₹5,00,00,000) × (365 / 1096) × 100
+    </p>
+
+    <p><strong>= 6.54%</strong></p>
+  `
+},
+{
+  question_id: "AFM_MTPAUG25_Q2A",
+  source: "ICAI Mock Test Paper - Series II, August 2025",
+  chapter_name: "Advanced Capital Budgeting Decisions",
+  placement: 2,
+  marks: 6,
+
+  question_html: `
+    <p>SS Company is considering the replacement of its existing machine with a new machine. The purchase price of the new machine is ₹26 Lakhs and its expected life is 8 years. The company follows straight-line method of depreciation on the original investment (scrap value is not considered for the purpose of depreciation).</p>
+
+    <p>The other expenses to be incurred for the new machine are as under:</p>
+
+    <ol>
+      <li>Installation Charges ₹9,000.</li>
+      <li>Fees paid to the consultant for his advice to buy new machine ₹6,000.</li>
+      <li>Additional Working Capital required ₹17,000 (will be released after 8 years).</li>
+    </ol>
+
+    <p>The written down value of the existing machine is ₹76,000, and its Cash Salvage Value is ₹12,500. The dismantling of this machine would cost ₹4,500.</p>
+
+    <p>The Annual Earnings (before tax but after depreciation) from the new machine would amount to ₹3,15,000. Income tax rate is 35%. The Company's required Rate of Return is 13%.</p>
+
+    <p>You are required to advise on the viability of the proposal.</p>
+
+    <p><strong>Given:</strong></p>
+    <ul>
+      <li>PVIF (13%, 8) = 0.376</li>
+      <li>PVIFA (13%, 8) = 4.80</li>
+    </ul>
+
+    <p><strong>(6 Marks)</strong></p>
+  `,
+
+  solution_html: `
+    <p><strong>Working Notes:</strong></p>
+
+    <p><strong>1. Computation of Annual Depreciation</strong></p>
+
+    <table>
+      <tr><th>Particulars</th><th>Amount (₹)</th></tr>
+      <tr><td>Purchase Price</td><td>26,00,000</td></tr>
+      <tr><td>Add: Installation Charges</td><td>9,000</td></tr>
+      <tr><td>Add: Fees Paid to Consultant for Advice</td><td>6,000</td></tr>
+      <tr><th>Total Cost of New Machine</th><th>26,15,000</th></tr>
+      <tr><td>Useful Life</td><td>8 Years</td></tr>
+      <tr><th>Annual Depreciation (₹26,15,000 / 8)</th><th>3,26,875</th></tr>
+    </table>
+
+    <p><strong>2. Computation of Annual Cash Savings</strong></p>
+
+    <table>
+      <tr><th>Particulars</th><th>Amount (₹)</th></tr>
+      <tr><td>Annual Earnings</td><td>3,15,000</td></tr>
+      <tr><td>Less: Tax @ 35%</td><td>1,10,250</td></tr>
+      <tr><td>Earnings after Tax</td><td>2,04,750</td></tr>
+      <tr><td>Add: Depreciation on New Machine</td><td>3,26,875</td></tr>
+      <tr><th>Annual Cash Savings</th><th>5,31,625</th></tr>
+    </table>
+
+    <p><strong>3. Tax Effect on Sale of Old Machine</strong></p>
+
+    <table>
+      <tr><th>Particulars</th><th>Amount (₹)</th></tr>
+      <tr><td>Proceeds of Sale</td><td>12,500</td></tr>
+      <tr><td>Less: Cost of Removal</td><td>4,500</td></tr>
+      <tr><th>Net Proceeds</th><th>8,000</th></tr>
+      <tr><td>Less: WDV</td><td>76,000</td></tr>
+      <tr><th>Net Loss due to Sale</th><th>68,000</th></tr>
+      <tr><td>Tax Savings due to Loss on Sale @ 35%</td><td>23,800</td></tr>
+      <tr><th>Total Cash Inflow due to Sale (₹8,000 + ₹23,800)</th><th>31,800</th></tr>
+    </table>
+
+    <p><strong>4. Computation of Net Present Value</strong></p>
+
+    <table>
+      <tr>
+        <th>Particulars</th>
+        <th>Period</th>
+        <th>Cash Flow (₹)</th>
+        <th>PVF @ 13%</th>
+        <th>PV (₹)</th>
+      </tr>
+      <tr>
+        <td>Annual Cash Inflow after Tax</td>
+        <td>1–8</td>
+        <td>5,31,625</td>
+        <td>4.80</td>
+        <td>25,51,800</td>
+      </tr>
+      <tr>
+        <td>Net Salvage Value of Existing Machine</td>
+        <td>0</td>
+        <td>31,800</td>
+        <td>1.0</td>
+        <td>31,800</td>
+      </tr>
+      <tr>
+        <td>Working Capital Realized</td>
+        <td>8</td>
+        <td>17,000</td>
+        <td>0.376</td>
+        <td>6,392</td>
+      </tr>
+      <tr>
+        <th colspan="4">Present Value of Cash Inflows</th>
+        <th>25,89,992</th>
+      </tr>
+      <tr>
+        <td>Less: Initial Investment</td>
+        <td>0</td>
+        <td>26,15,000</td>
+        <td>1.0</td>
+        <td>26,15,000</td>
+      </tr>
+      <tr>
+        <td>Less: Initial Working Capital</td>
+        <td>0</td>
+        <td>17,000</td>
+        <td>1.0</td>
+        <td>17,000</td>
+      </tr>
+      <tr>
+        <th colspan="4">NPV of the Proposal</th>
+        <th>(42,008)</th>
+      </tr>
+    </table>
+
+    <p><strong>Decision:</strong> Since NPV of the project is negative, it is not viable.</p>
+  `
+},
+{
+  question_id: "AFM_MTPAUG25_Q2B",
+  source: "ICAI Mock Test Paper - Series II, August 2025",
+  chapter_name: "Financial Policy and Corporate Strategy",
+  placement: 2,
+  marks: 4,
+
+  question_html: `
+    <p>STR Ltd.’s current financial year's income statement reported its net income after tax as ₹50 Crore.</p>
+
+    <p>Following is the capital structure of STR Ltd. at the end of current financial year:</p>
+
+    <table>
+      <tr><th>Particulars</th><th>Amount</th></tr>
+      <tr><td>Debt (Coupon rate = 11%)</td><td>₹80 Crore</td></tr>
+      <tr><td>Equity (Share Capital + Reserves &amp; Surplus)</td><td>₹250 Crore</td></tr>
+      <tr><th>Invested Capital</th><th>₹330 Crore</th></tr>
+    </table>
+
+    <p>Following data is given to estimate cost of equity capital:</p>
+
+    <table>
+      <tr><th>Particulars</th><th>Details</th></tr>
+      <tr><td>Asset Beta of TSR Ltd.</td><td>1.11</td></tr>
+      <tr><td>Risk-free Rate of Return</td><td>8.50%</td></tr>
+      <tr><td>Average market risk premium</td><td>9%</td></tr>
+    </table>
+
+    <p>The applicable corporate income tax rate is 30%.</p>
+
+    <p>Estimate Economic Value Added (EVA) of RST Ltd. in ₹ lakh.</p>
+
+    <p><strong>Note:</strong> Round off all calculations up to two decimal points.</p>
+
+    <p><strong>(4 Marks)</strong></p>
+  `,
+
+  solution_html: `
+    <p><strong>Calculation of Cost of Equity:</strong></p>
+
+    <p>First of all, to calculate Cost of Equity we shall compute the Equity Beta of STR Ltd. as follows:</p>
+
+    <p>
+      βa = βe × [E / (E + D(1 - t))]
+    </p>
+
+    <p>
+      1.11 = βe × [250 / (250 + 80(1 - 0.30))]
+    </p>
+
+    <p><strong>βe = 1.36</strong></p>
+
+    <p>Then we shall compute the Cost of Equity as per CAPM as follows:</p>
+
+    <p>ke = Rf + β × Market Risk Premium</p>
+    <p>= 8.50% + 1.36 × 9%</p>
+    <p>= 8.50% + 12.24%</p>
+    <p><strong>= 20.74%</strong></p>
+
+    <p><strong>Cost of Debt:</strong></p>
+    <p>kd = 11%(1 - 0.30)</p>
+    <p><strong>= 7.70%</strong></p>
+
+    <p><strong>Calculation of WACC:</strong></p>
+
+    <p>
+      WACC (ko) = ke × [E / (E + D)] + kd × [D / (E + D)]
+    </p>
+
+    <p>
+      = 20.74 × (250 / 330) + 7.70 × (80 / 330)
+    </p>
+
+    <p>= 15.71 + 1.87</p>
+    <p><strong>WACC = 17.58%</strong></p>
+
+    <p><strong>Calculation of Operating Income:</strong></p>
+
+    <table>
+      <tr><th>Particulars</th><th>Amount (₹ lakh)</th></tr>
+      <tr><td>Net Income after Tax</td><td>5,000.00</td></tr>
+      <tr><td>Taxable Income = 5,000 / (1 - 0.30)</td><td>7,142.86</td></tr>
+      <tr><td>Interest = 80 Crore × 11%</td><td>880.00</td></tr>
+      <tr><th>Operating Income (EBIT)</th><th>8,022.86</th></tr>
+    </table>
+
+    <p><strong>Calculation of Economic Value Added:</strong></p>
+
+    <p>
+      EVA = EBIT (1 - Tax Rate) - WACC × Invested Capital
+    </p>
+
+    <p>
+      = ₹8,022.86 lakh (1 - 0.30) - 17.58% × ₹330 Crore
+    </p>
+
+    <p>
+      = ₹5,616.00 lakh - ₹5,801.40 lakh
+    </p>
+
+    <p><strong>EVA = -₹185.40 lakh</strong></p>
+  `
+},
+{
+  question_id: "AFM_MTPAUG25_Q2C",
+  source: "ICAI Mock Test Paper - Series II, August 2025",
+  chapter_name: "Foreign Exchange Risk Management",
+  placement: 2,
+  marks: 4,
+
+  question_html: `
+    <p>Briefly explain the parameters to identify the currency risk.</p>
+    <p><strong>(4 Marks)</strong></p>
+  `,
+
+  solution_html: `
+    <p>Currency risk is dependent on the Government action and economic development. Some of the parameters to identify the currency risk are as follows:</p>
+
+    <ol>
+      <li>
+        <strong>Government Action:</strong>
+        The Government action of any country has visual impact in its currency. For example, the UK Government's decision to divorce from European Union i.e. Brexit brought the pound to its lowest since 1980’s.
+      </li>
+      <li>
+        <strong>Nominal Interest Rate:</strong>
+        As per interest rate parity (IRP), the currency exchange rate depends on the nominal interest of that country.
+      </li>
+      <li>
+        <strong>Inflation Rate:</strong>
+        Purchasing power parity theory discussed in later chapters impacts the value of currency.
+      </li>
+      <li>
+        <strong>Natural Calamities:</strong>
+        Any natural calamity can have negative impact.
+      </li>
+      <li>
+        <strong>War, Coup, Rebellion etc.:</strong>
+        All these actions can have far-reaching impact on currency’s exchange rates.
+      </li>
+      <li>
+        <strong>Change of Government:</strong>
+        The change of government and its attitude towards foreign investment also helps to identify the currency risk.
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPAUG25_Q3A",
+  source: "ICAI AFM Mock Test Paper – Series II, August 2025",
+  chapter_name: "Mutual Funds",
+  placement: 3,
+  marks: 6,
+  question_html: `
+    <p>Mr. Y has invested in the three mutual funds (MF) as per the following details:</p>
+    <table>
+      <tr><th>Particulars</th><th>MF X</th><th>MF Y</th><th>MF Z</th></tr>
+      <tr><td>Amount of Investment (₹)</td><td>2,00,000</td><td>4,00,000</td><td>2,00,000</td></tr>
+      <tr><td>NAV at the time of purchase (₹)</td><td>10.30</td><td>10.10</td><td>10.00</td></tr>
+      <tr><td>Dividend received up to 31.03.2018 (₹)</td><td>6,000</td><td>Nil</td><td>5,000</td></tr>
+      <tr><td>NAV as on 31.03.2018 (₹)</td><td>10.25</td><td>10.00</td><td>10.20</td></tr>
+      <tr><td>Effective yield per annum as on 31.03.2018</td><td>9.66%</td><td>-11.66%</td><td>24.15%</td></tr>
+    </table>
+    <p>Assume 1 year = 365 days.</p>
+    <p>Mr. Y has misplaced the documents of his investment. Help him in finding the date of his original investment after ascertaining:</p>
+    <ol>
+      <li>Number of units in each scheme;</li>
+      <li>Total NAV;</li>
+      <li>Total Yield; and</li>
+      <li>Number of days investment held.</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><b>(i) Number of units in each scheme</b></p>
+    <p>MF X = ₹2,00,000 / ₹10.30 = 19,417.48 units</p>
+    <p>MF Y = ₹4,00,000 / ₹10.10 = 39,603.96 units</p>
+    <p>MF Z = ₹2,00,000 / ₹10.00 = 20,000 units</p>
+
+    <p><b>(ii) Total NAV on 31.03.2018</b></p>
+    <p>MF X = 19,417.48 × ₹10.25 = ₹1,99,029.17</p>
+    <p>MF Y = 39,603.96 × ₹10.00 = ₹3,96,039.60</p>
+    <p>MF Z = 20,000 × ₹10.20 = ₹2,04,000</p>
+    <p><b>Total NAV = ₹7,99,068.77</b></p>
+
+    <p><b>(iii) Total Yield</b></p>
+    <p>MF X: Capital yield = ₹1,99,029.17 − ₹2,00,000 = −₹970.83. Adding dividend of ₹6,000 gives total yield of ₹5,029.17.</p>
+    <p>MF Y: Capital yield = ₹3,96,039.60 − ₹4,00,000 = −₹3,960.40. Dividend is nil. Total yield = −₹3,960.40.</p>
+    <p>MF Z: Capital yield = ₹2,04,000 − ₹2,00,000 = ₹4,000. Adding dividend of ₹5,000 gives total yield of ₹9,000.</p>
+    <p>Total yield = ₹5,029.17 − ₹3,960.40 + ₹9,000 = <b>₹10,068.77</b>.</p>
+    <p>Total Yield (%) = (₹10,068.77 / ₹8,00,000) × 100 = <b>1.2586%</b>.</p>
+
+    <p><b>(iv) Number of days investment held</b></p>
+    <p>MF X: Yield percentage = (₹5,029.17 / ₹2,00,000) × 100 = 2.5146%.</p>
+    <p>Holding period = (2.5146 × 365) / 9.66 = <b>95 days</b>.</p>
+    <p>MF Y: Yield percentage = (−₹3,960.40 / ₹4,00,000) × 100 = −0.9901%.</p>
+    <p>Holding period = (−0.9901 × 365) / −11.66 = <b>31 days</b>.</p>
+    <p>MF Z: Yield percentage = (₹9,000 / ₹2,00,000) × 100 = 4.5%.</p>
+    <p>Holding period = (4.5 × 365) / 24.15 = <b>68 days</b>.</p>
+
+    <p><b>Original investment dates:</b></p>
+    <ul>
+      <li>MF X: 27.12.2017 (alternative date: 26.12.2017)</li>
+      <li>MF Y: 01.03.2018 (alternative date: 28.02.2018)</li>
+      <li>MF Z: 23.01.2018 (alternative date: 22.01.2018)</li>
+    </ul>
+  `
+},
+{
+  question_id: "AFM_MTPAUG25_Q3B",
+  source: "ICAI AFM Mock Test Paper – Series II, August 2025",
+  chapter_name: "Portfolio Management",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p>Following is the data regarding six securities:</p>
+    <table>
+      <tr><th>Particulars</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th></tr>
+      <tr><td>Return (%)</td><td>10</td><td>10</td><td>15</td><td>5</td><td>11</td><td>10</td></tr>
+      <tr><td>Risk (%) (Standard deviation)</td><td>5</td><td>6</td><td>13</td><td>5</td><td>6</td><td>7</td></tr>
+    </table>
+    <p>(i) Recommend at least three securities which shall be selected among the six securities mentioned above.</p>
+    <p>(ii) Assuming perfect correlation, evaluate whether it is preferable to invest 80% in security U and 20% in security W or to invest 100% in Y.</p>
+  `,
+  solution_html: `
+    <p><b>(i) Selection of securities</b></p>
+    <p>Security U gives a return of 10% at a risk level of 5%. Securities V and Z give the same return of 10%, but their risk levels are 6% and 7% respectively. Security X gives only 5% return at a risk level of 5%. Hence, security U dominates securities V, X and Z.</p>
+    <p>Securities W and Y offer higher returns but carry higher levels of risk. Hence, securities <b>U, W and Y</b> can be selected based on individual preferences.</p>
+
+    <p><b>(ii) Comparison of the portfolio with security Y</b></p>
+    <p>Where perfect positive correlation exists between two securities, their risk and return can be averaged in proportion.</p>
+    <p>For investment in U and W in the proportion 80:20 (4:1):</p>
+    <p>Risk = [(4 × 5%) + (1 × 13%)] / 5 = <b>6.6%</b></p>
+    <p>Return = [(4 × 10%) + (1 × 15%)] / 5 = <b>11%</b></p>
+    <p>Comparison:</p>
+    <table>
+      <tr><th>Particulars</th><th>80% U + 20% W</th><th>100% Y</th></tr>
+      <tr><td>Risk</td><td>6.6%</td><td>6%</td></tr>
+      <tr><td>Return</td><td>11%</td><td>11%</td></tr>
+    </table>
+    <p>Security Y is preferable because it provides the same return of 11% with a lower risk of 6%, compared with 6.6% for the U-W portfolio.</p>
+    <p><i>Source note: The suggested answer's comparison table appears to contain a typographical inconsistency in its U-W portfolio label; the calculation above uses U and W as stated in the question.</i></p>
+  `
+},
+{
+  question_id: "AFM_MTPAUG25_Q3C_BLOCKCHAIN",
+  source: "ICAI AFM Mock Test Paper – Series II, August 2025",
+  chapter_name: "Financial Policy and Corporate Strategy",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p>What are the risks associated with the use of blockchain technology?</p>
+  `,
+  solution_html: `
+    <p>The risks associated with the use of blockchain technology are as follows:</p>
+    <ol>
+      <li><b>Different risk appetites:</b> Organisations need to consider risks from a wider perspective because different members of a particular blockchain may have different risk appetites or risk tolerances. This may lead to conflicts when monitoring controls are designed for a blockchain.</li>
+      <li><b>Reliability of financial transactions:</b> The reliability of financial transactions depends on the underlying technology. If the underlying consensus mechanism is tampered with, financial information stored in the ledger may become inaccurate and unreliable.</li>
+      <li><b>Absence of a central authority:</b> In the absence of a central authority to administer and enforce protocol amendments, development and maintenance of process control activities may be challenging. Users of public blockchains may find it difficult to understand the general IT controls implemented and their effectiveness.</li>
+      <li><b>Information overload:</b> Since blockchain involves huge amounts of data being updated frequently, information overload may challenge the level of monitoring required.</li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPAUG25_Q3C_INDICATORS",
+  source: "ICAI AFM Mock Test Paper – Series II, August 2025",
+  chapter_name: "Financial Policy and Corporate Strategy",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p>What are the various indicators used to find out how the economy shall perform in the future?</p>
+  `,
+  solution_html: `
+    <p>Various indicators are used to find out how the economy shall perform in the future. These indicators are classified as follows:</p>
+    <ol>
+      <li><b>Leading Indicators:</b> They lead the economic activity in terms of their outcome. They relate to time-series data of variables that reach high or low points in advance of economic activity.</li>
+      <li><b>Roughly Coincidental Indicators:</b> They reach their peaks and troughs at approximately the same time as the economy.</li>
+      <li><b>Lagging Indicators:</b> They are time-series data of variables that lag behind in their consequences vis-à-vis the economy. They reach their turning points after the economy has already reached its own turning point.</li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPAUG25_Q4A",
+  source: "ICAI AFM Mock Test Paper – Series II, August 2025",
+  chapter_name: "Foreign Exchange Risk Management",
+  placement: 4,
+  marks: 6,
+  question_html: `
+    <p>Columbus Surgicals Inc. is based in the US. It has recently imported surgical raw materials from the UK and has been invoiced for £480,000, payable in 3 months. It has also exported surgical goods to India and France.</p>
+    <p>The Indian customer has been invoiced for £138,000, payable in 3 months, and the French customer has been invoiced for €590,000, payable in 4 months.</p>
+    <p>Current spot and forward rates are as follows:</p>
+    <ul>
+      <li>£ / US$: Spot: 0.9830 – 0.9850</li>
+      <li>Three months forward: 0.9520 – 0.9545</li>
+      <li>US$ / €: Spot: 1.8890 – 1.8920</li>
+      <li>Four months forward: 1.9510 – 1.9540</li>
+    </ul>
+    <p>Current money market rates:</p>
+    <ul>
+      <li>UK: 10.0% – 12.0% p.a.</li>
+      <li>France: 14.0% – 16.0% p.a.</li>
+      <li>USA: 11.5% – 13.0% p.a.</li>
+    </ul>
+    <p>You, as Treasury Manager, are required to show how the company can hedge its foreign exchange exposure using forward markets and money market hedge and suggest which is the best hedging technique.</p>
+  `,
+  solution_html: `
+    <p><b>1. £ Exposure</b></p>
+    <p>Columbus has a £ receipt of £138,000 and a payment of £480,000, both maturing in 3 months. These can be matched, leaving a net liability of:</p>
+    <p>£480,000 − £138,000 = <b>£342,000</b></p>
+
+    <p><b>(i) Forward market hedge</b></p>
+    <p>Buy a 3-month forward contract.</p>
+    <p>Amount payable after 3 months = £342,000 / 0.9520 = <b>US$359,244</b>.</p>
+
+    <p><b>(ii) Money market hedge</b></p>
+    <p>To pay £ after 3 months, Columbus should borrow in US$, convert it into £ and deposit the £ amount.</p>
+    <p>£ deposit required now = £342,000 / 1.025 = <b>£333,658</b>.</p>
+    <p>Using the spot rate of 0.9830, the US$ loan required = <b>US$339,429</b>.</p>
+    <p>Loan repayment after 3 months at 3.25% interest = <b>US$350,460</b>.</p>
+    <p>Therefore, the money market hedge is cheaper for the £ exposure.</p>
+
+    <p><b>2. € Receipt</b></p>
+    <p>Amount to be hedged = <b>€590,000</b>.</p>
+
+    <p><b>(i) Forward market hedge</b></p>
+    <p>Sell a 4-month forward contract.</p>
+    <p>Amount receivable after 4 months = €590,000 × 1.9510 = <b>US$1,151,090</b>.</p>
+
+    <p><b>(ii) Money market hedge</b></p>
+    <p>Borrow in € and convert the proceeds into US$, then deposit the US$ amount.</p>
+    <p>€ amount to be borrowed now = €590,000 / 1.0533 = <b>€560,144</b>.</p>
+    <p>Using the spot rate of 1.8890, the US$ deposit = <b>US$1,058,113</b>.</p>
+    <p>Deposit amount after 4 months at 3.83% interest = <b>US$1,098,639</b>.</p>
+    <p>In this case, more will be received in US$ under the forward hedge. Therefore, the forward hedge is preferable for the € receipt.</p>
+  `
+},
+{
+  question_id: "AFM_MTPAUG25_Q4B",
+  source: "ICAI AFM Mock Test Paper – Series II, August 2025",
+  chapter_name: "Derivatives Analysis and Valuation",
+  placement: 4,
+  marks: 4,
+  question_html: `
+    <p>A hypothetical company ABC Ltd. issued a 10% Debenture (Face Value of ₹1,000) with a duration of 10 years. It is currently trading at ₹850 per debenture. The bond is convertible into 50 equity shares currently quoted at ₹17 per share.</p>
+    <p>If the yield on an equivalent comparable bond is 11.80%, determine the spread of yield of the above bond from this comparable bond.</p>
+    <p>Present value factors:</p>
+    <table>
+      <tr><th>Year</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr>
+      <tr><td>PVIF at 11%</td><td>0.901</td><td>0.812</td><td>0.731</td><td>0.659</td><td>0.593</td><td>0.535</td><td>0.482</td><td>0.434</td><td>0.391</td><td>0.352</td></tr>
+      <tr><td>PVIF at 13%</td><td>0.885</td><td>0.783</td><td>0.693</td><td>0.613</td><td>0.543</td><td>0.480</td><td>0.425</td><td>0.376</td><td>0.333</td><td>0.295</td></tr>
+    </table>
+  `,
+  solution_html: `
+    <p>Conversion price = 50 × ₹17 = <b>₹850</b>.</p>
+    <p>Intrinsic value = <b>₹850</b>.</p>
+    <p>Accordingly, the yield (r) on the bond is determined from:</p>
+    <p>₹850 = ₹100 × PVAF(r, 10) + ₹1,000 × PVF(r, 10)</p>
+
+    <p><b>Discounting at 11%:</b></p>
+    <p>₹850 = ₹100 × 5.890 + ₹1,000 × 0.352</p>
+    <p>Excess of calculated value over market price = ₹938.00 − ₹850 = <b>₹88.00</b>.</p>
+
+    <p><b>Discounting at 13%:</b></p>
+    <p>₹850 = ₹100 × 5.426 + ₹1,000 × 0.295</p>
+    <p>Calculated value = ₹837.60; difference from market price = <b>−₹12.40</b>.</p>
+
+    <p><b>Interpolation:</b></p>
+    <p>Yield = 11% + [90.90 / (90.90 − (−12.40))] × (13% − 11%)</p>
+    <p>Yield = <b>12.76%</b>.</p>
+    <p>Spread from comparable bond = 12.76% − 11.80% = <b>0.96%</b>.</p>
+    <p><i>Source note: The source's intermediate valuation line states ₹91 and its interpolation uses ₹90.90, although the preceding displayed figures do not transparently reconcile to that amount. The final suggested answer is 12.76% yield and 0.96% spread.</i></p>
+  `
+},
+{
+  question_id: "AFM_MTPAUG25_Q4C",
+  source: "ICAI AFM Mock Test Paper – Series II, August 2025",
+  chapter_name: "Startup Finance",
+  placement: 4,
+  marks: 4,
+  question_html: `
+    <p>Discuss any four innovative sources of financing available for startups apart from traditional bank loans.</p>
+  `,
+  solution_html: `
+    <p>Four innovative sources of financing available for startups are:</p>
+    <ol>
+      <li><b>Peer-to-peer lending:</b> A group of people come together and lend money to each other. Many small and ethnic business groups having similar faith or interests generally support each other in their startup endeavours.</li>
+      <li><b>Crowdfunding:</b> Crowdfunding is the use of small amounts of capital from a large number of individuals to finance a new business initiative. It uses the easy accessibility of vast networks of people through social media and crowdfunding websites to bring investors and entrepreneurs together.</li>
+      <li><b>Microloans:</b> Microloans are small loans given by individuals at lower interest rates to new business ventures. These loans may be issued by a single individual or aggregated across a number of individuals who each contribute a portion of the total amount.</li>
+      <li><b>Vendor financing:</b> Vendor financing is a form of financing in which a company lends money to one of its customers so that the customer can buy products from that company. It may also occur when manufacturers and distributors defer payment until goods are sold, extending payment terms, for example, from 30 days to 45 or 60 days. This depends on creditworthiness and may involve payment of more money.</li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPAUG25_Q5A",
+  source: "ICAI AFM Mock Test Paper – Series II, August 2025",
+  chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+  placement: 5,
+  marks: 8,
+  question_html: `
+    <p>X Ltd. is studying the possible acquisition of Y Ltd. by way of merger. The following data are available:</p>
+    <table>
+      <tr><th>Particulars</th><th>X Ltd.</th><th>Y Ltd.</th></tr>
+      <tr><td>Market Capitalisation (₹)</td><td>75,00,000</td><td>90,00,000</td></tr>
+      <tr><td>Gross Profit Ratio</td><td>20%</td><td>20%</td></tr>
+      <tr><td>Inventory Turnover Ratio</td><td>5 times</td><td>4 times</td></tr>
+      <tr><td>Debtor Turnover Ratio</td><td>3 times</td><td>5 times</td></tr>
+      <tr><td>12% Debenture (₹)</td><td>10,00,000</td><td>—</td></tr>
+      <tr><td>10% Debenture (₹)</td><td>—</td><td>14,40,000</td></tr>
+      <tr><td>Number of Equity Shares</td><td>1,00,000</td><td>60,000</td></tr>
+      <tr><td>Operating Expenses</td><td>86%</td><td>78%</td></tr>
+      <tr><td>Corporate Tax Rate</td><td>30%</td><td>30%</td></tr>
+      <tr><td>Closing Stock (₹)</td><td>15,00,000</td><td>5,00,0000</td></tr>
+      <tr><td>Debtors (₹)</td><td>10,00,000</td><td>8,00,000</td></tr>
+    </table>
+    <p>You are required to calculate:</p>
+    <ol>
+      <li>Swap ratio based on EPS and MPS, respectively, as weightage of 40% and 60%.</li>
+      <li>Post-merger EPS.</li>
+      <li>Post-merger market price assuming the same P/E ratio of X Ltd.</li>
+      <li>Post-merger gain or loss in EPS.</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><b>Working Note 1: Calculation of Sales and Profit</b></p>
+    <p>Inventory Turnover Ratio = COGS / Closing Stock.</p>
+    <p><b>X Ltd.</b></p>
+    <p>5 = COGS / ₹15,00,000</p>
+    <p>COGS = ₹75,00,000.</p>
+    <p>Gross Profit Ratio of 20% means COGS is 80% of sales.</p>
+    <p>Sales = ₹75,00,000 × 100 / 80 = <b>₹93,75,000</b>.</p>
+    <p><b>Y Ltd.</b></p>
+    <p>4 = COGS / ₹5,00,000</p>
+    <p>COGS = ₹20,00,000.</p>
+    <p>Sales = ₹20,00,000 × 100 / 80 = <b>₹25,00,000</b>.</p>
+
+    <p><b>Statement of Profit</b></p>
+    <table>
+      <tr><th>Particulars</th><th>X Ltd. (₹)</th><th>Y Ltd. (₹)</th></tr>
+      <tr><td>Sales</td><td>93,75,000</td><td>25,00,000</td></tr>
+      <tr><td>Less: Operating Expenses</td><td>80,62,500</td><td>19,50,000</td></tr>
+      <tr><td>EBIT</td><td>13,12,500</td><td>5,50,000</td></tr>
+      <tr><td>Less: Interest</td><td>1,20,000</td><td>1,44,000</td></tr>
+      <tr><td>EBT</td><td>11,92,500</td><td>4,06,000</td></tr>
+      <tr><td>Less: Tax at 30%</td><td>3,57,750</td><td>1,21,800</td></tr>
+      <tr><td><b>EAT</b></td><td><b>8,34,750</b></td><td><b>2,84,200</b></td></tr>
+    </table>
+
+    <p><b>Working Note 2: EPS, MPS and P/E Ratio</b></p>
+    <table>
+      <tr><th>Particulars</th><th>X Ltd.</th><th>Y Ltd.</th></tr>
+      <tr><td>Number of shares</td><td>1,00,000</td><td>60,000</td></tr>
+      <tr><td>EPS</td><td>₹8.34</td><td>₹4.74</td></tr>
+      <tr><td>MPS</td><td>₹75</td><td>₹150</td></tr>
+      <tr><td>P/E Ratio</td><td>8.99</td><td>31.65</td></tr>
+    </table>
+    <p>EPS of X Ltd. = ₹8,34,750 / 1,00,000 = ₹8.34.</p>
+    <p>EPS of Y Ltd. = ₹2,84,200 / 60,000 = ₹4.74.</p>
+    <p>MPS of X Ltd. = ₹75,00,000 / 1,00,000 = ₹75.</p>
+    <p>MPS of Y Ltd. = ₹90,00,000 / 60,000 = ₹150.</p>
+    <p>P/E Ratio of X Ltd. = 75 / 8.34 = 8.99.</p>
+    <p>P/E Ratio of Y Ltd. = 150 / 4.74 = 31.65.</p>
+
+    <p><b>(i) Weighted Swap Ratio</b></p>
+    <p>EPS-based ratio = 4.74 / 8.34 = 0.5683.</p>
+    <p>Weighted EPS ratio = 0.5683 × 0.40 = 0.227.</p>
+    <p>MPS-based ratio = 150 / 75 = 2.00.</p>
+    <p>Weighted MPS ratio = 2.00 × 0.60 = 1.200.</p>
+    <p>Weighted swap ratio = 0.227 + 1.200 = <b>1.427</b>.</p>
+
+    <p><b>(ii) Post-merger EPS</b></p>
+    <p>Post-merger EPS = (EAT of X Ltd. + EAT of Y Ltd.) / (Shares of X Ltd. + New shares issued to Y Ltd.).</p>
+    <p>= (₹8,34,750 + ₹2,84,200) / [1,00,000 + (60,000 × 1.427)]</p>
+    <p>= ₹11,18,950 / 1,85,620 = <b>₹6.03</b>.</p>
+
+    <p><b>(iii) Post-merger market price</b></p>
+    <p>Assuming the same P/E ratio as X Ltd.:</p>
+    <p>MPS = P/E Ratio × Post-merger EPS</p>
+    <p>= 8.99 × ₹6.03 = <b>₹54.21</b>.</p>
+
+    <p><b>(iv) Gain or loss to shareholders</b></p>
+    <p>The suggested answer states the following comparison:</p>
+    <table>
+      <tr><th>Shareholders</th><th>Pre-merger EPS</th><th>Post-merger EPS used in suggested answer</th></tr>
+      <tr><td>X Ltd.</td><td>₹8.34</td><td>₹6.99</td></tr>
+      <tr><td>Y Ltd.</td><td>₹4.74</td><td>₹6.99 × 1.427 = ₹9.97</td></tr>
+    </table>
+    <p>As per the suggested answer, X Ltd. shareholders lose ₹1.35 per share (₹8.34 − ₹6.99), while Y Ltd. shareholders gain ₹5.23 per share (₹9.97 − ₹4.74).</p>
+    <p><i>Source inconsistency: The suggested answer calculates post-merger EPS as ₹6.03 in requirement (ii), but uses ₹6.99 in requirement (iv). The gain/loss figures above reproduce the suggested answer's stated figures and do not reconcile the inconsistency.</i></p>
+    <p><i>Source data note: The closing stock for Y Ltd. is printed as ₹5,00,0000 in the question, while the suggested working uses ₹5,00,000. The suggested calculation has been followed.</i></p>
+  `
+},
+{
+  question_id: "AFM_MTPAUG25_Q5B",
+  source: "ICAI AFM Mock Test Paper – Series II, August 2025",
+  chapter_name: "Portfolio Management",
+  placement: 5,
+  marks: 6,
+  question_html: `
+    <p>Mr. X owns a portfolio with the following characteristics:</p>
+    <table>
+      <tr><th>Particulars</th><th>Security A</th><th>Security B</th><th>Risk-free security</th></tr>
+      <tr><td>Factor 1 sensitivity</td><td>0.80</td><td>1.50</td><td>0</td></tr>
+      <tr><td>Factor 2 sensitivity</td><td>0.60</td><td>1.20</td><td>0</td></tr>
+      <tr><td>Expected return</td><td>15%</td><td>20%</td><td>10%</td></tr>
+    </table>
+    <p>It is assumed that security returns are generated by a two-factor model.</p>
+    <ol>
+      <li>If Mr. X has ₹1,00,000 to invest and sells short ₹50,000 of security B and purchases ₹1,50,000 of security A, what is the sensitivity of Mr. X's portfolio to the two factors?</li>
+      <li>If Mr. X borrows ₹1,00,000 at the risk-free rate and invests the amount he borrows along with the original amount of ₹1,00,000 in security A and B in the same proportion as described in part (i), what is the sensitivity of the portfolio to the two factors?</li>
+      <li>What is the expected return premium of factor 2?</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><b>(i) Portfolio sensitivity to the two factors</b></p>
+    <p>Mr. X's position is +1.50 in security A and −0.50 in security B.</p>
+    <p>Factor 1 sensitivity = (1.50 × 0.80) + (−0.50 × 1.50)</p>
+    <p>= 1.20 − 0.75 = <b>0.45</b>.</p>
+    <p>Factor 2 sensitivity = (1.50 × 0.60) + (−0.50 × 1.20)</p>
+    <p>= 0.90 − 0.60 = <b>0.30</b>.</p>
+
+    <p><b>(ii) Revised portfolio sensitivity</b></p>
+    <p>Revised positions:</p>
+    <ul>
+      <li>Security A = ₹3,00,000 / ₹1,00,000 = 3.</li>
+      <li>Security B = −₹1,00,000 / ₹1,00,000 = −1.</li>
+      <li>Risk-free asset = −₹1,00,000 / ₹1,00,000 = −1.</li>
+    </ul>
+    <p>Factor 1 sensitivity = (3 × 0.80) + (−1 × 1.50) + (−1 × 0)</p>
+    <p>= 2.40 − 1.50 = <b>0.90</b>.</p>
+    <p>Factor 2 sensitivity = (3 × 0.60) + (−1 × 1.20) + (−1 × 0)</p>
+    <p>= 1.80 − 1.20 = <b>0.60</b>.</p>
+
+    <p><b>(iii) Expected return premium of factor 2</b></p>
+    <p>Expected Return = Risk-free Rate of Return + Risk Premium.</p>
+    <p>Let λ1 and λ2 be the risk premiums for Factor 1 and Factor 2, respectively.</p>
+    <p>For Security A: 15 = 10 + 0.80λ1 + 0.60λ2.</p>
+    <p>For Security B: 20 = 10 + 1.50λ1 + 1.20λ2.</p>
+    <p>On solving, λ1 = 0.</p>
+    <p>Using Security A: 15 = 10 + 0.60λ2.</p>
+    <p>λ2 = 5 / 0.60 = <b>8.33%</b>.</p>
+    <p>Alternatively, using Security B: λ2 = 10 / 1.20 = <b>8.33%</b>.</p>
+  `
+},
+{
+  question_id: "AFM_MTPAUG25_Q6A",
+  source: "ICAI AFM Mock Test Paper – Series II, August 2025",
+  chapter_name: "Interest Rate Risk Management",
+  placement: 6,
+  marks: 8,
+  question_html: `
+    <p>The following data are available for three bonds A, B and C. These bonds are used by a bond portfolio manager to fund an outflow scheduled in 6 years. Current yield is 9%. All bonds have a face value of ₹100 each and will be redeemed at par. Interest is payable annually.</p>
+    <table>
+      <tr><th>Bond</th><th>Maturity (Years)</th><th>Coupon Rate</th></tr>
+      <tr><td>A</td><td>10</td><td>10%</td></tr>
+      <tr><td>B</td><td>8</td><td>11%</td></tr>
+      <tr><td>C</td><td>5</td><td>9%</td></tr>
+    </table>
+    <ol>
+      <li>Calculate the duration of each bond.</li>
+      <li>The bond portfolio manager has been asked to keep 45% of the portfolio money in Bond A. Calculate the percentage amount to be invested in Bonds B and C that need to be purchased to immunise the portfolio.</li>
+      <li>After the portfolio has been formulated, an interest rate change occurs, increasing the yield to 11%. The new durations of these bonds are: Bond A = 7.15 years, Bond B = 6.03 years and Bond C = 4.27 years. Is the portfolio still immunised? Why or why not?</li>
+      <li>Determine the new percentage of Bonds B and C that are needed to immunise the portfolio, Bond A remaining at 45% of the portfolio.</li>
+    </ol>
+    <p>Present value factors at 9%:</p>
+    <table>
+      <tr><th>Year</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr>
+      <tr><td>PVIF</td><td>0.917</td><td>0.842</td><td>0.772</td><td>0.708</td><td>0.650</td><td>0.596</td><td>0.547</td><td>0.502</td><td>0.460</td><td>0.4224</td></tr>
+    </table>
+  `,
+  solution_html: `
+    <p><b>(i) Calculation of bond duration</b></p>
+    <p>Duration is calculated by multiplying each cash flow's proportion of the present value of the bond by the time at which the cash flow is received, and adding the results.</p>
+
+    <p><b>Bond A</b></p>
+    <table>
+      <tr><th>Year</th><th>Cash Flow (₹)</th><th>PV at 9% (₹)</th><th>Proportion</th><th>Proportion × Time</th></tr>
+      <tr><td>1</td><td>10</td><td>9.17</td><td>0.086</td><td>0.086</td></tr>
+      <tr><td>2</td><td>10</td><td>8.42</td><td>0.079</td><td>0.158</td></tr>
+      <tr><td>3</td><td>10</td><td>7.72</td><td>0.073</td><td>0.219</td></tr>
+      <tr><td>4</td><td>10</td><td>7.08</td><td>0.067</td><td>0.268</td></tr>
+      <tr><td>5</td><td>10</td><td>6.50</td><td>0.061</td><td>0.305</td></tr>
+      <tr><td>6</td><td>10</td><td>5.96</td><td>0.056</td><td>0.336</td></tr>
+      <tr><td>7</td><td>10</td><td>5.47</td><td>0.051</td><td>0.357</td></tr>
+      <tr><td>8</td><td>10</td><td>5.02</td><td>0.047</td><td>0.376</td></tr>
+      <tr><td>9</td><td>10</td><td>4.60</td><td>0.043</td><td>0.387</td></tr>
+      <tr><td>10</td><td>110</td><td>46.46</td><td>0.437</td><td>4.370</td></tr>
+      <tr><td colspan="2"><b>Total</b></td><td><b>106.40</b></td><td><b>1.000</b></td><td><b>6.862</b></td></tr>
+    </table>
+    <p>Duration of Bond A = <b>6.862 years (approximately 6.86 years)</b>.</p>
+
+    <p><b>Bond B</b></p>
+    <table>
+      <tr><th>Year</th><th>Cash Flow (₹)</th><th>PV at 9% (₹)</th><th>Proportion</th><th>Proportion × Time</th></tr>
+      <tr><td>1</td><td>11</td><td>10.087</td><td>0.091</td><td>0.091</td></tr>
+      <tr><td>2</td><td>11</td><td>9.262</td><td>0.083</td><td>0.166</td></tr>
+      <tr><td>3</td><td>11</td><td>8.492</td><td>0.076</td><td>0.228</td></tr>
+      <tr><td>4</td><td>11</td><td>7.788</td><td>0.070</td><td>0.280</td></tr>
+      <tr><td>5</td><td>11</td><td>7.150</td><td>0.064</td><td>0.320</td></tr>
+      <tr><td>6</td><td>11</td><td>6.556</td><td>0.059</td><td>0.354</td></tr>
+      <tr><td>7</td><td>11</td><td>6.017</td><td>0.054</td><td>0.378</td></tr>
+      <tr><td>8</td><td>111</td><td>55.772</td><td>0.502</td><td>4.016</td></tr>
+      <tr><td colspan="2"><b>Total</b></td><td><b>111.224</b></td><td><b>1.000</b></td><td><b>5.833</b></td></tr>
+    </table>
+    <p>Duration of Bond B = <b>5.833 years (approximately 5.84 years)</b>.</p>
+
+    <p><b>Bond C</b></p>
+    <table>
+      <tr><th>Year</th><th>Cash Flow (₹)</th><th>PV at 9% (₹)</th><th>Proportion</th><th>Proportion × Time</th></tr>
+      <tr><td>1</td><td>9</td><td>8.253</td><td>0.082</td><td>0.082</td></tr>
+      <tr><td>2</td><td>9</td><td>7.578</td><td>0.076</td><td>0.152</td></tr>
+      <tr><td>3</td><td>9</td><td>6.948</td><td>0.069</td><td>0.207</td></tr>
+      <tr><td>4</td><td>9</td><td>6.372</td><td>0.064</td><td>0.256</td></tr>
+      <tr><td>5</td><td>109</td><td>70.850</td><td>0.709</td><td>3.545</td></tr>
+      <tr><td colspan="2"><b>Total</b></td><td><b>100.00</b></td><td><b>1.000</b></td><td><b>4.242</b></td></tr>
+    </table>
+    <p>Duration of Bond C = <b>4.242 years (approximately 4.24 years)</b>.</p>
+
+    <p><b>(ii) Percentage investment in Bonds B and C</b></p>
+    <p>Period required to be immunised = 6.000 years.</p>
+    <p>Less: Period covered by Bond A = 45% × 6.862 = 3.087 years.</p>
+    <p>Period to be immunised by Bonds B and C = 6.000 − 3.087 = <b>2.913 years</b>.</p>
+    <p>Let the proportions invested in Bonds B and C be b and c.</p>
+    <p>b + c = 0.55 &nbsp; (1)</p>
+    <p>5.833b + 4.242c = 2.913 &nbsp; (2)</p>
+    <p>Solving the equations:</p>
+    <p>b = 0.3534 and c = 0.1966.</p>
+    <p>Therefore, investment in Bond B = <b>35.34%</b> and Bond C = <b>19.66%</b>.</p>
+
+    <p><b>(iii) Whether the portfolio remains immunised after the yield increases to 11%</b></p>
+    <p>Revised portfolio duration, using the suggested answer's rounded allocation:</p>
+    <p>= (0.45 × 7.15) + (0.36 × 6.03) + (0.19 × 4.27)</p>
+    <p>= <b>6.20 years</b>.</p>
+    <p>The portfolio is <b>not immunised</b>, because its duration has increased from 6 years to 6.20 years.</p>
+
+    <p><b>(iv) New percentages of Bonds B and C</b></p>
+    <p>Period required to be immunised = 6.0000 years.</p>
+    <p>Less: Period covered by Bond A = 0.45 × 7.15 = 3.2175 years.</p>
+    <p>Period to be immunised by Bonds B and C = 6.0000 − 3.2175 = <b>2.7825 years</b>.</p>
+    <p>b + c = 0.55.</p>
+    <p>6.03b + 4.27c = 2.7825.</p>
+    <p>Solving:</p>
+    <p>b = 0.2466 and c = 0.3034.</p>
+    <p>Therefore, investment in Bond B = <b>24.66%</b> and Bond C = <b>30.34%</b>.</p>
+    <p><i>Source note: The suggested answer contains alternative rounded allocations in the first immunisation calculation. The equation-based solution gives 35.34% in B and 19.66% in C, which together with 45% in A totals 100%.</i></p>
+  `
+},
+{
+  question_id: "AFM_MTPAUG25_Q6B",
+  source: "ICAI AFM Mock Test Paper – Series II, August 2025",
+  chapter_name: "Foreign Exchange Risk Management",
+  placement: 6,
+  marks: 4,
+  question_html: `
+    <p>An Indian company obtains the following quotes (₹/$):</p>
+    <ul>
+      <li>Spot: 85.90 / 86.10</li>
+      <li>3-month forward rate: 86.00 / 86.25</li>
+      <li>6-month forward rate: 86.10 / 86.40</li>
+    </ul>
+    <p>The company needs $ funds for six months. Determine whether the company should borrow in $ or ₹.</p>
+    <p>Interest rates are:</p>
+    <ul>
+      <li>3-month interest rate: ₹ 12%, $ 6%</li>
+      <li>6-month interest rate: ₹ 11.50%, $ 5.5%</li>
+    </ul>
+    <p>Also determine the rate of interest after 3 months to make the company indifferent between 3-month borrowing and 6-month borrowing in the case of:</p>
+    <ol>
+      <li>₹ borrowing.</li>
+      <li>$ borrowing.</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><b>(i) Whether to borrow in $ or ₹</b></p>
+    <p><b>If the company borrows $100:</b></p>
+    <p>Borrowing = $100.00.</p>
+    <p>Add: Interest for 6 months at 5.5% = $2.75.</p>
+    <p>Amount repayable after 6 months = <b>$102.75</b>.</p>
+    <p>Applicable 6-month forward rate = ₹86.40 per $.</p>
+    <p>Cash outflow in rupees = $102.75 × ₹86.40 = <b>₹8,877.60</b> (as stated in the suggested answer).</p>
+
+    <p><b>If the company borrows the equivalent amount in ₹:</b></p>
+    <p>Equivalent rupee amount = $100 × ₹86.10 = <b>₹8,610.00</b>.</p>
+    <p>Add: Interest at 11.50% for 6 months = <b>₹495.08</b>.</p>
+    <p>Total rupee outflow = <b>₹9,105.08</b>.</p>
+    <p>Since the cash outflow is higher under rupee borrowing, the company should <b>borrow in dollars</b>.</p>
+
+    <p><b>(ii)(a) Rate of interest after 3 months for ₹ borrowing</b></p>
+    <p>Let ir be the interest rate on rupee borrowing after 3 months that makes the company indifferent between 3-month borrowing and 6-month borrowing.</p>
+    <p>(1 + 0.03)(1 + ir) = (1 + 0.0575)</p>
+    <p>1 + ir = 1.0575 / 1.03</p>
+    <p>ir = <b>2.67% for 3 months</b>, or <b>10.68% on an annualised basis</b>.</p>
+
+    <p><b>(ii)(b) Rate of interest after 3 months for $ borrowing</b></p>
+    <p>Let id be the interest rate on dollar borrowing after 3 months that makes the company indifferent between 3-month borrowing and 6-month borrowing.</p>
+    <p>(1 + 0.015)(1 + id) = (1 + 0.0275)</p>
+    <p>1 + id = 1.0275 / 1.015</p>
+    <p>id = <b>1.232% for 3 months</b>, or <b>4.93% on an annualised basis</b>.</p>
+    <p><i>Source note: The source's dollar-borrowing calculation uses a 3-month rate of 1.5% and a 6-month rate of 2.75%; these are the half-year/quarter-year rates used in the suggested solution.</i></p>
+  `
+}
+
+
 
 ];

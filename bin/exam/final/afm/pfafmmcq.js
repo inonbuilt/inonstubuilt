@@ -1514,4 +1514,959 @@ const mcqData = [
     }
   ]
 },
+// mtp m25 II
+  {
+    case_id: "afm_APR25_II_cs1",
+    case_chapter: ["Fixed Income Securities", "Bond Valuation", "Portfolio Strategies"],
+    caseText: `
+      <p>Zenith Capital, a boutique investment firm, manages portfolios for high-net-worth individuals (HNIs). Their lead portfolio manager, Mr. R, has been closely analyzing market trends to optimize returns for their fixed-income portfolio. Over the past few months, he has observed fluctuations in interest rates and anticipates a significant shift in the near future.</p>
+      <p>To optimise returns, Mr. R is considering three different investment strategies for clients having ₹ 10 crore of fund and are interested in Fixed Income Portfolio. Each strategy is designed to align with the client’s risk appetite and future liquidity needs.</p>
+      <ul>
+        <li><strong>Strategy A:</strong> Investing the entire ₹ 10 crore in a single bond with a 7-year maturity to match a specific financial obligation in the future.</li>
+        <li><strong>Strategy B:</strong> Allocating ₹ 5 crore in short-term bonds (1-year maturity) and ₹ 5 crore in long-term bonds (7-year maturity) to balance risk and return.</li>
+        <li><strong>Strategy C:</strong> Spreading the ₹ 10 crore investment equally across bonds with maturities of 1 to 5 years to ensure periodic liquidity.</li>
+      </ul>
+      <p>Meanwhile, Mr. R is also considering forecasting models to predict interest rate movements. He is evaluating economic indicators such as inflation, historical rate trends, and a combination of multiple economic factors to enhance the firm's forecasting accuracy.</p>
+      <p>Mr. R suggested Strategy B for Mr. H (a HNI) having a sum of ₹ 10 crore for investment in Fixed Income Portfolio. As per the strategy half amount on fund is proposed to be invested in 7-year bonds yielding 8% per annum and balance in 1-year short term bond yielding 6% per annum. Interest on these bonds is compounded annually.</p>
+      <p><strong>Based on the above case scenario, choose the correct answer to the following questions:</strong></p>
+    `,
+    questions: [
+      {
+        question_id: "afm_mcq_cs1_0",
+        chapter_name: ["Fixed Income Securities"],
+        question: "What is the primary objective of an active bond portfolio strategy?",
+        options: [
+          "To maintain a fixed return irrespective of market conditions",
+          "To outperform the market by making informed investment decisions",
+          "To minimize volatility and ensure steady returns",
+          "To invest in government bonds only"
+        ],
+        answer: 1
+      },
+      {
+        question_id: "afm_mcq_cs1_1",
+        chapter_name: ["Portfolio Strategies"],
+        question: "If any HNI follows Strategy A, then ………………of fixed-income portfolio strategy is being followed.",
+        options: [
+          "Barbell Strategy",
+          "Ladder Strategy",
+          "Bullet Strategy",
+          "Duration Matching"
+        ],
+        answer: 2
+      },
+      {
+        question_id: "afm_mcq_cs1_2",
+        chapter_name: ["Portfolio Strategies"],
+        question: "In the Barbell Strategy, the funds are typically allocated……………..",
+        options: [
+          "by making entire investment in bonds with the same maturity period.",
+          "by dividing investment equally between short-term and long-term bonds.",
+          "by dividing equal amount in bonds with different maturity periods.",
+          "by investing only in short-term bonds."
+        ],
+        answer: 1
+      },
+      {
+        question_id: "afm_mcq_cs1_3",
+        chapter_name: ["Portfolio Strategies"],
+        question: "In the ladder Strategy, the funds are typically allocated………………….",
+        options: [
+          "by making entire investment in bonds with the same maturity period.",
+          "by dividing investment equally between short-term and long-term bonds.",
+          "by dividing equal amount in bonds with different maturity periods.",
+          "by investing only in short-term bonds."
+        ],
+        answer: 2
+      },
+      {
+        question_id: "afm_mcq_cs1_4",
+        chapter_name: ["Bond Valuation"],
+        question: "It is expected that interest rate in coming 8 years are expected to fall by 25 bps each year and if Mr. H does not withdraw any amount from the Fund during these 7 years the total value of the investment at the end of the 7th year shall be approximately………………",
+        options: [
+          "₹ 15.036 crore",
+          "₹ 15.721 crore",
+          "₹ 15.739 crore",
+          "₹ 15.829 crore"
+        ],
+        answer: 1
+      }
+    ]
+  },
+  {
+    case_id: "afm_APR25_II_cs2",
+    case_chapter: ["Security Analysis", "Fundamental Analysis", "Economic Analysis"],
+    caseText: `
+      <p>An American institutional investor is exploring investment opportunities in different countries. Before proceeding, they believe a thorough analysis of options in the securities available to ensure a higher return while minimizing risk.</p>
+      <p>To achieve this objective, it formed a team consisting of following persons with respective assigned tasks:</p>
+      <ul>
+        <li><strong>Mr. A –</strong> He is entrusted with the task of analysing various Macro-economic factors e.g. historical performance of the economies in the past/ present and expectations in future, growth of different sectors of the economies in future with signs of stagnation/degradation at present. In addition to that he also analysed the trends in peoples’ income and expenditure.</li>
+        <li><strong>Ms. B –</strong> After receiving inputs/ recommendations from Mr. A she is entrusted with the task of assessment regarding all the conditions and factors relating to demand of the particular product, cost structure of the industry and other economic and Government constraints in the same country.</li>
+        <li><strong>Mr. C –</strong> After receiving inputs/ recommendations from Ms. B he is entrusted with the task of careful examination of the company's quantitative and qualitative fundamentals. Which includes a comparison of price earning ratios of different companies. Further, In addition to examine the financial solvency, liquidity of the company he is also advised for the evaluation of future growth prospects of the company identified.</li>
+      </ul>
+      <p><strong>Based on the above case scenario, choose the correct answer to the following questions:</strong></p>
+    `,
+    questions: [
+      {
+        question_id: "afm_mcq_cs2_0",
+        chapter_name: ["Economic Analysis"],
+        question: "If Mr. A want to evaluate the impact of macroeconomic trends on their potential investment. Which of the following factors is least likely to influence their decision?",
+        options: [
+          "Growth rates of national income",
+          "Inflation rates",
+          "Market speculation trends",
+          "Barometer indicators"
+        ],
+        answer: 2
+      },
+      {
+        question_id: "afm_mcq_cs2_1",
+        chapter_name: ["Economic Analysis"],
+        question: "The investor learns that inflation is expected to rise. Based on economic analysis, how might this affect their stock investment decision?",
+        options: [
+          "Stock prices are expected to decline due to reduced consumer demand",
+          "Stock prices are expected to rise as stocks act as a hedge against inflation",
+          "Stock prices will remain unaffected as inflation only affects bond markets",
+          "Stock prices will become highly volatile, but long-term growth remains unchanged"
+        ],
+        answer: 1
+      },
+      {
+        question_id: "afm_mcq_cs2_2",
+        chapter_name: ["Industry Analysis"],
+        question: "Which of the techniques shall be primarily used by Ms. B to carry out the required analysis at his part?",
+        options: [
+          "Anticipatory Surveys",
+          "Indicator Approach",
+          "Input-Output Analysis",
+          "Decision Tree Analysis"
+        ],
+        answer: 2
+      },
+      {
+        question_id: "afm_mcq_cs2_3",
+        chapter_name: ["Economic Analysis"],
+        question: "Mr. A while analyzing industry growth, finds that certain indicators tend to peak before the economy’s overall growth. These indicators are best classified as................",
+        options: [
+          "Lagging indicators",
+          "Leading indicators",
+          "Coincidental indicators",
+          "Random indicators"
+        ],
+        answer: 1
+      },
+      {
+        question_id: "afm_mcq_cs2_4",
+        chapter_name: ["Security Analysis"],
+        question: "Specifically the team of Mr. A, Ms. B, and Mr. C are entrusted with the task of carrying out...............",
+        options: [
+          "Fundamental Analysis",
+          "Technical Analysis",
+          "Market Analysis",
+          "Security Analysis"
+        ],
+        answer: 0
+      }
+    ]
+  },
+  {
+    case_id: "afm_APR25_II_cs3",
+    case_chapter: ["Credit Risk Management", "Credit Derivatives", "Derivatives Analysis and Valuation"],
+    caseText: `
+      <p>Suppose you are a risk manager at a financial institution, and your company has loaned a significant amount of ₹ 500 crore to a company X Ltd. for a period of 3 years at 6-month at MCLR plus 200 bps. You are concerned about X Ltd.'s ability to repay the debt due to recent market volatility. To protect your institution from potential default, you decide to purchase a Credit Default Swap (CDS) from ABC Bank Ltd. for same notional amount at a premium quoted at 1% per year through cash settlement.</p>
+      <p>On the respective reset dates for the same period actual MCLR interest rate comes out as follows:</p>
+      <table border="1" cellspacing="0" cellpadding="5">
+        <thead>
+          <tr>
+            <th>Reset</th>
+            <th>MCLR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>9.75%</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>10.00%</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>10.25%</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>10.35%</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>10.50%</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>10.60%</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>From the information given above, choose the correct answer to the following questions:</strong></p>
+    `,
+    questions: [
+      {
+        question_id: "afm_mcq_cs3_0",
+        chapter_name: ["Credit Derivatives"],
+        question: "The primary purpose of a Credit Default Swap (CDS) is...................",
+        options: [
+          "to increase the value of bonds.",
+          "to protect against default risk of a debt obligation.",
+          "to provide guaranteed profit to the buyer.",
+          "to create a new form of loan."
+        ],
+        answer: 1
+      },
+      {
+        question_id: "afm_mcq_cs3_1",
+        chapter_name: ["Credit Derivatives"],
+        question: "Which of the following statements is true about CDS contracts?",
+        options: [
+          "CDS contracts cannot be used for speculation.",
+          "CDS contracts are governed by government regulations.",
+          "CDS contracts are private agreements between two parties.",
+          "CDS contracts eliminate all risks for the buyer."
+        ],
+        answer: 2
+      },
+      {
+        question_id: "afm_mcq_cs3_2",
+        chapter_name: ["Derivatives Analysis and Valuation"],
+        question: "Which organization publishes the guidelines and rules for conducting Credit Default Swap transactions?",
+        options: [
+          "Federal Reserve",
+          "International Swap and Derivative Association (ISDA)",
+          "Securities and Exchange Commission (SEC)",
+          "World Trade Organization (WTO)"
+        ],
+        answer: 1
+      },
+      {
+        question_id: "afm_mcq_cs3_3",
+        chapter_name: ["Credit Derivatives"],
+        question: "Assuming no default occurs the total premium your company will pay during the designated loan period shall be........",
+        options: [
+          "₹ 5 crore",
+          "₹ 10 crore",
+          "₹ 15 crore",
+          "₹ 30 crore"
+        ],
+        answer: 2
+      },
+      {
+        question_id: "afm_mcq_cs3_4",
+        chapter_name: ["Credit Derivatives"],
+        question: "Suppose if the lender defaults somewhere in the beginning of third year of loan (after payment of interest upto 2 years) and the market value of a reference loans falls to 75% of its par value, then ABC Bank will pay your company ...........in a cash settlement.",
+        options: [
+          "₹ 15 crore",
+          "₹ 30 crore",
+          "₹ 125 crore",
+          "₹ 500 crore"
+        ],
+        answer: 2
+      }
+    ]
+  },
+  // sept25
+  {
+  case_id: "afm_jul25_I_cs1",
+  case_chapter: ["Financial Policy and Corporate Strategy"],
+  caseText: `
+    <p>XYZ Ltd., a medium-sized company in the renewable energy sector, is experiencing steady sales growth. The company’s management, however, is concerned about balancing rapid growth with long-term sustainability. In the past year, XYZ’s growth objectives have led to aggressive expansion plans, but management now realizes that such growth might not be financially sustainable in the long run. This raises concerns about how to maintain the company's financial health while meeting its ambitious growth targets.</p>
+
+    <p>The CFO of XYZ Ltd. highlights the importance of Sustainable Growth Rate (SGR).</p>
+
+    <p>The company now needs to ensure that its operational and financial policies align with its growth goals. XYZ must avoid expanding too quickly, which could strain its financial resources and lead to excessive borrowing. Moreover, management must also consider the long-term implications of resource consumption, particularly in the renewable energy industry, where sustainability is key to both current and future stakeholders.</p>
+
+    <p>XYZ Ltd. also realizes that it needs to focus on building its growth capability alongside its growth strategy. Without the necessary infrastructure and financial planning in place, the company's efforts to achieve long-term, sustainable growth could be in jeopardy. Furthermore, the company is aware of the risks of relying too much on external financing and recognizes the need for a balance between maintaining sufficient equity and minimizing debt.</p>
+
+    <p>Given the importance of these considerations, XYZ’s management team must now review their growth strategy and financial policies to ensure they are consistent with the firm’s sustainable growth objectives.</p>
+
+    <p><strong>From the information given above, choose the correct answer to the following questions:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "afm_jul25_I_cs1_0",
+      chapter_name: ["Financial Policy and Corporate Strategy"],
+      question: "The concept of Sustainable Growth Rate introduced by...................",
+      options: [
+        "Harry Markowitz",
+        "William Sharpe",
+        "Black Scholes",
+        "Robert C. Higgins"
+      ],
+      answer: 3
+    },
+    {
+      question_id: "afm_jul25_I_cs1_1",
+      chapter_name: ["Financial Policy and Corporate Strategy"],
+      question: "The Sustainable Growth Rate (SGR) represents.................",
+      options: [
+        "the rate at which the company can grow by issuing more equity.",
+        "the maximum rate of growth in sales that can be achieved without borrowing additional funds.",
+        "the growth rate determined by market demand for XYZ’s products.",
+        "the rate of growth determined by inflationary pressures."
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_jul25_I_cs1_2",
+      chapter_name: ["Financial Policy and Corporate Strategy"],
+      question: "According to the case scenario the risk associated with growing too quickly is that...........",
+      options: [
+        "the company might not be able to retain competent staff.",
+        "the company could face liquidity issues due to over-expansion.",
+        "the company’s stock price might decline.",
+        "it could reduce the company's market share."
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_jul25_I_cs1_3",
+      chapter_name: ["Financial Policy and Corporate Strategy"],
+      question: "Which of the following twin cornerstones are necessary for XYZ Ltd. to achieve sustainable growth?",
+      options: [
+        "Market conditions and competition.",
+        "Growth capability and growth strategy.",
+        "Product innovation and marketing strategy.",
+        "Cost-cutting measures and increased sales."
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_jul25_I_cs1_4",
+      chapter_name: ["Financial Policy and Corporate Strategy"],
+      question: "In an inflationary condition if creditors require that XYZ Ltd.’s historical cost debt-to-equity ratio stay constant, the inflation......",
+      options: [
+        "reduces the need for external financing.",
+        "increases the sustainable growth rate by lowering costs.",
+        "lowers the sustainable growth rate.",
+        "It has no effect on the company's growth rate."
+      ],
+      answer: 2
+    }
+  ]
+},
+{
+  case_id: "afm_jul25_I_cs2",
+  case_chapter: ["Security Valuation"],
+  caseText: `
+    <p>You are an investment analyst working for a financial advisory firm. You have been asked to analyze the bond market's yield curve to assist your clients in making investment decisions. The yield curve represents the relationship between the interest rates (yield) and the time to maturity for debt securities, usually government bonds.</p>
+
+    <p>For simplicity, assume the following yield data for government bonds over various maturities (measured in years):</p>
+
+    <p><strong>Yield Curve Table</strong></p>
+    <table border="1" cellspacing="0" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Maturity (Years)</th>
+          <th>Yield (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1 Year</td><td>3.00%</td></tr>
+        <tr><td>2 Years</td><td>4.00%</td></tr>
+        <tr><td>3 Years</td><td>5.00%</td></tr>
+        <tr><td>5 Years</td><td>6.00%</td></tr>
+        <tr><td>7 Years</td><td>6.40%</td></tr>
+        <tr><td>10 Years</td><td>7.00%</td></tr>
+        <tr><td>15 Years</td><td>7.40%</td></tr>
+        <tr><td>30 Years</td><td>7.60%</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>From the information given above, choose the correct answer to the following questions:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "afm_jul25_I_cs2_0",
+      chapter_name: ["Security Valuation"],
+      question: "The main characteristic of a normal yield curve is……………….",
+      options: [
+        "Short-term yields are higher than long-term yields.",
+        "Short-term yields are lower than long-term yields.",
+        "Yields remain the same across all maturities.",
+        "Yields fluctuate randomly over different maturities."
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_jul25_I_cs2_1",
+      chapter_name: ["Security Valuation"],
+      question: "Based on the given yield data, what is the yield spread between the 10-year bond and the 1-year bond?",
+      options: [
+        "2.0%",
+        "3.5%",
+        "4.0%",
+        "5.0%"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "afm_jul25_I_cs2_2",
+      chapter_name: ["Security Valuation"],
+      question: "An inverted yield curve typically indicates……………….",
+      options: [
+        "Economic growth",
+        "Economic uncertainty",
+        "An upcoming recession",
+        "Inflationary pressure"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "afm_jul25_I_cs2_3",
+      chapter_name: ["Security Valuation"],
+      question: "If an investor is looking to invest for 2 years starting at the end of 3 years from now, the forward rate he would expect shall be approximately………",
+      options: [
+        "7.41%",
+        "7.52%",
+        "7.76%",
+        "7.93%"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_jul25_I_cs2_4",
+      chapter_name: ["Security Valuation"],
+      question: "If an investor is looking to invest for 2 years starting 5 years from now, the forward rate he would expect shall be approximately………",
+      options: [
+        "7.41%",
+        "7.52%",
+        "7.76%",
+        "7.93%"
+      ],
+      answer: 0
+    }
+  ]
+},
+{
+  case_id: "afm_jul25_I_cs3",
+  case_chapter: ["Foreign Exchange Exposure and Risk Management", "International Financial Management"],
+  caseText: `
+    <p>XYZ Ltd., a U.S. firm, will require £ 300,000 in 180 days and is evaluating different strategies to hedge against currency risk. The available market data is as follows:</p>
+
+    <p><strong>Current Spot Rate:</strong> 1 £ = $ 2.00</p>
+    <p><strong>180-Day Forward Rate:</strong> 1 £ = $ 1.96</p>
+
+    <p><strong>Interest Rates:</strong></p>
+    <table border="1" cellspacing="0" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Period</th>
+          <th>Deposit Rate</th>
+          <th>Borrowing Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>UK</td>
+          <td>180 days</td>
+          <td>4.50%</td>
+          <td>5.00%</td>
+        </tr>
+        <tr>
+          <td>US</td>
+          <td>180 days</td>
+          <td>5.00%</td>
+          <td>5.50%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Option Contract:</strong></p>
+    <p>Call option available on £, expiring in 180 days with:</p>
+    <ul>
+      <li>Exercise Price: $ 1.97</li>
+      <li>Premium: $ 0.04</li>
+    </ul>
+
+    <p>XYZ Ltd. has forecasted the following probabilities for spot rates after 180 days:</p>
+    <table border="1" cellspacing="0" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Spot Rate</th>
+          <th>Probability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>$ 1.91</td><td>25%</td></tr>
+        <tr><td>$ 1.95</td><td>60%</td></tr>
+        <tr><td>$ 2.05</td><td>15%</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>From the information given above, choose the correct answer to the following questions:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "afm_jul25_I_cs3_0",
+      chapter_name: ["Foreign Exchange Exposure and Risk Management"],
+      question: "The expected dollar amount needed if XYZ Ltd. does not hedge.",
+      options: [
+        "$ 5,88,000",
+        "$ 6,05,741",
+        "$ 5,95,560",
+        "$ 5,86,500"
+      ],
+      answer: 3
+    },
+    {
+      question_id: "afm_jul25_I_cs3_1",
+      chapter_name: ["Foreign Exchange Exposure and Risk Management"],
+      question: "If XYZ Ltd. chooses the forward contract option, the expected dollar amount needed in 180 days, the total dollar amount required shall be....................",
+      options: [
+        "$ 5,88,000",
+        "$ 6,05,741",
+        "$ 5,95,560",
+        "$ 5,86,500"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "afm_jul25_I_cs3_2",
+      chapter_name: ["Foreign Exchange Exposure and Risk Management"],
+      question: "Under the money market hedge, approximately how much amount in dollars will XYZ Ltd. need to repay after 180 days?",
+      options: [
+        "$ 5,88,000",
+        "$ 6,05,741",
+        "$ 5,95,560",
+        "$ 5,86,500"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_jul25_I_cs3_3",
+      chapter_name: ["Foreign Exchange Exposure and Risk Management"],
+      question: "If XYZ Ltd. chooses the call option contract, after 180 days the total cost in dollar for £ 300,000 (inclusive of interest on Premium amount) shall be....................",
+      options: [
+        "$ 5,88,000",
+        "$ 6,05,741",
+        "$ 5,95,560",
+        "$ 5,86,500"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "afm_jul25_I_cs3_4",
+      chapter_name: ["Foreign Exchange Exposure and Risk Management"],
+      question: "The expected spot rate per £ after 180 days shall be approximately.................",
+      options: [
+        "$ 1.91",
+        "$ 1.94",
+        "$ 1.96",
+        "$ 2.05"
+      ],
+      answer: 2
+    }
+  ]
+},
+// spt25
+{
+  case_id: "afm_aug25_II_cs1",
+  case_chapter: ["Advanced Capital Budgeting Decisions"],
+  caseText: `
+    <p>XYZ Ltd. plans to invest ₹ 800,000 in a new unit. The project is expected to have a useful life of 4 years, with no salvage value at the end of its life. The annual depreciation charge for the project is ₹ 200,000.</p>
+
+    <p>Projected revenues and costs for the project, ignoring inflation, are provided as follows:</p>
+
+    <table border="1" cellspacing="0" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Revenues (₹)</th>
+          <th>Costs (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>600,000</td><td>300,000</td></tr>
+        <tr><td>2</td><td>700,000</td><td>400,000</td></tr>
+        <tr><td>3</td><td>800,000</td><td>400,000</td></tr>
+        <tr><td>4</td><td>800,000</td><td>400,000</td></tr>
+      </tbody>
+    </table>
+
+    <p>XYZ Ltd. is subject to a corporate tax rate of 60%, and the cost of capital for the project, including inflation premium, is 10%.</p>
+
+    <p>Depreciation provides a tax benefit, and inflation rates for revenues and costs over the project's lifespan are as follows:</p>
+
+    <table border="1" cellspacing="0" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Revenue Inflation</th>
+          <th>Cost Inflation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>10%</td><td>12%</td></tr>
+        <tr><td>2</td><td>9%</td><td>10%</td></tr>
+        <tr><td>3</td><td>8%</td><td>9%</td></tr>
+        <tr><td>4</td><td>7%</td><td>8%</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>From the information given above, choose the correct answer to the following questions:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "afm_aug25_II_cs1_0",
+      chapter_name: ["Advanced Capital Budgeting Decisions"],
+      question: "The depreciation tax benefit for the project per year shall be……………",
+      options: [
+        "₹ 120,000",
+        "₹ 150,000",
+        "₹ 200,000",
+        "₹ 180,000"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "afm_aug25_II_cs1_1",
+      chapter_name: ["Advanced Capital Budgeting Decisions"],
+      question: "The inflation-adjusted revenue in Year 2 shall be……………",
+      options: [
+        "₹ 700,000",
+        "₹ 839,300",
+        "₹ 492,800",
+        "₹ 501,760"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_aug25_II_cs1_2",
+      chapter_name: ["Advanced Capital Budgeting Decisions"],
+      question: "The total cash inflow in Year 1 after adjusting for inflation and tax benefit on depreciation shall be…………",
+      options: [
+        "₹ 330,000",
+        "₹ 336,000",
+        "₹ 249,600",
+        "₹ 492,800"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "afm_aug25_II_cs1_3",
+      chapter_name: ["Advanced Capital Budgeting Decisions"],
+      question: "The inflation-adjusted cost in Year 2 shall be……………",
+      options: [
+        "₹ 700,000",
+        "₹ 839,300",
+        "₹ 492,800",
+        "₹ 501,760"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "afm_aug25_II_cs1_4",
+      chapter_name: ["Advanced Capital Budgeting Decisions"],
+      question: "The present value of cash inflow for the year 3 shall be approximately………..",
+      options: [
+        "₹ 213,604",
+        "₹ 226,299",
+        "₹ 226,886",
+        "₹ 239,949"
+      ],
+      answer: 3
+    }
+  ]
+},
+{
+  case_id: "afm_aug25_II_cs2",
+  case_chapter: ["Credit Risk Management", "Credit Derivatives", "Derivatives Analysis and Valuation"],
+  caseText: `
+    <p>Suppose you are a risk manager at a financial institution, and your company has loaned a significant amount of ₹ 500 crore to a company X Ltd. for a period of 3 years at 6-month MCLR plus 200 bps.</p>
+
+    <p>You are concerned about X Ltd.'s ability to repay the debt due to recent market volatility. To protect your institution from potential default, you decide to purchase a Credit Default Swap (CDS) from ABC Bank Ltd. for the same notional amount at a premium quoted at 1% per year through cash settlement.</p>
+
+    <p><strong>On the respective reset dates for the same period, the actual MCLR interest rate comes out as follows:</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Reset</th>
+          <th>MCLR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>9.75%</td></tr>
+        <tr><td>2</td><td>10.00%</td></tr>
+        <tr><td>3</td><td>10.25%</td></tr>
+        <tr><td>4</td><td>10.35%</td></tr>
+        <tr><td>5</td><td>10.50%</td></tr>
+        <tr><td>6</td><td>10.60%</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>From the information given above, choose the correct answer to the following questions:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "afm_aug25_II_cs2_0",
+      chapter_name: ["Credit Risk Management", "Credit Derivatives"],
+      question: "The primary purpose of a Credit Default Swap (CDS) is...................",
+      options: [
+        "To increase the value of bonds.",
+        "To protect against default risk of a debt obligation.",
+        "To provide guaranteed profit to the buyer.",
+        "To create a new form of loan."
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_aug25_II_cs2_1",
+      chapter_name: ["Credit Risk Management", "Credit Derivatives"],
+      question: "Which of the following statements is true about CDS contracts?",
+      options: [
+        "CDS contracts cannot be used for speculation.",
+        "CDS contracts are governed by government regulations.",
+        "CDS contracts are private agreements between two parties.",
+        "CDS contracts eliminate all risks for the buyer."
+      ],
+      answer: 2
+    },
+    {
+      question_id: "afm_aug25_II_cs2_2",
+      chapter_name: ["Credit Risk Management", "Credit Derivatives"],
+      question: "Which organization publishes the guidelines and rules for conducting Credit Default Swap transactions?",
+      options: [
+        "Federal Reserve",
+        "International Swap and Derivative Association (ISDA)",
+        "Securities and Exchange Commission (SEC)",
+        "World Trade Organization (WTO)"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_aug25_II_cs2_3",
+      chapter_name: ["Credit Risk Management", "Credit Derivatives"],
+      question: "Assuming no default occurs, the total premium your company will pay during the designated loan period shall be........",
+      options: [
+        "₹ 5 crore",
+        "₹ 10 crore",
+        "₹ 15 crore",
+        "₹ 30 crore"
+      ],
+      answer: 2
+    }
+  ]
+},
+{
+  case_id: "afm_aug25_II_cs3",
+  case_chapter: ["Financial Policy and Corporate Strategy"],
+  caseText: `
+    <p>During one business meeting at XYZ Ltd., one of the members pointed out that while evaluating the performance of any company, one should not only consider its Operating Income but should also analyse its Capital Structure. Weighted Average Cost of Capital changes on the basis of capital structure, keeping all other factors unchanged.</p>
+
+    <p>He presented data relating to three companies, Alpha Ltd., Beta Ltd. and Gama Ltd., whose operating incomes are equal, but their capital structures are different.</p>
+
+    <p><strong>The following information relating to these three companies is available:</strong></p>
+
+    <p><strong>(₹ in thousands)</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Particulars</th>
+          <th>Alpha Ltd.</th>
+          <th>Beta Ltd.</th>
+          <th>Gama Ltd.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Total Invested Capital</td>
+          <td>20,00,000</td>
+          <td>20,00,000</td>
+          <td>20,00,000</td>
+        </tr>
+        <tr>
+          <td>Debt / Assets Ratio</td>
+          <td>0.8</td>
+          <td>0.5</td>
+          <td>0.2</td>
+        </tr>
+        <tr>
+          <td>Shares Outstanding</td>
+          <td>61,000</td>
+          <td>83,000</td>
+          <td>1,00,000</td>
+        </tr>
+        <tr>
+          <td>Pre-tax Cost of Debt</td>
+          <td>16%</td>
+          <td>13%</td>
+          <td>15%</td>
+        </tr>
+        <tr>
+          <td>Cost of Equity</td>
+          <td>26%</td>
+          <td>22%</td>
+          <td>20%</td>
+        </tr>
+        <tr>
+          <td>Operating Income (EBIT)</td>
+          <td>5,00,000</td>
+          <td>5,00,000</td>
+          <td>5,00,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The tax rate is uniform at 35% in all cases. The industry P/E ratio is 11X.</p>
+
+    <p><strong>From the information given above, choose the correct answer to the following questions:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "afm_aug25_II_cs3_0",
+      chapter_name: ["Financial Policy and Corporate Strategy"],
+      question: "The Weighted Average Cost of Capital (WACC) of Alpha Ltd. shall approximately be……………",
+      options: [
+        "13.520%",
+        "15.225%",
+        "17.950%",
+        "18.000%"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "afm_aug25_II_cs3_1",
+      chapter_name: ["Financial Policy and Corporate Strategy"],
+      question: "The Economic Value Added (EVA) of Beta Ltd. is……………",
+      options: [
+        "₹ 54,600 thousand",
+        "₹ 20,500 thousand",
+        "(-) ₹ 34,000 thousand",
+        "₹ 21,500 thousand"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_aug25_II_cs3_2",
+      chapter_name: ["Financial Policy and Corporate Strategy"],
+      question: "The price per share of Gama Ltd. shall be……………",
+      options: [
+        "₹ 28.60",
+        "₹ 31.90",
+        "₹ 31.46",
+        "₹ 29.45"
+      ],
+      answer: 2
+    }
+  ]
+},
+{
+  case_id: "afm_aug25_II_cs4",
+  case_chapter: ["International Financial Management", "Foreign Exchange Exposure and Risk Management"],
+  caseText: `
+    <p>A US parent company has subsidiaries in France, Germany, UK and Italy. The amounts due to and from the affiliates is converted into a common currency viz. US dollar and entered in the following matrix.</p>
+
+    <p><strong>Inter Subsidiary Payments Matrix (US $ Thousands)</strong></p>
+
+    <table border="1" cellspacing="0" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Receiving Affiliate / Paying Affiliate</th>
+          <th>France</th>
+          <th>Germany</th>
+          <th>UK</th>
+          <th>Italy</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>France</td>
+          <td>—</td>
+          <td>80</td>
+          <td>120</td>
+          <td>200</td>
+          <td>400</td>
+        </tr>
+        <tr>
+          <td>Germany</td>
+          <td>120</td>
+          <td>—</td>
+          <td>80</td>
+          <td>160</td>
+          <td>360</td>
+        </tr>
+        <tr>
+          <td>UK</td>
+          <td>160</td>
+          <td>120</td>
+          <td>—</td>
+          <td>140</td>
+          <td>420</td>
+        </tr>
+        <tr>
+          <td>Italy</td>
+          <td>200</td>
+          <td>60</td>
+          <td>120</td>
+          <td>—</td>
+          <td>380</td>
+        </tr>
+        <tr>
+          <td><strong>Total</strong></td>
+          <td><strong>480</strong></td>
+          <td><strong>260</strong></td>
+          <td><strong>320</strong></td>
+          <td><strong>500</strong></td>
+          <td><strong>1,560</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The treasurer of US Parent company is suggesting that by applying Multilateral Netting system the company can save a lot of transfer/ exchange costs. The company’s Board agreed with Treasurer’s proposal.</p>
+
+    <p><strong>From the information given above, choose the correct answer to the following questions:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "afm_aug25_II_cs4_0",
+      chapter_name: ["International Financial Management"],
+      question: "Before applying Multilateral Netting it is necessary to apply……………….",
+      options: [
+        "Unilateral Netting",
+        "Bilateral Netting",
+        "Multilateral Netting",
+        "Interest Rate Swapping"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_aug25_II_cs4_1",
+      chapter_name: ["International Financial Management"],
+      question: "Through Multinational Netting these transfers will be reduced to ……………………….",
+      options: [
+        "$ 50,000",
+        "$ 100,000",
+        "$ 150,000",
+        "$ 200,000"
+      ],
+      answer: 3
+    },
+    {
+      question_id: "afm_aug25_II_cs4_2",
+      chapter_name: ["International Financial Management"],
+      question: "The Net Payment/ Net Receipts for France after netting off shall be…………….",
+      options: [
+        "Net Receipt $ 40,000",
+        "Net Payment $ 80,000",
+        "Net Payment $ 40,000",
+        "Net Receipt $ 80,000"
+      ],
+      answer: 1
+    }
+  ]
+}
 ];
