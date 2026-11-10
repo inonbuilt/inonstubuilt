@@ -20,7 +20,7 @@
     <!-- High-Legibility Fonts for CA Final Revision: Plus Jakarta Sans & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Patrick+Hand&family=Caveat:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!-- MathJax for KaTeX math formatting -->
@@ -54,10 +54,17 @@
             --slate-900: #0f172a;
             --border-color: #e2e8f0;
             --card-bg: #ffffff;
-            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            --font-highlight: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            --font-mono: 'JetBrains Mono', Consolas, monospace;
+            --notes-body: 'Kalam', cursive;
+            --notes-heading: 'Patrick Hand', cursive;
+            --notes-highlight: 'Caveat', cursive;
+            --notes-table: Arial, sans-serif;
+            --heading-one-color: #1e3a8a;
+            --subheading-one-color: #0284c7;
+            --text-black: #000000;
+            --font-sans: var(--notes-body);
+            --font-heading: var(--notes-heading);
+            --font-highlight: var(--notes-highlight);
+            --font-mono: var(--notes-table);
         }
 
         * {
@@ -702,57 +709,141 @@
         }
     
         /* ═══════════════════════════════════════════════════════════
-           CA FINAL DIRECT TAX - ENHANCED STRUCTURE & TYPOGRAPHY
+           CALCIUM NOTES DT - PREMIUM HANDWRITTEN VISUAL IDENTITY
            ═══════════════════════════════════════════════════════════ */
         :root {
-            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            --font-highlight: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            --font-mono: 'JetBrains Mono', Consolas, monospace;
+            --notes-body: 'Kalam', cursive;
+            --notes-heading: 'Patrick Hand', cursive;
+            --notes-highlight: 'Caveat', cursive;
+            --notes-table: Arial, sans-serif;
+
+            /* Heading Colors: Heading One Color & Subheading One Color */
+            --heading-one-color: #1e3a8a;      /* Heading One Color: Deep Navy Blue */
+            --subheading-one-color: #0284c7;   /* Subheading One Color: Vibrant Sapphire Blue */
+            --text-black: #000000;             /* All Data in Pure Black */
+
+            --font-sans: var(--notes-body);
+            --font-heading: var(--notes-heading);
+            --font-highlight: var(--notes-highlight);
+            --font-mono: var(--notes-table);
         }
 
+        /* Base Body Typography & Background */
         body {
-            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-            font-size: 15.5px !important;
+            font-family: var(--notes-body) !important;
+            font-size: 17.5px !important;
             line-height: 1.68 !important;
-            letter-spacing: -0.01em;
-            color: #1e293b;
+            color: var(--text-black) !important;
+            background-color: #fdfbf7 !important;
+            overflow-x: hidden;
         }
 
-        /* Semantic Headings Hierarchy */
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        /* 1. All Main Headings - ONE Color (Deep Navy Blue #1e3a8a) + Patrick Hand */
+        h1, h2,
+        .chapter-title,
+        .hero-title,
+        .section-heading,
+        .section-title,
+        .section-card-title,
+        .section-header-title,
+        .card-title,
+        .sec-name,
+        .content-section > h2,
+        .chapter-content-section h2 {
+            font-family: var(--notes-heading) !important;
+            color: var(--heading-one-color) !important;
+            font-weight: 400 !important;
+            letter-spacing: 0.3px !important;
         }
 
-        h2.section-heading, h2.section-title, h2.card-title, .content-section > h2, .chapter-content-section h2 {
-            font-size: 1.5rem !important;
-            font-weight: 800 !important;
-            color: #0f172a !important;
-            letter-spacing: -0.025em;
-            margin-bottom: 16px;
+        h1, .chapter-title, .hero-title {
+            font-size: 2.25rem !important;
+            line-height: 1.25 !important;
+            margin-bottom: 14px !important;
         }
 
-        h3.theory-title, h3.provision-title, h3.card-title, h3.subtopic-title, h3.statutory-box-header, h3.sub-heading, h3.card-header-sub {
-            font-size: 1.18rem !important;
+        h2, .section-heading, .section-title, .section-card-title, .content-section > h2 {
+            font-size: 1.6rem !important;
+            line-height: 1.3 !important;
+            margin-bottom: 16px !important;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+        }
+
+        /* 2. All Subheadings - ONE Color (Vibrant Sapphire Blue #0284c7) + Patrick Hand */
+        h3, h4,
+        .sub-heading,
+        .subtopic-title,
+        .provision-title,
+        .rules-title,
+        .theory-title,
+        .subsection-title,
+        .statutory-box-header,
+        .example-title,
+        .tyk-title,
+        .sub-sub-heading,
+        .card-header-sub,
+        .callout-title,
+        .step-title,
+        .tyk-subheading,
+        .sub-subheading {
+            font-family: var(--notes-heading) !important;
+            color: var(--subheading-one-color) !important;
+            font-weight: 400 !important;
+            letter-spacing: 0.2px !important;
+        }
+
+        h3, .subtopic-title, .provision-title, .rules-title, .theory-title, .statutory-box-header {
+            font-size: 1.28rem !important;
+            line-height: 1.35 !important;
+            margin-top: 18px !important;
+            margin-bottom: 10px !important;
+        }
+
+        h4, .example-title, .callout-title, .step-title, .tyk-title {
+            font-size: 1.1rem !important;
+            line-height: 1.4 !important;
+            margin-top: 14px !important;
+            margin-bottom: 8px !important;
+        }
+
+        /* 3. All Data & Content Text in PURE BLACK (#000000) */
+        p, li, dd, dt,
+        .concept-body,
+        .provision-body,
+        .card-body,
+        .analysis-text,
+        .explanation-text,
+        .chapter-desc,
+        .content-card p,
+        .theory-box p,
+        .law-box p,
+        .tyk-question,
+        .tyk-solution,
+        .step-desc,
+        .lead-text,
+        .notes-content {
+            font-family: var(--notes-body) !important;
+            color: var(--text-black) !important;
+            font-size: 17.5px !important;
+            line-height: 1.68 !important;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* 4. Highlights, Important Points & Traps in Caveat */
+        .important,
+        .important-point,
+        .highlight,
+        .key-takeaway,
+        .exam-trap-header {
+            font-family: var(--notes-highlight) !important;
             font-weight: 700 !important;
-            color: #0f172a !important;
-            letter-spacing: -0.015em;
-            margin-top: 18px;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            font-size: 1.3em !important;
         }
 
-        h4.example-title, h4.callout-title, h4.step-title, h4.tyk-title, h4.tyk-subheading, h4.sub-subheading {
-            font-size: 1.02rem !important;
-            font-weight: 700 !important;
-            letter-spacing: -0.01em;
-            margin-top: 14px;
-            margin-bottom: 8px;
-        }
-
-        /* CA Final Exam Alerts & Traps */
         .exam-trap-box, .callout-trap {
             background-color: #fffbeb !important;
             border: 1px solid #fde68a !important;
@@ -760,41 +851,63 @@
             border-radius: 8px !important;
             padding: 14px 18px !important;
             margin: 16px 0 !important;
-            font-size: 14px !important;
-            color: #92400e !important;
         }
 
-        .exam-trap-header {
-            font-weight: 800;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 6px;
-            color: #78350f;
-            text-transform: uppercase;
-            font-size: 12px;
-            letter-spacing: 0.05em;
+        .exam-trap-box p, .callout-trap p {
+            color: #78350f !important;
         }
 
-        /* Tables & Contrast Enhancements */
-        table {
-            font-size: 13.5px !important;
+        /* 5. Tables, Computations, Rates & Formulas strictly in Arial */
+        table,
+        .tax-table,
+        .data-table,
+        .summary-table,
+        .styled-table {
+            font-family: var(--notes-table) !important;
+            font-size: 14.5px !important;
+            border-collapse: collapse;
+            width: 100%;
+            margin: 16px 0;
+            background: #ffffff;
         }
 
         th {
+            font-family: var(--notes-table) !important;
+            background-color: #f1f5f9 !important;
+            color: var(--heading-one-color) !important;
             font-weight: 700 !important;
-            letter-spacing: 0.02em;
+            padding: 10px 14px;
+            border: 1px solid #cbd5e1;
+            font-size: 14px !important;
         }
 
         td {
-            color: #334155 !important;
+            font-family: var(--notes-table) !important;
+            color: var(--text-black) !important;
+            padding: 9px 14px;
+            border: 1px solid #e2e8f0;
+            font-size: 14px !important;
         }
 
-        /* Monospace Numbers & Sections */
+        .statutory-box,
+        .statutory-pill,
+        .limit-pill,
+        .meta-pill,
+        .tax-rate,
+        .calc,
+        .formula,
+        code, pre {
+            font-family: var(--notes-table) !important;
+        }
+
         code, pre, .statute-code, .section-badge, .sidebar-badge {
-            font-family: 'JetBrains Mono', Consolas, monospace !important;
+            font-family: var(--notes-table) !important;
         }
 
+        /* 6. Sidebar Navigation UI remains clean Sans-Serif */
+        .sidebar, .sidebar * {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif !important;
+        }
     </style>
 </head>
 
@@ -1013,6 +1126,13 @@
 
         <!-- Main Content Area -->
         <main class="main-content">
+
+        <!-- Mode Switcher Bar -->
+        <div class="mode-bar" style="display: flex; gap: 10px; margin: 20px 0 28px 0; background: #f1f5f9; padding: 6px; border-radius: 10px; border: 1px solid #cbd5e1; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;">
+            <a href="transfer_pricing_quick.html" class="mode-btn" style="flex: 1; text-align: center; padding: 10px 16px; font-size: 13.5px; font-weight: 700; border-radius: 8px; text-decoration: none; color: #475569; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;">⚡ Fast-Track Quick Notes</a>
+            <a href="transfer_pricing.html" class="mode-btn active" style="flex: 1; text-align: center; padding: 10px 16px; font-size: 13.5px; font-weight: 700; border-radius: 8px; text-decoration: none; background: #ffffff; color: #1e3a8a; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); border: 1px solid #cbd5e1; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;">📖 Full In-Depth Notes (Theory + TYKs)</a>
+        </div>
+        
             <!-- Header Hero Banner -->
             <div class="chapter-header">
                 <div class="chapter-tag">

@@ -15,10 +15,10 @@
     <link rel="icon" href="../../../../fevicol.png" type="image/png">
     <link rel="stylesheet" href="../../assets/template.css">
 
-    <!-- Modern Typography -->
+    <!-- Typography: Kalam, Patrick Hand, Caveat + Outfit, Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Patrick+Hand&family=Caveat:wght@400;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
@@ -33,6 +33,12 @@
 
     <style>
         :root {
+            /* Calcium Notes Typography System */
+            --notes-body: 'Kalam', cursive;
+            --notes-heading: 'Patrick Hand', cursive;
+            --notes-highlight: 'Caveat', cursive;
+            --notes-table: Arial, sans-serif;
+
             --primary: #2563eb;
             --primary-hover: #1d4ed8;
             --primary-light: #eff6ff;
@@ -65,11 +71,124 @@
             --shadow-lg: 0 10px 25px -4px rgba(15, 23, 42, 0.1);
         }
 
+        /* Default Body Setup */
         body {
-            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-            color: var(--slate-800);
-            background: #f8fafc;
-            line-height: 1.6;
+            font-family: var(--notes-body);
+            color: #252525;
+            background: #fdfbf7;
+            line-height: 1.65;
+            font-size: 17.5px;
+            transition: background 0.25s ease, color 0.25s ease;
+        }
+
+        /* Option A - Premium Handwritten Identity (Active Default) */
+        body.theme-handwritten {
+            font-family: var(--notes-body) !important;
+            font-size: 17.5px !important;
+            line-height: 1.65 !important;
+            color: #252525 !important;
+            background: #fdfbf7 !important;
+        }
+
+        body.theme-handwritten h1,
+        body.theme-handwritten h2,
+        body.theme-handwritten h3,
+        body.theme-handwritten h4,
+        body.theme-handwritten .section-title,
+        body.theme-handwritten .sub-heading,
+        body.theme-handwritten .chapter-title,
+        body.theme-handwritten .hero-title,
+        body.theme-handwritten .clause-title,
+        body.theme-handwritten .info-box-header {
+            font-family: var(--notes-heading) !important;
+            font-weight: 400 !important;
+            letter-spacing: 0.25px !important;
+        }
+
+        body.theme-handwritten .hero-title {
+            font-size: 29px !important;
+        }
+        body.theme-handwritten .section-title {
+            font-size: 24px !important;
+        }
+        body.theme-handwritten .sub-heading {
+            font-size: 20px !important;
+        }
+
+        body.theme-handwritten .important,
+        body.theme-handwritten .important-point,
+        body.theme-handwritten .highlight,
+        body.theme-handwritten .hero-tag,
+        body.theme-handwritten .callout-warning,
+        body.theme-handwritten .key-takeaway {
+            font-family: var(--notes-highlight) !important;
+            font-weight: 700;
+            font-size: 1.25em;
+        }
+
+        /* Tables, calculations, limits and numbers stay crisp in Arial */
+        body.theme-handwritten table,
+        body.theme-handwritten th,
+        body.theme-handwritten td,
+        body.theme-handwritten .styled-table,
+        body.theme-handwritten .formula,
+        body.theme-handwritten .calc,
+        body.theme-handwritten .clause-badge,
+        body.theme-handwritten .hero-stat-badge,
+        body.theme-handwritten code {
+            font-family: var(--notes-table) !important;
+            font-size: 14.5px;
+        }
+
+        /* Option B - Clean Modern Identity */
+        body.theme-modern {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+            font-size: 15px !important;
+            line-height: 1.6 !important;
+            color: var(--slate-800) !important;
+            background: #f8fafc !important;
+        }
+
+        body.theme-modern h1,
+        body.theme-modern h2,
+        body.theme-modern h3,
+        body.theme-modern h4,
+        body.theme-modern .section-title,
+        body.theme-modern .sub-heading,
+        body.theme-modern .chapter-title,
+        body.theme-modern .hero-title,
+        body.theme-modern .clause-title,
+        body.theme-modern .info-box-header {
+            font-family: 'Outfit', sans-serif !important;
+        }
+
+        body.theme-modern table,
+        body.theme-modern th,
+        body.theme-modern td {
+            font-family: 'Plus Jakarta Sans', sans-serif !important;
+        }
+
+        /* Visual Identity Switcher Button */
+        .identity-toggle-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 5px 13px;
+            border-radius: 20px;
+            border: 1.5px solid #d97706;
+            background: #fef3c7;
+            color: #92400e;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+            font-size: 12.5px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            white-space: nowrap;
+        }
+        .identity-toggle-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
         }
 
         /* Topbar Enhancements */
@@ -936,7 +1055,7 @@
     }
     </script>
 </head>
-<body>
+<body class="theme-handwritten">
     
     <!-- Top Bar -->
     <header class="topbar">
@@ -947,6 +1066,9 @@
         </div>
 
         <div class="topbar-right">
+            <button id="identityToggleBtn" class="identity-toggle-btn" onclick="toggleVisualIdentity()" title="Switch between Premium Handwritten and Clean Modern styles">
+                <span id="identityIcon">✍️</span> <span id="identityLabel">Style: Premium Handwritten</span>
+            </button>
             <div class="progress-container" title="Reading Progress">
                 <div class="progress-bar"></div>
             </div>
@@ -1890,6 +2012,48 @@
                 }
             });
         });
+
+        // Visual Identity Switcher (Option A: Premium Handwritten vs Option B: Clean Modern)
+        function setVisualIdentity(style) {
+            const btn = document.getElementById('identityToggleBtn');
+            const label = document.getElementById('identityLabel');
+            const icon = document.getElementById('identityIcon');
+            if (style === 'modern') {
+                document.body.classList.remove('theme-handwritten');
+                document.body.classList.add('theme-modern');
+                if (label) label.textContent = 'Style: Clean Modern';
+                if (icon) icon.textContent = '💼';
+                if (btn) {
+                    btn.style.background = '#f1f5f9';
+                    btn.style.borderColor = '#cbd5e1';
+                    btn.style.color = '#334155';
+                }
+                localStorage.setItem('cn_visual_identity', 'modern');
+            } else {
+                document.body.classList.remove('theme-modern');
+                document.body.classList.add('theme-handwritten');
+                if (label) label.textContent = 'Style: Premium Handwritten';
+                if (icon) icon.textContent = '✍️';
+                if (btn) {
+                    btn.style.background = '#fef3c7';
+                    btn.style.borderColor = '#d97706';
+                    btn.style.color = '#92400e';
+                }
+                localStorage.setItem('cn_visual_identity', 'handwritten');
+            }
+        }
+
+        function toggleVisualIdentity() {
+            if (document.body.classList.contains('theme-modern')) {
+                setVisualIdentity('handwritten');
+            } else {
+                setVisualIdentity('modern');
+            }
+        }
+
+        // Initialize saved preference or default to Premium Handwritten
+        const savedIdentity = localStorage.getItem('cn_visual_identity') || 'handwritten';
+        setVisualIdentity(savedIdentity);
     </script>
 </body>
 </html>

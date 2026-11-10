@@ -550,57 +550,141 @@
         }
     
         /* ═══════════════════════════════════════════════════════════
-           CA FINAL DIRECT TAX - ENHANCED STRUCTURE & TYPOGRAPHY
+           CALCIUM NOTES DT - PREMIUM HANDWRITTEN VISUAL IDENTITY
            ═══════════════════════════════════════════════════════════ */
         :root {
-            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            --font-highlight: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            --font-mono: 'JetBrains Mono', Consolas, monospace;
+            --notes-body: 'Kalam', cursive;
+            --notes-heading: 'Patrick Hand', cursive;
+            --notes-highlight: 'Caveat', cursive;
+            --notes-table: Arial, sans-serif;
+
+            /* Heading Colors: Heading One Color & Subheading One Color */
+            --heading-one-color: #1e3a8a;      /* Heading One Color: Deep Navy Blue */
+            --subheading-one-color: #0284c7;   /* Subheading One Color: Vibrant Sapphire Blue */
+            --text-black: #000000;             /* All Data in Pure Black */
+
+            --font-sans: var(--notes-body);
+            --font-heading: var(--notes-heading);
+            --font-highlight: var(--notes-highlight);
+            --font-mono: var(--notes-table);
         }
 
+        /* Base Body Typography & Background */
         body {
-            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-            font-size: 15.5px !important;
+            font-family: var(--notes-body) !important;
+            font-size: 17.5px !important;
             line-height: 1.68 !important;
-            letter-spacing: -0.01em;
-            color: #1e293b;
+            color: var(--text-black) !important;
+            background-color: #fdfbf7 !important;
+            overflow-x: hidden;
         }
 
-        /* Semantic Headings Hierarchy */
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        /* 1. All Main Headings - ONE Color (Deep Navy Blue #1e3a8a) + Patrick Hand */
+        h1, h2,
+        .chapter-title,
+        .hero-title,
+        .section-heading,
+        .section-title,
+        .section-card-title,
+        .section-header-title,
+        .card-title,
+        .sec-name,
+        .content-section > h2,
+        .chapter-content-section h2 {
+            font-family: var(--notes-heading) !important;
+            color: var(--heading-one-color) !important;
+            font-weight: 400 !important;
+            letter-spacing: 0.3px !important;
         }
 
-        h2.section-heading, h2.section-title, h2.card-title, .content-section > h2, .chapter-content-section h2 {
-            font-size: 1.5rem !important;
-            font-weight: 800 !important;
-            color: #0f172a !important;
-            letter-spacing: -0.025em;
-            margin-bottom: 16px;
+        h1, .chapter-title, .hero-title {
+            font-size: 2.25rem !important;
+            line-height: 1.25 !important;
+            margin-bottom: 14px !important;
         }
 
-        h3.theory-title, h3.provision-title, h3.card-title, h3.subtopic-title, h3.statutory-box-header, h3.sub-heading, h3.card-header-sub {
-            font-size: 1.18rem !important;
+        h2, .section-heading, .section-title, .section-card-title, .content-section > h2 {
+            font-size: 1.6rem !important;
+            line-height: 1.3 !important;
+            margin-bottom: 16px !important;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+        }
+
+        /* 2. All Subheadings - ONE Color (Vibrant Sapphire Blue #0284c7) + Patrick Hand */
+        h3, h4,
+        .sub-heading,
+        .subtopic-title,
+        .provision-title,
+        .rules-title,
+        .theory-title,
+        .subsection-title,
+        .statutory-box-header,
+        .example-title,
+        .tyk-title,
+        .sub-sub-heading,
+        .card-header-sub,
+        .callout-title,
+        .step-title,
+        .tyk-subheading,
+        .sub-subheading {
+            font-family: var(--notes-heading) !important;
+            color: var(--subheading-one-color) !important;
+            font-weight: 400 !important;
+            letter-spacing: 0.2px !important;
+        }
+
+        h3, .subtopic-title, .provision-title, .rules-title, .theory-title, .statutory-box-header {
+            font-size: 1.28rem !important;
+            line-height: 1.35 !important;
+            margin-top: 18px !important;
+            margin-bottom: 10px !important;
+        }
+
+        h4, .example-title, .callout-title, .step-title, .tyk-title {
+            font-size: 1.1rem !important;
+            line-height: 1.4 !important;
+            margin-top: 14px !important;
+            margin-bottom: 8px !important;
+        }
+
+        /* 3. All Data & Content Text in PURE BLACK (#000000) */
+        p, li, dd, dt,
+        .concept-body,
+        .provision-body,
+        .card-body,
+        .analysis-text,
+        .explanation-text,
+        .chapter-desc,
+        .content-card p,
+        .theory-box p,
+        .law-box p,
+        .tyk-question,
+        .tyk-solution,
+        .step-desc,
+        .lead-text,
+        .notes-content {
+            font-family: var(--notes-body) !important;
+            color: var(--text-black) !important;
+            font-size: 17.5px !important;
+            line-height: 1.68 !important;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* 4. Highlights, Important Points & Traps in Caveat */
+        .important,
+        .important-point,
+        .highlight,
+        .key-takeaway,
+        .exam-trap-header {
+            font-family: var(--notes-highlight) !important;
             font-weight: 700 !important;
-            color: #0f172a !important;
-            letter-spacing: -0.015em;
-            margin-top: 18px;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            font-size: 1.3em !important;
         }
 
-        h4.example-title, h4.callout-title, h4.step-title, h4.tyk-title, h4.tyk-subheading, h4.sub-subheading {
-            font-size: 1.02rem !important;
-            font-weight: 700 !important;
-            letter-spacing: -0.01em;
-            margin-top: 14px;
-            margin-bottom: 8px;
-        }
-
-        /* CA Final Exam Alerts & Traps */
         .exam-trap-box, .callout-trap {
             background-color: #fffbeb !important;
             border: 1px solid #fde68a !important;
@@ -608,46 +692,68 @@
             border-radius: 8px !important;
             padding: 14px 18px !important;
             margin: 16px 0 !important;
-            font-size: 14px !important;
-            color: #92400e !important;
         }
 
-        .exam-trap-header {
-            font-weight: 800;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 6px;
-            color: #78350f;
-            text-transform: uppercase;
-            font-size: 12px;
-            letter-spacing: 0.05em;
+        .exam-trap-box p, .callout-trap p {
+            color: #78350f !important;
         }
 
-        /* Tables & Contrast Enhancements */
-        table {
-            font-size: 13.5px !important;
+        /* 5. Tables, Computations, Rates & Formulas strictly in Arial */
+        table,
+        .tax-table,
+        .data-table,
+        .summary-table,
+        .styled-table {
+            font-family: var(--notes-table) !important;
+            font-size: 14.5px !important;
+            border-collapse: collapse;
+            width: 100%;
+            margin: 16px 0;
+            background: #ffffff;
         }
 
         th {
+            font-family: var(--notes-table) !important;
+            background-color: #f1f5f9 !important;
+            color: var(--heading-one-color) !important;
             font-weight: 700 !important;
-            letter-spacing: 0.02em;
+            padding: 10px 14px;
+            border: 1px solid #cbd5e1;
+            font-size: 14px !important;
         }
 
         td {
-            color: #334155 !important;
+            font-family: var(--notes-table) !important;
+            color: var(--text-black) !important;
+            padding: 9px 14px;
+            border: 1px solid #e2e8f0;
+            font-size: 14px !important;
         }
 
-        /* Monospace Numbers & Sections */
+        .statutory-box,
+        .statutory-pill,
+        .limit-pill,
+        .meta-pill,
+        .tax-rate,
+        .calc,
+        .formula,
+        code, pre {
+            font-family: var(--notes-table) !important;
+        }
+
         code, pre, .statute-code, .section-badge, .sidebar-badge {
-            font-family: 'JetBrains Mono', Consolas, monospace !important;
+            font-family: var(--notes-table) !important;
         }
 
+        /* 6. Sidebar Navigation UI remains clean Sans-Serif */
+        .sidebar, .sidebar * {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif !important;
+        }
     </style>
     <!-- High-Legibility Fonts for CA Final Revision: Plus Jakarta Sans & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Patrick+Hand&family=Caveat:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
         <!-- ═══ SCROLL PROGRESS BAR ═══ -->
@@ -755,6 +861,13 @@
                     </p>
                 </header>
 
+        <!-- Mode Switcher Bar -->
+        <div class="mode-bar" style="display: flex; gap: 10px; margin: 20px 0 28px 0; background: #f1f5f9; padding: 6px; border-radius: 10px; border: 1px solid #cbd5e1; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;">
+            <a href="tds_tcs_recovery_quick.html" class="mode-btn" style="flex: 1; text-align: center; padding: 10px 16px; font-size: 13.5px; font-weight: 700; border-radius: 8px; text-decoration: none; color: #475569; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;">⚡ Fast-Track Quick Notes</a>
+            <a href="tds_tcs_recovery.html" class="mode-btn active" style="flex: 1; text-align: center; padding: 10px 16px; font-size: 13.5px; font-weight: 700; border-radius: 8px; text-decoration: none; background: #ffffff; color: #1e3a8a; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); border: 1px solid #cbd5e1; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;">📖 Full In-Depth Notes (Theory + TYKs)</a>
+        </div>
+        
+
 
 <!-- ========================================== -->
 <!-- MODULE 1: TDS PRINCIPLES & BASIC PAYMENTS  -->
@@ -802,6 +915,533 @@
                 <li><strong>Section 393:</strong> The Unified Statutory Table covering all payments to residents, non-residents, and any person (interest, dividends, contracts, rent, professional fees, e-commerce, VDAs, partner remunerations).</li>
             </ul>
         </div>
+        <!-- ═══════════════════════════════════════════════════════════
+             BARE ACT COMPENDIUM: COMPLETE MASTER TDS & TCS DIRECTORY
+             (Income-tax Act, 2025 as amended by Finance Act, 2026)
+             ═══════════════════════════════════════════════════════════ -->
+        <div class="content-card my-4" style="border: 2px solid #1e3a8a; border-radius: 12px; background: #ffffff; padding: 24px; box-shadow: 0 4px 14px rgba(0,0,0,0.06);">
+            <div style="border-bottom: 2px solid #eff6ff; padding-bottom: 12px; margin-bottom: 18px;">
+                <span class="badge" style="background: #1e3a8a; color: #ffffff; font-weight: 700; padding: 4px 10px; border-radius: 6px; font-size: 12px; text-transform: uppercase;">BARE ACT MASTER COMPENDIUM</span>
+                <h3 style="color: #1e3a8a; margin: 8px 0 4px 0; font-size: 1.5rem;" class="subtopic-title">Income-tax Act, 2025: Master TDS &amp; TCS Statutory Compendium</h3>
+                <p style="color: #000000; font-size: 14.5px; margin: 0;">Comprehensive statutory reference tables with exact bare act specifications: <strong>Sec | Particulars | Payer | Payee | Limit | Rates | Other Details</strong> (incorporating all Finance Act, 2026 amendments).</p>
+            </div>
+
+            <!-- Part A: Resident Payments -->
+            <div class="my-3">
+                <h4 style="color: #1e3a8a; font-weight: 800; border-left: 4px solid #1e3a8a; padding-left: 10px; margin-bottom: 8px;">Part A: Deduction of Tax at Source on Payments to Residents [Sections 392 &amp; 393(1)]</h4>
+                <p style="color: #000000; font-size: 14px; margin-bottom: 10px;">Full statutory withholding schedule covering Salaries, EPF, Dividends, Securities, Bank Interest, Contractors, Insurance Commission, Rent, Immovable Property, Professional Fees, Partner Remunerations (194T), Goods Purchases (194Q), and Perks (194R):</p>
+                <div class="table-responsive my-4">
+    <table class="tax-table styled-table">
+        <thead>
+            <tr>
+                <th style="width: 12%;">Sec</th>
+                <th style="width: 20%;">Particulars</th>
+                <th style="width: 14%;">Payer</th>
+                <th style="width: 13%;">Payee</th>
+                <th style="width: 15%;">Limit</th>
+                <th style="width: 10%;">Rates</th>
+                <th style="width: 16%;">Other Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Sec 392</strong><br><small class="text-muted">(Old Sec 192)</small></td>
+                <td><strong>Salaries</strong><br>Taxable salary, allowances, perquisites &amp; profits in lieu of salary</td>
+                <td>Any employer (Individual, Firm, Co., Govt)</td>
+                <td>Employee (Resident or Non-Resident)</td>
+                <td>Basic Exemption Limit (₹3,00,000 under Default Sec 115BAC / ₹2,50,000 Normal)</td>
+                <td><strong>Average Rate</strong> of income-tax on estimated salary</td>
+                <td>Deduction strictly at time of payment. Employee can report other incomes &amp; HP loss. Employer option to pay tax on non-monetary perquisites u/s 392(2). Start-up ESOP deferral u/s 392(3).</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 392(7)</strong><br><small class="text-muted">(Old Sec 192A)</small></td>
+                <td><strong>Premature Withdrawal from Recognized PF (EPF)</strong></td>
+                <td>Trustees of EPF Scheme or authorized person</td>
+                <td>Employee participating in RPF</td>
+                <td><strong>₹50,000</strong> aggregate</td>
+                <td><strong>10%</strong><br><small>(MMR if no PAN)</small></td>
+                <td>Deducted at time of payment. No TDS if employee rendered continuous service &ge; 5 years, or termination due to ill-health/discontinuance of business. Form 15G/15H applicable.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 5(i)</strong><br><small class="text-muted">(Old Sec 193)</small></td>
+                <td><strong>Interest on Securities</strong><br>Govt bonds, debentures, local authority securities</td>
+                <td>Any person issuing securities</td>
+                <td>Resident person</td>
+                <td>• <strong>₹10,000</strong> for 8% / 7.75% Savings Bonds<br>• <strong>₹5,000</strong> for public co. debentures paid by cheque</td>
+                <td><strong>10%</strong></td>
+                <td>Credit or payment, whichever earlier. No TDS on Demat securities, Central/State Govt securities (except 8%/7.75% Savings Bonds), or securities held by LIC/GIC/insurers or Business Trusts (SPVs).</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 7</strong><br><small class="text-muted">(Old Sec 194)</small></td>
+                <td><strong>Dividends</strong><br>Equity or Preference shares</td>
+                <td>Principal Officer of Domestic Company</td>
+                <td>Resident shareholder</td>
+                <td><strong>₹5,000</strong> per individual shareholder in a FY</td>
+                <td><strong>10%</strong></td>
+                <td>Deducted before payment in cash or cheque/draft. No TDS if paid by mode other than cash to resident individual and aggregate &le; ₹5,000. No TDS on dividends paid to LIC, GIC, or business trust.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 5(ii)</strong><br><small class="text-muted">(Old Sec 194A)</small></td>
+                <td><strong>Interest other than Interest on Securities (Banks / PO / Co-op Banks)</strong></td>
+                <td>Banking company, Co-operative bank, Post Office</td>
+                <td>Resident payee</td>
+                <td>• <strong>₹50,000</strong> for Senior Citizens (&ge; 60 years)<br>• <strong>₹40,000</strong> for other resident persons</td>
+                <td><strong>10%</strong></td>
+                <td>Credit or payment, whichever earlier. CBS integration applies limit bank-wide across all branches. Savings account interest is strictly exempt. Form 15G/15H allowed.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 5(iii)</strong><br><small class="text-muted">(Old Sec 194A)</small></td>
+                <td><strong>Interest other than Securities (Other Payers: NBFCs, Firms, Individuals)</strong></td>
+                <td>Specified Person (Other than Banks/PO)</td>
+                <td>Resident payee</td>
+                <td><strong>₹5,000</strong> aggregate in a FY</td>
+                <td><strong>10%</strong></td>
+                <td>Credit or payment, whichever earlier. No TDS on interest paid by a firm to its partners, inter-bank interest, or interest on income-tax refund.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 6(i)</strong><br><small class="text-muted">(Old Sec 194C)</small></td>
+                <td><strong>Payments to Contractors &amp; Sub-contractors (Work Contracts)</strong></td>
+                <td>Any person (Audit-liable Ind/HUF or entity/Govt)</td>
+                <td>Resident contractor / sub-contractor</td>
+                <td>• Single bill > <strong>₹30,000</strong><br>• Aggregate in FY > <strong>₹1,00,000</strong></td>
+                <td>• <strong>1%</strong> (Individual / HUF)<br>• <strong>2%</strong> (Others: Co, Firm, LLP)</td>
+                <td>Credit or payment, whichever earlier. "Work" includes manufacturing as per buyer's specifications with material from buyer. Transporter exemption: No TDS if contractor owns &le; 10 goods carriages and furnishes PAN &amp; declaration.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 1(i)</strong><br><small class="text-muted">(Old Sec 194D)</small></td>
+                <td><strong>Insurance Commission</strong><br>Soliciting or procuring insurance business</td>
+                <td>Insurance Company</td>
+                <td>Resident insurance agent</td>
+                <td><strong>₹20,000</strong> in a FY</td>
+                <td>• <strong>2%</strong> (Non-corporate agents)<br>• <strong>10%</strong> (Corporate agents)</td>
+                <td>Credit or payment, whichever earlier. Form 15G/15H allowed for resident non-corporate agents. Re-insurance commission exempt.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 4(ii)</strong><br><small class="text-muted">(Old Sec 194DA)</small></td>
+                <td><strong>Maturity Proceeds of Life Insurance Policy</strong><br>(Not exempt u/s 10(10D) / Sec 11)</td>
+                <td>Life Insurance Company</td>
+                <td>Resident policyholder</td>
+                <td><strong>₹1,00,000</strong> in a FY</td>
+                <td><strong>2%</strong> on net income component</td>
+                <td>Deducted at time of payment. Tax is charged only on net income (maturity sum minus total premiums paid). Form 15G/15H allowed.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 1(ii)</strong><br><small class="text-muted">(Old Sec 194H)</small></td>
+                <td><strong>Commission &amp; Brokerage</strong></td>
+                <td>Any person (Audit-liable Ind/HUF or entity)</td>
+                <td>Resident person</td>
+                <td><strong>₹20,000</strong> in a FY</td>
+                <td><strong>2%</strong></td>
+                <td>Credit or payment, whichever earlier. No TDS on underwriting commission, stock exchange brokerage, or BSNL/MTNL PCO franchisees.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 2(ii)</strong><br><small class="text-muted">(Old Sec 194-I)</small></td>
+                <td><strong>Rent of Land, Building, Furniture, Plant &amp; Machinery</strong></td>
+                <td>Any person (Audit-liable Ind/HUF or entity)</td>
+                <td>Resident payee / landlord</td>
+                <td><strong>₹2,40,000</strong> per financial year</td>
+                <td>• <strong>2%</strong> (Plant, Machinery &amp; Equipment)<br>• <strong>10%</strong> (Land, Building, Furniture, Fittings)</td>
+                <td>Credit or payment, whichever earlier. Sharing of rent among co-owners applies limit individually. No TDS if rent paid to REIT for direct real estate assets.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 3(i)</strong><br><small class="text-muted">(Old Sec 194-IA)</small></td>
+                <td><strong>Transfer of Immovable Property (Other than agricultural land)</strong></td>
+                <td>Transferee (Buyer)</td>
+                <td>Resident Transferor (Seller)</td>
+                <td><strong>₹50,00,000</strong> (Consideration or SDV)</td>
+                <td><strong>1%</strong> of higher of Sale Consideration or Stamp Duty Value</td>
+                <td>Credit or payment, whichever earlier. TAN not required; Buyer files Challan Form 26QB. If multiple buyers/sellers, aggregate value of property considered for ₹50L threshold! Includes club fees, car parking, water/electricity charges.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 2(i)</strong><br><small class="text-muted">(Old Sec 194-IB)</small></td>
+                <td><strong>Rent paid by Non-Audit Individuals &amp; HUFs</strong></td>
+                <td>Individual / HUF (non-audit)</td>
+                <td>Resident landlord</td>
+                <td><strong>₹50,000</strong> per month (or part of month)</td>
+                <td><strong>2%</strong></td>
+                <td>Deducted only once in the last month of FY (or last month of tenancy). TAN not required; Challan Form 26QC. Cap: If landlord has no PAN, TDS cannot exceed rent for last month.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 3(ii)</strong><br><small class="text-muted">(Old Sec 194-IC)</small></td>
+                <td><strong>Monetary Consideration under Joint Development Agreement (JDA)</strong></td>
+                <td>Developer / Builder</td>
+                <td>Resident land or building owner</td>
+                <td><strong>Nil</strong> (Any monetary consideration)</td>
+                <td><strong>10%</strong></td>
+                <td>Deducted on cash, cheque, draft paid in addition to share in project. Credit or payment, whichever earlier.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 6(iii)</strong><br><small class="text-muted">(Old Sec 194J)</small></td>
+                <td><strong>Professional &amp; Technical Services (FTS), Royalty, Director Fees</strong></td>
+                <td>Any person (Audit-liable Ind/HUF or entity)</td>
+                <td>Resident person</td>
+                <td>• <strong>₹50,000</strong> in FY (separate for Prof, FTS, Royalty)<br>• <strong>₹0</strong> (Any amount) for Director fees</td>
+                <td>• <strong>2%</strong> for FTS, call centre operations, film distribution royalty<br>• <strong>10%</strong> for other professional services, non-compete, director remuneration</td>
+                <td>Credit or payment, whichever earlier. TPA payments to private hospitals attract 10% TDS. Director sitting fees has ₹0 threshold (TDS on every rupee).</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 6(iv)</strong><br><small class="text-muted">(Old Sec 194T)</small></td>
+                <td><strong>Partner Remuneration, Salary, Bonus, Commission or Interest paid by Firm</strong></td>
+                <td>Partnership Firm (including LLP)</td>
+                <td>Partner of the firm</td>
+                <td><strong>₹20,000</strong> in a FY (Aggregate payment/credit)</td>
+                <td><strong>10%</strong></td>
+                <td>Deducted at the time of credit to partner's account (even if credited on 31st March) or payment, whichever earlier. Landmark FA 2024 / Income-tax Act, 2025 provision.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 4(i)</strong><br><small class="text-muted">(Old Sec 194K)</small></td>
+                <td><strong>Income in respect of Units of Mutual Fund or UTI</strong></td>
+                <td>Mutual Fund / Specified Co / UTI</td>
+                <td>Resident unit holder</td>
+                <td><strong>₹10,000</strong> in a FY</td>
+                <td><strong>10%</strong></td>
+                <td>Credit or payment, whichever earlier. No TDS on capital gains arising upon redemption / transfer of units. Form 15G/15H allowed.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 3(iii)</strong><br><small class="text-muted">(Old Sec 194LA)</small></td>
+                <td><strong>Compensation on Compulsory Acquisition of Immovable Property</strong></td>
+                <td>Any person acquiring property</td>
+                <td>Resident property owner</td>
+                <td><strong>₹5,00,000</strong> in aggregate in a FY</td>
+                <td><strong>10%</strong></td>
+                <td>Deducted at time of payment. No TDS on agricultural land or awards exempted under Section 96 of RFCTLARR Act, 2013.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 6(ii)</strong><br><small class="text-muted">(Old Sec 194M)</small></td>
+                <td><strong>Contractors, Commission, Professional Fees by Non-Audit Ind/HUFs</strong></td>
+                <td>Individual / HUF not liable to audit u/s 44AB</td>
+                <td>Resident contractor / professional / agent</td>
+                <td><strong>₹50,00,000</strong> in aggregate in a FY</td>
+                <td><strong>2%</strong></td>
+                <td>Credit or payment, whichever earlier. TAN not required; deposited using PAN-based Challan Form 26QD within 30 days. Covers personal contracts like weddings, home construction.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 8(i)</strong><br><small class="text-muted">(Old Sec 194N)</small></td>
+                <td><strong>Cash Withdrawal from Banking Co, Co-operative Bank, or Post Office</strong></td>
+                <td>Bank, Co-op Bank, Post Office</td>
+                <td>Account holder (Any person)</td>
+                <td>• <strong>₹1 Crore</strong> (Regular filers)<br>• <strong>₹3 Crores</strong> (Co-operative Societies)<br>• <strong>₹20 Lakhs</strong> (Non-filers for 3 years)</td>
+                <td>• <strong>2%</strong> on excess over ₹1 Cr / ₹3 Cr<br>• Non-filers: <strong>2%</strong> (₹20L-₹1Cr), <strong>5%</strong> (> ₹1Cr)</td>
+                <td>Deducted at time of cash withdrawal. Exemption for Govt, banking cos, white label ATM operators, cash replenishment agencies, APMC commission agents.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 8(iii)</strong><br><small class="text-muted">(Old Sec 194Q)</small></td>
+                <td><strong>Purchase of Goods exceeding ₹50 Lakhs</strong></td>
+                <td>Buyer whose turnover > ₹10 Crores in preceding FY</td>
+                <td>Resident seller</td>
+                <td><strong>₹50,00,000</strong> in a FY</td>
+                <td><strong>0.1%</strong> of sum exceeding ₹50 Lakhs<br><small>(5% if no PAN)</small></td>
+                <td>Credit or payment, whichever earlier. Priority: 194Q overrides 206C(1H). If transaction is subject to TDS under any other provision or TCS (other than 206C(1H)), 194Q does not apply.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 8(ii)</strong><br><small class="text-muted">(Old Sec 194R)</small></td>
+                <td><strong>Benefit or Perquisite arising from Business or Exercise of Profession</strong></td>
+                <td>Any person (Audit-liable Ind/HUF or entity)</td>
+                <td>Resident person receiving perk</td>
+                <td><strong>₹20,000</strong> in aggregate in a FY</td>
+                <td><strong>10%</strong> of value of benefit/perquisite</td>
+                <td>Applies whether benefit is in cash, in kind, or partly in cash &amp; partly in kind. If in kind, payer must verify tax payment before releasing perk. Circulars 12/2022 &amp; 18/2022 clarify dealer incentives, social media samples, foreign trips.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 8(iv)</strong><br><small class="text-muted">(Old Sec 194-O)</small></td>
+                <td><strong>Sale of Goods or Services Facilitated by E-Commerce Operator</strong></td>
+                <td>E-Commerce Operator (ECO)</td>
+                <td>Resident E-Commerce Participant (ECP)</td>
+                <td><strong>₹5,00,000</strong> in a FY (Individual/HUF with PAN)</td>
+                <td><strong>0.1%</strong> on gross amount of sales/services</td>
+                <td>Credit to ECP account or payment, whichever earlier. Direct payment by purchaser to ECP is deemed to be payment by ECO. Exemption if participant is individual/HUF and gross sales &le; ₹5L with PAN.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1)</strong><br><small class="text-muted">(Old Sec 194P)</small></td>
+                <td><strong>Exemption from Filing Return for Senior Citizens (&ge; 75 years)</strong></td>
+                <td>Specified Bank</td>
+                <td>Resident Senior Citizen (&ge; 75 yrs) having pension &amp; interest in same bank</td>
+                <td>Basic Exemption Limit</td>
+                <td><strong>Normal Slab Rates</strong></td>
+                <td>Senior citizen submits declaration Form 12BBA. Bank computes total income after Chapter VI-A deductions &amp; Sec 87A rebate and deducts TDS. Assessee completely exempt from filing ITR u/s 139!</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+            </div>
+
+            <!-- Part B: Payments to Any Person -->
+            <div class="my-4 pt-3" style="border-top: 1px dashed #cbd5e1;">
+                <h4 style="color: #1e3a8a; font-weight: 800; border-left: 4px solid #0284c7; padding-left: 10px; margin-bottom: 8px;">Part B: Withholding on Payments to Any Person [Section 393(3)]</h4>
+                <p style="color: #000000; font-size: 14px; margin-bottom: 10px;">Covering Lotteries, Online Gaming, Horse Races, Lottery Commission, Virtual Digital Assets (Crypto / NFTs), and Distributed Income from Business Trusts (REITs/InvITs), AIFs &amp; Securitisation Trusts:</p>
+                <div class="table-responsive my-4">
+    <table class="tax-table styled-table">
+        <thead>
+            <tr>
+                <th style="width: 12%;">Sec</th>
+                <th style="width: 20%;">Particulars</th>
+                <th style="width: 14%;">Payer</th>
+                <th style="width: 13%;">Payee</th>
+                <th style="width: 15%;">Limit</th>
+                <th style="width: 10%;">Rates</th>
+                <th style="width: 16%;">Other Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Sec 393(3) Sl. 1</strong><br><small class="text-muted">(Old Sec 194B)</small></td>
+                <td><strong>Winnings from Lottery, Crosswords, Card Games, Gambling, Betting</strong></td>
+                <td>Any person responsible for paying winnings</td>
+                <td>Any person (Resident or Non-Resident)</td>
+                <td><strong>₹10,000</strong> in a single transaction</td>
+                <td><strong>30%</strong><br><small>(Rates in force)</small></td>
+                <td>Credit or payment, whichever earlier. If winnings are wholly in kind or partly in kind, payer must ensure tax has been paid before releasing the prize. No basic exemption or slab benefit.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(3) Sl. 2</strong><br><small class="text-muted">(Old Sec 194BA)</small></td>
+                <td><strong>Winnings from Online Games (User Wallet / Gaming Accounts)</strong></td>
+                <td>Online gaming platform / Intermediary</td>
+                <td>Any person (User)</td>
+                <td><strong>Nil</strong> (Applicable on Net Winnings)</td>
+                <td><strong>30%</strong><br><small>(Rates in force)</small></td>
+                <td>Deducted on net winnings in user account at the end of the financial year. If user withdraws during FY, tax is deducted on net winnings included in withdrawal. Calculated as per Rule 133 formula.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(3) Sl. 3</strong><br><small class="text-muted">(Old Sec 194BB)</small></td>
+                <td><strong>Winnings from Horse Races</strong></td>
+                <td>Bookmaker or licensed race club</td>
+                <td>Any person</td>
+                <td><strong>₹10,000</strong> in a single transaction</td>
+                <td><strong>30%</strong><br><small>(Rates in force)</small></td>
+                <td>Deducted at the time of payment. No surcharge or cess for residents; applicable for non-residents.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(3) Sl. 4</strong><br><small class="text-muted">(Old Sec 194G)</small></td>
+                <td><strong>Commission on Sale of Lottery Tickets</strong></td>
+                <td>Any person stocking, distributing, or selling lottery tickets</td>
+                <td>Any person (Lottery distributor / agent)</td>
+                <td><strong>₹20,000</strong> in a FY</td>
+                <td><strong>2%</strong></td>
+                <td>Credit or payment, whichever earlier. Deducted on commission, remuneration, or prize on tickets.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(3) Sl. 8</strong><br><small class="text-muted">(Old Sec 194S)</small></td>
+                <td><strong>Transfer of Virtual Digital Asset (Crypto / NFTs)</strong></td>
+                <td>Any person responsible for paying consideration (Buyer / Exchange)</td>
+                <td>Resident transferor</td>
+                <td>• <strong>₹50,000</strong> for Specified Persons (Ind/HUF non-audit or no business income)<br>• <strong>₹10,000</strong> for others</td>
+                <td><strong>1%</strong> of gross consideration</td>
+                <td>Credit or payment, whichever earlier. In crypto-to-crypto trades, tax is deducted by buyer/exchange on both legs of transaction. Challan Form 26QE for specified persons.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(3) Sl. 10</strong><br><small class="text-muted">(Old Sec 194LBA)</small></td>
+                <td><strong>Distributed Income by Business Trust (REIT / InvIT)</strong></td>
+                <td>Business Trust</td>
+                <td>Unit holders (Resident or Non-Resident)</td>
+                <td><strong>Nil</strong> (Any distributed sum)</td>
+                <td>• Interest from SPV: <strong>10%</strong> (Resident), <strong>5%</strong> (NR)<br>• Rental income: <strong>10%</strong> (Resident), Rates in force (NR)<br>• SPV Dividend: <strong>10%</strong> (if SPV opted 115BAA)</td>
+                <td>Credit or payment, whichever earlier. Flow-through taxation mechanism under Section 115UA / Chapter XII-FA. Component of principal repayment / capital return subject to Sec 56(2)(xii) rules.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(3) Sl. 11</strong><br><small class="text-muted">(Old Sec 194LBB)</small></td>
+                <td><strong>Distributed Income by Investment Fund (AIF Category I &amp; II)</strong></td>
+                <td>Investment Fund (AIF)</td>
+                <td>Unit holder (Resident or Non-Resident)</td>
+                <td><strong>Nil</strong></td>
+                <td>• <strong>10%</strong> for Resident<br>• <strong>Rates in force</strong> for Non-Resident</td>
+                <td>Credit or payment, whichever earlier. Income (other than PGBP) has flow-through pass-through status in hands of unitholders u/s 115UB.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(3) Sl. 12</strong><br><small class="text-muted">(Old Sec 194LBC)</small></td>
+                <td><strong>Distributed Income by Securitisation Trust to Investors</strong></td>
+                <td>Securitisation Trust / Special Purpose Entity</td>
+                <td>Investor / Unit holder</td>
+                <td><strong>Nil</strong></td>
+                <td>• <strong>25%</strong> (Individual / HUF)<br>• <strong>30%</strong> (Other residents: Co, Firm)<br>• <strong>Rates in force</strong> (Non-Resident)</td>
+                <td>Credit or payment, whichever earlier. Tax pass-through treatment under Section 115TCA.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+            </div>
+
+            <!-- Part C: Payments to Non-Residents -->
+            <div class="my-4 pt-3" style="border-top: 1px dashed #cbd5e1;">
+                <h4 style="color: #1e3a8a; font-weight: 800; border-left: 4px solid #0284c7; padding-left: 10px; margin-bottom: 8px;">Part C: Withholding on Payments to Non-Residents [Section 393(2)]</h4>
+                <p style="color: #000000; font-size: 14px; margin-bottom: 10px;">Covering Non-Resident Sportsmen, Foreign Currency Loans, Rupee Denominated Bonds (RDBs), Foreign Institutional Investors (FII/FPI), and General Withholding u/s 195:</p>
+                <div class="table-responsive my-4">
+    <table class="tax-table styled-table">
+        <thead>
+            <tr>
+                <th style="width: 12%;">Sec</th>
+                <th style="width: 20%;">Particulars</th>
+                <th style="width: 14%;">Payer</th>
+                <th style="width: 13%;">Payee</th>
+                <th style="width: 15%;">Limit</th>
+                <th style="width: 10%;">Rates</th>
+                <th style="width: 16%;">Other Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Sec 393(2) Sl. 1</strong><br><small class="text-muted">(Old Sec 194E)</small></td>
+                <td><strong>Payments to Non-Resident Sportsmen, Sports Association, Entertainers</strong></td>
+                <td>Any person responsible for payment</td>
+                <td>Non-resident sportsman (not citizen of India), NR sports association, or entertainer</td>
+                <td><strong>Nil</strong> (Any amount)</td>
+                <td><strong>20%</strong><br><small>(+ Surcharge &amp; 4% Cess = 20.8%)</small></td>
+                <td>Covers participation in matches/games in India, advertisements, articles in newspapers/magazines. Assessee exempt from filing ITR u/s 115BBA if this is only Indian income and tax fully deducted.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(2) Sl. 2</strong><br><small class="text-muted">(Old Sec 194LC)</small></td>
+                <td><strong>Interest on Foreign Currency Borrowings / Long-term Infrastructure Bonds</strong></td>
+                <td>Indian company or Business Trust</td>
+                <td>Non-resident (not company) or Foreign Company</td>
+                <td><strong>Nil</strong></td>
+                <td><strong>5%</strong><br><small>(+ Surcharge &amp; Cess)</small></td>
+                <td>Approved loan agreement or long-term bonds issued before specified sunset date. Low withholding tax benefit.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(2) Sl. 3 &amp; 4</strong><br><small class="text-muted">(Old Sec 194LD)</small></td>
+                <td><strong>Interest on Rupee Denominated Bonds (RDBs) &amp; Govt Securities</strong></td>
+                <td>Any person responsible for paying interest</td>
+                <td>Foreign Institutional Investor (FII / FPI) or Qualified Foreign Investor (QFI)</td>
+                <td><strong>Nil</strong></td>
+                <td><strong>5%</strong><br><small>(+ Surcharge &amp; Cess)</small></td>
+                <td>Concessional rate applicable on RDBs listed on IFSC / recognized stock exchange.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(2) Sl. 15 &amp; 16</strong><br><small class="text-muted">(Old Sec 196D)</small></td>
+                <td><strong>Income from Securities (other than dividend / capital gains) to FIIs / FPIs</strong></td>
+                <td>Any person responsible for paying income</td>
+                <td>Foreign Institutional Investor (FII / FPI)</td>
+                <td><strong>Nil</strong></td>
+                <td><strong>20%</strong><br><small>(or DTAA rate if lower)</small></td>
+                <td>Credit or payment, whichever earlier. FPI can claim beneficial rate under applicable Double Tax Avoidance Agreement (DTAA) on furnishing Tax Residency Certificate (TRC) &amp; Form 10F.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(2) Sl. 17</strong><br><small class="text-muted">(Old Sec 195)</small></td>
+                <td><strong>Other Sums Chargeable to Tax (Royalty, FTS, Interest, Capital Gains, Business Income)</strong></td>
+                <td>Any person (Resident or Non-Resident)</td>
+                <td>Non-resident (not company) or Foreign Company</td>
+                <td><strong>Nil</strong> (Any sum chargeable to tax)</td>
+                <td><strong>Rates in force</strong> or <strong>DTAA Rate</strong> (whichever is more beneficial)</td>
+                <td>Credit or payment, whichever earlier. Payer can apply to AO u/s 195(2) or payee u/s 197 for nil/lower deduction certificate. Mandatory reporting in Form 15CA &amp; Chartered Accountant certificate in Form 15CB for foreign remittances.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+            </div>
+
+            <!-- Part D: Tax Collection at Source (TCS) -->
+            <div class="my-4 pt-3" style="border-top: 1px dashed #cbd5e1;">
+                <h4 style="color: #1e3a8a; font-weight: 800; border-left: 4px solid #d97706; padding-left: 10px; margin-bottom: 8px;">Part D: Tax Collection at Source (TCS) Master Table [Section 394 as amended by Finance Act, 2026]</h4>
+                <p style="color: #000000; font-size: 14px; margin-bottom: 10px;">Covering all 9 statutory categories under Section 394 incorporating all <strong>Finance Act, 2026 amendments</strong> (Alcohol 2%, Tendu 2%, Scrap 2%, Minerals 2%, LRS 2%/20%, Tour Package flat 2%, Motor Vehicles 1%, Goods 0.1%, and Form 27C exemption):</p>
+                <div class="table-responsive my-4">
+    <table class="tax-table styled-table">
+        <thead>
+            <tr>
+                <th style="width: 12%;">Sec</th>
+                <th style="width: 20%;">Particulars</th>
+                <th style="width: 14%;">Payer</th>
+                <th style="width: 13%;">Payee</th>
+                <th style="width: 15%;">Limit</th>
+                <th style="width: 10%;">Rates</th>
+                <th style="width: 16%;">Other Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Sec 394 Sl. 1</strong><br><small class="text-muted">(Old Sec 206C(1))</small></td>
+                <td><strong>Alcoholic Liquor for Human Consumption</strong></td>
+                <td>Seller</td>
+                <td>Buyer</td>
+                <td><strong>Nil</strong> (Any amount)</td>
+                <td><strong style="color: #b45309;">2%</strong><br><small style="color: #1e3a8a; font-weight:700;">(Amended by FA 2026)</small></td>
+                <td>Collected at time of debiting buyer's account or receipt of payment, whichever earlier. <strong>Form 27C Exemption:</strong> No TCS if resident buyer furnishes written declaration that liquor is for manufacturing/processing (not trading).</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 394 Sl. 2</strong><br><small class="text-muted">(Old Sec 206C(1))</small></td>
+                <td><strong>Tendu Leaves</strong></td>
+                <td>Seller</td>
+                <td>Buyer</td>
+                <td><strong>Nil</strong></td>
+                <td><strong style="color: #b45309;">2%</strong><br><small style="color: #1e3a8a; font-weight:700;">(Substituted for 5% by FA 2026)</small></td>
+                <td>Time of debit or receipt, whichever earlier. Form 27C declaration allowed for manufacturing/processing.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 394 Sl. 3</strong><br><small class="text-muted">(Old Sec 206C(1))</small></td>
+                <td><strong>Timber obtained under Forest Lease or any other Forest Produce</strong></td>
+                <td>Seller (State Forest Dept / Leaseholder)</td>
+                <td>Buyer</td>
+                <td><strong>Nil</strong></td>
+                <td><strong>2%</strong></td>
+                <td>Time of debit or receipt, whichever earlier. "Forest produce" as defined under Indian Forest Act, 1927. Form 27C declaration allowed.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 394 Sl. 4</strong><br><small class="text-muted">(Old Sec 206C(1))</small></td>
+                <td><strong>Scrap</strong></td>
+                <td>Seller</td>
+                <td>Buyer</td>
+                <td><strong>Nil</strong></td>
+                <td><strong style="color: #b45309;">2%</strong><br><small style="color: #1e3a8a; font-weight:700;">(Substituted for 1% by FA 2026)</small></td>
+                <td>"Scrap" means waste and scrap from manufacture or mechanical working of materials definitely not usable as such. Form 27C declaration allowed.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 394 Sl. 5</strong><br><small class="text-muted">(Old Sec 206C(1))</small></td>
+                <td><strong>Minerals (Coal, Lignite, or Iron Ore)</strong></td>
+                <td>Seller</td>
+                <td>Buyer</td>
+                <td><strong>Nil</strong></td>
+                <td><strong style="color: #b45309;">2%</strong><br><small style="color: #1e3a8a; font-weight:700;">(Substituted for 1% by FA 2026)</small></td>
+                <td>Time of debit or receipt, whichever earlier. Form 27C declaration allowed if minerals used for power generation or manufacturing.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 394 Sl. 6</strong><br><small class="text-muted">(Old Sec 206C(1F))</small></td>
+                <td><strong>Sale of Motor Vehicle / Notified Goods exceeding ₹10 Lakhs</strong></td>
+                <td>Seller</td>
+                <td>Buyer</td>
+                <td>Sale consideration > <strong>₹10,00,000</strong> (Single transaction)</td>
+                <td><strong>1%</strong> of sale consideration</td>
+                <td>Collected at time of receipt of payment. Applies to luxury cars, passenger cars, or commercial vehicles where single invoice exceeds ₹10L. Does not apply to purchase by Central/State Govt, embassies, or public sector undertakings.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 394 Sl. 7</strong><br><small class="text-muted">(Old Sec 206C(1G))</small></td>
+                <td><strong>Liberalised Remittance Scheme (LRS) of RBI</strong></td>
+                <td>Authorised Dealer (Bank)</td>
+                <td>Buyer / Remitter</td>
+                <td>Aggregate in FY > <strong>₹10,00,000</strong></td>
+                <td>• <strong style="color: #b45309;">2%</strong> for Education or Medical Treatment <small style="color: #1e3a8a; font-weight:700;">(FA 2026)</small><br>• <strong>20%</strong> for other purposes<br>• <strong style="color: #16a34a;">NIL (0%)</strong> if funded by education loan from Financial Institution!</td>
+                <td>Threshold of ₹10 Lakhs is aggregate across all LRS remittances in a FY. <strong>Exemption:</strong> No TCS by bank if tax already collected by tour operator under overseas tour package, or if remitter has deducted TDS under any other provision.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 394 Sl. 8</strong><br><small class="text-muted">(Old Sec 206C(1G))</small></td>
+                <td><strong>Sale of Overseas Tour Programme Package</strong></td>
+                <td>Tour Operator / Seller</td>
+                <td>Buyer</td>
+                <td><strong>Nil</strong> (Any consideration)</td>
+                <td><strong style="color: #b45309;">2%</strong><br><small style="color: #1e3a8a; font-weight:700;">(Streamlined to flat 2% by FA 2026!)</small></td>
+                <td>Includes expenses for travel, hotel stay, boarding, or lodging. Finance Act, 2026 eliminated earlier complicated 5%/20% split slab, replacing with uniform <strong>2%</strong>. No TCS if buyer is liable to deduct TDS and has deducted it.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 394 Sl. 9</strong><br><small class="text-muted">(Old Sec 206C(1C))</small></td>
+                <td><strong>Lease, License or Contract for Parking Lot, Toll Plaza, Mine or Quarry</strong></td>
+                <td>Licensor or Lessor (Govt, local authority, company)</td>
+                <td>Licensee or Lessee</td>
+                <td><strong>Nil</strong> (Any amount)</td>
+                <td><strong>2%</strong></td>
+                <td>Time of debit or receipt, whichever earlier. Excludes mining and quarrying of mineral oil (including petroleum and natural gas).</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 394</strong><br><small class="text-muted">(Old Sec 206C(1H))</small></td>
+                <td><strong>Sale of Goods of value exceeding ₹50 Lakhs</strong></td>
+                <td>Seller whose total sales/turnover > ₹10 Crores in preceding FY</td>
+                <td>Buyer</td>
+                <td>Receipt in FY > <strong>₹50,00,000</strong></td>
+                <td><strong>0.1%</strong> of sum exceeding ₹50 Lakhs<br><small>(1% if no PAN)</small></td>
+                <td>Collected on receipt of consideration. <strong>Priority Rule:</strong> If buyer is liable to deduct TDS u/s 194Q and has deducted it, seller shall NOT collect TCS under 206C(1H). Does not apply to goods exported or goods already covered under Sl. 1 to 6.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+            </div>
+        </div>
+
     </div>
 </section>
 
@@ -981,75 +1621,60 @@
             </div>
         </div>
 
-        <h3 style="color: var(--slate-900); font-weight: 700; margin-top: 16px; margin-bottom: 8px;" class="subtopic-title">Master Statutory Withholding Chart: Passive Investment Incomes</h3>
-        <table class="table-custom">
-            <thead>
-                <tr>
-                    <th>Table Sl. No.</th>
-                    <th>Nature of Payment</th>
-                    <th>Payer</th>
-                    <th>Threshold Limit</th>
-                    <th>Rate of TDS</th>
-                    <th>Key Exemptions &amp; Statutory Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Sl. 4(i)</strong><br><small>(Old Sec 194)</small></td>
-                    <td><strong>Dividends</strong><br>(Equity or Preference shares)</td>
-                    <td>Principal Officer of Domestic Company</td>
-                    <td><strong>₹5,000</strong> per individual shareholder per tax year</td>
-                    <td><strong>10%</strong></td>
-                    <td>
-                        • No TDS if paid to resident individual by any mode other than cash and aggregate &le; ₹5,000.<br>
-                        • No TDS if paid to LIC, GIC, or subsidiaries.<br>
-                        • No TDS on deemed dividend under Section 2(22)(e) paid to corporate shareholders if exempt.
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>Sl. 5(i)</strong><br><small>(Old Sec 193)</small></td>
-                    <td><strong>Interest on Securities</strong></td>
-                    <td>Any Person responsible for paying</td>
-                    <td>
-                        • <strong>₹10,000</strong> for 8% Savings (Taxable) Bonds / 7.75% Savings Bonds.<br>
-                        • <strong>₹5,000</strong> for debentures of widely-held company paid by account payee cheque.
-                    </td>
-                    <td><strong>10%</strong></td>
-                    <td>
-                        • No TDS on Central/State Government securities (except 8% / 7.75% Savings Bonds).<br>
-                        • No TDS on Dematerialized listed debentures.<br>
-                        • No TDS on securities held by LIC, GIC, or provident funds.
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>Sl. 5(ii)</strong><br><small>(Old Sec 194A)</small></td>
-                    <td><strong>Interest other than Interest on Securities (Banks / PO / Co-op Banks)</strong></td>
-                    <td>Banking company, Co-operative bank, Post Office</td>
-                    <td>
-                        • <strong>₹50,000</strong> for Resident Senior Citizens (&ge; 60 years).<br>
-                        • <strong>₹40,000</strong> for any other resident person.
-                    </td>
-                    <td><strong>10%</strong></td>
-                    <td>
-                        • <strong>Core Banking Integration:</strong> Threshold applies bank-wide across all branches if Core Banking Solutions (CBS) is enabled.<br>
-                        • Includes interest on Fixed Deposits and Recurring Deposits.<br>
-                        • Savings account interest is <strong>strictly exempt</strong> from TDS.
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>Sl. 5(iii)</strong><br><small>(Old Sec 194A)</small></td>
-                    <td><strong>Interest other than Interest on Securities (Other Payers)</strong></td>
-                    <td>Specified Person (Other than Banks/PO)</td>
-                    <td><strong>₹5,000</strong> in aggregate per tax year</td>
-                    <td><strong>10%</strong></td>
-                    <td>
-                        • Applies to interest paid by partnership firms to non-partners, corporate ICDs, NBFC loans, etc.<br>
-                        • <strong>Firm-to-Partner Exemption:</strong> Interest paid by a firm to its partner is <strong>expressly exempt</strong> from TDS under Sl. 5(iii) (now covered under Sec 194T / Sl. 8(xxiv)).<br>
-                        • Interest paid to banks, financial institutions, UTI, LIC is exempt.
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <h3 style="color: #1e3a8a; font-weight: 700; margin-top: 16px; margin-bottom: 8px;" class="subtopic-title">Master Statutory Withholding Chart: Passive Investment Incomes [Section 393(1) Sl. 5 &amp; 7]</h3>
+<div class="table-responsive my-3">
+    <table class="tax-table styled-table">
+        <thead>
+            <tr>
+                <th style="width: 12%;">Sec</th>
+                <th style="width: 20%;">Particulars</th>
+                <th style="width: 14%;">Payer</th>
+                <th style="width: 13%;">Payee</th>
+                <th style="width: 15%;">Limit</th>
+                <th style="width: 10%;">Rates</th>
+                <th style="width: 16%;">Other Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 7</strong><br><small class="text-muted">(Old Sec 194)</small></td>
+                <td><strong>Dividends</strong><br>(Equity or Preference shares)</td>
+                <td>Principal Officer of Domestic Company</td>
+                <td>Resident shareholder</td>
+                <td><strong>₹5,000</strong> per individual shareholder per tax year</td>
+                <td><strong>10%</strong></td>
+                <td>• No TDS if paid to resident individual by any mode other than cash and aggregate &le; ₹5,000.<br>• No TDS on dividends paid to LIC, GIC, or business trust.<br>• Form 15G/15H declaration allowed.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 5(i)</strong><br><small class="text-muted">(Old Sec 193)</small></td>
+                <td><strong>Interest on Securities</strong></td>
+                <td>Any Person responsible for paying</td>
+                <td>Resident person</td>
+                <td>• <strong>₹10,000</strong> for 8% / 7.75% Savings Bonds.<br>• <strong>₹5,000</strong> for public co. debentures paid by cheque.</td>
+                <td><strong>10%</strong></td>
+                <td>• No TDS on Central/State Government securities (except 8%/7.75% Savings Bonds).<br>• No TDS on Dematerialized listed debentures.<br>• No TDS on securities held by LIC, GIC, or provident funds.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 5(ii)</strong><br><small class="text-muted">(Old Sec 194A)</small></td>
+                <td><strong>Interest other than Interest on Securities (Banks / PO / Co-op Banks)</strong></td>
+                <td>Banking company, Co-operative bank, Post Office</td>
+                <td>Resident payee</td>
+                <td>• <strong>₹50,000</strong> for Resident Senior Citizens (&ge; 60 years).<br>• <strong>₹40,000</strong> for any other resident person.</td>
+                <td><strong>10%</strong></td>
+                <td>• CBS Integration applies limit bank-wide across all branches.<br>• Includes interest on Fixed Deposits &amp; Recurring Deposits.<br>• Savings account interest is strictly exempt.<br>• Form 15G/15H allowed.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 5(iii)</strong><br><small class="text-muted">(Old Sec 194A)</small></td>
+                <td><strong>Interest other than Interest on Securities (Other Payers: NBFCs, Firms, Individuals)</strong></td>
+                <td>Specified Person (Other than Banks/PO)</td>
+                <td>Resident payee</td>
+                <td><strong>₹5,000</strong> in aggregate per tax year</td>
+                <td><strong>10%</strong></td>
+                <td>• Credit or payment, whichever earlier.<br>• No TDS on interest paid by firm to its partners.<br>• No TDS on inter-bank interest or interest on income-tax refund.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
         <div class="callout callout-info mt-3">
             <h4 class="callout-title"><i class="fa-solid fa-lightbulb"></i> Critical Judicial Principles on Interest TDS</h4>
@@ -1221,61 +1846,59 @@
             The insurance and agency sectors are governed by specialized withholding thresholds under the Table to Section 393(1):
         </p>
 
-        <table class="table-custom my-3">
-            <thead>
-                <tr>
-                    <th>Table Sl. No.</th>
-                    <th>Transaction Nature</th>
-                    <th>Payer</th>
-                    <th>Threshold</th>
-                    <th>Rate of TDS</th>
-                    <th>Statutory Scope &amp; Compliance Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Sl. 1(i)</strong><br><small>(Old Sec 194D)</small></td>
-                    <td><strong>Insurance Commission</strong><br>(Soliciting or procuring insurance business, renewal/revival)</td>
-                    <td>Any Person (Insurance Companies)</td>
-                    <td><strong>₹20,000</strong> per tax year</td>
-                    <td>
-                        • <strong>2%</strong> for Resident Non-Corporate Payee.<br>
-                        • <strong>10%</strong> for Domestic Company Payee.
-                    </td>
-                    <td>Threshold amended from ₹15,000 to ₹20,000 under Income-tax Act, 2025. Deducted on credit or payment, whichever is earlier.</td>
-                </tr>
-                <tr>
-                    <td><strong>Sl. 1(ii)</strong><br><small>(Old Sec 194H)</small></td>
-                    <td><strong>Commission or Brokerage</strong><br>(Services in buying/selling, agency, excluding professional services)</td>
-                    <td>Specified Person (Corporate, Firm, or Ind/HUF under audit)</td>
-                    <td><strong>₹20,000</strong> per tax year</td>
-                    <td><strong>2%</strong><br><small>(Amended from 5%)</small></td>
-                    <td>
-                        • Does not apply to underwriting commission or loan processing brokerage paid to banks.<br>
-                        • Principal-to-Principal transactions (discount on SIM cards / start-up kits) are <strong>not</strong> commission.
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>Sl. 8(iii)</strong><br><small>(Old Sec 194DA)</small></td>
-                    <td><strong>Life Insurance Policy (LIC) Payouts</strong><br>(Maturity proceeds not exempt u/s 10(10D) / Schedule III)</td>
-                    <td>Insurance Company</td>
-                    <td><strong>₹1,00,000</strong> in aggregate per tax year</td>
-                    <td><strong>5%</strong> on the <strong>income component</strong></td>
-                    <td>
-                        • Tax is deducted strictly on the <strong>net income</strong> (Total maturity amount received <em>less</em> aggregate insurance premiums paid by the policyholder).<br>
-                        • No TDS if sum is exempt under Schedule III (Sl. 9).
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>Sl. 8(iv)</strong><br><small>(Old Sec 194E)</small></td>
-                    <td><strong>Payments to Non-Resident Sportsmen / Entertainers</strong></td>
-                    <td>Any Person (Clubs, Associations)</td>
-                    <td><strong>Nil</strong> (Every rupee taxable)</td>
-                    <td><strong>20%</strong> + Surcharge + 4% HEC</td>
-                    <td>Applies to non-citizen, non-resident athletes, artists, sports associations participating in matches/games in India or contributing articles/advertisements.</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive my-3">
+    <table class="tax-table styled-table">
+        <thead>
+            <tr>
+                <th style="width: 12%;">Sec</th>
+                <th style="width: 20%;">Particulars</th>
+                <th style="width: 14%;">Payer</th>
+                <th style="width: 13%;">Payee</th>
+                <th style="width: 15%;">Limit</th>
+                <th style="width: 10%;">Rates</th>
+                <th style="width: 16%;">Other Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 1(i)</strong><br><small class="text-muted">(Old Sec 194D)</small></td>
+                <td><strong>Insurance Commission</strong><br>(Procuring or soliciting insurance business)</td>
+                <td>Any insurance company</td>
+                <td>Resident insurance agent</td>
+                <td><strong>₹20,000</strong> in aggregate in a tax year</td>
+                <td>• <strong>2%</strong> (Non-corporate agent)<br>• <strong>10%</strong> (Corporate agent)</td>
+                <td>Credit or payment, whichever earlier. Form 15G/15H declaration allowed for non-corporate resident agents. Re-insurance commission is exempt.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 1(ii)</strong><br><small class="text-muted">(Old Sec 194H)</small></td>
+                <td><strong>Commission &amp; Brokerage</strong></td>
+                <td>Any person (Audit-liable Ind/HUF or entity)</td>
+                <td>Resident person</td>
+                <td><strong>₹20,000</strong> in aggregate in a tax year</td>
+                <td><strong>2%</strong></td>
+                <td>Credit or payment, whichever earlier. No TDS on stock exchange brokerage, underwriting commission, or BSNL/MTNL PCO franchisees.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 4(ii)</strong><br><small class="text-muted">(Old Sec 194DA)</small></td>
+                <td><strong>Life Insurance Policy Maturity Proceeds</strong><br>(Not exempt u/s 10(10D) / Sec 11)</td>
+                <td>Life Insurance Company</td>
+                <td>Resident policyholder</td>
+                <td><strong>₹1,00,000</strong> in aggregate in a tax year</td>
+                <td><strong>2%</strong> on net income component</td>
+                <td>Deducted at time of payment. Tax is charged only on net income (maturity sum minus total premiums paid by assessee). Form 15G/15H allowed.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(1) Sl. 4(iii)</strong><br><small class="text-muted">(Old Sec 194EE)</small></td>
+                <td><strong>National Savings Scheme (NSS) Repayments</strong></td>
+                <td>Post Office / Central Govt</td>
+                <td>Resident depositor</td>
+                <td><strong>₹2,500</strong> in aggregate in a tax year</td>
+                <td><strong>10%</strong></td>
+                <td>No TDS if payment is made to legal heirs of the deceased depositor. Form 15G/15H allowed.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
         <div class="callout callout-info">
             <h4 class="callout-title"><i class="fa-solid fa-file-contract"></i> Landmark Supreme Court Ruling: Principal-to-Principal Trade Discounts</h4>
@@ -1448,61 +2071,50 @@
             Distributions made by pooled investment vehicles and collective investment vehicles operate under specialized pass-through and withholding regimes:
         </p>
 
-        <table class="table-custom my-3">
-            <thead>
-                <tr>
-                    <th>Entity Type</th>
-                    <th>Governing Provision</th>
-                    <th>Nature of Distributed Income</th>
-                    <th>Rate of TDS</th>
-                    <th>Threshold &amp; Key Conditions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Mutual Funds / Unit Trust of India</strong></td>
-                    <td>Section 393(1) [Table: Sl. 4(i)]<br><small>(Old Sec 194K)</small></td>
-                    <td>Income in respect of units of Mutual Fund or Administrator of Specified Undertaking</td>
-                    <td><strong>10%</strong></td>
-                    <td><strong>₹5,000</strong> per tax year. Capital gains component is exempt from TDS.</td>
-                </tr>
-                <tr>
-                    <td><strong>Business Trusts (REITs / InvITs)</strong></td>
-                    <td>Section 393(1) [Table: Sl. 8(xvi)]<br><small>(Old Sec 194LBA)</small></td>
-                    <td>
-                        • Interest received from SPV<br>
-                        • Dividend received from SPV (where SPV opted for Sec 115BAA)<br>
-                        • Rental income of REIT
-                    </td>
-                    <td>
-                        • <strong>10%</strong> for Resident Unit Holder.<br>
-                        • <strong>5%</strong> for Non-Resident Unit Holder on Interest.<br>
-                        • Nil if SPV did not opt for Sec 115BAA.
-                    </td>
-                    <td>Pass-through character preserved u/s 115UA; withholding triggers on distribution.</td>
-                </tr>
-                <tr>
-                    <td><strong>Investment Funds (AIF Category I &amp; II)</strong></td>
-                    <td>Section 393(1) [Table: Sl. 8(xvii)]<br><small>(Old Sec 194LBB)</small></td>
-                    <td>Any income distributed other than business income exempt u/s 10(23FBA)</td>
-                    <td>
-                        • <strong>10%</strong> for Resident Unit Holder.<br>
-                        • Rates in force for Non-Resident.
-                    </td>
-                    <td>Pass-through income taxed in unit holder's hands u/s 115UB; TDS deducted at point of distribution or credit.</td>
-                </tr>
-                <tr>
-                    <td><strong>Securitisation Trusts</strong></td>
-                    <td>Section 393(1) [Table: Sl. 8(xviii)]<br><small>(Old Sec 194LBC)</small></td>
-                    <td>Income from investor protection fund / securitised debt instruments</td>
-                    <td>
-                        • <strong>25%</strong> for Resident Individual / HUF.<br>
-                        • <strong>30%</strong> for Other Resident Persons.
-                    </td>
-                    <td>Pass-through regime under Section 115TCA.</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive my-3">
+    <table class="tax-table styled-table">
+        <thead>
+            <tr>
+                <th style="width: 12%;">Sec</th>
+                <th style="width: 20%;">Particulars</th>
+                <th style="width: 14%;">Payer</th>
+                <th style="width: 13%;">Payee</th>
+                <th style="width: 15%;">Limit</th>
+                <th style="width: 10%;">Rates</th>
+                <th style="width: 16%;">Other Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Sec 393(3) Sl. 10</strong><br><small class="text-muted">(Old Sec 194LBA)</small></td>
+                <td><strong>Distributed Income by Business Trust (REIT / InvIT)</strong></td>
+                <td>Business Trust (REIT / InvIT)</td>
+                <td>Unit holders (Resident or Non-Resident)</td>
+                <td><strong>Nil</strong> (Any distributed sum)</td>
+                <td>• Interest from SPV: <strong>10%</strong> (Resident), <strong>5%</strong> (NR)<br>• Rental income: <strong>10%</strong> (Resident), Rates in force (NR)<br>• SPV Dividend: <strong>10%</strong> (if SPV opted 115BAA)</td>
+                <td>Credit or payment, whichever earlier. Flow-through taxation mechanism under Section 115UA. Principal repayment / capital return subject to Sec 56(2)(xii) rules.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(3) Sl. 11</strong><br><small class="text-muted">(Old Sec 194LBB)</small></td>
+                <td><strong>Distributed Income by Investment Fund (AIF Category I &amp; II)</strong></td>
+                <td>Investment Fund (AIF)</td>
+                <td>Unit holder (Resident or Non-Resident)</td>
+                <td><strong>Nil</strong></td>
+                <td>• <strong>10%</strong> for Resident<br>• <strong>Rates in force</strong> for Non-Resident</td>
+                <td>Credit or payment, whichever earlier. Income (other than business profits) has pass-through status in hands of unitholders u/s 115UB.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(3) Sl. 12</strong><br><small class="text-muted">(Old Sec 194LBC)</small></td>
+                <td><strong>Distributed Income by Securitisation Trust to Investors</strong></td>
+                <td>Securitisation Trust / Special Purpose Entity</td>
+                <td>Investor / Unit holder</td>
+                <td><strong>Nil</strong></td>
+                <td>• <strong>25%</strong> (Individual / HUF)<br>• <strong>30%</strong> (Other residents: Co, Firm)<br>• <strong>Rates in force</strong> (Non-Resident)</td>
+                <td>Credit or payment, whichever earlier. Tax pass-through treatment under Section 115TCA.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
     </div>
 </section>
 
@@ -1680,74 +2292,115 @@
         </p>
 
         <h3 style="color: var(--slate-900); font-weight: 700; margin-top: 16px; margin-bottom: 8px;" class="subtopic-title">1. Master Statutory TCS Chart: Goods, Leases &amp; Facilities</h3>
-        <table class="table-custom my-3">
-            <thead>
-                <tr>
-                    <th>Statutory Category</th>
-                    <th>Nature of Goods / Right Conferred</th>
-                    <th>Collector (Seller / Licensor)</th>
-                    <th>TCS Rate</th>
-                    <th>Statutory Exemptions &amp; Conditions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Alcoholic Liquor</strong></td>
-                    <td>Sale of alcoholic liquor for human consumption</td>
-                    <td>Seller (Distillery, Wholesaler, Govt)</td>
-                    <td><strong>1%</strong></td>
-                    <td>No threshold. Collected at debit or receipt, whichever is earlier.</td>
-                </tr>
-                <tr>
-                    <td><strong>Tendu Leaves</strong></td>
-                    <td>Sale of tendu leaves</td>
-                    <td>Seller (Forest Dept, Contractor)</td>
-                    <td><strong>5%</strong></td>
-                    <td>Zero threshold.</td>
-                </tr>
-                <tr>
-                    <td><strong>Timber &amp; Forest Produce</strong></td>
-                    <td>Timber obtained under a forest lease or any other mode; any other forest produce</td>
-                    <td>Forest Dept / Seller</td>
-                    <td><strong>2.5%</strong></td>
-                    <td>Does not apply if purchased for personal consumption.</td>
-                </tr>
-                <tr>
-                    <td><strong>Scrap</strong></td>
-                    <td>Sale of scrap resulting from manufacture or mechanical working</td>
-                    <td>Seller</td>
-                    <td><strong>1%</strong></td>
-                    <td>
-                        • <strong>Section 402 Definition:</strong> Waste and scrap from manufacture or mechanical working of materials definitely not usable as such.<br>
-                        • Scrap from trade/retail is <strong>not</strong> subject to TCS (<em>Navine Fluorine</em>).
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>Minerals</strong></td>
-                    <td>Sale of Coal, Lignite, or Iron Ore</td>
-                    <td>Mine Owner / Seller</td>
-                    <td><strong>1%</strong></td>
-                    <td><strong>Form 27C Exemption:</strong> Buyer can submit declaration in Form 27C that minerals are for manufacturing or power generation, exempting them from TCS.</td>
-                </tr>
-                <tr>
-                    <td><strong>Parking Lot, Toll Plaza, Mining &amp; Quarrying</strong></td>
-                    <td>Lease, licence, or contract for parking lot, toll plaza, or mining/quarrying</td>
-                    <td>Lessor / Licensor (Govt, Municipal Corp)</td>
-                    <td><strong>2%</strong></td>
-                    <td>Mining and quarrying does <strong>not</strong> include mineral oil, petroleum, or natural gas.</td>
-                </tr>
-                <tr>
-                    <td><strong>Motor Vehicles &gt; ₹10 Lakhs</strong></td>
-                    <td>Sale of any motor vehicle of value exceeding ₹10 Lakhs</td>
-                    <td>Automobile Dealer / Seller</td>
-                    <td><strong>1%</strong></td>
-                    <td>
-                        • Applies strictly to <strong>retail sales to consumers</strong>.<br>
-                        • B2B sales from manufacturer to dealer are <strong>exempt</strong> from 1% vehicle TCS (Circular 19/2016).
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <h3 style="color: #1e3a8a; font-weight: 700; margin-top: 16px; margin-bottom: 8px;" class="subtopic-title">Complete Statutory TCS Master Table [Section 394 as amended by Finance Act, 2026]</h3>
+    <p style="color: #000000; font-size: 14px; margin-bottom: 12px;">Every person specified in column C shall collect tax at source on receipts specified in column B at the rates specified below with all <strong>Finance Act, 2026 amendments</strong>:</p>
+    <div class="table-responsive my-4">
+    <table class="tax-table styled-table">
+        <thead>
+            <tr>
+                <th style="width: 12%;">Sec</th>
+                <th style="width: 20%;">Particulars</th>
+                <th style="width: 14%;">Payer</th>
+                <th style="width: 13%;">Payee</th>
+                <th style="width: 15%;">Limit</th>
+                <th style="width: 10%;">Rates</th>
+                <th style="width: 16%;">Other Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Sec 394 Sl. 1</strong><br><small class="text-muted">(Old Sec 206C(1))</small></td>
+                <td><strong>Alcoholic Liquor for Human Consumption</strong></td>
+                <td>Seller</td>
+                <td>Buyer</td>
+                <td><strong>Nil</strong> (Any amount)</td>
+                <td><strong style="color: #b45309;">2%</strong><br><small style="color: #1e3a8a; font-weight:700;">(Amended by FA 2026)</small></td>
+                <td>Collected at time of debiting buyer's account or receipt of payment, whichever earlier. <strong>Form 27C Exemption:</strong> No TCS if resident buyer furnishes written declaration that liquor is for manufacturing/processing (not trading).</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 394 Sl. 2</strong><br><small class="text-muted">(Old Sec 206C(1))</small></td>
+                <td><strong>Tendu Leaves</strong></td>
+                <td>Seller</td>
+                <td>Buyer</td>
+                <td><strong>Nil</strong></td>
+                <td><strong style="color: #b45309;">2%</strong><br><small style="color: #1e3a8a; font-weight:700;">(Substituted for 5% by FA 2026)</small></td>
+                <td>Time of debit or receipt, whichever earlier. Form 27C declaration allowed for manufacturing/processing.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 394 Sl. 3</strong><br><small class="text-muted">(Old Sec 206C(1))</small></td>
+                <td><strong>Timber obtained under Forest Lease or any other Forest Produce</strong></td>
+                <td>Seller (State Forest Dept / Leaseholder)</td>
+                <td>Buyer</td>
+                <td><strong>Nil</strong></td>
+                <td><strong>2%</strong></td>
+                <td>Time of debit or receipt, whichever earlier. "Forest produce" as defined under Indian Forest Act, 1927. Form 27C declaration allowed.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 394 Sl. 4</strong><br><small class="text-muted">(Old Sec 206C(1))</small></td>
+                <td><strong>Scrap</strong></td>
+                <td>Seller</td>
+                <td>Buyer</td>
+                <td><strong>Nil</strong></td>
+                <td><strong style="color: #b45309;">2%</strong><br><small style="color: #1e3a8a; font-weight:700;">(Substituted for 1% by FA 2026)</small></td>
+                <td>"Scrap" means waste and scrap from manufacture or mechanical working of materials definitely not usable as such. Form 27C declaration allowed.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 394 Sl. 5</strong><br><small class="text-muted">(Old Sec 206C(1))</small></td>
+                <td><strong>Minerals (Coal, Lignite, or Iron Ore)</strong></td>
+                <td>Seller</td>
+                <td>Buyer</td>
+                <td><strong>Nil</strong></td>
+                <td><strong style="color: #b45309;">2%</strong><br><small style="color: #1e3a8a; font-weight:700;">(Substituted for 1% by FA 2026)</small></td>
+                <td>Time of debit or receipt, whichever earlier. Form 27C declaration allowed if minerals used for power generation or manufacturing.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 394 Sl. 6</strong><br><small class="text-muted">(Old Sec 206C(1F))</small></td>
+                <td><strong>Sale of Motor Vehicle / Notified Goods exceeding ₹10 Lakhs</strong></td>
+                <td>Seller</td>
+                <td>Buyer</td>
+                <td>Sale consideration > <strong>₹10,00,000</strong> (Single transaction)</td>
+                <td><strong>1%</strong> of sale consideration</td>
+                <td>Collected at time of receipt of payment. Applies to luxury cars, passenger cars, or commercial vehicles where single invoice exceeds ₹10L. Does not apply to purchase by Central/State Govt, embassies, or public sector undertakings.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 394 Sl. 7</strong><br><small class="text-muted">(Old Sec 206C(1G))</small></td>
+                <td><strong>Liberalised Remittance Scheme (LRS) of RBI</strong></td>
+                <td>Authorised Dealer (Bank)</td>
+                <td>Buyer / Remitter</td>
+                <td>Aggregate in FY > <strong>₹10,00,000</strong></td>
+                <td>• <strong style="color: #b45309;">2%</strong> for Education or Medical Treatment <small style="color: #1e3a8a; font-weight:700;">(FA 2026)</small><br>• <strong>20%</strong> for other purposes<br>• <strong style="color: #16a34a;">NIL (0%)</strong> if funded by education loan from Financial Institution!</td>
+                <td>Threshold of ₹10 Lakhs is aggregate across all LRS remittances in a FY. <strong>Exemption:</strong> No TCS by bank if tax already collected by tour operator under overseas tour package, or if remitter has deducted TDS under any other provision.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 394 Sl. 8</strong><br><small class="text-muted">(Old Sec 206C(1G))</small></td>
+                <td><strong>Sale of Overseas Tour Programme Package</strong></td>
+                <td>Tour Operator / Seller</td>
+                <td>Buyer</td>
+                <td><strong>Nil</strong> (Any consideration)</td>
+                <td><strong style="color: #b45309;">2%</strong><br><small style="color: #1e3a8a; font-weight:700;">(Streamlined to flat 2% by FA 2026!)</small></td>
+                <td>Includes expenses for travel, hotel stay, boarding, or lodging. Finance Act, 2026 eliminated earlier complicated 5%/20% split slab, replacing with uniform <strong>2%</strong>. No TCS if buyer is liable to deduct TDS and has deducted it.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 394 Sl. 9</strong><br><small class="text-muted">(Old Sec 206C(1C))</small></td>
+                <td><strong>Lease, License or Contract for Parking Lot, Toll Plaza, Mine or Quarry</strong></td>
+                <td>Licensor or Lessor (Govt, local authority, company)</td>
+                <td>Licensee or Lessee</td>
+                <td><strong>Nil</strong> (Any amount)</td>
+                <td><strong>2%</strong></td>
+                <td>Time of debit or receipt, whichever earlier. Excludes mining and quarrying of mineral oil (including petroleum and natural gas).</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 394</strong><br><small class="text-muted">(Old Sec 206C(1H))</small></td>
+                <td><strong>Sale of Goods of value exceeding ₹50 Lakhs</strong></td>
+                <td>Seller whose total sales/turnover > ₹10 Crores in preceding FY</td>
+                <td>Buyer</td>
+                <td>Receipt in FY > <strong>₹50,00,000</strong></td>
+                <td><strong>0.1%</strong> of sum exceeding ₹50 Lakhs<br><small>(1% if no PAN)</small></td>
+                <td>Collected on receipt of consideration. <strong>Priority Rule:</strong> If buyer is liable to deduct TDS u/s 194Q and has deducted it, seller shall NOT collect TCS under 206C(1H). Does not apply to goods exported or goods already covered under Sl. 1 to 6.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
         <h3 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;" class="subtopic-title">2. Overseas Tour Packages &amp; Liberalised Remittance Scheme (LRS)</h3>
         <div class="callout callout-warning">
@@ -1755,37 +2408,7 @@
             <p>
                 Authorized Dealers (AD Banks) remitting funds under RBI’s Liberalised Remittance Scheme (LRS) and sellers of overseas tour program packages must collect TCS as follows:
             </p>
-            <table class="table-custom mt-2">
-                <thead>
-                    <tr>
-                        <th>Nature of Remittance / Transaction</th>
-                        <th>Amount up to ₹7,00,000</th>
-                        <th>Amount Exceeding ₹7,00,000</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Overseas Tour Program Package</strong></td>
-                        <td><strong>5%</strong> (No exemption threshold)</td>
-                        <td><strong>20%</strong> on amount exceeding ₹7 Lakhs</td>
-                    </tr>
-                    <tr>
-                        <td><strong>LRS: Remittance out of Loan from Financial Institution for Education</strong> (u/s 80E)</td>
-                        <td><strong>NIL</strong></td>
-                        <td><strong>0.5%</strong> on excess over ₹7 Lakhs</td>
-                    </tr>
-                    <tr>
-                        <td><strong>LRS: Other Education or Medical Treatment</strong></td>
-                        <td><strong>NIL</strong></td>
-                        <td><strong>5%</strong> on excess over ₹7 Lakhs</td>
-                    </tr>
-                    <tr>
-                        <td><strong>LRS: Any Other Purpose</strong> (Gifts, investments, overseas assets)</td>
-                        <td><strong>NIL</strong></td>
-                        <td><strong>20%</strong> on excess over ₹7 Lakhs</td>
-                    </tr>
-                </tbody>
-            </table>
+            <p style="color: #000000; font-weight: 600; margin-top: 8px;"><em>(LRS provisions now fully streamlined and incorporated in the Master Section 394 TCS Table above as amended by Finance Act, 2026).</em></p>
         </div>
 
         <h3 style="color: var(--slate-900); font-weight: 700; margin-top: 20px; margin-bottom: 8px;" class="subtopic-title">3. TCS on Sale of Goods Exceeding ₹50 Lakhs [Section 398(1) / Sec 206C(1H)]</h3>
@@ -1812,6 +2435,71 @@
         <span class="card-badge">Section 395</span>
     </div>
     <div class="card-body">
+    <h3 style="color: #1e3a8a; font-weight: 700; margin-top: 16px; margin-bottom: 8px;" class="subtopic-title">Statutory Exemptions &amp; Self-Declarations [Section 393(4) &amp; Section 393(5)]</h3>
+    <p style="color: #000000; font-size: 14px; margin-bottom: 12px;">The following payments are statutory non-deduction gateways or covered by Form 15G / Form 15H self-declarations:</p>
+    <div class="table-responsive my-4">
+    <table class="tax-table styled-table">
+        <thead>
+            <tr>
+                <th style="width: 12%;">Sec</th>
+                <th style="width: 20%;">Particulars</th>
+                <th style="width: 14%;">Payer</th>
+                <th style="width: 13%;">Payee</th>
+                <th style="width: 15%;">Limit</th>
+                <th style="width: 10%;">Rates</th>
+                <th style="width: 16%;">Other Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Sec 393(4) Sl. 1</strong></td>
+                <td><strong>BSNL / MTNL PCO Franchisee Commission</strong></td>
+                <td>BSNL / MTNL</td>
+                <td>PCO Franchisees</td>
+                <td>Any amount</td>
+                <td><strong>NIL (0%)</strong></td>
+                <td>Statutory exemption from commission TDS u/s 393(1) Sl. 1(ii).</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(4) Sl. 2</strong></td>
+                <td><strong>Rent paid to Real Estate Investment Trust (REIT)</strong></td>
+                <td>Any tenant / lessee</td>
+                <td>Business Trust (REIT)</td>
+                <td>Any amount</td>
+                <td><strong>NIL (0%)</strong></td>
+                <td>In respect of any real estate asset owned directly by REIT as referred to in Schedule V.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(4) Sl. 3</strong></td>
+                <td><strong>Land Acquisition under RFCTLARR Act, 2013 (Section 96)</strong></td>
+                <td>Acquiring authority / Govt</td>
+                <td>Landowner</td>
+                <td>Any amount</td>
+                <td><strong>NIL (0%)</strong></td>
+                <td>Statutory award exempted from income-tax under Right to Fair Compensation Act, 2013.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(4) Sl. 6</strong></td>
+                <td><strong>Securities Interest paid to LIC, GIC, or SPV of Business Trust</strong></td>
+                <td>Security issuer / SPV</td>
+                <td>LIC, GIC, subsidiaries, or Business Trust</td>
+                <td>Any amount</td>
+                <td><strong>NIL (0%)</strong></td>
+                <td>National Development Bonds, banking treasury investments, and specified notified securities.</td>
+            </tr>
+            <tr>
+                <td><strong>Sec 393(5)</strong><br><small class="text-muted">(Old Sec 197A)</small></td>
+                <td><strong>Self-Declaration for No Deduction (Form 15G &amp; Form 15H)</strong></td>
+                <td>Banks, Co-ops, Post Office, Insurers, Corporates</td>
+                <td>• <strong>Form 15G:</strong> Resident Individuals &amp; HUFs (< 60 yrs)<br>• <strong>Form 15H:</strong> Resident Senior Citizens (&ge; 60 yrs)</td>
+                <td>• Form 15G: Total income &le; Basic Exemption Limit<br>• Form 15H: Final tax liability is NIL</td>
+                <td><strong>NIL (0%)</strong></td>
+                <td>Valid for one financial year. Deductor must deliver one copy of declaration to Principal Commissioner / Commissioner on or before 7th of the following month. Cannot be filed by companies or firms!</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    
         <p>
             To prevent excessive cash flow blockage where the payee's ultimate tax liability is lower than the statutory withholding rate, the Income-tax Act provides statutory mechanisms for lower or zero withholding:
         </p>
