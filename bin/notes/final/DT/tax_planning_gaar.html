@@ -548,7 +548,106 @@
                 padding: 24px 20px;
             }
         }
+    
+        /* ═══════════════════════════════════════════════════════════
+           CA FINAL DIRECT TAX - ENHANCED STRUCTURE & TYPOGRAPHY
+           ═══════════════════════════════════════════════════════════ */
+        :root {
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --font-highlight: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --font-mono: 'JetBrains Mono', Consolas, monospace;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+            font-size: 15.5px !important;
+            line-height: 1.68 !important;
+            letter-spacing: -0.01em;
+            color: #1e293b;
+        }
+
+        /* Semantic Headings Hierarchy */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        h2.section-heading, h2.section-title, h2.card-title, .content-section > h2, .chapter-content-section h2 {
+            font-size: 1.5rem !important;
+            font-weight: 800 !important;
+            color: #0f172a !important;
+            letter-spacing: -0.025em;
+            margin-bottom: 16px;
+        }
+
+        h3.theory-title, h3.provision-title, h3.card-title, h3.subtopic-title, h3.statutory-box-header, h3.sub-heading, h3.card-header-sub {
+            font-size: 1.18rem !important;
+            font-weight: 700 !important;
+            color: #0f172a !important;
+            letter-spacing: -0.015em;
+            margin-top: 18px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h4.example-title, h4.callout-title, h4.step-title, h4.tyk-title, h4.tyk-subheading, h4.sub-subheading {
+            font-size: 1.02rem !important;
+            font-weight: 700 !important;
+            letter-spacing: -0.01em;
+            margin-top: 14px;
+            margin-bottom: 8px;
+        }
+
+        /* CA Final Exam Alerts & Traps */
+        .exam-trap-box, .callout-trap {
+            background-color: #fffbeb !important;
+            border: 1px solid #fde68a !important;
+            border-left: 5px solid #d97706 !important;
+            border-radius: 8px !important;
+            padding: 14px 18px !important;
+            margin: 16px 0 !important;
+            font-size: 14px !important;
+            color: #92400e !important;
+        }
+
+        .exam-trap-header {
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+            color: #78350f;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+        }
+
+        /* Tables & Contrast Enhancements */
+        table {
+            font-size: 13.5px !important;
+        }
+
+        th {
+            font-weight: 700 !important;
+            letter-spacing: 0.02em;
+        }
+
+        td {
+            color: #334155 !important;
+        }
+
+        /* Monospace Numbers & Sections */
+        code, pre, .statute-code, .section-badge, .sidebar-badge {
+            font-family: 'JetBrains Mono', Consolas, monospace !important;
+        }
+
     </style>
+    <!-- High-Legibility Fonts for CA Final Revision: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
         <!-- ═══ SCROLL PROGRESS BAR ═══ -->
@@ -650,7 +749,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-compass"></i> Statutory Scheme under Income-tax Act, 2025</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-compass"></i> Statutory Scheme under Income-tax Act, 2025</h3>
                             <span class="statute-badge">Chapter X-A &bull; Sections 175 &amp; 178&ndash;184</span>
                         </div>
                         <p>Under modern direct tax jurisprudence, taxpayers possess the legitimate right to arrange their financial and commercial affairs within the four corners of the law to optimize their tax liability. However, where legal forms and corporate vehicles are engineered primarily to obtain unintended fiscal advantages devoid of commercial substance, the statutory machinery intervenes through two robust mechanisms:</p>
@@ -681,7 +780,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-scale-balanced"></i> Definitions &amp; Comparative Jurisprudence</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-scale-balanced"></i> Definitions &amp; Comparative Jurisprudence</h3>
                             <span class="statute-badge">ICAI Framework</span>
                         </div>
                         <p>Direct tax jurisprudence classifies taxpayers' fiscal actions into four distinct categories ranging from fully compliant statutory planning to illegal criminal evasion:</p>
@@ -789,7 +888,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-gem"></i> Judicial Evolution from Westminster to Vodafone &amp; Tiger Global</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-gem"></i> Judicial Evolution from Westminster to Vodafone &amp; Tiger Global</h3>
                             <span class="statute-badge">Landmark Jurisprudence</span>
                         </div>
                         <p>The core tension in international and domestic tax law revolves around whether the taxing authorities must strictly respect the <strong>legal form</strong> chosen by the taxpayer or whether they possess the statutory right to disregard the form and tax the economic <strong>substance</strong> of the transaction:</p>
@@ -865,7 +964,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-scale-unbalanced-flip"></i> Supreme Court Decision &bull; (2026) 485 ITR 214 (SC)</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-scale-unbalanced-flip"></i> Supreme Court Decision &bull; (2026) 485 ITR 214 (SC)</h3>
                             <span class="statute-badge">SC 2026 &bull; DTAA &bull; JAAR / GAAR</span>
                         </div>
                         <p>In a watershed judgment delivered in 2026, the Supreme Court adjudicated on the critical interplay between <strong>Tax Residency Certificates (TRC)</strong>, the <strong>Judicial Anti-Avoidance Rule (JAAR)</strong>, domestic <strong>GAAR</strong>, and treaty eligibility under the India-Mauritius DTAA:</p>
@@ -930,7 +1029,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-sitemap"></i> Hierarchy &amp; Binding Nature of Judicial Rulings</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-sitemap"></i> Hierarchy &amp; Binding Nature of Judicial Rulings</h3>
                             <span class="statute-badge">Constitutional Framework &bull; Art. 141</span>
                         </div>
                         <p>Under Indian constitutional law, the doctrine of binding precedent (*stare decisis*) governs the administration and adjudication of direct tax disputes. The hierarchy of judicial precedence operates as follows:</p>
@@ -1014,7 +1113,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-shield-virus"></i> Statutory Matrix of Specific Anti-Avoidance Provisions</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-shield-virus"></i> Statutory Matrix of Specific Anti-Avoidance Provisions</h3>
                             <span class="statute-badge">SAAR Architecture</span>
                         </div>
                         <p>Specific Anti-Avoidance Rules (SAAR) represent targeted statutory provisions designed to address pre-identified, specific transactions and arrangements vulnerable to tax abuse. In the Income-tax Act, 2025, the principal SAAR provisions include:</p>
@@ -1088,7 +1187,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-money-bill-transfer"></i> Bond Washing, Dividend Stripping &amp; Bonus Stripping [Section 175]</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-money-bill-transfer"></i> Bond Washing, Dividend Stripping &amp; Bonus Stripping [Section 175]</h3>
                             <span class="statute-badge">Section 175 &bull; Legacy Sec 94</span>
                         </div>
                         <p>Section 175 targets abusive practices in the capital markets where investors artificially manufacture capital losses or deflect taxable interest income immediately around record dates:</p>
@@ -1172,7 +1271,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-shield-halved"></i> Statutory Declaration of Impermissible Avoidance Arrangement</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-shield-halved"></i> Statutory Declaration of Impermissible Avoidance Arrangement</h3>
                             <span class="statute-badge">Section 178 &bull; Legacy Sec 95</span>
                         </div>
                         <p>Under Section 178, an arrangement entered into by an assessee may be declared to be an <strong>Impermissible Avoidance Arrangement (IAA)</strong> and the consequences in relation to tax arising therefrom may be determined subject to the provisions of Chapter X-A:</p>
@@ -1198,7 +1297,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-triangle-exclamation"></i> The Dual Mandatory Test for Invoking GAAR</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-triangle-exclamation"></i> The Dual Mandatory Test for Invoking GAAR</h3>
                             <span class="statute-badge">Section 179 &bull; Legacy Sec 96</span>
                         </div>
                         <p>Under Section 179, an arrangement is declared to be an <strong>Impermissible Avoidance Arrangement (IAA)</strong> only if it satisfies both the <strong>Main Purpose Test</strong> AND at least one of the four <strong>Tainted Element Tests</strong>:</p>
@@ -1291,7 +1390,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-cubes"></i> Deemed Lack of Commercial Substance Criteria</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-cubes"></i> Deemed Lack of Commercial Substance Criteria</h3>
                             <span class="statute-badge">Section 180 &bull; Legacy Sec 97</span>
                         </div>
                         <p>Under Section 180, an arrangement is statutorily deemed to lack commercial substance if any of the following circumstances exist:</p>
@@ -1352,7 +1451,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-arrows-split-up-and-left"></i> Statutory Powers to Disregard &amp; Recharacterize</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-arrows-split-up-and-left"></i> Statutory Powers to Disregard &amp; Recharacterize</h3>
                             <span class="statute-badge">Section 181 &bull; Legacy Sec 98</span>
                         </div>
                         <p>Where an arrangement is declared to be an Impermissible Avoidance Arrangement (IAA), the tax authorities possess vast powers under Section 181 to neutralize the tax benefit:</p>
@@ -1427,7 +1526,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-users-gear"></i> Statutory Scope of Connected Persons under GAAR</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-users-gear"></i> Statutory Scope of Connected Persons under GAAR</h3>
                             <span class="statute-badge">Section 182 &bull; Legacy Sec 99</span>
                         </div>
                         <p>Under Section 182, in determining whether a tax benefit exists, any connected person may be treated as one and the same person as another party. The statutory definitions of connected persons span across entities:</p>
@@ -1473,7 +1572,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-anchor"></i> Safe Harbour Guidelines &bull; Rule 10U [Rule 128 of New Rules]</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-anchor"></i> Safe Harbour Guidelines &bull; Rule 10U [Rule 128 of New Rules]</h3>
                             <span class="statute-badge">Section 183 &bull; Safe Harbours</span>
                         </div>
                         <p>Section 183 read with Rule 10U of the Income-tax Rules [Rule 128 of the new rules] lays down four critical safe harbour exceptions where GAAR provisions <strong>shall NOT apply</strong>:</p>
@@ -1520,7 +1619,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-landmark"></i> Two-Tier Procedural Filter &amp; The Approving Panel</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-landmark"></i> Two-Tier Procedural Filter &amp; The Approving Panel</h3>
                             <span class="statute-badge">Section 274 &bull; Legacy Sec 144BA</span>
                         </div>
                         <p>To eliminate arbitrary assessments and prevent harassment of taxpayers, the statute establishes a rigorous, multi-tiered institutional mechanism before GAAR can be invoked:</p>
@@ -1575,7 +1674,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-file-invoice"></i> The 15 Landmark Questions &amp; Departmental Answers</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-file-invoice"></i> The 15 Landmark Questions &amp; Departmental Answers</h3>
                             <span class="statute-badge">Circular No. 7/2017 &bull; 27-01-2017</span>
                         </div>
                         <p>To provide commercial certainty and address industry representations on GAAR implementation, the Central Board of Direct Taxes (CBDT) issued 15 comprehensive clarifications:</p>

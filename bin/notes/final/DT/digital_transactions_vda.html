@@ -548,7 +548,106 @@
                 padding: 24px 20px;
             }
         }
+    
+        /* ═══════════════════════════════════════════════════════════
+           CA FINAL DIRECT TAX - ENHANCED STRUCTURE & TYPOGRAPHY
+           ═══════════════════════════════════════════════════════════ */
+        :root {
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --font-highlight: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --font-mono: 'JetBrains Mono', Consolas, monospace;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+            font-size: 15.5px !important;
+            line-height: 1.68 !important;
+            letter-spacing: -0.01em;
+            color: #1e293b;
+        }
+
+        /* Semantic Headings Hierarchy */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        h2.section-heading, h2.section-title, h2.card-title, .content-section > h2, .chapter-content-section h2 {
+            font-size: 1.5rem !important;
+            font-weight: 800 !important;
+            color: #0f172a !important;
+            letter-spacing: -0.025em;
+            margin-bottom: 16px;
+        }
+
+        h3.theory-title, h3.provision-title, h3.card-title, h3.subtopic-title, h3.statutory-box-header, h3.sub-heading, h3.card-header-sub {
+            font-size: 1.18rem !important;
+            font-weight: 700 !important;
+            color: #0f172a !important;
+            letter-spacing: -0.015em;
+            margin-top: 18px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h4.example-title, h4.callout-title, h4.step-title, h4.tyk-title, h4.tyk-subheading, h4.sub-subheading {
+            font-size: 1.02rem !important;
+            font-weight: 700 !important;
+            letter-spacing: -0.01em;
+            margin-top: 14px;
+            margin-bottom: 8px;
+        }
+
+        /* CA Final Exam Alerts & Traps */
+        .exam-trap-box, .callout-trap {
+            background-color: #fffbeb !important;
+            border: 1px solid #fde68a !important;
+            border-left: 5px solid #d97706 !important;
+            border-radius: 8px !important;
+            padding: 14px 18px !important;
+            margin: 16px 0 !important;
+            font-size: 14px !important;
+            color: #92400e !important;
+        }
+
+        .exam-trap-header {
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+            color: #78350f;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+        }
+
+        /* Tables & Contrast Enhancements */
+        table {
+            font-size: 13.5px !important;
+        }
+
+        th {
+            font-weight: 700 !important;
+            letter-spacing: 0.02em;
+        }
+
+        td {
+            color: #334155 !important;
+        }
+
+        /* Monospace Numbers & Sections */
+        code, pre, .statute-code, .section-badge, .sidebar-badge {
+            font-family: 'JetBrains Mono', Consolas, monospace !important;
+        }
+
     </style>
+    <!-- High-Legibility Fonts for CA Final Revision: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
         <!-- ═══ SCROLL PROGRESS BAR ═══ -->
@@ -646,7 +745,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-compass"></i> Statutory Map under Income-tax Act, 2025</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-compass"></i> Statutory Map under Income-tax Act, 2025</h3>
                             <span class="statute-badge">Chapter IV &bull; Chapter XII-G &bull; Chapter XVII-B</span>
                         </div>
                         <p>The digitalization of the global economy has revolutionized commercial transactions, eliminating the necessity of physical presence for cross-border market penetration. To capture digital value creation and regulate cryptographic assets, the direct tax framework operates through an integrated statutory architecture:</p>
@@ -677,7 +776,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-server"></i> Statutory Definition &amp; Commercial Classifications</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-server"></i> Statutory Definition &amp; Commercial Classifications</h3>
                             <span class="statute-badge">Section 402(12)</span>
                         </div>
                         <p>Under Section 402(12), <strong>&ldquo;electronic commerce&rdquo;</strong> is statutorily defined to mean the <em>supply of goods or services or both, including digital products over digital or electronic network</em>.</p>
@@ -762,7 +861,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-triangle-exclamation"></i> Nexus, Characterization &amp; Data Attribution Hurdles</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-triangle-exclamation"></i> Nexus, Characterization &amp; Data Attribution Hurdles</h3>
                             <span class="statute-badge">International Jurisprudence</span>
                         </div>
                         <p>Traditional international tax treaties (OECD &amp; UN Model Conventions) were drafted in the 1920s predicated on physical brick-and-mortar factories. The digital economy exposes three fatal structural vulnerabilities in this legacy framework:</p>
@@ -804,7 +903,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-globe"></i> Action Plan 1 Recommendations &amp; The Indian SEP Framework</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-globe"></i> Action Plan 1 Recommendations &amp; The Indian SEP Framework</h3>
                             <span class="statute-badge">BEPS Action 1 &bull; Sec 5 / Sec 9(1)(i)</span>
                         </div>
                         <p>Under the G20-OECD Base Erosion and Profit Shifting (BEPS) Action Plan 1, member nations recognized that the digital economy exacerbates BEPS risks. The committee recommended three domestic safeguard options: (i) a new nexus based on Significant Economic Presence; (ii) a withholding tax on digital transactions; and (iii) an equalisation levy.</p>
@@ -867,7 +966,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-scale-balanced"></i> The Rise and Sunset of Equalisation Levy</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-scale-balanced"></i> The Rise and Sunset of Equalisation Levy</h3>
                             <span class="statute-badge">FA 2016 &bull; FA 2020 &bull; FA 2025 Abolition</span>
                         </div>
                         <p>Pending a global multilateral consensus on digital taxation (OECD Pillar One), India implemented unilateral Equalisation Levies as interim equalizers:</p>
@@ -910,7 +1009,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-receipt"></i> Withholding Tax on E-Commerce Marketplaces</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-receipt"></i> Withholding Tax on E-Commerce Marketplaces</h3>
                             <span class="statute-badge">Sec 393(1) Table Sl. 8(v) &bull; Legacy Sec 194-O</span>
                         </div>
                         <p>To establish a digital audit trail and monitor transactions facilitated through online marketplaces, a dedicated withholding regime operates under Section 393(1) Table Sl. No. 8(v):</p>
@@ -962,7 +1061,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-brands fa-bitcoin"></i> Meaning of &lsquo;Virtual Digital Asset&rsquo; (VDA)</span>
+                            <h3 class="provision-title"><i class="fa-brands fa-bitcoin"></i> Meaning of &lsquo;Virtual Digital Asset&rsquo; (VDA)</h3>
                             <span class="statute-badge">Section 2(111) &bull; Legacy Sec 2(47A)</span>
                         </div>
                         <p>Under Section 2(111), <strong>&ldquo;virtual digital asset&rdquo; (VDA)</strong> is statutorily defined to mean:</p>
@@ -1011,7 +1110,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-percent"></i> Special Tax Rate on Income from Transfer of VDAs</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-percent"></i> Special Tax Rate on Income from Transfer of VDAs</h3>
                             <span class="statute-badge">Sec 194(1) Table Sl. 4 &bull; Legacy Sec 115BBH</span>
                         </div>
                         <p>Section 194(1) [Table: Sl. No. 4] prescribes an uncompromising, ring-fenced tax regime for income arising from the transfer of any virtual digital asset:</p>
@@ -1076,7 +1175,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-gift"></i> VDA as &lsquo;Property&rsquo; under Deemed Gift Provisions</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-gift"></i> VDA as &lsquo;Property&rsquo; under Deemed Gift Provisions</h3>
                             <span class="statute-badge">Sec 92(2)(m) &bull; Sec 92(5)(f) &bull; Legacy Sec 56(2)(x)</span>
                         </div>
                         <p>To prevent tax avoidance through off-market token transfers, Section 92(5)(f) explicitly incorporates Virtual Digital Assets within the statutory definition of <strong>&ldquo;property&rdquo;</strong>:</p>
@@ -1123,7 +1222,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-money-bill-transfer"></i> Comprehensive Withholding Code on Virtual Digital Assets</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-money-bill-transfer"></i> Comprehensive Withholding Code on Virtual Digital Assets</h3>
                             <span class="statute-badge">Sec 393(1) Table Sl. 8(vi) &bull; Legacy Sec 194S</span>
                         </div>
                         <p>To establish an unalterable audit trail across crypto transactions, Section 393(1) [Table: Sl. No. 8(vi)] mandates deduction of tax at source at the point of transfer:</p>
@@ -1222,7 +1321,7 @@
 
                     <div class="provision-box">
                         <div class="provision-header">
-                            <span class="provision-title"><i class="fa-solid fa-file-shield"></i> Reporting Obligations &amp; Penal Enforcement</span>
+                            <h3 class="provision-title"><i class="fa-solid fa-file-shield"></i> Reporting Obligations &amp; Penal Enforcement</h3>
                             <span class="statute-badge">Sections 509 &bull; 446</span>
                         </div>
                         <p>Under international commitments to the OECD Crypto-asset Reporting Framework (CARF), India mandates comprehensive third-party reporting to eliminate black-market offshore crypto flows:</p>
