@@ -1,0 +1,2012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 13: Group Audits (SA 600 &amp; Audit of Consolidated Financial Statements) &ndash; CA Final Audit Revision Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Kalam:wght@300;400;700&family=Patrick+Hand&family=Patrick+Hand+SC&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-blue: #1e3a8a;
+      --accent-blue: #0284c7;
+      --primary-green: #047857;
+      --accent-red: #b91c1c;
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --bg-canvas: #f8fafc;
+      --card-bg: #ffffff;
+      --border-color: #cbd5e1;
+      --text-main: #000000;
+      --text-muted: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Kalam', cursive;
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--text-main);
+      background-color: var(--bg-canvas);
+      background-image: 
+        radial-gradient(#e2e8f0 1.5px, transparent 1.5px),
+        radial-gradient(#f1f5f9 1.5px, #f8fafc 1.5px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+      padding-top: 56px;
+    }
+
+    /* Top Reading Progress Bar */
+    .reading-progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 4px;
+      background: linear-gradient(90deg, #1e3a8a, #0284c7, #047857);
+      z-index: 1000;
+      transition: width 0.1s ease-out;
+    }
+
+    /* Topbar */
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 56px;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 2px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      z-index: 999;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .sidebar-toggle-btn {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: 16px;
+      display: none;
+    }
+
+    .topbar-brand {
+      font-family: 'Patrick Hand SC', cursive;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .topbar-pill {
+      font-family: 'Caveat', cursive;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: #eff6ff;
+      color: var(--primary-blue);
+      border: 1px solid #bfdbfe;
+    }
+
+    .hub-link-btn {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 16px;
+      padding: 5px 14px;
+      border-radius: 6px;
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      color: #1e3a8a;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .hub-link-btn:hover {
+      background: #e2e8f0;
+      color: #0f172a;
+    }
+
+    /* Layout Wrapper */
+    .app-layout {
+      display: flex;
+      max-width: 1560px;
+      margin: 0 auto;
+      padding: 20px;
+      gap: 28px;
+    }
+
+    /* Sidebar Navigation */
+    .sidebar {
+      width: 320px;
+      flex-shrink: 0;
+      position: sticky;
+      top: 76px;
+      height: calc(100vh - 96px);
+      overflow-y: auto;
+      background: #ffffff;
+      border: 2px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 18px 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+
+    .sidebar-title {
+      font-family: 'Patrick Hand SC', cursive;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .nav-item a {
+      display: block;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 16px;
+      color: #334155;
+      text-decoration: none;
+      padding: 7px 12px;
+      border-radius: 8px;
+      transition: all 0.15s ease-in-out;
+      line-height: 1.35;
+    }
+
+    .nav-item a:hover {
+      background: #eff6ff;
+      color: var(--primary-blue);
+      transform: translateX(4px);
+    }
+
+    .nav-item a.active {
+      background: #dbeafe;
+      color: #1e3a8a;
+      font-weight: 700;
+      border-left: 4px solid #1e40af;
+    }
+
+    /* Main Content Area */
+    .main-content {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 60%, #0369a1 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: 32px 36px;
+      box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-banner::after {
+      content: "SA 600 & CFS";
+      position: absolute;
+      right: 20px;
+      bottom: -15px;
+      font-family: 'Patrick Hand SC', cursive;
+      font-size: 90px;
+      color: rgba(255, 255, 255, 0.07);
+      pointer-events: none;
+      font-weight: 700;
+    }
+
+    .hero-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .hero-badge {
+      font-family: 'Caveat', cursive;
+      font-size: 19px;
+      font-weight: 700;
+      padding: 2px 12px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .hero-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 38px;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    }
+
+    .hero-subtitle {
+      font-size: 19px;
+      line-height: 1.6;
+      color: #e0f2fe;
+      max-width: 950px;
+    }
+
+    /* Cards & Section Boxes */
+    .content-card {
+      background: #ffffff;
+      border: 2px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 28px 32px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+
+    .card-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-header {
+      margin-bottom: 20px;
+    }
+
+    .section-badge {
+      display: inline-block;
+      font-family: 'Caveat', cursive;
+      font-size: 19px;
+      font-weight: 700;
+      padding: 2px 12px;
+      border-radius: 8px;
+      background: #eff6ff;
+      color: var(--primary-blue);
+      border: 1px solid #bfdbfe;
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 32px;
+      color: #0f172a;
+      line-height: 1.3;
+    }
+
+    /* Colored Keyword Spans */
+    .kw-blue { color: #1e40af; font-weight: 700; }
+    .kw-red { color: #b91c1c; font-weight: 700; }
+    .kw-green { color: #047857; font-weight: 700; }
+    .kw-purple { color: #7c3aed; font-weight: 700; }
+    .kw-amber { color: #d97706; font-weight: 700; }
+
+    /* Callout Boxes */
+    .callout {
+      border-left: 5px solid;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 18px 0;
+      font-size: 17px;
+    }
+
+    .callout-info {
+      background: #eff6ff;
+      border-color: #3b82f6;
+      color: #1e3a8a;
+    }
+
+    .callout-warning {
+      background: #fffbeb;
+      border-color: #f59e0b;
+      color: #92400e;
+    }
+
+    .callout-danger {
+      background: #fef2f2;
+      border-color: #ef4444;
+      color: #991b1b;
+    }
+
+    .callout-success {
+      background: #f0fdf4;
+      border-color: #10b981;
+      color: #065f46;
+    }
+
+    .callout-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 21px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    /* Tables (Strictly Arial/Sans-serif) */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 18px 0;
+      border-radius: 10px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .notes-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-size: 14.5px;
+      line-height: 1.5;
+      text-align: left;
+    }
+
+    .notes-table th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 700;
+      padding: 12px 14px;
+      border-bottom: 2px solid #cbd5e1;
+      border-right: 1px solid #e2e8f0;
+    }
+
+    .notes-table td {
+      padding: 11px 14px;
+      border-bottom: 1px solid #e2e8f0;
+      border-right: 1px solid #e2e8f0;
+      vertical-align: top;
+      color: #1e293b;
+    }
+
+    .notes-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .notes-table tr:hover td {
+      background: #f8fafc;
+    }
+
+    /* Interactive Accordions */
+    .accordion-item {
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    }
+
+    .accordion-header {
+      width: 100%;
+      text-align: left;
+      padding: 14px 18px;
+      background: #f8fafc;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 19px;
+      font-weight: 700;
+      color: #0f172a;
+      transition: background 0.15s ease-in-out;
+    }
+
+    .accordion-header:hover {
+      background: #f1f5f9;
+      color: #1e40af;
+    }
+
+    .accordion-icon {
+      font-size: 20px;
+      font-weight: bold;
+      color: #64748b;
+      transition: transform 0.2s ease;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 20px 22px;
+      border-top: 1px solid #e2e8f0;
+      background: #ffffff;
+      font-size: 17px;
+    }
+
+    .accordion-item.open .accordion-content {
+      display: block;
+    }
+
+    .accordion-item.open .accordion-icon {
+      transform: rotate(45deg);
+      color: #b91c1c;
+    }
+
+    /* Process Flows & Step Boxes */
+    .process-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 16px 0;
+    }
+
+    .flow-step {
+      background: #f8fafc;
+      border-left: 4px solid var(--accent-blue);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+    }
+
+    .flow-step .step-num {
+      font-family: 'Caveat', cursive;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--accent-blue);
+    }
+
+    .flow-step .step-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 21px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+
+    .flow-step .step-desc {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    /* Case Study Card Box */
+    .case-study-box {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-left: 5px solid #047857;
+      border-radius: 8px;
+      padding: 18px 22px;
+      margin: 18px 0;
+    }
+
+    /* Bottom Navigation */
+    .bottom-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 2px solid #e2e8f0;
+    }
+
+    .nav-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      color: #0f172a;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 18px;
+      transition: all 0.2s ease;
+      flex: 1;
+      max-width: 320px;
+    }
+
+    .nav-btn:hover {
+      background: #eff6ff;
+      border-color: #3b82f6;
+      color: #1e40af;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .nav-btn.hub-btn {
+      justify-content: center;
+      text-align: center;
+      max-width: 220px;
+    }
+
+    .nav-btn.next-btn {
+      justify-content: flex-end;
+      text-align: right;
+      margin-left: auto;
+    }
+
+    .nav-arrow {
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .nav-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-sub {
+      font-family: 'Caveat', cursive;
+      font-size: 15px;
+      color: #64748b;
+      line-height: 1.2;
+    }
+
+    .nav-title {
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    @media (max-width: 1024px) {
+      .sidebar {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 56px;
+        bottom: 0;
+        z-index: 998;
+        width: 280px;
+        border-radius: 0;
+        border-right: 2px solid #cbd5e1;
+      }
+      .sidebar.active {
+        display: block;
+      }
+      .sidebar-toggle-btn {
+        display: block;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .app-layout {
+        padding: 12px;
+      }
+      .content-card {
+        padding: 20px 16px;
+      }
+      .hero-banner {
+        padding: 24px 20px;
+      }
+      .hero-title {
+        font-size: 28px;
+      }
+      .bottom-nav {
+        flex-direction: column;
+      }
+      .nav-btn {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Reading Progress Bar -->
+<div class="reading-progress-bar" id="readingProgress"></div>
+
+<!-- Sticky Topbar -->
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="sidebar-toggle-btn" id="sidebarToggle" aria-label="Toggle Navigation">&#9776; Index</button>
+    <a href="../../notes/audnotes.html" class="topbar-brand">
+      <span>CA Final &bull; Advanced Auditing</span>
+    </a>
+  </div>
+  <div class="topbar-right">
+    <span class="topbar-pill">Chapter 13: Group Audits (SA 600)</span>
+    <a href="../../notes/audnotes.html" class="hub-link-btn">Back to Hub &rarr;</a>
+  </div>
+</header>
+
+<!-- Application Layout -->
+<div class="app-layout">
+
+  <!-- Left Sidebar Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-title">
+      <span>Chapter Directory</span>
+      <span style="font-size: 14px; color:#64748b;">Ch 13 Index</span>
+    </div>
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#sec-intro" class="nav-link active">1. Intro &amp; Concept of CFS</a></li>
+      <li class="nav-item"><a href="#sec-opening-case" class="nav-link">2. Mudit's Opening Dilemma</a></li>
+      <li class="nav-item"><a href="#sec-statutory-mandate" class="nav-link">3. Statutory Mandate &amp; Exemptions</a></li>
+      <li class="nav-item"><a href="#sec-parent-auditor-resp" class="nav-link">4. Responsibilities: Parent &amp; Auditor</a></li>
+      <li class="nav-item"><a href="#sec-sa600-framework" class="nav-link">5. SA 600 Framework &amp; Coordination</a></li>
+      <li class="nav-item"><a href="#sec-materiality-cfs" class="nav-link">6. Materiality in Group Audits</a></li>
+      <li class="nav-item"><a href="#sec-icai-announcement" class="nav-link">7. ICAI Announcement on SA 600</a></li>
+      <li class="nav-item"><a href="#sec-auditing-consolidation" class="nav-link">8. Planning &amp; Consolidation Audit</a></li>
+      <li class="nav-item"><a href="#sec-completeness-components" class="nav-link">9. Completeness of Components (8 Steps)</a></li>
+      <li class="nav-item"><a href="#sec-exclusions-cfs" class="nav-link">10. Exclusions (AS 21 vs Ind AS 110)</a></li>
+      <li class="nav-item"><a href="#sec-tyu1" class="nav-link">11. TYU 1: Stock-in-Trade Exclusion</a></li>
+      <li class="nav-item"><a href="#sec-permanent-adjustments" class="nav-link">12. Permanent Adjustments (Goodwill/NCI)</a></li>
+      <li class="nav-item"><a href="#sec-current-adjustments" class="nav-link">13. Current Period Adjustments</a></li>
+      <li class="nav-item"><a href="#sec-unrealized-profits" class="nav-link">14. Unrealized Profits &amp; Dividends</a></li>
+      <li class="nav-item"><a href="#sec-mgt-representations" class="nav-link">15. Management Representations (SA 580)</a></li>
+      <li class="nav-item"><a href="#sec-reporting-all-audited" class="nav-link">16. Reporting: All Components Audited</a></li>
+      <li class="nav-item"><a href="#sec-reporting-other-auditors" class="nav-link">17. Reporting Under SA 600 (OM Para)</a></li>
+      <li class="nav-item"><a href="#sec-caro-cfs" class="nav-link">18. CARO 2020 Clause (xxi) on CFS</a></li>
+      <li class="nav-item"><a href="#sec-unaudited-components" class="nav-link">19. Unaudited Components (Mudit Solved)</a></li>
+      <li class="nav-item"><a href="#sec-tyu2" class="nav-link">20. TYU 2: Drafting Other Matter Para</a></li>
+      <li class="nav-item"><a href="#sec-tyu3" class="nav-link">21. TYU 3: Modified Component Reports</a></li>
+      <li class="nav-item"><a href="#sec-tyk" class="nav-link">22. Test Your Knowledge (TYK 1-16)</a></li>
+      <li class="nav-item"><a href="#sec-summary-matrix" class="nav-link">23. Master Comparison Matrix</a></li>
+      <li class="nav-item"><a href="#sec-exam-traps" class="nav-link">24. High-Frequency Exam Traps</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content Column -->
+  <main class="main-content">
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+      <div class="hero-badge-row">
+        <span class="hero-badge">CA Final Paper 3</span>
+        <span class="hero-badge">Advanced Auditing &amp; Professional Ethics</span>
+        <span class="hero-badge">Module 2 &bull; Chapter 13</span>
+        <span class="hero-badge">100% ICAI Study Material Coverage</span>
+      </div>
+      <h1 class="hero-title">Group Audits &amp; Consolidated Financial Statements</h1>
+      <p class="hero-subtitle">
+        Comprehensive master revision notes covering Standard on Auditing (SA) 600 <em>"Using the Work of Another Auditor"</em>, Section 129(3) &amp; (4) of the Companies Act 2013, Rule 6 Exemptions, Ind AS 110 Investment Entities, Permanent vs. Current Period Consolidation Adjustments, CARO 2020 Clause (xxi), and Reporting on Unaudited Components.
+      </p>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- SECTION 1: INTRODUCTION & CONCEPT OF CFS   -->
+    <!-- ========================================== -->
+    <section id="sec-intro" class="audit-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-badge">Section 1 &bull; Foundations</span>
+          <h2 class="section-title">Introduction &amp; Concept of Consolidated Financial Statements</h2>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3 class="card-title">1. What are Consolidated Financial Statements (CFS)?</h3>
+        <p>
+          <strong>Consolidated Financial Statements (CFS)</strong> are the financial statements of an entire group presented as those of a <span class="kw-blue">single economic entity</span>. While Standalone Financial Statements (SFS) present the financial condition of an isolated legal corporation, CFS combine the assets, liabilities, equity, revenues, expenses, and cash flows of the parent company and all its subsidiaries, joint ventures, and associates.
+        </p>
+
+        <div class="callout callout-info">
+          <div class="callout-title">Core Accounting Definitions &amp; Applicable Standards</div>
+          <ul style="font-size:16px; line-height:1.6; margin-left:18px;">
+            <li><strong>Parent:</strong> An entity that controls one or more entities (<span class="kw-blue">Ind AS 110 / AS 21</span>).</li>
+            <li><strong>Subsidiary:</strong> An entity that is controlled by another entity. Under Section 2(87) of the Companies Act, 2013, control means controlling the composition of the Board of Directors or exercising/controlling more than 50% of the total voting power.</li>
+            <li><strong>Associate:</strong> An entity over which the investor has <span class="kw-purple">significant influence</span> (holding 20% or more voting power or contractual participation in financial/operating decisions, but not control). Accounted for via the <span class="kw-purple">Equity Method</span> (<span class="kw-blue">Ind AS 28 / AS 23</span>).</li>
+            <li><strong>Joint Venture / Joint Arrangement:</strong> An arrangement where parties have joint control and rights to net assets (<span class="kw-green">Ind AS 111 / AS 27</span>).</li>
+          </ul>
+        </div>
+
+        <h4 style="font-family:'Patrick Hand', cursive; color:#1e3a8a; font-size:22px; margin-top:20px;">What Comprises a Complete Set of Consolidated Financial Statements?</h4>
+        <p>Under Schedule III of the Companies Act, 2013, CFS must follow the exact presentation formats as standalone statements:</p>
+
+        <div class="grid-2col" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:10px;">
+          <ul style="font-size:16px; line-height:1.6; margin-left:18px;">
+            <li><span class="kw-blue">Consolidated Balance Sheet</span> (Schedule III format)</li>
+            <li><span class="kw-blue">Consolidated Statement of Profit and Loss</span></li>
+            <li><span class="kw-blue">Consolidated Statement of Changes in Equity</span> (under Ind AS)</li>
+          </ul>
+          <ul style="font-size:16px; line-height:1.6; margin-left:18px;">
+            <li><span class="kw-blue">Consolidated Cash Flow Statement</span> (AS 3 / Ind AS 7)</li>
+            <li><span class="kw-blue">Explanatory Notes &amp; Accounting Policies</span> (including component share in net assets and P&amp;L under Schedule III general instructions)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- OPENING CASE SCENARIO: MUDIT'S CATCH-22 -->
+      <div id="sec-opening-case" class="case-study-box">
+        <h4 style="color:#047857; font-family:'Patrick Hand', cursive; font-size:22px; margin-top:0;">Opening Case Scenario: Mudit's Catch-22 (The Unaudited Foreign Subsidiary)</h4>
+        <p>
+          <strong>The Practical Dilemma:</strong> Mudit is appointed as the statutory auditor of a prominent Indian holding company. The management prepared group consolidated financial statements by combining like items of assets, liabilities, income, and expenses of the Indian parent with those of an overseas foreign subsidiary. No minority interest was involved.
+        </p>
+        <p style="margin-top:8px;">
+          During the course of the consolidation audit, Mudit discovered that <span class="kw-red">the accounts of the foreign subsidiary were completely unaudited</span>! Mudit found himself in a classical Catch-22 situation:
+        </p>
+        <ul style="font-size:16px; line-height:1.6; margin-left:20px; margin-top:6px;">
+          <li>Can a parent consolidate unaudited accounts of a component?</li>
+          <li>What are the implications for the group audit report?</li>
+          <li>How does the auditor evaluate materiality and what reporting modification is warranted under <strong>SA 705</strong> and <strong>SA 600</strong>?</li>
+        </ul>
+        <p style="margin-top:10px; font-weight:700; color:#1e40af;">
+          &rarr; Keep this scenario in focus! We will resolve Mudit's Catch-22 with precise ICAI regulatory principles in Section 7!
+        </p>
+      </div>
+
+      <!-- STATUTORY MANDATE & EXEMPTIONS -->
+      <div id="sec-statutory-mandate" class="content-card" style="margin-top:20px;">
+        <h3 class="card-title">2. Statutory Mandate &amp; Exemption Framework (Section 129 &amp; Rule 6)</h3>
+        <p>
+          Section 129(3) of the Companies Act, 2013 lays down that where a company has one or more subsidiaries (which includes associate companies and joint ventures under the Explanation to Section 129(3)), it shall, in addition to its standalone financial statements, prepare a <span class="kw-red">Consolidated Financial Statement</span> of the company and of all the subsidiaries in the same form and manner as that of its own.
+        </p>
+        <p>
+          Furthermore, Section 129(4) states that the provisions of the Companies Act applicable to the preparation, adoption, and audit of the financial statements of a holding company shall, <em>mutatis mutandis</em>, apply to its consolidated financial statements.
+        </p>
+
+        <h4 style="font-family:'Patrick Hand', cursive; color:#1e3a8a; font-size:22px; margin-top:20px;">Exemptions from Preparing CFS under Rule 6 of Companies (Accounts) Rules, 2014</h4>
+        <p>Preparation of CFS is mandatory unless an intermediate holding company satisfies <span class="kw-blue">all three cumulative conditions</span> under Rule 6:</p>
+
+        <div class="process-flow">
+          <div class="flow-step">
+            <div class="step-num">Condition 1</div>
+            <div class="step-title">Wholly-Owned or Consenting Partially-Owned Subsidiary</div>
+            <div class="step-desc">
+              The company is a wholly-owned subsidiary, or is a partially-owned subsidiary of another company and all its other members (including those not otherwise entitled to vote) have been intimated in writing and have not objected to the company not presenting CFS.
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="step-num">Condition 2</div>
+            <div class="step-title">Unlisted Status</div>
+            <div class="step-desc">
+              The company's securities (equity or debt) are not listed or in the process of being listed on any stock exchange, whether in India or outside India.
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="step-num">Condition 3</div>
+            <div class="step-title">Higher Holding Company Files CFS</div>
+            <div class="step-desc">
+              The ultimate or any intermediate holding company files consolidated financial statements with the Registrar of Companies (ROC) which are in compliance with the applicable Accounting Standards.
+            </div>
+          </div>
+        </div>
+
+        <h4 style="font-family:'Patrick Hand', cursive; color:#1e3a8a; font-size:22px; margin-top:20px;">The Ind AS 110 "Investment Entity" Exemption</h4>
+        <div class="callout callout-warning">
+          <div class="callout-title">Ind AS 110 Exception for Investment Entities</div>
+          <p>
+            An entity that qualifies as an <strong>Investment Entity</strong> under Ind AS 110 is <span class="kw-red">prohibited from consolidating its subsidiaries</span>. Instead, it must measure its investments in subsidiaries at <span class="kw-purple">Fair Value Through Profit or Loss (FVTPL)</span> in accordance with Ind AS 109.
+          </p>
+          <p style="margin-top:6px;">
+            <em>Exception to the exception:</em> If an investment entity has a subsidiary that provides investment-related services (such as investment management or advisory services), it MUST consolidate that specific service subsidiary!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 2: RESPONSIBILITIES OF PARENT & AUDITOR -->
+    <!-- ========================================== -->
+    <section id="sec-parent-auditor-resp" class="audit-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-badge">Section 2 &bull; Governance &amp; Roles</span>
+          <h2 class="section-title">Responsibilities of Parent Management &amp; Statutory Auditor</h2>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3 class="card-title">1. The 6 Statutory Responsibilities of Parent Management</h3>
+        <p>The primary responsibility for the preparation and fair presentation of consolidated financial statements rests entirely with the management of the parent company:</p>
+
+        <div class="table-wrap">
+          <table class="notes-table">
+            <thead>
+              <tr>
+                <th style="width:25%;">Parent Responsibility</th>
+                <th style="width:75%;">Core Operational Duty under Companies Act &amp; Accounting Standards</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Component Identification</strong></td>
+                <td>Identifying all components (subsidiaries, associates, joint arrangements) to be included in CFS, and documenting reasons for any permitted statutory exclusions.</td>
+              </tr>
+              <tr>
+                <td><strong>2. Accurate Data Gathering</strong></td>
+                <td>Obtaining complete, reliable financial information and audited accounts from all components on a timely basis.</td>
+              </tr>
+              <tr>
+                <td><strong>3. Harmonizing Accounting Policies</strong></td>
+                <td>Ensuring that uniform accounting policies are followed across the group for like transactions and other events in similar circumstances. If a component follows different policies, management must make necessary adjustments in CFS.</td>
+              </tr>
+              <tr>
+                <td><strong>4. Harmonizing Reporting Dates</strong></td>
+                <td>Ensuring component financial statements are drawn up to the same reporting date as the parent. If different, the gap must not exceed <strong>3 months</strong>, and adjustments must be made for significant intervening events.</td>
+              </tr>
+              <tr>
+                <td><strong>5. GAAP Conversion</strong></td>
+                <td>Converting financial statements of foreign components prepared under local foreign GAAP into Indian GAAP / Ind AS before consolidation.</td>
+              </tr>
+              <tr>
+                <td><strong>6. Consolidation Adjustments</strong></td>
+                <td>Making necessary Permanent Adjustments (Goodwill, Capital Reserve, NCI) and Current Period Adjustments (eliminating intra-group balances, intra-group sales, and unrealized profits).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="content-card" style="margin-top:20px;">
+        <h3 class="card-title">2. Responsibility of the Auditor of Consolidated Financial Statements</h3>
+        <p>
+          The statutory auditor of the consolidated financial statements (referred to as the <span class="kw-blue">Principal Auditor</span> under SA 600) is responsible for:
+        </p>
+        <ul style="font-size:16px; line-height:1.7; margin-left:20px;">
+          <li><span class="kw-blue">Expressing an independent audit opinion</span> on whether the CFS present a true and fair view in accordance with the applicable Financial Reporting Framework (Ind AS / AS) and statutory requirements.</li>
+          <li><span class="kw-green">Verifying the completeness of group components</span> consolidated by management.</li>
+          <li><span class="kw-purple">Auditing the consolidation process</span>, including mathematical accuracy of line-by-line additions, equity accounting, and elimination entries.</li>
+          <li><span class="kw-amber">Coordinating with and evaluating the work of Component Auditors</span> in compliance with <strong>SA 600</strong>.</li>
+          <li><span class="kw-red">Reporting under Section 143(3) &amp; CARO 2020 Clause (xxi)</span> on qualifications and adverse remarks in component auditor reports.</li>
+        </ul>
+      </div>
+    </section>
+
+<!-- ========================================== -->
+<!-- SECTION 3: AUDIT CONSIDERATIONS & SA 600   -->
+<!-- ========================================== -->
+<section id="sec-sa600-framework" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 3 &bull; Standards on Auditing</span>
+      <h2 class="section-title">Audit Considerations &amp; SA 600 "Using the Work of Another Auditor"</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h3 class="card-title">1. The SA 600 Framework &amp; Acceptance of Principal Auditor Assignment</h3>
+    <p>
+      When reporting on the consolidated financial statements of a group, the statutory auditor of the parent entity frequently uses the financial information of one or more components that have been audited by other independent auditors. In such circumstances, the auditor must strictly adhere to <span class="kw-blue">Standard on Auditing (SA) 600, "Using the Work of Another Auditor"</span>.
+    </p>
+
+    <div class="callout callout-info">
+      <div class="callout-title">Core Definitions under SA 600</div>
+      <ul style="font-size:16px; line-height:1.6; margin-left:18px;">
+        <li><strong>Principal Auditor:</strong> The auditor with the reporting responsibility on the financial statements of an entity (the group CFS), when that financial statement includes financial information of one or more components audited by another auditor.</li>
+        <li><strong>Component:</strong> A division, branch, subsidiary, joint venture, associated company, or other entity whose financial information is included in the financial statements audited by the principal auditor.</li>
+        <li><strong>Other Auditor / Component Auditor:</strong> An auditor, other than the principal auditor, with responsibility for reporting on the financial information of a component included in the financial statements audited by the principal auditor.</li>
+      </ul>
+    </div>
+
+    <h4 style="font-family:'Patrick Hand', cursive; color:#1e3a8a; font-size:22px; margin-top:20px;">Accepting the Assignment: Can the Auditor Act as Principal Auditor?</h4>
+    <p>
+      An auditor should not accept appointment as the principal auditor of consolidated financial statements if their <span class="kw-red">own participation is not sufficient</span> to enable them to act as the principal auditor.
+    </p>
+    <p>In assessing whether the auditor's own participation is sufficient, the auditor should consider:</p>
+    <div class="grid-2col" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:12px;">
+      <div class="inner-box" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px; padding:14px;">
+        <h5 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:18px; margin-top:0;">Quantitative Criteria</h5>
+        <ul style="font-size:15px; line-height:1.5; margin-left:18px;">
+          <li>The materiality of the portion of the financial statements which the principal auditor audits personally (percentage of total group assets, revenues, and profits).</li>
+          <li>The volume of transactions and turnover handled directly by the parent entity.</li>
+        </ul>
+      </div>
+
+      <div class="inner-box" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px; padding:14px;">
+        <h5 style="color:#047857; font-family:'Patrick Hand', cursive; font-size:18px; margin-top:0;">Qualitative &amp; Risk Criteria</h5>
+        <ul style="font-size:15px; line-height:1.5; margin-left:18px;">
+          <li>The principal auditor's degree of knowledge regarding the business of the components.</li>
+          <li>The risk of material misstatements in the components audited by other auditors.</li>
+          <li>The performance of additional procedures regarding the components audited by other auditors.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h4 style="font-family:'Patrick Hand', cursive; color:#1e3a8a; font-size:22px; margin-top:20px;">Division of Responsibility &amp; Coordination Procedures</h4>
+    <div class="callout callout-warning">
+      <div class="callout-title">Vital Legal Principle: Division of Responsibility under SA 600</div>
+      <p>
+        The Principal Auditor <span class="kw-green">does not review the detailed audit working papers</span> of the component auditor! The principal auditor is entitled to rely on the work performed by the other auditor, provided they exercise reasonable professional skill and care.
+      </p>
+      <p style="margin-top:8px;">
+        The principal auditor fulfills their duty by issuing structured instructions, questionnaires, and checklists to the component auditor, and evaluating the component auditor's report and responses.
+      </p>
+    </div>
+
+    <p style="font-size:16px; margin-top:10px;">The Principal Auditor's coordination procedures include:</p>
+    <ol style="font-size:16px; line-height:1.7; margin-left:20px;">
+      <li>Advising the other auditor of the use that is to be made of their work and report.</li>
+      <li>Informing the other auditor of the applicable financial reporting framework and group accounting policies.</li>
+      <li>Obtaining written confirmation of compliance with <span class="kw-blue">independence and professional ethics</span>.</li>
+      <li>Discussing significant audit findings, litigation exposures, and subsequent events identified by the component auditor.</li>
+    </ol>
+  </div>
+
+  <!-- GROUP & COMPONENT MATERIALITY -->
+  <div id="sec-materiality-cfs" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">2. Materiality in the Audit of Consolidated Financial Statements</h3>
+    <p>
+      In a standalone audit, materiality is determined component-wise based on individual metrics. In contrast, during the audit of Consolidated Financial Statements (CFS), the auditor must establish materiality at two interconnected levels:
+    </p>
+
+    <div class="grid-2col" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:14px;">
+      <div class="inner-box" style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:10px; padding:16px;">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">1. Group-Level Materiality</h4>
+        <p style="font-size:15px; line-height:1.5;">
+          The principal auditor computes materiality for the <strong>group as a whole</strong> based on consolidated figures (consolidated revenue, consolidated profit before tax, consolidated net assets).
+        </p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li>Used to evaluate the appropriateness of <span class="kw-blue">consolidation adjustments</span> (permanent and current period adjustments).</li>
+          <li>Used to determine which components are quantitatively significant to the group to scope in additional procedures.</li>
+        </ul>
+      </div>
+
+      <div class="inner-box" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:10px; padding:16px;">
+        <h4 style="color:#047857; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">2. Component-Level Materiality</h4>
+        <p style="font-size:15px; line-height:1.5;">
+          The principal auditor computes and communicates specific materiality thresholds to component auditors for components that are subject to audit for group reporting purposes.
+        </p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li>Component materiality is set <span class="kw-green">lower than group materiality</span> to reduce the aggregation risk of undetected misstatements across multiple entities.</li>
+          <li>Different components may receive different materiality levels based on their risk profile and relative size.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ICAI ANNOUNCEMENT ON SA 600 -->
+  <div id="sec-icai-announcement" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">3. ICAI Announcement on SA 600 (Evaluating Component Auditor Modifications)</h3>
+    <div class="callout callout-danger">
+      <div class="callout-title">ICAI Announcement (May 25, 2017) &ndash; Amendment to Guidance Note on CFS</div>
+      <p>
+        When considering the observations (for instance, a <span class="kw-red">modified opinion</span> under SA 705 or an <span class="kw-purple">Emphasis of Matter / Other Matter</span> paragraph under SA 706) in the report of a component auditor on the standalone financial statements, the parent auditor must comply with the requirements of <strong>SA 600</strong> and evaluate the observation in relation to <span class="kw-blue">group-level materiality</span>!
+      </p>
+    </div>
+
+    <h4 style="font-family:'Patrick Hand', cursive; color:#1e3a8a; font-size:20px; margin-top:14px;">The 3-Step Evaluation Protocol for Component Modifications:</h4>
+    <div class="process-flow">
+      <div class="flow-step">
+        <div class="step-num">Step 1</div>
+        <div class="step-title">Examine the Nature &amp; Quantum of Component Modification</div>
+        <div class="step-desc">
+          Identify the specific reason for modification in the component auditor's report (e.g., non-provision for bad debts, non-reconciliation of inventory, going concern uncertainty).
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num">Step 2</div>
+        <div class="step-title">Evaluate Materiality from the Perspective of Group CFS</div>
+        <div class="step-desc">
+          Determine whether the quantified misstatement or uncertainty is <span class="kw-red">material to the consolidated financial statements</span> of the group as a whole. A ₹ 50 Lakh misstatement may be material to a standalone subsidiary with ₹ 2 Crore revenue, but immaterial to a group with ₹ 5,000 Crore consolidated revenue!
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num">Step 3</div>
+        <div class="step-title">Determine Impact on Group Audit Report</div>
+        <div class="step-desc">
+          <strong>If Material to Group:</strong> The principal auditor MUST modify the group audit opinion on CFS (Qualified or Adverse under SA 705).<br>
+          <strong>If Immaterial to Group:</strong> The principal auditor DOES NOT modify the CFS audit opinion. However, the observation may be disclosed or noted if relevant to understanding the group affairs.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 4: AUDITING THE CONSOLIDATION      -->
+<!-- ========================================== -->
+<section id="sec-auditing-consolidation" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 4 &bull; Audit Execution</span>
+      <h2 class="section-title">Auditing the Consolidation &amp; Verification of Completeness</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h3 class="card-title">1. Planning the Audit of Consolidation</h3>
+    <p>Before commencing the audit of consolidated financial statements, the principal auditor must develop a comprehensive audit plan addressing:</p>
+    <ul style="font-size:16px; line-height:1.7; margin-left:20px;">
+      <li><span class="kw-blue">Group Structure &amp; Group-Wide Controls:</span> Understanding the legal and operational structure, parent-subsidiary hierarchies, and IT general and application controls over the consolidation process.</li>
+      <li><span class="kw-green">Accounting Policies:</span> Reviewing the accounting policies of the parent and all components, including foreign currency translation methodologies (AS 11 / Ind AS 21).</li>
+      <li><span class="kw-purple">Risk Assessment:</span> Determining the nature, timing, and extent (NTE) of audit procedures based on the assessed risk of material misstatement in consolidation adjustments.</li>
+      <li><span class="kw-amber">Coordination:</span> Scheduling deadlines for receipt of component financial statements, reporting packages, and component auditor communications.</li>
+    </ul>
+  </div>
+
+  <!-- COMPLETENESS OF COMPONENTS (8 PROCEDURES) -->
+  <div id="sec-completeness-components" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">2. Assessing Completeness of Components (The 8 Mandatory Audit Procedures)</h3>
+    <p>
+      The auditor must verify that all subsidiaries, associates, and joint ventures have been correctly included in CFS unless permitted to be excluded under the applicable reporting framework. The auditor must perform the following <span class="kw-blue">8 structured audit procedures</span>:
+    </p>
+
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:10%;">Step</th>
+            <th style="width:30%;">Mandatory Audit Procedure</th>
+            <th style="width:60%;">Auditor's Specific Verification Action &amp; Source of Evidence</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1</strong></td>
+            <td><strong>Prior Year Working Papers</strong></td>
+            <td>Review working papers of prior years to identify the known list of components and historical holding percentages.</td>
+          </tr>
+          <tr>
+            <td><strong>2</strong></td>
+            <td><strong>Parent's Identification System</strong></td>
+            <td>Review and evaluate the parent's internal systems, procedures, and controls for identifying various group components.</td>
+          </tr>
+          <tr>
+            <td><strong>3</strong></td>
+            <td><strong>Management Inquiries</strong></td>
+            <td>Inquire with senior management to identify any newly incorporated or acquired entities, or components that ceased to be part of the group during the year.</td>
+          </tr>
+          <tr>
+            <td><strong>4</strong></td>
+            <td><strong>Investment Portfolio Review</strong></td>
+            <td>Review the investment schedules and ledger records of the parent and its components to determine direct and indirect shareholdings in other corporate entities.</td>
+          </tr>
+          <tr>
+            <td><strong>5</strong></td>
+            <td><strong>Joint Ventures &amp; Arrangements</strong></td>
+            <td>Review joint venture agreements, partnership deeds, and consortium arrangements entered into by the group.</td>
+          </tr>
+          <tr>
+            <td><strong>6</strong></td>
+            <td><strong>Other Unconsolidated Arrangements</strong></td>
+            <td>Scrutinize structured entities, special purpose vehicles (SPVs), or business combinations that management has not included in CFS.</td>
+          </tr>
+          <tr>
+            <td><strong>7</strong></td>
+            <td><strong>Statutory Registers (Sec 186 &amp; 190)</strong></td>
+            <td>Inspect the statutory registers maintained under the Companies Act, 2013, specifically the <span class="kw-blue">Register of Loans, Guarantees, Security and Acquisition of Securities (Section 186)</span> and the Register of Contracts (Section 189/190).</td>
+          </tr>
+          <tr>
+            <td><strong>8</strong></td>
+            <td><strong>Shareholding Changes &amp; Board Minutes</strong></td>
+            <td>Inspect share capital changes and review Board of Directors meeting minutes during the year and subsequent to the balance sheet date to detect post-balance-sheet disposals or acquisitions.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- EXCLUSIONS FROM CFS (AS 21 VS IND AS 110) -->
+  <div id="sec-exclusions-cfs" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">3. Exclusions from Consolidation: AS 21 vs. Ind AS 110</h3>
+    <p>
+      Where a parent excludes any component from the consolidated financial statements, the statutory auditor must examine whether such exclusion strictly conforms to the applicable Financial Reporting Framework:
+    </p>
+
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:25%;">Exclusion Criteria</th>
+            <th style="width:37%;">Under AS 21 / AS 23 / AS 27 (Accounting Standards)</th>
+            <th style="width:38%;">Under Ind AS 110 / Ind AS 28 / Ind AS 111 (Indian Accounting Standards)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. Temporary Control Exemption</strong></td>
+            <td>
+              <span class="kw-green">Permitted:</span> A subsidiary is excluded if control is intended to be temporary because it is acquired and held exclusively with a view to its subsequent disposal in the near future (generally within 12 months).
+            </td>
+            <td>
+              <span class="kw-red">STRICTLY PROHIBITED:</span> There is <strong>NO exemption for temporary control</strong> under Ind AS 110! If the parent controls the investee (power, variable returns, linkage), it MUST consolidate.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>2. Severe Long-Term Restrictions</strong></td>
+            <td>
+              <span class="kw-green">Permitted:</span> A subsidiary is excluded if it operates under severe long-term restrictions which significantly impair its ability to transfer funds to the parent (e.g., political sanctions, currency blocks).
+            </td>
+            <td>
+              <span class="kw-red">NO AUTOMATIC EXCLUSION:</span> Restrictions alone do not excuse consolidation. The parent must assess whether restrictions deprive it of power over the investee; if control is retained, consolidation is mandatory.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>3. Shares Held as Stock-in-Trade</strong></td>
+            <td>
+              If held exclusively for dealing/trading with intent to sell in near future, treated as temporary control and excluded.
+            </td>
+            <td>
+              Holding shares as stock-in-trade does NOT negate control! The entity MUST be consolidated unless the parent qualifies as an <strong>Investment Entity</strong> under Ind AS 110.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE TYU 1 ACCORDION -->
+  <div id="sec-tyu1" class="accordion-item" style="margin-top:20px;">
+    <button class="accordion-header">
+      <span>🔥 TEST YOUR UNDERSTANDING 1: Shares Held as "Stock-in-Trade" &ndash; Can S Ltd. be Excluded from Consolidation? (R Ltd. &amp; S Ltd.)</span>
+      <span class="accordion-icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <div class="case-study-box">
+        <h4 style="color:#b91c1c; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Exam Case Scenario (TYU 1 &amp; TYK 5)</h4>
+        <p>
+          R Ltd. owns <span class="kw-blue">51% voting power in S Ltd.</span> It, however, holds and discloses all these shares as <span class="kw-purple">"Stock-in-trade"</span> in its standalone financial statements. The shares are held exclusively with a view to their subsequent disposal in the near future. R Ltd. represents that while preparing Consolidated Financial Statements, S Ltd. can be excluded from consolidation. <strong>As a Statutory Auditor, how would you evaluate and deal with this situation?</strong>
+        </p>
+      </div>
+
+      <div class="solution-box" style="margin-top:14px; background:#eff6ff; padding:16px; border-radius:8px; border:1px solid #bfdbfe;">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Comprehensive ICAI Model Solution:</h4>
+        <p>The statutory auditor must evaluate whether R Ltd. prepares financial statements under <strong>Accounting Standards (AS 21)</strong> or <strong>Indian Accounting Standards (Ind AS 110)</strong>:</p>
+
+        <ol style="font-size:16px; line-height:1.7; margin-left:20px;">
+          <li>
+            <span class="kw-green">Under AS 21 (Accounting Standards):</span>
+            <ul style="margin-left:18px;">
+              <li>Paragraph 11 of AS 21 explicitly provides that a subsidiary should be excluded from consolidation when control is intended to be temporary because the subsidiary is acquired and held exclusively with a view to its subsequent disposal in the near future.</li>
+              <li>If the auditor verifies sufficient appropriate documentary evidence that the shares are classified as stock-in-trade and an active plan for disposal exists (substantiating temporary control), <strong>R Ltd.'s contention of exclusion is valid under AS 21</strong>.</li>
+            </ul>
+          </li>
+          <li>
+            <span class="kw-red">Under Ind AS 110 (Indian Accounting Standards):</span>
+            <ul style="margin-left:18px;">
+              <li>Ind AS 110 does NOT provide any exclusion on the grounds of "temporary control" or "shares held as stock-in-trade".</li>
+              <li>Under Ind AS 110, an investor controls an investee if and only if it has: (a) power over the investee; (b) exposure to variable returns; and (c) the ability to use its power to affect returns. Owning 51% voting power gives R Ltd. control.</li>
+              <li><strong>R Ltd. MUST consolidate S Ltd. under Ind AS 110</strong>, unless R Ltd. qualifies as an "Investment Entity" measuring all subsidiaries at FVTPL under Ind AS 109!</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 5: SPECIAL CONSOLIDATION ADJUSTMENTS -->
+<!-- ========================================== -->
+<section id="sec-permanent-adjustments" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 5 &bull; Technical Accounting &amp; Audit</span>
+      <h2 class="section-title">Special Considerations: Permanent vs. Current Period Consolidation Adjustments</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h3 class="card-title">1. Permanent Consolidation Adjustments</h3>
+    <p>
+      <strong>Permanent Consolidation Adjustments</strong> are those adjustments that are made on the <span class="kw-blue">initial acquisition date</span> or subsequent occasions when there is a change in the parent's shareholding of a consolidated entity. These adjustments establish the opening acquisition baseline and are carried forward in all future consolidations.
+    </p>
+
+    <div class="grid-2col" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:14px;">
+      <div class="inner-box" style="background:#f8fafc; border-left:4px solid #1e40af; padding:16px; border-radius:8px;">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Determination of Goodwill or Capital Reserve</h4>
+        <p style="font-size:15px; line-height:1.5;">
+          The difference between the <strong>Cost of Investment</strong> and the <strong>Parent's Share in Identifiable Net Assets</strong> of the subsidiary on the acquisition date:
+        </p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><span class="kw-red">Goodwill on Consolidation:</span> Arises when Cost of Investment &gt; Share of Net Assets. Recognized as an intangible asset in CFS and tested annually for impairment (Ind AS 36 / AS 28).</li>
+          <li><span class="kw-green">Capital Reserve:</span> Arises when Share of Net Assets &gt; Cost of Investment (bargain purchase). Credited to Capital Reserve under Equity.</li>
+          <li><strong>Fair Valuation (Ind AS 103):</strong> Under Ind AS 103, net assets are recognized at acquisition-date <em>fair value</em> rather than historical book value.</li>
+        </ul>
+      </div>
+
+      <div class="inner-box" style="background:#f8fafc; border-left:4px solid #7c3aed; padding:16px; border-radius:8px;">
+        <h4 style="color:#7c3aed; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Non-Controlling Interest (NCI) / Minority Interest</h4>
+        <p style="font-size:15px; line-height:1.5;">
+          The portion of equity in a subsidiary not attributable, directly or indirectly, to the parent company:
+        </p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li>Calculated on acquisition date based on the minority's proportionate share in identifiable net assets.</li>
+          <li>Presented separately within <span class="kw-purple">Equity</span> in the Consolidated Balance Sheet.</li>
+          <li>Subsequent period share of profits/losses allocated to NCI, even if it results in a negative NCI balance (Ind AS 110).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CURRENT PERIOD CONSOLIDATION ADJUSTMENTS -->
+  <div id="sec-current-adjustments" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">2. Current Period Consolidation Adjustments</h3>
+    <p>
+      <strong>Current Period Consolidation Adjustments</strong> are those recurring adjustments made in each individual financial reporting period for which the consolidation is executed:
+    </p>
+
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:25%;">Adjustment Type</th>
+            <th style="width:37%;">Accounting &amp; Consolidation Requirement</th>
+            <th style="width:38%;">Auditor's Specific Verification Procedures</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. Intra-Group Balances Elimination</strong></td>
+            <td>100% elimination of reciprocal balances between group companies (debtors/creditors, loans/advances, bills receivable/payable).</td>
+            <td>Verify inter-company reconciliation statements; investigate any un-reconciled differences (e.g., cash/goods in transit) and verify adjusting entries.</td>
+          </tr>
+          <tr>
+            <td><strong>2. Intra-Group Transactions Elimination</strong></td>
+            <td>Elimination of all intra-group revenues, expenses, and dividends (inter-company sales, management consultancy fees, interest on intra-group loans).</td>
+            <td>Vouch journal vouchers eliminating equal debits and credits from consolidated revenue and cost of sales to prevent artificial grossing up of group turnover.</td>
+          </tr>
+          <tr>
+            <td><strong>3. Harmonizing Accounting Policies</strong></td>
+            <td>All group companies must follow uniform accounting policies for like transactions. If a subsidiary uses WDV depreciation while parent uses SLM, or different inventory formulas (FIFO vs Weighted Average), adjustments must be made.</td>
+            <td>Inspect component accounting policies; verify whether management has quantified and adjusted differences in the consolidation worksheets.</td>
+          </tr>
+          <tr>
+            <td><strong>4. Harmonizing Reporting Dates (3-Month Gap Rule)</strong></td>
+            <td>Financial statements of components must be drawn up to the same date as the parent. If impracticable, the difference between reporting dates must <strong>not exceed 3 months</strong>.</td>
+            <td>Verify that reporting date gap is &le; 3 months; examine whether adjustments have been made for significant intervening events (e.g., major capital expenditure, price shocks).</td>
+          </tr>
+          <tr>
+            <td><strong>5. Foreign Currency Translation (Ind AS 21 / AS 11)</strong></td>
+            <td>Converting financial statements of foreign operations into presentation currency (INR): assets/liabilities at closing rate, income/expenses at average rate.</td>
+            <td>Check exchange rates used against RBI/official rates; verify correct allocation of translation differences to <span class="kw-blue">Foreign Currency Translation Reserve (FCTR)</span> under OCI.</td>
+          </tr>
+          <tr>
+            <td><strong>6. Deferred Tax on Intra-Group Adjustments (Ind AS 12)</strong></td>
+            <td>Recognizing deferred tax assets/liabilities on temporary differences resulting from elimination of intra-group unrealized profits.</td>
+            <td>Verify calculation of deferred tax on unrealized profit elimination at the buyer's local tax rate under Ind AS 12.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- UNREALIZED INTRA-GROUP PROFITS & DIVIDENDS -->
+  <div id="sec-unrealized-profits" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">3. Elimination of Unrealized Intra-Group Profits &amp; Dividends</h3>
+    <div class="grid-2col" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+      <div class="inner-box" style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:8px; padding:16px;">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Downstream vs. Upstream Sales</h4>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>Downstream Sales (Parent &rarr; Subsidiary):</strong> The parent sells goods to a subsidiary at a profit. If goods remain unsold at year-end, <span class="kw-red">100% of the unrealized profit</span> is eliminated against the parent's profit and inventory value.</li>
+          <li><strong>Upstream Sales (Subsidiary &rarr; Parent):</strong> The subsidiary sells goods to the parent. The unrealized profit is eliminated <span class="kw-purple">proportionately between Parent and Non-Controlling Interest (NCI)</span> in ratio of their shareholding.</li>
+          <li><strong>PPE Capitalization:</strong> If a subsidiary sells machinery to the parent at a margin, the profit is eliminated from fixed assets and subsequent excess depreciation is adjusted.</li>
+        </ul>
+      </div>
+
+      <div class="inner-box" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:16px;">
+        <h4 style="color:#047857; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Elimination of Intra-Group Dividends</h4>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li>Dividends paid or declared by a subsidiary to the parent must be eliminated in CFS.</li>
+          <li><strong>Pre-Acquisition Dividends:</strong> Under AS 21, dividends received out of pre-acquisition profits are adjusted against the carrying cost of investment, reducing goodwill/capital reserve.</li>
+          <li><strong>Post-Acquisition Dividends:</strong> Eliminated against the consolidated retained earnings and dividend income in P&amp;L to avoid double counting group profits.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 6: MANAGEMENT REPRESENTATIONS      -->
+<!-- ========================================== -->
+<section id="sec-mgt-representations" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 6 &bull; Audit Evidence</span>
+      <h2 class="section-title">Management Representations in CFS (SA 580)</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h3 class="card-title">1. Written Representations from Parent Management (SA 580)</h3>
+    <p>
+      In accordance with <strong>Standard on Auditing (SA) 580</strong>, the principal auditor must request written representations from the management of the parent company acknowledging their responsibility for and approval of the consolidated financial statements.
+    </p>
+
+    <div class="callout callout-info">
+      <div class="callout-title">Specific Written Representations Required for CFS:</div>
+      <ol style="font-size:16px; line-height:1.7; margin-left:20px;">
+        <li><span class="kw-blue">Completeness of Components:</span> Management has identified and included all components (subsidiaries, associates, JVs) in CFS, and any exclusion strictly satisfies statutory exemption rules.</li>
+        <li><span class="kw-green">Accuracy of Consolidation Adjustments:</span> All permanent and current period consolidation adjustments (including intra-group eliminations and unrealized profit removals) are complete and accurate.</li>
+        <li><span class="kw-purple">Accounting Policy Harmonization:</span> All differences in accounting policies across components have been appropriately quantified and adjusted.</li>
+        <li><span class="kw-amber">Subsequent Events:</span> All significant intervening events occurring between the reporting dates of components and the parent have been appropriately reflected.</li>
+      </ol>
+      <p style="margin-top:10px; font-weight:700; color:#b91c1c;">
+        ⚠️ If parent management refuses to provide these written representations, the auditor must disclaim an opinion or qualify the audit report on CFS in accordance with SA 580 and SA 705!
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 7: REPORTING ON CONSOLIDATED FS    -->
+<!-- ========================================== -->
+<section id="sec-reporting-all-audited" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 7 &bull; Auditor Reporting</span>
+      <h2 class="section-title">Audit Reporting on Consolidated Financial Statements &amp; CARO</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h3 class="card-title">1. Reporting When the Parent's Auditor is Also Auditor of All Components</h3>
+    <p>
+      When the auditor of the parent entity personally audits all subsidiaries, joint ventures, and associates included in the CFS, the audit report is straightforward:
+    </p>
+    <ul style="font-size:16px; line-height:1.6; margin-left:20px;">
+      <li>The auditor has direct personal knowledge and audit evidence across 100% of the group components.</li>
+      <li><strong>No reference to other auditors</strong> or SA 600 division of responsibility is required in the auditor's report.</li>
+      <li>The report is issued under <strong>SA 700 / SA 705</strong> directly addressing the truth and fairness of the consolidated financial statements.</li>
+    </ul>
+  </div>
+
+  <!-- REPORTING UNDER SA 600 (OTHER MATTER PARAGRAPH) -->
+  <div id="sec-reporting-other-auditors" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">2. Reporting Under SA 600: The "Other Matter" Paragraph &amp; Magnitude Disclosure</h3>
+    <p>
+      Where the parent's auditor is not the auditor of all components and relies on the reports of other independent auditors, the report must include an <span class="kw-blue">Other Matter (OM) Paragraph</span> pursuant to <strong>SA 706</strong> and <strong>SA 600</strong>:
+    </p>
+
+    <div class="callout callout-warning">
+      <div class="callout-title">Mandatory Contents of the Other Matter Paragraph (ICAI Wording)</div>
+      <ul style="font-size:16px; line-height:1.6; margin-left:18px;">
+        <li><strong>Disclosure of Magnitude:</strong> The report MUST clearly disclose the magnitude of the portion of financial statements audited by other auditors by stating aggregate rupee amounts and percentages of:
+          <ul style="margin-left:18px; margin-top:4px;">
+            <li><span class="kw-blue">Total Assets</span> of the components</li>
+            <li><span class="kw-blue">Total Revenues</span> of the components</li>
+            <li><span class="kw-blue">Net Cash Flows</span> of the components</li>
+          </ul>
+        </li>
+        <li><strong>Division of Responsibility:</strong> Express statement that the principal auditor's opinion on CFS, in so far as it relates to those components and reports under Section 143(3), is <span class="kw-red">based solely on the reports of such other auditors</span>.</li>
+        <li><strong>Non-Modification Clarification:</strong> Explicit confirmation that the group audit opinion is not modified in respect of reliance on other auditors.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CARO 2020 CLAUSE (XXI) ON CFS -->
+  <div id="sec-caro-cfs" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">3. CARO 2020 Reporting on Consolidated Financial Statements &ndash; Clause (xxi)</h3>
+    <p>
+      As a general rule, the Companies (Auditor's Report) Order, 2020 (CARO 2020) does not apply to the auditor's report on consolidated financial statements. However, there is <span class="kw-red">one vital statutory exception: Clause (xxi)</span>!
+    </p>
+
+    <div class="callout callout-danger">
+      <div class="callout-title">CARO 2020 Clause 3(xxi) Statutory Mandate</div>
+      <p>
+        The auditor of CFS must report: <em>"Whether there have been any <span class="kw-red">qualifications or adverse remarks</span> by the respective auditors in the Companies (Auditor's Report) Order (CARO) reports of the companies included in the consolidated financial statements, if yes, indicate the details of the companies and the paragraph numbers of the CARO report containing the qualifications or adverse remarks."</em>
+      </p>
+    </div>
+
+    <h4 style="font-family:'Patrick Hand', cursive; color:#1e3a8a; font-size:20px; margin-top:14px;">Reporting Table Format for Clause 3(xxi):</h4>
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:20%;">Name of Component Company</th>
+            <th style="width:20%;">CIN</th>
+            <th style="width:20%;">Holding / Subsidiary / Associate / JV</th>
+            <th style="width:40%;">Clause Number of CARO Containing Qualification &amp; Nature of Remark</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ABC Limited</td>
+            <td>U12345MH2010PLC123456</td>
+            <td>Subsidiary</td>
+            <td>Clause 3(i)(a) &ndash; Incomplete Fixed Asset Register; Clause 3(vii)(a) &ndash; Undisputed GST arrears &gt; 6 months.</td>
+          </tr>
+          <tr>
+            <td>XYZ Limited</td>
+            <td>U78910DL2015PLC654321</td>
+            <td>Joint Venture</td>
+            <td>Clause 3(ix)(a) &ndash; Default in repayment of term loan to bank.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- HANDLING UNAUDITED COMPONENTS (MUDIT'S CATCH-22 RESOLVED) -->
+  <div id="sec-unaudited-components" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">4. Components Not Audited: Resolving Mudit's Catch-22</h3>
+    <p>
+      Returning to our opening scenario: What should Mudit do when he discovers that the foreign subsidiary's accounts included in the group financial statements are completely unaudited?
+    </p>
+
+    <div class="callout callout-info">
+      <div class="callout-title">The Statutory Protocol for Unaudited Components (Guidance Note &amp; SA 705)</div>
+      <p>
+        Where the financial statements of one or more components continue to remain unaudited, the principal auditor has <span class="kw-red">not been able to obtain sufficient appropriate audit evidence</span> regarding those consolidated amounts. Mudit must proceed as follows:
+      </p>
+      <ol style="font-size:16px; line-height:1.7; margin-left:20px; margin-top:8px;">
+        <li><span class="kw-blue">Evaluate Materiality &amp; Pervasiveness:</span> Mudit must assess the quantitative size (percentage of group assets, turnover, profits) and qualitative significance of the unaudited component to the group CFS.</li>
+        <li><span class="kw-amber">If Material but Not Pervasive:</span> Mudit must express a <span class="kw-amber">Qualified Audit Opinion</span> under SA 705, stating that except for the possible effects of the matter regarding the unaudited component, the CFS give a true and fair view.</li>
+        <li><span class="kw-red">If Material and Pervasive:</span> If the unaudited component represents a massive portion of the group (e.g., 60% of group revenue/assets), the auditor must issue a <span class="kw-red">Disclaimer of Opinion</span> under SA 705!</li>
+        <li><span class="kw-purple">Report under Section 143(3):</span> State that the auditor was unable to obtain all the information and explanations necessary for the purpose of the audit in respect of the unaudited component.</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE TYU 2 ACCORDION -->
+  <div id="sec-tyu2" class="accordion-item" style="margin-top:20px;">
+    <button class="accordion-header">
+      <span>🔥 TEST YOUR UNDERSTANDING 2: Drafting the "Other Matter" Paragraph for Multiple Subsidiaries &amp; Foreign GAAP Conversion (Queen Ltd.)</span>
+      <span class="accordion-icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <div class="case-study-box">
+        <h4 style="color:#b91c1c; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Exam Problem Formulation (TYU 2 &amp; TYK 16)</h4>
+        <p>
+          You are the statutory auditor of a listed Indian parent company with 4 subsidiaries audited by other auditors. The subsidiaries account for total assets of ₹ 900 Crores, total revenues of ₹ 1,290 Crores, and net cash outflow of ₹ 45 Crores. One subsidiary, <strong>Queen Ltd.</strong>, is located in the UK whose statements were prepared under UK GAAP and audited by local UK auditors. Holding company management converted Queen Ltd.'s accounts into Ind AS, which were audited by your firm. <strong>Draft the Other Matter paragraph for the Independent Auditor's Report on CFS.</strong>
+        </p>
+      </div>
+
+      <div class="solution-box" style="margin-top:14px; background:#eff6ff; padding:16px; border-radius:8px; border:1px solid #bfdbfe;">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">ICAI Model Draft &ndash; Other Matter Paragraph:</h4>
+        <div style="background:#ffffff; padding:14px; border:1px solid #cbd5e1; border-radius:6px; font-family:Arial, sans-serif; font-size:14.5px; line-height:1.6;">
+          <p><strong>Other Matter</strong></p>
+          <p>
+            We did not audit the financial statements and other financial information, in respect of four (4) subsidiaries, whose financial statements reflect <span class="kw-blue">total assets of ₹ 900 Crores</span> as at March 31, 2026, <span class="kw-blue">total revenues of ₹ 1,290 Crores</span> and <span class="kw-blue">net cash outflows of ₹ 45 Crores</span> for the year ended on that date. These financial statements and other financial information have been audited by other auditors, whose reports have been furnished to us by the management of the Holding Company.
+          </p>
+          <p style="margin-top:8px;">
+            Our opinion on the consolidated financial statements, in so far as it relates to the amounts and disclosures included in respect of these subsidiaries, and our report in terms of sub-section (3) of Section 143 of the Act, in so far as it relates to the aforesaid subsidiaries, is <span class="kw-red">based solely on the reports of such other auditors</span>.
+          </p>
+          <p style="margin-top:8px;">
+            One subsidiary company, <strong>Queen Ltd.</strong>, is located outside India whose financial statements have been prepared in accordance with accounting principles generally accepted in its respective country and audited by other auditors under local GAAS. The Holding Company's management has converted the financial statements of Queen Ltd. from UK GAAP to Indian Accounting Standards (Ind AS). <span class="kw-green">We have audited these conversion adjustments made by the Holding Company's management.</span> Our opinion in so far as it relates to Queen Ltd. is based on the report of the other auditor and the conversion adjustments audited by us.
+          </p>
+          <p style="margin-top:8px;">
+            Our opinion on the consolidated financial statements is not modified in respect of the above matters with respect to our reliance on the work done and the reports of the other auditors.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE TYU 3 ACCORDION -->
+  <div id="sec-tyu3" class="accordion-item" style="margin-top:20px;">
+    <button class="accordion-header">
+      <span>🔥 TEST YOUR UNDERSTANDING 3: Evaluating Modified Component Reports &ndash; Materiality from Group Perspective</span>
+      <span class="accordion-icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <div class="case-study-box">
+        <h4 style="color:#b91c1c; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Exam Case Scenario (TYU 3)</h4>
+        <p>
+          During the group audit of SuperMega Ltd., the component auditor of an Indian subsidiary, Sub-1 Ltd., issued a qualified opinion on Sub-1's standalone financial statements due to non-provision of doubtful trade receivables amounting to ₹ 80 Lakhs. The consolidated profit before tax of SuperMega Ltd. group is ₹ 1,200 Crores, and overall group materiality is set at ₹ 30 Crores. <strong>How should the parent company auditor evaluate this component qualification when drafting the audit report on the consolidated financial statements?</strong>
+        </p>
+      </div>
+
+      <div class="solution-box" style="margin-top:14px; background:#eff6ff; padding:16px; border-radius:8px; border:1px solid #bfdbfe;">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">ICAI Model Solution:</h4>
+        <p>In accordance with the <strong>ICAI Announcement dated May 25, 2017</strong> and SA 600:</p>
+        <ol style="font-size:16px; line-height:1.7; margin-left:20px;">
+          <li>While considering the observations (modifications/emphasis of matter) of the component auditor, the parent auditor must evaluate them in relation to <span class="kw-blue">materiality computed for the group as a whole</span>.</li>
+          <li>In the given case, the misstatement of ₹ 80 Lakhs is material to Sub-1 Ltd. on a standalone basis, but it represents only <span class="kw-green">0.067% of the group consolidated profit before tax (₹ 1,200 Crores)</span> and is well below the group materiality threshold of ₹ 30 Crores.</li>
+          <li>Therefore, the misstatement is <span class="kw-purple">immaterial to the Consolidated Financial Statements</span> of the group as a whole.</li>
+          <li><strong>Conclusion:</strong> The parent company auditor <span class="kw-red">SHOULD NOT modify the audit opinion on the CFS</span> in respect of this matter! A clean (unmodified) opinion on CFS is appropriate.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 8: TEST YOUR KNOWLEDGE (SOLUTIONS) -->
+<!-- ========================================== -->
+<section id="sec-tyk" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 8 &bull; ICAI Question Bank</span>
+      <h2 class="section-title">Test Your Knowledge (TYK 1 to 16 &ndash; Full Detailed Solutions)</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <p>
+      The following section provides comprehensive, 100% complete answers to all 16 Test Your Knowledge questions from the official ICAI Study Material for Chapter 13:
+    </p>
+
+    <!-- TYK 1 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 1: Whether preparation of Consolidated Financial Statements is mandatory? Elaborate on the requirements under statute.</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p><strong>Yes, preparation of Consolidated Financial Statements (CFS) is legally mandatory</strong> under the Companies Act, 2013:</p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>Section 129(3):</strong> Where a company has one or more subsidiaries, it shall, in addition to standalone financial statements, prepare a consolidated financial statement of the company and of all the subsidiaries in the same form and manner as that of its own, to be laid before the AGM.</li>
+          <li><strong>Scope of "Subsidiary":</strong> Under the Explanation to Section 129(3), the word "subsidiary" expressly includes <span class="kw-blue">associate company and joint venture</span>.</li>
+          <li><strong>Section 129(4):</strong> The provisions of the Act applicable to the preparation, adoption, and audit of standalone financial statements of a holding company shall, <em>mutatis mutandis</em>, apply to its consolidated financial statements.</li>
+          <li><strong>Schedule III Compliance:</strong> The CFS must be presented in the formats prescribed under Division I (AS), Division II (Ind AS), or Division III (NBFC Ind AS) of Schedule III to the Act.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 2 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 2: Elaborate on the situations wherein the requirement to prepare Consolidated Financial Statements may not apply.</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>The requirement to prepare CFS does not apply in the following specific circumstances:</p>
+        <ol style="font-size:15px; line-height:1.6; margin-left:20px;">
+          <li>
+            <strong>Exemption under Rule 6 of Companies (Accounts) Rules, 2014:</strong> An intermediate company is exempt from preparing CFS if it satisfies all 3 cumulative conditions:
+            <ul style="margin-left:18px;">
+              <li>It is a wholly-owned subsidiary, or a partially-owned subsidiary whose other members have been intimated in writing and have not objected;</li>
+              <li>Its securities (debt or equity) are not listed or in process of listing in India or abroad; and</li>
+              <li>Its ultimate or intermediate holding company files CFS with the ROC complying with applicable accounting standards.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Ind AS 110 "Investment Entity" Exemption:</strong> An entity that meets the definition of an Investment Entity under Ind AS 110 does not consolidate its subsidiaries (except those providing investment services) and instead measures them at <span class="kw-purple">Fair Value Through Profit or Loss (FVTPL)</span> under Ind AS 109.
+          </li>
+          <li>
+            <strong>Accounting Standards (AS 21) Exemptions:</strong> Excluded if (a) control is temporary (&lt; 12 months with view to disposal); or (b) operates under severe long-term restrictions impairing fund transfers. <em>(Note: These AS 21 exclusions do not exist under Ind AS 110).</em>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- TYK 3 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 3: While auditing CFS, which Current Period Consolidation Adjustments are to be taken into account?</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>The auditor must examine the following recurring Current Period Consolidation Adjustments:</p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>Elimination of Intra-Group Balances:</strong> Eliminating 100% of inter-company debtors, creditors, loans, advances, and bills.</li>
+          <li><strong>Elimination of Intra-Group Transactions:</strong> Eliminating inter-company sales, purchases, management fees, and interest income/expense.</li>
+          <li><strong>Elimination of Unrealized Profits:</strong> Eliminating unrealized margins in closing inventory and PPE resulting from downstream or upstream intra-group transfers.</li>
+          <li><strong>Intra-Group Dividends:</strong> Eliminating dividends received or declared between group companies to prevent double-counting.</li>
+          <li><strong>Harmonizing Accounting Policies:</strong> Adjusting for differences in depreciation methods or inventory valuation formulas across components.</li>
+          <li><strong>Harmonizing Reporting Dates:</strong> Ensuring the gap between component and parent dates is &le; 3 months and adjusting for significant intervening transactions.</li>
+          <li><strong>Foreign Currency Translation:</strong> Translating foreign operations under Ind AS 21 / AS 11 and routing differences to FCTR.</li>
+          <li><strong>Deferred Tax:</strong> Recognizing deferred tax on consolidation adjustments under Ind AS 12.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 4 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 4: Write short notes on: (a) Responsibility of holding company for preparation of CFS; (b) Permanent Consolidated Adjustments.</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <div class="grid-2col" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+          <div>
+            <h5 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:18px;">(a) Responsibility of Holding Company:</h5>
+            <ul style="font-size:14px; line-height:1.5; margin-left:16px;">
+              <li>Identifying all group components (subsidiaries, associates, JVs).</li>
+              <li>Gathering complete, reliable financial information from all components.</li>
+              <li>Harmonizing accounting policies and reporting dates across the group.</li>
+              <li>Converting foreign GAAP accounts to Indian GAAP / Ind AS.</li>
+              <li>Accurately executing permanent and current consolidation adjustments.</li>
+              <li>Ensuring compliance with Section 129 and Schedule III.</li>
+            </ul>
+          </div>
+          <div>
+            <h5 style="color:#047857; font-family:'Patrick Hand', cursive; font-size:18px;">(b) Permanent Consolidated Adjustments:</h5>
+            <ul style="font-size:14px; line-height:1.5; margin-left:16px;">
+              <li>Made on the initial date of acquisition or change in shareholding.</li>
+              <li>Determining <span class="kw-red">Goodwill</span> (Cost &gt; Share of Net Assets) or <span class="kw-green">Capital Reserve</span> (Cost &lt; Net Assets).</li>
+              <li>Calculating <span class="kw-purple">Non-Controlling Interest (NCI)</span> / Minority Interest on acquisition date.</li>
+              <li>Distinguishing pre-acquisition reserves from post-acquisition profits.</li>
+              <li>Carried forward consistently in all subsequent consolidations.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TYK 5 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 5: R Ltd. owns 51% in S Ltd. but discloses shares as "Stock-in-trade" held for disposal. Can S Ltd. be excluded from CFS?</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>The auditor must determine the applicable financial reporting framework:</p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>Under AS 21:</strong> Exclusion is permitted under paragraph 11 if control is intended to be temporary because the investment is held exclusively with a view to subsequent disposal in the near future. If supported by documentary evidence, R Ltd.'s exclusion is acceptable.</li>
+          <li><strong>Under Ind AS 110:</strong> <span class="kw-red">Consolidation is MANDATORY</span>. Ind AS 110 does not recognize temporary control or stock-in-trade classification as grounds for exclusion. Holding 51% gives R Ltd. power, exposure to variable returns, and ability to affect returns. R Ltd. must consolidate S Ltd. unless R Ltd. qualifies as an Investment Entity under Ind AS 110!</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 6 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 6: A Ltd. holds 10% voting power and control over Board of Directors of B Ltd. Factors to consider for audit of CFS under Ind AS?</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>The statutory auditor must evaluate:</p>
+        <ol style="font-size:15px; line-height:1.6; margin-left:20px;">
+          <li><strong>Control over Board of Directors:</strong> Under Section 2(87) of the Companies Act, 2013 and Ind AS 110, control over the composition of the Board of Directors establishes control, making B Ltd. a subsidiary despite A Ltd. holding only 10% voting equity.</li>
+          <li><strong>Inclusion in CFS:</strong> B Ltd. MUST be consolidated in A Ltd.'s group CFS.</li>
+          <li><strong>Computation of Non-Controlling Interest (NCI):</strong> High NCI (90% of equity) must be calculated at fair value or proportionate net assets under Ind AS 103/110 and presented in equity.</li>
+          <li><strong>Audit of Consolidation Adjustments:</strong> Verification of goodwill/capital reserve, pre-acquisition reserves, elimination of intra-group transactions, and auditing line-by-line consolidation.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- TYK 7 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 7: Nawab Limited (Turnover ₹ 2.9B, 11 business units, 180 branches). Drafting report across 5 scenarios.</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <div class="table-wrap">
+          <table class="notes-table">
+            <thead>
+              <tr>
+                <th style="width:25%;">Scenario</th>
+                <th style="width:75%;">Auditor's Reporting Duty &amp; Report Structure</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>(a) Auditor of all components</td>
+                <td>Standard clean report under SA 700. No Other Matter paragraph or reference to other auditors needed.</td>
+              </tr>
+              <tr>
+                <td>(b) Not auditor of all components</td>
+                <td>Include an <strong>Other Matter (OM) Paragraph</strong> under SA 706/SA 600 stating aggregate rupee amounts and percentages of total assets, revenues, and cash flows audited by other auditors, confirming division of responsibility.</td>
+              </tr>
+              <tr>
+                <td>(c) Different Accounting Framework</td>
+                <td>If a component reports under a different GAAP, parent management converts it to Indian GAAP/Ind AS. The principal auditor audits these conversion adjustments and discloses the fact in the Other Matter paragraph.</td>
+              </tr>
+              <tr>
+                <td>(d) Different Auditing Framework</td>
+                <td>Principal auditor evaluates whether the local GAAS audit provides sufficient appropriate evidence. If satisfied, relies on it; if not, requests supplemental procedures. Disclosed in OM paragraph.</td>
+              </tr>
+              <tr>
+                <td>(e) Components not audited</td>
+                <td>Evaluate materiality and pervasiveness to the group. Issue <span class="kw-amber">Qualified Opinion</span> (material but not pervasive) or <span class="kw-red">Disclaimer of Opinion</span> (material and pervasive) under SA 705.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TYK 8 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 8: M Ltd. acquired 51% in S Ltd. on 01-04-2025 and sold 25% during 2025-26, refusing CFS pleading temporary control under Ind AS.</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p><strong>M Ltd.'s view is completely incorrect:</strong></p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li>Ind AS 110 does NOT recognize "temporary control" as an exemption from preparing CFS.</li>
+          <li>M Ltd. held 51% on 01-04-2025 (control established). Even after selling 25%, M Ltd. still holds 26% (significant influence as an associate).</li>
+          <li>For the period during which control existed (from 01-04-2025 up to the date of disposal), S Ltd.'s financial statements <span class="kw-red">MUST be consolidated line-by-line</span> in the consolidated P&amp;L and cash flow statement.</li>
+          <li>The gain or loss on disposal of the 25% stake must be recognized in the consolidated financial statements in accordance with Ind AS 110.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 9 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 9: H Limited is an Investment Company under Ind AS (investments in S1 25%, S2 50%, S3 60%). Need to consolidate under Sec 129(3)?</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>
+          <strong>No, H Limited is not required to consolidate S1, S2, and S3</strong>, provided it strictly satisfies the definition of an <strong>Investment Entity</strong> under Ind AS 110:
+        </p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li>Under Ind AS 110, an Investment Entity is explicitly prohibited from consolidating its subsidiaries. Instead, it must measure its investments in subsidiaries at <span class="kw-purple">Fair Value Through Profit or Loss (FVTPL)</span> under Ind AS 109.</li>
+          <li>Compliance with Ind AS (notified under Section 133 of the Act) satisfies the requirements of Section 129(3). Measuring investments at FVTPL fulfills the statutory mandate, and no line-by-line consolidation is required.</li>
+          <li><em>Condition:</em> If any investee provides investment-related support services to H Ltd., that specific entity must still be consolidated.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 10 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 10: Venus Ltd. (5 business units, 35 branches). Points of consideration for Manglam &amp; Associates while accepting principal auditor assignment.</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Manglam &amp; Associates must assess whether their <span class="kw-blue">own participation is sufficient</span> under SA 600:</p>
+        <ol style="font-size:15px; line-height:1.6; margin-left:20px;">
+          <li><strong>Quantitative Sufficiency:</strong> The proportion of group assets, turnover, and profits that the firm audits personally versus portions audited by other auditors.</li>
+          <li><strong>Knowledge of Business:</strong> The firm's degree of knowledge regarding the business of the components.</li>
+          <li><strong>Risk Assessment:</strong> The risk of material misstatements in components audited by other auditors.</li>
+          <li><strong>Supplementary Procedures:</strong> Whether the firm can perform additional procedures (questionnaires, analytical reviews) regarding components audited by other auditors.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- TYK 11 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 11: R Limited investment in 4 components (S1 subsidiary, S2 foreign sub, A1 associate, JV1 joint venture). Audit procedures to test completeness.</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>The auditor should execute the following procedures:</p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li>Review prior year working papers and the parent's procedures for identifying components.</li>
+          <li>Inspect investment registers and Section 186/190 statutory registers to confirm shareholdings in S1, S2, A1, and JV1.</li>
+          <li>Verify appropriate accounting treatment: Line-by-line for S1 and S2; Equity method for Associate A1; Joint arrangement framework (Ind AS 111 / AS 27) for JV1.</li>
+          <li>Verify foreign currency translation of S2 into INR under Ind AS 21 / AS 11.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 12 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 12: Electric Corporation procured spares for ₹ 700 Cr from PCDC India (both Govt of India owned). Management claims no disclosure required.</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p><strong>Management's contention is not tenable:</strong></p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li>Ind AS 24 provides an exemption from standard detailed related party disclosures for transactions between state-controlled enterprises.</li>
+          <li><strong>However, Ind AS 24 explicitly requires disclosure of:</strong> (a) the name of the Government and nature of relationship; (b) the nature and amount of each individually significant transaction (here ₹ 700 Crores procurement).</li>
+          <li>Therefore, Electric Corporation Ltd. MUST disclose the ₹ 700 Crore transaction with PCDC India Ltd. in its financial statement notes!</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 13 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 13: Consolidated reporting on components audited by other auditors &ndash; Other Matter Paragraph requirements.</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Under SA 706 and SA 600, the independent auditor's report on CFS must include an <strong>Other Matter Paragraph</strong> stating:</p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li>Aggregate rupee amounts and percentages of total assets, total revenues, and net cash flows of components audited by other auditors.</li>
+          <li>That the opinion on CFS and reporting under Section 143(3) in so far as it relates to those components is based solely on other auditors' reports.</li>
+          <li>Confirmation that the auditor's opinion is not modified in respect of this matter.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 14 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 14: Reporting under Section 143(3) and CARO 2020 Clause (xxi) on Consolidated Financial Statements.</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>Section 143(3):</strong> The auditor must report on whether proper books of account are kept, financial statements comply with accounting standards, and whether internal financial controls with reference to consolidated financial statements (IFCoFR) are effective.</li>
+          <li><strong>CARO 2020 Clause (xxi):</strong> The auditor must specifically review the individual CARO reports of all Indian companies included in CFS and list every qualification/adverse remark, mentioning company name, CIN, relationship, and paragraph numbers.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 15 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 15: TRP Ltd. case: Requesting written representations under SA 580 for Consolidated Financial Statements.</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>
+          The statutory auditor must request written representations from TRP Ltd.'s management specifically acknowledging their responsibility for and approval of the consolidated financial statements, completeness of components, and accuracy of consolidation adjustments. If management refuses to provide these representations, the auditor must disclaim an opinion or qualify the report on CFS under SA 580 and SA 705.
+        </p>
+      </div>
+    </div>
+
+    <!-- TYK 16 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 16: Comprehensive drafting of Independent Auditor's Report Other Matter Paragraph (4 subsidiaries, Queen Ltd. foreign conversion).</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Full formal draft of the Other Matter paragraph as presented in TYU 2 and Section 7 above, disclosing total assets of ₹ 900 Cr, total revenues of ₹ 1,290 Cr, net cash outflow of ₹ 45 Cr, stating division of responsibility, and confirming that Queen Ltd.'s foreign GAAP conversion adjustments were audited by the parent firm.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 9: MASTER COMPARISON MATRIX & FLASH TRAPS -->
+<!-- ========================================== -->
+<section id="sec-summary-matrix" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 9 &bull; Revision Accelerator</span>
+      <h2 class="section-title">Master Comparison Matrix: AS 21 vs. Ind AS 110 &amp; Exam Traps</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h3 class="card-title">High-Yield Comparative Matrix: Consolidation Frameworks</h3>
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:25%;">Comparison Dimension</th>
+            <th style="width:37%;">Under Accounting Standards (AS 21)</th>
+            <th style="width:38%;">Under Indian Accounting Standards (Ind AS 110)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Basis of Control</strong></td>
+            <td>Ownership of &gt; 50% voting power OR control over composition of Board of Directors.</td>
+            <td>Substantive Control model: Power + Exposure to variable returns + Ability to use power to affect returns.</td>
+          </tr>
+          <tr>
+            <td><strong>Temporary Control Exemption</strong></td>
+            <td><span class="kw-green">Permitted:</span> Excluded if acquired and held exclusively for subsequent disposal in near future.</td>
+            <td><span class="kw-red">STRICTLY PROHIBITED:</span> No temporary control exemption exists. Must consolidate.</td>
+          </tr>
+          <tr>
+            <td><strong>Severe Long-Term Restrictions</strong></td>
+            <td><span class="kw-green">Permitted:</span> Excluded if severe restrictions impair ability to transfer funds to parent.</td>
+            <td><span class="kw-red">NO AUTOMATIC EXCLUSION:</span> Must assess whether restrictions deprive parent of control.</td>
+          </tr>
+          <tr>
+            <td><strong>Investment Entity Exemption</strong></td>
+            <td>No such concept under AS 21. All controlled entities consolidated.</td>
+            <td><span class="kw-purple">Mandatory Exemption:</span> Investment entities measure subsidiaries at FVTPL under Ind AS 109.</td>
+          </tr>
+          <tr>
+            <td><strong>Net Assets Measurement</strong></td>
+            <td>Historical book values on date of acquisition.</td>
+            <td>Identifiable net assets measured at <span class="kw-blue">Fair Value</span> on acquisition date (Ind AS 103).</td>
+          </tr>
+          <tr>
+            <td><strong>Negative Minority Interest / NCI</strong></td>
+            <td>Losses exceeding minority interest adjusted against parent's reserves unless minority has binding obligation.</td>
+            <td>Total comprehensive income is attributed to NCI even if this results in NCI having a <span class="kw-red">deficit / negative balance</span>.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- HIGH-FREQUENCY EXAM FLASH TRAPS -->
+    <div id="sec-exam-traps" class="callout callout-danger" style="margin-top:20px;">
+      <div class="callout-title">⚠️ High-Frequency CA Final Exam Flash Traps &amp; Pitfalls</div>
+      <ul style="margin:0; padding-left:18px; font-size:16px; line-height:1.7;">
+        <li><span class="kw-red">Trap 1 (Review of Other Auditor's Working Papers):</span> Believing that the Principal Auditor has the right or duty to review detailed working papers of component auditors. <em>Fact:</em> SA 600 does NOT permit the principal auditor to review working papers of other auditors! Reliance is placed on their audit report and questionnaires.</li>
+        <li><span class="kw-blue">Trap 2 (Component Qualification vs. Group CFS):</span> Assuming that if a component auditor qualifies their report, the parent auditor must automatically qualify the group CFS. <em>Fact:</em> Under the ICAI May 2017 Announcement, the parent auditor must evaluate materiality from the perspective of the <span class="kw-blue">group as a whole</span>!</li>
+        <li><span class="kw-purple">Trap 3 (CARO on CFS):</span> Assuming CARO applies to CFS. <em>Fact:</em> CARO 2020 does NOT apply to CFS, <strong>except for Clause 3(xxi)</strong> which requires listing all qualifications in component CARO reports!</li>
+        <li><span class="kw-green">Trap 4 (Stock-in-Trade Exemption under Ind AS):</span> Excluding a subsidiary because its shares are held as "stock-in-trade". <em>Fact:</em> Under Ind AS 110, holding shares as stock-in-trade does NOT exempt an entity from consolidation!</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- BOTTOM NAVIGATION                          -->
+<!-- ========================================== -->
+<div class="bottom-nav">
+  <a href="digital_auditing.html" class="nav-btn prev-btn">
+    <span class="nav-arrow">&larr;</span>
+    <span class="nav-text">
+      <span class="nav-sub">Previous Chapter</span>
+      <span class="nav-title">Chapter 12: Digital Auditing &amp; Assurance</span>
+    </span>
+  </a>
+
+  <a href="../../notes/audnotes.html" class="nav-btn hub-btn">
+    <span class="nav-text">
+      <span class="nav-sub">CA Final Audit</span>
+      <span class="nav-title">Master Hub &amp; Index</span>
+    </span>
+  </a>
+
+  <a href="bank_audit.html" class="nav-btn next-btn">
+    <span class="nav-text">
+      <span class="nav-sub">Next Chapter</span>
+      <span class="nav-title">Chapter 14 (U1): Audit of Banks</span>
+    </span>
+    <span class="nav-arrow">&rarr;</span>
+  </a>
+</div>
+
+</main>
+</div>
+
+<!-- ========================================== -->
+<!-- SCRIPTS & INTERACTIVITY                   -->
+<!-- ========================================== -->
+<script>
+  // 1. Reading Progress Bar
+  window.addEventListener('scroll', () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    const progressBar = document.getElementById('readingProgress');
+    if (progressBar) {
+      progressBar.style.width = scrolled + '%';
+    }
+  });
+
+  // 2. Mobile Sidebar Toggle
+  const sidebarToggle = document.getElementById('sidebarToggle');
+  const sidebar = document.getElementById('sidebar');
+  if (sidebarToggle && sidebar) {
+    sidebarToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+  }
+
+  // 3. Interactive Accordion Toggle
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      item.classList.toggle('open');
+      const icon = header.querySelector('.accordion-icon');
+      if (icon) {
+        icon.textContent = item.classList.contains('open') ? '−' : '+';
+      }
+    });
+  });
+
+  // 4. Scrollspy for Active Sidebar Links
+  window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    let current = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      if (window.pageYOffset >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,2755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 17: Due Diligence, Investigation &amp; Forensic Accounting &ndash; CA Final Audit Revision Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Kalam:wght@300;400;700&family=Patrick+Hand&family=Patrick+Hand+SC&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-blue: #1e3a8a;
+      --accent-blue: #0284c7;
+      --primary-green: #047857;
+      --accent-red: #b91c1c;
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --bg-canvas: #f8fafc;
+      --card-bg: #ffffff;
+      --border-color: #cbd5e1;
+      --text-main: #000000;
+      --text-muted: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Kalam', cursive;
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--text-main);
+      background-color: var(--bg-canvas);
+      background-image: 
+        radial-gradient(#e2e8f0 1.5px, transparent 1.5px),
+        radial-gradient(#f1f5f9 1.5px, #f8fafc 1.5px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+      padding-top: 56px;
+    }
+
+    /* Top Reading Progress Bar */
+    .reading-progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #1e3a8a, #0284c7, #047857, #7c3aed);
+      width: 0%;
+      z-index: 1000;
+      transition: width 0.1s ease;
+    }
+
+    /* Sticky Topbar */
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 56px;
+      background: #ffffff;
+      border-bottom: 2px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      z-index: 900;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .sidebar-toggle-btn {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 16px;
+      cursor: pointer;
+      color: var(--primary-blue);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .sidebar-toggle-btn:hover {
+      background: #e2e8f0;
+    }
+
+    .topbar-brand {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .topbar-pill {
+      background: #eff6ff;
+      color: var(--primary-blue);
+      border: 1px solid #bfdbfe;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .hub-link-btn {
+      background: #047857;
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .hub-link-btn:hover {
+      background: #065f46;
+    }
+
+    /* Layout structure */
+    .app-layout {
+      display: flex;
+      min-height: calc(100vh - 56px);
+      max-width: 1560px;
+      margin: 0 auto;
+    }
+
+    /* Left Sidebar Navigation */
+    .sidebar {
+      width: 320px;
+      background: #ffffff;
+      border-right: 2px solid var(--border-color);
+      position: sticky;
+      top: 56px;
+      height: calc(100vh - 56px);
+      overflow-y: auto;
+      padding: 20px 14px;
+      flex-shrink: 0;
+      box-shadow: 2px 0 6px rgba(0,0,0,0.02);
+    }
+
+    .sidebar-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px dashed #cbd5e1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .nav-item {
+      margin: 0;
+    }
+
+    .nav-link {
+      display: block;
+      padding: 7px 12px;
+      border-radius: 6px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 16px;
+      font-family: 'Patrick Hand', cursive;
+      transition: all 0.15s ease;
+      line-height: 1.3;
+    }
+
+    .nav-link:hover {
+      background: #f1f5f9;
+      color: var(--primary-blue);
+      padding-left: 16px;
+    }
+
+    .nav-link.active {
+      background: #e0f2fe;
+      color: var(--primary-blue);
+      font-weight: 700;
+      border-left: 4px solid var(--accent-blue);
+    }
+
+    /* Main Content Area */
+    .main-content {
+      flex: 1;
+      padding: 30px 40px;
+      min-width: 0;
+    }
+
+    /* Hero Banner */
+    .chapter-hero {
+      background: linear-gradient(135deg, #1e3a8a 0%, #0369a1 50%, #047857 100%);
+      color: #ffffff;
+      padding: 32px 36px;
+      border-radius: 16px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .chapter-hero::after {
+      content: "FAIS";
+      position: absolute;
+      right: 20px;
+      bottom: -15px;
+      font-size: 110px;
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.08);
+      font-family: 'Space Grotesk', sans-serif;
+      pointer-events: none;
+    }
+
+    .hero-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .hero-badge {
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(4px);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .chapter-hero h1 {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .chapter-hero p {
+      font-size: 19px;
+      max-width: 880px;
+      opacity: 0.95;
+      line-height: 1.6;
+    }
+
+    /* Section Styling */
+    section {
+      background: var(--card-bg);
+      border: 2px solid var(--border-color);
+      border-radius: 14px;
+      padding: 30px 34px;
+      margin-bottom: 32px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      scroll-margin-top: 75px;
+    }
+
+    .section-header {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 12px;
+      margin-bottom: 22px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .section-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 28px;
+      color: var(--primary-blue);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-tag {
+      background: #eff6ff;
+      color: var(--accent-blue);
+      font-size: 14px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      border: 1px solid #bfdbfe;
+    }
+
+    h3 {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 23px;
+      color: var(--accent-blue);
+      margin: 22px 0 10px 0;
+      font-weight: 700;
+    }
+
+    h4 {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 20px;
+      color: var(--text-main);
+      margin: 16px 0 8px 0;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: #000000;
+    }
+
+    ul, ol {
+      margin: 12px 0 20px 26px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: #000000;
+    }
+
+    /* Keyword highlight colors */
+    .k-blue { color: #1e40af; font-weight: 700; }
+    .k-red { color: #b91c1c; font-weight: 700; }
+    .k-green { color: #047857; font-weight: 700; }
+    .k-purple { color: #7c3aed; font-weight: 700; }
+    .k-amber { color: #d97706; font-weight: 700; }
+
+    /* Callout Boxes */
+    .callout {
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin: 20px 0;
+      border-left: 6px solid;
+      background: #f8fafc;
+    }
+
+    .callout-blue {
+      border-left-color: var(--accent-blue);
+      background: #f0f9ff;
+    }
+
+    .callout-green {
+      border-left-color: var(--primary-green);
+      background: #f0fdf4;
+    }
+
+    .callout-red {
+      border-left-color: var(--accent-red);
+      background: #fef2f2;
+    }
+
+    .callout-amber {
+      border-left-color: var(--accent-amber);
+      background: #fffbeb;
+    }
+
+    .callout-purple {
+      border-left-color: var(--accent-purple);
+      background: #faf5ff;
+    }
+
+    .callout-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .callout-blue .callout-title { color: #0369a1; }
+    .callout-green .callout-title { color: #15803d; }
+    .callout-red .callout-title { color: #b91c1c; }
+    .callout-amber .callout-title { color: #b45309; }
+    .callout-purple .callout-title { color: #6b21a8; }
+
+    /* Data Tables in Arial */
+    .table-container {
+      overflow-x: auto;
+      margin: 22px 0;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      text-align: left;
+      background: #ffffff;
+    }
+
+    th {
+      background: #1e3a8a;
+      color: #ffffff;
+      font-weight: 700;
+      padding: 12px 16px;
+      border: 1px solid #3b82f6;
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 11px 16px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+      color: #1e293b;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    tr:hover {
+      background-color: #f1f5f9;
+    }
+
+    /* Interactive Accordion for Q&A */
+    .accordion-item {
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      background: #ffffff;
+      transition: all 0.2s ease;
+    }
+
+    .accordion-item:hover {
+      border-color: #cbd5e1;
+    }
+
+    .accordion-header {
+      padding: 16px 20px;
+      background: #f8fafc;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 21px;
+      font-weight: 700;
+      color: var(--primary-blue);
+    }
+
+    .accordion-header:hover {
+      background: #f1f5f9;
+    }
+
+    .accordion-icon {
+      font-size: 22px;
+      transition: transform 0.2s ease;
+      color: #64748b;
+    }
+
+    .accordion-body {
+      padding: 22px 24px;
+      display: none;
+      border-top: 1px solid #e2e8f0;
+      background: #ffffff;
+      font-family: 'Kalam', cursive;
+      font-size: 18px;
+    }
+
+    .accordion-item.open .accordion-body {
+      display: block;
+    }
+
+    .accordion-item.open .accordion-icon {
+      transform: rotate(180deg);
+      color: var(--accent-blue);
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin: 20px 0;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    }
+
+    .card-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 21px;
+      color: var(--primary-blue);
+      font-weight: 700;
+      margin-bottom: 10px;
+      border-bottom: 1px dashed #cbd5e1;
+      padding-bottom: 6px;
+    }
+
+    /* Bottom Navigation Bar */
+    .bottom-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      margin-top: 40px;
+      padding: 24px;
+      background: #ffffff;
+      border: 2px solid var(--border-color);
+      border-radius: 12px;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 18px;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+
+    .prev-btn {
+      background: #f1f5f9;
+      color: var(--text-main);
+      border: 1px solid #cbd5e1;
+    }
+
+    .prev-btn:hover {
+      background: #e2e8f0;
+    }
+
+    .next-btn {
+      background: #1e3a8a;
+      color: #ffffff;
+    }
+
+    .next-btn:hover {
+      background: #172554;
+    }
+
+    .hub-btn {
+      background: #047857;
+      color: #ffffff;
+    }
+
+    .hub-btn:hover {
+      background: #065f46;
+    }
+
+    .nav-text {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .nav-sub {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      opacity: 0.8;
+    }
+
+    .nav-title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 1024px) {
+      .app-layout {
+        flex-direction: column;
+      }
+      .sidebar {
+        position: fixed;
+        left: -330px;
+        top: 56px;
+        bottom: 0;
+        z-index: 950;
+        transition: left 0.3s ease;
+      }
+      .sidebar.active {
+        left: 0;
+      }
+      .main-content {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Reading Progress Bar -->
+<div class="reading-progress-bar" id="readingProgress"></div>
+
+<!-- Sticky Topbar -->
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="sidebar-toggle-btn" id="sidebarToggle" aria-label="Toggle Navigation">&#9776; Index</button>
+    <a href="../../notes/audnotes.html" class="topbar-brand">
+      <span>CA Final &bull; Advanced Auditing</span>
+    </a>
+  </div>
+  <div class="topbar-right">
+    <span class="topbar-pill">Ch 17: Due Diligence, Investigation &amp; Forensic</span>
+    <a href="../../notes/audnotes.html" class="hub-link-btn">Back to Hub &rarr;</a>
+  </div>
+</header>
+
+<!-- Application Layout -->
+<div class="app-layout">
+
+  <!-- Left Sidebar Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-title">
+      <span>Chapter Directory</span>
+      <span style="font-size: 14px; color:#64748b;">Ch 17 Index</span>
+    </div>
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#sec-due-diligence-intro" class="nav-link active">1. Due Diligence: Concept &amp; Objectives</a></li>
+      <li class="nav-item"><a href="#sec-dd-vs-audit" class="nav-link">2. Due Diligence vs. Audit Matrix</a></li>
+      <li class="nav-item"><a href="#sec-dd-classification" class="nav-link">3. Classification of Due Diligence</a></li>
+      <li class="nav-item"><a href="#sec-financial-dd-depth" class="nav-link">4. Financial Due Diligence in Depth</a></li>
+      <li class="nav-item"><a href="#sec-dd-work-approach" class="nav-link">5. Work Approach &amp; Data Room Review</a></li>
+      <li class="nav-item"><a href="#sec-dd-report-contents" class="nav-link">6. Contents of Due Diligence Report</a></li>
+      <li class="nav-item"><a href="#sec-tyu-1-swot" class="nav-link">7. Interactive TYU 1: SWOT Analysis in DD</a></li>
+      <li class="nav-item"><a href="#sec-investigation-intro" class="nav-link">8. Investigation: Nature &amp; Scope</a></li>
+      <li class="nav-item"><a href="#sec-audit-vs-investigation" class="nav-link">9. Audit vs. Investigation (8 Parameters)</a></li>
+      <li class="nav-item"><a href="#sec-investigation-steps" class="nav-link">10. 5-Step Investigation Process</a></li>
+      <li class="nav-item"><a href="#sec-special-issues-investigation" class="nav-link">11. Special Issues in Investigations</a></li>
+      <li class="nav-item"><a href="#sec-business-investigation-purchaser" class="nav-link">12. Investigation for Incoming Purchaser</a></li>
+      <li class="nav-item"><a href="#sec-tyu-2-ghost-workers" class="nav-link">13. Interactive TYU 2: Ghost Workers ETP</a></li>
+      <li class="nav-item"><a href="#sec-types-of-investigation" class="nav-link">14. Fraud Types &amp; Embezzlement Modus</a></li>
+      <li class="nav-item"><a href="#sec-investigation-bank-partner" class="nav-link">15. Bank Lending &amp; Incoming Partner</a></li>
+      <li class="nav-item"><a href="#sec-forensic-accounting-intro" class="nav-link">16. Forensic Accounting &amp; Mindset</a></li>
+      <li class="nav-item"><a href="#sec-audit-vs-forensic" class="nav-link">17. Statutory Audit vs. Forensic Matrix</a></li>
+      <li class="nav-item"><a href="#sec-forensic-process-5steps" class="nav-link">18. 5-Step Forensic Process &amp; FAIR</a></li>
+      <li class="nav-item"><a href="#sec-fais-framework" class="nav-link">19. Overview of FAIS Standards (ICAI)</a></li>
+      <li class="nav-item"><a href="#sec-tyu-3-pli-forensic" class="nav-link">20. Interactive TYU 3: Product Liability</a></li>
+      <li class="nav-item"><a href="#sec-tyk-q1-to-q15" class="nav-link">21. TYK Questions 1 to 15 (Part I)</a></li>
+      <li class="nav-item"><a href="#sec-tyk-q16-to-q31" class="nav-link">22. TYK Questions 16 to 31 (Part II)</a></li>
+      <li class="nav-item"><a href="#sec-master-quad-matrix" class="nav-link">23. Master Quad Comparative Synthesis</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="main-content">
+
+    <!-- Hero Banner -->
+    <div class="chapter-hero">
+      <div class="hero-badge-row">
+        <span class="hero-badge">ICAI Study Material 2026</span>
+        <span class="hero-badge">CA Final Paper 3: Audit</span>
+        <span class="hero-badge">Chapter 17 Complete Notes</span>
+      </div>
+      <h1>Due Diligence, Investigation &amp; Forensic Accounting</h1>
+      <p>
+        Master the strategic tripartite disciplines: <strong style="color:#ffffff; text-decoration: underline;">Due Diligence Reviews</strong> (M&amp;A valuation, financial &amp; tax diligence, hidden liabilities), <strong style="color:#ffffff;">Investigations</strong> (fraud detection, supplier/cash embezzlements, purchase of business, bank advances), and <strong style="color:#ffffff;">Forensic Accounting</strong> under the <strong style="color:#ffffff; text-decoration: underline;">Forensic Accounting &amp; Investigation Standards (FAIS)</strong> with all TYU (1&ndash;3) &amp; TYK (1&ndash;31) solutions!
+      </p>
+    </div>
+
+    <!-- SECTION 1: DUE DILIGENCE INTRO & OBJECTIVES -->
+    <section id="sec-due-diligence-intro">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🔍 1. Due Diligence Review: Concept, Meaning &amp; Objectives</span>
+        </div>
+        <span class="section-tag">Transaction Advisory</span>
+      </div>
+
+      <p>
+        <strong class="k-blue">Due Diligence</strong> is an all-encompassing, rigorous examination and risk analysis of a target entity conducted prior to finalizing a corporate transaction (such as a merger, acquisition, business purchase, joint venture, private equity investment, or major credit facility).
+      </p>
+
+      <div class="callout callout-blue">
+        <div class="callout-title">💡 Core Essence of Due Diligence: "Caveat Emptor" (Buyer Beware)</div>
+        <p>
+          Due diligence translates the commercial principle of <em>caveat emptor</em> into practical action. It enables a prospective acquirer or lender to look beneath the surface of audited financial statements, identify unstated operational bottlenecks, uncover hidden liabilities, and independently validate the financial and strategic assumptions upon which the transaction price and valuation are anchored.
+        </p>
+      </div>
+
+      <h3>Primary Objectives of a Due Diligence Review</h3>
+      <ul>
+        <li><strong>Validating Enterprise Valuation:</strong> Evaluating whether the target's financial statements accurately reflect true earnings quality, sustainable EBITDA, and realistic cash flows.</li>
+        <li><strong>Uncovering "Deal Breakers" &amp; Red Flags:</strong> Identifying critical undisclosed liabilities, environmental non-compliance, severe litigation exposures, title defects, or patent expiries that could jeopardize the entire transaction.</li>
+        <li><strong>Assessing Post-Merger Synergy:</strong> Determining whether technology platforms, organizational cultures, customer bases, and distribution channels can be successfully integrated.</li>
+        <li><strong>Negotiating Purchase Price Adjustments:</strong> Providing documented findings that justify price reductions, indemnity escrows, or specific earn-out clauses in the Share Purchase Agreement (SPA).</li>
+        <li><strong>Fulfilling Regulatory &amp; Governance Duties:</strong> Ensuring directors, institutional funds, and acquiring boards exercise reasonable care and prudence, insulating them against charges of breach of fiduciary duty.</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 2: DUE DILIGENCE VS AUDIT -->
+    <section id="sec-dd-vs-audit">
+      <div class="section-header">
+        <div class="section-title">
+          <span>⚖️ 2. Comprehensive Comparison: Due Diligence vs. Statutory Audit</span>
+        </div>
+        <span class="section-tag">Key Exam Distinction</span>
+      </div>
+
+      <p>
+        While both exercises examine financial and accounting records, they differ fundamentally in objective, scope, methodology, and legal responsibility:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 20%;">Dimension</th>
+              <th style="width: 40%;">Statutory Audit</th>
+              <th style="width: 40%;">Due Diligence Review</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Primary Objective</strong></td>
+              <td>
+                To express an independent statutory opinion on whether the financial statements exhibit a <strong>True and Fair view</strong> in conformity with the applicable Financial Reporting Framework (AS/Ind AS).
+              </td>
+              <td>
+                To provide a comprehensive risk appraisal of the target entity to assist the client in deciding <strong>whether to acquire/invest and at what valuation/terms</strong>.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>2. Scope &amp; Boundaries</strong></td>
+              <td>
+                Determined by statutory enactments (Companies Act, 2013) and Standards on Auditing (SAs). Cannot be restricted by client.
+              </td>
+              <td>
+                Defined entirely by the <strong>Scope of Work agreed in the Engagement Letter</strong> between the professional and the acquiring client.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>3. Perspective / Approach</strong></td>
+              <td>
+                Primarily <strong>historical</strong>: focuses on whether recorded past transactions comply with GAAP, vouchers, and accounting standards.
+              </td>
+              <td>
+                Distinctly <strong>forward-looking</strong>: evaluates sustainable future cash flows, future maintainable earnings, growth potential, and strategic risks.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>4. Period Covered</strong></td>
+              <td>
+                Normally strictly confined to <strong>one financial year</strong> (or interim period).
+              </td>
+              <td>
+                Usually covers a block of <strong>3 to 5 past years</strong>, along with detailed scrutiny of future financial projections (5&ndash;10 years).
+              </td>
+            </tr>
+            <tr>
+              <td><strong>5. Testing Methodology</strong></td>
+              <td>
+                Relies heavily on <strong>sampling</strong>, materiality thresholds, and internal control testing.
+              </td>
+              <td>
+                Focused, deep-dive examination; involves intense operational reviews, discussions with management, SWOT analysis, and non-financial data scrutiny.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>6. Statutory Mandate</strong></td>
+              <td>
+                <strong>Mandatory</strong> under corporate law for all companies.
+              </td>
+              <td>
+                <strong>Voluntary commercial exercise</strong> undertaken at the discretion and commercial prudence of the transaction parties.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>7. Output &amp; Readership</strong></td>
+              <td>
+                Standardized Audit Report addressed to <strong>Members (Shareholders)</strong> and placed in the public domain.
+              </td>
+              <td>
+                Bespoke, confidential Due Diligence Report addressed exclusively to the <strong>Acquiring Client / Investor</strong>.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CLASSIFICATION OF DUE DILIGENCE -->
+    <section id="sec-dd-classification">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📂 3. Classification of Due Diligence</span>
+        </div>
+        <span class="section-tag">Multi-Disciplinary Vectors</span>
+      </div>
+
+      <p>
+        A comprehensive corporate acquisition requires multi-disciplinary due diligence across several distinct functional streams:
+      </p>
+
+      <div class="grid-3">
+        <div class="card" style="border-top: 4px solid var(--accent-blue);">
+          <div class="card-title">1. Commercial / Operational DD</div>
+          <p>
+            Evaluates the target's business model, market share, competitor dynamics, brand equity, key customer concentration, supplier dependencies, and pricing elasticity.
+          </p>
+        </div>
+
+        <div class="card" style="border-top: 4px solid var(--primary-green);">
+          <div class="card-title">2. Financial Due Diligence</div>
+          <p>
+            Analyzes the quality of earnings (Normalised EBITDA), sustainable working capital, cash flows, capital expenditures, hidden liabilities, and asset valuations.
+          </p>
+        </div>
+
+        <div class="card" style="border-top: 4px solid var(--accent-amber);">
+          <div class="card-title">3. Tax Due Diligence</div>
+          <p>
+            Assesses direct and indirect tax compliance, unassessed assessment years, pending appellate disputes, transfer pricing risks, and unutilized MAT/ITC credits.
+          </p>
+        </div>
+
+        <div class="card" style="border-top: 4px solid var(--accent-purple);">
+          <div class="card-title">4. Legal Due Diligence</div>
+          <p>
+            Scrutinizes corporate records, clear title to immovable properties, share transfer records, pending litigations, regulatory approvals, and restrictive covenants in contracts.
+          </p>
+        </div>
+
+        <div class="card" style="border-top: 4px solid var(--accent-red);">
+          <div class="card-title">5. Environmental Due Diligence</div>
+          <p>
+            Evaluates compliance with State Pollution Control Board norms, consent to operate, hazardous waste handling, Effluent Treatment Plants (ETP), and carbon liabilities.
+          </p>
+        </div>
+
+        <div class="card" style="border-top: 4px solid #0891b2;">
+          <div class="card-title">6. HR &amp; Cultural Due Diligence</div>
+          <p>
+            Examines employee turnover, trade union agreements, wage pacts, key managerial talent retention, unfunded gratuity/pension liabilities, and ESOP schemes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: FINANCIAL DUE DILIGENCE IN DEPTH -->
+    <section id="sec-financial-dd-depth">
+      <div class="section-header">
+        <div class="section-title">
+          <span>💰 4. Financial Due Diligence in Depth: Hidden Liabilities &amp; Overvalued Assets</span>
+        </div>
+        <span class="section-tag">Core Valuation Safeguards</span>
+      </div>
+
+      <p>
+        Financial Due Diligence goes beyond balance sheet arithmetic to establish the <strong class="k-blue">Quality of Earnings</strong> and unmask structural financial risks.
+      </p>
+
+      <h3>1. Identifying Hidden / Unrecorded Liabilities</h3>
+      <p>
+        A seller has strong incentives to understate liabilities. The due diligence professional must rigorously search for:
+      </p>
+      <ul>
+        <li><strong>Contingent Liabilities Not Disclosed:</strong> Pending tax demands under appeal, show-cause notices issued by GST/Excise/Customs authorities, and un-invoked bank guarantees.</li>
+        <li><strong>Environmental Clean-up Obligations:</strong> Statutory obligations to remediate polluted industrial sites, decommission plants, or dispose of hazardous waste.</li>
+        <li><strong>Onerous Contractual Obligations:</strong> Long-term "take-or-pay" purchase commitments, liquidated damages clauses, and penalty liabilities for delayed execution.</li>
+        <li><strong>Unfunded Employee Retirement Benefits:</strong> Under-provisioned actuarial liabilities for gratuity, earned leave encashment, post-retirement healthcare, and bonus.</li>
+        <li><strong>Product Warranties &amp; Recall Risks:</strong> Inadequate warranty provisions relative to actual historical failure rates and customer returns.</li>
+        <li><strong>Letters of Comfort / Corporate Guarantees:</strong> Undisclosed guarantees given on behalf of subsidiaries, joint ventures, or promoter-linked entities.</li>
+      </ul>
+
+      <h3>2. Scrutinizing Overvalued Assets</h3>
+      <p>
+        Assets appearing in the balance sheet must be critically reassessed against realistic recoverable values:
+      </p>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%;">Balance Sheet Asset</th>
+              <th style="width: 40%;">Overvaluation Risks &amp; Vulnerabilities</th>
+              <th style="width: 35%;">Due Diligence Audit Verification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Property, Plant &amp; Equipment</strong></td>
+              <td>
+                Obsolescence of machinery, un-recorded idle capacity, abandoned capital work-in-progress (CWIP), and aggressive capitalization of repairs/borrowing costs.
+              </td>
+              <td>
+                Physical inspection of operational condition; obtaining expert technical valuation; verifying whether idle plants are impaired under Ind AS 36.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Inventories</strong></td>
+              <td>
+                Damaged, obsolete, or non-moving stocks valued at cost; excessive inventory build-up to absorb fixed overheads and inflate reported profit.
+              </td>
+              <td>
+                Inventory aging analysis; checking Net Realisable Value (NRV); testing physical scrap dumps and slow-moving stock provisions.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Trade Receivables</strong></td>
+              <td>
+                Stale debts aged $> 180$ days disguised as current; disputed billings; uncollectible balances from financially stressed customers.
+              </td>
+              <td>
+                Detailed debtor aging; review of subsequent cash collections; examining disputed invoices and adequacy of expected credit loss (ECL) provisions.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Intangible Assets &amp; Goodwill</strong></td>
+              <td>
+                Unamortized development costs for obsolete technology; capitalized software that failed implementation; carrying goodwill of loss-making divisions.
+              </td>
+              <td>
+                Assessing future economic benefits; checking patent renewal dates and market viability of technology.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>3. Cash Flow Generating Ability &amp; Quality of Earnings</h3>
+      <p>
+        The professional calculates <strong class="k-purple">Normalised EBITDA</strong> by stripping out:
+      </p>
+      <ul>
+        <li>Non-recurring, extraordinary gains (e.g., one-time profit on sale of real estate).</li>
+        <li>Transactions with related parties at non-arm's length pricing.</li>
+        <li>Aggressive revenue recognition policies (e.g., channel stuffing, bill-and-hold transactions).</li>
+        <li>Discretionary promoter expenses (e.g., luxury vehicles, family remuneration) to arrive at the true cash-generating ability of the standalone business.</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 5: WORK APPROACH TO DUE DILIGENCE -->
+    <section id="sec-dd-work-approach">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🛠️ 5. Work Approach &amp; How to Conduct Due Diligence</span>
+        </div>
+        <span class="section-tag">Execution Methodology</span>
+      </div>
+
+      <p>
+        A structured due diligence engagement progresses through five coordinated stages:
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Stage 1: Mandate &amp; Information Request</div>
+          <ul>
+            <li>Understand the strategic transaction rationale from the client.</li>
+            <li>Issue an exhaustive <strong>Due Diligence Information Request List</strong> to the seller across legal, tax, commercial, and financial areas.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Stage 2: Virtual Data Room (VDR) Scrutiny</div>
+          <ul>
+            <li>Access the secure VDR; analyze audited financials, board minutes, contracts, tax returns, and debtor/creditor ledgers.</li>
+            <li>Maintain an interactive <strong>Q&amp;A Tracker</strong> to resolve data ambiguities.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Stage 3: Management Interviews &amp; Site Visits</div>
+          <ul>
+            <li>Conduct structured interviews with target CEO, CFO, plant heads, and sales leadership.</li>
+            <li>Perform physical walk-throughs of manufacturing plants, warehouses, and IT server facilities.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Stage 4: Synthesis &amp; Pro-Forma Adjustments</div>
+          <ul>
+            <li>Perform SWOT analysis, trend analyses, and financial modeling adjustments.</li>
+            <li>Quantify the impact of identified hidden liabilities and working capital pegs.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: CONTENTS OF DUE DILIGENCE REPORT -->
+    <section id="sec-dd-report-contents">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📑 6. Contents of a Comprehensive Due Diligence Report</span>
+        </div>
+        <span class="section-tag">Deal Advisory Deliverable</span>
+      </div>
+
+      <p>
+        The final deliverable submitted to the acquiring client must be structured logically to facilitate informed decision-making:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%;">Section</th>
+              <th style="width: 75%;">Core Elements &amp; Information Presented</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Executive Summary</strong></td>
+              <td>
+                High-level synthesis of findings; key deal issues; critical <strong>deal breakers</strong>; purchase price adjustments; and recommended conditions precedent (CPs).
+              </td>
+            </tr>
+            <tr>
+              <td><strong>2. Company Background</strong></td>
+              <td>
+                Corporate history, shareholding pattern, organizational structure, subsidiaries, joint ventures, and management pedigree.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>3. Financial Analysis</strong></td>
+              <td>
+                Detailed analysis of historical revenue growth, gross margins, <strong>Normalised EBITDA</strong>, working capital seasonality, capital expenditure trends, and debt profile.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>4. Balance Sheet Deep Dive</strong></td>
+              <td>
+                Assessment of fixed asset condition, inventory realizability, debtor quality, unrecorded liabilities, and tax contingencies.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>5. Commercial &amp; Operational Review</strong></td>
+              <td>
+                Market standing, customer/supplier concentration, manufacturing capacity utilization, and key personnel retention.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>6. Risk Matrix &amp; Recommendations</strong></td>
+              <td>
+                Classification of risks (High/Medium/Low); recommended specific indemnities, escrow retention, and post-closing integration steps.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 7: INTERACTIVE TYU 1 (SWOT IN DD) -->
+    <section id="sec-tyu-1-swot">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🧠 7. Interactive Test Your Understanding 1 (SWOT Analysis in Due Diligence)</span>
+        </div>
+        <span class="section-tag">Credit Appraisal Case</span>
+      </div>
+
+      <div class="accordion-item open">
+        <div class="accordion-header">
+          <span>📝 TYU 1: CA Y Credit Due Diligence on Garment Manufacturing Borrower (BDFP Bank)</span>
+          <span class="accordion-icon">−</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Scenario:</strong></p>
+          <p>
+            CA Y is employed as Credit Manager at BDFP Bank, Noida. An existing garment manufacturing borrower applies for a fresh term loan of ₹ 5 Crore and enhanced working capital for expansion. While performing due diligence, CA Y observes:
+          </p>
+          <ul>
+            <li>The unit was formed 2 years ago, availed ₹ 10 Cr term loan and ₹ 5 Cr cash credit.</li>
+            <li>Sales grew from ₹ 25 Cr (Year 1) to ₹ 45 Cr (Year 2). Generating cash profits and timely servicing debt.</li>
+            <li>Borrower is expanding into export markets and actively pursuing foreign orders.</li>
+            <li><em>However</em>, Noida/Delhi has intense competition with numerous established garment units. The biggest export market (USA) is experiencing a demand slump.</li>
+            <li>The business is family-based, relying heavily on the personal marketing skills of the main promoter, with a lack of well-paid qualified staff to deal with domestic and international buyers.</li>
+          </ul>
+          <p>
+            <em>CA Y starts jotting down and elaborating these points. Identify what CA Y is doing as part of the due diligence exercise.</em>
+          </p>
+          <div class="callout callout-green" style="margin-top: 14px;">
+            <div class="callout-title">✅ ICAI Official Solution &amp; Analytical Framework</div>
+            <p>
+              CA Y is conducting a <strong class="k-blue">SWOT Analysis (Strengths, Weaknesses, Opportunities, and Threats)</strong> of the borrower as part of the comprehensive Credit Due Diligence review:
+            </p>
+            <ol>
+              <li><strong>Strengths (Internal Positives):</strong> Consistent sales growth (from ₹ 25 Cr to ₹ 45 Cr), generation of positive cash profits, and an unblemished record of timely debt servicing.</li>
+              <li><strong>Weaknesses (Internal Vulnerabilities):</strong> Over-dependence on a single promoter, family-run management culture, and lack of well-paid, technically qualified staff to handle foreign corporate buyers.</li>
+              <li><strong>Opportunities (External Potential):</strong> Venturing into high-margin export markets and expanding garment manufacturing capacity to capture global supply chains.</li>
+              <li><strong>Threats (External Risks):</strong> Intense regional competition in the Noida/Delhi cluster and macroeconomic demand slump in the primary export market (USA).</li>
+            </ol>
+            <p>
+              <strong>Conclusion:</strong> Conducting a SWOT analysis enables the lending bank to look beyond historical balance sheet ratios, evaluating commercial viability and risk-mitigation covenants prior to sanctioning credit!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION 8: INVESTIGATION INTRO & SCOPE -->
+    <section id="sec-investigation-intro">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🔎 8. Investigation: Meaning, Nature &amp; Scope</span>
+        </div>
+        <span class="section-tag">Critical Special Examination</span>
+      </div>
+
+      <p>
+        An <strong class="k-blue">Investigation</strong> is a critical, in-depth, and systematic examination of the books of account, transactions, operational records, and underlying evidence of an enterprise undertaken for a <strong class="k-purple">specific, predetermined purpose</strong>.
+      </p>
+
+      <div class="callout callout-blue">
+        <div class="callout-title">💡 Core Essence of Investigation</div>
+        <p>
+          Unlike a general audit which expresses an opinion on overall financial statements, an investigation is initiated when a specific fact, suspicion, allegation, or commercial objective requires thorough evidentiary probing. It seeks to uncover <em>the exact truth behind the books</em>, establishing whether a suspected event (such as an embezzlement, corporate fraud, tax evasion, or operational failure) actually transpired, who perpetrated it, the financial magnitude of the loss, and the systemic breakdown that permitted it.
+        </p>
+      </div>
+
+      <h3>Common Triggers &amp; Mandates for Investigation</h3>
+      <ul>
+        <li><strong>Suspected Fraud or Embezzlement:</strong> Investigating defalcation of cash, inventory pilferage, fictitious supplier invoices, or circular transactions.</li>
+        <li><strong>Acquisition of Business:</strong> Evaluating financial health and future earnings on behalf of a prospective buyer.</li>
+        <li><strong>Bank Lending &amp; Credit Appraisal:</strong> Investigating borrowal accounts, end-use of funds, and techno-economic viability.</li>
+        <li><strong>Admission of Incoming Partner:</strong> Reviewing firm accounts, asset valuation, and hidden liabilities on behalf of a new partner.</li>
+        <li><strong>Statutory Investigation:</strong> Investigations ordered by the Central Government, National Company Law Tribunal (NCLT), or Serious Fraud Investigation Office (SFIO) under Sections 210, 212, or 213 of the Companies Act, 2013.</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 9: AUDIT VS INVESTIGATION -->
+    <section id="sec-audit-vs-investigation">
+      <div class="section-header">
+        <div class="section-title">
+          <span>⚖️ 9. Comprehensive Comparison: Audit vs. Investigation</span>
+        </div>
+        <span class="section-tag">8-Parameter Comparative Matrix</span>
+      </div>
+
+      <p>
+        The distinction between audit and investigation is a foundational concept in advanced auditing:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 15%;">Parameter</th>
+              <th style="width: 42%;">Statutory Audit</th>
+              <th style="width: 43%;">Investigation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Objective</strong></td>
+              <td>
+                To express an opinion on whether the financial statements present a <strong>True and Fair view</strong> of the financial position and performance.
+              </td>
+              <td>
+                To establish a <strong>specific fact, verify a suspicion, or investigate an allegation</strong> (e.g., fraud, profit manipulation, valuation).
+              </td>
+            </tr>
+            <tr>
+              <td><strong>2. Scope</strong></td>
+              <td>
+                Broad and comprehensive; governed by statute and Standards on Auditing (SAs).
+              </td>
+              <td>
+                Specific, targeted, and deep-dive; defined by the <strong>terms of reference</strong> agreed with the appointing authority.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>3. Auditor's Mindset</strong></td>
+              <td>
+                <strong>Professional Skepticism:</strong> The auditor does not assume dishonesty nor assumes complete honesty (<em>"watchdog, not a bloodhound"</em>).
+              </td>
+              <td>
+                <strong>Investigative Suspicion / Inquisitorial:</strong> The investigator proceeds with a persistent assumption that something is concealed or amiss until proven otherwise.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>4. Periodicity</strong></td>
+              <td>
+                Periodic and routine (normally conducted annually or half-yearly).
+              </td>
+              <td>
+                Non-routine; conducted <strong>as and when required</strong> on special request or trigger.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>5. Evidence Nature</strong></td>
+              <td>
+                Relies on evidence that is <strong>persuasive</strong> rather than conclusive.
+              </td>
+              <td>
+                Requires evidence that is <strong>conclusive, robust, and legally admissible</strong> in a court of law or tribunal.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>6. Testing Extent</strong></td>
+              <td>
+                Extensive use of <strong>test checking, selective sampling</strong>, and materiality thresholds.
+              </td>
+              <td>
+                <strong>100% in-depth checking</strong> of the targeted transaction stream; sampling is generally avoided in the suspect area.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>7. Appointment Authority</strong></td>
+              <td>
+                Appointed by the <strong>shareholders/members</strong> in AGM (or C&amp;AG for Government entities).
+              </td>
+              <td>
+                Appointed by <strong>management, board of directors, lending banks, incoming buyers, courts, or regulators</strong> (SFIO).
+              </td>
+            </tr>
+            <tr>
+              <td><strong>8. Reporting Format</strong></td>
+              <td>
+                Standardized statutory format prescribed by SAs and Companies Act (clean, qualified, adverse, or disclaimer).
+              </td>
+              <td>
+                Detailed narrative report containing background, methodology, analysis of evidence, quantified findings, and recommendations.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 10: 5-STEP INVESTIGATION PROCESS -->
+    <section id="sec-investigation-steps">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📋 10. The 5-Step Investigation Process</span>
+        </div>
+        <span class="section-tag">Systematic Execution Blueprint</span>
+      </div>
+
+      <p>
+        An investigator must execute the assignment in a methodical, logically structured sequence:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 20%;">Step</th>
+              <th style="width: 40%;">Core Investigative Procedures</th>
+              <th style="width: 40%;">Key Evidentiary Considerations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Step 1: Terms &amp; Scope Determination</strong></td>
+              <td>
+                &bull; Obtain clear written instructions from the appointing authority.<br>
+                &bull; Explicitly define the period covered, target transactions, departments, and specific allegations.<br>
+                &bull; Secure unfettered access to all books, vouchers, emails, and personnel.
+              </td>
+              <td>
+                A vague terms of reference leads to scope creep or legal disputes. Clarify boundaries upfront in writing.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Step 2: Investigation Programme</strong></td>
+              <td>
+                &bull; Formulate a bespoke, flexible investigation programme.<br>
+                &bull; Identify key suspect areas, transaction loops, and potential perpetrators.<br>
+                &bull; Plan digital data extraction, physical inventory counts, and external third-party confirmations.
+              </td>
+              <td>
+                The programme must remain adaptable; findings in one area often open unexpected new avenues of inquiry.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Step 3: Evidence Gathering</strong></td>
+              <td>
+                &bull; Physical inspection of assets and premises.<br>
+                &bull; Forensic extraction of digital records, emails, and database change logs.<br>
+                &bull; Detailed examination of original vouchers, contracts, and banking trails.<br>
+                &bull; Formal interviews and recorded statements of witnesses and suspects.
+              </td>
+              <td>
+                Maintain strict <strong>Chain of Custody</strong> for all original documents and digital media to ensure courtroom admissibility.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Step 4: Evidence Analysis &amp; Corroboration</strong></td>
+              <td>
+                &bull; Cross-verify oral admissions against documentary records.<br>
+                &bull; Reconcile inter-entity balances, third-party invoices, and bank statements.<br>
+                &bull; Reconstruct unrecorded or altered transactions.<br>
+                &bull; Quantify the total financial loss and pinpoint control failures.
+              </td>
+              <td>
+                Never rely on uncorroborated oral statements. Every conclusion must be supported by verifiable documentation.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Step 5: Preparation of Report</strong></td>
+              <td>
+                &bull; Draft a clear, objective, and logically sequenced report.<br>
+                &bull; State terms of reference, methodology, factual findings, evidence, and conclusions.<br>
+                &bull; Provide concrete recommendations to remediate systemic loopholes.
+              </td>
+              <td>
+                Avoid emotional language or premature legal guilt conclusions; present substantiated facts objectively.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 11: SPECIAL ISSUES IN INVESTIGATIONS -->
+    <section id="sec-special-issues-investigation">
+      <div class="section-header">
+        <div class="section-title">
+          <span>⚠️ 11. Special Issues in Investigations</span>
+        </div>
+        <span class="section-tag">Legal &amp; Professional Pitfalls</span>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Confidentiality &amp; Legal Privilege</div>
+          <p>
+            &bull; <strong>Strict Secrecy:</strong> Leaking investigation details can alert perpetrators to destroy records, destroy market reputation, or invite defamation suits.<br>
+            &bull; <strong>Privilege:</strong> In India, communications between an investigator and the client are generally <em>not privileged</em> unless conducted under legal counsel supervision for pending litigation under the Indian Evidence Act.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Liability for Libel &amp; Slander</div>
+          <p>
+            &bull; If an investigator falsely accuses an employee of theft or fraud without conclusive proof, the investigator may face severe civil action for <strong>defamation (libel if written, slander if spoken)</strong>.<br>
+            &bull; <em>Defense:</em> Qualified privilege applies only if statements are made in good faith, without malice, and strictly restricted to persons having a legitimate interest.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 12: INVESTIGATION FOR INCOMING PURCHASER -->
+    <section id="sec-business-investigation-purchaser">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🏭 12. Business Investigation on Behalf of an Incoming Purchaser</span>
+        </div>
+        <span class="section-tag">M&amp;A Valuation Focus</span>
+      </div>
+
+      <p>
+        When a client proposes to buy an existing business (proprietary concern, partnership, or limited company), the investigating accountant must collect comprehensive data to help the purchaser decide: <strong class="k-blue">(1) whether to buy the business</strong>; and <strong class="k-blue">(2) at what purchase consideration</strong>.
+      </p>
+
+      <h3>Additional Matters Demanding Special Scrutiny</h3>
+      <div class="grid-2">
+        <div class="card" style="border-top: 4px solid var(--accent-blue);">
+          <div class="card-title">(A) Proprietary Concerns &amp; Partnerships</div>
+          <ul>
+            <li><strong>Reasons for Sale:</strong> Genuine retirement vs. declining industry, impending cancellation of licenses, or emergence of lethal competition.</li>
+            <li><strong>Effect of Vendor's Retirement:</strong> If profits depended on the personal reputation, technical prowess, or personal relationships of the vendor, profits will drop drastically post-sale.</li>
+            <li><strong>Premises Lease Tenure:</strong> Length of unexpired lease, renewal clauses, and rent escalation terms.</li>
+            <li><strong>Patents &amp; IP Expiry:</strong> Remaining economic life of proprietary formulations, patents, and trademarks.</li>
+            <li><strong>Employee Liabilities:</strong> Age profile of staff and unfunded gratuity/retrenchment liabilities under labor laws.</li>
+            <li><strong>Customer Concentration:</strong> Risk of substantial sales tied to a handful of customers who may exit.</li>
+            <li><strong>Valuation of Goodwill:</strong> Whether goodwill on books is overvalued or if unrecorded brand equity exists.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="border-top: 4px solid var(--primary-green);">
+          <div class="card-title">(B) Acquisition of a Limited Company</div>
+          <ul>
+            <li><strong>Share Capital &amp; Voting Rights:</strong> Review authorized/issued capital, classes of shares, voting restrictions, and convertible instruments.</li>
+            <li><strong>Share Transfer Restrictions:</strong> Scrutinize Articles of Association (AOA) for pre-emption rights or board transfer approval powers.</li>
+            <li><strong>Past Dividend Track Record:</strong> Stability and yield of dividends over past 5 years.</li>
+            <li><strong>Undisclosed Contingent Liabilities:</strong> Tax disputes, pending lawsuits, and corporate guarantees issued to lenders on behalf of group companies.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Evaluating Balance Sheet Assets: The Fixed Assets Trap</h3>
+      <div class="callout callout-amber">
+        <div class="callout-title">⚠️ Fixed Assets Evaluation Checklist in Business Acquisitions</div>
+        <ol style="margin-left: 20px;">
+          <li>Verify whether assets are owned free from all encumbrances or pledged as security for bank loans.</li>
+          <li>Check whether plant and machinery are in working condition, technologically obsolete, or standing idle.</li>
+          <li>Scrutinize depreciation policies to ensure assets are not carried above their recoverable market value.</li>
+          <li>Obtain independent engineering valuation certificates for specialized capital equipment.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SECTION 13: INTERACTIVE TYU 2 (GHOST WORKERS ETP) -->
+    <section id="sec-tyu-2-ghost-workers">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🧠 13. Interactive Test Your Understanding 2 (Ghost Workers in ETP Maintenance)</span>
+        </div>
+        <span class="section-tag">Payroll Fraud Investigation</span>
+      </div>
+
+      <div class="accordion-item open">
+        <div class="accordion-header">
+          <span>📝 TYU 2: Growing Manpower Expenditure in Effluent Treatment Plant (ETP) Area</span>
+          <span class="accordion-icon">−</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Scenario:</strong></p>
+          <p>
+            A company installed an Effluent Treatment Plant (ETP) to comply with state pollution control laws. The organizational structure is decentralized, granting department heads considerable leeway to hire workers to meet emerging operational needs. Recently, top management observed alarming growth in manpower expenditures in the section maintaining and beautifying the grounds around the ETP. Employees punch timecards to record attendance.
+          </p>
+          <p>
+            <em>Suggest audit/investigative procedures you would perform as an investigator to uncover the facts.</em>
+          </p>
+          <div class="callout callout-green" style="margin-top: 14px;">
+            <div class="callout-title">✅ ICAI Official Solution &amp; Investigative Strategy</div>
+            <p>
+              The scenario exhibits classic red flags of <strong class="k-red">Payroll Fraud involving "Ghost" or "Dummy" Workers</strong>:
+            </p>
+            <ol>
+              <li><strong>Unannounced Surprise Site Inspection:</strong> Conduct an unannounced physical count of all workers physically present at the ETP site during working hours. Compare the physical headcount with the number of timecards punched for that exact shift. A discrepancy immediately reveals timecards punched for non-existent or absent workers ("buddy punching").</li>
+              <li><strong>Detailed Timecard &amp; Access Log Analytics:</strong> Analyze in-and-out timestamps for suspicious clustering (e.g., several cards punched within seconds of each other by the same supervisor). Cross-verify punch times against CCTV footage at the security gate.</li>
+              <li><strong>Physical Identification &amp; Master Record Reconciliation:</strong> Supervise a live wage payout or physical biometric re-enrollment requiring government photo IDs (Aadhaar/PAN). Compare wage register names against HR master files and bank account details (identifying duplicate bank accounts receiving multiple salaries).</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION 14: TYPES OF INVESTIGATION & FRAUD MODUS -->
+    <section id="sec-types-of-investigation">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🚨 14. Types of Investigations &amp; Fraud Modus Operandi</span>
+        </div>
+        <span class="section-tag">Fraud Typology &amp; Verification</span>
+      </div>
+
+      <p>
+        Frauds investigated in commercial organizations fall broadly into three operational categories:
+      </p>
+
+      <div class="grid-3">
+        <div class="card" style="border-top: 4px solid var(--accent-red);">
+          <div class="card-title">1. Fraud for Personal Gains</div>
+          <p>
+            Perpetrated by employees or managers to siphon cash, divert assets, or pocket kickbacks:
+          </p>
+          <ul style="font-size: 15px; margin-left: 16px;">
+            <li><strong>Embezzlement of Cash Receipts:</strong> Unrecorded cash sales, suppression of receipts, teaming and lading (lapping).</li>
+            <li><strong>Defalcation of Cash Payments:</strong> Fictitious expense vouchers, forged receipts, inflated petty cash claims.</li>
+            <li><strong>Supplier Ledger Frauds:</strong> Duplicate vendor invoices, bogus suppliers, unauthorized debit notes.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="border-top: 4px solid var(--accent-amber);">
+          <div class="card-title">2. Corporate Frauds / Window Dressing</div>
+          <p>
+            Perpetrated by top management to mislead shareholders, lenders, or market analysts:
+          </p>
+          <ul style="font-size: 15px; margin-left: 16px;">
+            <li><strong>Revenue Overstatement:</strong> Booking fictitious sales, bill-and-hold transactions, premature revenue recognition.</li>
+            <li><strong>Expense Understatement:</strong> Capitalizing revenue expenses, omitting accruals, under-providing depreciation/bad debts.</li>
+            <li><strong>Related Party Siphoning:</strong> Diverting loan funds to shell entities disguised as trade advances.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="border-top: 4px solid var(--accent-purple);">
+          <div class="card-title">3. Operational Employee Frauds</div>
+          <p>
+            Committed at store, warehouse, or plant floor levels:
+          </p>
+          <ul style="font-size: 15px; margin-left: 16px;">
+            <li><strong>Inventory Thefts:</strong> Siphoning raw materials, staging fake transit losses, stealing scrap without weighing.</li>
+            <li><strong>Collusion with Transporters:</strong> Short-delivery of fuel/chemicals, tampering with weighbridge software.</li>
+            <li><strong>Kickbacks in Procurement:</strong> Bribes from vendors in exchange for approving substandard quality supplies.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Detailed Verification Checklist: Cash Receipts Embezzlement</h3>
+      <div class="callout callout-red">
+        <div class="callout-title">💰 Verification Procedures for Suspected Cash Receipts Fraud</div>
+        <ol style="margin-left: 20px;">
+          <li>Examine carbon copies or digital logs of receipt books; check for missing serial numbers or cancelled receipt vouchers.</li>
+          <li>Scrutinize the delay between receipt date and banking date; test for <strong>Teeming and Lading</strong> (using current collections to cover prior stolen cash).</li>
+          <li>Send direct balance confirmation requests to customers whose accounts show unusual write-offs, credit notes, or heavy cash discounts.</li>
+          <li>Reconcile counterfoil bank paying-in slips with rough cash books and bank statements.</li>
+          <li>Scrutinize cash sale memos against physical security gate exit passes and daily delivery logs.</li>
+        </ol>
+      </div>
+
+      <h3>Detailed Verification Checklist: Supplier's Ledger Embezzlement</h3>
+      <div class="callout callout-amber">
+        <div class="callout-title">📦 Verification Procedures for Supplier's Ledger Fraud</div>
+        <ol style="margin-left: 20px;">
+          <li>Review the <strong>3-Way Matching</strong> control (Purchase Order, Goods Receipt Note, and Invoice); check for invoices processed without GRNs.</li>
+          <li>Search for <strong>Ghost Vendors</strong>: vendors with missing tax registrations (GSTIN/PAN), residential addresses, or bank accounts sharing employee IFSC/account numbers.</li>
+          <li>Investigate duplicate invoice payments: identical invoice numbers, amounts, or dates processed to different vendor codes.</li>
+          <li>Scrutinize credit balances in supplier accounts that were written back to P&amp;L as unpayable.</li>
+          <li>Examine credit notes received from suppliers to verify that refunds or rate rebates were not diverted into personal employee accounts.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SECTION 15: INVESTIGATION FOR BANKS & PARTNERS -->
+    <section id="sec-investigation-bank-partner">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🏦 15. Investigation on Behalf of Lending Banks &amp; Incoming Partners</span>
+        </div>
+        <span class="section-tag">Credit &amp; Partnership Risk</span>
+      </div>
+
+      <div class="grid-2">
+        <div class="card" style="border-top: 4px solid var(--primary-blue);">
+          <div class="card-title">1. Investigation on Behalf of a Lending Bank</div>
+          <p>
+            When a bank considers sanctioning large term loans or working capital limits, the investigator examines:
+          </p>
+          <ul>
+            <li><strong>Promoter Background &amp; Integrity:</strong> Credit history (CIBIL score), track record in group entities, and absence from RBI Wilful Defaulter lists.</li>
+            <li><strong>Techno-Economic Viability:</strong> Technical feasibility of the project, environmental clearances, and availability of water/power/raw materials.</li>
+            <li><strong>Collateral Security Valuation:</strong> Independent physical valuation of primary security (hypothecated stocks/book debts) and collateral real estate.</li>
+            <li><strong>Debt-Servicing Capacity (DSCR):</strong> Realistic cash flow generation to ensure interest and principal installments can be serviced comfortably.</li>
+            <li><strong>End-Use Verification:</strong> Controls preventing diversion of funds to sister concerns or capital market speculation.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="border-top: 4px solid var(--primary-green);">
+          <div class="card-title">2. Investigation on Behalf of an Incoming Partner</div>
+          <p>
+            A person proposing to join a partnership firm as a new partner must investigate:
+          </p>
+          <ul>
+            <li><strong>Partnership Deed Provisions:</strong> Profit-sharing ratios, capital contribution terms, interest on capital, drawings rules, and retirement terms.</li>
+            <li><strong>True Earning Capacity:</strong> Scrutinizing past profit trends, eliminating extraordinary non-recurring gains, and adjusting for partners' unrecorded salaries.</li>
+            <li><strong>Valuation of Assets &amp; Liabilities:</strong> Revaluing plant, inventory, and book debts; searching for undisclosed debts, tax assessments, and guarantees.</li>
+            <li><strong>Valuation of Goodwill:</strong> Determining whether goodwill recorded is realistic and computing the incoming partner's premium contribution.</li>
+            <li><strong>Pending Legal Claims:</strong> Lawsuits against the firm or existing partners that could attach partnership assets.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 16: FORENSIC ACCOUNTING INTRO -->
+    <section id="sec-forensic-accounting-intro">
+      <div class="section-header">
+        <div class="section-title">
+          <span>⚖️ 16. Forensic Accounting &amp; The Investigative Mindset</span>
+        </div>
+        <span class="section-tag">Intersection of Law &amp; Accounting</span>
+      </div>
+
+      <p>
+        <strong class="k-blue">Forensic Accounting</strong> is the specialized integration of accounting, auditing, investigative techniques, data analytics, and law to resolve complex financial issues, investigate frauds, and provide expert evidence suitable for courtroom adjudication.
+      </p>
+
+      <div class="callout callout-blue">
+        <div class="callout-title">💡 The Forensic Mindset: Thinking Like a Fraudster</div>
+        <p>
+          The term <em>"Forensic"</em> means "suitable for use in a court of law". While a traditional auditor evaluates whether financial statements comply with accounting standards, a <strong class="k-purple">Forensic Accountant</strong> adopts an adversarial, investigative mindset. He looks behind the facade of legitimate entries, reconstructs concealed transaction trails, analyzes electronic metadata, interviews suspects, and builds an evidentiary chain strong enough to withstand intense hostile cross-examination in criminal or civil court!
+        </p>
+      </div>
+
+      <h3>Core Applications of Forensic Accounting</h3>
+      <ul>
+        <li><strong>Criminal Fraud Investigations:</strong> Bribery, corruption, money laundering, bank loan diversion, and tax fraud.</li>
+        <li><strong>Litigation Support &amp; Expert Witness:</strong> Serving as an independent expert witness in courts to quantify shareholder dispute damages, patent infringement losses, or insurance claims.</li>
+        <li><strong>Cyber Forensics &amp; Digital Evidence:</strong> Recovering deleted emails, analyzing database audit trails, and tracking cryptocurrency movements.</li>
+        <li><strong>Regulatory Inquiries:</strong> Inquiries conducted under SEBI, SFIO, Enforcement Directorate (ED), and Central Vigilance Commission (CVC).</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 17: STATUTORY AUDIT VS FORENSIC -->
+    <section id="sec-audit-vs-forensic">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📊 17. Comprehensive Matrix: Statutory Audit vs. Forensic Accounting</span>
+        </div>
+        <span class="section-tag">Essential Exam Comparison</span>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 18%;">Dimension</th>
+              <th style="width: 41%;">Statutory Audit</th>
+              <th style="width: 41%;">Forensic Accounting Engagement</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Core Objective</strong></td>
+              <td>
+                Express an opinion on the <strong>True &amp; Fair presentation</strong> of financial statements under GAAP.
+              </td>
+              <td>
+                Determine <strong>whether fraud has actually occurred</strong>, how it was executed, who perpetrated it, and total financial loss.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>2. Techniques Used</strong></td>
+              <td>
+                Substantive and compliance testing; statistical sampling; analytical reviews.
+              </td>
+              <td>
+                <strong>Substantive 100% checking</strong>; forensic data analytics; digital cloning; document handwriting verification; investigative interviews.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>3. Period Covered</strong></td>
+              <td>
+                Confined to a <strong>single financial year</strong> or accounting cycle.
+              </td>
+              <td>
+                <strong>No statutory limitation</strong>; covers multiple years spanning the entire lifecycle of the suspected fraudulent activity.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>4. Off-Balance Sheet Items</strong></td>
+              <td>
+                Reviewed to check disclosure compliance with accounting standards.
+              </td>
+              <td>
+                Deeply scrutinized to uncover <strong>concealed transactions, shell company fund flows, and hidden beneficial ownership</strong>.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>5. Governing Framework</strong></td>
+              <td>
+                Standards on Auditing (SAs) issued by ICAI.
+              </td>
+              <td>
+                <strong>Forensic Accounting and Investigation Standards (FAIS)</strong> issued by ICAI.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>6. Reporting Consequence</strong></td>
+              <td>
+                Audit Report (unmodified/qualified/adverse) shared with shareholders.
+              </td>
+              <td>
+                <strong>Forensic Accounting Investigation Report (FAIR)</strong> used for police FIRs, civil recovery suits, or criminal court prosecution.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 18: 5-STEP FORENSIC PROCESS & FAIR -->
+    <section id="sec-forensic-process-5steps">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🔄 18. The 5-Step Process of Forensic Accounting &amp; FAIR Structure</span>
+        </div>
+        <span class="section-tag">FAIS Standardized Workflow</span>
+      </div>
+
+      <p>
+        Under the <strong class="k-blue">Forensic Accounting and Investigation Standards (FAIS)</strong>, every forensic assignment follows a rigorous 5-stage lifecycle:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 20%;">Process Step</th>
+              <th style="width: 40%;">Core Operational Activities</th>
+              <th style="width: 40%;">Key FAIS Standards</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Step 1: Initialization</strong></td>
+              <td>
+                Receive mandate, understand allegations, assess independence, avoid conflicts of interest, issue formal Engagement Letter with primary stakeholders.
+              </td>
+              <td>
+                <strong>FAIS 110:</strong> Engagement Mandate<br>
+                <strong>FAIS 120:</strong> Independence &amp; Objectivity
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Step 2: Planning</strong></td>
+              <td>
+                Formulate investigative hypothesis, define scope, allocate multidisciplinary specialists (IT forensics, legal), establish timeline and budget.
+              </td>
+              <td>
+                <strong>FAIS 210:</strong> Planning the Assignment<br>
+                <strong>FAIS 220:</strong> Risk Assessment
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Step 3: Obtaining Evidence</strong></td>
+              <td>
+                Collect electronic and physical evidence, secure digital forensic images (bit-stream disk cloning), maintain unbroken Chain of Custody, conduct structured witness interviews.
+              </td>
+              <td>
+                <strong>FAIS 310:</strong> Evidence Gathering<br>
+                <strong>FAIS 320:</strong> Digital Evidence<br>
+                <strong>FAIS 330:</strong> Interviews
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Step 4: Evaluation &amp; Analysis</strong></td>
+              <td>
+                Perform data analytics, pattern matching, Benford's Law testing, bank statement circular tracing, reconcile claims, quantify financial loss.
+              </td>
+              <td>
+                <strong>FAIS 340:</strong> Forensic Data Analytics<br>
+                <strong>FAIS 350:</strong> Loss Quantification
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Step 5: Reporting (FAIR)</strong></td>
+              <td>
+                Draft and issue the formal <strong>Forensic Accounting Investigation Report (FAIR)</strong> addressed to primary stakeholders.
+              </td>
+              <td>
+                <strong>FAIS 360:</strong> Reporting<br>
+                <strong>FAIS 370:</strong> Document Retention
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Key Contents of a Forensic Accounting Investigation Report (FAIR)</h3>
+      <div class="callout callout-purple">
+        <div class="callout-title">📑 Mandatory FAIR Reporting Structure (FAIS 360)</div>
+        <ol style="margin-left: 20px;">
+          <li><strong>Title &amp; Addressee:</strong> Addressed to the Primary Stakeholders (Audit Committee / Board / Appointing Authority).</li>
+          <li><strong>Executive Summary:</strong> Factual synthesis of allegations, methodologies applied, confirmed findings, and quantified loss.</li>
+          <li><strong>Scope &amp; Mandate:</strong> Specific terms of reference, time period examined, and access limitations encountered.</li>
+          <li><strong>Methodology &amp; Evidence Examined:</strong> Detailed account of data extracted, forensic tools deployed, interviews conducted, and documents scrutinized.</li>
+          <li><strong>Detailed Findings &amp; Modus Operandi:</strong> Step-by-step description of how the fraud was executed, loopholes exploited, and documentary proofs.</li>
+          <li><strong>Quantification of Loss &amp; Identification of Perpetrators:</strong> Exact monetary loss calculated and names of individuals/entities implicated.</li>
+          <li><strong>Remediation Recommendations:</strong> Internal control enhancements, policy revisions, and fraud deterrence mechanisms.</li>
+          <li><strong>Evidentiary Annexures:</strong> Chain of custody forms, digital logs, interview transcripts, and relevant bank/voucher extracts.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SECTION 19: FAIS FRAMEWORK (ICAI) -->
+    <section id="sec-fais-framework">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📚 19. Overview of Forensic Accounting &amp; Investigation Standards (FAIS)</span>
+        </div>
+        <span class="section-tag">ICAI Professional Benchmark</span>
+      </div>
+
+      <p>
+        ICAI is the <strong class="k-green">first accounting body in the world</strong> to formulate a dedicated, comprehensive set of standards for forensic accounting: the <strong class="k-blue">Forensic Accounting and Investigation Standards (FAIS)</strong>:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 22%;">FAIS Series</th>
+              <th style="width: 38%;">Domain Covered</th>
+              <th style="width: 40%;">Core Professional Standards</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>100 Series</strong></td>
+              <td><strong>Engagement Standards</strong></td>
+              <td>Mandate, Independence, Objectivity, Conflict of Interest, Professional Skepticism.</td>
+            </tr>
+            <tr>
+              <td><strong>200 Series</strong></td>
+              <td><strong>Planning Standards</strong></td>
+              <td>Assignment Planning, Fraud Risk Assessment, Defining Scope, Team Competence.</td>
+            </tr>
+            <tr>
+              <td><strong>300 Series</strong></td>
+              <td><strong>Execution Standards</strong></td>
+              <td>Evidence Collection, Chain of Custody, Digital Forensics, Interviews, Forensic Data Analytics, Loss Quantification, Reporting.</td>
+            </tr>
+            <tr>
+              <td><strong>400 Series</strong></td>
+              <td><strong>Specialized Areas</strong></td>
+              <td>Loans Diversion, Prevention of Money Laundering (PMLA), Asset Tracing.</td>
+            </tr>
+            <tr>
+              <td><strong>500 Series</strong></td>
+              <td><strong>Litigation &amp; Expert Witness</strong></td>
+              <td>Courtroom Testimony, Admissibility of Evidence, Expert Witness Standards.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 20: INTERACTIVE TYU 3 (PLI CLAIMS FORENSIC) -->
+    <section id="sec-tyu-3-pli-forensic">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🧠 20. Interactive Test Your Understanding 3 (Product Liability Insurance Forensic Review)</span>
+        </div>
+        <span class="section-tag">Insurance Claim Forensic Case</span>
+      </div>
+
+      <div class="accordion-item open">
+        <div class="accordion-header">
+          <span>📝 TYU 3: Forensic Professional Examining ₹ 5 Crore Product Liability Insurance (PLI) Claim</span>
+          <span class="accordion-icon">−</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Scenario:</strong></p>
+          <p>
+            X Limited manufactures floor coverings and holds a Product Liability Insurance (PLI) policy covering liabilities for bodily injury caused by its products. The policy contains a <strong class="k-purple">"Claims Series" clause</strong> (where multiple claims arising from one common design/manufacturing fault are deemed a single claim under the policy terms).
+          </p>
+          <p>
+            A 5-star hotel claimed ₹ 5 Crore damages from a vendor of X Ltd, alleging harmful chemicals in carpet dyes caused severe skin ailments to guests. The vendor passed the claim to X Ltd, which filed a claim under its PLI policy.
+          </p>
+          <p>
+            <em>As a Forensic Professional appointed by the insurance company, what special issues would you keep in mind?</em>
+          </p>
+          <div class="callout callout-green" style="margin-top: 14px;">
+            <div class="callout-title">✅ ICAI Official Solution &amp; Forensic Evidentiary Analysis</div>
+            <p>The Forensic Professional must evaluate five critical forensic challenges:</p>
+            <ol>
+              <li><strong>Reluctance of Third Parties to Provide Documents:</strong> Critical documents (hotel guest medical reports, chemical lab tests, purchase orders) belong to third parties (the hotel and vendor) who are not claiming directly from the insurer and may be hostile or reluctant to cooperate.</li>
+              <li><strong>Independence &amp; Integrity:</strong> The forensic professional must resist pressure from the insured company, which may attempt to settle claims informally to protect its commercial brand reputation.</li>
+              <li><strong>Quantification of Legal Liability under Policy Terms:</strong> Assessing whether the ₹ 5 Crore claim represents genuine, legally enforceable damages or an inflated, speculative settlement figure.</li>
+              <li><strong>Application of "Claims Series" Clause:</strong> Determining the exact date of the first loss event to verify whether it falls within the policy tenure and applying single-deductible limits.</li>
+              <li><strong>Chemical &amp; Technical Causation Verification:</strong> Independently verifying dye laboratory reports to confirm whether the floor coverings actually contained prohibited chemicals causing the alleged ailments.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION 21: TYK QUESTIONS 1 TO 15 -->
+    <section id="sec-tyk-q1-to-q15">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📝 21. Test Your Knowledge (TYK Questions 1 to 15)</span>
+        </div>
+        <span class="section-tag">Exam Case Studies &amp; Scenarios (Part I)</span>
+      </div>
+
+      <!-- TYK 1 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q1: Due Diligence on Sale of Proprietary Specialty Chemical Business (Sri Rajan / Ceta Ltd)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Sri Rajan is above 80 years old and wishes to sell his proprietary business of manufacturing specialty chemicals. Ceta Ltd. wants to buy the business and appoints you to carry out a due diligence audit to decide whether it would be worthwhile to acquire the business. What procedures would you adopt before rendering advice to Ceta Ltd.?</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>The professional should perform the following comprehensive due diligence procedures:</p>
+            <ol>
+              <li><strong>Impact of Proprietor's Retirement:</strong> Evaluate whether customer relationships, technical chemical formulations, and sales turnover were dependent on the personal goodwill and reputation of Sri Rajan.</li>
+              <li><strong>Financial Due Diligence:</strong> Scrutinize audited financials for the past 3&ndash;5 years; eliminate proprietor's personal expenses; calculate Normalised EBITDA.</li>
+              <li><strong>Environmental &amp; Safety Clearances:</strong> Verify compliance with State Pollution Control Board norms, hazardous chemical handling licenses, and effluent treatment capabilities (crucial for specialty chemicals!).</li>
+              <li><strong>Condition of Plant &amp; Machinery:</strong> Inspect chemical reactors, pipelines, and storage tanks for corrosion, age, and maintenance backlogs.</li>
+              <li><strong>Customer &amp; Supplier Concentration:</strong> Analyze if sales depend on a few key customers who may switch suppliers post-acquisition.</li>
+              <li><strong>Unrecorded Employee Liabilities:</strong> Calculate actuarial liabilities for gratuity and retrenchment compensation for long-serving aged staff.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 2 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q2: Contents of Due Diligence Report for US Client Acquiring Indian Gas Co</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> An American company manufacturing industrial gases is interested in acquiring a listed Indian company with > 65% market share in India. It requests you to conduct a Due Diligence and submit your Report. List out the contents of your Due Diligence Review Report.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>The Due Diligence Report submitted to the US client should contain:</p>
+            <ul>
+              <li><strong>Executive Summary:</strong> Overview of target, transaction rationale, key deal issues, and critical deal breakers.</li>
+              <li><strong>Company Background &amp; History:</strong> Corporate structure, shareholding pattern, promoters' background, and key management.</li>
+              <li><strong>Market Share &amp; Commercial Operations:</strong> Analysis of the 65% market dominance, customer contracts, long-term supply agreements, and antitrust/CCI regulatory risks.</li>
+              <li><strong>Financial Analysis &amp; Quality of Earnings:</strong> Normalised EBITDA, gross margins, sustainable working capital, and cash flow trends.</li>
+              <li><strong>Assets &amp; Infrastructure Review:</strong> Condition of gas storage terminals, cryogenic tankers, cylinder distribution networks, and gas pipeline leases.</li>
+              <li><strong>Statutory &amp; Environmental Compliance:</strong> Petroleum and Explosives Safety Organisation (PESO) approvals, factory licenses, and pollution permits.</li>
+              <li><strong>Tax &amp; Legal Contingencies:</strong> Pending tax litigations, customer disputes, and hidden liabilities.</li>
+              <li><strong>Valuation &amp; Negotiation Recommendations:</strong> Suggested purchase price adjustments, escrow holdbacks, and conditions precedent (CPs).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 3 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q3: Due Diligence on Overvalued Assets for Takeover of Term Loans (KDK Bank)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> KDK Bank Ltd. received an application from a pharmaceutical company for takeover of their outstanding term loans secured on its assets. KDK Bank requires you to make a due diligence audit with reference to asset valuation. State your areas of analysis to ensure assets are not stated at overvalued amounts.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>The auditor must analyze the following areas to detect overvalued assets:</p>
+            <ol>
+              <li><strong>Property, Plant &amp; Equipment (PPE):</strong> Check whether specialized pharma machinery is US-FDA compliant, technically obsolete, or unserviceable; ensure idle machines are tested for impairment.</li>
+              <li><strong>Inventories:</strong> Inspect formulation and bulk drug stocks for near-expiry dates, rejected batches, and temperature-controlled storage damages; verify NRV write-downs.</li>
+              <li><strong>Trade Receivables:</strong> Scrutinize overdue hospital/distributor receivables aged $> 180$ days; verify whether disputed billings or deductions are provided for.</li>
+              <li><strong>Intangibles &amp; R&amp;D Capitalization:</strong> Verify whether capitalized drug formulations and patents have active commercial demand or whether development projects failed trials.</li>
+              <li><strong>Investments &amp; Loans/Advances:</strong> Check whether loans to group entities are doubtful of recovery.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 4 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q4: "Due Diligence is Different from Audit" &ndash; Detailed Explanation</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> "Due diligence is different from audit" &ndash; Explain the difference between due diligence and audit.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>Due Diligence differs fundamentally from a Statutory Audit across core operational parameters:</p>
+            <ul>
+              <li><strong>Objective:</strong> Audit provides assurance on true and fair view of historical financial statements; Due diligence assesses overall commercial risks and future earnings viability for transaction decision-making.</li>
+              <li><strong>Scope:</strong> Audit is governed by Companies Act and SAs; Due diligence scope is customized to the client's strategic mandate.</li>
+              <li><strong>Focus:</strong> Audit looks backward at past accounting transactions; Due diligence looks forward at sustainable EBITDA and business continuity.</li>
+              <li><strong>Testing:</strong> Audit relies on sampling and materiality thresholds; Due diligence conducts deep-dive analysis of operational and commercial factors.</li>
+              <li><strong>Mandate:</strong> Audit is statutory; Due diligence is voluntary.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 5 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q5: Due Diligence on Cash Generating Abilities (PB Ltd / SV Ltd)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> PB Ltd. entered into a deal with SV Ltd. for buying its wooden products business. PB Ltd. appointed your firm to conduct due diligence to verify the cash generating abilities of SV Ltd. What points will you check to ensure the unit can meet its cash requirements internally?</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>To verify the cash-generating ability and liquidity sustainability, check:</p>
+            <ol>
+              <li><strong>Operating Cash Flows (CFO):</strong> Reconcile operating profit with cash generated from operations; verify that reported earnings convert reliably into real cash.</li>
+              <li><strong>Working Capital Cycle:</strong> Analyze inventory holding period (wood seasoning time), debtor collection days, and creditor payment cycles.</li>
+              <li><strong>Maintenance Capital Expenditure:</strong> Estimate annual capex required to replace worn-out timber-cutting and seasoning machinery.</li>
+              <li><strong>Debt Service Obligations:</strong> Check interest and loan repayment schedules to ensure debt coverage without external capital infusion.</li>
+              <li><strong>Seasonality of Cash Flows:</strong> Verify whether raw wood procurement requires seasonal cash concentration.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 6 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q6: Investigation on Behalf of Bank Sanctioning Term Loan for Seafood Processing</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> A nationalised bank received a loan application from an export company to expand an existing seafood processing plant. The General Manager approaches you to conduct a thorough investigation and submit a confidential report. List the points you will cover.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>The investigation on behalf of the lending bank must cover:</p>
+            <ul>
+              <li><strong>Promoters' Track Record:</strong> Technical competence, integrity, credit history (CIBIL), and performance of group entities.</li>
+              <li><strong>Techno-Economic Viability:</strong> Availability of catch (shrimp, fish), proximity to coastal landing centres, cold chain logistics, and blast freezer capacity.</li>
+              <li><strong>Regulatory &amp; Export Clearances:</strong> MPEDA registration, EU approval, US FDA compliance, and Hazard Analysis Critical Control Point (HACCP) certifications.</li>
+              <li><strong>Past Financial Performance:</strong> Operating margins, export incentives (RoDTEP) dependency, foreign currency hedging policies.</li>
+              <li><strong>Collateral Security Valuation:</strong> Title of processing plant land, market value of refrigerated infrastructure, and hypothecation of export book debts.</li>
+              <li><strong>Debt Service Coverage Ratio (DSCR):</strong> Realistic cash flow projections ensuring debt service under foreign market price fluctuations.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 7 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q7: Investigation on Behalf of Mr. Clean Buying Business of Mr. Perfect</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Mr. Clean proposes to buy the proprietary business of Mr. Perfect and engages you as investigating accountant. Specify the areas you will cover in your investigation.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>The investigating accountant should scrutinize:</p>
+            <ol>
+              <li><strong>Real Reason for Sale:</strong> Why is Mr. Perfect selling? Is the business facing imminent loss of key agency contracts, location redevelopment, or fierce competition?</li>
+              <li><strong>Reliance on Personal Goodwill:</strong> Did customer patronage depend on Mr. Perfect's personal relationships? Will sales drop on his exit?</li>
+              <li><strong>Lease &amp; Premises Tenure:</strong> Remaining tenure of the business premises lease and prospects of renewal without exorbitant rent hikes.</li>
+              <li><strong>True Earning Capacity:</strong> Recalculate past profits by removing unrecorded expenses, personal drawings, and non-recurring transactions.</li>
+              <li><strong>Unrecorded Liabilities:</strong> Pending tax assessments, employee gratuities, and unprovided vendor claims.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 8 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q8: Investigation into Embezzlement of Cash Receipts</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> In a company, it is suspected that there has been embezzlement in cash receipts. As an investigator, what are the areas that you would verify?</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>The investigator must verify:</p>
+            <ul>
+              <li><strong>Counterfoil Receipt Books:</strong> Check sequential numbering of receipt books, unused receipt books, and cancelled receipt counterfoils.</li>
+              <li><strong>Teeming and Lading (Lapping):</strong> Match the dates and amounts on receipt counterfoils with bank paying-in slips to detect delayed banking.</li>
+              <li><strong>Direct Confirmations:</strong> Obtain direct written balance confirmations from customers showing heavy write-offs, credit notes, or delayed remittances.</li>
+              <li><strong>Cash Sales Reconciliation:</strong> Reconcile cash sale memos with gate-keeper exit registers, delivery challans, and stock issue ledgers.</li>
+              <li><strong>Scrutiny of Write-Offs &amp; Discounts:</strong> Scrutinize authorizations for bad debt write-offs and unusual cash discounts granted near year-end.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 9 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q9: Assessing Future Maintainable Turnover (J Ltd Acquiring S Ltd)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> J Ltd. is interested in acquiring S Ltd. The valuation of S Ltd. depends on future maintainable sales. As the person entrusted to value S Ltd., what factors would you consider in assessing future maintainable turnover?</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>To assess Future Maintainable Turnover, evaluate:</p>
+            <ol>
+              <li><strong>Historical Sales Trend:</strong> Analyze product-wise, region-wise, and customer-wise sales volumes and prices over the past 3&ndash;5 years.</li>
+              <li><strong>Confirmed Order Book:</strong> Verify executed orders, pending purchase orders, long-term supply contracts, and cancellation rates.</li>
+              <li><strong>Production Capacity Constraints:</strong> Evaluate whether current plant capacity can support projected sales without major capital investments.</li>
+              <li><strong>Customer Concentration &amp; Churn:</strong> Assess whether turnover relies on a small cluster of clients and calculate historical customer retention rates.</li>
+              <li><strong>Industry &amp; Market Conditions:</strong> Factor in industry growth rates, substitute products, technological obsolescence, and competitor pricing pressures.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 10 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q10: Investigation into Embezzlement in Supplier's Ledger</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Management suspects embezzlement in the supplier's ledger of a Public Limited Company. What major areas would you verify as an investigator?</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>Verify the following major areas in the supplier's ledger:</p>
+            <ul>
+              <li><strong>3-Way Matching Integrity:</strong> Cross-check Purchase Orders, Goods Receipt Notes (GRNs), and Supplier Invoices; identify invoices passed without corresponding physical GRNs.</li>
+              <li><strong>Fictitious / Ghost Vendors:</strong> Search for vendors without valid tax registrations, physical factory addresses, or matching employee bank accounts.</li>
+              <li><strong>Duplicate Payments:</strong> Query ERP database for payments with identical invoice numbers, amounts, or dates processed under different vendor codes.</li>
+              <li><strong>Supplier Credit Balances:</strong> Scrutinize supplier balances written back to P&amp;L or transferred to suspense accounts.</li>
+              <li><strong>Verification of Credit Notes:</strong> Ensure volume discounts or rate rebates issued by vendors were not diverted into personal accounts.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 11 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q11: Difference Between Audit and Investigation (True &amp; Fair vs Special Exam)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> "General objective of an audit is to find out whether financial statements show true and fair view. On the other hand, investigation implies systematic, critical and special examination for a specific purpose." Brief out the differences.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>Summary of core distinctions:</p>
+            <ul>
+              <li><strong>Objective:</strong> Audit expresses True &amp; Fair opinion; Investigation establishes a specific fact or evaluates an allegation.</li>
+              <li><strong>Scope:</strong> Audit is statutory and broad; Investigation is customized to terms of reference.</li>
+              <li><strong>Attitude:</strong> Audit employs professional skepticism; Investigation adopts an in-depth inquisitorial / suspicious mindset.</li>
+              <li><strong>Evidence:</strong> Audit evidence is persuasive; Investigation evidence must be conclusive and legally defensible.</li>
+              <li><strong>Testing:</strong> Audit uses sample testing; Investigation uses 100% comprehensive testing of suspect records.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 12 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q12: Steps in the Forensic Accounting Process</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Enumerate the steps to be undertaken in case of a forensic accounting process under FAIS.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>The 5 sequential steps under FAIS are:</p>
+            <ol>
+              <li><strong>Step 1 &ndash; Initialization:</strong> Understand allegations, check independence/conflicts, and issue formal Engagement Letter with primary stakeholders (FAIS 110/120).</li>
+              <li><strong>Step 2 &ndash; Planning:</strong> Develop investigative hypothesis, define scope, allocate forensic specialists, and prepare timeline (FAIS 210/220).</li>
+              <li><strong>Step 3 &ndash; Obtaining Evidence:</strong> Gather electronic and physical evidence, digital bit-stream imaging, maintain Chain of Custody, and conduct interviews (FAIS 310/320/330).</li>
+              <li><strong>Step 4 &ndash; Evaluation &amp; Analysis:</strong> Forensic data analytics, circular transaction tracing, Benford's Law testing, and loss quantification (FAIS 340/350).</li>
+              <li><strong>Step 5 &ndash; Reporting:</strong> Issue formal Forensic Accounting Investigation Report (FAIR) with findings, loss calculation, and evidentiary annexures (FAIS 360).</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 13 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q13: Key Contents of Forensic Accounting &amp; Investigation Report (FAIR)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Briefly discuss the key content of a Forensic Accounting and Investigation Report.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>A FAIR prepared under FAIS 360 must incorporate:</p>
+            <ul>
+              <li><strong>Title &amp; Addressee:</strong> Addressed to Primary Stakeholders (Audit Committee / Board).</li>
+              <li><strong>Executive Summary:</strong> Factual synthesis of allegations, findings, and quantified financial loss.</li>
+              <li><strong>Scope &amp; Mandate:</strong> Specific terms of reference, time period, and limitations encountered.</li>
+              <li><strong>Methodology &amp; Evidence:</strong> Tools deployed, interviews conducted, and digital data processed.</li>
+              <li><strong>Detailed Findings &amp; Modus Operandi:</strong> Step-by-step account of fraud execution and control failures.</li>
+              <li><strong>Quantification of Loss &amp; Identification of Perpetrators:</strong> Specific monetary damage and individuals implicated.</li>
+              <li><strong>Remediation Recommendations:</strong> Control enhancements and policy updates.</li>
+              <li><strong>Evidentiary Annexures:</strong> Chain of custody forms, interview transcripts, and digital logs.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 14 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q14: Audit vs. Forensic Accounting for Suspicious Building Material Purchase (ABC Ltd)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> ABC Ltd. implemented a ₹ 20 Cr expansion. Suspicious transactions were noticed in purchasing building materials (₹ 10 Cr). Management is confused whether to get an Audit or Forensic Accounting done. Advise the management.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>Management should commission <strong class="k-blue">Forensic Accounting</strong> rather than a routine audit:</p>
+            <ol>
+              <li><strong>Limitation of Audit:</strong> Statutory audit checks whether purchases are supported by vouchers, authorized signatures, and recorded in compliance with accounting standards. Fraudulent purchases often have perfect-looking fake vouchers, which slip through routine sampling.</li>
+              <li><strong>Role of Forensic Accounting:</strong> A forensic accountant investigates <em>whether fraud has actually occurred</em> by verifying market price reasonableness of materials, inspecting physical construction sites, checking weighbridge logs, verifying transport vehicle registration numbers (to detect passenger cars billed as cement trucks!), and tracing fund flows to identify kickbacks.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 15 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q15: Evidentiary Standards in Suspected Fraud Investigation (CA Rajpal)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> CA Rajpal is performing a forensic accounting engagement involving gathering evidence in relation to suspected fraud of a substantial amount under a contractual agreement. Explain the evidentiary principles under FAIS.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>Under <strong class="k-blue">FAIS 310 &amp; FAIS 320</strong>, CA Rajpal must adhere to:</p>
+            <ul>
+              <li><strong>Relevance &amp; Reliability:</strong> Evidence must directly prove or disprove the fraudulent transaction.</li>
+              <li><strong>Strict Chain of Custody:</strong> Maintain a documented record of who collected, handled, transferred, analyzed, and secured each piece of physical and digital evidence.</li>
+              <li><strong>Digital Evidence Integrity:</strong> Create bit-stream forensic images of hard drives/servers using write-blocking devices; verify cryptographic hash values (SHA-256) to prove no data tampering.</li>
+              <li><strong>Courtroom Admissibility:</strong> Ensure electronic records comply with Section 65B of the Indian Evidence Act (now Section 63 of Bharatiya Sakshya Adhiniyam, 2023).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION 22: TYK QUESTIONS 16 TO 31 -->
+    <section id="sec-tyk-q16-to-q31">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📝 22. Test Your Knowledge (TYK Questions 16 to 31)</span>
+        </div>
+        <span class="section-tag">Exam Case Studies &amp; Scenarios (Part II)</span>
+      </div>
+
+      <!-- TYK 16 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q16: Procedures for Investigating Inventory Frauds</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Discuss the procedures for investigating inventory frauds (thefts, fake receipts, and book manipulation).</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>To investigate suspected inventory frauds, the investigator must:</p>
+            <ul>
+              <li><strong>Physical Stock Verification:</strong> Conduct unannounced surprise physical counts of high-value raw materials, finished goods, and scrap; compare physical balances with perpetual inventory records.</li>
+              <li><strong>Input-Output Ratio Analysis:</strong> Benchmark standard consumption ratios (yield percentage) against actual production data; unexplained drops in yield indicate material theft.</li>
+              <li><strong>Cut-off Testing:</strong> Scrutinize Goods Inward Notes (GINs) and Goods Outward Notes (GONs) around period-end to detect unrecorded dispatches or pre-dated receipts.</li>
+              <li><strong>Weighbridge &amp; Security Gate Reconciliations:</strong> Reconcile gate entry logs with GRNs; check for weighbridge slip tampering or empty vehicle re-weighing.</li>
+              <li><strong>Scrap &amp; Wastage Audit:</strong> Verify scrap generation against engineering norms; check authorization for scrap disposal and trace cash proceeds.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 17 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q17: Hidden Liabilities Checklist in Due Diligence</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> What are the hidden liabilities that a professional should look for during a financial due diligence review?</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>During due diligence, search for hidden liabilities in the following areas:</p>
+            <ol>
+              <li>Pending tax assessments and dispute notices under GST, Income Tax, and Customs.</li>
+              <li>Unfunded employee benefit obligations (gratuity, leave encashment, pension deficits).</li>
+              <li>Letters of comfort, corporate guarantees, and cross-collateralizations issued for group concerns.</li>
+              <li>Environmental clean-up, land remediation, and decommissioning liabilities.</li>
+              <li>Onerous contracts, take-or-pay purchase commitments, and liquidated damages claims.</li>
+              <li>Product warranty, liability, and product recall liabilities.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 18 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q18: Financial Due Diligence Key Focus Areas</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Briefly explain the key focus areas of a Financial Due Diligence review.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>Key focus areas in Financial Due Diligence comprise:</p>
+            <ul>
+              <li><strong>Quality of Earnings (EBITDA Normalization):</strong> Stripping out non-operating, non-recurring, and related-party items to establish sustainable operating profit.</li>
+              <li><strong>Working Capital Peg:</strong> Computing the normalized working capital required to operate the business smoothly post-acquisition.</li>
+              <li><strong>Net Debt &amp; Debt-Like Items:</strong> Identifying interest-bearing debt, unpaid tax dues, customer advances, and capital expenditure payables.</li>
+              <li><strong>Capital Expenditure Trends:</strong> Differentiating between maintenance capex (essential for survival) and growth capex.</li>
+              <li><strong>Realizability of Assets:</strong> Testing recoverability of debtors, inventory NRV, and fixed asset obsolescence.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 19 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q19: Investigation on Behalf of a Bank Proposing to Advance Loan</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Discuss the important aspects to be considered by an investigating accountant on behalf of a bank proposing to advance loan to a business.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>The investigating accountant should scrutinize:</p>
+            <ol>
+              <li><strong>Borrower &amp; Management Character:</strong> Integrity, reputation, past credit defaults, and promoter stake in business.</li>
+              <li><strong>Project Viability &amp; Cash Generation:</strong> Capacity utilization, market demand, pricing power, and Debt Service Coverage Ratio (DSCR).</li>
+              <li><strong>Adequacy of Security:</strong> Title deeds, hypothecation priority, encumbrances, and distress sale valuation of mortgaged assets.</li>
+              <li><strong>Financial Health:</strong> Current ratio, debt-equity ratio, working capital cycle, and contingency provisions.</li>
+              <li><strong>End-Use Controls:</strong> Mechanism to ensure loan funds are disbursed directly to machinery vendors rather than siphoned to promoters.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 20 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q20: Teeming and Lading / Misappropriation of Cash Collections</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Explain the concept of Teeming and Lading and the audit procedures to detect it.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>
+              <strong class="k-red">Teeming and Lading (Lapping)</strong> is a fraud technique where cash collected from one customer is misappropriated by the cashier, and the shortfall is covered by allocating cash received subsequently from a second customer, continuing the chain indefinitely.
+            </p>
+            <p><strong>Detection Procedures:</strong></p>
+            <ul>
+              <li>Compare the dates on carbon copies of receipt vouchers with the actual dates recorded in the cash book and bank deposit slips.</li>
+              <li>Check customer balance confirmations directly; examine complaints regarding overdue reminders sent to customers who claimed they already paid.</li>
+              <li>Scrutinize ledger entries where single receipts are split across multiple customer accounts or ledger dates.</li>
+              <li>Perform surprise cash counts of the cashier's drawer and compare with rough cash book.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 21 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q21: Forensic Investigation Report on Substandard Material Purchases (Navyam Ltd)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Navyam Ltd. (construction business for 20 years) discovered substandard building material sent to sites while payments released were on the higher side. The Forensic Accountant completed his investigation. What are the broad areas of information he should present in his report under FAIS?</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>The Forensic Accountant must structure the report under <strong class="k-blue">FAIS 360</strong> incorporating:</p>
+            <ol>
+              <li><strong>Executive Summary:</strong> Factual synthesis of the substandard material fraud, total financial loss, and primary culprits.</li>
+              <li><strong>Investigation Scope &amp; Period:</strong> Specific construction projects, procurement contracts, and years investigated.</li>
+              <li><strong>Methodology &amp; Evidence:</strong> Forensic review of POs, GRNs, lab quality test reports, site engineer logs, and digital communications.</li>
+              <li><strong>Modus Operandi &amp; Detailed Findings:</strong> How procurement officers colluded with vendors to supply substandard steel/cement, bypassed site quality testing, and authorized full invoice payments.</li>
+              <li><strong>Quantification of Damage:</strong> Difference between price paid for premium materials and fair value of substandard supplies, plus structural remediation costs.</li>
+              <li><strong>Perpetrators Identified:</strong> Names and roles of internal employees and external vendors involved.</li>
+              <li><strong>Remediation Recommendations:</strong> Implementing independent third-party lab testing, automated ERP 3-way matching, and vendor blacklisting.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 22 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q22: Manipulation of Accounts / Fictitious Sales / Window Dressing</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Discuss the techniques used by management for manipulation of accounts and how an investigator can detect window dressing.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>Management manipulates accounts using several deceptive techniques:</p>
+            <ul>
+              <li><strong>Fictitious Sales:</strong> Invoicing goods near year-end without physical dispatch; reversed immediately in the new year.</li>
+              <li><strong>Capitalizing Revenue Expenditure:</strong> Booking administrative, maintenance, or interest expenses as capital work-in-progress (CWIP).</li>
+              <li><strong>Under-Providing Liabilities:</strong> Omitting year-end expense accruals, understating provision for doubtful debts, or ignoring tax demands.</li>
+              <li><strong>Overvaluing Inventory:</strong> Manipulating valuation rates, inflating physical quantities, or absorbing excessive fixed overheads.</li>
+            </ul>
+            <p><strong>Detection:</strong> Review subsequent period sales returns, examine cut-off vouchers, verify post-balance sheet reversals, and perform analytical margin comparisons.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 23 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q23: Steps in an Investigation Assignment</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Enumerate the general steps involved in conducting an investigation assignment.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>The 5 fundamental steps in an investigation are:</p>
+            <ol>
+              <li>Determination of scope, objectives, and terms of reference.</li>
+              <li>Formulation of the investigation programme.</li>
+              <li>Collection and assembly of evidence (documentary, physical, oral, digital).</li>
+              <li>Analysis, evaluation, and corroboration of evidence.</li>
+              <li>Preparation and submission of the comprehensive investigation report.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 24 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q24: Ways Fraud is Committed Through Supplier's Ledger</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> List the ways in which fraud can be committed through the supplier's ledger.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>Common modus operandi in supplier's ledger fraud include:</p>
+            <ul>
+              <li>Processing invoices of <strong>Fictitious / Ghost Vendors</strong>.</li>
+              <li>Submitting <strong>duplicate invoices</strong> for a single delivery under different vendor accounts.</li>
+              <li>Altering payment bank account details in ERP master data to divert funds into an employee's personal account.</li>
+              <li>Suppressing credit notes issued by suppliers for returns or volume rebates.</li>
+              <li>Over-invoicing prices through collusion between procurement staff and preferred suppliers.</li>
+              <li>Writing back genuine supplier credit balances to misappropriate subsequent disbursements.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 25 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q25: Evidence Gathering Procedures in Forensic Accounting (FAIS 310/320)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Explain the evidence gathering procedures under Forensic Accounting and Investigation Standards (FAIS).</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>Under <strong class="k-blue">FAIS 310 &amp; 320</strong>, the forensic professional must:</p>
+            <ul>
+              <li><strong>Maintain Chain of Custody:</strong> Document time, date, location, and handler of each piece of physical/digital evidence.</li>
+              <li><strong>Forensic Digital Cloning:</strong> Create bit-stream disk images of computers, mobile devices, and servers using write-blockers to prevent data modification; verify SHA-256 hash totals.</li>
+              <li><strong>Interviewing Witnesses &amp; Suspects (FAIS 330):</strong> Conduct structured interviews, recording admissions and identifying corroborating witnesses.</li>
+              <li><strong>Third-Party Verifications:</strong> Obtain independent records directly from banks, tax authorities, and shipping carriers to verify transactions.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 26 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q26: Investigation into Salesmen Collections Embezzlement (BIL Ltd Premium Shampoos)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> BIL Limited manufactures premium shampoos and distributes them nationwide through salesmen. Suspicions arise regarding embezzlement of collections by salesmen. What procedures should the investigator perform?</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>The investigator must perform:</p>
+            <ol>
+              <li><strong>Direct Customer Confirmations:</strong> Circulate balance confirmations to retail stockists and distributors; compare customer statement balances with company ledgers.</li>
+              <li><strong>Reconcile Goods Dispatched vs. Invoiced:</strong> Verify dispatch records with transporter lorry receipts (LRs) and distributor delivery challans.</li>
+              <li><strong>Scrutinize Salesmen Route Registers:</strong> Match salesmen collection slips with daily cash/cheque deposits in designated bank branches.</li>
+              <li><strong>Investigate Sales Returns &amp; Damage Claims:</strong> Verify whether uncollected funds were disguised as fake stock damages or unauthorized promotional discounts.</li>
+              <li><strong>Analyze Teeming and Lading:</strong> Check for delays between customer payment dates and salesmen banking dates.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 27 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q27: How to Conduct Due Diligence (Execution Methodology)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Discuss the step-by-step approach on how to conduct a Due Diligence engagement.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>The execution of Due Diligence involves:</p>
+            <ul>
+              <li><strong>Initial Briefing:</strong> Aligning with client on strategic deal goals and risk tolerances.</li>
+              <li><strong>Information Request:</strong> Issuing a comprehensive data checklist across financial, operational, and legal functions.</li>
+              <li><strong>Data Room &amp; Fieldwork:</strong> Scrutinizing audited statements, tax returns, agreements, and operating metrics.</li>
+              <li><strong>Interviews &amp; Site Visits:</strong> Meeting key personnel and physically inspecting operations.</li>
+              <li><strong>Synthesis &amp; Reporting:</strong> Formulating EBITDA adjustments, quantifying deal risks, and drafting the Due Diligence Report.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 28 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q28: Evaluation of Fixed Assets / Idle Transformer Machines (QRT Electricals Ltd)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> QRT Electricals Ltd. has transformer manufacturing machinery that has remained idle for 2 years. Highlight the considerations that shall be taken into account by an investigating accountant while evaluating Fixed Assets shown in the Balance Sheet.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>The investigating accountant must evaluate:</p>
+            <ol>
+              <li><strong>Impairment under Ind AS 36:</strong> Idle machinery for 2 years is a clear internal indicator of impairment. The carrying amount must be written down to its recoverable amount (higher of fair value less costs to sell and value in use).</li>
+              <li><strong>Technological Obsolescence:</strong> Assess whether transformer specifications have evolved, rendering the machines unsaleable or unusable.</li>
+              <li><strong>Physical Condition &amp; Rusting:</strong> Inspect machines for mechanical degradation, missing parts, and cost of refurbishment.</li>
+              <li><strong>Depreciation Policy:</strong> Ensure depreciation was not improperly suspended during idle periods, as accounting standards require continuous depreciation unless under a usage method.</li>
+              <li><strong>Title &amp; Encumbrances:</strong> Verify whether idle machines are pledged to banks as security for credit facilities.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 29 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q29: Investigation by CA Ankit on Behalf of Incoming Partner (Mr. Jain)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Gupta, Sharma &amp; Khandelwal (profit sharing 2:2:1) admit Mr. Jain as a new partner with 1/4th share. Mr. Jain appoints CA Ankit to conduct an independent investigation before investing capital. What are the important steps involved?</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>CA Ankit should execute the following steps on behalf of Mr. Jain:</p>
+            <ul>
+              <li><strong>Review Partnership Deed:</strong> Examine capital terms, interest rates, drawings limits, profit-sharing ratios, and goodwill valuation clauses.</li>
+              <li><strong>Verify True Earning Capacity:</strong> Recalculate past profits by adjusting for partners' unrecorded salaries, extraordinary gains, and tax liabilities.</li>
+              <li><strong>Revaluation of Assets &amp; Liabilities:</strong> Verify realistic valuation of land, stock, and book debts; ensure full provision for doubtful debts.</li>
+              <li><strong>Check Hidden / Unrecorded Liabilities:</strong> Inquire about pending sales tax/GST assessments, unrecorded loans, and guarantees given on behalf of third parties.</li>
+              <li><strong>Valuation of Goodwill:</strong> Ensure goodwill premium demanded from Mr. Jain is based on realistic future maintainable profits.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 30 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q30: Credit Due Diligence Appraisal by CA Purva (ADC Bank Ltd)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> CA Purva, Credit Manager at ADC Bank, performs a comprehensive appraisal for a ₹ 12 Cr credit request: background check, shareholding review, financial &amp; projection analysis, SWOT analysis, CIBIL check, and discrete market inquiries.
+          <br>(i) What is the nature of this activity?
+          <br>(ii) Can a non-CA perform this activity?
+          <br>(iii) Name three other areas where this activity is undertaken.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p><strong>(i) Nature of Activity:</strong></p>
+            <ul>
+              <li>This is a <strong class="k-blue">Due Diligence Review (specifically Credit / Borrower Due Diligence)</strong>. It is a comprehensive risk assessment of a borrower's operational viability, character, repayment capacity, and business integrity.</li>
+            </ul>
+            <p><strong>(ii) Performance by Non-CA:</strong></p>
+            <ul>
+              <li><strong>YES</strong>, a person who is not a Chartered Accountant can perform due diligence. Unlike a statutory audit under the Companies Act (which can only be conducted by a practicing CA), due diligence is a commercial, analytical exercise. Experienced bankers, MBA finance professionals, credit analysts, and lawyers frequently perform due diligence.</li>
+            </ul>
+            <p><strong>(iii) Three Other Areas of Due Diligence:</strong></p>
+            <ul>
+              <li><strong>Mergers and Acquisitions (M&amp;A):</strong> Evaluating target companies for corporate takeovers.</li>
+              <li><strong>Private Equity &amp; Venture Capital:</strong> Evaluating startups for venture funding.</li>
+              <li><strong>Public Issue / IPOs:</strong> Due diligence on prospectuses for listing on stock exchanges.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 31 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q31: Audit Procedures for Inflated Cash Payments &amp; Disbursements (Om Manufacturing Ltd)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> In Om Manufacturing Ltd., auditor notices year-end cash withdrawals, bearer cheques, plain paper expense vouchers, altered receipts, missing employee names in HR records, and customer credit reversals. Explain the audit procedures to detect and address possible inflation of cash payments and fraud.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>The auditor must perform rigorous substantive and investigative procedures:</p>
+            <ol>
+              <li><strong>Examine Bearer Cheques &amp; Bank Reconciliations:</strong> Scrutinize all bearer cheques issued; verify who encashed them at the bank counter; cross-verify whether cash was actually deposited into the petty cash box or siphoned.</li>
+              <li><strong>Scrutinize Plain Paper Vouchers:</strong> Reject vouchers lacking vendor printed letterheads, tax registrations, or valid revenue stamps; obtain direct confirmation from purported vendors.</li>
+              <li><strong>Examine Altered / Overwritten Receipts:</strong> Scrutinize overwritten receipts using forensic magnification; request duplicate original copies directly from suppliers.</li>
+              <li><strong>Payroll &amp; Ghost Worker Audit:</strong> Reconcile wage registers against biometric/gate access records and HR master files; identify and remove dummy employees.</li>
+              <li><strong>Investigate Customer Credit Reversals:</strong> Send direct confirmations to customers whose balances were written off or reversed as "refunds" without communication.</li>
+              <li><strong>Reporting under Section 143(12) &amp; CARO:</strong> If fraud exceeds ₹ 1 Crore, report to the Central Government (Form ADT-4) under Section 143(12), and report under Clause 3(xi) of CARO 2020!</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 23: MASTER QUAD COMPARATIVE SYNTHESIS -->
+    <section id="sec-master-quad-matrix">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📊 23. Master Quad Synthesis: Audit vs. Internal Audit vs. Due Diligence vs. Forensic Investigation</span>
+        </div>
+        <span class="section-tag">Grand Comparative Overview</span>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 16%;">Parameter</th>
+              <th style="width: 21%;">Statutory Audit</th>
+              <th style="width: 21%;">Internal Audit</th>
+              <th style="width: 21%;">Due Diligence</th>
+              <th style="width: 21%;">Forensic Investigation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Primary Objective</strong></td>
+              <td>True and Fair view opinion on historical financial statements.</td>
+              <td>Appraise internal controls, operational efficiency, and governance.</td>
+              <td>Assess overall commercial risks, EBITDA quality, and deal viability.</td>
+              <td>Prove/disprove fraud, identify perpetrators, and quantify damage.</td>
+            </tr>
+            <tr>
+              <td><strong>Governing Standards</strong></td>
+              <td>Standards on Auditing (SAs).</td>
+              <td>Standards on Internal Audit (SIAs).</td>
+              <td>Customized scope in Engagement Letter.</td>
+              <td>Forensic Accounting &amp; Investigation Standards (FAIS).</td>
+            </tr>
+            <tr>
+              <td><strong>Mindset Applied</strong></td>
+              <td>Professional Skepticism (Watchdog).</td>
+              <td>Objective assurance &amp; constructive advisory.</td>
+              <td>Critical commercial inquiry (Caveat Emptor).</td>
+              <td>Inquisitorial &amp; adversarial (Bloodhound).</td>
+            </tr>
+            <tr>
+              <td><strong>Testing Extent</strong></td>
+              <td>Sampling and materiality.</td>
+              <td>Risk-based sampling and data analytics.</td>
+              <td>Targeted deep-dive analysis.</td>
+              <td>100% in-depth checking of suspect areas.</td>
+            </tr>
+            <tr>
+              <td><strong>Mandatory Nature</strong></td>
+              <td>Statutory (All Companies).</td>
+              <td>Statutory (Sec 138 thresholds).</td>
+              <td>Voluntary commercial choice.</td>
+              <td>Triggered by suspicion or regulatory order.</td>
+            </tr>
+            <tr>
+              <td><strong>Report Audience</strong></td>
+              <td>Shareholders &amp; Public.</td>
+              <td>Audit Committee &amp; Management.</td>
+              <td>Acquiring Client / Investor.</td>
+              <td>Board, Regulators, Courts, Police.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+<!-- ========================================== -->
+<!-- BOTTOM NAVIGATION                          -->
+<!-- ========================================== -->
+<div class="bottom-nav">
+  <a href="internal_audit.html" class="nav-btn prev-btn">
+    <span class="nav-arrow">&larr;</span>
+    <span class="nav-text">
+      <span class="nav-sub">Previous Chapter</span>
+      <span class="nav-title">Ch 16: Internal Audit (Sec 138)</span>
+    </span>
+  </a>
+
+  <a href="../../notes/audnotes.html" class="nav-btn hub-btn">
+    <span class="nav-text">
+      <span class="nav-sub">CA Final Audit</span>
+      <span class="nav-title">Master Hub &amp; Index</span>
+    </span>
+  </a>
+
+  <a href="../../notes/audnotes.html" class="nav-btn next-btn">
+    <span class="nav-text">
+      <span class="nav-sub">Next Chapter</span>
+      <span class="nav-title">Ch 18: ESG &amp; BRSR Assurance</span>
+    </span>
+    <span class="nav-arrow">&rarr;</span>
+  </a>
+</div>
+
+</main>
+</div>
+
+<!-- ========================================== -->
+<!-- SCRIPTS & INTERACTIVITY                   -->
+<!-- ========================================== -->
+<script>
+  // 1. Reading Progress Bar
+  window.addEventListener('scroll', () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    const progressBar = document.getElementById('readingProgress');
+    if (progressBar) {
+      progressBar.style.width = scrolled + '%';
+    }
+  });
+
+  // 2. Mobile Sidebar Toggle
+  const sidebarToggle = document.getElementById('sidebarToggle');
+  const sidebar = document.getElementById('sidebar');
+  if (sidebarToggle && sidebar) {
+    sidebarToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+  }
+
+  // 3. Interactive Accordion Toggle
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      item.classList.toggle('open');
+      const icon = header.querySelector('.accordion-icon');
+      if (icon) {
+        icon.textContent = item.classList.contains('open') ? '−' : '+';
+      }
+    });
+  });
+
+  // 4. Scrollspy for Active Sidebar Links
+  window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    let current = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      if (window.pageYOffset >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>

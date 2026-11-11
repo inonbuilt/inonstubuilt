@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 07: Audit Report & CARO 2020 Master Checklist - Quick Revision Notes | CA Final Audit | Calcium Notes</title>
+
+    <meta name="title" content="Chapter 07: Audit Report & CARO 2020 Master Checklist - Quick Revision Notes | CA Final Audit | Calcium Notes">
+    <meta name="description" content="CA Final Audit Chapter 07 Quick Notes: High-speed fast-track revision for CARO 2020 21 clauses, SA 700, 701, 705, 706 and Section 143 reporting.">
+    <meta name="keywords" content="CA Final Audit, Chapter 07: Audit Report & CARO 2020 Master Checklist, Fast Track Notes, Quick Revision, Standards on Auditing, ICAI New Scheme, Calcium Notes">
+    <meta name="author" content="Calcium Notes">
+    <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/Audit/caro_quick.html">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" href="../../../fevicol.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-canvas: #fdfbf7;
+            --surface: #ffffff;
+            --text-primary: #000000;
+            --text-secondary: #334155;
+            --heading-one-color: #1e3a8a;
+            --subheading-one-color: #0284c7;
+            --border-color: #cbd5e1;
+            --card-bg: #ffffff;
+            --table-header: #f1f5f9;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --warning-bg: #fffbeb;
+            --warning-border: #f59e0b;
+            --warning-text: #92400e;
+            
+            --notes-body: 'Kalam', cursive;
+            --notes-heading: 'Patrick Hand', cursive;
+            --notes-highlight: 'Caveat', cursive;
+            --notes-table: Arial, sans-serif;
+        }
+
+        [data-theme="dark"] {
+            --bg-canvas: #090d16;
+            --surface: #0f172a;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --heading-one-color: #60a5fa;
+            --subheading-one-color: #38bdf8;
+            --border-color: #1e293b;
+            --card-bg: #0f172a;
+            --table-header: #1e293b;
+            --warning-bg: #1c1917;
+            --warning-border: #d97706;
+            --warning-text: #fde68a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg-canvas);
+            color: var(--text-primary);
+            font-family: var(--notes-body) !important;
+            font-size: 17.5px;
+            line-height: 1.68;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        strong, b { font-weight: 700; }
+        .k-blue { color: #1e40af; font-weight: 700; }
+        .k-red { color: #b91c1c; font-weight: 700; }
+        .k-green { color: #047857; font-weight: 700; }
+        .k-purple { color: #7c3aed; font-weight: 700; }
+        .k-amber { color: #d97706; font-weight: 700; }
+
+        h1, h2, h3, h4, .chapter-title, .section-title {
+            font-family: var(--notes-heading) !important;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+        }
+
+        h1, h2 { color: var(--heading-one-color) !important; }
+        h3, h4 { color: var(--subheading-one-color) !important; }
+
+        .highlight-title {
+            font-family: var(--notes-highlight) !important;
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+        table, th, td, .styled-table {
+            font-family: var(--notes-table) !important;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: var(--surface);
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 24px 16px;
+            flex-shrink: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .sidebar * {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .sidebar-brand {
+            font-size: 15px;
+            font-weight: 800;
+            color: var(--heading-one-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .theme-toggle {
+            background: none;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 4px 8px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .nav-group-title {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #64748b;
+            margin: 16px 0 8px 6px;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 7px 10px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.15s;
+            line-height: 1.4;
+        }
+
+        .nav-link:hover {
+            background: rgba(37, 99, 235, 0.08);
+            color: var(--accent);
+        }
+
+        .nav-link.active {
+            background: #eff6ff;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .main-wrapper {
+            flex: 1;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 36px 32px 64px;
+        }
+
+        .breadcrumbs {
+            font-size: 13.5px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+            color: #64748b;
+            margin-bottom: 12px;
+        }
+
+        .breadcrumbs a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .header-section {
+            margin-bottom: 24px;
+        }
+
+        .header-section h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .chapter-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .chapter-pill {
+            background: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #bfdbfe;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-weight: 700;
+        }
+
+        .mode-bar {
+            display: flex;
+            gap: 10px;
+            margin: 22px 0 32px 0;
+            background: #f1f5f9;
+            padding: 6px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .mode-btn {
+            flex: 1;
+            text-align: center;
+            padding: 10px 16px;
+            font-size: 13.5px;
+            font-weight: 700;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .mode-btn.active {
+            background: #2563eb;
+            color: #ffffff;
+            box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+        }
+
+        .mode-btn:not(.active) {
+            color: #475569;
+            background: transparent;
+        }
+
+        .mode-btn:not(.active):hover {
+            background: rgba(255, 255, 255, 0.6);
+            color: #0f172a;
+        }
+
+        .quick-card {
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 26px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            scroll-margin-top: 20px;
+        }
+
+        .quick-card h2 {
+            font-size: 24px;
+            margin-bottom: 14px;
+            border-bottom: 1.5px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .quick-card h3 {
+            font-size: 20px;
+            margin: 18px 0 8px 0;
+        }
+
+        p { margin-bottom: 12px; }
+        ul, ol { margin-left: 24px; margin-bottom: 14px; }
+        li { margin-bottom: 6px; }
+
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14.5px;
+            line-height: 1.5;
+            background: var(--surface);
+        }
+
+        .styled-table th {
+            background: #1e3a8a;
+            color: #ffffff;
+            padding: 10px 14px;
+            text-align: left;
+            border: 1px solid #3b82f6;
+            font-weight: 700;
+        }
+
+        .styled-table td {
+            padding: 10px 14px;
+            border: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        .styled-table tr:nth-child(even) {
+            background-color: rgba(241, 245, 249, 0.5);
+        }
+
+        .callout {
+            border-left: 4px solid;
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+            background: rgba(248, 250, 252, 0.7);
+        }
+
+        .callout-blue { border-left-color: var(--accent); background: #eff6ff; }
+        .callout-green { border-left-color: #047857; background: #f0fdf4; }
+        .callout-amber { border-left-color: #d97706; background: #fffbeb; }
+        .callout-red { border-left-color: #b91c1c; background: #fef2f2; }
+        .callout-purple { border-left-color: #7c3aed; background: #faf5ff; }
+
+        .callout-title {
+            font-family: var(--notes-highlight) !important;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .callout-blue .callout-title { color: var(--accent); }
+        .callout-green .callout-title { color: #047857; }
+        .callout-amber .callout-title { color: #d97706; }
+        .callout-red .callout-title { color: #b91c1c; }
+        .callout-purple .callout-title { color: #7c3aed; }
+
+        .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-top: 36px;
+            padding: 18px 24px;
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-size: 13.5px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .prev-btn { background: #f1f5f9; color: #1e293b; border: 1px solid var(--border-color); }
+        .prev-btn:hover { background: #e2e8f0; }
+        .next-btn { background: #2563eb; color: #ffffff; }
+        .next-btn:hover { background: #1d4ed8; }
+        .hub-btn { background: #047857; color: #ffffff; }
+        .hub-btn:hover { background: #065f46; }
+
+        @media (max-width: 900px) {
+            body { flex-direction: column; }
+            .sidebar { width: 100%; height: auto; position: static; border-right: none; border-bottom: 1px solid var(--border-color); }
+            .main-wrapper { padding: 20px 16px; }
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="sidebar-brand">
+            <span>⚡ Calcium Quick Audit</span>
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">☀️/🌙</button>
+        </div>
+
+        <div class="nav-group-title">Chapter Navigation</div>
+        <a href="#sec-sa700-series" class="nav-link">1. SA 700/705/706 Opinion Matrix</a>
+        <a href="#sec-sa701-kam" class="nav-link">2. SA 701 Key Audit Matters (KAM)</a>
+        <a href="#sec-caro-applicability" class="nav-link">3. CARO 2020 Applicability Test</a>
+        <a href="#sec-caro-clauses" class="nav-link">4. CARO 2020: All 21 Clauses Cheatsheet</a>
+        <a href="#sec-sec143-reporting" class="nav-link">5. Section 143 & Fraud Reporting</a>
+
+        <div class="nav-group-title">Portal Hubs</div>
+        <a href="../../notes/audquicknotes.html" class="nav-link">&larr; ⚡ Audit Quick Notes Hub</a>
+        <a href="../../notes/audnotes.html" class="nav-link">&larr; 📖 Audit Full Notes Hub</a>
+        <a href="../../notes/notes.html" class="nav-link">&larr; 🏠 Notes Home</a>
+    </nav>
+
+    <main class="main-wrapper">
+        <div class="breadcrumbs">
+            <a href="../../notes/notes.html">Home</a> &gt; 
+            <a href="../../notes/audquicknotes.html">CA Final Audit</a> &gt; 
+            <span>Chapter 07 Quick Notes</span>
+        </div>
+
+        <header class="header-section">
+            <span class="chapter-pill">CA Final Paper 3 &bull; Module 2: Execution & Specialised Engagements</span>
+            <h1 style="margin-top: 10px;">Chapter 07: Audit Report & CARO 2020 Master Checklist</h1>
+            <div class="chapter-meta">
+                <span class="chapter-pill">⚡ Fast-Track High-Yield Revision</span>
+                <span>ICAI New Scheme 2026&ndash;2027</span>
+            </div>
+        </header>
+
+        <!-- Mode Bar Switcher -->
+        <div class="mode-bar">
+            <a href="caro_quick.html" class="mode-btn active">⚡ Fast-Track Quick Notes</a>
+            <a href="Caro.html" class="mode-btn">📖 Full In-Depth Notes (Theory + TYKs)</a>
+        </div>
+
+        
+        <section id="sec-sa700-series" class="quick-card">
+            <h2>1. SA 700 / 705 / 706 Opinion Formulation Matrix</h2>
+            <p>The auditor forms an opinion on whether the financial statements are prepared, in all material respects, in accordance with the applicable financial reporting framework (<span class="k-blue">AFRF</span>).</p>
+            
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Auditor's Assessment</th>
+                        <th>Material but NOT Pervasive</th>
+                        <th>Material AND Pervasive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Financial Statements are Materially Misstated</strong> (Disagreement / GAAP Departure)</td>
+                        <td><span class="k-amber">Qualified Opinion ("Except for...")</span></td>
+                        <td><span class="k-red">Adverse Opinion ("Do not present fairly...")</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Inability to Obtain SAAE</strong> (Scope Limitation / Records Destroyed)</td>
+                        <td><span class="k-amber">Qualified Opinion ("Except for possible effects...")</span></td>
+                        <td><span class="k-red">Disclaimer of Opinion ("Do not express an opinion")</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="callout callout-blue">
+                <div class="callout-title">Emphasis of Matter (EOM) vs Other Matter (OM) Paragraph (SA 706)</div>
+                <p>• <strong>EOM Paragraph (SA 706):</strong> Refers to a matter <span class="k-blue">appropriately presented or disclosed in the FS</span> that is fundamental to users' understanding (e.g., exceptional litigation, early adoption of new AS, major catastrophe). <em>Never a substitute for modified opinion or KAM!</em><br>
+                • <strong>OM Paragraph (SA 706):</strong> Refers to a matter <span class="k-purple">other than those presented or disclosed in FS</span> relevant to users' understanding of audit, auditor's responsibilities, or report (e.g., prior period audited by predecessor auditor).</p>
+            </div>
+        </section>
+
+        <section id="sec-sa701-kam" class="quick-card">
+            <h2>2. SA 701 Key Audit Matters (KAM) Decision Logic</h2>
+            <p><span class="k-blue">Applicability:</span> Mandatory for audits of complete sets of general purpose financial statements of <span class="k-red">listed entities</span> and circumstances when auditor decides or law requires.</p>
+
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Funnel Step</th>
+                        <th>Scope / Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Step 1: Broad Universe</strong></td>
+                        <td>Matters communicated with <span class="k-blue">Those Charged with Governance (TCWG)</span> under SA 260.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Step 2: Auditor Attention</strong></td>
+                        <td>Matters that required <span class="k-amber">significant auditor attention</span> in performing the audit (high risk areas, high management judgment/estimates, significant unusual transactions).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Step 3: KAM Selection</strong></td>
+                        <td>Matters of <span class="k-red">most significance</span> in the audit of the financial statements of the current period.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="callout callout-amber">
+                <div class="callout-title">Crucial SA 701 Examiner Traps</div>
+                <p>• <strong>KAM is NOT:</strong> (1) A substitute for disclosures in FS; (2) A substitute for a modified opinion under SA 705; (3) A substitute for Going Concern reporting under SA 570; (4) A separate opinion on individual matters.<br>
+                • <strong>Disclaimer of Opinion:</strong> Communicating KAM is <span class="k-red">strictly prohibited</span> when the auditor disclaims an opinion under SA 705 (unless required by law).</p>
+            </div>
+        </section>
+
+        <section id="sec-caro-applicability" class="quick-card">
+            <h2>3. CARO 2020 Applicability & Exemption Test</h2>
+            <p>Applies to every company including a foreign company, <strong>EXCEPT</strong> the following categories:</p>
+
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Exempt Category</th>
+                        <th>Statutory Criteria / Limits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Banking & Insurance</strong></td>
+                        <td>Banking companies (Banking Regulation Act, 1949) & Insurance companies (Insurance Act, 1938).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Section 8 Company</strong></td>
+                        <td>Companies licensed under Section 8 of Companies Act, 2013 (charitable objectives).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. One Person Co (OPC) & Small Co</strong></td>
+                        <td>OPC under Sec 2(62) and Small Company under Sec 2(85) (Paid-up Capital &le; &#8377;4 Cr and Turnover &le; &#8377;40 Cr).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. Private Limited Company Exemption</strong></td>
+                        <td>A private company (not subsidiary/holding of public co) satisfying <span class="k-red">ALL THREE</span> tests on balance sheet date:<br>
+                        (a) <strong>Paid-up Capital + Reserves:</strong> &le; <span class="k-blue">&#8377;1 Crore</span>.<br>
+                        (b) <strong>Total Borrowings (Banks/FIs):</strong> &le; <span class="k-purple">&#8377;1 Crore</span> at <em>any point of time during FY</em>.<br>
+                        (c) <strong>Total Revenue (including discontinued):</strong> &le; <span class="k-green">&#8377;10 Crore</span> during FY as per Schedule III.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Consolidated FS</strong></td>
+                        <td>CARO 2020 does not apply to CFS <strong>except Clause (xxi)</strong> (qualifications in subsidiary/associate/JV CARO reports).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="sec-caro-clauses" class="quick-card">
+            <h2>4. CARO 2020: Master 21 Clauses Rapid Memory Cheatsheet</h2>
+            
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Clause #</th>
+                        <th>Subject Matter</th>
+                        <th>Core Reporting Trigger</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>(i)</strong></td><td><strong>Property, Plant & Equip & Intangibles</strong></td><td>Proper records, physical verification (reasonable intervals), title deeds held in co name (Schedule III format), Benami proceedings.</td></tr>
+                    <tr><td><strong>(ii)</strong></td><td><strong>Inventory & Working Capital Limits</strong></td><td>(a) Physical verification (&ge;10% variance coverage); (b) Quarterly WC limits &gt; &#8377;5 Cr sanctioned on security of current assets &mdash; quarterly returns match books?</td></tr>
+                    <tr><td><strong>(iii)</strong></td><td><strong>Investments, Guarantees, Loans & Advances</strong></td><td>Details of loans granted to related/other parties; prejudicial terms; schedule of repayment; overdue &gt; 90 days; loans renewed/extended or evergreen.</td></tr>
+                    <tr><td><strong>(iv)</strong></td><td><strong>Compliance of Sec 185 & 186</strong></td><td>Loans to directors & investments/guarantees made &mdash; statutory compliance check.</td></tr>
+                    <tr><td><strong>(v)</strong></td><td><strong>Public Deposits</strong></td><td>Directives of RBI and Sec 73 to 76; contravention if any; orders of CLB/NCLT/RBI.</td></tr>
+                    <tr><td><strong>(vi)</strong></td><td><strong>Cost Records</strong></td><td>Maintenance of cost records prescribed under Sec 148(1).</td></tr>
+                    <tr><td><strong>(vii)</strong></td><td><strong>Statutory Dues</strong></td><td>(a) Undisputed dues outstanding &gt; 6 months from date they became payable; (b) Disputed dues with forum where pending.</td></tr>
+                    <tr><td><strong>(viii)</strong></td><td><strong>Unrecorded Income</strong></td><td>Transactions surrendered/disclosed as income in Tax Assessments not previously recorded.</td></tr>
+                    <tr><td><strong>(ix)</strong></td><td><strong>Default in Repayment of Borrowings</strong></td><td>Defaults to lenders (period/amount); Wilful Defaulter declared; Term loans utilized for purpose; Short-term funds used for long-term; Funds taken on pledge of securities in subsidiaries.</td></tr>
+                    <tr><td><strong>(x)</strong></td><td><strong>IPO/FPO & Private Placement</strong></td><td>Utilisation of IPO/FPO funds; Preferential allotment Sec 42/62 compliance.</td></tr>
+                    <tr><td><strong>(xi)</strong></td><td><strong>Fraud Reporting</strong></td><td>Fraud by or on the company noticed/reported; Form ADT-4 filed; Whistle-blower complaints considered.</td></tr>
+                    <tr><td><strong>(xii)</strong></td><td><strong>Nidhi Company</strong></td><td>Net Owned Funds to Deposit ratio 1:20; 10% unencumbered term deposits.</td></tr>
+                    <tr><td><strong>(xiii)</strong></td><td><strong>Related Party Transactions (RPT)</strong></td><td>Compliance with Sec 177 & 188; Disclosures in FS as per applicable AS (AS 18 / Ind AS 24).</td></tr>
+                    <tr><td><strong>(xiv)</strong></td><td><strong>Internal Audit System</strong></td><td>Commensurate with size & nature; Internal audit reports considered by statutory auditor.</td></tr>
+                    <tr><td><strong>(xv)</strong></td><td><strong>Non-Cash Transactions</strong></td><td>Non-cash transactions with directors under Sec 192.</td></tr>
+                    <tr><td><strong>(xvi)</strong></td><td><strong>RBI Registration Sec 45-IA</strong></td><td>Registration as NBFC/CIC; Criteria met; Number of CICs in group.</td></tr>
+                    <tr><td><strong>(xvii)</strong></td><td><strong>Cash Losses</strong></td><td>Cash losses in current FY and immediately preceding FY.</td></tr>
+                    <tr><td><strong>(xviii)</strong></td><td><strong>Resignation of Statutory Auditors</strong></td><td>Issues, objections or concerns raised by outgoing auditor taken into consideration.</td></tr>
+                    <tr><td><strong>(xix)</strong></td><td><strong>Financial Viability / Going Concern (1 Year)</strong></td><td>Capability of meeting liabilities falling due within 1 year from balance sheet date based on financial ratios, ageing, realization of assets.</td></tr>
+                    <tr><td><strong>(xx)</strong></td><td><strong>CSR Compliance (Sec 135)</strong></td><td>Unspent CSR amount transferred to Fund specified in Sch VII (ongoing vs other projects - Sec 135(5) vs 135(6)).</td></tr>
+                    <tr><td><strong>(xxi)</strong></td><td><strong>Qualifications in CARO of Subsidiaries</strong></td><td>Qualifications/adverse remarks in CARO reports of group companies included in CFS.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="sec-sec143-reporting" class="quick-card">
+            <h2>5. Section 143 Inquiries, Reporting & Fraud (Sec 143(12))</h2>
+            
+            <div class="callout callout-purple">
+                <div class="callout-title">Section 143(1) Propriety Inquiries (Mnemonic: L-D-B-P-P-S)</div>
+                <p>Auditor inquires into 6 specific items: (1) <strong>L</strong>oans on security properly secured & terms not prejudicial; (2) <strong>T</strong>ransactions represented merely by <strong>B</strong>ook entries prejudicial; (3) Sale of shares/securities at price below purchase price (other than banking/investment co); (4) <strong>L</strong>oans & advances shown as <strong>D</strong>eposits; (5) <strong>P</strong>ersonal expenses charged to revenue account; (6) <strong>S</strong>hares allotted for cash & cash received entered in books.<br>
+                <em>Reporting trigger: Only if auditor finds adverse findings! If satisfied, no mention needed.</em></p>
+            </div>
+
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Fraud Amount Threshold</th>
+                        <th>Statutory Reporting Channel & Timelines (Sec 143(12) + Rule 13)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>&#8377; 1 Crore or More</strong><br>(Against the company by officers/employees)</td>
+                        <td>• Report to Audit Committee / Board within <span class="k-blue">2 days</span> seeking reply in 45 days.<br>
+                        • On receipt of reply (or expiry of 45 days), report to <span class="k-red">Central Government (MCA)</span> within <span class="k-blue">15 days</span> in <strong>Form ADT-4</strong>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Less than &#8377; 1 Crore</strong></td>
+                        <td>• Report to Audit Committee / Board within <span class="k-blue">2 days</span>.<br>
+                        • Disclose in Board's Report (nature of fraud, amount, parties involved if remedial action taken). No Form ADT-4 to Central Govt.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
+
+        <!-- Bottom Navigation -->
+        <div class="bottom-nav">
+            <a href="completion_review_quick.html" class="nav-btn prev-btn">&larr; Ch 06 Completion & Review</a>
+            <a href="../../notes/audquicknotes.html" class="nav-btn hub-btn">Audit Quick Hub</a>
+            <a href="specialised_areas_quick.html" class="nav-btn next-btn">Ch 08 Specialised Areas &rarr;</a>
+        </div>
+
+    </main>
+
+    <script>
+        function toggleTheme() {
+            const current = document.documentElement.getAttribute('data-theme');
+            const target = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', target);
+            localStorage.setItem('calcium_theme', target);
+        }
+        const savedTheme = localStorage.getItem('calcium_theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+    </script>
+
+</body>
+</html>

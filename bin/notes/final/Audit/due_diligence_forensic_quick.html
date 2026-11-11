@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 17: Due Diligence, Investigation & Forensic Audit - Quick Revision Notes | CA Final Audit | Calcium Notes</title>
+
+    <meta name="title" content="Chapter 17: Due Diligence, Investigation & Forensic Audit - Quick Revision Notes | CA Final Audit | Calcium Notes">
+    <meta name="description" content="CA Final Audit Chapter 17 Quick Notes: High-speed revision on Financial Due Diligence, Investigation under Companies Act 2013, Forensic Accounting & Investigation Standards (FAIS), and Fraud Triangle.">
+    <meta name="keywords" content="CA Final Audit, Chapter 17: Due Diligence, Investigation & Forensic Audit, Fast Track Notes, Quick Revision, Standards on Auditing, ICAI New Scheme, Calcium Notes">
+    <meta name="author" content="Calcium Notes">
+    <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/Audit/due_diligence_forensic_quick.html">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" href="../../../fevicol.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-canvas: #fdfbf7;
+            --surface: #ffffff;
+            --text-primary: #000000;
+            --text-secondary: #334155;
+            --heading-one-color: #1e3a8a;
+            --subheading-one-color: #0284c7;
+            --border-color: #cbd5e1;
+            --card-bg: #ffffff;
+            --table-header: #f1f5f9;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --warning-bg: #fffbeb;
+            --warning-border: #f59e0b;
+            --warning-text: #92400e;
+            
+            --notes-body: 'Kalam', cursive;
+            --notes-heading: 'Patrick Hand', cursive;
+            --notes-highlight: 'Caveat', cursive;
+            --notes-table: Arial, sans-serif;
+        }
+
+        [data-theme="dark"] {
+            --bg-canvas: #090d16;
+            --surface: #0f172a;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --heading-one-color: #60a5fa;
+            --subheading-one-color: #38bdf8;
+            --border-color: #1e293b;
+            --card-bg: #0f172a;
+            --table-header: #1e293b;
+            --warning-bg: #1c1917;
+            --warning-border: #d97706;
+            --warning-text: #fde68a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg-canvas);
+            color: var(--text-primary);
+            font-family: var(--notes-body) !important;
+            font-size: 17.5px;
+            line-height: 1.68;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        strong, b { font-weight: 700; }
+        .k-blue { color: #1e40af; font-weight: 700; }
+        .k-red { color: #b91c1c; font-weight: 700; }
+        .k-green { color: #047857; font-weight: 700; }
+        .k-purple { color: #7c3aed; font-weight: 700; }
+        .k-amber { color: #d97706; font-weight: 700; }
+
+        h1, h2, h3, h4, .chapter-title, .section-title {
+            font-family: var(--notes-heading) !important;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+        }
+
+        h1, h2 { color: var(--heading-one-color) !important; }
+        h3, h4 { color: var(--subheading-one-color) !important; }
+
+        .highlight-title {
+            font-family: var(--notes-highlight) !important;
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+        table, th, td, .styled-table {
+            font-family: var(--notes-table) !important;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: var(--surface);
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 24px 16px;
+            flex-shrink: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .sidebar * {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .sidebar-brand {
+            font-size: 15px;
+            font-weight: 800;
+            color: var(--heading-one-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .theme-toggle {
+            background: none;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 4px 8px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .nav-group-title {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #64748b;
+            margin: 16px 0 8px 6px;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 7px 10px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.15s;
+            line-height: 1.4;
+        }
+
+        .nav-link:hover {
+            background: rgba(37, 99, 235, 0.08);
+            color: var(--accent);
+        }
+
+        .nav-link.active {
+            background: #eff6ff;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .main-wrapper {
+            flex: 1;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 36px 32px 64px;
+        }
+
+        .breadcrumbs {
+            font-size: 13.5px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+            color: #64748b;
+            margin-bottom: 12px;
+        }
+
+        .breadcrumbs a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .header-section {
+            margin-bottom: 24px;
+        }
+
+        .header-section h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .chapter-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .chapter-pill {
+            background: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #bfdbfe;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-weight: 700;
+        }
+
+        .mode-bar {
+            display: flex;
+            gap: 10px;
+            margin: 22px 0 32px 0;
+            background: #f1f5f9;
+            padding: 6px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .mode-btn {
+            flex: 1;
+            text-align: center;
+            padding: 10px 16px;
+            font-size: 13.5px;
+            font-weight: 700;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .mode-btn.active {
+            background: #2563eb;
+            color: #ffffff;
+            box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+        }
+
+        .mode-btn:not(.active) {
+            color: #475569;
+            background: transparent;
+        }
+
+        .mode-btn:not(.active):hover {
+            background: rgba(255, 255, 255, 0.6);
+            color: #0f172a;
+        }
+
+        .quick-card {
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 26px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            scroll-margin-top: 20px;
+        }
+
+        .quick-card h2 {
+            font-size: 24px;
+            margin-bottom: 14px;
+            border-bottom: 1.5px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .quick-card h3 {
+            font-size: 20px;
+            margin: 18px 0 8px 0;
+        }
+
+        p { margin-bottom: 12px; }
+        ul, ol { margin-left: 24px; margin-bottom: 14px; }
+        li { margin-bottom: 6px; }
+
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14.5px;
+            line-height: 1.5;
+            background: var(--surface);
+        }
+
+        .styled-table th {
+            background: #1e3a8a;
+            color: #ffffff;
+            padding: 10px 14px;
+            text-align: left;
+            border: 1px solid #3b82f6;
+            font-weight: 700;
+        }
+
+        .styled-table td {
+            padding: 10px 14px;
+            border: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        .styled-table tr:nth-child(even) {
+            background-color: rgba(241, 245, 249, 0.5);
+        }
+
+        .callout {
+            border-left: 4px solid;
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+            background: rgba(248, 250, 252, 0.7);
+        }
+
+        .callout-blue { border-left-color: var(--accent); background: #eff6ff; }
+        .callout-green { border-left-color: #047857; background: #f0fdf4; }
+        .callout-amber { border-left-color: #d97706; background: #fffbeb; }
+        .callout-red { border-left-color: #b91c1c; background: #fef2f2; }
+        .callout-purple { border-left-color: #7c3aed; background: #faf5ff; }
+
+        .callout-title {
+            font-family: var(--notes-highlight) !important;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .callout-blue .callout-title { color: var(--accent); }
+        .callout-green .callout-title { color: #047857; }
+        .callout-amber .callout-title { color: #d97706; }
+        .callout-red .callout-title { color: #b91c1c; }
+        .callout-purple .callout-title { color: #7c3aed; }
+
+        .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-top: 36px;
+            padding: 18px 24px;
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-size: 13.5px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .prev-btn { background: #f1f5f9; color: #1e293b; border: 1px solid var(--border-color); }
+        .prev-btn:hover { background: #e2e8f0; }
+        .next-btn { background: #2563eb; color: #ffffff; }
+        .next-btn:hover { background: #1d4ed8; }
+        .hub-btn { background: #047857; color: #ffffff; }
+        .hub-btn:hover { background: #065f46; }
+
+        @media (max-width: 900px) {
+            body { flex-direction: column; }
+            .sidebar { width: 100%; height: auto; position: static; border-right: none; border-bottom: 1px solid var(--border-color); }
+            .main-wrapper { padding: 20px 16px; }
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="sidebar-brand">
+            <span>⚡ Calcium Quick Audit</span>
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">☀️/🌙</button>
+        </div>
+
+        <div class="nav-group-title">Chapter Navigation</div>
+        <a href="#sec-triad-comparison" class="nav-link">1. Audit vs Investigation vs Due Diligence</a>
+        <a href="#sec-financial-dd" class="nav-link">2. Financial Due Diligence Focus Areas</a>
+        <a href="#sec-co-act-investigation" class="nav-link">3. Investigation under Companies Act 2013</a>
+        <a href="#sec-forensic-fais" class="nav-link">4. Forensic Accounting & FAIS Standards</a>
+
+        <div class="nav-group-title">Portal Hubs</div>
+        <a href="../../notes/audquicknotes.html" class="nav-link">&larr; ⚡ Audit Quick Notes Hub</a>
+        <a href="../../notes/audnotes.html" class="nav-link">&larr; 📖 Audit Full Notes Hub</a>
+        <a href="../../notes/notes.html" class="nav-link">&larr; 🏠 Notes Home</a>
+    </nav>
+
+    <main class="main-wrapper">
+        <div class="breadcrumbs">
+            <a href="../../notes/notes.html">Home</a> &gt; 
+            <a href="../../notes/audquicknotes.html">CA Final Audit</a> &gt; 
+            <span>Chapter 17 Quick Notes</span>
+        </div>
+
+        <header class="header-section">
+            <span class="chapter-pill">CA Final Paper 3 &bull; Module 3: Specialised Audits & Ethics</span>
+            <h1 style="margin-top: 10px;">Chapter 17: Due Diligence, Investigation & Forensic Audit</h1>
+            <div class="chapter-meta">
+                <span class="chapter-pill">⚡ Fast-Track High-Yield Revision</span>
+                <span>ICAI New Scheme 2026&ndash;2027</span>
+            </div>
+        </header>
+
+        <!-- Mode Bar Switcher -->
+        <div class="mode-bar">
+            <a href="due_diligence_forensic_quick.html" class="mode-btn active">⚡ Fast-Track Quick Notes</a>
+            <a href="due_diligence_forensic.html" class="mode-btn">📖 Full In-Depth Notes (Theory + TYKs)</a>
+        </div>
+
+        
+        <section id="sec-triad-comparison" class="quick-card">
+            <h2>1. Audit vs Investigation vs Due Diligence Comparison</h2>
+            
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Statutory Audit</th>
+                        <th>Investigation</th>
+                        <th>Due Diligence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Scope & Objective</strong></td>
+                        <td>Express opinion on true & fair view of FS; general purpose.</td>
+                        <td>Establish facts regarding specific allegation / suspicion / fraud.</td>
+                        <td>Evaluate investment/acquisition risks and commercial viability.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Attitude / Approach</strong></td>
+                        <td><span class="k-blue">Professional Skepticism</span> (neither suspicious nor gullible).</td>
+                        <td><span class="k-red">Inquisitorial / Suspicious</span> (predicated on assumption of wrongdoing).</td>
+                        <td><span class="k-green">Prudent Investor's Lens</span> (commercial & valuation focus).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Time Period</strong></td>
+                        <td>Generally 1 Financial Year.</td>
+                        <td>Whatever period is relevant to the issue (can span multiple years).</td>
+                        <td>Historical (3–5 years) + future projections review.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sampling vs 100%</strong></td>
+                        <td>Test-checking / audit sampling permitted.</td>
+                        <td>Detailed, exhaustive examination of relevant records; sampling not appropriate.</td>
+                        <td>Targeted risk-based analysis of key value drivers and liabilities.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="sec-financial-dd" class="quick-card">
+            <h2>2. Financial Due Diligence (FDD) Focus Areas</h2>
+            <div class="callout callout-blue">
+                <div class="callout-title">Core Objective of Due Diligence</div>
+                <p>Due diligence enables a prospective buyer or investor to verify assumptions, uncover hidden liabilities, determine normalized earnings, and negotiate price or indemnities before closing a transaction.</p>
+            </div>
+
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>FDD Focus Area</th>
+                        <th>Critical Items Examined by Practitioner</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Quality of Earnings (QoE)</strong></td>
+                        <td>Adjust EBITDA for non-recurring income/expenses, related party transactions at non-arm's length, owner perks, and aggressive revenue recognition.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hidden / Off-Balance Sheet Liabilities</strong></td>
+                        <td>Tax litigations (GST/Income Tax disputes), unrecorded gratuity/leave encashment liabilities, pending environmental claims, corporate guarantees given for third parties.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Working Capital Peg & Cash Debt</strong></td>
+                        <td>Define Target / Normalized Working Capital; identify debt-like items (overdue vendor dues, customer advances, deferred capex payables).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Asset Recoverability</strong></td>
+                        <td>Realizability of aged debtors, obsolete inventory valuation, title deeds of properties, intellectual property ownership.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="sec-co-act-investigation" class="quick-card">
+            <h2>3. Investigation under Companies Act 2013</h2>
+            
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Section</th>
+                        <th>Nature of Investigation</th>
+                        <th>Trigger / Initiating Authority</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="k-blue">Section 210</span></td>
+                        <td>Investigation into affairs of company</td>
+                        <td>Central Govt order: (a) on receipt of report of RoC/inspector; (b) on special resolution passed by company; or (c) in public interest.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="k-red">Section 212</span></td>
+                        <td>Investigation by Serious Fraud Investigation Office (<span class="k-red">SFIO</span>)</td>
+                        <td>Central Govt assigns investigation to SFIO if opinion formed that it is necessary in public interest, on request of govt dept, or RoC report. <em>No other agency can proceed with parallel investigation once assigned to SFIO!</em></td>
+                    </tr>
+                    <tr>
+                        <td><span class="k-purple">Section 213</span></td>
+                        <td>Investigation on application of members or other persons</td>
+                        <td>NCLT order on application of: &ge;100 members or &ge;1/10th voting power (having share capital) OR &ge;1/5th members (no share capital); showing fraud, misfeasance, or oppression.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="k-amber">Section 216</span></td>
+                        <td>Investigation into ownership of company</td>
+                        <td>Central Govt appoints inspectors to determine true persons who are financially interested in company or control its policy.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="sec-forensic-fais" class="quick-card">
+            <h2>4. Forensic Accounting & FAIS Standards</h2>
+            <div class="callout callout-purple">
+                <div class="callout-title">The Fraud Triangle (Cressey's Model)</div>
+                <p>1. <strong>Pressure / Incentive:</strong> Financial distress, greed, impossible performance targets.<br>
+                2. <strong>Opportunity:</strong> Weak internal controls, lack of supervision, override by management.<br>
+                3. <strong>Rationalisation:</strong> Justifying fraud ("They underpay me", "I'll return it after next month").</p>
+            </div>
+
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Forensic Practice Area</th>
+                        <th>Statutory / Technical Guideline</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Digital Forensics & Chain of Custody</strong></td>
+                        <td>Preserve digital evidence without alteration; bit-stream image created; cryptographic hash value (<span class="k-blue">MD5 / SHA-256</span>) computed before and after imaging to verify integrity in court.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ICAI FAIS Standards</strong></td>
+                        <td>Forensic Accounting and Investigation Standards (<span class="k-purple">FAIS 100 to 500 series</span>) provide mandatory framework for planning, evidence collection, interviewing, and reporting in forensic assignments.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Forensic Interviewing Techniques</strong></td>
+                        <td>Progressive questioning: Introductory &rarr; Informational &rarr; Assessment &rarr; Closing &rarr; Admission-Seeking questions.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
+
+        <!-- Bottom Navigation -->
+        <div class="bottom-nav">
+            <a href="internal_audit_quick.html" class="nav-btn prev-btn">&larr; Ch 16 Internal Audit</a>
+            <a href="../../notes/audquicknotes.html" class="nav-btn hub-btn">Audit Quick Hub</a>
+            <a href="esg_sdg_assurance_quick.html" class="nav-btn next-btn">Ch 18 ESG & SDG Assurance &rarr;</a>
+        </div>
+
+    </main>
+
+    <script>
+        function toggleTheme() {
+            const current = document.documentElement.getAttribute('data-theme');
+            const target = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', target);
+            localStorage.setItem('calcium_theme', target);
+        }
+        const savedTheme = localStorage.getItem('calcium_theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+    </script>
+
+</body>
+</html>

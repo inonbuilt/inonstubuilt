@@ -1,0 +1,2353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Materiality, Risk Assessment and Internal Control | CA Final Paper 3 Smart Book | Calcium Notes</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="title" content="Chapter 4: Materiality, Risk Assessment and Internal Control | CA Final Paper 3 Smart Book | Calcium Notes">
+    <meta name="description" content="100% comprehensive, zero-omission CA Final Audit Chapter 4 notes covering SA 315 (Risk Identification & Assertions), SA 320 (Materiality & Performance Materiality), SA 330 (Responses to Assessed Risks), SA 265 (Internal Control Deficiencies), Audit Risk Mathematical Model, CRIME Components, Internal Check, ICQ, Checklists, Flowcharts, COSO/CoCo/Turnbull/SOX 404/IFC Section 134(5)(e) & 143(3)(i), with all 5 TYU and 15 TYK solved questions from ICAI study material.">
+    <meta name="keywords" content="SA 315, SA 320, SA 330, SA 265, Materiality, Performance Materiality, Audit Risk, Inherent Risk, Control Risk, Detection Risk, CRIME Framework, COSO 2013, Internal Check, Internal Control Questionnaire, Flowchart, Significant Deficiency, Management Letter, IFCoFR, Section 143(3)(i), CA Final Audit Chapter 4, Calcium Notes">
+    <meta name="author" content="Calcium Notes">
+    <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/Audit/risk_materiality.html">
+
+    <link rel="icon" href="../../../../fevicol.png" type="image/png">
+    <link rel="stylesheet" href="../../assets/template.css">
+
+    <!-- High-Legibility Handwritten Fonts: Kalam, Patrick Hand, Caveat + Arial for Tables -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Patrick+Hand&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YYJ8R39EXM');
+    </script>
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124" crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            /* Calcium Notes Handwritten Typography */
+            --notes-body: 'Kalam', cursive;
+            --notes-heading: 'Patrick Hand', cursive;
+            --notes-highlight: 'Caveat', cursive;
+            --notes-table: Arial, sans-serif;
+
+            --heading-one-color: #1e3a8a;      /* Deep Navy Blue */
+            --subheading-one-color: #0284c7;   /* Vibrant Sapphire Blue */
+            --text-black: #000000;             /* Pure Black for high contrast */
+
+            --primary: #1e40af;
+            --primary-hover: #1d4ed8;
+            --primary-light: #eff6ff;
+            --primary-border: #bfdbfe;
+            --slate-50: #f8fafc;
+            --slate-100: #f1f5f9;
+            --slate-200: #e2e8f0;
+            --slate-300: #cbd5e1;
+            --slate-600: #475569;
+            --slate-700: #334155;
+            --slate-800: #1e293b;
+            --slate-900: #0f172a;
+            --emerald-600: #059669;
+            --emerald-50: #ecfdf5;
+            --emerald-200: #a7f3d0;
+            --rose-600: #e11d48;
+            --rose-50: #fff1f2;
+            --rose-200: #fecdd3;
+            --amber-600: #d97706;
+            --amber-50: #fffbeb;
+            --amber-200: #fde68a;
+            --purple-600: #7c3aed;
+            --purple-50: #f5f3ff;
+            --purple-200: #ddd6fe;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Reading Progress Bar */
+        #scroll-progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            z-index: 9999;
+        }
+
+        #scroll-progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #1e40af, #0284c7, #7c3aed);
+            transition: width 0.1s linear;
+            box-shadow: 0 0 8px rgba(30, 64, 175, 0.5);
+        }
+
+        /* Base Body Typography - ALWAYS HANDWRITTEN DEFAULT */
+        body {
+            font-family: var(--notes-body) !important;
+            font-size: 18px !important;
+            line-height: 1.72 !important;
+            color: var(--text-black) !important;
+            background-color: #fdfbf7 !important;
+            overflow-x: hidden;
+        }
+
+        /* All Main Headings in Patrick Hand + Deep Navy Blue (#1e3a8a) */
+        h1, h2,
+        .chapter-title,
+        .hero-title,
+        .section-heading,
+        .section-title {
+            font-family: var(--notes-heading) !important;
+            color: var(--heading-one-color) !important;
+            font-weight: 400 !important;
+            letter-spacing: 0.3px !important;
+        }
+
+        /* All Subheadings in Patrick Hand + Vibrant Sapphire Blue (#0284c7) */
+        h3, h4,
+        .sub-heading,
+        .subtopic-title,
+        .tyk-title-text,
+        .case-title {
+            font-family: var(--notes-heading) !important;
+            color: var(--subheading-one-color) !important;
+            font-weight: 400 !important;
+            letter-spacing: 0.2px !important;
+        }
+
+        h1, .hero-title {
+            font-size: 2.35rem !important;
+            line-height: 1.25 !important;
+            margin-bottom: 12px !important;
+        }
+
+        h2, .section-heading, .section-title {
+            font-size: 1.75rem !important;
+            line-height: 1.3 !important;
+            margin-top: 42px !important;
+            margin-bottom: 18px !important;
+            border-bottom: 2.5px solid #cbd5e1;
+            padding-bottom: 8px;
+        }
+
+        h3, .subtopic-title {
+            font-size: 1.38rem !important;
+            line-height: 1.35 !important;
+            margin-top: 26px !important;
+            margin-bottom: 12px !important;
+        }
+
+        h4, .case-title {
+            font-size: 1.2rem !important;
+            line-height: 1.4 !important;
+            margin-top: 18px !important;
+            margin-bottom: 8px !important;
+        }
+
+        p, li, dd, dt {
+            font-family: var(--notes-body) !important;
+            font-size: 18px !important;
+            line-height: 1.72 !important;
+            color: var(--text-black) !important;
+            margin-bottom: 14px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Technical keywords */
+        strong, b, .kw {
+            color: #1e40af !important; /* Bold Royal Cobalt Blue */
+            font-weight: 700 !important;
+        }
+
+        strong.crit, b.crit, .kw-crit {
+            color: #b91c1c !important; /* Bold Crimson Red for strict bans, traps, penalties */
+            font-weight: 700 !important;
+        }
+
+        strong.law, b.law, .kw-law {
+            color: #047857 !important; /* Bold Emerald Green for Standards, Acts, Sections */
+            font-weight: 700 !important;
+        }
+
+        strong.mne, b.mne, .kw-mne {
+            color: #7c3aed !important; /* Bold Purple for Mnemonics & Memory Triggers */
+            font-weight: 700 !important;
+        }
+
+        strong.gold, b.gold, .kw-gold {
+            color: #b45309 !important; /* Warm Amber for key statutory limits, amounts & deadlines */
+            font-weight: 700 !important;
+        }
+
+        .highlight, .important-point {
+            font-family: var(--notes-highlight) !important;
+            font-weight: 700 !important;
+            font-size: 1.35em !important;
+            color: #b45309;
+        }
+
+        /* Topbar Header */
+        .topbar {
+            height: 64px;
+            background: #ffffff;
+            border-bottom: 1px solid var(--slate-200);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+        }
+
+        .topbar-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .toggle-btn {
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            color: var(--slate-700);
+            transition: all 0.2s;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .toggle-btn:hover {
+            background: #e2e8f0;
+            color: #0f172a;
+        }
+
+        .back-hub-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--slate-700);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 6px 12px;
+            border-radius: 8px;
+            background: var(--slate-100);
+            border: 1px solid var(--slate-200);
+            transition: all 0.2s;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .back-hub-btn:hover {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+        }
+
+        .chapter-title {
+            font-size: 15.5px;
+            font-weight: 700;
+            color: var(--slate-900);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 500px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .topbar-right-badge {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+            font-size: 12px;
+            font-weight: 700;
+            background: #eff6ff;
+            color: #1e40af;
+            border: 1px solid #bfdbfe;
+            padding: 5px 12px;
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Layout */
+        .layout-container {
+            display: flex;
+            max-width: 1600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* Sidebar Navigation Index */
+        .sidebar {
+            width: 320px;
+            height: calc(100vh - 64px);
+            position: sticky;
+            top: 64px;
+            overflow-y: auto;
+            border-right: 1px solid var(--slate-200);
+            background: #ffffff;
+            padding: 20px 16px;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar.hidden {
+            width: 0;
+            padding: 0;
+            overflow: hidden;
+            border: none;
+        }
+
+        .sidebar-header {
+            font-size: 11.5px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--slate-600);
+            margin-bottom: 14px;
+            padding-left: 6px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 0;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 7px 11px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--slate-700);
+            text-decoration: none;
+            transition: all 0.2s;
+            border-left: 3px solid transparent;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .sidebar a:hover {
+            background: var(--slate-100);
+            color: var(--primary);
+            padding-left: 14px;
+        }
+
+        .sidebar a.active {
+            background: var(--primary-light);
+            color: var(--primary);
+            border-left-color: var(--primary);
+            font-weight: 700;
+        }
+
+        /* Main Content Container */
+        .main-content {
+            flex: 1;
+            padding: 34px 44px 100px 44px;
+            max-width: 1040px;
+            margin: 0 auto;
+        }
+
+        /* Hero Header Banner */
+        .chapter-hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            color: #ffffff;
+            border-radius: 18px;
+            padding: 36px 32px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px -4px rgba(15, 23, 42, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-tag-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(8px);
+            padding: 4px 12px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #93c5fd;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .hero-title {
+            color: #ffffff !important;
+            font-family: var(--notes-heading) !important;
+            font-size: 2.35rem !important;
+            font-weight: 400;
+            line-height: 1.25;
+            margin-bottom: 10px;
+        }
+
+        .hero-desc {
+            font-size: 16px;
+            color: #cbd5e1;
+            max-width: 860px;
+            line-height: 1.65;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .hero-meta-row {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 12.5px;
+            font-weight: 600;
+            color: #e2e8f0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        /* Case Box */
+        .case-scenario-box {
+            background: #fff8f1;
+            border: 1.5px solid #fed7aa;
+            border-left: 6px solid #f97316;
+            border-radius: 12px;
+            padding: 22px 24px;
+            margin: 24px 0;
+            box-shadow: 0 4px 12px rgba(249, 115, 22, 0.05);
+        }
+
+        .case-header {
+            font-family: var(--notes-heading) !important;
+            font-size: 1.35rem;
+            color: #c2410c;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Callout Boxes */
+        .mnemonic-box {
+            background: #faf5ff;
+            border: 1.5px solid #d8b4fe;
+            border-left: 6px solid #7c3aed;
+            border-radius: 12px;
+            padding: 22px 24px;
+            margin: 24px 0;
+            box-shadow: 0 4px 12px rgba(124, 58, 237, 0.05);
+        }
+
+        .mnemonic-header {
+            font-family: var(--notes-heading) !important;
+            font-size: 1.4rem;
+            color: #6b21a8;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .trap-box {
+            background: #fffbeb;
+            border: 1.5px solid #fde68a;
+            border-left: 6px solid #d97706;
+            border-radius: 12px;
+            padding: 22px 24px;
+            margin: 24px 0;
+            box-shadow: 0 4px 12px rgba(217, 119, 6, 0.05);
+        }
+
+        .trap-header {
+            font-family: var(--notes-heading) !important;
+            font-size: 1.4rem;
+            color: #92400e;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .concept-card {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: 14px;
+            padding: 24px 26px;
+            margin: 24px 0;
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+            border-top: 4px solid #2563eb;
+        }
+
+        .concept-card-title {
+            font-family: var(--notes-heading) !important;
+            font-size: 1.45rem;
+            color: #1e3a8a;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Flowcharts & Decision Cards */
+        .flowchart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .flow-step-card {
+            background: #ffffff;
+            border: 1.5px solid #cbd5e1;
+            border-radius: 10px;
+            padding: 16px 18px;
+            position: relative;
+        }
+
+        .flow-step-num {
+            font-family: var(--notes-table) !important;
+            font-size: 11px;
+            font-weight: 800;
+            color: #2563eb;
+            background: #eff6ff;
+            padding: 2px 8px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+
+        .flow-step-title {
+            font-size: 1.2rem;
+            color: #0f172a;
+            font-weight: 700;
+            margin-bottom: 6px;
+            font-family: var(--notes-heading) !important;
+        }
+
+        /* Tables strictly in Arial */
+        table, .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+            border: 1px solid #cbd5e1;
+            font-family: var(--notes-table) !important;
+            font-size: 14.5px !important;
+        }
+
+        th {
+            background: #1e3a8a;
+            color: #ffffff;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 700;
+            border: 1px solid #1e3a8a;
+            font-family: var(--notes-table) !important;
+            font-size: 14px !important;
+        }
+
+        td {
+            padding: 11px 16px;
+            border: 1px solid #e2e8f0;
+            color: var(--text-black);
+            font-family: var(--notes-table) !important;
+            line-height: 1.55;
+            font-size: 14px !important;
+        }
+
+        tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        /* Accordion / Collapsible Question Cards */
+        .tyk-accordion {
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            border-radius: 12px;
+            margin-bottom: 18px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+        }
+
+        .tyk-header {
+            padding: 18px 22px;
+            background: #f8fafc;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            user-select: none;
+            transition: background 0.2s;
+            border-bottom: 1px solid transparent;
+        }
+
+        .tyk-header:hover {
+            background: #f1f5f9;
+        }
+
+        .tyk-header.active {
+            background: #eff6ff;
+            border-bottom-color: #bfdbfe;
+        }
+
+        .tyk-badge {
+            font-family: var(--notes-table) !important;
+            font-size: 11.5px;
+            font-weight: 800;
+            padding: 3px 9px;
+            border-radius: 6px;
+            background: #2563eb;
+            color: #ffffff;
+            margin-right: 10px;
+        }
+
+        .tyu-badge {
+            font-family: var(--notes-table) !important;
+            font-size: 11.5px;
+            font-weight: 800;
+            padding: 3px 9px;
+            border-radius: 6px;
+            background: #059669;
+            color: #ffffff;
+            margin-right: 10px;
+        }
+
+        .tyk-title-text {
+            font-family: var(--notes-heading) !important;
+            font-size: 1.25rem;
+            color: #0f172a;
+            font-weight: 700;
+        }
+
+        .tyk-toggle-arrow {
+            font-size: 14px;
+            color: var(--slate-600);
+            transition: transform 0.2s ease;
+        }
+
+        .tyk-header.active .tyk-toggle-arrow {
+            transform: rotate(180deg);
+            color: #2563eb;
+        }
+
+        .tyk-body {
+            padding: 22px 24px;
+            display: none;
+            background: #ffffff;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .tyk-body.open {
+            display: block;
+        }
+
+        .tyk-question-box {
+            background: #f8fafc;
+            border-left: 4px solid #64748b;
+            padding: 14px 18px;
+            margin-bottom: 18px;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+        }
+
+        .tyk-answer-box {
+            padding-left: 4px;
+        }
+
+        .step-heading {
+            font-family: var(--notes-heading) !important;
+            font-size: 1.15rem;
+            color: #1e40af;
+            font-weight: 700;
+            margin-top: 14px;
+            margin-bottom: 4px;
+        }
+
+        /* Bottom Chapter Navigation */
+        .chapter-nav-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 2px solid #e2e8f0;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .chapter-nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 22px;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .chapter-nav-prev {
+            background: #f1f5f9;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+        }
+
+        .chapter-nav-prev:hover {
+            background: #e2e8f0;
+            color: #0f172a;
+            transform: translateX(-3px);
+        }
+
+        .chapter-nav-next {
+            background: linear-gradient(135deg, #1e40af, #2563eb);
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+        }
+
+        .chapter-nav-next:hover {
+            background: linear-gradient(135deg, #1d4ed8, #1e40af);
+            transform: translateX(3px);
+            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+        }
+
+        /* Mathematical equation box */
+        .math-box {
+            background: #f0fdf4;
+            border: 1.5px solid #86efac;
+            border-left: 6px solid #16a34a;
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 18px 0;
+            font-family: var(--notes-table) !important;
+            font-size: 16px;
+            color: #14532d;
+            box-shadow: 0 2px 6px rgba(22, 163, 74, 0.06);
+        }
+
+        .math-box .formula {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: #166534;
+            margin-bottom: 6px;
+        }
+
+        @media (max-width: 900px) {
+            .sidebar {
+                display: none;
+            }
+            .main-content {
+                padding: 20px 16px 80px 16px;
+            }
+            .hero-title {
+                font-size: 1.85rem !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Reading Progress Bar -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Top Sticky Header -->
+    <header class="topbar">
+        <div class="topbar-left">
+            <button class="toggle-btn" onclick="toggleSidebar()" title="Toggle Index Sidebar">☰ Menu</button>
+            <a href="../../notes/audnotes.html" class="back-hub-btn">← Audit Hub</a>
+            <span class="chapter-title">Ch 4: Materiality, Risk Assessment &amp; Internal Control</span>
+        </div>
+        <div class="topbar-right">
+            <span class="topbar-right-badge">🎯 ICAI Module Zero-Omission Master</span>
+        </div>
+    </header>
+
+    <div class="layout-container">
+
+        <!-- Sidebar Quick Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">Quick Index • Chapter 4</div>
+            <ul>
+                <li><a href="#hero-banner">📌 Chapter Overview</a></li>
+                <li><a href="#opening-scenario">🎬 Opening Scenario: CA Y &amp; SALY Trap</a></li>
+                <li><a href="#sec-1">1. Materiality &amp; Risk Assessment</a></li>
+                <li><a href="#sec-1-1">1.1 Identification of Risks</a></li>
+                <li><a href="#sec-1-2">1.2 Audit Risk Components &amp; Math</a></li>
+                <li><a href="#sec-assertions">📋 SA 315 Financial Statement Assertions</a></li>
+                <li><a href="#sec-two-levels">⚖️ Two Levels of Risk Assessment (FS vs Assertion)</a></li>
+                <li><a href="#sec-illustration-1">🔍 Illustration 1: Purchases Without Valid POs</a></li>
+                <li><a href="#sec-2">2. Risk-Based Audit Approach (RBA)</a></li>
+                <li><a href="#sec-2-1">2.1 Audit Risk Analysis</a></li>
+                <li><a href="#sec-2-2">2.2 Three General Steps in RBA</a></li>
+                <li><a href="#tyu-section-1">💡 TYU 1 &amp; 2 (Insurance &amp; NGO)</a></li>
+                <li><a href="#sec-3">3. Internal Control: Nature, Scope &amp; Objectives</a></li>
+                <li><a href="#sec-3-3">3.3 Four Statutory Objectives of IC</a></li>
+                <li><a href="#sec-3-4">3.4 Structure &amp; Internal Check System</a></li>
+                <li><a href="#sec-4">4. Components of Internal Control (CRIME)</a></li>
+                <li><a href="#sec-4-1">4.1 Control Environment</a></li>
+                <li><a href="#sec-4-2">4.2 Entity's Risk Assessment Process (9 Triggers)</a></li>
+                <li><a href="#sec-4-3">4.3 Control Activities &amp; SOD</a></li>
+                <li><a href="#sec-4-4">4.4 Information System &amp; Communication</a></li>
+                <li><a href="#sec-4-5">4.5 Monitoring of Controls &amp; Internal Audit</a></li>
+                <li><a href="#tyu-section-2">💡 TYU 3 &amp; 4 (RK Living Silvassa &amp; Sales Budgets)</a></li>
+                <li><a href="#sec-5">5. Review of System of Internal Controls</a></li>
+                <li><a href="#sec-6">6. Evaluation Techniques (ICQ, Checklist, Flowchart)</a></li>
+                <li><a href="#sec-7">7. Reporting Deficiencies under SA 265</a></li>
+                <li><a href="#tyu-section-3">💡 TYU 5 (CA S / Uninsured Asset Risk)</a></li>
+                <li><a href="#sec-8">8. Frameworks of Internal Control (COSO, CoCo, Turnbull, SOX, IFC)</a></li>
+                <li><a href="#tyk-section">📝 Test Your Knowledge (TYK 1 to 15 Solved)</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Study Notes -->
+        <main class="main-content">
+
+            <!-- Hero Banner -->
+            <section class="chapter-hero" id="hero-banner">
+                <span class="hero-tag-pill">Paper 3 • Advanced Auditing &amp; Professional Ethics</span>
+                <h1 class="hero-title">Materiality, Risk Assessment &amp; Internal Control</h1>
+                <p class="hero-desc">
+                    Comprehensive master handwritten notes covering the full architecture of <strong style="color:#93c5fd;">SA 315</strong>, <strong style="color:#93c5fd;">SA 320</strong>, <strong style="color:#93c5fd;">SA 330</strong>, and <strong style="color:#93c5fd;">SA 265</strong>. Features the complete mathematical audit risk model, the CRIME internal control components, internal check protocols, evaluation techniques (ICQ, Checklists, Flowcharts), international frameworks (COSO, CoCo, Turnbull, SOX 404), Indian Companies Act 2013 IFCoFR statutory mandates, and zero-omission solutions for all 5 TYUs and 15 TYKs.
+                </p>
+                <div class="hero-meta-row">
+                    <span class="hero-badge">⚖️ SA 315 • SA 320 • SA 330 • SA 265</span>
+                    <span class="hero-badge">📊 Audit Risk Model: AR = IR × CR × DR</span>
+                    <span class="hero-badge">🧠 CRIME &amp; COSO 17 Principles</span>
+                    <span class="hero-badge">🏢 IFCoFR Sec 134(5)(e) &amp; 143(3)(i)</span>
+                </div>
+            </section>
+
+            <!-- Opening Case Scenario -->
+            <section id="opening-scenario">
+                <div class="case-scenario-box">
+                    <div class="case-header">🎬 Practical Opening Scenario: CA Y &amp; The SALY ("Same As Last Year") Trap</div>
+                    <p>
+                        <strong class="kw">CA Y</strong> has been serving as the statutory auditor of a dynamic manufacturing company for the last three years. As he prepared for the upcoming audit cycle, an uncomfortable question struck him: <em>"Is conducting a full risk assessment practically useful every single year? Can't we simply adopt the <strong class="kw-crit">SALY approach</strong> (Same As Last Year) since the business operations appear largely unchanged?"</em>
+                    </p>
+                    <p>
+                        To resolve this dilemma, CA Y attended an advanced technical webinar on audit effectiveness. The session illuminated critical insights:
+                    </p>
+                    <ul>
+                        <li><strong class="kw">Mandatory Legal &amp; Professional Duty:</strong> Assessing audit risk is not an optional academic exercise—it is explicitly mandated by <strong class="law">SA 315</strong> and <strong class="law">SA 320</strong>. A dynamic risk assessment directly drives <strong class="kw">audit effectiveness and audit quality</strong>.</li>
+                        <li><strong class="kw">Risks Are Never Static:</strong> Even if the client's core operations seem unchanged, external factors evolve rapidly: amendments in taxation or corporate laws, emergence of technological disruptions, supply chain shifts, inflationary cost pressures, or changes in senior management. The auditor's risk assessment must reflect these ground realities.</li>
+                        <li><strong class="kw">Business Risk Linkage:</strong> Understanding client <strong class="kw">business risks</strong> (e.g., loss of a key customer, cyber threats, raw material shortages) and evaluating the company's strategies to mitigate them allows the auditor to identify areas where <strong class="kw-crit">Risk of Material Misstatement (RMM)</strong> spikes.</li>
+                        <li><strong class="kw">Control Deficiencies &amp; Missing Controls:</strong> Evaluating internal control systems pinpoints specific gaps where controls are deficient or entirely non-existent, causing <strong class="kw-crit">Control Risk (CR)</strong> to escalate.</li>
+                        <li><strong class="kw">Saving the Auditor's Skin (Legal Defense):</strong> Identifying and communicating <strong class="kw-crit">significant deficiencies in internal control</strong> to Those Charged with Governance (TCWG) under <strong class="law">SA 265</strong> induces boardroom action and serves as crucial contemporaneous documentation protecting the auditor against future allegations of negligence!</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 1: Materiality & Risk Assessment -->
+            <section id="sec-1">
+                <h2 class="section-heading">1. Materiality &amp; Risk Assessment (SA 320 &amp; SA 315)</h2>
+                <p>
+                    As per <strong class="law">SA 320 "Materiality in Planning and Performing an Audit"</strong>, the concept of materiality is applied by the auditor both in <strong class="kw">planning and performing the audit</strong>, and in <strong class="kw">evaluating the effect of identified misstatements</strong> on the audit and of <strong class="kw">uncorrected misstatements</strong>, if any, on the financial statements, and in <strong class="kw">forming the opinion</strong> in the auditor's report.
+                </p>
+                <p>
+                    Materiality and audit risk are considered throughout the audit, in particular when:
+                </p>
+                <ol>
+                    <li>Identifying and assessing the risks of material misstatement (<strong class="law">SA 315</strong>).</li>
+                    <li>Determining the nature, timing, and extent (<strong class="kw">NTE</strong>) of further audit procedures (<strong class="law">SA 330</strong>).</li>
+                    <li>Evaluating the effect of uncorrected misstatements on the financial statements and forming the auditor's opinion (<strong class="law">SA 450 &amp; SA 700</strong>).</li>
+                </ol>
+
+                <div class="concept-card">
+                    <div class="concept-card-title">🔍 Core Focus Areas of Risk Assessment</div>
+                    <p>
+                        <strong class="kw">Risk assessment</strong> assesses the level of risk across various business processes. It focuses specifically on:
+                    </p>
+                    <ul>
+                        <li><strong class="kw">Business Environment:</strong> Market conditions, competitive forces, customer demand, and technological advancements.</li>
+                        <li><strong class="kw">Regulatory Environment:</strong> Specific industry regulations, environmental laws, labour codes, and tax frameworks.</li>
+                        <li><strong class="kw">Organizational Structure:</strong> Decentralized operations, branch networks, delegation of authority, and reporting hierarchies.</li>
+                        <li><strong class="kw">Environmental &amp; Operational Changes:</strong> New product launches, enterprise software migrations (ERP), mergers, or restructuring.</li>
+                        <li><strong class="kw">Specific Concerns:</strong> Matters flagged by executive management, internal auditors, or the Audit Committee.</li>
+                    </ul>
+                </div>
+
+                <!-- 1.1 Identification of Risks -->
+                <div id="sec-1-1">
+                    <h3 class="subtopic-title">1.1 Identification of Risks &amp; Audit Risk Definition</h3>
+                    <p>
+                        <strong class="kw">Audit Risk</strong> is defined as the risk that the auditor expresses an <strong class="kw-crit">inappropriate audit opinion</strong> when the financial statements are materially misstated. Audit risk is a function of the <strong class="kw-crit">risks of material misstatement (RMM)</strong> and <strong class="kw-gold">detection risk (DR)</strong>.
+                    </p>
+                </div>
+
+                <!-- 1.2 Audit Risk Components & Math -->
+                <div id="sec-1-2">
+                    <h3 class="subtopic-title">1.2 Audit Risk Components &amp; Mathematical Relationship</h3>
+                    <p>
+                        Audit risk comprises three distinct components, structured across client-level risks (pre-existing prior to audit) and auditor-level risks:
+                    </p>
+
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 20%;">Component</th>
+                                <th style="width: 40%;">ICAI Standard Definition</th>
+                                <th style="width: 40%;">Practical Commentary &amp; Auditor Focus</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong class="kw">Inherent Risk (IR)</strong><br><span style="font-size:12px; color:#64748b;">(Client Level)</span></td>
+                                <td>The susceptibility of an assertion about a class of transaction, account balance, or disclosure to a misstatement that could be material, either individually or when aggregated with other misstatements, <strong class="kw-crit">assuming that there were no related internal controls</strong>. Addressed at both the overall financial statement level and the assertion level.</td>
+                                <td>
+                                    Arises from the entity's nature, industry, and external environment. High-risk areas include:
+                                    <ul style="margin:4px 0 0 16px; font-size:13.5px;">
+                                        <li>Complex calculations prone to mathematical error.</li>
+                                        <li>High-value, portable inventory susceptible to theft.</li>
+                                        <li>Accounting estimates with severe measurement uncertainty.</li>
+                                        <li>Declining or volatile industry facing frequent business failures.</li>
+                                        <li>Rapid technological changes causing product obsolescence.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong class="kw">Control Risk (CR)</strong><br><span style="font-size:12px; color:#64748b;">(Client Level)</span></td>
+                                <td>The risk that a misstatement that could occur in an assertion about a class of transaction, account balance, or disclosure and that could be material, individually or when aggregated, <strong class="kw-crit">will not be prevented, or detected and corrected, on a timely basis by the entity's internal control</strong>.</td>
+                                <td>
+                                    Management is responsible for designing, implementing, and maintaining internal controls. Entity-level controls (board oversight, ITGC, HR policies) are pervasive, while activity-level controls relate to specific assertions. Due to <strong class="kw-crit">inherent limitations</strong>, control risk can <strong class="kw-crit">never be zero</strong>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong class="kw">Detection Risk (DR)</strong><br><span style="font-size:12px; color:#64748b;">(Auditor Level)</span></td>
+                                <td>The risk that the procedures performed by the auditor to reduce audit risk to an acceptably low level <strong class="kw-crit">will not detect a misstatement that exists</strong> and that could be material, individually or when aggregated with other misstatements.</td>
+                                <td>
+                                    Detection risk is strictly within the auditor's control. It arises from:
+                                    <ul style="margin:4px 0 0 16px; font-size:13.5px;">
+                                        <li>Selecting an inappropriate audit procedure;</li>
+                                        <li>Misapplying an appropriate audit procedure; or</li>
+                                        <li>Misinterpreting results obtained from audit procedures.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="math-box">
+                        <div class="formula">📐 Mathematical Formulation of the Audit Risk Model</div>
+                        <p style="margin-bottom:8px; font-weight:700;">
+                            Audit Risk (AR) = Inherent Risk (IR) × Control Risk (CR) × Detection Risk (DR)
+                        </p>
+                        <p style="margin-bottom:8px;">
+                            Since <strong class="kw">Risk of Material Misstatement (RMM) = Inherent Risk (IR) × Control Risk (CR)</strong>, the formula simplifies to:
+                        </p>
+                        <p style="font-weight:700; color:#1e40af; font-size:1.1rem; margin-bottom:10px;">
+                            Audit Risk (AR) = Risk of Material Misstatement (RMM) × Detection Risk (DR)
+                        </p>
+                        <div style="font-size:14.5px; line-height:1.6; color:#1f2937;">
+                            <strong>Critical Mathematical Relationships:</strong><br>
+                            1. <strong class="kw-crit">Inverse Relationship between RMM and DR:</strong> For a given target level of Audit Risk, the acceptable level of Detection Risk bears an <em>inverse relationship</em> to the assessed RMM. If RMM is High, acceptable DR must be Low (requiring extensive, rigorous substantive testing). If RMM is Low, acceptable DR can be Higher.<br>
+                            2. <strong class="kw-gold">Inverse Relationship between Materiality and Audit Risk:</strong> There is an inverse relationship between Materiality and the level of Audit Risk. The higher the materiality level, the lower the audit risk, and vice versa. The auditor takes this inverse relationship into account when determining the nature, timing, and extent of audit procedures.
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <div class="concept-card-title">📊 Illustration: Acceptable Detection Risk Matrix</div>
+                        <p>The interrelationship between Inherent Risk, Control Risk, and Detection Risk is illustrated below:</p>
+                        <table class="styled-table" style="text-align:center;">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2" style="text-align:center; vertical-align:middle;">Auditor's Assessment of Control Risk</th>
+                                    <th colspan="3" style="text-align:center;">Auditor's Assessment of Inherent Risk</th>
+                                </tr>
+                                <tr>
+                                    <th style="text-align:center; background:#1e40af;">High</th>
+                                    <th style="text-align:center; background:#1e40af;">Medium</th>
+                                    <th style="text-align:center; background:#1e40af;">Low</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>High</strong></td>
+                                    <td style="color:#b91c1c; font-weight:700; background:#fef2f2;">Lowest</td>
+                                    <td style="color:#c2410c; font-weight:700; background:#fff7ed;">Lower</td>
+                                    <td style="color:#b45309; font-weight:700; background:#fffbeb;">Medium</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Medium</strong></td>
+                                    <td style="color:#c2410c; font-weight:700; background:#fff7ed;">Lower</td>
+                                    <td style="color:#b45309; font-weight:700; background:#fffbeb;">Medium</td>
+                                    <td style="color:#047857; font-weight:700; background:#f0fdf4;">Higher</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Low</strong></td>
+                                    <td style="color:#b45309; font-weight:700; background:#fffbeb;">Medium</td>
+                                    <td style="color:#047857; font-weight:700; background:#f0fdf4;">Higher</td>
+                                    <td style="color:#047857; font-weight:800; background:#dcfce7;">Highest</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Management Assertions -->
+                <div id="sec-assertions">
+                    <h3 class="subtopic-title">📋 Management Assertions under SA 315</h3>
+                    <p>
+                        Financial statements represent representations made by management about recognition, measurement, presentation, and disclosure of economic events. For example, management of ABC Ltd asserts that sales records contain all transactions (<strong class="kw">completeness</strong>), that transactions took place and are valid (<strong class="kw">occurrence</strong>), and have been properly recorded in the correct period (<strong class="kw">accuracy and cut-off</strong>).
+                    </p>
+
+                    <div class="flowchart-grid">
+                        <div class="flow-step-card" style="border-top:4px solid #2563eb;">
+                            <span class="flow-step-num">Category A</span>
+                            <div class="flow-step-title">Classes of Transactions &amp; Events (P&amp;L)</div>
+                            <ul style="font-size:15px; padding-left:18px;">
+                                <li><strong class="kw">Occurrence:</strong> Transactions and events recorded have occurred and pertain to entity.</li>
+                                <li><strong class="kw">Completeness:</strong> All transactions and events that should have been recorded have been recorded.</li>
+                                <li><strong class="kw">Accuracy:</strong> Amounts and other data have been recorded appropriately.</li>
+                                <li><strong class="kw">Cut-off:</strong> Transactions recorded in the correct accounting period.</li>
+                                <li><strong class="kw">Classification:</strong> Transactions recorded in proper nominal ledger accounts.</li>
+                            </ul>
+                        </div>
+
+                        <div class="flow-step-card" style="border-top:4px solid #059669;">
+                            <span class="flow-step-num">Category B</span>
+                            <div class="flow-step-title">Account Balances at Period End (Balance Sheet)</div>
+                            <ul style="font-size:15px; padding-left:18px;">
+                                <li><strong class="kw">Existence:</strong> Assets, liabilities, and equity interests exist.</li>
+                                <li><strong class="kw">Rights and Obligations:</strong> Entity holds or controls the rights to assets, and liabilities are obligations of the entity.</li>
+                                <li><strong class="kw">Completeness:</strong> All assets, liabilities, and equity interests that should have been recorded have been included.</li>
+                                <li><strong class="kw">Valuation and Allocation:</strong> Assets, liabilities, and equity are included at appropriate amounts, including valuation adjustments.</li>
+                            </ul>
+                        </div>
+
+                        <div class="flow-step-card" style="border-top:4px solid #7c3aed;">
+                            <span class="flow-step-num">Category C</span>
+                            <div class="flow-step-title">Presentation &amp; Disclosure (Notes to Accounts)</div>
+                            <ul style="font-size:15px; padding-left:18px;">
+                                <li><strong class="kw">Occurrence, Rights &amp; Obligations:</strong> Disclosed events have occurred and pertain to entity.</li>
+                                <li><strong class="kw">Completeness:</strong> All disclosures that should have been included in the FS have been included.</li>
+                                <li><strong class="kw">Classification &amp; Understandability:</strong> Financial information is appropriately presented and described, and disclosures clearly expressed.</li>
+                                <li><strong class="kw">Accuracy &amp; Valuation:</strong> Financial and other information are disclosed fairly and at appropriate amounts.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Two Levels of Risk Assessment -->
+                <div id="sec-two-levels">
+                    <h3 class="subtopic-title">⚖️ Two Levels of Assessing Risks of Material Misstatement</h3>
+                    <p>
+                        Auditors are required to assess the risks of material misstatement at <strong class="kw">two distinct levels</strong>:
+                    </p>
+                    <ol>
+                        <li>
+                            <strong class="kw">Overall Financial Statement Level:</strong> Refers to risks of material misstatement that relate <strong class="kw-crit">pervasively to the financial statements as a whole</strong> and potentially affect many assertions.
+                            <br><em>ICAI Example 2:</em> If the top accountant is not competent enough, errors could occur across the entire financial statements. Such errors will not be confined to a single account balance or assertion (e.g. completeness of sales), but will pervade accuracy, existence, and valuation across multiple financial statement heads.
+                        </li>
+                        <li>
+                            <strong class="kw">Assertion Level:</strong> Relates to risks identifiable with specific assertions at the class of transactions, account balance, or disclosure level (Completeness, Existence, Accuracy, Valuation).
+                            <br><em>ICAI Example 3:</em> While considering the valuation assertion, the auditor could assess the risk of error in payables as low; however, for inventory where obsolescence is a major factor, the auditor would assess the valuation risk as high. Similarly, risks due to completeness (missing items) in inventory may be low, but high in relation to sales.
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- ICAI Illustration 1: Purchases Without Valid POs -->
+                <div id="sec-illustration-1">
+                    <div class="case-scenario-box" style="border-left-color: #2563eb; background:#eff6ff;">
+                        <div class="case-header" style="color: #1e40af;">🔍 ICAI Illustration 1: Purchases Without Valid Purchase Orders</div>
+                        <p><strong>Background:</strong> During the process of extracting exception reports, the auditors noted numerous purchase entries without valid purchase orders.</p>
+                        <p><strong>Analysis:</strong> In terms of percentage, about <strong class="kw-crit">40% of purchases were made without valid purchase orders</strong>, and a few purchase orders were validated only after the actual purchase took place. Furthermore, there was no reconciliation between the goods received and the goods ordered.</p>
+                        <p><strong>Assertion Affected:</strong> <strong class="kw">Validity of purchases</strong> (Occurrence &amp; Accuracy).</p>
+                        <p><strong>Pervasive / Account Balance Level:</strong> <strong class="kw">Account Balance Level</strong>.</p>
+                        <p><strong>Account Balances Affected:</strong> (i) Purchases, and (ii) Accounts Payable / Trade Payables.</p>
+                        <p class="step-heading">Audit Procedures Addressing Validity of Account Balance:</p>
+                        <ul style="font-size:15px;">
+                            <li>Select a sample of purchases; review correspondence with vendors, internal purchase requisitions, and vendor account reconciliations.</li>
+                            <li>Review vendor listing along with ageing details; follow up material amounts paid before normal credit periods and analyse reasons for exceptions.</li>
+                            <li>Meet with the company's purchase officer and obtain formal responses to inquiries regarding purchases made without POs.</li>
+                            <li>Discuss a formal summary of such control issues with client management and TCWG.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Risk-Based Audit Approach -->
+            <section id="sec-2">
+                <h2 class="section-heading">2. Risk-Based Audit Approach (RBA)</h2>
+                <p>
+                    Under a modern <strong class="kw">Risk-Based Audit (RBA)</strong> approach, the auditor does not distribute audit effort equally across all balances. Instead, audit resources are directed proactively to areas carrying the <strong class="kw-crit">highest risk of material misstatement</strong>.
+                </p>
+
+                <div id="sec-2-1">
+                    <h3 class="subtopic-title">2.1 Audit Risk Analysis</h3>
+                    <p>
+                        Audit risk analysis evaluates the probability and potential monetary magnitude of misstatements across various operational cycles. The auditor distinguishes between:
+                    </p>
+                    <ul>
+                        <li><strong class="kw">Business Risks:</strong> Risks resulting from significant conditions, events, circumstances, actions, or inactions that could adversely affect an entity's ability to achieve its objectives and execute its strategies.</li>
+                        <li><strong class="kw">Audit Risks:</strong> The risk that the auditor fails to detect material misstatements resulting from these business risks in the financial statements.</li>
+                    </ul>
+                </div>
+
+                <div id="sec-2-2">
+                    <h3 class="subtopic-title">2.2 General Steps in the Conduct of Risk-Based Audit</h3>
+                    <p>The execution of an RBA spans three sequential phases:</p>
+
+                    <div class="flowchart-grid">
+                        <div class="flow-step-card" style="border-left:5px solid #2563eb;">
+                            <span class="flow-step-num">Phase 1</span>
+                            <div class="flow-step-title">Risk Assessment Phase</div>
+                            <p style="font-size:14.5px;">
+                                • Perform preliminary engagement activities (<strong class="law">SA 220 &amp; SQC 1</strong>).<br>
+                                • Plan overall engagement and determine materiality (<strong class="law">SA 300 &amp; 320</strong>).<br>
+                                • Perform Risk Assessment Procedures (RAP): inquiries, analytical procedures, observation, and inspection (<strong class="law">SA 315</strong>).<br>
+                                • Understand entity, environment, and internal controls (Design &amp; Implementation - D&amp;I).<br>
+                                • Assess RMM at Financial Statement level and Assertion level.<br>
+                                • Identify <strong class="kw-crit">Significant Risks</strong> requiring special audit consideration.
+                            </p>
+                        </div>
+
+                        <div class="flow-step-card" style="border-left:5px solid #059669;">
+                            <span class="flow-step-num">Phase 2</span>
+                            <div class="flow-step-title">Risk Response Phase</div>
+                            <p style="font-size:14.5px;">
+                                • Develop overall responses to FS-level risks (assign experienced staff, increase skepticism).<br>
+                                • Design and perform Further Audit Procedures (FAP) under <strong class="law">SA 330</strong>.<br>
+                                • Conduct Tests of Controls (TOC) to evaluate operating effectiveness.<br>
+                                • Address automated processing where substantive procedures alone are insufficient.<br>
+                                • Perform substantive procedures (Tests of Details &amp; Analytical Procedures).<br>
+                                • Introduce an <strong class="kw-gold">element of unpredictability</strong> in audit procedures.<br>
+                                • Test journal entries to counter <strong class="kw-crit">management override of controls</strong>.
+                            </p>
+                        </div>
+
+                        <div class="flow-step-card" style="border-left:5px solid #7c3aed;">
+                            <span class="flow-step-num">Phase 3</span>
+                            <div class="flow-step-title">Reporting Phase</div>
+                            <p style="font-size:14.5px;">
+                                • Evaluate sufficiency and appropriateness of audit evidence obtained.<br>
+                                • Determine whether assessed level of risk changed during audit fieldwork.<br>
+                                • Evaluate impact of identified and uncorrected misstatements (<strong class="law">SA 450</strong>).<br>
+                                • Communicate internal control deficiencies to TCWG &amp; management (<strong class="law">SA 265</strong>).<br>
+                                • Formulate independent audit opinion under <strong class="law">SA 700 / 705 / 706</strong>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="trap-box">
+                        <div class="trap-header">⚡ Examiner Trap: Re-evaluating Preliminary Assessment of Control Risk</div>
+                        <p>
+                            Before concluding the audit, the auditor must assess whether the preliminary assessment of control risk is confirmed by the results of substantive procedures and tests of controls.
+                        </p>
+                        <p>
+                            If deviations are discovered, the auditor must make specific inquiries to understand their cause and implications. If the auditor concludes that the preliminary low assessment of control risk is <strong class="kw-crit">not supported</strong>, he must <strong class="kw-crit">increase the assessed level of control risk</strong> and correspondingly <strong class="kw-crit">expand the nature, timing, and extent (NTE) of substantive procedures</strong>!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Test Your Understanding 1 & 2 -->
+            <section id="tyu-section-1">
+                <h3 class="section-title">💡 Test Your Understanding (TYU 1 &amp; 2 Solved)</h3>
+
+                <!-- TYU 1 -->
+                <div class="tyk-accordion" id="accordion-tyu-1">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyu-badge">TYU 1</span>
+                            <span class="tyk-title-text">Insurance Divisional Office: Surveyor Delegation Bypass</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> CA R is conducting statutory audit of a Divisional office (DO) of a public sector insurance company. On going through delegation of powers laid down by company's head office, it is noticed that surveyors in claims under property insurance policies beyond estimated amounts of ₹30 lac are to be appointed by Divisional Claims Committee (DCC). However, ongoing through surveyor appointment details of 10 such claims during the year, 5 instances have come to his notice where above delegation of powers has not been followed and appointments were made by Divisional manager in place of DCC. In the beginning, the auditor had assessed risks of material misstatement to be low. Describe why the above finding would change auditor's assessment in relation to above.
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. ICAI Solution Analysis:</p>
+                            <p>
+                                Evaluation of internal controls influences the auditor's assessment of risks of material misstatement. Risks of material misstatement also consist of control risk.
+                            </p>
+                            <p class="step-heading">2. Deviation from Established Controls:</p>
+                            <p>
+                                In the statutory audit of the Divisional office, procedure relating to delegation of powers was violated: surveyor appointments were made unilaterally by the Divisional Manager instead of the Divisional Claims Committee in 5 out of 10 cases (50% deviation). This is a <strong class="kw-crit">serious violation</strong> demonstrating that controls are <strong class="kw-crit">not operating effectively</strong> as laid down by company management.
+                            </p>
+                            <p class="step-heading">3. Impact on Substantive Procedures:</p>
+                            <p>
+                                Such deviations from established controls lead the auditor to conclude that <strong class="kw-crit">control risk needs to be revised upward</strong>. Revision of control risk leads directly to an increase in the assessed <strong class="kw-crit">risk of material misstatement (RMM)</strong>. Consequently, CA R must modify and expand the <strong class="kw">nature, timing, and extent (NTE)</strong> of planned substantive procedures—including independent examination of surveyed claims and verifying surveyor assessments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYU 2 -->
+                <div class="tyk-accordion" id="accordion-tyu-2">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyu-badge">TYU 2</span>
+                            <span class="tyk-title-text">NGO in Democracy Advocacy: Foreign Donations &amp; FCRA Risk</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> You have recently been appointed as an auditor of NGO working in the field of "upholding democracy" for the first time. The last year accounts of NGO were unaudited and its activities were limited at a small scale. However, it is only in the current year that NGO has received substantial donations including foreign funds. The said NGO is also crowdfunding its donations. The government has now legislative power to cancel FCRA certificate of NGO. Since it is working in a field which encompasses political and social fields, accusations and counter-accusations are flying thick and fast. What factors you may consider for assessing audit risk?
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. ICAI Assessment of All Audit Risk Components:</p>
+                            <p>For assessing audit risk, the auditor shall evaluate all components of audit risk (Inherent Risk, Control Risk, and Detection Risk):</p>
+                            <p class="step-heading">2. Inherent Risk Considerations (High):</p>
+                            <ul>
+                                <li>The NGO is operating in a political-cum-social field, making its core activities inherently risky.</li>
+                                <li>Crowdfunding donations must be examined in relation to the constitution/trust deed of the NGO.</li>
+                                <li>Receipt of foreign funds carries high inherent risk; the credibility and integrity of persons behind the NGO is paramount, as shady NGOs can be involved in money laundering or misutilizing donor funds.</li>
+                                <li>Unaudited last year accounts increase inherent risk due to the probable carry-forward effect of opening misstatements (<strong class="law">SA 510</strong>).</li>
+                                <li>Risk of non-compliance with strict FCRA laws carries severe consequences, including cancellation of registration (<strong class="law">SA 250 &amp; SA 570</strong>).</li>
+                            </ul>
+                            <p class="step-heading">3. Control Risk Considerations (High):</p>
+                            <p>
+                                Because the NGO scaled up rapidly in the current year from a small scale, formal internal controls may be absent or non-existent. Lack of formal controls increases the probability of non-compliance with statutory regulations.
+                            </p>
+                            <p class="step-heading">4. Detection Risk Considerations:</p>
+                            <p>
+                                Since the audit is accepted for the first time, the auditor lacks historical familiarity with the NGO's systems. This may lead to higher detection risk due to inappropriate sampling or faulty audit procedures unless extensive substantive testing is planned.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Internal Control System -->
+            <section id="sec-3">
+                <h2 class="section-heading">3. Internal Control System: Nature, Scope, Objectives &amp; Structure</h2>
+                <p>
+                    A comprehensive set of internally generated policies and procedures adopted by management is a prerequisite for an organization's efficient and effective functioning. Creating and maintaining an adequate system of internal control appropriate to the size and complexity of the business is a <strong class="kw">primary and non-delegable responsibility of management and Those Charged with Governance (TCWG)</strong>.
+                </p>
+
+                <!-- 3.1 Nature of Internal Control -->
+                <div id="sec-3-1">
+                    <h3 class="subtopic-title">3.1 Nature of Internal Control &amp; Standard Definition</h3>
+                    <p>
+                        As per <strong class="law">SA 315</strong>, <strong class="kw">Internal Control</strong> is defined as:
+                    </p>
+                    <div class="concept-card" style="border-left:5px solid #2563eb;">
+                        <p style="font-size:16.5px; line-height:1.7; margin-bottom:0;">
+                            <em>"The process designed, implemented, and maintained by Those Charged with Governance, management, and other personnel to provide <strong class="kw-gold">reasonable assurance</strong> about the achievement of an entity's objectives with regard to:</em><br>
+                            &nbsp;&nbsp;1. <strong class="kw">Reliability of financial reporting</strong>,<br>
+                            &nbsp;&nbsp;2. <strong class="kw">Effectiveness and efficiency of operations</strong>,<br>
+                            &nbsp;&nbsp;3. <strong class="kw">Safeguarding of assets</strong>, and<br>
+                            &nbsp;&nbsp;4. <strong class="kw">Compliance with applicable laws and regulations</strong>."
+                        </p>
+                    </div>
+
+                    <p>
+                        When obtaining audit evidence about the effective operation of internal controls, the auditor considers:
+                        <br>• <strong class="kw">How they were applied</strong>;
+                        <br>• <strong class="kw">The consistency with which they were applied</strong> during the period; and
+                        <br>• <strong class="kw">By whom they were applied</strong>.
+                    </p>
+
+                    <p>
+                        <em>Deviations in Effective Operation:</em> The concept of effective operation recognizes that some deviations may have occurred (caused by staff turnover, significant seasonal volume fluctuations, or human error). When deviations are detected, the auditor makes specific inquiries regarding the timing of staff changes in key control functions and ensures that tests of controls appropriately cover such periods of fluctuation.
+                    </p>
+
+                    <p>
+                        <em>ICAI Example 5:</em> The auditor might obtain audit evidence about proper segregation of duties by observing the individual who applies a control procedure. However, observation pertains only to the point in time at which the procedure was applied. The auditor may decide to supplement observation with inquiry, inspection of reports, or testing controls throughout the period. If substantially different controls were in use at different times (e.g. ERP changeover mid-year), the auditor would consider each separately.
+                    </p>
+
+                    <div class="trap-box">
+                        <div class="trap-header">⚠️ Critical Principle: Reasonable Assurance vs. Absolute Assurance</div>
+                        <p>
+                            Internal control, no matter how sophisticated and well-designed, can provide management and the auditor with only <strong class="kw-gold">reasonable assurance</strong>—and <strong class="kw-crit">NEVER absolute assurance</strong>—that operational, financial reporting, and compliance objectives will be achieved.
+                        </p>
+                        <p>
+                            This is due to the <strong class="kw-crit">inherent limitations of internal control</strong>, which include:
+                        </p>
+                        <ul>
+                            <li><strong class="kw">Cost-Benefit Constraint:</strong> Management's consideration that the cost of an internal control does not exceed the expected benefits to be derived.</li>
+                            <li><strong class="kw">Human Vulnerability:</strong> The fact that most controls tend to be directed at routine rather than unusual transactions; potential for human error due to carelessness, distraction, errors of judgment, or misunderstanding of instructions.</li>
+                            <li><strong class="kw">Collusion:</strong> The possibility of circumvention of internal controls through collusion with employees or with parties outside the entity.</li>
+                            <li><strong class="kw">Abuse of Authority / Management Override:</strong> The possibility that a person responsible for exercising an internal control could abuse that responsibility (e.g. a member of management overriding controls).</li>
+                            <li><strong class="kw">Manipulations by Management:</strong> Manipulations with respect to transactions or estimates and judgments required in preparing financial statements.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 3.2 Scope of Internal Controls -->
+                <div id="sec-3-2">
+                    <h3 class="subtopic-title">3.2 Scope of Internal Controls</h3>
+                    <p>
+                        The scope of internal controls extends beyond mere accounting controls and includes administrative controls, operational workflows, and statutory compliance mechanisms.
+                    </p>
+                    <p>
+                        In an independent financial audit, the auditor is primarily concerned with those policies and procedures within accounting and internal control systems that are relevant to the financial statement assertions.
+                    </p>
+                    <ul>
+                        <li><em>ICAI Example 6 (Operational Data):</em> If production statistics were used as a basis for an analytical procedure, the controls to ensure the accuracy of such statistics would be relevant to the audit.</li>
+                        <li><em>ICAI Example 6 (Legal Compliance):</em> If non-compliance with certain laws and regulations has a direct and material effect on the financial statements, controls over such compliance are directly relevant.</li>
+                    </ul>
+                </div>
+
+                <!-- 3.3 Four Statutory Objectives of Internal Control -->
+                <div id="sec-3-3">
+                    <h3 class="subtopic-title">3.3 Objectives of the Internal Control System</h3>
+                    <p>
+                        The objectives of internal control relating to the accounting system ensure that transactions processed are <strong class="kw">complete, valid, and accurate</strong>:
+                    </p>
+
+                    <div class="flowchart-grid">
+                        <div class="flow-step-card" style="border-top:4px solid #1e40af;">
+                            <span class="flow-step-num">Objective 1</span>
+                            <div class="flow-step-title">Management Authorization</div>
+                            <p style="font-size:14.5px;">
+                                Transactions are executed strictly in accordance with management's <strong class="kw">general or specific authorization</strong>.
+                            </p>
+                        </div>
+
+                        <div class="flow-step-card" style="border-top:4px solid #059669;">
+                            <span class="flow-step-num">Objective 2</span>
+                            <div class="flow-step-title">Proper Accounting Recording</div>
+                            <p style="font-size:14.5px;">
+                                All transactions are promptly recorded in an appropriate manner to permit preparation of financial statements and maintain accountability for assets.
+                            </p>
+                        </div>
+
+                        <div class="flow-step-card" style="border-top:4px solid #d97706;">
+                            <span class="flow-step-num">Objective 3</span>
+                            <div class="flow-step-title">Safeguarding Assets</div>
+                            <p style="font-size:14.5px;">
+                                Assets and records are safeguarded from unauthorized access, use, or disposition.
+                            </p>
+                        </div>
+
+                        <div class="flow-step-card" style="border-top:4px solid #7c3aed;">
+                            <span class="flow-step-num">Objective 4</span>
+                            <div class="flow-step-title">Periodic Physical Verification</div>
+                            <p style="font-size:14.5px;">
+                                Assets are verified at reasonable intervals and appropriate action is taken with regard to discrepancies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <p>
+                        <em>ICAI Example 7:</em> In case it is found that sales transactions are not being properly valued in accordance with price lists, the auditor would concentrate on seeing that invoices are priced accurately and recoverable amounts are correctly posted. He may also want to expand his confirmation requests at year-end to cover a larger sample of trade receivables.
+                    </p>
+                </div>
+
+                <!-- 3.4 Structure of Internal Control & Internal Check -->
+                <div id="sec-3-4">
+                    <h3 class="subtopic-title">3.4 Structure of Internal Control &amp; Five Foundational Elements</h3>
+                    <p>
+                        In order to achieve control objectives, it is necessary to establish adequate control policies and procedures across five elements:
+                    </p>
+
+                    <div class="concept-card">
+                        <div class="concept-card-title">🏗️ Five Structural Elements of Internal Control</div>
+                        <ol style="font-size:15px; line-height:1.7;">
+                            <li>
+                                <strong class="kw">3.4.1 Segregation of Duties (SOD):</strong> Transaction processing is allocated to different persons so that no single person handles all aspects of a transaction from beginning to end:
+                                <br>&nbsp;&nbsp;(a) <em>Authorization of transactions</em>;
+                                <br>&nbsp;&nbsp;(b) <em>Execution of transactions</em>;
+                                <br>&nbsp;&nbsp;(c) <em>Physical custody of related assets</em>; and
+                                <br>&nbsp;&nbsp;(d) <em>Maintenance of records and documents</em>.
+                                <br><em>Periodic Rotation:</em> Periodic rotation of personnel duties is highly desirable to prevent fatigue, eliminate complacency, avoid collusion, and develop alternative capable personnel.
+                            </li>
+                            <li>
+                                <strong class="kw">3.4.2 Authorization of Transactions:</strong> Delegation of financial and operational authority to specified levels and designated officers.
+                            </li>
+                            <li>
+                                <strong class="kw">3.4.3 Adequacy of Records and Documents:</strong> Accounting controls should ensure that:
+                                <br>&nbsp;&nbsp;(i) Transactions are executed in accordance with management authorization;
+                                <br>&nbsp;&nbsp;(ii) Transactions and events are promptly recorded at correct amounts;
+                                <br>&nbsp;&nbsp;(iii) Transactions are classified in appropriate accounts and in the proper period;
+                                <br>&nbsp;&nbsp;(iv) Recording facilitates preparation of financial statements in conformity with applicable FRF;
+                                <br>&nbsp;&nbsp;(v) Recording facilitates maintaining accountability for assets;
+                                <br>&nbsp;&nbsp;(vi) Assets and records are protected from unauthorized access or use;
+                                <br>&nbsp;&nbsp;(vii) Sufficient descriptive records of assets (identification and location) are maintained.
+                            </li>
+                            <li>
+                                <strong class="kw">3.4.4 Accountability and Safeguarding of Assets:</strong> Accountability commences right from asset acquisition through disposal. Fixed assets register, inventory bin cards, and physical security measures.
+                            </li>
+                            <li>
+                                <strong class="kw">3.4.5 Independent Checks:</strong> Independent verification of control systems, surprise counts, bank reconciliations, and critical reviews by internal auditors.
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="concept-card" style="border-top:4px solid #059669;">
+                        <div class="concept-card-title">🛡️ Internal Check System &amp; General Operating Conditions</div>
+                        <p>
+                            <strong class="kw">Internal Check</strong> implies an organization of the overall system of bookkeeping and accounting duties where staff duties are arranged such that the day-to-day work of one employee is complementary to and automatically checked by another employee.
+                        </p>
+                        <p style="font-weight:700; color:#1e40af; margin-bottom:6px;">Objectives of Internal Check:</p>
+                        <ul style="font-size:14.5px; margin-bottom:12px;">
+                            <li>To detect errors and frauds with ease and speed.</li>
+                            <li>To minimize commission of errors and frauds by any staff member.</li>
+                            <li>To increase staff operational efficiency.</li>
+                            <li>To locate the specific stage or responsibility area where error/fraud occurred.</li>
+                            <li>To prevent embezzlement of cash and falsification of accounts.</li>
+                        </ul>
+                        <p style="font-weight:700; color:#1e40af; margin-bottom:6px;">General Conditions Pertaining to Internal Check (ICAI 10 Principles):</p>
+                        <ol style="font-size:14px; line-height:1.6;">
+                            <li><strong class="kw-crit">No single person</strong> should have complete control over any important aspect of business operations.</li>
+                            <li>Staff duties should be <strong class="kw">rotated periodically</strong>.</li>
+                            <li>Every staff member should be encouraged to take <strong class="kw">annual leave</strong>.</li>
+                            <li>Persons having <strong class="kw-crit">physical custody of assets must not have access to books of account</strong>.</li>
+                            <li>Accounting control over each class of asset, supported by periodic physical verification.</li>
+                            <li>Mechanical devices (biometrics, cash registers, POS) should be used wherever practicable.</li>
+                            <li>Budgetary control should be exercised and wide deviations reconciled.</li>
+                            <li>For year-end inventory taking, trading activities should, if possible, be suspended.</li>
+                            <li>Financial and administrative powers should be distributed judiciously.</li>
+                            <li>Procedures laid down for periodical verification of different accounting records.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: Components of Internal Control -->
+            <section id="sec-4">
+                <h2 class="section-heading">4. Components of Internal Control (The CRIME Framework)</h2>
+                <p>
+                    In accordance with <strong class="law">SA 315</strong>, an internal control system consists of <strong class="kw">five interrelated components</strong>:
+                </p>
+
+                <div class="mnemonic-box">
+                    <div class="mnemonic-header">🧠 Universal Mnemonic: C - R - I - M - E</div>
+                    <div style="font-size:16px; line-height:1.7;">
+                        • <strong class="kw-mne">C</strong> = <strong class="kw">Control Environment</strong> (Foundational tone at the top)<br>
+                        • <strong class="kw-mne">R</strong> = <strong class="kw">Risk Assessment Process</strong> of the Entity<br>
+                        • <strong class="kw-mne">I</strong> = <strong class="kw">Information System</strong> &amp; Related Business Processes &amp; Communication<br>
+                        • <strong class="kw-mne">M</strong> = <strong class="kw">Monitoring of Controls</strong> (Ongoing &amp; separate evaluations)<br>
+                        • <strong class="kw-mne">E</strong> = <strong class="kw">Existing Control Activities</strong> (Policies &amp; procedures enforcing management directives)
+                    </div>
+                </div>
+
+                <!-- 4.1 Control Environment -->
+                <div id="sec-4-1">
+                    <h3 class="subtopic-title">4.1 Control Environment (Foundational Component)</h3>
+                    <p>
+                        The control environment sets the tone of an organization, influencing the control consciousness of its people. Key elements evaluated by the auditor include:
+                    </p>
+                    <ul>
+                        <li><strong class="kw">Communication &amp; Enforcement of Integrity and Ethical Values:</strong> Code of conduct, whistleblower mechanisms, and removal of incentives that encourage unethical acts.</li>
+                        <li><strong class="kw">Commitment to Competence:</strong> Matching employee skills with requisite knowledge and training.</li>
+                        <li><strong class="kw">Participation by TCWG:</strong> Independence from management, experience, stature, and active oversight of financial reporting.</li>
+                        <li><strong class="kw">Management's Philosophy &amp; Operating Style:</strong> Approach to taking and managing business risks, attitudes toward financial reporting, and accounting estimates.</li>
+                        <li><strong class="kw">Organizational Structure:</strong> Clear framework for planning, executing, controlling, and reviewing activities.</li>
+                        <li><strong class="kw">Assignment of Authority &amp; Responsibility:</strong> Clear reporting relationships and authorization hierarchies.</li>
+                        <li><strong class="kw">Human Resource Policies &amp; Practices:</strong> Standards for hiring, orientation, training, evaluating, counseling, promoting, and compensating personnel.</li>
+                    </ul>
+                </div>
+
+                <!-- 4.2 Entity's Risk Assessment Process -->
+                <div id="sec-4-2">
+                    <h3 class="subtopic-title">4.2 Entity's Risk Assessment Process (9 Circumstances Where Risks Arise)</h3>
+                    <p>
+                        How management identifies business risks relevant to financial reporting, estimates their significance, assesses likelihood, and decides actions to address them.
+                    </p>
+                    <div class="concept-card">
+                        <div class="concept-card-title">⚡ 9 Specific Circumstances Giving Rise to Changed / Increased Risks (ICAI Para 4.2)</div>
+                        <ol style="font-size:14.5px; line-height:1.65;">
+                            <li><strong class="kw">(a) Changes in Operating Environment:</strong> Changes in regulatory or operating environments can result in changes in competitive pressures and significantly different risks.</li>
+                            <li><strong class="kw">(b) New Personnel:</strong> New personnel may have a different focus on or understanding of internal control.</li>
+                            <li><strong class="kw">(c) New or Revamped Information Systems:</strong> Significant and rapid changes in IT systems can change the risk pertaining to internal control.</li>
+                            <li><strong class="kw">(d) Rapid Growth:</strong> Significant and rapid expansion of operations can strain controls and increase the risk of a breakdown in controls.</li>
+                            <li><strong class="kw">(e) New Technology:</strong> Incorporating new technologies into production processes or information systems may change the risk associated with internal control.</li>
+                            <li><strong class="kw">(f) New Business Models, Products, or Activities:</strong> Entering into business areas or transactions with which an entity has little experience may introduce new risks.</li>
+                            <li><strong class="kw">(g) Corporate Restructurings:</strong> Restructurings, divestitures, or acquisitions may be accompanied by staff reductions and changes in supervision and segregation of duties.</li>
+                            <li><strong class="kw">(h) Expanded Foreign Operations:</strong> Expansion into foreign operations carries new and unique risks (currency volatility, foreign compliance).</li>
+                            <li><strong class="kw">(i) New Accounting Pronouncements:</strong> Adoption of new accounting principles or changing frameworks (e.g. Ind AS standards) may affect risks in preparing financial statements.</li>
+                        </ol>
+                    </div>
+
+                    <div class="trap-box">
+                        <div class="trap-header">⚡ Examiner Trap: What If Management Failed to Identify a Risk?</div>
+                        <p>
+                            If the auditor identifies risks of material misstatement that management failed to identify:
+                        </p>
+                        <ul>
+                            <li>The auditor must determine whether an underlying risk of that kind ought to have been identified by the entity's risk assessment process.</li>
+                            <li>If such a risk existed and was missed, the auditor shall evaluate <strong class="kw-crit">why the entity's process failed to identify it</strong>, and whether the process is appropriate to its circumstances.</li>
+                            <li>The auditor shall determine whether this represents a <strong class="kw-crit">significant deficiency in internal control under SA 265</strong>!</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 4.3 Control Activities -->
+                <div id="sec-4-3">
+                    <h3 class="subtopic-title">4.3 Control Activities &amp; Segregation of Duties</h3>
+                    <p>Policies and procedures ensuring management directives are carried out. Categories:</p>
+                    <ul>
+                        <li><strong class="kw">(a) Performance Reviews:</strong> Analyses of actual performance vs. budgets, forecasts, and prior periods; relating different sets of operating or financial data to one another; investigative and corrective actions.</li>
+                        <li><strong class="kw">(b) Information Processing:</strong> General IT Controls (ITGC) and Application Controls (field checks, automated limits).</li>
+                        <li><strong class="kw">(c) Physical Controls:</strong> Physical security over assets, authorization for access to computer programs and data files, and periodic counting and comparison with control records.</li>
+                        <li><strong class="kw">(d) Segregation of Duties:</strong> Assigning different personnel responsibilities of authorizing transactions, recording transactions, and maintaining custody of assets.</li>
+                    </ul>
+                </div>
+
+                <!-- 4.4 Information System & Communication -->
+                <div id="sec-4-4">
+                    <h3 class="subtopic-title">4.4 Information System, Relevant Business Processes &amp; Communication</h3>
+                    <p>The information system relevant to financial reporting objectives ensures the entity:</p>
+                    <ul style="font-size:15px;">
+                        <li>Identifies and records all valid transactions;</li>
+                        <li>Describes transactions on a timely basis in sufficient detail to permit proper classification;</li>
+                        <li>Measures transaction values properly in financial statements;</li>
+                        <li>Determines the correct time period in which transactions occurred (proper accounting period); and</li>
+                        <li>Presents transactions and related disclosures properly in financial statements.</li>
+                    </ul>
+                </div>
+
+                <!-- 4.5 Monitoring of Controls -->
+                <div id="sec-4-5">
+                    <h3 class="subtopic-title">4.5 Monitoring of Controls &amp; Role of Internal Audit</h3>
+                    <p>
+                        Ongoing monitoring (built into recurring activities like supervisory reconciliations) and separate periodic evaluations (internal audit). If management does not monitor reconciliations, personnel are likely to stop preparing them!
+                    </p>
+                </div>
+            </section>
+
+            <!-- Test Your Understanding 3 & 4 -->
+            <section id="tyu-section-2">
+                <h3 class="section-title">💡 Test Your Understanding (TYU 3 &amp; 4 Solved)</h3>
+
+                <!-- TYU 3 -->
+                <div class="tyk-accordion" id="accordion-tyu-3">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyu-badge">TYU 3</span>
+                            <span class="tyk-title-text">RK Living Limited: Raw Material in Transit &amp; Invoice Date Booking Flaw</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> RK Living Limited is engaged in manufacturing and processing of textile fabrics. It purchases its raw material from a company based in Silvassa taxable @ 12%. It takes about 3-4 days for raw materials to reach the company's plant. Recently, the company has revamped its internal control system for recording its transactions. You have also assumed charge as head of the internal audit department of the company a few days before. It is noticed that the information system requires booking of purchases in purchase ledger and stock records from date of purchase invoice only. How would you deal with the above matter as internal auditor of the company?
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. Role of Internal Audit:</p>
+                            <p>
+                                Internal audit involves continuous and critical appraisal of the functioning of an entity with a view to suggest improvements and add value to strengthen overall governance, strategic risk management, and internal controls. It evaluates control design, implementation, and operating effectiveness.
+                            </p>
+                            <p class="step-heading">2. Analysis of the Control Flaw in RK Living Limited:</p>
+                            <ul>
+                                <li>The information system requires booking purchases in the purchase ledger and stock records from the <strong class="kw-crit">date of purchase invoice only</strong>.</li>
+                                <li>Because goods take 3-4 days in transit from Silvassa, booking upon invoice date shows stock as received when the goods are actually in transit.</li>
+                                <li>This presents a <strong class="kw-crit">distorted picture of company stocks</strong> (overstating physical factory inventory and understating goods-in-transit).</li>
+                                <li>Furthermore, availing Input Tax Credit (ITC) under GST laws prior to actual physical receipt of goods violates statutory conditions of Section 16(2) of the CGST Act.</li>
+                            </ul>
+                            <p class="step-heading">3. Internal Auditor's Action:</p>
+                            <p>
+                                The design of the control itself is faulty. The internal auditor should report this significant deficiency to management, recommending that stock records and purchases be booked only upon physical receipt and verification via Goods Receipt Notes (GRN), or that a separate "Goods-in-Transit" accounting mechanism be established.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYU 4 -->
+                <div class="tyk-accordion" id="accordion-tyu-4">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyu-badge">TYU 4</span>
+                            <span class="tyk-title-text">Quarterly Sales Budgets vs Actuals: Component Identification</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> A company as part of its internal control set up has a system under which quarterly budgeted targets in respect of sales are analysed with respect to actual performance achieved. It also involves fixing responsibilities of different product departmental heads and taking timely correction. In case of product departmental heads not achieving quarterly budgeted targets, they have to give a detailed justification for the same and also lay down how shortfalls would be compensated in ensuing quarters. Identify and explain component of internal control alluded to in above scenario.
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. Component Identification:</p>
+                            <p>
+                                The referred component of internal control is <strong class="kw">"Control Activities"</strong>.
+                            </p>
+                            <p class="step-heading">2. Specific Sub-Category — Performance Reviews:</p>
+                            <ul>
+                                <li>Control activities that may be relevant to an audit include policies and procedures that pertain to <strong class="kw">"Performance Reviews"</strong>.</li>
+                                <li>Such control activities include reviews and analyses of actual performance versus budgets, forecasts, and prior period performance; relating different sets of data (operating or financial) to one another; and taking investigative and corrective actions.</li>
+                                <li>In the given scenario, analyzing budgeted sales targets against actual performance, fixing departmental responsibilities, and requiring justifications with compensatory action plans represents <strong class="kw">performance reviews</strong> within the Control Activities component.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5: Review of System of Internal Controls -->
+            <section id="sec-5">
+                <h2 class="section-heading">5. Review of the System of Internal Controls</h2>
+                <p>
+                    The review of internal controls enables the auditor:
+                    <br>(i) To formulate his opinion as to the reliance he may place on the system; and
+                    <br>(ii) To locate areas of weakness so that the audit programme and NTE of procedures can be adjusted.
+                </p>
+                <div class="concept-card">
+                    <div class="concept-card-title">⚙️ Manual vs. Automated Elements in Internal Control</div>
+                    <p>
+                        Manual elements are more suitable where judgment and discretion are required:
+                    </p>
+                    <ul>
+                        <li>Large, unusual, or non-recurring transactions;</li>
+                        <li>Circumstances where errors are difficult to define, anticipate, or predict;</li>
+                        <li>Changing circumstances requiring a control response outside the scope of an automated control; and</li>
+                        <li>Monitoring the effectiveness of automated controls.</li>
+                    </ul>
+                    <p>
+                        <em>ICAI Example 9:</em> If the auditor is not satisfied with the control system regarding trade receivables, he may decide to have extensive confirmation requests at year-end.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 6: Internal Control Evaluation Techniques -->
+            <section id="sec-6">
+                <h2 class="section-heading">6. Internal Control Assessment &amp; Evaluation Techniques</h2>
+                <p>Auditors employ four primary techniques to evaluate and document internal controls:</p>
+
+                <div id="sec-6-1-1">
+                    <h3 class="subtopic-title">6.1.1 Internal Control Questionnaire (ICQ)</h3>
+                    <p>
+                        Structured list of questions with "Yes", "No", and "N/A" options. A <strong class="kw-crit">"No" answer prima facie indicates a weakness</strong> requiring further inquiry and audit testing.
+                    </p>
+                </div>
+
+                <div id="sec-6-1-2">
+                    <h3 class="subtopic-title">6.1.2 Check List</h3>
+                    <p>
+                        A checklist contains instructions and verification points that the <strong class="kw">audit staff must directly verify and answer</strong> during fieldwork (e.g. verifying three-way matching, checking pre-numbering of GRNs).
+                    </p>
+                </div>
+
+                <div id="sec-6-1-3">
+                    <h3 class="subtopic-title">6.1.3 Flow Chart Technique</h3>
+                    <p>
+                        Graphic representation of client systems using standard geometric symbols (Document, Process, Decision, Permanent/Temporary File, Flow Direction). Offers a bird's eye view, highlights bottlenecks, and facilitates easy updates.
+                    </p>
+                </div>
+
+                <div id="sec-6-1-4">
+                    <h3 class="subtopic-title">6.1.4 Narrative Records</h3>
+                    <p>
+                        Written description of system; best suited for small entities with simple workflows.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 7: Reporting Deficiencies under SA 265 -->
+            <section id="sec-7">
+                <h2 class="section-heading">7. Reporting to Clients on Internal Control Weaknesses (SA 265)</h2>
+                <p>
+                    Under <strong class="law">SA 265</strong>, the auditor has a mandatory duty to communicate <strong class="kw-crit">significant deficiencies in internal control in writing to Those Charged with Governance (TCWG)</strong> on a timely basis.
+                </p>
+                <div class="trap-box">
+                    <div class="trap-header">📋 Definition &amp; Mandatory Contents of Management Letter</div>
+                    <p>
+                        A <strong class="kw-crit">deficiency</strong> exists when a control is unable to prevent/detect misstatements on a timely basis or is missing. It is a <strong class="kw-crit">significant deficiency</strong> when it merits TCWG attention.
+                    </p>
+                    <p>The written communication (Management Letter / Letter of Weakness) must include:</p>
+                    <ol>
+                        <li>Description of deficiencies and potential effects.</li>
+                        <li>Context disclaimers:
+                            <br>• Purpose of audit was to express an opinion on financial statements, not on internal control effectiveness;
+                            <br>• Internal control was considered only to design audit procedures;
+                            <br>• Matters reported are limited to those identified during audit considered significant.
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Test Your Understanding 5 -->
+            <section id="tyu-section-3">
+                <h3 class="section-title">💡 Test Your Understanding (TYU 5 Solved)</h3>
+
+                <div class="tyk-accordion" id="accordion-tyu-5">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyu-badge">TYU 5</span>
+                            <span class="tyk-title-text">CA S: Internal Control Inability to Capture Due Insurance Premiums</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> CA S is statutory auditor of a listed company. On reviewing internal controls of the company, he is of the view that there can be possible situations where insurance premiums for keeping insurance policies current in respect of various assets of company may have become due and payable but internal control systems established by the company may not be able to capture it. Elaborate how he should proceed to deal with the above matter.
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. Deficiency Definition under SA 265:</p>
+                            <p>A deficiency in internal control exists when:</p>
+                            <ul>
+                                <li>A control is designed, implemented, or operated in such a way that it is unable to prevent, or detect and correct, misstatements in the financial statements on a timely basis; or</li>
+                                <li>A control necessary to prevent, or detect and correct, misstatements is missing.</li>
+                            </ul>
+                            <p class="step-heading">2. Analysis of the Insurance Premium Lapse:</p>
+                            <p>
+                                The internal control system fails to capture insurance premiums that have become due and payable. This is a <strong class="kw-crit">significant deficiency</strong> because failure to keep insurance policies current renders company assets <strong class="kw-crit">uninsured</strong>, exposing the company to catastrophic losses in the event of fire, accident, or theft.
+                            </p>
+                            <p class="step-heading">3. Criteria for Significant Deficiency:</p>
+                            <p>
+                                Under <strong class="law">SA 265</strong>, significance depends not only on whether a misstatement has actually occurred, but on the likelihood that it could occur and its potential magnitude. The <strong class="kw">susceptibility to loss of an asset</strong> is a primary factor determining significance.
+                            </p>
+                            <p class="step-heading">4. Required Communication:</p>
+                            <p>
+                                CA S must communicate this significant deficiency in <strong class="kw-crit">writing</strong> to Those Charged with Governance, detailing:
+                                <br>(a) A description of the deficiency and an explanation of its potential effects (uninsured assets, potential major loss); and
+                                <br>(b) Sufficient information to understand the context of the audit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 8: Frameworks of Internal Control -->
+            <section id="sec-8">
+                <h2 class="section-heading">8. Frameworks of Internal Control (Global &amp; Indian Statutory)</h2>
+                <div class="flowchart-grid">
+                    <div class="flow-step-card" style="border-top:4px solid #1e40af;">
+                        <span class="flow-step-num">COSO 2013</span>
+                        <div class="flow-step-title">COSO Framework (USA)</div>
+                        <p style="font-size:14px;">3 Objectives, 5 Components, and 17 Principles represented in the 3D Cube.</p>
+                    </div>
+                    <div class="flow-step-card" style="border-top:4px solid #059669;">
+                        <span class="flow-step-num">CoCo</span>
+                        <div class="flow-step-title">CoCo Framework (Canada)</div>
+                        <p style="font-size:14px;">4 Elements: Purpose, Commitment, Capability, Monitoring &amp; Learning.</p>
+                    </div>
+                    <div class="flow-step-card" style="border-top:4px solid #d97706;">
+                        <span class="flow-step-num">Turnbull</span>
+                        <div class="flow-step-title">Turnbull Guidance (UK)</div>
+                        <p style="font-size:14px;">Risk-based internal controls embedded in normal operations; annual board reviews.</p>
+                    </div>
+                    <div class="flow-step-card" style="border-top:4px solid #7c3aed;">
+                        <span class="flow-step-num">SOX 404</span>
+                        <div class="flow-step-title">Sarbanes-Oxley Act (USA)</div>
+                        <p style="font-size:14px;">Integrated audit: Sec 404(a) management report + Sec 404(b) auditor attestation on ICFR.</p>
+                    </div>
+                </div>
+
+                <div id="sec-8-2">
+                    <h3 class="subtopic-title">8.2 Indian Statutory Mandates under Companies Act, 2013</h3>
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Provision</th>
+                                <th>Governing Body</th>
+                                <th>Statutory Mandate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong class="law">Section 134(5)(e)</strong></td>
+                                <td>Board of Directors (Listed Companies)</td>
+                                <td>Directors' Responsibility Statement must state that internal financial controls (IFC) are laid down, adequate, and operating effectively.</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="law">Section 143(3)(i)</strong></td>
+                                <td>Statutory Auditor</td>
+                                <td>Auditor's report must state whether company has adequate Internal Financial Controls with reference to Financial Statements (IFCoFR) and their operating effectiveness.</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="law">Rule 8(5)(viii)</strong> of Accounts Rules</td>
+                                <td>Board's Report</td>
+                                <td>Details on adequacy of internal financial controls with reference to financial statements.</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="law">CARO 2020 Clause (xi) &amp; (xiv)</strong></td>
+                                <td>Statutory Auditor</td>
+                                <td>Clause (xi) on fraud reporting; Clause (xiv) on internal audit system commensurate with size and consideration of reports.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Section 9: Test Your Knowledge (TYK 1 to 15 Solved) -->
+            <section id="tyk-section">
+                <h2 class="section-heading">📝 Test Your Knowledge (TYK 1 to 15 Solved)</h2>
+                <p>
+                    All 15 theoretical, practical, and mathematical case study questions from the ICAI Study Material, solved with step-by-step authoritative analysis, standard references, and exam scoring keywords.
+                </p>
+
+                <!-- TYK 1 -->
+                <div class="tyk-accordion" id="accordion-tyk-1">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyk-badge">TYK 1</span>
+                            <span class="tyk-title-text">Benchmark Selection for Overall Materiality under SA 320</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> CA B was appointed as the auditor of ABC Limited for the financial year 2025-26. During the course of planning for the audit, CA B intends to apply the concept of materiality for the financial statements as a whole. Please guide him with respect to the factors that may affect the identification of an appropriate benchmark for this purpose. What benchmark should be adopted by CA B, if ABC Limited is engaged in:
+                            <br>(i) The manufacture and sale of air conditioners and is having regular profits.
+                            <br>(ii) The construction of large infrastructure projects and incurred losses in the previous two financial years, due to pandemic.
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. Legal &amp; Professional Framework (SA 320):</p>
+                            <p>
+                                As per <strong class="law">SA 320 "Materiality in Planning and Performing an Audit"</strong>, determining materiality involves the exercise of professional judgment. A percentage is often applied to a chosen benchmark as a starting point in determining materiality for the financial statements as a whole.
+                            </p>
+                            <p class="step-heading">2. Factors Affecting Identification of an Appropriate Benchmark:</p>
+                            <ul>
+                                <li><strong class="kw">Elements of the Financial Statements:</strong> Assets, liabilities, equity, revenue, expenses.</li>
+                                <li><strong class="kw">User Attention Items:</strong> Whether there are items on which the attention of users of the financial statements tends to be focused (e.g., evaluating financial performance via profit, revenue, or net assets).</li>
+                                <li><strong class="kw">Nature of the Entity, Industry &amp; Life Cycle:</strong> Where the entity is at in its life cycle, and the industry and economic environment in which it operates.</li>
+                                <li><strong class="kw">Ownership &amp; Financing Structure:</strong> If financed solely by debt rather than equity, users may put more emphasis on assets and claims on them than on earnings.</li>
+                                <li><strong class="kw">Relative Volatility of the Benchmark:</strong> A benchmark that fluctuates drastically is unsuitable.</li>
+                            </ul>
+                            <p class="step-heading">3. Guidance for Specific Scenarios:</p>
+                            <p>
+                                <strong>Case (i) — Manufacture and sale of air conditioners with regular profits:</strong><br>
+                                CA B may consider <strong class="kw">Profit Before Tax (PBT) / Earnings</strong> from continuing operations as the appropriate benchmark, as users of a profitable commercial entity focus primarily on operating profits.
+                            </p>
+                            <p>
+                                <strong>Case (ii) — Construction of large infrastructure projects with pandemic losses:</strong><br>
+                                In case ABC Limited incurred losses in the previous two financial years, PBT is volatile and unrepresentative. CA B may consider <strong class="kw">Revenue or Gross Profit</strong> as the benchmark.
+                                <br><em>Alternative ICAI Benchmark:</em> For infrastructure projects/programs, <strong class="kw">Total Cost or Net Cost</strong> (expenses less revenues or expenditure less receipts) may be appropriate. Where an entity has custody of significant assets, <strong class="kw">Total Assets</strong> may also serve as an appropriate benchmark.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYK 2 -->
+                <div class="tyk-accordion" id="accordion-tyk-2">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyk-badge">TYK 2</span>
+                            <span class="tyk-title-text">Components of an Internal Control Framework</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> What are the components of an internal control framework?
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. Five Interrelated Components (CRIME):</p>
+                            <p>As per <strong class="law">SA 315</strong>, an internal control framework comprises five components:</p>
+                            <ol>
+                                <li><strong class="kw">Control Environment:</strong> Sets tone of organization; includes integrity, ethical values, competence, management philosophy, and TCWG oversight.</li>
+                                <li><strong class="kw">Entity's Risk Assessment Process:</strong> How management identifies, estimates, assesses likelihood, and manages business risks relevant to financial reporting.</li>
+                                <li><strong class="kw">Information System &amp; Communication:</strong> Procedures and records initiating, recording, processing, and reporting transactions, resolving processing errors, and communicating reporting roles.</li>
+                                <li><strong class="kw">Control Activities:</strong> Policies and procedures enforcing management directives, including authorization, performance reviews, ITGC/application controls, physical controls, and Segregation of Duties (SOD).</li>
+                                <li><strong class="kw">Monitoring of Controls:</strong> Ongoing monitoring and separate periodic evaluations (such as internal audit) to assess control performance over time.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYK 3 -->
+                <div class="tyk-accordion" id="accordion-tyk-3">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyk-badge">TYK 3</span>
+                            <span class="tyk-title-text">Flow Chart Technique for Evaluation of Internal Control</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> Explain briefly the Flow Chart technique for evaluation of the Internal Control system.
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. Concept &amp; Definition:</p>
+                            <p>
+                                A <strong class="kw">Flow Chart</strong> is a graphic, pictorial representation of an accounting and internal control system. It traces documents and transactions sequentially from inception through processing, authorization, physical handling, and ultimate storage using standard geometrical symbols.
+                            </p>
+                            <p class="step-heading">2. Distinct Advantages over Narrative Records:</p>
+                            <ul>
+                                <li><strong class="kw">Comprehensive Bird's Eye View:</strong> Presents complex multi-departmental procedures on a single visual chart, overcoming the tedium and ambiguity of voluminous written descriptions.</li>
+                                <li><strong class="kw">Instant Identification of Weaknesses:</strong> Easily highlights missing approvals, lack of segregation of duties, bottlenecks, and duplicate workflows.</li>
+                                <li><strong class="kw">Ease of Updating:</strong> Walkthrough tests can verify flowchart accuracy; changes are made simply by altering specific symbols without rewriting entire narratives.</li>
+                                <li><strong class="kw">Standardized Communication:</strong> Facilitates seamless briefing of junior audit team members on client systems.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYK 4 -->
+                <div class="tyk-accordion" id="accordion-tyk-4">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyk-badge">TYK 4</span>
+                            <span class="tyk-title-text">Mathematical Computation of Audit Risk &amp; RMM</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> Compute the overall Audit Risk if looking to the nature of business there are chances that 40% bills of services provided would be defalcated, inquiring on the same matter management has assured that internal control can prevent such defalcation to 75%. At his part the Auditor assesses that the procedure he could apply in the remaining time to complete Audit gives him satisfaction level of detection of frauds &amp; error to an extent of 60%. Analyse the Risk of Material Misstatement and find out the overall Audit Risk.
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. Standards on Auditing Principles (SA 200 &amp; SA 315):</p>
+                            <p>
+                                According to <strong class="law">SA 200</strong>, Audit Risk has two components: Risk of Material Misstatement (RMM) and Detection Risk (DR).
+                                <br><strong class="kw">Audit Risk = Risk of Material Misstatement × Detection Risk</strong>.
+                                <br>And <strong class="kw">Risk of Material Misstatement = Inherent Risk × Control Risk</strong>.
+                            </p>
+                            <p class="step-heading">2. Extraction of Given Parameters:</p>
+                            <ul>
+                                <li><strong class="kw">Inherent Risk (IR):</strong> Susceptibility of service billing to defalcation without controls = 40% = <strong class="kw-gold">0.40</strong>.</li>
+                                <li><strong class="kw">Control Risk (CR):</strong> Since internal control prevents defalcation to 75%, the risk that control fails = 100% - 75% = 25% = <strong class="kw-gold">0.25</strong>.</li>
+                                <li><strong class="kw">Detection Risk (DR):</strong> Auditor's satisfaction level of detection is 60%. Therefore, detection risk = 100% - 60% = 40% = <strong class="kw-gold">0.40</strong>.</li>
+                            </ul>
+                            <p class="step-heading">3. Step-by-Step Mathematical Calculation:</p>
+                            <div class="math-box">
+                                <p style="font-weight:700; margin-bottom:8px;">
+                                    (a) Risk of Material Misstatement (RMM):<br>
+                                    RMM = Inherent Risk × Control Risk = 40% × 25% = <span style="color:#b91c1c; font-size:1.15rem;">10% (or 0.10)</span>
+                                </p>
+                                <p style="font-weight:700; margin-bottom:0;">
+                                    (b) Overall Audit Risk (AR):<br>
+                                    Audit Risk = Risk of Material Misstatement × Detection Risk = 10% × 40% = <span style="color:#1e40af; font-size:1.25rem;">4% (or 0.04)</span>
+                                </p>
+                            </div>
+                            <p class="step-heading">4. Audit Conclusion &amp; Analysis:</p>
+                            <p>
+                                • Chances of material misstatement are reduced to <strong class="kw-crit">10%</strong> by internal controls applied by management.<br>
+                                • Overall <strong class="kw">Audit Risk</strong> is reduced down to <strong class="kw-gold">4%</strong> through the combination of internal controls and auditor substantive procedures.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYK 5 -->
+                <div class="tyk-accordion" id="accordion-tyk-5">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyk-badge">TYK 5</span>
+                            <span class="tyk-title-text">ST Ltd: Steps in the Conduct of a Risk-Based Audit</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> ST Ltd is a growing company and currently engaged in the business of manufacturing of tiles. The company is planning to expand and diversify its operations. The management has increased the focus on the internal controls to ensure better governance. The management had a discussion with the statutory auditors to ensure the steps required to be taken so that the statutory audit is risk based and focused on areas of greatest risk to the achievement of the company's objectives. Please advise the management and the auditor on the steps that should be taken for the same.
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. Implementation of Risk-Based Audit (RBA):</p>
+                            <p>
+                                As outlined under Para 2.2, the conduct of a Risk-Based Audit spans three sequential phases:
+                            </p>
+                            <p class="step-heading">Phase 1: Risk Assessment:</p>
+                            <ul>
+                                <li>Planning overall engagement and determining materiality (<strong class="law">SA 300 &amp; 320</strong>).</li>
+                                <li>Performing risk assessment procedures to understand the tile manufacturing business and identify inherent and control risks.</li>
+                                <li>Identifying relevant internal control procedures and assessing their design and implementation (D&amp;I).</li>
+                                <li>Assessing RMM at financial statement level and assertion level.</li>
+                                <li>Identifying significant risks requiring special audit consideration (e.g. expansion capex, long-term borrowings).</li>
+                                <li>Communicating material weaknesses in control design and implementation to TCWG.</li>
+                            </ul>
+                            <p class="step-heading">Phase 2: Risk Response:</p>
+                            <ul>
+                                <li>Designing and performing further audit procedures (FAP) responding to assessed risks (<strong class="law">SA 330</strong>).</li>
+                                <li>Performing Tests of Controls (TOC) to evaluate operating effectiveness of internal controls.</li>
+                                <li>Performing substantive tests of details and analytical procedures focused on high-risk areas.</li>
+                                <li>Incorporating an element of unpredictability; performing procedures to address management override of controls.</li>
+                            </ul>
+                            <p class="step-heading">Phase 3: Reporting:</p>
+                            <ul>
+                                <li>Assessing audit evidence obtained to determine whether it is sufficient and appropriate.</li>
+                                <li>Determining if there was a change in assessed risk; reporting findings to TCWG (<strong class="law">SA 265</strong>); forming audit opinion (<strong class="law">SA 700</strong>).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYK 6 -->
+                <div class="tyk-accordion" id="accordion-tyk-6">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyk-badge">TYK 6</span>
+                            <span class="tyk-title-text">Y Co. Ltd: Internal Control System over Selling &amp; Collection of Tickets</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> Y Co. Ltd. has five entertainment centers to provide recreational facilities for public especially for children and youngsters at 5 different locations in the peripheral of 200 kilometers. Collections are made in cash. Specify the adequate system towards collection of money.
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. ICAI 8-Point Control System over Selling and Collection of Tickets:</p>
+                            <ol>
+                                <li><strong class="kw">Printing of Tickets:</strong> Serially numbered pre-printed tickets should be used, designed so they cannot be duplicated to avoid forgery. Serial numbers should not repeat in a reasonable period (month or year). Separate series for each denomination/activity.</li>
+                                <li><strong class="kw">Ticket Sales:</strong> Sale of tickets should take place from the Central ticket office at each of the 5 centres, preferably through ticketing machines. Proper control over machine keys.</li>
+                                <li><strong class="kw">Daily Cash Reconciliation:</strong> Cash collected at each office/machine must be reconciled daily with the number of tickets sold using denomination serial numbers.</li>
+                                <li><strong class="kw">Daily Banking:</strong> Each day's collection should be deposited in the bank intact on the next working day. Till that time, cash should be in joint custody of authorized persons who sign the daily cash-in-hand report.</li>
+                                <li><strong class="kw">Entrance Ticket Cancellation:</strong> Entrance tickets must be cancelled (torn/scanned) at the entrance gate when the public enters the centre.</li>
+                                <li><strong class="kw">Advance Booking:</strong> The system should ensure all advance-booked tickets are fully paid for.</li>
+                                <li><strong class="kw">Discounts and Free Passes:</strong> Concessional rates for group bookings must be properly authorized, and signed authorization forms preserved.</li>
+                                <li><strong class="kw">Surprise Checks:</strong> Internal audit system should carry out periodic surprise checks for cash counts, daily banking, reconciliations, and stock of unsold tickets.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYK 7 -->
+                <div class="tyk-accordion" id="accordion-tyk-7">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyk-badge">TYK 7</span>
+                            <span class="tyk-title-text">MINI Builders: Distorted 11-Month Sales Extrapolation (SA 320 &amp; SA 450)</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> While assessing the impact of uncorrected misstatements in the audit of MINI Builders Private Limited, Mr. Gautam encountered a significant issue related to the calculation of materiality on revenue. The initial materiality calculation was based on estimated figures provided by the management. Management, to estimate full-year revenue, extrapolated the sales for 11 months to arrive at a figure for 12 months. However, given the nature of MINI Builders as a company in the construction sector, where monthly sales exhibit substantial variations, a unique challenge emerged. The actual sales for the last month deviated significantly from the estimated sales due to an unexpected slowdown in project completions. As a result, the last month's actual sales represented only 30% of the estimated sales. Now, Mr. Gautam is confronted with a dilemma regarding the appropriate approach to evaluate uncorrected misstatements using the previously calculated materiality. Kindly Guide Mr. Gautam in the light of relevant Standards on Auditing.
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. Reassessment of Materiality (SA 450 &amp; SA 320):</p>
+                            <p>
+                                As per <strong class="law">SA 450</strong>, the auditor is required to reassess materiality in accordance with <strong class="law">SA 320</strong> before evaluating the impact of uncorrected misstatements, to confirm its continued appropriateness in light of the entity's actual financial results.
+                            </p>
+                            <p class="step-heading">2. Revision of Materiality as Audit Progresses:</p>
+                            <ul>
+                                <li>Materiality determination under SA 320 often relies on estimates early in the audit. When actual financial results become known, the auditor must adjust materiality.</li>
+                                <li>As the audit progresses, materiality may be revised for the financial statements as a whole or for specific classes/balances if the auditor becomes aware of information that would have caused a different initial determination.</li>
+                                <li>In MINI Builders, because month 12 actual sales were only 30% of the estimated figure due to project completion slowdowns, actual full-year revenue is substantially lower than estimated.</li>
+                            </ul>
+                            <p class="step-heading">3. Guidance for Mr. Gautam:</p>
+                            <ul>
+                                <li>Mr. Gautam <strong class="kw-crit">must review and reassess materiality downward</strong> based on actual 12-month financial results.</li>
+                                <li>If the reassessed materiality is lower than previously calculated, Mr. Gautam <strong class="kw-crit">must reconsider performance materiality</strong> and the appropriateness of the nature, timing, and extent of further audit procedures.</li>
+                                <li>He must then evaluate all uncorrected misstatements against the revised lower materiality threshold before forming his audit opinion.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYK 8 -->
+                <div class="tyk-accordion" id="accordion-tyk-8">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyk-badge">TYK 8</span>
+                            <span class="tyk-title-text">Magma Ltd: Imported Machinery for New Product under SA 320</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> Deepti &amp; Co., Chartered Accountants, during the audit of Magma Ltd. found that certain machinery had been imported for the production of a new product. Although the auditors have applied the concept of materiality for the financial statements as a whole, what additional considerations apply under SA 320 regarding specific materiality and qualitative factors for this transaction?
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. Materiality for Specific Classes / Account Balances (SA 320):</p>
+                            <p>
+                                As per <strong class="law">SA 320</strong>, when establishing the overall audit strategy, the auditor determines materiality for the financial statements as a whole. If, in specific circumstances, there are particular classes of transactions, account balances, or disclosures for which misstatements of lesser amounts than overall materiality could reasonably influence economic decisions of users, the auditor <strong class="kw">shall also determine specific materiality levels to be applied to those items</strong>.
+                            </p>
+                            <p class="step-heading">2. Revision of Materiality &amp; Performance Materiality:</p>
+                            <p>
+                                The auditor shall revise materiality in the event of becoming aware of information that would have caused a different initial amount. If a lower materiality is concluded, the auditor shall determine whether it is necessary to revise performance materiality and whether planned procedures remain appropriate.
+                            </p>
+                            <p class="step-heading">3. Application to Magma Ltd:</p>
+                            <p>
+                                Deepti &amp; Co. applied materiality for the FS as a whole, but additional information regarding import of machinery for a new product draws attention to a critical specific aspect of the company's business. Thus, Deepti &amp; Co. can <strong class="kw">re-evaluate the materiality concepts</strong> after considering the necessity of such revision for this specific capital expenditure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYK 9 -->
+                <div class="tyk-accordion" id="accordion-tyk-9">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyk-badge">TYK 9</span>
+                            <span class="tyk-title-text">AMRO Ltd: Internal Check System &amp; Violations by Procurement Head</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> AMRO Ltd. is a manufacturing and trading Company of leather goods since last 10 years. You are required to:
+                            <br>(a) Explain the internal check system, its objectives, and general conditions pertaining thereto.
+                            <br>(b) In AMRO Ltd., the head of procurement, Mr. Amit, has complete control over the procurement process without oversight, and there has been no staff rotation for over five years. Evaluate whether general conditions of internal check are violated.
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. Part (a) — Refer Para 4.5 Sub-heading 1:</p>
+                            <p>
+                                Internal check implies organization of the bookkeeping and accounting system such that staff duties are allocated so that no single person handles all aspects of a transaction, and the day-to-day work of one employee is complementary to and automatically checked by another.
+                            </p>
+                            <p class="step-heading">2. Part (b) — Evaluation of Violations in AMRO Ltd:</p>
+                            <p>
+                                <strong class="kw-crit">YES</strong>, in the given situation, general conditions pertaining to the internal check system are violated:
+                            </p>
+                            <ul>
+                                <li><strong class="kw-crit">Violation 1:</strong> The head of procurement, Mr. Amit, having complete control over the procurement process without oversight violates the principle that <strong class="kw-crit">no single person should control any important aspect of the business operation</strong>.</li>
+                                <li><strong class="kw-crit">Violation 2:</strong> The lack of staff rotation for over five years violates the principle that <strong class="kw-crit">staff duties should be rotated periodically</strong> so that members do not perform the same function for an extended period.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYK 10 -->
+                <div class="tyk-accordion" id="accordion-tyk-10">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyk-badge">TYK 10</span>
+                            <span class="tyk-title-text">CA Q &amp; LAL Ltd: Communicating Deficiencies in Internal Control (SA 265)</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> CA Q is the engagement partner for the statutory audit of LAL Ltd. While conducting the audit, the team identified several deficiencies in internal control. Guide CA Q regarding communicating deficiencies under SA 265.
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. Communication under SA 265:</p>
+                            <p>
+                                Under <strong class="law">SA 265</strong>, the auditor shall communicate in writing significant deficiencies in internal control identified during the audit to Those Charged with Governance on a timely basis.
+                            </p>
+                            <p class="step-heading">2. Required Content of Written Communication:</p>
+                            <ul>
+                                <li>(a) A description of the deficiencies and an explanation of their potential effects; and</li>
+                                <li>(b) Sufficient information to enable TCWG and management to understand the context:
+                                    <br>&nbsp;&nbsp;• Purpose of audit was to express an opinion on the financial statements.
+                                    <br>&nbsp;&nbsp;• Consideration of internal control was designed solely to plan audit procedures, <strong class="kw-crit">not to express an opinion on internal control effectiveness</strong>.
+                                    <br>&nbsp;&nbsp;• Matters reported are limited to those identified during audit that the auditor considered of sufficient importance to merit reporting.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYK 11 -->
+                <div class="tyk-accordion" id="accordion-tyk-11">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyk-badge">TYK 11</span>
+                            <span class="tyk-title-text">Chemical Company: Internal Audit Observations on Internal Check Violations</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> You have been appointed as internal auditor of a Company manufacturing and trading in Chemicals. The internal audit team observed: (a) purchase orders issued without competitive quotations; (b) raw chemicals unloaded in stores without lab quality tests; (c) accounts releasing payments on photocopy invoices without Goods Receipt Notes; (d) payroll clerk preparing wage sheets, withdrawing cash, and distributing cash wages alone. Analyze these observations.
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. Detailed Analysis of Violations:</p>
+                            <ul>
+                                <li><strong class="kw-crit">Procurement without Quotations:</strong> Violates the principle of authorization and competitive pricing, exposing the company to inflated procurement costs and fraud.</li>
+                                <li><strong class="kw-crit">Accepting Chemicals without Lab Testing:</strong> In chemical manufacturing, raw materials must undergo strict quality clearance. Absence of lab test certificates risks batch contamination, finished goods rejection, and safety hazards.</li>
+                                <li><strong class="kw-crit">Payments on Photocopy Invoices without GRNs:</strong> Violates the three-way matching control. Releasing payments on photocopy invoices creates immediate risk of duplicate payments and payment for goods never received.</li>
+                                <li><strong class="kw-crit">Single Clerk Handling Entire Payroll:</strong> Total violation of segregation of duties. Preparing wage sheets, drawing cash, and paying wages alone enables the creation of ghost workers and misappropriation of cash wages.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYK 12 -->
+                <div class="tyk-accordion" id="accordion-tyk-12">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyk-badge">TYK 12</span>
+                            <span class="tyk-title-text">ROPE Ltd: Internal Check Violations by Store Manager &amp; Procurement Head</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> ROPE Ltd. is a manufacturing and trading Company of leather goods since last 10 years. During the audit, it was noted that: (i) Mr. Abhishek, the store manager, maintains inventory records while also having physical custody of inventory; (ii) there has been no staff rotation for over seven years; (iii) the head of procurement, Mr. Sumit, has complete control over procurement without oversight. Evaluate whether general conditions of internal check are violated.
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. ICAI Ruling on Internal Check Violations:</p>
+                            <p>
+                                <strong class="kw-crit">YES</strong>, in the given situation, general conditions pertaining to the internal check system are violated as follows:
+                            </p>
+                            <ol>
+                                <li><strong class="kw-crit">(i) Physical Custody vs. Accounting Records:</strong> Allowing Mr. Abhishek, the store manager, to maintain inventory records while also having physical custody of inventory violates the cardinal principle that <strong class="kw-crit">those with physical custody of assets must not have access to books of accounts</strong>.</li>
+                                <li><strong class="kw-crit">(ii) Staff Rotation:</strong> The lack of staff rotation for over seven years violates the principle that <strong class="kw-crit">staff duties should be rotated periodically</strong> to prevent any single person from performing the same function for too long.</li>
+                                <li><strong class="kw-crit">(iii) Concentration of Control:</strong> The head of procurement, Mr. Sumit, having complete control over the procurement process without oversight violates the principle that <strong class="kw-crit">no single person should control any important aspect of the business operation</strong>.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYK 13 -->
+                <div class="tyk-accordion" id="accordion-tyk-13">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyk-badge">TYK 13</span>
+                            <span class="tyk-title-text">Evan &amp; Co / PARI Ltd: Segment Information Disclosure under SA 501</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> Evan &amp; Co, a firm of Chartered Accountants, conducting the audit of a listed company PARI Ltd. wanted to ensure and obtain sufficient appropriate audit evidence regarding the presentation and disclosure of segment information in accordance with the applicable financial reporting framework. Guide the auditors in this regard under SA 501.
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. SA 501 Framework on Segment Information:</p>
+                            <p>
+                                As per <strong class="law">SA 501 "Audit Evidence — Specific Considerations for Selected Items"</strong>, the auditor shall obtain sufficient appropriate audit evidence regarding the presentation and disclosure of segment information in accordance with the applicable FRF by obtaining an understanding of the methods used by management in determining segment information.
+                            </p>
+                            <p class="step-heading">2. Matters Relevant When Understanding Management's Methods:</p>
+                            <ul>
+                                <li><strong class="kw">(i) Inter-Segment Transactions:</strong> Sales, transfers, and charges between segments, and elimination of inter-segment amounts.</li>
+                                <li><strong class="kw">(ii) Budget Comparisons:</strong> Comparisons with budgets and other expected results (e.g. operating profits as a percentage of sales).</li>
+                                <li><strong class="kw">(iii) Allocation of Assets and Costs:</strong> The methods used for allocation of assets and costs among segments.</li>
+                                <li><strong class="kw">(iv) Consistency with Prior Periods:</strong> Consistency with prior periods, and the adequacy of disclosures with respect to inconsistencies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYK 14 -->
+                <div class="tyk-accordion" id="accordion-tyk-14">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyk-badge">TYK 14</span>
+                            <span class="tyk-title-text">Rishabh Ltd: Circumstances Giving Rise to Changed / Increased Risks</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> During the audit of Rishabh Ltd., a company engaged in manufacturing home appliances, several developments occurred during the year that may give rise to risks affecting financial reporting. Explain the circumstances under Para 4.2 of SA 315 where risks can arise or change.
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. Entity's Risk Assessment Process (Para 4.2):</p>
+                            <p>
+                                In Rishabh Ltd., developments during the year may give rise to risks affecting the preparation and reliability of financial statements. As part of the entity's risk assessment process, management identifies and evaluates such risks.
+                            </p>
+                            <p class="step-heading">2. Circumstances Giving Rise to Changed / Increased Risks (ICAI Para 4.2):</p>
+                            <ol>
+                                <li><strong class="kw">Changes in Operating Environment:</strong> Regulatory or economic shifts changing competitive pressures.</li>
+                                <li><strong class="kw">New Personnel:</strong> New staff with different focus or understanding of internal control.</li>
+                                <li><strong class="kw">New or Revamped Information Systems:</strong> Significant and rapid IT changes altering control risks.</li>
+                                <li><strong class="kw">Rapid Growth:</strong> Rapid operational expansion straining existing controls.</li>
+                                <li><strong class="kw">New Technology:</strong> New production technologies (e.g. smart appliances) altering control risks.</li>
+                                <li><strong class="kw">New Business Models, Products, or Activities:</strong> Entering unfamiliar business areas (e.g. D2C e-commerce).</li>
+                                <li><strong class="kw">Corporate Restructurings:</strong> Staff reductions and altered supervision/SOD.</li>
+                                <li><strong class="kw">Expanded Foreign Operations:</strong> Foreign operations introducing unique regulatory and currency risks.</li>
+                                <li><strong class="kw">New Accounting Pronouncements:</strong> Adoption of new accounting principles or changing standards.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYK 15 -->
+                <div class="tyk-accordion" id="accordion-tyk-15">
+                    <div class="tyk-header" onclick="toggleAccordion(this)">
+                        <div style="display:flex; align-items:center;">
+                            <span class="tyk-badge">TYK 15</span>
+                            <span class="tyk-title-text">Super Ltd: Management Letter / Letter of Weakness under SA 265</span>
+                        </div>
+                        <span class="tyk-toggle-arrow">▼</span>
+                    </div>
+                    <div class="tyk-body">
+                        <div class="tyk-question-box">
+                            <strong>Question:</strong> While conducting the statutory audit of Super Ltd. for the financial year 2025–26, the auditor CA Chintan identified significant deficiencies in internal control. Guide CA Chintan regarding the written communication through a letter of weakness or management letter under SA 265.
+                        </div>
+                        <div class="tyk-answer-box">
+                            <p class="step-heading">1. SA 265 Written Communication Requirements:</p>
+                            <p>
+                                As per <strong class="law">SA 265</strong>, the auditor CA Chintan shall include in the written communication of significant deficiencies in internal control:
+                                <br>(i) A description of the deficiencies and an explanation of their potential effects; and
+                                <br>(ii) Sufficient information to enable TCWG and management to understand the context of the communication.
+                            </p>
+                            <p class="step-heading">2. Important Points with Regard to Management Letter / Letter of Weakness:</p>
+                            <ol>
+                                <li><strong class="kw">Lists Weaknesses &amp; Suggestions:</strong> The letter lists down the areas of weaknesses in the system and offers constructive suggestions for improvement.</li>
+                                <li><strong class="kw-crit">Scope Disclaimer:</strong> It should clearly indicate that it discusses <strong class="kw-crit">only weaknesses that have come to the attention of the auditor as a result of his audit</strong>, and that his examination has <strong class="kw-crit">not been designed to determine the adequacy of internal control for management</strong>.</li>
+                                <li><strong class="kw">Reference Document for Management:</strong> It serves as a valuable reference document for management for the purpose of revising the system and insisting on strict implementation.</li>
+                                <li><strong class="kw-gold">Minimizes Legal Liability:</strong> The letter also serves to <strong class="kw-gold">minimize legal liability of the auditor</strong> in the event of a major defalcation or loss resulting from a weakness in internal control.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bottom Chapter Navigation -->
+            <div class="chapter-nav-row">
+                <a href="audit_planning.html" class="chapter-nav-btn chapter-nav-prev">
+                    ← Previous: Ch 3 Audit Planning, Strategy &amp; Execution
+                </a>
+                <a href="audit_evidence.html" class="chapter-nav-btn chapter-nav-next">
+                    Next: Chapter 5 Audit Evidence (SA 500 Series Master Breakdown) →
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Scripts for Progress, Sidebar, Accordion & Active Jump Tracking -->
+    <script>
+        // Reading Progress Bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('scroll-progress-bar').style.width = scrolled + '%';
+        });
+
+        // Toggle Sidebar
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('hidden');
+        }
+
+        // Accordion for TYU and TYK Questions
+        function toggleAccordion(header) {
+            header.classList.toggle('active');
+            const body = header.nextElementSibling;
+            body.classList.toggle('open');
+        }
+
+        // Auto-highlight active sidebar item on scroll
+        const sections = document.querySelectorAll('section[id], div[id^="sec-"]');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.sidebar a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

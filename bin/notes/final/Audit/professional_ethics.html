@@ -1,0 +1,2877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 19: Professional Ethics &amp; Liabilities of Auditors &ndash; CA Final Audit Revision Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Kalam:wght@400;700&family=Patrick+Hand&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-blue: #1e3a8a;
+      --accent-blue: #2563eb;
+      --primary-green: #047857;
+      --accent-green: #059669;
+      --primary-red: #b91c1c;
+      --primary-purple: #7c3aed;
+      --primary-amber: #d97706;
+      --bg-page: #f8fafc;
+      --card-bg: #ffffff;
+      --border-color: #e2e8f0;
+      --text-main: #000000;
+      --sidebar-width: 320px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Kalam', cursive;
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--text-main);
+      background-color: var(--bg-page);
+      overflow-x: hidden;
+    }
+
+    /* Vibrant Keyword Bolding */
+    strong, b {
+      font-weight: 700;
+    }
+    .k-blue { color: #1e40af; font-weight: 700; }
+    .k-red { color: #b91c1c; font-weight: 700; }
+    .k-green { color: #047857; font-weight: 700; }
+    .k-purple { color: #7c3aed; font-weight: 700; }
+    .k-amber { color: #d97706; font-weight: 700; }
+
+    /* Sticky Reading Progress Bar */
+    .reading-progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #1e3a8a, #047857, #7c3aed, #b91c1c);
+      width: 0%;
+      z-index: 1000;
+      transition: width 0.1s ease;
+    }
+
+    /* Sticky Topbar */
+    .topbar {
+      position: sticky;
+      top: 0;
+      height: 56px;
+      background: #ffffff;
+      border-bottom: 2px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      z-index: 900;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .sidebar-toggle-btn {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 16px;
+      cursor: pointer;
+      color: var(--primary-blue);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .sidebar-toggle-btn:hover {
+      background: #e2e8f0;
+    }
+
+    .topbar-brand {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .topbar-pill {
+      background: #eff6ff;
+      color: var(--primary-blue);
+      border: 1px solid #bfdbfe;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .hub-link-btn {
+      background: #047857;
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .hub-link-btn:hover {
+      background: #065f46;
+    }
+
+    /* Layout */
+    .app-layout {
+      display: flex;
+      min-height: calc(100vh - 56px);
+      position: relative;
+    }
+
+    /* Left Sidebar */
+    .sidebar {
+      width: var(--sidebar-width);
+      background: #ffffff;
+      border-right: 2px solid var(--border-color);
+      height: calc(100vh - 56px);
+      position: sticky;
+      top: 56px;
+      overflow-y: auto;
+      padding: 20px 14px;
+      flex-shrink: 0;
+    }
+
+    .sidebar-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      padding: 0 10px 12px;
+      border-bottom: 2px solid #e2e8f0;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .nav-item {
+      margin: 0;
+    }
+
+    .nav-link {
+      display: block;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 15px;
+      line-height: 1.35;
+      color: #334155;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border-left: 3px solid transparent;
+    }
+
+    .nav-link:hover {
+      background: #f1f5f9;
+      color: var(--primary-blue);
+      border-left-color: var(--accent-blue);
+    }
+
+    .nav-link.active {
+      background: #eff6ff;
+      color: var(--primary-blue);
+      font-weight: 700;
+      border-left-color: var(--primary-blue);
+    }
+
+    /* Main Content */
+    .main-content {
+      flex: 1;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 40px 80px;
+    }
+
+    /* Hero Banner */
+    .chapter-hero {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e1b4b 60%, #312e81 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: 40px;
+      margin-bottom: 36px;
+      box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .chapter-hero::after {
+      content: "ETHICS";
+      position: absolute;
+      right: 20px;
+      bottom: -15px;
+      font-size: 110px;
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.07);
+      font-family: 'Space Grotesk', sans-serif;
+      pointer-events: none;
+    }
+
+    .hero-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .hero-badge {
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(4px);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .chapter-hero h1 {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .chapter-hero p {
+      font-size: 19px;
+      max-width: 880px;
+      opacity: 0.95;
+      line-height: 1.6;
+    }
+
+    /* Section Styling */
+    section {
+      background: var(--card-bg);
+      border: 2px solid var(--border-color);
+      border-radius: 14px;
+      padding: 30px 34px;
+      margin-bottom: 32px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      scroll-margin-top: 75px;
+    }
+
+    .section-header {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 12px;
+      margin-bottom: 22px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .section-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 28px;
+      color: var(--primary-blue);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-tag {
+      background: #f0fdf4;
+      color: var(--primary-green);
+      font-size: 14px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      border: 1px solid #bbf7d0;
+    }
+
+    h3 {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 24px;
+      color: #0f172a;
+      margin: 22px 0 10px;
+    }
+
+    h4 {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 21px;
+      color: var(--primary-blue);
+      margin: 16px 0 8px;
+    }
+
+    p {
+      margin-bottom: 14px;
+    }
+
+    ul, ol {
+      margin-left: 26px;
+      margin-bottom: 16px;
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    /* Callout Boxes */
+    .callout {
+      border-left: 5px solid;
+      padding: 16px 20px;
+      border-radius: 0 10px 10px 0;
+      margin: 20px 0;
+      background: #f8fafc;
+    }
+
+    .callout-blue {
+      border-left-color: var(--primary-blue);
+      background: #eff6ff;
+    }
+
+    .callout-green {
+      border-left-color: var(--primary-green);
+      background: #f0fdf4;
+    }
+
+    .callout-amber {
+      border-left-color: var(--primary-amber);
+      background: #fffbeb;
+    }
+
+    .callout-red {
+      border-left-color: var(--primary-red);
+      background: #fef2f2;
+    }
+
+    .callout-purple {
+      border-left-color: var(--primary-purple);
+      background: #faf5ff;
+    }
+
+    .callout-title {
+      font-family: 'Caveat', cursive;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .callout-blue .callout-title { color: var(--primary-blue); }
+    .callout-green .callout-title { color: var(--primary-green); }
+    .callout-amber .callout-title { color: var(--primary-amber); }
+    .callout-red .callout-title { color: var(--primary-red); }
+    .callout-purple .callout-title { color: var(--primary-purple); }
+
+    /* Tables (Crisp Arial Typography) */
+    .table-container {
+      overflow-x: auto;
+      margin: 22px 0;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      text-align: left;
+      background: #ffffff;
+    }
+
+    th {
+      background: #1e3a8a;
+      color: #ffffff;
+      font-weight: 700;
+      padding: 12px 16px;
+      border: 1px solid #3b82f6;
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 11px 16px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+      color: #1e293b;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    tr:hover {
+      background-color: #f1f5f9;
+    }
+
+    /* Interactive Accordion for Q&A / Illustrations */
+    .accordion-item {
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      background: #ffffff;
+      transition: all 0.2s ease;
+    }
+
+    .accordion-item:hover {
+      border-color: #cbd5e1;
+    }
+
+    .accordion-header {
+      padding: 16px 20px;
+      background: #f8fafc;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 21px;
+      font-weight: 700;
+      color: var(--primary-blue);
+    }
+
+    .accordion-header:hover {
+      background: #f1f5f9;
+    }
+
+    .accordion-icon {
+      font-size: 22px;
+      transition: transform 0.2s ease;
+      color: #64748b;
+    }
+
+    .accordion-body {
+      padding: 22px 24px;
+      display: none;
+      border-top: 1px solid #e2e8f0;
+      background: #ffffff;
+      font-family: 'Kalam', cursive;
+      font-size: 18px;
+    }
+
+    .accordion-item.open .accordion-body {
+      display: block;
+    }
+
+    .accordion-item.open .accordion-icon {
+      transform: rotate(180deg);
+      color: var(--accent-blue);
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin: 20px 0;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    }
+
+    .card-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 21px;
+      color: var(--primary-blue);
+      font-weight: 700;
+      margin-bottom: 10px;
+      border-bottom: 1px dashed #cbd5e1;
+      padding-bottom: 6px;
+    }
+
+    /* Bottom Navigation Bar */
+    .bottom-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      margin-top: 40px;
+      padding: 24px;
+      background: #ffffff;
+      border: 2px solid var(--border-color);
+      border-radius: 12px;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 18px;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+
+    .prev-btn {
+      background: #f1f5f9;
+      color: var(--text-main);
+      border: 1px solid #cbd5e1;
+    }
+
+    .prev-btn:hover {
+      background: #e2e8f0;
+    }
+
+    .next-btn {
+      background: #1e3a8a;
+      color: #ffffff;
+    }
+
+    .next-btn:hover {
+      background: #172554;
+    }
+
+    .hub-btn {
+      background: #047857;
+      color: #ffffff;
+    }
+
+    .hub-btn:hover {
+      background: #065f46;
+    }
+
+    .nav-text {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .nav-sub {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      opacity: 0.8;
+    }
+
+    .nav-title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 1024px) {
+      .app-layout {
+        flex-direction: column;
+      }
+      .sidebar {
+        position: fixed;
+        left: -330px;
+        top: 56px;
+        bottom: 0;
+        z-index: 950;
+        transition: left 0.3s ease;
+      }
+      .sidebar.active {
+        left: 0;
+      }
+      .main-content {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Reading Progress Bar -->
+<div class="reading-progress-bar" id="readingProgress"></div>
+
+<!-- Sticky Topbar -->
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="sidebar-toggle-btn" id="sidebarToggle" aria-label="Toggle Navigation">&#9776; Index</button>
+    <a href="../../notes/audnotes.html" class="topbar-brand">
+      <span>CA Final &bull; Advanced Auditing</span>
+    </a>
+  </div>
+  <div class="topbar-right">
+    <span class="topbar-pill">Ch 19: Professional Ethics &amp; Liabilities</span>
+    <a href="../../notes/audnotes.html" class="hub-link-btn">Back to Hub &rarr;</a>
+  </div>
+</header>
+
+<!-- Application Layout -->
+<div class="app-layout">
+
+  <!-- Left Sidebar Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-title">
+      <span>Chapter Directory</span>
+      <span style="font-size: 14px; color:#64748b;">Ch 19 Index</span>
+    </div>
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#sec-ethics-intro" class="nav-link active">1. Code of Ethics &amp; Public Interest</a></li>
+      <li class="nav-item"><a href="#sec-fundamental-principles" class="nav-link">2. Fundamental Principles, Threats &amp; Safeguards</a></li>
+      <li class="nav-item"><a href="#sec-noclar" class="nav-link">3. NOCLAR &amp; SA 250 Interplay</a></li>
+      <li class="nav-item"><a href="#sec-ca-act-membership" class="nav-link">4. CA Act: Membership &amp; Disabilities (Sec 8)</a></li>
+      <li class="nav-item"><a href="#sec-cop-practice" class="nav-link">5. Certificate of Practice &amp; Deemed in Practice</a></li>
+      <li class="nav-item"><a href="#sec-branch-offices-kyc" class="nav-link">6. Branch Offices (Sec 27), Designations &amp; KYC</a></li>
+      <li class="nav-item"><a href="#sec-disciplinary-mechanism" class="nav-link">7. Disciplinary Mechanism: BOD vs DC (Sec 21-22)</a></li>
+      <li class="nav-item"><a href="#sec-first-schedule-p1" class="nav-link">8. First Schedule, Part I: Clauses 1 to 6</a></li>
+      <li class="nav-item"><a href="#sec-first-schedule-p1b" class="nav-link">9. First Schedule, Part I: Clauses 7 to 12</a></li>
+      <li class="nav-item"><a href="#sec-first-schedule-p2-3-4" class="nav-link">10. First Schedule: Parts II, III &amp; IV</a></li>
+      <li class="nav-item"><a href="#sec-second-schedule-p1" class="nav-link">11. Second Schedule, Part I: Clauses 1 to 10</a></li>
+      <li class="nav-item"><a href="#sec-second-schedule-p2-3" class="nav-link">12. Second Schedule: Parts II &amp; III</a></li>
+      <li class="nav-item"><a href="#sec-council-guidelines" class="nav-link">13. Council General Guidelines 2008 &amp; Ceilings</a></li>
+      <li class="nav-item"><a href="#sec-self-regulatory-nfra" class="nav-link">14. Self-Regulatory Measures &amp; NFRA Case Study</a></li>
+      <li class="nav-item"><a href="#sec-esb-decisions" class="nav-link">15. Ethical Standards Board Recent Decisions</a></li>
+      <li class="nav-item"><a href="#sec-liabilities-auditor" class="nav-link">16. Legal Liabilities of Auditors: Civil &amp; Criminal</a></li>
+      <li class="nav-item"><a href="#sec-illustrations-1-to-20" class="nav-link">17. Master Practical Illustrations 1 to 20</a></li>
+      <li class="nav-item"><a href="#sec-illustrations-21-to-39" class="nav-link">18. Master Practical Illustrations 21 to 39</a></li>
+      <li class="nav-item"><a href="#sec-master-memory-charts" class="nav-link">19. Master Memory Synthesis &amp; Clause Navigator</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="main-content">
+
+    <!-- Hero Banner -->
+    <div class="chapter-hero">
+      <div class="hero-badge-row">
+        <span class="hero-badge">ICAI Study Material 2026</span>
+        <span class="hero-badge">CA Final Paper 3: Audit</span>
+        <span class="hero-badge">Chapter 19 Master Notes</span>
+      </div>
+      <h1>Professional Ethics &amp; Liabilities of Auditors</h1>
+      <p>
+        Master the cornerstone of the accountancy profession: <strong style="color:#ffffff; text-decoration: underline;">The Chartered Accountants Act, 1949</strong>, the Revised Code of Ethics (Parts 1 to 5), Fundamental Principles, Threats &amp; Safeguards, <strong style="color:#ffffff;">NOCLAR</strong>, Membership Disabilities (Sec 8), Branch Offices (Sec 27), the <strong style="color:#ffffff; text-decoration: underline;">Disciplinary Directorate (BOD vs DC)</strong>, all 34 Clauses across First &amp; Second Schedules, Council General Guidelines 2008, Ethical Standards Board Decisions, and all <strong style="color:#ffffff;">39 Official ICAI Illustrations</strong>!
+      </p>
+    </div>
+
+    <!-- SECTION 1: CODE OF ETHICS & PUBLIC INTEREST -->
+    <section id="sec-ethics-intro">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🏛️ 1. Introduction, Code of Ethics Architecture &amp; Public Interest</span>
+        </div>
+        <span class="section-tag">Public Interest Foundation</span>
+      </div>
+
+      <p>
+        The Oxford Dictionary defines ethics as <em>"the moral principles that govern a person's behaviour or how an activity is conducted."</em> <strong class="k-blue">Professional Ethics</strong> represents the personal, organizational, and corporate standards of behaviour expected of Chartered Accountants.
+      </p>
+
+      <div class="callout callout-blue">
+        <div class="callout-title">🌟 The ICAI Motto: "Ya Esha Supteshu Jagrati"</div>
+        <p>
+          Adopted from the <em>Kathopanishad</em>, the motto of the Institute of Chartered Accountants of India denotes <strong class="k-blue">"Eternal Vigilance"</strong> &mdash; <em>awakening and guarding when the rest of the world is asleep</em>. The public, investors, banks, revenue authorities, and courts repose unquestioned trust in the signature of a Chartered Accountant; hence, independence and uncompromising ethics form the lifeblood of the profession.
+        </p>
+      </div>
+
+      <h3>Structure of the ICAI Code of Ethics (Based on IESBA Code)</h3>
+      <p>
+        The Revised Code of Ethics is structured into distinct, mutually reinforcing parts:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 18%;">Code Part</th>
+              <th style="width: 32%;">Target Professional Domain</th>
+              <th style="width: 50%;">Core Scope &amp; Regulatory Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong class="k-blue">Part 1</strong></td>
+              <td><strong>All Chartered Accountants</strong></td>
+              <td>Complying with the Code, Fundamental Principles, and the Conceptual Framework. Applicable universally to members in practice and in service.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-green">Part 2</strong></td>
+              <td><strong>CAs in Service (PAIB)</strong></td>
+              <td>Professional Accountants in Business / Employment. Applies to members employed in executive, managerial, or non-executive capacities in corporate or non-profit entities.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-purple">Part 3</strong></td>
+              <td><strong>CAs in Public Practice</strong></td>
+              <td>Sets out professional obligations, client acceptance, engagement management, conflicts of interest, fees, and marketing for practicing members.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-amber">Part 4A &amp; 4B</strong></td>
+              <td><strong>Independence Standards</strong></td>
+              <td>
+                <strong>Part 4A:</strong> Independence for Audit and Review Engagements.<br>
+                <strong>Part 4B:</strong> Independence for Assurance Engagements Other than Audit and Review Engagements.
+              </td>
+            </tr>
+            <tr>
+              <td><strong class="k-red">Part 5</strong></td>
+              <td><strong>Sustainability Assurance Standards</strong></td>
+              <td>Sections 5100 to 5600: Dedicated ethics and independence standards for practitioners providing assurance on non-financial sustainability / BRSR information.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-blue">Glossary</strong></td>
+              <td><strong>Defined Terms &amp; Definitions</strong></td>
+              <td>Defines specific terms, acronyms, and operational thresholds used throughout the Code.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 2: FUNDAMENTAL PRINCIPLES, THREATS & SAFEGUARDS -->
+    <section id="sec-fundamental-principles">
+      <div class="section-header">
+        <div class="section-title">
+          <span>⚖️ 2. The 5 Fundamental Principles, Threats &amp; Conceptual Safeguards</span>
+        </div>
+        <span class="section-tag">Conceptual Framework</span>
+      </div>
+
+      <p>
+        A Chartered Accountant is bound to comply with the <strong class="k-green">Five Fundamental Principles of Professional Ethics</strong> under Section 110 of the Code:
+      </p>
+
+      <div class="grid-3">
+        <div class="card" style="border-top: 4px solid #1e3a8a;">
+          <div class="card-title">1. Integrity</div>
+          <p>To be straightforward and honest in all professional and business relationships. Implies fair dealing, truthfulness, and refusing to be associated with materially false or misleading information.</p>
+        </div>
+
+        <div class="card" style="border-top: 4px solid #047857;">
+          <div class="card-title">2. Objectivity</div>
+          <p>Not to compromise professional or business judgment because of bias, conflict of interest, or undue influence of others. Objectivity ensures decisions are based solely on verifiable evidence.</p>
+        </div>
+
+        <div class="card" style="border-top: 4px solid #b91c1c;">
+          <div class="card-title">3. Professional Competence &amp; Due Care</div>
+          <p>Attain and maintain professional knowledge and skill at the level required to ensure that a client or employer receives competent professional service, acting diligently in accordance with technical and professional standards.</p>
+        </div>
+
+        <div class="card" style="border-top: 4px solid #7c3aed;">
+          <div class="card-title">4. Confidentiality</div>
+          <p>Respect the confidentiality of information acquired as a result of professional relationships. Never disclose such information to third parties without proper authority or legal duty, nor use it for personal advantage.</p>
+        </div>
+
+        <div class="card" style="border-top: 4px solid #d97706;">
+          <div class="card-title">5. Professional Behaviour</div>
+          <p>Comply with relevant laws and regulations and avoid any conduct that the chartered accountant knows or should know might discredit the profession (e.g., disparaging claims about other CAs).</p>
+        </div>
+      </div>
+
+      <h3>The 5 Threats to Independence and Compliance</h3>
+      <p>
+        Compliance with fundamental principles can be compromised by a broad range of circumstances creating <strong class="k-red">Threats</strong>:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 20%;">Nature of Threat</th>
+              <th style="width: 38%;">Conceptual Definition</th>
+              <th style="width: 42%;">Practical Exam Scenario Examples</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong class="k-blue">1. Self-Interest Threat</strong></td>
+              <td>The threat that a financial or other personal interest will inappropriately influence a CA's judgment or behaviour.</td>
+              <td>Holding shares in an audit client; undue fee dependence on a single client (&gt;15% gross fees); contingent fees; loans or guarantees to/from client.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-green">2. Self-Review Threat</strong></td>
+              <td>The threat that a CA will not appropriately evaluate the results of a previous judgment made or service performed by the CA or their firm.</td>
+              <td>Performing internal audit or accounting/bookkeeping services and subsequently acting as statutory auditor; designing IT systems and auditing them.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-purple">3. Advocacy Threat</strong></td>
+              <td>The threat that a CA will promote a client's or employer's position to the point that their objectivity is compromised.</td>
+              <td>Acting as an advocate for an audit client in litigation or tax appeals before ITAT/Courts; promoting client shares in an initial public offering (IPO).</td>
+            </tr>
+            <tr>
+              <td><strong class="k-amber">4. Familiarity Threat</strong></td>
+              <td>The threat that due to a long or close relationship with a client or employer, a CA will be too sympathetic to their interests.</td>
+              <td>Long association of key audit partner with audit client (&gt;7 years); immediate family member or close relative being director or CFO of client.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-red">5. Intimidation Threat</strong></td>
+              <td>The threat that a CA will be deterred from acting objectively because of actual or perceived pressures, including attempts to exercise undue influence.</td>
+              <td>Threat of dismissal or replacement over an audit disagreement; pressure to reduce audit fees unreasonably; litigation threatened by client management.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-purple">
+        <div class="callout-title">🛡️ The Conceptual Framework Approach: Identify &rarr; Evaluate &rarr; Address</div>
+        <p>
+          When threats are identified, the CA must apply professional judgment to evaluate whether they are at an <strong class="k-green">acceptable level</strong>. If not at an acceptable level, the CA must address the threats by:
+        </p>
+        <ul>
+          <li><strong>Eliminating the circumstances:</strong> e.g., selling financial interests, removing a family member from the audit team.</li>
+          <li><strong>Applying safeguards:</strong> e.g., having an independent partner review the work, rotating key audit personnel, involving external experts.</li>
+          <li><strong>Declining or terminating:</strong> If effective safeguards cannot reduce threats to an acceptable level, the CA <strong class="k-red">must decline or resign</strong> from the engagement.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION 3: NOCLAR & SA 250 INTERPLAY -->
+    <section id="sec-noclar">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🚨 3. Non-Compliance with Laws and Regulations (NOCLAR) &amp; SA 250</span>
+        </div>
+        <span class="section-tag">High-Yield Exam Focus</span>
+      </div>
+
+      <p>
+        <strong class="k-blue">NOCLAR (Non-Compliance with Laws and Regulations)</strong> sets out a comprehensive ethical framework guiding Chartered Accountants when they encounter non-compliance or suspected non-compliance with laws and regulations committed by a client or employing organization.
+      </p>
+
+      <div class="callout callout-red">
+        <div class="callout-title">📌 Core Objective: Overcoming "Turning a Blind Eye"</div>
+        <p>
+          The core objective of NOCLAR is to ensure that professionals do not simply turn a blind eye to illegal acts. Chartered Accountants have an overarching duty to act in the <strong class="k-red">public interest</strong>, help prevent commission of illegal acts, rectify non-compliance, and mitigate adverse consequences.
+        </p>
+      </div>
+
+      <h3>Scope &amp; Applicability of NOCLAR in India</h3>
+      <div class="grid-2">
+        <div class="card" style="border-top: 4px solid var(--primary-blue);">
+          <div class="card-title">1. Professional Accountants in Public Practice</div>
+          <ul>
+            <li>Applicable currently to <strong class="k-blue">Audit Engagements of Listed Entities</strong> in India.</li>
+            <li>Covers laws and regulations that have a direct effect on financial statements, as well as laws that are fundamental to the entity's operating aspects (e.g., environmental laws, public health and safety, anti-money laundering, bribery, banking laws, data protection).</li>
+            <li>Does <em>not</em> cover personal misconduct of individuals unrelated to business activities.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="border-top: 4px solid var(--primary-green);">
+          <div class="card-title">2. Professional Accountants in Service (PAIB)</div>
+          <ul>
+            <li>Applicable to <strong class="k-green">Senior Professional Accountants in Service</strong> employed in listed entities (e.g., CFO, Chief Internal Auditor, Financial Controller, Company Secretary).</li>
+            <li>Senior CAs in service have a special fiduciary responsibility given their operational influence and decision-making roles within the corporate hierarchy.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Detailed Comparison: NOCLAR vs. SA 250</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 20%;">Dimension</th>
+              <th style="width: 40%;">SA 250: Consideration of Laws &amp; Regs</th>
+              <th style="width: 40%;">NOCLAR (Code of Ethics)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Applicability</strong></td>
+              <td>Applies to statutory audits of <strong class="k-blue">all entities</strong> (listed and unlisted).</td>
+              <td>Currently applies to <strong class="k-red">audits of listed entities</strong> and senior CAs in service of listed entities.</td>
+            </tr>
+            <tr>
+              <td><strong>Target Audience</strong></td>
+              <td>Statutory financial statement auditors only.</td>
+              <td>Both practicing auditors and professional accountants in service (management).</td>
+            </tr>
+            <tr>
+              <td><strong>Confidentiality Override</strong></td>
+              <td>Confidentiality precludes reporting to outside regulatory authorities unless required by specific statute (e.g., Sec 143(12) of Companies Act).</td>
+              <td><strong class="k-green">Explicit Protection:</strong> Disclosure to an appropriate external authority in exceptional cases to prevent serious harm to public interest is <strong class="k-red">NOT deemed a breach of confidentiality</strong>.</td>
+            </tr>
+            <tr>
+              <td><strong>Action Framework</strong></td>
+              <td>Focuses on financial statement misstatements and audit report modification.</td>
+              <td>Focuses on rectifying harm, deterring non-compliance, and escalating to Those Charged with Governance (TCWG).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Step-by-Step Response Hierarchy under NOCLAR</h3>
+      <ol>
+        <li><strong>Understand the Matter:</strong> Obtain understanding of the nature of the act and the circumstances in which it occurred.</li>
+        <li><strong>Address with Management:</strong> Discuss the matter with immediate management and, where appropriate, Those Charged with Governance (TCWG) to prompt them to investigate and rectify.</li>
+        <li><strong>Assess Management Response:</strong> Evaluate whether management's actions are timely and appropriate.</li>
+        <li><strong>Determine Need for Further Action:</strong> Consider whether to disclose to an appropriate public authority, withdraw from the engagement, or report under statutory provisions (e.g., Section 143(12)).</li>
+        <li><strong>Documentation:</strong> Document all discussions, management responses, and professional judgments exercised.</li>
+      </ol>
+    </section>
+
+    <!-- SECTION 4: CA ACT MEMBERSHIP & DISABILITIES -->
+    <section id="sec-ca-act-membership">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📜 4. CA Act, 1949: Membership, Fellow (Sec 5) &amp; Disabilities (Sec 8)</span>
+        </div>
+        <span class="section-tag">Statutory Foundation</span>
+      </div>
+
+      <p>
+        The Institute of Chartered Accountants of India was established by Parliament under the <strong class="k-blue">Chartered Accountants Act, 1949</strong> as a statutory body corporate to regulate the profession of accountancy in India.
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Types of Members: Section 5</div>
+          <ul>
+            <li><strong class="k-blue">Associate Chartered Accountant (ACA):</strong> Every person whose name is entered in the Register of Members is entitled to use the letters "ACA" after their name.</li>
+            <li><strong class="k-green">Fellow Chartered Accountant (FCA):</strong> An Associate who has been in continuous practice in India for at least <strong class="k-red">5 years</strong>, or an associate of at least 5 years who satisfies equivalent commercial experience prescribed by the Council, is entitled to be admitted as a Fellow and use the letters "FCA".</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Register of Members: Sections 19 &amp; 20</div>
+          <ul>
+            <li><strong>Section 19:</strong> Mandates maintenance of a Register containing full name, DOB, domicile, residential/professional address, date of entry, qualifications, and COP status.</li>
+            <li><strong>Section 20 (Removal of Name):</strong> The Council may remove the name of a member upon death, voluntary request, non-payment of prescribed annual fees, incurring any disability under Section 8, or by order of the disciplinary mechanism.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Disabilities for Membership: Section 8 (Zero Tolerance Criteria)</h3>
+      <p>
+        Under <strong class="k-red">Section 8</strong> of the Chartered Accountants Act, a person is permanently or temporarily debarred from having their name entered in or borne on the Register of Members under the following specific disabilities:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 15%;">Clause of Sec 8</th>
+              <th style="width: 35%;">Nature of Statutory Disability</th>
+              <th style="width: 50%;">Legal Effect &amp; Restoration Criteria</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Section 8(i)</strong></td>
+              <td><strong class="k-blue">Age Disability</strong></td>
+              <td>Has not attained the age of <strong class="k-red">21 years</strong> at the time of application. Application rejected until age 21 is attained.</td>
+            </tr>
+            <tr>
+              <td><strong>Section 8(ii)</strong></td>
+              <td><strong class="k-amber">Mental Unsoundness</strong></td>
+              <td>Adjudged by a competent court to be of <strong class="k-amber">unsound mind</strong>. Name cannot be entered or remains removed until declared sound by court.</td>
+            </tr>
+            <tr>
+              <td><strong>Section 8(iii) &amp; (iiia)</strong></td>
+              <td><strong class="k-red">Insolvency / Bankruptcy</strong></td>
+              <td>Undischarged insolvent or undischarged bankrupt declared under the <strong class="k-blue">Insolvency and Bankruptcy Code, 2016 (IBC)</strong>. Debarred completely until discharged.</td>
+            </tr>
+            <tr>
+              <td><strong>Section 8(iv)</strong></td>
+              <td><strong class="k-purple">Discharged Insolvent without Certificate</strong></td>
+              <td>Discharged insolvent who has <strong class="k-red">failed to obtain</strong> from the court a certificate stating that insolvency was caused by misfortune without any misconduct on their part.</td>
+            </tr>
+            <tr>
+              <td><strong>Section 8(v)</strong></td>
+              <td><strong class="k-red">Criminal Conviction (Moral Turpitude)</strong></td>
+              <td>Convicted by a competent court (in India or abroad) of an offence involving <strong class="k-red">moral turpitude</strong> punishable with imprisonment, or an offence committed in professional capacity, unless pardoned or disability removed by Central Government.</td>
+            </tr>
+            <tr>
+              <td><strong>Section 8(vi)</strong></td>
+              <td><strong class="k-green">Disciplinary Removal</strong></td>
+              <td>Removed from membership of the Institute on being held guilty of professional or other misconduct. Debarred until the expiry of the penalty period ordered by BOD or DC.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-amber">
+        <div class="callout-title">⚖️ Section 24: Penalty for Falsely Claiming to be a Member</div>
+        <p>
+          Any person who, not being a member of the Institute, represents that they are a member, or uses the designation Chartered Accountant, shall be punishable on <strong class="k-blue">first conviction</strong> with fine extending to <strong class="k-blue">₹1,000</strong>, and on any <strong class="k-red">subsequent conviction</strong> with imprisonment extending to <strong class="k-red">6 months</strong>, or fine extending to <strong class="k-red">₹5,000</strong>, or both.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 5: COP & DEEMED IN PRACTICE -->
+    <section id="sec-cop-practice">
+      <div class="section-header">
+        <div class="section-title">
+          <span>💼 5. Certificate of Practice (Sec 6), Deemed in Practice (Sec 2(2)) &amp; Sec 25</span>
+        </div>
+        <span class="section-tag">Practicing Rights</span>
+      </div>
+
+      <p>
+        Merely holding ICAI membership does not confer the legal right to practice. Under <strong class="k-blue">Section 6(1)</strong> of the Act, no member of the Institute shall be entitled to practice unless they have obtained from the Council a <strong class="k-green">Certificate of Practice (COP)</strong>.
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Deemed to be in Practice: Section 2(2)</div>
+          <p>A member of the Institute is deemed to be in practice when individually or in partnership with others, in consideration of remuneration:</p>
+          <ul>
+            <li><strong>(i)</strong> Engages himself in the practice of accountancy; or</li>
+            <li><strong>(ii)</strong> Offers to perform or performs services involving auditing, verification of financial statements, or book-keeping; or</li>
+            <li><strong>(iii)</strong> Renders professional services or assistance in matters of principle or detail relating to accounting procedures or certification of financial data; or</li>
+            <li><strong>(iv)</strong> Renders <strong class="k-purple">Management Consultancy and Other Services</strong> as permitted by the Council.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Companies Prohibited: Section 25</div>
+          <p>
+            <strong class="k-red">Section 25</strong> strictly prohibits any company, whether incorporated in India or abroad, from practicing as Chartered Accountants.
+          </p>
+          <ul>
+            <li>The audit profession requires personal professional accountability and independence which cannot be sheltered behind the veil of corporate limited liability.</li>
+            <li>Any company violating Section 25 is punishable with a fine extending to ₹1,000 on first conviction, and ₹5,000 on subsequent convictions.</li>
+            <li><em>Note:</em> <strong class="k-green">Limited Liability Partnerships (LLPs)</strong> are expressly permitted under Section 2(1)(eb) of the Act.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Permissible Management Consultancy &amp; Other Services (Sec 2(2)(iv))</h3>
+      <p>
+        Under Council resolution pursuant to Section 2(2)(iv), a practicing CA is authorized to provide a wide spectrum of services:
+      </p>
+      <div class="grid-3">
+        <div class="card" style="font-size:16px;">
+          <strong>Financial &amp; Management:</strong> Capital structure planning, working capital management, project reports, feasibility studies, business valuations.
+        </div>
+        <div class="card" style="font-size:16px;">
+          <strong>Systems &amp; Tech:</strong> Design of accounting systems, internal control evaluation, ERP system selection, mystery audits, digital transformation.
+        </div>
+        <div class="card" style="font-size:16px;">
+          <strong>Corporate &amp; Legal:</strong> Corporate restructuring, mergers &amp; acquisitions, debt syndication, representations before tax authorities, insolvency resolution.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: BRANCH OFFICES, DESIGNATIONS & KYC -->
+    <section id="sec-branch-offices-kyc">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🏢 6. Branch Offices (Sec 27), Designations (Sec 7) &amp; Mandatory KYC</span>
+        </div>
+        <span class="section-tag">Operational Compliance</span>
+      </div>
+
+      <p>
+        To ensure effective supervision and prevent absentee practice, <strong class="k-blue">Section 27</strong> of the Act sets out mandatory requirements for maintaining multiple offices.
+      </p>
+
+      <div class="callout callout-blue">
+        <div class="callout-title">📌 Section 27: Separate Member in Charge for Each Office</div>
+        <p>
+          Where a chartered accountant in practice or a firm of chartered accountants has more than one office in India, <strong class="k-red">each one of such offices shall be in the separate charge of a member of the Institute</strong>. Failure to place a separate member in charge constitutes professional misconduct under the Act.
+        </p>
+      </div>
+
+      <h3>Statutory Exemptions from Separate In-Charge Requirement</h3>
+      <div class="grid-2">
+        <div class="card" style="border-left: 4px solid var(--primary-green);">
+          <div class="card-title">1. Second Office within Same City / 50 km Limit</div>
+          <p>A member or firm can open a second office without a separate member in charge, provided:</p>
+          <ul>
+            <li>The second office is located within the <strong class="k-green">same city / municipal limits</strong>; or</li>
+            <li>It is situated within a radius of <strong class="k-blue">50 km</strong> from the municipal limits of the existing office.</li>
+            <li>A name board must be displayed, and one member or partner looks after both offices.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="border-left: 4px solid var(--primary-amber);">
+          <div class="card-title">2. Temporary Office in Hill Stations</div>
+          <p>Practicing members and firms are permitted to open a temporary second office in hill stations under Council guidelines, provided:</p>
+          <ul>
+            <li>The temporary office remains open for a period <strong class="k-amber">not exceeding 3 months</strong> in a financial year during summer.</li>
+            <li>No separate member in charge is required during this limited temporary period.</li>
+            <li>Name board displayed only during operating months; ICAI informed in advance.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Section 7: Restriction on Use of Designations</h3>
+      <p>
+        Under <strong class="k-red">Section 7</strong>, a member in practice is strictly prohibited from using any designation other than <strong class="k-blue">"Chartered Accountant"</strong> on professional documents, letterheads, visiting cards, or signboards.
+      </p>
+      <ul>
+        <li><strong class="k-red">Prohibited Designations:</strong> "Tax Consultant", "Cost Consultant", "Corporate Lawyer", "Financial Wizard", "Insolvency Advisor", "GST Specialist".</li>
+        <li><strong class="k-green">Permitted Designations:</strong> Degrees of Universities recognized by law (e.g., B.Com, LL.B., Ph.D.), membership titles of the Institute (ACA, FCA), or recognized foreign accounting bodies (e.g., CPA, ACCA).</li>
+        <li><em>Insolvency Professional:</em> A CA who is registered as an Insolvency Professional (IP) can mention "Insolvency Professional" only on stationery used exclusively for insolvency assignments under IBC, not on general CA firm letterheads.</li>
+      </ul>
+
+      <h3>Mandatory KYC Norms for CA in Practice</h3>
+      <p>
+        The Council has made it mandatory for every practicing CA to comply with <strong class="k-purple">Know Your Customer (KYC) Norms</strong> for all clients:
+      </p>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%;">Client Category</th>
+              <th style="width: 35%;">Identity &amp; Address Verification</th>
+              <th style="width: 40%;">Business &amp; Ownership Verification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Individuals</strong></td>
+              <td>PAN Card, Passport, Aadhaar, Voter ID, Driving Licence.</td>
+              <td>Proof of residential address, source of wealth/funds.</td>
+            </tr>
+            <tr>
+              <td><strong>Corporate Entities</strong></td>
+              <td>Certificate of Incorporation, Memorandum &amp; Articles (MOA/AOA), Board Resolution.</td>
+              <td>Identification of Ultimate Beneficial Owners (UBO &gt;10%), list of directors, registered office proof.</td>
+            </tr>
+            <tr>
+              <td><strong>Trusts &amp; Societies</strong></td>
+              <td>Trust Deed, Registration Certificate, PAN.</td>
+              <td>Names of Settlors, Trustees, Beneficiaries, and authorized signatories.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 7: DISCIPLINARY MECHANISM -->
+    <section id="sec-disciplinary-mechanism">
+      <div class="section-header">
+        <div class="section-title">
+          <span>⚖️ 7. Disciplinary Mechanism: Director (Discipline), BOD vs. DC (Sec 21&ndash;22)</span>
+        </div>
+        <span class="section-tag">Statutory Judicial Hierarchy</span>
+      </div>
+
+      <p>
+        The Chartered Accountants Act establishes a multi-tiered, quasi-judicial enforcement machinery to investigate and adjudicate professional and other misconduct committed by members.
+      </p>
+
+      <div class="grid-3">
+        <!-- Disciplinary Directorate -->
+        <div class="card" style="border-top: 4px solid var(--primary-blue);">
+          <div class="card-title">1. Disciplinary Directorate</div>
+          <p><strong>Section 21:</strong> Headed by the <strong class="k-blue">Director (Discipline)</strong>.</p>
+          <ul>
+            <li>Receives all complaints (along with prescribed fee of ₹2,500) and information against members.</li>
+            <li>Investigates and arrives at a <strong class="k-blue">Prima Facie Opinion</strong>.</li>
+            <li>Places First Schedule matters before Board of Discipline; places Second Schedule (or combined) matters before Disciplinary Committee.</li>
+          </ul>
+        </div>
+
+        <!-- Board of Discipline -->
+        <div class="card" style="border-top: 4px solid var(--primary-green);">
+          <div class="card-title">2. Board of Discipline (BOD)</div>
+          <p><strong>Section 21A:</strong> Deals with <strong class="k-green">First Schedule Misconduct</strong>.</p>
+          <ul>
+            <li>Comprises Presiding Officer (Council member) + 2 members.</li>
+            <li>Empowered to award penalties:
+              <ol>
+                <li>Reprimand the member;</li>
+                <li>Remove name from register up to <strong class="k-red">3 months</strong>;</li>
+                <li>Impose fine up to <strong class="k-red">₹1,00,000</strong>.</li>
+              </ol>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Disciplinary Committee -->
+        <div class="card" style="border-top: 4px solid var(--primary-red);">
+          <div class="card-title">3. Disciplinary Committee (DC)</div>
+          <p><strong>Section 21B:</strong> Deals with <strong class="k-red">Second Schedule Misconduct</strong>.</p>
+          <ul>
+            <li>President/Vice President + 2 Council members + 2 Central Govt nominees.</li>
+            <li>Empowered to award severe penalties:
+              <ol>
+                <li>Reprimand the member;</li>
+                <li>Remove name from register <strong class="k-red">permanently or for any period</strong>;</li>
+                <li>Impose fine up to <strong class="k-red">₹5,00,000</strong>.</li>
+              </ol>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Appeals to the Appellate Authority: Section 22A &amp; 22G</h3>
+      <p>
+        Any member aggrieved by any order of the Board of Discipline or Disciplinary Committee, or the Director (Discipline), may prefer an appeal within <strong class="k-blue">90 days</strong> to the <strong class="k-purple">Appellate Authority</strong>.
+      </p>
+      <ul>
+        <li>The Appellate Authority comprises a retired High Court Judge as Chairperson + 2 Central Govt members + 2 senior ICAI Council nominees.</li>
+        <li>The Authority has powers to confirm, modify, or set aside the order, impose, reduce, or enhance the penalty, or remit the matter back for further enquiry.</li>
+        <li>A further appeal lies before the <strong class="k-blue">High Court</strong> within 90 days on questions of law.</li>
+      </ul>
+    </section>
+
+<!-- SECTION 8: FIRST SCHEDULE, PART I (CLAUSES 1 TO 6) -->
+    <section id="sec-first-schedule-p1">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📋 8. First Schedule, Part I: CAs in Practice &ndash; Clauses 1 to 6</span>
+        </div>
+        <span class="section-tag">Practice Misconduct (Part A)</span>
+      </div>
+
+      <p>
+        <strong class="k-blue">Part I of the First Schedule</strong> governs professional misconduct in relation to Chartered Accountants in practice. Misconduct under this Schedule is placed before the <strong class="k-green">Board of Discipline (BOD)</strong> under Section 21A.
+      </p>
+
+      <!-- Clause 1 -->
+      <div class="callout callout-blue">
+        <div class="callout-title">Clause (1): Allowing Another Person to Practice in His Name</div>
+        <p>
+          A CA in practice is guilty of professional misconduct if he: <em>"allows any person to practice in his name as a chartered accountant unless such person is also a chartered accountant in practice and is in partnership with or employed by him."</em>
+        </p>
+        <ul>
+          <li><strong>Purpose:</strong> To safeguard the public against unqualified persons practicing under the cloak of a qualified CA.</li>
+          <li><strong>Permitted:</strong> Only a CA in practice who is a <strong class="k-blue">Partner</strong> or an <strong class="k-green">Employee</strong> working under his direct supervision and control.</li>
+          <li><strong>Prohibited:</strong> Allowing non-CAs (e.g., relatives, advocates, tax practitioners) or practicing CAs who are neither partners nor employees to practice in the firm's name (refer to Illustration 5).</li>
+        </ul>
+      </div>
+
+      <!-- Clause 2 -->
+      <div class="callout callout-green">
+        <div class="callout-title">Clause (2): Sharing / Paying Share, Commission or Brokerage in Fees</div>
+        <p>
+          A CA in practice is guilty of misconduct if he: <em>"pays or allows or agrees to pay or allow, directly or indirectly, any share, commission or brokerage in the fees or profits of his professional business, to any person other than a member of the Institute or a partner or a retired partner or the legal representative of a deceased partner, or a member of any other professional body or with such other persons having such qualification as may be prescribed..."</em>
+        </p>
+        <ul>
+          <li><strong>General Rule:</strong> Sharing professional fees with non-members is strictly forbidden to prevent commercialization and toutism.</li>
+          <li><strong>Statutory Exceptions (Permissible Sharing):</strong>
+            <ol>
+              <li>Another member of the Institute (individual CA or CA firm);</li>
+              <li>A partner or a retired partner;</li>
+              <li>The legal representative of a deceased partner (goodwill payment / share of profits);</li>
+              <li><strong class="k-blue">Regulation 53A &ndash; Members of Other Professional Bodies:</strong>
+                <ul>
+                  <li>Company Secretary (ICSI);</li>
+                  <li>Cost Accountant (ICMAI);</li>
+                  <li>Advocate (Bar Council of India);</li>
+                  <li>Architect (Indian Institute of Architects);</li>
+                  <li>Actuary (Institute of Actuaries of India);</li>
+                  <li>Recognized foreign professional accounting bodies under Section 29(2).</li>
+                </ul>
+              </li>
+              <li><strong class="k-purple">Regulation 53B &ndash; Prescribed Qualifications in India:</strong> CS, CMA, Actuary, Bachelor in Engineering (B.E.), Bachelor in Technology (B.Tech), Bachelor in Architecture (B.Arch), Bachelor in Law (LL.B.), Master in Business Administration (MBA from recognized University).</li>
+            </ol>
+          </li>
+          <li><strong>Sale of Goodwill to Widow / Legal Heir:</strong> A practicing CA or firm can pay a share of profits or purchase price of goodwill to the widow or legal heirs of a deceased sole proprietor or partner, subject to obtaining <strong class="k-red">prior approval of the Council</strong> within one year of death.</li>
+        </ul>
+      </div>
+
+      <!-- Clause 3 -->
+      <div class="callout callout-amber">
+        <div class="callout-title">Clause (3): Accepting Share of Profits from Non-Members</div>
+        <p>
+          A CA in practice is guilty if he: <em>"accepts or agrees to accept any part of the profits of the professional work of a person who is not a member of the Institute."</em>
+        </p>
+        <ul>
+          <li>While Clause 2 deals with *paying* or sharing firm fees, Clause 3 deals with *receiving* or accepting a cut, kickback, or referral fee from the professional earnings of non-CAs (e.g., accepting referral commission from an advocate, merchant banker, or valuer).</li>
+          <li><em>Exception:</em> Accepting profits from members of professional bodies prescribed under Regulation 53A / 53B is permitted.</li>
+        </ul>
+      </div>
+
+      <!-- Clause 4 -->
+      <div class="callout callout-purple">
+        <div class="callout-title">Clause (4): Entering into Partnership with Non-Members</div>
+        <p>
+          A CA in practice is guilty if he: <em>"enters into partnership, in or outside India, with any person other than a Chartered Accountant in practice or such other person who is a member of any other professional body having such qualifications as may be prescribed..."</em>
+        </p>
+        <ul>
+          <li><strong>Permissible Partnerships:</strong>
+            <ol>
+              <li>Another Chartered Accountant in practice;</li>
+              <li>Persons possessing qualifications recognized under <strong class="k-blue">Regulation 53B</strong> (CS, CMA, Actuary, B.E., B.Tech, B.Arch, LL.B., MBA) forming <strong class="k-purple">Multi-Disciplinary Partnerships (MDPs)</strong>;</li>
+              <li>Members of recognized foreign accounting bodies entitled to registration under Section 4(1)(v).</li>
+            </ol>
+          </li>
+          <li>Partnership with an ordinary non-professional or unqualified person is strictly illegal.</li>
+        </ul>
+      </div>
+
+      <!-- Clause 5 -->
+      <div class="callout callout-red">
+        <div class="callout-title">Clause (5): Securing Professional Business through Agents / Non-Open Means</div>
+        <p>
+          A CA in practice is guilty if he: <em>"secures either through the services of a person who is not an employee of such Chartered Accountant or who is not his partner or by means which are not open to a Chartered Accountant, any professional business."</em>
+        </p>
+        <ul>
+          <li>Prohibits paying kickbacks, employing touts, agents, or canvassers to divert clients or secure audits.</li>
+          <li>Agreements permitted under Clauses 2, 3, and 4 (such as fee sharing with CS/CMA under Reg 53A) are expressly saved from this prohibition.</li>
+        </ul>
+      </div>
+
+      <!-- Clause 6 -->
+      <div class="callout callout-blue">
+        <div class="callout-title">Clause (6): Soliciting Clients or Professional Work</div>
+        <p>
+          A CA in practice is guilty if he: <em>"solicits clients or professional work either directly or indirectly by circular, advertisement, personal communication or interview or by any other means."</em>
+        </p>
+        <ul>
+          <li><strong>The General Ban:</strong> Soliciting professional work degrades the dignity of the profession and impairs auditor independence.</li>
+          <li><strong>Statutory Provisos (Permitted Actions):</strong>
+            <ol>
+              <li><strong class="k-green">Proviso (i):</strong> Applying for or requesting professional work from <strong class="k-blue">another Chartered Accountant in practice</strong> (peer-to-peer work sharing).</li>
+              <li><strong class="k-green">Proviso (ii):</strong> Responding to tenders or enquiries issued by users of professional services.</li>
+            </ol>
+          </li>
+          <li><strong class="k-red">Council Guidelines on Tenders (Crucial Exam Rule):</strong>
+            <ul>
+              <li>A member in practice <strong class="k-red">shall NOT respond to any tender</strong> in areas of services <strong class="k-blue">exclusively reserved for Chartered Accountants</strong> (e.g., Statutory Audit under Companies Act, Tax Audit u/s 44AB) <strong class="k-red">UNLESS</strong> a <strong class="k-green">minimum fee</strong> is explicitly prescribed in the tender document itself.</li>
+              <li><em>Open Areas Exception:</em> Where the scope of service is open to other professionals alongside CAs (e.g., Internal Audit, Concurrent Audit, Consulting, GST advisory), the member is free to respond even if no minimum fee is prescribed!</li>
+            </ul>
+          </li>
+          <li><strong>Empanelment Rules:</strong> A CA can apply for empanelment only if the organization has maintained a panel or publicly invited applications; sending roving circulars to banks/corporates without invitation violates Clause 6.</li>
+          <li><strong>Books, Articles &amp; Media:</strong> Authorship of books or articles is permitted. While publishing, the author may state his name and professional designation ("CA"), but the name of his firm or contact telephone numbers should not be publicized in a manner that solicits work.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION 9: FIRST SCHEDULE, PART I (CLAUSES 7 TO 12) -->
+    <section id="sec-first-schedule-p1b">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📢 9. First Schedule, Part I: Clauses 7 to 12</span>
+        </div>
+        <span class="section-tag">Practice Misconduct (Part B)</span>
+      </div>
+
+      <!-- Clause 7 -->
+      <div class="callout callout-purple">
+        <div class="callout-title">Clause (7): Advertising Professional Attainments or Services</div>
+        <p>
+          A CA in practice is guilty if he: <em>"advertises his professional attainments or services, or uses any designation or expressions other than Chartered Accountant on professional documents, visiting cards, letter heads or sign boards..."</em>
+        </p>
+        <ul>
+          <li><strong>Permissible Designations:</strong> Degrees of recognized Universities (B.Com, LL.B., Ph.D.) and recognized Institute titles (ACA, FCA). Expressions such as "Tax Specialist", "Forensic Expert", "GST Guru", or "Management Advisor" are strictly illegal.</li>
+          <li><strong>Write-Up Guidelines:</strong>
+            <ul>
+              <li>A member or firm may advertise through a write-up setting out services provided and firm particulars.</li>
+              <li>Must be factual, truthful, and dignified; no font larger than normal text.</li>
+              <li>No superlative claims ("leading firm", "best tax auditor"), no fee quotes, and no client lists unless requested by the prospective client.</li>
+            </ul>
+          </li>
+          <li><strong>Website Guidelines (Pull vs. Push):</strong>
+            <ul>
+              <li>Website must run strictly on a <strong class="k-blue">Pull basis</strong> (information displayed for visitors seeking it, no push popups or unsolicited emails).</li>
+              <li>Domain names must conform to professional dignity (e.g., <code>www.abcandco.com</code>); sensational or superlative domain names (e.g., <code>www.bestca.in</code>, <code>www.cheapesttaxaudit.com</code>) are strictly prohibited.</li>
+              <li>Passport-style photographs of partners are permitted.</li>
+              <li>Names of clients and fees charged <strong class="k-red">cannot be displayed</strong> on the public website; they can only be shared upon specific request.</li>
+            </ul>
+          </li>
+          <li><strong>Visiting Cards &amp; Letterheads:</strong> QR codes on visiting cards are permitted provided they only store basic contact details. Printing vision/mission statements behind visiting cards is prohibited as it amounts to solicitation (ESB Decision).</li>
+        </ul>
+      </div>
+
+      <!-- Clause 8 -->
+      <div class="callout callout-red">
+        <div class="callout-title">Clause (8): Communication with Previous Auditor (RPAD Mandatory)</div>
+        <p>
+          A CA in practice is guilty if he: <em>"accepts a position as auditor previously held by another chartered accountant or a certified auditor... without first communicating with him in writing."</em>
+        </p>
+        <ul>
+          <li><strong>Fundamental Professional Courtesy &amp; Duty:</strong> Ensures the incoming auditor learns whether there are professional reasons why the appointment should not be accepted (e.g., management interference, scope limitations, fraud reporting under Section 143(12)).</li>
+          <li><strong>Mandatory Mode of Communication:</strong>
+            <ul>
+              <li>Must be sent via <strong class="k-red">Registered Post with Acknowledgment Due (RPAD)</strong> or by hand delivery against written written acknowledgment.</li>
+              <li><strong class="k-red">Certificate of Posting is NOT valid positive proof:</strong> Sending communication under mere Certificate of Posting (ordinary post) does not constitute compliance and the member will be held guilty (Illustration 16).</li>
+              <li>Communication by secure digital means (email) is valid only where positive acknowledgment/delivery proof is verifiable.</li>
+            </ul>
+          </li>
+          <li><strong>Timing of Communication:</strong> Communication must be initiated <strong class="k-blue">PRIOR to accepting the appointment</strong>, and the incoming auditor must wait a reasonable time for a reply before taking up the audit.</li>
+          <li><strong>Undisputed Audit Fees (Chapter IX Guidelines):</strong> A member shall not accept statutory audit of an entity if the <strong class="k-red">undisputed audit fees</strong> of the previous auditor remain unpaid (except in cases of sick industrial units or liquidation).</li>
+        </ul>
+      </div>
+
+      <!-- Clause 9 -->
+      <div class="callout callout-blue">
+        <div class="callout-title">Clause (9): Compliance with Statutory Appointment Provisions</div>
+        <p>
+          A CA in practice is guilty if he: <em>"accepts an appointment as auditor of a company without first ascertaining from it whether the requirements of sections 139 to 141 of the Companies Act, 2013... have been duly complied with."</em>
+        </p>
+        <ul>
+          <li>The incoming auditor must obtain written confirmation/certificate from the company that all statutory formalities were completed.</li>
+          <li><strong>Special Notice under Section 140(4):</strong> Verify whether special notice was required and duly served when replacing a retiring auditor.</li>
+          <li><strong>Removal before Term under Section 140(1):</strong> If the previous auditor was removed before expiry of their term, the incoming auditor must verify that <strong class="k-red">prior approval of the Central Government (Form ADT-2)</strong> was obtained. Acceptance without Central Government approval is a severe violation!</li>
+        </ul>
+      </div>
+
+      <!-- Clause 10 -->
+      <div class="callout callout-green">
+        <div class="callout-title">Clause (10): Restriction on Contingent Fees &amp; Percentage of Profits</div>
+        <p>
+          A CA in practice is guilty if he: <em>"charges or offers to charge, accepts or offers to accept in respect of any professional employment fees which are based on a percentage of profits or which are contingent upon the findings, or results of such employment..."</em>
+        </p>
+        <ul>
+          <li>Contingent fees destroy objectivity and create massive self-interest threats.</li>
+          <li><strong class="k-green">Exemptions under Regulation 192 (Permissible Percentage / Contingent Fees):</strong>
+            <ol>
+              <li>Receiver or Liquidator: Fees based on percentage of realization or disbursement of assets.</li>
+              <li>Auditor of Co-operative Society: Fees based on percentage of paid-up capital, working capital, gross/net income or profits.</li>
+              <li>Valuer for Direct Taxes and Duties: Fees based on percentage of property value.</li>
+              <li>Fund Raising Services: Fees based on percentage of funds raised.</li>
+              <li>Debt Recovery Services: Fees based on percentage of debt recovered.</li>
+              <li>Cost Optimization Services: Fees based on percentage of benefit derived.</li>
+              <li>Insolvency Professional (IBC 2016): Fees based on percentage of recovery/assets.</li>
+              <li><strong class="k-purple">Non-Assurance Services to Non-Audit Clients:</strong> Fees may be charged on a contingent basis!</li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Clause 11 -->
+      <div class="callout callout-amber">
+        <div class="callout-title">Clause (11): Engaging in Other Business or Occupation (Regulation 190A)</div>
+        <p>
+          A CA in practice is guilty if he: <em>"engages in any business or occupation other than the profession of chartered accountant unless permitted by the Council so to engage."</em>
+        </p>
+        <ul>
+          <li><strong>Proviso &ndash; Director Simplicitor:</strong> A CA in practice can be an <strong class="k-green">ordinary Director (Director Simplicitor)</strong> in a company without prior permission, provided:
+            <ul>
+              <li>He is not a Managing Director or Whole-time Director; and</li>
+              <li>Neither he nor any of his partners is interested in such company as statutory auditor.</li>
+            </ul>
+          </li>
+          <li><strong class="k-blue">General Permission (No Prior Application Required):</strong>
+            <ol>
+              <li>Employment under another CA in practice or CA firm;</li>
+              <li>Private tutoring or teaching in university/college up to <strong class="k-blue">25 hours per month</strong>;</li>
+              <li>Authorship of books and articles;</li>
+              <li>Acting as an Arbitrator, Mediator, Surveyor, Loss Assessor, or Valuer;</li>
+              <li>Holding life insurance agency for renewal commission on policies taken prior to entering practice;</li>
+              <li>Attending to own family business without active management.</li>
+            </ol>
+          </li>
+          <li><strong class="k-red">Specific Permission (Prior Council Approval Mandatory):</strong>
+            <ol>
+              <li>Full-time or part-time employment in business concerns (e.g., Managing Director / Executive Chairman);</li>
+              <li>Active partnership in a commercial business firm;</li>
+              <li>Editorship of journals other than professional journals.</li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Clause 12 -->
+      <div class="callout callout-red">
+        <div class="callout-title">Clause (12): Signing by Unqualified Persons / Non-Partners</div>
+        <p>
+          A CA in practice is guilty if he: <em>"allows a person not being a member of the institute in practice or a member not being his partner to sign on his behalf or on behalf of his firm, any balance sheet, profit and loss account, report or financial statements."</em>
+        </p>
+        <ul>
+          <li>Only a <strong class="k-blue">Partner who is a Chartered Accountant in practice</strong> can sign financial statements or audit reports on behalf of the firm.</li>
+          <li>Giving a Power of Attorney (POA) to a paid employee CA to sign audit reports is strictly illegal (Illustration 23).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION 10: FIRST SCHEDULE, PARTS II, III & IV -->
+    <section id="sec-first-schedule-p2-3-4">
+      <div class="section-header">
+        <div class="section-title">
+          <span>👥 10. First Schedule: Parts II, III &amp; IV (Service &amp; Other Misconduct)</span>
+        </div>
+        <span class="section-tag">First Schedule Completion</span>
+      </div>
+
+      <div class="grid-2">
+        <!-- Part II -->
+        <div class="card" style="border-top: 4px solid var(--primary-green);">
+          <div class="card-title">Part II: Professional Misconduct &ndash; CAs in Service</div>
+          <p>A member in employment (other than in practice) is guilty of misconduct if he:</p>
+          <ul>
+            <li><strong class="k-green">Clause (1):</strong> Pays or allows or agrees to pay directly or indirectly to any person any share in the emoluments of the employment undertaken by him (kickbacks on salary).</li>
+            <li><strong class="k-red">Clause (2):</strong> Accepts or agrees to accept any part of fees, profits, or gains from a lawyer, CA, broker, agent, or customer engaged by his employer by way of commission or gratification.</li>
+          </ul>
+        </div>
+
+        <!-- Part III -->
+        <div class="card" style="border-top: 4px solid var(--primary-blue);">
+          <div class="card-title">Part III: Professional Misconduct &ndash; Members Generally</div>
+          <p>A member, whether in practice or not, is guilty of misconduct if he:</p>
+          <ul>
+            <li><strong class="k-blue">Clause (1):</strong> Not being a fellow of the Institute, acts as a fellow of the Institute (falsely using "FCA").</li>
+            <li><strong class="k-purple">Clause (2):</strong> Does not supply the information called for, or does not comply with the requirements asked for, by the Institute, Council, Director (Discipline), BOD, Disciplinary Committee, QRB, or Appellate Authority.</li>
+            <li><strong class="k-red">Clause (3):</strong> Gives false information knowing it to be false while inviting professional work, responding to tenders, advertising through a write-up, or empanelment.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Part IV -->
+      <div class="callout callout-red" style="margin-top: 20px;">
+        <div class="callout-title">Part IV: Other Misconduct &ndash; Members Generally (First Schedule)</div>
+        <p>
+          A member of the Institute, whether in practice or not, is deemed guilty of <strong class="k-red">Other Misconduct</strong> under the First Schedule if he:
+        </p>
+        <ol>
+          <li><strong>Clause (1):</strong> Is held guilty by any civil or criminal court for an offence which is punishable with imprisonment for a term <strong class="k-red">NOT exceeding 6 months</strong>.</li>
+          <li><strong>Clause (2):</strong> In the opinion of the Council, <strong class="k-red">brings disrepute to the profession or the Institute</strong> as a result of his action, whether or not related to his professional work (e.g., retaining custody of trust funds, issuing bounced cheques, misbehaviour at professional conferences).</li>
+        </ol>
+      </div>
+    </section>
+
+<!-- SECTION 11: SECOND SCHEDULE, PART I (CLAUSES 1 TO 10) -->
+    <section id="sec-second-schedule-p1">
+      <div class="section-header">
+        <div class="section-title">
+          <span>⚖️ 11. Second Schedule, Part I: CAs in Practice &ndash; Clauses 1 to 10</span>
+        </div>
+        <span class="section-tag">Severe Practice Misconduct</span>
+      </div>
+
+      <p>
+        <strong class="k-red">Part I of the Second Schedule</strong> deals with grave professional misconduct in relation to Chartered Accountants in practice. Misconduct under this Schedule falls under the exclusive jurisdiction of the <strong class="k-red">Disciplinary Committee (DC)</strong> under Section 21B, empowering it to remove a member's name <strong class="k-red">permanently or for any period</strong> and levy fines up to <strong class="k-red">₹5,00,000</strong>.
+      </p>
+
+      <!-- Clause 1 -->
+      <div class="callout callout-blue">
+        <div class="callout-title">Clause (1): Breach of Client Confidentiality</div>
+        <p>
+          A CA in practice is guilty of misconduct if he: <em>"discloses information acquired in the course of his professional engagement to any person other than his client so engaging him, without the consent of his client or otherwise than as required by any law for the time being in force."</em>
+        </p>
+        <ul>
+          <li><strong>Fundamental Duty:</strong> Absolute confidentiality must be preserved even after the professional relationship ends.</li>
+          <li><strong>Permissible Disclosures:</strong>
+            <ol>
+              <li>With the <strong class="k-green">express consent</strong> of the client;</li>
+              <li>When <strong class="k-red">required by law</strong>: e.g., summons issued under Section 131 of Income Tax Act, orders of Court, statutory fraud reporting under <strong class="k-blue">Section 143(12) of Companies Act, 2013</strong>;</li>
+              <li>Under <strong class="k-purple">NOCLAR</strong> to prevent imminent and serious harm to public interest;</li>
+              <li>In response to peer review or quality review by ICAI / QRB / NFRA.</li>
+            </ol>
+          </li>
+          <li><em>Example:</em> An auditor cannot tip off third parties or share prospective merger plans of a client with friends or relatives for insider trading (refer to Illustration 29 &amp; 30).</li>
+        </ul>
+      </div>
+
+      <!-- Clause 2 -->
+      <div class="callout callout-green">
+        <div class="callout-title">Clause (2): Certifying Reports without Examination</div>
+        <p>
+          A CA in practice is guilty if he: <em>"certifies or submits in his name or in the name of his firm, a report of an examination of financial statements unless the examination of such statements and the related records has been made by him or by a partner or an employee in his firm or by another chartered accountant in practice."</em>
+        </p>
+        <ul>
+          <li>Prohibits "rubber-stamping" audit reports prepared by unqualified third parties.</li>
+          <li>Permitted reliance: Reliance placed on work performed by partners, qualified employee CAs, branch auditors, or joint auditors in accordance with <strong class="k-blue">SA 600</strong> (Using the Work of Another Auditor).</li>
+        </ul>
+      </div>
+
+      <!-- Clause 3 -->
+      <div class="callout callout-amber">
+        <div class="callout-title">Clause (3): Vouching for the Accuracy of Forecasts (SAE 3400)</div>
+        <p>
+          A CA in practice is guilty if he: <em>"permits his name or the name of his firm to be used in connection with an estimate of earnings contingent upon future transactions in a manner which may lead to the belief that he vouches for the accuracy of the forecast."</em>
+        </p>
+        <ul>
+          <li>Future events are inherently uncertain; an auditor can NEVER guarantee, predict, or vouch for the accuracy of future profits or cash flows.</li>
+          <li><strong>SAE 3400 Examination Permitted:</strong> A CA can examine and report on <strong class="k-blue">Prospective Financial Information (PFI)</strong> under SAE 3400, provided:
+            <ol>
+              <li>He clearly states the sources of information, underlying assumptions, and scope of examination;</li>
+              <li>He issues negative assurance stating that nothing has come to his attention to suggest assumptions are unreasonable;</li>
+              <li>He explicitly disclaims vouching for the accuracy of future outcomes.</li>
+            </ol>
+          </li>
+          <li><em>Circulation / Capacity Certificates:</em> Certifying past newspaper circulation figures based on actual past sales books does NOT violate Clause 3 because it relates to historical facts, not future forecasts (Illustration 32).</li>
+        </ul>
+      </div>
+
+      <!-- Clause 4 -->
+      <div class="callout callout-purple">
+        <div class="callout-title">Clause (4): Expressing Opinion when having Substantial Interest</div>
+        <p>
+          A CA in practice is guilty if he: <em>"expresses his opinion on financial statements of any business or enterprise in which he, his firm, or a partner in his firm has a substantial interest."</em>
+        </p>
+        <ul>
+          <li><strong>Definition of Substantial Interest:</strong> Beneficial holding (alone or with relatives) of <strong class="k-red">20% or more voting power</strong> in a company, or entitlement to <strong class="k-red">20% or more profits</strong> in a non-corporate enterprise (under Appendix 9 to CA Regulations).</li>
+          <li><strong>Companies Act Threshold:</strong> Section 141(3)(d) disqualifies an auditor if he or his relative holds <strong class="k-red">ANY security or financial interest</strong> in the company (with a grace limit of ₹1,00,000 face value held by relatives).</li>
+          <li><strong>Director Simplicitor:</strong> A CA who is a director in a company (or whose partner is a director) cannot act as its statutory auditor. Furthermore, after resigning as director, a cooling-off period of 2 years is recommended.</li>
+        </ul>
+      </div>
+
+      <!-- Clause 5 -->
+      <div class="callout callout-red">
+        <div class="callout-title">Clause (5): Failure to Disclose a Known Material Fact</div>
+        <p>
+          A CA in practice is guilty if he: <em>"fails to disclose a material fact known to him which is not disclosed in a financial statement, but disclosure of which is necessary in making such financial statement not misleading where he is concerned with that financial statement in a professional capacity."</em>
+        </p>
+        <ul>
+          <li>Applies when the auditor *knows* a material fact that is missing from the accounts (e.g., major post-balance sheet fire destroying un-insured factory, significant contingent liability, default on debt covenants) and fails to report or modify his audit opinion.</li>
+        </ul>
+      </div>
+
+      <!-- Clause 6 -->
+      <div class="callout callout-blue">
+        <div class="callout-title">Clause (6): Failure to Report a Known Material Misstatement</div>
+        <p>
+          A CA in practice is guilty if he: <em>"fails to report a material misstatement known to him to appear in a financial statement with which he is concerned in a professional capacity."</em>
+        </p>
+        <ul>
+          <li>While Clause 5 deals with *omissions* of material facts, Clause 6 deals with *active falsehoods or misstatements* present in the financial statements (e.g., fictitious sales, under-provision of depreciation, inflated inventory values) which the auditor knows but conceals.</li>
+        </ul>
+      </div>
+
+      <!-- Clause 7 -->
+      <div class="callout callout-red">
+        <div class="callout-title">Clause (7): Gross Negligence &amp; Failure to Exercise Due Diligence</div>
+        <p>
+          A CA in practice is guilty if he: <em>"does not exercise due diligence, or is grossly negligent in the conduct of his professional duties."</em>
+        </p>
+        <ul>
+          <li><strong>Core Test of Audit Liability:</strong> Gross negligence is a reckless disregard of professional duty and failure to perform standard audit procedures prescribed by ICAI <strong class="k-blue">Standards on Auditing (SAs)</strong>.</li>
+          <li><strong>Examples of Gross Negligence:</strong>
+            <ul>
+              <li>Failure to attend physical inventory verification without performing alternative audit procedures under SA 501.</li>
+              <li>Failure to obtain external confirmations of bank balances, debtors, and creditors under <strong class="k-red">SA 505</strong>.</li>
+              <li>Failing to identify that 100% of sales were made to an undisclosed related party under SA 550 (NFRA Case Precedent).</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Clause 8 -->
+      <div class="callout callout-amber">
+        <div class="callout-title">Clause (8): Failure to Obtain Sufficient Information</div>
+        <p>
+          A CA in practice is guilty if he: <em>"fails to obtain sufficient information which is necessary for expression of an opinion or its exceptions are sufficiently material to negate the expression of an opinion."</em>
+        </p>
+        <ul>
+          <li>Under <strong class="k-blue">SA 500</strong>, the auditor must obtain sufficient appropriate audit evidence to draw reasonable conclusions on which to base his opinion.</li>
+          <li>If management imposes severe scope limitations denying basic records or third-party contact details, the auditor cannot issue a clean unqualified report &mdash; he must issue a <strong class="k-red">Disclaimer of Opinion or Qualified Opinion</strong> under <strong class="k-purple">SA 705</strong>.</li>
+        </ul>
+      </div>
+
+      <!-- Clause 9 -->
+      <div class="callout callout-purple">
+        <div class="callout-title">Clause (9): Material Departure from Generally Accepted Audit Procedures</div>
+        <p>
+          A CA in practice is guilty if he: <em>"fails to invite attention to any material departure from the generally accepted procedure of audit applicable to the circumstances."</em>
+        </p>
+        <ul>
+          <li>Mandates strict adherence to ICAI Standards on Auditing (SAs), Guidance Notes, and Accounting Standards.</li>
+          <li>If an audit procedure is omitted without documented justification and alternative testing, the auditor is guilty under Clause 9.</li>
+        </ul>
+      </div>
+
+      <!-- Clause 10 -->
+      <div class="callout callout-green">
+        <div class="callout-title">Clause (10): Client Moneys in Separate Bank Account</div>
+        <p>
+          A CA in practice is guilty if he: <em>"fails to keep moneys of his client other than fees or remuneration or money meant to be expended in a separate banking account or to use such moneys for purposes for which they are intended within a reasonable time."</em>
+        </p>
+        <ul>
+          <li>Money received from a client for specific expenses (e.g., advance for payment of advance tax, court fees, registration duties) must be deposited in a <strong class="k-green">separate Client Bank Account</strong>.</li>
+          <li>It cannot be mingled with the CA's personal or firm operating bank accounts.</li>
+          <li>Must be utilized promptly for the intended purpose or refunded without delay.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION 12: SECOND SCHEDULE, PARTS II & III -->
+    <section id="sec-second-schedule-p2-3">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🚨 12. Second Schedule: Parts II &amp; III (Guidelines &amp; Major Misconduct)</span>
+        </div>
+        <span class="section-tag">Disciplinary Committee Scope</span>
+      </div>
+
+      <div class="grid-2">
+        <!-- Part II -->
+        <div class="card" style="border-top: 4px solid var(--primary-red);">
+          <div class="card-title">Part II: Professional Misconduct &ndash; Members Generally</div>
+          <p>A member, whether in practice or not, is deemed guilty under the Second Schedule if he:</p>
+          <ul>
+            <li><strong class="k-red">Clause (1): Contravening Act, Regulations or Council Guidelines:</strong>
+              Contravening any provision of the Act, Regulations, or Council Guidelines (including Council General Guidelines 2008, audit ceiling limits, indebtedness, maintenance of books of account).
+            </li>
+            <li><strong class="k-purple">Clause (2): Confidentiality Breach in Employment:</strong>
+              Being an employee, discloses confidential information acquired in the course of employment without employer consent or statutory requirement.
+            </li>
+            <li><strong class="k-blue">Clause (3): Submitting False Statements to ICAI:</strong>
+              Includes in any statement, return, or form submitted to ICAI, Council, Director (Discipline), BOD, DC, QRB, or Appellate Authority any particulars knowing them to be false.
+            </li>
+            <li><strong class="k-red">Clause (4): Embezzlement / Defalcation:</strong>
+              Defalcates or embezzles money received in his professional capacity (severe criminal misconduct leading to immediate permanent cancellation of membership).
+            </li>
+            <li><strong class="k-amber">Clause (5): Acting as Auditor in Contravention of Companies Act:</strong>
+              Acts as an auditor of a company in violation of statutory disqualifications (Section 141) or appointment provisions of Companies Act, 2013.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Part III -->
+        <div class="card" style="border-top: 4px solid #111827;">
+          <div class="card-title">Part III: Other Misconduct &ndash; Members Generally (Second Schedule)</div>
+          <p>
+            A member of the Institute, whether in practice or not, is deemed guilty of <strong class="k-red">Other Misconduct</strong> under the Second Schedule if he:
+          </p>
+          <div class="callout callout-red" style="margin-top: 15px;">
+            <p>
+              <em>"is held guilty by any civil or criminal court for an offence which is punishable with imprisonment for a term <strong class="k-red">EXCEEDING 6 MONTHS</strong>."</em>
+            </p>
+          </div>
+          <ul>
+            <li><strong>Jurisdiction:</strong> Exclusively heard by the <strong class="k-red">Disciplinary Committee</strong>.</li>
+            <li><strong>Crucial Exam Distinction:</strong>
+              <ul>
+                <li>Imprisonment up to 6 months &rarr; First Schedule, Part IV, Clause 1 (Board of Discipline).</li>
+                <li>Imprisonment exceeding 6 months &rarr; Second Schedule, Part III, Clause 1 (Disciplinary Committee).</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 13: COUNCIL GENERAL GUIDELINES 2008 & CEILINGS -->
+    <section id="sec-council-guidelines">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📏 13. Council General Guidelines, 2008: Ceilings &amp; Statutory Limits</span>
+        </div>
+        <span class="section-tag">Binding Regulatory Guidelines</span>
+      </div>
+
+      <p>
+        Issued under the powers of Section 15 of the Act, contravention of the <strong class="k-blue">Council General Guidelines, 2008</strong> constitutes professional misconduct under <strong class="k-red">Clause (1) of Part II of the Second Schedule</strong>.
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 22%;">Chapter of Guidelines</th>
+              <th style="width: 38%;">Statutory Rule &amp; Mandatory Ceiling</th>
+              <th style="width: 40%;">Exclusions &amp; Exam Calculation Rules</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong class="k-blue">Chapter VI<br>Turnover &gt; ₹250 Cr Restrictions</strong></td>
+              <td>
+                Statutory auditor of a PSU, Government company, Listed entity, or Public company with <strong class="k-blue">turnover &ge; ₹250 crore</strong> shall NOT accept other assignments (management consultancy) for fees <strong class="k-red">exceeding the statutory audit fee</strong>.
+              </td>
+              <td>
+                Includes fees payable to associate concerns.<br>
+                <em>Exclusions:</em> Tax audit/audit under other statutes, statutory certifications, and representation before tax authorities (Illustration 38).
+              </td>
+            </tr>
+            <tr>
+              <td><strong class="k-green">Chapter VII<br>Indebtedness Limits</strong></td>
+              <td>
+                A member/firm/relative shall not accept audit if indebted to the concern (or given guarantee for third party) beyond statutory limits, or in other cases <strong class="k-red">exceeding ₹5,00,000</strong>.
+              </td>
+              <td>
+                Audit fees recovered on a progressive basis as work proceeds does NOT constitute indebtedness (Illustration 39).
+              </td>
+            </tr>
+            <tr>
+              <td><strong class="k-purple">Chapter VIII<br>Tax Audit Ceilings</strong></td>
+              <td>
+                A member in practice shall NOT accept more than <strong class="k-red">60 Tax Audit assignments</strong> under Section 44AB of Income Tax Act, 1961 in a financial year.
+              </td>
+              <td>
+                In a partnership firm, ceiling is <strong class="k-purple">60 audits per partner</strong>. Audits under Section 44AD, 44ADA, 44AE (presumptive taxation) where accounts are not audited u/s 44AB are excluded.
+              </td>
+            </tr>
+            <tr>
+              <td><strong class="k-amber">Chapter IX<br>Undisputed Audit Fees</strong></td>
+              <td>
+                A member shall NOT accept statutory audit of an enterprise if the <strong class="k-red">undisputed audit fees</strong> of the previous auditor remain unpaid.
+              </td>
+              <td>
+                <em>Exemptions:</em> Sick industrial enterprises, entities under liquidation or corporate insolvency resolution process (CIRP under IBC).
+              </td>
+            </tr>
+            <tr>
+              <td><strong class="k-red">Chapter V &amp; Sec 141(3)(g)<br>Company Audit Ceilings</strong></td>
+              <td>
+                <strong>Companies Act Limit:</strong> Max <strong class="k-blue">20 company audits</strong> per partner u/s 141(3)(g).<br>
+                <strong>ICAI Guideline Ceiling:</strong> Max <strong class="k-red">30 company audits</strong> per partner.
+              </td>
+              <td>
+                <em>Exclusions from Sec 141(3)(g) 20 Limit:</em> One Person Companies (OPCs), Dormant companies, Small companies, and Private companies with paid-up capital &lt; ₹100 crore (provided no default in annual returns).
+              </td>
+            </tr>
+            <tr>
+              <td><strong class="k-blue">Chapter X<br>Maintenance of Books</strong></td>
+              <td>
+                Every CA in practice or firm shall maintain proper books of account: <strong class="k-blue">Cash Book / Bank Book, General Ledger, and Billing/Fees Register</strong> for professional income.
+              </td>
+              <td>
+                Failure to maintain professional books of account constitutes professional misconduct (Illustration 36).
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 14: SELF-REGULATORY MEASURES & NFRA CASE STUDY -->
+    <section id="sec-self-regulatory-nfra">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🏛️ 14. Recommended Self-Regulatory Measures &amp; NFRA Disciplinary Case Study</span>
+        </div>
+        <span class="section-tag">Quality Control &amp; Precedents</span>
+      </div>
+
+      <p>
+        To foster internal audit quality and professional excellence, the Council has recommended non-statutory <strong class="k-green">Self-Regulatory Measures</strong>:
+      </p>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-title">1. Branch &amp; Joint Audits</div>
+          <p>Branch audits should preferably be conducted by local practicing CAs. Large public audits should be undertaken jointly by smaller and larger firms to foster professional capacity.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">2. Staff Ratio</div>
+          <p>Maintain a healthy ratio between qualified chartered accountant staff and unqualified audit assistants (recommended benchmark: 1 qualified CA for every 3 unqualified staff).</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">3. Digital / Banking Audit Fees</div>
+          <p>All professional audit fees should be collected strictly through digital banking modes or account payee cheques, avoiding cash fee collections.</p>
+        </div>
+      </div>
+
+      <!-- NFRA DISCIPLINARY CASE STUDY -->
+      <div class="callout callout-red" style="margin-top: 30px;">
+        <div class="callout-title">🚨 Master Case Study: NFRA Disciplinary Order on Gross Negligence (SA 505 Precedent)</div>
+        <p>
+          <strong>Facts of the Case:</strong> The statutory Engagement Partner (EP) of a listed company was investigated by the National Financial Reporting Authority (NFRA) for audit failure in FY 2020&ndash;21. The EP faced three major charges:
+        </p>
+        <ol>
+          <li><strong>Failure to Attend Physical Inventory Count (SA 501):</strong> The EP was appointed on 18.04.2021 and claimed it was impracticable to attend the count as on 31.03.2021. However, the audit file contained <strong class="k-red">zero documentation</strong> of alternative audit procedures performed to verify existence and condition of inventory.</li>
+          <li><strong>Failure to Identify Undisclosed Related Party Transactions (SA 550):</strong> The company made almost <strong class="k-red">100% of its sales to a single party</strong>, which was an undisclosed related party previously disclosed in FY 2017&ndash;18. The EP relied blindly on management representations without applying professional skepticism.</li>
+          <li><strong>Failure to Obtain External Confirmations (SA 505):</strong> The EP failed to obtain direct balance confirmations from trade debtors and creditors. Management had denied customer contact details claiming fear of losing business secrets. The EP accepted this limitation without evaluating fraud risks or modifying the audit opinion under SA 705.</li>
+        </ol>
+
+        <p style="margin-top: 15px;"><strong>NFRA Findings &amp; Statutory Holding:</strong></p>
+        <ul>
+          <li><strong>Rejection of Scope Limitation Excuse:</strong> Management's denial of contact details constituted a clear management-imposed scope limitation. The EP was duty-bound to evaluate fraud risks and consider modifying his opinion under SA 705. Relying on management explanations without independent corroboration violates SA 200, 500, and 505.</li>
+          <li><strong>PCAOB Precedent (Satyam Case):</strong> NFRA cited the landmark US PCAOB decision in the <em>Satyam audit failure</em>, where total reliance on management assertions without direct external bank confirmations was held to be gross negligence.</li>
+          <li><strong>Final Disciplinary Order:</strong> The Engagement Partner was held guilty of gross negligence and lack of due diligence under <strong class="k-red">Clauses (7), (8), and (9) of Part I of the Second Schedule to the CA Act, 1949</strong>. NFRA imposed a heavy monetary penalty and <strong class="k-red">debarred the CA for a period of 2 years</strong> from undertaking statutory or internal audits.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION 15: ETHICAL STANDARDS BOARD RECENT DECISIONS -->
+    <section id="sec-esb-decisions">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📜 15. Annexure II: Key Recent Decisions of Ethical Standards Board (ESB)</span>
+        </div>
+        <span class="section-tag">38+ Essential ICAI Rulings</span>
+      </div>
+
+      <p>
+        The <strong class="k-blue">Ethical Standards Board (ESB)</strong> of ICAI issues binding clarifications on practical issues of professional conduct. The table below consolidates the key rulings tested in CA Final exams:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 32%;">Subject / Professional Situation</th>
+              <th style="width: 18%;">Permissibility</th>
+              <th style="width: 50%;">Core Legal Ratio &amp; Ethical Restrictions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>BRSR Study vs. BRSR Core Assurance</strong></td>
+              <td><span style="color:#b91c1c; font-weight:700;">Partly Permitted</span></td>
+              <td>Statutory auditor <strong class="k-red">CANNOT</strong> prepare BRSR study for audit clients. However, he <strong class="k-green">CAN</strong> provide independent assurance on BRSR Core under SEBI guidelines.</td>
+            </tr>
+            <tr>
+              <td><strong>Due Diligence Services</strong></td>
+              <td><span style="color:#047857; font-weight:700;">Permissible</span></td>
+              <td>A CA firm can provide due diligence services to evaluate commercial acquisition opportunities.</td>
+            </tr>
+            <tr>
+              <td><strong>Compilation Engagement (SRS 4410)</strong></td>
+              <td><span style="color:#b91c1c; font-weight:700;">Prohibited</span></td>
+              <td>Statutory auditor of an entity <strong class="k-red">CANNOT</strong> accept a compilation engagement under SRS 4410 for the same entity (creates self-review threat).</td>
+            </tr>
+            <tr>
+              <td><strong>Mystery Audits &amp; Performance Assessments</strong></td>
+              <td><span style="color:#047857; font-weight:700;">Permissible</span></td>
+              <td>Permitted under Section 2(2)(iv) Management Consultancy Services.</td>
+            </tr>
+            <tr>
+              <td><strong>Director Simplicitor on Portal / Website</strong></td>
+              <td><span style="color:#047857; font-weight:700;">Permissible</span></td>
+              <td>Can mention position as Director on company portal, but <strong class="k-red">cannot</strong> mention firm name or professional attainments (violates Clause 6 &amp; 7).</td>
+            </tr>
+            <tr>
+              <td><strong>Board of Management in Co-op Banks</strong></td>
+              <td><span style="color:#047857; font-weight:700;">Permissible</span></td>
+              <td>Permitted as independent member of Board of Management in Primary Urban Co-op Banks without signing authority or audit relationship.</td>
+            </tr>
+            <tr>
+              <td><strong>IFSC / GIFT City Practice</strong></td>
+              <td><span style="color:#047857; font-weight:700;">Permissible</span></td>
+              <td>Permitted to set up practice in IFSC / GIFT City and render services to IFSC units from domestic offices.</td>
+            </tr>
+            <tr>
+              <td><strong>Vision &amp; Values on Visiting Cards</strong></td>
+              <td><span style="color:#b91c1c; font-weight:700;">Prohibited</span></td>
+              <td><strong class="k-red">NOT permitted</strong> to print vision or mission statements behind visiting cards (amounts to solicitation under Clause 6).</td>
+            </tr>
+            <tr>
+              <td><strong>Simultaneous Bank Audit &amp; ASM of Customer</strong></td>
+              <td><span style="color:#b91c1c; font-weight:700;">Prohibited</span></td>
+              <td>Statutory auditor of a bank <strong class="k-red">CANNOT</strong> accept Agency for Specialized Monitoring (ASM) of a borrower of the same bank simultaneously.</td>
+            </tr>
+            <tr>
+              <td><strong>Internal Auditor &amp; Procurement Officer</strong></td>
+              <td><span style="color:#b91c1c; font-weight:700;">Prohibited</span></td>
+              <td>Direct conflict of duties &mdash; an internal auditor cannot audit procurement functions he manages.</td>
+            </tr>
+            <tr>
+              <td><strong>Fees on Educational Grant Utilization %</strong></td>
+              <td><span style="color:#047857; font-weight:700;">Permissible</span></td>
+              <td>Permitted under Regulation 192 for certifying grant utilization amounts spent by educational institutions.</td>
+            </tr>
+            <tr>
+              <td><strong>Lien over Client Books for Unpaid Fees</strong></td>
+              <td><span style="color:#b91c1c; font-weight:700;">Strictly Prohibited</span></td>
+              <td>A Chartered Accountant <strong class="k-red">CANNOT exercise a lien</strong> over client books, ledgers, or statutory records for unpaid professional fees.</td>
+            </tr>
+            <tr>
+              <td><strong>Credit Card Indebtedness with Audit Bank</strong></td>
+              <td><span style="color:#047857; font-weight:700;">Permissible &le; ₹1L</span></td>
+              <td>Auditor can hold credit card of an audited bank provided outstanding unpaid balance does <strong class="k-red">not exceed ₹1,00,000</strong> beyond credit period.</td>
+            </tr>
+            <tr>
+              <td><strong>Trademark or Patent Attorney</strong></td>
+              <td><span style="color:#b91c1c; font-weight:700;">Prohibited</span></td>
+              <td>Cannot act as Trademark/Patent Attorney; however, routine advisory on Intellectual Property Rights (IPR) is permitted.</td>
+            </tr>
+            <tr>
+              <td><strong>Internal Auditor Holding Client Shares</strong></td>
+              <td><span style="color:#047857; font-weight:700;">Permissible</span></td>
+              <td>No statutory bar under Companies Act for an internal auditor to hold shares (unlike statutory auditor disqualified u/s 141(3)(d)).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 16: LEGAL LIABILITIES OF AUDITORS: CIVIL & CRIMINAL -->
+    <section id="sec-liabilities-auditor">
+      <div class="section-header">
+        <div class="section-title">
+          <span>⚖️ 16. Legal Liabilities of Auditors: Civil &amp; Criminal Liabilities</span>
+        </div>
+        <span class="section-tag">Statutory &amp; Common Law Liability</span>
+      </div>
+
+      <p>
+        An auditor carries heavy professional accountability. Breach of professional duty exposes the auditor to dual tracks of liability: <strong class="k-blue">Civil Liability</strong> (damages) and <strong class="k-red">Criminal Liability</strong> (imprisonment and fines).
+      </p>
+
+      <div class="grid-2">
+        <!-- Civil Liability -->
+        <div class="card" style="border-top: 4px solid var(--primary-blue);">
+          <div class="card-title">1. Civil Liability for Negligence</div>
+          <ul>
+            <li><strong>Breach of Contract:</strong> The auditor is liable in damages to the audited company for financial loss caused by failure to exercise reasonable care and professional competence.</li>
+            <li><strong>Liability to Third Parties (Tort of Negligence):</strong>
+              <ul>
+                <li><em>Hedley Byrne &amp; Co. Ltd. v. Heller &amp; Partners Ltd.:</em> Established that an auditor can be liable to third parties where a <strong class="k-blue">special relationship</strong> exists and the auditor knew his statement would be relied upon.</li>
+                <li><em>Caparo Industries plc v. Dickman (Landmark Precedent):</em> The House of Lords laid down the famous <strong class="k-purple">Three-Fold Test</strong>:
+                  <ol>
+                    <li>Foreseeability of damage;</li>
+                    <li>Proximity of relationship; and</li>
+                    <li>Fair, just, and reasonable to impose liability.</li>
+                  </ol>
+                  Held: The auditor of a company owes a duty of care to the shareholders as a body, <strong class="k-red">NOT to individual shareholders buying additional shares or prospective takeover bidders</strong>!
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Criminal Liability -->
+        <div class="card" style="border-top: 4px solid var(--primary-red);">
+          <div class="card-title">2. Criminal Liability under Statutes</div>
+          <ul>
+            <li><strong>Companies Act, 2013:</strong>
+              <ul>
+                <li><strong class="k-red">Section 147:</strong> Contravention of Sections 139, 143, 144, 145 &mdash; fine from ₹25,000 to ₹5,00,000 (or 4x audit fee). If done knowingly or willfully to deceive: Imprisonment up to <strong class="k-red">1 year</strong> and fine up to <strong class="k-red">₹25,00,000</strong> (or 8x fee) + refund remuneration and pay damages.</li>
+                <li><strong class="k-red">Section 447 (Punishment for Fraud):</strong> Imprisonment from <strong class="k-red">6 months to 10 years</strong> + fine up to 3 times the amount involved in fraud. If fraud involves public interest, minimum imprisonment is <strong class="k-red">3 years</strong>!</li>
+                <li><strong class="k-purple">Section 448:</strong> False statements or deliberate omissions in any return, report, or financial statement.</li>
+              </ul>
+            </li>
+            <li><strong>Income Tax Act, 1961 (Section 278):</strong> Abetment or inducing another person to deliver false tax returns &mdash; rigorous imprisonment from <strong class="k-red">6 months to 7 years</strong> with fine.</li>
+            <li><strong>Bharatiya Nyaya Sanhita (BNS) / IPC:</strong> Forgery, falsification of accounts, and criminal breach of trust.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+<!-- SECTION 17: MASTER PRACTICAL ILLUSTRATIONS (1 TO 20) -->
+    <section id="sec-illustrations-1-to-20">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📝 17. Master Practical Illustrations: Questions 1 to 20</span>
+        </div>
+        <span class="section-tag">ICAI Official Scenarios (Part 1)</span>
+      </div>
+
+      <p>
+        Click each illustration below to toggle the complete scenario facts, statutory clauses applied, and full ICAI examination solutions:
+      </p>
+
+      <!-- Ill 1 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 1: Practicing CA suspended for 6 months &ndash; Surrender of COP &amp; Register removal</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> A Chartered Accountant in practice was suspended from practice for a period of 6 months. Can he continue to practice or hold COP during this period?</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under Section 6 and Section 20 of the Chartered Accountants Act, 1949 read with Section 8(vi), when a member is suspended from practice or removed from the Register for any period, his Certificate of Practice (COP) stands cancelled for that duration. He cannot practice accountancy, sign audit reports, or represent himself as a practicing CA.</p>
+          <p><strong>Conclusion:</strong> He must immediately surrender his COP to the Council and cease all professional practice during the 6-month suspension period.</p>
+        </div>
+      </div>
+
+      <!-- Ill 2 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 2: CA selecting and recruiting personnel, conducting training &ndash; Is it permitted?</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> Mr. A, a practicing CA, agreed to select and recruit personnel, conduct training programs, and carry out executive search for a corporate client. Is this permissible?</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under Section 2(2)(iv) of the Act read with the Council resolution on Management Consultancy and Other Services, recruitment of personnel, human resource training, and staff selection are recognized management consultancy services permitted to practicing CAs.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-green">Not Guilty</strong>. Mr. A is fully permitted to render personnel recruitment and training services.</p>
+        </div>
+      </div>
+
+      <!-- Ill 3 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 3: Two partners in-charge of HO and Branch &ndash; Both staying at Head Office</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> Mr. X and Mr. Y are partners in a CA firm. Mr. X was in charge of the Head Office and Mr. Y was in charge of the Branch office. However, Mr. Y actually resided and practiced at the Head Office city, leaving the Branch office in charge of an audit assistant. Advise.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under <strong class="k-blue">Section 27</strong> of the Act, each office of a CA firm must be in the separate charge of a member of the Institute. Merely designating a partner on paper while he actually resides elsewhere without actively managing the branch violates Section 27.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> for failure to maintain a member in separate active charge of the branch office under Section 27.</p>
+        </div>
+      </div>
+
+      <!-- Ill 4 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 4: Sole proprietor opening second office in suburbs of same city without separate in-charge</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> Mr. K, a practicing sole proprietor, has an office in the suburbs of Chennai and opened a second office within Chennai city limits without appointing a separate member in charge.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under Council Guidelines granting exemption from Section 27, a member or firm is permitted to open a second office without a separate member in charge, provided the second office is located within the <strong class="k-green">same city or within 50 km from the municipal limits</strong> of the existing office.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-green">Not Guilty</strong>. The second office falls within the municipal limits of the same city.</p>
+        </div>
+      </div>
+
+      <!-- Ill 5 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 5: CA allowing non-CA brother-in-law &amp; CA employee to practice in firm name</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> CA C allowed his brother-in-law Mr. P (a non-CA) to practice in his name, and also allowed CA T (a qualified paid employee in his firm) to practice in his name. Evaluate.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under <strong class="k-red">Clause (1) of Part I of the First Schedule</strong>, a CA in practice is guilty if he allows any person to practice in his name unless such person is a CA in practice and is in partnership with or employed by him.</p>
+          <ul>
+            <li>Allowing Mr. P (non-CA brother-in-law): Strictly prohibited &rarr; <strong class="k-red">Guilty of Misconduct</strong>.</li>
+            <li>Allowing CA T (paid employee CA): Expressly permitted under the exception in Clause 1 &rarr; <strong class="k-green">Not Guilty</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Ill 6 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 6: Deceased CA &ndash; Widow proposes to sell goodwill / practice to another firm</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> Mr. Qureshi, a practicing CA, died in a road accident. His widow proposes to sell the goodwill and practice of the firm to another CA firm for a lump sum consideration.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under Council guidelines framed under <strong class="k-blue">Clause (2) of Part I of the First Schedule</strong>, the legal representative or widow of a deceased sole proprietor is permitted to sell the goodwill of the firm, provided the sale is completed and permission is obtained from the Council within <strong class="k-red">one year from the death of the member</strong>.</p>
+          <p><strong>Conclusion:</strong> Permissible, subject to Council approval within the 1-year timeline.</p>
+        </div>
+      </div>
+
+      <!-- Ill 7 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 7: CA publishing book and stating personal details &amp; firm name</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> Mr. S, a practicing CA, published a commentary on GST. On the cover, he stated his name, his designation "Chartered Accountant", his firm's name, and contact details of his office.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under <strong class="k-blue">Clauses (6) &amp; (7) of Part I of the First Schedule</strong>, a CA publishing a book is permitted to indicate his name and designation ("Chartered Accountant" / "FCA"). However, mentioning the <strong class="k-red">name of his firm, office address, or contact numbers</strong> amounts to indirect solicitation and advertising of his practice.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Clauses (6) and (7) for mentioning firm name and contact details.</p>
+        </div>
+      </div>
+
+      <!-- Ill 8 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 8: CA Firm website with client names, fees charged, and push popups</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> M/s XYZ created a website <code>www.xyzindia.com</code> displaying client names, fees charged, and flashing banner advertisements.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under Council Website Guidelines pursuant to <strong class="k-red">Clause (7) of Part I of the First Schedule</strong>:
+            <ul>
+              <li>Websites must operate on a <strong class="k-blue">Pull basis</strong>; push banners are strictly prohibited.</li>
+              <li>Names of clients and fees charged <strong class="k-red">cannot be displayed publicly</strong>.</li>
+            </ul>
+          </p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Clause (7).</p>
+        </div>
+      </div>
+
+      <!-- Ill 9 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 9: Responding to tender for computerization &ndash; No minimum fee prescribed</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> M/s LMN, a CA firm, responded to a tender issued by a State Government for computerization of accounts where no minimum fee was prescribed.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under Council Tender Guidelines (Clause 6, Part I, First Schedule), the prohibition against responding to tenders without minimum fees applies <strong class="k-red">ONLY to areas exclusively reserved for CAs</strong> (statutory audit, tax audit). Computerization of accounts is an open consultancy area accessible to IT vendors and non-CAs.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-green">Not Guilty</strong>. Responding to tenders in open, non-exclusive areas without minimum fees is permitted.</p>
+        </div>
+      </div>
+
+      <!-- Ill 10 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 10: CA writing letters to another CA firm requesting professional work / partnerships</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> Mr. Honest, a CA in practice, wrote letters to another practicing CA firm requesting professional work on a subcontract basis or partnership.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under <strong class="k-green">Proviso (i) to Clause (6) of Part I of the First Schedule</strong>, an explicit exemption is provided allowing any Chartered Accountant to apply for, request, or invite professional work from <strong class="k-blue">another Chartered Accountant in practice</strong>.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-green">Not Guilty</strong>. Peer-to-peer work requests are statutorily protected.</p>
+        </div>
+      </div>
+
+      <!-- Ill 11 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 11: Visiting card mentioning "Insolvency Professional" alongside CA</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> A practicing CA used a visiting card in which he designated himself as "Chartered Accountant" and "Insolvency Professional".</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under <strong class="k-red">Section 7</strong> and <strong class="k-red">Clause (7) of Part I of the First Schedule</strong>, a practicing CA cannot use any designation other than Chartered Accountant on general professional documents. The designation "Insolvency Professional" can be used only on stationery specifically dedicated to insolvency assignments under IBC, not on general visiting cards.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Section 7 and Clause (7).</p>
+        </div>
+      </div>
+
+      <!-- Ill 12 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 12: CA partner in 3 firms &ndash; Printing personal letterhead with all 3 firm names</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> CA B is a partner in three distinct CA firms. While printing his personal letterhead, he mentions his name and the names of all three firms as a partner.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under Council guidelines, a member who is a partner in multiple firms is permitted to mention the names of all the firms in which he is a partner on his letterhead/stationery, provided it is factual and dignified without promotional claims.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-green">Not Guilty</strong>.</p>
+        </div>
+      </div>
+
+      <!-- Ill 13 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 13: IPO Offer document containing description of auditor firm's expertise</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> In the draft prospectus of a listed company, the auditor Mr. D's firm was described as a "leading international tax firm with premier cross-border expertise".</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under <strong class="k-red">Clause (7) of Part I of the First Schedule</strong>, an auditor must ensure that offer documents disclose only the name, address, and firm registration number. Allowing the company to publish laudatory or promotional write-ups about the firm's expertise violates Clause (7).</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Misconduct</strong> unless the auditor promptly objected and requested the company to remove the promotional description.</p>
+        </div>
+      </div>
+
+      <!-- Ill 14 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 14: Insolvency Professional using separate letterhead for IBC matters</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> A practicing CA empanelled as an Insolvency Professional (IP) maintained a separate letterhead mentioning "Insolvency Professional" used solely for IBC corporate insolvency matters.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under Council Guidelines, using the title "Insolvency Professional" or "Registered Valuer" on separate stationery dedicated exclusively to assignments under those statutes is permissible.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-green">Not Guilty</strong>.</p>
+        </div>
+      </div>
+
+      <!-- Ill 15 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 15: Tax audit u/s 44AB accepted without communicating with previous tax auditor</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> Mr. X accepted appointment as tax auditor of a firm under Section 44AB without communicating with the previous tax auditor, arguing that Clause 8 applies only to statutory company audits.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> The Council has clarified that <strong class="k-red">Clause (8) of Part I of the First Schedule</strong> applies to ALL recurring audits previously held by another CA, including <strong class="k-blue">Tax Audits u/s 44AB, Internal Audits, and Concurrent Audits</strong>.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Clause (8).</p>
+        </div>
+      </div>
+
+      <!-- Ill 16 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 16: Communication sent under Certificate of Posting (ordinary post)</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> CA W sent a letter to the previous auditor under Certificate of Posting (ordinary postal certificate). The previous auditor denied receiving it.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> A mere "Certificate of Posting" does not provide positive proof of delivery. Council guidelines strictly require communication by <strong class="k-red">Registered Post with Acknowledgment Due (RPAD)</strong>, hand delivery against written acknowledgment, or secure digital delivery with read receipt.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Clause (8).</p>
+        </div>
+      </div>
+
+      <!-- Ill 17 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 17: Communication sent after accepting audit appointment</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> CA Raja received an appointment letter on 10th July, accepted it on 12th July, and posted an RPAD letter to the previous auditor on 15th July.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Clause (8) explicitly requires the incoming auditor to communicate <strong class="k-red">FIRST in writing BEFORE accepting the appointment</strong>, allowing reasonable time for a response. Sending communication after acceptance defeats the statutory intent.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Clause (8).</p>
+        </div>
+      </div>
+
+      <!-- Ill 18 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 18: Accepting company audit without verifying compliance with Section 139 &amp; 140</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> Mr. X accepted appointment as statutory auditor of a company where the previous auditor was removed before term, without verifying whether Central Government approval u/s 140(1) was obtained.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under <strong class="k-red">Clause (9) of Part I of the First Schedule</strong>, an incoming auditor must ascertain from the company whether the requirements of Sections 139 and 140 have been complied with. Removal before expiry of term requires mandatory Central Government approval (Form ADT-2).</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Clause (9).</p>
+        </div>
+      </div>
+
+      <!-- Ill 19 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 19: Liquidator charging fees on percentage of realization of assets</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> Mr. P, acting as liquidator of a company, charged his fees based on a percentage of total assets realized.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> While <strong class="k-blue">Clause (10) of Part I of the First Schedule</strong> generally prohibits fees based on a percentage of profits or contingent outcomes, <strong class="k-green">Regulation 192(a)</strong> expressly exempts a receiver or liquidator charging fees on a percentage of realization or disbursement of assets.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-green">Not Guilty</strong>. Covered under Regulation 192 statutory exemption.</p>
+        </div>
+      </div>
+
+      <!-- Ill 20 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 20: Practicing CA with 4 articles running full-time manufacturing business</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> A practicing CA having four articled assistants engaged himself as a full-time managing director in a family manufacturing company without prior Council approval.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under <strong class="k-red">Clause (11) of Part I of the First Schedule</strong> and Regulation 190A, a member in practice cannot engage in any other business or occupation without prior Council permission. Acting as Managing Director requires <strong class="k-red">Specific Permission</strong>, which cannot be granted if it impairs training of articled assistants.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Clause (11).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 18: MASTER PRACTICAL ILLUSTRATIONS (21 TO 39) -->
+    <section id="sec-illustrations-21-to-39">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📝 18. Master Practical Illustrations: Questions 21 to 39</span>
+        </div>
+        <span class="section-tag">ICAI Official Scenarios (Part 2)</span>
+      </div>
+
+      <!-- Ill 21 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 21: Practicing CA becoming Executive Chairman of software company</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> Mr. A, a practicing CA, took over as Executive Chairman of a software company without obtaining prior permission of the Council.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Proviso to Clause 11 permits being a Director Simplicitor (non-executive). Being an Executive Chairman involves managerial and operational responsibilities, requiring prior <strong class="k-red">Specific Permission</strong> under Regulation 190A.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Clause (11).</p>
+        </div>
+      </div>
+
+      <!-- Ill 22 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 22: Leading tax practitioner authoring articles and tax guides</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> CA Moksh, an income tax practitioner, authored a comprehensive book on international taxation and regular articles in financial dailies, receiving royalty income.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under Regulation 190A, <strong class="k-green">authorship of books and articles</strong> is covered under <strong class="k-blue">General Permission</strong>. No prior application to the Council is required.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-green">Not Guilty</strong>.</p>
+        </div>
+      </div>
+
+      <!-- Ill 23 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 23: Power of Attorney given to employee CA to sign audit reports</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> CA S gave a Power of Attorney (POA) to a qualified employee CA in his firm authorizing him to sign balance sheets and audit reports on behalf of the firm.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under <strong class="k-red">Clause (12) of Part I of the First Schedule</strong>, an audit report can be signed only by a member of the Institute who is a <strong class="k-blue">Partner</strong> in the firm. An employee CA, even though qualified, cannot be delegated signing authority through a Power of Attorney.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Clause (12).</p>
+        </div>
+      </div>
+
+      <!-- Ill 24 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 24: Partner signing audit reports while sole practicing partner is abroad</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> CA Smart, a sole practicing partner, was on a European tour. During his absence, his qualified partner in the firm signed statutory audit reports.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under Clause 12, any practicing partner of the firm is legally authorized to sign financial statements and reports on behalf of the firm.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-green">Not Guilty</strong>. A partner can sign on behalf of the firm.</p>
+        </div>
+      </div>
+
+      <!-- Ill 25 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 25: CA in full-time employment holding COP &amp; recovering fees</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> Mr. C holds a COP while in full-time employment with a private company, and also charges fees for tax advice rendered on weekends.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under Section 6 and Part II of First Schedule, holding a COP while in full-time commercial employment without specific Council permission is impermissible.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong>.</p>
+        </div>
+      </div>
+
+      <!-- Ill 26 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 26: Member failing to supply information requested by Disciplinary Directorate</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> Mr. G failed to reply to multiple notices and did not provide information called for by the Director (Discipline).</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under <strong class="k-red">Clause (2) of Part III of the First Schedule</strong>, failure to supply information or comply with requirements of the Institute, Council, or Disciplinary bodies constitutes misconduct.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Part III, Clause (2).</p>
+        </div>
+      </div>
+
+      <!-- Ill 27 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 27: Paid assistant giving false information in firm empanelment profile</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> Mr. X, employed as a paid assistant with a CA firm, submitted inflated experience details knowing them to be false in a tender response.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under <strong class="k-red">Clause (3) of Part III of the First Schedule</strong>, giving false information knowing it to be false while responding to tenders or write-ups constitutes misconduct for any member generally.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Part III, Clause (3).</p>
+        </div>
+      </div>
+
+      <!-- Ill 28 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 28: Proprietary CA firm retaining bank audit records and issuing bounced cheques</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> YKS &amp; Co. refused to hand over client papers and issued dishonoured cheques to creditors, bringing disrepute to the profession.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under <strong class="k-red">Clause (2) of Part IV of the First Schedule</strong>, bringing disrepute to the profession or Institute, whether related to professional work or personal conduct, is Other Misconduct.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Other Misconduct</strong> under First Schedule, Part IV, Clause (2).</p>
+        </div>
+      </div>
+
+      <!-- Ill 29 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 29: CA disclosing confidential costing data of client in conference paper</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> Mr. P presented a paper at a trade chamber seminar and disclosed specific costing structures and profit margins of his audit client without consent.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under <strong class="k-red">Clause (1) of Part I of the Second Schedule</strong>, disclosing confidential client information without consent or legal obligation is grave misconduct.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Second Schedule, Part I, Clause (1).</p>
+        </div>
+      </div>
+
+      <!-- Ill 30 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 30: Auditor reporting corporate fraud to Central Govt u/s 143(12) &ndash; Breach of secrecy?</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> CA J reported a ₹5 crore procurement fraud committed by KMP to the Central Government under Section 143(12). Management alleged breach of confidentiality.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Clause (1) of Part I of Second Schedule expressly permits disclosure when <strong class="k-green">required by any law for the time being in force</strong>. Section 143(12) overrides confidentiality.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-green">Not Guilty</strong>. Statutory reporting is fully protected.</p>
+        </div>
+      </div>
+
+      <!-- Ill 31 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 31: Representing tax client and certifying financials prepared by client accountant</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> A practicing CA certified balance sheets prepared by the client's internal accountant without independent audit examination.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under <strong class="k-red">Clause (2) of Part I of the Second Schedule</strong>, certifying financial statements without examination by the CA, his partner, or employee is prohibited.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Second Schedule, Part I, Clause (2).</p>
+        </div>
+      </div>
+
+      <!-- Ill 32 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 32: Certifying historical circulation figures of daily newspaper based on past records</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> CA C certified the circulation figures of a daily newspaper for the past 6 months based on verified dispatch registers.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Clause (3) of Part I of Second Schedule prohibits vouching for future earnings forecasts. Verifying historical past circulation data relates to past facts, not future forecasts.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-green">Not Guilty</strong>. Certification of past historical data is permissible.</p>
+        </div>
+      </div>
+
+      <!-- Ill 33 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 33: CA partner's spouse holding substantial voting interest in audit client</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> CA D accepted audit of an entity where his partner's wife held 25% voting power.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under <strong class="k-red">Clause (4) of Part I of the Second Schedule</strong>, an auditor cannot express an opinion on an enterprise in which he or his partner has a substantial interest (&gt;20%).</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Clause (4).</p>
+        </div>
+      </div>
+
+      <!-- Ill 34 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 34: Auditor failing to report omission of unrecorded liability of ₹50 lakhs</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> CA A knew of a pending undisputed tax decree of ₹50 lakhs not recorded in accounts and issued a clean report without disclosure.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under <strong class="k-red">Clauses (5) &amp; (6) of Part I of the Second Schedule</strong>, failure to disclose a known material fact or known material misstatement constitutes severe misconduct.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Clauses (5) and (6).</p>
+        </div>
+      </div>
+
+      <!-- Ill 35 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 35: Charitable institution client funds deposited into firm's current account</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> A client entrusted ₹10 lakhs with CA firm M/s R &amp; Co. for land purchase stamp duty. The firm deposited it into its own office bank account.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under <strong class="k-red">Clause (10) of Part I of the Second Schedule</strong>, client moneys must be deposited in a separate dedicated banking account and utilized solely for intended purposes.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Clause (10).</p>
+        </div>
+      </div>
+
+      <!-- Ill 36 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 36: CA not maintaining books of account for professional earnings</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> CA L did not maintain a cash book or billing ledger, claiming his income was below the income tax threshold.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under Chapter X of Council General Guidelines 2008 read with <strong class="k-red">Clause (1) of Part II of the Second Schedule</strong>, every practicing CA must maintain proper professional books of account regardless of tax liability.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Second Schedule, Part II, Clause (1).</p>
+        </div>
+      </div>
+
+      <!-- Ill 37 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 37: Statutory audit of PSU with negative net worth accepted</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> Mr. C accepted statutory audit of a State PSU whose net worth was fully eroded, without verifying appointment guidelines.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under Council Guidelines, accepting audit appointments in non-compliant government entities without verifying C&amp;AG empanelment violates Council guidelines.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty</strong> under Second Schedule, Part II, Clause (1).</p>
+        </div>
+      </div>
+
+      <!-- Ill 38 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 38: Statutory audit fee ₹50 Lakhs &ndash; Management consultancy fee ₹1 Crore</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> CA A is the auditor of Z Ltd. (turnover ₹300 crore) for an audit fee of ₹50 lakhs. The company offered A a management consultancy assignment for ₹1 crore.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under <strong class="k-red">Chapter VI of Council General Guidelines, 2008</strong>, for an entity with turnover &ge; ₹250 crore, fees for other assignments <strong class="k-red">cannot exceed the statutory audit fee</strong>.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-red">Guilty of Professional Misconduct</strong> under Second Schedule, Part II, Clause (1) if he accepts the ₹1 crore assignment.</p>
+        </div>
+      </div>
+
+      <!-- Ill 39 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Ill 39: Tax audit fee of ₹5,50,000 received on progressive basis before signing report</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Facts:</strong> CA D received ₹5,50,000 audit fees on a progressive basis as work proceeded for a tax audit u/s 44AB before the report was formally signed.</p>
+          <p><strong>Provisions &amp; Analysis:</strong> Under Chapter VII of Council Guidelines, indebtedness exceeding ₹5,00,000 is prohibited. However, the ICAI Research Committee has affirmed that receiving fees on a <strong class="k-green">progressive basis for work actually performed</strong> does not constitute indebtedness.</p>
+          <p><strong>Conclusion:</strong> <strong class="k-green">Not Guilty</strong>. Progressive fee billing is permissible.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 19: MASTER MEMORY SYNTHESIS & CLAUSE NAVIGATOR -->
+    <section id="sec-master-memory-charts">
+      <div class="section-header">
+        <div class="section-title">
+          <span>⚡ 19. Master Memory Synthesis &amp; Clause Navigator</span>
+        </div>
+        <span class="section-tag">Exam Cram Matrix</span>
+      </div>
+
+      <p>
+        Use this consolidated master reference to navigate all 34 clauses and statutory frameworks during last-mile revision:
+      </p>
+
+      <h3>1. Complete Master Clause Navigator (First &amp; Second Schedules)</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 15%;">Schedule &amp; Part</th>
+              <th style="width: 12%;">Clause</th>
+              <th style="width: 45%;">Statutory Misconduct Description</th>
+              <th style="width: 28%;">Adjudicating Body &amp; Max Penalty</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="6"><strong>First Schedule<br>Part I<br>(Practice)</strong></td>
+              <td><strong>Clause 1</strong></td>
+              <td>Allowing non-CA / third party to practice in his name.</td>
+              <td rowspan="6"><strong class="k-green">Board of Discipline (BOD)</strong><br>&bull; Reprimand<br>&bull; Suspension up to 3 months<br>&bull; Fine up to ₹1,00,000</td>
+            </tr>
+            <tr>
+              <td><strong>Clause 2</strong></td>
+              <td>Sharing fees/profits with non-members (exceptions: Reg 53A/53B, legal heir).</td>
+            </tr>
+            <tr>
+              <td><strong>Clause 3</strong></td>
+              <td>Accepting share of profits from non-members.</td>
+            </tr>
+            <tr>
+              <td><strong>Clause 4</strong></td>
+              <td>Entering into partnership with non-members (exception: Reg 53B MDPs).</td>
+            </tr>
+            <tr>
+              <td><strong>Clause 5</strong></td>
+              <td>Securing work through agents, touts, or non-open means.</td>
+            </tr>
+            <tr>
+              <td><strong>Clause 6</strong></td>
+              <td>Soliciting clients or work (tenders without minimum fees, circulars).</td>
+            </tr>
+            <tr>
+              <td rowspan="6"><strong>First Schedule<br>Part I (Contd.)<br>(Practice)</strong></td>
+              <td><strong>Clause 7</strong></td>
+              <td>Advertising attainments, illegal designations, website/write-up violations.</td>
+              <td rowspan="6"><strong class="k-green">Board of Discipline (BOD)</strong><br>&bull; Reprimand<br>&bull; Suspension up to 3 months<br>&bull; Fine up to ₹1,00,000</td>
+            </tr>
+            <tr>
+              <td><strong>Clause 8</strong></td>
+              <td>Accepting audit without prior written RPAD communication with predecessor.</td>
+            </tr>
+            <tr>
+              <td><strong>Clause 9</strong></td>
+              <td>Accepting company audit without ascertaining Sec 139/140 compliance.</td>
+            </tr>
+            <tr>
+              <td><strong>Clause 10</strong></td>
+              <td>Contingent fees / percentage of profits (exceptions: Reg 192).</td>
+            </tr>
+            <tr>
+              <td><strong>Clause 11</strong></td>
+              <td>Engaging in other business/occupation without permission (Reg 190A).</td>
+            </tr>
+            <tr>
+              <td><strong>Clause 12</strong></td>
+              <td>Allowing non-partner / non-member to sign reports/financials.</td>
+            </tr>
+            <tr>
+              <td><strong>First Schedule<br>Part II (Service)</strong></td>
+              <td><strong>Clauses 1 &amp; 2</strong></td>
+              <td>CAs in Service: Sharing salary emoluments or accepting gratification/commission.</td>
+              <td>Board of Discipline (BOD)</td>
+            </tr>
+            <tr>
+              <td><strong>First Schedule<br>Part III (General)</strong></td>
+              <td><strong>Clauses 1 to 3</strong></td>
+              <td>Falsely using FCA, non-compliance with Institute/BOD/DC notices, false info.</td>
+              <td>Board of Discipline (BOD)</td>
+            </tr>
+            <tr>
+              <td><strong>First Schedule<br>Part IV (Other)</strong></td>
+              <td><strong>Clauses 1 &amp; 2</strong></td>
+              <td>Imprisonment &le; 6 months; or bringing disrepute to Institute/profession.</td>
+              <td>Board of Discipline (BOD)</td>
+            </tr>
+            <tr>
+              <td rowspan="5"><strong>Second Schedule<br>Part I<br>(Practice)</strong></td>
+              <td><strong>Clause 1</strong></td>
+              <td>Breach of client confidentiality without consent or legal obligation.</td>
+              <td rowspan="5"><strong class="k-red">Disciplinary Committee (DC)</strong><br>&bull; Reprimand<br>&bull; Suspension permanently or for any period<br>&bull; Fine up to ₹5,00,000</td>
+            </tr>
+            <tr>
+              <td><strong>Clause 2</strong></td>
+              <td>Certifying reports without personal or firm examination.</td>
+            </tr>
+            <tr>
+              <td><strong>Clause 3</strong></td>
+              <td>Vouching for the accuracy of future earnings forecasts (SAE 3400).</td>
+            </tr>
+            <tr>
+              <td><strong>Clause 4</strong></td>
+              <td>Expressing opinion when holding substantial interest (&gt;20%).</td>
+            </tr>
+            <tr>
+              <td><strong>Clause 5</strong></td>
+              <td>Failing to disclose a known material fact.</td>
+            </tr>
+            <tr>
+              <td rowspan="5"><strong>Second Schedule<br>Part I (Contd.)<br>(Practice)</strong></td>
+              <td><strong>Clause 6</strong></td>
+              <td>Failing to report a known material misstatement.</td>
+              <td rowspan="5"><strong class="k-red">Disciplinary Committee (DC)</strong><br>&bull; Reprimand<br>&bull; Suspension permanently or for any period<br>&bull; Fine up to ₹5,00,000</td>
+            </tr>
+            <tr>
+              <td><strong>Clause 7</strong></td>
+              <td>Gross negligence / lack of due diligence (Standards on Auditing).</td>
+            </tr>
+            <tr>
+              <td><strong>Clause 8</strong></td>
+              <td>Failing to obtain sufficient audit information (SA 500, SA 705).</td>
+            </tr>
+            <tr>
+              <td><strong>Clause 9</strong></td>
+              <td>Material departure from generally accepted audit procedures.</td>
+            </tr>
+            <tr>
+              <td><strong>Clause 10</strong></td>
+              <td>Client moneys not kept in separate dedicated bank account.</td>
+            </tr>
+            <tr>
+              <td><strong>Second Schedule<br>Part II (General)</strong></td>
+              <td><strong>Clauses 1 to 5</strong></td>
+              <td>Contravening Act/Guidelines (Audit ceilings), false statements, embezzlement.</td>
+              <td>Disciplinary Committee (DC)</td>
+            </tr>
+            <tr>
+              <td><strong>Second Schedule<br>Part III (Other)</strong></td>
+              <td><strong>Clause 1</strong></td>
+              <td>Offence punishable with imprisonment <strong class="k-red">EXCEEDING 6 MONTHS</strong>.</td>
+              <td>Disciplinary Committee (DC)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>2. Board of Discipline (BOD) vs. Disciplinary Committee (DC)</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%;">Dimension</th>
+              <th style="width: 37%;">Board of Discipline (Section 21A)</th>
+              <th style="width: 38%;">Disciplinary Committee (Section 21B)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Misconduct Handled</strong></td>
+              <td>Offences specified in the <strong class="k-green">First Schedule</strong> only.</td>
+              <td>Offences in the <strong class="k-red">Second Schedule</strong> or in <strong class="k-red">BOTH Schedules</strong>.</td>
+            </tr>
+            <tr>
+              <td><strong>Composition</strong></td>
+              <td>Presiding Officer (Council member) + 2 members.</td>
+              <td>President/Vice President + 2 Council members + 2 Central Govt nominees.</td>
+            </tr>
+            <tr>
+              <td><strong>Max Removal Period</strong></td>
+              <td>Up to <strong class="k-amber">3 months</strong>.</td>
+              <td><strong class="k-red">Permanently or for any period</strong>.</td>
+            </tr>
+            <tr>
+              <td><strong>Max Monetary Fine</strong></td>
+              <td>Up to <strong class="k-green">₹1,00,000</strong>.</td>
+              <td>Up to <strong class="k-red">₹5,00,000</strong>.</td>
+            </tr>
+            <tr>
+              <td><strong>Appeal Remedy</strong></td>
+              <td>Appellate Authority within <strong class="k-blue">90 days</strong>.</td>
+              <td>Appellate Authority within <strong class="k-blue">90 days</strong>.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-purple">
+        <div class="callout-title">🏆 Top Exam Mnemonics &amp; Memory Shortcuts</div>
+        <ul>
+          <li><strong>5 Threats &ndash; "S-S-A-F-I":</strong> <strong class="k-blue">S</strong>elf-Interest, <strong class="k-green">S</strong>elf-Review, <strong class="k-purple">A</strong>dvocacy, <strong class="k-amber">F</strong>amiliarity, <strong class="k-red">I</strong>ntimidation.</li>
+          <li><strong>Disabilities &ndash; "21-M-I-C-D":</strong> &lt;<strong class="k-blue">21</strong> years, <strong class="k-amber">M</strong>ental unsoundness, <strong class="k-red">I</strong>nsolvency/bankruptcy, <strong class="k-purple">C</strong>onviction of moral turpitude, <strong class="k-green">D</strong>isciplinary removal.</li>
+          <li><strong>Audit Ceilings:</strong> <strong class="k-red">60</strong> Tax Audits u/s 44AB per partner; <strong class="k-blue">20</strong> Company Audits per partner u/s 141(3)(g) / <strong class="k-purple">30</strong> overall under ICAI guideline.</li>
+          <li><strong>Turnover &ge; ₹250 Crore:</strong> Non-audit / consultancy fees <strong class="k-red">CANNOT exceed statutory audit fee</strong>.</li>
+          <li><strong>Indebtedness:</strong> Limit <strong class="k-red">&gt; ₹5,00,000</strong>. Credit card debt in audit bank <strong class="k-blue">&le; ₹1,00,000</strong>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="bottom-nav">
+      <a href="esg_sdg_assurance.html" class="nav-btn prev-btn">
+        <span>&larr;</span>
+        <div class="nav-text">
+          <span class="nav-sub">Previous Chapter</span>
+          <span class="nav-title">Ch 18: SDG &amp; ESG Assurance</span>
+        </div>
+      </a>
+      <a href="../../notes/audnotes.html" class="nav-btn hub-btn">
+        <div class="nav-text" style="text-align: center;">
+          <span class="nav-sub">Study Hub</span>
+          <span class="nav-title">Audit Master Index</span>
+        </div>
+      </a>
+      <a href="../../notes/audnotes.html" class="nav-btn next-btn">
+        <div class="nav-text" style="text-align: right;">
+          <span class="nav-sub">Course Complete</span>
+          <span class="nav-title">All Chapters 100% Done! &check;</span>
+        </div>
+        <span>&check;</span>
+      </a>
+    </div>
+
+  </main>
+</div>
+
+<!-- Interactivity & Progress Scripts -->
+<script>
+  // Reading Progress Bar
+  window.addEventListener('scroll', () => {
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (window.pageYOffset / totalHeight) * 100;
+    document.getElementById('readingProgress').style.width = progress + '%';
+  });
+
+  // Mobile Sidebar Toggle
+  const sidebar = document.getElementById('sidebar');
+  const toggleBtn = document.getElementById('sidebarToggle');
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+  }
+
+  // Interactive Accordions
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      item.classList.toggle('open');
+    });
+  });
+
+  // Active Link Tracking on Scroll
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.nav-link');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      if (pageYOffset >= sectionTop - 120) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

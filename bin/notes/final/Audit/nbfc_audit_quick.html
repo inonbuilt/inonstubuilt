@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 14 Unit 2: NBFC Audit (Scale-Based Regulation SBR) - Quick Revision Notes | CA Final Audit | Calcium Notes</title>
+
+    <meta name="title" content="Chapter 14 Unit 2: NBFC Audit (Scale-Based Regulation SBR) - Quick Revision Notes | CA Final Audit | Calcium Notes">
+    <meta name="description" content="CA Final Audit Chapter 14 Unit 2 Quick Notes: Quick revision notes on NBFC Audit, 50-50 Principle, RBI Scale-Based Regulation (Base, Middle, Upper, Top layers), and Auditor Exception Reporting.">
+    <meta name="keywords" content="CA Final Audit, Chapter 14 Unit 2: NBFC Audit (Scale-Based Regulation SBR), Fast Track Notes, Quick Revision, Standards on Auditing, ICAI New Scheme, Calcium Notes">
+    <meta name="author" content="Calcium Notes">
+    <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/Audit/nbfc_audit_quick.html">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" href="../../../fevicol.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-canvas: #fdfbf7;
+            --surface: #ffffff;
+            --text-primary: #000000;
+            --text-secondary: #334155;
+            --heading-one-color: #1e3a8a;
+            --subheading-one-color: #0284c7;
+            --border-color: #cbd5e1;
+            --card-bg: #ffffff;
+            --table-header: #f1f5f9;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --warning-bg: #fffbeb;
+            --warning-border: #f59e0b;
+            --warning-text: #92400e;
+            
+            --notes-body: 'Kalam', cursive;
+            --notes-heading: 'Patrick Hand', cursive;
+            --notes-highlight: 'Caveat', cursive;
+            --notes-table: Arial, sans-serif;
+        }
+
+        [data-theme="dark"] {
+            --bg-canvas: #090d16;
+            --surface: #0f172a;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --heading-one-color: #60a5fa;
+            --subheading-one-color: #38bdf8;
+            --border-color: #1e293b;
+            --card-bg: #0f172a;
+            --table-header: #1e293b;
+            --warning-bg: #1c1917;
+            --warning-border: #d97706;
+            --warning-text: #fde68a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg-canvas);
+            color: var(--text-primary);
+            font-family: var(--notes-body) !important;
+            font-size: 17.5px;
+            line-height: 1.68;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        strong, b { font-weight: 700; }
+        .k-blue { color: #1e40af; font-weight: 700; }
+        .k-red { color: #b91c1c; font-weight: 700; }
+        .k-green { color: #047857; font-weight: 700; }
+        .k-purple { color: #7c3aed; font-weight: 700; }
+        .k-amber { color: #d97706; font-weight: 700; }
+
+        h1, h2, h3, h4, .chapter-title, .section-title {
+            font-family: var(--notes-heading) !important;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+        }
+
+        h1, h2 { color: var(--heading-one-color) !important; }
+        h3, h4 { color: var(--subheading-one-color) !important; }
+
+        .highlight-title {
+            font-family: var(--notes-highlight) !important;
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+        table, th, td, .styled-table {
+            font-family: var(--notes-table) !important;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: var(--surface);
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 24px 16px;
+            flex-shrink: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .sidebar * {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .sidebar-brand {
+            font-size: 15px;
+            font-weight: 800;
+            color: var(--heading-one-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .theme-toggle {
+            background: none;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 4px 8px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .nav-group-title {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #64748b;
+            margin: 16px 0 8px 6px;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 7px 10px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.15s;
+            line-height: 1.4;
+        }
+
+        .nav-link:hover {
+            background: rgba(37, 99, 235, 0.08);
+            color: var(--accent);
+        }
+
+        .nav-link.active {
+            background: #eff6ff;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .main-wrapper {
+            flex: 1;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 36px 32px 64px;
+        }
+
+        .breadcrumbs {
+            font-size: 13.5px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+            color: #64748b;
+            margin-bottom: 12px;
+        }
+
+        .breadcrumbs a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .header-section {
+            margin-bottom: 24px;
+        }
+
+        .header-section h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .chapter-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .chapter-pill {
+            background: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #bfdbfe;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-weight: 700;
+        }
+
+        .mode-bar {
+            display: flex;
+            gap: 10px;
+            margin: 22px 0 32px 0;
+            background: #f1f5f9;
+            padding: 6px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .mode-btn {
+            flex: 1;
+            text-align: center;
+            padding: 10px 16px;
+            font-size: 13.5px;
+            font-weight: 700;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .mode-btn.active {
+            background: #2563eb;
+            color: #ffffff;
+            box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+        }
+
+        .mode-btn:not(.active) {
+            color: #475569;
+            background: transparent;
+        }
+
+        .mode-btn:not(.active):hover {
+            background: rgba(255, 255, 255, 0.6);
+            color: #0f172a;
+        }
+
+        .quick-card {
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 26px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            scroll-margin-top: 20px;
+        }
+
+        .quick-card h2 {
+            font-size: 24px;
+            margin-bottom: 14px;
+            border-bottom: 1.5px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .quick-card h3 {
+            font-size: 20px;
+            margin: 18px 0 8px 0;
+        }
+
+        p { margin-bottom: 12px; }
+        ul, ol { margin-left: 24px; margin-bottom: 14px; }
+        li { margin-bottom: 6px; }
+
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14.5px;
+            line-height: 1.5;
+            background: var(--surface);
+        }
+
+        .styled-table th {
+            background: #1e3a8a;
+            color: #ffffff;
+            padding: 10px 14px;
+            text-align: left;
+            border: 1px solid #3b82f6;
+            font-weight: 700;
+        }
+
+        .styled-table td {
+            padding: 10px 14px;
+            border: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        .styled-table tr:nth-child(even) {
+            background-color: rgba(241, 245, 249, 0.5);
+        }
+
+        .callout {
+            border-left: 4px solid;
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+            background: rgba(248, 250, 252, 0.7);
+        }
+
+        .callout-blue { border-left-color: var(--accent); background: #eff6ff; }
+        .callout-green { border-left-color: #047857; background: #f0fdf4; }
+        .callout-amber { border-left-color: #d97706; background: #fffbeb; }
+        .callout-red { border-left-color: #b91c1c; background: #fef2f2; }
+        .callout-purple { border-left-color: #7c3aed; background: #faf5ff; }
+
+        .callout-title {
+            font-family: var(--notes-highlight) !important;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .callout-blue .callout-title { color: var(--accent); }
+        .callout-green .callout-title { color: #047857; }
+        .callout-amber .callout-title { color: #d97706; }
+        .callout-red .callout-title { color: #b91c1c; }
+        .callout-purple .callout-title { color: #7c3aed; }
+
+        .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-top: 36px;
+            padding: 18px 24px;
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-size: 13.5px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .prev-btn { background: #f1f5f9; color: #1e293b; border: 1px solid var(--border-color); }
+        .prev-btn:hover { background: #e2e8f0; }
+        .next-btn { background: #2563eb; color: #ffffff; }
+        .next-btn:hover { background: #1d4ed8; }
+        .hub-btn { background: #047857; color: #ffffff; }
+        .hub-btn:hover { background: #065f46; }
+
+        @media (max-width: 900px) {
+            body { flex-direction: column; }
+            .sidebar { width: 100%; height: auto; position: static; border-right: none; border-bottom: 1px solid var(--border-color); }
+            .main-wrapper { padding: 20px 16px; }
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="sidebar-brand">
+            <span>⚡ Calcium Quick Audit</span>
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">☀️/🌙</button>
+        </div>
+
+        <div class="nav-group-title">Chapter Navigation</div>
+        <a href="#sec-50-50-test" class="nav-link">1. Registration & 50-50 Principle</a>
+        <a href="#sec-sbr-architecture" class="nav-link">2. RBI Scale-Based Regulation (SBR)</a>
+        <a href="#sec-nbfc-prudential" class="nav-link">3. Asset Classification & Provisioning</a>
+        <a href="#sec-nbfc-auditor-report" class="nav-link">4. Auditor Report & RBI Exception Reporting</a>
+
+        <div class="nav-group-title">Portal Hubs</div>
+        <a href="../../notes/audquicknotes.html" class="nav-link">&larr; ⚡ Audit Quick Notes Hub</a>
+        <a href="../../notes/audnotes.html" class="nav-link">&larr; 📖 Audit Full Notes Hub</a>
+        <a href="../../notes/notes.html" class="nav-link">&larr; 🏠 Notes Home</a>
+    </nav>
+
+    <main class="main-wrapper">
+        <div class="breadcrumbs">
+            <a href="../../notes/notes.html">Home</a> &gt; 
+            <a href="../../notes/audquicknotes.html">CA Final Audit</a> &gt; 
+            <span>Chapter 14 Unit 2 Quick Notes</span>
+        </div>
+
+        <header class="header-section">
+            <span class="chapter-pill">CA Final Paper 3 &bull; Module 3: Specialised Audits & Ethics</span>
+            <h1 style="margin-top: 10px;">Chapter 14 Unit 2: NBFC Audit (Scale-Based Regulation SBR)</h1>
+            <div class="chapter-meta">
+                <span class="chapter-pill">⚡ Fast-Track High-Yield Revision</span>
+                <span>ICAI New Scheme 2026&ndash;2027</span>
+            </div>
+        </header>
+
+        <!-- Mode Bar Switcher -->
+        <div class="mode-bar">
+            <a href="nbfc_audit_quick.html" class="mode-btn active">⚡ Fast-Track Quick Notes</a>
+            <a href="nbfc_audit.html" class="mode-btn">📖 Full In-Depth Notes (Theory + TYKs)</a>
+        </div>
+
+        
+        <section id="sec-50-50-test" class="quick-card">
+            <h2>1. Registration Criteria & The 50-50 Principal Business Test</h2>
+            <p>Under Section 45-IA of RBI Act 1934, every NBFC must obtain a Certificate of Registration (CoR) and maintain minimum Net Owned Funds (NOF) (glide path up to &#8377;10 Crore).</p>
+
+            <div class="callout callout-blue">
+                <div class="callout-title">The 50-50 Principal Business Test</div>
+                <p>A company is treated as an NBFC if it satisfies <span class="k-red">BOTH</span> conditions:<br>
+                1. <strong>Financial Assets Test:</strong> Financial assets constitute more than <span class="k-blue">50%</span> of total assets.<br>
+                2. <strong>Financial Income Test:</strong> Income from financial assets constitutes more than <span class="k-green">50%</span> of total gross income.</p>
+            </div>
+        </section>
+
+        <section id="sec-sbr-architecture" class="quick-card">
+            <h2>2. RBI Scale-Based Regulation (SBR) Framework</h2>
+            <p>RBI regulates NBFCs based on systemic significance through a 4-tiered structure:</p>
+
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>SBR Layer</th>
+                        <th>Categories of NBFCs Included</th>
+                        <th>Key Regulatory Tightness</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Base Layer (NBFC-BL)</strong></td>
+                        <td>• Non-deposit taking NBFCs with asset size <span class="k-blue">&lt; &#8377; 1,000 Crore</span>.<br>
+                        • NBFC-P2P (Peer-to-Peer), Account Aggregators (AA), NOFHC.</td>
+                        <td>Basic prudential norms; NOF target &#8377;10 Cr; simplified governance.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Middle Layer (NBFC-ML)</strong></td>
+                        <td>• <span class="k-red">ALL Deposit-taking NBFCs</span> (NBFC-D) regardless of asset size.<br>
+                        • Non-deposit NBFCs with asset size <span class="k-purple">&ge; &#8377; 1,000 Crore</span>.<br>
+                        • Primary Dealers, Core Investment Companies (CICs), HFCs, Infrastructure Debt Funds (IDF).</td>
+                        <td>Stricter capital adequacy, board committees mandatory (Audit, NRC, Risk Mgmt).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Upper Layer (NBFC-UL)</strong></td>
+                        <td>• Top 10 NBFCs identified by RBI based on quantitative & qualitative scoring methodology.<br>
+                        • Always includes top NBFCs in asset size.</td>
+                        <td>Bank-like regulatory intensity, mandatory listing within 3 years, Common Equity Tier 1 (CET1) 9%.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. Top Layer (NBFC-TL)</strong></td>
+                        <td>• Empty by default.<br>
+                        • Activated by RBI if an NBFC-UL exhibits extreme systemic risk spillover.</td>
+                        <td>Higher capital add-ons, intense regulatory surveillance.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="sec-nbfc-prudential" class="quick-card">
+            <h2>3. Asset Classification & Provisioning Norms</h2>
+            <div class="callout callout-green">
+                <div class="callout-title">Harmonisation of NPA Norms with Banks</div>
+                <p>NPA recognition for NBFCs across all layers is now harmonized to <span class="k-red">&gt; 90 days overdue</span> (replacing the old 180-day norm).</p>
+            </div>
+
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Asset Class</th>
+                        <th>Overdue Period</th>
+                        <th>Standard Provision</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Standard Assets</strong></td>
+                        <td>Regular servicing / &le; 90 days</td>
+                        <td><span class="k-green">0.40%</span> of total outstanding</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sub-Standard</strong></td>
+                        <td>NPA for &le; 12 months</td>
+                        <td><span class="k-amber">10%</span> (Ind AS: ECL based)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Doubtful</strong></td>
+                        <td>NPA for &gt; 12 months</td>
+                        <td>• Up to 1 yr (D1): 20% secured, 100% unsecured<br>
+                        • 1 to 3 yrs (D2): 30% secured, 100% unsecured<br>
+                        • &gt; 3 yrs (D3): 50% secured, 100% unsecured</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Loss Assets</strong></td>
+                        <td>Identified as uncollectible</td>
+                        <td><span class="k-red">100%</span> write-off or provision</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="sec-nbfc-auditor-report" class="quick-card">
+            <h2>4. NBFC Auditor's Report & Exception Reporting to RBI</h2>
+            
+            <div class="callout callout-red">
+                <div class="callout-title">Mandatory Exception Reporting to RBI within 7 Days</div>
+                <p>Under the NBFC Auditor's Report (Reserve Bank) Directions, 2016, if the auditor observes that the NBFC:<br>
+                1. Has not obtained CoR or is not entitled to hold CoR;<br>
+                2. Fails to meet NOF criteria;<br>
+                3. Has failed to comply with Prudential Norms on capital adequacy, asset classification, or provisioning;<br>
+                The auditor has a statutory duty to send an <strong>exception report directly to the Reserve Bank of India (RBI)</strong> within <span class="k-red">7 days</span> of noticing the violation, irrespective of whether management agrees.</p>
+            </div>
+        </section>
+    
+
+        <!-- Bottom Navigation -->
+        <div class="bottom-nav">
+            <a href="bank_audit_quick.html" class="nav-btn prev-btn">&larr; Ch 14 U1 Bank Audit</a>
+            <a href="../../notes/audquicknotes.html" class="nav-btn hub-btn">Audit Quick Hub</a>
+            <a href="psu_audit_quick.html" class="nav-btn next-btn">Ch 15 PSU Audit &rarr;</a>
+        </div>
+
+    </main>
+
+    <script>
+        function toggleTheme() {
+            const current = document.documentElement.getAttribute('data-theme');
+            const target = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', target);
+            localStorage.setItem('calcium_theme', target);
+        }
+        const savedTheme = localStorage.getItem('calcium_theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+    </script>
+
+</body>
+</html>

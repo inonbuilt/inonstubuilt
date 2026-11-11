@@ -1,0 +1,1949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 14 (Unit 2): Audit of Non-Banking Financial Companies (NBFCs) &ndash; CA Final Audit Revision Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Kalam:wght@300;400;700&family=Patrick+Hand&family=Patrick+Hand+SC&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-blue: #1e3a8a;
+      --accent-blue: #0284c7;
+      --primary-green: #047857;
+      --accent-red: #b91c1c;
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --bg-canvas: #f8fafc;
+      --card-bg: #ffffff;
+      --border-color: #cbd5e1;
+      --text-main: #000000;
+      --text-muted: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Kalam', cursive;
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--text-main);
+      background-color: var(--bg-canvas);
+      background-image: 
+        radial-gradient(#e2e8f0 1.5px, transparent 1.5px),
+        radial-gradient(#f1f5f9 1.5px, #f8fafc 1.5px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+      padding-top: 56px;
+    }
+
+    /* Top Reading Progress Bar */
+    .reading-progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 4px;
+      background: linear-gradient(90deg, #1e3a8a, #0284c7, #047857);
+      z-index: 1000;
+      transition: width 0.1s ease-out;
+    }
+
+    /* Topbar */
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 56px;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 2px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      z-index: 999;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .sidebar-toggle-btn {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: 16px;
+      display: none;
+    }
+
+    .topbar-brand {
+      font-family: 'Patrick Hand SC', cursive;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .topbar-pill {
+      font-family: 'Caveat', cursive;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: #eff6ff;
+      color: var(--primary-blue);
+      border: 1px solid #bfdbfe;
+    }
+
+    .hub-link-btn {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 16px;
+      padding: 5px 14px;
+      border-radius: 6px;
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      color: #1e3a8a;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .hub-link-btn:hover {
+      background: #e2e8f0;
+      color: #0f172a;
+    }
+
+    /* Layout Wrapper */
+    .app-layout {
+      display: flex;
+      max-width: 1560px;
+      margin: 0 auto;
+      padding: 20px;
+      gap: 28px;
+    }
+
+    /* Sidebar Navigation */
+    .sidebar {
+      width: 320px;
+      flex-shrink: 0;
+      position: sticky;
+      top: 76px;
+      height: calc(100vh - 96px);
+      overflow-y: auto;
+      background: #ffffff;
+      border: 2px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 18px 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+
+    .sidebar-title {
+      font-family: 'Patrick Hand SC', cursive;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .nav-item a {
+      display: block;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 16px;
+      color: #334155;
+      text-decoration: none;
+      padding: 7px 12px;
+      border-radius: 8px;
+      transition: all 0.15s ease-in-out;
+      line-height: 1.35;
+    }
+
+    .nav-item a:hover {
+      background: #eff6ff;
+      color: var(--primary-blue);
+      transform: translateX(4px);
+    }
+
+    .nav-item a.active {
+      background: #dbeafe;
+      color: #1e3a8a;
+      font-weight: 700;
+      border-left: 4px solid #1e40af;
+    }
+
+    /* Main Content Area */
+    .main-content {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 60%, #0369a1 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: 32px 36px;
+      box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-banner::after {
+      content: "NBFC AUDIT";
+      position: absolute;
+      right: 20px;
+      bottom: -15px;
+      font-family: 'Patrick Hand SC', cursive;
+      font-size: 90px;
+      color: rgba(255, 255, 255, 0.07);
+      pointer-events: none;
+      font-weight: 700;
+    }
+
+    .hero-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .hero-badge {
+      font-family: 'Caveat', cursive;
+      font-size: 19px;
+      font-weight: 700;
+      padding: 2px 12px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .hero-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 38px;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    }
+
+    .hero-subtitle {
+      font-size: 19px;
+      line-height: 1.6;
+      color: #e0f2fe;
+      max-width: 950px;
+    }
+
+    /* Cards & Section Boxes */
+    .content-card {
+      background: #ffffff;
+      border: 2px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 28px 32px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+
+    .card-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-header {
+      margin-bottom: 20px;
+    }
+
+    .section-badge {
+      display: inline-block;
+      font-family: 'Caveat', cursive;
+      font-size: 19px;
+      font-weight: 700;
+      padding: 2px 12px;
+      border-radius: 8px;
+      background: #eff6ff;
+      color: var(--primary-blue);
+      border: 1px solid #bfdbfe;
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 32px;
+      color: #0f172a;
+      line-height: 1.3;
+    }
+
+    /* Colored Keyword Spans */
+    .kw-blue { color: #1e40af; font-weight: 700; }
+    .kw-red { color: #b91c1c; font-weight: 700; }
+    .kw-green { color: #047857; font-weight: 700; }
+    .kw-purple { color: #7c3aed; font-weight: 700; }
+    .kw-amber { color: #d97706; font-weight: 700; }
+
+    /* Callout Boxes */
+    .callout {
+      border-left: 5px solid;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 18px 0;
+      font-size: 17px;
+    }
+
+    .callout-info {
+      background: #eff6ff;
+      border-color: #3b82f6;
+      color: #1e3a8a;
+    }
+
+    .callout-warning {
+      background: #fffbeb;
+      border-color: #f59e0b;
+      color: #92400e;
+    }
+
+    .callout-danger {
+      background: #fef2f2;
+      border-color: #ef4444;
+      color: #991b1b;
+    }
+
+    .callout-success {
+      background: #f0fdf4;
+      border-color: #10b981;
+      color: #065f46;
+    }
+
+    .callout-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 21px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    /* Tables (Strictly Arial/Sans-serif) */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 18px 0;
+      border-radius: 10px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .notes-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-size: 14.5px;
+      line-height: 1.5;
+      text-align: left;
+    }
+
+    .notes-table th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 700;
+      padding: 12px 14px;
+      border-bottom: 2px solid #cbd5e1;
+      border-right: 1px solid #e2e8f0;
+    }
+
+    .notes-table td {
+      padding: 11px 14px;
+      border-bottom: 1px solid #e2e8f0;
+      border-right: 1px solid #e2e8f0;
+      vertical-align: top;
+      color: #1e293b;
+    }
+
+    .notes-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .notes-table tr:hover td {
+      background: #f8fafc;
+    }
+
+    /* Interactive Accordions */
+    .accordion-item {
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    }
+
+    .accordion-header {
+      width: 100%;
+      text-align: left;
+      padding: 14px 18px;
+      background: #f8fafc;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 19px;
+      font-weight: 700;
+      color: #0f172a;
+      transition: background 0.15s ease-in-out;
+    }
+
+    .accordion-header:hover {
+      background: #f1f5f9;
+      color: #1e40af;
+    }
+
+    .accordion-icon {
+      font-size: 20px;
+      font-weight: bold;
+      color: #64748b;
+      transition: transform 0.2s ease;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 20px 22px;
+      border-top: 1px solid #e2e8f0;
+      background: #ffffff;
+      font-size: 17px;
+    }
+
+    .accordion-item.open .accordion-content {
+      display: block;
+    }
+
+    .accordion-item.open .accordion-icon {
+      transform: rotate(45deg);
+      color: #b91c1c;
+    }
+
+    /* Process Flows & Step Boxes */
+    .process-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 16px 0;
+    }
+
+    .flow-step {
+      background: #f8fafc;
+      border-left: 4px solid var(--accent-blue);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+    }
+
+    .flow-step .step-num {
+      font-family: 'Caveat', cursive;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--accent-blue);
+    }
+
+    .flow-step .step-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 21px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+
+    .flow-step .step-desc {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    /* Case Study Card Box */
+    .case-study-box {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-left: 5px solid #047857;
+      border-radius: 8px;
+      padding: 18px 22px;
+      margin: 18px 0;
+    }
+
+    /* Bottom Navigation */
+    .bottom-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 2px solid #e2e8f0;
+    }
+
+    .nav-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      color: #0f172a;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 18px;
+      transition: all 0.2s ease;
+      flex: 1;
+      max-width: 320px;
+    }
+
+    .nav-btn:hover {
+      background: #eff6ff;
+      border-color: #3b82f6;
+      color: #1e40af;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .nav-btn.hub-btn {
+      justify-content: center;
+      text-align: center;
+      max-width: 220px;
+    }
+
+    .nav-btn.next-btn {
+      justify-content: flex-end;
+      text-align: right;
+      margin-left: auto;
+    }
+
+    .nav-arrow {
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .nav-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-sub {
+      font-family: 'Caveat', cursive;
+      font-size: 15px;
+      color: #64748b;
+      line-height: 1.2;
+    }
+
+    .nav-title {
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    @media (max-width: 1024px) {
+      .sidebar {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 56px;
+        bottom: 0;
+        z-index: 998;
+        width: 280px;
+        border-radius: 0;
+        border-right: 2px solid #cbd5e1;
+      }
+      .sidebar.active {
+        display: block;
+      }
+      .sidebar-toggle-btn {
+        display: block;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .app-layout {
+        padding: 12px;
+      }
+      .content-card {
+        padding: 20px 16px;
+      }
+      .hero-banner {
+        padding: 24px 20px;
+      }
+      .hero-title {
+        font-size: 28px;
+      }
+      .bottom-nav {
+        flex-direction: column;
+      }
+      .nav-btn {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Reading Progress Bar -->
+<div class="reading-progress-bar" id="readingProgress"></div>
+
+<!-- Sticky Topbar -->
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="sidebar-toggle-btn" id="sidebarToggle" aria-label="Toggle Navigation">&#9776; Index</button>
+    <a href="../../notes/audnotes.html" class="topbar-brand">
+      <span>CA Final &bull; Advanced Auditing</span>
+    </a>
+  </div>
+  <div class="topbar-right">
+    <span class="topbar-pill">Ch 14 (U2): Audit of NBFCs</span>
+    <a href="../../notes/audnotes.html" class="hub-link-btn">Back to Hub &rarr;</a>
+  </div>
+</header>
+
+<!-- Application Layout -->
+<div class="app-layout">
+
+  <!-- Left Sidebar Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-title">
+      <span>Chapter Directory</span>
+      <span style="font-size: 14px; color:#64748b;">Ch 14 (U2) Index</span>
+    </div>
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#sec-intro-def" class="nav-link active">1. Definition &amp; 50-50 Test</a></li>
+      <li class="nav-item"><a href="#sec-nof-computation" class="nav-link">2. Net Owned Funds &amp; CoR</a></li>
+      <li class="nav-item"><a href="#sec-sbr-framework" class="nav-link">3. Scale Based Regulation (SBR)</a></li>
+      <li class="nav-item"><a href="#sec-banks-vs-nbfcs" class="nav-link">4. Banks vs. NBFCs Matrix</a></li>
+      <li class="nav-item"><a href="#sec-types-nbfcs" class="nav-link">5. Types &amp; Categories of NBFCs</a></li>
+      <li class="nav-item"><a href="#sec-prudential-capital" class="nav-link">6. Capital Requirements (CRAR)</a></li>
+      <li class="nav-item"><a href="#sec-income-recognition-npa" class="nav-link">7. Income Recognition &amp; NPA Norms</a></li>
+      <li class="nav-item"><a href="#sec-provisioning-norms" class="nav-link">8. Provisioning Requirements</a></li>
+      <li class="nav-item"><a href="#sec-audit-procedures" class="nav-link">9. Audit Procedures &amp; Checklists</a></li>
+      <li class="nav-item"><a href="#sec-frauds-nbfc" class="nav-link">10. Classification of Frauds</a></li>
+      <li class="nav-item"><a href="#sec-tyu1" class="nav-link">11. TYU 1: 50-50 Principal Business</a></li>
+      <li class="nav-item"><a href="#sec-rbi-directions-2016" class="nav-link">12. NBFC Auditor Directions 2016</a></li>
+      <li class="nav-item"><a href="#sec-exception-reporting-rbi" class="nav-link">13. Exception Reporting to RBI</a></li>
+      <li class="nav-item"><a href="#sec-caro-clause-xvi" class="nav-link">14. CARO 2020 Clause 3(xvi)</a></li>
+      <li class="nav-item"><a href="#sec-tyu2" class="nav-link">15. TYU 2: Exception Reporting Case</a></li>
+      <li class="nav-item"><a href="#sec-indas-division3" class="nav-link">16. Ind AS Schedule III Division III</a></li>
+      <li class="nav-item"><a href="#sec-ecl-vs-irac" class="nav-link">17. Ind AS 109 ECL vs. IRAC Floor</a></li>
+      <li class="nav-item"><a href="#sec-related-party-sbr" class="nav-link">18. Related Party SBR Disclosures</a></li>
+      <li class="nav-item"><a href="#sec-tyu3" class="nav-link">19. TYU 3: ECL Impairment Reserve</a></li>
+      <li class="nav-item"><a href="#sec-tyk" class="nav-link">20. Test Your Knowledge (TYK 1-15)</a></li>
+      <li class="nav-item"><a href="#sec-sbr-matrix" class="nav-link">21. Master SBR 4-Layer Matrix</a></li>
+      <li class="nav-item"><a href="#sec-exam-traps" class="nav-link">22. High-Frequency NBFC Exam Traps</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content Column -->
+  <main class="main-content">
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+      <div class="hero-badge-row">
+        <span class="hero-badge">CA Final Paper 3</span>
+        <span class="hero-badge">Advanced Auditing &amp; Professional Ethics</span>
+        <span class="hero-badge">Module 3 &bull; Chapter 14 (Unit 2)</span>
+        <span class="hero-badge">100% ICAI Study Material Coverage</span>
+      </div>
+      <h1 class="hero-title">Audit of Non-Banking Financial Companies (NBFCs)</h1>
+      <p class="hero-subtitle">
+        Comprehensive master revision notes covering Section 45-I(f) &amp; 45-IA of the RBI Act 1934, 50-50 Principal Business Test, Net Owned Fund (NOF) Computation, Scale Based Regulation (SBR) 4-Layer Architecture, NBFC Auditor's Report (Reserve Bank) Directions 2016, CARO 2020 Clause 3(xvi), and Ind AS 109 ECL vs. IRAC Prudential Floor.
+      </p>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- SECTION 1: DEFINITION & 50-50 TEST         -->
+    <!-- ========================================== -->
+    <section id="sec-intro-def" class="audit-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-badge">Section 1 &bull; Statutory Definition</span>
+          <h2 class="section-title">Definition of NBFC &amp; The 50-50 Principal Business Test</h2>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3 class="card-title">1. Legal Definition under Section 45-I(f) of the RBI Act, 1934</h3>
+        <p>
+          A <strong>Non-Banking Financial Company (NBFC)</strong> is a company registered under the Companies Act, 2013 engaged in the business of loans and advances, acquisition of shares/stocks/bonds/debentures/securities, leasing, hire-purchase, insurance business, or chit business.
+        </p>
+        <p>
+          <em>Exclusions:</em> It does not include any institution whose principal business is that of <span class="kw-red">agriculture activity, industrial activity, purchase or sale of any goods (other than securities), or the providing of any services, or sale/purchase/construction of immovable property</span>.
+        </p>
+
+        <h4 style="font-family:'Patrick Hand', cursive; color:#1e3a8a; font-size:22px; margin-top:20px;">The 50-50 Principal Business Criteria (Twin Test)</h4>
+        <p>
+          To determine whether a corporate entity's principal business is financial in nature (mandating registration with RBI as an NBFC), the RBI applies the objective <span class="kw-blue">50-50 Twin Criteria</span>:
+        </p>
+
+        <div class="grid-2col" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:14px;">
+          <div class="inner-box" style="background:#eff6ff; border-left:4px solid #1e40af; padding:16px; border-radius:8px;">
+            <h5 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Criterion 1: Asset Test</h5>
+            <p style="font-size:16px; line-height:1.5;">
+              The company's <strong>Financial Assets</strong> must constitute <span class="kw-red">more than 50%</span> of its total assets (net of intangible assets).
+            </p>
+          </div>
+
+          <div class="inner-box" style="background:#f0fdf4; border-left:4px solid #047857; padding:16px; border-radius:8px;">
+            <h5 style="color:#047857; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Criterion 2: Income Test</h5>
+            <p style="font-size:16px; line-height:1.5;">
+              The company's <strong>Income from Financial Assets</strong> must constitute <span class="kw-red">more than 50%</span> of its gross total income.
+            </p>
+          </div>
+        </div>
+
+        <div class="callout callout-danger" style="margin-top:16px;">
+          <div class="callout-title">⚠️ Mandatory Registration Consequence</div>
+          <p>
+            Both criteria are <strong>CUMULATIVE</strong>! A company that satisfies both the asset test and income test is treated as conducting financial business as its principal business, and <span class="kw-red">MUST mandatorily obtain a Certificate of Registration (CoR)</span> from the RBI under Section 45-IA!
+          </p>
+        </div>
+      </div>
+
+      <!-- NOF COMPUTATION & REGISTRATION -->
+      <div id="sec-nof-computation" class="content-card" style="margin-top:20px;">
+        <h3 class="card-title">2. Net Owned Fund (NOF) Requirement &amp; Calculation Formula</h3>
+        <p>
+          Under Section 45-IA of the RBI Act, 1934, no NBFC can commence or carry on financial business without: (a) Obtaining a Certificate of Registration (CoR); and (b) Having a minimum prescribed <span class="kw-blue">Net Owned Fund (NOF)</span>.
+        </p>
+
+        <div class="callout callout-info">
+          <div class="callout-title">Minimum NOF Trajectory under Scale Based Regulation (SBR)</div>
+          <p>
+            Under the RBI Scale Based Regulation (SBR) framework, the minimum Net Owned Fund requirement for NBFC-ICC, NBFC-MFI, and NBFC-Factor has been enhanced from ₹ 2 Crores to <span class="kw-purple">₹ 10 Crores</span> (phased glide path: ₹ 5 Crores by March 31, 2025 and ₹ 10 Crores by March 31, 2027). For NBFC-P2P, NBFC-AA, and NBFCs without public funds, it remains ₹ 2 Crores.
+          </p>
+        </div>
+
+        <h4 style="font-family:'Patrick Hand', cursive; color:#1e3a8a; font-size:22px; margin-top:20px;">Step-by-Step Statutory Formula for Computing NOF:</h4>
+        <div class="table-wrap">
+          <table class="notes-table">
+            <thead>
+              <tr>
+                <th style="width:15%;">Step</th>
+                <th style="width:40%;">Component Description</th>
+                <th style="width:45%;">Exact Statutory Inclusions &amp; Deductions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Step 1</strong></td>
+                <td><strong>Owned Fund (OF)</strong></td>
+                <td>
+                  <strong>Paid-up Equity Capital</strong> + <strong>Free Reserves</strong> + <strong>Balance in Share Premium Account</strong> + <strong>Capital Reserves</strong> (representing surplus arising out of sale proceeds of assets, excluding revaluation reserves)<br>
+                  <em>LESS:</em> Accumulated balance of loss, Deferred revenue expenditure, and Other intangible assets.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Step 2</strong></td>
+                <td><strong>Specified Investments &amp; Exposures (SIE)</strong></td>
+                <td>
+                  Sum total of:
+                  <ul style="margin:4px 0 0 16px; line-height:1.5;">
+                    <li>Investments in shares of subsidiaries, companies in same group, and other NBFCs; AND</li>
+                    <li>Book value of debentures, bonds, outstanding loans and advances (including hire purchase and lease finance) made to, and deposits with, subsidiaries and companies in the same group.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Step 3</strong></td>
+                <td><strong>Excess over 10% of Owned Fund</strong></td>
+                <td>
+                  Amount by which the Specified Investments &amp; Exposures (Step 2) <span class="kw-red">exceeds 10% of the Owned Fund</span> (Step 1).
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Step 4</strong></td>
+                <td><strong>Net Owned Fund (NOF)</strong></td>
+                <td>
+                  <span class="kw-blue">NOF = Owned Fund (Step 1) &minus; Excess over 10% (Step 3)</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 2: SBR 4-TIER ARCHITECTURE         -->
+    <!-- ========================================== -->
+    <section id="sec-sbr-framework" class="audit-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-badge">Section 2 &bull; Modern Regulatory Architecture</span>
+          <h2 class="section-title">Scale Based Regulation (SBR): The 4-Layer Architecture</h2>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3 class="card-title">1. Why Scale Based Regulation? (Regulatory Alignment with Banks)</h3>
+        <p>
+          Historically, NBFC regulations were based on whether an entity was deposit-taking (NBFC-D) or non-deposit-taking (NBFC-ND), and asset size &ge; ₹ 500 Crores (Systemically Important - ND-SI).
+        </p>
+        <p>
+          To eliminate regulatory arbitrage and address systemic interconnectedness, the RBI introduced the <span class="kw-blue">Scale Based Regulation (SBR) Framework</span> (effective October 2022). Regulation is now tailored progressively across four distinct horizontal layers based on asset size, activity, and systemic risk:
+        </p>
+
+        <div class="table-wrap">
+          <table class="notes-table">
+            <thead>
+              <tr>
+                <th style="width:20%;">SBR Layer</th>
+                <th style="width:40%;">Qualifying NBFC Categories &amp; Asset Size Thresholds</th>
+                <th style="width:40%;">Regulatory Stringency &amp; Key Governance Mandates</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Base Layer<br>(NBFC-BL)</strong></td>
+                <td>
+                  &bull; Non-deposit taking NBFCs with asset size <span class="kw-blue">&lt; ₹ 1,000 Crores</span><br>
+                  &bull; NBFC-Peer to Peer Lending (P2P)<br>
+                  &bull; NBFC-Account Aggregator (AA)<br>
+                  &bull; Non-Operative Financial Holding Companies (NOFHC)<br>
+                  &bull; Type I NBFCs (no public funds, no customer interface)
+                </td>
+                <td>
+                  &bull; Principal business 50-50 compliance<br>
+                  &bull; Minimum NOF glide path to ₹ 10 Cr<br>
+                  &bull; Leverage Ratio &le; 7<br>
+                  &bull; 90-day NPA overdue norm alignment<br>
+                  &bull; Simpler governance standards
+                </td>
+              </tr>
+              <tr>
+                <td><strong>2. Middle Layer<br>(NBFC-ML)</strong></td>
+                <td>
+                  &bull; <span class="kw-red">ALL Deposit-Taking NBFCs (NBFC-D)</span>, irrespective of asset size!<br>
+                  &bull; Non-deposit taking NBFCs with asset size <span class="kw-blue">&ge; ₹ 1,000 Crores</span><br>
+                  &bull; Standalone Primary Dealers (SPDs)<br>
+                  &bull; Infrastructure Debt Fund NBFCs (IDF-NBFC)<br>
+                  &bull; Core Investment Companies (CICs)<br>
+                  &bull; Housing Finance Companies (HFCs)
+                </td>
+                <td>
+                  &bull; CRAR minimum 15% (Tier 1 min 10%)<br>
+                  &bull; Mandatory Chief Risk Officer (CRO)<br>
+                  &bull; Mandatory Chief Compliance Officer (CCO)<br>
+                  &bull; Internal Capital Adequacy Assessment (ICAAP)<br>
+                  &bull; Stricter Large Exposure Framework (LEF)
+                </td>
+              </tr>
+              <tr>
+                <td><strong>3. Upper Layer<br>(NBFC-UL)</strong></td>
+                <td>
+                  &bull; NBFCs identified by RBI based on a quantitative parametric scoring model (Asset size, Interconnectedness, Complexity, Nature of activity)<br>
+                  &bull; The <span class="kw-purple">Top 10 eligible NBFCs</span> in terms of asset size are automatically included in the Upper Layer!
+                </td>
+                <td>
+                  &bull; Bank-like regulatory oversight<br>
+                  &bull; Mandatory Common Equity Tier 1 (CET1) min 9%<br>
+                  &bull; Mandatory public listing on stock exchanges within 3 years of classification<br>
+                  &bull; Standard asset provisioning aligned to banks
+                </td>
+              </tr>
+              <tr>
+                <td><strong>4. Top Layer<br>(NBFC-TL)</strong></td>
+                <td>
+                  &bull; <em>Currently Empty Layer:</em> Populated by RBI only if an Upper Layer NBFC demonstrates extreme systemic risk potential capable of causing systemic contagion.
+                </td>
+                <td>
+                  &bull; Higher, customized capital surcharges and intrusive supervisory monitoring by RBI.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- DIFFERENCE BETWEEN BANKS AND NBFCS -->
+      <div id="sec-banks-vs-nbfcs" class="content-card" style="margin-top:20px;">
+        <h3 class="card-title">2. Fundamental Differences Between Banks and NBFCs</h3>
+        <p>Although both banks and NBFCs engage in financial intermediation, they differ across critical legal boundaries:</p>
+
+        <div class="table-wrap">
+          <table class="notes-table">
+            <thead>
+              <tr>
+                <th style="width:25%;">Comparison Dimension</th>
+                <th style="width:37%;">Commercial Banks</th>
+                <th style="width:38%;">Non-Banking Financial Companies (NBFCs)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Demand Deposits</strong></td>
+                <td>Can accept demand deposits (Savings and Current accounts repayable on demand).</td>
+                <td><span class="kw-red">STRICTLY PROHIBITED:</span> NBFCs cannot accept demand deposits. Only eligible NBFC-D can accept term deposits for 12 to 60 months.</td>
+              </tr>
+              <tr>
+                <td><strong>Payment &amp; Settlement</strong></td>
+                <td>Form an integral part of the national Payment and Settlement System; can issue cheques drawn on themselves.</td>
+                <td><span class="kw-red">CANNOT issue cheques drawn on themselves</span> and do not form part of the Payment and Settlement System.</td>
+              </tr>
+              <tr>
+                <td><strong>Deposit Insurance (DICGC)</strong></td>
+                <td>Deposit insurance facility of DICGC (up to ₹ 5 Lakhs per depositor) is available.</td>
+                <td><span class="kw-red">DICGC deposit insurance is NOT available</span> to depositors of NBFCs!</td>
+              </tr>
+              <tr>
+                <td><strong>Statutory Liquidity (CRR)</strong></td>
+                <td>Subject to Cash Reserve Ratio (CRR) maintenance under Section 42 of RBI Act.</td>
+                <td>Not required to maintain CRR with RBI (though required to maintain liquid assets against public deposits).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- TYPES OF NBFCS -->
+      <div id="sec-types-nbfcs" class="content-card" style="margin-top:20px;">
+        <h3 class="card-title">3. Comprehensive Types of NBFCs in the Financial System</h3>
+        <div class="grid-2col" style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+          <div class="inner-box" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px; padding:12px;">
+            <h5 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:18px; margin-top:0;">1. Investment &amp; Credit Company (ICC)</h5>
+            <p style="font-size:14.5px; line-height:1.5;">Lending asset finance and acquiring securities as principal business (merger of former AFC, Investment Co, and Loan Co).</p>
+          </div>
+
+          <div class="inner-box" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px; padding:12px;">
+            <h5 style="color:#047857; font-family:'Patrick Hand', cursive; font-size:18px; margin-top:0;">2. Infrastructure Finance Company (IFC)</h5>
+            <p style="font-size:14.5px; line-height:1.5;">Deploys at least <strong>75% of total assets</strong> in infrastructure loans; min NOF ₹ 300 Cr; min credit rating 'A'; CRAR 15%.</p>
+          </div>
+
+          <div class="inner-box" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px; padding:12px;">
+            <h5 style="color:#b91c1c; font-family:'Patrick Hand', cursive; font-size:18px; margin-top:0;">3. Core Investment Company (CIC-ND-SI)</h5>
+            <p style="font-size:14.5px; line-height:1.5;">Holds at least <strong>90% of net assets</strong> in equity/debt of group companies (min 60% in equity shares); asset size &ge; ₹ 100 Cr.</p>
+          </div>
+
+          <div class="inner-box" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px; padding:12px;">
+            <h5 style="color:#7c3aed; font-family:'Patrick Hand', cursive; font-size:18px; margin-top:0;">4. NBFC - Micro Finance Institution (MFI)</h5>
+            <p style="font-size:14.5px; line-height:1.5;">Deploys at least <strong>75% of total assets</strong> in microfinance loans to low-income households (annual income &le; ₹ 3 Lakhs) without collateral.</p>
+          </div>
+
+          <div class="inner-box" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px; padding:12px;">
+            <h5 style="color:#d97706; font-family:'Patrick Hand', cursive; font-size:18px; margin-top:0;">5. Peer to Peer Lending (NBFC-P2P)</h5>
+            <p style="font-size:14.5px; line-height:1.5;">Online marketplace platform connecting verified borrowers and lenders; no balance sheet lending; min NOF ₹ 2 Crores.</p>
+          </div>
+
+          <div class="inner-box" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px; padding:12px;">
+            <h5 style="color:#0369a1; font-family:'Patrick Hand', cursive; font-size:18px; margin-top:0;">6. Account Aggregator (NBFC-AA)</h5>
+            <p style="font-size:14.5px; line-height:1.5;">Data consolidator providing consolidated financial information of customers across financial entities based on explicit customer consent.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- ========================================== -->
+<!-- SECTION 4: PRUDENTIAL NORMS FOR NBFCS      -->
+<!-- ========================================== -->
+<section id="sec-prudential-capital" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 4 &bull; Prudential Guidelines</span>
+      <h2 class="section-title">Prudential Norms: Capital Requirements, Income Recognition &amp; Provisioning</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h3 class="card-title">1. Capital Adequacy Requirements (CRAR &amp; Leverage Ratio)</h3>
+    <p>
+      Under the Scale Based Regulation (SBR) framework, NBFCs must maintain adequate capital buffers calibrated to their layer and risk profile:
+    </p>
+
+    <div class="grid-2col" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:12px;">
+      <div class="inner-box" style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:10px; padding:16px;">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Middle &amp; Upper Layer: CRAR Norms</h4>
+        <p style="font-size:15px; line-height:1.5;">
+          NBFC-ML and NBFC-UL must maintain a minimum <strong>Capital to Risk-Weighted Assets Ratio (CRAR)</strong> of <span class="kw-blue">15%</span> on an ongoing basis:
+        </p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><span class="kw-red">Tier 1 Capital:</span> Must not be less than <span class="kw-blue">10%</span> (minimum loss-absorbing core capital).</li>
+          <li><span class="kw-purple">Tier 2 Capital:</span> Cannot exceed 100% of Tier 1 Capital. Includes revaluation reserves (at 55% discount) and general provisions up to 1.25% of risk-weighted assets.</li>
+          <li><em>Upper Layer CET1:</em> NBFC-UL must maintain Common Equity Tier 1 (CET1) of at least <strong>9%</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="inner-box" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:10px; padding:16px;">
+        <h4 style="color:#047857; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Base Layer: Leverage Ratio Ceiling</h4>
+        <p style="font-size:15px; line-height:1.5;">
+          NBFCs in the Base Layer (NBFC-BL) are not subject to the 15% CRAR requirement. Instead, they are governed by a statutory <span class="kw-green">Leverage Ratio</span>:
+        </p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>Leverage Ratio Formula:</strong> Total Outside Liabilities divided by Owned Fund.</li>
+          <li><strong>Ceiling:</strong> The Leverage Ratio must <span class="kw-red">NOT exceed 7</span> at any point in time!</li>
+          <li><em>Perpetual Debt Restriction:</em> NBFCs-BL are not eligible to include perpetual debt instruments in their Tier 1 capital.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- INCOME RECOGNITION & NPA NORMS -->
+  <div id="sec-income-recognition-npa" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">2. Income Recognition &amp; Harmonized 90-Day NPA Criteria</h3>
+    <p>
+      Under SBR, the criteria for classification of assets as Non-Performing Assets (NPAs) across all categories of NBFCs (including Base Layer) has been strictly aligned to the <span class="kw-red">90-day overdue norm</span>:
+    </p>
+
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:28%;">Facility / Advance Type</th>
+            <th style="width:72%;">RBI SBR Non-Performing Asset (NPA) Trigger Point</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Term Loans &amp; Demand Loans</strong></td>
+            <td>An asset in respect of which interest or installment of principal has remained <span class="kw-red">overdue for more than 90 days</span>.</td>
+          </tr>
+          <tr>
+            <td><strong>Lease Rentals &amp; Hire Purchase</strong></td>
+            <td>Lease rental or hire purchase instalment has remained <span class="kw-red">overdue for more than 90 days</span>.</td>
+          </tr>
+          <tr>
+            <td><strong>Bills Purchased &amp; Discounted</strong></td>
+            <td>The bill remains overdue and unpaid for <span class="kw-red">more than 90 days</span>.</td>
+          </tr>
+          <tr>
+            <td><strong>Income Recognition Rule</strong></td>
+            <td>
+              Income from NPAs <span class="kw-red">CANNOT be recognized on an accrual basis</span>! It can be recognized strictly on <strong>actual cash realization</strong>. Any unrealized interest already accrued in previous quarters must be immediately reversed from the Profit &amp; Loss account!
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- PROVISIONING REQUIREMENTS -->
+  <div id="sec-provisioning-norms" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">3. RBI Prudential Provisioning Matrix for NBFCs</h3>
+    <p>NBFCs must maintain provisions against their loan portfolio in accordance with the following regulatory schedule:</p>
+
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:22%;">Asset Classification</th>
+            <th style="width:28%;">Overdue Period / Status</th>
+            <th style="width:25%;">Secured Portion Provision</th>
+            <th style="width:25%;">Unsecured Portion Provision</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Standard Assets</strong></td>
+            <td>Regular servicing / Overdue &le; 90 days</td>
+            <td colspan="2"><span class="kw-green">0.40%</span> general provision on total standard advances.</td>
+          </tr>
+          <tr>
+            <td><strong>Sub-Standard Assets</strong></td>
+            <td>NPA for a period <span class="kw-blue">&le; 12 months</span></td>
+            <td colspan="2"><span class="kw-blue">15%</span> general provision on total sub-standard portfolio.</td>
+          </tr>
+          <tr>
+            <td><strong>Doubtful Assets &ndash; D1</strong></td>
+            <td>Sub-standard for &gt; 12 months (up to 1 yr)</td>
+            <td><span class="kw-amber">25%</span> of secured portion</td>
+            <td><span class="kw-red">100%</span> of unsecured portion</td>
+          </tr>
+          <tr>
+            <td><strong>Doubtful Assets &ndash; D2</strong></td>
+            <td>Doubtful from 1 to 3 years</td>
+            <td><span class="kw-amber">40%</span> of secured portion</td>
+            <td><span class="kw-red">100%</span> of unsecured portion</td>
+          </tr>
+          <tr>
+            <td><strong>Doubtful Assets &ndash; D3</strong></td>
+            <td>Doubtful for more than 3 years</td>
+            <td><span class="kw-red">100%</span> of secured portion</td>
+            <td><span class="kw-red">100%</span> of unsecured portion</td>
+          </tr>
+          <tr>
+            <td><strong>Loss Assets</strong></td>
+            <td>Identified as uncollectible</td>
+            <td colspan="2"><span class="kw-red">100% PROVISION</span> on entire outstanding balance!</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 5: AUDIT PROCEDURES & CHECKLIST    -->
+<!-- ========================================== -->
+<section id="sec-audit-procedures" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 5 &bull; Audit Execution</span>
+      <h2 class="section-title">Audit Procedures, Checklists &amp; Fraud Classification</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h3 class="card-title">1. Master Audit Checklist for NBFCs</h3>
+    <p>The statutory auditor must execute the following structured verification procedures:</p>
+
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:25%;">Audit Focus Area</th>
+            <th style="width:75%;">Specific Verification Procedures &amp; Auditor Responsibilities</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. CoR &amp; Principal Business</strong></td>
+            <td>Inspect the original Certificate of Registration (CoR) issued by RBI under Section 45-IA. Re-compute the <span class="kw-blue">50-50 Principal Business Test</span> based on audited financial statements. Verify that the company is entitled to continue holding the CoR.</td>
+          </tr>
+          <tr>
+            <td><strong>2. NOF Computation</strong></td>
+            <td>Independently re-perform the calculation of Net Owned Funds (NOF) using the statutory formula. Check that NOF meets the prescribed regulatory floor (₹ 2 Cr / ₹ 10 Cr).</td>
+          </tr>
+          <tr>
+            <td><strong>3. Lending &amp; Credit Operations</strong></td>
+            <td>Verify loan agreements, board/committee sanction resolutions, borrower KYC documents, CIBIL/credit bureau reports, and title search reports for mortgaged properties.</td>
+          </tr>
+          <tr>
+            <td><strong>4. Security Perfection</strong></td>
+            <td>Verify registration of charges with the <strong>Registrar of Companies (ROC)</strong> within 30 days, registration with <strong>CERSAI</strong>, and hypothecation endorsement on the <strong>Vahan portal</strong> for vehicle financing.</td>
+          </tr>
+          <tr>
+            <td><strong>5. Public Deposits (NBFC-D)</strong></td>
+            <td>Verify compliance with ceiling on public deposits (up to 1.5 times NOF for rated companies); verify tenure (12 to 60 months only); verify investment in approved liquid assets (15% of public deposits in unencumbered government securities held in designated custodial account).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- CLASSIFICATION OF FRAUDS BY NBFCS -->
+  <div id="sec-frauds-nbfc" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">2. Classification of Frauds by NBFCs &amp; Reporting to RBI</h3>
+    <p>
+      In accordance with RBI Master Directions on Monitoring and Reporting of Frauds in NBFCs:
+    </p>
+
+    <div class="callout callout-danger">
+      <div class="callout-title">Fraud Classification &amp; Reporting Timelines</div>
+      <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+        <li><strong>Classification:</strong> Frauds are categorized into: (a) Misappropriation and criminal breach of trust; (b) Fraudulent encashment / manipulation of books; (c) Unauthorized credit facilities granted for illegal gratification; (d) Cheating and forgery; (e) Fraudulent foreign exchange transactions.</li>
+        <li><strong>Reporting in Form FMR-1:</strong> All individual fraud cases involving an amount of <span class="kw-red">₹ 1 Lakh and above</span> must be reported to the RBI in <strong>Form FMR-1</strong> within <strong>three (3) weeks</strong> of detection.</li>
+        <li><strong>Frauds &ge; ₹ 1 Crore:</strong> In addition to FMR-1, a flash report must be sent to the RBI within 48 hours, and statutory auditors must report under <strong>Section 143(12) of Companies Act</strong> in Form ADT-4 to the Central Government.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE TYU 1 ACCORDION -->
+  <div id="sec-tyu1" class="accordion-item" style="margin-top:20px;">
+    <button class="accordion-header">
+      <span>🔥 TEST YOUR UNDERSTANDING 1: Applying the 50-50 Principal Business Test &ndash; Does Delta Ltd. Require NBFC Registration?</span>
+      <span class="accordion-icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <div class="case-study-box">
+        <h4 style="color:#b91c1c; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Exam Case Scenario (TYU 1)</h4>
+        <p>
+          Delta Ltd. has Total Assets of ₹ 100 Crores, consisting of: (a) Factory Land &amp; Building: ₹ 40 Crores; (b) Plant &amp; Machinery: ₹ 8 Crores; (c) Trade Receivables from manufacturing sales: ₹ 2 Crores; (d) Loans and Advances granted to third parties: ₹ 35 Crores; (e) Investments in corporate debentures and shares: ₹ 15 Crores.
+        </p>
+        <p style="margin-top:8px;">
+          During the year, its Gross Income was ₹ 20 Crores, consisting of: (a) Revenue from sale of manufactured goods: ₹ 9 Crores; (b) Interest earned on loans: ₹ 7 Crores; (c) Dividend and capital gains on debentures/shares: ₹ 4 Crores.
+        </p>
+        <p style="margin-top:8px; font-weight:700; color:#1e40af;">
+          Evaluate whether Delta Ltd.'s principal business is financial in nature, and whether it is mandatorily required to obtain a Certificate of Registration (CoR) from the RBI under Section 45-IA.
+        </p>
+      </div>
+
+      <div class="solution-box" style="margin-top:14px; background:#eff6ff; padding:16px; border-radius:8px; border:1px solid #bfdbfe;">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">ICAI Model Evaluation:</h4>
+        <p>Apply the cumulative 50-50 Twin Criteria:</p>
+        <ol style="font-size:16px; line-height:1.7; margin-left:20px;">
+          <li>
+            <strong>1. Financial Assets Test:</strong>
+            <ul style="margin-left:18px;">
+              <li>Financial Assets = Loans &amp; Advances (₹ 35 Cr) + Investments in shares/debentures (₹ 15 Cr) = <span class="kw-blue">₹ 50 Crores</span>.</li>
+              <li>Total Assets = ₹ 100 Crores.</li>
+              <li>Percentage of Financial Assets = (50 / 100) &times; 100 = <strong>50%</strong>.</li>
+              <li><em>Evaluation:</em> The statutory rule requires Financial Assets to be <span class="kw-red">MORE THAN 50%</span> (&gt; 50.00%) of total assets! Here, financial assets are exactly 50.00%, NOT more than 50%!</li>
+            </ul>
+          </li>
+          <li>
+            <strong>2. Financial Income Test:</strong>
+            <ul style="margin-left:18px;">
+              <li>Financial Income = Interest on loans (₹ 7 Cr) + Dividend/Gains (₹ 4 Cr) = <span class="kw-blue">₹ 11 Crores</span>.</li>
+              <li>Gross Total Income = ₹ 20 Crores.</li>
+              <li>Percentage of Financial Income = (11 / 20) &times; 100 = <span class="kw-green">55%</span> (&gt; 50%).</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Conclusion:</strong> Although Delta Ltd. satisfies the Income Test (55% &gt; 50%), it <span class="kw-red">FAILS the Asset Test</span> because financial assets are exactly 50% (not strictly &gt; 50%). Since both tests are <strong>cumulative</strong>, Delta Ltd. does NOT meet the 50-50 principal business criteria and is <span class="kw-green">NOT required to register as an NBFC</span> with the RBI!
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 6: AUDITOR'S DUTIES & REPORTING    -->
+<!-- ========================================== -->
+<section id="sec-rbi-directions-2016" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 6 &bull; Statutory Duties</span>
+      <h2 class="section-title">Auditor's Duties: RBI Directions 2016 &amp; CARO 2020 Clause 3(xvi)</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h3 class="card-title">1. Non-Banking Financial Companies Auditor's Report (Reserve Bank) Directions, 2016</h3>
+    <p>
+      The statutory auditor of every NBFC has dual reporting responsibilities: (1) The independent auditor's report to shareholders under Section 143; and (2) A <span class="kw-blue">Separate Report to the Board of Directors</span> pursuant to the NBFC Auditor's Report (Reserve Bank) Directions, 2016.
+    </p>
+
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:25%;">Category of NBFC</th>
+            <th style="width:75%;">Mandatory Inquiries &amp; Statements in Report to the Board of Directors</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Matters for ALL NBFCs</strong></td>
+            <td>
+              <ul style="margin:0; padding-left:16px; line-height:1.5;">
+                <li>Whether the company is engaged in NBFC business and has obtained a valid <span class="kw-blue">Certificate of Registration (CoR)</span> from RBI under Section 45-IA.</li>
+                <li>Whether the company is entitled to continue holding the CoR based on the <span class="kw-purple">50-50 Principal Business criteria</span> as of the close of the financial year.</li>
+                <li>Whether the company meets the prescribed minimum <span class="kw-green">Net Owned Fund (NOF)</span> requirement.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Additional Matters for<br>Deposit-Taking NBFCs<br>(NBFC-D)</strong></td>
+            <td>
+              <ul style="margin:0; padding-left:16px; line-height:1.5;">
+                <li>Whether public deposits accepted are within the prescribed statutory ceiling.</li>
+                <li>Whether the credit rating obtained from approved credit rating agencies is valid and in force.</li>
+                <li>Whether the bank has defaulted in payment of interest or repayment of principal to any depositor.</li>
+                <li>Whether the company has maintained <span class="kw-amber">15% liquid assets</span> in approved securities in designated bank custody.</li>
+                <li>Whether the annual return on deposits in Form NBS-1 was filed on time.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Additional Matters for<br>Non-Deposit NBFCs<br>(NBFC-ND)</strong></td>
+            <td>
+              <ul style="margin:0; padding-left:16px; line-height:1.5;">
+                <li>Whether the Board of Directors has passed a formal resolution for <span class="kw-red">non-acceptance of any public deposits</span>.</li>
+                <li>Whether the company has accepted any public deposits during the year under audit.</li>
+                <li>Whether the company has complied with the prudential norms relating to income recognition, accounting standards, asset classification, and provisioning.</li>
+                <li>Whether CRAR / Leverage Ratio has been correctly determined and reported in annual return (NBS-7 / Form SBR).</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- EXCEPTION REPORTING DIRECTLY TO RBI -->
+  <div id="sec-exception-reporting-rbi" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">2. Exception Reporting Directly to the Reserve Bank of India</h3>
+    <div class="callout callout-danger">
+      <div class="callout-title">The Statutory Duty of Exception Reporting under 2016 Directions</div>
+      <p>
+        Where in the case of any NBFC, the statement regarding any of the items specified in the report to the Board of Directors is <span class="kw-red">unfavorable or qualified</span>, or in the opinion of the auditor the company has not complied with:
+      </p>
+      <ul style="margin:6px 0 0 18px; font-size:15.5px; line-height:1.6;">
+        <li>The provisions of the RBI Act, 1934 (Sections 45-IA, 45-IB, 45-IC); OR</li>
+        <li>Any Master Direction or Prudential Regulation issued by the RBI;</li>
+      </ul>
+      <p style="margin-top:8px; font-weight:700;">
+        It shall be the <span class="kw-red">statutory obligation of the auditor to report the fact immediately in writing to the Regional Office of the Reserve Bank of India</span> under whose jurisdiction the registered office of the company is located!
+      </p>
+      <p style="margin-top:6px;">
+        <em>Timing:</em> The auditor cannot wait for the shareholders' meeting or formal presentation of the accounts. The exception report must be submitted to the RBI immediately!
+      </p>
+    </div>
+  </div>
+
+  <!-- CARO 2020 CLAUSE 3(XVI) -->
+  <div id="sec-caro-clause-xvi" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">3. Reporting Under CARO 2020 &ndash; Clause 3(xvi) (The 4 Sub-Clauses)</h3>
+    <p>
+      Clause 3(xvi) of CARO 2020 imposes specific, detailed reporting duties on statutory auditors of all companies regarding NBFC activities:
+    </p>
+
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:20%;">CARO Sub-Clause</th>
+            <th style="width:35%;">Statutory Reporting Mandate</th>
+            <th style="width:45%;">Auditor's Specific Verification Focus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Clause 3(xvi)(a)</strong></td>
+            <td>Whether the company is required to be registered under Section 45-IA of the RBI Act, 1934 and if so, whether the registration has been obtained.</td>
+            <td>Examine 50-50 test. If financial assets &gt; 50% and financial income &gt; 50%, verify whether Certificate of Registration (CoR) is obtained from RBI.</td>
+          </tr>
+          <tr>
+            <td><strong>Clause 3(xvi)(b)</strong></td>
+            <td>Whether the company has conducted any Non-Banking Financial or Housing Finance activities without a valid Certificate of Registration (CoR) from the RBI.</td>
+            <td>Detect unauthorized shadow banking. If an unregistered commercial company conducts substantial lending/investing as principal business, report the breach.</td>
+          </tr>
+          <tr>
+            <td><strong>Clause 3(xvi)(c)</strong></td>
+            <td>Whether the company is a Core Investment Company (CIC) as defined in the regulations by the RBI, and if so, whether it continues to fulfill the criteria of a CIC, and in case of an exempted/unregistered CIC, whether it continues to fulfill such criteria.</td>
+            <td>Verify 90% net assets invested in group companies and 60% in equity shares; verify whether asset size &ge; ₹ 100 Cr and public funds are accessed.</td>
+          </tr>
+          <tr>
+            <td><strong>Clause 3(xvi)(d)</strong></td>
+            <td>Whether the Group has more than one CIC as part of the Group, and if yes, indicate the number of CICs which are part of the Group.</td>
+            <td>Inquire with management, review group corporate structure charts, and state the exact aggregate count of CICs functioning in the corporate group.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE TYU 2 ACCORDION -->
+  <div id="sec-tyu2" class="accordion-item" style="margin-top:20px;">
+    <button class="accordion-header">
+      <span>🔥 TEST YOUR UNDERSTANDING 2: Qualified Statement in Board Report &ndash; Statutory Duty to Report Directly to RBI</span>
+      <span class="accordion-icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <div class="case-study-box">
+        <h4 style="color:#b91c1c; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Exam Case Scenario (TYU 2 &amp; TYK 7)</h4>
+        <p>
+          During the statutory audit of Zen Finance Ltd., a non-deposit taking NBFC in the Base Layer, the auditor noticed that the company failed to maintain the required minimum Net Owned Fund (NOF) of ₹ 2 Crores as of March 31, 2026 due to operating losses. Furthermore, the company failed to create general provision of 0.40% on standard assets.
+        </p>
+        <p style="margin-top:8px;">
+          The management requested the auditor to state these observations in the separate report to the Board of Directors, but insisted that there is no need to inform the Reserve Bank of India since Zen Finance Ltd. does not accept public deposits. <strong>Evaluate the validity of management's contention and explain the auditor's statutory reporting duties.</strong>
+        </p>
+      </div>
+
+      <div class="solution-box" style="margin-top:14px; background:#eff6ff; padding:16px; border-radius:8px; border:1px solid #bfdbfe;">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">ICAI Model Evaluation:</h4>
+        <ol style="font-size:16px; line-height:1.7; margin-left:20px;">
+          <li><span class="kw-red">Management's contention is completely invalid and contrary to law:</span> The obligation to report non-compliances to the RBI applies to <span class="kw-red">ALL NBFCs</span>, whether deposit-taking or non-deposit-taking!</li>
+          <li><span class="kw-blue">Mandatory Exception Reporting:</span> Under paragraph 5 of the NBFC Auditor's Report (Reserve Bank) Directions, 2016, if any statement in the report to the Board is unfavorable or qualified, or if the company has failed to comply with NOF requirements or prudential provisioning norms, the auditor has a <span class="kw-red">strict statutory duty to report the matter immediately in writing to the RBI</span>!</li>
+          <li><strong>Direct Communication:</strong> The auditor must send an Exception Report directly to the Regional Office of the Department of Supervision, RBI, detailing the shortfall in NOF and non-provisioning on standard assets.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 7: IND AS FINANCIAL REPORTING      -->
+<!-- ========================================== -->
+<section id="sec-indas-division3" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 7 &bull; Accounting Standards</span>
+      <h2 class="section-title">Ind AS Schedule III (Division III), ECL vs. IRAC Prudential Floor</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h3 class="card-title">1. Ind AS Financial Statements Presentation (Division III of Schedule III)</h3>
+    <p>
+      All NBFCs covered under the Ind AS roadmap must prepare their Balance Sheet, Statement of Profit and Loss, and Statement of Changes in Equity in accordance with <span class="kw-blue">Division III of Schedule III</span> to the Companies Act, 2013:
+    </p>
+
+    <div class="callout callout-info">
+      <div class="callout-title">Key Distinctive Feature of Division III (Order of Liquidity)</div>
+      <p>
+        Unlike commercial companies under Division II (which classify assets and liabilities into Current and Non-Current), NBFCs under Division III present items in the Balance Sheet <span class="kw-purple">in the Order of Liquidity</span>!
+      </p>
+      <p style="margin-top:6px;">
+        Balance Sheet is divided into <strong>Financial Assets</strong> (Cash, Bank balances, Derivative financial instruments, Receivables, Loans, Investments) and <strong>Non-Financial Assets</strong> (Inventories, Current tax assets, PPE, Intangible assets). Similarly, liabilities are split into <strong>Financial Liabilities</strong> and <strong>Non-Financial Liabilities</strong>.
+      </p>
+    </div>
+  </div>
+
+  <!-- IND AS 109 ECL VS IRAC PRUDENTIAL FLOOR -->
+  <div id="sec-ecl-vs-irac" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">2. Ind AS 109 Expected Credit Loss (ECL) vs. RBI IRAC Prudential Floor</h3>
+    <p>
+      Under Ind AS 109 (Financial Instruments), NBFCs compute impairment allowances using the forward-looking <strong>Expected Credit Loss (ECL)</strong> model across three credit quality stages:
+    </p>
+
+    <div class="grid-3col" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px; margin-top:10px;">
+      <div class="inner-box" style="background:#f0fdf4; border-left:4px solid #047857; padding:12px; border-radius:6px;">
+        <h5 style="color:#047857; font-family:'Patrick Hand', cursive; font-size:18px; margin-top:0;">Stage 1: Performing</h5>
+        <p style="font-size:14px; line-height:1.5;">Overdue &le; 30 days. No significant increase in credit risk since origination. Provision = <span class="kw-green">12-Month Expected Credit Loss</span>.</p>
+      </div>
+
+      <div class="inner-box" style="background:#fffbeb; border-left:4px solid #d97706; padding:12px; border-radius:6px;">
+        <h5 style="color:#d97706; font-family:'Patrick Hand', cursive; font-size:18px; margin-top:0;">Stage 2: Under-Performing (SICR)</h5>
+        <p style="font-size:14px; line-height:1.5;">Overdue 31 to 90 days. Significant Increase in Credit Risk (SICR). Provision = <span class="kw-amber">Lifetime Expected Credit Loss</span>.</p>
+      </div>
+
+      <div class="inner-box" style="background:#fef2f2; border-left:4px solid #b91c1c; padding:12px; border-radius:6px;">
+        <h5 style="color:#b91c1c; font-family:'Patrick Hand', cursive; font-size:18px; margin-top:0;">Stage 3: Credit-Impaired</h5>
+        <p style="font-size:14px; line-height:1.5;">Overdue &gt; 90 days. Default occurred / objective evidence of impairment. Provision = <span class="kw-red">Lifetime Expected Credit Loss</span>.</p>
+      </div>
+    </div>
+
+    <h4 style="font-family:'Patrick Hand', cursive; color:#1e3a8a; font-size:22px; margin-top:20px;">The RBI Prudential Floor &amp; Impairment Reserve</h4>
+    <div class="callout callout-warning">
+      <div class="callout-title">RBI Mandate on Ind AS Implementation &ndash; The Prudential Floor Rule</div>
+      <p>
+        To prevent under-provisioning under statistical ECL models, the RBI mandates that NBFCs must simultaneously compute <span class="kw-blue">provisions required under RBI Prudential IRAC Norms</span>:
+      </p>
+      <ul style="margin:6px 0 0 18px; font-size:15.5px; line-height:1.6;">
+        <li><strong>Comparison:</strong> Compare aggregate Ind AS 109 Impairment Allowance (ECL) against aggregate RBI IRAC Provisioning requirement.</li>
+        <li><strong>Where Ind AS 109 ECL &lt; RBI IRAC Provision:</strong> The shortfall must be transferred from Retained Earnings to a separate <span class="kw-purple">"Impairment Reserve"</span> under Equity! No dividend can be paid out of this reserve.</li>
+        <li><strong>Where Ind AS 109 ECL &ge; RBI IRAC Provision:</strong> No transfer to Impairment Reserve is needed! The higher Ind AS ECL provision stands in the financial statements.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- RELATED PARTY DISCLOSURES UNDER SBR -->
+  <div id="sec-related-party-sbr" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">3. The 5 Mandatory Related Party Loan Disclosures under SBR</h3>
+    <p>
+      To prevent promoter tunneling and unmonitored group fund diversions, the RBI Scale Based Regulation mandates that all NBFCs disclose the following <span class="kw-blue">5 specific related party credit metrics</span> in their financial statement notes:
+    </p>
+
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:12%;">Item #</th>
+            <th style="width:40%;">Mandatory Related Party Loan Disclosure Parameter</th>
+            <th style="width:48%;">Regulatory Purpose &amp; Audit Verification Focus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1</strong></td>
+            <td>Aggregate value of loans sanctioned to related parties during the year.</td>
+            <td>Verify board approval under Section 188 and compliance with arm's length lending rules.</td>
+          </tr>
+          <tr>
+            <td><strong>2</strong></td>
+            <td>Aggregate value of outstanding loans to related parties as on March 31.</td>
+            <td>Confirm closing loan balances and reconciliation with related party master.</td>
+          </tr>
+          <tr>
+            <td><strong>3</strong></td>
+            <td>Percentage of related party loans to total loans and advances of the NBFC.</td>
+            <td>Detect credit concentration risk and excessive promoter-group funding.</td>
+          </tr>
+          <tr>
+            <td><strong>4</strong></td>
+            <td>Aggregate value of outstanding related party loans categorized as SMA and NPA.</td>
+            <td>Identify early stress (SMA-0, SMA-1, SMA-2) and non-performing loans in related party book.</td>
+          </tr>
+          <tr>
+            <td><strong>5</strong></td>
+            <td>Amount of provisions held in respect of loans to related parties.</td>
+            <td>Ensure adequate ECL and IRAC provisioning without under-provisioning related entities.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE TYU 3 ACCORDION -->
+  <div id="sec-tyu3" class="accordion-item" style="margin-top:20px;">
+    <button class="accordion-header">
+      <span>🔥 TEST YOUR UNDERSTANDING 3: ECL Allowance vs. RBI IRAC Provisioning &ndash; Calculation of Impairment Reserve</span>
+      <span class="accordion-icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <div class="case-study-box">
+        <h4 style="color:#b91c1c; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Exam Case Scenario (TYU 3 &amp; TYK 9)</h4>
+        <p>
+          Omega Capital Ltd., an NBFC in the Middle Layer adopting Ind AS, has computed an Expected Credit Loss (ECL) allowance of ₹ 18 Crores under Ind AS 109 as of March 31, 2026. The statutory auditor, during the course of the audit, independently computed the provision required under the RBI Prudential IRAC Norms, which amounted to ₹ 22 Crores.
+        </p>
+        <p style="margin-top:8px;">
+          The management contends that since Ind AS is notified under the Companies Act, 2013 and prevails over RBI guidelines, only the Ind AS 109 provision of ₹ 18 Crores needs to be recognized in the accounts, and no further action is required. <strong>Advise the auditor and evaluate management's contention.</strong>
+        </p>
+      </div>
+
+      <div class="solution-box" style="margin-top:14px; background:#eff6ff; padding:16px; border-radius:8px; border:1px solid #bfdbfe;">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">ICAI Model Evaluation:</h4>
+        <ol style="font-size:16px; line-height:1.7; margin-left:20px;">
+          <li><span class="kw-red">Management's contention is erroneous:</span> While the accounting provision recognized in the Statement of Profit and Loss must follow Ind AS 109 (₹ 18 Crores), the company is bound by the <strong>RBI Prudential Floor Rule</strong>.</li>
+          <li><span class="kw-blue">Computation of Shortfall:</span>
+            <ul style="margin-left:18px;">
+              <li>Provision required under RBI IRAC Norms = <span class="kw-blue">₹ 22 Crores</span>.</li>
+              <li>Impairment allowance computed under Ind AS 109 = <span class="kw-blue">₹ 18 Crores</span>.</li>
+              <li>Shortfall in Provision = ₹ 22 Crores &minus; ₹ 18 Crores = <span class="kw-red">₹ 4 Crores</span>.</li>
+            </ul>
+          </li>
+          <li><span class="kw-purple">Creation of Impairment Reserve:</span> Omega Capital Ltd. MUST transfer the shortfall of <span class="kw-purple">₹ 4 Crores</span> from Retained Earnings to a separate <strong>"Impairment Reserve"</strong> under Equity in the Balance Sheet!</li>
+          <li><strong>Dividend Restriction:</strong> No amount can be distributed as dividend or capitalized from this Impairment Reserve. If management refuses to create this Impairment Reserve, the auditor must issue a qualified audit opinion!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 8: TEST YOUR KNOWLEDGE (SOLUTIONS) -->
+<!-- ========================================== -->
+<section id="sec-tyk" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 8 &bull; ICAI Question Bank</span>
+      <h2 class="section-title">Test Your Knowledge (TYK 1 to 15 &ndash; Full Detailed Solutions)</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <p>
+      The following section provides comprehensive, 100% complete answers to all 15 Test Your Knowledge questions from the official ICAI Study Material for Chapter 14 (Unit 2):
+    </p>
+
+    <!-- TYK 1 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 1: Define NBFC and Describe Types of NBFCs Covering Any Five NBFCs</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>
+          <strong>Definition under Section 45-I(f):</strong> A Non-Banking Financial Company is a financial institution which is a company engaged in lending, investments in shares/securities, hire-purchase, leasing, insurance, or chit business, but excludes entities whose principal business is agriculture, industrial activity, trading in goods, or construction of immovable properties. It must satisfy the <strong>50-50 Principal Business Test</strong> (financial assets &gt; 50% and financial income &gt; 50%).
+        </p>
+        <h5 style="color:#1e3a8a; font-family:'Patrick Hand', cursive; font-size:18px; margin-top:10px;">Five Prominent Types of NBFCs:</h5>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>1. Investment and Credit Company (ICC):</strong> Carries on asset finance and lending as its principal business (consolidated AFC, Investment Co, and Loan Co).</li>
+          <li><strong>2. Infrastructure Finance Company (IFC):</strong> Deploys at least 75% of total assets in infrastructure loans; min NOF ₹ 300 Cr; min credit rating 'A'; CRAR 15%.</li>
+          <li><strong>3. Core Investment Company (CIC):</strong> Holds at least 90% of net assets in equity/debt of group companies (min 60% in equity shares); asset size &ge; ₹ 100 Cr.</li>
+          <li><strong>4. NBFC - Micro Finance Institution (NBFC-MFI):</strong> Non-deposit taking NBFC deploying at least 75% of assets in microfinance loans to low-income households (income &le; ₹ 3 Lakhs) without collateral.</li>
+          <li><strong>5. Peer-to-Peer Lending Platform (NBFC-P2P):</strong> Operates an online marketplace connecting borrowers and lenders; no balance sheet lending or credit guarantees.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 2 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 2: Differentiate Between Commercial Banks and Non-Banking Financial Companies (NBFCs)</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <div class="table-wrap">
+          <table class="notes-table">
+            <thead>
+              <tr>
+                <th style="width:25%;">Comparison Head</th>
+                <th style="width:37%;">Commercial Banks</th>
+                <th style="width:38%;">Non-Banking Financial Companies (NBFCs)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Demand Deposits</strong></td>
+                <td>Can accept demand deposits (savings and current accounts).</td>
+                <td><span class="kw-red">Cannot accept demand deposits</span>; only term deposits for 12 to 60 months.</td>
+              </tr>
+              <tr>
+                <td><strong>Payment &amp; Settlement</strong></td>
+                <td>Integral part of clearing and settlement; issue cheques on self.</td>
+                <td><span class="kw-red">Cannot issue cheques</span> drawn on themselves.</td>
+              </tr>
+              <tr>
+                <td><strong>Deposit Insurance</strong></td>
+                <td>Covered by DICGC up to ₹ 5 Lakhs per depositor.</td>
+                <td><span class="kw-red">No DICGC deposit insurance</span> available.</td>
+              </tr>
+              <tr>
+                <td><strong>Cash Reserve Ratio</strong></td>
+                <td>Mandatory CRR maintenance with RBI under Sec 42 of RBI Act.</td>
+                <td>Not required to maintain CRR balances with the RBI.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TYK 3 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 3: Prudential Norms Relating to Capital Requirements across SBR Layers</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>Base Layer (NBFC-BL):</strong> Governed by a <strong>Leverage Ratio</strong> ceiling of <span class="kw-red">&le; 7</span> (Total Outside Liabilities / Owned Fund). Not subject to CRAR. Not eligible to include perpetual debt in Tier 1.</li>
+          <li><strong>Middle Layer (NBFC-ML):</strong> Mandatory <strong>CRAR of at least 15%</strong> (Tier 1 minimum 10%). Tier 2 capital capped at 100% of Tier 1.</li>
+          <li><strong>Upper Layer (NBFC-UL):</strong> In addition to 15% CRAR, must maintain a minimum <strong>Common Equity Tier 1 (CET1) ratio of 9%</strong>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 4 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 4: Master Audit Checklist for Statutory Audit of an NBFC</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>The auditor must check:</p>
+        <ol style="font-size:15px; line-height:1.6; margin-left:20px;">
+          <li>Certificate of Registration (CoR) issued by RBI under Section 45-IA.</li>
+          <li>Compliance with 50-50 Principal Business criteria as of the balance sheet date.</li>
+          <li>Net Owned Fund (NOF) calculation and compliance with minimum statutory capital.</li>
+          <li>Credit appraisal, board sanction limits, borrower KYC, and CIBIL checks.</li>
+          <li>Security perfection: ROC charge filing, CERSAI registration, Vahan hypothecation.</li>
+          <li>Compliance with public deposit ceiling, credit rating, and 15% liquid asset maintenance (NBFC-D).</li>
+          <li>Harmonized 90-day NPA classification, interest derecognition, and mandatory provisioning.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- TYK 5 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 5: Income Recognition Norms and NPA Criteria across NBFCs under SBR</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li>Under SBR, the NPA overdue threshold across all NBFCs (including Base Layer) is strictly harmonized to <span class="kw-red">more than 90 days</span> for loans, lease rentals, and hire purchase installments.</li>
+          <li>Income on NPAs <span class="kw-red">cannot be recognized on accrual basis</span>; it is recognized strictly on actual cash realization.</li>
+          <li>All unrealized interest income previously accrued on an account that turns into an NPA during the year must be immediately reversed from the Profit &amp; Loss account!</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 6 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 6: Separate Report to the Board of Directors under NBFC Auditor's Report Directions, 2016</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Refer Section 6: The statutory auditor must submit a separate report to the Board of Directors covering: (a) Holding valid CoR; (b) Entitlement to hold CoR based on 50-50 test; (c) Compliance with NOF; (d) Non-acceptance of public deposits and passing board resolution (NBFC-ND); and (e) Compliance with prudential norms on CRAR, income recognition, and provisioning.</p>
+      </div>
+    </div>
+
+    <!-- TYK 7 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 7: Exception Reporting Directly to the RBI under Paragraph 5 of 2016 Directions</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>
+          Under Paragraph 5 of the Directions, if any statement in the report to the Board is unfavorable or qualified, or if the NBFC has failed to comply with NOF requirements or prudential norms, the auditor has a <span class="kw-red">strict statutory duty to report the fact immediately in writing to the Regional Office of the RBI</span>. The auditor cannot withhold this report until the AGM or publication of accounts.
+        </p>
+      </div>
+    </div>
+
+    <!-- TYK 8 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 8: Reporting Under CARO 2020 Clause 3(xvi) Across All 4 Sub-Clauses</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>3(xvi)(a):</strong> Whether the company is required to be registered under Section 45-IA of RBI Act and if registration has been obtained.</li>
+          <li><strong>3(xvi)(b):</strong> Whether the company has conducted non-banking financial or housing finance activities without a valid Certificate of Registration.</li>
+          <li><strong>3(xvi)(c):</strong> Whether the company is a Core Investment Company (CIC) and continues to fulfill the criteria, including exempted/unregistered CICs.</li>
+          <li><strong>3(xvi)(d):</strong> Whether the Group has more than one CIC as part of the Group, indicating the exact count of CICs in the group.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 9 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 9: The 5 Mandatory Related Party Loan Disclosures under SBR</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <ol style="font-size:15px; line-height:1.6; margin-left:20px;">
+          <li>Aggregate value of loans sanctioned to related parties during the year.</li>
+          <li>Aggregate value of outstanding loans to related parties as on March 31.</li>
+          <li>Percentage of related party loans to total loans and advances of the NBFC.</li>
+          <li>Aggregate value of outstanding related party loans categorized as SMA and NPA.</li>
+          <li>Amount of provisions held in respect of loans to related parties.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- TYK 10 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 10: Net Owned Fund (NOF) Statutory Computation Formula under Section 45-IA</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Refer Section 1: Owned Fund = (Paid-up equity + Free reserves + Share premium + Capital reserves) &minus; (Accumulated losses + Deferred revenue exp + Intangible assets). From Owned Fund, deduct the amount by which Specified Group Investments &amp; Exposures (shares, debentures, loans to subsidiaries/group companies) <span class="kw-red">exceeds 10% of Owned Fund</span>.</p>
+      </div>
+    </div>
+
+    <!-- TYK 11 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 11: Classification of Frauds by NBFC and Reporting to RBI in Form FMR-1</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Refer Section 5: Frauds categorized into misappropriation, fraudulent encashment, unauthorized credit facilities, forgery, and cheating. All frauds involving ₹ 1 Lakh and above must be reported to the RBI in Form FMR-1 within 3 weeks of detection. Frauds &ge; ₹ 1 Crore must also be reported to MCA under Section 143(12) in Form ADT-4.</p>
+      </div>
+    </div>
+
+    <!-- TYK 12 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 12: Format of Financial Statements for NBFCs under Ind AS (Division III of Schedule III)</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Refer Section 7: Prepared under Division III of Schedule III. Distinctive feature: presentation in the <span class="kw-purple">Order of Liquidity</span> rather than Current vs. Non-Current split, dividing Balance Sheet into Financial Assets / Non-Financial Assets and Financial Liabilities / Non-Financial Liabilities.</p>
+      </div>
+    </div>
+
+    <!-- TYK 13 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 13: The 3 Stages of Expected Credit Loss (ECL) under Ind AS 109</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Refer Section 7: Stage 1 (Performing &le; 30 days overdue, 12-month ECL); Stage 2 (Under-performing 31-90 days overdue, Significant Increase in Credit Risk, Lifetime ECL); Stage 3 (Credit-Impaired &gt; 90 days overdue, Default, Lifetime ECL).</p>
+      </div>
+    </div>
+
+    <!-- TYK 14 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 14: The RBI Prudential Floor Rule and Creation of "Impairment Reserve"</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Refer Section 7: Where the aggregate impairment allowance computed under Ind AS 109 (ECL) is less than the total provisioning required under RBI Prudential IRAC Norms, the shortfall must be transferred from Retained Earnings to a non-distributable <span class="kw-purple">"Impairment Reserve"</span> under Equity. No dividend can be paid out of this reserve.</p>
+      </div>
+    </div>
+
+    <!-- TYK 15 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 15: Core Investment Company (CIC) Criteria and Statutory Verification</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>A CIC is an NBFC that holds not less than <span class="kw-blue">90% of its net assets</span> in equity shares, preference shares, debentures, or loans of group companies, with at least <span class="kw-blue">60% of net assets</span> in equity shares of group companies. It does not trade in shares/securities (except block sale for dilution) and does not carry on any other financial activity except lending to group companies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 9: MASTER SBR MATRIX & FLASH TRAPS -->
+<!-- ========================================== -->
+<section id="sec-sbr-matrix" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 9 &bull; Revision Accelerator</span>
+      <h2 class="section-title">Master SBR 4-Layer Architecture Matrix &amp; Exam Traps</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h3 class="card-title">Comparative Synthesis: The 4-Layer Scale Based Regulation (SBR)</h3>
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:18%;">SBR Layer</th>
+            <th style="width:25%;">Eligibility &amp; Asset Size</th>
+            <th style="width:27%;">Capital &amp; Leverage Rules</th>
+            <th style="width:30%;">Key Regulatory &amp; Governance Mandates</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Base Layer<br>(NBFC-BL)</strong></td>
+            <td>Non-deposit NBFCs &lt; ₹ 1,000 Cr; P2P, AA, NOFHC, Type I.</td>
+            <td>Leverage Ratio &le; 7 (Total Outside Liabilities / Owned Fund).</td>
+            <td>50-50 principal business test, NOF glide path to ₹ 10 Cr, 90-day NPA overdue norm.</td>
+          </tr>
+          <tr>
+            <td><strong>Middle Layer<br>(NBFC-ML)</strong></td>
+            <td>All Deposit-Taking NBFCs; Non-deposit &ge; ₹ 1,000 Cr; HFCs, CICs, SPDs, IDFs.</td>
+            <td>CRAR min 15% (Tier 1 min 10%).</td>
+            <td>Mandatory Chief Risk Officer (CRO) &amp; CCO, ICAAP, Large Exposure Framework (LEF).</td>
+          </tr>
+          <tr>
+            <td><strong>Upper Layer<br>(NBFC-UL)</strong></td>
+            <td>Top 10 eligible NBFCs by size + Parametric scoring model entities.</td>
+            <td>CRAR min 15% + Common Equity Tier 1 (CET1) min 9%.</td>
+            <td>Bank-like supervision, mandatory listing on stock exchanges within 3 years of classification.</td>
+          </tr>
+          <tr>
+            <td><strong>Top Layer<br>(NBFC-TL)</strong></td>
+            <td>Empty layer (populated if Upper Layer NBFC poses extreme systemic risk).</td>
+            <td>Higher customized capital surcharges.</td>
+            <td>Intrusive supervisory monitoring and higher prudential buffers.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- HIGH-FREQUENCY EXAM FLASH TRAPS -->
+    <div id="sec-exam-traps" class="callout callout-danger" style="margin-top:20px;">
+      <div class="callout-title">⚠️ High-Frequency NBFC Exam Flash Traps &amp; Pitfalls</div>
+      <ul style="margin:0; padding-left:18px; font-size:16px; line-height:1.7;">
+        <li><span class="kw-red">Trap 1 (50-50 Test Strictly Greater Than):</span> Believing that exactly 50% financial assets qualifies. <em>Fact:</em> The statutory rule requires financial assets to be <span class="kw-red">MORE THAN 50%</span> (&gt; 50.00%)! Exactly 50.00% FAILS the test!</li>
+        <li><span class="kw-blue">Trap 2 (Deposit-Taking SBR Layer):</span> Classifying a small deposit-taking NBFC with ₹ 100 Cr assets into Base Layer. <em>Fact:</em> <span class="kw-red">ALL deposit-taking NBFCs (NBFC-D)</span> are mandatorily placed in the <strong>Middle Layer</strong>, regardless of asset size!</li>
+        <li><span class="kw-purple">Trap 3 (Exception Reporting to RBI):</span> Assuming exception reporting is only for deposit-taking NBFCs. <em>Fact:</em> The duty to report unfavorable/qualified statements to the RBI applies to <span class="kw-red">ALL NBFCs</span> under the 2016 Directions!</li>
+        <li><span class="kw-green">Trap 4 (Ind AS ECL vs. IRAC Floor):</span> Overlooking the Impairment Reserve. <em>Fact:</em> If Ind AS 109 ECL is lower than RBI IRAC provision, the shortfall must be transferred to <span class="kw-purple">Impairment Reserve</span> from retained earnings!</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- BOTTOM NAVIGATION                          -->
+<!-- ========================================== -->
+<div class="bottom-nav">
+  <a href="bank_audit.html" class="nav-btn prev-btn">
+    <span class="nav-arrow">&larr;</span>
+    <span class="nav-text">
+      <span class="nav-sub">Previous Unit</span>
+      <span class="nav-title">Chapter 14 (U1): Audit of Banks</span>
+    </span>
+  </a>
+
+  <a href="../../notes/audnotes.html" class="nav-btn hub-btn">
+    <span class="nav-text">
+      <span class="nav-sub">CA Final Audit</span>
+      <span class="nav-title">Master Hub &amp; Index</span>
+    </span>
+  </a>
+
+  <a href="psu_audit.html" class="nav-btn next-btn">
+    <span class="nav-text">
+      <span class="nav-sub">Next Chapter</span>
+      <span class="nav-title">Chapter 15: Audit of PSUs (C&amp;AG)</span>
+    </span>
+    <span class="nav-arrow">&rarr;</span>
+  </a>
+</div>
+
+</main>
+</div>
+
+<!-- ========================================== -->
+<!-- SCRIPTS & INTERACTIVITY                   -->
+<!-- ========================================== -->
+<script>
+  // 1. Reading Progress Bar
+  window.addEventListener('scroll', () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    const progressBar = document.getElementById('readingProgress');
+    if (progressBar) {
+      progressBar.style.width = scrolled + '%';
+    }
+  });
+
+  // 2. Mobile Sidebar Toggle
+  const sidebarToggle = document.getElementById('sidebarToggle');
+  const sidebar = document.getElementById('sidebar');
+  if (sidebarToggle && sidebar) {
+    sidebarToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+  }
+
+  // 3. Interactive Accordion Toggle
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      item.classList.toggle('open');
+      const icon = header.querySelector('.accordion-icon');
+      if (icon) {
+        icon.textContent = item.classList.contains('open') ? '−' : '+';
+      }
+    });
+  });
+
+  // 4. Scrollspy for Active Sidebar Links
+  window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    let current = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      if (window.pageYOffset >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>

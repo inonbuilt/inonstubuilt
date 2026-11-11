@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 15: Audit of Public Sector Undertakings (PSUs) - Quick Revision Notes | CA Final Audit | Calcium Notes</title>
+
+    <meta name="title" content="Chapter 15: Audit of Public Sector Undertakings (PSUs) - Quick Revision Notes | CA Final Audit | Calcium Notes">
+    <meta name="description" content="CA Final Audit Chapter 15 Quick Notes: High-speed revision for PSU Audit: C&AG Constitutional role, Articles 148-151, Sec 139/143 of Companies Act, Comprehensive Audit, and 3Es Audit.">
+    <meta name="keywords" content="CA Final Audit, Chapter 15: Audit of Public Sector Undertakings (PSUs), Fast Track Notes, Quick Revision, Standards on Auditing, ICAI New Scheme, Calcium Notes">
+    <meta name="author" content="Calcium Notes">
+    <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/Audit/psu_audit_quick.html">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" href="../../../fevicol.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-canvas: #fdfbf7;
+            --surface: #ffffff;
+            --text-primary: #000000;
+            --text-secondary: #334155;
+            --heading-one-color: #1e3a8a;
+            --subheading-one-color: #0284c7;
+            --border-color: #cbd5e1;
+            --card-bg: #ffffff;
+            --table-header: #f1f5f9;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --warning-bg: #fffbeb;
+            --warning-border: #f59e0b;
+            --warning-text: #92400e;
+            
+            --notes-body: 'Kalam', cursive;
+            --notes-heading: 'Patrick Hand', cursive;
+            --notes-highlight: 'Caveat', cursive;
+            --notes-table: Arial, sans-serif;
+        }
+
+        [data-theme="dark"] {
+            --bg-canvas: #090d16;
+            --surface: #0f172a;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --heading-one-color: #60a5fa;
+            --subheading-one-color: #38bdf8;
+            --border-color: #1e293b;
+            --card-bg: #0f172a;
+            --table-header: #1e293b;
+            --warning-bg: #1c1917;
+            --warning-border: #d97706;
+            --warning-text: #fde68a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg-canvas);
+            color: var(--text-primary);
+            font-family: var(--notes-body) !important;
+            font-size: 17.5px;
+            line-height: 1.68;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        strong, b { font-weight: 700; }
+        .k-blue { color: #1e40af; font-weight: 700; }
+        .k-red { color: #b91c1c; font-weight: 700; }
+        .k-green { color: #047857; font-weight: 700; }
+        .k-purple { color: #7c3aed; font-weight: 700; }
+        .k-amber { color: #d97706; font-weight: 700; }
+
+        h1, h2, h3, h4, .chapter-title, .section-title {
+            font-family: var(--notes-heading) !important;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+        }
+
+        h1, h2 { color: var(--heading-one-color) !important; }
+        h3, h4 { color: var(--subheading-one-color) !important; }
+
+        .highlight-title {
+            font-family: var(--notes-highlight) !important;
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+        table, th, td, .styled-table {
+            font-family: var(--notes-table) !important;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: var(--surface);
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 24px 16px;
+            flex-shrink: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .sidebar * {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .sidebar-brand {
+            font-size: 15px;
+            font-weight: 800;
+            color: var(--heading-one-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .theme-toggle {
+            background: none;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 4px 8px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .nav-group-title {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #64748b;
+            margin: 16px 0 8px 6px;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 7px 10px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.15s;
+            line-height: 1.4;
+        }
+
+        .nav-link:hover {
+            background: rgba(37, 99, 235, 0.08);
+            color: var(--accent);
+        }
+
+        .nav-link.active {
+            background: #eff6ff;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .main-wrapper {
+            flex: 1;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 36px 32px 64px;
+        }
+
+        .breadcrumbs {
+            font-size: 13.5px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+            color: #64748b;
+            margin-bottom: 12px;
+        }
+
+        .breadcrumbs a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .header-section {
+            margin-bottom: 24px;
+        }
+
+        .header-section h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .chapter-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .chapter-pill {
+            background: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #bfdbfe;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-weight: 700;
+        }
+
+        .mode-bar {
+            display: flex;
+            gap: 10px;
+            margin: 22px 0 32px 0;
+            background: #f1f5f9;
+            padding: 6px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .mode-btn {
+            flex: 1;
+            text-align: center;
+            padding: 10px 16px;
+            font-size: 13.5px;
+            font-weight: 700;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .mode-btn.active {
+            background: #2563eb;
+            color: #ffffff;
+            box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+        }
+
+        .mode-btn:not(.active) {
+            color: #475569;
+            background: transparent;
+        }
+
+        .mode-btn:not(.active):hover {
+            background: rgba(255, 255, 255, 0.6);
+            color: #0f172a;
+        }
+
+        .quick-card {
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 26px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            scroll-margin-top: 20px;
+        }
+
+        .quick-card h2 {
+            font-size: 24px;
+            margin-bottom: 14px;
+            border-bottom: 1.5px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .quick-card h3 {
+            font-size: 20px;
+            margin: 18px 0 8px 0;
+        }
+
+        p { margin-bottom: 12px; }
+        ul, ol { margin-left: 24px; margin-bottom: 14px; }
+        li { margin-bottom: 6px; }
+
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14.5px;
+            line-height: 1.5;
+            background: var(--surface);
+        }
+
+        .styled-table th {
+            background: #1e3a8a;
+            color: #ffffff;
+            padding: 10px 14px;
+            text-align: left;
+            border: 1px solid #3b82f6;
+            font-weight: 700;
+        }
+
+        .styled-table td {
+            padding: 10px 14px;
+            border: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        .styled-table tr:nth-child(even) {
+            background-color: rgba(241, 245, 249, 0.5);
+        }
+
+        .callout {
+            border-left: 4px solid;
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+            background: rgba(248, 250, 252, 0.7);
+        }
+
+        .callout-blue { border-left-color: var(--accent); background: #eff6ff; }
+        .callout-green { border-left-color: #047857; background: #f0fdf4; }
+        .callout-amber { border-left-color: #d97706; background: #fffbeb; }
+        .callout-red { border-left-color: #b91c1c; background: #fef2f2; }
+        .callout-purple { border-left-color: #7c3aed; background: #faf5ff; }
+
+        .callout-title {
+            font-family: var(--notes-highlight) !important;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .callout-blue .callout-title { color: var(--accent); }
+        .callout-green .callout-title { color: #047857; }
+        .callout-amber .callout-title { color: #d97706; }
+        .callout-red .callout-title { color: #b91c1c; }
+        .callout-purple .callout-title { color: #7c3aed; }
+
+        .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-top: 36px;
+            padding: 18px 24px;
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-size: 13.5px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .prev-btn { background: #f1f5f9; color: #1e293b; border: 1px solid var(--border-color); }
+        .prev-btn:hover { background: #e2e8f0; }
+        .next-btn { background: #2563eb; color: #ffffff; }
+        .next-btn:hover { background: #1d4ed8; }
+        .hub-btn { background: #047857; color: #ffffff; }
+        .hub-btn:hover { background: #065f46; }
+
+        @media (max-width: 900px) {
+            body { flex-direction: column; }
+            .sidebar { width: 100%; height: auto; position: static; border-right: none; border-bottom: 1px solid var(--border-color); }
+            .main-wrapper { padding: 20px 16px; }
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="sidebar-brand">
+            <span>⚡ Calcium Quick Audit</span>
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">☀️/🌙</button>
+        </div>
+
+        <div class="nav-group-title">Chapter Navigation</div>
+        <a href="#sec-cag-mandate" class="nav-link">1. Constitutional Mandate (Art 148–151)</a>
+        <a href="#sec-govt-co-auditor" class="nav-link">2. Appointment & Supplementary Audit</a>
+        <a href="#sec-comprehensive-3es" class="nav-link">3. Comprehensive Audit & The 3Es</a>
+        <a href="#sec-propriety-audit" class="nav-link">4. Propriety Audit & PAC/COPU</a>
+
+        <div class="nav-group-title">Portal Hubs</div>
+        <a href="../../notes/audquicknotes.html" class="nav-link">&larr; ⚡ Audit Quick Notes Hub</a>
+        <a href="../../notes/audnotes.html" class="nav-link">&larr; 📖 Audit Full Notes Hub</a>
+        <a href="../../notes/notes.html" class="nav-link">&larr; 🏠 Notes Home</a>
+    </nav>
+
+    <main class="main-wrapper">
+        <div class="breadcrumbs">
+            <a href="../../notes/notes.html">Home</a> &gt; 
+            <a href="../../notes/audquicknotes.html">CA Final Audit</a> &gt; 
+            <span>Chapter 15 Quick Notes</span>
+        </div>
+
+        <header class="header-section">
+            <span class="chapter-pill">CA Final Paper 3 &bull; Module 3: Specialised Audits & Ethics</span>
+            <h1 style="margin-top: 10px;">Chapter 15: Audit of Public Sector Undertakings (PSUs)</h1>
+            <div class="chapter-meta">
+                <span class="chapter-pill">⚡ Fast-Track High-Yield Revision</span>
+                <span>ICAI New Scheme 2026&ndash;2027</span>
+            </div>
+        </header>
+
+        <!-- Mode Bar Switcher -->
+        <div class="mode-bar">
+            <a href="psu_audit_quick.html" class="mode-btn active">⚡ Fast-Track Quick Notes</a>
+            <a href="psu_audit.html" class="mode-btn">📖 Full In-Depth Notes (Theory + TYKs)</a>
+        </div>
+
+        
+        <section id="sec-cag-mandate" class="quick-card">
+            <h2>1. Constitutional Role of C&AG (Articles 148 to 151)</h2>
+            <p>The Comptroller and Auditor General of India (<span class="k-blue">C&AG</span>) is an independent constitutional authority appointed by the President of India.</p>
+
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Constitutional Article</th>
+                        <th>Mandate / Provision</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="k-blue">Article 148</span></td>
+                        <td>Appointment, oath, and conditions of service of C&AG (tenure of 6 years or age 65; removal on same grounds as Supreme Court Judge).</td>
+                    </tr>
+                    <tr>
+                        <td><span class="k-purple">Article 149</span></td>
+                        <td>Duties and powers of C&AG prescribed by Parliament under the <strong>CAG's (DPC) Act, 1971</strong> (Duties, Powers and Conditions of Service).</td>
+                    </tr>
+                    <tr>
+                        <td><span class="k-amber">Article 150</span></td>
+                        <td>Form of accounts of the Union and the States prescribed by President on advice of C&AG.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="k-green">Article 151</span></td>
+                        <td>C&AG submits audit reports relating to Union to the President (placed before Parliament) and relating to States to Governors (placed before State Legislatures).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="sec-govt-co-auditor" class="quick-card">
+            <h2>2. Appointment of Auditor & C&AG Audit Mechanism</h2>
+            <div class="callout callout-blue">
+                <div class="callout-title">Government Company Definition (Sec 2(45))</div>
+                <p>Any company in which not less than <span class="k-blue">51%</span> of the paid-up share capital is held by the Central Govt, or by any State Govt(s), or partly by Central and partly by State Govt(s), and includes a subsidiary of a Government Company.</p>
+            </div>
+
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Statutory Mechanism</th>
+                        <th>Section & Specific Mandate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Appointment of Auditor</strong></td>
+                        <td>• <strong>Sec 139(7) First Auditor:</strong> Appointed by C&AG within <span class="k-blue">60 days</span> of registration. If C&AG fails, Board appoints in next 30 days, else EGM in 60 days.<br>
+                        • <strong>Sec 139(5) Subsequent Auditor:</strong> Appointed by C&AG within <span class="k-blue">180 days</span> from commencement of financial year.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>C&AG Directions (Sec 143(5))</strong></td>
+                        <td>C&AG directs statutory auditor on the manner in which accounts shall be audited. Auditor submits report to C&AG including directions compliance.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Supplementary Audit (Sec 143(6))</strong></td>
+                        <td>C&AG has the right to conduct a supplementary audit within <span class="k-red">60 days</span> from the date of receipt of statutory audit report. C&AG comments are placed before AGM.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Test Audit (Sec 143(7))</strong></td>
+                        <td>C&AG may, by general or special order, cause a test audit to be conducted on company accounts.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="sec-comprehensive-3es" class="quick-card">
+            <h2>3. Comprehensive Audit & The 3Es Framework</h2>
+            <p>Comprehensive audit evaluates the overall efficiency, operational performance, and public objectives achievement.</p>
+
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Pillar of 3Es</th>
+                        <th>Core Audit Question</th>
+                        <th>Focus Area</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="k-green">Economy</span></td>
+                        <td>Were inputs acquired at the lowest possible cost without compromising quality?</td>
+                        <td>Procurement procedures, tender negotiations, minimizing input costs, timely acquisition.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="k-blue">Efficiency</span></td>
+                        <td>Was the maximum possible output achieved with the minimum input resources?</td>
+                        <td>Capacity utilization, plant productivity, reducing downtime, optimizing labor and material usage.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="k-purple">Effectiveness</span></td>
+                        <td>Did the program/activity achieve its intended social and financial objectives?</td>
+                        <td>Outcomes vs targets, delivery of public benefits, fulfillment of socio-economic objectives.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="sec-propriety-audit" class="quick-card">
+            <h2>4. Propriety Audit & Parliamentary Committees</h2>
+            
+            <div class="callout callout-amber">
+                <div class="callout-title">Propriety Audit Concept</div>
+                <p>Propriety audit goes beyond mere vouchers and legality to examine whether public expenditure was incurred with <span class="k-amber">wisdom, faithfulness, and economy</span>. It checks: (1) Expenditure is not prima facie more than the occasion demands; (2) Authority does not exercise power to pass an order directly or indirectly to its own advantage; (3) Public funds not utilized for the benefit of a particular person or community unless recognized by law.</p>
+            </div>
+
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Parliamentary Committee</th>
+                        <th>Role in Scrutinizing C&AG Reports</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Public Accounts Committee (PAC)</strong></td>
+                        <td>Examines appropriation accounts and annual financial accounts of Union, and C&AG audit reports on civil/defense expenditures.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Committee on Public Undertakings (COPU)</strong></td>
+                        <td>Examines reports and accounts of Public Sector Undertakings (PSUs) and C&AG reports on PSUs to evaluate commercial soundness and efficiency.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
+
+        <!-- Bottom Navigation -->
+        <div class="bottom-nav">
+            <a href="nbfc_audit_quick.html" class="nav-btn prev-btn">&larr; Ch 14 U2 NBFC Audit</a>
+            <a href="../../notes/audquicknotes.html" class="nav-btn hub-btn">Audit Quick Hub</a>
+            <a href="internal_audit_quick.html" class="nav-btn next-btn">Ch 16 Internal Audit &rarr;</a>
+        </div>
+
+    </main>
+
+    <script>
+        function toggleTheme() {
+            const current = document.documentElement.getAttribute('data-theme');
+            const target = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', target);
+            localStorage.setItem('calcium_theme', target);
+        }
+        const savedTheme = localStorage.getItem('calcium_theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+    </script>
+
+</body>
+</html>

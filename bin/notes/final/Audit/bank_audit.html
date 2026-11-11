@@ -1,0 +1,2284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 14 (Unit 1): Special Features of Audit of Banks &ndash; CA Final Audit Revision Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Kalam:wght@300;400;700&family=Patrick+Hand&family=Patrick+Hand+SC&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-blue: #1e3a8a;
+      --accent-blue: #0284c7;
+      --primary-green: #047857;
+      --accent-red: #b91c1c;
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --bg-canvas: #f8fafc;
+      --card-bg: #ffffff;
+      --border-color: #cbd5e1;
+      --text-main: #000000;
+      --text-muted: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Kalam', cursive;
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--text-main);
+      background-color: var(--bg-canvas);
+      background-image: 
+        radial-gradient(#e2e8f0 1.5px, transparent 1.5px),
+        radial-gradient(#f1f5f9 1.5px, #f8fafc 1.5px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+      padding-top: 56px;
+    }
+
+    /* Top Reading Progress Bar */
+    .reading-progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 4px;
+      background: linear-gradient(90deg, #1e3a8a, #0284c7, #047857);
+      z-index: 1000;
+      transition: width 0.1s ease-out;
+    }
+
+    /* Topbar */
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 56px;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 2px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      z-index: 999;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .sidebar-toggle-btn {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: 16px;
+      display: none;
+    }
+
+    .topbar-brand {
+      font-family: 'Patrick Hand SC', cursive;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .topbar-pill {
+      font-family: 'Caveat', cursive;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: #eff6ff;
+      color: var(--primary-blue);
+      border: 1px solid #bfdbfe;
+    }
+
+    .hub-link-btn {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 16px;
+      padding: 5px 14px;
+      border-radius: 6px;
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      color: #1e3a8a;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .hub-link-btn:hover {
+      background: #e2e8f0;
+      color: #0f172a;
+    }
+
+    /* Layout Wrapper */
+    .app-layout {
+      display: flex;
+      max-width: 1560px;
+      margin: 0 auto;
+      padding: 20px;
+      gap: 28px;
+    }
+
+    /* Sidebar Navigation */
+    .sidebar {
+      width: 320px;
+      flex-shrink: 0;
+      position: sticky;
+      top: 76px;
+      height: calc(100vh - 96px);
+      overflow-y: auto;
+      background: #ffffff;
+      border: 2px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 18px 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+
+    .sidebar-title {
+      font-family: 'Patrick Hand SC', cursive;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .nav-item a {
+      display: block;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 16px;
+      color: #334155;
+      text-decoration: none;
+      padding: 7px 12px;
+      border-radius: 8px;
+      transition: all 0.15s ease-in-out;
+      line-height: 1.35;
+    }
+
+    .nav-item a:hover {
+      background: #eff6ff;
+      color: var(--primary-blue);
+      transform: translateX(4px);
+    }
+
+    .nav-item a.active {
+      background: #dbeafe;
+      color: #1e3a8a;
+      font-weight: 700;
+      border-left: 4px solid #1e40af;
+    }
+
+    /* Main Content Area */
+    .main-content {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 60%, #0369a1 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: 32px 36px;
+      box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-banner::after {
+      content: "BANK AUDIT";
+      position: absolute;
+      right: 20px;
+      bottom: -15px;
+      font-family: 'Patrick Hand SC', cursive;
+      font-size: 90px;
+      color: rgba(255, 255, 255, 0.07);
+      pointer-events: none;
+      font-weight: 700;
+    }
+
+    .hero-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .hero-badge {
+      font-family: 'Caveat', cursive;
+      font-size: 19px;
+      font-weight: 700;
+      padding: 2px 12px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .hero-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 38px;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    }
+
+    .hero-subtitle {
+      font-size: 19px;
+      line-height: 1.6;
+      color: #e0f2fe;
+      max-width: 950px;
+    }
+
+    /* Cards & Section Boxes */
+    .content-card {
+      background: #ffffff;
+      border: 2px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 28px 32px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+
+    .card-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-header {
+      margin-bottom: 20px;
+    }
+
+    .section-badge {
+      display: inline-block;
+      font-family: 'Caveat', cursive;
+      font-size: 19px;
+      font-weight: 700;
+      padding: 2px 12px;
+      border-radius: 8px;
+      background: #eff6ff;
+      color: var(--primary-blue);
+      border: 1px solid #bfdbfe;
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 32px;
+      color: #0f172a;
+      line-height: 1.3;
+    }
+
+    /* Colored Keyword Spans */
+    .kw-blue { color: #1e40af; font-weight: 700; }
+    .kw-red { color: #b91c1c; font-weight: 700; }
+    .kw-green { color: #047857; font-weight: 700; }
+    .kw-purple { color: #7c3aed; font-weight: 700; }
+    .kw-amber { color: #d97706; font-weight: 700; }
+
+    /* Callout Boxes */
+    .callout {
+      border-left: 5px solid;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 18px 0;
+      font-size: 17px;
+    }
+
+    .callout-info {
+      background: #eff6ff;
+      border-color: #3b82f6;
+      color: #1e3a8a;
+    }
+
+    .callout-warning {
+      background: #fffbeb;
+      border-color: #f59e0b;
+      color: #92400e;
+    }
+
+    .callout-danger {
+      background: #fef2f2;
+      border-color: #ef4444;
+      color: #991b1b;
+    }
+
+    .callout-success {
+      background: #f0fdf4;
+      border-color: #10b981;
+      color: #065f46;
+    }
+
+    .callout-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 21px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    /* Tables (Strictly Arial/Sans-serif) */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 18px 0;
+      border-radius: 10px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .notes-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-size: 14.5px;
+      line-height: 1.5;
+      text-align: left;
+    }
+
+    .notes-table th {
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 700;
+      padding: 12px 14px;
+      border-bottom: 2px solid #cbd5e1;
+      border-right: 1px solid #e2e8f0;
+    }
+
+    .notes-table td {
+      padding: 11px 14px;
+      border-bottom: 1px solid #e2e8f0;
+      border-right: 1px solid #e2e8f0;
+      vertical-align: top;
+      color: #1e293b;
+    }
+
+    .notes-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .notes-table tr:hover td {
+      background: #f8fafc;
+    }
+
+    /* Interactive Accordions */
+    .accordion-item {
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    }
+
+    .accordion-header {
+      width: 100%;
+      text-align: left;
+      padding: 14px 18px;
+      background: #f8fafc;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 19px;
+      font-weight: 700;
+      color: #0f172a;
+      transition: background 0.15s ease-in-out;
+    }
+
+    .accordion-header:hover {
+      background: #f1f5f9;
+      color: #1e40af;
+    }
+
+    .accordion-icon {
+      font-size: 20px;
+      font-weight: bold;
+      color: #64748b;
+      transition: transform 0.2s ease;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 20px 22px;
+      border-top: 1px solid #e2e8f0;
+      background: #ffffff;
+      font-size: 17px;
+    }
+
+    .accordion-item.open .accordion-content {
+      display: block;
+    }
+
+    .accordion-item.open .accordion-icon {
+      transform: rotate(45deg);
+      color: #b91c1c;
+    }
+
+    /* Process Flows & Step Boxes */
+    .process-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 16px 0;
+    }
+
+    .flow-step {
+      background: #f8fafc;
+      border-left: 4px solid var(--accent-blue);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+    }
+
+    .flow-step .step-num {
+      font-family: 'Caveat', cursive;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--accent-blue);
+    }
+
+    .flow-step .step-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 21px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+
+    .flow-step .step-desc {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    /* Case Study Card Box */
+    .case-study-box {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-left: 5px solid #047857;
+      border-radius: 8px;
+      padding: 18px 22px;
+      margin: 18px 0;
+    }
+
+    /* Bottom Navigation */
+    .bottom-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 2px solid #e2e8f0;
+    }
+
+    .nav-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      color: #0f172a;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 18px;
+      transition: all 0.2s ease;
+      flex: 1;
+      max-width: 320px;
+    }
+
+    .nav-btn:hover {
+      background: #eff6ff;
+      border-color: #3b82f6;
+      color: #1e40af;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .nav-btn.hub-btn {
+      justify-content: center;
+      text-align: center;
+      max-width: 220px;
+    }
+
+    .nav-btn.next-btn {
+      justify-content: flex-end;
+      text-align: right;
+      margin-left: auto;
+    }
+
+    .nav-arrow {
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .nav-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-sub {
+      font-family: 'Caveat', cursive;
+      font-size: 15px;
+      color: #64748b;
+      line-height: 1.2;
+    }
+
+    .nav-title {
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    @media (max-width: 1024px) {
+      .sidebar {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 56px;
+        bottom: 0;
+        z-index: 998;
+        width: 280px;
+        border-radius: 0;
+        border-right: 2px solid #cbd5e1;
+      }
+      .sidebar.active {
+        display: block;
+      }
+      .sidebar-toggle-btn {
+        display: block;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .app-layout {
+        padding: 12px;
+      }
+      .content-card {
+        padding: 20px 16px;
+      }
+      .hero-banner {
+        padding: 24px 20px;
+      }
+      .hero-title {
+        font-size: 28px;
+      }
+      .bottom-nav {
+        flex-direction: column;
+      }
+      .nav-btn {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Reading Progress Bar -->
+<div class="reading-progress-bar" id="readingProgress"></div>
+
+<!-- Sticky Topbar -->
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="sidebar-toggle-btn" id="sidebarToggle" aria-label="Toggle Navigation">&#9776; Index</button>
+    <a href="../../notes/audnotes.html" class="topbar-brand">
+      <span>CA Final &bull; Advanced Auditing</span>
+    </a>
+  </div>
+  <div class="topbar-right">
+    <span class="topbar-pill">Ch 14 (U1): Audit of Banks</span>
+    <a href="../../notes/audnotes.html" class="hub-link-btn">Back to Hub &rarr;</a>
+  </div>
+</header>
+
+<!-- Application Layout -->
+<div class="app-layout">
+
+  <!-- Left Sidebar Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-title">
+      <span>Chapter Directory</span>
+      <span style="font-size: 14px; color:#64748b;">Ch 14 (U1) Index</span>
+    </div>
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#sec-intro-legal" class="nav-link active">1. Regulatory Framework of Banks</a></li>
+      <li class="nav-item"><a href="#sec-financial-statements" class="nav-link">2. Third Schedule (Form A &amp; B)</a></li>
+      <li class="nav-item"><a href="#sec-auditor-appointment" class="nav-link">3. Appointment &amp; Powers of Auditors</a></li>
+      <li class="nav-item"><a href="#sec-internal-controls" class="nav-link">4. Internal Controls in Selected Areas</a></li>
+      <li class="nav-item"><a href="#sec-crr-slr" class="nav-link">5. CRR &amp; SLR Compliance (NDTL)</a></li>
+      <li class="nav-item"><a href="#sec-verification-cash-invest" class="nav-link">6. Cash, Bank Balances &amp; Investments</a></li>
+      <li class="nav-item"><a href="#sec-verification-advances" class="nav-link">7. Advances (Funded &amp; Non-Funded)</a></li>
+      <li class="nav-item"><a href="#sec-irac-npa-norms" class="nav-link">8. RBI IRAC Norms &amp; NPA Criteria</a></li>
+      <li class="nav-item"><a href="#sec-asset-classification-provisioning" class="nav-link">9. Classification &amp; Provisioning Matrix</a></li>
+      <li class="nav-item"><a href="#sec-special-advances-cases" class="nav-link">10. Special Advances (Govt Guarantees)</a></li>
+      <li class="nav-item"><a href="#sec-tyu1" class="nav-link">11. TYU 1: Credit Appraisal &amp; LFAR</a></li>
+      <li class="nav-item"><a href="#sec-other-assets-nonbanking" class="nav-link">12. Other Assets &amp; Section 9 Non-Banking</a></li>
+      <li class="nav-item"><a href="#sec-capital-basel3" class="nav-link">13. Capital Adequacy &amp; BASEL III</a></li>
+      <li class="nav-item"><a href="#sec-liabilities-deposits" class="nav-link">14. Deposits, Inactive Accounts &amp; DEAF</a></li>
+      <li class="nav-item"><a href="#sec-contingent-liabilities" class="nav-link">15. Contingent Liabilities &amp; Claims</a></li>
+      <li class="nav-item"><a href="#sec-audit-report-lfar" class="nav-link">16. Auditor's Report &amp; LFAR Protocols</a></li>
+      <li class="nav-item"><a href="#sec-fraud-reporting-rbi" class="nav-link">17. Fraud Reporting to RBI &amp; RFAs</a></li>
+      <li class="nav-item"><a href="#sec-concurrent-audit" class="nav-link">18. Concurrent Audit System</a></li>
+      <li class="nav-item"><a href="#sec-audit-committee" class="nav-link">19. Audit Committee of Board (ACB)</a></li>
+      <li class="nav-item"><a href="#sec-tyu2" class="nav-link">20. TYU 2: Revenue Audit &amp; Fees</a></li>
+      <li class="nav-item"><a href="#sec-tyu3" class="nav-link">21. TYU 3: Stock Auditor Negligence</a></li>
+      <li class="nav-item"><a href="#sec-tyk" class="nav-link">22. Test Your Knowledge (TYK 1-28)</a></li>
+      <li class="nav-item"><a href="#sec-master-matrix" class="nav-link">23. Master IRAC Provisioning Matrix</a></li>
+      <li class="nav-item"><a href="#sec-exam-traps" class="nav-link">24. High-Frequency Bank Exam Traps</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content Column -->
+  <main class="main-content">
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+      <div class="hero-badge-row">
+        <span class="hero-badge">CA Final Paper 3</span>
+        <span class="hero-badge">Advanced Auditing &amp; Professional Ethics</span>
+        <span class="hero-badge">Module 3 &bull; Chapter 14 (Unit 1)</span>
+        <span class="hero-badge">100% ICAI Study Material Coverage</span>
+      </div>
+      <h1 class="hero-title">Special Features of Audit of Banks</h1>
+      <p class="hero-subtitle">
+        Comprehensive master revision notes covering the Banking Regulation Act, 1949, Third Schedule Forms A &amp; B, RBI IRAC Prudential Norms on Income Recognition, Asset Classification &amp; Provisioning, CRR/SLR Compliance, Basel III Capital Framework, Long Form Audit Report (LFAR), Concurrent Audit, and RBI Fraud Reporting.
+      </p>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- SECTION 1: REGULATORY FRAMEWORK OF BANKS   -->
+    <!-- ========================================== -->
+    <section id="sec-intro-legal" class="audit-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-badge">Section 1 &bull; Regulatory Landscape</span>
+          <h2 class="section-title">Regulatory Framework &amp; Peculiarities of Banking</h2>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3 class="card-title">1. Legal &amp; Regulatory Framework Governing Banks in India</h3>
+        <p>
+          Banking institutions in India operate under a comprehensive, multi-tiered regulatory architecture overseen by the <strong>Reserve Bank of India (RBI)</strong>:
+        </p>
+
+        <div class="grid-2col" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:12px;">
+          <div class="inner-box" style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:10px; padding:16px;">
+            <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Key Enactments Governing Banks</h4>
+            <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+              <li><span class="kw-blue">Banking Regulation Act, 1949 (BR Act):</span> Primary statute governing licensing, management, accounting formats, and audit of banks.</li>
+              <li><span class="kw-blue">Reserve Bank of India Act, 1934 (RBI Act):</span> Central banking functions, monetary policy, and Cash Reserve Ratio (CRR).</li>
+              <li><span class="kw-purple">State Bank of India Act, 1955:</span> Specific governance for SBI.</li>
+              <li><span class="kw-purple">Banking Companies (Acquisition and Transfer of Undertakings) Acts, 1970/1980:</span> Governing Nationalized Banks.</li>
+              <li><span class="kw-green">Companies Act, 2013:</span> Applies to banking companies to the extent not inconsistent with the BR Act.</li>
+              <li><span class="kw-amber">Payment and Settlement Systems Act, 2007:</span> Electronic clearing, RTGS, NEFT, UPI systems.</li>
+            </ul>
+          </div>
+
+          <div class="inner-box" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:10px; padding:16px;">
+            <h4 style="color:#0f172a; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Peculiar Operating Features of Banking Business</h4>
+            <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+              <li><span class="kw-red">Voluminous Transactions:</span> Massive volume of daily financial transactions processed electronically via Core Banking Solutions (CBS).</li>
+              <li><span class="kw-blue">Wide Geographical Spread:</span> Vast network of branches and automated service delivery channels (ATMs, mobile banking).</li>
+              <li><span class="kw-purple">High Fiduciary Responsibility:</span> Public deposits represent the overwhelming majority of funding, demanding extreme prudence and safety.</li>
+              <li><span class="kw-green">Stringent Prudential Norms:</span> Stringent RBI directives on asset classification, provisioning, liquidity maintenance, and capital adequacy.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- THIRD SCHEDULE FORM A & FORM B -->
+      <div id="sec-financial-statements" class="content-card" style="margin-top:20px;">
+        <h3 class="card-title">2. Form &amp; Content of Financial Statements (Third Schedule, BR Act)</h3>
+        <p>
+          Section 29 of the Banking Regulation Act, 1949 mandates that at the end of each financial year (expiring on March 31), every banking company must prepare a Balance Sheet and Profit and Loss Account in the forms set out in the <span class="kw-blue">Third Schedule</span>:
+        </p>
+
+        <div class="table-wrap">
+          <table class="notes-table">
+            <thead>
+              <tr>
+                <th style="width:25%;">Form Type</th>
+                <th style="width:25%;">Schedule Range</th>
+                <th style="width:50%;">Detailed Breakdown of Schedules</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>FORM A:<br>Balance Sheet</strong></td>
+                <td><strong>Schedules 1 to 5<br>(Capital &amp; Liabilities)</strong></td>
+                <td>
+                  <strong>Schedule 1:</strong> Capital<br>
+                  <strong>Schedule 2:</strong> Reserves &amp; Surplus<br>
+                  <strong>Schedule 3:</strong> Deposits (Demand, Savings, Term)<br>
+                  <strong>Schedule 4:</strong> Borrowings (in India and outside India)<br>
+                  <strong>Schedule 5:</strong> Other Liabilities and Provisions
+                </td>
+              </tr>
+              <tr>
+                <td><strong>FORM A:<br>Balance Sheet</strong></td>
+                <td><strong>Schedules 6 to 11<br>(Assets)</strong></td>
+                <td>
+                  <strong>Schedule 6:</strong> Cash and Balances with Reserve Bank of India<br>
+                  <strong>Schedule 7:</strong> Balances with Other Banks &amp; Money at Call &amp; Short Notice<br>
+                  <strong>Schedule 8:</strong> Investments (Government, Shares, Debentures, Others)<br>
+                  <strong>Schedule 9:</strong> Advances (Bills, Cash Credits/ODs, Term Loans)<br>
+                  <strong>Schedule 10:</strong> Fixed Assets (Premises, Other Fixed Assets)<br>
+                  <strong>Schedule 11:</strong> Other Assets (Inter-branch adjustments, stationery, etc.)
+                </td>
+              </tr>
+              <tr>
+                <td><strong>FORM A:<br>Footnote Items</strong></td>
+                <td><strong>Schedule 12 &amp;<br>Bills for Collection</strong></td>
+                <td>
+                  <strong>Schedule 12:</strong> Contingent Liabilities (Claims not acknowledged, Guarantees, LCs, Forward Exchange Contracts)<br>
+                  <strong>Bills for Collection:</strong> Disclosed on the face of the balance sheet below total.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>FORM B:<br>Profit &amp; Loss Account</strong></td>
+                <td><strong>Schedules 13 to 16<br>(Income &amp; Expenditure)</strong></td>
+                <td>
+                  <strong>Schedule 13:</strong> Interest Earned (Loans, Investments, Balances with RBI)<br>
+                  <strong>Schedule 14:</strong> Other Income (Commission, Exchange, Brokerage, Profit on sale of investments/land)<br>
+                  <strong>Schedule 15:</strong> Interest Expended (Deposits, RBI borrowings)<br>
+                  <strong>Schedule 16:</strong> Operating Expenses (Payments to employees, rent, depreciation)<br>
+                  <strong>Provisions &amp; Contingencies:</strong> Income Tax, NPA Provisioning, Standard Asset Provisioning.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- APPOINTMENT & POWERS OF AUDITORS -->
+      <div id="sec-auditor-appointment" class="content-card" style="margin-top:20px;">
+        <h3 class="card-title">3. Audit of Accounts &amp; Appointment of Auditors (Section 30, BR Act)</h3>
+        <p>
+          Section 30 of the BR Act governs the audit of banking companies. Key legal rules governing statutory auditor appointment and powers:
+        </p>
+
+        <div class="grid-2col" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:12px;">
+          <div class="inner-box" style="background:#f8fafc; border-left:4px solid #1e40af; padding:14px; border-radius:6px;">
+            <h5 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:18px; margin-top:0;">Appointment of Statutory Central Auditors (SCAs)</h5>
+            <ul style="font-size:15px; line-height:1.5; margin-left:18px;">
+              <li><strong>Banking Companies (Private Banks):</strong> Appointed by shareholders in AGM with <span class="kw-red">prior approval of RBI</span> under Section 30(1A) of the BR Act.</li>
+              <li><strong>Nationalized Banks:</strong> Appointed by the Board of Directors with prior approval of RBI.</li>
+              <li><strong>State Bank of India (SBI):</strong> Appointed by the Comptroller and Auditor General (C&amp;AG) in consultation with the Central Government under Section 41 of the SBI Act.</li>
+            </ul>
+          </div>
+
+          <div class="inner-box" style="background:#f8fafc; border-left:4px solid #047857; padding:14px; border-radius:6px;">
+            <h5 style="color:#047857; font-family:'Patrick Hand', cursive; font-size:18px; margin-top:0;">Statutory Branch Auditors (SBAs) &amp; Powers</h5>
+            <ul style="font-size:15px; line-height:1.5; margin-left:18px;">
+              <li>Branch auditors are appointed to audit specific branches in accordance with RBI norms.</li>
+              <li><strong>Right of Access:</strong> Auditors have full right of access at all times to books, accounts, and vouchers at head office and branches.</li>
+              <li><strong>Special Audit:</strong> RBI has the power to order a special audit of any banking company under Section 30(1B) if considered in public interest or depositor interest.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 2: CONDUCTING AN AUDIT & CONTROLS  -->
+    <!-- ========================================== -->
+    <section id="sec-internal-controls" class="audit-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-badge">Section 2 &bull; Internal Controls</span>
+          <h2 class="section-title">Conducting Bank Audit &amp; Controls in Selected Areas</h2>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3 class="card-title">1. Internal Control Evaluation Across Key Operational Cycles</h3>
+        <p>Due to the massive decentralization and volume of transactions, statutory auditors must evaluate specific internal controls across high-risk operational areas:</p>
+
+        <div class="table-wrap">
+          <table class="notes-table">
+            <thead>
+              <tr>
+                <th style="width:25%;">Operational Area</th>
+                <th style="width:75%;">Key Internal Control Procedures Expected in a Bank Branch</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Cash &amp; Currency Chests</strong></td>
+                <td>Joint custody of cash vault by Branch Manager and Head Cashier; dual-key mechanism; daily surprise cash counts; mandatory insurance coverage; insurance limit vs cash holding limits.</td>
+              </tr>
+              <tr>
+                <td><strong>2. Clearing Operations</strong></td>
+                <td>Segregation of inward and outward clearing; Cheque Truncation System (CTS) security; immediate reconciliation of clearing suspense accounts with RBI/clearing house.</td>
+              </tr>
+              <tr>
+                <td><strong>3. Bills for Collection</strong></td>
+                <td>Maintenance of separate registers for outward and inward bills; distinct control numbers; physical safe custody of commercial documents; release of documents strictly against payment (D/P) or acceptance (D/A).</td>
+              </tr>
+              <tr>
+                <td><strong>4. Credit Card Operations</strong></td>
+                <td>Strict physical custody and dual control over unissued credit cards; immediate destruction of returned/unclaimed cards; automated fraud detection algorithms for anomalous card swipes.</td>
+              </tr>
+              <tr>
+                <td><strong>5. Security Stationery</strong></td>
+                <td>Dual custody over blank Demand Drafts, Cheque books, Fixed Deposit Receipts (FDRs), and Banker's Cheques; daily stock verification against issuance register.</td>
+              </tr>
+              <tr>
+                <td><strong>6. Loans and Advances</strong></td>
+                <td>Credit appraisal independent of sanctioning authority; verification of title deeds; perfection of security charge (hypothecation/mortgage); regular inspection of stocks; periodic review of drawing power (DP); monitoring compliance with sanction terms.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION 3: COMPLIANCE WITH CRR AND SLR     -->
+    <!-- ========================================== -->
+    <section id="sec-crr-slr" class="audit-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-badge">Section 3 &bull; Statutory Ratios</span>
+          <h2 class="section-title">Compliance with CRR &amp; SLR Requirements (NDTL Computation)</h2>
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h3 class="card-title">1. CRR vs. SLR &ndash; Conceptual &amp; Legal Framework</h3>
+        <p>Commercial banks are statutorily required to maintain adequate liquid reserves with the central bank and in specified liquid assets to protect depositor interests and facilitate monetary policy transmission:</p>
+
+        <div class="grid-2col" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:12px;">
+          <div class="inner-box" style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:10px; padding:16px;">
+            <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Cash Reserve Ratio (CRR)</h4>
+            <p style="font-size:15px; line-height:1.5;">
+              <strong>Section 42 of RBI Act, 1934:</strong> Banks must maintain with RBI an average daily cash balance equal to a specified percentage of their <span class="kw-blue">Net Demand and Time Liabilities (NDTL)</span>.
+            </p>
+            <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+              <li>Maintained entirely in cash balances with the RBI.</li>
+              <li>No interest is paid by RBI on CRR balances maintained by banks.</li>
+              <li>Daily minimum maintenance requirement (e.g., 90% of required CRR).</li>
+            </ul>
+          </div>
+
+          <div class="inner-box" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:10px; padding:16px;">
+            <h4 style="color:#047857; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Statutory Liquidity Ratio (SLR)</h4>
+            <p style="font-size:15px; line-height:1.5;">
+              <strong>Section 24 of BR Act, 1949:</strong> Banks must maintain assets in specified liquid forms equal to a prescribed percentage of their NDTL as of the last Friday of the second preceding fortnight.
+            </p>
+            <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+              <li>Maintained in: (a) Cash in hand; (b) Gold valued at market rates; (c) Unencumbered approved Central/State Government Securities.</li>
+              <li>Banks earn interest yield on approved government securities.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h4 style="font-family:'Patrick Hand', cursive; color:#1e3a8a; font-size:22px; margin-top:20px;">Understanding Net Demand and Time Liabilities (NDTL)</h4>
+        <div class="callout callout-info">
+          <div class="callout-title">NDTL Formula Architecture</div>
+          <p>
+            <strong>NDTL = Demand Liabilities + Time Liabilities + Other Demand &amp; Time Liabilities &minus; Eligible Inter-Bank Assets</strong>
+          </p>
+          <ul style="margin-left:18px; margin-top:8px; font-size:15px; line-height:1.6;">
+            <li><strong>Demand Liabilities:</strong> Current deposits, demand liabilities of savings bank accounts, demand drafts, unpaid balances in cash credit/overdraft accounts.</li>
+            <li><strong>Time Liabilities:</strong> Fixed deposits, recurring deposits, cash certificates, staff security deposits.</li>
+            <li><strong>Liabilities not included in NDTL:</strong> Paid-up capital, statutory reserves, credit balance in P&amp;L account, refinance loans from RBI/NABARD/SIDBI/EXIM Bank.</li>
+          </ul>
+        </div>
+
+        <h4 style="font-family:'Patrick Hand', cursive; color:#1e3a8a; font-size:22px; margin-top:20px;">Auditor's Verification of CRR &amp; SLR (Statutory Central Auditor's Role)</h4>
+        <p>The Statutory Central Auditor is required to verify and issue an independent certificate/report on SLR compliance on 12 alternate Fridays throughout the year:</p>
+        <ol style="font-size:16px; line-height:1.7; margin-left:20px;">
+          <li><span class="kw-blue">Testing the NDTL Computation:</span> Sample-check the calculation of NDTL on selected reporting alternate Fridays (Form A / Form VIII).</li>
+          <li><span class="kw-green">Verification of Eligible Assets:</span> Verify book values and market values of unencumbered government securities, physical cash counts, and RBI statement balances.</li>
+          <li><span class="kw-red">Checking for Encumbrances:</span> Ensure that securities pledged for borrowing (e.g., Repo under LAF or MSF) are excluded from eligible SLR assets!</li>
+          <li><span class="kw-amber">Penalties for Default:</span> Check whether the bank defaulted on any day and whether penal interest under Section 42(3) of RBI Act or Section 24 of BR Act was appropriately provided for.</li>
+        </ol>
+      </div>
+    </section>
+
+<!-- ========================================== -->
+<!-- SECTION 4: VERIFICATION OF ASSETS          -->
+<!-- ========================================== -->
+<section id="sec-verification-cash-invest" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 4 &bull; Asset Verification</span>
+      <h2 class="section-title">Verification of Cash, Bank Balances &amp; Investments</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h3 class="card-title">1. Cash and Balances with RBI (Schedule 6) &amp; Other Banks (Schedule 7)</h3>
+    <p>
+      Cash and liquid balances form the primary defense for bank liquidity. The auditor must execute strict substantive procedures:
+    </p>
+
+    <div class="grid-2col" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:12px;">
+      <div class="inner-box" style="background:#f8fafc; border-left:4px solid #1e40af; padding:14px; border-radius:6px;">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Cash &amp; Currency Chest Balances (Schedule 6)</h4>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>Physical Cash Count:</strong> Mandatory physical cash count at the close of business on March 31 simultaneously across all tills, vault, and ATMs.</li>
+          <li><strong>Discrepancies:</strong> Cash shortages/surpluses must be investigated, booked to Cash Suspense, and reported in the LFAR.</li>
+          <li><strong>Insurance Limits:</strong> Verify that cash holding limits stipulated by Head Office and cash transit insurance limits have not been breached.</li>
+          <li><strong>RBI Balances:</strong> Obtain independent balance confirmation certificates from the RBI and test bank reconciliations.</li>
+        </ul>
+      </div>
+
+      <div class="inner-box" style="background:#f8fafc; border-left:4px solid #047857; padding:14px; border-radius:6px;">
+        <h4 style="color:#047857; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Balances with Other Banks &amp; Call Money (Schedule 7)</h4>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>Direct Confirmations:</strong> Obtain direct external balance confirmations from correspondent banks in India and abroad.</li>
+          <li><strong>Nostro &amp; Vostro Accounts:</strong> Verify monthly reconciliation of foreign currency Nostro accounts; investigate long-pending un-reconciled debit entries (which may indicate unauthorized fund siphoning or un-booked charges).</li>
+          <li><strong>Money at Call &amp; Short Notice:</strong> Verify call money borrowing/lending receipts, interest rates, and compliance with RBI prudential limits on call money borrowing.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">2. Verification of Investments (Schedule 8) &amp; RBI Categorization</h3>
+    <p>
+      In accordance with RBI Master Directions on Prudential Norms for Classification, Valuation, and Operation of Investment Portfolios, all bank investments must be classified into three distinct categories on acquisition date:
+    </p>
+
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:25%;">Investment Category</th>
+            <th style="width:37%;">Characteristics &amp; Regulatory Ceiling</th>
+            <th style="width:38%;">Valuation Rules &amp; Accounting Treatment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. Held to Maturity (HTM)</strong></td>
+            <td>Securities acquired with the positive intention to hold until maturity. Maximum ceiling prescribed by RBI (e.g., eligible SLR securities up to prescribed cap).</td>
+            <td>Carried at <span class="kw-blue">acquisition cost / amortized cost</span>. Premium on acquisition is amortized over the remaining maturity period. Discount is ignored. Tested for permanent impairment.</td>
+          </tr>
+          <tr>
+            <td><strong>2. Available for Sale (AFS)</strong></td>
+            <td>Securities not classified under HTM or HFT. Held for liquidity and strategic portfolio management.</td>
+            <td>Marked-to-market (MTM) at least quarterly. Valuation is done <span class="kw-purple">category-wise</span>. Net depreciation is provided in P&amp;L; net appreciation is ignored.</td>
+          </tr>
+          <tr>
+            <td><strong>3. Held for Trading (HFT)</strong></td>
+            <td>Securities acquired with the intention to trade and take advantage of short-term price/interest rate movements. Must be liquidated within <strong>90 days</strong>.</td>
+            <td>Marked-to-market at least monthly (or daily). Valuation is done category-wise. Net depreciation charged to P&amp;L; net appreciation ignored.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 style="font-family:'Patrick Hand', cursive; color:#1e3a8a; font-size:20px; margin-top:16px;">Critical Treasury &amp; Investment Audit Checks</h4>
+    <ul style="font-size:16px; line-height:1.7; margin-left:20px;">
+      <li><span class="kw-blue">Shifting Between Categories:</span> Shifting from AFS/HFT to HTM is permitted only once a year, normally at the beginning of the financial year, with the <span class="kw-red">prior explicit approval of the Board of Directors</span>. Shifting is done at the lower of acquisition cost or market value, and any depreciation is charged immediately to P&amp;L!</li>
+      <li><span class="kw-red">Bank Receipts (BRs):</span> BRs must be issued on special security paper; valid for 30 days only. BRs outstanding for more than 30 days are irregular and require immediate investigation!</li>
+      <li><span class="kw-green">Physical Verification / Demat Holding:</span> Verify physical certificates or demat holding statements from PDO (Public Debt Office of RBI), NSDL, and CDSL.</li>
+      <li><span class="kw-purple">Segregation of Treasury Duties:</span> Ensure strict Chinese walls between the <strong>Front Office</strong> (dealing/trading), <strong>Mid Office</strong> (risk management/monitoring), and <strong>Back Office</strong> (settlement, confirmations, and accounting).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 5: VERIFICATION OF ADVANCES & IRAC -->
+<!-- ========================================== -->
+<section id="sec-verification-advances" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 5 &bull; Core Lending Operations</span>
+      <h2 class="section-title">Verification of Advances (Schedule 9) &amp; RBI IRAC Norms</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h3 class="card-title">1. Structure of Advances: Funded vs. Non-Funded</h3>
+    <p>Advances represent the largest asset class on a bank's balance sheet and carry the highest credit risk:</p>
+    <div class="grid-2col" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:10px;">
+      <div class="inner-box" style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:8px; padding:14px;">
+        <h5 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">Funded Credit Facilities</h5>
+        <ul style="font-size:15px; line-height:1.5; margin-left:18px;">
+          <li><strong>Cash Credits &amp; Overdrafts (CC/OD):</strong> Running revolving working capital limits against hypothecation of inventory and book debts.</li>
+          <li><strong>Term Loans:</strong> Fixed tenure loans for capital expenditure, repayable in installments over multiple years.</li>
+          <li><strong>Bills Purchased &amp; Discounted:</strong> Financing genuine commercial trade bills of exchange.</li>
+        </ul>
+      </div>
+
+      <div class="inner-box" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:14px;">
+        <h5 style="color:#047857; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">Non-Funded Facilities</h5>
+        <ul style="font-size:15px; line-height:1.5; margin-left:18px;">
+          <li><strong>Letters of Credit (LCs):</strong> Financial commitments to pay sellers upon delivery of compliant shipping documents.</li>
+          <li><strong>Bank Guarantees (BGs):</strong> Financial guarantees and Performance guarantees issued on behalf of customers.</li>
+          <li><em>Risk:</em> Non-funded limits crystallize into funded advances if the borrower defaults or invokes the guarantee!</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- RBI IRAC NORMS & NPA DEFINITION -->
+  <div id="sec-irac-npa-norms" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">2. RBI Prudential Norms on Income Recognition, Asset Classification &amp; Provisioning (IRAC)</h3>
+    <div class="callout callout-danger">
+      <div class="callout-title">Formal Definition of Non-Performing Asset (NPA)</div>
+      <p>
+        A <strong>Non-Performing Asset (NPA)</strong> is a loan or an advance where <span class="kw-red">it ceases to generate income</span> for the bank. Once an account becomes an NPA, interest income CANNOT be recognized on an accrual basis; it can be recognized <span class="kw-blue">strictly on actual cash realization</span> basis!
+      </p>
+    </div>
+
+    <h4 style="font-family:'Patrick Hand', cursive; color:#1e3a8a; font-size:22px; margin-top:16px;">The 90-Day Overdue Criteria Across Credit Facilities</h4>
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:28%;">Facility Type</th>
+            <th style="width:72%;">Exact Trigger Point for Classification as Non-Performing Asset (NPA)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Term Loans</strong></td>
+            <td>Interest and/or installment of principal remains <span class="kw-red">overdue for more than 90 days</span>.</td>
+          </tr>
+          <tr>
+            <td><strong>Cash Credit / Overdraft<br>("Out of Order")</strong></td>
+            <td>
+              The account remains <span class="kw-red">"Out of Order"</span> if:
+              <ul style="margin:4px 0 0 16px; line-height:1.5;">
+                <li>The outstanding balance remains continuously in excess of the sanctioned limit or Drawing Power (DP) for <span class="kw-red">more than 90 days</span>; OR</li>
+                <li>There are no credits in the account for <span class="kw-red">more than 90 days</span>; OR</li>
+                <li>Credits are insufficient to cover the interest debited during the previous 90-day period.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Bills Purchased &amp; Discounted</strong></td>
+            <td>The bill remains overdue and unpaid for <span class="kw-red">more than 90 days</span> from due date.</td>
+          </tr>
+          <tr>
+            <td><strong>Agricultural Advances</strong></td>
+            <td>
+              <ul style="margin:0; padding-left:16px; line-height:1.5;">
+                <li><strong>Short Duration Crops:</strong> Interest and/or installment remains overdue for <span class="kw-purple">two (2) crop seasons</span>.</li>
+                <li><strong>Long Duration Crops (&gt; 1 yr crop season):</strong> Overdue for <span class="kw-purple">one (1) crop season</span>.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Derivative Transactions</strong></td>
+            <td>Overdue receivables representing positive mark-to-market value remain unpaid for <span class="kw-red">more than 90 days</span>.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout callout-warning" style="margin-top:16px;">
+      <div class="callout-title">⚠️ Drawing Power (DP) &amp; Old Stock Statements Rules</div>
+      <ul style="margin:0; padding-left:18px; font-size:15.5px; line-height:1.6;">
+        <li><span class="kw-amber">3-Month Stock Statement Limit:</span> Stock statements must not be older than 3 months. If stock statements are older than 3 months (even if renewal is under process), the drawing power becomes <strong>NIL</strong>, and if the account is running with a debit balance, it becomes an <span class="kw-red">Out of Order NPA</span>!</li>
+        <li><span class="kw-amber">180-Day Limit for Renewal:</span> If credit limits are due for annual renewal and are not renewed within <strong>180 days (6 months)</strong> from the due date, the account must be mandatorily classified as an NPA!</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ASSET CLASSIFICATION & PROVISIONING MATRIX -->
+  <div id="sec-asset-classification-provisioning" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">3. Master Classification Categories &amp; RBI Provisioning Matrix</h3>
+    <p>Banks must classify their loan assets into four progressive categories and make mandatory provisions:</p>
+
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:20%;">Asset Category</th>
+            <th style="width:25%;">Classification Criteria</th>
+            <th style="width:25%;">Secured Portion Provision</th>
+            <th style="width:30%;">Unsecured Portion Provision</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. Standard Assets<br>(Performing)</strong></td>
+            <td>Account does not disclose any problems and does not carry more than normal banking risk.</td>
+            <td colspan="2">
+              <strong>Specific General Provisions:</strong><br>
+              &bull; Direct Advances to Agriculture &amp; SME: <span class="kw-green">0.25%</span><br>
+              &bull; Commercial Real Estate &ndash; Residential (CRE-RH): <span class="kw-green">0.75%</span><br>
+              &bull; Commercial Real Estate (CRE): <span class="kw-blue">1.00%</span><br>
+              &bull; Restructured Standard Accounts: <span class="kw-red">5.00%</span><br>
+              &bull; All other Standard Advances: <span class="kw-purple">0.40%</span>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>2. Sub-Standard Assets<br>(NPA)</strong></td>
+            <td>Classified as an NPA for a period <span class="kw-blue">&le; 12 months</span>.</td>
+            <td><span class="kw-blue">15%</span> provision on total outstanding.</td>
+            <td><span class="kw-red">25%</span> provision on unsecured ab-initio advances.<br><em>(20% for infrastructure loans).</em></td>
+          </tr>
+          <tr>
+            <td><strong>3. Doubtful Assets &ndash; D1</strong></td>
+            <td>Remained in Sub-standard category for 12 months (Doubtful up to 1 year).</td>
+            <td><span class="kw-amber">25%</span> of secured portion.</td>
+            <td><span class="kw-red">100%</span> of unsecured portion.</td>
+          </tr>
+          <tr>
+            <td><strong>3. Doubtful Assets &ndash; D2</strong></td>
+            <td>Doubtful for 1 year to 3 years.</td>
+            <td><span class="kw-amber">40%</span> of secured portion.</td>
+            <td><span class="kw-red">100%</span> of unsecured portion.</td>
+          </tr>
+          <tr>
+            <td><strong>3. Doubtful Assets &ndash; D3</strong></td>
+            <td>Doubtful for more than 3 years.</td>
+            <td><span class="kw-red">100%</span> of secured portion.</td>
+            <td><span class="kw-red">100%</span> of unsecured portion.</td>
+          </tr>
+          <tr>
+            <td><strong>4. Loss Assets</strong></td>
+            <td>Identified as uncollectible by bank, auditors, or RBI inspectors, but not wholly written off.</td>
+            <td colspan="2"><span class="kw-red">100% PROVISION</span> on entire outstanding balance!</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout callout-info" style="margin-top:14px;">
+      <div class="callout-title">Calculation of Provision on Doubtful Advances: Dual-Tier Rule</div>
+      <p>
+        For all Doubtful advances (D1, D2, D3), the provision is calculated in two separate steps:
+      </p>
+      <ol style="margin-left:18px; font-size:15.5px; line-height:1.6;">
+        <li>First, determine the <span class="kw-blue">Realizable Value of Security</span>. That portion is the "Secured Portion", provisioned at 25%, 40%, or 100% based on the age of doubtful status.</li>
+        <li>The remaining excess of total outstanding over the realizable security value is the <span class="kw-red">Unsecured Portion</span>, which attracts a flat <span class="kw-red">100% PROVISION</span> across ALL doubtful categories!</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- SPECIAL ADVANCES CASES -->
+  <div id="sec-special-advances-cases" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">4. Special Advance Categories &amp; Unique Classification Protocols</h3>
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:25%;">Special Case</th>
+            <th style="width:75%;">Mandatory RBI IRAC Classification &amp; Income Recognition Rule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. Consortium Advances</strong></td>
+            <td>
+              Each member bank must classify the borrower account and recognize income <span class="kw-red">based strictly on its own record of recovery</span>, regardless of whether the Lead Bank has classified the account as standard or performing!
+            </td>
+          </tr>
+          <tr>
+            <td><strong>2. Central Government Guaranteed Advances</strong></td>
+            <td>
+              The advance is treated as a <span class="kw-green">Standard Asset for classification purposes</span> so long as the guarantee has not been repudiated. <strong>However</strong>, interest income CANNOT be recognized on accrual basis if overdue &gt; 90 days; income is recognized <span class="kw-blue">strictly on cash realization basis</span>!
+            </td>
+          </tr>
+          <tr>
+            <td><strong>3. State Government Guaranteed Advances</strong></td>
+            <td>
+              If interest and/or principal remains overdue for <span class="kw-red">more than 90 days</span>, the advance becomes a <span class="kw-red">Non-Performing Asset (NPA)</span> for BOTH asset classification and provisioning purposes (no sovereign exemption)!
+            </td>
+          </tr>
+          <tr>
+            <td><strong>4. Advances Against FDRs, NSCs, Life Policies</strong></td>
+            <td>
+              Advances against term deposits, National Savings Certificates, and surrender value of LIC policies need NOT be treated as NPAs, provided <span class="kw-green">adequate margin is available</span>. Income can be recognized on accrual basis.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>5. Upgradation of NPAs</strong></td>
+            <td>
+              An account classified as NPA can be upgraded to standard category <span class="kw-red">ONLY IF the entire arrears of interest and principal are fully paid</span> by the borrower! Partial recovery does not entitle upgradation.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>6. Restructuring of Advances (Prudential Framework June 7, 2019)</strong></td>
+            <td>
+              Any standard advance that is restructured (granting financial concessions due to borrower's financial difficulty) must be <span class="kw-red">immediately downgraded to Sub-Standard</span> upon restructuring, and provided for at <span class="kw-amber">5% minimum</span>!
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE TYU 1 ACCORDION -->
+  <div id="sec-tyu1" class="accordion-item" style="margin-top:20px;">
+    <button class="accordion-header">
+      <span>🔥 TEST YOUR UNDERSTANDING 1: Branch Credit Appraisal Lapses &amp; Incomplete Loan Applications &ndash; LFAR Reporting</span>
+      <span class="accordion-icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <div class="case-study-box">
+        <h4 style="color:#b91c1c; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Exam Case Scenario (TYU 1)</h4>
+        <p>
+          During the statutory branch audit of a nationalized bank, the auditor examined 5 major loan accounts. All 5 accounts were operating positively with timely servicing of interest and principal. However, the auditor noticed that the loan application forms were filled in incompletely, financial statements were not signed by borrowers, and there were no records of assessment of enhanced working capital requirements in the credit files. <strong>What action should the auditor take? Does this warrant classifying the accounts as NPA?</strong>
+        </p>
+      </div>
+
+      <div class="solution-box" style="margin-top:14px; background:#eff6ff; padding:16px; border-radius:8px; border:1px solid #bfdbfe;">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">ICAI Model Evaluation:</h4>
+        <ol style="font-size:16px; line-height:1.7; margin-left:20px;">
+          <li><span class="kw-green">No Change in Asset Classification:</span> An account becomes an NPA only when it ceases to generate income. Since all 5 accounts are operating satisfactorily with prompt recoveries, there is <strong>no reason to classify them as NPAs</strong>. They remain Standard Assets.</li>
+          <li><span class="kw-red">Severe Deficiencies in Internal Controls:</span> The incomplete loan documentation and absence of working capital assessments reflect critical deficiencies in the bank's <span class="kw-red">Credit Appraisal Mechanism</span>.</li>
+          <li><span class="kw-blue">LFAR Reporting:</span> The branch auditor must highlight these operational and credit appraisal lapses in the <strong>Long Form Audit Report (LFAR)</strong> under the Advances section for corrective action by higher management.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 6: OTHER ASSETS & NON-BANKING PROP -->
+<!-- ========================================== -->
+<section id="sec-other-assets-nonbanking" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 6 &bull; Balance Sheet Integrity</span>
+      <h2 class="section-title">Other Assets &amp; Non-Banking Assets (Section 9, BR Act)</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h3 class="card-title">1. Non-Banking Assets Acquired in Satisfaction of Claims (Section 9, BR Act)</h3>
+    <p>
+      When borrowers default on secured loans, banks frequently enforce mortgages and acquire properties, land, or machinery in settlement of their outstanding claims:
+    </p>
+
+    <div class="callout callout-danger">
+      <div class="callout-title">Section 9 of the Banking Regulation Act, 1949 &ndash; Statutory Holding Cap</div>
+      <p>
+        No banking company shall hold any immovable property, howsoever acquired (except such as is required for its own use), for any period <span class="kw-red">exceeding seven (7) years</span> from the date of acquisition!
+      </p>
+      <p style="margin-top:6px;">
+        <em>Extension:</em> The RBI may grant an extension for a further period not exceeding <strong>5 years</strong> if satisfied that disposal within 7 years would cause severe financial loss.
+      </p>
+    </div>
+
+    <h4 style="font-family:'Patrick Hand', cursive; color:#1e3a8a; font-size:20px; margin-top:14px;">Auditor's Verification Procedures for Non-Banking Assets:</h4>
+    <ul style="font-size:16px; line-height:1.6; margin-left:20px;">
+      <li><strong>Balance Sheet Classification:</strong> Recorded under <span class="kw-blue">Schedule 11 (Other Assets)</span> as "Non-Banking Assets acquired in satisfaction of claims" (NOT under Schedule 10 Fixed Assets!).</li>
+      <li><strong>Valuation at Lower of Cost or Market Value:</strong> Recorded at the lower of the net book value of the loan or estimated net realizable/market value. If market value falls below book value, write-down to P&amp;L is mandatory.</li>
+      <li><strong>Legal Title &amp; Dispute Disclosures:</strong> Check title deeds and examine if third-party litigation or ownership disputes exist. Any title dispute must be disclosed in the financial statement notes as a contingent liability or matter of significance.</li>
+      <li><strong>Enforcing the 7-Year Disposal Period:</strong> Verify the acquisition date. If held for &gt; 7 years without RBI extension approval, report the non-compliance under the BR Act!</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 7: CAPITAL & LIABILITIES           -->
+<!-- ========================================== -->
+<section id="sec-capital-basel3" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 7 &bull; Solvency &amp; Capital</span>
+      <h2 class="section-title">Verification of Capital, Liabilities &amp; BASEL III Framework</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h3 class="card-title">1. Capital (Schedule 1), Stress Testing &amp; BASEL III Framework</h3>
+    <p>
+      Capital represents the foundational shock-absorber for commercial banks against unanticipated credit, market, and operational losses:
+    </p>
+
+    <div class="grid-2col" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:12px;">
+      <div class="inner-box" style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:10px; padding:16px;">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Stress Testing Framework</h4>
+        <p style="font-size:15px; line-height:1.5;">
+          Banks are required by RBI to conduct rigorous, regular <strong>Stress Tests</strong> under plausible extreme economic scenarios (e.g., sharp spike in NPAs, sudden interest rate spikes, massive liquidity outflows).
+        </p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li>Assesses the resilience of bank capital and liquidity under adverse market conditions.</li>
+          <li>Forms an integral component of the <strong>Internal Capital Adequacy Assessment Process (ICAAP)</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="inner-box" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:10px; padding:16px;">
+        <h4 style="color:#047857; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">The 3 Pillars of Basel III Framework</h4>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><span class="kw-blue">Pillar 1: Minimum Capital Requirements:</span> Prescribes capital ratios against Credit, Market, and Operational Risk.</li>
+          <li><span class="kw-purple">Pillar 2: Supervisory Review Process:</span> RBI evaluates internal risk assessments and ICAAP of banks.</li>
+          <li><span class="kw-green">Pillar 3: Market Discipline:</span> Comprehensive public disclosures regarding risk exposures and capital computation.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h4 style="font-family:'Patrick Hand', cursive; color:#1e3a8a; font-size:22px; margin-top:20px;">Basel III Capital Ratios Mandated by RBI:</h4>
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:30%;">Capital Tier / Buffer</th>
+            <th style="width:25%;">Minimum Ratio to RWA</th>
+            <th style="width:45%;">Eligible Capital Instruments &amp; Function</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Common Equity Tier 1 (CET1)</strong></td>
+            <td><span class="kw-blue">5.50%</span></td>
+            <td>Paid-up equity share capital, share premium, statutory reserves, capital reserves, and audited retained earnings. Highest loss-absorbing capability.</td>
+          </tr>
+          <tr>
+            <td><strong>Tier 1 Capital (CET1 + AT1)</strong></td>
+            <td><span class="kw-blue">7.00%</span></td>
+            <td>CET1 plus Additional Tier 1 (AT1) capital instruments (Perpetual Non-Cumulative Preference Shares and Perpetual Debt Instruments with loss-absorption triggers).</td>
+          </tr>
+          <tr>
+            <td><strong>Total Capital (Tier 1 + Tier 2)</strong></td>
+            <td><span class="kw-blue">9.00%</span></td>
+            <td>Tier 1 plus Tier 2 capital (General provisions/loss reserves up to 1.25% of credit RWA, Revaluation reserves at 55% discount, Subordinated term debt).</td>
+          </tr>
+          <tr>
+            <td><strong>Capital Conservation Buffer (CCB)</strong></td>
+            <td><span class="kw-green">2.50%</span></td>
+            <td>Composed entirely of CET1 capital. Designed to absorb losses during periods of severe financial and economic stress.</td>
+          </tr>
+          <tr>
+            <td><strong>Total Capital + CCB (Regulatory Minimum)</strong></td>
+            <td><span class="kw-red">11.50%</span></td>
+            <td>Minimum overall capital requirement that Indian commercial banks must maintain against Risk-Weighted Assets (RWA).</td>
+          </tr>
+          <tr>
+            <td><strong>Countercyclical Capital Buffer (CCCB)</strong></td>
+            <td><span class="kw-purple">0% to 2.50%</span></td>
+            <td>Activated by RBI during periods of excessive credit growth to build buffers against cyclical downturns.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- RESERVES, DEPOSITS & LIABILITIES -->
+  <div id="sec-liabilities-deposits" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">2. Reserves &amp; Surplus (Schedule 2) &amp; Deposits (Schedule 3)</h3>
+    
+    <div class="grid-2col" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+      <div class="inner-box" style="background:#f8fafc; border-left:4px solid #1e40af; padding:14px; border-radius:6px;">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Statutory Reserve (Section 17, BR Act)</h4>
+        <p style="font-size:15px; line-height:1.5;">
+          Every banking company incorporated in India must create a reserve fund and transfer a sum equivalent to <span class="kw-red">not less than 20% of its net profits</span> of each year (before declaring any dividend) to this fund.
+        </p>
+        <p style="font-size:15px; margin-top:6px;">
+          <em>RBI Enhancement:</em> To strengthen bank balance sheets, RBI guidelines mandate that banks transfer <span class="kw-blue">at least 25% of net profits</span> to the Statutory Reserve!
+        </p>
+      </div>
+
+      <div class="inner-box" style="background:#f8fafc; border-left:4px solid #047857; padding:14px; border-radius:6px;">
+        <h4 style="color:#047857; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Inoperative Accounts &amp; DEAF Scheme</h4>
+        <ul style="font-size:14.5px; line-height:1.6; margin-left:18px;">
+          <li><span class="kw-amber">Inoperative / Dormant Accounts:</span> A savings or current account is classified as inoperative if there are <strong>no customer-induced transactions for more than 2 years</strong>. Interest credited by the bank is not a customer transaction. Segregated ledger and dual authorization for activation required.</li>
+          <li><span class="kw-purple">DEAF Transfer (Section 26A, BR Act):</span> Any deposit account that remains unclaimed or inoperative for <span class="kw-red">ten (10) years or more</span> must be transferred to the <strong>Depositor Education and Awareness Fund (DEAF)</strong> within 3 months.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTINGENT LIABILITIES -->
+  <div id="sec-contingent-liabilities" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">3. Contingent Liabilities (Schedule 12) &amp; Claims Not Acknowledged</h3>
+    <p>
+      Schedule 12 covers obligations that may crystallize depending on future uncertain events. The auditor must verify the following distinct categories:
+    </p>
+
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:30%;">Contingent Liability Head</th>
+            <th style="width:70%;">Auditor's Verification Procedures &amp; Risk Considerations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. Claims Not Acknowledged as Debts</strong></td>
+            <td>
+              Review pending court cases, disputed customer claims, consumer disputes, ex-employee wage litigations, and disputed tax assessments (Direct/Indirect taxes). Verify legal opinions from bank's counsel; ensure adequate provision if liability is probable under AS 29 / Ind AS 37.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>2. Guarantees Given on Behalf of Customers</strong></td>
+            <td>
+              Distinguish between <span class="kw-blue">Financial Guarantees</span> (direct credit substitutes) and <span class="kw-purple">Performance Guarantees</span> (bid bonds, EPC contracts). Verify margin money held in term deposits, counter-indemnities signed by customers, and ensure expired guarantees are promptly reversed from off-balance-sheet ledgers.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>3. Letters of Credit (LCs) &amp; Acceptances</strong></td>
+            <td>
+              Verify outstanding documentary credits, underlying trade contracts, bills accepted on behalf of customers, and verify that non-funded LC limits are included in total borrower exposure calculations.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>4. Forward Exchange Contracts</strong></td>
+            <td>
+              Examine outstanding foreign currency forward sale and purchase contracts; verify mark-to-market valuations; check compliance with FEDAI guidelines and RBI limits on Net Open Positions (NOP).
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 8: AUDITOR'S REPORT & LFAR         -->
+<!-- ========================================== -->
+<section id="sec-audit-report-lfar" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 8 &bull; Reporting Mandates</span>
+      <h2 class="section-title">Auditor's Report, Long Form Audit Report (LFAR) &amp; Fraud Reporting</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h3 class="card-title">1. Statutory Audit Report &amp; Reporting under Section 30 of BR Act</h3>
+    <p>
+      The statutory auditor of a banking company must report in accordance with <strong>Section 30 of the BR Act, 1949</strong> and <strong>Section 143 of the Companies Act, 2013</strong>:
+    </p>
+    <ul style="font-size:16px; line-height:1.7; margin-left:20px;">
+      <li>Whether the Balance Sheet presents a true and fair view of the state of affairs of the bank as of March 31, and the P&amp;L Account shows a true balance of profit or loss for the year.</li>
+      <li>Whether transactions of the bank that have come to notice are within the powers of the bank.</li>
+      <li>Whether proper returns adequate for the purposes of audit have been received from branches.</li>
+      <li>Whether the financial statements exhibit a true and fair view in accordance with the accounting standards and RBI rules.</li>
+    </ul>
+  </div>
+
+  <div class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">2. Long Form Audit Report (LFAR) &ndash; The Comprehensive Questionnaire</h3>
+    <p>
+      In addition to the main statutory audit report, the RBI requires both Statutory Central Auditors (SCAs) and Statutory Branch Auditors (SBAs) to submit a detailed <span class="kw-blue">Long Form Audit Report (LFAR)</span>:
+    </p>
+
+    <div class="callout callout-info">
+      <div class="callout-title">Operational Architecture of LFAR</div>
+      <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+        <li><strong>Questionnaire Format:</strong> The LFAR is structured as a detailed questionnaire designed by the RBI covering all key operational and risk facets of branch and bank operations.</li>
+        <li><strong>Coverage in Branch LFAR:</strong> Cash and security items, clearing operations, deposits, detailed scrutiny of advances (credit appraisal, sanctioning, documentation, post-disbursement supervision, NPAs, stock audits, restructuring), non-funded facilities, foreign exchange, internal controls, housekeeping, and fraud occurrences.</li>
+        <li><strong>Specific Comments vs. General Observations:</strong> The auditor must not give vague or evasive replies (like "refer branch records" or "satisfactory"). Specific instances, account numbers, amounts, and dates must be cited!</li>
+        <li><strong>Submission Deadlines:</strong> Branch LFAR must be submitted to the Branch Manager and SCAs within the stipulated time frame to enable consolidation at the Head Office level.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FRAUD REPORTING TO RBI -->
+  <div id="sec-fraud-reporting-rbi" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">3. Reporting of Frauds to RBI &amp; Red Flagged Accounts (RFAs)</h3>
+    <p>
+      Statutory auditors have distinct statutory and regulatory reporting duties regarding frauds detected during bank audits:
+    </p>
+
+    <div class="callout callout-danger">
+      <div class="callout-title">RBI Framework for Classification &amp; Reporting of Frauds</div>
+      <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+        <li><span class="kw-red">Reporting to Central Board / Management:</span> If an auditor notices any fraud or suspects fraudulent transactions, they must immediately report the full details to the Chairman/MD, CEO, and the Audit Committee of the Board (ACB).</li>
+        <li><span class="kw-red">Section 143(12) of Companies Act:</span> For frauds involving an amount of <strong>₹ 1 Crore or more</strong>, report to the Central Government (Ministry of Corporate Affairs) in Form ADT-4 within 60 days.</li>
+        <li><span class="kw-purple">Early Warning Signals (EWS) &amp; Red Flagged Accounts (RFAs):</span> An account where an early warning signal of fraud is detected must be classified as an RFA on the <strong>Central Fraud Registry (CFR)</strong> portal. A forensic audit must be commissioned within 15 days, and if fraud is confirmed, it must be reported to the RBI within 7 days of confirmation!</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 9: CONCURRENT AUDIT & AUDIT COMM   -->
+<!-- ========================================== -->
+<section id="sec-concurrent-audit" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 9 &bull; Real-Time Assurance</span>
+      <h2 class="section-title">Concurrent Audit System in Banks &amp; Audit Committee</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h3 class="card-title">1. Concurrent Audit System in Commercial Banks (RBI Guidelines)</h3>
+    <p>
+      <strong>Concurrent Audit</strong> is a systematic and timely examination of financial transactions on a <span class="kw-blue">continuous or real-time basis</span>. Unlike post-audit, concurrent audit aims to shorten the time lag between transaction occurrence and its independent verification, catching irregularities before damage occurs.
+    </p>
+
+    <div class="grid-2col" style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:14px;">
+      <div class="inner-box" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px; padding:14px;">
+        <h4 style="color:#1e3a8a; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Mandatory Scope &amp; Branch Coverage</h4>
+        <ul style="font-size:14.5px; line-height:1.6; margin-left:18px;">
+          <li>Branches covering at least <span class="kw-blue">70% of total advances</span> of the bank.</li>
+          <li>Branches covering at least <span class="kw-blue">70% of total deposits</span> of the bank.</li>
+          <li>100% of Treasury operations, Dealing Rooms, and Forex branches.</li>
+          <li>100% of Stressed Asset Management Branches and specialized large corporate lending hubs.</li>
+        </ul>
+      </div>
+
+      <div class="inner-box" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px; padding:14px;">
+        <h4 style="color:#047857; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Core Functional Activities Covered</h4>
+        <ul style="font-size:14.5px; line-height:1.6; margin-left:18px;">
+          <li><strong>Cash &amp; Vault:</strong> Daily physical verification, adherence to retention limits.</li>
+          <li><strong>Investments:</strong> Verification of purchase/sale deals, MTM valuations.</li>
+          <li><strong>Advances:</strong> Pre-disbursement checks, sanction adherence, title deeds, stock inspections.</li>
+          <li><strong>Forex:</strong> NOOP limits, import/export remittances, Nostro reconciliations.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- AUDIT COMMITTEE OF BOARD -->
+  <div id="sec-audit-committee" class="content-card" style="margin-top:20px;">
+    <h3 class="card-title">2. Role of the Audit Committee of the Board (ACB)</h3>
+    <p>
+      The <strong>Audit Committee of the Board (ACB)</strong> operates as the premier governance body in a commercial bank:
+    </p>
+    <ul style="font-size:16px; line-height:1.7; margin-left:20px;">
+      <li>Reviews the half-yearly and annual financial statements before recommending them to the Board.</li>
+      <li>Monitors the compliance with statutory audit observations, LFAR findings, and <strong>RBI Annual Financial Inspection (AFI)</strong> reports.</li>
+      <li>Oversees the functioning of the internal inspection machinery, risk-based internal audit (RBIA), and concurrent audit system.</li>
+      <li>Reviews serious irregularities and frauds exceeding specified thresholds.</li>
+    </ul>
+  </div>
+
+  <!-- INTERACTIVE TYU 2 ACCORDION -->
+  <div id="sec-tyu2" class="accordion-item" style="margin-top:20px;">
+    <button class="accordion-header">
+      <span>🔥 TEST YOUR UNDERSTANDING 2: Revenue Audit &amp; Fee Leakage Verification in Bank Branches</span>
+      <span class="accordion-icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <div class="case-study-box">
+        <h4 style="color:#b91c1c; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Exam Case Scenario (TYU 2)</h4>
+        <p>
+          You have been appointed to conduct a revenue audit / fee leakage verification of a large commercial branch of a nationalized bank. Enumerate the critical areas of advances and fees that you must scrutinize to ensure the bank has correctly levied and recovered its income without revenue leakages.
+        </p>
+      </div>
+
+      <div class="solution-box" style="margin-top:14px; background:#eff6ff; padding:16px; border-radius:8px; border:1px solid #bfdbfe;">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">ICAI Model Audit Verification Checklist:</h4>
+        <ol style="font-size:16px; line-height:1.7; margin-left:20px;">
+          <li><span class="kw-blue">Interest Rates Fed in CBS:</span> Verify that interest rates entered into the core banking system match the sanction letters, and verify proper compounding intervals.</li>
+          <li><span class="kw-green">Processing &amp; Upfront Fees:</span> Check that upfront processing fees, appraisal charges, and annual renewal charges were levied in strict accordance with bank circulars.</li>
+          <li><span class="kw-red">Penal Interest on Stock Statements:</span> Check whether penal interest was levied on borrowers who failed to submit monthly stock statements within the stipulated deadlines.</li>
+          <li><span class="kw-purple">Overdue Interest on Export Credit:</span> Verify levy of overdue interest on export packing credit and export bills purchased running beyond the concessional period.</li>
+          <li><span class="kw-amber">Commission on LCs and Bank Guarantees:</span> Verify that commitment fees and guarantee commissions were collected upfront for the entire validity period.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE TYU 3 ACCORDION -->
+  <div id="sec-tyu3" class="accordion-item" style="margin-top:20px;">
+    <button class="accordion-header">
+      <span>🔥 TEST YOUR UNDERSTANDING 3: Professional Negligence by Stock Auditor &ndash; Fungus-Ridden Rice Stocks</span>
+      <span class="accordion-icon">+</span>
+    </button>
+    <div class="accordion-content">
+      <div class="case-study-box">
+        <h4 style="color:#b91c1c; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">Exam Case Scenario (TYU 3)</h4>
+        <p>
+          CA Neha was appointed by a bank to conduct a stock audit of an agro-processing firm enjoying a Cash Credit facility of ₹ 10 Crores against hypothecation of rice stocks. Neha verified the physical count of gunny bags in the warehouse, counted 50,000 bags matching the stock statement, and certified the drawing power. Two months later, the bank inspected the warehouse and discovered that the rice inside the bags was completely rotten, wet, and fungus-ridden, rendering it zero-value scrap! <strong>Evaluate CA Neha's performance and determine whether she is guilty of professional negligence.</strong>
+        </p>
+      </div>
+
+      <div class="solution-box" style="margin-top:14px; background:#eff6ff; padding:16px; border-radius:8px; border:1px solid #bfdbfe;">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:20px; margin-top:0;">ICAI Model Solution:</h4>
+        <ol style="font-size:16px; line-height:1.7; margin-left:20px;">
+          <li><span class="kw-red">Diligence &amp; Scope of Stock Audit:</span> A stock auditor's duty is not limited merely to counting the external physical containers or gunny bags. The auditor must exercise due professional care to ascertain the <span class="kw-red">condition, quality, and marketability</span> of the hypothecated goods.</li>
+          <li><span class="kw-blue">Omission of Sample Opening:</span> Neha should have opened a representative sample of bags on a test check basis to inspect the physical condition of the grain. Doing so would have immediately revealed the damaged, fungus-ridden stock.</li>
+          <li><span class="kw-purple">Distorted Drawing Power:</span> The rotten rice had zero commercial value and should have been completely excluded from the eligible stock for Drawing Power computation.</li>
+          <li><strong>Conclusion:</strong> CA Neha failed to exercise reasonable care and skill, resulting in gross negligence in the discharge of her professional duties.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 10: TEST YOUR KNOWLEDGE (SOLUTIONS) -->
+<!-- ========================================== -->
+<section id="sec-tyk" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 10 &bull; ICAI Question Bank</span>
+      <h2 class="section-title">Test Your Knowledge (TYK 1 to 28 &ndash; Full Detailed Solutions)</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <p>
+      The following section provides comprehensive, 100% complete answers to all 28 Test Your Knowledge questions from the official ICAI Study Material for Chapter 14 (Unit 1):
+    </p>
+
+    <!-- TYK 1 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 1: Recognition of Dividend Income on Accrual Basis Declared After Financial Year End</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p><strong>The bank's accounting treatment is completely erroneous:</strong></p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li>Under <strong>AS 9 (Revenue Recognition)</strong> and RBI Master Directions, dividend income on shares and units of mutual funds should be recognized on an accrual basis <span class="kw-red">ONLY IF the dividend has been declared by the corporate body/AMC before or on the close of the financial year</span> (March 31), and the bank's right to receive payment has been established.</li>
+          <li>Where dividends are declared <strong>after the balance sheet date</strong>, such income can ONLY be recognized on <span class="kw-blue">actual cash receipt basis</span> in the subsequent year.</li>
+          <li>Therefore, the accrual of dividend income declared after the year-end is in violation of RBI guidelines and AS 9. The auditor must insist on a reversal of this accrued income, or issue a modified audit opinion if material.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 2 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 2: Audit of Compliance with "Statutory Liquidity Ratio" (SLR) Requirements</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>The Statutory Central Auditor (SCA) must verify the following critical aspects:</p>
+        <ol style="font-size:15px; line-height:1.6; margin-left:20px;">
+          <li><strong>Testing NDTL Computation:</strong> Verify the Net Demand and Time Liabilities (NDTL) calculated by the bank for the 12 alternate Fridays during the year as per Form VIII.</li>
+          <li><strong>Verification of Unencumbered Securities:</strong> Examine the composition of approved SLR investments (Central and State Government securities). Verify that securities pledged for borrowings (Repo under LAF, MSF, or market repos) are <span class="kw-red">strictly excluded</span> from eligible SLR assets!</li>
+          <li><strong>Market Valuation of Gold:</strong> Ensure gold holding included in SLR is valued at current market rates not exceeding Mumbai market prices.</li>
+          <li><strong>Verification of Daily Maintenance:</strong> Verify whether the bank maintained the prescribed SLR percentage on every single day of the fortnight.</li>
+          <li><strong>Penalties:</strong> If there was any shortfall, check whether the bank paid or provided for penal interest under Section 24 of the BR Act.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- TYK 3 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 3: Scope of Concurrent Audit in a Bank with Reference to RBI Guidelines</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Under RBI guidelines, the concurrent audit system must cover:</p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>Branch Coverage:</strong> Branches covering at least <span class="kw-blue">70% of total advances</span> and <span class="kw-blue">70% of total deposits</span> of the bank.</li>
+          <li><strong>Specialized Units:</strong> 100% of Treasury operations, Dealing Rooms, Integrated Forex branches, and Stressed Asset Recovery Branches.</li>
+          <li><strong>Operational Scope:</strong> Daily verification of cash balances and security items; pre-disbursement compliance of loan sanctions; monitoring end-use of funds; review of overdue bills; verification of foreign exchange transactions and Nostro accounts; and tracking compliance with KYC/AML norms.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 4 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 4: (a) Central vs. State Government Guaranteed Advances; (b) Audit of Advances Against Life Insurance Policies</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <h5 style="color:#1e3a8a; font-family:'Patrick Hand', cursive; font-size:18px;">(a) Government Guaranteed Advances (Central vs. State):</h5>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>Central Government Guarantee:</strong> An advance guaranteed by the Central Government is treated as a <span class="kw-green">Standard Asset for classification purposes</span> even if no recovery has taken place for 18 months, provided the guarantee has not been repudiated. <strong>However</strong>, the bank CANNOT recognize interest on an accrual basis; interest income must be recognized <span class="kw-red">strictly on actual cash realization</span> basis!</li>
+          <li><strong>State Government Guarantee:</strong> If the advance is guaranteed by a State Government, the sovereign exemption DOES NOT apply if interest/principal is overdue for &gt; 90 days. The account <span class="kw-red">BECOMES AN NPA for both asset classification and provisioning</span>!</li>
+        </ul>
+        <h5 style="color:#047857; font-family:'Patrick Hand', cursive; font-size:18px; margin-top:10px;">(b) Audit Program for Advances Against Life Insurance Policies:</h5>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li>Verify physical custody of the original life insurance policy document.</li>
+          <li>Verify that a formal <strong>Notice of Assignment</strong> has been served on and duly registered by LIC / the insurer in favor of the bank.</li>
+          <li>Verify that the advance amount does not exceed the certified <strong>Surrender Value</strong> of the policy, maintaining the prescribed margin (usually 10-15%).</li>
+          <li>Verify that premium payments are fully up-to-date and the policy is alive and in force.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 5 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 5: Consortium Advances: Lead Bank Certificate vs. Own Record of Recovery (X Ltd. Cash Credit)</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p><strong>The bank's classification of X Ltd. as performing based on the Lead Bank certificate is invalid:</strong></p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>RBI IRAC Rule on Consortium Lending:</strong> Each member bank in a consortium must classify its share of the credit facility and recognize income <span class="kw-red">based strictly on its own record of recovery</span>! A certificate from the Lead Bank has no legal or accounting validity if the member bank's own account is out of order.</li>
+          <li><strong>Analysis of Account:</strong> For the last two quarters (180 days), interest debited was ₹ 1.75 Crores whereas total credits were only ₹ 1.25 Crores. Because credits were insufficient to cover the interest debited during the previous 90-day period, the account is <span class="kw-red">"Out of Order"</span>.</li>
+          <li><strong>Conclusion:</strong> The account must be mandatorily classified as a <span class="kw-red">Non-Performing Asset (Sub-Standard)</span>, unrealized accrued interest must be reversed, and mandatory 15% provision must be created.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 6 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 6: CA Garvit: Evaluating Internal Controls in Credit Card Operations of Liv Bank</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>CA Garvit should evaluate the following specific controls:</p>
+        <ol style="font-size:15px; line-height:1.6; margin-left:20px;">
+          <li><strong>Custody of Unissued Cards:</strong> Strict dual custody over unissued credit cards in fireproof safes; daily physical stock count against dispatch logs.</li>
+          <li><strong>Pin Generation &amp; Dispatch:</strong> Ensuring PIN mailers or green PIN generation occurs through independent, automated, secure channels separate from physical card delivery.</li>
+          <li><strong>Returned/Undelivered Cards:</strong> Logging of undelivered cards returned by courier, verification of customer address before re-dispatch, and immediate destruction of unclaimed cards after 30 days.</li>
+          <li><strong>System Limits &amp; Fraud Monitoring:</strong> Automated boundary checks preventing cards from exceeding sanctioned credit limits, and real-time AI algorithms flagging anomalous transaction patterns.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- TYK 7 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 7: Concurrent Audit Coverage of Foreign Exchange Transactions in a Specialized Branch</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>Import/Export Documentation:</strong> Verification of bills of entry for import remittances under IDPMS and tracking export realization under EDPMS.</li>
+          <li><strong>Nostro Account Reconciliations:</strong> Review of Nostro mirror accounts and prompt investigation of un-reconciled foreign debits.</li>
+          <li><strong>Forward Exchange Contracts:</strong> Verification of underlying genuine commercial trade contracts, booking rates, cancellation charges, and MTM revaluations.</li>
+          <li><strong>Compliance with Limits:</strong> Verification of compliance with Net Overnight Open Position (NOOP) and Aggregate Gap Limits (AGL).</li>
+          <li><strong>FEMA &amp; AML/CFT Compliance:</strong> Verifying adherence to RBI Master Directions on cross-border wire transfers and reporting large/suspicious transactions to FIU-IND.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 8 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 8: FAIR Bank: Disclosure Requirements for Contingent Liabilities under Schedule 12</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Lump sum disclosure of contingent liabilities is impermissible. Under the Third Schedule (Form A) of the BR Act, <strong>Schedule 12</strong> must distinctly segregate:</p>
+        <ol style="font-size:15px; line-height:1.6; margin-left:20px;">
+          <li>Claims against the bank not acknowledged as debts.</li>
+          <li>Liability for partly paid investments.</li>
+          <li>Liability on account of outstanding forward exchange contracts.</li>
+          <li>Guarantees given on behalf of constituents: (a) In India; (b) Outside India.</li>
+          <li>Acceptances, endorsements, and other obligations.</li>
+          <li>Other items for which the bank is contingently liable (e.g., rediscounted bills, underwriting commitments).</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- TYK 9 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 9: Concurrent Audit Verification of Advances for the Audit Period</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Guide your assistant to verify:</p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>Pre-Disbursement Compliance:</strong> Verify that all sanction stipulations, margins, and loan agreements were fulfilled before funds release.</li>
+          <li><strong>Security Creation:</strong> Verify mortgage registration with CERSAI, ROC charge filing within 30 days, and valid hypothecation deeds.</li>
+          <li><strong>Drawing Power Checks:</strong> Verify that DP is calculated on stock statements &lt; 3 months old, deducting unpaid creditors.</li>
+          <li><strong>Post-Disbursement End-Use:</strong> Ensure funds were directly remitted to equipment suppliers/vendors to prevent diversion.</li>
+          <li><strong>Early Warning Signals:</strong> Identify continuous overdrawings, frequent cheque bounces, and non-renewal of credit limits.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 10 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 10: Skip Bank Ltd.: Transfer &amp; Acquisition of Non-Performing Loan Exposures (NPA Sale)</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Under RBI Directions on Transfer of Loan Exposures, the auditor must verify:</p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>Board Approved Policy:</strong> The bank must have a documented policy governing transfer/acquisition of stressed loans.</li>
+          <li><strong>Swiss Challenge Method:</strong> Verify that transfer of stressed loans above the threshold followed a transparent Swiss Challenge bidding process.</li>
+          <li><strong>Derecognition &amp; Provisioning:</strong> On transfer to an Asset Reconstruction Company (ARC) or eligible transferee, verify whether the shortfall (if net sale value &lt; net book value) was immediately charged to P&amp;L. If consideration is received in Security Receipts (SRs), verify valuation and provisioning norms.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 11 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 11: Peculiar Features of Banking Business Differentiating Bank Audits from Commercial Audits</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Refer Section 1: Massive volume of transactions, wide geographical network, automated CBS processing, fiduciary public depositor custody, strict statutory liquidity ratios (CRR/SLR), off-balance-sheet commitments, and pervasive regulatory supervision by the RBI.</p>
+      </div>
+    </div>
+
+    <!-- TYK 12 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 12: Stress Testing Framework and Basel III Capital Regulations</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Refer Section 7: Testing capital resilience under extreme adverse scenarios (ICAAP Pillar 2), and maintaining minimum capital ratios: CET1 5.5%, Tier 1 7.0%, Total Capital 9.0%, Capital Conservation Buffer (CCB) 2.5%, totaling 11.5% regulatory minimum.</p>
+      </div>
+    </div>
+
+    <!-- TYK 13 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 13: Cash Reserve Ratio (CRR) Computation &amp; Verification under Section 42 of RBI Act</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Refer Section 3: Maintaining specified cash balance with RBI based on Net Demand and Time Liabilities (NDTL), daily maintenance rule, verification of Form A, and evaluating penal interest for shortfalls.</p>
+      </div>
+    </div>
+
+    <!-- TYK 14 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 14: Non-Banking Assets Acquired in Satisfaction of Claims (Section 9, BR Act)</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Refer Section 6: Section 9 prohibits holding immovable property acquired in satisfaction of claims for &gt; 7 years (extendable by RBI up to 5 years). Disclosed under Schedule 11 (Other Assets), valued at lower of net book value or market value.</p>
+      </div>
+    </div>
+
+    <!-- TYK 15 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 15: Inoperative Deposit Accounts and Transfer to DEAF Scheme under Section 26A</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Refer Section 7: Inoperative if no customer-induced transaction for &gt; 2 years. Transferred to Depositor Education and Awareness Fund (DEAF) under Section 26A if unclaimed for &gt; 10 years.</p>
+      </div>
+    </div>
+
+    <!-- TYK 16 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 16: Minimum Capital Requirements under Basel III Framework</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Refer Section 7: CET1 5.5%, Tier 1 7.0%, Total Capital 9.0%, CCB 2.5%, Total Capital + CCB 11.5%, CCCB 0-2.5%.</p>
+      </div>
+    </div>
+
+    <!-- TYK 17 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 17: Long Form Audit Report (LFAR) Structure &amp; Branch Auditor Responsibilities</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Refer Section 8: Detailed questionnaire covering cash, clearing, advances, deposits, forex, and internal controls; specific instances must be cited without vague or evasive remarks.</p>
+      </div>
+    </div>
+
+    <!-- TYK 18 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 18: Internal Controls in the Area of Loans and Advances</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Refer Section 2: Credit appraisal independent of sanction, verification of title deeds, ROC charge creation, periodic stock inspections, DP calculations, monitoring overdrawings.</p>
+      </div>
+    </div>
+
+    <!-- TYK 19 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 19: Fair Bank CA Riya: Audit Procedures to Verify "Claims Not Acknowledged as Debts"</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>CA Riya must verify the pending claims (Suppliers ₹ 2.5 Cr, Ex-employees ₹ 1.2 Cr, Tax litigation ₹ 3.0 Cr):</p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>Direct Inquiries &amp; Legal Letters:</strong> Obtain list of all pending litigations from the bank's legal department and send external confirmation letters to the bank's legal counsels.</li>
+          <li><strong>Review of Past Trends &amp; Merits:</strong> Examine the merits of disputes, past judicial precedents, and assessment orders.</li>
+          <li><strong>AS 29 / Ind AS 37 Provisioning Test:</strong> Evaluate whether an outflow of economic resources is <em>probable</em>. If probable and reliably estimable, mandatory provision must be created in P&amp;L; if <em>possible</em>, disclosed under Schedule 12 as Contingent Liabilities.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 20 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 20: Fair Bank: Cash Credit Account of M/s Bright Traders &ndash; Does It Require NPA Classification?</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p><strong>No, the account does NOT require classification as an NPA. It remains a Standard Asset:</strong></p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li><strong>Excess Outstanding:</strong> The outstanding balance exceeded the limit by ₹ 10 Lakhs for only 15 days, which is well within the 90-day overdue threshold.</li>
+          <li><strong>Stock Statement Age:</strong> The stock statement is dated 31st January 2026. On 31st March 2026, it is only 2 months old (less than the 3-month cutoff limit).</li>
+          <li><strong>Renewal Status:</strong> Renewal was due on 28th February 2026 and is under process (delayed by only 1 month, far below the 180-day regulatory cap).</li>
+          <li><strong>Servicing of Interest:</strong> Interest is serviced regularly with no overdue balance.</li>
+          <li><strong>Conclusion:</strong> None of the NPA triggers are breached. The Branch Manager's classification as a Standard Asset is completely correct!</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 21 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 21: Restructured Housing Loan of Mr. X &ndash; Sub-Standard Classification &amp; Provision Rate (Board 20% vs. IRAC 15%)</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <div class="grid-2col" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+          <div>
+            <h5 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:18px;">(i) Justification for Sub-Standard Classification:</h5>
+            <p style="font-size:14.5px; line-height:1.5;">
+              Under the RBI Prudential Framework, when a standard account is restructured due to borrower financial difficulty (increasing tenure and reducing interest), it must be <span class="kw-red">immediately downgraded to Sub-Standard category</span>. CA T is fully justified in insisting on Sub-Standard classification and issuing an MOC.
+            </p>
+          </div>
+          <div>
+            <h5 style="color:#047857; font-family:'Patrick Hand', cursive; font-size:18px;">(ii) Provision Rate to Apply in MOC:</h5>
+            <p style="font-size:14.5px; line-height:1.5;">
+              RBI IRAC norms prescribe a minimum regulatory floor of 15% for secured sub-standard advances. However, if the bank's Board has prescribed a higher, more conservative provision rate of <span class="kw-blue">20%</span>, the bank's policy prevails! CA T must apply the higher rate of <strong>20%</strong> in the MOC.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TYK 22 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 22: SDI Bank Ltd.: Audit of Investments (Segregation of Duties, 8-Month BRs, AFS to HTM Shifting)</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>CA M should advise the audit team as follows:</p>
+        <ol style="font-size:15px; line-height:1.6; margin-left:20px;">
+          <li><strong>Lack of Segregation of Duties:</strong> Having a 4-member team handle all investment functions violates RBI treasury guidelines. There must be strict segregation between Front Office (dealing), Mid Office (risk management), and Back Office (accounting/settlement). Report this control breakdown in the LFAR.</li>
+          <li><strong>BRs Outstanding for &gt; 8 Months:</strong> Bank Receipts (BRs) are valid for only 30 days. BRs outstanding for 8 months represent a critical irregularity and possible accommodation deal. Auditor must physically verify securities or demand immediate delivery, and report to Top Management.</li>
+          <li><strong>AFS to HTM Shifting by ALCO without Board Approval:</strong> Shifting from AFS to HTM is permitted only with the <span class="kw-red">prior explicit approval of the Board of Directors</span>. Approval by ALCO alone is invalid. The shifting must be reversed or regularized via Board approval, and valued at lower of cost or market value.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- TYK 23 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 23: Silver Bank Ltd.: Foreign Exchange Concurrent Audit Procedures (Remittances &amp; Nostro Fluctuations)</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Refer Section 9: Perform end-to-end audit of Nostro mirror accounts, verify exchange rate feeds, investigate unusual debit entries, verify underlying Form A2/A1 declarations for remittances, and test compliance with FEDAI rules and NOOP limits.</p>
+      </div>
+    </div>
+
+    <!-- TYK 24 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 24: Clim Limited CC ₹ 300 Cr: Sub-Limits Across Branches &ndash; Approach of Ludhiana vs. Amritsar Auditor</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>
+          <strong>Asset classification is determined at the BORROWER level, not facility or branch level:</strong>
+        </p>
+        <ul style="font-size:15px; line-height:1.6; margin-left:18px;">
+          <li>Although the Amritsar sub-limit has no credits for &gt; 90 days, the statutory auditor of Ludhiana branch (where the master limit is sanctioned and serviced) must examine the <span class="kw-blue">aggregate operations of Clim Limited across all branches</span>.</li>
+          <li>If the borrower company services interest globally and operations in the primary account are regular, the account is performing.</li>
+          <li>However, if operations across all accounts are deficient and interest remains un-serviced for &gt; 90 days, the ENTIRE advance across Ludhiana, Amritsar, Patiala, and Rajpura branches must be classified as an NPA!</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TYK 25 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 25: Royal Bank Ltd.: Property Acquired in Satisfaction of Claims (FY 2017-18) &ndash; Section 9 BR Act &amp; Title Dispute</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <ol style="font-size:15px; line-height:1.6; margin-left:20px;">
+          <li><strong>(i) Compliance with Section 9 of BR Act:</strong> The property acquired in FY 2017-18 has completed 8 years in FY 2025-26, exceeding the statutory 7-year ceiling! The auditor must verify whether RBI granted a formal extension under Section 9. If not, report the statutory breach.</li>
+          <li><strong>(ii) Balance Sheet Head:</strong> Recorded under <span class="kw-blue">Schedule 11 (Other Assets)</span> as "Non-Banking Assets Acquired in Satisfaction of Claims".</li>
+          <li><strong>(iii) Other Audit Procedures:</strong> Inspect pending title dispute in court; ensure note disclosure of litigation; obtain independent valuation and mandate a write-down if fair market value is lower than net book value.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- TYK 26 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 26: PARK Bank Ltd.: Cash Credit Manish Manufacturing &ndash; Stock Statement &gt; 3 Months Old</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>
+          Under RBI IRAC guidelines, stock statements must not be older than 3 months. Where stock statements are older than 3 months, the <span class="kw-red">Drawing Power (DP) becomes NIL</span>! Consequently, the outstanding balance exceeds the DP, rendering the account <strong>Out of Order</strong>. If this condition continues for &gt; 90 days, the account must be classified as an NPA!
+        </p>
+      </div>
+    </div>
+
+    <!-- TYK 27 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 27: Audit Lapses in Loans and Advances: Non-Maintenance of Prescribed Margins</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>The auditor failed to verify adherence to credit policy margins, omitted physical verification of pledged/hypothecated goods, and failed to report these lapses in the LFAR, demonstrating a failure of professional skepticism and procedural diligence.</p>
+      </div>
+    </div>
+
+    <!-- TYK 28 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>TYK 28: ELITE Bank Ltd.: Non-Banking Asset Disposal (FY 2016-17) &ndash; Valuation &amp; BR Act Compliance</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <h4 style="color:#1e40af; font-family:'Patrick Hand', cursive; font-size:19px; margin-top:0;">ICAI Model Answer:</h4>
+        <p>Similar to TYK 25: Property held for &gt; 9 years exceeds Section 9 BR Act 7-year ceiling; recorded under Schedule 11; pending litigation requires note disclosure; write-down to lower market value is mandatory.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECTION 11: MASTER MATRIX & FLASH TRAPS    -->
+<!-- ========================================== -->
+<section id="sec-master-matrix" class="audit-section">
+  <div class="section-header">
+    <div class="section-title-wrap">
+      <span class="section-badge">Section 11 &bull; Revision Accelerator</span>
+      <h2 class="section-title">Master IRAC Provisioning &amp; Basel III Summary Matrix</h2>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h3 class="card-title">Comprehensive RBI IRAC Provisioning Summary</h3>
+    <div class="table-wrap">
+      <table class="notes-table">
+        <thead>
+          <tr>
+            <th style="width:25%;">Classification Category</th>
+            <th style="width:30%;">Condition / Age Criteria</th>
+            <th style="width:25%;">Secured Portion Rate</th>
+            <th style="width:20%;">Unsecured Portion Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Standard &ndash; Agri / SME</strong></td>
+            <td>Performing satisfactorily</td>
+            <td colspan="2"><span class="kw-green">0.25%</span></td>
+          </tr>
+          <tr>
+            <td><strong>Standard &ndash; CRE-RH</strong></td>
+            <td>Commercial Real Estate (Residential)</td>
+            <td colspan="2"><span class="kw-green">0.75%</span></td>
+          </tr>
+          <tr>
+            <td><strong>Standard &ndash; Commercial Real Estate</strong></td>
+            <td>Commercial Real Estate (General)</td>
+            <td colspan="2"><span class="kw-blue">1.00%</span></td>
+          </tr>
+          <tr>
+            <td><strong>Standard &ndash; Restructured</strong></td>
+            <td>Concession granted to stressed borrower</td>
+            <td colspan="2"><span class="kw-red">5.00%</span></td>
+          </tr>
+          <tr>
+            <td><strong>Standard &ndash; All Others</strong></td>
+            <td>General corporate &amp; retail advances</td>
+            <td colspan="2"><span class="kw-purple">0.40%</span></td>
+          </tr>
+          <tr>
+            <td><strong>Sub-Standard</strong></td>
+            <td>NPA for &le; 12 months</td>
+            <td><span class="kw-blue">15%</span></td>
+            <td><span class="kw-red">25%</span> (20% infra)</td>
+          </tr>
+          <tr>
+            <td><strong>Doubtful 1 (D1)</strong></td>
+            <td>Doubtful up to 1 year</td>
+            <td><span class="kw-amber">25%</span></td>
+            <td><span class="kw-red">100%</span></td>
+          </tr>
+          <tr>
+            <td><strong>Doubtful 2 (D2)</strong></td>
+            <td>Doubtful between 1 to 3 years</td>
+            <td><span class="kw-amber">40%</span></td>
+            <td><span class="kw-red">100%</span></td>
+          </tr>
+          <tr>
+            <td><strong>Doubtful 3 (D3)</strong></td>
+            <td>Doubtful for &gt; 3 years</td>
+            <td><span class="kw-red">100%</span></td>
+            <td><span class="kw-red">100%</span></td>
+          </tr>
+          <tr>
+            <td><strong>Loss Asset</strong></td>
+            <td>Identified as uncollectible</td>
+            <td colspan="2"><span class="kw-red">100%</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- HIGH-FREQUENCY EXAM FLASH TRAPS -->
+    <div id="sec-exam-traps" class="callout callout-danger" style="margin-top:20px;">
+      <div class="callout-title">⚠️ High-Frequency Bank Audit Exam Flash Traps &amp; Pitfalls</div>
+      <ul style="margin:0; padding-left:18px; font-size:16px; line-height:1.7;">
+        <li><span class="kw-red">Trap 1 (Central vs. State Guarantees):</span> Believing all government guarantees prevent NPA classification. <em>Fact:</em> Central Government guarantee protects asset classification (remains standard, but income on cash basis); State Government guarantees DO NOT protect against NPA status if overdue &gt; 90 days!</li>
+        <li><span class="kw-blue">Trap 2 (Consortium Reliance):</span> Relying on the Lead Bank's classification certificate. <em>Fact:</em> Each bank must classify the account based on its OWN record of recovery!</li>
+        <li><span class="kw-purple">Trap 3 (Stock Statements &gt; 3 Months):</span> Overlooking stale stock statements. <em>Fact:</em> If stock statements are &gt; 3 months old, drawing power is legally ZERO, and if active debit exists for &gt; 90 days, it is an NPA!</li>
+        <li><span class="kw-green">Trap 4 (Upgradation of NPAs):</span> Upgrading an NPA after partial interest payment. <em>Fact:</em> An NPA can be upgraded ONLY when the entire arrears of interest and principal are fully recovered!</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================== -->
+<!-- BOTTOM NAVIGATION                          -->
+<!-- ========================================== -->
+<div class="bottom-nav">
+  <a href="group_audits.html" class="nav-btn prev-btn">
+    <span class="nav-arrow">&larr;</span>
+    <span class="nav-text">
+      <span class="nav-sub">Previous Chapter</span>
+      <span class="nav-title">Chapter 13: Group Audits (SA 600)</span>
+    </span>
+  </a>
+
+  <a href="../../notes/audnotes.html" class="nav-btn hub-btn">
+    <span class="nav-text">
+      <span class="nav-sub">CA Final Audit</span>
+      <span class="nav-title">Master Hub &amp; Index</span>
+    </span>
+  </a>
+
+  <a href="nbfc_audit.html" class="nav-btn next-btn">
+    <span class="nav-text">
+      <span class="nav-sub">Next Unit</span>
+      <span class="nav-title">Chapter 14 (U2): Audit of NBFCs</span>
+    </span>
+    <span class="nav-arrow">&rarr;</span>
+  </a>
+</div>
+
+</main>
+</div>
+
+<!-- ========================================== -->
+<!-- SCRIPTS & INTERACTIVITY                   -->
+<!-- ========================================== -->
+<script>
+  // 1. Reading Progress Bar
+  window.addEventListener('scroll', () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    const progressBar = document.getElementById('readingProgress');
+    if (progressBar) {
+      progressBar.style.width = scrolled + '%';
+    }
+  });
+
+  // 2. Mobile Sidebar Toggle
+  const sidebarToggle = document.getElementById('sidebarToggle');
+  const sidebar = document.getElementById('sidebar');
+  if (sidebarToggle && sidebar) {
+    sidebarToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+  }
+
+  // 3. Interactive Accordion Toggle
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      item.classList.toggle('open');
+      const icon = header.querySelector('.accordion-icon');
+      if (icon) {
+        icon.textContent = item.classList.contains('open') ? '−' : '+';
+      }
+    });
+  });
+
+  // 4. Scrollspy for Active Sidebar Links
+  window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    let current = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      if (window.pageYOffset >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,2880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 18: Sustainable Development Goals (SDG) &amp; ESG Assurance &ndash; CA Final Audit Revision Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Kalam:wght@300;400;700&family=Patrick+Hand&family=Patrick+Hand+SC&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-blue: #1e3a8a;
+      --accent-blue: #0284c7;
+      --primary-green: #047857;
+      --accent-red: #b91c1c;
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --bg-canvas: #f8fafc;
+      --card-bg: #ffffff;
+      --border-color: #cbd5e1;
+      --text-main: #000000;
+      --text-muted: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Kalam', cursive;
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--text-main);
+      background-color: var(--bg-canvas);
+      background-image: 
+        radial-gradient(#e2e8f0 1.5px, transparent 1.5px),
+        radial-gradient(#f1f5f9 1.5px, #f8fafc 1.5px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+      padding-top: 56px;
+    }
+
+    /* Top Reading Progress Bar */
+    .reading-progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #1e3a8a, #0284c7, #047857, #7c3aed);
+      width: 0%;
+      z-index: 1000;
+      transition: width 0.1s ease;
+    }
+
+    /* Sticky Topbar */
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 56px;
+      background: #ffffff;
+      border-bottom: 2px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      z-index: 900;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .sidebar-toggle-btn {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 16px;
+      cursor: pointer;
+      color: var(--primary-blue);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .sidebar-toggle-btn:hover {
+      background: #e2e8f0;
+    }
+
+    .topbar-brand {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .topbar-pill {
+      background: #eff6ff;
+      color: var(--primary-blue);
+      border: 1px solid #bfdbfe;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .hub-link-btn {
+      background: #047857;
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .hub-link-btn:hover {
+      background: #065f46;
+    }
+
+    /* Layout structure */
+    .app-layout {
+      display: flex;
+      min-height: calc(100vh - 56px);
+      max-width: 1560px;
+      margin: 0 auto;
+    }
+
+    /* Left Sidebar Navigation */
+    .sidebar {
+      width: 320px;
+      background: #ffffff;
+      border-right: 2px solid var(--border-color);
+      position: sticky;
+      top: 56px;
+      height: calc(100vh - 56px);
+      overflow-y: auto;
+      padding: 20px 14px;
+      flex-shrink: 0;
+      box-shadow: 2px 0 6px rgba(0,0,0,0.02);
+    }
+
+    .sidebar-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px dashed #cbd5e1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .nav-item {
+      margin: 0;
+    }
+
+    .nav-link {
+      display: block;
+      padding: 7px 12px;
+      border-radius: 6px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 16px;
+      font-family: 'Patrick Hand', cursive;
+      transition: all 0.15s ease;
+      line-height: 1.3;
+    }
+
+    .nav-link:hover {
+      background: #f1f5f9;
+      color: var(--primary-blue);
+      padding-left: 16px;
+    }
+
+    .nav-link.active {
+      background: #e0f2fe;
+      color: var(--primary-blue);
+      font-weight: 700;
+      border-left: 4px solid var(--accent-blue);
+    }
+
+    /* Main Content Area */
+    .main-content {
+      flex: 1;
+      padding: 30px 40px;
+      min-width: 0;
+    }
+
+    /* Hero Banner */
+    .chapter-hero {
+      background: linear-gradient(135deg, #1e3a8a 0%, #047857 50%, #065f46 100%);
+      color: #ffffff;
+      padding: 32px 36px;
+      border-radius: 16px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 25px -5px rgba(4, 120, 87, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .chapter-hero::after {
+      content: "BRSR";
+      position: absolute;
+      right: 20px;
+      bottom: -15px;
+      font-size: 110px;
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.08);
+      font-family: 'Space Grotesk', sans-serif;
+      pointer-events: none;
+    }
+
+    .hero-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .hero-badge {
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(4px);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .chapter-hero h1 {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .chapter-hero p {
+      font-size: 19px;
+      max-width: 880px;
+      opacity: 0.95;
+      line-height: 1.6;
+    }
+
+    /* Section Styling */
+    section {
+      background: var(--card-bg);
+      border: 2px solid var(--border-color);
+      border-radius: 14px;
+      padding: 30px 34px;
+      margin-bottom: 32px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      scroll-margin-top: 75px;
+    }
+
+    .section-header {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 12px;
+      margin-bottom: 22px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .section-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 28px;
+      color: var(--primary-blue);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-tag {
+      background: #f0fdf4;
+      color: var(--primary-green);
+      font-size: 14px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      border: 1px solid #bbf7d0;
+    }
+
+    h3 {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 23px;
+      color: var(--accent-blue);
+      margin: 22px 0 10px 0;
+      font-weight: 700;
+    }
+
+    h4 {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 20px;
+      color: var(--text-main);
+      margin: 16px 0 8px 0;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: #000000;
+    }
+
+    ul, ol {
+      margin: 12px 0 20px 26px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: #000000;
+    }
+
+    /* Keyword highlight colors */
+    .k-blue { color: #1e40af; font-weight: 700; }
+    .k-red { color: #b91c1c; font-weight: 700; }
+    .k-green { color: #047857; font-weight: 700; }
+    .k-purple { color: #7c3aed; font-weight: 700; }
+    .k-amber { color: #d97706; font-weight: 700; }
+
+    /* Callout Boxes */
+    .callout {
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin: 20px 0;
+      border-left: 6px solid;
+      background: #f8fafc;
+    }
+
+    .callout-blue {
+      border-left-color: var(--accent-blue);
+      background: #f0f9ff;
+    }
+
+    .callout-green {
+      border-left-color: var(--primary-green);
+      background: #f0fdf4;
+    }
+
+    .callout-red {
+      border-left-color: var(--accent-red);
+      background: #fef2f2;
+    }
+
+    .callout-amber {
+      border-left-color: var(--accent-amber);
+      background: #fffbeb;
+    }
+
+    .callout-purple {
+      border-left-color: var(--accent-purple);
+      background: #faf5ff;
+    }
+
+    .callout-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .callout-blue .callout-title { color: #0369a1; }
+    .callout-green .callout-title { color: #15803d; }
+    .callout-red .callout-title { color: #b91c1c; }
+    .callout-amber .callout-title { color: #b45309; }
+    .callout-purple .callout-title { color: #6b21a8; }
+
+    /* Data Tables in Arial */
+    .table-container {
+      overflow-x: auto;
+      margin: 22px 0;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      text-align: left;
+      background: #ffffff;
+    }
+
+    th {
+      background: #1e3a8a;
+      color: #ffffff;
+      font-weight: 700;
+      padding: 12px 16px;
+      border: 1px solid #3b82f6;
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 11px 16px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+      color: #1e293b;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    tr:hover {
+      background-color: #f1f5f9;
+    }
+
+    /* Interactive Accordion for Q&A */
+    .accordion-item {
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      background: #ffffff;
+      transition: all 0.2s ease;
+    }
+
+    .accordion-item:hover {
+      border-color: #cbd5e1;
+    }
+
+    .accordion-header {
+      padding: 16px 20px;
+      background: #f8fafc;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 21px;
+      font-weight: 700;
+      color: var(--primary-blue);
+    }
+
+    .accordion-header:hover {
+      background: #f1f5f9;
+    }
+
+    .accordion-icon {
+      font-size: 22px;
+      transition: transform 0.2s ease;
+      color: #64748b;
+    }
+
+    .accordion-body {
+      padding: 22px 24px;
+      display: none;
+      border-top: 1px solid #e2e8f0;
+      background: #ffffff;
+      font-family: 'Kalam', cursive;
+      font-size: 18px;
+    }
+
+    .accordion-item.open .accordion-body {
+      display: block;
+    }
+
+    .accordion-item.open .accordion-icon {
+      transform: rotate(180deg);
+      color: var(--accent-blue);
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin: 20px 0;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    }
+
+    .card-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 21px;
+      color: var(--primary-blue);
+      font-weight: 700;
+      margin-bottom: 10px;
+      border-bottom: 1px dashed #cbd5e1;
+      padding-bottom: 6px;
+    }
+
+    /* Bottom Navigation Bar */
+    .bottom-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      margin-top: 40px;
+      padding: 24px;
+      background: #ffffff;
+      border: 2px solid var(--border-color);
+      border-radius: 12px;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 18px;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+
+    .prev-btn {
+      background: #f1f5f9;
+      color: var(--text-main);
+      border: 1px solid #cbd5e1;
+    }
+
+    .prev-btn:hover {
+      background: #e2e8f0;
+    }
+
+    .next-btn {
+      background: #1e3a8a;
+      color: #ffffff;
+    }
+
+    .next-btn:hover {
+      background: #172554;
+    }
+
+    .hub-btn {
+      background: #047857;
+      color: #ffffff;
+    }
+
+    .hub-btn:hover {
+      background: #065f46;
+    }
+
+    .nav-text {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .nav-sub {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      opacity: 0.8;
+    }
+
+    .nav-title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 1024px) {
+      .app-layout {
+        flex-direction: column;
+      }
+      .sidebar {
+        position: fixed;
+        left: -330px;
+        top: 56px;
+        bottom: 0;
+        z-index: 950;
+        transition: left 0.3s ease;
+      }
+      .sidebar.active {
+        left: 0;
+      }
+      .main-content {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Reading Progress Bar -->
+<div class="reading-progress-bar" id="readingProgress"></div>
+
+<!-- Sticky Topbar -->
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="sidebar-toggle-btn" id="sidebarToggle" aria-label="Toggle Navigation">&#9776; Index</button>
+    <a href="../../notes/audnotes.html" class="topbar-brand">
+      <span>CA Final &bull; Advanced Auditing</span>
+    </a>
+  </div>
+  <div class="topbar-right">
+    <span class="topbar-pill">Ch 18: SDG &amp; ESG Assurance</span>
+    <a href="../../notes/audnotes.html" class="hub-link-btn">Back to Hub &rarr;</a>
+  </div>
+</header>
+
+<!-- Application Layout -->
+<div class="app-layout">
+
+  <!-- Left Sidebar Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-title">
+      <span>Chapter Directory</span>
+      <span style="font-size: 14px; color:#64748b;">Ch 18 Index</span>
+    </div>
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#sec-esg-intro" class="nav-link active">1. Intro to ESG &amp; Triple Bottom Line</a></li>
+      <li class="nav-item"><a href="#sec-un-sdgs-17" class="nav-link">2. 17 UN Sustainable Development Goals</a></li>
+      <li class="nav-item"><a href="#sec-global-trends" class="nav-link">3. Global Trends in Sustainability Reporting</a></li>
+      <li class="nav-item"><a href="#sec-tyu-1-benefits" class="nav-link">4. Interactive TYU 1: Sustainability Benefits</a></li>
+      <li class="nav-item"><a href="#sec-integrated-reporting" class="nav-link">5. Integrated Reporting &amp; The 6 Capitals</a></li>
+      <li class="nav-item"><a href="#sec-tyu-2-capitals" class="nav-link">6. Interactive TYU 2: The 6 Capitals in Action</a></li>
+      <li class="nav-item"><a href="#sec-global-jurisdictions" class="nav-link">7. Global ESG Frameworks (US, EU, UK)</a></li>
+      <li class="nav-item"><a href="#sec-evolution-esg-india" class="nav-link">8. Evolution of ESG in India &amp; SEBI Mandate</a></li>
+      <li class="nav-item"><a href="#sec-brsr-structure" class="nav-link">9. SEBI BRSR Architecture (Sections A, B, C)</a></li>
+      <li class="nav-item"><a href="#sec-nine-principles-ngrbc" class="nav-link">10. The 9 Principles of NGRBC in Depth</a></li>
+      <li class="nav-item"><a href="#sec-brsr-core-attributes" class="nav-link">11. BRSR Core &amp; 9 Assurance Attributes</a></li>
+      <li class="nav-item"><a href="#sec-sustainability-assurance" class="nav-link">12. Assurance on BRSR &amp; Greenwashing Risks</a></li>
+      <li class="nav-item"><a href="#sec-icai-initiatives-srsb" class="nav-link">13. ICAI Initiatives: SRSB &amp; Social Audit</a></li>
+      <li class="nav-item"><a href="#sec-climate-risks-financial-audit" class="nav-link">14. Climate-Related Risks in Financial Audit</a></li>
+      <li class="nav-item"><a href="#sec-tyk-q1-to-q10" class="nav-link">15. TYK Questions 1 to 10</a></li>
+      <li class="nav-item"><a href="#sec-tyk-q11-to-q21" class="nav-link">16. TYK Questions 11 to 21</a></li>
+      <li class="nav-item"><a href="#sec-master-synthesis-esg" class="nav-link">17. Master Synthesis &amp; Scope 1-2-3 Matrix</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="main-content">
+
+    <!-- Hero Banner -->
+    <div class="chapter-hero">
+      <div class="hero-badge-row">
+        <span class="hero-badge">ICAI Study Material 2026</span>
+        <span class="hero-badge">CA Final Paper 3: Audit</span>
+        <span class="hero-badge">Chapter 18 Complete Notes</span>
+      </div>
+      <h1>Sustainable Development Goals (SDG) &amp; ESG Assurance</h1>
+      <p>
+        Master the paradigm of non-financial reporting: <strong style="color:#ffffff; text-decoration: underline;">Environment, Social and Governance (ESG)</strong>, the 17 UN SDGs, <strong style="color:#ffffff;">Integrated Reporting (&lt;IR&gt; &amp; the 6 Capitals)</strong>, the statutory evolution of <strong style="color:#ffffff; text-decoration: underline;">SEBI Business Responsibility and Sustainability Reporting (BRSR)</strong>, the 9 Principles of NGRBC, <strong style="color:#ffffff;">BRSR Core Reasonable Assurance</strong>, Climate-Related Financial Statement Risks (Ind AS 36, 16, 37 &amp; SA 570), and all TYU (1&ndash;2) &amp; TYK (1&ndash;21) solutions!
+      </p>
+    </div>
+
+    <!-- SECTION 1: INTRO TO ESG & TRIPLE BOTTOM LINE -->
+    <section id="sec-esg-intro">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🌱 1. Introduction to Sustainability &amp; The ESG Pillars</span>
+        </div>
+        <span class="section-tag">Triple Bottom Line Focus</span>
+      </div>
+
+      <p>
+        Traditional financial reporting focused strictly on single-bottom-line financial profit. Modern corporate governance demands that business performance be measured on the touchstone of the <strong class="k-green">Triple Bottom Line: People, Planet, and Profit</strong>.
+      </p>
+
+      <div class="callout callout-green">
+        <div class="callout-title">💡 What is Sustainability &amp; ESG?</div>
+        <p>
+          <strong>Sustainability</strong> is development that meets the needs of the present without compromising the ability of future generations to meet their own needs. <strong class="k-blue">ESG (Environment, Social, and Governance)</strong> represents the three central pillars used by institutional investors, lenders, and stakeholders to evaluate a company's resilience, ethical footprint, and long-term enterprise value creation.
+        </p>
+      </div>
+
+      <h3>The Three Pillars of ESG</h3>
+      <div class="grid-3">
+        <div class="card" style="border-top: 4px solid var(--primary-green);">
+          <div class="card-title">1. Environmental (E)</div>
+          <p>
+            How an organization impacts and stewards the natural ecosystem:
+          </p>
+          <ul style="font-size: 15px; margin-left: 16px;">
+            <li>Greenhouse Gas (GHG) Emissions (Scope 1, Scope 2, Scope 3).</li>
+            <li>Energy efficiency &amp; renewable energy transition.</li>
+            <li>Water withdrawal, consumption &amp; recycling.</li>
+            <li>Waste management &amp; Extended Producer Responsibility (EPR).</li>
+            <li>Biodiversity conservation &amp; deforestation risks.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="border-top: 4px solid var(--accent-blue);">
+          <div class="card-title">2. Social (S)</div>
+          <p>
+            How an enterprise manages relationships with workforce, suppliers, customers, and society:
+          </p>
+          <ul style="font-size: 15px; margin-left: 16px;">
+            <li>Employee health, safety, and workplace well-being.</li>
+            <li>Gender diversity, equity, and equal remuneration.</li>
+            <li>Human rights across supply chain (no child/forced labor).</li>
+            <li>Corporate Social Responsibility (CSR) in local communities.</li>
+            <li>Consumer protection, product safety &amp; data privacy.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="border-top: 4px solid var(--accent-purple);">
+          <div class="card-title">3. Governance (G)</div>
+          <p>
+            The internal architecture of leadership, rights, and ethical corporate conduct:
+          </p>
+          <ul style="font-size: 15px; margin-left: 16px;">
+            <li>Board composition, independence &amp; diversity.</li>
+            <li>Executive compensation linked to ESG KPIs.</li>
+            <li>Anti-bribery, anti-corruption &amp; whistle-blower mechanisms.</li>
+            <li>Transparent financial reporting &amp; shareholder voting.</li>
+            <li>Responsible public policy advocacy and lobbying.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: 17 UN SDGs -->
+    <section id="sec-un-sdgs-17">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🌐 2. The 17 United Nations Sustainable Development Goals (SDGs)</span>
+        </div>
+        <span class="section-tag">UN 2030 Global Agenda</span>
+      </div>
+
+      <p>
+        Adopted by all 193 United Nations Member States in September 2015, the <strong class="k-blue">2030 Agenda for Sustainable Development</strong> provides a shared global blueprint for peace and prosperity for people and the planet, encompassing <strong class="k-green">17 Sustainable Development Goals (SDGs)</strong> and 169 associated targets:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 12%;">Goal</th>
+              <th style="width: 38%;">UN Sustainable Development Goal</th>
+              <th style="width: 50%;">Corporate Interconnection &amp; Business Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>SDG 1</strong></td>
+              <td><strong>No Poverty</strong></td>
+              <td>Creating living-wage jobs, local supply-chain procurement, targeted CSR livelihoods.</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 2</strong></td>
+              <td><strong>Zero Hunger</strong></td>
+              <td>Food waste reduction, agricultural supply-chain support, employee nutrition programs.</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 3</strong></td>
+              <td><strong>Good Health and Well-being</strong></td>
+              <td>Workplace ergonomics, mental healthcare, occupational safety, health insurance coverage.</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 4</strong></td>
+              <td><strong>Quality Education</strong></td>
+              <td>Apprenticeships, technical upskilling, vocational training, supporting local government schools.</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 5</strong></td>
+              <td><strong>Gender Equality</strong></td>
+              <td>Equal pay for equal work, women on corporate boards, maternity protections, anti-harassment (POSH).</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 6</strong></td>
+              <td><strong>Clean Water and Sanitation</strong></td>
+              <td>Zero Liquid Discharge (ZLD) plants, rainwater harvesting, reducing water withdrawal in water-stressed zones.</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 7</strong></td>
+              <td><strong>Affordable and Clean Energy</strong></td>
+              <td>Rooftop solar installation, power purchase agreements (PPAs) for wind/solar, green hydrogen adoption.</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 8</strong></td>
+              <td><strong>Decent Work &amp; Economic Growth</strong></td>
+              <td>Eradicating forced and child labor across supply chain, fair working hours, safe working conditions.</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 9</strong></td>
+              <td><strong>Industry, Innovation &amp; Infrastructure</strong></td>
+              <td>R&amp;D in low-carbon materials, circular economy tech, retrofitting industrial plants with clean tech.</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 10</strong></td>
+              <td><strong>Reduced Inequalities</strong></td>
+              <td>Employing differently-abled persons, non-discriminatory hiring, equitable wage distribution.</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 11</strong></td>
+              <td><strong>Sustainable Cities &amp; Communities</strong></td>
+              <td>Green certified buildings (LEED), public transport incentives for employees, disaster resilience.</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 12</strong></td>
+              <td><strong>Responsible Consumption &amp; Production</strong></td>
+              <td>Life Cycle Assessment (LCA), recyclable product packaging, eliminating single-use plastics, EPR.</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 13</strong></td>
+              <td><strong>Climate Action</strong></td>
+              <td>Science-Based Targets (SBTi), Net-Zero commitments, reducing Scope 1, 2, and 3 emissions.</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 14</strong></td>
+              <td><strong>Life Below Water</strong></td>
+              <td>Eliminating micro-plastic discharge into waterways, preventing industrial chemical effluent run-offs.</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 15</strong></td>
+              <td><strong>Life on Land</strong></td>
+              <td>Sustainable raw material sourcing (certified timber/palm oil), compensatory afforestation.</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 16</strong></td>
+              <td><strong>Peace, Justice &amp; Strong Institutions</strong></td>
+              <td>Strict anti-corruption codes, transparent business ethics, protecting human rights defenders.</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 17</strong></td>
+              <td><strong>Partnerships for the Goals</strong></td>
+              <td>Public-private partnerships (PPP), sharing green technologies, collaboration with industry associations.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 3: GLOBAL TRENDS IN SUSTAINABILITY REPORTING -->
+    <section id="sec-global-trends">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📈 3. Global Trends in Sustainability Reporting</span>
+        </div>
+        <span class="section-tag">International Frameworks</span>
+      </div>
+
+      <p>
+        The global ESG landscape has evolved rapidly from fragmented voluntary guidelines to <strong class="k-blue">harmonized, mandatory international disclosure standards</strong>:
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">1. Global Reporting Initiative (GRI)</div>
+          <p>
+            The most widely used voluntary sustainability reporting framework globally. Adopts an <strong class="k-purple">"Impact Materiality"</strong> lens (how company activities impact the economy, environment, and society for all multi-stakeholder groups).
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">2. Task Force on Climate-Related Financial Disclosures (TCFD)</div>
+          <p>
+            Established by the Financial Stability Board (FSB). Structures disclosures around 4 core pillars: <strong class="k-blue">Governance, Strategy, Risk Management, and Metrics &amp; Targets</strong>, analyzing physical and transition climate risks.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">3. ISSB: IFRS S1 &amp; IFRS S2 Standards</div>
+          <p>
+            Issued in June 2023 by the International Sustainability Standards Board (ISSB) under the IFRS Foundation:
+            <br>&bull; <strong>IFRS S1:</strong> General Requirements for Disclosure of Sustainability-related Financial Information.
+            <br>&bull; <strong>IFRS S2:</strong> Climate-related Disclosures. Focuses on <strong class="k-green">"Financial Materiality"</strong> for capital market investors.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">4. European CSRD &amp; ESRS</div>
+          <p>
+            The EU Corporate Sustainability Reporting Directive (CSRD) mandates <strong class="k-red">"Double Materiality"</strong> (reporting both financial materiality &ndash; outside-in risks, and impact materiality &ndash; inside-out impacts) across thousands of EU and non-EU companies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: INTERACTIVE TYU 1 (BENEFITS OF SUSTAINABILITY) -->
+    <section id="sec-tyu-1-benefits">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🧠 4. Interactive Test Your Understanding 1 (Benefits of Sustainability Reporting)</span>
+        </div>
+        <span class="section-tag">Value Proposition Case</span>
+      </div>
+
+      <div class="accordion-item open">
+        <div class="accordion-header">
+          <span>📝 TYU 1: Meaning &amp; Expected Commercial Benefits of Sustainability Reporting</span>
+          <span class="accordion-icon">−</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Scenario:</strong></p>
+          <p>
+            Explain the meaning of Sustainability Reporting and elucidate the tangible commercial and strategic benefits derived by a business enterprise from implementing structured sustainability reporting.
+          </p>
+          <div class="callout callout-green" style="margin-top: 14px;">
+            <div class="callout-title">✅ ICAI Official Solution &amp; Strategic Value Analysis</div>
+            <p>
+              <strong>Meaning of Sustainability Reporting:</strong> It is an organization's practice of publicly measuring, disclosing, and communicating its economic, environmental, social, and governance (ESG) performance to internal and external stakeholders in a regular and structured format.
+            </p>
+            <p><strong>Expected Strategic &amp; Commercial Benefits:</strong></p>
+            <ol>
+              <li><strong>Attracting Global Capital &amp; Lowering Cost of Debt:</strong> Institutional investors, sovereign wealth funds, and global banks actively integrate ESG ratings into capital allocation. Strong sustainability reporting unlocks green bonds and sustainability-linked credit at lower interest spreads.</li>
+              <li><strong>Long-Term Enterprise Resilience &amp; Risk Mitigation:</strong> Identifies emerging climate, supply chain, and regulatory compliance risks early, allowing the entity to build adaptive operational resilience.</li>
+              <li><strong>B2B Customer Acquisition &amp; Supply Chain Retention:</strong> Global multinational buyers (e.g., Apple, IKEA, Walmart) require their tier-1 and tier-2 vendors to demonstrate verified sustainability metrics. Robust reporting safeguards lucrative export contracts.</li>
+              <li><strong>Employee Retention &amp; Talent Attraction:</strong> Modern professionals and younger workforce cohorts prefer working for purpose-driven companies that respect human rights, diversity, and environmental stewardship.</li>
+              <li><strong>Operational Cost Reduction:</strong> Energy conservation audits, water recycling, and waste minimization initiatives directly translate into lower manufacturing overheads and higher operating margins.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: INTEGRATED REPORTING & THE 6 CAPITALS -->
+    <section id="sec-integrated-reporting">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📊 5. Integrated Reporting Framework (&lt;IR&gt;) &amp; The 6 Capitals</span>
+        </div>
+        <span class="section-tag">Holistic Value Creation</span>
+      </div>
+
+      <p>
+        The <strong class="k-blue">International Integrated Reporting Framework (&lt;IR&gt;)</strong>, developed by the International Integrated Reporting Council (IIRC, now consolidated under the Value Reporting Foundation / IFRS Foundation), shifts corporate reporting from siloed financial statements to a holistic narrative of <strong class="k-purple">Value Creation over the Short, Medium, and Long Term</strong>.
+      </p>
+
+      <div class="callout callout-blue">
+        <div class="callout-title">💡 The 6 Capitals of Integrated Reporting</div>
+        <p>
+          Integrated Reporting conceives the organization as drawing upon six distinct forms of capital as inputs, transforming them through its business activities, and yielding outputs and outcomes:
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card" style="border-top: 4px solid #1e3a8a;">
+          <div class="card-title">1. Financial Capital</div>
+          <p>
+            The pool of funds available to an organization through equity, debt financing, retained earnings, or grants to support operations and capital investments.
+          </p>
+        </div>
+
+        <div class="card" style="border-top: 4px solid #0284c7;">
+          <div class="card-title">2. Manufactured Capital</div>
+          <p>
+            Physical human-created infrastructure and objects: buildings, equipment, manufacturing factories, logistics fleet, roads, and port terminals.
+          </p>
+        </div>
+
+        <div class="card" style="border-top: 4px solid #7c3aed;">
+          <div class="card-title">3. Intellectual Capital</div>
+          <p>
+            Organizational knowledge-based intangibles: patents, copyrights, software code, AI algorithms, brand reputation, organizational systems, and R&amp;D capabilities.
+          </p>
+        </div>
+
+        <div class="card" style="border-top: 4px solid #d97706;">
+          <div class="card-title">4. Human Capital</div>
+          <p>
+            People's competencies, capabilities, motivation to innovate, leadership skills, safety awareness, and ethical alignment with corporate values.
+          </p>
+        </div>
+
+        <div class="card" style="border-top: 4px solid #059669;">
+          <div class="card-title">5. Social &amp; Relationship Capital</div>
+          <p>
+            Relationships established within and between communities, customers, suppliers, and regulators; shared norms, values, and social license to operate.
+          </p>
+        </div>
+
+        <div class="card" style="border-top: 4px solid #15803d;">
+          <div class="card-title">6. Natural Capital</div>
+          <p>
+            All renewable and non-renewable environmental resources and processes: clean air, water, land, forests, minerals, biodiversity, and ecosystem health.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: INTERACTIVE TYU 2 (THE 6 CAPITALS IN ACTION) -->
+    <section id="sec-tyu-2-capitals">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🧠 6. Interactive Test Your Understanding 2 (Identifying the 6 Capitals)</span>
+        </div>
+        <span class="section-tag">Capitals Categorization</span>
+      </div>
+
+      <div class="accordion-item open">
+        <div class="accordion-header">
+          <span>📝 TYU 2: Categorizing Digital App &amp; CSR Initiatives under the 6 Capitals</span>
+          <span class="accordion-icon">−</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Scenario:</strong></p>
+          <p>
+            A company's annual report states:
+            <br><em>(i) The company increased the number of customers using its digital mobile app, resulting in a 100% surge in digital collections through digital automation and proprietary software enhancements.</em>
+            <br><em>(ii) The company expanded the number of rural beneficiaries under its flagship CSR programme, providing sustainable livelihood opportunities and community drinking water access.</em>
+          </p>
+          <p>
+            <em>Identify which Capitals of Integrated Reporting are being referred to in situations (i) and (ii).</em>
+          </p>
+          <div class="callout callout-green" style="margin-top: 14px;">
+            <div class="callout-title">✅ ICAI Official Solution &amp; Capital Mapping</div>
+            <p>
+              <strong>1. Analysis of Situation (i):</strong>
+            </p>
+            <ul>
+              <li>The initiative involves investments in proprietary technology, digitization, and innovative mobile software platforms to optimize collections.</li>
+              <li>This represents knowledge-based, organizational intangibles and software systems.</li>
+              <li><strong>Capital Referred to:</strong> <strong class="k-blue">Intellectual Capital</strong>.</li>
+            </ul>
+            <p>
+              <strong>2. Analysis of Situation (ii):</strong>
+            </p>
+            <ul>
+              <li>The initiative enhances community well-being, trust, sustainable livelihoods, and social cohesion among local rural stakeholders.</li>
+              <li>This strengthens the company's social license to operate, community goodwill, and shared stakeholder relationships.</li>
+              <li><strong>Capital Referred to:</strong> <strong class="k-green">Social and Relationship Capital</strong>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- SECTION 7: GLOBAL ESG FRAMEWORKS (US, EU, UK, ISSB) -->
+    <section id="sec-global-jurisdictions">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🌐 7. Global ESG Frameworks &amp; International Jurisdictions</span>
+        </div>
+        <span class="section-tag">Global Harmonization</span>
+      </div>
+
+      <p>
+        Across the globe, capital market regulators and standard setters have moved aggressively from voluntary, disparate Corporate Social Responsibility (CSR) guidelines to <strong class="k-blue">mandatory, legally enforceable climate and sustainability disclosures</strong>.
+      </p>
+
+      <div class="grid-2">
+        <!-- United States -->
+        <div class="card" style="border-top: 4px solid var(--primary-blue);">
+          <div class="card-title">🇺🇸 1. United States: US SEC Climate Disclosure Rules</div>
+          <p>
+            In <strong class="k-blue">March 2022</strong>, the US Securities and Exchange Commission (SEC) announced proposed climate-risk disclosure requirements to expand annual reporting (Form 10-K) for publicly traded companies.
+          </p>
+          <ul>
+            <li><strong>TCFD-Guided Disclosures:</strong> Companies must report financially material climate-related physical and transition risks.</li>
+            <li><strong>Climate Risk Governance:</strong> The company's oversight mechanisms and climate risk management processes.</li>
+            <li><strong>Impact on Financials:</strong> How identified climate risks impact business strategy, operational performance, and financial estimates.</li>
+            <li><strong>Transition Plans &amp; Scenarios:</strong> Details of scenario analysis, decarbonization transition plans, and progress on publicly announced climate targets.</li>
+          </ul>
+        </div>
+
+        <!-- United Kingdom -->
+        <div class="card" style="border-top: 4px solid var(--primary-red);">
+          <div class="card-title">🇬🇧 2. United Kingdom: Net Zero 2050 &amp; SDRs</div>
+          <p>
+            In 2019, the UK became the first major economy to pass a law legally targeting <strong class="k-red">Net Zero GHG emissions by 2050</strong>.
+          </p>
+          <ul>
+            <li><strong>Companies Act 2006 (Expanded 2022):</strong> Mandates sustainability and climate reporting aligned with <strong class="k-blue">TCFD recommendations</strong> for large entities (listed, &gt;£500M turnover, or &gt;500 employees).</li>
+            <li><strong>Mandatory Scopes of Reporting:</strong> Strategy, due diligence, environmental impacts, workforce well-being, respect for human rights, anti-corruption, and anti-bribery.</li>
+            <li><strong>SECR:</strong> Streamlined Energy and Carbon Reporting requires reporting of energy consumption and direct/indirect carbon emissions.</li>
+            <li><strong>SDRs (Sustainability Disclosure Requirements):</strong> Introduces an integrated corporate reporting regime for corporates and asset managers.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout callout-purple">
+        <div class="callout-title">🇪🇺 3. European Union: The Global ESG Frontier (SFDR, CSRD &amp; CSDDD)</div>
+        <p>
+          The European Union has enacted the most comprehensive suite of sustainable finance directives:
+        </p>
+        <ul>
+          <li><strong>SFDR (Sustainable Finance Disclosure Regulation - March 2021):</strong> Regulates asset managers and financial advisors to prevent greenwashing and classify ESG funds (Article 6, 8 &amp; 9).</li>
+          <li><strong>EU Taxonomy (Delegated Acts Dec 2021):</strong> Unified classification system defining environmentally sustainable economic activities.</li>
+          <li><strong>CSDDD (Corporate Sustainability Due Diligence Directive - Feb 2022):</strong> Imposes strict duty of care on companies to identify and mitigate human rights and environmental violations across global supply chains.</li>
+          <li><strong>CSRD (Corporate Sustainability Reporting Directive):</strong> Replaces NFRD and mandates double materiality (impact materiality and financial materiality) based on <strong class="k-purple">European Sustainability Reporting Standards (ESRS)</strong>.</li>
+        </ul>
+      </div>
+
+      <h3>Chronological Evolution of Global Sustainable Reporting</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 18%;">Timeline</th>
+              <th style="width: 32%;">Global Milestone / Standard Body</th>
+              <th style="width: 50%;">Core Regulatory Impact &amp; Disclosure Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong class="k-blue">March 2021</strong></td>
+              <td><strong>EU SFDR</strong> Goes into Effect</td>
+              <td>Mandatory transparency for financial market participants regarding sustainability risks and principal adverse impacts (PAI).</td>
+            </tr>
+            <tr>
+              <td><strong class="k-green">October 2021</strong></td>
+              <td><strong>GRI Standards</strong> Updated</td>
+              <td>Global Reporting Initiative released updated Universal Standards 2021 emphasizing human rights due diligence and reporting transparency.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-purple">December 2021</strong></td>
+              <td><strong>EU Commission</strong> Delegated Acts</td>
+              <td>First delegated act defining technical screening criteria for climate change mitigation and climate change adaptation under EU Taxonomy.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-red">February 2022</strong></td>
+              <td><strong>EU CSDDD</strong> Proposal Adopted</td>
+              <td>Mandatory rules for European and large multinational companies to respect human rights and environmental norms across upstream/downstream value chains.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-blue">March 2022</strong></td>
+              <td><strong>US SEC &amp; ISSB</strong> Exposure Drafts</td>
+              <td>US SEC announced mandatory climate disclosure rules; IFRS Foundation's ISSB released Exposure Drafts for IFRS S1 (General Requirements) &amp; IFRS S2 (Climate).</td>
+            </tr>
+            <tr>
+              <td><strong class="k-amber">June 2022</strong></td>
+              <td><strong>China</strong> Enterprise ESG Guidance</td>
+              <td>China's first voluntary guidance standard for enterprise ESG disclosure took effect, establishing a domestic reporting baseline.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 8: EVOLUTION OF ESG IN INDIA & SEBI MANDATE -->
+    <section id="sec-evolution-esg-india">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🇮🇳 8. Evolution of ESG in India &amp; The SEBI Mandate</span>
+        </div>
+        <span class="section-tag">Regulatory Evolution</span>
+      </div>
+
+      <p>
+        India's journey towards sustainable corporate governance has transitioned from voluntary philanthropic appeals to <strong class="k-blue">rigorous, statutory disclosures backed by mandatory reasonable assurance</strong> under SEBI regulations.
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">📜 The Formative Phase (2009 &ndash; 2015)</div>
+          <ul>
+            <li><strong>Dec 2009 &ndash; MCA CSR Voluntary Guidelines:</strong> Earliest policy step by Ministry of Corporate Affairs guiding corporates to integrate social and environmental consciousness into business decisions.</li>
+            <li><strong>2011 &ndash; National Voluntary Guidelines (NVGs):</strong> Formulated 9 foundational principles on socio-economic and environmental responsibilities of business.</li>
+            <li><strong>2012 &ndash; SEBI Business Responsibility Report (BRR):</strong> Mandated BRR for <strong class="k-blue">Top 100 listed entities</strong> based on market cap under Listing Agreement.</li>
+            <li><strong>2014 &ndash; Section 135 Companies Act 2013:</strong> Mandated statutory Corporate Social Responsibility (CSR) spending of 2% net profits for qualifying companies.</li>
+            <li><strong>2015 &ndash; SEBI LODR Regulation 34(2)(f):</strong> BRR expanded to <strong class="k-blue">Top 500 listed entities</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">🚀 The Mandatory Modern Era (2019 &ndash; Present)</div>
+          <ul>
+            <li><strong>March 2019 &ndash; NGRBC Released:</strong> MCA revised NVGs into <strong class="k-green">National Guidelines on Responsible Business Conduct (NGRBC)</strong>, aligning Indian business ethics with UN SDGs and UNGPs.</li>
+            <li><strong>Dec 2019 &ndash; SEBI BRR Expansion:</strong> BRR filing extended to <strong class="k-blue">Top 1000 listed entities</strong> by market capitalization.</li>
+            <li><strong>May 2021 &ndash; SEBI BRSR Circular:</strong> Replaced BRR with the new, comprehensive <strong class="k-purple">Business Responsibility and Sustainability Report (BRSR)</strong>. Voluntary for FY 2021-22, <strong class="k-red">mandatory from FY 2022-23</strong> for Top 1000 listed entities.</li>
+            <li><strong>July 2023 &ndash; SEBI BRSR Core Circular:</strong> Introduced <strong class="k-blue">BRSR Core</strong> with 9 key ESG attributes requiring <strong class="k-green">Reasonable Assurance</strong> and value chain reporting in a phased glide path.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout callout-amber">
+        <div class="callout-title">⚠️ Statutory Nexus: Regulation 34(2)(f) of SEBI (LODR) Regulations, 2015</div>
+        <p>
+          Under <strong class="k-blue">Regulation 34(2)(f)</strong> of SEBI LODR, the annual report of the <strong class="k-red">top 1,000 listed entities</strong> (calculated based on market capitalization as on 31st March of every financial year) shall contain a <strong class="k-green">Business Responsibility and Sustainability Report</strong> describing the initiatives taken by them from an environmental, social, and governance perspective, in the format as specified by SEBI from time to time.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 9: SEBI BRSR ARCHITECTURE (SECTIONS A, B, C) -->
+    <section id="sec-brsr-structure">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🏛️ 9. SEBI BRSR Architecture: Sections A, B &amp; C</span>
+        </div>
+        <span class="section-tag">Structure &amp; Format</span>
+      </div>
+
+      <p>
+        The BRSR framework is structured into three clearly defined, distinct sections designed to capture institutional transparency, strategic commitment, and quantitative operational outcomes.
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 20%;">BRSR Section</th>
+              <th style="width: 35%;">Key Coverage &amp; Disclosures Required</th>
+              <th style="width: 45%;">Statutory Purpose &amp; Critical Parameters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong class="k-blue">Section A<br>General Disclosures</strong></td>
+              <td>
+                Basic entity profile, reporting boundary, products &amp; services, business locations, employees &amp; workforce diversity, holding, subsidiaries &amp; associates, CSR details, and transparency grievances.
+              </td>
+              <td>
+                Establishes the reporting boundary and corporate demographics. Discloses details of permanent and contract employees, gender diversity ratios, differently-abled staff, and turnover rates.
+              </td>
+            </tr>
+            <tr>
+              <td><strong class="k-green">Section B<br>Management &amp; Process Disclosures</strong></td>
+              <td>
+                Questions on policies, management oversight, governance structure, board review mechanisms, leadership accountability, and stakeholder consultation.
+              </td>
+              <td>
+                Evaluates whether the company has approved, documented policies for all 9 NGRBC principles, whether policies are signed off by the Board, specific goals/targets set, and grievance redressal mechanisms established.
+              </td>
+            </tr>
+            <tr>
+              <td><strong class="k-purple">Section C<br>Principle-Wise Performance Disclosures</strong></td>
+              <td>
+                Comprehensive quantitative and qualitative Key Performance Indicators (KPIs) mapped to each of the <strong class="k-purple">9 Principles of NGRBC</strong>.
+              </td>
+              <td>
+                Divided strictly into two indicator categories:<br>
+                1. <strong class="k-red">Essential Indicators (Mandatory):</strong> Environmental metrics (Scope 1 &amp; 2 emissions, energy, water, waste), social safety metrics, training hours, minimum wages.<br>
+                2. <strong class="k-amber">Leadership Indicators (Optional):</strong> Scope 3 GHG emissions, Life Cycle Assessments (LCA), biodiversity footprint, supply chain audits, employee well-being beyond statutory mandates.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-blue">
+        <div class="callout-title">📌 Essential vs. Leadership Indicators: Crucial Exam Distinction</div>
+        <p>
+          In <strong class="k-blue">Section C</strong>, <strong class="k-red">Essential Indicators</strong> are strictly <strong class="k-red">mandatory</strong> for all top 1000 listed entities. Omission of essential indicators constitutes non-compliance with SEBI LODR. In contrast, <strong class="k-green">Leadership Indicators</strong> are <strong class="k-green">voluntary/optional</strong>; they represent aspirational governance. A company omitting Leadership Indicators (e.g., omitting Scope 3 or LCA) remains fully compliant with mandatory BRSR filing requirements (refer to TYK Question 19).
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 10: THE 9 PRINCIPLES OF NGRBC IN DEPTH -->
+    <section id="sec-nine-principles-ngrbc">
+      <div class="section-header">
+        <div class="section-title">
+          <span>⚖️ 10. The 9 Principles of NGRBC in Depth &amp; SDG Mapping</span>
+        </div>
+        <span class="section-tag">NGRBC Principles &amp; Mapping</span>
+      </div>
+
+      <p>
+        The <strong class="k-green">National Guidelines on Responsible Business Conduct (NGRBC)</strong>, released by the Ministry of Corporate Affairs, form the philosophical and operational backbone of BRSR. Every corporate action is tested against these 9 fundamental principles:
+      </p>
+
+      <!-- Principles Accordion / Detailed Cards -->
+      <div class="grid-3">
+        <!-- P1 -->
+        <div class="card" style="border-left: 5px solid #1e3a8a;">
+          <div class="card-title">Principle 1: Ethics, Transparency &amp; Accountability</div>
+          <p><strong>Core Theme:</strong> Businesses should conduct and govern themselves with integrity, and in a manner that is Ethical, Transparent, and Accountable.</p>
+          <ul>
+            <li>Establish governance structures to promote ethical conduct and transparency across all levels.</li>
+            <li>Implement effective anti-corruption and anti-bribery policies.</li>
+            <li>Timely and transparent disclosures on business decisions, financial, and sustainability metrics.</li>
+          </ul>
+        </div>
+
+        <!-- P2 -->
+        <div class="card" style="border-left: 5px solid #047857;">
+          <div class="card-title">Principle 2: Safe &amp; Sustainable Goods &amp; Services</div>
+          <p><strong>Core Theme:</strong> Businesses should provide goods and services in a manner that is sustainable and safe across their entire life cycle.</p>
+          <ul>
+            <li>Design products reducing resource consumption and environmental footprint across life cycle.</li>
+            <li>Conduct Life Cycle Assessments (LCA) for major products and recycle materials.</li>
+            <li>Ensure safe handling, storage, and disposal of hazardous waste and packaging.</li>
+          </ul>
+        </div>
+
+        <!-- P3 -->
+        <div class="card" style="border-left: 5px solid #b91c1c;">
+          <div class="card-title">Principle 3: Employee Well-being</div>
+          <p><strong>Core Theme:</strong> Businesses should respect and promote the well-being of all employees, including those in their value chains.</p>
+          <ul>
+            <li>Equal opportunity, zero discrimination, and fair living wages (no delayed payments).</li>
+            <li>Safe and healthy workplace environments free from occupational hazards.</li>
+            <li>Work-life balance, maternity/paternity leave, skill development, and freedom of association.</li>
+          </ul>
+        </div>
+
+        <!-- P4 -->
+        <div class="card" style="border-left: 5px solid #7c3aed;">
+          <div class="card-title">Principle 4: Stakeholder Responsiveness</div>
+          <p><strong>Core Theme:</strong> Businesses should respect the interests of and be responsive to all stakeholders, especially disadvantaged and vulnerable groups.</p>
+          <ul>
+            <li>Identify all internal and external stakeholders systematically.</li>
+            <li>Understand stakeholder concerns through structured engagement channels.</li>
+            <li>Special responsiveness to marginalized, vulnerable, and underrepresented communities.</li>
+          </ul>
+        </div>
+
+        <!-- P5 -->
+        <div class="card" style="border-left: 5px solid #d97706;">
+          <div class="card-title">Principle 5: Respect Human Rights</div>
+          <p><strong>Core Theme:</strong> Businesses should respect and promote human rights across all operations and relationships.</p>
+          <ul>
+            <li>Adhere to the Constitution of India, Universal Declaration of Human Rights, and UNGPs.</li>
+            <li>Zero tolerance for child labour, forced labour, or modern slavery.</li>
+            <li>Effective grievance redressal mechanisms for human rights abuses.</li>
+          </ul>
+        </div>
+
+        <!-- P6 -->
+        <div class="card" style="border-left: 5px solid #059669;">
+          <div class="card-title">Principle 6: Protection &amp; Restoration of Environment</div>
+          <p><strong>Core Theme:</strong> Businesses should respect and make efforts to protect and restore the environment.</p>
+          <ul>
+            <li>Precautionary approach to environmental challenges and climate risks.</li>
+            <li>Reduction of GHG emissions (Scope 1, Scope 2), water stewardship, and energy efficiency.</li>
+            <li>Responsible effluent treatment, circular economy, and conservation of biodiversity.</li>
+          </ul>
+        </div>
+
+        <!-- P7 -->
+        <div class="card" style="border-left: 5px solid #2563eb;">
+          <div class="card-title">Principle 7: Responsible Public Policy Advocacy</div>
+          <p><strong>Core Theme:</strong> Businesses, when engaging in influencing public and regulatory policy, should do so in a manner that is responsible and transparent.</p>
+          <ul>
+            <li>Advocacy through trade bodies, chambers of commerce, or direct submissions.</li>
+            <li>Promote public interest, fair competition, and sustainable development rather than narrow sectoral gains.</li>
+            <li>Disclose affiliations with industry chambers and public policy submissions.</li>
+          </ul>
+        </div>
+
+        <!-- P8 -->
+        <div class="card" style="border-left: 5px solid #db2777;">
+          <div class="card-title">Principle 8: Inclusive Growth &amp; Equitable Development</div>
+          <p><strong>Core Theme:</strong> Businesses should promote inclusive growth and equitable development.</p>
+          <ul>
+            <li>Mitigate adverse impacts on local communities, land acquisition, and involuntary displacement.</li>
+            <li>Align CSR interventions with local developmental priorities and vulnerable groups.</li>
+            <li>Respect traditional knowledge and ensure fair and equitable benefit sharing.</li>
+          </ul>
+        </div>
+
+        <!-- P9 -->
+        <div class="card" style="border-left: 5px solid #0891b2;">
+          <div class="card-title">Principle 9: Consumer Value &amp; Responsible Marketing</div>
+          <p><strong>Core Theme:</strong> Businesses should engage with and provide value to their consumers in a responsible manner.</p>
+          <ul>
+            <li>Truthful, non-misleading advertisements and complete disclosure of product contents and hazards.</li>
+            <li>Data privacy and protection of customer personal information.</li>
+            <li>Transparent, accessible customer grievance redressal and feedback mechanisms.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Official ICAI Study Material Alignment: 9 BRSR Principles vs. 17 UN SDGs</h3>
+      <p>
+        The table below reflects the exact cross-alignment between the 9 NGRBC/BRSR Principles and the 17 UN Sustainable Development Goals as prescribed in the ICAI syllabus:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%;">UN Sustainable Development Goal</th>
+              <th style="text-align:center;">P1</th>
+              <th style="text-align:center;">P2</th>
+              <th style="text-align:center;">P3</th>
+              <th style="text-align:center;">P4</th>
+              <th style="text-align:center;">P5</th>
+              <th style="text-align:center;">P6</th>
+              <th style="text-align:center;">P7</th>
+              <th style="text-align:center;">P8</th>
+              <th style="text-align:center;">P9</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>SDG 1: No Poverty</strong></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+            </tr>
+            <tr>
+              <td><strong>SDG 2: Zero Hunger</strong></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 3: Good Health &amp; Well-being</strong></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+            </tr>
+            <tr>
+              <td><strong>SDG 4: Quality Education</strong></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 5: Gender Equality</strong></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+            </tr>
+            <tr>
+              <td><strong>SDG 6: Clean Water &amp; Sanitation</strong></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 7: Affordable &amp; Clean Energy</strong></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+            </tr>
+            <tr>
+              <td><strong>SDG 8: Decent Work &amp; Economic Growth</strong></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+            </tr>
+            <tr>
+              <td><strong>SDG 9: Industry, Innovation &amp; Infrastructure</strong></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+            </tr>
+            <tr>
+              <td><strong>SDG 10: Reduced Inequalities</strong></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+            </tr>
+            <tr>
+              <td><strong>SDG 11: Sustainable Cities &amp; Communities</strong></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 12: Responsible Consumption &amp; Production</strong></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 13: Climate Action</strong></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 14: Life Below Water</strong></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 15: Life on Land</strong></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 16: Peace, Justice &amp; Strong Institutions</strong></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+            </tr>
+            <tr>
+              <td><strong>SDG 17: Partnerships for the Goals</strong></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center;"></td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+              <td style="text-align:center; color:#047857; font-weight:bold;">&#x2714;</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 11: BRSR CORE & 9 ASSURANCE ATTRIBUTES -->
+    <section id="sec-brsr-core-attributes">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🎯 11. BRSR Core &amp; The 9 ESG Assurance Attributes</span>
+        </div>
+        <span class="section-tag">SEBI Circular July 2023</span>
+      </div>
+
+      <p>
+        To combat greenwashing and provide institutional investors with verifiable, high-integrity sustainability data, SEBI introduced <strong class="k-blue">BRSR Core</strong> in July 2023. BRSR Core is a targeted subset of BRSR consisting of <strong class="k-green">9 Key ESG Attributes</strong> with precise, standardized Key Performance Indicators (KPIs).
+      </p>
+
+      <div class="callout callout-green">
+        <div class="callout-title">📋 SEBI Phased Glide Path for BRSR Core &amp; Reasonable Assurance</div>
+        <p>
+          SEBI has mandated that listed entities must obtain <strong class="k-red">Reasonable Assurance</strong> on BRSR Core indicators according to the following statutory timeline:
+        </p>
+        <ul>
+          <li><strong>FY 2023&ndash;24:</strong> Top 150 listed entities by market capitalization.</li>
+          <li><strong>FY 2024&ndash;25:</strong> Top 250 listed entities by market capitalization.</li>
+          <li><strong>FY 2025&ndash;26:</strong> Top 500 listed entities by market capitalization.</li>
+          <li><strong>FY 2026&ndash;27:</strong> Top 1,000 listed entities by market capitalization.</li>
+        </ul>
+        <p style="margin-top: 10px;">
+          <strong>Value Chain Disclosures:</strong> Top 250 listed entities must disclose ESG metrics of their value chain (comprising top upstream and downstream partners representing 75% of purchases/sales) on a <em class="k-blue">comply-or-explain basis from FY 2024-25</em>, with limited assurance starting in FY 2025-26.
+        </p>
+      </div>
+
+      <h3>The 9 Key ESG Attributes under BRSR Core</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 8%;">Sr. No.</th>
+              <th style="width: 25%;">ESG Attribute</th>
+              <th style="width: 32%;">Specific Metrics / Parameter Measured</th>
+              <th style="width: 35%;">Reasonable Assurance Focus &amp; Verification Objective</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1</strong></td>
+              <td><strong class="k-green">Greenhouse Gas (GHG) Footprint</strong></td>
+              <td>
+                Scope 1 (Direct emissions from owned/controlled sources) and Scope 2 (Indirect emissions from generation of purchased electricity/heat). GHG Intensity per rupee of turnover.
+              </td>
+              <td>
+                Auditor checks emission factor sources, fuel bills, utility statements, emission meters, and calibration logs to verify quantitative calculation.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>2</strong></td>
+              <td><strong class="k-blue">Water Footprint</strong></td>
+              <td>
+                Total water withdrawn, water consumed, water discharged, and water recycled/reused. Water intensity per rupee of turnover.
+              </td>
+              <td>
+                Inspection of water meter logs, zero liquid discharge (ZLD) certifications, effluent discharge permits, and local municipality water supply contracts.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>3</strong></td>
+              <td><strong class="k-amber">Energy Footprint</strong></td>
+              <td>
+                Total energy consumed from renewable sources vs. non-renewable sources. Energy intensity per unit of revenue.
+              </td>
+              <td>
+                Verify renewable energy purchase obligations (RPOs), on-site solar/wind generation meters, grid bills, and energy audit certificates.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>4</strong></td>
+              <td><strong class="k-red">Waste Management</strong></td>
+              <td>
+                Total hazardous and non-hazardous waste generated; disposal methods (recycled, re-used, incinerated, landfill). Extended Producer Responsibility (EPR) compliance.
+              </td>
+              <td>
+                Verify authorized vendor manifest slips for hazardous waste, EPR compliance filings with State Pollution Control Boards (SPCB), and waste recycling weighbridge receipts.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>5</strong></td>
+              <td><strong class="k-purple">Well-being of Employees &amp; Workers</strong></td>
+              <td>
+                Health insurance, life insurance coverage, annual health check-ups, maternity &amp; paternity benefits, workplace injuries, lost time injury frequency rate (LTIFR).
+              </td>
+              <td>
+                Cross-check payroll data against insurance policies, ESIC returns, incident investigation registers, and safety training attendance records.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>6</strong></td>
+              <td><strong class="k-blue">Gender Diversity</strong></td>
+              <td>
+                Ratio of women employees &amp; workers; percentage of female board directors and Key Managerial Personnel (KMP); median remuneration of female vs. male employees.
+              </td>
+              <td>
+                Examine HR payroll registers, Form MGT-7, appointment letters of independent women directors, and equal pay remuneration audits.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>7</strong></td>
+              <td><strong class="k-green">Inclusive Development &amp; CSR</strong></td>
+              <td>
+                Input-output impact assessment of CSR projects in aspirational districts; percentage of local procurement from MSMEs / small producers.
+              </td>
+              <td>
+                Audit independent impact assessment reports (under Rule 8(3) of CSR Rules), vendor master for Udyam MSME registration, and local community beneficiary receipts.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>8</strong></td>
+              <td><strong class="k-amber">Fairness in Engaging with Customers &amp; Suppliers</strong></td>
+              <td>
+                Days of accounts payable to MSMEs; percentage of supplier dues settled within statutory timelines (45 days under MSMED Act, 2006); customer grievance redressal rates.
+              </td>
+              <td>
+                Reconcile MSME aging disclosures in financial statements (Schedule III) with BRSR vendor records and verified customer complaint resolution logs.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>9</strong></td>
+              <td><strong class="k-purple">Open-ness &amp; Business Conduct</strong></td>
+              <td>
+                Concentration of purchases/sales with related parties; details of fines, penalties, settlements paid to regulatory bodies (SEBI, RBI, MCA, CCI, NGT).
+              </td>
+              <td>
+                Verify Related Party Disclosures under Ind AS 24, legal representation letters, litigation tracking registers, and public regulatory search databases.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+<!-- SECTION 12: ASSURANCE ON BRSR & GREENWASHING RISKS -->
+    <section id="sec-sustainability-assurance">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🛡️ 12. Assurance on BRSR, SSAE 3000 &amp; Greenwashing Risks</span>
+        </div>
+        <span class="section-tag">Audit &amp; Assurance</span>
+      </div>
+
+      <p>
+        As sustainability reporting evolves into a mainstream corporate governance requirement, the risk of <strong class="k-red">greenwashing</strong> &mdash; the practice of making unsubstantiated, exaggerated, or misleading claims about the environmental or social benefits of a product, service, or company &mdash; has elevated independent assurance into an absolute necessity.
+      </p>
+
+      <div class="grid-2">
+        <!-- SSAE 3000 -->
+        <div class="card" style="border-top: 4px solid var(--primary-blue);">
+          <div class="card-title">📜 ICAI SSAE 3000: The Umbrella Assurance Standard</div>
+          <p>
+            The ICAI issued <strong class="k-blue">SSAE 3000: Assurance Engagements on Sustainability Information</strong> to establish mandatory ethical, engagement, and performance standards for auditors.
+          </p>
+          <ul>
+            <li><strong>Nature of Standard:</strong> Umbrella standard applicable to all assurance engagements on non-financial sustainability information, including BRSR and BRSR Core.</li>
+            <li><strong>Scope of Engagement:</strong> Applies to engagements providing either <strong class="k-green">Reasonable Assurance</strong> (positive opinion: "In our opinion, the sustainability information is prepared, in all material respects...") or <strong class="k-amber">Limited Assurance</strong> (negative assurance: "Nothing has come to our attention that causes us to believe...").</li>
+            <li><strong>Effective Date:</strong>
+              <ul>
+                <li><strong class="k-blue">Voluntary:</strong> Assurance reports covering financial periods ending on 31st March 2023.</li>
+                <li><strong class="k-red">Mandatory:</strong> Assurance reports covering financial periods ending on or after <strong class="k-red">31st March 2024</strong>.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- SAE 3410 -->
+        <div class="card" style="border-top: 4px solid var(--primary-green);">
+          <div class="card-title">💨 ICAI SAE 3410: GHG Assurance Engagements</div>
+          <p>
+            Complementing SSAE 3000, the ICAI issued <strong class="k-green">SAE 3410: Assurance Engagements on Greenhouse Gas Statements</strong>.
+          </p>
+          <ul>
+            <li><strong>Target Focus:</strong> Verification of quantification and reporting of direct emissions (<strong class="k-red">Scope 1</strong>), indirect energy emissions (<strong class="k-blue">Scope 2</strong>), and value chain emissions (<strong class="k-purple">Scope 3</strong>).</li>
+            <li><strong>Technical Rigor:</strong> Auditor assesses emission factors (IPCC guidelines, Central Electricity Authority grid factors), calibration of measurement equipment, and conversion formulas.</li>
+            <li><strong>Uncertainty Evaluation:</strong> Evaluates estimation uncertainty and inherent scientific measurement variance in carbon accounting.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Official 5-Step Methodology to Provide Assurance on BRSR</h3>
+      <p>
+        The ICAI framework prescribes a structured, five-stage methodology for assurance practitioners conducting ESG and BRSR audits:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 15%;">Stage</th>
+              <th style="width: 28%;">Methodology Phase</th>
+              <th style="width: 57%;">Key Audit Procedures &amp; Assurance Verification Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong class="k-blue">Phase 1</strong></td>
+              <td><strong>Preliminary Review of ESG Report &amp; Scope</strong></td>
+              <td>
+                Understand the reporting boundary, materiality assessment, organizational scope (operating entities, plants, subsidiaries), applicable regulatory frameworks, and identify key performance indicators (KPIs) subject to assurance.
+              </td>
+            </tr>
+            <tr>
+              <td><strong class="k-green">Phase 2</strong></td>
+              <td><strong>On-site Assessment &amp; Document Review</strong></td>
+              <td>
+                Conduct physical site visits to key manufacturing plants, verify meters, examine operational logbooks, interview site engineers and HR personnel, inspect internal controls over non-financial data gathering, and test sample evidence.
+              </td>
+            </tr>
+            <tr>
+              <td><strong class="k-purple">Phase 3</strong></td>
+              <td><strong>Review of Responses &amp; Clarifications</strong></td>
+              <td>
+                Issue audit query sheets, review management responses and clarifications regarding data discrepancies, variances between operational logs and consolidated ERP dashboards, and evaluate corrective actions.
+              </td>
+            </tr>
+            <tr>
+              <td><strong class="k-amber">Phase 4</strong></td>
+              <td><strong>Preparation &amp; Verification of Findings</strong></td>
+              <td>
+                Synthesize audit findings, compute final verified results, perform analytical reviews against industry benchmarks and prior-year metrics, formulate audit recommendations, and draft the Assurance Report.
+              </td>
+            </tr>
+            <tr>
+              <td><strong class="k-red">Phase 5</strong></td>
+              <td><strong>Issuance of Assessment Report &amp; Statement</strong></td>
+              <td>
+                Obtain signed management representation letter (MRL), conclude on whether sustainability disclosures are materially correct, and issue the formal independent Assurance Report and Assessment Statement for public disclosure.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-red">
+        <div class="callout-title">⚠️ Mitigating Greenwashing: The Auditor's Professional Skepticism</div>
+        <p>
+          Greenwashing poses severe regulatory, legal, and reputational hazards. Common greenwashing practices include:
+        </p>
+        <ul>
+          <li><strong>Hidden Trade-offs:</strong> Labelling a product "eco-friendly" based on a single narrow environmental attribute while ignoring massive toxic waste or carbon intensity.</li>
+          <li><strong>No Proof / Vagueness:</strong> Making broad claims like "100% natural", "zero-carbon", or "socially conscious" without accessible third-party certifications or verifiable scientific data.</li>
+          <li><strong>Selective Boundary Setting:</strong> Excluding high-polluting subsidiaries or outsourced manufacturing plants from the BRSR reporting perimeter.</li>
+          <li><strong>Auditor Safeguard:</strong> The assurance provider must exercise heightened <strong class="k-red">professional skepticism</strong>, independently test source documentation, inspect meter calibration logs, and review external stakeholder complaints.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 13: ICAI INITIATIVES: SRSB, SOCIAL AUDIT & SOCIAL STOCK EXCHANGE -->
+    <section id="sec-icai-initiatives-srsb">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🏛️ 13. ICAI Initiatives: SRSB, Social Stock Exchange &amp; SAS 100&ndash;1600</span>
+        </div>
+        <span class="section-tag">Social Audit Standards</span>
+      </div>
+
+      <p>
+        The Institute of Chartered Accountants of India (ICAI) has played a pioneering institutional role in driving sustainability governance, establishing the <strong class="k-blue">Sustainability Reporting Standards Board (SRSB)</strong>, and creating the normative framework for the <strong class="k-green">Social Stock Exchange (SSE)</strong> in India.
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">🌱 Sustainability Reporting Standards Board (SRSB)</div>
+          <ul>
+            <li>Formed by ICAI in 2020 to develop sustainability reporting standards, audit guidance, and research papers tailored to the Indian economic landscape.</li>
+            <li>Formulated and issued <strong class="k-blue">SSAE 3000</strong>, <strong class="k-green">SAE 3410</strong>, the <strong class="k-purple">Certificate Course on BRSR</strong>, and Technical Guides on BRSR Core assurance.</li>
+            <li>Works actively with SEBI, MCA, and international standard setters (ISSB, GRI) to harmonize Indian sustainability practices with global frameworks.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">📈 Social Stock Exchange (SSE) &amp; Social Auditors</div>
+          <ul>
+            <li><strong>SSE Framework:</strong> Created under SEBI (ICDR) and SEBI (LODR) Regulations as a dedicated platform for listing Social Enterprises &mdash; both <strong class="k-blue">For-Profit Social Enterprises (FPSEs)</strong> and <strong class="k-green">Not-for-Profit Organizations (NPOs)</strong>.</li>
+            <li><strong>Instruments:</strong> NPOs can raise funds by issuing <strong class="k-amber">Zero Coupon Zero Principal (ZCZP) instruments</strong>.</li>
+            <li><strong>Mandatory Social Audit:</strong> Every social enterprise listed or registered on SSE must submit an annual <strong class="k-red">Social Impact Assessment Report</strong> audited by a qualified <strong class="k-purple">Social Auditor</strong>.</li>
+            <li><strong>Social Auditor Eligibility:</strong> A Chartered Accountant holding a valid Certificate of Practice, certified by NISM (Series XXIII), and registered with the <strong class="k-blue">Institute of Social Auditors of India (ISAI)</strong> (a Section 8 SRO established by ICAI).</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Complete Master Table: ICAI Social Audit Standards (SAS 100 to SAS 1600)</h3>
+      <p>
+        The SRSB has issued <strong class="k-green">16 Social Audit Standards (SAS)</strong> establishing mandatory minimum requirements for independent social impact assessments across thematic social development areas:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 14%;">Standard</th>
+              <th style="width: 46%;">Thematic Focus Area (Particulars)</th>
+              <th style="width: 40%;">Key Impact Assessment Audit Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong class="k-blue">SAS 100</strong></td>
+              <td>Eradicating hunger, poverty, malnutrition, and inequality</td>
+              <td>Verification of food security programs, nutritional outreach to malnourished children, and direct poverty alleviation benefits.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-green">SAS 200</strong></td>
+              <td>Promoting healthcare including mental healthcare, sanitation, and making available safe drinking water</td>
+              <td>Audit of patient footfalls, clinical outcomes, sanitation coverage, testing water purity standards, and mental wellness access.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-purple">SAS 300</strong></td>
+              <td>Promoting education, employability, and livelihoods</td>
+              <td>Measuring student retention, dropout reduction, vocational skill training hours, job placement ratios, and income enhancement.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-red">SAS 400</strong></td>
+              <td>Promoting gender equality, empowerment of women, and LGBTQIA+ communities</td>
+              <td>Assessing economic self-reliance, women self-help groups (SHGs), leadership inclusion, and safety/dignity interventions for LGBTQIA+.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-green">SAS 500</strong></td>
+              <td>Ensuring environmental sustainability, addressing climate change including mitigation and adaptation, forest and wildlife conservation</td>
+              <td>Acreage of afforestation, carbon sequestration estimates, wildlife habitat restoration, renewable energy transition in rural areas.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-amber">SAS 600</strong></td>
+              <td>Protection of national heritage, art, and culture</td>
+              <td>Restoration of heritage structures, support to traditional folk artisans, and safeguarding indigenous art forms.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-blue">SAS 700</strong></td>
+              <td>Training to promote rural sports, nationally recognised sports, Paralympic sports, and Olympic sports</td>
+              <td>Infrastructure development, athlete training sponsorships, medal outcomes, and participation rates of differently-abled athletes.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-purple">SAS 800</strong></td>
+              <td>Supporting incubators of social enterprises</td>
+              <td>Number of social startups incubated, seed funding mobilized, technological innovations developed, and survival rate of ventures.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-red">SAS 900</strong></td>
+              <td>Supporting other platforms that strengthen the non-profit ecosystem in fundraising and capacity building</td>
+              <td>Capacity building workshops for NGOs, transparency enhancement, financial governance strengthening, and digital fundraising tools.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-green">SAS 1000</strong></td>
+              <td>Promoting livelihoods for rural and urban poor including enhancing income of Small and Marginal Farmers and workers in non-farm sector</td>
+              <td>Yield improvements, reduction in input costs, formation of Farmer Producer Organizations (FPOs), and fair market price realization.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-blue">SAS 1100</strong></td>
+              <td>Slum area development, affordable housing, and other interventions to build sustainable and resilient cities</td>
+              <td>Quality of low-cost housing units delivered, provision of civic amenities (piped water, sewage, electricity), and disaster resilience.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-amber">SAS 1200</strong></td>
+              <td>Disaster Management, including relief, rehabilitation, and reconstruction activities</td>
+              <td>Speed and reach of emergency relief distribution, rebuilding destroyed infrastructure, and post-disaster livelihood restoration.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-purple">SAS 1300</strong></td>
+              <td>Promotion of financial inclusion</td>
+              <td>Account openings, credit linkage to unbanked populations, financial literacy campaigns, and micro-insurance penetration.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-green">SAS 1400</strong></td>
+              <td>Facilitating access to land and property assets for disadvantaged communities</td>
+              <td>Legal title registrations, secure land tenure for marginalized families, and protection of ancestral land rights.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-blue">SAS 1500</strong></td>
+              <td>Bridging the digital divide in internet and mobile phone access, addressing issues of misinformation and data protection</td>
+              <td>Broadband connectivity in remote villages, digital literacy for school children, cyber-safety, and digital public good adoption.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-red">SAS 1600</strong></td>
+              <td>Promoting welfare of migrants and displaced persons</td>
+              <td>Portability of social welfare schemes, migrant worker transit housing, legal aid, healthcare access, and rehabilitation registries.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 14: CLIMATE-RELATED RISKS IN FINANCIAL STATEMENT AUDIT -->
+    <section id="sec-climate-risks-financial-audit">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📉 14. Climate-Related Risks in Financial Statement Audit &amp; Case Study</span>
+        </div>
+        <span class="section-tag">Ind AS &amp; SA Interplay</span>
+      </div>
+
+      <p>
+        The statutory auditor's primary objective under <strong class="k-blue">SA 200</strong> is to obtain reasonable assurance whether the financial statements as a whole are free from material misstatement. In modern auditing, <strong class="k-red">climate-related risks cannot be relegated to mere narrative footnotes &mdash; they have direct, quantifiable financial impacts</strong> across the statement of profit and loss and balance sheet.
+      </p>
+
+      <div class="grid-2">
+        <!-- Physical vs Transition Risks -->
+        <div class="card" style="border-top: 4px solid var(--primary-amber);">
+          <div class="card-title">🌪️ 1. Physical vs. Transition Climate Risks</div>
+          <ul>
+            <li><strong class="k-amber">Physical Risks:</strong> Arise from climate changes.
+              <ul>
+                <li><em>Acute:</em> Extreme event-driven hazards such as floods, cyclones, severe droughts, and wildfires causing physical destruction of manufacturing assets.</li>
+                <li><em>Chronic:</em> Longer-term shifts such as rising temperatures, sea-level rise, and chronic water stress affecting agricultural yields or factory cooling capacities.</li>
+              </ul>
+            </li>
+            <li><strong class="k-blue">Transition Risks:</strong> Arise from society's transition towards a low-carbon, net-zero economy.
+              <ul>
+                <li><em>Policy &amp; Legal:</em> Carbon pricing, emission caps, phasing out of fossil-fuel vehicles or toxic chemicals, and environmental litigation.</li>
+                <li><em>Technology:</em> Greener, cheaper renewable alternatives making legacy carbon-intensive production lines economically obsolete.</li>
+                <li><em>Market &amp; Reputation:</em> Shifts in consumer preferences and investor capital away from carbon-intensive entities.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- High-Exposure Industries -->
+        <div class="card" style="border-top: 4px solid var(--primary-red);">
+          <div class="card-title">🏭 2. Sectors with Heightened Climate Risk Exposure</div>
+          <p>
+            While every corporate entity experiences environmental impacts, the auditor must apply intensive scrutiny when auditing entities in the following high-impact sectors:
+          </p>
+          <ul>
+            <li><strong>Energy &amp; Utilities:</strong> Thermal power, oil &amp; gas exploration, coal mining (stranded asset risks).</li>
+            <li><strong>Transportation:</strong> Automotive manufacturing, commercial aviation, marine shipping (stringent emission mandates).</li>
+            <li><strong>Materials &amp; Buildings:</strong> Steel, cement, chemicals, construction (intensive carbon footprint and high process emissions).</li>
+            <li><strong>Agriculture, Food &amp; Forestry:</strong> Agrochemicals, timber, commercial farming (water stress, pesticide toxicity bans, soil degradation).</li>
+            <li><strong>Banking &amp; Insurance:</strong> Underwriting risk for catastrophic weather events and loan defaults in carbon-heavy borrower portfolios.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Interplay Between Climate Risks and Indian Accounting Standards (Ind AS)</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 20%;">Accounting Standard</th>
+              <th style="width: 38%;">Specific Climate Risk Channel</th>
+              <th style="width: 42%;">Mandatory Auditor Procedures &amp; Scrutiny</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong class="k-blue">Ind AS 36<br>Impairment of Assets</strong></td>
+              <td>
+                Climate policies, emission restrictions, or carbon taxes may reduce future cash flows or cause premature economic obsolescence of carbon-intensive plants, machinery, or Cash Generating Units (CGUs).
+              </td>
+              <td>
+                Assess whether climate risks represent an <strong class="k-red">impairment indicator</strong>. Test management's value-in-use assumptions (discount rates, terminal growth rates, and carbon price forecasts) for consistency with declared sustainability targets.
+              </td>
+            </tr>
+            <tr>
+              <td><strong class="k-green">Ind AS 16 / Ind AS 38<br>PPE &amp; Intangibles</strong></td>
+              <td>
+                Regulatory phase-outs of polluting technologies (e.g., combustion engines or toxic chemical plants) or technological obsolescence may dramatically reduce useful economic lives and residual values.
+              </td>
+              <td>
+                Review whether management has revised depreciation periods and amortization schedules. Verify if stranded assets have been decommissioned and written off.
+              </td>
+            </tr>
+            <tr>
+              <td><strong class="k-amber">Ind AS 2<br>Inventories</strong></td>
+              <td>
+                Bans on toxic chemicals, non-compliant packaging, or shifts in consumer demand may cause inventory of finished goods or raw materials to become unsellable or obsolete.
+              </td>
+              <td>
+                Verify whether inventory is valued at <strong class="k-amber">lower of cost and Net Realizable Value (NRV)</strong>. Check for slow-moving stocks facing regulatory bans or expiry.
+              </td>
+            </tr>
+            <tr>
+              <td><strong class="k-red">Ind AS 37<br>Provisions &amp; Contingencies</strong></td>
+              <td>
+                Legal or constructive obligations to clean up contaminated industrial land, restore mining sites, pay environmental fines, or settle toxic emission lawsuits. Onerous supply contracts.
+              </td>
+              <td>
+                Inspect environmental inspection notices, pollution control orders, legal correspondence, and determine if reliable estimates exist requiring provision vs. contingent liability disclosure.
+              </td>
+            </tr>
+            <tr>
+              <td><strong class="k-purple">Ind AS 109<br>Financial Instruments</strong></td>
+              <td>
+                Lending institutions face increased credit risk and loan defaults from corporate borrowers operating in climate-vulnerable or carbon-intensive industries.
+              </td>
+              <td>
+                Test whether banks and NBFCs have factored forward-looking climate risk scenarios into their <strong class="k-purple">Expected Credit Loss (ECL)</strong> probability of default (PD) calculations.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-blue">
+        <div class="callout-title">🔍 Auditing Standards Interplay: SA 315, SA 570, SA 701 &amp; SA 720</div>
+        <ul>
+          <li><strong>SA 315 (Risk Assessment):</strong> The auditor must understand the entity's regulatory and environmental environment, identifying whether climate risks create risks of material misstatement.</li>
+          <li><strong>SA 570 (Going Concern):</strong> Immediate climate-related events (severe flood destroying sole plant, cancellation of environmental operating licence) or inability to obtain insurance may cast significant doubt on going concern.</li>
+          <li><strong>SA 701 (Key Audit Matters):</strong> Climate matters requiring significant management estimation (e.g., valuation of long-lived assets subject to energy transition) should be communicated as KAM in listed company audit reports.</li>
+          <li><strong>SA 720 (Auditor's Responsibilities Relating to Other Information):</strong> The auditor is statutorily required to read the <strong class="k-blue">Other Information</strong> (including BRSR, Sustainability Reports, and Chairman's statement in the Annual Report) to identify any <strong class="k-red">material inconsistency</strong> between the non-financial sustainability narratives and the audited financial statements. If a company claims zero carbon emissions by 2030 in its BRSR but reflects zero capital expenditure or R&amp;D provisions in its financials, an inconsistency arises!</li>
+        </ul>
+      </div>
+
+      <!-- MASTER CASE STUDY: AGROCHEMICAL SECTOR -->
+      <div class="callout callout-green" style="margin-top: 30px;">
+        <div class="callout-title">📖 Comprehensive ICAI Case Study: Agrochemical Sector &ndash; Company A vs. Company B</div>
+        <p>
+          <strong>Industry Background:</strong> The Indian agrochemical sector is a <strong class="k-blue">$35 billion industry</strong>, segmented by product type (fertilizers, pesticides, adjuvants, plant growth regulators) and application. India is a prominent global exporter. The Central Insecticide Board (CIB) categorizes agrochemical toxicity using a 4-color labeling system: <span style="color:#b91c1c; font-weight:bold;">Red (Extremely Toxic)</span>, <span style="color:#d97706; font-weight:bold;">Yellow (Highly Toxic)</span>, <span style="color:#2563eb; font-weight:bold;">Blue (Moderately Toxic)</span>, and <span style="color:#047857; font-weight:bold;">Green (Slightly Toxic)</span>. Counterfeits account for 25% of sales.
+        </p>
+        <p>
+          <strong>Company A vs. Company B Facts:</strong> Both are top 1,000 listed entities.
+        </p>
+        <ul>
+          <li><strong>Company A:</strong> Proactively aligns with evolving ESG guidelines. In Dec 2025, it eliminated red-labeled products and in 2025 discontinued yellow-labeled products. Increased R&amp;D spending for sustainable alternatives and upgraded backend packaging with interactive barcodes and multilingual instructions. Revenue initially dropped by 8%, but the entity is shielded against impending regulatory bans.</li>
+          <li><strong>Company B:</strong> Focuses strictly on short-term revenue and profits. 14% of top-selling products are red- and yellow-labeled. Witnessed 9% YoY revenue growth and plans to expand production of its bestselling insecticide DDT (red-labeled). Company B has now been approached by the regulatory authority for an active investigation requiring extensive tests to prove products have no adverse health effects.</li>
+        </ul>
+
+        <div style="margin-top: 20px; border-top: 2px dashed #bbf7d0; padding-top: 15px;">
+          <h4 style="font-family:'Patrick Hand', cursive; font-size:22px; color:#1e3a8a; margin-bottom:12px;">Case Study Questions &amp; ICAI Master Solutions:</h4>
+          
+          <div class="accordion-item" style="border: 1px solid #cbd5e1; margin-bottom: 12px;">
+            <div class="accordion-header" style="font-size: 19px;">
+              <span>Sub-Question 1: What are the reporting requirements for each of the two companies?</span>
+              <span class="accordion-icon">&#9660;</span>
+            </div>
+            <div class="accordion-body">
+              <p><strong>Statutory Reporting Requirements under SEBI &amp; Ind AS:</strong></p>
+              <ul>
+                <li>Both Company A and Company B fall within the <strong class="k-blue">top 1,000 listed entities</strong> in India. Consequently, under <strong class="k-blue">Regulation 34(2)(f) of SEBI (LODR) Regulations, 2015</strong>, both companies must mandatorily furnish a <strong class="k-green">Business Responsibility and Sustainability Report (BRSR)</strong> as part of their Annual Report.</li>
+                <li><strong>Principle-Wise Performance Disclosures (Section C):</strong> Both entities must report on all 9 NGRBC principles, with special emphasis on <strong class="k-purple">Principle 2</strong> (safe and sustainable products across life cycle), <strong class="k-green">Principle 6</strong> (environmental protection and hazardous waste discharge), and <strong class="k-amber">Principle 9</strong> (consumer safety, safe usage instructions, and non-misleading labeling).</li>
+                <li><strong>BRSR Core:</strong> Depending on whether they fall within the top 150/250/500 thresholds, they must obtain <strong class="k-red">Reasonable Assurance</strong> on BRSR Core attributes.</li>
+                <li><strong>Financial Statement Disclosures (Ind AS):</strong> Both entities must disclose environmental expenditures, R&amp;D investments, and any legal contingencies or provisions in compliance with Ind AS 37 and Ind AS 38.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-item" style="border: 1px solid #cbd5e1; margin-bottom: 12px;">
+            <div class="accordion-header" style="font-size: 19px;">
+              <span>Sub-Question 2: Which company has absorbed the impacts of future regulatory changes and what steps were taken?</span>
+              <span class="accordion-icon">&#9660;</span>
+            </div>
+            <div class="accordion-body">
+              <p><strong>Company A has successfully absorbed the impacts:</strong></p>
+              <ul>
+                <li><strong>Absorption of Regulatory Transition:</strong> By taking an initial revenue decline of 8% to systematically phase out toxic chemicals, Company A has eliminated structural dependency on products that face imminent legal bans under global treaties and tightening Indian environmental standards.</li>
+                <li><strong>Concrete Steps Taken by Company A:</strong>
+                  <ul>
+                    <li>Eliminated red-labeled products in Dec 2025 and discontinued yellow-labeled products in 2025.</li>
+                    <li>Substantially increased Research and Development (R&amp;D) spending to innovate green, non-toxic bio-agrochemical alternatives.</li>
+                    <li>Upgraded backend digital infrastructure to implement unique interactive barcodes on packaging, enabling farmers to verify product authenticity and prevent counterfeit usage.</li>
+                    <li>Published multilingual usage instructions to overcome language barriers and prevent farmer health hazards.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-item" style="border: 1px solid #cbd5e1;">
+            <div class="accordion-header" style="font-size: 19px;">
+              <span>Sub-Question 3: What would be the consideration by the auditors of Company A and Company B in the audit of financial statements?</span>
+              <span class="accordion-icon">&#9660;</span>
+            </div>
+            <div class="accordion-body">
+              <p><strong>Considerations for Auditors of Company A:</strong></p>
+              <ul>
+                <li><strong>Ind AS 36 (Impairment):</strong> Verify if the discontinuation of red and yellow products resulted in idle manufacturing plant and machinery requiring an impairment loss write-down.</li>
+                <li><strong>Ind AS 2 (Inventories):</strong> Check whether any remaining stocks of red/yellow chemicals or packaging materials have been written down to Net Realizable Value (NRV).</li>
+                <li><strong>Ind AS 38 (Intangibles / R&amp;D):</strong> Audit increased R&amp;D expenditure to determine whether costs are properly classified as research expenses (charged to P&amp;L) or development assets (capitalized under Ind AS 38 criteria).</li>
+                <li><strong>SA 720:</strong> Review BRSR disclosures regarding product greening for consistency with financial line items.</li>
+              </ul>
+              <p style="margin-top: 12px;"><strong>Considerations for Auditors of Company B:</strong></p>
+              <ul>
+                <li><strong>Ind AS 37 (Provisions &amp; Contingencies):</strong> Since Company B faces an active regulatory investigation, the auditor must assess whether an outflow of economic resources is probable (requiring a provision for fines/recalls) or possible (requiring disclosure as a <strong class="k-red">Contingent Liability</strong>).</li>
+                <li><strong>Ind AS 36 (Impairment of DDT Plant):</strong> If DDT and red-labeled chemicals face impending bans, dedicated production lines may suffer sudden obsolescence and require substantial impairment write-offs.</li>
+                <li><strong>SA 570 (Going Concern):</strong> Since red/yellow products constitute 14% of revenue and include bestselling items, an adverse regulatory outcome could threaten business viability. The auditor must assess going concern assumptions.</li>
+                <li><strong>SA 701 (KAM) &amp; SA 720:</strong> Consider communicating the regulatory investigation as a Key Audit Matter (KAM). Reconcile BRSR environmental claims against the regulatory scrutiny.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- SECTION 15: TEST YOUR KNOWLEDGE (QUESTIONS 1 TO 10) -->
+    <section id="sec-tyk-q1-to-q10">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📝 15. Test Your Knowledge: Questions 1 to 10</span>
+        </div>
+        <span class="section-tag">Interactive Exam Q&amp;A (Part 1)</span>
+      </div>
+
+      <p>
+        Click each question below to toggle the detailed, full-mark ICAI study material solution:
+      </p>
+
+      <!-- Q1 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q1: Which companies are mandatorily required to furnish BRSR under SEBI regulations?</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Statutory Applicability under SEBI (LODR) Regulations, 2015:</strong></p>
+          <ul>
+            <li>As per the SEBI circular dated May 10, 2021, and <strong class="k-blue">Regulation 34(2)(f) of SEBI LODR Regulations</strong>, the requirement to submit the <strong class="k-green">Business Responsibility and Sustainability Report (BRSR)</strong> is mandatory for the <strong class="k-red">top 1,000 listed entities</strong> based on market capitalization calculated as of 31st March of each financial year.</li>
+            <li><strong>Timeline:</strong>
+              <ul>
+                <li><strong>FY 2021&ndash;22:</strong> Voluntary for top 1,000 listed entities to facilitate institutional readiness.</li>
+                <li><strong>FY 2022&ndash;23 onwards:</strong> Strictly <strong class="k-red">mandatory</strong> for top 1,000 listed entities.</li>
+              </ul>
+            </li>
+            <li><strong>Filing Mode:</strong> The BRSR must be integrated into and furnished as part of the company's Annual Report submitted to the recognized stock exchanges (BSE / NSE).</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q2: What are the nine principles of BRSR and how do they link with the 17 UN SDGs?</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>The Nine Principles of BRSR (Derived from NGRBC 2019):</strong></p>
+          <ol>
+            <li><strong>Principle 1:</strong> Integrity, Ethics, Transparency, and Accountability (SDG 16, 17).</li>
+            <li><strong>Principle 2:</strong> Safe and Sustainable Goods and Services across Life Cycle (SDG 2, 6, 7, 8, 9, 10, 12, 13, 14, 15).</li>
+            <li><strong>Principle 3:</strong> Well-being of All Employees, including Value Chain (SDG 1, 3, 4, 5, 8, 11).</li>
+            <li><strong>Principle 4:</strong> Responsiveness to All Stakeholders, particularly Marginalized (SDG 5, 8, 11, 16).</li>
+            <li><strong>Principle 5:</strong> Respect and Promote Human Rights (SDG 1, 5, 8, 11, 16).</li>
+            <li><strong>Principle 6:</strong> Protection and Restoration of Environment (SDG 2, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16).</li>
+            <li><strong>Principle 7:</strong> Responsible and Transparent Public Policy Advocacy (SDG 2, 6, 7, 8, 12, 13, 14, 15, 16, 17).</li>
+            <li><strong>Principle 8:</strong> Inclusive Growth and Equitable Development (SDG 1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 13, 14, 15, 17).</li>
+            <li><strong>Principle 9:</strong> Value to Consumers in a Responsible Manner (SDG 2, 4, 6, 11, 12, 13, 14, 15, 16, 17).</li>
+          </ol>
+          <p>
+            <em>Linkage:</em> The NGRBC principles operationalize the global 2030 Agenda of the 17 UN SDGs into concrete, micro-level business practices, enabling Indian corporates to report verifiable contributions to national and global sustainability targets.
+          </p>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q3: What are the prominent global trends in sustainable reporting?</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Key Global Trends Shaping Sustainability Disclosures:</strong></p>
+          <ul>
+            <li><strong>Transition from Voluntary to Mandatory:</strong> Global regulators (EU, US SEC, UK FCA, SEBI) have made non-financial ESG reporting compulsory for large and listed companies.</li>
+            <li><strong>Consolidation of Global Standard Setters:</strong> Establishment of the <strong class="k-blue">International Sustainability Standards Board (ISSB)</strong> by the IFRS Foundation to formulate a comprehensive global baseline (IFRS S1 and IFRS S2).</li>
+            <li><strong>Double Materiality Doctrine:</strong> Championed by the EU CSRD, requiring entities to report both how climate/ESG issues impact their business (<em class="k-blue">financial materiality</em>) and how their operations impact the planet and society (<em class="k-green">impact materiality</em>).</li>
+            <li><strong>Value Chain Diligence:</strong> Legislative mandates (e.g., EU CSDDD and SEBI BRSR Core) extending due diligence and disclosure obligations across upstream and downstream supply chains.</li>
+            <li><strong>Independent Assurance Imperative:</strong> Increasing regulatory mandates requiring third-party limited and reasonable assurance (under SSAE 3000 / IAASB ISSA 5000) to eradicate greenwashing.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q4: What is the methodology of providing assurance on BRSR?</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>5-Step Methodology under ICAI Guidelines &amp; SSAE 3000:</strong></p>
+          <ol>
+            <li><strong>Phase 1 &ndash; Preliminary Review:</strong> Review the entity's ESG report, determine engagement scope, understand materiality assessment, and identify assurance criteria.</li>
+            <li><strong>Phase 2 &ndash; On-site Assessment &amp; Document Review:</strong> Conduct physical site inspections, review data measurement systems, test calibration records, inspect operational logs, and evaluate internal controls over sustainability reporting.</li>
+            <li><strong>Phase 3 &ndash; Review of Responses &amp; Clarifications:</strong> Issue observations/queries to management and evaluate written clarifications and corrective evidence.</li>
+            <li><strong>Phase 4 &ndash; Verification &amp; Assessment Report Preparation:</strong> Verify synthesized metrics against source documents, evaluate benchmark deviations, formulate audit findings, and draft recommendations.</li>
+            <li><strong>Phase 5 &ndash; Issuance of Final Report &amp; Statement:</strong> Secure management representation letter and issue the formal independent Assurance Report / Statement.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q5: What is the auditor's role regarding ESG aspects in an audit of financial statements?</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Statutory Role under SA 200, Ind AS, and SAs:</strong></p>
+          <ul>
+            <li><strong>Reasonable Assurance on Financials:</strong> Obtain reasonable assurance whether financial statements as a whole are free from material misstatements arising from climate/ESG risks.</li>
+            <li><strong>Accounting Estimates &amp; Impairment:</strong> Scrutinize asset impairment (<strong class="k-blue">Ind AS 36</strong>), revision of useful lives (<strong class="k-green">Ind AS 16</strong>), inventory obsolescence (<strong class="k-amber">Ind AS 2</strong>), and decommissioning/environmental provisions (<strong class="k-red">Ind AS 37</strong>).</li>
+            <li><strong>Going Concern Evaluation:</strong> Evaluate whether environmental regulations, carbon taxes, or loss of operating permits threaten going concern viability under <strong class="k-purple">SA 570</strong>.</li>
+            <li><strong>Other Information Consistency:</strong> Read BRSR and ESG disclosures published in the Annual Report under <strong class="k-blue">SA 720</strong> to ensure complete consistency with audited financial figures.</li>
+            <li><strong>Audit Reporting:</strong> Consider inclusion of climate matters in <strong class="k-amber">Key Audit Matters (SA 701)</strong> or Emphasis of Matter paragraphs (SA 706).</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Q6 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q6: CTO Limited (Fintech &ndash; Data Protection inputs &amp; DPI taskforce). How to disclose under BRSR? Is it mandatory?</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Analysis under Principle 7 (Responsible Public Policy Advocacy):</strong></p>
+          <ul>
+            <li><strong>Applicable Principle:</strong> Principle 7 states that businesses, when engaging in influencing public and regulatory policy, should do so in a manner that is responsible and transparent.</li>
+            <li><strong>Disclosure 1 (Draft Personal Data Protection Bill submission to Ministry):</strong>
+              <ul>
+                <li>This represents a direct policy advocacy submission to a regulatory authority.</li>
+                <li>Under Section C, Principle 7, <strong class="k-red">Essential Indicator 2</strong> requires disclosure of details of public policy positions advocated by the entity. This disclosure is <strong class="k-red">strictly mandatory</strong>.</li>
+              </ul>
+            </li>
+            <li><strong>Disclosure 2 (Inputs to Industry Chamber on DPI for banks/fintechs):</strong>
+              <ul>
+                <li>Section C, Principle 7, <strong class="k-blue">Essential Indicator 1</strong> requires disclosure of trade chambers and associations of which the entity is a member. This is <strong class="k-red">mandatory</strong>.</li>
+                <li>However, detailed project-level working inputs submitted via an industry taskforce are reported under <strong class="k-green">Leadership Indicators</strong> or as qualitative narratives under Essential Indicators.</li>
+              </ul>
+            </li>
+            <li><strong>Conclusion:</strong> CTO Limited must mandatorily disclose its membership in industry chambers and details of public policy advocacy submissions made directly to the Ministry.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Q7 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q7: Discuss the nature of ESG reporting and how corporates can contribute to SDGs.</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Nature of ESG Reporting:</strong></p>
+          <ul>
+            <li>ESG reporting encompasses disclosures of data, metrics, and narrative strategies demonstrating how an entity creates sustainable value across Environmental, Social, and Governance dimensions.</li>
+            <li>It is both <strong class="k-blue">quantitative</strong> (Scope 1/2 GHG emissions, water consumed, lost time injury frequency, female board representation) and <strong class="k-green">qualitative</strong> (anti-corruption policies, human rights due diligence, decarbonization roadmaps).</li>
+          </ul>
+          <p style="margin-top: 10px;"><strong>How Corporates Contribute to SDGs:</strong></p>
+          <ul>
+            <li><strong>Operational Greening:</strong> Reducing carbon footprint and adopting circular manufacturing (SDGs 6, 7, 12, 13).</li>
+            <li><strong>Inclusive Workplace Practices:</strong> Providing fair wages, workplace safety, and gender equality (SDGs 1, 5, 8).</li>
+            <li><strong>Strategic CSR &amp; Philanthropy:</strong> Investing in rural education, malnutrition eradication, and healthcare infrastructure (SDGs 2, 3, 4).</li>
+            <li><strong>Technological Innovation:</strong> Developing affordable clean technology and partnering across sectors (SDGs 9, 17).</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Q8 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q8: SU Limited &ndash; Principle emphasizing that business decisions should be open to disclosure. Explain core elements.</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Identification: Principle 1 of NGRBC / BRSR:</strong></p>
+          <p>
+            <em>"Businesses should conduct and govern themselves with integrity, and in a manner that is Ethical, Transparent, and Accountable."</em>
+          </p>
+          <p><strong>Core Elements of Principle 1:</strong></p>
+          <ul>
+            <li><strong>(a) Governance Structure:</strong> Establish structures, procedures, and practices promoting ethical conduct across all levels and operating units.</li>
+            <li><strong>(b) Transparent Disclosures:</strong> Business decisions, financial statements, and sustainability impacts must be disclosed transparently and be accessible to all interested stakeholders.</li>
+            <li><strong>(c) Zero Bribery &amp; Corruption:</strong> Implement robust policies and internal controls to prevent bribery, corruption, extortion, and fraudulent practices.</li>
+            <li><strong>(d) Accountability for Misconduct:</strong> Establish clear accountability mechanisms for any non-compliance or breach of ethical codes.</li>
+            <li><strong>(e) Fair Competition:</strong> Promote fair market competition and refrain from anti-competitive trade arrangements.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Q9 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q9: Sukaran Ltd. (Textiles &ndash; Delayed salaries, excessive hours, safety issues). Which principle applies? Mention core elements.</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Identification: Principle 3 of NGRBC / BRSR:</strong></p>
+          <p>
+            <em>"Businesses should respect and promote the well-being of all employees, including those in their value chains."</em>
+          </p>
+          <p><strong>Core Elements of Principle 3:</strong></p>
+          <ul>
+            <li><strong>(a) Timely &amp; Fair Remuneration:</strong> Ensure timely payment of fair living wages, statutory benefits, and social security entitlements (no delayed salaries).</li>
+            <li><strong>(b) Equal Opportunity &amp; Non-Discrimination:</strong> Equal treatment regardless of caste, gender, religion, or disability across recruitment and promotions.</li>
+            <li><strong>(c) Freedom of Association:</strong> Respect employees' right to freedom of association, collective bargaining, and grievance redressing.</li>
+            <li><strong>(d) Workplace Safety &amp; Health:</strong> Provide safe working conditions, personal protective equipment (PPE), hazard mitigation, and zero workplace accidents.</li>
+            <li><strong>(e) Work-Life Balance:</strong> Maintain humane working hours, overtime restrictions, and leave entitlements to support employee well-being.</li>
+            <li><strong>(f) Prohibition of Harassment:</strong> Zero tolerance for physical, psychological, or sexual harassment in the workplace.</li>
+            <li><strong>(g) Continuous Skill Upgradation:</strong> Provide continuous training, vocational upskilling, and professional career progression.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Q10 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q10: SkinGlow Ltd. (Skincare &ndash; False "100% natural" claim, preservatives found, no complaint mechanism). Which principle applies?</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Identification: Principle 9 of NGRBC / BRSR:</strong></p>
+          <p>
+            <em>"Businesses should engage with and provide value to their consumers in a responsible manner."</em>
+          </p>
+          <p><strong>Analysis of Violations &amp; Core Elements:</strong></p>
+          <ul>
+            <li><strong>Misleading Advertising (Element f):</strong> SkinGlow Ltd.'s claim of "100% natural and chemical-free" when artificial fragrance and preservatives are present violates the requirement that advertisements must not expose customers to misleading or confusing information.</li>
+            <li><strong>Full Disclosure of Hazards (Element c):</strong> Entities must transparently disclose all potential adverse impacts and chemical contents on product packaging.</li>
+            <li><strong>Accessible Grievance Redressal (Element g):</strong> The lack of a functioning complaint form or helpline violates the mandate to maintain accessible, transparent grievance redressal and feedback mechanisms.</li>
+            <li><strong>Data Privacy (Element d):</strong> Customer data collected during e-commerce transactions must be securely safeguarded.</li>
+            <li><strong>Corrective Action:</strong> SkinGlow Ltd. must immediately revise packaging labels, rectify advertising claims, and launch a dedicated customer care helpline.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 16: TEST YOUR KNOWLEDGE (QUESTIONS 11 TO 21) -->
+    <section id="sec-tyk-q11-to-q21">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📝 16. Test Your Knowledge: Questions 11 to 21</span>
+        </div>
+        <span class="section-tag">Interactive Exam Q&amp;A (Part 2)</span>
+      </div>
+
+      <!-- Q11 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q11: GreenTech Manufacturing (High energy use, untreated waste, non-renewable reliance). Which principle applies? Core elements?</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Identification: Principle 6 of NGRBC / BRSR:</strong></p>
+          <p>
+            <em>"Businesses should respect and make efforts to protect and restore the environment."</em>
+          </p>
+          <p><strong>Core Elements of Principle 6:</strong></p>
+          <ul>
+            <li><strong>(a) Precautionary Approach:</strong> Adopt a precautionary approach to environmental challenges in all operations and investments.</li>
+            <li><strong>(b) Pollution Prevention:</strong> Prevent, minimize, and remediate all industrial pollution (air, water, noise, hazardous waste discharges).</li>
+            <li><strong>(c) Resource Efficiency &amp; Circularity:</strong> Optimize energy, water, and raw material consumption; shift towards renewable energy sources.</li>
+            <li><strong>(d) Climate Change Mitigation:</strong> Measure and reduce Scope 1 and Scope 2 GHG emissions, aligning with the Paris Agreement and National Action Plan on Climate Change (NAPCC).</li>
+            <li><strong>(e) Biodiversity Protection:</strong> Ensure business operations do not harm fragile ecosystems, forests, or wildlife habitats.</li>
+            <li><strong>(f) Environmental Management Systems:</strong> Implement ISO 14001 or equivalent certified systems and establish emergency response protocols.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Q12 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q12: ELEC Ltd. (Electrical appliances &ndash; Exaggerated ads, undisclosed disposal, unresolved privacy complaints, service withdrawal). Analysis?</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Analysis under Principle 9 (Provide Value to Consumers Responsibly):</strong></p>
+          <ul>
+            <li><strong>Overstating Benefits:</strong> Violates Element (f) prohibiting misleading, deceptive advertising.</li>
+            <li><strong>Lack of Safe Disposal Info:</strong> Violates Element (e) requiring companies to educate consumers on safe usage, reuse, recycling, and responsible e-waste disposal.</li>
+            <li><strong>Unresolved Privacy &amp; Defect Issues:</strong> Violates Element (d) (consumer data privacy) and Element (g) (transparent, responsive grievance redressal).</li>
+            <li><strong>Discontinuing Services in Vulnerable Areas:</strong> Violates Element (h) which directs that when providing essential goods/services, entities must enable universal access in a non-discriminatory manner.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Q13 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q13: Climate-related risks in financial statement audit for Top 1000 listed entities under BRSR. Explain auditor's role.</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Auditor's Statutory Responsibilities:</strong></p>
+          <ul>
+            <li><strong>Reasonable Assurance:</strong> Auditor must consider whether climate-related physical and transition risks create material misstatements in the financial statements.</li>
+            <li><strong>Industry-Specific Scrutiny:</strong> Special focus on carbon-intensive sectors (power, steel, automotive, chemicals, banking).</li>
+            <li><strong>Financial Impact Assessment:</strong> Evaluate asset impairment (Ind AS 36), useful lives of PPE (Ind AS 16), environmental cleanup liabilities (Ind AS 37), and inventory write-downs (Ind AS 2).</li>
+            <li><strong>Consistency Audit (SA 720):</strong> Auditor must read BRSR disclosures to identify material inconsistencies between published sustainability narratives and audited financial statements.</li>
+            <li><strong>Emphasis of Matter &amp; KAM:</strong> Highlight fundamental climate matters under SA 706 (EOM) or communicate key estimation uncertainties under SA 701 (Key Audit Matters).</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Q14 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q14: GAS Limited (Renewable energy, green hydrogen). Principle: "Close participation and collaboration with entities &amp; marginalized groups"?</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Identification: Principle 8 of NGRBC / BRSR:</strong></p>
+          <p>
+            <em>"Businesses should promote inclusive growth and equitable development."</em>
+          </p>
+          <p><strong>Core Elements of Principle 8:</strong></p>
+          <ul>
+            <li><strong>(a) Social Impact Assessment:</strong> Implement systems to identify and address economic, cultural, and social impacts on local communities.</li>
+            <li><strong>(b) Mitigation of Negative Impacts:</strong> Track and mitigate business-induced impacts like land acquisition and infrastructure construction.</li>
+            <li><strong>(c) Empowering Marginalized Groups:</strong> Innovate products and technologies that improve the well-being and livelihood of marginalized sections.</li>
+            <li><strong>(d) Local Priority Alignment:</strong> Align CSR investments with local and regional developmental needs.</li>
+            <li><strong>(e) Involuntary Displacement Protection:</strong> Avoid forced relocation, and where unavoidable, provide mutually agreed, fair, and timely rehabilitation.</li>
+            <li><strong>(f) Equitable Benefit Sharing:</strong> Respect traditional knowledge and ensure equitable sharing of commercial benefits.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Q15 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q15: KLM Chemicals &amp; Paints Ltd. (Committed to ESG transparency). What should be addressed in the Social Pillar?</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Components of the Social Pillar in ESG:</strong></p>
+          <p>
+            The Social pillar addresses relationships the entity fosters with employees, suppliers, customers, and local communities:
+          </p>
+          <ul>
+            <li><strong>1. Human Capital:</strong> Labour management, occupational health &amp; safety, employee training, and value chain labour standards.</li>
+            <li><strong>2. Product Liability:</strong> Product safety, chemical toxicity management, packaging safety, consumer data privacy, and responsible investments.</li>
+            <li><strong>3. Stakeholder Opposition:</strong> Community relations, avoiding controversial sourcing, and managing social licenses to operate.</li>
+            <li><strong>4. Social Opportunity:</strong> Enhancing community access to communications, healthcare, finance, and nutritional well-being.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Q16 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q16: MK Steel Manufacturing Ltd. (Untreated slag/dust in landfills, 50% energy increase, 5 units). Which principle applies?</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Identification: Principle 6 of NGRBC / BRSR:</strong></p>
+          <p>
+            <em>"Businesses should respect and make efforts to protect and restore the environment."</em>
+          </p>
+          <p><strong>Required Corporate Actions for MK Steel:</strong></p>
+          <ul>
+            <li><strong>Waste Minimization &amp; Circularity:</strong> Cease dumping untreated slag in landfills; invest in slag granulation and recycling into green cement or construction aggregates.</li>
+            <li><strong>Energy Efficiency:</strong> Conduct comprehensive energy audits, install waste heat recovery systems (WHRS), and increase renewable power procurement.</li>
+            <li><strong>Pollution Control &amp; Emission Scrubbers:</strong> Install high-efficiency electrostatic precipitators (ESP) and baghouse filters to control air dust.</li>
+            <li><strong>Reporting in BRSR:</strong> Under Section C, Principle 6, mandatorily report Scope 1 &amp; 2 emissions, total waste generated, and disposal methods under Essential Indicators.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Q17 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q17: Pink Ltd. (Global manufacturing &ndash; Misleading ads, lack of transparent grievance channels). Which principle applies?</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Identification: Principle 9 of NGRBC / BRSR:</strong></p>
+          <p>
+            <em>"Businesses should engage with and provide value to their consumers in a responsible manner."</em>
+          </p>
+          <p><strong>Analysis:</strong></p>
+          <ul>
+            <li>Pink Ltd. must eliminate misleading advertising claims under Element (f), providing accurate and truthful descriptions of products.</li>
+            <li>Establish transparent, responsive, and accessible customer grievance redressal portals under Element (g), tracking complaint resolution turnaround times (TAT) and disclosing grievance numbers in BRSR Section C, Principle 9 Essential Indicators.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Q18 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q18: Miger Ltd. (Non-financial aspects &ndash; Cutting-edge research, employee skills, supplier ties, eco-infrastructure). Which framework?</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Framework: The Integrated Reporting (&lt;IR&gt;) Framework &amp; The 6 Capitals:</strong></p>
+          <ul>
+            <li><strong>Intellectual Capital:</strong> Cutting-edge research, patents, software algorithms, and institutional knowledge.</li>
+            <li><strong>Human Capital:</strong> Employee skill development, technical competencies, motivations, and workplace culture.</li>
+            <li><strong>Social and Relationship Capital:</strong> Strong supplier relationships, customer goodwill, community partnerships, and stakeholder trust.</li>
+            <li><strong>Manufactured Capital:</strong> Eco-friendly infrastructure, state-of-the-art factories, and green physical logistics.</li>
+            <li><strong>Natural Capital:</strong> Water, clean energy, renewable resources, and conservation of ecosystems.</li>
+            <li><strong>Financial Capital:</strong> Equity, debt funding, cash flows, and capital allocation for long-term value creation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Q19 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q19: XYZ Ltd. (Disclosed Section A, B, and C Essential metrics, but omitted LCA and biodiversity). Is it compliant?</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Assessment of Compliance with Minimum Mandatory Disclosures:</strong></p>
+          <ul>
+            <li><strong>Coverage of BRSR Sections:</strong>
+              <ul>
+                <li><em>Section A (General Disclosures):</em> Covered workforce strength, gender diversity, and subsidiaries &rarr; <strong class="k-green">Complied</strong>.</li>
+                <li><em>Section B (Management Disclosures):</em> Covered policies on ethics, diversity, human rights, and environment &rarr; <strong class="k-green">Complied</strong>.</li>
+                <li><em>Section C (Principle-wise Disclosures):</em> Disclosed energy consumption, emissions, and employee training &rarr; <strong class="k-green">Complied with Essential Indicators</strong>.</li>
+              </ul>
+            </li>
+            <li><strong>Omission of Life Cycle Assessment (LCA) &amp; Biodiversity:</strong>
+              <ul>
+                <li>Under the BRSR framework, LCA and advanced biodiversity conservation are classified strictly as <strong class="k-amber">Leadership Indicators</strong>.</li>
+                <li>Leadership Indicators are <strong class="k-blue">voluntary / optional</strong>. Failure to disclose optional leadership metrics does <strong class="k-red">not</strong> constitute non-compliance.</li>
+              </ul>
+            </li>
+            <li><strong>Conclusion:</strong> XYZ Ltd. has fully complied with the <strong class="k-green">minimum mandatory disclosure requirements</strong> of BRSR.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Q20 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q20: ALP Chemicals &amp; Paints (Untreated chemical water into river, plans ETP). What should be addressed in the Environment Pillar?</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>The Four Central Elements of the Environment Pillar:</strong></p>
+          <ul>
+            <li><strong>1. Pollution &amp; Waste:</strong> Treatment of toxic chemical effluents, Zero Liquid Discharge (ZLD), safe packaging waste disposal, and e-waste management.</li>
+            <li><strong>2. Natural Resources:</strong> Water stress mitigation, freshwater withdrawal reduction, sustainable raw material sourcing, and land use conservation.</li>
+            <li><strong>3. Climate Change:</strong> Reduction of direct carbon emissions (Scope 1), energy indirect emissions (Scope 2), product carbon footprints, and climate change vulnerability.</li>
+            <li><strong>4. Environmental Opportunities:</strong> Transition to clean technology, green building standards, and adoption of renewable energy.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Q21 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q21: Omega Technologies (AI R&amp;D patents, employee AI training, community digital literacy, tech volunteering). Classify capitals.</span>
+          <span class="accordion-icon">&#9660;</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Classification under Integrated Reporting (&lt;IR&gt;) Framework:</strong></p>
+          <ul>
+            <li><strong>(i) Investment in R&amp;D for AI products &amp; Patents Registered:</strong> Primary contribution is to <strong class="k-blue">Intellectual Capital</strong> (patents, software IP, algorithms, and technical know-how).</li>
+            <li><strong>(ii) Advanced AI Training Conducted for Employees:</strong> Primary contribution is to <strong class="k-green">Human Capital</strong> (enhancing workforce skills, capabilities, and innovative competencies), which in turn feeds Intellectual Capital.</li>
+            <li><strong>(iii) Community Digital Literacy Programs in Rural Areas:</strong> Primary contribution is to <strong class="k-purple">Social and Relationship Capital</strong> (building community goodwill, rural trust, and societal development).</li>
+            <li><strong>(iv) Employee Volunteering for Non-Profit Technology Solutions:</strong> Primary contribution is to <strong class="k-purple">Social and Relationship Capital</strong> (external social impact) and secondary benefit to Human Capital (employee engagement and purpose).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 17: MASTER COMPARATIVE SYNTHESIS & FLASH REVISION -->
+    <section id="sec-master-synthesis-esg">
+      <div class="section-header">
+        <div class="section-title">
+          <span>⚡ 17. Master Synthesis: Scope 1-2-3 Matrix &amp; Comparative Tables</span>
+        </div>
+        <span class="section-tag">Exam Booster</span>
+      </div>
+
+      <p>
+        Consolidate the core examinable distinctions across greenhouse gas accounting, sustainability assurance, and corporate reporting evolutions:
+      </p>
+
+      <h3>1. Greenhouse Gas Protocol: Scope 1 vs. Scope 2 vs. Scope 3 Emissions</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 18%;">Emission Scope</th>
+              <th style="width: 28%;">Definition &amp; Ownership Boundary</th>
+              <th style="width: 30%;">Practical Industry Examples</th>
+              <th style="width: 24%;">BRSR Status &amp; Assurance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong class="k-red">Scope 1<br>(Direct Emissions)</strong></td>
+              <td>Emissions from operations that are owned or controlled by the reporting organization.</td>
+              <td>Combustion of diesel in company generators, natural gas in boilers, fuel burned by company delivery trucks, chemical reaction emissions.</td>
+              <td><strong class="k-red">Mandatory Essential Indicator</strong> in BRSR.<br>Reasonable assurance required under BRSR Core.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-blue">Scope 2<br>(Indirect Energy)</strong></td>
+              <td>Emissions from the generation of purchased or acquired electricity, steam, heating, or cooling consumed by the entity.</td>
+              <td>Purchased grid electricity from state DISCOMs used to power corporate offices, server rooms, and manufacturing machinery.</td>
+              <td><strong class="k-blue">Mandatory Essential Indicator</strong> in BRSR.<br>Reasonable assurance required under BRSR Core.</td>
+            </tr>
+            <tr>
+              <td><strong class="k-purple">Scope 3<br>(Value Chain)</strong></td>
+              <td>All other indirect emissions occurring across upstream and downstream value chain beyond corporate ownership.</td>
+              <td>Business travel, employee commuting, extraction of purchased raw materials, third-party freight transport, end-of-life disposal of sold goods.</td>
+              <td><strong class="k-amber">Leadership Indicator</strong> in main BRSR.<br>Top 250 entities must report on comply-or-explain basis from FY 24-25.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>2. Limited Assurance vs. Reasonable Assurance (SSAE 3000 / SAE 3410)</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 22%;">Comparison Dimension</th>
+              <th style="width: 39%;">Limited Assurance Engagement</th>
+              <th style="width: 39%;">Reasonable Assurance Engagement</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Engagement Objective</strong></td>
+              <td>Reduction in engagement risk to an <strong class="k-amber">acceptable level</strong> (higher risk than reasonable assurance).</td>
+              <td>Reduction in engagement risk to an <strong class="k-green">acceptably low level</strong> as the basis for a positive form of conclusion.</td>
+            </tr>
+            <tr>
+              <td><strong>Nature of Procedures</strong></td>
+              <td>Primarily limited to inquiries of management, analytical procedures, and high-level evaluation of data consistency.</td>
+              <td>Comprehensive audit procedures including tests of operating controls, physical on-site inspections, third-party recalculations, and meter calibration tests.</td>
+            </tr>
+            <tr>
+              <td><strong>Opinion Formulation</strong></td>
+              <td><strong class="k-amber">Negative Form:</strong> <em>"Nothing has come to our attention that causes us to believe that the sustainability report is not prepared, in all material respects..."</em></td>
+              <td><strong class="k-green">Positive Form:</strong> <em>"In our opinion, the sustainability information is prepared, in all material respects, in accordance with the applicable reporting criteria."</em></td>
+            </tr>
+            <tr>
+              <td><strong>BRSR Core Mandate</strong></td>
+              <td>Permitted for value chain disclosures for top 250 listed entities in initial phases (FY 2025-26).</td>
+              <td><strong class="k-red">Mandatorily required by SEBI</strong> for BRSR Core indicators across Top 150 &rarr; 250 &rarr; 500 &rarr; 1000 entities.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>3. Paradigm Shift: Financial vs. Integrated vs. BRSR Reporting</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 20%;">Feature</th>
+              <th style="width: 26%;">Traditional Financial Report</th>
+              <th style="width: 27%;">Integrated Report (&lt;IR&gt;)</th>
+              <th style="width: 27%;">SEBI BRSR Reporting</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Primary Audience</strong></td>
+              <td>Shareholders, banks, and creditors.</td>
+              <td>Providers of financial capital and strategic stakeholders.</td>
+              <td>Regulators (SEBI), investors, employees, society, and consumers.</td>
+            </tr>
+            <tr>
+              <td><strong>Information Focus</strong></td>
+              <td>Historical financial performance (profit, assets, liabilities).</td>
+              <td>Multi-capital value creation (6 Capitals) across short, medium, and long term.</td>
+              <td>Operational performance across 9 NGRBC principles and 9 BRSR Core attributes.</td>
+            </tr>
+            <tr>
+              <td><strong>Regulatory Mandate</strong></td>
+              <td>Companies Act 2013, Ind AS / AS, SEBI LODR.</td>
+              <td>Voluntary globally (encouraged by SEBI circular 2017 for top 500).</td>
+              <td><strong class="k-red">Mandatory</strong> for Top 1000 listed entities under SEBI LODR Regulation 34(2)(f).</td>
+            </tr>
+            <tr>
+              <td><strong>Assurance Basis</strong></td>
+              <td>Independent Audit under SAs (Reasonable Assurance).</td>
+              <td>Mixed / Voluntary non-financial assurance.</td>
+              <td><strong class="k-green">Mandatory Reasonable Assurance</strong> for BRSR Core under SSAE 3000.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-purple">
+        <div class="callout-title">🏆 Top Exam Mnemonics &amp; Memory Shortcuts</div>
+        <ul>
+          <li><strong>The 6 Capitals of &lt;IR&gt; &ndash; "F-M-I-H-S-N":</strong> <strong class="k-blue">F</strong>inancial, <strong class="k-green">M</strong>anufactured, <strong class="k-purple">I</strong>ntellectual, <strong class="k-red">H</strong>uman, <strong class="k-amber">S</strong>ocial &amp; relationship, <strong class="k-green">N</strong>atural.</li>
+          <li><strong>BRSR Sections &ndash; "A-B-C":</strong> Section <strong class="k-blue">A</strong> (General &ndash; demographics &amp; structure), Section <strong class="k-green">B</strong> (Management &ndash; policies &amp; governance), Section <strong class="k-purple">C</strong> (Principle-wise performance &ndash; Essential vs. Leadership).</li>
+          <li><strong>BRSR Core Phasing &ndash; "150 &rarr; 250 &rarr; 500 &rarr; 1000":</strong> FY 24 (Top 150), FY 25 (Top 250), FY 26 (Top 500), FY 27 (Top 1000).</li>
+          <li><strong>Assurance Standards &ndash; "SSAE 3000 &amp; SAE 3410":</strong> 3000 = Overall Sustainability Umbrella; 3410 = Greenhouse Gas Statements.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Bottom Navigation Bar -->
+    <div class="bottom-nav">
+      <a href="due_diligence_forensic.html" class="nav-btn prev-btn">
+        <span>&larr;</span>
+        <div class="nav-text">
+          <span class="nav-sub">Previous Chapter</span>
+          <span class="nav-title">Ch 17: Due Diligence, Investigation &amp; Forensic</span>
+        </div>
+      </a>
+      <a href="../../notes/audnotes.html" class="nav-btn hub-btn">
+        <div class="nav-text" style="text-align: center;">
+          <span class="nav-sub">Study Hub</span>
+          <span class="nav-title">Audit Master Index</span>
+        </div>
+      </a>
+      <a href="professional_ethics.html" class="nav-btn next-btn">
+        <div class="nav-text" style="text-align: right;">
+          <span class="nav-sub">Next Chapter</span>
+          <span class="nav-title">Ch 19: Professional Ethics &amp; Liabilities</span>
+        </div>
+        <span>&rarr;</span>
+      </a>
+    </div>
+
+  </main>
+</div>
+
+<!-- Interactivity & Progress Scripts -->
+<script>
+  // Reading Progress Bar
+  window.addEventListener('scroll', () => {
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (window.pageYOffset / totalHeight) * 100;
+    document.getElementById('readingProgress').style.width = progress + '%';
+  });
+
+  // Mobile Sidebar Toggle
+  const sidebar = document.getElementById('sidebar');
+  const toggleBtn = document.getElementById('sidebarToggle');
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+  }
+
+  // Interactive Accordions
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      item.classList.toggle('open');
+    });
+  });
+
+  // Active Link Tracking on Scroll
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.nav-link');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      if (pageYOffset >= sectionTop - 120) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

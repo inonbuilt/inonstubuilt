@@ -1,0 +1,2389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 9: Related Services (SRS 4400 &amp; SRS 4410) | CA Final Paper 3 Smart Book | Calcium Notes</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="title" content="Chapter 9: Related Services (SRS 4400 &amp; SRS 4410) | CA Final Paper 3 Smart Book | Calcium Notes">
+    <meta name="description" content="100% comprehensive, zero-omission CA Final Audit Chapter 9 notes covering SRS 4400 (Agreed-Upon Procedures & Factual Findings Reporting) and SRS 4410 (Compilation Engagements & Non-Assurance Standards), with both TYUs, Integrated Case Scenario, and all 15 TYK solved questions from ICAI study material.">
+    <meta name="keywords" content="SRS 4400, SRS 4410, Related Services, Agreed-Upon Procedures, Factual Findings, Compilation Engagements, Non-Assurance, SQC 1 Applicability, CA Final Audit Chapter 9, Calcium Notes">
+    <meta name="author" content="Calcium Notes">
+    <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/Audit/related_services.html">
+
+    <link rel="icon" href="../../../../fevicol.png" type="image/png">
+    <link rel="stylesheet" href="../../assets/template.css">
+
+    <!-- High-Legibility Handwritten Fonts: Kalam, Patrick Hand, Caveat + Arial for Tables -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Patrick+Hand&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YYJ8R39EXM');
+    </script>
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124" crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            /* Calcium Notes Handwritten Typography */
+            --notes-body: 'Kalam', cursive;
+            --notes-heading: 'Patrick Hand', cursive;
+            --notes-highlight: 'Caveat', cursive;
+            --notes-table: Arial, sans-serif;
+
+            --heading-one-color: #1e3a8a;      /* Deep Navy Blue */
+            --subheading-one-color: #0284c7;   /* Vibrant Sapphire Blue */
+            --text-black: #000000;             /* Pure Black for high contrast */
+
+            --primary: #1e40af;
+            --primary-hover: #1d4ed8;
+            --primary-light: #eff6ff;
+            --primary-border: #bfdbfe;
+            --slate-50: #f8fafc;
+            --slate-100: #f1f5f9;
+            --slate-200: #e2e8f0;
+            --slate-300: #cbd5e1;
+            --slate-600: #475569;
+            --slate-700: #334155;
+            --slate-800: #1e293b;
+            --slate-900: #0f172a;
+            --emerald-600: #059669;
+            --emerald-50: #ecfdf5;
+            --emerald-200: #a7f3d0;
+            --rose-600: #e11d48;
+            --rose-50: #fff1f2;
+            --rose-200: #fecdd3;
+            --amber-600: #d97706;
+            --amber-50: #fffbeb;
+            --amber-200: #fde68a;
+            --purple-600: #7c3aed;
+            --purple-50: #f5f3ff;
+            --purple-200: #ddd6fe;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Reading Progress Bar */
+        #scroll-progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            z-index: 1000;
+        }
+
+        #scroll-progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #1e40af, #0284c7, #059669);
+            width: 0%;
+            transition: width 0.1s ease-out;
+        }
+
+        body {
+            font-family: var(--notes-body);
+            background-color: #f8fafc;
+            color: var(--text-black);
+            line-height: 1.8;
+            font-size: 18px;
+            letter-spacing: 0.2px;
+        }
+
+        /* Sticky Top Bar */
+        .topbar {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(8px);
+            border-bottom: 2px solid #e2e8f0;
+            padding: 0.8rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 999;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .topbar-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #1e40af;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            transition: all 0.2s;
+        }
+
+        .back-btn:hover {
+            background: #dbeafe;
+            transform: translateX(-2px);
+        }
+
+        .topbar-title {
+            font-family: var(--notes-heading);
+            font-size: 1.6rem;
+            color: #1e3a8a;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .topbar-right {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .sidebar-toggle-btn {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            color: #1e40af;
+            padding: 0.5rem 0.9rem;
+            border-radius: 8px;
+            font-family: var(--notes-body);
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.95rem;
+        }
+
+        .sidebar-toggle-btn:hover {
+            background: #dbeafe;
+        }
+
+        /* Layout Container */
+        .page-container {
+            display: flex;
+            max-width: 1540px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 330px;
+            background: #ffffff;
+            border-right: 2px solid #e2e8f0;
+            height: calc(100vh - 65px);
+            position: sticky;
+            top: 65px;
+            overflow-y: auto;
+            padding: 1.2rem;
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+        }
+
+        .sidebar.hidden {
+            display: none;
+        }
+
+        .sidebar-header {
+            font-family: var(--notes-heading);
+            font-size: 1.4rem;
+            color: #1e3a8a;
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid #bfdbfe;
+        }
+
+        .sidebar-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .sidebar-item a {
+            display: block;
+            padding: 0.45rem 0.75rem;
+            color: #334155;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.92rem;
+            font-weight: 600;
+            transition: all 0.2s;
+            line-height: 1.35;
+        }
+
+        .sidebar-item a:hover {
+            background: #eff6ff;
+            color: #1e40af;
+            padding-left: 1rem;
+        }
+
+        .sidebar-item.active a {
+            background: #1e40af;
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        .sidebar-sub-badge {
+            display: inline-block;
+            font-size: 0.72rem;
+            padding: 0.12rem 0.35rem;
+            border-radius: 4px;
+            margin-right: 0.35rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .badge-srs { background: #dbeafe; color: #1e40af; }
+        .badge-case { background: #fef3c7; color: #92400e; }
+        .badge-tyk { background: #ede9fe; color: #5b21b6; }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 2rem 2.5rem;
+            max-width: 1210px;
+            background: #ffffff;
+            min-height: 100vh;
+        }
+
+        /* Hero Banner */
+        .hero-banner {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0284c7 50%, #059669 100%);
+            color: white;
+            padding: 2.2rem 2.5rem;
+            border-radius: 16px;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-badge-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(4px);
+            padding: 0.35rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 0.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-banner h1 {
+            font-family: var(--notes-heading);
+            font-size: 2.6rem;
+            line-height: 1.2;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-banner p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            max-width: 920px;
+            line-height: 1.6;
+        }
+
+        .hero-stats-row {
+            display: flex;
+            gap: 1.2rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-pill {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 0.4rem 1rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        /* Section Containers */
+        .notes-section {
+            margin-bottom: 3.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px dashed #e2e8f0;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #bfdbfe;
+            padding-bottom: 0.6rem;
+        }
+
+        .section-tag {
+            background: #1e40af;
+            color: #ffffff;
+            font-family: var(--notes-heading);
+            font-size: 1.1rem;
+            padding: 0.2rem 0.8rem;
+            border-radius: 6px;
+            font-weight: 700;
+        }
+
+        .section-header h2 {
+            font-family: var(--notes-heading);
+            font-size: 2.1rem;
+            color: var(--heading-one-color);
+            font-weight: 700;
+        }
+
+        .subsection-header {
+            font-family: var(--notes-heading);
+            font-size: 1.6rem;
+            color: var(--subheading-one-color);
+            margin: 1.8rem 0 1rem 0;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Paragraphs and Text */
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.12rem;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1.4rem;
+        }
+
+        li {
+            margin-bottom: 0.6rem;
+            line-height: 1.7;
+        }
+
+        /* Vibrant Colorful Keyword Highlighting */
+        .kw-blue { color: #1e40af; font-weight: 700; }
+        .kw-red { color: #b91c1c; font-weight: 700; }
+        .kw-green { color: #047857; font-weight: 700; }
+        .kw-purple { color: #7c3aed; font-weight: 700; }
+        .kw-amber { color: #b45309; font-weight: 700; }
+
+        /* Callout & Smart Cards */
+        .smart-card {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-left: 6px solid #1e40af;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .smart-card.case-study {
+            border-left-color: #b45309;
+            background: #fffbeb;
+            border-color: #fde68a;
+        }
+
+        .smart-card.concept-law {
+            border-left-color: #047857;
+            background: #ecfdf5;
+            border-color: #a7f3d0;
+        }
+
+        .smart-card.warning-box {
+            border-left-color: #b91c1c;
+            background: #fff1f2;
+            border-color: #fecdd3;
+        }
+
+        .smart-card.flow-box {
+            border-left-color: #7c3aed;
+            background: #f5f3ff;
+            border-color: #ddd6fe;
+        }
+
+        .card-header-badge {
+            display: inline-block;
+            font-family: var(--notes-heading);
+            font-size: 1.15rem;
+            font-weight: 700;
+            padding: 0.2rem 0.7rem;
+            border-radius: 6px;
+            margin-bottom: 0.8rem;
+        }
+
+        .badge-case-title { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+        .badge-law-title { background: #d1fae5; color: #065f46; border: 1px solid #a7f3d0; }
+        .badge-warn-title { background: #ffe4e6; color: #9f1239; border: 1px solid #fecdd3; }
+        .badge-flow-title { background: #ede9fe; color: #5b21b6; border: 1px solid #ddd6fe; }
+
+        /* Tables (in Arial per design instructions) */
+        .notes-table-wrapper {
+            overflow-x: auto;
+            margin: 1.8rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        table.notes-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: var(--notes-table);
+            font-size: 0.98rem;
+            line-height: 1.6;
+            background: #ffffff;
+        }
+
+        table.notes-table th {
+            background: #1e3a8a;
+            color: #ffffff;
+            font-weight: 700;
+            text-align: left;
+            padding: 1rem;
+            border: 1px solid #1e40af;
+        }
+
+        table.notes-table td {
+            padding: 0.9rem 1rem;
+            border: 1px solid #e2e8f0;
+            color: #1e293b;
+        }
+
+        table.notes-table tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        table.notes-table tr:hover {
+            background: #f1f5f9;
+        }
+
+        /* Accordion for TYU and TYK */
+        .accordion-item {
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            margin: 1.2rem 0;
+            overflow: hidden;
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+        }
+
+        .accordion-header {
+            padding: 1.1rem 1.4rem;
+            background: #f8fafc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+            border-bottom: 1px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .accordion-header:hover {
+            background: #eff6ff;
+        }
+
+        .accordion-header.active {
+            background: #eff6ff;
+            border-bottom: 1px solid #bfdbfe;
+        }
+
+        .accordion-header-title {
+            font-family: var(--notes-heading);
+            font-size: 1.22rem;
+            font-weight: 700;
+            color: #1e3a8a;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .accordion-icon {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1e40af;
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-header.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+
+        .accordion-content {
+            padding: 1.4rem;
+            display: none;
+            background: #ffffff;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .accordion-content.open {
+            display: block;
+        }
+
+        .mcq-option {
+            padding: 0.5rem 0.8rem;
+            margin: 0.3rem 0;
+            border-radius: 6px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            font-size: 1.05rem;
+        }
+
+        .mcq-option.correct {
+            background: #ecfdf5;
+            border-color: #a7f3d0;
+            font-weight: 700;
+            color: #065f46;
+        }
+
+        .sol-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-left: 5px solid #16a34a;
+            padding: 1rem 1.2rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .sol-box-title {
+            font-weight: 700;
+            color: #166534;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        /* Bottom Chapter Navigation */
+        .chapter-nav-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 3.5rem;
+            padding-top: 2rem;
+            border-top: 3px solid #e2e8f0;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .chapter-nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.9rem 1.6rem;
+            border-radius: 10px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.05rem;
+            transition: all 0.25s;
+        }
+
+        .chapter-nav-prev {
+            background: #eff6ff;
+            color: #1e40af;
+            border: 2px solid #bfdbfe;
+        }
+
+        .chapter-nav-prev:hover {
+            background: #dbeafe;
+            transform: translateX(-4px);
+        }
+
+        .chapter-nav-next {
+            background: #1e40af;
+            color: #ffffff;
+            border: 2px solid #1e40af;
+            box-shadow: 0 4px 10px rgba(30, 64, 175, 0.25);
+        }
+
+        .chapter-nav-next:hover {
+            background: #1d4ed8;
+            transform: translateX(4px);
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1024px) {
+            .sidebar {
+                position: fixed;
+                left: 0;
+                top: 65px;
+                z-index: 998;
+                box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+            }
+            .sidebar.hidden {
+                display: none;
+            }
+            .main-content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Reading Progress Bar -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Sticky Topbar -->
+    <header class="topbar">
+        <div class="topbar-left">
+            <a href="../../notes/audnotes.html" class="back-btn">
+                ← Audit Notes Hub
+            </a>
+            <div class="topbar-title">Chapter 9: Related Services (SRS 4400 &amp; 4410)</div>
+        </div>
+        <div class="topbar-right">
+            <button class="sidebar-toggle-btn" onclick="toggleSidebar()">
+                📑 Index / Jump
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Container -->
+    <div class="page-container">
+
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">Chapter 9 Outline</div>
+            <ul class="sidebar-menu">
+                <li class="sidebar-item"><a href="#sec-overview"><span class="sidebar-sub-badge badge-srs">Intro</span>Overview &amp; Nature of Related Services</a></li>
+                <li class="sidebar-item"><a href="#sec-opening-case"><span class="sidebar-sub-badge badge-case">Case</span>Opening Scenarios: Trends Multi Products &amp; Kolkata</a></li>
+                <li class="sidebar-item"><a href="#sec-srs4400"><span class="sidebar-sub-badge badge-srs">SRS 4400</span>Agreed-Upon Procedures In-Depth</a></li>
+                <li class="sidebar-item"><a href="#sec-srs4400-vs-audit"><span class="sidebar-sub-badge badge-srs">SRS 4400</span>Audit vs Agreed-Upon Procedures</a></li>
+                <li class="sidebar-item"><a href="#sec-srs4400-terms"><span class="sidebar-sub-badge badge-srs">SRS 4400</span>Terms of Engagement &amp; Procedures</a></li>
+                <li class="sidebar-item"><a href="#sec-srs4400-reporting"><span class="sidebar-sub-badge badge-srs">SRS 4400</span>Reporting Factual Findings &amp; Disclaimers</a></li>
+                <li class="sidebar-item"><a href="#sec-tyu1"><span class="sidebar-sub-badge badge-tyk">TYU 1</span>CA Shaan (Inventory Agreed-Upon Report)</a></li>
+                <li class="sidebar-item"><a href="#sec-srs4410"><span class="sidebar-sub-badge badge-srs">SRS 4410</span>Compilation Engagements In-Depth</a></li>
+                <li class="sidebar-item"><a href="#sec-srs4410-scope"><span class="sidebar-sub-badge badge-srs">SRS 4410</span>Objectives, Scope &amp; Ethical Principles</a></li>
+                <li class="sidebar-item"><a href="#sec-srs4410-sqc1"><span class="sidebar-sub-badge badge-srs">SRS 4410</span>Applicability of SQC 1 to Compilations</a></li>
+                <li class="sidebar-item"><a href="#sec-srs4410-acceptance"><span class="sidebar-sub-badge badge-srs">SRS 4410</span>Engagement Acceptance &amp; Terms</a></li>
+                <li class="sidebar-item"><a href="#sec-srs4410-performing"><span class="sidebar-sub-badge badge-srs">SRS 4410</span>Performing Engagement &amp; Dealing with Misstatements</a></li>
+                <li class="sidebar-item"><a href="#sec-srs4410-withdrawal"><span class="sidebar-sub-badge badge-srs">SRS 4410</span>Proposing Amendments &amp; Mandatory Withdrawal</a></li>
+                <li class="sidebar-item"><a href="#sec-srs4410-reporting"><span class="sidebar-sub-badge badge-srs">SRS 4410</span>Compilation Report Form &amp; Elements</a></li>
+                <li class="sidebar-item"><a href="#sec-tyu2"><span class="sidebar-sub-badge badge-tyk">TYU 2</span>Theft Loss of ₹ 100 Lacs in Compilation</a></li>
+                <li class="sidebar-item"><a href="#sec-case-km"><span class="sidebar-sub-badge badge-case">Case</span>Integrated Case: KM Limited (Rourkela Unit)</a></li>
+                <li class="sidebar-item"><a href="#sec-tyk"><span class="sidebar-sub-badge badge-tyk">TYK</span>Test Your Knowledge (TYK 1-15 Solved)</a></li>
+                <li class="sidebar-item"><a href="#sec-summary"><span class="sidebar-sub-badge badge-srs">Matrix</span>Assurance vs Non-Assurance Framework Matrix</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+
+            <!-- Hero Banner -->
+            <div class="hero-banner">
+                <span class="hero-badge-tag">CA Final Paper 3 • Advanced Auditing &amp; Professional Ethics</span>
+                <h1>Chapter 9: Related Services (SRS 4400 &amp; SRS 4410)</h1>
+                <p>100% Comprehensive Master Notes based strictly on the ICAI Study Material. Master the entire non-assurance reporting framework: SRS 4400 (Agreed-Upon Procedures &amp; Report of Factual Findings) and SRS 4410 (Compilation Engagements, Management Assistance &amp; Mandatory Withdrawal Rules), complete with both TYUs, the KM Limited Integrated Case Scenario, and all 15 TYK Exam Solved Questions.</p>
+                <div class="hero-stats-row">
+                    <span class="stat-pill">⚡ SRS 4400 &amp; SRS 4410 Standards</span>
+                    <span class="stat-pill">🚫 Non-Assurance Character</span>
+                    <span class="stat-pill">📑 Factual Findings Reporting</span>
+                    <span class="stat-pill">🛡️ SQC 1 Mandatory Applicability</span>
+                    <span class="stat-pill">🎯 2 TYUs + Case Scenario + 15 TYK Solved</span>
+                </div>
+            </div>
+
+            <!-- SECTION 1: OVERVIEW & LEARNING OUTCOMES -->
+            <section class="notes-section" id="sec-overview">
+                <div class="section-header">
+                    <span class="section-tag">Phase 01</span>
+                    <h2>Overview, Nature of Related Services &amp; The Assurance Spectrum</h2>
+                </div>
+
+                <p>Under the ICAI Framework for Engagement Standards, professional services rendered by Chartered Accountants fall along a clear <span class="kw-blue">spectrum of assurance</span>:</p>
+
+                <div class="notes-table-wrapper">
+                    <table class="notes-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 20%;">Standard Series</th>
+                                <th style="width: 30%;">Type of Service</th>
+                                <th style="width: 25%;">Assurance Level</th>
+                                <th style="width: 25%;">Reporting Output</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="font-weight: 700; color: #1e40af;">SAs (100–700 &amp; 800)</td>
+                                <td>Audits of Historical Financial Information</td>
+                                <td><span class="kw-green">Reasonable Assurance</span> (High, but not absolute)</td>
+                                <td>Positive opinion (True and fair view / fair presentation)</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 700; color: #7c3aed;">SREs (2000–2699)</td>
+                                <td>Reviews of Historical Financial Information</td>
+                                <td><span class="kw-purple">Limited Assurance</span> (Moderate)</td>
+                                <td>Negative conclusion ("Nothing has come to our attention")</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 700; color: #b45309;">SAEs (3000–3699)</td>
+                                <td>Assurance other than Audits / Reviews (PFI, SOC)</td>
+                                <td>Reasonable or Limited</td>
+                                <td>Attestation or Direct Reporting conclusion</td>
+                            </tr>
+                            <tr style="background: #fef2f2;">
+                                <td style="font-weight: 700; color: #b91c1c;">SRSs (4000–4699)</td>
+                                <td><strong>Related Services (Agreed-Upon &amp; Compilations)</strong></td>
+                                <td><span class="kw-red" style="font-size: 1.15rem; font-weight: 700;">NO ASSURANCE!</span></td>
+                                <td><strong>Report of Factual Findings</strong> or <strong>Compilation Report</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="smart-card concept-law">
+                    <span class="card-header-badge badge-law-title">What Makes "Related Services" Unique?</span>
+                    <p>In a related services engagement, the practitioner does <span class="kw-red">NOT express any audit opinion or review conclusion</span>:</p>
+                    <ul>
+                        <li><span class="kw-blue">SRS 4400 (Agreed-Upon Procedures):</span> The practitioner performs specific procedures agreed upon with the client and specified third parties, and simply delivers a <span class="kw-blue">Report of Factual Findings</span>. The users evaluate the findings themselves and draw their own conclusions!</li>
+                        <li><span class="kw-purple">SRS 4410 (Compilation Engagements):</span> The practitioner uses accounting and financial reporting expertise to <span class="kw-purple">assist management</span> in compiling and presenting financial information without verifying accuracy or gathering evidence.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECTION 2: OPENING SCENARIOS -->
+            <section class="notes-section" id="sec-opening-case">
+                <div class="section-header">
+                    <span class="section-tag">Case Studies</span>
+                    <h2>Opening Scenarios: Trends Multi Products &amp; The Kolkata Dilemma</h2>
+                </div>
+
+                <div class="smart-card case-study">
+                    <span class="card-header-badge badge-case-title">Scenario A: Trends Multi Products Limited &amp; CA Shaan</span>
+                    <p><span class="kw-blue">Trends Multi Products Limited</span> sells ethnic items across India (brassware, wooden artifacts, handloom home furnishings). Stock is procured from artisans and weavers across dozens of nationwide centers. To mitigate inventory risks, the company requests <span class="kw-blue">CA Shaan</span> to undertake an extensive exercise: <span class="kw-amber">physically verify inventories at multiple locations and reconcile them with inventory books</span>, offering attractive fees and support staff.</p>
+                    <p>CA Shaan wonders: Does <span class="kw-red">SA 501</span> apply? No, because SA 501 applies to an audit of financial statements, and he is not the statutory auditor. Can he accept? Yes! This is a classic <span class="kw-blue">Agreed-Upon Procedures Engagement</span> under <span class="kw-blue">SRS 4400</span>. He will report factual discrepancies without expressing any audit opinion or assurance.</p>
+                </div>
+
+                <div class="smart-card flow-box" style="margin-top: 1.5rem;">
+                    <span class="card-header-badge badge-flow-title">Scenario B: The Sweltering Kolkata Afternoon Compilation</span>
+                    <p>Sitting in his Kolkata office, CA Shaan is approached by another client providing a trial balance and asking him to <span class="kw-purple">assist in preparing its financial statements</span> and issue a <span class="kw-purple">Compilation Report</span>. Does this report provide assurance? What are his duties?</p>
+                    <p><span class="kw-green">Answer under SRS 4410:</span> A compilation engagement does not provide any assurance. The practitioner is not required to verify the accuracy of information provided. However, under <span class="kw-blue">SQC 1</span>, strict quality control, professional competence, and ethical standards apply. Furthermore, if he notices that the compiled statements are materially misstated or misleading, he <span class="kw-red">MUST propose amendments, and if management refuses, he MUST WITHDRAW</span>!</p>
+                </div>
+            </section>
+
+            <!-- SECTION 3: SRS 4400 AGREED-UPON PROCEDURES -->
+            <section class="notes-section" id="sec-srs4400">
+                <div class="section-header">
+                    <span class="section-tag">SRS 4400</span>
+                    <h2>SRS 4400: Engagements to Perform Agreed-Upon Procedures</h2>
+                </div>
+
+                <p><span class="kw-blue">SRS 4400</span> deals with the auditor’s responsibilities when engaged to perform <span class="kw-blue">agreed-upon procedures</span> regarding financial or non-financial information, and to issue a report of factual findings.</p>
+
+                <div class="smart-card concept-law">
+                    <span class="card-header-badge badge-law-title">Objective under SRS 4400</span>
+                    <p><em>"The objective of an agreed-upon procedures engagement is for the auditor to carry out procedures of an audit nature to which the auditor and the entity and any appropriate third parties have agreed and to report on <strong>factual findings</strong>."</em></p>
+                    <p><span class="kw-red">No Assurance Expressed:</span> As the auditor simply provides a report of the factual findings of agreed-upon procedures, <span class="kw-red">no assurance is expressed</span>. Instead, users of the report assess for themselves the procedures and findings reported by the auditor and draw their own conclusions from the auditor's work.</p>
+                </div>
+
+                <div class="subsection-header" id="sec-srs4400-vs-audit">
+                    ⚖️ Audit vs. Agreed-Upon Procedures (SRS 4400)
+                </div>
+
+                <div class="notes-table-wrapper">
+                    <table class="notes-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 25%;">Basis of Comparison</th>
+                                <th style="width: 37%;">Audit Engagement (SAs)</th>
+                                <th style="width: 38%;">Agreed-Upon Procedures (SRS 4400)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="font-weight: 700;">1. Purpose &amp; Scope</td>
+                                <td>To express an opinion on whether financial statements give a true and fair view. Scope determined by SAs and law.</td>
+                                <td>To perform specific procedures agreed between auditor, entity, and third parties. Scope strictly limited to agreed procedures.</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 700;">2. Assurance Provided</td>
+                                <td>Provides <strong>Reasonable Assurance</strong> (high level of confidence).</td>
+                                <td><span class="kw-red" style="font-weight: 700;">NO ASSURANCE</span> is expressed.</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 700;">3. Nature of Procedures</td>
+                                <td>Comprehensive audit procedures selected based on auditor's risk assessment and materiality.</td>
+                                <td>Procedures of an audit nature (inquiry, recalculation, comparison, physical observation) specified by client.</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 700;">4. Reporting Output</td>
+                                <td><strong>Independent Auditor's Report</strong> containing an opinion (unmodified, qualified, adverse, disclaimer).</td>
+                                <td><strong>Report of Factual Findings</strong>. Merely describes procedures performed and actual factual results.</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: 700;">5. Distribution of Report</td>
+                                <td>Public document available to all shareholders, regulators, and public users.</td>
+                                <td><span class="kw-amber" style="font-weight: 700;">Strictly Restricted</span> to parties who agreed to the procedures (to avoid misunderstanding).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="subsection-header" id="sec-srs4400-terms">
+                    📝 General Principles &amp; Agreeing the Terms of Engagement
+                </div>
+
+                <p>The auditor must comply with the <span class="kw-blue">Code of Ethics</span> issued by the ICAI (Integrity, Objectivity, Professional Competence &amp; Due Care, Confidentiality, Professional Behavior):</p>
+                <ul>
+                    <li><span class="kw-purple">Independence Rule:</span> Independence is <span class="kw-purple">NOT a mandatory requirement</span> for an agreed-upon procedures engagement (unless specifically required by the terms or contract). However, if the auditor is not independent, a statement to that effect must be made in the report of factual findings!</li>
+                    <li><span class="kw-blue">Non-Auditor Permitted:</span> The term "auditor" in SRS 4400 does not imply that the practitioner must be the statutory auditor of the entity. Any practicing Chartered Accountant can accept an SRS 4400 engagement.</li>
+                </ul>
+
+                <div class="smart-card flow-box">
+                    <span class="card-header-badge badge-flow-title">Key Matters to Agree in the Engagement Letter (SRS 4400)</span>
+                    <p>The auditor shall ensure there is a clear understanding with client representatives and third parties regarding:</p>
+                    <ol>
+                        <li>Nature of the engagement, stating that procedures will <span class="kw-red">not constitute an audit or review and no assurance will be expressed</span>;</li>
+                        <li>Stated <span class="kw-blue">purpose</span> for which the engagement is performed;</li>
+                        <li>Identification of the specific financial information or elements to which procedures will be applied;</li>
+                        <li>Nature, timing, and extent of the <span class="kw-purple">specific procedures</span> to be applied;</li>
+                        <li>Anticipated form of the report of factual findings; and</li>
+                        <li>Clear statement that the report will be <span class="kw-amber">restricted solely to the parties</span> who agreed to the procedures.</li>
+                    </ol>
+                </div>
+
+                <div class="subsection-header" id="sec-srs4400-reporting">
+                    📢 Reporting Requirements under SRS 4400 (The 4 Negative Disclaimers)
+                </div>
+
+                <div class="smart-card warning-box">
+                    <span class="card-header-badge badge-warn-title">The Four Mandatory Negative Assurance Statements</span>
+                    <p>To ensure report users do not misinterpret factual findings as an audit or review, the report under SRS 4400 <span class="kw-red">SHALL INCLUDE ALL FOUR STATEMENTS</span>:</p>
+                    <ol>
+                        <li><span class="kw-blue">Disclaimer of Assurance:</span> A statement that the procedures performed do not constitute either an audit or a review and, as such, <span class="kw-red">no assurance is expressed</span>;</li>
+                        <li><span class="kw-amber">Possible Additional Matters:</span> A statement that had the auditor performed additional procedures, an audit or a review, <span class="kw-amber">other matters might have come to light that would have been reported</span>;</li>
+                        <li><span class="kw-purple">Restricted Distribution:</span> A statement that the report is <span class="kw-purple">restricted to those parties that have agreed</span> to the procedures to be performed; and</li>
+                        <li><span class="kw-green">Non-Extension to Full Accounts:</span> A statement that the report relates only to the elements, accounts, items or financial/non-financial information specified and that it <span class="kw-green">does not extend to the entity’s financial statements taken as a whole</span>.</li>
+                    </ol>
+                </div>
+
+                <!-- TYU 1 -->
+                <div class="accordion-item" id="sec-tyu1">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-header-title">
+                            <span>📝 TEST YOUR UNDERSTANDING 1: CA Shaan (Physical Inventory Verification Report under SRS 4400)</span>
+                        </div>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p><strong>Scenario:</strong> Referring to Opening Scenario A (Trends Multi Products Ltd), CA Shaan accepted the engagement to physically verify inventories at nationwide artisan centers and reconcile them with inventory records. What must he keep in mind when issuing his report?</p>
+                        <div class="sol-box">
+                            <div class="sol-box-title">✔ Master Solution &amp; SRS 4400 Reporting:</div>
+                            <p>CA Shaan is performing an <span class="kw-blue">Agreed-Upon Procedures Engagement</span> under <span class="kw-blue">SRS 4400</span>. His report must include:</p>
+                            <ul>
+                                <li><strong>Title:</strong> Report of Factual Findings regarding Inventory Physical Verification and Reconciliation.</li>
+                                <li><strong>Addressee:</strong> Management / Board of Trends Multi Products Limited.</li>
+                                <li><strong>Statement of Agreed Procedures:</strong> State that procedures performed were those agreed upon with management.</li>
+                                <li><strong>Standard Reference:</strong> State that engagement was performed in accordance with SRS 4400.</li>
+                                <li><strong>Listing of Specific Procedures:</strong> Details of physical counts at specific warehouse locations, sampling parameters, and reconciliation against stock registers.</li>
+                                <li><strong>Description of Factual Findings:</strong> Factual inventory shortages, surpluses, damaged stock, and un-reconciled differences noted.</li>
+                                <li><strong>Mandatory Disclaimers:</strong> (1) Procedures do not constitute an audit or review, and no assurance is expressed; (2) Had additional procedures been performed, other matters might have come to light; (3) Report is restricted solely to management; (4) Report relates only to inventory elements and does not extend to the financial statements as a whole.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- ==========================================
+                 SECTION 4: SRS 4410 COMPILATION ENGAGEMENTS
+                 ========================================== -->
+            <section id="sec-srs4410" class="note-section">
+                <div class="section-header">
+                    <span class="section-tag-badge badge-srs">SRS 4410 Core</span>
+                    <h2>SRS 4410: Compilation Engagements (In-Depth Standard Analysis)</h2>
+                </div>
+
+                <div class="card card-accent mb-4">
+                    <h3 class="card-title text-primary"><i class="fas fa-book-open"></i> Definitional Architecture of a Compilation Engagement</h3>
+                    <p class="mb-3">
+                        Under <strong class="hl-blue">SRS 4410</strong>, a <strong>Compilation Engagement</strong> is defined as:
+                    </p>
+                    <div class="callout callout-blue mb-3">
+                        <p class="mb-0 font-weight-bold" style="font-size: 1.15rem; color: #1e3a8a;">
+                            "An engagement in which a practitioner applies accounting and financial reporting expertise to assist management in the preparation and presentation of financial information of an entity in accordance with an applicable financial reporting framework and issues a report."
+                        </p>
+                    </div>
+                    <p class="mb-2">
+                        SRS 4410 deals with the practitioner’s professional responsibilities when engaged to assist management with the <strong class="hl-blue">preparation and presentation of historical financial information</strong> without obtaining any assurance on that information, and to report on the engagement in accordance with this SRS.
+                    </p>
+                </div>
+
+                <!-- Scope & Adaptation -->
+                <div class="row-2col mb-4">
+                    <div class="card card-green">
+                        <h4 class="card-title text-emerald"><i class="fas fa-check-double"></i> Primary Subject Matter Scope</h4>
+                        <p class="mb-2">
+                            SRS 4410 primarily applies to compilation engagements for <strong class="hl-green">historical financial information</strong>.
+                        </p>
+                        <p class="mb-0 text-muted">
+                            This includes complete financial statements (Balance Sheet, Statement of Profit and Loss, Cash Flow Statement, Notes) or single financial statements, accounts, or specific elements.
+                        </p>
+                    </div>
+                    <div class="card card-purple">
+                        <h4 class="card-title text-purple"><i class="fas fa-sliders-h"></i> Adaptation to Other Information</h4>
+                        <p class="mb-2">
+                            Compilation engagements for:
+                        </p>
+                        <ul class="styled-list mb-0">
+                            <li><strong class="hl-purple">Financial information other than historical</strong> (e.g., prospective financial information, budgets, pro forma statements), and</li>
+                            <li><strong class="hl-purple">Non-financial information</strong> (e.g., ESG metrics, greenhouse gas data, production statistics)</li>
+                        </ul>
+                        <p class="mt-2 mb-0 text-muted font-italic">
+                            can also be performed under SRS 4410 after <strong class="hl-blue">necessary adaptation</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Fundamental Non-Assurance Character -->
+                <div class="card card-rose mb-4">
+                    <h3 class="card-title text-rose"><i class="fas fa-shield-virus"></i> The Strict Non-Assurance Character of SRS 4410</h3>
+                    <p class="mb-3">
+                        It is critical to distinguish a compilation engagement from an audit or a review:
+                    </p>
+                    <div class="table-responsive mb-3">
+                        <table class="concept-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 25%;">Dimension</th>
+                                    <th style="width: 37%;">Assurance Engagements (Audit / Review)</th>
+                                    <th style="width: 38%;">Compilation Engagement (SRS 4410)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Primary Objective</strong></td>
+                                    <td>Enhance degree of confidence of intended users other than responsible party through independent evaluation against criteria.</td>
+                                    <td><strong class="hl-blue">Assist management</strong> in preparing and presenting financial information using practitioner's accounting expertise.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Evidence Gathering</strong></td>
+                                    <td>Mandatory gathering of sufficient appropriate audit/review evidence (vouching, verification, external confirmations).</td>
+                                    <td><strong class="hl-red">NO requirement to gather evidence</strong> or verify accuracy/completeness of management's data.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Verification of Data</strong></td>
+                                    <td>Auditor validates underlying transactions, internal controls, and records.</td>
+                                    <td>Practitioner relies on records, explanations, and judgments provided by management without audit validation.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Form of Conclusion</strong></td>
+                                    <td>Expresses an <strong>Audit Opinion</strong> (Reasonable assurance) or <strong>Review Conclusion</strong> (Limited assurance).</td>
+                                    <td><strong class="hl-red">ZERO assurance expressed</strong>. The report states explicitly that no opinion or conclusion is provided.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="callout callout-amber mb-0">
+                        <p class="mb-0">
+                            <strong class="hl-amber"><i class="fas fa-exclamation-triangle"></i> ICAI Core Rule:</strong> A compilation engagement is <strong>not</strong> an assurance engagement. It does not require the practitioner to verify the accuracy or completeness of the information provided by management for the compilation, or otherwise to gather evidence to express an audit opinion or a review conclusion.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========================================
+                 SECTION 4.1: OBJECTIVES, SCOPE & ETHICAL REQUIREMENTS
+                 ========================================== -->
+            <section id="sec-srs4410-scope" class="note-section">
+                <div class="section-header">
+                    <span class="section-tag-badge badge-srs">SRS 4410 Paras 3.1 - 3.3</span>
+                    <h2>Objectives, Scope, Intended Purposes &amp; Ethical Principles</h2>
+                </div>
+
+                <!-- 3.1 Objectives -->
+                <div class="card card-accent mb-4">
+                    <h3 class="card-title text-primary"><i class="fas fa-bullseye"></i> Practitioner’s Dual Objectives under SRS 4410 (Para 3.1)</h3>
+                    <p class="mb-3">
+                        The practitioner’s objectives in a compilation engagement under SRS 4410 are two-fold:
+                    </p>
+                    <div class="grid-2col">
+                        <div class="card card-blue" style="border-left: 4px solid #1e40af;">
+                            <h4 class="font-weight-bold text-primary mb-2"><i class="fas fa-calculator"></i> Objective (a): Technical Assistance</h4>
+                            <p class="mb-0">
+                                Apply <strong class="hl-blue">accounting and financial reporting expertise</strong> to assist management in the preparation and presentation of financial information in accordance with an <strong class="hl-blue">applicable financial reporting framework</strong> based on information provided by management.
+                            </p>
+                        </div>
+                        <div class="card card-emerald" style="border-left: 4px solid #059669;">
+                            <h4 class="font-weight-bold text-emerald mb-2"><i class="fas fa-file-signature"></i> Objective (b): Formal Reporting</h4>
+                            <p class="mb-0">
+                                <strong class="hl-green">Report</strong> in accordance with the specific requirements of SRS 4410, clearly communicating the nature of the engagement and the absence of any assurance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Why Entities Seek Compilations (Intended Purposes) -->
+                <div class="card mb-4" style="border-top: 4px solid #d97706;">
+                    <h3 class="card-title text-amber"><i class="fas fa-clipboard-list"></i> Why Entities Request a Compilation Engagement (Exam Question TYK 1 &amp; 12)</h3>
+                    <p class="mb-3">
+                        Management may request a professional accountant in public practice to assist with financial information for diverse mandatory and non-mandatory purposes:
+                    </p>
+                    <div class="grid-2col">
+                        <div class="card card-slate">
+                            <h4 class="font-weight-bold text-slate mb-2"><i class="fas fa-gavel"></i> Category 1: Mandatory Legal / Regulatory Reporting</h4>
+                            <p class="mb-0 text-muted">
+                                To comply with <strong class="hl-blue">mandatory periodic financial reporting requirements</strong> established in relevant law or regulation (e.g., statutory filings for certain non-corporate entities, societies, trusts, or regulatory submissions).
+                            </p>
+                        </div>
+                        <div class="card card-purple">
+                            <h4 class="font-weight-bold text-purple mb-2"><i class="fas fa-users-cog"></i> Category 2(a): Internal Management / TCWG Use</h4>
+                            <p class="mb-0 text-muted">
+                                Prepared on a basis appropriate for their particular internal purposes (e.g., periodic management accounts, divisional performance reports, cash forecasts, internal budgeting).
+                            </p>
+                        </div>
+                        <div class="card card-green">
+                            <h4 class="font-weight-bold text-emerald mb-2"><i class="fas fa-hand-holding-usd"></i> Category 2(b): External Reporting under Contract / Agreement</h4>
+                            <p class="mb-0 text-muted">
+                                Periodic financial reporting undertaken for external third parties under an agreement — such as financial information submitted to a <strong class="hl-green">funding body or government authority</strong> to support the provision or continuation of a grant, subsidy, or commercial credit line.
+                            </p>
+                        </div>
+                        <div class="card card-rose">
+                            <h4 class="font-weight-bold text-rose mb-2"><i class="fas fa-exchange-alt"></i> Category 2(c): Transactional Purposes (M&amp;A)</h4>
+                            <p class="mb-0 text-muted">
+                                To support a major transaction involving changes to the entity’s ownership or financing structure (e.g., <strong class="hl-red">mergers, acquisitions, hive-offs, private equity investment pitch</strong>, or restructuring of bank loans).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scope & Management Responsibilities (Para 3.2) -->
+                <div class="card mb-4" style="border-top: 4px solid #0284c7;">
+                    <h3 class="card-title text-primary"><i class="fas fa-user-tie"></i> Scope &amp; Management's 4 Inalienable Responsibilities (Para 3.2 &amp; TYK 9)</h3>
+                    <p class="mb-2">
+                        The scope of a compilation engagement varies based on circumstances — management may provide raw trial balances or preliminary draft financial statements. However, in <strong>every case</strong>, <strong class="hl-blue">management retains ultimate responsibility</strong> for the financial information.
+                    </p>
+                    <div class="callout callout-purple mb-3">
+                        <h4 class="font-weight-bold text-purple mb-2">Management Retains Exclusive Responsibility For:</h4>
+                        <ol class="styled-list mb-0">
+                            <li><strong class="hl-blue">The Financial Information:</strong> For the preparation and presentation thereof in accordance with an applicable financial reporting framework acceptable to intended users.</li>
+                            <li><strong class="hl-red">Internal Control:</strong> Design, implementation, and maintenance of such internal control as management determines necessary to enable preparation of financial statements free from material misstatement, whether due to fraud or error.</li>
+                            <li><strong class="hl-green">Accuracy and Completeness of Data:</strong> The accuracy and completeness of records, documents, explanations, and other information supplied to the practitioner.</li>
+                            <li><strong class="hl-purple">Management Judgments:</strong> All judgments required in preparing the financial statements — including the selection and consistent application of appropriate accounting policies, and developing reasonable accounting estimates (even where the practitioner provides advisory assistance during compilation).</li>
+                        </ol>
+                    </div>
+                    <p class="mb-0 text-muted">
+                        <strong>Financial Reporting Framework Spectrum:</strong> Management may adopt frameworks ranging from an <em>entity-specific basis of accounting</em> (e.g., cash basis, tax basis) to <em>established standards</em> (Accounting Standards / Ind AS), depending on entity nature and intended usage.
+                    </p>
+                </div>
+
+                <!-- Ethical Requirements & Independence (Para 3.3) -->
+                <div class="card card-accent mb-4">
+                    <h3 class="card-title text-primary"><i class="fas fa-balance-scale"></i> Ethical Requirements &amp; The Independence Dilemma (Para 3.3 &amp; TYK 2)</h3>
+                    <p class="mb-3">
+                        The practitioner <strong class="hl-blue">shall strictly comply</strong> with relevant ethical requirements established in the ICAI <em>Code of Ethics</em>:
+                    </p>
+                    <div class="grid-2col mb-3">
+                        <div class="card card-slate">
+                            <h4 class="font-weight-bold text-slate mb-2"><i class="fas fa-award"></i> Applicable Fundamental Principles</h4>
+                            <ul class="styled-list mb-0">
+                                <li><strong>Integrity:</strong> Being straightforward and honest.</li>
+                                <li><strong>Objectivity:</strong> Not compromising professional judgment.</li>
+                                <li><strong>Professional Competence &amp; Due Care:</strong> Maintaining high technical standards.</li>
+                                <li><strong>Confidentiality:</strong> Respecting proprietary information.</li>
+                                <li><strong>Professional Conduct:</strong> Complying with relevant laws.</li>
+                            </ul>
+                        </div>
+                        <div class="card card-amber">
+                            <h4 class="font-weight-bold text-amber mb-2"><i class="fas fa-user-shield"></i> Independence: Mandatory or Not?</h4>
+                            <p class="mb-2">
+                                <strong class="hl-amber">General Rule:</strong> Because a compilation engagement is a <strong class="hl-red">non-assurance engagement</strong>, <strong class="hl-red">independence is NOT a requirement</strong> under SRS 4410.
+                            </p>
+                            <p class="mb-0 text-muted">
+                                <strong class="hl-blue">Exceptions:</strong> If specific laws, regulations, or contractual terms mandate independence, the practitioner must comply. If the practitioner is not independent, this fact may be stated or governed by disclosure rules where applicable.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="callout callout-rose mb-0">
+                        <p class="mb-0">
+                            <strong class="hl-red"><i class="fas fa-exclamation-circle"></i> Crucial Exam Distinction (TYK 2):</strong> Non-applicability of independence does <strong>NOT</strong> exempt the practitioner from the Fundamental Principles of the Code of Ethics! Threats to integrity, objectivity, and competence must still be identified and addressed. If associated with misleading statements without remediation, the practitioner violates the fundamental principle of <em>Integrity</em>.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========================================
+                 SECTION 4.2: SQC 1 APPLICABILITY
+                 ========================================== -->
+            <section id="sec-srs4410-sqc1" class="note-section">
+                <div class="section-header">
+                    <span class="section-tag-badge badge-srs">Quality Control</span>
+                    <h2>Applicability of SQC 1 to Compilation Engagements (Para 3 &amp; TYK 6, 14)</h2>
+                </div>
+
+                <div class="card card-green mb-4">
+                    <h3 class="card-title text-emerald"><i class="fas fa-check-circle"></i> SQC 1 Applies to All Engagement Standards — Including SRS 4410!</h3>
+                    <p class="mb-3">
+                        A frequent exam trap asks whether Quality Control Standards apply to compilation engagements since no assurance is given. ICAI makes this crystal clear:
+                    </p>
+                    <div class="callout callout-emerald mb-3">
+                        <p class="mb-0 font-weight-bold" style="font-size: 1.1rem; color: #065f46;">
+                            "SQC 1 (Standard on Quality Control 1) is applicable to ALL Engagement Standards. Since Standards on Related Services (SRS 4400 and SRS 4410) are part of the Engagement and Quality Control Standards suite issued by ICAI, SQC 1 applies to CA firms in respect of their compilation engagements too!"
+                        </p>
+                    </div>
+                    <div class="grid-2col">
+                        <div class="card card-slate">
+                            <h4 class="font-weight-bold text-slate mb-2"><i class="fas fa-building"></i> Firm-Level Quality Control (SQC 1)</h4>
+                            <p class="mb-0 text-muted">
+                                The CA firm must establish policies and procedures regarding leadership responsibilities, ethical compliance, acceptance/continuance of client relationships, human resources, engagement performance, and monitoring across all service lines including SRS compilations.
+                            </p>
+                        </div>
+                        <div class="card card-blue">
+                            <h4 class="font-weight-bold text-primary mb-2"><i class="fas fa-user-check"></i> Engagement Partner Responsibilities (Para 3.8)</h4>
+                            <p class="mb-0 text-muted">
+                                Under Para 3.8 of SRS 4410, the <strong class="hl-blue">engagement partner</strong> shall take personal responsibility for:
+                                <br>(a) The overall quality of each compilation engagement assigned; and
+                                <br>(b) The engagement being performed in accordance with the firm’s quality control policies and procedures.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========================================
+                 SECTION 4.3: ACCEPTANCE & TERMS
+                 ========================================== -->
+            <section id="sec-srs4410-acceptance" class="note-section">
+                <div class="section-header">
+                    <span class="section-tag-badge badge-srs">SRS 4410 Para 3.4</span>
+                    <h2>Engagement Acceptance, Continuance &amp; Terms of Engagement</h2>
+                </div>
+
+                <div class="card card-accent mb-4">
+                    <h3 class="card-title text-primary"><i class="fas fa-handshake"></i> Pre-Conditions for Acceptance: 6 Mandatory Terms (Para 3.4 &amp; TYK 9, 13, 15)</h3>
+                    <p class="mb-3">
+                        The practitioner <strong class="hl-red">shall NOT accept</strong> the compilation engagement unless the practitioner has agreed upon the terms of engagement with management (and the engaging party, if different). The agreed terms must include:
+                    </p>
+                    <div class="table-responsive mb-3">
+                        <table class="concept-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 10%;">Clause</th>
+                                    <th style="width: 30%;">Mandatory Term</th>
+                                    <th style="width: 60%;">Detailed Scope &amp; Purpose</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>(a)</strong></td>
+                                    <td><strong>Intended Use &amp; Distribution</strong></td>
+                                    <td>The intended use and distribution of the financial information, and any restrictions on either its use or distribution where applicable.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>(b)</strong></td>
+                                    <td><strong>Financial Reporting Framework</strong></td>
+                                    <td>Explicit identification of the applicable financial reporting framework (e.g., AS, Ind AS, or a specific cash/tax basis).</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>(c)</strong></td>
+                                    <td><strong>Objective &amp; Scope</strong></td>
+                                    <td>The objective and scope of the compilation engagement (clarifying technical compilation vs assurance).</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>(d)</strong></td>
+                                    <td><strong>Practitioner’s Responsibilities</strong></td>
+                                    <td>Responsibilities of the practitioner, including compliance with relevant ethical requirements and SRS 4410.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>(e)</strong></td>
+                                    <td><strong>Management’s Responsibilities</strong></td>
+                                    <td>
+                                        Explicit recording of management’s 4 core responsibilities:
+                                        <br>(i) Financial info preparation under acceptable framework;
+                                        <br>(ii) Design &amp; maintenance of necessary internal controls;
+                                        <br>(iii) Accuracy and completeness of records &amp; documents provided;
+                                        <br>(iv) Judgments needed in preparing information.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>(f)</strong></td>
+                                    <td><strong>Expected Form of Report</strong></td>
+                                    <td>The expected form and content of the practitioner’s compilation report to be issued.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="callout callout-blue mb-0">
+                        <p class="mb-0">
+                            <strong class="hl-blue"><i class="fas fa-file-contract"></i> Mandatory Written Engagement Letter:</strong> The practitioner shall record the agreed terms in an <strong class="hl-blue">engagement letter or other suitable form of written agreement prior to performing</strong> the engagement.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Recurring Engagements -->
+                <div class="card card-purple mb-4">
+                    <h3 class="card-title text-purple"><i class="fas fa-sync-alt"></i> Recurring Compilation Engagements (TYK 13)</h3>
+                    <p class="mb-2">
+                        On recurring compilation engagements, the practitioner shall evaluate whether:
+                    </p>
+                    <ul class="styled-list mb-2">
+                        <li>Circumstances, including changes in engagement acceptance considerations or user requirements, require the <strong class="hl-purple">terms of engagement to be revised</strong>; and</li>
+                        <li>There is a need to <strong class="hl-purple">remind management</strong> of the existing terms of engagement (e.g., change in management personnel, scope expansion, legal changes).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ==========================================
+                 SECTION 4.4: PERFORMING THE ENGAGEMENT
+                 ========================================== -->
+            <section id="sec-srs4410-performing" class="note-section">
+                <div class="section-header">
+                    <span class="section-tag-badge badge-srs">SRS 4410 Para 3.5</span>
+                    <h2>Performing the Engagement: Fieldwork &amp; Practitioner Responsibilities</h2>
+                </div>
+
+                <div class="card card-accent mb-4">
+                    <h3 class="card-title text-primary"><i class="fas fa-search-dollar"></i> The Two Mandatory Understandings (Para 3.5)</h3>
+                    <p class="mb-3">
+                        The practitioner shall obtain an understanding of the following matters sufficient to be able to perform the compilation:
+                    </p>
+                    <div class="grid-2col mb-3">
+                        <div class="card card-slate">
+                            <h4 class="font-weight-bold text-slate mb-2"><i class="fas fa-industry"></i> 1. Entity's Business &amp; Operations</h4>
+                            <p class="mb-0 text-muted">
+                                Knowledge of the entity’s business and operations, including the entity’s <strong class="hl-blue">accounting system and accounting records</strong>.
+                            </p>
+                        </div>
+                        <div class="card card-slate">
+                            <h4 class="font-weight-bold text-slate mb-2"><i class="fas fa-book"></i> 2. Applicable Accounting Framework</h4>
+                            <p class="mb-0 text-muted">
+                                The <strong class="hl-blue">applicable financial reporting framework</strong>, including its specific application in the entity’s industry.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="callout callout-blue mb-0">
+                        <h4 class="font-weight-bold text-primary mb-2">Key Steps in Performing Compilation:</h4>
+                        <ul class="styled-list mb-0">
+                            <li><strong class="hl-blue">Compile Data:</strong> Compile financial information using records, documents, explanations, and judgments provided by management.</li>
+                            <li><strong class="hl-purple">Discuss Judgments:</strong> Discuss with management or TCWG those <strong class="hl-purple">significant judgments</strong> for which the practitioner provided assistance during compilation.</li>
+                            <li><strong class="hl-green">Read Compiled Statements:</strong> Prior to completion, the practitioner <strong class="hl-green">shall read</strong> the compiled financial information in light of their understanding of the entity's business, operations, and applicable framework.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========================================
+                 SECTION 4.5: MISSTATEMENTS & MANDATORY WITHDRAWAL
+                 ========================================== -->
+            <section id="sec-srs4410-withdrawal" class="note-section">
+                <div class="section-header">
+                    <span class="section-tag-badge badge-srs">Crucial Protocol</span>
+                    <h2>Dealing with Incomplete Records, Misstatements &amp; Mandatory Withdrawal</h2>
+                </div>
+
+                <div class="card card-rose mb-4">
+                    <h3 class="card-title text-rose"><i class="fas fa-exclamation-triangle"></i> The Rigorous 3-Step Escalation Protocol (Para 3.5 &amp; TYK 8)</h3>
+                    <p class="mb-3">
+                        Although a compilation engagement is non-assurance, the practitioner cannot remain passive when confronted with errors or omissions:
+                    </p>
+
+                    <!-- Flow Diagram -->
+                    <div class="process-flow mb-4">
+                        <div class="process-step">
+                            <div class="process-num">1</div>
+                            <div class="process-label">Discovery of Defect</div>
+                            <div class="process-sub">Incomplete records, misstatement, or misleading info</div>
+                        </div>
+                        <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+                        <div class="process-step">
+                            <div class="process-num">2</div>
+                            <div class="process-label">Propose Amendments</div>
+                            <div class="process-sub">Request corrected data / propose accounting adjustments</div>
+                        </div>
+                        <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+                        <div class="process-step">
+                            <div class="process-num">3</div>
+                            <div class="process-label">If Management Declines</div>
+                            <div class="process-sub" style="color: #b91c1c; font-weight: 700;">MANDATORY WITHDRAWAL &amp; Inform TCWG</div>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive mb-3">
+                        <table class="concept-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 30%;">Trigger Condition</th>
+                                    <th style="width: 35%;">Practitioner's Mandatory Duty</th>
+                                    <th style="width: 35%;">Consequence if Management Fails / Declines</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>1. Incomplete or Inaccurate Records</strong><br><span class="text-muted">Records, documents, explanations, or judgments provided are incomplete, inaccurate, or unsatisfactory.</span></td>
+                                    <td>Bring the matter to the attention of management and <strong class="hl-blue">request additional or corrected information</strong>.</td>
+                                    <td>If unable to complete engagement because management fails to provide info $implies$ <strong class="hl-red">WITHDRAW from engagement</strong> and inform management &amp; TCWG of reasons.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>2. Material Misstatement or Misleading Statements</strong><br><span class="text-muted">Compiled statements do not adequately refer to framework, require amendments not to be materially misstated, or are otherwise misleading.</span></td>
+                                    <td>The practitioner shall <strong class="hl-blue">propose appropriate amendments</strong> to management.</td>
+                                    <td>If management declines or does not permit proposed amendments $implies$ <strong class="hl-red">WITHDRAW from engagement</strong> and inform management &amp; TCWG of reasons.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>3. Withdrawal Not Possible</strong><br><span class="text-muted">Where legal, statutory, or judicial constraints prevent withdrawal.</span></td>
+                                    <td>Determine professional and legal responsibilities applicable in the circumstances.</td>
+                                    <td>Seek formal legal advice; cannot issue a deceptive or false report.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Final Acknowledgement -->
+                    <div class="callout callout-emerald mb-3">
+                        <h4 class="font-weight-bold text-emerald mb-1"><i class="fas fa-signature"></i> Final Management Acknowledgement</h4>
+                        <p class="mb-0">
+                            The practitioner <strong class="hl-green">shall obtain an acknowledgement</strong> from management or those charged with governance, as appropriate, that they have <strong class="hl-green">taken responsibility for the final version</strong> of the compiled financial information.
+                        </p>
+                    </div>
+
+                    <!-- Communication with TCWG -->
+                    <div class="callout callout-purple mb-0">
+                        <h4 class="font-weight-bold text-purple mb-1"><i class="fas fa-comments"></i> Communication with TCWG (Para 3.6)</h4>
+                        <p class="mb-0">
+                            The practitioner shall communicate with management or TCWG on a <strong class="hl-purple">timely basis</strong> during the course of the engagement all matters that, in professional judgment, are of <strong class="hl-purple">sufficient importance to merit attention</strong>.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========================================
+                 SECTION 4.6: THE PRACTITIONER'S REPORT
+                 ========================================== -->
+            <section id="sec-srs4410-reporting" class="note-section">
+                <div class="section-header">
+                    <span class="section-tag-badge badge-srs">SRS 4410 Para 3.7</span>
+                    <h2>Form, Elements &amp; Structure of the Practitioner's Compilation Report</h2>
+                </div>
+
+                <div class="card card-accent mb-4">
+                    <h3 class="card-title text-primary"><i class="fas fa-file-alt"></i> The 13 Prescribed Elements of a Compilation Report (Para 3.7 &amp; TYK 12)</h3>
+                    <p class="mb-3">
+                        The practitioner’s report issued for a compilation engagement <strong class="hl-blue">shall be in writing</strong> and contain the following 13 statutory elements:
+                    </p>
+                    <div class="table-responsive mb-3">
+                        <table class="concept-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 8%;">#</th>
+                                    <th style="width: 27%;">Report Element</th>
+                                    <th style="width: 65%;">Standard Requirement &amp; ICAI Specific Guidance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>(a)</strong></td>
+                                    <td><strong>Report Title</strong></td>
+                                    <td>Clearly titled: <strong class="hl-blue">"Practitioner’s Compilation Report"</strong> (distinguishing it from an independent auditor's report).</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>(b)</strong></td>
+                                    <td><strong>Addressee</strong></td>
+                                    <td>Addressee as required by the terms of the engagement (ordinarily management or TCWG).</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>(c)</strong></td>
+                                    <td><strong>Statement of Compilation</strong></td>
+                                    <td>A statement that the practitioner has compiled the financial information based on <strong class="hl-blue">information provided by management</strong>.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>(d)</strong></td>
+                                    <td><strong>Management's Responsibilities</strong></td>
+                                    <td>A description of the responsibilities of management or TCWG in relation to the compilation engagement and the financial information.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>(e)</strong></td>
+                                    <td><strong>Applicable Framework</strong></td>
+                                    <td>Identification of the applicable financial reporting framework (and description/reference if a special purpose framework is used).</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>(f)</strong></td>
+                                    <td><strong>Identification of Financial Info</strong></td>
+                                    <td>Identification of the financial information, including the title of each element (e.g. Balance Sheet, P&amp;L) and the date or period to which it relates.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>(g)</strong></td>
+                                    <td><strong>Practitioner's Responsibilities</strong></td>
+                                    <td>A description that the engagement was performed in accordance with <strong class="hl-blue">SRS 4410</strong> and that the practitioner complied with relevant <strong class="hl-blue">ethical requirements</strong>.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>(h)</strong></td>
+                                    <td><strong>Nature of Compilation</strong></td>
+                                    <td>A description of what a compilation engagement entails in accordance with SRS 4410.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>(i)</strong></td>
+                                    <td><strong>Dual Negative Explanations</strong></td>
+                                    <td>
+                                        <strong class="hl-red">Mandatory Non-Assurance Statements:</strong>
+                                        <br>(i) Since a compilation is not an assurance engagement, the practitioner is <strong class="hl-red">not required to verify accuracy or completeness</strong> of info provided; and
+                                        <br>(ii) Accordingly, the practitioner <strong class="hl-red">does not express an audit opinion or a review conclusion</strong> on whether the statements are prepared in accordance with framework.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>(j)</strong></td>
+                                    <td><strong>Special Purpose Warning Paragraph</strong></td>
+                                    <td>
+                                        If prepared under a special purpose framework:
+                                        <br>(i) Describes purpose &amp; intended users (or refers to note); and
+                                        <br>(ii) <strong class="hl-amber">Draws attention of readers that info is prepared in accordance with special purpose framework and may not be suitable for other purposes</strong>.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>(k)</strong></td>
+                                    <td><strong>Date of Report</strong></td>
+                                    <td>The date of the practitioner’s report (cannot predate date management took responsibility).</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>(l)</strong></td>
+                                    <td><strong>Practitioner's Signature</strong></td>
+                                    <td>Signature in the personal name of the CA / firm name along with Membership Number &amp; FRN.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>(m)</strong></td>
+                                    <td><strong>Place of Signature</strong></td>
+                                    <td>The specific city/place where the report is signed.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Documentation Requirements (Para 3.9) -->
+                <div class="card card-purple mb-4">
+                    <h3 class="card-title text-purple"><i class="fas fa-folder-open"></i> Engagement Documentation Requirements (Para 3.9 &amp; TYK 4, 11, 14)</h3>
+                    <p class="mb-3">
+                        The practitioner shall maintain engagement documentation that provides a sufficient and appropriate record of the work performed:
+                    </p>
+                    <div class="grid-2col mb-3">
+                        <div class="card card-slate">
+                            <h4 class="font-weight-bold text-slate mb-2"><i class="fas fa-file-medical-alt"></i> Mandatory Inclusions in Working Papers</h4>
+                            <ul class="styled-list mb-0">
+                                <li><strong class="hl-purple">Significant Matters:</strong> Significant matters arising during the engagement and how those matters were addressed by the practitioner (e.g. resolution of inventory valuation doubts).</li>
+                                <li><strong class="hl-blue">Reconciliation Record:</strong> A record of how the compiled financial information <strong class="hl-blue">reconciles with underlying records</strong>, documents, explanations, and other information provided by management.</li>
+                                <li><strong class="hl-green">Acknowledged Copy &amp; Report:</strong> A copy of the final version of the compiled financial information for which management/TCWG acknowledged responsibility, and the practitioner’s report.</li>
+                            </ul>
+                        </div>
+                        <div class="card card-slate">
+                            <h4 class="font-weight-bold text-slate mb-2"><i class="fas fa-archive"></i> Optional Items &amp; File Assembly (SQC 1)</h4>
+                            <ul class="styled-list mb-0">
+                                <li><strong>Optional Records:</strong> Copy of the entity’s trial balance, summary of significant accounting records, or schedules used during compilation.</li>
+                                <li><strong class="hl-amber">Assembly of Final File (Case MCQ 5):</strong> In accordance with SQC 1, the final engagement file should be assembled on a <strong class="hl-amber">timely basis</strong> after the report has been finalised, within the time limits established by the firm’s quality control policies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========================================
+                 SECTION 4.7: TEST YOUR UNDERSTANDING 2
+                 ========================================== -->
+            <section id="sec-tyu2" class="note-section">
+                <div class="section-header">
+                    <span class="section-tag-badge badge-tyk">ICAI TYU 2</span>
+                    <h2>Test Your Understanding 2: Unrecorded Theft Loss of ₹ 100 Lacs in Compilation</h2>
+                </div>
+
+                <div class="card mb-4" style="border-left: 5px solid #d97706;">
+                    <div class="interactive-case-box">
+                        <div class="case-badge">Practical Case Problem (ICAI Study Material)</div>
+                        <h3 class="mb-3" style="font-family: var(--notes-heading); font-size: 1.35rem; color: #92400e;">
+                            Scenario: Repudiated Insurance Claim of ₹ 100 Lacs Kept under Current Assets
+                        </h3>
+                        <p class="mb-2">
+                            During the course of performing a compilation engagement in accordance with <strong class="hl-blue">SRS 4410</strong>, it becomes known to you that the client had suffered a <strong class="hl-red">theft loss of ₹ 100 lacs</strong> of its inventories over a period of time at a storage location visited infrequently.
+                        </p>
+                        <p class="mb-2">
+                            A claim was lodged by the client with the insurance company which was <strong class="hl-red">repudiated</strong> due to certain technical reasons relating to policy coverage. The client has <strong>not preferred a complaint or an appeal</strong> against said repudiation.
+                        </p>
+                        <p class="mb-3">
+                            The amount of ₹ 100 lacs is reflected under the head <strong class="hl-amber">"Current Assets"</strong> in the trial balance of the client.
+                        </p>
+                        <div class="callout callout-amber mb-0">
+                            <strong>Question:</strong> Discuss how you should proceed to deal with the matter under SRS 4410?
+                        </div>
+                    </div>
+
+                    <!-- Collapsible Accordion Solution -->
+                    <div class="accordion-item mt-3">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <span><i class="fas fa-lightbulb text-amber"></i> View ICAI Model Answer &amp; Step-by-Step Resolution</span>
+                            <i class="fas fa-chevron-down accordion-arrow"></i>
+                        </button>
+                        <div class="accordion-body">
+                            <h4 class="font-weight-bold text-primary mb-2">Step-by-Step Resolution under SRS 4410:</h4>
+                            <div class="table-responsive mb-3">
+                                <table class="concept-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 25%;">Phase</th>
+                                            <th style="width: 75%;">Applicable Principle &amp; Practical Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>1. Nature of the Item</strong></td>
+                                            <td>
+                                                Since the insurance claim has been repudiated and no appeal or legal challenge has been preferred, the amount of ₹ 100 lacs ceases to be a recoverable receivable or asset. It represents an <strong class="hl-red">irrecoverable loss</strong> that should be written off to the Statement of Profit and Loss. Retaining it under "Current Assets" renders the compiled financial statements <strong class="hl-red">materially misstated and misleading</strong>.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>2. Practitioner's Duty to Propose Amendments</strong></td>
+                                            <td>
+                                                Under SRS 4410, if the practitioner becomes aware during the engagement that:
+                                                <br>• Amendments to compiled financial information are required for information <strong class="hl-blue">not to be materially misstated</strong>; or
+                                                <br>• The compiled financial information is <strong class="hl-red">otherwise misleading</strong>,
+                                                <br>The practitioner <strong class="hl-blue">SHALL PROPOSE THE APPROPRIATE AMENDMENTS TO MANAGEMENT</strong> (i.e. propose writing off ₹ 100 lacs as a loss).
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>3. If Management Accepts</strong></td>
+                                            <td>
+                                                If management permits the amendment, the practitioner compiles the financial statements incorporating the write-off and completes the engagement normally.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>4. If Management Declines (Crucial Step)</strong></td>
+                                            <td>
+                                                If management declines or does not permit the practitioner to make proposed amendments, the practitioner <strong class="hl-red" style="font-size: 1.1rem;">SHALL WITHDRAW FROM THE ENGAGEMENT</strong> and inform management and those charged with governance (TCWG) of the reasons for withdrawing!
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>5. If Withdrawal Not Possible</strong></td>
+                                            <td>
+                                                If withdrawal is not legally possible, the practitioner shall determine applicable professional and legal responsibilities in the circumstances.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="callout callout-rose mb-0">
+                                <p class="mb-0">
+                                    <strong class="hl-red">Exam Key Takeaway:</strong> In a compilation engagement, the practitioner cannot issue a "qualified" compilation report on disagreement. If management refuses to rectify a material misstatement, <strong class="hl-red">WITHDRAWAL IS MANDATORY</strong>!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ==========================================
+                 SECTION 5: INTEGRATED CASE SCENARIO
+                 ========================================== -->
+            <section id="sec-case-km" class="note-section">
+                <div class="section-header">
+                    <span class="section-tag-badge badge-case">Integrated Case</span>
+                    <h2>Integrated Case Scenario: KM Limited (Rourkela Unit Compilation)</h2>
+                </div>
+
+                <div class="card card-accent mb-4">
+                    <div class="interactive-case-box">
+                        <div class="case-badge">ICAI Integrated Case Scenario (Exam Standard)</div>
+                        <h3 class="mb-3" style="font-family: var(--notes-heading); font-size: 1.4rem; color: #1e3a8a;">
+                            Background &amp; Engagement Observations: KM Limited
+                        </h3>
+                        <p class="mb-2">
+                            <strong>KM Limited</strong> has engaged your CA firm for the compilation of financial statements in accordance with the requirements of <strong class="hl-blue">SRS 4410</strong>. You also come to know that the company is setting up a <strong class="hl-purple">new unit in Rourkela, Odisha</strong>. The company management has provided you with a draft trial balance and requires assistance in the preparation and presentation of its financial statements for the year ended 31st March, 2026. The management requires such preparation and presentation for its <strong class="hl-blue">internal use</strong>.
+                        </p>
+                        <p class="mb-2 font-weight-bold" style="color: #334155;">
+                            During the course of the engagement, the following specific matters are noticed by the engagement team:
+                        </p>
+                        <div class="callout callout-slate mb-3">
+                            <ul class="styled-list mb-0">
+                                <li>
+                                    <strong class="hl-red">[Observation 1 - Opening Balance Swaps]:</strong> There are apparent errors in a few opening balances brought forward from the previous year relating to some outstanding incentives receivable from government authorities. These have been swapped with some other balances in the trial balance. However, there are no credit transactions in such incentive accounts or accounts whose balances have been swapped during the year.
+                                </li>
+                                <li>
+                                    <strong class="hl-amber">[Observation 2 - Revenue Verification Suggestion]:</strong> One of the team members suggests that it is one of the team's duties to ensure that revenue figures stated in the trial balance, at least, are verified to ensure that all revenues required to be booked by the company have, in fact, been booked.
+                                </li>
+                                <li>
+                                    <strong class="hl-blue">[Observation 3 - Quality Control Applicability]:</strong> It is also suggested by this team member that even though it is a compilation engagement, quality control aspects like adhering to appropriate Standards need to be followed.
+                                </li>
+                                <li>
+                                    <strong class="hl-purple">[Observation 4 - Omission of Rourkela Unit Expenditure]:</strong> Before signing and issuing the report under SRS 4410, you once again read the financial information. It comes to your notice that figures relating to setting up the new unit in Rourkela, Odisha have not been properly disclosed in the compiled financial statements. The expenditure was incurred from a bank account maintained in Rourkela and was omitted to be shown under appropriate heads. You are vacillating regarding this matter considering the non-assurance scope of a compilation engagement.
+                                </li>
+                                <li>
+                                    <strong class="hl-green">[Observation 5 - Engagement Documentation]:</strong> The engagement team has maintained detailed documentation during the course of the compilation engagement.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MCQs Grid -->
+                <div class="mb-4">
+                    <h3 class="card-title text-primary mb-3"><i class="fas fa-question-circle"></i> Multiple Choice Questions (Solved with ICAI Rationale)</h3>
+
+                    <!-- MCQ 1 -->
+                    <div class="card card-slate mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge badge-primary" style="background:#1e40af; color:#fff; padding:0.25rem 0.6rem; border-radius:4px; font-weight:700;">Question 1</span>
+                            <span class="text-muted font-weight-bold" style="font-size:0.85rem;">SRS 4410 Para 3.5 &bull; Incomplete Records</span>
+                        </div>
+                        <p class="mb-2 font-weight-bold" style="color: #0f172a;">
+                            1. In respect of errors in some of the opening balances noticed as described in the case, which of the following statements is most appropriate?
+                        </p>
+                        <div class="options-list mb-3">
+                            <div class="option-item">(a) Such errors should straight away lead to the qualification of a report to be issued.</div>
+                            <div class="option-item correct-option" style="background: #ecfdf5; border: 1.5px solid #059669; border-radius: 6px; padding: 0.5rem 0.75rem; color: #065f46; font-weight: 700;">
+                                <i class="fas fa-check-circle text-emerald"></i> (b) Such errors should be brought to the knowledge of management.
+                            </div>
+                            <div class="option-item">(c) Knowledge of such type of errors has no effect on compliance of ethical requirements by the firm.</div>
+                            <div class="option-item">(d) The above said matter relates to SA 510 Initial Audit Engagements-Opening Balances and has no effect on reporting obligations in a compilation engagement.</div>
+                        </div>
+                        <div class="callout callout-emerald mb-0">
+                            <strong><i class="fas fa-check"></i> Correct Answer: (b)</strong>
+                            <br><strong>ICAI Rationale:</strong> Under SRS 4410, if the practitioner becomes aware that the records, documents, explanations, or other information provided by management are incomplete, inaccurate, or otherwise unsatisfactory, the practitioner <strong class="hl-green">shall bring that to the attention of management and request additional or corrected information</strong>. A compilation report cannot be "qualified" — if management fails/refuses to correct, withdrawal is required. SA 510 does not apply to non-assurance compilations.
+                        </div>
+                    </div>
+
+                    <!-- MCQ 2 -->
+                    <div class="card card-slate mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge badge-primary" style="background:#1e40af; color:#fff; padding:0.25rem 0.6rem; border-radius:4px; font-weight:700;">Question 2</span>
+                            <span class="text-muted font-weight-bold" style="font-size:0.85rem;">SRS 4410 &bull; Non-Assurance Character</span>
+                        </div>
+                        <p class="mb-2 font-weight-bold" style="color: #0f172a;">
+                            2. As regards the suggestion of one of the team members regarding the verification of all revenues of the company, which of the following statements is most appropriate?
+                        </p>
+                        <div class="options-list mb-3">
+                            <div class="option-item">(a) Suggestion of team member is proper as such verification is part and parcel of such an engagement.</div>
+                            <div class="option-item">(b) Suggestion of team member is proper as the absence of such verification may make financial statements misleading.</div>
+                            <div class="option-item correct-option" style="background: #ecfdf5; border: 1.5px solid #059669; border-radius: 6px; padding: 0.5rem 0.75rem; color: #065f46; font-weight: 700;">
+                                <i class="fas fa-check-circle text-emerald"></i> (c) Suggestion of team member is not proper as verifying the accuracy or completeness of the information provided by management is not required in such engagement.
+                            </div>
+                            <div class="option-item">(d) Suggestion of team member is not proper as compliance with qualitative requirements is not required in such engagement.</div>
+                        </div>
+                        <div class="callout callout-emerald mb-0">
+                            <strong><i class="fas fa-check"></i> Correct Answer: (c)</strong>
+                            <br><strong>ICAI Rationale:</strong> A compilation engagement is <strong>not</strong> an assurance engagement. Under SRS 4410, the practitioner is <strong class="hl-green">not required to verify the accuracy or completeness</strong> of the information provided by management for the compilation, or otherwise to gather evidence to express an audit opinion or review conclusion. Applying audit vouching to revenues misinterprets the fundamental scope of SRS 4410.
+                        </div>
+                    </div>
+
+                    <!-- MCQ 3 -->
+                    <div class="card card-slate mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge badge-primary" style="background:#1e40af; color:#fff; padding:0.25rem 0.6rem; border-radius:4px; font-weight:700;">Question 3</span>
+                            <span class="text-muted font-weight-bold" style="font-size:0.85rem;">Quality Control Standards &bull; SQC 1 Scope</span>
+                        </div>
+                        <p class="mb-2 font-weight-bold" style="color: #0f172a;">
+                            3. In view of the team member’s suggestion relating to adherence to appropriate Standards for quality control, which of the following statements is relevant in the context of the above said engagement?
+                        </p>
+                        <div class="options-list mb-3">
+                            <div class="option-item">(a) SA 220 is applicable in this engagement and has to be followed by the engagement partner meticulously.</div>
+                            <div class="option-item correct-option" style="background: #ecfdf5; border: 1.5px solid #059669; border-radius: 6px; padding: 0.5rem 0.75rem; color: #065f46; font-weight: 700;">
+                                <i class="fas fa-check-circle text-emerald"></i> (b) SQC 1 is applicable in this engagement.
+                            </div>
+                            <div class="option-item">(c) Both SA 220 and SQC 1 are applicable in this engagement.</div>
+                            <div class="option-item">(d) SA 220 and SQC 1 are not applicable in this engagement. However, SRS 4410 lays down detailed quality control requirements for such type of engagement.</div>
+                        </div>
+                        <div class="callout callout-emerald mb-0">
+                            <strong><i class="fas fa-check"></i> Correct Answer: (b)</strong>
+                            <br><strong>ICAI Rationale:</strong> <strong class="hl-green">SQC 1 is applicable to all Engagement Standards</strong> issued by ICAI. Because SRS 4410 is an Engagement Standard, SQC 1 applies to the firm in respect of compilation engagements. SA 220 applies specifically to audits of historical financial statements and is not applicable to compilations.
+                        </div>
+                    </div>
+
+                    <!-- MCQ 4 -->
+                    <div class="card card-slate mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge badge-primary" style="background:#1e40af; color:#fff; padding:0.25rem 0.6rem; border-radius:4px; font-weight:700;">Question 4</span>
+                            <span class="text-muted font-weight-bold" style="font-size:0.85rem;">Ethics &amp; Integrity &bull; Misleading Financial Statements</span>
+                        </div>
+                        <p class="mb-2 font-weight-bold" style="color: #0f172a;">
+                            4. Which of the following statements is most appropriate as regards omission of expenditure under appropriate heads pertaining to the Rourkela unit in compiled financial statements?
+                        </p>
+                        <div class="options-list mb-3">
+                            <div class="option-item correct-option" style="background: #ecfdf5; border: 1.5px solid #059669; border-radius: 6px; padding: 0.5rem 0.75rem; color: #065f46; font-weight: 700;">
+                                <i class="fas fa-check-circle text-emerald"></i> (a) The above-noted omission can be misleading. By disregarding such an omission, the fundamental principle of integrity is violated, and engagement cannot be performed in accordance with ethical requirements.
+                            </div>
+                            <div class="option-item">(b) The above-noted omission can be misleading. By disregarding such an omission, the fundamental principle of objectivity is violated, and engagement cannot be performed in accordance with ethical requirements.</div>
+                            <div class="option-item">(c) The above noted omission has no effect on performing such compilation engagement.</div>
+                            <div class="option-item">(d) The above-noted omission has no effect on performing and issuing reports under such compilation engagement.</div>
+                        </div>
+                        <div class="callout callout-emerald mb-0">
+                            <strong><i class="fas fa-check"></i> Correct Answer: (a)</strong>
+                            <br><strong>ICAI Rationale:</strong> Even in non-assurance engagements, a Chartered Accountant must comply with the Fundamental Principles of the Code of Ethics. Knowingly associating oneself with materially false or misleading information violates the fundamental principle of <strong class="hl-green">Integrity</strong>. The practitioner must propose amendments to properly classify the expenditure; if refused, withdrawal is mandatory.
+                        </div>
+                    </div>
+
+                    <!-- MCQ 5 -->
+                    <div class="card card-slate mb-0">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="badge badge-primary" style="background:#1e40af; color:#fff; padding:0.25rem 0.6rem; border-radius:4px; font-weight:700;">Question 5</span>
+                            <span class="text-muted font-weight-bold" style="font-size:0.85rem;">Documentation &bull; File Assembly under SQC 1</span>
+                        </div>
+                        <p class="mb-2 font-weight-bold" style="color: #0f172a;">
+                            5. The detailed documentation is maintained during the course of compilation engagement. Which of the following statements is most appropriate regarding the assembly of the final engagement file?
+                        </p>
+                        <div class="options-list mb-3">
+                            <div class="option-item">(a) Final engagement file should be assembled in not more than 60 days after the date of the report.</div>
+                            <div class="option-item">(b) Final engagement file should be assembled in not more than 120 days after the date of the report.</div>
+                            <div class="option-item correct-option" style="background: #ecfdf5; border: 1.5px solid #059669; border-radius: 6px; padding: 0.5rem 0.75rem; color: #065f46; font-weight: 700;">
+                                <i class="fas fa-check-circle text-emerald"></i> (c) Final engagement file should be assembled on a timely basis after the engagement report has been finalised in accordance with the time limits set by the firm.
+                            </div>
+                            <div class="option-item">(d) There is no requirement of assembling of final engagement file in a compilation engagement.</div>
+                        </div>
+                        <div class="callout callout-emerald mb-0">
+                            <strong><i class="fas fa-check"></i> Correct Answer: (c)</strong>
+                            <br><strong>ICAI Rationale:</strong> Under SQC 1, the firm must establish policies and procedures for engagement teams to complete the assembly of final engagement files on a <strong class="hl-green">timely basis</strong> after the engagement reports have been finalised, in accordance with the time limits established by the firm. (While SQC 1 provides an illustrative limit ordinarily not more than 60 days for audits, for engagements generally it is governed by the firm's established time limits).
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========================================
+                 SECTION 6: TEST YOUR KNOWLEDGE (TYK 1-15)
+                 ========================================== -->
+            <section id="sec-tyk" class="note-section">
+                <div class="section-header">
+                    <span class="section-tag-badge badge-tyk">Comprehensive TYK</span>
+                    <h2>Test Your Knowledge (All 15 ICAI Questions Fully Solved)</h2>
+                </div>
+
+                <p class="mb-4">
+                    The following 15 theoretical and practical case questions cover every dimension of <strong class="hl-blue">SRS 4400</strong> and <strong class="hl-blue">SRS 4410</strong> tested by ICAI. Each question contains a fully articulated model answer with exact ICAI terminology and legal reasoning:
+                </p>
+
+                <!-- TYK 1 -->
+                <div class="card mb-4" style="border-left: 4px solid #1e40af;">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3 class="card-title text-primary mb-0"><i class="fas fa-file-alt"></i> TYK 1: Intended Purposes of a Compilation Engagement</h3>
+                        <span class="badge badge-primary" style="background:#1e40af; color:#fff; padding:0.25rem 0.5rem; border-radius:4px;">Theory</span>
+                    </div>
+                    <div class="callout callout-slate mb-3">
+                        <strong>Question:</strong> List out a few intended purposes of a "compilation engagement."
+                    </div>
+                    <div class="answer-content">
+                        <h4 class="font-weight-bold text-primary mb-2">ICAI Model Answer:</h4>
+                        <p class="mb-2">
+                            As per <strong class="hl-blue">SRS 4410</strong>, financial information that is the subject of a compilation engagement may be required for various purposes, including:
+                        </p>
+                        <ol class="styled-list mb-0">
+                            <li>
+                                <strong class="hl-blue">Mandatory Reporting:</strong> To comply with mandatory periodic financial reporting requirements established in relevant law or regulation, if any (e.g. regulatory submissions by trusts, societies, or non-corporate entities).
+                            </li>
+                            <li>
+                                <strong class="hl-blue">Unrelated to Mandatory Reporting:</strong>
+                                <ul class="styled-list mt-1 mb-0">
+                                    <li><strong class="hl-purple">Internal Management Use:</strong> For management or those charged with governance (TCWG), prepared on a basis appropriate for their particular internal purposes (e.g., periodic management accounts, operational cash flows).</li>
+                                    <li><strong class="hl-green">Contractual External Reporting:</strong> For periodic financial reporting undertaken for external parties under a contract or agreement — such as financial information provided to a <strong class="hl-green">funding body</strong> to support the provision or continuation of a government grant or credit facility.</li>
+                                    <li><strong class="hl-rose">Transactional Purposes:</strong> For transactional purposes, for example to support a transaction involving changes to the entity’s ownership or financing structure (such as for a <strong class="hl-red">merger, acquisition, or restructuring</strong>).</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- TYK 2 -->
+                <div class="card mb-4" style="border-left: 4px solid #059669;">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3 class="card-title text-emerald mb-0"><i class="fas fa-balance-scale"></i> TYK 2: Ethical Requirements &amp; Code of Ethics in Compilation</h3>
+                        <span class="badge badge-emerald" style="background:#059669; color:#fff; padding:0.25rem 0.5rem; border-radius:4px;">Ethics</span>
+                    </div>
+                    <div class="callout callout-slate mb-3">
+                        <strong>Question:</strong> A Chartered Accountant is offered appointment for a compilation engagement to be performed under SRS 4410. Is he required to comply with the ethical requirements of the Code of Ethics? Discuss briefly.
+                    </div>
+                    <div class="answer-content">
+                        <h4 class="font-weight-bold text-emerald mb-2">ICAI Model Answer:</h4>
+                        <p class="mb-2">
+                            As per <strong class="hl-green">Para 3.3 of SRS 4410</strong>, the practitioner <strong class="hl-blue">SHALL COMPLY</strong> with relevant ethical requirements established in the ICAI <em>Code of Ethics</em>:
+                        </p>
+                        <ul class="styled-list mb-2">
+                            <li><strong class="hl-blue">Fundamental Principles:</strong> The practitioner must adhere to Integrity, Objectivity, Professional Competence and Due Care, Confidentiality, and Professional Conduct. Threats to compliance must be identified and appropriately addressed.</li>
+                            <li><strong class="hl-amber">Independence Nuance:</strong> Being in the nature of a <strong class="hl-amber">non-assurance engagement</strong>, independence requirements <strong class="hl-red">DO NOT apply</strong> to compilation engagements under SRS 4410. However, if specific laws, regulations, or client agreements specify independence rules, they must be complied with.</li>
+                            <li><strong class="hl-red">Integrity Principle Crux:</strong> Non-applicability of independence does not permit the practitioner to compromise on Integrity. A practitioner cannot knowingly be associated with materially false or misleading information.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- TYK 3 -->
+                <div class="card mb-4" style="border-left: 4px solid #7c3aed;">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3 class="card-title text-purple mb-0"><i class="fas fa-exchange-alt"></i> TYK 3: Related Services vs. Assurance Engagements</h3>
+                        <span class="badge badge-purple" style="background:#7c3aed; color:#fff; padding:0.25rem 0.5rem; border-radius:4px;">Distinction</span>
+                    </div>
+                    <div class="callout callout-slate mb-3">
+                        <strong>Question:</strong> How do "related services" differ from assurance engagements?
+                    </div>
+                    <div class="answer-content">
+                        <h4 class="font-weight-bold text-purple mb-2">ICAI Model Answer:</h4>
+                        <div class="table-responsive mb-2">
+                            <table class="concept-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 25%;">Feature</th>
+                                        <th style="width: 38%;">Assurance Engagements (Audits / Reviews)</th>
+                                        <th style="width: 37%;">Related Services (SRS 4400 / SRS 4410)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Definition &amp; Intent</strong></td>
+                                        <td>Practitioner expresses a conclusion designed to enhance user confidence by evaluating a subject matter against criteria.</td>
+                                        <td>Practitioner performs agreed-upon procedures or compiles financial information without expressing any conclusion.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Level of Assurance</strong></td>
+                                        <td>Reasonable assurance (Audit) or Limited assurance (Review).</td>
+                                        <td><strong class="hl-red">ZERO Assurance</strong> provided.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Evidence Gathering</strong></td>
+                                        <td>Systematic evidence gathering through testing, verification, external confirmation, and analytical procedures.</td>
+                                        <td>No evidence gathered to form an opinion. Only factual findings or compilation from management data.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>User Conclusion</strong></td>
+                                        <td>Users rely on the practitioner's independent professional opinion/conclusion.</td>
+                                        <td>Users assess findings and procedures themselves and draw their own independent conclusions.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TYK 4 -->
+                <div class="card mb-4" style="border-left: 4px solid #d97706;">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3 class="card-title text-amber mb-0"><i class="fas fa-folder"></i> TYK 4: Documentation Requirements under SRS 4410</h3>
+                        <span class="badge badge-amber" style="background:#d97706; color:#fff; padding:0.25rem 0.5rem; border-radius:4px;">Documentation</span>
+                    </div>
+                    <div class="callout callout-slate mb-3">
+                        <strong>Question:</strong> Discuss main documentation requirements to be taken care of by a practitioner while performing a compilation engagement under SRS 4410.
+                    </div>
+                    <div class="answer-content">
+                        <h4 class="font-weight-bold text-amber mb-2">ICAI Model Answer:</h4>
+                        <p class="mb-2">
+                            As per <strong class="hl-amber">Para 3.9 of SRS 4410</strong>, the practitioner shall include in the engagement documentation:
+                        </p>
+                        <ol class="styled-list mb-2">
+                            <li><strong class="hl-blue">Significant Matters:</strong> Significant matters arising during the compilation engagement and how those matters were addressed by the practitioner.</li>
+                            <li><strong class="hl-green">Reconciliation Record:</strong> A record of how the compiled financial information reconciles with the underlying records, documents, explanations, and other information provided by management.</li>
+                            <li><strong class="hl-purple">Final Acknowledged Copy &amp; Report:</strong> A copy of the final version of the compiled financial information for which management or TCWG has acknowledged their responsibility, and a copy of the practitioner’s compilation report.</li>
+                        </ol>
+                        <p class="mb-0 text-muted font-italic">
+                            <strong>Additional Inclusions:</strong> The practitioner may also include a copy of the entity’s trial balance, summary of significant accounting records, or schedules used to perform the compilation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- TYK 5 -->
+                <div class="card mb-4" style="border-left: 4px solid #1e40af;">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3 class="card-title text-primary mb-0"><i class="fas fa-user-check"></i> TYK 5: CA P / X Limited — Audit Procedures vs. Compilation Approach</h3>
+                        <span class="badge badge-primary" style="background:#1e40af; color:#fff; padding:0.25rem 0.5rem; border-radius:4px;">Case Application</span>
+                    </div>
+                    <div class="callout callout-slate mb-3">
+                        <strong>Question:</strong> CA P has been appointed to compile the financial information of X Limited. CA P is confused whether he should apply the same procedures which are required to be applied to conduct an audit or there are some other procedures to discharge the duties under such an engagement. Define the characteristics of Compilation Engagement. What should be the approach of CA P for performing the Engagement?
+                    </div>
+                    <div class="answer-content">
+                        <h4 class="font-weight-bold text-primary mb-2">ICAI Model Answer:</h4>
+                        <p class="mb-2">
+                            <strong>1. Characteristics of a Compilation Engagement (Para 3):</strong>
+                            <br>A compilation engagement is an engagement in which a practitioner applies accounting and financial reporting expertise to assist management in preparing and presenting financial information under an applicable framework and issues a report. It is <strong class="hl-red">NOT an assurance engagement</strong>. It does not require CA P to verify accuracy or completeness of data provided, or gather evidence to express an audit opinion.
+                        </p>
+                        <p class="mb-2">
+                            <strong>2. CA P’s Approach for Performing the Engagement (Para 3.5):</strong>
+                            <br>CA P should <strong>NOT</strong> apply audit procedures (like vouching, verification, debtor circularisation). Instead, CA P's approach must comprise:
+                        </p>
+                        <ul class="styled-list mb-0">
+                            <li><strong class="hl-blue">Obtain Understanding:</strong> Gain knowledge of X Limited’s business, operations, accounting systems/records, and the applicable financial reporting framework.</li>
+                            <li><strong class="hl-blue">Compile from Records:</strong> Compile financial statements using records, documents, explanations, and judgments provided by management.</li>
+                            <li><strong class="hl-purple">Discuss Judgments:</strong> Discuss significant accounting judgments with management where assistance was provided.</li>
+                            <li><strong class="hl-green">Read Financial Statements:</strong> Prior to completion, read the compiled statements in light of understanding of entity and framework to assess if they appear sensible.</li>
+                            <li><strong class="hl-red">Address Deficiencies:</strong> If records are incomplete/inaccurate, request additional information. If statements are materially misstated or misleading, propose amendments. If management refuses, <strong class="hl-red">WITHDRAW from the engagement</strong>!</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- TYK 6 -->
+                <div class="card mb-4" style="border-left: 4px solid #059669;">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3 class="card-title text-emerald mb-0"><i class="fas fa-chalkboard-teacher"></i> TYK 6: MNC Limited / CA Lalit — Guidance to Team &amp; SQC 1 Applicability</h3>
+                        <span class="badge badge-emerald" style="background:#059669; color:#fff; padding:0.25rem 0.5rem; border-radius:4px;">QC &amp; Guidance</span>
+                    </div>
+                    <div class="callout callout-slate mb-3">
+                        <strong>Question:</strong> MNC Limited has engaged CA Lalit to help the company in compilation of financial information. CA Lalit explained to his team members the scope of work and responsibilities under this engagement. The team members have done mostly audit engagements and do not have exposure to compilation engagements. Discuss the key issues that CA Lalit should deliberate and guide his team members with respect to this engagement and the manner it differs from assurance engagements. Give your views on the applicability of SQC 1 to this engagement.
+                    </div>
+                    <div class="answer-content">
+                        <h4 class="font-weight-bold text-emerald mb-2">ICAI Model Answer:</h4>
+                        <p class="mb-2">
+                            <strong>1. Key Guidance to Team Members:</strong>
+                            <br>CA Lalit should guide his team on the fundamental differences between audit and compilation under <strong class="hl-blue">SRS 4410</strong>:
+                        </p>
+                        <ul class="styled-list mb-2">
+                            <li><strong class="hl-blue">Assistance vs. Verification:</strong> The role is to assist management using accounting expertise, not to audit or verify accuracy/completeness of management records.</li>
+                            <li><strong class="hl-purple">Intended Purposes:</strong> Explain that compilation may be for internal management use, funding grant support, or transactional M&amp;A purposes.</li>
+                            <li><strong class="hl-red">No Opinion Expressed:</strong> Highlight that the report explicitly states that no audit opinion or review conclusion is expressed.</li>
+                        </ul>
+                        <p class="mb-2">
+                            <strong>2. Applicability of SQC 1:</strong>
+                            <br><strong class="hl-green">SQC 1 is fully applicable to this engagement!</strong> SQC 1 applies to all Engagement Standards issued by ICAI. Since SRS 4410 is an Engagement Standard within the ICAI framework, the firm's quality control policies regarding leadership, ethics, human resources, engagement performance, and monitoring strictly govern CA Lalit's compilation engagement.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- TYK 7 -->
+                <div class="card mb-4" style="border-left: 4px solid #b91c1c;">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3 class="card-title text-rose mb-0"><i class="fas fa-users"></i> TYK 7: Brown Enterprises Limited / CA Kamna — ₹ 100 Cr Trade Receivables Verification</h3>
+                        <span class="badge badge-rose" style="background:#b91c1c; color:#fff; padding:0.25rem 0.5rem; border-radius:4px;">SRS 4400 Case</span>
+                    </div>
+                    <div class="callout callout-slate mb-3">
+                        <strong>Question:</strong> Brown Enterprises Limited has huge funds locked up in trade receivables standing at ₹ 100 crores as on 31st December, 2025. Management wants to evaluate validity of trade receivables to ensure reliability of reporting. The accounts department provided a list of 1000 debtors across the country. Management requested CA Kamna to take up this assignment and prepare a report under professional standards. Despite not being statutory auditor of the company, she accepts the engagement.
+                        <br>(a) Discuss whether it was proper for her to accept such engagement.
+                        <br>(b) While reporting, which precautions should be taken by her so that readers of report do not misunderstand its scope?
+                    </div>
+                    <div class="answer-content">
+                        <h4 class="font-weight-bold text-rose mb-2">ICAI Model Answer:</h4>
+                        <p class="mb-2">
+                            <strong>(a) Propriety of Acceptance under SRS 4400:</strong>
+                            <br>The engagement involves performing specified procedures on specified subject matter (trade receivables) and issuing a report of factual findings. This falls squarely within the purview of <strong class="hl-blue">SRS 4400</strong> ("Engagements to Perform Agreed-Upon Procedures Regarding Financial Information").
+                            <br><strong class="hl-green">Acceptance is completely proper!</strong> SRS 4400 clarifies that the reference to "auditor" in the Standard does <strong>not</strong> mean that the practitioner performing related services must be the statutory auditor of the entity’s financial statements. A non-statutory auditor can lawfully accept an agreed-upon procedures engagement.
+                        </p>
+                        <p class="mb-2">
+                            <strong>(b) Reporting Precautions to Avoid Misunderstanding (The 4 Disclaimers):</strong>
+                            <br>To prevent readers from misunderstanding the scope of the report, CA Kamna must include the following mandatory precautions in her report of factual findings:
+                        </p>
+                        <ol class="styled-list mb-0">
+                            <li><strong class="hl-red">No Audit/Review Disclaimer:</strong> A statement that the procedures performed do not constitute either an audit or a review, and as such, <strong class="hl-red">no assurance is expressed</strong>.</li>
+                            <li><strong class="hl-amber">Additional Procedures Disclaimer:</strong> A statement that had the auditor performed additional procedures, an audit or a review, <strong class="hl-amber">other matters might have come to light</strong> that would have been reported.</li>
+                            <li><strong class="hl-blue">Restricted Distribution:</strong> A statement that the report is <strong class="hl-blue">strictly restricted</strong> to those parties that have agreed to the procedures to be performed (management).</li>
+                            <li><strong class="hl-purple">Relates Only to Specified Elements:</strong> A statement that the report relates <strong class="hl-purple">only to trade receivables</strong> specified and does not extend to the financial statements of Brown Enterprises Limited taken as a whole.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- TYK 8 -->
+                <div class="card mb-4" style="border-left: 4px solid #d97706;">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3 class="card-title text-amber mb-0"><i class="fas fa-boxes"></i> TYK 8: Kings &amp; Company — Understated Inventory &amp; Refusal to Amend</h3>
+                        <span class="badge badge-amber" style="background:#d97706; color:#fff; padding:0.25rem 0.5rem; border-radius:4px;">Crucial Case</span>
+                    </div>
+                    <div class="callout callout-slate mb-3">
+                        <strong>Question:</strong> You have been appointed to compile financial statements of Kings &amp; Company (partnership firm) for tax purposes. During work, you discover that inventory is grossly understated and the company failed to apply applicable standards. On pointing this out, partners inform you that it is outside your scope since you are not conducting an audit and said figures duly certified by firm should be accepted. Comment.
+                    </div>
+                    <div class="answer-content">
+                        <h4 class="font-weight-bold text-amber mb-2">ICAI Model Answer:</h4>
+                        <p class="mb-2">
+                            <strong>1. Evaluation of Partners' Contention:</strong>
+                            <br>The contention of the partners that the matter is "outside scope" because it is a compilation and not an audit is <strong class="hl-red">COMPLETELY UNTENABLE AND REJECTED</strong> under professional standards.
+                        </p>
+                        <p class="mb-2">
+                            <strong>2. Legal &amp; Professional Duty under SRS 4410 (Para 3.5):</strong>
+                            <br>Under SRS 4410, if the practitioner becomes aware during the engagement that:
+                        </p>
+                        <ul class="styled-list mb-2">
+                            <li>The compiled financial information does not adequately refer to or describe the applicable framework;</li>
+                            <li><strong class="hl-red">Amendments to compiled information are required for it not to be materially misstated</strong>; or</li>
+                            <li>The compiled financial information is <strong class="hl-red">otherwise misleading</strong>,</li>
+                        </ul>
+                        <p class="mb-2">
+                            The practitioner <strong class="hl-blue">SHALL PROPOSE APPROPRIATE AMENDMENTS</strong> to management.
+                        </p>
+                        <p class="mb-0">
+                            <strong>3. Mandatory Action on Refusal:</strong>
+                            <br>If the partners decline or do not permit the practitioner to make the proposed amendments to rectify the understated inventory, <strong class="hl-red" style="font-size: 1.1rem;">THE PRACTITIONER SHALL WITHDRAW FROM THE ENGAGEMENT</strong> and inform management and TCWG of the reasons for withdrawing. A Chartered Accountant cannot be associated with misleading financial statements as it violates the Fundamental Principle of <strong class="hl-red">Integrity</strong> under the Code of Ethics.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- TYK 9 -->
+                <div class="card mb-4" style="border-left: 4px solid #1e40af;">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3 class="card-title text-primary mb-0"><i class="fas fa-university"></i> TYK 9: Coastal Ventures Ltd / CA X — Loan Application &amp; Management Responsibilities</h3>
+                        <span class="badge badge-primary" style="background:#1e40af; color:#fff; padding:0.25rem 0.5rem; border-radius:4px;">Case Application</span>
+                    </div>
+                    <div class="callout callout-slate mb-3">
+                        <strong>Question:</strong> Coastal Ventures Ltd. engages CA X to compile Ind AS financial statements for a bank loan application. CA X intends to record agreed terms in an engagement letter prior to performance.
+                        <br>• CA X is of view that independence requirements will not be applicable for above assignment. Do you agree?
+                        <br>• Suggest focus points in respect of management responsibilities that will be recorded in agreed terms in engagement letter.
+                    </div>
+                    <div class="answer-content">
+                        <h4 class="font-weight-bold text-primary mb-2">ICAI Model Answer:</h4>
+                        <p class="mb-2">
+                            <strong>1. Independence Requirements View:</strong>
+                            <br><strong class="hl-green">Yes, we agree with CA X.</strong> Under <strong class="hl-blue">SRS 4410</strong>, being in the nature of a non-assurance engagement, independence requirements do not apply to compilation engagements. (However, if specific laws, regulations, or bank lending terms prescribe independence disclosure, those rules must be honored).
+                        </p>
+                        <p class="mb-2">
+                            <strong>2. Focus Points on Management Responsibilities in Engagement Letter (Para 3.4):</strong>
+                            <br>CA X must record management's explicit agreement to the following four core responsibilities:
+                        </p>
+                        <ol class="styled-list mb-0">
+                            <li><strong class="hl-blue">Financial Information Preparation:</strong> Responsibility for the financial information, and for preparation/presentation thereof in accordance with Ind AS (acceptable in view of intended bank use).</li>
+                            <li><strong class="hl-red">Internal Control:</strong> Responsibility for design, implementation, and maintenance of internal controls necessary to ensure statements are free from material misstatement from fraud or error.</li>
+                            <li><strong class="hl-green">Accuracy &amp; Completeness of Data:</strong> Responsibility for accuracy and completeness of records, documents, explanations, and other information provided to CA X.</li>
+                            <li><strong class="hl-purple">Management Judgments:</strong> Responsibility for judgments needed in preparation/presentation, including those where CA X provides compilation assistance.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- TYK 10 -->
+                <div class="card mb-4" style="border-left: 4px solid #7c3aed;">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3 class="card-title text-purple mb-0"><i class="fas fa-handshake"></i> TYK 10: ATP Limited / RS Ltd — Takeover Due Diligence &amp; SRS 4400 Engagement Letter</h3>
+                        <span class="badge badge-purple" style="background:#7c3aed; color:#fff; padding:0.25rem 0.5rem; border-radius:4px;">SRS 4400 Terms</span>
+                    </div>
+                    <div class="callout callout-slate mb-3">
+                        <strong>Question:</strong> ATP Limited plans to invest in RS Ltd with a vision of takeover. ATP Limited engages you to perform agreed-upon procedures for Accounts Receivable and Inventory of RS Ltd and submit a report. Enumerate key matters that need to be agreed to form a clear understanding, and matters to include in engagement letter addressed to ATP Ltd.
+                    </div>
+                    <div class="answer-content">
+                        <h4 class="font-weight-bold text-purple mb-2">ICAI Model Answer:</h4>
+                        <p class="mb-2">
+                            As per <strong class="hl-purple">Para 2.3.1 of SRS 4400</strong>, the auditor should ensure with representatives of the entity and specified parties who will receive copies that there is a clear understanding regarding agreed procedures and conditions of engagement.
+                        </p>
+                        <h5 class="font-weight-bold text-slate mb-2">Matters to Include in the Engagement Letter Addressed to ATP Limited:</h5>
+                        <ol class="styled-list mb-0">
+                            <li><strong class="hl-blue">Nature &amp; Objective:</strong> Clear statement of the nature of the engagement, confirming it is an agreed-upon procedures engagement regarding accounts receivable and inventory.</li>
+                            <li><strong class="hl-blue">Subject Matter Specified:</strong> Specific identification of the accounts receivable ledger balances and inventory physical counts/valuation sheets of RS Ltd to which procedures will be applied.</li>
+                            <li><strong class="hl-green">Specific Procedures:</strong> An exhaustive, detailed listing of the specific procedures agreed to be performed (e.g. circularisation of debtors above ₹ 10 lacs, test counting 20% inventory lines).</li>
+                            <li><strong class="hl-purple">Anticipated Format of Report:</strong> The anticipated format and content of the report of factual findings.</li>
+                            <li><strong class="hl-red">Non-Assurance Statement:</strong> Explicit statement that the procedures performed will <strong>not constitute an audit or review</strong> and accordingly, <strong>no assurance</strong> will be expressed.</li>
+                            <li><strong class="hl-amber">Restricted Distribution:</strong> Statement that the distribution of the report will be <strong class="hl-amber">strictly restricted to ATP Limited</strong> and management, and cannot be used by or disclosed to other third parties.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- TYK 11 -->
+                <div class="card mb-4" style="border-left: 4px solid #059669;">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3 class="card-title text-emerald mb-0"><i class="fas fa-file-contract"></i> TYK 11: M/s RK Industries / CA Pawan — Inventory Doubts &amp; Documentation</h3>
+                        <span class="badge badge-emerald" style="background:#059669; color:#fff; padding:0.25rem 0.5rem; border-radius:4px;">Documentation Case</span>
+                    </div>
+                    <div class="callout callout-slate mb-3">
+                        <strong>Question:</strong> CA Pawan compiled financial statements for M/s RK Industries for past 2 years. During performance, CA Pawan was not satisfied with certain significant adjustments made to inventory valuation. The matter was subsequently resolved after obtaining appropriate clarifications from management. At completion, CA Pawan provided compiled statements and compilation report. Explain documentation requirements to be adhered to by CA Pawan.
+                    </div>
+                    <div class="answer-content">
+                        <h4 class="font-weight-bold text-emerald mb-2">ICAI Model Answer:</h4>
+                        <p class="mb-2">
+                            As per <strong class="hl-green">Para 3.9 of SRS 4410</strong>, CA Pawan must ensure that his engagement working papers document the following core elements:
+                        </p>
+                        <ol class="styled-list mb-2">
+                            <li>
+                                <strong class="hl-purple">Significant Matters Resolved:</strong> CA Pawan must specifically document the <strong class="hl-purple">doubt regarding inventory valuation adjustments</strong>, the clarifications sought from management, the rationale provided, and how the matter was satisfactorily addressed before finalisation.
+                            </li>
+                            <li>
+                                <strong class="hl-blue">Reconciliation Record:</strong> A comprehensive record showing how the compiled financial statements <strong class="hl-blue">reconcile with underlying records</strong>, books of account, trial balances, and inventory adjustment schedules provided by RK Industries.
+                            </li>
+                            <li>
+                                <strong class="hl-green">Management Acknowledgement &amp; Final Report:</strong> A copy of the final version of compiled financial statements on which management has <strong class="hl-green">acknowledged their responsibility</strong>, together with a copy of CA Pawan's signed Practitioner's Compilation Report.
+                            </li>
+                            <li>
+                                <strong class="hl-slate">Supporting Schedules:</strong> Copy of the firm's trial balance and inventory valuation sheets used to execute the compilation.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- TYK 12 -->
+                <div class="card mb-4" style="border-left: 4px solid #1e40af;">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3 class="card-title text-primary mb-0"><i class="fas fa-list-ol"></i> TYK 12: Compilation Purposes &amp; All Report Elements</h3>
+                        <span class="badge badge-primary" style="background:#1e40af; color:#fff; padding:0.25rem 0.5rem; border-radius:4px;">Core Theory</span>
+                    </div>
+                    <div class="callout callout-slate mb-3">
+                        <strong>Question:</strong> Compilation engagement is an engagement in which a practitioner applies accounting and financial reporting expertise to assist management in preparation/presentation of financial information and issues a report.
+                        <br>(i) For what purposes may financial information prepared under such engagement be required?
+                        <br>(ii) Briefly discuss elements of Practitioner’s report for such engagement.
+                    </div>
+                    <div class="answer-content">
+                        <h4 class="font-weight-bold text-primary mb-2">ICAI Model Answer:</h4>
+                        <p class="mb-2">
+                            <strong>(i) Purposes of Compilation (Para 3):</strong>
+                            <br>• Mandatory statutory reporting requirements under relevant law or regulation.
+                            <br>• Internal management / TCWG use prepared on a specialized basis.
+                            <br>• External reporting under contract (e.g. funding body grants/subsidies).
+                            <br>• Transactional purposes (mergers, acquisitions, restructuring).
+                        </p>
+                        <p class="mb-2">
+                            <strong>(ii) Elements of Practitioner’s Compilation Report (Para 3.7):</strong>
+                            <br>The written report shall include:
+                            <br>1. Title ("Practitioner’s Compilation Report"); 2. Addressee; 3. Statement that practitioner compiled based on info provided by management; 4. Management's responsibilities; 5. Identification of applicable framework (and special purpose alert); 6. Identification of financial info elements and dates; 7. Practitioner’s responsibilities and ethics compliance; 8. Description of compilation under SRS 4410; 9. Non-assurance explanations (no verification of accuracy/completeness; no audit opinion or review conclusion); 10. Special purpose framework warning paragraph if applicable; 11. Date; 12. Signature; 13. Place.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- TYK 13 -->
+                <div class="card mb-4" style="border-left: 4px solid #d97706;">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3 class="card-title text-amber mb-0"><i class="fas fa-sync"></i> TYK 13: Recurring Compilation for External Stakeholders</h3>
+                        <span class="badge badge-amber" style="background:#d97706; color:#fff; padding:0.25rem 0.5rem; border-radius:4px;">Acceptance &amp; Recurring</span>
+                    </div>
+                    <div class="callout callout-slate mb-3">
+                        <strong>Question:</strong> A Chartered Accountant is requested to undertake a compilation engagement for external stakeholders on a recurring basis. While considering acceptance, practitioner holds preliminary discussions with management. Analyse matters practitioner should ensure are clearly understood and agreed before commencing.
+                    </div>
+                    <div class="answer-content">
+                        <h4 class="font-weight-bold text-amber mb-2">ICAI Model Answer:</h4>
+                        <p class="mb-2">
+                            As per <strong class="hl-amber">Para 3.4 of SRS 4410</strong>, before commencing, the practitioner must record the agreed terms in a formal <strong class="hl-blue">written engagement letter</strong> covering:
+                        </p>
+                        <ol class="styled-list mb-2">
+                            <li><strong class="hl-blue">Intended Use &amp; Distribution:</strong> Specific identification of the external stakeholder group and restrictions on distribution.</li>
+                            <li><strong class="hl-blue">Applicable Framework:</strong> Identification of the accounting framework acceptable to those stakeholders.</li>
+                            <li><strong class="hl-green">Scope &amp; Objective:</strong> Technical compilation assistance without assurance.</li>
+                            <li><strong class="hl-purple">Practitioner Responsibilities:</strong> Compliance with SRS 4410 and Code of Ethics.</li>
+                            <li><strong class="hl-red">Management 4 Responsibilities:</strong> Responsibility for financial statements, internal controls, data accuracy/completeness, and required judgments.</li>
+                            <li><strong class="hl-slate">Expected Report Form:</strong> Non-assurance report format.</li>
+                        </ol>
+                        <p class="mb-0 text-muted">
+                            <strong>On Recurring Engagements:</strong> Evaluate if circumstances require terms to be revised, and remind management of existing terms.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- TYK 14 -->
+                <div class="card mb-4" style="border-left: 4px solid #059669;">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3 class="card-title text-emerald mb-0"><i class="fas fa-user-shield"></i> TYK 14: KSN &amp; Co. / CA L / Nature Ltd — Partner Quality Control &amp; Working Papers</h3>
+                        <span class="badge badge-emerald" style="background:#059669; color:#fff; padding:0.25rem 0.5rem; border-radius:4px;">Engagement Partner QC</span>
+                    </div>
+                    <div class="callout callout-slate mb-3">
+                        <strong>Question:</strong> KSN and Co. appointed by Nature Ltd to assist in compilation under SRS 4410. CA L is engagement partner. What are responsibilities of CA L and which documentation requirements related to Engagement Level Quality Control should CA L ensure compliance with?
+                    </div>
+                    <div class="answer-content">
+                        <h4 class="font-weight-bold text-emerald mb-2">ICAI Model Answer:</h4>
+                        <p class="mb-2">
+                            <strong>1. Responsibilities of CA L as Engagement Partner (Para 3.8):</strong>
+                            <br>The engagement partner shall take personal responsibility for:
+                        </p>
+                        <ul class="styled-list mb-2">
+                            <li><strong class="hl-green">Overall Quality:</strong> The overall quality of each compilation engagement to which the partner is assigned; and</li>
+                            <li><strong class="hl-green">Firm QC Procedures:</strong> Ensuring the engagement is performed in strict compliance with the CA firm’s quality control policies and procedures established under SQC 1.</li>
+                        </ul>
+                        <p class="mb-2">
+                            <strong>2. Documentation Compliance by CA L (Para 3.9):</strong>
+                            <br>CA L must ensure engagement documentation contains:
+                        </p>
+                        <ol class="styled-list mb-0">
+                            <li><strong class="hl-blue">Significant matters</strong> arising during compilation and their resolution.</li>
+                            <li><strong class="hl-blue">Reconciliation record</strong> linking compiled financial statements with underlying records.</li>
+                            <li><strong class="hl-purple">Final acknowledged copy</strong> of compiled statements signed/acknowledged by management &amp; the signed compilation report.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- TYK 15 -->
+                <div class="card mb-4" style="border-left: 4px solid #1e40af;">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3 class="card-title text-primary mb-0"><i class="fas fa-handshake"></i> TYK 15: Mr. Agam / Bluesky Pvt. Ltd — Engagement Terms Before Acceptance</h3>
+                        <span class="badge badge-primary" style="background:#1e40af; color:#fff; padding:0.25rem 0.5rem; border-radius:4px;">Acceptance Protocol</span>
+                    </div>
+                    <div class="callout callout-slate mb-3">
+                        <strong>Question:</strong> Mr. Agam approached by Bluesky Pvt. Ltd. for FY 2025-26. Before accepting, Mr. Agam wants to ensure all necessary terms are agreed in accordance with Engagement &amp; QC Standards. What are terms of engagement Mr. Agam must agree upon with management before accepting compilation?
+                    </div>
+                    <div class="answer-content">
+                        <h4 class="font-weight-bold text-primary mb-2">ICAI Model Answer:</h4>
+                        <p class="mb-2">
+                            Under <strong class="hl-blue">Para 3.4 of SRS 4410</strong>, Mr. Agam <strong class="hl-red">SHALL NOT ACCEPT</strong> the compilation engagement unless he has agreed upon the following 6 mandatory terms with management in a written engagement letter:
+                        </p>
+                        <ol class="styled-list mb-0">
+                            <li><strong class="hl-blue">Intended Use &amp; Distribution:</strong> Intended use and distribution of the financial information, and any restrictions thereon.</li>
+                            <li><strong class="hl-blue">Financial Reporting Framework:</strong> Identification of the applicable financial reporting framework (e.g. Accounting Standards).</li>
+                            <li><strong class="hl-purple">Objective &amp; Scope:</strong> Objective and scope of compilation engagement.</li>
+                            <li><strong class="hl-green">Practitioner’s Responsibilities:</strong> Responsibilities including compliance with relevant ethical requirements and SRS 4410.</li>
+                            <li>
+                                <strong class="hl-red">Management's 4 Core Responsibilities:</strong>
+                                <br>(i) Financial information preparation under acceptable framework;
+                                <br>(ii) Design &amp; maintenance of internal controls;
+                                <br>(iii) Accuracy and completeness of records &amp; documents provided;
+                                <br>(iv) Judgments needed in preparation and presentation.
+                            </li>
+                            <li><strong class="hl-slate">Expected Form of Report:</strong> Expected form and content of the practitioner's compilation report.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==========================================
+                 SECTION 7: MASTER COMPARISON MATRIX
+                 ========================================== -->
+            <section id="sec-summary" class="note-section">
+                <div class="section-header">
+                    <span class="section-tag-badge badge-srs">Framework Matrix</span>
+                    <h2>Master Comparative Matrix: ICAI Engagement Standards Suite</h2>
+                </div>
+
+                <div class="card card-accent mb-4">
+                    <h3 class="card-title text-primary"><i class="fas fa-th-list"></i> Audits vs Reviews vs Assurance vs Related Services</h3>
+                    <div class="table-responsive mb-3">
+                        <table class="concept-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 15%;">Dimension</th>
+                                    <th style="width: 22%;">Audits (SAs 100 - 899)</th>
+                                    <th style="width: 21%;">Reviews (SREs 2400 / 2410)</th>
+                                    <th style="width: 21%;">Assurance (SAEs 3400 / 3420)</th>
+                                    <th style="width: 21%;">Related Services (SRS 4400 / 4410)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Assurance Level</strong></td>
+                                    <td><strong class="hl-blue">High / Reasonable</strong> Assurance</td>
+                                    <td><strong class="hl-purple">Moderate / Limited</strong> Assurance</td>
+                                    <td><strong>Reasonable or Limited</strong> Assurance</td>
+                                    <td><strong class="hl-red">ZERO</strong> Assurance</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Form of Report / Conclusion</strong></td>
+                                    <td>Positive Opinion (<em>"True and fair view"</em>)</td>
+                                    <td>Negative Conclusion (<em>"Nothing has come to our attention..."</em>)</td>
+                                    <td>Conclusion / Opinion on Subject Matter</td>
+                                    <td><strong>Factual Findings</strong> (SRS 4400) or <strong>Compilation Report</strong> (SRS 4410)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Evidence Gathering</strong></td>
+                                    <td>Extensive (Substantive, Controls testing, confirmations)</td>
+                                    <td>Primarily Inquiry &amp; Analytical Procedures</td>
+                                    <td>Appropriate evidence based on engagement scope</td>
+                                    <td><strong class="hl-red">NO evidence gathering</strong> to support assurance</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Independence Requirement</strong></td>
+                                    <td><strong class="hl-red">Strictly Mandatory</strong></td>
+                                    <td><strong class="hl-red">Strictly Mandatory</strong></td>
+                                    <td><strong class="hl-red">Strictly Mandatory</strong></td>
+                                    <td><strong class="hl-green">NOT Mandatory</strong> (unless specified by law/contract)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>SQC 1 Applicability</strong></td>
+                                    <td><strong class="hl-blue">Applicable</strong></td>
+                                    <td><strong class="hl-blue">Applicable</strong></td>
+                                    <td><strong class="hl-blue">Applicable</strong></td>
+                                    <td><strong class="hl-blue">Applicable to all SRSs!</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Exam Flashcard Traps -->
+                <div class="card card-purple mb-4">
+                    <h3 class="card-title text-purple"><i class="fas fa-bolt"></i> Final Exam Traps &amp; Memory Shortcuts for Chapter 9</h3>
+                    <div class="grid-2col">
+                        <div class="callout callout-amber mb-2">
+                            <strong class="hl-amber">Trap 1: Independence in SRS 4400 &amp; 4410</strong>
+                            <p class="mb-0 text-muted">
+                                Independence is NOT required for Related Services. However, in SRS 4400, if not independent, you MUST state this fact in the report. In SRS 4410, you must still adhere to the Fundamental Principles of the Code of Ethics (especially Integrity).
+                            </p>
+                        </div>
+                        <div class="callout callout-rose mb-2">
+                            <strong class="hl-red">Trap 2: Qualified Report in Compilation</strong>
+                            <p class="mb-0 text-muted">
+                                A practitioner CANNOT issue a "qualified compilation report". If management refuses proposed amendments to fix material misstatements or misleading disclosures $implies$ WITHDRAWAL IS MANDATORY!
+                            </p>
+                        </div>
+                        <div class="callout callout-emerald mb-2">
+                            <strong class="hl-green">Trap 3: SQC 1 Applicability</strong>
+                            <p class="mb-0 text-muted">
+                                Students often assume SQC 1 only applies to audits. SQC 1 applies to ALL Engagement Standards, including SRS 4400 and SRS 4410.
+                            </p>
+                        </div>
+                        <div class="callout callout-blue mb-2">
+                            <strong class="hl-blue">Trap 4: Who Can Perform SRS 4400</strong>
+                            <p class="mb-0 text-muted">
+                                The practitioner performing an agreed-upon procedures engagement does NOT need to be the statutory auditor of the entity (TYK 7 - CA Kamna).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bottom Two-Way Chapter Navigation -->
+            <div class="bottom-nav-container mt-5 mb-4">
+                <a href="specialised_areas.html" class="nav-btn prev-btn">
+                    <div class="nav-direction">&larr; Previous Chapter</div>
+                    <div class="nav-title">Chapter 8: Specialised Areas (SA 800, 805, 810)</div>
+                </a>
+                <a href="../../notes/audnotes.html" class="nav-btn hub-btn">
+                    <div class="nav-direction">&uarr; Index Hub</div>
+                    <div class="nav-title">CA Final Paper 3 Audit Hub</div>
+                </a>
+                <a href="review_engagements.html" class="nav-btn next-btn">
+                    <div class="nav-direction">Next Chapter &rarr;</div>
+                    <div class="nav-title">Chapter 10: Review of Financial Information (SRE 2400 &amp; 2410)</div>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Reading Progress Bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            const bar = document.getElementById('progressBar');
+            if (bar) bar.style.width = scrolled + '%';
+        });
+
+        // Sidebar Toggle
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            if (sidebar) sidebar.classList.toggle('hidden');
+        }
+
+        // Accordion Toggle
+        function toggleAccordion(btn) {
+            const item = btn.parentElement;
+            if (item) {
+                item.classList.toggle('active');
+            }
+        }
+
+        // ScrollSpy for Active Sidebar Items
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.note-section');
+            const navItems = document.querySelectorAll('.sidebar-item');
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 140) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                const link = item.querySelector('a');
+                if (link && link.getAttribute('href') === '#' + current) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Planning, Strategy &amp; Execution - Quick Revision Notes | CA Final Audit | Calcium Notes</title>
+
+    <meta name="title" content="Audit Planning, Strategy &amp; Execution - Quick Revision Notes | CA Final Audit | Calcium Notes">
+    <meta name="description" content="CA Final Audit Chapter 03 Quick Notes: Fast-track revision cheat sheet for SA 300 (Audit Planning & Strategy), SA 315 (Risk Assessment & COSO Internal Controls), and SA 320 (Materiality in Planning and Performance Materiality).">
+    <meta name="keywords" content="CA Final Audit, Audit Planning, Strategy &amp; Execution, Fast Track Notes, Quick Revision, Standards on Auditing, ICAI New Scheme, Calcium Notes">
+    <meta name="author" content="Calcium Notes">
+    <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/Audit/audit_planning_quick.html">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" href="../../../fevicol.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-canvas: #fdfbf7;
+            --surface: #ffffff;
+            --text-primary: #000000;
+            --text-secondary: #334155;
+            --heading-one-color: #1e3a8a;
+            --subheading-one-color: #0284c7;
+            --border-color: #cbd5e1;
+            --card-bg: #ffffff;
+            --table-header: #f1f5f9;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --warning-bg: #fffbeb;
+            --warning-border: #f59e0b;
+            --warning-text: #92400e;
+            
+            --notes-body: 'Kalam', cursive;
+            --notes-heading: 'Patrick Hand', cursive;
+            --notes-highlight: 'Caveat', cursive;
+            --notes-table: Arial, sans-serif;
+        }
+
+        [data-theme="dark"] {
+            --bg-canvas: #090d16;
+            --surface: #0f172a;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --heading-one-color: #60a5fa;
+            --subheading-one-color: #38bdf8;
+            --border-color: #1e293b;
+            --card-bg: #0f172a;
+            --table-header: #1e293b;
+            --warning-bg: #1c1917;
+            --warning-border: #d97706;
+            --warning-text: #fde68a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg-canvas);
+            color: var(--text-primary);
+            font-family: var(--notes-body) !important;
+            font-size: 17.5px;
+            line-height: 1.68;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Keyword Bolding */
+        strong, b { font-weight: 700; }
+        .k-blue { color: #1e40af; font-weight: 700; }
+        .k-red { color: #b91c1c; font-weight: 700; }
+        .k-green { color: #047857; font-weight: 700; }
+        .k-purple { color: #7c3aed; font-weight: 700; }
+        .k-amber { color: #d97706; font-weight: 700; }
+
+        /* Typography Mapping */
+        h1, h2, h3, h4, .chapter-title, .section-title {
+            font-family: var(--notes-heading) !important;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+        }
+
+        h1, h2 {
+            color: var(--heading-one-color) !important;
+        }
+
+        h3, h4 {
+            color: var(--subheading-one-color) !important;
+        }
+
+        .highlight-title {
+            font-family: var(--notes-highlight) !important;
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+        table, th, td, .styled-table {
+            font-family: var(--notes-table) !important;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 280px;
+            background: var(--surface);
+            border-right: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 24px 16px;
+            flex-shrink: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .sidebar * {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .sidebar-brand {
+            font-size: 15px;
+            font-weight: 800;
+            color: var(--heading-one-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .theme-toggle {
+            background: none;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 4px 8px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .nav-group-title {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #64748b;
+            margin: 16px 0 8px 6px;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 7px 10px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.15s;
+            line-height: 1.4;
+        }
+
+        .nav-link:hover {
+            background: rgba(37, 99, 235, 0.08);
+            color: var(--accent);
+        }
+
+        .nav-link.active {
+            background: #eff6ff;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        /* Main Content */
+        .main-wrapper {
+            flex: 1;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 36px 32px 64px;
+        }
+
+        .breadcrumbs {
+            font-size: 13.5px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+            color: #64748b;
+            margin-bottom: 12px;
+        }
+
+        .breadcrumbs a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .header-section {
+            margin-bottom: 24px;
+        }
+
+        .header-section h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .chapter-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .chapter-pill {
+            background: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #bfdbfe;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-weight: 700;
+        }
+
+        /* Mode Switcher Bar */
+        .mode-bar {
+            display: flex;
+            gap: 10px;
+            margin: 22px 0 32px 0;
+            background: #f1f5f9;
+            padding: 6px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .mode-btn {
+            flex: 1;
+            text-align: center;
+            padding: 10px 16px;
+            font-size: 13.5px;
+            font-weight: 700;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .mode-btn.active {
+            background: #2563eb;
+            color: #ffffff;
+            box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+        }
+
+        .mode-btn:not(.active) {
+            color: #475569;
+            background: transparent;
+        }
+
+        .mode-btn:not(.active):hover {
+            background: rgba(255, 255, 255, 0.6);
+            color: #0f172a;
+        }
+
+        /* Quick Cards */
+        .quick-card {
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 26px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            scroll-margin-top: 20px;
+        }
+
+        .quick-card h2 {
+            font-size: 24px;
+            margin-bottom: 14px;
+            border-bottom: 1.5px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .quick-card h3 {
+            font-size: 20px;
+            margin: 18px 0 8px 0;
+        }
+
+        p { margin-bottom: 12px; }
+        ul, ol { margin-left: 24px; margin-bottom: 14px; }
+        li { margin-bottom: 6px; }
+
+        /* Tables */
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14.5px;
+            line-height: 1.5;
+            background: var(--surface);
+        }
+
+        .styled-table th {
+            background: #1e3a8a;
+            color: #ffffff;
+            padding: 10px 14px;
+            text-align: left;
+            border: 1px solid #3b82f6;
+            font-weight: 700;
+        }
+
+        .styled-table td {
+            padding: 10px 14px;
+            border: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        .styled-table tr:nth-child(even) {
+            background-color: rgba(241, 245, 249, 0.5);
+        }
+
+        /* Callout Boxes */
+        .callout {
+            border-left: 4px solid;
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+            background: rgba(248, 250, 252, 0.7);
+        }
+
+        .callout-blue { border-left-color: var(--accent); background: #eff6ff; }
+        .callout-green { border-left-color: #047857; background: #f0fdf4; }
+        .callout-amber { border-left-color: #d97706; background: #fffbeb; }
+        .callout-red { border-left-color: #b91c1c; background: #fef2f2; }
+        .callout-purple { border-left-color: #7c3aed; background: #faf5ff; }
+
+        .callout-title {
+            font-family: var(--notes-highlight) !important;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .callout-blue .callout-title { color: var(--accent); }
+        .callout-green .callout-title { color: #047857; }
+        .callout-amber .callout-title { color: #d97706; }
+        .callout-red .callout-title { color: #b91c1c; }
+        .callout-purple .callout-title { color: #7c3aed; }
+
+        /* Bottom Nav */
+        .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-top: 36px;
+            padding: 18px 24px;
+            background: var(--surface);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-size: 13.5px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .prev-btn { background: #f1f5f9; color: #1e293b; border: 1px solid var(--border-color); }
+        .prev-btn:hover { background: #e2e8f0; }
+        .next-btn { background: #2563eb; color: #ffffff; }
+        .next-btn:hover { background: #1d4ed8; }
+        .hub-btn { background: #047857; color: #ffffff; }
+        .hub-btn:hover { background: #065f46; }
+
+        @media (max-width: 900px) {
+            body { flex-direction: column; }
+            .sidebar { width: 100%; height: auto; position: static; border-right: none; border-bottom: 1px solid var(--border-color); }
+            .main-wrapper { padding: 20px 16px; }
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="sidebar-brand">
+            <span>⚡ Calcium Quick Audit</span>
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">☀️/🌙</button>
+        </div>
+
+        <div class="nav-group-title">Chapter Navigation</div>
+        <a href="#sec-sa300-strategy" class="nav-link">1. SA 300 Strategy vs Plan</a>
+        <a href="#sec-sa315-coso" class="nav-link">2. SA 315 Internal Control (COSO)</a>
+        <a href="#sec-sa320-materiality" class="nav-link">3. SA 320 Materiality Hierarchy</a>
+        <a href="#sec-significant-risks" class="nav-link">4. Significant Risks & Substantive Tests</a>
+        <a href="#sec-planning-traps" class="nav-link">5. High-Frequency Exam Traps</a>
+
+        <div class="nav-group-title">Portal Hubs</div>
+        <a href="../../notes/audquicknotes.html" class="nav-link">&larr; ⚡ Audit Quick Notes Hub</a>
+        <a href="../../notes/audnotes.html" class="nav-link">&larr; 📖 Audit Full Notes Hub</a>
+        <a href="../../notes/notes.html" class="nav-link">&larr; 🏠 Notes Home</a>
+    </nav>
+
+    <main class="main-wrapper">
+        <div class="breadcrumbs">
+            <a href="../../notes/notes.html">Home</a> &gt; 
+            <a href="../../notes/audquicknotes.html">CA Final Audit</a> &gt; 
+            <span>Chapter 03 Quick Notes</span>
+        </div>
+
+        <header class="header-section">
+            <span class="chapter-pill">CA Final Paper 3 &bull; Module 1: Standards on Auditing &amp; Quality Control</span>
+            <h1 style="margin-top: 10px;">Audit Planning, Strategy &amp; Execution</h1>
+            <div class="chapter-meta">
+                <span class="chapter-pill">⚡ Fast-Track High-Yield Revision</span>
+                <span>ICAI New Scheme 2026&ndash;2027</span>
+            </div>
+        </header>
+
+        <!-- Mode Bar Switcher -->
+        <div class="mode-bar">
+            <a href="audit_planning_quick.html" class="mode-btn active">⚡ Fast-Track Quick Notes</a>
+            <a href="audit_planning.html" class="mode-btn">📖 Full In-Depth Notes (Theory + TYKs)</a>
+        </div>
+
+        
+        <section id="sec-sa300-strategy" class="quick-card">
+            <h2>1. SA 300: Audit Strategy vs. Audit Plan (NET)</h2>
+            <div class="callout callout-blue">
+                <div class="callout-title">📊 Interrelationship: Strategy Sets the Scope, Plan Guides Execution</div>
+                <p>
+                    <strong>Overall Audit Strategy:</strong> Sets the scope, timing, and direction of the audit, guiding the development of the audit plan (resource allocation, industry factors, reporting deadlines).<br>
+                    <strong>Audit Plan:</strong> More detailed than the strategy; includes the <strong class="k-blue">Nature, Timing, and Extent (NET)</strong> of risk assessment procedures, further audit procedures (tests of controls &amp; substantive procedures).
+                </p>
+            </div>
+            <ul>
+                <li><strong>Dynamic Nature:</strong> Planning is not a discrete phase; it is a continuous and iterative process that often begins shortly after completion of the previous audit and continues until completion.</li>
+            </ul>
+        </section>
+
+        <section id="sec-sa315-coso" class="quick-card">
+            <h2>2. SA 315: The 5 Components of Internal Control (COSO)</h2>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">COSO Component</th>
+                        <th style="width: 45%;">Core Internal Control Function</th>
+                        <th style="width: 30%;">Exam Testing Angle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong class="k-blue">1. Control Environment</strong></td>
+                        <td>Governance and management functions; tone at the top, ethical values, organizational structure, HR policies.</td>
+                        <td>Sets foundation; weak environment increases fraud risk across all accounts.</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="k-green">2. Risk Assessment</strong></td>
+                        <td>Entity's process for identifying business risks relevant to financial reporting objectives and deciding actions.</td>
+                        <td>Failure to identify new digital or regulatory risks.</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="k-purple">3. Information System</strong></td>
+                        <td>Procedures and records established to initiate, record, process, and report transactions and maintain accountability.</td>
+                        <td>Audit trail testing and IT general controls.</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="k-amber">4. Control Activities</strong></td>
+                        <td>Policies and procedures that ensure management directives are carried out: segregations of duties, approvals, reconciliations.</td>
+                        <td>Preventive vs detective automated controls.</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="k-red">5. Monitoring of Controls</strong></td>
+                        <td>Ongoing evaluation of whether internal controls are functioning as intended (internal audit, periodic reviews).</td>
+                        <td>Management review of exception reports.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="sec-sa320-materiality" class="quick-card">
+            <h2>3. SA 320: Materiality Hierarchy &amp; Benchmarks</h2>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th style="width: 28%;">Level of Materiality</th>
+                        <th style="width: 42%;">Definition &amp; Purpose</th>
+                        <th style="width: 30%;">Standard Benchmark Range</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong class="k-blue">Overall Materiality</strong></td>
+                        <td>Materiality for financial statements as a whole; threshold where misstatements influence economic decisions of users.</td>
+                        <td>&bull; Profit before tax: 5% &ndash; 10%<br>&bull; Total Revenue: 0.5% &ndash; 1%<br>&bull; Total Assets: 1% &ndash; 2%</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="k-green">Performance Materiality</strong></td>
+                        <td>Amount set below overall materiality to reduce to acceptably low level the probability that aggregate uncorrected misstatements exceed overall materiality.</td>
+                        <td>Typically 60% &ndash; 75% of Overall Materiality depending on risk assessment.</td>
+                    </tr>
+                    <tr>
+                        <td><strong class="k-purple">Clearly Trivial Threshold</strong></td>
+                        <td>Matters that are clearly inconsequential; below which misstatements need not even be accumulated under SA 450.</td>
+                        <td>Typically 1% &ndash; 5% of Overall Materiality.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="sec-significant-risks" class="quick-card">
+            <h2>4. Significant Risks under SA 315</h2>
+            <p>A <strong class="k-red">Significant Risk</strong> is an identified and assessed risk of material misstatement that, in the auditor's judgment, requires special audit consideration.</p>
+            <ul>
+                <li><strong>Statutory Determination Factors:</strong> Risk of fraud, significant economic or accounting developments, complexity of transactions, significant transactions with related parties, high degree of estimation uncertainty, transactions outside normal course of business.</li>
+                <li><strong>Mandatory Audit Procedure:</strong> If the auditor identifies a significant risk, <strong class="k-red">substantive procedures directly responsive to that risk are mandatory</strong>. If relying on controls, testing in the *current period* is mandatory (cannot rely on prior-period testing!).</li>
+            </ul>
+        </section>
+
+        <section id="sec-planning-traps" class="quick-card">
+            <h2>5. High-Frequency Exam Traps</h2>
+            <div class="callout callout-red">
+                <div class="callout-title">⚠️ Examiner Traps Alert</div>
+                <ul>
+                    <li><strong>Trap 1 (Revision of Materiality):</strong> If the auditor revises overall materiality to a lower amount during the audit, he <strong class="k-red">MUST ALSO REVISE performance materiality</strong> and re-evaluate whether the nature, timing, and extent of audit procedures remain appropriate.</li>
+                    <li><strong>Trap 2 (Qualitative Materiality):</strong> An uncorrected misstatement below the quantitative threshold can still be material qualitatively if it affects compliance with loan covenants, changes a loss into a profit, or increases director bonuses.</li>
+                </ul>
+            </div>
+        </section>
+    
+
+        <!-- Bottom Navigation -->
+        <div class="bottom-nav">
+            <a href="general_principles_quick.html" class="nav-btn prev-btn">&larr; Ch 2: General Principles</a>
+            <a href="../../notes/audquicknotes.html" class="nav-btn hub-btn">Audit Quick Hub</a>
+            <a href="risk_materiality_quick.html" class="nav-btn next-btn">Ch 4: Risk & Materiality &rarr;</a>
+        </div>
+
+    </main>
+
+    <script>
+        function toggleTheme() {
+            const current = document.documentElement.getAttribute('data-theme');
+            const target = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', target);
+            localStorage.setItem('calcium_theme', target);
+        }
+        const savedTheme = localStorage.getItem('calcium_theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+    </script>
+
+</body>
+</html>

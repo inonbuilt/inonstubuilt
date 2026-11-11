@@ -1,0 +1,2220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 16: Internal Audit &ndash; CA Final Audit Revision Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Kalam:wght@300;400;700&family=Patrick+Hand&family=Patrick+Hand+SC&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-blue: #1e3a8a;
+      --accent-blue: #0284c7;
+      --primary-green: #047857;
+      --accent-red: #b91c1c;
+      --accent-purple: #7c3aed;
+      --accent-amber: #d97706;
+      --bg-canvas: #f8fafc;
+      --card-bg: #ffffff;
+      --border-color: #cbd5e1;
+      --text-main: #000000;
+      --text-muted: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Kalam', cursive;
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--text-main);
+      background-color: var(--bg-canvas);
+      background-image: 
+        radial-gradient(#e2e8f0 1.5px, transparent 1.5px),
+        radial-gradient(#f1f5f9 1.5px, #f8fafc 1.5px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+      padding-top: 56px;
+    }
+
+    /* Top Reading Progress Bar */
+    .reading-progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #1e3a8a, #0284c7, #047857, #7c3aed);
+      width: 0%;
+      z-index: 1000;
+      transition: width 0.1s ease;
+    }
+
+    /* Sticky Topbar */
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 56px;
+      background: #ffffff;
+      border-bottom: 2px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      z-index: 900;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .sidebar-toggle-btn {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 16px;
+      cursor: pointer;
+      color: var(--primary-blue);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .sidebar-toggle-btn:hover {
+      background: #e2e8f0;
+    }
+
+    .topbar-brand {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .topbar-pill {
+      background: #eff6ff;
+      color: var(--primary-blue);
+      border: 1px solid #bfdbfe;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .hub-link-btn {
+      background: #047857;
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .hub-link-btn:hover {
+      background: #065f46;
+    }
+
+    /* Layout structure */
+    .app-layout {
+      display: flex;
+      min-height: calc(100vh - 56px);
+      max-width: 1560px;
+      margin: 0 auto;
+    }
+
+    /* Left Sidebar Navigation */
+    .sidebar {
+      width: 310px;
+      background: #ffffff;
+      border-right: 2px solid var(--border-color);
+      position: sticky;
+      top: 56px;
+      height: calc(100vh - 56px);
+      overflow-y: auto;
+      padding: 20px 14px;
+      flex-shrink: 0;
+      box-shadow: 2px 0 6px rgba(0,0,0,0.02);
+    }
+
+    .sidebar-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px dashed #cbd5e1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .nav-item {
+      margin: 0;
+    }
+
+    .nav-link {
+      display: block;
+      padding: 7px 12px;
+      border-radius: 6px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 16px;
+      font-family: 'Patrick Hand', cursive;
+      transition: all 0.15s ease;
+      line-height: 1.3;
+    }
+
+    .nav-link:hover {
+      background: #f1f5f9;
+      color: var(--primary-blue);
+      padding-left: 16px;
+    }
+
+    .nav-link.active {
+      background: #e0f2fe;
+      color: var(--primary-blue);
+      font-weight: 700;
+      border-left: 4px solid var(--accent-blue);
+    }
+
+    /* Main Content Area */
+    .main-content {
+      flex: 1;
+      padding: 30px 40px;
+      min-width: 0;
+    }
+
+    /* Hero Banner */
+    .chapter-hero {
+      background: linear-gradient(135deg, #1e3a8a 0%, #0369a1 50%, #047857 100%);
+      color: #ffffff;
+      padding: 32px 36px;
+      border-radius: 16px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .chapter-hero::after {
+      content: "SEC 138";
+      position: absolute;
+      right: 20px;
+      bottom: -15px;
+      font-size: 100px;
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.08);
+      font-family: 'Space Grotesk', sans-serif;
+      pointer-events: none;
+    }
+
+    .hero-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .hero-badge {
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(4px);
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .chapter-hero h1 {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .chapter-hero p {
+      font-size: 19px;
+      max-width: 880px;
+      opacity: 0.95;
+      line-height: 1.6;
+    }
+
+    /* Section Styling */
+    section {
+      background: var(--card-bg);
+      border: 2px solid var(--border-color);
+      border-radius: 14px;
+      padding: 30px 34px;
+      margin-bottom: 32px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      scroll-margin-top: 75px;
+    }
+
+    .section-header {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 12px;
+      margin-bottom: 22px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .section-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 28px;
+      color: var(--primary-blue);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-tag {
+      background: #eff6ff;
+      color: var(--accent-blue);
+      font-size: 14px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      border: 1px solid #bfdbfe;
+    }
+
+    h3 {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 23px;
+      color: var(--accent-blue);
+      margin: 22px 0 10px 0;
+      font-weight: 700;
+    }
+
+    h4 {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 20px;
+      color: var(--text-main);
+      margin: 16px 0 8px 0;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: #000000;
+    }
+
+    ul, ol {
+      margin: 12px 0 20px 26px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: #000000;
+    }
+
+    /* Keyword highlight colors */
+    .k-blue { color: #1e40af; font-weight: 700; }
+    .k-red { color: #b91c1c; font-weight: 700; }
+    .k-green { color: #047857; font-weight: 700; }
+    .k-purple { color: #7c3aed; font-weight: 700; }
+    .k-amber { color: #d97706; font-weight: 700; }
+
+    /* Callout Boxes */
+    .callout {
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin: 20px 0;
+      border-left: 6px solid;
+      background: #f8fafc;
+    }
+
+    .callout-blue {
+      border-left-color: var(--accent-blue);
+      background: #f0f9ff;
+    }
+
+    .callout-green {
+      border-left-color: var(--primary-green);
+      background: #f0fdf4;
+    }
+
+    .callout-red {
+      border-left-color: var(--accent-red);
+      background: #fef2f2;
+    }
+
+    .callout-amber {
+      border-left-color: var(--accent-amber);
+      background: #fffbeb;
+    }
+
+    .callout-purple {
+      border-left-color: var(--accent-purple);
+      background: #faf5ff;
+    }
+
+    .callout-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .callout-blue .callout-title { color: #0369a1; }
+    .callout-green .callout-title { color: #15803d; }
+    .callout-red .callout-title { color: #b91c1c; }
+    .callout-amber .callout-title { color: #b45309; }
+    .callout-purple .callout-title { color: #6b21a8; }
+
+    /* Data Tables in Arial */
+    .table-container {
+      overflow-x: auto;
+      margin: 22px 0;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      text-align: left;
+      background: #ffffff;
+    }
+
+    th {
+      background: #1e3a8a;
+      color: #ffffff;
+      font-weight: 700;
+      padding: 12px 16px;
+      border: 1px solid #3b82f6;
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 11px 16px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+      color: #1e293b;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    tr:hover {
+      background-color: #f1f5f9;
+    }
+
+    /* Interactive Accordion for Q&A */
+    .accordion-item {
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      background: #ffffff;
+      transition: all 0.2s ease;
+    }
+
+    .accordion-item:hover {
+      border-color: #cbd5e1;
+    }
+
+    .accordion-header {
+      padding: 16px 20px;
+      background: #f8fafc;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 21px;
+      font-weight: 700;
+      color: var(--primary-blue);
+    }
+
+    .accordion-header:hover {
+      background: #f1f5f9;
+    }
+
+    .accordion-icon {
+      font-size: 22px;
+      transition: transform 0.2s ease;
+      color: #64748b;
+    }
+
+    .accordion-body {
+      padding: 22px 24px;
+      display: none;
+      border-top: 1px solid #e2e8f0;
+      background: #ffffff;
+      font-family: 'Kalam', cursive;
+      font-size: 18px;
+    }
+
+    .accordion-item.open .accordion-body {
+      display: block;
+    }
+
+    .accordion-item.open .accordion-icon {
+      transform: rotate(180deg);
+      color: var(--accent-blue);
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin: 20px 0;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    }
+
+    .card-title {
+      font-family: 'Patrick Hand', cursive;
+      font-size: 21px;
+      color: var(--primary-blue);
+      font-weight: 700;
+      margin-bottom: 10px;
+      border-bottom: 1px dashed #cbd5e1;
+      padding-bottom: 6px;
+    }
+
+    /* Bottom Navigation Bar */
+    .bottom-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      margin-top: 40px;
+      padding: 24px;
+      background: #ffffff;
+      border: 2px solid var(--border-color);
+      border-radius: 12px;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-family: 'Patrick Hand', cursive;
+      font-size: 18px;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+
+    .prev-btn {
+      background: #f1f5f9;
+      color: var(--text-main);
+      border: 1px solid #cbd5e1;
+    }
+
+    .prev-btn:hover {
+      background: #e2e8f0;
+    }
+
+    .next-btn {
+      background: #1e3a8a;
+      color: #ffffff;
+    }
+
+    .next-btn:hover {
+      background: #172554;
+    }
+
+    .hub-btn {
+      background: #047857;
+      color: #ffffff;
+    }
+
+    .hub-btn:hover {
+      background: #065f46;
+    }
+
+    .nav-text {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .nav-sub {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      opacity: 0.8;
+    }
+
+    .nav-title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 1024px) {
+      .app-layout {
+        flex-direction: column;
+      }
+      .sidebar {
+        position: fixed;
+        left: -320px;
+        top: 56px;
+        bottom: 0;
+        z-index: 950;
+        transition: left 0.3s ease;
+      }
+      .sidebar.active {
+        left: 0;
+      }
+      .main-content {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Reading Progress Bar -->
+<div class="reading-progress-bar" id="readingProgress"></div>
+
+<!-- Sticky Topbar -->
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="sidebar-toggle-btn" id="sidebarToggle" aria-label="Toggle Navigation">&#9776; Index</button>
+    <a href="../../notes/audnotes.html" class="topbar-brand">
+      <span>CA Final &bull; Advanced Auditing</span>
+    </a>
+  </div>
+  <div class="topbar-right">
+    <span class="topbar-pill">Ch 16: Internal Audit (Sec 138 &amp; SIAs)</span>
+    <a href="../../notes/audnotes.html" class="hub-link-btn">Back to Hub &rarr;</a>
+  </div>
+</header>
+
+<!-- Application Layout -->
+<div class="app-layout">
+
+  <!-- Left Sidebar Navigation -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-title">
+      <span>Chapter Directory</span>
+      <span style="font-size: 14px; color:#64748b;">Ch 16 Index</span>
+    </div>
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#sec-intro-meaning" class="nav-link active">1. Meaning &amp; Evolution of Internal Audit</a></li>
+      <li class="nav-item"><a href="#sec-section-138" class="nav-link">2. Section 138 &amp; Rule 13 Applicability</a></li>
+      <li class="nav-item"><a href="#sec-scope-functions" class="nav-link">3. Management Functions &amp; 7 Scope Areas</a></li>
+      <li class="nav-item"><a href="#sec-integrity-independence" class="nav-link">4. Integrity, Objectivity &amp; Independence</a></li>
+      <li class="nav-item"><a href="#sec-interactive-tyu-1-2" class="nav-link">5. Interactive TYU 1 &amp; TYU 2 (Case Studies)</a></li>
+      <li class="nav-item"><a href="#sec-qualities-competencies" class="nav-link">6. Qualities &amp; Specialised Competencies</a></li>
+      <li class="nav-item"><a href="#sec-performing-engagement" class="nav-link">7. Performing Internal Audit Engagement</a></li>
+      <li class="nav-item"><a href="#sec-internal-audit-report" class="nav-link">8. Internal Audit Report (The 5Cs Model)</a></li>
+      <li class="nav-item"><a href="#sec-internal-vs-external" class="nav-link">9. Internal vs. External Auditor Matrix</a></li>
+      <li class="nav-item"><a href="#sec-evaluating-internal-audit" class="nav-link">10. Evaluating Internal Audit Function (SA 610)</a></li>
+      <li class="nav-item"><a href="#sec-direct-assistance" class="nav-link">11. Direct Assistance of Internal Auditors (SA 610)</a></li>
+      <li class="nav-item"><a href="#sec-management-function" class="nav-link">12. Internal Audit as a Management Function</a></li>
+      <li class="nav-item"><a href="#sec-audit-trail-rule11g" class="nav-link">13. Audit Trail (Edit Log) &amp; Rule 11(g)</a></li>
+      <li class="nav-item"><a href="#sec-interactive-tyu-3" class="nav-link">14. Interactive TYU 3 (Audit Trail Review)</a></li>
+      <li class="nav-item"><a href="#sec-appendix-sias" class="nav-link">15. Appendix: Standards on Internal Audit (SIAs)</a></li>
+      <li class="nav-item"><a href="#sec-tyk-q1-to-q8" class="nav-link">16. TYK Questions 1 to 8 (Exam Applications)</a></li>
+      <li class="nav-item"><a href="#sec-tyk-q9-to-q16" class="nav-link">17. TYK Questions 9 to 16 (Scenarios &amp; Traps)</a></li>
+      <li class="nav-item"><a href="#sec-master-synthesis-ch16" class="nav-link">18. Master Synthesis &amp; Exam Checklist</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="main-content">
+
+    <!-- Hero Banner -->
+    <div class="chapter-hero">
+      <div class="hero-badge-row">
+        <span class="hero-badge">ICAI Study Material 2026</span>
+        <span class="hero-badge">CA Final Paper 3: Audit</span>
+        <span class="hero-badge">Chapter 16 Complete Notes</span>
+      </div>
+      <h1>Internal Audit (Section 138, Rule 13, SIAs &amp; SA 610)</h1>
+      <p>
+        Master the statutory thresholds of <strong style="color:#ffffff; text-decoration: underline;">Section 138 &amp; Rule 13 (Companies Accounts Rules)</strong>, the 7 managerial scope areas, independence safeguards (why reporting to CFO compromises objectivity), the 5Cs audit reporting model, <strong style="color:#ffffff;">SA 610 (Revised) direct assistance rules &amp; prohibitions</strong>, the mandatory <strong style="color:#ffffff;">Audit Trail (Edit Log) under Rule 11(g)</strong>, and all TYU (1&ndash;3) &amp; TYK (1&ndash;16) solutions!
+      </p>
+    </div>
+
+    <!-- SECTION 1: MEANING & EVOLUTION OF INTERNAL AUDIT -->
+    <section id="sec-intro-meaning">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🔍 1. Meaning, Evolution &amp; Definition of Internal Audit</span>
+        </div>
+        <span class="section-tag">Governance &amp; Assurance</span>
+      </div>
+
+      <p>
+        In modern commercial enterprises, operations have become highly complex with massive transaction volumes across multi-locational units, increasing decentralization of operational powers, and deep dependency on enterprise ERPs and IT infrastructure.
+      </p>
+
+      <div class="callout callout-blue">
+        <div class="callout-title">💡 Modern Definition of Internal Audit (ICAI &amp; IIA)</div>
+        <p>
+          <em>"Internal auditing is an independent, objective assurance and consulting activity designed to add value and improve an organization's operations. It helps an organization accomplish its objectives by bringing a systematic, disciplined approach to evaluate and improve the effectiveness of risk management, control, and governance processes."</em>
+        </p>
+      </div>
+
+      <h3>Evolution of the Internal Audit Mandate in India</h3>
+      <div class="grid-2">
+        <div class="card" style="border-top: 4px solid var(--accent-blue);">
+          <div class="card-title">Traditional vs. Modern Internal Audit</div>
+          <ul>
+            <li><strong>Traditional Role:</strong> Routine clerical vouching, verification of mathematical accuracy, post-payment audit of vouchers, and passive policing of accounting entries.</li>
+            <li><strong>Modern Transformative Role:</strong> A strategic, <strong class="k-blue">Risk-Based Internal Audit (RBIA)</strong> function acting as an internal consultant and value-adding partner to the Board and Audit Committee.</li>
+            <li>Focuses on <strong>risk governance, operational efficiencies, fraud deterrence, process re-engineering, and IT controls</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="border-top: 4px solid var(--primary-green);">
+          <div class="card-title">Internal Audit Standards Board (IASB) of ICAI</div>
+          <p>
+            Constituted by the ICAI on <strong class="k-green">February 5, 2004</strong> (originally known as the Committee on Internal Audit).
+          </p>
+          <ul>
+            <li>Formulates comprehensive <strong>Standards on Internal Audit (SIAs)</strong> to harmonize internal audit practices across industries.</li>
+            <li>Issues Technical Guides, Practice Insights, and Guidance Notes on modern risk management, operational audits, and forensic review.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SECTION 138 & RULE 13 APPLICABILITY -->
+    <section id="sec-section-138">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📜 2. Statutory Provisions of Internal Audit under Companies Act, 2013</span>
+        </div>
+        <span class="section-tag">Section 138 &amp; Rule 13</span>
+      </div>
+
+      <p>
+        Under <strong class="k-blue">Section 138(1)</strong> of the Companies Act, 2013 read with <strong class="k-purple">Rule 13 of the Companies (Accounts) Rules, 2014</strong>, specific classes of companies are statutorily mandated to appoint an internal auditor.
+      </p>
+
+      <h3>Mandatory Applicability Thresholds Matrix</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 20%;">Class of Company</th>
+              <th style="width: 45%;">Statutory Threshold Criteria (Preceding Financial Year)</th>
+              <th style="width: 35%;">Key Exam Observations &amp; Traps</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Listed Companies</strong></td>
+              <td>
+                <strong class="k-blue">Every Listed Company</strong> is mandatorily required to appoint an internal auditor.
+              </td>
+              <td>
+                <strong>No monetary thresholds!</strong> Mandatory regardless of paid-up capital, turnover, or borrowing levels.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>2. Unlisted Public Companies</strong></td>
+              <td>
+                Required to appoint an internal auditor if it satisfies <strong>ANY ONE</strong> of the following four criteria during the preceding financial year:<br>
+                1. <strong>Paid-up Share Capital:</strong> <strong class="k-green">&ge; ₹ 50 Crore</strong>; OR<br>
+                2. <strong>Turnover:</strong> <strong class="k-green">&ge; ₹ 200 Crore</strong>; OR<br>
+                3. <strong>Outstanding Loans/Borrowings</strong> from banks or public financial institutions: <strong class="k-red">&gt; ₹ 100 Crore</strong> (exceeding ₹ 100 Cr) at <em>any point of time</em> during the preceding FY; OR<br>
+                4. <strong>Outstanding Deposits:</strong> <strong class="k-green">&ge; ₹ 25 Crore</strong> at <em>any point of time</em> during the preceding FY.
+              </td>
+              <td>
+                <strong class="k-amber">Memory Shortcut: D-T-L-P</strong><br>
+                &bull; <strong>D</strong>eposits: &ge; ₹ 25 Cr<br>
+                &bull; <strong>T</strong>urnover: &ge; ₹ 200 Cr<br>
+                &bull; <strong>L</strong>oans: <strong>&gt; ₹ 100 Cr</strong> (Notice: <em>strictly exceeding</em> ₹ 100 Cr, exactly ₹ 100 Cr does not trigger!)<br>
+                &bull; <strong>P</strong>aid-up Capital: &ge; ₹ 50 Cr<br>
+                <em>Loans and Deposits are tested "at any point of time" during preceding year!</em>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>3. Private Companies</strong></td>
+              <td>
+                Required to appoint an internal auditor if it satisfies <strong>EITHER</strong> of the following two criteria during the preceding financial year:<br>
+                1. <strong>Turnover:</strong> <strong class="k-green">&ge; ₹ 200 Crore</strong>; OR<br>
+                2. <strong>Outstanding Loans/Borrowings</strong> from banks or public financial institutions: <strong class="k-red">&gt; ₹ 100 Crore</strong> (exceeding ₹ 100 Cr) at <em>any point of time</em> during preceding FY.
+              </td>
+              <td>
+                Private companies are <strong>exempt from Paid-up Share Capital and Deposit thresholds</strong>! Only Turnover (&ge; 200 Cr) and Borrowings (> 100 Cr) apply.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-amber">
+        <div class="callout-title">⚠️ Critical Statutory Wordings &amp; Exam Traps</div>
+        <ul>
+          <li><strong>Preceding Financial Year:</strong> Applicability for the current financial year (e.g., FY 2025-26) is determined <em>strictly</em> on the figures of the <strong>preceding financial year</strong> (FY 2024-25)! Current year expansions or contractions do not alter applicability for the current year.</li>
+          <li><strong>Loans &gt; ₹ 100 Cr:</strong> The statute states <em>"exceeding one hundred crore rupees"</em>. If outstanding loans from banks/PFIs touch exactly ₹ 100.00 Crore, Section 138 is <strong>NOT triggered</strong>! It must be at least ₹ 100.01 Crore.</li>
+          <li><strong>At Any Point of Time:</strong> For Loans/Borrowings and Public Deposits, the condition is satisfied if the threshold is breached at <em>any point of time</em> during the preceding financial year, even if repaid or reduced before March 31st!</li>
+        </ul>
+      </div>
+
+      <h3>Who Can Be Appointed as Internal Auditor?</h3>
+      <p>
+        According to Section 138(1):
+      </p>
+      <ul>
+        <li>A <strong class="k-blue">Chartered Accountant</strong> (whether engaged in practice or not); OR</li>
+        <li>A <strong class="k-blue">Cost Accountant</strong>; OR</li>
+        <li>Such <strong class="k-purple">other professional</strong> as may be decided by the Board of Directors.</li>
+        <li><strong>Status:</strong> The internal auditor may or may not be an <strong class="k-green">employee</strong> of the company! (An in-house employee with professional credentials or an outside professional firm can be appointed).</li>
+      </ul>
+
+      <h3>Formulation of Scope, Functioning &amp; Methodology (Rule 13(2))</h3>
+      <p>
+        Under Rule 13(2) of Companies (Accounts) Rules, 2014:
+      </p>
+      <div class="callout callout-purple">
+        <p>
+          <em>"The Audit Committee of the company or the Board shall, in consultation with the Internal Auditor, formulate the scope, functioning, periodicity and methodology for conducting the internal audit."</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SCOPE & 7 MANAGEMENT FUNCTIONS -->
+    <section id="sec-scope-functions">
+      <div class="section-header">
+        <div class="section-title">
+          <span>⚙️ 3. Management Functions &amp; 7 Core Scope Areas of Internal Auditing</span>
+        </div>
+        <span class="section-tag">Systemic Operational Oversight</span>
+      </div>
+
+      <p>
+        Management is the process by which an enterprise conducts its affairs to achieve stated goals through optimum resource utilization within legal, social, economic, and environmental constraints. The internal auditor independently appraises management controls across <strong class="k-blue">seven core functional areas</strong>:
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">(i) Review of Internal Controls &amp; Procedures</div>
+          <p>
+            Assessing the design and operating effectiveness of the internal control environment to reduce inherent risk to an acceptable residual level.
+          </p>
+          <ul>
+            <li><strong>3-Way Matching Control:</strong> Automated or manual matching of Purchase Order (PO), Goods Receipt Note (GRN), and Vendor Invoice before payment sanction to prevent over-invoicing or duplicate disbursements.</li>
+            <li><strong>Segregation of Duties:</strong> Clear segregation between authorization, custody of assets, transaction recording, and periodic reconciliation.</li>
+            <li><strong>Credit Control:</strong> Independent evaluation of credit limits and customer aging prior to goods dispatch.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">(ii) Review of Custodial Controls &amp; Assets</div>
+          <p>
+            Ensuring physical and digital safeguarding of enterprise assets against theft, misappropriation, damage, or unauthorized deployment:
+          </p>
+          <ul>
+            <li>Physical verification of property, plant, equipment, and inventories at regular intervals.</li>
+            <li>Review of insurance coverage adequacy against fire, transit, and business interruption risks.</li>
+            <li>Verification of title deeds, lease agreements, and intellectual property registrations.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">(iii) Review of Statutory Compliances</div>
+          <p>
+            Reviewing systems established by management to track, record, and satisfy complex legal, tax, and environmental obligations:
+          </p>
+          <ul>
+            <li>Timely deposit of statutory dues (GST, TDS, Provident Fund, ESI, Custom duties).</li>
+            <li>Adherence to factory safety rules, labor codes, and pollution control boards norms.</li>
+            <li>Ensuring proper compliance tracking software without internal auditor assuming executive liability!</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">(iv) Operational Efficiency &amp; Resource Utilization</div>
+          <p>
+            Evaluating whether enterprise resources are deployed economically and efficiently:
+          </p>
+          <ul>
+            <li>Comparing actual resource consumption with scientific operating standards and norms.</li>
+            <li><strong>Identifying Idle Assets:</strong> Underutilized plant &amp; machinery, unoccupied warehouse space, surplus cash balances, or idle workforce.</li>
+            <li>Scrutinizing job descriptions to eliminate non-productive, redundant processes.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">(v) Review of Accomplishment of Goals &amp; Objectives</div>
+          <p>
+            Examining whether enterprise objectives are clearly stated, attainable, and quantified in monetary and non-monetary metrics:
+          </p>
+          <ul>
+            <li>Reviewing budgetary control mechanisms to detect revenue variances early.</li>
+            <li>Ensuring plans anticipate potential supply chain bottlenecks or competitive disruptions.</li>
+            <li>Evaluating flexibility in operating plans to adapt to changing market dynamics.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">(vi) Accounting Functions &amp; Financial Records</div>
+          <p>
+            Assisting management in ensuring reliability, integrity, and compliance of accounting records:
+          </p>
+          <ul>
+            <li>Review of automated data interfaces between operational modules and general ledger.</li>
+            <li>Detection of unauthorized manual journals, post-closing entries, and suspense balances.</li>
+            <li>Verification of bank reconciliations, inventory valuations, and inter-branch balances.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout callout-green" style="margin-top: 20px;">
+        <div class="callout-title">💡 (vii) Advisory Inputs on Governance, Risk Management &amp; Ethics</div>
+        <p>
+          Beyond historical assurance, modern internal auditors provide forward-looking advisory inputs on <strong class="k-green">Enterprise Risk Management (ERM) frameworks</strong>, business process automation, ethics codes, whistle-blower mechanisms, and business continuity planning (BCP) &ndash; provided they do not assume executive decision-making responsibilities!
+        </p>
+      </div>
+    </section>
+
+
+    <!-- SECTION 4: INTEGRITY, OBJECTIVITY & INDEPENDENCE -->
+    <section id="sec-integrity-independence">
+      <div class="section-header">
+        <div class="section-title">
+          <span>⚖️ 4. Integrity, Objectivity &amp; Independence of the Internal Auditor</span>
+        </div>
+        <span class="section-tag">Core Ethical Pillar</span>
+      </div>
+
+      <p>
+        The internal auditor must remain free from any undue pressures, threats, or executive influences that could compromise his objectivity, impartiality, and allegiance to the truth. Independence is required <strong class="k-blue">both in mind and in appearance</strong>.
+      </p>
+
+      <h3>The Ideal Dual Reporting Structure</h3>
+      <p>
+        To ensure structural and operational independence, the reporting relationships of the Chief Internal Auditor must be bifurcated into <strong class="k-purple">Functional</strong> and <strong class="k-green">Administrative</strong> channels:
+      </p>
+
+      <div class="grid-2">
+        <div class="card" style="border-top: 4px solid var(--primary-blue);">
+          <div class="card-title">1. Functional Reporting &rarr; Audit Committee / Board</div>
+          <p>
+            The internal auditor must report <strong>functionally</strong> to the <strong class="k-blue">Audit Committee</strong> (or Board of Directors). This includes:
+          </p>
+          <ul>
+            <li>Approval of the Internal Audit Charter and Risk-Based Annual Audit Plan.</li>
+            <li>Appointment, evaluation, compensation, and removal of the Chief Internal Auditor.</li>
+            <li>Direct submission of internal audit reports, critical findings, and executive summaries.</li>
+            <li>Holding periodic private executive sessions without management presence.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="border-top: 4px solid var(--accent-amber);">
+          <div class="card-title">2. Administrative Reporting &rarr; CEO / MD</div>
+          <p>
+            For day-to-day administrative coordination, the internal auditor reports to the <strong class="k-amber">Chief Executive Officer (CEO)</strong> or Managing Director:
+          </p>
+          <ul>
+            <li>Human resource administration, leave approvals, and operational budgeting.</li>
+            <li>Internal departmental communications and facilities support.</li>
+            <li><strong>FATAL TRAP: Never Report to the CFO!</strong> Reporting to the Chief Financial Officer (CFO) completely destroys independence, as the Finance and Accounts functions headed by the CFO are themselves subject to internal audit review!</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Safeguarding Objectivity &amp; Managing Conflicts of Interest</h3>
+      <div class="callout callout-red">
+        <div class="callout-title">🚫 Prohibitions on Operational &amp; Management Roles</div>
+        <ul>
+          <li><strong>No Operational Responsibilities:</strong> The internal auditor must not assume executive accountability for designing, installing, or operating internal control systems, accounting systems, or process re-engineering. Assuming operational duties creates an irrecoverable <em>self-review threat</em>!</li>
+          <li><strong>Cooling-off Period for Past Operations:</strong> The internal auditor should not audit any operational area or department for which he was previously responsible within a preceding period (recommended at least one year).</li>
+          <li><strong>Refusal of Conflicting Assignments:</strong> If management requests the internal auditor to manage day-to-day compliance tracking or negotiate with tax/statutory regulators, the auditor must politely decline, as direct regulatory representation is an executive management function.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION 5: INTERACTIVE TYU 1 & 2 -->
+    <section id="sec-interactive-tyu-1-2">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🧠 5. Interactive Test Your Understanding 1 &amp; 2 (Practical Case Studies)</span>
+        </div>
+        <span class="section-tag">Case Challenges</span>
+      </div>
+
+      <!-- TYU 1 -->
+      <div class="accordion-item open">
+        <div class="accordion-header">
+          <span>📝 TYU 1: Appointment of Retired IA&amp;AS Officer as Chief Internal Auditor (Parteek's Case)</span>
+          <span class="accordion-icon">−</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Scenario:</strong></p>
+          <p>
+            After an illustrious career of 25 years in the <em>Indian Audit &amp; Accounts Service (IA&amp;AS)</em>, Parteek, a post-graduate in law, took voluntary retirement from government service. Attracted by compensation packages in the corporate sector, he applied for the position of Chief Internal Auditor in a leading listed company engaged in oil refining. The Board of Directors is very keen to appoint him due to his extensive audit credentials and leadership experience.
+          </p>
+          <p>
+            <em>Can Parteek be appointed as the Chief Internal Auditor of this listed company under the Companies Act, 2013?</em>
+          </p>
+          <div class="callout callout-green" style="margin-top: 14px;">
+            <div class="callout-title">✅ ICAI Official Solution &amp; Statutory Analysis</div>
+            <p>
+              <strong>1. Statutory Legal Provisions:</strong>
+            </p>
+            <ul>
+              <li>Under <strong class="k-blue">Section 138(1)</strong> of the Companies Act, 2013, an internal auditor shall either be:
+                <ol type="a">
+                  <li>A Chartered Accountant (whether in practice or not); OR</li>
+                  <li>A Cost Accountant; OR</li>
+                  <li><strong class="k-purple">Such other professional as may be decided by the Board</strong>.</li>
+                </ol>
+              </li>
+              <li>The section further provides that the internal auditor may or may not be an employee of the company.</li>
+            </ul>
+            <p>
+              <strong>2. Evaluation of Parteek's Eligibility:</strong>
+            </p>
+            <ul>
+              <li>Although Parteek is neither a Chartered Accountant nor a Cost Accountant, he possesses a post-graduate qualification in law and over 25 years of specialized audit experience in the Supreme Audit Institution (IA&amp;AS).</li>
+              <li>The third category under Section 138 explicitly grants discretionary statutory authority to the <strong class="k-green">Board of Directors</strong> to appoint <em>"such other professional as may be decided by the Board"</em>.</li>
+              <li><strong>Conclusion:</strong> If the Board of Directors evaluates his qualifications and decides that his 25 years of audit experience and law background qualify him as a competent professional for the organization, <strong class="k-green">Parteek can validly be appointed as the Chief Internal Auditor</strong> of the listed company!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYU 2 -->
+      <div class="accordion-item open">
+        <div class="accordion-header">
+          <span>📝 TYU 2: Internal Auditor Managing SEBI Compliance Tracking System (CA Deva's Case)</span>
+          <span class="accordion-icon">−</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Scenario:</strong></p>
+          <p>
+            CA Deva is the internal auditor of a listed company. To ensure continuous compliance with SEBI LODR Regulations, the company management asks CA Deva to actively manage its compliance tracking software system, including directly corresponding with SEBI in this regard. The scope of internal audit agreed upon at the time of appointment included "review of compliance with laws and regulations."
+          </p>
+          <p>
+            <em>Can CA Deva perform such activities in his capacity as the internal auditor of the company?</em>
+          </p>
+          <div class="callout callout-green" style="margin-top: 14px;">
+            <div class="callout-title">✅ ICAI Official Solution &amp; Governance Analysis</div>
+            <p>
+              <strong>1. Independent Assurance vs. Executive Management Duties:</strong>
+            </p>
+            <ul>
+              <li>While reviewing whether the company has an effective framework to monitor statutory compliances falls squarely within the <em>scope of internal audit</em>, <strong>actively managing the compliance tracking system and directly corresponding with regulators is an operational management responsibility</strong>!</li>
+              <li>An internal auditor provides independent, objective assurance on the design and operating effectiveness of controls. He cannot step into the shoes of management.</li>
+            </ul>
+            <p>
+              <strong>2. Impairment of Independence &amp; Self-Review Threat:</strong>
+            </p>
+            <ul>
+              <li>If CA Deva manages the compliance tracking system and interacts directly with SEBI, he becomes an operational participant in the executive compliance process.</li>
+              <li>When subsequently auditing statutory compliance, he would be placed in the untenable position of auditing his own operational actions and communications (severe <em>self-review threat</em>).</li>
+              <li><strong>Conclusion:</strong> <strong class="k-red">CA Deva CANNOT perform such executive activities</strong> in his capacity as internal auditor. He must advise the company to assign compliance tracking and regulatory correspondence to the Company Secretary or Compliance Officer, while he retains the independent role of reviewing the effectiveness of such tracking mechanisms.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: QUALITIES & SPECIALISED COMPETENCIES -->
+    <section id="sec-qualities-competencies">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🌟 6. Qualities &amp; Specialised Competencies of the Internal Auditor</span>
+        </div>
+        <span class="section-tag">Professional Toolkit</span>
+      </div>
+
+      <p>
+        To perform diverse operational and governance appraisals effectively, an internal auditor must possess a multi-disciplinary blend of technical expertise and interpersonal leadership:
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Technical Expertise</div>
+          <ul>
+            <li><strong>Financial &amp; Accounting Competence:</strong> Mastery over Ind AS / AS, financial statement analysis, and management accounting controls.</li>
+            <li><strong>Operational Controls Knowledge:</strong> In-depth understanding of engineering, production, logistics, procurement, and commercial trade practices.</li>
+            <li><strong>Commercial Laws &amp; Taxation:</strong> Thorough working knowledge of Companies Act, GST, Direct Taxes, SEBI LODR, labor laws, and environmental codes.</li>
+            <li><strong>IT Systems &amp; ERP Proficiency:</strong> Practical understanding of enterprise ERPs (SAP, Oracle), automated controls, database queries, and cybersecurity basics.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Behavioral &amp; Professional Qualities</div>
+          <ul>
+            <li><strong>Professional Skepticism &amp; Due Care:</strong> A questioning mind that critically verifies underlying evidence rather than taking management statements at face value.</li>
+            <li><strong>Communication &amp; Soft Skills:</strong> Persuasive presentation skills, diplomatic tact in conducting interviews, and clarity in drafting actionable audit findings.</li>
+            <li><strong>Management Principles:</strong> Understanding organizational structures, delegation matrix, and human behavior dynamics.</li>
+            <li><strong>Strict Confidentiality:</strong> Absolute assurance to management and TCWG that confidential trade secrets, strategic data, and pricing formulas will remain secure.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: PERFORMING INTERNAL AUDIT ENGAGEMENT -->
+    <section id="sec-performing-engagement">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🔄 7. Performing the Internal Audit Engagement (Lifecycle &amp; Steps)</span>
+        </div>
+        <span class="section-tag">Methodology &amp; Execution</span>
+      </div>
+
+      <p>
+        A systematic, disciplined internal audit engagement progresses through a rigorous four-phase lifecycle:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 20%;">Phase</th>
+              <th style="width: 40%;">Core Operational Activities</th>
+              <th style="width: 40%;">Key Documentation Output</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Phase 1: Planning &amp; Scoping</strong></td>
+              <td>
+                &bull; Define Audit Universe (all auditable entities/processes).<br>
+                &bull; Conduct risk assessment to prioritize high-risk processes.<br>
+                &bull; Formulate the <strong>Risk-Based Internal Audit (RBIA) Plan</strong>.<br>
+                &bull; Issue engagement notification and conduct Entry Conference with process owners.
+              </td>
+              <td>
+                &bull; Internal Audit Charter.<br>
+                &bull; Approved Annual Audit Plan.<br>
+                &bull; Process Understanding Document (PUD).
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Phase 2: Fieldwork &amp; Testing</strong></td>
+              <td>
+                &bull; Conduct end-to-end process walkthroughs.<br>
+                &bull; Test design and operating effectiveness of key controls (Test of Controls).<br>
+                &bull; Perform substantive analytical procedures, sample testing, and data analytics on full populations.<br>
+                &bull; Identify control exceptions, operational bottlenecks, and compliance deviations.
+              </td>
+              <td>
+                &bull; Risk and Control Matrix (RCM).<br>
+                &bull; Detailed Audit Programs &amp; Working Papers.<br>
+                &bull; Exception Sheets with data evidence.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Phase 3: Root Cause &amp; Exit Meeting</strong></td>
+              <td>
+                &bull; Perform <strong>Root Cause Analysis (RCA)</strong> on identified gaps (asking "Why" to trace human, systemic, or policy origin).<br>
+                &bull; Quantify business impact (financial exposure, operational delay).<br>
+                &bull; Conduct formal Exit Conference with auditee management to discuss draft findings and obtain committed management responses.
+              </td>
+              <td>
+                &bull; Draft Audit Findings Sheet.<br>
+                &bull; Minutes of Exit Conference.<br>
+                &bull; Management Response Sheets with agreed target dates and action owners.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Phase 4: Reporting &amp; Follow-up</strong></td>
+              <td>
+                &bull; Issue final formal Internal Audit Report to Audit Committee and MD/CEO.<br>
+                &bull; Track remediation progress through a systematic <strong>Follow-up Tracking Matrix</strong> until all agreed action plans are implemented.
+              </td>
+              <td>
+                &bull; Final Internal Audit Report.<br>
+                &bull; Quarterly Audit Committee Dashboards.<br>
+                &bull; Issue Closure Validation Reports.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 8: INTERNAL AUDIT REPORT & THE 5Cs -->
+    <section id="sec-internal-audit-report">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📑 8. The Internal Audit Report &amp; The 5Cs Observation Model</span>
+        </div>
+        <span class="section-tag">High-Impact Reporting</span>
+      </div>
+
+      <p>
+        The <strong class="k-blue">Internal Audit Report</strong> is the primary tangible product of the internal audit engagement. It is addressed primarily to the <strong class="k-purple">Audit Committee and Top Management</strong>, serving as an authoritative basis for corrective action and governance enhancement.
+      </p>
+
+      <h3>Essential Characteristics of an Outstanding Internal Audit Report</h3>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-title">1. Objectivity &amp; Fairness</div>
+          <p>Factual, balanced, and free from bias. Acknowledges satisfactory performance while objectively presenting gaps.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">2. Clarity &amp; Conciseness</div>
+          <p>Uses plain, precise business language avoiding unnecessary audit jargon. Highlights executive takeaways upfront.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">3. Action-Oriented Tone</div>
+          <p>Constructive rather than fault-finding. Offers practical, cost-effective solutions to mitigate identified residual risks.</p>
+        </div>
+      </div>
+
+      <h3>The Standard 5Cs Model for Structuring Audit Observations</h3>
+      <p>
+        Under modern internal auditing standards (SIA 300 series), every audit observation should be structured using the <strong class="k-blue">5Cs Framework</strong>:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 15%;">The 5C Element</th>
+              <th style="width: 35%;">Analytical Definition</th>
+              <th style="width: 50%;">Illustrative Case Example (Procurement)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Condition</strong></td>
+              <td><em>"What is?"</em> &ndash; The factual situation or deficiency observed during audit testing.</td>
+              <td>35 purchase orders totaling ₹ 4.2 Crore were issued without obtaining the mandatory 3 competitive vendor quotations.</td>
+            </tr>
+            <tr>
+              <td><strong>2. Criteria</strong></td>
+              <td><em>"What should be?"</em> &ndash; The governing benchmark, policy, rule, standard, or expectation.</td>
+              <td>Company Procurement Policy Clause 4.2 mandates minimum 3 competitive bids for all purchases exceeding ₹ 5 Lakhs.</td>
+            </tr>
+            <tr>
+              <td><strong>3. Cause</strong></td>
+              <td><em>"Why did it happen?"</em> &ndash; The underlying root cause, lack of training, or control breakdown.</td>
+              <td>Procurement module in ERP allowed manual bypass of the mandatory quotation attachment validation due to poor IT configuration.</td>
+            </tr>
+            <tr>
+              <td><strong>4. Consequence / Effect</strong></td>
+              <td><em>"What is the impact?"</em> &ndash; The actual or potential risk, financial loss, or operational exposure.</td>
+              <td>Risk of non-competitive price discovery, vendor favoritism, and potential financial loss estimated at ₹ 38 Lakhs.</td>
+            </tr>
+            <tr>
+              <td><strong>5. Corrective Action</strong></td>
+              <td><em>"How to fix it?"</em> &ndash; Concrete remediation plan with assigned ownership and target date.</td>
+              <td><strong>Recommendation:</strong> Re-configure ERP to enforce mandatory 3-quotation validation before PO generation.<br><strong>Management Response:</strong> ERP patch deployed by IT Head; target completion 15th May 2026.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <!-- SECTION 9: INTERNAL VS EXTERNAL AUDITORS -->
+    <section id="sec-internal-vs-external">
+      <div class="section-header">
+        <div class="section-title">
+          <span>👥 9. Relationship Between Internal and External Auditors</span>
+        </div>
+        <span class="section-tag">Role Comparison &amp; Synergy</span>
+      </div>
+
+      <p>
+        While both internal and external auditors use similar testing techniques, their roles, objectives, reporting lines, and statutory mandates are fundamentally distinct:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 20%;">Basis for Comparison</th>
+              <th style="width: 40%;">Internal Audit</th>
+              <th style="width: 40%;">External (Statutory) Audit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Performed By</strong></td>
+              <td>
+                An internal auditing department within the organization or an outsourced professional firm.
+              </td>
+              <td>
+                An independent Chartered Accountant in practice, completely outside and separate from the entity.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>2. Scope &amp; Examination</strong></td>
+              <td>
+                Examines design and operating adequacy of <strong>operational controls, risk management, and governance systems</strong>.
+              </td>
+              <td>
+                Examines accuracy, validity, and regulatory compliance of the <strong>Financial Statements</strong>.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>3. Appointment Authority</strong></td>
+              <td>
+                Appointed by the <strong>Audit Committee or Board of Directors</strong> under Section 138.
+              </td>
+              <td>
+                Appointed by the <strong>Shareholders (Members)</strong> in AGM under Section 139 (or C&amp;AG for PSUs).
+              </td>
+            </tr>
+            <tr>
+              <td><strong>4. Primary Users of Report</strong></td>
+              <td>
+                Used primarily by <strong>Top Management, Board of Directors, and Audit Committee</strong>.
+              </td>
+              <td>
+                Used by <strong>Shareholders, Lenders, Investors, Regulators, and Public</strong>.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>5. Reporting Objective</strong></td>
+              <td>
+                Identifies deficiencies in internal controls and evaluates operational efficiency (constructive guidance).
+              </td>
+              <td>
+                Expresses an independent statutory opinion on the <strong>True and Fair view</strong> of financial statements.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>6. Employment Status</strong></td>
+              <td>
+                Can be an <strong>employee</strong> of the company or an external professional firm.
+              </td>
+              <td>
+                <strong>Mandatorily NOT an employee</strong> of the company (independent practitioner).
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 10: EVALUATING INTERNAL AUDIT (SA 610) -->
+    <section id="sec-evaluating-internal-audit">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🔍 10. Evaluation of the Internal Audit Function by External Auditor (SA 610 Revised)</span>
+        </div>
+        <span class="section-tag">Using the Work of Internal Auditors</span>
+      </div>
+
+      <p>
+        Under <strong class="k-blue">SA 610 (Revised) &ndash; "Using the Work of Internal Auditors"</strong>, the external statutory auditor may consider using the work of the internal audit function to modify the nature, timing, or extent of statutory audit procedures. However, before relying on such work, the external auditor must determine whether the internal audit function is adequate for the purposes of the statutory audit.
+      </p>
+
+      <h3>The Three Foundational Criteria to Evaluate (SA 610)</h3>
+      <div class="grid-3">
+        <div class="card" style="border-top: 4px solid var(--primary-blue);">
+          <div class="card-title">1. Objectivity of the Function</div>
+          <p>The external auditor evaluates:</p>
+          <ul style="font-size: 15px; margin-left: 16px;">
+            <li>Organizational status of internal audit and whether it reports directly to the <strong>Audit Committee</strong>.</li>
+            <li>Whether the internal auditor is free from conflicting operational responsibilities.</li>
+            <li>Whether TCWG oversees employment, compensation, and removal decisions of the Chief Internal Auditor.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="border-top: 4px solid var(--primary-green);">
+          <div class="card-title">2. Level of Competence</div>
+          <p>The external auditor evaluates:</p>
+          <ul style="font-size: 15px; margin-left: 16px;">
+            <li>Professional qualifications (CA, CMA, CIA) and industry experience of internal audit staff.</li>
+            <li>Adequacy of technical resources, data analytics tools, and staffing strength.</li>
+            <li>Existence of ongoing training and Continuing Professional Development (CPD) programs.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="border-top: 4px solid var(--accent-purple);">
+          <div class="card-title">3. Systematic &amp; Disciplined Approach</div>
+          <p>The external auditor evaluates:</p>
+          <ul style="font-size: 15px; margin-left: 16px;">
+            <li>Existence and adequacy of documented audit plans, programs, and standardized working papers.</li>
+            <li>Adherence to Standards on Internal Audit (SIAs) issued by ICAI.</li>
+            <li>Implementation of an internal Quality Assessment and Improvement Program (QAIP).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout callout-red">
+        <div class="callout-title">⚠️ Non-Reliance Rule</div>
+        <p>
+          If the external auditor determines that the internal audit function lacks sufficient objectivity, technical competence, or a systematic approach, <strong class="k-red">the external auditor shall NOT use the work of the internal audit function</strong> in any area of the statutory audit!
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 11: DIRECT ASSISTANCE (SA 610) -->
+    <section id="sec-direct-assistance">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🤝 11. Using Direct Assistance of Internal Auditors under SA 610 (Revised)</span>
+        </div>
+        <span class="section-tag">Direct Supervision &amp; Prohibited Traps</span>
+      </div>
+
+      <p>
+        <strong class="k-blue">Direct Assistance</strong> refers to the use of internal auditors to perform audit procedures under the <strong class="k-purple">direction, supervision, and review</strong> of the external statutory auditor.
+      </p>
+
+      <h3>Mandatory Pre-Conditions &amp; Written Agreements Prior to Use</h3>
+      <p>
+        Prior to using internal auditors to provide direct assistance, the external auditor must:
+      </p>
+      <ol>
+        <li>Evaluate the existence and significance of threats to the objectivity and the level of competence of the specific internal auditors who will be providing direct assistance.</li>
+        <li>Obtain <strong class="k-green">written agreement from an authorized representative of the entity</strong> confirming that the internal auditors will be allowed to follow the external auditor's instructions, and that the entity will not intervene in the work the internal auditor performs for the external auditor.</li>
+        <li>Obtain <strong class="k-green">written agreement from the internal auditors</strong> that they will keep confidential specific matters as instructed by the external auditor and will inform the external auditor of any threat to their objectivity.</li>
+      </ol>
+
+      <h3>Prohibited Areas for Direct Assistance (SA 610 Red Lines)</h3>
+      <div class="callout callout-red">
+        <div class="callout-title">🚫 Absolute Prohibitions: External Auditor CANNOT Use Direct Assistance In:</div>
+        <ol style="margin-left: 20px;">
+          <li>Procedures that involve making <strong class="k-red">significant judgments</strong> in the audit:
+            <ul>
+              <li>Assessing the risks of material misstatement (ROMM).</li>
+              <li>Evaluating the appropriateness of management's use of the <strong class="k-red">Going Concern assumption</strong>.</li>
+              <li>Evaluating <strong class="k-red">significant accounting estimates</strong> (impairment, provisions, fair values).</li>
+              <li>Evaluating the adequacy of financial statement disclosures.</li>
+            </ul>
+          </li>
+          <li>Procedures relating to higher assessed risks of material misstatement where the judgment required in performing relevant procedures is more than limited.</li>
+          <li>Procedures relating to activities in which the internal auditors have been involved (e.g., auditing an operational system they helped design).</li>
+          <li>Decisions on external confirmation requests and <strong class="k-red">evaluating the results of external confirmation procedures</strong>!</li>
+        </ol>
+      </div>
+
+      <h3>Mandatory Audit Documentation under SA 610 &amp; SA 230</h3>
+      <p>
+        When direct assistance is used, the statutory auditor must document in the statutory audit file:
+      </p>
+      <ul>
+        <li>The evaluation of the internal auditors' objectivity and competence.</li>
+        <li>The basis for the decision regarding the nature and extent of work performed.</li>
+        <li>The signed written agreements from the entity and the internal auditors.</li>
+        <li><strong>THE AUDIT WORKING PAPERS TRAP:</strong> The working papers prepared by the internal auditors providing direct assistance <strong class="k-purple">MUST be included in the statutory auditor's working papers file</strong>! The external auditor cannot exclude them, because the external auditor assumes full sole responsibility for the audit opinion expressed!</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 12: MANAGEMENT FUNCTION -->
+    <section id="sec-management-function">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🚀 12. Internal Audit as a Strategic Management Function</span>
+        </div>
+        <span class="section-tag">Value Creation &amp; Catalyst</span>
+      </div>
+
+      <p>
+        Modern internal auditing transcends routine voucher checking to serve as an indispensable management instrument for good corporate governance:
+      </p>
+      <ul>
+        <li><strong>Catalyst for Operational Improvement:</strong> Identifies unutilized production capacities, bottlenecks in supply chains, and opportunities for cost reduction without compromising quality.</li>
+        <li><strong>Proactive Risk Advisory:</strong> Evaluates emerging enterprise risks (cyber threats, geopolitical disruptions, regulatory changes) before they materialize into financial losses.</li>
+        <li><strong>Fraud Deterrence &amp; Detection:</strong> Analyzes transactional anomalies, red flags, and segregation of duties breakdowns, creating a robust fraud deterrent environment.</li>
+        <li><strong>Strengthening Governance Architecture:</strong> Serves as the eyes and ears of the independent directors and Audit Committee, providing unvarnished insights into operational realities.</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 13: AUDIT TRAIL & RULE 11(g) -->
+    <section id="sec-audit-trail-rule11g">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🛡️ 13. Audit Trail (Edit Log) &amp; Rule 11(g) Statutory Compliance</span>
+        </div>
+        <span class="section-tag">Digital Transparency Mandate</span>
+      </div>
+
+      <p>
+        To eliminate corporate data manipulation, clandestine back-dated entries, and unauthorized alterations in books of account, the Ministry of Corporate Affairs (MCA) introduced mandatory statutory provisions concerning <strong class="k-blue">Audit Trail (Edit Log)</strong>:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%;">Statutory Reference</th>
+              <th style="width: 40%;">Regulatory Requirement</th>
+              <th style="width: 35%;">Auditor &amp; Management Duties</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Proviso to Rule 3(1)<br>Companies (Accounts) Rules, 2014</strong></td>
+              <td>
+                Every company which uses accounting software for maintaining its books of account shall use only such accounting software which has a feature of recording <strong class="k-blue">Audit Trail of each and every transaction</strong>, creating an <strong>edit log of each change made in books of account along with the date when such changes were made</strong>, and ensuring that the audit trail <strong>cannot be disabled</strong>.
+              </td>
+              <td>
+                <strong>Primary Management Duty:</strong> Ensure accounting software has audit trail enabled at database and application level continuously throughout the year without disabling.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Rule 11(g)<br>Companies (Audit &amp; Auditors) Rules, 2014</strong></td>
+              <td>
+                The statutory auditor must state in his audit report whether:
+                <br>1. Company used accounting software with audit trail (edit log) feature enabled throughout the year.
+                <br>2. The audit trail feature has operated throughout the year for all transactions recorded in software.
+                <br>3. The audit trail feature has not been tampered with.
+                <br>4. The audit trail has been preserved by the company as per statutory requirements for record retention (min 8 years under Sec 128(5)).
+              </td>
+              <td>
+                <strong>Statutory Reporting Duty:</strong> Test whether audit trail was enabled, evaluate access controls over edit logs, verify preservation, and issue a modified report if audit trail was disabled at any point!
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Key Internal Controls Required to Demonstrate Audit Trail Functionality</h3>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Technical Controls</div>
+          <ul>
+            <li><strong>Continuous Logging:</strong> Audit trail feature permanently enabled at both application software and back-end database level.</li>
+            <li><strong>Tamper-Evident Storage:</strong> Edit logs stored in read-only tables or immutable media where even database administrators (DBAs) cannot delete or alter logs.</li>
+            <li><strong>Time Synchronization:</strong> System clocks synchronized across all servers with an authoritative Network Time Protocol (NTP).</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Access &amp; Procedural Controls</div>
+          <ul>
+            <li><strong>No Shared User IDs:</strong> Unique user ID assigned to each employee; strict prohibition on generic or shared logins.</li>
+            <li><strong>Privileged Access Management:</strong> Direct access to back-end database strictly restricted, authenticated via multi-factor authentication (MFA), and logged.</li>
+            <li><strong>Periodic Review of Logs:</strong> Management routinely reviews audit trail exception logs for unauthorized configuration changes.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 14: INTERACTIVE TYU 3 (AUDIT TRAIL) -->
+    <section id="sec-interactive-tyu-3">
+      <div class="section-header">
+        <div class="section-title">
+          <span>🧠 14. Interactive Test Your Understanding 3 (Audit Trail Implementation Review)</span>
+        </div>
+        <span class="section-tag">Digital Control Audit</span>
+      </div>
+
+      <div class="accordion-item open">
+        <div class="accordion-header">
+          <span>📝 TYU 3: Reviewing Audit Trail Feature in Accounting Software</span>
+          <span class="accordion-icon">−</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Scenario:</strong></p>
+          <p>
+            During the audit of a manufacturing company, the auditor notices that the company uses customized ERP software. Although the edit log feature exists in the software, it can be switched off by the system administrator during month-end batch processing to "improve processing speed." Furthermore, certain user IDs in the accounts department are shared among temporary data entry clerks.
+          </p>
+          <p>
+            <em>Evaluate the statutory implications under Rule 3(1) of Companies (Accounts) Rules, 2014 and Rule 11(g) of Companies (Audit and Auditors) Rules, 2014.</em>
+          </p>
+          <div class="callout callout-green" style="margin-top: 14px;">
+            <div class="callout-title">✅ ICAI Official Solution &amp; Statutory Analysis</div>
+            <p><strong>1. Violation of Rule 3(1) of Companies (Accounts) Rules, 2014:</strong></p>
+            <ul>
+              <li>The law explicitly mandates that the accounting software must ensure that the audit trail <strong class="k-red">cannot be disabled</strong>.</li>
+              <li>Allowing the system administrator to switch off the audit trail feature during month-end processing violates this statutory requirement. Even if disabled for a few hours for "performance speed," the continuity of the audit trail is broken, creating an opportunity for unauthorized or unrecorded alterations.</li>
+            </ul>
+
+            <p><strong>2. Breakdown of User Identification Control:</strong></p>
+            <ul>
+              <li>The edit log must record <em>who</em> made the change along with date and time. Sharing user IDs makes it impossible to establish individual accountability for changes, defeating the core purpose of an audit trail.</li>
+            </ul>
+
+            <p><strong>3. Reporting Implication under Rule 11(g):</strong></p>
+            <ul>
+              <li>The statutory auditor cannot confirm that the audit trail operated continuously throughout the year without being disabled.</li>
+              <li>The auditor is required to <strong class="k-red">modify his audit report under Rule 11(g)</strong>, clearly disclosing that the audit trail feature was capable of being disabled, was switched off during batch processing, and that shared user IDs compromised log attribution!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 15: APPENDIX: STANDARDS ON INTERNAL AUDIT (SIAs) -->
+    <section id="sec-appendix-sias">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📚 15. Appendix: Standards on Internal Audit (SIAs) Framework by ICAI</span>
+        </div>
+        <span class="section-tag">Internal Audit Standards Framework</span>
+      </div>
+
+      <p>
+        The <strong class="k-blue">Standards on Internal Audit (SIAs)</strong> issued by the Internal Audit Standards Board (IASB) of the ICAI establish mandatory benchmarks for performing quality internal audit assignments in India:
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 20%;">SIA Series</th>
+              <th style="width: 35%;">Classification Domain</th>
+              <th style="width: 45%;">Core Subject Matter Covered</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>100 Series</strong></td>
+              <td><strong>Planning Standards</strong></td>
+              <td>
+                Internal Audit Charter, Objectives &amp; Scope, Risk-Based Internal Audit Planning, Quality Assurance.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>200 Series</strong></td>
+              <td><strong>Execution Standards</strong></td>
+              <td>
+                Conducting fieldwork, internal control evaluation, sampling, analytical procedures, gathering audit evidence, working papers documentation.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>300 Series</strong></td>
+              <td><strong>Reporting Standards</strong></td>
+              <td>
+                Communication with TCWG, drafting internal audit reports, presentation of findings (5Cs), management responses.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>400 Series</strong></td>
+              <td><strong>Specialized &amp; Governance Areas</strong></td>
+              <td>
+                Fraud risk management, IT general controls, enterprise risk management review, forensic and investigative procedures.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <!-- SECTION 16: TYK QUESTIONS 1 TO 8 -->
+    <section id="sec-tyk-q1-to-q8">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📝 16. Test Your Knowledge (TYK Questions 1 to 8)</span>
+        </div>
+        <span class="section-tag">Statutory &amp; Technical Applications</span>
+      </div>
+
+      <!-- TYK 1 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q1: Short Note on Internal Audit Report</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Write a short note on the Internal Audit Report.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>
+              The <strong class="k-blue">Internal Audit Report</strong> is the primary tangible output of the internal audit engagement, communicating findings and recommendations to the Audit Committee and Top Management.
+            </p>
+            <p><strong>Key Characteristics &amp; Structure:</strong></p>
+            <ul>
+              <li><strong>Objectivity &amp; Tone:</strong> Factual, unbiased, and constructive. Identifies control deficiencies while acknowledging positive management initiatives.</li>
+              <li><strong>Standard 5Cs Observation Structure:</strong> Every observation details: (1) Condition (factual state); (2) Criteria (benchmark/policy); (3) Cause (underlying root reason); (4) Consequence/Effect (financial or operational risk); and (5) Corrective Action Plan (management response, target date, action owner).</li>
+              <li><strong>Executive Summary:</strong> Summarizes critical high-risk observations, systemic themes, and remediation status for swift Board-level review.</li>
+              <li><strong>Follow-up Action:</strong> Mandates systematic follow-up tracking to verify whether agreed management actions were implemented.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 2 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q2: Important Aspects Considered by External Auditor in Evaluating Internal Audit Function</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> State the important aspects to be considered by the External auditor in the evaluation of the Internal Audit Function under SA 610 (Revised).</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>Under <strong class="k-blue">SA 610 (Revised)</strong>, before using the work of the internal audit function, the external auditor must evaluate three core aspects:</p>
+            <ol>
+              <li><strong>Objectivity of the Internal Audit Function:</strong> Whether the function reports directly to TCWG (Audit Committee); whether internal auditors are free from conflicting operational duties; whether management places undue scope restrictions.</li>
+              <li><strong>Level of Competence:</strong> Professional qualifications (CA, CMA, CIA), hiring policies, continuing professional education (CPE), and technical resources available to the internal audit team.</li>
+              <li><strong>Systematic and Disciplined Approach:</strong> Whether internal audit applies documented audit methodologies, standardized risk-based programs, quality control policies, and complies with Standards on Internal Audit (SIAs).</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 3 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q3: AB Pvt. Ltd. Borrowings Exceeding ₹ 100 Crore (Applicability &amp; Appointee)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> AB Pvt. Ltd. company has outstanding loans or borrowings from banks exceeding one hundred crore rupees. It wants to appoint an internal auditor. Please guide the company regarding applicability, who can be appointed, and what work would be reviewed.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p><strong>1. Statutory Applicability under Section 138:</strong></p>
+            <ul>
+              <li>Under Rule 13 of Companies (Accounts) Rules, 2014, every private company having <strong class="k-red">outstanding loans or borrowings from banks or public financial institutions exceeding ₹ 100 Crore</strong> at any point of time during the preceding financial year is mandatorily required to appoint an internal auditor.</li>
+              <li>Since AB Pvt. Ltd.'s borrowings exceed ₹ 100 Crore, Section 138 is <strong class="k-green">applicable</strong>.</li>
+            </ul>
+            <p><strong>2. Who Can Be Appointed:</strong></p>
+            <ul>
+              <li>A Chartered Accountant (in practice or not); OR a Cost Accountant; OR such other professional as decided by the Board. May or may not be an employee of the company.</li>
+            </ul>
+            <p><strong>3. Work to Be Reviewed (Scope formulated under Rule 13(2)):</strong></p>
+            <ul>
+              <li>Review of internal controls, loan utilization, debt-servicing capability, safeguarding of assets, compliance with bank covenants, and operational efficiency.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 4 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q4: Factors Weighing Considerations in Using Direct Assistance (Moon Ltd)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Moon Ltd., of which you are the Statutory Auditor, has an internal audit being conducted by an outside agency. State the factors that weigh considerations in opting to make use of direct assistance of the internal auditors for the purpose of statutory audit.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>Under <strong class="k-blue">SA 610 (Revised)</strong>, in deciding whether to use internal auditors to provide direct assistance, the external auditor considers:</p>
+            <ul>
+              <li><strong>Amount of Judgment Involved:</strong> Direct assistance cannot be used in planning procedures or testing where significant judgment is required.</li>
+              <li><strong>Assessed Risk of Material Misstatement:</strong> Higher risk areas require external auditor's direct personal performance.</li>
+              <li><strong>Objectivity and Competence:</strong> The significance of threats to objectivity and technical skills of the specific internal audit personnel.</li>
+              <li><strong>Prior Written Agreements:</strong> Must obtain written agreements from the entity (non-intervention) and internal auditors (confidentiality &amp; objectivity).</li>
+              <li><strong>Prohibitions:</strong> Direct assistance is strictly barred in significant estimates, going concern, risk assessment, and external confirmations.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 5 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q5: Direct Assistance in Accounting Estimates &amp; External Confirmations (XYZ Ltd)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Mr. A is appointed as statutory auditor of XYZ Ltd. XYZ Ltd. appointed Mr. B as internal auditor under Section 138. External auditor Mr. A asked internal auditor Mr. B to provide direct assistance regarding:
+          <br>(a) Evaluating significant accounting estimates by management and assessing risk of material misstatements.
+          <br>(b) External confirmation requests and evaluation of confirmation results.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p><strong>(a) Evaluating Accounting Estimates &amp; Risk Assessment:</strong></p>
+            <ul>
+              <li>Under SA 610 (Revised), the external auditor <strong class="k-red">SHALL NOT use internal auditors to provide direct assistance</strong> to perform procedures that involve making <strong class="k-red">significant judgments</strong> in the audit.</li>
+              <li>Assessing the risks of material misstatement and evaluating significant accounting estimates are core areas of professional auditor judgment. Therefore, Mr. A <strong>cannot</strong> ask Mr. B for direct assistance in these areas.</li>
+            </ul>
+            <p><strong>(b) External Confirmations &amp; Evaluation:</strong></p>
+            <ul>
+              <li>SA 610 explicitly prohibits using internal auditors to provide direct assistance with respect to <strong class="k-red">decisions on external confirmation requests and evaluating the results of external confirmation procedures</strong>!</li>
+              <li>Therefore, Mr. A <strong>cannot</strong> use Mr. B for direct assistance in confirmation procedures. The answer remains that such direct assistance is strictly prohibited.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 6 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q6: Ideal Reporting Structure of Chief Internal Auditor (XYZ Ltd)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> XYZ Ltd. has to appoint Mr. A as Chief Internal Auditor. The Managing Director asked the HR head to define the reporting structure so that Mr. A can discharge his duties objectively. Suggest the ideal reporting structure.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>The HR head should propose a <strong class="k-blue">Dual Reporting Framework</strong>:</p>
+            <ol>
+              <li><strong>Functional Reporting &rarr; Audit Committee / Board of Directors:</strong>
+                <ul>
+                  <li>Approval of internal audit charter and annual risk-based audit plan.</li>
+                  <li>Approval of Chief Internal Auditor's appointment, appraisal, and remuneration.</li>
+                  <li>Direct reporting of all audit findings, internal control deficiencies, and investigation results.</li>
+                  <li>Periodic executive sessions between Audit Committee and Chief Internal Auditor without management.</li>
+                </ul>
+              </li>
+              <li><strong>Administrative Reporting &rarr; Managing Director / CEO:</strong>
+                <ul>
+                  <li>Day-to-day administrative matters, operational budget approvals, and routine communications.</li>
+                </ul>
+              </li>
+              <li><strong>Crucial Negative Directive:</strong> The Chief Internal Auditor must <strong class="k-red">NEVER report to the CFO or Finance Director</strong>, as doing so introduces a severe conflict of interest and compromises independence over financial auditing.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 7 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q7: Expense Analysis &amp; Gap Identification Steps (Zero Ltd / Mr. Shubh)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Zero Ltd. appointed Mr. Shubh as internal auditor. The Audit Committee requested him to perform a detailed analysis of previous year expenses and report on all risks and underlying gaps. Elucidate the steps the internal auditor should take.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>Mr. Shubh should adopt a systematic risk-based analytical methodology:</p>
+            <ol>
+              <li><strong>Data Extraction &amp; Stratification:</strong> Extract the entire expense general ledger and categorize expenses by head, department, and vendor volume.</li>
+              <li><strong>Budget vs. Actual Variance Analysis:</strong> Compare actual expenses with approved budgets to flag significant cost overruns and unexplained variations.</li>
+              <li><strong>Test of 3-Way Matching &amp; Delegation of Financial Powers (DoFP):</strong> Verify that purchase orders, delivery challans/GRNs, and invoices match, and that approvals adhered strictly to authorized spending limits.</li>
+              <li><strong>Analysis of Non-Routine &amp; High-Risk Expenses:</strong> Scrutinize legal expenses, consultancy fees, travel expenses, promotional spends, and round-sum disbursements.</li>
+              <li><strong>Vendor Concentration &amp; Related Party Testing:</strong> Identify unusual vendor concentrations, split purchase orders designed to evade tender limits, and payments to related parties.</li>
+              <li><strong>Root Cause Identification &amp; 5Cs Reporting:</strong> Formulate findings identifying root causes (lack of ERP validation, missing review controls) and provide actionable remediation plans.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 8 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q8: Section 138 Applicability Evaluation for Group Companies</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Evaluate the applicability of internal audit under Section 138 of the Companies Act, 2013 for the following group companies based on previous year data (₹ in Crore):
+          <br>&bull; <strong>XYX Limited</strong> (Listed): Capital 100, Turnover 230, Loans 20, Deposits 48.
+          <br>&bull; <strong>MNM Limited</strong> (Unlisted Public): Capital 60, Turnover 100, Loans 50, Deposits 24.
+          <br>&bull; <strong>GFG Limited</strong> (Unlisted Private): Capital 70, Turnover 180, Loans 80, Deposits Nil.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p><strong>1. XYX Limited (Listed Company):</strong></p>
+            <ul>
+              <li>Under Section 138 read with Rule 13, internal audit is <strong class="k-green">MANDATORY</strong> for <em>every listed company</em> without any monetary threshold. Hence, XYX Ltd must appoint an internal auditor.</li>
+            </ul>
+            <p><strong>2. MNM Limited (Unlisted Public Company):</strong></p>
+            <ul>
+              <li>Criteria: Capital &ge; 50 Cr; OR Turnover &ge; 200 Cr; OR Loans > 100 Cr; OR Deposits &ge; 25 Cr.</li>
+              <li>MNM Ltd has Paid-up Capital of ₹ 60 Crore, which exceeds the threshold of <strong class="k-green">₹ 50 Crore</strong>!</li>
+              <li>Since meeting any ONE criterion triggers applicability, internal audit is <strong class="k-green">MANDATORY</strong> for MNM Limited.</li>
+            </ul>
+            <p><strong>3. GFG Limited (Unlisted Private Company):</strong></p>
+            <ul>
+              <li>Criteria: Turnover &ge; 200 Cr; OR Loans > 100 Cr. (Capital and Deposits thresholds do NOT apply to private companies!).</li>
+              <li>GFG Ltd has Turnover of ₹ 180 Cr (below ₹ 200 Cr) and Loans of ₹ 80 Cr (below ₹ 100 Cr). Its Capital of ₹ 70 Cr is irrelevant for private companies.</li>
+              <li>Hence, internal audit is <strong class="k-red">NOT APPLICABLE</strong> to GFG Limited!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 17: TYK QUESTIONS 9 TO 16 -->
+    <section id="sec-tyk-q9-to-q16">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📝 17. Test Your Knowledge (TYK Questions 9 to 16)</span>
+        </div>
+        <span class="section-tag">Advanced Scenarios &amp; Audit Trail</span>
+      </div>
+
+      <!-- TYK 9 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q9: Financial Records Responsibilities &amp; Going Concern Direct Assistance (SPOM Ltd)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Rishi is internal auditor of SPOM Ltd; CA Nitin is statutory auditor.
+          <br>(a) Rishi notices discrepancies in disbursement records and policy changes. What are Rishi's responsibilities regarding accounting functions and financial records?
+          <br>(b) CA Nitin asked Rishi for direct assistance in evaluating the appropriateness of management's use of the Going Concern assumption. Can Nitin ask for this direct assistance?</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p><strong>(a) Rishi's Responsibilities as Internal Auditor:</strong></p>
+            <ul>
+              <li>Reviewing the adequacy of the accounting and financial reporting system to ensure reliability and integrity of financial records.</li>
+              <li>Examining internal controls over cash and bank disbursements to identify control breakdowns, unauthorized payments, or potential fraud.</li>
+              <li>Evaluating the accounting impact of new or modified business policies and reporting the lack of notification to the Audit Committee.</li>
+            </ul>
+            <p><strong>(b) Direct Assistance on Going Concern (SA 610 Prohibitions):</strong></p>
+            <ul>
+              <li>Under SA 610 (Revised), the external auditor <strong>shall not use internal auditors to provide direct assistance</strong> in evaluating the appropriateness of management's use of the <strong class="k-red">Going Concern assumption</strong>.</li>
+              <li>Going concern assessment involves significant professional judgment and evaluation of management's future plans. Therefore, CA Nitin <strong class="k-red">CANNOT</strong> ask Rishi for direct assistance in evaluating going concern.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 10 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q10: Direct Assistance for Newly Assessed High Risk Assertions (First and Last Ltd)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Statutory auditor CA K designed substantive procedures for assertions not examined in previous years due to higher assessed risk of material misstatement. A team member decides to engage internal auditor Mr. X for direct assistance. Comment under SA 610.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>Under <strong class="k-blue">SA 610 (Revised)</strong>:</p>
+            <ul>
+              <li>Direct assistance <strong>cannot be used</strong> for procedures relating to <strong class="k-red">higher assessed risks of material misstatement</strong> where the judgment required in performing the relevant procedures is more than limited.</li>
+              <li>Because these assertions involve higher assessed risks and were newly targeted in response to identified vulnerabilities, delegating substantive testing on these assertions to internal auditors is inappropriate.</li>
+              <li>CA K must perform these procedures directly or through his own statutory engagement team members.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 11 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q11: Purpose &amp; Importance of Audit Trail (Edit Log) under Rule 3(1) &amp; Rule 11(g)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Explain the meaning, purpose, and statutory importance of an Audit Trail (Edit Log) in a computerized accounting system.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>
+              An <strong class="k-blue">Audit Trail (Edit Log)</strong> is a chronological, step-by-step digital record providing documentary evidence of the sequence of activities that have affected a specific transaction or data element in accounting software.
+            </p>
+            <p><strong>Statutory Purpose &amp; Importance:</strong></p>
+            <ul>
+              <li><strong>Tracking Modifications:</strong> Records who made the entry, date and exact time of creation, subsequent alterations, and deletion attempts.</li>
+              <li><strong>Fraud Deterrence:</strong> Prevents unauthorized back-dated journal vouchers, suppression of sales, and manipulation of ledger balances.</li>
+              <li><strong>Data Integrity:</strong> Ensures financial statements are based on transparent, immutable accounting records.</li>
+              <li><strong>Mandatory Preservation:</strong> Companies must preserve books of account and edit logs for at least <strong class="k-green">8 financial years</strong> under Section 128(5).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 12 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q12: Applicability Advice for Jeneva Technologies Pvt Ltd &amp; Cross Buildcon Ltd</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Advise regarding Section 138 applicability for:
+          <br>(a) Jeneva Technologies Pvt. Ltd. (Turnover ₹ 210 Cr, Loans ₹ 95 Cr).
+          <br>(b) Cross Buildcon Ltd., unlisted public (Capital ₹ 48 Cr, Turnover ₹ 198 Cr, Loans ₹ 110 Cr, Deposits ₹ 30 Cr).
+          <br>(c) State who can be appointed as internal auditor.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p><strong>(a) Jeneva Technologies Pvt. Ltd. (Private Company):</strong></p>
+            <ul>
+              <li>Criteria for private companies: Turnover &ge; ₹ 200 Cr OR Loans > ₹ 100 Cr.</li>
+              <li>Jeneva's turnover is ₹ 210 Crore, which is <strong class="k-green">&ge; ₹ 200 Crore</strong>.</li>
+              <li>Therefore, Jeneva Technologies Pvt. Ltd. <strong class="k-green">IS REQUIRED to appoint an internal auditor</strong>.</li>
+            </ul>
+            <p><strong>(b) Cross Buildcon Ltd. (Unlisted Public Company):</strong></p>
+            <ul>
+              <li>Criteria: Capital &ge; 50 Cr, Turnover &ge; 200 Cr, Loans > 100 Cr, Deposits &ge; 25 Cr.</li>
+              <li>Cross Buildcon breaches TWO independent thresholds: Loans of ₹ 110 Cr (<strong class="k-red">&gt; ₹ 100 Cr</strong>) AND Deposits of ₹ 30 Cr (<strong class="k-green">&ge; ₹ 25 Cr</strong>).</li>
+              <li>Therefore, Cross Buildcon Ltd. <strong class="k-green">IS REQUIRED to appoint an internal auditor</strong>.</li>
+            </ul>
+            <p><strong>(c) Who Can Be Appointed:</strong></p>
+            <ul>
+              <li>A Chartered Accountant, a Cost Accountant, or such other professional as decided by the Board. May or may not be an employee of the company.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 13 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q13: Shared IDs &amp; Unreviewed Logs in ERP (LED Ltd)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> LED Ltd. implemented a new ERP. Auditors notice shared User IDs among employees, uncertainty whether audit trail is active, and unreviewed access logs. Advise the key internal controls required to be implemented.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>The company must establish the following essential internal controls over its ERP:</p>
+            <ol>
+              <li><strong>Unique User Access Control:</strong> Discontinue shared logins immediately; enforce unique user credentials for every user with multi-factor authentication.</li>
+              <li><strong>Continuous Audit Trail Configuration:</strong> Lock ERP configuration so that audit trail (edit log) is enabled 24x7 at both application and database levels without ability to disable.</li>
+              <li><strong>Independent Log Review:</strong> Establish periodic management review of audit trail exception reports to detect unauthorized alterations.</li>
+              <li><strong>Privileged User Restrictions:</strong> Segregate duties between system administrators (who maintain IT) and business users (who enter transactions).</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 14 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q14: Statutory Auditor Excluding Direct Assistance Working Papers (UV Ltd)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> CA L used direct assistance of internal auditors in UV Ltd. He instructed his audit assistant not to document the working papers prepared by the internal auditors in statutory files, arguing they do not form part of statutory audit. Is CA L right?</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>
+              <strong class="k-red">CA L IS COMPLETELY WRONG!</strong>
+            </p>
+            <p><strong>Mandatory Documentation under SA 610 (Revised) &amp; SA 230:</strong></p>
+            <ul>
+              <li>The external auditor has sole responsibility for the audit opinion expressed and cannot dilute that responsibility by using direct assistance.</li>
+              <li>SA 610 explicitly requires that the statutory audit documentation <strong class="k-purple">SHALL INCLUDE the working papers prepared by the internal auditors providing direct assistance</strong>, including signatures indicating who reviewed their work and the date of review!</li>
+              <li><strong>Additional Required Documentation:</strong> The evaluation of objectivity and competence, the written agreement from the entity, and the written agreement from the internal auditors.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 15 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q15: Activities Performed Prior to Using Direct Assistance (Ish and Vish Ltd)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Statutory auditor of Ish and Vish Ltd. plans to use internal auditor Mr. Yug for direct assistance. Indicate the activities to be performed by the statutory auditor prior to using internal auditor for providing direct assistance.</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>Prior to using Mr. Yug for direct assistance, the statutory auditor must:</p>
+            <ol>
+              <li><strong>Evaluate Threats to Objectivity:</strong> Assess whether Mr. Yug has personal bias, operational conflicts, or financial interests that could impair objectivity.</li>
+              <li><strong>Evaluate Level of Competence:</strong> Confirm Mr. Yug has requisite technical training, proficiency, and experience to execute the specific assigned audit tasks.</li>
+              <li><strong>Obtain Written Entity Agreement:</strong> Obtain written confirmation from the company management that Mr. Yug will follow the statutory auditor's instructions and that management will not intervene.</li>
+              <li><strong>Obtain Written Internal Auditor Agreement:</strong> Obtain written confirmation from Mr. Yug that he will keep specific matters confidential and inform the statutory auditor of any emerging threat to his objectivity.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- TYK 16 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Q16: Internal Controls to Demonstrate Continuous Audit Trail (Shine Appliances Ltd)</span>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>Question:</strong> Shine Appliances Ltd. seeks guidance from statutory auditor CA M on internal controls that should be implemented to demonstrate that the Audit Trail feature was continuously enabled and not disabled at any point of time under Rule 11(g).</p>
+          <div class="callout callout-green">
+            <div class="callout-title">✅ ICAI Solution</div>
+            <p>CA M should advise management to implement the following controls:</p>
+            <ol>
+              <li><strong>Database &amp; Application Level Enabler:</strong> Configure software parameters to enable edit logging across all transaction tables permanently.</li>
+              <li><strong>Restricted DBA Rights:</strong> Prohibit database administrators from altering logging tables; ensure change-log tables are append-only.</li>
+              <li><strong>Automated Heartbeat &amp; Alert System:</strong> Implement automated alerts that trigger immediately if audit trail logging stops or fails.</li>
+              <li><strong>Periodic Independent Log Scrutiny:</strong> Have internal audit or an independent IT auditor review log continuity certificates periodically.</li>
+              <li><strong>Secure Archival &amp; Backup:</strong> Ensure daily encrypted backups of audit logs are stored securely to comply with the 8-year statutory retention rule under Section 128(5).</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 18: MASTER SYNTHESIS & EXAM CHECKLIST -->
+    <section id="sec-master-synthesis-ch16">
+      <div class="section-header">
+        <div class="section-title">
+          <span>📊 18. Master Synthesis: Section 138, SA 610 &amp; Rule 11(g) Checklist</span>
+        </div>
+        <span class="section-tag">Exam Master Matrix</span>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 25%;">Domain</th>
+              <th style="width: 40%;">Core Rule &amp; Statutory Threshold</th>
+              <th style="width: 35%;">Critical Exam Flash Traps</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Section 138 (Unlisted Public)</strong></td>
+              <td>
+                &bull; Paid-up Capital &ge; ₹ 50 Cr<br>
+                &bull; Turnover &ge; ₹ 200 Cr<br>
+                &bull; Loans > ₹ 100 Cr<br>
+                &bull; Deposits &ge; ₹ 25 Cr
+              </td>
+              <td>
+                Loans condition is <strong>strictly EXCEEDING</strong> ₹ 100 Cr (₹ 100.00 Cr fails!). Deposits and loans tested <em>at any point of time</em> during preceding year.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Section 138 (Private Company)</strong></td>
+              <td>
+                &bull; Turnover &ge; ₹ 200 Cr<br>
+                &bull; Loans > ₹ 100 Cr
+              </td>
+              <td>
+                Capital and Deposit limits <strong>do NOT apply</strong> to private companies!
+              </td>
+            </tr>
+            <tr>
+              <td><strong>SA 610 Direct Assistance</strong></td>
+              <td>
+                External auditor directly directs, supervises, and reviews internal auditor's work.
+              </td>
+              <td>
+                <strong>Prohibited in:</strong> Significant judgments, going concern, accounting estimates, and external confirmation responses! Working papers <em>must be retained in statutory file</em>.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Rule 11(g) Audit Trail</strong></td>
+              <td>
+                Accounting software must record edit log of all changes with date, time, user ID, and cannot be disabled.
+              </td>
+              <td>
+                Must operate throughout the year; if disabled even during month-end batch processing, auditor <strong>must qualify report</strong>!
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+<!-- ========================================== -->
+<!-- BOTTOM NAVIGATION                          -->
+<!-- ========================================== -->
+<div class="bottom-nav">
+  <a href="psu_audit.html" class="nav-btn prev-btn">
+    <span class="nav-arrow">&larr;</span>
+    <span class="nav-text">
+      <span class="nav-sub">Previous Chapter</span>
+      <span class="nav-title">Ch 15: Audit of PSUs (C&amp;AG)</span>
+    </span>
+  </a>
+
+  <a href="../../notes/audnotes.html" class="nav-btn hub-btn">
+    <span class="nav-text">
+      <span class="nav-sub">CA Final Audit</span>
+      <span class="nav-title">Master Hub &amp; Index</span>
+    </span>
+  </a>
+
+  <a href="../../notes/audnotes.html" class="nav-btn next-btn">
+    <span class="nav-text">
+      <span class="nav-sub">Next Chapter</span>
+      <span class="nav-title">Ch 17: Due Diligence &amp; Forensic</span>
+    </span>
+    <span class="nav-arrow">&rarr;</span>
+  </a>
+</div>
+
+</main>
+</div>
+
+<!-- ========================================== -->
+<!-- SCRIPTS & INTERACTIVITY                   -->
+<!-- ========================================== -->
+<script>
+  // 1. Reading Progress Bar
+  window.addEventListener('scroll', () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    const progressBar = document.getElementById('readingProgress');
+    if (progressBar) {
+      progressBar.style.width = scrolled + '%';
+    }
+  });
+
+  // 2. Mobile Sidebar Toggle
+  const sidebarToggle = document.getElementById('sidebarToggle');
+  const sidebar = document.getElementById('sidebar');
+  if (sidebarToggle && sidebar) {
+    sidebarToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+  }
+
+  // 3. Interactive Accordion Toggle
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      item.classList.toggle('open');
+      const icon = header.querySelector('.accordion-icon');
+      if (icon) {
+        icon.textContent = item.classList.contains('open') ? '−' : '+';
+      }
+    });
+  });
+
+  // 4. Scrollspy for Active Sidebar Links
+  window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    let current = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      if (window.pageYOffset >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>
