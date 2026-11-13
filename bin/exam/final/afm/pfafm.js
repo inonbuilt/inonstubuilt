@@ -9,6 +9,8 @@ let selectedMCQs = [];
 let selectedDescriptive = []; 
 
 const TEXT_CHUNK_LIMIT = 90;
+const SESSION_MCQ_KEY = "cn_afm_seen_mcqs";
+const SESSION_DESC_KEY = "cn_afm_seen_desc";
 
 // Official ICAI AFM Chapter Weightage Percentages
 const ICAI_WEIGHTS = {
@@ -33,6 +35,46 @@ const ICAI_WEIGHTS = {
     "Startup Finance": 8
 };
 
+// --- Session Storage Helpers ---
+function getSessionSeenSet(key) {
+    try {
+        const raw = sessionStorage.getItem(key);
+        return raw ? new Set(JSON.parse(raw)) : new Set();
+    } catch (e) {
+        return new Set();
+    }
+}
+
+function saveSessionSeenSet(key, setObj) {
+    try {
+        sessionStorage.setItem(key, JSON.stringify(Array.from(setObj)));
+    } catch (e) {
+        console.warn("SessionStorage unavailable:", e);
+    }
+}
+
+// Generates a normalized text fingerprint so identical questions across different MTPs aren't repeated
+function getItemSignature(item) {
+    if (!item) return "";
+    const raw = item.question_html || item.caseText || item.question || "";
+    const clean = String(raw).replace(/<[^>]+>/g, '').replace(/[^a-z0-9]/gi, '').toLowerCase();
+    return clean.slice(0, 140) || (item.question_id || item.case_id || "");
+}
+
+function isItemSeen(item, seenSet) {
+    const id = item.question_id || item.case_id;
+    const sig = getItemSignature(item);
+    return (id && seenSet.has(id)) || (sig && seenSet.has(sig));
+}
+
+function markItemSeen(item, seenSet) {
+    const id = item.question_id || item.case_id;
+    const sig = getItemSignature(item);
+    if (id) seenSet.add(id);
+    if (sig) seenSet.add(sig);
+}
+
+// --- Original Utility Helpers ---
 function shuffleArray(array) {
     let shuffled = [...array];
     for (let i = shuffled.length - 1; i > 0; i--) {
@@ -63,7 +105,6 @@ function readCssPx(styles, propertyName, fallbackValue) {
     return Number.isFinite(value) ? value : fallbackValue;
 }
 
-// Extracts Question slot 1 to 6 from question_id (e.g., _Q1A -> 1, _Q4B -> 4)
 function getMtpPlacement(q) {
     const match = q.question_id && q.question_id.match(/_Q([1-6])/i);
     if (match) {
@@ -110,10 +151,8 @@ function splitPlainTextForPagination(text) {
 
 function formatTableForDisplay(tableNode) {
     if (!tableNode || !tableNode.querySelectorAll) return;
-
     const allRows = Array.from(tableNode.querySelectorAll('tr'));
     if (allRows.length === 0) return;
-
     const isAmountContent = (text) => {
         const clean = text.replace(/<[^>]+>/g, '').trim();
         if (!clean || clean === '-' || clean === '–' || clean === '—' || /^nil$/i.test(clean) || /^none$/i.test(clean)) return true;
@@ -127,25 +166,17 @@ function formatTableForDisplay(tableNode) {
         }
         return numCount > 0 && (numCount / lines.length >= 0.6);
     };
-
     const amountPattern = /(\b(amount|rs|inr|usd|value|price|cost|rate|tax|total|dr|cr|lakh|crore|million|cfat|pv|bal)\b|[₹$€£%])/i;
     const particularsPattern = /\b(particulars?|descs?|details?|narrations?|nature|reasons?|transactions?)\b/i;
     const snoPattern = /\b(s\.?\s*no|sl\.?\s*no|sr\.?\s*no|item)\b/i;
-
     const colRoles = {};
     const firstRowCells = Array.from(allRows[0].children);
-
     firstRowCells.forEach((cell, cIdx) => {
         const cleanText = cell.textContent.trim();
-        if (particularsPattern.test(cleanText)) {
-            colRoles[cIdx] = 'particulars';
-        } else if (amountPattern.test(cleanText)) {
-            colRoles[cIdx] = 'amount';
-        } else if (snoPattern.test(cleanText)) {
-            colRoles[cIdx] = 'sno';
-        }
+        if (particularsPattern.test(cleanText)) { colRoles[cIdx] = 'particulars'; }
+        else if (amountPattern.test(cleanText)) { colRoles[cIdx] = 'amount'; }
+        else if (snoPattern.test(cleanText)) { colRoles[cIdx] = 'sno'; }
     });
-
     const dataCounts = {};
     allRows.slice(1).forEach(row => {
         const cells = Array.from(row.children);
@@ -155,46 +186,29 @@ function formatTableForDisplay(tableNode) {
             const text = cell.textContent.trim();
             if (text) {
                 dataCounts[cIdx].total++;
-                if (isAmountContent(text)) {
-                    dataCounts[cIdx].numeric++;
-                }
+                if (isAmountContent(text)) dataCounts[cIdx].numeric++;
             }
         });
     });
-
     Object.keys(dataCounts).forEach(cIdx => {
         if (!colRoles[cIdx]) {
             const counts = dataCounts[cIdx];
-            if (counts.total > 0 && (counts.numeric / counts.total >= 0.5)) {
-                colRoles[cIdx] = 'amount';
-            }
+            if (counts.total > 0 && (counts.numeric / counts.total >= 0.5)) colRoles[cIdx] = 'amount';
         }
     });
-
     if (firstRowCells.length === 2) {
-        if (!colRoles[0] && !colRoles[1]) {
-            colRoles[0] = 'particulars';
-            colRoles[1] = 'amount';
-        } else if (colRoles[0] === 'particulars' && !colRoles[1]) {
-            colRoles[1] = 'amount';
-        }
+        if (!colRoles[0] && !colRoles[1]) { colRoles[0] = 'particulars'; colRoles[1] = 'amount'; }
+        else if (colRoles[0] === 'particulars' && !colRoles[1]) { colRoles[1] = 'amount'; }
     }
-
     allRows.forEach(row => {
         const cells = Array.from(row.children);
         cells.forEach((cell, cIdx) => {
             if (cell.getAttribute('colspan') && parseInt(cell.getAttribute('colspan')) > 1) return;
             const role = colRoles[cIdx];
-            if (role === 'amount') {
-                cell.classList.add('col-amount');
-            } else if (role === 'particulars') {
-                cell.classList.add('col-particulars');
-            } else if (role === 'sno') {
-                cell.classList.add('col-sno');
-            }
-            if (isAmountContent(cell.textContent.trim()) && cell.textContent.trim().length > 0) {
-                cell.classList.add('cell-amount');
-            }
+            if (role === 'amount') cell.classList.add('col-amount');
+            else if (role === 'particulars') cell.classList.add('col-particulars');
+            else if (role === 'sno') cell.classList.add('col-sno');
+            if (isAmountContent(cell.textContent.trim()) && cell.textContent.trim().length > 0) cell.classList.add('cell-amount');
         });
     });
 }
@@ -202,13 +216,9 @@ function formatTableForDisplay(tableNode) {
 function splitTableIntoElements(tableNode) {
     formatTableForDisplay(tableNode);
     const allRows = Array.from(tableNode.querySelectorAll('tr'));
-    if (allRows.length <= 4) {
-        return [`<div class="table-wrapper">${tableNode.outerHTML}</div>`];
-    }
-
+    if (allRows.length <= 4) return [`<div class="table-wrapper">${tableNode.outerHTML}</div>`];
     let headerRows = [];
     let dataRows = [];
-
     const thead = tableNode.querySelector('thead');
     if (thead) {
         headerRows = Array.from(thead.querySelectorAll('tr'));
@@ -218,47 +228,24 @@ function splitTableIntoElements(tableNode) {
         let headerDone = false;
         for (let i = 0; i < allRows.length; i++) {
             const row = allRows[i];
-            const thCount = row.querySelectorAll('th').length;
-            if (thCount > 0 && !headerDone) {
-                headerRows.push(row);
-            } else {
-                headerDone = true;
-                dataRows.push(row);
-            }
+            if (row.querySelectorAll('th').length > 0 && !headerDone) { headerRows.push(row); } 
+            else { headerDone = true; dataRows.push(row); }
         }
-        if (headerRows.length === 0 && allRows.length > 0) {
-            headerRows.push(allRows[0]);
-            dataRows = allRows.slice(1);
-        }
+        if (headerRows.length === 0 && allRows.length > 0) { headerRows.push(allRows[0]); dataRows = allRows.slice(1); }
     }
-
-    if (dataRows.length <= 4) {
-        return [`<div class="table-wrapper">${tableNode.outerHTML}</div>`];
-    }
-
+    if (dataRows.length <= 4) return [`<div class="table-wrapper">${tableNode.outerHTML}</div>`];
     const headerHtml = headerRows.map(r => r.outerHTML).join('');
     const rowHtmls = dataRows.map(r => r.outerHTML);
-
     let attrs = '';
     if (tableNode.attributes) {
-        for (let i = 0; i < tableNode.attributes.length; i++) {
-            const a = tableNode.attributes[i];
-            attrs += ` ${a.name}="${a.value}"`;
-        }
+        for (let i = 0; i < tableNode.attributes.length; i++) attrs += ` ${tableNode.attributes[i].name}="${tableNode.attributes[i].value}"`;
     }
-
-    return [{
-        type: 'splittable-table',
-        attrs: attrs,
-        headerHtml: headerHtml,
-        rows: rowHtmls
-    }];
+    return [{ type: 'splittable-table', attrs: attrs, headerHtml: headerHtml, rows: rowHtmls }];
 }
 
 function splitListIntoElements(listNode) {
     const items = Array.from(listNode.children).filter(item => item.tagName === 'LI');
     if (items.length <= 2) return [listNode.outerHTML];
-
     return items.map((item, index) => {
         const list = listNode.cloneNode(false);
         list.style.margin = "4px 0";
@@ -273,13 +260,10 @@ function splitHtmlIntoElements(htmlString) {
     const temp = document.createElement('div');
     temp.innerHTML = htmlString;
     let elements = [];
-
     const blockTags = ['P', 'DIV', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'BLOCKQUOTE', 'PRE', 'HR', 'LI'];
-
     Array.from(temp.childNodes).forEach(node => {
         if (node.nodeType === 1) { 
             const isBlock = blockTags.includes(node.tagName);
-
             if (node.classList && node.classList.contains('no-split')) {
                 elements.push(node.outerHTML);
                 if (isBlock) elements.push(`<div style="display:block; height:10px; width:100%;"></div>`);
@@ -305,18 +289,13 @@ function splitHtmlIntoElements(htmlString) {
             } 
             else {
                 const innerText = node.innerHTML || '';
-                // Keep blocks containing display math or math blocks intact without splitting
                 if (innerText.includes('$$') || innerText.includes('\\[') || (node.classList && node.classList.contains('math-block'))) {
                     if (node.classList) node.classList.add('no-split');
                     elements.push(node.outerHTML);
                     if (isBlock) elements.push(`<div style="display:block; height:10px; width:100%;"></div>`);
                     return;
                 }
-
-                let safeHtml = node.innerHTML
-                    .replace(/<br\s*\/?>/gi, '<br>[SPLIT]')
-                    .replace(/(\.|\?|!)\s+/g, '$1[SPLIT]');
-
+                let safeHtml = node.innerHTML.replace(/<br\s*\/?>/gi, '<br>[SPLIT]').replace(/(\.|\?|!)\s+/g, '$1[SPLIT]');
                 let sentences = safeHtml.split('[SPLIT]');
                 sentences.forEach((sentence) => {
                     splitPlainTextForPagination(sentence).forEach(chunk => {
@@ -327,7 +306,6 @@ function splitHtmlIntoElements(htmlString) {
                         elements.push(clone.outerHTML);
                     });
                 });
-
                 if (isBlock) {
                     elements.push(`<div style="display:block; height:10px; width:100%;"></div>`);
                 }
@@ -341,7 +319,6 @@ function splitHtmlIntoElements(htmlString) {
     return elements;
 }
 
-// Chapter-weighted selection for ICAI questions
 function getQuestionWeight(q) {
     if (!q.chapter_name) return 10;
     const chapters = Array.isArray(q.chapter_name) ? q.chapter_name : [q.chapter_name];
@@ -367,30 +344,48 @@ function pickWeightedQuestion(candidates) {
     return candidates[candidates.length - 1];
 }
 
+function pickSessionMCQs(pool, count = 3) {
+    if (!Array.isArray(pool) || pool.length === 0) return [];
+    let seenMcqs = getSessionSeenSet(SESSION_MCQ_KEY);
+    let chosen = [];
+    let currentPaperSigs = new Set();
+    let unseenPool = shuffleArray(pool.filter(cs => !isItemSeen(cs, seenMcqs)));
+    for (const cs of unseenPool) {
+        if (chosen.length >= count) break;
+        const sig = getItemSignature(cs);
+        if (!currentPaperSigs.has(sig)) { chosen.push(cs); currentPaperSigs.add(sig); }
+    }
+    if (chosen.length < count) {
+        seenMcqs.clear();
+        chosen.forEach(cs => markItemSeen(cs, seenMcqs));
+        let fallbackPool = shuffleArray(pool);
+        for (const cs of fallbackPool) {
+            if (chosen.length >= count) break;
+            const sig = getItemSignature(cs);
+            if (!currentPaperSigs.has(sig)) { chosen.push(cs); currentPaperSigs.add(sig); }
+        }
+    }
+    chosen.forEach(cs => markItemSeen(cs, seenMcqs));
+    saveSessionSeenSet(SESSION_MCQ_KEY, seenMcqs);
+    return chosen;
+}
+
 // ==========================================
-// 2. DYNAMIC 40:60 EXAM PAPER GENERATOR (WITH PLACEMENT)
+// 2. DYNAMIC 40:60 EXAM PAPER GENERATOR (WITH PLACEMENT & REFRESH MEMORY)
 // ==========================================
 function generateRandomPaper() {
-    const TOTAL_DESCRIPTIVE_MARKS = 84; // 6 questions * 14 marks
-    const TARGET_MTP_MARKS = 34;        // ~40% of 84 marks
-    
-    // Sub-part mark configurations summing to 14
-    const MARK_PATTERNS = [
-        [8, 6],
-        [6, 8],
-        [10, 4],
-        [4, 10],
-        [6, 4, 4],
-        [4, 6, 4],
-        [4, 4, 6],
-        [8, 4, 2],
-        [6, 6, 2]
-    ];
+    const TOTAL_DESCRIPTIVE_MARKS = 84; 
+    const TARGET_MTP_MARKS = 34;        
+    const MARK_PATTERNS = [[8, 6], [6, 8], [10, 4], [4, 10], [6, 4, 4], [4, 6, 4], [4, 4, 6], [8, 4, 2], [6, 6, 2]];
+
+    let seenDesc = getSessionSeenSet(SESSION_DESC_KEY);
+    const mtpPool = descriptiveQuestions.map(q => ({ ...q, _source: 'MTP' }));
+    const icaiPool = icaibookData.map(q => ({ ...q, _source: 'ICAI' }));
 
     for (let attempt = 0; attempt < 500; attempt++) {
+        const strictUnseenOnly = attempt < 350;
         let usedIds = new Set();
-        let mtpPool = descriptiveQuestions.map(q => ({ ...q, _source: 'MTP' }));
-        let icaiPool = icaibookData.map(q => ({ ...q, _source: 'ICAI' }));
+        let usedSigs = new Set();
         
         let remainingMtpMarks = TARGET_MTP_MARKS;
         let remainingTotalMarks = TOTAL_DESCRIPTIVE_MARKS;
@@ -402,25 +397,19 @@ function generateRandomPaper() {
             let chosenParts = [];
 
             for (let mark of pattern) {
-                // Adaptive probability to achieve ~40:60 split across entire paper
                 let pMtp = Math.max(0, Math.min(1, remainingMtpMarks / remainingTotalMarks));
                 let preferMtp = Math.random() < pMtp;
 
-                // CRITICAL RULE: MTP question for slot qNum MUST have getMtpPlacement(q) === qNum
-                let mtpCandidates = mtpPool.filter(q => 
-                    getMtpPlacement(q) === qNum && 
-                    Number(q.marks) === mark && 
-                    !usedIds.has(q.question_id)
-                );
-                
-                // ICAI questions can be placed in any question according to chapter weightage
-                let icaiCandidates = icaiPool.filter(q => 
-                    Number(q.marks) === mark && 
-                    !usedIds.has(q.question_id)
-                );
+                let mtpAll = mtpPool.filter(q => getMtpPlacement(q) === qNum && Number(q.marks) === mark && !usedIds.has(q.question_id) && !usedSigs.has(getItemSignature(q)));
+                let icaiAll = icaiPool.filter(q => Number(q.marks) === mark && !usedIds.has(q.question_id) && !usedSigs.has(getItemSignature(q)));
+
+                let mtpUnseen = mtpAll.filter(q => !isItemSeen(q, seenDesc));
+                let icaiUnseen = icaiAll.filter(q => !isItemSeen(q, seenDesc));
+
+                let mtpCandidates = strictUnseenOnly ? mtpUnseen : (mtpUnseen.length > 0 ? mtpUnseen : mtpAll);
+                let icaiCandidates = strictUnseenOnly ? icaiUnseen : (icaiUnseen.length > 0 ? icaiUnseen : icaiAll);
 
                 let candidate = null;
-
                 if (preferMtp && mtpCandidates.length > 0) {
                     candidate = mtpCandidates[Math.floor(Math.random() * mtpCandidates.length)];
                 } else if (!preferMtp && icaiCandidates.length > 0) {
@@ -431,49 +420,50 @@ function generateRandomPaper() {
                     candidate = pickWeightedQuestion(icaiCandidates);
                 }
 
-                if (!candidate) {
-                    success = false;
-                    break;
-                }
+                if (!candidate) { success = false; break; }
 
                 usedIds.add(candidate.question_id);
-                if (candidate._source === 'MTP') {
-                    remainingMtpMarks -= mark;
-                }
+                usedSigs.add(getItemSignature(candidate));
+                if (candidate._source === 'MTP') { remainingMtpMarks -= mark; }
                 remainingTotalMarks -= mark;
                 chosenParts.push(candidate);
             }
 
             if (!success) break;
-            
-            // Randomize order of parts within Question qNum so (a), (b), (c) can be MTP or ICAI interchangeably
             questions.push({ placement: qNum, parts: shuffleArray(chosenParts) });
         }
 
-        // Accept when all 6 questions exist and MTP total marks is ~40% (between 30 and 38 marks)
         let actualMtpMarks = TARGET_MTP_MARKS - remainingMtpMarks;
         if (success && actualMtpMarks >= 30 && actualMtpMarks <= 38) {
+            if (!strictUnseenOnly) { seenDesc.clear(); }
+            questions.forEach(group => group.parts.forEach(part => markItemSeen(part, seenDesc)));
+            saveSessionSeenSet(SESSION_DESC_KEY, seenDesc);
             return questions;
         }
     }
 
-    // Fallback: If 500 attempts exceeded, produce balanced paper preserving strict placement
+    seenDesc.clear();
     let fallbackQuestions = [];
+    let fallbackUsedSigs = new Set();
     for (let qNum = 1; qNum <= 6; qNum++) {
-        let mtpAvailable = descriptiveQuestions.filter(q => getMtpPlacement(q) === qNum);
-        let icaiAvailable = icaibookData;
+        let mtpAvailable = descriptiveQuestions.filter(q => getMtpPlacement(q) === qNum && !fallbackUsedSigs.has(getItemSignature(q)));
         let parts = [];
-        
-        let mtpQ = mtpAvailable[Math.floor(Math.random() * mtpAvailable.length)];
-        parts.push(mtpQ);
-        
-        let remaining = 14 - (Number(mtpQ.marks) || 0);
-        let icaiMatches = icaiAvailable.filter(q => Number(q.marks) === remaining);
-        if (icaiMatches.length > 0) {
-            parts.push(pickWeightedQuestion(icaiMatches));
+        if (mtpAvailable.length > 0) {
+            let mtpQ = mtpAvailable[Math.floor(Math.random() * mtpAvailable.length)];
+            parts.push(mtpQ);
+            fallbackUsedSigs.add(getItemSignature(mtpQ));
+            let remaining = 14 - (Number(mtpQ.marks) || 0);
+            let icaiMatches = icaibookData.filter(q => Number(q.marks) === remaining && !fallbackUsedSigs.has(getItemSignature(q)));
+            if (icaiMatches.length > 0) {
+                let icaiQ = pickWeightedQuestion(icaiMatches);
+                parts.push(icaiQ);
+                fallbackUsedSigs.add(getItemSignature(icaiQ));
+            }
         }
         fallbackQuestions.push({ placement: qNum, parts: shuffleArray(parts) });
     }
+    fallbackQuestions.forEach(group => group.parts.forEach(part => markItemSeen(part, seenDesc)));
+    saveSessionSeenSet(SESSION_DESC_KEY, seenDesc);
     return fallbackQuestions;
 }
 
@@ -481,22 +471,15 @@ function generateRandomPaper() {
 // 3. INITIALIZATION & DATA RENDERING
 // ==========================================
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Pick 3 random case studies for MCQs (30 Marks)
     if (typeof mcqData !== 'undefined') {
-        selectedMCQs = shuffleArray(mcqData).slice(0, 3);
+        selectedMCQs = pickSessionMCQs(mcqData, 3);
     }
-
-    // 2. Generate random 40:60 mixed descriptive paper (70/84 Marks) with placement
     if (typeof descriptiveQuestions !== 'undefined' && typeof icaibookData !== 'undefined') {
         selectedDescriptive = generateRandomPaper();
     }
-
     generateExamData(); 
     renderBookPages();  
-    
-    window.addEventListener('resize', debounce(() => {
-        renderBookPages();
-    }, 300));
+    window.addEventListener('resize', debounce(() => { renderBookPages(); }, 300));
 });
 
 function generateExamData() {
@@ -515,28 +498,22 @@ function generateExamData() {
         </ul>
     `);
 
-    // --- MCQ GENERATION ---
     if (selectedMCQs.length > 0) {
         selectedMCQs.forEach((block, bIdx) => {
             rawExamElements.push(`<h3 class="no-split" style="color:#2563eb; border-bottom:1px solid #ccc; padding-bottom:5px; margin-top:15px; display:block;">Case Study ${bIdx + 1}</h3>`);
             rawExamElements = rawExamElements.concat(splitHtmlIntoElements(sanitizeInsertedMathHtml(block.caseText)));
-
             block.questions.forEach((q, qIdx) => {
                 rawExamElements.push(`<div class="mcq-item no-split" data-qid="${q.question_id}" style="height:14px; display:block;"></div>`);
-                
                 splitPlainTextForPagination(sanitizeInsertedMathHtml(q.question)).forEach((chunk, chunkIdx) => {
                     const label = chunkIdx === 0 ? `<strong>Q${qIdx+1}:</strong> ` : "";
                     rawExamElements.push(`<span class="mcq-question-text" data-qid="${q.question_id}" style="display:inline; line-height:1.5; font-size:calc(15px * var(--font-scale));">${label}${chunk} </span>`);
                 });
-
                 rawExamElements.push(`<div style="display:block; height:8px; width:100%;"></div>`);
-
                 q.options.forEach((opt, i) => {
                     const isCorrect = examCompleted && (i === q.answer) ? "correct-ans" : "";
                     const optionHtml = `<div class="mcq-option no-split ${isCorrect}" data-qid="${q.question_id}" onclick="selectOption(this)" id="q-${bIdx}-${qIdx}-${i}">${sanitizeInsertedMathHtml(opt)}</div>`;
                     rawExamElements.push(optionHtml);
                 });
-
                 if (examCompleted) {
                     rawExamElements.push(`<div class="solution-box no-split" style="margin-bottom:15px; display:block;">Correct Answer: ${sanitizeInsertedMathHtml(q.options[q.answer])}</div>`);
                 }
@@ -544,14 +521,11 @@ function generateExamData() {
         });
     }
 
-    // --- DESCRIPTIVE GENERATION ---
     if (selectedDescriptive.length > 0) {
         selectedDescriptive.forEach(group => {
             rawExamElements.push(`<h3 class="no-split" style="color:#2563eb; border-bottom:1px solid #ccc; padding-bottom:5px; margin-top:25px; display:block;">Question ${group.placement}</h3>`);
-            
             group.parts.forEach((part, index) => {
                 const label = group.parts.length > 1 ? `<strong>(${String.fromCharCode(97 + index)})</strong> ` : "";
-
                 if (!examCompleted) {
                     const marksBadge = `<div class="no-split" style="background-color: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; padding: 4px 8px; border-radius: 4px; font-weight: bold; font-size: 13px; display: inline-block; margin-bottom: 8px;">[ ${part.marks} Marks ]</div>`;
                     const wrappedHtml = `${marksBadge}<br>${label}${part.question_html}`;
@@ -565,9 +539,7 @@ function generateExamData() {
         });
     }
 
-    rawExamElements.push(`
-        <div class="header-center no-split" style="margin-top: 30%; color: #999; display:block;">[End of Booklet]</div>
-    `);
+    rawExamElements.push(`<div class="header-center no-split" style="margin-top: 30%; color: #999; display:block;">[End of Booklet]</div>`);
 
     if (!examCompleted) {
         rawExamElements.push(`<button id="finish-btn" class="finish-exam-btn no-split" style="display:block;" onclick="revealAnswers()">Finish & Show Solutions</button>`);

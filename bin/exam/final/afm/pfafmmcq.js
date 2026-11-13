@@ -2468,5 +2468,336 @@ const mcqData = [
       answer: 1
     }
   ]
+},
+// jan 26 series I
+{
+  case_id: "afm_nov25_I_cs1",
+  case_chapter: ["Derivatives Analysis and Valuation", "Advanced Capital Budgeting Decisions"],
+  caseText: `
+    <p>X and Y are two friends. Since Y has earned a lot of profit from trading in financial derivative market, X is also considering speculating on Gamma Corporation’s shares which is currently trading at ₹ 700 per share through taking positions in options in stocks of same company. Accordingly, X took following contract positions in the options on Gama Corporation’s stock:</p>
+    <ol type="i">
+      <li>Purchasing one contract of 2-month call option with a premium of ₹ 35 and an exercise price of ₹ 750.</li>
+      <li>Purchasing one contract of 2-month put option with a premium of ₹ 25 and an exercise price of ₹ 600.</li>
+    </ol>
+    <p>After some time, trading in Option Market and understanding the nitty-gritties of same, X being CEO in an organization advised his team to implement the concept of Financial Options in the Capital Budgeting decisions called ‘Real Option’.</p>
+    <p><strong>Based on the above information answer the following questions:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "afm_nov25_I_cs1_1",
+      chapter_name: ["Derivatives Analysis and Valuation"],
+      question: "Assuming that the contract size of each option contract is 100 and the price of Gama Corporation’s share after two months falls to ₹ 550, the net pay-off of X will be………",
+      options: [
+        "₹ 1,000 loss",
+        "₹ 1,000 profit",
+        "₹ 3,000 profit",
+        "₹ 3,000 loss"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "afm_nov25_I_cs1_2",
+      chapter_name: ["Derivatives Analysis and Valuation"],
+      question: "The per share price of Gama Corporation’s stock after 2 months at which X shall be at Break Even is……….",
+      options: [
+        "₹ 540",
+        "₹ 600",
+        "₹ 625",
+        "₹ 785"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "afm_nov25_I_cs1_3",
+      chapter_name: ["Advanced Capital Budgeting Decisions"],
+      question: "Which of the following statement is false regarding Real Options?",
+      options: [
+        "Real Options methodology is an approach to capital budgeting that relies on Option Pricing theory to evaluate projects.",
+        "Real options approach is intended to supplement, and not replace, capital budgeting analyses based on standard Discounted Cash Flow (DCF) methodologies.",
+        "Real options are different from financial options as their periods start from the end of 1st year and are higher than financial options.",
+        "Real options are normally traded in the market and are priced."
+      ],
+      answer: 3
+    }
+  ]
+},
+{
+  case_id: "afm_nov25_I_cs2",
+  case_chapter: ["Mergers, Acquisitions and Corporate Restructuring"],
+  caseText: `
+    <p>P Ltd. is studying the possible acquisition of Q Ltd. by way of merger. The following data are available:</p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; text-align: center; margin-bottom: 12px; width: 100%;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th style="text-align: left;">Firm</th>
+          <th style="text-align: right;">After-tax earnings (₹)</th>
+          <th style="text-align: right;">No. of equity shares</th>
+          <th style="text-align: right;">Market price per share (₹)</th>
+          <th style="text-align: right;">Book Value Per share (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: left;">P Ltd.</td>
+          <td style="text-align: right;">10,00,000</td>
+          <td style="text-align: right;">2,00,000</td>
+          <td style="text-align: right;">75</td>
+          <td style="text-align: right;">210</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Q Ltd.</td>
+          <td style="text-align: right;">3,00,000</td>
+          <td style="text-align: right;">50,00,0</td>
+          <td style="text-align: right;">60</td>
+          <td style="text-align: right;">105</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The merger shall be gone through by exchange of equity shares and the exchange ratio is set according to different weights assigned to different basis as mentioned below:</p>
+    <ul>
+      <li>EPS: 50%</li>
+      <li>Market Price: 25%</li>
+      <li>Book Value: 25%</li>
+    </ul>
+    <p><strong>From the information given above, choose the correct answer to the following questions:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "afm_nov25_I_cs2_4",
+      chapter_name: ["Mergers, Acquisitions and Corporate Restructuring"],
+      question: "The swap ratio based on given weights shall be........................................",
+      options: [
+        "0.825",
+        "0.925",
+        "0.952",
+        "0.752"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_nov25_I_cs2_5",
+      chapter_name: ["Mergers, Acquisitions and Corporate Restructuring"],
+      question: "Based on swap ratio as per assigned weights the total number of shares issued by P Ltd to Q Ltd. shall be............",
+      options: [
+        "46250",
+        "41250",
+        "47600",
+        "37600"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "afm_nov25_I_cs2_6",
+      chapter_name: ["Mergers, Acquisitions and Corporate Restructuring"],
+      question: "Post merger the EPS of the P Ltd. shall be.................",
+      options: [
+        "5.39",
+        "5.25",
+        "5.28",
+        "5.47"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "afm_nov25_I_cs2_7",
+      chapter_name: ["Mergers, Acquisitions and Corporate Restructuring"],
+      question: "In case Q Ltd. wants to be sure that its EPS is not diminished by the merger, the relevant exchange ratio to achieve the same objective should be....................",
+      options: [
+        "0.83",
+        "1.20",
+        "1.30",
+        "1.10"
+      ],
+      answer: 1
+    }
+  ]
+},
+{
+  case_id: "afm_nov25_I_cs3",
+  case_chapter: ["Security Valuation", "Interest Rate Risk Management"],
+  caseText: `
+    <p>The following information is available in respect of Bond A and Bond B:</p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; text-align: center; margin-bottom: 12px; width: 80%;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th style="text-align: left;">Particulars</th>
+          <th>Bond A</th>
+          <th>Bond B</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: left;">Face value, redeemable at par</td>
+          <td>₹ 1,000</td>
+          <td>₹ 1,000</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Coupon rate, payable annually (%)</td>
+          <td>6%</td>
+          <td>10%</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Time to maturity (years)</td>
+          <td>5</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>An investor has a portfolio consisting of 75% of Bond A and 25% of Bond B. The current YTM prevailing in the market is 10%.</p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; text-align: center; margin-bottom: 12px; width: 85%;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th>Year (n)</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>PVIF (10%, n)</b></td>
+          <td>0.9091</td>
+          <td>0.8264</td>
+          <td>0.7513</td>
+          <td>0.6830</td>
+          <td>0.6209</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><strong>From the information given above, choose the correct answer to the following questions:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "afm_nov25_I_cs3_8",
+      chapter_name: ["Security Valuation"],
+      question: "The price and duration of Bond B shall be approximately .................... respectively.",
+      options: [
+        "₹ 826.43 and 2.49",
+        "₹ 1,000 and 2.74",
+        "₹ 924.85 and 2.74",
+        "₹ 1,000 and 2.49"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_nov25_I_cs3_9",
+      chapter_name: ["Security Valuation"],
+      question: "The price and duration of Bond A shall be approximately .................... respectively.",
+      options: [
+        "₹ 848.34 and 4.41",
+        "₹ 811.09 and 4.38",
+        "₹ 1,227.44 and 4.41",
+        "₹ 658.15 and 3.90"
+      ],
+      answer: 0
+    },
+    {
+      question_id: "afm_nov25_I_cs3_10",
+      chapter_name: ["Security Valuation", "Interest Rate Risk Management"],
+      question: "The price sensitivity of the portfolio approximately is……………………..",
+      options: [
+        "-4.03",
+        "-2.49",
+        "-3.63",
+        "-3.98"
+      ],
+      answer: 2
+    }
+  ]
+},
+{
+  case_id: "afm_nov25_I_cs4",
+  case_chapter: ["Advanced Capital Budgeting Decisions"],
+  caseText: `
+    <p>XYZ Ltd. is a mid-sized manufacturing company that produces industrial equipment. The company is considering a new investment project—a state-of-the-art automated production line, which is expected to improve production efficiency. The details of the same project are as follows:</p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; margin-bottom: 12px; width: 60%;">
+      <tbody>
+        <tr>
+          <td style="text-align: left;">Initial Cost of the project</td>
+          <td style="text-align: right;">₹ 10,00,000</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Sales price/unit</td>
+          <td style="text-align: right;">₹ 60</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Cost/unit</td>
+          <td style="text-align: right;">₹ 40</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><b>Sales volumes:</b></p>
+    <ul>
+      <li>Year 1: 20,000 units</li>
+      <li>Year 2: 30,000 units</li>
+      <li>Year 3: 30,000 units</li>
+    </ul>
+    <p>The applicable discount rate is 10% p.a.</p>
+    <p><strong>From the information given above, choose the correct answer to the following questions:</strong></p>
+  `,
+  questions: [
+    {
+      question_id: "afm_nov25_I_cs4_11",
+      chapter_name: ["Advanced Capital Budgeting Decisions"],
+      question: "Sensitivity analysis helps to identify…………………..",
+      options: [
+        "the exact profitability of the project",
+        "the break-even point.",
+        "the degree to which a change in each variable affects the NPV.",
+        "the amount of investment required"
+      ],
+      answer: 2
+    },
+    {
+      question_id: "afm_nov25_I_cs4_12",
+      chapter_name: ["Advanced Capital Budgeting Decisions"],
+      question: "The sale price per unit so that the project would break even with zero NPV shall be approximately………….",
+      options: [
+        "₹ 40.00",
+        "₹ 55.26",
+        "₹ 60.00.",
+        "₹ 44.74"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_nov25_I_cs4_13",
+      chapter_name: ["Advanced Capital Budgeting Decisions"],
+      question: "The cost per unit so that the project would break even with zero NPV shall be approximately…………..",
+      options: [
+        "₹ 40.00",
+        "₹ 55.26",
+        "₹ 60.00.",
+        "₹ 44.74"
+      ],
+      answer: 3
+    },
+    {
+      question_id: "afm_nov25_I_cs4_14",
+      chapter_name: ["Advanced Capital Budgeting Decisions"],
+      question: "Overall .................... in the sale volume will lead to the project to break even with zero NPV.",
+      options: [
+        "increase of 23.68%",
+        "fall of 23.68%",
+        "Increase of 31.03%",
+        "fall of 31.03%"
+      ],
+      answer: 1
+    },
+    {
+      question_id: "afm_nov25_I_cs4_15",
+      chapter_name: ["Advanced Capital Budgeting Decisions"],
+      question: "A/an .................... in the initial outlay will lead to the project to break even with zero NPV.",
+      options: [
+        "increase of 23.68%",
+        "fall of 23.68%",
+        "Increase of 31.03%",
+        "fall of 31.03%"
+      ],
+      answer: 2
+    }
+  ]
 }
 ];

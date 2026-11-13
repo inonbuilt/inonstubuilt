@@ -12218,6 +12218,1334 @@ const descriptiveQuestions = [
     <p>id = <b>1.232% for 3 months</b>, or <b>4.93% on an annualised basis</b>.</p>
     <p><i>Source note: The source's dollar-borrowing calculation uses a 3-month rate of 1.5% and a 6-month rate of 2.75%; these are the half-year/quarter-year rates used in the suggested solution.</i></p>
   `
+},
+// jan 2026 series I
+{
+  question_id: "AFM_MTPNOV25_I_Q1A",
+  source: "ICAI AFM Mock Test Paper – Series I, November 2025",
+  chapter_name: "Foreign Exchange Risk Management",
+  placement: 1,
+  marks: 6,
+  question_html: `
+    <p>True Life Inc., a US based company, has won a contract to implement a project in India. The project will require an initial investment of ₹ 8,000 million. The whole project along with the equipment will be sold to the Indian Government for ₹ 9,600 million in one-year time. Since the Indian Government will pay for the amount in Indian Rupee (₹), the company is worried about exposure due to exchange rate volatility.</p>
+    <ol type="i">
+      <li>Construct a swap that will help True Life Inc. to reduce the exchange rate risk.</li>
+      <li>Assume that the Indian Government offers a swap at spot rate which is ₹/USD 80 in one year. The spot rate after one year is expected to be ₹/USD 84. Further, you may also assume that True Life Inc. can also take a USD loan at 6% per annum.</li>
+    </ol>
+    <p>Advise whether the company should opt for this option or just do nothing.</p>
+  `,
+  solution_html: `
+    <p><b>(i) Swap arrangement to reduce exchange rate risk:</b></p>
+    <p>The following swap arrangement can be entered into by True Life Inc.:</p>
+    <ol>
+      <li>Swap a US$ loan today at an agreed rate with any party to obtain Indian Rupees (₹) to make the initial investment.</li>
+      <li>After one year, swap back the Indian Rupees with US$ at the agreed rate. In such a case, the company is exposed only to the profit earned from the project.</li>
+    </ol>
+
+    <p><b>(ii) Evaluation of alternatives:</b></p>
+    
+    <p><b>Alternative 1: With the Swap</b></p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 12px;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th style="text-align: left;">Particulars</th>
+          <th style="text-align: right;">Year 0 (Million US$)</th>
+          <th style="text-align: right;">Year 1 (Million US$)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Buy ₹ 8,000 million at spot rate of 1 US$ = ₹ 80</td>
+          <td style="text-align: right;">(100.00)</td>
+          <td style="text-align: right;">—</td>
+        </tr>
+        <tr>
+          <td>Swap ₹ 8,000 million back at agreed rate of ₹ 80</td>
+          <td style="text-align: right;">—</td>
+          <td style="text-align: right;">100.00</td>
+        </tr>
+        <tr>
+          <td>Sell profit of ₹ 1,600 million at 1 US$ = ₹ 84 (₹ 1,600 / 84)</td>
+          <td style="text-align: right;">—</td>
+          <td style="text-align: right;">19.05</td>
+        </tr>
+        <tr>
+          <td>Interest on US$ loan @ 6% for one year ($100 million × 6%)</td>
+          <td style="text-align: right;">—</td>
+          <td style="text-align: right;">(6.00)</td>
+        </tr>
+        <tr style="font-weight: bold; background-color: #fafafa;">
+          <td>Net Cash Flow</td>
+          <td style="text-align: right;">(100.00)</td>
+          <td style="text-align: right;">113.05</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Net result under swap: <b>Net receipt of US$ 13.05 million</b> ($113.05M − $100.00M).</p>
+
+    <p><b>Alternative 2: Without the Swap (Do Nothing)</b></p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 12px;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th style="text-align: left;">Particulars</th>
+          <th style="text-align: right;">Year 0 (Million US$)</th>
+          <th style="text-align: right;">Year 1 (Million US$)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Buy ₹ 8,000 million at spot rate of 1 US$ = ₹ 80</td>
+          <td style="text-align: right;">(100.00)</td>
+          <td style="text-align: right;">—</td>
+        </tr>
+        <tr>
+          <td>Sell entire ₹ 9,600 million at 1 US$ = ₹ 84 (₹ 9,600 / 84)</td>
+          <td style="text-align: right;">—</td>
+          <td style="text-align: right;">114.29</td>
+        </tr>
+        <tr>
+          <td>Interest on US$ loan @ 6% for one year ($100 million × 6%)</td>
+          <td style="text-align: right;">—</td>
+          <td style="text-align: right;">(6.00)</td>
+        </tr>
+        <tr style="font-weight: bold; background-color: #fafafa;">
+          <td>Net Cash Flow</td>
+          <td style="text-align: right;">(100.00)</td>
+          <td style="text-align: right;">108.29</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Net result without swap: <b>Net receipt of US$ 8.29 million</b> ($108.29M − $100.00M).</p>
+
+    <p><b>Decision:</b></p>
+    <p>Since the net receipt is higher under the swap option (<b>US$ 13.05 million</b> vs. <b>US$ 8.29 million</b>), True Life Inc. should <b>opt for the swap option</b>.</p>
+  `
+},
+{
+  question_id: "AFM_MTPNOV25_I_Q1B",
+  source: "ICAI AFM Mock Test Paper – Series I, November 2025",
+  chapter_name: "Security Valuation",
+  placement: 1,
+  marks: 4,
+  question_html: `
+    <p>XY Ltd. paid a dividend of ₹ 3 for the current year. The dividend is expected to grow at 30% for the next 5 years and at 15% per annum thereafter. The return on 182 days T-bills is 12% per annum and the market return is expected to be around 16% with a variance of 24%.</p>
+    <p>The co-variance of XY's return with that of the market return is 30%. You are required to:</p>
+    <ol type="i">
+      <li>Calculate the Required Rate of Return.</li>
+      <li>Calculate the Intrinsic Value of the Stock.</li>
+    </ol>
+    <p>The PVF at 17% is given below:</p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; text-align: center; margin-bottom: 12px;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th>Year</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>PVF (17%)</b></td>
+          <td>0.855</td>
+          <td>0.731</td>
+          <td>0.624</td>
+          <td>0.534</td>
+          <td>0.456</td>
+        </tr>
+      </tbody>
+    </table>
+  `,
+  solution_html: `
+    <p><b>(i) Calculation of Required Rate of Return:</b></p>
+    <p>$$\\beta = \\frac{\\text{Covariance of Market Return and Security Return}}{\\text{Variance of Market Return}} = \\frac{30\\%}{24\\%} = 1.25$$</p>
+    <p>$$\\text{Required Rate of Return } (R_e) = R_f + \\beta (R_m - R_f)$$</p>
+    <p>$$R_e = 12\\% + 1.25 \\times (16\\% - 12\\%) = 12\\% + 5.00\\% = \\mathbf{17.00\\%}$$</p>
+
+    <p><b>(ii) Calculation of Intrinsic Value of the Stock:</b></p>
+    <p><b>Present Value of Dividends during the High Growth Period (Years 1 to 5 at g = 30%):</b></p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 12px;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th style="text-align: center;">Year</th>
+          <th style="text-align: right;">Dividend (₹)</th>
+          <th style="text-align: center;">PVF (17%, n)</th>
+          <th style="text-align: right;">Present Value (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center;">1</td>
+          <td style="text-align: right;">3.00 × 1.30 = 3.90</td>
+          <td style="text-align: center;">0.855</td>
+          <td style="text-align: right;">3.33</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">2</td>
+          <td style="text-align: right;">3.90 × 1.30 = 5.07</td>
+          <td style="text-align: center;">0.731</td>
+          <td style="text-align: right;">3.71</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">3</td>
+          <td style="text-align: right;">5.07 × 1.30 = 6.59</td>
+          <td style="text-align: center;">0.624</td>
+          <td style="text-align: right;">4.11</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">4</td>
+          <td style="text-align: right;">6.59 × 1.30 = 8.57</td>
+          <td style="text-align: center;">0.534</td>
+          <td style="text-align: right;">4.58</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">5</td>
+          <td style="text-align: right;">8.57 × 1.30 = 11.14</td>
+          <td style="text-align: center;">0.456</td>
+          <td style="text-align: right;">5.08</td>
+        </tr>
+        <tr style="font-weight: bold; background-color: #fafafa;">
+          <td colspan="3" style="text-align: left;">Total PV of Dividends (Years 1–5)</td>
+          <td style="text-align: right;">20.81</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><b>Terminal Value at the end of Year 5:</b></p>
+    <p>$$P_5 = \\frac{D_6}{K_e - g_n} = \\frac{D_5 \\times (1 + g_n)}{K_e - g_n} = \\frac{11.14 \\times (1 + 0.15)}{0.17 - 0.15} = \\frac{12.811}{0.02} = ₹\\,640.55$$</p>
+    <p>$$\\text{PV of Terminal Value} = P_5 \\times \\text{PVF}(17\\%, 5) = 640.55 \\times 0.456 = \\mathbf{₹\\,292.09}$$</p>
+
+    <p><b>Total Intrinsic Value:</b></p>
+    <p>$$\\text{Intrinsic Value} = \\text{PV of Dividends} + \\text{PV of Terminal Value} = ₹\\,20.81 + ₹\\,292.09 = \\mathbf{₹\\,312.90}$$</p>
+  `
+},
+{
+  question_id: "AFM_MTPNOV25_I_Q1C",
+  source: "ICAI AFM Mock Test Paper – Series I, November 2025",
+  chapter_name: "Financial Policy and Corporate Strategy",
+  placement: 1,
+  marks: 4,
+  question_html: `
+    <p>Explain the various steps involved in the Business Succession Strategy.</p>
+  `,
+  solution_html: `
+    <p>The following steps are involved in a <b>Business Succession Strategy</b>:</p>
+    <p><b>Step 1 – Evaluate key leadership positions:</b> To evaluate which roles are critical, a risk or impact assessment can be performed. Generally, these are positions that would bring transformation to the entire business or create strategic direction for the organization.</p>
+    <p><b>Step 2 – Map competencies required for above positions:</b> In this step, one needs to identify the qualifications, behavioral competencies, and technical competencies required to perform the role successfully.</p>
+    <p><b>Step 3 – Identify competencies of current workforce:</b> Identifying what possible internal options can deliver results as expected in Step 2, and evaluating if there is a need for training and development of certain required skills. The organization should also evaluate whether there is a need to search outside the organization.</p>
+    <p><b>Step 4 – Bridge Leader:</b> In a family-owned business, the appointment of an outsider as a 'bridge leader' can help develop the business and prepare young family members for leadership roles.</p>
+  `
+},
+{
+  question_id: "AFM_MTPNOV25_I_Q2A",
+  source: "ICAI AFM Mock Test Paper – Series I, November 2025",
+  chapter_name: "Security Analysis",
+  placement: 2,
+  marks: 6,
+  question_html: `
+    <p>The closing values of NSE Nifty from 2<sup>nd</sup> January, 2024 to 12<sup>th</sup> January, 2024 were as follows:</p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; text-align: center; margin-bottom: 12px; width: 80%;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th>Days</th>
+          <th>Date</th>
+          <th>Day</th>
+          <th style="text-align: right;">Nifty</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>2</td><td>TUE</td><td style="text-align: right;">21,742</td></tr>
+        <tr><td>2</td><td>3</td><td>WED</td><td style="text-align: right;">21,665</td></tr>
+        <tr><td>3</td><td>4</td><td>THU</td><td style="text-align: right;">21,517</td></tr>
+        <tr><td>4</td><td>5</td><td>FRI</td><td style="text-align: right;">21,462</td></tr>
+        <tr><td>5</td><td>6</td><td>SAT</td><td style="text-align: right;">No Trading</td></tr>
+        <tr><td>6</td><td>7</td><td>SUN</td><td style="text-align: right;">No Trading</td></tr>
+        <tr><td>7</td><td>8</td><td>MON</td><td style="text-align: right;">21,238</td></tr>
+        <tr><td>8</td><td>9</td><td>TUE</td><td style="text-align: right;">21,182</td></tr>
+        <tr><td>9</td><td>10</td><td>WED</td><td style="text-align: right;">20,997</td></tr>
+        <tr><td>10</td><td>11</td><td>THU</td><td style="text-align: right;">20,926</td></tr>
+        <tr><td>11</td><td>12</td><td>FRI</td><td style="text-align: right;">20,901</td></tr>
+      </tbody>
+    </table>
+    <p>You are required to:</p>
+    <ol type="i">
+      <li>Calculate Exponential Moving Average (EMA) of Nifty during the above period. The previous day exponential moving average of Nifty can be assumed as 21,500. The value of exponent for 31 days EMA is 0.062.</li>
+      <li>Give brief analysis on the basis of your calculations.</li>
+    </ol>
+    <p><i>Note: Round off calculations up to two decimal points.</i></p>
+  `,
+  solution_html: `
+    <p><b>(i) Calculation of Exponential Moving Average (EMA) of Nifty:</b></p>
+    <p>$$\\text{EMA} = \\text{Previous Day EMA} + [\\text{Exponent} \\times (\\text{Current Nifty} - \\text{Previous Day EMA})]$$</p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 12px; text-align: right;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th style="text-align: center;">Date</th>
+          <th style="text-align: right;">(1)<br>Current Nifty</th>
+          <th style="text-align: right;">(2)<br>Previous Day EMA</th>
+          <th style="text-align: right;">(3)<br>(1) − (2)</th>
+          <th style="text-align: right;">(4)<br>(3) × 0.062</th>
+          <th style="text-align: right;">(5)<br>Current EMA [(2) + (4)]</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center;">2</td>
+          <td>21,742.00</td>
+          <td>21,500.00</td>
+          <td>242.00</td>
+          <td>15.00</td>
+          <td><b>21,515.00</b></td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">3</td>
+          <td>21,665.00</td>
+          <td>21,515.00</td>
+          <td>150.00</td>
+          <td>9.30</td>
+          <td><b>21,524.30</b></td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">4</td>
+          <td>21,517.00</td>
+          <td>21,524.30</td>
+          <td>-7.30</td>
+          <td>-0.45</td>
+          <td><b>21,523.85</b></td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">5</td>
+          <td>21,462.00</td>
+          <td>21,523.85</td>
+          <td>-61.85</td>
+          <td>-3.83</td>
+          <td><b>21,520.02</b></td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">8</td>
+          <td>21,238.00</td>
+          <td>21,520.02</td>
+          <td>-282.02</td>
+          <td>-17.49</td>
+          <td><b>21,502.53</b></td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">9</td>
+          <td>21,182.00</td>
+          <td>21,502.53</td>
+          <td>-320.53</td>
+          <td>-19.87</td>
+          <td><b>21,482.66</b></td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">10</td>
+          <td>20,997.00</td>
+          <td>21,482.66</td>
+          <td>-485.66</td>
+          <td>-30.11</td>
+          <td><b>21,452.55</b></td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">11</td>
+          <td>20,926.00</td>
+          <td>21,452.55</td>
+          <td>-526.55</td>
+          <td>-32.65</td>
+          <td><b>21,419.90</b></td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">12</td>
+          <td>20,901.00</td>
+          <td>21,419.90</td>
+          <td>-518.90</td>
+          <td>-32.17</td>
+          <td><b>21,387.73</b></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><b>(ii) Analysis / Conclusion:</b></p>
+    <p>The market is <b>bearish</b>. The current market price (Nifty) is consistently trading below its Exponential Moving Average (EMA) and the EMA itself is sloping downward. The market is likely to remain bearish for the short term to medium term if other factors remain the same. On the basis of this indicator (EMA), investors/traders can consider taking <b>short positions</b>.</p>
+  `
+},
+{
+  question_id: "AFM_MTPNOV25_I_Q2B",
+  source: "ICAI AFM Mock Test Paper – Series I, November 2025",
+  chapter_name: "Advanced Capital Budgeting Decisions",
+  placement: 2,
+  marks: 4,
+  question_html: `
+    <p>A firm is considering a proposal to set up a cement manufacturing plant with an initial investment of ₹ 150 crore. The firm has the option to abandon the project after one year by selling it to a competitor for ₹ 100 crore if the market conditions are unfavorable and the demand is low, the project's value will decline by 60%. However, if the market conditions turn out to be favorable and the demand for cement is high, the value of the project at the end of year 1 will increase by 50%.</p>
+    <p>Given that the risk free rate of interest as 8%, what will be the value of the abandonment option?</p>
+  `,
+  solution_html: `
+    <p><b>1. Project Values and Option Payoffs at Year 1:</b></p>
+    <ul>
+      <li><b>Initial Value ($V_0$):</b> ₹ 150 crore</li>
+      <li><b>Favorable Demand (High):</b> Value increases by 50% $\\rightarrow ₹ 150 \\times (1 + 0.50) = \\mathbf{₹ 225\\text{ crore}}$</li>
+      <li><b>Unfavorable Demand (Low):</b> Value declines by 60% $\\rightarrow ₹ 150 \\times (1 - 0.60) = \\mathbf{₹ 60\\text{ crore}}$</li>
+      <li><b>Abandonment Value (Exercise Price):</b> ₹ 100 crore</li>
+    </ul>
+
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 12px; text-align: center;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th style="text-align: left;">Scenario</th>
+          <th style="text-align: right;">Value without Abandonment</th>
+          <th style="text-align: right;">Abandonment Value</th>
+          <th style="text-align: right;">Option Decision</th>
+          <th style="text-align: right;">Payoff from Abandonment Option</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: left;">High Demand</td>
+          <td style="text-align: right;">₹ 225 crore</td>
+          <td style="text-align: right;">₹ 100 crore</td>
+          <td style="text-align: right;">Do Not Abandon</td>
+          <td style="text-align: right;"><b>₹ 0</b></td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Low Demand</td>
+          <td style="text-align: right;">₹ 60 crore</td>
+          <td style="text-align: right;">₹ 100 crore</td>
+          <td style="text-align: right;">Abandon</td>
+          <td style="text-align: right;">₹ 100 − ₹ 60 = <b>₹ 40 crore</b></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><b>2. Calculation of Risk-Neutral Probability of High Demand ($p$):</b></p>
+    <p>$$R_f = p \\times u + (1 - p) \\times d$$</p>
+    <p>$$8\\% = p \\times 50\\% + (1 - p) \\times (-60\\%)$$</p>
+    <p>$$0.08 = 0.50p - 0.60 + 0.60p$$</p>
+    <p>$$1.10p = 0.68 \\implies p = \\frac{0.68}{1.10} = \\mathbf{0.618} \\text{ (or } 0.62\\text{)}$$</p>
+    <p>$$\\text{Probability of Low Demand } (1 - p) = 1 - 0.618 = \\mathbf{0.382}$$</p>
+
+    <p><b>3. Value of Abandonment Option:</b></p>
+    <p>$$\\text{Expected Payoff at Year 1} = [p \\times 0] + [(1 - p) \\times 40]$$</p>
+    <p>$$\\text{Expected Payoff at Year 1} = (0.618 \\times 0) + (0.382 \\times 40) = \\mathbf{₹ 15.28\\text{ crore}}$$</p>
+    <p>$$\\text{Present Value of Abandonment Option} = \\frac{\\text{Expected Payoff}}{(1 + R_f)} = \\frac{15.28}{1.08} = \\mathbf{₹ 14.15\\text{ crore}}$$</p>
+    <p>Thus, the value of the abandonment option is <b>₹ 14.15 crore</b>.</p>
+  `
+},
+{
+  question_id: "AFM_MTPNOV25_I_Q2C",
+  source: "ICAI AFM Mock Test Paper – Series I, November 2025",
+  chapter_name: "Securitization",
+  placement: 2,
+  marks: 4,
+  question_html: `
+    <p>Explain how Distributed Ledger Technology (DTL) is already in use in fields like financial services, healthcare, travel industry and economic forecasts.</p>
+  `,
+  solution_html: `
+    <p>The already existing use of <b>Distributed Ledger Technology (DLT)</b> or <b>Blockchain</b> in various fields is discussed below:</p>
+    <ol type="a">
+      <li><b>Financial Services:</b> Blockchain can be used to provide an automated trade lifecycle in terms of the transaction log of any transaction of asset or property—whether physical or digital such as laptops, smartphones, automobiles, real estate, etc.—from one person to another.</li>
+      <li><b>Healthcare:</b> Blockchain provides secure sharing of data in the healthcare industry by increasing the privacy, security, and interoperability of the data by eliminating the interference of third parties and avoiding overhead costs.</li>
+      <li><b>Government:</b> At the government front, there are instances where technical decentralization is necessary but politically should be governed by governments, like land registration, vehicle registration and management, e-voting, etc. Blockchain improves transparency and provides a better way to monitor and audit transactions in these systems.</li>
+      <li><b>Travel Industry:</b> Blockchain can be applied in money transactions and in storing important documents like passports/other identification cards, reservations, and managing travel insurance, loyalty, and rewards, thus changing the working of the travel and hospitality industry.</li>
+      <li><b>Economic Forecasts:</b> Blockchain makes possible financial and economic forecasts based on decentralized prediction markets, decentralized voting, and stock trading, thus enabling organizations to plan and shape their businesses.</li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPNOV25_I_Q3A",
+  source: "ICAI AFM Mock Test Paper – Series I, November 2025",
+  chapter_name: "Foreign Exchange Risk Management",
+  placement: 3,
+  marks: 6,
+  question_html: `
+    <p>A Japanese company imports hi-tech printer cartridges from US worth $1 million. The chief financial officer of the company wishes to know the best strategy for protection against uncertainty, for the payment that has to be made at the end of 3 months. Financial team of the company has collected the following options for evaluation:</p>
+    
+    <p><b>Table-1: Exchange rates quoted in FOREX Market:</b></p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; text-align: center; margin-bottom: 12px; width: 85%;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th style="text-align: left;">¥/$ Quotations</th>
+          <th>Bid Price</th>
+          <th>Offer/Ask Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: left;">Spot Rates</td>
+          <td>146.03</td>
+          <td>146.63</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">3M – Forward Rates</td>
+          <td>144.03</td>
+          <td>145.00</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">6M – Forward Rates</td>
+          <td>146.35</td>
+          <td>146.70</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><b>Table-2: Options Market rates for European options with 3 months expiry:</b></p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; text-align: center; margin-bottom: 12px; width: 85%;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th>Type of Option</th>
+          <th>Strike Price (X) (¥/$)</th>
+          <th>Premium (%) for Call & Put Options</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Call & Put</td>
+          <td>145.20</td>
+          <td>1.6766% (Call) & 1.7414% (Put)</td>
+        </tr>
+        <tr>
+          <td>Call & Put</td>
+          <td>146.00</td>
+          <td>1.3505% (Call) & 2.1006% (Put)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The expected spot price at expiry is ¥/$: <b>144.90 / 145.05</b>.</p>
+    <p>Suggest the best strategy for CFO of the Japanese Company to protect against uncertainty, with respect to the following alternatives:</p>
+    <ol type="i">
+      <li>Forward Hedge</li>
+      <li>Buy 3 months call, X = 145.20</li>
+      <li>Sell 3 months put, X = 145.20</li>
+      <li>Buy call & sell put both having X = 146.00</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><b>(i) Forward Hedge:</b></p>
+    <ul>
+      <li>Amount payable after 3 months = $1,000,000</li>
+      <li>Applicable 3-month forward ask rate = ¥ 145.00/$</li>
+      <li>Total amount payable in Yen = $1,000,000 × ¥ 145.00 = <b>¥ 145.00 million</b></li>
+    </ul>
+
+    <p><b>(ii) Buy 3-month Call Option (Strike Price X = ¥ 145.20):</b></p>
+    <ul>
+      <li>Expected spot ask rate after 3 months = ¥ 145.05/$</li>
+      <li>Since the market spot ask rate (¥ 145.05) is lower than the strike price (¥ 145.20), the company will <b>not exercise</b> the call option and will buy $ in the spot market.</li>
+    </ul>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 12px;">
+      <tbody>
+        <tr>
+          <td>Buying $ in spot market after 3 months ($1,000,000 × ¥ 145.05)</td>
+          <td style="text-align: right;">¥ 145.05 million</td>
+        </tr>
+        <tr>
+          <td>Add: Call premium paid (¥ 145.20 × 1.6766% × $1,000,000)</td>
+          <td style="text-align: right;">¥ 2.43 million</td>
+        </tr>
+        <tr style="font-weight: bold; background-color: #fafafa;">
+          <td>Total Outflow</td>
+          <td style="text-align: right;">¥ 147.48 million</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><b>(iii) Sell 3-month Put Option (Strike Price X = ¥ 145.20):</b></p>
+    <ul>
+      <li>Expected spot bid rate after 3 months = ¥ 144.90/$</li>
+      <li>Since the spot rate (¥ 144.90) is lower than the strike price (¥ 145.20), the buyer of the put option will <b>exercise</b> their option. Accordingly, the company is obliged to buy $ at the strike price of ¥ 145.20.</li>
+    </ul>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 12px;">
+      <tbody>
+        <tr>
+          <td>Buying $ under put option obligation ($1,000,000 × ¥ 145.20)</td>
+          <td style="text-align: right;">¥ 145.20 million</td>
+        </tr>
+        <tr>
+          <td>Less: Put premium received (¥ 145.20 × 1.7414% × $1,000,000)</td>
+          <td style="text-align: right;">(¥ 2.53 million)</td>
+        </tr>
+        <tr style="font-weight: bold; background-color: #fafafa;">
+          <td>Total Outflow</td>
+          <td style="text-align: right;">¥ 142.67 million</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><b>(iv) Buy Call and Sell Put both at Strike Price X = ¥ 146.00:</b></p>
+    <p><b>Net Premium Position:</b></p>
+    <ul>
+      <li>Premium paid on Call Option = ¥ 146.00 × 1.3505% × $1M = ¥ 1.9717 million</li>
+      <li>Premium received on Put Option = ¥ 146.00 × 2.1006% × $1M = ¥ 3.0669 million</li>
+      <li><b>Net Premium Receipt</b> = ¥ 3.0669M − ¥ 1.9717M = <b>¥ 1.0952 million</b></li>
+    </ul>
+    <p>At expected spot rate of ¥ 144.90 / 145.05 at expiry:</p>
+    <ul>
+      <li>The Call option will <b>lapse</b> (Spot 145.05 < Strike 146.00).</li>
+      <li>The Put option buyer will <b>exercise</b> (Spot 144.90 < Strike 146.00).</li>
+    </ul>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 12px;">
+      <tbody>
+        <tr>
+          <td>Buying US$ under Put Option ($1,000,000 × ¥ 146.00)</td>
+          <td style="text-align: right;">¥ 146.000 million</td>
+        </tr>
+        <tr>
+          <td>Less: Net premium received</td>
+          <td style="text-align: right;">(¥ 1.0952 million)</td>
+        </tr>
+        <tr style="font-weight: bold; background-color: #fafafa;">
+          <td>Total Outflow</td>
+          <td style="text-align: right;">¥ 144.905 million</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><b>Decision:</b></p>
+    <p>Summary of expected cash outflows under each alternative:</p>
+    <ul>
+      <li>Alternative (i) Forward Hedge: <b>¥ 145.00 million</b></li>
+      <li>Alternative (ii) Buy Call (X = 145.20): <b>¥ 147.48 million</b></li>
+      <li>Alternative (iii) Sell Put (X = 145.20): <b>¥ 142.67 million</b></li>
+      <li>Alternative (iv) Collar / Buy Call & Sell Put (X = 146.00): <b>¥ 144.905 million</b></li>
+    </ul>
+    <p>Since the expected cash outflow is the lowest under <b>Alternative (iii) (Selling 3-month Put option at X = ¥ 145.20)</b> at <b>¥ 142.67 million</b>, this strategy is recommended.</p>
+  `
+},
+{
+  question_id: "AFM_MTPNOV25_I_Q3B",
+  source: "ICAI AFM Mock Test Paper – Series I, November 2025",
+  chapter_name: "Security Valuation",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p>Shares of V Ltd. are being quoted at a trailing Price Earning (PE) ratio of 8 times. The company retains ₹ 5 per share which is 45% of its Earning Per Share.</p>
+    <p>You are required to compute:</p>
+    <ol type="i">
+      <li>The cost of equity to the company if the market expects a growth rate of 15% p.a.</li>
+      <li>If the anticipated growth rate is 16% per annum, calculate the indicative market price with the same cost of capital.</li>
+      <li>If the company's cost of capital is 20% p.a. & the anticipated growth rate is 19% p.a., calculate the market price per share.</li>
+    </ol>
+    <p><i>Note: Round off calculations up to 2 decimals.</i></p>
+  `,
+  solution_html: `
+    <p><b>Basic Data & Calculations:</b></p>
+    <ul>
+      <li><b>Retained Earnings per share (45%):</b> ₹ 5.00</li>
+      <li><b>Earnings Per Share ($E_0$):</b> $\\frac{₹ 5}{0.45} = ₹ \\mathbf{11.11}$ per share</li>
+      <li><b>Dividend Per Share ($D_0$) (55%):</b> $₹ 11.11 - ₹ 5.00 = ₹ \\mathbf{6.11}$ per share</li>
+      <li><b>Trailing P/E Ratio:</b> 8 times</li>
+      <li><b>Current Market Price ($P_0$):</b> $\\text{EPS} \\times \\text{P/E Ratio} = ₹ 11.11 \\times 8 = ₹ \\mathbf{88.88}$</li>
+    </ul>
+
+    <p><b>(i) Cost of Equity Capital ($K_e$) when expected growth rate $g = 15\\%$ p.a.:</b></p>
+    <p>$$K_e = \\left[ \\frac{D_1}{P_0} \\times 100 \\right] + g = \\left[ \\frac{D_0(1 + g)}{P_0} \\times 100 \\right] + g$$</p>
+    <p>$$K_e = \\left[ \\frac{6.11 \\times (1 + 0.15)}{88.88} \\times 100 \\right] + 15\\% = \\left[ \\frac{7.0265}{88.88} \\times 100 \\right] + 15\\% = 7.91\\% + 15\\% = \\mathbf{22.91\\%}$$</p>
+    <p><i>(Note: ICAI suggested answer also mentions 22.97% due to rounding off in intermediate steps, but uses 22.91% for subsequent computations).</i></p>
+
+    <p><b>(ii) Indicative Market Price when anticipated growth rate is 16% p.a. (using $K_e = 22.91\\%$):</b></p>
+    <p>$$P_0 = \\frac{D_1}{K_e - g} = \\frac{D_0 (1 + g)}{K_e - g}$$</p>
+    <p>$$P_0 = \\frac{6.11 \\times (1 + 0.16)}{0.2291 - 0.16} = \\frac{7.0876}{0.0691} = \\mathbf{₹ 102.60} \\text{ per share}$$</p>
+
+    <p><b>(iii) Market Price per share when $K_e = 20\\%$ p.a. and growth rate $g = 19\\%$ p.a.:</b></p>
+    <p>$$P_0 = \\frac{D_1}{K_e - g} = \\frac{D_0 (1 + g)}{K_e - g}$$</p>
+    <p>$$P_0 = \\frac{6.11 \\times (1 + 0.19)}{0.20 - 0.19} = \\frac{7.2709}{0.01} = \\mathbf{₹ 727.00} \\text{ (or ₹ 727.09) per share}$$</p>
+  `
+},
+{
+  question_id: "AFM_MTPNOV25_I_Q3C",
+  source: "ICAI AFM Mock Test Paper – Series I, November 2025",
+  chapter_name: "Startup Finance",
+  placement: 3,
+  marks: 4,
+  question_html: `
+    <p><b>Either</b></p>
+    <p>Explain Berkus Approach for valuing Startups.</p>
+    <p><b>Or</b></p>
+    <p>Explain two approaches that are used to calculate External Funding Requirement (EFR) and the type of funding.</p>
+  `,
+  solution_html: `
+    <p><b>Either: Berkus Approach for Valuing Startups</b></p>
+    <p>The <b>Berkus Approach</b>, created by American venture capitalist and angel investor Dave Berkus, looks at valuing a startup enterprise based on a detailed assessment of five key success factors:</p>
+    <ol>
+      <li><b>Basic value:</b> Sound idea (basic value, acceptable risk).</li>
+      <li><b>Technology:</b> Prototype (reducing technology risk).</li>
+      <li><b>Execution:</b> Quality management team (reducing execution risk).</li>
+      <li><b>Strategic relationships:</b> Strategic relationships in its core market (reducing market risk).</li>
+      <li><b>Production and consequent sales:</b> Product rollout or sales (reducing production risk).</li>
+    </ol>
+    <p>A detailed assessment is carried out evaluating how much value each of the five critical success factors in quantitative measure adds up to the total value of the enterprise. Based on these numbers, the startup is valued.</p>
+    <p>This method typically caps pre-revenue valuations at <b>$2 million</b> and post-revenue valuations at <b>$2.5 million</b>. Although it does not consider other market factors, this limited scope is useful for early-stage businesses looking for an uncomplicated valuation tool.</p>
+
+    <hr style="margin: 16px 0; border: none; border-top: 1px dashed #ccc;" />
+
+    <p><b>Or: Approaches to Calculate External Funding Requirement (EFR) and Type of Funding</b></p>
+    <p>To compute the External Funding Requirement (EFR) and determine the type of funding required, the following two approaches can be used:</p>
+    <ol>
+      <li>
+        <p><b>Analytical Approach:</b> In this approach, we begin by analyzing each item on the balance sheet in relation to changes in sales and determine their projected amounts while considering prescribed conditions, such as maintaining specific Debt-to-Equity ratios or Current Ratios, among others.</p>
+      </li>
+      <li>
+        <p><b>Formula-based Approach:</b> In this approach, the amount of EFR is calculated using the following formula:</p>
+        <p>$$\\text{EFR} = \\left( \\frac{\\text{TA}}{\\text{Sales}} \\times \\Delta S \\right) - \\left( \\frac{\\text{Payables and Liabilities}}{\\text{Sales}} \\times \\Delta S \\right) - [m \\times S_1 \\times (1 - d)]$$</p>
+        <p>Where:</p>
+        <ul>
+          <li>$\\Delta S$ = Change in Sales</li>
+          <li>$S_1$ = Revised / Projected Sales</li>
+          <li>$\\text{TA}$ = Total Assets</li>
+          <li>$\\text{Payables and Liabilities}$ = Payables and liabilities that change spontaneously in accordance with the level of sales</li>
+          <li>$m$ = Profit Margin / Multiplier (percentage of Net Profit after Tax to Sales)</li>
+          <li>$d$ = Dividend Payout Ratio; therefore, $(1 - d)$ is the Retention Ratio</li>
+        </ul>
+      </li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPNOV25_I_Q4A",
+  source: "ICAI AFM Mock Test Paper – Series I, November 2025",
+  chapter_name: "Advanced Capital Budgeting Decisions",
+  placement: 4,
+  marks: 4,
+  question_html: `
+    <p>A company is considering Projects X and Y with following information:</p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; text-align: center; margin-bottom: 12px; width: 75%;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th style="text-align: left;">Project</th>
+          <th style="text-align: right;">Expected NPV (₹)</th>
+          <th style="text-align: right;">Standard deviation (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: left;">X</td>
+          <td style="text-align: right;">1,22,000</td>
+          <td style="text-align: right;">90,000</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;">Y</td>
+          <td style="text-align: right;">2,25,000</td>
+          <td style="text-align: right;">1,20,000</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>You are required to answer:</p>
+    <ol type="i">
+      <li>Which project will you recommend based on the above data?</li>
+      <li>Explain whether your opinion will change, if you use coefficient of variation as a measure of risk.</li>
+      <li>Which measure is more appropriate in this situation and why?</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><b>(i) Recommendation based on Standard Deviation:</b></p>
+    <p>On the basis of Standard Deviation, <b>Project X</b> will be chosen because it has a lower standard deviation (₹ 90,000) than Project Y (₹ 1,20,000), indicating lower total risk in absolute terms.</p>
+
+    <p><b>(ii) Recommendation based on Coefficient of Variation (C.V.):</b></p>
+    <p>$$\\text{Coefficient of Variation (C.V.)} = \\frac{\\text{Standard Deviation}}{\\text{Expected NPV}}$$</p>
+    <ul>
+      <li>$$\\text{CV}_X = \\frac{90,000}{1,22,000} = \\mathbf{0.738}$$</li>
+      <li>$$\\text{CV}_Y = \\frac{1,20,000}{2,25,000} = \\mathbf{0.533}$$</li>
+    </ul>
+    <p><b>Conclusion:</b> Yes, the opinion will change. On the basis of Coefficient of Variation (which measures risk per rupee of expected NPV), Project X (0.738) is riskier than Project Y (0.533). Therefore, <b>Project Y</b> should be accepted.</p>
+
+    <p><b>(iii) Appropriate Measure in this situation:</b></p>
+    <p>Standard deviation measures absolute risk, whereas the Coefficient of Variation measures relative risk. Since the two projects have substantially different sizes of Expected NPV, Coefficient of Variation is a better measure of risk per unit of return than Standard Deviation.</p>
+    <p>However, in such conflicting capital budgeting situations, the <b>NPV method</b> (Project Y offering an Expected NPV of ₹ 2,25,000 vs. ₹ 1,22,000) is considered the best criterion because it is directly compatible with the core corporate objective of <b>shareholder wealth maximization</b> in terms of absolute economic value added.</p>
+  `
+},
+{
+  question_id: "AFM_MTPNOV25_I_Q4B",
+  source: "ICAI AFM Mock Test Paper – Series I, November 2025",
+  chapter_name: "Mutual Funds",
+  placement: 4,
+  marks: 6,
+  question_html: `
+    <p>ANP Plan, a hedge fund, currently has assets of ₹ 20 crore. CA. X, the manager of the fund, charges a fixed fee of 0.10% of portfolio assets. In addition to it, he charges an incentive fee of 2%. The incentive will be linked to gross return each year in excess of the portfolio's maximum value since the inception of the fund (high-water mark). The maximum value the fund achieved so far since inception of fund about one and half year ago was ₹ 21 crore.</p>
+    <p>You are required to compute the fee payable to CA. X, if the return on the fund this year turns out to be:</p>
+    <ol type="i">
+      <li>29%</li>
+      <li>4.5%</li>
+      <li>−1.8%</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><b>Basic Information:</b></p>
+    <ul>
+      <li>Current Asset Base = ₹ 20.00 crore</li>
+      <li>Fixed Management Fee = 0.10% of portfolio assets = 0.10% × ₹ 20 crore = <b>₹ 2,00,000</b></li>
+      <li>High-Water Mark (Highest value achieved previously) = <b>₹ 21.00 crore</b></li>
+      <li>Incentive Fee Rate = 2% on value generated in excess of the high-water mark</li>
+    </ul>
+
+    <p><b>(i) If return on the fund is 29%:</b></p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 12px;">
+      <tbody>
+        <tr>
+          <td>Fixed Management Fee (A) [0.10% of ₹ 20 crore]</td>
+          <td style="text-align: right;">₹ 2,00,000</td>
+        </tr>
+        <tr>
+          <td>New Fund Value [₹ 20 crore × (1 + 0.29)]</td>
+          <td style="text-align: right;">₹ 25.80 crore</td>
+        </tr>
+        <tr>
+          <td>Excess Value over previous best achieved [₹ 25.80 crore − ₹ 21.00 crore]</td>
+          <td style="text-align: right;">₹ 4.80 crore</td>
+        </tr>
+        <tr>
+          <td>Incentive Fee (B) [2% of ₹ 4.80 crore]</td>
+          <td style="text-align: right;">₹ 9,60,000</td>
+        </tr>
+        <tr style="font-weight: bold; background-color: #fafafa;">
+          <td>Total Fee Payable to CA. X [(A) + (B)]</td>
+          <td style="text-align: right;">₹ 11,60,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><b>(ii) If return on the fund is 4.5%:</b></p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 12px;">
+      <tbody>
+        <tr>
+          <td>Fixed Management Fee (A) [0.10% of ₹ 20 crore]</td>
+          <td style="text-align: right;">₹ 2,00,000</td>
+        </tr>
+        <tr>
+          <td>New Fund Value [₹ 20 crore × (1 + 0.045)]</td>
+          <td style="text-align: right;">₹ 20.90 crore</td>
+        </tr>
+        <tr>
+          <td>Excess Value over previous best achieved [₹ 20.90 crore − ₹ 21.00 crore]</td>
+          <td style="text-align: right;">(₹ 0.10 crore)</td>
+        </tr>
+        <tr>
+          <td>Incentive Fee (B) [Since new value does not exceed ₹ 21 crore high-water mark]</td>
+          <td style="text-align: right;">Nil</td>
+        </tr>
+        <tr style="font-weight: bold; background-color: #fafafa;">
+          <td>Total Fee Payable to CA. X [(A) + (B)]</td>
+          <td style="text-align: right;">₹ 2,00,000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><b>(iii) If return on the fund is −1.8%:</b></p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 12px;">
+      <tbody>
+        <tr>
+          <td>Fixed Management Fee (A) [0.10% of ₹ 20 crore]</td>
+          <td style="text-align: right;">₹ 2,00,000</td>
+        </tr>
+        <tr>
+          <td>New Fund Value [₹ 20 crore × (1 − 0.018)]</td>
+          <td style="text-align: right;">₹ 19.64 crore</td>
+        </tr>
+        <tr>
+          <td>Incentive Fee (B) [Fund value fell below inception/high-water mark]</td>
+          <td style="text-align: right;">Nil</td>
+        </tr>
+        <tr style="font-weight: bold; background-color: #fafafa;">
+          <td>Total Fee Payable to CA. X [(A) + (B)]</td>
+          <td style="text-align: right;">₹ 2,00,000</td>
+        </tr>
+      </tbody>
+    </table>
+  `
+},
+{
+  question_id: "AFM_MTPNOV25_I_Q4C",
+  source: "ICAI AFM Mock Test Paper – Series I, November 2025",
+  chapter_name: "International Financial Management",
+  placement: 4,
+  marks: 4,
+  question_html: `
+    <p>Explain the advantages and disadvantages of Foreign Currency Convertible Bonds (FCCBs).</p>
+  `,
+  solution_html: `
+    <p><b>Advantages of Foreign Currency Convertible Bonds (FCCBs):</b></p>
+    <ol type="i">
+      <li><b>Flexibility to Investors:</b> The convertible bond gives the investor the flexibility to convert the bond into equity at a pre-determined price or redeem the bond at the end of a specified period (normally three years) if the market price of the share has not met expectations.</li>
+      <li><b>Delayed Dilution of Equity:</b> Issuing companies prefer FCCBs as it leads to delayed dilution of equity and allows the company to avoid any immediate dilution in earnings per share (EPS) that a fresh issuance of equity shares would cause.</li>
+      <li><b>Marketability and Assured Return:</b> FCCBs are easily marketable because investors enjoy the dual benefit of potential capital appreciation through conversion into equity alongside the assurance of a minimum fixed regular interest earning.</li>
+    </ol>
+
+    <p><b>Disadvantages of Foreign Currency Convertible Bonds (FCCBs):</b></p>
+    <ol type="i">
+      <li><b>High Exchange Rate Risk:</b> Exchange risk is significant in FCCBs because both interest service and principal redemption are payable in foreign currency. Consequently, only companies with low debt-equity ratios and large foreign exchange earnings potential usually opt for FCCBs.</li>
+      <li><b>Debt Creation and Forex Outgo:</b> FCCBs represent debt on the balance sheet until converted, creating an unavoidable foreign exchange cash outflow on account of regular coupon payments.</li>
+      <li><b>Refinancing/Redemption Risk:</b> While the interest rate is low (typically around 3–4%), if the company's stock price underperforms and the market price remains below the conversion strike price, investors will choose redemption over conversion. This requires a substantial foreign currency cash outflow for repayment of principal.</li>
+    </ol>
+  `
+},
+{
+  question_id: "AFM_MTPNOV25_I_Q5A",
+  source: "ICAI AFM Mock Test Paper – Series I, November 2025",
+  chapter_name: "Portfolio Management",
+  placement: 5,
+  marks: 8,
+  question_html: `
+    <p>Mr. Abhishek is interested in investing ₹ 2,00,000 for which he is considering following three alternatives:</p>
+    <ol type="i">
+      <li>Invest ₹ 2,00,000 in Mutual Fund X (MFX)</li>
+      <li>Invest ₹ 2,00,000 in Mutual Fund Y (MFY)</li>
+      <li>Invest ₹ 1,20,000 in Mutual Fund X (MFX) and ₹ 80,000 in Mutual Fund Y (MFY)</li>
+    </ol>
+    <p>Average annual return earned by MFX and MFY is 15% and 14% respectively. Risk free rate of return is 10% and market rate of return is 12%.</p>
+    <p>Covariance of returns of MFX, MFY and market portfolio (Mix) are as follows:</p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; text-align: center; margin-bottom: 12px; width: 75%;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th></th>
+          <th>MFX</th>
+          <th>MFY</th>
+          <th>Market (Mix)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>MFX</b></td>
+          <td>4.800</td>
+          <td>4.300</td>
+          <td>3.370</td>
+        </tr>
+        <tr>
+          <td><b>MFY</b></td>
+          <td>4.300</td>
+          <td>4.250</td>
+          <td>2.800</td>
+        </tr>
+        <tr>
+          <td><b>Market (Mix)</b></td>
+          <td>3.370</td>
+          <td>2.800</td>
+          <td>3.100</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>You are required to calculate:</p>
+    <ol type="i">
+      <li>Variance of return from MFX, MFY and market return,</li>
+      <li>Portfolio return, beta, portfolio variance and portfolio standard deviation,</li>
+      <li>Expected return, systematic risk and unsystematic risk; and</li>
+      <li>Sharpe ratio, Treynor ratio and Alpha of MFX, MFY and Portfolio Mix.</li>
+    </ol>
+  `,
+  solution_html: `
+    <p><b>(i) Variance of Returns:</b></p>
+    <p>Since the covariance of any asset with itself is its variance ($$\\text{Cov}(i, i) = \\sigma_i^2$$):</p>
+    <ul>
+      <li>$$\\text{Variance of MFX } (\\sigma_X^2) = \\text{Cov}(X, X) = \\mathbf{4.800}$$</li>
+      <li>$$\\text{Variance of MFY } (\\sigma_Y^2) = \\text{Cov}(Y, Y) = \\mathbf{4.250}$$</li>
+      <li>$$\\text{Variance of Market } (\\sigma_M^2) = \\text{Cov}(M, M) = \\mathbf{3.100}$$</li>
+    </ul>
+
+    <p><b>(ii) Portfolio Return, Beta, Variance, and Standard Deviation (Portfolio Mix):</b></p>
+    <ul>
+      <li>$$w_X = \\frac{1,20,000}{2,00,000} = 0.60$$</li>
+      <li>$$w_Y = \\frac{80,000}{2,00,000} = 0.40$$</li>
+    </ul>
+    
+    <p><b>Portfolio Return:</b></p>
+    <p>$$R_p = (w_X \\times R_X) + (w_Y \\times R_Y) = (0.60 \\times 15\\%) + (0.40 \\times 14\\%) = 9.00\\% + 5.60\\% = \\mathbf{14.60\\%}$$</p>
+
+    <p><b>Beta of each Fund and Portfolio:</b></p>
+    <p>$$\\beta = \\frac{\\text{Cov}(\\text{Fund}, \\text{Market})}{\\sigma_M^2}$$</p>
+    <ul>
+      <li>$$\\beta_X = \\frac{3.370}{3.100} = \\mathbf{1.087}$$</li>
+      <li>$$\\beta_Y = \\frac{2.800}{3.100} = \\mathbf{0.903}$$</li>
+      <li>$$\\beta_p = (w_X \\times \\beta_X) + (w_Y \\times \\beta_Y) = (0.60 \\times 1.087) + (0.40 \\times 0.903) = 0.6522 + 0.3612 = \\mathbf{1.013} \\text{ (or } 1.0134\\text{)}$$</li>
+    </ul>
+
+    <p><b>Portfolio Variance ($\\sigma_p^2$):</b></p>
+    <p>$$\\sigma_p^2 = w_X^2 \\sigma_X^2 + w_Y^2 \\sigma_Y^2 + 2 w_X w_Y \\text{Cov}(X, Y)$$</p>
+    <p>$$\\sigma_p^2 = (0.60)^2(4.800) + (0.40)^2(4.250) + 2(0.60)(0.40)(4.300)$$</p>
+    <p>$$\\sigma_p^2 = 1.728 + 0.680 + 2.064 = \\mathbf{4.472}$$</p>
+
+    <p><b>Portfolio Standard Deviation ($\\sigma_p$):</b></p>
+    <p>$$\\sigma_p = \\sqrt{4.472} = \\mathbf{2.115}$$</p>
+
+    <p><b>(iii) Expected Return (CAPM), Systematic Risk, and Unsystematic Risk:</b></p>
+    
+    <p><b>Expected Return using CAPM [$E(R) = R_f + \\beta (R_m - R_f)$]:</b></p>
+    <ul>
+      <li>$$\\text{MFX} = 10\\% + 1.087(12\\% - 10\\%) = 10\\% + 2.174\\% = \\mathbf{12.17\\%}$$</li>
+      <li>$$\\text{MFY} = 10\\% + 0.903(12\\% - 10\\%) = 10\\% + 1.806\\% = \\mathbf{11.81\\%}$$</li>
+      <li>$$\\text{Portfolio} = 10\\% + 1.0134(12\\% - 10\\%) = 10\\% + 2.027\\% = \\mathbf{12.03\\%}$$</li>
+    </ul>
+
+    <p><b>Systematic Risk [$\\beta^2 \\times \\sigma_M^2$]:</b></p>
+    <ul>
+      <li>$$\\text{MFX} = (1.087)^2 \\times 3.100 = 1.1816 \\times 3.100 = \\mathbf{3.663}$$</li>
+      <li>$$\\text{MFY} = (0.903)^2 \\times 3.100 = 0.8154 \\times 3.100 = \\mathbf{2.528}$$</li>
+      <li>$$\\text{Portfolio} = (1.013)^2 \\times 3.100 = 1.0262 \\times 3.100 = \\mathbf{3.181}$$</li>
+    </ul>
+
+    <p><b>Unsystematic Risk [$\\text{Total Risk} (\\sigma^2) - \\text{Systematic Risk}$]:</b></p>
+    <ul>
+      <li>$$\\text{MFX} = 4.800 - 3.663 = \\mathbf{1.137}$$</li>
+      <li>$$\\text{MFY} = 4.250 - 2.528 = \\mathbf{1.722}$$</li>
+      <li>$$\\text{Portfolio} = 4.472 - 3.181 = \\mathbf{1.291}$$</li>
+    </ul>
+
+    <p><b>(iv) Sharpe Ratio, Treynor Ratio, and Alpha:</b></p>
+    
+    <p><b>1. Sharpe Ratio [$\\frac{R - R_f}{\\sigma}$]:</b></p>
+    <ul>
+      <li>$$\\text{MFX} = \\frac{15\\% - 10\\%}{\\sqrt{4.800}} = \\frac{5}{2.1909} = \\mathbf{2.282}$$</li>
+      <li>$$\\text{MFY} = \\frac{14\\% - 10\\%}{\\sqrt{4.250}} = \\frac{4}{2.0616} = \\mathbf{1.940}$$</li>
+      <li>$$\\text{Portfolio} = \\frac{14.60\\% - 10\\%}{2.115} = \\frac{4.60}{2.115} = \\mathbf{2.175}$$</li>
+    </ul>
+
+    <p><b>2. Treynor Ratio [$\\frac{R - R_f}{\\beta}$]:</b></p>
+    <ul>
+      <li>$$\\text{MFX} = \\frac{15\\% - 10\\%}{1.087} = \\frac{5}{1.087} = \\mathbf{4.60}$$</li>
+      <li>$$\\text{MFY} = \\frac{14\\% - 10\\%}{0.903} = \\frac{4}{0.903} = \\mathbf{4.43}$$</li>
+      <li>$$\\text{Portfolio} = \\frac{14.60\\% - 10\\%}{1.0134} = \\frac{4.60}{1.0134} = \\mathbf{4.54}$$</li>
+    </ul>
+
+    <p><b>3. Jensen's Alpha [$\\text{Actual Return} - \\text{Expected Return}$]:</b></p>
+    <ul>
+      <li>$$\\text{MFX} = 15.00\\% - 12.17\\% = \\mathbf{2.83\\%}$$</li>
+      <li>$$\\text{MFY} = 14.00\\% - 11.81\\% = \\mathbf{2.19\\%}$$</li>
+      <li>$$\\text{Portfolio} = 14.60\\% - 12.03\\% = \\mathbf{2.57\\%}$$</li>
+    </ul>
+  `
+},
+{
+  question_id: "AFM_MTPNOV25_I_Q5B",
+  source: "ICAI AFM Mock Test Paper – Series I, November 2025",
+  chapter_name: "Interest Rate Risk Management",
+  placement: 5,
+  marks: 6,
+  question_html: `
+    <p>XYZ Limited borrows £ 15 Million of six months SONIA + 10.00% for a period of 24 months. The company anticipates a rise in SONIA, hence it proposes to buy a Cap Option from its Bankers at the strike rate of 8.00%. The lump sum premium is 1.00% for the entire reset periods and the fixed rate of interest is 7.00% per annum. The actual position of SONIA during the forthcoming reset period is as under:</p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; text-align: center; margin-bottom: 12px; width: 50%;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th>Reset Period</th>
+          <th>SONIA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>9.00%</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>9.50%</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>10.00%</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>You are required to show how far interest rate risk is hedged through Cap Option.</p>
+    <p><i>Note: For calculation, work out figures at each stage up to three decimal points and amount nearest to £. It should be part of working notes.</i></p>
+  `,
+  solution_html: `
+    <p><b>1. Calculation of Periodical Amortized Cap Premium Payable to Bank:</b></p>
+    <p>The upfront lump sum premium is amortized over the 4 semiannual reset periods (24 months / 6 months) at the semiannual discounting rate of $i = \\frac{7.00\\%}{2} = 3.50\\%$ per period:</p>
+    
+    <p>$$\\text{Semi-annual Premium} = \\frac{r_p \\times A}{\\text{PVAF}(3.5\\%, 4)}$$</p>
+    <p>Where:</p>
+    <ul>
+      <li>$A$ = Principal Amount = £ 15,000,000</li>
+      <li>$r_p$ = Lump sum premium rate = 1.00%</li>
+      <li>Total upfront premium = $1.00\\% \\times £ 15,000,000 = £ 150,000$</li>
+      <li>$i$ = Semi-annual fixed rate of interest = $\\frac{7\\%}{2} = 3.5\\% = 0.035$</li>
+      <li>$t$ = Number of reset periods = 4</li>
+    </ul>
+
+    <p>$$\\text{PVAF}(3.5\\%, 4) = \\frac{1}{(1.035)^1} + \\frac{1}{(1.035)^2} + \\frac{1}{(1.035)^3} + \\frac{1}{(1.035)^4}$$</p>
+    <p>$$\\text{PVAF}(3.5\\%, 4) = 0.966 + 0.933 + 0.901 + 0.871 = 3.671$$</p>
+    <p>$$\\text{Semi-annual Premium} = \\frac{£ 150,000}{3.671} = \\mathbf{£ 40,861}$$</p>
+    <p><i>(Alternatively, using the continuous/exact annuity formula $\\left[\\frac{1}{i} - \\frac{1}{i(1+i)^t}\\right]$, the amortized premium is <b>£ 40,595</b>).</i></p>
+
+    <p><b>2. Additional Interest and Net Payoff under Cap Option:</b></p>
+    <p>The strike rate of Cap is 8.00% p.a. Whenever SONIA exceeds 8.00%, the bank compensates the excess interest over the 6-month period $\\left( \\frac{\\text{Actual SONIA} - 8.00\\%}{2} \\times £ 15,000,000 \\right)$:</p>
+    <ul>
+      <li><b>Reset Period 1 (SONIA = 9.00%):</b> Excess = $9.00\\% - 8.00\\% = 1.00\\%$. Additional interest = $£ 15,000,000 \\times 1.00\\% \\times \\frac{6}{12} = \\mathbf{£ 75,000}$</li>
+      <li><b>Reset Period 2 (SONIA = 9.50%):</b> Excess = $9.50\\% - 8.00\\% = 1.50\\%$. Additional interest = $£ 15,000,000 \\times 1.50\\% \\times \\frac{6}{12} = \\mathbf{£ 112,500}$</li>
+      <li><b>Reset Period 3 (SONIA = 10.00%):</b> Excess = $10.00\\% - 8.00\\% = 2.00\\%$. Additional interest = $£ 15,000,000 \\times 2.00\\% \\times \\frac{6}{12} = \\mathbf{£ 150,000}$</li>
+    </ul>
+
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 12px; text-align: right;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th style="text-align: center;">Reset Period</th>
+          <th style="text-align: right;">Additional Interest due to Rise in Interest Rate (£)</th>
+          <th style="text-align: right;">Amount Received from Bank (£)</th>
+          <th style="text-align: right;">Premium Paid to Bank* (£)</th>
+          <th style="text-align: right;">Net Amount Received from Bank (£)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center;">1</td>
+          <td>75,000</td>
+          <td>75,000</td>
+          <td>40,861</td>
+          <td>34,139</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">2</td>
+          <td>112,500</td>
+          <td>112,500</td>
+          <td>40,861</td>
+          <td>71,639</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">3</td>
+          <td>150,000</td>
+          <td>150,000</td>
+          <td>40,861</td>
+          <td>109,139</td>
+        </tr>
+        <tr style="font-weight: bold; background-color: #fafafa;">
+          <td style="text-align: center;">TOTAL</td>
+          <td>337,500</td>
+          <td>337,500</td>
+          <td>122,583</td>
+          <td>214,917</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><b>Conclusion:</b></p>
+    <p>From the above analysis, it can be seen that the total interest rate risk amount of <b>£ 337,500</b> is reduced by <b>£ 214,917</b> through the use of the Cap Option.</p>
+    <p><i>*Note: Alternatively, if the amortized premium paid is taken as £ 40,595 per period, the total premium for 3 periods will be £ 121,785, and the net risk reduction will be <b>£ 215,715</b>.</i></p>
+  `
+},
+{
+  question_id: "AFM_MTPNOV25_I_Q6A",
+  source: "ICAI AFM Mock Test Paper – Series I, November 2025",
+  chapter_name: "International Financial Management",
+  placement: 6,
+  marks: 8,
+  question_html: `
+    <p>PQR Ltd. is considering a project in US, which involves an initial investment of ₹ 124.50 Crore. The project will have a useful life of 5 years. Current spot exchange rate is INR/USD 83. The risk free rate in US is 4.186% and the same in India is 6.9768%.</p>
+    <p>Cash inflows in USD from the project are as follows:</p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; text-align: center; margin-bottom: 12px; width: 80%;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th>Year</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Cash inflow (USD)</b></td>
+          <td>30,00,000</td>
+          <td>40,00,000</td>
+          <td>50,00,000</td>
+          <td>60,00,000</td>
+          <td>70,00,000</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>PQR Ltd. is expecting a net surplus of ₹ 1,858.08 lakh to be received after closure of the project. There is no salvage value. PQR Ltd. wants to take a forward cover to protect itself from exchange rate fluctuations.</p>
+    <p>Given discount factors:</p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; text-align: center; margin-bottom: 12px; width: 85%;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th>Year (n)</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>PVIF (6.976%, n)</b></td>
+          <td>0.935</td>
+          <td>0.874</td>
+          <td>0.817</td>
+          <td>0.764</td>
+          <td>0.714</td>
+        </tr>
+        <tr>
+          <td><b>PVIF (4.186%, n)</b></td>
+          <td>0.959</td>
+          <td>0.921</td>
+          <td>0.884</td>
+          <td>0.849</td>
+          <td>0.815</td>
+        </tr>
+        <tr>
+          <td><b>PVIF (12%, n)</b></td>
+          <td>0.893</td>
+          <td>0.797</td>
+          <td>0.712</td>
+          <td>0.636</td>
+          <td>0.567</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>You are required to recommend one INR/USD rate for the forward cover, if the required rate of return on this project in Indian Rupee is 15%.</p>
+  `,
+  solution_html: `
+    <p><b>1. Initial Outlay in USD:</b></p>
+    <p>$$\\text{Initial Outlay in USD} = \\frac{₹ 124.50\\text{ Crore}}{₹ 83/\\$} = \\$1.50\\text{ Crore} = \\mathbf{\\$150.00\\text{ lakh}}$$</p>
+
+    <p><b>2. Computation of Risk-Adjusted Dollar Discounting Rate:</b></p>
+    <p>Using the relationship between the domestic risk-free rate, domestic required return, and risk premium:</p>
+    <p>$$\\frac{1 + \\text{Required Rate (INR)}}{1 + R_{f\\text{ (INR)}}} = 1 + \\text{Risk Premium}$$</p>
+    <p>$$1 + \\text{Risk Premium} = \\frac{1 + 0.15}{1 + 0.069768} = \\frac{1.15}{1.069768} \\approx \\mathbf{1.0750}$$</p>
+    <p>Now, applying this risk premium to the US risk-free rate:</p>
+    <p>$$1 + \\text{Risk-Adjusted Dollar Rate} = (1 + \\text{Risk Premium}) \\times (1 + R_{f\\text{ (USD)}})$$</p>
+    <p>$$1 + k_{\\$} = 1.0750 \\times (1 + 0.04186) = 1.0750 \\times 1.04186 = 1.119999 \\approx \\mathbf{1.12}$$</p>
+    <p>$$\\text{Therefore, Risk-Adjusted Dollar Discount Rate } (k_{\\$}) = 12\\%\\text{ p.a.}$$</p>
+
+    <p><b>3. Calculation of Net Present Value (NPV) in USD:</b></p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 12px; text-align: right;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th style="text-align: center;">Year</th>
+          <th style="text-align: right;">Cash Flow (US$ lakh)</th>
+          <th style="text-align: center;">PV Factor at 12%</th>
+          <th style="text-align: right;">Present Value (US$ lakh)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center;">1</td>
+          <td>30.00</td>
+          <td style="text-align: center;">0.893</td>
+          <td>26.79</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">2</td>
+          <td>40.00</td>
+          <td style="text-align: center;">0.797</td>
+          <td>31.88</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">3</td>
+          <td>50.00</td>
+          <td style="text-align: center;">0.712</td>
+          <td>35.60</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">4</td>
+          <td>60.00</td>
+          <td style="text-align: center;">0.636</td>
+          <td>38.16</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">5</td>
+          <td>70.00</td>
+          <td style="text-align: center;">0.567</td>
+          <td>39.69</td>
+        </tr>
+        <tr style="font-weight: bold; background-color: #fafafa;">
+          <td colspan="3" style="text-align: left;">Total Present Value of Inflows</td>
+          <td>172.12</td>
+        </tr>
+        <tr>
+          <td colspan="3" style="text-align: left;">Less: Initial Investment</td>
+          <td>(150.00)</td>
+        </tr>
+        <tr style="font-weight: bold; background-color: #f2f2f2;">
+          <td colspan="3" style="text-align: left;">Net Present Value (NPV in USD)</td>
+          <td>22.12</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><b>4. Recommended Forward Cover Exchange Rate:</b></p>
+    <p>The project yields an expected dollar surplus (NPV) of <b>US$ 22.12 lakh</b>. Since PQR Ltd. expects a target net rupee surplus of <b>₹ 1,858.08 lakh</b> from the closure of the project, the forward exchange rate required to lock in this rupee value is:</p>
+    <p>$$\\text{Recommended Forward Rate (INR/USD)} = \\frac{\\text{Expected Rupee Net Surplus}}{\\text{Project Net Surplus (USD)}} = \\frac{₹ 1,858.08\\text{ lakh}}{\\$22.12\\text{ lakh}} = \\mathbf{₹ 84.00/USD}$$</p>
+  `
+},
+{
+  question_id: "AFM_MTPNOV25_I_Q6B",
+  source: "ICAI AFM Mock Test Paper – Series I, November 2025",
+  chapter_name: "Security Valuation",
+  placement: 6,
+  marks: 6,
+  question_html: `
+    <p>SAM Ltd. has just paid a dividend of ₹ 2 per share and it is expected to grow @ 6% p.a. After paying dividend, the Board declared to take up a project by retaining the next three annual dividends. It is expected that this project is of same risk as the existing projects. The results of this project will start coming from the 4<sup>th</sup> year onward from now. The dividends will then be ₹ 2.50 per share and will grow @ 7% p.a.</p>
+    <p>An investor has 1,000 shares in SAM Ltd. and wants a receipt of at least ₹ 2,000 p.a. from this investment.</p>
+    <p>Show that the market value of the share is affected by the decision of the Board. Also show as to how the investor can maintain his target receipt from the investment for first 3 years and improved income thereafter, given that the cost of capital of the firm is 8%.</p>
+  `,
+  solution_html: `
+    <p><b>1. Market Value of Share before the Board's Decision (Existing Policy):</b></p>
+    <p>Under the existing dividend growth policy ($D_0 = ₹ 2.00, g = 6\\%, K_e = 8\\%$):</p>
+    <p>$$P_0 = \\frac{D_1}{K_e - g} = \\frac{D_0(1 + g)}{K_e - g} = \\frac{2 \\times (1 + 0.06)}{0.08 - 0.06} = \\frac{2.12}{0.02} = \\mathbf{₹ 106.00}$$</p>
+
+    <p><b>2. Market Value of Share after the Board's Decision (New Project):</b></p>
+    <p>No dividends are paid for the first 3 years ($D_1 = D_2 = D_3 = 0$). Dividend from Year 4 onwards is $D_4 = ₹ 2.50$ with a perpetual growth rate of $g = 7\\%$.</p>
+    <p>Market price at the end of Year 3 ($P_3$):</p>
+    <p>$$P_3 = \\frac{D_4}{K_e - g} = \\frac{2.50}{0.08 - 0.07} = \\frac{2.50}{0.01} = \\mathbf{₹ 250.00}$$</p>
+    <p>Present value of the share today ($P_0$):</p>
+    <p>$$P_0 = \\frac{P_3}{(1 + K_e)^3} = \\frac{250.00}{(1.08)^3} = \\frac{250.00}{1.2597} = \\mathbf{₹ 198.46}$$</p>
+    <p><b>Effect on Share Value:</b> The market value of the share is significantly affected—it increases from <b>₹ 106.00</b> to <b>₹ 198.46</b> (a wealth gain of ₹ 92.46 per share) due to the positive NPV of the new project.</p>
+
+    <p><b>3. Strategy for Investor to Maintain Target Annual Receipt of at least ₹ 2,000:</b></p>
+    <p>Expected market price at the end of each year during the dividend retention period:</p>
+    <ul>
+      <li>$$\\text{Price at end of Year 1 } (P_1) = \\frac{P_3}{(1 + K_e)^2} = \\frac{250}{(1.08)^2} = \\mathbf{₹ 214.33}$$</li>
+      <li>$$\\text{Price at end of Year 2 } (P_2) = \\frac{P_3}{(1 + K_e)^1} = \\frac{250}{1.08} = \\mathbf{₹ 231.48}$$</li>
+      <li>$$\\text{Price at end of Year 3 } (P_3) = \\mathbf{₹ 250.00}$$</li>
+    </ul>
+
+    <p>To realize cash receipts of at least ₹ 2,000 per year, the investor can create "homemade dividends" by selling shares:</p>
+    <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 12px; text-align: right;">
+      <thead>
+        <tr style="background-color: #f2f2f2;">
+          <th style="text-align: center;">Year</th>
+          <th style="text-align: right;">Opening Shares</th>
+          <th style="text-align: center;">Shares Sold</th>
+          <th style="text-align: right;">Selling Price per Share (₹)</th>
+          <th style="text-align: right;">Cash Generated (₹)</th>
+          <th style="text-align: right;">Closing Shares</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center;">1</td>
+          <td>1,000</td>
+          <td style="text-align: center;">10</td>
+          <td>214.33</td>
+          <td><b>2,143.30</b></td>
+          <td>990</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">2</td>
+          <td>990</td>
+          <td style="text-align: center;">9</td>
+          <td>231.48</td>
+          <td><b>2,083.32</b></td>
+          <td>981</td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">3</td>
+          <td>981</td>
+          <td style="text-align: center;">8</td>
+          <td>250.00</td>
+          <td><b>2,000.00</b></td>
+          <td>973</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><b>4. Position from Year 4 Onwards:</b></p>
+    <ul>
+      <li>At the end of Year 3, the investor still retains <b>973 shares</b> valued at $973 \\times ₹ 250 = ₹ 2,43,250$.</li>
+      <li>In Year 4, the company pays a dividend of ₹ 2.50 per share.</li>
+      <li>Annual dividend income in Year 4 = $973 \\text{ shares} \\times ₹ 2.50 = \\mathbf{₹ 2,432.50}$.</li>
+    </ul>
+    <p><b>Conclusion:</b> By selling a small fraction of shares annually, the investor successfully maintains the minimum target annual cash receipt of at least <b>₹ 2,000</b> during the three non-dividend years and earns an improved dividend income of <b>₹ 2,432.50</b> thereafter, which continues to grow @ 7% p.a.</p>
+  `
 }
 
 
