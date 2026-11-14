@@ -13546,8 +13546,723 @@ const descriptiveQuestions = [
     </ul>
     <p><b>Conclusion:</b> By selling a small fraction of shares annually, the investor successfully maintains the minimum target annual cash receipt of at least <b>₹ 2,000</b> during the three non-dividend years and earns an improved dividend income of <b>₹ 2,432.50</b> thereafter, which continues to grow @ 7% p.a.</p>
   `
-}
+},
+// Jan seriesII
+  {
+    question_id: "AFM_MTPDEC25_II_Q1A",
+    source: "ICAI AFM Mock Test Paper – Series II, December 2025",
+    chapter_name: "Foreign Exchange Exposure and Risk Management",
+    placement: 1,
+    marks: 6,
+    question_html: `
+      <p>On 20.10.2024, the balance in NOSTRO account with XYZ Bank in London was GBP 80,000 and the balance in overbought was GBP 50,000. During the day the following transactions have taken place:</p>
+      <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 80%; margin-bottom: 12px;">
+        <thead>
+          <tr style="background-color: #f2f2f2;">
+            <th style="text-align: left;">Events</th>
+            <th style="text-align: right;">Amount (GBP)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>DD Purchased</td>
+            <td style="text-align: right;">25,000</td>
+          </tr>
+          <tr>
+            <td>Purchased a bill on London</td>
+            <td style="text-align: right;">75,000</td>
+          </tr>
+          <tr>
+            <td>Sold forward TT</td>
+            <td style="text-align: right;">50,000</td>
+          </tr>
+          <tr>
+            <td>Forward purchased contract cancelled</td>
+            <td style="text-align: right;">25,000</td>
+          </tr>
+          <tr>
+            <td>Remitted by TT</td>
+            <td style="text-align: right;">42,500</td>
+          </tr>
+          <tr>
+            <td>Draft on London cancelled</td>
+            <td style="text-align: right;">20,000</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>What steps would you take, if you are required to maintain a credit balance of GBP 10,000 in the NOSTRO account and keep an overbought position of GBP 32,500?</p>
+    `,
+    solution_html: `
+      <p><b>1. Exchange Position (Open Position):</b></p>
+      <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 12px; text-align: right;">
+        <thead>
+          <tr style="background-color: #f2f2f2;">
+            <th style="text-align: left;">Particulars</th>
+            <th style="text-align: right;">Purchase GBP</th>
+            <th style="text-align: right;">Sale GBP</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: left;">Opening Balance (Overbought)</td>
+            <td>50,000</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">DD Purchased</td>
+            <td>25,000</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Purchased bill on London</td>
+            <td>75,000</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Forward Sales – TT</td>
+            <td>—</td>
+            <td>50,000</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Cancellation of Forward Purchase Contract</td>
+            <td>—</td>
+            <td>25,000</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Remitted by TT</td>
+            <td>—</td>
+            <td>42,500</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Draft on London cancelled (reversal of issue)</td>
+            <td>20,000</td>
+            <td>—</td>
+          </tr>
+          <tr style="font-weight: bold; background-color: #fafafa;">
+            <td style="text-align: left;">Total</td>
+            <td>1,70,000</td>
+            <td>1,17,500</td>
+          </tr>
+          <tr style="font-weight: bold;">
+            <td style="text-align: left;">Closing Overbought Balance (c/d)</td>
+            <td>—</td>
+            <td>52,500</td>
+          </tr>
+          <tr style="font-weight: bold; background-color: #f2f2f2;">
+            <td style="text-align: left;">Total</td>
+            <td>1,70,000</td>
+            <td>1,70,000</td>
+          </tr>
+        </tbody>
+      </table>
 
+      <p><b>2. Cash Position (NOSTRO Account):</b></p>
+      <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 12px; text-align: right;">
+        <thead>
+          <tr style="background-color: #f2f2f2;">
+            <th style="text-align: left;">Particulars</th>
+            <th style="text-align: right;">Credit (Inflow) GBP</th>
+            <th style="text-align: right;">Debit (Outflow) GBP</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: left;">Opening Balance (Credit)</td>
+            <td>80,000</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Remitted by TT</td>
+            <td>—</td>
+            <td>42,500</td>
+          </tr>
+          <tr style="font-weight: bold; background-color: #fafafa;">
+            <td style="text-align: left;">Total</td>
+            <td>80,000</td>
+            <td>42,500</td>
+          </tr>
+          <tr style="font-weight: bold;">
+            <td style="text-align: left;">Closing Balance (Credit) (c/d)</td>
+            <td>—</td>
+            <td>37,500</td>
+          </tr>
+          <tr style="font-weight: bold; background-color: #f2f2f2;">
+            <td style="text-align: left;">Total</td>
+            <td>80,000</td>
+            <td>80,000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><b>3. Recommended Steps:</b></p>
+      <ol>
+        <li><b>Adjustment to Nostro Balance:</b> The bank currently has a credit balance of GBP 37,500 in the Nostro Account. To bring it down to the target credit balance of GBP 10,000, the bank must <b>sell spot TT of GBP 27,500</b> ($\text{GBP } 37,500 - \text{GBP } 10,000$).</li>
+        <li><b>Impact on Exchange Position:</b> Selling spot TT of GBP 27,500 will reduce the overbought position from GBP 52,500 to <b>GBP 25,000</b> ($\text{GBP } 52,500 - \text{GBP } 27,500$).</li>
+        <li><b>Adjustment to Overbought Position:</b> Since the required closing overbought position is GBP 32,500, the bank must <b>buy forward GBP 7,500</b> ($\text{GBP } 32,500 - \text{GBP } 25,000$).</li>
+      </ol>
+    `
+  },
+  {
+    question_id: "AFM_MTPDEC25_II_Q1B",
+    source: "ICAI AFM Mock Test Paper – Series II, December 2025",
+    chapter_name: "Fixed Income Securities",
+    placement: 1,
+    marks: 4,
+    question_html: `
+      <p>Bank A enters into a Repo for 14 days with Bank B in 10% Government of India Bonds 2028 @ 5.65% for ₹ 8 crore. Assuming that clean price (the price that does not have accrued interest) be ₹ 99.42 and initial Margin be 2% and days of accrued interest be 262 days. You are required to determine:</p>
+      <p>(i) Dirty Price (Round off calculations up to two decimal points.)</p>
+      <p>(ii) Repayment at maturity. (Consider 360 days in a year and round off calculations to whole numbers.)</p>
+    `,
+    solution_html: `
+      <p><b>(i) Calculation of Dirty Price:</b></p>
+      <p>$$\\text{Accrued Interest} = \\text{Face Value} \\times \\text{Coupon Rate} \\times \\frac{\\text{Accrued Days}}{\\text{Days in Year}}$$</p>
+      <p>$$\\text{Accrued Interest} = 100 \\times 10\\% \\times \\frac{262}{360} = \\frac{2,620}{360} = ₹ 7.2778 \\approx \\mathbf{₹ 7.28}$$</p>
+      <p>$$\\text{Dirty Price} = \\text{Clean Price} + \\text{Accrued Interest} = 99.42 + 7.28 = \\mathbf{₹ 106.70}$$</p>
+
+      <p><b>(ii) Calculation of Repayment at Maturity:</b></p>
+      <p><b>Step 1: First Leg (Start Proceeds / Settlement Amount):</b></p>
+      <p>$$\\text{Start Proceeds} = \\text{Nominal Value} \\times \\frac{\\text{Dirty Price}}{100} \\times \\frac{100 - \\text{Initial Margin}}{100}$$</p>
+      <p>$$\\text{Start Proceeds} = ₹ 8,00,00,000 \\times \\frac{106.70}{100} \\times \\frac{100 - 2}{100}$$</p>
+      <p>$$\\text{Start Proceeds} = ₹ 8,00,00,000 \\times 1.0670 \\times 0.98 = \\mathbf{₹ 8,36,52,800}$$</p>
+
+      <p><b>Step 2: Second Leg (Repayment at Maturity):</b></p>
+      <p>$$\\text{Repayment at Maturity} = \\text{Start Proceeds} \\times \\left[1 + \\left(\\text{Repo Rate} \\times \\frac{\\text{No. of Days}}{360}\\right)\\right]$$</p>
+      <p>$$\\text{Repayment at Maturity} = ₹ 8,36,52,800 \\times \\left(1 + 0.0565 \\times \\frac{14}{360}\\right)$$</p>
+      <p>$$\\text{Repayment at Maturity} = ₹ 8,36,52,800 \\times (1 + 0.00219722) = \\mathbf{₹ 8,38,36,604}$$</p>
+    `
+  },
+  {
+    question_id: "AFM_MTPDEC25_II_Q1C",
+    source: "ICAI AFM Mock Test Paper – Series II, December 2025",
+    chapter_name: "Startup Finance",
+    placement: 1,
+    marks: 4,
+    question_html: `
+      <p>Explain the concept of Unicorn.</p>
+    `,
+    solution_html: `
+      <p>A <b>Unicorn</b> is a privately held startup company that has achieved a valuation of <b>US$ 1 billion</b> or more. The term was coined by venture capitalist <b>Aileen Lee</b> in 2013, choosing the mythical creature to represent the statistical rarity of such extraordinarily successful business ventures.</p>
+
+      <p><b>Key Features of a Unicorn:</b></p>
+      <ul>
+        <li><b>Privately Held Startup:</b> It is unlisted and privately financed, predominantly funded through private equity and venture capital.</li>
+        <li><b>US$ 1 Billion Valuation:</b> Its implied enterprise valuation reaches or exceeds US$ 1 billion in an institutional funding round.</li>
+        <li><b>Statistical Rarity:</b> Emphasizes the rare odds of an early-stage startup scaling successfully to that valuation benchmark.</li>
+        <li><b>Innovation and Disruption:</b> Commonly characterized by innovative business models, digital platforms, high reliance on technology, rapid scalability, and strong customer focus.</li>
+      </ul>
+
+      <p><b>Dynamic Nature of Unicorn Status:</b><br/>
+      Unicorn status is valuation-linked rather than permanent. If market conditions deteriorate or the firm experiences down-rounds causing its valuation to drop below US$ 1 billion, it loses its "Unicorn" status.</p>
+    `
+  },
+  {
+    question_id: "AFM_MTPDEC25_II_Q2A",
+    source: "ICAI AFM Mock Test Paper – Series II, December 2025",
+    chapter_name: "Security Analysis",
+    placement: 2,
+    marks: 10,
+    question_html: `
+      <p>The closing value of a Stock Market Index for the month of October, 2007 is given below:</p>
+      <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 60%; margin-bottom: 12px; text-align: center;">
+        <thead>
+          <tr style="background-color: #f2f2f2;">
+            <th style="text-align: center;">Date</th>
+            <th style="text-align: right;">Closing Index Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>01.10.07</td><td style="text-align: right;">2,800</td></tr>
+          <tr><td>03.10.07</td><td style="text-align: right;">2,780</td></tr>
+          <tr><td>04.10.07</td><td style="text-align: right;">2,795</td></tr>
+          <tr><td>05.10.07</td><td style="text-align: right;">2,830</td></tr>
+          <tr><td>08.10.07</td><td style="text-align: right;">2,760</td></tr>
+          <tr><td>09.10.07</td><td style="text-align: right;">2,790</td></tr>
+          <tr><td>10.10.07</td><td style="text-align: right;">2,880</td></tr>
+          <tr><td>11.10.07</td><td style="text-align: right;">2,960</td></tr>
+          <tr><td>12.10.07</td><td style="text-align: right;">2,990</td></tr>
+          <tr><td>15.10.07</td><td style="text-align: right;">3,200</td></tr>
+          <tr><td>16.10.07</td><td style="text-align: right;">3,300</td></tr>
+          <tr><td>17.10.07</td><td style="text-align: right;">3,450</td></tr>
+          <tr><td>19.10.07</td><td style="text-align: right;">3,360</td></tr>
+          <tr><td>22.10.07</td><td style="text-align: right;">3,290</td></tr>
+          <tr><td>23.10.07</td><td style="text-align: right;">3,360</td></tr>
+          <tr><td>24.10.07</td><td style="text-align: right;">3,340</td></tr>
+          <tr><td>25.10.07</td><td style="text-align: right;">3,290</td></tr>
+          <tr><td>29.10.07</td><td style="text-align: right;">3,240</td></tr>
+          <tr><td>30.10.07</td><td style="text-align: right;">3,140</td></tr>
+          <tr><td>31.10.07</td><td style="text-align: right;">3,260</td></tr>
+        </tbody>
+      </table>
+      <p>You are required to test the weak form of efficient market hypothesis by applying the run test at 5% and 10% level of significance.</p>
+      <p><b>Following values can be used:</b></p>
+      <ul>
+        <li>Value of $t$ at 5% is 2.101 at 18 degrees of freedom.</li>
+        <li>Value of $t$ at 10% is 1.734 at 18 degrees of freedom.</li>
+      </ul>
+    `,
+    solution_html: `
+      <p><b>1. Identification of Signs of Price Changes and Determination of Runs:</b></p>
+      <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 75%; margin-bottom: 12px; text-align: center;">
+        <thead>
+          <tr style="background-color: #f2f2f2;">
+            <th style="text-align: center;">Date</th>
+            <th style="text-align: right;">Closing Index</th>
+            <th style="text-align: center;">Sign of Price Change</th>
+            <th style="text-align: center;">Run Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>01.10.07</td><td style="text-align: right;">2,800</td><td>Base</td><td>—</td></tr>
+          <tr><td>03.10.07</td><td style="text-align: right;">2,780</td><td>$-$</td><td>Run 1</td></tr>
+          <tr><td>04.10.07</td><td style="text-align: right;">2,795</td><td>$+$</td><td rowspan="2">Run 2</td></tr>
+          <tr><td>05.10.07</td><td style="text-align: right;">2,830</td><td>$+$</td></tr>
+          <tr><td>08.10.07</td><td style="text-align: right;">2,760</td><td>$-$</td><td>Run 3</td></tr>
+          <tr><td>09.10.07</td><td style="text-align: right;">2,790</td><td>$+$</td><td rowspan="7">Run 4</td></tr>
+          <tr><td>10.10.07</td><td style="text-align: right;">2,880</td><td>$+$</td></tr>
+          <tr><td>11.10.07</td><td style="text-align: right;">2,960</td><td>$+$</td></tr>
+          <tr><td>12.10.07</td><td style="text-align: right;">2,990</td><td>$+$</td></tr>
+          <tr><td>15.10.07</td><td style="text-align: right;">3,200</td><td>$+$</td></tr>
+          <tr><td>16.10.07</td><td style="text-align: right;">3,300</td><td>$+$</td></tr>
+          <tr><td>17.10.07</td><td style="text-align: right;">3,450</td><td>$+$</td></tr>
+          <tr><td>19.10.07</td><td style="text-align: right;">3,360</td><td>$-$</td><td rowspan="2">Run 5</td></tr>
+          <tr><td>22.10.07</td><td style="text-align: right;">3,290</td><td>$-$</td></tr>
+          <tr><td>23.10.07</td><td style="text-align: right;">3,360</td><td>$+$</td><td>Run 6</td></tr>
+          <tr><td>24.10.07</td><td style="text-align: right;">3,340</td><td>$-$</td><td rowspan="4">Run 7</td></tr>
+          <tr><td>25.10.07</td><td style="text-align: right;">3,290</td><td>$-$</td></tr>
+          <tr><td>29.10.07</td><td style="text-align: right;">3,240</td><td>$-$</td></tr>
+          <tr><td>30.10.07</td><td style="text-align: right;">3,140</td><td>$-$</td></tr>
+          <tr><td>31.10.07</td><td style="text-align: right;">3,260</td><td>$+$</td><td>Run 8</td></tr>
+        </tbody>
+      </table>
+
+      <p><b>Summary of Observations:</b></p>
+      <ul>
+        <li>Number of positive changes ($n_1$) = <b>11</b></li>
+        <li>Number of negative changes ($n_2$) = <b>8</b></li>
+        <li>Total price changes ($n_1 + n_2$) = $11 + 8 = 19$</li>
+        <li>Total number of runs observed ($r$) = <b>8</b></li>
+      </ul>
+
+      <p><b>2. Computation of Expected Mean ($\mu_r$) and Standard Deviation ($\sigma_r$):</b></p>
+      <p><b>Expected Mean of Runs ($\mu_r$):</b></p>
+      <p>$$\\mu_r = \\frac{2 n_1 n_2}{n_1 + n_2} + 1 = \\frac{2 \\times 11 \\times 8}{11 + 8} + 1 = \\frac{176}{19} + 1 = 9.263 + 1 = \\mathbf{10.26}$$</p>
+
+      <p><b>Standard Deviation of Runs ($\\sigma_r$):</b></p>
+      <p>$$\\sigma_r = \\sqrt{\\frac{2 n_1 n_2 (2 n_1 n_2 - n_1 - n_2)}{(n_1 + n_2)^2 (n_1 + n_2 - 1)}} = \\sqrt{\\frac{176 \\times (176 - 19)}{(19)^2 \\times (19 - 1)}} = \\sqrt{\\frac{176 \\times 157}{361 \\times 18}} = \\sqrt{\\frac{27,632}{6,498}} = \\sqrt{4.2524} = \\mathbf{2.06}$$</p>
+
+      <p><b>3. Two-Tailed Hypothesis Test for Randomness of Price Movements:</b></p>
+      <p>Degrees of freedom $= (n_1 + n_2) - 1 = 19 - 1 = 18$.</p>
+
+      <p><b>(a) Test at 5% Level of Significance ($t = 2.101$):</b></p>
+      <ul>
+        <li>$$\\text{Lower Limit} = \\mu_r - t \\times \\sigma_r = 10.26 - (2.101 \\times 2.06) = 10.26 - 4.328 = \\mathbf{5.932}$$</li>
+        <li>$$\\text{Upper Limit} = \\mu_r + t \\times \\sigma_r = 10.26 + (2.101 \\times 2.06) = 10.26 + 4.328 = \\mathbf{14.588}$$</li>
+      </ul>
+
+      <p><b>(b) Test at 10% Level of Significance ($t = 1.734$):</b></p>
+      <ul>
+        <li>$$\\text{Lower Limit} = \\mu_r - t \\times \\sigma_r = 10.26 - (1.734 \\times 2.06) = 10.26 - 3.572 = \\mathbf{6.688}$$</li>
+        <li>$$\\text{Upper Limit} = \\mu_r + t \\times \\sigma_r = 10.26 + (1.734 \\times 2.06) = 10.26 + 3.572 = \\mathbf{13.832}$$</li>
+      </ul>
+
+      <p><b>Conclusion:</b><br/>
+      The observed number of runs ($r = 8$) lies comfortably within the acceptance range for both the <b>5% level</b> ($5.932$ to $14.588$) and the <b>10% level</b> ($6.688$ to $13.832$). Hence, the null hypothesis of randomness cannot be rejected, and the market exhibits <b>weak form of market efficiency</b>.</p>
+    `
+  },
+  {
+    question_id: "AFM_MTPDEC25_II_Q2B",
+    source: "ICAI AFM Mock Test Paper – Series II, December 2025",
+    chapter_name: "Securitization",
+    placement: 2,
+    marks: 4,
+    question_html: `
+      <p>Explain the benefits of Securitization from the angle of originator.</p>
+    `,
+    solution_html: `
+      <p>The <b>Originator</b> (the entity that packages and sells its financial assets/receivables collectively to a Special Purpose Vehicle) achieves the following key benefits from securitization:</p>
+      <ol>
+        <li><b>Off-Balance Sheet Financing:</b> When loans/receivables are securitized, it liquidates and releases capital previously tied up in illiquid assets. This derecognition results in off-balance sheet financing, improving liquidity and providing working capital to fund business growth without taking on additional debt.</li>
+        <li><b>More Specialization in Main Business:</b> Transferring assets allows the entity to focus resources on core business functions (underwriting, originating, and client acquisition), while asset administration and loan servicing are transferred to the SPV. In non-recourse arrangements, the credit risk of default is also shifted to investors.</li>
+        <li><b>Helps to Improve Financial Ratios:</b> For financial institutions and NBFCs/banks, securitizing loans removes risk-weighted assets from the balance sheet. This helps in managing and substantially improving the <b>Capital-to-Risk-Weighted Assets Ratio (CRAR / CAR)</b>.</li>
+        <li><b>Reduced Borrowing Cost:</b> Because securitized debt papers typically receive higher credit ratings via credit enhancement mechanisms, they can be issued to investors at lower interest yields. This generates an attractive spread for the originator, driving down overall financing costs.</li>
+      </ol>
+    `
+  },
+  {
+    question_id: "AFM_MTPDEC25_II_Q3A",
+    source: "ICAI AFM Mock Test Paper – Series II, December 2025",
+    chapter_name: "International Financial Management",
+    placement: 3,
+    marks: 6,
+    question_html: `
+      <p>XY Ltd., is interested in expanding its operation and planning to install a unit at US. For the proposed project, it requires a fund of $ 15 million (net of issue expenses/floatation cost). The estimated floatation cost is 3%. To finance the project it proposes to issue GDRs.</p>
+      <p>You as a financial consultant is required to compute the number of GDRs to be issued and cost of the GDR with the help of following additional information:</p>
+      <ol type="i">
+        <li>Expected market price of share at the time of issue of GDR is ₹ 350 (Face Value ₹ 100).</li>
+        <li>3 shares shall underly each GDR and shall be priced at 6% discount to market price.</li>
+        <li>Expected Exchange Rate ₹ 84/$.</li>
+        <li>Dividend expected to be paid is 10% with growth rate of 8%.</li>
+      </ol>
+    `,
+    solution_html: `
+      <p><b>1. Basic Computations:</b></p>
+      <ul>
+        <li>$$\\text{Net Issue Size Required} = \\$ 15 \\text{ million}$$</li>
+        <li>$$\\text{Gross Issue Size} = \\frac{\\text{Net Issue Size}}{1 - \\text{Floatation Cost}} = \\frac{\\$ 15 \\text{ million}}{1 - 0.03} = \\frac{\\$ 15 \\text{ million}}{0.97} = \\mathbf{\\$ 15.464 \\text{ million}}$$</li>
+        <li>$$\\text{Issue Price per Share} = ₹ 350 \\times (1 - 0.06) = ₹ 350 \\times 0.94 = ₹ 329$$</li>
+        <li>$$\\text{Issue Price per GDR in ₹} = 3 \\text{ shares} \\times ₹ 329 = \\mathbf{₹ 987}$$</li>
+        <li>$$\\text{Issue Price per GDR in \\$} = \\frac{₹ 987}{₹ 84/\\$} = \\mathbf{\\$ 11.75}$$</li>
+        <li>$$\\text{Dividend per GDR } (D_1) = 3 \\text{ shares} \\times (10\\% \\times ₹ 100) = 3 \\times ₹ 10 = \\mathbf{₹ 30}$$</li>
+        <li>$$\\text{Net Proceeds per GDR in ₹ } (NP) = ₹ 987 \\times (1 - 0.03) = ₹ 987 \\times 0.97 = \\mathbf{₹ 957.39}$$</li>
+      </ul>
+
+      <p><b>(i) Number of GDRs to be Issued:</b></p>
+      <p>$$\\text{Number of GDRs} = \\frac{\\text{Gross Issue Size in \\$}}{\\text{Issue Price per GDR in \\$}} = \\frac{\\$ 15.464 \\text{ million}}{\\$ 11.75} = \\mathbf{1.316085 \\text{ million}} \\text{ or } \\mathbf{13,16,085 \\text{ GDRs}}$$</p>
+      <p><i>(Alternatively, using exact gross issue $\\frac{\\$ 15,000,000}{0.97 \\times 11.75} = \\mathbf{13,16,078 \\text{ GDRs}}$)</i></p>
+
+      <p><b>(ii) Cost of GDR to XY Ltd. ($K_e$ / $K_{GDR}$):</b></p>
+      <p>$$K_{GDR} = \\frac{D_1}{NP} + g$$</p>
+      <p>$$K_{GDR} = \\frac{₹ 30.00}{₹ 957.39} + 0.08 = 0.031335 + 0.08 = 0.111335 \\text{ or } \\mathbf{11.13\\%}$$</p>
+    `
+  },
+  {
+    question_id: "AFM_MTPDEC25_II_Q3B",
+    source: "ICAI AFM Mock Test Paper – Series II, December 2025",
+    chapter_name: "Security Valuation",
+    placement: 3,
+    marks: 4,
+    question_html: `
+      <p>ABC Ltd. has been maintaining a growth rate of 10 percent in dividends. The company has paid dividend @ ₹ 3 per share. The rate of return on market portfolio is 12 percent and the risk free rate of return in the market has been observed as 8 percent. The Beta co-efficient of company’s share is 1.5.</p>
+      <p>You are required to calculate the expected rate of return on company’s shares as per CAPM model and equilibrium price per share by dividend growth model.</p>
+    `,
+    solution_html: `
+      <p><b>1. Calculation of Expected Rate of Return using CAPM:</b></p>
+      <p>$$E(R) = R_f + \\beta (R_m - R_f)$$</p>
+      <p>Where:</p>
+      <ul>
+        <li>Risk-free rate ($R_f$) = $8\\%$</li>
+        <li>Return on market portfolio ($R_m$) = $12\\%$</li>
+        <li>Beta ($\\beta$) = $1.5$</li>
+      </ul>
+      <p>$$E(R) = 8\\% + 1.5 \\times (12\\% - 8\\%) = 8\\% + 1.5 \\times 4\\% = 8\\% + 6\\% = \\mathbf{14\\%} \\text{ or } 0.14$$</p>
+
+      <p><b>2. Calculation of Equilibrium Price per Share by Dividend Growth Model:</b></p>
+      <p>Under the Dividend Growth Model:</p>
+      <p>$$P_0 = \\frac{D_1}{K_e - g} = \\frac{D_0(1 + g)}{K_e - g}$$</p>
+      <p>Where:</p>
+      <ul>
+        <li>Current dividend paid ($D_0$) = $₹ 3$</li>
+        <li>Growth rate ($g$) = $10\\% = 0.10$</li>
+        <li>Expected dividend next year ($D_1$) = $3 \\times (1 + 0.10) = ₹ 3.30$</li>
+        <li>Cost of equity ($K_e = E(R)$) = $14\\% = 0.14$</li>
+      </ul>
+      <p>$$P_0 = \\frac{₹ 3.30}{0.14 - 0.10} = \\frac{₹ 3.30}{0.04} = \\mathbf{₹ 82.50}$$</p>
+      <p>Therefore, the per share equilibrium price is <b>₹ 82.50</b>.</p>
+    `
+  },
+  {
+    question_id: "AFM_MTPDEC25_II_Q3C",
+    source: "ICAI AFM Mock Test Paper – Series II, December 2025",
+    chapter_name: "Startup Finance",
+    placement: 3,
+    marks: 4,
+    question_html: `
+      <p><b>Either</b></p>
+      <p>Explain why applying the three most common globally accepted business valuation methods is challenging when valuing a startup.</p>
+      <p><b>Or</b></p>
+      <p>Explain some similarities between Tokenization and Securitization.</p>
+    `,
+    solution_html: `
+      <p><b>Answer to Either:</b></p>
+      <p>One common feature in the three most common globally accepted methods of valuing a business (Asset-based, Market-based, and Income/DCF-based approaches) is that they presuppose a business that is established and generates cash flows using its assets.</p>
+      <p>Applying these traditional methods to startups is challenging due to the following reasons:</p>
+      <ul>
+        <li><b>Lack of Establishment and Constant Cash Flows:</b> It is difficult to call startups "established" in any sense or to assume that their cash flows (if not already spent on marketing and customer acquisition) will remain steady. Startups often operate with initial losses and negative cash flows.</li>
+        <li><b>Absence of Historical Data:</b> The most significant differentiating factor in startup valuation is that there is no historical operating or financial track record available upon which reliable future projections can be constructed.</li>
+        <li><b>Reliance on Untested Ideas:</b> The valuation rests entirely on future growth potential, which in many cases is based on an untested idea and may not have been vetted with adequate sampling of consumer behaviour.</li>
+        <li><b>Subjective Founder Assessments:</b> Projections are often based upon subjective assessments of the competence, drive, and vision of founders/management and their capacity to turn an idea into commercial success rather than concrete balance sheet strength.</li>
+      </ul>
+
+      <hr style="margin: 16px 0; border: 0; border-top: 1px solid #ccc;" />
+
+      <p><b>Answer to Or:</b></p>
+      <p>The following are key similarities between <b>Tokenization</b> and <b>Securitization</b>:</p>
+      <ol>
+        <li><b>Liquidity Enhancement:</b> Both securitization and tokenization inject liquidity into the market by converting otherwise illiquid assets (such as real estate, receivables, or debt) into tradeable units.</li>
+        <li><b>Portfolio Diversification:</b> Both structures allow retail and institutional investors to acquire fractional ownership of large asset pools, enabling portfolio diversification and optimized risk-return profiles.</li>
+        <li><b>Tradability:</b> Both produce tradeable financial instruments (Securities / Tokens) that can be bought and sold in primary and secondary markets to generate wealth.</li>
+        <li><b>New Fee Opportunities:</b> Both create operational ecosystems that enable financial institutions, intermediaries, and servicing agencies to earn fee-based income through underwriting, structuring, issuance, and ongoing administration.</li>
+      </ol>
+    `
+  },
+  {
+    question_id: "AFM_MTPDEC25_II_Q4A",
+    source: "ICAI AFM Mock Test Paper – Series II, December 2025",
+    chapter_name: "Advanced Capital Budgeting Decisions",
+    placement: 4,
+    marks: 6,
+    question_html: `
+      <p>Cyber Company is considering two mutually exclusive projects. Investment outlay of both the projects is ₹ 5,00,000 and each is expected to have a life of 5 years. Under three possible situations their annual cash flows and probabilities are as under:</p>
+      <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 80%; margin-bottom: 12px; text-align: center;">
+        <thead>
+          <tr style="background-color: #f2f2f2;">
+            <th style="text-align: left;">Situation</th>
+            <th style="text-align: center;">Probabilities</th>
+            <th style="text-align: right;">Cash Flow – Project A (₹)</th>
+            <th style="text-align: right;">Cash Flow – Project B (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: left;">Good</td>
+            <td>0.3</td>
+            <td style="text-align: right;">6,00,000</td>
+            <td style="text-align: right;">5,00,000</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Normal</td>
+            <td>0.4</td>
+            <td style="text-align: right;">4,00,000</td>
+            <td style="text-align: right;">4,00,000</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Worse</td>
+            <td>0.3</td>
+            <td style="text-align: right;">2,00,000</td>
+            <td style="text-align: right;">3,00,000</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>The cost of capital is 7 per cent, which project should be accepted? Explain with workings.</p>
+    `,
+    solution_html: `
+      <p><b>1. Project A:</b></p>
+      <p><b>(i) Expected Net Cash Flow (ENCF):</b></p>
+      <p>$$\\text{ENCF}_A = (0.3 \\times 6,00,000) + (0.4 \\times 4,00,000) + (0.3 \\times 2,00,000)$$</p>
+      <p>$$\\text{ENCF}_A = 1,80,000 + 1,60,000 + 60,000 = \\mathbf{₹ 4,00,000}$$</p>
+
+      <p><b>(ii) Variance ($\\sigma^2$) and Standard Deviation ($\\sigma$):</b></p>
+      <p>$$\\sigma_A^2 = \\sum P_i (CF_i - \\text{ENCF})^2$$</p>
+      <p>$$\\sigma_A^2 = 0.3(6,00,000 - 4,00,000)^2 + 0.4(4,00,000 - 4,00,000)^2 + 0.3(2,00,000 - 4,00,000)^2$$</p>
+      <p>$$\\sigma_A^2 = 0.3(2,00,000)^2 + 0 + 0.3(-2,00,000)^2 = 12,00,00,00,000 + 12,00,00,00,000 = 24,00,00,00,000$$</p>
+      <p>$$\\sigma_A = \\sqrt{24,00,00,00,000} = \\mathbf{₹ 1,54,919.33}$$</p>
+
+      <p><b>(iii) Net Present Value (NPV):</b></p>
+      <p>Cumulative PV factor for 5 years @ 7% (PVIFA$_{7\\%, 5}$) = $4.100$</p>
+      <p>$$\\text{PV of Cash Inflows} = ₹ 4,00,000 \\times 4.100 = ₹ 16,40,000$$</p>
+      <p>$$\\text{NPV}_A = ₹ 16,40,000 - ₹ 5,00,000 = \\mathbf{₹ 11,40,000}$$</p>
+
+      <hr style="margin: 16px 0; border: 0; border-top: 1px solid #ccc;" />
+
+      <p><b>2. Project B:</b></p>
+      <p><b>(i) Expected Net Cash Flow (ENCF):</b></p>
+      <p>$$\\text{ENCF}_B = (0.3 \\times 5,00,000) + (0.4 \\times 4,00,000) + (0.3 \\times 3,00,000)$$</p>
+      <p>$$\\text{ENCF}_B = 1,50,000 + 1,60,000 + 90,000 = \\mathbf{₹ 4,00,000}$$</p>
+
+      <p><b>(ii) Variance ($\\sigma^2$) and Standard Deviation ($\\sigma$):</b></p>
+      <p>$$\\sigma_B^2 = \\sum P_i (CF_i - \\text{ENCF})^2$$</p>
+      <p>$$\\sigma_B^2 = 0.3(5,00,000 - 4,00,000)^2 + 0.4(4,00,000 - 4,00,000)^2 + 0.3(3,00,000 - 4,00,000)^2$$</p>
+      <p>$$\\sigma_B^2 = 0.3(1,00,000)^2 + 0 + 0.3(-1,00,000)^2 = 3,00,00,00,000 + 3,00,00,00,000 = 6,00,00,00,000$$</p>
+      <p>$$\\sigma_B = \\sqrt{6,00,00,00,000} = \\mathbf{₹ 77,459.66}$$</p>
+
+      <p><b>(iii) Net Present Value (NPV):</b></p>
+      <p>$$\\text{PV of Cash Inflows} = ₹ 4,00,000 \\times 4.100 = ₹ 16,40,000$$</p>
+      <p>$$\\text{NPV}_B = ₹ 16,40,000 - ₹ 5,00,000 = \\mathbf{₹ 11,40,000}$$</p>
+
+      <hr style="margin: 16px 0; border: 0; border-top: 1px solid #ccc;" />
+
+      <p><b>Recommendation:</b></p>
+      <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 60%; margin-bottom: 12px; text-align: center;">
+        <thead>
+          <tr style="background-color: #f2f2f2;">
+            <th style="text-align: left;">Project</th>
+            <th style="text-align: right;">NPV (₹)</th>
+            <th style="text-align: right;">Standard Deviation (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: left;">Project A</td>
+            <td style="text-align: right;">11,40,000</td>
+            <td style="text-align: right;">1,54,919.33</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Project B</td>
+            <td style="text-align: right;">11,40,000</td>
+            <td style="text-align: right;">77,459.66</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Since the Expected Net Present Value (NPV) of both projects is identical at <b>₹ 11,40,000</b>, the decision must be made on the basis of risk (Standard Deviation). <b>Project B</b> has a substantially lower standard deviation (₹ 77,459.66 vs ₹ 1,54,919.33), indicating lower risk. Therefore, <b>Project B should be accepted</b>.</p>
+    `
+  },
+  {
+    question_id: "AFM_MTPDEC25_II_Q4B",
+    source: "ICAI AFM Mock Test Paper – Series II, December 2025",
+    chapter_name: "Mutual Funds",
+    placement: 4,
+    marks: 4,
+    question_html: `
+      <p>An investor purchased 300 units of a Mutual Fund at ₹ 12.25 per unit on 31<sup>st</sup> December, 2019. As on 31<sup>st</sup> December, 2020 he has received ₹ 1.25 as dividend and ₹ 1.00 as capital gains distribution per unit.</p>
+      <p><b>Required:</b></p>
+      <p>(i) The return on the investment if the NAV as on 31<sup>st</sup> December, 2020 is ₹ 13.00.</p>
+      <p>(ii) The return on the investment as on 31<sup>st</sup> December, 2020 if all dividends and capital gains distributions are reinvested into additional units of the fund at ₹ 12.50 per unit.</p>
+    `,
+    solution_html: `
+      <p><b>(i) Return on Investment (Without Reinvestment):</b></p>
+      <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 60%; margin-bottom: 12px;">
+        <thead>
+          <tr style="background-color: #f2f2f2;">
+            <th style="text-align: left;">Particulars</th>
+            <th style="text-align: right;">Amount (₹/Unit)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Capital Appreciation (NAV$_1$ ₹ 13.00 $-$ NAV$_0$ ₹ 12.25)</td>
+            <td style="text-align: right;">0.75</td>
+          </tr>
+          <tr>
+            <td>Dividend received ($D_1$)</td>
+            <td style="text-align: right;">1.25</td>
+          </tr>
+          <tr>
+            <td>Capital gain distribution ($CG_1$)</td>
+            <td style="text-align: right;">1.00</td>
+          </tr>
+          <tr style="font-weight: bold; background-color: #fafafa;">
+            <td>Total Return per unit</td>
+            <td style="text-align: right;">3.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>$$\\text{Return on Investment} = \\frac{(\\text{NAV}_1 - \\text{NAV}_0) + D_1 + CG_1}{\\text{NAV}_0} \\times 100$$</p>
+      <p>$$\\text{Return on Investment} = \\frac{(13.00 - 12.25) + 1.25 + 1.00}{12.25} \\times 100 = \\frac{3.00}{12.25} \\times 100 = \\mathbf{24.49\\%}$$</p>
+
+      <p><b>(ii) Return on Investment (With Reinvestment @ ₹ 12.50 per unit):</b></p>
+      <ul>
+        <li>$$\\text{Total distribution received per unit} = ₹ 1.25 + ₹ 1.00 = ₹ 2.25$$</li>
+        <li>$$\\text{Total amount reinvested} = 300 \\text{ units} \\times ₹ 2.25 = ₹ 675$$</li>
+        <li>$$\\text{Additional units purchased} = \\frac{₹ 675}{₹ 12.50} = \\mathbf{54 \\text{ units}}$$</li>
+        <li>$$\\text{Total closing units as on 31.12.2020} = 300 + 54 = \\mathbf{354 \\text{ units}}$$</li>
+        <li>$$\\text{Closing value of investment (354 units } \\times ₹ 13.00) = \\mathbf{₹ 4,602}$$</li>
+        <li>$$\\text{Initial cost of investment (300 units } \\times ₹ 12.25) = \\mathbf{₹ 3,675}$$</li>
+      </ul>
+
+      <p>$$\\text{Return on Investment} = \\frac{\\text{Closing Value} - \\text{Initial Investment}}{\\text{Initial Investment}} \\times 100$$</p>
+      <p>$$\\text{Return on Investment} = \\frac{₹ 4,602 - ₹ 3,675}{₹ 3,675} \\times 100 = \\frac{₹ 927}{₹ 3,675} \\times 100 = \\mathbf{25.22\\%}$$</p>
+    `
+  },
+  {
+    question_id: "AFM_MTPDEC25_II_Q4C",
+    source: "ICAI AFM Mock Test Paper – Series II, December 2025",
+    chapter_name: "International Financial Management",
+    placement: 4,
+    marks: 4,
+    question_html: `
+      <p>Explain the benefits of International Financial Centre.</p>
+    `,
+    solution_html: `
+      <p>An <b>International Financial Services Centre (IFSC)</b> caters to customers outside the jurisdiction of the domestic economy, dealing with cross-border financial products and services. The major benefits emanating from establishing an IFSC are as follows:</p>
+      <ol>
+        <li><b>Employment for Returning Professionals:</b> Provides an opportunity for highly qualified finance, accounting, and legal professionals working outside India to return to their home country and practice their profession.</li>
+        <li><b>Global Opportunities for Domestic Talent:</b> Acts as a world-class platform enabling talented professionals to pursue global career opportunities and execute high-value cross-border transactions without having to relocate abroad.</li>
+        <li><b>Mitigates Brain Drain:</b> Helps arrest the migration of skilled intellectual and professional talent (brain drain) from the country.</li>
+        <li><b>Re-shoring Financial Services:</b> Brings back offshore financial services and transactions currently executed in global financial hubs (e.g., Singapore, Dubai, London) by overseas entities, foreign branches, or subsidiaries of Indian financial institutions back to the Indian financial ecosystem.</li>
+        <li><b>Advanced Derivative Trading:</b> Enables onshore execution, structuring, and trading of sophisticated and complex financial derivative products within a globally aligned regulatory framework.</li>
+      </ol>
+    `
+  },
+  {
+    question_id: "AFM_MTPDEC25_II_Q5A",
+    source: "ICAI AFM Mock Test Paper – Series II, December 2025",
+    chapter_name: "Portfolio Management",
+    placement: 5,
+    marks: 8,
+    question_html: `
+      <p>The total market value of the equity share of O.R.E. Company is ₹ 60,00,000 and the total value of the debt is ₹ 40,00,000. The treasurer estimates that the beta of the stock is currently 1.5 and that the expected risk premium on the market is 10 per cent. The treasury bill rate is 8 per cent.</p>
+      <p><b>Required:</b></p>
+      <p>(i) What is the beta of the Company’s existing portfolio of assets?</p>
+      <p>(ii) Estimate the discount rate for an expansion of the company’s present business if only equity is used to finance the expansion.</p>
+    `,
+    solution_html: `
+      <p><b>(i) Computation of Beta of the Company's Existing Portfolio of Assets ($\beta_{asset}$):</b></p>
+      <p>The beta of the company's total assets is the weighted average of the betas of its capital components:</p>
+      <p>$$\\beta_{asset} = \\beta_{equity} \\times \\left(\\frac{V_E}{V_0}\\right) + \\beta_{debt} \\times \\left(\\frac{V_D}{V_0}\\right)$$</p>
+      <p>Where:</p>
+      <ul>
+        <li>Value of Equity ($V_E$) = ₹ 60,00,000</li>
+        <li>Value of Debt ($V_D$) = ₹ 40,00,000</li>
+        <li>Total Value of Firm ($V_0 = V_E + V_D$) = ₹ 60,00,000 + ₹ 40,00,000 = ₹ 1,00,00,000</li>
+        <li>Beta of Equity ($\\beta_{equity}$) = $1.5$</li>
+        <li><i>Note:</i> Since $\\beta_{debt}$ is not provided, the company's debt capital is assumed to be risk-free, i.e., $\\beta_{debt} = 0$.</li>
+      </ul>
+      <p>Substituting the values:</p>
+      <p>$$\\beta_{asset} = 1.5 \\times \\left(\\frac{₹ 60,00,000}{₹ 1,00,00,000}\\right) + 0 \\times \\left(\\frac{₹ 40,00,00,000}{₹ 1,00,00,000}\\right)$$</p>
+      <p>$$\\beta_{asset} = 1.5 \\times 0.60 = \\mathbf{0.90}$$</p>
+
+      <p><b>(ii) Discount Rate for Expansion of the Present Business Financed Only by Equity:</b></p>
+      <p>An expansion of the existing business carries the same operating/business risk as the company's existing assets. Therefore, the relevant project beta is the <b>Asset Beta ($\beta_{asset} = 0.90$)</b>.</p>
+      <p>If the expansion is financed entirely by equity, there is no additional financial leverage risk. The required rate of return (Cost of Capital / Discount Rate) using CAPM is computed as:</p>
+      <p>$$\\text{Cost of Capital } (K_e) = R_f + \\beta_{asset} \\times (R_m - R_f)$$</p>
+      <p>Where:</p>
+      <ul>
+        <li>Risk-free rate ($R_f$) = $8\\%$</li>
+        <li>Market Risk Premium ($R_m - R_f$) = $10\\%$</li>
+        <li>Asset Beta ($\\beta_{asset}$) = $0.90$</li>
+      </ul>
+      <p>$$\\text{Cost of Capital} = 8\\% + (0.90 \\times 10\\%) = 8\\% + 9\\% = \\mathbf{17\\%}$$</p>
+      <p>Thus, the overall cost of capital, i.e., the discounting rate for the expansion project, is <b>17%</b>.</p>
+    `
+  },
+  {
+    question_id: "AFM_MTPDEC25_II_Q5B",
+    source: "ICAI AFM Mock Test Paper – Series II, December 2025",
+    chapter_name: "Interest Rate Risk Management",
+    placement: 5,
+    marks: 6,
+    question_html: `
+      <p>XY Ltd. is planning to expand its operations in view of growing demand for its products. For this purpose, it is considering to borrow an amount of ₹ 100 crores for a period of 3 months in the coming 6 months' time from now. The current rate of interest is 8% per annum but due to inflation it may go up in 6 months' time. The company wants to hedge itself against the likely increase in interest rate.</p>
+      <p>The company's Bankers quoted an FRA (Forward Rate Agreement) at 8.20% per annum.</p>
+      <p>You are required to calculate due to FRA:</p>
+      <p>(i) The actual interest rate if the Banker pays to XY Ltd. an amount of ₹ 9,78,952.52</p>
+      <p>(ii) The actual interest rate if XY Ltd. will pay to the Banker a sum of ₹ 9,80,872.98</p>
+    `,
+    solution_html: `
+      <p><b>Formula for FRA Settlement Amount:</b></p>
+      <p>The settlement amount payable or receivable at the beginning of the borrowing period is computed as:</p>
+      <p>$$\\text{Settlement Amount} = \\frac{N \\times (RR - FR) \\times \\left(\\frac{dtm}{DY}\\right)}{1 + \\left[RR \\times \\left(\\frac{dtm}{DY}\\right)\\right]}$$</p>
+      <p>Where:</p>
+      <ul>
+        <li>$N$ = Notional Principal = ₹ 100 Crores = ₹ 1,00,00,00,000</li>
+        <li>$FR$ = Agreed Forward Rate = $8.20\\% = 0.082$</li>
+        <li>$RR$ = Actual Reference Rate prevailing on settlement date</li>
+        <li>$dtm$ = Maturity period in months = 3 months</li>
+        <li>$DY$ = Total months in a year = 12 months $\\implies \\frac{dtm}{DY} = \\frac{3}{12} = 0.25$</li>
+      </ul>
+
+      <p><b>(i) Calculation of Actual Interest Rate if Banker pays ₹ 9,78,952.52 to XY Ltd.:</b></p>
+      <p>Since the banker pays the company, the reference rate ($RR$) must be greater than the agreed forward rate ($FR$):</p>
+      <p>$$9,78,952.52 = \\frac{1,00,00,00,000 \\times (RR - 0.082) \\times 0.25}{1 + (RR \\times 0.25)}$$</p>
+      <p>$$9,78,952.52 = \\frac{25,00,00,000 \\times (RR - 0.082)}{1 + 0.25 RR}$$</p>
+      <p>$$9,78,952.52 \\times (1 + 0.25 RR) = 25,00,00,000 RR - 2,05,00,000$$</p>
+      <p>$$9,78,952.52 + 2,44,738.13 RR = 25,00,00,000 RR - 2,05,00,000$$</p>
+      <p>$$24,97,55,261.87 RR = 2,14,78,952.52$$</p>
+      <p>$$RR = \\frac{2,14,78,952.52}{24,97,55,261.87} = 0.0860 \\text{ or } \\mathbf{8.60\\%}$$</p>
+      <p>Thus, the actual interest rate prevailing on settlement date is <b>8.60%</b>.</p>
+
+      <p><b>(ii) Calculation of Actual Interest Rate if XY Ltd. pays ₹ 9,80,872.98 to Banker:</b></p>
+      <p>Since XY Ltd. pays the banker, the reference rate ($RR$) has fallen below the agreed forward rate ($FR$):</p>
+      <p>$$-9,80,872.98 = \\frac{1,00,00,00,000 \\times (RR - 0.082) \\times 0.25}{1 + (RR \\times 0.25)}$$</p>
+      <p>$$-9,80,872.98 \\times (1 + 0.25 RR) = 25,00,00,000 RR - 2,05,00,000$$</p>
+      <p>$$-9,80,872.98 - 2,45,218.245 RR = 25,00,00,000 RR - 2,05,00,000$$</p>
+      <p>$$25,02,45,218.25 RR = 2,05,00,000 - 9,80,872.98$$</p>
+      <p>$$25,02,45,218.25 RR = 1,95,19,127.02$$</p>
+      <p>$$RR = \\frac{1,95,19,127.02}{25,02,45,218.25} = 0.0780 \\text{ or } \\mathbf{7.80\\%}$$</p>
+      <p>Thus, the actual interest rate prevailing on settlement date is <b>7.80%</b>.</p>
+    `
+  }
 
 
 ];
