@@ -1,6 +1,6 @@
 ﻿/**
- * CA Final Indirect Tax Laws (IDT) - Comprehensive Master Search Index
- * Contains all 32 Chapters, Statutory Sections, Sub-topics, Rules, Circulars, and ICAI Solved TYK Questions.
+ * Calcium Notes - Master Search Index for CA Final IDT (Paper 5)
+ * Total Indexed Items: 358
  */
 window.IDT_SEARCH_INDEX = [
     {
@@ -2850,5 +2850,22 @@ window.IDT_SEARCH_INDEX = [
         "url":  "../final/IDT/value_of_supply.html#test-your-knowledge",
         "keywords":  "16. icai \"test your knowledge\" â€” all 15 solved case studies chapter 6: value of supply test-your-knowledge complete step-by-step examination solutions for all 15 test your knowledge questions from icai ca final idt module 1: ðÿž¯ tyk question 1 â€¢ tcs under income-tax act \u0026 section 15(2)(a) question: \"income tax collected at source should be included in value of the supply in terms of section 15(2)(a).\" ex",
         "summary":  "Complete step-by-step examination solutions for all 15 Test Your Knowledge questions from ICAI CA Final IDT Module 1: ðŸŽ¯ TYK Question 1 â€..."
+    },
+    {
+        "type":  "section",
+        "title":  "Section 17(5): Blocked Credit (Ineligible Input Tax Credit)",
+        "subtitle":  "Chapter 7: Input Tax Credit (ITC)",
+        "url":  "../final/IDT/input_tax_credit.html#sec-17-5",
+        "keywords":  "section 17 5 17(5) blocked credit ineligible itc motor vehicles seating capacity \u003c= 13 food and beverages outdoor catering health insurance works contract immovable property construction personal consumption free samples gifts goods lost stolen destroyed written off",
+        "summary":  "Statutory list of blocked input tax credits under Section 17(5) of CGST Act: motor vehicles with seating capacity \u003c= 13 (except when used for taxable supply of vehicles, training, transportation of passengers), food \u0026 beverages, works contract for immovable property, goods lost/stolen/destroyed, gifts \u0026 free samples."
+    },
+    {
+        "type":  "section",
+        "title":  "Section 16: Eligibility and Mandatory Conditions for Taking ITC",
+        "subtitle":  "Chapter 7: Input Tax Credit (ITC)",
+        "url":  "../final/IDT/input_tax_credit.html#sec-16",
+        "keywords":  "section 16 eligibility conditions for taking itc tax invoice possession receipt of goods 16(2)(aa) gstr-2b payment of tax to government filing valid return 180 days payment to supplier 30th november time limit",
+        "summary":  "Core 4 conditions under Section 16(2) of CGST Act: Tax invoice possession, ITC communicated in GSTR-2B, actual receipt of goods/services, and tax paid to government with Section 39 return filed. Reversal if supplier not paid within 180 days."
     }
 ];
+

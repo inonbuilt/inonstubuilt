@@ -37,6 +37,7 @@
 
     <link rel="icon" href="../../../fevicol.png" type="image/png">
     <link rel="stylesheet" href="./dtnotes.css">
+    <link rel="stylesheet" href="./notes_search.css">
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
@@ -341,6 +342,49 @@
     <h1>Advanced Financial Management (AFM) - Full Notes</h1>
     <h2>Exhaustive Chapter Notes • Deep Conceptual Mechanics • Comprehensive Worked Illustrations</h2>
 
+    <!-- Master Direct Search Component -->
+    <section class="subject-search-section" aria-label="Search AFM Formulas, Solved Illustrations and Chapters">
+        <div class="subject-search-container">
+            <div class="search-bar-box">
+                <svg class="search-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input 
+                    type="text" 
+                    id="afmSearchInput" 
+                    class="search-input-field" 
+                    placeholder="Search any Formula (e.g. Black-Scholes, CAPM, SGR, Binomial, Chop-Shop, Duration), Concept, or Problem..." 
+                    autocomplete="off" 
+                    spellcheck="false"
+                >
+                <button id="clearSearchBtn" class="search-clear-btn" title="Clear search">✕</button>
+                <div class="search-hotkey-badge" title="Shortcut to focus search">
+                    <span>Press</span> <kbd>/</kbd>
+                </div>
+            </div>
+
+            <!-- Category Filter Pills -->
+            <div class="search-filter-pills">
+                <span class="search-pill-label">Filter by:</span>
+                <button type="button" class="search-filter-pill active" data-category="all">All Content (650+ Items)</button>
+                <button type="button" class="search-filter-pill" data-category="formula">📐 Formulas &amp; Models</button>
+                <button type="button" class="search-filter-pill" data-category="topic">📌 Topics &amp; Core Concepts</button>
+                <button type="button" class="search-filter-pill" data-category="question">❓ Solved Illustrations</button>
+                <button type="button" class="search-filter-pill" data-category="chapter">📚 Chapters</button>
+            </div>
+
+            <!-- Floating Live Results Dropdown -->
+            <div id="searchResultsDropdown" class="search-dropdown-overlay" role="region" aria-live="polite">
+                <div class="search-dropdown-header">
+                    <span id="searchResultsCount">Found 0 results</span>
+                    <span style="font-size: 11.5px; color: #94a3b8;">Use &uarr; &darr; to navigate &bull; Enter to jump directly &bull; Esc to close</span>
+                </div>
+                <div id="searchResultsList" class="search-results-list"></div>
+            </div>
+        </div>
+    </section>
+
     <div class="note-type-switcher">
         <a href="./afmnotes.html" class="switcher-btn">⚡ Quick Notes (Ch 1 - 7 Active)</a>
         <a href="./afmfullnotes.html" class="switcher-btn active">📖 Full In-Depth Notes (Ch 1 - 7 Active)</a>
@@ -566,6 +610,10 @@
         <h3>Why Calcium Notes AFM Full In-Depth Notes?</h3>
         <p>CA Final Advanced Financial Management (Paper 2) is universally considered one of the most demanding papers under the ICAI New Scheme. Our Full Notes are crafted to leave zero blind spots by adopting a strict 4-part pedagogical architecture for every single topic: <strong>Topic Name</strong>, <strong>The Content</strong> (verbatim ICAI framework), <strong>Clear Explanation</strong> (in-depth financial mechanics, strategic context, and examiner focus points), and <strong>Examples</strong> (real-world corporate applications and fully worked numerical illustrations). No topics are condensed, skipped, or assumed.</p>
     </div>
+
+    <!-- Master Search Engine Scripts -->
+    <script src="./afm_search_index.js"></script>
+    <script src="./notes_search.js"></script>
 
 </body>
 </html>

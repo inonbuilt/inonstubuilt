@@ -37,6 +37,7 @@
 
     <link rel="icon" href="../../../fevicol.png" type="image/png">
     <link rel="stylesheet" href="./dtnotes.css">
+    <link rel="stylesheet" href="./notes_search.css">
 
     <!-- Fonts: Inter + Plus Jakarta Sans + Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -846,23 +847,51 @@
         <a href="./audnotes.html" class="switcher-btn active">📖 Full Chapter Smart Notes (1 – 19)</a>
     </div>
 
+    <!-- Master Direct Search Component -->
+    <section class="subject-search-section" aria-label="Search Standards on Auditing, Topics and Chapters">
+        <div class="subject-search-container">
+            <div class="search-bar-box">
+                <svg class="search-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input 
+                    type="text" 
+                    id="audSearchInput" 
+                    class="search-input-field" 
+                    placeholder="Search any Standard on Auditing (e.g. SA 240, SA 315, SA 500, SA 700), CARO Clause, SQC, or Question..." 
+                    autocomplete="off" 
+                    spellcheck="false"
+                >
+                <button id="clearSearchBtn" class="search-clear-btn" title="Clear search">✕</button>
+                <div class="search-hotkey-badge" title="Shortcut to focus search">
+                    <span>Press</span> <kbd>/</kbd>
+                </div>
+            </div>
+
+            <!-- Category Filter Pills -->
+            <div class="search-filter-pills">
+                <span class="search-pill-label">Filter by:</span>
+                <button type="button" class="search-filter-pill active" data-category="all">All Content (660+ Items)</button>
+                <button type="button" class="search-filter-pill" data-category="sa">📋 Standards on Auditing (SAs)</button>
+                <button type="button" class="search-filter-pill" data-category="topic">📌 Audit Topics &amp; Procedures</button>
+                <button type="button" class="search-filter-pill" data-category="question">❓ Solved Questions &amp; Cases</button>
+                <button type="button" class="search-filter-pill" data-category="chapter">📚 Chapters</button>
+            </div>
+
+            <!-- Floating Live Results Dropdown -->
+            <div id="searchResultsDropdown" class="search-dropdown-overlay" role="region" aria-live="polite">
+                <div class="search-dropdown-header">
+                    <span id="searchResultsCount">Found 0 results</span>
+                    <span style="font-size: 11.5px; color: #94a3b8;">Use &uarr; &darr; to navigate &bull; Enter to jump directly &bull; Esc to close</span>
+                </div>
+                <div id="searchResultsList" class="search-results-list"></div>
+            </div>
+        </div>
+    </section>
+
     <!-- Search & Module Filter Controls -->
     <div class="controls-wrapper">
-        <div class="search-container">
-            <svg class="search-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-            <input 
-                type="text" 
-                id="chapterSearchInput" 
-                class="search-box-input" 
-                placeholder="Search by Chapter, Standard (e.g., SA 240, SQC 1, CARO, SA 700, SA 600) or Keyword (e.g., Fraud, LFAR, ESG, Ethics)..."
-                oninput="filterChapters()"
-            >
-            <button id="searchResetBtn" class="search-reset-btn" onclick="clearSearch()" title="Clear search">✕</button>
-        </div>
-
         <div class="module-tabs">
             <button class="module-tab-btn active" onclick="filterModule('all', this)">
                 🌟 All Modules <span class="tab-badge">19 Chapters</span>
@@ -1447,8 +1476,10 @@
             btn.classList.add('active');
 
             // Clear search query to avoid conflicts
-            document.getElementById('chapterSearchInput').value = '';
-            document.getElementById('searchResetBtn').style.display = 'none';
+            const audInput = document.getElementById('audSearchInput') || document.getElementById('chapterSearchInput');
+            if (audInput) { audInput.value = ''; }
+            const resetBtn = document.getElementById('searchResetBtn') || document.getElementById('clearSearchBtn');
+            if (resetBtn) { resetBtn.style.display = 'none'; }
 
             const cards = document.querySelectorAll('.chapter-book-card');
             const headers = document.querySelectorAll('.module-section-header');
@@ -1468,6 +1499,10 @@
             }
         }
     </script>
+
+    <!-- Master Search Engine Scripts -->
+    <script src="./audit_search_index.js"></script>
+    <script src="./notes_search.js"></script>
 
 </body>
 </html>

@@ -17,6 +17,7 @@
 
     <link rel="icon" href="../../../fevicol.png" type="image/png">
     <link rel="stylesheet" href="./dtnotes.css">
+    <link rel="stylesheet" href="./notes_search.css">
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
@@ -132,6 +133,49 @@
 
     <h1 style="text-align: center;">Advanced Auditing, Assurance &amp; Professional Ethics</h1>
     <h2 style="text-align: center;">⚡ Fast-Track Quick Notes &bull; High-Yield Chapter Summaries &amp; Standards Cheat Sheets</h2>
+
+    <!-- Master Direct Search Component -->
+    <section class="subject-search-section" aria-label="Search Standards on Auditing, Topics and Chapters">
+        <div class="subject-search-container">
+            <div class="search-bar-box">
+                <svg class="search-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input 
+                    type="text" 
+                    id="audSearchInput" 
+                    class="search-input-field" 
+                    placeholder="Search any Standard on Auditing (e.g. SA 240, SA 315, SA 500, SA 700), CARO Clause, SQC, or Question..." 
+                    autocomplete="off" 
+                    spellcheck="false"
+                >
+                <button id="clearSearchBtn" class="search-clear-btn" title="Clear search">✕</button>
+                <div class="search-hotkey-badge" title="Shortcut to focus search">
+                    <span>Press</span> <kbd>/</kbd>
+                </div>
+            </div>
+
+            <!-- Category Filter Pills -->
+            <div class="search-filter-pills">
+                <span class="search-pill-label">Filter by:</span>
+                <button type="button" class="search-filter-pill active" data-category="all">All Content (660+ Items)</button>
+                <button type="button" class="search-filter-pill" data-category="sa">📋 Standards on Auditing (SAs)</button>
+                <button type="button" class="search-filter-pill" data-category="topic">📌 Audit Topics &amp; Procedures</button>
+                <button type="button" class="search-filter-pill" data-category="question">❓ Solved Questions &amp; Cases</button>
+                <button type="button" class="search-filter-pill" data-category="chapter">📚 Chapters</button>
+            </div>
+
+            <!-- Floating Live Results Dropdown -->
+            <div id="searchResultsDropdown" class="search-dropdown-overlay" role="region" aria-live="polite">
+                <div class="search-dropdown-header">
+                    <span id="searchResultsCount">Found 0 results</span>
+                    <span style="font-size: 11.5px; color: #94a3b8;">Use &uarr; &darr; to navigate &bull; Enter to jump directly &bull; Esc to close</span>
+                </div>
+                <div id="searchResultsList" class="search-results-list"></div>
+            </div>
+        </div>
+    </section>
 
     <div class="note-type-switcher">
         <a href="./audquicknotes.html" class="switcher-btn active">⚡ Quick Notes (Ch 1 &ndash; 19)</a>
@@ -429,6 +473,10 @@
             CA Final Advanced Auditing, Assurance and Professional Ethics (Paper 3) requires exact statutory phrasing, precise SA referencing, and structured presentation. These fast-track quick notes provide high-yield revision summaries, mandatory thresholds, IRAC loan provisioning tables, CARO 2020 clause checklists, and ethics clause navigators designed specifically for last-day exam cramming and high retention.
         </p>
     </div>
+
+    <!-- Master Search Engine Scripts -->
+    <script src="./audit_search_index.js"></script>
+    <script src="./notes_search.js"></script>
 
 </body>
 </html>

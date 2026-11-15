@@ -37,6 +37,7 @@
 
     <link rel="icon" href="../../../fevicol.png" type="image/png">
     <link rel="stylesheet" href="./dtnotes.css">
+    <link rel="stylesheet" href="./notes_search.css">
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
@@ -209,6 +210,49 @@
     </div>
     <h1>Direct Tax Laws &amp; International Taxation</h1>
     <h2>May 2027 &amp; Nov 2026/2027 New Syllabus • Complete 28 Chapters</h2>
+
+    <!-- Master Direct Search Component -->
+    <section class="subject-search-section" aria-label="Search Direct Tax Sections, Questions and Topics">
+        <div class="subject-search-container">
+            <div class="search-bar-box">
+                <svg class="search-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input 
+                    type="text" 
+                    id="dtSearchInput" 
+                    class="search-input-field" 
+                    placeholder="Search any Section (e.g. Sec 115JB, Sec 50B, Sec 40(a)(ia), Sec 92C, Sec 10AA), Heading, or Topic..." 
+                    autocomplete="off" 
+                    spellcheck="false"
+                >
+                <button id="clearSearchBtn" class="search-clear-btn" title="Clear search">✕</button>
+                <div class="search-hotkey-badge" title="Shortcut to focus search">
+                    <span>Press</span> <kbd>/</kbd>
+                </div>
+            </div>
+
+            <!-- Category Filter Pills -->
+            <div class="search-filter-pills">
+                <span class="search-pill-label">Filter by:</span>
+                <button type="button" class="search-filter-pill active" data-category="all">All Content (1,300+ Items)</button>
+                <button type="button" class="search-filter-pill" data-category="section">⚖️ Statutory Sections</button>
+                <button type="button" class="search-filter-pill" data-category="topic">📌 Topics &amp; Case Laws</button>
+                <button type="button" class="search-filter-pill" data-category="question">❓ Practical Questions</button>
+                <button type="button" class="search-filter-pill" data-category="chapter">📚 Chapters</button>
+            </div>
+
+            <!-- Floating Live Results Dropdown -->
+            <div id="searchResultsDropdown" class="search-dropdown-overlay" role="region" aria-live="polite">
+                <div class="search-dropdown-header">
+                    <span id="searchResultsCount">Found 0 results</span>
+                    <span style="font-size: 11.5px; color: #94a3b8;">Use &uarr; &darr; to navigate &bull; Enter to jump directly &bull; Esc to close</span>
+                </div>
+                <div id="searchResultsList" class="search-results-list"></div>
+            </div>
+        </div>
+    </section>
 
     <div class="note-type-switcher">
         <a href="./dtquicknotes.html" class="switcher-btn">⚡ Quick Notes (Ch 1 - 28)</a>
@@ -428,6 +472,10 @@
             Calcium Notes provides 100% free chapter-wise revision notes across all 28 chapters, an exhaustive 380+ section directory, TDS/TCS master threshold filters, and judicial landmark precedents specifically aligned for the <strong>May 2027</strong> and <strong>November 2026/2027</strong> ICAI New Scheme examination attempts.
         </p>
     </div>
+
+    <!-- Master Search Engine Scripts -->
+    <script src="./dt_search_index.js"></script>
+    <script src="./notes_search.js"></script>
 
 </body>
 </html>
