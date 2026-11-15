@@ -14262,7 +14262,356 @@ const descriptiveQuestions = [
       <p>$$RR = \\frac{1,95,19,127.02}{25,02,45,218.25} = 0.0780 \\text{ or } \\mathbf{7.80\\%}$$</p>
       <p>Thus, the actual interest rate prevailing on settlement date is <b>7.80%</b>.</p>
     `
-  }
+  },
+  {
+    question_id: "AFM_MTPDEC25_II_Q6A",
+    source: "ICAI AFM Mock Test Paper – Series II, December 2025",
+    chapter_name: "Portfolio Management",
+    placement: 6,
+    marks: 4,
+    question_html: `
+      <p>Consider a portfolio consisting of a ₹ 200,00,000 investment in share XYZ and a ₹ 200,00,000 investment in share ABC. The daily standard deviation of both shares is 1% and the coefficient of correlation between them is 0.3.</p>
+      <p>You are required to determine the 10-day 99% value at risk for the portfolio if 1% of a normal distribution lies more than 2.33 standard deviations below the mean.</p>
+    `,
+    solution_html: `
+      <p><b>1. Calculation of Daily Portfolio Standard Deviation ($\sigma_p$):</b></p>
+      <p><b>Method 1: In Absolute Terms (Amount Basis)</b></p>
+      <ul>
+        <li>Daily standard deviation of investment in share XYZ ($\sigma_1$) = $₹ 200 \\text{ lakhs} \\times 1\\% = ₹ 2.00 \\text{ lakhs}$</li>
+        <li>Daily standard deviation of investment in share ABC ($\sigma_2$) = $₹ 200 \\text{ lakhs} \\times 1\\% = ₹ 2.00 \\text{ lakhs}$</li>
+        <li>Coefficient of correlation ($r_{12}$) = $0.3$</li>
+      </ul>
+      <p>$$\\text{Variance of Daily Portfolio Change } (V_p) = \\sigma_1^2 + \\sigma_2^2 + 2 r_{12} \\sigma_1 \\sigma_2$$</p>
+      <p>$$V_p = (2)^2 + (2)^2 + (2 \\times 0.3 \\times 2 \\times 2) = 4 + 4 + 2.4 = 10.40 \\text{ (lakhs)}^2$$</p>
+      <p>$$\\text{Daily Portfolio Standard Deviation } (\\sigma_p) = \\sqrt{10.40} = \\mathbf{₹ 3.2249 \\text{ lakhs}} \\approx \\mathbf{₹ 3.22 \\text{ lakhs}}$$</p>
+
+      <p><b>Method 2: In Percentage Terms (Alternative Computation)</b></p>
+      <ul>
+        <li>Total Portfolio Value = $₹ 200 \\text{ lakhs} + ₹ 200 \\text{ lakhs} = ₹ 400 \\text{ lakhs}$</li>
+        <li>Weights: $w_1 = \\frac{200}{400} = 0.50$, $w_2 = \\frac{200}{400} = 0.50$</li>
+      </ul>
+      <p>$$\\sigma_p^2 = w_1^2 \\sigma_1^2 + w_2^2 \\sigma_2^2 + 2 w_1 w_2 \\sigma_1 \\sigma_2 r_{12}$$</p>
+      <p>$$\\sigma_p^2 = (0.50)^2(1)^2 + (0.50)^2(1)^2 + 2(0.50)(0.50)(1)(1)(0.30) = 0.25 + 0.25 + 0.15 = 0.65\\%$$</p>
+      <p>$$\\sigma_p = \\sqrt{0.65\\%} = 0.80623\\%$$</p>
+      <p>$$\\sigma_p \\text{ in Rupee Terms} = ₹ 400 \\text{ lakhs} \\times 0.80623\\% = \\mathbf{₹ 3.2249 \\text{ lakhs}} \\approx \\mathbf{₹ 3.22 \\text{ lakhs}}$$</p>
+
+      <p><b>2. Determination of 10-Day Standard Deviation:</b></p>
+      <p>$$\\sigma_{10\\text{-day}} = \\sigma_{\\text{daily}} \\times \\sqrt{t} = ₹ 3.2249 \\text{ lakhs} \\times \\sqrt{10} = ₹ 3.2249 \\text{ lakhs} \\times 3.16228 = \\mathbf{₹ 10.18 \\text{ lakhs}}$$</p>
+
+      <p><b>3. Determination of 10-Day 99% Value at Risk (VaR):</b></p>
+      <p>For a 99% confidence level (1% left tail), $Z = 2.33$:</p>
+      <p>$$\\text{VaR} = Z \\times \\sigma_{10\\text{-day}} = 2.33 \\times ₹ 10.18 \\text{ lakhs} = \\mathbf{₹ 23.72 \\text{ lakhs}}$$</p>
+    `
+  },
+  {
+    question_id: "AFM_MTPDEC25_II_Q6B",
+    source: "ICAI AFM Mock Test Paper – Series II, December 2025",
+    chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
+    placement: 6,
+    marks: 10,
+    question_html: `
+      <p>During the audit of the Weak Bank (W), RBI has suggested that the Bank should either merge with another bank or may close down. Strong Bank (S) has submitted a proposal of merger of Weak Bank with itself. The relevant information and Balance Sheets of both the companies are as under:</p>
+      
+      <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 90%; margin-bottom: 12px; text-align: center;">
+        <thead>
+          <tr style="background-color: #f2f2f2;">
+            <th style="text-align: left;">Particulars</th>
+            <th style="text-align: center;">Weak Bank (W)</th>
+            <th style="text-align: center;">Strong Bank (S)</th>
+            <th style="text-align: center;">Assigned Weights (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: left;">Gross NPA (%)</td>
+            <td>40</td>
+            <td>5</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Capital Adequacy Ratio (CAR) (Total Capital / Risk Weight Asset)</td>
+            <td>5</td>
+            <td>16</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Market price per Share (MPS)</td>
+            <td>12</td>
+            <td>96</td>
+            <td>32</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Book value</td>
+            <td>—</td>
+            <td>—</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Trading on Stock Exchange</td>
+            <td>Irregular</td>
+            <td>Frequent</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><b>Balance Sheet (₹ in Lakhs):</b></p>
+      <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 90%; margin-bottom: 12px;">
+        <thead>
+          <tr style="background-color: #f2f2f2;">
+            <th style="text-align: left;">Particulars</th>
+            <th style="text-align: right;">Weak Bank (W)</th>
+            <th style="text-align: right;">Strong Bank (S)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Paid up Share Capital (₹ 10 per share)</td>
+            <td style="text-align: right;">150</td>
+            <td style="text-align: right;">500</td>
+          </tr>
+          <tr>
+            <td>Reserves & Surplus</td>
+            <td style="text-align: right;">80</td>
+            <td style="text-align: right;">5,500</td>
+          </tr>
+          <tr>
+            <td>Deposits</td>
+            <td style="text-align: right;">4,000</td>
+            <td style="text-align: right;">44,000</td>
+          </tr>
+          <tr>
+            <td>Other Liabilities</td>
+            <td style="text-align: right;">890</td>
+            <td style="text-align: right;">2,500</td>
+          </tr>
+          <tr style="font-weight: bold; background-color: #fafafa;">
+            <td>Total Liabilities</td>
+            <td style="text-align: right;">5,120</td>
+            <td style="text-align: right;">52,500</td>
+          </tr>
+          <tr>
+            <td>Cash in Hand & with RBI</td>
+            <td style="text-align: right;">400</td>
+            <td style="text-align: right;">2,500</td>
+          </tr>
+          <tr>
+            <td>Balance with Other Banks</td>
+            <td style="text-align: right;">—</td>
+            <td style="text-align: right;">2,000</td>
+          </tr>
+          <tr>
+            <td>Investments</td>
+            <td style="text-align: right;">1,100</td>
+            <td style="text-align: right;">19,000</td>
+          </tr>
+          <tr>
+            <td>Advances</td>
+            <td style="text-align: right;">3,500</td>
+            <td style="text-align: right;">27,000</td>
+          </tr>
+          <tr>
+            <td>Other Assets</td>
+            <td style="text-align: right;">70</td>
+            <td style="text-align: right;">2,000</td>
+          </tr>
+          <tr>
+            <td>Preliminary Expenses</td>
+            <td style="text-align: right;">50</td>
+            <td style="text-align: right;">—</td>
+          </tr>
+          <tr style="font-weight: bold; background-color: #fafafa;">
+            <td>Total Assets</td>
+            <td style="text-align: right;">5,120</td>
+            <td style="text-align: right;">52,500</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><b>You are required to:</b></p>
+      <ol type="a">
+        <li>Calculate Swap ratio based on the above weights;</li>
+        <li>Ascertain the number of Shares to be issued to Weak Bank;</li>
+        <li>Prepare Balance Sheet after merger; and</li>
+        <li>Calculate CAR and Gross NPA of Strong Bank after merger.</li>
+      </ol>
+    `,
+    solution_html: `
+      <p><b>(a) Calculation of Swap Ratio:</b></p>
+      <p><b>Step 1: Calculation of Book Value per Share</b></p>
+      <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 75%; margin-bottom: 12px; text-align: right;">
+        <thead>
+          <tr style="background-color: #f2f2f2;">
+            <th style="text-align: left;">Particulars</th>
+            <th style="text-align: right;">Weak Bank (W)</th>
+            <th style="text-align: right;">Strong Bank (S)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: left;">Share Capital (₹ in Lakhs)</td>
+            <td>150</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Reserves & Surplus (₹ in Lakhs)</td>
+            <td>80</td>
+            <td>5,500</td>
+          </tr>
+          <tr style="background-color: #fafafa;">
+            <td style="text-align: left;">Sub-Total</td>
+            <td>230</td>
+            <td>6,000</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Less: Preliminary Expenses (₹ in Lakhs)</td>
+            <td>(50)</td>
+            <td>—</td>
+          </tr>
+          <tr style="font-weight: bold;">
+            <td style="text-align: left;">Net Worth / Total Capital (₹ in Lakhs)</td>
+            <td>180</td>
+            <td>6,000</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">No. of Outstanding Shares (in Lakhs) [FV ₹ 10]</td>
+            <td>15</td>
+            <td>50</td>
+          </tr>
+          <tr style="font-weight: bold; background-color: #f2f2f2;">
+            <td style="text-align: left;">Book Value Per Share (₹)</td>
+            <td>12</td>
+            <td>120</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><b>Step 2: Weighted Swap Ratio Computation</b></p>
+      <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 90%; margin-bottom: 12px; text-align: center;">
+        <thead>
+          <tr style="background-color: #f2f2f2;">
+            <th style="text-align: left;">Criteria</th>
+            <th style="text-align: center;">Ratio (W : S)</th>
+            <th style="text-align: center;">Calculation</th>
+            <th style="text-align: right;">Weighted Contribution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: left;">Gross NPA (%) <i>(Lower is better: S / W)</i></td>
+            <td>5 : 40</td>
+            <td>$$\\frac{5}{40} \\times 30\\%$$</td>
+            <td style="text-align: right;">0.0375</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Capital Adequacy Ratio (CAR) <i>(W / S)</i></td>
+            <td>5 : 16</td>
+            <td>$$\\frac{5}{16} \\times 28\\%$$</td>
+            <td style="text-align: right;">0.0875</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Market Price Per Share (MPS) <i>(W / S)</i></td>
+            <td>12 : 96</td>
+            <td>$$\\frac{12}{96} \\times 32\\%$$</td>
+            <td style="text-align: right;">0.0400</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Book Value Per Share (BVPS) <i>(W / S)</i></td>
+            <td>12 : 120</td>
+            <td>$$\\frac{12}{120} \\times 10\\%$$</td>
+            <td style="text-align: right;">0.0100</td>
+          </tr>
+          <tr style="font-weight: bold; background-color: #f2f2f2;">
+            <td style="text-align: left;" colspan="3">Total Swap Ratio</td>
+            <td style="text-align: right;"><b>0.1750</b></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Thus, for every 1 share of Weak Bank (W), <b>0.1750 share</b> of Strong Bank (S) will be issued.</p>
+
+      <p><b>(b) Ascertainment of Number of Shares to be Issued:</b></p>
+      <p>$$\\text{Shares to be issued} = 15 \\text{ lakh shares} \\times 0.1750 = \\mathbf{2.625 \\text{ lakh shares}}$$</p>
+
+      <p><b>(c) Balance Sheet after Merger:</b></p>
+      <p><b>Calculation of Capital Reserve:</b></p>
+      <ul>
+        <li>Net Worth of Weak Bank acquired = ₹ 180.00 lakhs</li>
+        <li>Less: Nominal Value of shares issued ($2.625 \\text{ lakhs} \\times ₹ 10$) = ₹ 26.25 lakhs</li>
+        <li><b>Capital Reserve</b> = ₹ 180.00 lakhs $-$ ₹ 26.25 lakhs = <b>₹ 153.75 lakhs</b></li>
+      </ul>
+
+      <p><b>Balance Sheet of Strong Bank (Post-Merger) (₹ in Lakhs):</b></p>
+      <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-bottom: 12px;">
+        <thead>
+          <tr style="background-color: #f2f2f2;">
+            <th style="text-align: left; width: 35%;">Liabilities</th>
+            <th style="text-align: right; width: 15%;">Amount (₹ Lakhs)</th>
+            <th style="text-align: left; width: 35%;">Assets</th>
+            <th style="text-align: right; width: 15%;">Amount (₹ Lakhs)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Paid up Share Capital (500 + 26.25)</td>
+            <td style="text-align: right;">526.25</td>
+            <td>Cash in Hand & with RBI (2,500 + 400)</td>
+            <td style="text-align: right;">2,900.00</td>
+          </tr>
+          <tr>
+            <td>Reserves & Surplus</td>
+            <td style="text-align: right;">5,500.00</td>
+            <td>Balance with Other Banks</td>
+            <td style="text-align: right;">2,000.00</td>
+          </tr>
+          <tr>
+            <td>Capital Reserve</td>
+            <td style="text-align: right;">153.75</td>
+            <td>Investments (19,000 + 1,100)</td>
+            <td style="text-align: right;">20,100.00</td>
+          </tr>
+          <tr>
+            <td>Deposits (44,000 + 4,000)</td>
+            <td style="text-align: right;">48,000.00</td>
+            <td>Advances (27,000 + 3,500)</td>
+            <td style="text-align: right;">30,500.00</td>
+          </tr>
+          <tr>
+            <td>Other Liabilities (2,500 + 890)</td>
+            <td style="text-align: right;">3,390.00</td>
+            <td>Other Assets (2,000 + 70)</td>
+            <td style="text-align: right;">2,070.00</td>
+          </tr>
+          <tr style="font-weight: bold; background-color: #f2f2f2;">
+            <td>Total Liabilities</td>
+            <td style="text-align: right;">57,570.00</td>
+            <td>Total Assets</td>
+            <td style="text-align: right;">57,570.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><b>(d) Calculation of CAR and Gross NPA % after Merger:</b></p>
+      <p><b>1. Capital Adequacy Ratio (CAR):</b></p>
+      <p>$$\\text{Risk-Weighted Assets (RWA)} = \\frac{\\text{Total Capital}}{\\text{CAR}}$$</p>
+      <ul>
+        <li>$$\\text{RWA of Weak Bank (W)} = \\frac{₹ 180 \\text{ lakhs}}{0.05} = ₹ 3,600 \\text{ lakhs}$$</li>
+        <li>$$\\text{RWA of Strong Bank (S)} = \\frac{₹ 6,000 \\text{ lakhs}}{0.16} = ₹ 37,500 \\text{ lakhs}$$</li>
+        <li>$$\\text{Combined RWA} = ₹ 3,600 \\text{ lakhs} + ₹ 37,500 \\text{ lakhs} = \\mathbf{₹ 41,100 \\text{ lakhs}}$$</li>
+        <li>$$\\text{Combined Total Capital} = ₹ 180 \\text{ lakhs} + ₹ 6,000 \\text{ lakhs} = \\mathbf{₹ 6,180 \\text{ lakhs}}$$</li>
+      </ul>
+      <p>$$\\text{Merged CAR} = \\frac{\\text{Combined Total Capital}}{\\text{Combined RWA}} \\times 100 = \\frac{₹ 6,180}{₹ 41,100} \\times 100 = \\mathbf{15.04\\%}$$</p>
+
+      <p><b>2. Gross NPA Ratio:</b></p>
+      <ul>
+        <li>$$\\text{Gross NPA of Weak Bank (W)} = 40\\% \\times ₹ 3,500 \\text{ lakhs} = ₹ 1,400 \\text{ lakhs}$$</li>
+        <li>$$\\text{Gross NPA of Strong Bank (S)} = 5\\% \\times ₹ 27,000 \\text{ lakhs} = ₹ 1,350 \\text{ lakhs}$$</li>
+        <li>$$\\text{Combined Gross NPA} = ₹ 1,400 \\text{ lakhs} + ₹ 1,350 \\text{ lakhs} = \\mathbf{₹ 2,750 \\text{ lakhs}}$$</li>
+        <li>$$\\text{Combined Gross Advances} = ₹ 3,500 \\text{ lakhs} + ₹ 27,000 \\text{ lakhs} = \\mathbf{₹ 30,500 \\text{ lakhs}}$$</li>
+      </ul>
+      <p>$$\\text{Merged Gross NPA \\%} = \\frac{\\text{Combined Gross NPA}}{\\text{Combined Gross Advances}} \\times 100 = \\frac{₹ 2,750}{₹ 30,500} \\times 100 = \\mathbf{9.02\\%}$$</p>
+    `
+  },
+  
 
 
 ];

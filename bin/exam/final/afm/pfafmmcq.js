@@ -2799,5 +2799,290 @@ const mcqData = [
       answer: 2
     }
   ]
-}
+},
+// jan 25 seiesII
+  {
+    case_id: "afm_dec25_II_cs1",
+    case_chapter: ["Security Valuation"],
+    caseText: `
+      <p>The data given below relates to a convertible bond:</p>
+      <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; margin-bottom: 12px; width: 60%;">
+        <tbody>
+          <tr>
+            <td style="text-align: left;">Face value</td>
+            <td style="text-align: right;">₹ 450</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Coupon rate</td>
+            <td style="text-align: right;">15%</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">No. of shares per bond</td>
+            <td style="text-align: right;">25</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Market price of share</td>
+            <td style="text-align: right;">₹ 20</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Straight value of bond</td>
+            <td style="text-align: right;">₹ 400</td>
+          </tr>
+          <tr>
+            <td style="text-align: left;">Market price of convertible bond</td>
+            <td style="text-align: right;">₹ 550</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>From the information given above, choose the correct answer to the following questions:</strong></p>
+    `,
+    questions: [
+      {
+        question_id: "afm_dec25_II_cs1_1",
+        chapter_name: ["Security Valuation"],
+        question: "The stock value of bond would be …………",
+        options: [
+          "₹ 500",
+          "₹ 400",
+          "₹ 550",
+          "₹ 450"
+        ],
+        answer: 0
+      },
+      {
+        question_id: "afm_dec25_II_cs1_2",
+        chapter_name: ["Security Valuation"],
+        question: "The percentage of downside risk based on market price of convertible bond is…………",
+        options: [
+          "10%",
+          "27.27%",
+          "18.18%",
+          "11.11%"
+        ],
+        answer: 1
+      },
+      {
+        question_id: "afm_dec25_II_cs1_3",
+        chapter_name: ["Security Valuation"],
+        question: "The conversion premium is ………….",
+        options: [
+          "10%",
+          "27.27%",
+          "18.18%",
+          "11.11%"
+        ],
+        answer: 0
+      },
+      {
+        question_id: "afm_dec25_II_cs1_4",
+        chapter_name: ["Security Valuation"],
+        question: "The conversion parity price of the stock is …………..",
+        options: [
+          "₹ 25",
+          "₹ 20",
+          "₹ 22",
+          "₹ 24"
+        ],
+        answer: 2
+      }
+    ]
+  },
+  {
+    case_id: "afm_dec25_II_cs2",
+    case_chapter: ["Securitization"],
+    caseText: `
+      <p>Grow More Ltd. an NBFC is in the need of funds and hence it sold its receivables to MAC Financial Corporation (MFC) for ₹ 100 million. MFC created a trust for this purpose called General Investment Trust (GIT) through which it issued securities carrying a different level of risk and return to the investors. Further, this structure also permits the GIT to reinvest surplus funds for short term as per their requirement.</p>
+      <p>MFC also appointed a third party, Safeguard Pvt. Ltd. (SPL) to collect the payment due from obligor(s) and passes it to GIT. It will also follow up with defaulting obligor and if required initiate appropriate legal action against them.</p>
+      <p><strong>From the information given above, choose the correct answer to the following questions:</strong></p>
+    `,
+    questions: [
+      {
+        question_id: "afm_dec25_II_cs2_5",
+        chapter_name: ["Securitization"],
+        question: "The securitized instrument issued for ₹ 100 million by the GIT falls under category of ……….",
+        options: [
+          "Pass Through certificate (PTCs)",
+          "Pay Through Security (PTS)",
+          "Stripped Security",
+          "Debt Fund"
+        ],
+        answer: 1
+      },
+      {
+        question_id: "afm_dec25_II_cs2_6",
+        chapter_name: ["Securitization"],
+        question: "In the above scenario, the Originator is………………….",
+        options: [
+          "Grow More Ltd.",
+          "MAC Financial Corporation (MFC)",
+          "General Investment Trust (GIT)",
+          "Safeguard Pvt. Ltd."
+        ],
+        answer: 1
+      },
+      {
+        question_id: "afm_dec25_II_cs2_7",
+        chapter_name: ["Securitization"],
+        question: "In the above scenario, the General Investment Trust (GIT) is a/an………………….",
+        options: [
+          "Obligor",
+          "Originator",
+          "Special Purpose Vehicle (SPV)",
+          "Receiving and Paying Agent (RPA)"
+        ],
+        answer: 2
+      },
+      {
+        question_id: "afm_dec25_II_cs2_8",
+        chapter_name: ["Securitization"],
+        question: "In the above scenario, the Safeguard Pvt. Ltd. (SPL) is a/an………………",
+        options: [
+          "Obligor",
+          "Originator",
+          "Special Purpose Vehicle (SPV)",
+          "Receiving and Paying Agent (RPA)"
+        ],
+        answer: 3
+      },
+      {
+        question_id: "afm_dec25_II_cs2_9",
+        chapter_name: ["Securitization"],
+        question: "Which of the following statement holds true?",
+        options: [
+          "When Yield to Maturity in market rises, prices of Principal Only (PO) Securities tend to rise.",
+          "When Yield to Maturity in market rises, prices of Principal Only (PO) Securities tend to fall.",
+          "When Yield to Maturity in market falls, prices of Principal Only (PO) Securities tend to fall.",
+          "When Yield to Maturity in market falls, prices of Principal Only (PO) Securities remain the same."
+        ],
+        answer: 1
+      }
+    ]
+  },
+  {
+    case_id: "afm_dec25_II_cs3",
+    case_chapter: ["Derivatives Analysis and Valuation"],
+    caseText: `
+      <p>Following information is related to actions taken in different situations of financial options:</p>
+      <table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse; margin-bottom: 12px; width: 75%; text-align: center;">
+        <thead>
+          <tr style="background-color: #f2f2f2;">
+            <th style="text-align: center;">Situation</th>
+            <th style="text-align: center;">Action</th>
+            <th style="text-align: right;">Exercise Price (₹)</th>
+            <th style="text-align: right;">Premium (₹)</th>
+            <th style="text-align: right;">Spot Price (₹)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>I</td>
+            <td>Exercised</td>
+            <td style="text-align: right;">140</td>
+            <td style="text-align: right;">20</td>
+            <td style="text-align: right;">160</td>
+          </tr>
+          <tr>
+            <td>II</td>
+            <td>Exercised</td>
+            <td style="text-align: right;">200</td>
+            <td style="text-align: right;">15</td>
+            <td style="text-align: right;">175</td>
+          </tr>
+          <tr>
+            <td>III</td>
+            <td>Lapsed</td>
+            <td style="text-align: right;">300</td>
+            <td style="text-align: right;">25</td>
+            <td style="text-align: right;">400</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>From the information given above, choose the correct answer to the following questions:</strong></p>
+    `,
+    questions: [
+      {
+        question_id: "afm_dec25_II_cs3_10",
+        chapter_name: ["Derivatives Analysis and Valuation"],
+        question: "In Situation III, the investor’s position and the amount of profit / loss is..........................",
+        options: [
+          "Put option, ₹ (25)",
+          "Call option, ₹ 75",
+          "Short position, ₹ 100",
+          "Long position, ₹ (100)"
+        ],
+        answer: 0
+      },
+      {
+        question_id: "afm_dec25_II_cs3_11",
+        chapter_name: ["Derivatives Analysis and Valuation"],
+        question: "In Situation I, the investor’s position and the amount of profit or loss is…….",
+        options: [
+          "Put option and ₹ 20",
+          "Call option and ₹ 0",
+          "Put option and ₹ 0",
+          "Call option and ₹ 20"
+        ],
+        answer: 1
+      },
+      {
+        question_id: "afm_dec25_II_cs3_12",
+        chapter_name: ["Derivatives Analysis and Valuation"],
+        question: "In Situation II, the investor’s position and the amount of profit / loss is……..",
+        options: [
+          "Put option and ₹ 10",
+          "Call option and ₹ 10",
+          "Put option and ₹ 25",
+          "Call option and ₹ 25"
+        ],
+        answer: 0
+      }
+    ]
+  },
+  {
+    case_id: "afm_dec25_II_cs4",
+    case_chapter: ["Foreign Exchange Exposure and Risk Management"],
+    caseText: `
+      <p>A company is considering hedging its foreign exchange risk. It has made a purchase on 1<sup>st</sup> July, 2024 for which it has to make a payment of US$ 60,000 on December 31, 2024. The present exchange rate is 1 US $ = ₹ 83. It can purchase forward 1 $ at ₹ 82. The company will have to make an upfront premium @ 2% of the forward amount purchased. The cost of funds to the company is 12% per annum.</p>
+      <p>The company hedges its foreign exchange risk using above-mentioned forward contract.</p>
+      <p><strong>From the information given above, choose the correct answer to the following questions:</strong></p>
+    `,
+    questions: [
+      {
+        question_id: "afm_dec25_II_cs4_13",
+        chapter_name: ["Foreign Exchange Exposure and Risk Management"],
+        question: "If exchange rate on 31<sup>st</sup> December, 2024 happens to be ₹ 86 per US $ then due to forward position taken the company will make……",
+        options: [
+          "a loss of ₹ 1,04,304",
+          "a profit of ₹ 1,35,696",
+          "a loss of ₹ 2,24,304",
+          "a profit of ₹ 2,55,696"
+        ],
+        answer: 1
+      },
+      {
+        question_id: "afm_dec25_II_cs4_14",
+        chapter_name: ["Foreign Exchange Exposure and Risk Management"],
+        question: "If exchange rate on 31<sup>st</sup> December, 2024 happens to be ₹ 80 per US $ then due to forward position taken the company will make……",
+        options: [
+          "a loss of ₹ 1,04,304",
+          "a profit of ₹ 1,35,696",
+          "a loss of ₹ 2,24,304",
+          "a profit of ₹ 2,55,696"
+        ],
+        answer: 2
+      },
+      {
+        question_id: "afm_dec25_II_cs4_15",
+        chapter_name: ["Foreign Exchange Exposure and Risk Management"],
+        question: "If exchange rate on 31<sup>st</sup> December, 2024 happens to be ₹ 88 per US $ then due to forward position taken the company will make……",
+        options: [
+          "a loss of ₹ 1,04,304",
+          "a profit of ₹ 1,35,696",
+          "a loss of ₹ 2,24,304",
+          "a profit of ₹ 2,55,696"
+        ],
+        answer: 3
+      }
+    ]
+  }
 ];
