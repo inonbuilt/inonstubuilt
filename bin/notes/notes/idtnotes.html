@@ -86,7 +86,7 @@
           "name": "Which chapters of GST and Customs are currently active on Calcium Notes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Chapter 1: Supply under GST (Sections 7, 8, Schedules I, II, III and CBIC Circulars), Chapter 2: Charge of GST & Reverse Charge Mechanism (Sections 9, 10, RCM Notification 13/2017 & ECO Provisions), Chapter 3: Place of Supply (IGST Sections 10, 11, 12, 13 & CBIC Circulars), Chapter 4: Exemptions from GST (CGST Sec 11 & 11A, IGST Sec 6 & 6A, Notfn 12/2017 CT(R) & 9/2017 IT(R) & Circulars), Chapter 6: Value of Supply (CGST Sec 15 & Rules 27-35), and Chapter 17: Assessment and Audit under GST (Sections 59-66 and 85-91) are fully published and live, with remaining chapters continuously being rolled out."
+            "text": "All 32 chapters across Module 1 (GST Ch 1-6), Module 2 (GST Ch 7-13), Module 3 (GST Ch 14-24), and Module 4 (Customs & FTP Ch 1-8) are 100% complete, published, and live on Calcium Notes with comprehensive statutory analysis, CBIC circular matrices, and ICAI TYK case studies."
           }
         },
         {
@@ -239,6 +239,313 @@
             color: #0f172a;
             margin-bottom: 10px;
         }
+
+        /* ================= Master Search Styles ================= */
+        .idt-search-section {
+            max-width: 1200px;
+            margin: 20px auto 25px auto;
+            position: relative;
+        }
+        .idt-search-container {
+            position: relative;
+            width: 100%;
+        }
+        .search-bar-box {
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+            border: 2px solid #cbd5e1;
+            border-radius: 14px;
+            padding: 4px 16px;
+            box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+            transition: all 0.25s ease;
+        }
+        .search-bar-box:focus-within {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15), 0 8px 24px rgba(15, 23, 42, 0.08);
+        }
+        .search-icon-svg {
+            color: #64748b;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+        .search-input-field {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 15.5px;
+            font-weight: 500;
+            color: #0f172a;
+            padding: 12px 0;
+            background: transparent;
+            font-family: inherit;
+        }
+        .search-input-field::placeholder {
+            color: #94a3b8;
+            font-weight: 400;
+        }
+        .search-hotkey-badge {
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            color: #64748b;
+            font-size: 11.5px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 6px;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .search-clear-btn {
+            background: #e2e8f0;
+            border: none;
+            color: #475569;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 13px;
+            margin-left: 8px;
+            font-weight: 800;
+            transition: all 0.2s;
+        }
+        .search-clear-btn:hover {
+            background: #cbd5e1;
+            color: #0f172a;
+        }
+
+        /* Filter Pills */
+        .search-filter-pills {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .search-pill-label {
+            font-size: 12px;
+            font-weight: 700;
+            color: #64748b;
+            margin-right: 4px;
+        }
+        .search-filter-pill {
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            color: #475569;
+            padding: 5px 12px;
+            border-radius: 9999px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            user-select: none;
+        }
+        .search-filter-pill:hover {
+            border-color: #94a3b8;
+            background: #f8fafc;
+        }
+        .search-filter-pill.active {
+            background: #2563eb;
+            color: #ffffff;
+            border-color: #2563eb;
+            box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
+        }
+
+        /* Floating Live Dropdown */
+        .search-dropdown-overlay {
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            right: 0;
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            border-radius: 14px;
+            box-shadow: 0 20px 45px rgba(15, 23, 42, 0.16);
+            z-index: 1000;
+            max-height: 540px;
+            overflow-y: auto;
+            display: none;
+            padding: 10px 0;
+        }
+        .search-dropdown-header {
+            padding: 10px 20px;
+            font-size: 13px;
+            color: #64748b;
+            border-bottom: 1px solid #f1f5f9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .search-results-list {
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .search-result-item {
+            border-radius: 10px;
+            border: 1px solid transparent;
+            transition: all 0.15s ease;
+        }
+        .search-result-item:hover,
+        .search-result-item.selected {
+            background: #f8fafc;
+            border-color: #cbd5e1;
+        }
+        .result-card-link {
+            display: block;
+            padding: 12px 16px;
+            text-decoration: none;
+            color: inherit;
+        }
+        .result-top-line {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 6px;
+        }
+        .result-badge {
+            font-size: 10.5px;
+            font-weight: 800;
+            padding: 2px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+        .badge-sec {
+            background: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #bfdbfe;
+        }
+        .badge-q {
+            background: #fef3c7;
+            color: #b45309;
+            border: 1px solid #fde68a;
+        }
+        .badge-topic {
+            background: #f3e8ff;
+            color: #7c3aed;
+            border: 1px solid #ddd6fe;
+        }
+        .badge-ch {
+            background: #ecfdf5;
+            color: #047857;
+            border: 1px solid #a7f3d0;
+        }
+        .result-subtitle {
+            font-size: 12px;
+            font-weight: 600;
+            color: #64748b;
+        }
+        .result-title {
+            font-size: 14.5px;
+            font-weight: 700;
+            color: #0f172a;
+            line-height: 1.4;
+            margin-bottom: 4px;
+        }
+        .result-summary {
+            font-size: 12.8px;
+            color: #475569;
+            line-height: 1.45;
+            margin-bottom: 8px;
+        }
+        .result-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #2563eb;
+        }
+        .search-highlight {
+            background: #fef08a;
+            color: #854d0e;
+            padding: 0 2px;
+            border-radius: 2px;
+            font-weight: 700;
+        }
+
+        /* Empty State */
+        .search-empty-state {
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .search-empty-icon {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+        .search-empty-state h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 6px;
+        }
+        .search-empty-state p {
+            font-size: 13.5px;
+            color: #64748b;
+            margin-bottom: 15px;
+        }
+        .search-suggestions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            color: #475569;
+        }
+        .search-suggestions a {
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            padding: 3px 10px;
+            border-radius: 9999px;
+            color: #1e40af;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .search-suggestions a:hover {
+            background: #e2e8f0;
+        }
+
+        /* Table Match Notice */
+        .no-table-matches-box {
+            background: #ffffff;
+            border: 1px dashed #cbd5e1;
+            border-radius: 10px;
+            padding: 30px 20px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .no-table-matches-box h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+        .no-table-matches-box p {
+            font-size: 13.5px;
+            color: #64748b;
+            margin-bottom: 14px;
+        }
+        .btn-reset-filter {
+            background: #2563eb;
+            color: #ffffff;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 13px;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+        }
+        .btn-reset-filter:hover {
+            background: #1d4ed8;
+        }
     </style>
 </head>
 
@@ -259,6 +566,49 @@
         <h1>Indirect Tax Laws (GST, Customs &amp; FTP)</h1>
         <h2>May 2027 &amp; Nov 2026/2027 New Syllabus • Complete 32 Chapters</h2>
     </div>
+
+    <!-- ================= Master Direct Search Component ================= -->
+    <section class="idt-search-section" aria-label="Search IDT Sections, Questions and Topics">
+        <div class="idt-search-container">
+            <div class="search-bar-box">
+                <svg class="search-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input 
+                    type="text" 
+                    id="idtSearchInput" 
+                    class="search-input-field" 
+                    placeholder="Search any Section (e.g. Sec 17(5), Sec 7, Sec 61, Sec 27), Rule, Circular, or ICAI Question (e.g. Del Credere, MOOWR, EPCG, Kesoram Rayon)..." 
+                    autocomplete="off" 
+                    spellcheck="false"
+                >
+                <button id="clearSearchBtn" class="search-clear-btn" title="Clear search">✕</button>
+                <div class="search-hotkey-badge" title="Shortcut to focus search">
+                    <span>Press</span> <kbd>/</kbd>
+                </div>
+            </div>
+
+            <!-- Category Filter Pills -->
+            <div class="search-filter-pills">
+                <span class="search-pill-label">Filter by:</span>
+                <button type="button" class="search-filter-pill active" data-category="all">All Content (350+ Items)</button>
+                <button type="button" class="search-filter-pill" data-category="section">⚖️ Sections &amp; Rules</button>
+                <button type="button" class="search-filter-pill" data-category="topic">📌 Topics &amp; Circulars</button>
+                <button type="button" class="search-filter-pill" data-category="question">❓ ICAI Solved TYK</button>
+                <button type="button" class="search-filter-pill" data-category="chapter">📚 Chapters</button>
+            </div>
+
+            <!-- Floating Live Results Dropdown -->
+            <div id="searchResultsDropdown" class="search-dropdown-overlay" role="region" aria-live="polite">
+                <div class="search-dropdown-header">
+                    <span id="searchResultsCount">Found 0 results</span>
+                    <span style="font-size: 11.5px; color: #94a3b8;">Use &uarr; &darr; to navigate &bull; Enter to jump directly &bull; Esc to close</span>
+                </div>
+                <div id="searchResultsList" class="search-results-list"></div>
+            </div>
+        </div>
+    </section>
 
     <div class="note-type-switcher">
         <a href="#module-1" class="switcher-btn">📦 Mod 1 (GST 1-6)</a>
@@ -313,10 +663,14 @@
                 <div class="cell-view"><a href="../final/IDT/exemptions_from_gst.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
-            <div class="table-row" role="listitem">
-                <div class="cell cell-no">Ch 5</div>
-                <div class="cell-name">Time of Supply (Goods Sec 12, Services Sec 13 &amp; Change in Tax Rates Sec 14)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+            <!-- Chapter 5 Active Card -->
+            <div class="table-row card-active" role="listitem">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <div class="cell cell-no" style="background: #2563eb; color: #ffffff;">Ch 5 • ToS</div>
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Time of Supply (Goods Sec 12, Services Sec 13, Change in Tax Rates Sec 14 &amp; Notfn 66/2017)</div>
+                <div class="cell-view"><a href="../final/IDT/time_of_supply.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <div class="table-row card-active" role="listitem">
@@ -334,46 +688,70 @@
                 <span class="count-tag">GST Chapters 7 – 13</span>
             </div>
 
-            <div class="table-row" role="listitem">
-                <div class="cell cell-no">Ch 7</div>
-                <div class="cell-name">Input Tax Credit (ITC - Sec 16, 17, 18, Blocked Credits Sec 17(5) &amp; Reversal Rules 42 &amp; 43)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+            <!-- Chapter 7 Active Card -->
+            <div class="table-row card-active" role="listitem">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <div class="cell cell-no" style="background: #2563eb; color: #ffffff;">Ch 7 • ITC</div>
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Input Tax Credit (ITC - Sec 16, 17, 18, Blocked Credits Sec 17(5), Rules 42 &amp; 43, ISD Sec 20 &amp; Rule 88A)</div>
+                <div class="cell-view"><a href="../final/IDT/input_tax_credit.html" class="btn-view-active">View Notes →</a></div>
+            </div>
+
+            <!-- Chapter 8 Active Card -->
+            <div class="table-row card-active" role="listitem">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <div class="cell cell-no" style="background: #2563eb; color: #ffffff;">Ch 8 • Reg</div>
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Registration under GST (Sec 22 to 30, Aggregate Turnover, Mandatory Registration Sec 24 &amp; Revocation)</div>
+                <div class="cell-view"><a href="../final/IDT/registration.html" class="btn-view-active">View Notes →</a></div>
+            </div>
+
+            <!-- Chapter 9 Active Card -->
+            <div class="table-row card-active" role="listitem">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <div class="cell cell-no" style="background: #2563eb; color: #ffffff;">Ch 9 • Inv</div>
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Tax Invoice, Credit &amp; Debit Notes (Sec 31 to 34, E-Invoicing &amp; Dynamic QR Code)</div>
+                <div class="cell-view"><a href="../final/IDT/tax_invoice_credit_debit_notes.html" class="btn-view-active">View Notes →</a></div>
+            </div>
+
+            <!-- Chapter 10 Active Card -->
+            <div class="table-row card-active" role="listitem">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <div class="cell cell-no" style="background: #2563eb; color: #ffffff;">Ch 10 • EWB</div>
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Accounts and Records &amp; Electronic Way Bill (Sec 35, 36 &amp; E-Way Bill Rule 138-138E)</div>
+                <div class="cell-view"><a href="../final/IDT/accounts_records_eway_bill.html" class="btn-view-active">View Notes →</a></div>
+            </div>
+
+            <!-- Chapter 11 Active Card -->
+            <div class="table-row card-active" role="listitem">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <div class="cell cell-no" style="background: #2563eb; color: #ffffff;">Ch 11 • Pay</div>
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Payment of Tax (Sec 49 to 53, Electronic Ledgers, Interest on Net Cash Liability Sec 50 &amp; Rule 86B)</div>
+                <div class="cell-view"><a href="../final/IDT/payment_of_tax.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no">Ch 8</div>
-                <div class="cell-name">Registration under GST (Sec 22 to 30, Aggregate Turnover, Mandatory Registration Sec 24 &amp; Revocation)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Electronic Commerce Transactions (ECO Deemed Supplier Sec 9(5) &amp; TCS Obligations Sec 52)</div>
+                <div class="cell-view"><a href="../final/IDT/electronic_commerce_transactions.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no">Ch 9</div>
-                <div class="cell-name">Tax Invoice, Credit &amp; Debit Notes (Sec 31 to 34, E-Invoicing &amp; Dynamic QR Code)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
-            </div>
-
-            <div class="table-row" role="listitem">
-                <div class="cell cell-no">Ch 10</div>
-                <div class="cell-name">Accounts and Records &amp; Electronic Way Bill (Sec 35, 36 &amp; E-Way Bill Rule 138-138E)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
-            </div>
-
-            <div class="table-row" role="listitem">
-                <div class="cell cell-no">Ch 11</div>
-                <div class="cell-name">Payment of Tax (Sec 49 to 53, Electronic Ledgers, Interest on Net Cash Liability Sec 50 &amp; Rule 86B)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
-            </div>
-
-            <div class="table-row" role="listitem">
-                <div class="cell cell-no">Ch 12</div>
-                <div class="cell-name">Electronic Commerce Transactions (ECO Deemed Supplier Sec 9(5) &amp; TCS Obligations Sec 52)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
-            </div>
-
-            <div class="table-row" role="listitem">
-                <div class="cell cell-no">Ch 13</div>
-                <div class="cell-name">Returns under GST (Sec 37 to 48, GSTR-1, GSTR-3B, Annual Return GSTR-9, Reconciliation GSTR-9C &amp; QRMP)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Returns under GST (Sec 37 to 48, GSTR-1, GSTR-3B, Annual Return GSTR-9, Reconciliation GSTR-9C &amp; QRMP)</div>
+                <div class="cell-view"><a href="../final/IDT/returns.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <!-- MODULE 3 -->
@@ -383,21 +761,27 @@
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no">Ch 14</div>
-                <div class="cell-name">Import and Export under GST (Zero Rated Supplies Sec 16 IGST, Refund route vs LUT/Bond, SEZ Supplies)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Import and Export under GST (Zero Rated Supplies Sec 16 IGST, Refund route vs LUT/Bond, SEZ Supplies)</div>
+                <div class="cell-view"><a href="../final/IDT/import_export_under_gst.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no">Ch 15</div>
-                <div class="cell-name">Refunds under GST (Sec 54 to 58, Inverted Duty Structure, Zero-Rated Exports Formula &amp; Rules 89-96)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Refunds under GST (Sec 54 to 58, Inverted Duty Structure, Zero-Rated Exports Formula &amp; Rules 89-96)</div>
+                <div class="cell-view"><a href="../final/IDT/refunds.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no">Ch 16</div>
-                <div class="cell-name">Job Work Provisions (Sec 143, Removal of Inputs/Capital Goods, Timelines 1 yr / 3 yrs &amp; ITC Sec 19)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Job Work Provisions (Sec 143, Removal of Inputs/Capital Goods, Timelines 1 yr / 3 yrs &amp; ITC Sec 19)</div>
+                <div class="cell-view"><a href="../final/IDT/job_work.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <!-- Chapter 17 Active Card -->
@@ -411,45 +795,59 @@
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no">Ch 18</div>
-                <div class="cell-name">Inspection, Search, Seizure and Arrest (Sec 67 to 72, Inspection in Transit Sec 68 &amp; Bailable/Non-Bailable Offences)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Inspection, Search, Seizure and Arrest (Sec 67 to 72, Inspection in Transit Sec 68 &amp; Bailable/Non-Bailable Offences)</div>
+                <div class="cell-view"><a href="../final/IDT/inspection_search_seizure_arrest.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no">Ch 19</div>
-                <div class="cell-name">Demands and Recovery (Sec 73, 74, 74A, General Provisions Sec 75 &amp; Modes of Recovery Sec 79)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Demands and Recovery (Sec 73, 74, 74A, General Provisions Sec 75 &amp; Modes of Recovery Sec 79)</div>
+                <div class="cell-view"><a href="../final/IDT/demands_and_recovery.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no">Ch 20</div>
-                <div class="cell-name">Liability to Pay Tax in Certain Cases (Sec 85 to 94: Transfer of Business, Amalgamation, Liquidation, Trusts &amp; HUF)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Liability to Pay Tax in Certain Cases (Sec 85 to 94: Transfer of Business, Amalgamation, Liquidation, Trusts &amp; HUF)</div>
+                <div class="cell-view"><a href="../final/IDT/liability_to_pay_certain_cases.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no">Ch 21</div>
-                <div class="cell-name">Offences and Penalties &amp; Ethical Aspects under GST (Sec 122 to 138, Compounding Sec 138 &amp; CA Ethics)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Offences and Penalties &amp; Ethical Aspects under GST (Sec 122 to 138, Compounding Sec 138 &amp; CA Ethics)</div>
+                <div class="cell-view"><a href="../final/IDT/offences_and_penalties.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no">Ch 22</div>
-                <div class="cell-name">Appeals and Revision (Appellate Authority Sec 107, Revisionary Authority Sec 108, GSTAT Sec 109-116 &amp; High Court/SC)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Appeals and Revision (Appellate Authority Sec 107, Revisionary Authority Sec 108, GSTAT Sec 109-116 &amp; High Court/SC)</div>
+                <div class="cell-view"><a href="../final/IDT/appeals_and_revision.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no">Ch 23</div>
-                <div class="cell-name">Advance Ruling under GST (Sec 95 to 106, Authority for Advance Ruling AAR &amp; Appellate Authority AAAR)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Advance Ruling under GST (Sec 95 to 106, Authority for Advance Ruling AAR &amp; Appellate Authority AAAR)</div>
+                <div class="cell-view"><a href="../final/IDT/advance_ruling.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no">Ch 24</div>
-                <div class="cell-name">Miscellaneous Provisions under GST (Sec 144 to 174, Anti-Profiteering Mechanism CCI &amp; Deemed Exports)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Miscellaneous Provisions under GST (Sec 144 to 174, Anti-Profiteering Sunset Framework &amp; IGST Apportionment)</div>
+                <div class="cell-view"><a href="../final/IDT/miscellaneous_provisions.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <!-- MODULE 4 -->
@@ -459,51 +857,74 @@
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no badge-customs">Customs Ch 1</div>
-                <div class="cell-name">Levy of and Exemptions from Customs Duty (Sec 12, Taxable Event, High Seas, Territorial Waters &amp; Exemptions Sec 25)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no badge-customs">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Levy of and Exemptions from Customs Duty (Sec 12, Taxable Event, High Seas, Territorial Waters &amp; Exemptions Sec 25)</div>
+                <div class="cell-view"><a href="../final/IDT/customs_levy_exemptions.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no badge-customs">Customs Ch 2</div>
-                <div class="cell-name">Types of Customs Duties (Basic Customs Duty BCD, IGST Sec 3(7), Social Welfare Surcharge SWS, Safeguard &amp; Anti-Dumping Duties)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no badge-customs">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Types of Customs Duties (Basic Customs Duty BCD, IGST Sec 3(7), Social Welfare Surcharge SWS, Safeguard &amp; Anti-Dumping Duties)</div>
+                <div class="cell-view"><a href="../final/IDT/customs_types_of_duty.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no badge-customs">Customs Ch 3</div>
-                <div class="cell-name">Classification of Imported and Export Goods (Customs Tariff Act 1975, General Rules of Interpretation GIR &amp; Project Imports)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no badge-customs">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Classification of Imported and Export Goods (Customs Tariff Act 1975, General Rules of Interpretation GIR &amp; Project Imports)</div>
+                <div class="cell-view"><a href="../final/IDT/customs_classification.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no badge-customs">Customs Ch 4</div>
-                <div class="cell-name">Valuation under the Customs Act, 1962 (Sec 14, Transaction Value, Rule 10 Additions, CIF/FOB &amp; Import/Export Valuation Rules)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no badge-customs">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Valuation under the Customs Act, 1962 (Sec 14, Transaction Value, Rule 10 Additions, CIF/FOB &amp; Import/Export Valuation Rules)</div>
+                <div class="cell-view"><a href="../final/IDT/customs_valuation.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no badge-customs">Customs Ch 5</div>
-                <div class="cell-name">Importation and Exportation of Goods (Bill of Entry Sec 46, Self-Assessment Sec 17, Faceless Assessment &amp; Special Procedures)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no badge-customs">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Importation and Exportation of Goods (Bill of Entry Sec 46, Self-Assessment Sec 17, Faceless Assessment &amp; Special Procedures)</div>
+                <div class="cell-view"><a href="../final/IDT/customs_import_export_procedures.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no badge-customs">Customs Ch 6</div>
-                <div class="cell-name">Warehousing (Sec 57 Public, Sec 58 Private, Sec 58A Special, MOOWR Scheme Sec 65 &amp; Clearances Sec 68-69)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no badge-customs">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Warehousing (Sec 57 Public, Sec 58 Private, Sec 58A Special, MOOWR Scheme Sec 65 &amp; Clearances Sec 68-69)</div>
+                <div class="cell-view"><a href="../final/IDT/customs_warehousing.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no badge-customs">Customs Ch 7</div>
-                <div class="cell-name">Refund of Customs Duty &amp; Duty Drawback (Sec 26, 27, Unjust Enrichment &amp; Duty Drawback Sec 74 &amp; 75)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no badge-customs">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Refund of Customs Duty &amp; Duty Drawback (Sec 26, 27, Unjust Enrichment &amp; Duty Drawback Sec 74 &amp; 75)</div>
+                <div class="cell-view"><a href="../final/IDT/customs_refund_duty_drawback.html" class="btn-view-active">View Notes →</a></div>
             </div>
 
             <div class="table-row" role="listitem">
-                <div class="cell cell-no badge-customs">Customs Ch 8</div>
-                <div class="cell-name">Foreign Trade Policy (FTP 2023, Basic Concepts, Status Holders, Advance Authorisation, EPCG &amp; RoDTEP Schemes)</div>
-                <div class="cell-view"><span class="btn-view-pending">Coming Soon</span></div>
+                <div class="cell cell-no badge-customs">
+                    <span class="badge-live">Available Now</span>
+                </div>
+                <div class="cell-name" style="font-weight: 700; color: #0f172a;">Foreign Trade Policy (FTP 2023, Basic Concepts, Status Holders, Advance Authorisation, EPCG &amp; RoDTEP Schemes)</div>
+                <div class="cell-view"><a href="../final/IDT/foreign_trade_policy.html" class="btn-view-active">View Notes →</a></div>
+            </div>
+
+            <!-- Empty State for Table Rows -->
+            <div id="noTableMatchesNotice" class="no-table-matches-box" style="display:none;">
+                <h4>🔍 No Chapters Match Your Search Query</h4>
+                <p>We couldn't find any chapter card matching your text. Check the direct section dropdown results above or reset the filter.</p>
+                <button type="button" id="resetTableFilterBtn" class="btn-reset-filter">Reset Chapter Filters</button>
             </div>
 
         </div>
@@ -519,6 +940,10 @@
             Calcium Notes delivers 100% free, high-yield, chapter-wise revision notes across all 32 chapters. Our notes systematically integrate statutory provisions (CGST, IGST, UTGST, and Customs Acts), high-frequency CBIC circulars (Del Credere Agents, Agreeing to Obligation/Liquidated Damages under Circular 178/10/2022, Motor Vehicle Salvage Circular 215/09/2024, and Tenancy Rights Circular 44/18/2018), and step-by-step solutions to ICAI case scenarios specifically crafted for the <strong>May 2027</strong> and <strong>November 2026/2027</strong> examination attempts.
         </p>
     </div>
+
+    <!-- Master Search Engine Scripts -->
+    <script src="./idt_search_index.js"></script>
+    <script src="./idt_search.js"></script>
 
 </body>
 </html>
