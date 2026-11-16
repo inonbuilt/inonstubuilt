@@ -1,0 +1,2710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8: Ind AS on Disclosures in Financial Statements (Ind AS 24, 33, 108) | CA Final FR Notes</title>
+    <meta name="description"
+        content="Exhaustive CA Final Financial Reporting (Paper 1) notes for Chapter 8: Ind AS 24 (Related Party Disclosures), Ind AS 33 (Earnings Per Share), and Ind AS 108 (Operating Segments). Includes all ICAI Illustrations, Formulas, and Solved TYK questions.">
+    <meta name="keywords"
+        content="Ind AS 24, Ind AS 33, Ind AS 108, Related Party Disclosures, Earnings Per Share, Basic EPS, Diluted EPS, Operating Segments, CODM, 10% threshold, 75% test, CA Final FR, ICAI New Scheme">
+    <meta name="author" content="Calcium Notes">
+
+    <!-- Schema.org Article & Breadcrumbs -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Chapter 8: Ind AS on Disclosures in Financial Statements - Complete Study Notes",
+        "description": "Comprehensive study guide for CA Final FR Chapter 8 covering Ind AS 24, Ind AS 33, and Ind AS 108 with complete theoretical analysis, formulas, and solved TYK questions.",
+        "author": {
+            "@type": "Organization",
+            "name": "Calcium Notes"
+        },
+        "isPartOf": {
+            "@type": "Course",
+            "name": "CA Final Financial Reporting (FR)",
+            "url": "https://www.calciumnotes.com/bin/notes/notes/frnotes.html"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.calciumnotes.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "CA Notes Portal",
+                "item": "https://www.calciumnotes.com/bin/notes/notes.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "FR Notes Hub",
+                "item": "https://www.calciumnotes.com/bin/notes/notes/frnotes.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Chapter 8: Ind AS on Disclosures",
+                "item": "https://www.calciumnotes.com/bin/notes/final/fr/disclosures_ind_as.html"
+            }
+        ]
+    }
+    </script>
+
+    <link rel="icon" href="../../../../fevicol.png" type="image/png">
+    <link rel="stylesheet" href="../../assets/template.css">
+
+    <!-- KaTeX for Financial & Mathematical Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '\\(', right: '\\)', display: false}, {left: '\\[', right: '\\]', display: true}]});"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Kalam:wght@700&family=Outfit:wght@400;500;600;700;800&family=Patrick+Hand&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YYJ8R39EXM');
+    </script>
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --primary-light: #eff6ff;
+            --secondary: #0891b2;
+            --accent: #f59e0b;
+            --slate-50: #f8fafc;
+            --slate-100: #f1f5f9;
+            --slate-200: #e2e8f0;
+            --slate-300: #cbd5e1;
+            --slate-600: #475569;
+            --slate-700: #334155;
+            --slate-800: #1e293b;
+            --slate-900: #0f172a;
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 16px;
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--slate-50);
+            color: var(--slate-800);
+            margin: 0;
+            padding: 0;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Top Bar */
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: #ffffff;
+            border-bottom: 1px solid var(--slate-200);
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .topbar-left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .back-hub-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 7px 14px;
+            border-radius: var(--radius-sm);
+            background: var(--slate-100);
+            color: var(--slate-700);
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .back-hub-btn:hover {
+            background: var(--primary);
+            color: #ffffff;
+        }
+
+        .chapter-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--slate-900);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 520px;
+        }
+
+        .topbar-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .progress-container {
+            width: 140px;
+            height: 6px;
+            background: var(--slate-200);
+            border-radius: 999px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: var(--primary);
+            border-radius: 999px;
+            transition: width 0.15s ease;
+        }
+
+        .toggle-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            border-radius: var(--radius-sm);
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            color: var(--slate-700);
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .toggle-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        /* Layout Grid */
+        .layout {
+            display: grid;
+            grid-template-columns: 290px 1fr;
+            min-height: calc(100vh - 61px);
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            position: sticky;
+            top: 61px;
+            height: calc(100vh - 61px);
+            overflow-y: auto;
+            background: #ffffff;
+            border-right: 1px solid var(--slate-200);
+            padding: 24px 16px;
+            scrollbar-width: thin;
+        }
+
+        .sidebar h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 11.5px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--slate-600);
+            margin: 20px 0 8px 10px;
+        }
+
+        .sidebar h3:first-child {
+            margin-top: 0;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 2px;
+        }
+
+        .sidebar-nav a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            border-radius: var(--radius-sm);
+            color: var(--slate-700);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.4;
+            transition: all 0.15s;
+        }
+
+        .sidebar-nav a:hover {
+            background: var(--slate-100);
+            color: var(--primary);
+        }
+
+        .sidebar-nav a.active {
+            background: var(--primary-light);
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .nav-num {
+            font-family: 'Fira Code', monospace;
+            font-size: 11px;
+            color: var(--slate-600);
+            width: 24px;
+            flex-shrink: 0;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 36px 48px;
+            max-width: 1180px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Hero Banner */
+        .hero-banner {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #1e3a8a 100%);
+            border-radius: var(--radius-lg);
+            padding: 40px 44px;
+            color: #ffffff;
+            margin-bottom: 36px;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-banner::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 340px;
+            height: 340px;
+            background: radial-gradient(circle, rgba(14, 165, 233, 0.25) 0%, rgba(14, 165, 233, 0) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(14, 165, 233, 0.25);
+            border: 1px solid rgba(56, 189, 248, 0.35);
+            color: #38bdf8;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: 999px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .hero-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 32px;
+            font-weight: 800;
+            margin: 0 0 12px 0;
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: 14.5px;
+            color: #cbd5e1;
+            max-width: 860px;
+            margin: 0 0 24px 0;
+            line-height: 1.6;
+        }
+
+        .hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .hero-stat {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 8px 14px;
+            border-radius: var(--radius-sm);
+            font-size: 12.5px;
+            font-weight: 600;
+            color: #f1f5f9;
+        }
+
+        /* Section Cards */
+        .section-card {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: var(--radius-lg);
+            padding: 32px 36px;
+            margin-bottom: 36px;
+            box-shadow: var(--shadow-sm);
+            scroll-margin-top: 24px;
+        }
+
+        .section-header {
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--slate-100);
+        }
+
+        .section-number {
+            font-family: 'Outfit', sans-serif;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--slate-900);
+            margin: 0 0 8px 0;
+        }
+
+        .section-lead {
+            font-size: 14.5px;
+            color: var(--slate-600);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Concept Blocks */
+        .concept-block {
+            margin-bottom: 32px;
+        }
+
+        .concept-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--slate-900);
+            margin: 0 0 14px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .concept-body {
+            font-size: 14px;
+            color: var(--slate-700);
+            line-height: 1.7;
+        }
+
+        .concept-body p {
+            margin: 0 0 14px 0;
+        }
+
+        .concept-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Tables */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 18px 0;
+            border: 1px solid var(--slate-200);
+            border-radius: var(--radius-md);
+            background: #ffffff;
+        }
+
+        .custom-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            text-align: left;
+            min-width: 620px;
+        }
+
+        .custom-table th {
+            background: var(--slate-100);
+            color: var(--slate-800);
+            font-weight: 700;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--slate-200);
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .custom-table td {
+            padding: 11px 16px;
+            border-bottom: 1px solid var(--slate-200);
+            color: var(--slate-700);
+            vertical-align: top;
+            background: #ffffff;
+        }
+
+        .custom-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .custom-table tr:hover td {
+            background: #fbfcfe;
+        }
+
+        /* Formula Cards */
+        .formula-card {
+            background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
+            border: 1px solid #bfdbfe;
+            border-radius: var(--radius-md);
+            padding: 20px 24px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .formula-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 13.5px;
+            font-weight: 700;
+            color: #1e40af;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 10px;
+        }
+
+        .formula-latex {
+            font-size: 16px;
+            color: #0f172a;
+            margin: 8px 0;
+            overflow-x: auto;
+        }
+
+        .formula-caption {
+            font-size: 12.5px;
+            color: #475569;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        /* Callouts */
+        .callout-box {
+            padding: 16px 20px;
+            border-radius: var(--radius-md);
+            margin: 20px 0;
+            font-size: 13.6px;
+            line-height: 1.65;
+        }
+
+        .callout-box strong {
+            font-weight: 700;
+        }
+
+        .callout-note {
+            background: #eff6ff;
+            border-left: 4px solid var(--primary);
+            color: #1e3a8a;
+        }
+
+        .callout-warning {
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            color: #92400e;
+        }
+
+        .callout-tip {
+            background: #f0fdf4;
+            border-left: 4px solid #16a34a;
+            color: #166534;
+        }
+
+        /* Badges */
+        .badge-accent {
+            background: #e0e7ff;
+            color: #3730a3;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 999px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .badge-danger {
+            background: #fee2e2;
+            color: #991b1b;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 999px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .badge-neutral {
+            background: #f1f5f9;
+            color: #475569;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 999px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        /* Handwritten Examiner Notes */
+        .handwritten-note {
+            background: #fefce8;
+            border: 1px dashed #ca8a04;
+            border-radius: var(--radius-md);
+            padding: 18px 22px;
+            margin: 22px 0;
+        }
+
+        .handwritten-title {
+            font-family: 'Kalam', cursive;
+            font-size: 18px;
+            font-weight: 700;
+            color: #854d0e;
+            margin-bottom: 6px;
+        }
+
+        .handwritten-body {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 16.5px;
+            color: #713f12;
+            line-height: 1.5;
+        }
+
+        /* Interactive TYK Accordions */
+        .tyk-card {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: var(--radius-md);
+            margin-bottom: 22px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .tyk-header {
+            padding: 14px 20px;
+            background: var(--slate-50);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--slate-200);
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .tyk-badge {
+            font-family: 'Outfit', sans-serif;
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: #e0e7ff;
+            color: #3730a3;
+        }
+
+        .tyk-question {
+            padding: 20px;
+            font-size: 13.8px;
+            color: var(--slate-800);
+            line-height: 1.65;
+            background: #ffffff;
+        }
+
+        .tyk-solution {
+            padding: 20px;
+            background: #f8fafc;
+            border-top: 1px dashed var(--slate-200);
+            display: none;
+            font-size: 13.5px;
+            color: var(--slate-700);
+            line-height: 1.65;
+        }
+
+        .tyk-solution.open {
+            display: block;
+        }
+
+        .btn-toggle-sol {
+            background: #2563eb;
+            color: #ffffff;
+            border: none;
+            padding: 6px 14px;
+            border-radius: var(--radius-sm);
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            flex-shrink: 0;
+        }
+
+        .btn-toggle-sol:hover {
+            background: #1d4ed8;
+        }
+
+        /* Next/Prev Chapter Footer */
+        .chapter-footer-nav {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--slate-200);
+            flex-wrap: wrap;
+        }
+
+        .footer-nav-card {
+            flex: 1;
+            min-width: 260px;
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: var(--radius-md);
+            padding: 18px 22px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .footer-nav-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .footer-nav-label {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .footer-nav-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--slate-900);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Topbar -->
+    <header class="topbar">
+        <div class="topbar-left">
+            <a href="../../notes/frnotes.html" class="back-hub-btn">&larr; Back to FR Hub</a>
+            <span class="chapter-title">CA Final FR &bull; Chapter 8: Disclosures in Financial Statements (Module 3)</span>
+        </div>
+        <div class="topbar-right">
+            <div class="progress-container">
+                <div class="progress-bar" id="readingProgressBar"></div>
+            </div>
+            <button class="toggle-btn" id="sidebarToggleBtn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <span>Index</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="layout">
+
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebarNav">
+            <h3>Overview</h3>
+            <ul class="sidebar-nav">
+                <li><a href="#overview" class="active"><span class="nav-num">&bull;</span> Module 3 Architecture</a></li>
+            </ul>
+
+            <h3>Unit 1 &bull; Related Parties</h3>
+            <ul class="sidebar-nav">
+                <li><a href="#ind-as-24"><span class="nav-num">U1</span> Ind AS 24: Related Party Disclosures</a></li>
+                <li><a href="#ind-as-24-definitions"><span class="nav-num">&bull;</span> Control, KMP &amp; Close Family</a></li>
+                <li><a href="#ind-as-24-relationships"><span class="nav-num">&bull;</span> Related vs Non-Related Parties</a></li>
+                <li><a href="#ind-as-24-disclosures"><span class="nav-num">&bull;</span> Mandatory Disclosure Framework</a></li>
+                <li><a href="#ind-as-24-gov-exempt"><span class="nav-num">&bull;</span> Government Entities Exemption</a></li>
+                <li><a href="#ind-as-24-tyk"><span class="nav-num">&bull;</span> Solved TYK Questions (1-5)</a></li>
+            </ul>
+
+            <h3>Unit 2 &bull; Earnings Per Share</h3>
+            <ul class="sidebar-nav">
+                <li><a href="#ind-as-33"><span class="nav-num">U2</span> Ind AS 33: Earnings Per Share</a></li>
+                <li><a href="#ind-as-33-basic"><span class="nav-num">&bull;</span> Basic EPS &amp; WANOS Mechanics</a></li>
+                <li><a href="#ind-as-33-bonus-rights"><span class="nav-num">&bull;</span> Bonus, Split &amp; Rights Issues</a></li>
+                <li><a href="#ind-as-33-diluted"><span class="nav-num">&bull;</span> Diluted EPS: Convertible &amp; Options</a></li>
+                <li><a href="#ind-as-33-ranking"><span class="nav-num">&bull;</span> Dilutive vs Anti-Dilutive Ranking</a></li>
+                <li><a href="#ind-as-33-contingent"><span class="nav-num">&bull;</span> Contingent Shares &amp; Subsidiaries</a></li>
+                <li><a href="#ind-as-33-tyk"><span class="nav-num">&bull;</span> Solved TYK Questions (1-5)</a></li>
+            </ul>
+
+            <h3>Unit 3 &bull; Operating Segments</h3>
+            <ul class="sidebar-nav">
+                <li><a href="#ind-as-108"><span class="nav-num">U3</span> Ind AS 108: Operating Segments</a></li>
+                <li><a href="#ind-as-108-management"><span class="nav-num">&bull;</span> Management Approach &amp; CODM</a></li>
+                <li><a href="#ind-as-108-thresholds"><span class="nav-num">&bull;</span> 10% Tests &amp; 75% Coverage Rule</a></li>
+                <li><a href="#ind-as-108-measurement"><span class="nav-num">&bull;</span> Segment Measurement &amp; Rec</a></li>
+                <li><a href="#ind-as-108-entity-wide"><span class="nav-num">&bull;</span> Entity-Wide &amp; Major Customer</a></li>
+                <li><a href="#ind-as-108-tyk"><span class="nav-num">&bull;</span> Solved TYK Questions (1-3)</a></li>
+            </ul>
+
+            <h3>Master Synthesis</h3>
+            <ul class="sidebar-nav">
+                <li><a href="#master-synthesis"><span class="nav-num">&bull;</span> Disclosures &amp; Governance Matrix</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content" id="mainContent">
+            <div class="content-container">
+
+                <!-- Hero Banner -->
+                <div class="hero-banner" id="overview">
+                    <span class="hero-badge">Module 3 &bull; Financial Statement Transparency</span>
+                    <h1 class="hero-title">Chapter 8: Ind AS on Disclosures in the Financial Statements</h1>
+                    <p class="hero-subtitle">
+                        An exhaustive, master-level examination suite covering the three pillar disclosure standards for public entities: Ind AS 24 (Related Party Disclosures: Control, Joint Control, KMP, Close Family Members, and Government Exemption), Ind AS 33 (Earnings Per Share: WANOS, Rights Issue Bonus Element, If-Converted Method, Treasury Stock Method, and Anti-Dilutive Ranking), and Ind AS 108 (Operating Segments: Management Approach, Chief Operating Decision Maker, 10% Quantitative Thresholds, 75% External Revenue Rule, and Reconciliations). Complete with mathematical equations, ICAI carve-outs, and all solved practical illustrations and TYK problems for CA Final Paper 1 (Financial Reporting).
+                    </p>
+                    <div class="hero-stats">
+                        <span class="hero-stat">3 Pillar Standards (Ind AS 24, 33, 108)</span>
+                        <span class="hero-stat">30+ ICAI Illustrations &amp; TYKs</span>
+                        <span class="hero-stat">100% Comprehensive Coverage</span>
+                        <span class="hero-stat">Applicable for May 2027 &amp; Onwards</span>
+                    </div>
+                </div>
+
+                <!-- ================= UNIT 1: IND AS 24 RELATED PARTY DISCLOSURES ================= -->
+                <section class="section-card" id="ind-as-24">
+                    <div class="section-header">
+                        <div class="section-number">Unit 1 &bull; Corporate Governance &amp; Related Parties</div>
+                        <h2 class="section-title">Ind AS 24: Related Party Disclosures</h2>
+                        <p class="section-lead">
+                            Ensures that an entity's financial statements contain disclosures drawing attention to the possibility that its financial position and profit or loss may have been affected by the existence of related parties, transactions, outstanding balances, and commitments with such parties.
+                        </p>
+                    </div>
+
+                    <!-- Ind AS 24 Objective & Scope -->
+                    <div class="concept-block">
+                        <h3 class="concept-title">1. Objective, Scope &amp; Fundamental Philosophy</h3>
+                        <div class="concept-body">
+                            <p>
+                                Related party relationships are a normal feature of commerce and business. Entities frequently carry on activities through subsidiaries, joint ventures, and associates. However, related parties may enter into transactions that unrelated parties would not enter into, or at prices and terms different from those between unrelated parties (e.g., selling goods at cost, interest-free loans, or directing procurement).
+                            </p>
+                            <p>
+                                Therefore, knowledge of an entity's related party relationships, transactions, and outstanding balances is essential for users to assess the entity's operational risks, opportunities, and financial position.
+                            </p>
+
+                            <div class="callout-box callout-note">
+                                <strong>Scope &amp; Application Level (Paragraphs 3–4):</strong>
+                                <ul style="margin: 6px 0 0 18px;">
+                                    <li><strong>Individual &amp; Separate Financial Statements:</strong> Full disclosure of related party relationships, transactions, and balances.</li>
+                                    <li><strong>Consolidated Financial Statements:</strong> Intercompany transactions and balances between group entities are <em>eliminated on consolidation</em> under Ind AS 110, so they are not disclosed in CFS. (Exception: Intercompany transactions with an investment entity subsidiary measured at FVTPL are NOT eliminated and must be disclosed).</li>
+                                    <li><strong>Confidentiality Carve-Out:</strong> Disclosures are not required if they conflict with an entity's duties of confidentiality under a statute, regulator, or similar competent authority.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Core Definitions & Identification -->
+                    <div class="concept-block" id="ind-as-24-definitions">
+                        <h3 class="concept-title">2. Core Definitions: Control, KMP &amp; Close Family Members</h3>
+                        <div class="concept-body">
+                            <p>
+                                Under Paragraph 9 of Ind AS 24, a person or entity is related to the reporting entity based on defined tests of control, joint control, significant influence, or key management authority.
+                            </p>
+
+                            <div class="table-wrapper">
+                                <table class="custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 25%;">Standard Term</th>
+                                            <th style="width: 40%;">Official Ind AS 24 Definition</th>
+                                            <th style="width: 35%;">Critical Exam Nuance</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Related Party</strong></td>
+                                            <td>A person or an entity that is related to the entity that is preparing its financial statements (the "reporting entity").</td>
+                                            <td>Evaluates economic substance over legal form. Relates to both natural persons and corporate entities.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Key Management Personnel (KMP)</strong></td>
+                                            <td>Those persons having authority and responsibility for planning, directing, and controlling the activities of the entity, directly or indirectly, including any director (whether executive or otherwise) of that entity.</td>
+                                            <td><strong>Includes:</strong> Executive Directors, Non-Executive Directors, Independent Directors, Managing Director, CFO, and Company Secretary. Also covers parent's KMP.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Close Members of the Family of a Person</strong></td>
+                                            <td>Those family members who may be expected to influence, or be influenced by, that person in their dealings with the entity.</td>
+                                            <td>
+                                                Includes:
+                                                <ul style="margin: 4px 0 0 16px;">
+                                                    <li>That person's children and spouse / domestic partner;</li>
+                                                    <li>Children of that person's spouse / domestic partner; and</li>
+                                                    <li>Dependants of that person or that person's spouse / domestic partner.</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Related Party Transaction</strong></td>
+                                            <td>A transfer of resources, services, or obligations between a reporting entity and a related party, <strong>regardless of whether a price is charged</strong>.</td>
+                                            <td>Transactions at free of cost (e.g., zero-cost guarantees, interest-free loans, free management services) MUST be disclosed!</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Government-Related Entity</strong></td>
+                                            <td>An entity that is controlled, jointly controlled, or significantly influenced by a government.</td>
+                                            <td>Eligible for partial disclosure exemption under Paragraph 25.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Related vs Non-Related Parties -->
+                    <div class="concept-block" id="ind-as-24-relationships">
+                        <h3 class="concept-title">3. Related Party Identification Rules (Person vs. Entity)</h3>
+                        <div class="concept-body">
+                            <p>
+                                Paragraph 9 sets out two exhaustive categorizations: when a <strong>person</strong> is related, and when an <strong>entity</strong> is related to the reporting entity.
+                            </p>
+
+                            <div class="table-wrapper">
+                                <table class="custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 50%;">When a PERSON (or Close Family Member) is Related</th>
+                                            <th style="width: 50%;">When an ENTITY is Related to the Reporting Entity</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                A person or a close member of that person's family is related to a reporting entity if that person:
+                                                <ol style="margin: 6px 0 0 18px;">
+                                                    <li>Has <strong>control</strong> or <strong>joint control</strong> over the reporting entity;</li>
+                                                    <li>Has <strong>significant influence</strong> over the reporting entity; OR</li>
+                                                    <li>Is a member of the <strong>key management personnel (KMP)</strong> of the reporting entity or of a parent of the reporting entity.</li>
+                                                </ol>
+                                            </td>
+                                            <td>
+                                                An entity is related to a reporting entity if any of the following conditions applies:
+                                                <ol style="margin: 6px 0 0 18px;">
+                                                    <li>The entity and the reporting entity are members of the same <strong>group</strong> (parent, subsidiary, fellow subsidiary).</li>
+                                                    <li>One entity is an <strong>associate or joint venture</strong> of the other entity (or an associate/JV of a member of the group).</li>
+                                                    <li>Both entities are <strong>joint ventures of the same third party</strong>.</li>
+                                                    <li>One entity is a <strong>joint venture of a third entity</strong> and the other entity is an <strong>associate</strong> of the third entity.</li>
+                                                    <li>The entity is a <strong>post-employment benefit plan</strong> for the benefit of employees of either the reporting entity or an entity related to the reporting entity.</li>
+                                                    <li>The entity is <strong>controlled or jointly controlled</strong> by a person identified in the Person category.</li>
+                                                    <li>A person who controls/jointly controls the reporting entity has <strong>significant influence</strong> over the entity or is a <strong>KMP</strong> of the entity (or of a parent of the entity).</li>
+                                                    <li>The entity, or any member of a group of which it is a part, provides <strong>key management personnel services</strong> to the reporting entity or to the parent of the reporting entity.</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Who are NOT Related Parties -->
+                            <div class="callout-box callout-warning">
+                                <strong>Who are NOT Deemed Related Parties (Paragraph 11):</strong>
+                                <ul style="margin: 6px 0 0 18px;">
+                                    <li>Two entities simply because they have a director or other member of key management personnel in common (unless the director controls or jointly controls both).</li>
+                                    <li>Two venturers simply because they share joint control over a joint venture.</li>
+                                    <li>Providers of finance (banks, financial institutions), trade unions, public utilities, and government departments/agencies in the course of their normal dealings.</li>
+                                    <li>A single customer, supplier, franchisor, distributor, or general agent with whom an entity transacts a significant volume of business, simply by virtue of the resulting economic dependence.</li>
+                                    <li>Co-associates of the same investor (if Investor A has significant influence over B and C, B and C are NOT related to each other!).</li>
+                                </ul>
+                            </div>
+
+                            <div class="handwritten-note">
+                                <div class="handwritten-title">Examiner's Secret &bull; Fellow Associates vs. Fellow JVs</div>
+                                <div class="handwritten-body">
+                                    "Watch out in exams! If Entity A has Significant Influence over both Entity B and Entity C (fellow associates), B and C are NOT related parties! But if Entity A has Joint Control over both B and C (fellow joint ventures), B and C ARE related parties under Ind AS 24! Similarly, if A has Joint Control over B and Significant Influence over C, B and C are related parties!"
+                                </div>
+                            </div>
+
+                            <!-- Solved Illustrative Cases on Related Party Identification -->
+                            <h4 style="font-family: 'Outfit', sans-serif; font-size: 16px; font-weight: 700; color: var(--slate-900); margin: 24px 0 14px 0;">
+                                Comprehensive ICAI Illustrative Case Studies (Ind AS 24)
+                            </h4>
+
+                            <!-- Illustration 1 -->
+                            <div class="tyk-card">
+                                <div class="tyk-header">
+                                    <span class="tyk-badge">ICAI Illustration 1</span>
+                                    <span style="font-size: 12px; font-weight: 700; color: #475569;">Associates and Subsidiaries Relationship Matrix</span>
+                                    <button class="btn-toggle-sol" id="btn-ind24-ill1" onclick="toggleSolution('ind24-ill1')">Show Solution</button>
+                                </div>
+                                <div class="tyk-question">
+                                    <strong>Case:</strong> Parent P has two subsidiaries, Sub A and Sub B, and an associate, Ass C. Sub A has an associate, Ass D. Identify the related party relationships from the perspective of Sub A's financial statements.
+                                </div>
+                                <div class="tyk-solution" id="ind24-ill1">
+                                    <strong>Analysis from Sub A's Perspective:</strong>
+                                    <ul>
+                                        <li><strong>Parent P:</strong> Related (Parent of Sub A).</li>
+                                        <li><strong>Sub B:</strong> Related (Fellow subsidiary in the same group).</li>
+                                        <li><strong>Ass C:</strong> Related (Associate of Sub A's parent, P).</li>
+                                        <li><strong>Ass D:</strong> Related (Direct associate of Sub A).</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Illustration 2 -->
+                            <div class="tyk-card">
+                                <div class="tyk-header">
+                                    <span class="tyk-badge">ICAI Illustration 2</span>
+                                    <span style="font-size: 12px; font-weight: 700; color: #475569;">Key Management Personnel &amp; Directorships</span>
+                                    <button class="btn-toggle-sol" id="btn-ind24-ill2" onclick="toggleSolution('ind24-ill2')">Show Solution</button>
+                                </div>
+                                <div class="tyk-question">
+                                    <strong>Case:</strong> Mr. K is a director of Company X and also a director of Company Y. Does this common directorship alone make Company X and Company Y related parties?
+                                </div>
+                                <div class="tyk-solution" id="ind24-ill2">
+                                    <strong>Analysis &amp; Conclusion:</strong>
+                                    <p>
+                                        <strong>No.</strong> Under Paragraph 11(a) of Ind AS 24, two entities are not related parties simply because they have a director or other member of key management personnel in common. Unless Mr. K has control or joint control over both entities, or significant influence combined with control, the two entities are not related parties.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Illustration 4 & 5 -->
+                            <div class="tyk-card">
+                                <div class="tyk-header">
+                                    <span class="tyk-badge">ICAI Illustration 5</span>
+                                    <span style="font-size: 12px; font-weight: 700; color: #475569;">Acquisition &amp; Disposal of Subsidiary During the Year</span>
+                                    <button class="btn-toggle-sol" id="btn-ind24-ill5" onclick="toggleSolution('ind24-ill5')">Show Solution</button>
+                                </div>
+                                <div class="tyk-question">
+                                    <strong>Case:</strong> Power Ltd. regularly sells electricity to Transmission Ltd. Power Ltd. acquired 100% shareholding of Transmission Ltd. on 15 July 20X1 and disposed of the entire shareholding on 21 March 20X2. Both entities had transactions during the period of shareholding as well as outside that period. For which period must Power Ltd. make related party disclosures in its financial statements for the year ended 31 March 20X2?
+                                </div>
+                                <div class="tyk-solution" id="ind24-ill5">
+                                    <strong>Analysis &amp; Conclusion:</strong>
+                                    <p>
+                                        Power Ltd. must make related party disclosures <strong>strictly for the period from 15 July 20X1 to 21 March 20X2</strong>, during which the related party relationship (subsidiary) actually existed. Transactions taking place prior to 15 July 20X1 and after 21 March 20X2 were entered into as unrelated third parties and must not be disclosed as related party transactions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mandatory Disclosure Framework -->
+                    <div class="concept-block" id="ind-as-24-disclosures">
+                        <h3 class="concept-title">4. Mandatory Disclosure Framework (Paragraphs 13–24)</h3>
+                        <div class="concept-body">
+                            <p>
+                                Ind AS 24 establishes disclosure requirements structured around four distinct pillars: control relationships, KMP compensation, transaction details, and pricing terms.
+                            </p>
+
+                            <div class="table-wrapper">
+                                <table class="custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 25%;">Disclosure Pillar</th>
+                                            <th style="width: 45%;">Specific Disclosure Requirements</th>
+                                            <th style="width: 30%;">Exam Rule / Condition</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Control Relationships (Paragraph 13)</strong></td>
+                                            <td>
+                                                Relationships between a parent and its subsidiaries shall be disclosed irrespective of whether there have been any transactions between them:
+                                                <ul style="margin: 4px 0 0 16px;">
+                                                    <li>Name of the entity's parent;</li>
+                                                    <li>Ultimate controlling party (if different from immediate parent); and</li>
+                                                    <li>Next most senior parent that produces consolidated financial statements for public use (if neither parent nor ultimate party produces them).</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <span class="badge-accent">Mandatory Always</span><br>
+                                                Required even if there have been ZERO transactions during the entire reporting period!
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>KMP Compensation (Paragraph 17)</strong></td>
+                                            <td>
+                                                Total KMP compensation broken down into the following 5 categories:
+                                                <ol style="margin: 4px 0 0 16px;">
+                                                    <li>Short-term employee benefits (salaries, sitting fees);</li>
+                                                    <li>Post-employment benefits (pensions, gratuity);</li>
+                                                    <li>Other long-term benefits (leave encashment);</li>
+                                                    <li>Termination benefits; and</li>
+                                                    <li>Share-based payment benefits (ESOPs under Ind AS 102).</li>
+                                                </ol>
+                                            </td>
+                                            <td>
+                                                <span class="badge-neutral">All Directors</span><br>
+                                                Includes independent and non-executive directors' sitting fees and retainers.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Related Party Transactions (Paragraph 18)</strong></td>
+                                            <td>
+                                                If an entity has had related party transactions during the period:
+                                                <ul style="margin: 4px 0 0 16px;">
+                                                    <li>Nature of the related party relationship;</li>
+                                                    <li>Amount of the transactions;</li>
+                                                    <li>Amount of outstanding balances (including terms, secured/unsecured, settlement mechanism);</li>
+                                                    <li>Commitments (e.g., guarantees, purchase commitments);</li>
+                                                    <li>Provisions for doubtful debts related to outstanding balances; and</li>
+                                                    <li>Expense recognized during the period in respect of bad or doubtful debts from related parties.</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <span class="badge-neutral">Categorized by Party</span><br>
+                                                Disclosures must be made separately for parent, subsidiaries, associates, JVs, KMP, and other related parties.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Arm's Length Claims (Paragraph 21)</strong></td>
+                                            <td>
+                                                Disclosures that related party transactions were made on terms equivalent to those that prevail in arm's length transactions are made <strong>only if such terms can be substantiated</strong>.
+                                            </td>
+                                            <td>
+                                                <span class="badge-danger">Substantiation Required</span><br>
+                                                Management cannot make casual arm's length statements without demonstrable market benchmark evidence.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Government-Related Entities Exemption -->
+                    <div class="concept-block" id="ind-as-24-gov-exempt">
+                        <h3 class="concept-title">5. Partial Exemption for Government-Related Entities (Paragraphs 25–27)</h3>
+                        <div class="concept-body">
+                            <p>
+                                When a government controls, jointly controls, or significantly influences multiple commercial entities, extensive disclosures of all mutual transactions would impose an unnecessary administrative burden. Ind AS 24 provides a special relief:
+                            </p>
+
+                            <div class="callout-box callout-tip">
+                                <strong>Exemption Provisions (Paragraph 25):</strong>
+                                A reporting entity is <strong>exempt</strong> from the general disclosure requirements of Paragraph 18 in relation to related party transactions and outstanding balances, including commitments, with:
+                                <ol style="margin: 6px 0 0 18px;">
+                                    <li>A government that has control, joint control, or significant influence over the reporting entity; and</li>
+                                    <li>Another entity that is a related party because the same government has control, joint control, or significant influence over both.</li>
+                                </ol>
+                            </div>
+
+                            <p><strong>Mandatory Simplified Disclosures (Paragraph 26):</strong></p>
+                            <ul>
+                                <li>The name of the government and the nature of its relationship with the reporting entity (control, joint control, or significant influence);</li>
+                                <li>The nature and amount of each <strong>individually significant transaction</strong>; and</li>
+                                <li>For other transactions that are collectively, but not individually, significant, a qualitative or quantitative indication of their extent.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Significant Differences: Ind AS 24 vs AS 18 -->
+                    <div class="concept-block">
+                        <h3 class="concept-title">6. Significant Differences: Ind AS 24 vis-à-vis AS 18</h3>
+                        <div class="concept-body">
+                            <div class="table-wrapper">
+                                <table class="custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 25%;">Area</th>
+                                            <th style="width: 40%;">Ind AS 24 (New Framework)</th>
+                                            <th style="width: 35%;">Old AS 18 (Previous GAAP)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Key Management Personnel (KMP)</strong></td>
+                                            <td>Explicitly includes <strong>Non-Executive and Independent Directors</strong> as KMP. Sitting fees are disclosed as KMP compensation.</td>
+                                            <td>Excluded non-executive directors from KMP unless they had executive managerial authority.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Close Members of Family</strong></td>
+                                            <td>Explicitly includes <strong>domestic partner</strong>, children of domestic partner, and dependants of domestic partner.</td>
+                                            <td>Limited to spouse, son, daughter, brother, sister, father, and mother who may influence.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Post-Employment Benefit Plans</strong></td>
+                                            <td>Post-employment benefit plans for the benefit of employees of the entity/group are <strong>expressly defined as related parties</strong>.</td>
+                                            <td>Did not consider employee benefit trusts or plans as related parties.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>KMP Management Entities</strong></td>
+                                            <td>An entity providing key management personnel services to the reporting entity is a related party.</td>
+                                            <td>Did not contain provisions covering corporate management entities providing KMP services.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Government-Related Entities</strong></td>
+                                            <td>Provides <strong>partial exemption</strong> from detailed disclosures, requiring only broad qualitative/quantitative disclosures.</td>
+                                            <td>Exempted state-controlled enterprises completely from related party disclosures in their financial statements.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solved TYK Questions (Ind AS 24) -->
+                    <div class="concept-block" id="ind-as-24-tyk">
+                        <h3 class="concept-title">7. ICAI Test Your Knowledge (TYK) Questions &amp; Detailed Solutions</h3>
+                        <div class="concept-body">
+                            <p>
+                                Complete solutions to all Test Your Knowledge questions for Unit 1, formatted with working notes and interactive solution toggles.
+                            </p>
+
+                            <!-- TYK 1 -->
+                            <div class="tyk-card">
+                                <div class="tyk-header">
+                                    <span class="tyk-badge">TYK Question 1</span>
+                                    <span style="font-size: 12px; font-weight: 700; color: #475569;">Domestic Partners with Cross Investments in Two Companies</span>
+                                    <button class="btn-toggle-sol" id="btn-ind24-q1" onclick="toggleSolution('ind24-q1')">Show Solution</button>
+                                </div>
+                                <div class="tyk-question">
+                                    <strong>Question:</strong> Mr. X is a domestic partner of Ms. Y. Mr. X has an investment in A Ltd. and Ms. Y has an investment in B Ltd.
+                                    <br>Required:
+                                    <ol type="a">
+                                        <li>Examine when a related party relationship is established from the perspective of A Ltd.'s financial statements.</li>
+                                        <li>Examine when a related party relationship is established from the perspective of B Ltd.'s financial statements.</li>
+                                        <li>Will A Ltd. and B Ltd. be related parties if Mr. X has only significant influence over A Ltd. and Ms. Y also has only significant influence over B Ltd.?</li>
+                                    </ol>
+                                </div>
+                                <div class="tyk-solution" id="ind24-q1">
+                                    <strong>Solution &amp; Analysis:</strong>
+                                    <p>
+                                        Under Paragraph 9(a) of Ind AS 24, close members of the family of a person include that person's domestic partner. Thus, Mr. X and Ms. Y are close family members to each other.
+                                    </p>
+                                    <ol type="a">
+                                        <li>
+                                            <strong>From A Ltd.'s perspective:</strong>
+                                            <ul>
+                                                <li>Mr. X is related to A Ltd. if he has control, joint control, or significant influence over A Ltd., or is a member of its KMP.</li>
+                                                <li>Ms. Y is related to A Ltd. as a close family member of Mr. X if Mr. X has control, joint control, significant influence, or is a KMP of A Ltd.</li>
+                                                <li>B Ltd. is related to A Ltd. if Ms. Y controls or jointly controls B Ltd. AND Mr. X controls, jointly controls, or has significant influence over A Ltd. (or is a KMP of A Ltd.).</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <strong>From B Ltd.'s perspective:</strong>
+                                            <ul>
+                                                <li>Ms. Y is related to B Ltd. if she has control, joint control, significant influence, or is a KMP of B Ltd.</li>
+                                                <li>Mr. X is related to B Ltd. as a close family member of Ms. Y.</li>
+                                                <li>A Ltd. is related to B Ltd. if Mr. X controls or jointly controls A Ltd. AND Ms. Y controls, jointly controls, or has significant influence over B Ltd.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <strong>Both have ONLY Significant Influence:</strong>
+                                            <strong>No, A Ltd. and B Ltd. will NOT be related parties.</strong> Under Paragraph 9(b)(vi)/(vii), for two entities to be related through individuals, at least one of the individuals must have <strong>control or joint control</strong> over one of the entities. If Mr. X has only significant influence over A Ltd. and Ms. Y has only significant influence over B Ltd., no related party relationship exists between A Ltd. and B Ltd.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <!-- TYK 2 -->
+                            <div class="tyk-card">
+                                <div class="tyk-header">
+                                    <span class="tyk-badge">TYK Question 2</span>
+                                    <span style="font-size: 12px; font-weight: 700; color: #475569;">Joint Control and Significant Influence Across Entities</span>
+                                    <button class="btn-toggle-sol" id="btn-ind24-q2" onclick="toggleSolution('ind24-q2')">Show Solution</button>
+                                </div>
+                                <div class="tyk-question">
+                                    <strong>Question:</strong> A Ltd. has both (i) joint control over B Ltd. and (ii) joint control or significant influence over C Ltd.
+                                    <br>Required:
+                                    <ol type="a">
+                                        <li>Examine the related party relationship from the perspective of C Ltd.'s financial statements.</li>
+                                        <li>Examine the related party relationship from the perspective of B Ltd.'s financial statements.</li>
+                                    </ol>
+                                </div>
+                                <div class="tyk-solution" id="ind24-q2">
+                                    <strong>Solution &amp; Analysis:</strong>
+                                    <p>
+                                        Under Paragraph 9(b) of Ind AS 24:
+                                    </p>
+                                    <ol type="a">
+                                        <li>
+                                            <strong>From C Ltd.'s perspective:</strong>
+                                            <ul>
+                                                <li>A Ltd. is related to C Ltd. (because A Ltd. has joint control or significant influence over C Ltd. under Para 9(b)(ii)).</li>
+                                                <li>B Ltd. is related to C Ltd. because under Para 9(b)(iv) / 9(b)(v), an entity that is a joint venture of a third entity (A Ltd.) is related to an associate or fellow joint venture (C Ltd.) of that same third entity.</li>
+                                                <li><strong>Conclusion:</strong> C Ltd. is related to both A Ltd. and B Ltd.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <strong>From B Ltd.'s perspective:</strong>
+                                            <ul>
+                                                <li>A Ltd. is related to B Ltd. (venturer holding joint control).</li>
+                                                <li>C Ltd. is related to B Ltd. (fellow joint venture or associate of common venturer A Ltd.).</li>
+                                                <li><strong>Conclusion:</strong> B Ltd. is related to both A Ltd. and C Ltd.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <!-- TYK 3 -->
+                            <div class="tyk-card">
+                                <div class="tyk-header">
+                                    <span class="tyk-badge">TYK Question 3</span>
+                                    <span style="font-size: 12px; font-weight: 700; color: #475569;">Director's Spouse Acquiring Customer Entity with Favourable Terms</span>
+                                    <button class="btn-toggle-sol" id="btn-ind24-q3" onclick="toggleSolution('ind24-q3')">Show Solution</button>
+                                </div>
+                                <div class="tyk-question">
+                                    <strong>Question:</strong> ABC Ltd. is a long-standing customer of XYZ Ltd. Mrs. P, whose husband is a director in XYZ Ltd., purchased a controlling interest in entity ABC Ltd. on 1 June 20X1. Sales from XYZ Ltd. to ABC Ltd. in the two months from 1 April 20X1 to 31 May 20X1 totalled ₹8,00,000. Following the share purchase by Mrs. P, XYZ Ltd. began supplying products at a 20% discount to normal selling price and allowed ABC Ltd. 3 months' credit (previously only 1 month). Sales from XYZ Ltd. to ABC Ltd. in the ten-month period from 1 June 20X1 to 31 March 20X2 totalled ₹60,00,000. On 31 March 20X2, trade receivables of XYZ Ltd. included ₹18,00,000 owing by ABC Ltd.
+                                    <br><br>
+                                    Analyse and show how the above events would be reported in the financial statements of XYZ Ltd. for the year ended 31 March 20X2 as per Ind AS.
+                                </div>
+                                <div class="tyk-solution" id="ind24-q3">
+                                    <strong>Comprehensive Financial Reporting Analysis:</strong>
+                                    <ol>
+                                        <li>
+                                            <strong>Financial Statement Reporting:</strong>
+                                            <ul>
+                                                <li><strong>Revenue:</strong> XYZ Ltd. records total revenue of <strong>₹68,00,000</strong> (₹8,00,000 + ₹60,00,000) in its Statement of Profit and Loss.</li>
+                                                <li><strong>Trade Receivables:</strong> XYZ Ltd. includes <strong>₹18,00,000</strong> within Trade Receivables in the Balance Sheet as of 31 March 20X2.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <strong>Related Party Determination:</strong>
+                                            <ul>
+                                                <li>Mr. P (director) is a Key Management Personnel (KMP) of XYZ Ltd.</li>
+                                                <li>Mrs. P is a close family member of a KMP under Paragraph 9(a)(iii).</li>
+                                                <li>From 1 June 20X1, ABC Ltd. is an entity controlled by a close family member of a KMP of XYZ Ltd. Therefore, under Paragraph 9(b)(vi), <strong>ABC Ltd. became a related party of XYZ Ltd. effective 1 June 20X1</strong>.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <strong>Mandatory Disclosures in Notes:</strong>
+                                            Under Paragraphs 18 &amp; 19, XYZ Ltd. must disclose:
+                                            <ul>
+                                                <li>The <strong>nature of the related party relationship</strong> (customer entity controlled by the spouse of a director of XYZ Ltd.).</li>
+                                                <li>The <strong>transaction amount during the related party period</strong>: Sales of <strong>₹60,00,000</strong> for the period 1 June 20X1 to 31 March 20X2. (The ₹8,00,000 sales prior to 1 June 20X1 were unrelated party transactions and are NOT disclosed as related party transactions).</li>
+                                                <li>The <strong>outstanding balance of ₹18,00,000</strong> at 31 March 20X2.</li>
+                                                <li>The <strong>favourable terms and conditions</strong> under which the transactions occurred (i.e., 20% discount and 3 months credit vs. standard 1 month credit).</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <!-- TYK 4 -->
+                            <div class="tyk-card">
+                                <div class="tyk-header">
+                                    <span class="tyk-badge">TYK Question 4</span>
+                                    <span style="font-size: 12px; font-weight: 700; color: #475569;">Sitting Fees Paid to Independent and Non-Executive Directors</span>
+                                    <button class="btn-toggle-sol" id="btn-ind24-q4" onclick="toggleSolution('ind24-q4')">Show Solution</button>
+                                </div>
+                                <div class="tyk-question">
+                                    <strong>Question:</strong> Mr. Atul is an independent director of X Ltd., attending 5 board meetings during the year and receiving a sitting fee of ₹2,00,000 per meeting (Total ₹10,00,000). Mr. Naveen, a non-executive director, attended 5 meetings charging ₹1,50,000 per meeting (Total ₹7,50,000). The company accountant contends that because they are not employees of X Ltd., their fees should not be disclosed as related party transactions under Ind AS 24. Examine the validity of the accountant's view.
+                                </div>
+                                <div class="tyk-solution" id="ind24-q4">
+                                    <strong>Analysis &amp; Legal Conclusion:</strong>
+                                    <p>
+                                        <strong>The accountant's contention is WRONG.</strong>
+                                    </p>
+                                    <ol>
+                                        <li><strong>KMP Definition under Ind AS 24:</strong> Paragraph 9 explicitly defines KMP as those persons having authority and responsibility for planning, directing, and controlling the activities of the entity, directly or indirectly, <strong>including any director (whether executive or otherwise) of that entity</strong>. Both independent director Mr. Atul and non-executive director Mr. Naveen are directors of the entity and therefore qualify as Key Management Personnel.</li>
+                                        <li><strong>Employee Benefits Treatment:</strong> Under Ind AS 19 and Ind AS 24, directors are considered employees for remuneration disclosure purposes. Sitting fees paid for attending board meetings are <strong>short-term employee benefits</strong> under Paragraph 17(a).</li>
+                                        <li><strong>Mandatory Disclosure:</strong> X Ltd. must disclose total KMP compensation of <strong>₹17,50,000</strong> (Mr. Atul ₹10,00,000 + Mr. Naveen ₹7,50,000) under short-term employee benefits in the related party disclosures note.</li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <!-- TYK 5 -->
+                            <div class="tyk-card">
+                                <div class="tyk-header">
+                                    <span class="tyk-badge">TYK Question 5</span>
+                                    <span style="font-size: 12px; font-weight: 700; color: #475569;">Managing Director Controlling Another Entity (Arm's Length &amp; Materiality)</span>
+                                    <button class="btn-toggle-sol" id="btn-ind24-q5" onclick="toggleSolution('ind24-q5')">Show Solution</button>
+                                </div>
+                                <div class="tyk-question">
+                                    <strong>Question:</strong> Mr. Y is the Managing Director of ABC Ltd. and also owns 100% of PQR Ltd. ABC Ltd. purchased goods from PQR Ltd. during the year. Mr. Y queries whether disclosure is necessary because (i) the transaction was conducted strictly on an arm's length commercial basis, and (ii) the amount is numerically insignificant to ABC Ltd. Advise Mr. Y with reference to Ind AS 24.
+                                </div>
+                                <div class="tyk-solution" id="ind24-q5">
+                                    <strong>Legal &amp; Standard Clarifications:</strong>
+                                    <ol>
+                                        <li><strong>Related Party Relationship:</strong> Mr. Y is a KMP of ABC Ltd. and controls 100% of PQR Ltd. Under Paragraph 9(b)(vi), PQR Ltd. is a related party of ABC Ltd.</li>
+                                        <li><strong>Arm's Length Argument:</strong> Ind AS 24 requires disclosure of related party transactions regardless of whether a price is charged or whether the transaction was executed at arm's length. The mere fact that terms were commercial does not exempt disclosure. (Indeed, arm's length terms can only be stated if substantiated).</li>
+                                        <li><strong>Materiality Argument:</strong> Materiality under Ind AS is evaluated both by size (quantitative) and by nature (qualitative). Related party transactions are <strong>material by nature</strong> due to the inherent conflict of interest. Even if numerically insignificant to ABC Ltd., disclosure is required because it may influence users' perception of management conduct and governance.</li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- ================= UNIT 2: IND AS 33 EARNINGS PER SHARE ================= -->
+                <section class="section-card" id="ind-as-33">
+                    <div class="section-header">
+                        <div class="section-number">Unit 2 &bull; Capital Markets &amp; Valuation Metrics</div>
+                        <h2 class="section-title">Ind AS 33: Earnings Per Share (EPS)</h2>
+                        <p class="section-lead">
+                            Prescribes principles for the determination and presentation of earnings per share to improve performance comparisons between different entities in the same reporting period and between different reporting periods for the same entity. Covers Basic EPS, Weighted Average Number of Ordinary Shares (WANOS), Rights Issue Bonus Elements, Diluted EPS, Treasury Stock Method, and Sequential Anti-Dilutive Ranking.
+                        </p>
+                    </div>
+
+                    <!-- Ind AS 33 Scope & Core Architecture -->
+                    <div class="concept-block">
+                        <h3 class="concept-title">1. Scope, Applicability &amp; Presentation Mandate</h3>
+                        <div class="concept-body">
+                            <p>
+                                Ind AS 33 is mandatory for entities whose ordinary shares or potential ordinary shares are traded in a public market (domestic or foreign stock exchange, or over-the-counter market) or that file, or are in the process of filing, their financial statements with a securities commission or other regulatory organization for the purpose of issuing ordinary shares in a public market.
+                            </p>
+
+                            <div class="callout-box callout-note">
+                                <strong>Standalone vs. Consolidated Presentation Rule (Paragraph 4):</strong>
+                                When an entity presents both consolidated financial statements (CFS) and separate financial statements (SFS) prepared in accordance with Ind AS 110 and Ind AS 27, the disclosures required by Ind AS 33 need be presented <strong>only on the basis of the consolidated information</strong> on the face of the Consolidated Statement of Profit and Loss. If an entity chooses to disclose EPS in its separate financial statements as well, it must present such information on the face of its Separate Statement of Profit and Loss (never in the notes).
+                            </div>
+
+                            <div class="callout-box callout-warning">
+                                <strong>Equal Prominence on Face of P&amp;L (Paragraph 66):</strong>
+                                An entity shall present in the Statement of Profit and Loss <strong>Basic and Diluted EPS</strong> for:
+                                <ul style="margin: 4px 0 0 16px;">
+                                    <li>Profit or loss from <strong>continuing operations</strong> attributable to the ordinary equity holders of the parent entity; and</li>
+                                    <li>Profit or loss <strong>attributable to the ordinary equity holders</strong> of the parent entity for the period for each class of ordinary shares that has a different right for sharing in profit.</li>
+                                </ul>
+                                Basic and Diluted EPS must be presented with <strong>equal prominence</strong> for all periods presented, even if the amounts are negative (i.e., loss per share).
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Basic EPS & WANOS Mechanics -->
+                    <div class="concept-block" id="ind-as-33-basic">
+                        <h3 class="concept-title">2. Basic Earnings Per Share: Numerator &amp; Denominator (WANOS)</h3>
+                        <div class="concept-body">
+                            <p>
+                                Basic EPS measures the earnings generated by each ordinary share outstanding during the reporting period.
+                            </p>
+
+                            <div class="formula-card">
+                                <div class="formula-title">Basic Earnings Per Share Formula (Paragraph 9)</div>
+                                <div class="formula-latex">
+                                    $$\text{Basic EPS} = \frac{\text{Net Profit or Loss Attributable to Ordinary Equity Holders (Numerator)}}{\text{Weighted Average Number of Ordinary Shares Outstanding (WANOS - Denominator)}}$$
+                                </div>
+                                <div class="formula-caption">Calculated separately for continuing operations, discontinued operations, and total net profit.</div>
+                            </div>
+
+                            <h4 style="font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 700; color: var(--slate-900); margin: 20px 0 10px 0;">
+                                A. Numerator Adjustments (Earnings Attributable to Ordinary Shareholders):
+                            </h4>
+                            <p>
+                                The profit or loss attributable to the parent entity is adjusted for the after-tax amounts of <strong>preference dividends</strong>, differences arising on the settlement of preference shares, and other similar effects of preference shares classified as equity:
+                            </p>
+
+                            <div class="table-wrapper">
+                                <table class="custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 35%;">Preference Share Category</th>
+                                            <th style="width: 40%;">Adjustment to Numerator (Profit/Loss)</th>
+                                            <th style="width: 25%;">Governing Standard Rule</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Non-Cumulative Preference Shares</strong></td>
+                                            <td>Deduct dividend <strong>only if declared</strong> in respect of the reporting period.</td>
+                                            <td>Paragraph 14(a)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Cumulative Preference Shares</strong></td>
+                                            <td>Deduct dividend <strong>whether declared or not</strong> for the period. (Any dividend paid in respect of previous years is ignored in current period).</td>
+                                            <td>Paragraph 14(b)</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Redemption Premium / Buyback Discount</strong></td>
+                                            <td>Any excess of fair value of consideration paid to redeem preference shares over carrying amount is <em>deducted</em> from earnings; any discount is <em>added</em>.</td>
+                                            <td>Paragraph 15</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Increasing Rate Preference Shares</strong></td>
+                                            <td>Amortization of original issue discount / coupon escalation is treated as a preference dividend and <em>deducted</em> from earnings.</td>
+                                            <td>Paragraph 16</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h4 style="font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 700; color: var(--slate-900); margin: 20px 0 10px 0;">
+                                B. Denominator: Weighted Average Number of Ordinary Shares (WANOS):
+                            </h4>
+                            <p>
+                                The denominator is calculated by adjusting the ordinary shares in issue at the beginning of the period by the number of ordinary shares bought back or issued during the period, multiplied by a <strong>time-weighting factor</strong>:
+                            </p>
+
+                            <div class="formula-card">
+                                <div class="formula-title">Time Weighting Factor</div>
+                                <div class="formula-latex">
+                                    $$\text{Time Weighting Factor} = \frac{\text{Number of days/months shares are outstanding}}{\text{Total number of days/months in the period}}$$
+                                </div>
+                                <div class="formula-caption">Shares are usually included from the date consideration is receivable (cash, physical asset, services rendered).</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bonus, Split & Rights Issues -->
+                    <div class="concept-block" id="ind-as-33-bonus-rights">
+                        <h3 class="concept-title">3. Capital Changes Without Corresponding Inflow of Resources (Bonus, Splits &amp; Rights)</h3>
+                        <div class="concept-body">
+                            <p>
+                                Where ordinary shares are issued without a corresponding change in economic resources, the number of ordinary shares is adjusted <strong>proportionately as if the event had occurred at the beginning of the earliest period reported</strong> (retrospective restatement).
+                            </p>
+
+                            <div class="table-wrapper">
+                                <table class="custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 25%;">Corporate Event</th>
+                                            <th style="width: 45%;">Accounting Adjustment Mechanism</th>
+                                            <th style="width: 30%;">Retrospective Treatment</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Capitalisation or Bonus Issue</strong></td>
+                                            <td>Ordinary shares issued to existing shareholders for nil consideration. The number of shares outstanding before the event is multiplied by the bonus ratio.</td>
+                                            <td>Adjusted retrospectively for all comparative periods presented.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Share Split (Sub-division)</strong></td>
+                                            <td>Reduction in par value increasing number of shares (e.g., 1 share of ₹10 split into 5 shares of ₹2).</td>
+                                            <td>Multiplied by split ratio retrospectively for all periods.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Reverse Share Split (Consolidation)</strong></td>
+                                            <td>Increase in par value reducing number of shares (e.g., 5 shares of ₹2 consolidated into 1 share of ₹10).</td>
+                                            <td>Divided by consolidation ratio retrospectively for all periods.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Rights Issue at a Discount (Bonus Element)</strong></td>
+                                            <td>The issue contains a combination of shares at fair market value and shares issued for free (bonus element). Requires calculation of the <strong>Theoretical Ex-Rights Price (TERP)</strong>.</td>
+                                            <td>Pre-rights shares multiplied by <em>Bonus Adjustment Factor</em> retrospectively.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Theoretical Ex-Rights Price & Adjustment Factor -->
+                            <div class="formula-card">
+                                <div class="formula-title">Theoretical Ex-Rights Price (TERP) &amp; Adjustment Factor Formulas</div>
+                                <div class="formula-latex">
+                                    $$\text{TERP} = \frac{(\text{Existing Shares} \times \text{Cum-Rights Fair Value}) + (\text{Rights Shares} \times \text{Exercise Price})}{\text{Total Shares Outstanding Immediately After Rights Issue}}$$
+                                </div>
+                                <div class="formula-latex" style="margin-top: 12px;">
+                                    $$\text{Bonus Adjustment Factor} = \frac{\text{Fair Value per Share Immediately Prior to Exercise of Rights (Cum-Rights Price)}}{\text{Theoretical Ex-Rights Price (TERP)}}$$
+                                </div>
+                                <div class="formula-caption">All shares outstanding prior to the rights exercise date (in current year and prior comparative years) are multiplied by this adjustment factor!</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Diluted EPS: Convertible & Options -->
+                    <div class="concept-block" id="ind-as-33-diluted">
+                        <h3 class="concept-title">4. Diluted Earnings Per Share: Potential Ordinary Shares &amp; Measurement Methods</h3>
+                        <div class="concept-body">
+                            <p>
+                                An entity shall calculate diluted earnings per share amounts for profit or loss attributable to ordinary equity holders of the parent entity and, if presented, profit or loss from continuing operations attributable to those equity holders.
+                            </p>
+                            <p>
+                                A <strong>potential ordinary share</strong> is a financial instrument or other contract that may entitle its holder to ordinary shares (e.g., convertible debt, convertible preference shares, share warrants, stock options, employee share purchase plans, contingently issuable shares).
+                            </p>
+
+                            <div class="table-wrapper">
+                                <table class="custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 25%;">Potential Ordinary Share</th>
+                                            <th style="width: 35%;">Numerator (Earnings) Adjustment</th>
+                                            <th style="width: 40%;">Denominator (Shares) Adjustment</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Convertible Debentures / Bonds</strong> ("If-Converted" Method)</td>
+                                            <td>
+                                                <strong>Add back:</strong> After-tax finance costs, interest expense, and amortization of discount recognized during the period:
+                                                $$\text{Interest Saved} \times (1 - \text{Tax Rate})$$
+                                            </td>
+                                            <td>
+                                                <strong>Add:</strong> Number of ordinary shares that would be issued upon conversion from the beginning of the period (or date of issue of bonds, if later).
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Convertible Preference Shares</strong> ("If-Converted" Method)</td>
+                                            <td>
+                                                <strong>Add back:</strong> Preference dividends deducted in arriving at profit attributable to ordinary shareholders.
+                                            </td>
+                                            <td>
+                                                <strong>Add:</strong> Number of ordinary shares that would be issued upon conversion from the beginning of the period (or date of issuance).
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Share Options &amp; Warrants</strong> ("Treasury Stock Method")</td>
+                                            <td>
+                                                <strong>Nil:</strong> No adjustment to numerator (unless options carry dividend/interest features).
+                                            </td>
+                                            <td>
+                                                <strong>Add "Free / Incremental Shares" Only:</strong> Assumed proceeds from option exercise are used to buy back shares at average market price:
+                                                $$\text{Free Shares} = \text{Options} \times \left(1 - \frac{\text{Exercise Price}}{\text{Average Fair Value}}\right)$$
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="callout-box callout-tip">
+                                <strong>The Treasury Stock Method Intuition (Options &amp; Warrants):</strong>
+                                If an entity has options to issue 100,000 shares at ₹60 when the average market price is ₹100:
+                                <ul>
+                                    <li>Cash received on exercise = $100,000 \times ₹60 = ₹60,00,000$.</li>
+                                    <li>Shares that could be repurchased at market price = $\frac{₹60,00,000}{₹100} = 60,000\text{ shares}$.</li>
+                                    <li>Net incremental shares issued for zero economic consideration = $100,000 - 60,000 = \mathbf{40,000\text{ shares}}$ added to denominator.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dilutive vs Anti-Dilutive Ranking Rule -->
+                    <div class="concept-block" id="ind-as-33-ranking">
+                        <h3 class="concept-title">5. Dilutive vs. Anti-Dilutive Instruments: The Sequential Ranking Framework</h3>
+                        <div class="concept-body">
+                            <p>
+                                Potential ordinary shares are treated as dilutive when, and <strong>only when, their conversion to ordinary shares would decrease earnings per share or increase loss per share from continuing operations</strong>.
+                            </p>
+
+                            <div class="callout-box callout-danger">
+                                <strong>Control Number Rule (Paragraph 42):</strong>
+                                The control number is <strong>profit or loss from continuing operations attributable to ordinary equity holders of the parent</strong>. If an entity has a loss from continuing operations, all potential ordinary shares are automatically <em>anti-dilutive</em> and Diluted EPS equals Basic EPS!
+                            </div>
+
+                            <p><strong>Step-by-Step Multi-Instrument Ranking Procedure:</strong></p>
+                            <ol style="margin: 0; padding-left: 20px;">
+                                <li>
+                                    <strong>Step 1: Calculate Incremental EPS for Each Instrument:</strong>
+                                    $$\text{Incremental EPS} = \frac{\text{Incremental Earnings Added to Numerator}}{\text{Incremental Shares Added to Denominator}}$$
+                                    (For options/warrants, incremental earnings are zero, so incremental EPS is ₹0.00 &rarr; always most dilutive!).
+                                </li>
+                                <li>
+                                    <strong>Step 2: Rank Potential Ordinary Shares:</strong> Order the instruments from <strong>lowest incremental EPS (most dilutive)</strong> to <strong>highest incremental EPS (least dilutive)</strong>.
+                                </li>
+                                <li>
+                                    <strong>Step 3: Sequential Recalculation:</strong> Starting from Basic EPS, incorporate instruments one by one in the order of their ranking:
+                                    <ul>
+                                        <li>If the resulting EPS decreases &rarr; the instrument is <strong>dilutive</strong>; proceed to the next instrument.</li>
+                                        <li>If the resulting EPS increases &rarr; the instrument is <strong>anti-dilutive</strong>; stop the process and exclude that instrument and all subsequent instruments!</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- Contingently Issuable Shares & Subsidiaries -->
+                    <div class="concept-block" id="ind-as-33-contingent">
+                        <h3 class="concept-title">6. Contingently Issuable Shares &amp; Subsidiary Dilution in CFS</h3>
+                        <div class="concept-body">
+                            <p>
+                                <strong>Contingently Issuable Ordinary Shares:</strong> Ordinary shares issuable for little or no cash or other consideration upon the satisfaction of specified conditions in a contingent share agreement:
+                            </p>
+                            <ul>
+                                <li><strong>In Basic EPS:</strong> Treated as outstanding and included only from the date when all necessary conditions are met (i.e., events have occurred).</li>
+                                <li><strong>In Diluted EPS:</strong> Included from the beginning of the period if the conditions are <em>deemed satisfied</em> based on conditions existing at the end of the reporting period.</li>
+                            </ul>
+
+                            <div class="callout-box callout-note">
+                                <strong>Subsidiary Having Potential Ordinary Shares (Group EPS - Paragraph 40):</strong>
+                                Where a subsidiary issues potential ordinary shares (convertible bonds, warrants, convertible preference shares) exercisable into subsidiary shares:
+                                <ul style="margin: 6px 0 0 18px;">
+                                    <li>First, calculate the <strong>subsidiary's own Basic and Diluted EPS</strong>.</li>
+                                    <li>In Consolidated Basic EPS, include the parent's proportionate share of subsidiary's basic earnings.</li>
+                                    <li>In Consolidated Diluted EPS, include the parent's proportionate share of subsidiary's diluted earnings (Parent's holding of subsidiary ordinary shares, warrants, and preference shares multiplied by subsidiary's Diluted EPS - TYK 5).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Significant Differences: Ind AS 33 vs AS 20 -->
+                    <div class="concept-block">
+                        <h3 class="concept-title">7. Significant Differences: Ind AS 33 vis-à-vis AS 20</h3>
+                        <div class="concept-body">
+                            <div class="table-wrapper">
+                                <table class="custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 25%;">Parameter</th>
+                                            <th style="width: 40%;">Ind AS 33 (Modern Framework)</th>
+                                            <th style="width: 35%;">Old AS 20 (Previous GAAP)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Options &amp; Warrants Dilution</strong></td>
+                                            <td>Uses the <strong>Treasury Stock Method</strong> (assumes proceeds used to repurchase shares at average fair value; only free shares dilute).</td>
+                                            <td>Did not mandate the treasury stock method; gave broader formula.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Mandatorily Convertible Instruments</strong></td>
+                                            <td>Included in <strong>Basic EPS</strong> from the date contract is entered into (since conversion is certain, only passage of time remains).</td>
+                                            <td>Included in Diluted EPS, not in Basic EPS until actual conversion date.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Contingently Returnable Shares</strong></td>
+                                            <td>Not treated as outstanding and ignored in Basic EPS until shares are no longer subject to recall.</td>
+                                            <td>No specific guidance on contingently returnable shares.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Presentation on Face of P&amp;L</strong></td>
+                                            <td>Mandatory presentation of Basic and Diluted EPS on the <strong>face of the Statement of Profit and Loss</strong> with equal prominence for all periods.</td>
+                                            <td>Permitted disclosure in notes in certain circumstances.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solved TYK Questions (Ind AS 33) -->
+                    <div class="concept-block" id="ind-as-33-tyk">
+                        <h3 class="concept-title">8. ICAI Test Your Knowledge (TYK) Questions &amp; Detailed Solutions</h3>
+                        <div class="concept-body">
+                            <p>
+                                Complete solutions to all 5 Test Your Knowledge questions from ICAI Module 3 (Ind AS 33), with full mathematical formulas, TERP calculations, and interactive toggles.
+                            </p>
+
+                            <!-- TYK 1 -->
+                            <div class="tyk-card">
+                                <div class="tyk-header">
+                                    <span class="tyk-badge">TYK Question 1</span>
+                                    <span style="font-size: 12px; font-weight: 700; color: #475569;">Rights Issue Bonus Element &amp; WANOS Calculation</span>
+                                    <button class="btn-toggle-sol" id="btn-ind33-q1" onclick="toggleSolution('ind33-q1')">Show Solution</button>
+                                </div>
+                                <div class="tyk-question">
+                                    <strong>Question:</strong> ABC Ltd. has the following details for the calendar year ended 31 December 20X1:
+                                    <ul>
+                                        <li>1 January 20X1: Ordinary shares in issue: 1,000,000 shares.</li>
+                                        <li>31 March 20X1: Rights issue of 1 share for every 5 shares held at an exercise price of 90 paise (₹0.90).</li>
+                                        <li>Fair value of shares immediately prior to exercise on 31 March 20X1 (cum-rights price): ₹1.00.</li>
+                                    </ul>
+                                    Calculate the number of shares for use in the EPS calculation for the calendar year.
+                                </div>
+                                <div class="tyk-solution" id="ind33-q1">
+                                    <strong>Step-by-Step Calculation:</strong>
+                                    <ol>
+                                        <li>
+                                            <strong>Rights Shares Issued:</strong>
+                                            $$\text{Rights Shares} = 1,000,000 \times \frac{1}{5} = \mathbf{200,000\text{ shares}}$$
+                                            Total shares after rights issue = $1,000,000 + 200,000 = \mathbf{1,200,000\text{ shares}}$.
+                                        </li>
+                                        <li>
+                                            <strong>Theoretical Ex-Rights Price (TERP):</strong>
+                                            $$\text{TERP} = \frac{(1,000,000 \times ₹1.00) + (200,000 \times ₹0.90)}{1,000,000 + 200,000} = \frac{₹10,00,000 + ₹1,80,000}{1,200,000} = \frac{₹11,80,000}{1,200,000} = \mathbf{₹0.9833}$$
+                                        </li>
+                                        <li>
+                                            <strong>Bonus Adjustment Factor:</strong>
+                                            $$\text{Adjustment Factor} = \frac{\text{Cum-Rights Price}}{\text{TERP}} = \frac{₹1.00}{₹0.9833} = \mathbf{1.017}$$
+                                        </li>
+                                        <li>
+                                            <strong>Weighted Average Number of Ordinary Shares (WANOS):</strong>
+                                            <ul>
+                                                <li>Period 1 Jan to 31 March (3 months): $1,000,000 \times 1.017 \times \frac{3}{12} = 254,250\text{ shares}$.</li>
+                                                <li>Period 1 April to 31 Dec (9 months): $1,200,000 \times \frac{9}{12} = 900,000\text{ shares}$.</li>
+                                                <li><strong>Total WANOS for 20X1</strong> = $254,250 + 900,000 = \mathbf{1,154,250\text{ shares}}$.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <!-- TYK 2 -->
+                            <div class="tyk-card">
+                                <div class="tyk-header">
+                                    <span class="tyk-badge">TYK Question 2</span>
+                                    <span style="font-size: 12px; font-weight: 700; color: #475569;">Convertible Bonds with Partial Mid-Year Conversion</span>
+                                    <button class="btn-toggle-sol" id="btn-ind33-q2" onclick="toggleSolution('ind33-q2')">Show Solution</button>
+                                </div>
+                                <div class="tyk-question">
+                                    <strong>Question:</strong> An entity has on 1 January: Ordinary shares in issue: 1,000,000 shares; 5% Convertible bonds: ₹100,000 (terms: 120 ordinary shares for every ₹100 of bonds). On 31 March, holders of ₹25,000 bonds converted into ordinary shares. Profit for the year ended 31 December is ₹200,000. Applicable tax rate is 30%.
+                                    <br><br>
+                                    Calculate Basic and Diluted EPS for the year. (Ignore the need to split the convertible bonds into liability and equity elements).
+                                </div>
+                                <div class="tyk-solution" id="ind33-q2">
+                                    <strong>Step-by-Step Solution:</strong>
+                                    <ol>
+                                        <li>
+                                            <strong>Basic EPS Calculation:</strong>
+                                            <ul>
+                                                <li>Shares issued on 31 March on conversion of ₹25,000 bonds:
+                                                    $$\text{Shares} = \frac{₹25,000}{₹100} \times 120 = \mathbf{30,000\text{ shares}}$$
+                                                </li>
+                                                <li>Weighted Average Number of Shares (WANOS):
+                                                    $$\text{WANOS} = 1,000,000 + \left(30,000 \times \frac{9}{12}\right) = 1,000,000 + 22,500 = \mathbf{1,022,500\text{ shares}}$$
+                                                </li>
+                                                <li>Profit attributable to ordinary equity holders = ₹200,000.</li>
+                                                <li><strong>Basic EPS</strong> = $\frac{₹200,000}{1,022,500} = \mathbf{₹0.196\text{ per share}}$.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <strong>Diluted EPS Calculation:</strong>
+                                            <ul>
+                                                <li><strong>Adjusted Numerator (Earnings):</strong>
+                                                    Interest saved on ₹25,000 bonds for 3 months (prior to conversion) + interest saved on remaining ₹75,000 bonds for full 12 months:
+                                                    $$\text{Interest on ₹25,000 (3 mos)} = ₹25,000 \times 5\% \times \frac{3}{12} = ₹312.50$$
+                                                    $$\text{Interest on ₹75,000 (12 mos)} = ₹75,000 \times 5\% = ₹3,750$$
+                                                    $$\text{Total Gross Interest Saved} = ₹312.50 + ₹3,750 = ₹4,062.50$$
+                                                    $$\text{Net Interest Saved After Tax (70%)} = ₹4,062.50 \times (1 - 0.30) = \mathbf{₹2,844}$$
+                                                    $$\text{Adjusted Diluted Earnings} = ₹200,000 + ₹2,844 = \mathbf{₹202,844}$$
+                                                </li>
+                                                <li><strong>Adjusted Denominator (Shares):</strong>
+                                                    Incremental shares from ₹25,000 bonds for 3 months: $30,000 \times \frac{3}{12} = 7,500\text{ shares}$.
+                                                    Shares from remaining ₹75,000 bonds for full year: $\frac{₹75,000}{₹100} \times 120 = 90,000\text{ shares}$.
+                                                    $$\text{Diluted Shares} = 1,022,500 + 7,500 + 90,000 = \mathbf{1,120,000\text{ shares}}$$
+                                                    <em>(Check: 1,000,000 original + 120,000 full potential = 1,120,000 shares)</em>.
+                                                </li>
+                                                <li><strong>Diluted EPS</strong> = $\frac{₹202,844}{1,120,000} = \mathbf{₹0.181\text{ per share}}$.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <!-- TYK 3 -->
+                            <div class="tyk-card">
+                                <div class="tyk-header">
+                                    <span class="tyk-badge">TYK Question 3</span>
+                                    <span style="font-size: 12px; font-weight: 700; color: #475569;">Share Options &amp; Treasury Stock Method Diluted EPS</span>
+                                    <button class="btn-toggle-sol" id="btn-ind33-q3" onclick="toggleSolution('ind33-q3')">Show Solution</button>
+                                </div>
+                                <div class="tyk-question">
+                                    <strong>Question:</strong> An entity has the following balances:
+                                    <ul>
+                                        <li>1 January: Shares in issue: 1,000,000 ordinary shares.</li>
+                                        <li>Profit for the year ended 31 December: ₹100,000.</li>
+                                        <li>Average fair value of one ordinary share during the period: ₹8.00.</li>
+                                        <li>The company has in issue 200,000 options to purchase ordinary shares at an exercise price of ₹6.00.</li>
+                                    </ul>
+                                    Calculate the Diluted EPS for the period.
+                                </div>
+                                <div class="tyk-solution" id="ind33-q3">
+                                    <strong>Step-by-Step Solution:</strong>
+                                    <ol>
+                                        <li><strong>Basic EPS:</strong> $\frac{₹100,000}{1,000,000} = \mathbf{₹0.10\text{ per share}}$.</li>
+                                        <li><strong>Treasury Stock Method (Options):</strong>
+                                            <ul>
+                                                <li>Cash proceeds on exercise = $200,000 \times ₹6 = ₹12,00,000$.</li>
+                                                <li>Number of shares repurchased at average market price = $\frac{₹12,00,000}{₹8} = 150,000\text{ shares}$.</li>
+                                                <li>Incremental free shares issued for nil consideration:
+                                                    $$\text{Incremental Shares} = 200,000 - 150,000 = \mathbf{50,000\text{ shares}}$$
+                                                    $$\text{Alternatively: } 200,000 \times \left(1 - \frac{₹6}{₹8}\right) = 200,000 \times 0.25 = 50,000\text{ shares}$$
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Diluted Number of Shares:</strong> $1,000,000 + 50,000 = \mathbf{1,050,000\text{ shares}}$.</li>
+                                        <li><strong>Diluted EPS:</strong> $\frac{₹100,000}{1,050,000} = \mathbf{₹0.095\text{ per share}}$.</li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <!-- TYK 4 -->
+                            <div class="tyk-card">
+                                <div class="tyk-header">
+                                    <span class="tyk-badge">TYK Question 4</span>
+                                    <span style="font-size: 12px; font-weight: 700; color: #475569;">Multi-Year Basic EPS &amp; Retrospective Rights Restatement</span>
+                                    <button class="btn-toggle-sol" id="btn-ind33-q4" onclick="toggleSolution('ind33-q4')">Show Solution</button>
+                                </div>
+                                <div class="tyk-question">
+                                    <strong>Question:</strong> Calculate Basic EPS for the periods ending 31 December 20X0, 20X1, and 20X2 given:
+                                    <ul>
+                                        <li>Net Profit: 20X0 = ₹1,100; 20X1 = ₹1,500; 20X2 = ₹1,800.</li>
+                                        <li>Shares outstanding before rights issue: 500 shares.</li>
+                                        <li>Rights Issue: 1 new share for each 5 shares held (100 shares) at an exercise price of ₹5.00 on 1 January 20X1 (last exercise date: 1 March 20X1).</li>
+                                        <li>Market price of one share immediately before exercise on 1 March 20X1: ₹11.00.</li>
+                                    </ul>
+                                </div>
+                                <div class="tyk-solution" id="ind33-q4">
+                                    <strong>Comprehensive Computations:</strong>
+                                    <ol>
+                                        <li>
+                                            <strong>Theoretical Ex-Rights Price (TERP):</strong>
+                                            $$\text{TERP} = \frac{(500 \times ₹11.00) + (100 \times ₹5.00)}{500 + 100} = \frac{₹5,500 + ₹500}{600} = \frac{₹6,000}{600} = \mathbf{₹10.00}$$
+                                        </li>
+                                        <li>
+                                            <strong>Adjustment Factor:</strong>
+                                            $$\text{Adjustment Factor} = \frac{\text{Cum-Rights Price}}{\text{TERP}} = \frac{₹11.00}{₹10.00} = \mathbf{1.10}$$
+                                        </li>
+                                        <li>
+                                            <strong>EPS Computations Across Years:</strong>
+                                            <div class="table-wrapper">
+                                                <table class="custom-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Year</th>
+                                                            <th>WANOS Calculation Details</th>
+                                                            <th style="text-align: right;">WANOS</th>
+                                                            <th style="text-align: right;">Net Profit (₹)</th>
+                                                            <th style="text-align: right;">Basic EPS (₹)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><strong>20X0 (Originally Reported)</strong></td>
+                                                            <td>500 shares</td>
+                                                            <td style="text-align: right;">500</td>
+                                                            <td style="text-align: right;">1,100</td>
+                                                            <td style="text-align: right; font-weight: 700;">₹2.20</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>20X0 (Restated for Rights)</strong></td>
+                                                            <td>$500 \times 1.10$</td>
+                                                            <td style="text-align: right;">550</td>
+                                                            <td style="text-align: right;">1,100</td>
+                                                            <td style="text-align: right; font-weight: 800; color: #065f46;">₹2.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>20X1</strong></td>
+                                                            <td>$(500 \times 1.10 \times \frac{2}{12}) + (600 \times \frac{10}{12}) = 91.67 + 500$</td>
+                                                            <td style="text-align: right;">591.67</td>
+                                                            <td style="text-align: right;">1,500</td>
+                                                            <td style="text-align: right; font-weight: 800; color: #065f46;">₹2.54</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>20X2</strong></td>
+                                                            <td>600 shares full year</td>
+                                                            <td style="text-align: right;">600</td>
+                                                            <td style="text-align: right;">1,800</td>
+                                                            <td style="text-align: right; font-weight: 800; color: #065f46;">₹3.00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <!-- TYK 5 -->
+                            <div class="tyk-card">
+                                <div class="tyk-header">
+                                    <span class="tyk-badge">TYK Question 5</span>
+                                    <span style="font-size: 12px; font-weight: 700; color: #475569;">Subsidiary &amp; Consolidated Group Basic and Diluted EPS</span>
+                                    <button class="btn-toggle-sol" id="btn-ind33-q5" onclick="toggleSolution('ind33-q5')">Show Solution</button>
+                                </div>
+                                <div class="tyk-question">
+                                    <strong>Question:</strong> Calculate Subsidiary's and Group's Basic and Diluted EPS from the following data:
+                                    <br><br>
+                                    <strong>Parent:</strong>
+                                    <ul>
+                                        <li>Profit attributable to ordinary equity holders: ₹12,000 (excluding any earnings of or dividends from subsidiary).</li>
+                                        <li>Ordinary shares outstanding: 10,000 shares.</li>
+                                        <li>Instruments of subsidiary owned by parent: 800 ordinary shares; 30 warrants to purchase ordinary shares of subsidiary; 300 convertible preference shares.</li>
+                                    </ul>
+                                    <strong>Subsidiary:</strong>
+                                    <ul>
+                                        <li>Profit: ₹5,400.</li>
+                                        <li>Ordinary shares outstanding: 1,000 shares.</li>
+                                        <li>Warrants: 150 exercisable to purchase ordinary shares at exercise price ₹10 (average market price ₹20).</li>
+                                        <li>Convertible Preference shares: 400 shares (dividend ₹1.00 per share), each convertible into 1 ordinary share. (No intercompany eliminations necessary).</li>
+                                    </ul>
+                                </div>
+                                <div class="tyk-solution" id="ind33-q5">
+                                    <strong>Comprehensive Step-by-Step Group EPS Working:</strong>
+                                    <ol>
+                                        <li>
+                                            <strong>Part A: Subsidiary's Own EPS:</strong>
+                                            <ul>
+                                                <li><strong>Subsidiary Basic EPS:</strong>
+                                                    $$\text{Profit to Ordinary} = ₹5,400 - (400 \times ₹1.00\text{ pref dividend}) = ₹5,000$$
+                                                    $$\text{Subsidiary Basic EPS} = \frac{₹5,000}{1,000\text{ shares}} = \mathbf{₹5.00\text{ per share}}$$
+                                                </li>
+                                                <li><strong>Subsidiary Diluted EPS:</strong>
+                                                    <ul>
+                                                        <li>Numerator: Add back pref dividend = $₹5,000 + ₹400 = ₹5,400$.</li>
+                                                        <li>Incremental shares from 150 warrants: $150 \times \left(1 - \frac{₹10}{₹20}\right) = 75\text{ shares}$.</li>
+                                                        <li>Shares from 400 preference shares = $400 \times 1 = 400\text{ shares}$.</li>
+                                                        <li>Diluted Denominator = $1,000 + 75 + 400 = 1,475\text{ shares}$.</li>
+                                                        <li>$$\text{Subsidiary Diluted EPS} = \frac{₹5,400}{1,475} = \mathbf{₹3.66\text{ per share}}$$</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <strong>Part B: Consolidated Group Basic EPS:</strong>
+                                            <ul>
+                                                <li>Parent's standalone profit: ₹12,000.</li>
+                                                <li>Parent's share of subsidiary basic earnings:
+                                                    $$\text{From 800 Ordinary Shares} = 800 \times ₹5.00 = ₹4,000$$
+                                                    $$\text{From 300 Preference Shares} = 300 \times ₹1.00 = ₹300$$
+                                                    $$\text{Total Subsidiary Contribution} = ₹4,000 + ₹300 = ₹4,300$$
+                                                </li>
+                                                <li>Total Consolidated Basic Earnings = $₹12,000 + ₹4,300 = ₹16,300$.</li>
+                                                <li><strong>Consolidated Basic EPS</strong> = $\frac{₹16,300}{10,000\text{ shares}} = \mathbf{₹1.63\text{ per share}}$.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <strong>Part C: Consolidated Group Diluted EPS:</strong>
+                                            <ul>
+                                                <li>Parent's standalone profit: ₹12,000.</li>
+                                                <li>Parent's share of subsidiary diluted earnings:
+                                                    $$\text{From 800 Ordinary Shares} = \frac{800}{1,000} \times (1,000 \times ₹3.66) = 800 \times ₹3.66 = ₹2,928$$
+                                                    $$\text{From 30 Warrants} = \frac{30}{150} \times (75 \times ₹3.66) = 0.20 \times ₹274.50 = ₹55$$
+                                                    $$\text{From 300 Preference Shares} = \frac{300}{400} \times (400 \times ₹3.66) = 300 \times ₹3.66 = ₹1,098$$
+                                                    $$\text{Total Diluted Earnings from Subsidiary} = ₹2,928 + ₹55 + ₹1,098 = ₹4,081$$
+                                                </li>
+                                                <li>Total Consolidated Diluted Earnings = $₹12,000 + ₹4,081 = ₹16,081$.</li>
+                                                <li><strong>Consolidated Diluted EPS</strong> = $\frac{₹16,081}{10,000\text{ shares}} = \mathbf{₹1.61\text{ per share}}$.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- ================= UNIT 3: IND AS 108 OPERATING SEGMENTS ================= -->
+                <section class="section-card" id="ind-as-108">
+                    <div class="section-header">
+                        <div class="section-number">Unit 3 &bull; Segment Reporting &amp; Transparency</div>
+                        <h2 class="section-title">Ind AS 108: Operating Segments</h2>
+                        <p class="section-lead">
+                            Adopts the "Management Approach" to segment reporting, requiring entities to disclose financial and descriptive information about their reportable segments based on internal reports reviewed by the Chief Operating Decision Maker (CODM). Covers operating segment criteria, aggregation principles, 10% quantitative thresholds, 75% external revenue rule, entity-wide disclosures, and reconciliations.
+                        </p>
+                    </div>
+
+                    <!-- Management Approach & CODM -->
+                    <div class="concept-block" id="ind-as-108-management">
+                        <h3 class="concept-title">1. The Management Approach &amp; Chief Operating Decision Maker (CODM)</h3>
+                        <div class="concept-body">
+                            <p>
+                                Ind AS 108 requires an entity to report financial and descriptive information about its reportable segments through the eyes of management—the <strong>Management Approach</strong>. This aligns external financial reporting directly with internal organizational structures and managerial decision-making.
+                            </p>
+
+                            <div class="callout-box callout-note">
+                                <strong>Scope Applicability (Paragraph 2):</strong>
+                                Applies to entities whose debt or equity instruments are traded in a public market or that file financial statements with a securities regulator for the purpose of issuing instruments in a public market. If an entity presents both consolidated and separate financial statements, segment information is required <strong>only in the Consolidated Financial Statements</strong>.
+                            </div>
+
+                            <div class="table-wrapper">
+                                <table class="custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 30%;">Core Pillar</th>
+                                            <th style="width: 45%;">Official Definition &amp; Criteria (Paragraph 5)</th>
+                                            <th style="width: 25%;">Practical Nuance</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Chief Operating Decision Maker (CODM)</strong></td>
+                                            <td>
+                                                A <strong>function</strong>, not necessarily a manager with a specific title. That function is responsible for allocating resources to and assessing the performance of the operating segments of an entity (e.g., CEO, COO, or Board/Executive Committee).
+                                            </td>
+                                            <td>Identified by function, not executive hierarchy.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Operating Segment</strong></td>
+                                            <td>
+                                                A component of an entity that satisfies all three criteria:
+                                                <ol style="margin: 4px 0 0 16px;">
+                                                    <li>Engages in business activities from which it may <strong>earn revenues and incur expenses</strong> (including inter-segment revenues);</li>
+                                                    <li>Whose operating results are <strong>regularly reviewed by the entity's CODM</strong> to allocate resources and assess performance; and</li>
+                                                    <li>For which <strong>discrete financial information</strong> is available.</li>
+                                                </ol>
+                                            </td>
+                                            <td>Corporate headquarters and post-employment benefit plans are NOT operating segments.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Aggregation Criteria (Paragraph 12)</strong></td>
+                                            <td>
+                                                Two or more operating segments may be aggregated into a single segment if aggregation is consistent with the standard's core principle, the segments have <strong>similar economic characteristics</strong>, and are similar in:
+                                                <ul style="margin: 4px 0 0 16px;">
+                                                    <li>(a) Nature of products and services;</li>
+                                                    <li>(b) Nature of production processes;</li>
+                                                    <li>(c) Type or class of customer;</li>
+                                                    <li>(d) Methods used to distribute products/services; and</li>
+                                                    <li>(e) Nature of regulatory environment (if applicable).</li>
+                                                </ul>
+                                            </td>
+                                            <td>All 5 similarity criteria must be satisfied to aggregate!</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quantitative Thresholds & 75% Rule -->
+                    <div class="concept-block" id="ind-as-108-thresholds">
+                        <h3 class="concept-title">2. Quantitative Thresholds (10% Tests) &amp; 75% External Revenue Rule</h3>
+                        <div class="concept-body">
+                            <p>
+                                An entity shall report separate information about each operating segment that meets any of the quantitative thresholds set out in Paragraph 13:
+                            </p>
+
+                            <div class="table-wrapper">
+                                <table class="custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 25%;">Quantitative Test</th>
+                                            <th style="width: 45%;">Threshold Formula &amp; Calculation Base</th>
+                                            <th style="width: 30%;">Exam Traps &amp; Key Rules</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>1. Revenue Test (10%)</strong></td>
+                                            <td>
+                                                Reported revenue (both external sales and intersegment sales/transfers) is <strong>10% or more</strong> of the combined revenue, internal and external, of all operating segments:
+                                                $$\frac{\text{Segment External Revenue} + \text{Internal Revenue}}{\text{Total Combined Internal and External Revenue}} \ge 10\%$$
+                                            </td>
+                                            <td>
+                                                <span class="badge-accent">Includes Inter-segment</span><br>
+                                                Denominator is <strong>combined revenue</strong> (not consolidated revenue!).
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>2. Profit or Loss Test (10%)</strong></td>
+                                            <td>
+                                                The absolute amount of its reported profit or loss is <strong>10% or more of the greater, in absolute amount, of</strong>:
+                                                <ul style="margin: 4px 0 0 16px;">
+                                                    <li>(i) The combined reported profit of all operating segments that reported a profit; and</li>
+                                                    <li>(ii) The combined reported loss of all operating segments that reported a loss.</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <span class="badge-danger">Absolute Greater Test</span><br>
+                                                Do NOT net profits against losses when determining the benchmark denominator!
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>3. Assets Test (10%)</strong></td>
+                                            <td>
+                                                Its assets are <strong>10% or more</strong> of the combined assets of all operating segments:
+                                                $$\frac{\text{Segment Assets}}{\text{Combined Assets of All Segments}} \ge 10\%$$
+                                            </td>
+                                            <td>
+                                                <span class="badge-neutral">Segment Assets</span><br>
+                                                Denominator is combined segment assets reviewed by CODM.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- 75% External Revenue Coverage Rule -->
+                            <div class="formula-card">
+                                <div class="formula-title">The 75% External Revenue Rule (Paragraph 15)</div>
+                                <div class="formula-latex">
+                                    $$\frac{\text{Total External Revenue of Identified Reportable Segments}}{\text{Total Entity External Revenue}} \ge 75\%$$
+                                </div>
+                                <div class="formula-caption">If reportable segments cover &lt;75% of total external revenue, management must designate additional operating segments as reportable until the 75% threshold is achieved!</div>
+                            </div>
+
+                            <div class="callout-box callout-warning">
+                                <strong>Practical Limit on Number of Segments (Paragraph 19):</strong>
+                                While no hard upper ceiling is set, if the number of reportable segments increases above <strong>ten (10)</strong>, the entity should consider whether a practical limit has been reached and whether segments can be aggregated to avoid information overload.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Segment Measurement & Reconciliations -->
+                    <div class="concept-block" id="ind-as-108-measurement">
+                        <h3 class="concept-title">3. Segment Measurement Principles &amp; Mandatory Reconciliations</h3>
+                        <div class="concept-body">
+                            <p>
+                                A unique hallmark of Ind AS 108 is that <strong>accounting policies used for segment reporting are those used for internal reporting to the CODM</strong>, even if they differ from the accounting policies used in the consolidated financial statements!
+                            </p>
+                            <ul>
+                                <li>If the CODM reviews segment inventory using <strong>FIFO</strong> while financial statements use <strong>Weighted Average</strong>, segment disclosures MUST be presented on a FIFO basis (TYK 3).</li>
+                                <li>If the CODM evaluates performance using EBITDA or cash-basis figures, that exact measure must be presented.</li>
+                            </ul>
+
+                            <p><strong>Mandatory Reconciliations to Financial Statement Totals (Paragraph 28):</strong></p>
+                            <div class="table-wrapper">
+                                <table class="custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Segment Total</th>
+                                            <th>Reconciliation Adjustments</th>
+                                            <th>Financial Statement Line Item</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Total Reportable Segment Revenues</td>
+                                            <td>Less: Inter-segment revenues eliminated on consolidation; Add: Unallocated corporate revenues.</td>
+                                            <td>Total Entity Revenue</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total Reportable Segment Profit/Loss</td>
+                                            <td>Adjust for: Unallocated corporate expenses, finance costs, exceptional items, elimination of intercompany profits.</td>
+                                            <td>Entity Profit Before Tax</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total Reportable Segment Assets</td>
+                                            <td>Add: Unallocated corporate assets, general investments, deferred tax assets, corporate headquarters.</td>
+                                            <td>Total Entity Assets</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total Reportable Segment Liabilities</td>
+                                            <td>Add: Unallocated corporate debt, borrowings, deferred tax liabilities, unallocated provisions.</td>
+                                            <td>Total Entity Liabilities</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Entity-Wide & Major Customer Disclosures -->
+                    <div class="concept-block" id="ind-as-108-entity-wide">
+                        <h3 class="concept-title">4. Entity-Wide Disclosures: Products, Geography &amp; Major Customers</h3>
+                        <div class="concept-body">
+                            <p>
+                                Entity-wide disclosures apply to <strong>all entities subject to Ind AS 108</strong>, including entities that have only a single reportable operating segment!
+                            </p>
+
+                            <div class="table-wrapper">
+                                <table class="custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 30%;">Entity-Wide Category</th>
+                                            <th style="width: 45%;">Required Disclosures</th>
+                                            <th style="width: 25%;">Specific Rules</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Products &amp; Services (Paragraph 32)</strong></td>
+                                            <td>Revenues from external customers for each product and service, or each group of similar products and services.</td>
+                                            <td>Based on financial statement figures.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Geographical Information (Paragraph 33)</strong></td>
+                                            <td>
+                                                Disclose separately for: (i) Country of Domicile (India) and (ii) All foreign countries in total (and individual foreign countries if material):
+                                                <ul style="margin: 4px 0 0 16px;">
+                                                    <li>Revenues from external customers attributed to country; and</li>
+                                                    <li>Non-current assets (excluding financial instruments, deferred tax assets, and post-employment benefit assets).</li>
+                                                </ul>
+                                            </td>
+                                            <td>Excludes financial assets and DTAs from non-current assets.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Major Customers (Paragraph 34)</strong></td>
+                                            <td>
+                                                If revenues from transactions with a <strong>single external customer amount to 10% or more of total entity revenues</strong>:
+                                                <ul style="margin: 4px 0 0 16px;">
+                                                    <li>Disclose that fact;</li>
+                                                    <li>Total revenue derived from each such customer; and</li>
+                                                    <li>The identity of the segment(s) reporting the revenue.</li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <span class="badge-tip">Identity Protected</span><br>
+                                                The standard does NOT require disclosing the customer's legal name (refer as "Customer A", "Customer B").
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Significant Differences: Ind AS 108 vs AS 17 -->
+                    <div class="concept-block">
+                        <h3 class="concept-title">5. Significant Differences: Ind AS 108 vis-à-vis AS 17</h3>
+                        <div class="concept-body">
+                            <div class="table-wrapper">
+                                <table class="custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 25%;">Parameter</th>
+                                            <th style="width: 40%;">Ind AS 108 (Modern Framework)</th>
+                                            <th style="width: 35%;">Old AS 17 (Previous GAAP)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Core Approach</strong></td>
+                                            <td><strong>Management Approach</strong>: Segments identified and measured based on internal reports reviewed by CODM.</td>
+                                            <td><strong>Risk and Return Approach</strong>: Identified based on nature of risks and returns.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Classification</strong></td>
+                                            <td>Single operating segment classification. <strong>No distinction</strong> between primary and secondary reporting formats.</td>
+                                            <td>Mandatory classification into <strong>Primary</strong> and <strong>Secondary</strong> segments (Business vs Geographical).</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Measurement Basis</strong></td>
+                                            <td>Permits segment measures to follow internal management accounting policies (even if non-Ind AS), provided reconciliation is given.</td>
+                                            <td>Mandated that segment accounting policies strictly match corporate financial reporting policies.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Major Customer Disclosures</strong></td>
+                                            <td>Explicit requirement to disclose reliance on major customers generating &ge;10% of revenue.</td>
+                                            <td>No explicit requirement to disclose major customer dependence.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solved TYK Questions (Ind AS 108) -->
+                    <div class="concept-block" id="ind-as-108-tyk">
+                        <h3 class="concept-title">6. ICAI Test Your Knowledge (TYK) Questions &amp; Detailed Solutions</h3>
+                        <div class="concept-body">
+                            <p>
+                                Complete solutions to all Test Your Knowledge questions from ICAI Module 3 (Ind AS 108), with full quantitative testing and interactive toggles.
+                            </p>
+
+                            <!-- TYK 1 -->
+                            <div class="tyk-card">
+                                <div class="tyk-header">
+                                    <span class="tyk-badge">TYK Question 1</span>
+                                    <span style="font-size: 12px; font-weight: 700; color: #475569;">10% Quantitative Revenue Threshold &amp; 75% Coverage Test</span>
+                                    <button class="btn-toggle-sol" id="btn-ind108-q1" onclick="toggleSolution('ind108-q1')">Show Solution</button>
+                                </div>
+                                <div class="tyk-question">
+                                    <strong>Question:</strong> X Ltd. has identified 4 operating segments with revenue data:
+                                    <div class="table-wrapper">
+                                        <table class="custom-table">
+                                            <tr><th>Segment</th><th style="text-align: right;">External Revenue (₹)</th><th style="text-align: right;">Internal Revenue (₹)</th><th style="text-align: right;">Total Revenue (₹)</th></tr>
+                                            <tr><td>Segment A</td><td style="text-align: right;">30,00,000</td><td style="text-align: right;">Nil</td><td style="text-align: right;">30,00,000</td></tr>
+                                            <tr><td>Segment B</td><td style="text-align: right;">6,50,000</td><td style="text-align: right;">Nil</td><td style="text-align: right;">6,50,000</td></tr>
+                                            <tr><td>Segment C</td><td style="text-align: right;">8,50,000</td><td style="text-align: right;">1,00,000</td><td style="text-align: right;">9,50,000</td></tr>
+                                            <tr><td>Segment D</td><td style="text-align: right;">5,00,000</td><td style="text-align: right;">49,00,000</td><td style="text-align: right;">54,00,000</td></tr>
+                                            <tr style="font-weight: 700;"><td>Total</td><td style="text-align: right;">50,00,000</td><td style="text-align: right;">50,00,000</td><td style="text-align: right;">1,00,00,000</td></tr>
+                                        </table>
+                                    </div>
+                                    Segment C is a new business unit expected to make significant contributions in coming years. Which segments are reportable under Ind AS 108?
+                                </div>
+                                <div class="tyk-solution" id="ind108-q1">
+                                    <strong>Comprehensive Testing &amp; Analysis:</strong>
+                                    <ol>
+                                        <li>
+                                            <strong>10% Revenue Threshold Test:</strong>
+                                            $$\text{Combined Internal & External Revenue} = \mathbf{₹1,00,00,000}$$
+                                            $$\text{Threshold Limit (10%)} = ₹1,00,00,000 \times 10\% = \mathbf{₹10,00,000}$$
+                                            <ul>
+                                                <li><strong>Segment A:</strong> Total revenue ₹30,00,000 &ge; ₹10,00,000 &rarr; <strong>Reportable</strong>.</li>
+                                                <li><strong>Segment B:</strong> Total revenue ₹6,50,000 &lt; ₹10,00,000 &rarr; Does not meet threshold.</li>
+                                                <li><strong>Segment C:</strong> Total revenue ₹9,50,000 &lt; ₹10,00,000 &rarr; Does not meet 10% quantitative test. However, management expects it to grow significantly and may voluntarily designate it as a reportable segment under Paragraph 13.</li>
+                                                <li><strong>Segment D:</strong> Total revenue ₹54,00,000 &ge; ₹10,00,000 &rarr; <strong>Reportable</strong>.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <strong>75% Overall External Revenue Coverage Test:</strong>
+                                            $$\text{Total External Revenue of Entity} = \mathbf{₹50,00,000}$$
+                                            $$\text{Required Minimum External Coverage (75%)} = ₹50,00,000 \times 75\% = \mathbf{₹37,50,000}$$
+                                            External revenue of initially identified segments (A and D):
+                                            $$\text{External Revenue (A + D)} = ₹30,00,000 + ₹5,00,000 = ₹35,00,000\text{ (Only 70%)}$$
+                                            Because 70% &lt; 75%, <strong>additional operating segment(s) MUST be identified as reportable</strong> even though they fail the 10% test!
+                                        </li>
+                                        <li>
+                                            <strong>Final Determination:</strong>
+                                            Management has two options to meet the 75% rule:
+                                            <ul>
+                                                <li><strong>Option 1 (Include Segment C):</strong> Segment C has external revenue of ₹8,50,000. Combined external revenue (A + D + C) = $₹35,00,000 + ₹8,50,000 = ₹43,50,000$ (87% &ge; 75%). This aligns with management's expectation for Segment C.</li>
+                                                <li><strong>Option 2 (Include Segment B):</strong> Segment B has external revenue of ₹6,50,000. Combined external revenue (A + D + B) = $₹35,00,000 + ₹6,50,000 = ₹41,50,000$ (83% &ge; 75%).</li>
+                                                <li><strong>Conclusion:</strong> Segments A and D are mandatory reportable segments. To satisfy the 75% external revenue rule (and considering management's strategic view), <strong>Segment C</strong> (or Segment B) must also be reported.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <!-- TYK 2 -->
+                            <div class="tyk-card">
+                                <div class="tyk-header">
+                                    <span class="tyk-badge">TYK Question 2</span>
+                                    <span style="font-size: 12px; font-weight: 700; color: #475569;">Complete Segment Financial Disclosure Presentation (Coating Industry)</span>
+                                    <button class="btn-toggle-sol" id="btn-ind108-q2" onclick="toggleSolution('ind108-q2')">Show Solution</button>
+                                </div>
+                                <div class="tyk-question">
+                                    <strong>Question:</strong> X Ltd. operates in the coating industry with segments: Coating (decorative, auto, industrial paints) and Others (chemicals, polymers). Information for FY 20X1-20X2 (₹ in lakhs):
+                                    <ul>
+                                        <li>External Revenue (including GST): Coating ₹2,00,000 (GST ₹5,000); Others ₹70,000 (GST ₹3,000).</li>
+                                        <li>Other operating income: Coating ₹40,000; Others ₹15,000.</li>
+                                        <li>Segment Results: Coating ₹10,000; Others ₹4,000.</li>
+                                        <li>Segment Assets: Coating ₹50,000; Others ₹30,000. Segment Liabilities: Coating ₹30,000; Others ₹10,000.</li>
+                                        <li>Unallocated net corporate income: ₹3,000; Interest charges: ₹2,000; Tax expense: ₹2,000 (Current ₹1,950, Deferred ₹50).</li>
+                                        <li>Unallocated Investments: ₹10,000; Other corporate assets: ₹10,000; Unallocated liabilities: ₹20,000; Share capital: ₹10,000; Reserves: ₹30,000.</li>
+                                        <li>Depreciation: Coating ₹1,000; Others ₹300. Capital expenditure: Coating ₹5,000; Others ₹2,000.</li>
+                                        <li>Geographical: Outside India revenue ₹62,000; Outside India assets ₹10,000.</li>
+                                    </ul>
+                                    Prepare the full Ind AS 108 segment disclosure schedule.
+                                </div>
+                                <div class="tyk-solution" id="ind108-q2">
+                                    <strong>Complete Ind AS 108 Segment Disclosure Presentation (₹ in lakhs):</strong>
+                                    <div class="table-wrapper">
+                                        <table class="custom-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Particulars</th>
+                                                    <th style="text-align: right;">Coating</th>
+                                                    <th style="text-align: right;">Others</th>
+                                                    <th style="text-align: right;">Total Entity</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr style="background: #f1f5f9;"><td colspan="4"><strong>1. SEGMENT REVENUE</strong></td></tr>
+                                                <tr>
+                                                    <td>External Revenue (excluding GST)</td>
+                                                    <td style="text-align: right;">1,95,000</td>
+                                                    <td style="text-align: right;">67,000</td>
+                                                    <td style="text-align: right; font-weight: 600;">2,62,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Other Operating Income</td>
+                                                    <td style="text-align: right;">40,000</td>
+                                                    <td style="text-align: right;">15,000</td>
+                                                    <td style="text-align: right; font-weight: 600;">55,000</td>
+                                                </tr>
+                                                <tr style="background: #f8fafc; font-weight: 700;">
+                                                    <td><strong>Total Segment Revenue</strong></td>
+                                                    <td style="text-align: right;"><strong>2,35,000</strong></td>
+                                                    <td style="text-align: right;"><strong>82,000</strong></td>
+                                                    <td style="text-align: right; font-weight: 800; color: #1e40af;"><strong>3,17,000</strong></td>
+                                                </tr>
+
+                                                <tr style="background: #f1f5f9;"><td colspan="4"><strong>2. SEGMENT RESULTS &amp; RECONCILIATION</strong></td></tr>
+                                                <tr>
+                                                    <td>Segment Result</td>
+                                                    <td style="text-align: right;">10,000</td>
+                                                    <td style="text-align: right;">4,000</td>
+                                                    <td style="text-align: right; font-weight: 600;">14,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">Add: Unallocated Corporate Income (net)</td>
+                                                    <td style="text-align: right;">3,000</td>
+                                                </tr>
+                                                <tr style="background: #f8fafc; font-weight: 600;">
+                                                    <td colspan="3">Operating Profit Before Interest &amp; Tax</td>
+                                                    <td style="text-align: right;">17,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">Less: Interest and Bank Charges</td>
+                                                    <td style="text-align: right;">(2,000)</td>
+                                                </tr>
+                                                <tr style="background: #f8fafc; font-weight: 700;">
+                                                    <td colspan="3"><strong>Profit Before Taxation (PBT)</strong></td>
+                                                    <td style="text-align: right; font-weight: 800;"><strong>15,000</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">Less: Current Taxes (₹1,950) &amp; Deferred Taxes (₹50)</td>
+                                                    <td style="text-align: right;">(2,000)</td>
+                                                </tr>
+                                                <tr style="background: #ecfdf5; font-weight: 700;">
+                                                    <td colspan="3"><strong style="color: #065f46;">Profit After Taxation (PAT)</strong></td>
+                                                    <td style="text-align: right; font-weight: 800; color: #065f46;"><strong>13,000</strong></td>
+                                                </tr>
+
+                                                <tr style="background: #f1f5f9;"><td colspan="4"><strong>3. ASSETS &amp; LIABILITIES RECONCILIATION</strong></td></tr>
+                                                <tr>
+                                                    <td>Segment Assets</td>
+                                                    <td style="text-align: right;">50,000</td>
+                                                    <td style="text-align: right;">30,000</td>
+                                                    <td style="text-align: right;">80,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">Add: Unallocated Corporate Investments &amp; Other Assets</td>
+                                                    <td style="text-align: right;">20,000</td>
+                                                </tr>
+                                                <tr style="background: #f8fafc; font-weight: 700;">
+                                                    <td colspan="3"><strong>Total Assets per Balance Sheet</strong></td>
+                                                    <td style="text-align: right; font-weight: 800; color: #1e40af;"><strong>1,00,000</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Segment Liabilities</td>
+                                                    <td style="text-align: right;">30,000</td>
+                                                    <td style="text-align: right;">10,000</td>
+                                                    <td style="text-align: right;">40,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">Add: Unallocated Corporate Liabilities</td>
+                                                    <td style="text-align: right;">20,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">Add: Shareholders' Funds (Share Capital ₹10,000 + Reserves ₹30,000)</td>
+                                                    <td style="text-align: right;">40,000</td>
+                                                </tr>
+                                                <tr style="background: #f8fafc; font-weight: 700;">
+                                                    <td colspan="3"><strong>Total Liabilities &amp; Equity per Balance Sheet</strong></td>
+                                                    <td style="text-align: right; font-weight: 800; color: #1e40af;"><strong>1,00,000</strong></td>
+                                                </tr>
+
+                                                <tr style="background: #f1f5f9;"><td colspan="4"><strong>4. OTHER SEGMENT INFORMATION</strong></td></tr>
+                                                <tr>
+                                                    <td>Capital Expenditure</td>
+                                                    <td style="text-align: right;">5,000</td>
+                                                    <td style="text-align: right;">2,000</td>
+                                                    <td style="text-align: right; font-weight: 600;">7,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Depreciation</td>
+                                                    <td style="text-align: right;">1,000</td>
+                                                    <td style="text-align: right;">300</td>
+                                                    <td style="text-align: right; font-weight: 600;">1,300</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <h5 style="font-family: 'Outfit', sans-serif; font-size: 13.5px; font-weight: 700; margin: 16px 0 6px 0;">Geographical Information (₹ in lakhs):</h5>
+                                    <div class="table-wrapper">
+                                        <table class="custom-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Geographic Region</th>
+                                                    <th style="text-align: right;">Revenue</th>
+                                                    <th style="text-align: right;">Segment Assets</th>
+                                                    <th style="text-align: right;">Capital Expenditure</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>India (Country of Domicile)</td>
+                                                    <td style="text-align: right;">2,55,000</td>
+                                                    <td style="text-align: right;">90,000</td>
+                                                    <td style="text-align: right;">7,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Outside India</td>
+                                                    <td style="text-align: right;">62,000</td>
+                                                    <td style="text-align: right;">10,000</td>
+                                                    <td style="text-align: right;">—</td>
+                                                </tr>
+                                                <tr style="background: #f8fafc; font-weight: 700;">
+                                                    <td><strong>Total</strong></td>
+                                                    <td style="text-align: right;"><strong>3,17,000</strong></td>
+                                                    <td style="text-align: right;"><strong>1,00,000</strong></td>
+                                                    <td style="text-align: right;"><strong>7,000</strong></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- TYK 3 -->
+                            <div class="tyk-card">
+                                <div class="tyk-header">
+                                    <span class="tyk-badge">TYK Question 3</span>
+                                    <span style="font-size: 12px; font-weight: 700; color: #475569;">CODM Measurement Basis (FIFO vs. Weighted Average)</span>
+                                    <button class="btn-toggle-sol" id="btn-ind108-q3" onclick="toggleSolution('ind108-q3')">Show Solution</button>
+                                </div>
+                                <div class="tyk-question">
+                                    <strong>Question:</strong> An entity uses the weighted average cost formula to assign costs to inventories and cost of goods sold for external financial reporting purposes. However, the internal reports provided to the Chief Operating Decision Maker (CODM) use the First-In, First-Out (FIFO) method for evaluating the performance of segment operations. State the cost formula to be used for Ind AS 108 disclosure purposes.
+                                </div>
+                                <div class="tyk-solution" id="ind108-q3">
+                                    <strong>Solution &amp; Core Standards Rule:</strong>
+                                    <p>
+                                        Under Paragraphs 25 &amp; 26 of Ind AS 108, the amount of each segment item reported <strong>shall be the measure reported to the Chief Operating Decision Maker (CODM)</strong> for the purposes of making decisions about allocating resources to the segment and assessing its performance.
+                                    </p>
+                                    <ul>
+                                        <li>Therefore, the entity <strong>must use the First-In, First-Out (FIFO) method</strong> for its segment disclosures under Ind AS 108, because that is the measure used by the CODM.</li>
+                                        <li>However, under Paragraph 28, the entity is required to provide a <strong>reconciliation</strong> between the total of the reportable segments' profit or loss (measured under FIFO) and the entity's profit or loss before tax as reported in the financial statements (measured under Weighted Average cost).</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ================= MASTER SYNTHESIS: DISCLOSURES & GOVERNANCE MATRIX ================= -->
+                <section class="section-card" id="master-synthesis">
+                    <div class="section-header">
+                        <div class="section-number">Master Synthesis &bull; Corporate Governance &amp; Market Integrity</div>
+                        <h2 class="section-title">Disclosures &amp; Governance Interaction Matrix</h2>
+                        <p class="section-lead">
+                            An advanced comparative matrix synthesizing the intersection between Ind AS 24, Ind AS 33, and Ind AS 108 with Schedule III Division II and SEBI (LODR) Regulations.
+                        </p>
+                    </div>
+
+                    <div class="concept-block">
+                        <div class="concept-body">
+                            <div class="table-wrapper">
+                                <table class="custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 25%;">Standard</th>
+                                            <th style="width: 25%;">Primary Target Audience</th>
+                                            <th style="width: 25%;">Key Information Delivered</th>
+                                            <th style="width: 25%;">Governance / Market Impact</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Ind AS 24 (Related Party Disclosures)</strong></td>
+                                            <td>Investors, regulators, minority shareholders.</td>
+                                            <td>Transactions, balances, commitments, and favourable pricing between connected entities and KMP.</td>
+                                            <td>Mitigates conflict of interest, prevents corporate asset stripping, ensures transparency under Companies Act 2013 Sec 188.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Ind AS 33 (Earnings Per Share)</strong></td>
+                                            <td>Equity analysts, capital markets, institutional investors.</td>
+                                            <td>Basic and Diluted EPS per share, potential future dilution from convertible instruments and ESOPs.</td>
+                                            <td>Directly drives P/E valuation ratios, ensures comparable performance across periods, prevents covert dilution.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Ind AS 108 (Operating Segments)</strong></td>
+                                            <td>Financial analysts, creditors, credit rating agencies.</td>
+                                            <td>Disaggregated revenue, profitability, assets, and liabilities viewed through CODM's perspective.</td>
+                                            <td>Exposes hidden loss-making divisions, tracks capital allocation efficiency, reveals customer concentration risks.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="callout-box callout-tip" style="margin-top: 24px;">
+                                <strong>Exam Golden Rule for Disclosures Module:</strong>
+                                Disclosures in Ind AS are not mere compliance checklists; they provide vital economic context. In Ind AS 24, remember that <em>control relationships must be disclosed even if transactions are nil</em>. In Ind AS 33, <em>options never adjust the numerator</em> (only free shares dilute denominator). In Ind AS 108, <em>CODM measurement rules override Ind AS accounting policies</em> in segment reports, provided a clean reconciliation is presented!
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Chapter Navigation Footer -->
+                <div class="chapter-footer-nav">
+                    <a href="taxes_forex_ind_as.html" class="footer-nav-card">
+                        <div class="footer-nav-label">&larr; Previous Chapter</div>
+                        <div class="footer-nav-title">Chapter 7: Ind AS on Taxes &amp; Forex (Ind AS 12 &amp; 21)</div>
+                    </a>
+                    <a href="revenue_ind_as_115.html" class="footer-nav-card" style="text-align: right;">
+                        <div class="footer-nav-label">Next Chapter &rarr;</div>
+                        <div class="footer-nav-title">Chapter 9: Revenue from Contracts with Customers (Ind AS 115)</div>
+                    </a>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Reading Progress Bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            const progressBar = document.getElementById('readingProgressBar');
+            if (progressBar) {
+                progressBar.style.width = scrolled + '%';
+            }
+        });
+
+        // Sidebar Toggle for Mobile / Drawer
+        const sidebarToggleBtn = document.getElementById('sidebarToggleBtn');
+        const sidebarNav = document.getElementById('sidebarNav');
+
+        if (sidebarToggleBtn && sidebarNav) {
+            sidebarToggleBtn.addEventListener('click', () => {
+                sidebarNav.classList.toggle('active');
+            });
+        }
+
+        // Smooth Scroll with sticky topbar offset
+        document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+
+                    // Update active state in sidebar
+                    document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Close mobile sidebar if open
+                    if (window.innerWidth <= 1024) {
+                        sidebarNav.classList.remove('active');
+                    }
+                }
+            });
+        });
+
+        // ScrollSpy to update active sidebar link on scrolling
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section.section-card, .concept-block[id], .hero-banner[id]');
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            if (current) {
+                document.querySelectorAll('.sidebar-nav a').forEach(a => {
+                    a.classList.remove('active');
+                    if (a.getAttribute('href') === '#' + current) {
+                        a.classList.add('active');
+                    }
+                });
+            }
+        });
+
+        // Toggle TYK Solution Accordion
+        function toggleSolution(id) {
+            const solDiv = document.getElementById(id);
+            const btn = document.getElementById('btn-' + id);
+            if (!solDiv) return;
+
+            if (solDiv.classList.contains('open')) {
+                solDiv.classList.remove('open');
+                if (btn) btn.innerText = 'Show Solution';
+            } else {
+                solDiv.classList.add('open');
+                if (btn) btn.innerText = 'Hide Solution';
+            }
+        }
+    </script>
+</body>
+</html>
