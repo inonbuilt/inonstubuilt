@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA Final AFM Chapter-Wise Exams | Calcium Notes</title>
+
+    <!-- Meta Data -->
+    <meta name="title" content="CA Final AFM Chapter-Wise Mock Exams (60 Marks | 1.5 Hours) | Calcium Notes">
+    <meta name="description" content="Attempt targeted 60-mark chapter-wise CA Final AFM exams under ICAI pattern. 15-mark Case Scenario MCQs, 45-mark Descriptive questions with choice. Instant solutions & 3D book interface.">
+    <meta name="keywords" content="CA Final AFM Chapter Wise, Advanced Financial Management Mock Test, ICAI AFM Chapter Test, 60 Mark Mock, 1.5 Hour Exam, Calcium Notes">
+    <meta name="author" content="Calcium Notes Team">
+
+    <link rel="stylesheet" href="./eafm.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YYJ8R39EXM');
+    </script>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .chapgate-wrapper {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding-bottom: 60px;
+        }
+
+        .back-nav {
+            margin-bottom: 25px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #2563eb;
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.2s ease;
+        }
+
+        .back-nav:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        .hero-banner {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            border-radius: 20px;
+            padding: 35px 30px;
+            color: #ffffff;
+            margin-bottom: 35px;
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+        }
+
+        .hero-banner h1 {
+            font-size: 30px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .hero-banner p {
+            font-size: 16px;
+            color: #dbeafe;
+            max-width: 850px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .spec-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .spec-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .spec-label {
+            font-size: 12px;
+            color: #93c5fd;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+
+        .spec-val {
+            font-size: 15px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .instructions-summary {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid #dbe4ee;
+            padding: 22px 28px;
+            margin-bottom: 35px;
+            box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+        }
+
+        .instructions-summary h3 {
+            font-size: 17px;
+            color: #0f172a;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .instructions-summary ul {
+            list-style-type: disc;
+            padding-left: 22px;
+            color: #475569;
+            font-size: 14.5px;
+            line-height: 1.6;
+        }
+
+        .instructions-summary li {
+            margin-bottom: 6px;
+        }
+
+        .highlight-blue {
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        .section-heading {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .section-heading span {
+            font-size: 14px;
+            font-weight: 500;
+            color: #64748b;
+        }
+
+        /* CHAPTER CARDS GRID */
+        .chapter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+            gap: 20px;
+        }
+
+        .chap-card {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid #dbe4ee;
+            padding: 24px;
+            box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.25s ease;
+        }
+
+        .chap-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.09);
+            border-color: #93c5fd;
+        }
+
+        .chap-top {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+
+        .chap-badge {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            background: #eff6ff;
+            color: #2563eb;
+            border: 1px solid #bfdbfe;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .chap-header-info {
+            flex: 1;
+        }
+
+        .chap-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: #0f172a;
+            line-height: 1.4;
+            margin-bottom: 4px;
+        }
+
+        .chap-weight {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            color: #0369a1;
+            background: #e0f2fe;
+            padding: 2px 8px;
+            border-radius: 6px;
+        }
+
+        .chap-desc {
+            font-size: 13.5px;
+            color: #64748b;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .chap-action {
+            margin-top: auto;
+        }
+
+        .start-exam-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: #2563eb;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 18px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
+        }
+
+        .start-exam-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 14px rgba(37, 99, 235, 0.25);
+        }
+
+        @media (max-width: 650px) {
+            .hero-banner {
+                padding: 24px 20px;
+            }
+
+            .hero-banner h1 {
+                font-size: 24px;
+            }
+
+            .specs-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .chapter-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="chapgate-wrapper">
+
+        <!-- Back Navigation -->
+        <a href="./eafm.html" class="back-nav">
+            &larr; Back to AFM Overview
+        </a>
+
+        <!-- Hero Banner -->
+        <div class="hero-banner">
+            <h1>CA Final AFM Chapter-Wise Test Series</h1>
+            <p>
+                Targeted chapter mocks with realistic ICAI exam conditions. Each chapter mock is strictly timed for 1.5 hours, carries 60 marks, and features dynamic case scenarios and descriptive numerical questions with subquestion parts (1a, 1b, etc.).
+            </p>
+
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <div class="spec-icon">⏱️</div>
+                    <div>
+                        <div class="spec-label">Duration</div>
+                        <div class="spec-val">1.5 Hours (90 Mins)</div>
+                    </div>
+                </div>
+
+                <div class="spec-item">
+                    <div class="spec-icon">🎯</div>
+                    <div>
+                        <div class="spec-label">Total Marks</div>
+                        <div class="spec-val">60 Marks</div>
+                    </div>
+                </div>
+
+                <div class="spec-item">
+                    <div class="spec-icon">📝</div>
+                    <div>
+                        <div class="spec-label">Part I (MCQs)</div>
+                        <div class="spec-val">15 Marks (Case Scenarios)</div>
+                    </div>
+                </div>
+
+                <div class="spec-item">
+                    <div class="spec-icon">📊</div>
+                    <div>
+                        <div class="spec-label">Part II (Descriptive)</div>
+                        <div class="spec-val">45 Marks (Q1 Compulsory)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instructions Summary -->
+        <div class="instructions-summary">
+            <h3>📌 Important Examination Instructions</h3>
+            <ul>
+                <li><span class="highlight-blue">Total Marks & Structure:</span> 60 Marks total. Part I comprises 15 Marks of Case Scenario MCQs (all compulsory). Part II comprises 45 Marks of Descriptive Questions.</li>
+                <li><span class="highlight-blue">Descriptive Choice:</span> Part II provides 4 main questions of 15 Marks each. <strong>Question 1 is compulsory</strong>. Out of Questions 2, 3, and 4, candidate may answer <strong>any two</strong> (one question can be left as choice).</li>
+                <li><span class="highlight-blue">Sub-questions:</span> Each question contains structured sub-questions labelled <strong>1(a), 1(b)</strong>, <strong>2(a), 2(b)</strong>, etc., mirroring the official ICAI question paper layout.</li>
+                <li><span class="highlight-blue">3D Interactive Booklet:</span> Flip through pages using drag, navigation buttons, or keyboard arrows. Solutions and scoring are revealed upon clicking 'Finish & Show Solutions' or when the 90-minute countdown timer expires.</li>
+                <li><span class="highlight-blue">Custom Question Bank Ratio:</span> Choose your preferred mix between official past ICAI / MTP questions and AI Bank case scenarios (0% to 100%) on the instructions screen before starting.</li>
+            </ul>
+        </div>
+
+        <!-- Chapter Selection Section -->
+        <div class="section-heading">
+            <div>Select Chapter to Start Mock Exam</div>
+            <span>15 Chapters Available</span>
+        </div>
+
+        <div class="chapter-grid">
+
+            <!-- Chapter 1 -->
+            <div class="chap-card">
+                <div>
+                    <div class="chap-top">
+                        <div class="chap-badge">01</div>
+                        <div class="chap-header-info">
+                            <div class="chap-title">Financial Policy and Corporate Strategy</div>
+                            <span class="chap-weight">Weightage: 8-10%</span>
+                        </div>
+                    </div>
+                    <div class="chap-desc">
+                        Strategic financial decision making, interface of financial policy and strategy, balancing business risk and financial risk.
+                    </div>
+                </div>
+                <div class="chap-action">
+                    <a href="./instructions.html?chapter=financial_policy" class="start-exam-btn">
+                        <span>Write 60-Mark Exam</span> &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chapter 2 -->
+            <div class="chap-card">
+                <div>
+                    <div class="chap-top">
+                        <div class="chap-badge">02</div>
+                        <div class="chap-header-info">
+                            <div class="chap-title">Risk Management</div>
+                            <span class="chap-weight">Weightage: 8-12%</span>
+                        </div>
+                    </div>
+                    <div class="chap-desc">
+                        Identification and measurement of financial risks, Value at Risk (VaR), stress testing, credit risk and enterprise risk management.
+                    </div>
+                </div>
+                <div class="chap-action">
+                    <a href="./instructions.html?chapter=risk_management" class="start-exam-btn">
+                        <span>Write 60-Mark Exam</span> &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chapter 3 -->
+            <div class="chap-card">
+                <div>
+                    <div class="chap-top">
+                        <div class="chap-badge">03</div>
+                        <div class="chap-header-info">
+                            <div class="chap-title">Advanced Capital Budgeting Decisions</div>
+                            <span class="chap-weight">Weightage: 12-15%</span>
+                        </div>
+                    </div>
+                    <div class="chap-desc">
+                        Project evaluation under risk and uncertainty, Sensitivity Analysis, Certainty Equivalent, Real Options, decision trees.
+                    </div>
+                </div>
+                <div class="chap-action">
+                    <a href="./instructions.html?chapter=capital_budgeting" class="start-exam-btn">
+                        <span>Write 60-Mark Exam</span> &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chapter 4 -->
+            <div class="chap-card">
+                <div>
+                    <div class="chap-top">
+                        <div class="chap-badge">04</div>
+                        <div class="chap-header-info">
+                            <div class="chap-title">Security Analysis</div>
+                            <span class="chap-weight">Weightage: 8-10%</span>
+                        </div>
+                    </div>
+                    <div class="chap-desc">
+                        Fundamental analysis (EIC framework), Technical Analysis theories, moving averages, RSI, chart patterns, and market efficiency.
+                    </div>
+                </div>
+                <div class="chap-action">
+                    <a href="./instructions.html?chapter=security_analysis" class="start-exam-btn">
+                        <span>Write 60-Mark Exam</span> &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chapter 5 -->
+            <div class="chap-card">
+                <div>
+                    <div class="chap-top">
+                        <div class="chap-badge">05</div>
+                        <div class="chap-header-info">
+                            <div class="chap-title">Security Valuation</div>
+                            <span class="chap-weight">Weightage: 12-15%</span>
+                        </div>
+                    </div>
+                    <div class="chap-desc">
+                        Bond valuation, yield curve, duration & convexity, bond refunding, equity share valuation, multi-stage dividend discount models.
+                    </div>
+                </div>
+                <div class="chap-action">
+                    <a href="./instructions.html?chapter=security_valuation" class="start-exam-btn">
+                        <span>Write 60-Mark Exam</span> &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chapter 6 -->
+            <div class="chap-card">
+                <div>
+                    <div class="chap-top">
+                        <div class="chap-badge">06</div>
+                        <div class="chap-header-info">
+                            <div class="chap-title">Portfolio Management</div>
+                            <span class="chap-weight">Weightage: 15-20%</span>
+                        </div>
+                    </div>
+                    <div class="chap-desc">
+                        Markowitz Model, Capital Asset Pricing Model (CAPM), Arbitrage Pricing Theory, Sharpe & Treynor ratios, portfolio rebalancing.
+                    </div>
+                </div>
+                <div class="chap-action">
+                    <a href="./instructions.html?chapter=portfolio_management" class="start-exam-btn">
+                        <span>Write 60-Mark Exam</span> &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chapter 7 -->
+            <div class="chap-card">
+                <div>
+                    <div class="chap-top">
+                        <div class="chap-badge">07</div>
+                        <div class="chap-header-info">
+                            <div class="chap-title">Securitization</div>
+                            <span class="chap-weight">Weightage: 5-8%</span>
+                        </div>
+                    </div>
+                    <div class="chap-desc">
+                        Securitization instruments, pass-through and pay-through certificates, collateralized debt obligations (CDOs), tokenization.
+                    </div>
+                </div>
+                <div class="chap-action">
+                    <a href="./instructions.html?chapter=securitization" class="start-exam-btn">
+                        <span>Write 60-Mark Exam</span> &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chapter 8 -->
+            <div class="chap-card">
+                <div>
+                    <div class="chap-top">
+                        <div class="chap-badge">08</div>
+                        <div class="chap-header-info">
+                            <div class="chap-title">Mutual Funds</div>
+                            <span class="chap-weight">Weightage: 8-10%</span>
+                        </div>
+                    </div>
+                    <div class="chap-desc">
+                        NAV calculations, performance evaluation, side pocketing, tracking error, expense ratio, all types of mutual fund schemes.
+                    </div>
+                </div>
+                <div class="chap-action">
+                    <a href="./instructions.html?chapter=mutual_funds" class="start-exam-btn">
+                        <span>Write 60-Mark Exam</span> &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chapter 9 -->
+            <div class="chap-card">
+                <div>
+                    <div class="chap-top">
+                        <div class="chap-badge">09</div>
+                        <div class="chap-header-info">
+                            <div class="chap-title">Derivatives Analysis and Valuation</div>
+                            <span class="chap-weight">Weightage: 12-15%</span>
+                        </div>
+                    </div>
+                    <div class="chap-desc">
+                        Forward and futures contracts, stock index futures, options valuation (Binomial & Black-Scholes), Greeks, hedging strategies.
+                    </div>
+                </div>
+                <div class="chap-action">
+                    <a href="./instructions.html?chapter=derivatives" class="start-exam-btn">
+                        <span>Write 60-Mark Exam</span> &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chapter 10 -->
+            <div class="chap-card">
+                <div>
+                    <div class="chap-top">
+                        <div class="chap-badge">10</div>
+                        <div class="chap-header-info">
+                            <div class="chap-title">Foreign Exchange Exposure & Risk</div>
+                            <span class="chap-weight">Weightage: 15-20%</span>
+                        </div>
+                    </div>
+                    <div class="chap-desc">
+                        Exchange rate theories (PPP, IRP), transaction & economic exposure, forward contracts, money market hedges, currency options & swaps.
+                    </div>
+                </div>
+                <div class="chap-action">
+                    <a href="./instructions.html?chapter=forex" class="start-exam-btn">
+                        <span>Write 60-Mark Exam</span> &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chapter 11 -->
+            <div class="chap-card">
+                <div>
+                    <div class="chap-top">
+                        <div class="chap-badge">11</div>
+                        <div class="chap-header-info">
+                            <div class="chap-title">International Financial Management</div>
+                            <span class="chap-weight">Weightage: 6-8%</span>
+                        </div>
+                    </div>
+                    <div class="chap-desc">
+                        International capital budgeting, ADRs, GDRs, FCCBs, international working capital management, euro currency markets.
+                    </div>
+                </div>
+                <div class="chap-action">
+                    <a href="./instructions.html?chapter=international_finance" class="start-exam-btn">
+                        <span>Write 60-Mark Exam</span> &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chapter 12 -->
+            <div class="chap-card">
+                <div>
+                    <div class="chap-top">
+                        <div class="chap-badge">12</div>
+                        <div class="chap-header-info">
+                            <div class="chap-title">Interest Rate Risk Management</div>
+                            <span class="chap-weight">Weightage: 8-12%</span>
+                        </div>
+                    </div>
+                    <div class="chap-desc">
+                        Forward Rate Agreements (FRAs), Interest Rate Swaps, Caps, Floors, Collars, interest rate futures and swaptions.
+                    </div>
+                </div>
+                <div class="chap-action">
+                    <a href="./instructions.html?chapter=interest_rate_risk" class="start-exam-btn">
+                        <span>Write 60-Mark Exam</span> &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chapter 13 -->
+            <div class="chap-card">
+                <div>
+                    <div class="chap-top">
+                        <div class="chap-badge">13</div>
+                        <div class="chap-header-info">
+                            <div class="chap-title">Business Valuation</div>
+                            <span class="chap-weight">Weightage: 10-12%</span>
+                        </div>
+                    </div>
+                    <div class="chap-desc">
+                        DCF method, Free Cash Flow to Firm (FCFF), Free Cash Flow to Equity (FCFE), Economic Value Added (EVA), relative valuation.
+                    </div>
+                </div>
+                <div class="chap-action">
+                    <a href="./instructions.html?chapter=business_valuation" class="start-exam-btn">
+                        <span>Write 60-Mark Exam</span> &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chapter 14 -->
+            <div class="chap-card">
+                <div>
+                    <div class="chap-top">
+                        <div class="chap-badge">14</div>
+                        <div class="chap-header-info">
+                            <div class="chap-title">Mergers, Acquisitions & Restructuring</div>
+                            <span class="chap-weight">Weightage: 12-15%</span>
+                        </div>
+                    </div>
+                    <div class="chap-desc">
+                        Merger motives, swap ratios, EPS impact, financial evaluation of takeovers, post-merger integration, corporate demergers.
+                    </div>
+                </div>
+                <div class="chap-action">
+                    <a href="./instructions.html?chapter=mergers_acquisitions" class="start-exam-btn">
+                        <span>Write 60-Mark Exam</span> &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chapter 15 -->
+            <div class="chap-card">
+                <div>
+                    <div class="chap-top">
+                        <div class="chap-badge">15</div>
+                        <div class="chap-header-info">
+                            <div class="chap-title">Startup Finance</div>
+                            <span class="chap-weight">Weightage: 6-8%</span>
+                        </div>
+                    </div>
+                    <div class="chap-desc">
+                        Financing options for startups, angel investors, venture capital, pitch decks, bootstrapping, unicorns and startup valuation.
+                    </div>
+                </div>
+                <div class="chap-action">
+                    <a href="./instructions.html?chapter=startup_finance" class="start-exam-btn">
+                        <span>Write 60-Mark Exam</span> &rarr;
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

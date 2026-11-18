@@ -386,3 +386,36 @@ table tr > td:nth-child(2):last-child {
     font-weight: inherit;
     display: inline;
 }
+
+.case-p {
+    margin-bottom: 8px;
+    line-height: 1.55;
+    font-size: calc(14.5px * var(--font-scale));
+    color: #1e293b;
+    word-break: break-word;
+}
+
+.case-bullet {
+    margin: 3px 0 3px 14px;
+    text-indent: -14px;
+    line-height: 1.5;
+    font-size: calc(14px * var(--font-scale));
+    color: #1e293b;
+    word-break: break-word;
+}
+
+.case-heading {
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-size: calc(14.5px * var(--font-scale));
+    color: #0f172a;
+}
+
+.mcq-question-text {
+    display: inline;
+    line-height: 1.5;
+    font-size: calc(15px * var(--font-scale));
+    color: #0f172a;
+    word-break: break-word;
+}

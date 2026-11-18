@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter-Wise Exam Instructions | Calcium Notes</title>
+
+    <!-- Link to your existing stylesheet for consistent background and fonts -->
+    <link rel="stylesheet" href="./eafm.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YYJ8R39EXM');
+    </script>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124"
+        crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 24px 20px 40px 20px;
+            box-sizing: border-box;
+        }
+
+        .back-nav {
+            max-width: 820px;
+            margin: 0 auto 18px auto;
+            width: 100%;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #2563eb;
+            font-weight: 600;
+            font-size: 14.5px;
+            transition: color 0.2s ease;
+        }
+
+        .back-nav:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        .page-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
+
+        .instructions-card {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 30px 36px;
+            border: 1px solid #dbe4ee;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+            max-width: 820px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Chapter Banner Inside Card */
+        .chap-selected-banner {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            border-radius: 14px;
+            padding: 20px 24px;
+            color: #ffffff;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .chap-banner-info {
+            flex: 1;
+            min-width: 240px;
+        }
+
+        .chap-banner-pill {
+            display: inline-block;
+            font-size: 11.5px;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 3px 10px;
+            border-radius: 6px;
+            margin-bottom: 6px;
+        }
+
+        .chap-banner-title {
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 1.3;
+            margin: 0 0 6px 0;
+        }
+
+        .chap-banner-meta {
+            font-size: 13.5px;
+            color: #dbeafe;
+        }
+
+        .chap-switch-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .chap-switch-label {
+            font-size: 11.5px;
+            color: #bfdbfe;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .chap-select-dropdown {
+            background: #ffffff;
+            color: #0f172a;
+            border: 1px solid #bfdbfe;
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 13.5px;
+            font-weight: 600;
+            cursor: pointer;
+            outline: none;
+            max-width: 260px;
+        }
+
+        .inst-section {
+            margin-bottom: 22px;
+        }
+
+        .inst-section h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+            font-size: 18px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 8px;
+        }
+
+        .inst-section ul {
+            list-style-type: disc;
+            padding-left: 24px;
+            color: #334155;
+            line-height: 1.6;
+            font-size: 15px;
+            margin: 0;
+        }
+
+        .inst-section li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-text {
+            font-weight: 600;
+            color: #0f172a;
+        }
+
+        /* Question Bank Composition Controls */
+        .bank-comp-wrapper {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 18px 20px;
+            margin-top: 10px;
+        }
+
+        .bank-chips-grid {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+
+        .bank-chip {
+            flex: 1;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 12px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .bank-chip.qb-chip {
+            border: 1.5px solid #bfdbfe;
+            background: #f0f7ff;
+        }
+
+        .bank-chip.ai-chip {
+            border: 1.5px solid #ddd6fe;
+            background: #f5f3ff;
+        }
+
+        .chip-label {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .qb-chip .chip-label {
+            color: #1d4ed8;
+        }
+
+        .ai-chip .chip-label {
+            color: #6d28d9;
+        }
+
+        .chip-value {
+            font-size: 26px;
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        .qb-chip .chip-value {
+            color: #1e40af;
+        }
+
+        .ai-chip .chip-value {
+            color: #5b21b6;
+        }
+
+        .chip-sub {
+            font-size: 11.5px;
+            color: #64748b;
+            line-height: 1.4;
+        }
+
+        .split-bar-track {
+            height: 14px;
+            border-radius: 7px;
+            background: #e2e8f0;
+            display: flex;
+            overflow: hidden;
+            margin-bottom: 14px;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.06);
+        }
+
+        .split-bar-qb {
+            background: linear-gradient(90deg, #1d4ed8, #2563eb);
+            transition: width 0.15s ease;
+        }
+
+        .split-bar-ai {
+            background: linear-gradient(90deg, #7c3aed, #8b5cf6);
+            transition: width 0.15s ease;
+        }
+
+        .slider-container {
+            margin-bottom: 16px;
+        }
+
+        .comp-slider {
+            width: 100%;
+            height: 8px;
+            border-radius: 4px;
+            background: #cbd5e1;
+            outline: none;
+            cursor: pointer;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        .comp-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #2563eb;
+            border: 3px solid #ffffff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            transition: transform 0.15s ease;
+        }
+
+        .comp-slider::-webkit-slider-thumb:hover {
+            transform: scale(1.15);
+        }
+
+        .slider-ticks {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11.5px;
+            color: #64748b;
+            margin-top: 6px;
+            font-weight: 600;
+        }
+
+        .preset-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 14px;
+        }
+
+        .preset-btn {
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 7px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #334155;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .preset-btn:hover {
+            background: #f1f5f9;
+            border-color: #94a3b8;
+        }
+
+        .preset-btn.active {
+            background: #2563eb;
+            border-color: #2563eb;
+            color: #ffffff;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
+        }
+
+        .comp-summary-note {
+            font-size: 13.5px;
+            color: #334155;
+            line-height: 1.5;
+            padding: 10px 14px;
+            background: #ffffff;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+
+        .warning-box {
+            background: #fef2f2;
+            border-left: 5px solid #ef4444;
+            padding: 15px 20px;
+            margin-top: 22px;
+            border-radius: 6px;
+            color: #991b1b;
+            line-height: 1.5;
+            font-size: 14.5px;
+        }
+
+        .warning-box strong {
+            color: #7f1d1d;
+            font-size: 15.5px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .start-btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+        .start-btn {
+            background: #2563eb;
+            color: #ffffff;
+            padding: 14px 34px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.25s ease;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+            text-align: center;
+        }
+
+        .start-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+        }
+
+        .chap-alt-link {
+            font-size: 14px;
+            color: #64748b;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.15s ease;
+        }
+
+        .chap-alt-link:hover {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+
+        /* Difficulty Distribution Controls */
+        .diff-comp-wrapper {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 18px 20px;
+            margin-top: 10px;
+        }
+
+        .diff-chips-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .diff-chip {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 12px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .diff-chip.easy-chip {
+            border: 1.5px solid #bbf7d0;
+            background: #f0fdf4;
+        }
+
+        .diff-chip.med-chip {
+            border: 1.5px solid #fef08a;
+            background: #fefce8;
+        }
+
+        .diff-chip.hard-chip {
+            border: 1.5px solid #fecaca;
+            background: #fef2f2;
+        }
+
+        .diff-chip .chip-label {
+            font-size: 11.5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .easy-chip .chip-label { color: #15803d; }
+        .med-chip .chip-label { color: #854d0e; }
+        .hard-chip .chip-label { color: #991b1b; }
+
+        .diff-chip .chip-value {
+            font-size: 24px;
+            font-weight: 800;
+            line-height: 1.1;
+        }
+
+        .easy-chip .chip-value { color: #166534; }
+        .med-chip .chip-value { color: #713f12; }
+        .hard-chip .chip-value { color: #7f1d1d; }
+
+        .diff-chip .chip-sub {
+            font-size: 11px;
+            color: #64748b;
+            line-height: 1.3;
+        }
+
+        .diff-bar-track {
+            height: 14px;
+            border-radius: 7px;
+            background: #e2e8f0;
+            display: flex;
+            overflow: hidden;
+            margin-bottom: 16px;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.06);
+        }
+
+        .diff-bar-easy {
+            background: linear-gradient(90deg, #10b981, #059669);
+            transition: width 0.15s ease;
+        }
+
+        .diff-bar-med {
+            background: linear-gradient(90deg, #f59e0b, #d97706);
+            transition: width 0.15s ease;
+        }
+
+        .diff-bar-hard {
+            background: linear-gradient(90deg, #ef4444, #dc2626);
+            transition: width 0.15s ease;
+        }
+
+        .diff-slider-group {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 14px 16px;
+            margin-bottom: 14px;
+        }
+
+        .slider-row {
+            margin-bottom: 12px;
+        }
+        .slider-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .slider-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+            font-size: 13.5px;
+            font-weight: 600;
+        }
+
+        .slider-header .slider-val-tag {
+            font-size: 13px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 6px;
+        }
+
+        .val-tag-med {
+            background: #fef9c3;
+            color: #854d0e;
+            border: 1px solid #fef08a;
+        }
+
+        .val-tag-hard {
+            background: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+        }
+
+        .residual-box {
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: #f0fdf4;
+            border: 1px dashed #86efac;
+            border-radius: 8px;
+            font-size: 13px;
+            color: #166534;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .diff-preset-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 14px;
+        }
+
+        .diff-preset-btn {
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 6px 12px;
+            font-size: 12.5px;
+            font-weight: 600;
+            color: #334155;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .diff-preset-btn:hover {
+            background: #f1f5f9;
+            border-color: #94a3b8;
+        }
+
+        .diff-preset-btn.active {
+            background: #0f172a;
+            border-color: #0f172a;
+            color: #ffffff;
+            box-shadow: 0 2px 6px rgba(15, 23, 42, 0.2);
+        }
+
+        .diff-summary-note {
+            font-size: 13.5px;
+            color: #334155;
+            line-height: 1.5;
+            padding: 10px 14px;
+            background: #ffffff;
+            border-radius: 8px;
+            border-left: 4px solid #10b981;
+        }
+
+        @media (max-width: 600px) {
+            .bank-chips-grid, .diff-chips-grid {
+                grid-template-columns: 1fr;
+                flex-direction: column;
+            }
+
+            .instructions-card {
+                padding: 20px 18px;
+            }
+
+            .chap-selected-banner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .chap-select-dropdown {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="./chapgate.html" class="back-nav">
+        &larr; Back to Chapter Gateway
+    </a>
+
+    <h1 class="page-title">Candidate Instructions &ndash; Chapter Test</h1>
+
+    <div class="instructions-card">
+
+        <!-- Chapter Banner with Fast Switcher -->
+        <div class="chap-selected-banner">
+            <div class="chap-banner-info">
+                <span class="chap-banner-pill" id="chapPillDisplay">Chapter 1</span>
+                <h2 class="chap-banner-title" id="chapTitleDisplay">Financial Policy and Corporate Strategy</h2>
+                <div class="chap-banner-meta" id="chapMetaDisplay">
+                    60 Marks &bull; 1.5 Hours &bull; ICAI Pattern
+                </div>
+            </div>
+            <div class="chap-switch-wrap">
+                <label for="chapterDropdown" class="chap-switch-label">Change Chapter</label>
+                <select id="chapterDropdown" class="chap-select-dropdown">
+                    <!-- Populated dynamically via JS -->
+                </select>
+            </div>
+        </div>
+
+        <!-- Exam Structure & Timing Section -->
+        <div class="inst-section">
+            <h3>1. Chapter Exam Structure & Timing</h3>
+            <ul>
+                <li><span class="highlight-text">Maximum Marks:</span> 60 Marks (Part I MCQ: 15 Marks | Part II
+                    Descriptive: 45 Marks).</li>
+                <li><span class="highlight-text">Part I (MCQ):</span> 15 Marks comprising targeted Case Scenario
+                    objective questions.</li>
+                <li><span class="highlight-text">Part II (Descriptive):</span> 4 Questions of 15 Marks each (Total 60
+                    Marks pool). <strong>Question 1 is compulsory (15 Marks)</strong>; answer any <strong>two out of
+                        Questions 2, 3, and 4 (30 Marks)</strong>. Total descriptive marks to attempt: 45 Marks.</li>
+                <li><span class="highlight-text">Duration:</span> 1.5 Hours (90 Minutes). A countdown timer will run at
+                    the top right of your exam book.</li>
+                <li><span class="highlight-text">Auto-Submission:</span> When the countdown reaches zero, inputs will
+                    lock automatically and complete step-by-step solutions with mark allocations will be displayed.</li>
+            </ul>
+        </div>
+
+        <!-- Question Bank Composition Section -->
+        <div class="inst-section">
+            <h3>2. Question Bank Composition (AI Bank vs Question Bank)</h3>
+            <p style="font-size: 14.5px; color: #475569; margin: 0 0 10px 0; line-height: 1.5;">
+                Select your preferred balance between the official <strong>Question Bank</strong> (ICAI Study Material &
+                Past MTPs) and the <strong>AI Bank</strong> (comprehensive scenario case studies and analytical
+                multi-tier descriptive questions created specifically for this chapter).
+            </p>
+
+            <div class="bank-comp-wrapper">
+                <!-- Badges Grid -->
+                <div class="bank-chips-grid">
+                    <div class="bank-chip qb-chip">
+                        <span class="chip-label">Question Bank</span>
+                        <span class="chip-value" id="qbValDisplay">50%</span>
+                        <span class="chip-sub">ICAI SM & Past Mock Test Papers</span>
+                    </div>
+                    <div class="bank-chip ai-chip">
+                        <span class="chip-label">AI Bank</span>
+                        <span class="chip-value" id="aiValDisplay">50%</span>
+                        <span class="chip-sub">21 Case Scenarios & 21 Analytical Problems</span>
+                    </div>
+                </div>
+
+                <!-- Visual Segment Bar -->
+                <div class="split-bar-track">
+                    <div class="split-bar-qb" id="qbBar" style="width: 50%;"></div>
+                    <div class="split-bar-ai" id="aiBar" style="width: 50%;"></div>
+                </div>
+
+                <!-- Range Slider -->
+                <div class="slider-container">
+                    <input type="range" class="comp-slider" id="ratioSlider" min="0" max="100" step="5" value="50">
+                    <div class="slider-ticks">
+                        <span>0% AI (100% QB)</span>
+                        <span>25% AI</span>
+                        <span>50% Balanced</span>
+                        <span>75% AI</span>
+                        <span>100% AI (0% QB)</span>
+                    </div>
+                </div>
+
+                <!-- Preset Quick Buttons -->
+                <div class="preset-buttons">
+                    <button type="button" class="preset-btn" data-ai="0">100% Question Bank</button>
+                    <button type="button" class="preset-btn" data-ai="25">75% QB / 25% AI</button>
+                    <button type="button" class="preset-btn active" data-ai="50">50% QB / 50% AI (Balanced)</button>
+                    <button type="button" class="preset-btn" data-ai="75">25% QB / 75% AI</button>
+                    <button type="button" class="preset-btn" data-ai="100">100% AI Bank</button>
+                </div>
+
+                <!-- Dynamic Summary Note -->
+                <div class="comp-summary-note" id="compNote">
+                    <strong>Chapter Paper Composition:</strong> 50% Question Bank & 50% AI Question Bank. Approximately
+                    ~30 Marks from Question Bank and ~30 Marks from AI Bank across MCQs and Descriptive sections.
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Question Bank Difficulty Configuration Section -->
+        <div class="inst-section">
+            <h3>3. AI Question Bank Difficulty Distribution</h3>
+            <p style="font-size: 14.5px; color: #475569; margin: 0 0 10px 0; line-height: 1.5;">
+                Select your preferred difficulty level for questions drawn from the <strong>AI Question Bank</strong> for this chapter. Choose a quick preset (<strong>Easy</strong>, <strong>Medium</strong>, <strong>Hard</strong>) or customize the percentage of <strong>Medium</strong> and <strong>Hard</strong> questions; the residual balance is automatically allocated to <strong>Easy</strong>. All three percentages are displayed below.
+            </p>
+
+            <div class="diff-comp-wrapper">
+                <!-- Badges Grid (Displaying all 3 percentages) -->
+                <div class="diff-chips-grid">
+                    <div class="diff-chip easy-chip">
+                        <span class="chip-label">Easy (Residual)</span>
+                        <span class="chip-value" id="diffEasyDisplay">34%</span>
+                        <span class="chip-sub">Residual balance (100% - Med - Hard)</span>
+                    </div>
+                    <div class="diff-chip med-chip">
+                        <span class="chip-label">Medium</span>
+                        <span class="chip-value" id="diffMedDisplay">33%</span>
+                        <span class="chip-sub">Standard exam application</span>
+                    </div>
+                    <div class="diff-chip hard-chip">
+                        <span class="chip-label">Hard</span>
+                        <span class="chip-value" id="diffHardDisplay">33%</span>
+                        <span class="chip-sub">Complex analytical scenarios</span>
+                    </div>
+                </div>
+
+                <!-- 3-Segment Visual Bar -->
+                <div class="diff-bar-track">
+                    <div class="diff-bar-easy" id="diffBarEasy" style="width: 34%;"></div>
+                    <div class="diff-bar-med" id="diffBarMed" style="width: 33%;"></div>
+                    <div class="diff-bar-hard" id="diffBarHard" style="width: 33%;"></div>
+                </div>
+
+                <!-- Quick Difficulty Selection Buttons -->
+                <div class="diff-preset-buttons">
+                    <button type="button" class="diff-preset-btn" data-preset="easy">🟢 100% Easy</button>
+                    <button type="button" class="diff-preset-btn" data-preset="med">🟡 100% Medium</button>
+                    <button type="button" class="diff-preset-btn" data-preset="hard">🔴 100% Hard</button>
+                    <button type="button" class="diff-preset-btn active" data-preset="balanced">⚖️ Balanced (34% E / 33% M / 33% H)</button>
+                    <button type="button" class="diff-preset-btn" data-preset="realistic">🎯 Exam Mix (20% E / 50% M / 30% H)</button>
+                </div>
+
+                <!-- Interactive Percentage Sliders for Medium and Hard -->
+                <div class="diff-slider-group">
+                    <div class="slider-row">
+                        <div class="slider-header">
+                            <label for="diffMedSlider" style="color: #713f12;">Medium Difficulty Percentage:</label>
+                            <span class="slider-val-tag val-tag-med" id="medSliderVal">33%</span>
+                        </div>
+                        <input type="range" class="comp-slider" id="diffMedSlider" min="0" max="100" step="5" value="33" style="accent-color: #f59e0b;">
+                    </div>
+
+                    <div class="slider-row" style="margin-top: 14px;">
+                        <div class="slider-header">
+                            <label for="diffHardSlider" style="color: #7f1d1d;">Hard Difficulty Percentage:</label>
+                            <span class="slider-val-tag val-tag-hard" id="hardSliderVal">33%</span>
+                        </div>
+                        <input type="range" class="comp-slider" id="diffHardSlider" min="0" max="100" step="5" value="33" style="accent-color: #ef4444;">
+                    </div>
+
+                    <div class="residual-box">
+                        <span><strong>Residual Easy Allocation:</strong> <span id="residualEasyFormula">100% &minus; 33% &minus; 33%</span></span>
+                        <strong id="residualEasyVal" style="font-size: 15px; color: #15803d;">= 34% Easy</strong>
+                    </div>
+                </div>
+
+                <!-- Dynamic Difficulty Note -->
+                <div class="diff-summary-note" id="diffNote">
+                    <strong>AI Bank Difficulty Breakdown:</strong> 34% Easy, 33% Medium, and 33% Hard. Easy questions form the residual balance of this chapter's AI questions.
+                </div>
+            </div>
+        </div>
+
+        <!-- Computer Generation Section -->
+        <div class="inst-section">
+            <h3>4. Dynamic Chapter-Targeted Generation</h3>
+            <ul>
+                <li>The exam engine will dynamically assemble your 60-mark paper in real time from the questions
+                    designated for this specific chapter.</li>
+                <li>Questions are matched by mark patterns (e.g. 8+7, 10+5, 6+5+4) to ensure exact 15 marks per
+                    descriptive question group.</li>
+                <li>Zero human intervention: every test session generates a fresh, randomized question sequence with
+                    unique combinations.</li>
+            </ul>
+        </div>
+
+        <!-- Refresh Warning Section -->
+        <div class="warning-box">
+            <strong>⚠️ CRITICAL WARNING: DO NOT REFRESH</strong>
+            Because this exam is generated dynamically in your browser session, <strong>refreshing, navigating back, or
+                reloading the browser will permanently erase your current progress</strong>. If refreshed, a brand new
+            paper will be generated, and previous inputs will be discarded.
+        </div>
+
+        <!-- Action Button -->
+        <div class="start-btn-container">
+            <a href="./chappfafm.html" id="startExamBtn" class="start-btn">Start 60-Mark Chapter Exam</a>
+            <a href="./chapgate.html" class="chap-alt-link">&larr; Return to All 15 Chapters</a>
+        </div>
+
+    </div>
+
+    <script>
+        (function () {
+            var CHAPTERS = [
+                { id: "financial_policy", num: 1, name: "Financial Policy and Corporate Strategy", weight: "8-10%" },
+                { id: "risk_management", num: 2, name: "Risk Management", weight: "8-10%" },
+                { id: "capital_budgeting", num: 3, name: "Advanced Capital Budgeting Decisions", weight: "12-15%" },
+                { id: "security_analysis", num: 4, name: "Security Analysis", weight: "6-8%" },
+                { id: "security_valuation", num: 5, name: "Security Valuation", weight: "12-15%" },
+                { id: "portfolio_management", num: 6, name: "Portfolio Management", weight: "15-20%" },
+                { id: "securitization", num: 7, name: "Securitization", weight: "6-8%" },
+                { id: "mutual_funds", num: 8, name: "Mutual Funds", weight: "8-10%" },
+                { id: "derivatives", num: 9, name: "Derivatives Analysis and Valuation", weight: "12-15%" },
+                { id: "forex", num: 10, name: "Foreign Exchange Exposure and Risk Management", weight: "15-20%" },
+                { id: "international_finance", num: 11, name: "International Financial Management", weight: "6-8%" },
+                { id: "interest_rate_risk", num: 12, name: "Interest Rate Risk Management", weight: "8-10%" },
+                { id: "business_valuation", num: 13, name: "Business Valuation", weight: "10-12%" },
+                { id: "mergers_acquisitions", num: 14, name: "Mergers, Acquisitions and Corporate Restructuring", weight: "12-15%" },
+                { id: "startup_finance", num: 15, name: "Startup Finance", weight: "6-8%" }
+            ];
+
+            var chapDropdown = document.getElementById('chapterDropdown');
+            var chapPillDisplay = document.getElementById('chapPillDisplay');
+            var chapTitleDisplay = document.getElementById('chapTitleDisplay');
+            var chapMetaDisplay = document.getElementById('chapMetaDisplay');
+
+            var slider = document.getElementById('ratioSlider');
+            var qbDisplay = document.getElementById('qbValDisplay');
+            var aiDisplay = document.getElementById('aiValDisplay');
+            var qbBar = document.getElementById('qbBar');
+            var aiBar = document.getElementById('aiBar');
+            var compNote = document.getElementById('compNote');
+            var startBtn = document.getElementById('startExamBtn');
+            var presetBtns = document.querySelectorAll('.preset-btn');
+
+            // Difficulty elements
+            var medSlider = document.getElementById('diffMedSlider');
+            var hardSlider = document.getElementById('diffHardSlider');
+            var diffEasyDisplay = document.getElementById('diffEasyDisplay');
+            var diffMedDisplay = document.getElementById('diffMedDisplay');
+            var diffHardDisplay = document.getElementById('diffHardDisplay');
+            var diffBarEasy = document.getElementById('diffBarEasy');
+            var diffBarMed = document.getElementById('diffBarMed');
+            var diffBarHard = document.getElementById('diffBarHard');
+            var medSliderVal = document.getElementById('medSliderVal');
+            var hardSliderVal = document.getElementById('hardSliderVal');
+            var residualEasyVal = document.getElementById('residualEasyVal');
+            var residualEasyFormula = document.getElementById('residualEasyFormula');
+            var diffNote = document.getElementById('diffNote');
+            var diffPresetBtns = document.querySelectorAll('.diff-preset-btn');
+
+            // State variables
+            var currentAi = 50;
+            var currentMed = 33;
+            var currentHard = 33;
+            var currentEasy = 34;
+
+            // Populate Chapter Dropdown
+            CHAPTERS.forEach(function (ch) {
+                var opt = document.createElement('option');
+                opt.value = ch.id;
+                opt.textContent = 'Ch ' + ch.num + ': ' + ch.name;
+                chapDropdown.appendChild(opt);
+            });
+
+            // Get initial chapter from URL search param
+            var urlParams = new URLSearchParams(window.location.search);
+            var initialChapterId = urlParams.get('chapter') || 'financial_policy';
+            var currentChap = CHAPTERS.find(function (c) { return c.id === initialChapterId; }) || CHAPTERS[0];
+
+            chapDropdown.value = currentChap.id;
+
+            function updateChapterDisplay(ch) {
+                currentChap = ch;
+                chapPillDisplay.textContent = 'Chapter ' + ch.num;
+                chapTitleDisplay.textContent = ch.name;
+                chapMetaDisplay.textContent = '60 Marks • 1.5 Hours • ICAI Weightage: ' + ch.weight;
+                updateStartUrl();
+            }
+
+            chapDropdown.addEventListener('change', function () {
+                var selectedId = chapDropdown.value;
+                var found = CHAPTERS.find(function (c) { return c.id === selectedId; }) || CHAPTERS[0];
+                if (window.history && window.history.replaceState) {
+                    var newUrl = window.location.pathname + '?chapter=' + found.id + '&ai_pct=' + currentAi + '&qb_pct=' + (100 - currentAi) +
+                        '&diff_easy=' + currentEasy + '&diff_med=' + currentMed + '&diff_hard=' + currentHard;
+                    window.history.replaceState(null, '', newUrl);
+                }
+                updateChapterDisplay(found);
+            });
+
+            // Read initial ratio from URL or localStorage
+            if (urlParams.has('ai_pct')) {
+                currentAi = parseInt(urlParams.get('ai_pct'), 10);
+            } else {
+                try {
+                    var saved = localStorage.getItem('afm_chap_ai_pct');
+                    if (saved !== null) currentAi = parseInt(saved, 10);
+                } catch (e) { }
+            }
+            if (isNaN(currentAi) || currentAi < 0) currentAi = 0;
+            if (currentAi > 100) currentAi = 100;
+
+            // Difficulty params
+            if (urlParams.has('diff_med')) {
+                currentMed = parseInt(urlParams.get('diff_med'), 10);
+            } else {
+                try {
+                    var savedMed = localStorage.getItem('afm_chap_diff_med');
+                    if (savedMed !== null) currentMed = parseInt(savedMed, 10);
+                } catch (e) { }
+            }
+
+            if (urlParams.has('diff_hard')) {
+                currentHard = parseInt(urlParams.get('diff_hard'), 10);
+            } else {
+                try {
+                    var savedHard = localStorage.getItem('afm_chap_diff_hard');
+                    if (savedHard !== null) currentHard = parseInt(savedHard, 10);
+                } catch (e) { }
+            }
+
+            if (urlParams.has('difficulty')) {
+                var dParam = urlParams.get('difficulty').toLowerCase();
+                if (dParam === 'easy') { currentMed = 0; currentHard = 0; }
+                else if (dParam === 'medium') { currentMed = 100; currentHard = 0; }
+                else if (dParam === 'hard') { currentMed = 0; currentHard = 100; }
+            }
+
+            if (isNaN(currentMed) || currentMed < 0) currentMed = 0;
+            if (isNaN(currentHard) || currentHard < 0) currentHard = 0;
+            if (currentMed + currentHard > 100) currentHard = 100 - currentMed;
+            currentEasy = 100 - currentMed - currentHard;
+
+            function updateStartUrl() {
+                var qb = 100 - currentAi;
+                startBtn.href = './chappfafm.html?chapter=' + currentChap.id + '&ai_pct=' + currentAi + '&qb_pct=' + qb +
+                    '&diff_easy=' + currentEasy + '&diff_med=' + currentMed + '&diff_hard=' + currentHard;
+            }
+
+            function updateRatioUI(aiVal) {
+                currentAi = parseInt(aiVal, 10);
+                if (isNaN(currentAi)) currentAi = 50;
+                var qb = 100 - currentAi;
+
+                slider.value = currentAi;
+                qbDisplay.textContent = qb + '%';
+                aiDisplay.textContent = currentAi + '%';
+                qbBar.style.width = qb + '%';
+                aiBar.style.width = currentAi + '%';
+
+                try {
+                    localStorage.setItem('afm_chap_ai_pct', String(currentAi));
+                    localStorage.setItem('afm_chap_qb_pct', String(qb));
+                } catch (e) { }
+
+                presetBtns.forEach(function (btn) {
+                    var btnAi = parseInt(btn.getAttribute('data-ai'), 10);
+                    btn.classList.toggle('active', btnAi === currentAi);
+                });
+
+                if (currentAi === 100) {
+                    compNote.innerHTML = '<strong>Chapter Paper Composition:</strong> 100% AI Bank. All Case Scenario MCQs (15 Marks) and Descriptive Questions (60 Marks pool) will be generated exclusively from this chapter\'s AI Bank.';
+                } else if (currentAi === 0) {
+                    compNote.innerHTML = '<strong>Chapter Paper Composition:</strong> 100% Question Bank. All questions will be drawn exclusively from past ICAI Mock Test Papers and Study Material for this chapter.';
+                } else {
+                    var approxAiDesc = Math.round(60 * (currentAi / 100));
+                    var approxQbDesc = 60 - approxAiDesc;
+                    var aiCases = (currentAi >= 67) ? 2 : (currentAi <= 33 ? 1 : '1-2');
+                    var qbCases = (currentAi >= 67) ? 1 : (currentAi <= 33 ? 2 : '1-2');
+                    compNote.innerHTML = '<strong>Chapter Paper Composition:</strong> ' + qb + '% Question Bank & ' + currentAi + '% AI Bank.<br>' +
+                        '• MCQs: ' + qbCases + ' case(s) from Question Bank & ' + aiCases + ' case(s) from AI Bank.<br>' +
+                        '• Descriptive: ~' + approxQbDesc + ' Marks from Question Bank & ~' + approxAiDesc + ' Marks from AI Bank.';
+                }
+
+                updateStartUrl();
+            }
+
+            function updateDiffUI(med, hard) {
+                med = parseInt(med, 10);
+                hard = parseInt(hard, 10);
+                if (isNaN(med) || med < 0) med = 0;
+                if (isNaN(hard) || hard < 0) hard = 0;
+                if (med + hard > 100) hard = 100 - med;
+
+                var easy = 100 - med - hard;
+
+                currentMed = med;
+                currentHard = hard;
+                currentEasy = easy;
+
+                medSlider.value = med;
+                hardSlider.value = hard;
+
+                diffEasyDisplay.textContent = easy + '%';
+                diffMedDisplay.textContent = med + '%';
+                diffHardDisplay.textContent = hard + '%';
+
+                diffBarEasy.style.width = easy + '%';
+                diffBarMed.style.width = med + '%';
+                diffBarHard.style.width = hard + '%';
+
+                medSliderVal.textContent = med + '%';
+                hardSliderVal.textContent = hard + '%';
+
+                residualEasyFormula.textContent = '100% - ' + med + '% - ' + hard + '%';
+                residualEasyVal.textContent = '= ' + easy + '% Easy';
+
+                try {
+                    localStorage.setItem('afm_chap_diff_med', String(med));
+                    localStorage.setItem('afm_chap_diff_hard', String(hard));
+                    localStorage.setItem('afm_chap_diff_easy', String(easy));
+                } catch (e) { }
+
+                diffPresetBtns.forEach(function (btn) {
+                    var preset = btn.getAttribute('data-preset');
+                    var isActive = false;
+                    if (preset === 'easy' && easy === 100 && med === 0 && hard === 0) isActive = true;
+                    else if (preset === 'med' && med === 100 && easy === 0 && hard === 0) isActive = true;
+                    else if (preset === 'hard' && hard === 100 && easy === 0 && med === 0) isActive = true;
+                    else if (preset === 'balanced' && easy === 34 && med === 33 && hard === 33) isActive = true;
+                    else if (preset === 'realistic' && easy === 20 && med === 50 && hard === 30) isActive = true;
+                    btn.classList.toggle('active', isActive);
+                });
+
+                if (easy === 100) {
+                    diffNote.innerHTML = '<strong>AI Difficulty Breakdown:</strong> 100% Easy. All AI Bank questions will be selected from the Easy difficulty tier.';
+                } else if (med === 100) {
+                    diffNote.innerHTML = '<strong>AI Difficulty Breakdown:</strong> 100% Medium. All AI Bank questions will be selected from the Medium difficulty tier.';
+                } else if (hard === 100) {
+                    diffNote.innerHTML = '<strong>AI Difficulty Breakdown:</strong> 100% Hard. All AI Bank questions will be selected from the Hard analytical difficulty tier.';
+                } else {
+                    diffNote.innerHTML = '<strong>AI Difficulty Breakdown:</strong> ' + easy + '% Easy, ' + med + '% Medium, and ' + hard + '% Hard. Easy questions form the ' + easy + '% residual balance.';
+                }
+
+                updateStartUrl();
+            }
+
+            slider.addEventListener('input', function () {
+                updateRatioUI(slider.value);
+            });
+
+            presetBtns.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var targetAi = parseInt(btn.getAttribute('data-ai'), 10);
+                    updateRatioUI(targetAi);
+                });
+            });
+
+            medSlider.addEventListener('input', function () {
+                var medVal = parseInt(medSlider.value, 10);
+                if (medVal + currentHard > 100) {
+                    currentHard = 100 - medVal;
+                }
+                updateDiffUI(medVal, currentHard);
+            });
+
+            hardSlider.addEventListener('input', function () {
+                var hardVal = parseInt(hardSlider.value, 10);
+                if (hardVal + currentMed > 100) {
+                    currentMed = 100 - hardVal;
+                }
+                updateDiffUI(currentMed, hardVal);
+            });
+
+            diffPresetBtns.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var preset = btn.getAttribute('data-preset');
+                    if (preset === 'easy') updateDiffUI(0, 0);
+                    else if (preset === 'med') updateDiffUI(100, 0);
+                    else if (preset === 'hard') updateDiffUI(0, 100);
+                    else if (preset === 'balanced') updateDiffUI(33, 33);
+                    else if (preset === 'realistic') updateDiffUI(50, 30);
+                });
+            });
+
+            // Initialize
+            updateChapterDisplay(currentChap);
+            updateRatioUI(currentAi);
+            updateDiffUI(currentMed, currentHard);
+        })();
+    </script>
+
+</body>
+
+</html>

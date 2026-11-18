@@ -901,6 +901,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.calciumnotes.com/bin/exam/final/afm/chapgate.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.calciumnotes.com/bin/exam/final/afm/chappfafm.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.calciumnotes.com/bin/exam/final/audit/eaud.html</loc>
     <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>

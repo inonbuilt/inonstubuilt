@@ -38,19 +38,20 @@ const ICAI_WEIGHTS = {
 // --- Session Storage Helpers ---
 function getSessionSeenSet(key) {
     try {
-        const raw = sessionStorage.getItem(key);
-        return raw ? new Set(JSON.parse(raw)) : new Set();
-    } catch (e) {
-        return new Set();
-    }
+        if (typeof sessionStorage !== 'undefined') {
+            const raw = sessionStorage.getItem(key);
+            return raw ? new Set(JSON.parse(raw)) : new Set();
+        }
+    } catch (e) {}
+    return new Set();
 }
 
 function saveSessionSeenSet(key, setObj) {
     try {
-        sessionStorage.setItem(key, JSON.stringify(Array.from(setObj)));
-    } catch (e) {
-        console.warn("SessionStorage unavailable:", e);
-    }
+        if (typeof sessionStorage !== 'undefined') {
+            sessionStorage.setItem(key, JSON.stringify(Array.from(setObj)));
+        }
+    } catch (e) {}
 }
 
 // Generates a normalized text fingerprint so identical questions across different MTPs aren't repeated
@@ -92,10 +93,14 @@ function debounce(func, wait) {
     };
 }
 
+function pad2(num) {
+    return Number(num) < 10 ? '0' + Number(num) : String(num);
+}
+
 function getCurrentExamDate() {
     const today = new Date();
-    const day = String(today.getDate()).padStart(2, '0');
-    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const day = pad2(today.getDate());
+    const month = pad2(today.getMonth() + 1);
     const year = today.getFullYear();
     return `${day}-${month}-${year}`;
 }
@@ -266,7 +271,10 @@ function splitHtmlIntoElements(htmlString) {
             const isBlock = blockTags.includes(node.tagName);
             if (node.classList && node.classList.contains('no-split')) {
                 elements.push(node.outerHTML);
-                if (isBlock) elements.push(`<div style="display:block; height:10px; width:100%;"></div>`);
+                if (isBlock) {
+                    const spacerHeight = node.classList.contains('case-bullet') ? '4px' : '10px';
+                    elements.push(`<div style="display:block; height:${spacerHeight}; width:100%;"></div>`);
+                }
             } 
             else if (node.tagName === 'TABLE') {
                 elements = elements.concat(splitTableIntoElements(node));
@@ -323,8 +331,12 @@ function getQuestionWeight(q) {
     if (!q.chapter_name) return 10;
     const chapters = Array.isArray(q.chapter_name) ? q.chapter_name : [q.chapter_name];
     let maxWeight = 5;
-    for (let ch of chapters) {
-        for (let [key, val] of Object.entries(ICAI_WEIGHTS)) {
+    for (let i = 0; i < chapters.length; i++) {
+        let ch = chapters[i];
+        let keys = Object.keys(ICAI_WEIGHTS);
+        for (let j = 0; j < keys.length; j++) {
+            let key = keys[j];
+            let val = ICAI_WEIGHTS[key];
             if (ch.toLowerCase().includes(key.toLowerCase()) || key.toLowerCase().includes(ch.toLowerCase())) {
                 if (val > maxWeight) maxWeight = val;
             }
@@ -344,123 +356,499 @@ function pickWeightedQuestion(candidates) {
     return candidates[candidates.length - 1];
 }
 
-function pickSessionMCQs(pool, count = 3) {
-    if (!Array.isArray(pool) || pool.length === 0) return [];
+function sampleDifficulty(easyPct = 34, medPct = 33, hardPct = 33) {
+    let rand = Math.random() * 100;
+    if (rand < hardPct) return 'hard';
+    if (rand < hardPct + medPct) return 'medium';
+    return 'easy';
+}
+
+function getExamDistribution() {
+    let aiPct = 50;
+    let diffEasy = 34;
+    let diffMed = 33;
+    let diffHard = 33;
+
+    try {
+        let aiParam = null;
+        let easyParam = null;
+        let medParam = null;
+        let hardParam = null;
+
+        if (typeof URLSearchParams !== 'undefined') {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('ai_pct')) aiParam = urlParams.get('ai_pct');
+            if (urlParams.has('diff_easy')) easyParam = urlParams.get('diff_easy');
+            if (urlParams.has('diff_med')) medParam = urlParams.get('diff_med');
+            if (urlParams.has('diff_hard')) hardParam = urlParams.get('diff_hard');
+            if (urlParams.has('difficulty')) {
+                const diffMode = (urlParams.get('difficulty') || '').toLowerCase();
+                if (diffMode === 'easy') { easyParam = '100'; medParam = '0'; hardParam = '0'; }
+                else if (diffMode === 'medium') { easyParam = '0'; medParam = '100'; hardParam = '0'; }
+                else if (diffMode === 'hard') { easyParam = '0'; medParam = '0'; hardParam = '100'; }
+            }
+        }
+        if (aiParam === null && window.location && window.location.search) {
+            const match = window.location.search.match(/[?&]ai_pct=([^&]*)/);
+            if (match) aiParam = decodeURIComponent(match[1]);
+        }
+        if (medParam === null && window.location && window.location.search) {
+            const match = window.location.search.match(/[?&]diff_med=([^&]*)/);
+            if (match) medParam = decodeURIComponent(match[1]);
+        }
+        if (hardParam === null && window.location && window.location.search) {
+            const match = window.location.search.match(/[?&]diff_hard=([^&]*)/);
+            if (match) hardParam = decodeURIComponent(match[1]);
+        }
+        if (easyParam === null && window.location && window.location.search) {
+            const match = window.location.search.match(/[?&]diff_easy=([^&]*)/);
+            if (match) easyParam = decodeURIComponent(match[1]);
+        }
+
+        if (aiParam !== null) {
+            aiPct = parseInt(aiParam, 10);
+        } else {
+            const saved = localStorage.getItem('afm_exam_ai_pct');
+            if (saved !== null) aiPct = parseInt(saved, 10);
+        }
+
+        if (medParam !== null) {
+            diffMed = parseInt(medParam, 10);
+        } else {
+            const savedMed = localStorage.getItem('afm_diff_med');
+            if (savedMed !== null) diffMed = parseInt(savedMed, 10);
+        }
+
+        if (hardParam !== null) {
+            diffHard = parseInt(hardParam, 10);
+        } else {
+            const savedHard = localStorage.getItem('afm_diff_hard');
+            if (savedHard !== null) diffHard = parseInt(savedHard, 10);
+        }
+
+        if (easyParam !== null) {
+            diffEasy = parseInt(easyParam, 10);
+        } else {
+            const savedEasy = localStorage.getItem('afm_diff_easy');
+            if (savedEasy !== null) diffEasy = parseInt(savedEasy, 10);
+            else diffEasy = 100 - (diffMed + diffHard);
+        }
+    } catch (e) {
+        aiPct = 50;
+        diffEasy = 34;
+        diffMed = 33;
+        diffHard = 33;
+    }
+
+    if (isNaN(aiPct) || aiPct < 0) aiPct = 0;
+    if (aiPct > 100) aiPct = 100;
+
+    if (isNaN(diffMed) || diffMed < 0) diffMed = 0;
+    if (isNaN(diffHard) || diffHard < 0) diffHard = 0;
+    if (diffMed + diffHard > 100) {
+        let total = diffMed + diffHard;
+        diffMed = Math.round((diffMed / total) * 100);
+        diffHard = 100 - diffMed;
+    }
+    diffEasy = Math.max(0, 100 - diffMed - diffHard);
+
+    return {
+        aiPct: aiPct,
+        qbPct: 100 - aiPct,
+        diffEasy: diffEasy,
+        diffMed: diffMed,
+        diffHard: diffHard
+    };
+}
+
+let currentExamDistribution = { aiPct: 50, qbPct: 50, diffEasy: 34, diffMed: 33, diffHard: 33 };
+
+const AFM_CHAPTER_METADATA = [
+    { num: 1, name: "Financial Policy and Corporate Strategy", section: 1, theoryTier: 1, weight: 6 },
+    { num: 2, name: "Risk Management", section: 1, theoryTier: 1, weight: 4 },
+    { num: 3, name: "Advanced Capital Budgeting Decisions", section: 1, theoryTier: 2, weight: 8 },
+    { num: 4, name: "Security Analysis", section: 2, theoryTier: 2, weight: 6 },
+    { num: 5, name: "Security Valuation", section: 2, theoryTier: 3, weight: 10 },
+    { num: 6, name: "Portfolio Management", section: 2, theoryTier: 3, weight: 12 },
+    { num: 7, name: "Securitization", section: 3, theoryTier: 1, weight: 6 },
+    { num: 8, name: "Mutual Funds", section: 3, theoryTier: 3, weight: 8 },
+    { num: 9, name: "Derivatives Analysis and Valuation", section: 3, theoryTier: 3, weight: 12 },
+    { num: 10, name: "Foreign Exchange Exposure and Risk Management", section: 4, theoryTier: 3, weight: 14 },
+    { num: 11, name: "International Financial Management", section: 4, theoryTier: 2, weight: 6 },
+    { num: 12, name: "Interest Rate Risk Management", section: 4, theoryTier: 2, weight: 6 },
+    { num: 13, name: "Business Valuation", section: 5, theoryTier: 3, weight: 6 },
+    { num: 14, name: "Mergers, Acquisitions and Corporate Restructuring", section: 5, theoryTier: 2, weight: 8 },
+    { num: 15, name: "Startup Finance", section: 6, theoryTier: 1, weight: 4 }
+];
+
+function identifyAfmChapter(q) {
+    if (!q) return AFM_CHAPTER_METADATA[0];
+    const text = ((q.chapter_name || "") + " " + (q.chapter || "") + " " + (q.question_id || "") + " " + (q.question_html || "").substring(0, 300)).toLowerCase();
+    if (/startup|venture capital|angel investor|pitch deck|unicorn|fintech/i.test(text)) return AFM_CHAPTER_METADATA[14];
+    if (/merger|acquisition|corporate restructuring|takeover|swap ratio|demerger/i.test(text)) return AFM_CHAPTER_METADATA[13];
+    if (/business valuation|corporate valuation|fcff|fcfe|economic value added|\beva\b/i.test(text)) return AFM_CHAPTER_METADATA[12];
+    if (/interest rate risk|interest rate swap|\bfra\b|forward rate agreement|\bcap\b|\bfloor\b|\bcollar\b/i.test(text)) return AFM_CHAPTER_METADATA[11];
+    if (/international financial|international capital|nostro|vostro|\badr\b|\bgdr\b|eurobond/i.test(text)) return AFM_CHAPTER_METADATA[10];
+    if (/foreign exchange|forex|cross rate|currency swap|exchange rate/i.test(text)) return AFM_CHAPTER_METADATA[9];
+    if (/derivatives analysis|\bderivatives\b|\boptions\b|\bfutures\b|black.scholes|\bgreeks\b|\bcds\b/i.test(text)) return AFM_CHAPTER_METADATA[8];
+    if (/mutual fund|\bnav\b|side pocketing|expense ratio/i.test(text)) return AFM_CHAPTER_METADATA[7];
+    if (/securiti|tokenization|\bcdo\b|pass.through|tranche/i.test(text)) return AFM_CHAPTER_METADATA[6];
+    if (/portfolio|capm|capital asset pricing|tracking error|\bbeta\b|arbitrage pricing|\bapt\b|treynor|sharpe/i.test(text)) return AFM_CHAPTER_METADATA[5];
+    if (/security valuation|bond valuation|bond refunding|dividend discount|dividend valuation|convertible|fixed income|sustainable growth/i.test(text)) return AFM_CHAPTER_METADATA[4];
+    if (/security analysis|fundamental analysis|technical analysis|economic analysis|moving average|\bema\b|dow theory|elliott wave/i.test(text)) return AFM_CHAPTER_METADATA[3];
+    if (/capital budgeting|real options|certainty equivalent|sensitivity analysis/i.test(text)) return AFM_CHAPTER_METADATA[2];
+    if (/risk management|value at risk|\bvar\b|credit risk|enterprise risk/i.test(text)) return AFM_CHAPTER_METADATA[1];
+    if (/financial policy|corporate strategy|strategic financial/i.test(text)) return AFM_CHAPTER_METADATA[0];
+    return AFM_CHAPTER_METADATA[0];
+}
+
+function identifyCaseChapter(cs) {
+    if (!cs) return AFM_CHAPTER_METADATA[0];
+    const chs = (cs.case_chapter || []).join(" ") + " " + (cs.chapter || "") + " " + (cs.caseText || "").substring(0, 300);
+    const text = chs.toLowerCase();
+    if (/startup|venture capital|angel investor|pitch deck|unicorn|fintech/i.test(text)) return AFM_CHAPTER_METADATA[14];
+    if (/merger|acquisition|corporate restructuring|takeover|swap ratio|demerger/i.test(text)) return AFM_CHAPTER_METADATA[13];
+    if (/business valuation|corporate valuation|fcff|fcfe|economic value added|\beva\b/i.test(text)) return AFM_CHAPTER_METADATA[12];
+    if (/interest rate risk|interest rate swap|\bfra\b|forward rate agreement|\bcap\b|\bfloor\b|\bcollar\b/i.test(text)) return AFM_CHAPTER_METADATA[11];
+    if (/international financial|international capital|nostro|vostro|\badr\b|\bgdr\b|eurobond/i.test(text)) return AFM_CHAPTER_METADATA[10];
+    if (/foreign exchange|forex|cross rate|currency swap|exchange rate/i.test(text)) return AFM_CHAPTER_METADATA[9];
+    if (/derivatives analysis|\bderivatives\b|\boptions\b|\bfutures\b|black.scholes|\bgreeks\b|\bcds\b/i.test(text)) return AFM_CHAPTER_METADATA[8];
+    if (/mutual fund|\bnav\b|side pocketing|expense ratio/i.test(text)) return AFM_CHAPTER_METADATA[7];
+    if (/securiti|tokenization|\bcdo\b|pass.through|tranche/i.test(text)) return AFM_CHAPTER_METADATA[6];
+    if (/portfolio|capm|capital asset pricing|tracking error|\bbeta\b|arbitrage pricing|\bapt\b|treynor|sharpe/i.test(text)) return AFM_CHAPTER_METADATA[5];
+    if (/security valuation|bond valuation|bond refunding|dividend discount|dividend valuation|convertible|fixed income|sustainable growth/i.test(text)) return AFM_CHAPTER_METADATA[4];
+    if (/security analysis|fundamental analysis|technical analysis|economic analysis|moving average|\bema\b|dow theory|elliott wave/i.test(text)) return AFM_CHAPTER_METADATA[3];
+    if (/capital budgeting|real options|certainty equivalent|sensitivity analysis/i.test(text)) return AFM_CHAPTER_METADATA[2];
+    if (/risk management|value at risk|\bvar\b|credit risk|enterprise risk/i.test(text)) return AFM_CHAPTER_METADATA[1];
+    if (/financial policy|corporate strategy|strategic financial/i.test(text)) return AFM_CHAPTER_METADATA[0];
+    return AFM_CHAPTER_METADATA[0];
+}
+
+function pickSessionMCQs(qbPool, aiPool, count = 3, aiPct = 50, diffDist = { diffEasy: 34, diffMed: 33, diffHard: 33 }) {
+    if (!Array.isArray(qbPool)) qbPool = [];
+    if (!Array.isArray(aiPool)) aiPool = [];
+
     let seenMcqs = getSessionSeenSet(SESSION_MCQ_KEY);
     let chosen = [];
     let currentPaperSigs = new Set();
-    let unseenPool = shuffleArray(pool.filter(cs => !isItemSeen(cs, seenMcqs)));
-    for (const cs of unseenPool) {
-        if (chosen.length >= count) break;
-        const sig = getItemSignature(cs);
-        if (!currentPaperSigs.has(sig)) { chosen.push(cs); currentPaperSigs.add(sig); }
+    let chosenSections = new Set();
+
+    let targetAiCases = 0;
+    if (aiPct === 100) {
+        targetAiCases = count;
+    } else if (aiPct === 0) {
+        targetAiCases = 0;
+    } else if (aiPct >= 67) {
+        targetAiCases = 2;
+    } else if (aiPct <= 33) {
+        targetAiCases = 1;
+    } else {
+        targetAiCases = (Math.random() * 100 < aiPct) ? 2 : 1;
     }
+    let targetQbCases = count - targetAiCases;
+
+    function pickFromPool(sourcePool, n, sourceLabel, dist) {
+        if (!Array.isArray(sourcePool) || sourcePool.length === 0 || n <= 0) return [];
+        let taggedPool = sourcePool.map(cs => Object.assign({}, cs, { _sourceBank: sourceLabel, _meta: identifyCaseChapter(cs) }));
+        let unseen = shuffleArray(taggedPool.filter(cs => !isItemSeen(cs, seenMcqs)));
+        let picked = [];
+
+        for (let k = 0; k < n; k++) {
+            let targetDiff = (sourceLabel === 'AI Bank' && dist)
+                ? sampleDifficulty(dist.diffEasy, dist.diffMed, dist.diffHard)
+                : null;
+
+            // Prioritize picking a case from an unrepresented ICAI section to ensure broad syllabus coverage
+            let candidate = null;
+            if (targetDiff) {
+                candidate = unseen.find(cs => {
+                    let d = (cs.difficulty || cs.diffuculty || '').toLowerCase();
+                    let sec = cs._meta ? cs._meta.section : 1;
+                    return d === targetDiff && !currentPaperSigs.has(getItemSignature(cs)) && !chosenSections.has(sec);
+                });
+                if (!candidate) {
+                    candidate = unseen.find(cs => {
+                        let d = (cs.difficulty || cs.diffuculty || '').toLowerCase();
+                        return d === targetDiff && !currentPaperSigs.has(getItemSignature(cs));
+                    });
+                }
+            }
+            if (!candidate) {
+                candidate = unseen.find(cs => {
+                    let sec = cs._meta ? cs._meta.section : 1;
+                    return !currentPaperSigs.has(getItemSignature(cs)) && !chosenSections.has(sec);
+                });
+            }
+            if (!candidate) {
+                candidate = unseen.find(cs => !currentPaperSigs.has(getItemSignature(cs)));
+            }
+            if (candidate) {
+                picked.push(candidate);
+                currentPaperSigs.add(getItemSignature(candidate));
+                if (candidate._meta) chosenSections.add(candidate._meta.section);
+                unseen = unseen.filter(cs => cs !== candidate);
+            }
+        }
+
+        if (picked.length < n) {
+            let fallback = shuffleArray(taggedPool);
+            for (let i = 0; i < fallback.length; i++) {
+                let cs = fallback[i];
+                if (picked.length >= n) break;
+                let sig = getItemSignature(cs);
+                if (!currentPaperSigs.has(sig)) {
+                    picked.push(cs);
+                    currentPaperSigs.add(sig);
+                    if (cs._meta) chosenSections.add(cs._meta.section);
+                }
+            }
+        }
+        return picked;
+    }
+
+    let pickedAi = pickFromPool(aiPool, targetAiCases, 'AI Bank', diffDist);
+    let pickedQb = pickFromPool(qbPool, targetQbCases, 'Question Bank', null);
+
+    chosen = shuffleArray(pickedAi.concat(pickedQb));
+
     if (chosen.length < count) {
-        seenMcqs.clear();
-        chosen.forEach(cs => markItemSeen(cs, seenMcqs));
-        let fallbackPool = shuffleArray(pool);
-        for (const cs of fallbackPool) {
+        let combined = qbPool.map(cs => Object.assign({}, cs, { _sourceBank: 'Question Bank', _meta: identifyCaseChapter(cs) }))
+            .concat(aiPool.map(cs => Object.assign({}, cs, { _sourceBank: 'AI Bank', _meta: identifyCaseChapter(cs) })));
+        let fallback = shuffleArray(combined);
+        for (let i = 0; i < fallback.length; i++) {
+            let cs = fallback[i];
             if (chosen.length >= count) break;
-            const sig = getItemSignature(cs);
-            if (!currentPaperSigs.has(sig)) { chosen.push(cs); currentPaperSigs.add(sig); }
+            let sig = getItemSignature(cs);
+            if (!currentPaperSigs.has(sig)) {
+                chosen.push(cs);
+                currentPaperSigs.add(sig);
+            }
         }
     }
+
     chosen.forEach(cs => markItemSeen(cs, seenMcqs));
     saveSessionSeenSet(SESSION_MCQ_KEY, seenMcqs);
     return chosen;
 }
 
+// Helper to determine if a question is theoretical
+function isTheoryQuestion(q) {
+    if (!q) return false;
+    if (q.question_type) {
+        return String(q.question_type).toLowerCase() === 'theory';
+    }
+    return false;
+}
+
 // ==========================================
-// 2. DYNAMIC 40:60 EXAM PAPER GENERATOR (WITH PLACEMENT & REFRESH MEMORY)
+// 2. DYNAMIC EXAM PAPER GENERATOR (ICAI SECTION WEIGHTS & THEORY CONCENTRATION)
 // ==========================================
-function generateRandomPaper() {
+function generateRandomPaper(aiPct = 50, diffDist = { diffEasy: 34, diffMed: 33, diffHard: 33 }) {
     const TOTAL_DESCRIPTIVE_MARKS = 84; 
-    const TARGET_MTP_MARKS = 34;        
-    const MARK_PATTERNS = [[8, 6], [6, 8], [10, 4], [4, 10], [6, 4, 4], [4, 6, 4], [4, 4, 6], [8, 4, 2], [6, 6, 2]];
+    const MAX_THEORY_MARKS = 18; // Maximum theory in descriptive paper is 18 marks (ICAI standard)
+    const MIN_THEORY_MARKS = 10; // Minimum theory marks in descriptive paper
+    const targetAiMarks = Math.round(TOTAL_DESCRIPTIVE_MARKS * (aiPct / 100));
+    const MARK_PATTERNS_NORMAL = [[8, 6], [6, 8], [10, 4], [4, 10], [6, 4, 4], [4, 6, 4], [4, 4, 6], [8, 4, 2], [6, 6, 2]];
+    const MARK_PATTERNS_Q1 = [[8, 6], [10, 4], [7, 7], [6, 8]];
+    const MARK_PATTERNS_Q6 = [[6, 4, 4], [8, 6], [8, 4, 2], [6, 8]];
+
+    // Official ICAI Section Weight Limits across the 84-mark Descriptive Paper:
+    // Section I (Ch 1, 2, 3): 8% - 15% (Target 8 to 16 marks)
+    // Section II (Ch 4, 5, 6): 20% - 30% (Target 14 to 28 marks)
+    // Section III (Ch 7, 8, 9): 20% - 30% (Target 14 to 28 marks)
+    // Section IV (Ch 10, 11, 12): 20% - 25% (Target 14 to 26 marks)
+    // Section V (Ch 13, 14): 10% - 15% (Target 8 to 16 marks)
+    // Section VI (Ch 15): 2% - 5% (Target 4 to 8 marks)
+    const SEC_LIMITS = {
+        1: { min: 8, max: 16 },
+        2: { min: 14, max: 28 },
+        3: { min: 14, max: 28 },
+        4: { min: 14, max: 26 },
+        5: { min: 8, max: 16 },
+        6: { min: 4, max: 8 }
+    };
 
     let seenDesc = getSessionSeenSet(SESSION_DESC_KEY);
-    const mtpPool = descriptiveQuestions.map(q => ({ ...q, _source: 'MTP' }));
-    const icaiPool = icaibookData.map(q => ({ ...q, _source: 'ICAI' }));
+    const mtpPool = (typeof descriptiveQuestions !== 'undefined' ? descriptiveQuestions : []).map(q => Object.assign({}, q, { _sourceBank: 'Question Bank', _subSource: 'MTP', _meta: identifyAfmChapter(q) }));
+    const icaiPool = (typeof icaibookData !== 'undefined' ? icaibookData : []).map(q => Object.assign({}, q, { _sourceBank: 'Question Bank', _subSource: 'ICAI', _meta: identifyAfmChapter(q) }));
+    const aiPool = (typeof pfa1_21_17es !== 'undefined' ? pfa1_21_17es : []).map(q => Object.assign({}, q, { _sourceBank: 'AI Bank', _meta: identifyAfmChapter(q) }));
+    const allPool = aiPool.concat(mtpPool).concat(icaiPool);
 
-    for (let attempt = 0; attempt < 500; attempt++) {
-        const strictUnseenOnly = attempt < 350;
+    for (let attempt = 0; attempt < 400; attempt++) {
+        const strictUnseenOnly = attempt < 250;
         let usedIds = new Set();
         let usedSigs = new Set();
         
-        let remainingMtpMarks = TARGET_MTP_MARKS;
+        let remainingAiMarks = targetAiMarks;
         let remainingTotalMarks = TOTAL_DESCRIPTIVE_MARKS;
+        let currentTheoryMarks = 0;
+        let secMarks = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0 };
         let questions = [];
         let success = true;
 
         for (let qNum = 1; qNum <= 6; qNum++) {
-            let pattern = MARK_PATTERNS[Math.floor(Math.random() * MARK_PATTERNS.length)];
+            let patterns = (qNum === 1) ? MARK_PATTERNS_Q1 :
+                           (qNum === 6) ? MARK_PATTERNS_Q6 :
+                           MARK_PATTERNS_NORMAL;
+            let pattern = patterns[Math.floor(Math.random() * patterns.length)];
             let chosenParts = [];
 
-            for (let mark of pattern) {
-                let pMtp = Math.max(0, Math.min(1, remainingMtpMarks / remainingTotalMarks));
-                let preferMtp = Math.random() < pMtp;
+            for (let i = 0; i < pattern.length; i++) {
+                let mark = pattern[i];
+                let pAi = remainingTotalMarks > 0 ? Math.max(0, Math.min(1, remainingAiMarks / remainingTotalMarks)) : 0;
+                let preferAi = (aiPct === 100) ? true : (aiPct === 0) ? false : (Math.random() < pAi);
 
-                let mtpAll = mtpPool.filter(q => getMtpPlacement(q) === qNum && Number(q.marks) === mark && !usedIds.has(q.question_id) && !usedSigs.has(getItemSignature(q)));
-                let icaiAll = icaiPool.filter(q => Number(q.marks) === mark && !usedIds.has(q.question_id) && !usedSigs.has(getItemSignature(q)));
+                // Theory budget check:
+                // Q1 is strictly practical as per ICAI CA Final AFM pattern
+                // Q2-Q5: theory capped at max 6M combined to reserve theory for Q6
+                // Q6: theory sub-parts preferred (from Tier 1 dedicated theory chapters)
+                let theoryBudgetLeft = MAX_THEORY_MARKS - currentTheoryMarks;
+                let allowTheory = (qNum !== 1) && (mark <= theoryBudgetLeft);
+                if (qNum >= 2 && qNum <= 5 && currentTheoryMarks >= 6) {
+                    allowTheory = false;
+                }
+                let isQ6TheoryPart = (qNum === 6 && i > 0 && allowTheory);
 
-                let mtpUnseen = mtpAll.filter(q => !isItemSeen(q, seenDesc));
-                let icaiUnseen = icaiAll.filter(q => !isItemSeen(q, seenDesc));
+                function filterPool(pool) {
+                    return pool.filter(q => {
+                        if (Number(q.marks) !== mark) return false;
+                        if (usedIds.has(q.question_id) || usedSigs.has(getItemSignature(q))) return false;
+                        let isTh = isTheoryQuestion(q);
+                        if (qNum === 1 && isTh) return false;
+                        if (!allowTheory && isTh) return false;
+                        if (isQ6TheoryPart && !isTh) return false;
 
-                let mtpCandidates = strictUnseenOnly ? mtpUnseen : (mtpUnseen.length > 0 ? mtpUnseen : mtpAll);
-                let icaiCandidates = strictUnseenOnly ? icaiUnseen : (icaiUnseen.length > 0 ? icaiUnseen : icaiAll);
+                        let sec = (q._meta && q._meta.section) || 1;
+                        let maxAllowed = SEC_LIMITS[sec].max + (attempt > 150 ? 8 : 0);
+                        if (secMarks[sec] + mark > maxAllowed) return false;
+                        return true;
+                    });
+                }
 
+                let candidates = filterPool(allPool);
+
+                if (candidates.length === 0 && isQ6TheoryPart) {
+                    // Relax section limit for Q6 theory
+                    candidates = allPool.filter(q => {
+                        if (Number(q.marks) !== mark) return false;
+                        if (usedIds.has(q.question_id) || usedSigs.has(getItemSignature(q))) return false;
+                        return isTheoryQuestion(q);
+                    });
+                }
+
+                if (candidates.length === 0) {
+                    candidates = allPool.filter(q => {
+                        if (Number(q.marks) !== mark) return false;
+                        if (usedIds.has(q.question_id) || usedSigs.has(getItemSignature(q))) return false;
+                        let isTh = isTheoryQuestion(q);
+                        if (qNum === 1 && isTh) return false;
+                        if (!allowTheory && isTh) return false;
+                        return true;
+                    });
+                }
+
+                if (candidates.length === 0) { success = false; break; }
+
+                // Selection with Theory Concentration:
                 let candidate = null;
-                if (preferMtp && mtpCandidates.length > 0) {
-                    candidate = mtpCandidates[Math.floor(Math.random() * mtpCandidates.length)];
-                } else if (!preferMtp && icaiCandidates.length > 0) {
-                    candidate = pickWeightedQuestion(icaiCandidates);
-                } else if (mtpCandidates.length > 0) {
-                    candidate = mtpCandidates[Math.floor(Math.random() * mtpCandidates.length)];
-                } else if (icaiCandidates.length > 0) {
-                    candidate = pickWeightedQuestion(icaiCandidates);
+                let thCands = candidates.filter(q => isTheoryQuestion(q));
+                if (isQ6TheoryPart && thCands.length > 0) {
+                    // Concentrating theory from dedicated theory chapters (Tier 1: Ch 1, 15, 7, 2)
+                    let tier1 = thCands.filter(q => q._meta && q._meta.theoryTier === 1);
+                    let tier2 = thCands.filter(q => q._meta && q._meta.theoryTier === 2);
+                    let targetPool = (tier1.length > 0) ? tier1 : (tier2.length > 0 ? tier2 : thCands);
+                    candidate = targetPool[Math.floor(Math.random() * targetPool.length)];
+                } else {
+                    let aiMatches = candidates.filter(q => q._sourceBank === 'AI Bank');
+                    let qbMatches = candidates.filter(q => q._sourceBank !== 'AI Bank');
+                    let poolToUse = (preferAi && aiMatches.length > 0) ? aiMatches : (qbMatches.length > 0 ? qbMatches : candidates);
+
+                    // If a theory question is picked in other questions, still prioritize Tier 1 dedicated theory chapters
+                    let tier1Th = poolToUse.filter(q => isTheoryQuestion(q) && q._meta && q._meta.theoryTier === 1);
+                    if (tier1Th.length > 0 && Math.random() < 0.7) {
+                        candidate = tier1Th[Math.floor(Math.random() * tier1Th.length)];
+                    } else if (preferAi && aiMatches.length > 0) {
+                        let targetDiff = sampleDifficulty(diffDist.diffEasy, diffDist.diffMed, diffDist.diffHard);
+                        let matchedDiff = aiMatches.filter(q => (q.difficulty || q.diffuculty || '').toLowerCase() === targetDiff);
+                        candidate = (matchedDiff.length > 0) ? matchedDiff[Math.floor(Math.random() * matchedDiff.length)] : aiMatches[Math.floor(Math.random() * aiMatches.length)];
+                    } else {
+                        candidate = poolToUse[Math.floor(Math.random() * poolToUse.length)];
+                    }
                 }
 
                 if (!candidate) { success = false; break; }
 
                 usedIds.add(candidate.question_id);
                 usedSigs.add(getItemSignature(candidate));
-                if (candidate._source === 'MTP') { remainingMtpMarks -= mark; }
+                if (candidate._meta) {
+                    secMarks[candidate._meta.section] = (secMarks[candidate._meta.section] || 0) + mark;
+                }
+                if (candidate._sourceBank === 'AI Bank') { remainingAiMarks -= mark; }
                 remainingTotalMarks -= mark;
+                if (isTheoryQuestion(candidate)) {
+                    currentTheoryMarks += mark;
+                }
                 chosenParts.push(candidate);
             }
 
             if (!success) break;
-            questions.push({ placement: qNum, parts: shuffleArray(chosenParts) });
+            questions.push({ placement: qNum, parts: chosenParts });
         }
 
-        let actualMtpMarks = TARGET_MTP_MARKS - remainingMtpMarks;
-        if (success && actualMtpMarks >= 30 && actualMtpMarks <= 38) {
-            if (!strictUnseenOnly) { seenDesc.clear(); }
-            questions.forEach(group => group.parts.forEach(part => markItemSeen(part, seenDesc)));
-            saveSessionSeenSet(SESSION_DESC_KEY, seenDesc);
-            return questions;
+        if (success && currentTheoryMarks >= MIN_THEORY_MARKS && currentTheoryMarks <= MAX_THEORY_MARKS) {
+            let actualAiMarks = targetAiMarks - remainingAiMarks;
+            let acceptable = false;
+            if (aiPct === 100) acceptable = (actualAiMarks >= 70);
+            else if (aiPct === 0) acceptable = (actualAiMarks === 0);
+            else acceptable = Math.abs(actualAiMarks - targetAiMarks) <= 10;
+
+            let q1IsPractical = questions[0].parts.every(p => !isTheoryQuestion(p));
+            let q6HasTheory = questions[5].parts.some(p => isTheoryQuestion(p));
+
+            if (q1IsPractical && (q6HasTheory || attempt > 250) && (acceptable || attempt > 300)) {
+                if (!strictUnseenOnly) { seenDesc.clear(); }
+                questions.forEach(group => group.parts.forEach(part => markItemSeen(part, seenDesc)));
+                saveSessionSeenSet(SESSION_DESC_KEY, seenDesc);
+                return questions;
+            }
         }
     }
 
     seenDesc.clear();
     let fallbackQuestions = [];
     let fallbackUsedSigs = new Set();
+    let fallbackTheoryMarks = 0;
     for (let qNum = 1; qNum <= 6; qNum++) {
-        let mtpAvailable = descriptiveQuestions.filter(q => getMtpPlacement(q) === qNum && !fallbackUsedSigs.has(getItemSignature(q)));
         let parts = [];
-        if (mtpAvailable.length > 0) {
-            let mtpQ = mtpAvailable[Math.floor(Math.random() * mtpAvailable.length)];
-            parts.push(mtpQ);
-            fallbackUsedSigs.add(getItemSignature(mtpQ));
-            let remaining = 14 - (Number(mtpQ.marks) || 0);
-            let icaiMatches = icaibookData.filter(q => Number(q.marks) === remaining && !fallbackUsedSigs.has(getItemSignature(q)));
-            if (icaiMatches.length > 0) {
-                let icaiQ = pickWeightedQuestion(icaiMatches);
-                parts.push(icaiQ);
-                fallbackUsedSigs.add(getItemSignature(icaiQ));
+        let preferAi = (aiPct >= 50);
+        let cand = null;
+        let isQ1 = (qNum === 1);
+        if (preferAi && aiPool.length > 0) {
+            let match = aiPool.filter(q => Number(q.marks) >= 6 && Number(q.marks) <= 10 && !fallbackUsedSigs.has(getItemSignature(q)) && (!isQ1 || !isTheoryQuestion(q)) && (fallbackTheoryMarks + Number(q.marks) <= MAX_THEORY_MARKS || !isTheoryQuestion(q)));
+            if (match.length > 0) cand = match[Math.floor(Math.random() * match.length)];
+        }
+        if (!cand) {
+            let mtpAvailable = mtpPool.filter(q => getMtpPlacement(q) === qNum && !fallbackUsedSigs.has(getItemSignature(q)) && (!isQ1 || !isTheoryQuestion(q)) && (fallbackTheoryMarks + Number(q.marks) <= MAX_THEORY_MARKS || !isTheoryQuestion(q)));
+            if (mtpAvailable.length > 0) cand = mtpAvailable[Math.floor(Math.random() * mtpAvailable.length)];
+        }
+        if (!cand && icaiPool.length > 0) {
+            let icaiAvail = icaiPool.filter(q => !fallbackUsedSigs.has(getItemSignature(q)) && (!isQ1 || !isTheoryQuestion(q)) && (fallbackTheoryMarks + Number(q.marks) <= MAX_THEORY_MARKS || !isTheoryQuestion(q)));
+            if (icaiAvail.length > 0) cand = icaiAvail[Math.floor(Math.random() * icaiAvail.length)];
+        }
+        if (cand) {
+            parts.push(cand);
+            fallbackUsedSigs.add(getItemSignature(cand));
+            if (isTheoryQuestion(cand)) fallbackTheoryMarks += Number(cand.marks) || 0;
+            let remaining = 14 - (Number(cand.marks) || 0);
+            let secondMatch = icaiPool.concat(aiPool).filter(q => Number(q.marks) === remaining && !fallbackUsedSigs.has(getItemSignature(q)) && (!isQ1 || !isTheoryQuestion(q)) && (fallbackTheoryMarks + remaining <= MAX_THEORY_MARKS || !isTheoryQuestion(q)));
+            if (secondMatch.length > 0) {
+                let secondQ = secondMatch[Math.floor(Math.random() * secondMatch.length)];
+                parts.push(secondQ);
+                fallbackUsedSigs.add(getItemSignature(secondQ));
+                if (isTheoryQuestion(secondQ)) fallbackTheoryMarks += remaining;
             }
         }
-        fallbackQuestions.push({ placement: qNum, parts: shuffleArray(parts) });
+        fallbackQuestions.push({ placement: qNum, parts: parts });
     }
     fallbackQuestions.forEach(group => group.parts.forEach(part => markItemSeen(part, seenDesc)));
     saveSessionSeenSet(SESSION_DESC_KEY, seenDesc);
@@ -471,11 +859,15 @@ function generateRandomPaper() {
 // 3. INITIALIZATION & DATA RENDERING
 // ==========================================
 document.addEventListener("DOMContentLoaded", () => {
-    if (typeof mcqData !== 'undefined') {
-        selectedMCQs = pickSessionMCQs(mcqData, 3);
+    currentExamDistribution = getExamDistribution();
+
+    if (typeof mcqData !== 'undefined' || typeof pf1_21_130317 !== 'undefined') {
+        const qbCases = (typeof mcqData !== 'undefined' && Array.isArray(mcqData)) ? mcqData : [];
+        const aiCases = (typeof pf1_21_130317 !== 'undefined' && Array.isArray(pf1_21_130317)) ? pf1_21_130317 : [];
+        selectedMCQs = pickSessionMCQs(qbCases, aiCases, 3, currentExamDistribution.aiPct, currentExamDistribution);
     }
-    if (typeof descriptiveQuestions !== 'undefined' && typeof icaibookData !== 'undefined') {
-        selectedDescriptive = generateRandomPaper();
+    if (typeof descriptiveQuestions !== 'undefined' || typeof icaibookData !== 'undefined' || typeof pfa1_21_17es !== 'undefined') {
+        selectedDescriptive = generateRandomPaper(currentExamDistribution.aiPct, currentExamDistribution);
     }
     generateExamData(); 
     renderBookPages();  
@@ -494,17 +886,24 @@ function generateExamData() {
         <ul class="instructions">
             <li>Part I: Objective Type Questions (30 Marks).</li>
             <li>Part II: Descriptive Answers (70 Marks). Question 1 is compulsory.</li>
-            <li>Duration of the examination is 3 hours.</li>
+            <li>Duration of the examination is 3 hours (180 Minutes).</li>
+            <li>Working notes should form part of the respective answers.</li>
+            <li>Appropriate assumptions should be stated clearly, wherever necessary.</li>
         </ul>
     `);
 
     if (selectedMCQs.length > 0) {
+        rawExamElements.push(`
+            <div class="header-center section-divider no-split" style="margin: 25px 0 15px 0; font-size: 15px; font-weight: bold; border-top: 2px solid #0f172a; padding-top: 12px; text-transform: uppercase;">
+                PART I &ndash; MULTIPLE CHOICE QUESTIONS (30 MARKS)
+            </div>
+        `);
         selectedMCQs.forEach((block, bIdx) => {
-            rawExamElements.push(`<h3 class="no-split" style="color:#2563eb; border-bottom:1px solid #ccc; padding-bottom:5px; margin-top:15px; display:block;">Case Study ${bIdx + 1}</h3>`);
-            rawExamElements = rawExamElements.concat(splitHtmlIntoElements(sanitizeInsertedMathHtml(block.caseText)));
+            rawExamElements.push(`<h3 class="no-split" style="color:#0f172a; border-bottom:1.5px solid #0f172a; padding-bottom:4px; margin-top:18px; margin-bottom:10px; font-size:15px; font-weight:bold; display:block; letter-spacing:0.5px;">CASE SCENARIO ${bIdx + 1}</h3>`);
+            rawExamElements = rawExamElements.concat(splitHtmlIntoElements(prepareCaseStudyHtml(block.caseText)));
             block.questions.forEach((q, qIdx) => {
                 rawExamElements.push(`<div class="mcq-item no-split" data-qid="${q.question_id}" style="height:14px; display:block;"></div>`);
-                splitPlainTextForPagination(sanitizeInsertedMathHtml(q.question)).forEach((chunk, chunkIdx) => {
+                splitPlainTextForPagination(formatQuestionText(q.question)).forEach((chunk, chunkIdx) => {
                     const label = chunkIdx === 0 ? `<strong>Q${qIdx+1}:</strong> ` : "";
                     rawExamElements.push(`<span class="mcq-question-text" data-qid="${q.question_id}" style="display:inline; line-height:1.5; font-size:calc(15px * var(--font-scale));">${label}${chunk} </span>`);
                 });
@@ -515,15 +914,23 @@ function generateExamData() {
                     rawExamElements.push(optionHtml);
                 });
                 if (examCompleted) {
-                    rawExamElements.push(`<div class="solution-box no-split" style="margin-bottom:15px; display:block;">Correct Answer: ${sanitizeInsertedMathHtml(q.options[q.answer])}</div>`);
+                    const explHtml = q.explanation ? `<br><span style="font-size:13px; color:#475569; margin-top:6px; display:block; line-height:1.45;"><strong>Explanation:</strong> ${formatExplanationHtml(q.explanation)}</span>` : "";
+                    rawExamElements.push(`<div class="solution-box no-split" style="margin-bottom:15px; display:block;"><strong>Correct Answer:</strong> Option ${String.fromCharCode(65 + q.answer)} &ndash; ${sanitizeInsertedMathHtml(q.options[q.answer])}${explHtml}</div>`);
                 }
             });
         });
     }
 
     if (selectedDescriptive.length > 0) {
+        rawExamElements.push(`
+            <div class="header-center section-divider no-split" style="margin: 30px 0 15px 0; font-size: 15px; font-weight: bold; border-top: 2px solid #0f172a; padding-top: 14px; text-transform: uppercase;">
+                PART II &ndash; DESCRIPTIVE QUESTIONS (70 MARKS)<br>
+                <span style="font-size: 13px; font-weight: normal; color: #475569;">Question 1 is compulsory. Answer any four from Questions 2 to 6.</span>
+            </div>
+        `);
         selectedDescriptive.forEach(group => {
-            rawExamElements.push(`<h3 class="no-split" style="color:#2563eb; border-bottom:1px solid #ccc; padding-bottom:5px; margin-top:25px; display:block;">Question ${group.placement}</h3>`);
+            const compLabel = group.placement === 1 ? " (Compulsory)" : "";
+            rawExamElements.push(`<h3 class="no-split" style="color:#0f172a; border-bottom:1.5px solid #0f172a; padding-bottom:4px; margin-top:22px; margin-bottom:8px; font-size:15px; font-weight:bold; display:block;">Question ${group.placement}${compLabel}</h3>`);
             group.parts.forEach((part, index) => {
                 const label = group.parts.length > 1 ? `<strong>(${String.fromCharCode(97 + index)})</strong> ` : "";
                 if (!examCompleted) {
@@ -559,13 +966,120 @@ function sanitizeInsertedMathHtml(html = "") {
         .replace(/`+/g, '')
         .trim();
 
-    // Protect currency patterns so they are not mistaken for math delimiters (without touching $$)
-    clean = clean.replace(/\b(US|HK|AU|CAD|SGD|NZ|S)\s*\$(?!\$)/gi, '<span class="no-math">$1$</span>');
-    clean = clean.replace(/(\/|\bper\s*)\$(?!\$)/gi, '$1<span class="no-math">$</span>');
-    clean = clean.replace(/(?<!\$)\$(\s*\/)/gi, '<span class="no-math">$</span>$1');
-    clean = clean.replace(/(?<!\$)\$(\s*[\d,]+(?:\.\d+)?(?!\s*[\\+=_^\-a-zA-Z]))(?!\$)/g, '<span class="no-math">$</span>$1');
+    // Strip any difficulty/topic badge divs and question titles to ensure pure exam content
+    clean = clean.replace(/<div style="margin-bottom:\s*8px;">\s*<span[^>]*>[^<]*?(?:DIFFICULTY|Difficulty)[^<]*?<\/span>[\s\S]*?<\/div>\s*/gi, '');
+    clean = clean.replace(/<p><strong>Case\s*(?:Scenario|Study|Sinario):[^<]*<\/strong><\/p>\s*/gi, '');
+
+    // 1. Normalize literal \r\n and \n into real newlines
+    clean = clean.replace(/\\r\\n|\\n/g, '\n');
+
+    const mathTokens = [];
+    function pushToken(m) {
+        mathTokens.push(m);
+        return `___MATH_TOKEN_${mathTokens.length - 1}___`;
+    }
+
+    // 2. Temporarily protect existing properly-delimited display and inline math:
+    // $$...$$, \[...\], and \(...\)
+    clean = clean.replace(/(\$\$[\s\S]*?\$\$|\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\))/g, pushToken);
+
+    // 3. Handle escaped LaTeX math: \$...\$
+    clean = clean.replace(/\\\$([^\$\n\r]+?)\\\$/g, (match, expr) => {
+        let trimmed = expr.trim();
+        if (/^\d[\d,]*(?:\.\d+)?(?:\s*(?:Billion|Million|Trillion|Crore|Lakh|lakhs|Lakhs|Cr))?$/i.test(trimmed)) {
+            return `<span class="no-math">$</span>${trimmed}`;
+        }
+        return pushToken(`\\(${trimmed}\\)`);
+    });
+
+    // 4. Handle paired inline math: $...$
+    clean = clean.replace(/\$([^\$\n\r]+?)\$/g, (match, expr) => {
+        let trimmed = expr.trim();
+        if (/^\d[\d,]*(?:\.\d+)?(?:\s*(?:Billion|Million|Trillion|Crore|Lakh|lakhs|Lakhs|Cr))?$/i.test(trimmed)) {
+            return `<span class="no-math">$</span>${trimmed}`;
+        }
+        if (/^\d[\d,]*(?:\.\d+)?\s*\/\s*\$?\s*\d[\d,]*(?:\.\d+)?$/.test(trimmed)) {
+            return `<span class="no-math">$</span>${trimmed}`;
+        }
+        return pushToken(`\\(${trimmed}\\)`);
+    });
+
+    // 5. Multi-currency slash or range patterns:
+    clean = clean.replace(/\\?\$\s*(\d[\d,]*(?:\.\d+)?)\s*\/\s*\\?\$\s*(\d[\d,]*(?:\.\d+)?)/g, '<span class="no-math">$$</span>$1 / <span class="no-math">$$</span>$2');
+
+    // 6. Currency with prefix (US$, CAD$, AUD$, SGD$, HK$, NZ$)
+    clean = clean.replace(/\b(US|HK|AU|CAD|SGD|NZ)\s*\\?\$(?!\$)/gi, '<span class="no-math">$1$</span>');
+    clean = clean.replace(/\bS\s*\\?\$(?=\s*[\d,])/g, '<span class="no-math">S$</span>');
+
+    // 7. Protect "/ $" or "per $"
+    clean = clean.replace(/(\/|\bper\s*)\\?\$(?!\$)/gi, '$1<span class="no-math">$</span>');
+    clean = clean.replace(/(?:^|[^\$a-zA-Z0-9_\\])\\?\$\s*(\/)/g, '$1<span class="no-math">$</span>');
+
+    // 8. Protect numeric currency amounts
+    clean = clean.replace(/\\?\$\s*(\d[\d,]*(?:\.\d+)?(?:\s*(?:Billion|Million|Trillion|Crore|Lakh|lakhs|Lakhs|Cr|per\s+[a-zA-Z]+|cents|ton|bushel|shares|par|spot))?)/gi, (match, p1) => {
+        return `<span class="no-math">$</span>${p1}`;
+    });
+
+    // 9. Any remaining standalone \$ or bare $ is just currency symbol
+    clean = clean.replace(/\\?\$/g, '<span class="no-math">$</span>');
+
+    // 10. Restore protected math blocks
+    clean = clean.replace(/___MATH_TOKEN_(\d+)___/g, (match, idx) => mathTokens[idx]);
 
     return clean;
+}
+
+function prepareCaseStudyHtml(caseText) {
+    if (!caseText || typeof caseText !== 'string') return '';
+    let text = sanitizeInsertedMathHtml(caseText);
+
+    // Strip any leading Case Scenario / Case Study heading so direct content is rendered
+    text = text.replace(/^(?:<p>)?(?:<strong>|<b>)?\s*Case\s*(?:Scenario|Study|Sinario)\s*:[^<\n]*(?:<\/strong>|<\/b>)?(?:<\/p>)?\s*/i, '');
+
+    // If it already contains block HTML tags (<p>, <div>, <table>, <ul>, <ol>, etc.), return as is
+    if (/<(?:p|div|table|ul|ol|h[1-6]|blockquote)\b/i.test(text)) {
+        return text;
+    }
+
+    // Split into paragraphs by double newlines (\n\s*\n+)
+    const paragraphs = text.split(/\n\s*\n+/);
+    const htmlBlocks = [];
+
+    paragraphs.forEach(para => {
+        let trimmed = para.trim();
+        if (!trimmed) return;
+
+        let lines = trimmed.split(/\n+/);
+        // If multiple lines with bullets or numbered lists
+        if (lines.length > 1 && lines.some(l => /^(\s*[•\-\*]|\s*\d+[\.\)])\s+/.test(l))) {
+            lines.forEach(line => {
+                let lTrim = line.trim();
+                if (!lTrim) return;
+                if (/^([•\-\*]|\d+[\.\)])\s+/.test(lTrim)) {
+                    htmlBlocks.push(`<div class="case-bullet no-split" style="margin: 3px 0 3px 14px; text-indent: -14px; line-height: 1.5; font-size: calc(14px * var(--font-scale));">${lTrim}</div>`);
+                } else {
+                    htmlBlocks.push(`<div class="case-heading no-split" style="font-weight: 700; margin-top: 10px; margin-bottom: 4px; font-size: calc(14.5px * var(--font-scale)); color: #1e293b;">${lTrim}</div>`);
+                }
+            });
+        } else {
+            let pContent = lines.map(l => l.trim()).join('<br>');
+            htmlBlocks.push(`<p class="case-p" style="margin-bottom: 8px; line-height: 1.55; font-size: calc(14.5px * var(--font-scale));">${pContent}</p>`);
+        }
+    });
+
+    return htmlBlocks.join('');
+}
+
+function formatQuestionText(qText) {
+    if (!qText || typeof qText !== 'string') return '';
+    let clean = sanitizeInsertedMathHtml(qText);
+    return clean.replace(/\n\s*\n+/g, '<br><br>').replace(/\n+/g, '<br>');
+}
+
+function formatExplanationHtml(expl) {
+    if (!expl || typeof expl !== 'string') return '';
+    let clean = sanitizeInsertedMathHtml(expl);
+    return clean.replace(/\n\s*\n+/g, '<br><br>').replace(/\n+/g, '<br>');
 }
 
 function renderMathInBook(targetElement) {
@@ -780,7 +1294,7 @@ function startExamTimer() {
         let m = Math.floor((totalSeconds % 3600) / 60);
         let s = totalSeconds % 60;
 
-        timerDiv.innerText = `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+        timerDiv.innerText = `${pad2(h)}:${pad2(m)}:${pad2(s)}`;
         if (totalSeconds <= 300) { timerDiv.classList.add("timer-warning"); }
 
         if (totalSeconds <= 0) {

@@ -1,6 +1,7 @@
 const descriptiveQuestions = [
   {
   question_id: "AFM_MTPMAR24I_Q1",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2024",
   chapter_name: "Foreign Exchange Risk Management, CAPM, Unicorn",
   placement: 1,
@@ -181,6 +182,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPMAR24I_Q1_B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2024",
   chapter_name: "Capital Asset Pricing Model (CAPM)",
   placement: 1,
@@ -262,6 +264,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPMAR24I_Q1_C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series I, March 2024",
   chapter_name: "FinTech - Unicorn",
   placement: 1,
@@ -289,6 +292,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPMAR24I_Q2_A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2024",
   chapter_name: "International Capital Budgeting",
   placement: 2,
@@ -513,6 +517,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPMAR24I_Q2_B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2024",
   chapter_name: "Dividend Valuation Model",
   placement: 2,
@@ -640,6 +645,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPMAR24I_Q2_C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series I, March 2024",
   chapter_name: "Sustainable Growth Rate",
   placement: 2,
@@ -665,6 +671,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPMAR24I_Q3_A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2024",
   chapter_name: "Portfolio Theory",
   placement: 3,
@@ -842,6 +849,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPMAR24I_Q3_B",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series I, March 2024",
   chapter_name: "Tokenization and CDOs",
   placement: 3,
@@ -900,6 +908,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPMAR24I_Q4_A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2024",
   chapter_name: "Bond Refunding",
   placement: 4,
@@ -996,6 +1005,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPMAR24I_Q4_B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2024",
   chapter_name: "Options",
   placement: 4,
@@ -1077,6 +1087,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPMAR24I_Q4_C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series I, March 2024",
   chapter_name: "Value at Risk (VaR)",
   placement: 4,
@@ -1105,6 +1116,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPMAR24I_Q5_A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2024",
   chapter_name: "Business Valuation - FCFF",
   placement: 5,
@@ -1334,6 +1346,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPMAR24I_Q5_B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2024",
   chapter_name: "Portfolio Beta and Stock Index Futures",
   placement: 5,
@@ -1433,6 +1446,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPMAR24I_Q6_A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2024",
   chapter_name: "Interest Rate Swaps",
   placement: 6,
@@ -1540,6 +1554,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPMAR24I_Q6_B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2024",
   chapter_name: "Capital Budgeting under Risk - Certainty Equivalent Approach",
   placement: 6,
@@ -1705,6 +1720,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAPR24II_Q1A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, April 2024",
   chapter_name: "Derivatives Analysis and Valuation",
   placement: 1,
@@ -1811,6 +1827,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAPR24II_Q1B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, April 2024",
   chapter_name: "Security Valuation",
   placement: 1,
@@ -1870,6 +1887,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAPR24II_Q2A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, April 2024",
   chapter_name: "Foreign Exchange Exposure and Risk Management",
   placement: 1,
@@ -1944,6 +1962,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAPR24II_Q2B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, April 2024",
   chapter_name: "Interest Rate Risk Management",
   placement: 2,
@@ -1984,6 +2003,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAPR24II_Q2C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series II, April 2024",
   chapter_name: "Foreign Exchange Exposure and Risk Management",
   placement: 3,
@@ -2014,6 +2034,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAPR24II_Q1C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series II, April 2024",
   chapter_name: "Financial Policy and Corporate Strategy",
   placement: 1,
@@ -2035,6 +2056,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAPR24II_Q3C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series II, April 2024",
   chapter_name: "Startup Finance / Mutual Funds",
   placement: 3,
@@ -2074,6 +2096,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPAPR24II_Q3B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, April 2024",
   chapter_name: "Portfolio Management",
   placement: 2,
@@ -2161,6 +2184,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAPR24II_Q3A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, April 2024",
   chapter_name: "Portfolio Management",
   placement: 1,
@@ -2236,6 +2260,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPAPR24II_Q4A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, April 2024",
   chapter_name: "Portfolio Management",
   placement: 1,
@@ -2381,6 +2406,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPAPR24II_Q4B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, April 2024",
   chapter_name: "Mutual Funds",
   placement: 2,
@@ -2470,6 +2496,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPAPR24II_Q4C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series II, April 2024",
   chapter_name: "Financial Policy and Corporate Strategy",
   placement: 3,
@@ -2504,6 +2531,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAPR24II_Q5A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, April 2024",
   chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
   placement: 1,
@@ -2641,6 +2669,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAPR24II_Q5B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, April 2024",
   chapter_name: "Mutual Funds",
   placement: 2,
@@ -2882,6 +2911,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAPR24II_Q6A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, April 2024",
   chapter_name: "Advanced Capital Budgeting Decisions",
   placement: 1,
@@ -3026,6 +3056,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAPR24II_Q6B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, April 2024",
   chapter_name: "Interest Rate Risk Management",
   placement: 2,
@@ -3133,6 +3164,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPSEP24I_Q1A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, September 2024",
   chapter_name: "Value at Risk (VaR)",
   placement: 1,
@@ -3262,6 +3294,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPSEP24I_Q1B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, September 2024",
   chapter_name: "Dividend Valuation Model (Multi-Stage Growth Model)",
   placement: 1,
@@ -3364,6 +3397,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPSEP24I_Q1C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series I, September 2024",
   chapter_name: "Venture Capital Financing",
   placement: 1,
@@ -3394,6 +3428,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPSEP24I_Q2A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, September 2024",
   chapter_name: "Foreign Exchange Risk Management",
   placement: 2,
@@ -3482,6 +3517,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPSEP24I_Q2B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, September 2024",
   chapter_name: "Real Options Analysis",
   placement: 2,
@@ -3579,6 +3615,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPSEP24I_Q2C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series I, September 2024",
   chapter_name: "Mutual Funds",
   placement: 2,
@@ -3618,6 +3655,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPSEP24I_Q3A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, September 2024",
   chapter_name: "Portfolio Management",
   placement: 1,
@@ -3700,6 +3738,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPSEP24I_Q3B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, September 2024",
   chapter_name: "Corporate Valuation",
   placement: 2,
@@ -3782,6 +3821,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPSEP24I_Q3C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series I, September 2024",
   chapter_name: "Derivatives Analysis and Valuation / Portfolio Management",
   placement: 3,
@@ -3865,6 +3905,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPSEP24I_Q4A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, September 2024",
   chapter_name: "Foreign Exchange Exposure and Risk Management",
   placement: 1,
@@ -3977,6 +4018,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPSEP24I_Q4B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, September 2024",
   chapter_name: "Security Valuation",
   placement: 2,
@@ -4007,6 +4049,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPSEP24I_Q4C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series I, September 2024",
   chapter_name: "Securitization",
   placement: 3,
@@ -4029,6 +4072,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPSEP24I_Q5A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, September 2024",
   chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
   placement: 1,
@@ -4323,6 +4367,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPSEP24I_Q5B",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series I, September 2024",
   chapter_name: "Foreign Exchange Exposure and Risk Management",
   placement: 2,
@@ -4345,6 +4390,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPSEP24I_Q6A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, September 2024",
   chapter_name: "Advanced Capital Budgeting Decisions",
   placement: 1,
@@ -4432,6 +4478,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPSEP24I_Q6B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, September 2024",
   chapter_name: "Corporate Valuation",
   placement: 2,
@@ -4662,6 +4709,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPSEP24I_Q6C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series I, September 2024",
   chapter_name: "Startup Finance",
   placement: 3,
@@ -4706,6 +4754,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV24II_Q1A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, October 2024",
   chapter_name: "Startup Finance",
   placement: 1,
@@ -5006,6 +5055,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV24II_Q1B",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series II, October 2024",
   chapter_name: "Startup Finance",
   placement: 1,
@@ -5063,6 +5113,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV24II_Q2A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, October 2024",
   chapter_name: "Business Valuation",
   placement: 2,
@@ -5229,6 +5280,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV24II_Q2B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, October 2024",
   chapter_name: "Capital Budgeting",
   placement: 2,
@@ -5483,6 +5535,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV24II_Q3A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, October 2024",
   chapter_name: "Security Analysis & Portfolio Management",
   placement: 3,
@@ -5670,6 +5723,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV24II_Q3B",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series II, October 2024",
   chapter_name: "Risk Management",
   placement: 3,
@@ -5715,6 +5769,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV24II_Q3B_OR",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series II, October 2024",
   chapter_name: "FinTech",
   placement: 3,
@@ -5754,6 +5809,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV24II_Q4A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, October 2024",
   chapter_name: "Mutual Funds",
   placement: 4,
@@ -5995,6 +6051,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV24II_Q4B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, October 2024",
   chapter_name: "Foreign Exchange Risk Management",
   placement: 4,
@@ -6079,6 +6136,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV24II_Q5A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, October 2024",
   chapter_name: "Corporate Restructuring",
   placement: 5,
@@ -6437,6 +6495,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV24II_Q5B",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series II, October 2024",
   chapter_name: "International Finance",
   placement: 5,
@@ -6484,6 +6543,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV24II_Q6A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, October 2024",
   chapter_name: "Derivatives",
   placement: 6,
@@ -6669,6 +6729,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV24II_Q6B",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series II, October 2024",
   chapter_name: "Security Analysis",
   placement: 6,
@@ -6716,6 +6777,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPMAR25_I_Q1A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Portfolio Theory",
   placement: 1,
@@ -6924,6 +6986,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPMAR25_I_Q1B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Risk Management - Value at Risk (VaR)",
   placement: 1,
@@ -7077,6 +7140,7 @@ const descriptiveQuestions = [
 
 {
   question_id: "AFM_MTPMAR25_I_Q1C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Securitization",
   placement: 1,
@@ -7098,6 +7162,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPMAR25_I_Q2A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Capital Budgeting - Sensitivity Analysis",
   placement: 2,
@@ -7339,6 +7404,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPMAR25_I_Q2B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Security Valuation",
   placement: 2,
@@ -7480,6 +7546,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPMAR25_I_Q3A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Mutual Funds",
   placement: 3,
@@ -7673,6 +7740,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPMAR25_I_Q3B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Startup Valuation",
   placement: 3,
@@ -7829,6 +7897,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPMAR25_I_Q3C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Technical Analysis",
   placement: 3,
@@ -7890,6 +7959,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPMAR25_I_Q4A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "International Capital Budgeting",
   placement: 4,
@@ -8103,6 +8173,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPMAR25_I_Q4B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Portfolio Hedging using Index Futures",
   placement: 4,
@@ -8331,6 +8402,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPMAR25_I_Q5A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Merger & Acquisition",
   placement: 5,
@@ -8661,6 +8733,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPMAR25_I_Q5B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Forward Rate Agreement (FRA)",
   placement: 5,
@@ -8761,6 +8834,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPMAR25_I_Q6A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Technical Analysis - Exponential Moving Average (EMA)",
   placement: 6,
@@ -8878,6 +8952,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPMAR25_I_Q6B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Foreign Exchange Risk Management",
   placement: 6,
@@ -9029,6 +9104,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPMAR25_I_Q6C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series I, March 2025",
   chapter_name: "Startup Financing",
   placement: 6,
@@ -9055,6 +9131,7 @@ const descriptiveQuestions = [
 // may 25 II
   {
     question_id: "AFM_MTPAPR25_II_Q1A",
+    question_type: "practical",
     source: "ICAI Mock Test Paper - Series II, April 2025",
     chapter_name: "Foreign Exchange Exposure and Risk Management",
     placement: 1,
@@ -9154,6 +9231,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPAPR25_II_Q1B",
+    question_type: "practical",
     source: "ICAI Mock Test Paper - Series II, April 2025",
     chapter_name: "Security Valuation",
     placement: 1,
@@ -9235,6 +9313,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPAPR25_II_Q1C",
+    question_type: "theory",
     source: "ICAI Mock Test Paper - Series II, April 2025",
     chapter_name: "Securitization",
     placement: 1,
@@ -9254,6 +9333,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPAPR25_II_Q2A",
+    question_type: "practical",
     source: "ICAI Mock Test Paper - Series II, April 2025",
     chapter_name: "Security Valuation",
     placement: 2,
@@ -9443,6 +9523,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPAPR25_II_Q2B",
+    question_type: "practical",
     source: "ICAI Mock Test Paper - Series II, April 2025",
     chapter_name: "Business Valuation",
     placement: 2,
@@ -9499,6 +9580,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPAPR25_II_Q2C",
+    question_type: "practical",
     source: "ICAI Mock Test Paper - Series II, April 2025",
     chapter_name: "Risk Management",
     placement: 2,
@@ -9531,6 +9613,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPAPR25_II_Q3A",
+    question_type: "practical",
     source: "ICAI Mock Test Paper - Series II, April 2025",
     chapter_name: "Derivatives Analysis and Valuation",
     placement: 3,
@@ -9582,6 +9665,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPAPR25_II_Q3B",
+    question_type: "practical",
     source: "ICAI Mock Test Paper - Series II, April 2025",
     chapter_name: "Interest Rate Risk Management",
     placement: 3,
@@ -9680,6 +9764,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPAPR25_II_Q3C",
+    question_type: "theory",
     source: "ICAI Mock Test Paper - Series II, April 2025",
     chapter_name: "Foreign Exchange Exposure and Risk Management",
     placement: 3,
@@ -9713,6 +9798,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPAPR25_II_Q4A",
+    question_type: "practical",
     source: "ICAI Mock Test Paper - Series II, April 2025",
     chapter_name: "Portfolio Management",
     placement: 4,
@@ -9784,6 +9870,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPAPR25_II_Q4B",
+    question_type: "practical",
     source: "ICAI Mock Test Paper - Series II, April 2025",
     chapter_name: "Mutual Funds",
     placement: 4,
@@ -10008,6 +10095,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPAPR25_II_Q6A",
+    question_type: "practical",
     source: "ICAI Mock Test Paper - Series II, April 2025",
     chapter_name: "International Financial Management",
     placement: 6,
@@ -10154,6 +10242,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPAPR25_II_Q6B",
+    question_type: "practical",
     source: "ICAI Mock Test Paper - Series II, April 2025",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 6,
@@ -10206,6 +10295,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPAPR25_II_Q6C",
+    question_type: "theory",
     source: "ICAI Mock Test Paper - Series II, April 2025",
     chapter_name: "Startup Finance",
     placement: 6,
@@ -10230,6 +10320,7 @@ const descriptiveQuestions = [
   // MTP spt 25
   {
   question_id: "AFM_MTPJUL25_Q1A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, July 2025",
   chapter_name: "Security Analysis",
   placement: 1,
@@ -10319,6 +10410,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPJUL25_Q1B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, July 2025",
   chapter_name: "Mutual Funds",
   placement: 1,
@@ -10392,6 +10484,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPJUL25_Q1C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series I, July 2025",
   chapter_name: "Risk Management",
   placement: 1,
@@ -10423,6 +10516,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPJUL25_Q2A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, July 2025",
   chapter_name: "Risk Management",
   placement: 2,
@@ -10480,6 +10574,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPJUL25_Q2B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, July 2025",
   chapter_name: "Financial Policy and Corporate Strategy",
   placement: 2,
@@ -10524,6 +10619,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPJUL25_Q2C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series I, July 2025",
   chapter_name: "Security Analysis",
   placement: 2,
@@ -10550,6 +10646,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPJUL25_Q3A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, July 2025",
   chapter_name: "Foreign Exchange Exposure and Risk Management",
   placement: 3,
@@ -10627,6 +10724,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPJUL25_Q3B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, July 2025",
   chapter_name: "Financial Policy and Corporate Strategy",
   placement: 3,
@@ -10688,6 +10786,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPJUL25_Q3C1",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series I, July 2025",
   chapter_name: "Securitization",
   placement: 3,
@@ -10710,6 +10809,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPJUL25_Q3C2",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series I, July 2025",
   chapter_name: "Derivatives",
   placement: 3,
@@ -10729,6 +10829,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPJUL25_Q4A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, July 2025",
   chapter_name: "Interest Rate Risk Management",
   placement: 4,
@@ -10789,6 +10890,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPJUL25_Q4B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, July 2025",
   chapter_name: "Security Analysis",
   placement: 4,
@@ -10850,6 +10952,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPJUL25_Q4C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series I, July 2025",
   chapter_name: "Startup Finance",
   placement: 4,
@@ -10880,6 +10983,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPJUL25_Q5A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, July 2025",
   chapter_name: "Derivatives",
   placement: 5,
@@ -10962,6 +11066,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPJUL25_Q5B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, July 2025",
   chapter_name: "Interest Rate Risk Management",
   placement: 5,
@@ -11039,6 +11144,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPJUL25_Q6B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series I, July 2025",
   chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
   placement: 6,
@@ -11104,6 +11210,7 @@ const descriptiveQuestions = [
 // sept 25 series 2
 {
   question_id: "AFM_MTPAUG25_Q1A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, August 2025",
   chapter_name: "International Financial Management",
   placement: 1,
@@ -11232,6 +11339,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAUG25_Q1B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, August 2025",
   chapter_name: "Interest Rate Risk Management",
   placement: 1,
@@ -11393,6 +11501,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAUG25_Q2A",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, August 2025",
   chapter_name: "Advanced Capital Budgeting Decisions",
   placement: 2,
@@ -11523,6 +11632,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAUG25_Q2B",
+    question_type: "practical",
   source: "ICAI Mock Test Paper - Series II, August 2025",
   chapter_name: "Financial Policy and Corporate Strategy",
   placement: 2,
@@ -11626,6 +11736,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAUG25_Q2C",
+    question_type: "theory",
   source: "ICAI Mock Test Paper - Series II, August 2025",
   chapter_name: "Foreign Exchange Risk Management",
   placement: 2,
@@ -11669,6 +11780,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAUG25_Q3A",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series II, August 2025",
   chapter_name: "Mutual Funds",
   placement: 3,
@@ -11729,6 +11841,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAUG25_Q3B",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series II, August 2025",
   chapter_name: "Portfolio Management",
   placement: 3,
@@ -11765,6 +11878,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAUG25_Q3C_BLOCKCHAIN",
+    question_type: "theory",
   source: "ICAI AFM Mock Test Paper – Series II, August 2025",
   chapter_name: "Financial Policy and Corporate Strategy",
   placement: 3,
@@ -11784,6 +11898,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAUG25_Q3C_INDICATORS",
+    question_type: "theory",
   source: "ICAI AFM Mock Test Paper – Series II, August 2025",
   chapter_name: "Financial Policy and Corporate Strategy",
   placement: 3,
@@ -11802,6 +11917,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAUG25_Q4A",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series II, August 2025",
   chapter_name: "Foreign Exchange Risk Management",
   placement: 4,
@@ -11857,6 +11973,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAUG25_Q4B",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series II, August 2025",
   chapter_name: "Derivatives Analysis and Valuation",
   placement: 4,
@@ -11894,6 +12011,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAUG25_Q4C",
+    question_type: "theory",
   source: "ICAI AFM Mock Test Paper – Series II, August 2025",
   chapter_name: "Startup Finance",
   placement: 4,
@@ -11913,6 +12031,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAUG25_Q5A",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series II, August 2025",
   chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
   placement: 5,
@@ -12012,6 +12131,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAUG25_Q5B",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series II, August 2025",
   chapter_name: "Portfolio Management",
   placement: 5,
@@ -12064,6 +12184,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAUG25_Q6A",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series II, August 2025",
   chapter_name: "Interest Rate Risk Management",
   placement: 6,
@@ -12167,6 +12288,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPAUG25_Q6B",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series II, August 2025",
   chapter_name: "Foreign Exchange Risk Management",
   placement: 6,
@@ -12222,6 +12344,7 @@ const descriptiveQuestions = [
 // jan 2026 series I
 {
   question_id: "AFM_MTPNOV25_I_Q1A",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series I, November 2025",
   chapter_name: "Foreign Exchange Risk Management",
   placement: 1,
@@ -12323,6 +12446,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV25_I_Q1B",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series I, November 2025",
   chapter_name: "Security Valuation",
   placement: 1,
@@ -12423,6 +12547,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV25_I_Q1C",
+    question_type: "theory",
   source: "ICAI AFM Mock Test Paper – Series I, November 2025",
   chapter_name: "Financial Policy and Corporate Strategy",
   placement: 1,
@@ -12440,6 +12565,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV25_I_Q2A",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series I, November 2025",
   chapter_name: "Security Analysis",
   placement: 2,
@@ -12572,6 +12698,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV25_I_Q2B",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series I, November 2025",
   chapter_name: "Advanced Capital Budgeting Decisions",
   placement: 2,
@@ -12633,6 +12760,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV25_I_Q2C",
+    question_type: "theory",
   source: "ICAI AFM Mock Test Paper – Series I, November 2025",
   chapter_name: "Securitization",
   placement: 2,
@@ -12653,6 +12781,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV25_I_Q3A",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series I, November 2025",
   chapter_name: "Foreign Exchange Risk Management",
   placement: 3,
@@ -12814,6 +12943,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV25_I_Q3B",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series I, November 2025",
   chapter_name: "Security Valuation",
   placement: 3,
@@ -12854,6 +12984,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV25_I_Q3C",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series I, November 2025",
   chapter_name: "Startup Finance",
   placement: 3,
@@ -12903,6 +13034,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV25_I_Q4A",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series I, November 2025",
   chapter_name: "Advanced Capital Budgeting Decisions",
   placement: 4,
@@ -12956,6 +13088,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV25_I_Q4B",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series I, November 2025",
   chapter_name: "Mutual Funds",
   placement: 4,
@@ -13055,6 +13188,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV25_I_Q4C",
+    question_type: "theory",
   source: "ICAI AFM Mock Test Paper – Series I, November 2025",
   chapter_name: "International Financial Management",
   placement: 4,
@@ -13080,6 +13214,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV25_I_Q5A",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series I, November 2025",
   chapter_name: "Portfolio Management",
   placement: 5,
@@ -13214,6 +13349,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV25_I_Q5B",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series I, November 2025",
   chapter_name: "Interest Rate Risk Management",
   placement: 5,
@@ -13321,6 +13457,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV25_I_Q6A",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series I, November 2025",
   chapter_name: "International Financial Management",
   placement: 6,
@@ -13468,6 +13605,7 @@ const descriptiveQuestions = [
 },
 {
   question_id: "AFM_MTPNOV25_I_Q6B",
+    question_type: "practical",
   source: "ICAI AFM Mock Test Paper – Series I, November 2025",
   chapter_name: "Security Valuation",
   placement: 6,
@@ -13550,6 +13688,7 @@ const descriptiveQuestions = [
 // Jan seriesII
   {
     question_id: "AFM_MTPDEC25_II_Q1A",
+    question_type: "practical",
     source: "ICAI AFM Mock Test Paper – Series II, December 2025",
     chapter_name: "Foreign Exchange Exposure and Risk Management",
     placement: 1,
@@ -13704,6 +13843,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPDEC25_II_Q1B",
+    question_type: "practical",
     source: "ICAI AFM Mock Test Paper – Series II, December 2025",
     chapter_name: "Fixed Income Securities",
     placement: 1,
@@ -13733,6 +13873,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPDEC25_II_Q1C",
+    question_type: "theory",
     source: "ICAI AFM Mock Test Paper – Series II, December 2025",
     chapter_name: "Startup Finance",
     placement: 1,
@@ -13757,6 +13898,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPDEC25_II_Q2A",
+    question_type: "practical",
     source: "ICAI AFM Mock Test Paper – Series II, December 2025",
     chapter_name: "Security Analysis",
     placement: 2,
@@ -13871,6 +14013,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPDEC25_II_Q2B",
+    question_type: "theory",
     source: "ICAI AFM Mock Test Paper – Series II, December 2025",
     chapter_name: "Securitization",
     placement: 2,
@@ -13890,6 +14033,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPDEC25_II_Q3A",
+    question_type: "practical",
     source: "ICAI AFM Mock Test Paper – Series II, December 2025",
     chapter_name: "International Financial Management",
     placement: 3,
@@ -13927,6 +14071,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPDEC25_II_Q3B",
+    question_type: "practical",
     source: "ICAI AFM Mock Test Paper – Series II, December 2025",
     chapter_name: "Security Valuation",
     placement: 3,
@@ -13962,6 +14107,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPDEC25_II_Q3C",
+    question_type: "theory",
     source: "ICAI AFM Mock Test Paper – Series II, December 2025",
     chapter_name: "Startup Finance",
     placement: 3,
@@ -13997,6 +14143,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPDEC25_II_Q4A",
+    question_type: "practical",
     source: "ICAI AFM Mock Test Paper – Series II, December 2025",
     chapter_name: "Advanced Capital Budgeting Decisions",
     placement: 4,
@@ -14098,6 +14245,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPDEC25_II_Q4B",
+    question_type: "practical",
     source: "ICAI AFM Mock Test Paper – Series II, December 2025",
     chapter_name: "Mutual Funds",
     placement: 4,
@@ -14156,6 +14304,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPDEC25_II_Q4C",
+    question_type: "theory",
     source: "ICAI AFM Mock Test Paper – Series II, December 2025",
     chapter_name: "International Financial Management",
     placement: 4,
@@ -14176,6 +14325,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPDEC25_II_Q5A",
+    question_type: "practical",
     source: "ICAI AFM Mock Test Paper – Series II, December 2025",
     chapter_name: "Portfolio Management",
     placement: 5,
@@ -14218,6 +14368,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPDEC25_II_Q5B",
+    question_type: "practical",
     source: "ICAI AFM Mock Test Paper – Series II, December 2025",
     chapter_name: "Interest Rate Risk Management",
     placement: 5,
@@ -14265,6 +14416,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPDEC25_II_Q6A",
+    question_type: "practical",
     source: "ICAI AFM Mock Test Paper – Series II, December 2025",
     chapter_name: "Portfolio Management",
     placement: 6,
@@ -14305,6 +14457,7 @@ const descriptiveQuestions = [
   },
   {
     question_id: "AFM_MTPDEC25_II_Q6B",
+    question_type: "practical",
     source: "ICAI AFM Mock Test Paper – Series II, December 2025",
     chapter_name: "Mergers, Acquisitions and Corporate Restructuring",
     placement: 6,

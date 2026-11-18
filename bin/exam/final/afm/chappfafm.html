@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA Final AFM Chapter Mock | 3D Interactive Exam | Calcium Notes</title>
+    
+    <!-- Meta Data -->
+    <meta name="title" content="CA Final AFM Chapter Mock Exam (60 Marks | 1.5 Hours) | Calcium Notes">
+    <meta name="description" content="Attempt timed 60-mark chapter wise CA Final AFM mock exams with 15-mark case scenarios, 45-mark descriptive questions, and instant ICAI solutions.">
+
+    <link rel="stylesheet" href="./pfafm.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYJ8R39EXM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YYJ8R39EXM');
+    </script>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7657462226177124"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .chap-header-badge {
+            background: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #bfdbfe;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .compulsory-badge {
+            background-color: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #fca5a5;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 12px;
+            display: inline-block;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        .choice-badge {
+            background-color: #f1f5f9;
+            color: #475569;
+            border: 1px solid #cbd5e1;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 12px;
+            display: inline-block;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        .score-banner {
+            background: #ffffff;
+            border: 2px solid #2563eb;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+        }
+
+        .score-banner h4 {
+            color: #1e3a8a;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .score-banner p {
+            color: #334155;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="prev-btn" class="nav-btn" title="Previous Page">&#10094;</button>
+    <button id="next-btn" class="nav-btn" title="Next Page">&#10095;</button>
+
+    <div class="book-wrapper">
+        <div class="book-container">
+            <div class="book" id="book"></div>
+        </div>
+
+        <div class="controls">
+            <div class="hint">Click and drag pages left or right to flip &bull; Or use &larr; &rarr; keys</div>
+            <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                <button id="home-btn" class="finish-exam-btn"
+                    style="display:none; background:#0f172a; color:white; margin-top:15px;"
+                    onclick="window.location.href='./chapgate.html'">Return to Chapter Selection</button>
+                <button id="afm-home-btn" class="finish-exam-btn"
+                    style="display:none; background:#2563eb; color:white; margin-top:15px;"
+                    onclick="window.location.href='./eafm.html'">Return to AFM Home</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question Banks & Engine -->
+    <script src="./pfafmmcq.js"></script>
+    <script src="./pf1_21_130317.js"></script>
+    <script src="./pfaicaism.js"></script>
+    <script src="./pfa1_21_17es.js"></script>
+    <script src="./pfafmquestions.js"></script>
+    <script src="./chappfafm.js"></script>
+</body>
+
+</html>
