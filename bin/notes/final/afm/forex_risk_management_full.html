@@ -142,9 +142,6 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Patrick+Hand&family=Caveat:wght@400;600;700&display=swap"
-        rel="stylesheet">
     <style>
         :root {
             --bg-canvas: #ffffff;
@@ -207,21 +204,7 @@
         }
 
 
-        /* Bulletproof High-Visibility Sidebar Navigation */
-        .sidebar {
-            width: 300px;
-            background: var(--bg-canvas);
-            border-right: 1px solid var(--border-color);
-            position: sticky;
-            top: 0;
-            height: 100vh;
-            overflow-y: auto;
-            padding: 20px 14px;
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-            flex-shrink: 0;
-        }
+        
 
         .sidebar-brand {
             font-size: 15px;
@@ -560,63 +543,7 @@
             }
         }
 
-        :root {
-            --notes-body: 'Kalam', cursive;
-            --notes-heading: 'Patrick Hand', cursive;
-            --notes-highlight: 'Caveat', cursive;
-            --notes-table: Arial, sans-serif;
-        }
-
-        body,
-        body * {
-            font-family: var(--notes-body) !important;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        .chapter-title,
-        .section-title,
-        .title,
-        .heading,
-        .subheading,
-        .main-heading,
-        .topic-title,
-        .page-title,
-        .note-header,
-        .section-header {
-            font-family: var(--notes-heading) !important;
-            font-weight: 400;
-            letter-spacing: 0.2px;
-        }
-
-        .important,
-        .important-point,
-        .highlight,
-        .key-point,
-        .note-badge,
-        .label {
-            font-family: var(--notes-highlight) !important;
-            font-weight: 700;
-            font-size: 1.4em;
-        }
-
-        table,
-        th,
-        td,
-        .table,
-        .solution-table,
-        .styled-table,
-        .formula,
-        .katex,
-        .katex-display,
-        .equation,
-        .calc {
-            font-family: var(--notes-table) !important;
-        }
+        
             /* Interactive Topic Quiz Styles */
         .topic-quiz-card {
             background: var(--notes-card-bg, #ffffff);
@@ -912,8 +839,8 @@
                     <li><a href="#tyk-pq49">PQ 49: London Office Surplus Funds</a></li>
                     <li><a href="#tyk-pq50">PQ 50: Drilldip Inc Currency Swap</a></li>
                     <li><a href="#tyk-pq51">PQ 51: Foreign Exchange Position Square</a></li>
-                    <li><a href="../../notes/afmfullnotes.html">â† Full Notes Index</a></li>
-                    <li><a href="../../notes/afmnotes.html">â† Quick Notes Index</a></li>
+                    <li><a href="../../notes/afmfullnotes.html">← Full Notes Index</a></li>
+                    <li><a href="../../notes/afmnotes.html">← Quick Notes Index</a></li>
                 </ul>
             </nav>
         </aside>
@@ -5598,7 +5525,7 @@
                 if (opt.getAttribute('data-correct') === 'true') {
                     opt.classList.add('reveal-correct');
                 }
-            });
+
             var fb = parent.querySelector('.mcq-feedback');
             if (isCorrect) {
                 el.classList.add('selected-correct');
@@ -5632,8 +5559,7 @@
                         if (opt.getAttribute('data-correct') === 'true') {
                             opt.classList.add('reveal-correct');
                         }
-                    });
-                }
+
             }
         }
 
@@ -5647,65 +5573,16 @@
             }
         }
 
-        // Reading progress tracking & sidebar link highlighting
-        var contentEl = document.querySelector('.content');
-        var progressBar = document.getElementById('reading-progress');
-        var sections = document.querySelectorAll('.section-card, section[id], .theory-topic, .problem-card, .topic-card, .topic-section');
-        var sidebarLinks = document.querySelectorAll('.sidebar a');
-
-        function updateReadingProgressColor(progressBar, progress) {
-            var r, g, b;
-            if (progress <= 33) {
-                var t = progress / 33;
-                r = Math.round(239 + (234 - 239) * t);
-                g = Math.round(68 + (179 - 68) * t);
-                b = Math.round(68 + (8 - 68) * t);
-            } else if (progress <= 66) {
-                var t = (progress - 33) / 33;
-                r = Math.round(234 + (34 - 234) * t);
-                g = Math.round(179 + (197 - 179) * t);
-                b = Math.round(8 + (94 - 8) * t);
-            } else {
-                var t = (progress - 66) / 34;
-                r = Math.round(34 + (16 - 34) * t);
-                g = Math.round(197 + (185 - 197) * t);
-                b = Math.round(94 + (129 - 94) * t);
-            }
-            progressBar.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-            progressBar.style.boxShadow = '0 0 8px rgba(' + r + ',' + g + ',' + b + ', 0.45)';
-        }
-
-        if (progressBar) { updateReadingProgressColor(progressBar, 0); }
-
-        if (contentEl && progressBar) {
-            contentEl.addEventListener('scroll', function() {
-                var totalScroll = contentEl.scrollHeight - contentEl.clientHeight;
-                if (totalScroll > 0) {
-                    var currentScroll = contentEl.scrollTop;
-                    var progress = (currentScroll / totalScroll) * 100;
-                    progressBar.style.width = progress + '%';
-                    updateReadingProgressColor(progressBar, progress);
-                }
-
-                var current = '';
-                sections.forEach(function(section) {
-                    var sectionTop = section.offsetTop - contentEl.offsetTop;
-                    if (contentEl.scrollTop >= sectionTop - 140) {
-                        current = section.getAttribute('id');
-                    }
-                });
-
-                if (current) {
+        if (current) {
                     sidebarLinks.forEach(function(link) {
                         link.classList.remove('active');
                         if (link.getAttribute('href') === '#' + current) {
                             link.classList.add('active');
                         }
-                    });
-                }
-            });
-        }
+
+
     </script>
+    <script src="../../assets/template.js"></script>
 </body>
 </html>
 

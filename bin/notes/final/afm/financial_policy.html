@@ -138,7 +138,6 @@
 
 
     <link rel="icon" href="../../../../fevicol.png" type="image/png">
-    <link rel="stylesheet" href="../../assets/template.css">
 
     <!-- KaTeX for Beautiful Mathematical Formula Rendering -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
@@ -171,9 +170,6 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Patrick+Hand&family=Caveat:wght@400;600;700&display=swap"
-        rel="stylesheet">
     <style>
         :root {
             --primary: #2563eb;
@@ -975,63 +971,7 @@
             }
         }
 
-        :root {
-            --notes-body: 'Kalam', cursive;
-            --notes-heading: 'Patrick Hand', cursive;
-            --notes-highlight: 'Caveat', cursive;
-            --notes-table: Arial, sans-serif;
-        }
-
-        body,
-        body * {
-            font-family: var(--notes-body) !important;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        .chapter-title,
-        .section-title,
-        .title,
-        .heading,
-        .subheading,
-        .main-heading,
-        .topic-title,
-        .page-title,
-        .note-header,
-        .section-header {
-            font-family: var(--notes-heading) !important;
-            font-weight: 400;
-            letter-spacing: 0.2px;
-        }
-
-        .important,
-        .important-point,
-        .highlight,
-        .key-point,
-        .note-badge,
-        .label {
-            font-family: var(--notes-highlight) !important;
-            font-weight: 700;
-            font-size: 1.4em;
-        }
-
-        table,
-        th,
-        td,
-        .table,
-        .solution-table,
-        .styled-table,
-        .formula,
-        .katex,
-        .katex-display,
-        .equation,
-        .calc {
-            font-family: var(--notes-table) !important;
-        }
+        
     
         /* Universal Single-Scrollbar Fix */
         html, body {
@@ -2359,7 +2299,6 @@
             const allOptions = parent.querySelectorAll('.mcq-option-item');
             allOptions.forEach(opt => {
                 opt.classList.remove('selected-correct', 'selected-wrong');
-            });
 
             if (isCorrect) {
                 optEl.classList.add('selected-correct');
@@ -2369,8 +2308,6 @@
                     if (opt.getAttribute('data-correct') === 'true') {
                         opt.classList.add('selected-correct');
                     }
-                });
-            }
 
             const ansEl = document.getElementById(ansId);
             if (ansEl) {
@@ -2436,15 +2373,14 @@
                 if (contentEl.scrollTop >= sectionTop - 130) {
                     current = section.getAttribute('id');
                 }
-            });
 
             sidebarLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === '#' + current) {
                     link.classList.add('active');
                 }
-            });
-        });
+
+
     </script>
 </body>
 

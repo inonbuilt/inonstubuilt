@@ -138,7 +138,6 @@
 
 
     <link rel="icon" href="../../../../fevicol.png" type="image/png">
-    <link rel="stylesheet" href="../../assets/template.css">
 
     <!-- KaTeX for Mathematical Formula Rendering -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
@@ -171,9 +170,6 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Patrick+Hand&family=Caveat:wght@400;600;700&display=swap"
-        rel="stylesheet">
     <style>
         :root {
             --primary: #2563eb;
@@ -738,63 +734,7 @@
             }
         }
 
-        :root {
-            --notes-body: 'Kalam', cursive;
-            --notes-heading: 'Patrick Hand', cursive;
-            --notes-highlight: 'Caveat', cursive;
-            --notes-table: Arial, sans-serif;
-        }
-
-        body,
-        body * {
-            font-family: var(--notes-body) !important;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        .chapter-title,
-        .section-title,
-        .title,
-        .heading,
-        .subheading,
-        .main-heading,
-        .topic-title,
-        .page-title,
-        .note-header,
-        .section-header {
-            font-family: var(--notes-heading) !important;
-            font-weight: 400;
-            letter-spacing: 0.2px;
-        }
-
-        .important,
-        .important-point,
-        .highlight,
-        .key-point,
-        .note-badge,
-        .label {
-            font-family: var(--notes-highlight) !important;
-            font-weight: 700;
-            font-size: 1.4em;
-        }
-
-        table,
-        th,
-        td,
-        .table,
-        .solution-table,
-        .styled-table,
-        .formula,
-        .katex,
-        .katex-display,
-        .equation,
-        .calc {
-            font-family: var(--notes-table) !important;
-        }
+        
 
         /* MCQ Interactive Styling */
         .quiz-card {
@@ -957,6 +897,7 @@
             box-sizing: border-box !important;
         }
     </style>
+    <link rel="stylesheet" href="../../assets/unified_notes.css">
 </head>
 
 <body>
@@ -2348,7 +2289,7 @@
             const allOptions = parent.querySelectorAll('.mcq-option-item');
             allOptions.forEach(opt => {
                 opt.classList.remove('selected-correct', 'selected-wrong');
-            });
+
             if (isCorrect) {
                 optEl.classList.add('selected-correct');
             } else {
@@ -2357,8 +2298,7 @@
                     if (opt.getAttribute('data-correct') === 'true') {
                         opt.classList.add('selected-correct');
                     }
-                });
-            }
+
             const ansEl = document.getElementById(ansId);
             if (ansEl) {
                 ansEl.style.display = 'block';
@@ -2388,58 +2328,13 @@
             }
         }
 
-        // Reading progress tracking
-        const contentEl = document.querySelector('.content');
-        const progressBar = document.getElementById('reading-progress');
-        const sections = document.querySelectorAll('.section-card');
-        const sidebarLinks = document.querySelectorAll('.sidebar a');
-
-        function updateReadingProgressColor(progressBar, progress) {
-            var r, g, b;
-            if (progress <= 33) {
-                var t = progress / 33;
-                r = Math.round(239 + (234 - 239) * t);
-                g = Math.round(68 + (179 - 68) * t);
-                b = Math.round(68 + (8 - 68) * t);
-            } else if (progress <= 66) {
-                var t = (progress - 33) / 33;
-                r = Math.round(234 + (34 - 234) * t);
-                g = Math.round(179 + (197 - 179) * t);
-                b = Math.round(8 + (94 - 8) * t);
-            } else {
-                var t = (progress - 66) / 34;
-                r = Math.round(34 + (16 - 34) * t);
-                g = Math.round(197 + (185 - 197) * t);
-                b = Math.round(94 + (129 - 94) * t);
-            }
-            progressBar.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
-            progressBar.style.boxShadow = '0 0 8px rgba(' + r + ',' + g + ',' + b + ', 0.45)';
-        }
-
-        if (progressBar) { updateReadingProgressColor(progressBar, 0); }
-
-        contentEl.addEventListener('scroll', () => {
-            const totalScroll = contentEl.scrollHeight - contentEl.clientHeight;
-            const currentScroll = contentEl.scrollTop;
-            const progress = (currentScroll / totalScroll) * 100;
-            progressBar.style.width = progress + '%';
-            updateReadingProgressColor(progressBar, progress);
-
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - contentEl.offsetTop;
-                if (contentEl.scrollTop >= sectionTop - 140) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            sidebarLinks.forEach(link => {
+        sidebarLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === '#' + current) {
                     link.classList.add('active');
                 }
-            });
-        });
+
+
     </script>
 </body>
 
