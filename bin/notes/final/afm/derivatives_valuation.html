@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@
     <meta name="description"
         content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 9: Derivatives Analysis and Valuation. 110% CA Final AFM Chapter 9 Derivatives Analysis notes. Futures pricing, index beta hedging, Black-Scholes, Binomial trees, Greeks, and all 17 Illus + 38 TYK questions.">
     <meta name="keywords"
-        content="Derivatives Valuation CA Final AFM, Futures pricing Cost of Carry, Black Scholes formula, Binomial option pricing, Option Greeks, CDS, Chapter 9, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+        content="Derivatives Valuation CA Final AFM, Futures pricing Cost of Carry, Black Scholes formula, Binomial option pricing, Option Greeks, CDS, Chapter 9, CA Final AFM Paper 2, New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
     <meta name="author" content="Calcium Notes">
     <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/derivatives_valuation.html">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -48,7 +48,7 @@
     "name": "CA Final AFM Chapter 9: Derivatives Analysis and Valuation (Quick Revision)",
     "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 9: Derivatives Analysis and Valuation. 110% CA Final AFM Chapter 9 Derivatives Analysis notes. Futures pricing, index beta hedging, Black-Scholes, Binomial trees, Greeks, and all 17 Illus + 38 TYK questions.",
     "learningResourceType": "Revision Cheat Sheet",
-    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "educationalLevel": "CA Final (New Scheme)",
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "author": {
@@ -186,8 +186,8 @@
             color: var(--text-primary);
             line-height: 1.7;
             font-size: 15px;
-            display: flex;
-            min-height: 100vh;
+            
+            
         }
 
 
@@ -534,49 +534,281 @@
         .calc {
             font-family: var(--notes-table) !important;
         }
+        /* Interactive MCQ Additions */
+        .quiz-card {
+            background: #ffffff;
+            border: 1px solid var(--border-color, #e2e8f0);
+            border-radius: 10px;
+            padding: 18px 20px;
+            margin: 20px 0 16px 0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+            transition: all 0.2s ease;
+        }
+
+        .quiz-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .quiz-badge {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            background: #eff6ff;
+            color: #2563eb;
+            border: 1px solid #bfdbfe;
+        }
+
+        .quiz-question {
+            font-size: 0.96rem;
+            font-weight: 600;
+            color: var(--text-primary, #0f172a);
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .mcq-options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            margin: 12px 0 14px 0;
+        }
+
+        .mcq-option-item {
+            background: var(--bg-card-secondary, #f8fafc);
+            border: 1px solid var(--border-color, #e2e8f0);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 0.88rem;
+            color: var(--text-primary, #1e293b);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .mcq-option-item:hover {
+            background: #f0fdf4;
+            border-color: #22c55e;
+            transform: translateX(3px);
+        }
+
+        .mcq-option-item.selected-correct {
+            background: #dcfce7 !important;
+            border-color: #22c55e !important;
+            color: #166534 !important;
+            font-weight: 600;
+        }
+
+        .mcq-option-item.selected-correct::after {
+            content: " ✓ Correct";
+            float: right;
+            font-weight: 700;
+            color: #16a34a;
+        }
+
+        .mcq-option-item.selected-wrong {
+            background: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #991b1b !important;
+            font-weight: 600;
+        }
+
+        .mcq-option-item.selected-wrong::after {
+            content: " ✗ Incorrect";
+            float: right;
+            font-weight: 700;
+            color: #dc2626;
+        }
+
+        .reveal-btn {
+            background: var(--primary, #2563eb);
+            color: white;
+            border: none;
+            padding: 7px 15px;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .reveal-btn:hover {
+            background: #1d4ed8;
+        }
+
+        .quiz-answer {
+            display: none;
+            margin-top: 12px;
+            padding: 12px 14px;
+            background: #f8fafc;
+            border-left: 3px solid #22c55e;
+            border-radius: 0 6px 6px 0;
+            font-size: 0.85rem;
+            line-height: 1.55;
+            color: var(--text-secondary, #475569);
+        }
+
+        /* Dark Theme Support */
+        body.dark-theme .quiz-card,
+        [data-theme='dark'] .quiz-card {
+            background: #1e293b;
+            border-color: #334155;
+        }
+
+        body.dark-theme .quiz-question,
+        [data-theme='dark'] .quiz-question {
+            color: #f1f5f9;
+        }
+
+        body.dark-theme .mcq-option-item,
+        [data-theme='dark'] .mcq-option-item {
+            background: #0f172a;
+            border-color: #334155;
+            color: #e2e8f0;
+        }
+
+        body.dark-theme .mcq-option-item:hover,
+        [data-theme='dark'] .mcq-option-item:hover {
+            background: #1e3a5f;
+            border-color: #38bdf8;
+        }
+
+        body.dark-theme .mcq-option-item.selected-correct,
+        [data-theme='dark'] .mcq-option-item.selected-correct {
+            background: #064e3b !important;
+            color: #a7f3d0 !important;
+            border-color: #10b981 !important;
+        }
+
+        body.dark-theme .mcq-option-item.selected-wrong,
+        [data-theme='dark'] .mcq-option-item.selected-wrong {
+            background: #7f1d1d !important;
+            color: #fecaca !important;
+            border-color: #ef4444 !important;
+        }
+
+        body.dark-theme .quiz-answer,
+        [data-theme='dark'] .quiz-answer {
+            background: #0f172a;
+            border-color: #10b981;
+            color: #cbd5e1;
+        }
+    
+        /* Universal Single-Scrollbar Fix */
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            padding-bottom: 0 !important;
+            height: 100% !important;
+            max-height: 100vh !important;
+            max-height: 100dvh !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            display: block !important;
+            box-sizing: border-box !important;
+        }
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        .topbar {
+            height: 64px !important;
+            width: 100% !important;
+            margin: 0 !important;
+            box-sizing: border-box !important;
+            flex-shrink: 0 !important;
+            position: relative !important;
+            z-index: 100;
+        }
+        .layout {
+            display: flex !important;
+            height: calc(100vh - 64px) !important;
+            height: calc(100dvh - 64px) !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            box-sizing: border-box !important;
+        }
+        .sidebar {
+            width: 290px;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            flex-shrink: 0 !important;
+            box-sizing: border-box !important;
+        }
+        .content {
+            flex: 1 1 auto !important;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            padding: 36px 48px !important;
+            box-sizing: border-box !important;
+            scroll-behavior: smooth;
+        }
+        .content-container {
+            max-width: 940px !important;
+            margin: 0 auto !important;
+            padding-bottom: 80px !important;
+            box-sizing: border-box !important;
+        }
     </style>
+    <!-- Modern Typography & Unified Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/unified_notes.css">
 </head>
 
 <body>
 
-    <!-- Sidebar Navigation -->
-    <aside class="sidebar">
-        <div class="sidebar-brand">
-            <span>AFM • Ch 9 Quick</span>
-            <button class="theme-toggle" onclick="toggleTheme()">☀️ / 🌙</button>
+    <header class="topbar">
+        <div class="topbar-left">
+            <a href="../../notes/afmnotes.html" class="back-hub-btn">← AFM Hub</a>
+            <div class="chapter-title">Chapter 9: Derivatives Analysis &amp; Valuation (⚡ Quick Revision)</div>
         </div>
-
-        <div class="nav-group-title">Revision Sections</div>
-        <a href="#formulas" class="nav-link">1. Master Formula Sheet</a>
-        <a href="#futures-hedging" class="nav-link">2. Index Futures Hedging</a>
-        <a href="#options-matrix" class="nav-link">3. Option Payoff Matrix</a>
-        <a href="#valuation-models" class="nav-link">4. Binomial &amp; Black-Scholes</a>
-        <a href="#greeks-table" class="nav-link">5. The Greeks Summary</a>
-        <a href="#credit-real" class="nav-link">6. Credit &amp; Real Options</a>
-        <a href="#exam-traps" class="nav-link">7. Common Exam Traps</a>
-    </aside>
-
-    <main class="main-wrapper">
-        <header class="header-section">
-            <div class="breadcrumbs">
-                <a href="../../notes/afmnotes.html">← Quick Notes Hub</a>
-                <span>/</span>
-                <span>Chapter 9</span>
+        <div class="topbar-right">
+            <div class="progress-container" title="Reading Progress">
+                <div class="progress-bar" id="reading-progress"></div>
             </div>
-            <h1>Derivatives Analysis and Valuation (Quick Revision)</h1>
-            <div class="chapter-meta">
-                <span class="chapter-pill">High-Yield Revision</span>
-                <span>Formulas • Decision Rules • Strategy Matrices • Exam Pitfalls</span>
-            </div>
-        </header>
-
-        <!-- Mode Toggle Switcher -->
-        <div class="mode-bar">
-            <a href="./derivatives_valuation.html" class="mode-btn active">⚡ Quick Revision Notes &amp; Formula
-                Sheet</a>
-            <a href="./derivatives_valuation_full.html" class="mode-btn">📖 Full Comprehensive Notes (Topic-Wise +
-                Worked TYK)</a>
+            <button class="toggle-btn" id="sidebar-toggle" onclick="toggleSidebar()">☰ Contents</button>
         </div>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-title">Chapter Contents</div>
+            <nav>
+                <ul>
+                    <li><a href="#formulas" class="active">1. Master Formula Sheet</a></li>
+                    <li><a href="#futures-hedging">2. Index Futures Hedging</a></li>
+                    <li><a href="#options-matrix">3. Option Payoff Matrix</a></li>
+                    <li><a href="#valuation-models">4. Binomial &amp; Black-Scholes</a></li>
+                    <li><a href="#greeks-table">5. The Greeks Summary</a></li>
+                    <li><a href="#credit-real">6. Credit &amp; Real Options</a></li>
+                    <li><a href="#exam-traps">7. Common Exam Traps</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="content-container">
+
+                <div class="chapter-header">
+                    <div class="chapter-badge">CA Final AFM • Paper 2</div>
+                    <h1>Chapter 9: Derivatives Analysis &amp; Valuation</h1>
+                    <p>Master formula sheets, stock index futures &amp; beta hedging, option strategies &amp; payoff matrices, Binomial model, Black-Scholes-Merton formula, Option Greeks sensitivity mapping, and credit &amp; real options.</p>
+                    <div class="chapter-meta">
+                        <span>📚 Standard Curriculum Study Material</span>
+                        <span>⏱️ Read Time: ~50 mins</span>
+                        <span>🎯 Exam Weightage: 20 – 30 Marks</span>
+                    </div>
+                </div>
+<!-- Mode Toggle Switcher -->
+        
 
         <!-- Section 1: Master Formula Sheet -->
         <section id="formulas" class="card">
@@ -623,6 +855,43 @@
                     </tbody>
                 </table>
             </div>
+                    <div class="quiz-card">
+                <div class="quiz-badge">💡 Practical Numerical • Dividend in Rupees Adjustment</div>
+                <div class="quiz-question"><strong>Question 1:</strong> A stock is currently trading at ₹100. It will pay a dividend of ₹1.00 in one month. The risk-free interest rate is 12% per annum with continuous compounding. Given $e^{0.01} = 1.01005$ and $e^{0.03} = 1.03045$, what is the theoretical Fair Futures Price (FFP) for a 3-month futures contract?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'deriv-q1-ans')">A) ₹102.02</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q1-ans')">B) ₹103.05</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q1-ans')">C) ₹104.09</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q1-ans')">D) ₹101.00</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('deriv-q1-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="deriv-q1-ans">
+                    <strong>Correct Answer: Option A (₹102.02)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    $$\text{PV of Dividend} = \frac{₹1.00}{e^{0.12 \times 1/12}} = \frac{₹1.00}{e^{0.01}} = \frac{₹1.00}{1.01005} = ₹0.99$$
+                    $$\text{Adjusted Spot Price} = S_0 - \text{PV}(\text{Div}) = ₹100 - ₹0.99 = ₹99.01$$
+                    $$\text{Fair Futures Price} = \text{Adjusted Spot} \times e^{rt} = 99.01 \times e^{0.12 \times 3/12} = 99.01 \times e^{0.03} = 99.01 \times 1.03045 = \mathbf{₹102.02}$$
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Practical Numerical • Storage Cost Adjustment</div>
+                <div class="quiz-question"><strong>Question 2:</strong> The spot price of Gold is ₹800 per gram. The risk-free interest rate is 12% per annum (3% per quarter). Storage costs of ₹5.00 per gram are payable at the end of 3 months. What is the fair price of a 3-month gold futures contract under simple quarterly compounding?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q2-ans')">A) ₹805.00</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q2-ans')">B) ₹824.00</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'deriv-q2-ans')">C) ₹829.00</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q2-ans')">D) ₹819.00</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('deriv-q2-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="deriv-q2-ans">
+                    <strong>Correct Answer: Option C (₹829.00)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    $$\text{PV of Storage Cost} = \frac{₹5.00}{1 + 0.03} = ₹4.854$$
+                    $$\text{Adjusted Spot Price} = \text{Spot Price} + \text{PV}(\text{Storage}) = 800 + 4.854 = ₹804.854$$
+                    $$\text{Fair Futures Price} = 804.854 \times (1 + 0.03) = \mathbf{₹829.00}$$
+                </div>
+            </div>
         </section>
 
         <!-- Section 2: Index Futures Hedging -->
@@ -649,6 +918,42 @@
                 <p>$$\text{Maintenance Margin} = 75\% \text{ of Initial Margin (or specified %)}$$</p>
                 <p>If account drops below maintenance margin $\implies$ <strong>Margin Call</strong> for full deficit
                     back to <strong>Initial Margin</strong>.</p>
+            </div>
+                    <div class="quiz-card">
+                <div class="quiz-badge">💡 Portfolio Beta Hedging • Contract Sizing</div>
+                <div class="quiz-question"><strong>Question 3:</strong> An investment manager holds an equity portfolio valued at ₹10,00,00,000 with a portfolio beta of 1.40. The manager wishes to reduce the portfolio&#39;s effective beta to 0.80 using 3-month Nifty index futures. Nifty futures currently trade at 18,000 with a contract lot size of 50. What futures position should the manager take, and how many contracts must be traded?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'deriv-q3-ans')">A) Short 67 contracts of Nifty futures</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q3-ans')">B) Long 67 contracts of Nifty futures</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q3-ans')">C) Short 156 contracts of Nifty futures</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q3-ans')">D) Short 89 contracts of Nifty futures</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('deriv-q3-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="deriv-q3-ans">
+                    <strong>Correct Answer: Option A (Short 67 contracts)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    $$\text{Value of 1 Futures Contract } (V_f) = 18,000 \times 50 = ₹9,00,000$$
+                    $$N = \frac{V_p \times (\beta_T - \beta_p)}{V_f} = \frac{₹10,00,00,000 \times (0.80 - 1.40)}{₹9,00,000} = \frac{-₹60,00,000}{₹9,00,000} = \mathbf{-66.67 \approx -67\text{ contracts}}$$
+                    The negative sign denotes that the manager must <strong>Short (Sell) 67 contracts</strong> of Nifty index futures.
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Minimum Variance Hedge Ratio • Optimal Beta</div>
+                <div class="quiz-question"><strong>Question 4:</strong> The variance of monthly returns of a stock is 144, and the variance of monthly returns of its stock futures contract is 324. The correlation coefficient between the stock and futures returns is 0.75. What is the Minimum Variance Hedge Ratio (optimal beta) for hedging this stock position?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q4-ans')">A) 0.75</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'deriv-q4-ans')">B) 0.50</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q4-ans')">C) 0.33</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q4-ans')">D) 1.125</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('deriv-q4-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="deriv-q4-ans">
+                    <strong>Correct Answer: Option B (0.50)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    $$\sigma_s = \sqrt{144} = 12 \quad \text{and} \quad \sigma_f = \sqrt{324} = 18$$
+                    $$\text{Minimum Variance Hedge Ratio } (h^*) = r_{s,f} \times \frac{\sigma_s}{\sigma_f} = 0.75 \times \frac{12}{18} = 0.75 \times 0.6667 = \mathbf{0.50}$$
+                </div>
             </div>
         </section>
 
@@ -729,6 +1034,45 @@
                     </tbody>
                 </table>
             </div>
+                    <div class="quiz-card">
+                <div class="quiz-badge">💡 Option Strategies • Long Straddle Analysis</div>
+                <div class="quiz-question"><strong>Question 5:</strong> An investor anticipates high price volatility in ABC Ltd ahead of its earnings release and enters a Long Straddle by purchasing a 3-month Call option with strike ₹500 at premium ₹30 and a 3-month Put option with strike ₹500 at premium ₹20. What are the upper and lower breakeven points of this straddle, and what is the net profit/(loss) if the stock expires at ₹580?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'deriv-q5-ans')">A) Breakevens: ₹450 &amp; ₹550; Net Profit = ₹30</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q5-ans')">B) Breakevens: ₹470 &amp; ₹530; Net Profit = ₹50</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q5-ans')">C) Breakevens: ₹480 &amp; ₹520; Net Profit = ₹80</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q5-ans')">D) Breakevens: ₹450 &amp; ₹550; Net Loss = ₹20</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('deriv-q5-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="deriv-q5-ans">
+                    <strong>Correct Answer: Option A</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    $$\text{Total Premium Paid} = 30 + 20 = ₹50$$
+                    $$\text{Upper Breakeven Point} = \text{Strike} + \text{Total Premium} = 500 + 50 = \mathbf{₹550}$$
+                    $$\text{Lower Breakeven Point} = \text{Strike} - \text{Total Premium} = 500 - 50 = \mathbf{₹450}$$
+                    At expiry $S_T = ₹580$: Call Payoff $= 580 - 500 = ₹80$; Put Payoff $= ₹0$.<br>
+                    $$\text{Net Profit} = \text{Total Payoff} - \text{Total Premium} = 80 - 50 = \mathbf{₹30}$$
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Option Strategies • Bull Call Spread Payoff</div>
+                <div class="quiz-question"><strong>Question 6:</strong> An investor constructs a Bull Call Spread by purchasing a Call option with strike $K_1 = ₹400$ at a premium of ₹35 and selling a Call option with strike $K_2 = ₹460$ at a premium of ₹15. What is the net initial debit, maximum potential profit, and maximum potential loss of this spread?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'deriv-q6-ans')">A) Net Debit = ₹20; Max Profit = ₹40; Max Loss = ₹20</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q6-ans')">B) Net Debit = ₹35; Max Profit = ₹60; Max Loss = ₹35</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q6-ans')">C) Net Debit = ₹20; Max Profit = ₹60; Max Loss = ₹20</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q6-ans')">D) Net Debit = ₹50; Max Profit = ₹20; Max Loss = ₹50</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('deriv-q6-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="deriv-q6-ans">
+                    <strong>Correct Answer: Option A</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    $$\text{Net Initial Debit (Max Loss)} = 35 - 15 = \mathbf{₹20}$$
+                    $$\text{Spread Difference} = K_2 - K_1 = 460 - 400 = ₹60$$
+                    $$\text{Maximum Profit} = \text{Spread Difference} - \text{Net Debit} = 60 - 20 = \mathbf{₹40}$$
+                </div>
+            </div>
         </section>
 
         <!-- Section 4: Valuation Models -->
@@ -757,6 +1101,61 @@
             <h3>C. Put-Call Parity Theorem</h3>
             <div class="formula-box">
                 $$C_0 + X \cdot e^{-rt} = P_0 + S_0 \implies P_0 = C_0 + X \cdot e^{-rt} - S_0$$
+            </div>
+                    <div class="quiz-card">
+                <div class="quiz-badge">💡 Valuation Models • Binomial Risk-Neutral Pricing</div>
+                <div class="quiz-question"><strong>Question 7:</strong> A stock currently trades at ₹200. Over the next 6 months, it can either increase by 20% to ₹240 ($u = 1.20$) or decrease by 10% to ₹180 ($d = 0.90$). The risk-free rate of interest is 8% per annum continuously compounded ($e^{0.08 \times 0.5} = e^{0.04} = 1.0408$). What is the risk-neutral probability of an upward movement ($p$) and the fair price of a 6-month European Call option with strike price $K = ₹210$?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'deriv-q7-ans')">A) p = 0.4693; Call Value = ₹13.53</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q7-ans')">B) p = 0.5000; Call Value = ₹15.00</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q7-ans')">C) p = 0.6000; Call Value = ₹18.25</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q7-ans')">D) p = 0.4693; Call Value = ₹28.82</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('deriv-q7-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="deriv-q7-ans">
+                    <strong>Correct Answer: Option A</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    $$p = \frac{e^{rt} - d}{u - d} = \frac{1.0408 - 0.90}{1.20 - 0.90} = \frac{0.1408}{0.30} = \mathbf{0.46933}$$
+                    Payoffs at expiry: $C_u = \max(240 - 210, 0) = ₹30$; $C_d = \max(180 - 210, 0) = ₹0$.<br>
+                    $$\text{Expected Payoff} = (0.46933 \times 30) + (1 - 0.46933) \times 0 = ₹14.08$$
+                    $$\text{Call Option Value} = ₹14.08 \times e^{-0.04} = \frac{₹14.08}{1.0408} = \mathbf{₹13.53}$$
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Valuation Models • Put-Call Parity Arbitrage</div>
+                <div class="quiz-question"><strong>Question 8:</strong> A 6-month European Call option on a non-dividend-paying stock with strike price $K = ₹100$ trades at ₹12.00. The current stock price is ₹105. The continuously compounded risk-free rate is 10% per annum ($e^{-0.10 \times 0.5} = e^{-0.05} = 0.9512$). According to Put-Call Parity, what is the fair theoretical price of a 6-month European Put option on the same stock with strike price ₹100?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'deriv-q8-ans')">A) ₹2.12</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q8-ans')">B) ₹4.88</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q8-ans')">C) ₹7.12</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q8-ans')">D) ₹5.00</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('deriv-q8-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="deriv-q8-ans">
+                    <strong>Correct Answer: Option A (₹2.12)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    $$\text{Put-Call Parity Formula}: C + K e^{-rt} = P + S_0$$
+                    $$12.00 + (100 \times 0.9512) = P + 105$$
+                    $$12.00 + 95.12 = P + 105 \implies 107.12 = P + 105$$
+                    $$P = 107.12 - 105 = \mathbf{₹2.12}$$
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Valuation Models • Black-Scholes-Merton Interpretation</div>
+                <div class="quiz-question"><strong>Question 9:</strong> In the Black-Scholes-Merton European Call pricing formula $C = S_0 N(d_1) - K e^{-rt} N(d_2)$, what do the cumulative normal distribution terms $N(d_1)$ and $N(d_2)$ represent conceptually?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'deriv-q9-ans')">A) N(d1) represents the Delta (hedge ratio) of the call option; N(d2) represents the risk-neutral probability that the call option will expire in-the-money</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q9-ans')">B) N(d1) represents the risk-free discount rate; N(d2) represents the stock volatility parameter</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q9-ans')">C) N(d1) represents corporate default probability; N(d2) represents bond recovery rate</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q9-ans')">D) N(d1) and N(d2) always equal 0.50 in complete capital markets</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('deriv-q9-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="deriv-q9-ans">
+                    <strong>Correct Answer: Option A</strong><br>
+                    <strong>Detailed Explanation:</strong> In Black-Scholes-Merton valuation, $N(d_1) = \frac{\partial C}{\partial S}$ is the option's Delta ($\Delta$), indicating the number of shares needed to create a riskless hedge per written call. $N(d_2)$ represents the risk-neutral probability that the terminal stock price $S_T$ will exceed the strike price $K$ (i.e. the probability of exercise).
+                </div>
             </div>
         </section>
 
@@ -815,6 +1214,39 @@
                     </tbody>
                 </table>
             </div>
+                    <div class="quiz-card">
+                <div class="quiz-badge">💡 Option Greeks • Delta Neutrality</div>
+                <div class="quiz-question"><strong>Question 10:</strong> A portfolio manager writes 10,000 European Call options on the Nifty index. The delta ($\Delta$) of each call option is +0.65. To make the entire portfolio "Delta-Neutral" against small market price fluctuations, what transaction must the manager execute in the underlying index?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q10-ans')">A) Sell 6,500 units of Nifty index</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'deriv-q10-ans')">B) Buy 6,500 units of Nifty index</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q10-ans')">C) Buy 10,000 units of Nifty index</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q10-ans')">D) Sell 3,500 units of Nifty index</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('deriv-q10-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="deriv-q10-ans">
+                    <strong>Correct Answer: Option B (Buy 6,500 units)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    $$\text{Portfolio Delta} = -10,000 \times (+0.65) = -6,500$$
+                    To achieve Delta-Neutrality ($\Delta_{\text{total}} = 0$), the manager requires a delta addition of $+6,500$. Since each unit of underlying stock/index carries a delta of $+1.00$, the manager must <strong>Buy 6,500 units</strong> of the Nifty index.
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Option Greeks • Gamma &amp; Vega Sensitivity</div>
+                <div class="quiz-question"><strong>Question 11:</strong> At what moneyness level do Option Gamma ($\Gamma$) and Option Vega ($\nu$) reach their peak values, and what does this imply for risk management?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q11-ans')">A) Deep out-of-the-money options have peak Gamma and Vega</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'deriv-q11-ans')">B) Both Gamma and Vega reach their absolute peak for At-The-Money (ATM) options, meaning ATM options experience the fastest delta shifts and highest sensitivity to changes in implied volatility</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q11-ans')">C) Deep in-the-money options have highest Gamma and Vega</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q11-ans')">D) Gamma is constant for all option strikes regardless of underlying price</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('deriv-q11-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="deriv-q11-ans">
+                    <strong>Correct Answer: Option B</strong><br>
+                    <strong>Detailed Explanation:</strong> Both Gamma ($\frac{\partial^2 C}{\partial S^2}$) and Vega ($\frac{\partial C}{\partial \sigma}$) peak when options are At-The-Money (ATM). For ATM options, any small change in stock price causes the largest shift in Delta (high Gamma risk), and option premiums are most sensitive to changes in market implied volatility (high Vega risk).
+                </div>
+            </div>
         </section>
 
         <!-- Section 6: Credit & Real Options -->
@@ -858,6 +1290,39 @@
                     </tbody>
                 </table>
             </div>
+                    <div class="quiz-card">
+                <div class="quiz-badge">💡 Credit Derivatives • Credit Default Swap Settlement</div>
+                <div class="quiz-question"><strong>Question 12:</strong> In a Credit Default Swap (CDS) contract with a notional principal of ₹50 Crores, the reference corporate entity defaults. Under the "Cash Settlement" method, an independent poll determines that the defaulted bonds have a post-default recovery market value of 35% of face value. What net settlement amount must the Protection Seller pay to the Protection Buyer?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q12-ans')">A) ₹50.00 Crores</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q12-ans')">B) ₹17.50 Crores</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'deriv-q12-ans')">C) ₹32.50 Crores</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q12-ans')">D) ₹0.00 Crores</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('deriv-q12-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="deriv-q12-ans">
+                    <strong>Correct Answer: Option C (₹32.50 Crores)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    $$\text{Loss Given Default (LGD \%)} = 100\% - \text{Recovery Rate} = 100\% - 35\% = 65\%$$
+                    $$\text{Cash Settlement Amount} = \text{Notional Principal} \times (1 - \text{Recovery Rate}) = ₹50\text{ Cr} \times 0.65 = \mathbf{₹32.50\text{ Crores}}$$
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Real Options • Financial Option Mapping</div>
+                <div class="quiz-question"><strong>Question 13:</strong> In strategic capital budgeting, how are the Real Option to Expand and the Real Option to Abandon mapped onto standard financial option contracts?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q13-ans')">A) Option to Expand is a Put option; Option to Abandon is a Call option</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'deriv-q13-ans')">B) Option to Expand is a Call option (where follow-on capital investment is strike price K); Option to Abandon is a Put option (where liquidation/salvage value is strike price K)</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q13-ans')">C) Both are Forward contracts with compulsory execution</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q13-ans')">D) Option to Expand is an interest rate collar; Option to Abandon is a CDS</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('deriv-q13-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="deriv-q13-ans">
+                    <strong>Correct Answer: Option B</strong><br>
+                    <strong>Detailed Explanation:</strong> In Real Options analysis: (1) An Option to Expand gives the firm the right to invest additional capital (Exercise Price $K$) to acquire larger future operating cash flows (Asset Price $S$) $\implies$ Call Option. (2) An Option to Abandon gives the firm the right to exit an underperforming project and sell the assets for salvage/liquidation value (Exercise Price $K$) instead of continuing operations $\implies$ Put Option.
+                </div>
+            </div>
         </section>
 
         <!-- Section 7: Common Exam Traps -->
@@ -879,24 +1344,171 @@
                     Collar), always tabulate columns: $S_T$, Call Payoff, Put Payoff, Total Gross Payoff, Total Premium
                     Paid, Net Profit/(Loss).</li>
             </ul>
+                    <div class="quiz-card">
+                <div class="quiz-badge">💡 Exam Trap • Reverse Working of Spot Price</div>
+                <div class="quiz-question"><strong>Question 14:</strong> On 1st September, the BSE Sensex futures contract expiring on 1st January (4 months duration) trades at 58,580. The dividend yield on the index is 6% per annum (2% for 4 months), and the risk-free rate is 9% per annum (3% for 4 months). Using the Cost of Carry formula with periodic compounding, what is the theoretical Spot Price of the Sensex on 1st September?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q14-ans')">A) 58,580</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'deriv-q14-ans')">B) 58,000</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q14-ans')">C) 59,160</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q14-ans')">D) 60,000</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('deriv-q14-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="deriv-q14-ans">
+                    <strong>Correct Answer: Option B (58,000)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    $$\text{Fair Futures Price} = \text{Spot Price} \times [1 + (r - y)]$$
+                    $$58,580 = \text{Spot Price} \times [1 + (0.03 - 0.02)] = \text{Spot Price} \times 1.01$$
+                    $$\text{Spot Price} = \frac{58,580}{1.01} = \mathbf{58,000}$$
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Exam Trap • Contango vs Backwardation Basis</div>
+                <div class="quiz-question"><strong>Question 15:</strong> A stock&#39;s cash spot price is ₹2,400 while its 1-month futures contract trades at ₹2,300. Which market condition does this scenario reflect, and what is the market "Basis"?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q15-ans')">A) Contango market with Basis of -₹100</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'deriv-q15-ans')">B) Backwardation market with Basis of +₹100</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q15-ans')">C) Inverted Contango with zero basis</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'deriv-q15-ans')">D) Perfect carrying cost equilibrium</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('deriv-q15-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="deriv-q15-ans">
+                    <strong>Correct Answer: Option B (Backwardation; Basis = +₹100)</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    $$\text{Basis} = \text{Spot Price} - \text{Futures Price} = 2,400 - 2,300 = \mathbf{+₹100}$$
+                    When Futures Price is lower than Spot Price (Basis is positive), the futures curve is downward sloping, which represents a <strong>Backwardation</strong> market (often driven by high convenience yield or severe near-term physical shortages). In a normal Contango market, Futures Price exceeds Spot Price (Basis is negative).
+                </div>
+            </div>
         </section>
 
         <footer
             style="margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-secondary); font-size: 13px;">
-            CA Final Advanced Financial Management (AFM) • Chapter 9 Quick Revision Summary
+            CA Final Advanced Financial Management (AFM) â€¢ Chapter 9 Quick Revision Summary
         </footer>
-    </main>
+            </div>
+        </main>
+    </div>
 
+    <!-- Unified Chapter Navigation & Interactive Scripts -->
     <script>
-        function toggleTheme() {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', targetTheme);
-            localStorage.setItem('theme', targetTheme);
+        function checkOption(el, isCorrect, ansId) {
+            var parent = el.closest('.mcq-container') || el.closest('.quiz-card') || el.closest('.problem-card');
+            if (!parent) return;
+            var allOptions = parent.querySelectorAll('.mcq-option-item');
+            allOptions.forEach(function(opt) {
+                opt.style.pointerEvents = 'none';
+                if (opt.getAttribute('data-correct') === 'true') {
+                    opt.classList.add('reveal-correct');
+                }
+            });
+            var fb = parent.querySelector('.mcq-feedback');
+            if (isCorrect) {
+                el.classList.add('selected-correct');
+                if (fb) {
+                    fb.innerHTML = '✓ Correct! Outstanding work.';
+                    fb.className = 'mcq-feedback correct';
+                }
+            } else {
+                el.classList.add('selected-incorrect');
+                if (fb) {
+                    fb.innerHTML = '✗ Incorrect. Review the detailed solution below.';
+                    fb.className = 'mcq-feedback incorrect';
+                }
+            }
+            var ans = document.getElementById(ansId);
+            if (ans) {
+                ans.style.display = 'block';
+            }
         }
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        document.documentElement.setAttribute('data-theme', savedTheme);
+
+        function toggleAnswer(ansId) {
+            var ans = document.getElementById(ansId);
+            if (!ans) return;
+            var isHidden = (ans.style.display === 'none' || ans.style.display === '');
+            ans.style.display = isHidden ? 'block' : 'none';
+            if (isHidden) {
+                var parent = ans.closest('.mcq-container') || ans.closest('.quiz-card') || ans.closest('.problem-card');
+                if (parent) {
+                    var allOptions = parent.querySelectorAll('.mcq-option-item');
+                    allOptions.forEach(function(opt) {
+                        if (opt.getAttribute('data-correct') === 'true') {
+                            opt.classList.add('reveal-correct');
+                        }
+                    });
+                }
+            }
+        }
+
+        function toggleSidebar() {
+            var sb = document.getElementById('sidebar');
+            if (!sb) return;
+            if (window.innerWidth <= 900) {
+                sb.classList.toggle('mobile-open');
+            } else {
+                sb.classList.toggle('hidden');
+            }
+        }
+
+        // Reading progress tracking & sidebar link highlighting
+        var contentEl = document.querySelector('.content');
+        var progressBar = document.getElementById('reading-progress');
+        var sections = document.querySelectorAll('.section-card, section[id], .theory-topic, .problem-card');
+        var sidebarLinks = document.querySelectorAll('.sidebar a');
+
+        function updateReadingProgressColor(progressBar, progress) {
+            var r, g, b;
+            if (progress <= 33) {
+                var t = progress / 33;
+                r = Math.round(239 + (234 - 239) * t);
+                g = Math.round(68 + (179 - 68) * t);
+                b = Math.round(68 + (8 - 68) * t);
+            } else if (progress <= 66) {
+                var t = (progress - 33) / 33;
+                r = Math.round(234 + (34 - 234) * t);
+                g = Math.round(179 + (197 - 179) * t);
+                b = Math.round(8 + (94 - 8) * t);
+            } else {
+                var t = (progress - 66) / 34;
+                r = Math.round(34 + (16 - 34) * t);
+                g = Math.round(197 + (185 - 197) * t);
+                b = Math.round(94 + (129 - 94) * t);
+            }
+            progressBar.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+            progressBar.style.boxShadow = '0 0 8px rgba(' + r + ',' + g + ',' + b + ', 0.45)';
+        }
+
+        if (progressBar) { updateReadingProgressColor(progressBar, 0); }
+
+        if (contentEl && progressBar) {
+            contentEl.addEventListener('scroll', function() {
+                var totalScroll = contentEl.scrollHeight - contentEl.clientHeight;
+                if (totalScroll > 0) {
+                    var currentScroll = contentEl.scrollTop;
+                    var progress = (currentScroll / totalScroll) * 100;
+                    progressBar.style.width = progress + '%';
+                    updateReadingProgressColor(progressBar, progress);
+                }
+
+                var current = '';
+                sections.forEach(function(section) {
+                    var sectionTop = section.offsetTop - contentEl.offsetTop;
+                    if (contentEl.scrollTop >= sectionTop - 140) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                if (current) {
+                    sidebarLinks.forEach(function(link) {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + current) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
     </script>
 </body>
-
 </html>
+

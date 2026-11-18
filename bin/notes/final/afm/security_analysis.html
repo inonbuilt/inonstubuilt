@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,9 +11,9 @@
     <meta name="title"
         content="Chapter 4: Security Analysis - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
     <meta name="description"
-        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 4: Security Analysis. Comprehensive CA Final AFM Chapter 4 Security Analysis notes. In-depth EIC framework, technical indicators, EMH forms, and 100% solved ICAI Study Material questions.">
+        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 4: Security Analysis. Comprehensive CA Final AFM Chapter 4 Security Analysis notes. In-depth EIC framework, technical indicators, EMH forms, and 100% solved Standard Curriculum questions.">
     <meta name="keywords"
-        content="Security Analysis CA Final AFM, Fundamental Analysis EIC framework, Technical Analysis charts, Efficient Market Hypothesis EMH, Chapter 4 notes, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+        content="Security Analysis CA Final AFM, Fundamental Analysis EIC framework, Technical Analysis charts, Efficient Market Hypothesis EMH, Chapter 4 notes, CA Final AFM Paper 2, Standard Curriculum AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
     <meta name="author" content="Calcium Notes">
     <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/security_analysis.html">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -26,7 +26,7 @@
     <meta property="og:title"
         content="Chapter 4: Security Analysis - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
     <meta property="og:description"
-        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 4: Security Analysis. Comprehensive CA Final AFM Chapter 4 Security Analysis notes. In-depth EIC framework, technical indicators, EMH forms, and 100% solved ICAI Study Material questions.">
+        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 4: Security Analysis. Comprehensive CA Final AFM Chapter 4 Security Analysis notes. In-depth EIC framework, technical indicators, EMH forms, and 100% solved Standard Curriculum questions.">
     <meta property="og:image" content="https://www.calciumnotes.com/og-image.png">
     <meta property="og:site_name" content="Calcium Notes">
     <meta property="og:locale" content="en_IN">
@@ -37,7 +37,7 @@
     <meta name="twitter:title"
         content="Chapter 4: Security Analysis - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
     <meta name="twitter:description"
-        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 4: Security Analysis. Comprehensive CA Final AFM Chapter 4 Security Analysis notes. In-depth EIC framework, technical indicators, EMH forms, and 100% solved ICAI Study Material questions.">
+        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 4: Security Analysis. Comprehensive CA Final AFM Chapter 4 Security Analysis notes. In-depth EIC framework, technical indicators, EMH forms, and 100% solved Standard Curriculum questions.">
     <meta name="twitter:image" content="https://www.calciumnotes.com/og-image.png">
 
     <!-- Schema.org Educational & FAQ Structured Data -->
@@ -46,9 +46,9 @@
     "@context": "https://schema.org",
     "@type": "LearningResource",
     "name": "CA Final AFM Chapter 4: Security Analysis (Quick Revision)",
-    "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 4: Security Analysis. Comprehensive CA Final AFM Chapter 4 Security Analysis notes. In-depth EIC framework, technical indicators, EMH forms, and 100% solved ICAI Study Material questions.",
+    "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 4: Security Analysis. Comprehensive CA Final AFM Chapter 4 Security Analysis notes. In-depth EIC framework, technical indicators, EMH forms, and 100% solved Standard Curriculum questions.",
     "learningResourceType": "Revision Cheat Sheet",
-    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "educationalLevel": "CA Final (Standard Curriculum)",
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "author": {
@@ -282,9 +282,10 @@
         .progress-bar {
             height: 100%;
             width: 0%;
-            background: var(--primary);
+            background-color: rgb(239, 68, 68);
+            box-shadow: 0 0 8px rgba(239, 68, 68, 0.45);
             border-radius: 999px;
-            transition: width 0.15s ease;
+            transition: width 0.1s ease, background-color 0.15s ease, box-shadow 0.15s ease;
         }
 
         .toggle-btn {
@@ -794,6 +795,167 @@
         .calc {
             font-family: var(--notes-table) !important;
         }
+
+        /* MCQ Interactive Styling */
+        .quiz-card {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            border-left: 4px solid var(--primary-600);
+        }
+
+        .quiz-badge {
+            display: inline-block;
+            background: #eff6ff;
+            color: #1d4ed8;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            border: 1px solid #bfdbfe;
+        }
+
+        .mcq-options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            margin: 12px 0 14px 0;
+        }
+
+        .mcq-option-item {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 0.88rem;
+            color: var(--slate-800);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .mcq-option-item:hover {
+            background: #f0fdf4;
+            border-color: #22c55e;
+            transform: translateX(3px);
+        }
+
+        .mcq-option-item.selected-correct {
+            background: #dcfce7 !important;
+            border-color: #22c55e !important;
+            color: #166534 !important;
+            font-weight: 600;
+        }
+
+        .mcq-option-item.selected-correct::after {
+            content: " ✓ Correct";
+            float: right;
+            font-weight: 700;
+            color: #16a34a;
+        }
+
+        .mcq-option-item.selected-wrong {
+            background: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #991b1b !important;
+            font-weight: 600;
+        }
+
+        .mcq-option-item.selected-wrong::after {
+            content: " ✗ Incorrect";
+            float: right;
+            font-weight: 700;
+            color: #dc2626;
+        }
+
+        [data-theme='dark'] .mcq-option-item.selected-correct,
+        body.dark-theme .mcq-option-item.selected-correct {
+            background: #064e3b !important;
+            color: #a7f3d0 !important;
+            border-color: #10b981 !important;
+        }
+
+        [data-theme='dark'] .mcq-option-item.selected-wrong,
+        body.dark-theme .mcq-option-item.selected-wrong {
+            background: #7f1d1d !important;
+            color: #fecaca !important;
+            border-color: #ef4444 !important;
+        }
+
+        [data-theme='dark'] .mcq-option-item,
+        body.dark-theme .mcq-option-item {
+            background: #1e293b;
+            border-color: #334155;
+            color: #e2e8f0;
+        }
+
+        [data-theme='dark'] .quiz-card,
+        body.dark-theme .quiz-card {
+            background: #0f172a;
+            border-color: #334155;
+        }
+    
+        /* Universal Single-Scrollbar Fix */
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            padding-bottom: 0 !important;
+            height: 100% !important;
+            max-height: 100vh !important;
+            max-height: 100dvh !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            display: block !important;
+            box-sizing: border-box !important;
+        }
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        .topbar {
+            height: 64px !important;
+            width: 100% !important;
+            margin: 0 !important;
+            box-sizing: border-box !important;
+            flex-shrink: 0 !important;
+            position: relative !important;
+            z-index: 100;
+        }
+        .layout {
+            display: flex !important;
+            height: calc(100vh - 64px) !important;
+            height: calc(100dvh - 64px) !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            box-sizing: border-box !important;
+        }
+        .sidebar {
+            width: 290px;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            flex-shrink: 0 !important;
+            box-sizing: border-box !important;
+        }
+        .content {
+            flex: 1 1 auto !important;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            padding: 36px 48px !important;
+            box-sizing: border-box !important;
+            scroll-behavior: smooth;
+        }
+        .content-container {
+            max-width: 940px !important;
+            margin: 0 auto !important;
+            padding-bottom: 80px !important;
+            box-sizing: border-box !important;
+        }
     </style>
 </head>
 
@@ -836,7 +998,7 @@
                     <li><a href="#emh-levels">17. Three Forms of EMH</a></li>
                     <li><a href="#market-anomalies">18. Market Anomalies & Challenges</a></li>
                     <li><a href="#equity-research-tools">19. Equity Research Software</a></li>
-                    <li><a href="#solved-problems">20. Solved ICAI Problems (EMA & Run Test)</a></li>
+                    <li><a href="#solved-problems">20. Solved Practical Problems (EMA & Run Test)</a></li>
                     <li><a href="#self-test-quiz">21. TYK Practice Questions</a></li>
                     <li><a href="#master-summary">22. Quick Revision Summary</a></li>
                 </ul>
@@ -854,7 +1016,7 @@
                         Indicators, Moving Averages), and Efficient Market Theory (Weak, Semi-Strong, Strong forms,
                         Wald-Wolfowitz Run Test &amp; Market Anomalies).</p>
                     <div class="chapter-meta">
-                        <span>📚 ICAI New Scheme Study Material</span>
+                        <span>📚 Standard Curriculum Study Material</span>
                         <span>⏱️ Read Time: ~35 mins</span>
                         <span>🎯 Exam Weightage: 8 – 16 Marks</span>
                     </div>
@@ -1075,7 +1237,7 @@
                     </div>
 
                     <h3 class="sub-heading">4.2 Structural Forces: Michael Porter's Five Forces Model</h3>
-                    <p>ICAI stresses Porter's Five Forces framework for determining the long-run intrinsic profitability
+                    <p>The curriculum stresses Porter's Five Forces framework for determining the long-run intrinsic profitability
                         and pricing power of an industry:</p>
                     <ol>
                         <li><strong>Threat of New Entrants:</strong> High barriers (patents, massive capex, scale
@@ -1135,12 +1297,29 @@
                             </p>
                         </div>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: Fundamental Company Analysis -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 1:</strong> A company's financial statements report a 45% surge in its accounts receivable balance compared to previous periods, while revenue grew by only 6%. What would be a prudent action for an analyst conducting fundamental company analysis?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-1-ans')">A. Treat it unequivocally as a positive sign of booming demand and higher future cash profitability.</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sa-mcq-1-ans')">B. Investigate further to determine whether there are underlying issues with revenue recognition, channel stuffing, or customer collection delays.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-1-ans')">C. Ignore the accounts receivable balance completely and focus solely on trailing price-to-book ratios.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-1-ans')">D. Assume it is a temporary non-operational fluctuation that does not affect quality of earnings.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sa-mcq-1-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sa-mcq-1-ans" style="display:none;">
+                            <strong>Correct Answer: B (Investigate further to determine underlying issues)</strong><br><br>
+                            <strong>Conceptual Working &amp; Explanation:</strong><br>
+                            When accounts receivable expand substantially faster than revenues, a prudent fundamental analyst must probe quality of earnings. Potential hazards include channel stuffing, aggressive/premature revenue recognition, or customer payment difficulties leading to bad debts.
+                        </div>
+                    </div>
+</section>
 
                 <!-- 6. P/E & Dividend Growth -->
                 <section class="section-card" id="pe-ddm-model">
                     <h2 class="section-heading">6. Dividend Growth Model &amp; The P/E Multiple</h2>
-                    <p>ICAI highlights the mathematical connection between the Gordon Dividend Growth Model and the
+                    <p>The curriculum highlights the mathematical connection between the Gordon Dividend Growth Model and the
                         Price-to-Earnings (P/E) Multiple.</p>
 
                     <div class="formula-card">
@@ -1303,7 +1482,24 @@
                             remain in continuous effect until definitive reversal signals are confirmed by both
                             averages.</li>
                     </ul>
-                </section>
+                                    <!-- Topic Quiz: Dow Theory Market Phases -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 2:</strong> Under Charles Dow's theory of stock market trends, which phase of a Primary Bull Market is characterized by astute, informed institutional investors accumulating deeply undervalued stocks while general business sentiment is still depressed?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sa-mcq-2-ans')">A. Accumulation Phase (First Phase).</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-2-ans')">B. Public Participation / Reality Phase (Second Phase).</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-2-ans')">C. Speculation / Distribution Phase (Third Phase).</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-2-ans')">D. Secondary Counter-trend Reaction.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sa-mcq-2-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sa-mcq-2-ans" style="display:none;">
+                            <strong>Correct Answer: A (Accumulation Phase)</strong><br><br>
+                            <strong>Conceptual Working &amp; Explanation:</strong><br>
+                            Dow Theory identifies three sequential phases in a primary bull market: (1) <strong>Accumulation Phase</strong>, where far-sighted investors buy from distressed sellers at bottom valuations; (2) <strong>Public Participation Phase</strong>, driven by improving corporate earnings and widespread public entry; and (3) <strong>Distribution / Speculative Phase</strong>, where public euphoria peaks and astute investors distribute their holdings.
+                        </div>
+                    </div>
+</section>
 
                 <!-- 9. Elliott Wave Theory -->
                 <section class="section-card" id="elliott-wave">
@@ -1353,7 +1549,27 @@
                             between the low of Wave 4 and the peak of Wave 1).
                         </p>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: Elliott Wave Cardinal Rules -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 3:</strong> Elliott Wave Theory dictates that an impulsive cycle contains Waves 1, 2, 3, 4, and 5. Which of the following is an inviolable cardinal rule that can never be violated in a valid impulse wave structure?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-3-ans')">A. Wave 3 must always be longer than both Wave 1 and Wave 5 combined.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-3-ans')">B. Wave 2 must retrace exactly 50% of Wave 1.</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sa-mcq-3-ans')">C. Wave 3 can never be the shortest among the three impulse waves (Waves 1, 3, and 5).</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-3-ans')">D. Wave 4 must enter the price territory of Wave 1 to form a consolidation triangle.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sa-mcq-3-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sa-mcq-3-ans" style="display:none;">
+                            <strong>Correct Answer: C (Wave 3 can never be the shortest impulse wave)</strong><br><br>
+                            <strong>Conceptual Working &amp; Explanation:</strong><br>
+                            The three fundamental cardinal rules of Elliott Wave impulse patterns are:<br>
+                            1. Wave 2 never retraces more than 100% of Wave 1.<br>
+                            2. <strong>Wave 3 is never the shortest impulse wave</strong> among Waves 1, 3, and 5.<br>
+                            3. Wave 4 never overlaps or enters the price territory of Wave 1.
+                        </div>
+                    </div>
+</section>
 
                 <!-- 10. Random Walk Hypothesis -->
                 <section class="section-card" id="random-walk">
@@ -1508,7 +1724,67 @@
                             </ul>
                         </li>
                     </ul>
-                </section>
+                                    <!-- Topic Quiz: Market Breadth Index -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 4:</strong> On a given trading session, the stock exchange records 25 advancing issues, 20 declining issues, and 5 issues unchanged. What is the Market Breadth Index?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-4-ans')">A. 0.111</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sa-mcq-4-ans')">B. 0.100</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-4-ans')">C. 0.500</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-4-ans')">D. 5.000</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sa-mcq-4-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sa-mcq-4-ans" style="display:none;">
+                            <strong>Correct Answer: B (0.100)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\text{Breadth Index} = \frac{\text{Advances} - \text{Declines}}{\text{Total Issues Traded}}$$
+                            $$\text{Total Issues Traded} = 25 + 20 + 5 = 50$$
+                            $$\text{Breadth Index} = \frac{25 - 20}{50} = \frac{5}{50} = \mathbf{0.10}$$
+                            A positive breadth index confirms that advancing issues exceed declining issues, supporting general market strength.
+                        </div>
+                    </div>
+
+                    <!-- Topic Quiz: Confidence Index -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 5:</strong> Compute the Barron's Confidence Index if the prevailing yield on high-grade corporate bonds is 6.00% and the yield on speculative low-grade bonds is 9.00%:</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-5-ans')">A. 150.00%</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sa-mcq-5-ans')">B. 66.67%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-5-ans')">C. 60.00%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-5-ans')">D. 33.33%</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sa-mcq-5-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sa-mcq-5-ans" style="display:none;">
+                            <strong>Correct Answer: B (66.67%)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\text{Confidence Index} = \frac{\text{Yield on High-Grade Bonds}}{\text{Yield on Low-Grade Bonds}} \times 100$$
+                            $$\text{Confidence Index} = \frac{6.00}{9.00} \times 100 = \frac{2}{3} \times 100 = \mathbf{66.67\%}$$
+                            When institutional investors are confident, low-grade yields fall closer to high-grade yields (spread narrows), pushing the Confidence Index higher towards 100%.
+                        </div>
+                    </div>
+
+                    <!-- Topic Quiz: Relative Strength Index -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 6:</strong> Over a 14-day calculation window, a stock exhibits an average gain of 8.00 points on up-days and an average loss of 10.00 points on down-days. What is its 14-day Relative Strength Index (RSI)?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-6-ans')">A. 55.56</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sa-mcq-6-ans')">B. 44.44</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-6-ans')">C. 80.00</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-6-ans')">D. 40.00</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sa-mcq-6-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sa-mcq-6-ans" style="display:none;">
+                            <strong>Correct Answer: B (44.44)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\text{Relative Strength (RS)} = \frac{\text{Average Gain}}{\text{Average Loss}} = \frac{8.00}{10.00} = 0.80$$
+                            $$\text{RSI} = 100 - \left(\frac{100}{1 + \text{RS}}\right) = 100 - \left(\frac{100}{1 + 0.80}\right) = 100 - \frac{100}{1.80} = 100 - 55.556 = \mathbf{44.44}$$
+                            Since RSI is between 30 and 70, the security is in a neutral consolidation range.
+                        </div>
+                    </div>
+</section>
 
                 <!-- 13. Price Chart Patterns -->
                 <section class="section-card" id="price-patterns">
@@ -1559,7 +1835,7 @@
                 <section class="section-card" id="moving-averages">
                     <h2 class="section-heading">14. Quantitative Moving Averages (AMA &amp; EMA)</h2>
                     <p>Moving averages smooth out short-term erratic price fluctuations to reveal the underlying trend
-                        direction. ICAI tests both Arithmetic and Exponential Moving Averages.</p>
+                        direction. The curriculum tests both Arithmetic and Exponential Moving Averages.</p>
 
                     <h3 class="sub-heading">14.1 Arithmetic Moving Average (AMA / SMA)</h3>
                     <div class="formula-card">
@@ -1589,7 +1865,7 @@
                     <div class="formula-card">
                         <div class="formula-label">
                             <span>Exponential Moving Average (EMA) Calculation</span>
-                            <span class="formula-tag">Core ICAI Exam Formula</span>
+                            <span class="formula-tag">Core Exam Formula</span>
                         </div>
                         <div class="formula-math">
                             $$\alpha (\text{Smoothing Constant / Exponent}) = \frac{2}{n + 1}$$
@@ -1618,12 +1894,49 @@
                             line.
                         </p>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: EMA Exponent -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 7:</strong> An equity analyst uses an Exponential Moving Average (EMA) for trend forecasting. What is the value of the exponent (smoothing multiplier) for a 10-day EMA?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-7-ans')">A. 0.2000</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sa-mcq-7-ans')">B. 0.1818</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-7-ans')">C. 0.2222</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-7-ans')">D. 0.0909</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sa-mcq-7-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sa-mcq-7-ans" style="display:none;">
+                            <strong>Correct Answer: B (0.1818)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\text{Exponent Multiplier } \alpha = \frac{2}{n + 1} = \frac{2}{10 + 1} = \frac{2}{11} = \mathbf{0.181818... \approx 0.1818}$$
+                        </div>
+                    </div>
+
+                    <!-- Topic Quiz: EMA Adjustment & New Value -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 8:</strong> The 30-day Simple Moving Average of the market index at the start of January is 60,000. You evaluate technical momentum via EMA with an exponent of 0.125. On the first trading day of January, the index closes at 61,000. What is the new EMA at the end of Day 1?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-8-ans')">A. 61,000</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-8-ans')">B. 60,000</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sa-mcq-8-ans')">C. 60,125</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-8-ans')">D. 59,875</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sa-mcq-8-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sa-mcq-8-ans" style="display:none;">
+                            <strong>Correct Answer: C (60,125)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\text{EMA Adjustment} = (\text{Today's Close} - \text{Previous EMA}) \times \text{Exponent}$$
+                            $$\text{EMA Adjustment} = (61,000 - 60,000) \times 0.125 = 1,000 \times 0.125 = +125$$
+                            $$\text{New EMA} = \text{Previous EMA} + \text{EMA Adjustment} = 60,000 + 125 = \mathbf{60,125}$$
+                        </div>
+                    </div>
+</section>
 
                 <!-- 15. Fundamental vs Technical -->
                 <section class="section-card" id="eval-tech-fund">
                     <h2 class="section-heading">15. Fundamental Analysis vs Technical Analysis Comparison</h2>
-                    <p>ICAI frequently tests the comparative evaluation of these two opposing philosophies:</p>
+                    <p>The curriculum frequently tests the comparative evaluation of these two opposing philosophies:</p>
 
                     <div class="table-wrap">
                         <table>
@@ -1786,7 +2099,43 @@
                                 randomness is <strong>Accepted \(\implies\) Market is Weak-Form Efficient</strong>.
                         </div>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: Run Test Expected Mean -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 9:</strong> An analyst conducts a Wald-Wolfowitz Run Test on daily share price movements to test for Weak-Form Market Efficiency. The sample contains $n_1 = 8$ positive price changes and $n_2 = 6$ negative price changes. What is the expected mean number of runs ($\mu_r$)?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-9-ans')">A. 7.00</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sa-mcq-9-ans')">B. 7.86</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-9-ans')">C. 7.58</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-9-ans')">D. 8.00</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sa-mcq-9-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sa-mcq-9-ans" style="display:none;">
+                            <strong>Correct Answer: B (7.86)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\mu_r = \frac{2 n_1 n_2}{n_1 + n_2} + 1$$
+                            $$\mu_r = \frac{2 \times 8 \times 6}{8 + 6} + 1 = \frac{96}{14} + 1 = 6.857 + 1 = \mathbf{7.857 \approx 7.86}$$
+                        </div>
+                    </div>
+
+                    <!-- Topic Quiz: Auto-Correlation Test -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 10:</strong> A serial correlation test is conducted on equity return series across various time lags. If the computed serial correlation coefficient is close to zero ($r \approx 0$), what does this indicate regarding market efficiency?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-10-ans')">A. Price changes are serially dependent and the market is highly inefficient.</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sa-mcq-10-ans')">B. Successive price changes are linearly independent, confirming Weak-Form Market Efficiency and the Random Walk Hypothesis.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-10-ans')">C. Fundamental analysis can be used to consistently generate superior risk-adjusted alpha.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sa-mcq-10-ans')">D. Strong-form efficiency is guaranteed and insider trading is completely eliminated.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sa-mcq-10-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sa-mcq-10-ans" style="display:none;">
+                            <strong>Correct Answer: B (Confirms Weak-Form Market Efficiency)</strong><br><br>
+                            <strong>Conceptual Working &amp; Explanation:</strong><br>
+                            In serial correlation / auto-correlation tests, a correlation coefficient close to 0 proves that past returns have zero linear predictive power over future price changes. This satisfies the independence assumption of the Random Walk model and validates Weak-Form EMH.
+                        </div>
+                    </div>
+</section>
 
                 <!-- 18. Market Anomalies -->
                 <section class="section-card" id="market-anomalies">
@@ -1830,7 +2179,7 @@
                 <!-- 19. Equity Research Software -->
                 <section class="section-card" id="equity-research-tools">
                     <h2 class="section-heading">19. Institutional Equity Research Software &amp; Data Platforms</h2>
-                    <p>The ICAI Study Material explicitly catalogues contemporary institutional analytical software
+                    <p>The curriculum study material explicitly catalogues contemporary institutional analytical software
                         platforms used by global equity analysts:</p>
 
                     <div class="table-wrap">
@@ -1905,11 +2254,11 @@
 
                 <!-- 20. Solved Problems -->
                 <section class="section-card" id="solved-problems">
-                    <h2 class="section-heading">20. Comprehensive Solved ICAI Practical Problems</h2>
+                    <h2 class="section-heading">20. Comprehensive Solved Practical Problems</h2>
 
                     <!-- Problem 1: EMA Calculation -->
                     <h3 class="sub-heading">Solved Problem 1: Exponential Moving Average (EMA) &amp; Decision Analysis
-                        (ICAI TYK 1)</h3>
+                        (Standard Practice Problem 1)</h3>
                     <p><strong>Problem Statement:</strong> Closing values of Sensex from the 6th to 17th day of January
                         were as follows:</p>
 
@@ -2096,7 +2445,7 @@
                     </div>
 
                     <!-- Problem 2: Run Test -->
-                    <h3 class="sub-heading">Solved Problem 2: Wald-Wolfowitz Run Test on Stock Market Index (ICAI TYK 2)
+                    <h3 class="sub-heading">Solved Problem 2: Wald-Wolfowitz Run Test on Stock Market Index (Standard Practice Problem 2)
                     </h3>
                     <p><strong>Problem Statement:</strong> The closing values of a stock market index for the month of
                         October 2007 (20 trading days) were as follows:</p>
@@ -2246,82 +2595,96 @@
                 </section>
 
                 <!-- 21. Self-Test Quiz -->
+                                <!-- 21. Self-Test Quiz -->
                 <section class="section-card" id="self-test-quiz">
-                    <h2 class="section-heading">21. Self-Test Practice Questions (ICAI TYK)</h2>
+                    <h2 class="section-heading">21. Self-Test Practice Questions</h2>
 
                     <div class="quiz-card">
-                        <div class="quiz-question">Q1: Explain the Dow Theory of technical analysis. How are market
-                            movements classified?</div>
-                        <button class="reveal-btn" onclick="toggleAnswer('ch4-q1-ans')">👁️ Show Model Answer</button>
-                        <div class="quiz-answer" id="ch4-q1-ans">
-                            <strong>Model Answer:</strong> Originated by Charles Dow, the Dow Theory posits that market
-                            averages reflect the aggregate impact of all available information and act as a reliable
-                            barometer of business trends.<br>
-                            Dow divided market movements into three simultaneous classifications:<br>
-                            1. <strong>Primary Trend (1–3 years):</strong> The broad underlying bull or bear trend
-                            representing ocean tides;<br>
-                            2. <strong>Secondary Reactions (3 weeks to 3 months):</strong> Counter-trend swings
-                            retracing 33% to 66% of the primary swing, analogous to waves;<br>
-                            3. <strong>Minor Fluctuations (daily noise to under 3 weeks):</strong> Day-to-day random
-                            ripples.<br>
-                            Key tenants require that the Industrial and Transportation averages confirm each other, and
-                            trading volume must confirm the price direction.
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • COMPREHENSIVE QUIZ</div>
+                        <div class="quiz-question"><strong>Q1 (Dow Theory Core Principles):</strong> Under Charles Dow's theory of market movements, which of the following statements regarding trend confirmation and market classifications is correct?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch4-q1-ans')">A. A primary trend reversal in the Industrial Average is valid even if the Transportation Average creates a new low.</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch4-q1-ans')">B. The Industrial and Transportation Averages must mutually confirm each other, and trading volume must expand in the direction of the primary trend.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch4-q1-ans')">C. Daily fluctuations represent secondary corrections that reliably indicate long-term primary turns.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch4-q1-ans')">D. A primary bull trend lasts only 3 weeks before triggering a mandatory 66% retracement.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch4-q1-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch4-q1-ans" style="display:none;">
+                            <strong>Correct Answer: B (Averages must confirm each other and volume must confirm price)</strong><br><br>
+                            <strong>Model Explanation:</strong><br>
+                            Dow Theory posits that market averages reflect all available business data. Key principles dictate: (1) Primary Trend (1–3 years) represents ocean tides; (2) Secondary Reactions (3 weeks to 3 months) retrace 33%–66% of the primary swing; (3) Minor Fluctuations are daily noise. Crucially, the Industrial and Transportation averages <em>must confirm each other</em> to signal a valid trend, and volume must expand on advances in a bull market.
                         </div>
                     </div>
 
                     <div class="quiz-card">
-                        <div class="quiz-question">Q2: Explain the Elliott Wave Theory of technical analysis. What are
-                            impulse and corrective waves?</div>
-                        <button class="reveal-btn" onclick="toggleAnswer('ch4-q2-ans')">👁️ Show Model Answer</button>
-                        <div class="quiz-answer" id="ch4-q2-ans">
-                            <strong>Model Answer:</strong> Formulated by Ralph Nelson Elliott in 1934, this theory
-                            defines market price action in repetitive wave structures rooted in the Fibonacci sequence
-                            and crowd psychology.<br>
-                            A complete market cycle consists of <strong>8 waves</strong>:<br>
-                            • <strong>5-Wave Impulsive Pattern (1, 2, 3, 4, 5):</strong> Moves in the direction of the
-                            dominant primary trend. Waves 1, 3, and 5 are impulsive thrusts, while Waves 2 and 4 are
-                            corrective pullbacks.<br>
-                            • <strong>3-Wave Corrective Pattern (A, B, C):</strong> Corrects the entire 5-wave impulsive
-                            advance against the basic trend.<br>
-                            Three cardinal rules: Wave 2 never retraces more than 100% of Wave 1; Wave 3 is never the
-                            shortest impulse wave; and Wave 4 never overlaps with the price territory of Wave 1.
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • COMPREHENSIVE QUIZ</div>
+                        <div class="quiz-question"><strong>Q2 (Elliott Wave Structure &amp; Cycle Properties):</strong> In Elliott Wave Theory, a complete basic cycle consists of 8 waves. Which statement accurately specifies the structure and rules of this wave cycle?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch4-q2-ans')">A. The cycle has 4 impulsive waves and 4 corrective waves, with Wave 2 retracing 100% of Wave 1.</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch4-q2-ans')">B. It comprises a 5-wave impulsive pattern (1-2-3-4-5) aligned with the primary trend followed by a 3-wave corrective pattern (A-B-C); Wave 3 is never the shortest impulse wave.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch4-q2-ans')">C. Waves 2 and 4 are impulsive thrusts while Waves 1, 3, and 5 are corrective pullbacks.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch4-q2-ans')">D. Wave 4 regularly enters the price territory of Wave 1 in standard bull impulses.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch4-q2-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch4-q2-ans" style="display:none;">
+                            <strong>Correct Answer: B (5-wave impulse + 3-wave correction; Wave 3 never shortest)</strong><br><br>
+                            <strong>Model Explanation:</strong><br>
+                            Elliott Wave Theory defines market action in repetitive wave structures rooted in the Fibonacci sequence. The basic cycle consists of 8 waves: 5 impulse waves (1, 2, 3, 4, 5) in the direction of the dominant trend and 3 corrective waves (A, B, C) against it. Three cardinal rules: (1) Wave 2 never retraces > 100% of Wave 1; (2) Wave 3 is never the shortest impulse wave; (3) Wave 4 never overlaps with the price territory of Wave 1.
                         </div>
                     </div>
 
                     <div class="quiz-card">
-                        <div class="quiz-question">Q3: What is the Efficient Market Hypothesis (EMH)? Explain the major
-                            misconceptions associated with it.</div>
-                        <button class="reveal-btn" onclick="toggleAnswer('ch4-q3-ans')">👁️ Show Model Answer</button>
-                        <div class="quiz-answer" id="ch4-q3-ans">
-                            <strong>Model Answer:</strong> EMH (Eugene Fama) states that share prices fully,
-                            instantaneously, and unbiasly reflect all available information. Consequently, no investor
-                            can consistently earn abnormal risk-adjusted returns.<br>
-                            <strong>Three Misconceptions:</strong><br>
-                            1. <em>"Investors cannot earn any returns":</em> False; investors earn normal returns
-                            proportional to the risk assumed; only abnormal alpha is zero.<br>
-                            2. <em>"Stock selection is a lottery / dart-throwing exercise":</em> False; professional
-                            portfolio management remains crucial for diversification, risk tailoring, and tax
-                            optimization.<br>
-                            3. <em>"Random price swings mean market is irrational":</em> False; because new fundamental
-                            information arrives randomly, instantaneous price adjustments must also be random.
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • COMPREHENSIVE QUIZ</div>
+                        <div class="quiz-question"><strong>Q3 (EMH Debunked Misconceptions):</strong> Which of the following correctly clarifies a common misconception regarding the Efficient Market Hypothesis (EMH)?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch4-q3-ans')">A. EMH implies that investors cannot earn any investment returns in the equity market.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch4-q3-ans')">B. EMH implies that professional portfolio managers and diversification serve zero economic purpose.</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch4-q3-ans')">C. EMH implies that stock prices adjust instantaneously and without bias to new random information; thus, price randomness proves market rationality rather than irrationality.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch4-q3-ans')">D. EMH guarantees that stock prices will never fluctuate away from intrinsic book value.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch4-q3-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch4-q3-ans" style="display:none;">
+                            <strong>Correct Answer: C (Price randomness proves market efficiency and rationality)</strong><br><br>
+                            <strong>Model Explanation:</strong><br>
+                            Three major misconceptions debunked:<br>
+                            1. <em>"Investors cannot earn returns":</em> False; investors earn normal returns proportional to risk; abnormal alpha is zero.<br>
+                            2. <em>"Portfolio management is useless":</em> False; portfolio managers are essential for risk tailoring, tax optimization, and diversification.<br>
+                            3. <em>"Random price swings mean market is irrational":</em> False; because new fundamental information arrives randomly, instantaneous and unbiased price adjustments must also follow a random walk.
                         </div>
                     </div>
 
                     <div class="quiz-card">
-                        <div class="quiz-question">Q4: Explain the differences between the Breadth Index and the
-                            Confidence Index as technical market indicators.</div>
-                        <button class="reveal-btn" onclick="toggleAnswer('ch4-q4-ans')">👁️ Show Model Answer</button>
-                        <div class="quiz-answer" id="ch4-q4-ans">
-                            <strong>Model Answer:</strong><br>
-                            • <strong>Breadth Index:</strong> Calculated as \(\frac{\text{Net Advances or
-                            Declines}}{\text{Total Issues Traded}}\). It evaluates the internal breadth of market
-                            participation. If the index rises but breadth is negative, it signals an unconfirmed,
-                            fragile rally dominated by a few heavyweights.<br>
-                            • <strong>Confidence Index:</strong> Calculated as \(\frac{\text{Yield on High-Grade
-                            Bonds}}{\text{Yield on Low-Grade / Speculative Bonds}}\). It measures the willingness of
-                            institutional "smart money" to accept credit risk. When confidence is high, low-grade yields
-                            drop closer to high-grade yields, raising the ratio towards 1.0 (Bullish). A falling ratio
-                            warns of capital flight to safety before equity markets crack.
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • COMPREHENSIVE QUIZ</div>
+                        <div class="quiz-question"><strong>Q4 (Technical Breadth vs. Confidence Indicators):</strong> What is the core difference in interpretation between the Market Breadth Index and Barron's Confidence Index?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch4-q4-ans')">A. Breadth Index measures internal market participation (Advances minus Declines over Total Issues), while Confidence Index evaluates institutional credit risk appetite (High-grade yield over Low-grade yield).</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch4-q4-ans')">B. Breadth Index is an interest-rate ratio, while Confidence Index measures trading volume of retail odd-lots.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch4-q4-ans')">C. A falling Confidence Index indicates institutional investors are rushing to buy speculative equities.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch4-q4-ans')">D. A negative Breadth Index indicates that leading heavyweight blue-chip stocks are driving a durable rally.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch4-q4-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch4-q4-ans" style="display:none;">
+                            <strong>Correct Answer: A (Breadth measures market participation; Confidence measures credit risk appetite)</strong><br><br>
+                            <strong>Model Explanation:</strong><br>
+                            • <strong>Breadth Index:</strong> \(\frac{\text{Advances} - \text{Declines}}{\text{Total Issues}}\). Confirms whether index gains are backed by broad participation across all stocks.<br>
+                            • <strong>Confidence Index:</strong> \(\frac{\text{Yield on High-Grade Bonds}}{\text{Yield on Low-Grade Bonds}}\). High confidence causes speculative yields to fall closer to high-grade yields, pushing the ratio toward 1.0 (Bullish). A falling ratio warns of institutional flight to quality preceding equity downturns.
+                        </div>
+                    </div>
+
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • COMPREHENSIVE QUIZ</div>
+                        <div class="quiz-question"><strong>Q5 (Fundamental vs Technical Analysis):</strong> Which of the following statements correctly distinguishes Fundamental Analysis from Technical Analysis?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch4-q5-ans')">A. Fundamental analysis focuses on price charts and volume; Technical analysis calculates intrinsic value from future dividends.</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch4-q5-ans')">B. Fundamental analysis calculates intrinsic value ($V_0$) based on EIC factors for long-term value investing, whereas Technical analysis studies historical price patterns and market psychology to forecast timing and short-term trends.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch4-q5-ans')">C. Technical analysis assumes markets are semi-strong efficient while Fundamental analysis assumes markets follow a random walk.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch4-q5-ans')">D. Fundamental analysis is valid only over daily intraday horizons while Technical analysis requires multi-decade horizons.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch4-q5-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch4-q5-ans" style="display:none;">
+                            <strong>Correct Answer: B (Fundamental establishes intrinsic value for long-term; Technical forecasts timing from patterns)</strong><br><br>
+                            <strong>Model Explanation:</strong><br>
+                            Fundamental analysis determines intrinsic value based on Economic, Industry, and Company fundamentals to identify undervalued ($V_0 > P_0$) or overvalued securities for long-term investment. Technical analysis examines price charts, volume, and indicators based on the premise that market prices discount everything, move in trends, and repeat patterns due to human psychology.
                         </div>
                     </div>
                 </section>
@@ -2405,9 +2768,41 @@
     <!-- Script Assets -->
     <script src="../../assets/template.js"></script>
     <script>
+                function checkOption(optEl, isCorrect, ansId) {
+            const parent = optEl.closest('.mcq-options-grid');
+            if (!parent) return;
+            const allOptions = parent.querySelectorAll('.mcq-option-item');
+            allOptions.forEach(opt => {
+                opt.classList.remove('selected-correct', 'selected-wrong');
+            });
+            if (isCorrect) {
+                optEl.classList.add('selected-correct');
+            } else {
+                optEl.classList.add('selected-wrong');
+                allOptions.forEach(opt => {
+                    if (opt.getAttribute('data-correct') === 'true') {
+                        opt.classList.add('selected-correct');
+                    }
+                });
+            }
+            const ansEl = document.getElementById(ansId);
+            if (ansEl) {
+                ansEl.style.display = 'block';
+            }
+        }
+
         function toggleAnswer(id) {
             const ansEl = document.getElementById(id);
-            ansEl.style.display = (ansEl.style.display === 'block') ? 'none' : 'block';
+            if (!ansEl) return;
+            const isShowing = ansEl.style.display === 'block';
+            ansEl.style.display = isShowing ? 'none' : 'block';
+            if (!isShowing) {
+                const card = ansEl.closest('.quiz-card') || ansEl.closest('.topic-quiz-card');
+                if (card) {
+                    const correctOpt = card.querySelector('.mcq-option-item[data-correct="true"]');
+                    if (correctOpt) correctOpt.classList.add('selected-correct');
+                }
+            }
         }
 
         function toggleSidebar() {
@@ -2425,11 +2820,36 @@
         const sections = document.querySelectorAll('.section-card');
         const sidebarLinks = document.querySelectorAll('.sidebar a');
 
+        function updateReadingProgressColor(progressBar, progress) {
+            var r, g, b;
+            if (progress <= 33) {
+                var t = progress / 33;
+                r = Math.round(239 + (234 - 239) * t);
+                g = Math.round(68 + (179 - 68) * t);
+                b = Math.round(68 + (8 - 68) * t);
+            } else if (progress <= 66) {
+                var t = (progress - 33) / 33;
+                r = Math.round(234 + (34 - 234) * t);
+                g = Math.round(179 + (197 - 179) * t);
+                b = Math.round(8 + (94 - 8) * t);
+            } else {
+                var t = (progress - 66) / 34;
+                r = Math.round(34 + (16 - 34) * t);
+                g = Math.round(197 + (185 - 197) * t);
+                b = Math.round(94 + (129 - 94) * t);
+            }
+            progressBar.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+            progressBar.style.boxShadow = '0 0 8px rgba(' + r + ',' + g + ',' + b + ', 0.45)';
+        }
+
+        if (progressBar) { updateReadingProgressColor(progressBar, 0); }
+
         contentEl.addEventListener('scroll', () => {
             const totalScroll = contentEl.scrollHeight - contentEl.clientHeight;
             const currentScroll = contentEl.scrollTop;
             const progress = (currentScroll / totalScroll) * 100;
             progressBar.style.width = progress + '%';
+            updateReadingProgressColor(progressBar, progress);
 
             let current = '';
             sections.forEach(section => {

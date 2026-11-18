@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@
     <meta name="description"
         content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 5: Security Valuation. Exhaustive CA Final AFM Chapter 5 Security Valuation notes. Master Macaulay duration, modified duration, bond convexity, Gordon growth, and all 20 Illus + 27 TYK questions.">
     <meta name="keywords"
-        content="Security Valuation CA Final AFM, Bond Duration, Macaulays Duration, YTM formula, Convexity, Equity Valuation Gordon Model, Chapter 5 notes, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+        content="Security Valuation CA Final AFM, Bond Duration, Macaulays Duration, YTM formula, Convexity, Equity Valuation Gordon Model, Chapter 5 notes, CA Final AFM Paper 2, Standard Curriculum AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
     <meta name="author" content="Calcium Notes">
     <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/security_valuation.html">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -48,7 +48,7 @@
     "name": "CA Final AFM Chapter 5: Security Valuation (Quick Revision)",
     "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 5: Security Valuation. Exhaustive CA Final AFM Chapter 5 Security Valuation notes. Master Macaulay duration, modified duration, bond convexity, Gordon growth, and all 20 Illus + 27 TYK questions.",
     "learningResourceType": "Revision Cheat Sheet",
-    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "educationalLevel": "CA Final (Standard Curriculum)",
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "author": {
@@ -282,9 +282,10 @@
         .progress-bar {
             height: 100%;
             width: 0%;
-            background: var(--primary);
+            background-color: rgb(239, 68, 68);
+            box-shadow: 0 0 8px rgba(239, 68, 68, 0.45);
             border-radius: 999px;
-            transition: width 0.15s ease;
+            transition: width 0.1s ease, background-color 0.15s ease, box-shadow 0.15s ease;
         }
 
         .toggle-btn {
@@ -794,6 +795,167 @@
         .calc {
             font-family: var(--notes-table) !important;
         }
+
+        /* MCQ Interactive Styling */
+        .quiz-card {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            border-left: 4px solid var(--primary-600);
+        }
+
+        .quiz-badge {
+            display: inline-block;
+            background: #eff6ff;
+            color: #1d4ed8;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            border: 1px solid #bfdbfe;
+        }
+
+        .mcq-options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            margin: 12px 0 14px 0;
+        }
+
+        .mcq-option-item {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 0.88rem;
+            color: var(--slate-800);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .mcq-option-item:hover {
+            background: #f0fdf4;
+            border-color: #22c55e;
+            transform: translateX(3px);
+        }
+
+        .mcq-option-item.selected-correct {
+            background: #dcfce7 !important;
+            border-color: #22c55e !important;
+            color: #166534 !important;
+            font-weight: 600;
+        }
+
+        .mcq-option-item.selected-correct::after {
+            content: " ✓ Correct";
+            float: right;
+            font-weight: 700;
+            color: #16a34a;
+        }
+
+        .mcq-option-item.selected-wrong {
+            background: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #991b1b !important;
+            font-weight: 600;
+        }
+
+        .mcq-option-item.selected-wrong::after {
+            content: " ✗ Incorrect";
+            float: right;
+            font-weight: 700;
+            color: #dc2626;
+        }
+
+        [data-theme='dark'] .mcq-option-item.selected-correct,
+        body.dark-theme .mcq-option-item.selected-correct {
+            background: #064e3b !important;
+            color: #a7f3d0 !important;
+            border-color: #10b981 !important;
+        }
+
+        [data-theme='dark'] .mcq-option-item.selected-wrong,
+        body.dark-theme .mcq-option-item.selected-wrong {
+            background: #7f1d1d !important;
+            color: #fecaca !important;
+            border-color: #ef4444 !important;
+        }
+
+        [data-theme='dark'] .mcq-option-item,
+        body.dark-theme .mcq-option-item {
+            background: #1e293b;
+            border-color: #334155;
+            color: #e2e8f0;
+        }
+
+        [data-theme='dark'] .quiz-card,
+        body.dark-theme .quiz-card {
+            background: #0f172a;
+            border-color: #334155;
+        }
+    
+        /* Universal Single-Scrollbar Fix */
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            padding-bottom: 0 !important;
+            height: 100% !important;
+            max-height: 100vh !important;
+            max-height: 100dvh !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            display: block !important;
+            box-sizing: border-box !important;
+        }
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        .topbar {
+            height: 64px !important;
+            width: 100% !important;
+            margin: 0 !important;
+            box-sizing: border-box !important;
+            flex-shrink: 0 !important;
+            position: relative !important;
+            z-index: 100;
+        }
+        .layout {
+            display: flex !important;
+            height: calc(100vh - 64px) !important;
+            height: calc(100dvh - 64px) !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            box-sizing: border-box !important;
+        }
+        .sidebar {
+            width: 290px;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            flex-shrink: 0 !important;
+            box-sizing: border-box !important;
+        }
+        .content {
+            flex: 1 1 auto !important;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            padding: 36px 48px !important;
+            box-sizing: border-box !important;
+            scroll-behavior: smooth;
+        }
+        .content-container {
+            max-width: 940px !important;
+            margin: 0 auto !important;
+            padding-bottom: 80px !important;
+            box-sizing: border-box !important;
+        }
     </style>
 </head>
 
@@ -836,8 +998,8 @@
                     <li><a href="#term-structure">17. Term Structure &amp; Yield Curves</a></li>
                     <li><a href="#convertibles-warrants">18. Convertibles, Warrants &amp; Refunding</a></li>
                     <li><a href="#money-market">19. Money Market Instruments</a></li>
-                    <li><a href="#valuation-standards">20. ICAI Valuation Standards (IVS)</a></li>
-                    <li><a href="#solved-illustrations">21. Solved ICAI Problems</a></li>
+                    <li><a href="#valuation-standards">20. Valuation Standards & Registered Valuers</a></li>
+                    <li><a href="#solved-illustrations">21. Solved Practice Problems</a></li>
                     <li><a href="#self-test-quiz">22. TYK Review Questions</a></li>
                     <li><a href="#master-summary">23. Quick Revision Summary</a></li>
                 </ul>
@@ -853,10 +1015,9 @@
                     <p>Exhaustive Master Notes covering Equity Valuation (Dividend Discount Models - Gordon, Walter,
                         Multi-Stage &amp; H-Model; Free Cash Flow Models - FCFF &amp; FCFE; Market Multiples &amp;
                         Rights Issues), Preference Shares, Fixed Income Bond Valuation (The Five Bond Theorems, YTM,
-                        Macaulay Duration, Modified Duration, Convexity Adjustment, and Immunization), and ICAI
-                        Valuation Standards.</p>
+                        Macaulay Duration, Modified Duration, Convexity Adjustment, and Immunization), and Standard Valuation Guidelines.</p>
                     <div class="chapter-meta">
-                        <span>📚 ICAI New Scheme Study Material</span>
+                        <span>📚 Standard Curriculum Study Material</span>
                         <span>⏱️ Read Time: ~50 mins</span>
                         <span>🎯 Exam Weightage: 16 – 24 Marks</span>
                     </div>
@@ -936,7 +1097,25 @@
                             \frac{\sigma_{\text{Equity}}}{\sigma_{\text{Govt Bond}}} \right)$$
                         </li>
                     </ul>
-                </section>
+                                    <!-- Topic Quiz: Holding Period Return -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 1:</strong> An investor purchases an equity share on January 1 at ₹40 and sells it on December 31 at ₹45. The company declares and pays an annual dividend of ₹5 per share on December 31. What is the Holding Period Return (HPR)?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sv-mcq-1-ans')">A. 25.00%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-1-ans')">B. 12.50%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-1-ans')">C. 22.50%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-1-ans')">D. 14.00%</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sv-mcq-1-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sv-mcq-1-ans" style="display:none;">
+                            <strong>Correct Answer: A (25.00%)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\text{HPR} = \frac{(P_1 - P_0) + D_1}{P_0} \times 100$$
+                            $$\text{HPR} = \frac{(45 - 40) + 5}{40} \times 100 = \frac{5 + 5}{40} \times 100 = \frac{10}{40} \times 100 = \mathbf{25.00\%}$$
+                        </div>
+                    </div>
+</section>
 
                 <!-- 3. Discount Rates & Cash Flows -->
                 <section class="section-card" id="discount-rates">
@@ -984,7 +1163,7 @@
                     </div>
 
                     <h3 class="sub-heading">Estimating Cost of Equity (\(K_e\))</h3>
-                    <p>ICAI specifies three standard methodologies for determining \(K_e\):</p>
+                    <p>The curriculum specifies three standard methodologies for determining \(K_e\):</p>
                     <ol>
                         <li><strong>Capital Asset Pricing Model (CAPM):</strong>
                             $$K_e = R_f + \beta (R_m - R_f)$$
@@ -1055,7 +1234,25 @@
                             equity is issued.
                         </p>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: Gordon Constant Growth Model -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 2:</strong> A firm is expected to pay a dividend of ₹4 per share next year ($D_1$). The cost of equity is 12% and long-term sustainable growth rate ($g$) is 8%. What is the intrinsic fair value of the share?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-2-ans')">A. ₹50.00</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-2-ans')">B. ₹75.00</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sv-mcq-2-ans')">C. ₹100.00</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-2-ans')">D. ₹33.33</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sv-mcq-2-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sv-mcq-2-ans" style="display:none;">
+                            <strong>Correct Answer: C (₹100.00)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$P_0 = \frac{D_1}{K_e - g}$$
+                            $$P_0 = \frac{4}{0.12 - 0.08} = \frac{4}{0.04} = \mathbf{₹100.00}$$
+                        </div>
+                    </div>
+</section>
 
                 <!-- 5. Walter Model & Policies -->
                 <section class="section-card" id="walter-model">
@@ -1067,7 +1264,7 @@
                     <div class="formula-card">
                         <div class="formula-label">
                             <span>Walter Model Equity Valuation Formula</span>
-                            <span class="formula-tag">ICAI Standard Formula</span>
+                            <span class="formula-tag">Core Standard Formula</span>
                         </div>
                         <div class="formula-math">
                             $$P = \frac{D + \frac{r}{K_e}(E - D)}{K_e} = \frac{D}{K_e} + \frac{\frac{r}{K_e}(E -
@@ -1127,7 +1324,26 @@
                             </tbody>
                         </table>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: Walter Model Valuation -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 3:</strong> A company reports EPS = ₹10, dividend payout ratio = 25%, cost of equity ($K_e$) = 10%, and return on investment ($r$) = 5%. What is the fair market price of the share as per Walter's Model?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-3-ans')">A. ₹100.00</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-3-ans')">B. ₹200.00</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-3-ans')">C. ₹175.00</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sv-mcq-3-ans')">D. ₹62.50</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sv-mcq-3-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sv-mcq-3-ans" style="display:none;">
+                            <strong>Correct Answer: D (₹62.50)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\text{Dividend } D = 25\% \times 10 = ₹2.50$$
+                            $$P = \frac{D + \frac{r}{K_e}(E - D)}{K_e} = \frac{2.50 + \frac{0.05}{0.10}(10 - 2.50)}{0.10} = \frac{2.50 + 0.50 \times 7.50}{0.10} = \frac{2.50 + 3.75}{0.10} = \frac{6.25}{0.10} = \mathbf{₹62.50}$$
+                            <em>Note:</em> Since $r < K_e$ (declining firm), retaining earnings destroys shareholder value, resulting in a depressed share price.
+                        </div>
+                    </div>
+</section>
 
                 <!-- 6. Multi-Stage & H-Model -->
                 <section class="section-card" id="multistage-hmodel">
@@ -1313,7 +1529,26 @@
                         <li><strong>EV / Sales Multiple:</strong> Indispensable for cyclical companies or fast-growing
                             startups operating at an EBITDA loss.</li>
                     </ul>
-                </section>
+                                    <!-- Topic Quiz: Enterprise Value & Equity -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 4:</strong> A company has an Enterprise Value of ₹40,00,000, total debt outstanding of ₹10,00,000, and cash &amp; cash equivalents of ₹5,00,000. What is the value of Equity?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-4-ans')">A. ₹45,00,000</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sv-mcq-4-ans')">B. ₹35,00,000</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-4-ans')">C. ₹55,00,000</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-4-ans')">D. ₹25,00,000</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sv-mcq-4-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sv-mcq-4-ans" style="display:none;">
+                            <strong>Correct Answer: B (₹35,00,000)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\text{Enterprise Value (EV)} = \text{Value of Equity} + \text{Value of Debt} - \text{Cash and Equivalents}$$
+                            $$40,00,000 = \text{Value of Equity} + 10,00,000 - 5,00,000$$
+                            $$40,00,000 = \text{Value of Equity} + 5,00,000 \implies \text{Value of Equity} = \mathbf{₹35,00,000}$$
+                        </div>
+                    </div>
+</section>
 
                 <!-- 10. Valuation of Rights -->
                 <section class="section-card" id="rights-valuation">
@@ -1325,7 +1560,7 @@
                     <div class="formula-card">
                         <div class="formula-label">
                             <span>Theoretical Ex-Rights Price &amp; Value of a Right</span>
-                            <span class="formula-tag">Core ICAI Exam Formula</span>
+                            <span class="formula-tag">Core Exam Formula</span>
                         </div>
                         <div class="formula-math">
                             $$P_{ex} (\text{Theoretical Ex-Rights Price}) = \frac{N \times P_0 + S}{N + 1}$$
@@ -1351,7 +1586,26 @@
                                 rights</strong> in the market (wealth preserved via cash proceeds received from sale of
                             rights offsetting the drop from cum-rights to ex-rights price).</p>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: Rights Issue Valuation -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 5:</strong> A company whose shares currently trade at cum-rights price $P_0 = ₹150$ offers 1 new right share for every 4 existing shares held ($N = 4$) at an exercise price $S = ₹100$. What is the Theoretical Ex-Rights Price (TERP) and the value of one right?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sv-mcq-5-ans')">A. TERP = ₹140.00, Value of Right = ₹10.00</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-5-ans')">B. TERP = ₹135.00, Value of Right = ₹15.00</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-5-ans')">C. TERP = ₹125.00, Value of Right = ₹25.00</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-5-ans')">D. TERP = ₹145.00, Value of Right = ₹5.00</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sv-mcq-5-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sv-mcq-5-ans" style="display:none;">
+                            <strong>Correct Answer: A (TERP = ₹140.00, Value of Right = ₹10.00)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\text{TERP} = \frac{(N \times P_0) + S}{N + 1} = \frac{(4 \times 150) + 100}{4 + 1} = \frac{600 + 100}{5} = \frac{700}{5} = \mathbf{₹140.00}$$
+                            $$\text{Value of Right } (V_R) = \text{TERP} - S = 140 - 100 = \mathbf{₹10.00}$$
+                            $$\left(\text{Alternatively: } V_R = \frac{P_0 - S}{N + 1} = \frac{150 - 100}{5} = \mathbf{₹10.00}\right)$$
+                        </div>
+                    </div>
+</section>
 
                 <!-- 11. Preference Shares -->
                 <section class="section-card" id="preference-shares">
@@ -1508,14 +1762,32 @@
                             • \(RV\) = Redemption value at maturity<br>
                             • \(P_0\) = Current market purchase price of the bond<br>
                             • \(n\) = Number of years to maturity<br>
-                            • <em>Note:</em> In ICAI exams, use this approximation to find trial discount rates, and
+                            • <em>Note:</em> In examinations, use this approximation to find trial discount rates, and
                             then apply <strong>linear interpolation</strong> between two trial rates for exact
                             precision:
                             $$\text{Exact YTM} = L + \frac{\text{PV at } L - P_0}{\text{PV at } L - \text{PV at } H}
                             \times (H - L)$$
                         </div>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: Yield to Maturity -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 6:</strong> A 5-year, 10% annual coupon bond with a face value of ₹1,000 is currently selling at ₹920. Using the standard approximation formula, what is the Yield to Maturity (YTM)?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-6-ans')">A. 10.00%</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sv-mcq-6-ans')">B. 12.08%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-6-ans')">C. 11.50%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-6-ans')">D. 13.25%</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sv-mcq-6-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sv-mcq-6-ans" style="display:none;">
+                            <strong>Correct Answer: B (12.08%)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\text{YTM} \approx \frac{C + \frac{F - P_0}{n}}{\frac{F + P_0}{2}}$$
+                            $$\text{YTM} \approx \frac{100 + \frac{1,000 - 920}{5}}{\frac{1,000 + 920}{2}} = \frac{100 + \frac{80}{5}}{960} = \frac{100 + 16}{960} = \frac{116}{960} = \mathbf{0.12083 \approx 12.08\%}$$
+                        </div>
+                    </div>
+</section>
 
                 <!-- 15. Macaulay Duration & Convexity -->
                 <section class="section-card" id="duration-convexity">
@@ -1597,7 +1869,26 @@
                             (\Delta Y)^2$$
                         </div>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: Modified Duration & Price Sensitivity -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 7:</strong> A bond has a Macaulay duration of 4.40 years and is currently trading at a Yield to Maturity of 10%. If market interest rates increase by 50 basis points (+0.50%), what is the expected percentage change in bond price?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sv-mcq-7-ans')">A. -2.00%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-7-ans')">B. +2.00%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-7-ans')">C. -2.20%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-7-ans')">D. -4.40%</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sv-mcq-7-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sv-mcq-7-ans" style="display:none;">
+                            <strong>Correct Answer: A (-2.00%)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\text{Modified Duration } D^* = \frac{D}{1 + y} = \frac{4.40}{1 + 0.10} = \frac{4.40}{1.10} = 4.0\text{ years}$$
+                            $$\% \Delta P \approx -D^* \times \Delta y = -4.0 \times (+0.0050) = -0.0200 = \mathbf{-2.00\%}$$
+                            A 50 bps increase in yield causes a 2.00% decline in bond price.
+                        </div>
+                    </div>
+</section>
 
                 <!-- 16. Bond Immunization -->
                 <section class="section-card" id="immunization">
@@ -1620,7 +1911,24 @@
                             exactly offsets reinvestment risk!
                         </p>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: Bond Immunization -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 8:</strong> Under classical bond portfolio immunization theory, what specific condition ensures that a portfolio of fixed-income bonds is completely insulated against parallel shifts in the yield curve?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-8-ans')">A. The weighted average maturity of the bond portfolio equals the investment target horizon ($M = H$).</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sv-mcq-8-ans')">B. The weighted Macaulay duration of the portfolio equals the target investment horizon ($D = H$), ensuring price risk and reinvestment risk exactly offset.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-8-ans')">C. All bonds in the portfolio are invested exclusively in floating-rate notes.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-8-ans')">D. The portfolio's YTM matches the coupon rate of 10-year benchmark government gilts.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sv-mcq-8-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sv-mcq-8-ans" style="display:none;">
+                            <strong>Correct Answer: B (Portfolio duration equals target horizon: D = H)</strong><br><br>
+                            <strong>Detailed Conceptual Explanation:</strong><br>
+                            Immunization neutralizes interest rate risk by setting Macaulay duration equal to the investment horizon ($D = H$). When yields change, the resulting capital gain/loss (price risk) is exactly counterbalanced by the opposing change in coupon reinvestment income (reinvestment risk), locking in the target return.
+                        </div>
+                    </div>
+</section>
 
                 <!-- 17. Term Structure & Yield Curves -->
                 <section class="section-card" id="term-structure">
@@ -1697,7 +2005,25 @@
                         environment:</p>
                     $$\text{NPV of Refunding} = \text{PV of Post-Tax Interest Savings} + \text{PV of Tax Shield on Call
                     Premium \& Unamortized Costs} - \text{Net Initial Cash Outlay}$$
-                </section>
+                                    <!-- Topic Quiz: Convertible Debentures -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 9:</strong> A ₹1,000 par convertible bond trades at a market price of ₹1,150. It can be converted into 25 equity shares, and the current market price of the equity share is ₹40. What is the conversion value and the conversion premium percentage?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sv-mcq-9-ans')">A. Conversion Value = ₹1,000, Conversion Premium = 15.00%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-9-ans')">B. Conversion Value = ₹1,150, Conversion Premium = 0.00%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-9-ans')">C. Conversion Value = ₹1,000, Conversion Premium = 13.04%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-9-ans')">D. Conversion Value = ₹1,250, Conversion Premium = 8.00%</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sv-mcq-9-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sv-mcq-9-ans" style="display:none;">
+                            <strong>Correct Answer: A (Conversion Value = ₹1,000, Conversion Premium = 15.00%)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\text{Conversion Value} = \text{Conversion Ratio} \times \text{Market Price per Share} = 25 \times 40 = \mathbf{₹1,000}$$
+                            $$\text{Conversion Premium} = \frac{\text{Market Price of Bond} - \text{Conversion Value}}{\text{Conversion Value}} \times 100 = \frac{1,150 - 1,000}{1,000} \times 100 = \mathbf{15.00\%}$$
+                        </div>
+                    </div>
+</section>
 
                 <!-- 19. Money Market Instruments -->
                 <section class="section-card" id="money-market">
@@ -1742,11 +2068,29 @@
                             </tbody>
                         </table>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: Money Market Yield -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 10:</strong> A 91-day Treasury Bill with face value ₹100 is issued at ₹97.10. Using a 365-day year convention, what is the annualized money market yield of this instrument?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sv-mcq-10-ans')">A. 12.00%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-10-ans')">B. 2.99%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-10-ans')">C. 11.50%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sv-mcq-10-ans')">D. 12.50%</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sv-mcq-10-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sv-mcq-10-ans" style="display:none;">
+                            <strong>Correct Answer: A (12.00%)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\text{Annual Yield} = \frac{\text{Face Value} - \text{Issue Price}}{\text{Issue Price}} \times \frac{365}{\text{Days to Maturity}} \times 100$$
+                            $$\text{Annual Yield} = \frac{100 - 97.10}{97.10} \times \frac{365}{91} \times 100 = \frac{2.90}{97.10} \times 4.010989 \times 100 = 0.029866 \times 401.0989 = \mathbf{12.00\%}$$
+                        </div>
+                    </div>
+</section>
 
                 <!-- 20. Valuation Standards -->
                 <section class="section-card" id="valuation-standards">
-                    <h2 class="section-heading">20. ICAI Valuation Standards (IVS) &amp; Registered Valuers</h2>
+                    <h2 class="section-heading">20. Valuation Standards &amp; Registered Valuers</h2>
                     <p>Under Section 247 of the Companies Act, 2013, valuations required under company law, insolvency
                         (IBC 2016), and corporate restructuring must be conducted by <strong>Registered Valuers</strong>
                         registered with the Insolvency and Bankruptcy Board of India (IBBI).</p>
@@ -1804,11 +2148,11 @@
 
                 <!-- 21. Solved Illustrations -->
                 <section class="section-card" id="solved-illustrations">
-                    <h2 class="section-heading">21. Comprehensive Solved ICAI Practical Problems</h2>
+                    <h2 class="section-heading">21. Comprehensive Solved Practical Problems</h2>
 
                     <!-- Problem 1: Gordon vs Walter -->
                     <h3 class="sub-heading">Solved Problem 1: Book Value, ROE, Retention Ratio: Gordon vs Walter Model
-                        (ICAI TYK 1)</h3>
+                        (Standard Practice Problem 1)</h3>
                     <p><strong>Problem Statement:</strong> A company has a book value per share of
                         <strong>₹137.80</strong>. Its return on equity (ROE) is <strong>15%</strong> and it follows a
                         policy of retaining <strong>60%</strong> of its earnings. If the Opportunity Cost of Capital is
@@ -1845,7 +2189,7 @@
 
                     <!-- Problem 2: Rights Issue -->
                     <h3 class="sub-heading">Solved Problem 2: Rights Issue Ex-Rights Price, Value of Right &amp; Wealth
-                        Invariance (ICAI TYK 2)</h3>
+                        Invariance (Standard Practice Problem 2)</h3>
                     <p><strong>Problem Statement:</strong> ABC Limited's shares are currently selling at
                         <strong>₹13</strong> per share. There are 10,00,000 shares outstanding. The firm is planning to
                         raise <strong>₹20 lakhs</strong> to finance a new project.<br>
@@ -1898,7 +2242,7 @@
                     </div>
 
                     <!-- Problem 3: Two-Stage DDM -->
-                    <h3 class="sub-heading">Solved Problem 3: Two-Stage Dividend Valuation (ICAI TYK 3)</h3>
+                    <h3 class="sub-heading">Solved Problem 3: Two-Stage Dividend Valuation (Standard Practice Problem 3)</h3>
                     <p><strong>Problem Statement:</strong> MNP Ltd. has declared and paid an annual dividend of
                         <strong>₹4 per share</strong> (\(D_0\)). It is expected to grow @ <strong>20%</strong> for the
                         next two years and <strong>10%</strong> thereafter indefinitely. The required rate of return of
@@ -2013,80 +2357,96 @@
                 </section>
 
                 <!-- 22. Self-Test Quiz -->
+                                <!-- 22. Self-Test Quiz -->
                 <section class="section-card" id="self-test-quiz">
-                    <h2 class="section-heading">22. Self-Test Practice Questions (ICAI TYK)</h2>
+                    <h2 class="section-heading">22. Self-Test Practice Questions</h2>
 
                     <div class="quiz-card">
-                        <div class="quiz-question">Q1: Why should the duration of a coupon-carrying bond always be
-                            strictly less than the time to its maturity?</div>
-                        <button class="reveal-btn" onclick="toggleAnswer('ch5-q1-ans')">👁️ Show Model Answer</button>
-                        <div class="quiz-answer" id="ch5-q1-ans">
-                            <strong>Model Answer:</strong> Macaulay duration measures the weighted average maturity of
-                            all cash flows, where each year is weighted by the present value of the cash flow received
-                            in that year.<br>
-                            In a <em>coupon-carrying bond</em>, the investor receives cash inflows before the final
-                            maturity date in the form of intermediate annual or semi-annual coupon payments. Because
-                            positive weights are assigned to periods prior to maturity (\(t = 1, 2, \dots, n-1\)), the
-                            weighted average maturity must mathematically be strictly less than the final redemption
-                            year (\(n\)).<br>
-                            Only in the case of a <em>Zero-Coupon Bond</em>, where 100% of the cash flow is received
-                            strictly at maturity with zero intermediate cash flows, does duration equal maturity (\(D =
-                            n\)).
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • COMPREHENSIVE QUIZ</div>
+                        <div class="quiz-question"><strong>Q1 (Duration vs Maturity):</strong> Why is the Macaulay duration of a coupon-carrying bond always strictly less than its term to maturity, whereas for a Zero-Coupon Bond, duration equals maturity?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch5-q1-ans')">A. Because coupon-carrying bonds have higher credit default risk than zero-coupon bonds.</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch5-q1-ans')">B. Because intermediate periodic coupon payments assign positive present value weights to cash inflows before maturity, pulling the weighted average time below the final maturity year ($D < n$).</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch5-q1-ans')">C. Because market yields on coupon bonds are always lower than on zero-coupon bonds.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch5-q1-ans')">D. Because tax deductions on periodic coupon payments shorten the legal maturity of the instrument.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch5-q1-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch5-q1-ans" style="display:none;">
+                            <strong>Correct Answer: B (Intermediate coupons pull weighted average time below maturity)</strong><br><br>
+                            <strong>Model Explanation:</strong><br>
+                            Macaulay duration measures the weighted average maturity of all cash flows: $D = \frac{\sum t \times \text{PV}(CF_t)}{P_0}$.<br>
+                            In a coupon-bearing bond, intermediate coupon cash flows occur in years $t = 1, 2, \dots, n-1$. Because positive weights are assigned to time periods prior to maturity, the weighted average time is mathematically strictly less than $n$ ($D < n$). For a Zero Coupon Bond, 100% of the cash flow occurs at maturity $n$, so $D = n$.
                         </div>
                     </div>
 
                     <div class="quiz-card">
-                        <div class="quiz-question">Q2: Write a detailed short note on Zero Coupon Bonds (Deep Discount
-                            Bonds) and their interest rate sensitivity.</div>
-                        <button class="reveal-btn" onclick="toggleAnswer('ch5-q2-ans')">👁️ Show Model Answer</button>
-                        <div class="quiz-answer" id="ch5-q2-ans">
-                            <strong>Model Answer:</strong> Zero Coupon Bonds (ZCBs), commonly termed Deep Discount
-                            Bonds, are debt instruments issued at a substantial discount to face value with zero
-                            periodic coupon interest payments throughout their lifespan, redeemed at par upon
-                            maturity.<br>
-                            • <strong>Valuation Formula:</strong> \(P_0 = \frac{RV}{(1 + k_d)^n}\).<br>
-                            • <strong>Zero Reinvestment Risk:</strong> Because there are no intermediate coupon flows to
-                            reinvest, an investor holding a ZCB to maturity faces zero reinvestment rate risk, locking
-                            in the promised yield unconditionally.<br>
-                            • <strong>Maximum Duration &amp; Price Volatility:</strong> For a given maturity, ZCBs
-                            exhibit the maximum Macaulay duration (\(D = n\)) and the highest price sensitivity to
-                            interest rate fluctuations among all debt instruments.
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • COMPREHENSIVE QUIZ</div>
+                        <div class="quiz-question"><strong>Q2 (Zero Coupon Bonds Properties):</strong> Which of the following statements correctly identifies the reinvestment risk and interest rate sensitivity profile of a Zero Coupon Bond (ZCB)?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch5-q2-ans')">A. ZCBs carry zero reinvestment rate risk when held to maturity, but exhibit the maximum Macaulay duration ($D = n$) and highest price volatility for a given maturity.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch5-q2-ans')">B. ZCBs have high reinvestment rate risk because yields fluctuate throughout their term.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch5-q2-ans')">C. ZCBs exhibit the lowest price sensitivity to interest rate changes among all debt securities.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch5-q2-ans')">D. ZCBs have negative duration because they pay zero periodic interest.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch5-q2-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch5-q2-ans" style="display:none;">
+                            <strong>Correct Answer: A (Zero reinvestment risk; maximum duration and price volatility)</strong><br><br>
+                            <strong>Model Explanation:</strong><br>
+                            Because ZCBs pay zero periodic coupons, an investor holding a ZCB to maturity has no intermediate cash flows to reinvest, completely eliminating reinvestment rate risk. However, because $D = n$ (duration equals full maturity), ZCBs have the maximum percentage price sensitivity to interest rate shifts among all bonds of identical maturity.
                         </div>
                     </div>
 
                     <div class="quiz-card">
-                        <div class="quiz-question">Q3: Contrast the Dividend Discount Model (DDM) with the Free Cash
-                            Flow to Equity (FCFE) Model. Under what conditions do both models yield identical
-                            valuations?</div>
-                        <button class="reveal-btn" onclick="toggleAnswer('ch5-q3-ans')">👁️ Show Model Answer</button>
-                        <div class="quiz-answer" id="ch5-q3-ans">
-                            <strong>Model Answer:</strong><br>
-                            • <strong>DDM:</strong> Measures cash flows <em>actually paid out</em> to shareholders in
-                            dividends. It reflects managerial dividend discretion, conservative payout policies, and
-                            signaling motives.<br>
-                            • <strong>FCFE:</strong> Measures cash flows <em>available to be paid out</em> to equity
-                            holders after funding capital expenditures, debt repayments, and working capital needs.<br>
-                            • <strong>Identical Valuation Condition:</strong> DDM and FCFE yield identical equity
-                            valuations when either:<br>
-                            (1) Dividends paid equal 100% of FCFE in every period; or<br>
-                            (2) Any excess cash retained (\(\text{FCFE} - \text{Dividends}\)) is invested in liquid
-                            marketable securities that earn a return exactly equal to the cost of equity (\(K_e\)).
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • COMPREHENSIVE QUIZ</div>
+                        <div class="quiz-question"><strong>Q3 (DDM vs. FCFE Valuation Equality):</strong> Under which condition will the Dividend Discount Model (DDM) and the Free Cash Flow to Equity (FCFE) Model yield identical equity valuations?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch5-q3-ans')">A. Whenever the company has zero financial leverage and issues no debt.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch5-q3-ans')">B. When the corporate tax rate is zero and depreciation equals capital expenditure.</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch5-q3-ans')">C. When dividends paid equal 100% of FCFE in every period, or any undistributed FCFE is reinvested in assets earning exactly the cost of equity ($K_e$).</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch5-q3-ans')">D. Whenever the firm maintains a constant dividend payout ratio of 50%.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch5-q3-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch5-q3-ans" style="display:none;">
+                            <strong>Correct Answer: C (Dividends equal 100% of FCFE, or undistributed cash earns Ke)</strong><br><br>
+                            <strong>Model Explanation:</strong><br>
+                            DDM values cash flows <em>actually distributed</em> to shareholders, while FCFE values cash flows <em>available for distribution</em>. Both yield identical valuations if either: (1) all available FCFE is paid out as dividends ($\text{Dividends} = \text{FCFE}$); or (2) retained cash is invested in zero-NPV marketable securities earning exactly the cost of equity ($K_e$).
                         </div>
                     </div>
 
                     <div class="quiz-card">
-                        <div class="quiz-question">Q4: Explain the economic rationale behind Burton Malkiel's Fifth Bond
-                            Theorem (Convexity Asymmetry).</div>
-                        <button class="reveal-btn" onclick="toggleAnswer('ch5-q4-ans')">👁️ Show Model Answer</button>
-                        <div class="quiz-answer" id="ch5-q4-ans">
-                            <strong>Model Answer:</strong> Theorem 5 states that for an equal shift in yield in either
-                            direction (\(+\Delta y\) vs \(-\Delta y\)), the capital gain resulting from a yield decline
-                            is strictly greater than the capital loss resulting from an equal yield increase.<br>
-                            <strong>Economic Rationale:</strong> The true mathematical price-yield function of a
-                            standard option-free bond is strictly convex to the origin. The slope of the curve flattens
-                            as yields rise (limiting capital losses) and steepens as yields fall (accelerating capital
-                            gains). In financial terms, positive convexity is a built-in protective buffer for
-                            bondholders, amplifying upside during bull rallies while softening downside during selloffs.
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • COMPREHENSIVE QUIZ</div>
+                        <div class="quiz-question"><strong>Q4 (Fifth Bond Theorem: Convexity Asymmetry):</strong> Burton Malkiel's Fifth Bond Theorem states that for a given change in yield, the capital gain from a yield decrease is greater than the capital loss from an equal yield increase. What is the economic and mathematical foundation of this principle?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch5-q4-ans')">A. The price-yield relationship of a standard option-free bond is strictly convex to the origin, causing the curve to steepen as yields fall and flatten as yields rise.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch5-q4-ans')">B. Capital gains taxes are lower than income taxes on coupon interest.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch5-q4-ans')">C. Bond issuers have a call option that caps capital losses for investors.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch5-q4-ans')">D. Linear modified duration overestimates price declines and underestimates price rallies.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch5-q4-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch5-q4-ans" style="display:none;">
+                            <strong>Correct Answer: A (Price-yield curve is strictly convex to origin)</strong><br><br>
+                            <strong>Model Explanation:</strong><br>
+                            Because bond prices are a convex function of yields ($d^2P/dy^2 > 0$), as yields fall, price increases at an increasing rate (steeper tangent). Conversely, as yields rise, price decreases at a decreasing rate (flatter tangent). Positive convexity acts as an automatic shock absorber, amplifying gains on rate cuts while mitigating losses on rate hikes.
+                        </div>
+                    </div>
+
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • COMPREHENSIVE QUIZ</div>
+                        <div class="quiz-question"><strong>Q5 (Bond Convexity Adjustment):</strong> A 10-year bond has Modified Duration $D^* = 7.0\text{ years}$ and Convexity $C = 60$. If market yield declines by 100 basis points ($\Delta y = -0.01$), what is the total estimated percentage change in bond price including the convexity adjustment?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch5-q5-ans')">A. +7.00%</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch5-q5-ans')">B. +7.30%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch5-q5-ans')">C. +6.70%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch5-q5-ans')">D. +8.20%</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch5-q5-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch5-q5-ans" style="display:none;">
+                            <strong>Correct Answer: B (+7.30%)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\% \Delta P \approx -D^* \times \Delta y + \frac{1}{2} C (\Delta y)^2$$
+                            $$\text{Duration Effect} = -7.0 \times (-0.01) = +0.0700 = +7.00\%$$
+                            $$\text{Convexity Adjustment} = \frac{1}{2} \times 60 \times (-0.01)^2 = 30 \times 0.0001 = +0.0030 = +0.30\%$$
+                            $$\text{Total Price Change} = +7.00\% + 0.30\% = \mathbf{+7.30\%}$$
                         </div>
                     </div>
                 </section>
@@ -2178,9 +2538,41 @@
     <!-- Script Assets -->
     <script src="../../assets/template.js"></script>
     <script>
+                function checkOption(optEl, isCorrect, ansId) {
+            const parent = optEl.closest('.mcq-options-grid');
+            if (!parent) return;
+            const allOptions = parent.querySelectorAll('.mcq-option-item');
+            allOptions.forEach(opt => {
+                opt.classList.remove('selected-correct', 'selected-wrong');
+            });
+            if (isCorrect) {
+                optEl.classList.add('selected-correct');
+            } else {
+                optEl.classList.add('selected-wrong');
+                allOptions.forEach(opt => {
+                    if (opt.getAttribute('data-correct') === 'true') {
+                        opt.classList.add('selected-correct');
+                    }
+                });
+            }
+            const ansEl = document.getElementById(ansId);
+            if (ansEl) {
+                ansEl.style.display = 'block';
+            }
+        }
+
         function toggleAnswer(id) {
             const ansEl = document.getElementById(id);
-            ansEl.style.display = (ansEl.style.display === 'block') ? 'none' : 'block';
+            if (!ansEl) return;
+            const isShowing = ansEl.style.display === 'block';
+            ansEl.style.display = isShowing ? 'none' : 'block';
+            if (!isShowing) {
+                const card = ansEl.closest('.quiz-card') || ansEl.closest('.topic-quiz-card');
+                if (card) {
+                    const correctOpt = card.querySelector('.mcq-option-item[data-correct="true"]');
+                    if (correctOpt) correctOpt.classList.add('selected-correct');
+                }
+            }
         }
 
         function toggleSidebar() {
@@ -2198,11 +2590,36 @@
         const sections = document.querySelectorAll('.section-card');
         const sidebarLinks = document.querySelectorAll('.sidebar a');
 
+        function updateReadingProgressColor(progressBar, progress) {
+            var r, g, b;
+            if (progress <= 33) {
+                var t = progress / 33;
+                r = Math.round(239 + (234 - 239) * t);
+                g = Math.round(68 + (179 - 68) * t);
+                b = Math.round(68 + (8 - 68) * t);
+            } else if (progress <= 66) {
+                var t = (progress - 33) / 33;
+                r = Math.round(234 + (34 - 234) * t);
+                g = Math.round(179 + (197 - 179) * t);
+                b = Math.round(8 + (94 - 8) * t);
+            } else {
+                var t = (progress - 66) / 34;
+                r = Math.round(34 + (16 - 34) * t);
+                g = Math.round(197 + (185 - 197) * t);
+                b = Math.round(94 + (129 - 94) * t);
+            }
+            progressBar.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+            progressBar.style.boxShadow = '0 0 8px rgba(' + r + ',' + g + ',' + b + ', 0.45)';
+        }
+
+        if (progressBar) { updateReadingProgressColor(progressBar, 0); }
+
         contentEl.addEventListener('scroll', () => {
             const totalScroll = contentEl.scrollHeight - contentEl.clientHeight;
             const currentScroll = contentEl.scrollTop;
             const progress = (currentScroll / totalScroll) * 100;
             progressBar.style.width = progress + '%';
+            updateReadingProgressColor(progressBar, progress);
 
             let current = '';
             sections.forEach(section => {

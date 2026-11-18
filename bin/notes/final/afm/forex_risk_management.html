@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@
     <meta name="description"
         content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 10: Foreign Exchange Exposure and Risk Management. Master CA Final AFM Chapter 10 Forex Risk Management. Complete coverage of IRP, PPP, triangular arbitrage, forward lifecycle, FEDAI, and all 23 Illus + 51 TYK questions.">
     <meta name="keywords"
-        content="Forex Risk Management CA Final AFM, Interest Rate Parity IRP, PPP, Money Market Hedge MMH, Forward Cover, Cross rates, FEDAI rules, Chapter 10, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+        content="Forex Risk Management CA Final AFM, Interest Rate Parity IRP, PPP, Money Market Hedge MMH, Forward Cover, Cross rates, FEDAI rules, Chapter 10, CA Final AFM Paper 2, New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
     <meta name="author" content="Calcium Notes">
     <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/forex_risk_management.html">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -48,7 +48,7 @@
     "name": "CA Final AFM Chapter 10: Foreign Exchange Exposure and Risk Management (Quick Revision)",
     "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 10: Foreign Exchange Exposure and Risk Management. Master CA Final AFM Chapter 10 Forex Risk Management. Complete coverage of IRP, PPP, triangular arbitrage, forward lifecycle, FEDAI, and all 23 Illus + 51 TYK questions.",
     "learningResourceType": "Revision Cheat Sheet",
-    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "educationalLevel": "CA Final (New Scheme)",
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "author": {
@@ -197,8 +197,8 @@
             color: var(--text-primary);
             line-height: 1.7;
             font-size: 15px;
-            display: flex;
-            min-height: 100vh;
+            
+            
         }
 
 
@@ -556,52 +556,280 @@
         .calc {
             font-family: var(--notes-table) !important;
         }
+        /* Interactive MCQ Additions */
+        .quiz-card {
+            background: #ffffff;
+            border: 1px solid var(--border-color, #e2e8f0);
+            border-radius: 10px;
+            padding: 18px 20px;
+            margin: 20px 0 16px 0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+            transition: all 0.2s ease;
+        }
+
+        .quiz-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .quiz-badge {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            background: #eff6ff;
+            color: #2563eb;
+            border: 1px solid #bfdbfe;
+        }
+
+        .quiz-question {
+            font-size: 0.96rem;
+            font-weight: 600;
+            color: var(--text-primary, #0f172a);
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .mcq-options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            margin: 12px 0 14px 0;
+        }
+
+        .mcq-option-item {
+            background: var(--bg-card-secondary, #f8fafc);
+            border: 1px solid var(--border-color, #e2e8f0);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 0.88rem;
+            color: var(--text-primary, #1e293b);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .mcq-option-item:hover {
+            background: #f0fdf4;
+            border-color: #22c55e;
+            transform: translateX(3px);
+        }
+
+        .mcq-option-item.selected-correct {
+            background: #dcfce7 !important;
+            border-color: #22c55e !important;
+            color: #166534 !important;
+            font-weight: 600;
+        }
+
+        .mcq-option-item.selected-correct::after {
+            content: " ✓ Correct";
+            float: right;
+            font-weight: 700;
+            color: #16a34a;
+        }
+
+        .mcq-option-item.selected-wrong {
+            background: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #991b1b !important;
+            font-weight: 600;
+        }
+
+        .mcq-option-item.selected-wrong::after {
+            content: " ✗ Incorrect";
+            float: right;
+            font-weight: 700;
+            color: #dc2626;
+        }
+
+        .reveal-btn {
+            background: var(--primary, #2563eb);
+            color: white;
+            border: none;
+            padding: 7px 15px;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .reveal-btn:hover {
+            background: #1d4ed8;
+        }
+
+        .quiz-answer {
+            display: none;
+            margin-top: 12px;
+            padding: 12px 14px;
+            background: #f8fafc;
+            border-left: 3px solid #22c55e;
+            border-radius: 0 6px 6px 0;
+            font-size: 0.85rem;
+            line-height: 1.55;
+            color: var(--text-secondary, #475569);
+        }
+
+        /* Dark Theme Support */
+        body.dark-theme .quiz-card,
+        [data-theme='dark'] .quiz-card {
+            background: #1e293b;
+            border-color: #334155;
+        }
+
+        body.dark-theme .quiz-question,
+        [data-theme='dark'] .quiz-question {
+            color: #f1f5f9;
+        }
+
+        body.dark-theme .mcq-option-item,
+        [data-theme='dark'] .mcq-option-item {
+            background: #0f172a;
+            border-color: #334155;
+            color: #e2e8f0;
+        }
+
+        body.dark-theme .mcq-option-item:hover,
+        [data-theme='dark'] .mcq-option-item:hover {
+            background: #1e3a5f;
+            border-color: #38bdf8;
+        }
+
+        body.dark-theme .mcq-option-item.selected-correct,
+        [data-theme='dark'] .mcq-option-item.selected-correct {
+            background: #064e3b !important;
+            color: #a7f3d0 !important;
+            border-color: #10b981 !important;
+        }
+
+        body.dark-theme .mcq-option-item.selected-wrong,
+        [data-theme='dark'] .mcq-option-item.selected-wrong {
+            background: #7f1d1d !important;
+            color: #fecaca !important;
+            border-color: #ef4444 !important;
+        }
+
+        body.dark-theme .quiz-answer,
+        [data-theme='dark'] .quiz-answer {
+            background: #0f172a;
+            border-color: #10b981;
+            color: #cbd5e1;
+        }
+    
+        /* Universal Single-Scrollbar Fix */
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            padding-bottom: 0 !important;
+            height: 100% !important;
+            max-height: 100vh !important;
+            max-height: 100dvh !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            display: block !important;
+            box-sizing: border-box !important;
+        }
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        .topbar {
+            height: 64px !important;
+            width: 100% !important;
+            margin: 0 !important;
+            box-sizing: border-box !important;
+            flex-shrink: 0 !important;
+            position: relative !important;
+            z-index: 100;
+        }
+        .layout {
+            display: flex !important;
+            height: calc(100vh - 64px) !important;
+            height: calc(100dvh - 64px) !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            box-sizing: border-box !important;
+        }
+        .sidebar {
+            width: 290px;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            flex-shrink: 0 !important;
+            box-sizing: border-box !important;
+        }
+        .content {
+            flex: 1 1 auto !important;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            padding: 36px 48px !important;
+            box-sizing: border-box !important;
+            scroll-behavior: smooth;
+        }
+        .content-container {
+            max-width: 940px !important;
+            margin: 0 auto !important;
+            padding-bottom: 80px !important;
+            box-sizing: border-box !important;
+        }
     </style>
+    <!-- Modern Typography & Unified Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/unified_notes.css">
 </head>
 
 <body>
 
-    <!-- Sidebar Navigation -->
-    <aside class="sidebar">
-        <div class="sidebar-brand">
-            <span>AFM • Ch 10 Quick</span>
-            <button class="theme-toggle" onclick="toggleTheme()">☀️ / 🌙</button>
+    <header class="topbar">
+        <div class="topbar-left">
+            <a href="../../notes/afmnotes.html" class="back-hub-btn">← AFM Hub</a>
+            <div class="chapter-title">Chapter 10: Foreign Exchange Exposure and Risk Management (⚡ Quick Revision)</div>
         </div>
-
-        <div class="nav-group-title">Revision Sections</div>
-        <a href="#quotes" class="nav-link">1. Quotes &amp; Cross Rates</a>
-        <a href="#parity" class="nav-link">2. Parity Theorems (IRP/PPP)</a>
-        <a href="#arbitrage" class="nav-link">3. Arbitrage Mechanics</a>
-        <a href="#hedging" class="nav-link">4. Forward vs. MMH vs. Options</a>
-        <a href="#fedai" class="nav-link">5. FEDAI Cancellation &amp; Extension</a>
-        <a href="#traps" class="nav-link">6. High-Frequency Exam Traps</a>
-
-        <div class="nav-group-title">Navigation Hub</div>
-        <a href="../../notes/afmnotes.html" class="nav-link">← Quick Notes Index</a>
-        <a href="../../notes/afmfullnotes.html" class="nav-link">← Full Notes Index</a>
-    </aside>
-
-    <main class="main-wrapper">
-        <header class="header-section">
-            <div class="breadcrumbs">
-                <a href="../../notes/afmnotes.html">← Quick Notes Hub</a>
-                <span>/</span>
-                <span>Chapter 10</span>
+        <div class="topbar-right">
+            <div class="progress-container" title="Reading Progress">
+                <div class="progress-bar" id="reading-progress"></div>
             </div>
-            <h1>Foreign Exchange Exposure &amp; Risk Management (Quick Revision)</h1>
-            <div class="chapter-meta">
-                <span class="chapter-pill">High-Yield Revision</span>
-                <span>Formulas • Parity Equations • MMH Decision Trees • FEDAI Rules</span>
-            </div>
-        </header>
-
-        <!-- Mode Toggle Switcher -->
-        <div class="mode-bar">
-            <a href="./forex_risk_management.html" class="mode-btn active">⚡ Quick Revision Notes &amp; Formula
-                Sheet</a>
-            <a href="./forex_risk_management_full.html" class="mode-btn">📖 Full Comprehensive Notes (Topic-Wise +
-                Worked TYK)</a>
+            <button class="toggle-btn" id="sidebar-toggle" onclick="toggleSidebar()">☰ Contents</button>
         </div>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-title">Chapter Contents</div>
+            <nav>
+                <ul>
+                    <li><a href="#quotes" class="active">1. Quotes &amp; Cross Rates</a></li>
+                    <li><a href="#parity">2. Parity Theorems (IRP/PPP)</a></li>
+                    <li><a href="#arbitrage">3. Arbitrage Mechanics</a></li>
+                    <li><a href="#hedging">4. Forward vs. MMH vs. Options</a></li>
+                    <li><a href="#fedai">5. FEDAI Cancellation &amp; Extension</a></li>
+                    <li><a href="#traps">6. High-Frequency Exam Traps</a></li>
+                    <li><a href="../../notes/afmnotes.html">â† Quick Notes Index</a></li>
+                    <li><a href="../../notes/afmfullnotes.html">â† Full Notes Index</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="content-container">
+
+                <div class="chapter-header">
+                    <div class="chapter-badge">CA Final AFM • Paper 2</div>
+                    <h1>Chapter 10: Foreign Exchange Exposure and Risk Management</h1>
+                    <p>Master foreign exchange quotation conventions, cross currency chains, International Parity Relationships (IRP, PPP, IFE), covered interest arbitrage, money market hedge (MMH), FEDAI cancellation rules, and currency options.</p>
+                    <div class="chapter-meta">
+                        <span>📚 Standard Curriculum Study Material</span><span>⏱️ Read Time: ~55 mins</span><span>🎯 Exam Weightage: 20 – 30 Marks</span>
+                    </div>
+                </div>
+<!-- Mode Toggle Switcher -->
+        
 
         <!-- Section 1: Quotes & Cross Rates -->
         <section id="quotes" class="card">
@@ -627,6 +855,63 @@
                 </ul>
                 <p><strong>4. Annualized Premium / Discount:</strong></p>
                 $$\%\text{ Premium/Discount} = \frac{F - S}{S} \times \frac{12}{m} \times 100$$
+            </div>
+                    <div class="quiz-card">
+                <div class="quiz-badge">💡 Quotation Rules • Direct to Indirect Inversion</div>
+                <div class="quiz-question"><strong>Question 1:</strong> A Mumbai foreign exchange dealer quotes the spot rate as $\text{INR/USD} = 82.40 / 82.60$. An American bank requests the equivalent indirect quote (USD per INR). What is the Bid and Ask rate for $\text{USD/INR}$?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'fx-q1-ans')">A) Bid = 0.012107; Ask = 0.012136</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q1-ans')">B) Bid = 0.012136; Ask = 0.012107</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q1-ans')">C) Bid = 0.012107; Ask = 0.012107</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q1-ans')">D) Bid = 0.012000; Ask = 0.012200</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('fx-q1-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="fx-q1-ans">
+                    <strong>Correct Answer: Option A (Bid = 0.012107; Ask = 0.012136)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    $$\text{Indirect Bid Rate} = \frac{1}{\text{Direct Ask Rate}} = \frac{1}{82.60} = \mathbf{0.012107}$$
+                    $$\text{Indirect Ask Rate} = \frac{1}{\text{Direct Bid Rate}} = \frac{1}{82.40} = \mathbf{0.012136}$$
+                    Hence, the two-way quote for $\text{USD/INR}$ is $\mathbf{0.012107 / 0.012136}$. Note that Bid < Ask is strictly maintained.
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Cross Rates • Chain Rule Derivation</div>
+                <div class="quiz-question"><strong>Question 2:</strong> Given the following two-way market quotes: $\text{USD/INR} = 83.00 / 83.20$ and $\text{USD/EUR} = 0.9200 / 0.9220$. What is the cross-currency Bid and Ask quote for $\text{EUR/INR}$ (INR per 1 EUR)?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'fx-q2-ans')">A) Bid = 90.02; Ask = 90.43</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q2-ans')">B) Bid = 90.20; Ask = 90.20</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q2-ans')">C) Bid = 76.36; Ask = 76.71</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q2-ans')">D) Bid = 89.80; Ask = 90.65</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('fx-q2-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="fx-q2-ans">
+                    <strong>Correct Answer: Option A (Bid = 90.02; Ask = 90.43)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    $$\text{Bid}(\text{EUR/INR}) = \frac{\text{Bid}(\text{USD/INR})}{\text{Ask}(\text{USD/EUR})} = \frac{83.00}{0.9220} = \mathbf{90.0217 \approx 90.02}$$
+                    $$\text{Ask}(\text{EUR/INR}) = \frac{\text{Ask}(\text{USD/INR})}{\text{Bid}(\text{USD/EUR})} = \frac{83.20}{0.9200} = \mathbf{90.4348 \approx 90.43}$$
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Swap Points • Broken Period Interpolation</div>
+                <div class="quiz-question"><strong>Question 3:</strong> A bank quotes spot $\text{USD/INR} = 82.50 / 82.70$. 1-month swap points are quoted as $20 / 30$, while 2-month swap points are quoted as $45 / 60$. An importer requires a forward contract for 45 days (1.5 months). Using linear interpolation under FEDAI guidelines, what is the 45-day outright forward rate applicable for the importer?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q3-ans')">A) ₹82.8250</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'fx-q3-ans')">B) ₹83.1500</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q3-ans')">C) ₹82.7450</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q3-ans')">D) ₹82.9500</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('fx-q3-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="fx-q3-ans">
+                    <strong>Correct Answer: Option B (₹83.1500)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    • Importer needs to buy USD $\implies$ Bank sells USD at the <strong>Ask Rate</strong>.<br>
+                    • Swap points are ascending ($20/30$ and $45/60$), indicating USD is at a forward premium $\implies$ Add swap points to spot.<br>
+                    • 1-month Ask swap points = 30 points (₹0.30); 2-month Ask swap points = 60 points (₹0.60).<br>
+                    $$\text{Interpolated 45-day Ask Swap Points} = 30 + \frac{15}{30} \times (60 - 30) = 30 + 15 = 45\text{ points} = ₹0.45$$
+                    $$\text{Outright 45-day Forward Ask Rate} = \text{Spot Ask} + \text{Swap Points} = 82.70 + 0.45 = \mathbf{₹83.1500}$$
+                </div>
             </div>
         </section>
 
@@ -663,6 +948,40 @@
                     </tbody>
                 </table>
             </div>
+                    <div class="quiz-card">
+                <div class="quiz-badge">💡 Parity Relationships • Interest Rate Parity (IRP)</div>
+                <div class="quiz-question"><strong>Question 4:</strong> Spot exchange rate is $\text{INR/USD} = 82.00$. The 1-year risk-free interest rate in India is 7.0% per annum, and in the USA is 4.0% per annum. According to Interest Rate Parity (IRP), what is the 1-year theoretical forward rate ($\text{INR/USD}$), and what is the forward premium/discount on USD?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'fx-q4-ans')">A) Forward Rate = ₹84.37; USD at a forward premium of 2.89%</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q4-ans')">B) Forward Rate = ₹79.70; USD at a forward discount of 2.81%</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q4-ans')">C) Forward Rate = ₹84.46; USD at a forward premium of 3.00%</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q4-ans')">D) Forward Rate = ₹82.00; USD at par</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('fx-q4-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="fx-q4-ans">
+                    <strong>Correct Answer: Option A (Forward Rate = ₹84.37; Premium = 2.89%)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    $$F = S \times \frac{1 + r_h}{1 + r_f} = 82.00 \times \frac{1 + 0.07}{1 + 0.04} = 82.00 \times \frac{1.07}{1.04} = \mathbf{₹84.365 \approx ₹84.37}$$
+                    $$\text{Annualized Forward Premium on USD} = \frac{84.365 - 82.00}{82.00} \times 100 = \mathbf{2.885\% \approx 2.89\%}$$
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Parity Relationships • Purchasing Power Parity (PPP)</div>
+                <div class="quiz-question"><strong>Question 5:</strong> According to the Relative Purchasing Power Parity (PPP) theorem, if the expected annual inflation rate is 6.0% in India and 2.0% in the UK, and the current spot exchange rate is $\text{INR/GBP} = 105.00$, what is the expected spot rate of GBP 1 year from now?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'fx-q5-ans')">A) ₹109.12</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q5-ans')">B) ₹101.04</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q5-ans')">C) ₹111.30</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q5-ans')">D) ₹107.10</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('fx-q5-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="fx-q5-ans">
+                    <strong>Correct Answer: Option A (₹109.12)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    $$E(S_1) = S_0 \times \frac{1 + I_{\text{India}}}{1 + I_{\text{UK}}} = 105.00 \times \frac{1 + 0.06}{1 + 0.02} = 105.00 \times \frac{1.06}{1.02} = 105.00 \times 1.039216 = \mathbf{₹109.12}$$
+                </div>
+            </div>
         </section>
 
         <!-- Section 3: Arbitrage Mechanics -->
@@ -684,6 +1003,73 @@
                             Buy Foreign Forward.
                     </li>
                 </ul>
+            </div>
+                    <div class="quiz-card">
+                <div class="quiz-badge">💡 Arbitrage Mechanics • Triangular Currency Arbitrage</div>
+                <div class="quiz-question"><strong>Question 6:</strong> A foreign exchange trader observes the following simultaneous spot quotes across three international centers:
+                In Mumbai: $\text{USD/INR} = 82.50$; In London: $\text{GBP/USD} = 1.2500$; In New York: $\text{GBP/INR} = 104.00$. Does a Triangular Arbitrage opportunity exist for a trader starting with ₹1,00,00,000, and what is the net riskless arbitrage gain?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'fx-q6-ans')">A) Arbitrage exists; Net Profit = ₹84,848</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q6-ans')">B) No arbitrage exists; cross rate matches quoted rate</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q6-ans')">C) Arbitrage exists; Net Loss = ₹50,000</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q6-ans')">D) Arbitrage exists; Net Profit = ₹12,500</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('fx-q6-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="fx-q6-ans">
+                    <strong>Correct Answer: Option A (Arbitrage exists; Net Profit = ₹84,848)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    $$\text{Synthetic Cross Rate } (\text{GBP/INR}) = 82.50 \times 1.2500 = ₹103.125$$
+                    Quoted market rate in New York is $₹104.00$ per GBP. Since Quoted > Synthetic, GBP is overvalued in New York.<br>
+                    1. Convert ₹1,00,00,000 to USD at $82.50 \implies \text{USD } 1,21,212.12$.<br>
+                    2. Convert USD to GBP at $1.2500 \implies \frac{1,21,212.12}{1.2500} = \text{GBP } 96,969.70$.<br>
+                    3. Sell GBP in New York for INR at $104.00 \implies 96,969.70 \times 104.00 = ₹1,00,84,848.48$.<br>
+                    $$\text{Net Riskless Profit} = ₹1,00,84,848.48 - ₹1,00,00,000 = \mathbf{₹84,848}$$
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Arbitrage Mechanics • Covered Interest Arbitrage (CIA)</div>
+                <div class="quiz-question"><strong>Question 7:</strong> Spot $\text{INR/USD} = 82.00$. The 1-year forward rate quoted in the market is $\text{INR/USD} = 84.00$. 1-year interest rate in India is 6.0% p.a., and in USA is 3.0% p.a. A corporate treasurer wishes to execute Covered Interest Arbitrage (CIA) using a borrowing capacity of USD 1,00,000. Which transaction cycle must be executed, and what is the riskless arbitrage profit?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'fx-q7-ans')">A) Borrow USD 1,00,000, convert to INR spot at 82.00, invest in India at 6.0%, and buy USD 1,03,000 forward at 84.00; Net Profit = ₹40,000</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q7-ans')">B) Borrow INR 82,00,000, convert to USD, invest in USA at 3.0%, and sell USD forward at 84.00; Net Profit = ₹40,000</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q7-ans')">C) Arbitrage is not possible because forward rate is within transaction cost bounds</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q7-ans')">D) Borrow USD 1,00,000 and invest in US treasury bills; Net Profit = USD 0</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('fx-q7-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="fx-q7-ans">
+                    <strong>Correct Answer: Option A (Net Profit = ₹40,000)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    $$\text{Theoretical IRP Forward Rate} = 82.00 \times \frac{1.06}{1.03} = ₹84.388$$
+                    Actual market forward rate is ₹84.00 (forward USD is underpriced relative to IRP, meaning forward INR is overpriced).<br>
+                    1. Borrow USD 1,00,000 at 3% in USA $\implies$ Repayment due in 1 year = USD 1,03,000.<br>
+                    2. Convert USD 1,00,000 to INR spot at $82.00 \implies ₹82,00,000$.<br>
+                    3. Invest ₹82,00,000 in India at 6% $\implies$ Maturity Inflow $= 82,00,000 \times 1.06 = ₹86,92,000$.<br>
+                    4. Cover USD liability: Buy USD 1,03,000 forward at ₹84.00 $\implies$ INR Cost $= 1,03,000 \times 84.00 = ₹86,52,000$.<br>
+                    $$\text{Net Riskless Arbitrage Profit} = ₹86,92,000 - ₹86,52,000 = \mathbf{₹40,000}$$
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Arbitrage Mechanics • Two-Point Space Arbitrage</div>
+                <div class="quiz-question"><strong>Question 8:</strong> A foreign exchange dealer notices that in Frankfurt the quote is $\text{USD/EUR} = 1.0820 / 1.0825$, while in New York the quote is $\text{USD/EUR} = 1.0835 / 1.0840$. How can a trader execute two-point geographic (space) arbitrage starting with USD 10,00,000?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'fx-q8-ans')">A) Buy EUR in Frankfurt at Ask 1.0825 and sell EUR in New York at Bid 1.0835; Net Profit = USD 924</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q8-ans')">B) Buy EUR in New York at 1.0840 and sell in Frankfurt at 1.0820; Net Profit = USD 1,847</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q8-ans')">C) Geographic arbitrage cannot generate profit after bid-ask spreads</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q8-ans')">D) Borrow EUR in London and deposit in Tokyo</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('fx-q8-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="fx-q8-ans">
+                    <strong>Correct Answer: Option A (Net Profit = USD 924)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    • Frankfurt Bank sells EUR at Ask 1.0825.<br>
+                    • New York Bank buys EUR at Bid 1.0835.<br>
+                    Since New York Bid (1.0835) > Frankfurt Ask (1.0825), arbitrage is profitable:<br>
+                    $$\text{EUR purchased in Frankfurt} = \frac{\text{USD } 10,00,000}{1.0825} = \text{EUR } 9,23,787.53$$
+                    $$\text{USD proceeds from sale in New York} = 9,23,787.53 \times 1.0835 = \text{USD } 10,00,923.79$$
+                    $$\text{Net Arbitrage Profit} = 10,00,923.79 - 10,00,000 = \mathbf{\text{USD } 923.79 \approx \text{USD } 924}$$
+                </div>
             </div>
         </section>
 
@@ -725,6 +1111,69 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+                    <div class="quiz-card">
+                <div class="quiz-badge">💡 Hedging Strategies • Money Market Hedge for Imports</div>
+                <div class="quiz-question"><strong>Question 9:</strong> An Indian importer has an invoice payable of USD 5,00,000 due in 6 months. Relevant financial market data:
+                Spot rate: $\text{INR/USD} = 82.50$; 6-month forward rate: $\text{INR/USD} = 83.20$; 6-month US deposit rate: 2.0% per half-year; 6-month Indian borrowing rate: 4.0% per half-year.
+                What is the net rupee cost under a Money Market Hedge (MMH), and which hedging strategy is more cost-effective?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'fx-q9-ans')">A) MMH Cost = ₹4,20,58,824; Forward Cover is cheaper (₹4,16,00,000)</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q9-ans')">B) MMH Cost = ₹4,29,04,412; MMH is cheaper</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q9-ans')">C) MMH Cost = ₹4,15,00,000; MMH is cheaper</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q9-ans')">D) Both strategies yield identical costs of ₹4,16,00,000</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('fx-q9-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="fx-q9-ans">
+                    <strong>Correct Answer: Option A (MMH Cost = ₹4,20,58,824; Forward Cover is cheaper)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    • <strong>Forward Cover Cost:</strong> $5,00,000 \times 83.20 = \mathbf{₹4,16,00,000}$.<br>
+                    • <strong>Money Market Hedge:</strong><br>
+                    1. Deposit USD today at 2.0%: $\frac{5,00,000}{1 + 0.02} = \text{USD } 4,90,196.08$.<br>
+                    2. Buy USD spot at 82.50: $4,90,196.08 \times 82.50 = ₹4,04,41,176.60$.<br>
+                    3. Borrow INR in India at 4.0%: $4,04,41,176.60 \times (1 + 0.04) = \mathbf{₹4,20,58,824}$.<br>
+                    Forward Cover saves ₹4,58,824 compared to MMH.
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Hedging Strategies • Money Market Hedge for Exports</div>
+                <div class="quiz-question"><strong>Question 10:</strong> An Indian exporter expects to receive USD 2,00,000 in 3 months.
+                Spot rate: $\text{INR/USD} = 82.00$; 3-month forward rate: $\text{INR/USD} = 82.60$; 3-month US borrowing rate: 1.5% per quarter; 3-month Indian deposit rate: 1.75% per quarter.
+                Under a Money Market Hedge (MMH), what is the total rupee cash inflow realized at $t=3\text{ months}$, and how does it compare to the Forward Cover inflow?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'fx-q10-ans')">A) MMH Inflow = ₹1,64,40,394; Forward Cover inflow = ₹1,65,20,000 (Forward Cover yields higher inflow)</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q10-ans')">B) MMH Inflow = ₹1,66,00,000; MMH yields higher inflow</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q10-ans')">C) MMH Inflow = ₹1,65,20,000; Both yield identical inflows</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q10-ans')">D) MMH Inflow = ₹1,61,57,635; Forward Cover yields higher inflow</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('fx-q10-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="fx-q10-ans">
+                    <strong>Correct Answer: Option A (MMH Inflow = ₹1,64,40,394; Forward Cover is superior)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    • <strong>Forward Cover Inflow:</strong> $2,00,000 \times 82.60 = \mathbf{₹1,65,20,000}$.<br>
+                    • <strong>Money Market Hedge:</strong><br>
+                    1. Borrow USD today: $\frac{2,00,000}{1 + 0.015} = \text{USD } 1,97,044.33$.<br>
+                    2. Convert to INR spot at $82.00: 1,97,044.33 \times 82.00 = ₹1,61,57,635.06$.<br>
+                    3. Invest INR at 1.75%: $1,61,57,635.06 \times 1.0175 = \mathbf{₹1,64,40,394}$.<br>
+                    Forward Cover yields ₹79,606 more than MMH.
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Internal Hedging • Multilateral Netting</div>
+                <div class="quiz-question"><strong>Question 11:</strong> Which internal forex risk management technique involves an MNC coordinating intercompany settlement dates between subsidiaries so that cross-border fund transfers are executed only for the net balance of multilateral obligations?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q11-ans')">A) Leading and Lagging</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'fx-q11-ans')">B) Multilateral Netting</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q11-ans')">C) Parallel Loan Matching</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q11-ans')">D) Currency Invoicing</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('fx-q11-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="fx-q11-ans">
+                    <strong>Correct Answer: Option B (Multilateral Netting)</strong><br>
+                    <strong>Detailed Explanation:</strong> Multilateral Netting consolidates intra-group transactions into a centralized treasury matrix. Instead of multiple subsidiaries wiring gross foreign exchange payments to each other (incurring bid-ask spreads, cross-border remittance fees, and float delays), only the net surplus or deficit is settled, drastically cutting transaction costs and currency exposure.
+                </div>
             </div>
         </section>
 
@@ -775,6 +1224,41 @@
                     </tbody>
                 </table>
             </div>
+                    <div class="quiz-card">
+                <div class="quiz-badge">💡 FEDAI Rules • Forward Contract Cancellation Charges</div>
+                <div class="quiz-question"><strong>Question 12:</strong> A customer booked a 3-month Forward Purchase contract with a bank to buy USD 1,00,000 at ₹82.50. On the due date, the customer requests cancellation of the contract. The prevailing spot market rate on the due date is $\text{INR/USD} = 81.80 / 81.90$. Under FEDAI guidelines, what cancellation charges or net gain/loss are debited or credited to the customer&#39;s account?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q12-ans')">A) Customer account is credited with ₹60,000 profit</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'fx-q12-ans')">B) Customer account is debited with ₹70,000 loss</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q12-ans')">C) Customer account is debited with ₹60,000 loss</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q12-ans')">D) Customer account is credited with ₹70,000 profit</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('fx-q12-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="fx-q12-ans">
+                    <strong>Correct Answer: Option B (Customer debited with ₹70,000 loss)</strong><br>
+                    <strong>Detailed Step-by-Step Working:</strong><br>
+                    • Customer had contracted to <strong>Buy USD</strong> at ₹82.50.<br>
+                    • To cancel on due date, the bank executes an opposite transaction at prevailing spot: the bank <strong>Buys USD from customer</strong> at prevailing <strong>Spot TT Buying Rate</strong> $= ₹81.80$.<br>
+                    $$\text{Loss per USD to customer} = 81.80 - 82.50 = -₹0.70$$
+                    $$\text{Total Cancellation Loss Debited} = 1,00,000 \times ₹0.70 = \mathbf{₹70,000}$$
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 FEDAI Rules • Overdue Forward Contract Cancellation</div>
+                <div class="quiz-question"><strong>Question 13:</strong> Under Rule 8 of the Foreign Exchange Dealers&#39; Association of India (FEDAI), if a customer fails to take delivery or give instructions on a forward exchange contract on or before the maturity date, what statutory action is mandated?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q13-ans')">A) The contract is renewed automatically for another 1 year at the original contract rate</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'fx-q13-ans')">B) The contract is automatically cancelled by the bank on the 3rd working day following the maturity date at the prevailing TT buying or selling rate, with any resulting loss recovered from the customer</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q13-ans')">C) The bank files an immediate criminal complaint with the Reserve Bank of India</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q13-ans')">D) The customer forfeits all fixed deposits held across the domestic banking system</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('fx-q13-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="fx-q13-ans">
+                    <strong>Correct Answer: Option B</strong><br>
+                    <strong>Detailed Explanation:</strong> Under FEDAI Rule 8, in the absence of customer instructions on or before the due date, an overdue forward contract is automatically cancelled by the bank on the 3rd working day after maturity. The cancellation is executed at the prevailing TT rate (TT Buying for purchase contracts, TT Selling for sale contracts), and net exchange loss plus overdue interest/handling charges are recovered from the customer.
+                </div>
+            </div>
         </section>
 
         <!-- Section 6: High-Frequency Exam Traps -->
@@ -793,24 +1277,169 @@
                 <li><strong>Exchange Position vs Nostro Cash:</strong> Forward contracts affect Exchange Position
                     immediately, but DO NOT affect Nostro Cash until physical settlement.</li>
             </ul>
+                    <div class="quiz-card">
+                <div class="quiz-badge">💡 Interbank Accounts • Nostro, Vostro &amp; Loro</div>
+                <div class="quiz-question"><strong>Question 14:</strong> How are Nostro, Vostro, and Loro accounts correctly defined in interbank foreign exchange operations?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q14-ans')">A) Nostro: Foreign bank's account with domestic bank; Vostro: Domestic bank's account with foreign bank; Loro: Customer savings account</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'fx-q14-ans')">B) Nostro ("Our account with you"): A domestic bank's account maintained in foreign currency with an overseas correspondent bank; Vostro ("Your account with us"): An overseas bank's account maintained in domestic currency with a domestic bank; Loro ("Their account with them"): Reference to a third party bank's account</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q14-ans')">C) Nostro: Non-resident external account; Vostro: Foreign currency non-resident account; Loro: Resident foreign currency account</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q14-ans')">D) Nostro, Vostro, and Loro are identical accounts with no operational distinction</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('fx-q14-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="fx-q14-ans">
+                    <strong>Correct Answer: Option B</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    • <strong>Nostro Account</strong> ("Our account with you"): An account maintained by an Indian bank (e.g. SBI) in foreign currency (e.g. USD) with an overseas correspondent bank (e.g. Citibank, New York).<br>
+                    • <strong>Vostro Account</strong> ("Your account with us"): An account maintained by a foreign bank (e.g. Citibank) in Indian Rupees with an Indian bank (e.g. SBI, Mumbai).<br>
+                    • <strong>Loro Account</strong> ("Their account with them"): A bank referring to an account held by a third-party bank with another correspondent bank.
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Position Management • Exchange vs Cash Position</div>
+                <div class="quiz-question"><strong>Question 15:</strong> What is the vital distinction between a foreign exchange dealer&#39;s "Exchange Position" and "Cash Position"?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q15-ans')">A) Exchange Position tracks only physical paper currency; Cash Position tracks electronic funds</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'fx-q15-ans')">B) Exchange Position reflects the net commitment to buy or sell foreign currency (including spot, forward, and unexecuted customer orders) measuring exchange rate risk; Cash Position measures the actual cleared liquidity balance available in the foreign currency Nostro account</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q15-ans')">C) Exchange Position is audited annually; Cash Position is audited daily</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'fx-q15-ans')">D) Both positions must always remain exactly equal to zero at all times</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('fx-q15-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="fx-q15-ans">
+                    <strong>Correct Answer: Option B</strong><br>
+                    <strong>Detailed Explanation:</strong> The <strong>Exchange Position</strong> measures currency risk: it tracks all foreign currency contracts (spot, forward, bills purchased, outstanding commitments), indicating whether the bank is net Overbought (long) or Oversold (short). The <strong>Cash Position</strong> measures liquidity: it tracks actual cleared inflows and outflows of funds in the bank's Nostro account, ensuring there is sufficient foreign currency cash to settle immediate value-dated obligations.
+                </div>
+            </div>
         </section>
 
         <footer
             style="margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-secondary); font-size: 13px;">
-            CA Final Advanced Financial Management (AFM) • Chapter 10 Quick Revision Summary
+            CA Final Advanced Financial Management (AFM) â€¢ Chapter 10 Quick Revision Summary
         </footer>
-    </main>
+            </div>
+        </main>
+    </div>
 
+    <!-- Unified Chapter Navigation & Interactive Scripts -->
     <script>
-        function toggleTheme() {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', targetTheme);
-            localStorage.setItem('theme', targetTheme);
+        function checkOption(el, isCorrect, ansId) {
+            var parent = el.closest('.mcq-container') || el.closest('.quiz-card') || el.closest('.problem-card');
+            if (!parent) return;
+            var allOptions = parent.querySelectorAll('.mcq-option-item');
+            allOptions.forEach(function(opt) {
+                opt.style.pointerEvents = 'none';
+                if (opt.getAttribute('data-correct') === 'true') {
+                    opt.classList.add('reveal-correct');
+                }
+            });
+            var fb = parent.querySelector('.mcq-feedback');
+            if (isCorrect) {
+                el.classList.add('selected-correct');
+                if (fb) {
+                    fb.innerHTML = '✓ Correct! Outstanding work.';
+                    fb.className = 'mcq-feedback correct';
+                }
+            } else {
+                el.classList.add('selected-incorrect');
+                if (fb) {
+                    fb.innerHTML = '✗ Incorrect. Review the detailed solution below.';
+                    fb.className = 'mcq-feedback incorrect';
+                }
+            }
+            var ans = document.getElementById(ansId);
+            if (ans) {
+                ans.style.display = 'block';
+            }
         }
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        document.documentElement.setAttribute('data-theme', savedTheme);
+
+        function toggleAnswer(ansId) {
+            var ans = document.getElementById(ansId);
+            if (!ans) return;
+            var isHidden = (ans.style.display === 'none' || ans.style.display === '');
+            ans.style.display = isHidden ? 'block' : 'none';
+            if (isHidden) {
+                var parent = ans.closest('.mcq-container') || ans.closest('.quiz-card') || ans.closest('.problem-card');
+                if (parent) {
+                    var allOptions = parent.querySelectorAll('.mcq-option-item');
+                    allOptions.forEach(function(opt) {
+                        if (opt.getAttribute('data-correct') === 'true') {
+                            opt.classList.add('reveal-correct');
+                        }
+                    });
+                }
+            }
+        }
+
+        function toggleSidebar() {
+            var sb = document.getElementById('sidebar');
+            if (!sb) return;
+            if (window.innerWidth <= 900) {
+                sb.classList.toggle('mobile-open');
+            } else {
+                sb.classList.toggle('hidden');
+            }
+        }
+
+        // Reading progress tracking & sidebar link highlighting
+        var contentEl = document.querySelector('.content');
+        var progressBar = document.getElementById('reading-progress');
+        var sections = document.querySelectorAll('.section-card, section[id], .theory-topic, .problem-card');
+        var sidebarLinks = document.querySelectorAll('.sidebar a');
+
+        function updateReadingProgressColor(progressBar, progress) {
+            var r, g, b;
+            if (progress <= 33) {
+                var t = progress / 33;
+                r = Math.round(239 + (234 - 239) * t);
+                g = Math.round(68 + (179 - 68) * t);
+                b = Math.round(68 + (8 - 68) * t);
+            } else if (progress <= 66) {
+                var t = (progress - 33) / 33;
+                r = Math.round(234 + (34 - 234) * t);
+                g = Math.round(179 + (197 - 179) * t);
+                b = Math.round(8 + (94 - 8) * t);
+            } else {
+                var t = (progress - 66) / 34;
+                r = Math.round(34 + (16 - 34) * t);
+                g = Math.round(197 + (185 - 197) * t);
+                b = Math.round(94 + (129 - 94) * t);
+            }
+            progressBar.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+            progressBar.style.boxShadow = '0 0 8px rgba(' + r + ',' + g + ',' + b + ', 0.45)';
+        }
+
+        if (progressBar) { updateReadingProgressColor(progressBar, 0); }
+
+        if (contentEl && progressBar) {
+            contentEl.addEventListener('scroll', function() {
+                var totalScroll = contentEl.scrollHeight - contentEl.clientHeight;
+                if (totalScroll > 0) {
+                    var currentScroll = contentEl.scrollTop;
+                    var progress = (currentScroll / totalScroll) * 100;
+                    progressBar.style.width = progress + '%';
+                    updateReadingProgressColor(progressBar, progress);
+                }
+
+                var current = '';
+                sections.forEach(function(section) {
+                    var sectionTop = section.offsetTop - contentEl.offsetTop;
+                    if (contentEl.scrollTop >= sectionTop - 140) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                if (current) {
+                    sidebarLinks.forEach(function(link) {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + current) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
     </script>
 </body>
-
 </html>
+

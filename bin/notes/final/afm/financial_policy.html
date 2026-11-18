@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,9 +11,9 @@
     <meta name="title"
         content="Chapter 1: Financial Policy and Corporate Strategy - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
     <meta name="description"
-        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 1: Financial Policy and Corporate Strategy. Exhaustive CA Final AFM Chapter 1 notes on Financial Policy & Corporate Strategy. Complete coverage of Higgins SGR, EFR formulas, strategic financial planning, and ICAI questions.">
+        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 1: Financial Policy and Corporate Strategy. Exhaustive CA Final AFM Chapter 1 notes on Financial Policy & Corporate Strategy. Complete coverage of Higgins SGR, EFR formulas, strategic financial planning, and standard exam questions.">
     <meta name="keywords"
-        content="Financial Policy and Corporate Strategy, Higgins SGR, Sustainable Growth Rate formula, EFR formula, CA Final AFM Chapter 1, ICAI New Scheme AFM notes, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+        content="Financial Policy and Corporate Strategy, Higgins SGR, Sustainable Growth Rate formula, EFR formula, CA Final AFM Chapter 1, AFM Exam Revision notes, CA Final AFM Paper 2, Advanced Financial Management notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
     <meta name="author" content="Calcium Notes">
     <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/financial_policy.html">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -26,7 +26,7 @@
     <meta property="og:title"
         content="Chapter 1: Financial Policy and Corporate Strategy - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
     <meta property="og:description"
-        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 1: Financial Policy and Corporate Strategy. Exhaustive CA Final AFM Chapter 1 notes on Financial Policy & Corporate Strategy. Complete coverage of Higgins SGR, EFR formulas, strategic financial planning, and ICAI questions.">
+        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 1: Financial Policy and Corporate Strategy. Exhaustive CA Final AFM Chapter 1 notes on Financial Policy & Corporate Strategy. Complete coverage of Higgins SGR, EFR formulas, strategic financial planning, and standard exam questions.">
     <meta property="og:image" content="https://www.calciumnotes.com/og-image.png">
     <meta property="og:site_name" content="Calcium Notes">
     <meta property="og:locale" content="en_IN">
@@ -37,7 +37,7 @@
     <meta name="twitter:title"
         content="Chapter 1: Financial Policy and Corporate Strategy - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
     <meta name="twitter:description"
-        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 1: Financial Policy and Corporate Strategy. Exhaustive CA Final AFM Chapter 1 notes on Financial Policy & Corporate Strategy. Complete coverage of Higgins SGR, EFR formulas, strategic financial planning, and ICAI questions.">
+        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 1: Financial Policy and Corporate Strategy. Exhaustive CA Final AFM Chapter 1 notes on Financial Policy & Corporate Strategy. Complete coverage of Higgins SGR, EFR formulas, strategic financial planning, and standard exam questions.">
     <meta name="twitter:image" content="https://www.calciumnotes.com/og-image.png">
 
     <!-- Schema.org Educational & FAQ Structured Data -->
@@ -46,9 +46,9 @@
     "@context": "https://schema.org",
     "@type": "LearningResource",
     "name": "CA Final AFM Chapter 1: Financial Policy and Corporate Strategy (Quick Revision)",
-    "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 1: Financial Policy and Corporate Strategy. Exhaustive CA Final AFM Chapter 1 notes on Financial Policy & Corporate Strategy. Complete coverage of Higgins SGR, EFR formulas, strategic financial planning, and ICAI questions.",
+    "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 1: Financial Policy and Corporate Strategy. Exhaustive CA Final AFM Chapter 1 notes on Financial Policy & Corporate Strategy. Complete coverage of Higgins SGR, EFR formulas, strategic financial planning, and standard exam questions.",
     "learningResourceType": "Revision Cheat Sheet",
-    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "educationalLevel": "CA Final",
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "author": {
@@ -594,7 +594,7 @@
             color: #5b21b6;
         }
 
-        /* ICAI Official Formula Card Styling */
+        /* Official Formula Card Styling */
         .formula-card {
             background: #ffffff;
             border: 2px solid #2563eb;
@@ -757,11 +757,114 @@
             box-shadow: var(--shadow-sm);
         }
 
+        .quiz-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: var(--primary-light);
+            color: var(--primary);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 1px solid var(--primary-border);
+        }
+
         .quiz-question {
             font-size: 14.5px;
             font-weight: 700;
             color: var(--slate-900);
             margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .mcq-options-grid {
+            display: grid;
+            gap: 8px;
+            margin: 12px 0 14px 0;
+        }
+
+        .mcq-option-item {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 13.5px;
+            color: var(--slate-700);
+            line-height: 1.45;
+            transition: all 0.15s ease;
+            cursor: pointer;
+            user-select: none;
+            position: relative;
+        }
+
+        .mcq-option-item:hover {
+            background: #f0fdf4;
+            border-color: #86efac;
+            color: #166534;
+        }
+
+        .mcq-option-item.selected-correct {
+            background: #dcfce7 !important;
+            border-color: #16a34a !important;
+            color: #15803d !important;
+            font-weight: 700 !important;
+        }
+
+        .mcq-option-item.selected-correct::after {
+            content: "✓ Correct";
+            float: right;
+            font-weight: 800;
+            color: #15803d;
+            background: #bbf7d0;
+            padding: 1px 7px;
+            border-radius: 4px;
+            font-size: 11.5px;
+        }
+
+        .mcq-option-item.selected-wrong {
+            background: #fee2e2 !important;
+            border-color: #dc2626 !important;
+            color: #b91c1c !important;
+            font-weight: 700 !important;
+        }
+
+        .mcq-option-item.selected-wrong::after {
+            content: "✗ Incorrect";
+            float: right;
+            font-weight: 800;
+            color: #b91c1c;
+            background: #fecaca;
+            padding: 1px 7px;
+            border-radius: 4px;
+            font-size: 11.5px;
+        }
+
+        [data-theme='dark'] .mcq-option-item.selected-correct {
+            background: #064e3b !important;
+            border-color: #10b981 !important;
+            color: #a7f3d0 !important;
+        }
+
+        [data-theme='dark'] .mcq-option-item.selected-wrong {
+            background: #7f1d1d !important;
+            border-color: #ef4444 !important;
+            color: #fca5a5 !important;
+        }
+
+        .correct-tag {
+            display: inline-block;
+            background: #10b981;
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 7px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
         }
 
         .reveal-btn {
@@ -929,7 +1032,67 @@
         .calc {
             font-family: var(--notes-table) !important;
         }
+    
+        /* Universal Single-Scrollbar Fix */
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            padding-bottom: 0 !important;
+            height: 100% !important;
+            max-height: 100vh !important;
+            max-height: 100dvh !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            display: block !important;
+            box-sizing: border-box !important;
+        }
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        .topbar {
+            height: 64px !important;
+            width: 100% !important;
+            margin: 0 !important;
+            box-sizing: border-box !important;
+            flex-shrink: 0 !important;
+            position: relative !important;
+            z-index: 100;
+        }
+        .layout {
+            display: flex !important;
+            height: calc(100vh - 64px) !important;
+            height: calc(100dvh - 64px) !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            box-sizing: border-box !important;
+        }
+        .sidebar {
+            width: 290px;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            flex-shrink: 0 !important;
+            box-sizing: border-box !important;
+        }
+        .content {
+            flex: 1 1 auto !important;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            padding: 36px 48px !important;
+            box-sizing: border-box !important;
+            scroll-behavior: smooth;
+        }
+        .content-container {
+            max-width: 940px !important;
+            margin: 0 auto !important;
+            padding-bottom: 80px !important;
+            box-sizing: border-box !important;
+        }
     </style>
+    <link rel="stylesheet" href="../../assets/unified_notes.css">
 </head>
 
 <body>
@@ -942,7 +1105,7 @@
         </div>
         <div class="topbar-right">
             <div class="progress-container" title="Reading Progress">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" id="reading-progress"></div>
             </div>
             <button class="toggle-btn" onclick="toggleSidebar()">☰ Index</button>
         </div>
@@ -963,7 +1126,7 @@
                 <li><a href="#interface">5. Policy &amp; Strategy Interface</a></li>
                 <li><a href="#sustainable-growth">6. Sustainable Growth Rate (SGR)</a></li>
                 <li><a href="#efr-analysis">7. External Funding Requirement</a></li>
-                <li><a href="#icai-illustration">8. ICAI Solved Illustration</a></li>
+                <li><a href="#comprehensive-illustration">8. Solved Practical Illustration</a></li>
                 <li><a href="#exam-summary">9. Master Summary &amp; Review</a></li>
             </ul>
         </aside>
@@ -973,30 +1136,22 @@
             <div class="content-container">
 
                 <!-- Hero Header Banner -->
-                <div class="chapter-hero" id="overview">
-                    <span class="hero-tag">CA Final Paper 2 • AFM Module 1</span>
-                    <h1 class="hero-title">Financial Policy and Corporate Strategy</h1>
-                    <p class="hero-desc">
-                        A rigorous master guide on modern financial leadership: strategic financial management
-                        frameworks, hierarchy alignment, financial planning, Robert C. Higgins Sustainable Growth Rate
-                        (SGR), and External Funding Requirement (EFR) analytical and formula modeling with full ICAI
-                        illustration breakdown.
-                    </p>
-                    <div class="hero-stats-row">
-                        <div class="hero-stat-badge">🎯 ICAI New Scheme Aligned</div>
-                        <div class="hero-stat-badge">⚡ 2 Master Formulas (SGR &amp; EFR)</div>
-                        <div class="hero-stat-badge">📊 Solved Practical Case Included</div>
-                        <div class="hero-stat-badge">💡 Exam Weightage: 4–8 Marks</div>
+                <div class="chapter-header" id="overview">
+                    <div class="chapter-badge">CA Final AFM • Paper 2</div>
+                    <h1>Chapter 1: Financial Policy &amp; Corporate Strategy</h1>
+                    <p>A rigorous master guide on modern financial leadership: strategic financial management frameworks, hierarchy alignment, financial planning, Robert C. Higgins Sustainable Growth Rate (SGR), and External Funding Requirement (EFR) analytical and formula modeling.</p>
+                    <div class="chapter-meta">
+                        <span>📚 Standard Curriculum Study Material</span><span>⏱️ Read Time: ~35 mins</span><span>🎯 Exam Weightage: 8 – 14 Marks</span>
                     </div>
                 </div>
 
                 <!-- Learning Outcomes Card -->
                 <div class="section-card">
                     <h2 class="section-title">
-                        <span class="section-number">🎯</span> Learning Outcomes (ICAI Syllabus Focus)
+                        <span class="section-number">🎯</span> Learning Outcomes (Exam Syllabus Focus)
                     </h2>
                     <p style="font-size: 14px; color: var(--slate-600); margin-bottom: 16px;">
-                        According to the ICAI official study material, upon mastering this chapter you will be fully
+                        According to the official study curriculum, upon mastering this chapter you will be fully
                         competent to:
                     </p>
                     <div class="info-grid">
@@ -1123,6 +1278,33 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Key Exam Insights: CFO Role -->
+                    <div class="callout callout-warning" style="margin-top: 20px;">
+                        <div class="callout-icon">📌</div>
+                        <div>
+                            <strong>Key Exam Insights (Advanced CFO Role):</strong><br>
+                            The modern CFO operates as the <em>Co-Pilot of Enterprise Strategy</em> supporting both strategic and operational decision making. Four paramount emerging responsibilities highlighted in the curriculum are:
+                            <br><strong>(1) Proactive Risk Management</strong> &bull; <strong>(2) Supply Chain Viability</strong> &bull; <strong>(3) M&amp;A Restructuring Synergies</strong> &bull; <strong>(4) ESG Financing &amp; Green Capital</strong>.
+                        </div>
+                    </div>
+
+                    <!-- Test Your Knowledge: Topic 1 MCQ -->
+                    <div class="quiz-card" style="margin-top: 18px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 1</div>
+                        <div class="quiz-question">Q1.1: In the modern corporate landscape, which of the following is recognized as a key emerging strategic mandate of the Chief Financial Officer (CFO) beyond traditional financial reporting?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q1-mcq')">(a) Direct clerical preparation of daily journal vouchers and operational shift rosters</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch1-q1-mcq')">(b) ESG financing, supply chain financial viability, proactive enterprise risk management, and M&amp;A synergy realization</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q1-mcq')">(c) Acting solely as a historical compliance gatekeeper without strategic leadership participation</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q1-mcq')">(d) Mandatorily eliminating all debt capital to maintain a zero-leverage balance sheet</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch1-q1-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch1-q1-mcq">
+                            <span class="correct-tag">Correct Answer: (b)</span><br>
+                            <strong>Explanation:</strong> In modern corporate finance, the CFO functions as the strategic co-pilot to the CEO. Emerging core responsibilities include ESG financing (green bonds, sustainability-linked loans), supply chain financial stress testing, M&amp;A restructuring, and comprehensive enterprise risk management.
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Section 2: Strategic Financial Decision-Making Framework -->
@@ -1228,6 +1410,36 @@
                                 eliminate unsystematic risk.</div>
                         </div>
                     </div>
+
+                    <!-- Core Equation & Functions of SFM -->
+                    <div class="callout callout-warning" style="margin-top: 20px;">
+                        <div class="callout-icon">📌</div>
+                        <div>
+                            <strong>Core Equation &amp; Functions of Strategic Financial Management:</strong>
+                            <div style="text-align: center; font-weight: 700; margin: 6px 0; font-size: 14px; color: var(--primary);">
+                                Fundamentals of Business = Strategy + Finance + Management
+                            </div>
+                            <em>Functions of SFM:</em> Manages investment and financing decisions across <strong>Strategic</strong>, <strong>Operational</strong>, and <strong>Tactical</strong> levels. Continuous operational loop:
+                            <em>Search for investment &rarr; Selection of investment &rarr; Optimal financing mix &rarr; Systems for internal control &rarr; Results for future decision making.</em>
+                        </div>
+                    </div>
+
+                    <!-- Test Your Knowledge: Topic 2 MCQ -->
+                    <div class="quiz-card" style="margin-top: 18px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 2</div>
+                        <div class="quiz-question">Q2.1: According to the Strategic Financial Management framework, what are the three fundamental pillars comprising the "Fundamentals of Business"?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q2-mcq')">(a) Accounting + Auditing + Taxation</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch1-q2-mcq')">(b) Strategy + Finance + Management</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q2-mcq')">(c) Production + Marketing + Logistics</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q2-mcq')">(d) Capital + Debt + Retained Earnings</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch1-q2-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch1-q2-mcq">
+                            <span class="correct-tag">Correct Answer: (b)</span><br>
+                            <strong>Explanation:</strong> In modern financial strategy, <em>Fundamentals of Business = Strategy + Finance + Management</em>. A business requires long-term direction and scope (Strategy), efficient resource allocation and capital budgeting (Finance), and managerial execution leadership (Management).
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Section 3: Strategies at Different Hierarchy Levels -->
@@ -1290,6 +1502,34 @@
                         provides the resource boundaries and quantitative benchmarks through which all other functional
                         policies are executed.
                     </p>
+
+                    <!-- Strategic Hierarchy Evaluation Criteria -->
+                    <div class="callout callout-warning" style="margin-top: 18px;">
+                        <div class="callout-icon">📌</div>
+                        <div>
+                            <strong>Strategic Hierarchy Evaluation Criteria:</strong> Every strategic proposal across the hierarchy must be rigorously evaluated on three criteria:
+                            <strong>(1) Suitability</strong> (does it address corporate strategic objectives?), 
+                            <strong>(2) Feasibility</strong> (are financial and human resources available?), and 
+                            <strong>(3) Acceptability</strong> (does the expected risk-return satisfy stakeholders?).
+                        </div>
+                    </div>
+
+                    <!-- Test Your Knowledge: Topic 3 MCQ -->
+                    <div class="quiz-card" style="margin-top: 18px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 3</div>
+                        <div class="quiz-question">Q3.1: In the strategic hierarchy of an enterprise, which level is specifically responsible for overall organizational direction, multi-business portfolio capital allocation, and deciding major mergers and acquisitions?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q3-mcq')">(a) Functional Level Strategy</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q3-mcq')">(b) Strategic Business Unit (SBU) Level Strategy</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch1-q3-mcq')">(c) Corporate Level Strategy</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q3-mcq')">(d) Operational Departmental Strategy</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch1-q3-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch1-q3-mcq">
+                            <span class="correct-tag">Correct Answer: (c)</span><br>
+                            <strong>Explanation:</strong> Corporate Level Strategy defines overall organizational scope, portfolio structuring across diverse SBUs, and multi-business resource allocation. SBU strategy focuses on individual product-market competition, while Functional strategy executes day-to-day departmental policies.
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Section 4: Financial Planning -->
@@ -1340,6 +1580,23 @@
                                 <div class="step-text">Benchmarking actual business performance using Economic Value
                                     Added (EVA), ROI, and cash flow returns against plan targets.</div>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Test Your Knowledge: Topic 4 MCQ -->
+                    <div class="quiz-card" style="margin-top: 18px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 4</div>
+                        <div class="quiz-question">Q4.1: The master financial planning model integrates Financial Resources (FR) and Financial Tools (FT) to achieve Financial Goals (FG). What are the three primary outcomes of this planning process?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q4-mcq')">(a) Sales growth, Cost minimization, and Tax avoidance</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch1-q4-mcq')">(b) Financial Objectives, Financial Decision Making, and Financial Measures</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q4-mcq')">(c) Debt issuance, Dividend declarations, and Share buybacks</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q4-mcq')">(d) Cash budgeting, Ratio analysis, and Working capital bank loans</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch1-q4-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch1-q4-mcq">
+                            <span class="correct-tag">Correct Answer: (b)</span><br>
+                            <strong>Explanation:</strong> In strategic financial planning, the three concrete outcomes are: (1) <em>Financial Objectives</em> (targets), (2) <em>Financial Decision Making</em> (capital deployment rules), and (3) <em>Financial Measures</em> (control benchmarks).
                         </div>
                     </div>
                 </div>
@@ -1396,6 +1653,31 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+
+                    <!-- Guiding Principle: Financial Policy Interface -->
+                    <div class="callout callout-warning" style="margin-top: 18px;">
+                        <div class="callout-icon">📌</div>
+                        <div>
+                            <strong>Core Guiding Principle:</strong> <em>"Starting point of an organization is money and end-point is also money."</em> Financial policy cannot be worked out in isolation because capital structure, asset allocation, and dividend decisions directly dictate whether strategic expansion can be sustained without triggering a liquidity crisis.
+                        </div>
+                    </div>
+
+                    <!-- Test Your Knowledge: Topic 5 MCQ -->
+                    <div class="quiz-card" style="margin-top: 18px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 5</div>
+                        <div class="quiz-question">Q5.1: Which of the following represents a primary dimension where corporate financial policy interfaces directly with enterprise strategic management?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch1-q5-mcq')">(a) Capital structure design and sourcing long-term funds to finance strategic expansion</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q5-mcq')">(b) Preparing statutory tax deduction certificates for vendor invoices</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q5-mcq')">(c) Conducting routine annual physical verification of office stationary</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q5-mcq')">(d) Calculating historical straight-line depreciation for computer peripherals</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch1-q5-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch1-q5-mcq">
+                            <span class="correct-tag">Correct Answer: (a)</span><br>
+                            <strong>Explanation:</strong> The interface between financial policy and strategic management centers on strategic dimensions: Sources of Finance &amp; Capital Structure, Investment &amp; Fund Allocation, Working Capital Management, and Dividend Policy.
+                        </div>
                     </div>
                 </div>
 
@@ -1594,6 +1876,36 @@
                             <strong>inflation lowers the firm's real sustainable growth rate</strong>.
                         </div>
                     </div>
+
+                    <!-- Key Exam Insights: Corporate Sustainability Criteria -->
+                    <div class="callout callout-info" style="margin-top: 18px;">
+                        <div class="callout-icon">🌱</div>
+                        <div>
+                            <strong>Key Strategic Insights on Sustainability &amp; Growth Strategies:</strong>
+                            <ul style="margin: 6px 0 0 18px; padding: 0; line-height: 1.55;">
+                                <li><strong>What Makes an Organization Financially Sustainable:</strong> (1) Having more than one source of income, (2) Regular financial planning, (3) Adequate financial control systems, (4) Good public reputation &amp; brand equity, (5) Clear core corporate values, and (6) Financial autonomy.</li>
+                                <li><strong>Variants of Stable Growth Strategy:</strong> (i) <em>Incremental growth strategy</em>, (ii) <em>Profit strategy</em>, (iii) <em>Pause strategy</em>.</li>
+                                <li><strong>Balanced Stakeholder Vision:</strong> Growth targets must consider both current and future stakeholders (e.g., petroleum companies running demarketing campaigns preaching fuel conservation).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Test Your Knowledge: Topic 6 MCQ -->
+                    <div class="quiz-card" style="margin-top: 18px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 6</div>
+                        <div class="quiz-question">Q6.1: Zen Ltd. generates an ROE of 20% and maintains a dividend payout ratio of 30%. What is its Sustainable Growth Rate (SGR) under the Higgins Model? If actual market sales grow at 18%, what financial condition emerges?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q6-mcq')">(a) SGR = 6.0%; A surplus cash pool is generated</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch1-q6-mcq')">(b) SGR = 14.0%; A cash deficit emerges requiring External Funding (EFR)</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q6-mcq')">(c) SGR = 20.0%; The firm is in perfect cash equilibrium</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q6-mcq')">(d) SGR = 70.0%; The firm is severely overcapitalized</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch1-q6-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch1-q6-mcq">
+                            <span class="correct-tag">Correct Answer: (b)</span><br>
+                            <strong>Explanation:</strong> Retention ratio $b = 1 - 0.30 = 0.70$. Higgins $\text{SGR} = \text{ROE} \times b = 20\% \times 0.70 = 14\%$. Since actual growth (18%) exceeds the sustainable growth rate (14%), internal cash generation is insufficient to fund required asset expansion, producing a cash deficit that necessitates External Funding (EFR).
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Section 7: External Funding Requirement (EFR) -->
@@ -1605,7 +1917,7 @@
                     <p style="font-size: 14.5px; color: var(--slate-700); line-height: 1.6;">
                         When a company's projected sales growth demands more asset expansion than internal retained
                         earnings can fund, the shortfall is termed the <strong>External Funding Requirement
-                            (EFR)</strong>. ICAI examines EFR through two distinct methodologies:
+                            (EFR)</strong>. Examinations analyze EFR through two distinct methodologies:
                     </p>
 
                     <h3 class="sub-heading">7.1 Analytical Approach</h3>
@@ -1663,19 +1975,41 @@
                             <div><strong>\((1 - d)\):</strong> Retention Ratio (\(b\))</div>
                         </div>
                     </div>
+
+                    <!-- Test Your Knowledge: Topic 7 MCQ -->
+                    <div class="quiz-card" style="margin-top: 18px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 7</div>
+                        <div class="quiz-question">Q7.1: Pioneer Ltd. reports current sales of ₹ 500 Lakhs, projected to grow by 20% to ₹ 600 Lakhs next year. Assets and spontaneous liabilities vary proportionately with sales at 70% and 25% of sales, respectively. Net profit margin is 10% and dividend payout ratio is 50%. What is the External Funding Requirement (EFR)?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q7-mcq')">(a) ₹ 45 Lakhs</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch1-q7-mcq')">(b) ₹ 15 Lakhs</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q7-mcq')">(c) ₹ 70 Lakhs</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q7-mcq')">(d) ₹ 25 Lakhs</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch1-q7-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch1-q7-mcq">
+                            <span class="correct-tag">Correct Answer: (b)</span><br>
+                            <strong>Explanation:</strong><br>
+                            Change in sales $\Delta S = 600 - 500 = ₹ 100\text{ Lakhs}$.<br>
+                            Gross Asset Expansion Required $= 70\% \times 100 = ₹ 70\text{ Lakhs}$.<br>
+                            Spontaneous Liability Financing $= 25\% \times 100 = ₹ 25\text{ Lakhs}$.<br>
+                            Retained Earnings Ploughed Back $= 10\% \times 600 \times (1 - 0.50) = ₹ 60 \times 0.50 = ₹ 30\text{ Lakhs}$.<br>
+                            $\text{EFR} = \left(\frac{TA}{S} - \frac{P}{S}\right)\Delta S - [m \times S_1 \times (1 - d)] = (70 - 25) - 30 = \mathbf{₹ 15\text{ Lakhs}}$.
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Section 8: Comprehensive ICAI Practical Illustration -->
-                <div class="section-card" id="icai-illustration">
+                <!-- Section 8: Comprehensive Practical Illustration -->
+                <div class="section-card" id="comprehensive-illustration">
                     <h2 class="section-title">
-                        <span class="section-number">8</span> Comprehensive ICAI Practical Illustration (Full
+                        <span class="section-number">8</span> Comprehensive Practical Illustration (Full
                         Walkthrough)
                     </h2>
 
                     <div class="callout callout-purple">
                         <div class="callout-icon">📝</div>
                         <div>
-                            <strong>ICAI Official Question:</strong> The balance sheet of XYZ Ltd. as at 31st March 2024
+                            <strong>Practical Exam Question:</strong> The balance sheet of XYZ Ltd. as at 31st March 2024
                             is given below:
                         </div>
                     </div>
@@ -1882,6 +2216,23 @@
                                 style="color: var(--success); font-weight: 700;">Condition is fully satisfied!</span>
                         </div>
                     </div>
+
+                    <!-- Test Your Knowledge: Topic 8 MCQ -->
+                    <div class="quiz-card" style="margin-top: 18px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 8</div>
+                        <div class="quiz-question">Q8.1: In comprehensive multi-tranche EFR cases (such as Sundry Ltd), if total external funding required is ₹ 2,256 Lakhs and management can borrow up to ₹ 800 Lakhs in long-term debt while keeping Debt-Equity ratio below 1.5, how must the residual balance of ₹ 1,456 Lakhs be financed?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q8-mcq')">(a) By postponing trade payables indefinitely beyond credit terms</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch1-q8-mcq')">(b) By issuing new equity share capital</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q8-mcq')">(c) By reducing sales volume back to existing levels</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch1-q8-mcq')">(d) By taking unauthorized unsecured inter-corporate deposits</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch1-q8-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch1-q8-mcq">
+                            <span class="correct-tag">Correct Answer: (b)</span><br>
+                            <strong>Explanation:</strong> Once spontaneous liabilities and allowable debt ceilings are fully utilized, any remaining External Funding Requirement (EFR) must be financed via fresh equity issuance to preserve the target solvency and leverage bounds.
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Section 9: Quick Revision Master Summary & Review -->
@@ -1932,7 +2283,7 @@
                         </table>
                     </div>
 
-                    <h3 class="sub-heading">Self-Test Practice Questions (ICAI TYK)</h3>
+                    <h3 class="sub-heading">Self-Test Practice Questions (TYK)</h3>
 
                     <div class="quiz-card">
                         <div class="quiz-question">Q1: Explain the interface of Financial Policy and Strategic
@@ -2000,22 +2351,85 @@
     <script src="../../assets/template.js"></script>
 
     <script>
-        // Interactive Quiz Answer Toggle
-        function toggleAnswer(id) {
-            const ansEl = document.getElementById(id);
-            if (ansEl.style.display === 'block') {
-                ansEl.style.display = 'none';
+        // Interactive MCQ Option Selection
+        function checkOption(optEl, isCorrect, ansId) {
+            const parent = optEl.closest('.mcq-options-grid');
+            if (!parent) return;
+
+            const allOptions = parent.querySelectorAll('.mcq-option-item');
+            allOptions.forEach(opt => {
+                opt.classList.remove('selected-correct', 'selected-wrong');
+            });
+
+            if (isCorrect) {
+                optEl.classList.add('selected-correct');
             } else {
+                optEl.classList.add('selected-wrong');
+                allOptions.forEach(opt => {
+                    if (opt.getAttribute('data-correct') === 'true') {
+                        opt.classList.add('selected-correct');
+                    }
+                });
+            }
+
+            const ansEl = document.getElementById(ansId);
+            if (ansEl) {
                 ansEl.style.display = 'block';
             }
         }
 
+        // Interactive Quiz Answer Toggle
+        function toggleAnswer(id) {
+            const ansEl = document.getElementById(id);
+            if (!ansEl) return;
+            const isShowing = ansEl.style.display === 'block';
+            ansEl.style.display = isShowing ? 'none' : 'block';
+
+            if (!isShowing) {
+                const card = ansEl.closest('.quiz-card') || ansEl.closest('.topic-quiz-card');
+                if (card) {
+                    const correctOpt = card.querySelector('.mcq-option-item[data-correct="true"]');
+                    if (correctOpt) correctOpt.classList.add('selected-correct');
+                }
+            }
+        }
+
         // Active Sidebar Item on Scroll
-        const sections = document.querySelectorAll('.section-card, #overview, #cfo-role, #sfm-framework, #hierarchy-levels, #financial-planning, #interface, #sustainable-growth, #efr-analysis, #icai-illustration, #exam-summary');
+        const sections = document.querySelectorAll('.section-card, #overview, #cfo-role, #sfm-framework, #hierarchy-levels, #financial-planning, #interface, #sustainable-growth, #efr-analysis, #comprehensive-illustration, #exam-summary');
         const sidebarLinks = document.querySelectorAll('.sidebar a');
         const contentEl = document.querySelector('.content');
+        const progressBar = document.getElementById('reading-progress');
+        function updateReadingProgressColor(progressBar, progress) {
+            var r, g, b;
+            if (progress <= 33) {
+                var t = progress / 33;
+                r = Math.round(239 + (234 - 239) * t);
+                g = Math.round(68 + (179 - 68) * t);
+                b = Math.round(68 + (8 - 68) * t);
+            } else if (progress <= 66) {
+                var t = (progress - 33) / 33;
+                r = Math.round(234 + (34 - 234) * t);
+                g = Math.round(179 + (197 - 179) * t);
+                b = Math.round(8 + (94 - 8) * t);
+            } else {
+                var t = (progress - 66) / 34;
+                r = Math.round(34 + (16 - 34) * t);
+                g = Math.round(197 + (185 - 197) * t);
+                b = Math.round(94 + (129 - 94) * t);
+            }
+            progressBar.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+            progressBar.style.boxShadow = '0 0 8px rgba(' + r + ',' + g + ',' + b + ', 0.45)';
+        }
+
+        if (progressBar) { updateReadingProgressColor(progressBar, 0); }
 
         contentEl.addEventListener('scroll', () => {
+            if (progressBar) {
+                const totalScroll = contentEl.scrollHeight - contentEl.clientHeight;
+                const progress = totalScroll > 0 ? (contentEl.scrollTop / totalScroll) * 100 : 0;
+                progressBar.style.width = progress + '%';
+                updateReadingProgressColor(progressBar, progress);
+            }
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - contentEl.offsetTop;
@@ -2035,3 +2449,4 @@
 </body>
 
 </html>
+

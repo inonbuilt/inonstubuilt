@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,9 +11,9 @@
     <meta name="title"
         content="Chapter 2: Risk Management - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
     <meta name="description"
-        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 2: Risk Management. Master CA Final AFM Chapter 2 Risk Management with complete formulas for Value at Risk (VAR), risk identification matrices, and ICAI exam solutions.">
+        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 2: Risk Management. Master CA Final AFM Chapter 2 Risk Management with complete formulas for Value at Risk (VAR), risk identification matrices, and standard exam solutions.">
     <meta name="keywords"
-        content="Risk Management CA Final AFM, Value at Risk VAR formula, Risk Identification, Z score, Risk Mitigation strategies, ICAI AFM Chapter 2, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+        content="Risk Management CA Final AFM, Value at Risk VAR formula, Risk Identification, Z score, Risk Mitigation strategies, AFM Exam Revision notes, CA Final AFM Paper 2, Advanced Financial Management notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
     <meta name="author" content="Calcium Notes">
     <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/risk_management.html">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -26,7 +26,7 @@
     <meta property="og:title"
         content="Chapter 2: Risk Management - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
     <meta property="og:description"
-        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 2: Risk Management. Master CA Final AFM Chapter 2 Risk Management with complete formulas for Value at Risk (VAR), risk identification matrices, and ICAI exam solutions.">
+        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 2: Risk Management. Master CA Final AFM Chapter 2 Risk Management with complete formulas for Value at Risk (VAR), risk identification matrices, and standard exam solutions.">
     <meta property="og:image" content="https://www.calciumnotes.com/og-image.png">
     <meta property="og:site_name" content="Calcium Notes">
     <meta property="og:locale" content="en_IN">
@@ -37,7 +37,7 @@
     <meta name="twitter:title"
         content="Chapter 2: Risk Management - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
     <meta name="twitter:description"
-        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 2: Risk Management. Master CA Final AFM Chapter 2 Risk Management with complete formulas for Value at Risk (VAR), risk identification matrices, and ICAI exam solutions.">
+        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 2: Risk Management. Master CA Final AFM Chapter 2 Risk Management with complete formulas for Value at Risk (VAR), risk identification matrices, and standard exam solutions.">
     <meta name="twitter:image" content="https://www.calciumnotes.com/og-image.png">
 
     <!-- Schema.org Educational & FAQ Structured Data -->
@@ -46,9 +46,9 @@
     "@context": "https://schema.org",
     "@type": "LearningResource",
     "name": "CA Final AFM Chapter 2: Risk Management (Quick Revision)",
-    "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 2: Risk Management. Master CA Final AFM Chapter 2 Risk Management with complete formulas for Value at Risk (VAR), risk identification matrices, and ICAI exam solutions.",
+    "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 2: Risk Management. Master CA Final AFM Chapter 2 Risk Management with complete formulas for Value at Risk (VAR), risk identification matrices, and standard exam solutions.",
     "learningResourceType": "Revision Cheat Sheet",
-    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "educationalLevel": "CA Final",
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "author": {
@@ -586,7 +586,7 @@
             color: #991b1b;
         }
 
-        /* ICAI Official Formula Card Styling */
+        /* Official Formula Card Styling */
         .formula-card {
             background: #ffffff;
             border: 2px solid #2563eb;
@@ -746,11 +746,101 @@
             box-shadow: var(--shadow-sm);
         }
 
+        .quiz-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: var(--primary-light);
+            color: var(--primary);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 1px solid var(--primary-border);
+        }
+
         .quiz-question {
             font-size: 14.5px;
             font-weight: 700;
             color: var(--slate-900);
             margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .mcq-options-grid {
+            display: grid;
+            gap: 8px;
+            margin: 12px 0 14px 0;
+        }
+
+        .mcq-option-item {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 13.5px;
+            color: var(--slate-700);
+            line-height: 1.45;
+            transition: all 0.15s ease;
+            cursor: pointer;
+        }
+
+                .mcq-option-item.selected-correct {
+            background: #dcfce7 !important;
+            border-color: #22c55e !important;
+            color: #166534 !important;
+            font-weight: 600;
+        }
+        .mcq-option-item.selected-correct::after {
+            content: " ✓ Correct";
+            float: right;
+            font-weight: 700;
+            color: #16a34a;
+        }
+        .mcq-option-item.selected-wrong {
+            background: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #991b1b !important;
+            font-weight: 600;
+        }
+        .mcq-option-item.selected-wrong::after {
+            content: " ✗ Incorrect";
+            float: right;
+            font-weight: 700;
+            color: #dc2626;
+        }
+        [data-theme='dark'] .mcq-option-item.selected-correct,
+        body.dark-theme .mcq-option-item.selected-correct {
+            background: #064e3b !important;
+            color: #a7f3d0 !important;
+            border-color: #10b981 !important;
+        }
+        [data-theme='dark'] .mcq-option-item.selected-wrong,
+        body.dark-theme .mcq-option-item.selected-wrong {
+            background: #7f1d1d !important;
+            color: #fecaca !important;
+            border-color: #f87171 !important;
+        }
+
+        .mcq-option-item:hover {
+            background: #f0fdf4;
+            border-color: #86efac;
+            color: #166534;
+        }
+
+        .correct-tag {
+            display: inline-block;
+            background: #10b981;
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 7px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
         }
 
         .reveal-btn {
@@ -916,7 +1006,67 @@
         .calc {
             font-family: var(--notes-table) !important;
         }
+    
+        /* Universal Single-Scrollbar Fix */
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            padding-bottom: 0 !important;
+            height: 100% !important;
+            max-height: 100vh !important;
+            max-height: 100dvh !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            display: block !important;
+            box-sizing: border-box !important;
+        }
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        .topbar {
+            height: 64px !important;
+            width: 100% !important;
+            margin: 0 !important;
+            box-sizing: border-box !important;
+            flex-shrink: 0 !important;
+            position: relative !important;
+            z-index: 100;
+        }
+        .layout {
+            display: flex !important;
+            height: calc(100vh - 64px) !important;
+            height: calc(100dvh - 64px) !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            box-sizing: border-box !important;
+        }
+        .sidebar {
+            width: 290px;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            flex-shrink: 0 !important;
+            box-sizing: border-box !important;
+        }
+        .content {
+            flex: 1 1 auto !important;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            padding: 36px 48px !important;
+            box-sizing: border-box !important;
+            scroll-behavior: smooth;
+        }
+        .content-container {
+            max-width: 940px !important;
+            margin: 0 auto !important;
+            padding-bottom: 80px !important;
+            box-sizing: border-box !important;
+        }
     </style>
+    <link rel="stylesheet" href="../../assets/unified_notes.css">
 </head>
 
 <body>
@@ -929,7 +1079,7 @@
         </div>
         <div class="topbar-right">
             <div class="progress-container" title="Reading Progress">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" id="reading-progress"></div>
             </div>
             <button class="toggle-btn" onclick="toggleSidebar()">☰ Index</button>
         </div>
@@ -947,7 +1097,7 @@
                 <li><a href="#evaluation-perspectives">2. Perspectives of Financial Risk</a></li>
                 <li><a href="#var-framework">3. Value at Risk (VAR) Core Theory</a></li>
                 <li><a href="#var-math">3.3 Mathematical Formulas &amp; Z-Scores</a></li>
-                <li><a href="#icai-illustration">4. Solved ICAI Portfolio VAR Case</a></li>
+                <li><a href="#portfolio-var-case">4. Solved Portfolio VAR Case</a></li>
                 <li><a href="#risk-management-methods">5. Risk Identification &amp; Mitigation</a></li>
                 <li><a href="#exam-summary">6. Master Summary &amp; Review</a></li>
             </ul>
@@ -958,30 +1108,23 @@
             <div class="content-container">
 
                 <!-- Hero Header Banner -->
-                <div class="chapter-hero" id="overview">
-                    <span class="hero-tag">CA Final Paper 2 • AFM Module 1</span>
-                    <h1 class="hero-title">Risk Management &amp; Value-at-Risk (VAR)</h1>
-                    <p class="hero-desc">
-                        A complete master study guide on enterprise risk taxonomy: Strategic, Compliance, Operational,
-                        and Financial risks, multi-stakeholder evaluation frameworks, and the quantitative mechanics of
-                        Value at Risk (VAR) including portfolio variance, standard deviation scaling, and ICAI
-                        examination problems.
-                    </p>
-                    <div class="hero-stats-row">
-                        <div class="hero-stat-badge">🎯 ICAI New Scheme Master Notes</div>
-                        <div class="hero-stat-badge">⚡ Value-at-Risk (VAR) Math &amp; Z-Tables</div>
-                        <div class="hero-stat-badge">📊 Solved Portfolio Covariance Case</div>
-                        <div class="hero-stat-badge">💡 Exam Weightage: 4–6 Marks</div>
+                <div class="chapter-header" id="overview">
+                    <div class="chapter-badge">CA Final AFM • Paper 2</div>
+                    <h1>Chapter 2: Risk Management</h1>
+                    <p>Master Value at Risk (VAR) variance-covariance analytical modeling, historical simulation, Monte Carlo techniques, risk identification matrices, and enterprise hedging architectures.</p>
+                    <div class="chapter-meta">
+                        <span>📚 Standard Curriculum Study Material</span><span>⏱️ Read Time: ~40 mins</span><span>🎯 Exam Weightage: 10 – 16 Marks</span>
                     </div>
+                </div>
                 </div>
 
                 <!-- Learning Outcomes Card -->
                 <div class="section-card">
                     <h2 class="section-title">
-                        <span class="section-number">🎯</span> Learning Outcomes (ICAI Syllabus Focus)
+                        <span class="section-number">🎯</span> Learning Outcomes (Core Exam Focus)
                     </h2>
                     <p style="font-size: 14px; color: var(--slate-600); margin-bottom: 16px;">
-                        According to the official ICAI curriculum, students must achieve complete exam proficiency in:
+                        According to the official curriculum, students must achieve complete exam proficiency in:
                     </p>
                     <div class="info-grid">
                         <div class="info-box">
@@ -1077,7 +1220,7 @@
                         </div>
                     </div>
                     <p style="font-size: 13.5px; color: var(--slate-600); line-height: 1.55;">
-                        <strong>ICAI Nuance (Geographical &amp; Sectoral Diversification):</strong> Compliance risk
+                        <strong>Curriculum Focus (Geographical &amp; Sectoral Diversification):</strong> Compliance risk
                         multiplies drastically when an organization enters a new business line or state. For instance, a
                         cement manufacturer expanding into a sugar mill in another state encounters completely different
                         agricultural procurement, state price controls, and pollution guidelines. Failure to master
@@ -1096,7 +1239,7 @@
                     </div>
                     <div
                         style="background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: var(--radius-md); padding: 16px; margin: 12px 0; font-size: 13.5px; color: var(--slate-700);">
-                        <strong>ICAI Textbook Example:</strong> An accounts clerk erroneously disburses
+                        <strong>Practical Example:</strong> An accounts clerk erroneously disburses
                         <strong>₹1,00,000</strong> from the company’s bank account instead of the authorized
                         <strong>₹10,000</strong>.
                         <ul style="margin-left: 20px; margin-top: 8px;">
@@ -1106,6 +1249,37 @@
                             <li><strong>Remedy:</strong> Dual authorization (maker-checker controls) and automated
                                 electronic flags for anomalous disbursement values.</li>
                         </ul>
+                    </div>
+
+                    <!-- Key Exam Insights: Enterprise Risk Taxonomy -->
+                    <div class="callout callout-warning" style="margin-top: 18px;">
+                        <div class="callout-icon">📌</div>
+                        <div>
+                            <strong>Key Exam Summary:</strong>
+                            <ul style="margin: 4px 0 0 16px; padding: 0;">
+                                <li><strong>Strategic Risk:</strong> Company's strategy becomes less effective and it struggles to achieve its goal.</li>
+                                <li><strong>Compliance Risk:</strong> Non-compliance with rules, laws, and regulations leading to penalties (fines and imprisonment).</li>
+                                <li><strong>Operational Risk:</strong> Failure to cope with day-to-day operational problems (people, internal processes, IT systems).</li>
+                                <li><strong>Financial Risk:</strong> Unexpected changes in financial conditions (asset prices, exchange rates, credit ratings, interest rates).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Test Your Knowledge: Topic 1 MCQ -->
+                    <div class="quiz-card" style="margin-top: 18px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 1</div>
+                        <div class="quiz-question">Q1.1: A company experiences severe operational disruption and heavy statutory financial penalties because its newly acquired subsidiary failed to adhere to mandatory environmental licensing norms and local labor laws. According to enterprise risk taxonomy, this is primarily classified as:</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q1-mcq')">(a) Strategic Risk</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch2-q1-mcq')">(b) Compliance Risk</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q1-mcq')">(c) Operational Risk</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q1-mcq')">(d) Foreign Exchange Risk</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch2-q1-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch2-q1-mcq">
+                            <span class="correct-tag">Correct Answer: (b)</span><br>
+                            <strong>Explanation:</strong> Under standard risk taxonomy, <em>Compliance Risk</em> arises from non-compliance with external statutory regulations, industry standards, or legal mandates, resulting in financial fines, loss of operational licenses, or prosecution.
+                        </div>
                     </div>
                 </div>
 
@@ -1118,7 +1292,7 @@
                     <p style="font-size: 14.5px; color: var(--slate-700); line-height: 1.6;">
                         <strong>Financial Risk</strong> refers to the danger of unexpected adverse fluctuations in
                         financial conditions—including asset prices, currency exchange rates, interest rates, and credit
-                        ratings. ICAI categorizes financial risk into five primary pillars:
+                        ratings. Financial risk is categorized into five primary pillars:
                     </p>
 
                     <div class="info-grid">
@@ -1182,6 +1356,23 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Test Your Knowledge: Topic 1.4 MCQ -->
+                    <div class="quiz-card" style="margin-top: 18px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 1.4</div>
+                        <div class="quiz-question">Q1.4: An Indian multinational company establishes a manufacturing plant in a developing foreign nation. Two years later, the host government unilaterally caps royalty remittances to India and introduces strict foreign exchange rationing. Which specific financial risk category has materialized?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q1-4-mcq')">(a) Counterparty Default Risk</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch2-q1-4-mcq')">(b) Political Risk</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q1-4-mcq')">(c) Basis Risk</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q1-4-mcq')">(d) Pure Liquidity Risk</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch2-q1-4-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch2-q1-4-mcq">
+                            <span class="correct-tag">Correct Answer: (b)</span><br>
+                            <strong>Explanation:</strong> In financial risk management, <em>Political Risk</em> specifically encompasses adverse host government interventions against foreign investors, including dividend/royalty remittance rationing, expropriation of capital assets, exchange controls, or discriminatory taxation.
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Section 2: Evaluation of Financial Risk -->
@@ -1232,6 +1423,23 @@
                             </tbody>
                         </table>
                     </div>
+
+                    <!-- Test Your Knowledge: Topic 2 MCQ -->
+                    <div class="quiz-card" style="margin-top: 18px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 2</div>
+                        <div class="quiz-question">Q2.1: When evaluating financial risk from the Sovereign Government's perspective, what is the primary structural danger of corporate insolvency?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q2-mcq')">(a) Fluctuation in quarterly EPS reported by listed firms</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch2-q2-mcq')">(b) The systemic domino effect of major corporate/bank defaults causing financial sector distrust, rising non-performing assets (NPAs), and widespread job losses</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q2-mcq')">(c) Minor variations in dividend yield across industrial sectors</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q2-mcq')">(d) A reduction in discretionary employee perks across subsidiaries</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch2-q2-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch2-q2-mcq">
+                            <span class="correct-tag">Correct Answer: (b)</span><br>
+                            <strong>Explanation:</strong> From an enterprise perspective, the Government evaluates financial risk through macro-prudential stability: failure of large institutions spreads distrust across society, generates cascading bad debts in banks, destroys employment, and impairs sovereign tax revenues.
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Section 3: Value at Risk (VAR) Core Theory -->
@@ -1249,7 +1457,7 @@
                     <div class="callout callout-purple">
                         <div class="callout-icon">📖</div>
                         <div>
-                            <strong>ICAI Definition of VAR:</strong> Value-at-Risk is an estimate of the <em>maximum
+                            <strong>Core Definition of VAR:</strong> Value-at-Risk is an estimate of the <em>maximum
                                 loss</em> that an investment portfolio is expected to suffer over a <em>designated time
                                 horizon</em> at a <em>specified confidence level</em> under normal market conditions.
                         </div>
@@ -1309,6 +1517,23 @@
                                 through Risk-Adjusted Return on Capital (RAROC).</div>
                         </div>
                     </div>
+
+                    <!-- Test Your Knowledge: Topic 3 MCQ -->
+                    <div class="quiz-card" style="margin-top: 18px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 3</div>
+                        <div class="quiz-question">Q3.1: Value at Risk (VAR) answers which two fundamental risk management questions?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q3-mcq')">(a) What is the maximum expected dividend, and when will it be credited to bank accounts?</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch2-q3-mcq')">(b) What is the worst-case scenario over a designated time period, and what will be the monetary loss at a given confidence level?</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q3-mcq')">(c) What is the exact accounting profit for the next fiscal year?</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q3-mcq')">(d) What is the probability that beta will remain unchanged over five years?</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch2-q3-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch2-q3-mcq">
+                            <span class="correct-tag">Correct Answer: (b)</span><br>
+                            <strong>Explanation:</strong> VAR answers two basic questions: (i) <em>What is the worst-case scenario?</em> and (ii) <em>What will be the potential loss?</em> over a specified holding period at a given statistical confidence level.
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Section 3.3: Mathematical Formulas & Z-Scores -->
@@ -1343,7 +1568,7 @@
                                 <tr>
                                     <th>Confidence Level (\(1 - \alpha\))</th>
                                     <th>Probability in Tail (\(\alpha\))</th>
-                                    <th>Z-Score Value (ICAI Standard)</th>
+                                    <th>Z-Score Value (Exam Standard)</th>
                                     <th>Practical Interpretation</th>
                                 </tr>
                             </thead>
@@ -1385,19 +1610,94 @@
                             <div><strong>\(r_{12}\):</strong> Correlation coefficient between Asset 1 and Asset 2</div>
                         </div>
                     </div>
+
+                    <!-- Key Formula Rules: Standard Deviation Time Scaling -->
+                    <div class="callout callout-warning" style="margin-top: 18px;">
+                        <div class="callout-icon">📌</div>
+                        <div>
+                            <strong>Core Rule: Daily vs Monthly vs Annual Standard Deviation</strong><br>
+                            Assuming a month consists of 20 trading days and a year has 12 months:
+                            $$\text{Annual SD} = \text{Monthly SD} \times \sqrt{12} \quad \iff \quad \text{Monthly SD} = \frac{\text{Annual SD}}{\sqrt{12}}$$
+                            $$\text{Monthly SD} = \text{Daily SD} \times \sqrt{20} \quad \iff \quad \text{Daily SD} = \frac{\text{Monthly SD}}{\sqrt{20}}$$
+                            <em>Crucial Exam Warning:</em> When converting between monthly and annual standard deviation, it is strictly incorrect to simply multiply or divide by 12. Instead, always scale using the square root ($\sqrt{12}$ or $\sqrt{250}$ / $\sqrt{252}$).
+                        </div>
+                    </div>
+
+                    <!-- Test Your Knowledge: Practice Problem 1 -->
+                    <div class="quiz-card" style="margin-top: 18px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Practice Problem 1</div>
+                        <div class="quiz-question">Q3.2: You own a portfolio of ₹ 10 Crores. The daily standard deviation is 2%. What will be the loss for 10 days at 95 percent confidence interval?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch2-q3-2-mcq')">(a) ₹ 104.36 lacs</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q3-2-mcq')">(b) ₹ 63.25 lacs</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q3-2-mcq')">(c) ₹ 330 lacs</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q3-2-mcq')">(d) ₹ 200 lacs</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch2-q3-2-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch2-q3-2-mcq">
+                            <span class="correct-tag">Correct Answer: (a) ₹ 104.36 lacs</span><br>
+                            <strong>Step-by-Step Solution:</strong><br>
+                            1. Portfolio Value $= ₹ 10\text{ Crores} = ₹ 1,000\text{ lacs}$.<br>
+                            2. Daily Standard Deviation in monetary terms $= 1,000\text{ lacs} \times 2\% = ₹ 20\text{ lacs}$.<br>
+                            3. Daily loss at 95% confidence level ($Z = 1.65$) $= 20\text{ lacs} \times 1.65 = ₹ 33\text{ lacs}$.<br>
+                            4. Loss for 10 days $= \text{Daily loss} \times \sqrt{10} = ₹ 33\text{ lacs} \times 3.162277 = \mathbf{₹ 104.36\text{ lacs}}$.
+                        </div>
+                    </div>
+
+                    <!-- Test Your Knowledge: Practice Problem 2 -->
+                    <div class="quiz-card" style="margin-top: 18px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Practice Problem 2</div>
+                        <div class="quiz-question">Q3.3: You are holding a portfolio of ₹ 1,00,000. The standard deviation is 21% per annum. What is the monthly VAR at 99% confidence level?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q3-3-mcq')">(a) ₹ 1,750</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q3-3-mcq')">(b) ₹ 4,077.50</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q3-3-mcq')">(c) ₹ 6,062</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch2-q3-3-mcq')">(d) ₹ 14,125</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch2-q3-3-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch2-q3-3-mcq">
+                            <span class="correct-tag">Correct Answer: (d) ₹ 14,125</span><br>
+                            <strong>Step-by-Step Solution:</strong><br>
+                            1. Annual SD $= ₹ 1,00,000 \times 21\% = ₹ 21,000$.<br>
+                            2. Monthly SD $= \frac{\text{Annual SD}}{\sqrt{12}} = \frac{21,000}{3.4641} = ₹ 6,062.18$.<br>
+                            3. Monthly VAR at 99% confidence ($Z = 2.33$) $= 6,062.18 \times 2.33 = \mathbf{₹ 14,125}$.
+                        </div>
+                    </div>
+
+                    <!-- Test Your Knowledge: Practice Problem 3 (Reverse Working) -->
+                    <div class="quiz-card" style="margin-top: 18px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Practice Problem 3 (Reverse Working)</div>
+                        <div class="quiz-question">Q3.4: Acceptable loss is ₹ 2,33,000. Standard deviation of the security is 1.5 percent per day. What is the maximum acceptable investment where VAR should not exceed the acceptable loss? The required confidence level is 99 percent and the investment is to be held for 9 days.</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q3-4-mcq')">(a) ₹ 66,66,667</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch2-q3-4-mcq')">(b) ₹ 22,22,222</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q3-4-mcq')">(c) ₹ 7,40,741</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q3-4-mcq')">(d) ₹ 1,00,00,000</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch2-q3-4-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch2-q3-4-mcq">
+                            <span class="correct-tag">Correct Answer: (b) ₹ 22,22,222</span><br>
+                            <strong>Step-by-Step Solution:</strong><br>
+                            1. Daily $\text{SD} = 1.50\%$.<br>
+                            2. $\text{SD for 9 days} = 1.50\% \times \sqrt{9} = 1.50\% \times 3 = 4.50\%$.<br>
+                            3. Z-multiplier for 99% confidence $= 2.33$.<br>
+                            4. $\text{Value at Risk} = \text{Amount of Investment} \times 4.5\% \times 2.33$.<br>
+                            5. $₹ 2,33,000 = \text{Amount of Investment} \times 0.10485 \implies \text{Amount of Investment} = \frac{2,33,000}{0.045 \times 2.33} = \frac{1,00,000}{0.045} = \mathbf{₹ 22,22,222}$.
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Section 4: Solved ICAI Illustration -->
-                <div class="section-card" id="icai-illustration">
+                <!-- Section 4: Solved Practical Illustration -->
+                <div class="section-card" id="portfolio-var-case">
                     <h2 class="section-title">
-                        <span class="section-number">4</span> Solved ICAI Practical Examination Question (Full
+                        <span class="section-number">4</span> Solved Practical Examination Question (Full
                         Walkthrough)
                     </h2>
 
                     <div class="callout callout-purple">
                         <div class="callout-icon">📝</div>
                         <div>
-                            <strong>ICAI Official Question (Test Your Knowledge #1):</strong><br>
+                            <strong>Master Problem (Test Your Knowledge #1):</strong><br>
                             Consider a portfolio consisting of a <strong>₹2,00,00,000</strong> investment in share XYZ
                             and a <strong>₹2,00,00,000</strong> investment in share ABC. The daily standard deviation of
                             both shares is <strong>1%</strong> and the coefficient of correlation between them is
@@ -1440,7 +1740,7 @@
                                     $$\sigma_{\text{daily}} = ₹400\text{ Lakhs} \times 0.80623\% = \mathbf{₹3.2249\text{
                                     Lakhs} \approx ₹3.22\text{ Lakhs}}$$
                                     <br>
-                                    <strong>Method B: In Absolute Value Terms (ICAI Alternative):</strong><br>
+                                    <strong>Method B: In Absolute Value Terms (Alternative Approach):</strong><br>
                                     Standard deviation of daily change in each asset = \(1\% \times ₹200\text{ Lakhs} =
                                     ₹2\text{ Lakhs}\)<br>
                                     $$\text{Variance of portfolio} (V) = (2)^2 + (2)^2 + 2(0.3)(2)(2) = 4 + 4 + 2.4 =
@@ -1607,6 +1907,37 @@
                             </tbody>
                         </table>
                     </div>
+
+                    <!-- Key Strategic Points: Risk Management Toolbox -->
+                    <div class="callout callout-warning" style="margin-top: 18px;">
+                        <div class="callout-icon">📌</div>
+                        <div>
+                            <strong>Strategic Management Summary:</strong>
+                            <ul style="margin: 4px 0 0 16px; padding: 0; line-height: 1.55;">
+                                <li><strong>Counterparty Risk:</strong> Due diligence, credit reviews &amp; limits, performance guarantees, and single party/group exposure limits.</li>
+                                <li><strong>Political Risk:</strong> Local sourcing, local debt financing, prior negotiations, and joint ventures with domestic partners.</li>
+                                <li><strong>Interest Rate Risk:</strong> Forward Rate Agreements (FRAs), Interest Rate Options, Futures, and Swaps.</li>
+                                <li><strong>Currency Risk:</strong> Currency invoicing, forward contracts, currency futures/options/swaps, leading and lagging, and money market hedges.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Test Your Knowledge: Topic 5 MCQ -->
+                    <div class="quiz-card" style="margin-top: 18px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 5</div>
+                        <div class="quiz-question">Q5.1: Which of the following strategies is recognized as an effective financial technique to mitigate Political Risk for an overseas manufacturing venture?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q5-mcq')">(a) Sourcing 100% of raw materials and long-term project debt from the parent company's home nation in foreign currency</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch2-q5-mcq')">(b) Raising local debt financing and sourcing local raw materials/labor in the host country, alongside forming a joint venture with a reputable domestic partner</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q5-mcq')">(c) Refusing to negotiate concession terms with the host government before breaking ground</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch2-q5-mcq')">(d) Maintaining 100% of the project's working capital as unhedged offshore bank deposits</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch2-q5-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch2-q5-mcq">
+                            <span class="correct-tag">Correct Answer: (b)</span><br>
+                            <strong>Explanation:</strong> In multinational financial management, raising local currency debt and hiring local inputs creates a natural structural hedge against political expropriation. If the host government seizes assets, domestic financial institutions bear the liability, strongly disincentivizing arbitrary sovereign intervention.
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Section 6: Master Summary & Review Questions -->
@@ -1658,7 +1989,7 @@
                         </table>
                     </div>
 
-                    <h3 class="sub-heading">Self-Test Practice Questions (ICAI TYK)</h3>
+                    <h3 class="sub-heading">Self-Test Practice Questions (TYK)</h3>
 
                     <div class="quiz-card">
                         <div class="quiz-question">Q1: Explain the significance and practical applications of
@@ -1714,16 +2045,78 @@
     <script src="../../assets/template.js"></script>
 
     <script>
-        function toggleAnswer(id) {
-            const ansEl = document.getElementById(id);
-            ansEl.style.display = (ansEl.style.display === 'block') ? 'none' : 'block';
+        function checkOption(optEl, isCorrect, ansId) {
+            const parent = optEl.closest('.mcq-options-grid');
+            if (!parent) return;
+            const allOptions = parent.querySelectorAll('.mcq-option-item');
+            allOptions.forEach(opt => {
+                opt.classList.remove('selected-correct', 'selected-wrong');
+            });
+            if (isCorrect) {
+                optEl.classList.add('selected-correct');
+            } else {
+                optEl.classList.add('selected-wrong');
+                allOptions.forEach(opt => {
+                    if (opt.getAttribute('data-correct') === 'true') {
+                        opt.classList.add('selected-correct');
+                    }
+                });
+            }
+            const ansEl = document.getElementById(ansId);
+            if (ansEl) {
+                ansEl.style.display = 'block';
+            }
         }
 
-        const sections = document.querySelectorAll('.section-card, #overview, #types-of-risk, #financial-risk-types, #evaluation-perspectives, #var-framework, #var-math, #icai-illustration, #risk-management-methods, #exam-summary');
+        function toggleAnswer(id) {
+            const ansEl = document.getElementById(id);
+            if (!ansEl) return;
+            const isShowing = ansEl.style.display === 'block';
+            ansEl.style.display = isShowing ? 'none' : 'block';
+            if (!isShowing) {
+                const card = ansEl.closest('.quiz-card') || ansEl.closest('.topic-quiz-card');
+                if (card) {
+                    const correctOpt = card.querySelector('.mcq-option-item[data-correct="true"]');
+                    if (correctOpt) correctOpt.classList.add('selected-correct');
+                }
+            }
+        }
+
+        const sections = document.querySelectorAll('.section-card, #overview, #types-of-risk, #financial-risk-types, #evaluation-perspectives, #var-framework, #var-math, #portfolio-var-case, #risk-management-methods, #exam-summary');
         const sidebarLinks = document.querySelectorAll('.sidebar a');
         const contentEl = document.querySelector('.content');
+        const progressBar = document.getElementById('reading-progress');
+        function updateReadingProgressColor(progressBar, progress) {
+            var r, g, b;
+            if (progress <= 33) {
+                var t = progress / 33;
+                r = Math.round(239 + (234 - 239) * t);
+                g = Math.round(68 + (179 - 68) * t);
+                b = Math.round(68 + (8 - 68) * t);
+            } else if (progress <= 66) {
+                var t = (progress - 33) / 33;
+                r = Math.round(234 + (34 - 234) * t);
+                g = Math.round(179 + (197 - 179) * t);
+                b = Math.round(8 + (94 - 8) * t);
+            } else {
+                var t = (progress - 66) / 34;
+                r = Math.round(34 + (16 - 34) * t);
+                g = Math.round(197 + (185 - 197) * t);
+                b = Math.round(94 + (129 - 94) * t);
+            }
+            progressBar.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+            progressBar.style.boxShadow = '0 0 8px rgba(' + r + ',' + g + ',' + b + ', 0.45)';
+        }
+
+        if (progressBar) { updateReadingProgressColor(progressBar, 0); }
 
         contentEl.addEventListener('scroll', () => {
+            if (progressBar) {
+                const totalScroll = contentEl.scrollHeight - contentEl.clientHeight;
+                const progress = totalScroll > 0 ? (contentEl.scrollTop / totalScroll) * 100 : 0;
+                progressBar.style.width = progress + '%';
+                updateReadingProgressColor(progressBar, progress);
+            }
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - contentEl.offsetTop;
@@ -1743,3 +2136,4 @@
 </body>
 
 </html>
+

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@
     <meta name="description"
         content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 14: Mergers, Acquisitions and Corporate Restructuring. Master CA Final AFM Chapter 14 Mergers & Acquisitions. Swap ratio models, post-merger EPS dilution, synergy valuation, poison pills, and all 4 Illus + 35 TYK questions.">
     <meta name="keywords"
-        content="Mergers Acquisitions Corporate Restructuring CA Final AFM, Swap Ratio formula, Maximum Bid price, Hostile takeover defenses, Demergers, Chapter 14, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+        content="Mergers Acquisitions Corporate Restructuring CA Final AFM, Swap Ratio formula, Maximum Bid price, Hostile takeover defenses, Demergers, Chapter 14, CA Final AFM Paper 2, New Syllabus AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
     <meta name="author" content="Calcium Notes">
     <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/mergers_acquisitions.html">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -48,7 +48,7 @@
     "name": "CA Final AFM Chapter 14: Mergers, Acquisitions and Corporate Restructuring (Quick Revision)",
     "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 14: Mergers, Acquisitions and Corporate Restructuring. Master CA Final AFM Chapter 14 Mergers & Acquisitions. Swap ratio models, post-merger EPS dilution, synergy valuation, poison pills, and all 4 Illus + 35 TYK questions.",
     "learningResourceType": "Revision Cheat Sheet",
-    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "educationalLevel": "CA Final (New Syllabus)",
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "author": {
@@ -201,8 +201,8 @@
             color: var(--text-primary);
             line-height: 1.7;
             font-size: 15px;
-            display: flex;
-            min-height: 100vh;
+            
+            
         }
 
 
@@ -569,48 +569,249 @@
         .calc {
             font-family: var(--notes-table) !important;
         }
+            /* Interactive Topic Quiz Styles */
+        .topic-quiz-card {
+            background: var(--notes-card-bg, #ffffff);
+            border: 1px solid var(--notes-card-border, #e2e8f0);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 28px 0 16px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+        }
+        .topic-quiz-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 4px 10px;
+            border-radius: 20px;
+            background: rgba(13, 148, 136, 0.12);
+            color: #0d9488;
+            margin-bottom: 14px;
+        }
+        .topic-quiz-question {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--notes-text, #1e293b);
+            margin-bottom: 18px;
+            line-height: 1.5;
+        }
+        .mcq-options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .mcq-option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: 1px solid var(--notes-card-border, #e2e8f0);
+            background: var(--notes-card-bg, #f8fafc);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.95rem;
+            line-height: 1.45;
+            color: var(--notes-text, #334155);
+            user-select: none;
+        }
+        .mcq-option-item:hover {
+            border-color: #0d9488;
+            background: rgba(13, 148, 136, 0.04);
+        }
+        .mcq-option-item.selected-correct {
+            border-color: #10b981 !important;
+            background: rgba(16, 185, 129, 0.12) !important;
+            color: #065f46 !important;
+            font-weight: 600;
+        }
+        .mcq-option-item.selected-wrong {
+            border-color: #ef4444 !important;
+            background: rgba(239, 68, 68, 0.12) !important;
+            color: #991b1b !important;
+            font-weight: 600;
+        }
+        .quiz-btn-row {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .reveal-btn {
+            background: transparent;
+            border: 1px solid #0d9488;
+            color: #0d9488;
+            padding: 7px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .reveal-btn:hover {
+            background: #0d9488;
+            color: #ffffff;
+        }
+        .explanation-box {
+            display: none;
+            margin-top: 16px;
+            padding: 16px;
+            border-radius: 8px;
+            background: rgba(13, 148, 136, 0.06);
+            border-left: 4px solid #0d9488;
+            font-size: 0.92rem;
+            line-height: 1.55;
+            color: var(--notes-text, #1e293b);
+        }
+        [data-theme="dark"] .topic-quiz-card {
+            background: #1e293b;
+            border-color: #334155;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        }
+        [data-theme="dark"] .topic-quiz-question {
+            color: #f1f5f9;
+        }
+        [data-theme="dark"] .mcq-option-item {
+            border-color: #334155;
+            background: #0f172a;
+            color: #cbd5e1;
+        }
+        [data-theme="dark"] .mcq-option-item:hover {
+            border-color: #14b8a6;
+            background: rgba(20, 184, 166, 0.1);
+        }
+        [data-theme="dark"] .mcq-option-item.selected-correct {
+            border-color: #10b981 !important;
+            background: rgba(16, 185, 129, 0.2) !important;
+            color: #6ee7b7 !important;
+        }
+        [data-theme="dark"] .mcq-option-item.selected-wrong {
+            border-color: #ef4444 !important;
+            background: rgba(239, 68, 68, 0.2) !important;
+            color: #fca5a5 !important;
+        }
+        [data-theme="dark"] .explanation-box {
+            background: rgba(20, 184, 166, 0.08);
+            border-left-color: #14b8a6;
+            color: #e2e8f0;
+        }
+    
+        /* Universal Single-Scrollbar Fix */
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            padding-bottom: 0 !important;
+            height: 100% !important;
+            max-height: 100vh !important;
+            max-height: 100dvh !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            display: block !important;
+            box-sizing: border-box !important;
+        }
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        .topbar {
+            height: 64px !important;
+            width: 100% !important;
+            margin: 0 !important;
+            box-sizing: border-box !important;
+            flex-shrink: 0 !important;
+            position: relative !important;
+            z-index: 100;
+        }
+        .layout {
+            display: flex !important;
+            height: calc(100vh - 64px) !important;
+            height: calc(100dvh - 64px) !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            box-sizing: border-box !important;
+        }
+        .sidebar {
+            width: 290px;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            flex-shrink: 0 !important;
+            box-sizing: border-box !important;
+        }
+        .content {
+            flex: 1 1 auto !important;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            padding: 36px 48px !important;
+            box-sizing: border-box !important;
+            scroll-behavior: smooth;
+        }
+        .content-container {
+            max-width: 940px !important;
+            margin: 0 auto !important;
+            padding-bottom: 80px !important;
+            box-sizing: border-box !important;
+        }
     </style>
+    <!-- Modern Typography & Unified Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/unified_notes.css">
 </head>
 
 <body>
-    <nav class="sidebar">
-        <div class="sidebar-brand">
-            <span>AFM Quick Notes</span>
-            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">☀️/🌙</button>
+
+    <header class="topbar">
+        <div class="topbar-left">
+            <a href="../../notes/afmnotes.html" class="back-hub-btn">← AFM Hub</a>
+            <div class="chapter-title">Chapter 14: Mergers, Acquisitions and Corporate Restructuring (⚡ Quick Revision)</div>
         </div>
-
-        <div class="nav-group-title">Quick Navigation</div>
-        <a href="#formula-sheet" class="nav-link">1. M&amp;A Master Formulas</a>
-        <a href="#swap-ratios" class="nav-link">2. Swap Ratio Cheat Sheet</a>
-        <a href="#defense-matrix" class="nav-link">3. Hostile Defenses Matrix</a>
-        <a href="#restructuring-matrix" class="nav-link">4. Divestiture &amp; Demerger Guide</a>
-        <a href="#max-bid" class="nav-link">5. Maximum Bid &amp; Synergies</a>
-        <a href="#exam-pitfalls" class="nav-link">6. ICAI Exam Traps &amp; Checklist</a>
-
-        <div class="nav-group-title">Hub Portals</div>
-        <a href="../../notes/afmnotes.html" class="nav-link">← Quick Notes Index</a>
-        <a href="../../notes/afmfullnotes.html" class="nav-link">← Full Notes Index</a>
-    </nav>
-
-    <main class="main-wrapper">
-        <header class="header-section">
-            <div class="breadcrumbs">
-                <a href="../../notes/afmnotes.html">CA Final AFM</a> &gt;
-                <span>Chapter 14 Quick Notes</span>
+        <div class="topbar-right">
+            <div class="progress-container" title="Reading Progress">
+                <div class="progress-bar" id="reading-progress"></div>
             </div>
-            <h1>Chapter 14: Mergers, Acquisitions &amp; Corporate Restructuring</h1>
-            <div class="chapter-meta">
-                <span class="chapter-pill">⚡ High-Yield Revision Guide</span>
-                <span>Swap Ratios • Takeover Defenses • Demergers &amp; Synergy Economics</span>
-            </div>
-        </header>
-
-        <div class="mode-bar">
-            <a href="mergers_acquisitions_full.html" class="mode-btn">📖 Full Detailed Notes</a>
-            <a href="mergers_acquisitions.html" class="mode-btn active">⚡ Quick Revision Notes</a>
+            <button class="toggle-btn" id="sidebar-toggle" onclick="toggleSidebar()">☰ Contents</button>
         </div>
+    </header>
 
-        <!-- 1. Formula Sheet -->
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-title">Chapter Contents</div>
+            <nav>
+                <ul>
+                    <li><a href="#formula-sheet" class="active">1. M&amp;A Master Formulas</a></li>
+                    <li><a href="#swap-ratios">2. Swap Ratio Cheat Sheet</a></li>
+                    <li><a href="#defense-matrix">3. Hostile Defenses Matrix</a></li>
+                    <li><a href="#restructuring-matrix">4. Divestiture &amp; Demerger Guide</a></li>
+                    <li><a href="#max-bid">5. Maximum Bid &amp; Synergies</a></li>
+                    <li><a href="#exam-pitfalls">6. Exam Traps &amp; Checklist</a></li>
+                    <li><a href="../../notes/afmnotes.html">â† Quick Notes Index</a></li>
+                    <li><a href="../../notes/afmfullnotes.html">â† Full Notes Index</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="content-container">
+
+                <div class="chapter-header">
+                    <div class="chapter-badge">CA Final AFM • Paper 2</div>
+                    <h1>Chapter 14: Mergers, Acquisitions and Corporate Restructuring</h1>
+                    <p>Complete formula sheet and tactical revision covering swap ratio models, post-merger EPS dilution, synergy valuation, true cost of stock offer, hostile takeover defenses, and corporate restructuring taxonomy.</p>
+                    <div class="chapter-meta">
+                        <span>📚 Standard Curriculum Study Material</span><span>⏱️ Read Time: ~50 mins</span><span>🎯 Exam Weightage: 15 – 25 Marks</span>
+                    </div>
+                </div>
+<!-- 1. Formula Sheet -->
         <section class="quick-card" id="formula-sheet">
             <h2>1. M&amp;A Master Mathematical Formulas</h2>
 
@@ -644,7 +845,102 @@
                 \text{Cost Savings}$$
                 $$\text{Max Price per Target Share} = \frac{\text{Max Purchase Consideration}}{N_T}$$
             </div>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 1 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 1.1</div>
+                <div class="topic-quiz-question">Pre-merger annual cash flows of Firm A are INR 25 lakhs (cost of capital 10%), and Firm B are INR 20 lakhs (cost of capital 20%). The combined entity will generate cash flows of INR 60 lakhs per annum with a post-merger cost of capital of 8% due to scale synergies. What is the total synergy gain from the merger?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ma-q1-ans')">
+                        <strong>A.</strong>&nbsp;INR 400 lakhs
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q1-ans')">
+                        <strong>B.</strong>&nbsp;INR 750 lakhs
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q1-ans')">
+                        <strong>C.</strong>&nbsp;INR 350 lakhs
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q1-ans')">
+                        <strong>D.</strong>&nbsp;INR 150 lakhs
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ma-q1-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ma-q1-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    1. $V_A = \frac{25}{0.10} = \text{INR } 250\text{ lakhs}$.<br>
+                    2. $V_B = \frac{20}{0.20} = \text{INR } 100\text{ lakhs}$.<br>
+                    3. Combined Pre-merger value $= 250 + 100 = \text{INR } 350\text{ lakhs}$.<br>
+                    4. Combined Post-merger value $V_{AB} = \frac{60}{0.08} = \text{INR } 750\text{ lakhs}$.<br>
+                    5. $\text{Synergy Gain} = V_{AB} - (V_A + V_B) = 750 - 350 = \text{INR } 400\text{ lakhs}$.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 1.2</div>
+                <div class="topic-quiz-question">Firm A (Market value $V_A = \$80\text{M}$, 4 million shares at $20) acquires Target B ($V_B = \$20\text{M}$) by issuing 1 million new shares. Operational synergies result in a combined entity value $V_{AB} = \$110\text{M}$. What is the true economic cost of the merger to Firm A's original shareholders?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ma-q2-ans')">
+                        <strong>A.</strong>&nbsp;</section>.00 million
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q2-ans')">
+                        <strong>B.</strong>&nbsp;<section class="quick-card" id="formula-sheet">
+            <h2>1. M&amp;A Master Mathematical Formulas</h2>
+
+            <div class="formula-box">
+                <strong>1. Post-Merger Combined Shares &amp; EPS:</strong><br>
+                $$N_{AB} = N_A + (N_T \times \text{Swap Ratio})$$
+                $$\text{Combined EPS } (EPS_{AB}) = \frac{\text{PAT}_A + \text{PAT}_T + \text{Synergy}}{N_{AB}}$$
+            </div>
+
+            <div class="formula-box">
+                <strong>2. Post-Merger Combined Market Capitalization &amp; Price:</strong><br>
+                $$V_{AB} = V_A + V_T + \text{PV of Synergy} - \text{Cash Consideration}$$
+                $$\text{Post-Merger MPS } (P_{AB}) = \frac{V_{AB}}{N_{AB}} \quad \text{or} \quad \text{EPS}_{AB} \times
+                (P/E)_{AB}$$
+            </div>
+
+            <div class="formula-box">
+                <strong>3. Shareholder Wealth Gain/Loss Formulas:</strong><br>
+                $$\text{Gain to Acquirer Shareholder} = (P_{AB} - P_A) \times N_A$$
+                $$\text{Gain to Target Shareholder} = (P_{AB} \times \text{Swap Ratio} - P_T) \times N_T$$
+            </div>
+
+            <div class="formula-box">
+                <strong>4. Maximum Exchange Ratio for Acquirer without EPS Dilution:</strong><br>
+                $$\text{Max Swap Ratio (EPS)} = \frac{\text{EPS}_T}{\text{EPS}_A}$$
+            </div>
+
+            <div class="formula-box">
+                <strong>5. Maximum Acquisition Bid Consideration:</strong><br>
+                $$\text{Max Purchase Consideration} = \text{Target Standalone Market Value} + \text{PV of Synergies} +
+                \text{Cost Savings}$$
+                $$\text{Max Price per Target Share} = \frac{\text{Max Purchase Consideration}}{N_T}$$
+            </div>
+        </section>.00 million
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q2-ans')">
+                        <strong>C.</strong>&nbsp;$20.00 million
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q2-ans')">
+                        <strong>D.</strong>&nbsp;$10.00 million
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ma-q2-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ma-q2-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    • Total merged shares $= 4\text{M} + 1\text{M} = 5\text{M shares}$.<br>
+                    • Fraction of merged firm given to Target B: $\alpha = \frac{1}{5} = 20\%$.<br>
+                    • Market value of consideration received by Target B: $\alpha \times V_{AB} = 0.20 \times \$110\text{M} = \$22\text{M}$.<br>
+                    • True Cost $= \text{Consideration received by B} - V_B = \$22\text{M} - \$20\text{M} = \</section>.00\text{ million}$.
+                </div>
+            </div>
+</section>
 
         <!-- 2. Swap Ratios -->
         <section class="quick-card" id="swap-ratios">
@@ -685,7 +981,93 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 2 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 2.1</div>
+                <div class="topic-quiz-question">Acquirer A has PAT of INR 200 lakhs, 20 lakh shares (EPS = INR 10), and market price of INR 150. Target B has PAT of INR 60 lakhs, 10 lakh shares (EPS = INR 6), and market price of INR 75. If shares are swapped on market price ratio with zero synergies, what is the post-merger EPS?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ma-q3-ans')">
+                        <strong>A.</strong>&nbsp;INR 10.40 (Accretive by INR 0.40)
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q3-ans')">
+                        <strong>B.</strong>&nbsp;INR 8.67 (Dilutive)
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q3-ans')">
+                        <strong>C.</strong>&nbsp;INR 9.80
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q3-ans')">
+                        <strong>D.</strong>&nbsp;INR 11.55
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ma-q3-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ma-q3-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    1. Swap Ratio $= \frac{75}{150} = 0.50$.<br>
+                    2. New shares issued $= 10\text{ lakh} \times 0.50 = 5\text{ lakh shares}$.<br>
+                    3. Total post-merger shares $= 20 + 5 = 25\text{ lakh shares}$.<br>
+                    4. Combined PAT $= 200 + 60 = \text{INR } 260\text{ lakhs}$.<br>
+                    5. Post-merger EPS $= \frac{260}{25} = \text{INR } 10.40$ (Bootstrap effect: higher P/E acquirer acquires lower P/E target).
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 2.2</div>
+                <div class="topic-quiz-question">Target T shareholders receive 0.40 shares of Acquirer A for each share held. Following the merger, the combined firm reports an EPS of INR 15.00. What is the Equivalent EPS earned by Target T's original shareholders?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ma-q4-ans')">
+                        <strong>A.</strong>&nbsp;INR 6.00
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q4-ans')">
+                        <strong>B.</strong>&nbsp;INR 15.00
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q4-ans')">
+                        <strong>C.</strong>&nbsp;INR 37.50
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q4-ans')">
+                        <strong>D.</strong>&nbsp;INR 7.50
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ma-q4-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ma-q4-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    $\text{Equivalent EPS} = \text{Post-merger EPS} \times \text{Exchange Ratio} = 15.00 \times 0.40 = \text{INR } 6.00$
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 2.3</div>
+                <div class="topic-quiz-question">Acquirer A (EPS = INR 8.00) acquires Target B (EPS = INR 3.20). In the absence of synergies, what exchange ratio must be set so that Target B shareholders maintain their pre-merger earnings per share exactly?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ma-q5-ans')">
+                        <strong>A.</strong>&nbsp;0.40
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q5-ans')">
+                        <strong>B.</strong>&nbsp;2.50
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q5-ans')">
+                        <strong>C.</strong>&nbsp;0.80
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q5-ans')">
+                        <strong>D.</strong>&nbsp;0.50
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ma-q5-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ma-q5-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    $\text{Exchange Ratio to preserve EPS} = \frac{\text{EPS}_B}{\text{EPS}_A} = \frac{3.20}{8.00} = 0.40$
+                </div>
+            </div>
+</section>
 
         <!-- 3. Defense Matrix -->
         <section class="quick-card" id="defense-matrix">
@@ -749,7 +1131,91 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 3 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 3.1</div>
+                <div class="topic-quiz-question">In hostile takeover defense mechanics, what is the core operational distinction between a "Flip-in" and a "Flip-over" poison pill rights plan?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ma-q6-ans')">
+                        <strong>A.</strong>&nbsp;A Flip-in allows target shareholders (excluding the hostile bidder) to purchase target shares at a steep discount; a Flip-over allows target shareholders to purchase the hostile bidder's shares at a discount after a merger
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q6-ans')">
+                        <strong>B.</strong>&nbsp;A Flip-in liquidates target assets while a Flip-over raises long-term debt
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q6-ans')">
+                        <strong>C.</strong>&nbsp;A Flip-in is an offensive tactic by the bidder while a Flip-over is a defensive tactic by the target
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q6-ans')">
+                        <strong>D.</strong>&nbsp;A Flip-over triggers immediately upon filing of a tender offer, while a Flip-in applies only to bondholders
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ma-q6-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ma-q6-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    • <strong>Flip-in:</strong> Triggers when an acquirer accumulates a threshold stake (e.g., 20%). Target shareholders (except the acquirer) are granted rights to buy target shares at a massive discount (e.g., 50%), massively diluting the acquirer.<br>
+                    • <strong>Flip-over:</strong> Triggers if the acquirer completes a subsequent merger. Target shareholders are entitled to purchase shares of the <em>acquirer</em> at a deep discount, diluting the predator's existing shareholders.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 3.2</div>
+                <div class="topic-quiz-question">Which hostile takeover defense strategy involves the target company countering an unsolicited takeover bid by launching a hostile tender offer to purchase voting control of the bidder itself?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ma-q7-ans')">
+                        <strong>A.</strong>&nbsp;Pac-Man Defense
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q7-ans')">
+                        <strong>B.</strong>&nbsp;Crown Jewel Defense
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q7-ans')">
+                        <strong>C.</strong>&nbsp;Greenmail
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q7-ans')">
+                        <strong>D.</strong>&nbsp;Golden Parachute
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ma-q7-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ma-q7-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    In the Pac-Man defense, the target firm reverses the acquisition direction by making a tender offer for the shares of the original hostile bidder, seeking to gain controlling majority before the bidder can complete its takeover.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 3.3</div>
+                <div class="topic-quiz-question">How does a "White Squire" defense fundamentally differ from a "White Knight" rescue?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ma-q8-ans')">
+                        <strong>A.</strong>&nbsp;A White Knight acquires complete ownership or majority voting control of the target, whereas a White Squire buys only a friendly minority blocking stake without taking full control
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q8-ans')">
+                        <strong>B.</strong>&nbsp;A White Squire liquidates target core divisions while a White Knight provides debt financing
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q8-ans')">
+                        <strong>C.</strong>&nbsp;A White Knight is an affiliate of the hostile bidder while a White Squire is an impartial arbitrator
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q8-ans')">
+                        <strong>D.</strong>&nbsp;A White Squire defense requires statutory approval from the competition commission while a White Knight does not
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ma-q8-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ma-q8-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    • <strong>White Knight:</strong> A friendly firm that rescues the target by acquiring full control on negotiated friendly terms.<br>
+                    • <strong>White Squire:</strong> A friendly investor that acquires a strategic minority block (e.g. 15%–25%) to prevent the hostile bidder from attaining voting control, allowing current management to retain operational independence.
+                </div>
+            </div>
+</section>
 
         <!-- 4. Restructuring Matrix -->
         <section class="quick-card" id="restructuring-matrix">
@@ -790,7 +1256,90 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 4 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 4.1</div>
+                <div class="topic-quiz-question">What is the essential operational distinction between a corporate "Spin-off" and a "Split-off"?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ma-q9-ans')">
+                        <strong>A.</strong>&nbsp;In a Spin-off, shares of the divested unit are distributed pro-rata to existing shareholders without surrendering parent shares; in a Split-off, shareholders must surrender parent shares in exchange for subsidiary shares
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q9-ans')">
+                        <strong>B.</strong>&nbsp;A Spin-off is an outright asset sale to third-party competitors while a Split-off is an internal dissolution
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q9-ans')">
+                        <strong>C.</strong>&nbsp;A Split-off generates an immediate cash dividend to all shareholders
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q9-ans')">
+                        <strong>D.</strong>&nbsp;A Spin-off requires the parent company to delist from stock exchanges
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ma-q9-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ma-q9-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    • <strong>Spin-off:</strong> Pro-rata dividend of new subsidiary shares to all existing parent shareholders. No shares of the parent are surrendered.<br>
+                    • <strong>Split-off:</strong> Shareholders are offered subsidiary shares only if they voluntarily surrender their parent company shares, altering the parent's share capital.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 4.2</div>
+                <div class="topic-quiz-question">Which corporate restructuring strategy involves floating a minority equity stake in a subsidiary to the public through an Initial Public Offering (IPO), establishing a public valuation and generating cash while retaining majority control?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ma-q10-ans')">
+                        <strong>A.</strong>&nbsp;Equity Carve-Out
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q10-ans')">
+                        <strong>B.</strong>&nbsp;Spin-off
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q10-ans')">
+                        <strong>C.</strong>&nbsp;Leveraged Buyout
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q10-ans')">
+                        <strong>D.</strong>&nbsp;Slump Sale
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ma-q10-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ma-q10-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    An Equity Carve-out sells a partial stake (e.g. 20%) of a wholly-owned subsidiary to public investors in an IPO. The parent unlocks value, raises external cash, and retains operational majority control.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 4.3</div>
+                <div class="topic-quiz-question">In a standard Leveraged Buyout (LBO), what constitutes the primary financial mechanism for acquiring the target enterprise?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ma-q11-ans')">
+                        <strong>A.</strong>&nbsp;Financed predominantly with high debt (70%–90%) secured against the target company's assets and serviced by its operating cash flows
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q11-ans')">
+                        <strong>B.</strong>&nbsp;Financed 100% by internal cash reserves of the financial sponsor
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q11-ans')">
+                        <strong>C.</strong>&nbsp;Financed via non-voting equity crowdfunding without bank borrowing
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q11-ans')">
+                        <strong>D.</strong>&nbsp;Financed by interest-free loans granted by the target company's management
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ma-q11-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ma-q11-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    An LBO relies heavily on debt (senior bank debt, mezzanine debt, and high-yield bonds). The sponsor commits a small equity ticket (10%–30%), and the target's operating cash flows and assets are used to collateralize and service the debt over the holding period.
+                </div>
+            </div>
+</section>
 
         <!-- 5. Maximum Bid & Synergies -->
         <section class="quick-card" id="max-bid">
@@ -840,48 +1389,273 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 5 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 5.1</div>
+                <div class="topic-quiz-question">Acquirer A evaluates Target T (10 lakh shares outstanding). Pre-merger market value of A is INR 80 crores and T is INR 20 crores. Present value of operational synergies is INR 10 crores. What is the maximum cash price per share Acquirer A can pay without diluting its own pre-merger shareholder wealth?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ma-q12-ans')">
+                        <strong>A.</strong>&nbsp;INR 300 per share
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q12-ans')">
+                        <strong>B.</strong>&nbsp;INR 200 per share
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q12-ans')">
+                        <strong>C.</strong>&nbsp;INR 250 per share
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q12-ans')">
+                        <strong>D.</strong>&nbsp;INR 350 per share
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ma-q12-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ma-q12-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    $\text{Maximum Consideration} = V_T + \text{Synergies} = 20\text{ cr} + 10\text{ cr} = \text{INR } 30\text{ crores}$
+                    $\text{Maximum Price per share} = \frac{\text{INR } 30\text{ crores}}{10\text{ lakh shares}} = \text{INR } 300\text{ per share}$
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 5.2</div>
+                <div class="topic-quiz-question">If Acquirer A (pre-merger value INR 80 crores) acquires Target T (pre-merger value INR 20 crores, synergies INR 10 crores) for a total cash payment of INR 26 crores, what is the net present value (NPV) of the merger accruing to Acquirer A's shareholders?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ma-q13-ans')">
+                        <strong>A.</strong>&nbsp;INR 4 crores
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q13-ans')">
+                        <strong>B.</strong>&nbsp;INR 10 crores
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q13-ans')">
+                        <strong>C.</strong>&nbsp;INR 6 crores
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q13-ans')">
+                        <strong>D.</strong>&nbsp;INR 14 crores
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ma-q13-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ma-q13-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    $\text{Synergy Gain} = \text{INR } 10\text{ crores}$
+                    $\text{Premium to Target} = 26 - 20 = \text{INR } 6\text{ crores}$
+                    $\text{NPV to Acquirer} = \text{Synergy Gain} - \text{Premium Paid} = 10 - 6 = \text{INR } 4\text{ crores}$
+                </div>
+            </div>
+</section>
 
         <!-- 6. Exam Pitfalls -->
         <section class="quick-card" id="exam-pitfalls">
-            <h2>5. ICAI Exam Pitfalls &amp; Traps</h2>
+            <h2>5. Exam Pitfalls &amp; Traps</h2>
             <div class="exam-trap">
-                <strong>⚠️ Pitfall 1: Gross NPA Ratio Direction in Bank Mergers</strong><br>
+                <strong>âš ï¸ Pitfall 1: Gross NPA Ratio Direction in Bank Mergers</strong><br>
                 In bank merger problems (like TYK PR-29), when calculating the swap ratio based on Gross NPA,
                 <strong>invert the ratio</strong> ($\frac{\text{Strong}}{\text{Weak}}$) because a lower NPA represents
                 superior asset quality! For CAR, MPS, and BVPS, use $\frac{\text{Weak}}{\text{Strong}}$.
             </div>
             <div class="exam-trap">
-                <strong>⚠️ Pitfall 2: Demerger Shares Entitlement</strong><br>
+                <strong>âš ï¸ Pitfall 2: Demerger Shares Entitlement</strong><br>
                 In Demerger calculations (like TYK PR-22), ensure you calculate the ratio of net worth between the
                 divisions first. The shares issued by the demerged company must match the proportion of net worth
                 transferred.
             </div>
             <div class="exam-trap">
-                <strong>⚠️ Pitfall 3: Total Post-Merger Earnings</strong><br>
+                <strong>âš ï¸ Pitfall 3: Total Post-Merger Earnings</strong><br>
                 Do not forget to add annual operational synergies to combined earnings when calculating post-merger EPS:
                 $\text{Combined PAT} = \text{PAT}_A + \text{PAT}_T + \text{Synergy}$.
             </div>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 6 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 6.1</div>
+                <div class="topic-quiz-question">Acquirer A (PAT = INR 100 cr, Shares = 10 cr, MPS = INR 120, P/E = 12x) acquires Target T (PAT = INR 30 cr, Shares = 5 cr, MPS = INR 48) by issuing 2 crore new shares. Post-merger synergies will yield additional PAT of INR 10 cr. What combined P/E multiple must the market award to maintain Acquirer A's market price of INR 120?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ma-q14-ans')">
+                        <strong>A.</strong>&nbsp;10.29x
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q14-ans')">
+                        <strong>B.</strong>&nbsp;12.00x
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q14-ans')">
+                        <strong>C.</strong>&nbsp;14.40x
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q14-ans')">
+                        <strong>D.</strong>&nbsp;9.50x
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ma-q14-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ma-q14-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    1. Post-merger shares $= 10 + 2 = 12\text{ crore shares}$.<br>
+                    2. Desired Market Cap $= 12 \text{ cr} \times 120 = \text{INR } 1,440\text{ crores}$.<br>
+                    3. Combined PAT $= 100 + 30 + 10 = \text{INR } 140\text{ crores}$.<br>
+                    4. Required Combined P/E $= \frac{1,440}{140} \approx 10.29\text{x}$.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 6.2</div>
+                <div class="topic-quiz-question">When an acquisition is financed by raising new 8% debt (post-tax cost 5.6%) versus issuing new equity at a P/E multiple of 20x (earnings yield 5%), which financing mode delivers higher post-merger EPS?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ma-q15-ans')">
+                        <strong>A.</strong>&nbsp;Equity share offer, because the earnings yield of 5.0% is lower than the after-tax debt cost of 5.6%
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q15-ans')">
+                        <strong>B.</strong>&nbsp;Debt financing, because debt interest is tax-deductible
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q15-ans')">
+                        <strong>C.</strong>&nbsp;Both modes produce identical EPS results
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ma-q15-ans')">
+                        <strong>D.</strong>&nbsp;Post-merger EPS is unaffected by the financing method
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ma-q15-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ma-q15-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    The cost of new equity equals its earnings yield: $\frac{1}{\text{P/E}} = \frac{1}{20} = 5.0\%$. Since after-tax debt costs $5.6\%$, issuing equity dilutes earnings by only $5.0\%$ per rupee raised compared to $5.6\%$ for debt, resulting in higher post-merger EPS.
+                </div>
+            </div>
+</section>
 
         <footer class="footer-nav">
-            <a href="business_valuation.html" class="footer-btn">← Ch 13 Quick Notes</a>
-            <a href="startup_finance.html" class="footer-btn">Ch 15 Quick Notes →</a>
+            <a href="business_valuation.html" class="footer-btn">â† Ch 13 Quick Notes</a>
+            <a href="startup_finance.html" class="footer-btn">Ch 15 Quick Notes â†’</a>
         </footer>
-    </main>
+            </div>
+        </main>
+    </div>
 
+    <!-- Unified Chapter Navigation & Interactive Scripts -->
     <script>
-        function toggleTheme() {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', targetTheme);
-            localStorage.setItem('afm-theme', targetTheme);
+        function checkOption(el, isCorrect, ansId) {
+            var parent = el.closest('.mcq-container') || el.closest('.quiz-card') || el.closest('.problem-card');
+            if (!parent) return;
+            var allOptions = parent.querySelectorAll('.mcq-option-item');
+            allOptions.forEach(function(opt) {
+                opt.style.pointerEvents = 'none';
+                if (opt.getAttribute('data-correct') === 'true') {
+                    opt.classList.add('reveal-correct');
+                }
+            });
+            var fb = parent.querySelector('.mcq-feedback');
+            if (isCorrect) {
+                el.classList.add('selected-correct');
+                if (fb) {
+                    fb.innerHTML = '✓ Correct! Outstanding work.';
+                    fb.className = 'mcq-feedback correct';
+                }
+            } else {
+                el.classList.add('selected-incorrect');
+                if (fb) {
+                    fb.innerHTML = '✗ Incorrect. Review the detailed solution below.';
+                    fb.className = 'mcq-feedback incorrect';
+                }
+            }
+            var ans = document.getElementById(ansId);
+            if (ans) {
+                ans.style.display = 'block';
+            }
         }
-        (function () {
-            const savedTheme = localStorage.getItem('afm-theme') || 'light';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-        })();
+
+        function toggleAnswer(ansId) {
+            var ans = document.getElementById(ansId);
+            if (!ans) return;
+            var isHidden = (ans.style.display === 'none' || ans.style.display === '');
+            ans.style.display = isHidden ? 'block' : 'none';
+            if (isHidden) {
+                var parent = ans.closest('.mcq-container') || ans.closest('.quiz-card') || ans.closest('.problem-card');
+                if (parent) {
+                    var allOptions = parent.querySelectorAll('.mcq-option-item');
+                    allOptions.forEach(function(opt) {
+                        if (opt.getAttribute('data-correct') === 'true') {
+                            opt.classList.add('reveal-correct');
+                        }
+                    });
+                }
+            }
+        }
+
+        function toggleSidebar() {
+            var sb = document.getElementById('sidebar');
+            if (!sb) return;
+            if (window.innerWidth <= 900) {
+                sb.classList.toggle('mobile-open');
+            } else {
+                sb.classList.toggle('hidden');
+            }
+        }
+
+        // Reading progress tracking & sidebar link highlighting
+        var contentEl = document.querySelector('.content');
+        var progressBar = document.getElementById('reading-progress');
+        var sections = document.querySelectorAll('.section-card, section[id], .theory-topic, .problem-card');
+        var sidebarLinks = document.querySelectorAll('.sidebar a');
+
+        function updateReadingProgressColor(progressBar, progress) {
+            var r, g, b;
+            if (progress <= 33) {
+                var t = progress / 33;
+                r = Math.round(239 + (234 - 239) * t);
+                g = Math.round(68 + (179 - 68) * t);
+                b = Math.round(68 + (8 - 68) * t);
+            } else if (progress <= 66) {
+                var t = (progress - 33) / 33;
+                r = Math.round(234 + (34 - 234) * t);
+                g = Math.round(179 + (197 - 179) * t);
+                b = Math.round(8 + (94 - 8) * t);
+            } else {
+                var t = (progress - 66) / 34;
+                r = Math.round(34 + (16 - 34) * t);
+                g = Math.round(197 + (185 - 197) * t);
+                b = Math.round(94 + (129 - 94) * t);
+            }
+            progressBar.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+            progressBar.style.boxShadow = '0 0 8px rgba(' + r + ',' + g + ',' + b + ', 0.45)';
+        }
+
+        if (progressBar) { updateReadingProgressColor(progressBar, 0); }
+
+        if (contentEl && progressBar) {
+            contentEl.addEventListener('scroll', function() {
+                var totalScroll = contentEl.scrollHeight - contentEl.clientHeight;
+                if (totalScroll > 0) {
+                    var currentScroll = contentEl.scrollTop;
+                    var progress = (currentScroll / totalScroll) * 100;
+                    progressBar.style.width = progress + '%';
+                    updateReadingProgressColor(progressBar, progress);
+                }
+
+                var current = '';
+                sections.forEach(function(section) {
+                    var sectionTop = section.offsetTop - contentEl.offsetTop;
+                    if (contentEl.scrollTop >= sectionTop - 140) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                if (current) {
+                    sidebarLinks.forEach(function(link) {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + current) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
     </script>
 </body>
-
 </html>
+

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@
     <meta name="description"
         content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 6: Portfolio Management. 110% comprehensive CA Final AFM Chapter 6 Portfolio Management notes. Markowitz efficient frontier, CAPM, APT, performance evaluation, and 25 Illus + 33 TYK solutions.">
     <meta name="keywords"
-        content="Portfolio Management CA Final AFM, CAPM formula, SML CML, Sharpe Ratio, Treynor Ratio, Jensens Alpha, Arbitrage Pricing Theory APT, Chapter 6, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+        content="Portfolio Management CA Final AFM, CAPM formula, SML CML, Sharpe Ratio, Treynor Ratio, Jensens Alpha, Arbitrage Pricing Theory APT, Chapter 6, CA Final AFM Paper 2, Standard Curriculum AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
     <meta name="author" content="Calcium Notes">
     <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/portfolio_management.html">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -48,7 +48,7 @@
     "name": "CA Final AFM Chapter 6: Portfolio Management (Quick Revision)",
     "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 6: Portfolio Management. 110% comprehensive CA Final AFM Chapter 6 Portfolio Management notes. Markowitz efficient frontier, CAPM, APT, performance evaluation, and 25 Illus + 33 TYK solutions.",
     "learningResourceType": "Revision Cheat Sheet",
-    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "educationalLevel": "CA Final (Standard Curriculum)",
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "author": {
@@ -282,9 +282,10 @@
         .progress-bar {
             height: 100%;
             width: 0%;
-            background: var(--primary);
+            background-color: rgb(239, 68, 68);
+            box-shadow: 0 0 8px rgba(239, 68, 68, 0.45);
             border-radius: 999px;
-            transition: width 0.15s ease;
+            transition: width 0.1s ease, background-color 0.15s ease, box-shadow 0.15s ease;
         }
 
         .toggle-btn {
@@ -794,6 +795,167 @@
         .calc {
             font-family: var(--notes-table) !important;
         }
+
+        /* MCQ Interactive Styling */
+        .quiz-card {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            border-left: 4px solid var(--primary-600);
+        }
+
+        .quiz-badge {
+            display: inline-block;
+            background: #eff6ff;
+            color: #1d4ed8;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            border: 1px solid #bfdbfe;
+        }
+
+        .mcq-options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            margin: 12px 0 14px 0;
+        }
+
+        .mcq-option-item {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 0.88rem;
+            color: var(--slate-800);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .mcq-option-item:hover {
+            background: #f0fdf4;
+            border-color: #22c55e;
+            transform: translateX(3px);
+        }
+
+        .mcq-option-item.selected-correct {
+            background: #dcfce7 !important;
+            border-color: #22c55e !important;
+            color: #166534 !important;
+            font-weight: 600;
+        }
+
+        .mcq-option-item.selected-correct::after {
+            content: " ✓ Correct";
+            float: right;
+            font-weight: 700;
+            color: #16a34a;
+        }
+
+        .mcq-option-item.selected-wrong {
+            background: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #991b1b !important;
+            font-weight: 600;
+        }
+
+        .mcq-option-item.selected-wrong::after {
+            content: " ✗ Incorrect";
+            float: right;
+            font-weight: 700;
+            color: #dc2626;
+        }
+
+        [data-theme='dark'] .mcq-option-item.selected-correct,
+        body.dark-theme .mcq-option-item.selected-correct {
+            background: #064e3b !important;
+            color: #a7f3d0 !important;
+            border-color: #10b981 !important;
+        }
+
+        [data-theme='dark'] .mcq-option-item.selected-wrong,
+        body.dark-theme .mcq-option-item.selected-wrong {
+            background: #7f1d1d !important;
+            color: #fecaca !important;
+            border-color: #ef4444 !important;
+        }
+
+        [data-theme='dark'] .mcq-option-item,
+        body.dark-theme .mcq-option-item {
+            background: #1e293b;
+            border-color: #334155;
+            color: #e2e8f0;
+        }
+
+        [data-theme='dark'] .quiz-card,
+        body.dark-theme .quiz-card {
+            background: #0f172a;
+            border-color: #334155;
+        }
+    
+        /* Universal Single-Scrollbar Fix */
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            padding-bottom: 0 !important;
+            height: 100% !important;
+            max-height: 100vh !important;
+            max-height: 100dvh !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            display: block !important;
+            box-sizing: border-box !important;
+        }
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        .topbar {
+            height: 64px !important;
+            width: 100% !important;
+            margin: 0 !important;
+            box-sizing: border-box !important;
+            flex-shrink: 0 !important;
+            position: relative !important;
+            z-index: 100;
+        }
+        .layout {
+            display: flex !important;
+            height: calc(100vh - 64px) !important;
+            height: calc(100dvh - 64px) !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            box-sizing: border-box !important;
+        }
+        .sidebar {
+            width: 290px;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            flex-shrink: 0 !important;
+            box-sizing: border-box !important;
+        }
+        .content {
+            flex: 1 1 auto !important;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            padding: 36px 48px !important;
+            box-sizing: border-box !important;
+            scroll-behavior: smooth;
+        }
+        .content-container {
+            max-width: 940px !important;
+            margin: 0 auto !important;
+            padding-bottom: 80px !important;
+            box-sizing: border-box !important;
+        }
     </style>
 </head>
 
@@ -834,7 +996,7 @@
                     <li><a href="#asset-allocation">14. Asset Allocation Strategies</a></li>
                     <li><a href="#fixed-income-strategies">15. Fixed Income Portfolio Strategies</a></li>
                     <li><a href="#alternative-investments">16. Alternative Investments (Real Estate, Gold)</a></li>
-                    <li><a href="#solved-illustrations">17. Solved ICAI Practical Problems</a></li>
+                    <li><a href="#solved-illustrations">17. Solved Practical Problems</a></li>
                     <li><a href="#self-test-quiz">18. TYK Practice Questions</a></li>
                     <li><a href="#master-summary">19. Quick Revision Summary</a></li>
                 </ul>
@@ -853,7 +1015,7 @@
                         Jensen's Alpha, Modigliani-Modigliani M² &amp; Information Ratio), Sharpe Optimal Portfolio
                         Selection, and Formula Revision Plans (Constant Mix &amp; CPPI).</p>
                     <div class="chapter-meta">
-                        <span>📚 ICAI New Scheme Study Material</span>
+                        <span>📚 Standard Curriculum Study Material</span>
                         <span>⏱️ Read Time: ~55 mins</span>
                         <span>🎯 Exam Weightage: 20 – 30 Marks</span>
                     </div>
@@ -1008,7 +1170,25 @@
                                     benefits, reducing portfolio risk below the weighted average risk!
                         </div>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: Correlation Coefficient -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 1:</strong> The covariance between Security A and Security B is 0.0200. The standard deviation of Security A is 0.40, and the standard deviation of Security B is 0.20. What is the correlation coefficient between Security A and Security B?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-1-ans')">A. +0.10</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-1-ans')">B. +0.05</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-1-ans')">C. +0.50</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'pm-mcq-1-ans')">D. +0.25</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('pm-mcq-1-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="pm-mcq-1-ans" style="display:none;">
+                            <strong>Correct Answer: D (+0.25)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$r_{AB} = \frac{\text{Cov}(A, B)}{\sigma_A \times \sigma_B}$$
+                            $$r_{AB} = \frac{0.0200}{0.40 \times 0.20} = \frac{0.0200}{0.0800} = \mathbf{+0.25}$$
+                        </div>
+                    </div>
+</section>
 
                 <!-- 4. Markowitz Model & MVP -->
                 <section class="section-card" id="markowitz-model">
@@ -1039,7 +1219,7 @@
                     <div class="formula-card">
                         <div class="formula-label">
                             <span>MVP Weight Formula (Two Assets)</span>
-                            <span class="formula-tag">Core ICAI Exam Formula</span>
+                            <span class="formula-tag">Core Exam Formula</span>
                         </div>
                         <div class="formula-math">
                             $$w_1 = \frac{\sigma_2^2 - \text{Cov}_{12}}{\sigma_1^2 + \sigma_2^2 - 2 \text{Cov}_{12}} =
@@ -1078,7 +1258,26 @@
                             variances!
                         </div>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: Minimum Variance Portfolio (MVP) -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 2:</strong> Security 1 has variance $\sigma_1^2 = 167.75$, Security 2 has variance $\sigma_2^2 = 126.98$, and their covariance is $\text{Cov}(1, 2) = -144.25$. How much proportion should be invested in Security 1 to formulate the Minimum Variance Portfolio (MVP)?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-2-ans')">A. 50.00%</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'pm-mcq-2-ans')">B. 46.50%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-2-ans')">C. 53.50%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-2-ans')">D. 75.00%</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('pm-mcq-2-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="pm-mcq-2-ans" style="display:none;">
+                            <strong>Correct Answer: B (46.50%)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$w_1 = \frac{\sigma_2^2 - \text{Cov}(1, 2)}{\sigma_1^2 + \sigma_2^2 - 2\,\text{Cov}(1, 2)}$$
+                            $$w_1 = \frac{126.98 - (-144.25)}{167.75 + 126.98 - 2(-144.25)} = \frac{126.98 + 144.25}{294.73 + 288.50} = \frac{271.23}{583.23} = \mathbf{0.4650 \text{ or } 46.50\%}$$
+                            $$w_2 = 1 - 0.4650 = \mathbf{0.5350 \text{ or } 53.50\%}$$
+                        </div>
+                    </div>
+</section>
 
                 <!-- 5. Efficient Frontier -->
                 <section class="section-card" id="efficient-frontier">
@@ -1171,7 +1370,26 @@
                             2)\) inputs!
                         </div>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: Sharpe Single Index Model Covariance -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 3:</strong> Beta of Company A is 1.50, Beta of Company B is 2.00, and the standard deviation of the market index is $\sigma_m = 0.10$ (10%). Under the Sharpe Single Index Model, what is the covariance between Security A and Security B?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-3-ans')">A. 0.300</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'pm-mcq-3-ans')">B. 0.030</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-3-ans')">C. 0.010</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-3-ans')">D. 0.060</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('pm-mcq-3-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="pm-mcq-3-ans" style="display:none;">
+                            <strong>Correct Answer: B (0.030)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            Under Sharpe Single Index Model, comovement is mediated exclusively through the market factor:<br>
+                            $$\text{Cov}(A, B) = \beta_A \times \beta_B \times \sigma_m^2$$
+                            $$\text{Cov}(A, B) = 1.50 \times 2.00 \times (0.10)^2 = 3.00 \times 0.0100 = \mathbf{0.030}$$
+                        </div>
+                    </div>
+</section>
 
                 <!-- 8. CAPM & SML -->
                 <section class="section-card" id="capm-sml">
@@ -1260,7 +1478,27 @@
                                 </p>
                             </div>
                         </div>
-                </section>
+                                    <!-- Topic Quiz: CAPM & Alpha Valuation -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 4:</strong> A stock has beta $\beta = 1.20$. The risk-free rate is $R_f = 6\%$ and the expected market return is $R_m = 14\%$. If an equity research analyst projects that the stock will generate an actual return of $17.50\%$, what is the stock's Jensen's Alpha ($\alpha$) and the appropriate investment decision?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'pm-mcq-4-ans')">A. $\alpha = +1.90\%$; Stock is Undervalued (BUY).</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-4-ans')">B. $\alpha = -1.90\%$; Stock is Overvalued (SELL).</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-4-ans')">C. $\alpha = +3.50\%$; Stock is Fairly Valued (HOLD).</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-4-ans')">D. $\alpha = +1.10\%$; Stock is Overvalued (SELL).</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('pm-mcq-4-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="pm-mcq-4-ans" style="display:none;">
+                            <strong>Correct Answer: A ($\alpha = +1.90\%$; Undervalued / BUY)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\text{CAPM Equilibrium Return } E(R) = R_f + \beta(R_m - R_f)$$
+                            $$E(R) = 6\% + 1.20(14\% - 6\%) = 6\% + 1.20(8\%) = 6\% + 9.60\% = 15.60\%$$
+                            $$\text{Jensen's Alpha } \alpha = R_{\text{actual}} - E(R) = 17.50\% - 15.60\% = \mathbf{+1.90\%}$$
+                            Because expected return exceeds equilibrium required return ($\alpha > 0$), the security lies above the SML and is <strong>Undervalued (BUY)</strong>.
+                        </div>
+                    </div>
+</section>
 
                 <!-- 9. Levered vs Unlevered Beta -->
                 <section class="section-card" id="levered-unlevered-beta">
@@ -1286,7 +1524,25 @@
                             • \(D / E\) = Debt-to-Equity ratio by market values
                         </div>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: Hamada Equation Levered Beta -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 5:</strong> An unlevered firm in the pharmaceutical industry has an asset beta $\beta_U = 0.80$. The management alters its capital structure to maintain a Debt-to-Equity ratio of $D/E = 0.50$. Assuming a corporate tax rate of $T = 30\%$, what is the new levered equity beta ($\beta_L$) under Hamada's equation?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-5-ans')">A. 1.20</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'pm-mcq-5-ans')">B. 1.08</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-5-ans')">C. 1.00</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-5-ans')">D. 0.92</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('pm-mcq-5-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="pm-mcq-5-ans" style="display:none;">
+                            <strong>Correct Answer: B (1.08)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\beta_L = \beta_U \left[1 + (1 - T)\frac{D}{E}\right]$$
+                            $$\beta_L = 0.80 \times [1 + (1 - 0.30) \times 0.50] = 0.80 \times [1 + 0.70 \times 0.50] = 0.80 \times [1 + 0.35] = 0.80 \times 1.35 = \mathbf{1.08}$$
+                        </div>
+                    </div>
+</section>
 
                 <!-- 10. Arbitrage Pricing Theory -->
                 <section class="section-card" id="arbitrage-pricing">
@@ -1313,7 +1569,25 @@
                             curve shifts, crude oil price shocks, default credit spreads.
                         </div>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: Arbitrage Pricing Theory -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 6:</strong> Under a two-factor Arbitrage Pricing Theory (APT) framework, the risk-free rate is $R_f = 5.00\%$. Macroeconomic Factor 1 (Industrial Production) carries a risk premium of $4.00\%$, and Factor 2 (Inflation Surprise) carries a risk premium of $3.00\%$. If a portfolio has factor sensitivities $b_1 = 1.25$ and $b_2 = 0.80$, what is the expected equilibrium return?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-6-ans')">A. 12.00%</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'pm-mcq-6-ans')">B. 12.40%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-6-ans')">C. 11.50%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-6-ans')">D. 13.20%</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('pm-mcq-6-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="pm-mcq-6-ans" style="display:none;">
+                            <strong>Correct Answer: B (12.40%)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$E(R) = R_f + b_1(RP_1) + b_2(RP_2)$$
+                            $$E(R) = 5.00\% + 1.25(4.00\%) + 0.80(3.00\%) = 5.00\% + 5.00\% + 2.40\% = \mathbf{12.40\%}$$
+                        </div>
+                    </div>
+</section>
 
                 <!-- 11. Performance Evaluation -->
                 <section class="section-card" id="portfolio-evaluation">
@@ -1399,7 +1673,25 @@
                                 benchmark per unit of active tracking risk.
                             </div>
                         </div>
-                </section>
+                                    <!-- Topic Quiz: Sharpe and Treynor Performance Ratios -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 7:</strong> Portfolio P generates an annualized average return of $18.00\%$ with standard deviation $\sigma_p = 20.00\%$ and beta $\beta_p = 1.20$. The risk-free rate is $R_f = 6.00\%$. What are the Sharpe Ratio and Treynor Ratio for Portfolio P?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'pm-mcq-7-ans')">A. Sharpe Ratio = 0.60; Treynor Ratio = 10.00%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-7-ans')">B. Sharpe Ratio = 0.90; Treynor Ratio = 15.00%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-7-ans')">C. Sharpe Ratio = 0.50; Treynor Ratio = 12.00%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-7-ans')">D. Sharpe Ratio = 0.60; Treynor Ratio = 8.00%</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('pm-mcq-7-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="pm-mcq-7-ans" style="display:none;">
+                            <strong>Correct Answer: A (Sharpe = 0.60; Treynor = 10.00%)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\text{Sharpe Ratio } S_p = \frac{R_p - R_f}{\sigma_p} = \frac{18.00 - 6.00}{20.00} = \frac{12.00}{20.00} = \mathbf{0.60}$$
+                            $$\text{Treynor Ratio } T_p = \frac{R_p - R_f}{\beta_p} = \frac{18.00 - 6.00}{1.20} = \frac{12.00}{1.20} = \mathbf{10.00\%}$$
+                        </div>
+                    </div>
+</section>
 
                 <!-- 12. Sharpe Optimal Portfolio -->
                 <section class="section-card" id="optimal-portfolio">
@@ -1472,7 +1764,24 @@
                             </tbody>
                         </table>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: Portfolio Revision Formula Plans -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 8:</strong> Under a Constant Ratio Plan with a predetermined equity-to-debt ratio of 60:40 and rebalancing bands of $\pm 5\%$, an aggressive bull market rally pushes the equity proportion to 70%. What automatic portfolio revision action must be executed?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-8-ans')">A. Buy additional equities to capture momentum profits.</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'pm-mcq-8-ans')">B. Sell equities and reinvest the proceeds into conservative debt securities until the 60:40 ratio is restored.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-8-ans')">C. Shift 100% of the portfolio into liquid cash equivalents.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-8-ans')">D. Do nothing because formula plans prohibit taking profits during an ongoing bull market.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('pm-mcq-8-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="pm-mcq-8-ans" style="display:none;">
+                            <strong>Correct Answer: B (Sell equities and purchase debt to restore 60:40)</strong><br><br>
+                            <strong>Conceptual Working &amp; Explanation:</strong><br>
+                            A Constant Ratio Plan functions as a strict contrarian discipline. When equity appreciation drives the stock weighting above the designated tolerance band (rising to 70%), the portfolio manager must systematically sell equities and purchase defensive debt to re-establish the target 60:40 baseline.
+                        </div>
+                    </div>
+</section>
 
                 <!-- 14. Asset Allocation Strategies -->
                 <section class="section-card" id="asset-allocation">
@@ -1499,12 +1808,31 @@
                                 approaches the designated floor (e.g. CPPI).</p>
                         </div>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: Constant Proportion Portfolio Insurance (CPPI) -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 9:</strong> An investor with a total portfolio value of ₹10,00,000 mandates a safety floor value of ₹9,00,000. Under the Constant Proportion Portfolio Insurance (CPPI) policy with a risk multiplier $M = 2.0$, what is the required initial allocation to the aggressive equity component?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-9-ans')">A. ₹1,00,000</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'pm-mcq-9-ans')">B. ₹2,00,000</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-9-ans')">C. ₹5,00,000</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-9-ans')">D. ₹8,00,000</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('pm-mcq-9-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="pm-mcq-9-ans" style="display:none;">
+                            <strong>Correct Answer: B (₹2,00,000)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\text{Cushion} = \text{Portfolio Value} - \text{Floor Value} = 10,00,000 - 9,00,000 = ₹1,00,000$$
+                            $$\text{Investment in Equity} = M \times \text{Cushion} = 2.0 \times 1,00,000 = \mathbf{₹2,00,000}$$
+                            $$\text{Investment in Conservative Debt} = 10,00,000 - 2,00,000 = \mathbf{₹8,00,000}$$
+                        </div>
+                    </div>
+</section>
 
                 <!-- 15. Fixed Income Portfolio Strategies -->
                 <section class="section-card" id="fixed-income-strategies">
                     <h2 class="section-heading">15. Fixed Income Portfolio Management Strategies</h2>
-                    <p>ICAI categorizes bond portfolio strategies into passive and active disciplines:</p>
+                    <p>The curriculum categorizes bond portfolio strategies into passive and active disciplines:</p>
 
                     <div class="info-grid">
                         <div class="info-box">
@@ -1587,11 +1915,29 @@
                             </tbody>
                         </table>
                     </div>
-                </section>
+                                    <!-- Topic Quiz: Real Estate Gross Income Multiplier -->
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • TOPIC QUIZ</div>
+                        <div class="quiz-question"><strong>Practice MCQ 10:</strong> A commercial real estate property generates a gross annual rental income of ₹1,50,000. Comparable commercial properties in the same submarket reflect a Gross Income Multiplier (GIM) of 11.25. Under the GIM valuation approach, what is the estimated market value of the property?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-10-ans')">A. ₹16,25,000</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-10-ans')">B. ₹13,33,333</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'pm-mcq-10-ans')">C. ₹16,87,500</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'pm-mcq-10-ans')">D. ₹20,00,000</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('pm-mcq-10-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="pm-mcq-10-ans" style="display:none;">
+                            <strong>Correct Answer: C (₹16,87,500)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$\text{Estimated Property Value} = \text{Gross Annual Rental Income} \times \text{GIM}$$
+                            $$\text{Estimated Property Value} = 1,50,000 \times 11.25 = \mathbf{₹16,87,500}$$
+                        </div>
+                    </div>
+</section>
 
                 <!-- 17. Solved Illustrations -->
                 <section class="section-card" id="solved-illustrations">
-                    <h2 class="section-heading">17. Comprehensive Solved ICAI Practical Problems</h2>
+                    <h2 class="section-heading">17. Comprehensive Solved Practical Problems</h2>
 
                     <!-- Problem 1: Two Asset Portfolio & MVP -->
                     <h3 class="sub-heading">Solved Problem 1: Two-Asset Portfolio Return, Risk &amp; Minimum Variance
@@ -1809,87 +2155,102 @@
                 </section>
 
                 <!-- 18. Self-Test Quiz -->
+                                <!-- 18. Self-Test Quiz -->
                 <section class="section-card" id="self-test-quiz">
-                    <h2 class="section-heading">18. Self-Test Practice Questions (ICAI TYK)</h2>
+                    <h2 class="section-heading">18. Self-Test Practice Questions</h2>
 
                     <div class="quiz-card">
-                        <div class="quiz-question">Q1: Explain the Capital Asset Pricing Model (CAPM) and state its
-                            relevant underlying assumptions.</div>
-                        <button class="reveal-btn" onclick="toggleAnswer('ch6-q1-ans')">👁️ Show Model Answer</button>
-                        <div class="quiz-answer" id="ch6-q1-ans">
-                            <strong>Model Answer:</strong> Developed by William Sharpe, John Lintner, and Jan Mossin,
-                            CAPM specifies that the expected return of any financial asset is determined solely by its
-                            systematic risk (Beta \(\beta\)) relative to the market: \(E(R_i) = R_f + \beta_i [E(R_m) -
-                            R_f]\).<br>
-                            <strong>Key Assumptions:</strong><br>
-                            1. Investors are risk-averse, mean-variance optimizers seeking to maximize expected terminal
-                            utility;<br>
-                            2. Frictionless capital markets: no transaction costs, no taxes, assets are infinitely
-                            divisible;<br>
-                            3. Homogeneous expectations: all investors possess identical forecasts regarding future
-                            expected returns, variances, and covariances;<br>
-                            4. Unlimited risk-free borrowing and lending at a single constant rate \(R_f\);<br>
-                            5. All investors plan over a single identical time horizon.
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • COMPREHENSIVE QUIZ</div>
+                        <div class="quiz-question"><strong>Q1 (CAPM Foundations &amp; SML vs CML):</strong> Which of the following statements correctly specifies the core theoretical distinction between the Capital Market Line (CML) and the Security Market Line (SML)?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch6-q1-ans')">A. CML uses Beta as its risk measure, while SML uses Standard Deviation.</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch6-q1-ans')">B. CML graphs expected return against Total Risk ($\sigma$) and applies exclusively to efficient portfolios; SML graphs expected return against Systematic Risk ($\beta$) and applies to all individual assets, inefficient portfolios, and efficient portfolios alike.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch6-q1-ans')">C. Individual stocks can lie above the CML but must strictly lie on the SML.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch6-q1-ans')">D. The slope of SML is the Sharpe Ratio of the market portfolio.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch6-q1-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch6-q1-ans" style="display:none;">
+                            <strong>Correct Answer: B (CML evaluates Total Risk for efficient portfolios; SML evaluates Systematic Risk for all assets)</strong><br><br>
+                            <strong>Model Explanation:</strong><br>
+                            • <strong>CML:</strong> $E(R_p) = R_f + \left(\frac{E(R_m) - R_f}{\sigma_m}\right)\sigma_p$. The risk measure is Total Risk ($\sigma$). Only fully diversified efficient portfolios lie on the CML; individual stocks lie strictly below it.<br>
+                            • <strong>SML:</strong> $E(R_i) = R_f + \beta_i [E(R_m) - R_f]$. The risk measure is Systematic Risk ($\beta$). In equilibrium, all securities (individual stocks, inefficient portfolios, and efficient portfolios) plot on the SML.
                         </div>
                     </div>
 
                     <div class="quiz-card">
-                        <div class="quiz-question">Q2: Distinguish between the Sharpe Ratio and the Treynor Ratio. When
-                            should an analyst prefer one over the other?</div>
-                        <button class="reveal-btn" onclick="toggleAnswer('ch6-q2-ans')">👁️ Show Model Answer</button>
-                        <div class="quiz-answer" id="ch6-q2-ans">
-                            <strong>Model Answer:</strong><br>
-                            • <strong>Sharpe Ratio:</strong> \(S_p = \frac{R_p - R_f}{\sigma_p}\). It evaluates excess
-                            return per unit of <em>Total Risk</em> (Standard Deviation \(\sigma_p\)), thereby
-                            incorporating both systematic and unsystematic risk.<br>
-                            • <strong>Treynor Ratio:</strong> \(T_p = \frac{R_p - R_f}{\beta_p}\). It evaluates excess
-                            return per unit of <em>Systematic Risk</em> (Beta \(\beta_p\)), completely ignoring
-                            unsystematic risk.<br>
-                            • <strong>When to Use:</strong><br>
-                            - Use the <strong>Sharpe Ratio</strong> when evaluating an investor's entire standalone
-                            wealth or a non-diversified fund, because unsystematic risk has not been eliminated and
-                            poses a real threat.<br>
-                            - Use the <strong>Treynor Ratio</strong> when evaluating a specialized fund that will be
-                            combined as a minor constituent inside an already well-diversified macro portfolio, because
-                            its unsystematic risk will be diversified away.
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • COMPREHENSIVE QUIZ</div>
+                        <div class="quiz-question"><strong>Q2 (Sharpe vs. Treynor Application Rationale):</strong> When evaluating mutual fund performance, under what specific portfolio circumstance is the Sharpe Ratio mathematically and financially superior to the Treynor Ratio?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch6-q2-ans')">A. When evaluating a fund that will be held as a small constituent sub-component inside an already well-diversified institutional master portfolio.</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch6-q2-ans')">B. When evaluating an investor's entire standalone wealth or an undiversified portfolio, because unsystematic risk has not been eliminated and represents a real economic risk.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch6-q2-ans')">C. Whenever market returns are negative.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch6-q2-ans')">D. When portfolio beta is strictly greater than 2.0.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch6-q2-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch6-q2-ans" style="display:none;">
+                            <strong>Correct Answer: B (When evaluating standalone wealth or undiversified portfolios)</strong><br><br>
+                            <strong>Model Explanation:</strong><br>
+                            • <strong>Sharpe Ratio:</strong> $\frac{R_p - R_f}{\sigma_p}$. Divides excess return by Total Risk ($\sigma_p$). Essential when evaluating an undiversified portfolio or a client's sole investment fund, since residual/unsystematic risk is not diversified away.<br>
+                            • <strong>Treynor Ratio:</strong> $\frac{R_p - R_f}{\beta_p}$. Evaluates excess return per unit of Systematic Risk ($\beta$). Appropriate when evaluating a fund to be added to an existing broad, well-diversified portfolio where unsystematic risk disappears.
                         </div>
                     </div>
 
                     <div class="quiz-card">
-                        <div class="quiz-question">Q3: Differentiate between Constant Mix Strategy and Constant
-                            Proportion Portfolio Insurance (CPPI) as portfolio revision formula plans.</div>
-                        <button class="reveal-btn" onclick="toggleAnswer('ch6-q3-ans')">👁️ Show Model Answer</button>
-                        <div class="quiz-answer" id="ch6-q3-ans">
-                            <strong>Model Answer:</strong><br>
-                            • <strong>Constant Mix Strategy:</strong> Maintains a strictly constant ratio between
-                            aggressive equity and conservative debt (e.g. 50:50). It operates as a <em>contrarian
-                                strategy</em>: as equities rise, it sells equities to buy debt; as equities fall, it
-                            buys equities. It outperforms in oscillating, sideways, range-bound markets but
-                            underperforms in persistent bull or bear trends.<br>
-                            • <strong>CPPI Strategy:</strong> Allocates equity as a multiple of the cushion above a
-                            predetermined floor: \(\text{Equity} = m \times (\text{Portfolio} - \text{Floor})\). It
-                            operates as a <em>momentum strategy</em>: as equities rise, the cushion expands, so it
-                            aggressively buys more equities; as equities fall, it sells equities to protect the floor.
-                            It guarantees capital preservation at the designated floor while capturing runaway bull
-                            market upside.
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • COMPREHENSIVE QUIZ</div>
+                        <div class="quiz-question"><strong>Q3 (Formula Plans Strategy Dynamics):</strong> How do Constant Mix Strategy and Constant Proportion Portfolio Insurance (CPPI) fundamentally differ in their strategic response to market price movements?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch6-q3-ans')">A. Constant Mix is a contrarian strategy (sells equities on rises, buys on declines) outperforming in oscillating sideways markets; CPPI is a momentum strategy (buys equities on rises, sells on declines) capturing runaway bull runs while protecting a designated floor.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch6-q3-ans')">B. Constant Mix buys equities on rises, while CPPI sells equities on rises.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch6-q3-ans')">C. Constant Mix guarantees 100% principal protection, whereas CPPI carries infinite downside risk.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch6-q3-ans')">D. Both strategies maintain an identical fixed rupee amount in equities regardless of market levels.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch6-q3-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch6-q3-ans" style="display:none;">
+                            <strong>Correct Answer: A (Constant Mix = Contrarian for sideways markets; CPPI = Momentum with floor protection)</strong><br><br>
+                            <strong>Model Explanation:</strong><br>
+                            • <strong>Constant Mix:</strong> Rebalances to a fixed asset ratio (e.g., 50:50). Buys equities after dips and sells after rallies, making it a contrarian strategy that excels in choppy, oscillating markets.<br>
+                            • <strong>CPPI:</strong> Allocates $\text{Equity} = M \times (\text{Portfolio} - \text{Floor})$. Expands equity exposure as portfolio value rises and sheds equity as it approaches the safety floor, acting as a momentum strategy with downside floor protection.
                         </div>
                     </div>
 
                     <div class="quiz-card">
-                        <div class="quiz-question">Q4: Explain how an investor can eliminate portfolio risk completely
-                            using two securities. What condition must be met?</div>
-                        <button class="reveal-btn" onclick="toggleAnswer('ch6-q4-ans')">👁️ Show Model Answer</button>
-                        <div class="quiz-answer" id="ch6-q4-ans">
-                            <strong>Model Answer:</strong> Total portfolio risk can be driven strictly to zero
-                            (\(\sigma_p = 0\)) if and only if the two securities are <strong>perfectly negatively
-                                correlated (\(r_{12} = -1.0\))</strong>.<br>
-                            Under perfect negative correlation, portfolio variance simplifies to:
-                            $$\sigma_p^2 = (w_1 \sigma_1 - w_2 \sigma_2)^2 \quad \implies \quad \sigma_p = |w_1 \sigma_1
-                            - w_2 \sigma_2|$$
-                            Setting \(\sigma_p = 0\) and using \(w_1 + w_2 = 1\), the exact weights required are:
-                            $$w_1 = \frac{\sigma_2}{\sigma_1 + \sigma_2} \quad \text{and} \quad w_2 =
-                            \frac{\sigma_1}{\sigma_1 + \sigma_2}$$
-                            This creates a synthetic risk-free portfolio with guaranteed zero variance.
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • COMPREHENSIVE QUIZ</div>
+                        <div class="quiz-question"><strong>Q4 (Zero Portfolio Variance Condition):</strong> In a two-security portfolio, under what mathematical condition can total portfolio variance be driven strictly to zero ($\sigma_p = 0$), and what are the required portfolio weights?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch6-q4-ans')">A. When correlation $r_{12} = 0$, with weights $w_1 = 0.50$ and $w_2 = 0.50$.</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch6-q4-ans')">B. When correlation $r_{12} = -1.0$ (perfect negative correlation), with weights $w_1 = \frac{\sigma_2}{\sigma_1 + \sigma_2}$ and $w_2 = \frac{\sigma_1}{\sigma_1 + \sigma_2}$.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch6-q4-ans')">C. When correlation $r_{12} = +1.0$, with weights $w_1 = \frac{\sigma_1}{\sigma_1 + \sigma_2}$.</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch6-q4-ans')">D. Zero portfolio variance is mathematically impossible with only two risky assets.</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch6-q4-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch6-q4-ans" style="display:none;">
+                            <strong>Correct Answer: B ($r_{12} = -1.0$; $w_1 = \frac{\sigma_2}{\sigma_1 + \sigma_2}$)</strong><br><br>
+                            <strong>Model Explanation:</strong><br>
+                            When $r_{12} = -1.0$, portfolio variance becomes a perfect square:<br>
+                            $$\sigma_p^2 = (w_1 \sigma_1 - w_2 \sigma_2)^2 \implies \sigma_p = |w_1 \sigma_1 - w_2 \sigma_2|$$
+                            Setting $\sigma_p = 0$ and substituting $w_2 = 1 - w_1$:<br>
+                            $$w_1 \sigma_1 = (1 - w_1)\sigma_2 \implies w_1(\sigma_1 + \sigma_2) = \sigma_2 \implies w_1 = \frac{\sigma_2}{\sigma_1 + \sigma_2}, \quad w_2 = \frac{\sigma_1}{\sigma_1 + \sigma_2}$$
+                            This synthesizes a zero-risk portfolio from two volatile assets.
+                        </div>
+                    </div>
+
+                    <div class="quiz-card">
+                        <div class="quiz-badge">TEST YOUR KNOWLEDGE • COMPREHENSIVE QUIZ</div>
+                        <div class="quiz-question"><strong>Q5 (Arbitrage Pricing Theory Model):</strong> An equity portfolio has factor sensitivities $b_1 = 1.40$ and $b_2 = 0.60$ with respect to two macroeconomic factors. The factor risk premiums are $RP_1 = 5.00\%$ and $RP_2 = 2.50\%$. The risk-free rate is $R_f = 4.50\%$. If the portfolio currently earns an expected return of $14.00\%$, what is the Arbitrage Opportunity / Arbitrage Alpha ($\alpha$)?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch6-q5-ans')">A. -1.00%</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch6-q5-ans')">B. +1.00%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch6-q5-ans')">C. +2.50%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch6-q5-ans')">D. 0.00%</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch6-q5-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch6-q5-ans" style="display:none;">
+                            <strong>Correct Answer: B (+1.00%)</strong><br><br>
+                            <strong>Step-by-Step Mathematical Solution:</strong><br>
+                            $$E(R)_{\text{APT}} = R_f + b_1(RP_1) + b_2(RP_2)$$
+                            $$E(R)_{\text{APT}} = 4.50\% + 1.40(5.00\%) + 0.60(2.50\%) = 4.50\% + 7.00\% + 1.50\% = \mathbf{13.00\%}$$
+                            $$\text{Arbitrage Alpha } \alpha = R_{\text{actual}} - E(R)_{\text{APT}} = 14.00\% - 13.00\% = \mathbf{+1.00\%}$$
+                            Since the portfolio earns 1.00% above factor-adjusted equilibrium, arbitrageurs buy the portfolio and short the tracking factor benchmark to capture riskless alpha.
                         </div>
                     </div>
                 </section>
@@ -1981,9 +2342,41 @@
     <!-- Script Assets -->
     <script src="../../assets/template.js"></script>
     <script>
+                function checkOption(optEl, isCorrect, ansId) {
+            const parent = optEl.closest('.mcq-options-grid');
+            if (!parent) return;
+            const allOptions = parent.querySelectorAll('.mcq-option-item');
+            allOptions.forEach(opt => {
+                opt.classList.remove('selected-correct', 'selected-wrong');
+            });
+            if (isCorrect) {
+                optEl.classList.add('selected-correct');
+            } else {
+                optEl.classList.add('selected-wrong');
+                allOptions.forEach(opt => {
+                    if (opt.getAttribute('data-correct') === 'true') {
+                        opt.classList.add('selected-correct');
+                    }
+                });
+            }
+            const ansEl = document.getElementById(ansId);
+            if (ansEl) {
+                ansEl.style.display = 'block';
+            }
+        }
+
         function toggleAnswer(id) {
             const ansEl = document.getElementById(id);
-            ansEl.style.display = (ansEl.style.display === 'block') ? 'none' : 'block';
+            if (!ansEl) return;
+            const isShowing = ansEl.style.display === 'block';
+            ansEl.style.display = isShowing ? 'none' : 'block';
+            if (!isShowing) {
+                const card = ansEl.closest('.quiz-card') || ansEl.closest('.topic-quiz-card');
+                if (card) {
+                    const correctOpt = card.querySelector('.mcq-option-item[data-correct="true"]');
+                    if (correctOpt) correctOpt.classList.add('selected-correct');
+                }
+            }
         }
 
         function toggleSidebar() {
@@ -2001,11 +2394,36 @@
         const sections = document.querySelectorAll('.section-card');
         const sidebarLinks = document.querySelectorAll('.sidebar a');
 
+        function updateReadingProgressColor(progressBar, progress) {
+            var r, g, b;
+            if (progress <= 33) {
+                var t = progress / 33;
+                r = Math.round(239 + (234 - 239) * t);
+                g = Math.round(68 + (179 - 68) * t);
+                b = Math.round(68 + (8 - 68) * t);
+            } else if (progress <= 66) {
+                var t = (progress - 33) / 33;
+                r = Math.round(234 + (34 - 234) * t);
+                g = Math.round(179 + (197 - 179) * t);
+                b = Math.round(8 + (94 - 8) * t);
+            } else {
+                var t = (progress - 66) / 34;
+                r = Math.round(34 + (16 - 34) * t);
+                g = Math.round(197 + (185 - 197) * t);
+                b = Math.round(94 + (129 - 94) * t);
+            }
+            progressBar.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+            progressBar.style.boxShadow = '0 0 8px rgba(' + r + ',' + g + ',' + b + ', 0.45)';
+        }
+
+        if (progressBar) { updateReadingProgressColor(progressBar, 0); }
+
         contentEl.addEventListener('scroll', () => {
             const totalScroll = contentEl.scrollHeight - contentEl.clientHeight;
             const currentScroll = contentEl.scrollTop;
             const progress = (currentScroll / totalScroll) * 100;
             progressBar.style.width = progress + '%';
+            updateReadingProgressColor(progressBar, progress);
 
             let current = '';
             sections.forEach(section => {

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,9 +11,9 @@
     <meta name="title"
         content="Chapter 11: International Financial Management - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
     <meta name="description"
-        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 11: International Financial Management. Comprehensive CA Final AFM Chapter 11 International Financial Management notes. Cross-border capital budgeting, ADR/GDR mechanisms, GIFT City IFSC, and all ICAI questions.">
+        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 11: International Financial Management. Comprehensive CA Final AFM Chapter 11 International Financial Management notes. Cross-border capital budgeting, ADR/GDR mechanisms, GIFT City IFSC, and all standard exam questions.">
     <meta name="keywords"
-        content="International Financial Management CA Final AFM, Home Currency vs Foreign Currency approach, ADR GDR FCCB, IFSC GIFT City, Chapter 11 notes, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+        content="International Financial Management CA Final AFM, Home Currency vs Foreign Currency approach, ADR GDR FCCB, IFSC GIFT City, Chapter 11 notes, CA Final AFM Paper 2, New Syllabus AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
     <meta name="author" content="Calcium Notes">
     <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/international_finance.html">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -26,7 +26,7 @@
     <meta property="og:title"
         content="Chapter 11: International Financial Management - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
     <meta property="og:description"
-        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 11: International Financial Management. Comprehensive CA Final AFM Chapter 11 International Financial Management notes. Cross-border capital budgeting, ADR/GDR mechanisms, GIFT City IFSC, and all ICAI questions.">
+        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 11: International Financial Management. Comprehensive CA Final AFM Chapter 11 International Financial Management notes. Cross-border capital budgeting, ADR/GDR mechanisms, GIFT City IFSC, and all standard exam questions.">
     <meta property="og:image" content="https://www.calciumnotes.com/og-image.png">
     <meta property="og:site_name" content="Calcium Notes">
     <meta property="og:locale" content="en_IN">
@@ -37,7 +37,7 @@
     <meta name="twitter:title"
         content="Chapter 11: International Financial Management - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
     <meta name="twitter:description"
-        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 11: International Financial Management. Comprehensive CA Final AFM Chapter 11 International Financial Management notes. Cross-border capital budgeting, ADR/GDR mechanisms, GIFT City IFSC, and all ICAI questions.">
+        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 11: International Financial Management. Comprehensive CA Final AFM Chapter 11 International Financial Management notes. Cross-border capital budgeting, ADR/GDR mechanisms, GIFT City IFSC, and all standard exam questions.">
     <meta name="twitter:image" content="https://www.calciumnotes.com/og-image.png">
 
     <!-- Schema.org Educational & FAQ Structured Data -->
@@ -46,9 +46,9 @@
     "@context": "https://schema.org",
     "@type": "LearningResource",
     "name": "CA Final AFM Chapter 11: International Financial Management (Quick Revision)",
-    "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 11: International Financial Management. Comprehensive CA Final AFM Chapter 11 International Financial Management notes. Cross-border capital budgeting, ADR/GDR mechanisms, GIFT City IFSC, and all ICAI questions.",
+    "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 11: International Financial Management. Comprehensive CA Final AFM Chapter 11 International Financial Management notes. Cross-border capital budgeting, ADR/GDR mechanisms, GIFT City IFSC, and all standard exam questions.",
     "learningResourceType": "Revision Cheat Sheet",
-    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "educationalLevel": "CA Final (New Syllabus)",
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "author": {
@@ -201,8 +201,8 @@
             color: var(--text-primary);
             line-height: 1.7;
             font-size: 15px;
-            display: flex;
-            min-height: 100vh;
+            
+            
         }
 
 
@@ -564,49 +564,250 @@
         .calc {
             font-family: var(--notes-table) !important;
         }
+            /* Interactive Topic Quiz Styles */
+        .topic-quiz-card {
+            background: var(--notes-card-bg, #ffffff);
+            border: 1px solid var(--notes-card-border, #e2e8f0);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 28px 0 16px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+        }
+        .topic-quiz-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 4px 10px;
+            border-radius: 20px;
+            background: rgba(13, 148, 136, 0.12);
+            color: #0d9488;
+            margin-bottom: 14px;
+        }
+        .topic-quiz-question {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--notes-text, #1e293b);
+            margin-bottom: 18px;
+            line-height: 1.5;
+        }
+        .mcq-options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .mcq-option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: 1px solid var(--notes-card-border, #e2e8f0);
+            background: var(--notes-card-bg, #f8fafc);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.95rem;
+            line-height: 1.45;
+            color: var(--notes-text, #334155);
+            user-select: none;
+        }
+        .mcq-option-item:hover {
+            border-color: #0d9488;
+            background: rgba(13, 148, 136, 0.04);
+        }
+        .mcq-option-item.selected-correct {
+            border-color: #10b981 !important;
+            background: rgba(16, 185, 129, 0.12) !important;
+            color: #065f46 !important;
+            font-weight: 600;
+        }
+        .mcq-option-item.selected-wrong {
+            border-color: #ef4444 !important;
+            background: rgba(239, 68, 68, 0.12) !important;
+            color: #991b1b !important;
+            font-weight: 600;
+        }
+        .quiz-btn-row {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .reveal-btn {
+            background: transparent;
+            border: 1px solid #0d9488;
+            color: #0d9488;
+            padding: 7px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .reveal-btn:hover {
+            background: #0d9488;
+            color: #ffffff;
+        }
+        .explanation-box {
+            display: none;
+            margin-top: 16px;
+            padding: 16px;
+            border-radius: 8px;
+            background: rgba(13, 148, 136, 0.06);
+            border-left: 4px solid #0d9488;
+            font-size: 0.92rem;
+            line-height: 1.55;
+            color: var(--notes-text, #1e293b);
+        }
+        [data-theme="dark"] .topic-quiz-card {
+            background: #1e293b;
+            border-color: #334155;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        }
+        [data-theme="dark"] .topic-quiz-question {
+            color: #f1f5f9;
+        }
+        [data-theme="dark"] .mcq-option-item {
+            border-color: #334155;
+            background: #0f172a;
+            color: #cbd5e1;
+        }
+        [data-theme="dark"] .mcq-option-item:hover {
+            border-color: #14b8a6;
+            background: rgba(20, 184, 166, 0.1);
+        }
+        [data-theme="dark"] .mcq-option-item.selected-correct {
+            border-color: #10b981 !important;
+            background: rgba(16, 185, 129, 0.2) !important;
+            color: #6ee7b7 !important;
+        }
+        [data-theme="dark"] .mcq-option-item.selected-wrong {
+            border-color: #ef4444 !important;
+            background: rgba(239, 68, 68, 0.2) !important;
+            color: #fca5a5 !important;
+        }
+        [data-theme="dark"] .explanation-box {
+            background: rgba(20, 184, 166, 0.08);
+            border-left-color: #14b8a6;
+            color: #e2e8f0;
+        }
+    
+        /* Universal Single-Scrollbar Fix */
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            padding-bottom: 0 !important;
+            height: 100% !important;
+            max-height: 100vh !important;
+            max-height: 100dvh !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            display: block !important;
+            box-sizing: border-box !important;
+        }
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        .topbar {
+            height: 64px !important;
+            width: 100% !important;
+            margin: 0 !important;
+            box-sizing: border-box !important;
+            flex-shrink: 0 !important;
+            position: relative !important;
+            z-index: 100;
+        }
+        .layout {
+            display: flex !important;
+            height: calc(100vh - 64px) !important;
+            height: calc(100dvh - 64px) !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            box-sizing: border-box !important;
+        }
+        .sidebar {
+            width: 290px;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            flex-shrink: 0 !important;
+            box-sizing: border-box !important;
+        }
+        .content {
+            flex: 1 1 auto !important;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            padding: 36px 48px !important;
+            box-sizing: border-box !important;
+            scroll-behavior: smooth;
+        }
+        .content-container {
+            max-width: 940px !important;
+            margin: 0 auto !important;
+            padding-bottom: 80px !important;
+            box-sizing: border-box !important;
+        }
     </style>
+    <!-- Modern Typography & Unified Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/unified_notes.css">
 </head>
 
 <body>
-    <nav class="sidebar">
-        <div class="sidebar-brand">
-            <span>AFM Quick Notes</span>
-            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">☀️/🌙</button>
+
+    <header class="topbar">
+        <div class="topbar-left">
+            <a href="../../notes/afmnotes.html" class="back-hub-btn">← AFM Hub</a>
+            <div class="chapter-title">Chapter 11: International Financial Management (⚡ Quick Revision)</div>
         </div>
-
-        <div class="nav-group-title">Quick Navigation</div>
-        <a href="#cheat-sheet" class="nav-link">1. Core Formulas &amp; Parities</a>
-        <a href="#approaches" class="nav-link">2. Home vs Foreign Currency</a>
-        <a href="#parent-sub" class="nav-link">3. Parent vs Subsidiary Cash Flow</a>
-        <a href="#instruments" class="nav-link">4. Intl Financial Instruments</a>
-        <a href="#ifsc-gift" class="nav-link">5. IFSC &amp; GIFT City Fast Facts</a>
-        <a href="#working-capital" class="nav-link">6. Intl Working Capital Tools</a>
-        <a href="#exam-traps" class="nav-link">7. ICAI Exam Pitfalls &amp; Traps</a>
-
-        <div class="nav-group-title">Hub Portals</div>
-        <a href="../../notes/afmnotes.html" class="nav-link">← Quick Notes Index</a>
-        <a href="../../notes/afmfullnotes.html" class="nav-link">← Full Notes Index</a>
-    </nav>
-
-    <main class="main-wrapper">
-        <header class="header-section">
-            <div class="breadcrumbs">
-                <a href="../../notes/afmnotes.html">CA Final AFM</a> &gt;
-                <span>Chapter 11 Quick Notes</span>
+        <div class="topbar-right">
+            <div class="progress-container" title="Reading Progress">
+                <div class="progress-bar" id="reading-progress"></div>
             </div>
-            <h1>Chapter 11: International Financial Management</h1>
-            <div class="chapter-meta">
-                <span class="chapter-pill">⚡ High-Yield Revision Guide</span>
-                <span>Formulas • Parity Conversions • High-Probability Exam Traps</span>
-            </div>
-        </header>
-
-        <div class="mode-bar">
-            <a href="international_finance_full.html" class="mode-btn">📖 Full Detailed Notes</a>
-            <a href="international_finance.html" class="mode-btn active">⚡ Quick Revision Notes</a>
+            <button class="toggle-btn" id="sidebar-toggle" onclick="toggleSidebar()">☰ Contents</button>
         </div>
+    </header>
 
-        <!-- 1. Cheat Sheet -->
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-title">Chapter Contents</div>
+            <nav>
+                <ul>
+                    <li><a href="#cheat-sheet" class="active">1. Core Formulas &amp; Parities</a></li>
+                    <li><a href="#approaches">2. Home vs Foreign Currency</a></li>
+                    <li><a href="#parent-sub">3. Parent vs Subsidiary Cash Flow</a></li>
+                    <li><a href="#instruments">4. Intl Financial Instruments</a></li>
+                    <li><a href="#ifsc-gift">5. IFSC &amp; GIFT City Fast Facts</a></li>
+                    <li><a href="#working-capital">6. Intl Working Capital Tools</a></li>
+                    <li><a href="#exam-traps">7. Exam Pitfalls &amp; Traps</a></li>
+                    <li><a href="../../notes/afmnotes.html">â† Quick Notes Index</a></li>
+                    <li><a href="../../notes/afmfullnotes.html">â† Full Notes Index</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="content-container">
+
+                <div class="chapter-header">
+                    <div class="chapter-badge">CA Final AFM • Paper 2</div>
+                    <h1>Chapter 11: International Financial Management</h1>
+                    <p>Exhaustive quick revision covering cross-border capital budgeting (Home vs Foreign currency approach), International Fisher Effect, Eurobonds, ADR/GDR mechanics, and GIFT City IFSC regulations.</p>
+                    <div class="chapter-meta">
+                        <span>📚 Standard Curriculum Study Material</span><span>⏱️ Read Time: ~45 mins</span><span>🎯 Exam Weightage: 10 – 16 Marks</span>
+                    </div>
+                </div>
+<!-- 1. Cheat Sheet -->
         <section class="quick-card" id="cheat-sheet">
             <h2>1. Master Formula &amp; Parity Cheat Sheet</h2>
 
@@ -644,7 +845,69 @@
                 $$\text{Number of Shares per GDR} = \text{Fixed Ratio (e.g., 2 shares = 1 GDR)}$$
                 $$\text{Total Underlying Shares} = \text{Total GDRs Issued} \times \text{Shares per GDR}$$
             </div>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 1 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 1.1</div>
+                <div class="topic-quiz-question">The required rate of return for an equity project in India is 12% per annum. The risk-free rate is 8% in India and 4% in the USA. Assuming the market risk premium remains constant across international currencies, what is the required rate of return for the same project denominated in USD?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ifm-q1-ans')">
+                        <strong>A.</strong>&nbsp;7.86%
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q1-ans')">
+                        <strong>B.</strong>&nbsp;8.00%
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q1-ans')">
+                        <strong>C.</strong>&nbsp;16.00%
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q1-ans')">
+                        <strong>D.</strong>&nbsp;6.25%
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ifm-q1-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ifm-q1-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    1. <strong>Determine Risk Premium in INR:</strong><br>
+                    $(1 + \text{Risky Rate}_{\text{INR}}) = (1 + R_{f,\text{INR}}) \times (1 + \text{Risk Premium})$
+                    $(1 + 0.12) = (1 + 0.08) \times (1 + \text{Risk Premium}) \implies 1 + \text{Risk Premium} = \frac{1.12}{1.08} = 1.037037 \implies \text{Risk Premium} = 3.7037\%$
+                    2. <strong>Compute Required Risky Rate in USD:</strong><br>
+                    $(1 + \text{Risky Rate}_{\text{USD}}) = (1 + R_{f,\text{USD}}) \times (1 + \text{Risk Premium}) = (1 + 0.04) \times 1.037037 = 1.078519$
+                    $\text{Risky Rate}_{\text{USD}} = 7.8519\% \approx 7.86\%$
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 1.2</div>
+                <div class="topic-quiz-question">An Indian corporate avails an External Commercial Borrowing (ECB) facility of GBP 10 million. The interest cost is 6-month GBP LIBOR (1.05%) plus a credit spread of 2.50% (total 3.55% p.a.). If the Average Loan Maturity of the facility is 3.4 years across an overall tenure of 5 years, what is the total expected interest cost?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ifm-q2-ans')">
+                        <strong>A.</strong>&nbsp;GBP 1.207 million
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q2-ans')">
+                        <strong>B.</strong>&nbsp;GBP 1.775 million
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q2-ans')">
+                        <strong>C.</strong>&nbsp;GBP 0.8875 million
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q2-ans')">
+                        <strong>D.</strong>&nbsp;GBP 0.355 million
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ifm-q2-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ifm-q2-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    Total interest cost over the entire life of an amortizing or structured loan facility is calculated using Average Loan Maturity:<br>
+                    $\text{Total Interest Cost} = \text{Loan Principal} \times \text{Rate of Interest} \times \text{Average Loan Maturity}$
+                    $\text{Total Interest} = \text{GBP } 10,000,000 \times (1.05\% + 2.50\%) \times 3.4 = 10,000,000 \times 0.0355 \times 3.4 = \text{GBP } 1,207,000 = \text{GBP } 1.207 \text{ million}$
+                </div>
+            </div>
+</section>
 
         <!-- 2. Home vs Foreign Currency -->
         <section class="quick-card" id="approaches">
@@ -685,7 +948,66 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 2 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 2.1</div>
+                <div class="topic-quiz-question">A US MNC is evaluating an overseas capital investment project in India. In Indian Rupees (foreign currency), the project's NPV is computed as INR 10,000,000 discounted at the appropriate INR project cost of capital. The current spot rate is USD 1 = INR 50.00. Under frictionless international financial markets (CIRP and Fisher parity hold), what is the NPV in home currency (USD)?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ifm-q3-ans')">
+                        <strong>A.</strong>&nbsp;USD 200,000
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q3-ans')">
+                        <strong>B.</strong>&nbsp;USD 500,000,000
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q3-ans')">
+                        <strong>C.</strong>&nbsp;USD 20,000
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q3-ans')">
+                        <strong>D.</strong>&nbsp;USD 50,000
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ifm-q3-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ifm-q3-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    • Under parity equivalence, the Home Currency Approach and Foreign Currency Approach yield identical results:<br>
+                    $\text{NPV}_{\text{Home (USD)}} = \frac{\text{NPV}_{\text{Foreign (INR)}}}{S_0} = \frac{\text{INR } 10,000,000}{50.00} = \text{USD } 200,000$
+                    • Converting the foreign NPV at current spot rate $S_0$ produces the exact same result as converting each periodic foreign cash flow at forward rates and discounting at the domestic rate.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 2.2</div>
+                <div class="topic-quiz-question">An Indian company plans to set up a US venture requiring a total capital outlay of USD 5,000,000. It already holds surplus funds of USD 2,000,000 in a US bank account that cannot be repatriated to India due to host country exchange controls. If these blocked funds are redeployed into the new venture, what is the incremental initial cash outlay for evaluating the project from the Indian parent's perspective?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ifm-q4-ans')">
+                        <strong>A.</strong>&nbsp;USD 3,000,000
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q4-ans')">
+                        <strong>B.</strong>&nbsp;USD 5,000,000
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q4-ans')">
+                        <strong>C.</strong>&nbsp;USD 7,000,000
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q4-ans')">
+                        <strong>D.</strong>&nbsp;USD 2,000,000
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ifm-q4-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ifm-q4-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    • Blocked funds already trapped overseas have an effective economic opportunity cost of zero in remitted home currency terms.<br>
+                    • When these blocked funds are utilized to partially finance the new project, they directly reduce the net fresh cash commitment from the parent:<br>
+                    $\text{Incremental Cash Outlay} = \text{Total Project Cost} - \text{Blocked Funds Deployed} = 5,000,000 - 2,000,000 = \text{USD } 3,000,000$
+                </div>
+            </div>
+</section>
 
         <!-- 3. Parent vs Subsidiary Cash Flow -->
         <section class="quick-card" id="parent-sub">
@@ -727,7 +1049,96 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 3 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 3.1</div>
+                <div class="topic-quiz-question">A foreign subsidiary in India earns a Profit Before Tax (PBT) of INR 100 crores. India levies a 30% corporate income tax and a 10% withholding tax on remitted dividend distributions. Assuming taxes paid in India are NOT eligible for tax credit in the parent's home country, what is the net repatriated cash flow?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ifm-q5-ans')">
+                        <strong>A.</strong>&nbsp;INR 63 crores
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q5-ans')">
+                        <strong>B.</strong>&nbsp;INR 70 crores
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q5-ans')">
+                        <strong>C.</strong>&nbsp;INR 60 crores
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q5-ans')">
+                        <strong>D.</strong>&nbsp;INR 77 crores
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ifm-q5-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ifm-q5-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    1. Profit Before Tax (PBT) = INR 100 crores<br>
+                    2. Less: Corporate Tax @ 30% = INR 30 crores $\implies \text{Profit After Tax (PAT)} = 100 - 30 = \text{INR } 70\text{ crores}$<br>
+                    3. Less: Withholding Tax @ 10% on remitted dividend $= 70 \times 10\% = \text{INR } 7\text{ crores}$<br>
+                    4. Net Repatriated Amount $= 70 - 7 = \text{INR } 63\text{ crores}$<br>
+                    Because foreign tax credits are unavailable, withholding tax acts as an outright deadweight leakage reducing cash inflows.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 3.2</div>
+                <div class="topic-quiz-question">A US corporation invests surplus cash in a German debt instrument yielding interest of EUR 120,190. German statutory domestic law imposes a 22% withholding tax on interest, but the Double Taxation Avoidance Agreement (DTAA) between USA and Germany prescribes a 10% withholding rate. What is the applicable withholding tax deducted in Germany?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ifm-q6-ans')">
+                        <strong>A.</strong>&nbsp;EUR 12,019
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q6-ans')">
+                        <strong>B.</strong>&nbsp;EUR 26,441.80
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q6-ans')">
+                        <strong>C.</strong>&nbsp;EUR 38,460.80
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q6-ans')">
+                        <strong>D.</strong>&nbsp;EUR 14,422.80
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ifm-q6-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ifm-q6-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    Under international tax treaties, an investor is entitled to the beneficial rate between the domestic tax statute and the applicable DTAA treaty:<br>
+                    $\text{Applicable Rate} = \min(\text{Domestic Tax Rate } 22\%, \text{DTAA Rate } 10\%) = 10\%$
+                    $\text{Withholding Tax Deducted} = \text{EUR } 120,190 \times 10\% = \text{EUR } 12,019$
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 3.3</div>
+                <div class="topic-quiz-question">Which of the following creates a substantive divergence between Project Cash Flows (from the foreign subsidiary's perspective) and Parent Cash Flows (from the parent MNC's perspective)?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ifm-q7-ans')">
+                        <strong>A.</strong>&nbsp;Host country dividend repatriation restrictions, withholding taxes, and exchange control blockages
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q7-ans')">
+                        <strong>B.</strong>&nbsp;Depreciation calculated under local tax schedules
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q7-ans')">
+                        <strong>C.</strong>&nbsp;The project earning a rate of return higher than local risk-free rates
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q7-ans')">
+                        <strong>D.</strong>&nbsp;Local operating working capital changes during the initial setup year
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ifm-q7-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ifm-q7-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    • Project cash flows measure standalone economic operating profitability within the host jurisdiction.<br>
+                    • Parent cash flows reflect the net realizable cash remitted across international borders after deducting withholding taxes, absorbing exchange rate fluctuations, and navigating mandatory reinvestment or repatriation blockades.
+                </div>
+            </div>
+</section>
 
         <!-- 4. Instruments of International Finance -->
         <section class="quick-card" id="instruments">
@@ -752,7 +1163,7 @@
                         <td><strong>Foreign Bond</strong></td>
                         <td>Issued by a foreign borrower in a domestic market, denominated in that market's domestic
                             currency.</td>
-                        <td>Yankee (USA - $), Samurai (Japan - ¥), Bulldog (UK - £). Subject to domestic SEC/FCA
+                        <td>Yankee (USA - $), Samurai (Japan - Â¥), Bulldog (UK - Â£). Subject to domestic SEC/FCA
                             regulations.</td>
                     </tr>
                     <tr>
@@ -777,7 +1188,94 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 4 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 4.1</div>
+                <div class="topic-quiz-question">An Indian company issues Global Depository Receipts (GDRs) in Luxembourg. Each GDR represents 2 underlying equity shares of the company. The market price of each equity share is INR 400. If the GDR is priced at a 5% discount to market and the prevailing exchange rate is USD 1 = INR 80, what is the issue price of 1 GDR in USD?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ifm-q8-ans')">
+                        <strong>A.</strong>&nbsp;USD 9.50
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q8-ans')">
+                        <strong>B.</strong>&nbsp;USD 4.75
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q8-ans')">
+                        <strong>C.</strong>&nbsp;USD 10.00
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q8-ans')">
+                        <strong>D.</strong>&nbsp;USD 19.00
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ifm-q8-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ifm-q8-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    1. Value of underlying shares per GDR $= 2 \times \text{INR } 400 = \text{INR } 800$.<br>
+                    2. Discounted issue price in INR $= 800 \times (1 - 0.05) = \text{INR } 760$.<br>
+                    3. Issue price in USD $= \frac{\text{INR } 760}{\text{INR 80/USD}} = \text{USD } 9.50$.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 4.2</div>
+                <div class="topic-quiz-question">Which of the following statements accurately characterizes the distinction between American Depository Receipts (ADRs) and Global Depository Receipts (GDRs)?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ifm-q9-ans')">
+                        <strong>A.</strong>&nbsp;ADRs are issued exclusively in the US market subject to SEC registration and trade on US exchanges in USD, while GDRs are issued globally outside the US (e.g. London or Luxembourg) and traded predominantly over-the-counter
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q9-ans')">
+                        <strong>B.</strong>&nbsp;ADR holders enjoy statutory voting rights in annual general meetings, whereas GDR holders are legally barred from receiving dividends
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q9-ans')">
+                        <strong>C.</strong>&nbsp;GDRs can only be denominated in Euro or British Pounds, never in US Dollars
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q9-ans')">
+                        <strong>D.</strong>&nbsp;ADR issuers bear all exchange rate risk, shielding investors from currency depreciation
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ifm-q9-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ifm-q9-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    • ADRs are US-domiciled depository receipts denominated in USD, regulated by the US Securities and Exchange Commission (SEC), and listed on NYSE/NASDAQ.<br>
+                    • GDRs are international negotiable receipts issued outside the US and outside the issuer's home country (most commonly listed on the Luxembourg or London Stock Exchanges), allowing global institutional investors to trade shares on an OTC basis without domestic voting franchise.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 4.3</div>
+                <div class="topic-quiz-question">What constitutes the primary financial and solvency risk for an issuing company raising debt via Foreign Currency Convertible Bonds (FCCBs)?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ifm-q10-ans')">
+                        <strong>A.</strong>&nbsp;If the company's equity share price remains below the conversion strike price, bondholders will decline conversion, forcing the issuer to redeem the bonds in foreign currency at substantial cash outflow
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q10-ans')">
+                        <strong>B.</strong>&nbsp;FCCBs instantly dilute promoter shareholding by 50% on the date of allotment
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q10-ans')">
+                        <strong>C.</strong>&nbsp;The coupon rate on FCCBs is substantially higher than standard domestic non-convertible debentures
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q10-ans')">
+                        <strong>D.</strong>&nbsp;Interest paid on FCCBs is non-deductible under all corporate tax jurisdictions
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ifm-q10-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ifm-q10-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    • FCCBs feature low coupon rates because investors receive an equity call option.<br>
+                    • However, if the underlying equity stock fails to perform and trades below the conversion price ("underwater" options), investors will refuse conversion and demand cash redemption at maturity.<br>
+                    • If the domestic currency has simultaneously depreciated against the foreign issue currency, the company faces severe debt repayment strain and foreign exchange losses.
+                </div>
+            </div>
+</section>
 
         <!-- 5. IFSC & GIFT City -->
         <section class="quick-card" id="ifsc-gift">
@@ -797,7 +1295,63 @@
                         Transaction Tax (STT) or Commodities Transaction Tax (CTT) on IFSC stock exchanges.</li>
                 </ul>
             </div>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 5 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 5.1</div>
+                <div class="topic-quiz-question">Which unified statutory regulatory authority governs all banking, capital markets, fund management, and insurance entities located within India's GIFT City International Financial Services Centre (IFSC)?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ifm-q11-ans')">
+                        <strong>A.</strong>&nbsp;International Financial Services Centres Authority (IFSCA)
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q11-ans')">
+                        <strong>B.</strong>&nbsp;Reserve Bank of India (RBI) exclusively
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q11-ans')">
+                        <strong>C.</strong>&nbsp;Securities and Exchange Board of India (SEBI) exclusively
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q11-ans')">
+                        <strong>D.</strong>&nbsp;Financial Stability and Development Council (FSDC)
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ifm-q11-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ifm-q11-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    • Under the IFSCA Act 2019, the <strong>International Financial Services Centres Authority (IFSCA)</strong> was created as a unified statutory regulator.<br>
+                    • It exercises the pooled powers of RBI, SEBI, IRDAI, and PFRDA to provide single-window regulatory administration for all financial institutions in IFSC GIFT City.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 5.2</div>
+                <div class="topic-quiz-question">Under Section 80LA of the Income-tax Act, what is the profit-linked tax holiday available to eligible units operating in an International Financial Services Centre (IFSC)?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ifm-q12-ans')">
+                        <strong>A.</strong>&nbsp;100% tax deduction on business profits for 10 consecutive assessment years out of a block of 15 years
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q12-ans')">
+                        <strong>B.</strong>&nbsp;100% deduction for 5 years followed by 50% deduction for the next 5 years
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q12-ans')">
+                        <strong>C.</strong>&nbsp;A flat 50% corporate tax concession across all years of operation
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q12-ans')">
+                        <strong>D.</strong>&nbsp;Perpetual 100% tax exemption on all operating profits
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ifm-q12-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ifm-q12-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    Section 80LA permits eligible units set up in an IFSC to claim a 100% deduction of their income from business operations for any <strong>10 consecutive assessment years</strong> out of a <strong>15-year block</strong>, beginning from the year in which permission/registration was obtained.
+                </div>
+            </div>
+</section>
 
         <!-- 6. Working Capital Tools -->
         <section class="quick-card" id="working-capital">
@@ -834,48 +1388,243 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 6 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 6.1</div>
+                <div class="topic-quiz-question">In multinational working capital management, what is the core operational benefit derived from implementing a centralized Multilateral Netting system across global subsidiaries?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ifm-q13-ans')">
+                        <strong>A.</strong>&nbsp;Drastically reduces the volume and frequency of intercompany cross-border funds transfers, saving transaction charges and bid-ask spread losses
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q13-ans')">
+                        <strong>B.</strong>&nbsp;Eliminates all local sovereign political risk across operating jurisdictions
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q13-ans')">
+                        <strong>C.</strong>&nbsp;Permanently avoids host country corporate income tax liabilities
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q13-ans')">
+                        <strong>D.</strong>&nbsp;Ensures immediate credit rating upgrade of all participating subsidiaries to AAA
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ifm-q13-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ifm-q13-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    • Multilateral Netting consolidates all reciprocal intra-group invoices into a central clearing matrix at designated intervals.<br>
+                    • Offsetting payables against receivables ensures that only net residual balances are remitted, slashing currency conversion fees, foreign exchange spread costs, banking transfer fees, and settlement float time.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 6.2</div>
+                <div class="topic-quiz-question">How does Notional Cash Pooling fundamentally differ from Physical Cash Sweeping in multinational liquidity management?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ifm-q14-ans')">
+                        <strong>A.</strong>&nbsp;Notional Pooling offsets debit and credit balances virtually to calculate net interest without actual cross-border fund transfers, whereas Physical Sweeping physically moves cash into a single master account
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q14-ans')">
+                        <strong>B.</strong>&nbsp;Notional Pooling requires daily physical wire transfers between all subsidiary bank accounts
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q14-ans')">
+                        <strong>C.</strong>&nbsp;Physical Sweeping avoids creating any intercompany loans or transfer pricing documentation
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q14-ans')">
+                        <strong>D.</strong>&nbsp;Notional Pooling is restricted exclusively to domestic local currency accounts
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ifm-q14-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ifm-q14-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    • In <strong>Notional Pooling</strong>, participating accounts maintain separate legal balances; the bank virtually nets debit and credit interest without physical transfers, bypassing cross-border withholding tax and intercompany loan friction.<br>
+                    • In <strong>Physical Sweeping</strong>, cash is actually wired out of subsidiary accounts into a concentration account, creating formal intercompany loan balances that require arm's-length interest accounting.
+                </div>
+            </div>
+</section>
 
         <!-- 7. Exam Traps -->
         <section class="quick-card" id="exam-traps">
-            <h2>7. ICAI Exam Pitfalls &amp; Scoring Checklist</h2>
+            <h2>7. Exam Pitfalls &amp; Scoring Checklist</h2>
             <div class="exam-trap">
-                <strong>⚠️ Pitfall 1: Confusing Spot Rate Quotation Direction in Parity</strong><br>
-                When using $F_t = S_0 \times \frac{1+r_f}{1+r_d}$, check whether the rate is Direct ($₹/\$$) or Indirect
-                ($\$/₹$). If rate is $₹/\$$, numerator is Indian interest rate and denominator is US interest rate.
+                <strong>âš ï¸ Pitfall 1: Confusing Spot Rate Quotation Direction in Parity</strong><br>
+                When using $F_t = S_0 \times \frac{1+r_f}{1+r_d}$, check whether the rate is Direct ($â‚¹/\$$) or Indirect
+                ($\$/â‚¹$). If rate is $â‚¹/\$$, numerator is Indian interest rate and denominator is US interest rate.
             </div>
             <div class="exam-trap">
-                <strong>⚠️ Pitfall 2: Double Counting Working Capital in NPV</strong><br>
+                <strong>âš ï¸ Pitfall 2: Double Counting Working Capital in NPV</strong><br>
                 If existing working capital is released immediately upon project start (e.g., TYK PR-4: $15M released
                 from exports), <strong>subtract it from initial Year 0 outflow</strong> (do not add it as a Year 1
                 inflow). At terminal year, add back net working capital recovered.
             </div>
             <div class="exam-trap">
-                <strong>⚠️ Pitfall 3: Withholding Tax Interpretation</strong><br>
+                <strong>âš ï¸ Pitfall 3: Withholding Tax Interpretation</strong><br>
                 In Indian unit questions (e.g., TYK PR-2), note whether Withholding Tax is deducted after corporate tax,
-                or credited against corporate tax. Always provide ICAI's primary method and mention the alternative
+                or credited against corporate tax. Always provide the primary method and mention the alternative
                 assumption.
             </div>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 7 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 7.1</div>
+                <div class="topic-quiz-question">An Indian corporate plans an overseas infrastructure venture in Nepal funded with 55% equity and 45% debt. The corporate tax rate is 30% in India and 20% in Nepal. A pure-play competitor in Nepal has an equity beta of 1.35 with equity value NPR 1,850 crores and debt NPR 510 crores. Which tax rate must be utilized when computing the weight of debt for un-levering competitor beta and re-levering project beta?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ifm-q15-ans')">
+                        <strong>A.</strong>&nbsp;Nepal tax rate (20%), because the debt is raised in Nepal and the tax shield is realized against Nepalese operating profits
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q15-ans')">
+                        <strong>B.</strong>&nbsp;India tax rate (30%), because the ultimate parent company is incorporated in India
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q15-ans')">
+                        <strong>C.</strong>&nbsp;Weighted average tax rate of 24.50% based on capital contribution
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ifm-q15-ans')">
+                        <strong>D.</strong>&nbsp;Taxes should be omitted when computing beta weights
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ifm-q15-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="ifm-q15-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    • When un-levering a foreign proxy firm's beta and re-levering for a proposed foreign project, debt tax shields are governed by the jurisdiction in which the debt is raised and interest expense is deducted.<br>
+                    • Since the loan is taken in Nepalese currency to fund Nepalese operations, the <strong>Nepal tax rate (20%)</strong> must be used to calculate effective debt weights ($D \times (1 - t_{\text{Nepal}})$).
+                </div>
+            </div>
+</section>
 
         <footer class="footer-nav">
-            <a href="forex_risk_management.html" class="footer-btn">← Ch 10 Quick Notes</a>
-            <a href="interest_rate_risk.html" class="footer-btn">Ch 12 Quick Notes →</a>
+            <a href="forex_risk_management.html" class="footer-btn">â† Ch 10 Quick Notes</a>
+            <a href="interest_rate_risk.html" class="footer-btn">Ch 12 Quick Notes â†’</a>
         </footer>
-    </main>
+            </div>
+        </main>
+    </div>
 
+    <!-- Unified Chapter Navigation & Interactive Scripts -->
     <script>
-        function toggleTheme() {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', targetTheme);
-            localStorage.setItem('afm-theme', targetTheme);
+        function checkOption(el, isCorrect, ansId) {
+            var parent = el.closest('.mcq-container') || el.closest('.quiz-card') || el.closest('.problem-card');
+            if (!parent) return;
+            var allOptions = parent.querySelectorAll('.mcq-option-item');
+            allOptions.forEach(function(opt) {
+                opt.style.pointerEvents = 'none';
+                if (opt.getAttribute('data-correct') === 'true') {
+                    opt.classList.add('reveal-correct');
+                }
+            });
+            var fb = parent.querySelector('.mcq-feedback');
+            if (isCorrect) {
+                el.classList.add('selected-correct');
+                if (fb) {
+                    fb.innerHTML = '✓ Correct! Outstanding work.';
+                    fb.className = 'mcq-feedback correct';
+                }
+            } else {
+                el.classList.add('selected-incorrect');
+                if (fb) {
+                    fb.innerHTML = '✗ Incorrect. Review the detailed solution below.';
+                    fb.className = 'mcq-feedback incorrect';
+                }
+            }
+            var ans = document.getElementById(ansId);
+            if (ans) {
+                ans.style.display = 'block';
+            }
         }
-        (function () {
-            const savedTheme = localStorage.getItem('afm-theme') || 'light';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-        })();
+
+        function toggleAnswer(ansId) {
+            var ans = document.getElementById(ansId);
+            if (!ans) return;
+            var isHidden = (ans.style.display === 'none' || ans.style.display === '');
+            ans.style.display = isHidden ? 'block' : 'none';
+            if (isHidden) {
+                var parent = ans.closest('.mcq-container') || ans.closest('.quiz-card') || ans.closest('.problem-card');
+                if (parent) {
+                    var allOptions = parent.querySelectorAll('.mcq-option-item');
+                    allOptions.forEach(function(opt) {
+                        if (opt.getAttribute('data-correct') === 'true') {
+                            opt.classList.add('reveal-correct');
+                        }
+                    });
+                }
+            }
+        }
+
+        function toggleSidebar() {
+            var sb = document.getElementById('sidebar');
+            if (!sb) return;
+            if (window.innerWidth <= 900) {
+                sb.classList.toggle('mobile-open');
+            } else {
+                sb.classList.toggle('hidden');
+            }
+        }
+
+        // Reading progress tracking & sidebar link highlighting
+        var contentEl = document.querySelector('.content');
+        var progressBar = document.getElementById('reading-progress');
+        var sections = document.querySelectorAll('.section-card, section[id], .theory-topic, .problem-card');
+        var sidebarLinks = document.querySelectorAll('.sidebar a');
+
+        function updateReadingProgressColor(progressBar, progress) {
+            var r, g, b;
+            if (progress <= 33) {
+                var t = progress / 33;
+                r = Math.round(239 + (234 - 239) * t);
+                g = Math.round(68 + (179 - 68) * t);
+                b = Math.round(68 + (8 - 68) * t);
+            } else if (progress <= 66) {
+                var t = (progress - 33) / 33;
+                r = Math.round(234 + (34 - 234) * t);
+                g = Math.round(179 + (197 - 179) * t);
+                b = Math.round(8 + (94 - 8) * t);
+            } else {
+                var t = (progress - 66) / 34;
+                r = Math.round(34 + (16 - 34) * t);
+                g = Math.round(197 + (185 - 197) * t);
+                b = Math.round(94 + (129 - 94) * t);
+            }
+            progressBar.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+            progressBar.style.boxShadow = '0 0 8px rgba(' + r + ',' + g + ',' + b + ', 0.45)';
+        }
+
+        if (progressBar) { updateReadingProgressColor(progressBar, 0); }
+
+        if (contentEl && progressBar) {
+            contentEl.addEventListener('scroll', function() {
+                var totalScroll = contentEl.scrollHeight - contentEl.clientHeight;
+                if (totalScroll > 0) {
+                    var currentScroll = contentEl.scrollTop;
+                    var progress = (currentScroll / totalScroll) * 100;
+                    progressBar.style.width = progress + '%';
+                    updateReadingProgressColor(progressBar, progress);
+                }
+
+                var current = '';
+                sections.forEach(function(section) {
+                    var sectionTop = section.offsetTop - contentEl.offsetTop;
+                    if (contentEl.scrollTop >= sectionTop - 140) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                if (current) {
+                    sidebarLinks.forEach(function(link) {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + current) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
     </script>
 </body>
-
 </html>
+

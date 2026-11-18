@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,7 +12,7 @@
     <meta name="description"
         content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 8: Mutual Funds. Exhaustive CA Final AFM Chapter 8 Mutual Funds notes. Master NAV derivations, expense ratios, portfolio rebalancing, and all 10 Illustrations + 22 TYK solutions.">
     <meta name="keywords"
-        content="Mutual Funds CA Final AFM, NAV calculation formula, Expense ratio, Tracking error, Treynor Sharpe Jensen ratios, Mutual Fund TYK solutions, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+        content="Mutual Funds CA Final AFM, NAV calculation formula, Expense ratio, Tracking error, Treynor Sharpe Jensen ratios, Mutual Fund TYK solutions, CA Final AFM Paper 2, New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
     <meta name="author" content="Calcium Notes">
     <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/mutual_funds.html">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -47,7 +47,7 @@
     "name": "CA Final AFM Chapter 8: Mutual Funds (Quick Revision)",
     "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 8: Mutual Funds. Exhaustive CA Final AFM Chapter 8 Mutual Funds notes. Master NAV derivations, expense ratios, portfolio rebalancing, and all 10 Illustrations + 22 TYK solutions.",
     "learningResourceType": "Revision Cheat Sheet",
-    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "educationalLevel": "CA Final (New Scheme)",
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "author": {
@@ -302,7 +302,7 @@
         }
 
         .key-point::before {
-            content: "•";
+            content: "â€¢";
             position: absolute;
             left: 0;
             color: var(--primary);
@@ -366,34 +366,277 @@
         .calc {
             font-family: var(--notes-table) !important;
         }
+        /* Interactive MCQ Additions */
+        .quiz-card {
+            background: #ffffff;
+            border: 1px solid var(--border-color, #e2e8f0);
+            border-radius: 10px;
+            padding: 18px 20px;
+            margin: 18px 0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+            transition: all 0.2s ease;
+        }
+
+        .quiz-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .quiz-badge {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            background: #eff6ff;
+            color: #2563eb;
+            border: 1px solid #bfdbfe;
+        }
+
+        .quiz-question {
+            font-size: 0.96rem;
+            font-weight: 600;
+            color: var(--text-primary, #0f172a);
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .mcq-options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            margin: 12px 0 14px 0;
+        }
+
+        .mcq-option-item {
+            background: var(--bg-card-secondary, #f8fafc);
+            border: 1px solid var(--border-color, #e2e8f0);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 0.88rem;
+            color: var(--text-primary, #1e293b);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .mcq-option-item:hover {
+            background: #f0fdf4;
+            border-color: #22c55e;
+            transform: translateX(3px);
+        }
+
+        .mcq-option-item.selected-correct {
+            background: #dcfce7 !important;
+            border-color: #22c55e !important;
+            color: #166534 !important;
+            font-weight: 600;
+        }
+
+        .mcq-option-item.selected-correct::after {
+            content: " ✓ Correct";
+            float: right;
+            font-weight: 700;
+            color: #16a34a;
+        }
+
+        .mcq-option-item.selected-wrong {
+            background: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #991b1b !important;
+            font-weight: 600;
+        }
+
+        .mcq-option-item.selected-wrong::after {
+            content: " ✗ Incorrect";
+            float: right;
+            font-weight: 700;
+            color: #dc2626;
+        }
+
+        .reveal-btn {
+            background: var(--primary, #2563eb);
+            color: white;
+            border: none;
+            padding: 7px 15px;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .reveal-btn:hover {
+            background: #1d4ed8;
+        }
+
+        .quiz-answer {
+            display: none;
+            margin-top: 12px;
+            padding: 12px 14px;
+            background: #f8fafc;
+            border-left: 3px solid #22c55e;
+            border-radius: 0 6px 6px 0;
+            font-size: 0.85rem;
+            line-height: 1.55;
+            color: var(--text-secondary, #475569);
+        }
+
+        /* Dark Theme Support */
+        body.dark-theme .quiz-card,
+        [data-theme='dark'] .quiz-card {
+            background: #1e293b;
+            border-color: #334155;
+        }
+
+        body.dark-theme .quiz-question,
+        [data-theme='dark'] .quiz-question {
+            color: #f1f5f9;
+        }
+
+        body.dark-theme .mcq-option-item,
+        [data-theme='dark'] .mcq-option-item {
+            background: #0f172a;
+            border-color: #334155;
+            color: #e2e8f0;
+        }
+
+        body.dark-theme .mcq-option-item:hover,
+        [data-theme='dark'] .mcq-option-item:hover {
+            background: #1e3a5f;
+            border-color: #38bdf8;
+        }
+
+        body.dark-theme .mcq-option-item.selected-correct,
+        [data-theme='dark'] .mcq-option-item.selected-correct {
+            background: #064e3b !important;
+            color: #a7f3d0 !important;
+            border-color: #10b981 !important;
+        }
+
+        body.dark-theme .mcq-option-item.selected-wrong,
+        [data-theme='dark'] .mcq-option-item.selected-wrong {
+            background: #7f1d1d !important;
+            color: #fecaca !important;
+            border-color: #ef4444 !important;
+        }
+
+        body.dark-theme .quiz-answer,
+        [data-theme='dark'] .quiz-answer {
+            background: #0f172a;
+            border-color: #10b981;
+            color: #cbd5e1;
+        }
+    
+        /* Universal Single-Scrollbar Fix */
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            padding-bottom: 0 !important;
+            height: 100% !important;
+            max-height: 100vh !important;
+            max-height: 100dvh !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            display: block !important;
+            box-sizing: border-box !important;
+        }
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        .topbar {
+            height: 64px !important;
+            width: 100% !important;
+            margin: 0 !important;
+            box-sizing: border-box !important;
+            flex-shrink: 0 !important;
+            position: relative !important;
+            z-index: 100;
+        }
+        .layout {
+            display: flex !important;
+            height: calc(100vh - 64px) !important;
+            height: calc(100dvh - 64px) !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            box-sizing: border-box !important;
+        }
+        .sidebar {
+            width: 290px;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            flex-shrink: 0 !important;
+            box-sizing: border-box !important;
+        }
+        .content {
+            flex: 1 1 auto !important;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            padding: 36px 48px !important;
+            box-sizing: border-box !important;
+            scroll-behavior: smooth;
+        }
+        .content-container {
+            max-width: 940px !important;
+            margin: 0 auto !important;
+            padding-bottom: 80px !important;
+            box-sizing: border-box !important;
+        }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/unified_notes.css">
 </head>
 
 <body>
 
-    <header class="header-nav">
-        <div class="header-title">CA Final AFM • Chapter 8: Mutual Funds (⚡ Quick Revision)</div>
-        <div class="header-actions">
-            <a href="./mutual_funds_full.html" class="btn-switch">📖 Read Full Notes (All 23 Solved Problems) →</a>
-            <button class="btn-toggle" onclick="toggleTheme()" id="themeToggle">☀️ Theme</button>
+    <header class="topbar">
+        <div class="topbar-left">
+            <a href="../../notes/afmnotes.html" class="back-hub-btn">← AFM Hub</a>
+            <div class="chapter-title">Chapter 8: Mutual Funds (⚡ Quick Revision)</div>
+        </div>
+        <div class="topbar-right">
+            <div class="progress-container" title="Reading Progress">
+                <div class="progress-bar" id="reading-progress"></div>
+            </div>
+            <button class="toggle-btn" id="sidebar-toggle" onclick="toggleSidebar()">☰ Contents</button>
         </div>
     </header>
 
-    <div class="container">
-        <div class="hero-card">
-            <span
-                style="background: #eff6ff; color: #2563eb; font-size: 12px; font-weight: 800; padding: 4px 10px; border-radius: 6px; border: 1px solid #bfdbfe;">⚡
-                Rapid Revision Sheet</span>
-            <h1 style="font-size: 26px; font-weight: 800; margin: 10px 0 6px;">Mutual Funds - Quick Summary & Formula
-                Vault</h1>
-            <p style="color: var(--text-secondary); font-size: 14px;">High-yield summary covering NAV mechanics, Load
-                adjustments, Expense Ratio thresholds, Sharpe/Treynor/Jensen evaluations, and Constant Ratio
-                rebalancing.</p>
-        </div>
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-title">Chapter Contents</div>
+            <nav>
+                <ul>
+                    <li><a href="#formula-cheat-sheet" class="active">1. Formula Cheat Sheet</a></li>
+                    <li><a href="#conceptual-comparisons">2. Conceptual Comparisons</a></li>
+                    <li><a href="#exam-traps">3. Master Exam Traps</a></li>
+                    <li><a href="#master-tyk-section">4. Test Your Knowledge MCQs</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-        <!-- 1. Key Formulas Vault -->
-        <div class="section-card">
-            <h2 class="section-title">1. Essential Formula Cheat Sheet</h2>
+        <main class="content">
+            <div class="content-container">
+
+                <div class="chapter-header">
+                    <div class="chapter-badge">CA Final AFM • Paper 2</div>
+                    <h1>Chapter 8: Mutual Funds</h1>
+                    <p>High-yield quick revision covering Net Asset Value (NAV) mechanics, entry/exit load adjustments, expense ratio thresholds, Sharpe, Treynor &amp; Jensen performance evaluations, and dynamic rebalancing strategies.</p>
+                    <div class="chapter-meta">
+                        <span>📚 Standard Curriculum Study Material</span>
+                        <span>⏱️ Read Time: ~40 mins</span>
+                        <span>🎯 Exam Weightage: 10 – 16 Marks</span>
+                    </div>
+                </div>
+<div class="section-card">
+            <h2 class="section-title" id="formula-cheat-sheet">1. Essential Formula Cheat Sheet</h2>
 
             <div class="formula-box">
                 <strong>(a) Net Asset Value (NAV):</strong>
@@ -434,11 +677,88 @@
                 $$\mathbf{\text{Net Selectivity} = \text{Gross Selectivity} - \text{Diversification Penalty} = (R_p -
                 R_f) - \frac{\sigma_p}{\sigma_m}(R_m - R_f)}$$
             </div>
+            <!-- Section 1 Interactive MCQs -->
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Formula Application • NAV Calculation</div>
+                <div class="quiz-question"><strong>Question 1:</strong> A mutual fund scheme has market value of investments of ₹450 Cr, accrued dividend receivable of ₹12 Cr, liquid cash balance of ₹8 Cr, accrued management and advisory fees of ₹5 Cr, and other current liabilities of ₹15 Cr. The scheme has 10 Cr units outstanding. What is the Net Asset Value (NAV) per unit?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q1-ans')">A) ₹44.50</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'mf-q1-ans')">B) ₹45.00</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q1-ans')">C) ₹47.00</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q1-ans')">D) ₹46.50</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('mf-q1-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="mf-q1-ans">
+                    <strong>Correct Answer: Option B (₹45.00)</strong><br>
+                    <strong>Detailed Working:</strong><br>
+                    $$\text{Total Scheme Assets} = 450 + 12 + 8 = ₹470\text{ Cr}$$
+                    $$\text{Total Scheme Liabilities} = 5 + 15 = ₹20\text{ Cr}$$
+                    $$\text{Net Assets} = 470 - 20 = ₹450\text{ Cr}$$
+                    $$\text{NAV per Unit} = \frac{\text{Net Assets}}{\text{Total Units Outstanding}} = \frac{₹450\text{ Cr}}{10\text{ Cr units}} = \mathbf{₹45.00}$$
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Formula Application • Entry &amp; Exit Loads</div>
+                <div class="quiz-question"><strong>Question 2:</strong> An investor purchases units in an open-ended mutual fund scheme when the NAV is ₹25.00. The fund levies an entry load (front-end load) of 2.0% on the purchase. Two years later, the investor redeems all units when the NAV has grown to ₹32.00, subject to an exit load (back-end load) of 1.5%. What is the purchase price (Public Offer Price) and the net redemption price per unit?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'mf-q2-ans')">A) Purchase Price: ₹25.50; Redemption Price: ₹31.52</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q2-ans')">B) Purchase Price: ₹25.00; Redemption Price: ₹32.00</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q2-ans')">C) Purchase Price: ₹24.50; Redemption Price: ₹32.48</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q2-ans')">D) Purchase Price: ₹26.00; Redemption Price: ₹30.50</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('mf-q2-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="mf-q2-ans">
+                    <strong>Correct Answer: Option A</strong><br>
+                    <strong>Detailed Working:</strong><br>
+                    $$\text{Purchase Price (POP)} = \text{NAV} \times (1 + \text{Front-End Load \%}) = 25.00 \times (1 + 0.02) = \mathbf{₹25.50}$$
+                    $$\text{Net Redemption Price} = \text{NAV} \times (1 - \text{Exit Load \%}) = 32.00 \times (1 - 0.015) = 32.00 \times 0.985 = \mathbf{₹31.52}$$
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Formula Application • Holding Period Return &amp; Annualized Yield</div>
+                <div class="quiz-question"><strong>Question 3:</strong> An investor purchases mutual fund units at an NAV of ₹40.00 on 1st April. On 30th September (after 6 months), the fund distributes a cash dividend of ₹2.00 per unit, and the NAV stands at ₹44.00. What is the holding period return (HPR) for the 6-month period and its simple annualized return?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q3-ans')">A) HPR = 10.0%; Annualized Return = 20.0%</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'mf-q3-ans')">B) HPR = 15.0%; Annualized Return = 30.0%</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q3-ans')">C) HPR = 15.0%; Annualized Return = 32.25%</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q3-ans')">D) HPR = 12.5%; Annualized Return = 25.0%</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('mf-q3-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="mf-q3-ans">
+                    <strong>Correct Answer: Option B</strong><br>
+                    <strong>Detailed Working:</strong><br>
+                    $$\text{Capital Appreciation} = \text{NAV}_1 - \text{NAV}_0 = 44.00 - 40.00 = ₹4.00$$
+                    $$\text{Total Return per Unit} = \text{Capital Appreciation} + \text{Dividend} = 4.00 + 2.00 = ₹6.00$$
+                    $$\text{6-Month HPR} = \frac{₹6.00}{₹40.00} \times 100 = \mathbf{15.0\%}$$
+                    $$\text{Simple Annualized Return} = 15.0\% \times \frac{12}{6} = \mathbf{30.0\%}$$
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Formula Application • Treynor &amp; Jensen Evaluation</div>
+                <div class="quiz-question"><strong>Question 4:</strong> A mutual fund portfolio delivered an annual return of 18%, with a portfolio beta ($\beta_p$) of 1.25 and portfolio standard deviation ($\sigma_p$) of 20%. The risk-free rate ($R_f$) is 6%, and the market benchmark return ($R_m$) is 14%. What is the Treynor Ratio and Jensen's Alpha ($\alpha$) of the fund?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'mf-q4-ans')">A) Treynor Ratio = 9.60%; Jensen's Alpha = +2.00%</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q4-ans')">B) Treynor Ratio = 12.00%; Jensen's Alpha = +4.00%</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q4-ans')">C) Treynor Ratio = 0.60; Jensen's Alpha = -1.50%</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q4-ans')">D) Treynor Ratio = 14.40%; Jensen's Alpha = +3.50%</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('mf-q4-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="mf-q4-ans">
+                    <strong>Correct Answer: Option A</strong><br>
+                    <strong>Detailed Working:</strong><br>
+                    $$\text{Treynor Ratio} = \frac{R_p - R_f}{\beta_p} = \frac{18\% - 6\%}{1.25} = \frac{12\%}{1.25} = \mathbf{9.60\%}$$
+                    $$\text{CAPM Expected Benchmark Return} = R_f + \beta_p(R_m - R_f) = 6\% + 1.25(14\% - 6\%) = 6\% + 10\% = 16\%$$
+                    $$\text{Jensen's Alpha } (\alpha) = R_p - [R_f + \beta_p(R_m - R_f)] = 18\% - 16\% = \mathbf{+2.00\%}$$
+                </div>
+            </div>
         </div>
 
         <!-- 2. Core Concepts Comparison -->
         <div class="section-card">
-            <h2 class="section-title">2. Critical Conceptual Comparisons for Exam</h2>
+            <h2 class="section-title" id="conceptual-comparisons">2. Critical Conceptual Comparisons for Exam</h2>
 
             <table class="styled-table">
                 <thead>
@@ -476,16 +796,64 @@
                     </tr>
                 </tbody>
             </table>
+            <!-- Section 2 Interactive MCQs -->
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Concept Check • Structure &amp; Pricing</div>
+                <div class="quiz-question"><strong>Question 5:</strong> Which of the following accurately describes the operational and pricing distinctions between an Open-Ended Scheme, a Close-Ended Scheme, and an Exchange Traded Fund (ETF)?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q5-ans')">A) Open-ended schemes trade continuously at intraday market prices on stock exchanges, whereas ETFs are priced only at end-of-day NAV</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'mf-q5-ans')">B) Open-ended funds permit continuous daily subscription and redemption at end-of-day NAV; close-ended funds have fixed unit capitalization and trade on stock exchanges often at a discount to NAV; ETFs trade continuously intraday on stock exchanges with arbitrage-driven creation/redemption baskets aligning market prices with NAV</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q5-ans')">C) Close-ended funds expand their unit capital daily through open market issuance, while open-ended funds have fixed capitalization</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q5-ans')">D) ETFs are unlisted offshore hedge funds that charge high performance carry fees</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('mf-q5-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="mf-q5-ans">
+                    <strong>Correct Answer: Option B</strong><br>
+                    <strong>Detailed Explanation:</strong> Open-ended funds offer continuous entry and exit directly with the AMC at end-of-day NAV. Close-ended funds raise a fixed corpus during the NFO and can only be traded on exchanges thereafter (often trading at a discount due to illiquidity). ETFs combine open-ended liquidity with exchange trading: Authorized Participants (APs) create and redeem large creation unit baskets, maintaining arbitrage parity between secondary market prices and underlying NAV.
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Concept Check • Direct vs Regular Plans</div>
+                <div class="quiz-question"><strong>Question 6:</strong> Why does a Direct Plan of a mutual fund scheme consistently maintain a higher Net Asset Value (NAV) and generate higher compounded returns over time compared to the Regular Plan of the exact same scheme?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q6-ans')">A) Direct plans invest in a completely different, higher-alpha portfolio of stocks</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'mf-q6-ans')">B) Direct plans bypass distributors and intermediaries, incurring zero distributor commissions and trail fees, resulting in a lower Total Expense Ratio (TER) which allows more capital to compound</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q6-ans')">C) Direct plans are legally exempt from paying securities transaction taxes and GST</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q6-ans')">D) Direct plans receive sovereign return subsidies from the capital market regulator</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('mf-q6-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="mf-q6-ans">
+                    <strong>Correct Answer: Option B</strong><br>
+                    <strong>Detailed Explanation:</strong> Direct plans and Regular plans hold the identical underlying portfolio. However, because Direct plans eliminate distributor commissions and trailing advisory fees, their Total Expense Ratio (TER) is 0.5%–1.5% lower per annum. This recurring operational saving directly increases daily NAV and compounds over multi-year horizons into substantial additional returns.
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Concept Check • Side Pocketing</div>
+                <div class="quiz-question"><strong>Question 7:</strong> In mutual fund debt portfolio management, what is the core rationale and operational mechanism of "Side Pocketing" (creating a segregated portfolio)?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q7-ans')">A) Transferring cash balances into offshore tax havens to avoid capital gains taxes</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'mf-q7-ans')">B) Separating illiquid or distressed credit-downgraded debt securities from the main portfolio to prevent distress panic selling and ensure existing unitholders receive future recoveries while protecting fund liquidity</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q7-ans')">C) Artificially elevating the scheme&#39;s beta to generate higher Sharpe ratios during bull markets</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q7-ans')">D) Bypassing statutory limits on single-issuer debt concentration</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('mf-q7-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="mf-q7-ans">
+                    <strong>Correct Answer: Option B</strong><br>
+                    <strong>Detailed Explanation:</strong> When a debt issuer experiences a credit event or default, Side Pocketing carves out that specific toxic asset into a segregated portfolio. Existing investors receive pro-rata units in the side pocket. This prevents panic redemption runs from depleting liquid assets, avoids fire-sale liquidation of illiquid debt at throwaway prices, and ensures that any future recoveries are distributed fairly to investors who bore the loss.
+                </div>
+            </div>
         </div>
 
         <!-- 3. Key Exam Traps -->
         <div class="section-card">
-            <h2 class="section-title">3. Master Exam Traps & Scoring Pointers</h2>
+            <h2 class="section-title" id="exam-traps">3. Master Exam Traps &amp; Scoring Pointers</h2>
             <div class="key-point"><strong>Dividend Reinvestment Units:</strong> When dividends are reinvested, always
                 compute additional units as $\frac{\text{Total Dividend Amount}}{\text{Ex-Dividend NAV}}$. Add these to
                 existing units for all subsequent dividend and redemption calculations.</div>
             <div class="key-point"><strong>Bonus Units vs. Dividend Equalization:</strong> When bonus units are issued
-                (e.g. 1:5), total units increase by 20%, but the cost of bonus units is ₹ Nil for capital gains
+                (e.g. 1:5), total units increase by 20%, but the cost of bonus units is â‚¹ Nil for capital gains
                 computation.</div>
             <div class="key-point"><strong>High-Water Mark Provision (Hedge Funds):</strong> Performance incentive fees
                 (e.g. 20%) are payable <em>only on the net wealth created above the previous historical peak</em>, never
@@ -493,21 +861,285 @@
             <div class="key-point"><strong>Constant Ratio Plan:</strong> Always rebalance back to the 50:50 benchmark by
                 selling appreciated equity units or buying depressed equity units. This method enforces <em>'Buy Low,
                     Sell High'</em> discipline automatically.</div>
+            <!-- Section 3 Interactive MCQs -->
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Exam Trap Check • Dividend Reinvestment Units</div>
+                <div class="quiz-question"><strong>Question 8:</strong> An investor holds 10,000 units in a mutual fund scheme. The fund declares a cash dividend of ₹3.00 per unit. Under the Dividend Reinvestment Plan, the total dividend is automatically utilized to purchase additional units at the prevailing ex-dividend NAV of ₹24.00 per unit. How many new units are credited to the investor, and what is the new total unit holding?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q8-ans')">A) 1,000 new units; Total = 11,000 units</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'mf-q8-ans')">B) 1,250 new units; Total = 11,250 units</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q8-ans')">C) 1,500 new units; Total = 11,500 units</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q8-ans')">D) 800 new units; Total = 10,800 units</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('mf-q8-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="mf-q8-ans">
+                    <strong>Correct Answer: Option B</strong><br>
+                    <strong>Detailed Working:</strong><br>
+                    $$\text{Total Dividend Amount Earned} = 10,000\text{ units} \times ₹3.00 = ₹30,000$$
+                    $$\text{New Reinvestment Units Allotted} = \frac{\text{Total Dividend}}{\text{Ex-Dividend NAV}} = \frac{₹30,000}{₹24.00} = \mathbf{1,250\text{ units}}$$
+                    $$\text{New Total Unit Holding} = 10,000 + 1,250 = \mathbf{11,250\text{ units}}$$
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Exam Trap Check • Constant Ratio Plan Rebalancing</div>
+                <div class="quiz-question"><strong>Question 9:</strong> An investor establishes a Constant Ratio Plan maintaining a target 50:50 equity-to-debt asset allocation on an initial portfolio corpus of ₹10,00,000 (₹5,00,000 in equity and ₹5,00,000 in debt). After one year, the equity component surges to ₹7,50,000 while the debt component grows with interest to ₹5,50,000. Under the rules of the Constant Ratio Plan, what rebalancing transaction must be executed?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q9-ans')">A) Purchase ₹1,00,000 of equity by selling ₹1,00,000 of debt</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'mf-q9-ans')">B) Sell ₹1,00,000 of equity and transfer the proceeds to buy ₹1,00,000 of debt</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q9-ans')">C) Liquidate all equity to lock in gains and hold 100% debt</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q9-ans')">D) Maintain status quo without rebalancing because portfolio value increased</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('mf-q9-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="mf-q9-ans">
+                    <strong>Correct Answer: Option B</strong><br>
+                    <strong>Detailed Working:</strong><br>
+                    $$\text{Total Portfolio Value} = 7,50,000 + 5,50,000 = ₹13,00,000$$
+                    $$\text{Target Allocation (50:50)} = 50\% \text{ of } 13,00,000 = ₹6,50,000\text{ in Equity and } ₹6,50,000\text{ in Debt}$$
+                    $$\text{Current Equity} = ₹7,50,000 \implies \text{Excess Equity to Sell} = 7,50,000 - 6,50,000 = \mathbf{₹1,00,000}$$
+                    The investor must sell ₹1,00,000 of equity and purchase ₹1,00,000 of debt to restore the target 50:50 allocation.
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">💡 Exam Trap Check • Tracking Error Drivers</div>
+                <div class="quiz-question"><strong>Question 10:</strong> For an index fund or ETF mirroring the benchmark index, which combination of structural factors causes "Tracking Error" (divergence of fund returns from index returns)?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q10-ans')">A) Corporate default of index constituent companies exclusively</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'mf-q10-ans')">B) Fund operating expense ratio (TER), cash drag held for liquidity/redemptions, portfolio rebalancing transaction costs, and dividend receipt timing lags</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q10-ans')">C) Movements in foreign sovereign bond yields exclusively</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q10-ans')">D) Changes in statutory cash reserve ratios of commercial banks</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('mf-q10-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="mf-q10-ans">
+                    <strong>Correct Answer: Option B</strong><br>
+                    <strong>Detailed Explanation:</strong> Tracking error in passive funds arises because the theoretical benchmark is a frictionless cost-free index, whereas the actual fund incurs: (1) Total Expense Ratio (TER), (2) Cash drag (holding 1%–5% liquid cash for daily redemptions that earns money-market rates instead of equity returns), (3) Brokerage, stamp duty, and impact costs during rebalancing, and (4) Delays in reinvesting corporate dividends.
+                </div>
+            </div>
         </div>
+
+        <!-- 4. Master Test Your Knowledge Practice Section -->
+        <div class="section-card" id="master-tyk-section">
+            <h2 class="section-title">4. Master Test Your Knowledge • Comprehensive Exam Practice</h2>
+            <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: 20px;">Comprehensive exam-standard numerical and conceptual problems testing effective yield, Fama attribution, Sharpe vs Treynor divergence, high-water mark fees, and taxation.</p>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">⚡ Master TYK 1 • Effective Annualized Yield (EAY)</div>
+                <div class="quiz-question"><strong>Question 11:</strong> An investor invested in a debt mutual fund scheme for 90 days. The NAV increased from ₹20.00 to ₹20.50 over this period, with no interim dividend distributions. What is the Simple Annualized Return and the Effective Annualized Yield (EAY) assuming a 365-day year?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'mf-q11-ans')">A) Simple Annual Return = 10.14%; EAY = 10.53%</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q11-ans')">B) Simple Annual Return = 10.00%; EAY = 10.00%</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q11-ans')">C) Simple Annual Return = 12.50%; EAY = 13.15%</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q11-ans')">D) Simple Annual Return = 8.50%; EAY = 8.75%</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('mf-q11-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="mf-q11-ans">
+                    <strong>Correct Answer: Option A</strong><br>
+                    <strong>Detailed Working:</strong><br>
+                    $$\text{Holding Period Return (HPR)} = \frac{20.50 - 20.00}{20.00} = \frac{0.50}{20.00} = 2.50\%$$
+                    $$\text{Simple Annualized Return} = 2.50\% \times \frac{365}{90} = 2.50\% \times 4.0556 = \mathbf{10.14\%}$$
+                    $$\text{Effective Annualized Yield (EAY)} = (1 + \text{HPR})^{\frac{365}{90}} - 1 = (1 + 0.025)^{4.0556} - 1 = 1.1053 - 1 = \mathbf{10.53\%}$$
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">⚡ Master TYK 2 • Fama Performance Attribution</div>
+                <div class="quiz-question"><strong>Question 12:</strong> A fund manager achieved a portfolio return of 22% with portfolio standard deviation $\sigma_p = 18\%$ and portfolio beta $\beta_p = 1.20$. The market benchmark return ($R_m$) is 16% with market standard deviation $\sigma_m = 12\%$. The risk-free rate ($R_f$) is 7%. What is the fund's Total Excess Return, Diversification Penalty, and Fama's Net Selectivity?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'mf-q12-ans')">A) Total Excess Return = 15.00%; Diversification Penalty = 2.70%; Net Selectivity = +1.50%</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q12-ans')">B) Total Excess Return = 15.00%; Diversification Penalty = 4.50%; Net Selectivity = +3.50%</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q12-ans')">C) Total Excess Return = 12.00%; Diversification Penalty = 1.50%; Net Selectivity = +0.50%</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q12-ans')">D) Total Excess Return = 15.00%; Diversification Penalty = 0.00%; Net Selectivity = +4.20%</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('mf-q12-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="mf-q12-ans">
+                    <strong>Correct Answer: Option A</strong><br>
+                    <strong>Detailed Working:</strong><br>
+                    $$\text{Total Excess Return } (R_p - R_f) = 22\% - 7\% = \mathbf{15.00\%}$$
+                    $$\text{Market Risk Premium } (R_m - R_f) = 16\% - 7\% = 9.00\%$$
+                    $$\text{Total Risk Ratio} = \frac{\sigma_p}{\sigma_m} = \frac{18\%}{12\%} = 1.50$$
+                    $$\text{Gross Selectivity (Jensen's Alpha)} = (R_p - R_f) - \beta_p(R_m - R_f) = 15\% - (1.20 \times 9\%) = 15\% - 10.80\% = 4.20\%$$
+                    $$\text{Diversification Penalty} = \left(\frac{\sigma_p}{\sigma_m} - \beta_p\right)(R_m - R_f) = (1.50 - 1.20) \times 9\% = 0.30 \times 9\% = \mathbf{2.70\%}$$
+                    $$\text{Fama's Net Selectivity} = \text{Gross Selectivity} - \text{Diversification Penalty} = 4.20\% - 2.70\% = \mathbf{+1.50\%}$$
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">⚡ Master TYK 3 • Sharpe vs Treynor Divergence</div>
+                <div class="quiz-question"><strong>Question 13:</strong> Fund Alpha has a Sharpe ratio of 0.80 and a Treynor ratio of 16.0%. Fund Beta has a Sharpe ratio of 0.60 and a Treynor ratio of 18.0%. The market benchmark has a Sharpe ratio of 0.50. Which analytical conclusion regarding portfolio diversification and investor utility is correct?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q13-ans')">A) Fund Beta is strictly superior to Fund Alpha for an investor whose entire net worth is invested in that single fund</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'mf-q13-ans')">B) Fund Alpha is better diversified (lower un-systematic risk relative to total risk), making it superior as a standalone portfolio; Fund Beta provides higher excess return per unit of systematic risk, making it superior as a component in a well-diversified multi-asset basket</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q13-ans')">C) Sharpe and Treynor ratios must always rank mutual funds in the identical order</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q13-ans')">D) Both funds underperformed the market benchmark index</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('mf-q13-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="mf-q13-ans">
+                    <strong>Correct Answer: Option B</strong><br>
+                    <strong>Detailed Explanation:</strong> The Sharpe ratio evaluates excess return per unit of <em>Total Risk</em> ($\sigma$). For an investor investing their entire wealth into a single fund, total risk matters, so Fund Alpha (Sharpe 0.80) is superior. The Treynor ratio measures excess return per unit of <em>Systematic Risk</em> ($\beta$), assuming un-systematic risk is fully eliminated by diversification. Thus, Fund Beta (Treynor 18.0%) is superior when added as a sub-component into a widely diversified portfolio.
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">⚡ Master TYK 4 • High-Water Mark Incentive Fee</div>
+                <div class="quiz-question"><strong>Question 14:</strong> A hedge fund operates under a "2 and 20" fee structure (2% management fee on starting AUM + 20% incentive fee with a High-Water Mark provision). In Year 1, AUM grows from ₹100 Cr to ₹130 Cr. In Year 2, AUM declines to ₹110 Cr. In Year 3, AUM rises to ₹140 Cr. Disregarding management fees for the incentive calculation, what incentive fee is payable to the fund manager at the end of Year 3?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q14-ans')">A) ₹6.00 Cr (20% on the ₹30 Cr gain from ₹110 Cr to ₹140 Cr)</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'mf-q14-ans')">B) ₹2.00 Cr (20% on the ₹10 Cr net new wealth created above the previous historical peak of ₹130 Cr)</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q14-ans')">C) ₹8.00 Cr (20% on ₹40 Cr total cumulative gain)</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q14-ans')">D) ₹0.00 Cr because Year 2 suffered negative returns</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('mf-q14-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="mf-q14-ans">
+                    <strong>Correct Answer: Option B</strong><br>
+                    <strong>Detailed Working:</strong><br>
+                    Under the High-Water Mark principle, incentive performance fees are payable <em>only on net new wealth created above the highest historical peak</em> previously rewarded.<br>
+                    • Year 1 Peak (High-Water Mark) = ₹130 Cr (Fee paid on ₹30 Cr gain).<br>
+                    • Year 2 AUM = ₹110 Cr (Below HWM of ₹130 Cr $\implies$ No incentive fee).<br>
+                    • Year 3 AUM = ₹140 Cr. New wealth generated above previous HWM $= 140 - 130 = ₹10\text{ Cr}$.<br>
+                    $$\text{Incentive Fee Year 3} = 20\% \times ₹10\text{ Cr} = \mathbf{₹2.00\text{ Cr}}$$
+                </div>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-badge">⚡ Master TYK 5 • Bonus Units &amp; Capital Gains</div>
+                <div class="quiz-question"><strong>Question 15:</strong> An investor holds 5,000 mutual fund units acquired at an original cost of ₹30.00 per unit (Total Investment = ₹1,50,000). The scheme announces a bonus issue in the ratio of 1:2 (1 bonus unit for every 2 held), allotting 2,500 bonus units, after which the NAV adjusts to ₹20.00 per unit. Under standard capital gains tax provisions:</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q15-ans')">A) The cost of acquisition of the 2,500 bonus units is deemed to be ₹20.00 per unit, creating an immediate deductible tax loss</div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'mf-q15-ans')">B) The cost of acquisition of the 2,500 bonus units is ₹Nil, while the cost of acquisition of the original 5,000 units remains intact at ₹30.00 per unit</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q15-ans')">C) The acquisition cost of all 7,500 units is blended and averaged to ₹20.00 per unit</div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'mf-q15-ans')">D) Bonus units are fully taxed as ordinary income in the year of allotment</div>
+                </div>
+                <button class="reveal-btn" onclick="toggleAnswer('mf-q15-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div class="quiz-answer" id="mf-q15-ans">
+                    <strong>Correct Answer: Option B</strong><br>
+                    <strong>Detailed Explanation:</strong> Under the Income Tax Act, the cost of acquisition of bonus units allotted on or after 1st April 2001 is deemed to be <strong>₹Nil</strong>. The original 5,000 units retain their historical purchase cost of ₹30.00 per unit. When bonus units are subsequently redeemed, the entire redemption proceeds constitute capital gains.
+                </div>
+            </div>
+        </div>
+            </div>
+        </main>
     </div>
 
+    <!-- Unified Chapter Navigation & Interactive Scripts -->
     <script>
-        function toggleTheme() {
-            const current = document.documentElement.getAttribute('data-theme');
-            const target = current === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', target);
-            localStorage.setItem('theme', target);
-            document.getElementById('themeToggle').innerText = target === 'dark' ? '🌙 Dark' : '☀️ Light';
+        function checkOption(el, isCorrect, ansId) {
+            var parent = el.closest('.mcq-container') || el.closest('.quiz-card') || el.closest('.problem-card');
+            if (!parent) return;
+            var allOptions = parent.querySelectorAll('.mcq-option-item');
+            allOptions.forEach(function(opt) {
+                opt.style.pointerEvents = 'none';
+                if (opt.getAttribute('data-correct') === 'true') {
+                    opt.classList.add('reveal-correct');
+                }
+            });
+            var fb = parent.querySelector('.mcq-feedback');
+            if (isCorrect) {
+                el.classList.add('selected-correct');
+                if (fb) {
+                    fb.innerHTML = '✓ Correct! Outstanding work.';
+                    fb.className = 'mcq-feedback correct';
+                }
+            } else {
+                el.classList.add('selected-incorrect');
+                if (fb) {
+                    fb.innerHTML = '✗ Incorrect. Review the detailed solution below.';
+                    fb.className = 'mcq-feedback incorrect';
+                }
+            }
+            var ans = document.getElementById(ansId);
+            if (ans) {
+                ans.style.display = 'block';
+            }
         }
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        document.documentElement.setAttribute('data-theme', savedTheme);
-        document.getElementById('themeToggle').innerText = savedTheme === 'dark' ? '🌙 Dark' : '☀️ Light';
+
+        function toggleAnswer(ansId) {
+            var ans = document.getElementById(ansId);
+            if (!ans) return;
+            var isHidden = (ans.style.display === 'none' || ans.style.display === '');
+            ans.style.display = isHidden ? 'block' : 'none';
+            if (isHidden) {
+                var parent = ans.closest('.mcq-container') || ans.closest('.quiz-card') || ans.closest('.problem-card');
+                if (parent) {
+                    var allOptions = parent.querySelectorAll('.mcq-option-item');
+                    allOptions.forEach(function(opt) {
+                        if (opt.getAttribute('data-correct') === 'true') {
+                            opt.classList.add('reveal-correct');
+                        }
+                    });
+                }
+            }
+        }
+
+        function toggleSidebar() {
+            var sb = document.getElementById('sidebar');
+            if (!sb) return;
+            if (window.innerWidth <= 900) {
+                sb.classList.toggle('mobile-open');
+            } else {
+                sb.classList.toggle('hidden');
+            }
+        }
+
+        // Reading progress tracking & sidebar link highlighting
+        var contentEl = document.querySelector('.content');
+        var progressBar = document.getElementById('reading-progress');
+        var sections = document.querySelectorAll('.section-card, section[id], .theory-topic, .problem-card, [id]');
+        var sidebarLinks = document.querySelectorAll('.sidebar a');
+
+        function updateReadingProgressColor(progressBar, progress) {
+            var r, g, b;
+            if (progress <= 33) {
+                var t = progress / 33;
+                r = Math.round(239 + (234 - 239) * t);
+                g = Math.round(68 + (179 - 68) * t);
+                b = Math.round(68 + (8 - 68) * t);
+            } else if (progress <= 66) {
+                var t = (progress - 33) / 33;
+                r = Math.round(234 + (34 - 234) * t);
+                g = Math.round(179 + (197 - 179) * t);
+                b = Math.round(8 + (94 - 8) * t);
+            } else {
+                var t = (progress - 66) / 34;
+                r = Math.round(34 + (16 - 34) * t);
+                g = Math.round(197 + (185 - 197) * t);
+                b = Math.round(94 + (129 - 94) * t);
+            }
+            progressBar.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+            progressBar.style.boxShadow = '0 0 8px rgba(' + r + ',' + g + ',' + b + ', 0.45)';
+        }
+
+        if (progressBar) { updateReadingProgressColor(progressBar, 0); }
+
+        if (contentEl && progressBar) {
+            contentEl.addEventListener('scroll', function() {
+                var totalScroll = contentEl.scrollHeight - contentEl.clientHeight;
+                if (totalScroll > 0) {
+                    var currentScroll = contentEl.scrollTop;
+                    var progress = (currentScroll / totalScroll) * 100;
+                    progressBar.style.width = progress + '%';
+                    updateReadingProgressColor(progressBar, progress);
+                }
+
+                var current = '';
+                sections.forEach(function(section) {
+                    var sectionTop = section.offsetTop - contentEl.offsetTop;
+                    if (contentEl.scrollTop >= sectionTop - 140) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                if (current) {
+                    sidebarLinks.forEach(function(link) {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + current) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
     </script>
 </body>
-
 </html>
+

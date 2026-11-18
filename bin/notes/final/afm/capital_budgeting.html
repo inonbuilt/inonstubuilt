@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@
     <meta name="description"
         content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 3: Advanced Capital Budgeting Decisions. Complete CA Final AFM Chapter 3 Capital Budgeting notes. Covers RADR, Certainty Equivalent, Decision Tree, Project Replacement, and all 10 Illustrations + 27 TYK solutions.">
     <meta name="keywords"
-        content="Advanced Capital Budgeting Decisions, RADR, Certainty Equivalent approach, Decision Tree analysis, Project Replacement, CA Final AFM Chapter 3 notes, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+        content="Advanced Capital Budgeting Decisions, RADR, Certainty Equivalent approach, Decision Tree analysis, Project Replacement, CA Final AFM Chapter 3 notes, CA Final AFM Paper 2, Advanced Financial Management notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
     <meta name="author" content="Calcium Notes">
     <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/capital_budgeting.html">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -48,7 +48,7 @@
     "name": "CA Final AFM Chapter 3: Advanced Capital Budgeting Decisions (Quick Revision)",
     "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 3: Advanced Capital Budgeting Decisions. Complete CA Final AFM Chapter 3 Capital Budgeting notes. Covers RADR, Certainty Equivalent, Decision Tree, Project Replacement, and all 10 Illustrations + 27 TYK solutions.",
     "learningResourceType": "Revision Cheat Sheet",
-    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "educationalLevel": "CA Final",
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "author": {
@@ -581,7 +581,7 @@
             color: #991b1b;
         }
 
-        /* ICAI Official Formula Card Styling */
+        /* Official Formula Card Styling */
         .formula-card {
             background: #ffffff;
             border: 2px solid #2563eb;
@@ -729,6 +729,88 @@
             font-size: 13.5px;
             color: var(--slate-600);
             line-height: 1.5;
+        }
+
+                .quiz-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #eff6ff;
+            color: var(--primary);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 1px solid #bfdbfe;
+        }
+
+        .mcq-options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            margin: 12px 0 14px 0;
+        }
+
+        .mcq-option-item {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 0.88rem;
+            color: var(--slate-800);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .mcq-option-item:hover {
+            background: #f0fdf4;
+            border-color: #22c55e;
+            transform: translateX(3px);
+        }
+
+        .mcq-option-item.selected-correct {
+            background: #dcfce7 !important;
+            border-color: #22c55e !important;
+            color: #166534 !important;
+            font-weight: 600;
+        }
+
+        .mcq-option-item.selected-correct::after {
+            content: " ✓ Correct";
+            float: right;
+            font-weight: 700;
+            color: #16a34a;
+        }
+
+        .mcq-option-item.selected-wrong {
+            background: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #991b1b !important;
+            font-weight: 600;
+        }
+
+        .mcq-option-item.selected-wrong::after {
+            content: " ✗ Incorrect";
+            float: right;
+            font-weight: 700;
+            color: #dc2626;
+        }
+
+        [data-theme='dark'] .mcq-option-item.selected-correct,
+        body.dark-theme .mcq-option-item.selected-correct {
+            background: #064e3b !important;
+            color: #a7f3d0 !important;
+            border-color: #10b981 !important;
+        }
+
+        [data-theme='dark'] .mcq-option-item.selected-wrong,
+        body.dark-theme .mcq-option-item.selected-wrong {
+            background: #7f1d1d !important;
+            color: #fecaca !important;
+            border-color: #f87171 !important;
         }
 
         .quiz-card {
@@ -911,7 +993,70 @@
         .calc {
             font-family: var(--notes-table) !important;
         }
+    
+        /* Universal Single-Scrollbar Fix */
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            padding-bottom: 0 !important;
+            height: 100% !important;
+            max-height: 100vh !important;
+            max-height: 100dvh !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            display: block !important;
+            box-sizing: border-box !important;
+        }
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        .topbar {
+            height: 64px !important;
+            width: 100% !important;
+            margin: 0 !important;
+            box-sizing: border-box !important;
+            flex-shrink: 0 !important;
+            position: relative !important;
+            z-index: 100;
+        }
+        .layout {
+            display: flex !important;
+            height: calc(100vh - 64px) !important;
+            height: calc(100dvh - 64px) !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            box-sizing: border-box !important;
+        }
+        .sidebar {
+            width: 290px;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            flex-shrink: 0 !important;
+            box-sizing: border-box !important;
+        }
+        .content {
+            flex: 1 1 auto !important;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            padding: 36px 48px !important;
+            box-sizing: border-box !important;
+            scroll-behavior: smooth;
+        }
+        .content-container {
+            max-width: 940px !important;
+            margin: 0 auto !important;
+            padding-bottom: 80px !important;
+            box-sizing: border-box !important;
+        }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/unified_notes.css">
 </head>
 
 <body>
@@ -924,7 +1069,7 @@
         </div>
         <div class="topbar-right">
             <div class="progress-container" title="Reading Progress">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" id="reading-progress"></div>
             </div>
             <button class="toggle-btn" onclick="toggleSidebar()">☰ Index</button>
         </div>
@@ -947,7 +1092,7 @@
                 <li><a href="#decision-tree">4.5 Decision Tree &amp; Rollback</a></li>
                 <li><a href="#replacement-decisions">5. Replacement Decisions &amp; EAC</a></li>
                 <li><a href="#apv-method">6. Adjusted Present Value (APV)</a></li>
-                <li><a href="#solved-illustrations">7. Solved ICAI Master Cases</a></li>
+                <li><a href="#solved-illustrations">7. Solved Master Cases</a></li>
                 <li><a href="#exam-summary">8. Master Summary &amp; Review</a></li>
             </ul>
         </aside>
@@ -957,30 +1102,22 @@
             <div class="content-container">
 
                 <!-- Hero Header Banner -->
-                <div class="chapter-hero" id="overview">
-                    <span class="hero-tag">CA Final Paper 2 • AFM Module 1</span>
-                    <h1 class="hero-title">Advanced Capital Budgeting Decisions</h1>
-                    <p class="hero-desc">
-                        An exhaustive master revision compendium covering project appraisal under inflation (Fisher
-                        effect, tax depreciation drag), statistical &amp; conventional risk models (RADR, Certainty
-                        Equivalent), Sensitivity &amp; Scenario modeling, Monte Carlo simulation, Decision Trees with
-                        rollback induction, Machine Replacement (EAC cycles), and Adjusted Present Value (APV).
-                    </p>
-                    <div class="hero-stats-row">
-                        <div class="hero-stat-badge">🎯 Full ICAI New Scheme Coverage</div>
-                        <div class="hero-stat-badge">⚡ 13 Solved Practical Cases</div>
-                        <div class="hero-stat-badge">📐 All Formulas &amp; Statistical Models</div>
-                        <div class="hero-stat-badge">💡 Exam Weightage: 8–16 Marks</div>
+                <div class="chapter-header" id="overview">
+                    <div class="chapter-badge">CA Final AFM • Paper 2</div>
+                    <h1>Chapter 3: Advanced Capital Budgeting Decisions</h1>
+                    <p>Exhaustive formulas, decision trees, certainty equivalent (CE) methods, sensitivity &amp; scenario analysis, inflation-adjusted cash flows, and capital rationing.</p>
+                    <div class="chapter-meta">
+                        <span>📚 Standard Curriculum Study Material</span><span>⏱️ Read Time: ~50 mins</span><span>🎯 Exam Weightage: 12 – 18 Marks</span>
                     </div>
                 </div>
 
                 <!-- Learning Outcomes Card -->
                 <div class="section-card">
                     <h2 class="section-title">
-                        <span class="section-number">🎯</span> Learning Outcomes (ICAI Syllabus Focus)
+                        <span class="section-number">🎯</span> Learning Outcomes (Core Exam Focus)
                     </h2>
                     <p style="font-size: 14px; color: var(--slate-600); margin-bottom: 16px;">
-                        According to the official ICAI study guidelines, candidates must achieve complete mastery in:
+                        According to official curriculum guidelines, candidates must achieve complete mastery in:
                     </p>
                     <div class="info-grid">
                         <div class="info-box">
@@ -1093,6 +1230,46 @@
                         Changes in corporate tax rates, import tariffs, environmental carbon taxes, or export subsidies
                         drastically alter domestic and cross-border project viability.
                     </p>
+                    <!-- Test Your Knowledge: Topic 1 MCQs -->
+                    <div class="quiz-card" style="margin-top: 20px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 1.1</div>
+                        <div class="quiz-question">Q1.1: A firm evaluates an investment project where the real rate of discount is 4% and the expected annual inflation rate is 10%. Under the Fisher effect equation, what is the exact nominal discount rate (money discount rate) to be applied to nominal cash flows?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q1-1-mcq')">(a) 14.00%</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch3-q1-1-mcq')">(b) 14.40%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q1-1-mcq')">(c) 6.00%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q1-1-mcq')">(d) 5.60%</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch3-q1-1-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch3-q1-1-mcq">
+                            <span class="correct-tag" style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:2px 7px; border-radius:4px;">Correct Answer: (b) 14.40%</span><br>
+                            <strong>Step-by-Step Explanation:</strong><br>
+                            Using the exact Fisher relation:<br>
+                            $$(1 + \text{Nominal Discount Rate}) = (1 + \text{Real Rate}) \times (1 + \text{Inflation Rate})$$
+                            $$(1 + \text{NDR}) = (1 + 0.04) \times (1 + 0.10) = 1.04 \times 1.10 = 1.144$$
+                            $$\text{Nominal Discount Rate} = 1.144 - 1 = 0.144 \text{ or } \mathbf{14.40\%}$$
+                            <em>Crucial Exam Warning:</em> A simple arithmetic summation ($4\% + 10\% = 14\%$) erroneously omits the joint compounding interaction of inflation on the real return ($0.04 \times 0.10 = 0.40\%$).
+                        </div>
+                    </div>
+
+                    <div class="quiz-card" style="margin-top: 14px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 1.2</div>
+                        <div class="quiz-question">Q1.2: A capital project generates real revenue of ₹ 10,00,000 in Year 2 (measured in base-year purchasing power). If annual general price inflation is 10% in Year 1 and 8% in Year 2, what is the nominal revenue for Year 2?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q1-2-mcq')">(a) ₹ 11,00,000</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q1-2-mcq')">(b) ₹ 10,80,000</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch3-q1-2-mcq')">(c) ₹ 11,88,000</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q1-2-mcq')">(d) ₹ 11,66,400</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch3-q1-2-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch3-q1-2-mcq">
+                            <span class="correct-tag" style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:2px 7px; border-radius:4px;">Correct Answer: (c) ₹ 11,88,000</span><br>
+                            <strong>Step-by-Step Explanation:</strong><br>
+                            Nominal revenue incorporates cumulative compounded inflation over successive periods:<br>
+                            $$\text{Nominal Revenue} = \text{Real Revenue} \times (1 + i_1) \times (1 + i_2)$$
+                            $$\text{Nominal Revenue} = 10,00,000 \times 1.10 \times 1.08 = \mathbf{₹ 11,88,000}$$
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Section 2: Risk and Uncertainty in Investment Decisions -->
@@ -1148,6 +1325,28 @@
                                 certain cash flows. Discounting penalizes distant, uncertain streams.</div>
                         </div>
                     </div>
+                    <!-- Test Your Knowledge: Topic 2 MCQ -->
+                    <div class="quiz-card" style="margin-top: 20px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 2</div>
+                        <div class="quiz-question">Q2.1: A firm is re-evaluating whether to continue operating an existing machine purchased for ₹ 20,00,000 three years ago. The machine is being depreciated on a straight-line basis over an 8-year economic life (zero salvage). It can be sold today for ₹ 10,00,000. If the applicable corporate tax rate on business profits and capital gains/losses is 20%, what is the net opportunity cost cash outflow attributable to continuing the machine today (Year 0)?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q2-1-mcq')">(a) ₹ 10,00,000</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q2-1-mcq')">(b) ₹ 9,50,000</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch3-q2-1-mcq')">(c) ₹ 10,50,000</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q2-1-mcq')">(d) ₹ 12,50,000</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch3-q2-1-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch3-q2-1-mcq">
+                            <span class="correct-tag" style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:2px 7px; border-radius:4px;">Correct Answer: (c) ₹ 10,50,000</span><br>
+                            <strong>Step-by-Step Solution:</strong><br>
+                            1. Annual SLM Depreciation $= 20,00,000 / 8 = ₹ 2,50,000$.<br>
+                            2. Current Book Value after 3 years $= 20,00,000 - (3 \times 2,50,000) = ₹ 12,50,000$.<br>
+                            3. Capital Loss on sale $= \text{Book Value} - \text{Sale Value} = 12,50,000 - 10,00,000 = ₹ 2,50,000$.<br>
+                            4. Tax saved on capital loss at 20% $= 2,50,000 \times 20\% = ₹ 50,000$.<br>
+                            5. Net Salvage Value $(\text{Sale Price} + \text{Tax Saved}) = 10,00,000 + 50,000 = \mathbf{₹ 10,50,000}$.<br>
+                            <em>Decision Logic:</em> Continuing with the machine foregoes receiving ₹ 10,50,000 today. Hence, this foregone cash represents an immediate opportunity cost outflow at Year 0.
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Section 3: Factors Affecting Capital Budgeting Decisions -->
@@ -1182,6 +1381,22 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Test Your Knowledge: Topic 3 MCQ -->
+                    <div class="quiz-card" style="margin-top: 20px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 3</div>
+                        <div class="quiz-question">Q3.1: In enterprise risk taxonomy for capital expenditure evaluation, which of the following is strictly categorized as an Internal / Project-Specific Factor rather than an External Factor?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q3-1-mcq')">(a) Foreign currency exchange volatility and import tariff revisions</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch3-q3-1-mcq')">(b) Project completion schedule slippage, estimation errors in capital outlays, and sudden changes in Key Managerial Personnel (KMP)</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q3-1-mcq')">(c) Industry-wide technological obsolescence and competitor aggressive price cuts</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q3-1-mcq')">(d) Shifts in central bank monetary policy interest rates and national corporate tax laws</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch3-q3-1-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch3-q3-1-mcq">
+                            <span class="correct-tag" style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:2px 7px; border-radius:4px;">Correct Answer: (b)</span><br>
+                            <strong>Explanation:</strong> Internal factors are endogenous to the enterprise and divide into Project-Specific Risks (construction delay, faulty engineering, capital estimation error) and Company-Specific Risks (credit rating downgrade, management departures). Inflation, competitor actions, regulatory statutes, and macroeconomic shifts are external factors.
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Section 4.1: Statistical Techniques -->
@@ -1206,6 +1421,67 @@
                             - When projects have <em>different Expected NPVs</em> and <em>different outlays</em>,
                             Standard Deviation is misleading! Always select the project with the <strong>lower
                                 Coefficient of Variation (CV)</strong>.
+                        </div>
+                    </div>
+                    <!-- Test Your Knowledge: Topic 4 MCQs -->
+                    <div class="quiz-card" style="margin-top: 20px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 4.1</div>
+                        <div class="quiz-question">Q4.1: An exploratory capital project generates annual cash inflows of ₹ 1,00,000 (prob 0.20), ₹ 50,000 (prob 0.40), and a net loss of -₹ 25,000 (prob 0.40). What is the standard deviation ($\sigma$) of the annual cash flow?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch3-q4-1-mcq')">(a) ₹ 48,477</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q4-1-mcq')">(b) ₹ 37,417</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q4-1-mcq')">(c) ₹ 27,386</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q4-1-mcq')">(d) ₹ 50,000</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch3-q4-1-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch3-q4-1-mcq">
+                            <span class="correct-tag" style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:2px 7px; border-radius:4px;">Correct Answer: (a) ₹ 48,477</span><br>
+                            <strong>Step-by-Step Calculation:</strong><br>
+                            1. Expected Cash Flow $(\bar{x}) = (1,00,000 \times 0.20) + (50,000 \times 0.40) + (-25,000 \times 0.40) = 20,000 + 20,000 - 10,000 = ₹ 30,000$.<br>
+                            2. Deviations $(x_i - \bar{x})$: $100\text{k} - 30\text{k} = +70\text{k}$; $50\text{k} - 30\text{k} = +20\text{k}$; $-25\text{k} - 30\text{k} = -55\text{k}$.<br>
+                            3. Weighted Squared Deviations $\sum P_i (x_i - \bar{x})^2$:<br>
+                            $0.20 \times (70,000)^2 = 980 \times 10^6$<br>
+                            $0.40 \times (20,000)^2 = 160 \times 10^6$<br>
+                            $0.40 \times (-55,000)^2 = 1,210 \times 10^6$<br>
+                            $\text{Variance } \sigma^2 = 2,350 \times 10^6 \implies \sigma = \sqrt{2,350 \times 10^6} = \mathbf{₹ 48,477}$.
+                        </div>
+                    </div>
+
+                    <div class="quiz-card" style="margin-top: 14px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 4.2</div>
+                        <div class="quiz-question">Q4.2: Project A generates an expected NPV of ₹ 10,00,000 with a standard deviation of ₹ 5,00,000. Project B generates an expected NPV of ₹ 14,00,000 with a standard deviation of ₹ 8,00,000. If the firm uses the Coefficient of Variation (CV) as the risk benchmark, which project should management select?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch3-q4-2-mcq')">(a) Project A, because $\text{CV}_A = 0.50$ is lower than $\text{CV}_B = 0.5714$</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q4-2-mcq')">(b) Project B, because its higher expected NPV of ₹ 14,00,000 overrides risk considerations</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q4-2-mcq')">(c) Project B, because its larger standard deviation proves higher upside potential</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q4-2-mcq')">(d) Indifferent between both projects as both have positive expected NPVs</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch3-q4-2-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch3-q4-2-mcq">
+                            <span class="correct-tag" style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:2px 7px; border-radius:4px;">Correct Answer: (a)</span><br>
+                            <strong>Step-by-Step Calculation:</strong><br>
+                            $$\text{Coefficient of Variation (CV)} = \frac{\text{Standard Deviation}}{\text{Expected NPV}}$$
+                            $$\text{CV}_A = \frac{5,00,000}{10,00,000} = 0.50 \text{ times}$$
+                            $$\text{CV}_B = \frac{8,00,000}{14,00,000} = 0.5714 \text{ times}$$
+                            Project A is selected because it exhibits a lower coefficient of variation, offering less risk per rupee of expected return.
+                        </div>
+                    </div>
+
+                    <div class="quiz-card" style="margin-top: 14px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 4.3</div>
+                        <div class="quiz-question">Q4.3: A 2-year project has a 30% probability of achieving its best-case cash flow in Year 1. What is the probability of achieving the best-case NPV if cash flows are (i) perfectly dependent (correlated) across years, and (ii) completely independent over time?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q4-3-mcq')">(a) 30% and 30%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q4-3-mcq')">(b) 30% and 60%</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch3-q4-3-mcq')">(c) 30% and 9%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q4-3-mcq')">(d) 9% and 30%</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch3-q4-3-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch3-q4-3-mcq">
+                            <span class="correct-tag" style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:2px 7px; border-radius:4px;">Correct Answer: (c) 30% and 9%</span><br>
+                            <strong>Explanation:</strong><br>
+                            1. For perfectly correlated (dependent) cash flows, the Year 1 outcome dictates Year 2 with certainty: $P = 30\%$.<br>
+                            2. For independent cash flows, each period is an independent trial: $P = 30\% \times 30\% = 9\%$.
                         </div>
                     </div>
                 </div>
@@ -1305,6 +1581,59 @@
                             </tbody>
                         </table>
                     </div>
+                    <!-- Test Your Knowledge: Topic 5 MCQs -->
+                    <div class="quiz-card" style="margin-top: 20px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 5.1</div>
+                        <div class="quiz-question">Q5.1: An investment project has an assessed Risk Index (project beta) of 2.00. The risk-free rate on sovereign securities is 10%, and the company's overall normal cost of capital is 15%. What is the appropriate Risk-Adjusted Discount Rate (RADR)?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q5-1-mcq')">(a) 10.00%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q5-1-mcq')">(b) 15.00%</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch3-q5-1-mcq')">(c) 20.00%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q5-1-mcq')">(d) 25.00%</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch3-q5-1-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch3-q5-1-mcq">
+                            <span class="correct-tag" style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:2px 7px; border-radius:4px;">Correct Answer: (c) 20.00%</span><br>
+                            <strong>Step-by-Step Solution:</strong><br>
+                            $$\text{RADR} = R_f + [\text{Risk Index} \times (K_0 - R_f)]$$
+                            $$\text{RADR} = 10\% + [2.00 \times (15\% - 10\%)] = 10\% + 10\% = \mathbf{20.00\%}$$
+                        </div>
+                    </div>
+
+                    <div class="quiz-card" style="margin-top: 14px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 5.2</div>
+                        <div class="quiz-question">Q5.2: Project Alpha has a Certainty Equivalent Factor (CEF) of 0.80 for Year 3, while Project Beta has a CEF of 0.65 for Year 3. Which project should be evaluated using a higher Risk-Adjusted Discount Rate (RADR)?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q5-2-mcq')">(a) Project Alpha, because a higher CEF implies higher cash volatility</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch3-q5-2-mcq')">(b) Project Beta, because a lower CEF reflects greater risk and lower certainty</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q5-2-mcq')">(c) Both projects should be discounted at identical rates because CEF removes the need for discounting</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q5-2-mcq')">(d) Project Alpha, because high certainty demands a heavier hurdle penalty</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch3-q5-2-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch3-q5-2-mcq">
+                            <span class="correct-tag" style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:2px 7px; border-radius:4px;">Correct Answer: (b)</span><br>
+                            <strong>Explanation:</strong> The Certainty Equivalent Factor is inversely related to risk. A lower CEF (0.65 vs 0.80) signals that investors discount the uncertain flow more heavily due to higher perceived risk. Consequently, Project Beta must carry a higher risk premium under the RADR method.
+                        </div>
+                    </div>
+
+                    <div class="quiz-card" style="margin-top: 14px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 5.3</div>
+                        <div class="quiz-question">Q5.3: Under the Certainty Equivalent approach, the certain cash flow of a project is ₹ 2,00,000. If the applicable Certainty Equivalent Factor (CEF) is 0.80, what is the underlying uncertain cash flow forecast?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q5-3-mcq')">(a) ₹ 1,60,000</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q5-3-mcq')">(b) ₹ 2,00,000</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch3-q5-3-mcq')">(c) ₹ 2,50,000</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q5-3-mcq')">(d) ₹ 3,20,000</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch3-q5-3-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch3-q5-3-mcq">
+                            <span class="correct-tag" style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:2px 7px; border-radius:4px;">Correct Answer: (c) ₹ 2,50,000</span><br>
+                            <strong>Step-by-Step Calculation:</strong><br>
+                            $$\text{Certain Cash Flow} = \text{Uncertain Cash Flow} \times \text{CEF}$$
+                            $$₹ 2,00,000 = \text{Uncertain Cash Flow} \times 0.80$$
+                            $$\text{Uncertain Cash Flow} = \frac{2,00,000}{0.80} = \mathbf{₹ 2,50,000}$$
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Section 4.3: Sensitivity Analysis -->
@@ -1369,10 +1698,46 @@
                     <div class="callout callout-warning">
                         <div class="callout-icon">📌</div>
                         <div>
-                            <strong>Universal ICAI Exam Pattern:</strong> Across almost all ICAI problems (e.g.
+                            <strong>Standard Exam Pattern:</strong> Across standard examination problems (e.g.
                             Illustration 9), <strong>Selling Price per Unit</strong> consistently exhibits the highest
                             sensitivity because changes in selling price directly alter total revenue without being
                             dampened by costs.
+                        </div>
+                    </div>
+                    <!-- Test Your Knowledge: Sensitivity Analysis MCQs -->
+                    <div class="quiz-card" style="margin-top: 20px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 6.1</div>
+                        <div class="quiz-question">Q6.1: A capital project has an initial investment outlay of ₹ 12,000 and generates annual cash inflows of ₹ 4,500 for 4 years. The cost of capital is 14% and $\text{PVIFA}(14\%, 4) = 2.9137$. What is the sensitivity percentage of the project with respect to initial capital outlay?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch3-q6-1-mcq')">(a) 9.27%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q6-1-mcq')">(b) 10.27%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q6-1-mcq')">(c) 9.72%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q6-1-mcq')">(d) 11.12%</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch3-q6-1-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch3-q6-1-mcq">
+                            <span class="correct-tag" style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:2px 7px; border-radius:4px;">Correct Answer: (a) 9.27%</span><br>
+                            <strong>Step-by-Step Calculation:</strong><br>
+                            1. $\text{PV of Cash Inflows} = 4,500 \times 2.9137 = ₹ 13,111.65$.<br>
+                            2. $\text{Base NPV} = 13,111.65 - 12,000 = ₹ 1,111.65$.<br>
+                            3. The project achieves zero NPV if the initial capital outlay increases by the full amount of the NPV (₹ 1,111.65).<br>
+                            4. $\text{Sensitivity \%} = \frac{\Delta \text{ Capital Outlay}}{\text{Base Capital Outlay}} \times 100 = \frac{1,111.65}{12,000} \times 100 = \mathbf{9.27\%}$.
+                        </div>
+                    </div>
+
+                    <div class="quiz-card" style="margin-top: 14px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 6.2</div>
+                        <div class="quiz-question">Q6.2: A project currently has a positive base-case NPV of ₹ 25 Lakhs. Sensitivity analysis reveals that the adverse variation required in each parameter to reduce NPV to zero is: Selling Price = 25%, Cost Price = 45%, Units Sold = 70%, Fixed Cost = 10%. To which factor is the investment project most sensitive?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q6-2-mcq')">(a) Selling Price</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q6-2-mcq')">(b) Cost Price</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q6-2-mcq')">(c) Units Sold</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch3-q6-2-mcq')">(d) Fixed Cost</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch3-q6-2-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch3-q6-2-mcq">
+                            <span class="correct-tag" style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:2px 7px; border-radius:4px;">Correct Answer: (d) Fixed Cost</span><br>
+                            <strong>Explanation:</strong> Under the zero-NPV cushion approach, the factor requiring the smallest adverse variation (only 10%) to wipe out the NPV has the narrowest margin of safety and is therefore the most sensitive factor.
                         </div>
                     </div>
                 </div>
@@ -1488,6 +1853,27 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Test Your Knowledge: Monte Carlo Simulation MCQ -->
+                    <div class="quiz-card" style="margin-top: 20px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 6.4</div>
+                        <div class="quiz-question">Q6.4: A company simulates annual project demand with the following probability distribution: Demand of 10,000 units (Prob 0.25, RN 00-24), 20,000 units (Prob 0.45, RN 25-69), and 30,000 units (Prob 0.30, RN 70-99). If the two-digit pseudo-random number drawn in a simulation run is 70, which annual demand level is mapped?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q6-4-mcq')">(a) 10,000 units</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q6-4-mcq')">(b) 20,000 units</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch3-q6-4-mcq')">(c) 30,000 units</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q6-4-mcq')">(d) 0 units</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch3-q6-4-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch3-q6-4-mcq">
+                            <span class="correct-tag" style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:2px 7px; border-radius:4px;">Correct Answer: (c) 30,000 units</span><br>
+                            <strong>Explanation:</strong><br>
+                            Cumulative class intervals:<br>
+                            • 10,000 units: Cumulative prob 0.25 &rarr; Random Numbers 00&ndash;24<br>
+                            • 20,000 units: Cumulative prob 0.70 &rarr; Random Numbers 25&ndash;69<br>
+                            • 30,000 units: Cumulative prob 1.00 &rarr; Random Numbers 70&ndash;99<br>
+                            Since Random Number 70 falls in the range 70&ndash;99, the corresponding simulated demand is <strong>30,000 units</strong>.
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Section 4.5: Decision Tree Analysis -->
@@ -1556,6 +1942,24 @@
                                     Continue rolling backward until the initial time-zero decision node is reached.
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <!-- Test Your Knowledge: Decision Tree MCQ -->
+                    <div class="quiz-card" style="margin-top: 20px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 6.3</div>
+                        <div class="quiz-question">Q6.3: In a multi-stage sequential decision tree, the probability of earning a positive cash flow of ₹ 50,000 in Year 1 is 40%. Given that Year 1 achieves ₹ 50,000, the conditional probability of securing a follow-on cash flow of ₹ 24,000 in Year 2 is 20%. What is the joint probability of this complete path?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q6-3-mcq')">(a) 20.00%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q6-3-mcq')">(b) 60.00%</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch3-q6-3-mcq')">(c) 8.00%</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q6-3-mcq')">(d) 40.00%</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch3-q6-3-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch3-q6-3-mcq">
+                            <span class="correct-tag" style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:2px 7px; border-radius:4px;">Correct Answer: (c) 8.00%</span><br>
+                            <strong>Calculation:</strong><br>
+                            $$\text{Joint Probability} = P(\text{Year 1} = 50\text{k}) \times P(\text{Year 2} = 24\text{k} \mid \text{Year 1} = 50\text{k})$$
+                            $$\text{Joint Probability} = 40\% \times 20\% = \mathbf{8.00\%}$$
                         </div>
                     </div>
                 </div>
@@ -1638,6 +2042,26 @@
                                     the EAC</strong>!</div>
                         </div>
                     </div>
+                    <!-- Test Your Knowledge: Topic 7 MCQ -->
+                    <div class="quiz-card" style="margin-top: 20px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 7</div>
+                        <div class="quiz-question">Q7.1: An enterprise evaluates two mutually exclusive repeatable projects with unequal lifespans. Project A generates an NPV of ₹ 20,000 over 3 years ($\text{PVAF}_{12\%, 3} = 2.402$). Project B generates an NPV of ₹ 25,000 over 5 years ($\text{PVAF}_{12\%, 5} = 3.605$). If the cost of capital is 12%, which project should management select?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch3-q7-1-mcq')">(a) Project A, because its Equated Annual Benefit ($\text{EAB} = ₹ 8,326$) exceeds that of Project B ($\text{EAB} = ₹ 6,935$)</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q7-1-mcq')">(b) Project B, because its total absolute NPV of ₹ 25,000 is higher than Project A's ₹ 20,000</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q7-1-mcq')">(c) Indifferent, as both projects yield positive absolute NPVs</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q7-1-mcq')">(d) Reject both projects due to duration mismatch</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch3-q7-1-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch3-q7-1-mcq">
+                            <span class="correct-tag" style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:2px 7px; border-radius:4px;">Correct Answer: (a)</span><br>
+                            <strong>Step-by-Step Solution:</strong><br>
+                            $$\text{Equated Annual Benefit (EAB)} = \frac{\text{NPV}}{\text{PVAF}(r, n)}$$
+                            $$\text{EAB}_A = \frac{20,000}{2.402} = \mathbf{₹ 8,326}$$
+                            $$\text{EAB}_B = \frac{25,000}{3.605} = \mathbf{₹ 6,935}$$
+                            Project A is superior because on an annual annualized basis under continuous replacement, it generates greater economic value ($₹ 8,326 > ₹ 6,935$).
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Section 6: Adjusted Present Value (APV) -->
@@ -1679,17 +2103,37 @@
                             added!
                         </div>
                     </div>
+                    <!-- Test Your Knowledge: Topic 8 MCQ -->
+                    <div class="quiz-card" style="margin-top: 20px;">
+                        <div class="quiz-badge">🎯 Test Your Knowledge • Topic 8</div>
+                        <div class="quiz-question">Q8.1: A company secures a concessional government loan of ₹ 10,00,000 at a subsidized rate of 4% per annum for 5 years (principal repaid in full at maturity). The company's normal market borrowing rate is 7% per annum. The corporate tax rate is 30% and $\text{PVAF}(7\%, 5) = 4.100$. Under the Adjusted Present Value (APV) approach, what is the Present Value of Debt Financing Benefits?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q8-1-mcq')">(a) ₹ 49,200</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q8-1-mcq')">(b) ₹ 1,23,000</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch3-q8-1-mcq')">(c) ₹ 1,72,200</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch3-q8-1-mcq')">(d) ₹ 2,10,000</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch3-q8-1-mcq')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="ch3-q8-1-mcq">
+                            <span class="correct-tag" style="background:#10b981; color:#fff; font-size:11px; font-weight:700; padding:2px 7px; border-radius:4px;">Correct Answer: (c) ₹ 1,72,200</span><br>
+                            <strong>Step-by-Step Solution:</strong><br>
+                            Under APV, debt financing benefits discounted at pre-tax cost of debt (7%):<br>
+                            1. Annual Interest Subsidy Savings $= 10,00,000 \times (7\% - 4\%) = ₹ 30,000 \implies \text{PV} = 30,000 \times 4.100 = ₹ 1,23,000$.<br>
+                            2. Annual Tax Shield on actual interest paid $= 10,00,000 \times 4\% \times 30\% = ₹ 12,000 \implies \text{PV} = 12,000 \times 4.100 = ₹ 49,200$.<br>
+                            $$\text{Total PV of Debt Financing Benefit} = 1,23,000 + 49,200 = \mathbf{₹ 1,72,200}$$
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Section 7: Solved ICAI Master Cases -->
+                <!-- Section 7: Solved Master Cases -->
                 <div class="section-card" id="solved-illustrations">
                     <h2 class="section-title">
-                        <span class="section-number">7</span> Solved ICAI Master Illustrations &amp; Problem
+                        <span class="section-number">7</span> Solved Master Illustrations &amp; Problem
                         Walkthroughs
                     </h2>
 
                     <!-- Illustration 9: Sensitivity Analysis -->
-                    <h3 class="sub-heading">Case 1: Sensitivity Analysis (ICAI Illustration 9 Walkthrough)</h3>
+                    <h3 class="sub-heading">Case 1: Sensitivity Analysis (Master Illustration 9 Walkthrough)</h3>
                     <div
                         style="background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: var(--radius-md); padding: 16px; margin: 12px 0; font-size: 13.5px; color: var(--slate-700);">
                         <strong>Given Data:</strong> Initial Capital Outlay = ₹400 Cr; Annual Sales = 5 Cr units;
@@ -1774,14 +2218,14 @@
                     <div class="callout callout-success">
                         <div class="callout-icon">🎯</div>
                         <div>
-                            <strong>ICAI Exam Conclusion:</strong> <strong>Selling Price per Unit</strong> is by far the
+                            <strong>Exam Analysis Conclusion:</strong> <strong>Selling Price per Unit</strong> is by far the
                             most sensitive variable, causing a 24.82% collapse in NPV for a mere 2.5% price cut! Fixed
                             costs are the least sensitive variable.
                         </div>
                     </div>
 
                     <!-- Illustration 13: Optimum Replacement Cycle -->
-                    <h3 class="sub-heading">Case 2: Optimum Replacement Cycle (ICAI Illustration 13 Walkthrough)</h3>
+                    <h3 class="sub-heading">Case 2: Optimum Replacement Cycle (Master Illustration 13 Walkthrough)</h3>
                     <div
                         style="background: var(--slate-50); border: 1px solid var(--slate-200); border-radius: var(--radius-md); padding: 16px; margin: 12px 0; font-size: 13.5px; color: var(--slate-700);">
                         <strong>Problem Statement:</strong> X Ltd. is a taxi operator. Initial cost of each taxi =
@@ -1908,7 +2352,7 @@
                         </table>
                     </div>
 
-                    <h3 class="sub-heading">Self-Test Practice Questions (ICAI TYK)</h3>
+                    <h3 class="sub-heading">Self-Test Practice Questions (TYK)</h3>
 
                     <div class="quiz-card">
                         <div class="quiz-question">Q1: Explain the Certainty Equivalent (CE) approach in capital
@@ -1984,16 +2428,78 @@
     <script src="../../assets/template.js"></script>
 
     <script>
+        function checkOption(optEl, isCorrect, ansId) {
+            const parent = optEl.closest('.mcq-options-grid');
+            if (!parent) return;
+            const allOptions = parent.querySelectorAll('.mcq-option-item');
+            allOptions.forEach(opt => {
+                opt.classList.remove('selected-correct', 'selected-wrong');
+            });
+            if (isCorrect) {
+                optEl.classList.add('selected-correct');
+            } else {
+                optEl.classList.add('selected-wrong');
+                allOptions.forEach(opt => {
+                    if (opt.getAttribute('data-correct') === 'true') {
+                        opt.classList.add('selected-correct');
+                    }
+                });
+            }
+            const ansEl = document.getElementById(ansId);
+            if (ansEl) {
+                ansEl.style.display = 'block';
+            }
+        }
+
         function toggleAnswer(id) {
             const ansEl = document.getElementById(id);
-            ansEl.style.display = (ansEl.style.display === 'block') ? 'none' : 'block';
+            if (!ansEl) return;
+            const isShowing = ansEl.style.display === 'block';
+            ansEl.style.display = isShowing ? 'none' : 'block';
+            if (!isShowing) {
+                const card = ansEl.closest('.quiz-card') || ansEl.closest('.topic-quiz-card');
+                if (card) {
+                    const correctOpt = card.querySelector('.mcq-option-item[data-correct="true"]');
+                    if (correctOpt) correctOpt.classList.add('selected-correct');
+                }
+            }
         }
 
         const sections = document.querySelectorAll('.section-card, #overview, #trends-inflation, #risk-uncertainty, #factors-risk, #statistical-methods, #conventional-methods, #sensitivity-analysis, #scenario-simulation, #decision-tree, #replacement-decisions, #apv-method, #solved-illustrations, #exam-summary');
         const sidebarLinks = document.querySelectorAll('.sidebar a');
         const contentEl = document.querySelector('.content');
+        const progressBar = document.getElementById('reading-progress');
+        function updateReadingProgressColor(progressBar, progress) {
+            var r, g, b;
+            if (progress <= 33) {
+                var t = progress / 33;
+                r = Math.round(239 + (234 - 239) * t);
+                g = Math.round(68 + (179 - 68) * t);
+                b = Math.round(68 + (8 - 68) * t);
+            } else if (progress <= 66) {
+                var t = (progress - 33) / 33;
+                r = Math.round(234 + (34 - 234) * t);
+                g = Math.round(179 + (197 - 179) * t);
+                b = Math.round(8 + (94 - 8) * t);
+            } else {
+                var t = (progress - 66) / 34;
+                r = Math.round(34 + (16 - 34) * t);
+                g = Math.round(197 + (185 - 197) * t);
+                b = Math.round(94 + (129 - 94) * t);
+            }
+            progressBar.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+            progressBar.style.boxShadow = '0 0 8px rgba(' + r + ',' + g + ',' + b + ', 0.45)';
+        }
+
+        if (progressBar) { updateReadingProgressColor(progressBar, 0); }
 
         contentEl.addEventListener('scroll', () => {
+            if (progressBar) {
+                const totalScroll = contentEl.scrollHeight - contentEl.clientHeight;
+                const progress = totalScroll > 0 ? (contentEl.scrollTop / totalScroll) * 100 : 0;
+                progressBar.style.width = progress + '%';
+                updateReadingProgressColor(progressBar, progress);
+            }
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - contentEl.offsetTop;
@@ -2013,3 +2519,5 @@
 </body>
 
 </html>
+
+

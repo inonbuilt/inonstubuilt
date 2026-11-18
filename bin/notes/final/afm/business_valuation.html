@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,9 +11,9 @@
     <meta name="title"
         content="Chapter 13: Business Valuation - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
     <meta name="description"
-        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 13: Business Valuation. 110% exhaustive CA Final AFM Chapter 13 Business Valuation notes. Master DCF, FCFF vs FCFE derivations, EVA, Chop-Shop multiples, and all 5 Illus + 18 TYK solutions.">
+        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 13: Business Valuation. Comprehensive CA Final AFM Chapter 13 Business Valuation notes. Master DCF, FCFF vs FCFE derivations, EVA, Chop-Shop multiples, and all 5 Illus + 18 TYK solutions.">
     <meta name="keywords"
-        content="Business Valuation CA Final AFM, FCFF formula, FCFE model, EVA Economic Value Added, Chop-shop valuation, MVA, Enterprise Value, Chapter 13, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+        content="Business Valuation CA Final AFM, FCFF formula, FCFE model, EVA Economic Value Added, Chop-shop valuation, MVA, Enterprise Value, Chapter 13, CA Final AFM Paper 2, New Syllabus AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
     <meta name="author" content="Calcium Notes">
     <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/business_valuation.html">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -26,7 +26,7 @@
     <meta property="og:title"
         content="Chapter 13: Business Valuation - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
     <meta property="og:description"
-        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 13: Business Valuation. 110% exhaustive CA Final AFM Chapter 13 Business Valuation notes. Master DCF, FCFF vs FCFE derivations, EVA, Chop-Shop multiples, and all 5 Illus + 18 TYK solutions.">
+        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 13: Business Valuation. Comprehensive CA Final AFM Chapter 13 Business Valuation notes. Master DCF, FCFF vs FCFE derivations, EVA, Chop-Shop multiples, and all 5 Illus + 18 TYK solutions.">
     <meta property="og:image" content="https://www.calciumnotes.com/og-image.png">
     <meta property="og:site_name" content="Calcium Notes">
     <meta property="og:locale" content="en_IN">
@@ -37,7 +37,7 @@
     <meta name="twitter:title"
         content="Chapter 13: Business Valuation - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
     <meta name="twitter:description"
-        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 13: Business Valuation. 110% exhaustive CA Final AFM Chapter 13 Business Valuation notes. Master DCF, FCFF vs FCFE derivations, EVA, Chop-Shop multiples, and all 5 Illus + 18 TYK solutions.">
+        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 13: Business Valuation. Comprehensive CA Final AFM Chapter 13 Business Valuation notes. Master DCF, FCFF vs FCFE derivations, EVA, Chop-Shop multiples, and all 5 Illus + 18 TYK solutions.">
     <meta name="twitter:image" content="https://www.calciumnotes.com/og-image.png">
 
     <!-- Schema.org Educational & FAQ Structured Data -->
@@ -46,9 +46,9 @@
     "@context": "https://schema.org",
     "@type": "LearningResource",
     "name": "CA Final AFM Chapter 13: Business Valuation (Quick Revision)",
-    "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 13: Business Valuation. 110% exhaustive CA Final AFM Chapter 13 Business Valuation notes. Master DCF, FCFF vs FCFE derivations, EVA, Chop-Shop multiples, and all 5 Illus + 18 TYK solutions.",
+    "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 13: Business Valuation. Comprehensive CA Final AFM Chapter 13 Business Valuation notes. Master DCF, FCFF vs FCFE derivations, EVA, Chop-Shop multiples, and all 5 Illus + 18 TYK solutions.",
     "learningResourceType": "Revision Cheat Sheet",
-    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "educationalLevel": "CA Final (New Syllabus)",
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "author": {
@@ -201,8 +201,8 @@
             color: var(--text-primary);
             line-height: 1.7;
             font-size: 15px;
-            display: flex;
-            min-height: 100vh;
+            
+            
         }
 
 
@@ -558,48 +558,249 @@
         .calc {
             font-family: var(--notes-table) !important;
         }
+            /* Interactive Topic Quiz Styles */
+        .topic-quiz-card {
+            background: var(--notes-card-bg, #ffffff);
+            border: 1px solid var(--notes-card-border, #e2e8f0);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 28px 0 16px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+        }
+        .topic-quiz-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 4px 10px;
+            border-radius: 20px;
+            background: rgba(13, 148, 136, 0.12);
+            color: #0d9488;
+            margin-bottom: 14px;
+        }
+        .topic-quiz-question {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--notes-text, #1e293b);
+            margin-bottom: 18px;
+            line-height: 1.5;
+        }
+        .mcq-options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .mcq-option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: 1px solid var(--notes-card-border, #e2e8f0);
+            background: var(--notes-card-bg, #f8fafc);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.95rem;
+            line-height: 1.45;
+            color: var(--notes-text, #334155);
+            user-select: none;
+        }
+        .mcq-option-item:hover {
+            border-color: #0d9488;
+            background: rgba(13, 148, 136, 0.04);
+        }
+        .mcq-option-item.selected-correct {
+            border-color: #10b981 !important;
+            background: rgba(16, 185, 129, 0.12) !important;
+            color: #065f46 !important;
+            font-weight: 600;
+        }
+        .mcq-option-item.selected-wrong {
+            border-color: #ef4444 !important;
+            background: rgba(239, 68, 68, 0.12) !important;
+            color: #991b1b !important;
+            font-weight: 600;
+        }
+        .quiz-btn-row {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .reveal-btn {
+            background: transparent;
+            border: 1px solid #0d9488;
+            color: #0d9488;
+            padding: 7px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .reveal-btn:hover {
+            background: #0d9488;
+            color: #ffffff;
+        }
+        .explanation-box {
+            display: none;
+            margin-top: 16px;
+            padding: 16px;
+            border-radius: 8px;
+            background: rgba(13, 148, 136, 0.06);
+            border-left: 4px solid #0d9488;
+            font-size: 0.92rem;
+            line-height: 1.55;
+            color: var(--notes-text, #1e293b);
+        }
+        [data-theme="dark"] .topic-quiz-card {
+            background: #1e293b;
+            border-color: #334155;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        }
+        [data-theme="dark"] .topic-quiz-question {
+            color: #f1f5f9;
+        }
+        [data-theme="dark"] .mcq-option-item {
+            border-color: #334155;
+            background: #0f172a;
+            color: #cbd5e1;
+        }
+        [data-theme="dark"] .mcq-option-item:hover {
+            border-color: #14b8a6;
+            background: rgba(20, 184, 166, 0.1);
+        }
+        [data-theme="dark"] .mcq-option-item.selected-correct {
+            border-color: #10b981 !important;
+            background: rgba(16, 185, 129, 0.2) !important;
+            color: #6ee7b7 !important;
+        }
+        [data-theme="dark"] .mcq-option-item.selected-wrong {
+            border-color: #ef4444 !important;
+            background: rgba(239, 68, 68, 0.2) !important;
+            color: #fca5a5 !important;
+        }
+        [data-theme="dark"] .explanation-box {
+            background: rgba(20, 184, 166, 0.08);
+            border-left-color: #14b8a6;
+            color: #e2e8f0;
+        }
+    
+        /* Universal Single-Scrollbar Fix */
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            padding-bottom: 0 !important;
+            height: 100% !important;
+            max-height: 100vh !important;
+            max-height: 100dvh !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            display: block !important;
+            box-sizing: border-box !important;
+        }
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        .topbar {
+            height: 64px !important;
+            width: 100% !important;
+            margin: 0 !important;
+            box-sizing: border-box !important;
+            flex-shrink: 0 !important;
+            position: relative !important;
+            z-index: 100;
+        }
+        .layout {
+            display: flex !important;
+            height: calc(100vh - 64px) !important;
+            height: calc(100dvh - 64px) !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            box-sizing: border-box !important;
+        }
+        .sidebar {
+            width: 290px;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            flex-shrink: 0 !important;
+            box-sizing: border-box !important;
+        }
+        .content {
+            flex: 1 1 auto !important;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            padding: 36px 48px !important;
+            box-sizing: border-box !important;
+            scroll-behavior: smooth;
+        }
+        .content-container {
+            max-width: 940px !important;
+            margin: 0 auto !important;
+            padding-bottom: 80px !important;
+            box-sizing: border-box !important;
+        }
     </style>
+    <!-- Modern Typography & Unified Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/unified_notes.css">
 </head>
 
 <body>
-    <nav class="sidebar">
-        <div class="sidebar-brand">
-            <span>AFM Quick Notes</span>
-            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">☀️/🌙</button>
+
+    <header class="topbar">
+        <div class="topbar-left">
+            <a href="../../notes/afmnotes.html" class="back-hub-btn">← AFM Hub</a>
+            <div class="chapter-title">Chapter 13: Business Valuation (⚡ Quick Revision)</div>
         </div>
-
-        <div class="nav-group-title">Quick Navigation</div>
-        <a href="#formula-bank" class="nav-link">1. Valuation Formula Bank</a>
-        <a href="#dcf-cheat" class="nav-link">2. FCFF vs FCFE Cheat Sheet</a>
-        <a href="#eva-mva" class="nav-link">3. EVA &amp; MVA Master Matrix</a>
-        <a href="#chop-shop" class="nav-link">4. Chop-Shop / Break-up Value</a>
-        <a href="#fair-value" class="nav-link">5. Dual Fair Value Rules</a>
-        <a href="#exam-traps" class="nav-link">6. ICAI Exam Traps &amp; Pitfalls</a>
-
-        <div class="nav-group-title">Hub Portals</div>
-        <a href="../../notes/afmnotes.html" class="nav-link">← Quick Notes Index</a>
-        <a href="../../notes/afmfullnotes.html" class="nav-link">← Full Notes Index</a>
-    </nav>
-
-    <main class="main-wrapper">
-        <header class="header-section">
-            <div class="breadcrumbs">
-                <a href="../../notes/afmnotes.html">CA Final AFM</a> &gt;
-                <span>Chapter 13 Quick Notes</span>
+        <div class="topbar-right">
+            <div class="progress-container" title="Reading Progress">
+                <div class="progress-bar" id="reading-progress"></div>
             </div>
-            <h1>Chapter 13: Business Valuation</h1>
-            <div class="chapter-meta">
-                <span class="chapter-pill">⚡ High-Yield Revision Guide</span>
-                <span>DCF Models • Multi-Stage Terminal Value • EVA / MVA Protocols</span>
-            </div>
-        </header>
-
-        <div class="mode-bar">
-            <a href="business_valuation_full.html" class="mode-btn">📖 Full Detailed Notes</a>
-            <a href="business_valuation.html" class="mode-btn active">⚡ Quick Revision Notes</a>
+            <button class="toggle-btn" id="sidebar-toggle" onclick="toggleSidebar()">☰ Contents</button>
         </div>
+    </header>
 
-        <!-- 1. Formula Bank -->
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-title">Chapter Contents</div>
+            <nav>
+                <ul>
+                    <li><a href="#formula-bank" class="active">1. Valuation Formula Bank</a></li>
+                    <li><a href="#dcf-cheat">2. FCFF vs FCFE Cheat Sheet</a></li>
+                    <li><a href="#eva-mva">3. EVA &amp; MVA Master Matrix</a></li>
+                    <li><a href="#chop-shop">4. Chop-Shop / Break-up Value</a></li>
+                    <li><a href="#fair-value">5. Dual Fair Value Rules</a></li>
+                    <li><a href="#exam-traps">6. Exam Traps &amp; Pitfalls</a></li>
+                    <li><a href="../../notes/afmnotes.html">â† Quick Notes Index</a></li>
+                    <li><a href="../../notes/afmfullnotes.html">â† Full Notes Index</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="content-container">
+
+                <div class="chapter-header">
+                    <div class="chapter-badge">CA Final AFM • Paper 2</div>
+                    <h1>Chapter 13: Business Valuation</h1>
+                    <p>Comprehensive business valuation cheat sheet covering Discounted Cash Flow (DCF), Free Cash Flow to Firm (FCFF) vs Free Cash Flow to Equity (FCFE), Economic Value Added (EVA), Market Multiples, and Chop-Shop sum-of-the-parts.</p>
+                    <div class="chapter-meta">
+                        <span>📚 Standard Curriculum Study Material</span><span>⏱️ Read Time: ~50 mins</span><span>🎯 Exam Weightage: 15 – 25 Marks</span>
+                    </div>
+                </div>
+<!-- 1. Formula Bank -->
         <section class="quick-card" id="formula-bank">
             <h2>1. Valuation Master Formula Bank</h2>
 
@@ -640,7 +841,66 @@
                 $$\text{Fair Value per share} = \frac{\text{Net Asset Value (NAV) per share} + \text{PECV per
                 share}}{2}$$
             </div>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 1 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 1.1</div>
+                <div class="topic-quiz-question">In discounted cash flow valuation, which equation correctly expresses Free Cash Flow to Firm (FCFF) starting from Free Cash Flow to Equity (FCFE)?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'bv-q1-ans')">
+                        <strong>A.</strong>&nbsp;FCFF = FCFE + Interest(1 - t) - Net New Debt Issued + Debt Principal Repayments
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q1-ans')">
+                        <strong>B.</strong>&nbsp;FCFF = FCFE - Interest(1 - t) + Net Borrowing
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q1-ans')">
+                        <strong>C.</strong>&nbsp;FCFF = FCFE × (1 - t)
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q1-ans')">
+                        <strong>D.</strong>&nbsp;FCFF = FCFE + Depreciation - Capex
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('bv-q1-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="bv-q1-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    $\text{FCFE} = \text{FCFF} - \text{Interest}(1 - t) + \text{Net New Debt Raised}$
+                    Rearranging for FCFF:<br>
+                    $\text{FCFF} = \text{FCFE} + \text{Interest}(1 - t) - \text{Net Debt Raised}$
+                    $\text{FCFF} = \text{FCFE} + \text{Interest}(1 - t) - \text{New Debt Issued} + \text{Debt Repaid}$
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 1.2</div>
+                <div class="topic-quiz-question">A company has an Enterprise Value (EV) of INR 1,200 crores calculated via DCF. The balance sheet shows total interest-bearing debt of INR 350 crores, cash and marketable securities of INR 80 crores, and non-controlling interest of INR 30 crores. What is the value of common equity?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'bv-q2-ans')">
+                        <strong>A.</strong>&nbsp;INR 900 crores
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q2-ans')">
+                        <strong>B.</strong>&nbsp;INR 930 crores
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q2-ans')">
+                        <strong>C.</strong>&nbsp;INR 850 crores
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q2-ans')">
+                        <strong>D.</strong>&nbsp;INR 1,550 crores
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('bv-q2-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="bv-q2-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    $\text{Equity Value} = \text{Enterprise Value} - \text{Total Debt} + \text{Cash} - \text{Non-Controlling Interest}$
+                    $\text{Equity Value} = 1,200 - 350 + 80 - 30 = \text{INR } 900\text{ crores}$
+                </div>
+            </div>
+</section>
 
         <!-- 2. FCFF vs FCFE -->
         <section class="quick-card" id="dcf-cheat">
@@ -681,7 +941,91 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 2 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 2.1</div>
+                <div class="topic-quiz-question">Net Block of fixed assets increased from INR 800 crores at the beginning of the year to INR 950 crores at year-end. Depreciation charged during the year was INR 120 crores. What was the Gross Capital Expenditure incurred during the year?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'bv-q3-ans')">
+                        <strong>A.</strong>&nbsp;INR 270 crores
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q3-ans')">
+                        <strong>B.</strong>&nbsp;INR 150 crores
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q3-ans')">
+                        <strong>C.</strong>&nbsp;INR 30 crores
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q3-ans')">
+                        <strong>D.</strong>&nbsp;INR 120 crores
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('bv-q3-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="bv-q3-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    $\text{Gross Capex} = (\text{Closing Net Block} - \text{Opening Net Block}) + \text{Depreciation}$
+                    $\text{Gross Capex} = (950 - 800) + 120 = 150 + 120 = \text{INR } 270\text{ crores}$
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 2.2</div>
+                <div class="topic-quiz-question">A company projects FCFF for Year 5 to be INR 100 crores. From Year 6 onward, FCFF is expected to grow perpetually at a stable rate of 4% p.a. The firm's WACC is 12% p.a. What is the Terminal Value of the firm at the end of Year 5?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'bv-q4-ans')">
+                        <strong>A.</strong>&nbsp;INR 1,300 crores
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q4-ans')">
+                        <strong>B.</strong>&nbsp;INR 1,250 crores
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q4-ans')">
+                        <strong>C.</strong>&nbsp;INR 833 crores
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q4-ans')">
+                        <strong>D.</strong>&nbsp;INR 1,040 crores
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('bv-q4-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="bv-q4-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    $\text{Terminal Value}_5 = \frac{\text{FCFF}_6}{\text{WACC} - g} = \frac{\text{FCFF}_5 \times (1 + g)}{\text{WACC} - g} = \frac{100 \times 1.04}{0.12 - 0.04} = \frac{104}{0.08} = \text{INR } 1,300\text{ crores}$
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 2.3</div>
+                <div class="topic-quiz-question">An equity research report discounts Free Cash Flow to Equity (FCFE) using the firm's Weighted Average Cost of Capital (WACC). What is the primary conceptual flaw in this valuation approach?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'bv-q5-ans')">
+                        <strong>A.</strong>&nbsp;Mismatch of cash flow and discount rate: FCFE is a post-debt cash flow belonging solely to equity holders and must be discounted at Cost of Equity (Ke), not WACC
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q5-ans')">
+                        <strong>B.</strong>&nbsp;FCFE must always be discounted at the risk-free rate
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q5-ans')">
+                        <strong>C.</strong>&nbsp;There is no error; FCFE and FCFF can both be discounted at WACC
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q5-ans')">
+                        <strong>D.</strong>&nbsp;WACC must be adjusted for flotation costs before discounting FCFE
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('bv-q5-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="bv-q5-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    • FCFF represents cash flows available to all capital providers and is discounted at WACC.<br>
+                    • FCFE represents residual cash flows available solely to equity shareholders after all debt obligations and must be discounted at the Cost of Equity ($K_e$). Discounting FCFE at WACC understates the discount rate and artificially inflates valuation.
+                </div>
+            </div>
+</section>
 
         <!-- 3. EVA & MVA -->
         <section class="quick-card" id="eva-mva">
@@ -717,7 +1061,92 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 3 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 3.1</div>
+                <div class="topic-quiz-question">A company reports EBIT of INR 25,00,000, corporate tax rate of 40%, Capital Employed of INR 50,00,000, and WACC of 12% p.a. What is the Economic Value Added (EVA)?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'bv-q6-ans')">
+                        <strong>A.</strong>&nbsp;INR 9,00,000
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q6-ans')">
+                        <strong>B.</strong>&nbsp;INR 19,00,000
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q6-ans')">
+                        <strong>C.</strong>&nbsp;INR 11,40,000
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q6-ans')">
+                        <strong>D.</strong>&nbsp;INR 6,00,000
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('bv-q6-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="bv-q6-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    $\text{NOPAT} = \text{EBIT} \times (1 - t) = 25,00,000 \times (1 - 0.40) = \text{INR } 15,00,000$
+                    $\text{Capital Charge} = \text{Capital Employed} \times \text{WACC} = 50,00,000 \times 12\% = \text{INR } 6,00,000$
+                    $\text{EVA} = 15,00,000 - 6,00,000 = \text{INR } 9,00,000$
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 3.2</div>
+                <div class="topic-quiz-question">The historical book value of a firm's operating assets is INR 2,000 lakhs, while their current economic replacement cost is INR 6,000 lakhs. For computing true Economic Value Added (EVA), which asset base should be used for Capital Employed?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'bv-q7-ans')">
+                        <strong>A.</strong>&nbsp;INR 6,000 lakhs (Replacement cost / economic value)
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q7-ans')">
+                        <strong>B.</strong>&nbsp;INR 2,000 lakhs (Historical book value)
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q7-ans')">
+                        <strong>C.</strong>&nbsp;INR 4,000 lakhs (Average value)
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q7-ans')">
+                        <strong>D.</strong>&nbsp;Zero (Operating assets are omitted)
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('bv-q7-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="bv-q7-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    Economic Value Added evaluates returns earned on the true economic value of capital committed. Therefore, capital employed must be calculated on the replacement cost basis (INR 6,000 lakhs) to reflect the opportunity cost of resources.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 3.3</div>
+                <div class="topic-quiz-question">What is the theoretical relationship between Market Value Added (MVA) and Economic Value Added (EVA)?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'bv-q8-ans')">
+                        <strong>A.</strong>&nbsp;MVA equals the present value of all future expected EVAs of the firm discounted at WACC
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q8-ans')">
+                        <strong>B.</strong>&nbsp;MVA is the annual change in EVA divided by the corporate tax rate
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q8-ans')">
+                        <strong>C.</strong>&nbsp;MVA equals current year EVA multiplied by the price-to-earnings ratio
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q8-ans')">
+                        <strong>D.</strong>&nbsp;MVA always equals total historical retained earnings
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('bv-q8-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="bv-q8-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    $\text{MVA} = \text{Total Market Value of Capital} - \text{Capital Employed} = \sum_{t=1}^{\infty} \frac{\text{EVA}_t}{(1 + \text{WACC})^t}$
+                    MVA measures the cumulative shareholder wealth created by management above the capital entrusted to the enterprise.
+                </div>
+            </div>
+</section>
 
         <!-- 4. Chop-Shop -->
         <section class="quick-card" id="chop-shop">
@@ -733,7 +1162,65 @@
                     Compare with current aggregate market price. If $\text{Chop-Shop Value} > \text{Market Price}$,
                     conglomerate discount exists.</li>
             </ol>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 4 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 4.1</div>
+                <div class="topic-quiz-question">A multi-industry conglomerate has two business segments: Consumer Goods (Sales = INR 600 cr, industry P/Sales multiple = 1.50x) and Industrial Machinery (Assets = INR 400 cr, industry EV/Assets multiple = 1.20x). If the conglomerate has debt of INR 250 cr and cash of INR 50 cr, what is its estimated equity value under the Chop-Shop approach?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'bv-q9-ans')">
+                        <strong>A.</strong>&nbsp;INR 1,180 crores
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q9-ans')">
+                        <strong>B.</strong>&nbsp;INR 1,380 crores
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q9-ans')">
+                        <strong>C.</strong>&nbsp;INR 1,430 crores
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q9-ans')">
+                        <strong>D.</strong>&nbsp;INR 930 crores
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('bv-q9-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="bv-q9-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    1. Value of Consumer Goods: $600 \times 1.50 = \text{INR } 900\text{ cr}$.<br>
+                    2. Value of Industrial Machinery: $400 \times 1.20 = \text{INR } 480\text{ cr}$.<br>
+                    3. Total Enterprise Value $= 900 + 480 = \text{INR } 1,380\text{ cr}$.<br>
+                    4. Equity Value $= 1,380 - \text{Debt (250)} + \text{Cash (50)} = \text{INR } 1,180\text{ cr}$.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 4.2</div>
+                <div class="topic-quiz-question">If the actual market capitalization of a diversified conglomerate is INR 2,000 crores, but its sum-of-the-parts (Chop-Shop) theoretical break-up value is INR 2,400 crores, the conglomerate is trading at a:</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'bv-q10-ans')">
+                        <strong>A.</strong>&nbsp;Conglomerate Discount of 16.67%
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q10-ans')">
+                        <strong>B.</strong>&nbsp;Conglomerate Premium of 20.00%
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q10-ans')">
+                        <strong>C.</strong>&nbsp;Conglomerate Discount of 20.00%
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q10-ans')">
+                        <strong>D.</strong>&nbsp;Net Asset Premium of 16.67%
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('bv-q10-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="bv-q10-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    $\text{Conglomerate Discount} = \frac{\text{Break-up Value} - \text{Market Value}}{\text{Break-up Value}} = \frac{2,400 - 2,000}{2,400} = \frac{400}{2,400} = 16.67\%$
+                </div>
+            </div>
+</section>
 
         <!-- 5. Fair Value -->
         <section class="quick-card" id="fair-value">
@@ -763,47 +1250,294 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 5 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 5.1</div>
+                <div class="topic-quiz-question">The Net Asset Value (NAV) per share of an enterprise is INR 140, and the Profit Earning Capacity Value (PECV) per share is INR 180. Under the classic Dual Pricing (Fair Value) approach, what is the fair value per share?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'bv-q11-ans')">
+                        <strong>A.</strong>&nbsp;INR 160
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q11-ans')">
+                        <strong>B.</strong>&nbsp;INR 140
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q11-ans')">
+                        <strong>C.</strong>&nbsp;INR 180
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q11-ans')">
+                        <strong>D.</strong>&nbsp;INR 320
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('bv-q11-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="bv-q11-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    $\text{Fair Value per Share} = \frac{\text{NAV per share} + \text{PECV per share}}{2} = \frac{140 + 180}{2} = \text{INR } 160$
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 5.2</div>
+                <div class="topic-quiz-question">A company reports pre-tax profits of INR 80 lakhs for the latest financial year. This includes an extraordinary non-operating gain of INR 15 lakhs on real estate disposal, and omits future recurring annual insurance premiums of INR 5 lakhs on newly added facilities. What is the normalized Future Maintainable Profit (FMP) before tax?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'bv-q12-ans')">
+                        <strong>A.</strong>&nbsp;INR 60 lakhs
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q12-ans')">
+                        <strong>B.</strong>&nbsp;INR 70 lakhs
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q12-ans')">
+                        <strong>C.</strong>&nbsp;INR 90 lakhs
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q12-ans')">
+                        <strong>D.</strong>&nbsp;INR 65 lakhs
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('bv-q12-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="bv-q12-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    $\text{Normalized FMP} = \text{Reported Profit } (80) - \text{Non-recurring Gain } (15) - \text{Future Recurring Cost } (5) = \text{INR } 60\text{ lakhs}$
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 5.3</div>
+                <div class="topic-quiz-question">A closely held company has normalized Future Maintainable Profit After Tax of INR 120 lakhs. The normal capitalization rate for similar businesses is 15% p.a. With 1,00,000 equity shares in issue, what is the capitalized earning value per share?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'bv-q13-ans')">
+                        <strong>A.</strong>&nbsp;INR 800
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q13-ans')">
+                        <strong>B.</strong>&nbsp;INR 180
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q13-ans')">
+                        <strong>C.</strong>&nbsp;INR 80
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q13-ans')">
+                        <strong>D.</strong>&nbsp;INR 1,200
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('bv-q13-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="bv-q13-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    $\text{Capitalized Value of Equity} = \frac{\text{FMP}}{\text{Capitalization Rate}} = \frac{120,00,000}{0.15} = \text{INR } 8,00,00,000$
+                    $\text{Value per share} = \frac{8,00,00,000}{1,00,000} = \text{INR } 800$
+                </div>
+            </div>
+</section>
 
         <!-- 6. Exam Traps -->
         <section class="quick-card" id="exam-traps">
-            <h2>6. ICAI Exam Traps &amp; Pitfalls</h2>
+            <h2>6. Exam Traps &amp; Pitfalls</h2>
             <div class="exam-trap">
-                <strong>⚠️ Pitfall 1: Stable Phase Reinvestment Assumption</strong><br>
+                <strong>âš ï¸ Pitfall 1: Stable Phase Reinvestment Assumption</strong><br>
                 In 2-stage DCF problems (like TYK PR-7 &amp; PR-8), notice that during stable growth, <strong>Capital
                     Expenditure equals Depreciation</strong> (Net capex = 0). Do not subtract the high-growth capex
                 percentage in the terminal year!
             </div>
             <div class="exam-trap">
-                <strong>⚠️ Pitfall 2: Discounting the Terminal Value</strong><br>
+                <strong>âš ï¸ Pitfall 2: Discounting the Terminal Value</strong><br>
                 Remember that $TV_n = \frac{\text{FCFF}_{n+1}}{\text{WACC} - g}$ gives the value <strong>at Year
                     $n$</strong>. You must multiply $TV_n$ by $\text{PVIF}_{\text{WACC}, n}$ to bring it back to Year 0.
             </div>
             <div class="exam-trap">
-                <strong>⚠️ Pitfall 3: NOPAT Tax Rate on Interest</strong><br>
+                <strong>âš ï¸ Pitfall 3: NOPAT Tax Rate on Interest</strong><br>
                 $\text{NOPAT} = \text{EBIT}(1 - T)$. If starting from PAT, add back <strong>post-tax interest</strong>:
                 $\text{PAT} + \text{Interest}(1 - T)$, NOT pre-tax interest!
             </div>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 6 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 6.1</div>
+                <div class="topic-quiz-question">Why are traditional DCF valuation techniques largely inappropriate for valuing early-stage pre-revenue startup companies?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'bv-q14-ans')">
+                        <strong>A.</strong>&nbsp;Startups report current losses/cash burn, lack historical operating performance, face high mortality rates, and hold primarily intangible assets
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q14-ans')">
+                        <strong>B.</strong>&nbsp;Startups are legally barred from preparing financial projection models
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q14-ans')">
+                        <strong>C.</strong>&nbsp;Discount rates cannot be computed for any firm less than 5 years old
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q14-ans')">
+                        <strong>D.</strong>&nbsp;Startup balance sheets are mandated to be evaluated strictly at book value
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('bv-q14-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="bv-q14-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    Early-stage startups do not possess steady-state cash flows, historical baselines, or predictable margins. DCF models are heavily dependent on terminal value assumptions that become speculative. Instead, venture capital methods, milestone traction metrics, and relative scorecards are utilized.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 6.2</div>
+                <div class="topic-quiz-question">When valuing a financially distressed entity facing imminent liquidation, which valuation methodology establishes the true economic floor price?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'bv-q15-ans')">
+                        <strong>A.</strong>&nbsp;Liquidation (Net Realizable Break-Up) Value
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q15-ans')">
+                        <strong>B.</strong>&nbsp;Going-concern DCF Model
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q15-ans')">
+                        <strong>C.</strong>&nbsp;Historical Book Value of Equity
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'bv-q15-ans')">
+                        <strong>D.</strong>&nbsp;Capitalization of Past Earnings
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('bv-q15-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="bv-q15-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    When an entity is no longer a going concern, cash flow capitalization methods lose validity because ongoing operations generate negative returns. The true floor value is the Net Realizable Liquidation Value realized from disposing of individual assets and discharging liabilities.
+                </div>
+            </div>
+</section>
 
         <footer class="footer-nav">
-            <a href="interest_rate_risk.html" class="footer-btn">← Ch 12 Quick Notes</a>
-            <a href="mergers_acquisitions.html" class="footer-btn">Ch 14 Quick Notes →</a>
+            <a href="interest_rate_risk.html" class="footer-btn">â† Ch 12 Quick Notes</a>
+            <a href="mergers_acquisitions.html" class="footer-btn">Ch 14 Quick Notes â†’</a>
         </footer>
-    </main>
+            </div>
+        </main>
+    </div>
 
+    <!-- Unified Chapter Navigation & Interactive Scripts -->
     <script>
-        function toggleTheme() {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', targetTheme);
-            localStorage.setItem('afm-theme', targetTheme);
+        function checkOption(el, isCorrect, ansId) {
+            var parent = el.closest('.mcq-container') || el.closest('.quiz-card') || el.closest('.problem-card');
+            if (!parent) return;
+            var allOptions = parent.querySelectorAll('.mcq-option-item');
+            allOptions.forEach(function(opt) {
+                opt.style.pointerEvents = 'none';
+                if (opt.getAttribute('data-correct') === 'true') {
+                    opt.classList.add('reveal-correct');
+                }
+            });
+            var fb = parent.querySelector('.mcq-feedback');
+            if (isCorrect) {
+                el.classList.add('selected-correct');
+                if (fb) {
+                    fb.innerHTML = '✓ Correct! Outstanding work.';
+                    fb.className = 'mcq-feedback correct';
+                }
+            } else {
+                el.classList.add('selected-incorrect');
+                if (fb) {
+                    fb.innerHTML = '✗ Incorrect. Review the detailed solution below.';
+                    fb.className = 'mcq-feedback incorrect';
+                }
+            }
+            var ans = document.getElementById(ansId);
+            if (ans) {
+                ans.style.display = 'block';
+            }
         }
-        (function () {
-            const savedTheme = localStorage.getItem('afm-theme') || 'light';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-        })();
+
+        function toggleAnswer(ansId) {
+            var ans = document.getElementById(ansId);
+            if (!ans) return;
+            var isHidden = (ans.style.display === 'none' || ans.style.display === '');
+            ans.style.display = isHidden ? 'block' : 'none';
+            if (isHidden) {
+                var parent = ans.closest('.mcq-container') || ans.closest('.quiz-card') || ans.closest('.problem-card');
+                if (parent) {
+                    var allOptions = parent.querySelectorAll('.mcq-option-item');
+                    allOptions.forEach(function(opt) {
+                        if (opt.getAttribute('data-correct') === 'true') {
+                            opt.classList.add('reveal-correct');
+                        }
+                    });
+                }
+            }
+        }
+
+        function toggleSidebar() {
+            var sb = document.getElementById('sidebar');
+            if (!sb) return;
+            if (window.innerWidth <= 900) {
+                sb.classList.toggle('mobile-open');
+            } else {
+                sb.classList.toggle('hidden');
+            }
+        }
+
+        // Reading progress tracking & sidebar link highlighting
+        var contentEl = document.querySelector('.content');
+        var progressBar = document.getElementById('reading-progress');
+        var sections = document.querySelectorAll('.section-card, section[id], .theory-topic, .problem-card');
+        var sidebarLinks = document.querySelectorAll('.sidebar a');
+
+        function updateReadingProgressColor(progressBar, progress) {
+            var r, g, b;
+            if (progress <= 33) {
+                var t = progress / 33;
+                r = Math.round(239 + (234 - 239) * t);
+                g = Math.round(68 + (179 - 68) * t);
+                b = Math.round(68 + (8 - 68) * t);
+            } else if (progress <= 66) {
+                var t = (progress - 33) / 33;
+                r = Math.round(234 + (34 - 234) * t);
+                g = Math.round(179 + (197 - 179) * t);
+                b = Math.round(8 + (94 - 8) * t);
+            } else {
+                var t = (progress - 66) / 34;
+                r = Math.round(34 + (16 - 34) * t);
+                g = Math.round(197 + (185 - 197) * t);
+                b = Math.round(94 + (129 - 94) * t);
+            }
+            progressBar.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+            progressBar.style.boxShadow = '0 0 8px rgba(' + r + ',' + g + ',' + b + ', 0.45)';
+        }
+
+        if (progressBar) { updateReadingProgressColor(progressBar, 0); }
+
+        if (contentEl && progressBar) {
+            contentEl.addEventListener('scroll', function() {
+                var totalScroll = contentEl.scrollHeight - contentEl.clientHeight;
+                if (totalScroll > 0) {
+                    var currentScroll = contentEl.scrollTop;
+                    var progress = (currentScroll / totalScroll) * 100;
+                    progressBar.style.width = progress + '%';
+                    updateReadingProgressColor(progressBar, progress);
+                }
+
+                var current = '';
+                sections.forEach(function(section) {
+                    var sectionTop = section.offsetTop - contentEl.offsetTop;
+                    if (contentEl.scrollTop >= sectionTop - 140) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                if (current) {
+                    sidebarLinks.forEach(function(link) {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + current) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
     </script>
 </body>
-
 </html>
+

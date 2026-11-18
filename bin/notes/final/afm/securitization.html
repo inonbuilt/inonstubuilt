@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,9 +11,9 @@
     <meta name="title"
         content="Chapter 7: Securitization - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
     <meta name="description"
-        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 7: Securitization. Complete CA Final AFM Chapter 7 Securitization revision notes. Covers SPV structures, cash flow waterfall, credit enhancements, and all ICAI Study Material questions.">
+        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 7: Securitization. Complete CA Final AFM Chapter 7 Securitization revision notes. Covers SPV structures, cash flow waterfall, credit enhancements, and all Standard Curriculum questions.">
     <meta name="keywords"
-        content="Securitization CA Final AFM, SPV Special Purpose Vehicle, Tranching Senior Subordinated, Pass through certificates, Credit enhancement, Chapter 7, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+        content="Securitization CA Final AFM, SPV Special Purpose Vehicle, Tranching Senior Subordinated, Pass through certificates, Credit enhancement, Chapter 7, CA Final AFM Paper 2, Standard Curriculum AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
     <meta name="author" content="Calcium Notes">
     <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/securitization.html">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -26,7 +26,7 @@
     <meta property="og:title"
         content="Chapter 7: Securitization - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
     <meta property="og:description"
-        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 7: Securitization. Complete CA Final AFM Chapter 7 Securitization revision notes. Covers SPV structures, cash flow waterfall, credit enhancements, and all ICAI Study Material questions.">
+        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 7: Securitization. Complete CA Final AFM Chapter 7 Securitization revision notes. Covers SPV structures, cash flow waterfall, credit enhancements, and all Standard Curriculum questions.">
     <meta property="og:image" content="https://www.calciumnotes.com/og-image.png">
     <meta property="og:site_name" content="Calcium Notes">
     <meta property="og:locale" content="en_IN">
@@ -37,7 +37,7 @@
     <meta name="twitter:title"
         content="Chapter 7: Securitization - Quick Revision Notes & Formulas Cheat Sheet | CA Final AFM | Calcium Notes">
     <meta name="twitter:description"
-        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 7: Securitization. Complete CA Final AFM Chapter 7 Securitization revision notes. Covers SPV structures, cash flow waterfall, credit enhancements, and all ICAI Study Material questions.">
+        content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 7: Securitization. Complete CA Final AFM Chapter 7 Securitization revision notes. Covers SPV structures, cash flow waterfall, credit enhancements, and all Standard Curriculum questions.">
     <meta name="twitter:image" content="https://www.calciumnotes.com/og-image.png">
 
     <!-- Schema.org Educational & FAQ Structured Data -->
@@ -46,9 +46,9 @@
     "@context": "https://schema.org",
     "@type": "LearningResource",
     "name": "CA Final AFM Chapter 7: Securitization (Quick Revision)",
-    "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 7: Securitization. Complete CA Final AFM Chapter 7 Securitization revision notes. Covers SPV structures, cash flow waterfall, credit enhancements, and all ICAI Study Material questions.",
+    "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 7: Securitization. Complete CA Final AFM Chapter 7 Securitization revision notes. Covers SPV structures, cash flow waterfall, credit enhancements, and all Standard Curriculum questions.",
     "learningResourceType": "Revision Cheat Sheet",
-    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "educationalLevel": "CA Final (Standard Curriculum)",
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "author": {
@@ -282,9 +282,10 @@
         .progress-bar {
             height: 100%;
             width: 0%;
-            background: var(--primary);
+            background-color: rgb(239, 68, 68);
+            box-shadow: 0 0 8px rgba(239, 68, 68, 0.45);
             border-radius: 999px;
-            transition: width 0.15s ease;
+            transition: width 0.1s ease, background-color 0.15s ease, box-shadow 0.15s ease;
         }
 
         .toggle-btn {
@@ -746,6 +747,227 @@
         .calc {
             font-family: var(--notes-table) !important;
         }
+        /* Interactive MCQ Additions */
+        .quiz-card {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: 10px;
+            padding: 18px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+            transition: all 0.2s ease;
+        }
+
+        .quiz-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .quiz-badge {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            background: #eff6ff;
+            color: #2563eb;
+            border: 1px solid #bfdbfe;
+        }
+
+        .quiz-question {
+            font-size: 0.96rem;
+            font-weight: 600;
+            color: var(--slate-800);
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .mcq-options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+            margin: 12px 0 14px 0;
+        }
+
+        .mcq-option-item {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 0.88rem;
+            color: var(--slate-800);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .mcq-option-item:hover {
+            background: #f0fdf4;
+            border-color: #22c55e;
+            transform: translateX(3px);
+        }
+
+        .mcq-option-item.selected-correct {
+            background: #dcfce7 !important;
+            border-color: #22c55e !important;
+            color: #166534 !important;
+            font-weight: 600;
+        }
+
+        .mcq-option-item.selected-correct::after {
+            content: " ✓ Correct";
+            float: right;
+            font-weight: 700;
+            color: #16a34a;
+        }
+
+        .mcq-option-item.selected-wrong {
+            background: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #991b1b !important;
+            font-weight: 600;
+        }
+
+        .mcq-option-item.selected-wrong::after {
+            content: " ✗ Incorrect";
+            float: right;
+            font-weight: 700;
+            color: #dc2626;
+        }
+
+        .reveal-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 7px 15px;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .reveal-btn:hover {
+            background: var(--primary-dark);
+        }
+
+        .quiz-answer {
+            display: none;
+            margin-top: 12px;
+            padding: 12px 14px;
+            background: #f8fafc;
+            border-left: 3px solid #22c55e;
+            border-radius: 0 6px 6px 0;
+            font-size: 0.85rem;
+            line-height: 1.55;
+            color: var(--slate-700);
+        }
+
+        /* Dark Theme Support */
+        body.dark-theme .quiz-card,
+        [data-theme='dark'] .quiz-card {
+            background: #1e293b;
+            border-color: #334155;
+        }
+
+        body.dark-theme .quiz-question,
+        [data-theme='dark'] .quiz-question {
+            color: #f1f5f9;
+        }
+
+        body.dark-theme .mcq-option-item,
+        [data-theme='dark'] .mcq-option-item {
+            background: #0f172a;
+            border-color: #334155;
+            color: #e2e8f0;
+        }
+
+        body.dark-theme .mcq-option-item:hover,
+        [data-theme='dark'] .mcq-option-item:hover {
+            background: #1e3a5f;
+            border-color: #38bdf8;
+        }
+
+        body.dark-theme .mcq-option-item.selected-correct,
+        [data-theme='dark'] .mcq-option-item.selected-correct {
+            background: #064e3b !important;
+            color: #a7f3d0 !important;
+            border-color: #10b981 !important;
+        }
+
+        body.dark-theme .mcq-option-item.selected-wrong,
+        [data-theme='dark'] .mcq-option-item.selected-wrong {
+            background: #7f1d1d !important;
+            color: #fecaca !important;
+            border-color: #ef4444 !important;
+        }
+
+        body.dark-theme .quiz-answer,
+        [data-theme='dark'] .quiz-answer {
+            background: #0f172a;
+            border-color: #10b981;
+            color: #cbd5e1;
+        }
+    
+        /* Universal Single-Scrollbar Fix */
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            padding-bottom: 0 !important;
+            height: 100% !important;
+            max-height: 100vh !important;
+            max-height: 100dvh !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            display: block !important;
+            box-sizing: border-box !important;
+        }
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        .topbar {
+            height: 64px !important;
+            width: 100% !important;
+            margin: 0 !important;
+            box-sizing: border-box !important;
+            flex-shrink: 0 !important;
+            position: relative !important;
+            z-index: 100;
+        }
+        .layout {
+            display: flex !important;
+            height: calc(100vh - 64px) !important;
+            height: calc(100dvh - 64px) !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            box-sizing: border-box !important;
+        }
+        .sidebar {
+            width: 290px;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            flex-shrink: 0 !important;
+            box-sizing: border-box !important;
+        }
+        .content {
+            flex: 1 1 auto !important;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            padding: 36px 48px !important;
+            box-sizing: border-box !important;
+            scroll-behavior: smooth;
+        }
+        .content-container {
+            max-width: 940px !important;
+            margin: 0 auto !important;
+            padding-bottom: 80px !important;
+            box-sizing: border-box !important;
+        }
     </style>
 </head>
 
@@ -796,7 +1018,7 @@
                         Prepayment Risk, Legal and Tax challenges in India, and the newly introduced Blockchain &amp;
                         Asset Tokenization framework.</p>
                     <div class="chapter-meta">
-                        <span>📚 ICAI New Scheme Study Material</span>
+                        <span>📚 Standard Curriculum Study Material</span>
                         <span>⏱️ Read Time: ~30 mins</span>
                         <span>🎯 Exam Weightage: 6 – 12 Marks</span>
                     </div>
@@ -835,6 +1057,21 @@
                         <li><strong>Geographical &amp; Demographic Diversification:</strong> Avoids regional
                             concentration risk.</li>
                     </ul>
+                                    <div class="quiz-card" style="margin-top: 24px;">
+                        <div class="quiz-badge">💡 Concept Practice Check</div>
+                        <div class="quiz-question"><strong>Question:</strong> What is the core financial objective and economic transformation achieved through the securitization of assets?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q1-ans')">A) Converting marketable sovereign debt into long-term illiquid loan obligations</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sec-q1-ans')">B) Pooling illiquid, non-negotiable financial assets (such as loans or receivables) and transforming them into marketable liquid debt securities on a non-recourse basis</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q1-ans')">C) Providing central bank guarantees on equity shares issued by NBFCs</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q1-ans')">D) Merging the financial statements and legal liabilities of borrowers directly with the lending institution</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sec-q1-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sec-q1-ans">
+                            <strong>Correct Answer: Option B</strong><br>
+                            <strong>Detailed Explanation:</strong> Securitization is the financial technique of pooling homogeneous, illiquid receivables or loans (mortgages, auto loans, credit card balances) and converting them into tradable capital market securities, typically on a non-recourse basis so that default risk is transferred to capital market investors.
+                        </div>
+                    </div>
                 </section>
 
                 <!-- 2. Benefits -->
@@ -874,6 +1111,21 @@
                                 • <strong>Regulatory Compliance:</strong> In India, banks purchase priority sector loan
                                 pools to fulfill mandatory Priority Sector Lending (PSL) sub-targets.
                             </p>
+                        </div>
+                    </div>
+                                    <div class="quiz-card" style="margin-top: 24px;">
+                        <div class="quiz-badge">💡 Concept Practice Check</div>
+                        <div class="quiz-question"><strong>Question:</strong> From the strategic perspective of the Originator, how does securitization help in optimizing balance sheet efficiency and capital management?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q2-ans')">A) By expanding risk-weighted assets to maximize gross financial leverage</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sec-q2-ans')">B) By converting illiquid loan books into immediate liquid cash (off-balance sheet treatment), thereby improving the Capital Adequacy Ratio (CAR) and recycling origination capacity</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q2-ans')">C) By retaining 100% of obligor default risk without any asset de-recognition</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q2-ans')">D) By converting fixed-rate loans into zero-coupon perpetual equity liabilities</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sec-q2-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sec-q2-ans">
+                            <strong>Correct Answer: Option B</strong><br>
+                            <strong>Detailed Explanation:</strong> Securitization on a "True Sale" basis allows an originator to de-recognize assets from its balance sheet under accounting standards, shrinking risk-weighted assets, boosting Return on Assets (ROA), reducing borrowing costs, and significantly improving regulatory Capital Adequacy Ratios (CAR/CRAR).
                         </div>
                     </div>
                 </section>
@@ -930,6 +1182,21 @@
                         <li><strong>Receiving &amp; Paying Agent (RPA):</strong> Collects pool funds from the servicer
                             and distributes interest and principal to investors per the waterfall priority.</li>
                     </ul>
+                                    <div class="quiz-card" style="margin-top: 24px;">
+                        <div class="quiz-badge">💡 Concept Practice Check</div>
+                        <div class="quiz-question"><strong>Question:</strong> What primary operational role is performed by the Receiving and Paying Agent (RPA), also designated as the Servicer, in a securitization structure?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q3-ans')">A) Acting as the bankruptcy-remote legal owner of the collateral pool</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q3-ans')">B) Underwriting and purchasing all unrated equity tranches of the securitization</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sec-q3-ans')">C) Administering the loan accounts, collecting periodic principal and interest dues from obligors, and remitting proceeds to the SPV</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q3-ans')">D) Formally auditing the annual personal income tax returns of secondary market investors</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sec-q3-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sec-q3-ans">
+                            <strong>Correct Answer: Option C</strong><br>
+                            <strong>Detailed Explanation:</strong> The Receiving and Paying Agent (RPA) or Servicer (often the originator or a professional servicing agency) manages debtor collections, tracks amortizations, pursues overdue accounts, and remits collections to the SPV for distribution according to the waterfall structure.
+                        </div>
+                    </div>
                 </section>
 
                 <!-- 4. Mechanism & True Sale -->
@@ -973,6 +1240,21 @@
                             3. <strong>Recourse Limitation:</strong> The transfer must be strictly non-recourse or with
                             strictly limited recourse (capped at predefined first-loss credit enhancements).
                         </p>
+                    </div>
+                                    <div class="quiz-card" style="margin-top: 24px;">
+                        <div class="quiz-badge">💡 Concept Practice Check</div>
+                        <div class="quiz-question"><strong>Question:</strong> What is the paramount legal significance of establishing a "True Sale" when assets are transferred from the Originator to the SPV?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q4-ans')">A) It ensures that the SPV is exempt from all state stamp duty obligations</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sec-q4-ans')">B) It establishes bankruptcy remoteness, ensuring that if the originator becomes insolvent or enters liquidation, the originator&#39;s creditors or liquidator have no legal claim over the securitized assets</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q4-ans')">C) It guarantees that underlying obligors will never default on their scheduled installment payments</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q4-ans')">D) It converts the SPV notes into sovereign-backed risk-free government securities</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sec-q4-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sec-q4-ans">
+                            <strong>Correct Answer: Option B</strong><br>
+                            <strong>Detailed Explanation:</strong> Under the "True Sale" doctrine, the transfer must constitute an absolute, irrevocable assignment of title without recourse. This ensures bankruptcy remoteness: in the event of the originator's financial collapse or liquidation, the liquidator cannot treat the pool as part of the originator's bankruptcy estate or halt debt service to securitization noteholders.
+                        </div>
                     </div>
                 </section>
 
@@ -1030,6 +1312,21 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                                    <div class="quiz-card" style="margin-top: 24px;">
+                        <div class="quiz-badge">💡 Concept Practice Check</div>
+                        <div class="quiz-question"><strong>Question:</strong> Which of the following fundamental structural distinctions differentiates Pay-Through Securities (PTS) from Pass-Through Certificates (PTCs)?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q5-ans')">A) PTCs represent debt liabilities of the SPV, whereas PTS represent direct undivided beneficial ownership</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sec-q5-ans')">B) In PTS, the SPV issues structured debt notes that permit multi-class tranching, desynchronization of servicing from underlying collections, and short-term reinvestment of surplus funds</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q5-ans')">C) PTCs allow active cash flow re-engineering by the SPV, whereas PTS strictly pass through all cash flows pro-rata without modification</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q5-ans')">D) PTS can only be issued against equity shares, while PTCs are issued against mortgage debt</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sec-q5-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sec-q5-ans">
+                            <strong>Correct Answer: Option B</strong><br>
+                            <strong>Detailed Explanation:</strong> PTCs are direct conduits where collections (principal, interest, prepayments) pass directly and pro-rata to certificate holders. In contrast, Pay-Through Securities (PTS) are debt securities issued by the SPV backed by the pool collateral. This structure allows cash flows to be tranched into senior, mezzanine, and junior classes, permits coupon payment dates to differ from collection dates (desynchronization), and authorizes the SPV to temporarily reinvest surplus funds.
+                        </div>
                     </div>
                 </section>
 
@@ -1105,6 +1402,21 @@
                             rise (negative duration!), portfolio managers deploy IO strips as synthetic hedges to
                             protect traditional fixed-rate bond portfolios against rising interest rates.</p>
                     </div>
+                                    <div class="quiz-card" style="margin-top: 24px;">
+                        <div class="quiz-badge">💡 Concept Practice Check</div>
+                        <div class="quiz-question"><strong>Question:</strong> In a pool of mortgage-backed stripped securities, how do Principal-Only (PO) and Interest-Only (IO) strips react when prevailing market interest rates decline substantially?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q6-ans')">A) Both PO and IO prices decline because fixed-income instruments contract in low-rate regimes</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q6-ans')">B) Both PO and IO prices double because loan defaults disappear entirely</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sec-q6-ans')">C) PO prices appreciate sharply (due to accelerated capital repayment), while IO prices decline heavily (because early principal repayment rapidly extinguishes the interest-earning balance)</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q6-ans')">D) IO prices surge while PO prices collapse due to extension risk</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sec-q6-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sec-q6-ans">
+                            <strong>Correct Answer: Option C</strong><br>
+                            <strong>Detailed Explanation:</strong> When market interest rates decline, mortgage borrowers refinance early, causing prepayments to surge. For Principal-Only (PO) strips, getting capital back much faster than expected dramatically increases the present value of the cash flows (bullish). For Interest-Only (IO) strips, early loan payoffs terminate the loan balances on which future interest is calculated, truncating future cash flows and causing severe capital losses (bearish).
+                        </div>
+                    </div>
                 </section>
 
                 <!-- 7. Pricing & Risks -->
@@ -1148,12 +1460,43 @@
                                 to collect loan recoveries effectively.</p>
                         </div>
                     </div>
+                                    <div class="quiz-card" style="margin-top: 24px;">
+                        <div class="quiz-badge">💡 Pricing Valuation Check</div>
+                        <div class="quiz-question"><strong>Question 1:</strong> From the perspective of an institutional investor, how is the market price of a securitized debt instrument determined?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q7-ans')">A) By calculating the historical accounting book value of the loans minus unamortized processing costs</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sec-q7-ans')">B) By discounting the best estimate of expected future cash flows using the Yield to Maturity (YTM) of comparable securities with similar credit ratings and Weighted Average Life (WAL)</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q7-ans')">C) By applying the originator&#39;s weighted average cost of capital (WACC) to the par value</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q7-ans')">D) By dividing the gross annual interest by the statutory bank repo rate</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sec-q7-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sec-q7-ans">
+                            <strong>Correct Answer: Option B</strong><br>
+                            <strong>Detailed Explanation:</strong> Investors evaluate securitized instruments via Discounted Cash Flow (DCF) techniques: projecting cash flows (incorporating expected prepayment and default vectors) and discounting them at a market-determined yield reflecting comparable securities with equivalent credit quality and Weighted Average Life (WAL).
+                        </div>
+                    </div>
+
+                    <div class="quiz-card">
+                        <div class="quiz-badge">💡 Risk Dimension Check</div>
+                        <div class="quiz-question"><strong>Question 2:</strong> In securitization, what is "Extension Risk", and under what macroeconomic conditions does it emerge?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q8-ans')">A) The risk that credit rating agencies extend their annual surveillance cycle during periods of economic boom</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q8-ans')">B) The risk that falling interest rates cause borrowers to prepay loans faster than projected</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sec-q8-ans')">C) The risk that rising interest rates slow down borrower prepayments, extending the instrument&#39;s weighted average life and depressing market price when yields are high</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q8-ans')">D) The risk that the SPV extends its operations into unrelated non-financial businesses</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sec-q8-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sec-q8-ans">
+                            <strong>Correct Answer: Option C</strong><br>
+                            <strong>Detailed Explanation:</strong> Extension risk arises when market interest rates climb. Borrowers refrain from refinancing or prepaying loans, which lengthens the security's maturity and Weighted Average Life (WAL) just when yields in the broader market are higher, magnifying duration and driving market prices down.
+                        </div>
+                    </div>
                 </section>
 
                 <!-- 8. Indian Problems -->
                 <section class="section-card" id="indian-problems">
                     <h2 class="section-heading">8. Problems &amp; Impediments in Indian Securitization</h2>
-                    <p>ICAI highlights six systemic obstacles that have constrained the rapid development of the
+                    <p>The curriculum highlights six systemic obstacles that have constrained the rapid development of the
                         securitization market in India:</p>
 
                     <div class="table-wrap">
@@ -1203,12 +1546,27 @@
                             </tbody>
                         </table>
                     </div>
+                                    <div class="quiz-card" style="margin-top: 24px;">
+                        <div class="quiz-badge">💡 Concept Practice Check</div>
+                        <div class="quiz-question"><strong>Question:</strong> What constitutional and regulatory factor has historically created severe transaction friction and high costs for nationwide loan securitizations in India?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q9-ans')">A) A constitutional prohibition against private banks extending mortgage credit</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sec-q9-ans')">B) Non-uniform and high stamp duty rates across various Indian states on the assignment and transfer of debt receivables</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q9-ans')">C) Mandatory conversion of all securitized debt into zero-interest municipal debentures</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q9-ans')">D) A statutory cap restricting SPVs from holding more than 10 individual borrower accounts</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sec-q9-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sec-q9-ans">
+                            <strong>Correct Answer: Option B</strong><br>
+                            <strong>Detailed Explanation:</strong> Stamp duty is a state subject under the Indian Constitution. Historically, rates on debt assignment instruments varied from nominal levels in some states to as high as 3%–12% in others, imposing exorbitant costs when pooling loans originating across multiple state jurisdictions.
+                        </div>
+                    </div>
                 </section>
 
                 <!-- 9. Blockchain & Tokenization -->
                 <section class="section-card" id="blockchain-tokenization">
                     <h2 class="section-heading">9. Blockchain &amp; Asset Tokenization in Securitization</h2>
-                    <p>The ICAI New Scheme integrates <strong>Blockchain Technology</strong> and
+                    <p>The curriculum integrates <strong>Blockchain Technology</strong> and
                         <strong>Tokenization</strong> as the next evolutionary frontier of securitization.</p>
 
                     <h3 class="sub-heading">9.1 Meaning of Asset Tokenization</h3>
@@ -1293,109 +1651,114 @@
                         <li><strong>Scalability &amp; Private Key Management:</strong> Network throughput constraints
                             and risk of lost cryptographic keys.</li>
                     </ul>
+                                    <div class="quiz-card" style="margin-top: 24px;">
+                        <div class="quiz-badge">💡 Concept Practice Check</div>
+                        <div class="quiz-question"><strong>Question:</strong> How does blockchain-based asset tokenization modernize and improve traditional securitization architectures?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q10-ans')">A) By guaranteeing zero credit default rates through central bank cryptocurrency underwriting</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sec-q10-ans')">B) By enabling granular micro-fractionalization, automated smart-contract waterfall execution, transparent immutable tracking, and atomic T+0 settlement</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q10-ans')">C) By eliminating the requirement of having any actual underlying income-generating assets or receivables</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sec-q10-ans')">D) By legally shielding originators from all criminal and civil accountability</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('sec-q10-ans')">👁️ Show Answer &amp; Explanation</button>
+                        <div class="quiz-answer" id="sec-q10-ans">
+                            <strong>Correct Answer: Option B</strong><br>
+                            <strong>Detailed Explanation:</strong> Asset tokenization translates asset ownership rights into cryptographic tokens on a distributed ledger. It automates waterfall distribution logic via smart contracts, enables micro-fractional investment tickets, offers real-time pool auditability, and slashes clearing settlement delays to instantaneous T+0 Delivery versus Payment (DvP).
+                        </div>
+                    </div>
                 </section>
 
                 <!-- 10. Self-Test Quiz -->
-                <section class="section-card" id="self-test-quiz">
-                    <h2 class="section-heading">10. Self-Test Practice Questions (ICAI TYK)</h2>
+                                <section class="section-card" id="self-test-quiz">
+                    <h2 class="section-heading">10. Self-Test Practice Questions</h2>
 
                     <div class="quiz-card">
-                        <div class="quiz-question">Q1: Differentiate between Pass-Through Certificates (PTCs) and
-                            Pay-Through Securities (PTS) in detail.</div>
-                        <button class="reveal-btn" onclick="toggleAnswer('ch7-q1-ans')">👁️ Show Model Answer</button>
+                        <div class="quiz-badge">💡 Question 1 • Instruments Comparison</div>
+                        <div class="quiz-question"><strong>Q1:</strong> Which of the following is the key legal and operational distinction between Pass-Through Certificates (PTCs) and Pay-Through Securities (PTS)?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch7-q1-ans')">A) PTC holders hold debt notes of the SPV; PTS holders hold direct fractional ownership in the loan pool</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch7-q1-ans')">B) PTCs pass cash flows directly through to investors on a pro-rata basis without altering cash flows, whereas PTS restructure cash flows into multi-tiered tranches and permit the SPV to temporarily reinvest surplus funds</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch7-q1-ans')">C) PTCs eliminate all borrower prepayment risk, whereas PTS pass all unscheduled prepayments directly to senior noteholders</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch7-q1-ans')">D) PTS cannot be credit rated, whereas PTCs require mandatory AAA ratings from two rating agencies</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch7-q1-ans')">👁️ Show Answer &amp; Explanation</button>
                         <div class="quiz-answer" id="ch7-q1-ans">
-                            <strong>Model Answer:</strong><br>
-                            1. <strong>Legal Nature:</strong> PTCs represent direct undivided fractional ownership in
-                            the asset pool held by a trust. PTS represent debt obligations issued by the SPV backed by
-                            the pool collateral.<br>
-                            2. <strong>Cash Flow Restructuring:</strong> Under PTCs, cash flows are directly passed
-                            through pro-rata to investors as collected without re-engineering. Under PTS, cash flows are
-                            re-engineered and sliced into multi-tiered tranches (senior, mezzanine, junior) with
-                            differing maturities and coupon rates.<br>
-                            3. <strong>Prepayment Risk:</strong> PTC investors bear prepayment risk directly. PTS
-                            structures can direct prepayments sequentially to specific tranches, shielding senior
-                            investors from prepayment volatility.<br>
-                            4. <strong>SPV Accounting:</strong> PTCs do not appear as debt liabilities on SPV books; PTS
-                            notes appear as formal balance sheet debt liabilities of the SPV.
+                            <strong>Correct Answer: Option B</strong><br>
+                            <strong>Detailed Explanation:</strong><br>
+                            1. <em>Legal Nature:</em> PTCs represent direct undivided fractional ownership in the asset pool held in trust by the SPV. PTS represent debt obligations issued by the SPV secured by the underlying pool.<br>
+                            2. <em>Cash Flow Restructuring:</em> Under PTCs, all collections (principal, interest, prepayments) are passed through pro-rata to certificate holders without alteration. Under PTS, cash flows are re-engineered and sliced into multi-tiered tranches (senior, mezzanine, junior) with differing maturities and coupon rates.<br>
+                            3. <em>SPV Reinvestment:</em> PTS structures permit the SPV to temporarily reinvest surplus cash flows in short-term money market instruments until scheduled bond coupon dates, desynchronizing servicing from obligor collection cycles.
                         </div>
                     </div>
 
                     <div class="quiz-card">
-                        <div class="quiz-question">Q2: What are the main problems faced in securitization, especially in
-                            the Indian context?</div>
-                        <button class="reveal-btn" onclick="toggleAnswer('ch7-q2-ans')">👁️ Show Model Answer</button>
+                        <div class="quiz-badge">💡 Question 2 • Credit Enhancement</div>
+                        <div class="quiz-question"><strong>Q2:</strong> Which of the following structural arrangements represents an "Internal Credit Enhancement" in a securitization transaction?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch7-q2-ans')">A) An irrevocable Standby Letter of Credit issued by a third-party AAA-rated commercial bank</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch7-q2-ans')">B) A surety bond guarantee provided by an external monoline bond insurance company</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch7-q2-ans')">C) Subordinated (junior/equity) tranching, overcollateralization, and excess spread generated within the asset pool structure</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch7-q2-ans')">D) A sovereign default guarantee provided by the Ministry of Finance</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch7-q2-ans')">👁️ Show Answer &amp; Explanation</button>
                         <div class="quiz-answer" id="ch7-q2-ans">
-                            <strong>Model Answer:</strong> In India, the primary impediments are:<br>
-                            (1) <strong>Stamp Duty:</strong> Disparate and high stamp duty rates across various Indian
-                            states on assignment of debt contracts;<br>
-                            (2) <strong>Taxation:</strong> Historical ambiguities regarding the distribution tax and
-                            pass-through status of SPVs under the Income Tax Act;<br>
-                            (3) <strong>Accounting &amp; De-recognition:</strong> Stringent de-recognition conditions
-                            under Ind AS 109 when the originator retains first-loss credit enhancements;<br>
-                            (4) <strong>Lack of Standardization:</strong> Absence of standardized loan documents, credit
-                            underwriting, and collection norms across lending institutions;<br>
-                            (5) <strong>Inadequate Secondary Market:</strong> Shallow, illiquid secondary trading for
-                            structured debt papers;<br>
-                            (6) <strong>Protracted Foreclosure:</strong> Judicial delays and procedural bottlenecks in
-                            resolving retail loan collateral under SARFAESI and IBC.
+                            <strong>Correct Answer: Option C</strong><br>
+                            <strong>Detailed Explanation:</strong><br>
+                            • <em>Internal Credit Enhancement</em> is built directly into the financial structure of the deal without relying on external entities. Key examples include: (1) Subordination (senior-subordinated waterfall priority where junior tranches absorb first losses), (2) Overcollateralization (the value of securitized assets exceeds the face value of issued debt securities), (3) Excess Spread (interest collected from borrowers exceeds coupons paid to noteholders and servicing fees), and (4) Cash Reserve Accounts.<br>
+                            • External enhancements, in contrast, rely on third-party financial institutions (e.g. letters of credit, surety bonds, bank guarantees).
                         </div>
                     </div>
 
                     <div class="quiz-card">
-                        <div class="quiz-question">Q3: Explain how Interest-Only (IO) and Principal-Only (PO) stripped
-                            securities behave differently in response to changes in market interest rates.</div>
-                        <button class="reveal-btn" onclick="toggleAnswer('ch7-q3-ans')">👁️ Show Model Answer</button>
+                        <div class="quiz-badge">💡 Question 3 • Stripped Securities Behavior</div>
+                        <div class="quiz-question"><strong>Q3:</strong> When market interest rates rise, how do Principal-Only (PO) and Interest-Only (IO) stripped securities typically respond in secondary market trading?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch7-q3-ans')">A) PO security prices rise substantially; IO security prices drop to zero</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch7-q3-ans')">B) PO security prices fall (due to slower prepayments extending maturity and higher discount rates); IO security prices appreciate or hold value (as loan balances remain outstanding longer, generating sustained interest cash flows)</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch7-q3-ans')">C) Both PO and IO prices appreciate equally because coupon cash flows are legally guaranteed</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch7-q3-ans')">D) Both PO and IO prices remain perfectly unchanged due to fixed amortization schedules</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch7-q3-ans')">👁️ Show Answer &amp; Explanation</button>
                         <div class="quiz-answer" id="ch7-q3-ans">
-                            <strong>Model Answer:</strong><br>
-                            • <strong>When Interest Rates Fall:</strong> Borrowers refinance mortgages at lower rates,
-                            causing prepayments to surge.<br>
-                            - <strong>PO Strips:</strong> Benefit enormously and experience huge capital gains because
-                            discounted principal is returned much earlier than projected.<br>
-                            - <strong>IO Strips:</strong> Suffer severe capital losses because early principal repayment
-                            terminates the loan balances on which future interest would have been earned.<br>
-                            • <strong>When Interest Rates Rise:</strong> Prepayments slow down dramatically.<br>
-                            - <strong>PO Strips:</strong> Experience capital losses and lower yields due to extension
-                            risk (principal return delayed into future).<br>
-                            - <strong>IO Strips:</strong> Benefit and appreciate because loan balances remain
-                            outstanding longer, generating prolonged streams of interest cash flows.
+                            <strong>Correct Answer: Option B</strong><br>
+                            <strong>Detailed Explanation:</strong><br>
+                            • <em>When Interest Rates Rise:</em> Prepayments decelerate sharply because borrowers avoid refinancing at higher rates.<br>
+                            - <strong>PO Strips:</strong> Experience price declines due to <em>extension risk</em>—the return of principal is pushed further into the future, and cash flows are discounted at higher market interest rates.<br>
+                            - <strong>IO Strips:</strong> Benefit from the slower prepayment rate because the underlying loan principal remains outstanding longer, generating prolonged interest payments that offset higher discount rates.
                         </div>
                     </div>
 
                     <div class="quiz-card">
-                        <div class="quiz-question">Q4: What is the legal importance of the "True Sale" doctrine in
-                            securitization? What happens if it is absent?</div>
-                        <button class="reveal-btn" onclick="toggleAnswer('ch7-q4-ans')">👁️ Show Model Answer</button>
+                        <div class="quiz-badge">💡 Question 4 • True Sale & Bankruptcy Remoteness</div>
+                        <div class="quiz-question"><strong>Q4:</strong> What is the primary legal consequence if a securitization transaction fails to satisfy the legal criteria of a "True Sale"?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch7-q4-ans')">A) The SPV is automatically dissolved and converted into a general commercial bank</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch7-q4-ans')">B) The court may recharacterize the transaction as a secured loan, enabling the originator&#39;s bankruptcy liquidator to freeze and claw back the securitized assets into the originator&#39;s general liquidation estate</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch7-q4-ans')">C) Underlying obligors are legally discharged from their repayment obligations</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch7-q4-ans')">D) All noteholders are granted mandatory seats on the board of directors of the originator</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch7-q4-ans')">👁️ Show Answer &amp; Explanation</button>
                         <div class="quiz-answer" id="ch7-q4-ans">
-                            <strong>Model Answer:</strong> The "True Sale" doctrine mandates that the transfer of
-                            receivables from the Originator to the SPV must be an absolute, irrevocable, and legally
-                            valid assignment of ownership title, rather than a secured borrowing.<br>
-                            <strong>Legal Importance:</strong> It ensures <em>Bankruptcy Remoteness</em>. In the event
-                            of the Originator's insolvency or liquidation, the liquidator or general creditors of the
-                            Originator have zero legal claim over the securitized assets held by the SPV.<br>
-                            <strong>Consequence of Absence:</strong> If the transaction is legally recharacterized as a
-                            secured financing rather than a True Sale, the bankruptcy court can freeze the underlying
-                            pool assets as part of the Originator's liquidation estate, halting interest and principal
-                            payments to securitization investors.
+                            <strong>Correct Answer: Option B</strong><br>
+                            <strong>Detailed Explanation:</strong><br>
+                            The "True Sale" doctrine mandates that the transfer of receivables from the Originator to the SPV must be an absolute, irrevocable, and legally valid assignment of ownership title. If a court recharacterizes the transfer as a secured financing rather than a True Sale, the bankruptcy court can freeze the underlying pool assets as part of the Originator's liquidation estate, halting interest and principal distributions to securitization investors.
                         </div>
                     </div>
 
                     <div class="quiz-card">
-                        <div class="quiz-question">Q5: Explain how Blockchain Technology and Asset Tokenization can
-                            transform traditional securitization.</div>
-                        <button class="reveal-btn" onclick="toggleAnswer('ch7-q5-ans')">👁️ Show Model Answer</button>
+                        <div class="quiz-badge">💡 Question 5 • Originator Capital Optimization</div>
+                        <div class="quiz-question"><strong>Q5:</strong> How does off-balance sheet securitization fundamentally help a commercial bank or NBFC improve its Return on Equity (ROE) and capital adequacy?</div>
+                        <div class="mcq-options-grid">
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch7-q5-ans')">A) By borrowing additional subordinated long-term tier-2 debt from other retail banks</div>
+                            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ch7-q5-ans')">B) By de-recognizing risk-weighted assets from its balance sheet, releasing regulatory capital, generating fee income from servicing, and recycling liquidity to originate new loans</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch7-q5-ans')">C) By converting all performing loans into non-performing assets to claim income tax deductions</div>
+                            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ch7-q5-ans')">D) By eliminating all operational expenses associated with loan origination</div>
+                        </div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ch7-q5-ans')">👁️ Show Answer &amp; Explanation</button>
                         <div class="quiz-answer" id="ch7-q5-ans">
-                            <strong>Model Answer:</strong> Blockchain and Tokenization revolutionize securitization
-                            through:<br>
-                            1. <strong>Automated Smart Contracts:</strong> Waterfall payment priority and cash
-                            distribution rules execute autonomously without manual trustee delays;<br>
-                            2. <strong>Immutable Transparency:</strong> Real-time on-chain tracking of underlying loan
-                            performance and default rates for rating agencies and investors;<br>
-                            3. <strong>Micro-Fractionalization:</strong> Slicing multi-crore asset pools into
-                            micro-tokens of small denominations, unlocking retail participation;<br>
-                            4. <strong>Atomic Settlement:</strong> Eliminating multi-day clearing delays, achieving
-                            instantaneous T+0 Delivery versus Payment (DvP);<br>
-                            5. <strong>Disintermediation:</strong> Substantially reducing administrative, legal,
-                            trustee, and auditing fees.
+                            <strong>Correct Answer: Option B</strong><br>
+                            <strong>Detailed Explanation:</strong><br>
+                            Under Ind AS 109 and regulatory capital guidelines, securitizing loans without recourse removes risk-weighted assets from the balance sheet. This directly releases regulatory equity capital, improves the Capital Adequacy Ratio (CAR/CRAR), generates ongoing fee-based servicing income, and provides fresh upfront liquidity to originate new loans, thereby multiplying Return on Equity (ROE).
                         </div>
                     </div>
                 </section>
@@ -1482,9 +1845,41 @@
     <!-- Script Assets -->
     <script src="../../assets/template.js"></script>
     <script>
+                function checkOption(optEl, isCorrect, ansId) {
+            const parent = optEl.closest('.mcq-options-grid');
+            if (!parent) return;
+            const allOptions = parent.querySelectorAll('.mcq-option-item');
+            allOptions.forEach(opt => {
+                opt.classList.remove('selected-correct', 'selected-wrong');
+            });
+            if (isCorrect) {
+                optEl.classList.add('selected-correct');
+            } else {
+                optEl.classList.add('selected-wrong');
+                allOptions.forEach(opt => {
+                    if (opt.getAttribute('data-correct') === 'true') {
+                        opt.classList.add('selected-correct');
+                    }
+                });
+            }
+            const ansEl = document.getElementById(ansId);
+            if (ansEl) {
+                ansEl.style.display = 'block';
+            }
+        }
+
         function toggleAnswer(id) {
             const ansEl = document.getElementById(id);
-            ansEl.style.display = (ansEl.style.display === 'block') ? 'none' : 'block';
+            if (!ansEl) return;
+            const isShowing = ansEl.style.display === 'block';
+            ansEl.style.display = isShowing ? 'none' : 'block';
+            if (!isShowing) {
+                const card = ansEl.closest('.quiz-card') || ansEl.closest('.topic-quiz-card');
+                if (card) {
+                    const correctOpt = card.querySelector('.mcq-option-item[data-correct="true"]');
+                    if (correctOpt) correctOpt.classList.add('selected-correct');
+                }
+            }
         }
 
         function toggleSidebar() {
@@ -1502,11 +1897,36 @@
         const sections = document.querySelectorAll('.section-card');
         const sidebarLinks = document.querySelectorAll('.sidebar a');
 
+        function updateReadingProgressColor(progressBar, progress) {
+            var r, g, b;
+            if (progress <= 33) {
+                var t = progress / 33;
+                r = Math.round(239 + (234 - 239) * t);
+                g = Math.round(68 + (179 - 68) * t);
+                b = Math.round(68 + (8 - 68) * t);
+            } else if (progress <= 66) {
+                var t = (progress - 33) / 33;
+                r = Math.round(234 + (34 - 234) * t);
+                g = Math.round(179 + (197 - 179) * t);
+                b = Math.round(8 + (94 - 8) * t);
+            } else {
+                var t = (progress - 66) / 34;
+                r = Math.round(34 + (16 - 34) * t);
+                g = Math.round(197 + (185 - 197) * t);
+                b = Math.round(94 + (129 - 94) * t);
+            }
+            progressBar.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+            progressBar.style.boxShadow = '0 0 8px rgba(' + r + ',' + g + ',' + b + ', 0.45)';
+        }
+
+        if (progressBar) { updateReadingProgressColor(progressBar, 0); }
+
         contentEl.addEventListener('scroll', () => {
             const totalScroll = contentEl.scrollHeight - contentEl.clientHeight;
             const currentScroll = contentEl.scrollTop;
             const progress = (currentScroll / totalScroll) * 100;
             progressBar.style.width = progress + '%';
+            updateReadingProgressColor(progressBar, progress);
 
             let current = '';
             sections.forEach(section => {
@@ -1527,3 +1947,6 @@
 </body>
 
 </html>
+
+
+

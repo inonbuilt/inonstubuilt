@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@
     <meta name="description"
         content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 12: Interest Rate Risk Management. Complete CA Final AFM Chapter 12 Interest Rate Risk notes. FRA settlement, SOFR transitions, interest rate swaps, caps/floors, swaptions, and 100% solved TYK problems.">
     <meta name="keywords"
-        content="Interest Rate Risk Management CA Final AFM, FRA Forward Rate Agreement, Caps Floors Collars, Plain Vanilla Interest Rate Swaps, OIS, Swaptions, Chapter 12, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+        content="Interest Rate Risk Management CA Final AFM, FRA Forward Rate Agreement, Caps Floors Collars, Plain Vanilla Interest Rate Swaps, OIS, Swaptions, Chapter 12, CA Final AFM Paper 2, New Syllabus AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
     <meta name="author" content="Calcium Notes">
     <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/interest_rate_risk.html">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -48,7 +48,7 @@
     "name": "CA Final AFM Chapter 12: Interest Rate Risk Management (Quick Revision)",
     "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 12: Interest Rate Risk Management. Complete CA Final AFM Chapter 12 Interest Rate Risk notes. FRA settlement, SOFR transitions, interest rate swaps, caps/floors, swaptions, and 100% solved TYK problems.",
     "learningResourceType": "Revision Cheat Sheet",
-    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "educationalLevel": "CA Final (New Syllabus)",
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "author": {
@@ -201,8 +201,8 @@
             color: var(--text-primary);
             line-height: 1.7;
             font-size: 15px;
-            display: flex;
-            min-height: 100vh;
+            
+            
         }
 
 
@@ -575,49 +575,250 @@
         .calc {
             font-family: var(--notes-table) !important;
         }
+            /* Interactive Topic Quiz Styles */
+        .topic-quiz-card {
+            background: var(--notes-card-bg, #ffffff);
+            border: 1px solid var(--notes-card-border, #e2e8f0);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 28px 0 16px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+        }
+        .topic-quiz-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 4px 10px;
+            border-radius: 20px;
+            background: rgba(13, 148, 136, 0.12);
+            color: #0d9488;
+            margin-bottom: 14px;
+        }
+        .topic-quiz-question {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--notes-text, #1e293b);
+            margin-bottom: 18px;
+            line-height: 1.5;
+        }
+        .mcq-options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .mcq-option-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: 1px solid var(--notes-card-border, #e2e8f0);
+            background: var(--notes-card-bg, #f8fafc);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.95rem;
+            line-height: 1.45;
+            color: var(--notes-text, #334155);
+            user-select: none;
+        }
+        .mcq-option-item:hover {
+            border-color: #0d9488;
+            background: rgba(13, 148, 136, 0.04);
+        }
+        .mcq-option-item.selected-correct {
+            border-color: #10b981 !important;
+            background: rgba(16, 185, 129, 0.12) !important;
+            color: #065f46 !important;
+            font-weight: 600;
+        }
+        .mcq-option-item.selected-wrong {
+            border-color: #ef4444 !important;
+            background: rgba(239, 68, 68, 0.12) !important;
+            color: #991b1b !important;
+            font-weight: 600;
+        }
+        .quiz-btn-row {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .reveal-btn {
+            background: transparent;
+            border: 1px solid #0d9488;
+            color: #0d9488;
+            padding: 7px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .reveal-btn:hover {
+            background: #0d9488;
+            color: #ffffff;
+        }
+        .explanation-box {
+            display: none;
+            margin-top: 16px;
+            padding: 16px;
+            border-radius: 8px;
+            background: rgba(13, 148, 136, 0.06);
+            border-left: 4px solid #0d9488;
+            font-size: 0.92rem;
+            line-height: 1.55;
+            color: var(--notes-text, #1e293b);
+        }
+        [data-theme="dark"] .topic-quiz-card {
+            background: #1e293b;
+            border-color: #334155;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        }
+        [data-theme="dark"] .topic-quiz-question {
+            color: #f1f5f9;
+        }
+        [data-theme="dark"] .mcq-option-item {
+            border-color: #334155;
+            background: #0f172a;
+            color: #cbd5e1;
+        }
+        [data-theme="dark"] .mcq-option-item:hover {
+            border-color: #14b8a6;
+            background: rgba(20, 184, 166, 0.1);
+        }
+        [data-theme="dark"] .mcq-option-item.selected-correct {
+            border-color: #10b981 !important;
+            background: rgba(16, 185, 129, 0.2) !important;
+            color: #6ee7b7 !important;
+        }
+        [data-theme="dark"] .mcq-option-item.selected-wrong {
+            border-color: #ef4444 !important;
+            background: rgba(239, 68, 68, 0.2) !important;
+            color: #fca5a5 !important;
+        }
+        [data-theme="dark"] .explanation-box {
+            background: rgba(20, 184, 166, 0.08);
+            border-left-color: #14b8a6;
+            color: #e2e8f0;
+        }
+    
+        /* Universal Single-Scrollbar Fix */
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            padding-bottom: 0 !important;
+            height: 100% !important;
+            max-height: 100vh !important;
+            max-height: 100dvh !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            display: block !important;
+            box-sizing: border-box !important;
+        }
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        .topbar {
+            height: 64px !important;
+            width: 100% !important;
+            margin: 0 !important;
+            box-sizing: border-box !important;
+            flex-shrink: 0 !important;
+            position: relative !important;
+            z-index: 100;
+        }
+        .layout {
+            display: flex !important;
+            height: calc(100vh - 64px) !important;
+            height: calc(100dvh - 64px) !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            box-sizing: border-box !important;
+        }
+        .sidebar {
+            width: 290px;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            flex-shrink: 0 !important;
+            box-sizing: border-box !important;
+        }
+        .content {
+            flex: 1 1 auto !important;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            padding: 36px 48px !important;
+            box-sizing: border-box !important;
+            scroll-behavior: smooth;
+        }
+        .content-container {
+            max-width: 940px !important;
+            margin: 0 auto !important;
+            padding-bottom: 80px !important;
+            box-sizing: border-box !important;
+        }
     </style>
+    <!-- Modern Typography & Unified Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/unified_notes.css">
 </head>
 
 <body>
-    <nav class="sidebar">
-        <div class="sidebar-brand">
-            <span>AFM Quick Notes</span>
-            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">☀️/🌙</button>
+
+    <header class="topbar">
+        <div class="topbar-left">
+            <a href="../../notes/afmnotes.html" class="back-hub-btn">← AFM Hub</a>
+            <div class="chapter-title">Chapter 12: Interest Rate Risk Management (⚡ Quick Revision)</div>
         </div>
-
-        <div class="nav-group-title">Quick Navigation</div>
-        <a href="#formula-bank" class="nav-link">1. Master Formula Bank</a>
-        <a href="#fra-cheat" class="nav-link">2. FRA Notation &amp; Mechanics</a>
-        <a href="#arr-matrix" class="nav-link">3. Global ARRs (SOFR, etc.)</a>
-        <a href="#options-matrix" class="nav-link">4. Caps, Floors &amp; Collars</a>
-        <a href="#swaps-matrix" class="nav-link">5. Swaps &amp; OIS Architecture</a>
-        <a href="#swaptions-matrix" class="nav-link">6. Swaptions Quick Guide</a>
-        <a href="#exam-pitfalls" class="nav-link">7. ICAI Exam Traps &amp; Checklist</a>
-
-        <div class="nav-group-title">Hub Portals</div>
-        <a href="../../notes/afmnotes.html" class="nav-link">← Quick Notes Index</a>
-        <a href="../../notes/afmfullnotes.html" class="nav-link">← Full Notes Index</a>
-    </nav>
-
-    <main class="main-wrapper">
-        <header class="header-section">
-            <div class="breadcrumbs">
-                <a href="../../notes/afmnotes.html">CA Final AFM</a> &gt;
-                <span>Chapter 12 Quick Notes</span>
+        <div class="topbar-right">
+            <div class="progress-container" title="Reading Progress">
+                <div class="progress-bar" id="reading-progress"></div>
             </div>
-            <h1>Chapter 12: Interest Rate Risk Management</h1>
-            <div class="chapter-meta">
-                <span class="chapter-pill">⚡ High-Yield Revision Guide</span>
-                <span>Formulas • Payoff Matrices • Step-by-Step Problem Templates</span>
-            </div>
-        </header>
-
-        <div class="mode-bar">
-            <a href="interest_rate_risk_full.html" class="mode-btn">📖 Full Detailed Notes</a>
-            <a href="interest_rate_risk.html" class="mode-btn active">⚡ Quick Revision Notes</a>
+            <button class="toggle-btn" id="sidebar-toggle" onclick="toggleSidebar()">☰ Contents</button>
         </div>
+    </header>
 
-        <!-- 1. Formula Bank -->
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-title">Chapter Contents</div>
+            <nav>
+                <ul>
+                    <li><a href="#formula-bank" class="active">1. Master Formula Bank</a></li>
+                    <li><a href="#fra-cheat">2. FRA Notation &amp; Mechanics</a></li>
+                    <li><a href="#arr-matrix">3. Global ARRs (SOFR, etc.)</a></li>
+                    <li><a href="#options-matrix">4. Caps, Floors &amp; Collars</a></li>
+                    <li><a href="#swaps-matrix">5. Swaps &amp; OIS Architecture</a></li>
+                    <li><a href="#swaptions-matrix">6. Swaptions Quick Guide</a></li>
+                    <li><a href="#exam-pitfalls">7. Exam Traps &amp; Checklist</a></li>
+                    <li><a href="../../notes/afmnotes.html">â† Quick Notes Index</a></li>
+                    <li><a href="../../notes/afmfullnotes.html">â† Full Notes Index</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="content-container">
+
+                <div class="chapter-header">
+                    <div class="chapter-badge">CA Final AFM • Paper 2</div>
+                    <h1>Chapter 12: Interest Rate Risk Management</h1>
+                    <p>Forward Rate Agreements (FRA) cash settlement, LIBOR to SOFR/ARR benchmark transition, Interest Rate Swaps valuation, comparative advantage arbitrage, Interest Rate Caps, Floors, Collars, and Swaptions.</p>
+                    <div class="chapter-meta">
+                        <span>📚 Standard Curriculum Study Material</span><span>⏱️ Read Time: ~45 mins</span><span>🎯 Exam Weightage: 12 – 18 Marks</span>
+                    </div>
+                </div>
+<!-- 1. Formula Bank -->
         <section class="quick-card" id="formula-bank">
             <h2>1. Master Formula Bank</h2>
 
@@ -654,7 +855,66 @@
                 \right) - N$$
                 <em>Where $d_k$ = days spanned (1 day on weekdays, 2 days on Saturday covering Sunday).</em>
             </div>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 1 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 1.1</div>
+                <div class="topic-quiz-question">Spot interest rates are 4.50% p.a. for 3 months (90 days) and 5.00% p.a. for 6 months (180 days). Using money market compounding conventions, what is the theoretical forward-forward rate for a 3-month deposit starting in 3 months (FRA 3x6)?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'irr-q1-ans')">
+                        <strong>A.</strong>&nbsp;5.44% p.a.
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q1-ans')">
+                        <strong>B.</strong>&nbsp;5.00% p.a.
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q1-ans')">
+                        <strong>C.</strong>&nbsp;4.75% p.a.
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q1-ans')">
+                        <strong>D.</strong>&nbsp;2.72% p.a.
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('irr-q1-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="irr-q1-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    By money market future value equivalence:<br>
+                    $\left(1 + R_{3 \times 6} \times \frac{3}{12}\right) = \frac{1 + R_6 \times \frac{6}{12}}{1 + R_3 \times \frac{3}{12}} = \frac{1 + 0.05 \times 0.5}{1 + 0.045 \times 0.25} = \frac{1.0250}{1.01125} = 1.013597$
+                    $R_{3 \times 6} \times 0.25 = 0.013597 \implies R_{3 \times 6} = 0.013597 \times 4 = 5.4388\% \approx 5.44\% \text{ p.a.}$
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 1.2</div>
+                <div class="topic-quiz-question">A bank sold Interest Rate Futures contracts underlying notional 7.50% GOI bonds at a futures settlement price of INR 1,000. An eligible deliverable bond (6.80% GOI 2029) is quoted in the spot cash market at INR 877.50 with a conversion factor of 0.9195. What is the net profit/loss per bond from delivering this security?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'irr-q2-ans')">
+                        <strong>A.</strong>&nbsp;Profit of INR 42.00
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q2-ans')">
+                        <strong>B.</strong>&nbsp;Loss of INR 42.00
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q2-ans')">
+                        <strong>C.</strong>&nbsp;Profit of INR 122.50
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q2-ans')">
+                        <strong>D.</strong>&nbsp;Loss of INR 122.50
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('irr-q2-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="irr-q2-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    1. Invoice price received from delivery: $\text{Futures Settlement Price} \times \text{CF} = 1,000 \times 0.9195 = \text{INR } 919.50$.<br>
+                    2. Cash outflow to purchase the bond in spot market = $\text{INR } 877.50$.<br>
+                    3. Net Arbitrage Profit = $919.50 - 877.50 = \text{INR } 42.00$.
+                </div>
+            </div>
+</section>
 
         <!-- 2. FRA Notation -->
         <section class="quick-card" id="fra-cheat">
@@ -691,9 +951,94 @@
             </table>
             <div class="exam-trap">
                 <strong>Settlement Direction Rule:</strong><br>
-                • If $RR > FR$: Bank pays Buyer (Borrower hedged successfully against rate hike).<br>
-                • If $RR < FR$: Buyer pays Bank (Borrower pays cost of insurance when market rates fall). </div>
-        </section>
+                â€¢ If $RR > FR$: Bank pays Buyer (Borrower hedged successfully against rate hike).<br>
+                â€¢ If $RR < FR$: Buyer pays Bank (Borrower pays cost of insurance when market rates fall). </div>
+        
+            <!-- Test Your Knowledge: Section 2 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 2.1</div>
+                <div class="topic-quiz-question">ABC Ltd enters into a 6x9 FRA on a notional principal of INR 50 crores at a contracted rate of 8.00% p.a. On the settlement date, the actual benchmark rate fixes at 10.00% p.a. What is the discounted net cash settlement amount (assuming a 360-day year with 90 days in the 3-month period)?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'irr-q3-ans')">
+                        <strong>A.</strong>&nbsp;Receipt of INR 24,39,024 by ABC Ltd
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q3-ans')">
+                        <strong>B.</strong>&nbsp;Payment of INR 24,39,024 by ABC Ltd
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q3-ans')">
+                        <strong>C.</strong>&nbsp;Receipt of INR 25,00,000 by ABC Ltd
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q3-ans')">
+                        <strong>D.</strong>&nbsp;Payment of INR 25,00,000 by ABC Ltd
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('irr-q3-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="irr-q3-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    1. Undiscounted difference: $50,00,00,000 \times (10\% - 8\%) \times \frac{90}{360} = \text{INR } 25,00,000$.<br>
+                    2. Discounted cash settlement at actual rate ($10\%$):<br>
+                    $\text{Settlement} = \frac{25,00,000}{1 + \left(0.10 \times \frac{90}{360}\right)} = \frac{25,00,000}{1 + 0.025} = \frac{25,00,000}{1.025} = \text{INR } 24,39,024$<br>
+                    Since the market rate exceeds the agreed FRA rate, the buyer receives this amount.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 2.2</div>
+                <div class="topic-quiz-question">In interbank financial markets, what does a standard "3x9 FRA" specifically denote?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'irr-q4-ans')">
+                        <strong>A.</strong>&nbsp;An agreement fixing the forward interest rate for a 6-month borrowing period commencing 3 months from trade date and ending 9 months from trade date
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q4-ans')">
+                        <strong>B.</strong>&nbsp;A 3-month loan that can be extended up to 9 months
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q4-ans')">
+                        <strong>C.</strong>&nbsp;A 9-month loan that has 3 coupon resets
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q4-ans')">
+                        <strong>D.</strong>&nbsp;An option to enter into 3 separate forward contracts over 9 months
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('irr-q4-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="irr-q4-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    In an $A \times B$ FRA: $A$ is the inception date of the borrowing (3 months forward), and $B$ is the maturity date (9 months forward). The underlying borrowing tenure is $B - A = 6$ months.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 2.3</div>
+                <div class="topic-quiz-question">The 6-month and 12-month spot borrowing rates are 9.60% p.a. and 9.00% p.a. Fair FRA rate for months 6 to 12 is 8.00% p.a., whereas the bank quotes actual 6x12 FRA at 10.50% - 11.00%. How can an arbitrageur capitalize on this mispricing?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'irr-q5-ans')">
+                        <strong>A.</strong>&nbsp;Borrow spot for 12 months at 9.00%, invest for 6 months at 9.60%, and invest in the FRA for the remaining 6 months at 10.50%
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q5-ans')">
+                        <strong>B.</strong>&nbsp;Invest spot for 12 months at 9.00%, borrow for 6 months at 9.60%, and borrow in the FRA at 11.00%
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q5-ans')">
+                        <strong>C.</strong>&nbsp;Borrow in the FRA at 11.00% and deposit spot at 9.00%
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q5-ans')">
+                        <strong>D.</strong>&nbsp;Arbitrage is impossible because actual FRA deposit rate exceeds the fair rate
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('irr-q5-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="irr-q5-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    Because the market FRA deposit quote ($10.50\%$) is higher than the theoretical fair FRA rate ($8.00\%$), the market is overpricing future lending returns. An arbitrageur borrows 12-month funds at $9.00\%$, lends spot for 6 months at $9.60\%$, and simultaneously locks in the second 6 months at $10.50\%$, yielding an overall return higher than the borrowing cost.
+                </div>
+            </div>
+</section>
 
         <!-- 3. Global ARRs -->
         <section class="quick-card" id="arr-matrix">
@@ -722,7 +1067,7 @@
                     </tr>
                     <tr>
                         <td><strong>EUR</strong></td>
-                        <td><strong>€STR</strong> (Euro Short-Term Rate)</td>
+                        <td><strong>â‚¬STR</strong> (Euro Short-Term Rate)</td>
                         <td>European Central Bank</td>
                         <td>Unsecured</td>
                     </tr>
@@ -740,7 +1085,107 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 3 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 3.1</div>
+                <div class="topic-quiz-question">Which of the following is the fundamental structural distinction between Alternative Reference Rates (such as SOFR) and legacy LIBOR?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'irr-q6-ans')">
+                        <strong>A.</strong>&nbsp;SOFR is a nearly risk-free overnight rate grounded in actual US Treasury repo transactions, whereas LIBOR was an uncollateralized, forward-looking rate incorporating commercial bank credit risk
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q6-ans')">
+                        <strong>B.</strong>&nbsp;SOFR relies on subjective expert polling of panel banks rather than actual trade volumes
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q6-ans')">
+                        <strong>C.</strong>&nbsp;LIBOR was backed by sovereign gold bullion reserves while SOFR is unsecured
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q6-ans')">
+                        <strong>D.</strong>&nbsp;SOFR naturally yields higher rates than LIBOR due to embedded bank credit spreads
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('irr-q6-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="irr-q6-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    • SOFR is a secured, overnight rate based on approximately \<section class="quick-card" id="arr-matrix">
+            <h2>3. Global Alternative Reference Rates (ARRs) Quick Matrix</h2>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Rate Name</th>
+                        <th>Administrator</th>
+                        <th>Secured vs Unsecured</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>USD</strong></td>
+                        <td><strong>SOFR</strong> (Secured Overnight Financing Rate)</td>
+                        <td>Federal Reserve Bank of NY</td>
+                        <td>Secured (US Treasury Repos)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GBP</strong></td>
+                        <td><strong>SONIA</strong> (Sterling Overnight Index Average)</td>
+                        <td>Bank of England</td>
+                        <td>Unsecured</td>
+                    </tr>
+                    <tr>
+                        <td><strong>EUR</strong></td>
+                        <td><strong>â‚¬STR</strong> (Euro Short-Term Rate)</td>
+                        <td>European Central Bank</td>
+                        <td>Unsecured</td>
+                    </tr>
+                    <tr>
+                        <td><strong>JPY</strong></td>
+                        <td><strong>TONAR</strong> (Tokyo Overnight Average Rate)</td>
+                        <td>Bank of Japan</td>
+                        <td>Unsecured</td>
+                    </tr>
+                    <tr>
+                        <td><strong>INR</strong></td>
+                        <td><strong>MIBOR</strong> (Mumbai Interbank Offered Rate)</td>
+                        <td>FBIL</td>
+                        <td>Unsecured Call Money</td>
+                    </tr>
+                </tbody>
+            </table>
+         trillion in daily US Treasury repo transactions, virtually free of bank credit risk.<br>
+                    • Legacy LIBOR was an unsecured estimate submitted by banks, embedding credit and term liquidity premiums.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 3.2</div>
+                <div class="topic-quiz-question">Under the "Compounded in Arrears" convention used in SOFR/SONIA loan and swap contracts, when is the final payable interest amount determined?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'irr-q7-ans')">
+                        <strong>A.</strong>&nbsp;At or near the end of the interest accrual period, by compounding daily overnight fixings across the period
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q7-ans')">
+                        <strong>B.</strong>&nbsp;At the beginning of the interest period on trade date, identically to LIBOR
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q7-ans')">
+                        <strong>C.</strong>&nbsp;At the exact midpoint of the loan tenure using linear interpolation
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q7-ans')">
+                        <strong>D.</strong>&nbsp;On the initial loan origination date
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('irr-q7-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="irr-q7-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    Because SOFR is an overnight rate published daily, the interest rate for a 3-month or 6-month period is calculated by compounding daily rates in arrears. Consequently, the borrower knows the exact interest payable only at the end of the period (or a few days prior if an observation lag is applied).
+                </div>
+            </div>
+</section>
 
         <!-- 4. Caps, Floors, Collars -->
         <section class="quick-card" id="options-matrix">
@@ -779,7 +1224,96 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 4 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 4.1</div>
+                <div class="topic-quiz-question">A corporate purchases a 1-year Cap option on a notional principal of INR 100 crores at a strike rate of 8.00% p.a. (quarterly reset). In Q1, the benchmark interest rate fixes at 8.50% p.a., and in Q2 it fixes at 7.50% p.a. What are the gross option payoffs received in Q1 and Q2?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'irr-q8-ans')">
+                        <strong>A.</strong>&nbsp;INR 12,50,000 in Q1 and Nil in Q2
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q8-ans')">
+                        <strong>B.</strong>&nbsp;INR 50,00,000 in Q1 and Nil in Q2
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q8-ans')">
+                        <strong>C.</strong>&nbsp;INR 12,50,000 in Q1 and INR 12,50,000 in Q2
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q8-ans')">
+                        <strong>D.</strong>&nbsp;Nil in Q1 and INR 12,50,000 in Q2
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('irr-q8-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="irr-q8-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    • Q1: Actual rate ($8.5\%$) > Strike ($8.0\%$). Option is exercised:<br>
+                    $\text{Payoff} = 100,00,00,000 \times (8.5\% - 8.0\%) \times \frac{3}{12} = \text{INR } 12,50,000$<br>
+                    • Q2: Actual rate ($7.5\%$) &lt; Strike ($8.0\%$). Option expires unexercised: Payoff = Nil.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 4.2</div>
+                <div class="topic-quiz-question">A financial lender holding floating-rate loans buys an interest rate Floor with a strike rate of 6.00% p.a. on a notional amount of INR 50 crores (reset semi-annually). If the benchmark drops to 4.80% p.a. on reset date, what payoff does the lender receive?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'irr-q9-ans')">
+                        <strong>A.</strong>&nbsp;INR 30,00,000
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q9-ans')">
+                        <strong>B.</strong>&nbsp;INR 60,00,000
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q9-ans')">
+                        <strong>C.</strong>&nbsp;INR 15,00,000
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q9-ans')">
+                        <strong>D.</strong>&nbsp;Nil
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('irr-q9-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="irr-q9-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    A floor option pays when actual rates fall below the strike:<br>
+                    $\text{Payoff} = \text{Notional} \times (\text{Strike} - \text{Actual}) \times \frac{6}{12} = 50,00,00,000 \times (6.0\% - 4.8\%) \times 0.5 = 50,00,00,000 \times 0.012 \times 0.5 = \text{INR } 30,00,000$
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 4.3</div>
+                <div class="topic-quiz-question">XYZ Ltd borrows GBP 10 million floating at LIBOR + 0.50% (reset semi-annually). It implements a collar by buying a Cap at 7.00% and selling a Floor at 4.00%. If LIBOR fixes at 3.00% on reset date, what is the net total interest outflow for the 6-month period?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'irr-q10-ans')">
+                        <strong>A.</strong>&nbsp;GBP 225,000 (effective rate 4.50% p.a.)
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q10-ans')">
+                        <strong>B.</strong>&nbsp;GBP 175,000 (effective rate 3.50% p.a.)
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q10-ans')">
+                        <strong>C.</strong>&nbsp;GBP 350,000 (effective rate 7.00% p.a.)
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q10-ans')">
+                        <strong>D.</strong>&nbsp;GBP 200,000 (effective rate 4.00% p.a.)
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('irr-q10-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="irr-q10-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    1. Interest on primary loan: $10,000,000 \times (3.0\% + 0.5\%) \times 0.5 = \text{GBP } 175,000$.<br>
+                    2. Cap option: LIBOR ($3\%$) &lt; Cap ($7\%$) $\implies$ Nil.<br>
+                    3. Floor option: As floor seller, firm must pay the shortfall when LIBOR ($3\%$) &lt; Floor ($4\%$):<br>
+                    $\text{Floor Payment} = 10,000,000 \times (4\% - 3\%) \times 0.5 = \text{GBP } 50,000$<br>
+                    4. Total Outflow = $175,000 + 50,000 = \text{GBP } 225,000$ (Effective cost = $4.50\%$ p.a.).
+                </div>
+            </div>
+</section>
 
         <!-- 5. Swaps & OIS Architecture -->
         <section class="quick-card" id="swaps-matrix">
@@ -821,7 +1355,66 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 5 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 5.1</div>
+                <div class="topic-quiz-question">Company A (AAA-rated) can borrow Fixed at 8.00% or Floating at MIBOR + 0.20%. Company B (BBB-rated) can borrow Fixed at 10.00% or Floating at MIBOR + 1.20%. What is the total potential net swap gain available to be shared between the counterparties?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'irr-q11-ans')">
+                        <strong>A.</strong>&nbsp;1.00% p.a. (100 bps)
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q11-ans')">
+                        <strong>B.</strong>&nbsp;2.00% p.a.
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q11-ans')">
+                        <strong>C.</strong>&nbsp;0.50% p.a.
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q11-ans')">
+                        <strong>D.</strong>&nbsp;1.20% p.a.
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('irr-q11-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="irr-q11-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    $\text{Fixed Rate Differential} = 10.00\% - 8.00\% = 2.00\%$
+                    $\text{Floating Rate Differential} = 1.20\% - 0.20\% = 1.00\%$
+                    $\text{Total Swap Gain} = |2.00\% - 1.00\%| = 1.00\% \text{ p.a. (100 basis points)}$
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 5.2</div>
+                <div class="topic-quiz-question">In a plain vanilla fixed-for-floating Interest Rate Swap on USD 20 million notional (semi-annual 180/360 basis), Party A pays fixed at 5.50% and receives floating SOFR. If SOFR fixes at 6.00% p.a. for the period, what is the net settlement payment?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'irr-q12-ans')">
+                        <strong>A.</strong>&nbsp;Party B pays USD 50,000 to Party A
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q12-ans')">
+                        <strong>B.</strong>&nbsp;Party A pays USD 50,000 to Party B
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q12-ans')">
+                        <strong>C.</strong>&nbsp;Party B pays USD 100,000 to Party A
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q12-ans')">
+                        <strong>D.</strong>&nbsp;Both parties exchange gross principal amounts
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('irr-q12-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="irr-q12-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    • Floating inflow to A: $\$20,000,000 \times 6.00\% \times \frac{180}{360} = \$600,000$.<br>
+                    • Fixed outflow from A: $\$20,000,000 \times 5.50\% \times \frac{180}{360} = \$550,000$.<br>
+                    • Net settlement: Party B pays Party A $\$600,000 - \$550,000 = \text{USD } 50,000$.
+                </div>
+            </div>
+</section>
 
         <!-- 6. Swaptions -->
         <section class="quick-card" id="swaptions-matrix" data-alias="swaps-matrix">
@@ -850,48 +1443,243 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 6 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 6.1</div>
+                <div class="topic-quiz-question">A corporate purchases a European Payer Swaption with a strike rate of 6.25% p.a. on a 5-year swap. At expiration, prevailing market swap rates have risen to 7.00% p.a. What action will the corporate take?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'irr-q13-ans')">
+                        <strong>A.</strong>&nbsp;Exercise the swaption to pay fixed at 6.25% and receive floating
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q13-ans')">
+                        <strong>B.</strong>&nbsp;Exercise the swaption to receive fixed at 6.25% and pay floating
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q13-ans')">
+                        <strong>C.</strong>&nbsp;Allow the swaption to expire unexercised because 7.00% is higher
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q13-ans')">
+                        <strong>D.</strong>&nbsp;Convert the swaption into an overnight index swap
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('irr-q13-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="irr-q13-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    A Payer Swaption grants the right to pay fixed and receive floating. Since the prevailing market rate ($7.00\%$) is higher than the strike ($6.25\%$), the holder exercises the swaption to lock in the below-market fixed payment of $6.25\%$.
+                </div>
+            </div>
+
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 6.2</div>
+                <div class="topic-quiz-question">Which market participant is the natural hedger that would purchase a "Receiver Swaption"?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'irr-q14-ans')">
+                        <strong>A.</strong>&nbsp;An institutional investor holding floating-rate debt assets seeking protection against declining interest yields
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q14-ans')">
+                        <strong>B.</strong>&nbsp;A floating-rate corporate borrower seeking protection against rising interest rates
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q14-ans')">
+                        <strong>C.</strong>&nbsp;An equity portfolio manager hedging against foreign exchange volatility
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q14-ans')">
+                        <strong>D.</strong>&nbsp;A fixed-rate issuer looking to convert debt into floating obligations
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('irr-q14-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="irr-q14-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    A Receiver Swaption gives the holder the right to receive fixed and pay floating. An investor who receives floating interest on debt investments is exposed to reinvestment risk if interest rates fall; buying a receiver swaption sets a floor on the yield.
+                </div>
+            </div>
+</section>
 
         <!-- 6. Exam Pitfalls -->
         <section class="quick-card" id="exam-pitfalls">
-            <h2>6. ICAI Exam Pitfalls &amp; Traps</h2>
+            <h2>6. Exam Pitfalls &amp; Traps</h2>
             <div class="exam-trap">
-                <strong>⚠️ Pitfall 1: Forgetting to Discount FRA Settlement</strong><br>
+                <strong>âš ï¸ Pitfall 1: Forgetting to Discount FRA Settlement</strong><br>
                 Never just calculate $N \times (RR - FR) \times \frac{dtm}{DY}$. That is the interest at maturity!
                 Settlement happens at fixing date (start of loan period), so you <strong>must divide by $[1 + RR \times
                     \frac{dtm}{DY}]$</strong>.
             </div>
             <div class="exam-trap">
-                <strong>⚠️ Pitfall 2: Day-Count Bases in Swaps</strong><br>
+                <strong>âš ï¸ Pitfall 2: Day-Count Bases in Swaps</strong><br>
                 Generic fixed swap legs use <strong>30/360</strong> ($\frac{180}{360} = 0.50$). Floating legs use
                 <strong>actual days / 360</strong> (e.g., $\frac{181}{360} = 0.502778$). Always watch for the differing
                 denominators!
             </div>
             <div class="exam-trap">
-                <strong>⚠️ Pitfall 3: Weekend Handling in OIS Calculations</strong><br>
+                <strong>âš ï¸ Pitfall 3: Weekend Handling in OIS Calculations</strong><br>
                 When compiling daily MIBOR tables, Saturday's rate applies for <strong>2 days</strong> (Saturday +
                 Sunday) because Sunday is a banking holiday. Multiply by $\frac{2}{365}$.
             </div>
-        </section>
+        
+            <!-- Test Your Knowledge: Section 7 -->
+            <div class="topic-quiz-card">
+                <div class="topic-quiz-badge">📝 Test Your Knowledge • Section 7.1</div>
+                <div class="topic-quiz-question">A portfolio manager holds an INR 60 crore bond portfolio with a modified duration of 5.5 years. To hedge against rising yields, the manager sells 10-year GOI bond futures trading at INR 98 (contract size INR 2,00,000 notional) with a CTD modified duration of 7.0 years. How many futures contracts should be sold?</div>
+                <div class="mcq-options-grid">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'irr-q15-ans')">
+                        <strong>A.</strong>&nbsp;2,408 contracts (approx.)
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q15-ans')">
+                        <strong>B.</strong>&nbsp;1,500 contracts
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q15-ans')">
+                        <strong>C.</strong>&nbsp;3,061 contracts
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'irr-q15-ans')">
+                        <strong>D.</strong>&nbsp;1,850 contracts
+                    </div>
+                </div>
+                <div class="quiz-btn-row">
+                    <button type="button" class="reveal-btn" onclick="toggleAnswer('irr-q15-ans')">👁️ Show Answer &amp; Explanation</button>
+                </div>
+                <div class="explanation-box" id="irr-q15-ans">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Detailed Explanation:</strong><br>
+                    $\text{Number of Contracts } N = \frac{V_p \times D_p}{V_f \times D_f}$
+                    $V_p \times D_p = 60,00,00,000 \times 5.5 = 330,00,00,000$
+                    $V_f = 2,00,000 \times \frac{98}{100} = \text{INR } 1,96,000 \implies V_f \times D_f = 1,96,000 \times 7.0 = 13,72,000$
+                    $N = \frac{330,00,00,000}{13,72,000} \approx 2,405.25 \approx 2,408 \text{ contracts}$
+                </div>
+            </div>
+</section>
 
         <footer class="footer-nav">
-            <a href="international_finance.html" class="footer-btn">← Ch 11 Quick Notes</a>
-            <a href="business_valuation.html" class="footer-btn">Ch 13 Quick Notes →</a>
+            <a href="international_finance.html" class="footer-btn">â† Ch 11 Quick Notes</a>
+            <a href="business_valuation.html" class="footer-btn">Ch 13 Quick Notes â†’</a>
         </footer>
-    </main>
+            </div>
+        </main>
+    </div>
 
+    <!-- Unified Chapter Navigation & Interactive Scripts -->
     <script>
-        function toggleTheme() {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', targetTheme);
-            localStorage.setItem('afm-theme', targetTheme);
+        function checkOption(el, isCorrect, ansId) {
+            var parent = el.closest('.mcq-container') || el.closest('.quiz-card') || el.closest('.problem-card');
+            if (!parent) return;
+            var allOptions = parent.querySelectorAll('.mcq-option-item');
+            allOptions.forEach(function(opt) {
+                opt.style.pointerEvents = 'none';
+                if (opt.getAttribute('data-correct') === 'true') {
+                    opt.classList.add('reveal-correct');
+                }
+            });
+            var fb = parent.querySelector('.mcq-feedback');
+            if (isCorrect) {
+                el.classList.add('selected-correct');
+                if (fb) {
+                    fb.innerHTML = '✓ Correct! Outstanding work.';
+                    fb.className = 'mcq-feedback correct';
+                }
+            } else {
+                el.classList.add('selected-incorrect');
+                if (fb) {
+                    fb.innerHTML = '✗ Incorrect. Review the detailed solution below.';
+                    fb.className = 'mcq-feedback incorrect';
+                }
+            }
+            var ans = document.getElementById(ansId);
+            if (ans) {
+                ans.style.display = 'block';
+            }
         }
-        (function () {
-            const savedTheme = localStorage.getItem('afm-theme') || 'light';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-        })();
+
+        function toggleAnswer(ansId) {
+            var ans = document.getElementById(ansId);
+            if (!ans) return;
+            var isHidden = (ans.style.display === 'none' || ans.style.display === '');
+            ans.style.display = isHidden ? 'block' : 'none';
+            if (isHidden) {
+                var parent = ans.closest('.mcq-container') || ans.closest('.quiz-card') || ans.closest('.problem-card');
+                if (parent) {
+                    var allOptions = parent.querySelectorAll('.mcq-option-item');
+                    allOptions.forEach(function(opt) {
+                        if (opt.getAttribute('data-correct') === 'true') {
+                            opt.classList.add('reveal-correct');
+                        }
+                    });
+                }
+            }
+        }
+
+        function toggleSidebar() {
+            var sb = document.getElementById('sidebar');
+            if (!sb) return;
+            if (window.innerWidth <= 900) {
+                sb.classList.toggle('mobile-open');
+            } else {
+                sb.classList.toggle('hidden');
+            }
+        }
+
+        // Reading progress tracking & sidebar link highlighting
+        var contentEl = document.querySelector('.content');
+        var progressBar = document.getElementById('reading-progress');
+        var sections = document.querySelectorAll('.section-card, section[id], .theory-topic, .problem-card');
+        var sidebarLinks = document.querySelectorAll('.sidebar a');
+
+        function updateReadingProgressColor(progressBar, progress) {
+            var r, g, b;
+            if (progress <= 33) {
+                var t = progress / 33;
+                r = Math.round(239 + (234 - 239) * t);
+                g = Math.round(68 + (179 - 68) * t);
+                b = Math.round(68 + (8 - 68) * t);
+            } else if (progress <= 66) {
+                var t = (progress - 33) / 33;
+                r = Math.round(234 + (34 - 234) * t);
+                g = Math.round(179 + (197 - 179) * t);
+                b = Math.round(8 + (94 - 8) * t);
+            } else {
+                var t = (progress - 66) / 34;
+                r = Math.round(34 + (16 - 34) * t);
+                g = Math.round(197 + (185 - 197) * t);
+                b = Math.round(94 + (129 - 94) * t);
+            }
+            progressBar.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+            progressBar.style.boxShadow = '0 0 8px rgba(' + r + ',' + g + ',' + b + ', 0.45)';
+        }
+
+        if (progressBar) { updateReadingProgressColor(progressBar, 0); }
+
+        if (contentEl && progressBar) {
+            contentEl.addEventListener('scroll', function() {
+                var totalScroll = contentEl.scrollHeight - contentEl.clientHeight;
+                if (totalScroll > 0) {
+                    var currentScroll = contentEl.scrollTop;
+                    var progress = (currentScroll / totalScroll) * 100;
+                    progressBar.style.width = progress + '%';
+                    updateReadingProgressColor(progressBar, progress);
+                }
+
+                var current = '';
+                sections.forEach(function(section) {
+                    var sectionTop = section.offsetTop - contentEl.offsetTop;
+                    if (contentEl.scrollTop >= sectionTop - 140) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                if (current) {
+                    sidebarLinks.forEach(function(link) {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + current) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
     </script>
 </body>
-
 </html>
+

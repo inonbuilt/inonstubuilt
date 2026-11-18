@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@
     <meta name="description"
         content="Fast-track exam revision cheat sheet for CA Final AFM Chapter 15: Startup Finance. Complete CA Final AFM Chapter 15 Startup Finance notes. Bootstrapping, VC funding lifecycle, Pitch presentations, Unicorn tiers, Startup India tax exemptions, and succession planning.">
     <meta name="keywords"
-        content="Startup Finance CA Final AFM, Bootstrapping methods, Venture Capital funding stages, Pitch deck 8 slides, Unicorn valuation tiers, Startup India Section 80-IAC, Chapter 15, CA Final AFM Paper 2, ICAI New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
+        content="Startup Finance CA Final AFM, Bootstrapping methods, Venture Capital funding stages, Pitch deck 8 slides, Unicorn valuation tiers, Startup India Section 80-IAC, Chapter 15, CA Final AFM Paper 2, New Scheme AFM notes, CA Final May 2026 Nov 2026 notes, Calcium Notes">
     <meta name="author" content="Calcium Notes">
     <link rel="canonical" href="https://www.calciumnotes.com/bin/notes/final/afm/startup_finance.html">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -48,7 +48,7 @@
     "name": "CA Final AFM Chapter 15: Startup Finance (Quick Revision)",
     "description": "Fast-track exam revision cheat sheet for CA Final AFM Chapter 15: Startup Finance. Complete CA Final AFM Chapter 15 Startup Finance notes. Bootstrapping, VC funding lifecycle, Pitch presentations, Unicorn tiers, Startup India tax exemptions, and succession planning.",
     "learningResourceType": "Revision Cheat Sheet",
-    "educationalLevel": "CA Final (ICAI New Scheme)",
+    "educationalLevel": "CA Final (New Scheme)",
     "inLanguage": "en",
     "isAccessibleForFree": true,
     "author": {
@@ -71,7 +71,56 @@
         "url": "https://www.calciumnotes.com/bin/notes/notes/afmnotes.html"
     }
 }
-    </script>
+    
+    // Interactive MCQ Verification & Reveal Logic
+    function checkOption(el, isCorrect, ansId) {
+        var parent = el.closest('.mcq-container');
+        if (!parent) return;
+        var allOptions = parent.querySelectorAll('.mcq-option-item');
+        allOptions.forEach(function(opt) {
+            opt.style.pointerEvents = 'none';
+            if (opt.getAttribute('data-correct') === 'true') {
+                opt.classList.add('reveal-correct');
+            }
+        });
+        var fb = parent.querySelector('.mcq-feedback');
+        if (isCorrect) {
+            el.classList.add('selected-correct');
+            if (fb) {
+                fb.innerHTML = '✓ Correct! Outstanding work.';
+                fb.className = 'mcq-feedback correct';
+            }
+        } else {
+            el.classList.add('selected-incorrect');
+            if (fb) {
+                fb.innerHTML = '✗ Incorrect. Review the detailed solution below.';
+                fb.className = 'mcq-feedback incorrect';
+            }
+        }
+        var ans = document.getElementById(ansId);
+        if (ans) {
+            ans.style.display = 'block';
+        }
+    }
+
+    function toggleAnswer(ansId) {
+        var ans = document.getElementById(ansId);
+        if (!ans) return;
+        var isHidden = (ans.style.display === 'none' || ans.style.display === '');
+        ans.style.display = isHidden ? 'block' : 'none';
+        if (isHidden) {
+            var parent = ans.closest('.mcq-container');
+            if (parent) {
+                var allOptions = parent.querySelectorAll('.mcq-option-item');
+                allOptions.forEach(function(opt) {
+                    if (opt.getAttribute('data-correct') === 'true') {
+                        opt.classList.add('reveal-correct');
+                    }
+                });
+            }
+        }
+    }
+</script>
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -103,7 +152,56 @@
         }
     ]
 }
-    </script>
+    
+    // Interactive MCQ Verification & Reveal Logic
+    function checkOption(el, isCorrect, ansId) {
+        var parent = el.closest('.mcq-container');
+        if (!parent) return;
+        var allOptions = parent.querySelectorAll('.mcq-option-item');
+        allOptions.forEach(function(opt) {
+            opt.style.pointerEvents = 'none';
+            if (opt.getAttribute('data-correct') === 'true') {
+                opt.classList.add('reveal-correct');
+            }
+        });
+        var fb = parent.querySelector('.mcq-feedback');
+        if (isCorrect) {
+            el.classList.add('selected-correct');
+            if (fb) {
+                fb.innerHTML = '✓ Correct! Outstanding work.';
+                fb.className = 'mcq-feedback correct';
+            }
+        } else {
+            el.classList.add('selected-incorrect');
+            if (fb) {
+                fb.innerHTML = '✗ Incorrect. Review the detailed solution below.';
+                fb.className = 'mcq-feedback incorrect';
+            }
+        }
+        var ans = document.getElementById(ansId);
+        if (ans) {
+            ans.style.display = 'block';
+        }
+    }
+
+    function toggleAnswer(ansId) {
+        var ans = document.getElementById(ansId);
+        if (!ans) return;
+        var isHidden = (ans.style.display === 'none' || ans.style.display === '');
+        ans.style.display = isHidden ? 'block' : 'none';
+        if (isHidden) {
+            var parent = ans.closest('.mcq-container');
+            if (parent) {
+                var allOptions = parent.querySelectorAll('.mcq-option-item');
+                allOptions.forEach(function(opt) {
+                    if (opt.getAttribute('data-correct') === 'true') {
+                        opt.classList.add('reveal-correct');
+                    }
+                });
+            }
+        }
+    }
+</script>
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -127,18 +225,165 @@
         }
     ]
 }
-    </script>
+    
+    // Interactive MCQ Verification & Reveal Logic
+    function checkOption(el, isCorrect, ansId) {
+        var parent = el.closest('.mcq-container');
+        if (!parent) return;
+        var allOptions = parent.querySelectorAll('.mcq-option-item');
+        allOptions.forEach(function(opt) {
+            opt.style.pointerEvents = 'none';
+            if (opt.getAttribute('data-correct') === 'true') {
+                opt.classList.add('reveal-correct');
+            }
+        });
+        var fb = parent.querySelector('.mcq-feedback');
+        if (isCorrect) {
+            el.classList.add('selected-correct');
+            if (fb) {
+                fb.innerHTML = '✓ Correct! Outstanding work.';
+                fb.className = 'mcq-feedback correct';
+            }
+        } else {
+            el.classList.add('selected-incorrect');
+            if (fb) {
+                fb.innerHTML = '✗ Incorrect. Review the detailed solution below.';
+                fb.className = 'mcq-feedback incorrect';
+            }
+        }
+        var ans = document.getElementById(ansId);
+        if (ans) {
+            ans.style.display = 'block';
+        }
+    }
+
+    function toggleAnswer(ansId) {
+        var ans = document.getElementById(ansId);
+        if (!ans) return;
+        var isHidden = (ans.style.display === 'none' || ans.style.display === '');
+        ans.style.display = isHidden ? 'block' : 'none';
+        if (isHidden) {
+            var parent = ans.closest('.mcq-container');
+            if (parent) {
+                var allOptions = parent.querySelectorAll('.mcq-option-item');
+                allOptions.forEach(function(opt) {
+                    if (opt.getAttribute('data-correct') === 'true') {
+                        opt.classList.add('reveal-correct');
+                    }
+                });
+            }
+        }
+    }
+</script>
 
     <!-- KaTeX for High-Fidelity Math Rendering -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js">
+    // Interactive MCQ Verification & Reveal Logic
+    function checkOption(el, isCorrect, ansId) {
+        var parent = el.closest('.mcq-container');
+        if (!parent) return;
+        var allOptions = parent.querySelectorAll('.mcq-option-item');
+        allOptions.forEach(function(opt) {
+            opt.style.pointerEvents = 'none';
+            if (opt.getAttribute('data-correct') === 'true') {
+                opt.classList.add('reveal-correct');
+            }
+        });
+        var fb = parent.querySelector('.mcq-feedback');
+        if (isCorrect) {
+            el.classList.add('selected-correct');
+            if (fb) {
+                fb.innerHTML = '✓ Correct! Outstanding work.';
+                fb.className = 'mcq-feedback correct';
+            }
+        } else {
+            el.classList.add('selected-incorrect');
+            if (fb) {
+                fb.innerHTML = '✗ Incorrect. Review the detailed solution below.';
+                fb.className = 'mcq-feedback incorrect';
+            }
+        }
+        var ans = document.getElementById(ansId);
+        if (ans) {
+            ans.style.display = 'block';
+        }
+    }
+
+    function toggleAnswer(ansId) {
+        var ans = document.getElementById(ansId);
+        if (!ans) return;
+        var isHidden = (ans.style.display === 'none' || ans.style.display === '');
+        ans.style.display = isHidden ? 'block' : 'none';
+        if (isHidden) {
+            var parent = ans.closest('.mcq-container');
+            if (parent) {
+                var allOptions = parent.querySelectorAll('.mcq-option-item');
+                allOptions.forEach(function(opt) {
+                    if (opt.getAttribute('data-correct') === 'true') {
+                        opt.classList.add('reveal-correct');
+                    }
+                });
+            }
+        }
+    }
+</script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {
             delimiters: [
                 {left: '$$', right: '$$', display: true},
                 {left: '$', right: '$', display: false}
             ],
             throwOnError: false
-        });"></script>
+        });">
+    // Interactive MCQ Verification & Reveal Logic
+    function checkOption(el, isCorrect, ansId) {
+        var parent = el.closest('.mcq-container');
+        if (!parent) return;
+        var allOptions = parent.querySelectorAll('.mcq-option-item');
+        allOptions.forEach(function(opt) {
+            opt.style.pointerEvents = 'none';
+            if (opt.getAttribute('data-correct') === 'true') {
+                opt.classList.add('reveal-correct');
+            }
+        });
+        var fb = parent.querySelector('.mcq-feedback');
+        if (isCorrect) {
+            el.classList.add('selected-correct');
+            if (fb) {
+                fb.innerHTML = '✓ Correct! Outstanding work.';
+                fb.className = 'mcq-feedback correct';
+            }
+        } else {
+            el.classList.add('selected-incorrect');
+            if (fb) {
+                fb.innerHTML = '✗ Incorrect. Review the detailed solution below.';
+                fb.className = 'mcq-feedback incorrect';
+            }
+        }
+        var ans = document.getElementById(ansId);
+        if (ans) {
+            ans.style.display = 'block';
+        }
+    }
+
+    function toggleAnswer(ansId) {
+        var ans = document.getElementById(ansId);
+        if (!ans) return;
+        var isHidden = (ans.style.display === 'none' || ans.style.display === '');
+        ans.style.display = isHidden ? 'block' : 'none';
+        if (isHidden) {
+            var parent = ans.closest('.mcq-container');
+            if (parent) {
+                var allOptions = parent.querySelectorAll('.mcq-option-item');
+                allOptions.forEach(function(opt) {
+                    if (opt.getAttribute('data-correct') === 'true') {
+                        opt.classList.add('reveal-correct');
+                    }
+                });
+            }
+        }
+    }
+</script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -201,8 +446,8 @@
             color: var(--text-primary);
             line-height: 1.6;
             font-size: 14.5px;
-            display: flex;
-            min-height: 100vh;
+            
+            
         }
 
         /* Sidebar Responsive Navigation */
@@ -499,46 +744,151 @@
         .calc {
             font-family: var(--notes-table) !important;
         }
+    
+        /* Interactive MCQ Component Styles */
+        .mcq-container { background: var(--bg-card, #ffffff); border: 1px solid var(--border-color, #e2e8f0); border-radius: 10px; padding: 1.25rem; margin: 1.5rem 0; box-shadow: 0 2px 4px rgba(0,0,0,0.04); }
+        .mcq-question { font-weight: 600; font-size: 1rem; color: var(--text-primary, #1e293b); margin-bottom: 1rem; }
+        .mcq-options { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1rem; }
+        .mcq-option-item { display: flex; align-items: flex-start; padding: 0.75rem 1rem; border: 1px solid var(--border-color, #cbd5e1); border-radius: 8px; cursor: pointer; transition: all 0.2s ease; background: var(--bg-surface, #f8fafc); font-size: 0.95rem; color: var(--text-secondary, #334155); }
+        .mcq-option-item:hover { border-color: var(--primary, #2563eb); background: rgba(37, 99, 235, 0.04); }
+        .mcq-option-item.selected-correct { background-color: rgba(34, 197, 94, 0.15) !important; border-color: #22c55e !important; color: #15803d !important; font-weight: 600; }
+        .mcq-option-item.selected-incorrect { background-color: rgba(239, 68, 68, 0.15) !important; border-color: #ef4444 !important; color: #b91c1c !important; }
+        .mcq-option-item.reveal-correct { background-color: rgba(34, 197, 94, 0.12) !important; border-color: #22c55e !important; color: #15803d !important; font-weight: 600; }
+        .mcq-opt-label { font-weight: 700; margin-right: 0.6rem; min-width: 1.5rem; }
+        .mcq-feedback { font-weight: 600; font-size: 0.9rem; margin-top: 0.4rem; }
+        .mcq-feedback.correct { color: #16a34a; }
+        .mcq-feedback.incorrect { color: #dc2626; }
+        .btn-toggle-answer { background: var(--primary, #2563eb); color: #ffffff; border: none; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+        .btn-toggle-answer:hover { background: #1d4ed8; }
+        .mcq-explanation { display: none; margin-top: 1rem; padding: 1rem; background: var(--bg-elevated, #f1f5f9); border-left: 4px solid var(--primary, #2563eb); border-radius: 4px; font-size: 0.92rem; color: var(--text-secondary, #334155); line-height: 1.6; }
+        .dark .mcq-container { background: #1e293b; border-color: #334155; }
+        .dark .mcq-question { color: #f8fafc; }
+        .dark .mcq-option-item { background: #0f172a; border-color: #334155; color: #cbd5e1; }
+        .dark .mcq-option-item:hover { border-color: #60a5fa; background: rgba(96, 165, 250, 0.08); }
+        .dark .mcq-explanation { background: #0f172a; border-color: #60a5fa; color: #cbd5e1; }
+    
+        /* Universal Single-Scrollbar Fix */
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+            padding-bottom: 0 !important;
+            height: 100% !important;
+            max-height: 100vh !important;
+            max-height: 100dvh !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            display: block !important;
+            box-sizing: border-box !important;
+        }
+        html::-webkit-scrollbar, body::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+        .topbar {
+            height: 64px !important;
+            width: 100% !important;
+            margin: 0 !important;
+            box-sizing: border-box !important;
+            flex-shrink: 0 !important;
+            position: relative !important;
+            z-index: 100;
+        }
+        .layout {
+            display: flex !important;
+            height: calc(100vh - 64px) !important;
+            height: calc(100dvh - 64px) !important;
+            width: 100% !important;
+            overflow: hidden !important;
+            box-sizing: border-box !important;
+        }
+        .sidebar {
+            width: 290px;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            flex-shrink: 0 !important;
+            box-sizing: border-box !important;
+        }
+        .content {
+            flex: 1 1 auto !important;
+            height: 100% !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            padding: 36px 48px !important;
+            box-sizing: border-box !important;
+            scroll-behavior: smooth;
+        }
+        .content-container {
+            max-width: 940px !important;
+            margin: 0 auto !important;
+            padding-bottom: 80px !important;
+            box-sizing: border-box !important;
+        }
     </style>
+    <!-- Modern Typography & Unified Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/unified_notes.css">
 </head>
 
 <body>
 
-    <!-- Left Sticky Sidebar Index -->
-    <nav class="sidebar">
-        <div class="sidebar-brand">
-            <span>AFM Quick Notes</span>
-            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">☀️/🌙</button>
+    <header class="topbar">
+        <div class="topbar-left">
+            <a href="../../notes/afmnotes.html" class="back-hub-btn">← AFM Hub</a>
+            <div class="chapter-title">Chapter 15: Startup Finance (⚡ Quick Revision)</div>
         </div>
+        <div class="topbar-right">
+            <div class="progress-container" title="Reading Progress">
+                <div class="progress-bar" id="reading-progress"></div>
+            </div>
+            <button class="toggle-btn" id="sidebar-toggle" onclick="toggleSidebar()">☰ Contents</button>
+        </div>
+    </header>
 
-        <div class="nav-group-title">Quick Navigation</div>
-        <a href="#overview" class="nav-link">1. Chapter Mindmap &amp; Weightage</a>
-        <a href="#bootstrapping" class="nav-link">2. Bootstrapping Methods</a>
-        <a href="#innovative" class="nav-link">3. Innovative Financing Modes</a>
-        <a href="#pitch" class="nav-link">4. Pitch Deck (8 Golden Slides)</a>
-        <a href="#unicorn" class="nav-link">5. Unicorn Valuation Tiers</a>
-        <a href="#vc-stages" class="nav-link">6. VC Funding Stages</a>
-        <a href="#vc-process" class="nav-link">7. VC Investment Process</a>
-        <a href="#startup-india" class="nav-link">8. Startup India Tax Reliefs</a>
-        <a href="#succession" class="nav-link">9. Succession Planning</a>
-        <a href="#exam-tips" class="nav-link">10. High-Yield Exam Traps</a>
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-title">Chapter Contents</div>
+            <nav>
+                <ul>
+                    <li><a href="#overview" class="active">1. Chapter Mindmap &amp; Weightage</a></li>
+                    <li><a href="#bootstrapping">2. Bootstrapping Methods</a></li>
+                    <li><a href="#innovative">3. Innovative Financing Modes</a></li>
+                    <li><a href="#pitch">4. Pitch Deck (8 Golden Slides)</a></li>
+                    <li><a href="#unicorn">5. Unicorn Valuation Tiers</a></li>
+                    <li><a href="#vc-stages">6. VC Funding Stages</a></li>
+                    <li><a href="#vc-process">7. VC Investment Process</a></li>
+                    <li><a href="#startup-india">8. Startup India Tax Reliefs</a></li>
+                    <li><a href="#succession">9. Succession Planning</a></li>
+                    <li><a href="#exam-tips">10. High-Yield Exam Traps</a></li>
+                    <li><a href="../../notes/afmnotes.html">â† Quick Notes Index</a></li>
+                    <li><a href="../../notes/afmfullnotes.html">â† Full Notes Index</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-        <div class="nav-group-title">Hub Portals</div>
-        <a href="../../notes/afmnotes.html" class="nav-link">← Quick Notes Index</a>
-        <a href="../../notes/afmfullnotes.html" class="nav-link">← Full Notes Index</a>
-    </nav>
+        <main class="content">
+            <div class="content-container">
 
-    <!-- Main Content Area -->
-    <main class="main-wrapper">
-        <div class="header-section" id="overview">
-            <span class="header-tag">CA Final AFM • Chapter 15</span>
-            <h1>Startup Finance — Quick Revision Notes</h1>
+                <div class="chapter-header">
+                    <div class="chapter-badge">CA Final AFM • Paper 2</div>
+                    <h1>Chapter 15: Startup Finance</h1>
+                    <p>Fast-track exam revision on startup bootstrapping methods, innovative funding vehicles (P2P, Crowdfunding, PO financing), 8-slide investor pitch presentations, Unicorn valuation tiers, VC investment lifecycle, and succession planning.</p>
+                    <div class="chapter-meta">
+                        <span>📚 Standard Curriculum Study Material</span><span>⏱️ Read Time: ~40 mins</span><span>🎯 Exam Weightage: 8 – 14 Marks</span>
+                    </div>
+                </div>
+<div class="header-section" id="overview">
+            <span class="header-tag">CA Final AFM â€¢ Chapter 15</span>
+            <h1>Startup Finance â€” Quick Revision Notes</h1>
             <p>Comprehensive high-yield cheat sheets, comparison matrices, regulatory tax relief points, and venture
                 funding lifecycle frameworks.</p>
             <div style="margin-top: 12px;">
                 <a href="startup_finance_full.html"
-                    style="background: var(--accent); color: #fff; padding: 6px 14px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 13px; display: inline-block;">📖
-                    Open Full In-Depth Notes →</a>
+                    style="background: var(--accent); color: #fff; padding: 6px 14px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 13px; display: inline-block;">ðŸ“–
+                    Open Full In-Depth Notes â†’</a>
             </div>
         </div>
 
@@ -549,9 +899,9 @@
                 classifications, pitch deck elements, innovative funding mechanisms, and succession planning strategies.
             </p>
             <div class="callout-box">
-                <strong>🎯 Key Scoring Focus Areas:</strong>
+                <strong>ðŸŽ¯ Key Scoring Focus Areas:</strong>
                 <ul style="margin-left: 20px; margin-top: 8px;">
-                    <li><strong>Pitch Presentation:</strong> The 8 mandatory slides required by ICAI examiners.</li>
+                    <li><strong>Pitch Presentation:</strong> The 8 mandatory slides required by examiners.</li>
                     <li><strong>Venture Capital Stages:</strong> Seed Capital $\rightarrow$ Startup $\rightarrow$ First
                         Round $\rightarrow$ Second Round $\rightarrow$ Mezzanine $\rightarrow$ Exit.</li>
                     <li><strong>Innovative Funding Modes:</strong> P2P Lending, Crowdfunding (4 types), Incubators vs
@@ -610,6 +960,62 @@
                     </tr>
                 </tbody>
             </table>
+        
+            <!-- Interactive MCQs: Bootstrapping Methods -->
+            <div class="mcq-container">
+                <div class="mcq-question"><strong>Concept Check 1:</strong> Which of the following best defines "Bootstrapping" in startup enterprise finance, and which technique represents an internal bootstrapping mechanism rather than external equity injection?</div>
+                <div class="mcq-options">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q1-ans')">
+                        <span class="mcq-opt-label">A.</span> Raising Series A growth capital from institutional venture capital funds to finance product development and market rollout.
+                    </div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sf-q1-ans')">
+                        <span class="mcq-opt-label">B.</span> Founding and building a company relying on personal finances, sweat equity, and operating cash flows, utilizing operating leases and receivables factoring.
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q1-ans')">
+                        <span class="mcq-opt-label">C.</span> Borrowing mezzanine convertible bridge debt from commercial syndicates backed by founder promoter pledges.
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q1-ans')">
+                        <span class="mcq-opt-label">D.</span> Issuing non-cumulative participating preference shares via an offshore special purpose vehicle.
+                    </div>
+                </div>
+                <div class="mcq-feedback"></div>
+                <button type="button" class="btn-toggle-answer" onclick="toggleAnswer('sf-q1-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div id="sf-q1-ans" class="mcq-explanation">
+                    <strong>Correct Answer: B</strong><br>
+                    <strong>Core Theory &amp; Strategic Mechanics:</strong><br>
+                    • <em>Bootstrapping</em> is an operational financing framework where an entrepreneur founds and expands a venture purely using personal savings, sweat equity, and internal operating revenues generated by early customer sales without ceding equity control or taking on burdensome institutional debt.<br>
+                    • Key operational bootstrapping tactics include: (1) <strong>Operating Leases:</strong> leasing high-cost production equipment or office infrastructure to preserve liquid cash, (2) <strong>Factoring Receivables:</strong> converting B2B trade credit receivables into immediate liquidity, and (3) <strong>Trade Credit:</strong> negotiating extended supplier terms.
+                </div>
+            </div>
+
+            <div class="mcq-container">
+                <div class="mcq-question"><strong>Concept Check 2:</strong> A bootstrapped SaaS enterprise factors ₹50,00,000 of trade receivables due in 90 days. The factoring house agrees to advance 80% against invoices, deducts an upfront commission of 2% on the gross invoice amount, and reserves the remaining 20% until customer settlement. What is the net immediate liquid cash disbursed to the startup?</div>
+                <div class="mcq-options">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q2-ans')">
+                        <span class="mcq-opt-label">A.</span> ₹38,00,000
+                    </div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sf-q2-ans')">
+                        <span class="mcq-opt-label">B.</span> ₹39,00,000
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q2-ans')">
+                        <span class="mcq-opt-label">C.</span> ₹40,00,000
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q2-ans')">
+                        <span class="mcq-opt-label">D.</span> ₹41,00,000
+                    </div>
+                </div>
+                <div class="mcq-feedback"></div>
+                <button type="button" class="btn-toggle-answer" onclick="toggleAnswer('sf-q2-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div id="sf-q2-ans" class="mcq-explanation">
+                    <strong>Correct Answer: B (₹39,00,000)</strong><br>
+                    <strong>Mathematical Verification:</strong><br>
+                    1. Gross Value of Factored Receivables = ₹50,00,000<br>
+                    2. Agreed Advance Rate = 80% $\implies$ Advance Amount = ₹50,00,000 × 0.80 = ₹40,00,000<br>
+                    3. Upfront Factoring Commission = 2% on Gross Invoices = ₹50,00,000 × 0.02 = ₹1,00,000<br>
+                    4. Factor Reserve (withheld until debtor collection) = 20% = ₹10,00,000<br>
+                    5. Net Liquid Cash Disbursed Immediately = Advance Amount − Upfront Commission = ₹40,00,000 − ₹1,00,000 = <strong>₹39,00,000</strong>.
+                </div>
+            </div>
         </section>
 
         <!-- 3. Innovative Financing Modes -->
@@ -644,7 +1050,60 @@
                 <div class="mini-card">
                     <h4>6. Microfinance &amp; Mudra Loans</h4>
                     <p>Institutional micro-credit schemes (e.g. PMMY Shishu, Kishore, Tarun) providing collateral-free
-                        small business financing up to ₹10 Lakhs.</p>
+                        small business financing up to â‚¹10 Lakhs.</p>
+                </div>
+            </div>
+        
+            <!-- Interactive MCQs: Innovative Financing Methods -->
+            <div class="mcq-container">
+                <div class="mcq-question"><strong>Concept Check 3:</strong> Which of the following statements correctly delineates the structural and legal distinction between Peer-to-Peer (P2P) Lending and Reward-Based Crowdfunding?</div>
+                <div class="mcq-options">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q3-ans')">
+                        <span class="mcq-opt-label">A.</span> P2P lending dilutes founder equity, while reward-based crowdfunding creates long-term senior secured debentures.
+                    </div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sf-q3-ans')">
+                        <span class="mcq-opt-label">B.</span> P2P lending is an established debt-based mechanism where individual lenders earn fixed interest on unsecured loans, whereas reward-based crowdfunding pools non-equity contributions in exchange for early product delivery or brand perks.
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q3-ans')">
+                        <span class="mcq-opt-label">C.</span> Reward-based crowdfunding is strictly governed as an NBFC by the central bank, whereas P2P platforms remain completely unmonitored.
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q3-ans')">
+                        <span class="mcq-opt-label">D.</span> Both P2P lending and reward crowdfunding grant board seats and liquidation preferences to micro-investors.
+                    </div>
+                </div>
+                <div class="mcq-feedback"></div>
+                <button type="button" class="btn-toggle-answer" onclick="toggleAnswer('sf-q3-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div id="sf-q3-ans" class="mcq-explanation">
+                    <strong>Correct Answer: B</strong><br>
+                    <strong>Structural Comparison:</strong><br>
+                    • <strong>Peer-to-Peer (P2P) Lending:</strong> An online debt marketplace matching individual lenders directly with borrowers. The startup incurs a debt obligation and pays contractual principal and interest without ceding equity ownership.<br>
+                    • <strong>Reward-Based Crowdfunding:</strong> A contemporary financing mode (e.g. Kickstarter, Indiegogo) where backers pledge funds to help produce an innovative concept in exchange for non-financial incentives (e.g., prototype, early beta access, recognition) with zero repayment obligation and zero equity dilution.
+                </div>
+            </div>
+
+            <div class="mcq-container">
+                <div class="mcq-question"><strong>Concept Check 4:</strong> An emerging electronics hardware startup secures a confirmed purchase order worth ₹1,20,00,000 from a multinational retailer. However, the startup lacks liquid capital to purchase ₹70,00,000 of specialized semiconductor chips to assemble the devices. Which financing vehicle is specifically designed to disburse funds directly to the suppliers to fulfill this confirmed purchase order?</div>
+                <div class="mcq-options">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q4-ans')">
+                        <span class="mcq-opt-label">A.</span> Accounts Receivable Factoring
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q4-ans')">
+                        <span class="mcq-opt-label">B.</span> Venture Debt Bridge Round
+                    </div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sf-q4-ans')">
+                        <span class="mcq-opt-label">C.</span> Purchase Order (PO) Financing
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q4-ans')">
+                        <span class="mcq-opt-label">D.</span> Forfaiting of Export Receivables
+                    </div>
+                </div>
+                <div class="mcq-feedback"></div>
+                <button type="button" class="btn-toggle-answer" onclick="toggleAnswer('sf-q4-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div id="sf-q4-ans" class="mcq-explanation">
+                    <strong>Correct Answer: C</strong><br>
+                    <strong>Functional Distinction:</strong><br>
+                    • <strong>Purchase Order (PO) Financing:</strong> A funding arrangement where the financier advances capital directly to the manufacturer or supplier of raw materials based on a verified purchase order from a creditworthy buyer. This solves pre-production cash crunches.<br>
+                    • <strong>Factoring:</strong> Occurs strictly <em>post-production and post-delivery</em> once the invoice is generated and dispatched to the customer.
                 </div>
             </div>
         </section>
@@ -657,7 +1116,7 @@
                     <tr>
                         <th>Slide #</th>
                         <th>Slide Name</th>
-                        <th>Essential Content Required by ICAI</th>
+                        <th>Essential Content Required for Evaluation</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -705,6 +1164,65 @@
                     </tr>
                 </tbody>
             </table>
+        
+            <!-- Interactive MCQs: Pitch Deck & Presentation Architecture -->
+            <div class="mcq-container">
+                <div class="mcq-question"><strong>Concept Check 5:</strong> What is the universally recognized maximum presentation duration for an investor pitch deck, and what supporting financial documentation package must accompany the pitch?</div>
+                <div class="mcq-options">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q5-ans')">
+                        <span class="mcq-opt-label">A.</span> Exactly 60 minutes; accompanied by 10-year statutory tax assessment orders.
+                    </div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sf-q5-ans')">
+                        <span class="mcq-opt-label">B.</span> Less than 20 minutes; supported by 3 to 5-year projected Income Statement, Balance Sheet, and Cash Flow Statement.
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q5-ans')">
+                        <span class="mcq-opt-label">C.</span> 45 minutes; supported only by founder personal credit card statements.
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q5-ans')">
+                        <span class="mcq-opt-label">D.</span> 90 minutes; supported by full software codebase prints and trademark certificates.
+                    </div>
+                </div>
+                <div class="mcq-feedback"></div>
+                <button type="button" class="btn-toggle-answer" onclick="toggleAnswer('sf-q5-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div id="sf-q5-ans" class="mcq-explanation">
+                    <strong>Correct Answer: B</strong><br>
+                    <strong>Examination Takeaway:</strong><br>
+                    • <strong>Presentation Duration:</strong> Investor attention spans dictate that pitch decks should be concise, compelling, and completed in <strong>under 20 minutes</strong> (aligning with Guy Kawasaki's 10/20/30 pitch rule).<br>
+                    • <strong>Essential Financial Package:</strong> Angel and VC investors require three core projected financial statements covering 3–5 years: (1) Projected Income Statement, (2) Projected Balance Sheet, and (3) Projected Cash Flow Statement (reflecting burn rate and runway).
+                </div>
+            </div>
+
+            <div class="mcq-container">
+                <div class="mcq-question"><strong>Concept Check 6:</strong> Which sequence accurately reflects the 8 standard core slides required in a professional investor pitch presentation?</div>
+                <div class="mcq-options">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sf-q6-ans')">
+                        <span class="mcq-opt-label">A.</span> Introduction $\rightarrow$ Team $\rightarrow$ Problem $\rightarrow$ Solution $\rightarrow$ Marketing &amp; Customers $\rightarrow$ Financial Projections $\rightarrow$ Competition $\rightarrow$ Financing Ask &amp; Fund Utilization
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q6-ans')">
+                        <span class="mcq-opt-label">B.</span> Statutory Register $\rightarrow$ Tax Audit $\rightarrow$ Share Certificates $\rightarrow$ Fixed Assets $\rightarrow$ Winding-up Rules $\rightarrow$ Employee Grievances $\rightarrow$ Secretarial Audit $\rightarrow$ Bank Guarantees
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q6-ans')">
+                        <span class="mcq-opt-label">C.</span> Founder Wealth $\rightarrow$ Litigation History $\rightarrow$ Regulatory Fines $\rightarrow$ Debt Covenants $\rightarrow$ Scrap Value $\rightarrow$ Dividend Distribution $\rightarrow$ Buyback $\rightarrow$ Insolvency
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q6-ans')">
+                        <span class="mcq-opt-label">D.</span> Product Blueprints $\rightarrow$ Raw Material Sourcing $\rightarrow$ Warehouse Leases $\rightarrow$ Factory Licenses $\rightarrow$ Customs Tariffs $\rightarrow$ Union Negotiation $\rightarrow$ Court Filings $\rightarrow$ Exit
+                    </div>
+                </div>
+                <div class="mcq-feedback"></div>
+                <button type="button" class="btn-toggle-answer" onclick="toggleAnswer('sf-q6-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div id="sf-q6-ans" class="mcq-explanation">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Core Pitch Deck Architecture:</strong><br>
+                    1. <strong>Introduction:</strong> Executive hook and compelling vision.<br>
+                    2. <strong>Team:</strong> Core founders, technical depth, and advisory board.<br>
+                    3. <strong>Problem:</strong> Pain point validated in the target market.<br>
+                    4. <strong>Solution:</strong> Value proposition and proprietary technology.<br>
+                    5. <strong>Marketing / Market Size:</strong> TAM, SAM, SOM and customer acquisition strategy.<br>
+                    6. <strong>Projections:</strong> Unit economics, path to profitability, and cash runway.<br>
+                    7. <strong>Competition:</strong> Competitive moat and differentiation grid.<br>
+                    8. <strong>Financing:</strong> Capital ask, deployment milestones, and past fund utilization.
+                </div>
+            </div>
         </section>
 
         <!-- 5. Unicorn Tiers -->
@@ -746,6 +1264,67 @@
                     </tr>
                 </tbody>
             </table>
+        
+            <!-- Interactive MCQs: Unicorn Tiers & Valuation Frameworks -->
+            <div class="mcq-container">
+                <div class="mcq-question"><strong>Concept Check 7:</strong> Which startup valuation tier is correctly mapped to its official global venture capital benchmark?</div>
+                <div class="mcq-options">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q7-ans')">
+                        <span class="mcq-opt-label">A.</span> Unicorn = Valuation $\ge$ $100 Million; Decacorn = Valuation $\ge$ $1 Billion
+                    </div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sf-q7-ans')">
+                        <span class="mcq-opt-label">B.</span> Unicorn = Valuation $\ge$ $1 Billion; Decacorn = Valuation $\ge$ $10 Billion; Hectocorn = Valuation $\ge$ $100 Billion
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q7-ans')">
+                        <span class="mcq-opt-label">C.</span> Minicorn = Valuation $\ge$ $50 Million; Unicorn = Valuation $\ge$ $500 Million
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q7-ans')">
+                        <span class="mcq-opt-label">D.</span> Soonicorn = Any company whose shares are listed on the main board stock exchange
+                    </div>
+                </div>
+                <div class="mcq-feedback"></div>
+                <button type="button" class="btn-toggle-answer" onclick="toggleAnswer('sf-q7-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div id="sf-q7-ans" class="mcq-explanation">
+                    <strong>Correct Answer: B</strong><br>
+                    <strong>Global Valuation Taxonomy:</strong><br>
+                    • <strong>Minicorn:</strong> Early-stage venture with valuation $\ge$ $1 Million.<br>
+                    • <strong>Soonicorn:</strong> "Soon-to-be unicorn" displaying rapid traction, typically valued between $200M and $900M.<br>
+                    • <strong>Unicorn:</strong> Privately held startup company achieving a valuation of <strong>$1 Billion+</strong>.<br>
+                    • <strong>Decacorn:</strong> Startup achieving a valuation of <strong>$10 Billion+</strong>.<br>
+                    • <strong>Hectocorn:</strong> Startup achieving a mega-valuation of <strong>$100 Billion+</strong>.
+                </div>
+            </div>
+
+            <div class="mcq-container">
+                <div class="mcq-question"><strong>Concept Check 8:</strong> Under the Dave Berkus Method for pre-revenue startup valuation, up to $500,000 is credited for each of 5 key quantitative/qualitative pillars (capping total pre-money valuation at $2.5 Million). An AI startup is scored: Sound Idea ($450,000), Working Prototype ($400,000), Experienced Management Team ($350,000), Strategic Partnerships ($300,000), but has zero Product Rollout/Sales ($0). What is its pre-money valuation?</div>
+                <div class="mcq-options">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q8-ans')">
+                        <span class="mcq-opt-label">A.</span> $1,250,000
+                    </div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sf-q8-ans')">
+                        <span class="mcq-opt-label">B.</span> $1,500,000
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q8-ans')">
+                        <span class="mcq-opt-label">C.</span> $1,750,000
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q8-ans')">
+                        <span class="mcq-opt-label">D.</span> $2,000,000
+                    </div>
+                </div>
+                <div class="mcq-feedback"></div>
+                <button type="button" class="btn-toggle-answer" onclick="toggleAnswer('sf-q8-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div id="sf-q8-ans" class="mcq-explanation">
+                    <strong>Correct Answer: B ($1,500,000)</strong><br>
+                    <strong>Step-by-Step Berkus Model Formulation:</strong><br>
+                    $$\text{Pre-Money Valuation} = \sum_{i=1}^5 \text{Score}_i$$<br>
+                    1. Sound Basic Idea: $450,000<br>
+                    2. Quality Management Team: $350,000<br>
+                    3. Working Prototype (reducing technology risk): $400,000<br>
+                    4. Strategic Relationships (market risk reduction): $300,000<br>
+                    5. Product Rollout or Sales (commercial risk reduction): $0<br>
+                    $$\text{Total Pre-Money Valuation} = 450,000 + 350,000 + 400,000 + 300,000 + 0 = \mathbf{\$1,500,000}$$
+                </div>
+            </div>
         </section>
 
         <!-- 6. VC Stages -->
@@ -805,6 +1384,67 @@
                     </tr>
                 </tbody>
             </table>
+        
+            <!-- Interactive MCQs: Venture Capital Funding Stages & Dilution -->
+            <div class="mcq-container">
+                <div class="mcq-question"><strong>Concept Check 9:</strong> In venture capital financing terminology, which funding stage is specifically deployed to finance factory construction, mass production setup, and expansive sales marketing after prototype validation and initial pilot market tests?</div>
+                <div class="mcq-options">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q9-ans')">
+                        <span class="mcq-opt-label">A.</span> Seed Money Stage
+                    </div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sf-q9-ans')">
+                        <span class="mcq-opt-label">B.</span> First Stage (Early Expansion)
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q9-ans')">
+                        <span class="mcq-opt-label">C.</span> Mezzanine Bridge Stage
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q9-ans')">
+                        <span class="mcq-opt-label">D.</span> Secondary Buyout Stage
+                    </div>
+                </div>
+                <div class="mcq-feedback"></div>
+                <button type="button" class="btn-toggle-answer" onclick="toggleAnswer('sf-q9-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div id="sf-q9-ans" class="mcq-explanation">
+                    <strong>Correct Answer: B</strong><br>
+                    <strong>VC Funding Hierarchy:</strong><br>
+                    • <strong>Seed Stage:</strong> Validates proof-of-concept, market research, and MVP creation.<br>
+                    • <strong>Start-Up Stage:</strong> Finalizes initial prototype development and initial organizational formation.<br>
+                    • <strong>First Stage:</strong> Finances commercial scale-up, manufacturing setup, working capital ramp-up, and extensive market penetration.<br>
+                    • <strong>Second / Third Stage:</strong> Working capital expansion, entering new geographic markets.<br>
+                    • <strong>Bridge / Mezzanine Stage:</strong> Prepares the venture for public listing (IPO) or major trade sale.
+                </div>
+            </div>
+
+            <div class="mcq-container">
+                <div class="mcq-question"><strong>Concept Check 10:</strong> A venture capital firm plans to invest ₹10 Crore in a logistics tech startup today (Year 0). The firm projects the startup will achieve ₹25 Crore Net Profit at the end of Year 5 and exit via an IPO at a P/E multiple of 20x. The VC requires a hurdle rate (target IRR) of 40% p.a. What equity ownership percentage must the VC negotiate today at the time of investment (assuming no intermediate dilution)?</div>
+                <div class="mcq-options">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sf-q10-ans')">
+                        <span class="mcq-opt-label">A.</span> 10.76%
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q10-ans')">
+                        <span class="mcq-opt-label">B.</span> 15.34%
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q10-ans')">
+                        <span class="mcq-opt-label">C.</span> 20.00%
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q10-ans')">
+                        <span class="mcq-opt-label">D.</span> 25.40%
+                    </div>
+                </div>
+                <div class="mcq-feedback"></div>
+                <button type="button" class="btn-toggle-answer" onclick="toggleAnswer('sf-q10-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div id="sf-q10-ans" class="mcq-explanation">
+                    <strong>Correct Answer: A (10.76%)</strong><br>
+                    <strong>Mathematical Derivation (Venture Capital Valuation Method):</strong><br>
+                    1. <strong>Projected Terminal Value at Year 5:</strong><br>
+                    $$V_5 = \text{Net Profit}_5 \times \text{P/E Multiple} = ₹25\text{ Cr} \times 20 = ₹500\text{ Crore}$$<br>
+                    2. <strong>Target Future Value of VC Investment at 40% IRR:</strong><br>
+                    $$FV = \text{Investment} \times (1 + r)^5 = ₹10\text{ Cr} \times (1.40)^5$$<br>
+                    $$(1.40)^5 = 5.37824 \implies FV = ₹10 \times 5.37824 = ₹53.7824\text{ Crore}$$<br>
+                    3. <strong>Required Equity Ownership Stake:</strong><br>
+                    $$\text{Ownership Fraction} = \frac{FV}{V_5} = \frac{₹53.7824\text{ Cr}}{₹500\text{ Cr}} = 0.107565 = \mathbf{10.76\%}$$
+                </div>
+            </div>
         </section>
 
         <!-- 7. VC Process -->
@@ -837,6 +1477,63 @@
                     <h4>Step 6: Exit Strategy</h4>
                     <p>Realizing returns through IPO, strategic acquisition (M&amp;A), secondary PE buyout, or founder
                         buyback.</p>
+                </div>
+            </div>
+        
+            <!-- Interactive MCQs: VC Investment Process & Fund Structure -->
+            <div class="mcq-container">
+                <div class="mcq-question"><strong>Concept Check 11:</strong> What is the logically sequential order of stages followed by professional venture capital funds in their investment evaluation cycle?</div>
+                <div class="mcq-options">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sf-q11-ans')">
+                        <span class="mcq-opt-label">A.</span> Deal Origination $\rightarrow$ Screening $\rightarrow$ Due Diligence $\rightarrow$ Deal Structuring $\rightarrow$ Post-Investment Activity $\rightarrow$ Exit Plan
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q11-ans')">
+                        <span class="mcq-opt-label">B.</span> Deal Structuring $\rightarrow$ Exit Plan $\rightarrow$ Due Diligence $\rightarrow$ Screening $\rightarrow$ Post-Investment Activity
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q11-ans')">
+                        <span class="mcq-opt-label">C.</span> Due Diligence $\rightarrow$ Deal Origination $\rightarrow$ Exit Plan $\rightarrow$ Screening $\rightarrow$ Deal Structuring
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q11-ans')">
+                        <span class="mcq-opt-label">D.</span> Post-Investment Activity $\rightarrow$ Screening $\rightarrow$ Deal Origination $\rightarrow$ Due Diligence $\rightarrow$ Exit Plan
+                    </div>
+                </div>
+                <div class="mcq-feedback"></div>
+                <button type="button" class="btn-toggle-answer" onclick="toggleAnswer('sf-q11-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div id="sf-q11-ans" class="mcq-explanation">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>6 Core Stages of VC Investment Process:</strong><br>
+                    1. <strong>Deal Origination:</strong> Inflow of business plans via networks, incubators, and referrals.<br>
+                    2. <strong>Screening:</strong> Quick preliminary assessment against investment thesis and sector focus.<br>
+                    3. <strong>Due Diligence:</strong> Rigorous financial, legal, technical, and commercial background checks.<br>
+                    4. <strong>Deal Structuring:</strong> Negotiation of term sheet, valuation, governance, and liquidation preferences.<br>
+                    5. <strong>Post-Investment Activity:</strong> Active board representation, mentoring, and strategic business steering.<br>
+                    6. <strong>Exit Plan:</strong> Harvesting gains via IPO, strategic acquisition, secondary buyouts, or promoter buybacks.
+                </div>
+            </div>
+
+            <div class="mcq-container">
+                <div class="mcq-question"><strong>Concept Check 12:</strong> In India, what defines a "Unified Structure" for offshore venture capital fund operations?</div>
+                <div class="mcq-options">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q12-ans')">
+                        <span class="mcq-opt-label">A.</span> All foreign and domestic capital is held directly in a single joint savings bank account owned by the startup founder.
+                    </div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sf-q12-ans')">
+                        <span class="mcq-opt-label">B.</span> Overseas investors pool assets in an offshore vehicle that invests directly into a locally managed Indian Trust, running alongside domestic investors who contribute directly into the same trust.
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q12-ans')">
+                        <span class="mcq-opt-label">C.</span> The Indian government mandates that 100% of VC investments must be funded via sovereign wealth loans.
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q12-ans')">
+                        <span class="mcq-opt-label">D.</span> Domestic investors are legally required to surrender their Indian passports before participating in private equity funds.
+                    </div>
+                </div>
+                <div class="mcq-feedback"></div>
+                <button type="button" class="btn-toggle-answer" onclick="toggleAnswer('sf-q12-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div id="sf-q12-ans" class="mcq-explanation">
+                    <strong>Correct Answer: B</strong><br>
+                    <strong>Fund Architecture Mechanics:</strong><br>
+                    • <strong>Offshore Structure:</strong> The offshore vehicle makes direct equity investments into Indian portfolio companies, managed by an offshore manager with local advisory inputs.<br>
+                    • <strong>Unified Structure:</strong> Overseas investors invest into an offshore pooling vehicle (often tax-efficient), which in turn contributes capital into an Indian domestic Trust (AIF). Domestic investors also contribute directly to this same domestic trust, unifying local and overseas capital under one managed pool.
                 </div>
             </div>
         </section>
@@ -874,6 +1571,36 @@
                     </tr>
                 </tbody>
             </table>
+        
+            <!-- Interactive MCQs: Startup India Initiative & Tax Benefits -->
+            <div class="mcq-container">
+                <div class="mcq-question"><strong>Concept Check 13:</strong> Under the Government of India Startup India policy framework, which of the following criteria governs eligibility and tax exemptions under Section 80-IAC of the Income-tax Act?</div>
+                <div class="mcq-options">
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sf-q13-ans')">
+                        <span class="mcq-opt-label">A.</span> Must be incorporated within 10 years, turnover must not exceed ₹100 Crore in any prior financial year, and eligible for 100% profit deduction for 3 consecutive years out of 10 years upon Inter-Ministerial Board approval.
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q13-ans')">
+                        <span class="mcq-opt-label">B.</span> Must be registered within 3 years, turnover must not exceed ₹10 Crore, and enjoys lifetime exemption from all corporate and GST levies.
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q13-ans')">
+                        <span class="mcq-opt-label">C.</span> Can be established by the splitting or reconstruction of an existing listed industrial conglomerate.
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q13-ans')">
+                        <span class="mcq-opt-label">D.</span> Turnover threshold is ₹500 Crore and requires no governmental or board certification whatsoever.
+                    </div>
+                </div>
+                <div class="mcq-feedback"></div>
+                <button type="button" class="btn-toggle-answer" onclick="toggleAnswer('sf-q13-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div id="sf-q13-ans" class="mcq-explanation">
+                    <strong>Correct Answer: A</strong><br>
+                    <strong>Statutory Framework (DPIIT &amp; Section 80-IAC):</strong><br>
+                    • <strong>Entity Form:</strong> Private Limited Company, LLP, or Registered Partnership Firm.<br>
+                    • <strong>Age:</strong> Period of existence $\le$ 10 years from the date of incorporation/registration.<br>
+                    • <strong>Turnover:</strong> Turnover in any preceding financial year must not exceed <strong>₹100 Crore</strong>.<br>
+                    • <strong>Originality:</strong> Must not be formed by splitting up or reconstruction of an existing business.<br>
+                    • <strong>Section 80-IAC Deduction:</strong> 100% deduction of profits derived from eligible business for <strong>3 consecutive assessment years out of 10 years</strong>, subject to obtaining certification from the Inter-Ministerial Board of Certification.
+                </div>
+            </div>
         </section>
 
         <!-- 9. Succession Planning -->
@@ -907,6 +1634,33 @@
                         <li><strong>Tax &amp; Estate Implications:</strong> Structuring asset transfer to minimize
                             gift/stamp duties.</li>
                     </ol>
+                </div>
+            </div>
+        
+            <!-- Interactive MCQs: Succession Planning -->
+            <div class="mcq-container">
+                <div class="mcq-question"><strong>Concept Check 14:</strong> In entrepreneurial and family-dominated startup enterprises, why is the appointment of an external professional as a "Bridge Leader" considered a vital succession planning strategy?</div>
+                <div class="mcq-options">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q14-ans')">
+                        <span class="mcq-opt-label">A.</span> To liquidate the firm's assets immediately to prevent internal family conflicts.
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q14-ans')">
+                        <span class="mcq-opt-label">B.</span> To satisfy stock exchange rules that bar founders from holding executive directorships.
+                    </div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sf-q14-ans')">
+                        <span class="mcq-opt-label">C.</span> To bridge leadership continuity, institutionalize professional governance, and mentor younger family members until they are mature enough for executive control.
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q14-ans')">
+                        <span class="mcq-opt-label">D.</span> To legally transfer 100% of voting shares to the bridge leader without consideration.
+                    </div>
+                </div>
+                <div class="mcq-feedback"></div>
+                <button type="button" class="btn-toggle-answer" onclick="toggleAnswer('sf-q14-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div id="sf-q14-ans" class="mcq-explanation">
+                    <strong>Correct Answer: C</strong><br>
+                    <strong>Succession Architecture:</strong><br>
+                    • A <strong>Bridge Leader</strong> is an experienced external executive hired to lead the enterprise during a transitional phase.<br>
+                    • <em>Strategic Objectives:</em> (1) Maintain corporate stability and investor trust, (2) Implement robust corporate governance systems, and (3) Groom, train, and mentor rising next-generation family members until they gain the operational competence and leadership maturity required to take over the helm.
                 </div>
             </div>
         </section>
@@ -949,21 +1703,164 @@
                     </tr>
                 </tbody>
             </table>
+        
+            <!-- Interactive MCQs: Valuation Dilution Mechanics -->
+            <div class="mcq-container">
+                <div class="mcq-question"><strong>Concept Check 15:</strong> Seed angel investors invest ₹4 Crore in a promising enterprise at a pre-money valuation of ₹16 Crore. In the subsequent Series A round, a VC firm invests ₹20 Crore at a post-money valuation of ₹100 Crore. Assuming no other share issuances, what is the exact diluted equity percentage owned by the Seed angels post-Series A?</div>
+                <div class="mcq-options">
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q15-ans')">
+                        <span class="mcq-opt-label">A.</span> 12.50%
+                    </div>
+                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'sf-q15-ans')">
+                        <span class="mcq-opt-label">B.</span> 16.00%
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q15-ans')">
+                        <span class="mcq-opt-label">C.</span> 18.00%
+                    </div>
+                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'sf-q15-ans')">
+                        <span class="mcq-opt-label">D.</span> 20.00%
+                    </div>
+                </div>
+                <div class="mcq-feedback"></div>
+                <button type="button" class="btn-toggle-answer" onclick="toggleAnswer('sf-q15-ans')">👁️ Show Answer &amp; Explanation</button>
+                <div id="sf-q15-ans" class="mcq-explanation">
+                    <strong>Correct Answer: B (16.00%)</strong><br>
+                    <strong>Step-by-Step Capital Table Dilution Working:</strong><br>
+                    1. <strong>Seed Round Analysis:</strong><br>
+                    $$\text{Post-Money Valuation} = \text{Pre-Money} + \text{Investment} = ₹16\text{ Cr} + ₹4\text{ Cr} = ₹20\text{ Crore}$$<br>
+                    $$\text{Seed Angel Ownership Stake} = \frac{₹4\text{ Cr}}{₹20\text{ Cr}} = 20.00\%$$<br>
+                    2. <strong>Series A Round Analysis:</strong><br>
+                    $$\text{Series A Investment} = ₹20\text{ Cr at Post-Money} = ₹100\text{ Crore}$$<br>
+                    $$\text{Series A VC Ownership} = \frac{₹20\text{ Cr}}{₹100\text{ Cr}} = 20.00\%$$<br>
+                    3. <strong>Dilution Effect on Existing Shareholders:</strong><br>
+                    $$\text{Dilution Retention Factor for Existing Shareholders} = 100\% - 20\% = 80.00\%$$<br>
+                    $$\text{Seed Angels' Diluted Stake Post-Series A} = 20.00\% \times 80.00\% = \mathbf{16.00\%}$$
+                </div>
+            </div>
         </section>
-    </main>
+            </div>
+        </main>
+    </div>
 
+    <!-- Unified Chapter Navigation & Interactive Scripts -->
     <script>
-        function toggleTheme() {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', targetTheme);
-            localStorage.setItem('theme', targetTheme);
+        function checkOption(el, isCorrect, ansId) {
+            var parent = el.closest('.mcq-container') || el.closest('.quiz-card') || el.closest('.problem-card');
+            if (!parent) return;
+            var allOptions = parent.querySelectorAll('.mcq-option-item');
+            allOptions.forEach(function(opt) {
+                opt.style.pointerEvents = 'none';
+                if (opt.getAttribute('data-correct') === 'true') {
+                    opt.classList.add('reveal-correct');
+                }
+            });
+            var fb = parent.querySelector('.mcq-feedback');
+            if (isCorrect) {
+                el.classList.add('selected-correct');
+                if (fb) {
+                    fb.innerHTML = '✓ Correct! Outstanding work.';
+                    fb.className = 'mcq-feedback correct';
+                }
+            } else {
+                el.classList.add('selected-incorrect');
+                if (fb) {
+                    fb.innerHTML = '✗ Incorrect. Review the detailed solution below.';
+                    fb.className = 'mcq-feedback incorrect';
+                }
+            }
+            var ans = document.getElementById(ansId);
+            if (ans) {
+                ans.style.display = 'block';
+            }
         }
 
-        // Initialize Theme from LocalStorage
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        document.documentElement.setAttribute('data-theme', savedTheme);
+        function toggleAnswer(ansId) {
+            var ans = document.getElementById(ansId);
+            if (!ans) return;
+            var isHidden = (ans.style.display === 'none' || ans.style.display === '');
+            ans.style.display = isHidden ? 'block' : 'none';
+            if (isHidden) {
+                var parent = ans.closest('.mcq-container') || ans.closest('.quiz-card') || ans.closest('.problem-card');
+                if (parent) {
+                    var allOptions = parent.querySelectorAll('.mcq-option-item');
+                    allOptions.forEach(function(opt) {
+                        if (opt.getAttribute('data-correct') === 'true') {
+                            opt.classList.add('reveal-correct');
+                        }
+                    });
+                }
+            }
+        }
+
+        function toggleSidebar() {
+            var sb = document.getElementById('sidebar');
+            if (!sb) return;
+            if (window.innerWidth <= 900) {
+                sb.classList.toggle('mobile-open');
+            } else {
+                sb.classList.toggle('hidden');
+            }
+        }
+
+        // Reading progress tracking & sidebar link highlighting
+        var contentEl = document.querySelector('.content');
+        var progressBar = document.getElementById('reading-progress');
+        var sections = document.querySelectorAll('.section-card, section[id], .theory-topic, .problem-card');
+        var sidebarLinks = document.querySelectorAll('.sidebar a');
+
+        function updateReadingProgressColor(progressBar, progress) {
+            var r, g, b;
+            if (progress <= 33) {
+                var t = progress / 33;
+                r = Math.round(239 + (234 - 239) * t);
+                g = Math.round(68 + (179 - 68) * t);
+                b = Math.round(68 + (8 - 68) * t);
+            } else if (progress <= 66) {
+                var t = (progress - 33) / 33;
+                r = Math.round(234 + (34 - 234) * t);
+                g = Math.round(179 + (197 - 179) * t);
+                b = Math.round(8 + (94 - 8) * t);
+            } else {
+                var t = (progress - 66) / 34;
+                r = Math.round(34 + (16 - 34) * t);
+                g = Math.round(197 + (185 - 197) * t);
+                b = Math.round(94 + (129 - 94) * t);
+            }
+            progressBar.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+            progressBar.style.boxShadow = '0 0 8px rgba(' + r + ',' + g + ',' + b + ', 0.45)';
+        }
+
+        if (progressBar) { updateReadingProgressColor(progressBar, 0); }
+
+        if (contentEl && progressBar) {
+            contentEl.addEventListener('scroll', function() {
+                var totalScroll = contentEl.scrollHeight - contentEl.clientHeight;
+                if (totalScroll > 0) {
+                    var currentScroll = contentEl.scrollTop;
+                    var progress = (currentScroll / totalScroll) * 100;
+                    progressBar.style.width = progress + '%';
+                    updateReadingProgressColor(progressBar, progress);
+                }
+
+                var current = '';
+                sections.forEach(function(section) {
+                    var sectionTop = section.offsetTop - contentEl.offsetTop;
+                    if (contentEl.scrollTop >= sectionTop - 140) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                if (current) {
+                    sidebarLinks.forEach(function(link) {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + current) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
     </script>
 </body>
-
 </html>
+
