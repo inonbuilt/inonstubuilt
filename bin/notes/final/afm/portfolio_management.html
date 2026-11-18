@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -171,6 +171,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
+
         :root {
             --primary: #2563eb;
             --primary-hover: #1d4ed8;
@@ -435,26 +436,43 @@
             color: #e0e7ff;
         }
 
-        .section-card {
-            background: #ffffff;
-            border: 1px solid var(--slate-200);
-            border-radius: var(--radius-md);
-            padding: 32px;
-            margin-bottom: 28px;
-            box-shadow: var(--shadow-sm);
+        .section-card,
+        .quick-card,
+        .card,
+        .block-card,
+        .topic-card,
+        .content-section,
+        .theory-topic,
+        .problem-card,
+        .header-section,
+        .topic-section {
+            background: #ffffff !important;
+            border: 1px solid var(--slate-200, #e2e8f0) !important;
+            border-radius: var(--radius-md, 12px) !important;
+            padding: 32px !important;
+            margin-bottom: 28px !important;
+            box-shadow: var(--shadow-sm, 0 1px 3px rgba(0, 0, 0, 0.06)) !important;
+            box-sizing: border-box !important;
         }
 
-        .section-heading {
-            font-family: 'Outfit', sans-serif;
-            font-size: 22px;
-            font-weight: 700;
-            color: var(--slate-900);
-            margin: 0 0 16px 0;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            border-bottom: 2px solid var(--slate-100);
-            padding-bottom: 12px;
+        .section-heading,
+        .section-title,
+        .quick-card h2,
+        .card-header h2,
+        .block-card h2,
+        .topic-card h2,
+        .header-section h2,
+        .topic-section h2 {
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+            font-size: 22px !important;
+            font-weight: 700 !important;
+            color: var(--slate-900, #0f172a) !important;
+            margin: 0 0 16px 0 !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+            border-bottom: 2px solid var(--slate-100, #f1f5f9) !important;
+            padding-bottom: 12px !important;
         }
 
         .sub-heading {
@@ -895,6 +913,16 @@
             margin: 0 auto !important;
             padding-bottom: 80px !important;
             box-sizing: border-box !important;
+        }
+    
+        .formula-box, .formula-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
+            border: 1px solid #cbd5e1 !important;
+            border-left: 4px solid var(--primary, #2563eb) !important;
+            border-radius: var(--radius-md, 12px) !important;
+            padding: 22px !important;
+            margin: 22px 0 !important;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03) !important;
         }
     </style>
     <link rel="stylesheet" href="../../assets/unified_notes.css">
@@ -2282,60 +2310,7 @@
 
     <!-- Script Assets -->
     <script src="../../assets/template.js"></script>
-    <script>
-                function checkOption(optEl, isCorrect, ansId) {
-            const parent = optEl.closest('.mcq-options-grid');
-            if (!parent) return;
-            const allOptions = parent.querySelectorAll('.mcq-option-item');
-            allOptions.forEach(opt => {
-                opt.classList.remove('selected-correct', 'selected-wrong');
-
-            if (isCorrect) {
-                optEl.classList.add('selected-correct');
-            } else {
-                optEl.classList.add('selected-wrong');
-                allOptions.forEach(opt => {
-                    if (opt.getAttribute('data-correct') === 'true') {
-                        opt.classList.add('selected-correct');
-                    }
-
-            const ansEl = document.getElementById(ansId);
-            if (ansEl) {
-                ansEl.style.display = 'block';
-            }
-        }
-
-        function toggleAnswer(id) {
-            const ansEl = document.getElementById(id);
-            if (!ansEl) return;
-            const isShowing = ansEl.style.display === 'block';
-            ansEl.style.display = isShowing ? 'none' : 'block';
-            if (!isShowing) {
-                const card = ansEl.closest('.quiz-card') || ansEl.closest('.topic-quiz-card');
-                if (card) {
-                    const correctOpt = card.querySelector('.mcq-option-item[data-correct="true"]');
-                    if (correctOpt) correctOpt.classList.add('selected-correct');
-                }
-            }
-        }
-
-        function toggleSidebar() {
-            const sb = document.getElementById('sidebar');
-            if (window.innerWidth <= 900) {
-                sb.classList.toggle('mobile-open');
-            } else {
-                sb.classList.toggle('hidden');
-            }
-        }
-
-        sidebarLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
-
-
-    </script>
+    
 </body>
 
 </html>

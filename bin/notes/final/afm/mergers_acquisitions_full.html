@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -142,548 +142,689 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
+
         :root {
-            --bg-canvas: #ffffff;
-            --text-primary: #0f172a;
-            --text-secondary: #475569;
-            --accent: #2563eb;
-            --accent-hover: #1d4ed8;
-            --border-color: #e2e8f0;
-            --card-bg: #f8fafc;
-            --table-header: #f1f5f9;
-            --success: #16a34a;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #eff6ff;
+            --primary-border: #bfdbfe;
+            --success: #059669;
+            --success-light: #ecfdf5;
+            --success-border: #a7f3d0;
             --danger: #dc2626;
-            --warning-bg: #fffbeb;
-            --warning-border: #fef3c7;
-            --warning-text: #92400e;
-        }
-
-        [data-theme="dark"] {
-            --bg-canvas: #090d16;
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-            --accent: #3b82f6;
-            --accent-hover: #60a5fa;
-            --border-color: #1e293b;
-            --card-bg: #0f172a;
-            --table-header: #1e293b;
-            --success: #22c55e;
-            --danger: #ef4444;
-            --warning-bg: #1c1917;
-            --warning-border: #292524;
-            --warning-text: #fef08a;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        section,
-        div[id],
-        h2[id],
-        h3[id] {
-            scroll-margin-top: 24px;
+            --danger-light: #fef2f2;
+            --danger-border: #fecaca;
+            --warning: #d97706;
+            --warning-light: #fffbeb;
+            --warning-border: #fde68a;
+            --purple: #7c3aed;
+            --purple-light: #f5f3ff;
+            --purple-border: #ddd6fe;
+            --slate-900: #0f172a;
+            --slate-800: #1e293b;
+            --slate-700: #334155;
+            --slate-600: #475569;
+            --slate-500: #64748b;
+            --slate-200: #e2e8f0;
+            --slate-100: #f1f5f9;
+            --slate-50: #f8fafc;
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 4px 14px -2px rgba(15, 23, 42, 0.08);
+            --shadow-lg: 0 10px 25px -4px rgba(15, 23, 42, 0.1);
         }
 
         body {
-            background-color: var(--bg-canvas);
-            color: var(--text-primary);
-            line-height: 1.7;
-            font-size: 15px;
-            
-            
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--slate-800);
+            background: #f8fafc;
+            line-height: 1.6;
         }
 
-
-        
-
-        .sidebar-brand {
-            font-size: 15px;
-            font-weight: 800;
-            color: var(--accent);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 4px 6px 12px 6px;
-            border-bottom: 1px solid var(--border-color);
-            margin-bottom: 8px;
-        }
-
-        .theme-toggle {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            color: var(--text-primary);
-            padding: 4px 8px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 12px;
-        }
-
-        .nav-group-title {
-            font-size: 11px;
-            font-weight: 800;
-            text-transform: uppercase;
-            color: #64748b;
-            margin: 14px 0 4px 8px;
-            letter-spacing: 0.6px;
-        }
-
-        .sidebar a,
-        .sidebar a:link,
-        .sidebar a:visited,
-        .nav-link,
-        a.nav-link {
-            display: block !important;
-            padding: 6px 10px !important;
-            border-radius: 6px !important;
-            color: #1e293b !important;
-            /* Bold, high-contrast dark charcoal */
-            text-decoration: none !important;
-            font-size: 13px !important;
-            font-weight: 600 !important;
-            line-height: 1.4 !important;
-            transition: all 0.15s ease !important;
-            white-space: normal !important;
-            /* Wrap cleanly, no clipping */
-            word-break: break-word !important;
-            opacity: 1 !important;
-            visibility: visible !important;
-        }
-
-        .sidebar a:hover,
-        .nav-link:hover,
-        a.nav-link:hover {
-            background: #eff6ff !important;
-            color: #2563eb !important;
-            padding-left: 14px !important;
-        }
-
-        [data-theme="dark"] .nav-group-title {
-            color: #94a3b8;
-        }
-
-        [data-theme="dark"] .sidebar a,
-        [data-theme="dark"] .sidebar a:link,
-        [data-theme="dark"] .sidebar a:visited,
-        [data-theme="dark"] .nav-link,
-        [data-theme="dark"] a.nav-link {
-            color: #f1f5f9 !important;
-            /* Bright high-contrast white-slate in dark mode */
-        }
-
-        [data-theme="dark"] .sidebar a:hover,
-        [data-theme="dark"] .nav-link:hover,
-        [data-theme="dark"] a.nav-link:hover {
-            background: #1e293b !important;
-            color: #60a5fa !important;
-        }
-
-        .main-wrapper {
-            flex: 1;
-            max-width: 1060px;
-            margin: 0 auto;
-            padding: 40px 48px 80px 48px;
-            overflow-x: hidden;
-        }
-
-        .header-section {
-            margin-bottom: 32px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 24px;
-        }
-
-        .breadcrumbs {
-            font-size: 13px;
-            color: var(--text-secondary);
-            margin-bottom: 8px;
-        }
-
-        .breadcrumbs a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        h1 {
-            font-size: 28px;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            margin-bottom: 8px;
-            color: var(--text-primary);
-        }
-
-        .chapter-meta {
-            font-size: 14px;
-            color: var(--text-secondary);
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .chapter-pill {
-            background: #eff6ff;
-            color: #1d4ed8;
-            font-size: 12px;
-            font-weight: 700;
-            padding: 3px 10px;
-            border-radius: 9999px;
-            border: 1px solid #bfdbfe;
-        }
-
-        .mode-bar {
-            display: flex;
-            gap: 12px;
-            margin: 24px 0 32px 0;
-            background: var(--card-bg);
-            padding: 8px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-        }
-
-        .mode-btn {
-            flex: 1;
-            text-align: center;
-            padding: 8px 16px;
-            font-size: 13px;
-            font-weight: 600;
-            border-radius: 6px;
-            text-decoration: none;
-            transition: all 0.2s ease;
-        }
-
-        .mode-btn.active {
+        .topbar {
+            height: 64px;
             background: #ffffff;
-            color: var(--accent);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-            border: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--slate-200);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.03);
         }
 
-        .mode-btn:not(.active) {
-            color: var(--text-secondary);
-        }
-
-        .concept-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 24px;
-            margin-bottom: 32px;
-        }
-
-        .concept-card h2 {
-            font-size: 20px;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 16px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid var(--accent);
-        }
-
-        .styled-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 16px 0;
-            font-size: 13.5px;
-            background: var(--bg-canvas);
-            border-radius: 6px;
-            overflow: hidden;
-            border: 1px solid var(--border-color);
-        }
-
-        .styled-table th,
-        .styled-table td {
-            padding: 10px 14px;
-            text-align: left;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .styled-table th {
-            background-color: var(--table-header);
-            font-weight: 700;
-        }
-
-        .styled-table tr:last-child td {
-            border-bottom: none;
-        }
-
-        .problem-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 24px;
-            margin-bottom: 36px;
-        }
-
-        .problem-header {
+        .topbar-left {
             display: flex;
             align-items: center;
             gap: 12px;
-            margin-bottom: 16px;
         }
 
-        .problem-id {
-            background: #2563eb;
-            color: #ffffff;
-            font-size: 11px;
-            font-weight: 800;
-            padding: 3px 8px;
-            border-radius: 4px;
-            text-transform: uppercase;
-        }
-
-        .problem-header h3 {
-            font-size: 18px;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin: 0;
-        }
-
-        .problem-statement {
-            background: var(--bg-canvas);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            padding: 18px;
-            margin-bottom: 20px;
-            font-size: 14.5px;
-        }
-
-        .solution-wrapper {
-            background: var(--bg-canvas);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            padding: 20px;
-        }
-
-        .solution-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            font-size: 13px;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: var(--accent);
-            margin-bottom: 16px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 8px;
-        }
-
-        .solution-content h4 {
-            font-size: 15px;
-            font-weight: 700;
-            margin: 16px 0 8px 0;
-        }
-
-        .result-box {
-            background: #eff6ff;
-            border: 1px solid #bfdbfe;
-            color: #1e3a8a;
-            padding: 14px 18px;
-            border-radius: 6px;
-            margin-top: 18px;
-            font-size: 14px;
-        }
-
-        [data-theme="dark"] .result-box {
-            background: #172554;
-            border-color: #1e40af;
-            color: #dbeafe;
-        }
-
-        .exam-tip {
-            background: var(--warning-bg);
-            border-left: 4px solid #f59e0b;
-            padding: 12px 16px;
-            border-radius: 0 6px 6px 0;
-            margin: 16px 0;
-            font-size: 13.5px;
-        }
-
-        .footer-nav {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 48px;
-            padding-top: 24px;
-            border-top: 1px solid var(--border-color);
-        }
-
-        .footer-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 20px;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            color: var(--text-primary);
-            text-decoration: none;
-            font-size: 13px;
-            font-weight: 600;
-            transition: all 0.2s ease;
-        }
-
-        .footer-btn:hover {
-            background: var(--accent);
-            color: #ffffff;
-            border-color: var(--accent);
-        }
-
-        @media (max-width: 900px) {
-            body {
-                flex-direction: column;
-            }
-
-            .sidebar {
-                width: 100%;
-                height: auto;
-                position: relative;
-            }
-
-            .main-wrapper {
-                padding: 24px 16px;
-            }
-        }
-
-        
-            /* Interactive Topic Quiz Styles */
-        .topic-quiz-card {
-            background: var(--notes-card-bg, #ffffff);
-            border: 1px solid var(--notes-card-border, #e2e8f0);
-            border-radius: 12px;
-            padding: 24px;
-            margin: 28px 0 16px 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-            transition: all 0.3s ease;
-        }
-        .topic-quiz-badge {
+        .back-hub-btn {
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            font-size: 0.78rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            padding: 4px 10px;
-            border-radius: 20px;
-            background: rgba(13, 148, 136, 0.12);
-            color: #0d9488;
-            margin-bottom: 14px;
-        }
-        .topic-quiz-question {
-            font-size: 1.05rem;
+            padding: 6px 12px;
+            border-radius: var(--radius-sm);
+            background: var(--slate-100);
+            color: var(--slate-700);
+            text-decoration: none;
+            font-size: 13px;
             font-weight: 600;
-            color: var(--notes-text, #1e293b);
-            margin-bottom: 18px;
+            transition: all 0.2s;
+        }
+
+        .back-hub-btn:hover {
+            background: var(--slate-200);
+            color: var(--slate-900);
+        }
+
+        .chapter-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--slate-900);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 480px;
+        }
+
+        .topbar-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .progress-container {
+            width: 140px;
+            height: 6px;
+            background: var(--slate-200);
+            border-radius: 999px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background-color: rgb(239, 68, 68);
+            box-shadow: 0 0 8px rgba(239, 68, 68, 0.45);
+            border-radius: 999px;
+            transition: width 0.1s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .toggle-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            border-radius: var(--radius-sm);
+            background: var(--slate-100);
+            border: 1px solid var(--slate-200);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--slate-700);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .toggle-btn:hover {
+            background: var(--slate-200);
+            color: var(--slate-900);
+        }
+
+        .layout {
+            display: flex;
+            height: calc(100vh - 64px);
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 290px;
+            background: #ffffff;
+            border-right: 1px solid var(--slate-200);
+            padding: 20px 14px;
+            overflow-y: auto;
+            flex-shrink: 0;
+            transition: width 0.3s ease, padding 0.3s ease;
+        }
+
+        .sidebar.hidden {
+            width: 0;
+            padding: 0;
+            overflow: hidden;
+            border: none;
+        }
+
+        .sidebar-title {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--slate-500);
+            font-weight: 700;
+            margin-bottom: 12px;
+            padding-left: 10px;
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar nav li {
+            margin-bottom: 3px;
+        }
+
+        .sidebar nav a {
+            display: block;
+            padding: 8px 12px;
+            color: var(--slate-600);
+            text-decoration: none;
+            font-size: 13.5px;
+            font-weight: 500;
+            border-radius: var(--radius-sm);
+            transition: all 0.2s ease;
+            line-height: 1.4;
+        }
+
+        .sidebar nav a:hover {
+            background: var(--slate-100);
+            color: var(--slate-900);
+        }
+
+        .sidebar nav a.active {
+            background: var(--primary-light);
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 36px 48px;
+            scroll-behavior: smooth;
+        }
+
+        .content-container {
+            max-width: 940px;
+            margin: 0 auto;
+        }
+
+        .chapter-header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            color: #ffffff;
+            border-radius: var(--radius-lg);
+            padding: 36px;
+            margin-bottom: 32px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chapter-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(8px);
+            padding: 4px 12px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .chapter-header h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 32px;
+            font-weight: 800;
+            margin: 0 0 10px 0;
+            line-height: 1.25;
+        }
+
+        .chapter-header p {
+            font-size: 15px;
+            color: #dbeafe;
+            margin: 0;
+            max-width: 760px;
+            line-height: 1.6;
+        }
+
+        .chapter-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            padding-top: 18px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 13px;
+            color: #e0e7ff;
+        }
+
+        .section-card,
+        .quick-card,
+        .card,
+        .block-card,
+        .topic-card,
+        .content-section,
+        .theory-topic,
+        .problem-card,
+        .header-section,
+        .topic-section {
+            background: #ffffff !important;
+            border: 1px solid var(--slate-200, #e2e8f0) !important;
+            border-radius: var(--radius-md, 12px) !important;
+            padding: 32px !important;
+            margin-bottom: 28px !important;
+            box-shadow: var(--shadow-sm, 0 1px 3px rgba(0, 0, 0, 0.06)) !important;
+            box-sizing: border-box !important;
+        }
+
+        .section-heading,
+        .section-title,
+        .quick-card h2,
+        .card-header h2,
+        .block-card h2,
+        .topic-card h2,
+        .header-section h2,
+        .topic-section h2 {
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+            font-size: 22px !important;
+            font-weight: 700 !important;
+            color: var(--slate-900, #0f172a) !important;
+            margin: 0 0 16px 0 !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+            border-bottom: 2px solid var(--slate-100, #f1f5f9) !important;
+            padding-bottom: 12px !important;
+        }
+
+        .sub-heading {
+            font-family: 'Outfit', sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--slate-800);
+            margin: 22px 0 10px 0;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+            margin: 18px 0;
+        }
+
+        .info-box {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            border-radius: var(--radius-sm);
+            padding: 18px;
+        }
+
+        .info-box h4 {
+            font-size: 15px;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            color: var(--slate-900);
+        }
+
+        .info-box p {
+            font-size: 13.5px;
+            color: var(--slate-600);
+            margin: 0;
             line-height: 1.5;
         }
+
+        .callout {
+            border-left: 4px solid var(--primary);
+            background: var(--primary-light);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+
+        .callout-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .callout p {
+            font-size: 13.5px;
+            color: var(--slate-700);
+            margin: 0;
+            line-height: 1.55;
+        }
+
+        .callout-warning {
+            border-left-color: var(--warning);
+            background: var(--warning-light);
+        }
+
+        .callout-warning .callout-title {
+            color: var(--warning);
+        }
+
+        .callout-success {
+            border-left-color: var(--success);
+            background: var(--success-light);
+        }
+
+        .callout-success .callout-title {
+            color: var(--success);
+        }
+
+        .formula-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border: 1px solid #cbd5e1;
+            border-radius: var(--radius-md);
+            padding: 22px;
+            margin: 22px 0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+        }
+
+        .formula-label {
+            font-family: 'Outfit', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--slate-900);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .formula-tag {
+            font-size: 11px;
+            font-weight: 700;
+            background: #e2e8f0;
+            color: var(--slate-700);
+            padding: 2px 8px;
+            border-radius: 999px;
+            text-transform: uppercase;
+        }
+
+        .formula-math {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: var(--radius-sm);
+            padding: 16px;
+            text-align: center;
+            margin: 10px 0;
+            font-size: 16px;
+            overflow-x: auto;
+        }
+
+        .formula-vars {
+            font-size: 13px;
+            color: var(--slate-600);
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 20px 0;
+            border: 1px solid var(--slate-200);
+            border-radius: var(--radius-sm);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13.5px;
+            text-align: left;
+            background: #ffffff;
+        }
+
+        th {
+            background: var(--slate-100);
+            color: var(--slate-800);
+            font-weight: 700;
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--slate-200);
+        }
+
+        td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--slate-200);
+            color: var(--slate-700);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: #f8fafc;
+        }
+
+        .quiz-card {
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            margin: 16px 0;
+        }
+
+        .quiz-question {
+            font-size: 14.5px;
+            font-weight: 700;
+            color: var(--slate-900);
+            margin-bottom: 12px;
+        }
+
+        .reveal-btn {
+            background: var(--primary-light);
+            border: 1px solid var(--primary-border);
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: var(--radius-sm);
+            font-size: 12.5px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .reveal-btn:hover {
+            background: var(--primary);
+            color: #ffffff;
+        }
+
+        .quiz-answer {
+            display: none;
+            margin-top: 14px;
+            padding-top: 14px;
+            border-top: 1px dashed var(--slate-200);
+            font-size: 13.5px;
+            color: var(--slate-700);
+            line-height: 1.6;
+        }
+
+        .chapter-footer-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--slate-200);
+            gap: 16px;
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            transition: all 0.2s;
+        }
+
+        .nav-btn-prev {
+            background: var(--slate-100);
+            color: var(--slate-700);
+            border: 1px solid var(--slate-200);
+        }
+
+        .nav-btn-prev:hover {
+            background: var(--slate-200);
+            color: var(--slate-900);
+        }
+
+        .nav-btn-next {
+            background: var(--primary);
+            color: #ffffff;
+        }
+
+        .nav-btn-next:hover {
+            background: var(--primary-hover);
+            transform: translateX(2px);
+        }
+
+        @media (max-width: 900px) {
+            .content {
+                padding: 24px 16px;
+            }
+
+            .chapter-header {
+                padding: 24px;
+            }
+
+            .sidebar {
+                position: fixed;
+                top: 64px;
+                left: 0;
+                bottom: 0;
+                z-index: 99;
+                width: 280px;
+                transform: translateX(-100%);
+                transition: transform 0.3s;
+            }
+
+            .sidebar.mobile-open {
+                transform: translateX(0);
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        
+
+        /* MCQ Interactive Styling */
+        .quiz-card {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            border-left: 4px solid var(--primary-600);
+        }
+
+        .quiz-badge {
+            display: inline-block;
+            background: #eff6ff;
+            color: #1d4ed8;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            border: 1px solid #bfdbfe;
+        }
+
         .mcq-options-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 10px;
-            margin-bottom: 16px;
+            gap: 8px;
+            margin: 12px 0 14px 0;
         }
+
         .mcq-option-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            padding: 12px 16px;
+            background: var(--slate-50);
+            border: 1px solid var(--slate-200);
             border-radius: 8px;
-            border: 1px solid var(--notes-card-border, #e2e8f0);
-            background: var(--notes-card-bg, #f8fafc);
+            padding: 10px 14px;
+            font-size: 0.88rem;
+            color: var(--slate-800);
             cursor: pointer;
             transition: all 0.2s ease;
-            font-size: 0.95rem;
-            line-height: 1.45;
-            color: var(--notes-text, #334155);
-            user-select: none;
         }
+
         .mcq-option-item:hover {
-            border-color: #0d9488;
-            background: rgba(13, 148, 136, 0.04);
+            background: #f0fdf4;
+            border-color: #22c55e;
+            transform: translateX(3px);
         }
+
         .mcq-option-item.selected-correct {
-            border-color: #10b981 !important;
-            background: rgba(16, 185, 129, 0.12) !important;
-            color: #065f46 !important;
+            background: #dcfce7 !important;
+            border-color: #22c55e !important;
+            color: #166534 !important;
             font-weight: 600;
         }
+
+        .mcq-option-item.selected-correct::after {
+            content: " ✓ Correct";
+            float: right;
+            font-weight: 700;
+            color: #16a34a;
+        }
+
         .mcq-option-item.selected-wrong {
+            background: #fee2e2 !important;
             border-color: #ef4444 !important;
-            background: rgba(239, 68, 68, 0.12) !important;
             color: #991b1b !important;
             font-weight: 600;
         }
-        .quiz-btn-row {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-            margin-top: 10px;
+
+        .mcq-option-item.selected-wrong::after {
+            content: " ✗ Incorrect";
+            float: right;
+            font-weight: 700;
+            color: #dc2626;
         }
-        .reveal-btn {
-            background: transparent;
-            border: 1px solid #0d9488;
-            color: #0d9488;
-            padding: 7px 16px;
-            border-radius: 6px;
-            font-weight: 600;
-            font-size: 0.85rem;
-            cursor: pointer;
-            transition: all 0.2s ease;
+
+        [data-theme='dark'] .mcq-option-item.selected-correct,
+        body.dark-theme .mcq-option-item.selected-correct {
+            background: #064e3b !important;
+            color: #a7f3d0 !important;
+            border-color: #10b981 !important;
         }
-        .reveal-btn:hover {
-            background: #0d9488;
-            color: #ffffff;
+
+        [data-theme='dark'] .mcq-option-item.selected-wrong,
+        body.dark-theme .mcq-option-item.selected-wrong {
+            background: #7f1d1d !important;
+            color: #fecaca !important;
+            border-color: #ef4444 !important;
         }
-        .explanation-box {
-            display: none;
-            margin-top: 16px;
-            padding: 16px;
-            border-radius: 8px;
-            background: rgba(13, 148, 136, 0.06);
-            border-left: 4px solid #0d9488;
-            font-size: 0.92rem;
-            line-height: 1.55;
-            color: var(--notes-text, #1e293b);
-        }
-        [data-theme="dark"] .topic-quiz-card {
+
+        [data-theme='dark'] .mcq-option-item,
+        body.dark-theme .mcq-option-item {
             background: #1e293b;
             border-color: #334155;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-        }
-        [data-theme="dark"] .topic-quiz-question {
-            color: #f1f5f9;
-        }
-        [data-theme="dark"] .mcq-option-item {
-            border-color: #334155;
-            background: #0f172a;
-            color: #cbd5e1;
-        }
-        [data-theme="dark"] .mcq-option-item:hover {
-            border-color: #14b8a6;
-            background: rgba(20, 184, 166, 0.1);
-        }
-        [data-theme="dark"] .mcq-option-item.selected-correct {
-            border-color: #10b981 !important;
-            background: rgba(16, 185, 129, 0.2) !important;
-            color: #6ee7b7 !important;
-        }
-        [data-theme="dark"] .mcq-option-item.selected-wrong {
-            border-color: #ef4444 !important;
-            background: rgba(239, 68, 68, 0.2) !important;
-            color: #fca5a5 !important;
-        }
-        [data-theme="dark"] .explanation-box {
-            background: rgba(20, 184, 166, 0.08);
-            border-left-color: #14b8a6;
             color: #e2e8f0;
+        }
+
+        [data-theme='dark'] .quiz-card,
+        body.dark-theme .quiz-card {
+            background: #0f172a;
+            border-color: #334155;
         }
     
         /* Universal Single-Scrollbar Fix */
@@ -743,6 +884,16 @@
             margin: 0 auto !important;
             padding-bottom: 80px !important;
             box-sizing: border-box !important;
+        }
+    
+        .formula-box, .formula-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
+            border: 1px solid #cbd5e1 !important;
+            border-left: 4px solid var(--primary, #2563eb) !important;
+            border-radius: var(--radius-md, 12px) !important;
+            padding: 22px !important;
+            margin: 22px 0 !important;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03) !important;
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -980,14 +1131,14 @@
 
                         <div class="formula-box">
                             <strong>Key Swap Ratio Bases:</strong><br>
-                            â€¢ <strong>Earnings Per Share (EPS) Basis:</strong> $\text{Swap Ratio} =
+                            • <strong>Earnings Per Share (EPS) Basis:</strong> $\text{Swap Ratio} =
                             \frac{\text{EPS}_{\text{Target}}}{\text{EPS}_{\text{Acquirer}}}$ (Preserves pre-merger
                             combined EPS without dilution).<br>
-                            â€¢ <strong>Market Price per Share (MPS) Basis:</strong> $\text{Swap Ratio} =
+                            • <strong>Market Price per Share (MPS) Basis:</strong> $\text{Swap Ratio} =
                             \frac{\text{MPS}_{\text{Target}}}{\text{MPS}_{\text{Acquirer}}}$.<br>
-                            â€¢ <strong>Book Value / Net Asset Value (NAV) Basis:</strong> $\text{Swap Ratio} =
+                            • <strong>Book Value / Net Asset Value (NAV) Basis:</strong> $\text{Swap Ratio} =
                             \frac{\text{NAV}_{\text{Target}}}{\text{NAV}_{\text{Acquirer}}}$.<br>
-                            â€¢ <strong>Combined / Fair Exchange Ratio:</strong> Weighted average of NAV, PECV, and MPS as
+                            • <strong>Combined / Fair Exchange Ratio:</strong> Weighted average of NAV, PECV, and MPS as
                             sanctioned by valuation experts.
                         </div>
 
@@ -1397,9 +1548,9 @@
                                 4,50,000 = \mathbf{â‚¹ 16,50,000}$.</p>
                             <p>$$\mathbf{\text{Post-Merger EPS}} = \frac{â‚¹ 16,50,000}{4,12,500} = \mathbf{â‚¹ 4.00 \text{
                                 per share}}$$</p>
-                            <p>â€¢ Company X Shareholders: Pre-merger EPS = â‚¹ 4.00; Post-merger EPS = â‚¹ 4.00. <strong>Zero
+                            <p>• Company X Shareholders: Pre-merger EPS = â‚¹ 4.00; Post-merger EPS = â‚¹ 4.00. <strong>Zero
                                     dilution / change</strong>.</p>
-                            <p>â€¢ Company Y Shareholders: Equivalent EPS = $â‚¹ 4.00 \times 0.5625 = \mathbf{â‚¹ 2.25}$.
+                            <p>• Company Y Shareholders: Equivalent EPS = $â‚¹ 4.00 \times 0.5625 = \mathbf{â‚¹ 2.25}$.
                                 <strong>Zero dilution / change</strong>.</p>
 
                             <h4>Proposal (ii): Exchange in Proportion to Relative Market Prices</h4>
@@ -1410,16 +1561,16 @@
                             <p>Total post-merger shares = $3,00,000 + 1,33,333 = \mathbf{4,33,333 \text{ shares}}$.</p>
                             <p>$$\mathbf{\text{Post-Merger EPS}} = \frac{â‚¹ 16,50,000}{4,33,333} = \mathbf{â‚¹ 3.8077
                                 \approx â‚¹ 3.81 \text{ per share}}$$</p>
-                            <p>â€¢ Company X Shareholders: EPS decreases from â‚¹ 4.00 to â‚¹ 3.81 (<strong>Dilution of â‚¹ 0.19
+                            <p>• Company X Shareholders: EPS decreases from â‚¹ 4.00 to â‚¹ 3.81 (<strong>Dilution of â‚¹ 0.19
                                     per share</strong>).</p>
-                            <p>â€¢ Company Y Shareholders: Equivalent EPS = $â‚¹ 3.8077 \times 0.6667 = \mathbf{â‚¹ 2.5385
+                            <p>• Company Y Shareholders: Equivalent EPS = $â‚¹ 3.8077 \times 0.6667 = \mathbf{â‚¹ 2.5385
                                 \approx â‚¹ 2.54}$. (<strong>Accretion from â‚¹ 2.25 to â‚¹ 2.54 per share</strong>).</p>
 
                             <div class="result-box">
                                 <strong>Summary &amp; Strategic Insight:</strong><br>
-                                â€¢ Under <strong>EPS Swap Ratio (0.5625)</strong>: EPS remains exactly neutral at â‚¹ 4.00
+                                • Under <strong>EPS Swap Ratio (0.5625)</strong>: EPS remains exactly neutral at â‚¹ 4.00
                                 for X and â‚¹ 2.25 for Y.<br>
-                                â€¢ Under <strong>Market Price Swap Ratio (0.6667)</strong>: Acquirer X suffers EPS
+                                • Under <strong>Market Price Swap Ratio (0.6667)</strong>: Acquirer X suffers EPS
                                 dilution (-4.75%) while target Y enjoys an EPS gain (+12.89%).
                             </div>
                         </div>
@@ -1534,9 +1685,9 @@
 
                             <div class="result-box">
                                 <strong>Final Results:</strong><br>
-                                â€¢ (i) New EPS = <strong>â‚¹ 5.42 per share</strong>.<br>
-                                â€¢ (ii) Exchange Ratio for neutral EPS = <strong>1.20</strong>.<br>
-                                â€¢ (iii) Required P/E ratio to maintain â‚¹ 75 price = <strong>13.85 times</strong>.
+                                • (i) New EPS = <strong>â‚¹ 5.42 per share</strong>.<br>
+                                • (ii) Exchange Ratio for neutral EPS = <strong>1.20</strong>.<br>
+                                • (iii) Required P/E ratio to maintain â‚¹ 75 price = <strong>13.85 times</strong>.
                             </div>
                         </div>
                     </div>
@@ -1674,13 +1825,13 @@
                                             30.00):</td>
                                     </tr>
                                     <tr>
-                                        <td>â€¢ Change in EPS</td>
+                                        <td>• Change in EPS</td>
                                         <td>Nil (â‚¹ 1.50)</td>
                                         <td>-â‚¹ 0.06 (-4.0%)</td>
                                         <td>-â‚¹ 0.115 (-7.7%)</td>
                                     </tr>
                                     <tr>
-                                        <td>â€¢ Change in MPS</td>
+                                        <td>• Change in MPS</td>
                                         <td>Nil (â‚¹ 30.00)</td>
                                         <td>-â‚¹ 1.20 (-4.0%)</td>
                                         <td>-â‚¹ 2.31 (-7.7%)</td>
@@ -1690,19 +1841,19 @@
                                             12.00):</td>
                                     </tr>
                                     <tr>
-                                        <td>â€¢ Equivalent EPS ($\text{Combined EPS} \times \text{Swap Ratio}$)</td>
+                                        <td>• Equivalent EPS ($\text{Combined EPS} \times \text{Swap Ratio}$)</td>
                                         <td>$1.50 \times 0.8 = \mathbf{â‚¹ 1.20}$</td>
                                         <td>$1.44 \times 1.0 = \mathbf{â‚¹ 1.44}$</td>
                                         <td>$1.385 \times 1.2 = \mathbf{â‚¹ 1.66}$</td>
                                     </tr>
                                     <tr>
-                                        <td>â€¢ Equivalent MPS ($\text{Combined MPS} \times \text{Swap Ratio}$)</td>
+                                        <td>• Equivalent MPS ($\text{Combined MPS} \times \text{Swap Ratio}$)</td>
                                         <td>$30 \times 0.8 = \mathbf{â‚¹ 24.00}$</td>
                                         <td>$28.80 \times 1.0 = \mathbf{â‚¹ 28.80}$</td>
                                         <td>$27.69 \times 1.2 = \mathbf{â‚¹ 33.23}$</td>
                                     </tr>
                                     <tr>
-                                        <td>â€¢ Gain per share in Market Price</td>
+                                        <td>• Gain per share in Market Price</td>
                                         <td>+â‚¹ 12.00 (+100%)</td>
                                         <td>+â‚¹ 16.80 (+140%)</td>
                                         <td>+â‚¹ 21.23 (+177%)</td>
@@ -1712,10 +1863,10 @@
 
                             <div class="result-box">
                                 <strong>Strategic Recommendation:</strong><br>
-                                â€¢ <strong>Scheme A (20,000 shares):</strong> The optimal scheme for Simpson Ltd.,
+                                • <strong>Scheme A (20,000 shares):</strong> The optimal scheme for Simpson Ltd.,
                                 resulting in zero dilution for Simpson shareholders while still doubling the market
                                 value of Wilson shareholders' holdings.<br>
-                                â€¢ <strong>Schemes B &amp; C:</strong> Result in wealth transfer from Simpson
+                                • <strong>Schemes B &amp; C:</strong> Result in wealth transfer from Simpson
                                 shareholders to Wilson shareholders due to excessive share issuance.
                             </div>
                         </div>
@@ -1791,10 +1942,10 @@
                                 <tr>
                                     <td><strong>Operating Synergy</strong></td>
                                     <td>
-                                        â€¢ Economies of Scale: Spreading fixed costs over higher output volumes.<br>
-                                        â€¢ Economies of Scope: Cross-selling complementary products via shared
+                                        • Economies of Scale: Spreading fixed costs over higher output volumes.<br>
+                                        • Economies of Scope: Cross-selling complementary products via shared
                                         distribution.<br>
-                                        â€¢ Supply Chain Optimization: Elimination of intermediate markups and logistics
+                                        • Supply Chain Optimization: Elimination of intermediate markups and logistics
                                         duplication.
                                     </td>
                                     <td>Higher operating profit margins (EBITDA), reduced per-unit production costs, and
@@ -1803,11 +1954,11 @@
                                 <tr>
                                     <td><strong>Financial Synergy</strong></td>
                                     <td>
-                                        â€¢ Co-insurance Effect: Diversified cash flow streams reduce overall default
+                                        • Co-insurance Effect: Diversified cash flow streams reduce overall default
                                         risk.<br>
-                                        â€¢ Tax Shields: Utilizing unabsorbed accumulated depreciation and business losses
+                                        • Tax Shields: Utilizing unabsorbed accumulated depreciation and business losses
                                         of the target under Section 72A.<br>
-                                        â€¢ Lower Cost of Capital: Enhanced borrowing capacity and cheaper access to
+                                        • Lower Cost of Capital: Enhanced borrowing capacity and cheaper access to
                                         international capital markets.
                                     </td>
                                     <td>Lower Weighted Average Cost of Capital (WACC), increased debt debt-capacity, and
@@ -2052,9 +2203,9 @@
                                     <td><strong>Sub-Types</strong></td>
                                     <td>Product extension or geographic market extension.</td>
                                     <td>
-                                        â€¢ <strong>Backward Integration:</strong> Towards raw material suppliers
+                                        • <strong>Backward Integration:</strong> Towards raw material suppliers
                                         (upstream).<br>
-                                        â€¢ <strong>Forward Integration:</strong> Towards retail distributors / customers
+                                        • <strong>Forward Integration:</strong> Towards retail distributors / customers
                                         (downstream).
                                     </td>
                                 </tr>
@@ -2182,16 +2333,16 @@
                         <h4>Step 3: Post-Merger Market Price &amp; Shareholder Gains</h4>
                         <p>$$\mathbf{\text{Post-Merger MPS}} = \text{Post-Merger EPS } (2.3718) \times \text{P/E } (12)
                             = \mathbf{â‚¹ 28.46 \text{ per share}}$$</p>
-                        <p>â€¢ A Ltd. Shareholders: Gain per share = $â‚¹ 28.46 - â‚¹ 25.00 = \mathbf{+â‚¹ 3.46 \text{ per
+                        <p>• A Ltd. Shareholders: Gain per share = $â‚¹ 28.46 - â‚¹ 25.00 = \mathbf{+â‚¹ 3.46 \text{ per
                             share}}$.</p>
-                        <p>â€¢ C Ltd. Shareholders: Equivalent price = $â‚¹ 28.46 \times 0.60 = â‚¹ 17.08$. Gain per share =
+                        <p>• C Ltd. Shareholders: Equivalent price = $â‚¹ 28.46 \times 0.60 = â‚¹ 17.08$. Gain per share =
                             $â‚¹ 17.08 - â‚¹ 15.00 = \mathbf{+â‚¹ 2.08 \text{ per share}}$.</p>
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ Post-Merger EPS = <strong>â‚¹ 2.37 per share</strong>.<br>
-                            â€¢ Post-Merger MPS = <strong>â‚¹ 28.46 per share</strong>.<br>
-                            â€¢ Gain to A Ltd. = <strong>+â‚¹ 3.46/share</strong>; Gain to C Ltd. = <strong>+â‚¹
+                            • Post-Merger EPS = <strong>â‚¹ 2.37 per share</strong>.<br>
+                            • Post-Merger MPS = <strong>â‚¹ 28.46 per share</strong>.<br>
+                            • Gain to A Ltd. = <strong>+â‚¹ 3.46/share</strong>; Gain to C Ltd. = <strong>+â‚¹
                                 2.08/share</strong>.
                         </div>
                     </div>
@@ -2282,18 +2433,18 @@
                             52.80 \text{ per share}}$$</p>
 
                         <h4>3. Value Received and Gains</h4>
-                        <p>â€¢ Value of shares received by Doom Ltd. = $5,00,000 \times â‚¹ 52.80 = \mathbf{â‚¹ 2,64,00,000}$.
+                        <p>• Value of shares received by Doom Ltd. = $5,00,000 \times â‚¹ 52.80 = \mathbf{â‚¹ 2,64,00,000}$.
                         </p>
-                        <p>â€¢ Gain to Doom Ltd. Shareholders = $â‚¹ 2,64,00,000 - â‚¹ 2,50,00,000 = \mathbf{â‚¹ 14,00,000}$.
+                        <p>• Gain to Doom Ltd. Shareholders = $â‚¹ 2,64,00,000 - â‚¹ 2,50,00,000 = \mathbf{â‚¹ 14,00,000}$.
                         </p>
-                        <p>â€¢ Gain to Elrond Ltd. Shareholders = $(20,00,000 \times â‚¹ 52.80) - â‚¹ 10,00,00,000 = â‚¹
+                        <p>• Gain to Elrond Ltd. Shareholders = $(20,00,000 \times â‚¹ 52.80) - â‚¹ 10,00,00,000 = â‚¹
                             10,56,00,000 - â‚¹ 10,00,00,000 = \mathbf{â‚¹ 56,00,000}$.</p>
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ Combined Firm Value = <strong>â‚¹ 13.20 Crores</strong>.<br>
-                            â€¢ Price per Share = <strong>â‚¹ 52.80</strong>.<br>
-                            â€¢ Gain to Elrond = <strong>â‚¹ 56 Lakhs</strong>; Gain to Doom = <strong>â‚¹ 14 Lakhs</strong>.
+                            • Combined Firm Value = <strong>â‚¹ 13.20 Crores</strong>.<br>
+                            • Price per Share = <strong>â‚¹ 52.80</strong>.<br>
+                            • Gain to Elrond = <strong>â‚¹ 56 Lakhs</strong>; Gain to Doom = <strong>â‚¹ 14 Lakhs</strong>.
                             Total synergy realized = â‚¹ 70 Lakhs.
                         </div>
                     </div>
@@ -2392,9 +2543,9 @@
 
                         <h4>Part (iii): Market Value Impact (P/E = 20) under Market Price Ratio</h4>
                         <p>$$\text{Post-Merger MPS} = â‚¹ 5.6727 \times 20 = \mathbf{â‚¹ 113.45 \text{ per share}}$$</p>
-                        <p>â€¢ MK Ltd. Shareholders: Change = $â‚¹ 113.45 - â‚¹ 160.00 = \mathbf{-â‚¹ 46.55 \text{ (Loss)}}$.
+                        <p>• MK Ltd. Shareholders: Change = $â‚¹ 113.45 - â‚¹ 160.00 = \mathbf{-â‚¹ 46.55 \text{ (Loss)}}$.
                         </p>
-                        <p>â€¢ NN Ltd. Shareholders: Equivalent = $â‚¹ 113.45 \times 0.625 = â‚¹ 70.91$. Change = $â‚¹ 70.91 - â‚¹
+                        <p>• NN Ltd. Shareholders: Equivalent = $â‚¹ 113.45 \times 0.625 = â‚¹ 70.91$. Change = $â‚¹ 70.91 - â‚¹
                             100.00 = \mathbf{-â‚¹ 29.09 \text{ (Loss)}}$.</p>
 
                         <div class="result-box">
@@ -2481,9 +2632,9 @@
                     </div>
                     <div class="solution-content">
                         <h4>Part (i): Pre-Merger EPS</h4>
-                        <p>â€¢ $\text{EPS}_{\text{ABC}} = \frac{â‚¹ 50,00,000}{10,00,000} = \mathbf{â‚¹ 5.00 \text{ per
+                        <p>• $\text{EPS}_{\text{ABC}} = \frac{â‚¹ 50,00,000}{10,00,000} = \mathbf{â‚¹ 5.00 \text{ per
                             share}}$.</p>
-                        <p>â€¢ $\text{EPS}_{\text{XYZ}} = \frac{â‚¹ 18,00,000}{6,00,000} = \mathbf{â‚¹ 3.00 \text{ per
+                        <p>• $\text{EPS}_{\text{XYZ}} = \frac{â‚¹ 18,00,000}{6,00,000} = \mathbf{â‚¹ 3.00 \text{ per
                             share}}$.</p>
 
                         <h4>Part (ii): Exchange Ratio on EPS Basis</h4>
@@ -2503,9 +2654,9 @@
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ Pre-merger EPS: ABC = <strong>â‚¹ 5.00</strong>, XYZ = <strong>â‚¹ 3.00</strong>.<br>
-                            â€¢ Post-merger EPS (EPS ratio 0.60) = <strong>â‚¹ 5.00</strong>.<br>
-                            â€¢ Post-merger EPS (MPS ratio 0.667) = <strong>â‚¹ 4.86</strong> (Dilution of â‚¹ 0.14 for ABC).
+                            • Pre-merger EPS: ABC = <strong>â‚¹ 5.00</strong>, XYZ = <strong>â‚¹ 3.00</strong>.<br>
+                            • Post-merger EPS (EPS ratio 0.60) = <strong>â‚¹ 5.00</strong>.<br>
+                            • Post-merger EPS (MPS ratio 0.667) = <strong>â‚¹ 4.86</strong> (Dilution of â‚¹ 0.14 for ABC).
                         </div>
                     </div>
                 </div>
@@ -2660,18 +2811,18 @@
                         <h4>Step 2: Post-Merger Market Price (P/E = 9)</h4>
                         <p>$$\mathbf{\text{Post-Merger MPS}} = â‚¹ 3.1304 \times 9 = \mathbf{â‚¹ 28.17 \text{ per share}}$$
                         </p>
-                        <p>â€¢ Pre-merger MPS of A Ltd. = $â‚¹ 3.00 \times 10 = â‚¹ 30.00$.</p>
+                        <p>• Pre-merger MPS of A Ltd. = $â‚¹ 3.00 \times 10 = â‚¹ 30.00$.</p>
                         <p>Loss per share to A Ltd. = $â‚¹ 28.17 - â‚¹ 30.00 = \mathbf{-â‚¹ 1.83 \text{ per share}}$.</p>
-                        <p>â€¢ Pre-merger MPS of T Ltd. = $\text{EPS } (â‚¹ 2.00) \times 7 = â‚¹ 14.00$.</p>
+                        <p>• Pre-merger MPS of T Ltd. = $\text{EPS } (â‚¹ 2.00) \times 7 = â‚¹ 14.00$.</p>
                         <p>Equivalent post-merger price = $â‚¹ 28.17 \times 0.5 = â‚¹ 14.09$.</p>
                         <p>Gain per share to T Ltd. = $â‚¹ 14.09 - â‚¹ 14.00 = \mathbf{+â‚¹ 0.09 \text{ per share}}$.</p>
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ New shares issued = <strong>90,000</strong>.<br>
-                            â€¢ Post-merger EPS = <strong>â‚¹ 3.13</strong>.<br>
-                            â€¢ Post-merger MPS = <strong>â‚¹ 28.17</strong>.<br>
-                            â€¢ A Ltd. suffers a loss of <strong>-â‚¹ 1.83/share</strong> while T Ltd. gains <strong>+â‚¹
+                            • New shares issued = <strong>90,000</strong>.<br>
+                            • Post-merger EPS = <strong>â‚¹ 3.13</strong>.<br>
+                            • Post-merger MPS = <strong>â‚¹ 28.17</strong>.<br>
+                            • A Ltd. suffers a loss of <strong>-â‚¹ 1.83/share</strong> while T Ltd. gains <strong>+â‚¹
                                 0.09/share</strong>.
                         </div>
                     </div>
@@ -2768,17 +2919,17 @@
                         <h4>Step 3: Post-Merger Market Price (P/E = 10) &amp; Gains</h4>
                         <p>$$\mathbf{\text{Post-Merger MPS}} = â‚¹ 10.909 \times 10 = \mathbf{â‚¹ 109.09 \text{ per
                             share}}$$</p>
-                        <p>â€¢ Mark Ltd. Shareholders: Gain per share = $â‚¹ 109.09 - â‚¹ 100.00 = \mathbf{+â‚¹ 9.09 \text{ per
+                        <p>• Mark Ltd. Shareholders: Gain per share = $â‚¹ 109.09 - â‚¹ 100.00 = \mathbf{+â‚¹ 9.09 \text{ per
                             share}}$.</p>
-                        <p>â€¢ Mask Ltd. Shareholders: Equivalent price = $â‚¹ 109.09 \times 0.20 = â‚¹ 21.82$. Gain per share
+                        <p>• Mask Ltd. Shareholders: Equivalent price = $â‚¹ 109.09 \times 0.20 = â‚¹ 21.82$. Gain per share
                             = $â‚¹ 21.82 - â‚¹ 20.00 = \mathbf{+â‚¹ 1.82 \text{ per share}}$.</p>
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ Swap Ratio = <strong>0.20</strong>.<br>
-                            â€¢ Post-Merger EPS = <strong>â‚¹ 10.91</strong>.<br>
-                            â€¢ Post-Merger MPS = <strong>â‚¹ 109.09</strong>.<br>
-                            â€¢ Both sets of shareholders gain due to the higher P/E multiple of Mark Ltd.
+                            • Swap Ratio = <strong>0.20</strong>.<br>
+                            • Post-Merger EPS = <strong>â‚¹ 10.91</strong>.<br>
+                            • Post-Merger MPS = <strong>â‚¹ 109.09</strong>.<br>
+                            • Both sets of shareholders gain due to the higher P/E multiple of Mark Ltd.
                         </div>
                     </div>
                 </div>
@@ -2880,9 +3031,9 @@
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ (i) Post-merger EPS = <strong>â‚¹ 5.11</strong>.<br>
-                            â€¢ (ii) Exchange ratio for neutral EPS = <strong>0.80</strong> (40,000 shares).<br>
-                            â€¢ (iii) Loss to XYZ shareholders = <strong>-â‚¹ 3.83 per share</strong>.
+                            • (i) Post-merger EPS = <strong>â‚¹ 5.11</strong>.<br>
+                            • (ii) Exchange ratio for neutral EPS = <strong>0.80</strong> (40,000 shares).<br>
+                            • (iii) Loss to XYZ shareholders = <strong>-â‚¹ 3.83 per share</strong>.
                         </div>
                     </div>
                 </div>
@@ -2931,9 +3082,9 @@
                     </div>
                     <div class="solution-content">
                         <h4>Part (i): Pre-Merger Fundamentals</h4>
-                        <p>â€¢ XYZ Ltd.: $\text{EPS} = \frac{â‚¹ 150\text{L}}{25\text{L}} = \mathbf{â‚¹ 6.00}$. $\text{P/E
+                        <p>• XYZ Ltd.: $\text{EPS} = \frac{â‚¹ 150\text{L}}{25\text{L}} = \mathbf{â‚¹ 6.00}$. $\text{P/E
                             Ratio} = \frac{â‚¹ 60}{â‚¹ 6} = \mathbf{10 \text{ times}}$.</p>
-                        <p>â€¢ ABC Ltd.: $\text{EPS} = \frac{â‚¹ 30\text{L}}{10\text{L}} = \mathbf{â‚¹ 3.00}$. $\text{P/E
+                        <p>• ABC Ltd.: $\text{EPS} = \frac{â‚¹ 30\text{L}}{10\text{L}} = \mathbf{â‚¹ 3.00}$. $\text{P/E
                             Ratio} = \frac{â‚¹ 15}{â‚¹ 3} = \mathbf{5 \text{ times}}$.</p>
 
                         <h4>Part (ii): Swap Ratio on Market Price Basis &amp; Post-Merger EPS</h4>
@@ -2949,15 +3100,15 @@
                         <h4>Part (iii): Post-Merger Market Price (P/E = 10)</h4>
                         <p>$$\mathbf{\text{Post-Merger MPS}} = â‚¹ 6.5455 \times 10 = \mathbf{â‚¹ 65.45 \text{ per share}}$$
                         </p>
-                        <p>â€¢ XYZ Shareholders: Gain = $â‚¹ 65.45 - â‚¹ 60.00 = \mathbf{+â‚¹ 5.45 \text{ per share}}$.</p>
-                        <p>â€¢ ABC Shareholders: Equivalent = $â‚¹ 65.45 \times 0.25 = â‚¹ 16.36$. Gain = $â‚¹ 16.36 - â‚¹ 15.00 =
+                        <p>• XYZ Shareholders: Gain = $â‚¹ 65.45 - â‚¹ 60.00 = \mathbf{+â‚¹ 5.45 \text{ per share}}$.</p>
+                        <p>• ABC Shareholders: Equivalent = $â‚¹ 65.45 \times 0.25 = â‚¹ 16.36$. Gain = $â‚¹ 16.36 - â‚¹ 15.00 =
                             \mathbf{+â‚¹ 1.36 \text{ per share}}$.</p>
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ Swap Ratio = <strong>0.25</strong>.<br>
-                            â€¢ Post-Merger EPS = <strong>â‚¹ 6.55</strong>.<br>
-                            â€¢ Post-Merger MPS = <strong>â‚¹ 65.45</strong>.
+                            • Swap Ratio = <strong>0.25</strong>.<br>
+                            • Post-Merger EPS = <strong>â‚¹ 6.55</strong>.<br>
+                            • Post-Merger MPS = <strong>â‚¹ 65.45</strong>.
                         </div>
                     </div>
                 </div>
@@ -3007,9 +3158,9 @@
                     </div>
                     <div class="solution-content">
                         <h4>Part (i): Market Prices &amp; Swap Ratio</h4>
-                        <p>â€¢ Mani Ltd.: $\text{EPS} = \frac{100}{10} = â‚¹ 10.00 \implies \text{MPS} = 10 \times 12 =
+                        <p>• Mani Ltd.: $\text{EPS} = \frac{100}{10} = â‚¹ 10.00 \implies \text{MPS} = 10 \times 12 =
                             \mathbf{â‚¹ 120.00}$.</p>
-                        <p>â€¢ Rama Ltd.: $\text{EPS} = \frac{20}{5} = â‚¹ 4.00 \implies \text{MPS} = 4 \times 8 = \mathbf{â‚¹
+                        <p>• Rama Ltd.: $\text{EPS} = \frac{20}{5} = â‚¹ 4.00 \implies \text{MPS} = 4 \times 8 = \mathbf{â‚¹
                             32.00}$.</p>
                         <p>$$\text{Swap Ratio} = \frac{â‚¹ 32.00}{â‚¹ 120.00} = \mathbf{0.2667 \text{ shares of Mani for 1
                             share of Rama (or 4:15)}}$$</p>
@@ -3029,9 +3180,9 @@
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ Swap Ratio = <strong>0.2667</strong>.<br>
-                            â€¢ Post-Merger EPS = <strong>â‚¹ 10.59</strong>.<br>
-                            â€¢ Post-Merger MPS = <strong>â‚¹ 116.47</strong>; Combined Market Value = <strong>â‚¹ 13.20
+                            • Swap Ratio = <strong>0.2667</strong>.<br>
+                            • Post-Merger EPS = <strong>â‚¹ 10.59</strong>.<br>
+                            • Post-Merger MPS = <strong>â‚¹ 116.47</strong>; Combined Market Value = <strong>â‚¹ 13.20
                                 Crores</strong>.
                         </div>
                     </div>
@@ -3097,17 +3248,17 @@
                         <h4>Step 3: Post-Merger Market Price (P/E = 18) &amp; Gains</h4>
                         <p>$$\mathbf{\text{Post-Merger MPS}} = â‚¹ 6.00 \times 18 = \mathbf{â‚¹ 108.00 \text{ per share}}$$
                         </p>
-                        <p>â€¢ Company A Shareholders: Change = $â‚¹ 108.00 - â‚¹ 150.00 = \mathbf{-â‚¹ 42.00 \text{ per share
+                        <p>• Company A Shareholders: Change = $â‚¹ 108.00 - â‚¹ 150.00 = \mathbf{-â‚¹ 42.00 \text{ per share
                             (Loss)}}$.</p>
-                        <p>â€¢ Company B Shareholders: Equivalent price = $â‚¹ 108.00 \times \frac{2}{3} = â‚¹ 72.00$. Change
+                        <p>• Company B Shareholders: Equivalent price = $â‚¹ 108.00 \times \frac{2}{3} = â‚¹ 72.00$. Change
                             = $â‚¹ 72.00 - â‚¹ 100.00 = \mathbf{-â‚¹ 28.00 \text{ per share (Loss)}}$.</p>
                         <p><em>(If post-merger P/E rises to maintain pre-merger value, gain per share is as per standard approach
                                 working table).</em></p>
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ Swap Ratio = <strong>0.6667</strong>.<br>
-                            â€¢ Post-Merger EPS = <strong>â‚¹ 6.00 per share</strong>.
+                            • Swap Ratio = <strong>0.6667</strong>.<br>
+                            • Post-Merger EPS = <strong>â‚¹ 6.00 per share</strong>.
                         </div>
                     </div>
                 </div>
@@ -3180,9 +3331,9 @@
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ (i) Post-Merger EPS = <strong>â‚¹ 5.27</strong>.<br>
-                            â€¢ (ii) Exchange Ratio for neutral EPS = <strong>0.80</strong>.<br>
-                            â€¢ (iii) Post-Merger MPS = <strong>â‚¹ 63.19</strong>.
+                            • (i) Post-Merger EPS = <strong>â‚¹ 5.27</strong>.<br>
+                            • (ii) Exchange Ratio for neutral EPS = <strong>0.80</strong>.<br>
+                            • (iii) Post-Merger MPS = <strong>â‚¹ 63.19</strong>.
                         </div>
                     </div>
                 </div>
@@ -3232,9 +3383,9 @@
                     </div>
                     <div class="solution-content">
                         <h4>Part (i): Pre-Merger Fundamentals</h4>
-                        <p>â€¢ Longitude: $\text{EPS} = \frac{40\text{L}}{8\text{L}} = â‚¹ 5.00 \implies \text{MPS} = 5
+                        <p>• Longitude: $\text{EPS} = \frac{40\text{L}}{8\text{L}} = â‚¹ 5.00 \implies \text{MPS} = 5
                             \times 15 = \mathbf{â‚¹ 75.00}$.</p>
-                        <p>â€¢ Latitude: $\text{EPS} = \frac{10\text{L}}{4\text{L}} = â‚¹ 2.50 \implies \text{MPS} = 2.5
+                        <p>• Latitude: $\text{EPS} = \frac{10\text{L}}{4\text{L}} = â‚¹ 2.50 \implies \text{MPS} = 2.5
                             \times 12 = \mathbf{â‚¹ 30.00}$.</p>
 
                         <h4>Part (ii): Swap Ratio Based on Market Prices</h4>
@@ -3254,11 +3405,11 @@
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ (i) Market Prices: Longitude = <strong>â‚¹ 75.00</strong>, Latitude = <strong>â‚¹
+                            • (i) Market Prices: Longitude = <strong>â‚¹ 75.00</strong>, Latitude = <strong>â‚¹
                                 30.00</strong>.<br>
-                            â€¢ (ii) Swap Ratio = <strong>0.40</strong>.<br>
-                            â€¢ (iii) Post-Merger EPS = <strong>â‚¹ 5.21</strong>.<br>
-                            â€¢ (iv) Post-Merger MPS = <strong>â‚¹ 72.92</strong>.
+                            • (ii) Swap Ratio = <strong>0.40</strong>.<br>
+                            • (iii) Post-Merger EPS = <strong>â‚¹ 5.21</strong>.<br>
+                            • (iv) Post-Merger MPS = <strong>â‚¹ 72.92</strong>.
                         </div>
                     </div>
                 </div>
@@ -3320,16 +3471,16 @@
                         </p>
 
                         <h4>Step 3: Gain or Loss to Shareholders</h4>
-                        <p>â€¢ P Ltd. Shareholders: Pre-merger price = â‚¹ 36.00; Post-merger = â‚¹ 33.00. <strong>Loss of -â‚¹
+                        <p>• P Ltd. Shareholders: Pre-merger price = â‚¹ 36.00; Post-merger = â‚¹ 33.00. <strong>Loss of -â‚¹
                                 3.00 per share</strong> (Total loss = â‚¹ 30 Lakhs).</p>
-                        <p>â€¢ R Ltd. Shareholders: Equivalent price = $â‚¹ 33.00 \times 0.80 = â‚¹ 26.40$. Pre-merger price =
+                        <p>• R Ltd. Shareholders: Equivalent price = $â‚¹ 33.00 \times 0.80 = â‚¹ 26.40$. Pre-merger price =
                             â‚¹ 25.00. <strong>Gain of +â‚¹ 1.40 per share</strong> (Total gain = â‚¹ 7 Lakhs).</p>
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ Post-Merger EPS = <strong>â‚¹ 3.00</strong>.<br>
-                            â€¢ Post-Merger MPS = <strong>â‚¹ 33.00</strong>.<br>
-                            â€¢ P Ltd. shareholders lose <strong>-â‚¹ 3.00/share</strong>; R Ltd. shareholders gain
+                            • Post-Merger EPS = <strong>â‚¹ 3.00</strong>.<br>
+                            • Post-Merger MPS = <strong>â‚¹ 33.00</strong>.<br>
+                            • P Ltd. shareholders lose <strong>-â‚¹ 3.00/share</strong>; R Ltd. shareholders gain
                             <strong>+â‚¹ 1.40/share</strong>.
                         </div>
                     </div>
@@ -3367,16 +3518,16 @@
                             \text{ Crores}}$$</p>
 
                         <h4>Part (iii): Net Gain to Both Companies</h4>
-                        <p>â€¢ Gain to Dimple Ltd. (Target) = $\text{Consideration Received } (22\text{ Cr}) -
+                        <p>• Gain to Dimple Ltd. (Target) = $\text{Consideration Received } (22\text{ Cr}) -
                             \text{Standalone Value } (20\text{ Cr}) = \mathbf{â‚¹ 2.00 \text{ Crores}}$.</p>
-                        <p>â€¢ Gain to Simple Ltd. (Acquirer) = $\text{Total Synergy } (6\text{ Cr}) - \text{Cost of
+                        <p>• Gain to Simple Ltd. (Acquirer) = $\text{Total Synergy } (6\text{ Cr}) - \text{Cost of
                             Merger } (2\text{ Cr}) = \mathbf{â‚¹ 4.00 \text{ Crores}}$.</p>
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ Combined Value = <strong>â‚¹ 76.00 Crores</strong>.<br>
-                            â€¢ Gain to Simple Ltd. = <strong>â‚¹ 4.00 Crores</strong>.<br>
-                            â€¢ Gain to Dimple Ltd. = <strong>â‚¹ 2.00 Crores</strong>. Total synergy split: â‚¹ 6.00 Crores.
+                            • Combined Value = <strong>â‚¹ 76.00 Crores</strong>.<br>
+                            • Gain to Simple Ltd. = <strong>â‚¹ 4.00 Crores</strong>.<br>
+                            • Gain to Dimple Ltd. = <strong>â‚¹ 2.00 Crores</strong>. Total synergy split: â‚¹ 6.00 Crores.
                         </div>
                     </div>
                 </div>
@@ -3574,9 +3725,9 @@
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ Swap Ratio = <strong>0.40</strong>.<br>
-                            â€¢ Post-Merger EPS = <strong>â‚¹ 5.21</strong>.<br>
-                            â€¢ Post-Merger MPS = <strong>â‚¹ 52.08</strong>.
+                            • Swap Ratio = <strong>0.40</strong>.<br>
+                            • Post-Merger EPS = <strong>â‚¹ 5.21</strong>.<br>
+                            • Post-Merger MPS = <strong>â‚¹ 52.08</strong>.
                         </div>
                     </div>
                 </div>
@@ -3646,8 +3797,8 @@
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ Swap Ratio (MPS) = <strong>0.60</strong>; Post-merger EPS = <strong>â‚¹ 5.00</strong>.<br>
-                            â€¢ Swap Ratio (BV) = <strong>0.625</strong>; Post-merger EPS = <strong>â‚¹ 4.96</strong>.
+                            • Swap Ratio (MPS) = <strong>0.60</strong>; Post-merger EPS = <strong>â‚¹ 5.00</strong>.<br>
+                            • Swap Ratio (BV) = <strong>0.625</strong>; Post-merger EPS = <strong>â‚¹ 4.96</strong>.
                         </div>
                     </div>
                 </div>
@@ -3697,9 +3848,9 @@
                     </div>
                     <div class="solution-content">
                         <h4>Part (i): Pre-Merger Fundamentals</h4>
-                        <p>â€¢ E Ltd.: $\text{EPS} = \frac{120}{20} = â‚¹ 6.00 \implies \text{MPS} = 6 \times 10 = \mathbf{â‚¹
+                        <p>• E Ltd.: $\text{EPS} = \frac{120}{20} = â‚¹ 6.00 \implies \text{MPS} = 6 \times 10 = \mathbf{â‚¹
                             60.00}$.</p>
-                        <p>â€¢ T Ltd.: $\text{EPS} = \frac{30}{8} = â‚¹ 3.75 \implies \text{MPS} = 3.75 \times 8 = \mathbf{â‚¹
+                        <p>• T Ltd.: $\text{EPS} = \frac{30}{8} = â‚¹ 3.75 \implies \text{MPS} = 3.75 \times 8 = \mathbf{â‚¹
                             30.00}$.</p>
 
                         <h4>Part (ii): Swap Ratio &amp; Post-Merger EPS</h4>
@@ -3717,10 +3868,10 @@
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ Pre-merger MPS: E = <strong>â‚¹ 60.00</strong>, T = <strong>â‚¹ 30.00</strong>.<br>
-                            â€¢ Swap Ratio = <strong>0.50</strong>.<br>
-                            â€¢ Post-Merger EPS = <strong>â‚¹ 6.25</strong>.<br>
-                            â€¢ Post-Merger MPS = <strong>â‚¹ 59.38</strong>.
+                            • Pre-merger MPS: E = <strong>â‚¹ 60.00</strong>, T = <strong>â‚¹ 30.00</strong>.<br>
+                            • Swap Ratio = <strong>0.50</strong>.<br>
+                            • Post-Merger EPS = <strong>â‚¹ 6.25</strong>.<br>
+                            • Post-Merger MPS = <strong>â‚¹ 59.38</strong>.
                         </div>
                     </div>
                 </div>
@@ -3786,17 +3937,17 @@
                         </p>
 
                         <h4>Part (d): Shareholder Wealth Impact</h4>
-                        <p>â€¢ Abhiman Shareholders: Pre-merger price = â‚¹ 60.00; Post-merger = â‚¹ 58.55. <strong>Loss of -â‚¹
+                        <p>• Abhiman Shareholders: Pre-merger price = â‚¹ 60.00; Post-merger = â‚¹ 58.55. <strong>Loss of -â‚¹
                                 1.45 per share</strong>.</p>
-                        <p>â€¢ Janam Shareholders: Equivalent price = $â‚¹ 58.55 \times 0.60 = â‚¹ 35.13$. Pre-merger price =
+                        <p>• Janam Shareholders: Equivalent price = $â‚¹ 58.55 \times 0.60 = â‚¹ 35.13$. Pre-merger price =
                             â‚¹ 36.00. <strong>Loss of -â‚¹ 0.87 per share</strong>.</p>
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ Swap Ratio = <strong>0.60</strong>.<br>
-                            â€¢ Post-Merger EPS = <strong>â‚¹ 5.32</strong>.<br>
-                            â€¢ Post-Merger MPS = <strong>â‚¹ 58.55</strong>.<br>
-                            â€¢ Both groups lose slightly because combined P/E (11) dropped from Abhiman's pre-merger P/E
+                            • Swap Ratio = <strong>0.60</strong>.<br>
+                            • Post-Merger EPS = <strong>â‚¹ 5.32</strong>.<br>
+                            • Post-Merger MPS = <strong>â‚¹ 58.55</strong>.<br>
+                            • Both groups lose slightly because combined P/E (11) dropped from Abhiman's pre-merger P/E
                             (12).
                         </div>
                     </div>
@@ -3916,10 +4067,10 @@
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ Purchase Consideration = <strong>â‚¹ 569.97 Lakhs</strong>.<br>
-                            â€¢ Shares Issued = <strong>2,59,077 shares</strong>.<br>
-                            â€¢ Post-Merger EPS = <strong>â‚¹ 20.56</strong>.<br>
-                            â€¢ Expected Market Price = <strong>â‚¹ 226.16 per share</strong>.
+                            • Purchase Consideration = <strong>â‚¹ 569.97 Lakhs</strong>.<br>
+                            • Shares Issued = <strong>2,59,077 shares</strong>.<br>
+                            • Post-Merger EPS = <strong>â‚¹ 20.56</strong>.<br>
+                            • Expected Market Price = <strong>â‚¹ 226.16 per share</strong>.
                         </div>
                     </div>
                 </div>
@@ -3964,18 +4115,18 @@
                                 \frac{15}{7} = \mathbf{â‚¹ 80.00 \text{ per share}}$).</em></p>
 
                         <h4>3. Book Value Per Share Post-Demerger</h4>
-                        <p>â€¢ Fortune Pharma Ltd.: $\text{BVPS} = \frac{\text{Net Worth } (â‚¹ 21,000 \text{
+                        <p>• Fortune Pharma Ltd.: $\text{BVPS} = \frac{\text{Net Worth } (â‚¹ 21,000 \text{
                             Lakhs})}{\text{Number of Shares } (1,400 \text{ Lakhs})} = \mathbf{â‚¹ 15.00 \text{ per
                             share}}$.</p>
-                        <p>â€¢ Fortune India (FMCG) Ltd.: $\text{BVPS} = \frac{\text{Net Worth } (â‚¹ 24,000 \text{
+                        <p>• Fortune India (FMCG) Ltd.: $\text{BVPS} = \frac{\text{Net Worth } (â‚¹ 24,000 \text{
                             Lakhs})}{\text{Number of Shares } (3,000 \text{ Lakhs})} = \mathbf{â‚¹ 8.00 \text{ per
                             share}}$.</p>
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ (1) Share Entitlement Ratio = <strong>7 shares for every 15 shares held</strong>.<br>
-                            â€¢ (2) Expected Market Price of FMCG Co. = <strong>â‚¹ 42.67 per share</strong>.<br>
-                            â€¢ (3) Book Value per share: Fortune Pharma = <strong>â‚¹ 15.00</strong>; Fortune FMCG =
+                            • (1) Share Entitlement Ratio = <strong>7 shares for every 15 shares held</strong>.<br>
+                            • (2) Expected Market Price of FMCG Co. = <strong>â‚¹ 42.67 per share</strong>.<br>
+                            • (3) Book Value per share: Fortune Pharma = <strong>â‚¹ 15.00</strong>; Fortune FMCG =
                             <strong>â‚¹ 8.00</strong>.
                         </div>
                     </div>
@@ -4000,13 +4151,13 @@
                     </div>
                     <div class="solution-content">
                         <h4>Valuation Breakdown for B Ltd. (10 Lakh Shares):</h4>
-                        <p>â€¢ (i) <strong>Net Asset Value (NAV):</strong> $\frac{â‚¹ 3,50,00,000}{10,00,000} = \mathbf{â‚¹
+                        <p>• (i) <strong>Net Asset Value (NAV):</strong> $\frac{â‚¹ 3,50,00,000}{10,00,000} = \mathbf{â‚¹
                             35.00 \text{ per share}}$.</p>
-                        <p>â€¢ (ii) <strong>Profit Earning Capacity Value (PECV):</strong> $\frac{â‚¹ 40,00,000 /
+                        <p>• (ii) <strong>Profit Earning Capacity Value (PECV):</strong> $\frac{â‚¹ 40,00,000 /
                             0.10}{10,00,000} = \mathbf{â‚¹ 40.00 \text{ per share}}$.</p>
-                        <p>â€¢ (iii) <strong>Market Value:</strong> Given directly = $\mathbf{â‚¹ 45.00 \text{ per share}}$.
+                        <p>• (iii) <strong>Market Value:</strong> Given directly = $\mathbf{â‚¹ 45.00 \text{ per share}}$.
                         </p>
-                        <p>â€¢ (iv) <strong>Fair Value per share:</strong> $\frac{\text{NAV } (35) + \text{PECV } (40)}{2}
+                        <p>• (iv) <strong>Fair Value per share:</strong> $\frac{\text{NAV } (35) + \text{PECV } (40)}{2}
                             = \mathbf{â‚¹ 37.50 \text{ per share}}$.</p>
                     </div>
                 </div>
@@ -4057,8 +4208,8 @@
                     </div>
                     <div class="solution-content">
                         <h4>Part (i): Pre-Merger Market Values</h4>
-                        <p>â€¢ RIL: $20 \text{ Cr} \times â‚¹ 100 = \mathbf{â‚¹ 2,000 \text{ Crores}}$.</p>
-                        <p>â€¢ Sunflower: $8 \text{ Cr} \times â‚¹ 40 = \mathbf{â‚¹ 320 \text{ Crores}}$.</p>
+                        <p>• RIL: $20 \text{ Cr} \times â‚¹ 100 = \mathbf{â‚¹ 2,000 \text{ Crores}}$.</p>
+                        <p>• Sunflower: $8 \text{ Cr} \times â‚¹ 40 = \mathbf{â‚¹ 320 \text{ Crores}}$.</p>
 
                         <h4>Part (ii): Swap Ratio &amp; Post-Merger EPS</h4>
                         <p>$$\text{Swap Ratio} = \frac{â‚¹ 40}{â‚¹ 100} = \mathbf{0.40 \text{ shares of RIL for 1 share of
@@ -4073,17 +4224,17 @@
                         <h4>Part (iii): Post-Merger Market Price (P/E = 18) &amp; Gains</h4>
                         <p>$$\mathbf{\text{Post-Merger MPS}} = â‚¹ 5.6034 \times 18 = \mathbf{â‚¹ 100.86 \text{ per
                             share}}$$</p>
-                        <p>â€¢ RIL Shareholders: Gain per share = $â‚¹ 100.86 - â‚¹ 100.00 = \mathbf{+â‚¹ 0.86 \text{ per
+                        <p>• RIL Shareholders: Gain per share = $â‚¹ 100.86 - â‚¹ 100.00 = \mathbf{+â‚¹ 0.86 \text{ per
                             share}}$ (Total gain = â‚¹ 17.20 Cr).</p>
-                        <p>â€¢ Sunflower Shareholders: Equivalent price = $â‚¹ 100.86 \times 0.40 = â‚¹ 40.34$. Gain = $â‚¹
+                        <p>• Sunflower Shareholders: Equivalent price = $â‚¹ 100.86 \times 0.40 = â‚¹ 40.34$. Gain = $â‚¹
                             40.34 - â‚¹ 40.00 = \mathbf{+â‚¹ 0.34 \text{ per share}}$ (Total gain = â‚¹ 2.72 Cr).</p>
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ Swap Ratio = <strong>0.40</strong>.<br>
-                            â€¢ Post-Merger EPS = <strong>â‚¹ 5.60</strong>.<br>
-                            â€¢ Post-Merger MPS = <strong>â‚¹ 100.86</strong>.<br>
-                            â€¢ Both groups gain positive shareholder wealth from the operational synergy.
+                            • Swap Ratio = <strong>0.40</strong>.<br>
+                            • Post-Merger EPS = <strong>â‚¹ 5.60</strong>.<br>
+                            • Post-Merger MPS = <strong>â‚¹ 100.86</strong>.<br>
+                            • Both groups gain positive shareholder wealth from the operational synergy.
                         </div>
                     </div>
                 </div>
@@ -4108,9 +4259,9 @@
                     </div>
                     <div class="solution-content">
                         <h4>Part (i): Pre-Merger Fundamentals</h4>
-                        <p>â€¢ AFC Ltd.: $\text{EPS} = \frac{â‚¹ 50}{10} = \mathbf{â‚¹ 5.00} \implies \text{PAT} = 10\text{L}
+                        <p>• AFC Ltd.: $\text{EPS} = \frac{â‚¹ 50}{10} = \mathbf{â‚¹ 5.00} \implies \text{PAT} = 10\text{L}
                             \times 5 = \mathbf{â‚¹ 50,00,000}$.</p>
-                        <p>â€¢ BCD Ltd.: $\text{EPS} = \frac{â‚¹ 25}{10} = \mathbf{â‚¹ 2.50} \implies \text{PAT} = 5\text{L}
+                        <p>• BCD Ltd.: $\text{EPS} = \frac{â‚¹ 25}{10} = \mathbf{â‚¹ 2.50} \implies \text{PAT} = 5\text{L}
                             \times 2.5 = \mathbf{â‚¹ 12,50,000}$.</p>
 
                         <h4>Part (ii): Swap Ratio Based on Market Prices</h4>
@@ -4131,9 +4282,9 @@
 
                         <div class="result-box">
                             <strong>Final Results:</strong><br>
-                            â€¢ Swap Ratio = <strong>0.50</strong>.<br>
-                            â€¢ Post-Merger EPS = <strong>â‚¹ 5.20</strong>.<br>
-                            â€¢ Combined Value = <strong>â‚¹ 6.50 Crores</strong>.
+                            • Swap Ratio = <strong>0.50</strong>.<br>
+                            • Post-Merger EPS = <strong>â‚¹ 5.20</strong>.<br>
+                            • Combined Value = <strong>â‚¹ 6.50 Crores</strong>.
                         </div>
                     </div>
                 </div>
@@ -4155,13 +4306,13 @@
                     </div>
                     <div class="solution-content">
                         <h4>Summary of Exchange Ratios:</h4>
-                        <p>â€¢ (i) <strong>Net Asset Method:</strong> $\text{NAV}_{\text{AB}} = â‚¹ 42.00,
+                        <p>• (i) <strong>Net Asset Method:</strong> $\text{NAV}_{\text{AB}} = â‚¹ 42.00,
                             \text{NAV}_{\text{XY}} = â‚¹ 24.50 \implies \mathbf{\text{Swap Ratio} = \frac{24.50}{42.00} =
                             0.5833}$.</p>
-                        <p>â€¢ (ii) <strong>PE Multiple Method:</strong> $\text{MPS}_{\text{AB}} = â‚¹ 50.00,
+                        <p>• (ii) <strong>PE Multiple Method:</strong> $\text{MPS}_{\text{AB}} = â‚¹ 50.00,
                             \text{MPS}_{\text{XY}} = â‚¹ 25.00 \implies \mathbf{\text{Swap Ratio} = \frac{25.00}{50.00} =
                             0.5000}$.</p>
-                        <p>â€¢ <strong>Recommended Compromise Ratio:</strong> <strong>0.54 shares of AB Ltd. for 1 share
+                        <p>• <strong>Recommended Compromise Ratio:</strong> <strong>0.54 shares of AB Ltd. for 1 share
                                 of XY Ltd.</strong></p>
                     </div>
                 </div>
@@ -4253,11 +4404,11 @@
                         </table>
 
                         <h4>Part (ii): Exchange Ratios under Different Bases</h4>
-                        <p>â€¢ <strong>Market Price Basis:</strong> $\frac{â‚¹ 36}{â‚¹ 90} = \mathbf{0.40 \text{ shares of R
+                        <p>• <strong>Market Price Basis:</strong> $\frac{â‚¹ 36}{â‚¹ 90} = \mathbf{0.40 \text{ shares of R
                             for 1 share of S}}$.</p>
-                        <p>â€¢ <strong>EPS Basis:</strong> $\frac{â‚¹ 4.00}{â‚¹ 6.00} = \mathbf{0.6667 \text{ shares of R for
+                        <p>• <strong>EPS Basis:</strong> $\frac{â‚¹ 4.00}{â‚¹ 6.00} = \mathbf{0.6667 \text{ shares of R for
                             1 share of S}}$.</p>
-                        <p>â€¢ <strong>Book Value Basis:</strong> $\frac{â‚¹ 30.00}{â‚¹ 40.00} = \mathbf{0.75 \text{ shares of
+                        <p>• <strong>Book Value Basis:</strong> $\frac{â‚¹ 30.00}{â‚¹ 40.00} = \mathbf{0.75 \text{ shares of
                             R for 1 share of S}}$.</p>
 
                         <div class="result-box">
@@ -4317,9 +4468,9 @@
                     </div>
                     <div class="solution-content">
                         <h4>Individual Swap Ratios:</h4>
-                        <p>â€¢ $\text{EPS}_{\text{BA}} = 150 / 25 = â‚¹ 6.00$; $\text{EPS}_{\text{DA}} = 45 / 15 = â‚¹ 3.00$.
+                        <p>• $\text{EPS}_{\text{BA}} = 150 / 25 = â‚¹ 6.00$; $\text{EPS}_{\text{DA}} = 45 / 15 = â‚¹ 3.00$.
                         </p>
-                        <p>â€¢ $\text{BVPS}_{\text{BA}} = 1000 / 25 = â‚¹ 40.00$; $\text{BVPS}_{\text{DA}} = 450 / 15 = â‚¹
+                        <p>• $\text{BVPS}_{\text{BA}} = 1000 / 25 = â‚¹ 40.00$; $\text{BVPS}_{\text{DA}} = 450 / 15 = â‚¹
                             30.00$.</p>
 
                         <table class="styled-table">
@@ -4609,8 +4760,8 @@
 
                         <div class="result-box">
                             <strong>Final Range:</strong><br>
-                            â€¢ Minimum Offer Price = <strong>â‚¹ 24.00 per share</strong>.<br>
-                            â€¢ Maximum Offer Price = <strong>â‚¹ 35.00 per share</strong>.
+                            • Minimum Offer Price = <strong>â‚¹ 24.00 per share</strong>.<br>
+                            • Maximum Offer Price = <strong>â‚¹ 35.00 per share</strong>.
                         </div>
                     </div>
                 </div>
@@ -4627,73 +4778,7 @@
     </div>
 
     <!-- Unified Chapter Navigation & Interactive Scripts -->
-    <script>
-        function checkOption(el, isCorrect, ansId) {
-            var parent = el.closest('.mcq-container') || el.closest('.quiz-card') || el.closest('.problem-card') || el.closest('.topic-card');
-            if (!parent) return;
-            var allOptions = parent.querySelectorAll('.mcq-option-item');
-            allOptions.forEach(function(opt) {
-                opt.style.pointerEvents = 'none';
-                if (opt.getAttribute('data-correct') === 'true') {
-                    opt.classList.add('reveal-correct');
-                }
-
-            var fb = parent.querySelector('.mcq-feedback');
-            if (isCorrect) {
-                el.classList.add('selected-correct');
-                if (fb) {
-                    fb.innerHTML = '✓ Correct! Outstanding work.';
-                    fb.className = 'mcq-feedback correct';
-                }
-            } else {
-                el.classList.add('selected-incorrect');
-                if (fb) {
-                    fb.innerHTML = '✗ Incorrect. Review the detailed solution below.';
-                    fb.className = 'mcq-feedback incorrect';
-                }
-            }
-            var ans = document.getElementById(ansId);
-            if (ans) {
-                ans.style.display = 'block';
-            }
-        }
-
-        function toggleAnswer(ansId) {
-            var ans = document.getElementById(ansId);
-            if (!ans) return;
-            var isHidden = (ans.style.display === 'none' || ans.style.display === '');
-            ans.style.display = isHidden ? 'block' : 'none';
-            if (isHidden) {
-                var parent = ans.closest('.mcq-container') || ans.closest('.quiz-card') || ans.closest('.problem-card') || ans.closest('.topic-card');
-                if (parent) {
-                    var allOptions = parent.querySelectorAll('.mcq-option-item');
-                    allOptions.forEach(function(opt) {
-                        if (opt.getAttribute('data-correct') === 'true') {
-                            opt.classList.add('reveal-correct');
-                        }
-
-            }
-        }
-
-        function toggleSidebar() {
-            var sb = document.getElementById('sidebar');
-            if (!sb) return;
-            if (window.innerWidth <= 900) {
-                sb.classList.toggle('mobile-open');
-            } else {
-                sb.classList.toggle('hidden');
-            }
-        }
-
-        if (current) {
-                    sidebarLinks.forEach(function(link) {
-                        link.classList.remove('active');
-                        if (link.getAttribute('href') === '#' + current) {
-                            link.classList.add('active');
-                        }
-
-
-    </script>
+    
     <script src="../../assets/template.js"></script>
 </body>
 </html>
