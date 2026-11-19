@@ -3597,6 +3597,20 @@
       activeKnockRequest = null;
     };
 
+    // BUG-6 FIX: Safely bind "call" event handler without stacking duplicate listeners
+    // on recycled or pre-warmed Peer instances.
+    function bindPeerCallHandler(peer) {
+      if (!peer) return;
+      try {
+        if (typeof peer.off === "function") {
+          peer.off("call", handleIncomingMediaCall);
+        } else if (typeof peer.removeListener === "function") {
+          peer.removeListener("call", handleIncomingMediaCall);
+        }
+      } catch (e) { }
+      peer.on("call", handleIncomingMediaCall);
+    }
+
     window.requestKnockRoom = function (roomCode, guestName) {
       if (!roomCode) return;
       const code = roomCode.toUpperCase();
@@ -3632,21 +3646,22 @@
         });
       };
 
-      if (peerInstance && !peerInstance.destroyed && peerInstance.open && !peerInstance.id.startsWith("calcium-notes-room-")) {
+      if (peerInstance && !peerInstance.destroyed && peerInstance.open && !peerInstance.id.startsWith("calcium-notes-room-") && !peerInstance.disconnected) {
+        bindPeerCallHandler(peerInstance);
         connectAndKnock(peerInstance.id);
-      } else if (prewarmedGuestPeer && !prewarmedGuestPeer.destroyed && prewarmedGuestPeer.open) {
+      } else if (prewarmedGuestPeer && !prewarmedGuestPeer.destroyed && prewarmedGuestPeer.open && !prewarmedGuestPeer.disconnected) {
         if (peerInstance && peerInstance !== prewarmedGuestPeer) {
           try { peerInstance.destroy(); } catch (e) { }
         }
         peerInstance = prewarmedGuestPeer;
         prewarmedGuestPeer = null;
-        peerInstance.on("call", handleIncomingMediaCall);
+        bindPeerCallHandler(peerInstance);
         connectAndKnock(peerInstance.id);
       } else {
         if (peerInstance) peerInstance.destroy();
         peerInstance = new Peer(PEER_CONFIG);
         peerInstance.on("open", connectAndKnock);
-        peerInstance.on("call", handleIncomingMediaCall);
+        bindPeerCallHandler(peerInstance);
       }
     };
 
@@ -4048,7 +4063,24 @@
             conn.on("close", onPeerDisconnectOrError);
             conn.on("error", onPeerDisconnectOrError);
           });
-          peerInstance.on("call", handleIncomingMediaCall);
+          bindPeerCallHandler(peerInstance);
+          peerInstance.on("disconnected", () => {
+            console.warn("Host peer disconnected from signaling, attempting reconnect...");
+            if (peerInstance && !peerInstance.destroyed) {
+              try { peerInstance.reconnect(); } catch (e) { }
+            }
+          });
+          peerInstance.on("error", (err) => {
+            console.warn("PeerJS host error:", err ? (err.type || err.message) : err);
+            if (err && err.type === "unavailable-id") {
+              console.warn("Room ID collision, generating new code...");
+              window.createPeerRoom(activeRoomPassword, activeRoomPrivacy);
+            } else if (err && err.type === "disconnected") {
+              if (peerInstance && !peerInstance.destroyed) {
+                try { peerInstance.reconnect(); } catch (e) { }
+              }
+            }
+          });
         } catch (e) {
           console.warn("PeerJS fallback:", e);
         }
@@ -4182,27 +4214,39 @@
             });
           };
 
-          if (peerInstance && !peerInstance.destroyed && peerInstance.open && !peerInstance.id.startsWith("calcium-notes-room-")) {
+          if (peerInstance && !peerInstance.destroyed && peerInstance.open && !peerInstance.id.startsWith("calcium-notes-room-") && !peerInstance.disconnected) {
+            bindPeerCallHandler(peerInstance);
             connectToHost(peerInstance.id);
-          } else if (prewarmedGuestPeer && !prewarmedGuestPeer.destroyed && prewarmedGuestPeer.open) {
+          } else if (prewarmedGuestPeer && !prewarmedGuestPeer.destroyed && prewarmedGuestPeer.open && !prewarmedGuestPeer.disconnected) {
             if (peerInstance && peerInstance !== prewarmedGuestPeer) {
               try { peerInstance.destroy(); } catch (e) { }
             }
             peerInstance = prewarmedGuestPeer;
             prewarmedGuestPeer = null;
-            peerInstance.on("call", handleIncomingMediaCall);
+            bindPeerCallHandler(peerInstance);
             connectToHost(peerInstance.id);
           } else {
             if (peerInstance) peerInstance.destroy();
             peerInstance = new Peer(PEER_CONFIG);
             peerInstance.on("open", connectToHost);
-            peerInstance.on("call", handleIncomingMediaCall);
+            bindPeerCallHandler(peerInstance);
           }
+
+          peerInstance.on("disconnected", () => {
+            console.warn("Guest peer disconnected from signaling, attempting reconnect...");
+            if (peerInstance && !peerInstance.destroyed) {
+              try { peerInstance.reconnect(); } catch (e) { }
+            }
+          });
 
           peerInstance.on("error", (err) => {
             console.warn("PeerJS error:", err.type, err.message, err);
             if (err && err.type === "peer-unavailable") {
               showStatusToast(`⚠️ Room ${code} not found or host offline.`);
+            } else if (err && err.type === "disconnected") {
+              if (peerInstance && !peerInstance.destroyed) {
+                try { peerInstance.reconnect(); } catch (e) { }
+              }
             }
           });
         } catch (e) {
@@ -5450,7 +5494,37 @@
         }
 
         broadcastMediaState();
-        connectCallsWithRoomMembers();
+
+        // BUG-3 FIX: Guard against the race where peerInstance exists but its "open"
+        // event hasn't fired yet (e.g. createPeerRoom() was called synchronously moments ago).
+        // connectCallsWithRoomMembers() silently does nothing if peerInstance.open is false,
+        // so we schedule the connect for after the peer is confirmed open.
+        if (peerInstance && peerInstance.open) {
+          connectCallsWithRoomMembers();
+        } else if (peerInstance) {
+          if (typeof peerInstance.once === "function") {
+            peerInstance.once("open", () => connectCallsWithRoomMembers());
+          } else {
+            const onOpen = () => {
+              connectCallsWithRoomMembers();
+              if (typeof peerInstance.off === "function") peerInstance.off("open", onOpen);
+            };
+            peerInstance.on("open", onOpen);
+          }
+        }
+
+        // BUG-2 FIX (drain): Answer any calls that arrived before localStream was ready.
+        if (_pendingIncomingCalls && Object.keys(_pendingIncomingCalls).length > 0) {
+          Object.entries(_pendingIncomingCalls).forEach(([peerId, call]) => {
+            try {
+              call.answer(localStream);
+              bindCallEvents(call, peerId);
+            } catch (e) {
+              console.warn("Error answering queued call from " + peerId, e);
+            }
+          });
+          _pendingIncomingCalls = {};
+        }
 
         const me = squadMembersMap[myClientId] || { name: "You" };
         appendChatMessage({
@@ -5505,6 +5579,10 @@
             video: { width: { ideal: 640 }, height: { ideal: 480 }, facingMode: "user" }
           });
           const newTrack = newVideoStream.getVideoTracks()[0];
+          // BUG-5 FIX: Enable the track BEFORE handing it to replaceSenderTrack.
+          // If the track is still disabled (enabled=false) when the sender gets it,
+          // the remote side sees a black video even though the track was added.
+          newTrack.enabled = true;
           localStream.addTrack(newTrack);
           replaceSenderTrack("video", newTrack);
         } catch (e) {
@@ -5565,6 +5643,12 @@
       activeMediaCalls = {};
       remoteStreams = {};
       remoteMediaStates = {};
+      if (typeof _pendingIncomingCalls !== "undefined") {
+        Object.values(_pendingIncomingCalls).forEach(call => {
+          try { call.close(); } catch (e) { }
+        });
+        _pendingIncomingCalls = {};
+      }
 
       const localVideo = document.getElementById("localVideoFeed");
       if (localVideo) localVideo.srcObject = null;
@@ -5644,14 +5728,29 @@
 
     function connectCallsWithRoomMembers() {
       if (!peerInstance || !isCallActive || !localStream) return;
+      // BUG-1 FIX: Use authoritative PeerJS ID and correct host vs guest tie-breaking.
+      // 1. Host initiates calls to all guests.
+      // 2. Guests NEVER initiate calls to host (host will call the guest).
+      // 3. Between two guests, peer with lexicographically greater ID initiates.
+      // This completely eliminates dual-call glare (simultaneous SDP offer collision in WebRTC mesh).
+      const myPeerId = (peerInstance && peerInstance.id) || myClientId;
+      const hostPeerId = (guestHostConn && guestHostConn.peer) || (activeRoomCode ? "calcium-notes-room-" + activeRoomCode : "");
+
       Object.values(squadMembersMap).forEach(m => {
-        if (m.peerId && m.peerId !== myClientId && !m.peerId.startsWith("me-")) {
-          // Tie-breaker: Host initiates calls to all guests, or peer with lexicographically greater ID initiates.
-          // This prevents dual-call glare (simultaneous SDP offers collision in WebRTC)!
-          const shouldInitiate = isRoomHost || (myClientId > m.peerId);
-          if (shouldInitiate && !activeMediaCalls[m.peerId]) {
-            initiateMediaCallToPeer(m.peerId);
-          }
+        if (!m || !m.peerId || m.peerId === myPeerId || m.peerId.startsWith("me-")) return;
+
+        const isTargetHost = (m.peerId === hostPeerId) || m.peerId.startsWith("calcium-notes-room-");
+        let shouldInitiate = false;
+
+        if (isRoomHost) {
+          shouldInitiate = !isTargetHost;
+        } else {
+          // As a guest, only initiate to other guests when our ID is greater
+          shouldInitiate = !isTargetHost && (myPeerId > m.peerId);
+        }
+
+        if (shouldInitiate && !activeMediaCalls[m.peerId]) {
+          initiateMediaCallToPeer(m.peerId);
         }
       });
     }
@@ -5669,6 +5768,7 @@
 
       try {
         const call = peerInstance.call(remotePeerId, localStream);
+        if (!call) return;
         activeMediaCalls[remotePeerId] = call;
         bindCallEvents(call, remotePeerId);
       } catch (e) {
@@ -5677,7 +5777,12 @@
       }
     }
 
+    // BUG-2 FIX: Queue incoming calls that arrive before the user has joined the call.
+    // Answering without a localStream sends no media and silently breaks the connection.
+    let _pendingIncomingCalls = {};
+
     function handleIncomingMediaCall(call) {
+      if (!call) return;
       const remotePeerId = call.peer;
       if (isRoomHost && activeRoomPassword && !authenticatedPeers.has(remotePeerId)) {
         console.warn("Rejected incoming media call from unauthenticated peer:", remotePeerId);
@@ -5688,10 +5793,13 @@
 
       if (localStream) {
         call.answer(localStream);
+        bindCallEvents(call, remotePeerId);
       } else {
-        call.answer();
+        // User hasn't joined the call yet — queue the call and answer when localStream is ready.
+        // Do NOT answer with no stream; it causes remote side to receive an empty MediaConnection.
+        _pendingIncomingCalls[remotePeerId] = call;
+        console.log("Queued incoming call from " + remotePeerId + " until localStream is ready.");
       }
-      bindCallEvents(call, remotePeerId);
     }
 
     function bindCallEvents(call, remotePeerId) {
@@ -5706,6 +5814,22 @@
         console.warn("Call error with " + remotePeerId, err);
         removeRemoteVideoTile(remotePeerId);
       });
+
+      // Native WebRTC connection monitoring: clean up zombie tiles if connection drops
+      if (call.peerConnection) {
+        try {
+          call.peerConnection.addEventListener("connectionstatechange", () => {
+            if (call.peerConnection && (call.peerConnection.connectionState === "failed" || call.peerConnection.connectionState === "closed")) {
+              removeRemoteVideoTile(remotePeerId);
+            }
+          });
+          call.peerConnection.addEventListener("iceconnectionstatechange", () => {
+            if (call.peerConnection && (call.peerConnection.iceConnectionState === "failed" || call.peerConnection.iceConnectionState === "closed")) {
+              removeRemoteVideoTile(remotePeerId);
+            }
+          });
+        } catch (e) { }
+      }
     }
 
     function renderRemoteVideoTile(remotePeerId, remoteStream) {
@@ -5742,9 +5866,25 @@
       const videoEl = document.getElementById(`video-feed-${remotePeerId}`);
       if (videoEl) {
         videoEl.className = `v-filter-${filterId}`;
+        videoEl.playsInline = true;
+        videoEl.setAttribute("playsinline", "");
+        videoEl.setAttribute("webkit-playsinline", "");
+        videoEl.setAttribute("autoplay", "");
         if (videoEl.srcObject !== remoteStream) {
           videoEl.srcObject = remoteStream;
-          videoEl.play().catch(e => console.log("Remote play err:", e));
+          const playPromise = videoEl.play();
+          if (playPromise && typeof playPromise.catch === "function") {
+            playPromise.catch(e => {
+              console.log("Remote play err, adding user interaction fallback:", e);
+              const resumeAudio = () => {
+                videoEl.play().catch(() => { });
+                document.removeEventListener("click", resumeAudio);
+                document.removeEventListener("touchstart", resumeAudio);
+              };
+              document.addEventListener("click", resumeAudio, { once: true });
+              document.addEventListener("touchstart", resumeAudio, { once: true });
+            });
+          }
         }
       }
 
@@ -5770,8 +5910,17 @@
       delete remoteMediaStates[remotePeerId];
 
       const tile = document.getElementById(`video-tile-${remotePeerId}`);
-      if (tile) tile.remove();
+      if (tile) {
+        if (tile.classList.contains("pinned-tile")) {
+          const gallery = document.getElementById("videoGallery");
+          if (gallery) gallery.classList.remove("has-pinned-tile");
+        }
+        tile.remove();
+      }
       updateCallHeaderCount();
+      if (typeof updateMeetGridLayout === "function") {
+        updateMeetGridLayout();
+      }
     }
 
     function broadcastMediaState() {
@@ -5969,8 +6118,17 @@
         localVideo.style.pointerEvents = isVideoOn ? "auto" : "none";
         localVideo.className = `v-filter-${currentVideoFilter}`;
         localVideo.style.transform = isScreenSharing ? "none" : "scaleX(-1) translateZ(0)";
-        if (isVideoOn && localStream && localVideo.paused) {
-          localVideo.play().catch(() => { });
+        if (isVideoOn) {
+          if (localStream && (localVideo.srcObject !== localStream && !isScreenSharing)) {
+            localVideo.srcObject = localStream;
+          }
+          if (localVideo.paused) {
+            localVideo.play().catch(() => { });
+          }
+        } else {
+          if (!localVideo.paused) {
+            try { localVideo.pause(); } catch (e) { }
+          }
         }
       }
       if (filterBadge) {
