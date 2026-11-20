@@ -1,177 +1,735 @@
-/* Body and general styling */
-body {
-    background-color: #f5f7fa;
-    margin: 0;
-    padding: 20px;
-    font-family: "Segoe UI", Arial, sans-serif;
-    color: #1f2937;
-    text-align: center;
-}
+/* ==========================================================================
+   CALCIUM NOTES — PROFESSIONAL RESOURCE REPOSITORY (UI/UX 2.0)
+   Pixel-Perfect Responsive Layout • Zero Clipping • Deep Glass Reactor Theme
+   ========================================================================== */
 
-/* Headings */
-h1 {
-    text-align: center;
-    color: #1e3a8a;
-    font-size: 32px;
-    margin-bottom: 40px;
-    margin-top: 20px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
 
-h2 {
-    text-align: center;
-    color: #1e3a8a;
-    font-size: 24px;
-    margin-top: 30px;
-    margin-bottom: 25px;
-}
-
-/* Books section */
-.books {
-    display: inline-block;
-    margin: 20px;
-    padding: 15px 20px;
-    border: 2px solid #1e3a8a;
-    width: 200px;
-    text-align: center;
-    font-size: 18px;
-    background-color: #1e3a8a;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
-}
-
-.books:hover {
-    background-color: #2563eb;
-}
-
-.books a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    font-weight: 500;
-}
-
-/* Case scenarios section */
-.case {
-    display: inline-block;
-    margin: 20px;
-    padding: 15px 20px;
-    background-color: #0f598a;
-    border: 2px solid #0f598a;
-    width: 200px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 6px;
-    background-color: #0f598a;
-    transition: background-color 0.3s ease;
-}
-
-.case:hover {
-    background-color: #3a96ec;
-}
-
-.case a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    font-weight: 500;
-}
-
-
-/* Ammendments CSS */
-.amendments {
-    display: inline-block;
-    margin: 20px;
-    padding: 15px 20px;
-    border: 2px solid #3e94a3;
-    width: 200px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 6px;
-    background-color: #3e94a3;
-    transition: background-color 0.3s ease;
-}
-
-.amendments:hover {
-    background-color: #1b6f7e;
-}
-
-.amendments a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    font-weight: 500;
-}
-
-/* about resources */
-
-/* 1. ROOT VARIABLES (The "Elemental" Palette) */
+/* ── 1. DESIGN TOKENS & VARIABLES ── */
 :root {
-    --primary-blue: #3b82f6;
-    --light-blue: #93c5fd;
-    --dark-blue: #1e3a8a;
-    --bg-dark: #0f172a;
-    --glass-bg: rgba(255, 255, 255, 0.05);
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --transition: 0.3s ease;
+  --bg-deep: #060b16;
+  --bg-surface: #0b1325;
+  --bg-card: rgba(15, 23, 42, 0.72);
+  --bg-card-hover: rgba(24, 38, 70, 0.88);
+  --bg-card-inner: rgba(2, 6, 23, 0.55);
+  
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-card: rgba(56, 189, 248, 0.2);
+  --border-card-hover: rgba(56, 189, 248, 0.6);
+  
+  --primary-cyan: #38bdf8;
+  --primary-blue: #3b82f6;
+  --primary-indigo: #6366f1;
+  --accent-emerald: #10b981;
+  --accent-amber: #f59e0b;
+  --accent-purple: #a855f7;
+  
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  
+  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 10px 28px -5px rgba(0, 0, 0, 0.55), 0 0 15px rgba(56, 189, 248, 0.08);
+  --shadow-hover: 0 20px 40px -8px rgba(0, 0, 0, 0.75), 0 0 30px rgba(56, 189, 248, 0.25);
+  
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+  
+  --transition-fast: 0.18s ease;
+  --transition-normal: 0.26s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* 2. UNIFIED UTILITY CLASSES */
-.glass-panel {
-    background: var(--glass-bg);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid var(--glass-border);
-    border-radius: 15px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+/* ── 2. GLOBAL RESET ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.center-container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 30px auto;
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  color-scheme: dark;
 }
 
-/* 3. UPDATED RESOURCE STYLING (Unified) */
-.resource-directory {
-    /* Inherits from .center-container in HTML */
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--text-primary);
+  background-color: var(--bg-deep);
+  background-image: 
+    radial-gradient(ellipse 90% 60% at 50% -15%, rgba(37, 99, 235, 0.25), transparent 70%),
+    radial-gradient(circle 600px at 15% 25%, rgba(14, 165, 233, 0.12), transparent 60%),
+    radial-gradient(circle 500px at 85% 65%, rgba(99, 102, 241, 0.12), transparent 55%),
+    radial-gradient(circle 700px at 50% 90%, rgba(16, 185, 129, 0.08), transparent 70%);
+  background-attachment: fixed;
+  background-size: cover;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.resource-grid ul {
-    list-style-type: '⚡ ';
-    padding-left: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+/* ── 3. STICKY TOP NAVIGATION ── */
+.res-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 28px;
+  background: rgba(6, 11, 22, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-subtle);
+  width: 100%;
 }
 
-.resource-grid li {
-    background: rgba(255, 255, 255, 0.03);
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid rgba(59, 130, 246, 0.1);
-    transition: var(--transition);
+.res-nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text-primary);
 }
 
-.resource-grid li:hover {
-    background: rgba(59, 130, 246, 0.1);
-    border-color: var(--primary-blue);
-    transform: translateY(-3px); /* Unify with button hover feel */
+.res-nav-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.35);
 }
 
-.resource-grid li strong {
-    color: var(--light-blue);
+.res-nav-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  background: linear-gradient(135deg, #ffffff 0%, var(--primary-cyan) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* 4. REFINING HEADERS (Unified for index & resources) */
-.in, .dis {
-    text-align: center;
-    color: var(--light-blue);
-    letter-spacing: 1px;
+.res-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
+.res-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.res-back-btn:hover {
+  color: #ffffff;
+  background: rgba(56, 189, 248, 0.14);
+  border-color: var(--primary-cyan);
+  transform: translateY(-1px);
+}
+
+.res-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: var(--radius-full);
+}
+
+/* ── 4. MAIN PAGE CONTAINER ── */
+.res-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+/* ── 5. HERO HEADER ── */
+.res-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.res-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  margin-bottom: 18px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #7dd3fc;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.16), rgba(99, 102, 241, 0.16));
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: var(--radius-full);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.12);
+}
+
+.res-hero h1,
+h1 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+  margin: 0 auto 16px;
+  max-width: 900px;
+  background: linear-gradient(135deg, #ffffff 20%, #93c5fd 60%, var(--primary-cyan) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.res-hero-subtitle {
+  font-size: clamp(0.95rem, 1.8vw, 1.12rem);
+  font-weight: 400;
+  color: var(--text-muted);
+  max-width: 740px;
+  margin: 0 auto 28px;
+  line-height: 1.65;
+}
+
+/* Stats Counter Strip */
+.res-stats-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.res-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(8px);
+}
+
+.res-stat-icon {
+  font-size: 1rem;
+}
+
+/* ── 6. SECTIONS & CATEGORY HEADERS ── */
+.res-section {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.res-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.res-section-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.res-section-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  font-size: 1.3rem;
+  border-radius: var(--radius-md);
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.15);
+  flex-shrink: 0;
+}
+
+.res-section-icon.emerald {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.32);
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.15);
+}
+
+.res-section-icon.amber {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.32);
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.15);
+}
+
+.res-section-header h2,
+h2 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #f1f5f9;
+  margin: 0;
+  text-align: left;
+}
+
+.res-section-desc {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .res-section-desc {
+    display: inline-block;
+  }
+}
+
+/* ── 7. RESPONSIVE CSS GRID (3 CARDS PER ROW) ── */
+.res-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+/* ── 8. THE 3D GLASS RESOURCE CARD ── */
+.res-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 0; /* Prevents flexbox/grid overflow */
+  padding: 24px 22px 20px;
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+  transition: transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal), background-color var(--transition-normal);
+}
+
+/* Top accent gradient bar */
+.res-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--card-accent, var(--primary-cyan)), transparent);
+  border-top-left-radius: var(--radius-lg);
+  border-top-right-radius: var(--radius-lg);
+  opacity: 0.6;
+  transition: opacity var(--transition-normal);
+}
+
+.res-card:hover {
+  transform: translateY(-5px);
+  background-color: var(--bg-card-hover);
+  border-color: var(--border-card-hover);
+  box-shadow: var(--shadow-hover);
+}
+
+.res-card:hover::before {
+  opacity: 1;
+}
+
+/* Accent Themes */
+.res-card.cyan {
+  --card-accent: var(--primary-cyan);
+}
+.res-card.cyan .res-card-tag {
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.1);
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+.res-card.emerald {
+  --card-accent: var(--accent-emerald);
+}
+.res-card.emerald .res-card-tag {
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.res-card.amber {
+  --card-accent: var(--accent-amber);
+}
+.res-card.amber .res-card-tag {
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+/* Card Header (Icon & Tag) */
+.res-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.res-card-icon-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  font-size: 1.5rem;
+  border-radius: var(--radius-md);
+  background: var(--bg-card-inner);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.res-card:hover .res-card-icon-badge {
+  transform: scale(1.08);
+}
+
+.res-card-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* Card Body Content */
+.res-card-body {
+  flex: 1 1 auto;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.res-card-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+  letter-spacing: -0.2px;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+.res-card-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 14px;
+  word-break: break-word;
+}
+
+/* Feature Pills Wrap */
+.res-card-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.res-card-features li {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 3px 9px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  white-space: nowrap;
+}
+
+/* Card Footer Action */
+.res-card-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  width: 100%;
+  margin-top: auto;
+}
+
+.res-card-action-text {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--card-accent, var(--primary-cyan));
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: gap var(--transition-fast);
+}
+
+.res-card:hover .res-card-action-text {
+  gap: 12px;
+}
+
+.res-card-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.res-card:hover .res-card-arrow {
+  background: var(--card-accent, var(--primary-cyan));
+  color: #020617;
+  transform: translateX(4px);
+  border-color: transparent;
+}
+
+/* ── 9. KNOWLEDGE BASE & NOTICE BOX ── */
+.notice {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 55px;
+  padding: 36px 30px;
+  border-radius: var(--radius-xl);
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  box-shadow: var(--shadow-md);
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.notice h1.in,
 .in {
-    font-size: 1.8rem;
-    border-bottom: 1px solid rgba(147, 197, 253, 0.2);
-    padding-bottom: 10px;
-    margin-bottom: 25px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  color: #ffffff;
+  margin: 0 0 16px 0;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.25);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.notice h1.in::before {
+  content: "📚";
+  font-size: 1.5rem;
+}
+
+.notice h2.dis,
+.dis {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #7dd3fc;
+  margin: 26px 0 10px 0;
+  letter-spacing: -0.2px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notice h2.dis::before {
+  content: "✦";
+  color: var(--primary-cyan);
+  font-size: 0.9rem;
+}
+
+.notice p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+.notice p strong {
+  color: #f1f5f9;
+  font-weight: 600;
+}
+
+.notice a {
+  color: #38bdf8;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+
+.notice a:hover {
+  color: #93c5fd;
+}
+
+/* Formatted Subject Breakdown Grids */
+.notice ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 20px 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  width: 100%;
+}
+
+.notice ul li {
+  background: rgba(2, 6, 23, 0.45);
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.notice ul li:hover {
+  border-color: rgba(56, 189, 248, 0.35);
+  transform: translateY(-2px);
+  background: rgba(15, 23, 42, 0.85);
+}
+
+.notice ul li strong {
+  color: #38bdf8;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Footer Tag Note */
+.footer-note {
+  margin-top: 30px;
+  padding: 14px 20px;
+  border-radius: var(--radius-md);
+  background: rgba(2, 6, 23, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  text-align: center;
+  letter-spacing: 0.4px;
+}
+
+/* ── 10. PAGE FOOTER ── */
+.res-footer {
+  text-align: center;
+  padding: 30px 20px 40px;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border-subtle);
+  margin-top: 50px;
+}
+
+.res-footer a {
+  color: var(--primary-cyan);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.res-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ── 11. RESPONSIVE BREAKPOINTS (FLUID & ADAPTIVE) ── */
+@media (max-width: 1080px) {
+  .res-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .notice ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .res-nav {
+    padding: 12px 18px;
+  }
+  
+  .res-badge-pill {
+    display: none;
+  }
+  
+  .res-container {
+    width: 100%;
+    padding: 24px 16px 50px;
+  }
+  
+  .res-hero {
+    margin-bottom: 35px;
+  }
+  
+  .res-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .res-card {
+    padding: 20px 16px;
+  }
+  
+  .notice {
+    padding: 24px 16px;
+    border-radius: var(--radius-lg);
+  }
 }
