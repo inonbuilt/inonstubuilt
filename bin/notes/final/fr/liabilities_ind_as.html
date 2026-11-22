@@ -807,6 +807,166 @@
             font-weight: 700;
             color: var(--slate-900);
         }
+
+        /* MCQ Interactive Quiz Styling (AFM Master Standard) */
+        .topic-quiz-card {
+            background: #ffffff;
+            border: 1px solid var(--slate-200);
+            border-left: 4px solid var(--primary);
+            border-radius: 12px;
+            padding: 22px;
+            margin: 22px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .topic-quiz-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+        }
+        .topic-quiz-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #eff6ff;
+            color: #1d4ed8;
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 999px;
+            margin-bottom: 12px;
+            border: 1px solid #bfdbfe;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .topic-quiz-question {
+            font-size: 14.5px;
+            font-weight: 700;
+            color: var(--slate-900);
+            line-height: 1.6;
+            margin-bottom: 14px;
+        }
+        .mcq-options-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin: 14px 0 16px 0;
+        }
+        .mcq-option-item {
+            background: var(--slate-50, #f8fafc);
+            border: 1.5px solid var(--slate-200, #e2e8f0);
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 14px;
+            color: var(--slate-800, #1e293b);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .mcq-option-item:hover {
+            background: #f0fdf4;
+            border-color: #22c55e;
+            transform: translateX(4px);
+        }
+        .mcq-option-item.selected-correct {
+            background: #dcfce7 !important;
+            border-color: #16a34a !important;
+            color: #14532d !important;
+            font-weight: 700;
+        }
+        .mcq-option-item.selected-correct::after {
+            content: "✓ Correct";
+            font-weight: 800;
+            color: #16a34a;
+            font-size: 13px;
+        }
+        .mcq-option-item.selected-wrong {
+            background: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #7f1d1d !important;
+            font-weight: 700;
+        }
+        .mcq-option-item.selected-wrong::after {
+            content: "✗ Incorrect";
+            font-weight: 800;
+            color: #dc2626;
+            font-size: 13px;
+        }
+        .mcq-option-item.reveal-correct {
+            background: #f0fdf4 !important;
+            border-color: #22c55e !important;
+            color: #15803d !important;
+            font-style: italic;
+        }
+        .mcq-option-item.reveal-correct::after {
+            content: "✓ Key Answer";
+            font-weight: 700;
+            color: #16a34a;
+            font-size: 12px;
+        }
+        .quiz-btn-row {
+            margin-top: 14px;
+        }
+        .reveal-btn {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            color: #1d4ed8;
+            padding: 7px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .reveal-btn:hover {
+            background: #2563eb;
+            color: #ffffff;
+        }
+        .explanation-box {
+            display: none;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 3px solid #10b981;
+            border-radius: 8px;
+            padding: 16px 18px;
+            margin-top: 14px;
+            font-size: 13.5px;
+            line-height: 1.65;
+            color: #334155;
+        }
+        [data-theme='dark'] .topic-quiz-card,
+        body.dark-theme .topic-quiz-card {
+            background: #0f172a;
+            border-color: #334155;
+        }
+        [data-theme='dark'] .topic-quiz-question,
+        body.dark-theme .topic-quiz-question {
+            color: #f1f5f9;
+        }
+        [data-theme='dark'] .mcq-option-item,
+        body.dark-theme .mcq-option-item {
+            background: #1e293b;
+            border-color: #334155;
+            color: #e2e8f0;
+        }
+        [data-theme='dark'] .mcq-option-item.selected-correct,
+        body.dark-theme .mcq-option-item.selected-correct {
+            background: #064e3b !important;
+            color: #a7f3d0 !important;
+            border-color: #10b981 !important;
+        }
+        [data-theme='dark'] .mcq-option-item.selected-wrong,
+        body.dark-theme .mcq-option-item.selected-wrong {
+            background: #7f1d1d !important;
+            color: #fecaca !important;
+            border-color: #ef4444 !important;
+        }
+        [data-theme='dark'] .explanation-box,
+        body.dark-theme .explanation-box {
+            background: #1e293b;
+            border-color: #334155;
+            color: #cbd5e1;
+        }
     </style>
 </head>
 
@@ -1209,10 +1369,319 @@
                     <!-- Solved TYK Questions -->
                     <div class="concept-card" id="ind-as-19-tyk">
                         <div class="concept-header">
-                            <h3 class="concept-title">8. Test Your Knowledge (TYK Questions 1 to 6 Fully Solved)</h3>
-                            <span class="concept-badge">ICAI Module Solutions</span>
+                            <h3 class="concept-title">8. Test Your Knowledge (Interactive MCQs & ICAI Solved TYKs)</h3>
+                            <span class="concept-badge">AFM-Style MCQs + Module Solutions</span>
                         </div>
                         <div class="concept-body">
+
+                            <!-- Section Header for MCQs -->
+                            <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 1.5px solid #bfdbfe; border-radius: 10px; padding: 16px 20px; margin-bottom: 24px;">
+                                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+                                    <div>
+                                        <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #1d4ed8; background: #ffffff; padding: 3px 8px; border-radius: 999px;">Part A • Interactive Concept Evaluation</span>
+                                        <h4 style="font-family: 'Outfit', sans-serif; font-size: 17px; font-weight: 700; color: #1e3a8a; margin: 6px 0 2px 0;">Ind AS 19 Exam Master Quiz Cards</h4>
+                                        <p style="font-size: 13px; color: #3b82f6; margin: 0;">Click an option to test your understanding. Immediate feedback and detailed actuarial mathematical explanations provided.</p>
+                                    </div>
+                                    <span style="font-size: 12px; font-weight: 700; color: #1e40af; background: rgba(255,255,255,0.8); padding: 6px 12px; border-radius: 8px; border: 1px solid #bfdbfe;">10 Standard Questions</span>
+                                </div>
+                            </div>
+
+                            <!-- MCQ 1 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 1.1</div>
+                                <div class="topic-quiz-question">Under Ind AS 19, an entity employs 500 workers. Each worker is entitled to 6 days of paid sick leave per year. Unused leave can be carried forward for 1 calendar year on a LIFO basis. The leave is non-vesting (cannot be encashed on departure). At year-end, historical patterns indicate that 450 employees will take 6 days or less, while 50 employees will take an average of 8 days each. The average wage rate is ₹1,500 per day. What liability should the entity recognize for accumulating compensated absences?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind19-q1-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;₹1,50,000 (50 employees × 2 excess days × ₹1,500)
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q1-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;₹4,50,000 based on the total unused carried-forward leaves of all 500 employees
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q1-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;₹Nil, because sick leave is non-vesting and creates no cash settlement right
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q1-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;₹7,50,000 based on the expected total sick leave consumption in the subsequent period
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind19-q1-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind19-q1-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Actuarial Explanation:</strong><br>
+                                    Under Paragraph 16 of Ind AS 19, an entity measures the expected cost of accumulating compensated absences as the <strong>additional amount that the entity expects to pay as a result of the unused entitlement accumulated at the end of the reporting period</strong>.<br>
+                                    • For the 450 employees taking ≤ 6 days, their leave needs are fully satisfied by next year's fresh entitlement; the carried-forward leave will simply lapse without incremental cash cost.<br>
+                                    • For the 50 employees taking 8 days, they will consume their 6 current days plus 2 carried-forward days each.<br>
+                                    $$\text{Liability} = 50 \text{ employees} \times (8 - 6) \text{ days} \times ₹1,500 = 100 \text{ days} \times ₹1,500 = \mathbf{₹1,50,000}.$$
+                                </div>
+                            </div>
+
+                            <!-- MCQ 2 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 1.2</div>
+                                <div class="topic-quiz-question">An enterprise contributes a mandatory 12% of basic salary to an employer-managed provident fund trust. The trust rules guarantee that if annual investment yields fall below the statutory rate declared by the EPFO (say 8.25% p.a.), the enterprise must make good the shortfall. How is this plan classified and accounted for under Ind AS 19?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind19-q2-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;Defined Benefit Plan, because the employer retains the investment risk through the guaranteed return
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q2-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;Defined Contribution Plan, because contributions are fixed at a constant 12% of basic salary
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q2-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;Other Long-Term Employee Benefit, because settlement occurs upon retirement or resignation
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q2-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;Contingent Liability with footnote disclosure only until a deficit actually arises
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind19-q2-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind19-q2-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Detailed Explanation:</strong><br>
+                                    Under Paragraph 28 of Ind AS 19, where an entity has a legal or constructive obligation to guarantee a specified return or to fund any shortfall, the <strong>actuarial risk and investment risk fall on the entity</strong>. Even though ongoing contributions are formulated as a fixed percentage, the presence of the statutory minimum guarantee converts the entire arrangement into a <strong>Defined Benefit Plan</strong> (as affirmed by the ICAI Guidance Note on Exempt Provident Fund Trusts).
+                                </div>
+                            </div>
+
+                            <!-- MCQ 3 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 1.3</div>
+                                <div class="topic-quiz-question">According to Ind AS 19, which benchmark rate MUST an Indian entity apply to discount post-employment benefit obligations denominated in Indian Rupees (INR)?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind19-q3-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;Market yield on Indian government bonds at the end of the reporting period
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q3-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;Yields on AAA-rated corporate bonds having maturities matching the benefit obligation
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q3-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;The entity's weighted average cost of capital (WACC) or bank lending rate
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q3-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;The expected long-term compound rate of return on the trust's plan assets
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind19-q3-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind19-q3-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Carve-in / Standard Architecture:</strong><br>
+                                    Paragraph 83 of Ind AS 19 provides that the rate used to discount post-employment benefit obligations shall be determined by reference to market yields at the end of the reporting period on government bonds. In India, because there is no sufficiently deep and active market in high-quality long-term corporate bonds, the discount rate is **mandatorily benchmarked to Indian Government Bond yields**.
+                                </div>
+                            </div>
+
+                            <!-- MCQ 4 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 1.4</div>
+                                <div class="topic-quiz-question">At 1 April 20X1, an entity's Defined Benefit Plan had: Present Value of Obligation (PVDBO) = ₹1,200 lakhs, and Fair Value of Plan Assets (FVPA) = ₹1,000 lakhs. The relevant government bond discount rate is 8.00% p.a. During 20X1-20X2, actual returns generated on the plan assets were ₹105 lakhs. What is the net interest cost to be recognized in the Statement of Profit and Loss?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind19-q4-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;₹16.00 lakhs Net Interest Expense in P&amp;L
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q4-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;₹9.00 lakhs Net Interest Income in P&amp;L (₹105 lakhs return – ₹96 lakhs interest on DBO)
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q4-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;₹96.00 lakhs Interest Expense in P&amp;L and ₹105.00 lakhs Return in OCI
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q4-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;₹25.00 lakhs Remeasurement Gain in P&amp;L
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind19-q4-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind19-q4-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Step-by-Step Calculation:</strong><br>
+                                    Under Ind AS 19 Paragraphs 123–126, Net Interest on the Net Defined Benefit Liability is determined by multiplying the net liability by the discount rate:<br>
+                                    $$\text{Net Interest Cost (P\&L)} = (\text{PVDBO} - \text{FVPA}) \times r = (₹1,200 - ₹1,000) \times 8\% = ₹200 \times 8\% = \mathbf{₹16 \text{ lakhs}}.$$<br>
+                                    • Interest cost on obligation = $₹1,200 \times 8\% = ₹96 \text{ lakhs}$.<br>
+                                    • Interest income on plan assets credited to P&L = $₹1,000 \times 8\% = ₹80 \text{ lakhs}$.<br>
+                                    • Remeasurement gain in OCI = $\text{Actual Return} - \text{Interest Income} = ₹105 - ₹80 = \mathbf{₹25 \text{ lakhs}}$ (credited to OCI, never P&L).
+                                </div>
+                            </div>
+
+                            <!-- MCQ 5 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 1.5</div>
+                                <div class="topic-quiz-question">Which of the following is TRUE regarding the treatment of actuarial gains and losses (remeasurements) recognized in Other Comprehensive Income (OCI) under Ind AS 19?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind19-q5-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;They can NEVER be reclassified (recycled) to Profit or Loss in any subsequent period
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q5-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;They are amortized to Profit or Loss over the expected average remaining working lives of employees
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q5-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;They are recycled to Profit or Loss upon complete settlement of the defined benefit plan
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q5-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;They are recognized in P&L if they exceed the 10% corridor threshold
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind19-q5-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind19-q5-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Standard Rule (Para 122):</strong><br>
+                                    Ind AS 19 Paragraph 122 explicitly states: <em>"Remeasurements of the net defined benefit liability (asset) recognised in other comprehensive income shall not be reclassified to profit or loss in a subsequent period."</em> They may be transferred within equity (e.g. from OCI to Retained Earnings). The old AS 15 corridor approach and delayed amortization are strictly eliminated in Ind AS 19.
+                                </div>
+                            </div>
+
+                            <!-- MCQ 6 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 1.6</div>
+                                <div class="topic-quiz-question">On 1 July 20X1, an entity improves the gratuity formula for its active workforce, resulting in an unvested past service obligation of ₹40 lakhs (requiring 3 more years of service to vest) and a vested past service obligation of ₹60 lakhs. How should the total past service cost of ₹100 lakhs be accounted for?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind19-q6-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;The entire ₹100 lakhs must be recognized IMMEDIATELY as an expense in Profit or Loss
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q6-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;₹60 lakhs immediately in P&amp;L; ₹40 lakhs deferred and amortized straight-line over 3 years
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q6-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;Entire ₹100 lakhs recognized in OCI as a plan amendment remeasurement
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q6-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;Entire ₹100 lakhs capitalized as an intangible asset (workforce goodwill)
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind19-q6-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind19-q6-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Immediate Recognition Mandate:</strong><br>
+                                    Under Ind AS 19 Paragraphs 102–104, past service cost resulting from a plan amendment or curtailment must be recognized as an expense at the earlier of when the plan amendment occurs and when the entity recognizes related restructuring costs. <strong>The distinction between vested and unvested past service costs has been completely removed.</strong> All ₹100 lakhs must be charged immediately to Profit or Loss.
+                                </div>
+                            </div>
+
+                            <!-- MCQ 7 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 1.7</div>
+                                <div class="topic-quiz-question">At 31 March 20X2, a defined benefit plan displays: Fair Value of Plan Assets = ₹850 lakhs, Present Value of Defined Benefit Obligation = ₹600 lakhs (Surplus = ₹250 lakhs). The present value of future economic benefits available to the entity through refunds and reductions in future contributions is ₹160 lakhs. What is the net defined benefit asset to be reported on the Balance Sheet?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind19-q7-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;₹160 lakhs (capped by the Asset Ceiling)
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q7-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;₹250 lakhs (full surplus reported without restriction)
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q7-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;₹90 lakhs (the excess of surplus over available benefits)
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q7-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;₹Nil, because net pension assets cannot be recognized in financial statements
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind19-q7-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind19-q7-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Asset Ceiling Test (Para 64):</strong><br>
+                                    Under Paragraph 64 of Ind AS 19, when a defined benefit plan is in surplus, the recognized net defined benefit asset is measured at the <strong>lower of</strong>:<br>
+                                    (a) The plan surplus: $\text{FVPA} - \text{PVDBO} = ₹850 - ₹600 = \mathbf{₹250 \text{ lakhs}}$; and<br>
+                                    (b) The <strong>Asset Ceiling</strong>: the present value of any economic benefits available in the form of refunds from the plan or reductions in future contributions = $\mathbf{₹160 \text{ lakhs}}$.<br>
+                                    $$\text{Recognized Asset} = \min(₹250, ₹160) = \mathbf{₹160 \text{ lakhs}}.$$
+                                    The difference of ₹90 lakhs is recognized in OCI as the effect of the asset ceiling.
+                                </div>
+                            </div>
+
+                            <!-- MCQ 8 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 1.8</div>
+                                <div class="topic-quiz-question">How does Ind AS 19 treat actuarial gains and losses arising on "Other Long-Term Employee Benefits" (e.g. Long-Service Awards, Sabbatical Leave, Jubilee Benefits)?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind19-q8-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;Recognized wholly and immediately in Profit or Loss; NOTHING enters OCI
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q8-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;Recognized in OCI without reclassification to Profit or Loss
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q8-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;Deferred and recognized only upon physical payment of the long-term benefit
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q8-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;Recognized in OCI and amortized over the vesting period into P&amp;L
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind19-q8-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind19-q8-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Crucial Examination Distinction:</strong><br>
+                                    Under Paragraph 156 of Ind AS 19, for other long-term employee benefits, an entity shall recognize the net total of: (a) service cost; (b) net interest; and (c) <strong>remeasurements of the net defined benefit liability (including actuarial gains and losses) DIRECTLY IN PROFIT OR LOSS</strong>. The OCI channel is strictly reserved for post-employment benefits.
+                                </div>
+                            </div>
+
+                            <!-- MCQ 9 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 1.9</div>
+                                <div class="topic-quiz-question">On 15 March 20X1, the Board of Directors approved a Voluntary Retirement Scheme (VRS). The detailed terms of the scheme were formally communicated to employees and trade unions on 28 March 20X1, with no possibility of unilateral withdrawal by the employer. Employees have until 30 April 20X1 to submit applications. How should the termination benefits be recognized in the FY 20X0-20X1 financial statements?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind19-q9-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;Recognize a liability and expense as at 31 March 20X1 based on the best estimate of accepting employees
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q9-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;Disclose only as a Non-adjusting Event after Reporting Period in the FY 20X0-20X1 notes
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q9-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;Recognize the expense in FY 20X1-20X2 only after the application window closes on 30 April 20X1
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q9-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;Amortize the cost over 5 years under the deferred revenue expenditure model
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind19-q9-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind19-q9-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Termination Benefit Trigger (Para 165):</strong><br>
+                                    An entity recognizes termination benefits at the earlier of when it can no longer withdraw the offer of those benefits and when it recognizes restructuring costs under Ind AS 37. Because the entity announced a binding, non-withdrawable offer on 28 March 20X1 before the reporting date, <strong>a present legal/constructive obligation exists as at 31 March 20X1</strong>. It must recognize a liability based on the best actuarial estimate of expected employee acceptances.
+                                </div>
+                            </div>
+
+                            <!-- MCQ 10 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 1.10</div>
+                                <div class="topic-quiz-question">Under the Projected Unit Credit Method (PUCM), an employee joins on 1 April 20X1. The retirement gratuity pays 15 days of final salary for each completed year of service, subject to a statutory ceiling of ₹20,00,000, vesting after 5 years of continuous service. How is the benefit attributed across service years under Ind AS 19?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind19-q10-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;Attributed straight-line to each year of service starting from Year 1 up to retirement date (or when ceiling is reached)
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q10-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;No obligation is recognized during Years 1 to 4; full 5-year benefit is recognized in Year 5 upon vesting
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q10-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;Full ₹20,00,000 ceiling is attributed entirely in the year of joining
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind19-q10-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;Attributed only in the final year of retirement when the payment becomes due
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind19-q10-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind19-q10-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Benefit Attribution Principle (Para 70):</strong><br>
+                                    Under Paragraph 70, an entity attributes benefit to periods of service in accordance with the plan's benefit formula. Even though the benefit vests only after 5 years, employee service in Year 1 gives rise to an obligation because future service will lead to entitlement. Therefore, the benefit is attributed <strong>straight-line to each individual year from Year 1</strong>, factoring in the probability of employee turnover before the 5-year vesting cliff.
+                                </div>
+                            </div>
+
+                            <!-- Section Header for Solved Descriptive TYKs -->
+                            <div style="background: #f1f5f9; border-left: 4px solid #475569; border-radius: 4px; padding: 12px 16px; margin: 32px 0 20px 0;">
+                                <h4 style="font-family: 'Outfit', sans-serif; font-size: 16px; font-weight: 700; color: #1e293b; margin: 0 0 4px 0;">Part B • ICAI Module Descriptive Practice Problems &amp; Full Step-by-Step Solutions</h4>
+                                <p style="font-size: 13px; color: #64748b; margin: 0;">Comprehensive ICAI Study Material questions with complete mathematical derivations and disclosure entries.</p>
+                            </div>
 
                             <!-- TYK 1 -->
                             <div class="tyk-card">
@@ -1655,10 +2124,324 @@
                     <!-- Solved TYK Questions -->
                     <div class="concept-card" id="ind-as-37-tyk">
                         <div class="concept-header">
-                            <h3 class="concept-title">7. Test Your Knowledge (TYK Questions 1 to 5 Fully Solved)</h3>
-                            <span class="concept-badge">ICAI Module Solutions</span>
+                            <h3 class="concept-title">7. Test Your Knowledge (Interactive MCQs & ICAI Solved TYKs)</h3>
+                            <span class="concept-badge">AFM-Style MCQs + Module Solutions</span>
                         </div>
                         <div class="concept-body">
+
+                            <!-- Section Header for MCQs -->
+                            <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: 1.5px solid #bfdbfe; border-radius: 10px; padding: 16px 20px; margin-bottom: 24px;">
+                                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+                                    <div>
+                                        <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #1d4ed8; background: #ffffff; padding: 3px 8px; border-radius: 999px;">Part A • Interactive Concept Evaluation</span>
+                                        <h4 style="font-family: 'Outfit', sans-serif; font-size: 17px; font-weight: 700; color: #1e3a8a; margin: 6px 0 2px 0;">Ind AS 37 Exam Master Quiz Cards</h4>
+                                        <p style="font-size: 13px; color: #3b82f6; margin: 0;">Click an option to test your understanding. Immediate feedback and detailed legal &amp; accounting rationales provided.</p>
+                                    </div>
+                                    <span style="font-size: 12px; font-weight: 700; color: #1e40af; background: rgba(255,255,255,0.8); padding: 6px 12px; border-radius: 8px; border: 1px solid #bfdbfe;">10 Standard Questions</span>
+                                </div>
+                            </div>
+
+                            <!-- MCQ 1 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 2.1</div>
+                                <div class="topic-quiz-question">Which of the following conditions must ALL be satisfied simultaneously for an entity to recognize a provision under Ind AS 37?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind37-q1-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;Present obligation arising from a past event + Probable (> 50%) outflow of resources + Reliable estimate of amount
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q1-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;Possible obligation + Probable outflow + Reliable estimate approved by the Board of Directors
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q1-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;Present obligation + Future planned commitment + Certain (100%) cash expenditure
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q1-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;Future obligation from planned restructuring + Outflow is possible (5% to 50%)
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind37-q1-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind37-q1-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Statutory Triad (Para 14):</strong><br>
+                                    Under Paragraph 14 of Ind AS 37, a provision shall be recognized when, and only when:<br>
+                                    1. An entity has a <strong>present obligation</strong> (legal or constructive) as a result of a past obligating event;<br>
+                                    2. It is <strong>probable (&gt; 50% probability)</strong> that an outflow of resources embodying economic benefits will be required to settle the obligation; and<br>
+                                    3. A <strong>reliable estimate</strong> can be made of the amount of the obligation. If any one criterion fails, no provision is recognized.
+                                </div>
+                            </div>
+
+                            <!-- MCQ 2 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 2.2</div>
+                                <div class="topic-quiz-question">An entity has operated an oil exploration plant in an emerging country without environmental clean-up laws for 15 years. However, the entity has a widely publicized environmental policy stating it will restore all drilling sites, and in all prior projects it has completely restored sites. Is the entity required to recognize a site restoration provision?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind37-q2-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;Yes, because the entity has created a constructive obligation through its published policy and established past practice
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q2-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;No, because there is no legal obligation enforceable under the statutes of the host country
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q2-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;No, it should only disclose a contingent liability until local clean-up laws are formally enacted
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q2-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;Yes, but only in the final year when dismantling operations physically commence
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind37-q2-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind37-q2-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Constructive Obligation Principle (Para 10 &amp; 17):</strong><br>
+                                    Under Paragraph 10 of Ind AS 37, an obligating event is an event that creates a legal or constructive obligation that results in an entity having no realistic alternative to settling that obligation. Through its published environmental charter and uniform past conduct, the entity has raised a <strong>valid expectation</strong> among communities and governments that it will clean up the site. This creates a present <strong>constructive obligation</strong> requiring a provision.
+                                </div>
+                            </div>
+
+                            <!-- MCQ 3 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 2.3</div>
+                                <div class="topic-quiz-question">A manufacturer of air conditioners sells 50,000 units with a 1-year free replacement warranty. Based on actuarial defect rates: 75% of units will require zero repair; 20% will require minor repairs costing ₹500 each; and 5% will suffer major breakdowns costing ₹3,000 each. What is the provision amount measured under Ind AS 37?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind37-q3-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;₹1,25,00,000 (Expected Value method)
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q3-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;₹1,50,00,000 (Maximum possible cost of major breakdown)
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q3-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;₹50,00,000 (Minor repair expected outcome)
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q3-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;₹Nil (Warranty is recognized only as actual claims are lodged by buyers)
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind37-q3-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind37-q3-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Expected Value Method (Para 39):</strong><br>
+                                    Where the provision being measured involves a large population of items, the obligation is estimated by weighting all possible outcomes by their associated probabilities:<br>
+                                    $$\text{Minor Repairs} = 50,000 \times 20\% \times ₹500 = 10,000 \times ₹500 = ₹50,00,000$$<br>
+                                    $$\text{Major Breakdowns} = 50,000 \times 5\% \times ₹3,000 = 2,500 \times ₹3,000 = ₹75,00,000$$<br>
+                                    $$\text{Total Provision} = ₹50,00,000 + ₹75,00,000 = \mathbf{₹1,25,00,000}.$$
+                                </div>
+                            </div>
+
+                            <!-- MCQ 4 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 2.4</div>
+                                <div class="topic-quiz-question">On 1 April 20X1, an entity recognized a site restoration provision of ₹100 lakhs discounted at 10% p.a. During FY 20X1-20X2, due purely to the passage of time, the carrying amount increases by ₹10 lakhs (10% of ₹100 lakhs). How is this ₹10 lakhs increase presented in the Statement of Profit and Loss?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind37-q4-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;Finance Cost (Borrowing / Interest Expense)
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q4-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;Operating Expense under Manufacturing Overheads
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q4-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;Capitalized into the cost of Property, Plant and Equipment (PPE)
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q4-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;Other Comprehensive Income (OCI) as an actuarial remeasurement
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind37-q4-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind37-q4-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Unwinding of Discount (Para 60):</strong><br>
+                                    Under Paragraph 60 of Ind AS 37, where a provision is discounted to present value, the carrying amount of a provision increases in each period to reflect the passage of time. This increase is recognized as a <strong>Finance Cost</strong> in Profit or Loss. It represents the time value of money unwinding and cannot be capitalized or treated as an operating cost.
+                                </div>
+                            </div>
+
+                            <!-- MCQ 5 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 2.5</div>
+                                <div class="topic-quiz-question">When an entity incurs a present obligation to decommission an industrial asset at the end of its 20-year useful life at the time of constructing the facility, what is the initial accounting recognition of the present value of the decommissioning cost?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind37-q5-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;Capitalized into the carrying amount of the PPE (asset) with a corresponding credit to Decommissioning Provision (liability)
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q5-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;Expensed immediately in Profit or Loss as an initial environmental charge
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q5-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;Credited to a Decommissioning Reserve under Other Equity
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q5-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;Disclosed solely as a Contingent Liability until Year 20
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind37-q5-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind37-q5-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Ind AS 16 Para 16(c) &amp; Appendix A:</strong><br>
+                                    The initial estimate of the costs of dismantling and removing the item and restoring the site on which it is located constitutes part of the initial cost of Property, Plant and Equipment (PPE). The entry is:<br>
+                                    $$\text{Debit: Property, Plant and Equipment (PPE)}$$<br>
+                                    $$\text{Credit: Decommissioning Provision (Ind AS 37)}$$<br>
+                                    The capitalized asset is depreciated over the 20-year life, while the provision is accreted via annual finance cost.
+                                </div>
+                            </div>
+
+                            <!-- MCQ 6 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 2.6</div>
+                                <div class="topic-quiz-question">Entity Alpha recognizes a lawsuit damages provision of ₹80 lakhs. Its insurer agrees in writing to reimburse ₹70 lakhs under an indemnification policy, subject to formal claim processing. How must this reimbursement be presented on the Balance Sheet under Ind AS 37?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind37-q6-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;As a separate asset of ₹70 lakhs (not netted off against the ₹80 lakhs liability on the Balance Sheet)
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q6-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;Netted off directly against the provision, presenting only a net liability of ₹10 lakhs on the Balance Sheet
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q6-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;As a Contingent Asset disclosed solely in the notes until the cash is physically banked
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q6-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;Ignored completely until the court lawsuit concludes
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind37-q6-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind37-q6-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Reimbursement Presentation (Para 53):</strong><br>
+                                    Where some or all of the expenditure required to settle a provision is expected to be reimbursed by another party, the reimbursement is recognized <strong>only when it is virtually certain</strong> that reimbursement will be received if the entity settles the obligation. The reimbursement must be treated as a <strong>SEPARATE ASSET</strong> on the Balance Sheet (cannot net against the liability), though in the Statement of Profit and Loss, the expense may be presented net of reimbursement.
+                                </div>
+                            </div>
+
+                            <!-- MCQ 7 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 2.7</div>
+                                <div class="topic-quiz-question">A manufacturing conglomerate forecasts that its division in Region Y will incur operating losses of ₹200 lakhs over the next two financial years due to severe price competition. The CFO proposes creating a provision for future operating losses of ₹200 lakhs. What is the mandatory accounting treatment under Ind AS 37?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind37-q7-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;Provisions shall NEVER be recognized for future operating losses; instead, test the division's assets for impairment under Ind AS 36
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q7-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;Recognize a provision of ₹200 lakhs if approved by a special board resolution
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q7-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;Recognize the discounted present value of the ₹200 lakhs losses over 2 years
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q7-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;Classify the division as a Discontinued Operation under Ind AS 105
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind37-q7-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind37-q7-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Explicit Statutory Prohibition (Para 63):</strong><br>
+                                    Paragraph 63 of Ind AS 37 states unequivocally: <em>"Provisions shall not be recognised for future operating losses."</em> Future operating losses do not meet the definition of a liability (there is no past obligating event; the entity can avoid future costs through future operations or closure). An expectation of future operating losses is an indicator that certain assets of the operation may be impaired under <strong>Ind AS 36</strong>.
+                                </div>
+                            </div>
+
+                            <!-- MCQ 8 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 2.8</div>
+                                <div class="topic-quiz-question">An entity has an onerous contract to supply widgets. Total fulfillment cost = ₹1,200 lakhs, while total revenue from the buyer = ₹900 lakhs (net fulfillment loss = ₹300 lakhs). The contract allows early termination by paying a penalty of ₹180 lakhs. Dedicated production machinery has a carrying amount of ₹50 lakhs and recoverable amount of ₹30 lakhs. What is the correct sequence and amount of accounting entries?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind37-q8-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;First recognize ₹20 lakhs impairment on dedicated machinery under Ind AS 36; then recognize ₹180 lakhs provision for onerous contract under Ind AS 37
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q8-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;Recognize only ₹300 lakhs provision for onerous contract; ignore machinery impairment
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q8-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;Recognize ₹180 lakhs provision directly without testing machinery for impairment
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q8-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;Recognize ₹200 lakhs provision (₹180 lakhs penalty + ₹20 lakhs machinery write-off together as one provision)
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind37-q8-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind37-q8-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Onerous Contract Architecture (Para 68 &amp; 69):</strong><br>
+                                    1. Under Paragraph 69, before a separate provision for an onerous contract is established, an entity recognizes any impairment loss that has occurred on assets dedicated to that contract under Ind AS 36:<br>
+                                    $$\text{Machinery Impairment} = ₹50 \text{ lakhs} - ₹30 \text{ lakhs} = \mathbf{₹20 \text{ lakhs}}.$$<br>
+                                    2. Under Paragraph 68, the unavoidable cost of the onerous contract is the <strong>least net cost of exiting</strong>, which is the lower of fulfillment cost and termination penalty:<br>
+                                    $$\text{Least Cost} = \min(₹1,200 - ₹900, \; ₹180) = \min(₹300, ₹180) = \mathbf{₹180 \text{ lakhs}}.$$
+                                </div>
+                            </div>
+
+                            <!-- MCQ 9 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 2.9</div>
+                                <div class="topic-quiz-question">In a formal restructuring plan announced to staff prior to the reporting date, which of the following costs is PERMITTED to be included in the restructuring provision under Ind AS 37?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind37-q9-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;Severance compensation for retrenched workers and lease break penalties for terminated facility leases
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q9-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;Cost of retraining continuing employees to work on new enterprise software
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q9-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;Relocation expenses to transfer retained staff to another operating branch
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q9-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;Marketing campaigns to reposition the brand following the restructuring
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind37-q9-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind37-q9-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Allowable Restructuring Costs (Para 80–81):</strong><br>
+                                    A restructuring provision includes only direct expenditures arising from the restructuring that are necessarily entailed and not associated with ongoing activities. Paragraph 81 explicitly <strong>EXCLUDES</strong>:<br>
+                                    • Retraining or relocating continuing staff;<br>
+                                    • Marketing or brand-building expenditures;<br>
+                                    • Investment in new software systems or distribution networks.<br>
+                                    Only direct, incremental costs like employee severance and contract break penalties qualify.
+                                </div>
+                            </div>
+
+                            <!-- MCQ 10 -->
+                            <div class="topic-quiz-card">
+                                <div class="topic-quiz-badge">📝 Test Your Knowledge • Question 2.10</div>
+                                <div class="topic-quiz-question">Under Appendix C to Ind AS 37 (Levies), a government statute specifies that a municipal banking levy is charged to any financial institution that holds a valid operating licence on 1 January 20X2, computed as 1% of the total deposits held on 31 December 20X1. When does the obligating event arise and when must the liability be recognized?</div>
+                                <div class="mcq-options-grid">
+                                    <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ind37-q10-mcq-ans')">
+                                        <strong>A.</strong>&nbsp;On 1 January 20X2, because holding the licence on that specific date is the statutory trigger activity
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q10-mcq-ans')">
+                                        <strong>B.</strong>&nbsp;On 31 December 20X1, when the deposit base used to calculate the levy is finalized
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q10-mcq-ans')">
+                                        <strong>C.</strong>&nbsp;Accrued monthly throughout the calendar year 20X1 as deposits are received
+                                    </div>
+                                    <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ind37-q10-mcq-ans')">
+                                        <strong>D.</strong>&nbsp;Only when the municipal council issues the assessment bill
+                                    </div>
+                                </div>
+                                <div class="quiz-btn-row">
+                                    <button type="button" class="reveal-btn" onclick="toggleAnswer('ind37-q10-mcq-ans', this)">👁️ Show Answer &amp; Explanation</button>
+                                </div>
+                                <div class="explanation-box" id="ind37-q10-mcq-ans">
+                                    <strong>Correct Answer: A</strong><br>
+                                    <strong>Appendix C Obligating Event Rule (Para 8):</strong><br>
+                                    The obligating event that gives rise to a liability to pay a levy is the <strong>activity that triggers the payment of the levy, as identified by the legislation</strong>. Here, the triggering activity is holding the licence on 1 January 20X2. The generation of deposits during 20X1 merely provides the measurement metric, not the obligating event. Even if the bank expects to operate on 1 January 20X2, no present obligation exists before 1 January 20X2.
+                                </div>
+                            </div>
+
+                            <!-- Section Header for Solved Descriptive TYKs -->
+                            <div style="background: #f1f5f9; border-left: 4px solid #475569; border-radius: 4px; padding: 12px 16px; margin: 32px 0 20px 0;">
+                                <h4 style="font-family: 'Outfit', sans-serif; font-size: 16px; font-weight: 700; color: #1e293b; margin: 0 0 4px 0;">Part B • ICAI Module Descriptive Practice Problems &amp; Full Step-by-Step Solutions</h4>
+                                <p style="font-size: 13px; color: #64748b; margin: 0;">Comprehensive ICAI Study Material questions with complete legal rationales and journal entries.</p>
+                            </div>
 
                             <!-- TYK 1 -->
                             <div class="tyk-card">
@@ -1969,7 +2752,51 @@
                 btn.textContent = 'Hide Solution';
             }
         }
+
+        // Global MCQ Option Checker for all Interactive Questions (AFM Standard)
+        function checkOption(optEl, isCorrect, ansId) {
+            if (!optEl) return;
+            const parent = optEl.closest('.mcq-options-grid') || optEl.closest('.mcq-options') || optEl.parentElement;
+            if (!parent) return;
+
+            // Prevent re-selection once answered
+            const alreadyAnswered = parent.querySelector('.selected-correct') || parent.querySelector('.selected-wrong');
+            if (alreadyAnswered) return;
+
+            const allOptions = parent.querySelectorAll('.mcq-option-item');
+            allOptions.forEach(function(opt) {
+                opt.classList.remove('selected-correct', 'selected-wrong', 'reveal-correct');
+            });
+
+            if (isCorrect) {
+                optEl.classList.add('selected-correct');
+            } else {
+                optEl.classList.add('selected-wrong');
+                allOptions.forEach(function(opt) {
+                    const oc = opt.getAttribute('onclick') || '';
+                    const isOptCorrect = opt.getAttribute('data-correct') === 'true' || oc.indexOf('true') !== -1;
+                    if (isOptCorrect && opt !== optEl) {
+                        opt.classList.add('reveal-correct');
+                    }
+                });
+            }
+        }
+
+        // Toggle Answer & Explanation
+        function toggleAnswer(arg1, arg2) {
+            const id = typeof arg1 === 'string' ? arg1 : arg2;
+            const btn = typeof arg1 === 'string' ? (arg2 && arg2.nodeType ? arg2 : null) : arg1;
+            const ansEl = document.getElementById(id);
+            if (!ansEl) return;
+            const isShowing = ansEl.style.display === 'block';
+            ansEl.style.display = isShowing ? 'none' : 'block';
+            if (btn && btn.textContent) {
+                btn.textContent = isShowing ? '👁️ Show Answer & Explanation' : 'Hide Explanation';
+            }
+        }
     </script>
 
+    <!-- Master Template Scripts -->
+    <script src="../../assets/template.js"></script>
 </body>
 </html>
