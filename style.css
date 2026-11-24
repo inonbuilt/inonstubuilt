@@ -1791,6 +1791,68 @@ video.v-filter-beauty {
     transform: scale(0.97);
 }
 
+/* Nav Icon Buttons & Symbols */
+.koyeb-nav-link.td-icon-btn {
+    padding: 8px 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.td-nav-icon {
+    display: inline-block;
+    vertical-align: middle;
+    stroke: currentColor;
+    opacity: 0.82;
+    transition: transform 0.18s ease, opacity 0.18s ease;
+    flex-shrink: 0;
+}
+
+.koyeb-nav-link:hover .td-nav-icon {
+    opacity: 1;
+    transform: scale(1.12);
+}
+
+/* Desktop Tooltip for Symbols */
+@media (min-width: 981px) {
+    .td-mobile-label {
+        display: none;
+    }
+
+    .koyeb-nav-link[data-tooltip] {
+        position: relative;
+    }
+
+    .koyeb-nav-link[data-tooltip]::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: -34px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-4px);
+        background: rgba(15, 23, 42, 0.96);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        color: #f8fafc;
+        font-size: 11px;
+        font-weight: 500;
+        padding: 4px 8px;
+        border-radius: 6px;
+        white-space: nowrap;
+        pointer-events: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.16s ease, transform 0.16s ease;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+    }
+
+    .koyeb-nav-link[data-tooltip]:hover::after {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
 /* Products Chevron Icon */
 .td-nav-chevron {
     width: 13px;
@@ -2290,6 +2352,18 @@ video.v-filter-beauty {
         font-size: 14px;
         border-radius: 10px;
         width: 100%;
+    }
+
+    .koyeb-nav-link.td-icon-btn {
+        justify-content: flex-start;
+        padding: 11px 14px;
+    }
+
+    .td-mobile-label {
+        display: inline;
+        flex: 1;
+        margin-left: 10px;
+        text-align: left;
     }
 
     .koyeb-nav-link:hover {

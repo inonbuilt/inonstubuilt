@@ -1007,6 +1007,12 @@
             <button type="button" class="koyeb-nav-link td-nav-item td-dropdown-trigger" id="tdProductsTrigger"
               aria-expanded="false" aria-haspopup="true" onclick="toggleProductsDropdown(event)"
               title="Explore Study Tools, Modes &amp; Resources">
+              <svg class="td-nav-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
               <span>Products</span>
               <svg class="td-nav-chevron" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9"></polyline>
@@ -1076,27 +1082,49 @@
             </div>
           </div>
 
-          <!-- 2. Reading Mode -->
-          <button type="button" class="koyeb-nav-link td-nav-item" onclick="closeMobileMenu(); openReadMode();" title="Distraction-Free Revision Notes &amp; Reading Lab">
-            Reading Mode
+          <!-- 2. Reading Mode Symbol -->
+          <button type="button" class="koyeb-nav-link td-nav-item td-icon-btn" onclick="closeMobileMenu(); openReadMode();"
+            title="Reading Mode – Distraction-Free Notes &amp; Revision Lab" aria-label="Reading Mode" data-tooltip="Reading Mode">
+            <svg class="td-nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+            <span class="td-mobile-label">Reading Mode</span>
           </button>
 
-          <!-- 3. Planning Mode -->
-          <button type="button" class="koyeb-nav-link td-nav-item" onclick="closeMobileMenu(); openPlanningMode();" title="ICAI Syllabus Timetable, Pomodoro &amp; Tracker">
-            Planning Mode
+          <!-- 3. Planning Mode Symbol -->
+          <button type="button" class="koyeb-nav-link td-nav-item td-icon-btn" onclick="closeMobileMenu(); openPlanningMode();"
+            title="Planning Mode – ICAI Syllabus Timetable &amp; Pomodoro" aria-label="Planning Mode" data-tooltip="Planning Mode">
+            <svg class="td-nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span class="td-mobile-label">Planning Mode</span>
           </button>
 
-          <!-- 5. Friends (Unique ID Hub) -->
-          <button type="button" class="koyeb-nav-link td-nav-item" id="topBarFriendsBtn"
+          <!-- 4. Friends Symbol (Unique ID Hub) -->
+          <button type="button" class="koyeb-nav-link td-nav-item td-icon-btn" id="topBarFriendsBtn"
             onclick="(function(e){ e.preventDefault(); closeMobileMenu(); if (typeof window.openFriendsModal === 'function') { window.openFriendsModal(); } })(event)"
-            title="Find Friends by Unique ID &amp; Send Let's Study Requests">
-            <span>Friends</span>
+            title="Friends – Unique ID Hub &amp; Study Requests" aria-label="Friends Hub" data-tooltip="Friends">
+            <svg class="td-nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            <span class="td-mobile-label">Friends</span>
             <span class="koyeb-pill" id="topFriendsCount">1</span>
           </button>
 
-          <!-- 6. Study Wrap -->
-          <button type="button" class="koyeb-nav-link td-nav-item" onclick="closeMobileMenu(); openShareModal();" title="Daily CA Study Summary Wrap">
-            Study Wrap
+          <!-- 5. Study Wrap Symbol -->
+          <button type="button" class="koyeb-nav-link td-nav-item td-icon-btn" onclick="closeMobileMenu(); openShareModal();"
+            title="Study Wrap – Daily Study Summary" aria-label="Study Wrap" data-tooltip="Study Wrap">
+            <svg class="td-nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6.4-4.8-6.4 4.8 2.4-7.2-6-4.8h7.6z"></path>
+            </svg>
+            <span class="td-mobile-label">Study Wrap</span>
           </button>
         </nav>
 
