@@ -144,9 +144,6 @@
     /* ═══════════════════════════════════════════════
        STUDY SQUAD LOBBY POPUP  (lives in index.html)
     ═══════════════════════════════════════════════ */
-    /* ═════════════════════════════════════════════════════════════════════
-       PREMIUM STUDY SQUAD LOBBY (UPSIDE LIVE PUBLIC ROOMS + ACTION TABS)
-       ═════════════════════════════════════════════════════════════════════ */
     #squadLobbyOverlay {
       position: fixed;
       inset: 0;
@@ -253,7 +250,6 @@
       border-color: rgba(239, 68, 68, 0.4);
     }
 
-    /* ── Compact Header ── */
     .sq-lobby-header {
       display: flex;
       align-items: center;
@@ -295,7 +291,6 @@
       color: #94a3b8;
     }
 
-    /* ── Quick Name Bar ── */
     .sq-name-bar {
       display: flex;
       align-items: center;
@@ -352,7 +347,6 @@
       font-weight: 400;
     }
 
-    /* ── UPSIDE: Live Public Rooms Directory (Featured Hero) ── */
     .sq-public-rooms-section {
       margin-bottom: 16px;
       padding: 12px 14px;
@@ -708,7 +702,6 @@
       padding: 2px 4px;
     }
 
-    /* ── ACTION TABS (Host Room vs Join by Code) ── */
     .sq-action-tabs {
       display: flex;
       gap: 6px;
@@ -772,7 +765,6 @@
       }
     }
 
-    /* ── Form Controls & Buttons ── */
     .sq-lobby-field {
       display: flex;
       flex-direction: column;
@@ -899,7 +891,6 @@
       box-shadow: 0 10px 30px rgba(29, 78, 216, 0.58);
     }
 
-    /* ── Responsive Study Squad Lobby (Mobile, Tablet, Landscape) ── */
     @media (max-width: 540px) {
       .sq-lobby-card {
         padding: 28px 18px 22px !important;
@@ -995,65 +986,162 @@
 </head>
 
 <body>
-  <!-- Top Navigation: Entry points for Read Mode, Planning Mode, Co-Study Squad & Social Share -->
-  <div class="mode-toggles" id="mainModeToggles">
-    <!-- Universal Menu Toggle for Laptop, PC, Tablets, and Mobiles -->
-    <div class="top-menu-bar-header" id="topMenuBarHeader">
-      <span class="top-menu-bar-title">⚡ Menu</span>
-      <button type="button" class="menu-toggle-btn" id="menuToggleBtn" onclick="toggleTopMenu()" title="Click to hide menu (✕)">
-        <span id="menuToggleIcon" class="menu-toggle-icon">✕</span>
-        <span id="menuToggleText" class="menu-toggle-text">Menu</span>
+  <!-- Koyeb-Style Sticky Top Navigation Bar -->
+  <header class="koyeb-navbar" id="mainModeToggles">
+    <div class="koyeb-nav-inner">
+      <!-- Left: Brand Identity -->
+      <a href="#" class="koyeb-brand" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;" aria-label="Calcium Notes Home">
+        <img src="./fevicol.png" alt="Calcium Notes" class="koyeb-brand-icon" />
+        <span class="koyeb-brand-name">Calcium Notes</span>
+      </a>
+
+      <!-- Center & Right: Collapsible on Mobile, Inline on Desktop -->
+      <div class="koyeb-nav-collapse" id="modeTogglesItems">
+        <!-- Center: Direct Flat Navigation Links (ToDesktop Capsule Style) -->
+        <nav class="koyeb-nav-links td-nav-container" aria-label="Primary Navigation" id="tdNavContainer">
+          <!-- Signature ToDesktop Sliding Hover Pill -->
+          <div class="td-nav-hover-pill" id="tdNavHoverPill" aria-hidden="true"></div>
+
+          <!-- 1. Products Dropdown Trigger & Panel -->
+          <div class="td-dropdown-wrap" id="tdProductsDropdownWrap">
+            <button type="button" class="koyeb-nav-link td-nav-item td-dropdown-trigger" id="tdProductsTrigger"
+              aria-expanded="false" aria-haspopup="true" onclick="toggleProductsDropdown(event)"
+              title="Explore Study Tools, Modes &amp; Resources">
+              <span>Products</span>
+              <svg class="td-nav-chevron" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+
+            <!-- ToDesktop Dark Frosted Glass Dropdown Menu -->
+            <div class="td-products-dropdown" id="tdProductsDropdown" role="menu" aria-label="Products Menu">
+              <div class="td-dropdown-inner">
+                <!-- Product 1: Mock Exam Simulator -->
+                <a href="./bin/exam/examcover.html" target="_blank" rel="noopener noreferrer" class="td-dropdown-item" onclick="closeMobileMenu(); closeProductsDropdown();" role="menuitem">
+                  <div class="td-dropdown-icon td-icon-green">📝</div>
+                  <div class="td-dropdown-text">
+                    <div class="td-dropdown-title">
+                      <span>SPOM Exam Lab</span>
+                      <span class="td-badge-glow">CBT Mock</span>
+                    </div>
+                    <div class="td-dropdown-desc">Computer-based mock test series, instant scoring &amp; analytics.</div>
+                  </div>
+                  <div class="td-dropdown-arrow">→</div>
+                </a>
+
+                <!-- Product 2: Study Squad & Live Meet -->
+                <a href="javascript:void(0)" class="td-dropdown-item" onclick="closeMobileMenu(); closeProductsDropdown(); openSquadModal(true);" role="menuitem">
+                  <div class="td-dropdown-icon td-icon-emerald">📹</div>
+                  <div class="td-dropdown-text">
+                    <div class="td-dropdown-title">
+                      <span>Study Squad</span>
+                      <span class="td-badge-live">Live</span>
+                    </div>
+                    <div class="td-dropdown-desc">WebRTC public &amp; private rooms, silent co-study &amp; accountability.</div>
+                  </div>
+                  <div class="td-dropdown-arrow">→</div>
+                </a>
+
+                <!-- Product 3: Revision Notes Lab -->
+                <a href="./bin/notes/notes.html" target="_blank" rel="noopener noreferrer" class="td-dropdown-item" onclick="closeMobileMenu(); closeProductsDropdown();" role="menuitem">
+                  <div class="td-dropdown-icon td-icon-indigo">📚</div>
+                  <div class="td-dropdown-text">
+                    <div class="td-dropdown-title">
+                      <span>Notes Lab</span>
+                      <span class="td-badge-glow">Revision</span>
+                    </div>
+                    <div class="td-dropdown-desc">ICAI New Scheme summary notes, mindmaps &amp; formula sheets.</div>
+                  </div>
+                  <div class="td-dropdown-arrow">→</div>
+                </a>
+
+                <!-- Product 4: Stress Relief Games -->
+                <a href="./semag/semag.html" target="_blank" rel="noopener noreferrer" class="td-dropdown-item" onclick="closeMobileMenu(); closeProductsDropdown();" role="menuitem">
+                  <div class="td-dropdown-icon td-icon-amber">🎮</div>
+                  <div class="td-dropdown-text">
+                    <div class="td-dropdown-title">Stress Relief Games</div>
+                    <div class="td-dropdown-desc">Quick 5-minute cognitive resets between intensive study blocks.</div>
+                  </div>
+                  <div class="td-dropdown-arrow">→</div>
+                </a>
+
+                <!-- Dropdown Footer -->
+                <div class="td-dropdown-footer">
+                  <a href="./bin/Resources/resources.html" target="_blank" rel="noopener noreferrer" class="td-dropdown-footer-link" onclick="closeMobileMenu(); closeProductsDropdown();">
+                    <span>📑 Explore All CA Resources &amp; Question Papers</span>
+                    <span class="td-footer-arrow">↗</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Reading Mode -->
+          <button type="button" class="koyeb-nav-link td-nav-item" onclick="closeMobileMenu(); openReadMode();" title="Distraction-Free Revision Notes &amp; Reading Lab">
+            Reading Mode
+          </button>
+
+          <!-- 3. Planning Mode -->
+          <button type="button" class="koyeb-nav-link td-nav-item" onclick="closeMobileMenu(); openPlanningMode();" title="ICAI Syllabus Timetable, Pomodoro &amp; Tracker">
+            Planning Mode
+          </button>
+
+          <!-- 5. Friends (Unique ID Hub) -->
+          <button type="button" class="koyeb-nav-link td-nav-item" id="topBarFriendsBtn"
+            onclick="(function(e){ e.preventDefault(); closeMobileMenu(); if (typeof window.openFriendsModal === 'function') { window.openFriendsModal(); } })(event)"
+            title="Find Friends by Unique ID &amp; Send Let's Study Requests">
+            <span>Friends</span>
+            <span class="koyeb-pill" id="topFriendsCount">1</span>
+          </button>
+
+          <!-- 6. Study Wrap -->
+          <button type="button" class="koyeb-nav-link td-nav-item" onclick="closeMobileMenu(); openShareModal();" title="Daily CA Study Summary Wrap">
+            Study Wrap
+          </button>
+        </nav>
+
+        <!-- Right: Account Profile + Primary CTA -->
+        <div class="koyeb-nav-actions">
+          <input type="hidden" id="topBarUserName" value="CA Aspirant" />
+
+          <!-- Student Profile Trigger (Koyeb Secondary/Account Slot) -->
+          <button type="button" class="koyeb-profile-btn" id="topBarProfileBtn"
+            onclick="closeMobileMenu(); openProfileModal();"
+            title="Open CA Student Profile, Level, Mood, Bio &amp; Backup/Restore">
+            <div id="topBarAvatarWrap" class="koyeb-avatar-wrap">
+              <img id="topBarAvatarImg" src="" alt="" style="width:100%; height:100%; object-fit:cover; display:none;" />
+              <span id="topBarAvatarInitials">👤</span>
+            </div>
+            <div class="koyeb-profile-meta">
+              <div class="koyeb-profile-row">
+                <span id="topBarProfileName" class="koyeb-profile-name">Fill Your profile</span>
+                <span id="topBarProfileMood" class="koyeb-profile-mood" title="Current Study Mood">🔥</span>
+              </div>
+              <div class="koyeb-profile-sub">
+                <span id="topBarProfileLevel" class="koyeb-level-tag"></span>
+                <span id="topBarUniqueId" class="koyeb-uid-tag">CN-000000</span>
+                <span id="topBarExamStatsBadge" class="koyeb-exam-tag" style="display:none;"
+                  title="SPOM CBT Mock Tests Written &amp; Pass Rate">0 Exams</span>
+              </div>
+            </div>
+          </button>
+
+          <!-- Study Squad Trigger (Koyeb Primary Emerald CTA Slot) -->
+          <button type="button" class="koyeb-cta-btn" onclick="closeMobileMenu(); openSquadModal(true);">
+            <span class="koyeb-live-dot"></span>
+            <span>Study Squad</span>
+            <span class="koyeb-cta-count" id="topSquadCount">1</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile / Tablet Menu Toggle Button -->
+      <button type="button" class="koyeb-mobile-toggle" id="menuToggleBtn"
+        onclick="toggleTopMenu()" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span id="menuToggleIcon">☰</span>
       </button>
     </div>
-
-    <div class="mode-toggles-items" id="modeTogglesItems">
-      <button type="button" class="profile-trigger-btn" id="topBarProfileBtn" onclick="openProfileModal()"
-      title="Click to open CA Student Profile, Level, Mood, Bio & Backup/Restore"
-      style="display:flex; align-items:center; gap:8px; background:rgba(15,23,42,0.9); border:1px solid rgba(56,189,248,0.45); padding:5px 12px; border-radius:10px; cursor:pointer; color:white; transition:all 0.25s ease; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
-      <div id="topBarAvatarWrap"
-        style="width:28px; height:28px; border-radius:50%; background:linear-gradient(135deg,#2563eb,#06b6d4); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:800; overflow:hidden; flex-shrink:0; border:1.5px solid rgba(125,211,252,0.6); pointer-events:none;">
-        <img id="topBarAvatarImg" src="" alt="" style="width:100%; height:100%; object-fit:cover; display:none;" />
-        <span id="topBarAvatarInitials">👤</span>
-      </div>
-      <div
-        style="display:flex; flex-direction:column; align-items:flex-start; line-height:1.15; text-align:left; pointer-events:none;">
-        <div style="display:flex; align-items:center; gap:5px;">
-          <span id="topBarProfileName"
-            style="font-size:12px; font-weight:700; color:#f8fafc; max-width:115px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">Fill
-            Your profile</span>
-          <span id="topBarProfileMood" style="font-size:12px;" title="Current Study Mood">🔥</span>
-        </div>
-        <div style="display:flex; align-items:center; gap:5px;">
-          <span id="topBarProfileLevel"
-            style="font-size:9px; font-weight:800; color:#7dd3fc; letter-spacing:0.6px; text-transform:uppercase;"></span>
-          <span id="topBarUniqueId"
-            style="font-size:9px; font-weight:800; color:#34d399; font-family:monospace; background:rgba(16,185,129,0.15); padding:1px 5px; border-radius:4px; border:1px solid rgba(16,185,129,0.35);">CN-000000</span>
-          <span id="topBarExamStatsBadge"
-            style="display:none; font-size:9px; font-weight:800; color:#38bdf8; background:rgba(56,189,248,0.15); padding:1px 5px; border-radius:4px; border:1px solid rgba(56,189,248,0.35);"
-            title="SPOM CBT Mock Tests Written & Pass Rate">0 Exams</span>
-        </div>
-      </div>
-    </button>
-    <button type="button" class="friends-trigger-btn" id="topBarFriendsBtn"
-      onclick="(function(e){ e.preventDefault(); if (typeof window.openFriendsModal === 'function') { window.openFriendsModal(); } })(event)"
-      title="Find Friends by Unique ID &amp; Send Let's Study Requests">
-      <span>🤝</span> Friends <span class="squad-count-pill" id="topFriendsCount">1</span>
-    </button>
-    <input type="hidden" id="topBarUserName" value="CA Aspirant" />
-    <button class="squad-trigger-btn" onclick="openSquadModal(true)">
-      <span>👥</span> Study Squad <span class="squad-count-pill" id="topSquadCount">1</span>
-    </button>
-    <button class="share-trigger-btn" onclick="openShareModal()">
-      <span>📸</span> Share Study Wrap
-    </button>
-    <button class="read-mode-trigger" onclick="openReadMode()">
-      <span>📖</span> Read Mode
-    </button>
-    <button class="plan-mode-trigger" onclick="openPlanningMode()">
-      <span>📅</span> Planning Mode
-    </button>
-    </div>
-  </div>
+  </header>
 
   <div class="page">
     <div class="logo">
@@ -1348,7 +1436,7 @@
 
     const updates = [
       {
-        text: "SPOM Set A & B - AI Integrated Prefinal Exams Are Now Available!",
+        text: "SPOM Set C & B - AI Integrated Prefinal Exams Are Now Available!",
         url: "./bin/exam/spom/espom.html",
       },
       {
@@ -1358,7 +1446,6 @@
     ];
     let currentIndex = 0;
 
-    // Load data on window startup (in-flow banner, no distracting fly-in)
     window.addEventListener("load", () => {
       showUpdate();
       if (updates.length > 1) {
@@ -1382,6 +1469,7 @@
       }, 160);
       currentIndex = (currentIndex + 1) % updates.length;
     }
+
     function closeUpdate() {
       if (!banner) return;
       banner.style.transition = "opacity 0.25s ease, transform 0.25s ease, margin 0.25s ease";
@@ -1493,7 +1581,7 @@
       if (typeof window.hideSturmOverlay === "function") window.hideSturmOverlay();
       readOverlay.classList.add("rm-active");
       setTimeout(() => readOverlay.classList.add("rm-visible"), 10);
-      document.body.style.overflow = "hidden"; // Prevent background scroll
+      document.body.style.overflow = "hidden";
     }
 
     function closeReadMode() {
@@ -1522,7 +1610,6 @@
       }, 350);
     }
 
-    // --- CROSSFADE TRANSITIONS ---
     window.switchToReadMode = function () {
       syncReadIframeTracker();
       planOverlay.classList.remove("rm-visible");
@@ -1602,7 +1689,6 @@
       }
     }
 
-    // Listen for messages sent back from sturm.html iframe
     window.addEventListener("message", (event) => {
       const data = event.data;
       if (!data || !data.__calciumParentCall) return;
@@ -1626,7 +1712,6 @@
       if (sturmIframe) sturmIframe.style.pointerEvents = "none";
     };
 
-    // Ensure sturm overlay is completely dormant and non-blocking on startup
     window.hideSturmOverlay();
 
     window.toggleBrowserFullscreen = function () {
@@ -1698,11 +1783,9 @@
     };
 
     window.isUserAlreadyInRoom = function () {
-      // 1. Check in-memory active room code
       if (window._calciumCurrentRoomCode && typeof window._calciumCurrentRoomCode === "string" && window._calciumCurrentRoomCode.trim()) {
         return true;
       }
-      // 2. Check persistent storage
       try {
         const stored = localStorage.getItem("calcium_active_room");
         if (stored && typeof stored === "string" && stored.trim() && stored.trim().startsWith("CA-")) {
@@ -1710,7 +1793,6 @@
           return true;
         }
       } catch (e) { }
-      // 3. Check sturm iframe state safely
       try {
         const stIframe = document.getElementById("sturmIframe");
         if (stIframe && stIframe.contentWindow) {
@@ -1724,12 +1806,7 @@
       return false;
     };
 
-    /* ==========================================================
-       CALL / CHAT LEAVE CONFIRMATION PROTECTION (beforeunload)
-       Keeps live study call / video / audio / chats on air
-       ========================================================== */
     window.isCallOrChatActive = function () {
-      // 1. Check in-memory or persisted active room code (Study Squad / WebRTC room)
       if (typeof window.isUserAlreadyInRoom === "function" && window.isUserAlreadyInRoom()) {
         return true;
       }
@@ -1743,7 +1820,6 @@
         }
       } catch (e) { }
 
-      // 2. Check Sturm (WebRTC live room / video / audio) iframe
       try {
         const stIframe = document.getElementById("sturmIframe");
         if (stIframe && stIframe.contentWindow) {
@@ -1754,7 +1830,6 @@
         }
       } catch (e) { }
 
-      // 3. Check Friends & Unique ID Hub (frid.html) for active friend chat / P2P connection
       try {
         const frIframe = document.getElementById("friendsModeIframe");
         if (frIframe && frIframe.contentWindow) {
@@ -1780,9 +1855,6 @@
       }
     });
 
-    /* ==========================================================
-       TAB TITLE CALL ALERT (NON-INTRUSIVE BROWSER TAB WARNING)
-       ========================================================== */
     const ORIGINAL_PAGE_TITLE = document.title;
     let titleFlashTimer = null;
     let isTitleFlashing = false;
@@ -1812,7 +1884,6 @@
       document.title = ORIGINAL_PAGE_TITLE;
     }
 
-    // Monitor room/call/chat state changes to update browser tab title
     setInterval(() => {
       if (typeof window.isCallOrChatActive === "function" && window.isCallOrChatActive()) {
         startTabCallAlertTitle();
@@ -1890,7 +1961,6 @@
       window.hideSturmOverlay();
     };
 
-    
     function updateTopBarExamStatsBadge() {
       const badge = document.getElementById("topBarExamStatsBadge");
       if (!badge) return;
@@ -2120,11 +2190,9 @@
     function showLobby(focusCode = false) {
       const overlay = document.getElementById('squadLobbyOverlay');
       if (!overlay) return;
-      // Pre-fill saved name
       const savedName = localStorage.getItem('calcium_user_name') || '';
       const nameEl = document.getElementById('sqLobbyName');
       if (nameEl && savedName) nameEl.value = savedName;
-      // Clear previous join code & passwords
       const codeEl = document.getElementById('sqLobbyCode');
       if (codeEl) {
         codeEl.value = '';
@@ -2135,11 +2203,9 @@
       const pwdCreateEl = document.getElementById('sqLobbyCreatePassword');
       if (pwdCreateEl) pwdCreateEl.value = '';
 
-      // Reset privacy mode to Public by default
       window.setSqRoomPrivacy('public');
       activeKnockingRoom = null;
 
-      // Switch to proper tab based on focusCode request
       if (focusCode) {
         window.switchSqLobbyTab('join');
       } else {
@@ -2150,7 +2216,6 @@
       initSqPublicRoomsDiscovery();
       refreshPublicRoomsUI();
 
-      // Focus appropriate field
       setTimeout(() => {
         if (focusCode && codeEl) {
           codeEl.focus();
@@ -2168,7 +2233,6 @@
     }
 
     function sqLobbyNameChange(val) {
-      // Sync name to localStorage immediately (same as saveDisplayName in sturm)
       const clean = (val || '').trim() || 'CA Aspirant';
       localStorage.setItem('calcium_user_name', clean);
       callSturm('saveDisplayName', val);
@@ -2236,9 +2300,7 @@
       }, 60);
     };
 
-    // ── Public Rooms Directory Logic for Lobby ──
     function initSqPublicRoomsDiscovery() {
-      // 1. Sync from localStorage cache
       try {
         const cached = JSON.parse(localStorage.getItem('calcium_public_rooms_v1') || '{}');
         const now = Date.now();
@@ -2249,7 +2311,6 @@
         });
       } catch (e) { }
 
-      // 2. BroadcastChannel for local instant tab-to-tab sync
       if (!sqPublicRoomsChannel && typeof BroadcastChannel !== 'undefined') {
         try {
           sqPublicRoomsChannel = new BroadcastChannel('calcium_public_study_rooms');
@@ -2259,7 +2320,6 @@
         } catch (e) { }
       }
 
-      // 3. Storage event listener for window-to-window sync
       if (!window._sqPublicStorageAttached) {
         window._sqPublicStorageAttached = true;
         window.addEventListener('storage', (e) => {
@@ -2273,7 +2333,6 @@
         });
       }
 
-      // 4. Global MQTT Relay for multi-device discovery
       if (!sqPublicRoomsMqtt && typeof mqtt !== 'undefined') {
         try {
           const brokerUrl = 'wss://broker.emqx.io:8084/mqtt';
@@ -2297,7 +2356,6 @@
         }
       }
 
-      // 5. Periodic pruning of stale rooms (10s TTL)
       if (!window._sqPublicPruneTimer) {
         window._sqPublicPruneTimer = setInterval(() => {
           pruneStalePublicRooms();
@@ -2360,7 +2418,6 @@
         (listEl.contains(activeEl) && activeEl.tagName === 'INPUT')
       );
 
-      // If user is currently focused or typing in a password input, defer background auto-refresh
       if (!force && isInputActive) {
         clearTimeout(window._pendingLobbyRefreshTimer);
         window._pendingLobbyRefreshTimer = setTimeout(() => {
@@ -2371,7 +2428,6 @@
 
       pruneStalePublicRooms(false);
 
-      // Collect any currently typed values across all room password inputs
       const currentInputValues = {};
       listEl.querySelectorAll('input[id^="sqCardPwdInput_"]').forEach(inp => {
         const c = inp.id.replace('sqCardPwdInput_', '');
@@ -2380,7 +2436,6 @@
         }
       });
 
-      // Capture active focus and cursor selection if user was focused on an input
       let focusedId = null;
       let selStart = null, selEnd = null;
       if (isInputActive && activeEl && activeEl.id) {
@@ -2475,7 +2530,6 @@
 
       listEl.innerHTML = html;
 
-      // Restore typed password values to inputs
       Object.keys(currentInputValues).forEach(c => {
         const inp = document.getElementById('sqCardPwdInput_' + c);
         if (inp && currentInputValues[c]) {
@@ -2483,7 +2537,6 @@
         }
       });
 
-      // Restore active focus and cursor selection if user was typing
       if (focusedId) {
         const toFocus = document.getElementById(focusedId);
         if (toFocus) {
@@ -2576,7 +2629,6 @@
       window.activeKnockingRoom = code;
       refreshPublicRoomsUI(true);
 
-      // Transmit knock request via sturm WebRTC engine
       callSturm('requestKnockRoom', code, myName);
     };
 
@@ -2604,8 +2656,8 @@
       callSturm('openSquadModal', false);
     };
 
-    // Allow sturm to re-open the lobby (e.g. "Change Room" button)
     window.showSquadLobby = function () { showLobby(true); };
+
     function initSquadEngine() {
       let savedProf = {};
       try {
@@ -2629,46 +2681,123 @@
         window._calciumCurrentRoomCode = "";
       }
     }
-  
+
     /* ==========================================================
-       GLOBAL TOP MENU TOGGLE (✕ for Hide / ☰ for Unhide)
-       Works across: Laptop, PC, Tablets, and Mobiles
-       Controls: Profile, Friends, Study Squad, Share Wrap, Read Mode, Planning Mode
-       Does NOT touch: GAMES, EXAMS, NOTES, RESOURCES
+       KOYEB-STYLE RESPONSIVE NAVBAR & TODESKTOP NAV CONTROLLER
+       Desktop: Always visible sticky bar with sliding hover pill & dropdown
+       Tablet / Mobile (<= 980px): Hamburger drawer toggle
        ========================================================== */
-    window.toggleTopMenu = function () {
-      const bar = document.getElementById("mainModeToggles");
-      if (!bar) return;
-      const isHidden = bar.classList.toggle("menu-hidden");
-      const icon = document.getElementById("menuToggleIcon");
-      const text = document.getElementById("menuToggleText");
-      const btn = document.getElementById("menuToggleBtn");
-      if (isHidden) {
-        if (icon) icon.textContent = "☰";
-        if (text) text.textContent = "Menu";
-        if (btn) btn.title = "Click to unhide menu (☰)";
-      } else {
-        if (icon) icon.textContent = "✕";
-        if (text) text.textContent = "Menu";
-        if (btn) btn.title = "Click to hide menu (✕)";
+    window.toggleProductsDropdown = function (e) {
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
       }
+      const wrap = document.getElementById("tdProductsDropdownWrap");
+      const trigger = document.getElementById("tdProductsTrigger");
+      if (!wrap) return;
+      const isOpen = wrap.classList.toggle("open");
+      if (trigger) trigger.setAttribute("aria-expanded", isOpen ? "true" : "false");
     };
 
-    // Ensure menu is OPEN by default on every page visit (PC, Laptop, Tablet, Mobile)
-    try {
-      const bar = document.getElementById("mainModeToggles");
-      if (bar) {
-        bar.classList.remove("menu-hidden");
-        const icon = document.getElementById("menuToggleIcon");
-        const text = document.getElementById("menuToggleText");
-        const btn = document.getElementById("menuToggleBtn");
-        if (icon) icon.textContent = "✕";
-        if (text) text.textContent = "Menu";
-        if (btn) btn.title = "Click to hide menu (✕)";
+    window.closeProductsDropdown = function () {
+      const wrap = document.getElementById("tdProductsDropdownWrap");
+      const trigger = document.getElementById("tdProductsTrigger");
+      if (wrap) wrap.classList.remove("open");
+      if (trigger) trigger.setAttribute("aria-expanded", "false");
+    };
+
+    window.closeMobileMenu = function () {
+      const nav = document.getElementById("mainModeToggles");
+      const icon = document.getElementById("menuToggleIcon");
+      const btn = document.getElementById("menuToggleBtn");
+      window.closeProductsDropdown();
+      if (!nav) return;
+      nav.classList.remove("nav-open");
+      if (icon) icon.textContent = "☰";
+      if (btn) btn.setAttribute("aria-expanded", "false");
+    };
+
+    window.toggleTopMenu = function () {
+      const nav = document.getElementById("mainModeToggles");
+      const icon = document.getElementById("menuToggleIcon");
+      const btn = document.getElementById("menuToggleBtn");
+      if (!nav) return;
+      const isOpen = nav.classList.toggle("nav-open");
+      if (icon) icon.textContent = isOpen ? "✕" : "☰";
+      if (btn) btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    };
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        window.closeMobileMenu();
+        window.closeProductsDropdown();
       }
-      localStorage.removeItem("calcium_menu_hidden");
-    } catch (e) { }
-    </script>
+    });
+
+    document.addEventListener("click", (e) => {
+      const nav = document.getElementById("mainModeToggles");
+      const wrap = document.getElementById("tdProductsDropdownWrap");
+      if (nav && nav.classList.contains("nav-open") && !nav.contains(e.target)) {
+        window.closeMobileMenu();
+      }
+      if (wrap && !wrap.contains(e.target)) {
+        window.closeProductsDropdown();
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 980) {
+        window.closeMobileMenu();
+      } else {
+        const pill = document.getElementById("tdNavHoverPill");
+        if (pill) pill.style.opacity = "0";
+      }
+    });
+
+    /* ToDesktop Signature Sliding Hover Background Pill */
+    (function initTdSlidingPill() {
+      function setup() {
+        const container = document.getElementById("tdNavContainer");
+        const pill = document.getElementById("tdNavHoverPill");
+        if (!container || !pill) return;
+
+        const items = container.querySelectorAll(".td-nav-item");
+
+        function updatePillPosition(el) {
+          if (!el || window.innerWidth <= 980) {
+            pill.style.opacity = "0";
+            return;
+          }
+          const cRect = container.getBoundingClientRect();
+          const iRect = el.getBoundingClientRect();
+          const left = iRect.left - cRect.left;
+          const width = iRect.width;
+          const height = iRect.height;
+          const top = iRect.top - cRect.top;
+
+          pill.style.width = width + "px";
+          pill.style.height = height + "px";
+          pill.style.transform = "translate(" + left + "px, " + top + "px)";
+          pill.style.opacity = "1";
+        }
+
+        items.forEach(item => {
+          item.addEventListener("mouseenter", () => updatePillPosition(item));
+          item.addEventListener("focus", () => updatePillPosition(item));
+        });
+
+        container.addEventListener("mouseleave", () => {
+          pill.style.opacity = "0";
+        });
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", setup);
+      } else {
+        setup();
+      }
+    })();
+  </script>
 
   <!-- ═══════════════════════════════════════════════════════════════
        STUDY SQUAD LOBBY  –  lives in index.html (parent)
@@ -2678,7 +2807,6 @@
     <div class="sq-lobby-card">
       <button class="sq-lobby-close" onclick="hideLobby()" title="Close">&#x2715;</button>
 
-      <!-- Compact Header -->
       <div class="sq-lobby-header">
         <div class="sq-lobby-header-icon">&#x1F4F9;</div>
         <div class="sq-lobby-header-text">
@@ -2687,7 +2815,6 @@
         </div>
       </div>
 
-      <!-- Quick Name Bar -->
       <div class="sq-name-bar">
         <span class="sq-name-icon">&#x1F464;</span>
         <div class="sq-name-info">
@@ -2697,9 +2824,6 @@
         </div>
       </div>
 
-      <!-- ═══════════════════════════════════════════════════════════
-           UPSIDE: LIVE PUBLIC ROOMS SECTION (FEATURED AT TOP)
-           ═══════════════════════════════════════════════════════════ -->
       <div class="sq-public-rooms-section">
         <div class="sq-public-rooms-header">
           <div class="sq-pub-header-left">
@@ -2720,9 +2844,6 @@
         </div>
       </div>
 
-      <!-- ═══════════════════════════════════════════════════════════
-           ACTION TABS: HOST ROOM vs JOIN BY CODE
-           ═══════════════════════════════════════════════════════════ -->
       <div class="sq-action-tabs">
         <button type="button" id="sqTabHost" class="sq-action-tab active" onclick="switchSqLobbyTab('host')">
           🚀 Host Room
@@ -2732,9 +2853,7 @@
         </button>
       </div>
 
-      <!-- Tab Pane 1: Host Room -->
       <div id="sqPaneHost" class="sq-tab-pane active">
-        <!-- Room Privacy Mode (Public vs Private) -->
         <div class="sq-lobby-field">
           <label class="sq-lobby-label">🛡️ ROOM VISIBILITY</label>
           <div class="sq-privacy-seg-row">
@@ -2751,29 +2870,24 @@
           </div>
         </div>
 
-        <!-- Optional Room Password for Host -->
         <div class="sq-lobby-field">
           <label for="sqLobbyCreatePassword" class="sq-lobby-label">🔒 ROOM PASSWORD (OPTIONAL)</label>
           <input id="sqLobbyCreatePassword" class="sq-lobby-input" type="password"
             placeholder="Leave blank for free entry, or set password..." autocomplete="off" />
         </div>
 
-        <!-- START -->
         <button class="sq-lobby-btn start" onclick="sqLobbyStart()">
           🚀&nbsp; Start Study Meeting
         </button>
       </div>
 
-      <!-- Tab Pane 2: Join by Code -->
       <div id="sqPaneJoin" class="sq-tab-pane">
-        <!-- JOIN with Room Code label above -->
         <div class="sq-lobby-field">
           <label for="sqLobbyCode" class="sq-lobby-label">🔑 ROOM CODE</label>
           <input id="sqLobbyCode" class="sq-lobby-input" type="text" placeholder="e.g. CA-1234 or paste invite link..."
             onkeydown="if(event.key==='Enter') sqLobbyJoin()" />
         </div>
 
-        <!-- Password field if joining a protected room -->
         <div class="sq-lobby-field">
           <label for="sqLobbyJoinPassword" class="sq-lobby-label">🔒 PASSWORD (IF PROTECTED)</label>
           <input id="sqLobbyJoinPassword" class="sq-lobby-input" type="password"
