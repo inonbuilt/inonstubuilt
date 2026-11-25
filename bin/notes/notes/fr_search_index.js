@@ -1,6 +1,6 @@
 ﻿/**
  * Calcium Notes - Master Search Index for CA Final Financial Reporting (Paper 1)
- * Total Indexed Items: 102
+ * Total Indexed Items: 106
  */
 window.FR_SEARCH_INDEX = [
     {
@@ -560,8 +560,8 @@ window.FR_SEARCH_INDEX = [
         "title":  "Ind AS on Items Impacting the Financial Statements",
         "subtitle":  "CA Final Financial Reporting (Paper 1) Syllabus",
         "url":  "../final/fr/taxes_forex_ind_as.html",
-        "keywords":  "ind as on items impacting the financial statements chapter 7 ind as 12 ind as 21 income taxes deferred tax asset liability dta dtl temporary timing differences tax base foreign exchange rates functional presentation currency fctr • unit 1: ind as 12 — income taxes (balance sheet approach, tax base, dta/dtl \u0026 unused tax losses) • unit 2: ind as 21 — the effects of changes in foreign exchange rates (functional currency \u0026 translation of foreign operations)",
-        "summary":  "• Unit 1: Ind AS 12 — Income Taxes (Balance Sheet Approach, Tax Base, DTA/DTL \u0026 Unused Tax Losses) • Unit 2: Ind AS 21 — The Effects of Changes in Foreign Exchange Rates (Functional Currency \u0026 Translation of Foreign Operations)"
+        "keywords":  "ind as on items impacting the financial statements chapter 7 ind as 12 ind as 21 income taxes current tax deferred tax asset liability dta dtl temporary timing differences tax base pillar two appendix c foreign exchange rates functional presentation currency fctr lack of exchangeability 2025 amendment appendix b",
+        "summary":  "• Unit 1: Ind AS 12 — Income Taxes (Current Tax, 10-Step Deferred Tax, Exceptions, Share-Based Payments, All 15 Disclosures, Pillar Two, 10 MCQs \u0026 7 TYKs) • Unit 2: Ind AS 21 — Foreign Exchange Rates (Functional Currency, Lack of Exchangeability 2025, Net Investment, FCTR, Appendix B, 10 MCQs \u0026 5 TYKs)"
     },
     {
         "type":  "chapter",
@@ -709,22 +709,6 @@ window.FR_SEARCH_INDEX = [
     },
     {
         "type":  "section",
-        "title":  "Ind AS 12: Income Taxes",
-        "subtitle":  "Chapter 7: Ind AS on Items Impacting Financial Statements",
-        "url":  "../final/fr/taxes_forex_ind_as.html#indas12",
-        "keywords":  "ind as 12 income taxes balance sheet liability approach temporary differences deferred tax asset dta deferred tax liability dtl tax base carrying amount unused tax losses mat credit initial recognition exemption",
-        "summary":  "Balance Sheet approach based on temporary differences between carrying amounts and tax bases of assets and liabilities. DTA recognition criteria based on probable future taxable profits."
-    },
-    {
-        "type":  "section",
-        "title":  "Ind AS 21: The Effects of Changes in Foreign Exchange Rates",
-        "subtitle":  "Chapter 7: Ind AS on Items Impacting Financial Statements",
-        "url":  "../final/fr/taxes_forex_ind_as.html#indas21",
-        "keywords":  "ind as 21 foreign exchange rates functional currency presentation currency monetary items non-monetary items closing rate foreign operation translation fctr foreign currency translation reserve",
-        "summary":  "Determination of primary and secondary factors for functional currency. Translating monetary items at closing rate and non-monetary items at transaction rate. Translating foreign operations."
-    },
-    {
-        "type":  "section",
         "title":  "Ind AS 24: Related Party Disclosures",
         "subtitle":  "Chapter 8: Ind AS on Disclosures in Financial Statements",
         "url":  "../final/fr/disclosures_ind_as.html#indas24",
@@ -818,6 +802,53 @@ window.FR_SEARCH_INDEX = [
         "url":  "../final/fr/group_entities_consolidation.html#indas28",
         "keywords":  "ind as 28 investments in associates and joint ventures significant influence 20 percent voting power equity method upstream downstream transactions discontinuing equity method impairment",
         "summary":  "Accounting under the Equity Method: Initial cost adjusted for post-acquisition share of profit/loss and OCI. Elimination of unrealized profits on upstream and downstream transactions."
+    },
+    {
+        "type":  "section",
+        "title":  "Ind AS 12: Income Taxes",
+        "subtitle":  "Chapter 7: Ind AS on Items Impacting Financial Statements",
+        "url":  "../final/fr/taxes_forex_ind_as.html#indas12",
+        "keywords":  "ind as 12 income taxes current tax deferred tax asset dta deferred tax liability dtl tax base carrying amount temporary differences goodwill ire unused tax losses mat credit pillar two appendix c share based payment disclosures",
+        "summary":  "Complete Ind AS 12 coverage: Current Tax, 10-Step Deferred Tax, Tax Base, Goodwill/IRE/Investment Exceptions, Unused Losses, Share-Based Payments, all 15 Disclosures, Appendix C, Pillar Two, 10 MCQs \u0026 7 Solved TYKs."
+    },
+    {
+        "type":  "topic",
+        "title":  "Ind AS 12: Pillar Two Income Taxes \u0026 Unused Losses",
+        "subtitle":  "Chapter 7: Ind AS on Items Impacting Financial Statements",
+        "url":  "../final/fr/taxes_forex_ind_as.html#ind12-pillar2-as22",
+        "keywords":  "pillar two oecd qdmtt mandatory exception deferred tax unused tax losses tax planning opportunities appendix c expected value most likely amount",
+        "summary":  "OECD Pillar Two mandatory temporary exception (neither recognise nor disclose DTA/DTL) plus required current tax and exposure disclosures, and AS 22 comparison."
+    },
+    {
+        "type":  "question",
+        "title":  "Ind AS 12: 10 Master MCQs \u0026 7 Solved TYKs",
+        "subtitle":  "Chapter 7: Ind AS on Items Impacting Financial Statements",
+        "url":  "../final/fr/taxes_forex_ind_as.html#ind-as-12-tyk",
+        "keywords":  "ind as 12 mcq quiz tyk 1 2 3 4 5 6 7 b limited x ltd tax base dta dtl",
+        "summary":  "10 interactive exam-level MCQs with explanations plus all 7 Test Your Knowledge questions solved step by step."
+    },
+    {
+        "type":  "section",
+        "title":  "Ind AS 21: The Effects of Changes in Foreign Exchange Rates",
+        "subtitle":  "Chapter 7: Ind AS on Items Impacting Financial Statements",
+        "url":  "../final/fr/taxes_forex_ind_as.html#indas21",
+        "keywords":  "ind as 21 foreign exchange rates functional currency presentation currency monetary non-monetary closing rate net investment fctr lack of exchangeability 2025 amendment hyperinflation appendix b advance consideration",
+        "summary":  "Complete Ind AS 21 coverage: Functional Currency, Monetary vs Non-Monetary, Net Investment, 2025 Lack of Exchangeability Amendment, Translation \u0026 FCTR, Disposals, Appendix B, 10 MCQs \u0026 5 Solved TYKs."
+    },
+    {
+        "type":  "topic",
+        "title":  "Ind AS 21: Lack of Exchangeability (2025 MCA Amendment)",
+        "subtitle":  "Chapter 7: Ind AS on Items Impacting Financial Statements",
+        "url":  "../final/fr/taxes_forex_ind_as.html#ind-as-21-exchangeability",
+        "keywords":  "lack of exchangeability gsr 291e may 2025 amendment two step approach spot rate estimation observable rate disclosures ind as 21",
+        "summary":  "MCA Amendment Rules 2025 (effective 1 April 2025): 5-factor Step I exchangeability assessment, Step II spot rate estimation, and mandatory disclosures."
+    },
+    {
+        "type":  "question",
+        "title":  "Ind AS 21: 10 Master MCQs \u0026 5 Solved TYKs",
+        "subtitle":  "Chapter 7: Ind AS on Items Impacting Financial Statements",
+        "url":  "../final/fr/taxes_forex_ind_as.html#ind-as-21-tyk",
+        "keywords":  "ind as 21 mcq quiz tyk 1 2 3 4 5 infotech global fctr perpetual debt machinery revaluation",
+        "summary":  "10 interactive exam-level MCQs with explanations plus all 5 Test Your Knowledge questions solved step by step."
     }
 ];
-
