@@ -712,24 +712,32 @@ window.FR_SEARCH_INDEX = [
         "title":  "Ind AS 24: Related Party Disclosures",
         "subtitle":  "Chapter 8: Ind AS on Disclosures in Financial Statements",
         "url":  "../final/fr/disclosures_ind_as.html#indas24",
-        "keywords":  "ind as 24 related party disclosures control joint control significant influence key management personnel kmp close members of family government-related entities transfer pricing transactions",
-        "summary":  "Identification of related party relationships (holding, subsidiary, associate, JV, KMP, close family members) and mandatory disclosures of transactions, outstanding balances, and commitments."
+        "keywords":  "ind as 24 related party disclosures control joint control significant influence key management personnel kmp close members of family domestic partner management entity government-related entities para 25 itc cochin shipyard",
+        "summary":  "Complete Ind AS 24 coverage: Person/Entity tests, Close family members, Non-related parties, Management entities, Category 1 & 2 disclosures, Govt exemption, 11 AS 18 differences, 11 MCQs, 5 Illustrations & 5 TYKs."
     },
     {
         "type":  "section",
         "title":  "Ind AS 33: Earnings Per Share (EPS)",
         "subtitle":  "Chapter 8: Ind AS on Disclosures in Financial Statements",
         "url":  "../final/fr/disclosures_ind_as.html#indas33",
-        "keywords":  "ind as 33 earnings per share basic eps diluted eps weighted average shares bonus issue rights issue bonus element convertible debentures stock options treasury stock method anti-dilution",
-        "summary":  "Computation of Basic EPS (weighted average shares adjusted for bonus/split) and Diluted EPS considering all dilutive potential ordinary shares (convertibles, options via treasury stock method)."
+        "keywords":  "ind as 33 earnings per share basic eps diluted eps wanos sfs cfs increasing rate preference shares bonus issue rights issue terp convertible debentures stock options esop treasury stock method contingently issuable discontinued operations control number written put options participating partly paid shares",
+        "summary":  "Complete Ind AS 33 coverage: SFS & CFS scope, Preference share adjustments, 9 issue-date rules, TERP rights bonus factor, Diluted EPS, Contingent/Discontinued/Cash-Share/Written Puts, Participating & Partly Paid shares, 15 MCQs, 17 Illustrations & 5 TYKs."
     },
     {
         "type":  "section",
         "title":  "Ind AS 108: Operating Segments",
         "subtitle":  "Chapter 8: Ind AS on Disclosures in Financial Statements",
         "url":  "../final/fr/disclosures_ind_as.html#indas108",
-        "keywords":  "ind as 108 operating segments management approach chief operating decision maker codm quantitative thresholds 10 percent revenue profit assets 75 percent entity revenue test restatement",
-        "summary":  "Management approach to segment reporting based on internal reports reviewed by CODM. 10% quantitative thresholds for reportable segments and mandatory 75% entity revenue coverage test."
+        "keywords":  "ind as 108 operating segments management approach chief operating decision maker codm matrix overlapping aggregation criteria quantitative thresholds 10 percent revenue profit assets 75 percent entity revenue test asymmetrical allocation restatement entity-wide major customers",
+        "summary":  "Complete Ind AS 108 coverage: Management approach & CODM, Integral R&D, Discontinued ops, 5 Aggregation criteria, 10% & 75% tests, Reconciliations, Restatement, Entity-wide & Major customers, 11 MCQs, 10 Illustrations & 3 TYKs."
+    },
+    {
+        "type":  "question",
+        "title":  "Chapter 8: 37 Interactive MCQs, 32 Illustrations & 13 Solved TYKs",
+        "subtitle":  "Chapter 8: Ind AS on Disclosures in Financial Statements",
+        "url":  "../final/fr/disclosures_ind_as.html#ind-as-24-tyk",
+        "keywords":  "chapter 8 ind as 24 33 108 mcq quiz tyk illustrations solutions",
+        "summary":  "37 topic-wise interactive MCQs with detailed explanations, all 32 ICAI illustrations, and all 13 Test Your Knowledge problems solved step by step."
     },
     {
         "type":  "section",
