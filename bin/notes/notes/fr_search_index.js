@@ -576,16 +576,16 @@ window.FR_SEARCH_INDEX = [
         "title":  "Ind AS 115: Revenue from Contracts with Customers",
         "subtitle":  "CA Final Financial Reporting (Paper 1) Syllabus",
         "url":  "../final/fr/revenue_ind_as_115.html",
-        "keywords":  "ind as 115: revenue from contracts with customers chapter 9 ind as 115 revenue from contracts with customers 5 step model performance obligations transaction price variable consideration contract costs principal agent warranties licensing the 5-step model, identifying performance obligations, variable consideration, significant financing component, revenue over time vs at a point in time, warranties \u0026 licensing.",
-        "summary":  "The 5-Step Model, Identifying Performance Obligations, Variable Consideration, Significant Financing Component, Revenue over time vs at a point in time, Warranties \u0026 Licensing."
+        "keywords":  "ind as 115 revenue from contracts with customers chapter 9 5 step model performance obligations transaction price variable consideration significant financing contract costs principal agent warranties licensing service concession hul",
+        "summary":  "Complete Chapter 9 notes: 5-Step Model, Combining & Modifying Contracts, Variable Consideration, Financing, Over Time vs Point in Time, Repurchase, IP Licences, Contract Costs, Service Concessions, HUL Extract, 75 Illustrations, 7 TYKs & 16 Topic MCQs."
     },
     {
         "type":  "chapter",
         "title":  "Other Indian Accounting Standards",
         "subtitle":  "CA Final Financial Reporting (Paper 1) Syllabus",
         "url":  "../final/fr/other_ind_as.html",
-        "keywords":  "other indian accounting standards chapter 10 ind as 41 ind as 20 ind as 102 other accounting standards agriculture biological assets government grants forgivable loans share based payment sbp equity settled cash settled vesting • unit 1: ind as 41 — agriculture (biological assets at fair value less cost to sell) • unit 2: ind as 20 — government grants \u0026 assistance (asset vs income approach) • unit 3: ind as 102 — share-based payment (equity-settled vs cash-settled, vesting conditions)",
-        "summary":  "• Unit 1: Ind AS 41 — Agriculture (Biological Assets at Fair Value less cost to sell) • Unit 2: Ind AS 20 — Government Grants \u0026 Assistance (Asset vs Income approach) • Unit 3: Ind AS 102 — Share-based Payment (Equity-settled vs Cash-settled, Vesting conditions)"
+        "keywords":  "other indian accounting standards chapter 10 ind as 41 ind as 20 ind as 102 agriculture biological assets fvlcs bearer plants government grants below market loans share based payment sbp esop sars vesting conditions group sbp",
+        "summary":  "• Unit 1: Ind AS 41 — Agriculture (FVLCS, Bearer Plants, Price vs Physical, Avanti Feeds Extract) • Unit 2: Ind AS 20 — Government Grants (Below-Market Loans, Asset/Income Presentation, Repayment & HUL Extract) • Unit 3: Ind AS 102 — Share-based Payment (ESOPs, SARs, Vesting Matrix, Modifications, Group SBP & Bharti Airtel Extract)."
     },
     {
         "type":  "chapter",
@@ -741,27 +741,59 @@ window.FR_SEARCH_INDEX = [
     },
     {
         "type":  "section",
+        "title":  "Ind AS 115: Step 1 & Modifications (Collectability, Combining & Cumulative Catch-up)",
+        "subtitle":  "Chapter 9: Ind AS 115 Revenue from Contracts with Customers",
+        "url":  "../final/fr/revenue_ind_as_115.html#ind115-step1",
+        "keywords":  "ind as 115 step 1 contract criteria collectability termination penalty combining contracts contract modifications separate contract cumulative catch up",
+        "summary":  "5 contract gateway criteria, non-refundable cash on failed contracts (Para 15), penalty-free cancellation term, combining contracts, and 3 modification accounting methods."
+    },
+    {
+        "type":  "section",
+        "title":  "Ind AS 115: Step 2 & Special POs (Distinct Test, Principal vs Agent & Upfront Fees)",
+        "subtitle":  "Chapter 9: Ind AS 115 Revenue from Contracts with Customers",
+        "url":  "../final/fr/revenue_ind_as_115.html#ind115-step2",
+        "keywords":  "ind as 115 step 2 performance obligation distinct series requirement material right consignment principal vs agent upfront fees",
+        "summary":  "2-step Distinct test, series rule, multiple elements (Illus 14–21), material right vouchers, consignment sales, principal vs agent control indicators, and non-refundable upfront fees."
+    },
+    {
+        "type":  "section",
+        "title":  "Ind AS 115: Step 3 & Step 4 (Variable Consideration, Financing, Warranties & SSP)",
+        "subtitle":  "Chapter 9: Ind AS 115 Revenue from Contracts with Customers",
+        "url":  "../final/fr/revenue_ind_as_115.html#ind115-step3-var",
+        "keywords":  "ind as 115 step 3 step 4 variable consideration constraint expected value most likely right of return warranties assurance service financing component ssp residual",
+        "summary":  "Expected Value vs Most Likely Amount, variable constraint, restocking fees, assurance vs service warranties, significant financing component, non-cash, slotting fees, and discount-before-residual SSP."
+    },
+    {
+        "type":  "section",
+        "title":  "Ind AS 115: Step 5, Contract Costs, Service Concessions & TYKs",
+        "subtitle":  "Chapter 9: Ind AS 115 Revenue from Contracts with Customers",
+        "url":  "../final/fr/revenue_ind_as_115.html#ind115-step5-time",
+        "keywords":  "ind as 115 over time point in time uninstalled materials repurchase put call bill and hold ip licences contract costs service concession bot financial asset intangible asset tyk",
+        "summary":  "3 Over-Time criteria, uninstalled materials rule, repurchase option tree, bill-and-hold, Right to Access vs Use IP, acquisition/fulfilment costs, Appendix C PPP highways, HUL Extract, and Solved TYKs 1–7."
+    },
+    {
+        "type":  "section",
         "title":  "Ind AS 20: Accounting for Government Grants",
         "subtitle":  "Chapter 10: Other Indian Accounting Standards",
         "url":  "../final/fr/other_ind_as.html#indas20",
-        "keywords":  "ind as 20 government grants assistance capital grant revenue grant deferred income deduction from asset repayment of grant below-market interest rate loans",
-        "summary":  "Recognition when reasonable assurance exists of compliance and receipt. Matching principle with related costs: presented as deferred income or deducted from asset carrying amount."
+        "keywords":  "ind as 20 government grants assistance capital approach prohibited deferred income deduction from asset repayment of grant below-market interest rate loans epcg hul",
+        "summary":  "Reasonable assurance recognition, below-market govt loans (Ind AS 109 PV), asset vs income presentation, gross investing cash flows, grant repayment estimate change, Appendix A, HUL Extract & TYKs 1–6."
     },
     {
         "type":  "section",
         "title":  "Ind AS 41: Agriculture",
         "subtitle":  "Chapter 10: Other Indian Accounting Standards",
         "url":  "../final/fr/other_ind_as.html#indas41",
-        "keywords":  "ind as 41 agriculture biological assets agricultural produce fair value less costs to sell bearer plants ppe ind as 16 biological transformation harvest",
-        "summary":  "Biological assets measured at fair value less costs to sell with gains/losses in P\u0026L. Bearer plants accounted for as PPE under Ind AS 16; produce growing on bearer plants remains under Ind AS 41."
+        "keywords":  "ind as 41 agriculture biological assets agricultural produce fair value less costs to sell fvlcs bearer plants ind as 16 biological transformation price physical change avanti feeds",
+        "summary":  "Biological assets measured at FVLCS with P&L impact; Price vs Physical change split; Bearer plants under Ind AS 16; Avanti Feeds FY22 biological extract & Solved TYKs 1–5."
     },
     {
         "type":  "section",
         "title":  "Ind AS 102: Share-based Payment",
         "subtitle":  "Chapter 10: Other Indian Accounting Standards",
-        "url":  "../final/fr/other_ind_as.html#indas41",
-        "keywords":  "ind as 102 share-based payment equity-settled cash-settled stock options sars stock appreciation rights vesting conditions service performance grant date fair value true-up liability remeasurement",
-        "summary":  "Equity-settled (measured at grant date fair value, equity reserve, no true-up for market conditions) vs Cash-settled SARs (remeasured at fair value at each reporting date until settlement, liability)."
+        "url":  "../final/fr/other_ind_as.html#indas102",
+        "keywords":  "ind as 102 share-based payment equity-settled cash-settled esop sars stock appreciation rights compound counterparty choice vesting conditions market non-market modifications group sbp bharti airtel",
+        "summary":  "Equity-settled ESOPs vs Cash-settled SARs, compound counterparty-choice plans, vesting matrix (service/non-market vs market/non-vesting), repricing/cancellation, Group SBP, Bharti Airtel Extract & Solved TYKs 1–7."
     },
     {
         "type":  "section",

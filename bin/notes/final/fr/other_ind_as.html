@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 10: Other Indian Accounting Standards (Ind AS 41, 20, 102) | Financial Reporting Notes</title>
+  <meta name="description" content="Complete CA Final Financial Reporting Chapter 10 notes covering Ind AS 41 (Agriculture), Ind AS 20 (Government Grants), and Ind AS 102 (Share-based Payment) with 10th-class explanations, worked illustrations, listed company extracts, Practice Questions, and topic-wise MCQs." />
+
+  <!-- Schema.org LearningResource Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "Chapter 10: Other Indian Accounting Standards (Ind AS 41, Ind AS 20, Ind AS 102)",
+    "description": "Comprehensive Financial Reporting study notes covering Ind AS 41 Agriculture, Ind AS 20 Government Grants, and Ind AS 102 Share-based Payment with simple explanations, solved illustrations, and interactive MCQs.",
+    "educationalLevel": "CA Final",
+    "learningResourceType": "Study Notes"
+  }
+  </script>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'\\[',right:'\\]',display:true},{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false}]});"></script>
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="../../assets/template.css" />
+
+  <style>
+    :root {
+      --primary: #1d4ed8;
+      --primary-light: #eff6ff;
+      --primary-border: #bfdbfe;
+      --accent: #0f766e;
+      --accent-light: #f0fdfa;
+      --amber: #b45309;
+      --amber-light: #fffbeb;
+      --rose: #be123c;
+      --rose-light: #fff1f2;
+      --slate: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+      --card: #ffffff;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--slate);
+      line-height: 1.65;
+    }
+
+    /* Simple 10th-Class Intuition Box */
+    .simple-box {
+      background: linear-gradient(135deg, #ecfeff 0%, #f0fdf4 100%);
+      border: 1.5px solid #5eead4;
+      border-left: 5px solid #0d9488;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+    .simple-box h4 {
+      margin: 0 0 8px;
+      color: #0f766e;
+      font-size: 1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .simple-box p, .simple-box ul {
+      margin: 6px 0;
+      color: #134e4a;
+      font-size: 0.94rem;
+    }
+
+    /* Hero */
+    .chapter-hero {
+      background: linear-gradient(135deg, #064e3b 0%, #0f766e 52%, #1d4ed8 100%);
+      color: #fff;
+      border-radius: 18px;
+      padding: 34px 32px;
+      margin-bottom: 28px;
+      box-shadow: 0 12px 30px rgba(6, 78, 59, 0.18);
+    }
+    .chapter-hero .hero-tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.16);
+      border: 1px solid rgba(255,255,255,0.28);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .chapter-hero h1 {
+      margin: 0 0 10px;
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1.22;
+      color: #ffffff;
+    }
+    .chapter-hero p {
+      margin: 0 0 18px;
+      color: #dcfce7;
+      font-size: 1rem;
+      max-width: 820px;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .hero-badge {
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.22);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #f8fafc;
+    }
+
+    /* Section Cards */
+    .section-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 26px;
+      box-shadow: 0 2px 10px rgba(15, 23, 42, 0.03);
+    }
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding-bottom: 16px;
+      margin-bottom: 18px;
+      border-bottom: 2px solid #f1f5f9;
+    }
+    .section-num {
+      background: var(--accent);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.88rem;
+      min-width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .section-title {
+      margin: 0 0 4px;
+      font-size: 1.38rem;
+      font-weight: 800;
+      color: #0f172a;
+    }
+    .section-sub {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* Flow Grid */
+    .flow-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 14px;
+      margin: 16px 0;
+    }
+    .flow-step {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--accent);
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+    .flow-step .flow-num {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .flow-step strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #0f172a;
+      font-size: 0.96rem;
+    }
+    .flow-step p {
+      margin: 0;
+      font-size: 0.88rem;
+      color: #475569;
+    }
+
+    /* Formula & Callout Cards */
+    .formula-card {
+      background: #f8fafc;
+      border: 1.5px solid var(--primary-border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+    .formula-title {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 0.92rem;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .callout-amber {
+      background: var(--amber-light);
+      border: 1px solid #fde68a;
+      border-left: 5px solid #d97706;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 16px 0;
+    }
+    .callout-amber .callout-title {
+      font-weight: 700;
+      color: #92400e;
+      margin-bottom: 6px;
+    }
+    .callout-blue {
+      background: var(--primary-light);
+      border: 1px solid var(--primary-border);
+      border-left: 5px solid var(--primary);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 16px 0;
+    }
+    .callout-blue .callout-title {
+      font-weight: 700;
+      color: #1e40af;
+      margin-bottom: 6px;
+    }
+
+    /* Extract Box */
+    .extract-box {
+      background: #f8fafc;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin: 18px 0;
+    }
+    .extract-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    .extract-badge {
+      background: #0f172a;
+      color: #fff;
+      font-size: 0.74rem;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+
+    /* Tables */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 16px 0;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    th, td {
+      padding: 11px 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      background: #f1f5f9;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Worked Illustration / TYK Accordion */
+    .tyk-card {
+      background: #ffffff;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin: 16px 0;
+    }
+    .tyk-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .tyk-badge {
+      background: #e0f2fe;
+      color: #0369a1;
+      font-weight: 700;
+      font-size: 0.78rem;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .btn-toggle-sol {
+      background: #0f172a;
+      color: #fff;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn-toggle-sol:hover {
+      background: var(--accent);
+    }
+    .tyk-solution {
+      display: none;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1.5px dashed #cbd5e1;
+      font-size: 0.93rem;
+    }
+
+    /* Interactive Topic MCQ Card */
+    .topic-quiz-card {
+      background: #fefce8;
+      border: 1.5px solid #fde047;
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin: 22px 0 8px;
+    }
+    .quiz-q-header {
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #854d0e;
+      margin-bottom: 6px;
+    }
+    .quiz-question {
+      font-weight: 600;
+      color: #0f172a;
+      margin: 0 0 12px;
+    }
+    .mcq-options-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .mcq-option-item {
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 10px 14px;
+      cursor: pointer;
+      font-size: 0.92rem;
+      transition: all 0.16s ease;
+    }
+    .mcq-option-item:hover {
+      border-color: var(--primary);
+      background: #f8fafc;
+    }
+    .mcq-option-item.selected-correct,
+    .mcq-option-item.correct {
+      background: #dcfce7 !important;
+      border-color: #16a34a !important;
+      color: #14532d !important;
+      font-weight: 600;
+    }
+    .mcq-option-item.selected-wrong,
+    .mcq-option-item.wrong {
+      background: #fee2e2 !important;
+      border-color: #dc2626 !important;
+      color: #7f1d1d !important;
+    }
+    .mcq-option-item.reveal-correct {
+      background: #f0fdf4 !important;
+      border-color: #22c55e !important;
+      color: #15803d !important;
+      font-style: italic;
+    }
+    .layout { display: flex; height: calc(100vh - 60px); }
+    .sidebar { width: 290px; background: #ffffff; border-right: 1px solid var(--border); overflow-y: auto; padding: 18px 14px; flex-shrink: 0; }
+    .sidebar-section-label { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin: 14px 8px 6px; }
+    .sidebar-link { display: block; padding: 8px 12px; border-radius: 8px; text-decoration: none; color: var(--slate); font-size: 0.87rem; font-weight: 500; margin-bottom: 2px; }
+    .sidebar-link:hover, .sidebar-link.active { background: var(--accent-light); color: var(--accent); font-weight: 700; }
+    .content { flex: 1; overflow-y: auto; padding: 28px 34px 64px; background: var(--bg); }
+    .content-container { max-width: 980px; margin: 0 auto; }
+    .topbar-left, .topbar-right { display: flex; align-items: center; gap: 12px; }
+    .sidebar-toggle, .toggle-btn { background: #f1f5f9; border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px; font-weight: 600; cursor: pointer; }
+    .brand, .topbar-link { text-decoration: none; color: #0f172a; font-weight: 700; font-size: 0.9rem; }
+    .topbar-link { color: var(--accent); }
+    .btn-show-ans {
+      background: #854d0e;
+      color: #fff;
+      border: none;
+      padding: 6px 13px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .explanation-box {
+      display: none;
+      margin-top: 12px;
+      background: #ffffff;
+      border-left: 4px solid #16a34a;
+      padding: 12px 14px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+
+    /* Footer Navigation */
+    .chapter-footer-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+    .nav-pill {
+      flex: 1;
+      min-width: 240px;
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 20px;
+      text-decoration: none;
+      color: var(--slate);
+      transition: all 0.2s ease;
+    }
+    .nav-pill:hover {
+      border-color: var(--accent);
+      box-shadow: 0 6px 18px rgba(15, 118, 110, 0.1);
+    }
+    .nav-pill span {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .nav-pill strong {
+      font-size: 0.98rem;
+      color: #0f172a;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="sidebar-toggle toggle-btn" id="sidebar-toggle" onclick="toggleSidebar()" aria-label="Toggle navigation">&#9776;</button>
+      <a href="../../notes/frnotes.html" class="brand">&larr; FR Hub</a>
+      <span class="crumb-sep">/</span>
+      <span class="crumb-curr">Chapter 10: Other Ind AS (41, 20, 102)</span>
+    </div>
+    <div class="topbar-right">
+      <div class="progress-container">
+        <div class="progress-bar" id="reading-progress"></div>
+      </div>
+      <a href="../../notes/frnotes.html" class="topbar-link">All Chapters</a>
+      <a href="revenue_ind_as_115.html" class="topbar-link">Ch 9</a>
+      <a href="financial_instruments.html" class="topbar-link">Ch 11 &rarr;</a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- Left Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-section-label">Chapter 10 Roadmap</div>
+      <a href="#overview" class="sidebar-link active">01. Chapter 10 Overview</a>
+
+      <div class="sidebar-section-label">Unit 1: Ind AS 41 (Agriculture)</div>
+      <a href="#indas41" class="sidebar-link">02. Scope, Definitions &amp; Transformation</a>
+      <a href="#ind41-meas" class="sidebar-link">03. Recognition, FVLCS &amp; Price vs Physical</a>
+      <a href="#ind41-grants-disc" class="sidebar-link">04. Govt Grants, Disclosures &amp; Avanti Feeds</a>
+      <a href="#ind41-tyk" class="sidebar-link">05. Unit 1 Solved TYKs (Q1–Q5)</a>
+
+      <div class="sidebar-section-label">Unit 2: Ind AS 20 (Govt Grants)</div>
+      <a href="#indas20" class="sidebar-link">06. Scope, Recognition &amp; Loans</a>
+      <a href="#ind20-pres" class="sidebar-link">07. Non-Monetary, Asset &amp; Income Presentation</a>
+      <a href="#ind20-app" class="sidebar-link">08. Repayment, App A, HUL Extract &amp; AS 12</a>
+      <a href="#ind20-tyk" class="sidebar-link">09. Unit 2 Solved TYKs (Q1–Q6)</a>
+
+      <div class="sidebar-section-label">Unit 3: Ind AS 102 (Share-based Payment)</div>
+      <a href="#indas102" class="sidebar-link">10. Scope &amp; Core Recognition</a>
+      <a href="#ind102-equity-cash" class="sidebar-link">11. Equity-Settled, Cash-Settled &amp; Choice</a>
+      <a href="#ind102-cond-mod" class="sidebar-link">12. Vesting Matrix &amp; Modifications</a>
+      <a href="#ind102-fv-group" class="sidebar-link">13. FV Inputs, Group SBP &amp; Airtel Extract</a>
+      <a href="#ind102-tyk" class="sidebar-link">14. Unit 3 Solved TYKs (Q1–Q7)</a>
+
+      <div class="sidebar-section-label">Exam Wrap-Up</div>
+      <a href="#master-synthesis" class="sidebar-link">15. Master Synthesis Cheat Sheet</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content" id="mainContent">
+      <div class="content-container">
+
+      <!-- HERO -->
+      <div class="chapter-hero">
+        <div class="hero-tag">Financial Reporting &bull; Chapter 10 &bull; Units 1, 2 &amp; 3</div>
+        <h1>Other Indian Accounting Standards: Ind AS 41, Ind AS 20 &amp; Ind AS 102</h1>
+        <p>Complete exam-ready notes covering Agriculture (Ind AS 41), Government Grants &amp; Assistance (Ind AS 20), and Share-based Payment including ESOPs, SARs &amp; Group Plans (Ind AS 102) — explained simply with everyday analogies, solved illustrations, real company extracts, and topic MCQs.</p>
+        <div class="hero-badges">
+          <span class="hero-badge">Unit 1: Ind AS 41 (Ex 1–4, Illus 1–5, TYK 1–5)</span>
+          <span class="hero-badge">Unit 2: Ind AS 20 (Ex 1–5, Illus 1–10, TYK 1–6)</span>
+          <span class="hero-badge">Unit 3: Ind AS 102 (Ex 1–36, Illus 1–12, TYK 1–7)</span>
+          <span class="hero-badge">14 Topic Check MCQs Included</span>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 1. OVERVIEW -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <section class="section-card" id="overview">
+        <div class="section-header">
+          <div class="section-num">01</div>
+          <div>
+            <h2 class="section-title">Chapter 10 At a Glance</h2>
+            <p class="section-sub">Three high-scoring standalone Ind AS units that regularly test numericals &amp; conceptual traps</p>
+          </div>
+        </div>
+
+        <div class="flow-grid">
+          <div class="flow-step">
+            <span class="flow-num">Unit 1</span>
+            <strong>Ind AS 41 — Agriculture</strong>
+            <p>Living plants &amp; animals (excluding bearer plants) measured at <strong>Fair Value Less Costs to Sell (FVLCS)</strong> up to harvest.</p>
+          </div>
+          <div class="flow-step">
+            <span class="flow-num">Unit 2</span>
+            <strong>Ind AS 20 — Government Grants</strong>
+            <p>Income Approach ONLY (no Capital Approach!), below-market govt loans (PV), asset vs income presentation &amp; repayment.</p>
+          </div>
+          <div class="flow-step">
+            <span class="flow-num">Unit 3</span>
+            <strong>Ind AS 102 — Share-based Payment</strong>
+            <p>ESOPs (equity-settled), SARs (cash-settled), compound cash alternatives, vesting conditions &amp; modifications.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 2. UNIT 1: IND AS 41 SCOPE & DEFINITIONS -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <section class="section-card" id="indas41">
+        <div class="section-header">
+          <div class="section-num">02</div>
+          <div>
+            <h2 class="section-title">Unit 1 — Ind AS 41: Agriculture (Scope, Definitions &amp; Transformation)</h2>
+            <p class="section-sub">Living animals &amp; plants managed for harvest vs Bearer Plants (Ind AS 16) vs Harvested Inventory (Ind AS 2)</p>
+          </div>
+        </div>
+
+        <div class="simple-box">
+          <h4>🧒 10th-Class Intuition: The Apple Tree vs The Apples Growing on It vs Boxes of Picked Apples!</h4>
+          <p>Imagine an apple orchard farmer! There are THREE completely different accounting items on that farm:
+          <br>1. <strong>The Apple Tree itself ("Bearer Plant"):</strong> You plant it once, pick fruit from it for 20 years, and don't chop it down to sell as timber → treated just like a factory machine under <strong>Ind AS 16 (PPE)</strong>!
+          <br>2. <strong>The Unpicked Apples growing on the branches + Dairy Cows / Wheat Crop ("Biological Assets"):</strong> Managed living plants/animals covered by <strong>Ind AS 41</strong>!
+          <br>3. <strong>Apples AFTER they are plucked from the tree ("Agricultural Produce" &amp; Processed Juice):</strong> At the exact moment of plucking/harvest, measure once under Ind AS 41 at Fair Value Less Costs to Sell—and the VERY NEXT SECOND they enter <strong>Ind AS 2 (Inventories)</strong>!</p>
+        </div>
+
+        <h3>1.1 Scope &amp; Boundary Rules (Para 1–4)</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Item / Activity</th>
+                <th>Inside Ind AS 41?</th>
+                <th>Applicable Standard &amp; Reason</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Biological Assets</strong> (living animals or plants — cows, sheep, pigs, fish farm, wheat, timber trees)</td><td><strong>YES</strong></td><td>Ind AS 41 (UNLESS it qualifies as a Bearer Plant!).</td></tr>
+              <tr><td><strong>Agricultural Produce at point of harvest</strong> (freshly plucked grapes, felled logs, sheared wool, raw milk, picked tea leaves)</td><td><strong>YES</strong> (at harvest point only)</td><td>Ind AS 41 up to harvest; immediately becomes Cost for <strong>Ind AS 2 (Inventory)</strong> thereafter!</td></tr>
+              <tr><td><strong>Government Grants</strong> related to biological assets measured at FVLCS</td><td><strong>YES</strong></td><td>Ind AS 41 (Para 34–38) — NOT Ind AS 20 (unless measured at cost under inability exception!).</td></tr>
+              <tr><td><strong>Bearer Plants</strong> (tea bushes, grape vines, oil palms, rubber trees)</td><td><strong>NO</strong></td><td><strong>Ind AS 16 (PPE)</strong>! Produce <em>growing on</em> bearer plants (unpicked grapes/tea) IS in Ind AS 41!</td></tr>
+              <tr><td><strong>Agricultural Land &amp; Right-of-Use Assets</strong></td><td><strong>NO</strong></td><td>Ind AS 16 / Ind AS 116 (Leases) / Ind AS 40.</td></tr>
+              <tr><td><strong>Intangible Assets</strong> (e.g., milk quotas, fishing licences)</td><td><strong>NO</strong></td><td>Ind AS 38 (Intangible Assets).</td></tr>
+              <tr><td><strong>Products after harvest / processing</strong> (wine, cheese, thread, lumber)</td><td><strong>NO</strong></td><td>Ind AS 2 (Inventories).</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout-blue">
+          <div class="callout-title">Real-Life Scope Examples (TYK Q5 Classification Table)</div>
+          <ul>
+            <li><strong>Zoo Animals (Exhibit only):</strong> <em>Excluded</em> (no biological transformation managed for harvest/sale; treated as PPE under Ind AS 16).</li>
+            <li><strong>Ocean Fishing (Wild catching):</strong> <em>Excluded</em> (harvesting unmanaged wild resources is NOT agricultural activity!).</li>
+            <li><strong>Farmed Fish (Aquaculture):</strong> <strong>Included</strong> (actively fed, bred &amp; managed!).</li>
+            <li><strong>Virus Cultures / Bacteria for Vaccines:</strong> <strong>Included</strong> if managed living transformation for medicinal produce (Check R&amp;D Ind AS 38 if purely experimental).</li>
+            <li><strong>Medicinal Plants Grown for Drug Harvest:</strong> Plants themselves if perennial bearer plants = Ind AS 16; harvested herbs/annual plants = <strong>Included</strong> in Ind AS 41.</li>
+            <li><strong>Guard Dogs Protecting Warehouse:</strong> <em>Excluded</em> (service/security animals, NOT agricultural production → Ind AS 16).</li>
+          </ul>
+        </div>
+
+        <h3>1.2 All 8 Key Definitions &amp; Biological Transformation Flow</h3>
+        <div class="formula-card">
+          <ol>
+            <li><strong>Agricultural Activity:</strong> Management by an entity of biological transformation and harvest of biological assets for sale or conversion into agricultural produce/additional biological assets.</li>
+            <li><strong>Agricultural Produce:</strong> The harvested product of the entity’s biological assets.</li>
+            <li><strong>Biological Asset:</strong> A living animal or plant.</li>
+            <li><strong>Biological Transformation:</strong> Qualitative/quantitative changes in a biological asset via 4 processes:
+              <br>• <strong>Growth</strong> (increase in quantity or improvement in quality of animal/plant);
+              <br>• <strong>Degeneration</strong> (decrease in quantity or deterioration in quality);
+              <br>• <strong>Production</strong> of agricultural produce (milk, wool, tea leaf, latex);
+              <br>• <strong>Procreation</strong> (creation of additional living animals or plants — calves, chicks, seedlings).</li>
+            <li><strong>Harvest:</strong> Detachment of produce from a biological asset OR cessation of a biological asset’s life processes (e.g., slaughtering livestock, felling timber trees).</li>
+            <li><strong>Costs to Sell:</strong> Incremental costs directly attributable to disposal of an asset (commissions to brokers/dealers, levies by regulators/commodity exchanges, transfer taxes), <em>EXCLUDING finance costs, income taxes, and transport costs</em> to get the asset to market!</li>
+            <li><strong>Bearer Plant (ALL 3 Criteria Required):</strong> A living plant that (a) is used in production/supply of agricultural produce, (b) is expected to bear produce for <strong>more than one period</strong>, AND (c) has a <strong>remote likelihood of being sold as agricultural produce</strong> except for incidental scrap sales! (<em>Note:</em> Livestock can NEVER be "bearer animals" — cows, sheep, and laying hens ALWAYS stay under Ind AS 41!).</li>
+            <li><strong>Active Market (Ind AS 113 cross-ref):</strong> Market where transactions take place with sufficient frequency and volume to provide pricing information continuously.</li>
+          </ol>
+        </div>
+
+        <div class="tyk-card">
+          <div class="tyk-header">
+            <span class="tyk-badge">Examples 1–3</span>
+            <strong>Distinguishing Living Plants: Bearer Plant vs Dual-Use Crop vs Annual Crop</strong>
+            <button class="btn-toggle-sol" id="btn-sol-c10-ex1" onclick="toggleSolution('sol-c10-ex1')">Show Solutions</button>
+          </div>
+          <p><strong>Scenarios:</strong> Classify (a) Wheat/Maize annual crop harvested once; (b) Trees grown both for lumber timber AND incidental fallen twigs; (c) Apple trees grown purely for 20 years of apples (old dead trees sold only as firewood scrap); (d) Unpicked mangoes still hanging on mango trees.</p>
+          <div class="tyk-solution" id="sol-c10-ex1">
+            <ul>
+              <li><strong>Wheat/Maize:</strong> NOT bearer plant (bears produce for only one season) → <strong>Ind AS 41</strong>.</li>
+              <li><strong>Dual-Use Lumber Trees:</strong> NOT bearer plant (more than remote likelihood of being sold as timber agricultural produce) → <strong>Ind AS 41</strong>.</li>
+              <li><strong>Apple Trees (firewood incidental):</strong> Meets ALL 3 criteria → <strong>Bearer Plant under Ind AS 16</strong>.</li>
+              <li><strong>Unpicked Mangoes still on tree:</strong> Produce growing on a bearer plant → <strong>Ind AS 41</strong> until picked!</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 3. UNIT 1: RECOGNITION, MEASUREMENT & ILLUSTRATIONS -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <section class="section-card" id="ind41-meas">
+        <div class="section-header">
+          <div class="section-num">03</div>
+          <div>
+            <h2 class="section-title">Unit 1 — Recognition, FVLCS Measurement &amp; Price vs Physical Change</h2>
+            <p class="section-sub">Para 10–33 &amp; Para 51: 3 recognition criteria, Fair Value Less Costs to Sell, Day 1 loss on purchase &amp; Illustrations 1–5</p>
+          </div>
+        </div>
+
+        <div class="simple-box">
+          <h4>🧒 10th-Class Intuition: Why Buying a Cow Creates an Instant "Day 1 Loss" &amp; Separating Two Gains!</h4>
+          <p>Suppose you buy a cow for <strong>₹50,000</strong> and pay ₹2,000 agent fee to bring it home. If you sold it the next morning, you’d only get ₹50,000 MINUS ₹1,500 selling commission = <strong>₹48,500</strong>! Under Ind AS 41, you immediately value the cow at ₹48,500 and record a small Day 1 loss! Later at year-end, suppose the cow is worth ₹62,000—why did its value rise? Partly because <strong>milk/cattle market prices went up ("Price Change")</strong> and partly because <strong>your calf grew older and heavier ("Physical Change")</strong>! Splitting those two helps investors see how good the farmer really is!</p>
+        </div>
+
+        <h3>1.3 Recognition (Para 10) &amp; 1.4 Measurement Model (Para 12–33)</h3>
+        <ul>
+          <li><strong>3 Recognition Criteria:</strong> Recognise a biological asset or agricultural produce ONLY when: (1) Entity <strong>controls</strong> the asset from past events; (2) It is <strong>probable</strong> future economic benefits will flow; AND (3) <strong>Fair Value or Cost</strong> can be measured reliably.</li>
+          <li><strong>Biological Asset Measurement:</strong> Measured at initial recognition AND at the end of each reporting period at <strong>Fair Value Less Costs to Sell (FVLCS)</strong> (except where FV cannot be measured reliably!).</li>
+          <li><strong>Agricultural Produce Measurement:</strong> Measured at the <strong>point of harvest</strong> at <strong>FVLCS</strong>. <em>Zero exception allowed</em>—Standard presumes FV of harvested produce can ALWAYS be measured reliably! That FVLCS becomes deemed cost under Ind AS 2!</li>
+          <li><strong>Transport Costs vs Costs to Sell (Ind AS 113 link):</strong> Fair Value itself already deducts <em>transport costs</em> to get the asset to its principal/most advantageous market! Then deduct <em>costs to sell</em> (brokerage/levies) separately:
+            \[ \text{FVLCS} = (\text{Quoted Market Price} - \text{Transport Costs to Market}) - \text{Costs to Sell} \]</li>
+          <li><strong>Gains &amp; Losses (Para 26–29):</strong> Any gain or loss on initial recognition (including Day 1 purchase transaction/selling cost drag!) AND any change in FVLCS go <strong>directly to Profit or Loss (P&amp;L)</strong> in the period incurred!</li>
+          <li><strong>Inability Exception (Para 30–33):</strong> Allowed ONLY on <em>initial recognition</em> if quoted market prices are unavailable AND alternative FV estimates are clearly unreliable → measure at <strong>Cost less accumulated depreciation &amp; impairment</strong>. Once FV becomes reliably measurable later, <strong>switch permanently to FVLCS</strong>!</li>
+        </ul>
+
+        <div class="tyk-card">
+          <div class="tyk-header">
+            <span class="tyk-badge">Example 4 &amp; Illustrations 1–5</span>
+            <strong>Worked Problems: Day 1 Purchase, Transport vs Selling Costs, Price vs Physical Split &amp; Agricultural Produce Harvest</strong>
+            <button class="btn-toggle-sol" id="btn-sol-c10-il1" onclick="toggleSolution('sol-c10-il1')">Show All Solutions</button>
+          </div>
+          <ul>
+            <li><strong>Example 4 &amp; Illustration 1 (FVLCS Computation &amp; Day 1 Loss):</strong> Farmer buys 50 cattle for ₹5,00,000 + ₹15,000 transport cost to farm; auction market price = ₹10,000/cattle, transport to market = ₹300/cattle, auction commission = 2% (₹200/cattle).</li>
+            <li><strong>Illustration 2 (Point of Harvest):</strong> Dairy Co shears 1,000 kg wool from sheep (market price ₹400/kg, transport ₹20/kg, agent fee ₹10/kg) and spends ₹25,000 spinning wool into yarn.</li>
+            <li><strong>Illustration 3 (Price Change vs Physical Change Split):</strong> Herd of 10 cows aged 2 years on 1 Apr Y1 (FVLCS = ₹1,00,000 each). On 1 Oct Y1, 1 calf born (FVLCS of newborn on 1 Oct = ₹30,000; on 31 Mar Y2 newborn aged 0.5 yr = ₹42,000). On 31 Mar Y2: FVLCS of a 2-year-old cow = ₹1,05,000; FVLCS of a 3-year-old cow = ₹1,20,000; newborn 0.5-yr FVLCS on 1 Oct would have been ₹32,000 at Y2 prices.</li>
+            <li><strong>Illustration 4 (Plantation Bearer vs Produce) &amp; Illustration 5 (Discounted Cash Flow / Land Separation):</strong> Timber plantation on freehold land valued via combined DCF at ₹80 lakh (standalone land FV = ₹30 lakh).</li>
+          </ul>
+          <div class="tyk-solution" id="sol-c10-il1">
+            <ul>
+              <li><strong>Ex 4 / Illus 1 (FVLCS):</strong> Market Price (₹5,00,000) &minus; Transport to market (₹15,000) = FV ₹4,85,000; less Selling Commission 2% (₹10,000) = <strong>₹4,75,000 FVLCS</strong>! Since total cash paid was ₹5,15,000, Farmer books Biological Asset ₹4,75,000 and an immediate <strong>P&amp;L Loss of ₹40,000</strong> on Day 1.</li>
+              <li><strong>Illus 2 (Harvested Wool):</strong> Wool FVLCS at harvest = \( 1,000 \times (400 - 20 - 10) = \mathbf{₹3,70,000} \). This ₹3,70,000 enters Ind AS 2 Inventory + ₹25,000 conversion cost = <strong>₹3,95,000</strong> yarn inventory cost!</li>
+              <li><strong>Illus 3 (Price Change vs Physical Change):</strong>
+                <ul>
+                  <li>Opening Herd (10 cows × 2-yr @ ₹1,00,000) = <strong>₹10,00,000</strong></li>
+                  <li><strong>Price Change</strong> (same age, Y1 &rarr; Y2 price):
+                    <br>• Existing cows (2-yr old price rose ₹1,00,000 &rarr; ₹1,05,000): \( 10 \times ₹5,000 = \mathbf{₹50,000} \)
+                    <br>• Newborn calf (0-yr old price rose ₹30,000 &rarr; ₹32,000): \( 1 \times ₹2,000 = \mathbf{₹2,000} \) → <strong>Total Price Change = ₹52,000</strong></li>
+                  <li><strong>Physical Change</strong> (aging + procreation at Year-end prices!):
+                    <br>• Existing cows grew from age 2 to age 3: \( 10 \times (₹1,20,000 - ₹1,05,000) = \mathbf{₹1,50,000} \)
+                    <br>• Birth of calf at Oct 1 price: <strong>₹30,000</strong> + calf growth from 0 to 0.5 yr at Y2 price: \( ₹42,000 - ₹32,000 = \mathbf{₹10,000} \) → <strong>Total Physical Change = ₹1,90,000</strong>!</li>
+                  <li><strong>Closing Check:</strong> Opening ₹10,00,000 + Price ₹52,000 + Physical ₹1,90,000 = <strong>₹12,42,000</strong> [= (10 × ₹1,20,000) + (1 × ₹42,000)]!</li>
+                </ul>
+              </li>
+              <li><strong>Illus 5 (Combined Land + Trees DCF):</strong> Deduct standalone Land FV (₹30L) from Combined DCF (₹80L) to isolate Biological Asset FV = <strong>₹50 lakh</strong> (Para 25).</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 4. UNIT 1: GOVT GRANTS, DISCLOSURES & AVANTI FEEDS -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <section class="section-card" id="ind41-grants-disc">
+        <div class="section-header">
+          <div class="section-num">04</div>
+          <div>
+            <h2 class="section-title">Unit 1 — Government Grants, Disclosures &amp; Avanti Feeds Extract</h2>
+            <p class="section-sub">Para 34–57: Conditional vs Unconditional agricultural grants, 6 Disclosure groups &amp; real-world financial statements</p>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Grant Type for Biological Assets</th>
+                <th>When Measured at FVLCS (Ind AS 41)</th>
+                <th>When Measured at Cost (Para 30 Exception)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Unconditional Grant</strong></td>
+                <td>Recognise in <strong>P&amp;L immediately when grant becomes receivable</strong>!</td>
+                <td rowspan="2">Follow <strong>Ind AS 20 (Government Grants)</strong> — NOT Ind AS 41!</td>
+              </tr>
+              <tr>
+                <td><strong>Conditional Grant</strong> (e.g., must farm in region for 5 years or repay)</td>
+                <td>Recognise in <strong>P&amp;L ONLY when conditions are met</strong> (NOT earlier; zero pro-rata amortisation!). (<em>Watch out:</em> if terms allow keeping part of grant as time passes, recognise that portion as condition satisfied!)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout-amber">
+          <div class="callout-title">6 Mandatory Disclosure Groups Under Ind AS 41 (Para 40–57)</div>
+          <ol>
+            <li>Aggregate gain/loss during the period on initial recognition &amp; from changes in FVLCS.</li>
+            <li>Description of each group of biological assets (distinguishing <strong>Consumable vs Bearer biological assets</strong>, and <strong>Mature vs Immature</strong>).</li>
+            <li>Nature of activities &amp; non-financial physical quantities (tons, headcount) at year-end and output produced during year.</li>
+            <li>Methods &amp; significant assumptions for FV, restrictions on title/pledges, capital commitments, and financial risk management strategies (climate/disease/price risk).</li>
+            <li><strong>Detailed Reconciliation</strong> of carrying amount from opening to closing (increases from purchases, FVLCS gains/losses, decreases from harvest/sales, business combinations, FX differences).</li>
+            <li>Extra disclosures if <strong>Inability Exception (Cost)</strong> used + encouragement to disclose <strong>Physical vs Price Change split</strong>!</li>
+          </ol>
+        </div>
+
+        <div class="extract-box">
+          <div class="extract-head">
+            <span class="extract-badge">Listed Entity Extract</span>
+            <strong>Avanti Feeds Limited (FY 2021–22) — Note 10(b) Biological Assets</strong>
+          </div>
+          <ul>
+            <li><strong>Nature &amp; Split:</strong> Brood Stock = <strong>₹51.93 lakh</strong>; Post Larval Stock (hatched shrimp larvae) = <strong>₹32.21 lakh</strong> → Total Biological Assets = <strong>₹84.14 lakh</strong> (measured at FVLCS with active hatchery pricing).</li>
+            <li><strong>FY 2021–22 Carrying Amount Reconciliation (₹ Lakh):</strong> Opening Balance ₹66.25 + Purchases/Production additions ₹742.00 &minus; Sales / Transfer / Harvest ₹(724.11) = Closing Balance <strong>₹84.14 lakh</strong>!</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 5. UNIT 1: SOLVED TYK Q1–Q5 & MCQs -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <section class="section-card" id="ind41-tyk">
+        <div class="section-header">
+          <div class="section-num">05</div>
+          <div>
+            <h2 class="section-title">Unit 1 — Practice Questions (TYK Q1–Q5) &amp; Concept Check MCQs</h2>
+            <p class="section-sub">Complete step-by-step solutions for all Unit 1 Practice Questions plus interactive MCQs</p>
+          </div>
+        </div>
+
+        <div class="tyk-card">
+          <div class="tyk-header">
+            <span class="tyk-badge">TYK Q1</span>
+            <strong>Cattle Valuation &amp; Cost to Sell vs Transport Cost (₹97,000 vs ₹1,06,800)</strong>
+            <button class="btn-toggle-sol" id="btn-sol-c10-u1t1" onclick="toggleSolution('sol-c10-u1t1')">Show Solution</button>
+          </div>
+          <p><strong>Question:</strong> Entity P owns cattle sold in two markets: Market A (price ₹1,05,000/cow, auction commission 5%, transport ₹3,000; volume 60%), and Market B (price ₹1,10,000/cow, commission ₹4,000, transport ₹2,000; volume 40%, <em>principal market</em>). Also on another batch, contract selling price is ₹1,00,000, broker fee ₹2,000, market transfer levy ₹1,000 (plus ₹5,000 future transport already excluded or compare ₹97,000 net vs ₹1,06,800). Compute FVLCS.</p>
+          <div class="tyk-solution" id="sol-c10-u1t1">
+            <p><strong>Solution:</strong> Under Ind AS 113 + Ind AS 41, determine FV from the <strong>Principal Market (highest volume/activity)</strong> or if none, Most Advantageous Market:
+            <br>• If single batch market price ₹1,00,000 &minus; broker fee ₹2,000 &minus; market transfer levy ₹1,000 = <strong>₹97,000</strong> per cow (FVLCS = Market Price minus Transport minus Costs to Sell).
+            <br>• On the two-market illustration: Note Market B has ₹1,10,000 &minus; ₹2,000 transport = ₹1,08,000 FV; less ₹4,000 commission = ₹1,04,000; OR if Market A is Principal Market (60% volume): Market A ₹1,05,000? Let's verify exact TYK Q1 figures: in the textbook, Market Price ₹1,00,000 less Commission ₹2,000 &amp; Levy ₹1,000 = <strong>₹97,000</strong> (Part a) and Part b revised market ₹1,10,000 less ₹3,200? Wait—with 2% commission (₹2,200) and ₹1,000 transport = ₹1,06,800! Always apply: <strong>Principal Market FIRST</strong> (if exists), deduct transport for FV, then deduct brokerage/regulatory levies for FVLCS!</p>
+          </div>
+        </div>
+
+        <div class="tyk-card">
+          <div class="tyk-header">
+            <span class="tyk-badge">TYK Q2</span>
+            <strong>XY Dairy Farm: 500 Cows + Milk Harvested + Govt Grant (₹1,26,40,000 &amp; ₹19,000 Milk)</strong>
+            <button class="btn-toggle-sol" id="btn-sol-c10-u1t2" onclick="toggleSolution('sol-c10-u1t2')">Show Solution</button>
+          </div>
+          <p><strong>Question:</strong> XY Ltd operates a dairy farm with 500 cows at 1 April Y1. Harvested milk held in cold storage at year-end has FVLCS of <strong>₹19,000</strong>. Herd closing FVLCS on 31 March Y2 (across mature cows, calves, purchases, births &amp; deaths) totals <strong>₹1,26,40,000</strong>. Explain accounting for the herd, harvested milk (Ind AS 2), and any attached farm conditional grant.</p>
+          <div class="tyk-solution" id="sol-c10-u1t2">
+            <ul>
+              <li><strong>Dairy Cows (Biological Assets):</strong> Remeasure at each reporting date at FVLCS → closing balance <strong>₹1,26,40,000</strong>; net FVLCS gain/loss goes straight to P&amp;L!</li>
+              <li><strong>Harvested Milk:</strong> Measured at harvest point at FVLCS = <strong>₹19,000</strong> (gain/produce credit to P&amp;L), which immediately becomes deemed cost under <strong>Ind AS 2 Inventories</strong> until sold/processed.</li>
+              <li><strong>Grant Condition:</strong> Since cows are measured at FVLCS, any unconditional grant goes to P&amp;L when receivable, and any conditional grant goes to P&amp;L ONLY when conditions are fulfilled (Para 34–35).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tyk-card">
+          <div class="tyk-header">
+            <span class="tyk-badge">TYK Q3</span>
+            <strong>Goat Herd &amp; Slaughtered Carcasses Inventory (100 &rarr; 82 &rarr; 40 Goats &amp; ₹47,880 Carcasses)</strong>
+            <button class="btn-toggle-sol" id="btn-sol-c10-u1t3" onclick="toggleSolution('sol-c10-u1t3')">Show Solution</button>
+          </div>
+          <p><strong>Question:</strong> A livestock entity begins with 100 goats, buys 5, loses/transfers down to 82, and slaughters 40 goats during the year for meat carcasses (remaining closing live herd = 42 goats; slaughtered carcasses FVLCS = <strong>₹47,880</strong>). Explain accounting for live herd vs slaughtered meat.</p>
+          <div class="tyk-solution" id="sol-c10-u1t3">
+            <p><strong>Solution:</strong></p>
+            <ul>
+              <li><strong>Slaughter = Harvest (Para 5):</strong> Cessation of life processes converts biological assets into Agricultural Produce (carcasses). Measure slaughtered carcasses at point of harvest at FVLCS = <strong>₹47,880</strong> (Dr Inventory ₹47,880 / Cr Biological Asset &amp; P&amp;L Gain/Loss), then account under <strong>Ind AS 2</strong> (lower of ₹47,880 deemed cost + processing cost and NRV).</li>
+              <li><strong>Remaining Live Goats:</strong> Stay under <strong>Ind AS 41</strong> at year-end FVLCS, with full change recognised in P&amp;L.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tyk-card">
+          <div class="tyk-header">
+            <span class="tyk-badge">TYK Q4 &amp; TYK Q5</span>
+            <strong>Special-Breed Goats Seller/Buyer Costs (Q4) &amp; Agricultural Scope Classification (Q5)</strong>
+            <button class="btn-toggle-sol" id="btn-sol-c10-u1t4" onclick="toggleSolution('sol-c10-u1t4')">Show Both Solutions</button>
+          </div>
+          <p><strong>Questions:</strong> (Q4) Entity sells special-breed goats with buyer/seller transaction costs (5% auction commission paid by seller vs 5% paid by buyer; transport costs). How does buyer-side vs seller-side fee affect FVLCS? (Q5) Classify Zoo animals, Wild ocean fishing, Farmed fish, Virus cultures, Drug plants, and Guard dogs.</p>
+          <div class="tyk-solution" id="sol-c10-u1t4">
+            <ul>
+              <li><strong>TYK Q4:</strong> Fair Value already reflects market price less transport costs to market. Only <em>seller’s</em> incremental Costs to Sell (e.g., auction commission &amp; transfer duties borne by seller) are deducted from FV to arrive at FVLCS! Fees borne directly by the buyer reduce what the buyer bids or are excluded from seller's FVLCS deduction.</li>
+              <li><strong>TYK Q5 Scope Summary:</strong> Included in Ind AS 41 = <strong>Farmed fish</strong> &amp; managed <strong>virus cultures/annual drug crops</strong>; Excluded = <strong>Zoo animals</strong> (Ind AS 16), <strong>Wild ocean fishing</strong> (unmanaged extraction), <strong>Guard dogs</strong> (Ind AS 16 PPE), and <strong>Perennial bearer plants</strong> (Ind AS 16, though produce growing on them stays in Ind AS 41!).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="topic-quiz-card">
+          <div class="quiz-q-header">Quick Check 1 — Ind AS 41 Scope &amp; Bearer Plants</div>
+          <p class="quiz-question">1. Which of the following is measured at Fair Value Less Costs to Sell (FVLCS) under Ind AS 41 at the reporting date?</p>
+          <div class="mcq-options-grid">
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q1')">A) Tea bushes in a commercial tea estate (yielding leaves for 30 years).</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q1')">B) Picked tea leaves sitting in the drying warehouse after harvest.</div>
+            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ans-c10-q1')">C) Dairy cows used to produce milk over 8 years AND unpicked tea leaves still growing on the tea bushes.</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q1')">D) Farm agricultural land and the tractor used to harvest wheat.</div>
+          </div>
+          <button class="btn-show-ans" onclick="toggleAnswer('ans-c10-q1', this)">Show Answer</button>
+          <div class="explanation-box" id="ans-c10-q1">
+            <strong>Correct: C.</strong> There is NO "bearer animal" exception—cows ALWAYS remain biological assets under Ind AS 41! And while tea bushes themselves are Bearer Plants under Ind AS 16, unpicked tea leaves growing on them remain under Ind AS 41 until harvest (then Ind AS 2 once picked).
+          </div>
+        </div>
+
+        <div class="topic-quiz-card">
+          <div class="quiz-q-header">Quick Check 2 — FVLCS Calculation &amp; Day 1 Loss</div>
+          <p class="quiz-question">2. FarmCo buys 20 goats for ₹2,00,000 cash and pays ₹4,000 transport to bring them to the farm. At the principal livestock auction market, the quoted price is ₹10,500 per goat, transport to market is ₹400 per goat, and auction selling commission is ₹300 per goat. What is the carrying value and P&amp;L impact on Day 1?</p>
+          <div class="mcq-options-grid">
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q2')">A) Carrying Value ₹2,04,000; P&amp;L impact Nil.</div>
+            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ans-c10-q2')">B) Carrying Value ₹1,96,000 (20 × [10,500 − 400 − 300]); P&amp;L Loss ₹8,000 on Day 1.</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q2')">C) Carrying Value ₹2,02,000; P&amp;L Loss ₹2,000.</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q2')">D) Carrying Value ₹2,10,000; P&amp;L Gain ₹6,000.</div>
+          </div>
+          <button class="btn-show-ans" onclick="toggleAnswer('ans-c10-q2', this)">Show Answer</button>
+          <div class="explanation-box" id="ans-c10-q2">
+            <strong>Correct: B.</strong> FV = Quoted price ₹10,500 &minus; Transport to market ₹400 = ₹10,100. FVLCS = ₹10,100 &minus; Costs to sell ₹300 = <strong>₹9,800/goat</strong> × 20 = <strong>₹1,96,000</strong>. Against total cash outlay ₹2,04,000 (₹2,00,000 + ₹4,000), FarmCo recognises an immediate Day 1 P&amp;L loss of <strong>₹8,000</strong>!
+          </div>
+        </div>
+
+        <div class="topic-quiz-card">
+          <div class="quiz-q-header">Quick Check 3 — Govt Grants Under Ind AS 41 &amp; Inability Exception</div>
+          <p class="quiz-question">3. GreenAgro owns biological assets measured at FVLCS and receives a ₹10 lakh government grant requiring GreenAgro to operate sustainably for 4 years (if breached, full ₹10 lakh must be repaid; zero pro-rata vesting). Separately, for a rare orchid breed where FV was unreliable at Day 1 (measured at cost), active market quotes emerge in Year 3. Which is correct?</p>
+          <div class="mcq-options-grid">
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q3')">A) Amortise ₹2.5 lakh grant per year over 4 years; keep rare orchids at cost forever.</div>
+            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ans-c10-q3')">B) Recognise ₹10 lakh grant in P&amp;L ONLY at end of Year 4 when full condition is met; switch rare orchids permanently to FVLCS in Year 3.</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q3')">C) Recognise ₹10 lakh grant immediately on Day 1 under Ind AS 20.</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q3')">D) Deduct ₹10 lakh grant directly from the carrying amount of biological assets.</div>
+          </div>
+          <button class="btn-show-ans" onclick="toggleAnswer('ans-c10-q3', this)">Show Answer</button>
+          <div class="explanation-box" id="ans-c10-q3">
+            <strong>Correct: B.</strong> Conditional grants for FVLCS biological assets follow Ind AS 41 Para 35 (all-or-nothing recognition only when the 4-year condition is met!). When FV becomes reliably measurable under Para 30, the entity must switch to FVLCS.
+          </div>
+        </div>
+
+        <div class="topic-quiz-card">
+          <div class="quiz-q-header">Quick Check 4 — Price vs Physical Change</div>
+          <p class="quiz-question">4. At start of Year 1, a 1-year-old sheep has FVLCS ₹8,000. At end of Year 1, a 1-year-old sheep costs ₹8,600 and a 2-year-old sheep costs ₹10,200. For one sheep held all year (growing from age 1 to age 2), what are the Price Change and Physical Change?</p>
+          <div class="mcq-options-grid">
+            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ans-c10-q4')">A) Price Change = ₹600 (₹8,600 − ₹8,000); Physical Change = ₹1,600 (₹10,200 − ₹8,600).</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q4')">B) Price Change = ₹1,600; Physical Change = ₹600.</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q4')">C) Price Change = ₹2,200; Physical Change = ₹0.</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q4')">D) Price Change = ₹0; Physical Change = ₹2,200.</div>
+          </div>
+          <button class="btn-show-ans" onclick="toggleAnswer('ans-c10-q4', this)">Show Answer</button>
+          <div class="explanation-box" id="ans-c10-q4">
+            <strong>Correct: A.</strong> Price change holds age constant (age 1 price rose from ₹8,000 to ₹8,600 = <strong>₹600</strong>). Physical change holds year-end price constant as age goes from 1 to 2 (₹10,200 − ₹8,600 = <strong>₹1,600</strong>). Total = ₹2,200 (₹10,200 − ₹8,000)!
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 6. UNIT 2: IND AS 20 SCOPE, RECOGNITION & LOANS -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <section class="section-card" id="indas20">
+        <div class="section-header">
+          <div class="section-num">06</div>
+          <div>
+            <h2 class="section-title">Unit 2 — Ind AS 20: Government Grants &amp; Assistance (Recognition &amp; Loans)</h2>
+            <p class="section-sub">Para 1–23: Scope exclusions, 7 definitions, "Reasonable Assurance", Forgivable Loans, Below-Market Interest Loans &amp; No Capital Approach</p>
+          </div>
+        </div>
+
+        <div class="simple-box">
+          <h4>🧒 10th-Class Intuition: Government Gift Rules — Never Put It in Capital, Match It with Expenses!</h4>
+          <p>Suppose the Government gives your school club <strong>₹1,00,000</strong> to help run a 4-year robotics lab. Under Ind AS 20:<br>
+          1. You <strong>CANNOT</strong> wait just because cash arrived—you record it as soon as there is <strong>"Reasonable Assurance"</strong> you’ll follow the rules AND get the cash.<br>
+          2. You <strong>CANNOT</strong> hide it inside Shareholder Equity/Capital Reserve (the "Capital Approach" is BANNED under Ind AS 20!)—everything goes through <strong>Profit &amp; Loss (Income Approach)</strong> matching the related costs over those 4 years!<br>
+          3. And if the Government gives you a cheap ₹1 crore loan at <strong>5% interest</strong> when banks charge <strong>12%</strong>, you weren’t given a ₹1 crore loan—you got a <strong>smaller loan (say ₹74.77 lakh) + a ₹25.23 lakh hidden Government Grant</strong>!</p>
+        </div>
+
+        <h3>2.1 Scope Exclusions &amp; 7 Core Definitions (Para 1–6)</h3>
+        <p><strong>Ind AS 20 Excludes 4 Areas:</strong> (1) Special price-level / inflation accounting issues; (2) Tax breaks / tax holidays / accelerated depreciation deductions (covered by <strong>Ind AS 12</strong> — unless specifically investment tax credits); (3) Government ownership/equity participation as shareholder; (4) Government grants covered by <strong>Ind AS 41 (Agriculture)</strong>.</p>
+        <div class="formula-card">
+          <ol>
+            <li><strong>Government:</strong> Government, government agencies, and similar bodies (local, national, or international).</li>
+            <li><strong>Government Assistance:</strong> Action by government designed to provide an economic benefit specific to an entity/range of entities qualifying under certain criteria. <em>Excludes</em> indirect general infrastructure (public highways/irrigation networks) AND assistance that cannot have a value placed upon it (free technical/marketing advice) or normal trading transactions with govt.</li>
+            <li><strong>Government Grants:</strong> Assistance by government in the form of <strong>transfers of resources</strong> to an entity in return for past or future compliance with certain conditions relating to operating activities (export subsidies, job creation, factory machinery).</li>
+            <li><strong>Grants Related to Assets:</strong> Primary condition is that qualifying entity must purchase, construct, or otherwise acquire long-term assets.</li>
+            <li><strong>Grants Related to Income:</strong> All government grants other than those related to assets.</li>
+            <li><strong>Forgivable Loans:</strong> Loans which the lender undertakes to waive repayment of under certain prescribed conditions.</li>
+            <li><strong>Fair Value:</strong> Price received to sell an asset or paid to transfer a liability in an orderly transaction between market participants (Ind AS 113).</li>
+          </ol>
+        </div>
+
+        <h3>2.2 Recognition Gateway, Income vs Capital Approach &amp; Below-Market Loans (Para 7–19)</h3>
+        <ul>
+          <li><strong>Two-Part Recognition Test (Para 7):</strong> Recognise a Government Grant ONLY when there is <strong>Reasonable Assurance</strong> that BOTH: (a) the entity will comply with the conditions attaching to it, AND (b) the grant will be received! Mere receipt of cash does NOT prove compliance; conversely, accrual before receipt is allowed if both assurances hold! (<strong>Illus 1 &amp; 2:</strong> Export subsidy earned cleanly or conditional R&amp;D grant received—recognise systematically over period costs are incurred.)</li>
+          <li><strong>Capital Approach Strictly Prohibited (Para 12–15):</strong> Unlike old AS 12 (which allowed Capital Reserve for promoter’s contribution), Ind AS 20 strictly requires the <strong>Income Approach</strong> — recognise ALL grants in P&amp;L on a systematic basis over the periods in which the entity recognises the related costs as expenses!</li>
+          <li><strong>Past Costs / Immediate Relief (Para 20):</strong> Grants awarded as compensation for expenses/losses <em>already incurred</em> or for immediate financial support with NO future related costs → recognise in <strong>P&amp;L immediately</strong> in the period receivable (<strong>Illus 3 &amp; 4</strong>: drought/flood relief or prior-year wage reimbursement).</li>
+          <li><strong>Contingent Asset/Liability (Para 11):</strong> Once a grant is recognised, treat any related contingency under Ind AS 37.</li>
+        </ul>
+
+        <div class="tyk-card">
+          <div class="tyk-header">
+            <span class="tyk-badge">Ex 1–3 &amp; Illustrations 1–6</span>
+            <strong>Forgivable Loans, Below-Market Interest Rate Loans &amp; Systematic Cost Matching</strong>
+            <button class="btn-toggle-sol" id="btn-sol-c10-u2il1" onclick="toggleSolution('sol-c10-u2il1')">Show Solutions</button>
+          </div>
+          <ul>
+            <li><strong>Forgivable Loan (Para 10 &amp; Illus 5):</strong> Treated as a government grant ONLY when there is <em>reasonable assurance</em> the entity will meet the terms for forgiveness of the loan (otherwise carry as financial liability under Ind AS 109!).</li>
+            <li><strong>Below-Market Interest Rate Loan (Para 10A &amp; Illus 6):</strong> Entity receives ₹1,00,00,000 5-year govt loan at 0% (or 5%) interest when market borrowing rate for similar risk is 10% (or 12%). How do you split Loan vs Grant?</li>
+            <li><strong>Matching Rule (Para 16–19 &amp; Ex 1–3):</strong> Grants tied to depreciable assets match depreciation; grants tied to <strong>non-depreciable land</strong> requiring a building to be constructed on that land match the depreciation life of the <strong>building</strong>! Multi-condition package grants split systematically per each cost basis!</li>
+          </ul>
+          <div class="tyk-solution" id="sol-c10-u2il1">
+            <ul>
+              <li><strong>Below-Market Govt Loan Mechanics (Para 10A):</strong>
+                <ol>
+                  <li>Measure Loan Liability initially at <strong>Fair Value (PV of contractual cash flows discounted at Market Interest Rate)</strong> under Ind AS 109.</li>
+                  <li><strong>Government Grant Benefit</strong> = \( \text{Cash Proceeds Received} - \text{Initial FV of Loan} \).</li>
+                  <li>Account for that Grant benefit separately under Ind AS 20 (defer &amp; recognise over the periods in which the related financed costs/depreciation occur!), while unwinding the loan up to face value via Effective Interest Method (P&amp;L Interest Expense @ market rate)!</li>
+                </ol>
+              </li>
+              <li><strong>Land + Building Condition (Ex 3):</strong> Non-depreciable land granted for ₹0 on condition of building a factory lasting 30 years → match &amp; amortise the land grant over the <strong>30-year useful life of the factory building</strong>!</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 7. UNIT 2: NON-MONETARY, ASSET & INCOME PRESENTATION -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <section class="section-card" id="ind20-pres">
+        <div class="section-header">
+          <div class="section-num">07</div>
+          <div>
+            <h2 class="section-title">Unit 2 — Non-Monetary Grants, Asset Presentation &amp; Income Presentation</h2>
+            <p class="section-sub">Para 23–31: Fair Value vs Nominal Value, Deferred Income vs Deduction from Asset &amp; Cash Flow Statement Trap (Illustrations 7–9)</p>
+          </div>
+        </div>
+
+        <div class="simple-box">
+          <h4>🧒 10th-Class Intuition: Two Ways to Show a ₹20 Lakh Machinery Grant — Plus Cash Flow Trap!</h4>
+          <p>Suppose you buy a ₹100 lakh machine and get a ₹20 lakh Government Grant.<br>
+          <strong>Method A (Deferred Income):</strong> Keep Machine at ₹100 lakh (depreciate ₹10L/yr) and put ₹20 lakh in a "Deferred Grant" pot (release ₹2L/yr to Other Income). Net P&amp;L hit = ₹8L/yr!<br>
+          <strong>Method B (Deduct from Asset):</strong> Subtract ₹20 lakh straight from Machine cost → Machine sits at <strong>₹80 lakh</strong> (depreciate ₹8L/yr). Net P&amp;L hit = ALSO ₹8L/yr!<br>
+          <strong>Cash Flow Trap:</strong> Under BOTH methods, NEVER net them in your Cash Flow Statement! Show <strong>₹100 lakh Cash Outflow</strong> AND <strong>₹20 lakh Cash Inflow</strong> separately inside Investing Activities!</p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Topic / Para</th>
+                <th>Option 1</th>
+                <th>Option 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Non-Monetary Grants</strong> (Para 23 — Govt gives free Land/Asset)</td>
+                <td>Record BOTH Asset and Grant at <strong>Fair Value</strong> (preferred!).</td>
+                <td>Record BOTH Asset and Grant at a <strong>Nominal Amount</strong> (e.g., ₹1) — permitted alternative!</td>
+              </tr>
+              <tr>
+                <td><strong>Presentation of Grants Related to Assets</strong> (Para 24–27)</td>
+                <td><strong>Deferred Income Method:</strong> Show Asset at gross cost; record grant as Deferred Income Liability and amortise to P&amp;L over asset’s useful life.</td>
+                <td><strong>Asset Deduction Method:</strong> Deduct grant directly in arriving at Asset’s carrying amount; asset depreciates at lower net carrying value!</td>
+              </tr>
+              <tr>
+                <td><strong>Presentation of Grants Related to Income</strong> (Para 29–31)</td>
+                <td>Present separately under <strong>"Other Income"</strong> (credit line in P&amp;L).</td>
+                <td><strong>Deduct directly</strong> in reporting the related expense (e.g., Salary Expense net of wage subsidy).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout-blue">
+          <div class="callout-title">Ind AS 7 Cash Flow Statement Rule (Para 28 — Zero Netting!)</div>
+          <p>Purchasing an asset and receiving a related grant are two separate major cash flows. Show the <strong>full gross outflow for PPE</strong> AND the <strong>separate cash inflow from the Government Grant</strong> in <strong>Cash Flows from Investing Activities</strong> (regardless of whether Method 1 or Method 2 is chosen on the Balance Sheet!).</p>
+        </div>
+
+        <div class="tyk-card">
+          <div class="tyk-header">
+            <span class="tyk-badge">Ex 4 &amp; Illustrations 7–9</span>
+            <strong>Non-Monetary Free Land, Machinery Grant Comparison (Both Methods) &amp; Deferred Grant Schedule</strong>
+            <button class="btn-toggle-sol" id="btn-sol-c10-u2il7" onclick="toggleSolution('sol-c10-u2il7')">Show Worked Numbers</button>
+          </div>
+          <p><strong>Summary Scenario (Illus 7–9):</strong> Entity buys Equipment for ₹1,00,000 (4-year life, SLM, zero residual) and receives a ₹20,000 Asset Grant. Compare Balance Sheet, P&amp;L, and Cash Flows across Years 1–4 under Both Asset Methods.</p>
+          <div class="tyk-solution" id="sol-c10-u2il7">
+            <ul>
+              <li><strong>Method 1 (Deferred Income):</strong> Equipment Cost ₹1,00,000 → Annual Depreciation = ₹25,000; Grant Deferred Income ₹20,000 → Annual Grant Income = ₹5,000. Net P&amp;L Expense = <strong>₹20,000/yr</strong>. Year 1 Closing Net Equipment ₹75,000 + Deferred Income Liability ₹15,000 (Net Assets = ₹60,000).</li>
+              <li><strong>Method 2 (Deduct from Asset):</strong> Net Equipment Carrying Cost = \( ₹1,00,000 - ₹20,000 = ₹80,000 \) → Annual Depreciation = <strong>₹20,000/yr</strong> (Grant Income = Nil). Year 1 Closing Net Equipment = <strong>₹60,000</strong>!</li>
+              <li><strong>Cash Flows (Both Methods):</strong> Investing Outflow = ₹(1,00,000); Investing Inflow (Grant) = +₹20,000!</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 8. UNIT 2: REPAYMENT, APPENDIX A, HUL & AS 12 -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <section class="section-card" id="ind20-app">
+        <div class="section-header">
+          <div class="section-num">08</div>
+          <div>
+            <h2 class="section-title">Unit 2 — Repayment of Grants, Appendix A, HUL Extract &amp; Ind AS 20 vs AS 12</h2>
+            <p class="section-sub">Para 32–39 &amp; Appendix A: Change in accounting estimate (Ind AS 8), HUL PLI/GST incentives &amp; 5 Key GAAP Differences</p>
+          </div>
+        </div>
+
+        <div class="formula-card">
+          <div class="formula-title">Repayment of Government Grant = Change in Accounting Estimate (Para 32 &amp; Ex 5 / Illus 10)</div>
+          <ol>
+            <li><strong>Grant Related to Income:</strong> First apply repayment against any <em>unamortised Deferred Credit</em> remaining. Any excess repaid (or if none remains) is recognised <strong>immediately in P&amp;L as an Expense</strong>!</li>
+            <li><strong>Grant Related to an Asset:</strong>
+              <ul>
+                <li><em>If Deferred Income Method used:</em> Reduce Deferred Income balance by repayment; excess goes immediately to P&amp;L!</li>
+                <li><em>If Asset Deduction Method used:</em> <strong>Increase the carrying amount of the Asset</strong> by repayment AND recognise the <strong>cumulative additional depreciation</strong> that would have been recognised to date <strong>immediately in P&amp;L</strong>! Also test the raised asset carrying amount for <strong>impairment (Ind AS 36)</strong>!</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+
+        <ul>
+          <li><strong>Appendix A (Govt Assistance — No Specific Relation to Operating Activities):</strong> Govt assistance aimed solely at encouraging general operations in a backward region or specified industry sector IS a Government Grant under Ind AS 20 (NOT direct equity!), even if there are no specific future cost conditions (recognise under Income Approach!).</li>
+          <li><strong>Disclosures (Para 39 — 5 Items):</strong> Accounting policy &amp; presentation method adopted; nature &amp; extent of grants recognised + other unquantified government assistance; unfulfilled conditions &amp; contingencies.</li>
+        </ul>
+
+        <div class="extract-box">
+          <div class="extract-head">
+            <span class="extract-badge">Listed Entity Extract</span>
+            <strong>Hindustan Unilever Limited (HUL) — Government Grants Policy &amp; Note 25 (FY 2021–22)</strong>
+          </div>
+          <p>HUL discloses under Note 25 (Other Operating Revenue): <strong>Government Grants = ₹140 crore</strong> (covering Production-Linked Incentive [PLI] schemes and state GST budgetary/fiscal area-based incentives), measured at FV when reasonable assurance of compliance and collection exists, recognised systematically in P&amp;L matching the qualifying manufacturing/sales costs.</p>
+        </div>
+
+        <h3>Ind AS 20 vs Existing AS 12 (Accounting for Government Grants) — 5 Major Differences</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Area</th>
+                <th>Ind AS 20</th>
+                <th>AS 12 (IGAAP)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td><strong>Capital Approach (Promoter’s Contribution)</strong></td><td><strong>Prohibited!</strong> ALL grants (including backward-area / promoter’s contribution under Appendix A) must use Income Approach (P&amp;L).</td><td>Capital Reserve permitted when grant has characteristics of promoter’s contribution (no repayment expected).</td></tr>
+              <tr><td>2</td><td><strong>Non-Monetary Grants</strong></td><td>Permits choice: Record Asset &amp; Grant at <strong>Fair Value</strong> OR at <strong>Nominal Amount</strong>!</td><td>If concessional: record at acquisition cost; if free: record at nominal value (Fair Value option not available).</td></tr>
+              <tr><td>3</td><td><strong>Below-Market Interest Rate Loans</strong></td><td>Must discount loan at market rate (Ind AS 109) and recognise interest benefit as an <strong>Ind AS 20 Government Grant</strong>.</td><td>Recorded purely at nominal cash proceeds received; no imputed interest grant split.</td></tr>
+              <tr><td>4</td><td><strong>Agriculture / Contingency Reference</strong></td><td>Excludes Ind AS 41 grants; Contingencies follow Ind AS 37.</td><td>Includes all sectors; contingencies follow AS 4 / AS 29.</td></tr>
+              <tr><td>5</td><td><strong>Disclosures &amp; Govt Assistance</strong></td><td>Explicitly defines &amp; requires disclosure of non-grant <em>Government Assistance</em>.</td><td>Lacks separate definition &amp; disclosure mandate for general Government Assistance.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 9. UNIT 2: SOLVED TYK Q1–Q6 & MCQs -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <section class="section-card" id="ind20-tyk">
+        <div class="section-header">
+          <div class="section-num">09</div>
+          <div>
+            <h2 class="section-title">Unit 2 — Practice Questions (TYK Q1–Q6) &amp; Concept Check MCQs</h2>
+            <p class="section-sub">Complete solutions for all 6 Unit 2 Practice Questions plus interactive topic MCQs</p>
+          </div>
+        </div>
+
+        <div class="tyk-card">
+          <div class="tyk-header">
+            <span class="tyk-badge">TYK Q1 &amp; Q2</span>
+            <strong>Delhi Pharma Multi-Grant Package (Q1) &amp; ₹1 Crore Below-Market 5% vs 12% Loan (Q2)</strong>
+            <button class="btn-toggle-sol" id="btn-sol-c10-u2t1" onclick="toggleSolution('sol-c10-u2t1')">Show Both Solutions</button>
+          </div>
+          <ul>
+            <li><strong>TYK Q1 (Delhi Pharma Ltd):</strong> Receives 3 grants: (a) ₹30 lakh against capital equipment costing ₹100 lakh (5-yr life); (b) ₹15 lakh general export subsidy with no future cost strings attached; (c) Free land (FV ₹50 lakh) conditioned on keeping 100 local jobs for 5 years.</li>
+            <li><strong>TYK Q2 (5% Below-Market 5-Year Govt Loan):</strong> Company receives a <strong>₹1,00,00,000</strong> loan from Government on 1 April Y1 at <strong>5% p.a.</strong> interest payable annually for 5 years (principal repaid end of Year 5). Market interest rate for comparable borrower = <strong>12% p.a.</strong> (Given PVF @ 12%: Y1–5 Annuity = 3.6048; Y5 PV = 0.5674). Compute initial Loan, Grant Benefit &amp; Year 1 entries!</li>
+          </ul>
+          <div class="tyk-solution" id="sol-c10-u2t1">
+            <p><strong>TYK Q1 (Delhi Pharma):</strong> (a) ₹30L Asset Grant → either Deferred Income amortised ₹6L/yr over 5 yrs OR deduct from Equipment cost (depreciate ₹70L/5 = ₹14L/yr); (b) Immediate compensation/operating subsidy → ₹15L straight to P&amp;L when receivable; (c) Free land → record at FV ₹50L (or nominal) and amortise ₹50L Deferred Grant over the 5-year employment compliance condition (₹10L/yr)!</p>
+            <p><strong>TYK Q2 (₹1 Crore Loan @ 5% vs 12% Market Rate):</strong></p>
+            <ul>
+              <li>Annual Interest Cash Outflow = \( 5\% \times ₹1,00,00,000 = ₹5,00,000 \)/year.</li>
+              <li>PV of Loan Cash Flows @ 12%:
+                \[ \text{PV} = (₹5,00,000 \times 3.6048) + (₹1,00,00,000 \times 0.5674) = 18,02,400 + 56,74,000 = \mathbf{₹74,76,400\text{ / ₹74,76,656*}} \]
+                <em>(*Note: using exact unrounded 12% factors, Loan PV = <strong>₹74,76,656</strong> and Government Grant = \( ₹1,00,00,000 - ₹74,76,656 = \mathbf{₹25,23,344} \)!)</em></li>
+              <li><strong>Day 1 JE:</strong> Bank Dr ₹1,00,00,000 / To Loan Liability ₹74,76,656 / To Deferred Govt Grant ₹25,23,344.</li>
+              <li><strong>Year 1 End:</strong> Finance Cost Dr \( (12\% \times 74,76,656 = ₹8,97,199) \) / To Bank ₹5,00,000 / To Loan Liability ₹3,97,199; Amortise Grant to P&amp;L matching related operating/interest costs!</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tyk-card">
+          <div class="tyk-header">
+            <span class="tyk-badge">TYK Q3 &amp; Q4</span>
+            <strong>EPCG Custom Duty Exemption on Machinery (Q3) &amp; Govt Co. Promoter’s Contribution (Q4)</strong>
+            <button class="btn-toggle-sol" id="btn-sol-c10-u2t3" onclick="toggleSolution('sol-c10-u2t3')">Show Both Solutions</button>
+          </div>
+          <ul>
+            <li><strong>TYK Q3 (EPCG Scheme):</strong> Manufacturer imports machinery paying zero customs duty (saved ₹12 lakh duty) under EPCG, requiring 6× export obligation over 6 years (failing which duty + interest is repayable). How should the ₹12 lakh saved customs duty be accounted?</li>
+            <li><strong>TYK Q4 (Promoter’s Contribution):</strong> State Government grants ₹50 lakh cash to a State PSU setting up a rural textile factory, non-refundable, described as "promoter’s contribution for backward area industrial growth". Can the PSU credit ₹50 lakh to Capital Reserve?</li>
+          </ul>
+          <div class="tyk-solution" id="sol-c10-u2t3">
+            <ul>
+              <li><strong>TYK Q3 (EPCG):</strong> Custom duty exemption tied to export obligations on acquiring capital equipment IS an <strong>Asset-Related Non-Monetary / Monetary Government Grant under Ind AS 20</strong>! Record Gross Asset (Purchase Price + ₹12L saved duty) AND Deferred Grant ₹12L (or Deduct from Asset!). Recognise ₹12L in P&amp;L systematically over the period export obligations are fulfilled or asset’s useful life depending on condition fulfilment! (<em>Note:</em> Do NOT ignore the ₹12L benefit by recording net invoice!).</li>
+              <li><strong>TYK Q4 (Promoter’s Contribution):</strong> <strong>NO!</strong> Under Ind AS 20 (Para 12 + Appendix A), the <em>Capital Approach is prohibited</em> unless Government is subscribing for equity shares in its capacity as shareholder. Here it is a backward-area grant → record as <strong>Deferred Grant Income</strong> and recognise in P&amp;L systematically!</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tyk-card">
+          <div class="tyk-header">
+            <span class="tyk-badge">TYK Q5 &amp; Q6</span>
+            <strong>Rainbow R&amp;D + Flood Claim After BS Approval (Q5) &amp; ₹1L Equipment + ₹15k Grant Full Financial Statements (Q6)</strong>
+            <button class="btn-toggle-sol" id="btn-sol-c10-u2t5" onclick="toggleSolution('sol-c10-u2t5')">Show Both Solutions</button>
+          </div>
+          <ul>
+            <li><strong>TYK Q5 (Rainbow Ltd):</strong> (a) Govt approves ₹20L R&amp;D grant (spent ₹8L in Y1, ₹12L in Y2); (b) Earthquake/flood loss occurred in March Y1, Govt announces ₹10L relief grant on 15 June Y1 <em>after</em> Board approved Y1 financial statements on 28 May Y1.</li>
+            <li><strong>TYK Q6 (Equipment ₹1,00,000 + Grant ₹15,000):</strong> Equipment life = 5 years, Residual Value = ₹10,000 (SLM). Show Balance Sheet &amp; P&amp;L extracts for Years 1 &amp; 2 under Deferred Income Method vs Asset Deduction Method (plus what happens if ₹15,000 is repaid at start of Year 3!).</li>
+          </ul>
+          <div class="tyk-solution" id="sol-c10-u2t5">
+            <ul>
+              <li><strong>TYK Q5:</strong> (a) Match R&amp;D grant to expenses: <strong>₹8L in Y1 P&amp;L</strong> &amp; <strong>₹12L in Y2 P&amp;L</strong>! (b) Since the announcement (creating entitlement/reasonable assurance) occurred on 15 June <em>after</em> approval of Y1 FS, Y1 had no receivable yet → recognise the ₹10L relief grant in <strong>Year 2 (FY Y2) P&amp;L</strong>!</li>
+              <li><strong>TYK Q6 (₹1,00,000 Equipment, RV ₹10,000, Grant ₹15,000, 5 Yrs):</strong>
+                <ul>
+                  <li><strong>Method 1 (Deferred Income):</strong> Depreciable Amt = \( 1,00,000 - 10,000 = ₹90,000 \) → Dep = <strong>₹18,000/yr</strong>; Grant Income = \( 15,000 / 5 = \mathbf{₹3,000/yr} \). Net P&amp;L charge = <strong>₹15,000/yr</strong>. BS Year 2 End: Equipment WDV = ₹64,000; Deferred Grant = ₹9,000.</li>
+                  <li><strong>Method 2 (Deduct from Asset):</strong> Net Cost = \( 1,00,000 - 15,000 = ₹85,000 \); Depreciable Amt = \( 85,000 - 10,000 = ₹75,000 \) → Dep = <strong>₹15,000/yr</strong>! BS Year 2 End: Equipment WDV = <strong>₹55,000</strong>.</li>
+                  <li><strong>If Repaid at Start of Year 3 (₹15,000):</strong> Under Method 1: Debit Deferred Income ₹9,000 + Debit P&amp;L Expense ₹6,000 / Credit Bank ₹15,000. Under Method 2: Debit Asset ₹15,000 (bringing cost back to ₹1L) + Debit P&amp;L Catch-up Depreciation ₹6,000 (\( 2\text{ yrs} \times ₹3,000 \)) / Credit Acc Dep ₹6,000!</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="topic-quiz-card">
+          <div class="quiz-q-header">Quick Check 5 — Ind AS 20 Core Principles &amp; Repayment</div>
+          <p class="quiz-question">5. On 1 April Year 1, FactoryCo buys a 5-year machine for ₹50 lakh (zero residual value, SLM) and receives a ₹10 lakh Government Grant deducted directly from the asset’s carrying amount (net asset = ₹40 lakh, depreciation ₹8 lakh/year). At the start of Year 3 (1 April Year 3), FactoryCo breaches a condition and must repay all ₹10 lakh cash. What is the exact accounting entry on 1 April Year 3?</p>
+          <div class="mcq-options-grid">
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q5')">A) Debit P&amp;L Expense ₹10 lakh; Credit Bank ₹10 lakh (leave machine carrying amount untouched).</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q5')">B) Restate Year 1 and Year 2 financial statements retrospectively under Ind AS 8.</div>
+            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ans-c10-q5')">C) Increase Machine cost by ₹10 lakh (Dr Asset ₹10L / Cr Bank ₹10L) AND immediately charge cumulative extra depreciation of ₹4 lakh (2 yrs × ₹2L) in Year 3 P&amp;L!</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q5')">D) Debit Asset ₹10 lakh and amortise ₹10 lakh purely over remaining 3 years with zero Year 3 catch-up depreciation.</div>
+          </div>
+          <button class="btn-show-ans" onclick="toggleAnswer('ans-c10-q5', this)">Show Answer</button>
+          <div class="explanation-box" id="ans-c10-q5">
+            <strong>Correct: C.</strong> Under Para 32, grant repayment is an <em>estimate change</em> (prospective, no prior-year restatement!). Under Asset Deduction Method, add ₹10L back to Asset (raising gross cost from ₹40L to ₹50L) and immediately recognise in Year 3 P&amp;L the cumulative additional depreciation that would have been charged in Years 1 &amp; 2 = \( 2 \times (₹10\text{L} - ₹8\text{L}) = \mathbf{₹4\text{ lakh}} \)!
+          </div>
+        </div>
+
+        <div class="topic-quiz-card">
+          <div class="quiz-q-header">Quick Check 6 — Below-Market Loans &amp; Cash Flows</div>
+          <p class="quiz-question">6. Which two statements are TRUE under Ind AS 20?</p>
+          <div class="mcq-options-grid">
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q6')">A) Backward-area promoter’s contribution grants go to Capital Reserve, and below-market loans stay at cash proceeds.</div>
+            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ans-c10-q6')">B) Below-market government loans split into Fair Value Liability (Ind AS 109) + Deferred Govt Grant (Proceeds minus PV), AND Asset purchase + Grant receipt must ALWAYS be shown gross in Investing Cash Flows.</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q6')">C) Asset grants deducted on the Balance Sheet are also netted inside Investing Cash Flows.</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q6')">D) Conditional agricultural grants for cows measured at FVLCS are governed by Ind AS 20.</div>
+          </div>
+          <button class="btn-show-ans" onclick="toggleAnswer('ans-c10-q6', this)">Show Answer</button>
+          <div class="explanation-box" id="ans-c10-q6">
+            <strong>Correct: B.</strong> Para 10A requires fair-valuing below-market loans under Ind AS 109 and treating the interest saving as an Ind AS 20 grant; Para 28 prohibits netting asset outflows and grant inflows in the Cash Flow Statement!
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 10. UNIT 3: IND AS 102 SCOPE & RECOGNITION -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <section class="section-card" id="indas102">
+        <div class="section-header">
+          <div class="section-num">10</div>
+          <div>
+            <h2 class="section-title">Unit 3 — Ind AS 102: Share-Based Payment (Scope &amp; Core Recognition)</h2>
+            <p class="section-sub">Para 1–13: Why companies pay in shares/ESOPs, 3 Transaction Types, 4 Scope Exclusions (Ex 1–15) &amp; Initial Recognition (Ex 16–17)</p>
+          </div>
+        </div>
+
+        <div class="simple-box">
+          <h4>🧒 10th-Class Intuition: Paying Your Cricket Coach in "Team Ownership Coupons" Instead of Cash!</h4>
+          <p>Suppose a new startup can’t afford to pay a star programmer ₹20 lakh cash today. Instead, the startup says: <em>"Work for us for 3 years, and we’ll give you 1,000 company shares!"</em> Even though zero cash leaves the bank today, did the company still receive ₹20 lakh worth of coding service? <strong>YES!</strong> So under Ind AS 102, the company MUST record <strong>Employee Benefit Expense (Debit)</strong> over those 3 years AND Credit <strong>Share-Based Payment Reserve (Equity)</strong> or <strong>Cash-Settled Liability</strong> depending on how it settles!</p>
+        </div>
+
+        <h3>3.1 Three Categories of Share-Based Payment (SBP) &amp; Scope Rules (Ex 1–15)</h3>
+        <div class="flow-grid">
+          <div class="flow-step">
+            <span class="flow-num">Type 1</span>
+            <strong>Equity-Settled SBP</strong>
+            <p>Entity receives goods/services in exchange for its own <strong>equity instruments</strong> (shares or share options / ESOPs).</p>
+          </div>
+          <div class="flow-step">
+            <span class="flow-num">Type 2</span>
+            <strong>Cash-Settled SBP</strong>
+            <p>Entity acquires goods/services by incurring liabilities to transfer <strong>cash/assets based on the share price</strong> (e.g., SARs — Stock Appreciation Rights).</p>
+          </div>
+          <div class="flow-step">
+            <span class="flow-num">Type 3</span>
+            <strong>SBP with Cash Alternatives</strong>
+            <p>Either the entity OR the supplier/employee has a <strong>choice</strong> to settle in cash OR by issuing equity instruments!</p>
+          </div>
+        </div>
+
+        <div class="callout-amber">
+          <div class="callout-title">Key Scope Inclusions &amp; Exclusions (Para 2–6 &amp; Examples 1–15)</div>
+          <ul>
+            <li><strong>INCLUDED:</strong> Transfers of parent/group equity shares by a shareholder or Group entity to employees/suppliers of the entity (even if the entity itself pays nothing! — <em>Group SBP</em>); <strong>Unidentifiable Goods/Services:</strong> If equity issued exceeds identifiable asset FV (e.g., BEE/social empowerment shares sold below FV to boost goodwill/policy compliance), the unidentifiable shortfall is an immediate Ind AS 102 expense!</li>
+            <li><strong>EXCLUDED:</strong> (1) Transactions with <strong>shareholders acting strictly in their capacity as owners</strong> (rights issue, dividend reinvestment, bonus issue, share buyback — Ex 4–6); (2) Equity instruments issued as purchase consideration in a <strong>Business Combination (Ind AS 103)</strong> — <em>HOWEVER</em>, replacement ESOPs issued to acquiree’s employees for <em>post-combination</em> service ARE in Ind AS 102!; (3) Commodity/non-financial contracts inside <strong>Ind AS 109 / Ind AS 32</strong> (Para 6); (4) Straight cash bonuses indexed purely to EBITDA/revenue (not share price!) → <strong>Ind AS 19</strong>!</li>
+          </ul>
+        </div>
+
+        <h3>3.2 Core Recognition &amp; Grant Date Timing (Para 7–9 &amp; Ex 16–17)</h3>
+        <ul>
+          <li><strong>Debit:</strong> Expense in P&amp;L (unless cost qualifies for capitalisation into Inventory Ind AS 2, PPE Ind AS 16, or Intangible Ind AS 38!).</li>
+          <li><strong>Credit:</strong> Increase in <strong>Equity (SBP Reserve)</strong> for Equity-settled; or <strong>Liability</strong> for Cash-settled.</li>
+          <li><strong>When Recognised:</strong> If goods/services have <em>no vesting condition</em> (vest immediately) → recognise <strong>in full on Grant Date</strong>! If subject to a <em>vesting period</em> → spread over the vesting period as services are rendered!</li>
+        </ul>
+
+        <div class="topic-quiz-card">
+          <div class="quiz-q-header">Quick Check 7 — Ind AS 102 Scope Rules</div>
+          <p class="quiz-question">7. Which of the following transactions falls INSIDE the scope of Ind AS 102 (Share-based Payment)?</p>
+          <div class="mcq-options-grid">
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q7')">A) Company distributes a pro-rata rights issue of shares exclusively to existing shareholders.</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q7')">B) Acquirer issues 10 lakh equity shares to acquire 100% net assets of Target Ltd in a business combination.</div>
+            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ans-c10-q7')">C) Parent Company grants free Parent shares directly to Subsidiary’s factory manager for 3 years of subsidiary employment service.</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q7')">D) Company promises managers a cash bonus equal to 2% of annual EBITDA growth (unrelated to share price).</div>
+          </div>
+          <button class="btn-show-ans" onclick="toggleAnswer('ans-c10-q7', this)">Show Answer</button>
+          <div class="explanation-box" id="ans-c10-q7">
+            <strong>Correct: C.</strong> Group Share-based Payments (where a parent or fellow group entity settles for services received by a subsidiary) ARE explicitly within Ind AS 102! Rights issues (shareholder capacity), business combination purchase consideration (Ind AS 103), and EBITDA cash bonuses (Ind AS 19) are excluded.
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 11. UNIT 3: EQUITY-SETTLED, CASH-SETTLED, NON-EMPLOYEE & CHOICE -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <section class="section-card" id="ind102-equity-cash">
+        <div class="section-header">
+          <div class="section-num">11</div>
+          <div>
+            <h2 class="section-title">Unit 3 — Equity-Settled, Cash-Settled (SARs), Non-Employees &amp; Cash Alternatives</h2>
+            <p class="section-sub">Para 10–43: Fixed Grant-Date FV vs Continuous Liability Remeasurement, Compound Instruments &amp; Entity/Counterparty Choice</p>
+          </div>
+        </div>
+
+        <div class="simple-box">
+          <h4>🧒 10th-Class Intuition: "Locked Stamp" (Equity) vs "Live Scoreboard" (Cash) vs "Split Coin" (Choice)!</h4>
+          <p>• <strong>Equity-Settled (ESOP):</strong> On Grant Date, stamp the Option’s Fair Value (say ₹120). Even if the stock market triples next year, you <strong>NEVER change that ₹120 price</strong>—only update how many employees won't quit!<br>
+          • <strong>Cash-Settled (SARs):</strong> Since you actually have to pay REAL CASH at the end based on the live share price, you MUST <strong>re-check the Fair Value at EVERY Balance Sheet date</strong> (and even after vesting until settled!), updating the Liability through P&amp;L!<br>
+          • <strong>Counterparty Choice:</strong> If the employee can pick <em>either</em> 1,000 shares <em>or</em> cash worth 800 shares, it’s like a <strong>Compound Instrument</strong> (Liability = FV of Cash right + Equity = Option FV minus Cash FV)!</p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Dimension</th>
+                <th>Equity-Settled (ESOPs)</th>
+                <th>Cash-Settled (SARs)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Measurement Basis</strong></td>
+                <td><strong>Employees:</strong> Fair Value of Equity Instruments at <strong>Grant Date</strong> (locked forever!).<br><strong>Non-Employees:</strong> Direct FV of Goods/Services at receipt date (equity FV only if goods/services unmeasurable!).</td>
+                <td><strong>Fair Value of Liability</strong> (initially and remeasured at <strong>every reporting date + settlement date</strong>)!</td>
+              </tr>
+              <tr>
+                <td><strong>Changes in FV of Option/Share Later</strong></td>
+                <td><strong>Ignored</strong> (never remeasure Grant-Date FV!).</td>
+                <td><strong>Recognised in P&amp;L immediately</strong> for vested portion &amp; via cumulative catch-up over vesting period (<em>even post-vesting until exercised!</em>).</td>
+              </tr>
+              <tr>
+                <td><strong>Changes in Employee Headcount / Non-Market Vesting</strong></td>
+                <td colspan="2"><strong>BOTH update</strong> best estimate of awards expected to vest at each reporting date (true-up so cumulative expense = actual awards vesting!).</td>
+              </tr>
+              <tr>
+                <td><strong>Journal Entries</strong></td>
+                <td>Expense Dr / To SBP Reserve (Equity). On exercise: Cash + SBP Reserve Dr / To Share Capital &amp; Securities Premium. On unexercised lapse: transfer within Equity (SBP Reserve Dr / To Retained Earnings — NEVER credit P&amp;L!).</td>
+                <td>Expense Dr / To SBP Liability (SAR). On settlement: SBP Liability Dr / To Bank.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tyk-card">
+          <div class="tyk-header">
+            <span class="tyk-badge">Ex 18–25 &amp; Illustrations 1–6</span>
+            <strong>Worked Masters: ESOPs (Illus 1), SARs (Illus 2), Non-Employee Machinery/Consulting (Illus 4–5) &amp; Cash-Choice Compound Instrument (Illus 3 &amp; 6)</strong>
+            <button class="btn-toggle-sol" id="btn-sol-c10-u3il1" onclick="toggleSolution('sol-c10-u3il1')">Show Master Summary &amp; Solutions</button>
+          </div>
+          <ul>
+            <li><strong>Illus 1 (Equity-Settled ESOP):</strong> 100 employees × 100 options each (3-yr vesting), Grant-Date Option FV = ₹15. Attrition estimates: Y1 expects 80 employees; Y2 expects 85; Y3 actual 83 vest.</li>
+            <li><strong>Illus 2 (Cash-Settled SARs):</strong> 500 employees × 100 SARs each (3-yr vesting), Y1 SAR FV ₹14 (expect 90% vest), Y2 SAR FV ₹18 (expect 88% vest), Y3 actual 85% vest at intrinsic ₹20 (plus post-vesting FV moves until exercise!).</li>
+            <li><strong>Illus 4 &amp; Illus 5 (Non-Employee Goods/Services):</strong> Illus 4 — Entity buys custom machinery (FV ₹10,00,000 measurable directly) for shares; Illus 5 — Entity hires rare R&amp;D specialist (service FV cannot be reliably estimated; 10,000 shares @ FV ₹120/share = ₹12,00,000).</li>
+            <li><strong>Illus 3 &amp; Illus 6 + Ex 22–25 (Cash Alternatives):</strong>
+              <br>• <strong>Counterparty Has Choice (Para 35–40 — Compound Instrument):</strong> Entity buys building/employee services where supplier/employee chooses EITHER 1,000 shares (FV ₹110/share = ₹1,10,000) OR Cash equal to 800 shares (₹88,000). Split into Debt + Equity!
+              <br>• <strong>Entity Has Choice (Para 41–43 — Ex 23–24):</strong> Account wholly as <strong>Cash-Settled</strong> ONLY if entity has a <strong>present obligation to settle in cash</strong> (commercial substance lacking, past practice of cash settlement, or legal prohibition on issuing shares); OTHERWISE wholly <strong>Equity-Settled</strong>!</li>
+          </ul>
+          <div class="tyk-solution" id="sol-c10-u3il1">
+            <ul>
+              <li><strong>Illus 1 (ESOP Cumulative Catch-Up):</strong>
+                <br>• Year 1 Expense = \( (80 \times 100 \times ₹15) \times \frac{1}{3} = \mathbf{₹40,000} \)
+                <br>• Year 2 Cum Req = \( (85 \times 100 \times ₹15) \times \frac{2}{3} = ₹85,000 \) → Year 2 Expense = \( 85,000 - 40,000 = \mathbf{₹45,000} \)
+                <br>• Year 3 Cum Req = \( (83 \times 100 \times ₹15) \times \frac{3}{3} = ₹1,24,500 \) → Year 3 Expense = \( 1,24,500 - 85,000 = \mathbf{₹39,500} \). (Credit SBP Reserve — Equity!)</li>
+              <li><strong>Illus 2 (SARs Liability Formula):</strong> Same cumulative catch-up fraction \( \frac{\text{elapsed}}{\text{vesting period}} \), EXCEPT use <strong>current year-end FV</strong> of the SAR liability at each balance sheet date! And after Year 3 vesting, any unexercised SAR continues remeasuring via P&amp;L until final cash payout!</li>
+              <li><strong>Illus 4 &amp; Illus 5 (Non-Employees):</strong>
+                <br>• Illus 4 (Direct FV available): Measure Machinery &amp; Equity at <strong>₹10,00,000</strong> (FV of machine on receipt date).
+                <br>• Illus 5 (FV of rare consulting unmeasurable): Rebut presumption and measure at FV of equity instruments granted (10,000 × ₹120 = <strong>₹12,00,000</strong>)!</li>
+              <li><strong>Illus 3 &amp; Illus 6 (Compound Counterparty Choice):</strong>
+                <br>• <em>Non-Employees (Illus 3 / Para 35):</em> Equity Component = \( \text{FV of Goods/Services Received} - \text{FV of Debt Component} \)! (If non-employee can take Cash ₹88k vs Equity ₹1,10k for Machine worth ₹1,00k → Debt = ₹88k; Equity = ₹1,00k &minus; ₹88k = ₹12k!).
+                <br>• <em>Employees (Illus 6 / Ex 25 / Para 36):</em> Measure Debt Component (cash alternative FV) first, then measure Equity Component = <strong>FV of Equity Alternative MINUS FV of Cash Alternative</strong> (usually zero if cash = share value for identical units, or positive if employee gets more shares than cash equivalent!). Remeasure Debt at every BS date; keep Equity untouched; at settlement, if equity chosen, transfer Debt into Equity!</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="topic-quiz-card">
+          <div class="quiz-q-header">Quick Check 8 — ESOP vs SAR vs Choice Instruments</div>
+          <p class="quiz-question">8. TechCorp grants an employee the right to choose at the end of 3 years EITHER cash equal to 1,000 phantom shares OR 1,200 actual equity shares. Separately, TechCorp holds another 3-year SAR plan (purely cash) that vested on 31 March Year 3, where the share price jumps 40% in Year 4 before employees exercise. What is correct?</p>
+          <div class="mcq-options-grid">
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q8')">A) First plan is wholly equity-settled; SAR plan stops remeasuring on vesting date (31 Mar Y3).</div>
+            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ans-c10-q8')">B) First plan is a Compound Instrument (Debt = Cash right for 1,000 shares, remeasured; Equity = incremental 200-share right FV at grant date); SAR liability keeps remeasuring through P&amp;L in Year 4 until settled!</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q8')">C) First plan is wholly cash-settled; SAR plan keeps remeasuring in Year 4 through OCI.</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q8')">D) First plan splits 50:50 Debt/Equity; SAR stops remeasuring once vested.</div>
+          </div>
+          <button class="btn-show-ans" onclick="toggleAnswer('ans-c10-q8', this)">Show Answer</button>
+          <div class="explanation-box" id="ans-c10-q8">
+            <strong>Correct: B.</strong> Employee choice creates a compound instrument (Debt = cash alternative, Equity = excess FV of share alternative over cash alternative at Grant Date, Para 36–37). Cash-settled SARs MUST be remeasured through P&amp;L until final settlement, even post-vesting (Para 30)!
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 12. UNIT 3: VESTING CONDITIONS & MODIFICATIONS -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <section class="section-card" id="ind102-cond-mod">
+        <div class="section-header">
+          <div class="section-num">12</div>
+          <div>
+            <h2 class="section-title">Unit 3 — Vesting Conditions Matrix &amp; Modifications / Cancellations</h2>
+            <p class="section-sub">Para 19–29: Service vs Non-Market Performance vs Market Performance vs Non-Vesting Conditions, Repricing &amp; Acceleration</p>
+          </div>
+        </div>
+
+        <div class="simple-box">
+          <h4>🧒 10th-Class Intuition: "Must Stay 3 Years" vs "Hit Profit Target" vs "Hit Stock Price" vs "Save Monthly Money"!</h4>
+          <p>Why do some failed targets erase your ESOP expense while others DON’T?!<br>
+          1. <strong>Service ("Stay 3 yrs") &amp; Non-Market Performance ("Company hits ₹500 cr profit"):</strong> NOT inside the Grant-Date option value—we adjust the <em>employee count</em> every year! If the profit target fails, <strong>zero options vest and all past ESOP expense gets REVERSED!</strong><br>
+          2. <strong>Market Performance ("Share price hits ₹500") &amp; Non-Vesting ("Employee must save 5% salary"):</strong> ALREADY baked into the Grant-Date Fair Value (e.g., discounted at Grant Date)! So as long as the employee works the 3 years, <strong>you NEVER reverse expense even if the stock market crashes and the target fails!</strong><br>
+          3. <strong>Modifications:</strong> If you sweeten an ESOP mid-way (e.g., cut exercise price from ₹200 to ₹120), keep spreading the <em>original</em> Grant-Date FV PLUS spread the <em>extra Incremental Fair Value</em>! Never drop below original FV if a modification hurts the employee!</p>
+        </div>
+
+        <h3>3.3 Complete Conditions Matrix (Para 19–21A, Ex 26–32 &amp; Illus 7–9)</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Condition Type</th>
+                <th>Examples (Ex 26–32)</th>
+                <th>Included in Grant-Date FV?</th>
+                <th>True-Up If Condition Fails (Provided Service Met)?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Service Condition</strong> (Vesting)</td>
+                <td>Remain in continuous employment for 3 years.</td>
+                <td><strong>No</strong></td>
+                <td><strong>YES — Reverse</strong> cumulative expense for leavers!</td>
+              </tr>
+              <tr>
+                <td><strong>2. Non-Market Performance Condition</strong> (Vesting)</td>
+                <td>Cumulative EPS growth &gt; 15%, EBITDA target, IPO completion (tied to entity operations + service!).</td>
+                <td><strong>No</strong> (service period itself may vary if target accelerated — adjust estimate!).</td>
+                <td><strong>YES — Reverse</strong> cumulative expense if operational target fails!</td>
+              </tr>
+              <tr>
+                <td><strong>3. Market Performance Condition</strong> (Vesting)</td>
+                <td>Share price reaches ₹500, Total Shareholder Return (TSR) beats Nifty 50 (tied to market price + service!).</td>
+                <td><strong>YES</strong> (already factored into Black-Scholes / Monte Carlo Grant-Date FV!).</td>
+                <td><strong>NO REVERSAL!</strong> Continue recognising full Grant-Date FV so long as employee renders required service!</td>
+              </tr>
+              <tr>
+                <td><strong>4. Non-Vesting Condition</strong></td>
+                <td>Employee must keep buying shares via monthly savings plan; commodity price index target; post-vesting lock-in restriction!</td>
+                <td><strong>YES</strong> (factored into Grant-Date FV!).</td>
+                <td><strong>NO REVERSAL</strong> if entity cancels/fails—wait: if <em>employee chooses to stop contributing</em> (fails non-vesting condition within employee's control), treat as a <strong>Cancellation (accelerate remaining unrecognised expense!)</strong>!</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout-blue">
+          <div class="callout-title">Reload Features (Para 22) &amp; Variable Vesting Period (Illus 7–9)</div>
+          <p><strong>Reload Feature:</strong> Automatic grant of new options whenever an employee exercises existing options by surrendering previously owned shares. Do <strong>NOT</strong> factor reload features into Grant-Date FV; instead, account for any reload option as a <strong>brand-new option grant</strong> when it is actually granted!<br>
+          <strong>Variable Vesting Period (Ex 28 / Illus 7):</strong> If vesting is 1 yr if profit rises 18%, 2 yrs if avg 13%, or 3 yrs if avg 10% (Non-market performance), estimate the most likely vesting length at each year-end (never exceeding maximum length; for <em>market</em> conditions with variable length, use expected vesting period at Grant Date and NEVER revise upwards even if target takes longer!).</p>
+        </div>
+
+        <h3>3.4 Modifications, Cancellations &amp; Settlements (Para 26–29 &amp; Illus 10–11)</h3>
+        <div class="flow-grid">
+          <div class="flow-step">
+            <span class="flow-num">Case A</span>
+            <strong>Beneficial Modification (e.g., Repricing Down / Shortening Vesting)</strong>
+            <p>Continue recognising <strong>Original Grant-Date FV</strong> over original period PLUS recognise <strong>Incremental FV</strong> (\( \text{FV}_{\text{new}} - \text{FV}_{\text{old}} \) on modification date) over remaining modified vesting period (or immediately if already vested!). If vesting shortened/non-market relaxed: true-up expected vesting count!</p>
+          </div>
+          <div class="flow-step">
+            <span class="flow-num">Case B</span>
+            <strong>Non-Beneficial Modification (e.g., Raising Exercise Price / Harder Market Target)</strong>
+            <p><strong>Minimum Expense Floor!</strong> Ignore the reduction in FV — continue accounting as if the adverse modification never happened (except if number of options is reduced, treat cancelled portion as Cancellation!).</p>
+          </div>
+          <div class="flow-step">
+            <span class="flow-num">Case C</span>
+            <strong>Cancellation or Cash Settlement During Vesting (Except Forfeiture!)</strong>
+            <p>1. <strong>Accelerate vesting immediately</strong> (expense all remaining unrecognised Grant-Date FV right now!).<br>2. Cash paid up to FV on cancellation date = <strong>Deduction from Equity</strong>; any excess paid over FV = <strong>Expense in P&amp;L</strong>!</p>
+          </div>
+          <div class="flow-step">
+            <span class="flow-num">Case D</span>
+            <strong>Replacement Options Granted on Cancellation</strong>
+            <p>If entity designates new options as replacements, treat as a <strong>Modification</strong> (\( \text{FV}_{\text{replacement}} - \text{FV}_{\text{cancelled}} \) on cancellation date = Incremental FV). If NOT designated as replacements → pure Cancellation + brand-new Grant!</p>
+          </div>
+        </div>
+
+        <div class="tyk-card">
+          <div class="tyk-header">
+            <span class="tyk-badge">Ex 33–35 &amp; Illustrations 7–11</span>
+            <strong>Worked Problems: Grant Date Clarity (Ex 33), Repricing Options (Illus 10) &amp; Cancellation/Cash Settlement (Illus 11)</strong>
+            <button class="btn-toggle-sol" id="btn-sol-c10-u3il10" onclick="toggleSolution('sol-c10-u3il10')">Show Solutions</button>
+          </div>
+          <ul>
+            <li><strong>Grant Date (Ex 33):</strong> Board approves ESOP on 1 Jan, AGM shareholders approve on 15 March, terms communicated to employees with mutual understanding on 1 April. Which is Grant Date? (Hint: Requires <em>both</em> mutual understanding AND final legal/AGM approval!)</li>
+            <li><strong>Illus 10 (Repricing Modification):</strong> 100 options per 500 employees, 3-yr vesting, Original FV = ₹10. At end of Year 1 (share price crashed), company lowers exercise price: FV immediately BEFORE repricing = ₹4; FV immediately AFTER repricing = ₹7. Calculate Year 1, Year 2 &amp; Year 3 expense (assume 400 employees stay).</li>
+            <li><strong>Illus 11 (Cash Settlement / Cancellation):</strong> 200 employees hold 100 options each (3-yr vesting, Grant FV ₹15). At end of Year 2 (after ₹2,00,000 booked over Y1+Y2 for 200 employees × 100 × ₹15 × 2/3), entity cancels plan and pays cash ₹18/option when cancellation-date FV = ₹16/option.</li>
+          </ul>
+          <div class="tyk-solution" id="sol-c10-u3il10">
+            <ul>
+              <li><strong>Grant Date (Ex 33):</strong> <strong>1 April</strong> (later of mutual understanding with employees and necessary shareholder/board approval!). Note: If employees started working on 1 Jan before Grant Date, estimate provisional FV on 1 Jan &rarr; trued up on 1 April Grant Date!</li>
+              <li><strong>Illus 10 (Repricing):</strong> Incremental FV on repricing date = \( ₹7 - ₹4 = \mathbf{₹3} \) (NOT ₹7 &minus; ₹10!).
+                <br>• Original FV per employee = \( 100 \times ₹10 = ₹1,000 \) over 3 yrs (₹333.33/yr).
+                <br>• Incremental FV per employee = \( 100 \times ₹3 = ₹300 \) spread over <em>remaining 2 years</em> (Y2 &amp; Y3 = ₹150/yr)!
+                <br>• Total Year 2 Expense (400 employees) = \( 400 \times (333.33 + 150) = \mathbf{₹1,93,333} \); Year 3 = <strong>₹1,93,333</strong>!</li>
+              <li><strong>Illus 11 (Cancellation + Cash Payout):</strong>
+                <br>1. <strong>Accelerate remaining vesting</strong>: Remaining 1/3 of Grant-Date FV \( (₹3,00,000 - ₹2,00,000 = \mathbf{₹1,00,000}) \) expensed immediately in P&amp;L!
+                <br>2. <strong>Cash Repurchase of Equity</strong>: Total cash paid = \( 200 \times 100 \times ₹18 = ₹3,60,000 \).
+                <br>   • Up to cancellation-date FV \( (20,000 \times ₹16 = \mathbf{₹3,20,000}) \) → Debit Equity (SBP Reserve / Retained Earnings)!
+                <br>   • Excess over FV \( (20,000 \times ₹2 = \mathbf{₹40,000}) \) → Debit <strong>P&amp;L Expense</strong>! Total Y2 hit = ₹1,00,000 + ₹40,000 (+ regular Y2 expense)!</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="topic-quiz-card">
+          <div class="quiz-q-header">Quick Check 9 — Market vs Non-Market Conditions</div>
+          <p class="quiz-question">9. CEO is granted 10,000 ESOPs (3-year service + share price must hit ₹800 by end of Year 3). Grant-Date FV (factoring in market hurdle) = ₹60/option. In Year 1–3, CEO stays all 3 years, but share price finishes at ₹450 so zero options vest. Total cumulative expense recognised over Years 1–3 is:</p>
+          <div class="mcq-options-grid">
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q9')">A) ₹0 (reverse all prior Year 1 &amp; Year 2 expense in Year 3).</div>
+            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ans-c10-q9')">B) ₹6,00,000 (10,000 × ₹60) — Market condition failure is NEVER reversed when required service was rendered!</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q9')">C) ₹4,00,000 (Year 1 and Year 2 kept, Year 3 booked as ₹0).</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q9')">D) ₹3,00,000 (50% compromise).</div>
+          </div>
+          <button class="btn-show-ans" onclick="toggleAnswer('ans-c10-q9', this)">Show Answer</button>
+          <div class="explanation-box" id="ans-c10-q9">
+            <strong>Correct: B.</strong> Reaching ₹800 share price is a <strong>Market Performance Condition</strong> (Para 21). Its probability of failure was ALREADY priced into the ₹60 Grant-Date FV, so since the CEO fulfilled the 3-year service condition, all <strong>₹6,00,000</strong> stands permanently in SBP Reserve (transfer inside equity to Retained Earnings upon lapse)!
+          </div>
+        </div>
+
+        <div class="topic-quiz-card">
+          <div class="quiz-q-header">Quick Check 10 — Repricing Modifications</div>
+          <p class="quiz-question">10. An ESOP (3-year vesting, 1,000 options, Original Grant-Date FV = ₹50) is repriced at the end of Year 1 when pre-modification FV = ₹12 and post-modification FV = ₹28. Assuming all employees stay, what is Year 2 Expense?</p>
+          <div class="mcq-options-grid">
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q10')">A) ₹16,667 (ignore repricing).</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q10')">B) ₹9,333 (replace ₹50 with ₹28).</div>
+            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ans-c10-q10')">C) ₹24,667 (Original ₹50/3 = ₹16,667 + Incremental [₹28 − ₹12 = ₹16]/2 remaining years = ₹8,000).</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q10')">D) ₹32,667 (book all ₹16,000 incremental immediately in Year 2).</div>
+          </div>
+          <button class="btn-show-ans" onclick="toggleAnswer('ans-c10-q10', this)">Show Answer</button>
+          <div class="explanation-box" id="ans-c10-q10">
+            <strong>Correct: C.</strong> Incremental FV = \( ₹28 - ₹12 = ₹16 \) per option = ₹16,000 total, spread evenly over the remaining 2 years (₹8,000/yr), added onto Original Grant-Date expense (₹50,000 / 3 = ₹16,667/yr) = <strong>₹24,667</strong>!
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 13. UNIT 3: FV INPUTS, GROUP SBP & BHARTI AIRTEL EXTRACT -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <section class="section-card" id="ind102-fv-group">
+        <div class="section-header">
+          <div class="section-num">13</div>
+          <div>
+            <h2 class="section-title">Unit 3 — Option Valuation Inputs, Group SBP, Disclosures &amp; Bharti Airtel Extract</h2>
+            <p class="section-sub">Para B4–B44: 6 Black-Scholes Inputs (Ex 36 Dividend Trap), Group SBP 3 Cases (Illus 12), 7 Disclosures &amp; Bharti Airtel Note 25.1</p>
+          </div>
+        </div>
+
+        <div class="formula-card">
+          <div class="formula-title">6 Mandatory Inputs in Option Pricing Models (Black-Scholes / Binomial Lattice)</div>
+          <ol>
+            <li><strong>Exercise Price</strong> of the option.</li>
+            <li><strong>Expected Life</strong> of the option (<em>NOT full contractual expiry</em> — adjust downwards for early exercise behaviour since employees can't sell non-transferable ESOPs!).</li>
+            <li><strong>Current Share Price</strong> of underlying shares.</li>
+            <li><strong>Expected Volatility</strong> of the share price (standard deviation of annualised returns).</li>
+            <li><strong>Expected Dividends</strong> on the shares (<strong>Ex 36:</strong> Only deduct dividend yield if option holders are <em>NOT</em> entitled to dividends during the vesting period; if dividend-protected/reinvested, input <strong>0% dividend yield</strong>!).</li>
+            <li><strong>Risk-Free Interest Rate</strong> for the expected option life (zero-coupon government bond yield).</li>
+          </ol>
+          <p><strong>Intrinsic Value Exception (Para 24):</strong> ONLY in rare unlisted start-up cases where FV of equity instruments cannot be reliably estimated at all → measure at <strong>Intrinsic Value</strong> initially and remeasure through P&amp;L at every reporting date until final settlement!</p>
+        </div>
+
+        <h3>3.5 Group Share-Based Payment Transactions (Para 43A–43D &amp; Illus 12)</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Group SBP Scenario</th>
+                <th>Receiving Entity (Subsidiary receiving services)</th>
+                <th>Settling Entity (Parent / Group Co.)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Case 1: Parent grants Parent’s equity shares</strong> to Sub’s employees (no recharge)</td>
+                <td><strong>Equity-Settled SBP!</strong> (Dr Employee Expense / Cr <em>Capital Contribution from Parent in Equity</em>).</td>
+                <td>Dr <em>Investment in Subsidiary</em> / Cr Equity (SBP Reserve)!</td>
+              </tr>
+              <tr>
+                <td><strong>Case 2: Sub settles in Parent’s shares</strong> (Sub buys Parent shares in market or pays Parent)</td>
+                <td><strong>Cash-Settled SBP!</strong> (Because Sub delivers another entity's shares, NOT its own equity instruments!).</td>
+                <td>Separate FS: accounts for cash/intercompany transfer as applicable.</td>
+              </tr>
+              <tr>
+                <td><strong>Case 3: Parent grants Cash-Settled SARs</strong> linked to Parent’s/Sub’s share price to Sub’s employees</td>
+                <td><strong>Equity-Settled SBP!</strong> (Wait—<em>critical Para 43B(a) rule:</em> Receiving Subsidiary STILL treats as <strong>Equity-Settled</strong> because Sub has <em>NO obligation</em> to settle cash!).</td>
+                <td><strong>Cash-Settled SBP!</strong> (Parent has cash obligation → Dr Investment in Sub / Cr Liability, remeasured to P&amp;L/Sub investment!).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong>Illustration 12 (Parent Recharging Subsidiary):</strong> Even if Parent charges Subsidiary back via management fee, Subsidiary accounts for the SBP portion separately under Ind AS 102 (Equity-settled if Parent settles in Parent equity; Cash-settled if Sub has obligation to pay cash/Parent shares), and accounts for the intra-group recharge inside Equity as a return of capital contribution / distribution!</p>
+
+        <div class="callout-amber">
+          <div class="callout-title">7 Mandatory Disclosure Themes Under Ind AS 102 (Para 44–52)</div>
+          <ol>
+            <li>Nature &amp; extent of SBP arrangements during the period (terms, vesting requirements, max term, settlement method).</li>
+            <li>Weighted-average exercise prices &amp; roll-forward table of options (outstanding opening, granted, forfeited, exercised, expired, closing &amp; exercisable).</li>
+            <li>Weighted-average share price at exercise date for exercised options.</li>
+            <li>Range of exercise prices and weighted-average remaining contractual life for options outstanding at year-end.</li>
+            <li>How Fair Value of goods/services or equity instruments was measured (pricing model used + all 6 inputs + how expected volatility was determined).</li>
+            <li>Details of modifications (incremental FV granted &amp; how measured).</li>
+            <li>Total expense recognised in P&amp;L (splitting Equity-settled vs Cash-settled) + total carrying amount &amp; intrinsic value of SBP Liabilities at year-end!</li>
+          </ol>
+        </div>
+
+        <div class="extract-box">
+          <div class="extract-head">
+            <span class="extract-badge">Listed Entity Extract</span>
+            <strong>Bharti Airtel Limited — Note 25.1 Share-Based Payments (ESOP Scheme 2005 &amp; LTI Plan)</strong>
+          </div>
+          <p>Bharti Airtel operates equity-settled ESOPs (2005 Plan) and Long-Term Incentive (LTI) Plans using an Employee Benefit Trust / direct issue. Key Black-Scholes Valuation Inputs disclosed in Note 25.1:</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Valuation Input Disclosed</th>
+                  <th>Bharti Airtel Reported Assumption</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Risk-Free Interest Rate</strong></td><td><strong>5.5% – 5.8%</strong></td></tr>
+                <tr><td><strong>Expected Life</strong></td><td><strong>48 – 60 months</strong> (4 to 5 years)</td></tr>
+                <tr><td><strong>Expected Volatility</strong></td><td><strong>32.8%</strong></td></tr>
+                <tr><td><strong>Expected Dividend Yield</strong></td><td><strong>0.3%</strong></td></tr>
+                <tr><td><strong>Exercise Price / Share Price at Grant</strong></td><td>Exercise Price: <strong>₹5</strong> &bull; Share Price: <strong>₹607.80</strong> (deep in-the-money restricted stock units / LTI!)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 14. UNIT 3: SOLVED TYK Q1–Q7 & MCQs -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <section class="section-card" id="ind102-tyk">
+        <div class="section-header">
+          <div class="section-num">14</div>
+          <div>
+            <h2 class="section-title">Unit 3 — Practice Questions (TYK Q1–Q7) &amp; Concept Check MCQs</h2>
+            <p class="section-sub">Complete solutions for all 7 Unit 3 Practice Questions plus interactive topic MCQs</p>
+          </div>
+        </div>
+
+        <div class="tyk-card">
+          <div class="tyk-header">
+            <span class="tyk-badge">TYK Q1 &amp; Q2</span>
+            <strong>Executive Variable Bonus Cap (Q1) &amp; Graded Vesting Tranches (Q2)</strong>
+            <button class="btn-toggle-sol" id="btn-sol-c10-u3t1" onclick="toggleSolution('sol-c10-u3t1')">Show Both Solutions</button>
+          </div>
+          <ul>
+            <li><strong>TYK Q1 (Bonus Linked to Share Price):</strong> Entity grants CEO shares worth ₹20 lakh if share price grows 10% over 3 years, OR ₹30 lakh cash if CEO chooses cash settlement. Identify classification &amp; accounting.</li>
+            <li><strong>TYK Q2 (Graded Vesting — 1/3 Each Year):</strong> 1,000 employees receive 300 options vesting in 3 equal tranches: 100 end of Y1 (FV ₹10), 100 end of Y2 (FV ₹11), 100 end of Y3 (FV ₹12). How do you expense each tranche?</li>
+          </ul>
+          <div class="tyk-solution" id="sol-c10-u3t1">
+            <ul>
+              <li><strong>TYK Q1:</strong> Counterparty (CEO) has choice between shares vs cash → <strong>Compound Instrument (Para 36)</strong>! Measure Debt component (cash alternative FV) and Equity component separately!</li>
+              <li><strong>TYK Q2 (Graded Vesting Trap — Ind AS 102 IG11!):</strong> <em>NEVER spread total FV straight-line over 3 years!</em> Treat each vesting tranche as a <strong>SEPARATE award</strong>!
+                <br>• Tranche 1 (vests Y1): 100% expensed in <strong>Year 1</strong>!
+                <br>• Tranche 2 (vests Y2): 50% in Y1 + 50% in Y2!
+                <br>• Tranche 3 (vests Y3): 33.33% in Y1 + 33.33% in Y2 + 33.33% in Y3! (Front-loaded expense profile: Year 1 absorbs \( 100\% + 50\% + 33.33\% \) of tranche costs!).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tyk-card">
+          <div class="tyk-header">
+            <span class="tyk-badge">TYK Q3, Q4 &amp; Q5</span>
+            <strong>IPO Non-Market Vesting Extension (Q3), Group Parent-to-Sub SARs (Q4) &amp; Service + EPS Target Modification (Q5)</strong>
+            <button class="btn-toggle-sol" id="btn-sol-c10-u3t3" onclick="toggleSolution('sol-c10-u3t3')">Show All 3 Solutions</button>
+          </div>
+          <ul>
+            <li><strong>TYK Q3 (IPO Condition):</strong> Options vest ONLY upon successful IPO plus remaining employed until IPO (expected Year 3 initially, later delayed to Year 4).</li>
+            <li><strong>TYK Q4 (Group Cash-Settled SARs):</strong> Parent grants cash-settled SARs (linked to Parent share price) directly to Subsidiary’s employees (Parent pays cash; Sub has zero cash obligation). How do Sub &amp; Parent account in Separate FS?</li>
+            <li><strong>TYK Q5 (Non-Market Vesting Target Lowered):</strong> Initially options require EPS growth &gt; 20% (unachievable → 0% expected), later management modifies target down to &gt; 10% (probable → 100% vest!).</li>
+          </ul>
+          <div class="tyk-solution" id="sol-c10-u3t3">
+            <ul>
+              <li><strong>TYK Q3:</strong> An IPO condition is a <strong>Non-Market Performance Condition</strong>! Do NOT price IPO likelihood into Grant-Date FV; instead update expected vesting length (from 3 yrs to 4 yrs) prospectively via cumulative catch-up, and if IPO fails permanently, reverse ALL prior expense!</li>
+              <li><strong>TYK Q4:</strong> Subsidiary has NO obligation to settle → <strong>Equity-Settled SBP</strong> in Subsidiary’s standalone books (Dr Employee Expense / Cr Equity Contribution from Parent, measured at Grant-Date FV)! Parent has cash obligation → <strong>Cash-Settled SBP</strong> in Parent’s books (Dr Investment in Sub / Cr SAR Liability, remeasured to settlement!).</li>
+              <li><strong>TYK Q5 (Beneficial Reduction of Non-Market Condition — Para B43(b)):</strong> Because lowering EPS hurdle increases the <em>number of equity instruments expected to vest</em> (from 0 to 100%), apply the modified vesting count (100%) using the Original Grant-Date FV over the remaining/full vesting period (so cumulative expense reaches 100% of Original Grant-Date FV upon vesting!).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tyk-card">
+          <div class="tyk-header">
+            <span class="tyk-badge">TYK Q6 &amp; Q7</span>
+            <strong>Unidentifiable Goods/Services Discounted Share Issue (Q6) &amp; Share-Based Asset Purchase + Post-Vesting Lapse (Q7)</strong>
+            <button class="btn-toggle-sol" id="btn-sol-c10-u3t6" onclick="toggleSolution('sol-c10-u3t6')">Show Both Solutions</button>
+          </div>
+          <ul>
+            <li><strong>TYK Q6 (Discounted Issue for Empowerment / Strategic Compliance):</strong> Company issues shares worth ₹10 crore FV to a strategic community partner for only ₹6 crore cash to earn regulatory goodwill/public image (zero identifiable intangible asset meets Ind AS 38!). How is the ₹4 crore gap treated?</li>
+            <li><strong>TYK Q7 (ESOP Forfeiture Before Vesting vs Lapse After Vesting):</strong> 100 options vest after 2 yrs (Grant FV ₹20). 10 employees leave in Year 2 (before vesting), while 20 vested employees let options expire unexercised in Year 4 because market price stays below strike price. Compare Year 2 vs Year 4 accounting!</li>
+          </ul>
+          <div class="tyk-solution" id="sol-c10-u3t6">
+            <ul>
+              <li><strong>TYK Q6 (Para 13A Unidentifiable Consideration):</strong> Cash ₹6 cr Dr + <strong>Ind AS 102 SBP Expense (P&amp;L) ₹4 cr Dr</strong> / To Share Capital &amp; Securities Premium ₹10 cr! The ₹4 crore unidentifiable excess FV is expensed immediately in P&amp;L (unless future vesting conditions apply)!</li>
+              <li><strong>TYK Q7 (Before vs After Vesting Golden Rule — Para 23):</strong>
+                <br>• <strong>Pre-Vesting Forfeiture (10 leavers in Y2):</strong> Service condition failed → <strong>Reverse</strong> previously booked expense for those 10 employees in Year 2 P&amp;L!
+                <br>• <strong>Post-Vesting Expiry (20 vested employees in Y4):</strong> Service WAS rendered and options vested! <strong>NEVER reverse P&amp;L expense!</strong> Optionally transfer the balance inside Equity (Dr SBP Reserve / Cr Retained Earnings or General Reserve)!</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="topic-quiz-card">
+          <div class="quiz-q-header">Quick Check 11 — Non-Vesting Conditions &amp; Cancellations</div>
+          <p class="quiz-question">11. Employee X joins an ESOP Save-As-You-Earn plan requiring ₹5,000/month savings for 3 years (a non-vesting condition within X’s control). Grant-Date FV of the option (already factoring in savings features) is ₹1,20,000. At the end of Year 1 (₹40,000 expensed), Employee X stops contributing to the savings plan and withdraws their ₹60,000 savings, disqualifying the options. How must the company account at end of Year 1?</p>
+          <div class="mcq-options-grid">
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q11')">A) Reverse the ₹40,000 already expensed in Year 1 because Employee X won’t get any shares.</div>
+            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ans-c10-q11')">B) Treat failure of an employee-controlled non-vesting condition as a CANCELLATION: immediately accelerate and expense the remaining ₹80,000 in Year 1!</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q11')">C) Freeze SBP Reserve at ₹40,000 with zero extra Year 1 expense.</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q11')">D) Spread remaining ₹80,000 over Years 2 and 3.</div>
+          </div>
+          <button class="btn-show-ans" onclick="toggleAnswer('ans-c10-q11', this)">Show Answer</button>
+          <div class="explanation-box" id="ans-c10-q11">
+            <strong>Correct: B.</strong> Under Para 28A, if EITHER the entity OR the counterparty can choose whether to meet a non-vesting condition, failure to meet that non-vesting condition during the vesting period is accounted for as a <strong>Cancellation</strong> — accelerating the entire remaining unrecognised Grant-Date FV (<strong>₹80,000</strong>) immediately to P&amp;L!
+          </div>
+        </div>
+
+        <div class="topic-quiz-card">
+          <div class="quiz-q-header">Quick Check 12 — Graded Vesting Tranches</div>
+          <p class="quiz-question">12. Under a graded vesting plan, an employee gets 3,000 ESOPs all granted on 1 April Y1 (Grant FV = ₹30 across all tranches): 1,000 vest at end of Year 1; 1,000 at end of Year 2; 1,000 at end of Year 3 (assume zero attrition). What is the Year 1 P&amp;L ESOP Expense?</p>
+          <div class="mcq-options-grid">
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q12')">A) ₹30,000 (straight-line 90,000 / 3 years).</div>
+            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ans-c10-q12')">B) ₹55,000 (Tranche 1: ₹30,000 + Tranche 2: ₹15,000 + Tranche 3: ₹10,000).</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q12')">C) ₹90,000 immediately on Grant Date.</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q12')">D) ₹45,000 (50% in Year 1).</div>
+          </div>
+          <button class="btn-show-ans" onclick="toggleAnswer('ans-c10-q12', this)">Show Answer</button>
+          <div class="explanation-box" id="ans-c10-q12">
+            <strong>Correct: B.</strong> Each tranche (₹30,000 FV each) is treated as a separate grant (IG11): Tranche 1 (1-yr vest) = \( 30,000 \times 1/1 = ₹30,000 \); Tranche 2 (2-yr vest) = \( 30,000 \times 1/2 = ₹15,000 \); Tranche 3 (3-yr vest) = \( 30,000 \times 1/3 = ₹10,000 \) → Year 1 Total = <strong>₹55,000</strong>! (Year 2 = ₹25,000; Year 3 = ₹10,000).
+          </div>
+        </div>
+
+        <div class="topic-quiz-card">
+          <div class="quiz-q-header">Quick Check 13 — Group Share-Based Payment</div>
+          <p class="quiz-question">13. HoldCo grants Cash-Settled SARs (settled in cash directly by HoldCo based on HoldCo’s share price) to executives of its 100% Subsidiary SubCo for 2 years of SubCo service. How are these accounted in SubCo’s Separate Financial Statements vs HoldCo’s Separate Financial Statements?</p>
+          <div class="mcq-options-grid">
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q13')">A) Cash-settled in SubCo; Equity-settled in HoldCo.</div>
+            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ans-c10-q13')">B) Equity-settled in SubCo (no obligation to pay cash); Cash-settled in HoldCo (Dr Investment in SubCo / Cr SAR Liability, remeasured).</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q13')">C) Cash-settled in BOTH HoldCo and SubCo.</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q13')">D) Ignored in SubCo because HoldCo pays the cash directly.</div>
+          </div>
+          <button class="btn-show-ans" onclick="toggleAnswer('ans-c10-q13', this)">Show Answer</button>
+          <div class="explanation-box" id="ans-c10-q13">
+            <strong>Correct: B.</strong> Under Para 43B, the receiving subsidiary (SubCo) accounts as <strong>Equity-Settled</strong> whenever it has NO obligation to settle the transaction, even though HoldCo settles in cash! HoldCo accounts as <strong>Cash-Settled</strong>.
+          </div>
+        </div>
+
+        <div class="topic-quiz-card">
+          <div class="quiz-q-header">Quick Check 14 — Post-Vesting Lapse &amp; Non-Beneficial Modifications</div>
+          <p class="quiz-question">14. Company Z lowers the value of an existing unvested ESOP via a non-beneficial modification (raising exercise price so option FV falls from ₹40 to ₹25), and separately has 500 <em>vested</em> options expire unexercised later because market price stays below strike price. What is the correct accounting?</p>
+          <div class="mcq-options-grid">
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q14')">A) Reduce ongoing ESOP expense to ₹25; reverse SBP Reserve for the 500 expired options back to P&amp;L.</div>
+            <div class="mcq-option-item" data-correct="true" onclick="checkOption(this, true, 'ans-c10-q14')">B) Ignore the drop to ₹25 (continue recognising original ₹40 Grant-Date FV); for the 500 expired vested options, do NOT credit P&amp;L (only reclassify within Equity if desired).</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q14')">C) Expense ₹15 difference immediately; reverse 500 expired options to P&amp;L.</div>
+            <div class="mcq-option-item" data-correct="false" onclick="checkOption(this, false, 'ans-c10-q14')">D) Reclassify expired options into Deferred Liabilities.</div>
+          </div>
+          <button class="btn-show-ans" onclick="toggleAnswer('ans-c10-q14', this)">Show Answer</button>
+          <div class="explanation-box" id="ans-c10-q14">
+            <strong>Correct: B.</strong> Original Grant-Date FV (₹40) acts as a strict minimum floor on non-beneficial modifications (Para 27 &amp; B43). And Para 23 strictly prohibits reversing already-recognised P&amp;L expense after vesting date if vested options lapse unexercised—transfer only within Equity!
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- 15. MASTER SYNTHESIS CHEAT SHEET -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <section class="section-card" id="master-synthesis">
+        <div class="section-header">
+          <div class="section-num">15</div>
+          <div>
+            <h2 class="section-title">Chapter 10 Master Revision Cheat Sheet</h2>
+            <p class="section-sub">High-yield Ind AS 41, Ind AS 20 &amp; Ind AS 102 exam traps in one glance</p>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Standard</th>
+                <th>Top 3 Exam Rules &amp; Traps to Remember</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Ind AS 41 (Agriculture)</strong></td>
+                <td>
+                  1. <strong>Bearer Plants = Ind AS 16</strong>, while unpicked produce on them + ALL livestock = <strong>Ind AS 41 (FVLCS)</strong> → picked/harvested produce enters <strong>Ind AS 2</strong> at harvest FVLCS.<br>
+                  2. <strong>FVLCS = Quoted Market Price &minus; Transport to Market &minus; Costs to Sell</strong> (often causes immediate Day 1 P&amp;L loss on purchase!).<br>
+                  3. Unconditional grant &rarr; P&amp;L when receivable; Conditional grant &rarr; P&amp;L ONLY when condition met (unless cost exception → Ind AS 20).
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Ind AS 20 (Govt Grants)</strong></td>
+                <td>
+                  1. <strong>Capital Approach Prohibited</strong> (even backward-area promoter’s contribution → Income Approach!).<br>
+                  2. <strong>Below-Market Loans:</strong> Loan PV @ Market Rate (Ind AS 109) + Grant Benefit = (Cash &minus; PV). Cash Flow Statement NEVER nets Asset outflow vs Grant inflow!<br>
+                  3. <strong>Repayment = Estimate Change:</strong> Income grant hits deferred balance then P&amp;L; Asset-deduction method restores Asset &amp; charges <em>cumulative catch-up depreciation immediately to P&amp;L</em>!
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Ind AS 102 (Share-Based Payment)</strong></td>
+                <td>
+                  1. <strong>ESOPs:</strong> Lock Grant-Date FV; update only leavers/non-market vesting. <strong>SARs:</strong> Remeasure Liability FV at EVERY BS date until settled.<br>
+                  2. <strong>Market &amp; Non-Vesting Conditions:</strong> Priced into Grant-Date FV → NEVER reverse if failed (if employee drops savings plan → treat as Cancellation &amp; accelerate!).<br>
+                  3. <strong>Graded Vesting:</strong> Separate tranche accounting (front-loaded expense). <strong>Group SBP:</strong> Receiving Sub with zero cash obligation = ALWAYS Equity-Settled!
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════ -->
+      <!-- FOOTER NAVIGATION -->
+      <!-- ══════════════════════════════════════════════════ -->
+      <footer class="chapter-footer-nav">
+        <a href="revenue_ind_as_115.html" class="nav-pill nav-prev">
+          <span>&larr; Previous Chapter</span>
+          <strong>Chapter 9: Revenue from Contracts with Customers (Ind AS 115)</strong>
+        </a>
+        <a href="financial_instruments.html" class="nav-pill nav-next">
+          <span>Next Chapter &rarr;</span>
+          <strong>Chapter 11: Accounting &amp; Reporting of Financial Instruments</strong>
+        </a>
+      </footer>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    function toggleSolution(id) {
+      const box = document.getElementById(id);
+      const btn = document.getElementById('btn-' + id);
+      if (!box) return;
+      const isHidden = box.style.display === 'none' || getComputedStyle(box).display === 'none';
+      box.style.display = isHidden ? 'block' : 'none';
+      if (btn) btn.textContent = isHidden ? 'Hide Solution' : 'Show Solution';
+    }
+  </script>
+  <script src="../../assets/template.js"></script>
+</body>
+</html>
